@@ -1,0 +1,39 @@
+.app.window-app.sheet.wfrp4e.actor.character-sheet .tab.main.active .characteristics-table .table-header.table-row .table-header:first-of-type {
+  max-width: 16%;
+  width: 16%;
+  min-width: max(63px, 16%);
+}
+
+.app.window-app.sheet.wfrp4e.actor.character-sheet .tab.main.active .characteristics-table .row-type.table-data {
+  max-width: 16%;
+  width: 16%;
+  min-width: max(63px, 16%);
+}
+
+.app.window-app.sheet.wfrp4e.actor .tab.religion.active .religion-box-1 .blessed-label {
+  width: 80px;
+}
+
+.app.window-app.sheet.wfrp4e.actor .system-effects label {
+  flex: 0 0 110px;
+}
+
+.app.window-app.sheet.item-sheet.prayer-sheet .form-group {
+  margin: 6px 3px 0px 0px;
+}
+
+.app.window-app.sheet.item-sheet.spell-sheet .form-group {
+  margin: 6px 3px 0px 0px;
+}
+
+.scatter-table tr>td {
+  width: 70px;
+}
+
+.wfrp4e.table-sheet .form-group label {
+  min-width: 150px;
+}
+
+.window-app.dialog .window-content .dialog-content .dialog-row .bonus-column label {
+  min-width: 100px;
+}
