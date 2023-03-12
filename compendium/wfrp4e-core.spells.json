@@ -1,0 +1,19 @@
+{
+  "label": "Zaklęcia",
+  "mapping": {
+    "duration": "data.duration.value",
+    "range": "data.range.value",
+    "target": "data.target.value",
+    "damage": "data.damage.value",
+    "overcast": "data.overcast.label",
+    "overcastvalue": "data.overcast.valuePerOvercast.type",
+    "overcastinitial": "data.overcast.initial.type",
+    "overcastvaluevalue": "data.overcast.valuePerOvercast.additional",
+    "overcastinitialvalue": "data.overcast.initial.additional",
+    "effects": {
+      "path": "effects",
+      "converter": "effects"
+    }
+  },
+  "entries": []
+}

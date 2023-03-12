@@ -1,0 +1,11 @@
+{
+  "label": "Profesje",
+  "mapping": {
+    "skills": "data.skills",
+    "talents": "data.talents",
+    "class": "data.class.value",
+    "careergroup": "data.careergroup.value",
+    "trappings": "data.trappings"
+  },
+  "entries": []
+}

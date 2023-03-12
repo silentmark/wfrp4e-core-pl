@@ -1,0 +1,12 @@
+{
+  "label": "Mapy (Główny)",
+  "mapping": {
+    "image": "background.src",
+    "notes": {
+      "path": "notes",
+      "converter": "notes"
+    },
+    "scenes_folders": "flags.wfrp4e-core.initialization-folder"
+  },
+  "entries": []
+}

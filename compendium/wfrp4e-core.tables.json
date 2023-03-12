@@ -1,0 +1,7 @@
+{
+  "label": "Tabele (Podstawa)",
+  "mapping": {
+    "diaries_folders_core": "flags.wfrp4e-core.initialization-folder"
+  },
+  "entries": []
+}

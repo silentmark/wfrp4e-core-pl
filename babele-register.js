@@ -7,5 +7,34 @@ Hooks.on("init", () => {
 		});
 	}
 
-	Babele.get().registerConverters({});
+	Babele.get().registerConverters({
+		effects: (effects, translations) => {
+			return effects.map((data) => {
+				//TODO: map script.
+				let translation = translations[data.label] || translations[data._id];
+				if (translations && translation) {
+					return mergeObject(
+						data,
+						mergeObject(translation, { translated: true }),
+					);
+				}
+
+				return data;
+			});
+		},
+
+		notes: (notes, translations) => {
+			// TODO: notes on map.
+			return notes.map((data) => {
+				let translation = translations[data._id];
+				if (translations && translation) {
+					return mergeObject(
+						data,
+						mergeObject(translation, { translated: true }),
+					);
+				}
+				return data;
+			});
+		},
+	});
 });

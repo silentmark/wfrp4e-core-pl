@@ -1,0 +1,13 @@
+{
+  "label": "Urazy",
+  "mapping": {
+    "location": "data.location.value",
+    "penalty": "data.penalty.value",
+    "duration": "data.duration.value",
+    "effects": {
+      "path": "effects",
+      "converter": "effects"
+    }
+  },
+  "entries": []
+}

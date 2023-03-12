@@ -1,0 +1,94 @@
+{
+  "label": "Bestiarusz",
+  "mapping": {
+    "ws": {
+      "path": "data.characteristics.ws.label",
+      "converter": "bestiary_ws"
+    },
+    "ws_abrev": {
+      "path": "data.characteristics.ws.abrev",
+      "converter": "bestiary_wsabrev"
+    },
+    "bs": {
+      "path": "data.characteristics.bs.label",
+      "converter": "bestiary_bs"
+    },
+    "bs_abrev": {
+      "path": "data.characteristics.bs.abrev",
+      "converter": "bestiary_bsabrev"
+    },
+    "s": {
+      "path": "data.characteristics.s.label",
+      "converter": "bestiary_s"
+    },
+    "s_abrev": {
+      "path": "data.characteristics.s.abrev",
+      "converter": "bestiary_sabrev"
+    },
+    "t": {
+      "path": "data.characteristics.t.label",
+      "converter": "bestiary_t"
+    },
+    "t_abrev": {
+      "path": "data.characteristics.t.abrev",
+      "converter": "bestiary_tabrev"
+    },
+    "i": {
+      "path": "data.characteristics.i.label",
+      "converter": "bestiary_i"
+    },
+    "i_abrev": {
+      "path": "data.characteristics.i.abrev",
+      "converter": "bestiary_iabrev"
+    },
+    "ag": {
+      "path": "data.characteristics.ag.label",
+      "converter": "bestiary_ag"
+    },
+    "ag_abrev": {
+      "path": "data.characteristics.ag.abrev",
+      "converter": "bestiary_agabrev"
+    },
+    "dex": {
+      "path": "data.characteristics.dex.label",
+      "converter": "bestiary_dex"
+    },
+    "dex_abrev": {
+      "path": "data.characteristics.dex.abrev",
+      "converter": "bestiary_dexabrev"
+    },
+    "int": {
+      "path": "data.characteristics.int.label",
+      "converter": "bestiary_int"
+    },
+    "int_abrev": {
+      "path": "data.characteristics.int.abrev",
+      "converter": "bestiary_intabrev"
+    },
+    "wp": {
+      "path": "data.characteristics.wp.label",
+      "converter": "bestiary_wp"
+    },
+    "wp_abrev": {
+      "path": "data.characteristics.wp.abrev",
+      "converter": "bestiary_wpabrev"
+    },
+    "fel": {
+      "path": "data.characteristics.fel.label",
+      "converter": "bestiary_fel"
+    },
+    "fel_abrev": {
+      "path": "data.characteristics.fel.abrev",
+      "converter": "bestiary_felabrev"
+    },
+    "species": "data.details.species.value",
+    "gender": "data.details.gender.value",
+    "hit": "data.details.hitLocationTable.value",
+    "wounds": "flags.autoCalcWounds",
+    "effects": {
+      "path": "effects",
+      "converter": "effects"
+    }
+  },
+  "entries": []
+}

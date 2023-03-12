@@ -1,0 +1,281 @@
+{
+  "label": "Mutacje",
+  "mapping": {
+    "modifier": "data.modifier.value",
+    "effects": {
+      "path": "effects",
+      "converter": "effects"
+    }
+  },
+  "entries": [
+    {
+      "id": "0jaMZRJvJ5L12WZ2",
+      "name": "Chaotyczne sny",
+      "description": "<p>Postać przez pierwsze 2 godziny po śnie uznawana jest za Wyczerpaną.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.0jaMZRJvJ5L12WZ2",
+      "effects": []
+    },
+    {
+      "id": "1MI5UADJkt042mGm",
+      "name": "Paranoja",
+      "description": "<p>Inicjatywa -5, Inteligencja -5.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.1MI5UADJkt042mGm",
+      "effects": []
+    },
+    {
+      "id": "2JQWBLFSixeI6W6L",
+      "name": "Zazdrosne myśli",
+      "description": "<p>Ogłada -10.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.2JQWBLFSixeI6W6L",
+      "effects": []
+    },
+    {
+      "id": "2xvxa9Y8cqHzxuPd",
+      "name": "Mitomania",
+      "description": "<p>Inicjatywa -5, Siła Woli -5.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.2xvxa9Y8cqHzxuPd",
+      "effects": []
+    },
+    {
+      "id": "4OMI3eligS2L0LiL",
+      "name": "Krótkie nogi",
+      "description": "<p>Szybkość -1.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.4OMI3eligS2L0LiL",
+      "effects": []
+    },
+    {
+      "id": "apBxYVRVp4Jt6gxy",
+      "name": "Złe zamiary",
+      "description": "<p>-10 do Testów, które nie mają na celu krzywdzenia innych; +10, jeśli zamiarem jest wyrządzenie krzywdy.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.apBxYVRVp4Jt6gxy",
+      "effects": []
+    },
+    {
+      "id": "ArCg0WaBxLgPQA8F",
+      "name": "Niejednolite opierzenie",
+      "description": "<p>Rzuć dwukrotnie, by ustalić Miejsce Trafienia porosłe pierzem.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.ArCg0WaBxLgPQA8F"
+    },
+    {
+      "id": "atYAndIzpFIfq0Wb",
+      "name": "Kompletny świr",
+      "description": "<p>Ogłada -20, Siła Woli +10.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.atYAndIzpFIfq0Wb",
+      "effects": []
+    },
+    {
+      "id": "BZ5iT2wQq7rOQ0Vo",
+      "name": "Drżączka",
+      "description": "<p>Zwinność +5, Ogłada -5.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.BZ5iT2wQq7rOQ0Vo",
+      "effects": []
+    },
+    {
+      "id": "CAqBwTw411GEyc4d",
+      "name": "Straszny niepokój",
+      "description": "<p>Siła Woli -10.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.CAqBwTw411GEyc4d",
+      "effects": []
+    },
+    {
+      "id": "cXeFXMf7IhxiGGPK",
+      "name": "Sącząca się ropa",
+      "description": "<p>Rzuć k100, by ustalić Miejsce Trafienia, z którego się sączy.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.cXeFXMf7IhxiGGPK"
+    },
+    {
+      "id": "dAnz27Q409wtHfxc",
+      "name": "Nieludzka uroda",
+      "description": "<p>Ogłada +10, rany zawsze goją się bez blizn.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.dAnz27Q409wtHfxc",
+      "effects": []
+    },
+    {
+      "id": "dsYDcdQfJGc7wxSX",
+      "name": "Wychudzone ciało",
+      "description": "<p>Siła -10, Zwinność +5.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.dsYDcdQfJGc7wxSX",
+      "effects": []
+    },
+    {
+      "id": "DVF74DvmMttrvboI",
+      "name": "Nieustanne dreszcze",
+      "description": "<p>Inicjatywa -5, Zręczność -5.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.DVF74DvmMttrvboI",
+      "effects": []
+    },
+    {
+      "id": "gMsd6II7Y1oBMddp",
+      "name": "Uzależnienie od adrenaliny",
+      "description": "<p>Siła Woli +10, Inicjatywa -10.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.gMsd6II7Y1oBMddp",
+      "effects": []
+    },
+    {
+      "id": "GtACPDzi25YNgV0m",
+      "name": "Mięsista macka",
+      "description": "<p>Postać zyskuje Cechę Stworzenia Macki.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.GtACPDzi25YNgV0m",
+      "effects": []
+    },
+    {
+      "id": "HEaxp50NEPnFiihl",
+      "name": "Strach przed samotnością",
+      "description": "<p>-10 do wszelkich Testów wykonywanych w samotności.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.HEaxp50NEPnFiihl",
+      "effects": []
+    },
+    {
+      "id": "hTm0rQkQTpm0OT3n",
+      "name": "Stalowa skóra",
+      "description": "<p>+2 Punkty Pancerza na wszystkich Miejscach Trafienia, Zwinność -10.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.hTm0rQkQTpm0OT3n",
+      "effects": []
+    },
+    {
+      "id": "iLZcSRUbxKBecACZ",
+      "name": "Otyłość",
+      "description": "<p>Szybkość -1, Siła +5, Krzepa +5.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.iLZcSRUbxKBecACZ",
+      "effects": []
+    },
+    {
+      "id": "JaEYSLJU5B2bknNc",
+      "name": "Ogromne oko",
+      "description": "<p>+10 do wszystkich związanych ze wzrokiem Testów Percepcji.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.JaEYSLJU5B2bknNc",
+      "effects": []
+    },
+    {
+      "id": "JR6GZJDVNupDnnbm",
+      "name": "Odwrócona twarz",
+      "description": "<p>Bez specjalnego efektu.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.JR6GZJDVNupDnnbm",
+      "effects": []
+    },
+    {
+      "id": "JS0LEfU1Y5clOJpT",
+      "name": "Dręczące wizje",
+      "description": "<p>Inicjatywa -10.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.JS0LEfU1Y5clOJpT",
+      "effects": []
+    },
+    {
+      "id": "kwLyvpNGE1MrDUw9",
+      "name": "Zwisający jęzor",
+      "description": "<p>-10 do wszystkich Testów Języka wymagających mówienia.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.kwLyvpNGE1MrDUw9",
+      "effects": []
+    },
+    {
+      "id": "LWBMThQzG5aCSNXP",
+      "name": "Świecąca skóra",
+      "description": "<p>Blask porównywalny z płomieniem świecy.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.LWBMThQzG5aCSNXP"
+    },
+    {
+      "id": "MdrqSnA014jBggAV",
+      "name": "Bezbożny szał",
+      "description": "<p>Szał Bojowy, Walka Wręcz +10.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.MdrqSnA014jBggAV",
+      "effects": []
+    },
+    {
+      "id": "NzRTWXHlQ8I46RW4",
+      "name": "Dodatkowe usta",
+      "description": "<p>Rzuć kośćmi, by ustalić Miejsce Trafienia, w którym się pojawią.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.NzRTWXHlQ8I46RW4"
+    },
+    {
+      "id": "op4GKikIQee7JMXw",
+      "name": "Zwierzęce nogi",
+      "description": "<p>Szybkość +1</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.op4GKikIQee7JMXw",
+      "effects": []
+    },
+    {
+      "id": "oZzmVlMOZ02NaPkZ",
+      "name": "Bezduszność",
+      "description": "<p>Siła Woli +10, Ogłada -10.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.oZzmVlMOZ02NaPkZ",
+      "effects": []
+    },
+    {
+      "id": "Pmcq5P7yRnYsoFYf",
+      "name": "Nierówne rogi",
+      "description": "<p>+1 Punkt Pancerza na głowie, liczy się jako Broń Prosta o sile równej BS.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.Pmcq5P7yRnYsoFYf",
+      "effects": []
+    },
+    {
+      "id": "Seb2VOuQVhBGVGN3",
+      "name": "Blokada psychiczna",
+      "description": "<p>Inteligencja -10.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.Seb2VOuQVhBGVGN3",
+      "effects": []
+    },
+    {
+      "id": "SFKV0IBLLsbCMu7S",
+      "name": "Wibrysy",
+      "description": "<p>+10 do Tropienia.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.SFKV0IBLLsbCMu7S",
+      "effects": []
+    },
+    {
+      "id": "SPBRzPenZYA05KiK",
+      "name": "Kolczaste łuski",
+      "description": "<p>+1 Punkt Pancerza na wszystkich Miejscach Trafienia.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.SPBRzPenZYA05KiK",
+      "effects": []
+    },
+    {
+      "id": "t1sSiZO0cCKbT4ZA",
+      "name": "Wydłużone palce",
+      "description": "<p>Zręczność +10.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.t1sSiZO0cCKbT4ZA",
+      "effects": []
+    },
+    {
+      "id": "tcBFO4ATKpT0h3GT",
+      "name": "Nienawistne popędy",
+      "description": "<p>Wrogość wobec wszystkich istot poza rasą postaci.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.tcBFO4ATKpT0h3GT",
+      "effects": []
+    },
+    {
+      "id": "u5lMTKaOsZfiE3p0",
+      "name": "Dodatkowe stawy w nogach",
+      "description": "<p>Zwinność +5.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.u5lMTKaOsZfiE3p0",
+      "effects": []
+    },
+    {
+      "id": "VeCvAdN7TnwEyyu0",
+      "name": "Wewnętrzna bestia'",
+      "description": "<p>Siła Woli +10, Ogłada -5, Inteligencja -5.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.VeCvAdN7TnwEyyu0",
+      "effects": []
+    },
+    {
+      "id": "WUuVChLDF6fOLmHX",
+      "name": "Odrażające zachcianki",
+      "description": "<p>Ogłada -5, Siła Woli -5.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.WUuVChLDF6fOLmHX",
+      "effects": []
+    },
+    {
+      "id": "ytEJJWKVLwcywXCQ",
+      "name": "Bluźniercze popędy",
+      "description": "<p>Siła Woli -10, Zwinność +10.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.ytEJJWKVLwcywXCQ",
+      "effects": []
+    },
+    {
+      "id": "Zh68gzYMLW8vZgVo",
+      "name": "Chwiejne morale",
+      "description": "<p>Za każdym razem, gdy postaci nie powiedzie się Test Siły Woli, otrzymuje 1 poziom Paniki.</p>",
+      "sourceId": "Compendium.wfrp4e-core.mutations.Zh68gzYMLW8vZgVo",
+      "effects": []
+    }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "label": "Choroby",
+  "mapping": {
+    "duration_value": "data.duration.value",
+    "contraction": "data.contraction.value",
+    "incubation": "data.incubation.value",
+    "incubation_duration": "data.incubation.unit",
+    "duration_unit": "data.duration.unit",
+    "symptoms": "data.symptoms.value",
+    "permanent": "data.permanent.value",
+    "effects": {
+      "path": "effects",
+      "converter": "effects"
+    }
+  },
+  "entries": []
+}

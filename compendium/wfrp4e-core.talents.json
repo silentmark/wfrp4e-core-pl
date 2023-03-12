@@ -1,0 +1,13 @@
+{
+  "label": "Talenty",
+  "mapping": {
+    "specification_label": "data.specification.label",
+    "specification": "data.specification.value",
+    "tests": "data.tests.value",
+    "effects": {
+      "path": "effects",
+      "converter": "effects"
+    }
+  },
+  "entries": []
+}
