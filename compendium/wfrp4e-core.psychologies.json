@@ -18,14 +18,26 @@
       "name": "Nienawiść (x)",
       "description": "<p>Postać skrywa w duszy głęboką Nienawiść do „x”, czyli jakiejś grupy ludzi czy stworzeń, np. „mieszkańców Hochlandu”, „ośmiornic bagiennych” czy „handlarzy niewolników”. Postać nigdy nie może nawiązać kontaktów z kimś lub czymś, czego nienawidzi.</p><p>Za każdym razem, gdy spotyka przedstawiciela znienawidzonej grupy, musi wykonać Test Psychologii. Jeśli ten się nie uda, postać nie jest w stanie dłużej powstrzymywać swojej Nienawiści. Pod koniec każdej następnej Rundy postać może wykonać kolejny Test Psychologii, by zakończyć napad Nienawiści. Taki atak sam dobiegnie końca, kiedy wszyscy członkowie znienawidzonej grupy znajdujący się w polu widzenia albo uciekną, albo zginą. Stan <em>@Condition[Nieprzytomny]</em> przynosi identyczny skutek.</p>\n<p>Postać będąca w szale Nienawiści musi natychmiast podjąć próbę zniszczenia znienawidzonej grupy w najszybszy i najbardziej zabójczy znany jej sposób.</p>\n<ul>\n<li>Otrzymuje premię +1 PS do wszystkich Testów walki przeciwko tej grupie,</li>\n<li>jest niewrażliwa na @Compendium[wfrp4e-core.psychologies.Ib2YQYChktDFN93y]{Strach} i @Compendium[wfrp4e-core.skills.I0yPc4PH5erWJLmu]{Zastraszanie} (ale nie na @Compendium[wfrp4e-core.psychologies.meMkLEwdJIDLxM0B]{Grozę}) wywoływane przez znienawidzonego wroga.</li></ul>",
       "sourceId": "Compendium.wfrp4e-core.psychologies.5hH73j2NgPdsLCZN",
-      "effects": []
+      "effects": [
+        {
+          "label": "Nienawiść",
+          "script": null,
+          "id": "6QhtnGcV5T0JXQZN"
+        }
+      ]
     },
     {
       "id": "DrNUTPeodEgpWTnT",
       "name": "Szał Bojowy",
       "description": "<p>Dzięki Testowi Siły Woli postać może wprowadzić się w stan furii, motywując się, wyjąc, gryząc tarczę itd. Jeśli Test się uda, postać wpada w Szał Bojowy.</p>\n<p>W trakcie Szału Bojowego</p><ul><li>postać jest niewrażliwa na wszystkie inne Czynniki Psychologiczne i nie ucieknie ani nie wycofa się z żadnego powodu.;</li><li>Mało tego - musi zawsze poruszać się z pełną prędkością w stronę najbliższego widzianego przeciwnika, by go zaatakować.</li><li>Ogólnie rzecz biorąc, jedynymi Akcjami, jakie można wtedy wykonać, są Testy Broni Białej w zwarciu albo Atletyki, by szybciej dobiec do przeciwnika.</li><li>Poza tym w każdej Rundzie postać otrzymuje Akcję Darmową w postaci dodatkowego ataku wręcz, ponieważ naprawdę daje z siebie wszystko. </li><li>A jakby tego było mało, zaciekłość i brutalność skutkuje podniesieniem Bonusu z Siły o +1.</li></ul>\n<p>Postać pozostaje w Szale Bojowym, dopóki wszyscy wrogowie w polu widzenia nie zostaną unieszkodliwieni albo dopóki postać nie otrzyma przynajmniej 1 poziomu Stanu <em>@Condition[Oszołomienie]</em> lub nie nastąpi Stan <em>@Condition[Nieprzytomny]</em>. Po zakończeniu Szału Bojowego postać natychmiast otrzymuje 1 poziom Stanu <em>@Condition[Zmęczenie]</a></em>.</p></p>",
       "sourceId": "Compendium.wfrp4e-core.psychologies.DrNUTPeodEgpWTnT",
-      "effects": []
+      "effects": [
+        {
+          "label": "Szał Bojowy",
+          "script": "args.actor.characteristics.s.bonus += 1;\nargs.actor.characteristics.s.calculationBonusModifier -= 1;",
+          "id": "fChUE7dauqBKrKWx"
+        }
+      ]
     },
     {
       "id": "EBmSCscpk4vEDCD3",
@@ -44,7 +56,13 @@
       "name": "Miłość",
       "description": "<p>Poeci piszą bez końca miłości, a każdy minstrel Reikland zna dziesiątki piosenek chwalących siłę miłości. Jeśli twoja postać ma cechę miłosną wobec jednego lub większej liczby osób, odzwierciedla to głębokie i trwałe połączenie emocjonalne. Może to być intensywna romantyczna miłość do żony, męża lub kochanka, silna rodzinna miłość do rodzeństwa, rodzica lub dziecka lub szczególnie silna przyjaźń. Musisz przyjść z pomocą kogoś, kogo kochasz, jeśli jest on zagrożony fizycznie lub społecznie. Jesteś odporny na strach i zastraszanie podczas obrony swoich bliskich, i zyskujesz bonus +1 SL do wszystkich powiązanych testów.</p>",
       "sourceId": "Compendium.wfrp4e-core.psychologies.jbQDTxc4QNZDLaXm",
-      "effects": []
+      "effects": [
+        {
+          "label": "Miłość",
+          "script": null,
+          "id": "R2HbCmmf2tsHfeM2"
+        }
+      ]
     },
     {
       "id": "klCJX0mNpXYH5AIx",

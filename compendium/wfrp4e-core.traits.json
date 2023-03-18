@@ -9,5 +9,823 @@
       "converter": "effects"
     }
   },
-  "entries": []
+  "entries": [
+    {
+      "id": "0eEJ280MIC0IbEop",
+      "name": "Petryfikujące Spojrzenie",
+      "description": "<p>Spojrzenie stworzenia potrafi zamienić ciało w kamień. W ramach swojej Akcji stworzenie może wydać wszystkie Przewagi, by użyć spojrzenia (minimalnie 1). Stworzenie wykonuje Test Przeciwstawny Umiejętności Strzeleckie/Inicjatywa, dodając 1 PS za każdą wydaną Przewagę. Przeciwnik dostaje 1 Stan Oszołomienie za każde 2 PS, o które wygrało stworzenie. Jeśli stworzenie wygra co najmniej o 6 PS, jego cel zostaje nieodwracalnie zamieniony w kamień. \nJeśli cel potrafi rzucać czary, można wykonać Test Przeciwstawny z Umiejętnością Język (Magiczny) zamiast Inicjatywy, co reprezentuje rzucanie przez cel kontr zaklęcia.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.0eEJ280MIC0IbEop",
+      "specification": null
+    },
+    {
+      "id": "0VpT5yubw4UL7j6f",
+      "name": "Wrogość",
+      "description": "<p>Stworzenie naprawdę nie lubi Obiektu. Za każdym razem, gdy spotyka przedstawiciela tej grupy, musi wykonać Test Psychologii. Jeśli Test się powiedzie, stworzenie może kląć i pluć, ale otrzyma jedynie karę -20 do wszystkich Testów Ogłady związanych z tą grupą. Jeśli Test się nie uda, stworzenie nie jest w stanie dłużej dusić Wrogości. Pod koniec każdej następnej Rundy należy wykonać kolejny Test Psychologii, by zakończyć atak. Jeśli Test się nie powiedzie, Wrogość zakończy się samoistnie, kiedy wszyscy członkowie nielubianej grupy znajdujący się w polu widzenia albo czmychną, albo zostaną spacyfikowani. Oszołomienie lub Utrata Przytomności naturalnie kończą napad Wrogości, podobnie jak niektóre inne Czynniki Psychologiczne. Kiedy stworzenie ma napad Wrogości, musi natychmiast zaatakować swoich wrogów - albo werbalnie (obelgami, drwinami itd.), albo fizycznie (zazwyczaj kończy się na pięściach), w zależności od okoliczności. Ponadto podczas takich drwin i innych prób werbalnych ataków stworzenie otrzymuje premię +1 PS. Strach i Groza natychmiast przerywają napad Wrogości.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.0VpT5yubw4UL7j6f",
+      "specification": "Cel"
+    },
+    {
+      "id": "15ENOMf345S5AL68",
+      "name": "Siłacz",
+      "description": "<p>Stworzenie jest ciężkie i brutalne. Dostaje -1 do Szybkości, -10 do Zwinności oraz +10 do Siły i Wytrzymałości.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.15ENOMf345S5AL68",
+      "effects": [
+        {
+          "label": "Siłacz",
+          "script": null,
+          "id": "zMFAc8IX3JMZH9iL"
+        }
+      ],
+      "specification": null
+    },
+    {
+      "id": "3MDwUi7BVxwWVI2V",
+      "name": "Wampiryczny",
+      "description": "<p>Stworzenie żywi się krwią i czerpie z tego wielką siłę fizyczną. Za każdym razem, gdy wykona udane Ugryzienie odpowiedniego przeciwnika, leczy tyle Żywotności, ile traci jego przeciwnik. Takie picie krwi to jedyny sposób, w jaki może się leczyć.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.3MDwUi7BVxwWVI2V",
+      "specification": null
+    },
+    {
+      "id": "3wCtgMDNnu8MFmyk",
+      "name": "Niewrażliwość",
+      "description": "<p>Stworzenie jest całkowicie niewrażliwe na określonego rodzaju Obrażenia, takie jak od trucizny, magii lub elektryczności. Wszelkie Obrażenia tego rodzaju, włącznie z Ranami Krytycznymi, są ignorowane.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.3wCtgMDNnu8MFmyk",
+      "specification": "Typ"
+    },
+    {
+      "id": "3WI8mhTinC8inxyj",
+      "name": "Przebiegły",
+      "description": "<p>Stworzenie jest wyjątkowo przebiegłe. Dostaje +10 do Ogłady, Inteligencji i Inicjatywy.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.3WI8mhTinC8inxyj",
+      "effects": [
+        {
+          "label": "Przebiegły",
+          "script": null,
+          "id": "psBMxER5fywmsI6p"
+        }
+      ],
+      "specification": null
+    },
+    {
+      "id": "4CMKeDTDrRQZbPIJ",
+      "name": "Lęk",
+      "description": "<p>Stworzenie odczuwa Strach (0) przy spotkaniu z Obiektem.</p><p>Podczas Wydłużonego Testu Opanowania należy osiągnąć tyle PS, ile wynosi ta wartość. Test można ponawiać pod koniec każdej Rundy, dopóki liczba PS nie zrówna się z Poziomem Strachu Obiektu lub go nie przekroczy. Dopóki się to nie stanie, stworzenie jest zdjęte Strachem. W takiej sytuacji otrzymuje karę -1 PS do wszystkich Testów, które w jakikolwiek sposób wpłynęłyby na źródło Strachu. Ponadto stworzenie nie może podejść do czegokolwiek, co wywołuje w nim Strach, jeśli nie zda Wymagającego (+0) Testu Opanowania. Jeśli Obiekt zacznie się zbliżać, również należy wykonać Wymagający (+0) Test Opanowania - jeżeli się nie powiedzie, stworzenie otrzymuje 1 poziom Paniki.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.4CMKeDTDrRQZbPIJ",
+      "specification": "Cel"
+    },
+    {
+      "id": "4mF5Sp3t09kZhBYc",
+      "name": "Czempion",
+      "description": "<p>Stworzenie wyjątkowo dobrze walczy. Jeśli wygra Test Przeciwstawny, gdy broni się w walce w zwarciu, może zadać Obrażenia, tak jakby to ono atakowało.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.4mF5Sp3t09kZhBYc",
+      "specification": null
+    },
+    {
+      "id": "4xF7M6ylIiGntekh",
+      "name": "# Macki",
+      "description": "<p>Stworzenie ma macki w liczbie #. Dostaje jeden Darmowy Atak na mackę. Atak każdej macki zadaje tyle Obrażeń, ile wynosi podana wartość - zawiera już ona Bonus z Siły stworzenia. Jeśli atak zada Obrażenia, może ponadto dać przeciwnikowi Stan Pochwycenie, co zapoczątkowuje Chwyt celu przez daną mackę. Jeśli macka wykonuje Chwyt, aby rozstrzygnąć jego wynik, użyj Darmowego Ataku macki zamiast wykorzystywania Akcji stwora.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.4xF7M6ylIiGntekh",
+      "specification": "Wartość"
+    },
+    {
+      "id": "5muSFXd6oc760uVj",
+      "name": "Błogosławiony",
+      "description": "<p>Stworzenie jest błogosławione i może udzielać Błogosławieństw; odpowiednie bóstwo podano w nawiasie.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.5muSFXd6oc760uVj",
+      "specification": "Bóstwo"
+    },
+    {
+      "id": "7HSUM2iPZLX4ueIW",
+      "name": "Lodowaty Uścisk",
+      "description": "<p>Dotyk stworzenia mrozi dusze wrogów. Kosztem 2 Przewag i swojej Akcji stworzenie może podjąć Test Przeciwstawny Walka Wręcz/ Broń Biała albo Unik. Jeśli wygra, jego cel traci 1k10+PS punktów Żywotności, których nie zmniejszają Bonus z Wytrzymałości ani Punkty Pancerza. Ten atak jest Magiczny.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.7HSUM2iPZLX4ueIW",
+      "specification": null
+    },
+    {
+      "id": "8slW8CJ2oVTxeQ6q",
+      "name": "Rozmiar",
+      "description": "<p>Ta cecha reprezentuje stworzenia, których rozmiar różni się od standardowego w grze (czyli mniej więcej wielkości człowieka). Jest siedem poziomów Rozmiaru - od drobnego po monstrualny.</p><table style=\"direction: ltr; border-color: #a3a3a3; border-width: 1pt;\" title=\"\" border=\"1\" summary=\"\" cellspacing=\"0\" cellpadding=\"0\"><tbody><tr><td style=\"vertical-align: top; width: .868in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\"><span style=\"font-weight: bold;\">Rozmiar</span></td><td style=\"vertical-align: top; width: 2.0819in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\"><span style=\"font-weight: bold;\">Przykłady</span></td></tr><tr><td style=\"vertical-align: top; width: .868in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">Drobny</td><td style=\"vertical-align: top; width: 2.0819in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">gołąb, motyl, mysz</td></tr><tr><td style=\"vertical-align: top; width: .868in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">Niewielki</td><td style=\"vertical-align: top; width: 2.0819in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">jastrząb, kot, ludzkie niemowlę</td></tr><tr><td style=\"vertical-align: top; width: .868in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">Mały</td><td style=\"vertical-align: top; width: 2.1513in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">ludzkie dziecko, olbrzymi szczur, niziołek</td></tr><tr><td style=\"vertical-align: top; width: .868in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">Średni</td><td style=\"vertical-align: top; width: 2.0819in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">człowiek, elf, krasnolud</td></tr><tr><td style=\"vertical-align: top; width: .868in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">Duży</td><td style=\"vertical-align: top; width: 2.0819in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">koń, ogr, troll</td></tr><tr><td style=\"vertical-align: top; width: .8875in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">Wielki</td><td style=\"vertical-align: top; width: 2.0625in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">gryf, mantikora, wywerna</td></tr><tr><td style=\"vertical-align: top; width: .8875in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">Monstrualny</td><td style=\"vertical-align: top; width: 2.1319in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">olbrzym, smok, większy demon</td></tr></tbody></table><h3>KORZYSTANIE Z ROZMIARU</h3><p>Jeśli chcesz wykorzystać Rozmiar, by powiększyć stwora - na przykład przekształcając olbrzymiego pająka w gigantycznego pająka - zwiększ Siłę i Wytrzymałość o 10 oraz zmniejsz Zwinność o -5 za każdy poziom Rozmiaru, o który powiększasz stworzenie. Wykonaj tę procedurę odwrotnie, jeśli chcesz zmniejszyć stwora.</p><h3>Modyfikatory Rozmiaru w walce</h3><p>Jeśli stwór jest większy:</p><ul type=\"disc\"><li>Broń stwora dostaje Zaletę Przebijająca, jeśli stwór jest o jeden poziom większy oraz Zaletę Druzgocząca, jeśli jest większy o dwa lub więcej poziomów.</li><li>Stwór mnoży wszelkie zadawane Obrażenia tyle razy, ile poziomów jest większy (zatem 2 poziomy =x2, 3 poziomy =x3 i tak dalej); to mnożenie wykonywane jest po zastosowaniu wszystkich modyfikatorów.</li><li>Wszystkie udane ataki przeciwko mniejszym celom aktywują zasadę Śmiertelny cios - nie tylko ciosy, które zadały śmierć.</li><li>(houserule) Za każdy poziom powyżej Średniego, stworzenie liczy się jako +1 postać do zasad przewagi liczebnej.</li></ul><p>Jeśli stwór jest mniejszy:</p><ul type=\"disc\"><li>Stwór dostaje premię +10 do trafienia.</li></ul><h3>Obrona przed dużymi stworzeniami</h3><p>Dostajesz karę -2 do PS za każdy poziom, o który przerasta cię przeciwnik, gdy używasz Umiejętności Broń Biała do obrony podczas Testu Przeciwstawnego. Zalecamy wykonywanie uników przed olbrzymem wymachującym drzewem zamiast parowania jego ciosów!</p><h3>Strzelanie</h3><p>Strzelanie do małych celi daje modyfikator -10 za każdy poziom rozmiaru poniżej Średniego. Strzelanie do dużych stworzeń daje modyfikator +20 za każdy poziom powyżej Średniego.</p><h3>Przeciwstawna Siła</h3><p>Jeśli jedno stworzenie jest o 2 lub więcej poziomów większe, wygrywa automatycznie Testy Przeciwstawne Siły (i podobne). Jeśli jedno stworzenie jest o 1 poziom większe, mniejszy stwór, aby wygrać Test Przeciwstawny, musi uzyskać Fuksa. Gdy tak się stanie, PS porównywane są jak normalnie. Wszystkie pozostałe wyniki oznaczają zwycięstwo większego stworzenia.</p><h3>Ruch w walce</h3><p>Stworzenie, które jest większe, ignoruje konieczność wykonania Odwrotu, jeśli zamierza opuścić walkę w zwarciu; zamiast tego spycha z drogi mniejszych walczących, przemieszczając się tam, gdzie chce.</p><h3>Strach i Groza</h3><p>Jeśli stworzenie jest postrzegane jako agresywne, wywołuje Strach w dowolnej istocie mniejszej od niego oraz Grozę w dowolnej istocie mniejszej o dwa lub więcej poziomów. Siła Strachu lub Grozy równa się różnicy poziomów Rozmiarów. Zatem jeśli stwór jest duży, a jego przeciwnik mały, może wywoływać Grozę 2.</p><h3>Tupnięcie</h3><p>Stworzenia, które są większe od przeciwników, mogą wykonać jeden Darmowy Atak w postaci Tupnięcia, wydając 1 Przewagę. Uderzają stopą lub kopniakiem zmiatają mniejszych przeciwników z drogi. Ten atak zadaje Obrażenia równe Bonusowi z Siły stworzenia +0 i wykorzystuje Umiejętność Broń Biała (Bijatyka).</p><h3>Żywotność</h3><p>Większe stworzenia mają więcej Żywotności.</p><table style=\"direction: ltr; border-collapse: collapse; border: 1pt solid #A3A3A3;\" title=\"\" border=\"1\" summary=\"\" cellspacing=\"0\" cellpadding=\"0\"><tbody><tr><td style=\"vertical-align: top; width: .8472in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\"><span style=\"font-weight: bold;\">Rozmiar</span></td><td style=\"vertical-align: top; width: 3.9312in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\"><span style=\"font-weight: bold;\">Żywotność</span></td></tr><tr><td style=\"vertical-align: top; width: .8472in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">Drobny</td><td style=\"vertical-align: top; width: 3.9312in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">1</td></tr><tr><td style=\"vertical-align: top; width: .8472in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">Niewielki</td><td style=\"vertical-align: top; width: 3.9312in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">Bonus z Wytrzymałości</td></tr><tr><td style=\"vertical-align: top; width: .8472in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">Mały</td><td style=\"vertical-align: top; width: 3.9312in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">(2x Bonus z Wytrzymałości) + Bonus z Siły Woli</td></tr><tr><td style=\"vertical-align: top; width: .8472in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">Średni</td><td style=\"vertical-align: top; width: 3.9312in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">Bonus z Siły + (2x Bonus z Wytrzymałości) + Bonus z Siły Woli</td></tr><tr><td style=\"vertical-align: top; width: .8472in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">Duży</td><td style=\"vertical-align: top; width: 4.0in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">(Bonus z Siły + (2x Bonus z Wytrzymałości) + Bonus z Siły Woli) x2</td></tr><tr><td style=\"vertical-align: top; width: .8666in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">Wielki</td><td style=\"vertical-align: top; width: 3.9812in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">(Bonus z Siły + (2x Bonus z Wytrzymałości) + Bonus z Siły Woli) x4</td></tr><tr><td style=\"vertical-align: top; width: .8666in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">Monstrualny</td><td style=\"vertical-align: top; width: 3.9812in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">(Bonus z Siły + (2x Bonus z Wytrzymałości) + Bonus z Siły Woli) x8</td></tr></tbody></table>",
+      "sourceId": "Compendium.wfrp4e-core.traits.8slW8CJ2oVTxeQ6q",
+      "specification": "Rozmiar"
+    },
+    {
+      "id": "9GNpAqgsKzxZKJpp",
+      "name": "Głupi",
+      "description": "<p>Chociaż stworzenie nie jest całkiem pozbawione samoświadomości (a zatem nie ma cechy Zwierzęcy), jest głupie. Jeśli znajduje się w pobliżu dowolnych sojuszników, którzy nie mają cechy Głupi, stwór prowadzony jest przez sojuszników i nic się nie dzieje. W innym przypadku stwór musi zdać Łatwy (+40) Test Inteligencji na początku każdej Rundy, inaczej staje się bardzo zdezorientowany. Jeśli coś takiego nastąpi, stwór zacznie się ślinić, może usiądzie w miejscu albo będzie dłubał w nosie. Niewiele z niego pożytku i w tej Turze traci Ruch oraz Akcję.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.9GNpAqgsKzxZKJpp",
+      "specification": null
+    },
+    {
+      "id": "9MjH4xyVrd3Inzak",
+      "name": "Szybki",
+      "description": "<p>Stworzenie porusza się niespodziewanie szybko. Dostaje +1 do Szybkości i +10 do Zwinności.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.9MjH4xyVrd3Inzak",
+      "effects": [
+        {
+          "label": "Szybki",
+          "script": null,
+          "id": "MNEkuGwCbsQ6vdRr"
+        }
+      ],
+      "specification": null
+    },
+    {
+      "id": "9NROryHer1uXAKwY",
+      "name": "Elita",
+      "description": "<p>Stworzenie jest doświadczonym weteranem. Dostaje +20 do Walki Wręcz, Umiejętności Strzeleckich i Siły Woli.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.9NROryHer1uXAKwY",
+      "effects": [
+        {
+          "label": "Elita",
+          "script": null,
+          "id": "ZoDIzpVDZ0uTDCqD"
+        }
+      ],
+      "specification": null
+    },
+    {
+      "id": "a8MC97PLzl10WocT",
+      "name": "Duży",
+      "description": "<p>Stworzenie jest dużym okazem swojego gatunku. Dostaje +10 do Siły i Wytrzymałości oraz -5 do Zwinności.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.a8MC97PLzl10WocT",
+      "effects": [
+        {
+          "label": "Duży",
+          "script": null,
+          "id": "t9ugR6DGlErazKL4"
+        }
+      ],
+      "specification": null
+    },
+    {
+      "id": "aE3pyW20Orvdjzj0",
+      "name": "Nienawiść",
+      "description": "<p>Stworzenie naprawdę nienawidzi Obiektu. Stworzenie nigdy nie może nawiązać kontaktów z kimś lub czymś, czego nienawidzi. Za każdym razem, gdy spotyka przedstawiciela znienawidzonej grupy, musi wykonać Test Psychologii. Jeśli ten się nie uda, stworzenie nie jest w stanie dłużej powstrzymywać swojej Nienawiści. Pod koniec każdej następnej Rundy stworzenie może wykonać kolejny Test Psychologii, by zakończyć napad Nienawiści. Taki atak sam dobiegnie końca, kiedy wszyscy członkowie znienawidzonej grupy znajdujący się w polu widzenia albo uciekną, albo zginą. Utrata Przytomności przynosi identyczny skutek.</p><p>Stworzenie będąca w szale Nienawiści musi natychmiast podjąć próbę zniszczenia znienawidzonej grupy w najszybszy i najbardziej zabójczy znany jej sposób. Otrzymuje premię +1 PS do wszystkich Testów walki przeciwko tej grupie, jest niewrażliwe na Strach oraz Zastraszanie (ale nie na Grozę) wywoływane przez znienawidzonego wroga.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.aE3pyW20Orvdjzj0",
+      "specification": "Cel"
+    },
+    {
+      "id": "AGcJl5rHjkyIQBPP",
+      "name": "Zwierzęcy",
+      "description": "<p>Stworzenie jest nierozumne albo nie potrafi posługiwać się mową. Unika ognia i dostaje Stan Panika, jeśli zostanie nim trafione. W obronie używa wyłącznie Umiejętności Unik. Jeśli straci ponad połowę Żywotności, spróbuje uciec, o ile nie chroni swoich młodych, nie jest osaczone lub nie ma Cechy Stworzenia Terytorialny. W takim przypadku wpada w Szał Bojowy. Zwierzęce stworzenia nie mają Cechy Ogłada.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.AGcJl5rHjkyIQBPP",
+      "specification": null
+    },
+    {
+      "id": "AGreVSdN2jDSenEl",
+      "name": "Spaczenie Umysłu",
+      "description": "<p>Umysł stworzenia przepełnia Chaos. Wykonaj dla niego rzut w Tabeli Zepsucia Psychicznego.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.AGreVSdN2jDSenEl",
+      "specification": null
+    },
+    {
+      "id": "AtpAudHA4ybXVlWM",
+      "name": "Broń",
+      "description": "<p>Stworzenie nosi broń do walki wręcz lub używa w walce zębów, pazurów albo tym podobnych. \n\nBroń zadaje tyle Obrażeń, ile wynosi podana wartość, która już zawiera Bonus z Siły stworzenia. Zazwyczaj będzie to wynosiło 4 + Bonus z Siły (co reprezentuje broń ręczną).</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.AtpAudHA4ybXVlWM",
+      "specification": "4"
+    },
+    {
+      "id": "BqPZn6q3VHn9HUrW",
+      "name": "Rogi ()",
+      "description": "<p>Stworzenie ma rogi lub inne ostre wyrostki (jeśli jego Cecha Stworzenia Rogi reprezentuje coś innego, będzie to określone w nawiasie). Gdy stworzenie zyskuje Przewagę na skutek Szarżowania, może wykonać Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podaną wartość Obrażeń (Bonus z Siły stworzenia jest już wliczony).</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.BqPZn6q3VHn9HUrW",
+      "specification": "#"
+    },
+    {
+      "id": "Bvd2aZ0gQUXHfCTh",
+      "name": "Ochrona",
+      "description": "<p>Stworzenie jest magiczne, nosi specjalny talizman albo ma szczęście - niektóre ciosy po prostu go nie trafiają. Rzuć 1k10 po każdym otrzymanym ciosie. Jeśli stworzenie wyrzuci tyle, ile wynosi podana wartość, lub więcej, cios zostaje zignorowany, nawet jeśli jest to Trafienie Krytyczne.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.Bvd2aZ0gQUXHfCTh",
+      "specification": "Wartość"
+    },
+    {
+      "id": "Bw6tQyzOhcl7aQ46",
+      "name": "Sieć",
+      "description": "<p>Stworzenie może tworzyć sieci służące do łapania niebacznych wrogów. Za każdym razem, gdy stwór trafia przeciwników, dostają oni 1&nbsp;Stan&nbsp;Pochwycenie o Sile równej podanej wartości.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.Bw6tQyzOhcl7aQ46",
+      "effects": [
+        {
+          "label": "Sieć",
+          "script": "await args.actor.addCondition(\"entangled\");",
+          "id": "pV0NvELZXtpJJTfi"
+        }
+      ],
+      "specification": "#"
+    },
+    {
+      "id": "BxAvP2g1KbHPbbbA",
+      "name": "Bagnołaz",
+      "description": "<p>Stworzenie na bagnie jest w swoim żywiole. Nie dostaje kar do ruchu za przemieszczanie się po bagnistym podłożu.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.BxAvP2g1KbHPbbbA",
+      "specification": null
+    },
+    {
+      "id": "c1T7MelXEZLQfpVv",
+      "name": "Cuda",
+      "description": "<p>Stworzenie może czynić Cuda; odpowiednie bóstwo podano w nawiasie.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.c1T7MelXEZLQfpVv",
+      "specification": "Bóstwo"
+    },
+    {
+      "id": "ClOlztW6hH8rslbp",
+      "name": "Tropiciel",
+      "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.ClOlztW6hH8rslbp",
+      "effects": [
+        {
+          "label": "Tropiciel",
+          "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\"))) {\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}",
+          "id": "ftGagmf8rj6rq3ir"
+        }
+      ],
+      "specification": null
+    },
+    {
+      "id": "D0ImWEIMSDgElsnl",
+      "name": "Niestabilny",
+      "description": "<p>Ciało stworzenia spaja plugawa magia, która staje się niestabilna w świecie materialnym. Gdy stworzenie kończy Rundę związane walką z przeciwnikiem o wyższej Przewadze, zostaje odepchnięte, a wiążąca go magia słabnie. Otrzymuje tyle Ran, ile wynosi różnica Przewag. Zatem jeśli stworzenie miało 1 Przewagę, a jego przeciwnik 3, stworzenie otrzyma 2 Rany. Jeśli stworzenie kiedykolwiek osiągnie 0 Ran, spajająca je magia rozprasza się i stwór „umiera”.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.D0ImWEIMSDgElsnl",
+      "specification": null
+    },
+    {
+      "id": "E2Es82TvBKa7CoDG",
+      "name": "Rój",
+      "description": "<p>Roje to wielkie ilości tych samych stworów działających jak jeden. Rój liczy się jako jeden stwór, który ignoruje zasady efektów psychologicznych i może ignorować zasady Związania walką, gdy wykonuje Ruch. Jeśli rój trafi przeciwnika, aktywuje zasadę Śmiertelny cios (nawet jeśli nie zabił przeciwnika). Wszyscy przeciwnicy Związani walką z rojem automatycznie otrzymują 1 Ranę pod koniec każdej Rundy, gdy rój opada na wszystko w pobliżu. Rój ma pięć razy więcej Żywotności niż normalny okaz danego stworzenia i dostaje +10 do Walki Wręcz. Wszelkie próby strzelania do roju mają premię +40 do trafienia. Rój ignoruje wszelkie zasady Rozmiaru stworzeń.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.E2Es82TvBKa7CoDG",
+      "effects": [
+        {
+          "label": "Bonusy Roju",
+          "script": "args.wounds *= 5;",
+          "id": "FLoUbmMqNQMuJfZx"
+        },
+        {
+          "label": "Rój",
+          "script": "if (args.type == \"weapon\" && args.item.attackType == \"ranged\") {\n   args.prefillModifiers.modifier += 40;\n}",
+          "id": "tEaxMHcTWod19AVP"
+        }
+      ],
+      "specification": null
+    },
+    {
+      "id": "EO05HX7jql0g605A",
+      "name": "Latanie",
+      "description": "<p>Gdy stworzenie wykonuje Ruch, może przelecieć tyle metrów, ile wynosi podana wartość. Lecąc, ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydować, czy wyląduje, czy będzie kontynuować lot. Może w ramach tego ruchu wykonać Szarżę. Jeśli na początku swojej Tury leci, musi wybrać jako Ruch Latanie. Jeśli nie jest w stanie tego zrobić, MG decyduje, jak daleko stworzenie upadnie.\nBiorąc stworzenie na cel, zmierz odległość horyzontalną jak normalnie, a następnie zwiększ dystans o 1 poziom. Zatem strzał na Dalekim zasięgu stanie się strzałem na Bardzo dalekim zasięgu. Natomiast jeśli był to Bardzo daleki zasięg, stworzenia nie można dosięgnąć strzałem. \nLecąc, stworzenie dostaje karę -20 do wszystkich prób walki dystansowej, ponieważ nurkuje w powietrzu i zatacza kręgi.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.EO05HX7jql0g605A",
+      "specification": "#"
+    },
+    {
+      "id": "fjd1u9VAgiYzhBRp",
+      "name": "Furia",
+      "description": "<p>Stworzenie ulega czasami wszechogarniającej wściekłości. Może wydać wszystkie Przewagi (minimalnie 1), by wzbudzić w sobie Nienawiść wobec przeciwników w walce wręcz. Jeżeli stworzenie zebrało przynajmniej 3 Przewagi, może wydać wszystkie Przewagi, by wpaść w Szał Bojowy.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.fjd1u9VAgiYzhBRp",
+      "specification": null
+    },
+    {
+      "id": "FmHDbCOy3pH8yKhm",
+      "name": "Widzenie w Ciemności",
+      "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.FmHDbCOy3pH8yKhm",
+      "specification": null
+    },
+    {
+      "id": "GbDyBCu8ZjDp6dkj",
+      "name": "Wojowniczy",
+      "description": "<p>Stworzenie uwielbia zwyciężać w walce. Dopóki ma więcej Przewag niż przeciwnik, jest niewrażliwe na efekty psychologiczne.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.GbDyBCu8ZjDp6dkj",
+      "specification": null
+    },
+    {
+      "id": "gFkRm9wS65qe18Xv",
+      "name": "Jad",
+      "description": "<p>Ataki stworzenia są zatrute lub jadowite. Przeciwnicy, którym zadało ono Rany, otrzymują Stan Zatrucie. Jeśli nie jest podany poziom Trudności uniknięcia efektów jadu, domyślnie jest on Wymagający.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.gFkRm9wS65qe18Xv",
+      "effects": [
+        {
+          "label": "Jad",
+          "script": "if (args.totalWoundLoss > 0) {\n    await args.actor.addCondition(\"poisoned\");\n}",
+          "id": "cwsT8KWhr0OgtWc1"
+        }
+      ],
+      "specification": "Trudność"
+    },
+    {
+      "id": "GwjvDLZz3PvK6xgs",
+      "name": "Uprzedzenie",
+      "description": "<p>Stworzenie po prostu nie lubi Obiektu. Za każdym razem, gdy spotyka przedstawiciela grupy, do której jest uprzedzone, musi wykonać Test Psychologii. Jeśli ten się powiedzie, stworzenie pewnie zmarszczy brwi, ale będzie się zachowywać normalnie, otrzymując jedynie karę -10 do wszystkich Testów Ogłady związanych z tą grupą. Jeśli Test się nie uda, stworzenie puszcza wodze Uprzedzeń. Pod koniec każdej następnej Rundy stworzenie może wykonać kolejny Test Psychologii, by przerwać wzbierającą falę Uprzedzeń. Jeśli Test się nie powiedzie, efekt zakończy się, gdy wszyscy członkowie obranej za cel grupy znajdujący się w polu widzenia uciekną albo gdy stworzenie otrzyma 1 poziom Oszołomienia lub osiągnie Utratę Przytomności, ewentualnie wystąpią inne Czynniki Psychologiczne.</p><p>Uprzedzenie skutkuje tym, że stworzenie musi natychmiast obrazić i zbesztać obiekt swych uprzedzeń. Głośno. Naprawdę głośno.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.GwjvDLZz3PvK6xgs",
+      "specification": "Cel"
+    },
+    {
+      "id": "HbrwGhUl0ZXz4kLA",
+      "name": "Twardziel",
+      "description": "<p>Stworzenie jest w stanie przyjąć więcej obrażeń niż większość innych istot. Zwiększ Żywotność stworzenia o wartość równą jego Bonusowi z Wytrzymałości (zastosuj to przed wszelkimi modyfikatorami Rozmiaru).</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.HbrwGhUl0ZXz4kLA",
+      "effects": [
+        {
+          "label": "Twardziel",
+          "script": "args.multiplier.tb += 1;",
+          "id": "yrUvulIfrQfAJmkB"
+        }
+      ],
+      "specification": null
+    },
+    {
+      "id": "IAWyzDfC286a9MPz",
+      "name": "Niewrażliwość na Psychologię",
+      "description": "<p>Stworzenie jest odważne, nadzwyczajnie głupie albo po prostu dało się ponieść chwili. Dzięki temu zupełnie się nie boi. Ignoruje zasady Psychologii.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.IAWyzDfC286a9MPz",
+      "specification": null
+    },
+    {
+      "id": "IPKRMGry6WotuS1G",
+      "name": "Płochliwy",
+      "description": "<p>Stworzenie łatwo płoszy się z powodu magii lub donośnych odgłosów - dostaje wtedy +3 Stany Panika.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.IPKRMGry6WotuS1G",
+      "specification": null
+    },
+    {
+      "id": "j6v78dnOOdCB6c3d",
+      "name": "Skoczny",
+      "description": "<p>Stworzenie potrafi wysoko podskakiwać dzięki silnym kończynom, magii albo szczątkowym skrzydłom. Gdy Szarżuje lub Biegnie, podwaja swoją Szybkość i może ignorować wszelkie przeszkody terenowe oraz postacie, przeskakując nad nimi.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.j6v78dnOOdCB6c3d",
+      "effects": [
+        {
+          "label": "Skoczny",
+          "script": "this.actor.details.move.run *= 2;",
+          "id": "1XRT8BzRtNWArfau"
+        }
+      ],
+      "specification": null
+    },
+    {
+      "id": "JIAe7i7dqTQBu4do",
+      "name": "Terytorialny",
+      "description": "<p>To stworzenie strzeże określonego obszaru lub miejsca. Będzie walczyło do śmierci w jego obronie i normalnie nie będzie ścigało wrogów, jeśli uciekną z tego obszaru.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.JIAe7i7dqTQBu4do",
+      "specification": null
+    },
+    {
+      "id": "JQa5DLnTs2SEzRrc",
+      "name": "Widzenie w Mroku",
+      "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.JQa5DLnTs2SEzRrc",
+      "specification": null
+    },
+    {
+      "id": "JzeN9MZ0xUDvpE2l",
+      "name": "Wymiot",
+      "description": "<p>Stworzenie potrafi wyrzucać z siebie strumień żrących wymiocin, pokrywając przeciwników cuchnącym, na wpół strawionym śluzem.</p>\n\n<ul><li>W swojej Turze, wydając 3 Przewagi, stworzenie może wykonać Wymiot jako Darmowy Atak. Stworzenie wybiera 1 cel, który widzi w promieniu tylu metrów, ile wynosi jego Bonus z Wytrzymałości, i wymiotuje. Trafione zostają także wszystkie cele w promieniu dwóch metrów od tego celu.</li><li>Stworzenie przeprowadza Test Przeciwstawny Umiejętności Strzeleckie/Unik przeciwko wszystkim objętym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Test jest zazwyczaj Łatwy (+40) dla wymiotującego stwora ze względu na bliski dystans oraz Wymagający (+0) dla przeciwników. Wszystkie cele, które przegrały, otrzymują trafienie z Obrażeniami równymi tyle, ile wynosi Bonus z Wytrzymałości +4 stwora, oraz dostają Stan Oszołomiony.</li><li>Noszony przez objęte efektem postaci pancerze oraz wszelka broń dostają 1 punkt Uszkodzeń od kwasowych wymiocin.</li></ul>",
+      "sourceId": "Compendium.wfrp4e-core.traits.JzeN9MZ0xUDvpE2l",
+      "effects": [
+        {
+          "label": "Wymiot",
+          "script": "await args.actor.addCondition(\"stunned\");",
+          "id": "4KinCaegUvscrFU9"
+        }
+      ],
+      "specification": "+4"
+    },
+    {
+      "id": "k9539MBTFplxsysT",
+      "name": "Twardy",
+      "description": "<p>Stworzenie jest odporniejsze na obrażenia niż normalnie i nie odpuszcza. Dostaje +10 do Wytrzymałości i Siły Woli.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.k9539MBTFplxsysT",
+      "effects": [
+        {
+          "label": "Twardy",
+          "script": null,
+          "id": "X8KrugiMugs70khd"
+        }
+      ],
+      "specification": null
+    },
+    {
+      "id": "KII1gWnxIZ8HzmU5",
+      "name": "Wspinacz",
+      "description": "<p>Stworzenie potrafi bez wysiłku wspinać się po pionowych powierzchniach, a nawet poruszać się po suficie, gotowe opaść na niczego niespodziewającą się ofiarę. Porusza się z pełną Szybkością po dowolnej odpowiedniej powierzchni i automatycznie przechodzi wszystkie Testy Wspinaczki.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.KII1gWnxIZ8HzmU5",
+      "specification": null
+    },
+    {
+      "id": "kJNAY1YRaCy9IgmT",
+      "name": "Groza",
+      "description": "<p>Stworzenie w sposób nadnaturalny wzbudza mrożącą krew w żyłach Grozę w innych istotach. Poziom Grozy równy jest podanej wartości.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.kJNAY1YRaCy9IgmT",
+      "effects": [
+        {
+          "label": "Groza",
+          "script": "let value = parseInt(this.item.specification.value);\nlet name = this.actor.prototypeToken.name;\nif (game.user.isGM && game.user.targets.size) {\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name);\n  })\n  game.user.updateTokenTargets([]);\n}\nelse {\n  game.wfrp4e.utility.postTerror(value, name);\n}",
+          "id": "xTL3QAampKjHdKVh"
+        }
+      ],
+      "specification": "Wartość"
+    },
+    {
+      "id": "KynNUYYKzTMeHrKl",
+      "name": "Dusiciel",
+      "description": "<p>Stworzenie potrafi ściskać i miażdżyć ofiary. Każdy udany rzut na trafienie daje celowi Stan Pochwycenie. Jeżeli do tego dojdzie, stworzenie może wejść w Chwyt.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.KynNUYYKzTMeHrKl",
+      "effects": [
+        {
+          "label": "Dusiciel",
+          "script": "await args.actor.addCondition(\"entangled\");",
+          "id": "txcmOLjyNoW2BLSu"
+        }
+      ],
+      "specification": null
+    },
+    {
+      "id": "lV7Bxi3T3ps4QBlc",
+      "name": "Mutacja",
+      "description": "<p>Stworzenie zostało „pobłogosławione” mutacją. Wykonaj dla niego rzut w Tabeli Spaczenia Fizycznego.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.lV7Bxi3T3ps4QBlc",
+      "specification": null
+    },
+    {
+      "id": "M5QSWOYt2Rbv2yxW",
+      "name": "Kwasowa Krew",
+      "description": "<p>Krew stworzenia jest żrąca. Za każdym razem, gdy zostanie ono ranione, tryska z niego krew i wszystkie związane z nim walką cele dostają 1k10 Ran. Są one normalnie obniżane przez Bonus z Wytrzymałości i Punkty Pancerza, ale wynoszą minimum 1.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.M5QSWOYt2Rbv2yxW",
+      "effects": [
+        {
+          "label": "Kwasowa Krew",
+          "script": "let content = `<b>${this.effect.label}</b>: All targets engaged with <b>${this.actor.prototypeToken.name}</b> take [[/r 1d10]] Damage, modified by TB and AP.`;\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}});",
+          "id": "mzNcVAruDOTiCGhS"
+        }
+      ],
+      "specification": null
+    },
+    {
+      "id": "mCh1KK9jomwFZcLB",
+      "name": "Zimnokrwisty",
+      "description": "<p>Stworzenie jest zimnokrwiste i nie działa pochopnie. Może odwrócić wszystkie nieudane Testy Siły Woli.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.mCh1KK9jomwFZcLB",
+      "effects": [
+        {
+          "label": "Zimnokrwisty",
+          "script": "if (args.test.characteristicKey == \"wp\") {\n   args.test.preData.canReverse = true;\n}",
+          "id": "cq8SZaHuRYPHsnQF"
+        }
+      ],
+      "specification": null
+    },
+    {
+      "id": "mDgEMOoJpi8DkRYb",
+      "name": "Magiczny",
+      "description": "<p>Stworzenie spowite jest magią. Wszystkie jego ataki liczą się jako Magiczne, co oznacza, że może ranić istoty wrażliwe tylko na ataki magiczne.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.mDgEMOoJpi8DkRYb",
+      "specification": null
+    },
+    {
+      "id": "MVI0lXcg6vvtooAF",
+      "name": "Dekoncentrujący",
+      "description": "<p>Stworzenie rozprasza lub dezorientuje wrogów, być może wydzielając usypiający zapach lub powalający smród, a może ze względu na przerażająco dziwaczny wygląd. Wszystkie żywe cele w promieniu tylu metrów, ile wynosi jego Bonus z Wytrzymałości, dostają karę -20 do wszystkich Testów. Cel może dostać tę karę tylko raz - bez względu na to, jak wielu jest dekoncentrujących wrogów.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.MVI0lXcg6vvtooAF",
+      "effects": [
+        {
+          "label": "Dekoncentrujący",
+          "script": "args.prefillModifiers.modifier -= 20;",
+          "id": "et9TgrjWHZYQI7OJ"
+        }
+      ],
+      "specification": null
+    },
+    {
+      "id": "Ni4hNAPv3LhTpgMA",
+      "name": "Sprytny",
+      "description": "<p>Stworzenie jest wyjątkowo bystre. Dostaje +20 do Inteligencji i +10 do Inicjatywy.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.Ni4hNAPv3LhTpgMA",
+      "effects": [
+        {
+          "label": "Sprytny",
+          "script": null,
+          "id": "TsZOr4vxvvQ8UlCy"
+        }
+      ],
+      "specification": null
+    },
+    {
+      "id": "OzwDT6kzoLYeeR2d",
+      "name": "Skryty",
+      "description": "<p>Stworzenie jest wyjątkowo skryte. Dodaje wartość swojego Bonusu ze Zwinności do PS wszystkich Testów Skradania.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.OzwDT6kzoLYeeR2d",
+      "effects": [
+        {
+          "label": "Skryty",
+          "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}",
+          "id": "0AgiLabg8eB4LItu"
+        }
+      ],
+      "specification": null
+    },
+    {
+      "id": "PaW8i6JOxWyzAZCz",
+      "name": "Choroba",
+      "description": "<p>Stworzenie przenosi wymienioną chorobę. Inne postacie muszą wykonać odpowiedni Test, aby uniknąć zakażenia.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.PaW8i6JOxWyzAZCz",
+      "specification": "Typ"
+    },
+    {
+      "id": "PFTD9gDvRWW9uh5g",
+      "name": "Ożywieniec",
+      "description": "<p>Ożywieńcy nie są ani żywi, ani martwi, co oznacza, że nie potrzebują powietrza, jedzenia, wody… Ta cecha używana jest najczęściej wtedy, gdy czary, cuda i inne zdolności obejmują tylko Ożywieńców.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.PFTD9gDvRWW9uh5g",
+      "specification": null
+    },
+    {
+      "id": "plVyl4vjS2fX16Rv",
+      "name": "Upiorne Wycie",
+      "description": "<p>Stworzenie potrafi wydawać mrożące krew w żyłach wycie, zabójcze dla tych, którzy je usłyszą. W swojej Turze stworzenie może zużyć wszystkie Przewagi (minimalnie 2), aby wydać z siebie koszmarny wrzask. Jest to Darmowy Atak.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.plVyl4vjS2fX16Rv",
+      "effects": [
+        {
+          "label": "Upiorne Wycie",
+          "script": "let damage = (await new Roll(\"1d10\").roll()).total;\nawait args.actor.applyBasicDamage(damage, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL});\nawait args.actor.addCondition(\"deafened\", 3)\n\nargs.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute : {difficulty: \"average\" }, context : {failure: game.i18n.localize(\"WFRP4E.EFFECT.CORE.GhostlyHowlGain\"), success : game.i18n.localize(\"WFRP4E.EFFECT.CORE.GhostlyHowlAvoid\")}}).then(async test => {\n   await test.roll();\n   if (test.result.outcome == \"failure\") {\n      await args.actor.addCondition(\"broken\");\n   }\n});",
+          "id": "MNo99hhKFuloCyy8"
+        }
+      ],
+      "specification": null
+    },
+    {
+      "id": "pLW9SVX0TVTYPiPv",
+      "name": "Ugryzienie",
+      "description": "<p>W swojej Turze stworzenie może wykonać Darmowy Atak, wydając 1 Przewagę, z Obrażeniami o podanej wartości (zawierają już one Bonus z Siły).</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.pLW9SVX0TVTYPiPv",
+      "specification": "#"
+    },
+    {
+      "id": "pTorrE0l3VybAbtn",
+      "name": "Strach",
+      "description": "<p>Stworzenie wywołuje nienaturalny Strach w innych istotach. Poziom Strachu równy jest podanej wartości.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.pTorrE0l3VybAbtn",
+      "effects": [
+        {
+          "label": "Strach",
+          "script": "let value = parseInt(this.item.specification.value);\nlet name = this.actor.prototypeToken.name;\nif (game.user.isGM && game.user.targets.size) {\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  });\n  game.user.updateTokenTargets([]);\n}\nelse {\n  game.wfrp4e.utility.postFear(value, name);\n}",
+          "id": "ODxbsuuS0splmVEN"
+        }
+      ],
+      "specification": "#"
+    },
+    {
+      "id": "rOV2s6PQBBrhpMOv",
+      "name": "Mieszkaniec Lasu",
+      "description": "<p>Stworzenie jest w swoim żywiole w lesie. W zalesionym terenie dodaje Bonus ze Zwinności do PS wszystkich Testów Wspinaczki i Skradania.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.rOV2s6PQBBrhpMOv",
+      "effects": [
+        {
+          "label": "Mieszkaniec Lasu",
+          "script": "if (args.type == \"skill\" && (args.item.name == game.i18n.localize(\"NAME.Climb\")  || args.item.name.includes(game.i18n.localize(\"NAME.Stealth\")))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}",
+          "id": "HipPSD61s7Vkcru0"
+        }
+      ],
+      "specification": null
+    },
+    {
+      "id": "SfUUdOGjdYpr3KSR",
+      "name": "Regeneracja",
+      "description": "<p>Stworzenie leczy się w niezwykłym tempie. Nawet jego odcięte części ciała mogą odrastać. Na początku każdej Rundy, o ile pozostało mu ponad 0 Żywotności, stworzenie automatycznie regeneruje 1k10 punktów Żywotności. Jeśli pozostało mu 0 Żywotności, regeneruje jedną Ranę po wyrzuceniu 8+ na 1k10. Jeśli kiedykolwiek podczas regeneracji wyrzuci 10, może w pełni zregenerować także Ranę Krytyczną, anulując w ten sposób wszelkie powiązane z nią kary i Stany. Poza tym wszelkie Rany Krytyczne lub Rany spowodowane przez ogień nie mogą być regenerowane i powinny być zapisywane oddzielnie.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.SfUUdOGjdYpr3KSR",
+      "effects": [
+        {
+          "label": "Regeneracja",
+          "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")};\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`;\n      if (regen == 10) {\n         chatData.content += `<br>Additionally, they regenerate a Critical Wound.`;\n      }\n   }\n   else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n      }\n   }\n   else {\n      chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}",
+          "id": "0CEu4kmUhYSxWGJZ"
+        }
+      ],
+      "specification": null
+    },
+    {
+      "id": "sJ3yX1kvzu2hgNq5",
+      "name": "Ziemnowodny",
+      "description": "<p>Stworzenie jest w swoim żywiole w wodzie. Może dodać swój Bonus ze Zwinności do PS wszystkich testów Pływania i poruszać się w wodzie z pełną Szybkością.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.sJ3yX1kvzu2hgNq5",
+      "effects": [
+        {
+          "label": "Ziemnowodny",
+          "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Swim\")) {\n    args.prefillModifiers.slBonus += this.actor.characteristics.ag.bonus;\n}",
+          "id": "KZWyDUhYS7K60RF0"
+        }
+      ],
+      "specification": null
+    },
+    {
+      "id": "TBcdTlYSRH8Rd1x0",
+      "name": "Zakażony",
+      "description": "<p>Skóra stworzenia jest pełna gryzących pcheł lub czegoś podobnego. Wszyscy przeciwnicy dostają karę -10 do trafienia w walce w zwarciu, ponieważ pasożyty rozpraszają ich i irytują.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.TBcdTlYSRH8Rd1x0",
+      "effects": [
+        {
+          "label": "Zakażony",
+          "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\") {\n   args.prefillModifiers.modifier -= 10\n}",
+          "id": "gjbJu5OWDKFJvvyY"
+        }
+      ],
+      "specification": null
+    },
+    {
+      "id": "tNWrJUOArwfWXsPw",
+      "name": "Eteryczny",
+      "description": "<p>Stworzenie ma niematerialną postać, co pozwala mu przenikać przez obiekty materialne. Może być ranione tylko na skutek ataków magicznych.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.tNWrJUOArwfWXsPw",
+      "specification": null
+    },
+    {
+      "id": "UB4mDroL6S1F9B4u",
+      "name": "Konstrukt",
+      "description": "<p>Stworzenie jest konstruktem z magii, całkiem bezrozumnym i spajanym przez magiczne więzy. Nie ma Cech Inteligencja, Siła Woli ani Ogłada i nigdy nie musi ich testować. Jeśli brakuje czarodzieja, który by je kontrolował, albo stworzenie nie posiada cechy Terytorialny, wałęsa się bezmyślnie, podążając za nurtami przenikającej otoczenie magii.</p><p>Gdy trzeba obliczyć Żywotność stwora i wymagane jest określenie Bonusu z Siły Woli, użyj jego Bonusu z Siły. Wszystkie ataki stworzenia są Magiczne.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.UB4mDroL6S1F9B4u",
+      "effects": [
+        {
+          "label": "Konstrukt",
+          "script": "args.wpb = args.sb;",
+          "id": "mkDK0Yqvb4JqL1zq"
+        }
+      ],
+      "specification": null
+    },
+    {
+      "id": "UmxGZRV0Lw3TZ0Kx",
+      "name": "Długi Krok",
+      "description": "<p>Stworzenie porusza się wielkimi krokami, być może dlatego, że jest czworonożne lub ma szczególnie długie nogi. Gdy biegnie, pomnóż Szybkość Biegu przez 1,5.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.UmxGZRV0Lw3TZ0Kx",
+      "effects": [
+        {
+          "label": "Długi Krok",
+          "script": "args.actor.details.move.run *= 1.5;",
+          "id": "bSNlAHOT09D6Bx16"
+        }
+      ],
+      "specification": null
+    },
+    {
+      "id": "UnJ25lL8aUzem5JO",
+      "name": "Atak Ogonem",
+      "description": "<p>Stworzenie potrafi zwalać z nóg przeciwników machnięciem ogona. W swojej Turze może wykonać Darmowy Atak, wydając 1 Przewagę. Ogon zadaje tyle Obrażeń, ile wynosi podana wartość, która już zawiera Bonus z Siły stworzenia. Przeciwnicy o Rozmiarze mniejszym niż stworzenie, którzy odniosą jakiekolwiek Rany na skutek tego ataku, dostają także Stan Powalony.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.UnJ25lL8aUzem5JO",
+      "effects": [
+        {
+          "label": "Atak Ogonem",
+          "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value];\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value];\nif (attackerSize > actorSize) {\n   await args.actor.addCondition(\"prone\")\n   ChatMessage.create({content: `<b>Tail Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Prone]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}",
+          "id": "3KXZhIkHukLOpg2l"
+        }
+      ],
+      "specification": "Obrażenia"
+    },
+    {
+      "id": "uqGxFOEqeurwkAO3",
+      "name": "Zionięcie ()",
+      "description": "<p>Stworzenie posługuje się zionięciem jako potężną bronią. W swojej Turze, kosztem 2 Przewag, może aktywować Zionięcie jako Darmowy Atak. Wybierz 1 cel, który stworzenie widzi w promieniu 20 + Bonus z Wytrzymałości metrów. Trafione zostają wszystkie postacie wokół tego celu w promieniu tylu metrów, ile wynosi Bonus z Siły, podobnie jak wszystkie postacie znajdujące się między stworzeniem a celem. Przeprowadź Test Przeciwstawny Umiejętności Strzeleckie/Unik przeciwko wszystkim objętym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Każdy cel, który przegrał Test, otrzymuje trafienie zadające wskazaną wartość Obrażeń. Co więcej, jeśli przy Cesze Stworzenia wymieniony jest jeden z opisanych niżej typów zionięcia, zastosuj wskazane zasady.</p><p><b>Dym</b>: Obszar wypełnia się dymem, który zasłania pole widzenia na tyle Rund, ile wynosi Bonus z Wytrzymałości.</p><p><b>Elektryczność</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Oszołomienie.</p><p><b>Kwas</b>: Noszony przez objęte efektem postaci pancerze oraz wszelka broń dostają 1 punkt Uszkodzeń.</p><p><b>Ogień</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Podpalenie.</p><p><b>Trucizna</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Zatrucie.</p><p><b>Zimno</b>: Cele dostają jeden Stan Oszołomiony za każde pełne 5 odniesionych Ran (minimalnie 1).</p><p>Stworzenie jest odporne na własne Zionięcie. Ten atak jest Magiczny.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.uqGxFOEqeurwkAO3",
+      "specification": "# (Typ)"
+    },
+    {
+      "id": "UsJ2uIOOtHA7JqD5",
+      "name": "Nie do Zdarcia",
+      "description": "<p>Bez względu na to, jak mocno obrywa stworzenie, wciąż się podnosi. Wszystkie Rany Krytyczne, których wynikiem nie jest śmierć, mogą zostać wyleczone; wystarczy połączyć potrzebne części ciała w odpowiednich miejscach, może unieruchamiając je klamrami lub dużymi kołkami, a stwór zaraz będzie gotowy funkcjonować dalej. Nawet „śmierć” można „wyleczyć”, jeśli do ciała zostaną przymocowane odpowiednie części takie jak stracona głowa. Jeśli nastąpi zgon, a wszystkie części ciała będą na swoim miejscu, stworzenie może wykonywać po swojej śmierci Wymagający (+0) Test Odporności z PS wynoszącym 6 na początku każdej Rundy (przez tyle Rund, ile wynosi jego Bonus z Wytrzymałości). Jeśli Test jest udany, stworzenie z charkotem budzi się do życia z 1 punktem Żywotności.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.UsJ2uIOOtHA7JqD5",
+      "specification": null
+    },
+    {
+      "id": "V0c3qBU1CMm8bmsW",
+      "name": "Zaraza",
+      "description": "<p>Stworzenie (albo jego broń) przenosi paskudną infekcję. Jeśli spowoduje utratę Żywotności żyjącego przeciwnika, musi on zdać Łatwy (+40) Test Odporności, inaczej nabawi się Ropiejącej Rany.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.V0c3qBU1CMm8bmsW",
+      "effects": [
+        {
+          "label": "Zaraza",
+          "script": "if (args.totalWoundLoss > 0) {\n     ChatMessage.create({ content: game.i18n.format(\"WFRP4E.EFFECT.CORE.Infected\", {name: this.actor.name}), whisper: ChatMessage.getWhisperRecipients(\"GM\") })\n}",
+          "id": "6rMAx2bGefOkubv8"
+        }
+      ],
+      "specification": null
+    },
+    {
+      "id": "V0naR1YbYCl0KIxp",
+      "name": "Wyszkolony",
+      "description": "<p>Ta cecha reprezentuje zwierzęta, które zostały wyszkolone z użyciem Umiejętności Tresura. Umiejętności znane zwierzęciu podane są w nawiasie. Możesz tworzyć własne wyszkolone umiejętności.</p><p><strong>Aportujący</strong>: Zwierzę zostało nauczone aportowania. Normalnie jest to zarezerwowane dla psów i podobnych stworzeń.</p><p><strong>Bojowy</strong>: Zwierzę zostało przyuczone do udziału w walce i dostaje +10 do Walki Wręcz. Ponadto może ignorować Cechę Stworzenia Płochliwy w odniesieniu do głośnych dźwięków.</p><p><strong>Maskotka</strong>: Zwierzę zostało nauczone zabawiania innych. Dostaje premię +10 do odpowiednich Testów Muzyki, Sztuki lub Występów.</p><p><strong>Magiczny</strong>: Zwierzę zostało nauczone ignorowania cechy Płochliwy w odniesieniu do magii. To cecha wymagana przez czarodziejów, którzy chcą kupić konia.</p><p><strong>Pociągowy</strong>: Zwierzę zostało nauczone ciągnąć karetę, wóz, pług i tym podobne.</p><p><strong>Powracający</strong>: Zwierzę zostało nauczone powracania do domu, gdy zostanie wypuszczone lub zgubione.</p><p><strong>Stóżujący</strong>: Zwierzę zostało nauczone pozostawania w miejscu lub patrolowania okolicy jako strażnik. Uzyskuje Cechę Stworzenia Terytorialny.</p><p><strong>Ujarzmiony</strong>: Zwierzę zostało nauczone ignorowania swojej cechy Zwierzęcy. Dostaje 2k10 Ogłady.</p><p><strong>Wierzchowiec</strong>: Zwierzę pozwala się dosiadać. Niektóre stworzenia są wyjątkowo wojownicze i nie zaakceptują jeźdźca, który nie posiada odpowiedniej Umiejętności. Zatem jeśli chcesz dosiadać gryfa, musisz mieć Umiejętność Jeździectwo (Gryfy).</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.V0naR1YbYCl0KIxp",
+      "specification": "Wyszkolona Umiejętność"
+    },
+    {
+      "id": "v3uzEthcq0JRar0J",
+      "name": "Demoniczny",
+      "description": "<p>Esencję stworzenia stanowi surowa magia, a w tym, co uchodzi za jej żyły, płynie paskudna posoka. Demoniczne stwory nie muszą zaspokajać normalnych potrzeb życiowych. Nie potrzebują jedzenia, wodyani powietrza.</p><p>Wszystkie ataki stworzenia są Magiczne. Kiedy stworzenie zostanie trafione, rzuć 1k10. Jeśli wyrzuci tyle, ile wynosi próg, lub więcej, cios zostaje zignorowany, nawet jeśli jest to Trafienie Krytyczne. Za tojeśli Żywotność stworzenia zostanie zredukowana do 0, jego dusza natychmiast powraca do Królestw Chaosu. Stworzenie zostaje usuniętez rozgrywki.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.v3uzEthcq0JRar0J",
+      "specification": "Wartość #"
+    },
+    {
+      "id": "VFV2dmrfuVJ3RJnD",
+      "name": "Staje Dęba",
+      "description": "<p>W ramach swojego Ruchu stworzenie może wykonać atak Tupnięciem, jeśli jest większe od przeciwnika (patrz Rozmiar).</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.VFV2dmrfuVJ3RJnD",
+      "specification": "0"
+    },
+    {
+      "id": "VUJUZVN3VYhOaPjj",
+      "name": "Pancerz",
+      "description": "<p>Stworzenie chronione jest przez pancerz lub grubą skórę. Ma tyle Punktów Pancerza, ile wynosi wartość, na wszystkich Miejscach Trafień.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.VUJUZVN3VYhOaPjj",
+      "effects": [
+        {
+          "label": "Pancerz",
+          "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n    AP[\"head\"].value += (value - (APdamage.head || 0))\n    AP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\n    AP[\"lArm\"].value += (value - (APdamage.lArm || 0))\n    AP[\"body\"].value += (value - (APdamage.body || 0))\n    AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\n    AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}",
+          "id": "CAcGBn8sq62mVUxJ"
+        }
+      ],
+      "specification": "#"
+    },
+    {
+      "id": "vY0CHKsJRV3gYBj3",
+      "name": "Rzucanie Czarów",
+      "description": "<p>Stworzenie potrafi rzucać wszystkie zaklęcia Tradycji Magii podanej w nawiasie.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.vY0CHKsJRV3gYBj3",
+      "specification": "Tradycja"
+    },
+    {
+      "id": "wGTD2LezlI6Atyy0",
+      "name": "Przywódca",
+      "description": "<p>Stworzenie jest doświadczonym przywódcą. Dostaje premię +10 do Ogłady i Siły Woli. Uwaga: tej cechy nie mogą wybierać stworzenia posiadające cechę Zwierzęcy.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.wGTD2LezlI6Atyy0",
+      "effects": [
+        {
+          "label": "Przywódca",
+          "script": null,
+          "id": "qjz6qX4wkAN2Eldl"
+        }
+      ],
+      "specification": null
+    },
+    {
+      "id": "wMwSRDmgiF2IdCJr",
+      "name": "Nie Czuje Bólu",
+      "description": "<p>Stworzenie nie odczuwa bólu i może nie zwracać na niego uwagi. Wszelkie kary z Ran Krytycznych są ignorowane, o ile nie są Amputacjami. Stworzenie wciąż dostaje odpowiednie Stany jak normalnie.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.wMwSRDmgiF2IdCJr",
+      "specification": null
+    },
+    {
+      "id": "xg6z63j6BH5AaqLL",
+      "name": "Atak Językiem (Zasięg)",
+      "description": "<p>Chwytny język stworzenia może owijać się wokół ofiary, wciągając ją aż do makabrycznego końca. W swojej Turze stworzenie może wykonać Darmowy Atak, wydając 1 Przewagę. To atak dystansowy, który zadaje tyle Obrażeń, ile wynosi podana wartość (zasięg podany jest w nawiasie). Jeśli atak trafi, cel dostaje 1 Stan Pochwycenie, a jeśli ma mniejszy Rozmiar, zostaje przyciągnięty do stworzenia i Związany Walką wręcz. Stworzenie może następnie zdecydować, czy wypuści cel, wykonując Darmowy Atak z użyciem swojej cechy Broń, czy będzie trzymać cel owinięty językiem, zapoczątkowując Chwyt.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.xg6z63j6BH5AaqLL",
+      "effects": [
+        {
+          "label": "Atak Językiem (Zasięg)",
+          "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value];\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value];\nif (attackerSize > actorSize) {\n   await args.actor.addCondition(\"entangled\");\n   ChatMessage.create({content: `<b>Tongue Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Entangled]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}",
+          "id": "kPgI28vmSamM3u1s"
+        }
+      ],
+      "specification": "Wartość"
+    },
+    {
+      "id": "xneBqGOs1QS7kfUr",
+      "name": "Żarłoczny",
+      "description": "<p>Stworzenie nieustannie łaknie świeżego mięsa. Jeśli zabije lub unieruchomi żywego przeciwnika (albo natknie się na świeże ciało), musi zdać Przeciętny (+20) Test Siły Woli, inaczej zaczyna ucztować, tracąc następną Akcję i Ruch.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.xneBqGOs1QS7kfUr",
+      "specification": null
+    },
+    {
+      "id": "xsGbDFqK2qh7lsIj",
+      "name": "Spaczenie",
+      "description": "<p>Stworzenie jest napiętnowane przez Chaos lub przepełnione mroczną magią. Siła spaczenia podana jest w nawiasie.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.xsGbDFqK2qh7lsIj",
+      "specification": "Siła Korupcji"
+    },
+    {
+      "id": "yRhhOlt18COq4e1q",
+      "name": "Szał Bojowy",
+      "description": "<p>Stworzenie może wpadać w Szał Bojowy. Podczas Szału Bojowego jest odporne na zasady Psychologii, nie wycofa się z żadnego powodu, musi zawsze poruszać się z pełną prędkością w stronę najbliższego widzianego przeciwnika, by go zaatakować. Jedynymi Akcjami, jakie można wtedy wykonać, są Testy Broni Białej w zwarciu albo Atletyki, by szybciej dobiec do przeciwnika. Poza tym w każdej Rundzie postać otrzymuje Akcję Darmową w postaci dodatkowego ataku wręcz, ponieważ naprawdę daje z siebie wszystko. A jakby tego było mało, zaciekłość i brutalność skutkuje podniesieniem Bonusu z Siły o +1. Postać pozostaje w Szale Bojowym, dopóki wszyscy wrogowie w polu widzenia nie zostaną unieszkodliwieni albo dopóki postać nie otrzyma przynajmniej 1 poziomu Oszołomienia lub nie nastąpi Utrata Przytomności. Po zakończeniu Szału Bojowego postać natychmiast otrzymuje 1 poziom Zmęczenia.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.yRhhOlt18COq4e1q",
+      "effects": [
+        {
+          "label": "Szał Bojowy",
+          "script": "args.actor.characteristics.s.bonus += 1;\nargs.actor.characteristics.s.calculationBonusModifier -= 1;",
+          "id": "jTfCjCCrfFHKqXhz"
+        }
+      ],
+      "specification": null
+    },
+    {
+      "id": "yrkI7ATjqLPDTFmZ",
+      "name": "Odporność na Magię",
+      "description": "<p>Efekt wywierany przez magię na stworzenie jest ograniczony. PS dowolnego wpływającego na stworzenie czaru zmniejszany jest o podaną wartość. Zatem Odporność na Magię 2 zmniejsza PS o 2.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.yrkI7ATjqLPDTFmZ",
+      "effects": [
+        {
+          "label": "Odporność na Magię",
+          "script": "if (args.type == \"cast\") {\n       args.prefillModifiers.slBonus -= 2;\n}",
+          "id": "PWNOSwxsePCN7sKH"
+        }
+      ],
+      "specification": null
+    },
+    {
+      "id": "Z1TGphWhic2E3Lfx",
+      "name": "Strzelanie (Zasięg)",
+      "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
+      "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
+      "specification": "Obrażenia"
+    }
+  ]
 }

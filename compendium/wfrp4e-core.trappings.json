@@ -11,6 +11,13 @@
   },
   "entries": [
     {
+      "id": "039vRQ8jv5cY3P4o",
+      "name": "Miecz dwuręczny",
+      "description": "<p></p>",
+      "sourceId": "Compendium.wfrp4e-core.trappings.039vRQ8jv5cY3P4o",
+      "special": null
+    },
+    {
       "id": "0MYOJFx3vkYA95B4",
       "name": "Brązowy Pens",
       "description": "<p></p>",
@@ -49,6 +56,13 @@
       "sourceId": "Compendium.wfrp4e-core.trappings.1H8pOSNxRS69PADr"
     },
     {
+      "id": "1tHkTZYaauicIh8I",
+      "name": "Muszkiet hochlandzki",
+      "description": "<p></p>",
+      "sourceId": "Compendium.wfrp4e-core.trappings.1tHkTZYaauicIh8I",
+      "special": null
+    },
+    {
       "id": "1wtW4N8l3UKwlLI3",
       "name": "Bandaż",
       "description": "<p>Udany test <strong>Leczenia</strong> lub <strong>Żręczności</strong> usuwa +1 dodatkowy poziom<em>Krwawienia</em>.</p>",
@@ -61,10 +75,24 @@
       "sourceId": "Compendium.wfrp4e-core.trappings.1XRNUP7fKAT2x7wR"
     },
     {
+      "id": "1zaqojk0Oq1m8vYv",
+      "name": "Broń Ręczna",
+      "description": "<p></p>",
+      "sourceId": "Compendium.wfrp4e-core.trappings.1zaqojk0Oq1m8vYv",
+      "special": null
+    },
+    {
       "id": "25Ek5A1EmQqzOcSK",
       "name": "Księga, inżynieria",
       "description": "<p>Większość książek inżynieryjnych jest drukowana. Inżynieria to w Imperium nauka zaawansowana, głównie dzięki Imperialnej Akademii Inżynierii w Altdorfie i krasnoludzkiej Gildii Inżynierów. Z tego względu teksty traktujące o inżynierii są zwykle pisane, współtworzone lub redagowane przez krasnoludy.</p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.25Ek5A1EmQqzOcSK"
+    },
+    {
+      "id": "2mE771fGEEB38OqG",
+      "name": "Łuk elfi",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.2mE771fGEEB38OqG",
+      "special": null
     },
     {
       "id": "2znfMGBp5GOQ12M0",
@@ -97,6 +125,14 @@
       "sourceId": "Compendium.wfrp4e-core.trappings.482LVHdTtG0WPzis"
     },
     {
+      "id": "4hV1PpYm9Q2pyUNf",
+      "name": "Pocisk ołowiany",
+      "description": "<p></p>",
+      "sourceId": "Compendium.wfrp4e-core.trappings.4hV1PpYm9Q2pyUNf",
+      "special": null,
+      "range": null
+    },
+    {
       "id": "4hyL1z3ayI3ligQE",
       "name": "Beczka",
       "description": "<p>Pojemność: 145 litrów płynu.</p>\n<p>&nbsp;</p>",
@@ -107,9 +143,29 @@
       "name": "Czepiec kolczy",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.4xV16ttsxCa311vl",
-      "effects": [],
+      "effects": [
+        {
+          "label": "Czepiec kolczy",
+          "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Perception\")) {\n   args.prefillModifiers.modifier -= 10\n}",
+          "id": "6pQrluba3OWBJgYI"
+        }
+      ],
       "special": null,
       "penalty": null
+    },
+    {
+      "id": "56Y8YRC8wF2e6yye",
+      "name": "Cep bojowy",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.56Y8YRC8wF2e6yye",
+      "special": null
+    },
+    {
+      "id": "5DOi1id1tatHp9Q5",
+      "name": "Lewak",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.5DOi1id1tatHp9Q5",
+      "special": null
     },
     {
       "id": "5fowsr8vslorjeB2",
@@ -130,6 +186,14 @@
       "sourceId": "Compendium.wfrp4e-core.trappings.5TDwZGuGwX1QJWAg"
     },
     {
+      "id": "5wItcVAcA6mfa62q",
+      "name": "Śrut i proch",
+      "description": "<p></p>",
+      "sourceId": "Compendium.wfrp4e-core.trappings.5wItcVAcA6mfa62q",
+      "special": null,
+      "range": null
+    },
+    {
       "id": "61Fx3RHhSqaLCnao",
       "name": "Pióro do pisania",
       "description": "<p></p>",
@@ -140,6 +204,14 @@
       "name": "Talerz",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.68cSNeXpwBdXLPgb"
+    },
+    {
+      "id": "6GNNpWIGxO9CkTCR",
+      "name": "Strzała",
+      "description": "<p></p>",
+      "sourceId": "Compendium.wfrp4e-core.trappings.6GNNpWIGxO9CkTCR",
+      "special": null,
+      "range": null
     },
     {
       "id": "6OmsMPtz0NzCwvzL",
@@ -154,6 +226,13 @@
       "sourceId": "Compendium.wfrp4e-core.trappings.6x4YAR4iYsA5tjnC"
     },
     {
+      "id": "7Bpc5I8Arucy3w4q",
+      "name": "Proca",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.7Bpc5I8Arucy3w4q",
+      "special": null
+    },
+    {
       "id": "7CJfiEV10299s7c1",
       "name": "Butelka wina",
       "description": null,
@@ -166,16 +245,37 @@
       "sourceId": "Compendium.wfrp4e-core.trappings.7hRfHr1ZCUigByms"
     },
     {
+      "id": "83KlMxHxGfKUdMfq",
+      "name": "Nóż",
+      "description": "<p></p>",
+      "sourceId": "Compendium.wfrp4e-core.trappings.83KlMxHxGfKUdMfq",
+      "special": null
+    },
+    {
       "id": "8bxAt6ru3cCyGr6N",
       "name": "Narzędzie do czyszczenia uszu",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.8bxAt6ru3cCyGr6N"
     },
     {
+      "id": "8dKmuti5IuIs9AJA",
+      "name": "Pistolet samopowtarzalny*",
+      "description": "<p></p>",
+      "sourceId": "Compendium.wfrp4e-core.trappings.8dKmuti5IuIs9AJA",
+      "special": null
+    },
+    {
       "id": "8MpTb12W1x6ECZzt",
       "name": "Biżuteria",
       "description": "<p>Ceny różnią się w zależności od jakości wykonania, typu wykorzystanego metalu i wartości wstawionych klejnotów. Generalnie pospolite pierścienie bez żadnych klejnotów kosztują 10 monet wartości równej rodzajowi wykorzystanego metalu (tj. brązu, srebra lub złota), podczas gdy naszyjniki kosztują 20 monet tego samego rodzaju metalu.</p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.8MpTb12W1x6ECZzt"
+    },
+    {
+      "id": "8nJ9R8tbhW42VGhr",
+      "name": "Tarcza",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.8nJ9R8tbhW42VGhr",
+      "special": null
     },
     {
       "id": "8TKV6yGaUHrf75UH",
@@ -212,6 +312,13 @@
       "name": "Klucz",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.aExcYp7UPS5SL4ve"
+    },
+    {
+      "id": "ahlxlfIl8xUhBkic",
+      "name": "Sztylet",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.ahlxlfIl8xUhBkic",
+      "special": null
     },
     {
       "id": "Ao7DRZ1hS6uCGONP",
@@ -266,7 +373,13 @@
       "name": "Dziwnokorzeń",
       "description": "<p>Jeden z najpowszechniejszych narkotyków ulicznych w Imperium. Żuty dziwnokorzeń wywołuje euforię i przyjemne halucynacje. Niektórzy sugerują, że mogą być one powiązane z Wiatrami Magii. Narkotyk zapewnia premię +10 do Testów Odporności i Siły Woli, ale także karę -10 do Testów Zwinności, Inicjatywy i Inteligencji. <strong>Czas trwania</strong>: Aktywne podczas przeżuwania plus dodatkowe 1k10x10 minut.</p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.b6tGqvNe1jYBdeN5",
-      "effects": []
+      "effects": [
+        {
+          "label": "Dziwnokorzeń",
+          "script": "if (args.type == \"characteristic\") {\n  if (args.item == \"wp\" || args.item == \"t\")\n    args.prefillModifiers.modifier += 10\n  else if (args.item == \"ag\" || args.item == \"i\" || args.item == \"int\")\n    args.prefillModifiers.modifier -= 10\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"wp\" || args.item.characteristic.key == \"t\")\n  args.prefillModifiers.modifier += 10\n  else if (args.item.characteristic.key == \"ag\" || args.item.characteristic.key == \"i\" || args.item.characteristic.key == \"int\")\n    args.prefillModifiers.modifier -= 10\n}\nelse if (args.type == \"cast\") {\n  args.prefillModifiers.modifier -= 10\n}\nelse if (args.type == \"channelling\") {\n  args.prefillModifiers.modifier += 10\n}",
+          "id": "Sq1UQ9Xo4cuwWy2K"
+        }
+      ]
     },
     {
       "id": "b8SJ8qB0TpSjUGA6",
@@ -287,6 +400,20 @@
       "sourceId": "Compendium.wfrp4e-core.trappings.BBiL0DSHcdPakVBS"
     },
     {
+      "id": "bBX8MP6QfcyU6Fy3",
+      "name": "Korbacz",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.bBX8MP6QfcyU6Fy3",
+      "special": null
+    },
+    {
+      "id": "Bda4Wvnlt3q5zkKC",
+      "name": "Pika",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.Bda4Wvnlt3q5zkKC",
+      "special": null
+    },
+    {
       "id": "bImtd1QDrQWp53Ua",
       "name": "Torba na ramię",
       "description": "<p>Przerzucona przez ramię liczy się jako „noszona na sobie”.</p>",
@@ -299,13 +426,33 @@
       "sourceId": "Compendium.wfrp4e-core.trappings.BJDCewsSihieuEwE"
     },
     {
+      "id": "bwyUJua7I9hNg9WS",
+      "name": "Nóż do rzucania",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.bwyUJua7I9hNg9WS",
+      "special": null
+    },
+    {
       "id": "bY6M9XxbqmFmqpA8",
       "name": "Płytowe Nagolenniki",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.bY6M9XxbqmFmqpA8",
-      "effects": [],
+      "effects": [
+        {
+          "label": "Płytowe Nagolenniki",
+          "script": "if (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))) {\n   args.prefillModifiers.modifier -= 10;\n}",
+          "id": "u46Xpql4mjj6JOD0"
+        }
+      ],
       "special": null,
       "penalty": null
+    },
+    {
+      "id": "ByHt0vTWRIuHS2r8",
+      "name": "Garłacz",
+      "description": "<p></p>",
+      "sourceId": "Compendium.wfrp4e-core.trappings.ByHt0vTWRIuHS2r8",
+      "special": "Blunderbusses are the only weapons listed that use the Small shot or Improvised shot ammunition. All other Blackpowder and engineering weapons use bullets."
     },
     {
       "id": "BZmUt37Jk1UCokqS",
@@ -318,6 +465,21 @@
       "name": "Mundur",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.CB6cxxqy5vXcV6gf"
+    },
+    {
+      "id": "CdP1xLEJbe289beI",
+      "name": "Młot bojowy",
+      "description": "<p></p>",
+      "sourceId": "Compendium.wfrp4e-core.trappings.CdP1xLEJbe289beI",
+      "special": null
+    },
+    {
+      "id": "CdsNf9MFRUhrJ3YA",
+      "name": "Improwizowany śrut i proch",
+      "description": "<p></p>",
+      "sourceId": "Compendium.wfrp4e-core.trappings.CdsNf9MFRUhrJ3YA",
+      "special": null,
+      "range": null
     },
     {
       "id": "CihEl1pzvTiMQswA",
@@ -334,10 +496,38 @@
       "penalty": null
     },
     {
+      "id": "CRNrEnLXTGXVT1UW",
+      "name": "Krótki łuk",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.CRNrEnLXTGXVT1UW",
+      "special": null
+    },
+    {
+      "id": "CXg7XOFJwu4LZ9LM",
+      "name": "Halabarda",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.CXg7XOFJwu4LZ9LM",
+      "special": null
+    },
+    {
+      "id": "CYkA9Ax6BN7eiTvf",
+      "name": "Tarcza (Duża)",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.CYkA9Ax6BN7eiTvf",
+      "special": null
+    },
+    {
       "id": "d4iZk3dpNCZvsRJE",
       "name": "Mop",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.d4iZk3dpNCZvsRJE"
+    },
+    {
+      "id": "ddXgrDWZXSM3nXaf",
+      "name": "Strzałka",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.ddXgrDWZXSM3nXaf",
+      "special": null
     },
     {
       "id": "dyt9NYLGBcgOxaMQ",
@@ -350,7 +540,13 @@
       "name": "Hełm płytowy",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.e9WmLbD7AuXSeWp0",
-      "effects": [],
+      "effects": [
+        {
+          "label": "Hełm płytowy",
+          "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Perception\")){\n   args.prefillModifiers.modifier -= 20;\n}",
+          "id": "Vljt1mEPqTTJIIxs"
+        }
+      ],
       "special": null,
       "penalty": null
     },
@@ -403,6 +599,13 @@
       "sourceId": "Compendium.wfrp4e-core.trappings.f6cvUapo8tQHp2OL"
     },
     {
+      "id": "F7jJaldf3lbkjABW",
+      "name": "Półtorak",
+      "description": "<p></p>",
+      "sourceId": "Compendium.wfrp4e-core.trappings.F7jJaldf3lbkjABW",
+      "special": null
+    },
+    {
       "id": "fHb7bFU8QX3oi33F",
       "name": "Arkusz pergaminu",
       "description": null,
@@ -413,6 +616,13 @@
       "name": "Robaki",
       "description": null,
       "sourceId": "Compendium.wfrp4e-core.trappings.fSo6LWBvDMZQqfKC"
+    },
+    {
+      "id": "G2yEH6caM0FJ9s0G",
+      "name": "Kilof",
+      "description": "<p></p>",
+      "sourceId": "Compendium.wfrp4e-core.trappings.G2yEH6caM0FJ9s0G",
+      "special": null
     },
     {
       "id": "g796u6AgEQvRPlp7",
@@ -431,6 +641,13 @@
       "name": "Płaszcz",
       "description": "<p>Chroni noszącego przed niesprzyjającymi warunkami pogodowymi.&nbsp;</p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.GIFrMVqk0SimaBOM"
+    },
+    {
+      "id": "GkeMJrsqxQIek1xK",
+      "name": "Kostur",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.GkeMJrsqxQIek1xK",
+      "special": null
     },
     {
       "id": "gLGSO3xrpAua0ydw",
@@ -455,7 +672,13 @@
       "name": "Mikstura lecznicza",
       "description": "<p>Jeśli bohater ma więcej niż 0 Żywotności, natychmiast leczy tyle jej punktów, ile wynosi jego Bonus z Wytrzymałość. <strong>Dawkowanie</strong>: 1 dawka na spotkanie.</p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.gxdjLQoQUTYgD6fm",
-      "effects": []
+      "effects": [
+        {
+          "label": "Mikstura lecznicza",
+          "script": "let wounds = this.actor.status.wounds;\nif (wounds.value > 0) {\n  ui.notifications.notify(game.i18n.format(\"WFRP4E.EFFECT.CORE.HealingPotion\", {wounds: this.actor.characteristics.t.bonus}));\n  this.actor.modifyWounds(this.actor.characteristics.t.bonus);\n} else {\n  ui.notifications.error(game.i18n.localize(\"WFRP4E.EFFECT.CORE.HealingPotionNoWounds\"));\n}",
+          "id": "K7C1LFtqdLQ5bhFS"
+        }
+      ]
     },
     {
       "id": "gzriPtNbRFltaAsh",
@@ -474,6 +697,13 @@
       "name": "Księga, sztuka",
       "description": "<p>Sztuki teatralne, poematy i ballady, a czasem kompozycje muzyczne zapisane na luźnych kartach - książki artystyczne występują pod wieloma postaciami. Ponadto zawierają traktaty na temat perspektywy, formy i stylu, często pisane przez słynnych malarzy lub rzeźbiarzy, takich jak Leonardo da Miragliano, i przeznaczone do masowego druku.&nbsp;</p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.H5CqkYPVVUslaORH"
+    },
+    {
+      "id": "HDQVaCTpIy2PBdYu",
+      "name": "Młot kawaleryjski",
+      "description": "<p></p>",
+      "sourceId": "Compendium.wfrp4e-core.trappings.HDQVaCTpIy2PBdYu",
+      "special": null
     },
     {
       "id": "hEr7pIXzUCHOXZIX",
@@ -576,6 +806,13 @@
       "sourceId": "Compendium.wfrp4e-core.trappings.ixOMVrEC1ISyYdDU"
     },
     {
+      "id": "J9sVeK9nbQLFyUMU",
+      "name": "Tarcza (Puklerz)",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.J9sVeK9nbQLFyUMU",
+      "special": null
+    },
+    {
       "id": "jA5TSMX64RR5paKk",
       "name": "Jedzenie na zimno na 1 dzień",
       "description": "<p></p>",
@@ -604,7 +841,18 @@
       "name": "Rozkosz Ranalda",
       "description": "<p>Ten silnie uzależniający stymulant to syntetyczny związek chemiczny wyrabiany z siarki, rtęci i innych pierwiastków. Wdychanie proszku zapewnia premię +1 do Szybkości i +10 do Walki Wręcz, Siły, Wytrzymałości i Zwinności. Trwa to przez 3 godziny, po upływie których użytkownik otrzymuje karę -2 do Szybkości i -20 do WW, S, Wt i Zw. <strong>Czas trwania</strong>: 1 dzień.</p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.jTFOrokjEHbi12rT",
-      "effects": []
+      "effects": [
+        {
+          "label": "Rozkosz Ranalda",
+          "script": null,
+          "id": "TApb9RQHQJcksYYL"
+        },
+        {
+          "label": "Efekt po ustaniu rozkoszy Ranalda",
+          "script": null,
+          "id": "vLMdJ6dsFuAAIee5"
+        }
+      ]
     },
     {
       "id": "JX4Qy1qVog3PZBvA",
@@ -619,10 +867,24 @@
       "sourceId": "Compendium.wfrp4e-core.trappings.jyphOMwPqNU9KgmS"
     },
     {
+      "id": "k0JKY8ck2QUx5mKS",
+      "name": "Arkan",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.k0JKY8ck2QUx5mKS",
+      "special": "Entangling weapons have no range bands, just the listed range."
+    },
+    {
       "id": "k0KeWhPgFGUcOgs0",
       "name": "Sidła na zwierzęta",
       "description": "<p>Używane do chwytania zwierzyny (patrz Zbieranie pożywienia i ziół na stronie 129).</p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.k0KeWhPgFGUcOgs0"
+    },
+    {
+      "id": "K34pxV6XsxhoZRiQ",
+      "name": "Ciężka kusza",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.K34pxV6XsxhoZRiQ",
+      "special": null
     },
     {
       "id": "KB8HgDz56dh2w7w1",
@@ -637,6 +899,14 @@
       "sourceId": "Compendium.wfrp4e-core.trappings.kCL3RKzIiGImZVZa"
     },
     {
+      "id": "kFROfGFdExfyJTg9",
+      "name": "Bełt",
+      "description": "<p></p>",
+      "sourceId": "Compendium.wfrp4e-core.trappings.kFROfGFdExfyJTg9",
+      "special": null,
+      "range": null
+    },
+    {
       "id": "KGW0J62iYLqRIfS4",
       "name": "Cud inżynierii",
       "description": "<p>Tylko dla niezmiernie bogatych, których stać na zamówienie prawdziwego dzieła sztuki u jednej z Gildii Inżynierów. Proteza pozwala całkowicie ignorować utratę ucha, dłoni, ręki lub nogi. Sycząca para i tykające mechanizmy zastępują krew i mięśnie. Jeśli bohater otrzyma kiedykolwiek Ranę Krytyczną zadaną cudowi inżynierii, proteza automatycznie psuje się i będzie wymagała kosztownej naprawy (co najmniej 10% ceny podstawowej, w zależności od natury otrzymanej Rany Krytycznej).</p>",
@@ -647,6 +917,34 @@
       "name": "Plecak",
       "description": "<p>Nałożony na plecy liczy się jako „noszony na sobie”.&nbsp;</p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.kJziKlct30lfAiYA"
+    },
+    {
+      "id": "KlT5qZzI1bsdvoHv",
+      "name": "Pięści i kopniaki",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.KlT5qZzI1bsdvoHv",
+      "special": null
+    },
+    {
+      "id": "kOfcQJQOgmGsqA5U",
+      "name": "Kastet",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.kOfcQJQOgmGsqA5U",
+      "special": null
+    },
+    {
+      "id": "ksRqHiMVpIL07Ij1",
+      "name": "Kusza",
+      "description": "<p></p>",
+      "sourceId": "Compendium.wfrp4e-core.trappings.ksRqHiMVpIL07Ij1",
+      "special": null
+    },
+    {
+      "id": "KSwMbO8dqISoGuIo",
+      "name": "Proca drzewcowa",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.KSwMbO8dqISoGuIo",
+      "special": null
     },
     {
       "id": "KWaFV7NPZqtgnL9Z",
@@ -721,10 +1019,24 @@
       "sourceId": "Compendium.wfrp4e-core.trappings.LrYz9nSsmH4H3He4"
     },
     {
+      "id": "M23N8sjzEp16abQQ",
+      "name": "Rusznica samopowtarzalna*",
+      "description": "<p></p>",
+      "sourceId": "Compendium.wfrp4e-core.trappings.M23N8sjzEp16abQQ",
+      "special": null
+    },
+    {
       "id": "M5rVGn8jfQXVkY57",
       "name": "Kurczak",
       "description": null,
       "sourceId": "Compendium.wfrp4e-core.trappings.M5rVGn8jfQXVkY57"
+    },
+    {
+      "id": "M71CyisSXU0I7V1S",
+      "name": "Kusza pistoletowa",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.M71CyisSXU0I7V1S",
+      "special": null
     },
     {
       "id": "mAhbJCYGkeqLl6CJ",
@@ -751,6 +1063,21 @@
       "sourceId": "Compendium.wfrp4e-core.trappings.MF43A52UBH8SHOnd"
     },
     {
+      "id": "mik7s6AqS8SMSaJ8",
+      "name": "Pocisk kamienny",
+      "description": "<p></p>",
+      "sourceId": "Compendium.wfrp4e-core.trappings.mik7s6AqS8SMSaJ8",
+      "special": null,
+      "range": null
+    },
+    {
+      "id": "mRU10yAWWWs5WoKt",
+      "name": "Broń Improwizowana",
+      "description": "<p></p>",
+      "sourceId": "Compendium.wfrp4e-core.trappings.mRU10yAWWWs5WoKt",
+      "special": null
+    },
+    {
       "id": "MtAmDCEzeM8LjtRn",
       "name": "Broszura",
       "description": null,
@@ -767,7 +1094,13 @@
       "name": "Salwort",
       "description": "<p>Trzymany pod czyimś nosem zapach zmiażdżonej gałązki tego zioła usuwa 1 Stan Ogłuszenia. <strong>Dawka</strong>: 1 na starcie.</p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.mUTrC5DA6bF8DDWz",
-      "effects": []
+      "effects": [
+        {
+          "label": "Salwort",
+          "script": "let stunned = this.actor.hasCondition(\"stunned\");\nif (stunned) {\n   ui.notifications.notify(game.i18n.localize(\"WFRP4E.EFFECT.CORE.Salwort\"));\n   await this.actor.removeCondition(\"stunned\", 1);\n}",
+          "id": "JGCSlLxbbXCPlkIY"
+        }
+      ]
     },
     {
       "id": "MzppW5E5c3by9iBU",
@@ -778,17 +1111,38 @@
       "penalty": null
     },
     {
+      "id": "N3aHfG4XASsiNoRv",
+      "name": "Kiścień",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.N3aHfG4XASsiNoRv",
+      "special": null
+    },
+    {
       "id": "N8HJlumE3hOgpPC2",
       "name": "Pół litra piwa",
       "description": null,
       "sourceId": "Compendium.wfrp4e-core.trappings.N8HJlumE3hOgpPC2"
     },
     {
+      "id": "NQ4OVp1ZfinJ7lQH",
+      "name": "Strzała elfia",
+      "description": "<p></p>",
+      "sourceId": "Compendium.wfrp4e-core.trappings.NQ4OVp1ZfinJ7lQH",
+      "special": null,
+      "range": null
+    },
+    {
       "id": "nRfcszo6wF2sVFDn",
       "name": "Fakstoryl",
       "description": "<p>Nacieranie rany okładami przygotowanymi z tego ziołowego koagulantu usuwa wszelkie Stany Krwawienie bez Testu Leczenia. Dawkowanie: 1 dawka na Ranę Krytyczną.</p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.nRfcszo6wF2sVFDn",
-      "effects": []
+      "effects": [
+        {
+          "label": "Fakstoryl",
+          "script": "let bleeding = this.actor.hasCondition(\"bleeding\")\nif (bleeding) {\n   ui.notifications.notify(game.i18n.format(\"WFRP4E.EFFECT.CORE.Faxtoryll\", {bleeding: bleeding.flags.wfrp4e.value}));\n   await this.actor.removeCondition(\"bleeding\", bleeding.flags.wfrp4e.value);\n}",
+          "id": "rzyXt1SCCnDq5tnt"
+        }
+      ]
     },
     {
       "id": "nrIcHcULt5fjRKbL",
@@ -801,6 +1155,20 @@
       "name": "Kucyk",
       "description": "<p>@Actor[12ARFrc7Dokxc72q]{Kucyk}</p><p>Udźwig: 14</p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.nVf2096t5ynzh0Qq"
+    },
+    {
+      "id": "NyIwm2Ge60jnUZft",
+      "name": "Komień",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.NyIwm2Ge60jnUZft",
+      "special": null
+    },
+    {
+      "id": "O2jqCh3Zb5eR4yXe",
+      "name": "Kopia",
+      "description": "<p></p>",
+      "sourceId": "Compendium.wfrp4e-core.trappings.O2jqCh3Zb5eR4yXe",
+      "special": "Lances count as Improvised Weapons if used on a round where you have not Charged"
     },
     {
       "id": "o4FSm7YgmfNV4Qgq",
@@ -875,6 +1243,13 @@
       "sourceId": "Compendium.wfrp4e-core.trappings.PKkGM5Q0Chmt5qFe"
     },
     {
+      "id": "PnYGK5FPgEGM1Ck3",
+      "name": "Pistolet",
+      "description": "<p></p>",
+      "sourceId": "Compendium.wfrp4e-core.trappings.PnYGK5FPgEGM1Ck3",
+      "special": null
+    },
+    {
       "id": "pXDWUzKhyW83rBHB",
       "name": "Lekki koń bojowy",
       "description": "<p>Koń wyszkolony do udziału w walce.</p>",
@@ -885,6 +1260,13 @@
       "name": "Pędzel do malowania",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.Q2Ip5ItHNSyBNwkg"
+    },
+    {
+      "id": "q3dEaQLL3ZYCZtU4",
+      "name": "Oszczep",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.q3dEaQLL3ZYCZtU4",
+      "special": null
     },
     {
       "id": "QCgsQbeEvV4dPB2D",
@@ -905,6 +1287,20 @@
       "sourceId": "Compendium.wfrp4e-core.trappings.qfd01sggD9xbCuJY"
     },
     {
+      "id": "qim3Ad0ldTS9mXDj",
+      "name": "Bolas",
+      "description": "<p></p>",
+      "sourceId": "Compendium.wfrp4e-core.trappings.qim3Ad0ldTS9mXDj",
+      "special": null
+    },
+    {
+      "id": "QnFLWJmz2DN76Dx5",
+      "name": "Wielki topór",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.QnFLWJmz2DN76Dx5",
+      "special": null
+    },
+    {
       "id": "QpqxyJ8dkzG3qKrE",
       "name": "Lalka",
       "description": "<p></p>",
@@ -915,6 +1311,13 @@
       "name": "Księga, magia",
       "description": "<p>Księgi zaklęć są zwykle spisywane przez czarodziejów, a ich okładki często bywają zabezpieczone zamknięciami na klucz. Czasami tomy chronione są także magicznymi alarmami lub pieczęciami. Posiadanie księgi zaklęć jest karalne jako herezja, o ile jej posiadacz nie jest czarodziejem licencjonowanym przez Kolegia Magii.</p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.qQQ6rRUqcRIaU7kr"
+    },
+    {
+      "id": "RHkj94yUJp620xr1",
+      "name": "Łuk długi",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.RHkj94yUJp620xr1",
+      "special": null
     },
     {
       "id": "RHqux3m4dgJoDkqG",
@@ -989,7 +1392,13 @@
       "name": "Hełm Płytowy (Otwarty)",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.TvUKzvXjc2VChuTT",
-      "effects": [],
+      "effects": [
+        {
+          "label": "Hełm Płytowy (Otwarty)",
+          "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Perception\")) {\n   args.prefillModifiers.modifier -= 10;\n}",
+          "id": "YLns5DNubGbr27Lh"
+        }
+      ],
       "special": null,
       "penalty": null
     },
@@ -1006,16 +1415,44 @@
       "sourceId": "Compendium.wfrp4e-core.trappings.tzMoFhFAWUGaqhxq"
     },
     {
+      "id": "U94l3IDj3xfIc78i",
+      "name": "Łuk",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.U94l3IDj3xfIc78i",
+      "special": null
+    },
+    {
+      "id": "uDavMIqhDl5aDNOy",
+      "name": "Łamacz mieczy",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.uDavMIqhDl5aDNOy",
+      "special": null
+    },
+    {
       "id": "USL6G7P9pbdWHodY",
       "name": "Ciepły posiłek w gospodzie",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.USL6G7P9pbdWHodY"
     },
     {
+      "id": "uSxXVJogASbJ62hl",
+      "name": "Floret",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.uSxXVJogASbJ62hl",
+      "special": null
+    },
+    {
       "id": "utRev4dXTLI0A2GL",
       "name": "Pałka",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.utRev4dXTLI0A2GL"
+    },
+    {
+      "id": "Uuu0bA2DmNp8o2JF",
+      "name": "Rapier",
+      "description": "<p></p>",
+      "sourceId": "Compendium.wfrp4e-core.trappings.Uuu0bA2DmNp8o2JF",
+      "special": null
     },
     {
       "id": "VakWbquag1kV5WtT",
@@ -1028,6 +1465,20 @@
       "name": "Dzban",
       "description": "<p>Pojemność: 4,5 litra płynu.</p>\n<p>&nbsp;</p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.vbNHaU50jr9T2dCQ"
+    },
+    {
+      "id": "vI0oorwbZdlszudf",
+      "name": "Ładunek zapalający",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.vI0oorwbZdlszudf",
+      "effects": [
+        {
+          "label": "Ładunek zapalający",
+          "script": "let ablaze = {{SL}} + 1;\nawait args.actor.addCondition(\"ablaze\", ablaze);",
+          "id": "BRhiXQ6Pig4FoZlF"
+        }
+      ],
+      "special": "An Incendiary gives every affected target 1+SL Ablaze Conditions."
     },
     {
       "id": "VIq5ronFVkpzF8Vb",
@@ -1102,10 +1553,39 @@
       "sourceId": "Compendium.wfrp4e-core.trappings.X7c87KbjSJ7F3yha"
     },
     {
+      "id": "X8WFQf0HB9yXKjdD",
+      "name": "Bomba",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.X8WFQf0HB9yXKjdD",
+      "special": null
+    },
+    {
       "id": "XAJUqtLiM0Dqk5Wb",
       "name": "Berło",
       "description": "<p>Oficjalni urzędnicy najwyższego szczebla noszą berła, które stanowią symbol ich pozycji.</p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.XAJUqtLiM0Dqk5Wb"
+    },
+    {
+      "id": "xdAP96GGDb87m0Pr",
+      "name": "Pocisk i proch",
+      "description": "<p></p>",
+      "sourceId": "Compendium.wfrp4e-core.trappings.xdAP96GGDb87m0Pr",
+      "special": null,
+      "range": null
+    },
+    {
+      "id": "xiOYNJcfqPselfwT",
+      "name": "Bicz",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.xiOYNJcfqPselfwT",
+      "special": "Entangling weapons have no range bands, just the listed range."
+    },
+    {
+      "id": "Xjwk84KnOKDaiZs1",
+      "name": "Topór do rzucania",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.trappings.Xjwk84KnOKDaiZs1",
+      "special": null
     },
     {
       "id": "XWlkZVUhzO0CwaiJ",
@@ -1186,7 +1666,13 @@
       "name": "Eliksir żywotności",
       "description": "<p>Wypicie tego eliksiru natychmiast usuwa wszelkie Stany&nbsp;Zmęczenie.</p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.ZBBi7LpWvNgQgRcw",
-      "effects": []
+      "effects": [
+        {
+          "label": "Eliksir żywotności",
+          "script": "let fatigued= this.actor.hasCondition(\"fatigued\");\nif (fatigued) {\n   ui.notifications.notify(game.i18n.format(\"WFRP4E.EFFECT.CORE.VitalityDraught\", {fatigued: fatigued.conditionValue}));\n   await this.actor.removeCondition(\"fatigued\", fatigued.conditionValue);\n}",
+          "id": "9ArLjt6oQqMDFsDu"
+        }
+      ]
     },
     {
       "id": "ZgpVhv100Kd9rsao",
@@ -1207,10 +1693,24 @@
       "sourceId": "Compendium.wfrp4e-core.trappings.zIf0i6DBqGlyQ5By"
     },
     {
+      "id": "zIuarD5mB0EF0ji0",
+      "name": "Włócznia",
+      "description": "<p></p>",
+      "sourceId": "Compendium.wfrp4e-core.trappings.zIuarD5mB0EF0ji0",
+      "special": null
+    },
+    {
       "id": "ZLIG9CAgCgIa38hU",
       "name": "Maska",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.ZLIG9CAgCgIa38hU"
+    },
+    {
+      "id": "zuFTVmBtN51K94Xy",
+      "name": "Rusznica",
+      "description": "<p></p>",
+      "sourceId": "Compendium.wfrp4e-core.trappings.zuFTVmBtN51K94Xy",
+      "special": null
     }
   ]
 }

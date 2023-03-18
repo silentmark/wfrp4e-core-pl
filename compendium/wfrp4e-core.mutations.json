@@ -13,42 +13,78 @@
       "name": "Chaotyczne sny",
       "description": "<p>Postać przez pierwsze 2 godziny po śnie uznawana jest za Wyczerpaną.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.0jaMZRJvJ5L12WZ2",
-      "effects": []
+      "effects": [
+        {
+          "label": "Zmęczenie",
+          "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');",
+          "id": "XRfGwpANht6wpmpR"
+        }
+      ]
     },
     {
       "id": "1MI5UADJkt042mGm",
       "name": "Paranoja",
       "description": "<p>Inicjatywa -5, Inteligencja -5.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.1MI5UADJkt042mGm",
-      "effects": []
+      "effects": [
+        {
+          "label": "Paranoja",
+          "script": null,
+          "id": "mfFTDXJ0SygBMRmF"
+        }
+      ]
     },
     {
       "id": "2JQWBLFSixeI6W6L",
       "name": "Zazdrosne myśli",
       "description": "<p>Ogłada -10.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.2JQWBLFSixeI6W6L",
-      "effects": []
+      "effects": [
+        {
+          "label": "Zazdrosne myśli",
+          "script": null,
+          "id": "rAvBBRHH27iSpP87"
+        }
+      ]
     },
     {
       "id": "2xvxa9Y8cqHzxuPd",
       "name": "Mitomania",
       "description": "<p>Inicjatywa -5, Siła Woli -5.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.2xvxa9Y8cqHzxuPd",
-      "effects": []
+      "effects": [
+        {
+          "label": "Mitomania",
+          "script": null,
+          "id": "4rt99MvDqb1zR2MG"
+        }
+      ]
     },
     {
       "id": "4OMI3eligS2L0LiL",
       "name": "Krótkie nogi",
       "description": "<p>Szybkość -1.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.4OMI3eligS2L0LiL",
-      "effects": []
+      "effects": [
+        {
+          "label": "Krótkie nogi",
+          "script": null,
+          "id": "Go6qdctMDg9FSLwm"
+        }
+      ]
     },
     {
       "id": "apBxYVRVp4Jt6gxy",
       "name": "Złe zamiary",
       "description": "<p>-10 do Testów, które nie mają na celu krzywdzenia innych; +10, jeśli zamiarem jest wyrządzenie krzywdy.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.apBxYVRVp4Jt6gxy",
-      "effects": []
+      "effects": [
+        {
+          "label": "Złe zamiary",
+          "script": "if (args.type == \"weapon\" || args.type == \"cast\") {\n   args.prefillModifiers.modifier += 10;\n}\nelse {\n   args.prefillModifiers.modifier -= 10;\n}",
+          "id": "zE2zFBWnHMLkNdqR"
+        }
+      ]
     },
     {
       "id": "ArCg0WaBxLgPQA8F",
@@ -61,21 +97,39 @@
       "name": "Kompletny świr",
       "description": "<p>Ogłada -20, Siła Woli +10.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.atYAndIzpFIfq0Wb",
-      "effects": []
+      "effects": [
+        {
+          "label": "Kompletny świr",
+          "script": null,
+          "id": "JTKbY08Ya8XiV33s"
+        }
+      ]
     },
     {
       "id": "BZ5iT2wQq7rOQ0Vo",
       "name": "Drżączka",
       "description": "<p>Zwinność +5, Ogłada -5.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.BZ5iT2wQq7rOQ0Vo",
-      "effects": []
+      "effects": [
+        {
+          "label": "Drżączka",
+          "script": null,
+          "id": "sijTILz9kZO5oASo"
+        }
+      ]
     },
     {
       "id": "CAqBwTw411GEyc4d",
       "name": "Straszny niepokój",
       "description": "<p>Siła Woli -10.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.CAqBwTw411GEyc4d",
-      "effects": []
+      "effects": [
+        {
+          "label": "Straszny niepokój",
+          "script": null,
+          "id": "Hp214Mf1VQEpwpN5"
+        }
+      ]
     },
     {
       "id": "cXeFXMf7IhxiGGPK",
@@ -88,84 +142,156 @@
       "name": "Nieludzka uroda",
       "description": "<p>Ogłada +10, rany zawsze goją się bez blizn.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.dAnz27Q409wtHfxc",
-      "effects": []
+      "effects": [
+        {
+          "label": "Nieludzka uroda",
+          "script": null,
+          "id": "73ZIsujmxVg9kAlF"
+        }
+      ]
     },
     {
       "id": "dsYDcdQfJGc7wxSX",
       "name": "Wychudzone ciało",
       "description": "<p>Siła -10, Zwinność +5.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.dsYDcdQfJGc7wxSX",
-      "effects": []
+      "effects": [
+        {
+          "label": "Wychudzone ciało",
+          "script": null,
+          "id": "Hkhq8FTiyNEsfHUF"
+        }
+      ]
     },
     {
       "id": "DVF74DvmMttrvboI",
       "name": "Nieustanne dreszcze",
       "description": "<p>Inicjatywa -5, Zręczność -5.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.DVF74DvmMttrvboI",
-      "effects": []
+      "effects": [
+        {
+          "label": "Nieustanne dreszcze",
+          "script": null,
+          "id": "FsfgCNLgJOUHSGMo"
+        }
+      ]
     },
     {
       "id": "gMsd6II7Y1oBMddp",
       "name": "Uzależnienie od adrenaliny",
       "description": "<p>Siła Woli +10, Inicjatywa -10.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.gMsd6II7Y1oBMddp",
-      "effects": []
+      "effects": [
+        {
+          "label": "Uzależnienie od adrenaliny",
+          "script": null,
+          "id": "39WPkucQosauvNSW"
+        }
+      ]
     },
     {
       "id": "GtACPDzi25YNgV0m",
       "name": "Mięsista macka",
       "description": "<p>Postać zyskuje Cechę Stworzenia Macki.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.GtACPDzi25YNgV0m",
-      "effects": []
+      "effects": [
+        {
+          "label": "Mięsista macka",
+          "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.4xF7M6ylIiGntekh\");\nitem = item.toObject();\nargs.actor.createEmbeddedDocuments(\"Item\", [item]);",
+          "id": "FeJR7iTtlWYjOwo9"
+        }
+      ]
     },
     {
       "id": "HEaxp50NEPnFiihl",
       "name": "Strach przed samotnością",
       "description": "<p>-10 do wszelkich Testów wykonywanych w samotności.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.HEaxp50NEPnFiihl",
-      "effects": []
+      "effects": [
+        {
+          "label": "Strach przed samotnością",
+          "script": null,
+          "id": "egLqzQE6VJ1xG91R"
+        }
+      ]
     },
     {
       "id": "hTm0rQkQTpm0OT3n",
       "name": "Stalowa skóra",
       "description": "<p>+2 Punkty Pancerza na wszystkich Miejscach Trafienia, Zwinność -10.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.hTm0rQkQTpm0OT3n",
-      "effects": []
+      "effects": [
+        {
+          "label": "Stalowa skóra",
+          "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 2;\nAP[\"rArm\"].value += 2;\nAP[\"lArm\"].value += 2;\nAP[\"body\"].value += 2;\nAP[\"lLeg\"].value += 2;\nAP[\"rLeg\"].value += 2;",
+          "id": "GIKMXwsPucxzpD3K"
+        }
+      ]
     },
     {
       "id": "iLZcSRUbxKBecACZ",
       "name": "Otyłość",
       "description": "<p>Szybkość -1, Siła +5, Krzepa +5.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.iLZcSRUbxKBecACZ",
-      "effects": []
+      "effects": [
+        {
+          "label": "Otyłość",
+          "script": null,
+          "id": "A3qEjzJ8tFTTWDPl"
+        }
+      ]
     },
     {
       "id": "JaEYSLJU5B2bknNc",
       "name": "Ogromne oko",
       "description": "<p>+10 do wszystkich związanych ze wzrokiem Testów Percepcji.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.JaEYSLJU5B2bknNc",
-      "effects": []
+      "effects": [
+        {
+          "label": "Ogromne oko",
+          "script": null,
+          "id": "iZgljsMJIgKH6L0P"
+        }
+      ]
     },
     {
       "id": "JR6GZJDVNupDnnbm",
       "name": "Odwrócona twarz",
       "description": "<p>Bez specjalnego efektu.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.JR6GZJDVNupDnnbm",
-      "effects": []
+      "effects": [
+        {
+          "label": "Odwrócona twarz",
+          "script": "if (args.type == \"characteristic\" && args.item == \"fel\") {\n  args.prefillModifiers.modifier -= 20;\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"fel\") {\n    args.prefillModifiers.modifier -= 20\n  }\n}",
+          "id": "W6GtdIEcYRTTdUbk"
+        }
+      ]
     },
     {
       "id": "JS0LEfU1Y5clOJpT",
       "name": "Dręczące wizje",
       "description": "<p>Inicjatywa -10.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.JS0LEfU1Y5clOJpT",
-      "effects": []
+      "effects": [
+        {
+          "label": "Dręczące wizje",
+          "script": null,
+          "id": "FckYHxsq1fxb9QNo"
+        }
+      ]
     },
     {
       "id": "kwLyvpNGE1MrDUw9",
       "name": "Zwisający jęzor",
       "description": "<p>-10 do wszystkich Testów Języka wymagających mówienia.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.kwLyvpNGE1MrDUw9",
-      "effects": []
+      "effects": [
+        {
+          "label": "Zwisający jęzor",
+          "script": null,
+          "id": "UuWZEOCSqCXzdXO8"
+        }
+      ]
     },
     {
       "id": "LWBMThQzG5aCSNXP",
@@ -178,7 +304,18 @@
       "name": "Bezbożny szał",
       "description": "<p>Szał Bojowy, Walka Wręcz +10.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.MdrqSnA014jBggAV",
-      "effects": []
+      "effects": [
+        {
+          "label": "Szał Bojowy",
+          "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.psychologies.DrNUTPeodEgpWTnT\");\nitem = item.toObject();\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);",
+          "id": "2Ohs6a56Gxu8VLHF"
+        },
+        {
+          "label": "Bezbożny szał",
+          "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.psychologies.DrNUTPeodEgpWTnT\");\nitem = item.toObject();\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);",
+          "id": "3ekXP5mRTRdaJptm"
+        }
+      ]
     },
     {
       "id": "NzRTWXHlQ8I46RW4",
@@ -191,91 +328,174 @@
       "name": "Zwierzęce nogi",
       "description": "<p>Szybkość +1</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.op4GKikIQee7JMXw",
-      "effects": []
+      "effects": [
+        {
+          "label": "Bonus do Szybkości",
+          "script": null,
+          "id": "1WuNk8jD1SyJIdHE"
+        }
+      ]
     },
     {
       "id": "oZzmVlMOZ02NaPkZ",
       "name": "Bezduszność",
       "description": "<p>Siła Woli +10, Ogłada -10.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.oZzmVlMOZ02NaPkZ",
-      "effects": []
+      "effects": [
+        {
+          "label": "Bezduszność",
+          "script": null,
+          "id": "C3nRwWnS8XEQfRQi"
+        }
+      ]
     },
     {
       "id": "Pmcq5P7yRnYsoFYf",
       "name": "Nierówne rogi",
       "description": "<p>+1 Punkt Pancerza na głowie, liczy się jako Broń Prosta o sile równej BS.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.Pmcq5P7yRnYsoFYf",
-      "effects": []
+      "effects": [
+        {
+          "label": "Nierówne rogi",
+          "script": "args.actor.status.armour[\"head\"].value += 1;",
+          "id": "2o80BN5wj3QZxpYJ"
+        },
+        {
+          "label": "Nierówne rogi",
+          "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.BqPZn6q3VHn9HUrW\");\nitem = item.toObject();\nitem.name = this.effect.label;\nitem.system.specification.value = this.actor.characteristics.s.bonus;\nitem.system.description.value = \"\";\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);",
+          "id": "n4ttJEJZfsfISN5O"
+        }
+      ]
     },
     {
       "id": "Seb2VOuQVhBGVGN3",
       "name": "Blokada psychiczna",
       "description": "<p>Inteligencja -10.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.Seb2VOuQVhBGVGN3",
-      "effects": []
+      "effects": [
+        {
+          "label": "Blokada psychiczna",
+          "script": null,
+          "id": "sQs8JwxXFQcfvDLD"
+        }
+      ]
     },
     {
       "id": "SFKV0IBLLsbCMu7S",
       "name": "Wibrysy",
       "description": "<p>+10 do Tropienia.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.SFKV0IBLLsbCMu7S",
-      "effects": []
+      "effects": [
+        {
+          "label": "Wibrysy",
+          "script": "if (args.type == \"skill\" && args.item.name == \"Track\") {\n   args.prefillModifiers.modifier += 10;\n}",
+          "id": "EfojtYV7NuxfAUrK"
+        }
+      ]
     },
     {
       "id": "SPBRzPenZYA05KiK",
       "name": "Kolczaste łuski",
       "description": "<p>+1 Punkt Pancerza na wszystkich Miejscach Trafienia.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.SPBRzPenZYA05KiK",
-      "effects": []
+      "effects": [
+        {
+          "label": "Kolczaste łuski",
+          "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 1;\nAP[\"rArm\"].value += 1;\nAP[\"lArm\"].value += 1;\nAP[\"body\"].value += 1;\nAP[\"lLeg\"].value += 1;\nAP[\"rLeg\"].value += 1;",
+          "id": "mbj1Q28xiYuHC3z2"
+        }
+      ]
     },
     {
       "id": "t1sSiZO0cCKbT4ZA",
       "name": "Wydłużone palce",
       "description": "<p>Zręczność +10.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.t1sSiZO0cCKbT4ZA",
-      "effects": []
+      "effects": [
+        {
+          "label": "Wydłużone palce",
+          "script": null,
+          "id": "9tlBnF93gLOLbCs2"
+        }
+      ]
     },
     {
       "id": "tcBFO4ATKpT0h3GT",
       "name": "Nienawistne popędy",
       "description": "<p>Wrogość wobec wszystkich istot poza rasą postaci.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.tcBFO4ATKpT0h3GT",
-      "effects": []
+      "effects": [
+        {
+          "label": "Nienawistne popędy",
+          "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.psychologies.Q2MCUrG2HppMcvN0\");\nitem = item.toObject();\nlet species = args.actor.details.species.value || \"Human\";\nitem.name = `Animosity (all not ${species})`;\nargs.actor.createEmbeddedDocuments(\"Item\", [item]);",
+          "id": "hUqEsvcMfTbiNWHj"
+        }
+      ]
     },
     {
       "id": "u5lMTKaOsZfiE3p0",
       "name": "Dodatkowe stawy w nogach",
       "description": "<p>Zwinność +5.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.u5lMTKaOsZfiE3p0",
-      "effects": []
+      "effects": [
+        {
+          "label": "Dodatkowe stawy w nogach",
+          "script": null,
+          "id": "Jv17LNhTsc3DqbRJ"
+        }
+      ]
     },
     {
       "id": "VeCvAdN7TnwEyyu0",
       "name": "Wewnętrzna bestia'",
       "description": "<p>Siła Woli +10, Ogłada -5, Inteligencja -5.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.VeCvAdN7TnwEyyu0",
-      "effects": []
+      "effects": [
+        {
+          "label": "Wewnętrzna bestia'",
+          "script": null,
+          "id": "KRT5ky5npGHcoSzv"
+        }
+      ]
     },
     {
       "id": "WUuVChLDF6fOLmHX",
       "name": "Odrażające zachcianki",
       "description": "<p>Ogłada -5, Siła Woli -5.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.WUuVChLDF6fOLmHX",
-      "effects": []
+      "effects": [
+        {
+          "label": "Odrażające zachcianki",
+          "script": null,
+          "id": "uMETdH7d0Hlt1yRa"
+        }
+      ]
     },
     {
       "id": "ytEJJWKVLwcywXCQ",
       "name": "Bluźniercze popędy",
       "description": "<p>Siła Woli -10, Zwinność +10.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.ytEJJWKVLwcywXCQ",
-      "effects": []
+      "effects": [
+        {
+          "label": "Bluźniercze popędy",
+          "script": null,
+          "id": "WRlYLsW6TkKNs7lX"
+        }
+      ]
     },
     {
       "id": "Zh68gzYMLW8vZgVo",
       "name": "Chwiejne morale",
       "description": "<p>Za każdym razem, gdy postaci nie powiedzie się Test Siły Woli, otrzymuje 1 poziom Paniki.</p>",
       "sourceId": "Compendium.wfrp4e-core.mutations.Zh68gzYMLW8vZgVo",
-      "effects": []
+      "effects": [
+        {
+          "label": "Chwiejne morale",
+          "script": "if (args.test.result.outcome == \"failure\") {\n    if (args.test.characteristicKey == \"wp\") {\n        await this.actor.addCondition(\"broken\")\n    }\n}",
+          "id": "RpoMdbEmjj9FhPvU"
+        }
+      ]
     }
   ]
 }
