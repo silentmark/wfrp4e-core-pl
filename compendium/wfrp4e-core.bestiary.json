@@ -1,157 +1,2360 @@
 {
   "label": "Bestiarusz",
   "mapping": {
-    "ws": {
-      "path": "data.characteristics.ws.label",
-      "converter": "bestiary_ws"
-    },
-    "ws_abrev": {
-      "path": "data.characteristics.ws.abrev",
-      "converter": "bestiary_wsabrev"
-    },
-    "bs": {
-      "path": "data.characteristics.bs.label",
-      "converter": "bestiary_bs"
-    },
-    "bs_abrev": {
-      "path": "data.characteristics.bs.abrev",
-      "converter": "bestiary_bsabrev"
-    },
-    "s": {
-      "path": "data.characteristics.s.label",
-      "converter": "bestiary_s"
-    },
-    "s_abrev": {
-      "path": "data.characteristics.s.abrev",
-      "converter": "bestiary_sabrev"
-    },
-    "t": {
-      "path": "data.characteristics.t.label",
-      "converter": "bestiary_t"
-    },
-    "t_abrev": {
-      "path": "data.characteristics.t.abrev",
-      "converter": "bestiary_tabrev"
-    },
-    "i": {
-      "path": "data.characteristics.i.label",
-      "converter": "bestiary_i"
-    },
-    "i_abrev": {
-      "path": "data.characteristics.i.abrev",
-      "converter": "bestiary_iabrev"
-    },
-    "ag": {
-      "path": "data.characteristics.ag.label",
-      "converter": "bestiary_ag"
-    },
-    "ag_abrev": {
-      "path": "data.characteristics.ag.abrev",
-      "converter": "bestiary_agabrev"
-    },
-    "dex": {
-      "path": "data.characteristics.dex.label",
-      "converter": "bestiary_dex"
-    },
-    "dex_abrev": {
-      "path": "data.characteristics.dex.abrev",
-      "converter": "bestiary_dexabrev"
-    },
-    "int": {
-      "path": "data.characteristics.int.label",
-      "converter": "bestiary_int"
-    },
-    "int_abrev": {
-      "path": "data.characteristics.int.abrev",
-      "converter": "bestiary_intabrev"
-    },
-    "wp": {
-      "path": "data.characteristics.wp.label",
-      "converter": "bestiary_wp"
-    },
-    "wp_abrev": {
-      "path": "data.characteristics.wp.abrev",
-      "converter": "bestiary_wpabrev"
-    },
-    "fel": {
-      "path": "data.characteristics.fel.label",
-      "converter": "bestiary_fel"
-    },
-    "fel_abrev": {
-      "path": "data.characteristics.fel.abrev",
-      "converter": "bestiary_felabrev"
-    },
     "species": "data.details.species.value",
     "gender": "data.details.gender.value",
-    "hit": "data.details.hitLocationTable.value",
-    "wounds": "flags.autoCalcWounds",
     "effects": {
       "path": "effects",
       "converter": "effects"
     }
   },
   "entries": [
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {},
-    {}
+    {
+      "id": "28MwFcDPwpcO12kt",
+      "name": "Smukłoudy Jęzobicz",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.bestiary.28MwFcDPwpcO12kt",
+      "gender": "Książę Demonów",
+      "species": null,
+      "effects": [
+        {
+          "dt9CX3Pq7QKw25z4": {
+            "id": "dt9CX3Pq7QKw25z4",
+            "label": "Distracting",
+            "script": "args.prefillModifiers.modifier -= 20"
+          }
+        },
+        {
+          "nL9vz5id4ikQFGls": {
+            "id": "nL9vz5id4ikQFGls",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        },
+        {
+          "WZ3jFENJwIhkufce": {
+            "id": "WZ3jFENJwIhkufce",
+            "label": "Terror",
+            "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postTerror(value, name)\n}"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "2lvE7Ypir9uuRjVT",
+      "name": "Czarna Bella",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.bestiary.2lvE7Ypir9uuRjVT",
+      "gender": null,
+      "species": null,
+      "effects": [
+        {
+          "ifR8JNd40yyrfvGn": {
+            "id": "ifR8JNd40yyrfvGn",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        },
+        {
+          "rGJP5XWv7qHS0RWn": {
+            "id": "rGJP5XWv7qHS0RWn",
+            "label": "Hardy",
+            "script": "args.multiplier.tb += 1"
+          }
+        },
+        {
+          "rNWdg6vHRANHnqIU": {
+            "id": "rNWdg6vHRANHnqIU",
+            "label": "Brute",
+            "script": null
+          }
+        },
+        {
+          "tnEt2g6N1fk9LIbJ": {
+            "id": "tnEt2g6N1fk9LIbJ",
+            "label": "Arboreal",
+            "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
+        }
+      ],
+      "items": [
+        {
+          "Iw5LFliUnIdaa7gL": {
+            "id": "Iw5LFliUnIdaa7gL",
+            "name": "Strzelanie (50)",
+            "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
+            "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
+            "specification": "8"
+          }
+        }
+      ]
+    },
+    {
+      "id": "5wl3KH6hXsGwUcZa",
+      "name": "Leśny Elf",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.bestiary.5wl3KH6hXsGwUcZa",
+      "gender": "Wood Elf",
+      "species": null,
+      "effects": [
+        {
+          "7xnO2hDZ63QDUQ6E": {
+            "id": "7xnO2hDZ63QDUQ6E",
+            "label": "Tracker",
+            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
+        },
+        {
+          "BoUTC9kraBVqscZf": {
+            "id": "BoUTC9kraBVqscZf",
+            "label": "Stealthy",
+            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Stealth\"))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
+        },
+        {
+          "Cp0fK7qqV5Jyptgv": {
+            "id": "Cp0fK7qqV5Jyptgv",
+            "label": "Magic Resistance",
+            "script": "if (args.type == \"cast\")\n       args.prefillModifiers.slBonus -= 2"
+          }
+        },
+        {
+          "JiMjptl7bJAvnBBV": {
+            "id": "JiMjptl7bJAvnBBV",
+            "label": "Arboreal",
+            "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
+        }
+      ],
+      "items": [
+        {
+          "ZVEbgMhQfBkw2lcV": {
+            "id": "ZVEbgMhQfBkw2lcV",
+            "name": "Strzelanie (150)",
+            "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
+            "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
+            "specification": "9"
+          }
+        }
+      ]
+    },
+    {
+      "id": "6B7LMdYtunAftsFN",
+      "name": "Ghoul z Krypty",
+      "description": "<p>Należą do najżałośniejszych stworzeń w Starym Świecie. Ghule to brzydkie, zgarbione stwory o bladej, brudnej skórze i ostrych, żółtych zębach, którymi zdzierają ciało z kości ofiar. Ghule podążają za magicznymi energiami Shyish i Dhar, co w praktyce oznacza, że ściągają na cmentarze i do krypt oraz krążą po polach bitew.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.6B7LMdYtunAftsFN",
+      "gender": "Ghoul",
+      "species": null,
+      "effects": [
+        {
+          "yuPctOwSU2nLHscr": {
+            "id": "yuPctOwSU2nLHscr",
+            "label": "Infected",
+            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+          }
+        },
+        {
+          "ZxTHLjvTvkErPA1u": {
+            "id": "ZxTHLjvTvkErPA1u",
+            "label": "Venom",
+            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "7629Eaow3acVS59H",
+      "name": "Dzik",
+      "description": "<p>Buszujące po lasach dziki to stworzenia skryte, ale osaczone walczą, używając ostrych kłów z zaciekłością, która szokuje nieprzygotowanych. Chociaż większość dzików ma 150-180 cm długości, niektóre osiągają niezwykłe rozmiary. Największe okazy cenione są przez orki, które wykorzystują je jako przerażające wierzchowce bojowe.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.7629Eaow3acVS59H",
+      "gender": "Boar",
+      "species": null,
+      "effects": [
+        {
+          "1Um0xlQTwtLEaw15": {
+            "id": "1Um0xlQTwtLEaw15",
+            "label": "Stride",
+            "script": "args.actor.details.move.run *= 1.5"
+          }
+        },
+        {
+          "2ubzZUjCYNhscBVW": {
+            "id": "2ubzZUjCYNhscBVW",
+            "label": "Infected",
+            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+          }
+        },
+        {
+          "b2wHjjEjkMI6a2mS": {
+            "id": "b2wHjjEjkMI6a2mS",
+            "label": "Infestation",
+            "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
+          }
+        },
+        {
+          "gI0E1Xb8OT8EvZ9R": {
+            "id": "gI0E1Xb8OT8EvZ9R",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        },
+        {
+          "QmzFxVck35BuGoMx": {
+            "id": "QmzFxVck35BuGoMx",
+            "label": "Frenzy",
+            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "7ihBjcHcewZ2Obul",
+      "name": "Człowiek",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.bestiary.7ihBjcHcewZ2Obul",
+      "gender": "Człowiek",
+      "species": null,
+      "items": [
+        {
+          "0nMFfaZyQkgXL83f": {
+            "id": "0nMFfaZyQkgXL83f",
+            "name": "Strzelanie (50)",
+            "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
+            "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
+            "specification": "8"
+          }
+        }
+      ]
+    },
+    {
+      "id": "7qslmdLa7so3BmFk",
+      "name": "Troll",
+      "description": "<p>Trolle to brudne, wstrętne stwory, które nękają wszystkie zakątki Starego Świata. Szybko dostosowują się do otoczenia i występują w różnych odmianach. Wszystkie jednak są wielkie i okazałe. To stworzenia tępe i kierowane instynktem poszukiwania żarcia, ale lubią gromadzić też inne dobra. Leża trolli mogą skrywać przydatne i cenne skarby... A także okropne resztki ich posiłków. Chociaż istnieje wiele gatunków trolli, wszystkie mają pewne wspólne cechy: zazwyczaj są niezwykle głupie, co oznacza, że każdy bystry przeciwnik ma nad nimi przewagę; mogą się regenerować, co sprawia, że niezwykle trudno je zabić; a także potrafią na zawołanie zwrócić ostatni posiłek, wymiotując żrącą żółcią na szokująco dużą odległość - chociaż nie cierpią tego robić, ponieważ są potem straszliwie głodne.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.7qslmdLa7so3BmFk",
+      "gender": "Troll",
+      "species": "Varies",
+      "effects": [
+        {
+          "0RSawVy6iLMk3d3Z": {
+            "id": "0RSawVy6iLMk3d3Z",
+            "label": "Regenerate",
+            "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")}\n\nlet wounds = duplicate(this.actor.status.wounds)\nlet regen = (await new Roll(\"1d10\").roll()).total\n\nif (wounds.value >= wounds.max)\n   return\n\nif (wounds.value > 0)\n{\n   wounds.value += regen\n   if (wounds.value > wounds.max) \n        wounds.value = wounds.max\n   chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`\n   \n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse if (regen >= 8)\n{\n    chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n    wounds.value += 1\n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse\n{\n    chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n}\n\nthis.actor.update({\"system.status.wounds\" : wounds})\nChatMessage.create(chatData)"
+          }
+        },
+        {
+          "0usIukVS0gAmrqPq": {
+            "id": "0usIukVS0gAmrqPq",
+            "label": "Infestation",
+            "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
+          }
+        },
+        {
+          "12s7pdXgLCnuWwie": {
+            "id": "12s7pdXgLCnuWwie",
+            "label": "Tough",
+            "script": null
+          }
+        },
+        {
+          "CuNT6BeiHCjykOLx": {
+            "id": "CuNT6BeiHCjykOLx",
+            "label": "Vomit",
+            "script": "args.actor.addCondition(\"stunned\")"
+          }
+        },
+        {
+          "iZcLi1wlNXiV2Yvh": {
+            "id": "iZcLi1wlNXiV2Yvh",
+            "label": "Stealthy",
+            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Stealth\"))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
+        },
+        {
+          "og3WYIZ7LGZlE898": {
+            "id": "og3WYIZ7LGZlE898",
+            "label": "Frenzy",
+            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
+          }
+        },
+        {
+          "PydwaFG00Dz7lsLg": {
+            "id": "PydwaFG00Dz7lsLg",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        },
+        {
+          "Qv9IU50A1hEVAXl1": {
+            "id": "Qv9IU50A1hEVAXl1",
+            "label": "Infected",
+            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+          }
+        },
+        {
+          "rJYy8szkNGqUs605": {
+            "id": "rJYy8szkNGqUs605",
+            "label": "Amphibious",
+            "script": "if (args.type == \"skill\" && args.item.name == \"Swim\")\n    args.prefillModifiers.slBonus += this.actor.characteristics.ag.bonus"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "8g9rnHLiZ1pJcPPt",
+      "name": "Gryf",
+      "description": "<p>Posiadające przód ciała i skrzydła orła oraz zad wielkiego kota gryfy to eleganckie bestie o naturalnie dumnym i królewskim wyglądzie. Gniazdują wysoko w górach otaczających Imperium i są szybkimi, skutecznymi zabójcami, nieskorymi do bezmyślnego zniszczenia, jakiego dokonują stwory takie jak hipogryfy lub mantikory. Być może ze względu na ten pozór szlachetności wizerunek gryfa jest nadzwyczaj popularny w Imperium i wykorzystywany w heraldyce, ikonografii religijnej oraz jako symbol samego Imperium. Ponadto gryfy są jednymi z najinteligentniejszych zwierząt. Jeśli zostaną schwytane stosunkowo młode i poddane prawidłowemu szkoleniu, mogą być niesamowicie wierne, zdolne do przewidywania i posłusznego wykonywania szerokiego wachlarza komend. Są tak bardzo poszukiwane, że co rusz słyszy się o myśliwym, który stracił życie, próbując zdobyć jaja gryfa na sprzedaż. Prawdopodobnie najsłynniejszym gryfem w Reiklandzie jest Szpon Śmierci. Trzymany w Imperialnym Zwierzyńcu w Altdorfie Szpon Śmierci stanowi osobistą własność następcy tronu Reiklandu i podobno wykluł się dzięki troskliwej opiece samego Imperatora Karla-Franza - ta opowieść zapoczątkowała drukowanie wszelkiego rodzaju sprośnych karykatur w wywrotowych pamfletach.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.8g9rnHLiZ1pJcPPt",
+      "gender": "Griffon",
+      "species": null,
+      "effects": [
+        {
+          "NY16gROis1ONxIjo": {
+            "id": "NY16gROis1ONxIjo",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "8gG2Wim6wAlJWRax",
+      "name": "Demonetka Slaanesha",
+      "description": "<p>Podobnie jak wszystkie stwory Księcia Bólu i Rozkoszy, demonetki Slaanesha są jednocześnie piękne i budzące grozę. Otacza je nieziemski urok, który urąga wszelkiemu rozsądkowi i przeczy zdrowym zmysłom. Sprawia, że wrogowie są bezsilni, nie będąc w stanie stawiać oporu, zafascynowani bluźnierczą zmysłowością potwornych postaci. Demonetki mają kremową, bladą skórę i wielkie, głęboko czarne oczy. Ich delikatne skronie zdobią powiewające swobodnie włosy o nienaturalnej barwie. Ich smukłe ręce kończą się zakrzywionymi krabimi szczypcami zamiast dłońmi.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.8gG2Wim6wAlJWRax",
+      "gender": null,
+      "species": null,
+      "effects": [
+        {
+          "6McxapDczZuyQyg5": {
+            "id": "6McxapDczZuyQyg5",
+            "label": "Fear",
+            "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postFear(value, name)\n}"
+          }
+        },
+        {
+          "c6x02cj76dxuPEnS": {
+            "id": "c6x02cj76dxuPEnS",
+            "label": "Distracting",
+            "script": "args.prefillModifiers.modifier -= 20"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "9q8QzWB4o7aj6ZxL",
+      "name": "Dżabersmok",
+      "description": "<p>Dżabersmoki to prastare stwory Chaosu, które czają się pod cienistymi okapami najgłębszych, najciemniejszych lasów. To szaleńcze stworzenia. Dżabersmok stanowi odrażające połączenie ropuchy, smoka mułowego i owada - wszystko to wypełnione kwasową, czarną krwią, która tryska obficie z najmniejszej rany. Co gorsza, sam widok tego koszmaru przyprawia o utratę zdrowych zmysłów. Ofiara bełkocze, szwargocze bez ładu i składu, rzuca się z pazurami do oczu i rechocze szaleńczym śmiechem. To ułatwia dżabersmokowi jej zdobycie. Nie koniec na tym. Dżabersmok ma lepki jęzor, którym może atakować i wciągać kolejny posiłek do rozdziawionej gęby. Jak przystało na jego wygląd, stwór chodzi, kiwając się nieporadnie, a nawet posiada skrzydła, które są jednak za małe, by mogły faktycznie poderwać nadęte cielsko.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.9q8QzWB4o7aj6ZxL",
+      "gender": "Jabberslythe",
+      "species": null,
+      "effects": [
+        {
+          "hOe0V10JbyWGeTVZ": {
+            "id": "hOe0V10JbyWGeTVZ",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        },
+        {
+          "jvE7KJwJTJJJcOip": {
+            "id": "jvE7KJwJTJJJcOip",
+            "label": "Bounce",
+            "script": "this.actor.details.move.run *= 2"
+          }
+        },
+        {
+          "K11BUhxEOwL0OmRR": {
+            "id": "K11BUhxEOwL0OmRR",
+            "label": "Infected",
+            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+          }
+        },
+        {
+          "naCAi2JxEh991ITv": {
+            "id": "naCAi2JxEh991ITv",
+            "label": "Distracting",
+            "script": "args.prefillModifiers.modifier -= 20"
+          }
+        },
+        {
+          "UymeVioxlCVCkCcu": {
+            "id": "UymeVioxlCVCkCcu",
+            "label": "Tail Attack",
+            "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value]\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value]\n\nif (attackerSize > actorSize)\n{\n   args.actor.addCondition(\"prone\")\n   ChatMessage.create({content: `<b>Tail Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Prone]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
+          }
+        },
+        {
+          "Z32WU7rxN7WD0p19": {
+            "id": "Z32WU7rxN7WD0p19",
+            "label": "Venom",
+            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
+          }
+        }
+      ],
+      "items": [
+        {
+          "PgSdNDqWz5I7nh2V": {
+            "id": "PgSdNDqWz5I7nh2V",
+            "name": "Atak Językiem (12)",
+            "description": "<p>Chwytny język stworzenia może owijać się wokół ofiary, wciągając ją aż do makabrycznego końca. W swojej Turze stworzenie może wykonać Darmowy Atak, wydając 1 Przewagę. To atak dystansowy, który zadaje tyle Obrażeń, ile wynosi podana wartość (zasięg podany jest w nawiasie). Jeśli atak trafi, cel dostaje 1 Stan Pochwycenie, a jeśli ma mniejszy Rozmiar, zostaje przyciągnięty do stworzenia i Związany Walką wręcz. Stworzenie może następnie zdecydować, czy wypuści cel, wykonując Darmowy Atak z użyciem swojej cechy Broń, czy będzie trzymać cel owinięty językiem, zapoczątkowując Chwyt.</p>",
+            "sourceId": "Compendium.wfrp4e-core.traits.xg6z63j6BH5AaqLL",
+            "specification": "+5"
+          }
+        }
+      ]
+    },
+    {
+      "id": "a05lQsGjSv62wF0U",
+      "name": "Wojownik Chaosu",
+      "description": "<p>Ciężko uzbrojone i zwaliste brutale w pancerzach ozdobionych kolcami i symbolami swoich bóstw wywołującymi zabobonny strach - wojownicy Chaosu zdecydowanie nie są już ludźmi. Nic nie pozostało z ich wcześniejszego życia. Istnieją wyłącznie po to, by służyć swojemu mrocznemu patronowi. Podczas gdy większość wojowników Chaosu to wywyższeni łupieżcy pochodzący z krain położonych daleko na północy, kilku wybranych kultystów może otrzymać od Mrocznych Bogów nagrodę w postaci Pancerza Chaosu. Taka zbroja daje im wielką potęgę, a ceną jest to, że nie będą mogli jej zdjąć, dopóki będą żyli. Ponieważ niewielu wojowników może się z nimi mierzyć w walce, a żaden rycerz nie jest lepiej chroniony, zwykle żyją całkiem długo.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.a05lQsGjSv62wF0U",
+      "gender": null,
+      "species": null,
+      "effects": [
+        {
+          "2EnGjwTeLDzY8fl4": {
+            "id": "2EnGjwTeLDzY8fl4",
+            "label": "Frenzy",
+            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
+          }
+        },
+        {
+          "2XnJOh6bY4dL2aHK": {
+            "id": "2XnJOh6bY4dL2aHK",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        },
+        {
+          "B7KcEOJcl8VapKin": {
+            "id": "B7KcEOJcl8VapKin",
+            "label": "Distracting",
+            "script": "args.prefillModifiers.modifier -= 20"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "A4G4bTYxot3ZygZO",
+      "name": "Hydra",
+      "description": "<p>Wielogłowa, przypominająca jaszczura hydra ma ciężkie ciało podtrzymujące plątaninę szyi i łbów, które zioną dymiącym ogniem i wściekle kąsają. To zaskakująco zaciekłe i skryte stwory. Hydry potrafią skradać się za ofiarą przez wiele kilometrów, jednak zwykle tracą cierpliwość i rzucają się do ataku przy akompaniamencie ryku ze wszystkich paszcz.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.A4G4bTYxot3ZygZO",
+      "gender": "Hydra",
+      "species": "Varies",
+      "effects": [
+        {
+          "0MLUyVBvdjHhCNj7": {
+            "id": "0MLUyVBvdjHhCNj7",
+            "label": "Venom",
+            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
+          }
+        },
+        {
+          "DEMWwWEEunP3uESO": {
+            "id": "DEMWwWEEunP3uESO",
+            "label": "Stride",
+            "script": "args.actor.details.move.run *= 1.5"
+          }
+        },
+        {
+          "HAcV7oeCejIJP43v": {
+            "id": "HAcV7oeCejIJP43v",
+            "label": "Constrictor",
+            "script": "args.actor.addCondition(\"entangled\")"
+          }
+        },
+        {
+          "hEkj1nU1brRzYRyo": {
+            "id": "hEkj1nU1brRzYRyo",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        },
+        {
+          "qvLucnQHOAXPt0q4": {
+            "id": "qvLucnQHOAXPt0q4",
+            "label": "Tracker",
+            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
+        },
+        {
+          "YG6qLpm09WrEm3VK": {
+            "id": "YG6qLpm09WrEm3VK",
+            "label": "Stealthy",
+            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Stealth\"))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
+        },
+        {
+          "yXWM7kW5OtrJn11h": {
+            "id": "yXWM7kW5OtrJn11h",
+            "label": "Regenerate",
+            "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")}\n\nlet wounds = duplicate(this.actor.status.wounds)\nlet regen = (await new Roll(\"1d10\").roll()).total\n\nif (wounds.value >= wounds.max)\n   return\n\nif (wounds.value > 0)\n{\n   wounds.value += regen\n   if (wounds.value > wounds.max) \n        wounds.value = wounds.max\n   chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`\n   \n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse if (regen >= 8)\n{\n    chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n    wounds.value += 1\n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse\n{\n    chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n}\n\nthis.actor.update({\"system.status.wounds\" : wounds})\nChatMessage.create(chatData)"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "AAiKqD1IoweDpJI7",
+      "name": "Wąż",
+      "description": "<p>Węże można znaleźć w całym Imperium, zwłaszcza w głębi lasów. Większość jest niegroźna, ale niektóre mają zabójczy jad lub potrafią udusić swoją ofiarę. Podobnie jak wiele stworzeń Starego Świata, mogą wyrosnąć do olbrzymich rozmiarów - jak ogromny żmij bagienny, który stanowi prawdziwe zagrożenie nawet dla najsilniejszego najemnika.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.AAiKqD1IoweDpJI7",
+      "gender": "Snake",
+      "species": null,
+      "effects": [
+        {
+          "AZJmwDrTSFXmYbmZ": {
+            "id": "AZJmwDrTSFXmYbmZ",
+            "label": "Venom",
+            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
+          }
+        },
+        {
+          "dTcIYwLvYA5t8sDU": {
+            "id": "dTcIYwLvYA5t8sDU",
+            "label": "Venom",
+            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
+          }
+        },
+        {
+          "Fxr0yjCvS8hoUpLV": {
+            "id": "Fxr0yjCvS8hoUpLV",
+            "label": "Fast",
+            "script": null
+          }
+        },
+        {
+          "GtthdHaTJAwVkrJ9": {
+            "id": "GtthdHaTJAwVkrJ9",
+            "label": "Venom",
+            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
+          }
+        },
+        {
+          "I9acOqq8FwdHK4jp": {
+            "id": "I9acOqq8FwdHK4jp",
+            "label": "Venom",
+            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
+          }
+        },
+        {
+          "jlXEMtg1ZSF4Yp6S": {
+            "id": "jlXEMtg1ZSF4Yp6S",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        },
+        {
+          "lFRSbDt7k03dyVAN": {
+            "id": "lFRSbDt7k03dyVAN",
+            "label": "Swarm",
+            "script": "if (args.type == \"weapon\" && args.item.attackType == \"ranged\")\n   args.prefillModifiers.modifier += 40"
+          }
+        },
+        {
+          "lgsgK3ovI4m7TaNu": {
+            "id": "lgsgK3ovI4m7TaNu",
+            "label": "Venom",
+            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
+          }
+        },
+        {
+          "mqcsP2kkrwWbWbAi": {
+            "id": "mqcsP2kkrwWbWbAi",
+            "label": "Swarm Bonuses",
+            "script": "args.wounds *= 5"
+          }
+        },
+        {
+          "nx0b4Nu9xX84g4Y4": {
+            "id": "nx0b4Nu9xX84g4Y4",
+            "label": "Venom",
+            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
+          }
+        },
+        {
+          "up34nRMaCkOJxNay": {
+            "id": "up34nRMaCkOJxNay",
+            "label": "Venom",
+            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "b1R5sW6lYIViJ2ki",
+      "name": "Koń",
+      "description": "<p>Konie hodowane są z przeznaczeniem do wykonywania rozmaitych prac. Należą do nich chyże wierzchowce kurierów, krzepkie rumaki rycerzy i wielkie konie ciągnące wozy farmerów. Są tak przydatne, że handel końmi stał się w Reiklandzie niemal konkurencją sportową. Nieuczciwi sprzedawcy chcą zarobić kosztem ignoranckiego nabywcy. Wypełniają luki i malują zęby podstarzałych koni albo wpychają im do nozdrzy szmaty wchłaniające śluz. Nieznający się na rzeczy kupujący powinni mieć się na baczności.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.b1R5sW6lYIViJ2ki",
+      "gender": "Horse",
+      "species": null,
+      "effects": [
+        {
+          "6unzSR1G5M42Z6CZ": {
+            "id": "6unzSR1G5M42Z6CZ",
+            "label": "Stride",
+            "script": "args.actor.details.move.run *= 1.5"
+          }
+        },
+        {
+          "nUshnmpYX9NBBgy6": {
+            "id": "nUshnmpYX9NBBgy6",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "cAK1bMj1ne7HPcxI",
+      "name": "Minotaur",
+      "description": "<p>Potężne i zwaliste, przypominające byki minotaury górują nawet nad największymi bestigorami. Stada z dużą grupą minotaurów uważają się za szczególnie pobłogosławione przez Mrocznych Bogów. Hordy zwierzoludzi zbierają się wokół minotaurów, których imponująca postura dodaje odwagi mniejszym stworom.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.cAK1bMj1ne7HPcxI",
+      "gender": null,
+      "species": null,
+      "effects": [
+        {
+          "ewYHNH1NhqbrdUdT": {
+            "id": "ewYHNH1NhqbrdUdT",
+            "label": "Infected",
+            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+          }
+        },
+        {
+          "GaAgVavnDkXJ3MBM": {
+            "id": "GaAgVavnDkXJ3MBM",
+            "label": "Arboreal",
+            "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
+        },
+        {
+          "QmCtqXe6YN7WlnOv": {
+            "id": "QmCtqXe6YN7WlnOv",
+            "label": "Infestation",
+            "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "cHVOdcEkuatqjYV1",
+      "name": "Szaman Rykowców",
+      "description": "<p>Szamani rykowców rodzą się z instynktowną umiejętnością władania mocami Chaosu, z której korzystają z przerażającą skutecznością. Są unikatowi wśród zwierzoludzi i nigdy nie muszą bronić się przed innymi członkami swojego stada, nikt bowiem nie ośmiela się wyrządzać im krzywdy - ich głos wyraża podobno wolę samych Mrocznych Bogów.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.cHVOdcEkuatqjYV1",
+      "gender": "Bray Shaman",
+      "species": null,
+      "effects": [
+        {
+          "57dNdaZIiftVFa4X": {
+            "id": "57dNdaZIiftVFa4X",
+            "label": "Infected",
+            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+          }
+        },
+        {
+          "YearuHmEDjqfcbYG": {
+            "id": "YearuHmEDjqfcbYG",
+            "label": "Arboreal",
+            "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
+        },
+        {
+          "zxS5779U5zWckwsT": {
+            "id": "zxS5779U5zWckwsT",
+            "label": "Infestation",
+            "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "E7BiDqsB55BrOQut",
+      "name": "Ork",
+      "description": "<p>My som najlepsze. My nie som jak te słabe gobosy czy gupie trole. My som twardziele! Jak które powiedzom, że my nie som, to my im zdepczem łby.</p>\n<p>- Gurkk skulltaka, wódz orków</p>\n<p>&nbsp;</p>\n<p>Orki są wstrętne, brutalne, wojownicze i niemal niewrażliwe na ból. Mają muskularne, krępe ciała, szerokie, potężne barki i nie pozwolą, by drobnostka w rodzaju straconej ręki przeszkodziła im w dobrym łomocie. Stworzone są do walki i niczego innego nie lubią bardziej. Gdy nie mają wrogów, z którymi mogą walczyć, biorą się za grupy rywalizujących z nimi zielonoskórych. Jeśli nie ma rywali, walczą między sobą. Chociaż nie tak liczne jak gobliny, są od nich większe i silniejsze, co pokazują przy każdej okazji. Orki mogą osiągać ogromne rozmiary. Większe orki są silniejsze, twardsze i bardziej agresywne, a zatem cieszą się większym prestiżem: w ich wojowniczym społeczeństwie rację ma ten, kto jest silniejszy. Niektóre orki dosiadają w boju wielkich dzików. To widok, który u mało kogo nie wzbudza przerażenia.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.E7BiDqsB55BrOQut",
+      "gender": "Orc",
+      "species": null,
+      "effects": [
+        {
+          "bqeYNnSwAUGdOlFn": {
+            "id": "bqeYNnSwAUGdOlFn",
+            "label": "Infected",
+            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+          }
+        },
+        {
+          "MReG9f3QPwSwxnvF": {
+            "id": "MReG9f3QPwSwxnvF",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        }
+      ],
+      "items": [
+        {
+          "hfq5Dnb2IT2WfRGf": {
+            "id": "hfq5Dnb2IT2WfRGf",
+            "name": "Strzelanie (50)",
+            "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
+            "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
+            "specification": "8"
+          }
+        }
+      ]
+    },
+    {
+      "id": "ePPk15Vxu9RxPtYV",
+      "name": "Dieter Käsegeier",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.bestiary.ePPk15Vxu9RxPtYV",
+      "gender": null,
+      "species": null,
+      "items": [
+        {
+          "oLc1S9aswJrhkReV": {
+            "id": "oLc1S9aswJrhkReV",
+            "name": "Miecz",
+            "description": null,
+            "sourceId": null,
+            "special": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "F1vAZZcmVKkRw8xn",
+      "name": "Klanbrat",
+      "description": "<p>Większość skavenów stanowią klanbracia pochodzący z jednego z wielu złożonych skaveńskich klanów, które nieustannie kłócą się, politykują, wbijają sobie noże w plecy i w końcu wojują między sobą. Generalnie działają z rozkazu skavena o wyższym statusie, ale zawsze szukają sposobu, by zdobyć dla siebie lepszą pozycję, najczęściej poprzez zdradę. Zwykle odziani są w pleśniejącą skórę lub brudne szmaty z kawałkami pordzewiałego i zmatowiałego metalu służącymi za prowizoryczny pancerz. Klanbracia często wysyłani są jako zwiadowcy lub łupieżcy, którzy zdobywają potrzebne dobra, szukają spaczenia lub łowią niewolników.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.F1vAZZcmVKkRw8xn",
+      "gender": "Skaven",
+      "species": null,
+      "effects": [
+        {
+          "DP3A4yKupZcsSVEa": {
+            "id": "DP3A4yKupZcsSVEa",
+            "label": "Infected",
+            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+          }
+        },
+        {
+          "EBgGr3gX7hyKDx4S": {
+            "id": "EBgGr3gX7hyKDx4S",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        },
+        {
+          "l16xCMo9W8rmU2qE": {
+            "id": "l16xCMo9W8rmU2qE",
+            "label": "Tracker",
+            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
+        },
+        {
+          "tM906M93hAn36zTl": {
+            "id": "tM906M93hAn36zTl",
+            "label": "Stealthy",
+            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Stealth\"))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "FmEDHnfAe2iIugpt",
+      "name": "Bagienna Ośmiornica",
+      "description": "<p>Bagienne ośmiornice czają się w płytkich wodach, zazwyczaj w bagnach i na moczarach. Czekają na ofiarę w całkowitym bezruchu, zdolne wyczuć wibracje powodowane przez zbliżające się stworzenia. Potem wyskakują z błotnistej wody, starając się chwycić i utopić zdobycz za pomocą silnych macek. Bagienne ośmiornice mają kamuflaż doskonale przystosowany do bagnistego otoczenia - zwykle pokryte są zielonymi i brązowymi cętkami. Jedyną wskazówką zdradzającą ich obecność są wielkie, szkliste oczy. Większość ośmiornic ma macki długości około 6 metrów i ciało mierzące prawie 2 metry. Krążą jednak opowieści, że mogą urosnąć wielokrotnie większe, zwłaszcza gdy mają zapewniony regularny napływ mięsa.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.FmEDHnfAe2iIugpt",
+      "gender": "Bagienna Ośmiornica",
+      "species": null,
+      "effects": [
+        {
+          "GxQbXgR3pFYMCnbA": {
+            "id": "GxQbXgR3pFYMCnbA",
+            "label": "Stealthy",
+            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Stealth\"))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
+        },
+        {
+          "kbI0TMBhGCVGWUJI": {
+            "id": "kbI0TMBhGCVGWUJI",
+            "label": "Amphibious",
+            "script": "if (args.type == \"skill\" && args.item.name == \"Swim\")\n    args.prefillModifiers.slBonus += this.actor.characteristics.ag.bonus"
+          }
+        },
+        {
+          "zZeCk4zXLUI80TP0": {
+            "id": "zZeCk4zXLUI80TP0",
+            "label": "Constrictor",
+            "script": "args.actor.addCondition(\"entangled\")"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "ge5zXH2qboxaac7v",
+      "name": "Gołąb",
+      "description": "<p>Gołębie hodowane są w całym Reiklandzie w celu dostarczania wszelkiego rodzaju wiadomości. Ostatnio zasłynęły z przenoszenia bardziej zabójczych ładunków. Łatwo dostępne ptaki stały się ulubieńcami inżynierów, którzy z różnym powodzeniem wysyłają swoje ‘bomby gołębie’.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.ge5zXH2qboxaac7v",
+      "gender": "Pigeon",
+      "species": null,
+      "items": []
+    },
+    {
+      "id": "GgSxlomoV220kd3G",
+      "name": "Duch",
+      "description": "<p>Duchy to pozostałości udręczonych istot, które umarły, za życia nie ukończywszy swoich spraw. Podobnie jak szkielety i zombi, duchy mogą być wzywane przez wampiry lub nekromantów albo nawiedzać obszary przesycone Dhar. W wyjątkowych okolicznościach szczególnie zdeterminowane duchy wyrywają się z Królestwa Morra, pragnąc wypełnić swoje życiowe plany. Jednak takie przypadki szybko przyciągają uwagę Morrytów lub czarodziejów Zakonu Ametystu. Wzywane za pomocą nekromanckiej sztuki duchy zbierają się w rój, tworząc wielkie Zastępy Duchów, które spadają jak burza na wrogów, siejąc strach i zamęt.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.GgSxlomoV220kd3G",
+      "gender": "Nieumarły",
+      "species": null,
+      "effects": [
+        {
+          "1Mrt7AY40I5qtpf2": {
+            "id": "1Mrt7AY40I5qtpf2",
+            "label": "Fear",
+            "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postFear(value, name)\n}"
+          }
+        },
+        {
+          "aDKbAbEnndqeqtnV": {
+            "id": "aDKbAbEnndqeqtnV",
+            "label": "Swarm",
+            "script": "if (args.type == \"weapon\" && args.item.attackType == \"ranged\")\n   args.prefillModifiers.modifier += 40"
+          }
+        },
+        {
+          "rqiLCymCM1k80Fjq": {
+            "id": "rqiLCymCM1k80Fjq",
+            "label": "Swarm Bonuses",
+            "script": "args.wounds *= 5"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "HKSn8iNSS9WcAuJc",
+      "name": "Fenbeast",
+      "description": "<p>Tworzone przez czarodziejów z mułu bagnisk i moczarów bestie bagienne to praktycznie bezmyślne automaty spajane siłą magii. Są w przybliżeniu człekokształtne i zbudowane z błota, kości, gałęzi oraz śluzu. Utrzymanie ich w całości wymaga znacznych zasobów magii. Od czasu do czasu tworzone są przez czarodziejów władających magią Jadeitu. Służą im za ochroniarzy lub wypełniają określone zadania wymagające brutalnej siły albo bezmyślnego zabijania. Czasami pojawiają się same z siebie, powstając w stojących, gnijących stawach, gdzie nurt magii został zakłócony. Podobno Kolegium Jadeitu w Altdorfie trzyma tuzin tych stworów w charakterze służących, którzy dźwigają ciężary i przynoszą różne rzeczy dla starszych czarodziejów. W spójnej postaci trzyma je nieustanne splatanie magii dokonywane przez dziesiątki uczniów.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.HKSn8iNSS9WcAuJc",
+      "gender": "Construct",
+      "species": null,
+      "effects": [
+        {
+          "4KDekULCgM5D43lo": {
+            "id": "4KDekULCgM5D43lo",
+            "label": "Regenerate",
+            "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")}\n\nlet wounds = duplicate(this.actor.status.wounds)\nlet regen = (await new Roll(\"1d10\").roll()).total\n\nif (wounds.value >= wounds.max)\n   return\n\nif (wounds.value > 0)\n{\n   wounds.value += regen\n   if (wounds.value > wounds.max) \n        wounds.value = wounds.max\n   chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`\n   \n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse if (regen >= 8)\n{\n    chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n    wounds.value += 1\n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse\n{\n    chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n}\n\nthis.actor.update({\"system.status.wounds\" : wounds})\nChatMessage.create(chatData)"
+          }
+        },
+        {
+          "ctGcZ8iKfXP1XhPe": {
+            "id": "ctGcZ8iKfXP1XhPe",
+            "label": "Frenzy",
+            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
+          }
+        },
+        {
+          "fwYivzDn7ow90SqU": {
+            "id": "fwYivzDn7ow90SqU",
+            "label": "Infestation",
+            "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
+          }
+        },
+        {
+          "miucKXfXYxxrGg9k": {
+            "id": "miucKXfXYxxrGg9k",
+            "label": "Construct",
+            "script": "args.wpb = args.sb"
+          }
+        },
+        {
+          "pIZn0gi5DawtO2k4": {
+            "id": "pIZn0gi5DawtO2k4",
+            "label": "Infected",
+            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "hMbcLVjk7eUdxtqC",
+      "name": "Widma z Kurchanu",
+      "description": "<p>Widma z kurhanu to wyjątkowo potężne duchy, eteryczne pozostałości ambitnych nekromantów, którzy usiłowali przedłużyć swoje istnienie za pomocą mrocznej magii. Za życia odznaczali się złowrogą siłą woli, która po śmierci pcha ich do wywierania straszliwej zemsty na pełnych ognia duszach żywych. Wiele takich widm nawiedza spowite mgłami kurhany, jakich pełno na ziemiach Imperium, szczególnie w Hägerkrybach.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.hMbcLVjk7eUdxtqC",
+      "gender": "Nieumarły",
+      "species": null,
+      "effects": [
+        {
+          "7raTPW24WcAjGAEa": {
+            "id": "7raTPW24WcAjGAEa",
+            "label": "Terror",
+            "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postTerror(value, name)\n}"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "HZfZaCjdniz5Z4CP",
+      "name": "Olbrzym",
+      "description": "<p>Olbrzymy to samotnicze stworzenia, które zwykle unikają cywilizacji. Większość czatuje w niedostępnych i wysoko położonych miejscach wokół Imperium. Zaszywają się w jaskiniach i zapomnianych ruinach, z dala od mniejszych ludzi, chociaż czasami wędrują na podgórza w poszukiwaniu jedzenia. Słyną z agresywności i gwałtowności zarówno ze względu na swoje zastraszające rozmiary, pożeranie bydła, jak i związki z łupieżczymi armiami zielonoskórych, którzy ich niewolą. W rzeczywistości wiele olbrzymów to łagodne istoty, czasem podatne na wybuchy wściekłości i zaciekle chroniące swojej prywatności, ale niekoniecznie wrogie wobec innych. Ponieważ są długowieczne, plotki utrzymują, że olbrzymy nabyły prastarą wiedzę, chociaż większość wydaje się niezbyt przytomna i z pewnością bardziej zainteresowana alkoholem niż debatami na temat historii.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.HZfZaCjdniz5Z4CP",
+      "gender": "Giant",
+      "species": null,
+      "effects": [
+        {
+          "fJ2cKJpIEXsOjtgz": {
+            "id": "fJ2cKJpIEXsOjtgz",
+            "label": "Stride",
+            "script": "args.actor.details.move.run *= 1.5"
+          }
+        },
+        {
+          "IdR5SsSJ3isgNHwm": {
+            "id": "IdR5SsSJ3isgNHwm",
+            "label": "Infestation",
+            "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
+          }
+        },
+        {
+          "sAFQuKd3sZtwF4AO": {
+            "id": "sAFQuKd3sZtwF4AO",
+            "label": "Infected",
+            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+          }
+        },
+        {
+          "uEepI4AVRxzrvnbi": {
+            "id": "uEepI4AVRxzrvnbi",
+            "label": "Tough",
+            "script": null
+          }
+        },
+        {
+          "vLCiRGKhIaBgcQrA": {
+            "id": "vLCiRGKhIaBgcQrA",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "ImdVnI8mEiOmKriI",
+      "name": "Krasnolud",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.bestiary.ImdVnI8mEiOmKriI",
+      "gender": "Krasnolud",
+      "species": null,
+      "effects": [
+        {
+          "tOJQgYSoaltZanQ3": {
+            "id": "tOJQgYSoaltZanQ3",
+            "label": "Magic Resistance",
+            "script": "if (args.type == \"cast\")\n       args.prefillModifiers.slBonus -= 2"
+          }
+        }
+      ],
+      "items": [
+        {
+          "N9zq40S3SuK0qLpl": {
+            "id": "N9zq40S3SuK0qLpl",
+            "name": "Strzelanie (50)",
+            "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
+            "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
+            "specification": "8"
+          }
+        }
+      ]
+    },
+    {
+      "id": "jfMhkQGzjFWDxVOm",
+      "name": "Kultysta",
+      "description": "<p>Dla tych, których nie dotknęła plaga Chaosu, jego piętno wydaje się przerażająco obce. Jednak tacy, którzy zostali wystawieni na jego wpływ, każdy krok ku potępieniu, każdy pomysł zbliżający ich do Chaosu uważają nie tylko za logiczny, ale i nieunikniony. Niektórzy szczególnie gorliwi wyznawcy zakazanych kultów obdarzani są przez swych bogów „darami”: to paskudne mutacje, które gwarantują im śmierć w przypadku odkrycia ich sekretu przez łowców czarownic.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.jfMhkQGzjFWDxVOm",
+      "gender": null,
+      "species": null,
+      "effects": [
+        {
+          "zXyLukfpBQffMjB1": {
+            "id": "zXyLukfpBQffMjB1",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "KeB0khEeq462qTJw",
+      "name": "Wywerna",
+      "description": "<p>Chociaż niedouczeni często mylą je ze smokami, poza powierzchownym podobieństwem cuchnące wywerny w niczym nie przypominają tych dostojnych stworzeń. To tchórzliwe ścierwojady o słabym wzroku. Zwykle zaspokajają swój wielki apetyt, porywając bezbronne zwierzęta - głównie owce i kozy - unikają też otwartej walki, gdy to tylko możliwe. W odróżnieniu od innych potworów z gór wywerny nie chronią szczególnie zaciekle terytorium i przeważnie przenoszą się w inne miejsce, gdy coś wtargnie na ich tereny łowieckie. </p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.KeB0khEeq462qTJw",
+      "gender": "Wywerna",
+      "species": null,
+      "effects": [
+        {
+          "aqeOBcr9TbqHg8rK": {
+            "id": "aqeOBcr9TbqHg8rK",
+            "label": "Tail Attack",
+            "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value]\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value]\n\nif (attackerSize > actorSize)\n{\n   args.actor.addCondition(\"prone\")\n   ChatMessage.create({content: `<b>Tail Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Prone]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
+          }
+        },
+        {
+          "VzlGoVJEgniCqoOm": {
+            "id": "VzlGoVJEgniCqoOm",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        },
+        {
+          "WNl1StgVFqYrrgup": {
+            "id": "WNl1StgVFqYrrgup",
+            "label": "Venom",
+            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "kl4qHg0mqWOApBqH",
+      "name": "Szturmoszczur",
+      "description": "<p>Elitarnymi wojownikami skavenów są szturmoszczury: większe, silniejsze, twardsze i bardziej zdyscyplinowane od klanbraci. Służą jako podstawowa jednostka każdego większego napadu i pełnią funkcję ochroniarzy ważnych skavenów. Szturmoszczury są zwykle dobrze uzbrojone i opancerzone. Posługują się bronią preferowaną przez swój klan.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.kl4qHg0mqWOApBqH",
+      "gender": "Skaven",
+      "species": null,
+      "effects": [
+        {
+          "AQSOb0ip3rTeKQSe": {
+            "id": "AQSOb0ip3rTeKQSe",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        },
+        {
+          "lHrBRLdd2RfjZe04": {
+            "id": "lHrBRLdd2RfjZe04",
+            "label": "Tracker",
+            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
+        },
+        {
+          "YuslwdFq9jlMRYWd": {
+            "id": "YuslwdFq9jlMRYWd",
+            "label": "Infected",
+            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "kt9ob9BdK6zLDWxn",
+      "name": "Fimir",
+      "description": "<p>Fimiry to tajemnicze, jednookie, podobne do gadów stworzenia, które grasują w najciemniejszych zakątkach wilgotnych bagien i trzęsawisk zachodniego Reiklandu. Unikają światła słonecznego i pojawiają się zwykle tylko o świcie lub o zmierzchu albo pod osłoną mgły, aby porywać ofiary w sobie tylko znanych, przerażających celach. Znane są przypadki, gdy ludzcy czarownicy na tyle lekkomyślni lub zdesperowani, by zwracać się do demonów, szukali fimirów, chcąc poznać ich niepokojące tajemnice. Mówi się bowiem, że stwory te przywołują i kontrolują istoty demoniczne. Można tylko zgadywać, czy większe ryzyko stanowi igranie z Niszczycielskimi Potęgami, czy układanie się z fimirami. Społeczeństwo fimirów jest matriarchalne. Każdemu klanowi przewodzi potężna wiedźma zwana mergą, której pomaga kadra pomniejszych czarowników nazywanych dirachami. Większość członków klanu to pokorne szerle. Chroni ich kasta wojowników, fimmów, którzy mają kostne kolce i guzy na ogonach. Używają ich do gruchotania kości niebacznych przeciwników.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.kt9ob9BdK6zLDWxn",
+      "gender": "Fimir",
+      "species": null,
+      "effects": [
+        {
+          "Olnjb0FfVEIu8Dfy": {
+            "id": "Olnjb0FfVEIu8Dfy",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        },
+        {
+          "R5Cs02d94yP5yeCR": {
+            "id": "R5Cs02d94yP5yeCR",
+            "label": "Tail Attack",
+            "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value]\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value]\n\nif (attackerSize > actorSize)\n{\n   args.actor.addCondition(\"prone\")\n   ChatMessage.create({content: `<b>Tail Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Prone]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "KtYgLHcSLpHmnGI2",
+      "name": "Niedźwiedź",
+      "description": "<p>To wędrowcy po bezdrożach Reiklandu. Niedźwiedzie zwykle są nieśmiałymi samotnikami. Stają się agresywne tylko wtedy, gdy intruzi zagrażają ich młodym lub gdy są ranne. Kiedy brakuje pożywienia, podchodzą do niechronionych osad i podróżnych, zwłaszcza tych, którzy nie pilnują należycie swojego prowiantu.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.KtYgLHcSLpHmnGI2",
+      "gender": "Niedźwiedź",
+      "species": null,
+      "effects": [
+        {
+          "IqOfqzHSo07O42bW": {
+            "id": "IqOfqzHSo07O42bW",
+            "label": "Stride",
+            "script": "args.actor.details.move.run *= 1.5"
+          }
+        },
+        {
+          "Lq3jDQRRPl81n1zQ": {
+            "id": "Lq3jDQRRPl81n1zQ",
+            "label": "Infected",
+            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+          }
+        },
+        {
+          "PcEJZM9L1pVonmks": {
+            "id": "PcEJZM9L1pVonmks",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        },
+        {
+          "Xfrts1724Mg1fCvp": {
+            "id": "Xfrts1724Mg1fCvp",
+            "label": "Infestation",
+            "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "KZkuwdOYmE3nwB2n",
+      "name": "Krwiopuszcz Khorne'a'",
+      "description": "<p>Wybrańcy Khorna, krwiopuszcze, grasują na polach bitew Starego Świata, zbierając czaszki i odbierając żywoty ku czci Boga Krwi. Z ich potwornych, rogatych obliczy wystają ostre jak igły zęby. Ich krwawoczerwona skóra jest twarda jak mosiądz wykuty na kowadłach nieustannej wojny. Każdy krwiopuszcz niesie Piekielne Ostrze, przeraźliwie ostry miecz unurzany w posoce, którym wymachuje z przerażającą niedbałością, poddając się słodkiemu doznaniu bezsensownej rzezi.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.KZkuwdOYmE3nwB2n",
+      "gender": "Demon",
+      "species": null,
+      "effects": [
+        {
+          "g94D7Xf8rvTG1pZP": {
+            "id": "g94D7Xf8rvTG1pZP",
+            "label": "Fear",
+            "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postFear(value, name)\n}"
+          }
+        },
+        {
+          "iRC0LbxUatdhYIRI": {
+            "id": "iRC0LbxUatdhYIRI",
+            "label": "Frenzy",
+            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
+          }
+        },
+        {
+          "QuhKHQc4wskQZfaJ": {
+            "id": "QuhKHQc4wskQZfaJ",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "lSvYEInG8sZ03vqd",
+      "name": "Wilk",
+      "description": "<p>Wilki zazwyczaj polują w stadach i znane są jako zacięci łowcy, którzy ścigają swoją ofiarę przez dziesiątki kilometrów bez odpoczynku czy wytchnienia. W Reiklandzie grasuje kilka odmian wilków, włącznie z groźnymi olbrzymimi wilkami, które są chwytane i hodowane przez gobliny do użytku jako strażnicy oraz wierzchowce.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.lSvYEInG8sZ03vqd",
+      "gender": "Wilk",
+      "species": null,
+      "effects": [
+        {
+          "0G0YQcWhI9FIZV2H": {
+            "id": "0G0YQcWhI9FIZV2H",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        },
+        {
+          "cL0khtn99Alcfu6X": {
+            "id": "cL0khtn99Alcfu6X",
+            "label": "Frenzy",
+            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
+          }
+        },
+        {
+          "PKm5XdZlzIyPES4k": {
+            "id": "PKm5XdZlzIyPES4k",
+            "label": "Tracker",
+            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
+        },
+        {
+          "XbQJexDDEreVMvWb": {
+            "id": "XbQJexDDEreVMvWb",
+            "label": "Infected",
+            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+          }
+        },
+        {
+          "XxRSNVXnvMYARNe1": {
+            "id": "XxRSNVXnvMYARNe1",
+            "label": "Stride",
+            "script": "args.actor.details.move.run *= 1.5"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "LZttdCIxmFr1sGsS",
+      "name": "Smok",
+      "description": "<p>Smoki rządziły niebiosami na długo przed tym, zanim starsze rasy pojawiły się w Znanym Świecie. Podczas gdy współczesne smoki są ledwie cieniem swoich prastarych braci, pozostają jednymi z najpotężniejszych stworzeń znanych Imperium. Kilka pozostałych starych smoków jest przerażająco ogromnych. Rzadko budzą się ze snu. Mała drużyna poszukiwaczy przygód, która rozjuszyłaby smoka, powinna brać nogi za pas. Przeciw takiej bestii wiele nie wskóra.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.LZttdCIxmFr1sGsS",
+      "gender": "Smok",
+      "species": null,
+      "effects": [
+        {
+          "KoTQebmQ0cj0Xyt1": {
+            "id": "KoTQebmQ0cj0Xyt1",
+            "label": "Arboreal",
+            "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
+        },
+        {
+          "V5PnKDuND25WHadD": {
+            "id": "V5PnKDuND25WHadD",
+            "label": "Tail Attack",
+            "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value]\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value]\n\nif (attackerSize > actorSize)\n{\n   args.actor.addCondition(\"prone\")\n   ChatMessage.create({content: `<b>Tail Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Prone]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
+          }
+        },
+        {
+          "wfbLLo6NBnAGvsv1": {
+            "id": "wfbLLo6NBnAGvsv1",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        },
+        {
+          "Ws7vLIKJGkhARFfl": {
+            "id": "Ws7vLIKJGkhARFfl",
+            "label": "Venom",
+            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
+          }
+        },
+        {
+          "ZWVFTCTzUJ9PNMqc": {
+            "id": "ZWVFTCTzUJ9PNMqc",
+            "label": "Infestation",
+            "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "MLtDY4bwzGQpaABN",
+      "name": "Demigryf",
+      "description": "<p>Posiadające głowę orła i korpus lwa półgryfy to potężne stworzenia o szlachetnym wyglądzie. Wędrują po lasach i łąkach Imperium, zwykle trzymając się z dala od ludzkich osad. Polują w pojedynkę. Najodważniejsze zakony rycerskie wykorzystują schwytane półgryfy jako rumaki bojowe. W odróżnieniu od większych potwornych wierzchowców, które zazwyczaj są zabierane jako młode lub hodowane w niewoli, te często chwyta się dorosłe. Stanowi to wręcz rytuał inicjacji w niektórych zakonach.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.MLtDY4bwzGQpaABN",
+      "gender": null,
+      "species": null,
+      "effects": [
+        {
+          "oSs7PpjCezuRbO4q": {
+            "id": "oSs7PpjCezuRbO4q",
+            "label": "Stride",
+            "script": "args.actor.details.move.run *= 1.5"
+          }
+        },
+        {
+          "WRWwQXlbPuecT6Rt": {
+            "id": "WRWwQXlbPuecT6Rt",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "Mt5JAoOSaEH1PdcP",
+      "name": "Szkielet",
+      "description": "<p>Szkielety to pozbawione ciała kości dawno umarłych, poruszane mroczną magią, która zmusza je, by chodziły po ziemi, szydząc z żywych. Ci, którzy po śmierci nie zostali złożeni na spoczynek zgodnie z rytuałami Morra, Boga Śmierci, mogą zostać wskrzeszeni w tej postaci przez wystarczająco potężnego nekromantę. Całkowicie bezmyślne szkielety będą walczyły, dopóki ich kości nie zostaną rozbite na kawałki. Nie wiedzą, co to odwaga, ponieważ nie wiedzą, co to strach. Nie mogą zostać zabite, ponieważ nie są żywe.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.Mt5JAoOSaEH1PdcP",
+      "gender": "Nieumarły",
+      "species": null,
+      "effects": [
+        {
+          "gV7u0gkGjd7e104i": {
+            "id": "gV7u0gkGjd7e104i",
+            "label": "Fear",
+            "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postFear(value, name)\n}"
+          }
+        },
+        {
+          "MKIdS8288qVwdktI": {
+            "id": "MKIdS8288qVwdktI",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        },
+        {
+          "RxHIWFoZFen5wq0X": {
+            "id": "RxHIWFoZFen5wq0X",
+            "label": "Construct",
+            "script": "args.wpb = args.sb"
+          }
+        },
+        {
+          "te4iHJZxCnazYyuC": {
+            "id": "te4iHJZxCnazYyuC",
+            "label": "Infected",
+            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "nPvDzBcqDGuRaS7x",
+      "name": "Ogr",
+      "description": "<p><em><span class=\"fontstyle0\"><span class=\"fontstyle0\">‘Tak, wezwałem je, ponieważ potrzebowałem dodatkowych rąk do pracy. Tak, wiem, że pożerają wasze bydło przeznaczone na sprzedaż. I tak, wiem, że ogry mają wielki apetyt. Wywiesiłem w miejscowej strażnicy ogłoszenie o małej nagrodzie dla kogokolwiek, kto zdoła sprawić, by sobie poszły. To powinno w zupełności wystarczyć.’ </span></span></em></p>\n<p><span class=\"fontstyle0\"><span class=\"fontstyle0\" style=\"font-size: 10pt;\">- Augustus von Raushvel, baron Doliny Raush Vale</span> &nbsp;<br style=\"font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;\"></span></p>\n<p>&nbsp;</p>\n<p><span class=\"fontstyle0\">Są wielkie, hałaśliwe, brutalne i niezwykle porywcze. Życiową motywacją ogrów jest potrzeba napełniania swoich ogromnych, muskularnych brzuchów. Brakuje im sprytu lub inteligencji, by robić to mądrze, dlatego w większości sytuacji standardowo wybierają rozwiązanie siłowe. Ogry pochodzą z krain położonych daleko na wschodzie, ale są częstym widokiem w Starym Świecie, uwielbiają bowiem wędrować i stale poszukują nowego mięsiwa za horyzontem. W czasie swoich trwających dekady wypraw po jedzenie ciężko pracują, starają się integrować, noszą miejscowe ubrania i naśladują lokalne zwyczaje, które są w stanie zrozumieć, ponieważ to wszystko zwiększa szansę na otrzymanie kolejnego posiłku. W Imperium często służą w Armii Prowincji i codziennie widuje się je w większych miastach, gdzie pracują jako osiłki do wynajęcia. Niziołkowa Gildia Majstrów (przedsiębiorcy budowlani) w wielu miastach i miasteczkach Imperium praktycznie całkowicie opanowała rynek taniej siły roboczej, jaką stanowią ogry, co bardzo irytuje konkurencję.</span></p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.nPvDzBcqDGuRaS7x",
+      "gender": "Ogre",
+      "species": null,
+      "effects": [
+        {
+          "hqaGKb66rmZOzKmd": {
+            "id": "hqaGKb66rmZOzKmd",
+            "label": "Tracker",
+            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
+        },
+        {
+          "KZHbYxdSFPPIGvnN": {
+            "id": "KZHbYxdSFPPIGvnN",
+            "label": "Infected",
+            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+          }
+        },
+        {
+          "oI4k12fesVuWcQ08": {
+            "id": "oI4k12fesVuWcQ08",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "nRJxtciIhTHKqAvY",
+      "name": "Stellemar",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.bestiary.nRJxtciIhTHKqAvY",
+      "gender": null,
+      "species": null,
+      "effects": [
+        {
+          "hOq8PVdAmbaybEZY": {
+            "id": "hOq8PVdAmbaybEZY",
+            "label": "Accurate Shot",
+            "script": "args.actor.flags.rangedDamageIncrease += 1"
+          }
+        },
+        {
+          "L9y8czfFuDcKdvvW": {
+            "id": "L9y8czfFuDcKdvvW",
+            "label": "Accurate Shot",
+            "script": "args.actor.flags.rangedDamageIncrease += 1"
+          }
+        },
+        {
+          "wvAlyqES4wdX8uWH": {
+            "id": "wvAlyqES4wdX8uWH",
+            "label": "Hardy",
+            "script": "args.multiplier.tb += 1"
+          }
+        },
+        {
+          "YN1BHO02pnOOQNus": {
+            "id": "YN1BHO02pnOOQNus",
+            "label": "Accurate Shot",
+            "script": "args.actor.flags.rangedDamageIncrease += 1"
+          }
+        }
+      ],
+      "items": [
+        {
+          "DUtznJOWO0BxbDsB": {
+            "id": "DUtznJOWO0BxbDsB",
+            "name": "Broń Zasięgowa (Łuk)",
+            "description": "<p>Byle pierwszy lepszy potrafi cisnąć kamieniem, wykorzystując do tego Umiejętności Strzeleckie, ale skuteczne używanie łuków czy pistoletów wymaga ćwiczeń i praktyki.</p><p>Jeśli chcesz lub przyjdzie ci strzelać czy miotać bronią, gdy nie jesteś wyszkolony, zajrzyj do Rozdziału 11: Przewodnik konsumenta, gdzie w opisie oręża znajdziesz zasady i negatywne modyfikatory stosowane w tej sytuacji. Rozdział 5: Zasady bardziej szczegółowo opisuje walkę i wykorzystanie tej Umiejętności. </p><p>Specjalizacje: Broń Eksperymentalna, Broń Miotana, Broń Oplątująca, Broń Prochowa, Kusze, Łuki, Materiały Wybuchowe, Proce</p>",
+            "sourceId": "Compendium.wfrp4e-core.skills.Z9hQe46ykQBZneoU"
+          }
+        }
+      ]
+    },
+    {
+      "id": "oenbbB0PitRWUBfZ",
+      "name": "Olbrzymi Szczur",
+      "description": "<p>Szczury przedostają się wszędzie. Szczególnie rozpowszechnione są w miastach i miasteczkach. Im bardziej stłoczeni są ludzie, tym bardziej stłoczone są z nimi szczury, co jest szczególnie groźne, gdy stwory okazują się nosicielami zarazy. Chociaż szczury zwykle są małe, mogą wyrastać do monstrualnych rozmiarów. Pojawiały się doniesienia o szczurach pod Altdorfem o rozmiarach człowieka lub jeszcze większych. Aby trzymać je w ryzach, zatrudnia się szczurołapów.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.oenbbB0PitRWUBfZ",
+      "gender": "Szczur",
+      "species": null,
+      "effects": [
+        {
+          "0UNgfpiAb8N9Y3DK": {
+            "id": "0UNgfpiAb8N9Y3DK",
+            "label": "Stride",
+            "script": "args.actor.details.move.run *= 1.5"
+          }
+        },
+        {
+          "5hnLqyWuIc3Gfuf9": {
+            "id": "5hnLqyWuIc3Gfuf9",
+            "label": "Swarm",
+            "script": "if (args.type == \"weapon\" && args.item.attackType == \"ranged\")\n   args.prefillModifiers.modifier += 40"
+          }
+        },
+        {
+          "7fQU4Bru8lQZxnbl": {
+            "id": "7fQU4Bru8lQZxnbl",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        },
+        {
+          "BVzoQjaRA9CurB8p": {
+            "id": "BVzoQjaRA9CurB8p",
+            "label": "Infected",
+            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+          }
+        },
+        {
+          "sFDU1ghXQlAFpE7v": {
+            "id": "sFDU1ghXQlAFpE7v",
+            "label": "Swarm Bonuses",
+            "script": "args.wounds *= 5"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "P0GkA7DPaLbeOTkf",
+      "name": "Mutant",
+      "description": "<p>Jednym z najtragiczniejszych losów, jaki może stać się udziałem człowieka, jest ulegnięcie mutagennemu wpływowi Chaosu. To może wydarzyć się bez jakiegokolwiek powodu. Bywa nawet, że rodzą się zmutowane dzieci. Gdy coś takiego się stanie, wielu rodziców nie potrafi zdobyć się na zamordowanie własnego potomstwa. Zamiast tego porzucają je w lasach, gdzie umiera albo zostaje przyjęte przez innych mutantów, a nawet zwierzoludzi. Bez względu na to, jak bardzo mogą być niewinni, wszyscy mutanci budzą grozę wśród zwykłych ludzi, dlatego większość porzuconych i zgorzkniałych mutantów oddaje się Mrocznym Bogom. Ewentualnie kończą ze sobą, zanim będzie za późno.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.P0GkA7DPaLbeOTkf",
+      "gender": null,
+      "species": null,
+      "items": [
+        {
+          "PAvotUwS46Wlcked": {
+            "id": "PAvotUwS46Wlcked",
+            "name": "Dowolna Cecha Stworzenia",
+            "description": null,
+            "sourceId": null,
+            "specification": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "QutqbzpxKqsjQ6yN",
+      "name": "Wysoki Elf",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.bestiary.QutqbzpxKqsjQ6yN",
+      "gender": "Wysoki Elf",
+      "species": null,
+      "effects": [
+        {
+          "0FIrnHwrgwP3EHHO": {
+            "id": "0FIrnHwrgwP3EHHO",
+            "label": "Magic Resistance",
+            "script": "if (args.type == \"cast\")\n       args.prefillModifiers.slBonus -= 2"
+          }
+        },
+        {
+          "3T0aaV8hko4NoJni": {
+            "id": "3T0aaV8hko4NoJni",
+            "label": "Tracker",
+            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
+        },
+        {
+          "5v9bqwxYNynPP86w": {
+            "id": "5v9bqwxYNynPP86w",
+            "label": "Stealthy",
+            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Stealth\"))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
+        },
+        {
+          "Li1GkrmZ24SXxLjS": {
+            "id": "Li1GkrmZ24SXxLjS",
+            "label": "Arboreal",
+            "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
+        }
+      ],
+      "items": [
+        {
+          "ZVEbgMhQfBkw2lcV": {
+            "id": "ZVEbgMhQfBkw2lcV",
+            "name": "Strzelanie (150)",
+            "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
+            "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
+            "specification": "9"
+          }
+        }
+      ]
+    },
+    {
+      "id": "R1iWvfV9EvgIc8bJ",
+      "name": "Pies",
+      "description": "<p>Psy hodowane są w całym Starym Świecie z przeznaczeniem do niezliczonych zadań. Podczas gdy rozpieszczone pudle dworzan z Altdorfu stanowią zagrożenie jedynie dla godności poszukiwacza przygód, większe rasy, włącznie z tymi, które przyuczane są do udziału w bitwach lub walkach psów, mogą być bardzo groźne.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.R1iWvfV9EvgIc8bJ",
+      "gender": "Pies",
+      "species": null,
+      "effects": [
+        {
+          "1Y0FHMq0KHA49EFv": {
+            "id": "1Y0FHMq0KHA49EFv",
+            "label": "Infected",
+            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+          }
+        },
+        {
+          "4QleJhHGp2DXsStM": {
+            "id": "4QleJhHGp2DXsStM",
+            "label": "Stride",
+            "script": "args.actor.details.move.run *= 1.5"
+          }
+        },
+        {
+          "6OhiDxi26wq9sV2p": {
+            "id": "6OhiDxi26wq9sV2p",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        },
+        {
+          "QtFmvlxRHMCjeW3D": {
+            "id": "QtFmvlxRHMCjeW3D",
+            "label": "Tracker",
+            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
+        },
+        {
+          "VhfIZVF6YlnpqdnY": {
+            "id": "VhfIZVF6YlnpqdnY",
+            "label": "Frenzy",
+            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "R37OtN5gmPWCYOP3",
+      "name": "Gor",
+      "description": "<p>Gory, najpowszechniejsze ze zwierzoludzi, są zakałą niemal każdego lasu w Starym Świecie. Znacznie różnią się między sobą wyglądem, ale wszystkie łączą cechy zwierzęce i ludzkie. Często mają głowy i nogi kozłów oraz korpus i ramiona ludzi. Jedyną cechą, którą posiadają wszystkie gory, jest para wielkich rogów - im większe, tym lepiej, rogi wyznaczają bowiem status wśród zwierzoludzi. To cecha, która odróżnia je od ungorów i innoskórych. Największe gory znane są pod nazwą bestigorów.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.R37OtN5gmPWCYOP3",
+      "gender": "Gor",
+      "species": null,
+      "effects": [
+        {
+          "B32NmuUIRuV9mQSk": {
+            "id": "B32NmuUIRuV9mQSk",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        },
+        {
+          "C2pE9fd3qOIH9KSz": {
+            "id": "C2pE9fd3qOIH9KSz",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        },
+        {
+          "OGivLVdVoT6H3rNc": {
+            "id": "OGivLVdVoT6H3rNc",
+            "label": "Infected",
+            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+          }
+        },
+        {
+          "W0ZCppsMI1uadFxK": {
+            "id": "W0ZCppsMI1uadFxK",
+            "label": "Arboreal",
+            "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
+        },
+        {
+          "WkxXGBWJRCNeJiq9": {
+            "id": "WkxXGBWJRCNeJiq9",
+            "label": "Infestation",
+            "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "r70e6JNM3MjWIb7N",
+      "name": "Niziołek",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.bestiary.r70e6JNM3MjWIb7N",
+      "gender": "Niziołek",
+      "species": null,
+      "effects": [
+        {
+          "YTUcjOSNS0tab2qC": {
+            "id": "YTUcjOSNS0tab2qC",
+            "label": "Stealthy",
+            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Stealth\"))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
+        }
+      ],
+      "items": [
+        {
+          "E5MeeVvpH0rxRL8N": {
+            "id": "E5MeeVvpH0rxRL8N",
+            "name": "Strzelanie (25)",
+            "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
+            "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
+            "specification": "7"
+          }
+        }
+      ]
+    },
+    {
+      "id": "RiXpMLex8SZf6gaQ",
+      "name": "Hipogryf",
+      "description": "<p>Niezwykle zaciekłe i terytorialne hipogryfy mają głowę i skrzydła orła, przednią część ciała lwa oraz koński zad. Pochodzą najczęściej z Gór Szarych. Atakują bez prowokacji, niemal bezmyślne w swojej furii, drąc ciało na strzępy, aby pożreć je później. Wpadają w tak wielki szał, że pojedynczy hipogryf może wybić całe stado bydła, aby potem odlecieć z wybranym kawałem mięsa, zostawiwszy resztę padlinożernym ptakom. Hipogryfy nie są zbyt inteligentne i gdy polują, zwykle starają się zabić wszystko w polu widzenia. Myślą, że cokolwiek zniknęło im z oczu, przepadło na zawsze. Oznacza to, że faktyczna liczba zgonów spowodowanych przez hipogryfy jest stosunkowo niska, ponieważ wystarczy znaleźć dobrą kryjówkę, aby ich uniknąć.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.RiXpMLex8SZf6gaQ",
+      "gender": "Hipogryf",
+      "species": null,
+      "effects": [
+        {
+          "9MpsAdM1z4Iz847T": {
+            "id": "9MpsAdM1z4Iz847T",
+            "label": "Stride",
+            "script": "args.actor.details.move.run *= 1.5"
+          }
+        },
+        {
+          "rGrZd5lWTROBeYdU": {
+            "id": "rGrZd5lWTROBeYdU",
+            "label": "Frenzy",
+            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "Rs3lMA5UavTlTiJW",
+      "name": "Kastor Erichson",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.bestiary.Rs3lMA5UavTlTiJW",
+      "gender": null,
+      "species": null,
+      "items": [
+        {
+          "HkgHJKXAM4hl9OJ4": {
+            "id": "HkgHJKXAM4hl9OJ4",
+            "name": "Wyczulony Zmysł (Zapach)",
+            "description": "<p>Jeden z twoich pięciu zmysłów jest tak wyczulony, że wyczuwasz to, co umyka innym. Możesz wykonać Test Percepcji, by dowiedzieć się czegoś więcej niż inni, opierając się na tym szczególnym zmyśle. Przykładowo może to być dostrzeżenie dalekiego orła, którego nie widzą inni, wywęszenie prawie niewyczuwalnej trucizny, dosłyszenie bicia serca myszy kryjącej się w ścianie, wyczucie dotykiem ukrytej wiadomości wyskrobanej na papierze czy porównanie smaku dwóch piw od tego samego piwowara, by dowiedzieć się, czy zostały nalane z dwóch różnych beczek.</p>",
+            "sourceId": "Compendium.wfrp4e-core.talents.9h82z72XGo9tfgQS",
+            "tests": "Percepcja (z wykorzystaniem tego zmysłu)",
+            "specification": null
+          }
+        },
+        {
+          "yymhDcCRUdL6jFCS": {
+            "id": "yymhDcCRUdL6jFCS",
+            "name": "Broń Ręczna (Szpon)",
+            "description": null,
+            "sourceId": null,
+            "special": null
+          }
+        }
+      ]
+    },
+    {
+      "id": "sbQ5mDvNZ7qQm8YY",
+      "name": "Fr'hough Mournbreath",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.bestiary.sbQ5mDvNZ7qQm8YY",
+      "gender": "Demon",
+      "species": null,
+      "effects": [
+        {
+          "aWuh4mvcUREGgITl": {
+            "id": "aWuh4mvcUREGgITl",
+            "label": "Infestation",
+            "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
+          }
+        },
+        {
+          "E8VUoXmrPhsjO6wt": {
+            "id": "E8VUoXmrPhsjO6wt",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        },
+        {
+          "QhSLr0cWvRaQUp5T": {
+            "id": "QhSLr0cWvRaQUp5T",
+            "label": "Infected",
+            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+          }
+        },
+        {
+          "vTg3YNSmOjtPASjX": {
+            "id": "vTg3YNSmOjtPASjX",
+            "label": "Terror",
+            "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postTerror(value, name)\n}"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "T5qAtpoKtB8iwTBd",
+      "name": "Wampir",
+      "description": "<p>Wampiry postrzegają same siebie jako władców nocy. Wiele z nich może podawać się za ludzi, a niektóre rzeczywiście przez długi czas przebywały pośród żywych. Pomimo zewnętrznego podobieństwa do ludzi pod ich bladą skórą nie bije serce, a zamiast zwykłego głodu, jak u śmiertelników, odczuwają nieustanne łaknienie krwi. Wszystkie wampiry Starego Świata wywodzą się ze starożytnych rodów, które powstały tysiące lat temu daleko na południu. Wiele z nich jest niezwykle dumnych ze swojego pochodzenia oraz cech i tradycji, które odróżniają je od innych. Wampiry różnych rodowodów są często zaciekłymi rywalami, ale mają dość rozsądku, by stawać ramię w ramię w razie konieczności zmierzenia się z potężniejszymi wrogami.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.T5qAtpoKtB8iwTBd",
+      "gender": "Nieumarły",
+      "species": null,
+      "effects": [
+        {
+          "6kNrq95i4DO3bERL": {
+            "id": "6kNrq95i4DO3bERL",
+            "label": "Tracker",
+            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
+        },
+        {
+          "DHEpsVPMxgz4YEBD": {
+            "id": "DHEpsVPMxgz4YEBD",
+            "label": "Distracting",
+            "script": "args.prefillModifiers.modifier -= 20"
+          }
+        },
+        {
+          "lgA5hKW9RvRZ8ZF0": {
+            "id": "lgA5hKW9RvRZ8ZF0",
+            "label": "Frenzy",
+            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
+          }
+        },
+        {
+          "mDuKRFfaLTwEHOq9": {
+            "id": "mDuKRFfaLTwEHOq9",
+            "label": "Fear",
+            "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postFear(value, name)\n}"
+          }
+        },
+        {
+          "Y6h1aNL9xJiu7ZgF": {
+            "id": "Y6h1aNL9xJiu7ZgF",
+            "label": "Regenerate",
+            "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")}\n\nlet wounds = duplicate(this.actor.status.wounds)\nlet regen = (await new Roll(\"1d10\").roll()).total\n\nif (wounds.value >= wounds.max)\n   return\n\nif (wounds.value > 0)\n{\n   wounds.value += regen\n   if (wounds.value > wounds.max) \n        wounds.value = wounds.max\n   chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`\n   \n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse if (regen >= 8)\n{\n    chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n    wounds.value += 1\n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse\n{\n    chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n}\n\nthis.actor.update({\"system.status.wounds\" : wounds})\nChatMessage.create(chatData)"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "T79RqnDOAQLn3I1s",
+      "name": "Zombie",
+      "description": "<p>Podobnie jak szkielety, zombi to ożywione zwłoki spajane przez plugawą magię. W odróżnieniu od szkieletów zombi to niedawno umarli i większość ich ciała nadal istnieje. Gnijące i zepsute mięso zwisa z robaczywych, nabrzmiałych organów wewnętrznych. Gdy walczą, ich ciało i narządy odpadają od kości, wydzielając przyprawiający o mdłości, obrzydliwy odór, wystarczająco silny, by wywrócić żołądek każdemu poza najtwardszymi żołnierzami.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.T79RqnDOAQLn3I1s",
+      "gender": "Nieumarły",
+      "species": null,
+      "effects": [
+        {
+          "49ACIsgTnGtu4gLu": {
+            "id": "49ACIsgTnGtu4gLu",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        },
+        {
+          "dstnZMHpScBQxyyC": {
+            "id": "dstnZMHpScBQxyyC",
+            "label": "Construct",
+            "script": "args.wpb = args.sb"
+          }
+        },
+        {
+          "Gv7DNzuCVNnni8Ox": {
+            "id": "Gv7DNzuCVNnni8Ox",
+            "label": "Infected",
+            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+          }
+        },
+        {
+          "HWton3fD0O4haA1O": {
+            "id": "HWton3fD0O4haA1O",
+            "label": "Fear",
+            "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postFear(value, name)\n}"
+          }
+        },
+        {
+          "RT4ESTox6v57m0TO": {
+            "id": "RT4ESTox6v57m0TO",
+            "label": "Distracting",
+            "script": "args.prefillModifiers.modifier -= 20"
+          }
+        },
+        {
+          "T4mCjWLkjhUJYnSf": {
+            "id": "T4mCjWLkjhUJYnSf",
+            "label": "Infestation",
+            "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "TWy5l4uYTRAtjfit",
+      "name": "Banshee",
+      "description": "<p>Płaczki to widmowe pozostałości niegdyś potężnych wiedźm, których duchy przesiąknięte są plugawą energią Dhar. Ich niespokojne nieżycie wypełnia udręka z powodu straty i zgorzknienia, ziejąca pustka w duszach, która wyrywa z ich piersi przerażające, szarpiące duszę wycie. Jest ono tak straszliwe, że może doprowadzić do szaleństwa tych, którzy je słyszą, a nawet zatrzymać bicie serca.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.TWy5l4uYTRAtjfit",
+      "gender": "Nieumarły",
+      "species": null,
+      "effects": [
+        {
+          "dle3lIXmTOn2icAD": {
+            "id": "dle3lIXmTOn2icAD",
+            "label": "Terror",
+            "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postTerror(value, name)\n}"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "umddAQkmxVYG0AzO",
+      "name": "Upiorny Wilk",
+      "description": "<p>Gdy ziemia oddaje zmarłych, powstają nie tylko ludzie. W imieniu swoich mrocznych panów na nocne łowy wyruszają makabryczne parodie olbrzymich basiorów z lśniącymi ślepiami i strzępami ciała odpadającymi od gnijących, butwiejących ścierw - upiorne wilki. W Reiklandzie mówi się, że gdy Morrslieb stoi w pełni, upiorne wilki grasują po nawiedzonych lasach Hägerkrybów. Biegają w poszukiwaniu ofiary, aby zaspokoić swój nienasycony głód, przeklęte żądzą pożerania mięsa i wyostrzoną wrażliwością na zapach krwi.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.umddAQkmxVYG0AzO",
+      "gender": "Nieumarły",
+      "species": null,
+      "effects": [
+        {
+          "2sNt3r9r3TxcS3Mn": {
+            "id": "2sNt3r9r3TxcS3Mn",
+            "label": "Infected",
+            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+          }
+        },
+        {
+          "bEyqgfTDcEfyFX5h": {
+            "id": "bEyqgfTDcEfyFX5h",
+            "label": "Construct",
+            "script": "args.wpb = args.sb"
+          }
+        },
+        {
+          "dAVMjmHzUY9Iu3Jr": {
+            "id": "dAVMjmHzUY9Iu3Jr",
+            "label": "Stride",
+            "script": "args.actor.details.move.run *= 1.5"
+          }
+        },
+        {
+          "fn5rur4oPtQcYOtf": {
+            "id": "fn5rur4oPtQcYOtf",
+            "label": "Distracting",
+            "script": "args.prefillModifiers.modifier -= 20"
+          }
+        },
+        {
+          "jS6JjuVotk1qMAdw": {
+            "id": "jS6JjuVotk1qMAdw",
+            "label": "Fear",
+            "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postFear(value, name)\n}"
+          }
+        },
+        {
+          "MeUFxAGHn8sBIQPD": {
+            "id": "MeUFxAGHn8sBIQPD",
+            "label": "Tracker",
+            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
+        },
+        {
+          "XQ1gi8Yf8yZljDlW": {
+            "id": "XQ1gi8Yf8yZljDlW",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "VfJgGmCTWqb0IDSW",
+      "name": "Szczurogr",
+      "description": "<p>Szczurogry to zwaliste brutale hodowane w ciemnych jaskiniach Podimperium przez obłąkanych poganiaczy klanu Moulder. Są głupie, ale także nieulękłe i nieustępliwe w walce, gdy poganiają je skaveńscy panowie. Rzadko bywają spotykane w pojedynkę. Zwykle towarzyszą Szarym Prorokom lub innym skavenom wysokiej rangi, którym służą jako ochroniarze.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.VfJgGmCTWqb0IDSW",
+      "gender": "Skaven",
+      "species": null,
+      "effects": [
+        {
+          "bpkQmrr8idJ1a2nL": {
+            "id": "bpkQmrr8idJ1a2nL",
+            "label": "Infestation",
+            "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
+          }
+        },
+        {
+          "l8MNGZiH05ol80fC": {
+            "id": "l8MNGZiH05ol80fC",
+            "label": "Infected",
+            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+          }
+        },
+        {
+          "MrOjhZLrQXj2MnQN": {
+            "id": "MrOjhZLrQXj2MnQN",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        },
+        {
+          "oKLgYvM78rTHvG9u": {
+            "id": "oKLgYvM78rTHvG9u",
+            "label": "Tail Attack",
+            "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value]\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value]\n\nif (attackerSize > actorSize)\n{\n   args.actor.addCondition(\"prone\")\n   ChatMessage.create({content: `<b>Tail Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Prone]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
+          }
+        },
+        {
+          "YtLiz2xUwvF1mj2S": {
+            "id": "YtLiz2xUwvF1mj2S",
+            "label": "Tracker",
+            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "VMceSpLje0J7lfP0",
+      "name": "Zębacz Jaskiniowy",
+      "description": "<p>Zębacze to duże, okrągławe, grzybowate stwory, które żyją głęboko pod ziemią w najwilgotniejszych, najciemniejszych jaskiniach. Mają rozdziawioną gębę i wielkie, ostre zęby. Cenione są przez gobliny za mięso i skórę oraz służą im jako strażnicy lub pupile.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.VMceSpLje0J7lfP0",
+      "gender": "Squig",
+      "species": null,
+      "effects": [
+        {
+          "H9nEvznJNmC6aD4v": {
+            "id": "H9nEvznJNmC6aD4v",
+            "label": "Frenzy",
+            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
+          }
+        },
+        {
+          "jkpfCxuk6QLS3Ang": {
+            "id": "jkpfCxuk6QLS3Ang",
+            "label": "Bounce",
+            "script": "this.actor.details.move.run *= 2"
+          }
+        },
+        {
+          "LQsrUYm7M42rptNN": {
+            "id": "LQsrUYm7M42rptNN",
+            "label": "Infected",
+            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "VPVnyae6VHeD9cEP",
+      "name": "Olbrzymi Pająk",
+      "description": "<p>Olbrzymie pająki czają się głęboko w lasach i jaskiniach Imperium, ale mogą żyć gdziekolwiek, włącznie z zakurzonymi strychami i ciemnymi piwnicami. Większość chwyta ofiary w mocne sieci, a następnie wstrzykuje im jad. Chociaż większość ma rozmiary dużego szczura, niektóre odmiany olbrzymich pająków są przerażająco wielkie. Leśne gobliny często chwytają większe okazy, by służyły im za wierzchowce.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.VPVnyae6VHeD9cEP",
+      "gender": "Pająk",
+      "species": null,
+      "effects": [
+        {
+          "1oH1ylww2XXvCgdX": {
+            "id": "1oH1ylww2XXvCgdX",
+            "label": "Swarm",
+            "script": "if (args.type == \"weapon\" && args.item.attackType == \"ranged\")\n   args.prefillModifiers.modifier += 40"
+          }
+        },
+        {
+          "Bv323jo9bqLWMEU0": {
+            "id": "Bv323jo9bqLWMEU0",
+            "label": "Venom",
+            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
+          }
+        },
+        {
+          "Hc7uwM7V7e7k1izk": {
+            "id": "Hc7uwM7V7e7k1izk",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        },
+        {
+          "HeHsfnqkOe5K4U8r": {
+            "id": "HeHsfnqkOe5K4U8r",
+            "label": "Web",
+            "script": "args.actor.addCondition(\"entangled\")"
+          }
+        },
+        {
+          "qfHKTSZ6miVcSoSV": {
+            "id": "qfHKTSZ6miVcSoSV",
+            "label": "Swarm Bonuses",
+            "script": "args.wounds *= 5"
+          }
+        },
+        {
+          "qunKHRapK48sB5fF": {
+            "id": "qunKHRapK48sB5fF",
+            "label": "Arboreal",
+            "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "vrYs3cbxvXtre6rv",
+      "name": "Ungor",
+      "description": "<p>Ungory mają szczątkowe lub bardzo krótkie rogi, a zatem rzadko uważane są za „gory” przez resztę stada. Niektóre odznaczają się niemal ludzką twarzą, dzięki czemu są skutecznymi wywiadowcami, ale także stają się przedmiotem szykan. Istotnie, ungory są źle traktowane przez gory i bywają niskie lub niedożywione w porównaniu ze swoimi wielkorogimi braćmi. To sprawia, że stają się zgorzkniałymi stworzeniami, które pragną wyładować na innych jątrzącą się w nich zazdrość.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.vrYs3cbxvXtre6rv",
+      "gender": "Ungor",
+      "species": null,
+      "effects": [
+        {
+          "0Qm0sltf7LI6OS8H": {
+            "id": "0Qm0sltf7LI6OS8H",
+            "label": "Infestation",
+            "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
+          }
+        },
+        {
+          "tC23Vjf8UInFMUUe": {
+            "id": "tC23Vjf8UInFMUUe",
+            "label": "Infected",
+            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+          }
+        },
+        {
+          "tTkp9d5hUxKZNROU": {
+            "id": "tTkp9d5hUxKZNROU",
+            "label": "Arboreal",
+            "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
+        },
+        {
+          "v8ab0CxHts03RoTj": {
+            "id": "v8ab0CxHts03RoTj",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        }
+      ],
+      "items": [
+        {
+          "B5d8o4dsmZy67V5h": {
+            "id": "B5d8o4dsmZy67V5h",
+            "name": "Strzelanie (25)",
+            "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
+            "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
+            "specification": "7"
+          }
+        }
+      ]
+    },
+    {
+      "id": "wdnXbjtKK7MtsZzc",
+      "name": "Snotling",
+      "description": "<p>Stwory o mózgu wielkości orzeszka, podobne do podekscytowanych, niekontrolowanych szczeniąt. Snotlingi to zbieracze i urodzeni imitatorzy. Zbierają kości i błyszczące rzeczy albo naśladują zachowanie wszystkiego, co widzą. Gdy zostaną pchnięte do walki przez gobliny lub orki, walczą w cuchnących rojach, starając się stłamsić wrogów samą swoją liczebnością. Wykorzystują przy tym wszelkiego rodzaju odrażające i szkodliwe substancje, jak trujące grzyby i odchody, którymi rzucają w przeciwników.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.wdnXbjtKK7MtsZzc",
+      "gender": "Zielonoskóry",
+      "species": null,
+      "effects": [
+        {
+          "Gd3ciWnuttQ0eagx": {
+            "id": "Gd3ciWnuttQ0eagx",
+            "label": "Venom",
+            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
+          }
+        },
+        {
+          "K716oGYB6WDANWMg": {
+            "id": "K716oGYB6WDANWMg",
+            "label": "Swarm",
+            "script": "if (args.type == \"weapon\" && args.item.attackType == \"ranged\")\n   args.prefillModifiers.modifier += 40"
+          }
+        },
+        {
+          "MhhGC5b9344Ecqnk": {
+            "id": "MhhGC5b9344Ecqnk",
+            "label": "Infected",
+            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+          }
+        },
+        {
+          "rPpBfzaGWof5yf0b": {
+            "id": "rPpBfzaGWof5yf0b",
+            "label": "Swarm Bonuses",
+            "script": "args.wounds *= 5"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "XoSSlIsqXkiBlycn",
+      "name": "Varghulf",
+      "description": "<p>Większość wampirów utrzymuje w równowadze swoje nieumarłe łaknienie krwi z ułudą obycia i przyzwoitości, pozując na arystokrację ożywieńców. Niektóre jednak odrzucają swą ludzką fasadę, poddając się wewnętrznej bestii. Te varghulfy to brutalne i dzikie stworzenia pozbawione wszelkiego wyrafinowania, całkowicie pochłonięte przez zwierzęce dążenie do zaspokojenia własnych potrzeb. Pojawiają się pod postacią wielkich, nadętych bestii podobnych do nietoperza, które pławią się w prymitywnej żądzy krwi.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.XoSSlIsqXkiBlycn",
+      "gender": "Nieumarły",
+      "species": null,
+      "effects": [
+        {
+          "5vGOusPp76nuFjCS": {
+            "id": "5vGOusPp76nuFjCS",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        },
+        {
+          "DGDpCWDOKKcaplbe": {
+            "id": "DGDpCWDOKKcaplbe",
+            "label": "Frenzy",
+            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
+          }
+        },
+        {
+          "R4fA4w2yTpmct7a7": {
+            "id": "R4fA4w2yTpmct7a7",
+            "label": "Regenerate",
+            "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")}\n\nlet wounds = duplicate(this.actor.status.wounds)\nlet regen = (await new Roll(\"1d10\").roll()).total\n\nif (wounds.value >= wounds.max)\n   return\n\nif (wounds.value > 0)\n{\n   wounds.value += regen\n   if (wounds.value > wounds.max) \n        wounds.value = wounds.max\n   chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`\n   \n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse if (regen >= 8)\n{\n    chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n    wounds.value += 1\n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse\n{\n    chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n}\n\nthis.actor.update({\"system.status.wounds\" : wounds})\nChatMessage.create(chatData)"
+          }
+        },
+        {
+          "VM4pv8D3no7z7Gvw": {
+            "id": "VM4pv8D3no7z7Gvw",
+            "label": "Tracker",
+            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
+        },
+        {
+          "WbtH8VyrGiMhVDF1": {
+            "id": "WbtH8VyrGiMhVDF1",
+            "label": "Terror",
+            "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postTerror(value, name)\n}"
+          }
+        },
+        {
+          "yPCY4AzgmpJhjmUu": {
+            "id": "yPCY4AzgmpJhjmUu",
+            "label": "Fear",
+            "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postFear(value, name)\n}"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "XtVkAVgZRIIgrBXb",
+      "name": "Mantikora",
+      "description": "<p><em>Gdy podróżowałem z elfami do Ulthuanu, widziałem mnóstwo rzeczy, które zdumiałyby większość ludzi w domu. Pewnego razu ujrzałem mantikorę, tyle że pośrodku jej lwiego łba znajdowała się twarz wielkiego elfa! Należałoby chyba nazwać tego stwora elftikorą.</em></p>\n<p>- Adhemar Fitztancred, Szary Strażnik, gawędziarz i kłamca</p>\n<p>Na szczęście występują rzadko. Mantikory są niemiłosiernie zawzięte, z niezwykłą brutalnością dążąc do usunięcia ze swojego terytorium drapieżnych rywali. Dlatego zwykle wiadomo, że wchodzi się na teren mantikory - wzniesienia zawalone są ścierwami innych potworów. Stwór ma głowę i korpus zniekształconego wielkiego kota (chociaż czasami jego twarz wydaje się niemal zbyt ludzka), skrzydła nietoperza i paskudny, młócący, kolczasty ogon.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.XtVkAVgZRIIgrBXb",
+      "gender": "Mantikora",
+      "species": null,
+      "effects": [
+        {
+          "dlQkrrgpAQLRGHsP": {
+            "id": "dlQkrrgpAQLRGHsP",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        },
+        {
+          "Rm3d5PT9jADL4gay": {
+            "id": "Rm3d5PT9jADL4gay",
+            "label": "Venom",
+            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
+          }
+        },
+        {
+          "wcaZyIkoc6mIj05E": {
+            "id": "wcaZyIkoc6mIj05E",
+            "label": "Tail Attack",
+            "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value]\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value]\n\nif (attackerSize > actorSize)\n{\n   args.actor.addCondition(\"prone\")\n   ChatMessage.create({content: `<b>Tail Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Prone]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "YavXt2NP9N8Puxse",
+      "name": "Pol Dankels",
+      "description": null,
+      "sourceId": "Compendium.wfrp4e-core.bestiary.YavXt2NP9N8Puxse",
+      "gender": null,
+      "species": null,
+      "effects": [
+        {
+          "nZUvl5pnY3xEBtkg": {
+            "id": "nZUvl5pnY3xEBtkg",
+            "label": "Cunning",
+            "script": null
+          }
+        },
+        {
+          "OziS2EaX3BzYrkYI": {
+            "id": "OziS2EaX3BzYrkYI",
+            "label": "Clever",
+            "script": null
+          }
+        },
+        {
+          "T2E7JWk3xMOy3WC9": {
+            "id": "T2E7JWk3xMOy3WC9",
+            "label": "Tough",
+            "script": null
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "Yee9gwxJUceGbnO2",
+      "name": "Pegaz",
+      "description": "<p>Pegazy to urodziwe białe konie z wielkimi, łabędzimi skrzydłami. Są wytrwałymi i niestrudzonymi lotnikami. Latają wielkimi stadami w wysokich górach, najwyraźniej czerpiąc ogromną radość z szybowania i wirowania w krętych prądach powietrznych. Są oczywistymi kandydatami na wierzchowce i niejeden wojownik lub zwiadowca usiłował schwytać dla siebie pegaza. Pegazy są bardzo inteligentne, a według niektórych same pozwalają się schwytać, jeśli tego chcą. To doprowadziło do powstania wszelkiego rodzaju fantastycznych, romantycznych legend, zgodnie z którymi wybrańcami pegazów mogą być tylko osoby wystarczająco godne lub cnotliwe.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.Yee9gwxJUceGbnO2",
+      "gender": "Pegaz",
+      "species": null,
+      "effects": [
+        {
+          "bLNxCmpxb9SlSBFC": {
+            "id": "bLNxCmpxb9SlSBFC",
+            "label": "Stride",
+            "script": "args.actor.details.move.run *= 1.5"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "z8f3vySKIpTxGr62",
+      "name": "Bazyliszek",
+      "description": "<p>Te ośmionogie, gadzie stwory są samotnicze i nieuchwytne. Podobno należą do najstarszych stworzeń Chaosu. Jak twierdzą pogłoski, przepełnia je tak wielka złość i jad, że zatruta jest nawet ziemia, po której chodzą. Także ich ukąszenie jest trujące, ale największy lęk budzi petryfikujące spojrzenie tych potworów. Obecnie spotyka się je rzadko, jednak bazyliszki to wciąż groźni przeciwnicy. Ich gruczoły i organy są wysoko cenione przez czarodziejów i alchemików, dlatego szukający okazji łowcy często sprawdzają, ile jest prawdy w pogłoskach o bazyliszkach bytujących podobno w dzikich ostępach Vorberglandu. Niewielu powraca z takich wypraw.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.z8f3vySKIpTxGr62",
+      "gender": "Bazyliszek",
+      "species": null,
+      "effects": [
+        {
+          "7VBwjr1LazKiJJh9": {
+            "id": "7VBwjr1LazKiJJh9",
+            "label": "Infected",
+            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+          }
+        },
+        {
+          "bhOGqfpoKJEhqbxd": {
+            "id": "bhOGqfpoKJEhqbxd",
+            "label": "Cold Blooded",
+            "script": "if (args.test.characteristicKey == \"wp\")\n   args.test.preData.canReverse = true"
+          }
+        },
+        {
+          "Cvlcy71V4UoNUDFj": {
+            "id": "Cvlcy71V4UoNUDFj",
+            "label": "Stride",
+            "script": "args.actor.details.move.run *= 1.5"
+          }
+        },
+        {
+          "Gxa1i8z4wfyCpoga": {
+            "id": "Gxa1i8z4wfyCpoga",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        },
+        {
+          "MQShn2Ex6g9j3zTI": {
+            "id": "MQShn2Ex6g9j3zTI",
+            "label": "Venom",
+            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
+          }
+        },
+        {
+          "TPQXGnY2hMQdbwGn": {
+            "id": "TPQXGnY2hMQdbwGn",
+            "label": "Tail Attack",
+            "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value]\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value]\n\nif (attackerSize > actorSize)\n{\n   args.actor.addCondition(\"prone\")\n   ChatMessage.create({content: `<b>Tail Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Prone]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
+          }
+        }
+      ],
+      "items": []
+    },
+    {
+      "id": "zzdOpKqBC28J66Mn",
+      "name": "Goblin",
+      "description": "<p>Gobliny, sir. Tysiące goblinów!</p>\n<p>- Porucznik Bromkopf, 24. Reiklandzki Regiment Piechoty</p>\n<p>&nbsp;</p>\n<p>Są wychudzone, złośliwe, zwinne i inteligentne. Błędem jest niedocenianie instynktu samozachowawczego goblinów. Chociaż są tchórzliwe, chętnie zbierają się w bandy, jeśli to zapewnia im znaczną przewagę liczebną. Często dołączają do armii orków - nie zawsze z własnego wyboru - oportunistycznie korzystając z łupów wojennych, podczas gdy inni zajmują się większością faktycznej walki.</p>",
+      "sourceId": "Compendium.wfrp4e-core.bestiary.zzdOpKqBC28J66Mn",
+      "gender": "Goblin",
+      "species": null,
+      "effects": [
+        {
+          "i8TsOAxC47ofJl4x": {
+            "id": "i8TsOAxC47ofJl4x",
+            "label": "Armour",
+            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
+        },
+        {
+          "L73KcIKLc1jZcLFR": {
+            "id": "L73KcIKLc1jZcLFR",
+            "label": "Venom",
+            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
+          }
+        },
+        {
+          "pftSjYK6DieRahrK": {
+            "id": "pftSjYK6DieRahrK",
+            "label": "Infected",
+            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+          }
+        },
+        {
+          "rf1Ie1fPN8s8EpAU": {
+            "id": "rf1Ie1fPN8s8EpAU",
+            "label": "Arboreal",
+            "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
+        }
+      ],
+      "items": [
+        {
+          "ngw4swVSGJK6DW85": {
+            "id": "ngw4swVSGJK6DW85",
+            "name": "Strzelanie (25)",
+            "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
+            "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
+            "specification": "7"
+          }
+        }
+      ]
+    }
   ]
 }

@@ -130,7 +130,7 @@
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.4hV1PpYm9Q2pyUNf",
       "special": null,
-      "range": null
+      "range": "-10"
     },
     {
       "id": "4hyL1z3ayI3ligQE",
@@ -145,13 +145,15 @@
       "sourceId": "Compendium.wfrp4e-core.trappings.4xV16ttsxCa311vl",
       "effects": [
         {
-          "label": "Czepiec kolczy",
-          "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Perception\")) {\n   args.prefillModifiers.modifier -= 10\n}",
-          "id": "6pQrluba3OWBJgYI"
+          "6pQrluba3OWBJgYI": {
+            "id": "6pQrluba3OWBJgYI",
+            "label": "Czepiec kolczy",
+            "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Perception\")) {\n   args.prefillModifiers.modifier -= 10\n}"
+          }
         }
       ],
       "special": null,
-      "penalty": null
+      "penalty": "-10 Perception"
     },
     {
       "id": "56Y8YRC8wF2e6yye",
@@ -191,7 +193,7 @@
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.5wItcVAcA6mfa62q",
       "special": null,
-      "range": null
+      "range": "As weapon"
     },
     {
       "id": "61Fx3RHhSqaLCnao",
@@ -211,7 +213,7 @@
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.6GNNpWIGxO9CkTCR",
       "special": null,
-      "range": null
+      "range": "As weapon"
     },
     {
       "id": "6OmsMPtz0NzCwvzL",
@@ -375,9 +377,11 @@
       "sourceId": "Compendium.wfrp4e-core.trappings.b6tGqvNe1jYBdeN5",
       "effects": [
         {
-          "label": "Dziwnokorzeń",
-          "script": "if (args.type == \"characteristic\") {\n  if (args.item == \"wp\" || args.item == \"t\")\n    args.prefillModifiers.modifier += 10\n  else if (args.item == \"ag\" || args.item == \"i\" || args.item == \"int\")\n    args.prefillModifiers.modifier -= 10\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"wp\" || args.item.characteristic.key == \"t\")\n  args.prefillModifiers.modifier += 10\n  else if (args.item.characteristic.key == \"ag\" || args.item.characteristic.key == \"i\" || args.item.characteristic.key == \"int\")\n    args.prefillModifiers.modifier -= 10\n}\nelse if (args.type == \"cast\") {\n  args.prefillModifiers.modifier -= 10\n}\nelse if (args.type == \"channelling\") {\n  args.prefillModifiers.modifier += 10\n}",
-          "id": "Sq1UQ9Xo4cuwWy2K"
+          "Sq1UQ9Xo4cuwWy2K": {
+            "id": "Sq1UQ9Xo4cuwWy2K",
+            "label": "Dziwnokorzeń",
+            "script": "if (args.type == \"characteristic\") {\n  if (args.item == \"wp\" || args.item == \"t\")\n    args.prefillModifiers.modifier += 10\n  else if (args.item == \"ag\" || args.item == \"i\" || args.item == \"int\")\n    args.prefillModifiers.modifier -= 10\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"wp\" || args.item.characteristic.key == \"t\")\n  args.prefillModifiers.modifier += 10\n  else if (args.item.characteristic.key == \"ag\" || args.item.characteristic.key == \"i\" || args.item.characteristic.key == \"int\")\n    args.prefillModifiers.modifier -= 10\n}\nelse if (args.type == \"cast\") {\n  args.prefillModifiers.modifier -= 10\n}\nelse if (args.type == \"channelling\") {\n  args.prefillModifiers.modifier += 10\n}"
+          }
         }
       ]
     },
@@ -439,13 +443,15 @@
       "sourceId": "Compendium.wfrp4e-core.trappings.bY6M9XxbqmFmqpA8",
       "effects": [
         {
-          "label": "Płytowe Nagolenniki",
-          "script": "if (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))) {\n   args.prefillModifiers.modifier -= 10;\n}",
-          "id": "u46Xpql4mjj6JOD0"
+          "u46Xpql4mjj6JOD0": {
+            "id": "u46Xpql4mjj6JOD0",
+            "label": "Płytowe Nagolenniki",
+            "script": "if (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))) {\n   args.prefillModifiers.modifier -= 10;\n}"
+          }
         }
       ],
       "special": null,
-      "penalty": null
+      "penalty": "-10 Stealth"
     },
     {
       "id": "ByHt0vTWRIuHS2r8",
@@ -479,7 +485,7 @@
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.CdsNf9MFRUhrJ3YA",
       "special": null,
-      "range": null
+      "range": "Half weapon"
     },
     {
       "id": "CihEl1pzvTiMQswA",
@@ -542,13 +548,15 @@
       "sourceId": "Compendium.wfrp4e-core.trappings.e9WmLbD7AuXSeWp0",
       "effects": [
         {
-          "label": "Hełm płytowy",
-          "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Perception\")){\n   args.prefillModifiers.modifier -= 20;\n}",
-          "id": "Vljt1mEPqTTJIIxs"
+          "Vljt1mEPqTTJIIxs": {
+            "id": "Vljt1mEPqTTJIIxs",
+            "label": "Hełm płytowy",
+            "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Perception\")){\n   args.prefillModifiers.modifier -= 20;\n}"
+          }
         }
       ],
       "special": null,
-      "penalty": null
+      "penalty": "-20 Perception"
     },
     {
       "id": "ebsbEIJOY0Jy5raF",
@@ -674,9 +682,11 @@
       "sourceId": "Compendium.wfrp4e-core.trappings.gxdjLQoQUTYgD6fm",
       "effects": [
         {
-          "label": "Mikstura lecznicza",
-          "script": "let wounds = this.actor.status.wounds;\nif (wounds.value > 0) {\n  ui.notifications.notify(game.i18n.format(\"WFRP4E.EFFECT.CORE.HealingPotion\", {wounds: this.actor.characteristics.t.bonus}));\n  this.actor.modifyWounds(this.actor.characteristics.t.bonus);\n} else {\n  ui.notifications.error(game.i18n.localize(\"WFRP4E.EFFECT.CORE.HealingPotionNoWounds\"));\n}",
-          "id": "K7C1LFtqdLQ5bhFS"
+          "K7C1LFtqdLQ5bhFS": {
+            "id": "K7C1LFtqdLQ5bhFS",
+            "label": "Mikstura lecznicza",
+            "script": "let wounds = this.actor.status.wounds;\nif (wounds.value > 0) {\n  ui.notifications.notify(game.i18n.format(\"WFRP4E.EFFECT.CORE.HealingPotion\", {wounds: this.actor.characteristics.t.bonus}));\n  this.actor.modifyWounds(this.actor.characteristics.t.bonus);\n} else {\n  ui.notifications.error(game.i18n.localize(\"WFRP4E.EFFECT.CORE.HealingPotionNoWounds\"));\n}"
+          }
         }
       ]
     },
@@ -843,14 +853,18 @@
       "sourceId": "Compendium.wfrp4e-core.trappings.jTFOrokjEHbi12rT",
       "effects": [
         {
-          "label": "Rozkosz Ranalda",
-          "script": null,
-          "id": "TApb9RQHQJcksYYL"
+          "TApb9RQHQJcksYYL": {
+            "id": "TApb9RQHQJcksYYL",
+            "label": "Rozkosz Ranalda",
+            "script": null
+          }
         },
         {
-          "label": "Efekt po ustaniu rozkoszy Ranalda",
-          "script": null,
-          "id": "vLMdJ6dsFuAAIee5"
+          "vLMdJ6dsFuAAIee5": {
+            "id": "vLMdJ6dsFuAAIee5",
+            "label": "Efekt po ustaniu rozkoszy Ranalda",
+            "script": null
+          }
         }
       ]
     },
@@ -904,7 +918,7 @@
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.kFROfGFdExfyJTg9",
       "special": null,
-      "range": null
+      "range": "As weapon"
     },
     {
       "id": "KGW0J62iYLqRIfS4",
@@ -1068,7 +1082,7 @@
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.mik7s6AqS8SMSaJ8",
       "special": null,
-      "range": null
+      "range": "As weapon"
     },
     {
       "id": "mRU10yAWWWs5WoKt",
@@ -1096,9 +1110,11 @@
       "sourceId": "Compendium.wfrp4e-core.trappings.mUTrC5DA6bF8DDWz",
       "effects": [
         {
-          "label": "Salwort",
-          "script": "let stunned = this.actor.hasCondition(\"stunned\");\nif (stunned) {\n   ui.notifications.notify(game.i18n.localize(\"WFRP4E.EFFECT.CORE.Salwort\"));\n   await this.actor.removeCondition(\"stunned\", 1);\n}",
-          "id": "JGCSlLxbbXCPlkIY"
+          "JGCSlLxbbXCPlkIY": {
+            "id": "JGCSlLxbbXCPlkIY",
+            "label": "Salwort",
+            "script": "let stunned = this.actor.hasCondition(\"stunned\");\nif (stunned) {\n   ui.notifications.notify(game.i18n.localize(\"WFRP4E.EFFECT.CORE.Salwort\"));\n   await this.actor.removeCondition(\"stunned\", 1);\n}"
+          }
         }
       ]
     },
@@ -1129,7 +1145,7 @@
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.NQ4OVp1ZfinJ7lQH",
       "special": null,
-      "range": null
+      "range": "+50"
     },
     {
       "id": "nRfcszo6wF2sVFDn",
@@ -1138,9 +1154,11 @@
       "sourceId": "Compendium.wfrp4e-core.trappings.nRfcszo6wF2sVFDn",
       "effects": [
         {
-          "label": "Fakstoryl",
-          "script": "let bleeding = this.actor.hasCondition(\"bleeding\")\nif (bleeding) {\n   ui.notifications.notify(game.i18n.format(\"WFRP4E.EFFECT.CORE.Faxtoryll\", {bleeding: bleeding.flags.wfrp4e.value}));\n   await this.actor.removeCondition(\"bleeding\", bleeding.flags.wfrp4e.value);\n}",
-          "id": "rzyXt1SCCnDq5tnt"
+          "rzyXt1SCCnDq5tnt": {
+            "id": "rzyXt1SCCnDq5tnt",
+            "label": "Fakstoryl",
+            "script": "let bleeding = this.actor.hasCondition(\"bleeding\")\nif (bleeding) {\n   ui.notifications.notify(game.i18n.format(\"WFRP4E.EFFECT.CORE.Faxtoryll\", {bleeding: bleeding.flags.wfrp4e.value}));\n   await this.actor.removeCondition(\"bleeding\", bleeding.flags.wfrp4e.value);\n}"
+          }
         }
       ]
     },
@@ -1394,13 +1412,15 @@
       "sourceId": "Compendium.wfrp4e-core.trappings.TvUKzvXjc2VChuTT",
       "effects": [
         {
-          "label": "Hełm Płytowy (Otwarty)",
-          "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Perception\")) {\n   args.prefillModifiers.modifier -= 10;\n}",
-          "id": "YLns5DNubGbr27Lh"
+          "YLns5DNubGbr27Lh": {
+            "id": "YLns5DNubGbr27Lh",
+            "label": "Hełm Płytowy (Otwarty)",
+            "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Perception\")) {\n   args.prefillModifiers.modifier -= 10;\n}"
+          }
         }
       ],
       "special": null,
-      "penalty": null
+      "penalty": "-10 Perception"
     },
     {
       "id": "TW3etL7RIU2EWTXp",
@@ -1473,9 +1493,11 @@
       "sourceId": "Compendium.wfrp4e-core.trappings.vI0oorwbZdlszudf",
       "effects": [
         {
-          "label": "Ładunek zapalający",
-          "script": "let ablaze = {{SL}} + 1;\nawait args.actor.addCondition(\"ablaze\", ablaze);",
-          "id": "BRhiXQ6Pig4FoZlF"
+          "BRhiXQ6Pig4FoZlF": {
+            "id": "BRhiXQ6Pig4FoZlF",
+            "label": "Ładunek zapalający",
+            "script": "let ablaze = {{SL}} + 1;\nawait args.actor.addCondition(\"ablaze\", ablaze);"
+          }
         }
       ],
       "special": "An Incendiary gives every affected target 1+SL Ablaze Conditions."
@@ -1571,7 +1593,7 @@
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.xdAP96GGDb87m0Pr",
       "special": null,
-      "range": null
+      "range": "As weapon"
     },
     {
       "id": "xiOYNJcfqPselfwT",
@@ -1668,9 +1690,11 @@
       "sourceId": "Compendium.wfrp4e-core.trappings.ZBBi7LpWvNgQgRcw",
       "effects": [
         {
-          "label": "Eliksir żywotności",
-          "script": "let fatigued= this.actor.hasCondition(\"fatigued\");\nif (fatigued) {\n   ui.notifications.notify(game.i18n.format(\"WFRP4E.EFFECT.CORE.VitalityDraught\", {fatigued: fatigued.conditionValue}));\n   await this.actor.removeCondition(\"fatigued\", fatigued.conditionValue);\n}",
-          "id": "9ArLjt6oQqMDFsDu"
+          "9ArLjt6oQqMDFsDu": {
+            "id": "9ArLjt6oQqMDFsDu",
+            "label": "Eliksir żywotności",
+            "script": "let fatigued= this.actor.hasCondition(\"fatigued\");\nif (fatigued) {\n   ui.notifications.notify(game.i18n.format(\"WFRP4E.EFFECT.CORE.VitalityDraught\", {fatigued: fatigued.conditionValue}));\n   await this.actor.removeCondition(\"fatigued\", fatigued.conditionValue);\n}"
+          }
         }
       ]
     },

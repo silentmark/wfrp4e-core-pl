@@ -17,9 +17,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.0ep8BNMiZGVLTHpr",
       "effects": [
         {
-          "label": "Artylerzysta",
-          "script": "if (args.options.reload && args.options.weapon && args.options.weapon.weaponGroup.value == \"blackpowder\") {\n   args.prefillModifiers.slBonus += 1\n}",
-          "id": "SVUtglybdq15RZEK"
+          "SVUtglybdq15RZEK": {
+            "id": "SVUtglybdq15RZEK",
+            "label": "Artylerzysta",
+            "script": "if (args.options.reload && args.options.weapon && args.options.weapon.weaponGroup.value == \"blackpowder\") {\n   args.prefillModifiers.slBonus += 1\n}"
+          }
         }
       ],
       "tests": null,
@@ -32,9 +34,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.0hn6UaKq8CoZP2zD",
       "effects": [
         {
-          "label": "Groźny",
-          "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Intimidate\")) {\n    args.prefillModifiers.slBonus += 1;\n}",
-          "id": "IRRiQjVGZiHjLnxt"
+          "IRRiQjVGZiHjLnxt": {
+            "id": "IRRiQjVGZiHjLnxt",
+            "label": "Groźny",
+            "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Intimidate\")) {\n    args.prefillModifiers.slBonus += 1;\n}"
+          }
         }
       ],
       "tests": "Zastraszanie",
@@ -79,9 +83,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.1IZWRr7BYOIcqPlQ",
       "effects": [
         {
-          "label": "Zmysł Magii",
-          "script": "// Remove the miscast if doubles rolled and succeeded\nif(args.test.result.outcome == \"success\" && args.test.result.minormis && args.test.result.roll % 11 == 0) {\n    delete args.test.result.minormis\n}\n// Decrement the major miscast to minor miscast\nelse if(args.test.result.outcome == \"success\" && args.test.result.majormis && args.test.result.roll % 11 == 0) {\n    delete args.test.result.majormis;\n    args.test.result.minormis = game.i18n.localize(\"ROLL.MinorMis\");\n}",
-          "id": "mqSUg3ORIh2YCotB"
+          "mqSUg3ORIh2YCotB": {
+            "id": "mqSUg3ORIh2YCotB",
+            "label": "Zmysł Magii",
+            "script": "// Remove the miscast if doubles rolled and succeeded\nif(args.test.result.outcome == \"success\" && args.test.result.minormis && args.test.result.roll % 11 == 0) {\n    delete args.test.result.minormis\n}\n// Decrement the major miscast to minor miscast\nelse if(args.test.result.outcome == \"success\" && args.test.result.majormis && args.test.result.roll % 11 == 0) {\n    delete args.test.result.majormis;\n    args.test.result.minormis = game.i18n.localize(\"ROLL.MinorMis\");\n}"
+          }
         }
       ],
       "tests": "Splatanie Magii (Dowolny Wiatr Magii)",
@@ -110,9 +116,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.2Nzqsc9aclP6rpnl",
       "effects": [
         {
-          "label": "Cios Poniżej Pasa",
-          "script": "if (args.item.type == \"weapon\" && args.item.weaponGroup.value == \"brawling\") {\n    args.item.damage.value += \" + 1\";\n}",
-          "id": "NznDJLYiqbwPzhZt"
+          "NznDJLYiqbwPzhZt": {
+            "id": "NznDJLYiqbwPzhZt",
+            "label": "Cios Poniżej Pasa",
+            "script": "if (args.item.type == \"weapon\" && args.item.weaponGroup.value == \"brawling\") {\n    args.item.damage.value += \" + 1\";\n}"
+          }
         }
       ],
       "tests": "Broń Biała (Bijatyka)",
@@ -141,9 +149,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.41JhsSNW1Ttza3JK",
       "effects": [
         {
-          "label": "Przekonujący",
-          "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Charm\") &&  (args.test.result.roll <= 5 || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop())\n   if (ones > SL) {\n     args.test.result.other.push(`<b>${this.effect.label}</b>: ${ones + args.test.successBonus + args.test.slBonus} SL if debating.`);\n   }\n}",
-          "id": "oAsvKkgS9pLtavj7"
+          "oAsvKkgS9pLtavj7": {
+            "id": "oAsvKkgS9pLtavj7",
+            "label": "Przekonujący",
+            "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Charm\") &&  (args.test.result.roll <= 5 || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop())\n   if (ones > SL) {\n     args.test.result.other.push(`<b>${this.effect.label}</b>: ${ones + args.test.successBonus + args.test.slBonus} SL if debating.`);\n   }\n}"
+          }
         }
       ],
       "tests": "Charyzma, gdy prowadzisz debatę lub się z kimś spierasz na ",
@@ -164,9 +174,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.4MJJCiOKPkBByYwW",
       "effects": [
         {
-          "label": "Silny Cios",
-          "script": "args.actor.flags.meleeDamageIncrease += 1;",
-          "id": "1FkIE179oDa65hOI"
+          "1FkIE179oDa65hOI": {
+            "id": "1FkIE179oDa65hOI",
+            "label": "Silny Cios",
+            "script": "args.actor.flags.meleeDamageIncrease += 1;"
+          }
         }
       ],
       "tests": null,
@@ -211,9 +223,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.5lcttqGToT54WFrl",
       "effects": [
         {
-          "label": "Strzelec Wyborowy",
-          "script": null,
-          "id": "o9nh6cysRfyobzdc"
+          "o9nh6cysRfyobzdc": {
+            "id": "o9nh6cysRfyobzdc",
+            "label": "Strzelec Wyborowy",
+            "script": null
+          }
         }
       ],
       "tests": null,
@@ -234,9 +248,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.6l3jvIAvrKxt0lA9",
       "effects": [
         {
-          "label": "Atrakcyjny",
-          "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Charm\") &&  (args.test.result.roll <= 5 || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop())\n   if (ones > SL)\n      args.test.result.other.push(`<b>${this.effect.label}</b>: ${ones + args.test.successBonus + args.test.slBonus} SL if target is attracted to you.`)\n}",
-          "id": "pq0wuLa5jebvLTGR"
+          "pq0wuLa5jebvLTGR": {
+            "id": "pq0wuLa5jebvLTGR",
+            "label": "Atrakcyjny",
+            "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Charm\") &&  (args.test.result.roll <= 5 || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop())\n   if (ones > SL)\n      args.test.result.other.push(`<b>${this.effect.label}</b>: ${ones + args.test.successBonus + args.test.slBonus} SL if target is attracted to you.`)\n}"
+          }
         }
       ],
       "tests": "Charyzma, by wpłynąć na tych, którym się podobasz",
@@ -273,9 +289,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.769B469sqx6FXPfn",
       "effects": [
         {
-          "label": "Szybkie Przeładowanie",
-          "script": "if (args.options.reload && args.options.weapon) {\n   args.prefillModifiers.slBonus += 1;\n}",
-          "id": "nwmflkSKJ3gH7INJ"
+          "nwmflkSKJ3gH7INJ": {
+            "id": "nwmflkSKJ3gH7INJ",
+            "label": "Szybkie Przeładowanie",
+            "script": "if (args.options.reload && args.options.weapon) {\n   args.prefillModifiers.slBonus += 1;\n}"
+          }
         }
       ],
       "tests": null,
@@ -296,9 +314,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.7bZjB82f6LSkeczP",
       "effects": [
         {
-          "label": "Zręczny",
-          "script": null,
-          "id": "iT6aqNkxEikCpTEY"
+          "iT6aqNkxEikCpTEY": {
+            "id": "iT6aqNkxEikCpTEY",
+            "label": "Zręczny",
+            "script": null
+          }
         }
       ],
       "tests": null,
@@ -311,9 +331,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.8lSoPDGrmeTIaapm",
       "effects": [
         {
-          "label": "Towarzyski",
-          "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Gossip\")) {\n    args.test.preData.canReverse = true;\n}",
-          "id": "TFSgPCFx1KpFepgz"
+          "TFSgPCFx1KpFepgz": {
+            "id": "TFSgPCFx1KpFepgz",
+            "label": "Towarzyski",
+            "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Gossip\")) {\n    args.test.preData.canReverse = true;\n}"
+          }
         }
       ],
       "tests": "Plotkowanie z wędrowcami",
@@ -398,9 +420,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.AwUUEwwf2Vt4ksCN",
       "effects": [
         {
-          "label": "Szybkobiegacz",
-          "script": "args.actor.details.move.run += 4;",
-          "id": "SjJdt6yUkEkPqDgF"
+          "SjJdt6yUkEkPqDgF": {
+            "id": "SjJdt6yUkEkPqDgF",
+            "label": "Szybkobiegacz",
+            "script": "args.actor.details.move.run += 4;"
+          }
         }
       ],
       "tests": "Atletyka podczas Biegu",
@@ -413,9 +437,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.aZavWXbSXVBmWeJi",
       "effects": [
         {
-          "label": "Pomocny",
-          "script": "if (args.test.item && args.test.characteristicKey== \"fel\" &&  (args.test.result.roll <= 5 || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10);\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop());\n   if (ones > SL)\n      args.test.result.other.push(`<b>${this.effect.label}</b>: ${ones + args.test.successBonus + args.test.slBonus} SL if influencing those with a higher status.`);\n}",
-          "id": "S487mwxmDJh9rULA"
+          "S487mwxmDJh9rULA": {
+            "id": "S487mwxmDJh9rULA",
+            "label": "Pomocny",
+            "script": "if (args.test.item && args.test.characteristicKey== \"fel\" &&  (args.test.result.roll <= 5 || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10);\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop());\n   if (ones > SL)\n      args.test.result.other.push(`<b>${this.effect.label}</b>: ${ones + args.test.successBonus + args.test.slBonus} SL if influencing those with a higher status.`);\n}"
+          }
         }
       ],
       "tests": "Testy społeczne, by wpłynąć na stojących wyżej w hierarchii",
@@ -436,9 +462,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.BbStIySkF1hDM2zq",
       "effects": [
         {
-          "label": "Szybki Refleks",
-          "script": null,
-          "id": "Zz5EI68iOab1vbmQ"
+          "Zz5EI68iOab1vbmQ": {
+            "id": "Zz5EI68iOab1vbmQ",
+            "label": "Szybki Refleks",
+            "script": null
+          }
         }
       ],
       "tests": null,
@@ -475,9 +503,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.BYChSVfMG004eflQ",
       "effects": [
         {
-          "label": "Precyzyjne Inkantowanie",
-          "script": "// Remove the miscast if doubles rolled and succeeded\nif(args.test.result.outcome == \"success\" && args.test.result.minormis && args.test.result.roll % 11 == 0) {\n    delete args.test.result.minormis;\n}\n// Decrement the major miscast to minor miscast\nelse if(args.test.result.outcome == \"success\" && args.test.result.majormis && args.test.result.roll % 11 == 0) {\n    delete args.test.result.majormis;\n    args.test.result.minormis = game.i18n.localize(\"ROLL.MinorMis\");\n}",
-          "id": "PixW61vvKOev7oHu"
+          "PixW61vvKOev7oHu": {
+            "id": "PixW61vvKOev7oHu",
+            "label": "Precyzyjne Inkantowanie",
+            "script": "// Remove the miscast if doubles rolled and succeeded\nif(args.test.result.outcome == \"success\" && args.test.result.minormis && args.test.result.roll % 11 == 0) {\n    delete args.test.result.minormis;\n}\n// Decrement the major miscast to minor miscast\nelse if(args.test.result.outcome == \"success\" && args.test.result.majormis && args.test.result.roll % 11 == 0) {\n    delete args.test.result.majormis;\n    args.test.result.minormis = game.i18n.localize(\"ROLL.MinorMis\");\n}"
+          }
         }
       ],
       "tests": "Język (Magiczny) podczas rzucania czaru",
@@ -498,9 +528,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.CV9btQn09S9Fn8Jk",
       "effects": [
         {
-          "label": "Silne Nogi",
-          "script": null,
-          "id": "VaILgn8RaKpqAueV"
+          "VaILgn8RaKpqAueV": {
+            "id": "VaILgn8RaKpqAueV",
+            "label": "Silne Nogi",
+            "script": null
+          }
         }
       ],
       "tests": null,
@@ -513,9 +545,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.cygaI9gq4BQJvbB5",
       "effects": [
         {
-          "label": "Snajper",
-          "script": "if (args.item.range && args.item.range.bands) {\n    args.item.range.bands[game.i18n.localize(\"Long Range\")].modifier = 0\n    args.item.range.bands[game.i18n.localize(\"Extreme\")].modifier /= 2\n}",
-          "id": "AVhPxHHlKUolT589"
+          "AVhPxHHlKUolT589": {
+            "id": "AVhPxHHlKUolT589",
+            "label": "Snajper",
+            "script": "if (args.item.range && args.item.range.bands) {\n    args.item.range.bands[game.i18n.localize(\"Long Range\")].modifier = 0\n    args.item.range.bands[game.i18n.localize(\"Extreme\")].modifier /= 2\n}"
+          }
         }
       ],
       "tests": "Broń Strzelecka (zasięg daleki lub bardzo daleki)",
@@ -536,9 +570,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.E3vTSCzgrasNijUO",
       "effects": [
         {
-          "label": "Bardzo Szybki",
-          "script": "args.actor.details.move.value += 1;",
-          "id": "3fOs9R0x04viu1cj"
+          "3fOs9R0x04viu1cj": {
+            "id": "3fOs9R0x04viu1cj",
+            "label": "Bardzo Szybki",
+            "script": "args.actor.details.move.value += 1;"
+          }
         }
       ],
       "tests": null,
@@ -551,9 +587,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.E98mVLZgE8bX5vQW",
       "effects": [
         {
-          "label": "Nienawiść (Grupa)",
-          "script": null,
-          "id": "3vgrN50Ul3S5T2j6"
+          "3vgrN50Ul3S5T2j6": {
+            "id": "3vgrN50Ul3S5T2j6",
+            "label": "Nienawiść (Grupa)",
+            "script": null
+          }
         }
       ],
       "tests": "Siła Woli (Opieranie się Grupie)",
@@ -566,9 +604,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.eBwHnWdwQJ590ASb",
       "effects": [
         {
-          "label": "Mały",
-          "script": "args.size = \"sml\"",
-          "id": "keKRZ1nmziD1BMXg"
+          "keKRZ1nmziD1BMXg": {
+            "id": "keKRZ1nmziD1BMXg",
+            "label": "Mały",
+            "script": "args.size = \"sml\""
+          }
         }
       ],
       "tests": null,
@@ -597,9 +637,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.eowbsW6oHGSNJmxV",
       "effects": [
         {
-          "label": "Odporność na Magię",
-          "script": "if (args.type == \"cast\") {\n       args.prefillModifiers.slBonus -= 2;\n}",
-          "id": "EsoBJtVEVYxCXdRb"
+          "EsoBJtVEVYxCXdRb": {
+            "id": "EsoBJtVEVYxCXdRb",
+            "label": "Odporność na Magię",
+            "script": "if (args.type == \"cast\") {\n       args.prefillModifiers.slBonus -= 2;\n}"
+          }
         }
       ],
       "tests": null,
@@ -636,14 +678,18 @@
       "sourceId": "Compendium.wfrp4e-core.talents.FF41XPboORgyDNsv",
       "effects": [
         {
-          "label": "Mocne Plecy",
-          "script": "args.actor.status.encumbrance.max += 1;",
-          "id": "J5IUFXDMXgCJSPXW"
+          "J5IUFXDMXgCJSPXW": {
+            "id": "J5IUFXDMXgCJSPXW",
+            "label": "Mocne Plecy",
+            "script": "args.actor.status.encumbrance.max += 1;"
+          }
         },
         {
-          "label": "Bonus do Testu Przeciwstawnego",
-          "script": null,
-          "id": "V6DfeSCAubOnx2rs"
+          "V6DfeSCAubOnx2rs": {
+            "id": "V6DfeSCAubOnx2rs",
+            "label": "Bonus do Testu Przeciwstawnego",
+            "script": null
+          }
         }
       ],
       "tests": "Wiosłowanie lub Pływanie",
@@ -656,9 +702,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.FjTnaxixsu1ShNNr",
       "effects": [
         {
-          "label": "Woltyżerka",
-          "script": "if (args.type == \"characteristic\") {\n  if (args.options.dodge && this.actor.isMounted) {\n    args.prefillModifiers.modifier += 20\n  }\n}\n\nif (args.type == \"skill\") {\n  if (args.item.name == game.i18n.localize(\"NAME.Dodge\") && this.actor.isMounted) {\n    args.prefillModifiers.modifier += 20\n  }\n}",
-          "id": "HRSjpI6pAoSuf9tl"
+          "HRSjpI6pAoSuf9tl": {
+            "id": "HRSjpI6pAoSuf9tl",
+            "label": "Woltyżerka",
+            "script": "if (args.type == \"characteristic\") {\n  if (args.options.dodge && this.actor.isMounted) {\n    args.prefillModifiers.modifier += 20\n  }\n}\n\nif (args.type == \"skill\") {\n  if (args.item.name == game.i18n.localize(\"NAME.Dodge\") && this.actor.isMounted) {\n    args.prefillModifiers.modifier += 20\n  }\n}"
+          }
         }
       ],
       "tests": "Unik na koniu, Jeździectwo (Konie)",
@@ -727,9 +775,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.GOtpCOZ2br14GrBW",
       "effects": [
         {
-          "label": "Zabójca",
-          "script": "if (args.sizeDiff <= -2 && args.opposedTest.attackerTest.result.critical) {\n  args.damageMultiplier = Math.abs(args.sizeDiff)\n}\nlet sBonusDiff = args.opposedTest.defenderTest.actor.characteristics.t.bonus - args.opposedTest.attackerTest.actor.characteristics.s.bonus;\nlet weapon = args.opposedTest.attackerTest.item;\nif (sBonusDiff > 0 && weapon && weapon.damage.value.includes(\"SB\")) {\n  args.damage += sBonusDiff;\n}",
-          "id": "ScsXdMC7SqNirMwx"
+          "ScsXdMC7SqNirMwx": {
+            "id": "ScsXdMC7SqNirMwx",
+            "label": "Zabójca",
+            "script": "if (args.sizeDiff <= -2 && args.opposedTest.attackerTest.result.critical) {\n  args.damageMultiplier = Math.abs(args.sizeDiff)\n}\nlet sBonusDiff = args.opposedTest.defenderTest.actor.characteristics.t.bonus - args.opposedTest.attackerTest.actor.characteristics.s.bonus;\nlet weapon = args.opposedTest.attackerTest.item;\nif (sBonusDiff > 0 && weapon && weapon.damage.value.includes(\"SB\")) {\n  args.damage += sBonusDiff;\n}"
+          }
         }
       ],
       "tests": null,
@@ -758,9 +808,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.GU1KpgY3MeFIaDaq",
       "effects": [
         {
-          "label": "Cios Mierzony",
-          "script": null,
-          "id": "c66r2RrClNOTONMB"
+          "c66r2RrClNOTONMB": {
+            "id": "c66r2RrClNOTONMB",
+            "label": "Cios Mierzony",
+            "script": null
+          }
         }
       ],
       "tests": null,
@@ -797,9 +849,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.hTgrGkWnmIR4xhVe",
       "effects": [
         {
-          "label": "Hulaka",
-          "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.ConsumeAlcohol\")) {\n    args.test.preData.canReverse = true;\n}",
-          "id": "rdiV37QZ38bf5z2P"
+          "rdiV37QZ38bf5z2P": {
+            "id": "rdiV37QZ38bf5z2P",
+            "label": "Hulaka",
+            "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.ConsumeAlcohol\")) {\n    args.test.preData.canReverse = true;\n}"
+          }
         }
       ],
       "tests": "Charyzma i Plotkowanie podczas przyjęć, Mocna Głowa",
@@ -812,9 +866,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.hXcfygzujgyMN1uI",
       "effects": [
         {
-          "label": "Szał Bojowy",
-          "script": "args.actor.characteristics.s.bonus += 1;\nargs.actor.characteristics.s.calculationBonusModifier -= 1;",
-          "id": "y1pfxqA1jLh5Ywca"
+          "y1pfxqA1jLh5Ywca": {
+            "id": "y1pfxqA1jLh5Ywca",
+            "label": "Szał Bojowy",
+            "script": "args.actor.characteristics.s.bonus += 1;\nargs.actor.characteristics.s.calculationBonusModifier -= 1;"
+          }
         }
       ],
       "tests": null,
@@ -827,9 +883,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.IFKWu98qmWpaSfUi",
       "effects": [
         {
-          "label": "Oburęczność",
-          "script": "args.actor.flags.ambi += 1;",
-          "id": "jc0qgnuBJlMsA5Yn"
+          "jc0qgnuBJlMsA5Yn": {
+            "id": "jc0qgnuBJlMsA5Yn",
+            "label": "Oburęczność",
+            "script": "args.actor.flags.ambi += 1;"
+          }
         }
       ],
       "tests": null,
@@ -858,9 +916,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.IT3s7rmQFGNzIfYq",
       "effects": [
         {
-          "label": "Tarczownik",
-          "script": "if (args.opposedTest.result.winner == \"attacker\") {\n  if (args.opposedTest.defenderTest.weapon && args.opposedTest.defenderTest.item.properties.qualities.shield) {\n    ui.notifications.notify(`<b>${this.effect.label}</b>: Gained ${this.item.Advances} Advantage`)\n    this.actor.setAdvantage(this.item.Advances)\n  }\n}",
-          "id": "W5gSfWrnLHp2SYLA"
+          "W5gSfWrnLHp2SYLA": {
+            "id": "W5gSfWrnLHp2SYLA",
+            "label": "Tarczownik",
+            "script": "if (args.opposedTest.result.winner == \"attacker\") {\n  if (args.opposedTest.defenderTest.weapon && args.opposedTest.defenderTest.item.properties.qualities.shield) {\n    ui.notifications.notify(`<b>${this.effect.label}</b>: Gained ${this.item.Advances} Advantage`)\n    this.actor.setAdvantage(this.item.Advances)\n  }\n}"
+          }
         }
       ],
       "tests": null,
@@ -889,9 +949,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.JLzJws09GMw9GWBV",
       "effects": [
         {
-          "label": "Zimna krew",
-          "script": null,
-          "id": "QTmmZBqgkJMBn9KT"
+          "QTmmZBqgkJMBn9KT": {
+            "id": "QTmmZBqgkJMBn9KT",
+            "label": "Zimna krew",
+            "script": null
+          }
         }
       ],
       "tests": null,
@@ -920,9 +982,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.jrYW2OyDHd1Md2my",
       "effects": [
         {
-          "label": "Strzał w Dziesiątkę",
-          "script": "if (args.options.sizeModifier < 0) {\n   args.prefillModifiers.modifier -= args.options.sizeModifier;\n}",
-          "id": "AdXR6L7rmxEgkVlB"
+          "AdXR6L7rmxEgkVlB": {
+            "id": "AdXR6L7rmxEgkVlB",
+            "label": "Strzał w Dziesiątkę",
+            "script": "if (args.options.sizeModifier < 0) {\n   args.prefillModifiers.modifier -= args.options.sizeModifier;\n}"
+          }
         }
       ],
       "tests": null,
@@ -975,9 +1039,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.LPgjE0cexTVOBVCY",
       "effects": [
         {
-          "label": "Charyzmatyczny",
-          "script": null,
-          "id": "KtcX1mblPyZZwVBC"
+          "KtcX1mblPyZZwVBC": {
+            "id": "KtcX1mblPyZZwVBC",
+            "label": "Charyzmatyczny",
+            "script": null
+          }
         }
       ],
       "tests": null,
@@ -1078,9 +1144,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.nWLsoWQBCjPRKxYx",
       "effects": [
         {
-          "label": "Krzepki",
-          "script": "args.totalWoundLoss -= 1;\nargs.messageElements.push(\"1 \" + game.i18n.localize(\"NAME.Robust\"));\nif (args.totalWoundLoss <= 0) {\n  let weapon = args.opposedTest.attackerTest.weapon;\n  if (weapon && weapon.properties.flaws.undamaging) {\n    args.totalWoundLoss = 0;\n  } else {\n    args.totalWoundLoss = 1;\n  }\n}",
-          "id": "yTGSEMqLFPOts08w"
+          "yTGSEMqLFPOts08w": {
+            "id": "yTGSEMqLFPOts08w",
+            "label": "Krzepki",
+            "script": "args.totalWoundLoss -= 1;\nargs.messageElements.push(\"1 \" + game.i18n.localize(\"NAME.Robust\"));\nif (args.totalWoundLoss <= 0) {\n  let weapon = args.opposedTest.attackerTest.weapon;\n  if (weapon && weapon.properties.flaws.undamaging) {\n    args.totalWoundLoss = 0;\n  } else {\n    args.totalWoundLoss = 1;\n  }\n}"
+          }
         }
       ],
       "tests": null,
@@ -1109,9 +1177,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.oQzTJEXUx28sCiH3",
       "effects": [
         {
-          "label": "Czujny",
-          "script": null,
-          "id": "brTadWGpAAr78Pwx"
+          "brTadWGpAAr78Pwx": {
+            "id": "brTadWGpAAr78Pwx",
+            "label": "Czujny",
+            "script": null
+          }
         }
       ],
       "tests": null,
@@ -1132,9 +1202,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.oRx92ByVNEBN6YkK",
       "effects": [
         {
-          "label": "Berserkerska Szarża",
-          "script": "if (args.test.result.charging) {\n   args.test.result.damage += 1;\n   args.test.result.additionalDamage += 1;\n}",
-          "id": "6dxDagVXzDKL4vgR"
+          "6dxDagVXzDKL4vgR": {
+            "id": "6dxDagVXzDKL4vgR",
+            "label": "Berserkerska Szarża",
+            "script": "if (args.test.result.charging) {\n   args.test.result.damage += 1;\n   args.test.result.additionalDamage += 1;\n}"
+          }
         }
       ],
       "tests": "Broń Biała w Rundzie, w której Szarżowałeś",
@@ -1155,9 +1227,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.phXzaUxl3mFqkmDq",
       "effects": [
         {
-          "label": "Strzał Przebijający",
-          "script": "if (args.opposedTest.attackerTest.weapon.attackType == \"ranged\") {\n    let applyAP = (args.damageType == game.wfrp4e.config.DAMAGE_TYPE.IGNORE_TB || args.damageType == game.wfrp4e.config.DAMAGE_TYPE.NORMAL);\n    let AP = args.AP;\n    if (applyAP) {\n        newUsed = Math.max(AP.used - this.item.Advances, 0);\n        args.totalWoundLoss += (AP.used - newUsed);\n        let apIndex = args.messageElements.findIndex(i => i.includes(game.i18n.localize(\"AP\")))\n        args.messageElements[apIndex] = newUsed + \"/\" + AP.value + \" \" + game.i18n.localize(\"AP\")\n    }\n}",
-          "id": "FT9ngGg2C68sBxzc"
+          "FT9ngGg2C68sBxzc": {
+            "id": "FT9ngGg2C68sBxzc",
+            "label": "Strzał Przebijający",
+            "script": "if (args.opposedTest.attackerTest.weapon.attackType == \"ranged\") {\n    let applyAP = (args.damageType == game.wfrp4e.config.DAMAGE_TYPE.IGNORE_TB || args.damageType == game.wfrp4e.config.DAMAGE_TYPE.NORMAL);\n    let AP = args.AP;\n    if (applyAP) {\n        newUsed = Math.max(AP.used - this.item.Advances, 0);\n        args.totalWoundLoss += (AP.used - newUsed);\n        let apIndex = args.messageElements.findIndex(i => i.includes(game.i18n.localize(\"AP\")))\n        args.messageElements[apIndex] = newUsed + \"/\" + AP.value + \" \" + game.i18n.localize(\"AP\")\n    }\n}"
+          }
         }
       ],
       "tests": null,
@@ -1226,9 +1300,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.QsrXxGZiHjth7RMg",
       "effects": [
         {
-          "label": "Błyskotliwość",
-          "script": null,
-          "id": "sx7NGIdCYniQHaHi"
+          "sx7NGIdCYniQHaHi": {
+            "id": "sx7NGIdCYniQHaHi",
+            "label": "Błyskotliwość",
+            "script": null
+          }
         }
       ],
       "tests": null,
@@ -1249,9 +1325,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.qZ4cFy6z482ZONuA",
       "effects": [
         {
-          "label": "Tragarz",
-          "script": "args.actor.status.encumbrance.max += 2;",
-          "id": "JGnq108l9XA1xAWM"
+          "JGnq108l9XA1xAWM": {
+            "id": "JGnq108l9XA1xAWM",
+            "label": "Tragarz",
+            "script": "args.actor.status.encumbrance.max += 2;"
+          }
         }
       ],
       "tests": "Siły podczas podnoszenia",
@@ -1264,9 +1342,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.r180vP86SlwyJc8W",
       "effects": [
         {
-          "label": "Przestępca",
-          "script": "console.log(args)",
-          "id": "tS0NjO6ujjQH6sV9"
+          "tS0NjO6ujjQH6sV9": {
+            "id": "tS0NjO6ujjQH6sV9",
+            "label": "Przestępca",
+            "script": "console.log(args)"
+          }
         }
       ],
       "tests": null,
@@ -1287,9 +1367,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.RmY0CUjiFYZ3GEKY",
       "effects": [
         {
-          "label": "Niezwykle Odporny",
-          "script": null,
-          "id": "vntOVrHSurqI8lbG"
+          "vntOVrHSurqI8lbG": {
+            "id": "vntOVrHSurqI8lbG",
+            "label": "Niezwykle Odporny",
+            "script": null
+          }
         }
       ],
       "tests": null,
@@ -1302,9 +1384,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.RWJrupj9seau0w31",
       "effects": [
         {
-          "label": "Morderczy Atak",
-          "script": "if (args.test.result.critical) {\n   args.test.result.damage +=1;\n   args.test.result.additionalDamage += 1;\n}",
-          "id": "3HTxEPAJdtbQaygL"
+          "3HTxEPAJdtbQaygL": {
+            "id": "3HTxEPAJdtbQaygL",
+            "label": "Morderczy Atak",
+            "script": "if (args.test.result.critical) {\n   args.test.result.damage +=1;\n   args.test.result.additionalDamage += 1;\n}"
+          }
         }
       ],
       "tests": null,
@@ -1317,9 +1401,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.RyxOZqcBNZ7Zw721",
       "effects": [
         {
-          "label": "Święta Nienawiść",
-          "script": "if (args.item.type == \"prayer\" && (args.item.damage.value || args.item.damage.dice)) {\n    args.item.damage.value += \"+1\";\n}",
-          "id": "3f87V2dvHVJTzwC7"
+          "3f87V2dvHVJTzwC7": {
+            "id": "3f87V2dvHVJTzwC7",
+            "label": "Święta Nienawiść",
+            "script": "if (args.item.type == \"prayer\" && (args.item.damage.value || args.item.damage.dice)) {\n    args.item.damage.value += \"+1\";\n}"
+          }
         }
       ],
       "tests": null,
@@ -1388,9 +1474,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.tX9R9rSYm2YyEnOK",
       "effects": [
         {
-          "label": "Skrócenie Dystansu",
-          "script": "if (args.type == \"weapon\" && this.actor.hasSystemEffect(\"infighting\")) {\n     args.prefillModifiers.modifier += 10;\n}",
-          "id": "Eu8Ajiixpb7rdqVW"
+          "Eu8Ajiixpb7rdqVW": {
+            "id": "Eu8Ajiixpb7rdqVW",
+            "label": "Skrócenie Dystansu",
+            "script": "if (args.type == \"weapon\" && this.actor.hasSystemEffect(\"infighting\")) {\n     args.prefillModifiers.modifier += 10;\n}"
+          }
         }
       ],
       "tests": "Podczas wchodzenia w zasięg broni przeciwnika i w walce ",
@@ -1403,9 +1491,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.tXKX29QZBdHmyMc7",
       "effects": [
         {
-          "label": "Bitewny Refleks",
-          "script": "let initiativeSetting = game.settings.get(\"wfrp4e\", \"initiativeRule\");\n\nswitch (initiativeSetting) {\n  case \"default\":\n    args.initiative += \"+10\"\n    break;\n\n  case \"sl\":\n    args.initiative += \"+1\"\n    break;\n\n  case \"d10Init\":\n    args.initiative += \"+10\"\n    break;\n\n  case \"d10InitAgi\":\n    args.initiative += \"+1\"\n    break;\n}",
-          "id": "7i8RGItRAF5GLESP"
+          "7i8RGItRAF5GLESP": {
+            "id": "7i8RGItRAF5GLESP",
+            "label": "Bitewny Refleks",
+            "script": "let initiativeSetting = game.settings.get(\"wfrp4e\", \"initiativeRule\");\n\nswitch (initiativeSetting) {\n  case \"default\":\n    args.initiative += \"+10\"\n    break;\n\n  case \"sl\":\n    args.initiative += \"+1\"\n    break;\n\n  case \"d10Init\":\n    args.initiative += \"+10\"\n    break;\n\n  case \"d10InitAgi\":\n    args.initiative += \"+1\"\n    break;\n}"
+          }
         }
       ],
       "tests": null,
@@ -1434,9 +1524,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.uRvOg8AnCcP2ufx8",
       "effects": [
         {
-          "label": "Nieugięty",
-          "script": "if (args.test.result.charging) {\n   args.test.result.damage += 1;\n   args.test.result.additionalDamage += 1;\n}",
-          "id": "CTK46A6miFIRTbVG"
+          "CTK46A6miFIRTbVG": {
+            "id": "CTK46A6miFIRTbVG",
+            "label": "Nieugięty",
+            "script": "if (args.test.result.charging) {\n   args.test.result.damage += 1;\n   args.test.result.additionalDamage += 1;\n}"
+          }
         }
       ],
       "tests": null,
@@ -1497,9 +1589,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.wBhPFggGqIXwbx1r",
       "effects": [
         {
-          "label": "Ulicznik",
-          "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.StealthUrban\")) {\n    args.test.preData.canReverse = true;\n}",
-          "id": "kS7RdyolGOxATaC3"
+          "kS7RdyolGOxATaC3": {
+            "id": "kS7RdyolGOxATaC3",
+            "label": "Ulicznik",
+            "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.StealthUrban\")) {\n    args.test.preData.canReverse = true;\n}"
+          }
         }
       ],
       "tests": "Skradanie (Miasto)",
@@ -1528,9 +1622,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.wNvPXAhlKABl6hpk",
       "effects": [
         {
-          "label": "Czysta Dusza",
-          "script": "args.actor.status.corruption.max += 1;",
-          "id": "2COWvsyLyfHXDcJJ"
+          "2COWvsyLyfHXDcJJ": {
+            "id": "2COWvsyLyfHXDcJJ",
+            "label": "Czysta Dusza",
+            "script": "args.actor.status.corruption.max += 1;"
+          }
         }
       ],
       "tests": null,
@@ -1591,9 +1687,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.XIcDsaW4D8wScezw",
       "effects": [
         {
-          "label": "Celny Strzał",
-          "script": "args.actor.flags.rangedDamageIncrease += 1;",
-          "id": "ors3yseo6f4uQCgq"
+          "ors3yseo6f4uQCgq": {
+            "id": "ors3yseo6f4uQCgq",
+            "label": "Celny Strzał",
+            "script": "args.actor.flags.rangedDamageIncrease += 1;"
+          }
         }
       ],
       "tests": null,
@@ -1622,9 +1720,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.xx8SgdWYEjKct7ym",
       "effects": [
         {
-          "label": "Nieubłagany",
-          "script": "args.effect.flags.wfrp4e.value -= 1;",
-          "id": "O6qLwcpRh7LjEm4o"
+          "O6qLwcpRh7LjEm4o": {
+            "id": "O6qLwcpRh7LjEm4o",
+            "label": "Nieubłagany",
+            "script": "args.effect.flags.wfrp4e.value -= 1;"
+          }
         }
       ],
       "tests": null,
@@ -1661,9 +1761,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.Zf0vk2rjllpDh0Ua",
       "effects": [
         {
-          "label": "Bardzo Silny",
-          "script": null,
-          "id": "4dEzF6K4pP539zRF"
+          "4dEzF6K4pP539zRF": {
+            "id": "4dEzF6K4pP539zRF",
+            "label": "Bardzo Silny",
+            "script": null
+          }
         }
       ],
       "tests": null,
@@ -1676,9 +1778,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.zGQ0ShUTSlUvVtWh",
       "effects": [
         {
-          "label": "Urodzony Wojownik",
-          "script": null,
-          "id": "yjOMm9SFJOK8QBvQ"
+          "yjOMm9SFJOK8QBvQ": {
+            "id": "yjOMm9SFJOK8QBvQ",
+            "label": "Urodzony Wojownik",
+            "script": null
+          }
         }
       ],
       "tests": null,
@@ -1691,9 +1795,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.zImcTgEl2XNnbu5W",
       "effects": [
         {
-          "label": "Twardziel",
-          "script": "args.multiplier.tb += 1;",
-          "id": "REeG0AV5Sm4fTAIJ"
+          "REeG0AV5Sm4fTAIJ": {
+            "id": "REeG0AV5Sm4fTAIJ",
+            "label": "Twardziel",
+            "script": "args.multiplier.tb += 1;"
+          }
         }
       ],
       "tests": null,
@@ -1706,9 +1812,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.zv3IyoU2wkPZu8pD",
       "effects": [
         {
-          "label": "Mól Książkowy",
-          "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Research\")) {\n    args.test.preData.canReverse = true;\n}",
-          "id": "LKDNluFVNLBNUH4N"
+          "LKDNluFVNLBNUH4N": {
+            "id": "LKDNluFVNLBNUH4N",
+            "label": "Mól Książkowy",
+            "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Research\")) {\n    args.test.preData.canReverse = true;\n}"
+          }
         }
       ],
       "tests": "Badania Naukowe",
@@ -1721,9 +1829,11 @@
       "sourceId": "Compendium.wfrp4e-core.talents.ZWcTbeK8i9vKph2a",
       "effects": [
         {
-          "label": "Krasomówstwo",
-          "script": null,
-          "id": "6m85TVcbkk2geHrE"
+          "6m85TVcbkk2geHrE": {
+            "id": "6m85TVcbkk2geHrE",
+            "label": "Krasomówstwo",
+            "script": null
+          }
         }
       ],
       "tests": null,

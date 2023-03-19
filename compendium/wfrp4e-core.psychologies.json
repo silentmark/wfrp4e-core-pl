@@ -20,9 +20,11 @@
       "sourceId": "Compendium.wfrp4e-core.psychologies.5hH73j2NgPdsLCZN",
       "effects": [
         {
-          "label": "Nienawiść",
-          "script": null,
-          "id": "6QhtnGcV5T0JXQZN"
+          "6QhtnGcV5T0JXQZN": {
+            "id": "6QhtnGcV5T0JXQZN",
+            "label": "Nienawiść",
+            "script": null
+          }
         }
       ]
     },
@@ -33,9 +35,11 @@
       "sourceId": "Compendium.wfrp4e-core.psychologies.DrNUTPeodEgpWTnT",
       "effects": [
         {
-          "label": "Szał Bojowy",
-          "script": "args.actor.characteristics.s.bonus += 1;\nargs.actor.characteristics.s.calculationBonusModifier -= 1;",
-          "id": "fChUE7dauqBKrKWx"
+          "fChUE7dauqBKrKWx": {
+            "id": "fChUE7dauqBKrKWx",
+            "label": "Szał Bojowy",
+            "script": "args.actor.characteristics.s.bonus += 1;\nargs.actor.characteristics.s.calculationBonusModifier -= 1;"
+          }
         }
       ]
     },
@@ -58,9 +62,11 @@
       "sourceId": "Compendium.wfrp4e-core.psychologies.jbQDTxc4QNZDLaXm",
       "effects": [
         {
-          "label": "Miłość",
-          "script": null,
-          "id": "R2HbCmmf2tsHfeM2"
+          "R2HbCmmf2tsHfeM2": {
+            "id": "R2HbCmmf2tsHfeM2",
+            "label": "Miłość",
+            "script": null
+          }
         }
       ]
     },

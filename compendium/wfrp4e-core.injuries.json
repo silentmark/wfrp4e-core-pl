@@ -17,17 +17,22 @@
       "sourceId": "Compendium.wfrp4e-core.injuries.2iult41Jehz0F1O8",
       "effects": [
         {
-          "label": "Złamana Noga",
-          "script": null,
-          "id": "tZayAMRUW6AVaa12"
+          "tZayAMRUW6AVaa12": {
+            "id": "tZayAMRUW6AVaa12",
+            "label": "Złamana Noga",
+            "script": null
+          }
         },
         {
-          "label": "Kara do Poruszania się",
-          "script": "args.actor.details.move.value /= 2;",
-          "id": "ZwCU28eoOKqibVfu"
+          "ZwCU28eoOKqibVfu": {
+            "id": "ZwCU28eoOKqibVfu",
+            "label": "Kara do Poruszania się",
+            "script": "args.actor.details.move.value /= 2;"
+          }
         }
       ],
-      "penalty": "-20 do testów związanych z ruchem, nie może unikać, połowa szybkości"
+      "penalty": "-20 do testów związanych z ruchem, nie może unikać, połowa szybkości",
+      "location": "Noga"
     },
     {
       "id": "3S4OYOZLauXctmev",
@@ -36,17 +41,22 @@
       "sourceId": "Compendium.wfrp4e-core.injuries.3S4OYOZLauXctmev",
       "effects": [
         {
-          "label": "Naderwany Mięsień Nogi",
-          "script": null,
-          "id": "e5BPTZkHGMJuDX2p"
+          "e5BPTZkHGMJuDX2p": {
+            "id": "e5BPTZkHGMJuDX2p",
+            "label": "Naderwany Mięsień Nogi",
+            "script": null
+          }
         },
         {
-          "label": "Kara do Poruszania się",
-          "script": "args.actor.details.move.value /= 2;",
-          "id": "t1Anp3f9yR4IJqpR"
+          "t1Anp3f9yR4IJqpR": {
+            "id": "t1Anp3f9yR4IJqpR",
+            "label": "Kara do Poruszania się",
+            "script": "args.actor.details.move.value /= 2;"
+          }
         }
       ],
-      "penalty": null
+      "penalty": null,
+      "location": "Noga"
     },
     {
       "id": "4lj1ik958mbgAlaF",
@@ -55,12 +65,15 @@
       "sourceId": "Compendium.wfrp4e-core.injuries.4lj1ik958mbgAlaF",
       "effects": [
         {
-          "label": "Złamana Ręka",
-          "script": null,
-          "id": "s7ir53mI80aA1FGh"
+          "s7ir53mI80aA1FGh": {
+            "id": "s7ir53mI80aA1FGh",
+            "label": "Złamana Ręka",
+            "script": null
+          }
         }
       ],
-      "penalty": "-20 do testów wymagających obu rąk"
+      "penalty": "-20 do testów wymagających obu rąk",
+      "location": "Ręka"
     },
     {
       "id": "7mCcI3q7hgWcmbBU",
@@ -69,17 +82,22 @@
       "sourceId": "Compendium.wfrp4e-core.injuries.7mCcI3q7hgWcmbBU",
       "effects": [
         {
-          "label": "Kara do Poruszania się",
-          "script": "args.actor.details.move.value /= 2;",
-          "id": "DYDPqHfkDkbRBwqH"
+          "DYDPqHfkDkbRBwqH": {
+            "id": "DYDPqHfkDkbRBwqH",
+            "label": "Kara do Poruszania się",
+            "script": "args.actor.details.move.value /= 2;"
+          }
         },
         {
-          "label": "Złamana Noga",
-          "script": null,
-          "id": "j9pWVPJtatDruv0Y"
+          "j9pWVPJtatDruv0Y": {
+            "id": "j9pWVPJtatDruv0Y",
+            "label": "Złamana Noga",
+            "script": null
+          }
         }
       ],
-      "penalty": null
+      "penalty": null,
+      "location": "Noga"
     },
     {
       "id": "7rBhIRo96Mydo0Cv",
@@ -88,12 +106,15 @@
       "sourceId": "Compendium.wfrp4e-core.injuries.7rBhIRo96Mydo0Cv",
       "effects": [
         {
-          "label": "Naderwany Mięsień Brzucha",
-          "script": null,
-          "id": "Aans92KGaO90qXGV"
+          "Aans92KGaO90qXGV": {
+            "id": "Aans92KGaO90qXGV",
+            "label": "Naderwany Mięsień Brzucha",
+            "script": null
+          }
         }
       ],
-      "penalty": "-10 do testów wymagających ruchu tułowiem"
+      "penalty": "-10 do testów wymagających ruchu tułowiem",
+      "location": "Korpus"
     },
     {
       "id": "8piWcBKFlQ2J1E3A",
@@ -102,17 +123,22 @@
       "sourceId": "Compendium.wfrp4e-core.injuries.8piWcBKFlQ2J1E3A",
       "effects": [
         {
-          "label": "Utracone Ucho",
-          "script": "if (args.type == \"characteristic\" && args.item == \"fel\"){\n  args.prefillModifiers.modifier -= 5;\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"fel\") {\n    args.prefillModifiers.modifier -= 5\n  }\n}",
-          "id": "i6SjnYZ0pNeN8SNZ"
+          "i6SjnYZ0pNeN8SNZ": {
+            "id": "i6SjnYZ0pNeN8SNZ",
+            "label": "Utracone Ucho",
+            "script": "if (args.type == \"characteristic\" && args.item == \"fel\"){\n  args.prefillModifiers.modifier -= 5;\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"fel\") {\n    args.prefillModifiers.modifier -= 5\n  }\n}"
+          }
         },
         {
-          "label": "Utracone Oboje Uszu",
-          "script": null,
-          "id": "NjLgGWim2CMWdOL4"
+          "NjLgGWim2CMWdOL4": {
+            "id": "NjLgGWim2CMWdOL4",
+            "label": "Utracone Oboje Uszu",
+            "script": null
+          }
         }
       ],
-      "penalty": null
+      "penalty": null,
+      "location": "Ucho"
     },
     {
       "id": "EaqlLRQigwnsEAXX",
@@ -121,17 +147,22 @@
       "sourceId": "Compendium.wfrp4e-core.injuries.EaqlLRQigwnsEAXX",
       "effects": [
         {
-          "label": "Szybkość Zmniejszona o Połowę",
-          "script": "args.actor.details.move.value /= 2;",
-          "id": "l5W27AsBX8jj1T80"
+          "l5W27AsBX8jj1T80": {
+            "id": "l5W27AsBX8jj1T80",
+            "label": "Szybkość Zmniejszona o Połowę",
+            "script": "args.actor.details.move.value /= 2;"
+          }
         },
         {
-          "label": "Złamane Żebra",
-          "script": null,
-          "id": "qIkF1AGNf4XxzaFv"
+          "qIkF1AGNf4XxzaFv": {
+            "id": "qIkF1AGNf4XxzaFv",
+            "label": "Złamane Żebra",
+            "script": null
+          }
         }
       ],
-      "penalty": "-30 do Siły i Zręczności, połowa Szybkości."
+      "penalty": "-30 do Siły i Zręczności, połowa Szybkości.",
+      "location": "Korpus"
     },
     {
       "id": "eWPN3CV2Eddwz8aM",
@@ -140,19 +171,23 @@
       "sourceId": "Compendium.wfrp4e-core.injuries.eWPN3CV2Eddwz8aM",
       "effects": [
         {
-          "label": "Naderwany Mięsień Brzucha",
-          "script": null,
-          "id": "VczyyG2FDfvOQflT"
+          "VczyyG2FDfvOQflT": {
+            "id": "VczyyG2FDfvOQflT",
+            "label": "Naderwany Mięsień Brzucha",
+            "script": null
+          }
         }
       ],
-      "penalty": "-20 do testów wymagających ruch tułowiem"
+      "penalty": "-20 do testów wymagających ruch tułowiem",
+      "location": "Korpus"
     },
     {
       "id": "fBcZhOBn8IpoVqQ1",
       "name": "Amputacja Zębów",
       "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako Amputacja (trudność), musi wykonać Test Odporności (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan Powalenie. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom Oszołomienia. W przypadku Krytycznej Porażki (-4 PS) następuje Unconscious&nbsp;condition</p>\n<p>Wszystkie Amputacje wymagają leczenia Chirurgicznego, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Więcej o Chirurgii przeczytasz w księdze zasad na stronie 181.</p>\n<p><strong>Zęby:&nbsp;</strong> Utrata zębów może oszpecić postać, a poza tym znacznie utrudnia spożywanie posiłków. Za każde 2 utracone zęby Ogłada trwale spada o 1 punkt. Ponadto utrata ponad połowy zębów (ludzie: 16, elfy: 18, niziołki i krasnoludy: 20) sprawia, że jedzenie staje się bardzo uciążliwe, zajmuje dwa razy więcej czasu, a niektóre posiłki są niemożliwe do zjedzenia - jest to przede wszystkim kwestia odgrywania postaci i opisywania działań.</p>",
       "sourceId": "Compendium.wfrp4e-core.injuries.fBcZhOBn8IpoVqQ1",
-      "penalty": null
+      "penalty": null,
+      "location": "Zęby"
     },
     {
       "id": "GlShFJF2TpsNh1FX",
@@ -161,12 +196,15 @@
       "sourceId": "Compendium.wfrp4e-core.injuries.GlShFJF2TpsNh1FX",
       "effects": [
         {
-          "label": "Naderwany Mięsień Ręki",
-          "script": null,
-          "id": "9rO0RdQJqsNwv9lv"
+          "9rO0RdQJqsNwv9lv": {
+            "id": "9rO0RdQJqsNwv9lv",
+            "label": "Naderwany Mięsień Ręki",
+            "script": null
+          }
         }
       ],
-      "penalty": "-10 do testów dotyczących danej ręki"
+      "penalty": "-10 do testów dotyczących danej ręki",
+      "location": "Ręka"
     },
     {
       "id": "gz2xy41OSVZ8YBgI",
@@ -175,17 +213,22 @@
       "sourceId": "Compendium.wfrp4e-core.injuries.gz2xy41OSVZ8YBgI",
       "effects": [
         {
-          "label": "Amputacja Stopy",
-          "script": null,
-          "id": "QHpPBISp2DCIRZp7"
+          "QHpPBISp2DCIRZp7": {
+            "id": "QHpPBISp2DCIRZp7",
+            "label": "Amputacja Stopy",
+            "script": null
+          }
         },
         {
-          "label": "Szybkość Zmniejszona o Połowę",
-          "script": "args.actor.details.move.value /= 2;",
-          "id": "vFwI36wK9QnfgLGG"
+          "vFwI36wK9QnfgLGG": {
+            "id": "vFwI36wK9QnfgLGG",
+            "label": "Szybkość Zmniejszona o Połowę",
+            "script": "args.actor.details.move.value /= 2;"
+          }
         }
       ],
-      "penalty": "-20 do testów związanych z ruchem, połowa szybkości"
+      "penalty": "-20 do testów związanych z ruchem, połowa szybkości",
+      "location": "Stopa"
     },
     {
       "id": "hCadFsTRvLN9faaY",
@@ -194,12 +237,15 @@
       "sourceId": "Compendium.wfrp4e-core.injuries.hCadFsTRvLN9faaY",
       "effects": [
         {
-          "label": "Pęknięta Czaszka",
-          "script": "if (args.type == \"cast\" || (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"Language\")))) {\n   args.prefillModifiers.modifier -= 30;\n}",
-          "id": "WLwNpLVQX79yOsdJ"
+          "WLwNpLVQX79yOsdJ": {
+            "id": "WLwNpLVQX79yOsdJ",
+            "label": "Pęknięta Czaszka",
+            "script": "if (args.type == \"cast\" || (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"Language\")))) {\n   args.prefillModifiers.modifier -= 30;\n}"
+          }
         }
       ],
-      "penalty": null
+      "penalty": null,
+      "location": "Głowa"
     },
     {
       "id": "k00PimCWkff11IA0",
@@ -208,17 +254,22 @@
       "sourceId": "Compendium.wfrp4e-core.injuries.k00PimCWkff11IA0",
       "effects": [
         {
-          "label": "Szybkość Zmniejszona o Połowę",
-          "script": "args.actor.details.move.value /= 2;",
-          "id": "p9uFm2XY1RGrjStF"
+          "p9uFm2XY1RGrjStF": {
+            "id": "p9uFm2XY1RGrjStF",
+            "label": "Szybkość Zmniejszona o Połowę",
+            "script": "args.actor.details.move.value /= 2;"
+          }
         },
         {
-          "label": "Amputacja Nogi",
-          "script": null,
-          "id": "wkJy3QCy8odqGvjm"
+          "wkJy3QCy8odqGvjm": {
+            "id": "wkJy3QCy8odqGvjm",
+            "label": "Amputacja Nogi",
+            "script": null
+          }
         }
       ],
-      "penalty": "-20 do testów związanych z ruchem, nie może unikać, połowa szybkości"
+      "penalty": "-20 do testów związanych z ruchem, nie może unikać, połowa szybkości",
+      "location": "Noga"
     },
     {
       "id": "MnMZv7ZXoRqoH9dS",
@@ -227,12 +278,15 @@
       "sourceId": "Compendium.wfrp4e-core.injuries.MnMZv7ZXoRqoH9dS",
       "effects": [
         {
-          "label": "Amputacja Ramienia",
-          "script": null,
-          "id": "qPV4jIDGN9onOAYV"
+          "qPV4jIDGN9onOAYV": {
+            "id": "qPV4jIDGN9onOAYV",
+            "label": "Amputacja Ramienia",
+            "script": null
+          }
         }
       ],
-      "penalty": "-20 do testów wymagających obu rąk"
+      "penalty": "-20 do testów wymagających obu rąk",
+      "location": "Ręka"
     },
     {
       "id": "nbhn2wX35b7Jrcbg",
@@ -241,12 +295,15 @@
       "sourceId": "Compendium.wfrp4e-core.injuries.nbhn2wX35b7Jrcbg",
       "effects": [
         {
-          "label": "Pęknięta Czaszka",
-          "script": "if (args.type == \"cast\" || (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"Language\")))) {\n   args.prefillModifiers.modifier -= 30;\n}",
-          "id": "WtbK1vMvsJYKBbWj"
+          "WtbK1vMvsJYKBbWj": {
+            "id": "WtbK1vMvsJYKBbWj",
+            "label": "Pęknięta Czaszka",
+            "script": "if (args.type == \"cast\" || (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"Language\")))) {\n   args.prefillModifiers.modifier -= 30;\n}"
+          }
         }
       ],
-      "penalty": "-30 do wszystkich testów języka"
+      "penalty": "-30 do wszystkich testów języka",
+      "location": "Głowa"
     },
     {
       "id": "nF5z1OEhpi4t6a6S",
@@ -255,17 +312,22 @@
       "sourceId": "Compendium.wfrp4e-core.injuries.nF5z1OEhpi4t6a6S",
       "effects": [
         {
-          "label": "Szybkość Zmniejszona o Połowę",
-          "script": "args.actor.details.move.value /= 2;",
-          "id": "73XsH9pZ8Qymz0kN"
+          "73XsH9pZ8Qymz0kN": {
+            "id": "73XsH9pZ8Qymz0kN",
+            "label": "Szybkość Zmniejszona o Połowę",
+            "script": "args.actor.details.move.value /= 2;"
+          }
         },
         {
-          "label": "Naderwany Mięsień Nogi",
-          "script": null,
-          "id": "ErAJc8kPnAwubY1m"
+          "ErAJc8kPnAwubY1m": {
+            "id": "ErAJc8kPnAwubY1m",
+            "label": "Naderwany Mięsień Nogi",
+            "script": null
+          }
         }
       ],
-      "penalty": "-10 do testów dotyczących danej nogi"
+      "penalty": "-10 do testów dotyczących danej nogi",
+      "location": "Noga"
     },
     {
       "id": "QluSTTTq3viHJJUh",
@@ -274,17 +336,22 @@
       "sourceId": "Compendium.wfrp4e-core.injuries.QluSTTTq3viHJJUh",
       "effects": [
         {
-          "label": "Kara do Poruszania się",
-          "script": "args.actor.details.move.value /= 2;",
-          "id": "CPG7bDRJSqCHaCni"
+          "CPG7bDRJSqCHaCni": {
+            "id": "CPG7bDRJSqCHaCni",
+            "label": "Kara do Poruszania się",
+            "script": "args.actor.details.move.value /= 2;"
+          }
         },
         {
-          "label": "Złamane Żebra",
-          "script": null,
-          "id": "YNacfIHrXFATBGcL"
+          "YNacfIHrXFATBGcL": {
+            "id": "YNacfIHrXFATBGcL",
+            "label": "Złamane Żebra",
+            "script": null
+          }
         }
       ],
-      "penalty": "-30 do Siły i Zręczności, połowa Szybkości."
+      "penalty": "-30 do Siły i Zręczności, połowa Szybkości.",
+      "location": "Korpus"
     },
     {
       "id": "qn4ZpvTQIX4rcJDl",
@@ -293,12 +360,15 @@
       "sourceId": "Compendium.wfrp4e-core.injuries.qn4ZpvTQIX4rcJDl",
       "effects": [
         {
-          "label": "Naderwany Mięsień Ręki",
-          "script": null,
-          "id": "GUbysJIeA44LNOIq"
+          "GUbysJIeA44LNOIq": {
+            "id": "GUbysJIeA44LNOIq",
+            "label": "Naderwany Mięsień Ręki",
+            "script": null
+          }
         }
       ],
-      "penalty": "-20 do testów dotyczących danej ręki"
+      "penalty": "-20 do testów dotyczących danej ręki",
+      "location": "Ręka"
     },
     {
       "id": "RB2sN09lX3m7dkOg",
@@ -307,19 +377,23 @@
       "sourceId": "Compendium.wfrp4e-core.injuries.RB2sN09lX3m7dkOg",
       "effects": [
         {
-          "label": "Naderwany Mięsień Szyi",
-          "script": null,
-          "id": "q2drpcrYvUHjZBwg"
+          "q2drpcrYvUHjZBwg": {
+            "id": "q2drpcrYvUHjZBwg",
+            "label": "Naderwany Mięsień Szyi",
+            "script": null
+          }
         }
       ],
-      "penalty": "-20 do testów wymagających ruchu głowy"
+      "penalty": "-20 do testów wymagających ruchu głowy",
+      "location": "Głowa"
     },
     {
       "id": "rkJA1DlK51QuRlJy",
       "name": "Amputacja Języka",
       "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako Amputacja (trudność), musi wykonać Test Odporności (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan Powalenie. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom Oszołomienia. W przypadku Krytycznej Porażki (-4 PS) następuje Unconscious&nbsp;condition</p>\n<p>Unconscious&nbsp;condition</p>\n<p><strong>Język: </strong>Utrata języka sprawia, że postać może jedynie pomrukiwać i chrząkać, a jej komunikacja ogranicza się do używania języka migowego. Postać automatycznie odnosi porażkę we wszystkich Testach Języków, które wymagają mówienia.</p>",
       "sourceId": "Compendium.wfrp4e-core.injuries.rkJA1DlK51QuRlJy",
-      "penalty": "Automatyczna porażka dla testów języka"
+      "penalty": "Automatyczna porażka dla testów języka",
+      "location": "Język"
     },
     {
       "id": "rlDZZTj5PXjuRXa2",
@@ -328,12 +402,15 @@
       "sourceId": "Compendium.wfrp4e-core.injuries.rlDZZTj5PXjuRXa2",
       "effects": [
         {
-          "label": "Złamana Ręka",
-          "script": null,
-          "id": "m1KbLc6l2LK76961"
+          "m1KbLc6l2LK76961": {
+            "id": "m1KbLc6l2LK76961",
+            "label": "Złamana Ręka",
+            "script": null
+          }
         }
       ],
-      "penalty": "-20 do testów wymagających obu rąk"
+      "penalty": "-20 do testów wymagających obu rąk",
+      "location": "Ręka"
     },
     {
       "id": "SpPRZZRHxly7uo2G",
@@ -342,12 +419,15 @@
       "sourceId": "Compendium.wfrp4e-core.injuries.SpPRZZRHxly7uo2G",
       "effects": [
         {
-          "label": "Amputacja Nosa",
-          "script": null,
-          "id": "OTeQYlJcacd8ID4i"
+          "OTeQYlJcacd8ID4i": {
+            "id": "OTeQYlJcacd8ID4i",
+            "label": "Amputacja Nosa",
+            "script": null
+          }
         }
       ],
-      "penalty": "-20 do Ogłady, -30 do Testów wymagających węchu"
+      "penalty": "-20 do Ogłady, -30 do Testów wymagających węchu",
+      "location": "Nos"
     },
     {
       "id": "SYjWiKDzMS6CtROJ",
@@ -356,12 +436,15 @@
       "sourceId": "Compendium.wfrp4e-core.injuries.SYjWiKDzMS6CtROJ",
       "effects": [
         {
-          "label": "Utracony Palec",
-          "script": null,
-          "id": "DaOXNCrHEMsOleGx"
+          "DaOXNCrHEMsOleGx": {
+            "id": "DaOXNCrHEMsOleGx",
+            "label": "Utracony Palec",
+            "script": null
+          }
         }
       ],
-      "penalty": "-5 do testów wymagających danej ręki"
+      "penalty": "-5 do testów wymagających danej ręki",
+      "location": "Palec"
     },
     {
       "id": "UytN3fDREi3JuKST",
@@ -370,12 +453,15 @@
       "sourceId": "Compendium.wfrp4e-core.injuries.UytN3fDREi3JuKST",
       "effects": [
         {
-          "label": "Naderwany Mięsień Szyi",
-          "script": null,
-          "id": "y2XL7QrWlGI6aloz"
+          "y2XL7QrWlGI6aloz": {
+            "id": "y2XL7QrWlGI6aloz",
+            "label": "Naderwany Mięsień Szyi",
+            "script": null
+          }
         }
       ],
-      "penalty": null
+      "penalty": null,
+      "location": "Głowa"
     },
     {
       "id": "weczkAMPlTjX7lqU",
@@ -384,17 +470,22 @@
       "sourceId": "Compendium.wfrp4e-core.injuries.weczkAMPlTjX7lqU",
       "effects": [
         {
-          "label": "Utracone Oboje Oczu",
-          "script": null,
-          "id": "HK53YUZJx5byXmup"
+          "HK53YUZJx5byXmup": {
+            "id": "HK53YUZJx5byXmup",
+            "label": "Utracone Oboje Oczu",
+            "script": null
+          }
         },
         {
-          "label": "Utracone Oko",
-          "script": "if (args.type == \"characteristic\" && args.item == \"fel\") {\n  args.prefillModifiers.modifier -= 5;\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"fel\") {\n    args.prefillModifiers.modifier -= 5;\n  }\n}",
-          "id": "OBcPvTtXweBfzAaU"
+          "OBcPvTtXweBfzAaU": {
+            "id": "OBcPvTtXweBfzAaU",
+            "label": "Utracone Oko",
+            "script": "if (args.type == \"characteristic\" && args.item == \"fel\") {\n  args.prefillModifiers.modifier -= 5;\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"fel\") {\n    args.prefillModifiers.modifier -= 5;\n  }\n}"
+          }
         }
       ],
-      "penalty": "-5 do Ogłady"
+      "penalty": "-5 do Ogłady",
+      "location": "Oko"
     },
     {
       "id": "ZhMADOqoo0y8Q9bx",
@@ -403,12 +494,15 @@
       "sourceId": "Compendium.wfrp4e-core.injuries.ZhMADOqoo0y8Q9bx",
       "effects": [
         {
-          "label": "Amputacja Palca u nóg",
-          "script": null,
-          "id": "n47pJamskjv7bbXl"
+          "n47pJamskjv7bbXl": {
+            "id": "n47pJamskjv7bbXl",
+            "label": "Amputacja Palca u nóg",
+            "script": null
+          }
         }
       ],
-      "penalty": null
+      "penalty": null,
+      "location": "Palce u nogi"
     },
     {
       "id": "zyocWSzEZEC826NS",
@@ -417,12 +511,15 @@
       "sourceId": "Compendium.wfrp4e-core.injuries.zyocWSzEZEC826NS",
       "effects": [
         {
-          "label": "Amputacja Dłoni",
-          "script": null,
-          "id": "rTIWkLVhHcMduvPJ"
+          "rTIWkLVhHcMduvPJ": {
+            "id": "rTIWkLVhHcMduvPJ",
+            "label": "Amputacja Dłoni",
+            "script": null
+          }
         }
       ],
-      "penalty": "-20 do testów wymagających obu rąk"
+      "penalty": "-20 do testów wymagających obu rąk",
+      "location": "Dłoń"
     }
   ]
 }

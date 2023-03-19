@@ -31,9 +31,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.15ENOMf345S5AL68",
       "effects": [
         {
-          "label": "Siłacz",
-          "script": null,
-          "id": "zMFAc8IX3JMZH9iL"
+          "zMFAc8IX3JMZH9iL": {
+            "id": "zMFAc8IX3JMZH9iL",
+            "label": "Siłacz",
+            "script": null
+          }
         }
       ],
       "specification": null
@@ -59,9 +61,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.3WI8mhTinC8inxyj",
       "effects": [
         {
-          "label": "Przebiegły",
-          "script": null,
-          "id": "psBMxER5fywmsI6p"
+          "psBMxER5fywmsI6p": {
+            "id": "psBMxER5fywmsI6p",
+            "label": "Przebiegły",
+            "script": null
+          }
         }
       ],
       "specification": null
@@ -122,9 +126,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.9MjH4xyVrd3Inzak",
       "effects": [
         {
-          "label": "Szybki",
-          "script": null,
-          "id": "MNEkuGwCbsQ6vdRr"
+          "MNEkuGwCbsQ6vdRr": {
+            "id": "MNEkuGwCbsQ6vdRr",
+            "label": "Szybki",
+            "script": null
+          }
         }
       ],
       "specification": null
@@ -136,9 +142,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.9NROryHer1uXAKwY",
       "effects": [
         {
-          "label": "Elita",
-          "script": null,
-          "id": "ZoDIzpVDZ0uTDCqD"
+          "ZoDIzpVDZ0uTDCqD": {
+            "id": "ZoDIzpVDZ0uTDCqD",
+            "label": "Elita",
+            "script": null
+          }
         }
       ],
       "specification": null
@@ -150,9 +158,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.a8MC97PLzl10WocT",
       "effects": [
         {
-          "label": "Duży",
-          "script": null,
-          "id": "t9ugR6DGlErazKL4"
+          "t9ugR6DGlErazKL4": {
+            "id": "t9ugR6DGlErazKL4",
+            "label": "Duży",
+            "script": null
+          }
         }
       ],
       "specification": null
@@ -206,9 +216,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.Bw6tQyzOhcl7aQ46",
       "effects": [
         {
-          "label": "Sieć",
-          "script": "await args.actor.addCondition(\"entangled\");",
-          "id": "pV0NvELZXtpJJTfi"
+          "pV0NvELZXtpJJTfi": {
+            "id": "pV0NvELZXtpJJTfi",
+            "label": "Sieć",
+            "script": "await args.actor.addCondition(\"entangled\");"
+          }
         }
       ],
       "specification": "#"
@@ -234,9 +246,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.ClOlztW6hH8rslbp",
       "effects": [
         {
-          "label": "Tropiciel",
-          "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\"))) {\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}",
-          "id": "ftGagmf8rj6rq3ir"
+          "ftGagmf8rj6rq3ir": {
+            "id": "ftGagmf8rj6rq3ir",
+            "label": "Tropiciel",
+            "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\"))) {\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
         }
       ],
       "specification": null
@@ -255,14 +269,18 @@
       "sourceId": "Compendium.wfrp4e-core.traits.E2Es82TvBKa7CoDG",
       "effects": [
         {
-          "label": "Bonusy Roju",
-          "script": "args.wounds *= 5;",
-          "id": "FLoUbmMqNQMuJfZx"
+          "FLoUbmMqNQMuJfZx": {
+            "id": "FLoUbmMqNQMuJfZx",
+            "label": "Bonusy Roju",
+            "script": "args.wounds *= 5;"
+          }
         },
         {
-          "label": "Rój",
-          "script": "if (args.type == \"weapon\" && args.item.attackType == \"ranged\") {\n   args.prefillModifiers.modifier += 40;\n}",
-          "id": "tEaxMHcTWod19AVP"
+          "tEaxMHcTWod19AVP": {
+            "id": "tEaxMHcTWod19AVP",
+            "label": "Rój",
+            "script": "if (args.type == \"weapon\" && args.item.attackType == \"ranged\") {\n   args.prefillModifiers.modifier += 40;\n}"
+          }
         }
       ],
       "specification": null
@@ -302,9 +320,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.gFkRm9wS65qe18Xv",
       "effects": [
         {
-          "label": "Jad",
-          "script": "if (args.totalWoundLoss > 0) {\n    await args.actor.addCondition(\"poisoned\");\n}",
-          "id": "cwsT8KWhr0OgtWc1"
+          "cwsT8KWhr0OgtWc1": {
+            "id": "cwsT8KWhr0OgtWc1",
+            "label": "Jad",
+            "script": "if (args.totalWoundLoss > 0) {\n    await args.actor.addCondition(\"poisoned\");\n}"
+          }
         }
       ],
       "specification": "Trudność"
@@ -323,9 +343,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.HbrwGhUl0ZXz4kLA",
       "effects": [
         {
-          "label": "Twardziel",
-          "script": "args.multiplier.tb += 1;",
-          "id": "yrUvulIfrQfAJmkB"
+          "yrUvulIfrQfAJmkB": {
+            "id": "yrUvulIfrQfAJmkB",
+            "label": "Twardziel",
+            "script": "args.multiplier.tb += 1;"
+          }
         }
       ],
       "specification": null
@@ -351,9 +373,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.j6v78dnOOdCB6c3d",
       "effects": [
         {
-          "label": "Skoczny",
-          "script": "this.actor.details.move.run *= 2;",
-          "id": "1XRT8BzRtNWArfau"
+          "1XRT8BzRtNWArfau": {
+            "id": "1XRT8BzRtNWArfau",
+            "label": "Skoczny",
+            "script": "this.actor.details.move.run *= 2;"
+          }
         }
       ],
       "specification": null
@@ -379,9 +403,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.JzeN9MZ0xUDvpE2l",
       "effects": [
         {
-          "label": "Wymiot",
-          "script": "await args.actor.addCondition(\"stunned\");",
-          "id": "4KinCaegUvscrFU9"
+          "4KinCaegUvscrFU9": {
+            "id": "4KinCaegUvscrFU9",
+            "label": "Wymiot",
+            "script": "await args.actor.addCondition(\"stunned\");"
+          }
         }
       ],
       "specification": "+4"
@@ -393,9 +419,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.k9539MBTFplxsysT",
       "effects": [
         {
-          "label": "Twardy",
-          "script": null,
-          "id": "X8KrugiMugs70khd"
+          "X8KrugiMugs70khd": {
+            "id": "X8KrugiMugs70khd",
+            "label": "Twardy",
+            "script": null
+          }
         }
       ],
       "specification": null
@@ -414,9 +442,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.kJNAY1YRaCy9IgmT",
       "effects": [
         {
-          "label": "Groza",
-          "script": "let value = parseInt(this.item.specification.value);\nlet name = this.actor.prototypeToken.name;\nif (game.user.isGM && game.user.targets.size) {\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name);\n  })\n  game.user.updateTokenTargets([]);\n}\nelse {\n  game.wfrp4e.utility.postTerror(value, name);\n}",
-          "id": "xTL3QAampKjHdKVh"
+          "xTL3QAampKjHdKVh": {
+            "id": "xTL3QAampKjHdKVh",
+            "label": "Groza",
+            "script": "let value = parseInt(this.item.specification.value);\nlet name = this.actor.prototypeToken.name;\nif (game.user.isGM && game.user.targets.size) {\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name);\n  })\n  game.user.updateTokenTargets([]);\n}\nelse {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
+          }
         }
       ],
       "specification": "Wartość"
@@ -428,9 +458,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.KynNUYYKzTMeHrKl",
       "effects": [
         {
-          "label": "Dusiciel",
-          "script": "await args.actor.addCondition(\"entangled\");",
-          "id": "txcmOLjyNoW2BLSu"
+          "txcmOLjyNoW2BLSu": {
+            "id": "txcmOLjyNoW2BLSu",
+            "label": "Dusiciel",
+            "script": "await args.actor.addCondition(\"entangled\");"
+          }
         }
       ],
       "specification": null
@@ -449,9 +481,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.M5QSWOYt2Rbv2yxW",
       "effects": [
         {
-          "label": "Kwasowa Krew",
-          "script": "let content = `<b>${this.effect.label}</b>: All targets engaged with <b>${this.actor.prototypeToken.name}</b> take [[/r 1d10]] Damage, modified by TB and AP.`;\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}});",
-          "id": "mzNcVAruDOTiCGhS"
+          "mzNcVAruDOTiCGhS": {
+            "id": "mzNcVAruDOTiCGhS",
+            "label": "Kwasowa Krew",
+            "script": "let content = `<b>${this.effect.label}</b>: All targets engaged with <b>${this.actor.prototypeToken.name}</b> take [[/r 1d10]] Damage, modified by TB and AP.`;\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}});"
+          }
         }
       ],
       "specification": null
@@ -463,9 +497,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.mCh1KK9jomwFZcLB",
       "effects": [
         {
-          "label": "Zimnokrwisty",
-          "script": "if (args.test.characteristicKey == \"wp\") {\n   args.test.preData.canReverse = true;\n}",
-          "id": "cq8SZaHuRYPHsnQF"
+          "cq8SZaHuRYPHsnQF": {
+            "id": "cq8SZaHuRYPHsnQF",
+            "label": "Zimnokrwisty",
+            "script": "if (args.test.characteristicKey == \"wp\") {\n   args.test.preData.canReverse = true;\n}"
+          }
         }
       ],
       "specification": null
@@ -484,9 +520,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.MVI0lXcg6vvtooAF",
       "effects": [
         {
-          "label": "Dekoncentrujący",
-          "script": "args.prefillModifiers.modifier -= 20;",
-          "id": "et9TgrjWHZYQI7OJ"
+          "et9TgrjWHZYQI7OJ": {
+            "id": "et9TgrjWHZYQI7OJ",
+            "label": "Dekoncentrujący",
+            "script": "args.prefillModifiers.modifier -= 20;"
+          }
         }
       ],
       "specification": null
@@ -498,9 +536,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.Ni4hNAPv3LhTpgMA",
       "effects": [
         {
-          "label": "Sprytny",
-          "script": null,
-          "id": "TsZOr4vxvvQ8UlCy"
+          "TsZOr4vxvvQ8UlCy": {
+            "id": "TsZOr4vxvvQ8UlCy",
+            "label": "Sprytny",
+            "script": null
+          }
         }
       ],
       "specification": null
@@ -512,9 +552,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.OzwDT6kzoLYeeR2d",
       "effects": [
         {
-          "label": "Skryty",
-          "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}",
-          "id": "0AgiLabg8eB4LItu"
+          "0AgiLabg8eB4LItu": {
+            "id": "0AgiLabg8eB4LItu",
+            "label": "Skryty",
+            "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
         }
       ],
       "specification": null
@@ -540,9 +582,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.plVyl4vjS2fX16Rv",
       "effects": [
         {
-          "label": "Upiorne Wycie",
-          "script": "let damage = (await new Roll(\"1d10\").roll()).total;\nawait args.actor.applyBasicDamage(damage, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL});\nawait args.actor.addCondition(\"deafened\", 3)\n\nargs.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute : {difficulty: \"average\" }, context : {failure: game.i18n.localize(\"WFRP4E.EFFECT.CORE.GhostlyHowlGain\"), success : game.i18n.localize(\"WFRP4E.EFFECT.CORE.GhostlyHowlAvoid\")}}).then(async test => {\n   await test.roll();\n   if (test.result.outcome == \"failure\") {\n      await args.actor.addCondition(\"broken\");\n   }\n});",
-          "id": "MNo99hhKFuloCyy8"
+          "MNo99hhKFuloCyy8": {
+            "id": "MNo99hhKFuloCyy8",
+            "label": "Upiorne Wycie",
+            "script": "let damage = (await new Roll(\"1d10\").roll()).total;\nawait args.actor.applyBasicDamage(damage, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL});\nawait args.actor.addCondition(\"deafened\", 3)\n\nargs.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute : {difficulty: \"average\" }, context : {failure: game.i18n.localize(\"WFRP4E.EFFECT.CORE.GhostlyHowlGain\"), success : game.i18n.localize(\"WFRP4E.EFFECT.CORE.GhostlyHowlAvoid\")}}).then(async test => {\n   await test.roll();\n   if (test.result.outcome == \"failure\") {\n      await args.actor.addCondition(\"broken\");\n   }\n});"
+          }
         }
       ],
       "specification": null
@@ -561,9 +605,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.pTorrE0l3VybAbtn",
       "effects": [
         {
-          "label": "Strach",
-          "script": "let value = parseInt(this.item.specification.value);\nlet name = this.actor.prototypeToken.name;\nif (game.user.isGM && game.user.targets.size) {\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  });\n  game.user.updateTokenTargets([]);\n}\nelse {\n  game.wfrp4e.utility.postFear(value, name);\n}",
-          "id": "ODxbsuuS0splmVEN"
+          "ODxbsuuS0splmVEN": {
+            "id": "ODxbsuuS0splmVEN",
+            "label": "Strach",
+            "script": "let value = parseInt(this.item.specification.value);\nlet name = this.actor.prototypeToken.name;\nif (game.user.isGM && game.user.targets.size) {\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  });\n  game.user.updateTokenTargets([]);\n}\nelse {\n  game.wfrp4e.utility.postFear(value, name);\n}"
+          }
         }
       ],
       "specification": "#"
@@ -575,9 +621,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.rOV2s6PQBBrhpMOv",
       "effects": [
         {
-          "label": "Mieszkaniec Lasu",
-          "script": "if (args.type == \"skill\" && (args.item.name == game.i18n.localize(\"NAME.Climb\")  || args.item.name.includes(game.i18n.localize(\"NAME.Stealth\")))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}",
-          "id": "HipPSD61s7Vkcru0"
+          "HipPSD61s7Vkcru0": {
+            "id": "HipPSD61s7Vkcru0",
+            "label": "Mieszkaniec Lasu",
+            "script": "if (args.type == \"skill\" && (args.item.name == game.i18n.localize(\"NAME.Climb\")  || args.item.name.includes(game.i18n.localize(\"NAME.Stealth\")))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
+          }
         }
       ],
       "specification": null
@@ -589,9 +637,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.SfUUdOGjdYpr3KSR",
       "effects": [
         {
-          "label": "Regeneracja",
-          "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")};\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`;\n      if (regen == 10) {\n         chatData.content += `<br>Additionally, they regenerate a Critical Wound.`;\n      }\n   }\n   else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n      }\n   }\n   else {\n      chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}",
-          "id": "0CEu4kmUhYSxWGJZ"
+          "0CEu4kmUhYSxWGJZ": {
+            "id": "0CEu4kmUhYSxWGJZ",
+            "label": "Regeneracja",
+            "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")};\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`;\n      if (regen == 10) {\n         chatData.content += `<br>Additionally, they regenerate a Critical Wound.`;\n      }\n   }\n   else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n      }\n   }\n   else {\n      chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}"
+          }
         }
       ],
       "specification": null
@@ -603,9 +653,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.sJ3yX1kvzu2hgNq5",
       "effects": [
         {
-          "label": "Ziemnowodny",
-          "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Swim\")) {\n    args.prefillModifiers.slBonus += this.actor.characteristics.ag.bonus;\n}",
-          "id": "KZWyDUhYS7K60RF0"
+          "KZWyDUhYS7K60RF0": {
+            "id": "KZWyDUhYS7K60RF0",
+            "label": "Ziemnowodny",
+            "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Swim\")) {\n    args.prefillModifiers.slBonus += this.actor.characteristics.ag.bonus;\n}"
+          }
         }
       ],
       "specification": null
@@ -617,9 +669,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.TBcdTlYSRH8Rd1x0",
       "effects": [
         {
-          "label": "Zakażony",
-          "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\") {\n   args.prefillModifiers.modifier -= 10\n}",
-          "id": "gjbJu5OWDKFJvvyY"
+          "gjbJu5OWDKFJvvyY": {
+            "id": "gjbJu5OWDKFJvvyY",
+            "label": "Zakażony",
+            "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\") {\n   args.prefillModifiers.modifier -= 10\n}"
+          }
         }
       ],
       "specification": null
@@ -638,9 +692,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.UB4mDroL6S1F9B4u",
       "effects": [
         {
-          "label": "Konstrukt",
-          "script": "args.wpb = args.sb;",
-          "id": "mkDK0Yqvb4JqL1zq"
+          "mkDK0Yqvb4JqL1zq": {
+            "id": "mkDK0Yqvb4JqL1zq",
+            "label": "Konstrukt",
+            "script": "args.wpb = args.sb;"
+          }
         }
       ],
       "specification": null
@@ -652,9 +708,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.UmxGZRV0Lw3TZ0Kx",
       "effects": [
         {
-          "label": "Długi Krok",
-          "script": "args.actor.details.move.run *= 1.5;",
-          "id": "bSNlAHOT09D6Bx16"
+          "bSNlAHOT09D6Bx16": {
+            "id": "bSNlAHOT09D6Bx16",
+            "label": "Długi Krok",
+            "script": "args.actor.details.move.run *= 1.5;"
+          }
         }
       ],
       "specification": null
@@ -666,9 +724,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.UnJ25lL8aUzem5JO",
       "effects": [
         {
-          "label": "Atak Ogonem",
-          "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value];\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value];\nif (attackerSize > actorSize) {\n   await args.actor.addCondition(\"prone\")\n   ChatMessage.create({content: `<b>Tail Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Prone]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}",
-          "id": "3KXZhIkHukLOpg2l"
+          "3KXZhIkHukLOpg2l": {
+            "id": "3KXZhIkHukLOpg2l",
+            "label": "Atak Ogonem",
+            "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value];\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value];\nif (attackerSize > actorSize) {\n   await args.actor.addCondition(\"prone\")\n   ChatMessage.create({content: `<b>Tail Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Prone]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
+          }
         }
       ],
       "specification": "Obrażenia"
@@ -694,9 +754,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.V0c3qBU1CMm8bmsW",
       "effects": [
         {
-          "label": "Zaraza",
-          "script": "if (args.totalWoundLoss > 0) {\n     ChatMessage.create({ content: game.i18n.format(\"WFRP4E.EFFECT.CORE.Infected\", {name: this.actor.name}), whisper: ChatMessage.getWhisperRecipients(\"GM\") })\n}",
-          "id": "6rMAx2bGefOkubv8"
+          "6rMAx2bGefOkubv8": {
+            "id": "6rMAx2bGefOkubv8",
+            "label": "Zaraza",
+            "script": "if (args.totalWoundLoss > 0) {\n     ChatMessage.create({ content: game.i18n.format(\"WFRP4E.EFFECT.CORE.Infected\", {name: this.actor.name}), whisper: ChatMessage.getWhisperRecipients(\"GM\") })\n}"
+          }
         }
       ],
       "specification": null
@@ -729,9 +791,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.VUJUZVN3VYhOaPjj",
       "effects": [
         {
-          "label": "Pancerz",
-          "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n    AP[\"head\"].value += (value - (APdamage.head || 0))\n    AP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\n    AP[\"lArm\"].value += (value - (APdamage.lArm || 0))\n    AP[\"body\"].value += (value - (APdamage.body || 0))\n    AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\n    AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}",
-          "id": "CAcGBn8sq62mVUxJ"
+          "CAcGBn8sq62mVUxJ": {
+            "id": "CAcGBn8sq62mVUxJ",
+            "label": "Pancerz",
+            "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n    AP[\"head\"].value += (value - (APdamage.head || 0))\n    AP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\n    AP[\"lArm\"].value += (value - (APdamage.lArm || 0))\n    AP[\"body\"].value += (value - (APdamage.body || 0))\n    AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\n    AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+          }
         }
       ],
       "specification": "#"
@@ -750,9 +814,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.wGTD2LezlI6Atyy0",
       "effects": [
         {
-          "label": "Przywódca",
-          "script": null,
-          "id": "qjz6qX4wkAN2Eldl"
+          "qjz6qX4wkAN2Eldl": {
+            "id": "qjz6qX4wkAN2Eldl",
+            "label": "Przywódca",
+            "script": null
+          }
         }
       ],
       "specification": null
@@ -771,9 +837,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.xg6z63j6BH5AaqLL",
       "effects": [
         {
-          "label": "Atak Językiem (Zasięg)",
-          "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value];\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value];\nif (attackerSize > actorSize) {\n   await args.actor.addCondition(\"entangled\");\n   ChatMessage.create({content: `<b>Tongue Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Entangled]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}",
-          "id": "kPgI28vmSamM3u1s"
+          "kPgI28vmSamM3u1s": {
+            "id": "kPgI28vmSamM3u1s",
+            "label": "Atak Językiem (Zasięg)",
+            "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value];\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value];\nif (attackerSize > actorSize) {\n   await args.actor.addCondition(\"entangled\");\n   ChatMessage.create({content: `<b>Tongue Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Entangled]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
+          }
         }
       ],
       "specification": "Wartość"
@@ -799,9 +867,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.yRhhOlt18COq4e1q",
       "effects": [
         {
-          "label": "Szał Bojowy",
-          "script": "args.actor.characteristics.s.bonus += 1;\nargs.actor.characteristics.s.calculationBonusModifier -= 1;",
-          "id": "jTfCjCCrfFHKqXhz"
+          "jTfCjCCrfFHKqXhz": {
+            "id": "jTfCjCCrfFHKqXhz",
+            "label": "Szał Bojowy",
+            "script": "args.actor.characteristics.s.bonus += 1;\nargs.actor.characteristics.s.calculationBonusModifier -= 1;"
+          }
         }
       ],
       "specification": null
@@ -813,9 +883,11 @@
       "sourceId": "Compendium.wfrp4e-core.traits.yrkI7ATjqLPDTFmZ",
       "effects": [
         {
-          "label": "Odporność na Magię",
-          "script": "if (args.type == \"cast\") {\n       args.prefillModifiers.slBonus -= 2;\n}",
-          "id": "PWNOSwxsePCN7sKH"
+          "PWNOSwxsePCN7sKH": {
+            "id": "PWNOSwxsePCN7sKH",
+            "label": "Odporność na Magię",
+            "script": "if (args.type == \"cast\") {\n       args.prefillModifiers.slBonus -= 2;\n}"
+          }
         }
       ],
       "specification": null

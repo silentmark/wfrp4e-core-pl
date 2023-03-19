@@ -15,9 +15,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.0jaMZRJvJ5L12WZ2",
       "effects": [
         {
-          "label": "Zmęczenie",
-          "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');",
-          "id": "XRfGwpANht6wpmpR"
+          "XRfGwpANht6wpmpR": {
+            "id": "XRfGwpANht6wpmpR",
+            "label": "Zmęczenie",
+            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');"
+          }
         }
       ]
     },
@@ -28,9 +30,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.1MI5UADJkt042mGm",
       "effects": [
         {
-          "label": "Paranoja",
-          "script": null,
-          "id": "mfFTDXJ0SygBMRmF"
+          "mfFTDXJ0SygBMRmF": {
+            "id": "mfFTDXJ0SygBMRmF",
+            "label": "Paranoja",
+            "script": null
+          }
         }
       ]
     },
@@ -41,9 +45,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.2JQWBLFSixeI6W6L",
       "effects": [
         {
-          "label": "Zazdrosne myśli",
-          "script": null,
-          "id": "rAvBBRHH27iSpP87"
+          "rAvBBRHH27iSpP87": {
+            "id": "rAvBBRHH27iSpP87",
+            "label": "Zazdrosne myśli",
+            "script": null
+          }
         }
       ]
     },
@@ -54,9 +60,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.2xvxa9Y8cqHzxuPd",
       "effects": [
         {
-          "label": "Mitomania",
-          "script": null,
-          "id": "4rt99MvDqb1zR2MG"
+          "4rt99MvDqb1zR2MG": {
+            "id": "4rt99MvDqb1zR2MG",
+            "label": "Mitomania",
+            "script": null
+          }
         }
       ]
     },
@@ -67,9 +75,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.4OMI3eligS2L0LiL",
       "effects": [
         {
-          "label": "Krótkie nogi",
-          "script": null,
-          "id": "Go6qdctMDg9FSLwm"
+          "Go6qdctMDg9FSLwm": {
+            "id": "Go6qdctMDg9FSLwm",
+            "label": "Krótkie nogi",
+            "script": null
+          }
         }
       ]
     },
@@ -80,9 +90,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.apBxYVRVp4Jt6gxy",
       "effects": [
         {
-          "label": "Złe zamiary",
-          "script": "if (args.type == \"weapon\" || args.type == \"cast\") {\n   args.prefillModifiers.modifier += 10;\n}\nelse {\n   args.prefillModifiers.modifier -= 10;\n}",
-          "id": "zE2zFBWnHMLkNdqR"
+          "zE2zFBWnHMLkNdqR": {
+            "id": "zE2zFBWnHMLkNdqR",
+            "label": "Złe zamiary",
+            "script": "if (args.type == \"weapon\" || args.type == \"cast\") {\n   args.prefillModifiers.modifier += 10;\n}\nelse {\n   args.prefillModifiers.modifier -= 10;\n}"
+          }
         }
       ]
     },
@@ -99,9 +111,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.atYAndIzpFIfq0Wb",
       "effects": [
         {
-          "label": "Kompletny świr",
-          "script": null,
-          "id": "JTKbY08Ya8XiV33s"
+          "JTKbY08Ya8XiV33s": {
+            "id": "JTKbY08Ya8XiV33s",
+            "label": "Kompletny świr",
+            "script": null
+          }
         }
       ]
     },
@@ -112,9 +126,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.BZ5iT2wQq7rOQ0Vo",
       "effects": [
         {
-          "label": "Drżączka",
-          "script": null,
-          "id": "sijTILz9kZO5oASo"
+          "sijTILz9kZO5oASo": {
+            "id": "sijTILz9kZO5oASo",
+            "label": "Drżączka",
+            "script": null
+          }
         }
       ]
     },
@@ -125,9 +141,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.CAqBwTw411GEyc4d",
       "effects": [
         {
-          "label": "Straszny niepokój",
-          "script": null,
-          "id": "Hp214Mf1VQEpwpN5"
+          "Hp214Mf1VQEpwpN5": {
+            "id": "Hp214Mf1VQEpwpN5",
+            "label": "Straszny niepokój",
+            "script": null
+          }
         }
       ]
     },
@@ -144,9 +162,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.dAnz27Q409wtHfxc",
       "effects": [
         {
-          "label": "Nieludzka uroda",
-          "script": null,
-          "id": "73ZIsujmxVg9kAlF"
+          "73ZIsujmxVg9kAlF": {
+            "id": "73ZIsujmxVg9kAlF",
+            "label": "Nieludzka uroda",
+            "script": null
+          }
         }
       ]
     },
@@ -157,9 +177,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.dsYDcdQfJGc7wxSX",
       "effects": [
         {
-          "label": "Wychudzone ciało",
-          "script": null,
-          "id": "Hkhq8FTiyNEsfHUF"
+          "Hkhq8FTiyNEsfHUF": {
+            "id": "Hkhq8FTiyNEsfHUF",
+            "label": "Wychudzone ciało",
+            "script": null
+          }
         }
       ]
     },
@@ -170,9 +192,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.DVF74DvmMttrvboI",
       "effects": [
         {
-          "label": "Nieustanne dreszcze",
-          "script": null,
-          "id": "FsfgCNLgJOUHSGMo"
+          "FsfgCNLgJOUHSGMo": {
+            "id": "FsfgCNLgJOUHSGMo",
+            "label": "Nieustanne dreszcze",
+            "script": null
+          }
         }
       ]
     },
@@ -183,9 +207,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.gMsd6II7Y1oBMddp",
       "effects": [
         {
-          "label": "Uzależnienie od adrenaliny",
-          "script": null,
-          "id": "39WPkucQosauvNSW"
+          "39WPkucQosauvNSW": {
+            "id": "39WPkucQosauvNSW",
+            "label": "Uzależnienie od adrenaliny",
+            "script": null
+          }
         }
       ]
     },
@@ -196,9 +222,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.GtACPDzi25YNgV0m",
       "effects": [
         {
-          "label": "Mięsista macka",
-          "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.4xF7M6ylIiGntekh\");\nitem = item.toObject();\nargs.actor.createEmbeddedDocuments(\"Item\", [item]);",
-          "id": "FeJR7iTtlWYjOwo9"
+          "FeJR7iTtlWYjOwo9": {
+            "id": "FeJR7iTtlWYjOwo9",
+            "label": "Mięsista macka",
+            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.4xF7M6ylIiGntekh\");\nitem = item.toObject();\nargs.actor.createEmbeddedDocuments(\"Item\", [item]);"
+          }
         }
       ]
     },
@@ -209,9 +237,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.HEaxp50NEPnFiihl",
       "effects": [
         {
-          "label": "Strach przed samotnością",
-          "script": null,
-          "id": "egLqzQE6VJ1xG91R"
+          "egLqzQE6VJ1xG91R": {
+            "id": "egLqzQE6VJ1xG91R",
+            "label": "Strach przed samotnością",
+            "script": null
+          }
         }
       ]
     },
@@ -222,9 +252,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.hTm0rQkQTpm0OT3n",
       "effects": [
         {
-          "label": "Stalowa skóra",
-          "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 2;\nAP[\"rArm\"].value += 2;\nAP[\"lArm\"].value += 2;\nAP[\"body\"].value += 2;\nAP[\"lLeg\"].value += 2;\nAP[\"rLeg\"].value += 2;",
-          "id": "GIKMXwsPucxzpD3K"
+          "GIKMXwsPucxzpD3K": {
+            "id": "GIKMXwsPucxzpD3K",
+            "label": "Stalowa skóra",
+            "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 2;\nAP[\"rArm\"].value += 2;\nAP[\"lArm\"].value += 2;\nAP[\"body\"].value += 2;\nAP[\"lLeg\"].value += 2;\nAP[\"rLeg\"].value += 2;"
+          }
         }
       ]
     },
@@ -235,9 +267,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.iLZcSRUbxKBecACZ",
       "effects": [
         {
-          "label": "Otyłość",
-          "script": null,
-          "id": "A3qEjzJ8tFTTWDPl"
+          "A3qEjzJ8tFTTWDPl": {
+            "id": "A3qEjzJ8tFTTWDPl",
+            "label": "Otyłość",
+            "script": null
+          }
         }
       ]
     },
@@ -248,9 +282,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.JaEYSLJU5B2bknNc",
       "effects": [
         {
-          "label": "Ogromne oko",
-          "script": null,
-          "id": "iZgljsMJIgKH6L0P"
+          "iZgljsMJIgKH6L0P": {
+            "id": "iZgljsMJIgKH6L0P",
+            "label": "Ogromne oko",
+            "script": null
+          }
         }
       ]
     },
@@ -261,9 +297,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.JR6GZJDVNupDnnbm",
       "effects": [
         {
-          "label": "Odwrócona twarz",
-          "script": "if (args.type == \"characteristic\" && args.item == \"fel\") {\n  args.prefillModifiers.modifier -= 20;\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"fel\") {\n    args.prefillModifiers.modifier -= 20\n  }\n}",
-          "id": "W6GtdIEcYRTTdUbk"
+          "W6GtdIEcYRTTdUbk": {
+            "id": "W6GtdIEcYRTTdUbk",
+            "label": "Odwrócona twarz",
+            "script": "if (args.type == \"characteristic\" && args.item == \"fel\") {\n  args.prefillModifiers.modifier -= 20;\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"fel\") {\n    args.prefillModifiers.modifier -= 20\n  }\n}"
+          }
         }
       ]
     },
@@ -274,9 +312,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.JS0LEfU1Y5clOJpT",
       "effects": [
         {
-          "label": "Dręczące wizje",
-          "script": null,
-          "id": "FckYHxsq1fxb9QNo"
+          "FckYHxsq1fxb9QNo": {
+            "id": "FckYHxsq1fxb9QNo",
+            "label": "Dręczące wizje",
+            "script": null
+          }
         }
       ]
     },
@@ -287,9 +327,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.kwLyvpNGE1MrDUw9",
       "effects": [
         {
-          "label": "Zwisający jęzor",
-          "script": null,
-          "id": "UuWZEOCSqCXzdXO8"
+          "UuWZEOCSqCXzdXO8": {
+            "id": "UuWZEOCSqCXzdXO8",
+            "label": "Zwisający jęzor",
+            "script": null
+          }
         }
       ]
     },
@@ -306,14 +348,18 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.MdrqSnA014jBggAV",
       "effects": [
         {
-          "label": "Szał Bojowy",
-          "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.psychologies.DrNUTPeodEgpWTnT\");\nitem = item.toObject();\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);",
-          "id": "2Ohs6a56Gxu8VLHF"
+          "2Ohs6a56Gxu8VLHF": {
+            "id": "2Ohs6a56Gxu8VLHF",
+            "label": "Szał Bojowy",
+            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.psychologies.DrNUTPeodEgpWTnT\");\nitem = item.toObject();\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);"
+          }
         },
         {
-          "label": "Bezbożny szał",
-          "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.psychologies.DrNUTPeodEgpWTnT\");\nitem = item.toObject();\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);",
-          "id": "3ekXP5mRTRdaJptm"
+          "3ekXP5mRTRdaJptm": {
+            "id": "3ekXP5mRTRdaJptm",
+            "label": "Bezbożny szał",
+            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.psychologies.DrNUTPeodEgpWTnT\");\nitem = item.toObject();\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);"
+          }
         }
       ]
     },
@@ -330,9 +376,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.op4GKikIQee7JMXw",
       "effects": [
         {
-          "label": "Bonus do Szybkości",
-          "script": null,
-          "id": "1WuNk8jD1SyJIdHE"
+          "1WuNk8jD1SyJIdHE": {
+            "id": "1WuNk8jD1SyJIdHE",
+            "label": "Bonus do Szybkości",
+            "script": null
+          }
         }
       ]
     },
@@ -343,9 +391,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.oZzmVlMOZ02NaPkZ",
       "effects": [
         {
-          "label": "Bezduszność",
-          "script": null,
-          "id": "C3nRwWnS8XEQfRQi"
+          "C3nRwWnS8XEQfRQi": {
+            "id": "C3nRwWnS8XEQfRQi",
+            "label": "Bezduszność",
+            "script": null
+          }
         }
       ]
     },
@@ -356,14 +406,18 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.Pmcq5P7yRnYsoFYf",
       "effects": [
         {
-          "label": "Nierówne rogi",
-          "script": "args.actor.status.armour[\"head\"].value += 1;",
-          "id": "2o80BN5wj3QZxpYJ"
+          "2o80BN5wj3QZxpYJ": {
+            "id": "2o80BN5wj3QZxpYJ",
+            "label": "Nierówne rogi",
+            "script": "args.actor.status.armour[\"head\"].value += 1;"
+          }
         },
         {
-          "label": "Nierówne rogi",
-          "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.BqPZn6q3VHn9HUrW\");\nitem = item.toObject();\nitem.name = this.effect.label;\nitem.system.specification.value = this.actor.characteristics.s.bonus;\nitem.system.description.value = \"\";\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);",
-          "id": "n4ttJEJZfsfISN5O"
+          "n4ttJEJZfsfISN5O": {
+            "id": "n4ttJEJZfsfISN5O",
+            "label": "Nierówne rogi",
+            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.BqPZn6q3VHn9HUrW\");\nitem = item.toObject();\nitem.name = this.effect.label;\nitem.system.specification.value = this.actor.characteristics.s.bonus;\nitem.system.description.value = \"\";\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);"
+          }
         }
       ]
     },
@@ -374,9 +428,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.Seb2VOuQVhBGVGN3",
       "effects": [
         {
-          "label": "Blokada psychiczna",
-          "script": null,
-          "id": "sQs8JwxXFQcfvDLD"
+          "sQs8JwxXFQcfvDLD": {
+            "id": "sQs8JwxXFQcfvDLD",
+            "label": "Blokada psychiczna",
+            "script": null
+          }
         }
       ]
     },
@@ -387,9 +443,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.SFKV0IBLLsbCMu7S",
       "effects": [
         {
-          "label": "Wibrysy",
-          "script": "if (args.type == \"skill\" && args.item.name == \"Track\") {\n   args.prefillModifiers.modifier += 10;\n}",
-          "id": "EfojtYV7NuxfAUrK"
+          "EfojtYV7NuxfAUrK": {
+            "id": "EfojtYV7NuxfAUrK",
+            "label": "Wibrysy",
+            "script": "if (args.type == \"skill\" && args.item.name == \"Track\") {\n   args.prefillModifiers.modifier += 10;\n}"
+          }
         }
       ]
     },
@@ -400,9 +458,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.SPBRzPenZYA05KiK",
       "effects": [
         {
-          "label": "Kolczaste łuski",
-          "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 1;\nAP[\"rArm\"].value += 1;\nAP[\"lArm\"].value += 1;\nAP[\"body\"].value += 1;\nAP[\"lLeg\"].value += 1;\nAP[\"rLeg\"].value += 1;",
-          "id": "mbj1Q28xiYuHC3z2"
+          "mbj1Q28xiYuHC3z2": {
+            "id": "mbj1Q28xiYuHC3z2",
+            "label": "Kolczaste łuski",
+            "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 1;\nAP[\"rArm\"].value += 1;\nAP[\"lArm\"].value += 1;\nAP[\"body\"].value += 1;\nAP[\"lLeg\"].value += 1;\nAP[\"rLeg\"].value += 1;"
+          }
         }
       ]
     },
@@ -413,9 +473,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.t1sSiZO0cCKbT4ZA",
       "effects": [
         {
-          "label": "Wydłużone palce",
-          "script": null,
-          "id": "9tlBnF93gLOLbCs2"
+          "9tlBnF93gLOLbCs2": {
+            "id": "9tlBnF93gLOLbCs2",
+            "label": "Wydłużone palce",
+            "script": null
+          }
         }
       ]
     },
@@ -426,9 +488,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.tcBFO4ATKpT0h3GT",
       "effects": [
         {
-          "label": "Nienawistne popędy",
-          "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.psychologies.Q2MCUrG2HppMcvN0\");\nitem = item.toObject();\nlet species = args.actor.details.species.value || \"Human\";\nitem.name = `Animosity (all not ${species})`;\nargs.actor.createEmbeddedDocuments(\"Item\", [item]);",
-          "id": "hUqEsvcMfTbiNWHj"
+          "hUqEsvcMfTbiNWHj": {
+            "id": "hUqEsvcMfTbiNWHj",
+            "label": "Nienawistne popędy",
+            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.psychologies.Q2MCUrG2HppMcvN0\");\nitem = item.toObject();\nlet species = args.actor.details.species.value || \"Human\";\nitem.name = `Animosity (all not ${species})`;\nargs.actor.createEmbeddedDocuments(\"Item\", [item]);"
+          }
         }
       ]
     },
@@ -439,9 +503,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.u5lMTKaOsZfiE3p0",
       "effects": [
         {
-          "label": "Dodatkowe stawy w nogach",
-          "script": null,
-          "id": "Jv17LNhTsc3DqbRJ"
+          "Jv17LNhTsc3DqbRJ": {
+            "id": "Jv17LNhTsc3DqbRJ",
+            "label": "Dodatkowe stawy w nogach",
+            "script": null
+          }
         }
       ]
     },
@@ -452,9 +518,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.VeCvAdN7TnwEyyu0",
       "effects": [
         {
-          "label": "Wewnętrzna bestia'",
-          "script": null,
-          "id": "KRT5ky5npGHcoSzv"
+          "KRT5ky5npGHcoSzv": {
+            "id": "KRT5ky5npGHcoSzv",
+            "label": "Wewnętrzna bestia'",
+            "script": null
+          }
         }
       ]
     },
@@ -465,9 +533,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.WUuVChLDF6fOLmHX",
       "effects": [
         {
-          "label": "Odrażające zachcianki",
-          "script": null,
-          "id": "uMETdH7d0Hlt1yRa"
+          "uMETdH7d0Hlt1yRa": {
+            "id": "uMETdH7d0Hlt1yRa",
+            "label": "Odrażające zachcianki",
+            "script": null
+          }
         }
       ]
     },
@@ -478,9 +548,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.ytEJJWKVLwcywXCQ",
       "effects": [
         {
-          "label": "Bluźniercze popędy",
-          "script": null,
-          "id": "WRlYLsW6TkKNs7lX"
+          "WRlYLsW6TkKNs7lX": {
+            "id": "WRlYLsW6TkKNs7lX",
+            "label": "Bluźniercze popędy",
+            "script": null
+          }
         }
       ]
     },
@@ -491,9 +563,11 @@
       "sourceId": "Compendium.wfrp4e-core.mutations.Zh68gzYMLW8vZgVo",
       "effects": [
         {
-          "label": "Chwiejne morale",
-          "script": "if (args.test.result.outcome == \"failure\") {\n    if (args.test.characteristicKey == \"wp\") {\n        await this.actor.addCondition(\"broken\")\n    }\n}",
-          "id": "RpoMdbEmjj9FhPvU"
+          "RpoMdbEmjj9FhPvU": {
+            "id": "RpoMdbEmjj9FhPvU",
+            "label": "Chwiejne morale",
+            "script": "if (args.test.result.outcome == \"failure\") {\n    if (args.test.characteristicKey == \"wp\") {\n        await this.actor.addCondition(\"broken\")\n    }\n}"
+          }
         }
       ]
     }

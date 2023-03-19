@@ -16,11 +16,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.263ic3ulLuR9DPzP",
       "effects": [
         {
-          "label": "Zerwane więzadło",
-          "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.qn4ZpvTQIX4rcJDl\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);",
-          "id": "MgpYZu22zgrLdxmf"
+          "MgpYZu22zgrLdxmf": {
+            "id": "MgpYZu22zgrLdxmf",
+            "label": "Zerwane więzadło",
+            "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.qn4ZpvTQIX4rcJDl\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);"
+          }
         }
-      ]
+      ],
+      "wounds": "3",
+      "location": "Arm"
     },
     {
       "id": "2ibzDR7EeMEq2QAe",
@@ -29,16 +33,22 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.2ibzDR7EeMEq2QAe",
       "effects": [
         {
-          "label": "Cios w udo",
-          "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"average\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}",
-          "id": "HgsptGxBG4CYhlk2"
+          "HgsptGxBG4CYhlk2": {
+            "id": "HgsptGxBG4CYhlk2",
+            "label": "Cios w udo",
+            "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"average\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}"
+          }
         },
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "LkPmb8RmlhPowqfB"
+          "LkPmb8RmlhPowqfB": {
+            "id": "LkPmb8RmlhPowqfB",
+            "label": "Krwawienie",
+            "script": null
+          }
         }
-      ]
+      ],
+      "wounds": "2",
+      "location": "Leg"
     },
     {
       "id": "39906D4BcVGzsiQp",
@@ -47,16 +57,22 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.39906D4BcVGzsiQp",
       "effects": [
         {
-          "label": "Złamany obojczyk",
-          "script": "let injury = await fromUuid('Compendium.wfrp4e-core.injuries.EaqlLRQigwnsEAXX');\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);",
-          "id": "QaSpvCS9KAifTCNw"
+          "QaSpvCS9KAifTCNw": {
+            "id": "QaSpvCS9KAifTCNw",
+            "label": "Złamany obojczyk",
+            "script": "let injury = await fromUuid('Compendium.wfrp4e-core.injuries.EaqlLRQigwnsEAXX');\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);"
+          }
         },
         {
-          "label": "Nieprzytomny",
-          "script": null,
-          "id": "yYBsiXJGftVmMEeQ"
+          "yYBsiXJGftVmMEeQ": {
+            "id": "yYBsiXJGftVmMEeQ",
+            "label": "Nieprzytomny",
+            "script": null
+          }
         }
-      ]
+      ],
+      "wounds": "5",
+      "location": "Body"
     },
     {
       "id": "3B3QEz9ImmloEQxv",
@@ -65,11 +81,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.3B3QEz9ImmloEQxv",
       "effects": [
         {
-          "label": "Oślepienie",
-          "script": null,
-          "id": "megBKxKy2Xu8LoXg"
+          "megBKxKy2Xu8LoXg": {
+            "id": "megBKxKy2Xu8LoXg",
+            "label": "Oślepienie",
+            "script": null
+          }
         }
-      ]
+      ],
+      "wounds": "1",
+      "location": "Head"
     },
     {
       "id": "3Tk4cX1ri20oUoBh",
@@ -78,31 +98,43 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.3Tk4cX1ri20oUoBh",
       "effects": [
         {
-          "label": "Ogłuszenie",
-          "script": null,
-          "id": "4o8C5gO5JrPMQy7V"
+          "4o8C5gO5JrPMQy7V": {
+            "id": "4o8C5gO5JrPMQy7V",
+            "label": "Ogłuszenie",
+            "script": null
+          }
         },
         {
-          "label": "Zmęczenie",
-          "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');",
-          "id": "AyoqSH1wIlPXFrdJ"
+          "AyoqSH1wIlPXFrdJ": {
+            "id": "AyoqSH1wIlPXFrdJ",
+            "label": "Zmęczenie",
+            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');"
+          }
         },
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "F77tiXuPleKy6QKB"
+          "F77tiXuPleKy6QKB": {
+            "id": "F77tiXuPleKy6QKB",
+            "label": "Krwawienie",
+            "script": null
+          }
         },
         {
-          "label": "Wstrząśnienie mózgu",
-          "script": "let roll = (await new Roll(\"1d10\").roll()).total;\r\nawait args.actor.addCondition(\"stunned\", roll);",
-          "id": "TYzxQVbjCM2iyLVl"
+          "TYzxQVbjCM2iyLVl": {
+            "id": "TYzxQVbjCM2iyLVl",
+            "label": "Wstrząśnienie mózgu",
+            "script": "let roll = (await new Roll(\"1d10\").roll()).total;\r\nawait args.actor.addCondition(\"stunned\", roll);"
+          }
         },
         {
-          "label": "Wstrząśnienie mózgu - Zmęczenie",
-          "script": "if (args.opposedTest.result.hitloc.value == \"head\" && (args.opposedTest.attackerTest.result.critical || args.actor.status.wounds.value - args.totalWoundLoss < 0)) {\n  if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), { absolute: { difficulty: \"average\" } }).then(async test => {\n      await test.roll();\n      if (test.result.outcome == \"failure\") {\n          await args.actor.addCondition(\"unconscious\");\n      }\n    });\n  }\n}",
-          "id": "zirzZTdRx8xz8RI6"
+          "zirzZTdRx8xz8RI6": {
+            "id": "zirzZTdRx8xz8RI6",
+            "label": "Wstrząśnienie mózgu - Zmęczenie",
+            "script": "if (args.opposedTest.result.hitloc.value == \"head\" && (args.opposedTest.attackerTest.result.critical || args.actor.status.wounds.value - args.totalWoundLoss < 0)) {\n  if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), { absolute: { difficulty: \"average\" } }).then(async test => {\n      await test.roll();\n      if (test.result.outcome == \"failure\") {\n          await args.actor.addCondition(\"unconscious\");\n      }\n    });\n  }\n}"
+          }
         }
-      ]
+      ],
+      "wounds": "4",
+      "location": "Head"
     },
     {
       "id": "8GrHGyhYlbdxqluu",
@@ -111,11 +143,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.8GrHGyhYlbdxqluu",
       "effects": [
         {
-          "label": "Zwichnięte kolano",
-          "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"stunned\")\n        }\n     });\n}",
-          "id": "vGXj3JcQSik2Fof6"
+          "vGXj3JcQSik2Fof6": {
+            "id": "vGXj3JcQSik2Fof6",
+            "label": "Zwichnięte kolano",
+            "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"stunned\")\n        }\n     });\n}"
+          }
         }
-      ]
+      ],
+      "wounds": "4",
+      "location": "Leg"
     },
     {
       "id": "8WkGfg1oUsR16K3J",
@@ -124,26 +160,36 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.8WkGfg1oUsR16K3J",
       "effects": [
         {
-          "label": "Oszołomienie",
-          "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');",
-          "id": "348txVEUS8rth7YB"
+          "348txVEUS8rth7YB": {
+            "id": "348txVEUS8rth7YB",
+            "label": "Oszołomienie",
+            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');"
+          }
         },
         {
-          "label": "Oszpecający cios",
-          "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.weczkAMPlTjX7lqU\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n\ninjury = await fromUuid(\"Compendium.wfrp4e-core.injuries.SpPRZZRHxly7uo2G\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);",
-          "id": "7j3RINGp5K4ejLTp"
+          "7j3RINGp5K4ejLTp": {
+            "id": "7j3RINGp5K4ejLTp",
+            "label": "Oszpecający cios",
+            "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.weczkAMPlTjX7lqU\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n\ninjury = await fromUuid(\"Compendium.wfrp4e-core.injuries.SpPRZZRHxly7uo2G\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);"
+          }
         },
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "hawmXZ36uvoIAWpv"
+          "hawmXZ36uvoIAWpv": {
+            "id": "hawmXZ36uvoIAWpv",
+            "label": "Krwawienie",
+            "script": null
+          }
         },
         {
-          "label": "Oślepienie",
-          "script": null,
-          "id": "waGy0xtIvPj1cT0D"
+          "waGy0xtIvPj1cT0D": {
+            "id": "waGy0xtIvPj1cT0D",
+            "label": "Oślepienie",
+            "script": null
+          }
         }
-      ]
+      ],
+      "wounds": "5",
+      "location": "Head"
     },
     {
       "id": "92vQ9g5DxlWNmD1c",
@@ -152,11 +198,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.92vQ9g5DxlWNmD1c",
       "effects": [
         {
-          "label": "Wywichnięty bark",
-          "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n            await args.actor.addCondition(\"stunned\");\n        }\n     });\n}",
-          "id": "Ce9QAvROf94V16sJ"
+          "Ce9QAvROf94V16sJ": {
+            "id": "Ce9QAvROf94V16sJ",
+            "label": "Wywichnięty bark",
+            "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n            await args.actor.addCondition(\"stunned\");\n        }\n     });\n}"
+          }
         }
-      ]
+      ],
+      "wounds": "4",
+      "location": "Arm"
     },
     {
       "id": "9j0KwH1Je1RiuZX2",
@@ -165,11 +215,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.9j0KwH1Je1RiuZX2",
       "effects": [
         {
-          "label": "Skręcona kostka",
-          "script": "if (args.type == \"skill\" && args.item.characteristic.key == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}\nif (args.type == \"characteristic\" && args.item == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}",
-          "id": "9dEo6xx3LZwu32td"
+          "9dEo6xx3LZwu32td": {
+            "id": "9dEo6xx3LZwu32td",
+            "label": "Skręcona kostka",
+            "script": "if (args.type == \"skill\" && args.item.characteristic.key == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}\nif (args.type == \"characteristic\" && args.item == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}"
+          }
         }
-      ]
+      ],
+      "wounds": "1",
+      "location": "Leg"
     },
     {
       "id": "9MKzpUh761nGa76M",
@@ -178,11 +232,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.9MKzpUh761nGa76M",
       "effects": [
         {
-          "label": "Zerwane ścięgno",
-          "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.3S4OYOZLauXctmev\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n\nif (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n     });\n}",
-          "id": "ixCa0FfjTQFA9Th6"
+          "ixCa0FfjTQFA9Th6": {
+            "id": "ixCa0FfjTQFA9Th6",
+            "label": "Zerwane ścięgno",
+            "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.3S4OYOZLauXctmev\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n\nif (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n     });\n}"
+          }
         }
-      ]
+      ],
+      "wounds": "4",
+      "location": "Leg"
     },
     {
       "id": "9NAkj43qHsH7Xok7",
@@ -191,21 +249,29 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.9NAkj43qHsH7Xok7",
       "effects": [
         {
-          "label": "Oszołomienie",
-          "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');",
-          "id": "1hf8KQbl7iZKhhzD"
+          "1hf8KQbl7iZKhhzD": {
+            "id": "1hf8KQbl7iZKhhzD",
+            "label": "Oszołomienie",
+            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');"
+          }
         },
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "DRpsrtMYsEn6RXb4"
+          "DRpsrtMYsEn6RXb4": {
+            "id": "DRpsrtMYsEn6RXb4",
+            "label": "Krwawienie",
+            "script": null
+          }
         },
         {
-          "label": "Rozszarpany biceps",
-          "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.qn4ZpvTQIX4rcJDl\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);",
-          "id": "zyFwXMjRg8797kTY"
+          "zyFwXMjRg8797kTY": {
+            "id": "zyFwXMjRg8797kTY",
+            "label": "Rozszarpany biceps",
+            "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.qn4ZpvTQIX4rcJDl\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);"
+          }
         }
-      ]
+      ],
+      "wounds": "5",
+      "location": "Arm"
     },
     {
       "id": "9s7eE2U30R774sxO",
@@ -214,26 +280,36 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.9s7eE2U30R774sxO",
       "effects": [
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "OV1vfh4PQRfDwofO"
+          "OV1vfh4PQRfDwofO": {
+            "id": "OV1vfh4PQRfDwofO",
+            "label": "Krwawienie",
+            "script": null
+          }
         },
         {
-          "label": "Przecięte ścięgna",
-          "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.k00PimCWkff11IA0\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);",
-          "id": "r5t7w5lcG1iddbUt"
+          "r5t7w5lcG1iddbUt": {
+            "id": "r5t7w5lcG1iddbUt",
+            "label": "Przecięte ścięgna",
+            "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.k00PimCWkff11IA0\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);"
+          }
         },
         {
-          "label": "Oszołomienie",
-          "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');",
-          "id": "URt2bkWmWumsEP1k"
+          "URt2bkWmWumsEP1k": {
+            "id": "URt2bkWmWumsEP1k",
+            "label": "Oszołomienie",
+            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');"
+          }
         },
         {
-          "label": "Powalenie",
-          "script": "args.prefillModifiers.modifier -= 20;",
-          "id": "wVKOGkIJf8YblbFA"
+          "wVKOGkIJf8YblbFA": {
+            "id": "wVKOGkIJf8YblbFA",
+            "label": "Powalenie",
+            "script": "args.prefillModifiers.modifier -= 20;"
+          }
         }
-      ]
+      ],
+      "wounds": "5",
+      "location": "Leg"
     },
     {
       "id": "9UjOMeBtKdoL5S34",
@@ -242,16 +318,22 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.9UjOMeBtKdoL5S34",
       "effects": [
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "2NSVzeLs6V2jWa8K"
+          "2NSVzeLs6V2jWa8K": {
+            "id": "2NSVzeLs6V2jWa8K",
+            "label": "Krwawienie",
+            "script": null
+          }
         },
         {
-          "label": "Paskudnie przecięty paluch",
-          "script": "if (this.actor.isOwner) {\n    this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n      await test.roll();\n      if (test.result.outcome == \"failure\") {\n          let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.ZhMADOqoo0y8Q9bx\");\n          this.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n          this.actor.deleteEmbeddedEntity(\"ActiveEffect\", this.effect._id);\n      }\n    });\n}",
-          "id": "nlxBZY9R2qxa7bkC"
+          "nlxBZY9R2qxa7bkC": {
+            "id": "nlxBZY9R2qxa7bkC",
+            "label": "Paskudnie przecięty paluch",
+            "script": "if (this.actor.isOwner) {\n    this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n      await test.roll();\n      if (test.result.outcome == \"failure\") {\n          let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.ZhMADOqoo0y8Q9bx\");\n          this.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n          this.actor.deleteEmbeddedEntity(\"ActiveEffect\", this.effect._id);\n      }\n    });\n}"
+          }
         }
-      ]
+      ],
+      "wounds": "2",
+      "location": "Leg"
     },
     {
       "id": "AUZLQkyu9kiqmzsq",
@@ -260,21 +342,29 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.AUZLQkyu9kiqmzsq",
       "effects": [
         {
-          "label": "Poszarpane udo",
-          "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n    });\n}",
-          "id": "53D0C2BXQCCAMXSu"
+          "53D0C2BXQCCAMXSu": {
+            "id": "53D0C2BXQCCAMXSu",
+            "label": "Poszarpane udo",
+            "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n    });\n}"
+          }
         },
         {
-          "label": "Poszarpane udo",
-          "script": "if (args.opposedTest.result.hitloc.value == \"LEG_LOCATION_HERE\") { // rLeg or lLeg\r\n    await args.actor.addCondition(\"bleeding\", 1);\r\n}",
-          "id": "jYEOUXmmtfU0bnjS"
+          "jYEOUXmmtfU0bnjS": {
+            "id": "jYEOUXmmtfU0bnjS",
+            "label": "Poszarpane udo",
+            "script": "if (args.opposedTest.result.hitloc.value == \"LEG_LOCATION_HERE\") { // rLeg or lLeg\r\n    await args.actor.addCondition(\"bleeding\", 1);\r\n}"
+          }
         },
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "RorPd1gHCj5K5e5E"
+          "RorPd1gHCj5K5e5E": {
+            "id": "RorPd1gHCj5K5e5E",
+            "label": "Krwawienie",
+            "script": null
+          }
         }
-      ]
+      ],
+      "wounds": "3",
+      "location": "Leg"
     },
     {
       "id": "AXRma6wqpD5jvpuM",
@@ -283,16 +373,22 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.AXRma6wqpD5jvpuM",
       "effects": [
         {
-          "label": "Połamane żebra",
-          "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.QluSTTTq3viHJJUh\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);",
-          "id": "GHwgHe9nIfj3RsTG"
+          "GHwgHe9nIfj3RsTG": {
+            "id": "GHwgHe9nIfj3RsTG",
+            "label": "Połamane żebra",
+            "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.QluSTTTq3viHJJUh\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);"
+          }
         },
         {
-          "label": "Oszołomienie",
-          "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');",
-          "id": "vc2JuBUI00H1WZwf"
+          "vc2JuBUI00H1WZwf": {
+            "id": "vc2JuBUI00H1WZwf",
+            "label": "Oszołomienie",
+            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');"
+          }
         }
-      ]
+      ],
+      "wounds": "3",
+      "location": "Body"
     },
     {
       "id": "B6lS25BojearuvzW",
@@ -301,11 +397,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.B6lS25BojearuvzW",
       "effects": [
         {
-          "label": "Skręcenie",
-          "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.GlShFJF2TpsNh1FX\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);",
-          "id": "Xk9jhNPT42L2nloL"
+          "Xk9jhNPT42L2nloL": {
+            "id": "Xk9jhNPT42L2nloL",
+            "label": "Skręcenie",
+            "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.GlShFJF2TpsNh1FX\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);"
+          }
         }
-      ]
+      ],
+      "wounds": "1",
+      "location": "Arm"
     },
     {
       "id": "bAafQaKO9PdKQB8R",
@@ -314,16 +414,22 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.bAafQaKO9PdKQB8R",
       "effects": [
         {
-          "label": "Oszołomienie",
-          "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');",
-          "id": "g9ZNTiFKGxZBQkvT"
+          "g9ZNTiFKGxZBQkvT": {
+            "id": "g9ZNTiFKGxZBQkvT",
+            "label": "Oszołomienie",
+            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');"
+          }
         },
         {
-          "label": "Złamana szczęka",
-          "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.nbhn2wX35b7Jrcbg\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);",
-          "id": "OipdUoeetMzgA4m9"
+          "OipdUoeetMzgA4m9": {
+            "id": "OipdUoeetMzgA4m9",
+            "label": "Złamana szczęka",
+            "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.nbhn2wX35b7Jrcbg\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);"
+          }
         }
-      ]
+      ],
+      "wounds": "3",
+      "location": "Head"
     },
     {
       "id": "Bpt4ZS0eHJOsuDXE",
@@ -332,11 +438,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.Bpt4ZS0eHJOsuDXE",
       "effects": [
         {
-          "label": "Dekapitacja",
-          "script": "await this.actor.addCondition(\"dead\");\nChatMessage.create({content: game.wfrp4e.tables.formatChatRoll(\"scatter\")});",
-          "id": "v0B4racbne2RYIqD"
+          "v0B4racbne2RYIqD": {
+            "id": "v0B4racbne2RYIqD",
+            "label": "Dekapitacja",
+            "script": "await this.actor.addCondition(\"dead\");\nChatMessage.create({content: game.wfrp4e.tables.formatChatRoll(\"scatter\")});"
+          }
         }
-      ]
+      ],
+      "wounds": "Death",
+      "location": "Head"
     },
     {
       "id": "btDTVsPFsOtBNpgF",
@@ -345,11 +455,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.btDTVsPFsOtBNpgF",
       "effects": [
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "Bc6aSIrK2fSMoTBP"
+          "Bc6aSIrK2fSMoTBP": {
+            "id": "Bc6aSIrK2fSMoTBP",
+            "label": "Krwawienie",
+            "script": null
+          }
         }
-      ]
+      ],
+      "wounds": "1",
+      "location": "Head"
     },
     {
       "id": "BzIaW1w6eTUFWgkk",
@@ -358,26 +472,36 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.BzIaW1w6eTUFWgkk",
       "effects": [
         {
-          "label": "Powalenie",
-          "script": "args.prefillModifiers.modifier -= 20;",
-          "id": "2ngJlZ488J7L1sD7"
+          "2ngJlZ488J7L1sD7": {
+            "id": "2ngJlZ488J7L1sD7",
+            "label": "Powalenie",
+            "script": "args.prefillModifiers.modifier -= 20;"
+          }
         },
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "n4NWJIGZiDU9aWt4"
+          "n4NWJIGZiDU9aWt4": {
+            "id": "n4NWJIGZiDU9aWt4",
+            "label": "Krwawienie",
+            "script": null
+          }
         },
         {
-          "label": "Oszołomienie",
-          "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');",
-          "id": "rIF8c6C0BNeSjDv2"
+          "rIF8c6C0BNeSjDv2": {
+            "id": "rIF8c6C0BNeSjDv2",
+            "label": "Oszołomienie",
+            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');"
+          }
         },
         {
-          "label": "Odcięta stopa",
-          "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.gz2xy41OSVZ8YBgI\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);",
-          "id": "yZAbuVNb4ExBntt9"
+          "yZAbuVNb4ExBntt9": {
+            "id": "yZAbuVNb4ExBntt9",
+            "label": "Odcięta stopa",
+            "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.gz2xy41OSVZ8YBgI\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);"
+          }
         }
-      ]
+      ],
+      "wounds": "5",
+      "location": "Leg"
     },
     {
       "id": "cJ6raCFuP1diIXsy",
@@ -386,11 +510,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.cJ6raCFuP1diIXsy",
       "effects": [
         {
-          "label": "Ogłuszenie",
-          "script": null,
-          "id": "7a3L530CIhnX5cTl"
+          "7a3L530CIhnX5cTl": {
+            "id": "7a3L530CIhnX5cTl",
+            "label": "Ogłuszenie",
+            "script": null
+          }
         }
-      ]
+      ],
+      "wounds": "1",
+      "location": "Head"
     },
     {
       "id": "cWK3kNzvujhWi9jQ",
@@ -399,11 +527,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.cWK3kNzvujhWi9jQ",
       "effects": [
         {
-          "label": "Naderwane mięśnie pleców",
-          "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.eWPN3CV2Eddwz8aM\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);",
-          "id": "AiDPNet52D6Mwycb"
+          "AiDPNet52D6Mwycb": {
+            "id": "AiDPNet52D6Mwycb",
+            "label": "Naderwane mięśnie pleców",
+            "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.eWPN3CV2Eddwz8aM\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);"
+          }
         }
-      ]
+      ],
+      "wounds": "4",
+      "location": "Body"
     },
     {
       "id": "F9aFPBvoCdxg8oFJ",
@@ -412,11 +544,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.F9aFPBvoCdxg8oFJ",
       "effects": [
         {
-          "label": "Strzaskana miednica",
-          "script": "await this.actor.addCondition(\"dead\");",
-          "id": "JyeUMIMAfyK0ZjUn"
+          "JyeUMIMAfyK0ZjUn": {
+            "id": "JyeUMIMAfyK0ZjUn",
+            "label": "Strzaskana miednica",
+            "script": "await this.actor.addCondition(\"dead\");"
+          }
         }
-      ]
+      ],
+      "wounds": "Death",
+      "location": "Leg"
     },
     {
       "id": "fIjnRUF4xplU2mhP",
@@ -425,16 +561,22 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.fIjnRUF4xplU2mhP",
       "effects": [
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "us244BgOUN1LRLnc"
+          "us244BgOUN1LRLnc": {
+            "id": "us244BgOUN1LRLnc",
+            "label": "Krwawienie",
+            "script": null
+          }
         },
         {
-          "label": "Złamany nos",
-          "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"stunned\")\n        }\n     });\n}",
-          "id": "zYfCX8Eq2VkRFhNI"
+          "zYfCX8Eq2VkRFhNI": {
+            "id": "zYfCX8Eq2VkRFhNI",
+            "label": "Złamany nos",
+            "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"stunned\")\n        }\n     });\n}"
+          }
         }
-      ]
+      ],
+      "wounds": "3",
+      "location": "Head"
     },
     {
       "id": "G8m6k3wEkhuXMjjp",
@@ -443,21 +585,29 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.G8m6k3wEkhuXMjjp",
       "effects": [
         {
-          "label": "Oszołomienie",
-          "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');",
-          "id": "3rDSK76g1cKpmn40"
+          "3rDSK76g1cKpmn40": {
+            "id": "3rDSK76g1cKpmn40",
+            "label": "Oszołomienie",
+            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');"
+          }
         },
         {
-          "label": "Zmasakrowana dłoń",
-          "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.SYjWiKDzMS6CtROJ\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n",
-          "id": "6KtIpUxSWrqIewki"
+          "6KtIpUxSWrqIewki": {
+            "id": "6KtIpUxSWrqIewki",
+            "label": "Zmasakrowana dłoń",
+            "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.SYjWiKDzMS6CtROJ\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n"
+          }
         },
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "lSn9Mr174doheAbo"
+          "lSn9Mr174doheAbo": {
+            "id": "lSn9Mr174doheAbo",
+            "label": "Krwawienie",
+            "script": null
+          }
         }
-      ]
+      ],
+      "wounds": "5",
+      "location": "Arm"
     },
     {
       "id": "GBaH4wyVes6ds7Wv",
@@ -466,26 +616,36 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.GBaH4wyVes6ds7Wv",
       "effects": [
         {
-          "label": "Oślepienie",
-          "script": null,
-          "id": "4G9KjSyQNM9UFOlS"
+          "4G9KjSyQNM9UFOlS": {
+            "id": "4G9KjSyQNM9UFOlS",
+            "label": "Oślepienie",
+            "script": null
+          }
         },
         {
-          "label": "Oszołomienie",
-          "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');",
-          "id": "jatRx58WzHQUA31m"
+          "jatRx58WzHQUA31m": {
+            "id": "jatRx58WzHQUA31m",
+            "label": "Oszołomienie",
+            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');"
+          }
         },
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "pSm6zIWXDFmFg3Zq"
+          "pSm6zIWXDFmFg3Zq": {
+            "id": "pSm6zIWXDFmFg3Zq",
+            "label": "Krwawienie",
+            "script": null
+          }
         },
         {
-          "label": "Wybite oko",
-          "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.weczkAMPlTjX7lqU\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);",
-          "id": "SYIKc7QymcGfIwN9"
+          "SYIKc7QymcGfIwN9": {
+            "id": "SYIKc7QymcGfIwN9",
+            "label": "Wybite oko",
+            "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.weczkAMPlTjX7lqU\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);"
+          }
         }
-      ]
+      ],
+      "wounds": "5",
+      "location": "Head"
     },
     {
       "id": "GHa0StLRCchw6dQ0",
@@ -494,16 +654,22 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.GHa0StLRCchw6dQ0",
       "effects": [
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "DhFtbgaZVeqb8kaH"
+          "DhFtbgaZVeqb8kaH": {
+            "id": "DhFtbgaZVeqb8kaH",
+            "label": "Krwawienie",
+            "script": null
+          }
         },
         {
-          "label": "Oślepienie",
-          "script": null,
-          "id": "sTAtmClXjBUnD5VO"
+          "sTAtmClXjBUnD5VO": {
+            "id": "sTAtmClXjBUnD5VO",
+            "label": "Oślepienie",
+            "script": null
+          }
         }
-      ]
+      ],
+      "wounds": "2",
+      "location": "Head"
     },
     {
       "id": "GmRF7GF7SZq6qeyj",
@@ -512,16 +678,22 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.GmRF7GF7SZq6qeyj",
       "effects": [
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "fcr0kAJMhiUc1n7k"
+          "fcr0kAJMhiUc1n7k": {
+            "id": "fcr0kAJMhiUc1n7k",
+            "label": "Krwawienie",
+            "script": null
+          }
         },
         {
-          "label": "Ziejąca rana korpusu",
-          "script": "if (args.opposedTest.result.hitloc.value == \"body\") {\n    await args.actor.addCondition(\"bleeding\", 1);\n}",
-          "id": "rKSl42ZfhRErzUTS"
+          "rKSl42ZfhRErzUTS": {
+            "id": "rKSl42ZfhRErzUTS",
+            "label": "Ziejąca rana korpusu",
+            "script": "if (args.opposedTest.result.hitloc.value == \"body\") {\n    await args.actor.addCondition(\"bleeding\", 1);\n}"
+          }
         }
-      ]
+      ],
+      "wounds": "3",
+      "location": "Body"
     },
     {
       "id": "GsBi7iz9z5tj9PiM",
@@ -530,21 +702,29 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.GsBi7iz9z5tj9PiM",
       "effects": [
         {
-          "label": "Oszołomienie",
-          "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');",
-          "id": "k8a0UhmO2dc0eg89"
+          "k8a0UhmO2dc0eg89": {
+            "id": "k8a0UhmO2dc0eg89",
+            "label": "Oszołomienie",
+            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');"
+          }
         },
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "MeryWEfxh1qfb4qD"
+          "MeryWEfxh1qfb4qD": {
+            "id": "MeryWEfxh1qfb4qD",
+            "label": "Krwawienie",
+            "script": null
+          }
         },
         {
-          "label": "Bolesne cięcie",
-          "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n    });\n}",
-          "id": "oScP7BQrypeVVVbf"
+          "oScP7BQrypeVVVbf": {
+            "id": "oScP7BQrypeVVVbf",
+            "label": "Bolesne cięcie",
+            "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n    });\n}"
+          }
         }
-      ]
+      ],
+      "wounds": "3",
+      "location": "Body"
     },
     {
       "id": "GWGaNV2kGRTlMlG7",
@@ -553,11 +733,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.GWGaNV2kGRTlMlG7",
       "effects": [
         {
-          "label": "Poważna rana ucha",
-          "script": null,
-          "id": "bpo2NXwpg23AKY9y"
+          "bpo2NXwpg23AKY9y": {
+            "id": "bpo2NXwpg23AKY9y",
+            "label": "Poważna rana ucha",
+            "script": null
+          }
         }
-      ]
+      ],
+      "wounds": "3",
+      "location": "Head"
     },
     {
       "id": "H07sv4W1RPoES06K",
@@ -566,16 +750,22 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.H07sv4W1RPoES06K",
       "effects": [
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "HkPD4WDbEYIz83dy"
+          "HkPD4WDbEYIz83dy": {
+            "id": "HkPD4WDbEYIz83dy",
+            "label": "Krwawienie",
+            "script": null
+          }
         },
         {
-          "label": "Odcięty palec",
-          "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.SYjWiKDzMS6CtROJ\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);",
-          "id": "rG3wXUaHLNu7IcYO"
+          "rG3wXUaHLNu7IcYO": {
+            "id": "rG3wXUaHLNu7IcYO",
+            "label": "Odcięty palec",
+            "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.SYjWiKDzMS6CtROJ\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);"
+          }
         }
-      ]
+      ],
+      "wounds": "4",
+      "location": "Arm"
     },
     {
       "id": "heJZbvL0uXqKbljR",
@@ -584,27 +774,37 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.heJZbvL0uXqKbljR",
       "effects": [
         {
-          "label": "Rozerwana łydka",
-          "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.3S4OYOZLauXctmev\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n\ninjury - await fromUuid(\"Compendium.wfrp4e-core.injuries.7mCcI3q7hgWcmbBU\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);",
-          "id": "lanapxEmE0mai3mV"
+          "lanapxEmE0mai3mV": {
+            "id": "lanapxEmE0mai3mV",
+            "label": "Rozerwana łydka",
+            "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.3S4OYOZLauXctmev\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n\ninjury - await fromUuid(\"Compendium.wfrp4e-core.injuries.7mCcI3q7hgWcmbBU\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);"
+          }
         },
         {
-          "label": "Oszołomienie",
-          "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');",
-          "id": "RW5eRZ7NxikYNagM"
+          "RW5eRZ7NxikYNagM": {
+            "id": "RW5eRZ7NxikYNagM",
+            "label": "Oszołomienie",
+            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');"
+          }
         },
         {
-          "label": "Powalenie",
-          "script": "args.prefillModifiers.modifier -= 20;",
-          "id": "YS3kViPKuIu9Aaif"
+          "YS3kViPKuIu9Aaif": {
+            "id": "YS3kViPKuIu9Aaif",
+            "label": "Powalenie",
+            "script": "args.prefillModifiers.modifier -= 20;"
+          }
         }
-      ]
+      ],
+      "wounds": "4",
+      "location": "Leg"
     },
     {
       "id": "iLHKw6w3Ipmzj5ma",
       "name": "Zdrętwiałe ramię",
       "description": "<p>W wyniku ataku ramię przechodzą fale odrętwienia. Postać upuszcza wszystko, co trzymała w dłoni.</p>",
-      "sourceId": "Compendium.wfrp4e-core.criticals.iLHKw6w3Ipmzj5ma"
+      "sourceId": "Compendium.wfrp4e-core.criticals.iLHKw6w3Ipmzj5ma",
+      "wounds": "1",
+      "location": "Arm"
     },
     {
       "id": "Ioxf9osVNGNyzIZA",
@@ -613,16 +813,22 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.Ioxf9osVNGNyzIZA",
       "effects": [
         {
-          "label": "Oślepienie",
-          "script": null,
-          "id": "749ILWkBSZeetB7y"
+          "749ILWkBSZeetB7y": {
+            "id": "749ILWkBSZeetB7y",
+            "label": "Oślepienie",
+            "script": null
+          }
         },
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "dJsRgSNjJtohBYPc"
+          "dJsRgSNjJtohBYPc": {
+            "id": "dJsRgSNjJtohBYPc",
+            "label": "Krwawienie",
+            "script": null
+          }
         }
-      ]
+      ],
+      "wounds": "3",
+      "location": "Head"
     },
     {
       "id": "IZkWdvSwQPrnjdsD",
@@ -631,16 +837,22 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.IZkWdvSwQPrnjdsD",
       "effects": [
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "CwBoFiJqX5bc27F2"
+          "CwBoFiJqX5bc27F2": {
+            "id": "CwBoFiJqX5bc27F2",
+            "label": "Krwawienie",
+            "script": null
+          }
         },
         {
-          "label": "Ogłuszenie",
-          "script": null,
-          "id": "SbOvAmqaK31JREjI"
+          "SbOvAmqaK31JREjI": {
+            "id": "SbOvAmqaK31JREjI",
+            "label": "Ogłuszenie",
+            "script": null
+          }
         }
-      ]
+      ],
+      "wounds": "2",
+      "location": "Head"
     },
     {
       "id": "JcAgEHxuY9hwB4y5",
@@ -649,16 +861,22 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.JcAgEHxuY9hwB4y5",
       "effects": [
         {
-          "label": "Paskudne cięcie",
-          "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}",
-          "id": "kub1YScTxM1VNLHK"
+          "kub1YScTxM1VNLHK": {
+            "id": "kub1YScTxM1VNLHK",
+            "label": "Paskudne cięcie",
+            "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}"
+          }
         },
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "MeZJb40J14iJng8X"
+          "MeZJb40J14iJng8X": {
+            "id": "MeZJb40J14iJng8X",
+            "label": "Krwawienie",
+            "script": null
+          }
         }
-      ]
+      ],
+      "wounds": "3",
+      "location": "Leg"
     },
     {
       "id": "jeXKnpbV7xq8wDkH",
@@ -667,11 +885,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.jeXKnpbV7xq8wDkH",
       "effects": [
         {
-          "label": "Zgruchotana dłoń",
-          "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.zyocWSzEZEC826NS\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n\nif (this.actor.isOwner) {\n args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n          await test.roll();\n          if (test.result.outcome == \"failure\") { \n               await args.actor.addCondition(\"prone\");\n               await args.actor.addCondition(\"stunned\");\n          }\n     });\n}",
-          "id": "tyXuApNnqAV4JcJ5"
+          "tyXuApNnqAV4JcJ5": {
+            "id": "tyXuApNnqAV4JcJ5",
+            "label": "Zgruchotana dłoń",
+            "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.zyocWSzEZEC826NS\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n\nif (this.actor.isOwner) {\n args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n          await test.roll();\n          if (test.result.outcome == \"failure\") { \n               await args.actor.addCondition(\"prone\");\n               await args.actor.addCondition(\"stunned\");\n          }\n     });\n}"
+          }
         }
-      ]
+      ],
+      "wounds": "5",
+      "location": "Arm"
     },
     {
       "id": "JKm6YDR88Friuw6h",
@@ -680,11 +902,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.JKm6YDR88Friuw6h",
       "effects": [
         {
-          "label": "Zmiażdżony łokieć",
-          "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.rlDZZTj5PXjuRXa2\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);",
-          "id": "sw8YrBAP6gfhSTSH"
+          "sw8YrBAP6gfhSTSH": {
+            "id": "sw8YrBAP6gfhSTSH",
+            "label": "Zmiażdżony łokieć",
+            "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.rlDZZTj5PXjuRXa2\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);"
+          }
         }
-      ]
+      ],
+      "wounds": "4",
+      "location": "Arm"
     },
     {
       "id": "jma54Iat01N9X4Fb",
@@ -693,16 +919,22 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.jma54Iat01N9X4Fb",
       "effects": [
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "1WF2x6qda0OfmM8Y"
+          "1WF2x6qda0OfmM8Y": {
+            "id": "1WF2x6qda0OfmM8Y",
+            "label": "Krwawienie",
+            "script": null
+          }
         },
         {
-          "label": "Krwotok wewnętrzny",
-          "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.diseases.M8XyRs9DN12XsFTQ\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);",
-          "id": "bvNWTQ0W26esdMso"
+          "bvNWTQ0W26esdMso": {
+            "id": "bvNWTQ0W26esdMso",
+            "label": "Krwotok wewnętrzny",
+            "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.diseases.M8XyRs9DN12XsFTQ\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);"
+          }
         }
-      ]
+      ],
+      "wounds": "5",
+      "location": "Body"
     },
     {
       "id": "jvemdUZh3iRF67us",
@@ -711,16 +943,22 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.jvemdUZh3iRF67us",
       "effects": [
         {
-          "label": "Ziejąca rana ramienia",
-          "script": "if (args.opposedTest.result.hitloc.value == \"ARM_LOCATION_HERE\") {// lArm or rArm\n    await args.actor.addCondition(\"bleeding\", 1);\n}",
-          "id": "1sDNirNcv4XZnubO"
+          "1sDNirNcv4XZnubO": {
+            "id": "1sDNirNcv4XZnubO",
+            "label": "Ziejąca rana ramienia",
+            "script": "if (args.opposedTest.result.hitloc.value == \"ARM_LOCATION_HERE\") {// lArm or rArm\n    await args.actor.addCondition(\"bleeding\", 1);\n}"
+          }
         },
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "7OVwCkJ6rgnfZn81"
+          "7OVwCkJ6rgnfZn81": {
+            "id": "7OVwCkJ6rgnfZn81",
+            "label": "Krwawienie",
+            "script": null
+          }
         }
-      ]
+      ],
+      "wounds": "3",
+      "location": "Arm"
     },
     {
       "id": "jY9wCTf7q86zk96P",
@@ -729,11 +967,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.jY9wCTf7q86zk96P",
       "effects": [
         {
-          "label": "Rozpłatanie",
-          "script": "await this.actor.addCondition(\"dead\");",
-          "id": "Du7cZodgpEKD8eK8"
+          "Du7cZodgpEKD8eK8": {
+            "id": "Du7cZodgpEKD8eK8",
+            "label": "Rozpłatanie",
+            "script": "await this.actor.addCondition(\"dead\");"
+          }
         }
-      ]
+      ],
+      "wounds": "Death",
+      "location": "Body"
     },
     {
       "id": "K0WjEuCqGDUwAPE6",
@@ -742,11 +984,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.K0WjEuCqGDUwAPE6",
       "effects": [
         {
-          "label": "Cios w krzyż",
-          "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.7rBhIRo96Mydo0Cv\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);",
-          "id": "qfUJIoRqhr1u8ODw"
+          "qfUJIoRqhr1u8ODw": {
+            "id": "qfUJIoRqhr1u8ODw",
+            "label": "Cios w krzyż",
+            "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.7rBhIRo96Mydo0Cv\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);"
+          }
         }
-      ]
+      ],
+      "wounds": "1",
+      "location": "Body"
     },
     {
       "id": "KB58O2LWcrzIb6do",
@@ -755,11 +1001,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.KB58O2LWcrzIb6do",
       "effects": [
         {
-          "label": "Oślepienie",
-          "script": null,
-          "id": "jIlysiOZ0LFz6cgj"
+          "jIlysiOZ0LFz6cgj": {
+            "id": "jIlysiOZ0LFz6cgj",
+            "label": "Oślepienie",
+            "script": null
+          }
         }
-      ]
+      ],
+      "wounds": "2",
+      "location": "Head"
     },
     {
       "id": "l5X3wwVvctgQ4k2Q",
@@ -768,11 +1018,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.l5X3wwVvctgQ4k2Q",
       "effects": [
         {
-          "label": "Poniżej pasa!",
-          "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"stunned\", 3);\n        }\n     });\n}",
-          "id": "3hbs7SBwqUyfpvFs"
+          "3hbs7SBwqUyfpvFs": {
+            "id": "3hbs7SBwqUyfpvFs",
+            "label": "Poniżej pasa!",
+            "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"stunned\", 3);\n        }\n     });\n}"
+          }
         }
-      ]
+      ],
+      "wounds": "1",
+      "location": "Body"
     },
     {
       "id": "LdqCjnTAiiRZU1Sq",
@@ -781,16 +1035,22 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.LdqCjnTAiiRZU1Sq",
       "effects": [
         {
-          "label": "Oszołomienie",
-          "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');",
-          "id": "EwflBBAdP3PfmQzC"
+          "EwflBBAdP3PfmQzC": {
+            "id": "EwflBBAdP3PfmQzC",
+            "label": "Oszołomienie",
+            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');"
+          }
         },
         {
-          "label": "Złamane biodro",
-          "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.QluSTTTq3viHJJUh\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n\nif (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}",
-          "id": "WHjhLJT1O6cxIv8u"
+          "WHjhLJT1O6cxIv8u": {
+            "id": "WHjhLJT1O6cxIv8u",
+            "label": "Złamane biodro",
+            "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.QluSTTTq3viHJJUh\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n\nif (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}"
+          }
         }
-      ]
+      ],
+      "wounds": "4",
+      "location": "Body"
     },
     {
       "id": "LZ8ThwJsGDgiPkAd",
@@ -799,16 +1059,22 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.LZ8ThwJsGDgiPkAd",
       "effects": [
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "9qPw0U171RIZCiO4"
+          "9qPw0U171RIZCiO4": {
+            "id": "9qPw0U171RIZCiO4",
+            "label": "Krwawienie",
+            "script": null
+          }
         },
         {
-          "label": "Rozkwaszone usta",
-          "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.injuries.fBcZhOBn8IpoVqQ1\");\ninjury = item.toObject();\nlet teeth = (await new Roll(\"1d10\").roll()).total;\nChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b> loses ${teeth} teeth`, speaker : {alias: this.effect.label}});\ninjury.system.location.value = `${teeth} ${injury.system.location.value}`;\nargs.actor.createEmbeddedDocuments(\"Item\", [injury]);",
-          "id": "N5WsBzINexkLMQVY"
+          "N5WsBzINexkLMQVY": {
+            "id": "N5WsBzINexkLMQVY",
+            "label": "Rozkwaszone usta",
+            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.injuries.fBcZhOBn8IpoVqQ1\");\ninjury = item.toObject();\nlet teeth = (await new Roll(\"1d10\").roll()).total;\nChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b> loses ${teeth} teeth`, speaker : {alias: this.effect.label}});\ninjury.system.location.value = `${teeth} ${injury.system.location.value}`;\nargs.actor.createEmbeddedDocuments(\"Item\", [injury]);"
+          }
         }
-      ]
+      ],
+      "wounds": "4",
+      "location": "Head"
     },
     {
       "id": "M15Fg1Wdl047rD8L",
@@ -817,11 +1083,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.M15Fg1Wdl047rD8L",
       "effects": [
         {
-          "label": "Oszołomienie",
-          "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');",
-          "id": "VJ0bwQJne0HNmtph"
+          "VJ0bwQJne0HNmtph": {
+            "id": "VJ0bwQJne0HNmtph",
+            "label": "Oszołomienie",
+            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');"
+          }
         }
-      ]
+      ],
+      "wounds": "2",
+      "location": "Head"
     },
     {
       "id": "MZuAg4zB17prHXaG",
@@ -830,16 +1100,22 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.MZuAg4zB17prHXaG",
       "effects": [
         {
-          "label": "Oszołomienie",
-          "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');",
-          "id": "XWadxhMkEKpv03Mk"
+          "XWadxhMkEKpv03Mk": {
+            "id": "XWadxhMkEKpv03Mk",
+            "label": "Oszołomienie",
+            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');"
+          }
         },
         {
-          "label": "Strzaskana klatka piersiowa",
-          "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.EaqlLRQigwnsEAXX\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);",
-          "id": "zdZncZOvjLblz909"
+          "zdZncZOvjLblz909": {
+            "id": "zdZncZOvjLblz909",
+            "label": "Strzaskana klatka piersiowa",
+            "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.EaqlLRQigwnsEAXX\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);"
+          }
         }
-      ]
+      ],
+      "wounds": "5",
+      "location": "Body"
     },
     {
       "id": "njocSqK1sMPTi5K4",
@@ -848,32 +1124,44 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.njocSqK1sMPTi5K4",
       "effects": [
         {
-          "label": "Strzaskane kolano",
-          "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.2iult41Jehz0F1O8\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);",
-          "id": "0wiLtR9wzYfqn7kK"
+          "0wiLtR9wzYfqn7kK": {
+            "id": "0wiLtR9wzYfqn7kK",
+            "label": "Strzaskane kolano",
+            "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.2iult41Jehz0F1O8\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);"
+          }
         },
         {
-          "label": "Oszołomienie",
-          "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');",
-          "id": "frTFfaHrrJxQMQvi"
+          "frTFfaHrrJxQMQvi": {
+            "id": "frTFfaHrrJxQMQvi",
+            "label": "Oszołomienie",
+            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');"
+          }
         },
         {
-          "label": "Powalenie",
-          "script": "args.prefillModifiers.modifier -= 20;",
-          "id": "VeT5PVDzmP96JWCM"
+          "VeT5PVDzmP96JWCM": {
+            "id": "VeT5PVDzmP96JWCM",
+            "label": "Powalenie",
+            "script": "args.prefillModifiers.modifier -= 20;"
+          }
         },
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "zn1gNVJsB6wLvLmH"
+          "zn1gNVJsB6wLvLmH": {
+            "id": "zn1gNVJsB6wLvLmH",
+            "label": "Krwawienie",
+            "script": null
+          }
         }
-      ]
+      ],
+      "wounds": "4",
+      "location": "Leg"
     },
     {
       "id": "nnPZijQYZGya1NJM",
       "name": "Wybicie stawu",
       "description": "<p>Ramię prawie zostało wyrwane ze stawu. Wszystko, co było trzymane w dłoni, wypada, a ramię jest bezużyteczne przez [[/r 1d10]] Rund.</p>",
-      "sourceId": "Compendium.wfrp4e-core.criticals.nnPZijQYZGya1NJM"
+      "sourceId": "Compendium.wfrp4e-core.criticals.nnPZijQYZGya1NJM",
+      "wounds": "2",
+      "location": "Arm"
     },
     {
       "id": "NPhLsxsUV8wwdKWj",
@@ -882,16 +1170,22 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.NPhLsxsUV8wwdKWj",
       "effects": [
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "1nNGzJZNKnuXr9W7"
+          "1nNGzJZNKnuXr9W7": {
+            "id": "1nNGzJZNKnuXr9W7",
+            "label": "Krwawienie",
+            "script": null
+          }
         },
         {
-          "label": "Zmiażdżona stopa",
-          "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), { absolute: { difficulty: \"average\" } }).then(async test => {\n      await test.roll();\n      if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n            let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.ZhMADOqoo0y8Q9bx\");\n            injury = injury.toObject();\n            injury.system.location.value = `${Math.clamped(Math.abs(test.result.SL) + 1, 1, 5)} ${injury.system.location.value}`\n            args.actor.createEmbeddedDocuments(\"Item\", [injury]);\n      }\n    });\n}",
-          "id": "nWRttvafUnh1XIZU"
+          "nWRttvafUnh1XIZU": {
+            "id": "nWRttvafUnh1XIZU",
+            "label": "Zmiażdżona stopa",
+            "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), { absolute: { difficulty: \"average\" } }).then(async test => {\n      await test.roll();\n      if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n            let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.ZhMADOqoo0y8Q9bx\");\n            injury = injury.toObject();\n            injury.system.location.value = `${Math.clamped(Math.abs(test.result.SL) + 1, 1, 5)} ${injury.system.location.value}`\n            args.actor.createEmbeddedDocuments(\"Item\", [injury]);\n      }\n    });\n}"
+          }
         }
-      ]
+      ],
+      "wounds": "5",
+      "location": "Leg"
     },
     {
       "id": "nZK8CBZTlWTQG2K8",
@@ -900,22 +1194,30 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.nZK8CBZTlWTQG2K8",
       "effects": [
         {
-          "label": "Oszołomienie",
-          "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');",
-          "id": "wAq76bdunkcb9wTw"
+          "wAq76bdunkcb9wTw": {
+            "id": "wAq76bdunkcb9wTw",
+            "label": "Oszołomienie",
+            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');"
+          }
         },
         {
-          "label": "Zmiażdżona żuchwa",
-          "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.hCadFsTRvLN9faaY\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n\nif (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n     });\n}",
-          "id": "WjHgjbRuh0M3H8g6"
+          "WjHgjbRuh0M3H8g6": {
+            "id": "WjHgjbRuh0M3H8g6",
+            "label": "Zmiażdżona żuchwa",
+            "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.hCadFsTRvLN9faaY\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n\nif (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n     });\n}"
+          }
         }
-      ]
+      ],
+      "wounds": "4",
+      "location": "Head"
     },
     {
       "id": "P6opRTvzX1rgzfgE",
       "name": "Stłuczony obojczyk",
       "description": "<p>Losowo wyznacz ramię. Wszystko, co było trzymane w dłoni po tej stronie ciała, wypada, a ramię jest bezużyteczne przez [[/r 1d10]] Rund.</p>",
-      "sourceId": "Compendium.wfrp4e-core.criticals.P6opRTvzX1rgzfgE"
+      "sourceId": "Compendium.wfrp4e-core.criticals.P6opRTvzX1rgzfgE",
+      "wounds": "2",
+      "location": "Body"
     },
     {
       "id": "PhCFqJif8iQaiOm0",
@@ -924,11 +1226,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.PhCFqJif8iQaiOm0",
       "effects": [
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "zZmnf7k6JvRb7ULV"
+          "zZmnf7k6JvRb7ULV": {
+            "id": "zZmnf7k6JvRb7ULV",
+            "label": "Krwawienie",
+            "script": null
+          }
         }
-      ]
+      ],
+      "wounds": "1",
+      "location": "Body"
     },
     {
       "id": "pjJagbErW5tu3LJR",
@@ -937,16 +1243,22 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.pjJagbErW5tu3LJR",
       "effects": [
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "4eZoTEFC5ZbQifn7"
+          "4eZoTEFC5ZbQifn7": {
+            "id": "4eZoTEFC5ZbQifn7",
+            "label": "Krwawienie",
+            "script": null
+          }
         },
         {
-          "label": "Rana brzucha",
-          "script": "let disease = await fromUuid(\"Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb\");\nargs.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()]);",
-          "id": "KSraZUHBV7dm7jom"
+          "KSraZUHBV7dm7jom": {
+            "id": "KSraZUHBV7dm7jom",
+            "label": "Rana brzucha",
+            "script": "let disease = await fromUuid(\"Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb\");\nargs.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()]);"
+          }
         }
-      ]
+      ],
+      "wounds": "4",
+      "location": "Body"
     },
     {
       "id": "qWJ2HWWj2411KSau",
@@ -955,21 +1267,29 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.qWJ2HWWj2411KSau",
       "effects": [
         {
-          "label": "Oszołomienie",
-          "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');",
-          "id": "6FBVi7EOhHnDesA0"
+          "6FBVi7EOhHnDesA0": {
+            "id": "6FBVi7EOhHnDesA0",
+            "label": "Oszołomienie",
+            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');"
+          }
         },
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "jXnxVAZFV82gebaR"
+          "jXnxVAZFV82gebaR": {
+            "id": "jXnxVAZFV82gebaR",
+            "label": "Krwawienie",
+            "script": null
+          }
         },
         {
-          "label": "Zgruchotana szczęka",
-          "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.fBcZhOBn8IpoVqQ1\");\ninjury = injury.toObject()\nlet teeth = (await new Roll(\"1d10\").roll()).total;\nChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b> loses ${teeth} teeth`, speaker : {alias: this.effect.label}});\ninjury.system.location.value = `${teeth} ${injury.system.location.value}`;\nargs.actor.createEmbeddedDocuments(\"Item\", [injury]);\n\ninjury = await fromUuid(\"Compendium.wfrp4e-core.injuries.rkJA1DlK51QuRlJy\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n\ninjury = await fromUuid(\"Compendium.wfrp4e-core.injuries.hCadFsTRvLN9faaY\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n\nif (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n     });\n}",
-          "id": "Ru3d8ZlbJSm8NlaU"
+          "Ru3d8ZlbJSm8NlaU": {
+            "id": "Ru3d8ZlbJSm8NlaU",
+            "label": "Zgruchotana szczęka",
+            "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.fBcZhOBn8IpoVqQ1\");\ninjury = injury.toObject()\nlet teeth = (await new Roll(\"1d10\").roll()).total;\nChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b> loses ${teeth} teeth`, speaker : {alias: this.effect.label}});\ninjury.system.location.value = `${teeth} ${injury.system.location.value}`;\nargs.actor.createEmbeddedDocuments(\"Item\", [injury]);\n\ninjury = await fromUuid(\"Compendium.wfrp4e-core.injuries.rkJA1DlK51QuRlJy\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n\ninjury = await fromUuid(\"Compendium.wfrp4e-core.injuries.hCadFsTRvLN9faaY\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n\nif (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n     });\n}"
+          }
         }
-      ]
+      ],
+      "wounds": "5",
+      "location": "Head"
     },
     {
       "id": "RLBB8XHqLDM4XejE",
@@ -978,11 +1298,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.RLBB8XHqLDM4XejE",
       "effects": [
         {
-          "label": "Stłuczone żebra",
-          "script": "if (args.type == \"skill\" && args.item.characteristic.key == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}\nif (args.type == \"characteristic\" && args.item == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}",
-          "id": "vIjf5xtB3kGSjrwR"
+          "vIjf5xtB3kGSjrwR": {
+            "id": "vIjf5xtB3kGSjrwR",
+            "label": "Stłuczone żebra",
+            "script": "if (args.type == \"skill\" && args.item.characteristic.key == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}\nif (args.type == \"characteristic\" && args.item == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}"
+          }
         }
-      ]
+      ],
+      "wounds": "2",
+      "location": "Body"
     },
     {
       "id": "S8sbrHd9zxaYiDFJ",
@@ -991,11 +1315,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.S8sbrHd9zxaYiDFJ",
       "effects": [
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "hWDMK94Lo7Vlo7qF"
+          "hWDMK94Lo7Vlo7qF": {
+            "id": "hWDMK94Lo7Vlo7qF",
+            "label": "Krwawienie",
+            "script": null
+          }
         }
-      ]
+      ],
+      "wounds": "2",
+      "location": "Body"
     },
     {
       "id": "sgBDLL1iLenHJ5um",
@@ -1004,16 +1332,22 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.sgBDLL1iLenHJ5um",
       "effects": [
         {
-          "label": "Uszkodzenie tętnicy",
-          "script": "if (args.opposedTest.result.hitloc.value == \"body\") {\r\n    await args.actor.addCondition(\"bleeding\", 2);\r\n}",
-          "id": "7JMNhRyCgMlmfLLK"
+          "7JMNhRyCgMlmfLLK": {
+            "id": "7JMNhRyCgMlmfLLK",
+            "label": "Uszkodzenie tętnicy",
+            "script": "if (args.opposedTest.result.hitloc.value == \"body\") {\r\n    await args.actor.addCondition(\"bleeding\", 2);\r\n}"
+          }
         },
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "fcOYmx9WLncp95Sl"
+          "fcOYmx9WLncp95Sl": {
+            "id": "fcOYmx9WLncp95Sl",
+            "label": "Krwawienie",
+            "script": null
+          }
         }
-      ]
+      ],
+      "wounds": "3",
+      "location": "Body"
     },
     {
       "id": "ShiLe2LWvvwTIa4o",
@@ -1022,16 +1356,22 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.ShiLe2LWvvwTIa4o",
       "effects": [
         {
-          "label": "Zerwane mięśnie",
-          "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.GlShFJF2TpsNh1FX\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);",
-          "id": "AdMOpRguQRPZCjVm"
+          "AdMOpRguQRPZCjVm": {
+            "id": "AdMOpRguQRPZCjVm",
+            "label": "Zerwane mięśnie",
+            "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.GlShFJF2TpsNh1FX\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);"
+          }
         },
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "kYbKdoUQIYq3zSTN"
+          "kYbKdoUQIYq3zSTN": {
+            "id": "kYbKdoUQIYq3zSTN",
+            "label": "Krwawienie",
+            "script": null
+          }
         }
-      ]
+      ],
+      "wounds": "2",
+      "location": "Arm"
     },
     {
       "id": "sJU1kEp6yoHPmhIc",
@@ -1040,11 +1380,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.sJU1kEp6yoHPmhIc",
       "effects": [
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "d2Gh2PYEwe7NdMWQ"
+          "d2Gh2PYEwe7NdMWQ": {
+            "id": "d2Gh2PYEwe7NdMWQ",
+            "label": "Krwawienie",
+            "script": null
+          }
         }
-      ]
+      ],
+      "wounds": "1",
+      "location": "Arm"
     },
     {
       "id": "sSSUZXOXK2DSpxGx",
@@ -1053,16 +1397,22 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.sSSUZXOXK2DSpxGx",
       "effects": [
         {
-          "label": "Zawadiacka rana",
-          "script": null,
-          "id": "pnqEtu6lQlejU6CV"
+          "pnqEtu6lQlejU6CV": {
+            "id": "pnqEtu6lQlejU6CV",
+            "label": "Zawadiacka rana",
+            "script": null
+          }
         },
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "TPyAKE9d05Y7HuxL"
+          "TPyAKE9d05Y7HuxL": {
+            "id": "TPyAKE9d05Y7HuxL",
+            "label": "Krwawienie",
+            "script": null
+          }
         }
-      ]
+      ],
+      "wounds": "1",
+      "location": "Head"
     },
     {
       "id": "TMjbr94rrtCqM6bk",
@@ -1071,11 +1421,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.TMjbr94rrtCqM6bk",
       "effects": [
         {
-          "label": "Stłuczony palec",
-          "script": "if (args.type == \"skill\" && args.item.characteristic.key == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}\nif (args.type == \"characteristic\" && args.item == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}",
-          "id": "Uxp4sb58T0fiOXEB"
+          "Uxp4sb58T0fiOXEB": {
+            "id": "Uxp4sb58T0fiOXEB",
+            "label": "Stłuczony palec",
+            "script": "if (args.type == \"skill\" && args.item.characteristic.key == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}\nif (args.type == \"characteristic\" && args.item == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}"
+          }
         }
-      ]
+      ],
+      "wounds": "1",
+      "location": "Leg"
     },
     {
       "id": "TxXIUDqoon9TivpO",
@@ -1084,11 +1438,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.TxXIUDqoon9TivpO",
       "effects": [
         {
-          "label": "Skręcone kolano",
-          "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.3S4OYOZLauXctmev\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);",
-          "id": "yJmV5ry9bcyqV5fL"
+          "yJmV5ry9bcyqV5fL": {
+            "id": "yJmV5ry9bcyqV5fL",
+            "label": "Skręcone kolano",
+            "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.3S4OYOZLauXctmev\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);"
+          }
         }
-      ]
+      ],
+      "wounds": "3",
+      "location": "Leg"
     },
     {
       "id": "tZc5KDSVW36sFx5G",
@@ -1097,11 +1455,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.tZc5KDSVW36sFx5G",
       "effects": [
         {
-          "label": "Odcięte ramię",
-          "script": "await this.actor.addCondition(\"dead\");",
-          "id": "Te5ujLd9jiLGSVJr"
+          "Te5ujLd9jiLGSVJr": {
+            "id": "Te5ujLd9jiLGSVJr",
+            "label": "Odcięte ramię",
+            "script": "await this.actor.addCondition(\"dead\");"
+          }
         }
-      ]
+      ],
+      "wounds": "Death",
+      "location": "Arm"
     },
     {
       "id": "UC2zRorETcI8rheP",
@@ -1110,21 +1472,29 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.UC2zRorETcI8rheP",
       "effects": [
         {
-          "label": "Szybkość zmniejszona o połowę",
-          "script": "args.actor.details.move.value /= 2;",
-          "id": "5A8VfGUQYx8Q0M0G"
+          "5A8VfGUQYx8Q0M0G": {
+            "id": "5A8VfGUQYx8Q0M0G",
+            "label": "Szybkość zmniejszona o połowę",
+            "script": "args.actor.details.move.value /= 2;"
+          }
         },
         {
-          "label": "Oszołomienie",
-          "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');",
-          "id": "NrZ8LRI1dsP46RmJ"
+          "NrZ8LRI1dsP46RmJ": {
+            "id": "NrZ8LRI1dsP46RmJ",
+            "label": "Oszołomienie",
+            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');"
+          }
         },
         {
-          "label": "Bez tchu",
-          "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"average\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}",
-          "id": "uaaFc96JlTCALmeJ"
+          "uaaFc96JlTCALmeJ": {
+            "id": "uaaFc96JlTCALmeJ",
+            "label": "Bez tchu",
+            "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"average\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}"
+          }
         }
-      ]
+      ],
+      "wounds": "2",
+      "location": "Body"
     },
     {
       "id": "uU2ibNRgeEjuSN7e",
@@ -1133,21 +1503,29 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.uU2ibNRgeEjuSN7e",
       "effects": [
         {
-          "label": "Powalenie",
-          "script": "args.prefillModifiers.modifier -= 20;",
-          "id": "m5CJfHO2ZfBORtkr"
+          "m5CJfHO2ZfBORtkr": {
+            "id": "m5CJfHO2ZfBORtkr",
+            "label": "Powalenie",
+            "script": "args.prefillModifiers.modifier -= 20;"
+          }
         },
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "SlYdtHgMRI6vCztC"
+          "SlYdtHgMRI6vCztC": {
+            "id": "SlYdtHgMRI6vCztC",
+            "label": "Krwawienie",
+            "script": null
+          }
         },
         {
-          "label": "Porąbana noga",
-          "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.7mCcI3q7hgWcmbBU\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n\nif (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"stunned\");\n        }\n     });\n}",
-          "id": "xN966TmmV1zEtGy9"
+          "xN966TmmV1zEtGy9": {
+            "id": "xN966TmmV1zEtGy9",
+            "label": "Porąbana noga",
+            "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.7mCcI3q7hgWcmbBU\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n\nif (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"stunned\");\n        }\n     });\n}"
+          }
         }
-      ]
+      ],
+      "wounds": "3",
+      "location": "Leg"
     },
     {
       "id": "VAKUqXH9nGyBXiGy",
@@ -1156,22 +1534,30 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.VAKUqXH9nGyBXiGy",
       "effects": [
         {
-          "label": "Cios w bebechy",
-          "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"easy\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}",
-          "id": "3EKhg6lJsU12PXIN"
+          "3EKhg6lJsU12PXIN": {
+            "id": "3EKhg6lJsU12PXIN",
+            "label": "Cios w bebechy",
+            "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"easy\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}"
+          }
         },
         {
-          "label": "Oszołomienie",
-          "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');",
-          "id": "cTrI8BgwwT6KbOcx"
+          "cTrI8BgwwT6KbOcx": {
+            "id": "cTrI8BgwwT6KbOcx",
+            "label": "Oszołomienie",
+            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');"
+          }
         }
-      ]
+      ],
+      "wounds": "1",
+      "location": "Body"
     },
     {
       "id": "VcKpiwNiQVwJJQVm",
       "name": "Bardzo zdrętwiałe ramię",
       "description": "<p>W wyniku ataku ramię zupełnie drętwieje. Postać upuszcza wszystko, co trzymała w dłoni, która przez [[/r 1d10]] Rund - Bonus z Wytrzymałości (co najmniej 1) jest bezużyteczna. Przez ten czas należy traktować dłoń jak straconą</p>",
-      "sourceId": "Compendium.wfrp4e-core.criticals.VcKpiwNiQVwJJQVm"
+      "sourceId": "Compendium.wfrp4e-core.criticals.VcKpiwNiQVwJJQVm",
+      "wounds": "2",
+      "location": "Arm"
     },
     {
       "id": "wbbDM7rUetyWYgLt",
@@ -1180,11 +1566,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.wbbDM7rUetyWYgLt",
       "effects": [
         {
-          "label": "Zwichnięta kostka",
-          "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.nF5z1OEhpi4t6a6S\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);",
-          "id": "rtWfTN6wJ4BbJslf"
+          "rtWfTN6wJ4BbJslf": {
+            "id": "rtWfTN6wJ4BbJslf",
+            "label": "Zwichnięta kostka",
+            "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.nF5z1OEhpi4t6a6S\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);"
+          }
         }
-      ]
+      ],
+      "wounds": "2",
+      "location": "Leg"
     },
     {
       "id": "wnYgHZm503oOERSf",
@@ -1193,11 +1583,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.wnYgHZm503oOERSf",
       "effects": [
         {
-          "label": "Nadwyrężone kolano",
-          "script": "if (args.type == \"skill\" && args.item.characteristic.key == \"ag\") {\n   args.prefillModifiers.modifier -= 20;\n}\nif (args.type == \"characteristic\" && args.item == \"ag\") {\n   args.prefillModifiers.modifier -= 20;\n}",
-          "id": "BjIyeZdTw8TPV9qC"
+          "BjIyeZdTw8TPV9qC": {
+            "id": "BjIyeZdTw8TPV9qC",
+            "label": "Nadwyrężone kolano",
+            "script": "if (args.type == \"skill\" && args.item.characteristic.key == \"ag\") {\n   args.prefillModifiers.modifier -= 20;\n}\nif (args.type == \"characteristic\" && args.item == \"ag\") {\n   args.prefillModifiers.modifier -= 20;\n}"
+          }
         }
-      ]
+      ],
+      "wounds": "2",
+      "location": "Leg"
     },
     {
       "id": "Wpsybql9MWbWZUeH",
@@ -1206,21 +1600,29 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.Wpsybql9MWbWZUeH",
       "effects": [
         {
-          "label": "Oszołomienie",
-          "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');",
-          "id": "AgeemYAqqhNVFHBz"
+          "AgeemYAqqhNVFHBz": {
+            "id": "AgeemYAqqhNVFHBz",
+            "label": "Oszołomienie",
+            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');"
+          }
         },
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "GlKd8FG7CTvU8JRC"
+          "GlKd8FG7CTvU8JRC": {
+            "id": "GlKd8FG7CTvU8JRC",
+            "label": "Krwawienie",
+            "script": null
+          }
         },
         {
-          "label": "Głębokie cięcie",
-          "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n    });\n}\n\nlet injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.GlShFJF2TpsNh1FX\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);",
-          "id": "nOCDyzwdMDX9kunm"
+          "nOCDyzwdMDX9kunm": {
+            "id": "nOCDyzwdMDX9kunm",
+            "label": "Głębokie cięcie",
+            "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n    });\n}\n\nlet injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.GlShFJF2TpsNh1FX\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);"
+          }
         }
-      ]
+      ],
+      "wounds": "3",
+      "location": "Arm"
     },
     {
       "id": "WRAuBX80vCwlnB0N",
@@ -1229,11 +1631,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.WRAuBX80vCwlnB0N",
       "effects": [
         {
-          "label": "Utrata równowagi",
-          "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}",
-          "id": "UEnlvAwvGq0076To"
+          "UEnlvAwvGq0076To": {
+            "id": "UEnlvAwvGq0076To",
+            "label": "Utrata równowagi",
+            "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}"
+          }
         }
-      ]
+      ],
+      "wounds": "1",
+      "location": "Leg"
     },
     {
       "id": "wTGR340dwvAgwA9v",
@@ -1242,11 +1648,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.wTGR340dwvAgwA9v",
       "effects": [
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "C28zNPsk79lesc2H"
+          "C28zNPsk79lesc2H": {
+            "id": "C28zNPsk79lesc2H",
+            "label": "Krwawienie",
+            "script": null
+          }
         }
-      ]
+      ],
+      "wounds": "1",
+      "location": "Leg"
     },
     {
       "id": "WWdCfTZCgcHK2soX",
@@ -1255,26 +1665,36 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.WWdCfTZCgcHK2soX",
       "effects": [
         {
-          "label": "Przecięte ścięgno",
-          "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n     });\n}\n\nlet injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.MnMZv7ZXoRqoH9dS\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);",
-          "id": "0aCPrsOCLEVcZGxF"
+          "0aCPrsOCLEVcZGxF": {
+            "id": "0aCPrsOCLEVcZGxF",
+            "label": "Przecięte ścięgno",
+            "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n     });\n}\n\nlet injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.MnMZv7ZXoRqoH9dS\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);"
+          }
         },
         {
-          "label": "Powalenie",
-          "script": "args.prefillModifiers.modifier -= 20;",
-          "id": "3WIVf1QT93cut5OA"
+          "3WIVf1QT93cut5OA": {
+            "id": "3WIVf1QT93cut5OA",
+            "label": "Powalenie",
+            "script": "args.prefillModifiers.modifier -= 20;"
+          }
         },
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "9FdeaoISEUYHNkxv"
+          "9FdeaoISEUYHNkxv": {
+            "id": "9FdeaoISEUYHNkxv",
+            "label": "Krwawienie",
+            "script": null
+          }
         },
         {
-          "label": "Oszołomienie",
-          "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');",
-          "id": "9qQs2OvZgvHzRHix"
+          "9qQs2OvZgvHzRHix": {
+            "id": "9qQs2OvZgvHzRHix",
+            "label": "Oszołomienie",
+            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');"
+          }
         }
-      ]
+      ],
+      "wounds": "5",
+      "location": "Arm"
     },
     {
       "id": "XqxT8WjUbhsibhWd",
@@ -1283,21 +1703,29 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.XqxT8WjUbhsibhWd",
       "effects": [
         {
-          "label": "Ogłuszenie",
-          "script": null,
-          "id": "FZuPzqtWTtFMIciJ"
+          "FZuPzqtWTtFMIciJ": {
+            "id": "FZuPzqtWTtFMIciJ",
+            "label": "Ogłuszenie",
+            "script": null
+          }
         },
         {
-          "label": "Zgruchotane ucho",
-          "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.8piWcBKFlQ2J1E3A\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);",
-          "id": "kaAFU5cxgv0idSQZ"
+          "kaAFU5cxgv0idSQZ": {
+            "id": "kaAFU5cxgv0idSQZ",
+            "label": "Zgruchotane ucho",
+            "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.8piWcBKFlQ2J1E3A\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);"
+          }
         },
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "lDs43plzT9i4Jxzb"
+          "lDs43plzT9i4Jxzb": {
+            "id": "lDs43plzT9i4Jxzb",
+            "label": "Krwawienie",
+            "script": null
+          }
         }
-      ]
+      ],
+      "wounds": "4",
+      "location": "Head"
     },
     {
       "id": "Z9aSUtiwhqVHENnR",
@@ -1306,11 +1734,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.Z9aSUtiwhqVHENnR",
       "effects": [
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "5EOJYNGGp4ZPXIGL"
+          "5EOJYNGGp4ZPXIGL": {
+            "id": "5EOJYNGGp4ZPXIGL",
+            "label": "Krwawienie",
+            "script": null
+          }
         }
-      ]
+      ],
+      "wounds": "2",
+      "location": "Arm"
     },
     {
       "id": "ZE7gT3UWkw7gKeMv",
@@ -1319,11 +1751,15 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.ZE7gT3UWkw7gKeMv",
       "effects": [
         {
-          "label": "Czyste złamanie",
-          "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"difficult\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"stunned\");\n        }\n    });\n    let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.4lj1ik958mbgAlaF\");\n    args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n}\n\n",
-          "id": "sVTAurntsVHWamj6"
+          "sVTAurntsVHWamj6": {
+            "id": "sVTAurntsVHWamj6",
+            "label": "Czyste złamanie",
+            "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"difficult\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"stunned\");\n        }\n    });\n    let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.4lj1ik958mbgAlaF\");\n    args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n}\n\n"
+          }
         }
-      ]
+      ],
+      "wounds": "3",
+      "location": "Arm"
     },
     {
       "id": "zNzlJWzCqmyLtnFS",
@@ -1332,16 +1768,22 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.zNzlJWzCqmyLtnFS",
       "effects": [
         {
-          "label": "Poważna rana klatki piersiowej",
-          "script": "if (args.opposedTest.result.hitloc.value == \"body\") {\r\n    await args.actor.addCondition(\"bleeding\", 2);\r\n}",
-          "id": "pZD9xrlAHiaRru0d"
+          "pZD9xrlAHiaRru0d": {
+            "id": "pZD9xrlAHiaRru0d",
+            "label": "Poważna rana klatki piersiowej",
+            "script": "if (args.opposedTest.result.hitloc.value == \"body\") {\r\n    await args.actor.addCondition(\"bleeding\", 2);\r\n}"
+          }
         },
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "T2qqXZGkwHjeIG23"
+          "T2qqXZGkwHjeIG23": {
+            "id": "T2qqXZGkwHjeIG23",
+            "label": "Krwawienie",
+            "script": null
+          }
         }
-      ]
+      ],
+      "wounds": "4",
+      "location": "Body"
     },
     {
       "id": "zXuy90mI1OLjxCvc",
@@ -1350,16 +1792,22 @@
       "sourceId": "Compendium.wfrp4e-core.criticals.zXuy90mI1OLjxCvc",
       "effects": [
         {
-          "label": "Krwawienie",
-          "script": null,
-          "id": "R8yyVjVN2G9uGe1Z"
+          "R8yyVjVN2G9uGe1Z": {
+            "id": "R8yyVjVN2G9uGe1Z",
+            "label": "Krwawienie",
+            "script": null
+          }
         },
         {
-          "label": "Uszkodzona tętnica",
-          "script": "if (args.opposedTest.result.hitloc.value == \"ARM_LOCATION_HERE\") { // lArm or rArm\n    await args.actor.addCondition(\"bleeding\", 2);\n}",
-          "id": "UGeKGGNmXVJAieTa"
+          "UGeKGGNmXVJAieTa": {
+            "id": "UGeKGGNmXVJAieTa",
+            "label": "Uszkodzona tętnica",
+            "script": "if (args.opposedTest.result.hitloc.value == \"ARM_LOCATION_HERE\") { // lArm or rArm\n    await args.actor.addCondition(\"bleeding\", 2);\n}"
+          }
         }
-      ]
+      ],
+      "wounds": "4",
+      "location": "Arm"
     }
   ]
 }

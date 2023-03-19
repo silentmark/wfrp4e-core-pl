@@ -28,9 +28,11 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.0r3moMIHXsBrcOyh",
       "effects": [
         {
-          "label": "Błogosławieństwo Wytrzymałości",
-          "script": null,
-          "id": "TZyqbCq1ywZ6LtTv"
+          "TZyqbCq1ywZ6LtTv": {
+            "id": "TZyqbCq1ywZ6LtTv",
+            "label": "Błogosławieństwo Wytrzymałości",
+            "script": null
+          }
         }
       ],
       "duration": "6 Rund",
@@ -71,9 +73,11 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.2WN0muIB2BFd4kBO",
       "effects": [
         {
-          "label": "Błogosławieństwo Prawości",
-          "script": null,
-          "id": "lfR1p5Ph2BQCPl3G"
+          "lfR1p5Ph2BQCPl3G": {
+            "id": "lfR1p5Ph2BQCPl3G",
+            "label": "Błogosławieństwo Prawości",
+            "script": null
+          }
         }
       ],
       "duration": "6 Rund",
@@ -96,9 +100,11 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.5fVTY8TSua3trOW8",
       "effects": [
         {
-          "label": "Płomień Wiary",
-          "script": "let damage = (await new Roll(\"1d10\").roll()).total;\nawait args.actor.applyBasicDamage(damage, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL})\nif (args.actor.has(\"Undead\") || args.actor.has(\"Daemonic\")) {\n  await args.actor.addCondition(\"ablaze\");\n}",
-          "id": "qpp49hHsrz2VmP1E"
+          "qpp49hHsrz2VmP1E": {
+            "id": "qpp49hHsrz2VmP1E",
+            "label": "Płomień Wiary",
+            "script": "let damage = (await new Roll(\"1d10\").roll()).total;\nawait args.actor.applyBasicDamage(damage, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL})\nif (args.actor.has(\"Undead\") || args.actor.has(\"Daemonic\")) {\n  await args.actor.addCondition(\"ablaze\");\n}"
+          }
         }
       ],
       "duration": "Natychmiast",
@@ -157,9 +163,11 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.By5dc8Q7ZAGpr177",
       "effects": [
         {
-          "label": "Błogosławieństwo Łowów",
-          "script": null,
-          "id": "tVy8wXAtGTHx0qsV"
+          "tVy8wXAtGTHx0qsV": {
+            "id": "tVy8wXAtGTHx0qsV",
+            "label": "Błogosławieństwo Łowów",
+            "script": null
+          }
         }
       ],
       "duration": "6 Rund",
@@ -173,9 +181,11 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.C92dpJPRYpkZFsGu",
       "effects": [
         {
-          "label": "Błogosławieństwo Uzdrawiania",
-          "script": "let wounds = args.actor.status.wounds;\nif (wounds.value < wounds.max) {\n   args.actor.update({\"system.status.wounds.value\" : wounds.value + 1});\n}",
-          "id": "xBeaS7jKIhHvsBaC"
+          "xBeaS7jKIhHvsBaC": {
+            "id": "xBeaS7jKIhHvsBaC",
+            "label": "Błogosławieństwo Uzdrawiania",
+            "script": "let wounds = args.actor.status.wounds;\nif (wounds.value < wounds.max) {\n   args.actor.update({\"system.status.wounds.value\" : wounds.value + 1});\n}"
+          }
         }
       ],
       "duration": "Natychmiast",
@@ -189,9 +199,11 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.Cg2Q3TV66cpmheHS",
       "effects": [
         {
-          "label": "Błogosławieństwo Odwagi",
-          "script": null,
-          "id": "xfFaPn5kqQz7CRBJ"
+          "xfFaPn5kqQz7CRBJ": {
+            "id": "xfFaPn5kqQz7CRBJ",
+            "label": "Błogosławieństwo Odwagi",
+            "script": null
+          }
         }
       ],
       "duration": "6 Rund",
@@ -223,9 +235,11 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.Dk0zjtcANtahntHx",
       "effects": [
         {
-          "label": "Aura odwagi",
-          "script": "let broken = args.actor.hasCondition(\"broken\");\nif (broken) {\n    await args.actor.removeCondition(\"broken\", broken.flags.wfrp4e.value);\n}",
-          "id": "FaH4jPWjtPWfjjv2"
+          "FaH4jPWjtPWfjjv2": {
+            "id": "FaH4jPWjtPWfjjv2",
+            "label": "Aura odwagi",
+            "script": "let broken = args.actor.hasCondition(\"broken\");\nif (broken) {\n    await args.actor.removeCondition(\"broken\", broken.flags.wfrp4e.value);\n}"
+          }
         }
       ],
       "duration": "Bonus Ogd Rund",
@@ -239,9 +253,11 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.eBRjKAF6U0yR0KK8",
       "effects": [
         {
-          "label": "Błogosławieństwo Dzikości",
-          "script": null,
-          "id": "LGXFRw2UC3M1ZCRf"
+          "LGXFRw2UC3M1ZCRf": {
+            "id": "LGXFRw2UC3M1ZCRf",
+            "label": "Błogosławieństwo Dzikości",
+            "script": null
+          }
         }
       ],
       "duration": "6 Rund",
@@ -255,9 +271,11 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.ElmLfnrXliStS9CP",
       "effects": [
         {
-          "label": "Błogosławieństwo Bitwy",
-          "script": null,
-          "id": "5kCCldIgCQLXAiqq"
+          "5kCCldIgCQLXAiqq": {
+            "id": "5kCCldIgCQLXAiqq",
+            "label": "Błogosławieństwo Bitwy",
+            "script": null
+          }
         }
       ],
       "duration": "6 Rund",
@@ -271,9 +289,11 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.ezVl3vFWTwHfNXL3",
       "effects": [
         {
-          "label": "Waleczność",
-          "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.talents.J9MK0AIaTbvd5oF6\");\nargs.actor.createEmbeddedDocuments(\"Item\", [item.toObject()]);",
-          "id": "PG0aFGzMCDuLR7fK"
+          "PG0aFGzMCDuLR7fK": {
+            "id": "PG0aFGzMCDuLR7fK",
+            "label": "Waleczność",
+            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.talents.J9MK0AIaTbvd5oF6\");\nargs.actor.createEmbeddedDocuments(\"Item\", [item.toObject()]);"
+          }
         }
       ],
       "duration": "Bonus Ogd Rund",
@@ -305,9 +325,11 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.fAlQcNUb6TZtPKqk",
       "effects": [
         {
-          "label": "Mądrość sowy",
-          "script": "if (args.type == \"characteristic\" && args.item == \"int\") {\n  args.prefillModifiers.modifier += 20;\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"int\") {\n    args.prefillModifiers.modifier += 20;\n  }\n}",
-          "id": "2lds6IDIyorYrvY4"
+          "2lds6IDIyorYrvY4": {
+            "id": "2lds6IDIyorYrvY4",
+            "label": "Mądrość sowy",
+            "script": "if (args.type == \"characteristic\" && args.item == \"int\") {\n  args.prefillModifiers.modifier += 20;\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"int\") {\n    args.prefillModifiers.modifier += 20;\n  }\n}"
+          }
         }
       ],
       "duration": "Bonus Ogd Rund",
@@ -321,9 +343,11 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.FElNQGNiPzaOwwKT",
       "effects": [
         {
-          "label": "Błogosławieństwo Charyzmy",
-          "script": null,
-          "id": "NO3FdQ5qx6B5PjPm"
+          "NO3FdQ5qx6B5PjPm": {
+            "id": "NO3FdQ5qx6B5PjPm",
+            "label": "Błogosławieństwo Charyzmy",
+            "script": null
+          }
         }
       ],
       "duration": "6 Rund",
@@ -355,9 +379,11 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.FRkIz2sR7ZC92W2G",
       "effects": [
         {
-          "label": "Błogosławieństwo Mądrości",
-          "script": null,
-          "id": "zcary1qugwge597m"
+          "zcary1qugwge597m": {
+            "id": "zcary1qugwge597m",
+            "label": "Błogosławieństwo Mądrości",
+            "script": null
+          }
         }
       ],
       "duration": "6 Rund",
@@ -398,14 +424,18 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.hL7B3d7A0sYYjHXn",
       "effects": [
         {
-          "label": "Na Cztery Łapy",
-          "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.talents.g4Q6AtzZuo5iIvD4\");\nargs.actor.createEmbeddedDocuments(\"Item\", [item.toObject()]);",
-          "id": "y7N8PrEOVgsRaJGR"
+          "y7N8PrEOVgsRaJGR": {
+            "id": "y7N8PrEOVgsRaJGR",
+            "label": "Na Cztery Łapy",
+            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.talents.g4Q6AtzZuo5iIvD4\");\nargs.actor.createEmbeddedDocuments(\"Item\", [item.toObject()]);"
+          }
         },
         {
-          "label": "Spryt Ranalda",
-          "script": "if (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))) {\n    args.prefillModifiers.modifier += 10;\n}",
-          "id": "yAJjiwiK0OSoIrkf"
+          "yAJjiwiK0OSoIrkf": {
+            "id": "yAJjiwiK0OSoIrkf",
+            "label": "Spryt Ranalda",
+            "script": "if (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))) {\n    args.prefillModifiers.modifier += 10;\n}"
+          }
         }
       ],
       "duration": "Bonus Zr Rund",
@@ -437,9 +467,11 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.iIfYOlNrLb0uiV8c",
       "effects": [
         {
-          "label": "Błogosławieństwo Szczęścia",
-          "script": null,
-          "id": "FDxjikn1S8EqbYZU"
+          "FDxjikn1S8EqbYZU": {
+            "id": "FDxjikn1S8EqbYZU",
+            "label": "Błogosławieństwo Szczęścia",
+            "script": null
+          }
         }
       ],
       "duration": "6 Rund",
@@ -480,9 +512,11 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.Jkt465WPdRcejLwl",
       "effects": [
         {
-          "label": "Błogosławieństwo Zdrowia",
-          "script": null,
-          "id": "0MpJUKwHZIc5wMWy"
+          "0MpJUKwHZIc5wMWy": {
+            "id": "0MpJUKwHZIc5wMWy",
+            "label": "Błogosławieństwo Zdrowia",
+            "script": null
+          }
         }
       ],
       "duration": "Natychmiast",
@@ -514,9 +548,11 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.K5DE9cceinUTIrem",
       "effects": [
         {
-          "label": "Błogosławieństwo Ochrony",
-          "script": "ChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b> must pass an <b>Average (+20) Willpower</b> Test to attack this target!`, speaker : {alias : this.effect.label}});\nui.notifications.notify(`${this.actor.prototypeToken.name} must pass an <b>Average (+20) Willpower</b> Test to attack this target!`);",
-          "id": "qMveUjAJldH1xhlZ"
+          "qMveUjAJldH1xhlZ": {
+            "id": "qMveUjAJldH1xhlZ",
+            "label": "Błogosławieństwo Ochrony",
+            "script": "ChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b> must pass an <b>Average (+20) Willpower</b> Test to attack this target!`, speaker : {alias : this.effect.label}});\nui.notifications.notify(`${this.actor.prototypeToken.name} must pass an <b>Average (+20) Willpower</b> Test to attack this target!`);"
+          }
         }
       ],
       "duration": "6 Rund",
@@ -530,9 +566,11 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.KSDrXcieyRc37YI7",
       "effects": [
         {
-          "label": "Błogosławieństwo Siły",
-          "script": null,
-          "id": "Gas9DsCrikTUmUtu"
+          "Gas9DsCrikTUmUtu": {
+            "id": "Gas9DsCrikTUmUtu",
+            "label": "Błogosławieństwo Siły",
+            "script": null
+          }
         }
       ],
       "duration": "6 Rund",
@@ -546,9 +584,11 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.maUl7MoLvuvTOhM0",
       "effects": [
         {
-          "label": "Błogosławieństwo Wdzięku",
-          "script": null,
-          "id": "GjyHbaIqJLZYxLq4"
+          "GjyHbaIqJLZYxLq4": {
+            "id": "GjyHbaIqJLZYxLq4",
+            "label": "Błogosławieństwo Wdzięku",
+            "script": null
+          }
         }
       ],
       "duration": "6 Rund",
@@ -562,14 +602,18 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.mXKrxO8WRZ9QLHA6",
       "effects": [
         {
-          "label": "Zwiększenie Szybkości",
-          "script": null,
-          "id": "DIcpr650MAJVHQ5u"
+          "DIcpr650MAJVHQ5u": {
+            "id": "DIcpr650MAJVHQ5u",
+            "label": "Zwiększenie Szybkości",
+            "script": null
+          }
         },
         {
-          "label": "Rączy jeleń",
-          "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.talents.CV9btQn09S9Fn8Jk\");\nargs.actor.createEmbeddedDocuments(\"Item\", [item.toObject()]);",
-          "id": "q7pJlPm8uR0UxxN1"
+          "q7pJlPm8uR0UxxN1": {
+            "id": "q7pJlPm8uR0UxxN1",
+            "label": "Rączy jeleń",
+            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.talents.CV9btQn09S9Fn8Jk\");\nargs.actor.createEmbeddedDocuments(\"Item\", [item.toObject()]);"
+          }
         }
       ],
       "duration": "Bonus Ogd Rund",
@@ -601,9 +645,11 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.nyZNUwJ54MTLKQ7Y",
       "effects": [
         {
-          "label": "Zew furii",
-          "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.psychologies.5hH73j2NgPdsLCZN\");\nargs.actor.createEmbeddedDocuments(\"Item\", [item.toObject()]);",
-          "id": "Bt7ExFoPhWP05nr8"
+          "Bt7ExFoPhWP05nr8": {
+            "id": "Bt7ExFoPhWP05nr8",
+            "label": "Zew furii",
+            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.psychologies.5hH73j2NgPdsLCZN\");\nargs.actor.createEmbeddedDocuments(\"Item\", [item.toObject()]);"
+          }
         }
       ],
       "duration": "Bonus Ogd Rund",
@@ -644,9 +690,11 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.OkKWAfnMiHfxhTnB",
       "effects": [
         {
-          "label": "Błogosławieństwo Finezji",
-          "script": null,
-          "id": "HZaxjSj49yUXZYCn"
+          "HZaxjSj49yUXZYCn": {
+            "id": "HZaxjSj49yUXZYCn",
+            "label": "Błogosławieństwo Finezji",
+            "script": null
+          }
         }
       ],
       "duration": "6 Rund",
@@ -660,9 +708,11 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.ONz21FviMRk3AyvE",
       "effects": [
         {
-          "label": "Oplątanie",
-          "script": "let num = 1 + {{overcast.usage.other.count}};\nif (!num || num <= 0); {\n   num = 1;\n}\nawait args.actor.addCondition(\"entangled\", num);",
-          "id": "FbFPvypAtB428U0r"
+          "FbFPvypAtB428U0r": {
+            "id": "FbFPvypAtB428U0r",
+            "label": "Oplątanie",
+            "script": "let num = 1 + {{overcast.usage.other.count}};\nif (!num || num <= 0); {\n   num = 1;\n}\nawait args.actor.addCondition(\"entangled\", num);"
+          }
         }
       ],
       "duration": "Natychmiast",
@@ -685,9 +735,11 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.PcKMAEF6UoaPSK6d",
       "effects": [
         {
-          "label": "Kły i Pazury",
-          "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.pLW9SVX0TVTYPiPv\");\nitem = item.toObject();\nitem.system.specification.value = 3;\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.AtpAudHA4ybXVlWM\");\nitem = item.toObject();\nitem.system.specification.value = 4;\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);",
-          "id": "1TWDvZQnuHAsfxxd"
+          "1TWDvZQnuHAsfxxd": {
+            "id": "1TWDvZQnuHAsfxxd",
+            "label": "Kły i Pazury",
+            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.pLW9SVX0TVTYPiPv\");\nitem = item.toObject();\nitem.system.specification.value = 3;\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.AtpAudHA4ybXVlWM\");\nitem = item.toObject();\nitem.system.specification.value = 4;\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);"
+          }
         }
       ],
       "duration": "Bonus Ogd Rund",
@@ -701,9 +753,11 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.Q91bWCEn0gt33fGT",
       "effects": [
         {
-          "label": "Gorejące słońce",
-          "script": "if (\"{{outcome}}\" == \"success\") {\n  let blinded = 1 + {{overcast.usage.other.count}};\n  await args.actor.addCondition(\"blinded\", blinded);\n}",
-          "id": "JlsdDkPK9j9Y65sB"
+          "JlsdDkPK9j9Y65sB": {
+            "id": "JlsdDkPK9j9Y65sB",
+            "label": "Gorejące słońce",
+            "script": "if (\"{{outcome}}\" == \"success\") {\n  let blinded = 1 + {{overcast.usage.other.count}};\n  await args.actor.addCondition(\"blinded\", blinded);\n}"
+          }
         }
       ],
       "duration": "Natychmiast",
@@ -744,9 +798,11 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.rbdxcYoj8N2eMaqV",
       "effects": [
         {
-          "label": "Wieczny odpoczynek",
-          "script": "if (args.actor.has(game.i18n.localize(\"NAME.Undead\")) && args.actor.has(game.i18n.localize(\"Construct\"))) {\n   await args.actor.addCondition(\"dead\");\n}",
-          "id": "gvhH2LxUqQQxN6R8"
+          "gvhH2LxUqQQxN6R8": {
+            "id": "gvhH2LxUqQQxN6R8",
+            "label": "Wieczny odpoczynek",
+            "script": "if (args.actor.has(game.i18n.localize(\"NAME.Undead\")) && args.actor.has(game.i18n.localize(\"Construct\"))) {\n   await args.actor.addCondition(\"dead\");\n}"
+          }
         }
       ],
       "duration": "Natychmiast",
@@ -760,9 +816,11 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.rjkMzFwN1trbSLL8",
       "effects": [
         {
-          "label": "Kometa Sigmara",
-          "script": "await args.actor.addCondition(\"ablaze\");",
-          "id": "dx14txcPj5zl0vjZ"
+          "dx14txcPj5zl0vjZ": {
+            "id": "dx14txcPj5zl0vjZ",
+            "label": "Kometa Sigmara",
+            "script": "await args.actor.addCondition(\"ablaze\");"
+          }
         }
       ],
       "duration": "Natychmiast",
@@ -785,9 +843,11 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.sdSy4k7ygDhAjSSX",
       "effects": [
         {
-          "label": "Zniszczenie ożywieńca",
-          "script": "if (args.actor.has(game.i18n.localize(\"NAME.Undead\"))) {\n    let damage = (await new Roll(\"1d10\").roll()).total;\n    await args.actor.applyBasicDamage(damage, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL});\n}",
-          "id": "HqH1WB4M1YCR0kRg"
+          "HqH1WB4M1YCR0kRg": {
+            "id": "HqH1WB4M1YCR0kRg",
+            "label": "Zniszczenie ożywieńca",
+            "script": "if (args.actor.has(game.i18n.localize(\"NAME.Undead\"))) {\n    let damage = (await new Roll(\"1d10\").roll()).total;\n    await args.actor.applyBasicDamage(damage, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL});\n}"
+          }
         }
       ],
       "duration": "Natychmiast",
@@ -846,9 +906,11 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.tMocig1z9dHKNiCT",
       "effects": [
         {
-          "label": "Błogosławieństwo Sprytu",
-          "script": null,
-          "id": "HzWovpDiGQ129yZu"
+          "HzWovpDiGQ129yZu": {
+            "id": "HzWovpDiGQ129yZu",
+            "label": "Błogosławieństwo Sprytu",
+            "script": null
+          }
         }
       ],
       "duration": "6 Rund",
@@ -871,9 +933,11 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.uMECZBuDnb3qkc7k",
       "effects": [
         {
-          "label": "Wytrwałość Eremity",
-          "script": "let stunned = args.actor.hasCondition(\"stunned\")\nif (stunned)\n   setProperty(stunned, \"flags.wfrp4e.script\", \"\")\n\nlet poisoned= args.actor.hasCondition(\"poisoned\")\nif (poisoned)\n   setProperty(poisoned, \"flags.wfrp4e.script\", \"\")\n\nlet deafened = args.actor.hasCondition(\"deafened\")\nif (deafened)\n   setProperty(deafened, \"flags.wfrp4e.effectTrigger\", \"\")\n\nlet entangled = args.actor.hasCondition(\"entangled\")\nif (entangled)\n   setProperty(entangled, \"flags.wfrp4e.effectTrigger\", \"\")\n\nlet fatigued = args.actor.hasCondition(\"fatigued\")\nif (fatigued)\n   setProperty(fatigued, \"flags.wfrp4e.script\", \"\")\n\nlet blinded = args.actor.hasCondition(\"blinded\")\nif (blinded)\n   setProperty(blinded, \"flags.wfrp4e.effectTrigger\", \"\")\n\nlet broken = args.actor.hasCondition(\"broken\")\nif (broken)\n   setProperty(broken, \"flags.wfrp4e.effectTrigger\", \"\")\n\nlet prone= args.actor.hasCondition(\"prone\")\nif (prone)\n   setProperty(prone, \"flags.wfrp4e.effectTrigger\", \"\")",
-          "id": "aaiZynMi60jGc0Jn"
+          "aaiZynMi60jGc0Jn": {
+            "id": "aaiZynMi60jGc0Jn",
+            "label": "Wytrwałość Eremity",
+            "script": "let stunned = args.actor.hasCondition(\"stunned\")\nif (stunned)\n   setProperty(stunned, \"flags.wfrp4e.script\", \"\")\n\nlet poisoned= args.actor.hasCondition(\"poisoned\")\nif (poisoned)\n   setProperty(poisoned, \"flags.wfrp4e.script\", \"\")\n\nlet deafened = args.actor.hasCondition(\"deafened\")\nif (deafened)\n   setProperty(deafened, \"flags.wfrp4e.effectTrigger\", \"\")\n\nlet entangled = args.actor.hasCondition(\"entangled\")\nif (entangled)\n   setProperty(entangled, \"flags.wfrp4e.effectTrigger\", \"\")\n\nlet fatigued = args.actor.hasCondition(\"fatigued\")\nif (fatigued)\n   setProperty(fatigued, \"flags.wfrp4e.script\", \"\")\n\nlet blinded = args.actor.hasCondition(\"blinded\")\nif (blinded)\n   setProperty(blinded, \"flags.wfrp4e.effectTrigger\", \"\")\n\nlet broken = args.actor.hasCondition(\"broken\")\nif (broken)\n   setProperty(broken, \"flags.wfrp4e.effectTrigger\", \"\")\n\nlet prone= args.actor.hasCondition(\"prone\")\nif (prone)\n   setProperty(prone, \"flags.wfrp4e.effectTrigger\", \"\")"
+          }
         }
       ],
       "duration": "Bonus Ogd Rund",
@@ -905,9 +969,11 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.V8GCeqgk1FNGFg76",
       "effects": [
         {
-          "label": "Tarcza Myrmidii",
-          "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 1;\nAP[\"rArm\"].value += 1;\nAP[\"lArm\"].value += 1;\nAP[\"body\"].value += 1;\nAP[\"lLeg\"].value += 1;\nAP[\"rLeg\"].value += 1;",
-          "id": "4hBoeFxZYT68Npxr"
+          "4hBoeFxZYT68Npxr": {
+            "id": "4hBoeFxZYT68Npxr",
+            "label": "Tarcza Myrmidii",
+            "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 1;\nAP[\"rArm\"].value += 1;\nAP[\"lArm\"].value += 1;\nAP[\"body\"].value += 1;\nAP[\"lLeg\"].value += 1;\nAP[\"rLeg\"].value += 1;"
+          }
         }
       ],
       "duration": "Bonus Ogd Rund",
@@ -921,9 +987,11 @@
       "sourceId": "Compendium.wfrp4e-core.prayers.VUyCJ5LRPkuC5iZx",
       "effects": [
         {
-          "label": "Chód marynarza",
-          "script": "await args.actor.addCondition(\"blinded\")\nawait args.actor.addCondition(\"deafened\")\nawait args.actor.addCondition(\"fatigued\")",
-          "id": "s0zdvcCpdHza4MZf"
+          "s0zdvcCpdHza4MZf": {
+            "id": "s0zdvcCpdHza4MZf",
+            "label": "Chód marynarza",
+            "script": "await args.actor.addCondition(\"blinded\")\nawait args.actor.addCondition(\"deafened\")\nawait args.actor.addCondition(\"fatigued\")"
+          }
         }
       ],
       "duration": "Bonus Ogd Rund",
