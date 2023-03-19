@@ -12,7 +12,7 @@ Hooks.on("init", () => {
 		name: "WFRP4e Podręcznik Główny - Konfiguracja",
 		label: "Konfiguracja",
 		hint: "Importuj lub aktualizuj zawartość modułu podręcznika głównego",
-		type: WFRP4eCoreInitWrapper,
+		type: WFRP4eCoreInitWrapperPL,
 		restricted: true,
 	});
 });
@@ -28,7 +28,7 @@ Hooks.on("renderCompendiumDirectory", async () => {
 	}
 });
 
-class WFRP4eCoreInitWrapper extends FormApplication {
+class WFRP4eCoreInitWrapperPL extends WFRP4eCoreInitWrapper {
 	render() {
 		let html = `<img src="/modules/wfrp4e-core/art/ui/logo.webp" style="margin-right: auto;margin-left: auto;width: 40%;display: block;"/>
         <p class="notes">Zainicjalizować moduł zawartości WFRP4e?<br><br>Zaimportuje lub zaktualizuje to wszystkie dzienniki i sceny w twoim świecie, posortuje w folderach i umieści notatki na mapach</p>

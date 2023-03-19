@@ -16,30 +16,24 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.28MwFcDPwpcO12kt",
       "gender": "Książę Demonów",
       "species": null,
-      "effects": [
-        {
-          "dt9CX3Pq7QKw25z4": {
-            "id": "dt9CX3Pq7QKw25z4",
-            "label": "Distracting",
-            "script": "args.prefillModifiers.modifier -= 20"
-          }
+      "effects": {
+        "dt9CX3Pq7QKw25z4": {
+          "id": "dt9CX3Pq7QKw25z4",
+          "label": "Distracting",
+          "script": "args.prefillModifiers.modifier -= 20"
         },
-        {
-          "nL9vz5id4ikQFGls": {
-            "id": "nL9vz5id4ikQFGls",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+        "nL9vz5id4ikQFGls": {
+          "id": "nL9vz5id4ikQFGls",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         },
-        {
-          "WZ3jFENJwIhkufce": {
-            "id": "WZ3jFENJwIhkufce",
-            "label": "Terror",
-            "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postTerror(value, name)\n}"
-          }
+        "WZ3jFENJwIhkufce": {
+          "id": "WZ3jFENJwIhkufce",
+          "label": "Terror",
+          "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postTerror(value, name)\n}"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "2lvE7Ypir9uuRjVT",
@@ -48,47 +42,37 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.2lvE7Ypir9uuRjVT",
       "gender": null,
       "species": null,
-      "effects": [
-        {
-          "ifR8JNd40yyrfvGn": {
-            "id": "ifR8JNd40yyrfvGn",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+      "effects": {
+        "ifR8JNd40yyrfvGn": {
+          "id": "ifR8JNd40yyrfvGn",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         },
-        {
-          "rGJP5XWv7qHS0RWn": {
-            "id": "rGJP5XWv7qHS0RWn",
-            "label": "Hardy",
-            "script": "args.multiplier.tb += 1"
-          }
+        "rGJP5XWv7qHS0RWn": {
+          "id": "rGJP5XWv7qHS0RWn",
+          "label": "Hardy",
+          "script": "args.multiplier.tb += 1"
         },
-        {
-          "rNWdg6vHRANHnqIU": {
-            "id": "rNWdg6vHRANHnqIU",
-            "label": "Brute",
-            "script": null
-          }
+        "rNWdg6vHRANHnqIU": {
+          "id": "rNWdg6vHRANHnqIU",
+          "label": "Brute",
+          "script": null
         },
-        {
-          "tnEt2g6N1fk9LIbJ": {
-            "id": "tnEt2g6N1fk9LIbJ",
-            "label": "Arboreal",
-            "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+        "tnEt2g6N1fk9LIbJ": {
+          "id": "tnEt2g6N1fk9LIbJ",
+          "label": "Arboreal",
+          "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
         }
-      ],
-      "items": [
-        {
-          "Iw5LFliUnIdaa7gL": {
-            "id": "Iw5LFliUnIdaa7gL",
-            "name": "Strzelanie (50)",
-            "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
-            "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
-            "specification": "8"
-          }
+      },
+      "items": {
+        "Iw5LFliUnIdaa7gL": {
+          "id": "Iw5LFliUnIdaa7gL",
+          "name": "Strzelanie (50)",
+          "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
+          "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
+          "specification": "8"
         }
-      ]
+      }
     },
     {
       "id": "5wl3KH6hXsGwUcZa",
@@ -97,47 +81,37 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.5wl3KH6hXsGwUcZa",
       "gender": "Wood Elf",
       "species": null,
-      "effects": [
-        {
-          "7xnO2hDZ63QDUQ6E": {
-            "id": "7xnO2hDZ63QDUQ6E",
-            "label": "Tracker",
-            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+      "effects": {
+        "7xnO2hDZ63QDUQ6E": {
+          "id": "7xnO2hDZ63QDUQ6E",
+          "label": "Tracker",
+          "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
         },
-        {
-          "BoUTC9kraBVqscZf": {
-            "id": "BoUTC9kraBVqscZf",
-            "label": "Stealthy",
-            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Stealth\"))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+        "BoUTC9kraBVqscZf": {
+          "id": "BoUTC9kraBVqscZf",
+          "label": "Stealthy",
+          "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Stealth\"))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
         },
-        {
-          "Cp0fK7qqV5Jyptgv": {
-            "id": "Cp0fK7qqV5Jyptgv",
-            "label": "Magic Resistance",
-            "script": "if (args.type == \"cast\")\n       args.prefillModifiers.slBonus -= 2"
-          }
+        "Cp0fK7qqV5Jyptgv": {
+          "id": "Cp0fK7qqV5Jyptgv",
+          "label": "Magic Resistance",
+          "script": "if (args.type == \"cast\")\n       args.prefillModifiers.slBonus -= 2"
         },
-        {
-          "JiMjptl7bJAvnBBV": {
-            "id": "JiMjptl7bJAvnBBV",
-            "label": "Arboreal",
-            "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+        "JiMjptl7bJAvnBBV": {
+          "id": "JiMjptl7bJAvnBBV",
+          "label": "Arboreal",
+          "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
         }
-      ],
-      "items": [
-        {
-          "ZVEbgMhQfBkw2lcV": {
-            "id": "ZVEbgMhQfBkw2lcV",
-            "name": "Strzelanie (150)",
-            "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
-            "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
-            "specification": "9"
-          }
+      },
+      "items": {
+        "ZVEbgMhQfBkw2lcV": {
+          "id": "ZVEbgMhQfBkw2lcV",
+          "name": "Strzelanie (150)",
+          "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
+          "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
+          "specification": "9"
         }
-      ]
+      }
     },
     {
       "id": "6B7LMdYtunAftsFN",
@@ -146,23 +120,19 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.6B7LMdYtunAftsFN",
       "gender": "Ghoul",
       "species": null,
-      "effects": [
-        {
-          "yuPctOwSU2nLHscr": {
-            "id": "yuPctOwSU2nLHscr",
-            "label": "Infected",
-            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
-          }
+      "effects": {
+        "yuPctOwSU2nLHscr": {
+          "id": "yuPctOwSU2nLHscr",
+          "label": "Infected",
+          "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
         },
-        {
-          "ZxTHLjvTvkErPA1u": {
-            "id": "ZxTHLjvTvkErPA1u",
-            "label": "Venom",
-            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
-          }
+        "ZxTHLjvTvkErPA1u": {
+          "id": "ZxTHLjvTvkErPA1u",
+          "label": "Venom",
+          "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "7629Eaow3acVS59H",
@@ -171,44 +141,34 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.7629Eaow3acVS59H",
       "gender": "Boar",
       "species": null,
-      "effects": [
-        {
-          "1Um0xlQTwtLEaw15": {
-            "id": "1Um0xlQTwtLEaw15",
-            "label": "Stride",
-            "script": "args.actor.details.move.run *= 1.5"
-          }
+      "effects": {
+        "1Um0xlQTwtLEaw15": {
+          "id": "1Um0xlQTwtLEaw15",
+          "label": "Stride",
+          "script": "args.actor.details.move.run *= 1.5"
         },
-        {
-          "2ubzZUjCYNhscBVW": {
-            "id": "2ubzZUjCYNhscBVW",
-            "label": "Infected",
-            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
-          }
+        "2ubzZUjCYNhscBVW": {
+          "id": "2ubzZUjCYNhscBVW",
+          "label": "Infected",
+          "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
         },
-        {
-          "b2wHjjEjkMI6a2mS": {
-            "id": "b2wHjjEjkMI6a2mS",
-            "label": "Infestation",
-            "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
-          }
+        "b2wHjjEjkMI6a2mS": {
+          "id": "b2wHjjEjkMI6a2mS",
+          "label": "Infestation",
+          "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
         },
-        {
-          "gI0E1Xb8OT8EvZ9R": {
-            "id": "gI0E1Xb8OT8EvZ9R",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+        "gI0E1Xb8OT8EvZ9R": {
+          "id": "gI0E1Xb8OT8EvZ9R",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         },
-        {
-          "QmzFxVck35BuGoMx": {
-            "id": "QmzFxVck35BuGoMx",
-            "label": "Frenzy",
-            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
-          }
+        "QmzFxVck35BuGoMx": {
+          "id": "QmzFxVck35BuGoMx",
+          "label": "Frenzy",
+          "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "7ihBjcHcewZ2Obul",
@@ -217,17 +177,15 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.7ihBjcHcewZ2Obul",
       "gender": "Człowiek",
       "species": null,
-      "items": [
-        {
-          "0nMFfaZyQkgXL83f": {
-            "id": "0nMFfaZyQkgXL83f",
-            "name": "Strzelanie (50)",
-            "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
-            "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
-            "specification": "8"
-          }
+      "items": {
+        "0nMFfaZyQkgXL83f": {
+          "id": "0nMFfaZyQkgXL83f",
+          "name": "Strzelanie (50)",
+          "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
+          "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
+          "specification": "8"
         }
-      ]
+      }
     },
     {
       "id": "7qslmdLa7so3BmFk",
@@ -236,72 +194,54 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.7qslmdLa7so3BmFk",
       "gender": "Troll",
       "species": "Varies",
-      "effects": [
-        {
-          "0RSawVy6iLMk3d3Z": {
-            "id": "0RSawVy6iLMk3d3Z",
-            "label": "Regenerate",
-            "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")}\n\nlet wounds = duplicate(this.actor.status.wounds)\nlet regen = (await new Roll(\"1d10\").roll()).total\n\nif (wounds.value >= wounds.max)\n   return\n\nif (wounds.value > 0)\n{\n   wounds.value += regen\n   if (wounds.value > wounds.max) \n        wounds.value = wounds.max\n   chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`\n   \n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse if (regen >= 8)\n{\n    chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n    wounds.value += 1\n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse\n{\n    chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n}\n\nthis.actor.update({\"system.status.wounds\" : wounds})\nChatMessage.create(chatData)"
-          }
+      "effects": {
+        "0RSawVy6iLMk3d3Z": {
+          "id": "0RSawVy6iLMk3d3Z",
+          "label": "Regenerate",
+          "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")}\n\nlet wounds = duplicate(this.actor.status.wounds)\nlet regen = (await new Roll(\"1d10\").roll()).total\n\nif (wounds.value >= wounds.max)\n   return\n\nif (wounds.value > 0)\n{\n   wounds.value += regen\n   if (wounds.value > wounds.max) \n        wounds.value = wounds.max\n   chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`\n   \n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse if (regen >= 8)\n{\n    chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n    wounds.value += 1\n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse\n{\n    chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n}\n\nthis.actor.update({\"system.status.wounds\" : wounds})\nChatMessage.create(chatData)"
         },
-        {
-          "0usIukVS0gAmrqPq": {
-            "id": "0usIukVS0gAmrqPq",
-            "label": "Infestation",
-            "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
-          }
+        "0usIukVS0gAmrqPq": {
+          "id": "0usIukVS0gAmrqPq",
+          "label": "Infestation",
+          "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
         },
-        {
-          "12s7pdXgLCnuWwie": {
-            "id": "12s7pdXgLCnuWwie",
-            "label": "Tough",
-            "script": null
-          }
+        "12s7pdXgLCnuWwie": {
+          "id": "12s7pdXgLCnuWwie",
+          "label": "Tough",
+          "script": null
         },
-        {
-          "CuNT6BeiHCjykOLx": {
-            "id": "CuNT6BeiHCjykOLx",
-            "label": "Vomit",
-            "script": "args.actor.addCondition(\"stunned\")"
-          }
+        "CuNT6BeiHCjykOLx": {
+          "id": "CuNT6BeiHCjykOLx",
+          "label": "Vomit",
+          "script": "args.actor.addCondition(\"stunned\")"
         },
-        {
-          "iZcLi1wlNXiV2Yvh": {
-            "id": "iZcLi1wlNXiV2Yvh",
-            "label": "Stealthy",
-            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Stealth\"))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+        "iZcLi1wlNXiV2Yvh": {
+          "id": "iZcLi1wlNXiV2Yvh",
+          "label": "Stealthy",
+          "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Stealth\"))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
         },
-        {
-          "og3WYIZ7LGZlE898": {
-            "id": "og3WYIZ7LGZlE898",
-            "label": "Frenzy",
-            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
-          }
+        "og3WYIZ7LGZlE898": {
+          "id": "og3WYIZ7LGZlE898",
+          "label": "Frenzy",
+          "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
         },
-        {
-          "PydwaFG00Dz7lsLg": {
-            "id": "PydwaFG00Dz7lsLg",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+        "PydwaFG00Dz7lsLg": {
+          "id": "PydwaFG00Dz7lsLg",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         },
-        {
-          "Qv9IU50A1hEVAXl1": {
-            "id": "Qv9IU50A1hEVAXl1",
-            "label": "Infected",
-            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
-          }
+        "Qv9IU50A1hEVAXl1": {
+          "id": "Qv9IU50A1hEVAXl1",
+          "label": "Infected",
+          "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
         },
-        {
-          "rJYy8szkNGqUs605": {
-            "id": "rJYy8szkNGqUs605",
-            "label": "Amphibious",
-            "script": "if (args.type == \"skill\" && args.item.name == \"Swim\")\n    args.prefillModifiers.slBonus += this.actor.characteristics.ag.bonus"
-          }
+        "rJYy8szkNGqUs605": {
+          "id": "rJYy8szkNGqUs605",
+          "label": "Amphibious",
+          "script": "if (args.type == \"skill\" && args.item.name == \"Swim\")\n    args.prefillModifiers.slBonus += this.actor.characteristics.ag.bonus"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "8g9rnHLiZ1pJcPPt",
@@ -310,16 +250,14 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.8g9rnHLiZ1pJcPPt",
       "gender": "Griffon",
       "species": null,
-      "effects": [
-        {
-          "NY16gROis1ONxIjo": {
-            "id": "NY16gROis1ONxIjo",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+      "effects": {
+        "NY16gROis1ONxIjo": {
+          "id": "NY16gROis1ONxIjo",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "8gG2Wim6wAlJWRax",
@@ -328,23 +266,19 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.8gG2Wim6wAlJWRax",
       "gender": null,
       "species": null,
-      "effects": [
-        {
-          "6McxapDczZuyQyg5": {
-            "id": "6McxapDczZuyQyg5",
-            "label": "Fear",
-            "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postFear(value, name)\n}"
-          }
+      "effects": {
+        "6McxapDczZuyQyg5": {
+          "id": "6McxapDczZuyQyg5",
+          "label": "Fear",
+          "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postFear(value, name)\n}"
         },
-        {
-          "c6x02cj76dxuPEnS": {
-            "id": "c6x02cj76dxuPEnS",
-            "label": "Distracting",
-            "script": "args.prefillModifiers.modifier -= 20"
-          }
+        "c6x02cj76dxuPEnS": {
+          "id": "c6x02cj76dxuPEnS",
+          "label": "Distracting",
+          "script": "args.prefillModifiers.modifier -= 20"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "9q8QzWB4o7aj6ZxL",
@@ -353,61 +287,47 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.9q8QzWB4o7aj6ZxL",
       "gender": "Jabberslythe",
       "species": null,
-      "effects": [
-        {
-          "hOe0V10JbyWGeTVZ": {
-            "id": "hOe0V10JbyWGeTVZ",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+      "effects": {
+        "hOe0V10JbyWGeTVZ": {
+          "id": "hOe0V10JbyWGeTVZ",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         },
-        {
-          "jvE7KJwJTJJJcOip": {
-            "id": "jvE7KJwJTJJJcOip",
-            "label": "Bounce",
-            "script": "this.actor.details.move.run *= 2"
-          }
+        "jvE7KJwJTJJJcOip": {
+          "id": "jvE7KJwJTJJJcOip",
+          "label": "Bounce",
+          "script": "this.actor.details.move.run *= 2"
         },
-        {
-          "K11BUhxEOwL0OmRR": {
-            "id": "K11BUhxEOwL0OmRR",
-            "label": "Infected",
-            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
-          }
+        "K11BUhxEOwL0OmRR": {
+          "id": "K11BUhxEOwL0OmRR",
+          "label": "Infected",
+          "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
         },
-        {
-          "naCAi2JxEh991ITv": {
-            "id": "naCAi2JxEh991ITv",
-            "label": "Distracting",
-            "script": "args.prefillModifiers.modifier -= 20"
-          }
+        "naCAi2JxEh991ITv": {
+          "id": "naCAi2JxEh991ITv",
+          "label": "Distracting",
+          "script": "args.prefillModifiers.modifier -= 20"
         },
-        {
-          "UymeVioxlCVCkCcu": {
-            "id": "UymeVioxlCVCkCcu",
-            "label": "Tail Attack",
-            "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value]\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value]\n\nif (attackerSize > actorSize)\n{\n   args.actor.addCondition(\"prone\")\n   ChatMessage.create({content: `<b>Tail Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Prone]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
-          }
+        "UymeVioxlCVCkCcu": {
+          "id": "UymeVioxlCVCkCcu",
+          "label": "Tail Attack",
+          "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value]\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value]\n\nif (attackerSize > actorSize)\n{\n   args.actor.addCondition(\"prone\")\n   ChatMessage.create({content: `<b>Tail Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Prone]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
         },
-        {
-          "Z32WU7rxN7WD0p19": {
-            "id": "Z32WU7rxN7WD0p19",
-            "label": "Venom",
-            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
-          }
+        "Z32WU7rxN7WD0p19": {
+          "id": "Z32WU7rxN7WD0p19",
+          "label": "Venom",
+          "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
         }
-      ],
-      "items": [
-        {
-          "PgSdNDqWz5I7nh2V": {
-            "id": "PgSdNDqWz5I7nh2V",
-            "name": "Atak Językiem (12)",
-            "description": "<p>Chwytny język stworzenia może owijać się wokół ofiary, wciągając ją aż do makabrycznego końca. W swojej Turze stworzenie może wykonać Darmowy Atak, wydając 1 Przewagę. To atak dystansowy, który zadaje tyle Obrażeń, ile wynosi podana wartość (zasięg podany jest w nawiasie). Jeśli atak trafi, cel dostaje 1 Stan Pochwycenie, a jeśli ma mniejszy Rozmiar, zostaje przyciągnięty do stworzenia i Związany Walką wręcz. Stworzenie może następnie zdecydować, czy wypuści cel, wykonując Darmowy Atak z użyciem swojej cechy Broń, czy będzie trzymać cel owinięty językiem, zapoczątkowując Chwyt.</p>",
-            "sourceId": "Compendium.wfrp4e-core.traits.xg6z63j6BH5AaqLL",
-            "specification": "+5"
-          }
+      },
+      "items": {
+        "PgSdNDqWz5I7nh2V": {
+          "id": "PgSdNDqWz5I7nh2V",
+          "name": "Atak Językiem (12)",
+          "description": "<p>Chwytny język stworzenia może owijać się wokół ofiary, wciągając ją aż do makabrycznego końca. W swojej Turze stworzenie może wykonać Darmowy Atak, wydając 1 Przewagę. To atak dystansowy, który zadaje tyle Obrażeń, ile wynosi podana wartość (zasięg podany jest w nawiasie). Jeśli atak trafi, cel dostaje 1 Stan Pochwycenie, a jeśli ma mniejszy Rozmiar, zostaje przyciągnięty do stworzenia i Związany Walką wręcz. Stworzenie może następnie zdecydować, czy wypuści cel, wykonując Darmowy Atak z użyciem swojej cechy Broń, czy będzie trzymać cel owinięty językiem, zapoczątkowując Chwyt.</p>",
+          "sourceId": "Compendium.wfrp4e-core.traits.xg6z63j6BH5AaqLL",
+          "specification": "+5"
         }
-      ]
+      }
     },
     {
       "id": "a05lQsGjSv62wF0U",
@@ -416,30 +336,24 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.a05lQsGjSv62wF0U",
       "gender": null,
       "species": null,
-      "effects": [
-        {
-          "2EnGjwTeLDzY8fl4": {
-            "id": "2EnGjwTeLDzY8fl4",
-            "label": "Frenzy",
-            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
-          }
+      "effects": {
+        "2EnGjwTeLDzY8fl4": {
+          "id": "2EnGjwTeLDzY8fl4",
+          "label": "Frenzy",
+          "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
         },
-        {
-          "2XnJOh6bY4dL2aHK": {
-            "id": "2XnJOh6bY4dL2aHK",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+        "2XnJOh6bY4dL2aHK": {
+          "id": "2XnJOh6bY4dL2aHK",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         },
-        {
-          "B7KcEOJcl8VapKin": {
-            "id": "B7KcEOJcl8VapKin",
-            "label": "Distracting",
-            "script": "args.prefillModifiers.modifier -= 20"
-          }
+        "B7KcEOJcl8VapKin": {
+          "id": "B7KcEOJcl8VapKin",
+          "label": "Distracting",
+          "script": "args.prefillModifiers.modifier -= 20"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "A4G4bTYxot3ZygZO",
@@ -448,58 +362,44 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.A4G4bTYxot3ZygZO",
       "gender": "Hydra",
       "species": "Varies",
-      "effects": [
-        {
-          "0MLUyVBvdjHhCNj7": {
-            "id": "0MLUyVBvdjHhCNj7",
-            "label": "Venom",
-            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
-          }
+      "effects": {
+        "0MLUyVBvdjHhCNj7": {
+          "id": "0MLUyVBvdjHhCNj7",
+          "label": "Venom",
+          "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
         },
-        {
-          "DEMWwWEEunP3uESO": {
-            "id": "DEMWwWEEunP3uESO",
-            "label": "Stride",
-            "script": "args.actor.details.move.run *= 1.5"
-          }
+        "DEMWwWEEunP3uESO": {
+          "id": "DEMWwWEEunP3uESO",
+          "label": "Stride",
+          "script": "args.actor.details.move.run *= 1.5"
         },
-        {
-          "HAcV7oeCejIJP43v": {
-            "id": "HAcV7oeCejIJP43v",
-            "label": "Constrictor",
-            "script": "args.actor.addCondition(\"entangled\")"
-          }
+        "HAcV7oeCejIJP43v": {
+          "id": "HAcV7oeCejIJP43v",
+          "label": "Constrictor",
+          "script": "args.actor.addCondition(\"entangled\")"
         },
-        {
-          "hEkj1nU1brRzYRyo": {
-            "id": "hEkj1nU1brRzYRyo",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+        "hEkj1nU1brRzYRyo": {
+          "id": "hEkj1nU1brRzYRyo",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         },
-        {
-          "qvLucnQHOAXPt0q4": {
-            "id": "qvLucnQHOAXPt0q4",
-            "label": "Tracker",
-            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+        "qvLucnQHOAXPt0q4": {
+          "id": "qvLucnQHOAXPt0q4",
+          "label": "Tracker",
+          "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
         },
-        {
-          "YG6qLpm09WrEm3VK": {
-            "id": "YG6qLpm09WrEm3VK",
-            "label": "Stealthy",
-            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Stealth\"))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+        "YG6qLpm09WrEm3VK": {
+          "id": "YG6qLpm09WrEm3VK",
+          "label": "Stealthy",
+          "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Stealth\"))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
         },
-        {
-          "yXWM7kW5OtrJn11h": {
-            "id": "yXWM7kW5OtrJn11h",
-            "label": "Regenerate",
-            "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")}\n\nlet wounds = duplicate(this.actor.status.wounds)\nlet regen = (await new Roll(\"1d10\").roll()).total\n\nif (wounds.value >= wounds.max)\n   return\n\nif (wounds.value > 0)\n{\n   wounds.value += regen\n   if (wounds.value > wounds.max) \n        wounds.value = wounds.max\n   chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`\n   \n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse if (regen >= 8)\n{\n    chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n    wounds.value += 1\n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse\n{\n    chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n}\n\nthis.actor.update({\"system.status.wounds\" : wounds})\nChatMessage.create(chatData)"
-          }
+        "yXWM7kW5OtrJn11h": {
+          "id": "yXWM7kW5OtrJn11h",
+          "label": "Regenerate",
+          "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")}\n\nlet wounds = duplicate(this.actor.status.wounds)\nlet regen = (await new Roll(\"1d10\").roll()).total\n\nif (wounds.value >= wounds.max)\n   return\n\nif (wounds.value > 0)\n{\n   wounds.value += regen\n   if (wounds.value > wounds.max) \n        wounds.value = wounds.max\n   chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`\n   \n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse if (regen >= 8)\n{\n    chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n    wounds.value += 1\n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse\n{\n    chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n}\n\nthis.actor.update({\"system.status.wounds\" : wounds})\nChatMessage.create(chatData)"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "AAiKqD1IoweDpJI7",
@@ -508,86 +408,64 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.AAiKqD1IoweDpJI7",
       "gender": "Snake",
       "species": null,
-      "effects": [
-        {
-          "AZJmwDrTSFXmYbmZ": {
-            "id": "AZJmwDrTSFXmYbmZ",
-            "label": "Venom",
-            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
-          }
+      "effects": {
+        "AZJmwDrTSFXmYbmZ": {
+          "id": "AZJmwDrTSFXmYbmZ",
+          "label": "Venom",
+          "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
         },
-        {
-          "dTcIYwLvYA5t8sDU": {
-            "id": "dTcIYwLvYA5t8sDU",
-            "label": "Venom",
-            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
-          }
+        "dTcIYwLvYA5t8sDU": {
+          "id": "dTcIYwLvYA5t8sDU",
+          "label": "Venom",
+          "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
         },
-        {
-          "Fxr0yjCvS8hoUpLV": {
-            "id": "Fxr0yjCvS8hoUpLV",
-            "label": "Fast",
-            "script": null
-          }
+        "Fxr0yjCvS8hoUpLV": {
+          "id": "Fxr0yjCvS8hoUpLV",
+          "label": "Fast",
+          "script": null
         },
-        {
-          "GtthdHaTJAwVkrJ9": {
-            "id": "GtthdHaTJAwVkrJ9",
-            "label": "Venom",
-            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
-          }
+        "GtthdHaTJAwVkrJ9": {
+          "id": "GtthdHaTJAwVkrJ9",
+          "label": "Venom",
+          "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
         },
-        {
-          "I9acOqq8FwdHK4jp": {
-            "id": "I9acOqq8FwdHK4jp",
-            "label": "Venom",
-            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
-          }
+        "I9acOqq8FwdHK4jp": {
+          "id": "I9acOqq8FwdHK4jp",
+          "label": "Venom",
+          "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
         },
-        {
-          "jlXEMtg1ZSF4Yp6S": {
-            "id": "jlXEMtg1ZSF4Yp6S",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+        "jlXEMtg1ZSF4Yp6S": {
+          "id": "jlXEMtg1ZSF4Yp6S",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         },
-        {
-          "lFRSbDt7k03dyVAN": {
-            "id": "lFRSbDt7k03dyVAN",
-            "label": "Swarm",
-            "script": "if (args.type == \"weapon\" && args.item.attackType == \"ranged\")\n   args.prefillModifiers.modifier += 40"
-          }
+        "lFRSbDt7k03dyVAN": {
+          "id": "lFRSbDt7k03dyVAN",
+          "label": "Swarm",
+          "script": "if (args.type == \"weapon\" && args.item.attackType == \"ranged\")\n   args.prefillModifiers.modifier += 40"
         },
-        {
-          "lgsgK3ovI4m7TaNu": {
-            "id": "lgsgK3ovI4m7TaNu",
-            "label": "Venom",
-            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
-          }
+        "lgsgK3ovI4m7TaNu": {
+          "id": "lgsgK3ovI4m7TaNu",
+          "label": "Venom",
+          "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
         },
-        {
-          "mqcsP2kkrwWbWbAi": {
-            "id": "mqcsP2kkrwWbWbAi",
-            "label": "Swarm Bonuses",
-            "script": "args.wounds *= 5"
-          }
+        "mqcsP2kkrwWbWbAi": {
+          "id": "mqcsP2kkrwWbWbAi",
+          "label": "Swarm Bonuses",
+          "script": "args.wounds *= 5"
         },
-        {
-          "nx0b4Nu9xX84g4Y4": {
-            "id": "nx0b4Nu9xX84g4Y4",
-            "label": "Venom",
-            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
-          }
+        "nx0b4Nu9xX84g4Y4": {
+          "id": "nx0b4Nu9xX84g4Y4",
+          "label": "Venom",
+          "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
         },
-        {
-          "up34nRMaCkOJxNay": {
-            "id": "up34nRMaCkOJxNay",
-            "label": "Venom",
-            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
-          }
+        "up34nRMaCkOJxNay": {
+          "id": "up34nRMaCkOJxNay",
+          "label": "Venom",
+          "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "b1R5sW6lYIViJ2ki",
@@ -596,23 +474,19 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.b1R5sW6lYIViJ2ki",
       "gender": "Horse",
       "species": null,
-      "effects": [
-        {
-          "6unzSR1G5M42Z6CZ": {
-            "id": "6unzSR1G5M42Z6CZ",
-            "label": "Stride",
-            "script": "args.actor.details.move.run *= 1.5"
-          }
+      "effects": {
+        "6unzSR1G5M42Z6CZ": {
+          "id": "6unzSR1G5M42Z6CZ",
+          "label": "Stride",
+          "script": "args.actor.details.move.run *= 1.5"
         },
-        {
-          "nUshnmpYX9NBBgy6": {
-            "id": "nUshnmpYX9NBBgy6",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+        "nUshnmpYX9NBBgy6": {
+          "id": "nUshnmpYX9NBBgy6",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "cAK1bMj1ne7HPcxI",
@@ -621,30 +495,24 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.cAK1bMj1ne7HPcxI",
       "gender": null,
       "species": null,
-      "effects": [
-        {
-          "ewYHNH1NhqbrdUdT": {
-            "id": "ewYHNH1NhqbrdUdT",
-            "label": "Infected",
-            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
-          }
+      "effects": {
+        "ewYHNH1NhqbrdUdT": {
+          "id": "ewYHNH1NhqbrdUdT",
+          "label": "Infected",
+          "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
         },
-        {
-          "GaAgVavnDkXJ3MBM": {
-            "id": "GaAgVavnDkXJ3MBM",
-            "label": "Arboreal",
-            "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+        "GaAgVavnDkXJ3MBM": {
+          "id": "GaAgVavnDkXJ3MBM",
+          "label": "Arboreal",
+          "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
         },
-        {
-          "QmCtqXe6YN7WlnOv": {
-            "id": "QmCtqXe6YN7WlnOv",
-            "label": "Infestation",
-            "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
-          }
+        "QmCtqXe6YN7WlnOv": {
+          "id": "QmCtqXe6YN7WlnOv",
+          "label": "Infestation",
+          "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "cHVOdcEkuatqjYV1",
@@ -653,30 +521,24 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.cHVOdcEkuatqjYV1",
       "gender": "Bray Shaman",
       "species": null,
-      "effects": [
-        {
-          "57dNdaZIiftVFa4X": {
-            "id": "57dNdaZIiftVFa4X",
-            "label": "Infected",
-            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
-          }
+      "effects": {
+        "57dNdaZIiftVFa4X": {
+          "id": "57dNdaZIiftVFa4X",
+          "label": "Infected",
+          "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
         },
-        {
-          "YearuHmEDjqfcbYG": {
-            "id": "YearuHmEDjqfcbYG",
-            "label": "Arboreal",
-            "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+        "YearuHmEDjqfcbYG": {
+          "id": "YearuHmEDjqfcbYG",
+          "label": "Arboreal",
+          "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
         },
-        {
-          "zxS5779U5zWckwsT": {
-            "id": "zxS5779U5zWckwsT",
-            "label": "Infestation",
-            "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
-          }
+        "zxS5779U5zWckwsT": {
+          "id": "zxS5779U5zWckwsT",
+          "label": "Infestation",
+          "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "E7BiDqsB55BrOQut",
@@ -685,33 +547,27 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.E7BiDqsB55BrOQut",
       "gender": "Orc",
       "species": null,
-      "effects": [
-        {
-          "bqeYNnSwAUGdOlFn": {
-            "id": "bqeYNnSwAUGdOlFn",
-            "label": "Infected",
-            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
-          }
+      "effects": {
+        "bqeYNnSwAUGdOlFn": {
+          "id": "bqeYNnSwAUGdOlFn",
+          "label": "Infected",
+          "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
         },
-        {
-          "MReG9f3QPwSwxnvF": {
-            "id": "MReG9f3QPwSwxnvF",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+        "MReG9f3QPwSwxnvF": {
+          "id": "MReG9f3QPwSwxnvF",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         }
-      ],
-      "items": [
-        {
-          "hfq5Dnb2IT2WfRGf": {
-            "id": "hfq5Dnb2IT2WfRGf",
-            "name": "Strzelanie (50)",
-            "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
-            "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
-            "specification": "8"
-          }
+      },
+      "items": {
+        "hfq5Dnb2IT2WfRGf": {
+          "id": "hfq5Dnb2IT2WfRGf",
+          "name": "Strzelanie (50)",
+          "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
+          "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
+          "specification": "8"
         }
-      ]
+      }
     },
     {
       "id": "ePPk15Vxu9RxPtYV",
@@ -720,17 +576,15 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.ePPk15Vxu9RxPtYV",
       "gender": null,
       "species": null,
-      "items": [
-        {
-          "oLc1S9aswJrhkReV": {
-            "id": "oLc1S9aswJrhkReV",
-            "name": "Miecz",
-            "description": null,
-            "sourceId": null,
-            "special": null
-          }
+      "items": {
+        "oLc1S9aswJrhkReV": {
+          "id": "oLc1S9aswJrhkReV",
+          "name": "Miecz",
+          "description": null,
+          "sourceId": null,
+          "special": null
         }
-      ]
+      }
     },
     {
       "id": "F1vAZZcmVKkRw8xn",
@@ -739,37 +593,29 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.F1vAZZcmVKkRw8xn",
       "gender": "Skaven",
       "species": null,
-      "effects": [
-        {
-          "DP3A4yKupZcsSVEa": {
-            "id": "DP3A4yKupZcsSVEa",
-            "label": "Infected",
-            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
-          }
+      "effects": {
+        "DP3A4yKupZcsSVEa": {
+          "id": "DP3A4yKupZcsSVEa",
+          "label": "Infected",
+          "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
         },
-        {
-          "EBgGr3gX7hyKDx4S": {
-            "id": "EBgGr3gX7hyKDx4S",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+        "EBgGr3gX7hyKDx4S": {
+          "id": "EBgGr3gX7hyKDx4S",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         },
-        {
-          "l16xCMo9W8rmU2qE": {
-            "id": "l16xCMo9W8rmU2qE",
-            "label": "Tracker",
-            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+        "l16xCMo9W8rmU2qE": {
+          "id": "l16xCMo9W8rmU2qE",
+          "label": "Tracker",
+          "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
         },
-        {
-          "tM906M93hAn36zTl": {
-            "id": "tM906M93hAn36zTl",
-            "label": "Stealthy",
-            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Stealth\"))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+        "tM906M93hAn36zTl": {
+          "id": "tM906M93hAn36zTl",
+          "label": "Stealthy",
+          "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Stealth\"))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "FmEDHnfAe2iIugpt",
@@ -778,30 +624,24 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.FmEDHnfAe2iIugpt",
       "gender": "Bagienna Ośmiornica",
       "species": null,
-      "effects": [
-        {
-          "GxQbXgR3pFYMCnbA": {
-            "id": "GxQbXgR3pFYMCnbA",
-            "label": "Stealthy",
-            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Stealth\"))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+      "effects": {
+        "GxQbXgR3pFYMCnbA": {
+          "id": "GxQbXgR3pFYMCnbA",
+          "label": "Stealthy",
+          "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Stealth\"))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
         },
-        {
-          "kbI0TMBhGCVGWUJI": {
-            "id": "kbI0TMBhGCVGWUJI",
-            "label": "Amphibious",
-            "script": "if (args.type == \"skill\" && args.item.name == \"Swim\")\n    args.prefillModifiers.slBonus += this.actor.characteristics.ag.bonus"
-          }
+        "kbI0TMBhGCVGWUJI": {
+          "id": "kbI0TMBhGCVGWUJI",
+          "label": "Amphibious",
+          "script": "if (args.type == \"skill\" && args.item.name == \"Swim\")\n    args.prefillModifiers.slBonus += this.actor.characteristics.ag.bonus"
         },
-        {
-          "zZeCk4zXLUI80TP0": {
-            "id": "zZeCk4zXLUI80TP0",
-            "label": "Constrictor",
-            "script": "args.actor.addCondition(\"entangled\")"
-          }
+        "zZeCk4zXLUI80TP0": {
+          "id": "zZeCk4zXLUI80TP0",
+          "label": "Constrictor",
+          "script": "args.actor.addCondition(\"entangled\")"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "ge5zXH2qboxaac7v",
@@ -810,7 +650,7 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.ge5zXH2qboxaac7v",
       "gender": "Pigeon",
       "species": null,
-      "items": []
+      "items": {}
     },
     {
       "id": "GgSxlomoV220kd3G",
@@ -819,30 +659,24 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.GgSxlomoV220kd3G",
       "gender": "Nieumarły",
       "species": null,
-      "effects": [
-        {
-          "1Mrt7AY40I5qtpf2": {
-            "id": "1Mrt7AY40I5qtpf2",
-            "label": "Fear",
-            "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postFear(value, name)\n}"
-          }
+      "effects": {
+        "1Mrt7AY40I5qtpf2": {
+          "id": "1Mrt7AY40I5qtpf2",
+          "label": "Fear",
+          "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postFear(value, name)\n}"
         },
-        {
-          "aDKbAbEnndqeqtnV": {
-            "id": "aDKbAbEnndqeqtnV",
-            "label": "Swarm",
-            "script": "if (args.type == \"weapon\" && args.item.attackType == \"ranged\")\n   args.prefillModifiers.modifier += 40"
-          }
+        "aDKbAbEnndqeqtnV": {
+          "id": "aDKbAbEnndqeqtnV",
+          "label": "Swarm",
+          "script": "if (args.type == \"weapon\" && args.item.attackType == \"ranged\")\n   args.prefillModifiers.modifier += 40"
         },
-        {
-          "rqiLCymCM1k80Fjq": {
-            "id": "rqiLCymCM1k80Fjq",
-            "label": "Swarm Bonuses",
-            "script": "args.wounds *= 5"
-          }
+        "rqiLCymCM1k80Fjq": {
+          "id": "rqiLCymCM1k80Fjq",
+          "label": "Swarm Bonuses",
+          "script": "args.wounds *= 5"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "HKSn8iNSS9WcAuJc",
@@ -851,44 +685,34 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.HKSn8iNSS9WcAuJc",
       "gender": "Construct",
       "species": null,
-      "effects": [
-        {
-          "4KDekULCgM5D43lo": {
-            "id": "4KDekULCgM5D43lo",
-            "label": "Regenerate",
-            "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")}\n\nlet wounds = duplicate(this.actor.status.wounds)\nlet regen = (await new Roll(\"1d10\").roll()).total\n\nif (wounds.value >= wounds.max)\n   return\n\nif (wounds.value > 0)\n{\n   wounds.value += regen\n   if (wounds.value > wounds.max) \n        wounds.value = wounds.max\n   chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`\n   \n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse if (regen >= 8)\n{\n    chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n    wounds.value += 1\n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse\n{\n    chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n}\n\nthis.actor.update({\"system.status.wounds\" : wounds})\nChatMessage.create(chatData)"
-          }
+      "effects": {
+        "4KDekULCgM5D43lo": {
+          "id": "4KDekULCgM5D43lo",
+          "label": "Regenerate",
+          "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")}\n\nlet wounds = duplicate(this.actor.status.wounds)\nlet regen = (await new Roll(\"1d10\").roll()).total\n\nif (wounds.value >= wounds.max)\n   return\n\nif (wounds.value > 0)\n{\n   wounds.value += regen\n   if (wounds.value > wounds.max) \n        wounds.value = wounds.max\n   chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`\n   \n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse if (regen >= 8)\n{\n    chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n    wounds.value += 1\n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse\n{\n    chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n}\n\nthis.actor.update({\"system.status.wounds\" : wounds})\nChatMessage.create(chatData)"
         },
-        {
-          "ctGcZ8iKfXP1XhPe": {
-            "id": "ctGcZ8iKfXP1XhPe",
-            "label": "Frenzy",
-            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
-          }
+        "ctGcZ8iKfXP1XhPe": {
+          "id": "ctGcZ8iKfXP1XhPe",
+          "label": "Frenzy",
+          "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
         },
-        {
-          "fwYivzDn7ow90SqU": {
-            "id": "fwYivzDn7ow90SqU",
-            "label": "Infestation",
-            "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
-          }
+        "fwYivzDn7ow90SqU": {
+          "id": "fwYivzDn7ow90SqU",
+          "label": "Infestation",
+          "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
         },
-        {
-          "miucKXfXYxxrGg9k": {
-            "id": "miucKXfXYxxrGg9k",
-            "label": "Construct",
-            "script": "args.wpb = args.sb"
-          }
+        "miucKXfXYxxrGg9k": {
+          "id": "miucKXfXYxxrGg9k",
+          "label": "Construct",
+          "script": "args.wpb = args.sb"
         },
-        {
-          "pIZn0gi5DawtO2k4": {
-            "id": "pIZn0gi5DawtO2k4",
-            "label": "Infected",
-            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
-          }
+        "pIZn0gi5DawtO2k4": {
+          "id": "pIZn0gi5DawtO2k4",
+          "label": "Infected",
+          "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "hMbcLVjk7eUdxtqC",
@@ -897,16 +721,14 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.hMbcLVjk7eUdxtqC",
       "gender": "Nieumarły",
       "species": null,
-      "effects": [
-        {
-          "7raTPW24WcAjGAEa": {
-            "id": "7raTPW24WcAjGAEa",
-            "label": "Terror",
-            "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postTerror(value, name)\n}"
-          }
+      "effects": {
+        "7raTPW24WcAjGAEa": {
+          "id": "7raTPW24WcAjGAEa",
+          "label": "Terror",
+          "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postTerror(value, name)\n}"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "HZfZaCjdniz5Z4CP",
@@ -915,44 +737,34 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.HZfZaCjdniz5Z4CP",
       "gender": "Giant",
       "species": null,
-      "effects": [
-        {
-          "fJ2cKJpIEXsOjtgz": {
-            "id": "fJ2cKJpIEXsOjtgz",
-            "label": "Stride",
-            "script": "args.actor.details.move.run *= 1.5"
-          }
+      "effects": {
+        "fJ2cKJpIEXsOjtgz": {
+          "id": "fJ2cKJpIEXsOjtgz",
+          "label": "Stride",
+          "script": "args.actor.details.move.run *= 1.5"
         },
-        {
-          "IdR5SsSJ3isgNHwm": {
-            "id": "IdR5SsSJ3isgNHwm",
-            "label": "Infestation",
-            "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
-          }
+        "IdR5SsSJ3isgNHwm": {
+          "id": "IdR5SsSJ3isgNHwm",
+          "label": "Infestation",
+          "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
         },
-        {
-          "sAFQuKd3sZtwF4AO": {
-            "id": "sAFQuKd3sZtwF4AO",
-            "label": "Infected",
-            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
-          }
+        "sAFQuKd3sZtwF4AO": {
+          "id": "sAFQuKd3sZtwF4AO",
+          "label": "Infected",
+          "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
         },
-        {
-          "uEepI4AVRxzrvnbi": {
-            "id": "uEepI4AVRxzrvnbi",
-            "label": "Tough",
-            "script": null
-          }
+        "uEepI4AVRxzrvnbi": {
+          "id": "uEepI4AVRxzrvnbi",
+          "label": "Tough",
+          "script": null
         },
-        {
-          "vLCiRGKhIaBgcQrA": {
-            "id": "vLCiRGKhIaBgcQrA",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+        "vLCiRGKhIaBgcQrA": {
+          "id": "vLCiRGKhIaBgcQrA",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "ImdVnI8mEiOmKriI",
@@ -961,26 +773,22 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.ImdVnI8mEiOmKriI",
       "gender": "Krasnolud",
       "species": null,
-      "effects": [
-        {
-          "tOJQgYSoaltZanQ3": {
-            "id": "tOJQgYSoaltZanQ3",
-            "label": "Magic Resistance",
-            "script": "if (args.type == \"cast\")\n       args.prefillModifiers.slBonus -= 2"
-          }
+      "effects": {
+        "tOJQgYSoaltZanQ3": {
+          "id": "tOJQgYSoaltZanQ3",
+          "label": "Magic Resistance",
+          "script": "if (args.type == \"cast\")\n       args.prefillModifiers.slBonus -= 2"
         }
-      ],
-      "items": [
-        {
-          "N9zq40S3SuK0qLpl": {
-            "id": "N9zq40S3SuK0qLpl",
-            "name": "Strzelanie (50)",
-            "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
-            "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
-            "specification": "8"
-          }
+      },
+      "items": {
+        "N9zq40S3SuK0qLpl": {
+          "id": "N9zq40S3SuK0qLpl",
+          "name": "Strzelanie (50)",
+          "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
+          "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
+          "specification": "8"
         }
-      ]
+      }
     },
     {
       "id": "jfMhkQGzjFWDxVOm",
@@ -989,16 +797,14 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.jfMhkQGzjFWDxVOm",
       "gender": null,
       "species": null,
-      "effects": [
-        {
-          "zXyLukfpBQffMjB1": {
-            "id": "zXyLukfpBQffMjB1",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+      "effects": {
+        "zXyLukfpBQffMjB1": {
+          "id": "zXyLukfpBQffMjB1",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "KeB0khEeq462qTJw",
@@ -1007,30 +813,24 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.KeB0khEeq462qTJw",
       "gender": "Wywerna",
       "species": null,
-      "effects": [
-        {
-          "aqeOBcr9TbqHg8rK": {
-            "id": "aqeOBcr9TbqHg8rK",
-            "label": "Tail Attack",
-            "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value]\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value]\n\nif (attackerSize > actorSize)\n{\n   args.actor.addCondition(\"prone\")\n   ChatMessage.create({content: `<b>Tail Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Prone]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
-          }
+      "effects": {
+        "aqeOBcr9TbqHg8rK": {
+          "id": "aqeOBcr9TbqHg8rK",
+          "label": "Tail Attack",
+          "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value]\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value]\n\nif (attackerSize > actorSize)\n{\n   args.actor.addCondition(\"prone\")\n   ChatMessage.create({content: `<b>Tail Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Prone]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
         },
-        {
-          "VzlGoVJEgniCqoOm": {
-            "id": "VzlGoVJEgniCqoOm",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+        "VzlGoVJEgniCqoOm": {
+          "id": "VzlGoVJEgniCqoOm",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         },
-        {
-          "WNl1StgVFqYrrgup": {
-            "id": "WNl1StgVFqYrrgup",
-            "label": "Venom",
-            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
-          }
+        "WNl1StgVFqYrrgup": {
+          "id": "WNl1StgVFqYrrgup",
+          "label": "Venom",
+          "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "kl4qHg0mqWOApBqH",
@@ -1039,30 +839,24 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.kl4qHg0mqWOApBqH",
       "gender": "Skaven",
       "species": null,
-      "effects": [
-        {
-          "AQSOb0ip3rTeKQSe": {
-            "id": "AQSOb0ip3rTeKQSe",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+      "effects": {
+        "AQSOb0ip3rTeKQSe": {
+          "id": "AQSOb0ip3rTeKQSe",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         },
-        {
-          "lHrBRLdd2RfjZe04": {
-            "id": "lHrBRLdd2RfjZe04",
-            "label": "Tracker",
-            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+        "lHrBRLdd2RfjZe04": {
+          "id": "lHrBRLdd2RfjZe04",
+          "label": "Tracker",
+          "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
         },
-        {
-          "YuslwdFq9jlMRYWd": {
-            "id": "YuslwdFq9jlMRYWd",
-            "label": "Infected",
-            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
-          }
+        "YuslwdFq9jlMRYWd": {
+          "id": "YuslwdFq9jlMRYWd",
+          "label": "Infected",
+          "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "kt9ob9BdK6zLDWxn",
@@ -1071,23 +865,19 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.kt9ob9BdK6zLDWxn",
       "gender": "Fimir",
       "species": null,
-      "effects": [
-        {
-          "Olnjb0FfVEIu8Dfy": {
-            "id": "Olnjb0FfVEIu8Dfy",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+      "effects": {
+        "Olnjb0FfVEIu8Dfy": {
+          "id": "Olnjb0FfVEIu8Dfy",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         },
-        {
-          "R5Cs02d94yP5yeCR": {
-            "id": "R5Cs02d94yP5yeCR",
-            "label": "Tail Attack",
-            "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value]\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value]\n\nif (attackerSize > actorSize)\n{\n   args.actor.addCondition(\"prone\")\n   ChatMessage.create({content: `<b>Tail Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Prone]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
-          }
+        "R5Cs02d94yP5yeCR": {
+          "id": "R5Cs02d94yP5yeCR",
+          "label": "Tail Attack",
+          "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value]\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value]\n\nif (attackerSize > actorSize)\n{\n   args.actor.addCondition(\"prone\")\n   ChatMessage.create({content: `<b>Tail Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Prone]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "KtYgLHcSLpHmnGI2",
@@ -1096,37 +886,29 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.KtYgLHcSLpHmnGI2",
       "gender": "Niedźwiedź",
       "species": null,
-      "effects": [
-        {
-          "IqOfqzHSo07O42bW": {
-            "id": "IqOfqzHSo07O42bW",
-            "label": "Stride",
-            "script": "args.actor.details.move.run *= 1.5"
-          }
+      "effects": {
+        "IqOfqzHSo07O42bW": {
+          "id": "IqOfqzHSo07O42bW",
+          "label": "Stride",
+          "script": "args.actor.details.move.run *= 1.5"
         },
-        {
-          "Lq3jDQRRPl81n1zQ": {
-            "id": "Lq3jDQRRPl81n1zQ",
-            "label": "Infected",
-            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
-          }
+        "Lq3jDQRRPl81n1zQ": {
+          "id": "Lq3jDQRRPl81n1zQ",
+          "label": "Infected",
+          "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
         },
-        {
-          "PcEJZM9L1pVonmks": {
-            "id": "PcEJZM9L1pVonmks",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+        "PcEJZM9L1pVonmks": {
+          "id": "PcEJZM9L1pVonmks",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         },
-        {
-          "Xfrts1724Mg1fCvp": {
-            "id": "Xfrts1724Mg1fCvp",
-            "label": "Infestation",
-            "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
-          }
+        "Xfrts1724Mg1fCvp": {
+          "id": "Xfrts1724Mg1fCvp",
+          "label": "Infestation",
+          "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "KZkuwdOYmE3nwB2n",
@@ -1135,30 +917,24 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.KZkuwdOYmE3nwB2n",
       "gender": "Demon",
       "species": null,
-      "effects": [
-        {
-          "g94D7Xf8rvTG1pZP": {
-            "id": "g94D7Xf8rvTG1pZP",
-            "label": "Fear",
-            "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postFear(value, name)\n}"
-          }
+      "effects": {
+        "g94D7Xf8rvTG1pZP": {
+          "id": "g94D7Xf8rvTG1pZP",
+          "label": "Fear",
+          "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postFear(value, name)\n}"
         },
-        {
-          "iRC0LbxUatdhYIRI": {
-            "id": "iRC0LbxUatdhYIRI",
-            "label": "Frenzy",
-            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
-          }
+        "iRC0LbxUatdhYIRI": {
+          "id": "iRC0LbxUatdhYIRI",
+          "label": "Frenzy",
+          "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
         },
-        {
-          "QuhKHQc4wskQZfaJ": {
-            "id": "QuhKHQc4wskQZfaJ",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+        "QuhKHQc4wskQZfaJ": {
+          "id": "QuhKHQc4wskQZfaJ",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "lSvYEInG8sZ03vqd",
@@ -1167,44 +943,34 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.lSvYEInG8sZ03vqd",
       "gender": "Wilk",
       "species": null,
-      "effects": [
-        {
-          "0G0YQcWhI9FIZV2H": {
-            "id": "0G0YQcWhI9FIZV2H",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+      "effects": {
+        "0G0YQcWhI9FIZV2H": {
+          "id": "0G0YQcWhI9FIZV2H",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         },
-        {
-          "cL0khtn99Alcfu6X": {
-            "id": "cL0khtn99Alcfu6X",
-            "label": "Frenzy",
-            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
-          }
+        "cL0khtn99Alcfu6X": {
+          "id": "cL0khtn99Alcfu6X",
+          "label": "Frenzy",
+          "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
         },
-        {
-          "PKm5XdZlzIyPES4k": {
-            "id": "PKm5XdZlzIyPES4k",
-            "label": "Tracker",
-            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+        "PKm5XdZlzIyPES4k": {
+          "id": "PKm5XdZlzIyPES4k",
+          "label": "Tracker",
+          "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
         },
-        {
-          "XbQJexDDEreVMvWb": {
-            "id": "XbQJexDDEreVMvWb",
-            "label": "Infected",
-            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
-          }
+        "XbQJexDDEreVMvWb": {
+          "id": "XbQJexDDEreVMvWb",
+          "label": "Infected",
+          "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
         },
-        {
-          "XxRSNVXnvMYARNe1": {
-            "id": "XxRSNVXnvMYARNe1",
-            "label": "Stride",
-            "script": "args.actor.details.move.run *= 1.5"
-          }
+        "XxRSNVXnvMYARNe1": {
+          "id": "XxRSNVXnvMYARNe1",
+          "label": "Stride",
+          "script": "args.actor.details.move.run *= 1.5"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "LZttdCIxmFr1sGsS",
@@ -1213,44 +979,34 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.LZttdCIxmFr1sGsS",
       "gender": "Smok",
       "species": null,
-      "effects": [
-        {
-          "KoTQebmQ0cj0Xyt1": {
-            "id": "KoTQebmQ0cj0Xyt1",
-            "label": "Arboreal",
-            "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+      "effects": {
+        "KoTQebmQ0cj0Xyt1": {
+          "id": "KoTQebmQ0cj0Xyt1",
+          "label": "Arboreal",
+          "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
         },
-        {
-          "V5PnKDuND25WHadD": {
-            "id": "V5PnKDuND25WHadD",
-            "label": "Tail Attack",
-            "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value]\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value]\n\nif (attackerSize > actorSize)\n{\n   args.actor.addCondition(\"prone\")\n   ChatMessage.create({content: `<b>Tail Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Prone]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
-          }
+        "V5PnKDuND25WHadD": {
+          "id": "V5PnKDuND25WHadD",
+          "label": "Tail Attack",
+          "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value]\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value]\n\nif (attackerSize > actorSize)\n{\n   args.actor.addCondition(\"prone\")\n   ChatMessage.create({content: `<b>Tail Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Prone]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
         },
-        {
-          "wfbLLo6NBnAGvsv1": {
-            "id": "wfbLLo6NBnAGvsv1",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+        "wfbLLo6NBnAGvsv1": {
+          "id": "wfbLLo6NBnAGvsv1",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         },
-        {
-          "Ws7vLIKJGkhARFfl": {
-            "id": "Ws7vLIKJGkhARFfl",
-            "label": "Venom",
-            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
-          }
+        "Ws7vLIKJGkhARFfl": {
+          "id": "Ws7vLIKJGkhARFfl",
+          "label": "Venom",
+          "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
         },
-        {
-          "ZWVFTCTzUJ9PNMqc": {
-            "id": "ZWVFTCTzUJ9PNMqc",
-            "label": "Infestation",
-            "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
-          }
+        "ZWVFTCTzUJ9PNMqc": {
+          "id": "ZWVFTCTzUJ9PNMqc",
+          "label": "Infestation",
+          "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "MLtDY4bwzGQpaABN",
@@ -1259,23 +1015,19 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.MLtDY4bwzGQpaABN",
       "gender": null,
       "species": null,
-      "effects": [
-        {
-          "oSs7PpjCezuRbO4q": {
-            "id": "oSs7PpjCezuRbO4q",
-            "label": "Stride",
-            "script": "args.actor.details.move.run *= 1.5"
-          }
+      "effects": {
+        "oSs7PpjCezuRbO4q": {
+          "id": "oSs7PpjCezuRbO4q",
+          "label": "Stride",
+          "script": "args.actor.details.move.run *= 1.5"
         },
-        {
-          "WRWwQXlbPuecT6Rt": {
-            "id": "WRWwQXlbPuecT6Rt",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+        "WRWwQXlbPuecT6Rt": {
+          "id": "WRWwQXlbPuecT6Rt",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "Mt5JAoOSaEH1PdcP",
@@ -1284,37 +1036,29 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.Mt5JAoOSaEH1PdcP",
       "gender": "Nieumarły",
       "species": null,
-      "effects": [
-        {
-          "gV7u0gkGjd7e104i": {
-            "id": "gV7u0gkGjd7e104i",
-            "label": "Fear",
-            "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postFear(value, name)\n}"
-          }
+      "effects": {
+        "gV7u0gkGjd7e104i": {
+          "id": "gV7u0gkGjd7e104i",
+          "label": "Fear",
+          "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postFear(value, name)\n}"
         },
-        {
-          "MKIdS8288qVwdktI": {
-            "id": "MKIdS8288qVwdktI",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+        "MKIdS8288qVwdktI": {
+          "id": "MKIdS8288qVwdktI",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         },
-        {
-          "RxHIWFoZFen5wq0X": {
-            "id": "RxHIWFoZFen5wq0X",
-            "label": "Construct",
-            "script": "args.wpb = args.sb"
-          }
+        "RxHIWFoZFen5wq0X": {
+          "id": "RxHIWFoZFen5wq0X",
+          "label": "Construct",
+          "script": "args.wpb = args.sb"
         },
-        {
-          "te4iHJZxCnazYyuC": {
-            "id": "te4iHJZxCnazYyuC",
-            "label": "Infected",
-            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
-          }
+        "te4iHJZxCnazYyuC": {
+          "id": "te4iHJZxCnazYyuC",
+          "label": "Infected",
+          "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "nPvDzBcqDGuRaS7x",
@@ -1323,30 +1067,24 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.nPvDzBcqDGuRaS7x",
       "gender": "Ogre",
       "species": null,
-      "effects": [
-        {
-          "hqaGKb66rmZOzKmd": {
-            "id": "hqaGKb66rmZOzKmd",
-            "label": "Tracker",
-            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+      "effects": {
+        "hqaGKb66rmZOzKmd": {
+          "id": "hqaGKb66rmZOzKmd",
+          "label": "Tracker",
+          "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
         },
-        {
-          "KZHbYxdSFPPIGvnN": {
-            "id": "KZHbYxdSFPPIGvnN",
-            "label": "Infected",
-            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
-          }
+        "KZHbYxdSFPPIGvnN": {
+          "id": "KZHbYxdSFPPIGvnN",
+          "label": "Infected",
+          "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
         },
-        {
-          "oI4k12fesVuWcQ08": {
-            "id": "oI4k12fesVuWcQ08",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+        "oI4k12fesVuWcQ08": {
+          "id": "oI4k12fesVuWcQ08",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "nRJxtciIhTHKqAvY",
@@ -1355,46 +1093,36 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.nRJxtciIhTHKqAvY",
       "gender": null,
       "species": null,
-      "effects": [
-        {
-          "hOq8PVdAmbaybEZY": {
-            "id": "hOq8PVdAmbaybEZY",
-            "label": "Accurate Shot",
-            "script": "args.actor.flags.rangedDamageIncrease += 1"
-          }
+      "effects": {
+        "hOq8PVdAmbaybEZY": {
+          "id": "hOq8PVdAmbaybEZY",
+          "label": "Accurate Shot",
+          "script": "args.actor.flags.rangedDamageIncrease += 1"
         },
-        {
-          "L9y8czfFuDcKdvvW": {
-            "id": "L9y8czfFuDcKdvvW",
-            "label": "Accurate Shot",
-            "script": "args.actor.flags.rangedDamageIncrease += 1"
-          }
+        "L9y8czfFuDcKdvvW": {
+          "id": "L9y8czfFuDcKdvvW",
+          "label": "Accurate Shot",
+          "script": "args.actor.flags.rangedDamageIncrease += 1"
         },
-        {
-          "wvAlyqES4wdX8uWH": {
-            "id": "wvAlyqES4wdX8uWH",
-            "label": "Hardy",
-            "script": "args.multiplier.tb += 1"
-          }
+        "wvAlyqES4wdX8uWH": {
+          "id": "wvAlyqES4wdX8uWH",
+          "label": "Hardy",
+          "script": "args.multiplier.tb += 1"
         },
-        {
-          "YN1BHO02pnOOQNus": {
-            "id": "YN1BHO02pnOOQNus",
-            "label": "Accurate Shot",
-            "script": "args.actor.flags.rangedDamageIncrease += 1"
-          }
+        "YN1BHO02pnOOQNus": {
+          "id": "YN1BHO02pnOOQNus",
+          "label": "Accurate Shot",
+          "script": "args.actor.flags.rangedDamageIncrease += 1"
         }
-      ],
-      "items": [
-        {
-          "DUtznJOWO0BxbDsB": {
-            "id": "DUtznJOWO0BxbDsB",
-            "name": "Broń Zasięgowa (Łuk)",
-            "description": "<p>Byle pierwszy lepszy potrafi cisnąć kamieniem, wykorzystując do tego Umiejętności Strzeleckie, ale skuteczne używanie łuków czy pistoletów wymaga ćwiczeń i praktyki.</p><p>Jeśli chcesz lub przyjdzie ci strzelać czy miotać bronią, gdy nie jesteś wyszkolony, zajrzyj do Rozdziału 11: Przewodnik konsumenta, gdzie w opisie oręża znajdziesz zasady i negatywne modyfikatory stosowane w tej sytuacji. Rozdział 5: Zasady bardziej szczegółowo opisuje walkę i wykorzystanie tej Umiejętności. </p><p>Specjalizacje: Broń Eksperymentalna, Broń Miotana, Broń Oplątująca, Broń Prochowa, Kusze, Łuki, Materiały Wybuchowe, Proce</p>",
-            "sourceId": "Compendium.wfrp4e-core.skills.Z9hQe46ykQBZneoU"
-          }
+      },
+      "items": {
+        "DUtznJOWO0BxbDsB": {
+          "id": "DUtznJOWO0BxbDsB",
+          "name": "Broń Zasięgowa (Łuk)",
+          "description": "<p>Byle pierwszy lepszy potrafi cisnąć kamieniem, wykorzystując do tego Umiejętności Strzeleckie, ale skuteczne używanie łuków czy pistoletów wymaga ćwiczeń i praktyki.</p><p>Jeśli chcesz lub przyjdzie ci strzelać czy miotać bronią, gdy nie jesteś wyszkolony, zajrzyj do Rozdziału 11: Przewodnik konsumenta, gdzie w opisie oręża znajdziesz zasady i negatywne modyfikatory stosowane w tej sytuacji. Rozdział 5: Zasady bardziej szczegółowo opisuje walkę i wykorzystanie tej Umiejętności. </p><p>Specjalizacje: Broń Eksperymentalna, Broń Miotana, Broń Oplątująca, Broń Prochowa, Kusze, Łuki, Materiały Wybuchowe, Proce</p>",
+          "sourceId": "Compendium.wfrp4e-core.skills.Z9hQe46ykQBZneoU"
         }
-      ]
+      }
     },
     {
       "id": "oenbbB0PitRWUBfZ",
@@ -1403,44 +1131,34 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.oenbbB0PitRWUBfZ",
       "gender": "Szczur",
       "species": null,
-      "effects": [
-        {
-          "0UNgfpiAb8N9Y3DK": {
-            "id": "0UNgfpiAb8N9Y3DK",
-            "label": "Stride",
-            "script": "args.actor.details.move.run *= 1.5"
-          }
+      "effects": {
+        "0UNgfpiAb8N9Y3DK": {
+          "id": "0UNgfpiAb8N9Y3DK",
+          "label": "Stride",
+          "script": "args.actor.details.move.run *= 1.5"
         },
-        {
-          "5hnLqyWuIc3Gfuf9": {
-            "id": "5hnLqyWuIc3Gfuf9",
-            "label": "Swarm",
-            "script": "if (args.type == \"weapon\" && args.item.attackType == \"ranged\")\n   args.prefillModifiers.modifier += 40"
-          }
+        "5hnLqyWuIc3Gfuf9": {
+          "id": "5hnLqyWuIc3Gfuf9",
+          "label": "Swarm",
+          "script": "if (args.type == \"weapon\" && args.item.attackType == \"ranged\")\n   args.prefillModifiers.modifier += 40"
         },
-        {
-          "7fQU4Bru8lQZxnbl": {
-            "id": "7fQU4Bru8lQZxnbl",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+        "7fQU4Bru8lQZxnbl": {
+          "id": "7fQU4Bru8lQZxnbl",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         },
-        {
-          "BVzoQjaRA9CurB8p": {
-            "id": "BVzoQjaRA9CurB8p",
-            "label": "Infected",
-            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
-          }
+        "BVzoQjaRA9CurB8p": {
+          "id": "BVzoQjaRA9CurB8p",
+          "label": "Infected",
+          "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
         },
-        {
-          "sFDU1ghXQlAFpE7v": {
-            "id": "sFDU1ghXQlAFpE7v",
-            "label": "Swarm Bonuses",
-            "script": "args.wounds *= 5"
-          }
+        "sFDU1ghXQlAFpE7v": {
+          "id": "sFDU1ghXQlAFpE7v",
+          "label": "Swarm Bonuses",
+          "script": "args.wounds *= 5"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "P0GkA7DPaLbeOTkf",
@@ -1449,17 +1167,15 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.P0GkA7DPaLbeOTkf",
       "gender": null,
       "species": null,
-      "items": [
-        {
-          "PAvotUwS46Wlcked": {
-            "id": "PAvotUwS46Wlcked",
-            "name": "Dowolna Cecha Stworzenia",
-            "description": null,
-            "sourceId": null,
-            "specification": null
-          }
+      "items": {
+        "PAvotUwS46Wlcked": {
+          "id": "PAvotUwS46Wlcked",
+          "name": "Dowolna Cecha Stworzenia",
+          "description": null,
+          "sourceId": null,
+          "specification": null
         }
-      ]
+      }
     },
     {
       "id": "QutqbzpxKqsjQ6yN",
@@ -1468,47 +1184,37 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.QutqbzpxKqsjQ6yN",
       "gender": "Wysoki Elf",
       "species": null,
-      "effects": [
-        {
-          "0FIrnHwrgwP3EHHO": {
-            "id": "0FIrnHwrgwP3EHHO",
-            "label": "Magic Resistance",
-            "script": "if (args.type == \"cast\")\n       args.prefillModifiers.slBonus -= 2"
-          }
+      "effects": {
+        "0FIrnHwrgwP3EHHO": {
+          "id": "0FIrnHwrgwP3EHHO",
+          "label": "Magic Resistance",
+          "script": "if (args.type == \"cast\")\n       args.prefillModifiers.slBonus -= 2"
         },
-        {
-          "3T0aaV8hko4NoJni": {
-            "id": "3T0aaV8hko4NoJni",
-            "label": "Tracker",
-            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+        "3T0aaV8hko4NoJni": {
+          "id": "3T0aaV8hko4NoJni",
+          "label": "Tracker",
+          "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
         },
-        {
-          "5v9bqwxYNynPP86w": {
-            "id": "5v9bqwxYNynPP86w",
-            "label": "Stealthy",
-            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Stealth\"))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+        "5v9bqwxYNynPP86w": {
+          "id": "5v9bqwxYNynPP86w",
+          "label": "Stealthy",
+          "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Stealth\"))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
         },
-        {
-          "Li1GkrmZ24SXxLjS": {
-            "id": "Li1GkrmZ24SXxLjS",
-            "label": "Arboreal",
-            "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+        "Li1GkrmZ24SXxLjS": {
+          "id": "Li1GkrmZ24SXxLjS",
+          "label": "Arboreal",
+          "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
         }
-      ],
-      "items": [
-        {
-          "ZVEbgMhQfBkw2lcV": {
-            "id": "ZVEbgMhQfBkw2lcV",
-            "name": "Strzelanie (150)",
-            "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
-            "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
-            "specification": "9"
-          }
+      },
+      "items": {
+        "ZVEbgMhQfBkw2lcV": {
+          "id": "ZVEbgMhQfBkw2lcV",
+          "name": "Strzelanie (150)",
+          "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
+          "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
+          "specification": "9"
         }
-      ]
+      }
     },
     {
       "id": "R1iWvfV9EvgIc8bJ",
@@ -1517,44 +1223,34 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.R1iWvfV9EvgIc8bJ",
       "gender": "Pies",
       "species": null,
-      "effects": [
-        {
-          "1Y0FHMq0KHA49EFv": {
-            "id": "1Y0FHMq0KHA49EFv",
-            "label": "Infected",
-            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
-          }
+      "effects": {
+        "1Y0FHMq0KHA49EFv": {
+          "id": "1Y0FHMq0KHA49EFv",
+          "label": "Infected",
+          "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
         },
-        {
-          "4QleJhHGp2DXsStM": {
-            "id": "4QleJhHGp2DXsStM",
-            "label": "Stride",
-            "script": "args.actor.details.move.run *= 1.5"
-          }
+        "4QleJhHGp2DXsStM": {
+          "id": "4QleJhHGp2DXsStM",
+          "label": "Stride",
+          "script": "args.actor.details.move.run *= 1.5"
         },
-        {
-          "6OhiDxi26wq9sV2p": {
-            "id": "6OhiDxi26wq9sV2p",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+        "6OhiDxi26wq9sV2p": {
+          "id": "6OhiDxi26wq9sV2p",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         },
-        {
-          "QtFmvlxRHMCjeW3D": {
-            "id": "QtFmvlxRHMCjeW3D",
-            "label": "Tracker",
-            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+        "QtFmvlxRHMCjeW3D": {
+          "id": "QtFmvlxRHMCjeW3D",
+          "label": "Tracker",
+          "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
         },
-        {
-          "VhfIZVF6YlnpqdnY": {
-            "id": "VhfIZVF6YlnpqdnY",
-            "label": "Frenzy",
-            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
-          }
+        "VhfIZVF6YlnpqdnY": {
+          "id": "VhfIZVF6YlnpqdnY",
+          "label": "Frenzy",
+          "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "R37OtN5gmPWCYOP3",
@@ -1563,44 +1259,34 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.R37OtN5gmPWCYOP3",
       "gender": "Gor",
       "species": null,
-      "effects": [
-        {
-          "B32NmuUIRuV9mQSk": {
-            "id": "B32NmuUIRuV9mQSk",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+      "effects": {
+        "B32NmuUIRuV9mQSk": {
+          "id": "B32NmuUIRuV9mQSk",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         },
-        {
-          "C2pE9fd3qOIH9KSz": {
-            "id": "C2pE9fd3qOIH9KSz",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+        "C2pE9fd3qOIH9KSz": {
+          "id": "C2pE9fd3qOIH9KSz",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         },
-        {
-          "OGivLVdVoT6H3rNc": {
-            "id": "OGivLVdVoT6H3rNc",
-            "label": "Infected",
-            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
-          }
+        "OGivLVdVoT6H3rNc": {
+          "id": "OGivLVdVoT6H3rNc",
+          "label": "Infected",
+          "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
         },
-        {
-          "W0ZCppsMI1uadFxK": {
-            "id": "W0ZCppsMI1uadFxK",
-            "label": "Arboreal",
-            "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+        "W0ZCppsMI1uadFxK": {
+          "id": "W0ZCppsMI1uadFxK",
+          "label": "Arboreal",
+          "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
         },
-        {
-          "WkxXGBWJRCNeJiq9": {
-            "id": "WkxXGBWJRCNeJiq9",
-            "label": "Infestation",
-            "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
-          }
+        "WkxXGBWJRCNeJiq9": {
+          "id": "WkxXGBWJRCNeJiq9",
+          "label": "Infestation",
+          "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "r70e6JNM3MjWIb7N",
@@ -1609,26 +1295,22 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.r70e6JNM3MjWIb7N",
       "gender": "Niziołek",
       "species": null,
-      "effects": [
-        {
-          "YTUcjOSNS0tab2qC": {
-            "id": "YTUcjOSNS0tab2qC",
-            "label": "Stealthy",
-            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Stealth\"))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+      "effects": {
+        "YTUcjOSNS0tab2qC": {
+          "id": "YTUcjOSNS0tab2qC",
+          "label": "Stealthy",
+          "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Stealth\"))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
         }
-      ],
-      "items": [
-        {
-          "E5MeeVvpH0rxRL8N": {
-            "id": "E5MeeVvpH0rxRL8N",
-            "name": "Strzelanie (25)",
-            "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
-            "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
-            "specification": "7"
-          }
+      },
+      "items": {
+        "E5MeeVvpH0rxRL8N": {
+          "id": "E5MeeVvpH0rxRL8N",
+          "name": "Strzelanie (25)",
+          "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
+          "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
+          "specification": "7"
         }
-      ]
+      }
     },
     {
       "id": "RiXpMLex8SZf6gaQ",
@@ -1637,23 +1319,19 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.RiXpMLex8SZf6gaQ",
       "gender": "Hipogryf",
       "species": null,
-      "effects": [
-        {
-          "9MpsAdM1z4Iz847T": {
-            "id": "9MpsAdM1z4Iz847T",
-            "label": "Stride",
-            "script": "args.actor.details.move.run *= 1.5"
-          }
+      "effects": {
+        "9MpsAdM1z4Iz847T": {
+          "id": "9MpsAdM1z4Iz847T",
+          "label": "Stride",
+          "script": "args.actor.details.move.run *= 1.5"
         },
-        {
-          "rGrZd5lWTROBeYdU": {
-            "id": "rGrZd5lWTROBeYdU",
-            "label": "Frenzy",
-            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
-          }
+        "rGrZd5lWTROBeYdU": {
+          "id": "rGrZd5lWTROBeYdU",
+          "label": "Frenzy",
+          "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "Rs3lMA5UavTlTiJW",
@@ -1662,27 +1340,23 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.Rs3lMA5UavTlTiJW",
       "gender": null,
       "species": null,
-      "items": [
-        {
-          "HkgHJKXAM4hl9OJ4": {
-            "id": "HkgHJKXAM4hl9OJ4",
-            "name": "Wyczulony Zmysł (Zapach)",
-            "description": "<p>Jeden z twoich pięciu zmysłów jest tak wyczulony, że wyczuwasz to, co umyka innym. Możesz wykonać Test Percepcji, by dowiedzieć się czegoś więcej niż inni, opierając się na tym szczególnym zmyśle. Przykładowo może to być dostrzeżenie dalekiego orła, którego nie widzą inni, wywęszenie prawie niewyczuwalnej trucizny, dosłyszenie bicia serca myszy kryjącej się w ścianie, wyczucie dotykiem ukrytej wiadomości wyskrobanej na papierze czy porównanie smaku dwóch piw od tego samego piwowara, by dowiedzieć się, czy zostały nalane z dwóch różnych beczek.</p>",
-            "sourceId": "Compendium.wfrp4e-core.talents.9h82z72XGo9tfgQS",
-            "tests": "Percepcja (z wykorzystaniem tego zmysłu)",
-            "specification": null
-          }
+      "items": {
+        "HkgHJKXAM4hl9OJ4": {
+          "id": "HkgHJKXAM4hl9OJ4",
+          "name": "Wyczulony Zmysł (Zapach)",
+          "description": "<p>Jeden z twoich pięciu zmysłów jest tak wyczulony, że wyczuwasz to, co umyka innym. Możesz wykonać Test Percepcji, by dowiedzieć się czegoś więcej niż inni, opierając się na tym szczególnym zmyśle. Przykładowo może to być dostrzeżenie dalekiego orła, którego nie widzą inni, wywęszenie prawie niewyczuwalnej trucizny, dosłyszenie bicia serca myszy kryjącej się w ścianie, wyczucie dotykiem ukrytej wiadomości wyskrobanej na papierze czy porównanie smaku dwóch piw od tego samego piwowara, by dowiedzieć się, czy zostały nalane z dwóch różnych beczek.</p>",
+          "sourceId": "Compendium.wfrp4e-core.talents.9h82z72XGo9tfgQS",
+          "tests": "Percepcja (z wykorzystaniem tego zmysłu)",
+          "specification": null
         },
-        {
-          "yymhDcCRUdL6jFCS": {
-            "id": "yymhDcCRUdL6jFCS",
-            "name": "Broń Ręczna (Szpon)",
-            "description": null,
-            "sourceId": null,
-            "special": null
-          }
+        "yymhDcCRUdL6jFCS": {
+          "id": "yymhDcCRUdL6jFCS",
+          "name": "Broń Ręczna (Szpon)",
+          "description": null,
+          "sourceId": null,
+          "special": null
         }
-      ]
+      }
     },
     {
       "id": "sbQ5mDvNZ7qQm8YY",
@@ -1691,37 +1365,29 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.sbQ5mDvNZ7qQm8YY",
       "gender": "Demon",
       "species": null,
-      "effects": [
-        {
-          "aWuh4mvcUREGgITl": {
-            "id": "aWuh4mvcUREGgITl",
-            "label": "Infestation",
-            "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
-          }
+      "effects": {
+        "aWuh4mvcUREGgITl": {
+          "id": "aWuh4mvcUREGgITl",
+          "label": "Infestation",
+          "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
         },
-        {
-          "E8VUoXmrPhsjO6wt": {
-            "id": "E8VUoXmrPhsjO6wt",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+        "E8VUoXmrPhsjO6wt": {
+          "id": "E8VUoXmrPhsjO6wt",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         },
-        {
-          "QhSLr0cWvRaQUp5T": {
-            "id": "QhSLr0cWvRaQUp5T",
-            "label": "Infected",
-            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
-          }
+        "QhSLr0cWvRaQUp5T": {
+          "id": "QhSLr0cWvRaQUp5T",
+          "label": "Infected",
+          "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
         },
-        {
-          "vTg3YNSmOjtPASjX": {
-            "id": "vTg3YNSmOjtPASjX",
-            "label": "Terror",
-            "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postTerror(value, name)\n}"
-          }
+        "vTg3YNSmOjtPASjX": {
+          "id": "vTg3YNSmOjtPASjX",
+          "label": "Terror",
+          "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postTerror(value, name)\n}"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "T5qAtpoKtB8iwTBd",
@@ -1730,44 +1396,34 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.T5qAtpoKtB8iwTBd",
       "gender": "Nieumarły",
       "species": null,
-      "effects": [
-        {
-          "6kNrq95i4DO3bERL": {
-            "id": "6kNrq95i4DO3bERL",
-            "label": "Tracker",
-            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+      "effects": {
+        "6kNrq95i4DO3bERL": {
+          "id": "6kNrq95i4DO3bERL",
+          "label": "Tracker",
+          "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
         },
-        {
-          "DHEpsVPMxgz4YEBD": {
-            "id": "DHEpsVPMxgz4YEBD",
-            "label": "Distracting",
-            "script": "args.prefillModifiers.modifier -= 20"
-          }
+        "DHEpsVPMxgz4YEBD": {
+          "id": "DHEpsVPMxgz4YEBD",
+          "label": "Distracting",
+          "script": "args.prefillModifiers.modifier -= 20"
         },
-        {
-          "lgA5hKW9RvRZ8ZF0": {
-            "id": "lgA5hKW9RvRZ8ZF0",
-            "label": "Frenzy",
-            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
-          }
+        "lgA5hKW9RvRZ8ZF0": {
+          "id": "lgA5hKW9RvRZ8ZF0",
+          "label": "Frenzy",
+          "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
         },
-        {
-          "mDuKRFfaLTwEHOq9": {
-            "id": "mDuKRFfaLTwEHOq9",
-            "label": "Fear",
-            "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postFear(value, name)\n}"
-          }
+        "mDuKRFfaLTwEHOq9": {
+          "id": "mDuKRFfaLTwEHOq9",
+          "label": "Fear",
+          "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postFear(value, name)\n}"
         },
-        {
-          "Y6h1aNL9xJiu7ZgF": {
-            "id": "Y6h1aNL9xJiu7ZgF",
-            "label": "Regenerate",
-            "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")}\n\nlet wounds = duplicate(this.actor.status.wounds)\nlet regen = (await new Roll(\"1d10\").roll()).total\n\nif (wounds.value >= wounds.max)\n   return\n\nif (wounds.value > 0)\n{\n   wounds.value += regen\n   if (wounds.value > wounds.max) \n        wounds.value = wounds.max\n   chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`\n   \n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse if (regen >= 8)\n{\n    chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n    wounds.value += 1\n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse\n{\n    chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n}\n\nthis.actor.update({\"system.status.wounds\" : wounds})\nChatMessage.create(chatData)"
-          }
+        "Y6h1aNL9xJiu7ZgF": {
+          "id": "Y6h1aNL9xJiu7ZgF",
+          "label": "Regenerate",
+          "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")}\n\nlet wounds = duplicate(this.actor.status.wounds)\nlet regen = (await new Roll(\"1d10\").roll()).total\n\nif (wounds.value >= wounds.max)\n   return\n\nif (wounds.value > 0)\n{\n   wounds.value += regen\n   if (wounds.value > wounds.max) \n        wounds.value = wounds.max\n   chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`\n   \n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse if (regen >= 8)\n{\n    chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n    wounds.value += 1\n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse\n{\n    chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n}\n\nthis.actor.update({\"system.status.wounds\" : wounds})\nChatMessage.create(chatData)"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "T79RqnDOAQLn3I1s",
@@ -1776,51 +1432,39 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.T79RqnDOAQLn3I1s",
       "gender": "Nieumarły",
       "species": null,
-      "effects": [
-        {
-          "49ACIsgTnGtu4gLu": {
-            "id": "49ACIsgTnGtu4gLu",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+      "effects": {
+        "49ACIsgTnGtu4gLu": {
+          "id": "49ACIsgTnGtu4gLu",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         },
-        {
-          "dstnZMHpScBQxyyC": {
-            "id": "dstnZMHpScBQxyyC",
-            "label": "Construct",
-            "script": "args.wpb = args.sb"
-          }
+        "dstnZMHpScBQxyyC": {
+          "id": "dstnZMHpScBQxyyC",
+          "label": "Construct",
+          "script": "args.wpb = args.sb"
         },
-        {
-          "Gv7DNzuCVNnni8Ox": {
-            "id": "Gv7DNzuCVNnni8Ox",
-            "label": "Infected",
-            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
-          }
+        "Gv7DNzuCVNnni8Ox": {
+          "id": "Gv7DNzuCVNnni8Ox",
+          "label": "Infected",
+          "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
         },
-        {
-          "HWton3fD0O4haA1O": {
-            "id": "HWton3fD0O4haA1O",
-            "label": "Fear",
-            "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postFear(value, name)\n}"
-          }
+        "HWton3fD0O4haA1O": {
+          "id": "HWton3fD0O4haA1O",
+          "label": "Fear",
+          "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postFear(value, name)\n}"
         },
-        {
-          "RT4ESTox6v57m0TO": {
-            "id": "RT4ESTox6v57m0TO",
-            "label": "Distracting",
-            "script": "args.prefillModifiers.modifier -= 20"
-          }
+        "RT4ESTox6v57m0TO": {
+          "id": "RT4ESTox6v57m0TO",
+          "label": "Distracting",
+          "script": "args.prefillModifiers.modifier -= 20"
         },
-        {
-          "T4mCjWLkjhUJYnSf": {
-            "id": "T4mCjWLkjhUJYnSf",
-            "label": "Infestation",
-            "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
-          }
+        "T4mCjWLkjhUJYnSf": {
+          "id": "T4mCjWLkjhUJYnSf",
+          "label": "Infestation",
+          "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "TWy5l4uYTRAtjfit",
@@ -1829,16 +1473,14 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.TWy5l4uYTRAtjfit",
       "gender": "Nieumarły",
       "species": null,
-      "effects": [
-        {
-          "dle3lIXmTOn2icAD": {
-            "id": "dle3lIXmTOn2icAD",
-            "label": "Terror",
-            "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postTerror(value, name)\n}"
-          }
+      "effects": {
+        "dle3lIXmTOn2icAD": {
+          "id": "dle3lIXmTOn2icAD",
+          "label": "Terror",
+          "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postTerror(value, name)\n}"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "umddAQkmxVYG0AzO",
@@ -1847,58 +1489,44 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.umddAQkmxVYG0AzO",
       "gender": "Nieumarły",
       "species": null,
-      "effects": [
-        {
-          "2sNt3r9r3TxcS3Mn": {
-            "id": "2sNt3r9r3TxcS3Mn",
-            "label": "Infected",
-            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
-          }
+      "effects": {
+        "2sNt3r9r3TxcS3Mn": {
+          "id": "2sNt3r9r3TxcS3Mn",
+          "label": "Infected",
+          "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
         },
-        {
-          "bEyqgfTDcEfyFX5h": {
-            "id": "bEyqgfTDcEfyFX5h",
-            "label": "Construct",
-            "script": "args.wpb = args.sb"
-          }
+        "bEyqgfTDcEfyFX5h": {
+          "id": "bEyqgfTDcEfyFX5h",
+          "label": "Construct",
+          "script": "args.wpb = args.sb"
         },
-        {
-          "dAVMjmHzUY9Iu3Jr": {
-            "id": "dAVMjmHzUY9Iu3Jr",
-            "label": "Stride",
-            "script": "args.actor.details.move.run *= 1.5"
-          }
+        "dAVMjmHzUY9Iu3Jr": {
+          "id": "dAVMjmHzUY9Iu3Jr",
+          "label": "Stride",
+          "script": "args.actor.details.move.run *= 1.5"
         },
-        {
-          "fn5rur4oPtQcYOtf": {
-            "id": "fn5rur4oPtQcYOtf",
-            "label": "Distracting",
-            "script": "args.prefillModifiers.modifier -= 20"
-          }
+        "fn5rur4oPtQcYOtf": {
+          "id": "fn5rur4oPtQcYOtf",
+          "label": "Distracting",
+          "script": "args.prefillModifiers.modifier -= 20"
         },
-        {
-          "jS6JjuVotk1qMAdw": {
-            "id": "jS6JjuVotk1qMAdw",
-            "label": "Fear",
-            "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postFear(value, name)\n}"
-          }
+        "jS6JjuVotk1qMAdw": {
+          "id": "jS6JjuVotk1qMAdw",
+          "label": "Fear",
+          "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postFear(value, name)\n}"
         },
-        {
-          "MeUFxAGHn8sBIQPD": {
-            "id": "MeUFxAGHn8sBIQPD",
-            "label": "Tracker",
-            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+        "MeUFxAGHn8sBIQPD": {
+          "id": "MeUFxAGHn8sBIQPD",
+          "label": "Tracker",
+          "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
         },
-        {
-          "XQ1gi8Yf8yZljDlW": {
-            "id": "XQ1gi8Yf8yZljDlW",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+        "XQ1gi8Yf8yZljDlW": {
+          "id": "XQ1gi8Yf8yZljDlW",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "VfJgGmCTWqb0IDSW",
@@ -1907,44 +1535,34 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.VfJgGmCTWqb0IDSW",
       "gender": "Skaven",
       "species": null,
-      "effects": [
-        {
-          "bpkQmrr8idJ1a2nL": {
-            "id": "bpkQmrr8idJ1a2nL",
-            "label": "Infestation",
-            "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
-          }
+      "effects": {
+        "bpkQmrr8idJ1a2nL": {
+          "id": "bpkQmrr8idJ1a2nL",
+          "label": "Infestation",
+          "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
         },
-        {
-          "l8MNGZiH05ol80fC": {
-            "id": "l8MNGZiH05ol80fC",
-            "label": "Infected",
-            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
-          }
+        "l8MNGZiH05ol80fC": {
+          "id": "l8MNGZiH05ol80fC",
+          "label": "Infected",
+          "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
         },
-        {
-          "MrOjhZLrQXj2MnQN": {
-            "id": "MrOjhZLrQXj2MnQN",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+        "MrOjhZLrQXj2MnQN": {
+          "id": "MrOjhZLrQXj2MnQN",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         },
-        {
-          "oKLgYvM78rTHvG9u": {
-            "id": "oKLgYvM78rTHvG9u",
-            "label": "Tail Attack",
-            "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value]\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value]\n\nif (attackerSize > actorSize)\n{\n   args.actor.addCondition(\"prone\")\n   ChatMessage.create({content: `<b>Tail Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Prone]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
-          }
+        "oKLgYvM78rTHvG9u": {
+          "id": "oKLgYvM78rTHvG9u",
+          "label": "Tail Attack",
+          "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value]\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value]\n\nif (attackerSize > actorSize)\n{\n   args.actor.addCondition(\"prone\")\n   ChatMessage.create({content: `<b>Tail Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Prone]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
         },
-        {
-          "YtLiz2xUwvF1mj2S": {
-            "id": "YtLiz2xUwvF1mj2S",
-            "label": "Tracker",
-            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+        "YtLiz2xUwvF1mj2S": {
+          "id": "YtLiz2xUwvF1mj2S",
+          "label": "Tracker",
+          "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "VMceSpLje0J7lfP0",
@@ -1953,30 +1571,24 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.VMceSpLje0J7lfP0",
       "gender": "Squig",
       "species": null,
-      "effects": [
-        {
-          "H9nEvznJNmC6aD4v": {
-            "id": "H9nEvznJNmC6aD4v",
-            "label": "Frenzy",
-            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
-          }
+      "effects": {
+        "H9nEvznJNmC6aD4v": {
+          "id": "H9nEvznJNmC6aD4v",
+          "label": "Frenzy",
+          "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
         },
-        {
-          "jkpfCxuk6QLS3Ang": {
-            "id": "jkpfCxuk6QLS3Ang",
-            "label": "Bounce",
-            "script": "this.actor.details.move.run *= 2"
-          }
+        "jkpfCxuk6QLS3Ang": {
+          "id": "jkpfCxuk6QLS3Ang",
+          "label": "Bounce",
+          "script": "this.actor.details.move.run *= 2"
         },
-        {
-          "LQsrUYm7M42rptNN": {
-            "id": "LQsrUYm7M42rptNN",
-            "label": "Infected",
-            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
-          }
+        "LQsrUYm7M42rptNN": {
+          "id": "LQsrUYm7M42rptNN",
+          "label": "Infected",
+          "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "VPVnyae6VHeD9cEP",
@@ -1985,51 +1597,39 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.VPVnyae6VHeD9cEP",
       "gender": "Pająk",
       "species": null,
-      "effects": [
-        {
-          "1oH1ylww2XXvCgdX": {
-            "id": "1oH1ylww2XXvCgdX",
-            "label": "Swarm",
-            "script": "if (args.type == \"weapon\" && args.item.attackType == \"ranged\")\n   args.prefillModifiers.modifier += 40"
-          }
+      "effects": {
+        "1oH1ylww2XXvCgdX": {
+          "id": "1oH1ylww2XXvCgdX",
+          "label": "Swarm",
+          "script": "if (args.type == \"weapon\" && args.item.attackType == \"ranged\")\n   args.prefillModifiers.modifier += 40"
         },
-        {
-          "Bv323jo9bqLWMEU0": {
-            "id": "Bv323jo9bqLWMEU0",
-            "label": "Venom",
-            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
-          }
+        "Bv323jo9bqLWMEU0": {
+          "id": "Bv323jo9bqLWMEU0",
+          "label": "Venom",
+          "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
         },
-        {
-          "Hc7uwM7V7e7k1izk": {
-            "id": "Hc7uwM7V7e7k1izk",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+        "Hc7uwM7V7e7k1izk": {
+          "id": "Hc7uwM7V7e7k1izk",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         },
-        {
-          "HeHsfnqkOe5K4U8r": {
-            "id": "HeHsfnqkOe5K4U8r",
-            "label": "Web",
-            "script": "args.actor.addCondition(\"entangled\")"
-          }
+        "HeHsfnqkOe5K4U8r": {
+          "id": "HeHsfnqkOe5K4U8r",
+          "label": "Web",
+          "script": "args.actor.addCondition(\"entangled\")"
         },
-        {
-          "qfHKTSZ6miVcSoSV": {
-            "id": "qfHKTSZ6miVcSoSV",
-            "label": "Swarm Bonuses",
-            "script": "args.wounds *= 5"
-          }
+        "qfHKTSZ6miVcSoSV": {
+          "id": "qfHKTSZ6miVcSoSV",
+          "label": "Swarm Bonuses",
+          "script": "args.wounds *= 5"
         },
-        {
-          "qunKHRapK48sB5fF": {
-            "id": "qunKHRapK48sB5fF",
-            "label": "Arboreal",
-            "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+        "qunKHRapK48sB5fF": {
+          "id": "qunKHRapK48sB5fF",
+          "label": "Arboreal",
+          "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "vrYs3cbxvXtre6rv",
@@ -2038,47 +1638,37 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.vrYs3cbxvXtre6rv",
       "gender": "Ungor",
       "species": null,
-      "effects": [
-        {
-          "0Qm0sltf7LI6OS8H": {
-            "id": "0Qm0sltf7LI6OS8H",
-            "label": "Infestation",
-            "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
-          }
+      "effects": {
+        "0Qm0sltf7LI6OS8H": {
+          "id": "0Qm0sltf7LI6OS8H",
+          "label": "Infestation",
+          "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
         },
-        {
-          "tC23Vjf8UInFMUUe": {
-            "id": "tC23Vjf8UInFMUUe",
-            "label": "Infected",
-            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
-          }
+        "tC23Vjf8UInFMUUe": {
+          "id": "tC23Vjf8UInFMUUe",
+          "label": "Infected",
+          "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
         },
-        {
-          "tTkp9d5hUxKZNROU": {
-            "id": "tTkp9d5hUxKZNROU",
-            "label": "Arboreal",
-            "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+        "tTkp9d5hUxKZNROU": {
+          "id": "tTkp9d5hUxKZNROU",
+          "label": "Arboreal",
+          "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
         },
-        {
-          "v8ab0CxHts03RoTj": {
-            "id": "v8ab0CxHts03RoTj",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+        "v8ab0CxHts03RoTj": {
+          "id": "v8ab0CxHts03RoTj",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         }
-      ],
-      "items": [
-        {
-          "B5d8o4dsmZy67V5h": {
-            "id": "B5d8o4dsmZy67V5h",
-            "name": "Strzelanie (25)",
-            "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
-            "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
-            "specification": "7"
-          }
+      },
+      "items": {
+        "B5d8o4dsmZy67V5h": {
+          "id": "B5d8o4dsmZy67V5h",
+          "name": "Strzelanie (25)",
+          "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
+          "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
+          "specification": "7"
         }
-      ]
+      }
     },
     {
       "id": "wdnXbjtKK7MtsZzc",
@@ -2087,37 +1677,29 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.wdnXbjtKK7MtsZzc",
       "gender": "Zielonoskóry",
       "species": null,
-      "effects": [
-        {
-          "Gd3ciWnuttQ0eagx": {
-            "id": "Gd3ciWnuttQ0eagx",
-            "label": "Venom",
-            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
-          }
+      "effects": {
+        "Gd3ciWnuttQ0eagx": {
+          "id": "Gd3ciWnuttQ0eagx",
+          "label": "Venom",
+          "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
         },
-        {
-          "K716oGYB6WDANWMg": {
-            "id": "K716oGYB6WDANWMg",
-            "label": "Swarm",
-            "script": "if (args.type == \"weapon\" && args.item.attackType == \"ranged\")\n   args.prefillModifiers.modifier += 40"
-          }
+        "K716oGYB6WDANWMg": {
+          "id": "K716oGYB6WDANWMg",
+          "label": "Swarm",
+          "script": "if (args.type == \"weapon\" && args.item.attackType == \"ranged\")\n   args.prefillModifiers.modifier += 40"
         },
-        {
-          "MhhGC5b9344Ecqnk": {
-            "id": "MhhGC5b9344Ecqnk",
-            "label": "Infected",
-            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
-          }
+        "MhhGC5b9344Ecqnk": {
+          "id": "MhhGC5b9344Ecqnk",
+          "label": "Infected",
+          "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
         },
-        {
-          "rPpBfzaGWof5yf0b": {
-            "id": "rPpBfzaGWof5yf0b",
-            "label": "Swarm Bonuses",
-            "script": "args.wounds *= 5"
-          }
+        "rPpBfzaGWof5yf0b": {
+          "id": "rPpBfzaGWof5yf0b",
+          "label": "Swarm Bonuses",
+          "script": "args.wounds *= 5"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "XoSSlIsqXkiBlycn",
@@ -2126,51 +1708,39 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.XoSSlIsqXkiBlycn",
       "gender": "Nieumarły",
       "species": null,
-      "effects": [
-        {
-          "5vGOusPp76nuFjCS": {
-            "id": "5vGOusPp76nuFjCS",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+      "effects": {
+        "5vGOusPp76nuFjCS": {
+          "id": "5vGOusPp76nuFjCS",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         },
-        {
-          "DGDpCWDOKKcaplbe": {
-            "id": "DGDpCWDOKKcaplbe",
-            "label": "Frenzy",
-            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
-          }
+        "DGDpCWDOKKcaplbe": {
+          "id": "DGDpCWDOKKcaplbe",
+          "label": "Frenzy",
+          "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
         },
-        {
-          "R4fA4w2yTpmct7a7": {
-            "id": "R4fA4w2yTpmct7a7",
-            "label": "Regenerate",
-            "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")}\n\nlet wounds = duplicate(this.actor.status.wounds)\nlet regen = (await new Roll(\"1d10\").roll()).total\n\nif (wounds.value >= wounds.max)\n   return\n\nif (wounds.value > 0)\n{\n   wounds.value += regen\n   if (wounds.value > wounds.max) \n        wounds.value = wounds.max\n   chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`\n   \n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse if (regen >= 8)\n{\n    chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n    wounds.value += 1\n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse\n{\n    chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n}\n\nthis.actor.update({\"system.status.wounds\" : wounds})\nChatMessage.create(chatData)"
-          }
+        "R4fA4w2yTpmct7a7": {
+          "id": "R4fA4w2yTpmct7a7",
+          "label": "Regenerate",
+          "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")}\n\nlet wounds = duplicate(this.actor.status.wounds)\nlet regen = (await new Roll(\"1d10\").roll()).total\n\nif (wounds.value >= wounds.max)\n   return\n\nif (wounds.value > 0)\n{\n   wounds.value += regen\n   if (wounds.value > wounds.max) \n        wounds.value = wounds.max\n   chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`\n   \n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse if (regen >= 8)\n{\n    chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n    wounds.value += 1\n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse\n{\n    chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n}\n\nthis.actor.update({\"system.status.wounds\" : wounds})\nChatMessage.create(chatData)"
         },
-        {
-          "VM4pv8D3no7z7Gvw": {
-            "id": "VM4pv8D3no7z7Gvw",
-            "label": "Tracker",
-            "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+        "VM4pv8D3no7z7Gvw": {
+          "id": "VM4pv8D3no7z7Gvw",
+          "label": "Tracker",
+          "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
         },
-        {
-          "WbtH8VyrGiMhVDF1": {
-            "id": "WbtH8VyrGiMhVDF1",
-            "label": "Terror",
-            "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postTerror(value, name)\n}"
-          }
+        "WbtH8VyrGiMhVDF1": {
+          "id": "WbtH8VyrGiMhVDF1",
+          "label": "Terror",
+          "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postTerror(value, name)\n}"
         },
-        {
-          "yPCY4AzgmpJhjmUu": {
-            "id": "yPCY4AzgmpJhjmUu",
-            "label": "Fear",
-            "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postFear(value, name)\n}"
-          }
+        "yPCY4AzgmpJhjmUu": {
+          "id": "yPCY4AzgmpJhjmUu",
+          "label": "Fear",
+          "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postFear(value, name)\n}"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "XtVkAVgZRIIgrBXb",
@@ -2179,30 +1749,24 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.XtVkAVgZRIIgrBXb",
       "gender": "Mantikora",
       "species": null,
-      "effects": [
-        {
-          "dlQkrrgpAQLRGHsP": {
-            "id": "dlQkrrgpAQLRGHsP",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+      "effects": {
+        "dlQkrrgpAQLRGHsP": {
+          "id": "dlQkrrgpAQLRGHsP",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         },
-        {
-          "Rm3d5PT9jADL4gay": {
-            "id": "Rm3d5PT9jADL4gay",
-            "label": "Venom",
-            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
-          }
+        "Rm3d5PT9jADL4gay": {
+          "id": "Rm3d5PT9jADL4gay",
+          "label": "Venom",
+          "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
         },
-        {
-          "wcaZyIkoc6mIj05E": {
-            "id": "wcaZyIkoc6mIj05E",
-            "label": "Tail Attack",
-            "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value]\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value]\n\nif (attackerSize > actorSize)\n{\n   args.actor.addCondition(\"prone\")\n   ChatMessage.create({content: `<b>Tail Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Prone]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
-          }
+        "wcaZyIkoc6mIj05E": {
+          "id": "wcaZyIkoc6mIj05E",
+          "label": "Tail Attack",
+          "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value]\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value]\n\nif (attackerSize > actorSize)\n{\n   args.actor.addCondition(\"prone\")\n   ChatMessage.create({content: `<b>Tail Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Prone]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "YavXt2NP9N8Puxse",
@@ -2211,30 +1775,24 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.YavXt2NP9N8Puxse",
       "gender": null,
       "species": null,
-      "effects": [
-        {
-          "nZUvl5pnY3xEBtkg": {
-            "id": "nZUvl5pnY3xEBtkg",
-            "label": "Cunning",
-            "script": null
-          }
+      "effects": {
+        "nZUvl5pnY3xEBtkg": {
+          "id": "nZUvl5pnY3xEBtkg",
+          "label": "Cunning",
+          "script": null
         },
-        {
-          "OziS2EaX3BzYrkYI": {
-            "id": "OziS2EaX3BzYrkYI",
-            "label": "Clever",
-            "script": null
-          }
+        "OziS2EaX3BzYrkYI": {
+          "id": "OziS2EaX3BzYrkYI",
+          "label": "Clever",
+          "script": null
         },
-        {
-          "T2E7JWk3xMOy3WC9": {
-            "id": "T2E7JWk3xMOy3WC9",
-            "label": "Tough",
-            "script": null
-          }
+        "T2E7JWk3xMOy3WC9": {
+          "id": "T2E7JWk3xMOy3WC9",
+          "label": "Tough",
+          "script": null
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "Yee9gwxJUceGbnO2",
@@ -2243,16 +1801,14 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.Yee9gwxJUceGbnO2",
       "gender": "Pegaz",
       "species": null,
-      "effects": [
-        {
-          "bLNxCmpxb9SlSBFC": {
-            "id": "bLNxCmpxb9SlSBFC",
-            "label": "Stride",
-            "script": "args.actor.details.move.run *= 1.5"
-          }
+      "effects": {
+        "bLNxCmpxb9SlSBFC": {
+          "id": "bLNxCmpxb9SlSBFC",
+          "label": "Stride",
+          "script": "args.actor.details.move.run *= 1.5"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "z8f3vySKIpTxGr62",
@@ -2261,51 +1817,39 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.z8f3vySKIpTxGr62",
       "gender": "Bazyliszek",
       "species": null,
-      "effects": [
-        {
-          "7VBwjr1LazKiJJh9": {
-            "id": "7VBwjr1LazKiJJh9",
-            "label": "Infected",
-            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
-          }
+      "effects": {
+        "7VBwjr1LazKiJJh9": {
+          "id": "7VBwjr1LazKiJJh9",
+          "label": "Infected",
+          "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
         },
-        {
-          "bhOGqfpoKJEhqbxd": {
-            "id": "bhOGqfpoKJEhqbxd",
-            "label": "Cold Blooded",
-            "script": "if (args.test.characteristicKey == \"wp\")\n   args.test.preData.canReverse = true"
-          }
+        "bhOGqfpoKJEhqbxd": {
+          "id": "bhOGqfpoKJEhqbxd",
+          "label": "Cold Blooded",
+          "script": "if (args.test.characteristicKey == \"wp\")\n   args.test.preData.canReverse = true"
         },
-        {
-          "Cvlcy71V4UoNUDFj": {
-            "id": "Cvlcy71V4UoNUDFj",
-            "label": "Stride",
-            "script": "args.actor.details.move.run *= 1.5"
-          }
+        "Cvlcy71V4UoNUDFj": {
+          "id": "Cvlcy71V4UoNUDFj",
+          "label": "Stride",
+          "script": "args.actor.details.move.run *= 1.5"
         },
-        {
-          "Gxa1i8z4wfyCpoga": {
-            "id": "Gxa1i8z4wfyCpoga",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+        "Gxa1i8z4wfyCpoga": {
+          "id": "Gxa1i8z4wfyCpoga",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         },
-        {
-          "MQShn2Ex6g9j3zTI": {
-            "id": "MQShn2Ex6g9j3zTI",
-            "label": "Venom",
-            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
-          }
+        "MQShn2Ex6g9j3zTI": {
+          "id": "MQShn2Ex6g9j3zTI",
+          "label": "Venom",
+          "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
         },
-        {
-          "TPQXGnY2hMQdbwGn": {
-            "id": "TPQXGnY2hMQdbwGn",
-            "label": "Tail Attack",
-            "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value]\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value]\n\nif (attackerSize > actorSize)\n{\n   args.actor.addCondition(\"prone\")\n   ChatMessage.create({content: `<b>Tail Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Prone]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
-          }
+        "TPQXGnY2hMQdbwGn": {
+          "id": "TPQXGnY2hMQdbwGn",
+          "label": "Tail Attack",
+          "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value]\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value]\n\nif (attackerSize > actorSize)\n{\n   args.actor.addCondition(\"prone\")\n   ChatMessage.create({content: `<b>Tail Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Prone]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
         }
-      ],
-      "items": []
+      },
+      "items": {}
     },
     {
       "id": "zzdOpKqBC28J66Mn",
@@ -2314,47 +1858,37 @@
       "sourceId": "Compendium.wfrp4e-core.bestiary.zzdOpKqBC28J66Mn",
       "gender": "Goblin",
       "species": null,
-      "effects": [
-        {
-          "i8TsOAxC47ofJl4x": {
-            "id": "i8TsOAxC47ofJl4x",
-            "label": "Armour",
-            "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+      "effects": {
+        "i8TsOAxC47ofJl4x": {
+          "id": "i8TsOAxC47ofJl4x",
+          "label": "Armour",
+          "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         },
-        {
-          "L73KcIKLc1jZcLFR": {
-            "id": "L73KcIKLc1jZcLFR",
-            "label": "Venom",
-            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
-          }
+        "L73KcIKLc1jZcLFR": {
+          "id": "L73KcIKLc1jZcLFR",
+          "label": "Venom",
+          "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
         },
-        {
-          "pftSjYK6DieRahrK": {
-            "id": "pftSjYK6DieRahrK",
-            "label": "Infected",
-            "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
-          }
+        "pftSjYK6DieRahrK": {
+          "id": "pftSjYK6DieRahrK",
+          "label": "Infected",
+          "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
         },
-        {
-          "rf1Ie1fPN8s8EpAU": {
-            "id": "rf1Ie1fPN8s8EpAU",
-            "label": "Arboreal",
-            "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+        "rf1Ie1fPN8s8EpAU": {
+          "id": "rf1Ie1fPN8s8EpAU",
+          "label": "Arboreal",
+          "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
         }
-      ],
-      "items": [
-        {
-          "ngw4swVSGJK6DW85": {
-            "id": "ngw4swVSGJK6DW85",
-            "name": "Strzelanie (25)",
-            "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
-            "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
-            "specification": "7"
-          }
+      },
+      "items": {
+        "ngw4swVSGJK6DW85": {
+          "id": "ngw4swVSGJK6DW85",
+          "name": "Strzelanie (25)",
+          "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
+          "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
+          "specification": "7"
         }
-      ]
+      }
     }
   ]
 }

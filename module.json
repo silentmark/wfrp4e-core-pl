@@ -1,5 +1,5 @@
 {
-    "id": "wfrp4e-core-p",
+    "id": "wfrp4e-core-pl",
     "title": "WFRP4e - Podręcznik Główny PL",
     "description": "Oficjalna zawartość podręcznika podstawowego dla systemu Warhammer Fantasy Role Play 4ed. Zawiera wszystkie tabele, zasady, bestiariusz i informacje, których potrzebujesz, aby wysłać bohaterów graczy w niebezpieczny świat Warhammera.",
     "version": "1.0.0",
@@ -55,9 +55,5 @@
             "path": "lang/pl.json",
             "flags": {}
         }
-    ],
-    "url": "https://github.com/twisniowski/warhammer-pl",
-    "manifest": "https://github.com/twisniowski/warhammer-pl/releases/latest/download/module.json",
-    "download": "https://github.com/twisniowski/warhammer-pl/releases/download/v0.1.0/warhammer-pl.zip",
-    "readme": "https://github.com/twisniowski/warhammer-pl/tree/v0.1.0#readme"
+    ]
 }

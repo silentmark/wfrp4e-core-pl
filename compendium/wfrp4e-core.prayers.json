@@ -26,15 +26,13 @@
       "name": "Błogosławieństwo Wytrzymałości",
       "description": "<p>Cel uzyskuje premię +10 do Wytrzymałości.</p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.0r3moMIHXsBrcOyh",
-      "effects": [
-        {
-          "TZyqbCq1ywZ6LtTv": {
-            "id": "TZyqbCq1ywZ6LtTv",
-            "label": "Błogosławieństwo Wytrzymałości",
-            "script": null
-          }
+      "effects": {
+        "TZyqbCq1ywZ6LtTv": {
+          "id": "TZyqbCq1ywZ6LtTv",
+          "label": "Błogosławieństwo Wytrzymałości",
+          "script": null
         }
-      ],
+      },
       "duration": "6 Rund",
       "target": "1",
       "range": "6 metrów"
@@ -71,15 +69,13 @@
       "name": "Błogosławieństwo Prawości",
       "description": "<p>Broń celu uznawana jest za Magiczną.</p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.2WN0muIB2BFd4kBO",
-      "effects": [
-        {
-          "lfR1p5Ph2BQCPl3G": {
-            "id": "lfR1p5Ph2BQCPl3G",
-            "label": "Błogosławieństwo Prawości",
-            "script": null
-          }
+      "effects": {
+        "lfR1p5Ph2BQCPl3G": {
+          "id": "lfR1p5Ph2BQCPl3G",
+          "label": "Błogosławieństwo Prawości",
+          "script": null
         }
-      ],
+      },
       "duration": "6 Rund",
       "target": "1",
       "range": "6 metrów"
@@ -98,15 +94,13 @@
       "name": "Płomień Wiary",
       "description": "<p>Wzywasz potęgę Sigmara, by zmiażdżyła wrogów Imperium. Święty ogień eksploduje wprost z twojego ciała w promieniu tylu metrów, ile wynosi Bonus z Ogłady. Wszystkie cele w zasięgu otrzymują 1k10 Obrażeń, które ignorują Bonus z Wytrzymałości oraz Punkty Pancerza. Cele, które mają Cechę Stworzenia <em>Demoniczny</em> lub <em>Ożywieniec</em>, otrzymują dodatkowo 1 poziom Podpalenia. Za każde +2 PS możesz zwiększyć promień okręgu o tyle metrów, ile wynosi Bonus z Ogłady, lub zadać dodatkowe 2 Obrażenia wszelkim zielonoskórym, ożywieńcom lub sługom Niszczycielskich Potęg.</p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.5fVTY8TSua3trOW8",
-      "effects": [
-        {
-          "qpp49hHsrz2VmP1E": {
-            "id": "qpp49hHsrz2VmP1E",
-            "label": "Płomień Wiary",
-            "script": "let damage = (await new Roll(\"1d10\").roll()).total;\nawait args.actor.applyBasicDamage(damage, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL})\nif (args.actor.has(\"Undead\") || args.actor.has(\"Daemonic\")) {\n  await args.actor.addCondition(\"ablaze\");\n}"
-          }
+      "effects": {
+        "qpp49hHsrz2VmP1E": {
+          "id": "qpp49hHsrz2VmP1E",
+          "label": "Płomień Wiary",
+          "script": "let damage = (await new Roll(\"1d10\").roll()).total;\nawait args.actor.applyBasicDamage(damage, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL})\nif (args.actor.has(\"Undead\") || args.actor.has(\"Daemonic\")) {\n  await args.actor.addCondition(\"ablaze\");\n}"
         }
-      ],
+      },
       "duration": "Natychmiast",
       "target": "Bonus Ogd Metrów",
       "range": "Ty"
@@ -161,15 +155,13 @@
       "name": "Błogosławieństwo Łowów",
       "description": "<p>Cel uzyskuje premię +10 do Umiejętności Strzeleckich.</p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.By5dc8Q7ZAGpr177",
-      "effects": [
-        {
-          "tVy8wXAtGTHx0qsV": {
-            "id": "tVy8wXAtGTHx0qsV",
-            "label": "Błogosławieństwo Łowów",
-            "script": null
-          }
+      "effects": {
+        "tVy8wXAtGTHx0qsV": {
+          "id": "tVy8wXAtGTHx0qsV",
+          "label": "Błogosławieństwo Łowów",
+          "script": null
         }
-      ],
+      },
       "duration": "6 Rund",
       "target": "1",
       "range": "6 metrów"
@@ -179,15 +171,13 @@
       "name": "Błogosławieństwo Uzdrawiania",
       "description": "<p>1 Rana twojego celu zostaje uleczona.</p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.C92dpJPRYpkZFsGu",
-      "effects": [
-        {
-          "xBeaS7jKIhHvsBaC": {
-            "id": "xBeaS7jKIhHvsBaC",
-            "label": "Błogosławieństwo Uzdrawiania",
-            "script": "let wounds = args.actor.status.wounds;\nif (wounds.value < wounds.max) {\n   args.actor.update({\"system.status.wounds.value\" : wounds.value + 1});\n}"
-          }
+      "effects": {
+        "xBeaS7jKIhHvsBaC": {
+          "id": "xBeaS7jKIhHvsBaC",
+          "label": "Błogosławieństwo Uzdrawiania",
+          "script": "let wounds = args.actor.status.wounds;\nif (wounds.value < wounds.max) {\n   args.actor.update({\"system.status.wounds.value\" : wounds.value + 1});\n}"
         }
-      ],
+      },
       "duration": "Natychmiast",
       "target": "1",
       "range": "Dotyk"
@@ -197,15 +187,13 @@
       "name": "Błogosławieństwo Odwagi",
       "description": "<p>Cel uzyskuje premię +10 do Siły Woli.</p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.Cg2Q3TV66cpmheHS",
-      "effects": [
-        {
-          "xfFaPn5kqQz7CRBJ": {
-            "id": "xfFaPn5kqQz7CRBJ",
-            "label": "Błogosławieństwo Odwagi",
-            "script": null
-          }
+      "effects": {
+        "xfFaPn5kqQz7CRBJ": {
+          "id": "xfFaPn5kqQz7CRBJ",
+          "label": "Błogosławieństwo Odwagi",
+          "script": null
         }
-      ],
+      },
       "duration": "6 Rund",
       "target": "1",
       "range": "6 metrów"
@@ -233,15 +221,13 @@
       "name": "Aura odwagi",
       "description": "<p>Wrzeszczysz modlitwy w imieniu Sigmara, który przepełnia cię świętym ogniem prawości. Wszyscy sojusznicy w zasięgu wzroku natychmiast tracą wszystkie poziomy Paniki i zyskują Talent Nieustraszony, dopóki pozostają w zasięgu twojego wzroku w trakcie trwania Cudu. Zielonoskórzy w polu widzenia zaczynają się bać i mierzą się ze Strachem (1).</p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.Dk0zjtcANtahntHx",
-      "effects": [
-        {
-          "FaH4jPWjtPWfjjv2": {
-            "id": "FaH4jPWjtPWfjjv2",
-            "label": "Aura odwagi",
-            "script": "let broken = args.actor.hasCondition(\"broken\");\nif (broken) {\n    await args.actor.removeCondition(\"broken\", broken.flags.wfrp4e.value);\n}"
-          }
+      "effects": {
+        "FaH4jPWjtPWfjjv2": {
+          "id": "FaH4jPWjtPWfjjv2",
+          "label": "Aura odwagi",
+          "script": "let broken = args.actor.hasCondition(\"broken\");\nif (broken) {\n    await args.actor.removeCondition(\"broken\", broken.flags.wfrp4e.value);\n}"
         }
-      ],
+      },
       "duration": "Bonus Ogd Rund",
       "target": "Zasięg Wzroku",
       "range": "Ty"
@@ -251,15 +237,13 @@
       "name": "Błogosławieństwo Dzikości",
       "description": "<p>Gdy twój cel zada Ranę Krytyczną, rzuć dwa razy i wybierz lepszy rezultat.</p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.eBRjKAF6U0yR0KK8",
-      "effects": [
-        {
-          "LGXFRw2UC3M1ZCRf": {
-            "id": "LGXFRw2UC3M1ZCRf",
-            "label": "Błogosławieństwo Dzikości",
-            "script": null
-          }
+      "effects": {
+        "LGXFRw2UC3M1ZCRf": {
+          "id": "LGXFRw2UC3M1ZCRf",
+          "label": "Błogosławieństwo Dzikości",
+          "script": null
         }
-      ],
+      },
       "duration": "6 Rund",
       "target": "1",
       "range": "6 metrów"
@@ -269,15 +253,13 @@
       "name": "Błogosławieństwo Bitwy",
       "description": "<p><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">Cel uzyskuje premię +10 do Walki Wręcz.</p></p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.ElmLfnrXliStS9CP",
-      "effects": [
-        {
-          "5kCCldIgCQLXAiqq": {
-            "id": "5kCCldIgCQLXAiqq",
-            "label": "Błogosławieństwo Bitwy",
-            "script": null
-          }
+      "effects": {
+        "5kCCldIgCQLXAiqq": {
+          "id": "5kCCldIgCQLXAiqq",
+          "label": "Błogosławieństwo Bitwy",
+          "script": null
         }
-      ],
+      },
       "duration": "6 Rund",
       "target": "1",
       "range": "6 metrów"
@@ -287,15 +269,13 @@
       "name": "Waleczność",
       "description": "<p>Twoje głośne modlitwy napełniają szeregi duchem dyscypliny. Wszyscy objęci Cudem zyskują 1 poziom Talentu <em>Musztra.</em></p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.ezVl3vFWTwHfNXL3",
-      "effects": [
-        {
-          "PG0aFGzMCDuLR7fK": {
-            "id": "PG0aFGzMCDuLR7fK",
-            "label": "Waleczność",
-            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.talents.J9MK0AIaTbvd5oF6\");\nargs.actor.createEmbeddedDocuments(\"Item\", [item.toObject()]);"
-          }
+      "effects": {
+        "PG0aFGzMCDuLR7fK": {
+          "id": "PG0aFGzMCDuLR7fK",
+          "label": "Waleczność",
+          "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.talents.J9MK0AIaTbvd5oF6\");\nargs.actor.createEmbeddedDocuments(\"Item\", [item.toObject()]);"
         }
-      ],
+      },
       "duration": "Bonus Ogd Rund",
       "target": "Bonus Int sojuszników",
       "range": "Ogłada metrów"
@@ -323,15 +303,13 @@
       "name": "Mądrość sowy",
       "description": "<p>Wzywasz Verenę, by napełniła cię mądrością i wiedzą. Podczas trwania Cudu otrzymujesz premię +20 do Testów Inteligencji. Ponadto twoje źrenice rozszerzają się, dzięki czemu twój wzrok staje się przeszywający i niepokojący - otrzymujesz 1 poziom Talentów <br>Groźny</br> oraz <br>Wyczulony Zmysł (wzrok)</br>.</p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.fAlQcNUb6TZtPKqk",
-      "effects": [
-        {
-          "2lds6IDIyorYrvY4": {
-            "id": "2lds6IDIyorYrvY4",
-            "label": "Mądrość sowy",
-            "script": "if (args.type == \"characteristic\" && args.item == \"int\") {\n  args.prefillModifiers.modifier += 20;\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"int\") {\n    args.prefillModifiers.modifier += 20;\n  }\n}"
-          }
+      "effects": {
+        "2lds6IDIyorYrvY4": {
+          "id": "2lds6IDIyorYrvY4",
+          "label": "Mądrość sowy",
+          "script": "if (args.type == \"characteristic\" && args.item == \"int\") {\n  args.prefillModifiers.modifier += 20;\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"int\") {\n    args.prefillModifiers.modifier += 20;\n  }\n}"
         }
-      ],
+      },
       "duration": "Bonus Ogd Rund",
       "target": "Ty",
       "range": "Ty"
@@ -341,15 +319,13 @@
       "name": "Błogosławieństwo Charyzmy",
       "description": "<p><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">Cel uzyskuje premię +10 do Ogłady.</p></p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.FElNQGNiPzaOwwKT",
-      "effects": [
-        {
-          "NO3FdQ5qx6B5PjPm": {
-            "id": "NO3FdQ5qx6B5PjPm",
-            "label": "Błogosławieństwo Charyzmy",
-            "script": null
-          }
+      "effects": {
+        "NO3FdQ5qx6B5PjPm": {
+          "id": "NO3FdQ5qx6B5PjPm",
+          "label": "Błogosławieństwo Charyzmy",
+          "script": null
         }
-      ],
+      },
       "duration": "6 Rund",
       "target": "1",
       "range": "6 metrów"
@@ -377,15 +353,13 @@
       "name": "Błogosławieństwo Mądrości",
       "description": "<p>Cel uzyskuje premię +10 do Inteligencji.</p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.FRkIz2sR7ZC92W2G",
-      "effects": [
-        {
-          "zcary1qugwge597m": {
-            "id": "zcary1qugwge597m",
-            "label": "Błogosławieństwo Mądrości",
-            "script": null
-          }
+      "effects": {
+        "zcary1qugwge597m": {
+          "id": "zcary1qugwge597m",
+          "label": "Błogosławieństwo Mądrości",
+          "script": null
         }
-      ],
+      },
       "duration": "6 Rund",
       "target": "1",
       "range": "6 metrów"
@@ -422,22 +396,18 @@
       "name": "Spryt Ranalda",
       "description": "<p>Prosisz Ranalda, by twój cel mógł lepiej poradzić sobie z zawiłościami rzeczywistości. Cel uzyskuje premię +10 do Zwinności, +10 do Skradania oraz 1 poziom Talentu <em>Na Cztery Łapy</em> na Czas cudu.</p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.hL7B3d7A0sYYjHXn",
-      "effects": [
-        {
-          "y7N8PrEOVgsRaJGR": {
-            "id": "y7N8PrEOVgsRaJGR",
-            "label": "Na Cztery Łapy",
-            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.talents.g4Q6AtzZuo5iIvD4\");\nargs.actor.createEmbeddedDocuments(\"Item\", [item.toObject()]);"
-          }
+      "effects": {
+        "y7N8PrEOVgsRaJGR": {
+          "id": "y7N8PrEOVgsRaJGR",
+          "label": "Na Cztery Łapy",
+          "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.talents.g4Q6AtzZuo5iIvD4\");\nargs.actor.createEmbeddedDocuments(\"Item\", [item.toObject()]);"
         },
-        {
-          "yAJjiwiK0OSoIrkf": {
-            "id": "yAJjiwiK0OSoIrkf",
-            "label": "Spryt Ranalda",
-            "script": "if (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))) {\n    args.prefillModifiers.modifier += 10;\n}"
-          }
+        "yAJjiwiK0OSoIrkf": {
+          "id": "yAJjiwiK0OSoIrkf",
+          "label": "Spryt Ranalda",
+          "script": "if (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))) {\n    args.prefillModifiers.modifier += 10;\n}"
         }
-      ],
+      },
       "duration": "Bonus Zr Rund",
       "target": "1",
       "range": "Dotyk"
@@ -465,15 +435,13 @@
       "name": "Błogosławieństwo Szczęścia",
       "description": "<p>Następny nieudany Test twojego celu może zostać powtórzony. Wiążący jest nowy wynik Testu.</p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.iIfYOlNrLb0uiV8c",
-      "effects": [
-        {
-          "FDxjikn1S8EqbYZU": {
-            "id": "FDxjikn1S8EqbYZU",
-            "label": "Błogosławieństwo Szczęścia",
-            "script": null
-          }
+      "effects": {
+        "FDxjikn1S8EqbYZU": {
+          "id": "FDxjikn1S8EqbYZU",
+          "label": "Błogosławieństwo Szczęścia",
+          "script": null
         }
-      ],
+      },
       "duration": "6 Rund",
       "target": "1",
       "range": "6 metrów"
@@ -510,15 +478,13 @@
       "name": "Błogosławieństwo Zdrowia",
       "description": "<p>Twój cel może skrócić Czas jednej choroby o 1 dzień. Modlitwa ta może być zmówiona jedynie raz w intencji jednej choroby, na którą choruje dana osoba.</p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.Jkt465WPdRcejLwl",
-      "effects": [
-        {
-          "0MpJUKwHZIc5wMWy": {
-            "id": "0MpJUKwHZIc5wMWy",
-            "label": "Błogosławieństwo Zdrowia",
-            "script": null
-          }
+      "effects": {
+        "0MpJUKwHZIc5wMWy": {
+          "id": "0MpJUKwHZIc5wMWy",
+          "label": "Błogosławieństwo Zdrowia",
+          "script": null
         }
-      ],
+      },
       "duration": "Natychmiast",
       "target": "1",
       "range": "Dotyk"
@@ -546,15 +512,13 @@
       "name": "Błogosławieństwo Ochrony",
       "description": "<p>Przeciwnicy muszą wykonać <strong>Przeciętny (+20) Test Siły Woli</strong>, by zaatakować obrany przez siebie cel, ponieważ zaczyna kąsać ich poczucie wstydu, iż w ogóle zaczęli myśleć o użyciu przemocy. Jeśli Test się nie powiedzie, albo muszą wybrać inny cel ataku, albo inną Akcję.</p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.K5DE9cceinUTIrem",
-      "effects": [
-        {
-          "qMveUjAJldH1xhlZ": {
-            "id": "qMveUjAJldH1xhlZ",
-            "label": "Błogosławieństwo Ochrony",
-            "script": "ChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b> must pass an <b>Average (+20) Willpower</b> Test to attack this target!`, speaker : {alias : this.effect.label}});\nui.notifications.notify(`${this.actor.prototypeToken.name} must pass an <b>Average (+20) Willpower</b> Test to attack this target!`);"
-          }
+      "effects": {
+        "qMveUjAJldH1xhlZ": {
+          "id": "qMveUjAJldH1xhlZ",
+          "label": "Błogosławieństwo Ochrony",
+          "script": "ChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b> must pass an <b>Average (+20) Willpower</b> Test to attack this target!`, speaker : {alias : this.effect.label}});\nui.notifications.notify(`${this.actor.prototypeToken.name} must pass an <b>Average (+20) Willpower</b> Test to attack this target!`);"
         }
-      ],
+      },
       "duration": "6 Rund",
       "target": "1",
       "range": "6 metrów"
@@ -564,15 +528,13 @@
       "name": "Błogosławieństwo Siły",
       "description": "<p>Cel uzyskuje premię +10 do Siły.</p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.KSDrXcieyRc37YI7",
-      "effects": [
-        {
-          "Gas9DsCrikTUmUtu": {
-            "id": "Gas9DsCrikTUmUtu",
-            "label": "Błogosławieństwo Siły",
-            "script": null
-          }
+      "effects": {
+        "Gas9DsCrikTUmUtu": {
+          "id": "Gas9DsCrikTUmUtu",
+          "label": "Błogosławieństwo Siły",
+          "script": null
         }
-      ],
+      },
       "duration": "6 Rund",
       "target": "1",
       "range": "6 metrów"
@@ -582,15 +544,13 @@
       "name": "Błogosławieństwo Wdzięku",
       "description": "<p>Cel uzyskuje premię +10 do Zwinności.</p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.maUl7MoLvuvTOhM0",
-      "effects": [
-        {
-          "GjyHbaIqJLZYxLq4": {
-            "id": "GjyHbaIqJLZYxLq4",
-            "label": "Błogosławieństwo Wdzięku",
-            "script": null
-          }
+      "effects": {
+        "GjyHbaIqJLZYxLq4": {
+          "id": "GjyHbaIqJLZYxLq4",
+          "label": "Błogosławieństwo Wdzięku",
+          "script": null
         }
-      ],
+      },
       "duration": "6 Rund",
       "target": "1",
       "range": "6 metrów"
@@ -600,22 +560,18 @@
       "name": "Rączy jeleń",
       "description": "<p>Śpiewasz ku czci Ojca Taala, który w zamian błogosławi cię szybkością i zwinnością. Zyskujesz +1 do Szybkości oraz 1 poziom Talentu <em>Silne Nogi</em>. Ponadto automatycznie udają ci się wszystkie Testy Atletyki (na poziomie co najmniej 0 PS). Jeśli Test zakończy się poniżej 0 PS, podnieś wynik do 0 PS.</p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.mXKrxO8WRZ9QLHA6",
-      "effects": [
-        {
-          "DIcpr650MAJVHQ5u": {
-            "id": "DIcpr650MAJVHQ5u",
-            "label": "Zwiększenie Szybkości",
-            "script": null
-          }
+      "effects": {
+        "DIcpr650MAJVHQ5u": {
+          "id": "DIcpr650MAJVHQ5u",
+          "label": "Zwiększenie Szybkości",
+          "script": null
         },
-        {
-          "q7pJlPm8uR0UxxN1": {
-            "id": "q7pJlPm8uR0UxxN1",
-            "label": "Rączy jeleń",
-            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.talents.CV9btQn09S9Fn8Jk\");\nargs.actor.createEmbeddedDocuments(\"Item\", [item.toObject()]);"
-          }
+        "q7pJlPm8uR0UxxN1": {
+          "id": "q7pJlPm8uR0UxxN1",
+          "label": "Rączy jeleń",
+          "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.talents.CV9btQn09S9Fn8Jk\");\nargs.actor.createEmbeddedDocuments(\"Item\", [item.toObject()]);"
         }
-      ],
+      },
       "duration": "Bonus Ogd Rund",
       "target": "Ty",
       "range": "Ty"
@@ -643,15 +599,13 @@
       "name": "Zew furii",
       "description": "<p>Twoje żarliwe modlitwy napełniają twoich sojuszników szaleńczą pogardą wobec wrogów. Wszyscy sojusznicy objęci Cudem otrzymują <em>Nienawiść</em> wobec każdego, kto zetrze się z nimi w walce.</p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.nyZNUwJ54MTLKQ7Y",
-      "effects": [
-        {
-          "Bt7ExFoPhWP05nr8": {
-            "id": "Bt7ExFoPhWP05nr8",
-            "label": "Zew furii",
-            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.psychologies.5hH73j2NgPdsLCZN\");\nargs.actor.createEmbeddedDocuments(\"Item\", [item.toObject()]);"
-          }
+      "effects": {
+        "Bt7ExFoPhWP05nr8": {
+          "id": "Bt7ExFoPhWP05nr8",
+          "label": "Zew furii",
+          "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.psychologies.5hH73j2NgPdsLCZN\");\nargs.actor.createEmbeddedDocuments(\"Item\", [item.toObject()]);"
         }
-      ],
+      },
       "duration": "Bonus Ogd Rund",
       "target": "Bonus Int sojuszników",
       "range": "Ogłada metrów"
@@ -688,15 +642,13 @@
       "name": "Błogosławieństwo Finezji",
       "description": "<p>Cel uzyskuje premię +10 do Zręczności.</p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.OkKWAfnMiHfxhTnB",
-      "effects": [
-        {
-          "HZaxjSj49yUXZYCn": {
-            "id": "HZaxjSj49yUXZYCn",
-            "label": "Błogosławieństwo Finezji",
-            "script": null
-          }
+      "effects": {
+        "HZaxjSj49yUXZYCn": {
+          "id": "HZaxjSj49yUXZYCn",
+          "label": "Błogosławieństwo Finezji",
+          "script": null
         }
-      ],
+      },
       "duration": "6 Rund",
       "target": "1",
       "range": "6 metrów"
@@ -706,15 +658,13 @@
       "name": "Oplątanie",
       "description": "<p>Błagasz Taala w modlitwach, by chronił swe dzikie ostępy. Korzenie, pnącza i gałązki oplatają się dookoła twoich wrogów. Wszystkie cele w promieniu tylu metrów, ile wynosi twój Bonus z Ogłady, otrzymują 1 poziom <br>Pochwycenia</br>. Za każde +2 PS możesz zwiększyć zasięg o tyle metrów, ile wynosi twój Bonus z Ogłady, lub zwiększyć poziomy Pochwycenia. W przypadkach prób uwolnienia się Oplątanie ma Siłę równą twojej Sile Woli.</p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.ONz21FviMRk3AyvE",
-      "effects": [
-        {
-          "FbFPvypAtB428U0r": {
-            "id": "FbFPvypAtB428U0r",
-            "label": "Oplątanie",
-            "script": "let num = 1 + {{overcast.usage.other.count}};\nif (!num || num <= 0); {\n   num = 1;\n}\nawait args.actor.addCondition(\"entangled\", num);"
-          }
+      "effects": {
+        "FbFPvypAtB428U0r": {
+          "id": "FbFPvypAtB428U0r",
+          "label": "Oplątanie",
+          "script": "let num = 1 + {{overcast.usage.other.count}};\nif (!num || num <= 0); {\n   num = 1;\n}\nawait args.actor.addCondition(\"entangled\", num);"
         }
-      ],
+      },
       "duration": "Natychmiast",
       "target": "Bonus Ogd Metrów",
       "range": "Ogłada metrów"
@@ -733,15 +683,13 @@
       "name": "Kły i Pazury",
       "description": "<p>Wzywasz Taala, by podzielił się z tobą brutalną siłą swojego królestwa. Zyskujesz Cechy Stworzenia Ugryzienie (Bonus z Siły +3) oraz Broń (Bonus z Siły +4). Są to ataki Magiczne.</p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.PcKMAEF6UoaPSK6d",
-      "effects": [
-        {
-          "1TWDvZQnuHAsfxxd": {
-            "id": "1TWDvZQnuHAsfxxd",
-            "label": "Kły i Pazury",
-            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.pLW9SVX0TVTYPiPv\");\nitem = item.toObject();\nitem.system.specification.value = 3;\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.AtpAudHA4ybXVlWM\");\nitem = item.toObject();\nitem.system.specification.value = 4;\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);"
-          }
+      "effects": {
+        "1TWDvZQnuHAsfxxd": {
+          "id": "1TWDvZQnuHAsfxxd",
+          "label": "Kły i Pazury",
+          "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.pLW9SVX0TVTYPiPv\");\nitem = item.toObject();\nitem.system.specification.value = 3;\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.AtpAudHA4ybXVlWM\");\nitem = item.toObject();\nitem.system.specification.value = 4;\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);"
         }
-      ],
+      },
       "duration": "Bonus Ogd Rund",
       "target": "Ty",
       "range": "Ty"
@@ -751,15 +699,13 @@
       "name": "Gorejące słońce",
       "description": "<p>Wzywasz Myrmidię, by poraziła niegodnych wrogów na polu bitwy, a jej odpowiedź przybiera postać oślepiającego rozbłysku złotego światła. Wszyscy, którzy nie wyznają Myrmidii, a spojrzą w twoim kierunku, otrzymają 1 poziom Oślepienia. Za każde +2 PS otrzymują +1 poziom Oślepienia.</p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.Q91bWCEn0gt33fGT",
-      "effects": [
-        {
-          "JlsdDkPK9j9Y65sB": {
-            "id": "JlsdDkPK9j9Y65sB",
-            "label": "Gorejące słońce",
-            "script": "if (\"{{outcome}}\" == \"success\") {\n  let blinded = 1 + {{overcast.usage.other.count}};\n  await args.actor.addCondition(\"blinded\", blinded);\n}"
-          }
+      "effects": {
+        "JlsdDkPK9j9Y65sB": {
+          "id": "JlsdDkPK9j9Y65sB",
+          "label": "Gorejące słońce",
+          "script": "if (\"{{outcome}}\" == \"success\") {\n  let blinded = 1 + {{overcast.usage.other.count}};\n  await args.actor.addCondition(\"blinded\", blinded);\n}"
         }
-      ],
+      },
       "duration": "Natychmiast",
       "target": "Ogłada metrów",
       "range": "Ty"
@@ -796,15 +742,13 @@
       "name": "Wieczny odpoczynek",
       "description": "<p>Śpiewasz uroczyste requiem nad zwłokami. Cud gwarantuje, że dusza zostanie odesłana przez portal do dziedziny Morra. Ponadto ciało to nie będzie mogło zostać wskrzeszone żadnym z zaklęć z Tradycji Nekromancji. Jeśli celem Cudu jest stworzenie o Cesze Ożywieniec lub Konstrukt, zostanie zniszczone.</p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.rbdxcYoj8N2eMaqV",
-      "effects": [
-        {
-          "gvhH2LxUqQQxN6R8": {
-            "id": "gvhH2LxUqQQxN6R8",
-            "label": "Wieczny odpoczynek",
-            "script": "if (args.actor.has(game.i18n.localize(\"NAME.Undead\")) && args.actor.has(game.i18n.localize(\"Construct\"))) {\n   await args.actor.addCondition(\"dead\");\n}"
-          }
+      "effects": {
+        "gvhH2LxUqQQxN6R8": {
+          "id": "gvhH2LxUqQQxN6R8",
+          "label": "Wieczny odpoczynek",
+          "script": "if (args.actor.has(game.i18n.localize(\"NAME.Undead\")) && args.actor.has(game.i18n.localize(\"Construct\"))) {\n   await args.actor.addCondition(\"dead\");\n}"
         }
-      ],
+      },
       "duration": "Natychmiast",
       "target": "1",
       "range": "1 metr"
@@ -814,15 +758,13 @@
       "name": "Kometa Sigmara",
       "description": "<p>Skandując litanie do Sigmara, wzywasz go, by zmiażdżył twych wrogów. Kometa o dwóch ogonach pikuje z przestworzy w kuli ognia i zniszczenia, trafiając w dowolny punkt w zasięgu wzroku i Zasięgu Cudu. Wszystko w zasięgu tylu metrów od miejsca uderzenia, ile wynosi Bonus z Ogłady, otrzymuje 1k10 + PS Obrażeń, które ignorują Bonus z Wytrzymałości oraz Punkty Pancerza, a ponadto otrzymuje także 1 poziom Podpalenia. Wyznaczone miejsce uderzenia nie może znajdować się w budynku. Co więcej, celować można jedynie w tych, których Sigmar uzna za wrogów.</p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.rjkMzFwN1trbSLL8",
-      "effects": [
-        {
-          "dx14txcPj5zl0vjZ": {
-            "id": "dx14txcPj5zl0vjZ",
-            "label": "Kometa Sigmara",
-            "script": "await args.actor.addCondition(\"ablaze\");"
-          }
+      "effects": {
+        "dx14txcPj5zl0vjZ": {
+          "id": "dx14txcPj5zl0vjZ",
+          "label": "Kometa Sigmara",
+          "script": "await args.actor.addCondition(\"ablaze\");"
         }
-      ],
+      },
       "duration": "Natychmiast",
       "target": "Bonus Ogd Metrów",
       "range": "Ogłada metrów"
@@ -841,15 +783,13 @@
       "name": "Zniszczenie ożywieńca",
       "description": "<p>Przyzywasz moce Morra, by zmieść nieumarłych z powierzchni ziemi. Czarny ogień błyska na twoim ciele, formując idealny okrąg o promieniu równym Bonusowi z Ogłady w metrach. Wszystkie potencjalne cele o Cesze Stworzenia Ożywieniec otrzymują 1k10 Obrażeń ignorujących Bonus z Wytrzymałości oraz Punkty Pancerza. Każdy Ożywieniec zniszczony dzięki temu Cudowi nie może zostać wskrzeszony za pomocą nekromancji, przynajmniej w standardowych okolicznościach. Za każde +2 PS możesz zwiększyć zasięg okręgu o tyle metrów, ile wynosi Bonus z Ogłady.</p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.sdSy4k7ygDhAjSSX",
-      "effects": [
-        {
-          "HqH1WB4M1YCR0kRg": {
-            "id": "HqH1WB4M1YCR0kRg",
-            "label": "Zniszczenie ożywieńca",
-            "script": "if (args.actor.has(game.i18n.localize(\"NAME.Undead\"))) {\n    let damage = (await new Roll(\"1d10\").roll()).total;\n    await args.actor.applyBasicDamage(damage, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL});\n}"
-          }
+      "effects": {
+        "HqH1WB4M1YCR0kRg": {
+          "id": "HqH1WB4M1YCR0kRg",
+          "label": "Zniszczenie ożywieńca",
+          "script": "if (args.actor.has(game.i18n.localize(\"NAME.Undead\"))) {\n    let damage = (await new Roll(\"1d10\").roll()).total;\n    await args.actor.applyBasicDamage(damage, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL});\n}"
         }
-      ],
+      },
       "duration": "Natychmiast",
       "target": "Bonus Ogd Metrów",
       "range": "Ty"
@@ -904,15 +844,13 @@
       "name": "Błogosławieństwo Sprytu",
       "description": "<p>Cel uzyskuje premię +10 do Inicjatywy.</p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.tMocig1z9dHKNiCT",
-      "effects": [
-        {
-          "HzWovpDiGQ129yZu": {
-            "id": "HzWovpDiGQ129yZu",
-            "label": "Błogosławieństwo Sprytu",
-            "script": null
-          }
+      "effects": {
+        "HzWovpDiGQ129yZu": {
+          "id": "HzWovpDiGQ129yZu",
+          "label": "Błogosławieństwo Sprytu",
+          "script": null
         }
-      ],
+      },
       "duration": "6 Rund",
       "target": "1",
       "range": "6 metrów"
@@ -931,15 +869,13 @@
       "name": "Wytrwałość Eremity",
       "description": "<p>Twoje szczere modlitwy podobają się Shallyi, która odpowiada, zsyłając siły niezbędne do przetrwania. Cel nie czuje żadnego bólu i ignoruje wszelkie efekty Stanów.</p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.uMECZBuDnb3qkc7k",
-      "effects": [
-        {
-          "aaiZynMi60jGc0Jn": {
-            "id": "aaiZynMi60jGc0Jn",
-            "label": "Wytrwałość Eremity",
-            "script": "let stunned = args.actor.hasCondition(\"stunned\")\nif (stunned)\n   setProperty(stunned, \"flags.wfrp4e.script\", \"\")\n\nlet poisoned= args.actor.hasCondition(\"poisoned\")\nif (poisoned)\n   setProperty(poisoned, \"flags.wfrp4e.script\", \"\")\n\nlet deafened = args.actor.hasCondition(\"deafened\")\nif (deafened)\n   setProperty(deafened, \"flags.wfrp4e.effectTrigger\", \"\")\n\nlet entangled = args.actor.hasCondition(\"entangled\")\nif (entangled)\n   setProperty(entangled, \"flags.wfrp4e.effectTrigger\", \"\")\n\nlet fatigued = args.actor.hasCondition(\"fatigued\")\nif (fatigued)\n   setProperty(fatigued, \"flags.wfrp4e.script\", \"\")\n\nlet blinded = args.actor.hasCondition(\"blinded\")\nif (blinded)\n   setProperty(blinded, \"flags.wfrp4e.effectTrigger\", \"\")\n\nlet broken = args.actor.hasCondition(\"broken\")\nif (broken)\n   setProperty(broken, \"flags.wfrp4e.effectTrigger\", \"\")\n\nlet prone= args.actor.hasCondition(\"prone\")\nif (prone)\n   setProperty(prone, \"flags.wfrp4e.effectTrigger\", \"\")"
-          }
+      "effects": {
+        "aaiZynMi60jGc0Jn": {
+          "id": "aaiZynMi60jGc0Jn",
+          "label": "Wytrwałość Eremity",
+          "script": "let stunned = args.actor.hasCondition(\"stunned\")\nif (stunned)\n   setProperty(stunned, \"flags.wfrp4e.script\", \"\")\n\nlet poisoned= args.actor.hasCondition(\"poisoned\")\nif (poisoned)\n   setProperty(poisoned, \"flags.wfrp4e.script\", \"\")\n\nlet deafened = args.actor.hasCondition(\"deafened\")\nif (deafened)\n   setProperty(deafened, \"flags.wfrp4e.effectTrigger\", \"\")\n\nlet entangled = args.actor.hasCondition(\"entangled\")\nif (entangled)\n   setProperty(entangled, \"flags.wfrp4e.effectTrigger\", \"\")\n\nlet fatigued = args.actor.hasCondition(\"fatigued\")\nif (fatigued)\n   setProperty(fatigued, \"flags.wfrp4e.script\", \"\")\n\nlet blinded = args.actor.hasCondition(\"blinded\")\nif (blinded)\n   setProperty(blinded, \"flags.wfrp4e.effectTrigger\", \"\")\n\nlet broken = args.actor.hasCondition(\"broken\")\nif (broken)\n   setProperty(broken, \"flags.wfrp4e.effectTrigger\", \"\")\n\nlet prone= args.actor.hasCondition(\"prone\")\nif (prone)\n   setProperty(prone, \"flags.wfrp4e.effectTrigger\", \"\")"
         }
-      ],
+      },
       "duration": "Bonus Ogd Rund",
       "target": "1",
       "range": "Ogłada metrów"
@@ -967,15 +903,13 @@
       "name": "Tarcza Myrmidii",
       "description": "<p>Twoje oddane modły do Myrmidii sprawiają, że zsyła ona tarczę połyskujących pasemek światła na twoich sojuszników, która ochrania ich przed ciosami wrogów. Wszyscy objęci Cudem zyskują 1 Punkt Pancerza na wszystkich Miejscach Trafienia.</p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.V8GCeqgk1FNGFg76",
-      "effects": [
-        {
-          "4hBoeFxZYT68Npxr": {
-            "id": "4hBoeFxZYT68Npxr",
-            "label": "Tarcza Myrmidii",
-            "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 1;\nAP[\"rArm\"].value += 1;\nAP[\"lArm\"].value += 1;\nAP[\"body\"].value += 1;\nAP[\"lLeg\"].value += 1;\nAP[\"rLeg\"].value += 1;"
-          }
+      "effects": {
+        "4hBoeFxZYT68Npxr": {
+          "id": "4hBoeFxZYT68Npxr",
+          "label": "Tarcza Myrmidii",
+          "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 1;\nAP[\"rArm\"].value += 1;\nAP[\"lArm\"].value += 1;\nAP[\"body\"].value += 1;\nAP[\"lLeg\"].value += 1;\nAP[\"rLeg\"].value += 1;"
         }
-      ],
+      },
       "duration": "Bonus Ogd Rund",
       "target": "Bonus Int sojuszników",
       "range": "Ogłada metrów"
@@ -985,15 +919,13 @@
       "name": "Chód marynarza",
       "description": "<p>Cele natychmiast zostają zanurzone w słonej wodzie, zataczając się, jakby stały na rozchybotanym pokładzie statku w trakcie sztormu. Ich włosy targa widmowy wiatr, a rozbryzgi wody biją w ich skórę. Uzyskują po 1 poziomie Stanów <em>Oszołomienie</em>, <em>Oślepienie</em> i <em>Wyczerpanie</em>, a ponadto muszą wykonać pomyślnie <strong>Przeciętny (+20) Test Zwinności</strong>, by w ogóle móc się przemieszczać i korzystać z Ruchu. Jeśli im się nie powiedzie, otrzymują Stan Powalenie.</p>",
       "sourceId": "Compendium.wfrp4e-core.prayers.VUyCJ5LRPkuC5iZx",
-      "effects": [
-        {
-          "s0zdvcCpdHza4MZf": {
-            "id": "s0zdvcCpdHza4MZf",
-            "label": "Chód marynarza",
-            "script": "await args.actor.addCondition(\"blinded\")\nawait args.actor.addCondition(\"deafened\")\nawait args.actor.addCondition(\"fatigued\")"
-          }
+      "effects": {
+        "s0zdvcCpdHza4MZf": {
+          "id": "s0zdvcCpdHza4MZf",
+          "label": "Chód marynarza",
+          "script": "await args.actor.addCondition(\"blinded\")\nawait args.actor.addCondition(\"deafened\")\nawait args.actor.addCondition(\"fatigued\")"
         }
-      ],
+      },
       "duration": "Bonus Ogd Rund",
       "target": "1",
       "range": "Ogłada metrów"

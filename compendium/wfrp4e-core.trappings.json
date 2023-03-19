@@ -143,15 +143,13 @@
       "name": "Czepiec kolczy",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.4xV16ttsxCa311vl",
-      "effects": [
-        {
-          "6pQrluba3OWBJgYI": {
-            "id": "6pQrluba3OWBJgYI",
-            "label": "Czepiec kolczy",
-            "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Perception\")) {\n   args.prefillModifiers.modifier -= 10\n}"
-          }
+      "effects": {
+        "6pQrluba3OWBJgYI": {
+          "id": "6pQrluba3OWBJgYI",
+          "label": "Czepiec kolczy",
+          "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Perception\")) {\n   args.prefillModifiers.modifier -= 10\n}"
         }
-      ],
+      },
       "special": null,
       "penalty": "-10 Perception"
     },
@@ -375,15 +373,13 @@
       "name": "Dziwnokorzeń",
       "description": "<p>Jeden z najpowszechniejszych narkotyków ulicznych w Imperium. Żuty dziwnokorzeń wywołuje euforię i przyjemne halucynacje. Niektórzy sugerują, że mogą być one powiązane z Wiatrami Magii. Narkotyk zapewnia premię +10 do Testów Odporności i Siły Woli, ale także karę -10 do Testów Zwinności, Inicjatywy i Inteligencji. <strong>Czas trwania</strong>: Aktywne podczas przeżuwania plus dodatkowe 1k10x10 minut.</p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.b6tGqvNe1jYBdeN5",
-      "effects": [
-        {
-          "Sq1UQ9Xo4cuwWy2K": {
-            "id": "Sq1UQ9Xo4cuwWy2K",
-            "label": "Dziwnokorzeń",
-            "script": "if (args.type == \"characteristic\") {\n  if (args.item == \"wp\" || args.item == \"t\")\n    args.prefillModifiers.modifier += 10\n  else if (args.item == \"ag\" || args.item == \"i\" || args.item == \"int\")\n    args.prefillModifiers.modifier -= 10\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"wp\" || args.item.characteristic.key == \"t\")\n  args.prefillModifiers.modifier += 10\n  else if (args.item.characteristic.key == \"ag\" || args.item.characteristic.key == \"i\" || args.item.characteristic.key == \"int\")\n    args.prefillModifiers.modifier -= 10\n}\nelse if (args.type == \"cast\") {\n  args.prefillModifiers.modifier -= 10\n}\nelse if (args.type == \"channelling\") {\n  args.prefillModifiers.modifier += 10\n}"
-          }
+      "effects": {
+        "Sq1UQ9Xo4cuwWy2K": {
+          "id": "Sq1UQ9Xo4cuwWy2K",
+          "label": "Dziwnokorzeń",
+          "script": "if (args.type == \"characteristic\") {\n  if (args.item == \"wp\" || args.item == \"t\")\n    args.prefillModifiers.modifier += 10\n  else if (args.item == \"ag\" || args.item == \"i\" || args.item == \"int\")\n    args.prefillModifiers.modifier -= 10\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"wp\" || args.item.characteristic.key == \"t\")\n  args.prefillModifiers.modifier += 10\n  else if (args.item.characteristic.key == \"ag\" || args.item.characteristic.key == \"i\" || args.item.characteristic.key == \"int\")\n    args.prefillModifiers.modifier -= 10\n}\nelse if (args.type == \"cast\") {\n  args.prefillModifiers.modifier -= 10\n}\nelse if (args.type == \"channelling\") {\n  args.prefillModifiers.modifier += 10\n}"
         }
-      ]
+      }
     },
     {
       "id": "b8SJ8qB0TpSjUGA6",
@@ -441,15 +437,13 @@
       "name": "Płytowe Nagolenniki",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.bY6M9XxbqmFmqpA8",
-      "effects": [
-        {
-          "u46Xpql4mjj6JOD0": {
-            "id": "u46Xpql4mjj6JOD0",
-            "label": "Płytowe Nagolenniki",
-            "script": "if (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))) {\n   args.prefillModifiers.modifier -= 10;\n}"
-          }
+      "effects": {
+        "u46Xpql4mjj6JOD0": {
+          "id": "u46Xpql4mjj6JOD0",
+          "label": "Płytowe Nagolenniki",
+          "script": "if (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))) {\n   args.prefillModifiers.modifier -= 10;\n}"
         }
-      ],
+      },
       "special": null,
       "penalty": "-10 Stealth"
     },
@@ -546,15 +540,13 @@
       "name": "Hełm płytowy",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.e9WmLbD7AuXSeWp0",
-      "effects": [
-        {
-          "Vljt1mEPqTTJIIxs": {
-            "id": "Vljt1mEPqTTJIIxs",
-            "label": "Hełm płytowy",
-            "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Perception\")){\n   args.prefillModifiers.modifier -= 20;\n}"
-          }
+      "effects": {
+        "Vljt1mEPqTTJIIxs": {
+          "id": "Vljt1mEPqTTJIIxs",
+          "label": "Hełm płytowy",
+          "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Perception\")){\n   args.prefillModifiers.modifier -= 20;\n}"
         }
-      ],
+      },
       "special": null,
       "penalty": "-20 Perception"
     },
@@ -680,15 +672,13 @@
       "name": "Mikstura lecznicza",
       "description": "<p>Jeśli bohater ma więcej niż 0 Żywotności, natychmiast leczy tyle jej punktów, ile wynosi jego Bonus z Wytrzymałość. <strong>Dawkowanie</strong>: 1 dawka na spotkanie.</p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.gxdjLQoQUTYgD6fm",
-      "effects": [
-        {
-          "K7C1LFtqdLQ5bhFS": {
-            "id": "K7C1LFtqdLQ5bhFS",
-            "label": "Mikstura lecznicza",
-            "script": "let wounds = this.actor.status.wounds;\nif (wounds.value > 0) {\n  ui.notifications.notify(game.i18n.format(\"WFRP4E.EFFECT.CORE.HealingPotion\", {wounds: this.actor.characteristics.t.bonus}));\n  this.actor.modifyWounds(this.actor.characteristics.t.bonus);\n} else {\n  ui.notifications.error(game.i18n.localize(\"WFRP4E.EFFECT.CORE.HealingPotionNoWounds\"));\n}"
-          }
+      "effects": {
+        "K7C1LFtqdLQ5bhFS": {
+          "id": "K7C1LFtqdLQ5bhFS",
+          "label": "Mikstura lecznicza",
+          "script": "let wounds = this.actor.status.wounds;\nif (wounds.value > 0) {\n  ui.notifications.notify(game.i18n.format(\"WFRP4E.EFFECT.CORE.HealingPotion\", {wounds: this.actor.characteristics.t.bonus}));\n  this.actor.modifyWounds(this.actor.characteristics.t.bonus);\n} else {\n  ui.notifications.error(game.i18n.localize(\"WFRP4E.EFFECT.CORE.HealingPotionNoWounds\"));\n}"
         }
-      ]
+      }
     },
     {
       "id": "gzriPtNbRFltaAsh",
@@ -851,22 +841,18 @@
       "name": "Rozkosz Ranalda",
       "description": "<p>Ten silnie uzależniający stymulant to syntetyczny związek chemiczny wyrabiany z siarki, rtęci i innych pierwiastków. Wdychanie proszku zapewnia premię +1 do Szybkości i +10 do Walki Wręcz, Siły, Wytrzymałości i Zwinności. Trwa to przez 3 godziny, po upływie których użytkownik otrzymuje karę -2 do Szybkości i -20 do WW, S, Wt i Zw. <strong>Czas trwania</strong>: 1 dzień.</p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.jTFOrokjEHbi12rT",
-      "effects": [
-        {
-          "TApb9RQHQJcksYYL": {
-            "id": "TApb9RQHQJcksYYL",
-            "label": "Rozkosz Ranalda",
-            "script": null
-          }
+      "effects": {
+        "TApb9RQHQJcksYYL": {
+          "id": "TApb9RQHQJcksYYL",
+          "label": "Rozkosz Ranalda",
+          "script": null
         },
-        {
-          "vLMdJ6dsFuAAIee5": {
-            "id": "vLMdJ6dsFuAAIee5",
-            "label": "Efekt po ustaniu rozkoszy Ranalda",
-            "script": null
-          }
+        "vLMdJ6dsFuAAIee5": {
+          "id": "vLMdJ6dsFuAAIee5",
+          "label": "Efekt po ustaniu rozkoszy Ranalda",
+          "script": null
         }
-      ]
+      }
     },
     {
       "id": "JX4Qy1qVog3PZBvA",
@@ -1108,15 +1094,13 @@
       "name": "Salwort",
       "description": "<p>Trzymany pod czyimś nosem zapach zmiażdżonej gałązki tego zioła usuwa 1 Stan Ogłuszenia. <strong>Dawka</strong>: 1 na starcie.</p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.mUTrC5DA6bF8DDWz",
-      "effects": [
-        {
-          "JGCSlLxbbXCPlkIY": {
-            "id": "JGCSlLxbbXCPlkIY",
-            "label": "Salwort",
-            "script": "let stunned = this.actor.hasCondition(\"stunned\");\nif (stunned) {\n   ui.notifications.notify(game.i18n.localize(\"WFRP4E.EFFECT.CORE.Salwort\"));\n   await this.actor.removeCondition(\"stunned\", 1);\n}"
-          }
+      "effects": {
+        "JGCSlLxbbXCPlkIY": {
+          "id": "JGCSlLxbbXCPlkIY",
+          "label": "Salwort",
+          "script": "let stunned = this.actor.hasCondition(\"stunned\");\nif (stunned) {\n   ui.notifications.notify(game.i18n.localize(\"WFRP4E.EFFECT.CORE.Salwort\"));\n   await this.actor.removeCondition(\"stunned\", 1);\n}"
         }
-      ]
+      }
     },
     {
       "id": "MzppW5E5c3by9iBU",
@@ -1152,15 +1136,13 @@
       "name": "Fakstoryl",
       "description": "<p>Nacieranie rany okładami przygotowanymi z tego ziołowego koagulantu usuwa wszelkie Stany Krwawienie bez Testu Leczenia. Dawkowanie: 1 dawka na Ranę Krytyczną.</p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.nRfcszo6wF2sVFDn",
-      "effects": [
-        {
-          "rzyXt1SCCnDq5tnt": {
-            "id": "rzyXt1SCCnDq5tnt",
-            "label": "Fakstoryl",
-            "script": "let bleeding = this.actor.hasCondition(\"bleeding\")\nif (bleeding) {\n   ui.notifications.notify(game.i18n.format(\"WFRP4E.EFFECT.CORE.Faxtoryll\", {bleeding: bleeding.flags.wfrp4e.value}));\n   await this.actor.removeCondition(\"bleeding\", bleeding.flags.wfrp4e.value);\n}"
-          }
+      "effects": {
+        "rzyXt1SCCnDq5tnt": {
+          "id": "rzyXt1SCCnDq5tnt",
+          "label": "Fakstoryl",
+          "script": "let bleeding = this.actor.hasCondition(\"bleeding\")\nif (bleeding) {\n   ui.notifications.notify(game.i18n.format(\"WFRP4E.EFFECT.CORE.Faxtoryll\", {bleeding: bleeding.flags.wfrp4e.value}));\n   await this.actor.removeCondition(\"bleeding\", bleeding.flags.wfrp4e.value);\n}"
         }
-      ]
+      }
     },
     {
       "id": "nrIcHcULt5fjRKbL",
@@ -1410,15 +1392,13 @@
       "name": "Hełm Płytowy (Otwarty)",
       "description": "<p></p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.TvUKzvXjc2VChuTT",
-      "effects": [
-        {
-          "YLns5DNubGbr27Lh": {
-            "id": "YLns5DNubGbr27Lh",
-            "label": "Hełm Płytowy (Otwarty)",
-            "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Perception\")) {\n   args.prefillModifiers.modifier -= 10;\n}"
-          }
+      "effects": {
+        "YLns5DNubGbr27Lh": {
+          "id": "YLns5DNubGbr27Lh",
+          "label": "Hełm Płytowy (Otwarty)",
+          "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Perception\")) {\n   args.prefillModifiers.modifier -= 10;\n}"
         }
-      ],
+      },
       "special": null,
       "penalty": "-10 Perception"
     },
@@ -1491,15 +1471,13 @@
       "name": "Ładunek zapalający",
       "description": null,
       "sourceId": "Compendium.wfrp4e-core.trappings.vI0oorwbZdlszudf",
-      "effects": [
-        {
-          "BRhiXQ6Pig4FoZlF": {
-            "id": "BRhiXQ6Pig4FoZlF",
-            "label": "Ładunek zapalający",
-            "script": "let ablaze = {{SL}} + 1;\nawait args.actor.addCondition(\"ablaze\", ablaze);"
-          }
+      "effects": {
+        "BRhiXQ6Pig4FoZlF": {
+          "id": "BRhiXQ6Pig4FoZlF",
+          "label": "Ładunek zapalający",
+          "script": "let ablaze = {{SL}} + 1;\nawait args.actor.addCondition(\"ablaze\", ablaze);"
         }
-      ],
+      },
       "special": "An Incendiary gives every affected target 1+SL Ablaze Conditions."
     },
     {
@@ -1688,15 +1666,13 @@
       "name": "Eliksir żywotności",
       "description": "<p>Wypicie tego eliksiru natychmiast usuwa wszelkie Stany&nbsp;Zmęczenie.</p>",
       "sourceId": "Compendium.wfrp4e-core.trappings.ZBBi7LpWvNgQgRcw",
-      "effects": [
-        {
-          "9ArLjt6oQqMDFsDu": {
-            "id": "9ArLjt6oQqMDFsDu",
-            "label": "Eliksir żywotności",
-            "script": "let fatigued= this.actor.hasCondition(\"fatigued\");\nif (fatigued) {\n   ui.notifications.notify(game.i18n.format(\"WFRP4E.EFFECT.CORE.VitalityDraught\", {fatigued: fatigued.conditionValue}));\n   await this.actor.removeCondition(\"fatigued\", fatigued.conditionValue);\n}"
-          }
+      "effects": {
+        "9ArLjt6oQqMDFsDu": {
+          "id": "9ArLjt6oQqMDFsDu",
+          "label": "Eliksir żywotności",
+          "script": "let fatigued= this.actor.hasCondition(\"fatigued\");\nif (fatigued) {\n   ui.notifications.notify(game.i18n.format(\"WFRP4E.EFFECT.CORE.VitalityDraught\", {fatigued: fatigued.conditionValue}));\n   await this.actor.removeCondition(\"fatigued\", fatigued.conditionValue);\n}"
         }
-      ]
+      }
     },
     {
       "id": "ZgpVhv100Kd9rsao",

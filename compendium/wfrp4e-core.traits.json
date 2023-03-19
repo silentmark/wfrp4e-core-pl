@@ -29,15 +29,13 @@
       "name": "Siłacz",
       "description": "<p>Stworzenie jest ciężkie i brutalne. Dostaje -1 do Szybkości, -10 do Zwinności oraz +10 do Siły i Wytrzymałości.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.15ENOMf345S5AL68",
-      "effects": [
-        {
-          "zMFAc8IX3JMZH9iL": {
-            "id": "zMFAc8IX3JMZH9iL",
-            "label": "Siłacz",
-            "script": null
-          }
+      "effects": {
+        "zMFAc8IX3JMZH9iL": {
+          "id": "zMFAc8IX3JMZH9iL",
+          "label": "Siłacz",
+          "script": null
         }
-      ],
+      },
       "specification": null
     },
     {
@@ -59,15 +57,13 @@
       "name": "Przebiegły",
       "description": "<p>Stworzenie jest wyjątkowo przebiegłe. Dostaje +10 do Ogłady, Inteligencji i Inicjatywy.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.3WI8mhTinC8inxyj",
-      "effects": [
-        {
-          "psBMxER5fywmsI6p": {
-            "id": "psBMxER5fywmsI6p",
-            "label": "Przebiegły",
-            "script": null
-          }
+      "effects": {
+        "psBMxER5fywmsI6p": {
+          "id": "psBMxER5fywmsI6p",
+          "label": "Przebiegły",
+          "script": null
         }
-      ],
+      },
       "specification": null
     },
     {
@@ -124,15 +120,13 @@
       "name": "Szybki",
       "description": "<p>Stworzenie porusza się niespodziewanie szybko. Dostaje +1 do Szybkości i +10 do Zwinności.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.9MjH4xyVrd3Inzak",
-      "effects": [
-        {
-          "MNEkuGwCbsQ6vdRr": {
-            "id": "MNEkuGwCbsQ6vdRr",
-            "label": "Szybki",
-            "script": null
-          }
+      "effects": {
+        "MNEkuGwCbsQ6vdRr": {
+          "id": "MNEkuGwCbsQ6vdRr",
+          "label": "Szybki",
+          "script": null
         }
-      ],
+      },
       "specification": null
     },
     {
@@ -140,15 +134,13 @@
       "name": "Elita",
       "description": "<p>Stworzenie jest doświadczonym weteranem. Dostaje +20 do Walki Wręcz, Umiejętności Strzeleckich i Siły Woli.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.9NROryHer1uXAKwY",
-      "effects": [
-        {
-          "ZoDIzpVDZ0uTDCqD": {
-            "id": "ZoDIzpVDZ0uTDCqD",
-            "label": "Elita",
-            "script": null
-          }
+      "effects": {
+        "ZoDIzpVDZ0uTDCqD": {
+          "id": "ZoDIzpVDZ0uTDCqD",
+          "label": "Elita",
+          "script": null
         }
-      ],
+      },
       "specification": null
     },
     {
@@ -156,15 +148,13 @@
       "name": "Duży",
       "description": "<p>Stworzenie jest dużym okazem swojego gatunku. Dostaje +10 do Siły i Wytrzymałości oraz -5 do Zwinności.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.a8MC97PLzl10WocT",
-      "effects": [
-        {
-          "t9ugR6DGlErazKL4": {
-            "id": "t9ugR6DGlErazKL4",
-            "label": "Duży",
-            "script": null
-          }
+      "effects": {
+        "t9ugR6DGlErazKL4": {
+          "id": "t9ugR6DGlErazKL4",
+          "label": "Duży",
+          "script": null
         }
-      ],
+      },
       "specification": null
     },
     {
@@ -214,15 +204,13 @@
       "name": "Sieć",
       "description": "<p>Stworzenie może tworzyć sieci służące do łapania niebacznych wrogów. Za każdym razem, gdy stwór trafia przeciwników, dostają oni 1&nbsp;Stan&nbsp;Pochwycenie o Sile równej podanej wartości.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.Bw6tQyzOhcl7aQ46",
-      "effects": [
-        {
-          "pV0NvELZXtpJJTfi": {
-            "id": "pV0NvELZXtpJJTfi",
-            "label": "Sieć",
-            "script": "await args.actor.addCondition(\"entangled\");"
-          }
+      "effects": {
+        "pV0NvELZXtpJJTfi": {
+          "id": "pV0NvELZXtpJJTfi",
+          "label": "Sieć",
+          "script": "await args.actor.addCondition(\"entangled\");"
         }
-      ],
+      },
       "specification": "#"
     },
     {
@@ -244,15 +232,13 @@
       "name": "Tropiciel",
       "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.ClOlztW6hH8rslbp",
-      "effects": [
-        {
-          "ftGagmf8rj6rq3ir": {
-            "id": "ftGagmf8rj6rq3ir",
-            "label": "Tropiciel",
-            "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\"))) {\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+      "effects": {
+        "ftGagmf8rj6rq3ir": {
+          "id": "ftGagmf8rj6rq3ir",
+          "label": "Tropiciel",
+          "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\"))) {\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
         }
-      ],
+      },
       "specification": null
     },
     {
@@ -267,22 +253,18 @@
       "name": "Rój",
       "description": "<p>Roje to wielkie ilości tych samych stworów działających jak jeden. Rój liczy się jako jeden stwór, który ignoruje zasady efektów psychologicznych i może ignorować zasady Związania walką, gdy wykonuje Ruch. Jeśli rój trafi przeciwnika, aktywuje zasadę Śmiertelny cios (nawet jeśli nie zabił przeciwnika). Wszyscy przeciwnicy Związani walką z rojem automatycznie otrzymują 1 Ranę pod koniec każdej Rundy, gdy rój opada na wszystko w pobliżu. Rój ma pięć razy więcej Żywotności niż normalny okaz danego stworzenia i dostaje +10 do Walki Wręcz. Wszelkie próby strzelania do roju mają premię +40 do trafienia. Rój ignoruje wszelkie zasady Rozmiaru stworzeń.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.E2Es82TvBKa7CoDG",
-      "effects": [
-        {
-          "FLoUbmMqNQMuJfZx": {
-            "id": "FLoUbmMqNQMuJfZx",
-            "label": "Bonusy Roju",
-            "script": "args.wounds *= 5;"
-          }
+      "effects": {
+        "FLoUbmMqNQMuJfZx": {
+          "id": "FLoUbmMqNQMuJfZx",
+          "label": "Bonusy Roju",
+          "script": "args.wounds *= 5;"
         },
-        {
-          "tEaxMHcTWod19AVP": {
-            "id": "tEaxMHcTWod19AVP",
-            "label": "Rój",
-            "script": "if (args.type == \"weapon\" && args.item.attackType == \"ranged\") {\n   args.prefillModifiers.modifier += 40;\n}"
-          }
+        "tEaxMHcTWod19AVP": {
+          "id": "tEaxMHcTWod19AVP",
+          "label": "Rój",
+          "script": "if (args.type == \"weapon\" && args.item.attackType == \"ranged\") {\n   args.prefillModifiers.modifier += 40;\n}"
         }
-      ],
+      },
       "specification": null
     },
     {
@@ -318,15 +300,13 @@
       "name": "Jad",
       "description": "<p>Ataki stworzenia są zatrute lub jadowite. Przeciwnicy, którym zadało ono Rany, otrzymują Stan Zatrucie. Jeśli nie jest podany poziom Trudności uniknięcia efektów jadu, domyślnie jest on Wymagający.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.gFkRm9wS65qe18Xv",
-      "effects": [
-        {
-          "cwsT8KWhr0OgtWc1": {
-            "id": "cwsT8KWhr0OgtWc1",
-            "label": "Jad",
-            "script": "if (args.totalWoundLoss > 0) {\n    await args.actor.addCondition(\"poisoned\");\n}"
-          }
+      "effects": {
+        "cwsT8KWhr0OgtWc1": {
+          "id": "cwsT8KWhr0OgtWc1",
+          "label": "Jad",
+          "script": "if (args.totalWoundLoss > 0) {\n    await args.actor.addCondition(\"poisoned\");\n}"
         }
-      ],
+      },
       "specification": "Trudność"
     },
     {
@@ -341,15 +321,13 @@
       "name": "Twardziel",
       "description": "<p>Stworzenie jest w stanie przyjąć więcej obrażeń niż większość innych istot. Zwiększ Żywotność stworzenia o wartość równą jego Bonusowi z Wytrzymałości (zastosuj to przed wszelkimi modyfikatorami Rozmiaru).</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.HbrwGhUl0ZXz4kLA",
-      "effects": [
-        {
-          "yrUvulIfrQfAJmkB": {
-            "id": "yrUvulIfrQfAJmkB",
-            "label": "Twardziel",
-            "script": "args.multiplier.tb += 1;"
-          }
+      "effects": {
+        "yrUvulIfrQfAJmkB": {
+          "id": "yrUvulIfrQfAJmkB",
+          "label": "Twardziel",
+          "script": "args.multiplier.tb += 1;"
         }
-      ],
+      },
       "specification": null
     },
     {
@@ -371,15 +349,13 @@
       "name": "Skoczny",
       "description": "<p>Stworzenie potrafi wysoko podskakiwać dzięki silnym kończynom, magii albo szczątkowym skrzydłom. Gdy Szarżuje lub Biegnie, podwaja swoją Szybkość i może ignorować wszelkie przeszkody terenowe oraz postacie, przeskakując nad nimi.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.j6v78dnOOdCB6c3d",
-      "effects": [
-        {
-          "1XRT8BzRtNWArfau": {
-            "id": "1XRT8BzRtNWArfau",
-            "label": "Skoczny",
-            "script": "this.actor.details.move.run *= 2;"
-          }
+      "effects": {
+        "1XRT8BzRtNWArfau": {
+          "id": "1XRT8BzRtNWArfau",
+          "label": "Skoczny",
+          "script": "this.actor.details.move.run *= 2;"
         }
-      ],
+      },
       "specification": null
     },
     {
@@ -401,15 +377,13 @@
       "name": "Wymiot",
       "description": "<p>Stworzenie potrafi wyrzucać z siebie strumień żrących wymiocin, pokrywając przeciwników cuchnącym, na wpół strawionym śluzem.</p>\n\n<ul><li>W swojej Turze, wydając 3 Przewagi, stworzenie może wykonać Wymiot jako Darmowy Atak. Stworzenie wybiera 1 cel, który widzi w promieniu tylu metrów, ile wynosi jego Bonus z Wytrzymałości, i wymiotuje. Trafione zostają także wszystkie cele w promieniu dwóch metrów od tego celu.</li><li>Stworzenie przeprowadza Test Przeciwstawny Umiejętności Strzeleckie/Unik przeciwko wszystkim objętym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Test jest zazwyczaj Łatwy (+40) dla wymiotującego stwora ze względu na bliski dystans oraz Wymagający (+0) dla przeciwników. Wszystkie cele, które przegrały, otrzymują trafienie z Obrażeniami równymi tyle, ile wynosi Bonus z Wytrzymałości +4 stwora, oraz dostają Stan Oszołomiony.</li><li>Noszony przez objęte efektem postaci pancerze oraz wszelka broń dostają 1 punkt Uszkodzeń od kwasowych wymiocin.</li></ul>",
       "sourceId": "Compendium.wfrp4e-core.traits.JzeN9MZ0xUDvpE2l",
-      "effects": [
-        {
-          "4KinCaegUvscrFU9": {
-            "id": "4KinCaegUvscrFU9",
-            "label": "Wymiot",
-            "script": "await args.actor.addCondition(\"stunned\");"
-          }
+      "effects": {
+        "4KinCaegUvscrFU9": {
+          "id": "4KinCaegUvscrFU9",
+          "label": "Wymiot",
+          "script": "await args.actor.addCondition(\"stunned\");"
         }
-      ],
+      },
       "specification": "+4"
     },
     {
@@ -417,15 +391,13 @@
       "name": "Twardy",
       "description": "<p>Stworzenie jest odporniejsze na obrażenia niż normalnie i nie odpuszcza. Dostaje +10 do Wytrzymałości i Siły Woli.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.k9539MBTFplxsysT",
-      "effects": [
-        {
-          "X8KrugiMugs70khd": {
-            "id": "X8KrugiMugs70khd",
-            "label": "Twardy",
-            "script": null
-          }
+      "effects": {
+        "X8KrugiMugs70khd": {
+          "id": "X8KrugiMugs70khd",
+          "label": "Twardy",
+          "script": null
         }
-      ],
+      },
       "specification": null
     },
     {
@@ -440,15 +412,13 @@
       "name": "Groza",
       "description": "<p>Stworzenie w sposób nadnaturalny wzbudza mrożącą krew w żyłach Grozę w innych istotach. Poziom Grozy równy jest podanej wartości.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.kJNAY1YRaCy9IgmT",
-      "effects": [
-        {
-          "xTL3QAampKjHdKVh": {
-            "id": "xTL3QAampKjHdKVh",
-            "label": "Groza",
-            "script": "let value = parseInt(this.item.specification.value);\nlet name = this.actor.prototypeToken.name;\nif (game.user.isGM && game.user.targets.size) {\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name);\n  })\n  game.user.updateTokenTargets([]);\n}\nelse {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
-          }
+      "effects": {
+        "xTL3QAampKjHdKVh": {
+          "id": "xTL3QAampKjHdKVh",
+          "label": "Groza",
+          "script": "let value = parseInt(this.item.specification.value);\nlet name = this.actor.prototypeToken.name;\nif (game.user.isGM && game.user.targets.size) {\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name);\n  })\n  game.user.updateTokenTargets([]);\n}\nelse {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
         }
-      ],
+      },
       "specification": "Wartość"
     },
     {
@@ -456,15 +426,13 @@
       "name": "Dusiciel",
       "description": "<p>Stworzenie potrafi ściskać i miażdżyć ofiary. Każdy udany rzut na trafienie daje celowi Stan Pochwycenie. Jeżeli do tego dojdzie, stworzenie może wejść w Chwyt.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.KynNUYYKzTMeHrKl",
-      "effects": [
-        {
-          "txcmOLjyNoW2BLSu": {
-            "id": "txcmOLjyNoW2BLSu",
-            "label": "Dusiciel",
-            "script": "await args.actor.addCondition(\"entangled\");"
-          }
+      "effects": {
+        "txcmOLjyNoW2BLSu": {
+          "id": "txcmOLjyNoW2BLSu",
+          "label": "Dusiciel",
+          "script": "await args.actor.addCondition(\"entangled\");"
         }
-      ],
+      },
       "specification": null
     },
     {
@@ -479,15 +447,13 @@
       "name": "Kwasowa Krew",
       "description": "<p>Krew stworzenia jest żrąca. Za każdym razem, gdy zostanie ono ranione, tryska z niego krew i wszystkie związane z nim walką cele dostają 1k10 Ran. Są one normalnie obniżane przez Bonus z Wytrzymałości i Punkty Pancerza, ale wynoszą minimum 1.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.M5QSWOYt2Rbv2yxW",
-      "effects": [
-        {
-          "mzNcVAruDOTiCGhS": {
-            "id": "mzNcVAruDOTiCGhS",
-            "label": "Kwasowa Krew",
-            "script": "let content = `<b>${this.effect.label}</b>: All targets engaged with <b>${this.actor.prototypeToken.name}</b> take [[/r 1d10]] Damage, modified by TB and AP.`;\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}});"
-          }
+      "effects": {
+        "mzNcVAruDOTiCGhS": {
+          "id": "mzNcVAruDOTiCGhS",
+          "label": "Kwasowa Krew",
+          "script": "let content = `<b>${this.effect.label}</b>: All targets engaged with <b>${this.actor.prototypeToken.name}</b> take [[/r 1d10]] Damage, modified by TB and AP.`;\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}});"
         }
-      ],
+      },
       "specification": null
     },
     {
@@ -495,15 +461,13 @@
       "name": "Zimnokrwisty",
       "description": "<p>Stworzenie jest zimnokrwiste i nie działa pochopnie. Może odwrócić wszystkie nieudane Testy Siły Woli.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.mCh1KK9jomwFZcLB",
-      "effects": [
-        {
-          "cq8SZaHuRYPHsnQF": {
-            "id": "cq8SZaHuRYPHsnQF",
-            "label": "Zimnokrwisty",
-            "script": "if (args.test.characteristicKey == \"wp\") {\n   args.test.preData.canReverse = true;\n}"
-          }
+      "effects": {
+        "cq8SZaHuRYPHsnQF": {
+          "id": "cq8SZaHuRYPHsnQF",
+          "label": "Zimnokrwisty",
+          "script": "if (args.test.characteristicKey == \"wp\") {\n   args.test.preData.canReverse = true;\n}"
         }
-      ],
+      },
       "specification": null
     },
     {
@@ -518,15 +482,13 @@
       "name": "Dekoncentrujący",
       "description": "<p>Stworzenie rozprasza lub dezorientuje wrogów, być może wydzielając usypiający zapach lub powalający smród, a może ze względu na przerażająco dziwaczny wygląd. Wszystkie żywe cele w promieniu tylu metrów, ile wynosi jego Bonus z Wytrzymałości, dostają karę -20 do wszystkich Testów. Cel może dostać tę karę tylko raz - bez względu na to, jak wielu jest dekoncentrujących wrogów.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.MVI0lXcg6vvtooAF",
-      "effects": [
-        {
-          "et9TgrjWHZYQI7OJ": {
-            "id": "et9TgrjWHZYQI7OJ",
-            "label": "Dekoncentrujący",
-            "script": "args.prefillModifiers.modifier -= 20;"
-          }
+      "effects": {
+        "et9TgrjWHZYQI7OJ": {
+          "id": "et9TgrjWHZYQI7OJ",
+          "label": "Dekoncentrujący",
+          "script": "args.prefillModifiers.modifier -= 20;"
         }
-      ],
+      },
       "specification": null
     },
     {
@@ -534,15 +496,13 @@
       "name": "Sprytny",
       "description": "<p>Stworzenie jest wyjątkowo bystre. Dostaje +20 do Inteligencji i +10 do Inicjatywy.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.Ni4hNAPv3LhTpgMA",
-      "effects": [
-        {
-          "TsZOr4vxvvQ8UlCy": {
-            "id": "TsZOr4vxvvQ8UlCy",
-            "label": "Sprytny",
-            "script": null
-          }
+      "effects": {
+        "TsZOr4vxvvQ8UlCy": {
+          "id": "TsZOr4vxvvQ8UlCy",
+          "label": "Sprytny",
+          "script": null
         }
-      ],
+      },
       "specification": null
     },
     {
@@ -550,15 +510,13 @@
       "name": "Skryty",
       "description": "<p>Stworzenie jest wyjątkowo skryte. Dodaje wartość swojego Bonusu ze Zwinności do PS wszystkich Testów Skradania.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.OzwDT6kzoLYeeR2d",
-      "effects": [
-        {
-          "0AgiLabg8eB4LItu": {
-            "id": "0AgiLabg8eB4LItu",
-            "label": "Skryty",
-            "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+      "effects": {
+        "0AgiLabg8eB4LItu": {
+          "id": "0AgiLabg8eB4LItu",
+          "label": "Skryty",
+          "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
         }
-      ],
+      },
       "specification": null
     },
     {
@@ -580,15 +538,13 @@
       "name": "Upiorne Wycie",
       "description": "<p>Stworzenie potrafi wydawać mrożące krew w żyłach wycie, zabójcze dla tych, którzy je usłyszą. W swojej Turze stworzenie może zużyć wszystkie Przewagi (minimalnie 2), aby wydać z siebie koszmarny wrzask. Jest to Darmowy Atak.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.plVyl4vjS2fX16Rv",
-      "effects": [
-        {
-          "MNo99hhKFuloCyy8": {
-            "id": "MNo99hhKFuloCyy8",
-            "label": "Upiorne Wycie",
-            "script": "let damage = (await new Roll(\"1d10\").roll()).total;\nawait args.actor.applyBasicDamage(damage, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL});\nawait args.actor.addCondition(\"deafened\", 3)\n\nargs.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute : {difficulty: \"average\" }, context : {failure: game.i18n.localize(\"WFRP4E.EFFECT.CORE.GhostlyHowlGain\"), success : game.i18n.localize(\"WFRP4E.EFFECT.CORE.GhostlyHowlAvoid\")}}).then(async test => {\n   await test.roll();\n   if (test.result.outcome == \"failure\") {\n      await args.actor.addCondition(\"broken\");\n   }\n});"
-          }
+      "effects": {
+        "MNo99hhKFuloCyy8": {
+          "id": "MNo99hhKFuloCyy8",
+          "label": "Upiorne Wycie",
+          "script": "let damage = (await new Roll(\"1d10\").roll()).total;\nawait args.actor.applyBasicDamage(damage, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL});\nawait args.actor.addCondition(\"deafened\", 3)\n\nargs.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute : {difficulty: \"average\" }, context : {failure: game.i18n.localize(\"WFRP4E.EFFECT.CORE.GhostlyHowlGain\"), success : game.i18n.localize(\"WFRP4E.EFFECT.CORE.GhostlyHowlAvoid\")}}).then(async test => {\n   await test.roll();\n   if (test.result.outcome == \"failure\") {\n      await args.actor.addCondition(\"broken\");\n   }\n});"
         }
-      ],
+      },
       "specification": null
     },
     {
@@ -603,15 +559,13 @@
       "name": "Strach",
       "description": "<p>Stworzenie wywołuje nienaturalny Strach w innych istotach. Poziom Strachu równy jest podanej wartości.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.pTorrE0l3VybAbtn",
-      "effects": [
-        {
-          "ODxbsuuS0splmVEN": {
-            "id": "ODxbsuuS0splmVEN",
-            "label": "Strach",
-            "script": "let value = parseInt(this.item.specification.value);\nlet name = this.actor.prototypeToken.name;\nif (game.user.isGM && game.user.targets.size) {\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  });\n  game.user.updateTokenTargets([]);\n}\nelse {\n  game.wfrp4e.utility.postFear(value, name);\n}"
-          }
+      "effects": {
+        "ODxbsuuS0splmVEN": {
+          "id": "ODxbsuuS0splmVEN",
+          "label": "Strach",
+          "script": "let value = parseInt(this.item.specification.value);\nlet name = this.actor.prototypeToken.name;\nif (game.user.isGM && game.user.targets.size) {\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  });\n  game.user.updateTokenTargets([]);\n}\nelse {\n  game.wfrp4e.utility.postFear(value, name);\n}"
         }
-      ],
+      },
       "specification": "#"
     },
     {
@@ -619,15 +573,13 @@
       "name": "Mieszkaniec Lasu",
       "description": "<p>Stworzenie jest w swoim żywiole w lesie. W zalesionym terenie dodaje Bonus ze Zwinności do PS wszystkich Testów Wspinaczki i Skradania.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.rOV2s6PQBBrhpMOv",
-      "effects": [
-        {
-          "HipPSD61s7Vkcru0": {
-            "id": "HipPSD61s7Vkcru0",
-            "label": "Mieszkaniec Lasu",
-            "script": "if (args.type == \"skill\" && (args.item.name == game.i18n.localize(\"NAME.Climb\")  || args.item.name.includes(game.i18n.localize(\"NAME.Stealth\")))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
-          }
+      "effects": {
+        "HipPSD61s7Vkcru0": {
+          "id": "HipPSD61s7Vkcru0",
+          "label": "Mieszkaniec Lasu",
+          "script": "if (args.type == \"skill\" && (args.item.name == game.i18n.localize(\"NAME.Climb\")  || args.item.name.includes(game.i18n.localize(\"NAME.Stealth\")))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
         }
-      ],
+      },
       "specification": null
     },
     {
@@ -635,15 +587,13 @@
       "name": "Regeneracja",
       "description": "<p>Stworzenie leczy się w niezwykłym tempie. Nawet jego odcięte części ciała mogą odrastać. Na początku każdej Rundy, o ile pozostało mu ponad 0 Żywotności, stworzenie automatycznie regeneruje 1k10 punktów Żywotności. Jeśli pozostało mu 0 Żywotności, regeneruje jedną Ranę po wyrzuceniu 8+ na 1k10. Jeśli kiedykolwiek podczas regeneracji wyrzuci 10, może w pełni zregenerować także Ranę Krytyczną, anulując w ten sposób wszelkie powiązane z nią kary i Stany. Poza tym wszelkie Rany Krytyczne lub Rany spowodowane przez ogień nie mogą być regenerowane i powinny być zapisywane oddzielnie.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.SfUUdOGjdYpr3KSR",
-      "effects": [
-        {
-          "0CEu4kmUhYSxWGJZ": {
-            "id": "0CEu4kmUhYSxWGJZ",
-            "label": "Regeneracja",
-            "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")};\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`;\n      if (regen == 10) {\n         chatData.content += `<br>Additionally, they regenerate a Critical Wound.`;\n      }\n   }\n   else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n      }\n   }\n   else {\n      chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}"
-          }
+      "effects": {
+        "0CEu4kmUhYSxWGJZ": {
+          "id": "0CEu4kmUhYSxWGJZ",
+          "label": "Regeneracja",
+          "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")};\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`;\n      if (regen == 10) {\n         chatData.content += `<br>Additionally, they regenerate a Critical Wound.`;\n      }\n   }\n   else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n      }\n   }\n   else {\n      chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}"
         }
-      ],
+      },
       "specification": null
     },
     {
@@ -651,15 +601,13 @@
       "name": "Ziemnowodny",
       "description": "<p>Stworzenie jest w swoim żywiole w wodzie. Może dodać swój Bonus ze Zwinności do PS wszystkich testów Pływania i poruszać się w wodzie z pełną Szybkością.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.sJ3yX1kvzu2hgNq5",
-      "effects": [
-        {
-          "KZWyDUhYS7K60RF0": {
-            "id": "KZWyDUhYS7K60RF0",
-            "label": "Ziemnowodny",
-            "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Swim\")) {\n    args.prefillModifiers.slBonus += this.actor.characteristics.ag.bonus;\n}"
-          }
+      "effects": {
+        "KZWyDUhYS7K60RF0": {
+          "id": "KZWyDUhYS7K60RF0",
+          "label": "Ziemnowodny",
+          "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Swim\")) {\n    args.prefillModifiers.slBonus += this.actor.characteristics.ag.bonus;\n}"
         }
-      ],
+      },
       "specification": null
     },
     {
@@ -667,15 +615,13 @@
       "name": "Zakażony",
       "description": "<p>Skóra stworzenia jest pełna gryzących pcheł lub czegoś podobnego. Wszyscy przeciwnicy dostają karę -10 do trafienia w walce w zwarciu, ponieważ pasożyty rozpraszają ich i irytują.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.TBcdTlYSRH8Rd1x0",
-      "effects": [
-        {
-          "gjbJu5OWDKFJvvyY": {
-            "id": "gjbJu5OWDKFJvvyY",
-            "label": "Zakażony",
-            "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\") {\n   args.prefillModifiers.modifier -= 10\n}"
-          }
+      "effects": {
+        "gjbJu5OWDKFJvvyY": {
+          "id": "gjbJu5OWDKFJvvyY",
+          "label": "Zakażony",
+          "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\") {\n   args.prefillModifiers.modifier -= 10\n}"
         }
-      ],
+      },
       "specification": null
     },
     {
@@ -690,15 +636,13 @@
       "name": "Konstrukt",
       "description": "<p>Stworzenie jest konstruktem z magii, całkiem bezrozumnym i spajanym przez magiczne więzy. Nie ma Cech Inteligencja, Siła Woli ani Ogłada i nigdy nie musi ich testować. Jeśli brakuje czarodzieja, który by je kontrolował, albo stworzenie nie posiada cechy Terytorialny, wałęsa się bezmyślnie, podążając za nurtami przenikającej otoczenie magii.</p><p>Gdy trzeba obliczyć Żywotność stwora i wymagane jest określenie Bonusu z Siły Woli, użyj jego Bonusu z Siły. Wszystkie ataki stworzenia są Magiczne.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.UB4mDroL6S1F9B4u",
-      "effects": [
-        {
-          "mkDK0Yqvb4JqL1zq": {
-            "id": "mkDK0Yqvb4JqL1zq",
-            "label": "Konstrukt",
-            "script": "args.wpb = args.sb;"
-          }
+      "effects": {
+        "mkDK0Yqvb4JqL1zq": {
+          "id": "mkDK0Yqvb4JqL1zq",
+          "label": "Konstrukt",
+          "script": "args.wpb = args.sb;"
         }
-      ],
+      },
       "specification": null
     },
     {
@@ -706,15 +650,13 @@
       "name": "Długi Krok",
       "description": "<p>Stworzenie porusza się wielkimi krokami, być może dlatego, że jest czworonożne lub ma szczególnie długie nogi. Gdy biegnie, pomnóż Szybkość Biegu przez 1,5.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.UmxGZRV0Lw3TZ0Kx",
-      "effects": [
-        {
-          "bSNlAHOT09D6Bx16": {
-            "id": "bSNlAHOT09D6Bx16",
-            "label": "Długi Krok",
-            "script": "args.actor.details.move.run *= 1.5;"
-          }
+      "effects": {
+        "bSNlAHOT09D6Bx16": {
+          "id": "bSNlAHOT09D6Bx16",
+          "label": "Długi Krok",
+          "script": "args.actor.details.move.run *= 1.5;"
         }
-      ],
+      },
       "specification": null
     },
     {
@@ -722,15 +664,13 @@
       "name": "Atak Ogonem",
       "description": "<p>Stworzenie potrafi zwalać z nóg przeciwników machnięciem ogona. W swojej Turze może wykonać Darmowy Atak, wydając 1 Przewagę. Ogon zadaje tyle Obrażeń, ile wynosi podana wartość, która już zawiera Bonus z Siły stworzenia. Przeciwnicy o Rozmiarze mniejszym niż stworzenie, którzy odniosą jakiekolwiek Rany na skutek tego ataku, dostają także Stan Powalony.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.UnJ25lL8aUzem5JO",
-      "effects": [
-        {
-          "3KXZhIkHukLOpg2l": {
-            "id": "3KXZhIkHukLOpg2l",
-            "label": "Atak Ogonem",
-            "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value];\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value];\nif (attackerSize > actorSize) {\n   await args.actor.addCondition(\"prone\")\n   ChatMessage.create({content: `<b>Tail Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Prone]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
-          }
+      "effects": {
+        "3KXZhIkHukLOpg2l": {
+          "id": "3KXZhIkHukLOpg2l",
+          "label": "Atak Ogonem",
+          "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value];\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value];\nif (attackerSize > actorSize) {\n   await args.actor.addCondition(\"prone\")\n   ChatMessage.create({content: `<b>Tail Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Prone]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
         }
-      ],
+      },
       "specification": "Obrażenia"
     },
     {
@@ -752,15 +692,13 @@
       "name": "Zaraza",
       "description": "<p>Stworzenie (albo jego broń) przenosi paskudną infekcję. Jeśli spowoduje utratę Żywotności żyjącego przeciwnika, musi on zdać Łatwy (+40) Test Odporności, inaczej nabawi się Ropiejącej Rany.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.V0c3qBU1CMm8bmsW",
-      "effects": [
-        {
-          "6rMAx2bGefOkubv8": {
-            "id": "6rMAx2bGefOkubv8",
-            "label": "Zaraza",
-            "script": "if (args.totalWoundLoss > 0) {\n     ChatMessage.create({ content: game.i18n.format(\"WFRP4E.EFFECT.CORE.Infected\", {name: this.actor.name}), whisper: ChatMessage.getWhisperRecipients(\"GM\") })\n}"
-          }
+      "effects": {
+        "6rMAx2bGefOkubv8": {
+          "id": "6rMAx2bGefOkubv8",
+          "label": "Zaraza",
+          "script": "if (args.totalWoundLoss > 0) {\n     ChatMessage.create({ content: game.i18n.format(\"WFRP4E.EFFECT.CORE.Infected\", {name: this.actor.name}), whisper: ChatMessage.getWhisperRecipients(\"GM\") })\n}"
         }
-      ],
+      },
       "specification": null
     },
     {
@@ -789,15 +727,13 @@
       "name": "Pancerz",
       "description": "<p>Stworzenie chronione jest przez pancerz lub grubą skórę. Ma tyle Punktów Pancerza, ile wynosi wartość, na wszystkich Miejscach Trafień.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.VUJUZVN3VYhOaPjj",
-      "effects": [
-        {
-          "CAcGBn8sq62mVUxJ": {
-            "id": "CAcGBn8sq62mVUxJ",
-            "label": "Pancerz",
-            "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n    AP[\"head\"].value += (value - (APdamage.head || 0))\n    AP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\n    AP[\"lArm\"].value += (value - (APdamage.lArm || 0))\n    AP[\"body\"].value += (value - (APdamage.body || 0))\n    AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\n    AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
-          }
+      "effects": {
+        "CAcGBn8sq62mVUxJ": {
+          "id": "CAcGBn8sq62mVUxJ",
+          "label": "Pancerz",
+          "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n    AP[\"head\"].value += (value - (APdamage.head || 0))\n    AP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\n    AP[\"lArm\"].value += (value - (APdamage.lArm || 0))\n    AP[\"body\"].value += (value - (APdamage.body || 0))\n    AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\n    AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         }
-      ],
+      },
       "specification": "#"
     },
     {
@@ -812,15 +748,13 @@
       "name": "Przywódca",
       "description": "<p>Stworzenie jest doświadczonym przywódcą. Dostaje premię +10 do Ogłady i Siły Woli. Uwaga: tej cechy nie mogą wybierać stworzenia posiadające cechę Zwierzęcy.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.wGTD2LezlI6Atyy0",
-      "effects": [
-        {
-          "qjz6qX4wkAN2Eldl": {
-            "id": "qjz6qX4wkAN2Eldl",
-            "label": "Przywódca",
-            "script": null
-          }
+      "effects": {
+        "qjz6qX4wkAN2Eldl": {
+          "id": "qjz6qX4wkAN2Eldl",
+          "label": "Przywódca",
+          "script": null
         }
-      ],
+      },
       "specification": null
     },
     {
@@ -835,15 +769,13 @@
       "name": "Atak Językiem (Zasięg)",
       "description": "<p>Chwytny język stworzenia może owijać się wokół ofiary, wciągając ją aż do makabrycznego końca. W swojej Turze stworzenie może wykonać Darmowy Atak, wydając 1 Przewagę. To atak dystansowy, który zadaje tyle Obrażeń, ile wynosi podana wartość (zasięg podany jest w nawiasie). Jeśli atak trafi, cel dostaje 1 Stan Pochwycenie, a jeśli ma mniejszy Rozmiar, zostaje przyciągnięty do stworzenia i Związany Walką wręcz. Stworzenie może następnie zdecydować, czy wypuści cel, wykonując Darmowy Atak z użyciem swojej cechy Broń, czy będzie trzymać cel owinięty językiem, zapoczątkowując Chwyt.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.xg6z63j6BH5AaqLL",
-      "effects": [
-        {
-          "kPgI28vmSamM3u1s": {
-            "id": "kPgI28vmSamM3u1s",
-            "label": "Atak Językiem (Zasięg)",
-            "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value];\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value];\nif (attackerSize > actorSize) {\n   await args.actor.addCondition(\"entangled\");\n   ChatMessage.create({content: `<b>Tongue Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Entangled]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
-          }
+      "effects": {
+        "kPgI28vmSamM3u1s": {
+          "id": "kPgI28vmSamM3u1s",
+          "label": "Atak Językiem (Zasięg)",
+          "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value];\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value];\nif (attackerSize > actorSize) {\n   await args.actor.addCondition(\"entangled\");\n   ChatMessage.create({content: `<b>Tongue Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Entangled]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
         }
-      ],
+      },
       "specification": "Wartość"
     },
     {
@@ -865,15 +797,13 @@
       "name": "Szał Bojowy",
       "description": "<p>Stworzenie może wpadać w Szał Bojowy. Podczas Szału Bojowego jest odporne na zasady Psychologii, nie wycofa się z żadnego powodu, musi zawsze poruszać się z pełną prędkością w stronę najbliższego widzianego przeciwnika, by go zaatakować. Jedynymi Akcjami, jakie można wtedy wykonać, są Testy Broni Białej w zwarciu albo Atletyki, by szybciej dobiec do przeciwnika. Poza tym w każdej Rundzie postać otrzymuje Akcję Darmową w postaci dodatkowego ataku wręcz, ponieważ naprawdę daje z siebie wszystko. A jakby tego było mało, zaciekłość i brutalność skutkuje podniesieniem Bonusu z Siły o +1. Postać pozostaje w Szale Bojowym, dopóki wszyscy wrogowie w polu widzenia nie zostaną unieszkodliwieni albo dopóki postać nie otrzyma przynajmniej 1 poziomu Oszołomienia lub nie nastąpi Utrata Przytomności. Po zakończeniu Szału Bojowego postać natychmiast otrzymuje 1 poziom Zmęczenia.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.yRhhOlt18COq4e1q",
-      "effects": [
-        {
-          "jTfCjCCrfFHKqXhz": {
-            "id": "jTfCjCCrfFHKqXhz",
-            "label": "Szał Bojowy",
-            "script": "args.actor.characteristics.s.bonus += 1;\nargs.actor.characteristics.s.calculationBonusModifier -= 1;"
-          }
+      "effects": {
+        "jTfCjCCrfFHKqXhz": {
+          "id": "jTfCjCCrfFHKqXhz",
+          "label": "Szał Bojowy",
+          "script": "args.actor.characteristics.s.bonus += 1;\nargs.actor.characteristics.s.calculationBonusModifier -= 1;"
         }
-      ],
+      },
       "specification": null
     },
     {
@@ -881,15 +811,13 @@
       "name": "Odporność na Magię",
       "description": "<p>Efekt wywierany przez magię na stworzenie jest ograniczony. PS dowolnego wpływającego na stworzenie czaru zmniejszany jest o podaną wartość. Zatem Odporność na Magię 2 zmniejsza PS o 2.</p>",
       "sourceId": "Compendium.wfrp4e-core.traits.yrkI7ATjqLPDTFmZ",
-      "effects": [
-        {
-          "PWNOSwxsePCN7sKH": {
-            "id": "PWNOSwxsePCN7sKH",
-            "label": "Odporność na Magię",
-            "script": "if (args.type == \"cast\") {\n       args.prefillModifiers.slBonus -= 2;\n}"
-          }
+      "effects": {
+        "PWNOSwxsePCN7sKH": {
+          "id": "PWNOSwxsePCN7sKH",
+          "label": "Odporność na Magię",
+          "script": "if (args.type == \"cast\") {\n       args.prefillModifiers.slBonus -= 2;\n}"
         }
-      ],
+      },
       "specification": null
     },
     {
