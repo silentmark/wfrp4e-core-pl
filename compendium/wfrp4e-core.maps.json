@@ -2,6 +2,7 @@
   "label": "Mapy (Główny)",
   "mapping": {
     "image": "background.src",
+    "image-temp": "modules/wfrp4e-core-pl/images/gm-screen.webp",
     "notes": {
       "path": "notes",
       "converter": "notes"
@@ -9,18 +10,24 @@
     "scene_note": "flags.wfrp4e-core.scene-note",
     "initialization_folder": "flags.wfrp4e-core.initialization-folder"
   },
-  "entries": [
-    {
-      "initialization_folder": "Core Rulebook",
+  "entries": {
+    "Barony of Böhrn": {
+      "initialization_folder": "Podręcznik Główny",
+      "image": "modules/wfrp4e-core-pl/images/barony-of-bohrn.webp",
+      "id": "Bk3yufokGdVtsQag",
       "name": "Barony of Böhrn",
       "scene_note": "Barony of Böhrn"
     },
-    {
-      "initialization_folder": "Core Rulebook",
+    "GM Screen": {
+      "initialization_folder": "Podręcznik Główny",
+      "image": "modules/wfrp4e-core-pl/images/gm-screen.webp",
+      "id": "R4WcWZTHP25YCoW5",
       "name": "GM Screen"
     },
-    {
-      "initialization_folder": "Core Rulebook",
+    "Reikland": {
+      "initialization_folder": "Podręcznik Główny",
+      "image": "modules/wfrp4e-core-pl/images/reikland.webp",
+      "id": "vGrxlojYtdObKLF6",
       "name": "Reikland",
       "notes": {
         "qwLZqgof9MM9fxNL": {
@@ -206,5 +213,5 @@
       },
       "scene_note": "Timeline of the Reikland"
     }
-  ]
+  }
 }

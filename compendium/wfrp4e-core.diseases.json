@@ -13,8 +13,8 @@
       "converter": "effects"
     }
   },
-  "entries": [
-    {
+  "entries": {
+    "Minor Infection": {
       "id": "1hQuVFZt9QnnbWzg",
       "name": "Pomniejsza Infekcja",
       "description": "<p>Pomniejsze Infekcje to wolno gojące się rany, którym towarzyszy drobna opuchlizna i gorączka. W Starym Świecie są równie powszechne, co powietrze. Większość z nich goi się sama z biegiem czasu, więc mało kto w ogóle się nimi martwi - dopóki nie jest za późno i przed chorym nie otwierają się Bramy Morra.</p>",
@@ -44,7 +44,7 @@
       "symptoms": "Apatia, Nawroty (sporadyczne), Uciążliwa rana",
       "permanent": null
     },
-    {
+    "The Black Plague": {
       "id": "aKiuGzlVO51JvsjV",
       "name": "Czarna Dżuma",
       "description": "<p>Historycy twierdzą, że setki lat temu szczury zalały Imperium i przyniosły ze sobą Czarną Dżumę, która wybiła 90% populacji ludzi. Niewyjaśnione wybuchy tej straszliwej choroby zdarzają się do dzisiaj, a wtedy zjawiają się na miejscu niezwykle poważne mniszki w bieli. Kult Shallyi poprzysiągł wytrzebienie tej obrzydliwej choroby z powierzchni ziemi, więc korzystając z nadanych im starożytnych praw, kapłani i kapłanki Shallyi wznoszą otoczone białymi linami szpitale-izolatki wszędzie tam, gdzie występuje Czarna Dżuma. Nikt nie wejdzie na teren kwarantanny ani go nie opuści, dopóki epidemia nie zostanie opanowana, a ciała pochowane w odpowiedni sposób. Zarażenie: Co godzinę (albo i częściej) należy wykonać Przeciętny (+20) Test Odporności, jeśli postać przebywa w okolicy opanowanej przez zarażone pchły lub została wystawiona na działanie skażonych cieczy.</p>",
@@ -84,7 +84,7 @@
       "symptoms": "Apatia, Dymienica, Gangrena, Gorączka, Uwiąd (umiarkowany)",
       "permanent": null
     },
-    {
+    "Packer's Pox": {
       "id": "BC4QyBeYAiw8cRuM",
       "name": "Sierściawka",
       "description": "<p>To powszechna choroba wśród myśliwych, kuśnierzy i handlarzy. Sierściawką można zarazić się od zainfekowanego bydła i owiec, w tym poprzez dotykanie ich skór lub wełny, albo od ciał zwierząt, które padły na tę chorobę. Zaczyna się niewinnie - od małej, swędzącej wysypki, ale szybko całe ciało pokrywa się różowymi, głębokimi pęcherzami, choć zazwyczaj najwięcej występuje ich na korpusie  i ramionach. Nie jest to najgroźniejsza z osp panoszących się po Imperium, ale potrafi utrzymywać się przez długi czas, a niekiedy bywa nawet śmiertelna.</p>",
@@ -109,7 +109,7 @@
       "symptoms": " Nawroty (sporadyczne), Wysypka",
       "permanent": null
     },
-    {
+    "The Bloody Flux": {
       "id": "herUmN51D9TiL2Vn",
       "name": "Czerwonka",
       "description": "<p>Czerwonka jest wiecznym problemem w całym Imperium i dość powszechnie uznaje się ją za karę wymierzoną bezbożnikom przez bogów. Ta infekcja sprawia, że nieszczęsny chory musi się często i boleśnie wypróżniać. Czerwonka jest chorobą endemiczną w armiach Imperium - podobno wykańcza więcej żołnierzy niż ciosy wrogów. Typowe lekarstwa obejmują m.in. spożywanie krwistych puddingów, by uzupełnić utracone płyny, „czopowanie” oraz wcieranie tłuszczu w dotknięte chorobą miejsca, by zmniejszyć pieczenie i swędzenie.</p>",
@@ -149,7 +149,7 @@
       "symptoms": "Apatia, Biegunka (poważna), Gorączka, Nawroty (częste), Nudności",
       "permanent": null
     },
-    {
+    "Festering Wound": {
       "id": "kKccDTGzWzSXCBOb",
       "name": "Ropiejąca Rana",
       "description": "<p>Zakażone cięcia i otarcia są dość powszechne, więc naturalnie narosło mnóstwo zabobonów i teorii, jak powinno się je leczyć. Kompresy wykonane z liści, gnoju, skóry ropuch i piór gołębi są tak powszechne jak wcieranie w ranę ziemi ze świątyń Sigmara. Większość lekarzy twierdzi, że to bzdury, skłaniając się do bardziej naukowych remediów, jak np. mieszania żółci czarnego wołu z trzema łyżkami uryny pacjenta i połową łyżki soli, a potem wcierania mieszanki w zaognioną Ropiejącą Ranę. Wrzaski leczonych są przecież najlepszym dowodem, że lekarstwo działa, czyż nie?</p>",
@@ -184,7 +184,7 @@
       "symptoms": "Apatia, Gorączka, Nawroty (częste), Uciążliwa rana, Biegunka, Nudności",
       "permanent": null
     },
-    {
+    "Blood Rot": {
       "id": "M8XyRs9DN12XsFTQ",
       "name": "Zatrucie Krwi",
       "description": "<p>Zatrucie Krwi Krew jest zainfekowana, a serce pompuje chorobę, rozprzestrzeniając ją po organizmie. Przystawianie pijawek jest dość powszechnie stosowanym remedium, choć niektórzy cyrulicy skłaniają się ku precyzyjnemu nacinaniu szyi, by upuścić skażoną krew, jednocześnie nakazując spożywanie dużych ilości zdrowej krwi, by uzupełnić jej utratę. Niezależnie od tego, czy pacjent akceptuje takie leczenie, czy nie, nieleczone Zatrucie Krwi jest śmiertelne, więc prędzej czy później chory spotka się z Gildią Płaczek lub Kultem Morra.</p>",
@@ -214,7 +214,7 @@
       "symptoms": "Apatia, Gorączka, Uwiąd",
       "permanent": null
     },
-    {
+    "Ratte Fever": {
       "id": "QiHMX5OyXBhWCYoF",
       "name": "Szczurza Gorączka",
       "description": "<p>Do zakażenia dochodzi za sprawą zainfekowanych gryzoni. Budząca postrach Szczurza Gorączka objawia się zapalnymi wysypkami i owrzodzeniem, a później temperatura szybko rośnie, dopóki ciałem nie zaczną targać konwulsje. Rzadko kiedy choroba jest śmiertelna, ale bardzo mocno osłabia organizm, a wyleczenie się zajmuje wiele dni, więc większość chorych spróbuje wszystkiego, byle tylko złagodzić objawy. W Altdorfie jednym z powszechniejszych remediów jest samobiczowanie - podobno przynosi ulgę swędzącej skórze. Natomiast w Talabheim prym wiedzie nasmarowanie się kozim serem zmieszanym z importowanymi z Kisleva lodowymi papryczkami. W dużych miastach i miasteczkach Szczurza Gorączka zwana jest także „Mielonką”, co chyba wystarczająco oddaje fakt, że wiele pysznych pasztecików zawiera skażone szczurze mięso, które stosuje się jako substytut droższych gatunków.</p>",
@@ -259,7 +259,7 @@
       "symptoms": "Apatia, Gorączka, Konwulsje, Nawroty (umiarkowane), Wysypka, Uciążliwa Rana",
       "permanent": null
     },
-    {
+    "Galloping Trots": {
       "id": "txeLd7R13qxSvmsr",
       "name": "Smrodliwe Wiatry",
       "description": "<p>Jedynie minutą ciszy można podsumować podejście do kuchennej higieny w Imperium. Popularnym mitem jest więc, że jedzenie przygotowane przez niziołki nie wywołuje Smrodliwych Wiatrów, ale ci, którzy zapisali się na „wyścig do wygódki”, jedząc tanie paszteciki tej rasy ze straganów, których pełno w Altdorfie, zapewne by się z tą teorią nie zgodzili... Oczywiście zakładając, że udałoby im się pozostać poza sławojką na tyle długo, by w ogóle wziąć udział w dyskusji.</p>",
@@ -289,7 +289,7 @@
       "symptoms": "Apatia, Biegunka (umiarkowana), Nudności",
       "permanent": null
     },
-    {
+    "Itching Pox": {
       "id": "UAwTqZ3hqNb7vq9s",
       "name": "Świerzbospa",
       "description": "<p>Epidemie Świerzbospy wybuchają corocznie przede wszystkim w miastach i miasteczkach w całym Imperium. Choroba, która wywołuje powstawanie swędzących pęcherzy na całym ciele, jest stosunkowo łagodna i bardzo rzadko wywołuje jakieś powikłania, więc zazwyczaj najbardziej martwią się rodzice chorego lub próżni wielmoże. W świątyniach Shallyi zazwyczaj można od ręki dostać fiolkę z białą maścią, która zmniejsza swędzenie.</p>",
@@ -314,5 +314,5 @@
       "symptoms": "Kaszel i katar, Wysypka",
       "permanent": "Po jednym zachorowaniu na Świerzbospę organizm uodparnia się na nią całkowicie."
     }
-  ]
+  }
 }

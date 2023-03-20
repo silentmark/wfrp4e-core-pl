@@ -3,8 +3,8 @@
   "mapping": {
     "initialization_folder": "flags.wfrp4e-core.initialization-folder"
   },
-  "entries": [
-    {
+  "entries": {
+    "Career - Human": {
       "initialization_folder": "Tworzenie Bohatera",
       "id": "0vV4bJ7fhZzuPkVh",
       "name": "Losowe Profesje - Człowiek (Reiklandczyk)",
@@ -75,7 +75,7 @@
         "100-100": "@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.iYVpqJ6bz8fokdmf]{Kapłan Bitewny}"
       }
     },
-    {
+    "Stinking Drunk": {
       "initialization_folder": "Podręcznik Główny",
       "id": "1zRhcz5jHS1W1xHt",
       "name": "Śmierdzący ochlapus",
@@ -88,7 +88,7 @@
         "9-10": "<b>„Co ja tu u licha robię?”:</b> Budzisz się następnego dnia z potężnym kacem, nie pamiętając, co się wydarzyło. MG i reszta drużyny opowiedzą ci, jak skompromitowała się twoja postać. Wykonaj Test Mocnej Głowy, którego niepowodzenie będzie oznaczać, że twoja postać nabyła Stan Zatrucie."
       }
     },
-    {
+    "Hair Colour - Human": {
       "initialization_folder": "Tworzenie Bohatera",
       "id": "5DrR1sTIBLa3vUBX",
       "name": "Kolor Włosów - Człowiek",
@@ -105,21 +105,21 @@
         "2-2": "Jasny Blond"
       }
     },
-    {
+    "Mental Corruption": {
       "initialization_folder": "Zepsucie i Mutacje",
       "id": "5HKnpyOk4XDPdZ7V",
       "name": "Zepsucie Psychiczne",
       "description": "A corrupted mind may be less obvious than a sprouting tentacle, but it can be just as devastating to your life. Use the description you roll to build a unique mental mutation that fits your character, taking a little time to create a believable new mindset. This as an opening to portray your character in a new, potentially horrific way, so you can also use your mental mutation as an opportunity to change your Motivation.",
       "results": {}
     },
-    {
+    "Critical Hits - Head": {
       "initialization_folder": "Trafienia Krytyczne",
       "id": "7KReueNRjaI6dVLk",
       "name": "Rany Krytyczne Głowy",
       "description": null,
       "results": {}
     },
-    {
+    "Gunpowder Fumble Table (Moo)": {
       "initialization_folder": "Zasady domowe Moo",
       "id": "7mQ2d4AN6mEOhD1G",
       "name": "Gunpowder Fumble Table (Moo)",
@@ -133,7 +133,7 @@
         "81-90": "<p><strong>Squib Round</strong>: The powder catches, but the bullet or shot jams and welds into the barrel. The weapon is useless until an <strong>Extended Trade (Engineer or Gunsmith)</strong> test requiring 6SLs is made(this test requires time and finesse, and cannot be made in combat). If the weapon is fired again, it explodes. Superficially, this result resembles a simple failure to ignite.</p>"
       }
     },
-    {
+    "Hair Colour - Halfling": {
       "initialization_folder": "Tworzenie Bohatera",
       "id": "926ggfaoK3lFcsHe",
       "name": "Kolor Włosów - Niziołek",
@@ -151,7 +151,7 @@
         "4-4": "Rudawy"
       }
     },
-    {
+    "I Need A Job! - Who": {
       "initialization_folder": "GM Booklet",
       "id": "amwtR5qoZjUHKpg2",
       "name": "Szukam Pracy! - Kto",
@@ -259,7 +259,7 @@
         "100-100": "Ktoś, kogo miałeś za dawno zmarłego..."
       }
     },
-    {
+    "Beyond the Social Norm": {
       "initialization_folder": "Podręcznik Główny",
       "id": "B6H8lLrhLg3fifoh",
       "name": "Na Marginesie Społeczeństwa",
@@ -270,7 +270,7 @@
         "9-10": "<b>Ekstremalne poglądy</b>: Postać wyraża ekstremalne poglądy. Modyfikuj wszystkie Testy, na które ma wpływ Status, o dalsze +/-10 (odpowiednio do sytuacji)."
       }
     },
-    {
+    "Hit Location - Spider": {
       "initialization_folder": "Miejsca Trafień",
       "id": "bF4KEpOxadDG0wS7",
       "name": "Tabela Trafień - Pająk",
@@ -282,7 +282,7 @@
         "80-100": "Korpus"
       }
     },
-    {
+    "Eye Colour - Human": {
       "initialization_folder": "Tworzenie Bohatera",
       "id": "blUUlcr8Jp4mvZAz",
       "name": "Kolor Oczu - Człowiek",
@@ -300,7 +300,7 @@
         "8-11": "Blady szary"
       }
     },
-    {
+    "Hair Colour - Wood Elf": {
       "initialization_folder": "Tworzenie Bohatera",
       "id": "boJ7tb1ePWEbrr1C",
       "name": "Kolor Włosów - Leśny Elf",
@@ -318,7 +318,7 @@
         "18-18": "Sjena"
       }
     },
-    {
+    "Character Trait": {
       "initialization_folder": "GM Booklet",
       "id": "BulvptumUSTWIIvh",
       "name": "Cechy Postaci",
@@ -351,7 +351,7 @@
         "97-100": "Żarliwy"
       }
     },
-    {
+    "Wrath of the Gods Table": {
       "initialization_folder": "Podręcznik Główny",
       "id": "CcKYnmbQyRzGkrFy",
       "name": "Gniew Bogów",
@@ -390,7 +390,7 @@
         "151-151": "<b>Pociągnięcie do odpowiedzialności</b>: Zostajesz wezwany przed oblicze swojego boga na sąd ostateczny. O ile nie masz Punktu Przeznaczenia, nigdy nie wracasz. Jeśli wydasz Punkt Przeznaczenia, pojawiasz się w miejscu wybranym przez MG, a ponadto zostajesz obciążony efektami Wypędzam cię."
       }
     },
-    {
+    "The Swirling Winds": {
       "initialization_folder": "Podręcznik Główny",
       "id": "cd4HUD1gqyDDRDDO",
       "name": "Wiry Wiatrów",
@@ -403,14 +403,14 @@
         "10-10": "+30"
       }
     },
-    {
+    "Critical Hits - Body": {
       "initialization_folder": "Trafienia Krytyczne",
       "id": "CUIX4e2hiHdSoJ64",
       "name": "Rany Krytyczne Korpusu",
       "description": null,
       "results": {}
     },
-    {
+    "You Find Yourself In A Tavern - What Happens Next?": {
       "initialization_folder": "GM Booklet",
       "id": "daw0ilZ4akcQ7isG",
       "name": "Wchodzisz do karczmy, a tam",
@@ -468,7 +468,7 @@
         "99-100": "Dziewiątka podżegaczy stoi pod karczmą i wywrzaskuje, jakim to gospodarz jest zdziercą, każąc płacić za nocleg i windując ceny trunków. Większość klientów ignoruje te hałasy, ale są i tacy, którzy pomrukują, że coś w tym jest. Nagle cegła wpada przez okno, zasypując wszystkich odłamkami szkła."
       }
     },
-    {
+    "Dissolution of Body and Mind - Dwarf": {
       "initialization_folder": "Zepsucie i Mutacje",
       "id": "Dr2lB55Ju6KYw4Oc",
       "name": "Rozkład Ciała i Umysłu - Krasnolud",
@@ -478,7 +478,7 @@
         "6-100": "<b>Umysł</b>: @Table[mutatemental]"
       }
     },
-    {
+    "Character Motivation": {
       "initialization_folder": "GM Booklet",
       "id": "Ey0yDGXFCZjeXbaq",
       "name": "Przykładowe Motywacje",
@@ -511,7 +511,7 @@
         "97-100": "Bogactwo"
       }
     },
-    {
+    "How Do I Know You Again?": {
       "initialization_folder": "GM Booklet",
       "id": "F1pQpcy1DTMlsIiJ",
       "name": "Skąd my się znamy?",
@@ -569,7 +569,7 @@
         "99-100": "Obydwoje byliśmy adresatami tajemniczych listów, które doprowadziły nas do tego samego miejsca o tej samej godzinie... po czym nic się nie stało."
       }
     },
-    {
+    "Species": {
       "initialization_folder": "Tworzenie Bohatera",
       "id": "FM6ASUoNX21MHuWa",
       "name": "Rasy",
@@ -582,14 +582,14 @@
         "100-100": "Leśny Elf"
       }
     },
-    {
+    "Talents - Character Creation": {
       "initialization_folder": "Tworzenie Bohatera",
       "id": "FRkn5r1xM27CblfH",
       "name": "Losowe Talenty",
       "description": null,
       "results": {}
     },
-    {
+    "I Need A Job! - Why": {
       "initialization_folder": "GM Booklet",
       "id": "GuA31ySX6a0rOVt2",
       "name": "Szukam Pracy! - Dlaczego",
@@ -697,7 +697,7 @@
         "100-100": "...aby wreszcie zyskać NALEŻNĄ MU POTĘGĘ, MUAHAHAHAHA!"
       }
     },
-    {
+    "Hair Colour - Dwarf": {
       "initialization_folder": "Tworzenie Bohatera",
       "id": "i4MGrapdsl4adppz",
       "name": "Kolor Włosów - Krasnolud",
@@ -715,7 +715,7 @@
         "2-2": "Biały"
       }
     },
-    {
+    "I Need A Job! - What": {
       "initialization_folder": "GM Booklet",
       "id": "InqkdaiCQ98h7Ddl",
       "name": "Szukam Pracy! - Co",
@@ -823,7 +823,7 @@
         "100-100": "...chce, by Bohaterowie odkryli prawdę o starożytnej Urazie..."
       }
     },
-    {
+    "Minor Miscast Table": {
       "initialization_folder": "Podręcznik Główny",
       "id": "iPVwX0ul6lHVbKSX",
       "name": "Manifestacje - Pomniejsze",
@@ -851,14 +851,14 @@
         "96-100": "<b>Fala Chaosu</b>: Rzuć ponownie, ale tym razem porównaj efekt z @Table[majormis]{Tabelą Większych Manifestacji}."
       }
     },
-    {
+    "Critical Hits - Leg": {
       "initialization_folder": "Trafienia Krytyczne",
       "id": "j2joGAVBNJgS1G1g",
       "name": "Rany Krytyczne Nóg",
       "description": null,
       "results": {}
     },
-    {
+    "Dissolution of Body and Mind - Wood Elf": {
       "initialization_folder": "Zepsucie i Mutacje",
       "id": "jfs4FXVTtWSjA6Or",
       "name": "Rozkład Ciała i Umysłu - Leśny Elf",
@@ -867,14 +867,14 @@
         "1-100": "<b>Umysł</b>: @Table[mutatemental]"
       }
     },
-    {
+    "Critical Hits - Arm": {
       "initialization_folder": "Trafienia Krytyczne",
       "id": "JYX8E8WgNb2em8g3",
       "name": "Rany Krytyczne Rąk",
       "description": null,
       "results": {}
     },
-    {
+    "Dissolution of Body and Mind - Halfling": {
       "initialization_folder": "Zepsucie i Mutacje",
       "id": "JyxIbzfh2pn7DLhh",
       "name": "Rozkład Ciała i Umysłu - Niziołek",
@@ -884,7 +884,7 @@
         "11-100": "<b>Umysł</b>: @Table[mutatemental]"
       }
     },
-    {
+    "Eye Colour - High Elf": {
       "initialization_folder": "Character Creation",
       "id": "kCQgOdJM75fWwLm3",
       "name": "Kolor Oczu - Wysoki Elf",
@@ -901,7 +901,7 @@
         "8-11": "Turkusowy"
       }
     },
-    {
+    "Major Miscast Table (Moo)": {
       "initialization_folder": "Moo's Homebrew",
       "id": "kuRQ1DeNp2Ar87Ns",
       "name": "Major Miscast Table (Moo)",
@@ -929,7 +929,7 @@
         "96-100": "<p><strong>Trick of Fate</strong>: Roll on the @Table[catastrophicmis]{Catastrophic Miscast} table instead.</p>"
       }
     },
-    {
+    "Dooming": {
       "initialization_folder": "GM Booklet",
       "id": "led1vSPKcqMpS6jp",
       "name": "Wróżba Losu",
@@ -1037,7 +1037,7 @@
         "100-100": "Twoja śmierć grzechem naznaczy cnotliwych."
       }
     },
-    {
+    "Character Ambition": {
       "initialization_folder": "GM Booklet",
       "id": "LOdKYRft8fSbYJPP",
       "name": "Character Ambition",
@@ -1070,7 +1070,7 @@
         "97-100": "To uncover a conspiracy"
       }
     },
-    {
+    "Oops! Table": {
       "initialization_folder": "Podręcznik Główny",
       "id": "MWkeER1iuwAJASNo",
       "name": "Pech!",
@@ -1085,14 +1085,14 @@
         "91-100": "Atak jest kompletną porażką, postać trafia w jednego losowego sojusznika w zasięgu broni - użyj rzutu, by określić PS ciosu. Jeśli to niewykonalne, postać w jakiś sposób zadaje sobie cios w głowę, co skutkuje 1 Stanem <em>@Condition[Oszołomienie]</em>."
       }
     },
-    {
+    "Career - Dwarf": {
       "initialization_folder": "Profesje",
       "id": "OT9tBLUxvNWc62i1",
       "name": "Losowe Profesje - Krasnolud",
       "description": null,
       "results": {}
     },
-    {
+    "Eye Colour - Wood Elf": {
       "initialization_folder": "Tworzenie Bohatera",
       "id": "ovsFYzUj4bUbVlLJ",
       "name": "Kolor Oczu - Leśny Elf",
@@ -1108,7 +1108,7 @@
         "20-20": "Fiołkowy"
       }
     },
-    {
+    "Character Quirk": {
       "initialization_folder": "GM Booklet",
       "id": "pzE8UgW7ExP0Tfhm",
       "name": "Character Quirk",
@@ -1141,7 +1141,7 @@
         "97-100": "Well known in their community"
       }
     },
-    {
+    "Hair Colour - High Elf": {
       "initialization_folder": "Tworzenie Bohatera",
       "id": "rLqbkZtr3az6EFiz",
       "name": "Kolor Włosów - Wysoki Elf",
@@ -1159,14 +1159,14 @@
         "8-11": "Żółty"
       }
     },
-    {
+    "Career - Halfling": {
       "initialization_folder": "Profesje",
       "id": "RQ0G7UVPeXR3jp2J",
       "name": "Losowe Profesje - Niziołek",
       "description": null,
       "results": {}
     },
-    {
+    "Dissolution of Body and Mind - High Elf": {
       "initialization_folder": "Zepsucie i Mutacje",
       "id": "RzL4vZhqGBT8vzvM",
       "name": "Rozkład Ciała i Umysłu - Wysoki Elf",
@@ -1175,7 +1175,7 @@
         "1-100": "<b>Umysł</b>: @Table[mutatemental]"
       }
     },
-    {
+    "Catastrophic Miscast Table (Moo)": {
       "initialization_folder": "Moo's Homebrew",
       "id": "SdruU0zkacpwCMJn",
       "name": "Catastrophic Miscast Table (Moo)",
@@ -1195,14 +1195,14 @@
         "96-100": "<b>Called to the Void</b>: You are sucked into the Realm of Chaos and forever lost unless you spend a Fate point, in which case you suffer 1 Corruption and take 1 @Condition[Stunned] Condition as a waking nightmare of your narrowly averted fate assails you."
       }
     },
-    {
+    "Career - Wood Elf": {
       "initialization_folder": "Profesje",
       "id": "sHYQ3gGxjpOJNxId",
       "name": "Losowe Profesje - Leśny Elf",
       "description": null,
       "results": {}
     },
-    {
+    "Dissolution of Body and Mind - Human": {
       "initialization_folder": "Zepsucie i Mutacje",
       "id": "tv5GR764IfuVfGtE",
       "name": "Rozkład Ciała i Umysłu - Człowiek",
@@ -1212,7 +1212,7 @@
         "51-100": "<b>Umysł</b>: @Table[mutatemental]"
       }
     },
-    {
+    "Dooming (Alternate)": {
       "initialization_folder": "Podręcznik Główny",
       "id": "uRl0oCMXjTkv0ptj",
       "name": "Wróżba Losu - 2",
@@ -1320,7 +1320,7 @@
         "100-100": "Nim zdążył twój los wyrzec, wieszcz zmarł, z twarzą w przestrachu zastygłą."
       }
     },
-    {
+    "Eye Colour - Dwarf": {
       "initialization_folder": "Tworzenie Bohatera",
       "id": "usXLpt05tZg7PhVL",
       "name": "Kolor Oczu - Krasnolud",
@@ -1338,7 +1338,7 @@
         "4-4": "Stalowoszary"
       }
     },
-    {
+    "Travel Table": {
       "initialization_folder": "Podręcznik Główny",
       "id": "VWxRayAV77touQMT",
       "name": "Tabela Podróży",
@@ -1356,7 +1356,7 @@
         "10-10": "<b>Zaatakowani!</b>: Bohaterowie zostają zaatakowani w czasie podróży. To może być pechowe spotkanie odpowiadające obszarowi, który przemierzają (na przykład zwierzoludzie w głębokim lesie), albo coś zaplanowanego przez ich przeciwników (zbiry wynajęte, by powstrzymać bohaterów przed osiągnięciem celu podróży). Jeśli gracze nie przejdą <b>Przeciętnego (+20) Testu Percepcji</b>, mogą nawet wpaść w zasadzkę!"
       }
     },
-    {
+    "Drive Failure": {
       "initialization_folder": "Podręcznik Główny",
       "id": "w1hLPRX2e30ZnXKq",
       "name": "Drive Failure",
@@ -1368,7 +1368,7 @@
         "9-10": "<b>Broken Axle</b>: The vehicle goes out of control and Crashes."
       }
     },
-    {
+    "Eye Colour - Halfling": {
       "initialization_folder": "Tworzenie Bohatera",
       "id": "W7CkVHr34dSi7QeH",
       "name": "Kolor Oczu - Niziołek",
@@ -1385,7 +1385,7 @@
         "4-4": "Błękitny"
       }
     },
-    {
+    "Career - High Elf": {
       "initialization_folder": "Tworzenie Bohatera",
       "id": "wDt3rHbbBVUfX6nw",
       "name": "Losowe Profesje - Wysoki Elf",
@@ -1428,7 +1428,7 @@
         "99-100": "@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.1OTZ386bMWJ6wfzX]{Żołnierz}"
       }
     },
-    {
+    "Major Miscast Table": {
       "initialization_folder": "Podręcznik Główny",
       "id": "we8Vo5GC3ZsDI7aA",
       "name": "Tabela Większych Manifestacji",
@@ -1456,7 +1456,7 @@
         "96-100": "<b>Reakcja Eteru</b>: Każdy – wróg czy przyjaciel – w promieniu tylu metrów, ile wynosi Bonus z Siły Woli postaci, otrzymuje [[1d10]] Obrażeń, które ignorują Bonus z Wytrzymałości i Punkty Pancerza. Wszyscy w tym promieniu zostają też Powaleni. Jeśli na tym obszarze nie ma żadnych celów, magia nie ma się gdzie ulotnić, więc wzbiera wewnątrz czaszki, rozsadzając ją od środka. Postać ginie natychmiast."
       }
     },
-    {
+    "Minor Miscast Table (Moo)": {
       "initialization_folder": "Moo's Homebrew",
       "id": "xPenaTMFvD4BVEeK",
       "name": "Minor Miscast Table (Moo)",
@@ -1484,7 +1484,7 @@
         "96-100": "<b>Unlucky!</b>: Roll on the @Table[majormis]{Major Miscast} table instead."
       }
     },
-    {
+    "Physical Mutation": {
       "initialization_folder": "Zepsucie i Mutacje",
       "id": "YQ5XdjikeSiwo8fn",
       "name": "Spaczenie Fizyczne",
@@ -1493,7 +1493,7 @@
         "96-100": "<b>Decyzja MG</b>: MG wybiera mutację albo Cechę Stworzenia potwora. Patrz strona 338"
       }
     },
-    {
+    "Hit Location - Snake": {
       "initialization_folder": "Miejsca Trafień",
       "id": "YWzuhQN0d9orIm2h",
       "name": "Tabela Trafień - Wąż",
@@ -1503,7 +1503,7 @@
         "20-100": "Korpus"
       }
     },
-    {
+    "Events Table": {
       "initialization_folder": "Podręcznik Główny",
       "id": "zPZbN8DOX2V1ZwWl",
       "name": "Wydarzenia",
@@ -1542,7 +1542,7 @@
         "98-100": "<b>Egzotyczni najemnicy</b>: W pobliskiej osadzie pojawił się w poszukiwaniu zatrudnienia jeden z rzadko spotykanych najemników albo nawet cały oddział egzotycznych kondotierów. Może to tileański zwadźca o wielkiej renomie, ktoś z tak zwanych Ptaszników z Catrazzy, bezrobotne ogry pod komendą niziołkowego kapitana czy inna niezwykła banda. Najemnicy z przyjemnością udzielą treningu dowolnych związanych z walką Umiejętności lub Talentów, z kosztami obniżonymi o 20%. Oczywiście wchodzi to w grę wyłącznie wówczas, gdy bohaterowie podejmą Zajęcie Szkolenie lub Szlifowanie talentów. Dodatkowo wszyscy bohaterowie podejmujący Zajęcie Trening walki zyskują premię +20 do wszelkich odpowiednich Testów."
       }
     },
-    {
+    "Hit Location": {
       "initialization_folder": "Hit Location",
       "id": "zRpXGjimt56taWH8",
       "name": "Miejsca Trafień",
@@ -1556,5 +1556,5 @@
         "90-100": "Prawa noga"
       }
     }
-  ]
+  }
 }

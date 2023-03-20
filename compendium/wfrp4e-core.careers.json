@@ -7,8 +7,8 @@
     "careergroup": "data.careergroup.value",
     "trappings": "data.trappings"
   },
-  "entries": [
-    {
+  "entries": {
+    "Brigand": {
       "id": "0e98xv2tfsDRZ9kU",
       "name": "Zbój",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.SrqxyWytyki4WYgC]{Banita}</p>",
@@ -38,7 +38,7 @@
         "Pudełko na hubkę i krzesiwo"
       ]
     },
-    {
+    "Clerk": {
       "id": "0KNI4TzKqL2ZQfVl",
       "name": "Przekupka",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.XHYgf5oEwIeCEVNM]{Mieszczka}</p>",
@@ -66,7 +66,7 @@
         "Mocne Buty"
       ]
     },
-    {
+    "Body Snatcher": {
       "id": "0r2H2xtQ21MqHlRv",
       "name": "Porywacz Zwłok",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.bDoNOzzUiMdKqpps]{Hiena Cmentarna}</p>",
@@ -96,7 +96,7 @@
         "Łom"
       ]
     },
-    {
+    "Apothecary": {
       "id": "0Y29f5H8h6lyfT9f",
       "name": "Aptekarka",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.86gkaanqt19xYCRa]{Aptekarka}</p>",
@@ -130,7 +130,7 @@
         "Licencja Cechu"
       ]
     },
-    {
+    "Herb Gatherer": {
       "id": "1cjF3aoozvxnOMb1",
       "name": "Zbieraczka Ziół",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.fTqkgehpmxk7kVT6]{Zielarka}</p>",
@@ -159,7 +159,7 @@
         "Płaszcz"
       ]
     },
-    {
+    "Master Wizard": {
       "id": "1DIMUn1Cj5rohWJV",
       "name": "Mistrz Magii",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.PKm1L6yjZ4PH0JJG]{Czarodziej}</p>",
@@ -198,7 +198,7 @@
         "Przedmiot Magiczny"
       ]
     },
-    {
+    "Watch Sergeant": {
       "id": "1N1QMGBQJUV072w4",
       "name": "Sierżant Straży",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.N02cjJdNWPdc4PUS]{Strażnik}</p>",
@@ -237,7 +237,7 @@
         "Hełm Płytowy"
       ]
     },
-    {
+    "Landsman": {
       "id": "1ZCpJlq7SU5Cj3te",
       "name": "Szczur Lądowy",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.XyM54Ue5w1WuCaBD]{Żeglarz}</p>",
@@ -266,7 +266,7 @@
         "Szczotka"
       ]
     },
-    {
+    "Priest Captain": {
       "id": "20R2NFpiGkiyhwdE",
       "name": "Kapłan-kapitan",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.iYVpqJ6bz8fokdmf]{Kapłan Bitewny}</p>",
@@ -305,7 +305,7 @@
         "Relikwie"
       ]
     },
-    {
+    "Trader": {
       "id": "2aKiMpKfVnXWNfmy",
       "name": "Handlarz",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.h7GdfctKdjWL0Ejp]{Kupiec}</p>",
@@ -335,7 +335,7 @@
         "Wóz z Mułem"
       ]
     },
-    {
+    "Guildmaster": {
       "id": "2Ee9cU6fSa4Vecn7",
       "name": "Mistrzyni Cechu",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.GWrZq3xoRSsDnQe0]{Rzemieślniczka}</p>",
@@ -375,7 +375,7 @@
         "Dobre Ubranie"
       ]
     },
-    {
+    "Beggar King": {
       "id": "2ye9gbPW4QIR8HYY",
       "name": "Król Żebraków",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.1l2m7D1LHIz2q9qv]{Żebrak}</p>",
@@ -415,7 +415,7 @@
         "Kryjówka"
       ]
     },
-    {
+    "Hitman": {
       "id": "33COmPgYTVuXXIpK",
       "name": "Płatny Morderca",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.cXOl6phkTrPcUmwC]{Oprych}</p>",
@@ -455,7 +455,7 @@
         "Trucizna"
       ]
     },
-    {
+    "Mine Foreman": {
       "id": "3qe5qu3es4bnKwwR",
       "name": "Mistrz Górnictwa",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Nu2diwbUfo786wYt]{Górnik}</p>",
@@ -495,7 +495,7 @@
         "Zestaw do pisania"
       ]
     },
-    {
+    "Village Elder": {
       "id": "3UCjABRxB1GhbThg",
       "name": "Starszy Wioski",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.EYkvtokq0FXlFaPa]{Chłop}</p>",
@@ -534,7 +534,7 @@
         "Szacunek Wioski"
       ]
     },
-    {
+    "Master Pedlar": {
       "id": "3VkgBaW5wgaSXlyS",
       "name": "Doświadczony Domokrążca",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.FdlybSv02jjXG1qW]{Kolporter}</p>",
@@ -572,7 +572,7 @@
         "Towary warte co najmniej 2k10 Złotych Monet"
       ]
     },
-    {
+    "Toll Keeper": {
       "id": "4a69lleVImbw3JhI",
       "name": "Mytnik",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.dN2K3ZBMu4rvGGpW]{Strażnik Dróg}</p>",
@@ -600,7 +600,7 @@
         "Skórzana kurta"
       ]
     },
-    {
+    "Scout": {
       "id": "4bCFwNAaudD9wb40",
       "name": "Zwiadowca",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.HSoeyY2cbQAndBFk]{Zwiadowca}</p>",
@@ -635,7 +635,7 @@
         "Kaftan kolczy"
       ]
     },
-    {
+    "Maestro": {
       "id": "4mlbPdEWU4d7Lh7Y",
       "name": "Maestro",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.u9sso2ox8BNznmy4]{Artystka}</p>",
@@ -676,7 +676,7 @@
         "Duży Warsztat (Artysty)"
       ]
     },
-    {
+    "Student Engineer": {
       "id": "4TgG1CMJ0zoVPbiZ",
       "name": "Student Inżynierii",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.hVKMI3xwuUpO3P6c]{Inżynier}</p>",
@@ -704,7 +704,7 @@
         "Młot i Gwoździe"
       ]
     },
-    {
+    "Master Thief": {
       "id": "4xxp72XMEqj6y25g",
       "name": "Mistrz Złodziejski",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.mBtIPoWNpXwAS5Yl]{Złodziej}</p>",
@@ -741,7 +741,7 @@
         "Kusza Pistoletowa z 10 Bełtami"
       ]
     },
-    {
+    "Agent": {
       "id": "4YnbaP9MXqU4NBpt",
       "name": "Agent",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ssJHG82vEHHRoAUF]{Szpieg}</p>",
@@ -781,7 +781,7 @@
         "Strych z Gołębiami Pocztowymi"
       ]
     },
-    {
+    "Mystic": {
       "id": "5C8dpF6YYiz7clnl",
       "name": "Mistyk",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.CzebTXk5dirMAZ6p]{Mistyk}</p>",
@@ -814,7 +814,7 @@
         "Wybór Amuletów"
       ]
     },
-    {
+    "Swindler": {
       "id": "5hmNqNxXRy3RjcFV",
       "name": "Kanciarz",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Eg5D2UI3U4SAHnuU]{Szarlatan}</p>",
@@ -844,7 +844,7 @@
         "2 Komplety Ubrań"
       ]
     },
-    {
+    "Racketeer": {
       "id": "5WR3ZoMOeEzz5iPc",
       "name": "Rekieter",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Z5QPZbUR3h422ozo]{Rekieter}</p>",
@@ -879,7 +879,7 @@
         "Kapelusz"
       ]
     },
-    {
+    "Menial": {
       "id": "6846o00SGHkRuZB8",
       "name": "Posługaczka",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.iYnopOFkz5L6hljq]{Służąca}</p>",
@@ -906,7 +906,7 @@
         "Szczotka do Podłogi"
       ]
     },
-    {
+    "Bounty Hunter General": {
       "id": "6Abdn6XfJCSI2rWJ",
       "name": "Legendarny Łowca Nagród",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{Łowca Nagród}</p>",
@@ -947,7 +947,7 @@
         "4 pary Kajdan"
       ]
     },
-    {
+    "Priest Sergeant": {
       "id": "6D6FQRqfc6F3L5vZ",
       "name": "Kapłan-sierżant",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.iYVpqJ6bz8fokdmf]{Kapłan Bitewny}</p>",
@@ -984,7 +984,7 @@
         "Lekki Koń Bojowy z Siodłem i Uprzężą"
       ]
     },
-    {
+    "River Elder": {
       "id": "7A4HCcddeMYG3EZ6",
       "name": "Starszy Rzeczny",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.c8JYF7Lvaaezt9RS]{Flisak}</p>",
@@ -1023,7 +1023,7 @@
         "Chata lub Szkuta"
       ]
     },
-    {
+    "Hedge Witch": {
       "id": "7LERztK8LMIMwo4l",
       "name": "Guślarz",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.03Nnub5GHNRCU9kg]{Guślarz}</p>",
@@ -1058,7 +1058,7 @@
         "Narzędzia Pracy (Zielarza)"
       ]
     },
-    {
+    "Broker": {
       "id": "7w3Y5lZXMBa7N0uV",
       "name": "Pośrednik",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.VzMDRJtha7epNzuX]{Paser}</p>",
@@ -1086,7 +1086,7 @@
         "Skradzione Dobra warte 3k10 Szylingów"
       ]
     },
-    {
+    "Physician": {
       "id": "8bbV2yHKeT6QeOKd",
       "name": "Medyczka",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Mn7w0SSGfN7cu7gQ]{Medyczka}</p>",
@@ -1121,7 +1121,7 @@
         "Licencja Cechu"
       ]
     },
-    {
+    "Merchant Prince": {
       "id": "8llxzvd0M3P59ctr",
       "name": "Patrycjusz",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.h7GdfctKdjWL0Ejp]{Kupiec}</p>",
@@ -1164,7 +1164,7 @@
         "Dobre Ubranie"
       ]
     },
-    {
+    "Courier-Captain": {
       "id": "8rVR4gVhsWeLo5Sf",
       "name": "Kapitan Kurierów",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.9XoJinyH6CsOcJ1h]{Posłaniec}</p>",
@@ -1205,7 +1205,7 @@
         "Zestaw do pisania"
       ]
     },
-    {
+    "Sergeant": {
       "id": "8vPHNztfk9x7K2Na",
       "name": "Sierżant",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.1OTZ386bMWJ6wfzX]{Żołnierz}</p>",
@@ -1243,7 +1243,7 @@
         "Oddział Żołnierzy"
       ]
     },
-    {
+    "Road Sergeant": {
       "id": "91unnpsRgrNFLZ18",
       "name": "Sierżant Strażników Dróg",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.dN2K3ZBMu4rvGGpW]{Strażnik Dróg}</p>",
@@ -1283,7 +1283,7 @@
         "Symbol Rangi"
       ]
     },
-    {
+    "Outlaw": {
       "id": "9631KpCQa7jvhmgS",
       "name": "Banita",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.SrqxyWytyki4WYgC]{Banita}</p>",
@@ -1319,7 +1319,7 @@
         "Namiot"
       ]
     },
-    {
+    "Dock Master": {
       "id": "9PTQfMr98E3ei3Fo",
       "name": "Mistrz Dokerów",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.KslqDlYmY4trmf6S]{Doker}</p>",
@@ -1359,7 +1359,7 @@
         "Zestaw do pisania"
       ]
     },
-    {
+    "Guard": {
       "id": "9q1yLMpfhX1bqvth",
       "name": "Ochroniarz",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.HndWncfaHb0nzNUq]{Ochroniarz}</p>",
@@ -1395,7 +1395,7 @@
         "Włócznia"
       ]
     },
-    {
+    "Bailiff": {
       "id": "9UWoLPwYyPV2TRnz",
       "name": "Zarządca",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.UhdhIWaofKgwFKEr]{Zarządca}</p>",
@@ -1429,7 +1429,7 @@
         "3 Poborców Podatków"
       ]
     },
-    {
+    "Court Physician": {
       "id": "9XJ7Qs6pY6IO01u6",
       "name": "Nadworna Medyczka",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Mn7w0SSGfN7cu7gQ]{Medyczka}</p>",
@@ -1469,7 +1469,7 @@
         "Nominacja"
       ]
     },
-    {
+    "Master Artisan": {
       "id": "9xszp5m5KRmj3bxX",
       "name": "Mistrzyni Rzemiosła",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.GWrZq3xoRSsDnQe0]{Rzemieślniczka}</p>",
@@ -1507,7 +1507,7 @@
         "Warsztat"
       ]
     },
-    {
+    "Investigator": {
       "id": "a5B7FYYaSarc95Xc",
       "name": "Śledczy",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.zLWmjUbUdAOfiV3F]{Śledczy}</p>",
@@ -1543,7 +1543,7 @@
         "Lupa"
       ]
     },
-    {
+    "Apprentice Artisan": {
       "id": "AFv0J8Mq9cbmNEVc",
       "name": "Czeladniczka",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.GWrZq3xoRSsDnQe0]{Rzemieślniczka}</p>",
@@ -1572,7 +1572,7 @@
         "k10 Szmat"
       ]
     },
-    {
+    "Prowler": {
       "id": "Ahe89KQIXpeadscI",
       "name": "Bandzior",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.mBtIPoWNpXwAS5Yl]{Złodziej}</p>",
@@ -1601,7 +1601,7 @@
         "Worek"
       ]
     },
-    {
+    "Riverwise": {
       "id": "AJTl72JcueF1YGgg",
       "name": "Znawca Rzeki",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.c8JYF7Lvaaezt9RS]{Flisak}</p>",
@@ -1639,7 +1639,7 @@
         "Lampa Sztormowa z Oliwą"
       ]
     },
-    {
+    "Reeve": {
       "id": "albRTMyj0Fsr2u6A",
       "name": "Włodarz",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.UhdhIWaofKgwFKEr]{Zarządca}</p>",
@@ -1678,7 +1678,7 @@
         "Napierśnik Płytowy"
       ]
     },
-    {
+    "Informer": {
       "id": "aOVRZJopZeR0acJs",
       "name": "Informator",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ssJHG82vEHHRoAUF]{Szpieg}</p>",
@@ -1707,7 +1707,7 @@
         "Płaszcz z Kapturem"
       ]
     },
-    {
+    "Chartered Engineer": {
       "id": "APKQuY39j7RHzJZD",
       "name": "Mistrz Inżynierii",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.hVKMI3xwuUpO3P6c]{Inżynier}</p>",
@@ -1749,7 +1749,7 @@
         "Duży Warsztat (Inżyniera)"
       ]
     },
-    {
+    "Sleuth": {
       "id": "AQmofCPcdFZNXCV6",
       "name": "Szpicel",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.zLWmjUbUdAOfiV3F]{Śledczy}</p>",
@@ -1779,7 +1779,7 @@
         "Pióro i Kałamarz"
       ]
     },
-    {
+    "Priest": {
       "id": "AtWEBwIobFnhbQy7",
       "name": "Kapłan",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.h1l9jvaIxsb92wtM]{Kapłan}</p>",
@@ -1813,7 +1813,7 @@
         "Szata ceremonialna"
       ]
     },
-    {
+    "Rat Hunter": {
       "id": "aUb8sUfqyVyjGYO5",
       "name": "Uczeń Szczurołapa",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.mKvUxzJyQmhgjDE0]{Szczurołap}</p>",
@@ -1842,7 +1842,7 @@
         "Sakwa"
       ]
     },
-    {
+    "Warlock": {
       "id": "B0RRDSUqaCVp6P7h",
       "name": "Arcyczarownik",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.7lNzR0hDPl98NrcX]{Czarownik}</p>",
@@ -1882,7 +1882,7 @@
         "Szata"
       ]
     },
-    {
+    "Procurer": {
       "id": "BLHdxZVBGTrrGdxO",
       "name": "Stręczyciel",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.WmXiUhsOHIJia8OM]{Rajfur}</p>",
@@ -1919,7 +1919,7 @@
         "Sieć Naganiaczy"
       ]
     },
-    {
+    "Scion": {
       "id": "BmttbXNr3ZwydNUo",
       "name": "Dziedzic",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.t41abSTLeMAdLiWS]{Szlachcic}</p>",
@@ -1949,7 +1949,7 @@
         "Osobisty Służący"
       ]
     },
-    {
+    "Burgomeister": {
       "id": "Bn5MHz2G7LJZxtpo",
       "name": "Burmistrz",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.XHYgf5oEwIeCEVNM]{Mieszczka}</p>",
@@ -1991,7 +1991,7 @@
         "Dobre Ubranie"
       ]
     },
-    {
+    "Troubadour": {
       "id": "bNwRfl5P64gXgZON",
       "name": "Trubadur",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.5nIDu8oyFVShLqne]{Kuglarz}</p>",
@@ -2029,7 +2029,7 @@
         "Zestaw do pisania"
       ]
     },
-    {
+    "Black Marketeer": {
       "id": "bO6PkXjLPKCwK4QC",
       "name": "Broker Informacji",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.VzMDRJtha7epNzuX]{Paser}</p>",
@@ -2070,7 +2070,7 @@
         "Sieć Informatorów"
       ]
     },
-    {
+    "Wizard Lord": {
       "id": "bTPBxrayfzeVmGsh",
       "name": "Arcymag",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.PKm1L6yjZ4PH0JJG]{Czarodziej}</p>",
@@ -2111,7 +2111,7 @@
         "Warsztat (Magia)"
       ]
     },
-    {
+    "Doktor": {
       "id": "bVzgXlt8eRGyXLLC",
       "name": "Doktor",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Mn7w0SSGfN7cu7gQ]{Lekarz}</p>",
@@ -2149,7 +2149,7 @@
         "Warsztat (Medyczny)"
       ]
     },
-    {
+    "Greenfish": {
       "id": "c6OwfEq0g8FcpxxC",
       "name": "Rybak",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.c8JYF7Lvaaezt9RS]{Flisak}</p>",
@@ -2178,7 +2178,7 @@
         "Skórzane Nogawice"
       ]
     },
-    {
+    "Watch Recruit": {
       "id": "C8pqV1AJgqS6vUd6",
       "name": "Rekrut Straży",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.N02cjJdNWPdc4PUS]{Strażnik}</p>",
@@ -2207,7 +2207,7 @@
         "Mundur"
       ]
     },
-    {
+    "Spymaster": {
       "id": "cd8BJlDQUF1xoiSm",
       "name": "Mistrz Szpiegów",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ssJHG82vEHHRoAUF]{Szpieg}</p>",
@@ -2247,7 +2247,7 @@
         "Duża Szpiegowska Sieć Agentów, Szpiegów i Informatorów"
       ]
     },
-    {
+    "Foreman": {
       "id": "CJDvhhZbQ0UxxZKc",
       "name": "Brygadzista",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.KslqDlYmY4trmf6S]{Doker}</p>",
@@ -2285,7 +2285,7 @@
         "Gwizdek"
       ]
     },
-    {
+    "Wyrd": {
       "id": "CNoXG2ZZUudm8paf",
       "name": "Wiedźma",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.7lNzR0hDPl98NrcX]{Czarownik}</p>",
@@ -2324,7 +2324,7 @@
         "Plecak"
       ]
     },
-    {
+    "Riverwarden": {
       "id": "CXSKOpjA7a2kqWSq",
       "name": "Strażnik Rzeczny",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ADHp81MC8050ngjm]{Strażnik Rzeczny}</p>",
@@ -2359,7 +2359,7 @@
         "Pistolet z 10 Nabojami"
       ]
     },
-    {
+    "Lawyer": {
       "id": "cxwio1lR9eZdrQiy",
       "name": "Prawniczka",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.uIKbkjQpNUCGIQRv]{Prawniczka}</p>",
@@ -2394,7 +2394,7 @@
         "Szaty Dworskie"
       ]
     },
-    {
+    "Hunter": {
       "id": "CZByQsYSeVyCVbzO",
       "name": "Łowca",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Łowca}</p>",
@@ -2428,7 +2428,7 @@
         "10 strzał"
       ]
     },
-    {
+    "Giant Slayer": {
       "id": "d0uT5dtFmIbkbJ7l",
       "name": "Zabójca Gigantów",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.5leTOZ6Wj35bS1IV]{Zabójca}</p>",
@@ -2463,7 +2463,7 @@
         "Biżuteria"
       ]
     },
-    {
+    "Guide": {
       "id": "D8Bx5CgvvMpIkwSq",
       "name": "Przewodnik",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.HSoeyY2cbQAndBFk]{Zwiadowca}</p>",
@@ -2493,7 +2493,7 @@
         "Lina"
       ]
     },
-    {
+    "Troupe Leader": {
       "id": "dNd0JKvUqjP3kiuy",
       "name": "Przywódca Trupy",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.5nIDu8oyFVShLqne]{Kuglarz}</p>",
@@ -2534,7 +2534,7 @@
         "Trupa Kuglarzy"
       ]
     },
-    {
+    "Duelmaster": {
       "id": "DWAc2CYtbwx7zMwl",
       "name": "Mistrz Pojedynków",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.3r4A1DOiF3laRWvq]{Zwadźca}</p>",
@@ -2574,7 +2574,7 @@
         "2 Drewniane Miecze Treningowe"
       ]
     },
-    {
+    "Envoy": {
       "id": "E3z0o7AJ8cAFYKda",
       "name": "Poseł",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.0t9wtjQIoOofh8nO]{Poseł}</p>",
@@ -2608,7 +2608,7 @@
         "10 Arkuszy Pergaminu"
       ]
     },
-    {
+    "Herb Master": {
       "id": "eBirX8K2qBxdOB45",
       "name": "Mistrzyni Ziołolecznictwa",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.fTqkgehpmxk7kVT6]{Zielarka}</p>",
@@ -2648,7 +2648,7 @@
         "Warsztat (Zielarza)"
       ]
     },
-    {
+    "Merchant": {
       "id": "eFMNueIi3zp6vs6e",
       "name": "Kupiec",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.h7GdfctKdjWL0Ejp]{Kupiec}</p>",
@@ -2683,7 +2683,7 @@
         "20 Złotych Koron"
       ]
     },
-    {
+    "Grave Robber": {
       "id": "eI3ibXzGlozn6GqV",
       "name": "Hiena Cmentarna",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.bDoNOzzUiMdKqpps]{Hiena Cmentarna}</p>",
@@ -2719,7 +2719,7 @@
         "Lampa Sztormowa z Oliwą"
       ]
     },
-    {
+    "Daemon Slayer": {
       "id": "eIPqpYlN3H3CVCe4",
       "name": "Zabójca Demonów",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.5leTOZ6Wj35bS1IV]{Zabójca}</p>",
@@ -2758,7 +2758,7 @@
         "Smoczy Łeb"
       ]
     },
-    {
+    "Knight of the Inner Circle": {
       "id": "Esy17RVOZQw2gShT",
       "name": "Rycerz Wewnętrznego Kręgu",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.L3YNSsFKnqrqcmTn]{Rycerz}</p>",
@@ -2799,7 +2799,7 @@
         "Pełny Hełm z Pióropuszem"
       ]
     },
-    {
+    "Warden": {
       "id": "ET4PZxqQ4RyBBWgN",
       "name": "Namiestnik",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.wbqpqbFoSnvoZ53j]{Namiestnik}</p>",
@@ -2834,7 +2834,7 @@
         "Skórzana kurta"
       ]
     },
-    {
+    "Vagabond": {
       "id": "eyKlEVLcSOvemRzp",
       "name": "Powsinoga",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.FdlybSv02jjXG1qW]{Kolporter}</p>",
@@ -2864,7 +2864,7 @@
         "Namiot"
       ]
     },
-    {
+    "Messenger": {
       "id": "F6Q1mrBHZvKzHDkT",
       "name": "Posłaniec",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.9XoJinyH6CsOcJ1h]{Posłaniec}</p>",
@@ -2899,7 +2899,7 @@
         "Skórzana kurta"
       ]
     },
-    {
+    "Inquisitor": {
       "id": "FA6vYposVbL3caNR",
       "name": "Inkwizytor",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ADYQOtpsk5n1EHen]{Łowca Czarownic}</p>",
@@ -2937,7 +2937,7 @@
         "Ubranie Dobrej Jakości"
       ]
     },
-    {
+    "Hedgewise": {
       "id": "fa7YavtVsSc8QI7Q",
       "name": "Wiedzący",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.03Nnub5GHNRCU9kg]{Guślarz}</p>",
@@ -2977,7 +2977,7 @@
         "Zbiór Zwierzęcych Czaszek"
       ]
     },
-    {
+    "Tomb Robber": {
       "id": "FaAdpduKD4aUWAOg",
       "name": "Rabuś Grobowców",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.bDoNOzzUiMdKqpps]{Hiena Cmentarna}</p>",
@@ -3018,7 +3018,7 @@
         "Lina"
       ]
     },
-    {
+    "Interrogator": {
       "id": "FbtA6PFHSH6iWaZk",
       "name": "Oprawca",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ADYQOtpsk5n1EHen]{Łowca Czarownic}</p>",
@@ -3046,7 +3046,7 @@
         "Narzędzia Tortur"
       ]
     },
-    {
+    "Soldier": {
       "id": "FgVH1pPS9oRq0o2Z",
       "name": "Żołnierz",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.1OTZ386bMWJ6wfzX]{Żołnierz}</p>",
@@ -3081,7 +3081,7 @@
         "Hełm"
       ]
     },
-    {
+    "Sewer Jack": {
       "id": "fGwpty6AE9ZmRs9B",
       "name": "Strażnik Kanałów",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.mKvUxzJyQmhgjDE0]{Szczurołap}</p>",
@@ -3120,7 +3120,7 @@
         "Lampa Davricha"
       ]
     },
-    {
+    "Knight": {
       "id": "FhK6JOd3LSTlHwoa",
       "name": "Rycerz",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.L3YNSsFKnqrqcmTn]{Rycerz}</p>",
@@ -3156,7 +3156,7 @@
         "Kopia"
       ]
     },
-    {
+    "Detective": {
       "id": "fiHq2JGODlbQRdKh",
       "name": "Detektyw",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.zLWmjUbUdAOfiV3F]{Śledczy}</p>",
@@ -3196,7 +3196,7 @@
         "Sieć Informatorów"
       ]
     },
-    {
+    "Witch Hunter": {
       "id": "fixdd2ulR5HUyeoi",
       "name": "Łowca Czarownic",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ADYQOtpsk5n1EHen]{Łowca Czarownic}</p>",
@@ -3234,7 +3234,7 @@
         "Kapelusz (Kornet)"
       ]
     },
-    {
+    "Bawd": {
       "id": "FLdR3uEEdQxkZiaP",
       "name": "Rajfur",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.WmXiUhsOHIJia8OM]{Rajfur}</p>",
@@ -3268,7 +3268,7 @@
         "Dobre Ubranie"
       ]
     },
-    {
+    "Shipsword": {
       "id": "FOGWbyemEGAkK746",
       "name": "Żołnierz Okrętowy",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ADHp81MC8050ngjm]{Strażnik Rzeczny}</p>",
@@ -3307,7 +3307,7 @@
         "Hełm"
       ]
     },
-    {
+    "Squire": {
       "id": "FrPCbQ7fq1Fchthn",
       "name": "Giermek",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.L3YNSsFKnqrqcmTn]{Rycerz}</p>",
@@ -3338,7 +3338,7 @@
         "Narzędzia Pracy (Podkuwanie Koni)"
       ]
     },
-    {
+    "Road Warden": {
       "id": "fyeFolXwsxNfU30b",
       "name": "Strażnik Dróg",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.dN2K3ZBMu4rvGGpW]{Strażnik Dróg}</p>",
@@ -3374,7 +3374,7 @@
         "Lina"
       ]
     },
-    {
+    "Bandit King": {
       "id": "g2vYtD3Mu7ujYTVF",
       "name": "Król Banitów",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.SrqxyWytyki4WYgC]{Banita}</p>",
@@ -3414,7 +3414,7 @@
         "Kryjówka"
       ]
     },
-    {
+    "Route Master": {
       "id": "G6o2q7tPhw4sgdOY",
       "name": "Mistrz Szlaków",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.tvJAKXB7R0EOr4oE]{Woźnica}</p>",
@@ -3454,7 +3454,7 @@
         "Mapy"
       ]
     },
-    {
+    "Coach Master": {
       "id": "g7Sts6Gzrcg4oDDI",
       "name": "Mistrz Woźniców",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.tvJAKXB7R0EOr4oE]{Woźnica}</p>",
@@ -3493,7 +3493,7 @@
         "Pistolet"
       ]
     },
-    {
+    "Counsellor": {
       "id": "G9PT2bovEv02sVJJ",
       "name": "Radca",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.pwth0cd20Vdp0B9G]{Doradca}</p>",
@@ -3531,7 +3531,7 @@
         "Dobre Ubranie"
       ]
     },
-    {
+    "Councilor": {
       "id": "gb3Dy4ZgfB7VfBTM",
       "name": "Gospodarz",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.EYkvtokq0FXlFaPa]{Chłop}</p>",
@@ -3569,7 +3569,7 @@
         "Wóz z Mułem"
       ]
     },
-    {
+    "Riverwoman": {
       "id": "gmQjHw6wYJu4gd7b",
       "name": "Flisak",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.c8JYF7Lvaaezt9RS]{Flisak}</p>",
@@ -3605,7 +3605,7 @@
         "Pułapka na Węgorze"
       ]
     },
-    {
+    "First Knight": {
       "id": "GPhqluMBhCeTnyNJ",
       "name": "Pierwszy Rycerz",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.L3YNSsFKnqrqcmTn]{Rycerz}</p>",
@@ -3643,7 +3643,7 @@
         "Mały Oddział Rycerzy"
       ]
     },
-    {
+    "Postilion": {
       "id": "GPruqXhcAaHQYucf",
       "name": "Foryś",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.tvJAKXB7R0EOr4oE]{Woźnica}</p>",
@@ -3671,7 +3671,7 @@
         "Bicz"
       ]
     },
-    {
+    "Sentry": {
       "id": "gTxHixydLdCoWRmj",
       "name": "Stróż",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.HndWncfaHb0nzNUq]{Ochroniarz}</p>",
@@ -3700,7 +3700,7 @@
         "Puklerz"
       ]
     },
-    {
+    "Town Councilor": {
       "id": "Gwp6K1rKShTQshqB",
       "name": "Rajczyni Miejska",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.XHYgf5oEwIeCEVNM]{Mieszczka}</p>",
@@ -3738,7 +3738,7 @@
         "Kamienica"
       ]
     },
-    {
+    "Governor": {
       "id": "gWvUkc6mXh8LbsR9",
       "name": "Gubernator",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.wbqpqbFoSnvoZ53j]{Namiestnik}</p>",
@@ -3779,7 +3779,7 @@
         "Służący"
       ]
     },
-    {
+    "Noble": {
       "id": "GYIOEWXugK9Dofg7",
       "name": "Szlachcic",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.t41abSTLeMAdLiWS]{Szlachcic}</p>",
@@ -3817,7 +3817,7 @@
         "Strój Dobrej Jakości"
       ]
     },
-    {
+    "Huntsmaster": {
       "id": "H9NZXz02SZXca8xp",
       "name": "Nadworny Łowczy",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Łowca}</p>",
@@ -3857,7 +3857,7 @@
         "Psiarnia z Psami Łowieckimi"
       ]
     },
-    {
+    "Master Fence": {
       "id": "HN1cbMIPZ25m7ABR",
       "name": "Mistrz Paserów",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.VzMDRJtha7epNzuX]{Paser}</p>",
@@ -3894,7 +3894,7 @@
         "Lombard"
       ]
     },
-    {
+    "Wrecker Captain": {
       "id": "ho9cOHfrG2Zbeb7q",
       "name": "Kapitan Łupieżców",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.37EZqecGmYFb0fdW]{Pirat Rzeczny}</p>",
@@ -3935,7 +3935,7 @@
         "Kajdany"
       ]
     },
-    {
+    "Charlatan": {
       "id": "HoIgGN5ORog5dkIl",
       "name": "Szarlatan",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Eg5D2UI3U4SAHnuU]{Szarlatan}</p>",
@@ -3971,7 +3971,7 @@
         "Wybór Kolorowych Proszków i Płynów"
       ]
     },
-    {
+    "Assassin": {
       "id": "HtN6uHPj7sK6EWMZ",
       "name": "Skrytobójca",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.cXOl6phkTrPcUmwC]{Oprych}</p>",
@@ -4011,7 +4011,7 @@
         "Zestaw do charakteryzacji"
       ]
     },
-    {
+    "Noble Lord": {
       "id": "huYKd0sYPnF4ReB0",
       "name": "Lord",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.t41abSTLeMAdLiWS]{Szlachcic}</p>",
@@ -4054,7 +4054,7 @@
         "Prowincja"
       ]
     },
-    {
+    "Master Miner": {
       "id": "hUZ9lx9v2AGrfHWU",
       "name": "Sztygar",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Nu2diwbUfo786wYt]{Górnik}</p>",
@@ -4093,7 +4093,7 @@
         "Narzędzia Pracy (Inżyniera)"
       ]
     },
-    {
+    "Hustler": {
       "id": "HVa2264i6PF7C8hz",
       "name": "Naganiacz",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.WmXiUhsOHIJia8OM]{Rajfur}</p>",
@@ -4120,7 +4120,7 @@
         "Flaszka Mocnego Alkoholu"
       ]
     },
-    {
+    "Professor": {
       "id": "IeHydxYWUYrmEdPy",
       "name": "Profesor",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.CmiCNv8YlslFqRqy]{Uczony}</p>",
@@ -4159,7 +4159,7 @@
         "Gabinet"
       ]
     },
-    {
+    "Engineer": {
       "id": "ImUesrX52TXQyzvM",
       "name": "Inżynier",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.hVKMI3xwuUpO3P6c]{Inżynier}</p>",
@@ -4193,7 +4193,7 @@
         "Licencja Cechu"
       ]
     },
-    {
+    "Master Pilot": {
       "id": "ISxI2dNkiRQn0P4n",
       "name": "Legendarny Pilot",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.TkF2ld3b72RlH2AR]{Pilot Rzeczny}</p>",
@@ -4233,7 +4233,7 @@
         "Chłopiec Pokładowy"
       ]
     },
-    {
+    "Demagogue": {
       "id": "iW9bvaUXQ4QsZ3Re",
       "name": "Demagog",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.X6OBFMR8ywipAPOo]{Agitator}</p>",
@@ -4275,7 +4275,7 @@
         "Imponujący Kapelusz"
       ]
     },
-    {
+    "Bounty Hunter": {
       "id": "J02PRoX8q5e0cDv6",
       "name": "Łowca Nagród",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{Łowca Nagród}</p>",
@@ -4312,7 +4312,7 @@
         "Sieć"
       ]
     },
-    {
+    "Flagellant": {
       "id": "j3PetZr6vZXRutml",
       "name": "Biczownik",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.0kij2AX9aaUnCxPv]{Biczownik}</p>",
@@ -4347,7 +4347,7 @@
         "Symbol religijny"
       ]
     },
-    {
+    "Wizard": {
       "id": "JeWuOwm0nM4V1brh",
       "name": "Czarodziej",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.PKm1L6yjZ4PH0JJG]{Czarodziej}</p>",
@@ -4380,7 +4380,7 @@
         "Licencja na Uprawianie Magii"
       ]
     },
-    {
+    "Master Investigator": {
       "id": "jGYtrDe0sNACF2pB",
       "name": "Starszy Śledczy",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.zLWmjUbUdAOfiV3F]{Śledczy}</p>",
@@ -4418,7 +4418,7 @@
         "Biuro"
       ]
     },
-    {
+    "Fortune Teller": {
       "id": "jyfMHnPojhZVwF07",
       "name": "Wróż",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.CzebTXk5dirMAZ6p]{Mistyk}</p>",
@@ -4446,7 +4446,7 @@
         "Tania Biżuteria"
       ]
     },
-    {
+    "Thief": {
       "id": "KEEmMZK5mpcoRU69",
       "name": "Złodziej",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.mBtIPoWNpXwAS5Yl]{Złodziej}</p>",
@@ -4480,7 +4480,7 @@
         "Lina"
       ]
     },
-    {
+    "Tax Collector": {
       "id": "kOmgIJIYcylhEUWK",
       "name": "Poborca Podatków",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.UhdhIWaofKgwFKEr]{Zarządca}</p>",
@@ -4508,7 +4508,7 @@
         "Mała Zamykana Szkatułka"
       ]
     },
-    {
+    "Courier": {
       "id": "KsiV56hwdm5dZ1RO",
       "name": "Kurier",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.9XoJinyH6CsOcJ1h]{Posłaniec}</p>",
@@ -4547,7 +4547,7 @@
         "Plecak"
       ]
     },
-    {
+    "Rabble Rouser": {
       "id": "KuG92SPVmXnbtdF5",
       "name": "Podżegacz",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.X6OBFMR8ywipAPOo]{Agitator}</p>",
@@ -4585,7 +4585,7 @@
         "Pomocny Pamflecista"
       ]
     },
-    {
+    "Pit Champion": {
       "id": "KVAOh3zmvzqAbhBr",
       "name": "Mistrz Areny",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.EELJsJuoDVxiRu9e]{Gladiator}</p>",
@@ -4623,7 +4623,7 @@
         "Napierśnik Płytowy"
       ]
     },
-    {
+    "Sage": {
       "id": "L4FGhEguFJVNWk6O",
       "name": "Widzący",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.CzebTXk5dirMAZ6p]{Mistyk}</p>",
@@ -4660,7 +4660,7 @@
         "Narzędzia Pracy (Pisarza)"
       ]
     },
-    {
+    "High Priest": {
       "id": "lfRarot8alDa1WjG",
       "name": "Arcykapłan",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.h1l9jvaIxsb92wtM]{Kapłan}</p>",
@@ -4700,7 +4700,7 @@
         "Świątynia"
       ]
     },
-    {
+    "Nun": {
       "id": "Lkk2NQC1dkUb6yOS",
       "name": "Mniszka",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.f5m7s9K2y1zQNmej]{Mniszka}</p>",
@@ -4735,7 +4735,7 @@
         "Relikwia"
       ]
     },
-    {
+    "Watchman": {
       "id": "LobXt1Wa3x3EogpB",
       "name": "Strażnik",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.N02cjJdNWPdc4PUS]{Strażnik}</p>",
@@ -4770,7 +4770,7 @@
         "Latarnia na Drągu"
       ]
     },
-    {
+    "Herald": {
       "id": "loPti7wWf1qN01zO",
       "name": "Herold",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.0t9wtjQIoOofh8nO]{Poseł}</p>",
@@ -4799,7 +4799,7 @@
         "Tuba na Zwoje"
       ]
     },
-    {
+    "Troll Slayer": {
       "id": "ltGl3eXxujQ23al3",
       "name": "Zabójca Trolli",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.5leTOZ6Wj35bS1IV]{Zabójca}</p>",
@@ -4829,7 +4829,7 @@
         "Wstyd i Hańba"
       ]
     },
-    {
+    "Trapper": {
       "id": "LYBKDZ0AhutYewfD",
       "name": "Traper",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Łowca}</p>",
@@ -4859,7 +4859,7 @@
         "Wybór Sideł na Zwierzęta"
       ]
     },
-    {
+    "Seneschal": {
       "id": "m2viFvv0MaXuxRit",
       "name": "Seneszal",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.wbqpqbFoSnvoZ53j]{Namiestnik}</p>",
@@ -4898,7 +4898,7 @@
         "Ceremonialne Berło"
       ]
     },
-    {
+    "Master Merchant": {
       "id": "mE6PJ1yIScBu6Tye",
       "name": "Mistrz Kupiectwa",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.h7GdfctKdjWL0Ejp]{Kupiec}</p>",
@@ -4937,7 +4937,7 @@
         "100 Złotych Koron"
       ]
     },
-    {
+    "Boat-hand": {
       "id": "MNaGRYlkySIdA6Nj",
       "name": "Chłopiec Pokładowy",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Rk1V9EvtZ0p5Qhwr]{Przewoźnik}</p>",
@@ -4966,7 +4966,7 @@
         "Drąg"
       ]
     },
-    {
+    "Tracker": {
       "id": "mokSUD62vhpKue2Z",
       "name": "Tropiciel",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Łowca}</p>",
@@ -5005,7 +5005,7 @@
         "Ten"
       ]
     },
-    {
+    "Watch Captain": {
       "id": "MR0d08qmDDbqujmS",
       "name": "Kapitan Straży",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.N02cjJdNWPdc4PUS]{Strażnik}</p>",
@@ -5047,7 +5047,7 @@
         "Dobry Kapelusz"
       ]
     },
-    {
+    "Hexer": {
       "id": "MsrHDvVgAb8tUJec",
       "name": "Szptun",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.7lNzR0hDPl98NrcX]{Czarownik}</p>",
@@ -5077,7 +5077,7 @@
         "Świece"
       ]
     },
-    {
+    "Hedge Master": {
       "id": "MvMAvys9IhMIgNqX",
       "name": "Starszy Guślarzy",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.03Nnub5GHNRCU9kg]{Guślarz}</p>",
@@ -5115,7 +5115,7 @@
         "Odosobniona Chata"
       ]
     },
-    {
+    "Light Cavalry Officer": {
       "id": "mVx5unQ28vIpavOo",
       "name": "Oficer Kawalerii",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ArFOfnzJkToXBJBF]{Kawalerzysta}</p>",
@@ -5155,7 +5155,7 @@
         "Dobre Ubranie"
       ]
     },
-    {
+    "Pathfinder": {
       "id": "nCijLyJxZ8UfeNfV",
       "name": "Przepatrywacz",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.HSoeyY2cbQAndBFk]{Zwiadowca}</p>",
@@ -5195,7 +5195,7 @@
         "Namiot"
       ]
     },
-    {
+    "Witch": {
       "id": "NcLVAmFCMddUGUl3",
       "name": "Czarownik",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.7lNzR0hDPl98NrcX]{Czarownik}</p>",
@@ -5231,7 +5231,7 @@
         "Wybór Ziół"
       ]
     },
-    {
+    "Duellist": {
       "id": "nh8fc9wESGUgOnIh",
       "name": "Zwadźca",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.3r4A1DOiF3laRWvq]{Zwadźca}</p>",
@@ -5265,7 +5265,7 @@
         "Pistolet z Prochem i Amunicją"
       ]
     },
-    {
+    "Master Engineer": {
       "id": "NIom9HWXYywyGMLR",
       "name": "Renomowany Inżynier",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.hVKMI3xwuUpO3P6c]{Inżynier}</p>",
@@ -5302,7 +5302,7 @@
         "Warsztat"
       ]
     },
-    {
+    "Dragon Slayer": {
       "id": "nWFtlLdrGOhIJsMd",
       "name": "Zabójca Smoków",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.5leTOZ6Wj35bS1IV]{Zabójca}</p>",
@@ -5340,7 +5340,7 @@
         "Topory do Rzucania"
       ]
     },
-    {
+    "Gang Boss": {
       "id": "O0FIdOQphDl9hozq",
       "name": "Głowa Gangu",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Z5QPZbUR3h422ozo]{Rekieter}</p>",
@@ -5379,7 +5379,7 @@
         "Kusza Pistoletowa z 10 Bełtami"
       ]
     },
-    {
+    "Master Apothecary": {
       "id": "oA7LO3muxy9LNEJD",
       "name": "Farmaceutka",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.86gkaanqt19xYCRa]{Aptekarka}</p>",
@@ -5418,7 +5418,7 @@
         "Warsztat"
       ]
     },
-    {
+    "Stevedore": {
       "id": "oce4kxrsImFS7zlW",
       "name": "Doker",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.KslqDlYmY4trmf6S]{Doker}</p>",
@@ -5454,7 +5454,7 @@
         "Fajka i tytoń"
       ]
     },
-    {
+    "Pamphleteer": {
       "id": "OecIbh44q1oXuOAT",
       "name": "Pamflecista",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.X6OBFMR8ywipAPOo]{Agitator}</p>",
@@ -5483,7 +5483,7 @@
         "Zestaw do pisania"
       ]
     },
-    {
+    "Novitiate (Warrior Priest)": {
       "id": "OERQpwcRziRTeQRb",
       "name": "Nowicjusz Kapłanów Bitewnych",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.iYVpqJ6bz8fokdmf]{Kapłan Bitewny}</p>",
@@ -5514,7 +5514,7 @@
         "Symbol religijny"
       ]
     },
-    {
+    "Ship's Master": {
       "id": "Ot8ZcvD78wPnJzkE",
       "name": "Kapitan Statku",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.XyM54Ue5w1WuCaBD]{Żeglarz}</p>",
@@ -5556,7 +5556,7 @@
         "Statek Żeglowny z Załogą"
       ]
     },
-    {
+    "Miner": {
       "id": "oVOBKzVocBrnrpZX",
       "name": "Górnik",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Nu2diwbUfo786wYt]{Górnik}</p>",
@@ -5592,7 +5592,7 @@
         "Lampa Davricha"
       ]
     },
-    {
+    "Dockhand": {
       "id": "p2PKXr5CDwln9AWS",
       "name": "Pomocnik Dokera",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.KslqDlYmY4trmf6S]{Doker}</p>",
@@ -5620,7 +5620,7 @@
         "Skórzane Rękawice"
       ]
     },
-    {
+    "Pugilist": {
       "id": "PGhUdEZmFUe7vTWK",
       "name": "Pięściarz",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.EELJsJuoDVxiRu9e]{Gladiator}</p>",
@@ -5649,7 +5649,7 @@
         "Bandaże"
       ]
     },
-    {
+    "Ambassador": {
       "id": "pI8vGV2VqT3BvnE8",
       "name": "Ambasador",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.0t9wtjQIoOofh8nO]{Poseł}</p>",
@@ -5691,7 +5691,7 @@
         "Herold"
       ]
     },
-    {
+    "Student": {
       "id": "PiHjiktsOzTTn6U7",
       "name": "Student",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.CmiCNv8YlslFqRqy]{Uczony}</p>",
@@ -5721,7 +5721,7 @@
         "Zestaw do pisania"
       ]
     },
-    {
+    "Pilot": {
       "id": "PIPU1glIR4jx1Z2E",
       "name": "Starszy Pilot",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.TkF2ld3b72RlH2AR]{Pilot Rzeczny}</p>",
@@ -5759,7 +5759,7 @@
         "Lampa Sztormowa z Oliwą"
       ]
     },
-    {
+    "Agitator": {
       "id": "PmyKqVD6NOb2RzYh",
       "name": "Agitator",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.X6OBFMR8ywipAPOo]{Agitator}</p>",
@@ -5792,7 +5792,7 @@
         "Skórzana kurta"
       ]
     },
-    {
+    "Entertainer": {
       "id": "pru2uoIq7hM13pYm",
       "name": "Kuglarz",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.5nIDu8oyFVShLqne]{Kuglarz}</p>",
@@ -5828,7 +5828,7 @@
         "Wybór Scenariuszy (których jeszcze nie możesz przeczytać)"
       ]
     },
-    {
+    "Honour Guard": {
       "id": "pUf4a817P7iydsbN",
       "name": "Gwardzista",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.HndWncfaHb0nzNUq]{Ochroniarz}</p>",
@@ -5867,7 +5867,7 @@
         "Mundur"
       ]
     },
-    {
+    "Smuggler": {
       "id": "pVOuGshzCvWjNv2q",
       "name": "Przemytnik",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.FqhOxcvai4ROvhXB]{Przemytnik}</p>",
@@ -5903,7 +5903,7 @@
         "Skórzana kurta"
       ]
     },
-    {
+    "Ringleader": {
       "id": "Q1sXSEtjvMVxd5xi",
       "name": "Herszt Rajfurów",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.WmXiUhsOHIJia8OM]{Rajfur}</p>",
@@ -5943,7 +5943,7 @@
         "Sieć Rajfurów"
       ]
     },
-    {
+    "Pit Legend": {
       "id": "QdEWdjfjIdrQAKUO",
       "name": "Legenda Areny",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.EELJsJuoDVxiRu9e]{Gladiator}</p>",
@@ -5982,7 +5982,7 @@
         "Hełm Dobrej Jakości"
       ]
     },
-    {
+    "Prioress General": {
       "id": "qG1ICjU4hcAhrpmW",
       "name": "Matka Przełożona",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.f5m7s9K2y1zQNmej]{Mniszka}</p>",
@@ -6021,7 +6021,7 @@
         "Zakon Religijny"
       ]
     },
-    {
+    "Barrister": {
       "id": "qGgpt1BH2y3Q3J0A",
       "name": "Obrońca Prawny",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.uIKbkjQpNUCGIQRv]{Prawniczka}</p>",
@@ -6059,7 +6059,7 @@
         "Kantor"
       ]
     },
-    {
+    "River Pirate": {
       "id": "qLoFG3o3tIgiYJOv",
       "name": "Łupieżca",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.37EZqecGmYFb0fdW]{Pirat Rzeczny}</p>",
@@ -6098,7 +6098,7 @@
         "Łódź Rzeczna"
       ]
     },
-    {
+    "Beggar": {
       "id": "QM906gNihyYSbJQ8",
       "name": "Żebrak",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.1l2m7D1LHIz2q9qv]{Żebrak}</p>",
@@ -6132,7 +6132,7 @@
         "Kule"
       ]
     },
-    {
+    "Braggart": {
       "id": "qMZiB9eBUEr7omX0",
       "name": "Tani Drań",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.cXOl6phkTrPcUmwC]{Oprych}</p>",
@@ -6161,7 +6161,7 @@
         "Kastet"
       ]
     },
-    {
+    "Hedge Apprentice": {
       "id": "QreTSlhgK9IfwTJa",
       "name": "Uczeń Guślarza",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.03Nnub5GHNRCU9kg]{Guślarz}</p>",
@@ -6190,7 +6190,7 @@
         "Plecak"
       ]
     },
-    {
+    "Master Smuggler": {
       "id": "QUjbPexRsKhqVDgq",
       "name": "Doświadczony Przemytnik",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.FqhOxcvai4ROvhXB]{Przemytnik}</p>",
@@ -6228,7 +6228,7 @@
         "Szmugler Rzeczny"
       ]
     },
-    {
+    "Attendant": {
       "id": "QvPzxossG9zDSB2o",
       "name": "Pokojowa",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.iYnopOFkz5L6hljq]{Służąca}</p>",
@@ -6268,7 +6268,7 @@
         "Pudełko na hubkę i krzesiwo"
       ]
     },
-    {
+    "Physician's Apprentice": {
       "id": "qwNXUbgbXcegmh8l",
       "name": "Studentka Medycyny",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Mn7w0SSGfN7cu7gQ]{Medyczka}</p>",
@@ -6296,7 +6296,7 @@
         "Bandaże"
       ]
     },
-    {
+    "Outlaw Chief": {
       "id": "qXOceBlJefsWFlUI",
       "name": "Herszt Banitów",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.SrqxyWytyki4WYgC]{Banita}</p>",
@@ -6336,7 +6336,7 @@
         "Hełm"
       ]
     },
-    {
+    "Spy": {
       "id": "QXZoHPoHFmDuTHpy",
       "name": "Szpieg",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ssJHG82vEHHRoAUF]{Szpieg}</p>",
@@ -6373,7 +6373,7 @@
         "Teleskop"
       ]
     },
-    {
+    "Guard Officer": {
       "id": "rAfHb0jmWhNfXaBl",
       "name": "Oficer Gwardii",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.HndWncfaHb0nzNUq]{Ochroniarz}</p>",
@@ -6412,7 +6412,7 @@
         "Napierśnik Płytowy"
       ]
     },
-    {
+    "Pit Fighter": {
       "id": "rCoMyLXDnggBFqUB",
       "name": "Gladiator",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.EELJsJuoDVxiRu9e]{Gladiator}</p>",
@@ -6448,7 +6448,7 @@
         "Puklerz albo Tarcza"
       ]
     },
-    {
+    "Con Artist": {
       "id": "RdnDGTwpYFhCID6N",
       "name": "Oszust",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Eg5D2UI3U4SAHnuU]{Szarlatan}</p>",
@@ -6487,7 +6487,7 @@
         "Zestaw do Charakteryzacji"
       ]
     },
-    {
+    "Explorer": {
       "id": "RGrmA9jAFzrR5tH5",
       "name": "Odkrywca",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.HSoeyY2cbQAndBFk]{Zwiadowca}</p>",
@@ -6527,7 +6527,7 @@
         "Wybór Map"
       ]
     },
-    {
+    "Officer": {
       "id": "RjhqM27l48WfRepK",
       "name": "Oficer",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.1OTZ386bMWJ6wfzX]{Żołnierz}</p>",
@@ -6572,7 +6572,7 @@
         "Rozkazy"
       ]
     },
-    {
+    "Cavalryman": {
       "id": "RK264JugQroGklvh",
       "name": "Kawalerzysta",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ArFOfnzJkToXBJBF]{Kawalerzysta}</p>",
@@ -6609,7 +6609,7 @@
         "Hełm Płytowy"
       ]
     },
-    {
+    "River Recruit": {
       "id": "RqHOwFXhYtTWKiNP",
       "name": "Rekrut Rzeczny",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ADHp81MC8050ngjm]{Strażnik Rzeczny}</p>",
@@ -6638,7 +6638,7 @@
         "Mundur"
       ]
     },
-    {
+    "Barge Master": {
       "id": "RrZQrPRkSUvqkn8R",
       "name": "Kapitan Barki",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Rk1V9EvtZ0p5Qhwr]{Przewoźnik}</p>",
@@ -6678,7 +6678,7 @@
         "Kapelusz"
       ]
     },
-    {
+    "Boatman": {
       "id": "rxWdmv2tUL0hoAc3",
       "name": "Przewoźnik",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Rk1V9EvtZ0p5Qhwr]{Przewoźnik}</p>",
@@ -6712,7 +6712,7 @@
         "Lina"
       ]
     },
-    {
+    "Rat Catcher": {
       "id": "rydO4uzu7Ehatm5t",
       "name": "Szczurołap",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.mKvUxzJyQmhgjDE0]{Szczurołap}</p>",
@@ -6746,7 +6746,7 @@
         "Sidła na Zwierzęta"
       ]
     },
-    {
+    "Artist": {
       "id": "S0jyd05NzckWVstu",
       "name": "Artystka",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.u9sso2ox8BNznmy4]{Artystka}</p>",
@@ -6779,7 +6779,7 @@
         "Torba na Ramię Zawierająca Narzędzia Pracy (Artysty)"
       ]
     },
-    {
+    "Pauper": {
       "id": "s6I8dderSh1Iu3fe",
       "name": "Biedak",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.1l2m7D1LHIz2q9qv]{Żebrak}</p>",
@@ -6807,7 +6807,7 @@
         "Podłej Jakości Koc"
       ]
     },
-    {
+    "Servant": {
       "id": "S8MLQJK4n7pTGKHn",
       "name": "Służąca",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.iYnopOFkz5L6hljq]{Służąca}</p>",
@@ -6840,7 +6840,7 @@
         "Liberia"
       ]
     },
-    {
+    "Cat Burglar": {
       "id": "s9BcRjM1u2nE0JRD",
       "name": "Włamywacz",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.mBtIPoWNpXwAS5Yl]{Złodziej}</p>",
@@ -6881,7 +6881,7 @@
         "Ciemne Ubranie"
       ]
     },
-    {
+    "Apothecary's Apprentice": {
       "id": "Sb0vJ3jB6n4wJwwy",
       "name": "Uczennica Aptekarki",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.86gkaanqt19xYCRa]{Aptekarka}</p>",
@@ -6911,7 +6911,7 @@
         "Mikstura lecznicza"
       ]
     },
-    {
+    "Chancellor": {
       "id": "SM95bBsq3ZUFo3YB",
       "name": "Kanclerz",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.pwth0cd20Vdp0B9G]{Doradca}</p>",
@@ -6952,7 +6952,7 @@
         "Dobry Strój Dworski"
       ]
     },
-    {
+    "Crime Lord": {
       "id": "SxQH3QslvNQaDZQK",
       "name": "Król Półświatka",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Z5QPZbUR3h422ozo]{Rekieter}</p>",
@@ -6993,7 +6993,7 @@
         "Dobre Ubranie z Kapeluszem"
       ]
     },
-    {
+    "Wrecker": {
       "id": "SZLtCpySoeyZ6Sgw",
       "name": "Pirat Rzeczny",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.37EZqecGmYFb0fdW]{Pirat Rzeczny}</p>",
@@ -7028,7 +7028,7 @@
         "Lampa Sztormowa z Oliwą"
       ]
     },
-    {
+    "Thief-taker": {
       "id": "t1TD7YCRFbjiicvi",
       "name": "Pogromca Złodziei",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{Łowca Nagród}</p>",
@@ -7057,7 +7057,7 @@
         "Lina"
       ]
     },
-    {
+    "Runner": {
       "id": "t87v2oOpnztzrBPW",
       "name": "Goniec",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.9XoJinyH6CsOcJ1h]{Posłaniec}</p>",
@@ -7084,7 +7084,7 @@
         "Tuba na Zwoje"
       ]
     },
-    {
+    "Master Bounty Hunter": {
       "id": "taJXX3aaKZfoNCBs",
       "name": "Doświadczony Łowca Nagród",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{Łowca Nagród}</p>",
@@ -7122,7 +7122,7 @@
         "Kaftan kolczy"
       ]
     },
-    {
+    "Abbess": {
       "id": "TDErU66ZoIirO2dF",
       "name": "Przeorysza",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.f5m7s9K2y1zQNmej]{Mniszka}</p>",
@@ -7160,7 +7160,7 @@
         "Biblioteka (Teologia)"
       ]
     },
-    {
+    "Prospector": {
       "id": "tJEgkiklMFep6FMN",
       "name": "Poszukiwacz",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Nu2diwbUfo786wYt]{Górnik}</p>",
@@ -7190,7 +7190,7 @@
         "Szpadel"
       ]
     },
-    {
+    "Advisor": {
       "id": "TolERlCR35zIf9G4",
       "name": "Doradca",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.pwth0cd20Vdp0B9G]{Doradca}</p>",
@@ -7223,7 +7223,7 @@
         "Liberia"
       ]
     },
-    {
+    "Villager": {
       "id": "TvTXvNwAR0hYz0FM",
       "name": "Chłop",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.EYkvtokq0FXlFaPa]{Chłop}</p>",
@@ -7258,7 +7258,7 @@
         "Narzędzia Pracy (Odpowiednie dla Rzemiosła)"
       ]
     },
-    {
+    "Fellow": {
       "id": "txoNWW53klRbo49P",
       "name": "Wykładowca",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.CmiCNv8YlslFqRqy]{Uczony}</p>",
@@ -7296,7 +7296,7 @@
         "Szata"
       ]
     },
-    {
+    "Initiate": {
       "id": "u2DMz1B0DyUHBi6Z",
       "name": "Kleryk",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.h1l9jvaIxsb92wtM]{Kapłan}</p>",
@@ -7324,7 +7324,7 @@
         "Symbol religijny"
       ]
     },
-    {
+    "Treasure Hunter": {
       "id": "ufAAH4fyE4qfkH2c",
       "name": "Łowca Skarbów",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.bDoNOzzUiMdKqpps]{Hiena Cmentarna}</p>",
@@ -7367,7 +7367,7 @@
         "Namiot"
       ]
     },
-    {
+    "Herbwise": {
       "id": "un8r6R9QLrACK2pv",
       "name": "Arcyzielarka",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.fTqkgehpmxk7kVT6]{Zielarka}</p>",
@@ -7406,7 +7406,7 @@
         "Wóz z Kucem"
       ]
     },
-    {
+    "Fence": {
       "id": "uNG01MDCaG4zcs6U",
       "name": "Paser",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.VzMDRJtha7epNzuX]{Paser}</p>",
@@ -7441,7 +7441,7 @@
         "Zestaw do pisania"
       ]
     },
-    {
+    "Fencer": {
       "id": "UPATU6CmkbK1mNBe",
       "name": "Szermierz",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.3r4A1DOiF3laRWvq]{Zwadźca}</p>",
@@ -7469,7 +7469,7 @@
         "Torba na Ramię Zawierająca Ubranie i 1k10 Bandaży"
       ]
     },
-    {
+    "Herbalist": {
       "id": "UPF7jOq9bqc6ABgb",
       "name": "Zielarka",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.fTqkgehpmxk7kVT6]{Zielarka}</p>",
@@ -7504,7 +7504,7 @@
         "Narzędzia Pracy (Zielarza)"
       ]
     },
-    {
+    "Lector": {
       "id": "UptqmlN6znCIOxNW",
       "name": "Lektor",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.h1l9jvaIxsb92wtM]{Kapłan}</p>",
@@ -7544,7 +7544,7 @@
         "Podwładni Arcykapłani"
       ]
     },
-    {
+    "Zealot": {
       "id": "UQMYUKgXAi2QFhFn",
       "name": "Groliwiec",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.0kij2AX9aaUnCxPv]{Biczownik}</p>",
@@ -7572,7 +7572,7 @@
         "Postrzępione Odzienie"
       ]
     },
-    {
+    "Magistrate": {
       "id": "USvstPFloo15DIJ1",
       "name": "Komornik",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.UhdhIWaofKgwFKEr]{Zarządca}</p>",
@@ -7613,7 +7613,7 @@
         "Pieczęć Urzędowa"
       ]
     },
-    {
+    "River Runner": {
       "id": "v6OhQFxpriyKJyVO",
       "name": "Szmuglerka Rzeczny",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.FqhOxcvai4ROvhXB]{Przemytnik}</p>",
@@ -7643,7 +7643,7 @@
         "Pudełko na hubkę i krzesiwo"
       ]
     },
-    {
+    "Judge": {
       "id": "vcHUiputmUcPem6f",
       "name": "Sędzia",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.uIKbkjQpNUCGIQRv]{Prawniczka}</p>",
@@ -7683,7 +7683,7 @@
         "Pretensjonalna Peruka"
       ]
     },
-    {
+    "Master Artist": {
       "id": "VeKZTgIQSXEDte4i",
       "name": "Mistrzyni Sztuki",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.u9sso2ox8BNznmy4]{Artystka}</p>",
@@ -7722,7 +7722,7 @@
         "Warsztat (Artysty)"
       ]
     },
-    {
+    "Huffer": {
       "id": "vguGSNyf0hfxZ6RM",
       "name": "Pilot Rzeczny",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.TkF2ld3b72RlH2AR]{Pilot Rzeczny}</p>",
@@ -7757,7 +7757,7 @@
         "Lina"
       ]
     },
-    {
+    "Shipsword Master": {
       "id": "VIEEddQ4IW7Fjq2b",
       "name": "Mistrz Żołnierzy Okrętowych",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ADHp81MC8050ngjm]{Strażnik Rzeczny}</p>",
@@ -7797,7 +7797,7 @@
         "Symbol Rangi"
       ]
     },
-    {
+    "Wandering Trader": {
       "id": "vkfLXwz3Vpi13LqP",
       "name": "Wędrowny Handlarz",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.FdlybSv02jjXG1qW]{Kolporter}</p>",
@@ -7837,7 +7837,7 @@
         "Towary warte co najmniej 5k10 Złotych i 50 Srebrnych Monet"
       ]
     },
-    {
+    "Busker": {
       "id": "vmFzpNOoQfMELqdM",
       "name": "Muzykant",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.5nIDu8oyFVShLqne]{Kuglarz}</p>",
@@ -7865,7 +7865,7 @@
         "Instrument"
       ]
     },
-    {
+    "Thug": {
       "id": "VPKFN1VePTy3CY7V",
       "name": "Zakapior",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Z5QPZbUR3h422ozo]{Rekieter}</p>",
@@ -7893,7 +7893,7 @@
         "Kastet"
       ]
     },
-    {
+    "Witchfinder General": {
       "id": "vsfAkV0SktCjFgKA",
       "name": "Generał Łowców Czarownic",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ADYQOtpsk5n1EHen]{Łowca Czarownic}</p>",
@@ -7933,7 +7933,7 @@
         "Strój Dworski Najlepszej Jakości"
       ]
     },
-    {
+    "Exterminator": {
       "id": "vXxw8seyOyGKaFGf",
       "name": "Tępiciel",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.mKvUxzJyQmhgjDE0]{Szczurołap}</p>",
@@ -7974,7 +7974,7 @@
         "Worek Zatrutej Przynęty (10 Porcji Sercoboju)"
       ]
     },
-    {
+    "Seaman": {
       "id": "w5rHYhqw0bT15LCr",
       "name": "Żeglarz",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.XyM54Ue5w1WuCaBD]{Żeglarz}</p>",
@@ -8008,7 +8008,7 @@
         "Skórzany kaftan"
       ]
     },
-    {
+    "Aide": {
       "id": "WBA0vgLdGsJ32ccS",
       "name": "Asystent",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.pwth0cd20Vdp0B9G]{Doradca}</p>",
@@ -8035,7 +8035,7 @@
         "Zestaw do pisania"
       ]
     },
-    {
+    "Magnate": {
       "id": "WCS3mz3qmQbCc9j4",
       "name": "Magnat",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.t41abSTLeMAdLiWS]{Szlachcic}</p>",
@@ -8076,7 +8076,7 @@
         "200 Złotych Koron"
       ]
     },
-    {
+    "Cargo Scavenger": {
       "id": "WctdOXFfi2ShQLNh",
       "name": "Szabrownik",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.37EZqecGmYFb0fdW]{Pirat Rzeczny}</p>",
@@ -8105,7 +8105,7 @@
         "Duży worek"
       ]
     },
-    {
+    "Wizard's Apprentice": {
       "id": "WiMLDa950d9wsbbZ",
       "name": "Uczeń Czarodzieja",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.PKm1L6yjZ4PH0JJG]{Czarodziej}</p>",
@@ -8133,7 +8133,7 @@
         "Księga Zaklęć"
       ]
     },
-    {
+    "Peasant": {
       "id": "wlH2GnvZKA4zvdn8",
       "name": "Wyrobnik",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.EYkvtokq0FXlFaPa]{Chłop}</p>",
@@ -8160,7 +8160,7 @@
         "Brak"
       ]
     },
-    {
+    "Steward": {
       "id": "WO6jKc1N37H2ZzwN",
       "name": "Ochmistrzyni",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.iYnopOFkz5L6hljq]{Służąca}</p>",
@@ -8201,7 +8201,7 @@
         "Służący"
       ]
     },
-    {
+    "Light Cavalry Sergeant": {
       "id": "wPYrDuwdW4nJRcJt",
       "name": "Sierżant Kawalerii",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ArFOfnzJkToXBJBF]{Kawalerzysta}</p>",
@@ -8238,7 +8238,7 @@
         "Szarfa"
       ]
     },
-    {
+    "Diplomat": {
       "id": "WpZ7nJsXYukA4hQ9",
       "name": "Dyplomata",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.0t9wtjQIoOofh8nO]{Poseł}</p>",
@@ -8277,7 +8277,7 @@
         "Mapa"
       ]
     },
-    {
+    "Recruit": {
       "id": "wSEGXXkc6swDkuJJ",
       "name": "Rekrut",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.1OTZ386bMWJ6wfzX]{Żołnierz}</p>",
@@ -8306,7 +8306,7 @@
         "Mundur"
       ]
     },
-    {
+    "Townsman": {
       "id": "WuNc5hU1HoUS5gPa",
       "name": "Mieszczka",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.XHYgf5oEwIeCEVNM]{Mieszczka}</p>",
@@ -8341,7 +8341,7 @@
         "Służący"
       ]
     },
-    {
+    "Custodian": {
       "id": "WvEHWvF7hoyNChqj",
       "name": "Nadzorca",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.wbqpqbFoSnvoZ53j]{Namiestnik}</p>",
@@ -8371,7 +8371,7 @@
         "Klucze"
       ]
     },
-    {
+    "Artisan": {
       "id": "wwt4F5amY5sxbXsq",
       "name": "Rzemieślniczka",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.GWrZq3xoRSsDnQe0]{Rzemieślniczka}</p>",
@@ -8405,7 +8405,7 @@
         "Licencja Cechu"
       ]
     },
-    {
+    "Smuggler King": {
       "id": "XCfd7wimn69mZW9T",
       "name": "Król Przemytników",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.FqhOxcvai4ROvhXB]{Przemytnik}</p>",
@@ -8445,7 +8445,7 @@
         "Mała Flota Łodzi Rzecznych"
       ]
     },
-    {
+    "Pedlar": {
       "id": "XseDIYgXCdNuV0pL",
       "name": "Kolporter",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.FdlybSv02jjXG1qW]{Kolporter}</p>",
@@ -8481,7 +8481,7 @@
         "Wybór Rondli i Patelni"
       ]
     },
-    {
+    "Horseman": {
       "id": "XuIDL2gpiFMleuVV",
       "name": "Jeździec",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ArFOfnzJkToXBJBF]{Kawalerzysta}</p>",
@@ -8509,7 +8509,7 @@
         "Skórzana kurta"
       ]
     },
-    {
+    "Road Captain": {
       "id": "XV2OQCwhnLVdAgON",
       "name": "Kapitan Strażników Dróg",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.dN2K3ZBMu4rvGGpW]{Strażnik Dróg}</p>",
@@ -8552,7 +8552,7 @@
         "Oddział Strażników Dróg"
       ]
     },
-    {
+    "Coachman": {
       "id": "xyIZu4DfQSMtdH2t",
       "name": "Woźnica",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.tvJAKXB7R0EOr4oE]{Woźnica}</p>",
@@ -8588,7 +8588,7 @@
         "Garłacz z 10 Nabojami"
       ]
     },
-    {
+    "Apprentice Artist": {
       "id": "XYkcst2gjS4QUyZI",
       "name": "Uczennica Artysty",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.u9sso2ox8BNznmy4]{Artystka}</p>",
@@ -8615,7 +8615,7 @@
         "Dłuto albo Pędzel albo Pióro"
       ]
     },
-    {
+    "Master Beggar": {
       "id": "xzfS4Gm90R7ViMI6",
       "name": "Mistrz Żebraków",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.1l2m7D1LHIz2q9qv]{Żebrak}</p>",
@@ -8654,7 +8654,7 @@
         "Towarzyszący Biedak"
       ]
     },
-    {
+    "Apothecary-General": {
       "id": "y0V0xRFindJiBUDz",
       "name": "Mistrzyni Aptekarstwa",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.86gkaanqt19xYCRa]{Aptekarka}</p>",
@@ -8694,7 +8694,7 @@
         "Duży Warsztat"
       ]
     },
-    {
+    "Warrior Priest": {
       "id": "y8XGpUCRkxdnn0ys",
       "name": "Kapłan Bitewny",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.iYVpqJ6bz8fokdmf]{Kapłan Bitewny}</p>",
@@ -8728,7 +8728,7 @@
         "Napierśnik Płytowy"
       ]
     },
-    {
+    "Riverguide": {
       "id": "YCyo4r3rZ2gMUz9Q",
       "name": "Przewodnik Rzeczny",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.TkF2ld3b72RlH2AR]{Pilot Rzeczny}</p>",
@@ -8756,7 +8756,7 @@
         "Lampa Sztormowa z Oliwą"
       ]
     },
-    {
+    "Scoundrel": {
       "id": "yRRDOZ82C4ZLR6ju",
       "name": "Łajdak",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Eg5D2UI3U4SAHnuU]{Szarlatan}</p>",
@@ -8796,7 +8796,7 @@
         "Podrobiona Pieczęć"
       ]
     },
-    {
+    "Bargeswain": {
       "id": "yzgbXappuN7MRXUy",
       "name": "Sternik",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Rk1V9EvtZ0p5Qhwr]{Przewoźnik}</p>",
@@ -8834,7 +8834,7 @@
         "Plecak"
       ]
     },
-    {
+    "Prophet of Doom": {
       "id": "zDdI21hXufHuDarS",
       "name": "Piewca Zagłady",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.0kij2AX9aaUnCxPv]{Biczownik}</p>",
@@ -8874,7 +8874,7 @@
         "Towarzysze (włącznie z Pokutnikami, Biczownikami i Gorliwcami)"
       ]
     },
-    {
+    "Scholar": {
       "id": "zmC4qBprmNxFNo2W",
       "name": "Uczony",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.CmiCNv8YlslFqRqy]{Uczony}</p>",
@@ -8908,7 +8908,7 @@
         "Stopień Naukowy"
       ]
     },
-    {
+    "Boatswain": {
       "id": "zOfGEVtocyprCAZU",
       "name": "Bosman",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.XyM54Ue5w1WuCaBD]{Żeglarz}</p>",
@@ -8945,7 +8945,7 @@
         "Narzędzia Pracy (Cieśli)"
       ]
     },
-    {
+    "Judicial Champion": {
       "id": "ZRS6U3ECK8n4mFZ4",
       "name": "Szampierz Sądowy",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.3r4A1DOiF3laRWvq]{Zwadźca}</p>",
@@ -8984,7 +8984,7 @@
         "2 sztuki Broni Dobrej Jakości"
       ]
     },
-    {
+    "Seer": {
       "id": "zS1aRUvoj8fJIF3P",
       "name": "Prorok",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.CzebTXk5dirMAZ6p]{Mistyk}</p>",
@@ -9023,7 +9023,7 @@
         "Narzędzia Pracy (Astrologa)"
       ]
     },
-    {
+    "Student Lawyer": {
       "id": "ZSet34kUw1Bu1PDx",
       "name": "Studentka Prawa",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.uIKbkjQpNUCGIQRv]{Prawniczka}</p>",
@@ -9051,7 +9051,7 @@
         "Lupa"
       ]
     },
-    {
+    "Novitiate (Nun)": {
       "id": "Zst72kU4epCqabW9",
       "name": "Nowicjuszka",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.f5m7s9K2y1zQNmej]{Mniszka}</p>",
@@ -9079,7 +9079,7 @@
         "Symbol religijny"
       ]
     },
-    {
+    "Protagonist": {
       "id": "ZydFv9TTPvmihnR1",
       "name": "Oprych",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.cXOl6phkTrPcUmwC]{Oprych}</p>",
@@ -9115,7 +9115,7 @@
         "Tarcza"
       ]
     },
-    {
+    "Penitent": {
       "id": "zZ2QaJ9EHJlh1QbW",
       "name": "Pokutnik",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.0kij2AX9aaUnCxPv]{Biczownik}</p>",
@@ -9152,5 +9152,5 @@
         "Relikwia"
       ]
     }
-  ]
+  }
 }

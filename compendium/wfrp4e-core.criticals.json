@@ -8,8 +8,8 @@
       "converter": "effects"
     }
   },
-  "entries": [
-    {
+  "entries": {
+    "Ruptered Ligament": {
       "id": "263ic3ulLuR9DPzP",
       "name": "Zerwane więzadło",
       "description": "<p>Postać natychmiast upuszcza wszystko, co trzymała w dłoni. Otrzymuje Zerwanie mięśni (pomniejsze).</p>",
@@ -24,7 +24,7 @@
       "wounds": "3",
       "location": "Arm"
     },
-    {
+    "Thigh Strike": {
       "id": "2ibzDR7EeMEq2QAe",
       "name": "Cios w udo",
       "description": "<p>Bolesny cios uderza prosto w górną część uda, tuż przy biodrze. Postać otrzymuje 1 poziom Stanu @Condition[Krwawienie], musi również wykonać Przeciętny (+20) Test Odporności, a jeśli się jej nie uda, otrzyma Stan @Condition[Powalenie].</p>",
@@ -44,7 +44,7 @@
       "wounds": "2",
       "location": "Leg"
     },
-    {
+    "Broken Collar Bone": {
       "id": "39906D4BcVGzsiQp",
       "name": "Złamany obojczyk",
       "description": "<p>Postać pada na ziemię w Stanie Utrata Przytomności i nie ocknie się, dopóki nie zostanie jej udzielona Pomoc Medyczna, a ponadto otrzymuje Uraz Złamanie (poważne).</p>",
@@ -64,7 +64,7 @@
       "wounds": "5",
       "location": "Body"
     },
-    {
+    "Poked Eye": {
       "id": "3B3QEz9ImmloEQxv",
       "name": "Spuchnięte oko",
       "description": "<p>Mocny cios trafia w oczodół. Postać otrzymuje 1 poziom Stanu @Condition[Oślepienie].</p>",
@@ -79,7 +79,7 @@
       "wounds": "1",
       "location": "Head"
     },
-    {
+    "Concussive Blow": {
       "id": "3Tk4cX1ri20oUoBh",
       "name": "Wstrząśnienie mózgu",
       "description": "<p>Mózg obija się wewnątrz czaszki, a krew wypływa z nosa i uszu. Postać otrzymuje 1 poziom Stanu @Condition[Ogłuszenie], 2 poziomy Stanu @Condition[Krwawienie] oraz [[/r 1d10]] poziomów Stanu @Condition[Oszołomienia]. Ponadto na 1k10 dni uznaje się ją również za Zmęczoną. Jeśli postać otrzyma kolejną Ranę Krytyczną w głowę, będąc jeszcze Zmęczoną po ostatnim wstrząśnieniu mózgu, musi wykonać Przeciętny (+20) Test Odporności. Jeśli ten się nie powiedzie, otrzymuje Stan @Condition[Nieprzytomny].</p>",
@@ -114,7 +114,7 @@
       "wounds": "4",
       "location": "Head"
     },
-    {
+    "Dislocated Knee": {
       "id": "8GrHGyhYlbdxqluu",
       "name": "Zwichnięte kolano",
       "description": "<p>Kolano zostaje wyrwane ze stawu. Postać otrzymuje Stan @Condition[Powalenie] i pada na ziemię. Musi zdać Trudny (-20) Test Odporności, w przeciwnym wypadku otrzyma 1 poziom Stanu @Condition[Oszołomienie], którego nie można usunąć, dopóki nie zostanie jej udzielona Pomoc Medyczna. Jednakże nastawienie kolana, nawet po udzieleniu Pomocy Medycznej, wymagać będzie Wydłużonego Przeciętnego (+20) Testu Leczenia, w którym należy osiągnąć co najmniej 6 PS. Dopiero wtedy postać będzie mogła znów ruszać nogą. Szybkość spada o połowę, a wszystkie Testy, w których wykorzystywana jest noga, otrzymują karę -10 przez [[/r 1d10]] dni.</p>",
@@ -129,7 +129,7 @@
       "wounds": "4",
       "location": "Leg"
     },
-    {
+    "Disfiguring Blow": {
       "id": "8WkGfg1oUsR16K3J",
       "name": "Oszpecający cios",
       "description": "<p>Uderzenie roztrzaskuje całą twarz, niszcząc oko i nos w fontannie krwi. Postać otrzymuje 3 poziomy Stanu @Condition[Oślepienie], 3 poziomy Stanu @Condition[Krwawienie] i 2 poziomy Stanu @Condition[Oszołomienie]. Następuje utrata oka i nosa - Amputacja (trudna).</p>",
@@ -159,7 +159,7 @@
       "wounds": "5",
       "location": "Head"
     },
-    {
+    "Dislocated Shoulder": {
       "id": "92vQ9g5DxlWNmD1c",
       "name": "Wywichnięty bark",
       "description": "<p>Ramię zostało wyrwane ze stawu. Postać musi zdać Trudny (-20) Test Odporności, w przeciwnym wypadku otrzyma Stany Powalenie i Utrata Przytomności. Wszystko, co było trzymane w dłoni, wypada, a ramię jest bezużyteczne i uznawane za stracone (patrz Amputacje). Ponadto postać otrzymuje 1 poziom Oszołomienia, dopóki nie zostanie jej udzielona Pomoc Medyczna. Jednakże nastawienie ramienia, nawet po udzieleniu Pomocy Medycznej, wymagać będzie Wydłużonego Przeciętnego (+20) Testu Leczenia, w którym należy osiągnąć co najmniej 6 PS. Dopiero wtedy postać będzie mogła znów ruszać ramieniem. Testy wykonywane przy pomocy tego ramienia obarczone są karą -10 przez [[/r 1d10]] dni.</p>",
@@ -174,7 +174,7 @@
       "wounds": "4",
       "location": "Arm"
     },
-    {
+    "Twisted Ankle": {
       "id": "9j0KwH1Je1RiuZX2",
       "name": "Skręcona kostka",
       "description": "<p>Niepewny krok kończy się skręceniem kostki. Wszystkie Testy Zwinności obarczone są karą -10 na [[/r 1d10]] Rund.</p>",
@@ -189,7 +189,7 @@
       "wounds": "1",
       "location": "Leg"
     },
-    {
+    "Ruptured Tendon": {
       "id": "9MKzpUh761nGa76M",
       "name": "Zerwane ścięgno",
       "description": "<p>W wyniku zerwania ścięgna w nodze postać otrzymuje Stany Powalenie i Oszołomienie. Musi także zdać Trudny (-20) Test Odporności, w przeciwnym wypadku nastąpi Utrata Przytomności. Noga jest bezwładna (patrz Amputacje), a cios skutkuje Urazem Zerwanie mięśni (poważne).</p>",
@@ -204,7 +204,7 @@
       "wounds": "4",
       "location": "Leg"
     },
-    {
+    "Mauled Bicep": {
       "id": "9NAkj43qHsH7Xok7",
       "name": "Rozszarpany biceps",
       "description": "<p> niemal oddziela biceps i ścięgna od kości, co skutkuje paskudną raną i krwią bryzgającą na wszystkich dookoła. Postać automatycznie upuszcza wszystko, co trzymała w dłoni, i otrzymuje Uraz Zerwanie mięśni (poważne), 2 poziomy Stanu @Condition[Krwawienie] oraz 1 poziom Stanu @Condition[Oszołomienie].</p>",
@@ -229,7 +229,7 @@
       "wounds": "5",
       "location": "Arm"
     },
-    {
+    "Cut Tendon": {
       "id": "9s7eE2U30R774sxO",
       "name": "Przecięte ścięgna",
       "description": "<p>Ważne ścięgno w nodze zostaje przecięte. Kończyna nie wytrzymuje ciężaru ciała, a postać pada na ziemię, wrzeszcząc z bólu. Otrzymuje Stany: Powalenie, 2 poziomy Stanu @Condition[Krwawienie], 2 poziomy Stanu @Condition[Oszołomienie] i z przerażeniem patrzy na swoją bezużyteczną, bezwładną nogę - Amputacja (bardzo trudna).</p>",
@@ -259,7 +259,7 @@
       "wounds": "5",
       "location": "Leg"
     },
-    {
+    "Badly Cut Toe": {
       "id": "9UjOMeBtKdoL5S34",
       "name": "Paskudnie przecięty paluch",
       "description": "<p>Postać otrzymuje 1 poziom Stanu @Condition[Krwawienie]. Musi także zdać Wymagający (+0) Test Odporności. Jeśli ten się nie uda, postać traci 1 palec u nogi - Amputacja (przeciętna).</p>",
@@ -279,7 +279,7 @@
       "wounds": "2",
       "location": "Leg"
     },
-    {
+    "Torn Thigh": {
       "id": "AUZLQkyu9kiqmzsq",
       "name": "Poszarpane udo",
       "description": "<p>Postać otrzymuje 3 poziomy Stanu @Condition[Krwawienie], a cios odrywa kawał mięśni z jej uda. Musi także zdać Wymagający (+0) Test Odporności, w przeciwnym wypadku otrzyma Stan @Condition[Powalenie]. Dopóki postać nie otrzyma pomocy Chirurgicznej i udo nie zostanie zszyte, każda Rana otrzymana w tę nogę będzie skutkować zwiększeniem Krwawienia o 1 poziom.</p>",
@@ -304,7 +304,7 @@
       "wounds": "3",
       "location": "Leg"
     },
-    {
+    "Cracked Ribs": {
       "id": "AXRma6wqpD5jvpuM",
       "name": "Połamane żebra",
       "description": "<p>Cios łamie jedno lub kilka żeber. Postać otrzymuje 1 poziom Stanu @Condition[Oszołomienie]. Ponadto otrzymuje Uraz Złamanie (pomniejsze).</p>",
@@ -324,7 +324,7 @@
       "wounds": "3",
       "location": "Body"
     },
-    {
+    "Sprain": {
       "id": "B6lS25BojearuvzW",
       "name": "Skręcenie",
       "description": "<p>Skręcone ramię skutkuje Zerwaniem mięśni (pomniejszym).</p>",
@@ -339,7 +339,7 @@
       "wounds": "1",
       "location": "Arm"
     },
-    {
+    "Fractured Jaw": {
       "id": "bAafQaKO9PdKQB8R",
       "name": "Złamana szczęka",
       "description": "<p>Cios z obrzydliwym chrupnięciem łamie żuchwę i zalewa twarz falą ogromnego bólu. Postać otrzymuje 2 poziomy Stanu @Condition[Oszołomienie]. Ponadto otrzymuje Uraz Złamanie (pomniejsze).</p>",
@@ -359,7 +359,7 @@
       "wounds": "3",
       "location": "Head"
     },
-    {
+    "Decapitated": {
       "id": "Bpt4ZS0eHJOsuDXE",
       "name": "Dekapitacja",
       "description": "<p>Cios gładko odcina głowę, która leci w powietrze, lądując [[/r 1d5]] metrów w dowolnym kierunku (patrz Rozrzut). Martwe, bezgłowe ciało pada na ziemię.</p>",
@@ -374,7 +374,7 @@
       "wounds": "Death",
       "location": "Head"
     },
-    {
+    "Minor Head Cut": {
       "id": "btDTVsPFsOtBNpgF",
       "name": "Płytkie cięcie w głowę",
       "description": "<p>Cios przecina policzek, rozbryzgując dookoła krew. Postać otrzymuje 1 poziom Stanu @Condition[Krwawienie].</p>",
@@ -389,7 +389,7 @@
       "wounds": "1",
       "location": "Head"
     },
-    {
+    "Severed Foot": {
       "id": "BzIaW1w6eTUFWgkk",
       "name": "Odcięta stopa",
       "description": "<p>Cios odcina stopę, która odlatuje na 1k5 metrów w losowym kierunku (patrz Rozrzut) - Amputacja (trudna). Postać otrzymuje: Stan @Condition[Powalenie], 3 poziomy Stanu @Condition[Krwawienie] i 2 poziomy Stanu @Condition[Oszołomienie].</p>",
@@ -419,7 +419,7 @@
       "wounds": "5",
       "location": "Leg"
     },
-    {
+    "Ear Bash": {
       "id": "cJ6raCFuP1diIXsy",
       "name": "Prosto w ucho",
       "description": "<p>Cios uderza w bok głowy z olbrzymią mocą, aż dzwoni w uchu. Postać otrzymuje 1 poziom Stanu @Condition[Ogłuszenie].</p>",
@@ -434,7 +434,7 @@
       "wounds": "1",
       "location": "Head"
     },
-    {
+    "Pulled Back": {
       "id": "cWK3kNzvujhWi9jQ",
       "name": "Naderwane mięśnie pleców",
       "description": "<p>Plecy przemieniają się w jedną wielką strefę obezwładniającego bólu. Postać otrzymuje Uraz Zerwanie mięśni (pomniejsze).</p>",
@@ -449,7 +449,7 @@
       "wounds": "4",
       "location": "Body"
     },
-    {
+    "Shattered Pelvis": {
       "id": "F9aFPBvoCdxg8oFJ",
       "name": "Strzaskana miednica",
       "description": "<p>Cios miażdży miednicę, odcinając jedną nogę i wrzynając się w drugą. Ból, szok i utrata krwi są tak duże, że postać pada martwa na ziemię.</p>",
@@ -464,7 +464,7 @@
       "wounds": "Death",
       "location": "Leg"
     },
-    {
+    "Broken Nose": {
       "id": "fIjnRUF4xplU2mhP",
       "name": "Złamany nos",
       "description": "<p>Silny cios trafia w sam środek twarzy, a postać zalewa się krwią. Postać otrzymuje 2 poziomy Stanu @Condition[Krwawienie]. Musi także zdać Wymagający (+0) Test Odporności, w przeciwnym wypadku otrzyma również 1 poziom Stanu @Condition[Oszołomienie]. Po wyleczeniu tej rany postać uzyskuje premię +1 lub karę -1 do Testów w kontaktach społecznych (w zależności od kontekstu), chyba że podjęto Test Chirurgii, by nastawić i wyprostować nos.</p>",
@@ -484,7 +484,7 @@
       "wounds": "3",
       "location": "Head"
     },
-    {
+    "Cleft Hand": {
       "id": "G8m6k3wEkhuXMjjp",
       "name": "Zmasakrowana dłoń",
       "description": "<p>Cios przecina dłoń, a rana zaczyna się rozszerzać. Postać traci 1 palec - Amputacja (problematyczna). Ponadto otrzymuje 2 poziomy Krwawienia oraz 1 poziom Stanu @Condition[Oszołomienie]. W każdej następnej Rundzie, jeśli nie otrzyma Pomocy Medycznej, traci kolejny palec, ponieważ rana się rozszerza, a dłoń po prostu rwie się na strzępy. Jeśli skończą się palce, postać traci dłoń - Amputacja (trudna).</p>",
@@ -509,7 +509,7 @@
       "wounds": "5",
       "location": "Arm"
     },
-    {
+    "Devastated Eye": {
       "id": "GBaH4wyVes6ds7Wv",
       "name": "Wybite oko",
       "description": "<p>Cios zupełnie niszczy gałkę oczną, wywołując niezwykle silny ból. Postać otrzymuje 3 poziomy Stanu @Condition[Oślepienie], 2 poziomy Stanu @Condition[Krwawienie] i 1 poziom Stanu @Condition[Oszołomienie]. Ponadto traci oko - Amputacja (wymagająca).</p>",
@@ -539,7 +539,7 @@
       "wounds": "5",
       "location": "Head"
     },
-    {
+    "Struck Forehead": {
       "id": "GHa0StLRCchw6dQ0",
       "name": "Uderzenie w czoło",
       "description": "<p>Potężny cios trafia w sam środek czoła. Postać otrzymuje 2 poziomy Stanu @Condition[Krwawienie] oraz 1 poziom Stanu @Condition[Oślepienie], który nie może zostać usunięty, dopóki Krwawienie nie zostanie wyleczone.</p>",
@@ -559,7 +559,7 @@
       "wounds": "2",
       "location": "Head"
     },
-    {
+    "Gaping Chest Wound": {
       "id": "GmRF7GF7SZq6qeyj",
       "name": "Ziejąca rana korpusu",
       "description": "<p>Postać otrzymuje 3 poziomy Stanu @Condition[Krwawienie]. Dopóki ktoś nie udzieli jej pomocy Chirurgicznej, za każdym razem, gdy postać otrzyma Ranę w korpus, otrzymuje dodatkowy poziom Stanu @Condition[Krwawienie], gdyż rozcięcie się otwiera.</p>",
@@ -579,7 +579,7 @@
       "wounds": "3",
       "location": "Body"
     },
-    {
+    "Painful Cut": {
       "id": "GsBi7iz9z5tj9PiM",
       "name": "Bolesne cięcie",
       "description": "<p>Postać otrzymuje 2 poziomy Stanu @Condition[Krwawienie] oraz 1 poziom Stanu @Condition[Oszołomienie]. Musi także zdać Trudny (-20) Test Odporności, w przeciwnym wypadku nastąpi Utrata Przytomności z powodu bólu. Jeśli Test nie zakończy się co najmniej 4 PS, postać wyje z bólu.</p>",
@@ -604,7 +604,7 @@
       "wounds": "3",
       "location": "Body"
     },
-    {
+    "Major Ear Wound": {
       "id": "GWGaNV2kGRTlMlG7",
       "name": "Poważna rana ucha",
       "description": "<p>Cios niszczy małżowinę uszną, co skutkuje trwałym uszkodzeniem słuchu. Wszystkie Testy związane ze słuchem otrzymują karę -20. Jeśli postać otrzyma taką ranę ponownie, cios zadawany jest w drugie ucho, co skutkuje głuchotą. Wtedy pomoże już tylko magia.</p>",
@@ -619,7 +619,7 @@
       "wounds": "3",
       "location": "Head"
     },
-    {
+    "Severed Finger": {
       "id": "H07sv4W1RPoES06K",
       "name": "Odcięty palec",
       "description": "<p>Postać z otwartymi ustami patrzy na lecący w powietrzu własny palec - Amputacja (przeciętna). Postać otrzymuje 1 poziom Stanu @Condition[Krwawienie].</p>",
@@ -639,7 +639,7 @@
       "wounds": "4",
       "location": "Arm"
     },
-    {
+    "Carved Shin": {
       "id": "heJZbvL0uXqKbljR",
       "name": "Rozerwana łydka",
       "description": "<p>Cios trafia czysto pod kolano, rozcinając mięśnie i ścięgna aż do kości. Postać otrzymuje Stany: Powalenie i 1 poziom Stanu @Condition[Oszołomienie]. Ponadto zyskuje Urazy Zerwanie mięśni (pomniejsze) oraz Złamanie (pomniejsze).</p>",
@@ -664,7 +664,7 @@
       "wounds": "4",
       "location": "Leg"
     },
-    {
+    "Jarred Arm": {
       "id": "iLHKw6w3Ipmzj5ma",
       "name": "Zdrętwiałe ramię",
       "description": "<p>W wyniku ataku ramię przechodzą fale odrętwienia. Postać upuszcza wszystko, co trzymała w dłoni.</p>",
@@ -672,7 +672,7 @@
       "wounds": "1",
       "location": "Arm"
     },
-    {
+    "Major Eye Wound": {
       "id": "Ioxf9osVNGNyzIZA",
       "name": "Poważna rana oka",
       "description": "<p>Cios łamie oczodół. Postać otrzymuje 1 poziom Stanu @Condition[Krwawienie]. Ponadto otrzymuje również 1 poziom Stanu @Condition[Oślepienie], który nie może zostać usunięty, dopóki postać nie otrzyma Pomocy Medycznej.</p>",
@@ -692,7 +692,7 @@
       "wounds": "3",
       "location": "Head"
     },
-    {
+    "Sliced Ear": {
       "id": "IZkWdvSwQPrnjdsD",
       "name": "Rozcięte ucho",
       "description": "<p>Cios w bok głowy jest na tyle mocny, że wrzyna się głęboko w ucho. Postać otrzymuje 2 poziomy Stanu @Condition[Ogłuszenie] i 1 poziom Stanu @Condition[Krwawienie].</p>",
@@ -712,7 +712,7 @@
       "wounds": "2",
       "location": "Head"
     },
-    {
+    "Bad Cut": {
       "id": "JcAgEHxuY9hwB4y5",
       "name": "Paskudne cięcie",
       "description": "<p>Postać otrzymuje 2 poziomy Stanu @Condition[Krwawienie], a na jej łydce pojawia się głębokie otwarte rozcięcie. Musi także zdać Wymagający (+0) Test Odporności, w przeciwnym wypadku otrzyma Stan @Condition[Powalenie].</p>",
@@ -732,7 +732,7 @@
       "wounds": "3",
       "location": "Leg"
     },
-    {
+    "Mangled Hand": {
       "id": "jeXKnpbV7xq8wDkH",
       "name": "Zgruchotana dłoń",
       "description": "<p>Dłoń postaci jest zgruchotaną, krwawiącą papką. Postać traci dłoń - Amputacja (trudna) - i otrzymuje 2 poziomy Stanu @Condition[Krwawienie]. Musi zdać Trudny (-20) Test Odporności, w przeciwnym wypadku otrzyma Stany @Condition[Powalenie] i @Condition[Nieprzytomny].</p>",
@@ -747,7 +747,7 @@
       "wounds": "5",
       "location": "Arm"
     },
-    {
+    "Crushed Elbow": {
       "id": "JKm6YDR88Friuw6h",
       "name": "Zmiażdżony łokieć",
       "description": "<p>Uderzenie gruchocze łokieć, rozłupując kości i chrząstkę. Postać natychmiast upuszcza wszystko, co trzymała w dłoni, i otrzymuje Złamanie (poważne).</p>",
@@ -762,7 +762,7 @@
       "wounds": "4",
       "location": "Arm"
     },
-    {
+    "Internal Bleeding": {
       "id": "jma54Iat01N9X4Fb",
       "name": "Krwotok wewnętrzny",
       "description": "<p>Postać otrzymuje 1 poziom Stanu @Condition[Krwawienie], który można usunąć jedynie za pomocą Chirurgii. Ponadto Rana skutkuje także Zatruciem Krwi.</p>",
@@ -782,7 +782,7 @@
       "wounds": "5",
       "location": "Body"
     },
-    {
+    "Gaping Arm Wound": {
       "id": "jvemdUZh3iRF67us",
       "name": "Ziejąca rana ramienia",
       "description": "<p>Cios skutkuje głęboką, otwartą raną. Postać otrzymuje 2 poziomy Krwawienia. Dopóki rozcięcie nie zostanie zszyte dzięki pomocy Chirurgicznej, każda Rana otrzymana w to ramię skutkuje zwiększeniem Krwawienia o 1 poziom, ponieważ rana się otwiera i pogłębia.</p>",
@@ -802,7 +802,7 @@
       "wounds": "3",
       "location": "Arm"
     },
-    {
+    "Torn Apart": {
       "id": "jY9wCTf7q86zk96P",
       "name": "Rozpłatanie",
       "description": "<p>Postać zostaje przecięta na dwoje. Górna połowa korpusu pada w losowym kierunku, a wszystkie postaci w promieniu 2 metrów zostają skąpane w fontannie krwi.</p>",
@@ -817,7 +817,7 @@
       "wounds": "Death",
       "location": "Body"
     },
-    {
+    "Twisted Back": {
       "id": "K0WjEuCqGDUwAPE6",
       "name": "Cios w krzyż",
       "description": "<p>Postać otrzymuje Uraz Zerwanie mięśni (pomniejsze).</p>",
@@ -832,7 +832,7 @@
       "wounds": "1",
       "location": "Body"
     },
-    {
+    "Black Eye": {
       "id": "KB58O2LWcrzIb6do",
       "name": "Podbite oko",
       "description": "<p>Cios w oko jest na tyle mocny, że postać zaczyna łzawić z bólu. Postać otrzymuje 2 poziomy Stanu @Condition[Oślepienie].</p>",
@@ -847,7 +847,7 @@
       "wounds": "2",
       "location": "Head"
     },
-    {
+    "Low Blow!": {
       "id": "l5X3wwVvctgQ4k2Q",
       "name": "Poniżej pasa!",
       "description": "<p>Postać musi wykonać Trudny (-20) Test Odporności. Jeśli ten się nie powiedzie, otrzymuje 3 poziomy Stanu @Condition[Oszołomienie].</p>",
@@ -862,7 +862,7 @@
       "wounds": "1",
       "location": "Body"
     },
-    {
+    "Fractured Hip": {
       "id": "LdqCjnTAiiRZU1Sq",
       "name": "Złamane biodro",
       "description": "<p>Postać otrzymuje 1 poziom Stanu @Condition[Oszołomienie]. Musi także zdać Wymagający (+0) Test Odporności, w przeciwnym wypadku otrzyma Stan @Condition[Powalenie]. Ponadto otrzymuje Uraz Złamanie (pomniejsze).</p>",
@@ -882,7 +882,7 @@
       "wounds": "4",
       "location": "Body"
     },
-    {
+    "Smashed Mouth": {
       "id": "LZ8ThwJsGDgiPkAd",
       "name": "Rozkwaszone usta",
       "description": "<p>Cios jest na tyle mocny, że usta wypełniają się wybitymi zębami i mnóstwem krwi. Postać otrzymuje 2 poziomy Stanu @Condition[Krwawienie]. Ponadto traci [[/r 1d10]] zębów - to Amputacja (łatwa).</p>",
@@ -902,7 +902,7 @@
       "wounds": "4",
       "location": "Head"
     },
-    {
+    "Rattling Blow": {
       "id": "M15Fg1Wdl047rD8L",
       "name": "Bolesne uderzenie",
       "description": "<p>Cios jest na tyle mocny, że w polu widzenia pojawiają się plamki i gwiazdki. Postać otrzymuje 1 poziom Stanu @Condition[Oszołomienie].</p>",
@@ -917,7 +917,7 @@
       "wounds": "2",
       "location": "Head"
     },
-    {
+    "Smashed Rib Cage": {
       "id": "MZuAg4zB17prHXaG",
       "name": "Strzaskana klatka piersiowa",
       "description": "<p>Postać otrzymuje 1 poziom Stanu @Condition[Oszołomienie], który można jedynie usunąć, udzielając Pomocy Medycznej, a także Uraz Złamanie (poważne).</p>",
@@ -937,7 +937,7 @@
       "wounds": "5",
       "location": "Body"
     },
-    {
+    "Broken Knee": {
       "id": "njocSqK1sMPTi5K4",
       "name": "Strzaskane kolano",
       "description": "<p>Cios roztrzaskuje rzepkę, której fragmenty wbijają się w mięśnie i staw. Postać otrzymuje Stany: Powalenie, 1 poziom Stanu @Condition[Krwawienie] i 1 poziom Stanu @Condition[Oszołomienie] oraz Uraz Złamanie (poważne), padając na ziemię i trzymając się za strzaskane kolano.</p>",
@@ -967,7 +967,7 @@
       "wounds": "4",
       "location": "Leg"
     },
-    {
+    "Wrenched Arm": {
       "id": "nnPZijQYZGya1NJM",
       "name": "Wybicie stawu",
       "description": "<p>Ramię prawie zostało wyrwane ze stawu. Wszystko, co było trzymane w dłoni, wypada, a ramię jest bezużyteczne przez [[/r 1d10]] Rund.</p>",
@@ -975,7 +975,7 @@
       "wounds": "2",
       "location": "Arm"
     },
-    {
+    "Crushed Foot": {
       "id": "NPhLsxsUV8wwdKWj",
       "name": "Zmiażdżona stopa",
       "description": "<p>Cios miażdży stopę postaci. Ta musi również wykonać Przeciętny (+20) Test Odporności, a jeśli się jej nie uda, otrzyma Stan @Condition[Powalenie], straci 1 palec u nogi, a także 1 dodatkowy palec za każdy PS poniżej 0 - Amputacja (przeciętna). Postać otrzymuje 2 poziomy Stanu @Condition[Krwawienie]. Jeśli w ciągu [[/r 1d10]] dni nie zostanie przeprowadzona operacja Chirurgiczna, będzie trzeba amputować całą stopę.</p>",
@@ -995,7 +995,7 @@
       "wounds": "5",
       "location": "Leg"
     },
-    {
+    "Broken Jaw": {
       "id": "nZK8CBZTlWTQG2K8",
       "name": "Zmiażdżona żuchwa",
       "description": "<p>Następuje obrzydliwy trzask, a cios trafia w żuchwę od spodu, miażdżąc ją. Postać otrzymuje 3 poziomy Stanu @Condition[Oszołomienie]. Musi także zdać Wymagający (+0) Test Odporności, w przeciwnym wypadku otrzyma również 1 poziom Stanu @Condition[Ogłuszenie]. Ponadto otrzymuje Uraz Złamanie (poważne).</p>",
@@ -1015,7 +1015,7 @@
       "wounds": "4",
       "location": "Head"
     },
-    {
+    "Wrenched Collar Bone": {
       "id": "P6opRTvzX1rgzfgE",
       "name": "Stłuczony obojczyk",
       "description": "<p>Losowo wyznacz ramię. Wszystko, co było trzymane w dłoni po tej stronie ciała, wypada, a ramię jest bezużyteczne przez [[/r 1d10]] Rund.</p>",
@@ -1023,7 +1023,7 @@
       "wounds": "2",
       "location": "Body"
     },
-    {
+    "Tis But A Scratch!": {
       "id": "PhCFqJif8iQaiOm0",
       "name": "Ledwie draśnięcie",
       "description": "<p>Postać otrzymuje 1 poziom Stanu @Condition[Krwawienie].</p>",
@@ -1038,7 +1038,7 @@
       "wounds": "1",
       "location": "Body"
     },
-    {
+    "Gut Wound": {
       "id": "pjJagbErW5tu3LJR",
       "name": "Rana brzucha",
       "description": "<p>Cios skutkuje zadaniem Ropiejącej Rany i otrzymaniem 2 poziomów Stanu @Condition[Krwawienie].</p>",
@@ -1058,7 +1058,7 @@
       "wounds": "4",
       "location": "Body"
     },
-    {
+    "Mangled Jaw": {
       "id": "qWJ2HWWj2411KSau",
       "name": "Zgruchotana szczęka",
       "description": "<p>Cios prawie odrywa żuchwę od ciała, niszcząc język, i rozrzuca dookoła połamane zęby w chmurze krwi. Postać otrzymuje 4 poziomy Stanu @Condition[Krwawienie] oraz 3 poziomy Stanu @Condition[Oszołomienie]. Musi także zdać Bardzo Trudny (-30) Test Odporności, w przeciwnym wypadku otrzyma również 1 poziom Stanu @Condition[Ogłuszenie]. Ponadto otrzymuje Uraz Złamanie (poważne) i traci język oraz [[/r 1d10]] zębów - Amputacja (trudna).</p>",
@@ -1083,7 +1083,7 @@
       "wounds": "5",
       "location": "Head"
     },
-    {
+    "Bruised Ribs": {
       "id": "RLBB8XHqLDM4XejE",
       "name": "Stłuczone żebra",
       "description": "<p>Wszystkie Testy Zwinności otrzymują karę -10 na [[/r 1d10]] dni.</p>",
@@ -1098,7 +1098,7 @@
       "wounds": "2",
       "location": "Body"
     },
-    {
+    "Ragged Wound": {
       "id": "S8sbrHd9zxaYiDFJ",
       "name": "Nierówne cięcie",
       "description": "<p>Postać otrzymuje 2 poziomy Stanu @Condition[Krwawienie].</p>",
@@ -1113,7 +1113,7 @@
       "wounds": "2",
       "location": "Body"
     },
-    {
+    "Arterial Damage": {
       "id": "sgBDLL1iLenHJ5um",
       "name": "Uszkodzenie tętnicy",
       "description": "<p>Postać otrzymuje 4 poziomy Stanu @Condition[Krwawienie]. Dopóki ktoś nie udzieli jej pomocy Chirurgicznej, za każdym razem gdy postać otrzyma Ranę w korpus, otrzymuje dodatkowe 2 poziomy Stanu @Condition[Krwawienie].</p>",
@@ -1133,7 +1133,7 @@
       "wounds": "3",
       "location": "Body"
     },
-    {
+    "Torn Muscles": {
       "id": "ShiLe2LWvvwTIa4o",
       "name": "Zerwane mięśnie",
       "description": "<p>Cios wbija się z impetem w przedramię. Postać otrzymuje 1 poziom Stanu @Condition[Krwawienie] oraz Uraz Zerwanie mięśni (pomniejsze).</p>",
@@ -1153,7 +1153,7 @@
       "wounds": "2",
       "location": "Arm"
     },
-    {
+    "Minor Arm Cut": {
       "id": "sJU1kEp6yoHPmhIc",
       "name": "Płytkie cięcie w ramię",
       "description": "<p>Postać otrzymuje 1 poziom Krwawienia w wyniku cięcia w ramię.</p>",
@@ -1168,7 +1168,7 @@
       "wounds": "1",
       "location": "Arm"
     },
-    {
+    "Dramatic Injury": {
       "id": "sSSUZXOXK2DSpxGx",
       "name": "Zawadiacka rana",
       "description": "<p>Mocny cios przez czoło i policzek. Postać otrzymuje 1 poziom Stanu @Condition[Krwawienie]. Po wyleczeniu takiej rany pozostaje budząca szacunek blizna, która zapewnia premię +1 PS do odpowiednich Testów w kontaktach społecznych. Premię tę można otrzymać tylko raz.</p>",
@@ -1188,7 +1188,7 @@
       "wounds": "1",
       "location": "Head"
     },
-    {
+    "Stubbed Toe": {
       "id": "TMjbr94rrtCqM6bk",
       "name": "Stłuczony palec",
       "description": "<p>W wyniku starcia postać otrzymuje bolesne uderzenie w paluch. Należy przeprowadzić Przeciętny (+20) Test Odporności, a jeśli ten się nie powiedzie, do końca następnej Rundy wszystkie Testy Zwinności obarczone będą karą -10.</p>",
@@ -1203,7 +1203,7 @@
       "wounds": "1",
       "location": "Leg"
     },
-    {
+    "Badly Twisted Knee": {
       "id": "TxXIUDqoon9TivpO",
       "name": "Skręcone kolano",
       "description": "<p>Postać, próbując uniknąć ciosu przeciwnika, odskakuje, ale manewr kończy się poważnym skręceniem kolana. Otrzymuje Uraz Zerwanie mięśni (poważne).</p>",
@@ -1218,7 +1218,7 @@
       "wounds": "3",
       "location": "Leg"
     },
-    {
+    "Brutal Dismemberment": {
       "id": "tZc5KDSVW36sFx5G",
       "name": "Odcięte ramię",
       "description": "<p>Ramię odlatuje od ciała na 1k5 metrów w losowym kierunku (patrz Rozrzut), rozbryzgując tętniczą krew, a cios przebija się przez klatkę piersiową.</p>",
@@ -1233,7 +1233,7 @@
       "wounds": "Death",
       "location": "Arm"
     },
-    {
+    "Winded": {
       "id": "UC2zRorETcI8rheP",
       "name": "Bez tchu",
       "description": "<p>Postać otrzymuje 1 poziom Stanu @Condition[Oszołomienie]. Musi również zdać Przeciętny (+20) Test Odporności albo otrzyma Stan @Condition[Powalenie]. Szybkość zmniejsza się o połowę na [[/r 1d10]] Rund, czyli dopóki postać nie zacznie oddychać normalnie.</p>",
@@ -1258,7 +1258,7 @@
       "wounds": "2",
       "location": "Body"
     },
-    {
+    "Hacked Leg": {
       "id": "uU2ibNRgeEjuSN7e",
       "name": "Porąbana noga",
       "description": "<p>Cios wgryza się głęboko w biodro. Postać otrzymuje Stany Powalenie oraz 2 poziomy Stanu @Condition[Krwawienie]. Zyskuje też Uraz Złamanie (pomniejsze). Musi także zdać Wymagający (+20) Test Odporności, w przeciwnym wypadku otrzyma również 1 poziom Stanu @Condition[Oszołomienie].</p>",
@@ -1283,7 +1283,7 @@
       "wounds": "3",
       "location": "Leg"
     },
-    {
+    "Gut Blow": {
       "id": "VAKUqXH9nGyBXiGy",
       "name": "Cios w bebechy",
       "description": "<p>Postać otrzymuje 1 poziom Stanu @Condition[Oszołomienie]. Musi również wykonać Łatwy (+40) Test Odporności. Jeśli ten się nie uda, postać zwymiotuje i otrzyma Stan @Condition[Powalenie].</p>",
@@ -1303,7 +1303,7 @@
       "wounds": "1",
       "location": "Body"
     },
-    {
+    "Badly Jarred Arm": {
       "id": "VcKpiwNiQVwJJQVm",
       "name": "Bardzo zdrętwiałe ramię",
       "description": "<p>W wyniku ataku ramię zupełnie drętwieje. Postać upuszcza wszystko, co trzymała w dłoni, która przez [[/r 1d10]] Rund - Bonus z Wytrzymałości (co najmniej 1) jest bezużyteczna. Przez ten czas należy traktować dłoń jak straconą</p>",
@@ -1311,7 +1311,7 @@
       "wounds": "2",
       "location": "Arm"
     },
-    {
+    "Sprained Ankle": {
       "id": "wbbDM7rUetyWYgLt",
       "name": "Zwichnięta kostka",
       "description": "<p>W wyniku zwichnięcia postać otrzymuje Uraz Zerwanie mięśni (pomniejsze).</p>",
@@ -1326,7 +1326,7 @@
       "wounds": "2",
       "location": "Leg"
     },
-    {
+    "Twisted Knee": {
       "id": "wnYgHZm503oOERSf",
       "name": "Nadwyrężone kolano",
       "description": "<p>Z powodu niezdarnego kroku kolano nie wytrzymuje. Wszystkie Testy Zwinności otrzymują karę -20 na [[/r 1d10]] round.</p>",
@@ -1341,7 +1341,7 @@
       "wounds": "2",
       "location": "Leg"
     },
-    {
+    "Deep Cut": {
       "id": "Wpsybql9MWbWZUeH",
       "name": "Głębokie cięcie",
       "description": "<p>Postać otrzymuje 2 poziomy Stanu @Condition[Krwawienie] w wyniku głębokiego cięcia. Ponadto otrzymuje również 1 poziom Stanu @Condition[Oszołomienie] oraz Zerwanie mięśni (pomniejsze). Musi także zdać Trudny (-20) Test Odporności, w przeciwnym wypadku otrzyma Stan @Condition[Nieprzytomny]</p>",
@@ -1366,7 +1366,7 @@
       "wounds": "3",
       "location": "Arm"
     },
-    {
+    "Lost Footing": {
       "id": "WRAuBX80vCwlnB0N",
       "name": "Utrata równowagi",
       "description": "<p>W wyniku szamotaniny postać traci równowagę. Musi także zdać Wymagający (+0) Test Odporności, w przeciwnym wypadku otrzyma Stan @Condition[Powalenie].</p>",
@@ -1381,7 +1381,7 @@
       "wounds": "1",
       "location": "Leg"
     },
-    {
+    "Minor Leg Cut": {
       "id": "wTGR340dwvAgwA9v",
       "name": "Płytkie cięcie w nogę",
       "description": "<p>Postać otrzymuje 1 poziom Stanu @Condition[Krwawienie].</p>",
@@ -1396,7 +1396,7 @@
       "wounds": "1",
       "location": "Leg"
     },
-    {
+    "Sliced Tendons": {
       "id": "WWdCfTZCgcHK2soX",
       "name": "Przecięte ścięgno",
       "description": "<p>Cios przecina ścięgna, a ramię zwisa bezwładnie - Amputacja (bardzo trudna). Postać otrzymuje: Stan @Condition[Powalenie], 3 poziomy Stanu @Condition[Krwawienie] i 1 poziom Stanu @Condition[Oszołomienie]. Musi także zdać Trudny (-20) Test Odporności, w przeciwnym wypadku otrzyma Stan @Condition[Nieprzytomny].</p>",
@@ -1426,7 +1426,7 @@
       "wounds": "5",
       "location": "Arm"
     },
-    {
+    "Mangled Ear": {
       "id": "XqxT8WjUbhsibhWd",
       "name": "Zgruchotane ucho",
       "description": "<p>Po uchu zostaje niewiele, a cios odrywa je od ciała. Postać otrzymuje 3 poziomy Stanu @Condition[Ogłuszenie] i 2 poziomy Stanu @Condition[Krwawienie]. Ponadto traci ucho - Amputacja (przeciętna).</p>",
@@ -1451,7 +1451,7 @@
       "wounds": "4",
       "location": "Head"
     },
-    {
+    "Bleeding hand": {
       "id": "Z9aSUtiwhqVHENnR",
       "name": "Krwawiąca dłoń",
       "description": "<p>Głębokie cięcie sprawia, że dłoń obficie krwawi, przez co chwyt staje się śliski. Postać otrzymuje 1 poziom Krwawienia. Dopóki dłoń będzie krwawić, we wszystkich Testach czynności, podczas których postać trzyma coś w dłoni, należy wykonać Przeciętny (+20) Test Zręczności. Jeśli ten się nie powiedzie, trzymany przedmiot wymyka się z dłoni.</p>",
@@ -1466,7 +1466,7 @@
       "wounds": "2",
       "location": "Arm"
     },
-    {
+    "Clean Break": {
       "id": "ZE7gT3UWkw7gKeMv",
       "name": "Czyste złamanie",
       "description": "<p>Z donośnym trzaskiem ramię pęka w miejscu uderzenia. Postać natychmiast upuszcza wszystko, co trzymała w dłoni, i otrzymuje Złamanie (pomniejsze). Musi także zdać Problematyczny (-10) Test Odporności, w przeciwnym wypadku otrzyma również 1 poziom Oszołomienia.</p>",
@@ -1481,7 +1481,7 @@
       "wounds": "3",
       "location": "Arm"
     },
-    {
+    "Major Chest Wound": {
       "id": "zNzlJWzCqmyLtnFS",
       "name": "Poważna rana klatki piersiowej",
       "description": "<p>Postać otrzymuje poważny cios w klatkę piersiową, który oddziela skórę od mięśni i ścięgien. Otrzymuje 4 poziomy Stanu @Condition[Krwawienie]. Dopóki ktoś nie udzieli jej pomocy Chirurgicznej i nie zszyje rany, za każdym razem gdy postać otrzyma Ranę w korpus, otrzymuje dodatkowy poziom Stanu @Condition[Krwawienie], a rana się otwiera.</p>",
@@ -1501,7 +1501,7 @@
       "wounds": "4",
       "location": "Body"
     },
-    {
+    "Damaged Artery": {
       "id": "zXuy90mI1OLjxCvc",
       "name": "Uszkodzona tętnica",
       "description": "<p>Postać otrzymuje 4 poziomy Stanu @Condition[Krwawienie]. Dopóki ktoś nie udzieli postaci pomocy Chirurgicznej, za każdym razem, gdy otrzyma ona Ranę w to ramię, dostanie dodatkowe 2 poziomy Stanu @Condition[Krwawienie].</p>",
@@ -1521,5 +1521,5 @@
       "wounds": "4",
       "location": "Arm"
     }
-  ]
+  }
 }

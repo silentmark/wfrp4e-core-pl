@@ -8,8 +8,8 @@
       "converter": "effects"
     }
   },
-  "entries": [
-    {
+  "entries": {
+    "Slenderthigh Whiptongue": {
       "id": "28MwFcDPwpcO12kt",
       "name": "Smukłoudy Jęzobicz",
       "description": null,
@@ -33,9 +33,18 @@
           "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postTerror(value, name)\n}"
         }
       },
-      "items": {}
+      "items": {
+        "Horns": {
+          "id": "5UkGwlZAf2pp0qdO",
+          "name": "Rogi ()",
+          "description": "<p>Stworzenie ma rogi lub inne ostre wyrostki (jeśli jego Cecha Stworzenia Rogi reprezentuje coś innego, będzie to określone w nawiasie). Gdy stworzenie zyskuje Przewagę na skutek Szarżowania, może wykonać Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podaną wartość Obrażeń (Bonus z Siły stworzenia jest już wliczony).</p>",
+          "originalName": "Horns",
+          "sourceId": "Compendium.wfrp4e-core.traits.BqPZn6q3VHn9HUrW",
+          "specification": "#"
+        }
+      }
     },
-    {
+    "Black Bella": {
       "id": "2lvE7Ypir9uuRjVT",
       "name": "Czarna Bella",
       "description": null,
@@ -65,16 +74,17 @@
         }
       },
       "items": {
-        "Iw5LFliUnIdaa7gL": {
+        "Ranged (50)": {
           "id": "Iw5LFliUnIdaa7gL",
           "name": "Strzelanie (50)",
           "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
+          "originalName": "Ranged (50)",
           "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
           "specification": "8"
         }
       }
     },
-    {
+    "Wood Elf": {
       "id": "5wl3KH6hXsGwUcZa",
       "name": "Leśny Elf",
       "description": null,
@@ -104,16 +114,52 @@
         }
       },
       "items": {
-        "ZVEbgMhQfBkw2lcV": {
+        "Ranged (150)": {
           "id": "ZVEbgMhQfBkw2lcV",
           "name": "Strzelanie (150)",
           "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
+          "originalName": "Ranged (150)",
           "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
           "specification": "9"
+        },
+        "Art": {
+          "id": "fdq3RFSOKl5b3WzW",
+          "name": "Sztuka ()",
+          "description": "<p>Potrafisz tworzyć dzieła sztuki w jednej z jej licznych odmian. Brak fachowych narzędzi może wiązać się z negatywnymi modyfikatorami do Testu. Poziomy Sukcesu osiągnięte podczas Testu określają, jak wysokiej jakości jest tworzone dzieło. Skomplikowane lub duże przedsięwzięcie artystyczne może wymagać Testu Wydłużonego. Umiejętność tworzenia dzieł sztuki ma niewielkie zastosowanie w walce, ale marmurowe popiersie może być rzydatne, gdy zwali się je przeciwnikowi na głowę.</p>",
+          "originalName": "Art",
+          "sourceId": "Compendium.wfrp4e-core.skills.fdq3RFSOKl5b3WzW"
+        },
+        "Entertain": {
+          "id": "0CwV96kTDRF0jUhk",
+          "name": "Występy ()",
+          "description": "<p>Ta Umiejętność pozwala ci zabawiać tłumy słowem mówionym, być może śpiewem, odgrywaniem ról lub nawet dowcipem. Udany Test oznacza, że widzowie słuchali występu, a PS wskazują, jak dobrze wypadłeś. W walce Występy mają raczej skromne zastosowanie, choć aktorstwo można wykorzystać, by zwieść lub oszukać przeciwników</p><p><b>Specjalizacje:</b> Aktorstwo, Gawędziarstwo, Komedianctwo, Śpiewanie.</p>",
+          "originalName": "Entertain",
+          "sourceId": "Compendium.wfrp4e-core.skills.0CwV96kTDRF0jUhk"
+        },
+        "Melee": {
+          "id": "F8NfBZdVSEIGCMtu",
+          "name": "Broń Biała ()",
+          "description": "<p>Ta Umiejętność opisuje twoją sprawność w posługiwaniu się rodzajem broni do walki wręcz. Każda Specjalizacja w Broni Białej oznacza, że zostałeś wyszkolony w walce daną kategorią oręża. Jeśli chcesz lub przyjdzie ci walczyć bronią, w której nie jesteś wyszkolony, zajrzyj do Rozdziału 11: Przewodnik konsumenta, gdzie w opisie broni znajdziesz zasady i negatywne modyfikatory stosowane w tej sytuacji. Rozdział 5: Zasady bardziej szczegółowo opisuje walkę i wykorzystanie tej Umiejętności.</p><p>Specjalizacje: Podstawowa, Bijatyka, Drzewcowa, Dwuręczna, Kawaleryjska, Korbacze, Parująca, Szermiercza.</p>",
+          "originalName": "Melee",
+          "sourceId": "Compendium.wfrp4e-core.skills.F8NfBZdVSEIGCMtu"
+        },
+        "Ride": {
+          "id": "MeXCAQ3wqJzX07X7",
+          "name": "Jeździectwo ()",
+          "description": "<p>Ta Umiejętność określa, jak dobrze radzisz sobie z jeżdżeniem na określonym rodzaju zwierząt. Jeździectwo (Konie) pozwala ci dosiadać koni, mułów czy osłów i im podobnych. Testy Jeździectwa musisz wykonywać jedynie wtedy, gdy podejmujesz się czegoś niecodziennego: zmuszasz rumaka do wyścigu, podejmujesz się ujeżdżania, pokonujesz niebezpieczny teren czy szarżujesz do walki. Jeśli robisz coś prostszego i posiadasz choć jeden punkt Rozwinięcia w tej Umiejętności, działanie kończy się sukcesem bez Testu.</p><p>Dosiadając wierzchowca, poruszasz się z jego Szybkością, a jeśli zmuszasz go do skoków czy biegu, wykonujesz Test Jeździectwa, a nie Atletyki. Jeśli gnasz do dalekiego celu, może być wymagany Wydłużony Test Jeździectwa, a liczba potrzebnych PS zależy od odległości do pokonania. Liczba wymaganych Testów będzie wskazywała na to, jak daleko jest do punktu docelowego. Na Testy Jeździectwa mogą wpływać modyfikatory związane z warunkami pogodowymi czy narowistością wierzchowca. Więcej informacji o nich znajduje się w Rozdziale 12: Bestiariusz.</p><p>Jeździectwo jest niezwykle przydatne i często wykorzystywane w walce, co opisano w Rozdziale 5: Zasady</p><p>Specjalizacje: Konie, Gryfy, Pegazy, Półgryfy, Wielkie Wilki</p>",
+          "originalName": "Ride",
+          "sourceId": "Compendium.wfrp4e-core.skills.MeXCAQ3wqJzX07X7"
+        },
+        "Stealth": {
+          "id": "McTtmZu3Ac8Lh48W",
+          "name": "Skradanie ()",
+          "description": "<p>Ta Umiejętność pozwala ci na podkradanie się i ukrywanie w lepszym stopniu niż innym. Testy Skradania są Testami Przeciwstawnymi, wykonywanymi przeciwko Percepcji przeciwnika i modyfikowanymi przez warunki, takie jak ciemność, łatwość ukrycia się w trakcie przemykania czy choćby twój ubiór. Spora lub Zdumiewająca Porażka podczas Testu Skradania oznacza, że ściągasz na siebie uwagę wrogów, przed którymi chciałeś się ukryć.</p><p>Skradanie się może mieć wiele zastosowań w walce. Pierwszym przychodzącym na myśl jest ukrycie się, by przygotować zasadzkę lub by zakraść się i zaatakować od tyłu. Rozdział 5: Zasady opisuje, co się wtedy dzieje. Skradania można też użyć, by niepostrzeżenie dać nogę, jeśli walka nie idzie po naszej myśli...</p><p>Specjalizacje: Podziemia, Miasto, Wieś.</p><p>Śledzenie to nic innego, jak podążanie za kimś tak, by o tym nie wiedział. Wymaga to Łączonego Testu Percepcji i Skradania. Jeśli cel próbuje zgubić ogon, Test staje się Przeciwstawny, wykonywany przeciwko Skradaniu się śledzonego. Jeśli uda ci się Test Percepcji, ale nie Skradania, podążasz za celem, ale zostajesz zauważony. Jeśli uda się Test Skradania, ale nie Percepcji, to tracisz cel z oczu, ale pozostajesz niezauważony.</p>",
+          "originalName": "Stealth",
+          "sourceId": "Compendium.wfrp4e-core.skills.McTtmZu3Ac8Lh48W"
         }
       }
     },
-    {
+    "Crypt Ghoul": {
       "id": "6B7LMdYtunAftsFN",
       "name": "Ghoul z Krypty",
       "description": "<p>Należą do najżałośniejszych stworzeń w Starym Świecie. Ghule to brzydkie, zgarbione stwory o bladej, brudnej skórze i ostrych, żółtych zębach, którymi zdzierają ciało z kości ofiar. Ghule podążają za magicznymi energiami Shyish i Dhar, co w praktyce oznacza, że ściągają na cmentarze i do krypt oraz krążą po polach bitew.</p>",
@@ -134,7 +180,7 @@
       },
       "items": {}
     },
-    {
+    "Boar": {
       "id": "7629Eaow3acVS59H",
       "name": "Dzik",
       "description": "<p>Buszujące po lasach dziki to stworzenia skryte, ale osaczone walczą, używając ostrych kłów z zaciekłością, która szokuje nieprzygotowanych. Chociaż większość dzików ma 150-180 cm długości, niektóre osiągają niezwykłe rozmiary. Największe okazy cenione są przez orki, które wykorzystują je jako przerażające wierzchowce bojowe.</p>",
@@ -168,9 +214,18 @@
           "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
         }
       },
-      "items": {}
+      "items": {
+        "Horns (Tusks)": {
+          "id": "TN5IjqMpGoM7FQTc",
+          "name": "Rogi ()",
+          "description": "<p>Stworzenie ma rogi lub inne ostre wyrostki (jeśli jego Cecha Stworzenia Rogi reprezentuje coś innego, będzie to określone w nawiasie). Gdy stworzenie zyskuje Przewagę na skutek Szarżowania, może wykonać Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podaną wartość Obrażeń (Bonus z Siły stworzenia jest już wliczony).</p>",
+          "originalName": "Horns (Tusks)",
+          "sourceId": "Compendium.wfrp4e-core.traits.BqPZn6q3VHn9HUrW",
+          "specification": "#"
+        }
+      }
     },
-    {
+    "Human": {
       "id": "7ihBjcHcewZ2Obul",
       "name": "Człowiek",
       "description": null,
@@ -178,16 +233,52 @@
       "gender": "Człowiek",
       "species": null,
       "items": {
-        "0nMFfaZyQkgXL83f": {
+        "Ranged (50)": {
           "id": "0nMFfaZyQkgXL83f",
           "name": "Strzelanie (50)",
           "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
+          "originalName": "Ranged (50)",
           "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
           "specification": "8"
+        },
+        "Art": {
+          "id": "fdq3RFSOKl5b3WzW",
+          "name": "Sztuka ()",
+          "description": "<p>Potrafisz tworzyć dzieła sztuki w jednej z jej licznych odmian. Brak fachowych narzędzi może wiązać się z negatywnymi modyfikatorami do Testu. Poziomy Sukcesu osiągnięte podczas Testu określają, jak wysokiej jakości jest tworzone dzieło. Skomplikowane lub duże przedsięwzięcie artystyczne może wymagać Testu Wydłużonego. Umiejętność tworzenia dzieł sztuki ma niewielkie zastosowanie w walce, ale marmurowe popiersie może być rzydatne, gdy zwali się je przeciwnikowi na głowę.</p>",
+          "originalName": "Art",
+          "sourceId": "Compendium.wfrp4e-core.skills.fdq3RFSOKl5b3WzW"
+        },
+        "Entertain": {
+          "id": "0CwV96kTDRF0jUhk",
+          "name": "Występy ()",
+          "description": "<p>Ta Umiejętność pozwala ci zabawiać tłumy słowem mówionym, być może śpiewem, odgrywaniem ról lub nawet dowcipem. Udany Test oznacza, że widzowie słuchali występu, a PS wskazują, jak dobrze wypadłeś. W walce Występy mają raczej skromne zastosowanie, choć aktorstwo można wykorzystać, by zwieść lub oszukać przeciwników</p><p><b>Specjalizacje:</b> Aktorstwo, Gawędziarstwo, Komedianctwo, Śpiewanie.</p>",
+          "originalName": "Entertain",
+          "sourceId": "Compendium.wfrp4e-core.skills.0CwV96kTDRF0jUhk"
+        },
+        "Melee": {
+          "id": "F8NfBZdVSEIGCMtu",
+          "name": "Broń Biała ()",
+          "description": "<p>Ta Umiejętność opisuje twoją sprawność w posługiwaniu się rodzajem broni do walki wręcz. Każda Specjalizacja w Broni Białej oznacza, że zostałeś wyszkolony w walce daną kategorią oręża. Jeśli chcesz lub przyjdzie ci walczyć bronią, w której nie jesteś wyszkolony, zajrzyj do Rozdziału 11: Przewodnik konsumenta, gdzie w opisie broni znajdziesz zasady i negatywne modyfikatory stosowane w tej sytuacji. Rozdział 5: Zasady bardziej szczegółowo opisuje walkę i wykorzystanie tej Umiejętności.</p><p>Specjalizacje: Podstawowa, Bijatyka, Drzewcowa, Dwuręczna, Kawaleryjska, Korbacze, Parująca, Szermiercza.</p>",
+          "originalName": "Melee",
+          "sourceId": "Compendium.wfrp4e-core.skills.F8NfBZdVSEIGCMtu"
+        },
+        "Ride": {
+          "id": "MeXCAQ3wqJzX07X7",
+          "name": "Jeździectwo ()",
+          "description": "<p>Ta Umiejętność określa, jak dobrze radzisz sobie z jeżdżeniem na określonym rodzaju zwierząt. Jeździectwo (Konie) pozwala ci dosiadać koni, mułów czy osłów i im podobnych. Testy Jeździectwa musisz wykonywać jedynie wtedy, gdy podejmujesz się czegoś niecodziennego: zmuszasz rumaka do wyścigu, podejmujesz się ujeżdżania, pokonujesz niebezpieczny teren czy szarżujesz do walki. Jeśli robisz coś prostszego i posiadasz choć jeden punkt Rozwinięcia w tej Umiejętności, działanie kończy się sukcesem bez Testu.</p><p>Dosiadając wierzchowca, poruszasz się z jego Szybkością, a jeśli zmuszasz go do skoków czy biegu, wykonujesz Test Jeździectwa, a nie Atletyki. Jeśli gnasz do dalekiego celu, może być wymagany Wydłużony Test Jeździectwa, a liczba potrzebnych PS zależy od odległości do pokonania. Liczba wymaganych Testów będzie wskazywała na to, jak daleko jest do punktu docelowego. Na Testy Jeździectwa mogą wpływać modyfikatory związane z warunkami pogodowymi czy narowistością wierzchowca. Więcej informacji o nich znajduje się w Rozdziale 12: Bestiariusz.</p><p>Jeździectwo jest niezwykle przydatne i często wykorzystywane w walce, co opisano w Rozdziale 5: Zasady</p><p>Specjalizacje: Konie, Gryfy, Pegazy, Półgryfy, Wielkie Wilki</p>",
+          "originalName": "Ride",
+          "sourceId": "Compendium.wfrp4e-core.skills.MeXCAQ3wqJzX07X7"
+        },
+        "Stealth": {
+          "id": "McTtmZu3Ac8Lh48W",
+          "name": "Skradanie ()",
+          "description": "<p>Ta Umiejętność pozwala ci na podkradanie się i ukrywanie w lepszym stopniu niż innym. Testy Skradania są Testami Przeciwstawnymi, wykonywanymi przeciwko Percepcji przeciwnika i modyfikowanymi przez warunki, takie jak ciemność, łatwość ukrycia się w trakcie przemykania czy choćby twój ubiór. Spora lub Zdumiewająca Porażka podczas Testu Skradania oznacza, że ściągasz na siebie uwagę wrogów, przed którymi chciałeś się ukryć.</p><p>Skradanie się może mieć wiele zastosowań w walce. Pierwszym przychodzącym na myśl jest ukrycie się, by przygotować zasadzkę lub by zakraść się i zaatakować od tyłu. Rozdział 5: Zasady opisuje, co się wtedy dzieje. Skradania można też użyć, by niepostrzeżenie dać nogę, jeśli walka nie idzie po naszej myśli...</p><p>Specjalizacje: Podziemia, Miasto, Wieś.</p><p>Śledzenie to nic innego, jak podążanie za kimś tak, by o tym nie wiedział. Wymaga to Łączonego Testu Percepcji i Skradania. Jeśli cel próbuje zgubić ogon, Test staje się Przeciwstawny, wykonywany przeciwko Skradaniu się śledzonego. Jeśli uda ci się Test Percepcji, ale nie Skradania, podążasz za celem, ale zostajesz zauważony. Jeśli uda się Test Skradania, ale nie Percepcji, to tracisz cel z oczu, ale pozostajesz niezauważony.</p>",
+          "originalName": "Stealth",
+          "sourceId": "Compendium.wfrp4e-core.skills.McTtmZu3Ac8Lh48W"
         }
       }
     },
-    {
+    "Troll": {
       "id": "7qslmdLa7so3BmFk",
       "name": "Troll",
       "description": "<p>Trolle to brudne, wstrętne stwory, które nękają wszystkie zakątki Starego Świata. Szybko dostosowują się do otoczenia i występują w różnych odmianach. Wszystkie jednak są wielkie i okazałe. To stworzenia tępe i kierowane instynktem poszukiwania żarcia, ale lubią gromadzić też inne dobra. Leża trolli mogą skrywać przydatne i cenne skarby... A także okropne resztki ich posiłków. Chociaż istnieje wiele gatunków trolli, wszystkie mają pewne wspólne cechy: zazwyczaj są niezwykle głupie, co oznacza, że każdy bystry przeciwnik ma nad nimi przewagę; mogą się regenerować, co sprawia, że niezwykle trudno je zabić; a także potrafią na zawołanie zwrócić ostatni posiłek, wymiotując żrącą żółcią na szokująco dużą odległość - chociaż nie cierpią tego robić, ponieważ są potem straszliwie głodne.</p>",
@@ -243,7 +334,7 @@
       },
       "items": {}
     },
-    {
+    "Griffon": {
       "id": "8g9rnHLiZ1pJcPPt",
       "name": "Gryf",
       "description": "<p>Posiadające przód ciała i skrzydła orła oraz zad wielkiego kota gryfy to eleganckie bestie o naturalnie dumnym i królewskim wyglądzie. Gniazdują wysoko w górach otaczających Imperium i są szybkimi, skutecznymi zabójcami, nieskorymi do bezmyślnego zniszczenia, jakiego dokonują stwory takie jak hipogryfy lub mantikory. Być może ze względu na ten pozór szlachetności wizerunek gryfa jest nadzwyczaj popularny w Imperium i wykorzystywany w heraldyce, ikonografii religijnej oraz jako symbol samego Imperium. Ponadto gryfy są jednymi z najinteligentniejszych zwierząt. Jeśli zostaną schwytane stosunkowo młode i poddane prawidłowemu szkoleniu, mogą być niesamowicie wierne, zdolne do przewidywania i posłusznego wykonywania szerokiego wachlarza komend. Są tak bardzo poszukiwane, że co rusz słyszy się o myśliwym, który stracił życie, próbując zdobyć jaja gryfa na sprzedaż. Prawdopodobnie najsłynniejszym gryfem w Reiklandzie jest Szpon Śmierci. Trzymany w Imperialnym Zwierzyńcu w Altdorfie Szpon Śmierci stanowi osobistą własność następcy tronu Reiklandu i podobno wykluł się dzięki troskliwej opiece samego Imperatora Karla-Franza - ta opowieść zapoczątkowała drukowanie wszelkiego rodzaju sprośnych karykatur w wywrotowych pamfletach.</p>",
@@ -259,7 +350,7 @@
       },
       "items": {}
     },
-    {
+    "Daemonette of Slaanesh": {
       "id": "8gG2Wim6wAlJWRax",
       "name": "Demonetka Slaanesha",
       "description": "<p>Podobnie jak wszystkie stwory Księcia Bólu i Rozkoszy, demonetki Slaanesha są jednocześnie piękne i budzące grozę. Otacza je nieziemski urok, który urąga wszelkiemu rozsądkowi i przeczy zdrowym zmysłom. Sprawia, że wrogowie są bezsilni, nie będąc w stanie stawiać oporu, zafascynowani bluźnierczą zmysłowością potwornych postaci. Demonetki mają kremową, bladą skórę i wielkie, głęboko czarne oczy. Ich delikatne skronie zdobią powiewające swobodnie włosy o nienaturalnej barwie. Ich smukłe ręce kończą się zakrzywionymi krabimi szczypcami zamiast dłońmi.</p>",
@@ -280,7 +371,7 @@
       },
       "items": {}
     },
-    {
+    "Jabberslythe": {
       "id": "9q8QzWB4o7aj6ZxL",
       "name": "Dżabersmok",
       "description": "<p>Dżabersmoki to prastare stwory Chaosu, które czają się pod cienistymi okapami najgłębszych, najciemniejszych lasów. To szaleńcze stworzenia. Dżabersmok stanowi odrażające połączenie ropuchy, smoka mułowego i owada - wszystko to wypełnione kwasową, czarną krwią, która tryska obficie z najmniejszej rany. Co gorsza, sam widok tego koszmaru przyprawia o utratę zdrowych zmysłów. Ofiara bełkocze, szwargocze bez ładu i składu, rzuca się z pazurami do oczu i rechocze szaleńczym śmiechem. To ułatwia dżabersmokowi jej zdobycie. Nie koniec na tym. Dżabersmok ma lepki jęzor, którym może atakować i wciągać kolejny posiłek do rozdziawionej gęby. Jak przystało na jego wygląd, stwór chodzi, kiwając się nieporadnie, a nawet posiada skrzydła, które są jednak za małe, by mogły faktycznie poderwać nadęte cielsko.</p>",
@@ -320,16 +411,17 @@
         }
       },
       "items": {
-        "PgSdNDqWz5I7nh2V": {
+        "Tongue Attack (12)": {
           "id": "PgSdNDqWz5I7nh2V",
           "name": "Atak Językiem (12)",
           "description": "<p>Chwytny język stworzenia może owijać się wokół ofiary, wciągając ją aż do makabrycznego końca. W swojej Turze stworzenie może wykonać Darmowy Atak, wydając 1 Przewagę. To atak dystansowy, który zadaje tyle Obrażeń, ile wynosi podana wartość (zasięg podany jest w nawiasie). Jeśli atak trafi, cel dostaje 1 Stan Pochwycenie, a jeśli ma mniejszy Rozmiar, zostaje przyciągnięty do stworzenia i Związany Walką wręcz. Stworzenie może następnie zdecydować, czy wypuści cel, wykonując Darmowy Atak z użyciem swojej cechy Broń, czy będzie trzymać cel owinięty językiem, zapoczątkowując Chwyt.</p>",
+          "originalName": "Tongue Attack (12)",
           "sourceId": "Compendium.wfrp4e-core.traits.xg6z63j6BH5AaqLL",
           "specification": "+5"
         }
       }
     },
-    {
+    "Chaos Warrior": {
       "id": "a05lQsGjSv62wF0U",
       "name": "Wojownik Chaosu",
       "description": "<p>Ciężko uzbrojone i zwaliste brutale w pancerzach ozdobionych kolcami i symbolami swoich bóstw wywołującymi zabobonny strach - wojownicy Chaosu zdecydowanie nie są już ludźmi. Nic nie pozostało z ich wcześniejszego życia. Istnieją wyłącznie po to, by służyć swojemu mrocznemu patronowi. Podczas gdy większość wojowników Chaosu to wywyższeni łupieżcy pochodzący z krain położonych daleko na północy, kilku wybranych kultystów może otrzymać od Mrocznych Bogów nagrodę w postaci Pancerza Chaosu. Taka zbroja daje im wielką potęgę, a ceną jest to, że nie będą mogli jej zdjąć, dopóki będą żyli. Ponieważ niewielu wojowników może się z nimi mierzyć w walce, a żaden rycerz nie jest lepiej chroniony, zwykle żyją całkiem długo.</p>",
@@ -355,7 +447,7 @@
       },
       "items": {}
     },
-    {
+    "Hydra": {
       "id": "A4G4bTYxot3ZygZO",
       "name": "Hydra",
       "description": "<p>Wielogłowa, przypominająca jaszczura hydra ma ciężkie ciało podtrzymujące plątaninę szyi i łbów, które zioną dymiącym ogniem i wściekle kąsają. To zaskakująco zaciekłe i skryte stwory. Hydry potrafią skradać się za ofiarą przez wiele kilometrów, jednak zwykle tracą cierpliwość i rzucają się do ataku przy akompaniamencie ryku ze wszystkich paszcz.</p>",
@@ -399,9 +491,18 @@
           "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")}\n\nlet wounds = duplicate(this.actor.status.wounds)\nlet regen = (await new Roll(\"1d10\").roll()).total\n\nif (wounds.value >= wounds.max)\n   return\n\nif (wounds.value > 0)\n{\n   wounds.value += regen\n   if (wounds.value > wounds.max) \n        wounds.value = wounds.max\n   chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`\n   \n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse if (regen >= 8)\n{\n    chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n    wounds.value += 1\n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse\n{\n    chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n}\n\nthis.actor.update({\"system.status.wounds\" : wounds})\nChatMessage.create(chatData)"
         }
       },
-      "items": {}
+      "items": {
+        "Breath (Fire)": {
+          "id": "ewORSQXEbQj77ibt",
+          "name": "Zionięcie ()",
+          "description": "<p>Stworzenie posługuje się zionięciem jako potężną bronią. W swojej Turze, kosztem 2 Przewag, może aktywować Zionięcie jako Darmowy Atak. Wybierz 1 cel, który stworzenie widzi w promieniu 20 + Bonus z Wytrzymałości metrów. Trafione zostają wszystkie postacie wokół tego celu w promieniu tylu metrów, ile wynosi Bonus z Siły, podobnie jak wszystkie postacie znajdujące się między stworzeniem a celem. Przeprowadź Test Przeciwstawny Umiejętności Strzeleckie/Unik przeciwko wszystkim objętym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Każdy cel, który przegrał Test, otrzymuje trafienie zadające wskazaną wartość Obrażeń. Co więcej, jeśli przy Cesze Stworzenia wymieniony jest jeden z opisanych niżej typów zionięcia, zastosuj wskazane zasady.</p><p><b>Dym</b>: Obszar wypełnia się dymem, który zasłania pole widzenia na tyle Rund, ile wynosi Bonus z Wytrzymałości.</p><p><b>Elektryczność</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Oszołomienie.</p><p><b>Kwas</b>: Noszony przez objęte efektem postaci pancerze oraz wszelka broń dostają 1 punkt Uszkodzeń.</p><p><b>Ogień</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Podpalenie.</p><p><b>Trucizna</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Zatrucie.</p><p><b>Zimno</b>: Cele dostają jeden Stan Oszołomiony za każde pełne 5 odniesionych Ran (minimalnie 1).</p><p>Stworzenie jest odporne na własne Zionięcie. Ten atak jest Magiczny.</p>",
+          "originalName": "Breath (Fire)",
+          "sourceId": "Compendium.wfrp4e-core.traits.uqGxFOEqeurwkAO3",
+          "specification": "# (Typ)"
+        }
+      }
     },
-    {
+    "Snake": {
       "id": "AAiKqD1IoweDpJI7",
       "name": "Wąż",
       "description": "<p>Węże można znaleźć w całym Imperium, zwłaszcza w głębi lasów. Większość jest niegroźna, ale niektóre mają zabójczy jad lub potrafią udusić swoją ofiarę. Podobnie jak wiele stworzeń Starego Świata, mogą wyrosnąć do olbrzymich rozmiarów - jak ogromny żmij bagienny, który stanowi prawdziwe zagrożenie nawet dla najsilniejszego najemnika.</p>",
@@ -467,7 +568,7 @@
       },
       "items": {}
     },
-    {
+    "Horse": {
       "id": "b1R5sW6lYIViJ2ki",
       "name": "Koń",
       "description": "<p>Konie hodowane są z przeznaczeniem do wykonywania rozmaitych prac. Należą do nich chyże wierzchowce kurierów, krzepkie rumaki rycerzy i wielkie konie ciągnące wozy farmerów. Są tak przydatne, że handel końmi stał się w Reiklandzie niemal konkurencją sportową. Nieuczciwi sprzedawcy chcą zarobić kosztem ignoranckiego nabywcy. Wypełniają luki i malują zęby podstarzałych koni albo wpychają im do nozdrzy szmaty wchłaniające śluz. Nieznający się na rzeczy kupujący powinni mieć się na baczności.</p>",
@@ -488,7 +589,7 @@
       },
       "items": {}
     },
-    {
+    "Minotaur": {
       "id": "cAK1bMj1ne7HPcxI",
       "name": "Minotaur",
       "description": "<p>Potężne i zwaliste, przypominające byki minotaury górują nawet nad największymi bestigorami. Stada z dużą grupą minotaurów uważają się za szczególnie pobłogosławione przez Mrocznych Bogów. Hordy zwierzoludzi zbierają się wokół minotaurów, których imponująca postura dodaje odwagi mniejszym stworom.</p>",
@@ -512,9 +613,18 @@
           "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
         }
       },
-      "items": {}
+      "items": {
+        "Horns": {
+          "id": "s7BB52tvCMyKv7rx",
+          "name": "Rogi ()",
+          "description": "<p>Stworzenie ma rogi lub inne ostre wyrostki (jeśli jego Cecha Stworzenia Rogi reprezentuje coś innego, będzie to określone w nawiasie). Gdy stworzenie zyskuje Przewagę na skutek Szarżowania, może wykonać Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podaną wartość Obrażeń (Bonus z Siły stworzenia jest już wliczony).</p>",
+          "originalName": "Horns",
+          "sourceId": "Compendium.wfrp4e-core.traits.BqPZn6q3VHn9HUrW",
+          "specification": "#"
+        }
+      }
     },
-    {
+    "Bray-Shaman": {
       "id": "cHVOdcEkuatqjYV1",
       "name": "Szaman Rykowców",
       "description": "<p>Szamani rykowców rodzą się z instynktowną umiejętnością władania mocami Chaosu, z której korzystają z przerażającą skutecznością. Są unikatowi wśród zwierzoludzi i nigdy nie muszą bronić się przed innymi członkami swojego stada, nikt bowiem nie ośmiela się wyrządzać im krzywdy - ich głos wyraża podobno wolę samych Mrocznych Bogów.</p>",
@@ -538,9 +648,18 @@
           "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
         }
       },
-      "items": {}
+      "items": {
+        "Horns": {
+          "id": "R3QInQJ2s8snyqZL",
+          "name": "Rogi ()",
+          "description": "<p>Stworzenie ma rogi lub inne ostre wyrostki (jeśli jego Cecha Stworzenia Rogi reprezentuje coś innego, będzie to określone w nawiasie). Gdy stworzenie zyskuje Przewagę na skutek Szarżowania, może wykonać Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podaną wartość Obrażeń (Bonus z Siły stworzenia jest już wliczony).</p>",
+          "originalName": "Horns",
+          "sourceId": "Compendium.wfrp4e-core.traits.BqPZn6q3VHn9HUrW",
+          "specification": "#"
+        }
+      }
     },
-    {
+    "Orc": {
       "id": "E7BiDqsB55BrOQut",
       "name": "Ork",
       "description": "<p>My som najlepsze. My nie som jak te słabe gobosy czy gupie trole. My som twardziele! Jak które powiedzom, że my nie som, to my im zdepczem łby.</p>\n<p>- Gurkk skulltaka, wódz orków</p>\n<p>&nbsp;</p>\n<p>Orki są wstrętne, brutalne, wojownicze i niemal niewrażliwe na ból. Mają muskularne, krępe ciała, szerokie, potężne barki i nie pozwolą, by drobnostka w rodzaju straconej ręki przeszkodziła im w dobrym łomocie. Stworzone są do walki i niczego innego nie lubią bardziej. Gdy nie mają wrogów, z którymi mogą walczyć, biorą się za grupy rywalizujących z nimi zielonoskórych. Jeśli nie ma rywali, walczą między sobą. Chociaż nie tak liczne jak gobliny, są od nich większe i silniejsze, co pokazują przy każdej okazji. Orki mogą osiągać ogromne rozmiary. Większe orki są silniejsze, twardsze i bardziej agresywne, a zatem cieszą się większym prestiżem: w ich wojowniczym społeczeństwie rację ma ten, kto jest silniejszy. Niektóre orki dosiadają w boju wielkich dzików. To widok, który u mało kogo nie wzbudza przerażenia.</p>",
@@ -560,16 +679,17 @@
         }
       },
       "items": {
-        "hfq5Dnb2IT2WfRGf": {
+        "Ranged (50)": {
           "id": "hfq5Dnb2IT2WfRGf",
           "name": "Strzelanie (50)",
           "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
+          "originalName": "Ranged (50)",
           "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
           "specification": "8"
         }
       }
     },
-    {
+    "Dieter Käsegeier": {
       "id": "ePPk15Vxu9RxPtYV",
       "name": "Dieter Käsegeier",
       "description": null,
@@ -577,16 +697,68 @@
       "gender": null,
       "species": null,
       "items": {
-        "oLc1S9aswJrhkReV": {
+        "Trade (Cheesemonger)": {
+          "id": "wKwel9MG7NIG3i3w",
+          "name": "Rzemiosło ()",
+          "description": "<p>Większość mieszkańców Reiklandu wykonuje jakiś fach, nawet poszukiwacze przygód zwykle mają stabilne zajęcie czy pełnią godną funkcję, zapewniającą im byt pomiędzy przygodami, od których włos się jeży na głowie, a kiszki skręcają ze strachu.</p><p>Posiadanie tej Umiejętności oznacza, że potrafisz coś wytwarzać lub oferujesz usługi i posiadasz wiedzę związaną z wykonywanym zawodem.</p><p>Dzięki posiadaniu tej Umiejętności jesteś w stanie bez Testu wykonywać codzienne obowiązki związane z pracą, zakładając, że masz potrzebne narzędzia. Test Rzemiosła musisz wykonać, gdy pracujesz w pośpiechu, nieodpowiednich warunkach lub gdy próbujesz opracować coś nowego lub wysokiej jakości.</p><p>Bardzo często Testy Rzemiosła są Testami Wydłużonymi. Wymagane PS i poświęcony czas zależą od tego, czego się podjąłeś. Ugotowanie szybkiego obiadu, by zachwycić miejscowego władykę, wymaga Testu Rzemiosła (Gotowanie), ale i mniej czasu niż zaprojektowanie i zbudowanie okrętu wojennego, przy czym nieodzowny będzie Test Rzemiosła (Szkutnictwo).</p><p>Test Rzemiosła można wykonać zamiast odpowiedniej Wiedzy, jeśli bohater próbuje przypomnieć sobie informacje związane z jego fachem. W takim przypadku MG może wykorzystać do niego Inteligencję zamiast Zręczności, choć dla płynności gry można z tej zmiany zrezygnować.</p><p>W większości przypadków Testy Rzemiosła nie mają zastosowania w walce. Z drugiej strony, ilu rzemieślników, tyle fachów, a wszystko zależy od okoliczności. Na przykład udany Test Rzemiosła (Aptekarstwo) może być przydatny, gdy walka będzie toczyła się w aptece. W takim przypadku osoba obeznana z ingrediencjami szybko znajdzie te, którymi warto cisnąć w przeciwnika.</p><p>Umiejętność Rzemiosło jest wykorzystywana między przygodami podczas Zajęcia Wytwórstwo.</p>",
+          "originalName": "Trade (Cheesemonger)",
+          "sourceId": "Compendium.wfrp4e-core.skills.wKwel9MG7NIG3i3w"
+        },
+        "Art": {
+          "id": "MDubBPPE7C8Q2qTR",
+          "name": "Sztuka ()",
+          "description": "<p>Potrafisz tworzyć dzieła sztuki w jednej z jej licznych odmian. Brak fachowych narzędzi może wiązać się z negatywnymi modyfikatorami do Testu. Poziomy Sukcesu osiągnięte podczas Testu określają, jak wysokiej jakości jest tworzone dzieło. Skomplikowane lub duże przedsięwzięcie artystyczne może wymagać Testu Wydłużonego. Umiejętność tworzenia dzieł sztuki ma niewielkie zastosowanie w walce, ale marmurowe popiersie może być rzydatne, gdy zwali się je przeciwnikowi na głowę.</p>",
+          "originalName": "Art",
+          "sourceId": "Compendium.wfrp4e-core.skills.fdq3RFSOKl5b3WzW"
+        },
+        "Entertain": {
+          "id": "RmnTqhRJYQZaOzuh",
+          "name": "Występy ()",
+          "description": "<p>Ta Umiejętność pozwala ci zabawiać tłumy słowem mówionym, być może śpiewem, odgrywaniem ról lub nawet dowcipem. Udany Test oznacza, że widzowie słuchali występu, a PS wskazują, jak dobrze wypadłeś. W walce Występy mają raczej skromne zastosowanie, choć aktorstwo można wykorzystać, by zwieść lub oszukać przeciwników</p><p><b>Specjalizacje:</b> Aktorstwo, Gawędziarstwo, Komedianctwo, Śpiewanie.</p>",
+          "originalName": "Entertain",
+          "sourceId": "Compendium.wfrp4e-core.skills.0CwV96kTDRF0jUhk"
+        },
+        "Melee": {
+          "id": "xNekCAKmrxubmS21",
+          "name": "Broń Biała ()",
+          "description": "<p>Ta Umiejętność opisuje twoją sprawność w posługiwaniu się rodzajem broni do walki wręcz. Każda Specjalizacja w Broni Białej oznacza, że zostałeś wyszkolony w walce daną kategorią oręża. Jeśli chcesz lub przyjdzie ci walczyć bronią, w której nie jesteś wyszkolony, zajrzyj do Rozdziału 11: Przewodnik konsumenta, gdzie w opisie broni znajdziesz zasady i negatywne modyfikatory stosowane w tej sytuacji. Rozdział 5: Zasady bardziej szczegółowo opisuje walkę i wykorzystanie tej Umiejętności.</p><p>Specjalizacje: Podstawowa, Bijatyka, Drzewcowa, Dwuręczna, Kawaleryjska, Korbacze, Parująca, Szermiercza.</p>",
+          "originalName": "Melee",
+          "sourceId": "Compendium.wfrp4e-core.skills.F8NfBZdVSEIGCMtu"
+        },
+        "Ride": {
+          "id": "4mxm3tcphtnS638r",
+          "name": "Jeździectwo ()",
+          "description": "<p>Ta Umiejętność określa, jak dobrze radzisz sobie z jeżdżeniem na określonym rodzaju zwierząt. Jeździectwo (Konie) pozwala ci dosiadać koni, mułów czy osłów i im podobnych. Testy Jeździectwa musisz wykonywać jedynie wtedy, gdy podejmujesz się czegoś niecodziennego: zmuszasz rumaka do wyścigu, podejmujesz się ujeżdżania, pokonujesz niebezpieczny teren czy szarżujesz do walki. Jeśli robisz coś prostszego i posiadasz choć jeden punkt Rozwinięcia w tej Umiejętności, działanie kończy się sukcesem bez Testu.</p><p>Dosiadając wierzchowca, poruszasz się z jego Szybkością, a jeśli zmuszasz go do skoków czy biegu, wykonujesz Test Jeździectwa, a nie Atletyki. Jeśli gnasz do dalekiego celu, może być wymagany Wydłużony Test Jeździectwa, a liczba potrzebnych PS zależy od odległości do pokonania. Liczba wymaganych Testów będzie wskazywała na to, jak daleko jest do punktu docelowego. Na Testy Jeździectwa mogą wpływać modyfikatory związane z warunkami pogodowymi czy narowistością wierzchowca. Więcej informacji o nich znajduje się w Rozdziale 12: Bestiariusz.</p><p>Jeździectwo jest niezwykle przydatne i często wykorzystywane w walce, co opisano w Rozdziale 5: Zasady</p><p>Specjalizacje: Konie, Gryfy, Pegazy, Półgryfy, Wielkie Wilki</p>",
+          "originalName": "Ride",
+          "sourceId": "Compendium.wfrp4e-core.skills.MeXCAQ3wqJzX07X7"
+        },
+        "Stealth": {
+          "id": "Oke7F8bz3mqG0x1y",
+          "name": "Skradanie ()",
+          "description": "<p>Ta Umiejętność pozwala ci na podkradanie się i ukrywanie w lepszym stopniu niż innym. Testy Skradania są Testami Przeciwstawnymi, wykonywanymi przeciwko Percepcji przeciwnika i modyfikowanymi przez warunki, takie jak ciemność, łatwość ukrycia się w trakcie przemykania czy choćby twój ubiór. Spora lub Zdumiewająca Porażka podczas Testu Skradania oznacza, że ściągasz na siebie uwagę wrogów, przed którymi chciałeś się ukryć.</p><p>Skradanie się może mieć wiele zastosowań w walce. Pierwszym przychodzącym na myśl jest ukrycie się, by przygotować zasadzkę lub by zakraść się i zaatakować od tyłu. Rozdział 5: Zasady opisuje, co się wtedy dzieje. Skradania można też użyć, by niepostrzeżenie dać nogę, jeśli walka nie idzie po naszej myśli...</p><p>Specjalizacje: Podziemia, Miasto, Wieś.</p><p>Śledzenie to nic innego, jak podążanie za kimś tak, by o tym nie wiedział. Wymaga to Łączonego Testu Percepcji i Skradania. Jeśli cel próbuje zgubić ogon, Test staje się Przeciwstawny, wykonywany przeciwko Skradaniu się śledzonego. Jeśli uda ci się Test Percepcji, ale nie Skradania, podążasz za celem, ale zostajesz zauważony. Jeśli uda się Test Skradania, ale nie Percepcji, to tracisz cel z oczu, ale pozostajesz niezauważony.</p>",
+          "originalName": "Stealth",
+          "sourceId": "Compendium.wfrp4e-core.skills.McTtmZu3Ac8Lh48W"
+        },
+        "Acute Sense (Taste)": {
+          "id": "Pf0EQ6yXj4Ds51nC",
+          "name": "Wyczulony Zmysł",
+          "description": "<p>Jeden z twoich pięciu zmysłów jest tak wyczulony, że wyczuwasz to, co umyka innym. Możesz wykonać Test Percepcji, by dowiedzieć się czegoś więcej niż inni, opierając się na tym szczególnym zmyśle. Przykładowo może to być dostrzeżenie dalekiego orła, którego nie widzą inni, wywęszenie prawie niewyczuwalnej trucizny, dosłyszenie bicia serca myszy kryjącej się w ścianie, wyczucie dotykiem ukrytej wiadomości wyskrobanej na papierze czy porównanie smaku dwóch piw od tego samego piwowara, by dowiedzieć się, czy zostały nalane z dwóch różnych beczek.</p>",
+          "originalName": "Acute Sense (Taste)",
+          "sourceId": "Compendium.wfrp4e-core.talents.9h82z72XGo9tfgQS",
+          "tests": "Percepcja (z wykorzystaniem tego zmysłu)",
+          "specification": null
+        },
+        "Sword": {
           "id": "oLc1S9aswJrhkReV",
           "name": "Miecz",
           "description": null,
+          "originalName": "Sword",
           "sourceId": null,
           "special": null
         }
       }
     },
-    {
+    "Clanrat": {
       "id": "F1vAZZcmVKkRw8xn",
       "name": "Klanbrat",
       "description": "<p>Większość skavenów stanowią klanbracia pochodzący z jednego z wielu złożonych skaveńskich klanów, które nieustannie kłócą się, politykują, wbijają sobie noże w plecy i w końcu wojują między sobą. Generalnie działają z rozkazu skavena o wyższym statusie, ale zawsze szukają sposobu, by zdobyć dla siebie lepszą pozycję, najczęściej poprzez zdradę. Zwykle odziani są w pleśniejącą skórę lub brudne szmaty z kawałkami pordzewiałego i zmatowiałego metalu służącymi za prowizoryczny pancerz. Klanbracia często wysyłani są jako zwiadowcy lub łupieżcy, którzy zdobywają potrzebne dobra, szukają spaczenia lub łowią niewolników.</p>",
@@ -617,7 +789,7 @@
       },
       "items": {}
     },
-    {
+    "Bog Octopus": {
       "id": "FmEDHnfAe2iIugpt",
       "name": "Bagienna Ośmiornica",
       "description": "<p>Bagienne ośmiornice czają się w płytkich wodach, zazwyczaj w bagnach i na moczarach. Czekają na ofiarę w całkowitym bezruchu, zdolne wyczuć wibracje powodowane przez zbliżające się stworzenia. Potem wyskakują z błotnistej wody, starając się chwycić i utopić zdobycz za pomocą silnych macek. Bagienne ośmiornice mają kamuflaż doskonale przystosowany do bagnistego otoczenia - zwykle pokryte są zielonymi i brązowymi cętkami. Jedyną wskazówką zdradzającą ich obecność są wielkie, szkliste oczy. Większość ośmiornic ma macki długości około 6 metrów i ciało mierzące prawie 2 metry. Krążą jednak opowieści, że mogą urosnąć wielokrotnie większe, zwłaszcza gdy mają zapewniony regularny napływ mięsa.</p>",
@@ -641,9 +813,18 @@
           "script": "args.actor.addCondition(\"entangled\")"
         }
       },
-      "items": {}
+      "items": {
+        "8x Tentacles": {
+          "id": "pxwG2nlPkYHg3LQE",
+          "name": "# Macki",
+          "description": "<p>Stworzenie ma macki w liczbie #. Dostaje jeden Darmowy Atak na mackę. Atak każdej macki zadaje tyle Obrażeń, ile wynosi podana wartość - zawiera już ona Bonus z Siły stworzenia. Jeśli atak zada Obrażenia, może ponadto dać przeciwnikowi Stan Pochwycenie, co zapoczątkowuje Chwyt celu przez daną mackę. Jeśli macka wykonuje Chwyt, aby rozstrzygnąć jego wynik, użyj Darmowego Ataku macki zamiast wykorzystywania Akcji stwora.</p>",
+          "originalName": "8x Tentacles",
+          "sourceId": "Compendium.wfrp4e-core.traits.4xF7M6ylIiGntekh",
+          "specification": "Wartość"
+        }
+      }
     },
-    {
+    "Pigeon": {
       "id": "ge5zXH2qboxaac7v",
       "name": "Gołąb",
       "description": "<p>Gołębie hodowane są w całym Reiklandzie w celu dostarczania wszelkiego rodzaju wiadomości. Ostatnio zasłynęły z przenoszenia bardziej zabójczych ładunków. Łatwo dostępne ptaki stały się ulubieńcami inżynierów, którzy z różnym powodzeniem wysyłają swoje ‘bomby gołębie’.</p>",
@@ -652,7 +833,7 @@
       "species": null,
       "items": {}
     },
-    {
+    "Ghost": {
       "id": "GgSxlomoV220kd3G",
       "name": "Duch",
       "description": "<p>Duchy to pozostałości udręczonych istot, które umarły, za życia nie ukończywszy swoich spraw. Podobnie jak szkielety i zombi, duchy mogą być wzywane przez wampiry lub nekromantów albo nawiedzać obszary przesycone Dhar. W wyjątkowych okolicznościach szczególnie zdeterminowane duchy wyrywają się z Królestwa Morra, pragnąc wypełnić swoje życiowe plany. Jednak takie przypadki szybko przyciągają uwagę Morrytów lub czarodziejów Zakonu Ametystu. Wzywane za pomocą nekromanckiej sztuki duchy zbierają się w rój, tworząc wielkie Zastępy Duchów, które spadają jak burza na wrogów, siejąc strach i zamęt.</p>",
@@ -678,7 +859,7 @@
       },
       "items": {}
     },
-    {
+    "Fenbeast": {
       "id": "HKSn8iNSS9WcAuJc",
       "name": "Fenbeast",
       "description": "<p>Tworzone przez czarodziejów z mułu bagnisk i moczarów bestie bagienne to praktycznie bezmyślne automaty spajane siłą magii. Są w przybliżeniu człekokształtne i zbudowane z błota, kości, gałęzi oraz śluzu. Utrzymanie ich w całości wymaga znacznych zasobów magii. Od czasu do czasu tworzone są przez czarodziejów władających magią Jadeitu. Służą im za ochroniarzy lub wypełniają określone zadania wymagające brutalnej siły albo bezmyślnego zabijania. Czasami pojawiają się same z siebie, powstając w stojących, gnijących stawach, gdzie nurt magii został zakłócony. Podobno Kolegium Jadeitu w Altdorfie trzyma tuzin tych stworów w charakterze służących, którzy dźwigają ciężary i przynoszą różne rzeczy dla starszych czarodziejów. W spójnej postaci trzyma je nieustanne splatanie magii dokonywane przez dziesiątki uczniów.</p>",
@@ -714,7 +895,7 @@
       },
       "items": {}
     },
-    {
+    "Cairn Wraith": {
       "id": "hMbcLVjk7eUdxtqC",
       "name": "Widma z Kurchanu",
       "description": "<p>Widma z kurhanu to wyjątkowo potężne duchy, eteryczne pozostałości ambitnych nekromantów, którzy usiłowali przedłużyć swoje istnienie za pomocą mrocznej magii. Za życia odznaczali się złowrogą siłą woli, która po śmierci pcha ich do wywierania straszliwej zemsty na pełnych ognia duszach żywych. Wiele takich widm nawiedza spowite mgłami kurhany, jakich pełno na ziemiach Imperium, szczególnie w Hägerkrybach.</p>",
@@ -730,7 +911,7 @@
       },
       "items": {}
     },
-    {
+    "Giant": {
       "id": "HZfZaCjdniz5Z4CP",
       "name": "Olbrzym",
       "description": "<p>Olbrzymy to samotnicze stworzenia, które zwykle unikają cywilizacji. Większość czatuje w niedostępnych i wysoko położonych miejscach wokół Imperium. Zaszywają się w jaskiniach i zapomnianych ruinach, z dala od mniejszych ludzi, chociaż czasami wędrują na podgórza w poszukiwaniu jedzenia. Słyną z agresywności i gwałtowności zarówno ze względu na swoje zastraszające rozmiary, pożeranie bydła, jak i związki z łupieżczymi armiami zielonoskórych, którzy ich niewolą. W rzeczywistości wiele olbrzymów to łagodne istoty, czasem podatne na wybuchy wściekłości i zaciekle chroniące swojej prywatności, ale niekoniecznie wrogie wobec innych. Ponieważ są długowieczne, plotki utrzymują, że olbrzymy nabyły prastarą wiedzę, chociaż większość wydaje się niezbyt przytomna i z pewnością bardziej zainteresowana alkoholem niż debatami na temat historii.</p>",
@@ -764,9 +945,18 @@
           "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         }
       },
-      "items": {}
+      "items": {
+        "Breath (Druken Vomit)": {
+          "id": "n1dteYXARg1VyHg0",
+          "name": "Zionięcie ()",
+          "description": "<p>Stworzenie posługuje się zionięciem jako potężną bronią. W swojej Turze, kosztem 2 Przewag, może aktywować Zionięcie jako Darmowy Atak. Wybierz 1 cel, który stworzenie widzi w promieniu 20 + Bonus z Wytrzymałości metrów. Trafione zostają wszystkie postacie wokół tego celu w promieniu tylu metrów, ile wynosi Bonus z Siły, podobnie jak wszystkie postacie znajdujące się między stworzeniem a celem. Przeprowadź Test Przeciwstawny Umiejętności Strzeleckie/Unik przeciwko wszystkim objętym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Każdy cel, który przegrał Test, otrzymuje trafienie zadające wskazaną wartość Obrażeń. Co więcej, jeśli przy Cesze Stworzenia wymieniony jest jeden z opisanych niżej typów zionięcia, zastosuj wskazane zasady.</p><p><b>Dym</b>: Obszar wypełnia się dymem, który zasłania pole widzenia na tyle Rund, ile wynosi Bonus z Wytrzymałości.</p><p><b>Elektryczność</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Oszołomienie.</p><p><b>Kwas</b>: Noszony przez objęte efektem postaci pancerze oraz wszelka broń dostają 1 punkt Uszkodzeń.</p><p><b>Ogień</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Podpalenie.</p><p><b>Trucizna</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Zatrucie.</p><p><b>Zimno</b>: Cele dostają jeden Stan Oszołomiony za każde pełne 5 odniesionych Ran (minimalnie 1).</p><p>Stworzenie jest odporne na własne Zionięcie. Ten atak jest Magiczny.</p>",
+          "originalName": "Breath (Druken Vomit)",
+          "sourceId": "Compendium.wfrp4e-core.traits.uqGxFOEqeurwkAO3",
+          "specification": "# (Typ)"
+        }
+      }
     },
-    {
+    "Dwarf": {
       "id": "ImdVnI8mEiOmKriI",
       "name": "Krasnolud",
       "description": null,
@@ -781,16 +971,52 @@
         }
       },
       "items": {
-        "N9zq40S3SuK0qLpl": {
+        "Ranged (50)": {
           "id": "N9zq40S3SuK0qLpl",
           "name": "Strzelanie (50)",
           "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
+          "originalName": "Ranged (50)",
           "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
           "specification": "8"
+        },
+        "Art": {
+          "id": "fdq3RFSOKl5b3WzW",
+          "name": "Sztuka ()",
+          "description": "<p>Potrafisz tworzyć dzieła sztuki w jednej z jej licznych odmian. Brak fachowych narzędzi może wiązać się z negatywnymi modyfikatorami do Testu. Poziomy Sukcesu osiągnięte podczas Testu określają, jak wysokiej jakości jest tworzone dzieło. Skomplikowane lub duże przedsięwzięcie artystyczne może wymagać Testu Wydłużonego. Umiejętność tworzenia dzieł sztuki ma niewielkie zastosowanie w walce, ale marmurowe popiersie może być rzydatne, gdy zwali się je przeciwnikowi na głowę.</p>",
+          "originalName": "Art",
+          "sourceId": "Compendium.wfrp4e-core.skills.fdq3RFSOKl5b3WzW"
+        },
+        "Entertain": {
+          "id": "0CwV96kTDRF0jUhk",
+          "name": "Występy ()",
+          "description": "<p>Ta Umiejętność pozwala ci zabawiać tłumy słowem mówionym, być może śpiewem, odgrywaniem ról lub nawet dowcipem. Udany Test oznacza, że widzowie słuchali występu, a PS wskazują, jak dobrze wypadłeś. W walce Występy mają raczej skromne zastosowanie, choć aktorstwo można wykorzystać, by zwieść lub oszukać przeciwników</p><p><b>Specjalizacje:</b> Aktorstwo, Gawędziarstwo, Komedianctwo, Śpiewanie.</p>",
+          "originalName": "Entertain",
+          "sourceId": "Compendium.wfrp4e-core.skills.0CwV96kTDRF0jUhk"
+        },
+        "Melee": {
+          "id": "F8NfBZdVSEIGCMtu",
+          "name": "Broń Biała ()",
+          "description": "<p>Ta Umiejętność opisuje twoją sprawność w posługiwaniu się rodzajem broni do walki wręcz. Każda Specjalizacja w Broni Białej oznacza, że zostałeś wyszkolony w walce daną kategorią oręża. Jeśli chcesz lub przyjdzie ci walczyć bronią, w której nie jesteś wyszkolony, zajrzyj do Rozdziału 11: Przewodnik konsumenta, gdzie w opisie broni znajdziesz zasady i negatywne modyfikatory stosowane w tej sytuacji. Rozdział 5: Zasady bardziej szczegółowo opisuje walkę i wykorzystanie tej Umiejętności.</p><p>Specjalizacje: Podstawowa, Bijatyka, Drzewcowa, Dwuręczna, Kawaleryjska, Korbacze, Parująca, Szermiercza.</p>",
+          "originalName": "Melee",
+          "sourceId": "Compendium.wfrp4e-core.skills.F8NfBZdVSEIGCMtu"
+        },
+        "Ride": {
+          "id": "MeXCAQ3wqJzX07X7",
+          "name": "Jeździectwo ()",
+          "description": "<p>Ta Umiejętność określa, jak dobrze radzisz sobie z jeżdżeniem na określonym rodzaju zwierząt. Jeździectwo (Konie) pozwala ci dosiadać koni, mułów czy osłów i im podobnych. Testy Jeździectwa musisz wykonywać jedynie wtedy, gdy podejmujesz się czegoś niecodziennego: zmuszasz rumaka do wyścigu, podejmujesz się ujeżdżania, pokonujesz niebezpieczny teren czy szarżujesz do walki. Jeśli robisz coś prostszego i posiadasz choć jeden punkt Rozwinięcia w tej Umiejętności, działanie kończy się sukcesem bez Testu.</p><p>Dosiadając wierzchowca, poruszasz się z jego Szybkością, a jeśli zmuszasz go do skoków czy biegu, wykonujesz Test Jeździectwa, a nie Atletyki. Jeśli gnasz do dalekiego celu, może być wymagany Wydłużony Test Jeździectwa, a liczba potrzebnych PS zależy od odległości do pokonania. Liczba wymaganych Testów będzie wskazywała na to, jak daleko jest do punktu docelowego. Na Testy Jeździectwa mogą wpływać modyfikatory związane z warunkami pogodowymi czy narowistością wierzchowca. Więcej informacji o nich znajduje się w Rozdziale 12: Bestiariusz.</p><p>Jeździectwo jest niezwykle przydatne i często wykorzystywane w walce, co opisano w Rozdziale 5: Zasady</p><p>Specjalizacje: Konie, Gryfy, Pegazy, Półgryfy, Wielkie Wilki</p>",
+          "originalName": "Ride",
+          "sourceId": "Compendium.wfrp4e-core.skills.MeXCAQ3wqJzX07X7"
+        },
+        "Stealth": {
+          "id": "McTtmZu3Ac8Lh48W",
+          "name": "Skradanie ()",
+          "description": "<p>Ta Umiejętność pozwala ci na podkradanie się i ukrywanie w lepszym stopniu niż innym. Testy Skradania są Testami Przeciwstawnymi, wykonywanymi przeciwko Percepcji przeciwnika i modyfikowanymi przez warunki, takie jak ciemność, łatwość ukrycia się w trakcie przemykania czy choćby twój ubiór. Spora lub Zdumiewająca Porażka podczas Testu Skradania oznacza, że ściągasz na siebie uwagę wrogów, przed którymi chciałeś się ukryć.</p><p>Skradanie się może mieć wiele zastosowań w walce. Pierwszym przychodzącym na myśl jest ukrycie się, by przygotować zasadzkę lub by zakraść się i zaatakować od tyłu. Rozdział 5: Zasady opisuje, co się wtedy dzieje. Skradania można też użyć, by niepostrzeżenie dać nogę, jeśli walka nie idzie po naszej myśli...</p><p>Specjalizacje: Podziemia, Miasto, Wieś.</p><p>Śledzenie to nic innego, jak podążanie za kimś tak, by o tym nie wiedział. Wymaga to Łączonego Testu Percepcji i Skradania. Jeśli cel próbuje zgubić ogon, Test staje się Przeciwstawny, wykonywany przeciwko Skradaniu się śledzonego. Jeśli uda ci się Test Percepcji, ale nie Skradania, podążasz za celem, ale zostajesz zauważony. Jeśli uda się Test Skradania, ale nie Percepcji, to tracisz cel z oczu, ale pozostajesz niezauważony.</p>",
+          "originalName": "Stealth",
+          "sourceId": "Compendium.wfrp4e-core.skills.McTtmZu3Ac8Lh48W"
         }
       }
     },
-    {
+    "Cultist": {
       "id": "jfMhkQGzjFWDxVOm",
       "name": "Kultysta",
       "description": "<p>Dla tych, których nie dotknęła plaga Chaosu, jego piętno wydaje się przerażająco obce. Jednak tacy, którzy zostali wystawieni na jego wpływ, każdy krok ku potępieniu, każdy pomysł zbliżający ich do Chaosu uważają nie tylko za logiczny, ale i nieunikniony. Niektórzy szczególnie gorliwi wyznawcy zakazanych kultów obdarzani są przez swych bogów „darami”: to paskudne mutacje, które gwarantują im śmierć w przypadku odkrycia ich sekretu przez łowców czarownic.</p>",
@@ -806,7 +1032,7 @@
       },
       "items": {}
     },
-    {
+    "Wyvern": {
       "id": "KeB0khEeq462qTJw",
       "name": "Wywerna",
       "description": "<p>Chociaż niedouczeni często mylą je ze smokami, poza powierzchownym podobieństwem cuchnące wywerny w niczym nie przypominają tych dostojnych stworzeń. To tchórzliwe ścierwojady o słabym wzroku. Zwykle zaspokajają swój wielki apetyt, porywając bezbronne zwierzęta - głównie owce i kozy - unikają też otwartej walki, gdy to tylko możliwe. W odróżnieniu od innych potworów z gór wywerny nie chronią szczególnie zaciekle terytorium i przeważnie przenoszą się w inne miejsce, gdy coś wtargnie na ich tereny łowieckie. </p>",
@@ -830,9 +1056,18 @@
           "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
         }
       },
-      "items": {}
+      "items": {
+        "Horns": {
+          "id": "NSS8rnTIgUUHPGoQ",
+          "name": "Rogi ()",
+          "description": "<p>Stworzenie ma rogi lub inne ostre wyrostki (jeśli jego Cecha Stworzenia Rogi reprezentuje coś innego, będzie to określone w nawiasie). Gdy stworzenie zyskuje Przewagę na skutek Szarżowania, może wykonać Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podaną wartość Obrażeń (Bonus z Siły stworzenia jest już wliczony).</p>",
+          "originalName": "Horns",
+          "sourceId": "Compendium.wfrp4e-core.traits.BqPZn6q3VHn9HUrW",
+          "specification": "#"
+        }
+      }
     },
-    {
+    "Stormvermin": {
       "id": "kl4qHg0mqWOApBqH",
       "name": "Szturmoszczur",
       "description": "<p>Elitarnymi wojownikami skavenów są szturmoszczury: większe, silniejsze, twardsze i bardziej zdyscyplinowane od klanbraci. Służą jako podstawowa jednostka każdego większego napadu i pełnią funkcję ochroniarzy ważnych skavenów. Szturmoszczury są zwykle dobrze uzbrojone i opancerzone. Posługują się bronią preferowaną przez swój klan.</p>",
@@ -858,7 +1093,7 @@
       },
       "items": {}
     },
-    {
+    "Fimir": {
       "id": "kt9ob9BdK6zLDWxn",
       "name": "Fimir",
       "description": "<p>Fimiry to tajemnicze, jednookie, podobne do gadów stworzenia, które grasują w najciemniejszych zakątkach wilgotnych bagien i trzęsawisk zachodniego Reiklandu. Unikają światła słonecznego i pojawiają się zwykle tylko o świcie lub o zmierzchu albo pod osłoną mgły, aby porywać ofiary w sobie tylko znanych, przerażających celach. Znane są przypadki, gdy ludzcy czarownicy na tyle lekkomyślni lub zdesperowani, by zwracać się do demonów, szukali fimirów, chcąc poznać ich niepokojące tajemnice. Mówi się bowiem, że stwory te przywołują i kontrolują istoty demoniczne. Można tylko zgadywać, czy większe ryzyko stanowi igranie z Niszczycielskimi Potęgami, czy układanie się z fimirami. Społeczeństwo fimirów jest matriarchalne. Każdemu klanowi przewodzi potężna wiedźma zwana mergą, której pomaga kadra pomniejszych czarowników nazywanych dirachami. Większość członków klanu to pokorne szerle. Chroni ich kasta wojowników, fimmów, którzy mają kostne kolce i guzy na ogonach. Używają ich do gruchotania kości niebacznych przeciwników.</p>",
@@ -879,7 +1114,7 @@
       },
       "items": {}
     },
-    {
+    "Bear": {
       "id": "KtYgLHcSLpHmnGI2",
       "name": "Niedźwiedź",
       "description": "<p>To wędrowcy po bezdrożach Reiklandu. Niedźwiedzie zwykle są nieśmiałymi samotnikami. Stają się agresywne tylko wtedy, gdy intruzi zagrażają ich młodym lub gdy są ranne. Kiedy brakuje pożywienia, podchodzą do niechronionych osad i podróżnych, zwłaszcza tych, którzy nie pilnują należycie swojego prowiantu.</p>",
@@ -910,7 +1145,7 @@
       },
       "items": {}
     },
-    {
+    "Bloodletter of Khorne": {
       "id": "KZkuwdOYmE3nwB2n",
       "name": "Krwiopuszcz Khorne'a'",
       "description": "<p>Wybrańcy Khorna, krwiopuszcze, grasują na polach bitew Starego Świata, zbierając czaszki i odbierając żywoty ku czci Boga Krwi. Z ich potwornych, rogatych obliczy wystają ostre jak igły zęby. Ich krwawoczerwona skóra jest twarda jak mosiądz wykuty na kowadłach nieustannej wojny. Każdy krwiopuszcz niesie Piekielne Ostrze, przeraźliwie ostry miecz unurzany w posoce, którym wymachuje z przerażającą niedbałością, poddając się słodkiemu doznaniu bezsensownej rzezi.</p>",
@@ -934,9 +1169,18 @@
           "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
         }
       },
-      "items": {}
+      "items": {
+        "Horns": {
+          "id": "VnV0xlNp0lXm0PB3",
+          "name": "Rogi ()",
+          "description": "<p>Stworzenie ma rogi lub inne ostre wyrostki (jeśli jego Cecha Stworzenia Rogi reprezentuje coś innego, będzie to określone w nawiasie). Gdy stworzenie zyskuje Przewagę na skutek Szarżowania, może wykonać Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podaną wartość Obrażeń (Bonus z Siły stworzenia jest już wliczony).</p>",
+          "originalName": "Horns",
+          "sourceId": "Compendium.wfrp4e-core.traits.BqPZn6q3VHn9HUrW",
+          "specification": "#"
+        }
+      }
     },
-    {
+    "Wolf": {
       "id": "lSvYEInG8sZ03vqd",
       "name": "Wilk",
       "description": "<p>Wilki zazwyczaj polują w stadach i znane są jako zacięci łowcy, którzy ścigają swoją ofiarę przez dziesiątki kilometrów bez odpoczynku czy wytchnienia. W Reiklandzie grasuje kilka odmian wilków, włącznie z groźnymi olbrzymimi wilkami, które są chwytane i hodowane przez gobliny do użytku jako strażnicy oraz wierzchowce.</p>",
@@ -972,7 +1216,7 @@
       },
       "items": {}
     },
-    {
+    "Dragon": {
       "id": "LZttdCIxmFr1sGsS",
       "name": "Smok",
       "description": "<p>Smoki rządziły niebiosami na długo przed tym, zanim starsze rasy pojawiły się w Znanym Świecie. Podczas gdy współczesne smoki są ledwie cieniem swoich prastarych braci, pozostają jednymi z najpotężniejszych stworzeń znanych Imperium. Kilka pozostałych starych smoków jest przerażająco ogromnych. Rzadko budzą się ze snu. Mała drużyna poszukiwaczy przygód, która rozjuszyłaby smoka, powinna brać nogi za pas. Przeciw takiej bestii wiele nie wskóra.</p>",
@@ -1006,9 +1250,18 @@
           "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
         }
       },
-      "items": {}
+      "items": {
+        "Breath (Various)": {
+          "id": "3LUp5fMUYJ9Q56qP",
+          "name": "Zionięcie ()",
+          "description": "<p>Stworzenie posługuje się zionięciem jako potężną bronią. W swojej Turze, kosztem 2 Przewag, może aktywować Zionięcie jako Darmowy Atak. Wybierz 1 cel, który stworzenie widzi w promieniu 20 + Bonus z Wytrzymałości metrów. Trafione zostają wszystkie postacie wokół tego celu w promieniu tylu metrów, ile wynosi Bonus z Siły, podobnie jak wszystkie postacie znajdujące się między stworzeniem a celem. Przeprowadź Test Przeciwstawny Umiejętności Strzeleckie/Unik przeciwko wszystkim objętym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Każdy cel, który przegrał Test, otrzymuje trafienie zadające wskazaną wartość Obrażeń. Co więcej, jeśli przy Cesze Stworzenia wymieniony jest jeden z opisanych niżej typów zionięcia, zastosuj wskazane zasady.</p><p><b>Dym</b>: Obszar wypełnia się dymem, który zasłania pole widzenia na tyle Rund, ile wynosi Bonus z Wytrzymałości.</p><p><b>Elektryczność</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Oszołomienie.</p><p><b>Kwas</b>: Noszony przez objęte efektem postaci pancerze oraz wszelka broń dostają 1 punkt Uszkodzeń.</p><p><b>Ogień</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Podpalenie.</p><p><b>Trucizna</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Zatrucie.</p><p><b>Zimno</b>: Cele dostają jeden Stan Oszołomiony za każde pełne 5 odniesionych Ran (minimalnie 1).</p><p>Stworzenie jest odporne na własne Zionięcie. Ten atak jest Magiczny.</p>",
+          "originalName": "Breath (Various)",
+          "sourceId": "Compendium.wfrp4e-core.traits.uqGxFOEqeurwkAO3",
+          "specification": "# (Typ)"
+        }
+      }
     },
-    {
+    "Demigryph": {
       "id": "MLtDY4bwzGQpaABN",
       "name": "Demigryf",
       "description": "<p>Posiadające głowę orła i korpus lwa półgryfy to potężne stworzenia o szlachetnym wyglądzie. Wędrują po lasach i łąkach Imperium, zwykle trzymając się z dala od ludzkich osad. Polują w pojedynkę. Najodważniejsze zakony rycerskie wykorzystują schwytane półgryfy jako rumaki bojowe. W odróżnieniu od większych potwornych wierzchowców, które zazwyczaj są zabierane jako młode lub hodowane w niewoli, te często chwyta się dorosłe. Stanowi to wręcz rytuał inicjacji w niektórych zakonach.</p>",
@@ -1029,7 +1282,7 @@
       },
       "items": {}
     },
-    {
+    "Skeleton": {
       "id": "Mt5JAoOSaEH1PdcP",
       "name": "Szkielet",
       "description": "<p>Szkielety to pozbawione ciała kości dawno umarłych, poruszane mroczną magią, która zmusza je, by chodziły po ziemi, szydząc z żywych. Ci, którzy po śmierci nie zostali złożeni na spoczynek zgodnie z rytuałami Morra, Boga Śmierci, mogą zostać wskrzeszeni w tej postaci przez wystarczająco potężnego nekromantę. Całkowicie bezmyślne szkielety będą walczyły, dopóki ich kości nie zostaną rozbite na kawałki. Nie wiedzą, co to odwaga, ponieważ nie wiedzą, co to strach. Nie mogą zostać zabite, ponieważ nie są żywe.</p>",
@@ -1060,7 +1313,7 @@
       },
       "items": {}
     },
-    {
+    "Ogre": {
       "id": "nPvDzBcqDGuRaS7x",
       "name": "Ogr",
       "description": "<p><em><span class=\"fontstyle0\"><span class=\"fontstyle0\">‘Tak, wezwałem je, ponieważ potrzebowałem dodatkowych rąk do pracy. Tak, wiem, że pożerają wasze bydło przeznaczone na sprzedaż. I tak, wiem, że ogry mają wielki apetyt. Wywiesiłem w miejscowej strażnicy ogłoszenie o małej nagrodzie dla kogokolwiek, kto zdoła sprawić, by sobie poszły. To powinno w zupełności wystarczyć.’ </span></span></em></p>\n<p><span class=\"fontstyle0\"><span class=\"fontstyle0\" style=\"font-size: 10pt;\">- Augustus von Raushvel, baron Doliny Raush Vale</span> &nbsp;<br style=\"font-variant-numeric: normal; font-variant-east-asian: normal; line-height: normal; text-align: -webkit-auto; text-size-adjust: auto;\"></span></p>\n<p>&nbsp;</p>\n<p><span class=\"fontstyle0\">Są wielkie, hałaśliwe, brutalne i niezwykle porywcze. Życiową motywacją ogrów jest potrzeba napełniania swoich ogromnych, muskularnych brzuchów. Brakuje im sprytu lub inteligencji, by robić to mądrze, dlatego w większości sytuacji standardowo wybierają rozwiązanie siłowe. Ogry pochodzą z krain położonych daleko na wschodzie, ale są częstym widokiem w Starym Świecie, uwielbiają bowiem wędrować i stale poszukują nowego mięsiwa za horyzontem. W czasie swoich trwających dekady wypraw po jedzenie ciężko pracują, starają się integrować, noszą miejscowe ubrania i naśladują lokalne zwyczaje, które są w stanie zrozumieć, ponieważ to wszystko zwiększa szansę na otrzymanie kolejnego posiłku. W Imperium często służą w Armii Prowincji i codziennie widuje się je w większych miastach, gdzie pracują jako osiłki do wynajęcia. Niziołkowa Gildia Majstrów (przedsiębiorcy budowlani) w wielu miastach i miasteczkach Imperium praktycznie całkowicie opanowała rynek taniej siły roboczej, jaką stanowią ogry, co bardzo irytuje konkurencję.</span></p>",
@@ -1086,7 +1339,7 @@
       },
       "items": {}
     },
-    {
+    "Stellemar": {
       "id": "nRJxtciIhTHKqAvY",
       "name": "Stellemar",
       "description": null,
@@ -1116,15 +1369,51 @@
         }
       },
       "items": {
-        "DUtznJOWO0BxbDsB": {
+        "Art": {
+          "id": "2i3xWlNycMqxH9dA",
+          "name": "Sztuka ()",
+          "description": "<p>Potrafisz tworzyć dzieła sztuki w jednej z jej licznych odmian. Brak fachowych narzędzi może wiązać się z negatywnymi modyfikatorami do Testu. Poziomy Sukcesu osiągnięte podczas Testu określają, jak wysokiej jakości jest tworzone dzieło. Skomplikowane lub duże przedsięwzięcie artystyczne może wymagać Testu Wydłużonego. Umiejętność tworzenia dzieł sztuki ma niewielkie zastosowanie w walce, ale marmurowe popiersie może być rzydatne, gdy zwali się je przeciwnikowi na głowę.</p>",
+          "originalName": "Art",
+          "sourceId": "Compendium.wfrp4e-core.skills.fdq3RFSOKl5b3WzW"
+        },
+        "Entertain": {
+          "id": "VerUYEhmNSC1CzBD",
+          "name": "Występy ()",
+          "description": "<p>Ta Umiejętność pozwala ci zabawiać tłumy słowem mówionym, być może śpiewem, odgrywaniem ról lub nawet dowcipem. Udany Test oznacza, że widzowie słuchali występu, a PS wskazują, jak dobrze wypadłeś. W walce Występy mają raczej skromne zastosowanie, choć aktorstwo można wykorzystać, by zwieść lub oszukać przeciwników</p><p><b>Specjalizacje:</b> Aktorstwo, Gawędziarstwo, Komedianctwo, Śpiewanie.</p>",
+          "originalName": "Entertain",
+          "sourceId": "Compendium.wfrp4e-core.skills.0CwV96kTDRF0jUhk"
+        },
+        "Melee": {
+          "id": "umdo4AdnAmTKhuMc",
+          "name": "Broń Biała ()",
+          "description": "<p>Ta Umiejętność opisuje twoją sprawność w posługiwaniu się rodzajem broni do walki wręcz. Każda Specjalizacja w Broni Białej oznacza, że zostałeś wyszkolony w walce daną kategorią oręża. Jeśli chcesz lub przyjdzie ci walczyć bronią, w której nie jesteś wyszkolony, zajrzyj do Rozdziału 11: Przewodnik konsumenta, gdzie w opisie broni znajdziesz zasady i negatywne modyfikatory stosowane w tej sytuacji. Rozdział 5: Zasady bardziej szczegółowo opisuje walkę i wykorzystanie tej Umiejętności.</p><p>Specjalizacje: Podstawowa, Bijatyka, Drzewcowa, Dwuręczna, Kawaleryjska, Korbacze, Parująca, Szermiercza.</p>",
+          "originalName": "Melee",
+          "sourceId": "Compendium.wfrp4e-core.skills.F8NfBZdVSEIGCMtu"
+        },
+        "Ride": {
+          "id": "MNU1Lw3R0aRKT79U",
+          "name": "Jeździectwo ()",
+          "description": "<p>Ta Umiejętność określa, jak dobrze radzisz sobie z jeżdżeniem na określonym rodzaju zwierząt. Jeździectwo (Konie) pozwala ci dosiadać koni, mułów czy osłów i im podobnych. Testy Jeździectwa musisz wykonywać jedynie wtedy, gdy podejmujesz się czegoś niecodziennego: zmuszasz rumaka do wyścigu, podejmujesz się ujeżdżania, pokonujesz niebezpieczny teren czy szarżujesz do walki. Jeśli robisz coś prostszego i posiadasz choć jeden punkt Rozwinięcia w tej Umiejętności, działanie kończy się sukcesem bez Testu.</p><p>Dosiadając wierzchowca, poruszasz się z jego Szybkością, a jeśli zmuszasz go do skoków czy biegu, wykonujesz Test Jeździectwa, a nie Atletyki. Jeśli gnasz do dalekiego celu, może być wymagany Wydłużony Test Jeździectwa, a liczba potrzebnych PS zależy od odległości do pokonania. Liczba wymaganych Testów będzie wskazywała na to, jak daleko jest do punktu docelowego. Na Testy Jeździectwa mogą wpływać modyfikatory związane z warunkami pogodowymi czy narowistością wierzchowca. Więcej informacji o nich znajduje się w Rozdziale 12: Bestiariusz.</p><p>Jeździectwo jest niezwykle przydatne i często wykorzystywane w walce, co opisano w Rozdziale 5: Zasady</p><p>Specjalizacje: Konie, Gryfy, Pegazy, Półgryfy, Wielkie Wilki</p>",
+          "originalName": "Ride",
+          "sourceId": "Compendium.wfrp4e-core.skills.MeXCAQ3wqJzX07X7"
+        },
+        "Stealth": {
+          "id": "2N1kE0ojilsHZNZJ",
+          "name": "Skradanie ()",
+          "description": "<p>Ta Umiejętność pozwala ci na podkradanie się i ukrywanie w lepszym stopniu niż innym. Testy Skradania są Testami Przeciwstawnymi, wykonywanymi przeciwko Percepcji przeciwnika i modyfikowanymi przez warunki, takie jak ciemność, łatwość ukrycia się w trakcie przemykania czy choćby twój ubiór. Spora lub Zdumiewająca Porażka podczas Testu Skradania oznacza, że ściągasz na siebie uwagę wrogów, przed którymi chciałeś się ukryć.</p><p>Skradanie się może mieć wiele zastosowań w walce. Pierwszym przychodzącym na myśl jest ukrycie się, by przygotować zasadzkę lub by zakraść się i zaatakować od tyłu. Rozdział 5: Zasady opisuje, co się wtedy dzieje. Skradania można też użyć, by niepostrzeżenie dać nogę, jeśli walka nie idzie po naszej myśli...</p><p>Specjalizacje: Podziemia, Miasto, Wieś.</p><p>Śledzenie to nic innego, jak podążanie za kimś tak, by o tym nie wiedział. Wymaga to Łączonego Testu Percepcji i Skradania. Jeśli cel próbuje zgubić ogon, Test staje się Przeciwstawny, wykonywany przeciwko Skradaniu się śledzonego. Jeśli uda ci się Test Percepcji, ale nie Skradania, podążasz za celem, ale zostajesz zauważony. Jeśli uda się Test Skradania, ale nie Percepcji, to tracisz cel z oczu, ale pozostajesz niezauważony.</p>",
+          "originalName": "Stealth",
+          "sourceId": "Compendium.wfrp4e-core.skills.McTtmZu3Ac8Lh48W"
+        },
+        "Ranged (Bow)": {
           "id": "DUtznJOWO0BxbDsB",
           "name": "Broń Zasięgowa (Łuk)",
           "description": "<p>Byle pierwszy lepszy potrafi cisnąć kamieniem, wykorzystując do tego Umiejętności Strzeleckie, ale skuteczne używanie łuków czy pistoletów wymaga ćwiczeń i praktyki.</p><p>Jeśli chcesz lub przyjdzie ci strzelać czy miotać bronią, gdy nie jesteś wyszkolony, zajrzyj do Rozdziału 11: Przewodnik konsumenta, gdzie w opisie oręża znajdziesz zasady i negatywne modyfikatory stosowane w tej sytuacji. Rozdział 5: Zasady bardziej szczegółowo opisuje walkę i wykorzystanie tej Umiejętności. </p><p>Specjalizacje: Broń Eksperymentalna, Broń Miotana, Broń Oplątująca, Broń Prochowa, Kusze, Łuki, Materiały Wybuchowe, Proce</p>",
+          "originalName": "Ranged (Bow)",
           "sourceId": "Compendium.wfrp4e-core.skills.Z9hQe46ykQBZneoU"
         }
       }
     },
-    {
+    "Giant Rat": {
       "id": "oenbbB0PitRWUBfZ",
       "name": "Olbrzymi Szczur",
       "description": "<p>Szczury przedostają się wszędzie. Szczególnie rozpowszechnione są w miastach i miasteczkach. Im bardziej stłoczeni są ludzie, tym bardziej stłoczone są z nimi szczury, co jest szczególnie groźne, gdy stwory okazują się nosicielami zarazy. Chociaż szczury zwykle są małe, mogą wyrastać do monstrualnych rozmiarów. Pojawiały się doniesienia o szczurach pod Altdorfem o rozmiarach człowieka lub jeszcze większych. Aby trzymać je w ryzach, zatrudnia się szczurołapów.</p>",
@@ -1160,7 +1449,7 @@
       },
       "items": {}
     },
-    {
+    "Mutant": {
       "id": "P0GkA7DPaLbeOTkf",
       "name": "Mutant",
       "description": "<p>Jednym z najtragiczniejszych losów, jaki może stać się udziałem człowieka, jest ulegnięcie mutagennemu wpływowi Chaosu. To może wydarzyć się bez jakiegokolwiek powodu. Bywa nawet, że rodzą się zmutowane dzieci. Gdy coś takiego się stanie, wielu rodziców nie potrafi zdobyć się na zamordowanie własnego potomstwa. Zamiast tego porzucają je w lasach, gdzie umiera albo zostaje przyjęte przez innych mutantów, a nawet zwierzoludzi. Bez względu na to, jak bardzo mogą być niewinni, wszyscy mutanci budzą grozę wśród zwykłych ludzi, dlatego większość porzuconych i zgorzkniałych mutantów oddaje się Mrocznym Bogom. Ewentualnie kończą ze sobą, zanim będzie za późno.</p>",
@@ -1168,16 +1457,17 @@
       "gender": null,
       "species": null,
       "items": {
-        "PAvotUwS46Wlcked": {
+        "Any Creature Trait": {
           "id": "PAvotUwS46Wlcked",
           "name": "Dowolna Cecha Stworzenia",
           "description": null,
+          "originalName": "Any Creature Trait",
           "sourceId": null,
           "specification": null
         }
       }
     },
-    {
+    "High Elf": {
       "id": "QutqbzpxKqsjQ6yN",
       "name": "Wysoki Elf",
       "description": null,
@@ -1207,16 +1497,52 @@
         }
       },
       "items": {
-        "ZVEbgMhQfBkw2lcV": {
+        "Ranged (150)": {
           "id": "ZVEbgMhQfBkw2lcV",
           "name": "Strzelanie (150)",
           "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
+          "originalName": "Ranged (150)",
           "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
           "specification": "9"
+        },
+        "Art": {
+          "id": "fdq3RFSOKl5b3WzW",
+          "name": "Sztuka ()",
+          "description": "<p>Potrafisz tworzyć dzieła sztuki w jednej z jej licznych odmian. Brak fachowych narzędzi może wiązać się z negatywnymi modyfikatorami do Testu. Poziomy Sukcesu osiągnięte podczas Testu określają, jak wysokiej jakości jest tworzone dzieło. Skomplikowane lub duże przedsięwzięcie artystyczne może wymagać Testu Wydłużonego. Umiejętność tworzenia dzieł sztuki ma niewielkie zastosowanie w walce, ale marmurowe popiersie może być rzydatne, gdy zwali się je przeciwnikowi na głowę.</p>",
+          "originalName": "Art",
+          "sourceId": "Compendium.wfrp4e-core.skills.fdq3RFSOKl5b3WzW"
+        },
+        "Entertain": {
+          "id": "0CwV96kTDRF0jUhk",
+          "name": "Występy ()",
+          "description": "<p>Ta Umiejętność pozwala ci zabawiać tłumy słowem mówionym, być może śpiewem, odgrywaniem ról lub nawet dowcipem. Udany Test oznacza, że widzowie słuchali występu, a PS wskazują, jak dobrze wypadłeś. W walce Występy mają raczej skromne zastosowanie, choć aktorstwo można wykorzystać, by zwieść lub oszukać przeciwników</p><p><b>Specjalizacje:</b> Aktorstwo, Gawędziarstwo, Komedianctwo, Śpiewanie.</p>",
+          "originalName": "Entertain",
+          "sourceId": "Compendium.wfrp4e-core.skills.0CwV96kTDRF0jUhk"
+        },
+        "Melee": {
+          "id": "F8NfBZdVSEIGCMtu",
+          "name": "Broń Biała ()",
+          "description": "<p>Ta Umiejętność opisuje twoją sprawność w posługiwaniu się rodzajem broni do walki wręcz. Każda Specjalizacja w Broni Białej oznacza, że zostałeś wyszkolony w walce daną kategorią oręża. Jeśli chcesz lub przyjdzie ci walczyć bronią, w której nie jesteś wyszkolony, zajrzyj do Rozdziału 11: Przewodnik konsumenta, gdzie w opisie broni znajdziesz zasady i negatywne modyfikatory stosowane w tej sytuacji. Rozdział 5: Zasady bardziej szczegółowo opisuje walkę i wykorzystanie tej Umiejętności.</p><p>Specjalizacje: Podstawowa, Bijatyka, Drzewcowa, Dwuręczna, Kawaleryjska, Korbacze, Parująca, Szermiercza.</p>",
+          "originalName": "Melee",
+          "sourceId": "Compendium.wfrp4e-core.skills.F8NfBZdVSEIGCMtu"
+        },
+        "Ride": {
+          "id": "MeXCAQ3wqJzX07X7",
+          "name": "Jeździectwo ()",
+          "description": "<p>Ta Umiejętność określa, jak dobrze radzisz sobie z jeżdżeniem na określonym rodzaju zwierząt. Jeździectwo (Konie) pozwala ci dosiadać koni, mułów czy osłów i im podobnych. Testy Jeździectwa musisz wykonywać jedynie wtedy, gdy podejmujesz się czegoś niecodziennego: zmuszasz rumaka do wyścigu, podejmujesz się ujeżdżania, pokonujesz niebezpieczny teren czy szarżujesz do walki. Jeśli robisz coś prostszego i posiadasz choć jeden punkt Rozwinięcia w tej Umiejętności, działanie kończy się sukcesem bez Testu.</p><p>Dosiadając wierzchowca, poruszasz się z jego Szybkością, a jeśli zmuszasz go do skoków czy biegu, wykonujesz Test Jeździectwa, a nie Atletyki. Jeśli gnasz do dalekiego celu, może być wymagany Wydłużony Test Jeździectwa, a liczba potrzebnych PS zależy od odległości do pokonania. Liczba wymaganych Testów będzie wskazywała na to, jak daleko jest do punktu docelowego. Na Testy Jeździectwa mogą wpływać modyfikatory związane z warunkami pogodowymi czy narowistością wierzchowca. Więcej informacji o nich znajduje się w Rozdziale 12: Bestiariusz.</p><p>Jeździectwo jest niezwykle przydatne i często wykorzystywane w walce, co opisano w Rozdziale 5: Zasady</p><p>Specjalizacje: Konie, Gryfy, Pegazy, Półgryfy, Wielkie Wilki</p>",
+          "originalName": "Ride",
+          "sourceId": "Compendium.wfrp4e-core.skills.MeXCAQ3wqJzX07X7"
+        },
+        "Stealth": {
+          "id": "McTtmZu3Ac8Lh48W",
+          "name": "Skradanie ()",
+          "description": "<p>Ta Umiejętność pozwala ci na podkradanie się i ukrywanie w lepszym stopniu niż innym. Testy Skradania są Testami Przeciwstawnymi, wykonywanymi przeciwko Percepcji przeciwnika i modyfikowanymi przez warunki, takie jak ciemność, łatwość ukrycia się w trakcie przemykania czy choćby twój ubiór. Spora lub Zdumiewająca Porażka podczas Testu Skradania oznacza, że ściągasz na siebie uwagę wrogów, przed którymi chciałeś się ukryć.</p><p>Skradanie się może mieć wiele zastosowań w walce. Pierwszym przychodzącym na myśl jest ukrycie się, by przygotować zasadzkę lub by zakraść się i zaatakować od tyłu. Rozdział 5: Zasady opisuje, co się wtedy dzieje. Skradania można też użyć, by niepostrzeżenie dać nogę, jeśli walka nie idzie po naszej myśli...</p><p>Specjalizacje: Podziemia, Miasto, Wieś.</p><p>Śledzenie to nic innego, jak podążanie za kimś tak, by o tym nie wiedział. Wymaga to Łączonego Testu Percepcji i Skradania. Jeśli cel próbuje zgubić ogon, Test staje się Przeciwstawny, wykonywany przeciwko Skradaniu się śledzonego. Jeśli uda ci się Test Percepcji, ale nie Skradania, podążasz za celem, ale zostajesz zauważony. Jeśli uda się Test Skradania, ale nie Percepcji, to tracisz cel z oczu, ale pozostajesz niezauważony.</p>",
+          "originalName": "Stealth",
+          "sourceId": "Compendium.wfrp4e-core.skills.McTtmZu3Ac8Lh48W"
         }
       }
     },
-    {
+    "Dog": {
       "id": "R1iWvfV9EvgIc8bJ",
       "name": "Pies",
       "description": "<p>Psy hodowane są w całym Starym Świecie z przeznaczeniem do niezliczonych zadań. Podczas gdy rozpieszczone pudle dworzan z Altdorfu stanowią zagrożenie jedynie dla godności poszukiwacza przygód, większe rasy, włącznie z tymi, które przyuczane są do udziału w bitwach lub walkach psów, mogą być bardzo groźne.</p>",
@@ -1252,7 +1578,7 @@
       },
       "items": {}
     },
-    {
+    "Gor": {
       "id": "R37OtN5gmPWCYOP3",
       "name": "Gor",
       "description": "<p>Gory, najpowszechniejsze ze zwierzoludzi, są zakałą niemal każdego lasu w Starym Świecie. Znacznie różnią się między sobą wyglądem, ale wszystkie łączą cechy zwierzęce i ludzkie. Często mają głowy i nogi kozłów oraz korpus i ramiona ludzi. Jedyną cechą, którą posiadają wszystkie gory, jest para wielkich rogów - im większe, tym lepiej, rogi wyznaczają bowiem status wśród zwierzoludzi. To cecha, która odróżnia je od ungorów i innoskórych. Największe gory znane są pod nazwą bestigorów.</p>",
@@ -1286,9 +1612,18 @@
           "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
         }
       },
-      "items": {}
+      "items": {
+        "Horns": {
+          "id": "nrTB5jLyuyhOMqQT",
+          "name": "Rogi ()",
+          "description": "<p>Stworzenie ma rogi lub inne ostre wyrostki (jeśli jego Cecha Stworzenia Rogi reprezentuje coś innego, będzie to określone w nawiasie). Gdy stworzenie zyskuje Przewagę na skutek Szarżowania, może wykonać Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podaną wartość Obrażeń (Bonus z Siły stworzenia jest już wliczony).</p>",
+          "originalName": "Horns",
+          "sourceId": "Compendium.wfrp4e-core.traits.BqPZn6q3VHn9HUrW",
+          "specification": "#"
+        }
+      }
     },
-    {
+    "Halfling": {
       "id": "r70e6JNM3MjWIb7N",
       "name": "Niziołek",
       "description": null,
@@ -1303,16 +1638,52 @@
         }
       },
       "items": {
-        "E5MeeVvpH0rxRL8N": {
+        "Ranged (25)": {
           "id": "E5MeeVvpH0rxRL8N",
           "name": "Strzelanie (25)",
           "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
+          "originalName": "Ranged (25)",
           "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
           "specification": "7"
+        },
+        "Art": {
+          "id": "fdq3RFSOKl5b3WzW",
+          "name": "Sztuka ()",
+          "description": "<p>Potrafisz tworzyć dzieła sztuki w jednej z jej licznych odmian. Brak fachowych narzędzi może wiązać się z negatywnymi modyfikatorami do Testu. Poziomy Sukcesu osiągnięte podczas Testu określają, jak wysokiej jakości jest tworzone dzieło. Skomplikowane lub duże przedsięwzięcie artystyczne może wymagać Testu Wydłużonego. Umiejętność tworzenia dzieł sztuki ma niewielkie zastosowanie w walce, ale marmurowe popiersie może być rzydatne, gdy zwali się je przeciwnikowi na głowę.</p>",
+          "originalName": "Art",
+          "sourceId": "Compendium.wfrp4e-core.skills.fdq3RFSOKl5b3WzW"
+        },
+        "Entertain": {
+          "id": "0CwV96kTDRF0jUhk",
+          "name": "Występy ()",
+          "description": "<p>Ta Umiejętność pozwala ci zabawiać tłumy słowem mówionym, być może śpiewem, odgrywaniem ról lub nawet dowcipem. Udany Test oznacza, że widzowie słuchali występu, a PS wskazują, jak dobrze wypadłeś. W walce Występy mają raczej skromne zastosowanie, choć aktorstwo można wykorzystać, by zwieść lub oszukać przeciwników</p><p><b>Specjalizacje:</b> Aktorstwo, Gawędziarstwo, Komedianctwo, Śpiewanie.</p>",
+          "originalName": "Entertain",
+          "sourceId": "Compendium.wfrp4e-core.skills.0CwV96kTDRF0jUhk"
+        },
+        "Melee": {
+          "id": "F8NfBZdVSEIGCMtu",
+          "name": "Broń Biała ()",
+          "description": "<p>Ta Umiejętność opisuje twoją sprawność w posługiwaniu się rodzajem broni do walki wręcz. Każda Specjalizacja w Broni Białej oznacza, że zostałeś wyszkolony w walce daną kategorią oręża. Jeśli chcesz lub przyjdzie ci walczyć bronią, w której nie jesteś wyszkolony, zajrzyj do Rozdziału 11: Przewodnik konsumenta, gdzie w opisie broni znajdziesz zasady i negatywne modyfikatory stosowane w tej sytuacji. Rozdział 5: Zasady bardziej szczegółowo opisuje walkę i wykorzystanie tej Umiejętności.</p><p>Specjalizacje: Podstawowa, Bijatyka, Drzewcowa, Dwuręczna, Kawaleryjska, Korbacze, Parująca, Szermiercza.</p>",
+          "originalName": "Melee",
+          "sourceId": "Compendium.wfrp4e-core.skills.F8NfBZdVSEIGCMtu"
+        },
+        "Ride": {
+          "id": "MeXCAQ3wqJzX07X7",
+          "name": "Jeździectwo ()",
+          "description": "<p>Ta Umiejętność określa, jak dobrze radzisz sobie z jeżdżeniem na określonym rodzaju zwierząt. Jeździectwo (Konie) pozwala ci dosiadać koni, mułów czy osłów i im podobnych. Testy Jeździectwa musisz wykonywać jedynie wtedy, gdy podejmujesz się czegoś niecodziennego: zmuszasz rumaka do wyścigu, podejmujesz się ujeżdżania, pokonujesz niebezpieczny teren czy szarżujesz do walki. Jeśli robisz coś prostszego i posiadasz choć jeden punkt Rozwinięcia w tej Umiejętności, działanie kończy się sukcesem bez Testu.</p><p>Dosiadając wierzchowca, poruszasz się z jego Szybkością, a jeśli zmuszasz go do skoków czy biegu, wykonujesz Test Jeździectwa, a nie Atletyki. Jeśli gnasz do dalekiego celu, może być wymagany Wydłużony Test Jeździectwa, a liczba potrzebnych PS zależy od odległości do pokonania. Liczba wymaganych Testów będzie wskazywała na to, jak daleko jest do punktu docelowego. Na Testy Jeździectwa mogą wpływać modyfikatory związane z warunkami pogodowymi czy narowistością wierzchowca. Więcej informacji o nich znajduje się w Rozdziale 12: Bestiariusz.</p><p>Jeździectwo jest niezwykle przydatne i często wykorzystywane w walce, co opisano w Rozdziale 5: Zasady</p><p>Specjalizacje: Konie, Gryfy, Pegazy, Półgryfy, Wielkie Wilki</p>",
+          "originalName": "Ride",
+          "sourceId": "Compendium.wfrp4e-core.skills.MeXCAQ3wqJzX07X7"
+        },
+        "Stealth": {
+          "id": "McTtmZu3Ac8Lh48W",
+          "name": "Skradanie ()",
+          "description": "<p>Ta Umiejętność pozwala ci na podkradanie się i ukrywanie w lepszym stopniu niż innym. Testy Skradania są Testami Przeciwstawnymi, wykonywanymi przeciwko Percepcji przeciwnika i modyfikowanymi przez warunki, takie jak ciemność, łatwość ukrycia się w trakcie przemykania czy choćby twój ubiór. Spora lub Zdumiewająca Porażka podczas Testu Skradania oznacza, że ściągasz na siebie uwagę wrogów, przed którymi chciałeś się ukryć.</p><p>Skradanie się może mieć wiele zastosowań w walce. Pierwszym przychodzącym na myśl jest ukrycie się, by przygotować zasadzkę lub by zakraść się i zaatakować od tyłu. Rozdział 5: Zasady opisuje, co się wtedy dzieje. Skradania można też użyć, by niepostrzeżenie dać nogę, jeśli walka nie idzie po naszej myśli...</p><p>Specjalizacje: Podziemia, Miasto, Wieś.</p><p>Śledzenie to nic innego, jak podążanie za kimś tak, by o tym nie wiedział. Wymaga to Łączonego Testu Percepcji i Skradania. Jeśli cel próbuje zgubić ogon, Test staje się Przeciwstawny, wykonywany przeciwko Skradaniu się śledzonego. Jeśli uda ci się Test Percepcji, ale nie Skradania, podążasz za celem, ale zostajesz zauważony. Jeśli uda się Test Skradania, ale nie Percepcji, to tracisz cel z oczu, ale pozostajesz niezauważony.</p>",
+          "originalName": "Stealth",
+          "sourceId": "Compendium.wfrp4e-core.skills.McTtmZu3Ac8Lh48W"
         }
       }
     },
-    {
+    "Hippogryph": {
       "id": "RiXpMLex8SZf6gaQ",
       "name": "Hipogryf",
       "description": "<p>Niezwykle zaciekłe i terytorialne hipogryfy mają głowę i skrzydła orła, przednią część ciała lwa oraz koński zad. Pochodzą najczęściej z Gór Szarych. Atakują bez prowokacji, niemal bezmyślne w swojej furii, drąc ciało na strzępy, aby pożreć je później. Wpadają w tak wielki szał, że pojedynczy hipogryf może wybić całe stado bydła, aby potem odlecieć z wybranym kawałem mięsa, zostawiwszy resztę padlinożernym ptakom. Hipogryfy nie są zbyt inteligentne i gdy polują, zwykle starają się zabić wszystko w polu widzenia. Myślą, że cokolwiek zniknęło im z oczu, przepadło na zawsze. Oznacza to, że faktyczna liczba zgonów spowodowanych przez hipogryfy jest stosunkowo niska, ponieważ wystarczy znaleźć dobrą kryjówkę, aby ich uniknąć.</p>",
@@ -1333,7 +1704,7 @@
       },
       "items": {}
     },
-    {
+    "Kastor Erichson": {
       "id": "Rs3lMA5UavTlTiJW",
       "name": "Kastor Erichson",
       "description": null,
@@ -1341,24 +1712,69 @@
       "gender": null,
       "species": null,
       "items": {
-        "HkgHJKXAM4hl9OJ4": {
+        "Acute Sense (Smell)": {
           "id": "HkgHJKXAM4hl9OJ4",
           "name": "Wyczulony Zmysł (Zapach)",
           "description": "<p>Jeden z twoich pięciu zmysłów jest tak wyczulony, że wyczuwasz to, co umyka innym. Możesz wykonać Test Percepcji, by dowiedzieć się czegoś więcej niż inni, opierając się na tym szczególnym zmyśle. Przykładowo może to być dostrzeżenie dalekiego orła, którego nie widzą inni, wywęszenie prawie niewyczuwalnej trucizny, dosłyszenie bicia serca myszy kryjącej się w ścianie, wyczucie dotykiem ukrytej wiadomości wyskrobanej na papierze czy porównanie smaku dwóch piw od tego samego piwowara, by dowiedzieć się, czy zostały nalane z dwóch różnych beczek.</p>",
+          "originalName": "Acute Sense (Smell)",
           "sourceId": "Compendium.wfrp4e-core.talents.9h82z72XGo9tfgQS",
           "tests": "Percepcja (z wykorzystaniem tego zmysłu)",
           "specification": null
         },
-        "yymhDcCRUdL6jFCS": {
+        "Immunity to Psychology": {
+          "id": "aNSAl7IEOWmr6ear",
+          "name": "Niewrażliwość",
+          "description": "<p>Stworzenie jest całkowicie niewrażliwe na określonego rodzaju Obrażenia, takie jak od trucizny, magii lub elektryczności. Wszelkie Obrażenia tego rodzaju, włącznie z Ranami Krytycznymi, są ignorowane.</p>",
+          "originalName": "Immunity to Psychology",
+          "sourceId": "Compendium.wfrp4e-core.traits.3wCtgMDNnu8MFmyk",
+          "specification": "Typ"
+        },
+        "Fang": {
           "id": "yymhDcCRUdL6jFCS",
           "name": "Broń Ręczna (Szpon)",
           "description": null,
+          "originalName": "Fang",
           "sourceId": null,
           "special": null
+        },
+        "Art": {
+          "id": "ioeUa6sC1922vxS6",
+          "name": "Sztuka ()",
+          "description": "<p>Potrafisz tworzyć dzieła sztuki w jednej z jej licznych odmian. Brak fachowych narzędzi może wiązać się z negatywnymi modyfikatorami do Testu. Poziomy Sukcesu osiągnięte podczas Testu określają, jak wysokiej jakości jest tworzone dzieło. Skomplikowane lub duże przedsięwzięcie artystyczne może wymagać Testu Wydłużonego. Umiejętność tworzenia dzieł sztuki ma niewielkie zastosowanie w walce, ale marmurowe popiersie może być rzydatne, gdy zwali się je przeciwnikowi na głowę.</p>",
+          "originalName": "Art",
+          "sourceId": "Compendium.wfrp4e-core.skills.fdq3RFSOKl5b3WzW"
+        },
+        "Entertain": {
+          "id": "JJ2sg3z6etavmN7K",
+          "name": "Występy ()",
+          "description": "<p>Ta Umiejętność pozwala ci zabawiać tłumy słowem mówionym, być może śpiewem, odgrywaniem ról lub nawet dowcipem. Udany Test oznacza, że widzowie słuchali występu, a PS wskazują, jak dobrze wypadłeś. W walce Występy mają raczej skromne zastosowanie, choć aktorstwo można wykorzystać, by zwieść lub oszukać przeciwników</p><p><b>Specjalizacje:</b> Aktorstwo, Gawędziarstwo, Komedianctwo, Śpiewanie.</p>",
+          "originalName": "Entertain",
+          "sourceId": "Compendium.wfrp4e-core.skills.0CwV96kTDRF0jUhk"
+        },
+        "Melee": {
+          "id": "DDsC8MrjJXqbJgzW",
+          "name": "Broń Biała ()",
+          "description": "<p>Ta Umiejętność opisuje twoją sprawność w posługiwaniu się rodzajem broni do walki wręcz. Każda Specjalizacja w Broni Białej oznacza, że zostałeś wyszkolony w walce daną kategorią oręża. Jeśli chcesz lub przyjdzie ci walczyć bronią, w której nie jesteś wyszkolony, zajrzyj do Rozdziału 11: Przewodnik konsumenta, gdzie w opisie broni znajdziesz zasady i negatywne modyfikatory stosowane w tej sytuacji. Rozdział 5: Zasady bardziej szczegółowo opisuje walkę i wykorzystanie tej Umiejętności.</p><p>Specjalizacje: Podstawowa, Bijatyka, Drzewcowa, Dwuręczna, Kawaleryjska, Korbacze, Parująca, Szermiercza.</p>",
+          "originalName": "Melee",
+          "sourceId": "Compendium.wfrp4e-core.skills.F8NfBZdVSEIGCMtu"
+        },
+        "Ride": {
+          "id": "88BOESmJiFddAUjl",
+          "name": "Jeździectwo ()",
+          "description": "<p>Ta Umiejętność określa, jak dobrze radzisz sobie z jeżdżeniem na określonym rodzaju zwierząt. Jeździectwo (Konie) pozwala ci dosiadać koni, mułów czy osłów i im podobnych. Testy Jeździectwa musisz wykonywać jedynie wtedy, gdy podejmujesz się czegoś niecodziennego: zmuszasz rumaka do wyścigu, podejmujesz się ujeżdżania, pokonujesz niebezpieczny teren czy szarżujesz do walki. Jeśli robisz coś prostszego i posiadasz choć jeden punkt Rozwinięcia w tej Umiejętności, działanie kończy się sukcesem bez Testu.</p><p>Dosiadając wierzchowca, poruszasz się z jego Szybkością, a jeśli zmuszasz go do skoków czy biegu, wykonujesz Test Jeździectwa, a nie Atletyki. Jeśli gnasz do dalekiego celu, może być wymagany Wydłużony Test Jeździectwa, a liczba potrzebnych PS zależy od odległości do pokonania. Liczba wymaganych Testów będzie wskazywała na to, jak daleko jest do punktu docelowego. Na Testy Jeździectwa mogą wpływać modyfikatory związane z warunkami pogodowymi czy narowistością wierzchowca. Więcej informacji o nich znajduje się w Rozdziale 12: Bestiariusz.</p><p>Jeździectwo jest niezwykle przydatne i często wykorzystywane w walce, co opisano w Rozdziale 5: Zasady</p><p>Specjalizacje: Konie, Gryfy, Pegazy, Półgryfy, Wielkie Wilki</p>",
+          "originalName": "Ride",
+          "sourceId": "Compendium.wfrp4e-core.skills.MeXCAQ3wqJzX07X7"
+        },
+        "Stealth": {
+          "id": "blbMFgFV2qLGKWPz",
+          "name": "Skradanie ()",
+          "description": "<p>Ta Umiejętność pozwala ci na podkradanie się i ukrywanie w lepszym stopniu niż innym. Testy Skradania są Testami Przeciwstawnymi, wykonywanymi przeciwko Percepcji przeciwnika i modyfikowanymi przez warunki, takie jak ciemność, łatwość ukrycia się w trakcie przemykania czy choćby twój ubiór. Spora lub Zdumiewająca Porażka podczas Testu Skradania oznacza, że ściągasz na siebie uwagę wrogów, przed którymi chciałeś się ukryć.</p><p>Skradanie się może mieć wiele zastosowań w walce. Pierwszym przychodzącym na myśl jest ukrycie się, by przygotować zasadzkę lub by zakraść się i zaatakować od tyłu. Rozdział 5: Zasady opisuje, co się wtedy dzieje. Skradania można też użyć, by niepostrzeżenie dać nogę, jeśli walka nie idzie po naszej myśli...</p><p>Specjalizacje: Podziemia, Miasto, Wieś.</p><p>Śledzenie to nic innego, jak podążanie za kimś tak, by o tym nie wiedział. Wymaga to Łączonego Testu Percepcji i Skradania. Jeśli cel próbuje zgubić ogon, Test staje się Przeciwstawny, wykonywany przeciwko Skradaniu się śledzonego. Jeśli uda ci się Test Percepcji, ale nie Skradania, podążasz za celem, ale zostajesz zauważony. Jeśli uda się Test Skradania, ale nie Percepcji, to tracisz cel z oczu, ale pozostajesz niezauważony.</p>",
+          "originalName": "Stealth",
+          "sourceId": "Compendium.wfrp4e-core.skills.McTtmZu3Ac8Lh48W"
         }
       }
     },
-    {
+    "Fr'hough Mournbreath": {
       "id": "sbQ5mDvNZ7qQm8YY",
       "name": "Fr'hough Mournbreath",
       "description": null,
@@ -1387,9 +1803,26 @@
           "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postTerror(value, name)\n}"
         }
       },
-      "items": {}
+      "items": {
+        "Breath (Corrosion)": {
+          "id": "VuHcA1MYXCyygBTx",
+          "name": "Zionięcie ()",
+          "description": "<p>Stworzenie posługuje się zionięciem jako potężną bronią. W swojej Turze, kosztem 2 Przewag, może aktywować Zionięcie jako Darmowy Atak. Wybierz 1 cel, który stworzenie widzi w promieniu 20 + Bonus z Wytrzymałości metrów. Trafione zostają wszystkie postacie wokół tego celu w promieniu tylu metrów, ile wynosi Bonus z Siły, podobnie jak wszystkie postacie znajdujące się między stworzeniem a celem. Przeprowadź Test Przeciwstawny Umiejętności Strzeleckie/Unik przeciwko wszystkim objętym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Każdy cel, który przegrał Test, otrzymuje trafienie zadające wskazaną wartość Obrażeń. Co więcej, jeśli przy Cesze Stworzenia wymieniony jest jeden z opisanych niżej typów zionięcia, zastosuj wskazane zasady.</p><p><b>Dym</b>: Obszar wypełnia się dymem, który zasłania pole widzenia na tyle Rund, ile wynosi Bonus z Wytrzymałości.</p><p><b>Elektryczność</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Oszołomienie.</p><p><b>Kwas</b>: Noszony przez objęte efektem postaci pancerze oraz wszelka broń dostają 1 punkt Uszkodzeń.</p><p><b>Ogień</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Podpalenie.</p><p><b>Trucizna</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Zatrucie.</p><p><b>Zimno</b>: Cele dostają jeden Stan Oszołomiony za każde pełne 5 odniesionych Ran (minimalnie 1).</p><p>Stworzenie jest odporne na własne Zionięcie. Ten atak jest Magiczny.</p>",
+          "originalName": "Breath (Corrosion)",
+          "sourceId": "Compendium.wfrp4e-core.traits.uqGxFOEqeurwkAO3",
+          "specification": "# (Typ)"
+        },
+        "Horns": {
+          "id": "TVV9zTeJXz8n6ZLr",
+          "name": "Rogi ()",
+          "description": "<p>Stworzenie ma rogi lub inne ostre wyrostki (jeśli jego Cecha Stworzenia Rogi reprezentuje coś innego, będzie to określone w nawiasie). Gdy stworzenie zyskuje Przewagę na skutek Szarżowania, może wykonać Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podaną wartość Obrażeń (Bonus z Siły stworzenia jest już wliczony).</p>",
+          "originalName": "Horns",
+          "sourceId": "Compendium.wfrp4e-core.traits.BqPZn6q3VHn9HUrW",
+          "specification": "#"
+        }
+      }
     },
-    {
+    "Vampire": {
       "id": "T5qAtpoKtB8iwTBd",
       "name": "Wampir",
       "description": "<p>Wampiry postrzegają same siebie jako władców nocy. Wiele z nich może podawać się za ludzi, a niektóre rzeczywiście przez długi czas przebywały pośród żywych. Pomimo zewnętrznego podobieństwa do ludzi pod ich bladą skórą nie bije serce, a zamiast zwykłego głodu, jak u śmiertelników, odczuwają nieustanne łaknienie krwi. Wszystkie wampiry Starego Świata wywodzą się ze starożytnych rodów, które powstały tysiące lat temu daleko na południu. Wiele z nich jest niezwykle dumnych ze swojego pochodzenia oraz cech i tradycji, które odróżniają je od innych. Wampiry różnych rodowodów są często zaciekłymi rywalami, ale mają dość rozsądku, by stawać ramię w ramię w razie konieczności zmierzenia się z potężniejszymi wrogami.</p>",
@@ -1425,7 +1858,7 @@
       },
       "items": {}
     },
-    {
+    "Zombie": {
       "id": "T79RqnDOAQLn3I1s",
       "name": "Zombie",
       "description": "<p>Podobnie jak szkielety, zombi to ożywione zwłoki spajane przez plugawą magię. W odróżnieniu od szkieletów zombi to niedawno umarli i większość ich ciała nadal istnieje. Gnijące i zepsute mięso zwisa z robaczywych, nabrzmiałych organów wewnętrznych. Gdy walczą, ich ciało i narządy odpadają od kości, wydzielając przyprawiający o mdłości, obrzydliwy odór, wystarczająco silny, by wywrócić żołądek każdemu poza najtwardszymi żołnierzami.</p>",
@@ -1466,7 +1899,7 @@
       },
       "items": {}
     },
-    {
+    "Tomb Banshee": {
       "id": "TWy5l4uYTRAtjfit",
       "name": "Banshee",
       "description": "<p>Płaczki to widmowe pozostałości niegdyś potężnych wiedźm, których duchy przesiąknięte są plugawą energią Dhar. Ich niespokojne nieżycie wypełnia udręka z powodu straty i zgorzknienia, ziejąca pustka w duszach, która wyrywa z ich piersi przerażające, szarpiące duszę wycie. Jest ono tak straszliwe, że może doprowadzić do szaleństwa tych, którzy je słyszą, a nawet zatrzymać bicie serca.</p>",
@@ -1482,7 +1915,7 @@
       },
       "items": {}
     },
-    {
+    "Dire Wolf": {
       "id": "umddAQkmxVYG0AzO",
       "name": "Upiorny Wilk",
       "description": "<p>Gdy ziemia oddaje zmarłych, powstają nie tylko ludzie. W imieniu swoich mrocznych panów na nocne łowy wyruszają makabryczne parodie olbrzymich basiorów z lśniącymi ślepiami i strzępami ciała odpadającymi od gnijących, butwiejących ścierw - upiorne wilki. W Reiklandzie mówi się, że gdy Morrslieb stoi w pełni, upiorne wilki grasują po nawiedzonych lasach Hägerkrybów. Biegają w poszukiwaniu ofiary, aby zaspokoić swój nienasycony głód, przeklęte żądzą pożerania mięsa i wyostrzoną wrażliwością na zapach krwi.</p>",
@@ -1528,7 +1961,7 @@
       },
       "items": {}
     },
-    {
+    "Rat Ogre": {
       "id": "VfJgGmCTWqb0IDSW",
       "name": "Szczurogr",
       "description": "<p>Szczurogry to zwaliste brutale hodowane w ciemnych jaskiniach Podimperium przez obłąkanych poganiaczy klanu Moulder. Są głupie, ale także nieulękłe i nieustępliwe w walce, gdy poganiają je skaveńscy panowie. Rzadko bywają spotykane w pojedynkę. Zwykle towarzyszą Szarym Prorokom lub innym skavenom wysokiej rangi, którym służą jako ochroniarze.</p>",
@@ -1564,7 +1997,7 @@
       },
       "items": {}
     },
-    {
+    "Cave Squig": {
       "id": "VMceSpLje0J7lfP0",
       "name": "Zębacz Jaskiniowy",
       "description": "<p>Zębacze to duże, okrągławe, grzybowate stwory, które żyją głęboko pod ziemią w najwilgotniejszych, najciemniejszych jaskiniach. Mają rozdziawioną gębę i wielkie, ostre zęby. Cenione są przez gobliny za mięso i skórę oraz służą im jako strażnicy lub pupile.</p>",
@@ -1588,9 +2021,34 @@
           "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
         }
       },
-      "items": {}
+      "items": {
+        "Breath (Acid)": {
+          "id": "ZcyLIms5jaQwM44m",
+          "name": "Zionięcie ()",
+          "description": "<p>Stworzenie posługuje się zionięciem jako potężną bronią. W swojej Turze, kosztem 2 Przewag, może aktywować Zionięcie jako Darmowy Atak. Wybierz 1 cel, który stworzenie widzi w promieniu 20 + Bonus z Wytrzymałości metrów. Trafione zostają wszystkie postacie wokół tego celu w promieniu tylu metrów, ile wynosi Bonus z Siły, podobnie jak wszystkie postacie znajdujące się między stworzeniem a celem. Przeprowadź Test Przeciwstawny Umiejętności Strzeleckie/Unik przeciwko wszystkim objętym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Każdy cel, który przegrał Test, otrzymuje trafienie zadające wskazaną wartość Obrażeń. Co więcej, jeśli przy Cesze Stworzenia wymieniony jest jeden z opisanych niżej typów zionięcia, zastosuj wskazane zasady.</p><p><b>Dym</b>: Obszar wypełnia się dymem, który zasłania pole widzenia na tyle Rund, ile wynosi Bonus z Wytrzymałości.</p><p><b>Elektryczność</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Oszołomienie.</p><p><b>Kwas</b>: Noszony przez objęte efektem postaci pancerze oraz wszelka broń dostają 1 punkt Uszkodzeń.</p><p><b>Ogień</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Podpalenie.</p><p><b>Trucizna</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Zatrucie.</p><p><b>Zimno</b>: Cele dostają jeden Stan Oszołomiony za każde pełne 5 odniesionych Ran (minimalnie 1).</p><p>Stworzenie jest odporne na własne Zionięcie. Ten atak jest Magiczny.</p>",
+          "originalName": "Breath (Acid)",
+          "sourceId": "Compendium.wfrp4e-core.traits.uqGxFOEqeurwkAO3",
+          "specification": "# (Typ)"
+        },
+        "Breath (Gas)": {
+          "id": "lKOZc9AF6bROuqiO",
+          "name": "Zionięcie ()",
+          "description": "<p>Stworzenie posługuje się zionięciem jako potężną bronią. W swojej Turze, kosztem 2 Przewag, może aktywować Zionięcie jako Darmowy Atak. Wybierz 1 cel, który stworzenie widzi w promieniu 20 + Bonus z Wytrzymałości metrów. Trafione zostają wszystkie postacie wokół tego celu w promieniu tylu metrów, ile wynosi Bonus z Siły, podobnie jak wszystkie postacie znajdujące się między stworzeniem a celem. Przeprowadź Test Przeciwstawny Umiejętności Strzeleckie/Unik przeciwko wszystkim objętym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Każdy cel, który przegrał Test, otrzymuje trafienie zadające wskazaną wartość Obrażeń. Co więcej, jeśli przy Cesze Stworzenia wymieniony jest jeden z opisanych niżej typów zionięcia, zastosuj wskazane zasady.</p><p><b>Dym</b>: Obszar wypełnia się dymem, który zasłania pole widzenia na tyle Rund, ile wynosi Bonus z Wytrzymałości.</p><p><b>Elektryczność</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Oszołomienie.</p><p><b>Kwas</b>: Noszony przez objęte efektem postaci pancerze oraz wszelka broń dostają 1 punkt Uszkodzeń.</p><p><b>Ogień</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Podpalenie.</p><p><b>Trucizna</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Zatrucie.</p><p><b>Zimno</b>: Cele dostają jeden Stan Oszołomiony za każde pełne 5 odniesionych Ran (minimalnie 1).</p><p>Stworzenie jest odporne na własne Zionięcie. Ten atak jest Magiczny.</p>",
+          "originalName": "Breath (Gas)",
+          "sourceId": "Compendium.wfrp4e-core.traits.uqGxFOEqeurwkAO3",
+          "specification": "# (Typ)"
+        },
+        "Horns": {
+          "id": "hSO0gtfx8YEnQemo",
+          "name": "Rogi ()",
+          "description": "<p>Stworzenie ma rogi lub inne ostre wyrostki (jeśli jego Cecha Stworzenia Rogi reprezentuje coś innego, będzie to określone w nawiasie). Gdy stworzenie zyskuje Przewagę na skutek Szarżowania, może wykonać Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podaną wartość Obrażeń (Bonus z Siły stworzenia jest już wliczony).</p>",
+          "originalName": "Horns",
+          "sourceId": "Compendium.wfrp4e-core.traits.BqPZn6q3VHn9HUrW",
+          "specification": "#"
+        }
+      }
     },
-    {
+    "Giant Spider": {
       "id": "VPVnyae6VHeD9cEP",
       "name": "Olbrzymi Pająk",
       "description": "<p>Olbrzymie pająki czają się głęboko w lasach i jaskiniach Imperium, ale mogą żyć gdziekolwiek, włącznie z zakurzonymi strychami i ciemnymi piwnicami. Większość chwyta ofiary w mocne sieci, a następnie wstrzykuje im jad. Chociaż większość ma rozmiary dużego szczura, niektóre odmiany olbrzymich pająków są przerażająco wielkie. Leśne gobliny często chwytają większe okazy, by służyły im za wierzchowce.</p>",
@@ -1631,7 +2089,7 @@
       },
       "items": {}
     },
-    {
+    "Ungor": {
       "id": "vrYs3cbxvXtre6rv",
       "name": "Ungor",
       "description": "<p>Ungory mają szczątkowe lub bardzo krótkie rogi, a zatem rzadko uważane są za „gory” przez resztę stada. Niektóre odznaczają się niemal ludzką twarzą, dzięki czemu są skutecznymi wywiadowcami, ale także stają się przedmiotem szykan. Istotnie, ungory są źle traktowane przez gory i bywają niskie lub niedożywione w porównaniu ze swoimi wielkorogimi braćmi. To sprawia, że stają się zgorzkniałymi stworzeniami, które pragną wyładować na innych jątrzącą się w nich zazdrość.</p>",
@@ -1661,16 +2119,17 @@
         }
       },
       "items": {
-        "B5d8o4dsmZy67V5h": {
+        "Ranged (25)": {
           "id": "B5d8o4dsmZy67V5h",
           "name": "Strzelanie (25)",
           "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
+          "originalName": "Ranged (25)",
           "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
           "specification": "7"
         }
       }
     },
-    {
+    "Snotling": {
       "id": "wdnXbjtKK7MtsZzc",
       "name": "Snotling",
       "description": "<p>Stwory o mózgu wielkości orzeszka, podobne do podekscytowanych, niekontrolowanych szczeniąt. Snotlingi to zbieracze i urodzeni imitatorzy. Zbierają kości i błyszczące rzeczy albo naśladują zachowanie wszystkiego, co widzą. Gdy zostaną pchnięte do walki przez gobliny lub orki, walczą w cuchnących rojach, starając się stłamsić wrogów samą swoją liczebnością. Wykorzystują przy tym wszelkiego rodzaju odrażające i szkodliwe substancje, jak trujące grzyby i odchody, którymi rzucają w przeciwników.</p>",
@@ -1701,7 +2160,7 @@
       },
       "items": {}
     },
-    {
+    "Varghulf": {
       "id": "XoSSlIsqXkiBlycn",
       "name": "Varghulf",
       "description": "<p>Większość wampirów utrzymuje w równowadze swoje nieumarłe łaknienie krwi z ułudą obycia i przyzwoitości, pozując na arystokrację ożywieńców. Niektóre jednak odrzucają swą ludzką fasadę, poddając się wewnętrznej bestii. Te varghulfy to brutalne i dzikie stworzenia pozbawione wszelkiego wyrafinowania, całkowicie pochłonięte przez zwierzęce dążenie do zaspokojenia własnych potrzeb. Pojawiają się pod postacią wielkich, nadętych bestii podobnych do nietoperza, które pławią się w prymitywnej żądzy krwi.</p>",
@@ -1742,7 +2201,7 @@
       },
       "items": {}
     },
-    {
+    "Manticore": {
       "id": "XtVkAVgZRIIgrBXb",
       "name": "Mantikora",
       "description": "<p><em>Gdy podróżowałem z elfami do Ulthuanu, widziałem mnóstwo rzeczy, które zdumiałyby większość ludzi w domu. Pewnego razu ujrzałem mantikorę, tyle że pośrodku jej lwiego łba znajdowała się twarz wielkiego elfa! Należałoby chyba nazwać tego stwora elftikorą.</em></p>\n<p>- Adhemar Fitztancred, Szary Strażnik, gawędziarz i kłamca</p>\n<p>Na szczęście występują rzadko. Mantikory są niemiłosiernie zawzięte, z niezwykłą brutalnością dążąc do usunięcia ze swojego terytorium drapieżnych rywali. Dlatego zwykle wiadomo, że wchodzi się na teren mantikory - wzniesienia zawalone są ścierwami innych potworów. Stwór ma głowę i korpus zniekształconego wielkiego kota (chociaż czasami jego twarz wydaje się niemal zbyt ludzka), skrzydła nietoperza i paskudny, młócący, kolczasty ogon.</p>",
@@ -1768,7 +2227,7 @@
       },
       "items": {}
     },
-    {
+    "Pol Dankels": {
       "id": "YavXt2NP9N8Puxse",
       "name": "Pol Dankels",
       "description": null,
@@ -1794,7 +2253,7 @@
       },
       "items": {}
     },
-    {
+    "Pegasus": {
       "id": "Yee9gwxJUceGbnO2",
       "name": "Pegaz",
       "description": "<p>Pegazy to urodziwe białe konie z wielkimi, łabędzimi skrzydłami. Są wytrwałymi i niestrudzonymi lotnikami. Latają wielkimi stadami w wysokich górach, najwyraźniej czerpiąc ogromną radość z szybowania i wirowania w krętych prądach powietrznych. Są oczywistymi kandydatami na wierzchowce i niejeden wojownik lub zwiadowca usiłował schwytać dla siebie pegaza. Pegazy są bardzo inteligentne, a według niektórych same pozwalają się schwytać, jeśli tego chcą. To doprowadziło do powstania wszelkiego rodzaju fantastycznych, romantycznych legend, zgodnie z którymi wybrańcami pegazów mogą być tylko osoby wystarczająco godne lub cnotliwe.</p>",
@@ -1810,7 +2269,7 @@
       },
       "items": {}
     },
-    {
+    "Basilisk": {
       "id": "z8f3vySKIpTxGr62",
       "name": "Bazyliszek",
       "description": "<p>Te ośmionogie, gadzie stwory są samotnicze i nieuchwytne. Podobno należą do najstarszych stworzeń Chaosu. Jak twierdzą pogłoski, przepełnia je tak wielka złość i jad, że zatruta jest nawet ziemia, po której chodzą. Także ich ukąszenie jest trujące, ale największy lęk budzi petryfikujące spojrzenie tych potworów. Obecnie spotyka się je rzadko, jednak bazyliszki to wciąż groźni przeciwnicy. Ich gruczoły i organy są wysoko cenione przez czarodziejów i alchemików, dlatego szukający okazji łowcy często sprawdzają, ile jest prawdy w pogłoskach o bazyliszkach bytujących podobno w dzikich ostępach Vorberglandu. Niewielu powraca z takich wypraw.</p>",
@@ -1851,7 +2310,7 @@
       },
       "items": {}
     },
-    {
+    "Goblin": {
       "id": "zzdOpKqBC28J66Mn",
       "name": "Goblin",
       "description": "<p>Gobliny, sir. Tysiące goblinów!</p>\n<p>- Porucznik Bromkopf, 24. Reiklandzki Regiment Piechoty</p>\n<p>&nbsp;</p>\n<p>Są wychudzone, złośliwe, zwinne i inteligentne. Błędem jest niedocenianie instynktu samozachowawczego goblinów. Chociaż są tchórzliwe, chętnie zbierają się w bandy, jeśli to zapewnia im znaczną przewagę liczebną. Często dołączają do armii orków - nie zawsze z własnego wyboru - oportunistycznie korzystając z łupów wojennych, podczas gdy inni zajmują się większością faktycznej walki.</p>",
@@ -1881,14 +2340,15 @@
         }
       },
       "items": {
-        "ngw4swVSGJK6DW85": {
+        "Ranged (25)": {
           "id": "ngw4swVSGJK6DW85",
           "name": "Strzelanie (25)",
           "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
+          "originalName": "Ranged (25)",
           "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
           "specification": "7"
         }
       }
     }
-  ]
+  }
 }
