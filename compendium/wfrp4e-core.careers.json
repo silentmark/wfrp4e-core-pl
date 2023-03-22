@@ -58,7 +58,7 @@
       "talents": [
         "Ulicznik",
         "Niegodny Uwagi",
-        "Etykieta (Służący)",
+        "Etykieta (Słudzy)",
         "Tragarz"
       ],
       "trappings": [
@@ -111,7 +111,7 @@
         "Wiedza (Medycyna)",
         "Wiedza (Rośliny)",
         "Rzemiosło (Aptekarstwo)",
-        "Rzemiosło (Trucizny)",
+        "Rzemiosło (Truciciel)",
         "Charyzma",
         "Targowanie",
         "Wiedza (Nauka)",
@@ -122,12 +122,12 @@
       "talents": [
         "Przestępca",
         "Żyłka Handlowa",
-        "Etykieta (Grupa Społeczna) (Gildia)",
+        "Etykieta (Członkowie Cechu)",
         "Aptekarz"
       ],
       "trappings": [
         "Narzędzia Pracy (Aptekarza)",
-        "Licencja Cechu"
+        "Licencja Cechu Aptekarzy"
       ]
     },
     "Herb Gatherer": {
@@ -145,7 +145,7 @@
         "Sztuka Przetrwania",
         "Percepcja",
         "Pływanie",
-        "Rzemiosło (Zielarstwo)"
+        "Rzemiosło (Zielarz)"
       ],
       "talents": [
         "Wyczulony Zmysł (Smak)",
@@ -167,7 +167,7 @@
       "careergroup": "Czarodziej",
       "class": "Uczony",
       "skills": [
-        "Splatanie Magii ()",
+        "Splatanie Magii (Dowolny Kolor)",
         "Unik",
         "Intuicja",
         "Język (Magiczny)",
@@ -234,7 +234,7 @@
       "trappings": [
         "Napierśnik Płytowy",
         "Symbol Rangi",
-        "Hełm Płytowy"
+        "Hełm"
       ]
     },
     "Landsman": {
@@ -256,7 +256,7 @@
       ],
       "talents": [
         "Rybak",
-        "Doświadczony Wędrowiec (Wybrzeże)",
+        "Doświadczony Wędrowiec (Wybrzeża)",
         "Mocne Plecy",
         "Świetny Pływak"
       ],
@@ -302,7 +302,7 @@
         "Wódz"
       ],
       "trappings": [
-        "Relikwie"
+        "Relikwia"
       ]
     },
     "Trader": {
@@ -355,12 +355,12 @@
         "Targowanie",
         "Wiedza (Lokalna)",
         "Plotkowanie",
-        "Język (Gildii)",
+        "Język (Cechu)",
         "Percepcja",
         "Intuicja",
         "Dowodzenie",
         "Badania Naukowe",
-        "Sekretne Znaki (Gildii)",
+        "Sekretne Znaki (Cechu)",
         "Przekupstwo",
         "Zastraszanie"
       ],
@@ -400,13 +400,13 @@
         "Oswajanie",
         "Dowodzenie",
         "Wiedza (Lokalna)",
-        "Sekretne Znaki (Włóczęgów)",
+        "Sekretne Znaki (Włóczykijów)",
         "Przekupstwo",
         "Zastraszanie"
       ],
       "talents": [
         "Gładkie Słówka",
-        "Nieustraszony (Strażnicy Miejscy)",
+        "Nieustraszony (Strażnicy)",
         "Szycha",
         "Charyzmatyczny"
       ],
@@ -426,7 +426,7 @@
         "Atletyka",
         "Unik",
         "Odporność",
-        "Występy (Szyderstwo)",
+        "Występy (Szydzenie)",
         "Plotkowanie",
         "Targowanie",
         "Zastraszanie",
@@ -475,7 +475,7 @@
         "Mocna Głowa",
         "Wycena",
         "Broń Biała (Podstawowa)",
-        "Sekretne Znaki (Górnicy)",
+        "Sekretne Znaki (Górników)",
         "Rzemiosło (Materiały Wybuchowe)",
         "Plotkowanie",
         "Wiedza (Geologia)",
@@ -498,9 +498,9 @@
     "Village Elder": {
       "id": "3UCjABRxB1GhbThg",
       "name": "Starszy Wioski",
-      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.EYkvtokq0FXlFaPa]{Chłop}</p>",
+      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.EYkvtokq0FXlFaPa]{Chłopka}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.3UCjABRxB1GhbThg",
-      "careergroup": "Chłop",
+      "careergroup": "Chłopka",
       "class": "Pospólstwo",
       "skills": [
         "Opieka nad Zwierzętami",
@@ -525,7 +525,7 @@
         "Wiedza (Historia)"
       ],
       "talents": [
-        "Mistrz Rzemiosła (Dowolny)",
+        "Mistrz Rzemiosła (Dowolne)",
         "Zręczny",
         "Mówca",
         "Znawca (Wiedza Lokalna)"
@@ -537,9 +537,9 @@
     "Master Pedlar": {
       "id": "3VkgBaW5wgaSXlyS",
       "name": "Doświadczony Domokrążca",
-      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.FdlybSv02jjXG1qW]{Kolporter}</p>",
+      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.FdlybSv02jjXG1qW]{Domokrążca}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.3VkgBaW5wgaSXlyS",
-      "careergroup": "Kolporter",
+      "careergroup": "Domokrążca",
       "class": "Wędrowiec",
       "skills": [
         "Charyzma",
@@ -555,7 +555,7 @@
         "Mocna Głowa",
         "Wycena",
         "Jeździectwo (Konie)",
-        "Rzemiosło (Druciarz)",
+        "Rzemiosło (Złota Rączka)",
         "Powożenie",
         "Zastraszanie",
         "Język (Dowolny)",
@@ -574,10 +574,10 @@
     },
     "Toll Keeper": {
       "id": "4a69lleVImbw3JhI",
-      "name": "Mytnik",
-      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.dN2K3ZBMu4rvGGpW]{Strażnik Dróg}</p>",
+      "name": "Mytniczka",
+      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.dN2K3ZBMu4rvGGpW]{Strażniczka Dróg}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.4a69lleVImbw3JhI",
-      "careergroup": "Strażnik Dróg",
+      "careergroup": "Strażniczka Dróg",
       "class": "Wędrowiec",
       "skills": [
         "Przekupstwo",
@@ -587,7 +587,7 @@
         "Targowanie",
         "Broń Biała (Podstawowa)",
         "Percepcja",
-        "Broń Zasięgowa (Kusze)"
+        "Broń Zasięgowa (Kusza)"
       ],
       "talents": [
         "Zimna krew",
@@ -618,7 +618,7 @@
         "Percepcja",
         "Atletyka",
         "Nawigacja",
-        "Broń Zasięgowa (Łuki)",
+        "Broń Zasięgowa (Łuk)",
         "Jeździectwo (Konie)",
         "Skradanie (Wieś)",
         "Tropienie"
@@ -724,12 +724,12 @@
         "Plotkowanie",
         "Wiedza (Lokalna)",
         "Otwieranie Zamków",
-        "Sekretne Znaki (Złodzieje)",
+        "Sekretne Znaki (Złodziei)",
         "Zwinne Palce",
         "Przekupstwo",
         "Hazard",
         "Zastraszanie",
-        "Broń Zasięgowa (Kusze)"
+        "Broń Zasięgowa (Kusza)"
       ],
       "talents": [
         "Widzenie w Ciemności",
@@ -783,14 +783,14 @@
     },
     "Mystic": {
       "id": "5C8dpF6YYiz7clnl",
-      "name": "Mistyk",
-      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.CzebTXk5dirMAZ6p]{Mistyk}</p>",
+      "name": "Mistyczka",
+      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.CzebTXk5dirMAZ6p]{Mistyczka}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.5C8dpF6YYiz7clnl",
-      "careergroup": "Mistyk",
+      "careergroup": "Mistyczka",
       "class": "Pospólstwo",
       "skills": [
         "Charyzma",
-        "Występy (Wróżbiarstwo)",
+        "Występy (Wróżenie)",
         "Unik",
         "Plotkowanie",
         "Targowanie",
@@ -846,10 +846,10 @@
     },
     "Racketeer": {
       "id": "5WR3ZoMOeEzz5iPc",
-      "name": "Rekieter",
-      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Z5QPZbUR3h422ozo]{Rekieter}</p>",
+      "name": "Rekieterka",
+      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Z5QPZbUR3h422ozo]{Rekieterka}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.5WR3ZoMOeEzz5iPc",
-      "careergroup": "Rekieter",
+      "careergroup": "Rekieterka",
       "class": "Łotr",
       "skills": [
         "Mocna Głowa",
@@ -908,10 +908,10 @@
     },
     "Bounty Hunter General": {
       "id": "6Abdn6XfJCSI2rWJ",
-      "name": "Legendarny Łowca Nagród",
-      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{Łowca Nagród}</p>",
+      "name": "Legendarna Łowczyni Nagród",
+      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{Łowczyni Nagród}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.6Abdn6XfJCSI2rWJ",
-      "careergroup": "Łowca Nagród",
+      "careergroup": "Łowczyni Nagród",
       "class": "Wędrowiec",
       "skills": [
         "Przekupstwo",
@@ -925,7 +925,7 @@
         "Atletyka",
         "Odporność",
         "Zastraszanie",
-        "Broń Zasięgowa (Kusze)",
+        "Broń Zasięgowa (Kusza)",
         "Broń Zasięgowa (Oplątująca)",
         "Tropienie",
         "Opieka nad Zwierzętami",
@@ -937,7 +937,7 @@
       ],
       "talents": [
         "Prosto Między Oczy",
-        "Nieustraszony (Poszukiwani)",
+        "Nieustraszony (Cele Łowów)",
         "Twardziel",
         "Strzał Przebijający"
       ],
@@ -1002,7 +1002,7 @@
         "Pływanie",
         "Hazard",
         "Wiedza (Lokalna)",
-        "Wiedza (Rzeki)",
+        "Wiedza (Szlaki Rzeczne)",
         "Broń Zasięgowa (Oplątująca)",
         "Broń Zasięgowa (Miotana)",
         "Zastawianie Pułapek",
@@ -1011,7 +1011,7 @@
         "Broń Biała (Drzewcowa)",
         "Percepcja",
         "Występy (Gawędziarstwo)",
-        "Wiedza (Folklor)"
+        "Wiedza (Ludowa)"
       ],
       "talents": [
         "Mistrz Rzemiosła (Szkutnictwo)",
@@ -1035,7 +1035,7 @@
         "Odporność",
         "Intuicja",
         "Język (Magiczny)",
-        "Wiedza (Folklor)",
+        "Wiedza (Ludowa)",
         "Wiedza (Zioła)",
         "Sztuka Przetrwania",
         "Percepcja",
@@ -1044,7 +1044,7 @@
         "Leczenie",
         "Wiedza (Lokalna)",
         "Rzemiosło (Amulety)",
-        "Rzemiosło (Zielarstwo)"
+        "Rzemiosło (Zielarz)"
       ],
       "talents": [
         "Zmysł Magii",
@@ -1107,12 +1107,12 @@
         "Język (Gildii)",
         "Wiedza (Anatomia)",
         "Wiedza (Medycyna)",
-        "Rzemiosło (Balwierz)"
+        "Rzemiosło (Cyrulik)"
       ],
       "talents": [
         "Zimna krew",
         "Przestępca",
-        "Etykieta (Gildia)",
+        "Etykieta (Członkowie Cechu)",
         "Chirurgia"
       ],
       "trappings": [
