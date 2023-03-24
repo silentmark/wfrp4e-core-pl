@@ -2918,7 +2918,7 @@
         "Opanowanie",
         "Broń Biała (Podstawowa)",
         "Plotkowanie",
-        "Wiedza (Wiedźmy)",
+        "Wiedza (Czarownice)",
         "Broń Zasięgowa (Dowolna)",
         "Jeździectwo (Konie)",
         "Odporność",
@@ -2927,7 +2927,7 @@
         "Wiedza (Lokalna)"
       ],
       "talents": [
-        "Nieustraszony (Wiedźmy)",
+        "Nieustraszony (Czarownice)",
         "Nos do Kłopotów",
         "Nieustępliwy",
         "Odporność Psychiczna"
@@ -2949,7 +2949,7 @@
         "Odporność",
         "Intuicja",
         "Język (Magiczny)",
-        "Wiedza (Folklor)",
+        "Wiedza (Ludowa)",
         "Wiedza (Zioła)",
         "Sztuka Przetrwania",
         "Percepcja",
@@ -3008,7 +3008,7 @@
         "Czytanie/Pisanie",
         "Silny Cios",
         "Wytrwały",
-        "Szczur Tunelowy"
+        "Szczur Kanałowy"
       ],
       "trappings": [
         "Broń ręczna (Kilof)",
@@ -3077,7 +3077,7 @@
       ],
       "trappings": [
         "Broń (Dowolna)",
-        "Napierśnik Płytowy",
+        "Napierśnik",
         "Hełm"
       ]
     },
@@ -3135,7 +3135,7 @@
         "Wiedza (Heraldyka)",
         "Broń Biała (Kawaleryjska)",
         "Jeździectwo (Konie)",
-        "Rzemiosło (Kowalstwo)",
+        "Rzemiosło (Podkuwanie Koni)",
         "Opanowanie",
         "Unik",
         "Odporność",
@@ -3181,13 +3181,13 @@
         "Przekupstwo",
         "Wycena",
         "Dowodzenie",
-        "Wiedza ()",
+        "Wiedza (Dowolna)",
         "Zastraszanie",
-        "Wiedza ()"
+        "Wiedza (Dowolna)"
       ],
       "talents": [
         "Wyczulony Zmysł (Dowolny)",
-        "Znawca (Dowolny)",
+        "Znawca (Dowolna Dziedzina)",
         "Szybkie Czytanie",
         "Wieża Pamięci"
       ],
@@ -3215,7 +3215,7 @@
         "Opanowanie",
         "Broń Biała (Podstawowa)",
         "Plotkowanie",
-        "Wiedza (Wiedźmy)",
+        "Wiedza (Czarownice)",
         "Broń Zasięgowa (Dowolna)",
         "Jeździectwo (Konie)"
       ],
@@ -3288,7 +3288,7 @@
         "Charyzma",
         "Zastraszanie",
         "Plotkowanie",
-        "Wiedza (Rzeki)",
+        "Wiedza (Szlaki Rzeczne)",
         "Broń Zasięgowa (Prochowa)",
         "Wspinaczka",
         "Opanowanie",
@@ -3296,8 +3296,8 @@
         "Dowodzenie"
       ],
       "talents": [
-        "Nieustraszony (Wraki)",
-        "Nienawiść (Dowolny)",
+        "Nieustraszony (Piraci Rzeczni)",
+        "Nienawiść (Dowolna)",
         "Pilot",
         "Urodzony Żeglarz"
       ],
@@ -3322,10 +3322,10 @@
         "Wiedza (Heraldyka)",
         "Broń Biała (Kawaleryjska)",
         "Jeździectwo (Konie)",
-        "Rzemiosło (Kowalstwo)"
+        "Rzemiosło (Podkuwanie Koni)"
       ],
       "talents": [
-        "Etykieta (Dowolny)",
+        "Etykieta (Dowolna Grupa)",
         "Urodzony w Siodle",
         "Tragarz",
         "Urodzony Wojownik"
@@ -3340,10 +3340,10 @@
     },
     "Road Warden": {
       "id": "fyeFolXwsxNfU30b",
-      "name": "Strażnik Dróg",
-      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.dN2K3ZBMu4rvGGpW]{Strażnik Dróg}</p>",
+      "name": "Strażniczka Dróg",
+      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.dN2K3ZBMu4rvGGpW]{Strażniczka Dróg}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.fyeFolXwsxNfU30b",
-      "careergroup": "Strażnik Dróg",
+      "careergroup": "Strażniczka Dróg",
       "class": "Wędrowiec",
       "skills": [
         "Przekupstwo",
@@ -3353,7 +3353,7 @@
         "Targowanie",
         "Broń Biała (Podstawowa)",
         "Percepcja",
-        "Broń Zasięgowa (Kusze)",
+        "Broń Zasięgowa (Kusza)",
         "Opieka nad Zwierzętami",
         "Odporność",
         "Zastraszanie",
@@ -3394,7 +3394,7 @@
         "Leczenie",
         "Wiedza (Lokalna)",
         "Percepcja",
-        "Broń Zasięgowa (Łuki)",
+        "Broń Zasięgowa (Łuk)",
         "Skradanie (Wieś)",
         "Plotkowanie",
         "Intuicja",
