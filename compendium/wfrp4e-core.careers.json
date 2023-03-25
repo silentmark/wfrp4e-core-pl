@@ -3484,7 +3484,7 @@
       "talents": [
         "Celny Strzał",
         "Żyłka Handlowa",
-        "Nieustraszony (Wyjęci spod Prawa)",
+        "Nieustraszony (Banici)",
         "Nos do Kłopotów"
       ],
       "trappings": [
@@ -3533,10 +3533,10 @@
     },
     "Councilor": {
       "id": "gb3Dy4ZgfB7VfBTM",
-      "name": "Gospodarz",
-      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.EYkvtokq0FXlFaPa]{Chłop}</p>",
+      "name": "Gospodyni",
+      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.EYkvtokq0FXlFaPa]{Chłopka}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.gb3Dy4ZgfB7VfBTM",
-      "careergroup": "Chłop",
+      "careergroup": "Chłopka",
       "class": "Pospólstwo",
       "skills": [
         "Opieka nad Zwierzętami",
@@ -3559,7 +3559,7 @@
         "Dowodzenie"
       ],
       "talents": [
-        "Wytwórca (Dowolny)",
+        "Wytwórca (Dowolne Rzemiosło)",
         "Żyłka Handlowa",
         "Waleczne Serce",
         "Niezwykle Odporny"
@@ -3587,7 +3587,7 @@
         "Pływanie",
         "Hazard",
         "Wiedza (Lokalna)",
-        "Wiedza (Rzeki)",
+        "Wiedza (Szlaki Rzeczne)",
         "Broń Zasięgowa (Oplątująca)",
         "Broń Zasięgowa (Miotana)",
         "Zastawianie Pułapek"
@@ -3620,7 +3620,7 @@
         "Wiedza (Heraldyka)",
         "Broń Biała (Kawaleryjska)",
         "Jeździectwo (Konie)",
-        "Rzemiosło (Kowalstwo)",
+        "Rzemiosło (Podkuwanie Koni)",
         "Opanowanie",
         "Unik",
         "Odporność",
@@ -3690,7 +3690,7 @@
       ],
       "talents": [
         "Szuler Kościany",
-        "Etykieta (Służący)",
+        "Etykieta (Słudzy)",
         "Ogłuszenie",
         "Wytrwały"
       ],
@@ -3757,7 +3757,7 @@
         "Opieka nad Zwierzętami",
         "Broń Biała (Podstawowa)",
         "Sztuka Przetrwania",
-        "Broń Zasięgowa (Łuki)",
+        "Broń Zasięgowa (Łuk)",
         "Jeździectwo (Konie)",
         "Pływanie",
         "Przekupstwo",
@@ -3769,7 +3769,7 @@
       ],
       "talents": [
         "Władcza Postura",
-        "Etykieta (Dowolna)",
+        "Etykieta (Dowolna Grupa)",
         "Znawca (Wiedza Lokalna)",
         "Charyzmatyczny"
       ],
@@ -3814,21 +3814,21 @@
         "4 Służący Domowi",
         "Biżuteria Warta 50 Złotych Koron",
         "Dworski Strój",
-        "Strój Dobrej Jakości"
+        "Dworski Strój Dobrej Jakości"
       ]
     },
     "Huntsmaster": {
       "id": "H9NZXz02SZXca8xp",
-      "name": "Nadworny Łowczy",
-      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Łowca}</p>",
+      "name": "Nadworna Łowczyni",
+      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Łowczyni}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.H9NZXz02SZXca8xp",
-      "careergroup": "Łowca",
+      "careergroup": "Łowczyni",
       "class": "Pospólstwo",
       "skills": [
         "Oswajanie",
         "Wspinaczka",
         "Odporność",
-        "Wiedza (Bestie)",
+        "Wiedza (Zwierzęta)",
         "Sztuka Przetrwania",
         "Percepcja",
         "Broń Zasięgowa (Proca)",
@@ -3836,15 +3836,15 @@
         "Opanowanie",
         "Intuicja",
         "Broń Biała (Podstawowa)",
-        "Broń Zasięgowa (Łuki)",
-        "Sekretne Znaki (Łowcy)",
+        "Broń Zasięgowa (Łuk)",
+        "Sekretne Znaki (Łowców)",
         "Skradanie (Wieś)",
         "Nawigacja",
         "Jeździectwo (Konie)",
         "Pływanie",
         "Tropienie",
         "Opieka nad Zwierzętami",
-        "Tresura ()"
+        "Tresura (Dowolna)"
       ],
       "talents": [
         "Nieustraszony (Potwory)",
@@ -3878,7 +3878,7 @@
         "Intuicja",
         "Percepcja",
         "Sekretne Znaki (Złodziei)",
-        "Rzemiosło (Rytownictwo)",
+        "Rzemiosło (Grawerstwo)",
         "Przekupstwo",
         "Występy (Gawędziarstwo)",
         "Wiedza (Sztuka)",
@@ -3918,10 +3918,10 @@
         "Zastawianie Pułapek",
         "Plotkowanie",
         "Zastraszanie",
-        "Broń Zasięgowa (Kusze)",
+        "Broń Zasięgowa (Kusza)",
         "Skradanie (Wieś)",
         "Dowodzenie",
-        "Wiedza (Rzeki)"
+        "Wiedza (Szlaki Rzeczne)"
       ],
       "talents": [
         "Wściekły Atak",
@@ -3982,7 +3982,7 @@
         "Atletyka",
         "Unik",
         "Odporność",
-        "Występy (Szyderstwo)",
+        "Występy (Szydzenie)",
         "Plotkowanie",
         "Targowanie",
         "Zastraszanie",
@@ -3998,7 +3998,7 @@
         "Nawigacja",
         "Broń Zasięgowa (Miotana)",
         "Występy (Aktorstwo)",
-        "Broń Zasięgowa (Kusze)"
+        "Broń Zasięgowa (Kusza)"
       ],
       "talents": [
         "Celny Strzał",
@@ -4047,7 +4047,7 @@
         "Majętny"
       ],
       "trappings": [
-        "Lusterko Ręczne albo Floret",
+        "Lusterko Ręczne albo Floret dobrej jakości",
         "Biżuteria Warta 500 Złotych Koron",
         "4 Komplety Strojów Dworskich Najlepszej Jakości",
         "500 Złotych Koron",
@@ -4074,7 +4074,7 @@
         "Mocna Głowa",
         "Wycena",
         "Broń Biała (Podstawowa)",
-        "Sekretne Znaki (Górnicy)",
+        "Sekretne Znaki (Górników)",
         "Rzemiosło (Materiały Wybuchowe)",
         "Plotkowanie",
         "Wiedza (Geologia)",
@@ -4136,7 +4136,7 @@
         "Język (Klasyczny)",
         "Wiedza (Dowolna)",
         "Badania Naukowe",
-        "Sztuka (Piśmiennictwo)",
+        "Sztuka (Pisarstwo)",
         "Intuicja",
         "Język (Dowolny)",
         "Wiedza (Dowolna)",
@@ -4152,7 +4152,7 @@
       "talents": [
         "Arcydzieło",
         "Krasomówstwo",
-        "Znawca (Dowolny)",
+        "Znawca (Dowolna Dziedzina)",
         "Czujny"
       ],
       "trappings": [
@@ -4178,34 +4178,34 @@
         "Powożenie",
         "Unik",
         "Nawigacja",
-        "Broń Zasięgowa (Inżynieryjna)",
+        "Broń Zasięgowa (Eksperymentalna)",
         "Badania Naukowe",
         "Język (Gildii)"
       ],
       "talents": [
         "Wytwórca (Inżynieria)",
-        "Etykieta (Gildia)",
+        "Etykieta (Członkowie Gildii)",
         "Strzelec Wyborowy",
         "Wyczucie Kierunku"
       ],
       "trappings": [
         "Narzędzia Pracy (Inżyniera)",
-        "Licencja Cechu"
+        "Licencja Gildii Inżynierów"
       ]
     },
     "Master Pilot": {
       "id": "ISxI2dNkiRQn0P4n",
-      "name": "Legendarny Pilot",
-      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.TkF2ld3b72RlH2AR]{Pilot Rzeczny}</p>",
+      "name": "Legendarna Pilotka",
+      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.TkF2ld3b72RlH2AR]{Pilotka Rzeczna}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.ISxI2dNkiRQn0P4n",
-      "careergroup": "Pilot Rzeczny",
+      "careergroup": "Pilotka Rzeczna",
       "class": "Wodniak",
       "skills": [
         "Mocna Głowa",
         "Plotkowanie",
         "Intuicja",
         "Wiedza (Lokalna)",
-        "Wiedza (Rzeki)",
+        "Wiedza (Szlaki Rzeczne)",
         "Percepcja",
         "Wioślarstwo",
         "Pływanie",
@@ -4241,7 +4241,7 @@
       "careergroup": "Agitator",
       "class": "Mieszczanin",
       "skills": [
-        "Sztuka (Piśmiennictwo)",
+        "Sztuka (Pisarstwo)",
         "Przekupstwo",
         "Charyzma",
         "Mocna Głowa",
@@ -4263,7 +4263,7 @@
         "Jeździectwo (Konie)"
       ],
       "talents": [
-        "Etykieta (Dowolna)",
+        "Etykieta (Dowolna Grupa)",
         "Krasomówstwo",
         "Intrygant",
         "Charyzmatyczny"
@@ -4277,10 +4277,10 @@
     },
     "Bounty Hunter": {
       "id": "J02PRoX8q5e0cDv6",
-      "name": "Łowca Nagród",
-      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{Łowca Nagród}</p>",
+      "name": "Łowczyni Nagród",
+      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{Łowczyni Nagród}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.J02PRoX8q5e0cDv6",
-      "careergroup": "Łowca Nagród",
+      "careergroup": "Łowczyni Nagród",
       "class": "Wędrowiec",
       "skills": [
         "Przekupstwo",
@@ -4294,7 +4294,7 @@
         "Atletyka",
         "Odporność",
         "Zastraszanie",
-        "Broń Zasięgowa (Kusze)",
+        "Broń Zasięgowa (Kusza)",
         "Broń Zasięgowa (Oplątująca)",
         "Tropienie"
       ],
@@ -4326,7 +4326,7 @@
         "Zastraszanie",
         "Intuicja",
         "Wiedza (Sigmar)",
-        "Broń Biała (Korbacze)",
+        "Broń Biała (Korbacz)",
         "Sztuka Przetrwania",
         "Sztuka (Ikony)",
         "Atletyka",
@@ -4355,7 +4355,7 @@
       "careergroup": "Czarodziej",
       "class": "Uczony",
       "skills": [
-        "Splatanie Magii (Dowolne)",
+        "Splatanie Magii (Dowolny Kolor)",
         "Unik",
         "Intuicja",
         "Język (Magiczny)",
@@ -4371,7 +4371,7 @@
         "Język (Dowolny)"
       ],
       "talents": [
-        "Magia Tajemna (Dowolna)",
+        "Magia Tajemna (Dowolna Tradycja)",
         "Rozpoznanie Artefaktu",
         "Ruchliwe dłonie",
         "Szósty Zmysł"
@@ -4405,7 +4405,7 @@
         "Przekupstwo",
         "Wycena",
         "Dowodzenie",
-        "Wiedza ()"
+        "Wiedza (Dowolna)"
       ],
       "talents": [
         "Mól Książkowy",
@@ -4420,14 +4420,14 @@
     },
     "Fortune Teller": {
       "id": "jyfMHnPojhZVwF07",
-      "name": "Wróż",
-      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.CzebTXk5dirMAZ6p]{Mistyk}</p>",
+      "name": "Wróżbiarka",
+      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.CzebTXk5dirMAZ6p]{Mistyczka}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.jyfMHnPojhZVwF07",
-      "careergroup": "Mistyk",
+      "careergroup": "Mistyczka",
       "class": "Pospólstwo",
       "skills": [
         "Charyzma",
-        "Występy (Wróżbiarstwo)",
+        "Występy (Wróżenie)",
         "Unik",
         "Plotkowanie",
         "Targowanie",
@@ -4466,7 +4466,7 @@
         "Plotkowanie",
         "Wiedza (Lokalna)",
         "Otwieranie Zamków",
-        "Sekretne Znaki (Złodzieje)",
+        "Sekretne Znaki (Złodziei)",
         "Zwinne Palce"
       ],
       "talents": [
@@ -4555,7 +4555,7 @@
       "careergroup": "Agitator",
       "class": "Mieszczanin",
       "skills": [
-        "Sztuka (Piśmiennictwo)",
+        "Sztuka (Pisarstwo)",
         "Przekupstwo",
         "Charyzma",
         "Mocna Głowa",
@@ -4604,13 +4604,13 @@
         "Targowanie",
         "Intuicja",
         "Broń Biała (Podstawowa)",
-        "Broń Biała (Korbacze lub Dwuręczna)",
+        "Broń Biała (Korbacz lub Dwuręczna)",
         "Percepcja",
         "Broń Zasięgowa (Oplątująca)",
         "Mocna Głowa",
         "Plotkowanie",
         "Wiedza (Anatomia)",
-        "Kuglarstwo (Zapasy)"
+        "Kuglarstwo (Walka Pokazowa)"
       ],
       "talents": [
         "Mistrz Walki",
@@ -4620,19 +4620,19 @@
       ],
       "trappings": [
         "Hełm",
-        "Napierśnik Płytowy"
+        "Napierśnik"
       ]
     },
     "Sage": {
       "id": "L4FGhEguFJVNWk6O",
-      "name": "Widzący",
-      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.CzebTXk5dirMAZ6p]{Mistyk}</p>",
+      "name": "Widząca",
+      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.CzebTXk5dirMAZ6p]{Mistyczka}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.L4FGhEguFJVNWk6O",
-      "careergroup": "Mistyk",
+      "careergroup": "Mistyczka",
       "class": "Pospólstwo",
       "skills": [
         "Charyzma",
-        "Występy (Wróżbiarstwo)",
+        "Występy (Wróżenie)",
         "Unik",
         "Plotkowanie",
         "Targowanie",
@@ -4647,8 +4647,8 @@
         "Wiedza (Astrologia)",
         "Oswajanie",
         "Występy (Gawędziarstwo)",
-        "Język ()",
-        "Sztuka (Piśmiennictwo)"
+        "Język (Dowolny)",
+        "Sztuka (Pisarstwo)"
       ],
       "talents": [
         "Nos do Kłopotów",
@@ -4682,14 +4682,14 @@
         "Leczenie",
         "Zastraszanie",
         "Broń Biała (Podstawowa)",
-        "Sztuka (Piśmiennictwo)",
-        "Występy (Przemawianie)",
+        "Sztuka (Pisarstwo)",
+        "Występy (Przemowy)",
         "Dowodzenie",
         "Wiedza (Heraldyka)"
       ],
       "talents": [
         "Wyczulony Zmysł (Dowolny)",
-        "Nienawiść (Dowolny)",
+        "Nienawiść (Dowolna)",
         "Porywająca Gorliwość",
         "Odporność Psychiczna"
       ],
@@ -4711,7 +4711,7 @@
         "Sztuka (Kaligrafia)",
         "Opanowanie",
         "Odporność",
-        "Występy (Bajarz)",
+        "Występy (Gawędziarstwo)",
         "Plotkowanie",
         "Leczenie",
         "Wiedza (Teologia)",
@@ -4727,7 +4727,7 @@
         "Etykieta (Kultyści)",
         "Pierwsza Pomoc",
         "Święte Wizje",
-        "Inwokacja (Dowolna)"
+        "Inwokacja (Dowolne Bóstwo)"
       ],
       "trappings": [
         "Narzędzia Pracy (Dowolne)",
@@ -4765,7 +4765,7 @@
         "Szybkobiegacz"
       ],
       "trappings": [
-        "Oliwa do Lampy",
+        "Olej do Lampy",
         "Miedziana Odznaka",
         "Latarnia na Drągu"
       ]
@@ -4818,7 +4818,7 @@
       ],
       "talents": [
         "Dwie Bronie",
-        "Nieustraszony (Wszystko!)",
+        "Nieustraszony (Wszystko)",
         "Szał Bojowy",
         "Zabójca"
       ],
@@ -4831,16 +4831,16 @@
     },
     "Trapper": {
       "id": "LYBKDZ0AhutYewfD",
-      "name": "Traper",
-      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Łowca}</p>",
+      "name": "Traperka",
+      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Łowczyni}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.LYBKDZ0AhutYewfD",
-      "careergroup": "Łowca",
+      "careergroup": "Łowczyni",
       "class": "Pospólstwo",
       "skills": [
         "Oswajanie",
         "Wspinaczka",
         "Odporność",
-        "Wiedza (Bestie)",
+        "Wiedza (Zwierzęta)",
         "Sztuka Przetrwania",
         "Percepcja",
         "Broń Zasięgowa (Proca)",
@@ -4849,13 +4849,13 @@
       "talents": [
         "Twardziel",
         "Włóczykij",
-        "Doświadczony Wędrowiec (Dowolny)",
+        "Doświadczony Wędrowiec (Dowolny Teren)",
         "Traper"
       ],
       "trappings": [
         "Broń ręczna",
         "Mocne Buty i Płaszcz",
-        "Proca z 20 Kamiennymi Pociskami",
+        "Proca z 10 Kamiennymi Pociskami",
         "Wybór Sideł na Zwierzęta"
       ]
     },
@@ -4878,7 +4878,7 @@
         "Opieka nad Zwierzętami",
         "Broń Biała (Podstawowa)",
         "Sztuka Przetrwania",
-        "Broń Zasięgowa (Łuki)",
+        "Broń Zasięgowa (Łuk)",
         "Jeździectwo (Konie)",
         "Pływanie",
         "Przekupstwo",
@@ -4893,7 +4893,7 @@
         "Pomocny"
       ],
       "trappings": [
-        "Napierśnik Płytowy",
+        "Napierśnik",
         "Grupa Nadzorców i Namiestników",
         "Ceremonialne Berło"
       ]
@@ -4927,7 +4927,7 @@
       ],
       "talents": [
         "Gładkie Słówka",
-        "Etykieta (Dowolna)",
+        "Etykieta (Dowolna Grupa)",
         "Numizmatyka",
         "Czujny"
       ],
