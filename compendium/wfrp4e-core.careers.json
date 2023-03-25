@@ -4968,16 +4968,16 @@
     },
     "Tracker": {
       "id": "mokSUD62vhpKue2Z",
-      "name": "Tropiciel",
-      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Łowca}</p>",
+      "name": "Tropicielka",
+      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Łowczyni}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.mokSUD62vhpKue2Z",
-      "careergroup": "Łowca",
+      "careergroup": "Łowczyni",
       "class": "Pospólstwo",
       "skills": [
         "Oswajanie",
         "Wspinaczka",
         "Odporność",
-        "Wiedza (Bestie)",
+        "Wiedza (Zwierzęta)",
         "Sztuka Przetrwania",
         "Percepcja",
         "Broń Zasięgowa (Proca)",
@@ -4985,8 +4985,8 @@
         "Opanowanie",
         "Intuicja",
         "Broń Biała (Podstawowa)",
-        "Broń Zasięgowa (Łuki)",
-        "Sekretne Znaki (Łowcy)",
+        "Broń Zasięgowa (Łuk)",
+        "Sekretne Znaki (Łowców)",
         "Skradanie (Wieś)",
         "Nawigacja",
         "Jeździectwo (Konie)",
@@ -5000,9 +5000,9 @@
         "Strzał w Dziesiątkę"
       ],
       "trappings": [
-        "Backpack",
-        "Bedroll",
-        "Ten"
+        "Plecak",
+        "Zwijane posłanie",
+        "Namiot"
       ]
     },
     "Watch Captain": {
@@ -5049,10 +5049,10 @@
     },
     "Hexer": {
       "id": "MsrHDvVgAb8tUJec",
-      "name": "Szptun",
-      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.7lNzR0hDPl98NrcX]{Czarownik}</p>",
+      "name": "Szeptucha",
+      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.7lNzR0hDPl98NrcX]{Czarownica}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.MsrHDvVgAb8tUJec",
-      "careergroup": "Czarownik",
+      "careergroup": "Czarownica",
       "class": "Łotr",
       "skills": [
         "Splatanie Magii",
@@ -5089,7 +5089,7 @@
         "Odporność",
         "Intuicja",
         "Język (Magiczny)",
-        "Wiedza (Folklor)",
+        "Wiedza (Ludowa)",
         "Wiedza (Zioła)",
         "Sztuka Przetrwania",
         "Percepcja",
@@ -5173,13 +5173,13 @@
         "Percepcja",
         "Atletyka",
         "Nawigacja",
-        "Broń Zasięgowa (Łuki)",
+        "Broń Zasięgowa (Łuk)",
         "Jeździectwo (Konie)",
         "Skradanie (Wieś)",
         "Tropienie",
         "Opieka nad Zwierzętami",
         "Targowanie",
-        "Sekretne Znaki (Łowcy)",
+        "Sekretne Znaki (Łowców)",
         "Pływanie"
       ],
       "talents": [
@@ -5197,10 +5197,10 @@
     },
     "Witch": {
       "id": "NcLVAmFCMddUGUl3",
-      "name": "Czarownik",
-      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.7lNzR0hDPl98NrcX]{Czarownik}</p>",
+      "name": "Czarownica",
+      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.7lNzR0hDPl98NrcX]{Czarownica}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.NcLVAmFCMddUGUl3",
-      "careergroup": "Czarownik",
+      "careergroup": "Czarownica",
       "class": "Łotr",
       "skills": [
         "Splatanie Magii",
@@ -5219,7 +5219,7 @@
         "Rzemiosło (Zielarstwo)"
       ],
       "talents": [
-        "Magia Tajemna (Wiedźmy)",
+        "Magia Tajemna (Czarownic)",
         "Atrakcyjny",
         "Percepcja Magiczna",
         "Czarownica!"
@@ -5256,7 +5256,7 @@
       ],
       "talents": [
         "Bitewny Refleks",
-        "Etykieta (Dowolna)",
+        "Etykieta (Dowolna Grupa)",
         "Błyskawiczny Strzał",
         "Odwrócenie Szans"
       ],
@@ -5284,7 +5284,7 @@
         "Powożenie",
         "Unik",
         "Nawigacja",
-        "Broń Zasięgowa (Inżynieryjna)",
+        "Broń Zasięgowa (Eksperymentalna)",
         "Badania Naukowe",
         "Język (Gildii)",
         "Język (Khazalid)",
@@ -5343,9 +5343,9 @@
     "Gang Boss": {
       "id": "O0FIdOQphDl9hozq",
       "name": "Głowa Gangu",
-      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Z5QPZbUR3h422ozo]{Rekieter}</p>",
+      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Z5QPZbUR3h422ozo]{Rekieterka}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.O0FIdOQphDl9hozq",
-      "careergroup": "Rekieter",
+      "careergroup": "Rekieterka",
       "class": "Łotr",
       "skills": [
         "Mocna Głowa",
@@ -5365,16 +5365,16 @@
         "Intuicja",
         "Dowodzenie",
         "Percepcja",
-        "Broń Zasięgowa (Kusze)"
+        "Broń Zasięgowa (Kusza)"
       ],
       "talents": [
-        "Nieustraszony (Strażnicy Miejscy)",
+        "Nieustraszony (Straże)",
         "Żelazna Wola",
         "Odporny na (Trucizny)",
         "Krzepki"
       ],
       "trappings": [
-        "Gang Zbirów i Reketerów",
+        "Gang Zbirów i Rekieterów",
         "Kryjówka",
         "Kusza Pistoletowa z 10 Bełtami"
       ]
@@ -5394,7 +5394,7 @@
         "Wiedza (Medycyna)",
         "Wiedza (Rośliny)",
         "Rzemiosło (Aptekarstwo)",
-        "Rzemiosło (Trucizny)",
+        "Rzemiosło (Truciciel)",
         "Charyzma",
         "Targowanie",
         "Wiedza (Nauka)",
@@ -5404,7 +5404,7 @@
         "Intuicja",
         "Dowodzenie",
         "Badania Naukowe",
-        "Sekretne Znaki (Gildii)"
+        "Sekretne Znaki (Cechu)"
       ],
       "talents": [
         "Mól Książkowy",
@@ -5443,7 +5443,7 @@
       ],
       "talents": [
         "Przestępca",
-        "Etykieta (Gildia)",
+        "Etykieta (Członkowie Cechu)",
         "Silne Nogi",
         "Wytrwały"
       ],
@@ -5462,7 +5462,7 @@
       "careergroup": "Agitator",
       "class": "Mieszczanin",
       "skills": [
-        "Sztuka (Piśmiennictwo)",
+        "Sztuka (Pisarstwo)",
         "Przekupstwo",
         "Charyzma",
         "Mocna Głowa",
@@ -5501,7 +5501,7 @@
         "Modlitwa"
       ],
       "talents": [
-        "Błogosławieństwo (Dowolna)",
+        "Błogosławieństwo (Dowolne Bóstwo)",
         "Etykieta (Kultyści)",
         "Czytanie/Pisanie",
         "Odporność Psychiczna"
@@ -5576,7 +5576,7 @@
         "Mocna Głowa",
         "Wycena",
         "Broń Biała (Podstawowa)",
-        "Sekretne Znaki (Górnicy)",
+        "Sekretne Znaki (Górników)",
         "Rzemiosło (Materiały Wybuchowe)"
       ],
       "talents": [
@@ -5586,7 +5586,7 @@
         "Bardzo Silny"
       ],
       "trappings": [
-        "Oliwa do Lampy",
+        "Olej do Lampy",
         "Broń ręczna (Kilof)",
         "Skórzana kurta",
         "Lampa Davricha"
@@ -5665,7 +5665,7 @@
         "Intuicja",
         "Jeździectwo (Konie)",
         "Wioślarstwo",
-        "Sztuka (Piśmiennictwo)",
+        "Sztuka (Pisarstwo)",
         "Przekupstwo",
         "Opanowanie",
         "Plotkowanie",
@@ -5715,7 +5715,7 @@
         "Czytanie/Pisanie"
       ],
       "trappings": [
-        "Flaszka Mocnego Alkoholu",
+        "Alkohol",
         "Księga",
         "Listy Polecające",
         "Zestaw do pisania"
@@ -5723,17 +5723,17 @@
     },
     "Pilot": {
       "id": "PIPU1glIR4jx1Z2E",
-      "name": "Starszy Pilot",
-      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.TkF2ld3b72RlH2AR]{Pilot Rzeczny}</p>",
+      "name": "Starsza Pilotka",
+      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.TkF2ld3b72RlH2AR]{Pilotka Rzeczna}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.PIPU1glIR4jx1Z2E",
-      "careergroup": "Pilot Rzeczny",
+      "careergroup": "Pilotka Rzeczna",
       "class": "Wodniak",
       "skills": [
         "Mocna Głowa",
         "Plotkowanie",
         "Intuicja",
         "Wiedza (Lokalna)",
-        "Wiedza (Rzeki)",
+        "Wiedza (Szlaki Rzeczne)",
         "Percepcja",
         "Wioślarstwo",
         "Pływanie",
@@ -5794,10 +5794,10 @@
     },
     "Entertainer": {
       "id": "pru2uoIq7hM13pYm",
-      "name": "Kuglarz",
-      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.5nIDu8oyFVShLqne]{Kuglarz}</p>",
+      "name": "Kuglarka",
+      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.5nIDu8oyFVShLqne]{Kuglarka}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.pru2uoIq7hM13pYm",
-      "careergroup": "Kuglarz",
+      "careergroup": "Kuglarka",
       "class": "Wędrowiec",
       "skills": [
         "Atletyka",
@@ -5849,7 +5849,7 @@
         "Unik",
         "Zastraszanie",
         "Broń Biała (Drzewcowa)",
-        "Broń Zasięgowa (Łuki)",
+        "Broń Zasięgowa (Łuk)",
         "Leczenie",
         "Język (Bitewny)",
         "Wiedza (Etykieta)",
@@ -5862,17 +5862,17 @@
         "Niewzruszony"
       ],
       "trappings": [
-        "Halabarda",
+        "Broń Dwuręczna lub Halabarda",
         "Hełm",
         "Mundur"
       ]
     },
     "Smuggler": {
       "id": "pVOuGshzCvWjNv2q",
-      "name": "Przemytnik",
-      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.FqhOxcvai4ROvhXB]{Przemytnik}</p>",
+      "name": "Przemytniczka",
+      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.FqhOxcvai4ROvhXB]{Przemytniczka}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.pVOuGshzCvWjNv2q",
-      "careergroup": "Przemytnik",
+      "careergroup": "Przemytniczka",
       "class": "Wodniak",
       "skills": [
         "Atletyka",
@@ -5888,7 +5888,7 @@
         "Wiedza (Lokalna)",
         "Broń Biała (Podstawowa)",
         "Percepcja",
-        "Sekretne Znaki (Przemytnicy)"
+        "Sekretne Znaki (Przemytników)"
       ],
       "talents": [
         "Żyłka Handlowa",
