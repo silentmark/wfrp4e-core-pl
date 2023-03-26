@@ -5962,13 +5962,13 @@
         "Targowanie",
         "Intuicja",
         "Broń Biała (Podstawowa)",
-        "Broń Biała (Korbacze lub Dwuręczna)",
+        "Broń Biała (Korbacz lub Dwuręczna)",
         "Percepcja",
         "Broń Zasięgowa (Oplątująca)",
         "Mocna Głowa",
         "Plotkowanie",
         "Wiedza (Anatomia)",
-        "Kuglarstwo (Zapasy)",
+        "Kuglarstwo (Walka Pokazowa)",
         "Charyzma",
         "Broń Zasięgowa (Dowolna)"
       ],
@@ -5993,7 +5993,7 @@
         "Sztuka (Kaligrafia)",
         "Opanowanie",
         "Odporność",
-        "Występy (Bajarz)",
+        "Występy (Gawędziarstwo)",
         "Plotkowanie",
         "Leczenie",
         "Wiedza (Teologia)",
@@ -6023,7 +6023,7 @@
     },
     "Barrister": {
       "id": "qGgpt1BH2y3Q3J0A",
-      "name": "Obrońca Prawny",
+      "name": "Obrońca",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.uIKbkjQpNUCGIQRv]{Prawniczka}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.qGgpt1BH2y3Q3J0A",
       "careergroup": "Prawniczka",
@@ -6043,7 +6043,7 @@
         "Intuicja",
         "Język (Gildii)",
         "Sekretne Znaki (Gildii)",
-        "Sztuka (Piśmiennictwo)",
+        "Sztuka (Pisarstwo)",
         "Występy (Przemawianie)",
         "Zastraszanie",
         "Wiedza (Dowolna)"
@@ -6083,7 +6083,7 @@
         "Zastawianie Pułapek",
         "Plotkowanie",
         "Zastraszanie",
-        "Broń Zasięgowa (Kusze)",
+        "Broń Zasięgowa (Kusza)",
         "Skradanie (Wieś)"
       ],
       "talents": [
@@ -6129,7 +6129,7 @@
       ],
       "trappings": [
         "Miska",
-        "Kule"
+        "Kule do chodzenia"
       ]
     },
     "Braggart": {
@@ -6143,7 +6143,7 @@
         "Atletyka",
         "Unik",
         "Odporność",
-        "Występy (Szyderstwo)",
+        "Występy (Szydzenie)",
         "Plotkowanie",
         "Targowanie",
         "Zastraszanie",
@@ -6173,7 +6173,7 @@
         "Odporność",
         "Intuicja",
         "Język (Magiczny)",
-        "Wiedza (Folklor)",
+        "Wiedza (Ludowa)",
         "Wiedza (Zioła)",
         "Sztuka Przetrwania",
         "Percepcja"
@@ -6182,7 +6182,7 @@
         "Ruchliwe dłonie",
         "Magia Prosta",
         "Włóczykij",
-        "Doświadczony Wędrowiec (Tereny Leśne)"
+        "Doświadczony Wędrowiec (Lasy)"
       ],
       "trappings": [
         "1k10 Amuletów na Szczęście",
@@ -6192,10 +6192,10 @@
     },
     "Master Smuggler": {
       "id": "QUjbPexRsKhqVDgq",
-      "name": "Doświadczony Przemytnik",
-      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.FqhOxcvai4ROvhXB]{Przemytnik}</p>",
+      "name": "Doświadczona Przemytniczka",
+      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.FqhOxcvai4ROvhXB]{Przemytniczka}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.QUjbPexRsKhqVDgq",
-      "careergroup": "Przemytnik",
+      "careergroup": "Przemytniczka",
       "class": "Wodniak",
       "skills": [
         "Atletyka",
@@ -6211,11 +6211,11 @@
         "Wiedza (Lokalna)",
         "Broń Biała (Podstawowa)",
         "Percepcja",
-        "Sekretne Znaki (Przemytnicy)",
+        "Sekretne Znaki (Przemytników)",
         "Wycena",
         "Zastraszanie",
         "Intuicja",
-        "Wiedza (Rzeki)"
+        "Wiedza (Szlaki Rzeczne)"
       ],
       "talents": [
         "Łapówkarz",
@@ -6257,12 +6257,12 @@
       ],
       "talents": [
         "Defraudant",
-        "Odporny na (Zagrożenie) (Trucizny)",
+        "Odporny na (Trucizny)",
         "Charyzmatyczny",
         "Pomocny"
       ],
       "trappings": [
-        "Oliwa do Lampy",
+        "Olej do Lampy",
         "Liberia Dobrej Jakości",
         "Lampa sztormowa",
         "Pudełko na hubkę i krzesiwo"
@@ -6316,7 +6316,7 @@
         "Leczenie",
         "Wiedza (Lokalna)",
         "Percepcja",
-        "Broń Zasięgowa (Łuki)",
+        "Broń Zasięgowa (Łuk)",
         "Skradanie (Wieś)",
         "Plotkowanie",
         "Intuicja",
@@ -6351,7 +6351,7 @@
         "Plotkowanie",
         "Targowanie",
         "Percepcja",
-        "Skradanie ()",
+        "Skradanie (Dowolne)",
         "Wspinaczka",
         "Występy (Aktorstwo)",
         "Intuicja",
@@ -6360,7 +6360,7 @@
         "Zwinne Palce"
       ],
       "talents": [
-        "Etykieta (Dowolny)",
+        "Etykieta (Dowolna Grupa)",
         "Czytanie z Ruchu Warg",
         "Czytanie/Pisanie",
         "Sekretna Tożsamość"
@@ -6394,7 +6394,7 @@
         "Unik",
         "Zastraszanie",
         "Broń Biała (Drzewcowa)",
-        "Broń Zasięgowa (Łuki)",
+        "Broń Zasięgowa (Łuk)",
         "Leczenie",
         "Język (Bitewny)",
         "Wiedza (Etykieta)",
@@ -6409,7 +6409,7 @@
         "Krzepki"
       ],
       "trappings": [
-        "Napierśnik Płytowy"
+        "Napierśnik"
       ]
     },
     "Pit Fighter": {
@@ -6431,7 +6431,7 @@
         "Targowanie",
         "Intuicja",
         "Broń Biała (Podstawowa)",
-        "Broń Biała (Korbacze lub Dwuręczna)",
+        "Broń Biała (Korbacz lub Dwuręczna)",
         "Percepcja",
         "Broń Zasięgowa (Oplątująca)"
       ],
@@ -6470,7 +6470,7 @@
         "Wycena",
         "Intuicja",
         "Percepcja",
-        "Język (Złodziei)",
+        "Język (Grypsera)",
         "Wiedza (Heraldyka)",
         "Otwieranie Zamków",
         "Sekretne Znaki (Złodziei)"
@@ -6505,15 +6505,15 @@
         "Percepcja",
         "Atletyka",
         "Nawigacja",
-        "Broń Zasięgowa (Łuki)",
+        "Broń Zasięgowa (Łuk)",
         "Jeździectwo (Konie)",
         "Skradanie (Wieś)",
         "Tropienie",
         "Opieka nad Zwierzętami",
         "Targowanie",
-        "Sekretne Znaki (Łowcy)",
+        "Sekretne Znaki (Łowców)",
         "Pływanie",
-        "Język ()",
+        "Język (Dowolny)",
         "Rzemiosło (Kartografia)"
       ],
       "talents": [
@@ -6603,10 +6603,10 @@
       ],
       "trappings": [
         "Lekki Koń Bojowy z Siodłem i Uprzężą",
-        "Napierśnik Płytowy",
+        "Napierśnik",
         "Tarcza",
         "Pistolet z 10 Nabojami",
-        "Hełm Płytowy"
+        "Hełm"
       ]
     },
     "River Recruit": {
@@ -6658,7 +6658,7 @@
         "Występy (Gawędziarstwo)",
         "Targowanie",
         "Intuicja",
-        "Wiedza (Rzeki)",
+        "Wiedza (Szlaki Rzeczne)",
         "Percepcja",
         "Wspinaczka",
         "Występy (Śpiewanie)",
@@ -6698,11 +6698,11 @@
         "Występy (Gawędziarstwo)",
         "Targowanie",
         "Intuicja",
-        "Wiedza (Rzeki)",
+        "Wiedza (Szlaki Rzeczne)",
         "Percepcja"
       ],
       "talents": [
-        "Etykieta (Gildia)",
+        "Etykieta (Członkowie Cechu)",
         "Obieżyświat",
         "Bardzo Silny",
         "Wodniak"
@@ -6737,7 +6737,7 @@
       ],
       "talents": [
         "Walka w Ciasnocie",
-        "Etykieta (Gildia)",
+        "Etykieta (Członkowie Cechu)",
         "Nieustraszony (Szczury)",
         "Niezwykle Odporny"
       ],
@@ -6767,7 +6767,7 @@
         "Targowanie",
         "Intuicja",
         "Język (Klasyczny)",
-        "Rzemiosło (Przybory do sztuki)"
+        "Rzemiosło (Przybory dla artystów)"
       ],
       "talents": [
         "Hulaka",
@@ -6831,7 +6831,7 @@
         "Targowanie"
       ],
       "talents": [
-        "Etykieta (Służący)",
+        "Etykieta (Słudzy)",
         "Cień",
         "Wytrwały",
         "Dobrze Przygotowany"
@@ -6860,12 +6860,12 @@
         "Plotkowanie",
         "Wiedza (Lokalna)",
         "Otwieranie Zamków",
-        "Sekretne Znaki (Złodzieje)",
+        "Sekretne Znaki (Złodziei)",
         "Zwinne Palce",
         "Przekupstwo",
         "Hazard",
         "Zastraszanie",
-        "Broń Zasięgowa (Kusze)",
+        "Broń Zasięgowa (Kusza)",
         "Charyzma",
         "Zastawianie Pułapek"
       ],
@@ -6896,12 +6896,12 @@
         "Wiedza (Medycyna)",
         "Wiedza (Rośliny)",
         "Rzemiosło (Aptekarstwo)",
-        "Rzemiosło (Trucizny)"
+        "Rzemiosło (Truciciel)"
       ],
       "talents": [
         "Przyrządzanie Mikstur",
         "Wytwórca (Aptekarstwo)",
-        "Etykieta (Grupa Społeczna) (Uczeni)",
+        "Etykieta (Uczeni)",
         "Czytanie/Pisanie"
       ],
       "trappings": [
@@ -6954,10 +6954,10 @@
     },
     "Crime Lord": {
       "id": "SxQH3QslvNQaDZQK",
-      "name": "Król Półświatka",
-      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Z5QPZbUR3h422ozo]{Rekieter}</p>",
+      "name": "Królowa Podziemia",
+      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Z5QPZbUR3h422ozo]{Rekieterka}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.SxQH3QslvNQaDZQK",
-      "careergroup": "Rekieter",
+      "careergroup": "Rekieterka",
       "class": "Łotr",
       "skills": [
         "Mocna Głowa",
@@ -6977,7 +6977,7 @@
         "Intuicja",
         "Dowodzenie",
         "Percepcja",
-        "Broń Zasięgowa (Kusze)",
+        "Broń Zasięgowa (Kusza)",
         "Wiedza (Prawo)",
         "Wiedza (Polityka)"
       ],
