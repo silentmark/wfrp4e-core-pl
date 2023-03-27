@@ -7030,10 +7030,10 @@
     },
     "Thief-taker": {
       "id": "t1TD7YCRFbjiicvi",
-      "name": "Pogromca Złodziei",
-      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{Łowca Nagród}</p>",
+      "name": "Pogromczyni Złodziei",
+      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{Łowczyni Nagród}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.t1TD7YCRFbjiicvi",
-      "careergroup": "Łowca Nagród",
+      "careergroup": "Łowczyni Nagród",
       "class": "Wędrowiec",
       "skills": [
         "Przekupstwo",
@@ -7086,10 +7086,10 @@
     },
     "Master Bounty Hunter": {
       "id": "taJXX3aaKZfoNCBs",
-      "name": "Doświadczony Łowca Nagród",
-      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{Łowca Nagród}</p>",
+      "name": "Doświadczona Łowczyni Nagród",
+      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{Łowczyni Nagród}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.taJXX3aaKZfoNCBs",
-      "careergroup": "Łowca Nagród",
+      "careergroup": "Łowczyni Nagród",
       "class": "Wędrowiec",
       "skills": [
         "Przekupstwo",
@@ -7103,7 +7103,7 @@
         "Atletyka",
         "Odporność",
         "Zastraszanie",
-        "Broń Zasięgowa (Kusze)",
+        "Broń Zasięgowa (Kusza)",
         "Broń Zasięgowa (Oplątująca)",
         "Tropienie",
         "Opieka nad Zwierzętami",
@@ -7133,13 +7133,13 @@
         "Sztuka (Kaligrafia)",
         "Opanowanie",
         "Odporność",
-        "Występy (Bajarz)",
+        "Występy (Gawędziarstwo)",
         "Plotkowanie",
         "Leczenie",
         "Wiedza (Teologia)",
         "Modlitwa",
         "Charyzma",
-        "Broń Biała ()",
+        "Broń Biała (Dowolna)",
         "Badania Naukowe",
         "Rzemiosło (Piwowarstwo)",
         "Rzemiosło (Zielarstwo)",
@@ -7150,9 +7150,9 @@
         "Percepcja"
       ],
       "talents": [
-        "Odporny na (Zagrożenie) (Dowolny)",
+        "Odporny na (Dowolne Zagrożenie)",
         "Krzepki",
-        "Znawca (Wiedza) (Teologia)",
+        "Znawca (Teologia)",
         "Waleczne Serce"
       ],
       "trappings": [
@@ -7179,13 +7179,13 @@
       ],
       "talents": [
         "Włóczykij",
-        "Doświadczony Wędrowiec (Tereny Skaliste)",
+        "Doświadczony Wędrowiec (Teren Skalisty)",
         "Tragarz",
         "Wytrwały"
       ],
       "trappings": [
         "Węgiel do rysowania",
-        "Panew",
+        "Metalowa miska albo patelnia",
         "Kiepska Mapa",
         "Szpadel"
       ]
@@ -7225,10 +7225,10 @@
     },
     "Villager": {
       "id": "TvTXvNwAR0hYz0FM",
-      "name": "Chłop",
-      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.EYkvtokq0FXlFaPa]{Chłop}</p>",
+      "name": "Chłopka",
+      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.EYkvtokq0FXlFaPa]{Chłopka}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.TvTXvNwAR0hYz0FM",
-      "careergroup": "Chłop",
+      "careergroup": "Chłopka",
       "class": "Pospólstwo",
       "skills": [
         "Opieka nad Zwierzętami",
@@ -7274,7 +7274,7 @@
         "Język (Klasyczny)",
         "Wiedza (Dowolna)",
         "Badania Naukowe",
-        "Sztuka (Piśmiennictwo)",
+        "Sztuka (Pisarstwo)",
         "Intuicja",
         "Język (Dowolny)",
         "Wiedza (Dowolna)",
@@ -7288,7 +7288,7 @@
       "talents": [
         "Poliglota",
         "Mówca",
-        "Znawca (Dowolny)",
+        "Znawca (Dowolna Dziedzina)",
         "Wieża Pamięci"
       ],
       "trappings": [
@@ -7314,7 +7314,7 @@
         "Badania Naukowe"
       ],
       "talents": [
-        "Błogosławieństwo (Dowolne)",
+        "Błogosławieństwo (Dowolne Bóstwo)",
         "Święte Wizje",
         "Czytanie/Pisanie",
         "Charyzmatyczny"
@@ -7326,7 +7326,7 @@
     },
     "Treasure Hunter": {
       "id": "ufAAH4fyE4qfkH2c",
-      "name": "Łowca Skarbów",
+      "name": "Łowczyni Skarbów",
       "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.bDoNOzzUiMdKqpps]{Hiena Cmentarna}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.ufAAH4fyE4qfkH2c",
       "careergroup": "Hiena Cmentarna",
@@ -7392,7 +7392,7 @@
         "Intuicja",
         "Dowodzenie",
         "Wiedza (Medycyna)",
-        "Rzemiosło (Trucizny)",
+        "Rzemiosło (Truciciel)",
         "Powożenie",
         "Nawigacja"
       ],
@@ -7427,7 +7427,7 @@
         "Intuicja",
         "Percepcja",
         "Sekretne Znaki (Złodziei)",
-        "Rzemiosło (Rytownictwo)"
+        "Rzemiosło (Grawerstwo)"
       ],
       "talents": [
         "Przestępca",
@@ -7526,8 +7526,8 @@
         "Leczenie",
         "Zastraszanie",
         "Broń Biała (Podstawowa)",
-        "Sztuka (Piśmiennictwo)",
-        "Występy (Przemawianie)",
+        "Sztuka (Pisarstwo)",
+        "Występy (Przemowy)",
         "Dowodzenie",
         "Wiedza (Heraldyka)",
         "Język (Dowolny)",
@@ -7536,7 +7536,7 @@
       "talents": [
         "Krasomówstwo",
         "Czysta Dusza",
-        "Odporny na (Dowolny)",
+        "Odporny na (Dowolne Zagrożenie)",
         "Znawca (Teologia)"
       ],
       "trappings": [
@@ -7558,7 +7558,7 @@
         "Zastraszanie",
         "Intuicja",
         "Wiedza (Sigmar)",
-        "Broń Biała (Korbacze)",
+        "Broń Biała (Korbacz)",
         "Sztuka Przetrwania"
       ],
       "talents": [
@@ -7615,10 +7615,10 @@
     },
     "River Runner": {
       "id": "v6OhQFxpriyKJyVO",
-      "name": "Szmuglerka Rzeczny",
-      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.FqhOxcvai4ROvhXB]{Przemytnik}</p>",
+      "name": "Szmuglerka Rzeczna",
+      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.FqhOxcvai4ROvhXB]{Przemytniczka}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.v6OhQFxpriyKJyVO",
-      "careergroup": "Przemytnik",
+      "careergroup": "Przemytniczka",
       "class": "Wodniak",
       "skills": [
         "Atletyka",
@@ -7633,7 +7633,7 @@
       "talents": [
         "Przestępca",
         "Rybak",
-        "Doświadczony Wędrowiec (Wybrany Teren) (Mokradła)",
+        "Doświadczony Wędrowiec (Bagna)",
         "Mocne Plecy"
       ],
       "trappings": [
@@ -7665,8 +7665,8 @@
         "Intuicja",
         "Język (Gildii)",
         "Sekretne Znaki (Gildii)",
-        "Sztuka (Piśmiennictwo)",
-        "Występy (Przemawianie)",
+        "Sztuka (Pisarstwo)",
+        "Występy (Przemowy)",
         "Zastraszanie",
         "Wiedza (Dowolna)",
         "Opanowanie",
@@ -7691,7 +7691,7 @@
       "careergroup": "Artystka",
       "class": "Dworzanin",
       "skills": [
-        "Sztuka ()",
+        "Sztuka (Dowolna)",
         "Opanowanie",
         "Mocna Głowa",
         "Wycena",
@@ -7704,7 +7704,7 @@
         "Targowanie",
         "Intuicja",
         "Język (Klasyczny)",
-        "Rzemiosło (Przybory do sztuki)",
+        "Rzemiosło (Przybory dla artystów)",
         "Charyzma",
         "Dowodzenie",
         "Wiedza (Sztuka)",
@@ -7713,7 +7713,7 @@
       "talents": [
         "Wyczulony Zmysł (Dowolny)",
         "Żyłka Handlowa",
-        "Etykieta (Dowolna)",
+        "Etykieta (Dowolna Grupa)",
         "Nos do Kłopotów"
       ],
       "trappings": [
@@ -7724,17 +7724,17 @@
     },
     "Huffer": {
       "id": "vguGSNyf0hfxZ6RM",
-      "name": "Pilot Rzeczny",
-      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.TkF2ld3b72RlH2AR]{Pilot Rzeczny}</p>",
+      "name": "Pilotka Rzeczna",
+      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.TkF2ld3b72RlH2AR]{Pilotka Rzeczna}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.vguGSNyf0hfxZ6RM",
-      "careergroup": "Pilot Rzeczny",
+      "careergroup": "Pilotka Rzeczna",
       "class": "Wodniak",
       "skills": [
         "Mocna Głowa",
         "Plotkowanie",
         "Intuicja",
         "Wiedza (Lokalna)",
-        "Wiedza (Rzeki)",
+        "Wiedza (Szlaki Rzeczne)",
         "Percepcja",
         "Wioślarstwo",
         "Pływanie",
@@ -7747,7 +7747,7 @@
       ],
       "talents": [
         "Żyłka Handlowa",
-        "Etykieta (Gildia)",
+        "Etykieta (Członkowie Cechu)",
         "Nos do Kłopotów",
         "Pilot Rzeczny"
       ],
@@ -7777,7 +7777,7 @@
         "Charyzma",
         "Zastraszanie",
         "Plotkowanie",
-        "Wiedza (Rzeki)",
+        "Wiedza (Szlaki Rzeczne)",
         "Broń Zasięgowa (Prochowa)",
         "Wspinaczka",
         "Opanowanie",
@@ -7800,9 +7800,9 @@
     "Wandering Trader": {
       "id": "vkfLXwz3Vpi13LqP",
       "name": "Wędrowny Handlarz",
-      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.FdlybSv02jjXG1qW]{Kolporter}</p>",
+      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.FdlybSv02jjXG1qW]{Domokrążca}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.vkfLXwz3Vpi13LqP",
-      "careergroup": "Kolporter",
+      "careergroup": "Domokrążca",
       "class": "Wędrowiec",
       "skills": [
         "Charyzma",
@@ -7818,7 +7818,7 @@
         "Mocna Głowa",
         "Wycena",
         "Jeździectwo (Konie)",
-        "Rzemiosło (Druciarz)",
+        "Rzemiosło (Złota Rączka)",
         "Powożenie",
         "Zastraszanie",
         "Język (Dowolny)",
@@ -7839,15 +7839,15 @@
     },
     "Busker": {
       "id": "vmFzpNOoQfMELqdM",
-      "name": "Muzykant",
-      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.5nIDu8oyFVShLqne]{Kuglarz}</p>",
+      "name": "Muzykantka",
+      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.5nIDu8oyFVShLqne]{Kuglarka}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.vmFzpNOoQfMELqdM",
-      "careergroup": "Kuglarz",
+      "careergroup": "Kuglarka",
       "class": "Wędrowiec",
       "skills": [
         "Atletyka",
         "Charyzma",
-        "Występy ()",
+        "Występy (Dowolne)",
         "Plotkowanie",
         "Targowanie",
         "Kuglarstwo (Dowolne)",
@@ -7867,10 +7867,10 @@
     },
     "Thug": {
       "id": "VPKFN1VePTy3CY7V",
-      "name": "Zakapior",
-      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Z5QPZbUR3h422ozo]{Rekieter}</p>",
+      "name": "Zakapiorka",
+      "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Z5QPZbUR3h422ozo]{Rekieterka}</p>",
       "sourceId": "Compendium.wfrp4e-core.careers.VPKFN1VePTy3CY7V",
-      "careergroup": "Rekieter",
+      "careergroup": "Rekieterka",
       "class": "Łotr",
       "skills": [
         "Mocna Głowa",
@@ -7912,7 +7912,7 @@
         "Opanowanie",
         "Broń Biała (Podstawowa)",
         "Plotkowanie",
-        "Wiedza (Wiedźmy)",
+        "Wiedza (Czarownice)",
         "Broń Zasięgowa (Dowolna)",
         "Jeździectwo (Konie)",
         "Odporność",
@@ -7963,7 +7963,7 @@
         "Tropienie"
       ],
       "talents": [
-        "Nieustraszony (Skaveni)",
+        "Nieustraszony (Skaveny)",
         "Groźny",
         "Krzepki",
         "Odporność Psychiczna"
@@ -8027,7 +8027,7 @@
       ],
       "talents": [
         "Niegodny Uwagi",
-        "Etykieta (Grupa Społeczna) (Dowolny)",
+        "Etykieta (Dowolna Grupa)",
         "Towarzyski",
         "Czytanie/Pisanie"
       ],
