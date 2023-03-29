@@ -11,7 +11,7 @@ Hooks.on("init", () => {
 		effects: (effects, translations) => {
 			return effects.map((data) => {
 				//TODO: map script.
-				let translation = translations[data.label] || translations[data._id];
+				const translation = translations[data.label] || translations[data._id];
 				if (translations && translation) {
 					return mergeObject(
 						data,
@@ -26,7 +26,7 @@ Hooks.on("init", () => {
 		notes: (notes, translations) => {
 			// TODO: notes on map.
 			return notes.map((data) => {
-				let translation = translations[data._id];
+				const translation = translations[data._id];
 				if (translations && translation) {
 					return mergeObject(
 						data,
