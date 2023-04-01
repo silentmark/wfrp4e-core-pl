@@ -1,455 +1,425 @@
 {
-  "label": "Urazy",
-  "mapping": {
-    "location": "data.location.value",
-    "penalty": "data.penalty.value",
-    "duration": "data.duration.value",
-    "effects": {
-      "path": "effects",
-      "converter": "effects"
+    "label": "Urazy",
+    "mapping": {
+        "location": "data.location.value",
+        "penalty": "data.penalty.value",
+        "duration": "data.duration.value",
+        "effects": {
+            "path": "effects",
+            "converter": "effects"
+        }
+    },
+    "entries": {
+        "Broken Leg (Major)": {
+            "id": "2iult41Jehz0F1O8",
+            "name": "Złamanie Nogi (Poważne)",
+            "description": "<p>Jedna z kości została poważnie strzaskana, więc albo sterczy pod dziwnym kątem, albo zwisa bezwładnie, trzymając się jedynie na skórze. Mało prawdopodobne, że zrośnie się bez odpowiedniej pomocy medycznej.</p>\n<p><span style=\"font-weight: bold;\">Noga: </span>Pozostaje ci polegać na drugiej kończynie, ponieważ ból jest ogromny i zwykle konieczne są łubki. Szybkość zostaje trwale zmniejszona o połowę, a wszystkie Testy związane z poruszaniem się otrzymują karę -20. Niemożliwe jest wykonywanie Uników.</p>\n<h3>Leczenie</h3>\n<p>Złamana kość będzie zrastać się przez 40+1k10 dni. Pod koniec tego okresu należy wykonać Wymagający (+0) Test Odporności, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę:&nbsp;-10 do wszystkich Testów Zwinności, w których używa ramienia.</p>\n<p>Udany <strong>Wymagający (+0)</strong> test Leczenia wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny Wymagający (+0) Test Leczenia wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
+            "sourceId": "Compendium.wfrp4e-core.injuries.2iult41Jehz0F1O8",
+            "effects": {
+                "tZayAMRUW6AVaa12": {
+                    "id": "tZayAMRUW6AVaa12",
+                    "label": "Złamana Noga"
+                },
+                "ZwCU28eoOKqibVfu": {
+                    "id": "ZwCU28eoOKqibVfu",
+                    "label": "Kara do Poruszania się",
+                    "script": "args.actor.details.move.value /= 2;"
+                }
+            },
+            "penalty": "-20 do testów związanych z ruchem, nie może unikać, połowa szybkości",
+            "location": "Noga"
+        },
+        "Torn Leg Muscle (Major)": {
+            "id": "3S4OYOZLauXctmev",
+            "name": "Zerwanie mięśni (Noga) (Poważne)",
+            "description": "<p>Jeden z mięśni lub jakieś ważne ścięgno zostały poważnie uszkodzone, co wywołuje ogromny ból i poważną utratę ruchomości zranionej kończyny. &nbsp;</p>\n<p><strong>Noga:</strong> Szybkość spada o połowę. Testy związane z użyciem nogi wykonuje się z karą -20.</p>\n<p><span style=\"font-weight: bold;\">Leczenie: </span>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości, po których używanie kończyny będzie pociągało za sobą kary -10 do odpowiednich Testów. Mięśnie zagoją się całkowicie w ciągu następnych 30 dni - Bonus z Wytrzymałości. Test Leczenia nie pomoże w tej sytuacji - medyk po prostu stwierdzi, żeby nie używać trafionego miejsca.&nbsp;</p>",
+            "sourceId": "Compendium.wfrp4e-core.injuries.3S4OYOZLauXctmev",
+            "effects": {
+                "e5BPTZkHGMJuDX2p": {
+                    "id": "e5BPTZkHGMJuDX2p",
+                    "label": "Naderwany Mięsień Nogi"
+                },
+                "t1Anp3f9yR4IJqpR": {
+                    "id": "t1Anp3f9yR4IJqpR",
+                    "label": "Kara do Poruszania się",
+                    "script": "args.actor.details.move.value /= 2;"
+                }
+            },
+            "location": "Noga"
+        },
+        "Broken Arm (Minor)": {
+            "id": "4lj1ik958mbgAlaF",
+            "name": "Złamanie Ręki (Pomniejsze)",
+            "description": "<p>Złamanie jednej kości, ale bez przemieszczenia.&nbsp;</p>\n<p><span style=\"font-weight: bold;\">Ramię: </span>pozostaje ci polegać na drugiej kończynie, ponieważ ból jest ogromny i zwykle konieczne są łubki. Wszystkie Testy, w których niezbędne jest używanie obu dłoni, obarczone są karą -20, ponadto postać nie może używać broni dwuręcznych; Jeśli odcięta została dłoń wiodąca, Testy walki przy pomocy drugiej dłoni nadal wykonywane są z karą -20</p>\n<h3>Leczenie</h3>\n<p>Złamana kość będzie zrastać się przez 30+1k10 dni. Pod koniec tego okresu należy wykonać Wymagający (+0) Test Odporności, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę:&nbsp;-10 do wszystkich Testów Zwinności, w których używa ramienia.</p>\n<p>Udany <strong>Przeciętny (+20)</strong> test Leczenia wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny Przeciętny (+20) Test Leczenia wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
+            "sourceId": "Compendium.wfrp4e-core.injuries.4lj1ik958mbgAlaF",
+            "effects": {
+                "s7ir53mI80aA1FGh": {
+                    "id": "s7ir53mI80aA1FGh",
+                    "label": "Złamana Ręka"
+                }
+            },
+            "penalty": "-20 do testów wymagających obu rąk",
+            "location": "Ręka"
+        },
+        "Broken Leg (Minor)": {
+            "id": "7mCcI3q7hgWcmbBU",
+            "name": "Złamanie Nogi (Pomniejsze)",
+            "description": "<p>Złamanie jednej kości, ale bez przemieszczenia.&nbsp;</p>\n<p><span style=\"font-weight: bold;\">Noga: </span>pozostaje ci polegać na drugiej kończynie, ponieważ ból jest ogromny i zwykle konieczne są łubki. Szybkość zostaje trwale zmniejszona o połowę, a wszystkie Testy związane z poruszaniem się otrzymują karę -20. Niemożliwe jest wykonywanie Uników.</p>\n<h3>Leczenie</h3>\n<p>Złamana kość będzie zrastać się przez 30+1k10 dni. Pod koniec tego okresu należy wykonać Wymagający (+0) Test Odporności, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę:&nbsp;-10 do wszystkich Testów Zwinności, w których używa ramienia.</p>\n<p>Udany <strong>Przeciętny (+20)</strong> test Leczenia wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny Przeciętny (+20) Test Leczenia wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
+            "sourceId": "Compendium.wfrp4e-core.injuries.7mCcI3q7hgWcmbBU",
+            "effects": {
+                "DYDPqHfkDkbRBwqH": {
+                    "id": "DYDPqHfkDkbRBwqH",
+                    "label": "Kara do Poruszania się",
+                    "script": "args.actor.details.move.value /= 2;"
+                },
+                "j9pWVPJtatDruv0Y": {
+                    "id": "j9pWVPJtatDruv0Y",
+                    "label": "Złamana Noga"
+                }
+            },
+            "location": "Noga"
+        },
+        "Torn Body Muscle (Minor)": {
+            "id": "7rBhIRo96Mydo0Cv",
+            "name": "Zerwanie mięśni (Korpus) (Pomniejsze)",
+            "description": "<p>Jeden z mięśni został zerwany albo nastąpiło skręcenie stawu, co skutkuje ograniczeniem ruchomości i sporym bólem. &nbsp;</p>\n<p><strong>Korpus:</strong> -10 do wszystkich testów związanych z użyciem korpusu.</p>\n<p><span style=\"font-weight: bold;\">Leczenie: </span>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości. Sukces w Teście Leczenia zmniejszy ten okres o 1 dzień plus 1 dodatkowy dzień za każdy PS (premię tę można uzyskać tylko raz).&nbsp;</p>",
+            "sourceId": "Compendium.wfrp4e-core.injuries.7rBhIRo96Mydo0Cv",
+            "effects": {
+                "Aans92KGaO90qXGV": {
+                    "id": "Aans92KGaO90qXGV",
+                    "label": "Naderwany Mięsień Brzucha"
+                }
+            },
+            "penalty": "-10 do testów wymagających ruchu tułowiem",
+            "location": "Korpus"
+        },
+        "Amputated Ear": {
+            "id": "8piWcBKFlQ2J1E3A",
+            "name": "Amputacja Ucha",
+            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako Amputacja (trudność), musi wykonać Test Odporności (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan Powalenie. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom Oszołomienia. W przypadku Krytycznej Porażki (-4 PS) następuje Unconscious&nbsp;condition</p>\n<p>Wszystkie Amputacje wymagają leczenia Chirurgicznego, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Więcej o Chirurgii przeczytasz w księdze zasad na stronie 181.</p>\n<p><strong>Ucho</strong>: Ucho Utrata ucha jest bolesna, ale prędzej czy później można się do tego przyzwyczaić. Pechem jest utrata obydwu uszu, wtedy wszelkie Testy Percepcji oparte na słuchu obarczone są karą -20. Ponadto za każde odcięte ucho wszystkie Testy Ogłady otrzymują karę -5, ponieważ rana jest dobrze widoczna.</p>",
+            "sourceId": "Compendium.wfrp4e-core.injuries.8piWcBKFlQ2J1E3A",
+            "effects": {
+                "i6SjnYZ0pNeN8SNZ": {
+                    "id": "i6SjnYZ0pNeN8SNZ",
+                    "label": "Utracone Ucho",
+                    "script": "if (args.type == \"characteristic\" && args.item == \"fel\"){\n  args.prefillModifiers.modifier -= 5;\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"fel\") {\n    args.prefillModifiers.modifier -= 5\n  }\n}"
+                },
+                "NjLgGWim2CMWdOL4": {
+                    "id": "NjLgGWim2CMWdOL4",
+                    "label": "Utracone Oboje Uszu"
+                }
+            },
+            "location": "Ucho"
+        },
+        "Broken Body (Major)": {
+            "id": "EaqlLRQigwnsEAXX",
+            "name": "Złamanie (Korpus) (Poważne)",
+            "description": "<p>Jedna z kości została poważnie strzaskana, więc albo sterczy pod dziwnym kątem, albo zwisa bezwładnie, trzymając się jedynie na skórze. Mało prawdopodobne, że zrośnie się bez odpowiedniej pomocy medycznej.</p>\n<p><span style=\"font-weight: bold;\">Korpus: </span>siła i zdolność poruszania się postaci są mocno ograniczone: Szybkość spada o połowę, a ponadto wszystkie Testy Siły i Zwinności otrzymują karę -30.&nbsp;</p>\n<h3>Leczenie</h3>\n<p>Złamana kość będzie zrastać się przez 40+1k10 dni. Pod koniec tego okresu należy wykonać Wymagający (+0) Test Odporności, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę:&nbsp;-10 do wszystkich Testów Zwinności, w których używa ramienia.</p>\n<p>Udany <strong>Wymagający (+0)</strong> test Leczenia wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny Wymagający (+0) Test Leczenia wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
+            "sourceId": "Compendium.wfrp4e-core.injuries.EaqlLRQigwnsEAXX",
+            "effects": {
+                "l5W27AsBX8jj1T80": {
+                    "id": "l5W27AsBX8jj1T80",
+                    "label": "Szybkość Zmniejszona o Połowę",
+                    "script": "args.actor.details.move.value /= 2;"
+                },
+                "qIkF1AGNf4XxzaFv": {
+                    "id": "qIkF1AGNf4XxzaFv",
+                    "label": "Złamane Żebra"
+                }
+            },
+            "penalty": "-30 do Siły i Zręczności, połowa Szybkości.",
+            "location": "Korpus"
+        },
+        "Torn Body Muscle (Major)": {
+            "id": "eWPN3CV2Eddwz8aM",
+            "name": "Zerwanie mięśni (Korpus) (Poważne)",
+            "description": "<p>Jeden z mięśni lub jakieś ważne ścięgno zostały poważnie uszkodzone, co wywołuje ogromny ból i poważną utratę ruchomości zranionej kończyny. &nbsp;</p>\n<p><strong>Korpus:</strong> -20 do wszystkich testów związanych z użyciem korpusu.</p>\n<p><span style=\"font-weight: bold;\">Leczenie: </span>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości, po których używanie kończyny będzie pociągało za sobą kary -10 do odpowiednich Testów. Mięśnie zagoją się całkowicie w ciągu następnych 30 dni - Bonus z Wytrzymałości. Test Leczenia nie pomoże w tej sytuacji - medyk po prostu stwierdzi, żeby nie używać trafionego miejsca.&nbsp;</p>",
+            "sourceId": "Compendium.wfrp4e-core.injuries.eWPN3CV2Eddwz8aM",
+            "effects": {
+                "VczyyG2FDfvOQflT": {
+                    "id": "VczyyG2FDfvOQflT",
+                    "label": "Naderwany Mięsień Brzucha"
+                }
+            },
+            "penalty": "-20 do testów wymagających ruch tułowiem",
+            "location": "Korpus"
+        },
+        "Amputated Teeth": {
+            "id": "fBcZhOBn8IpoVqQ1",
+            "name": "Amputacja Zębów",
+            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako Amputacja (trudność), musi wykonać Test Odporności (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan Powalenie. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom Oszołomienia. W przypadku Krytycznej Porażki (-4 PS) następuje Unconscious&nbsp;condition</p>\n<p>Wszystkie Amputacje wymagają leczenia Chirurgicznego, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Więcej o Chirurgii przeczytasz w księdze zasad na stronie 181.</p>\n<p><strong>Zęby:&nbsp;</strong> Utrata zębów może oszpecić postać, a poza tym znacznie utrudnia spożywanie posiłków. Za każde 2 utracone zęby Ogłada trwale spada o 1 punkt. Ponadto utrata ponad połowy zębów (ludzie: 16, elfy: 18, niziołki i krasnoludy: 20) sprawia, że jedzenie staje się bardzo uciążliwe, zajmuje dwa razy więcej czasu, a niektóre posiłki są niemożliwe do zjedzenia - jest to przede wszystkim kwestia odgrywania postaci i opisywania działań.</p>",
+            "sourceId": "Compendium.wfrp4e-core.injuries.fBcZhOBn8IpoVqQ1",
+            "location": "Zęby"
+        },
+        "Torn Arm Muscle (Minor)": {
+            "id": "GlShFJF2TpsNh1FX",
+            "name": "Zerwanie mięśni (Ramię) (Pomniejsze)",
+            "description": "<p>Jeden z mięśni został zerwany albo nastąpiło skręcenie stawu, co skutkuje ograniczeniem ruchomości i sporym bólem. &nbsp;</p>\n<p><strong>Ramię:&nbsp;</strong> -10 do wszystkich testów związanych z użyciem ramienia.</p>\n<p><span style=\"font-weight: bold;\">Leczenie: </span>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości. Sukces w Teście Leczenia zmniejszy ten okres o 1 dzień plus 1 dodatkowy dzień za każdy PS (premię tę można uzyskać tylko raz).&nbsp;</p>",
+            "sourceId": "Compendium.wfrp4e-core.injuries.GlShFJF2TpsNh1FX",
+            "effects": {
+                "9rO0RdQJqsNwv9lv": {
+                    "id": "9rO0RdQJqsNwv9lv",
+                    "label": "Naderwany Mięsień Ręki"
+                }
+            },
+            "penalty": "-10 do testów dotyczących danej ręki",
+            "location": "Ręka"
+        },
+        "Amputated Foot": {
+            "id": "gz2xy41OSVZ8YBgI",
+            "name": "Amputacja Stopy",
+            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako Amputacja (trudność), musi wykonać Test Odporności (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan Powalenie. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom Oszołomienia. W przypadku Krytycznej Porażki (-4 PS) następuje Unconscious&nbsp;condition</p>\n<p>Unconscious&nbsp;condition</p>\n<p><strong>Stopa</strong>: Szybkość zostaje trwale zmniejszona o połowę, a wszystkie Testy związane z poruszaniem się, jak np. Uniki, otrzymują karę -20. Utrata obu stóp znacznie utrudnia chodzenie. Może czas zatrudnić pachołka, który będzie służył za wierzchowca?</p>",
+            "sourceId": "Compendium.wfrp4e-core.injuries.gz2xy41OSVZ8YBgI",
+            "effects": {
+                "QHpPBISp2DCIRZp7": {
+                    "id": "QHpPBISp2DCIRZp7",
+                    "label": "Amputacja Stopy"
+                },
+                "vFwI36wK9QnfgLGG": {
+                    "id": "vFwI36wK9QnfgLGG",
+                    "label": "Szybkość Zmniejszona o Połowę",
+                    "script": "args.actor.details.move.value /= 2;"
+                }
+            },
+            "penalty": "-20 do testów związanych z ruchem, połowa szybkości",
+            "location": "Stopa"
+        },
+        "Broken Head (Major)": {
+            "id": "hCadFsTRvLN9faaY",
+            "name": "Złamanie (Czaszka) (Poważne)",
+            "description": "<p>Jedna z kości została poważnie strzaskana, więc albo sterczy pod dziwnym kątem, albo zwisa bezwładnie, trzymając się jedynie na skórze. Mało prawdopodobne, że zrośnie się bez odpowiedniej pomocy medycznej.</p>\n<p><span style=\"font-weight: bold;\">Głowa:</span><span style=\"font-weight: bold;\">&nbsp;</span>Postać będzie musiała przejść na dietę płynną, a dodatkowo wszystkie Testy Języków obarczone są karą -30.&nbsp;</p>\n<h3>Leczenie</h3>\n<p>Złamana kość będzie zrastać się przez 40+1k10 dni. Pod koniec tego okresu należy wykonać Wymagający (+0) Test Odporności, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę:&nbsp;-10 do wszystkich Testów Zwinności, w których używa ramienia.</p>\n<p>Udany <strong>Wymagający (+0)</strong> test Leczenia wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny Wymagający (+0) Test Leczenia wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
+            "sourceId": "Compendium.wfrp4e-core.injuries.hCadFsTRvLN9faaY",
+            "effects": {
+                "WLwNpLVQX79yOsdJ": {
+                    "id": "WLwNpLVQX79yOsdJ",
+                    "label": "Pęknięta Czaszka",
+                    "script": "if (args.type == \"cast\" || (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"Language\")))) {\n   args.prefillModifiers.modifier -= 30;\n}"
+                }
+            },
+            "location": "Głowa"
+        },
+        "Amputated Leg": {
+            "id": "k00PimCWkff11IA0",
+            "name": "Amputacja Nogi",
+            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako Amputacja (trudność), musi wykonać Test Odporności (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan Powalenie. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom Oszołomienia. W przypadku Krytycznej Porażki (-4 PS) następuje Unconscious&nbsp;condition</p>\n<pUnconscious&nbsp;condition</p>\n<p><strong>Noga:&nbsp;</strong> Szybkość zostaje trwale zmniejszona o połowę, a wszystkie Testy związane z poruszaniem się otrzymują karę -20. Niemożliwe jest wykonywanie Uników. Utrata obu nóg znacznie utrudnia chodzenie. Może czas zatrudnić pachołka, który będzie służył za wierzchowca?</p>",
+            "sourceId": "Compendium.wfrp4e-core.injuries.k00PimCWkff11IA0",
+            "effects": {
+                "p9uFm2XY1RGrjStF": {
+                    "id": "p9uFm2XY1RGrjStF",
+                    "label": "Szybkość Zmniejszona o Połowę",
+                    "script": "args.actor.details.move.value /= 2;"
+                },
+                "wkJy3QCy8odqGvjm": {
+                    "id": "wkJy3QCy8odqGvjm",
+                    "label": "Amputacja Nogi"
+                }
+            },
+            "penalty": "-20 do testów związanych z ruchem, nie może unikać, połowa szybkości",
+            "location": "Noga"
+        },
+        "Amputated Arm": {
+            "id": "MnMZv7ZXoRqoH9dS",
+            "name": "Amputacja Ramienia",
+            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako Amputacja (trudność), musi wykonać Test Odporności (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan Powalenie. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom Oszołomienia. W przypadku Krytycznej Porażki (-4 PS) następuje Unconscious&nbsp;condition</p>\n<p>Unconscious&nbsp;condition</p>\n<p><strong>Ramię</strong>: Wszystkie Testy, w których niezbędne jest używanie obu dłoni, obarczone są karą -20, ponadto postać nie może używać broni dwuręcznych. Jeśli odcięte zostało ramię wiodące, Testy walki przy pomocy drugiej dłoni nadal wykonywane są z karą -20. Za 100 Punktów Doświadczenia można zmniejszyć tę karę o 5, ponieważ postać stopniowo uczy się władać drugą dłonią. Jeżeli odcięte zostanie jedno i drugie ramię to chyba czas na emeryturę.</p>",
+            "sourceId": "Compendium.wfrp4e-core.injuries.MnMZv7ZXoRqoH9dS",
+            "effects": {
+                "qPV4jIDGN9onOAYV": {
+                    "id": "qPV4jIDGN9onOAYV",
+                    "label": "Amputacja Ramienia"
+                }
+            },
+            "penalty": "-20 do testów wymagających obu rąk",
+            "location": "Ręka"
+        },
+        "Broken Head (Minor)": {
+            "id": "nbhn2wX35b7Jrcbg",
+            "name": "Złamanie (Głowa) (Pomniejsze)",
+            "description": "<p>Złamanie jednej kości, ale bez przemieszczenia.&nbsp;</p>\n<p><span style=\"font-weight: bold;\">Głowa:</span><span style=\"font-weight: bold;\">&nbsp;</span>Postać będzie musiała przejść na dietę płynną, a dodatkowo wszystkie Testy Języków obarczone są karą -30.&nbsp;</p>\n<h3>Leczenie</h3>\n<p>Złamana kość będzie zrastać się przez 30+1k10 dni. Pod koniec tego okresu należy wykonać Wymagający (+0) Test Odporności, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę:&nbsp;-10 do wszystkich Testów Zwinności, w których używa ramienia.</p>\n<p>Udany <strong>Przeciętny (+20)</strong> test Leczenia wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny Przeciętny (+20) Test Leczenia wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
+            "sourceId": "Compendium.wfrp4e-core.injuries.nbhn2wX35b7Jrcbg",
+            "effects": {
+                "WtbK1vMvsJYKBbWj": {
+                    "id": "WtbK1vMvsJYKBbWj",
+                    "label": "Pęknięta Czaszka",
+                    "script": "if (args.type == \"cast\" || (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"Language\")))) {\n   args.prefillModifiers.modifier -= 30;\n}"
+                }
+            },
+            "penalty": "-30 do wszystkich testów języka",
+            "location": "Głowa"
+        },
+        "Torn Leg Muscle (Minor)": {
+            "id": "nF5z1OEhpi4t6a6S",
+            "name": "Zerwanie mięśni (Noga) (Pomniejsze)",
+            "description": "<p>Jeden z mięśni został zerwany albo nastąpiło skręcenie stawu, co skutkuje ograniczeniem ruchomości i sporym bólem. &nbsp;</p>\n<p><strong>Noga:</strong> Szybkość spada o połowę. Testy związane z użyciem nogi wykonuje się z karą -10.</p>\n<p><span style=\"font-weight: bold;\">Leczenie: </span>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości. Sukces w Teście Leczenia zmniejszy ten okres o 1 dzień plus 1 dodatkowy dzień za każdy PS (premię tę można uzyskać tylko raz).&nbsp;</p>",
+            "sourceId": "Compendium.wfrp4e-core.injuries.nF5z1OEhpi4t6a6S",
+            "effects": {
+                "73XsH9pZ8Qymz0kN": {
+                    "id": "73XsH9pZ8Qymz0kN",
+                    "label": "Szybkość Zmniejszona o Połowę",
+                    "script": "args.actor.details.move.value /= 2;"
+                },
+                "ErAJc8kPnAwubY1m": {
+                    "id": "ErAJc8kPnAwubY1m",
+                    "label": "Naderwany Mięsień Nogi"
+                }
+            },
+            "penalty": "-10 do testów dotyczących danej nogi",
+            "location": "Noga"
+        },
+        "Broken Body (Minor)": {
+            "id": "QluSTTTq3viHJJUh",
+            "name": "Złamanie (Korpus) (Pomniejsze)",
+            "description": "<p>Złamanie jednej kości, ale bez przemieszczenia.&nbsp;</p>\n<p><span style=\"font-weight: bold;\">Korpus: </span>siła i zdolność poruszania się postaci są mocno ograniczone: Szybkość spada o połowę, a ponadto wszystkie Testy Siły i Zwinności otrzymują karę -30.&nbsp;</p>\n<h3>Leczenie</h3>\n<p>Złamana kość będzie zrastać się przez 30+1k10 dni. Pod koniec tego okresu należy wykonać Wymagający (+0) Test Odporności, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę:&nbsp;-10 do wszystkich Testów Zwinności, w których używa ramienia.</p>\n<p>Udany <strong>Przeciętny (+20)</strong> test Leczenia wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny Przeciętny (+20) Test Leczenia wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
+            "sourceId": "Compendium.wfrp4e-core.injuries.QluSTTTq3viHJJUh",
+            "effects": {
+                "CPG7bDRJSqCHaCni": {
+                    "id": "CPG7bDRJSqCHaCni",
+                    "label": "Kara do Poruszania się",
+                    "script": "args.actor.details.move.value /= 2;"
+                },
+                "YNacfIHrXFATBGcL": {
+                    "id": "YNacfIHrXFATBGcL",
+                    "label": "Złamane Żebra"
+                }
+            },
+            "penalty": "-30 do Siły i Zręczności, połowa Szybkości.",
+            "location": "Korpus"
+        },
+        "Torn Arm Muscle (Major)": {
+            "id": "qn4ZpvTQIX4rcJDl",
+            "name": "Zerwanie mięśni (Ramię) (Poważne)",
+            "description": "<p>Jeden z mięśni lub jakieś ważne ścięgno zostały poważnie uszkodzone, co wywołuje ogromny ból i poważną utratę ruchomości zranionej kończyny. &nbsp;</p>\n<p><strong>Ramię:&nbsp;</strong> -20 do wszystkich testów związanych z użyciem ramienia.</p>\n<p><span style=\"font-weight: bold;\">Leczenie: </span>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości, po których używanie kończyny będzie pociągało za sobą kary -10 do odpowiednich Testów. Mięśnie zagoją się całkowicie w ciągu następnych 30 dni - Bonus z Wytrzymałości. Test Leczenia nie pomoże w tej sytuacji - medyk po prostu stwierdzi, żeby nie używać trafionego miejsca.&nbsp;</p>",
+            "sourceId": "Compendium.wfrp4e-core.injuries.qn4ZpvTQIX4rcJDl",
+            "effects": {
+                "GUbysJIeA44LNOIq": {
+                    "id": "GUbysJIeA44LNOIq",
+                    "label": "Naderwany Mięsień Ręki"
+                }
+            },
+            "penalty": "-20 do testów dotyczących danej ręki",
+            "location": "Ręka"
+        },
+        "Torn Head Muscle (Major)": {
+            "id": "RB2sN09lX3m7dkOg",
+            "name": "Zerwanie mięśni (Głowa) (Poważne)",
+            "description": "<p>Jeden z mięśni lub jakieś ważne ścięgno zostały poważnie uszkodzone, co wywołuje ogromny ból i poważną utratę ruchomości zranionej kończyny. &nbsp;</p>\n<p><strong>Głowa:</strong> -20 do wszystkich testów związanych z użyciem głowy.</p>\n<p><span style=\"font-weight: bold;\">Leczenie: </span>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości, po których używanie kończyny będzie pociągało za sobą kary -10 do odpowiednich Testów. Mięśnie zagoją się całkowicie w ciągu następnych 30 dni - Bonus z Wytrzymałości. Test Leczenia nie pomoże w tej sytuacji - medyk po prostu stwierdzi, żeby nie używać trafionego miejsca.&nbsp;</p>",
+            "sourceId": "Compendium.wfrp4e-core.injuries.RB2sN09lX3m7dkOg",
+            "effects": {
+                "q2drpcrYvUHjZBwg": {
+                    "id": "q2drpcrYvUHjZBwg",
+                    "label": "Naderwany Mięsień Szyi"
+                }
+            },
+            "penalty": "-20 do testów wymagających ruchu głowy",
+            "location": "Głowa"
+        },
+        "Amputated Tongue": {
+            "id": "rkJA1DlK51QuRlJy",
+            "name": "Amputacja Języka",
+            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako Amputacja (trudność), musi wykonać Test Odporności (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan Powalenie. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom Oszołomienia. W przypadku Krytycznej Porażki (-4 PS) następuje Unconscious&nbsp;condition</p>\n<p>Unconscious&nbsp;condition</p>\n<p><strong>Język: </strong>Utrata języka sprawia, że postać może jedynie pomrukiwać i chrząkać, a jej komunikacja ogranicza się do używania języka migowego. Postać automatycznie odnosi porażkę we wszystkich Testach Języków, które wymagają mówienia.</p>",
+            "sourceId": "Compendium.wfrp4e-core.injuries.rkJA1DlK51QuRlJy",
+            "penalty": "Automatyczna porażka dla testów języka",
+            "location": "Język"
+        },
+        "Broken Arm (Major)": {
+            "id": "rlDZZTj5PXjuRXa2",
+            "name": "Złamanie Ręki (Poważne)",
+            "description": "<p>Jedna z kości została poważnie strzaskana, więc albo sterczy pod dziwnym kątem, albo zwisa bezwładnie, trzymając się jedynie na skórze. Mało prawdopodobne, że zrośnie się bez odpowiedniej pomocy medycznej.&nbsp;</p>\n<p><span style=\"font-weight: bold;\">Ramię: </span>Pozostaje ci polegać na drugiej kończynie, ponieważ ból jest ogromny i zwykle konieczne są łubki. Wszystkie Testy, w których niezbędne jest używanie obu dłoni, obarczone są karą -20, ponadto postać nie może używać broni dwuręcznych; Jeśli odcięta została dłoń wiodąca, Testy walki przy pomocy drugiej dłoni nadal wykonywane są z karą -20</p>\n<h3>Leczenie</h3>\n<p>Złamana kość będzie zrastać się przez 40+1k10 dni. Pod koniec tego okresu należy wykonać Wymagający (+0) Test Odporności, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę:&nbsp;-10 do wszystkich Testów Zwinności, w których używa ramienia.</p>\n<p>Udany <strong>Wymagający (+0)</strong> test Leczenia wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny Wymagający (+0) Test Leczenia wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
+            "sourceId": "Compendium.wfrp4e-core.injuries.rlDZZTj5PXjuRXa2",
+            "effects": {
+                "m1KbLc6l2LK76961": {
+                    "id": "m1KbLc6l2LK76961",
+                    "label": "Złamana Ręka"
+                }
+            },
+            "penalty": "-20 do testów wymagających obu rąk",
+            "location": "Ręka"
+        },
+        "Amputated Nose": {
+            "id": "SpPRZZRHxly7uo2G",
+            "name": "Amputacja Nosa",
+            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako Amputacja (trudność), musi wykonać Test Odporności (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan Powalenie. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom Oszołomienia. W przypadku Krytycznej Porażki (-4 PS) następuje Unconscious&nbsp;condition</p>\n<p>Unconscious&nbsp;condition</p>\n<p><strong>Nos:&nbsp;</strong> Nos Utrata nosa sprawia, że postać zaczyna wyglądać naprawdę dziwacznie. Oznacza także trwałą utratę 20 punktów Ogłady, a także karę -30 do wszystkich Testów węchu.</p>",
+            "sourceId": "Compendium.wfrp4e-core.injuries.SpPRZZRHxly7uo2G",
+            "effects": {
+                "OTeQYlJcacd8ID4i": {
+                    "id": "OTeQYlJcacd8ID4i",
+                    "label": "Amputacja Nosa"
+                }
+            },
+            "penalty": "-20 do Ogłady, -30 do Testów wymagających węchu",
+            "location": "Nos"
+        },
+        "Amputated Finger": {
+            "id": "SYjWiKDzMS6CtROJ",
+            "name": "Amputacja Palca u ręki",
+            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako Amputacja (trudność), musi wykonać Test Odporności (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan Powalenie. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom Oszołomienia. W przypadku Krytycznej Porażki (-4 PS) następuje Unconscious&nbsp;condition</p>\n<p>Unconscious&nbsp;condition</p>\n<p><strong>Palce u rąk</strong>: Przede wszystkim chwyt zranioną dłonią jest osłabiony, co sprawia, że szanse na Pech podczas używania jej rosną. Za pierwszy stracony palec porażki we wszelkich odpowiednich Testach, w których na kościach wypadła 1, uznawane są za Pech. W przypadku dwóch odciętych palców Pech występuje, gdy na kościach wypadnie 1 lub 2, i tak dalej. Ponadto za każdy stracony palec wszystkie Testy z wykorzystaniem okaleczonej dłoni otrzymują karę -5. Jeśli postać straci w dłoni 4 lub 5 palców, należy zastosować zasady jak w przypadku odciętej dłoni.</p>",
+            "sourceId": "Compendium.wfrp4e-core.injuries.SYjWiKDzMS6CtROJ",
+            "effects": {
+                "DaOXNCrHEMsOleGx": {
+                    "id": "DaOXNCrHEMsOleGx",
+                    "label": "Utracony Palec"
+                }
+            },
+            "penalty": "-5 do testów wymagających danej ręki",
+            "location": "Palec"
+        },
+        "Torn Head Muscle (Minor)": {
+            "id": "UytN3fDREi3JuKST",
+            "name": "Zerwanie mięśni (Głowa) (Pomniejsze)",
+            "description": "<p>Jeden z mięśni został zerwany albo nastąpiło skręcenie stawu, co skutkuje ograniczeniem ruchomości i sporym bólem. &nbsp;</p>\n<p><strong>Głowa:</strong> -20 do wszystkich testów związanych z użyciem korpusu.</p>\n<p><span style=\"font-weight: bold;\">Leczenie: </span>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości. Sukces w Teście Leczenia zmniejszy ten okres o 1 dzień plus 1 dodatkowy dzień za każdy PS (premię tę można uzyskać tylko raz).&nbsp;</p>",
+            "sourceId": "Compendium.wfrp4e-core.injuries.UytN3fDREi3JuKST",
+            "effects": {
+                "y2XL7QrWlGI6aloz": {
+                    "id": "y2XL7QrWlGI6aloz",
+                    "label": "Naderwany Mięsień Szyi"
+                }
+            },
+            "location": "Głowa"
+        },
+        "Amputated Eye": {
+            "id": "weczkAMPlTjX7lqU",
+            "name": "Amputacja Oka",
+            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako Amputacja (trudność), musi wykonać Test Odporności (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan Powalenie. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom Oszołomienia. W przypadku Krytycznej Porażki (-4 PS) następuje Unconscious&nbsp;condition</p>\n<p>Unconscious&nbsp;condition</p>\n<p><strong>Oko</strong>: Przede wszystkim chwyt zranioną dłonią jest osłabiony, co sprawia, że szanse na Pech podczas używania jej rosną. Za pierwszy stracony palec porażki we wszelkich odpowiednich Testach, w których na kościach wypadła 1, uznawane są za Pech. W przypadku dwóch odciętych palców Pech występuje, gdy na kościach wypadnie 1 lub 2, i tak dalej. Ponadto za każdy stracony palec wszystkie Testy z wykorzystaniem okaleczonej dłoni otrzymują karę -5. Jeśli postać straci w dłoni 4 lub 5 palców, należy zastosować zasady jak w przypadku odciętej dłoni.</p>",
+            "sourceId": "Compendium.wfrp4e-core.injuries.weczkAMPlTjX7lqU",
+            "effects": {
+                "HK53YUZJx5byXmup": {
+                    "id": "HK53YUZJx5byXmup",
+                    "label": "Utracone Oboje Oczu"
+                },
+                "OBcPvTtXweBfzAaU": {
+                    "id": "OBcPvTtXweBfzAaU",
+                    "label": "Utracone Oko",
+                    "script": "if (args.type == \"characteristic\" && args.item == \"fel\") {\n  args.prefillModifiers.modifier -= 5;\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"fel\") {\n    args.prefillModifiers.modifier -= 5;\n  }\n}"
+                }
+            },
+            "penalty": "-5 do Ogłady",
+            "location": "Oko"
+        },
+        "Amputated Toe": {
+            "id": "ZhMADOqoo0y8Q9bx",
+            "name": "Amputacja Palca u nóg",
+            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako Amputacja (trudność), musi wykonać Test Odporności (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan Powalenie. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom Oszołomienia. W przypadku Krytycznej Porażki (-4 PS) następuje Unconscious&nbsp;condition</p>\n<p>Unconscious&nbsp;condition</p>\n<p><strong>Palce u nóg: </strong>Utrata palców u nóg mocno wpływa na równowagę. Za każdy utracony palec u nóg postać traci 1 punkt Zwinności i Walki Wręcz.</p>",
+            "sourceId": "Compendium.wfrp4e-core.injuries.ZhMADOqoo0y8Q9bx",
+            "effects": {
+                "n47pJamskjv7bbXl": {
+                    "id": "n47pJamskjv7bbXl",
+                    "label": "Amputacja Palca u nóg"
+                }
+            },
+            "location": "Palce u nogi"
+        },
+        "Amputated Hand": {
+            "id": "zyocWSzEZEC826NS",
+            "name": "Amputacja Dłoni",
+            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako Amputacja (trudność), musi wykonać Test Odporności (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan Powalenie. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom Oszołomienia. W przypadku Krytycznej Porażki (-4 PS) następuje Unconscious&nbsp;condition</p>\n<p>Wszystkie Amputacje wymagają leczenia Chirurgicznego, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Więcej o Chirurgii przeczytasz w księdze zasad na stronie 181.</p>\n<p><strong>Dłoń:&nbsp;</strong>&nbsp;Wszystkie Testy, w których niezbędne jest używanie obu dłoni, obarczone są karą -20, ponadto postać nie może używać broni dwuręcznych, jednak do przedramienia może przymocować tarczę. Jeśli odcięta została dłoń wiodąca, Testy walki przy pomocy drugiej dłoni nadal wykonywane są z karą -20. Za 100 Punktów Doświadczenia można zmniejszyć tę karę o 5, ponieważ postać stopniowo uczy się władać drugą dłonią. Jeśli odcięte zostaną obie dłonie, jedynym wyjściem dla postaci jest nauka walki hakami.</p>",
+            "sourceId": "Compendium.wfrp4e-core.injuries.zyocWSzEZEC826NS",
+            "effects": {
+                "rTIWkLVhHcMduvPJ": {
+                    "id": "rTIWkLVhHcMduvPJ",
+                    "label": "Amputacja Dłoni"
+                }
+            },
+            "penalty": "-20 do testów wymagających obu rąk",
+            "location": "Dłoń"
+        }
     }
-  },
-  "entries": {
-    "Broken Leg (Major)": {
-      "id": "2iult41Jehz0F1O8",
-      "name": "Złamanie Nogi (Poważne)",
-      "description": "<p>Jedna z kości została poważnie strzaskana, więc albo sterczy pod dziwnym kątem, albo zwisa bezwładnie, trzymając się jedynie na skórze. Mało prawdopodobne, że zrośnie się bez odpowiedniej pomocy medycznej.</p>\n<p><span style=\"font-weight: bold;\">Noga: </span>Pozostaje ci polegać na drugiej kończynie, ponieważ ból jest ogromny i zwykle konieczne są łubki. Szybkość zostaje trwale zmniejszona o połowę, a wszystkie Testy związane z poruszaniem się otrzymują karę -20. Niemożliwe jest wykonywanie Uników.</p>\n<h3>Leczenie</h3>\n<p>Złamana kość będzie zrastać się przez 40+1k10 dni. Pod koniec tego okresu należy wykonać Wymagający (+0) Test Odporności, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę:&nbsp;-10 do wszystkich Testów Zwinności, w których używa ramienia.</p>\n<p>Udany <strong>Wymagający (+0)</strong> test Leczenia wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny Wymagający (+0) Test Leczenia wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
-      "sourceId": "Compendium.wfrp4e-core.injuries.2iult41Jehz0F1O8",
-      "effects": {
-        "tZayAMRUW6AVaa12": {
-          "id": "tZayAMRUW6AVaa12",
-          "label": "Złamana Noga",
-          "script": null
-        },
-        "ZwCU28eoOKqibVfu": {
-          "id": "ZwCU28eoOKqibVfu",
-          "label": "Kara do Poruszania się",
-          "script": "args.actor.details.move.value /= 2;"
-        }
-      },
-      "penalty": "-20 do testów związanych z ruchem, nie może unikać, połowa szybkości",
-      "location": "Noga"
-    },
-    "Torn Leg Muscle (Major)": {
-      "id": "3S4OYOZLauXctmev",
-      "name": "Zerwanie mięśni (Noga) (Poważne)",
-      "description": "<p>Jeden z mięśni lub jakieś ważne ścięgno zostały poważnie uszkodzone, co wywołuje ogromny ból i poważną utratę ruchomości zranionej kończyny. &nbsp;</p>\n<p><strong>Noga:</strong> Szybkość spada o połowę. Testy związane z użyciem nogi wykonuje się z karą -20.</p>\n<p><span style=\"font-weight: bold;\">Leczenie: </span>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości, po których używanie kończyny będzie pociągało za sobą kary -10 do odpowiednich Testów. Mięśnie zagoją się całkowicie w ciągu następnych 30 dni - Bonus z Wytrzymałości. Test Leczenia nie pomoże w tej sytuacji - medyk po prostu stwierdzi, żeby nie używać trafionego miejsca.&nbsp;</p>",
-      "sourceId": "Compendium.wfrp4e-core.injuries.3S4OYOZLauXctmev",
-      "effects": {
-        "e5BPTZkHGMJuDX2p": {
-          "id": "e5BPTZkHGMJuDX2p",
-          "label": "Naderwany Mięsień Nogi",
-          "script": null
-        },
-        "t1Anp3f9yR4IJqpR": {
-          "id": "t1Anp3f9yR4IJqpR",
-          "label": "Kara do Poruszania się",
-          "script": "args.actor.details.move.value /= 2;"
-        }
-      },
-      "penalty": null,
-      "location": "Noga"
-    },
-    "Broken Arm (Minor)": {
-      "id": "4lj1ik958mbgAlaF",
-      "name": "Złamanie Ręki (Pomniejsze)",
-      "description": "<p>Złamanie jednej kości, ale bez przemieszczenia.&nbsp;</p>\n<p><span style=\"font-weight: bold;\">Ramię: </span>pozostaje ci polegać na drugiej kończynie, ponieważ ból jest ogromny i zwykle konieczne są łubki. Wszystkie Testy, w których niezbędne jest używanie obu dłoni, obarczone są karą -20, ponadto postać nie może używać broni dwuręcznych; Jeśli odcięta została dłoń wiodąca, Testy walki przy pomocy drugiej dłoni nadal wykonywane są z karą -20</p>\n<h3>Leczenie</h3>\n<p>Złamana kość będzie zrastać się przez 30+1k10 dni. Pod koniec tego okresu należy wykonać Wymagający (+0) Test Odporności, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę:&nbsp;-10 do wszystkich Testów Zwinności, w których używa ramienia.</p>\n<p>Udany <strong>Przeciętny (+20)</strong> test Leczenia wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny Przeciętny (+20) Test Leczenia wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
-      "sourceId": "Compendium.wfrp4e-core.injuries.4lj1ik958mbgAlaF",
-      "effects": {
-        "s7ir53mI80aA1FGh": {
-          "id": "s7ir53mI80aA1FGh",
-          "label": "Złamana Ręka",
-          "script": null
-        }
-      },
-      "penalty": "-20 do testów wymagających obu rąk",
-      "location": "Ręka"
-    },
-    "Broken Leg (Minor)": {
-      "id": "7mCcI3q7hgWcmbBU",
-      "name": "Złamanie Nogi (Pomniejsze)",
-      "description": "<p>Złamanie jednej kości, ale bez przemieszczenia.&nbsp;</p>\n<p><span style=\"font-weight: bold;\">Noga: </span>pozostaje ci polegać na drugiej kończynie, ponieważ ból jest ogromny i zwykle konieczne są łubki. Szybkość zostaje trwale zmniejszona o połowę, a wszystkie Testy związane z poruszaniem się otrzymują karę -20. Niemożliwe jest wykonywanie Uników.</p>\n<h3>Leczenie</h3>\n<p>Złamana kość będzie zrastać się przez 30+1k10 dni. Pod koniec tego okresu należy wykonać Wymagający (+0) Test Odporności, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę:&nbsp;-10 do wszystkich Testów Zwinności, w których używa ramienia.</p>\n<p>Udany <strong>Przeciętny (+20)</strong> test Leczenia wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny Przeciętny (+20) Test Leczenia wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
-      "sourceId": "Compendium.wfrp4e-core.injuries.7mCcI3q7hgWcmbBU",
-      "effects": {
-        "DYDPqHfkDkbRBwqH": {
-          "id": "DYDPqHfkDkbRBwqH",
-          "label": "Kara do Poruszania się",
-          "script": "args.actor.details.move.value /= 2;"
-        },
-        "j9pWVPJtatDruv0Y": {
-          "id": "j9pWVPJtatDruv0Y",
-          "label": "Złamana Noga",
-          "script": null
-        }
-      },
-      "penalty": null,
-      "location": "Noga"
-    },
-    "Torn Body Muscle (Minor)": {
-      "id": "7rBhIRo96Mydo0Cv",
-      "name": "Zerwanie mięśni (Korpus) (Pomniejsze)",
-      "description": "<p>Jeden z mięśni został zerwany albo nastąpiło skręcenie stawu, co skutkuje ograniczeniem ruchomości i sporym bólem. &nbsp;</p>\n<p><strong>Korpus:</strong> -10 do wszystkich testów związanych z użyciem korpusu.</p>\n<p><span style=\"font-weight: bold;\">Leczenie: </span>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości. Sukces w Teście Leczenia zmniejszy ten okres o 1 dzień plus 1 dodatkowy dzień za każdy PS (premię tę można uzyskać tylko raz).&nbsp;</p>",
-      "sourceId": "Compendium.wfrp4e-core.injuries.7rBhIRo96Mydo0Cv",
-      "effects": {
-        "Aans92KGaO90qXGV": {
-          "id": "Aans92KGaO90qXGV",
-          "label": "Naderwany Mięsień Brzucha",
-          "script": null
-        }
-      },
-      "penalty": "-10 do testów wymagających ruchu tułowiem",
-      "location": "Korpus"
-    },
-    "Amputated Ear": {
-      "id": "8piWcBKFlQ2J1E3A",
-      "name": "Amputacja Ucha",
-      "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako Amputacja (trudność), musi wykonać Test Odporności (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan Powalenie. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom Oszołomienia. W przypadku Krytycznej Porażki (-4 PS) następuje Unconscious&nbsp;condition</p>\n<p>Wszystkie Amputacje wymagają leczenia Chirurgicznego, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Więcej o Chirurgii przeczytasz w księdze zasad na stronie 181.</p>\n<p><strong>Ucho</strong>: Ucho Utrata ucha jest bolesna, ale prędzej czy później można się do tego przyzwyczaić. Pechem jest utrata obydwu uszu, wtedy wszelkie Testy Percepcji oparte na słuchu obarczone są karą -20. Ponadto za każde odcięte ucho wszystkie Testy Ogłady otrzymują karę -5, ponieważ rana jest dobrze widoczna.</p>",
-      "sourceId": "Compendium.wfrp4e-core.injuries.8piWcBKFlQ2J1E3A",
-      "effects": {
-        "i6SjnYZ0pNeN8SNZ": {
-          "id": "i6SjnYZ0pNeN8SNZ",
-          "label": "Utracone Ucho",
-          "script": "if (args.type == \"characteristic\" && args.item == \"fel\"){\n  args.prefillModifiers.modifier -= 5;\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"fel\") {\n    args.prefillModifiers.modifier -= 5\n  }\n}"
-        },
-        "NjLgGWim2CMWdOL4": {
-          "id": "NjLgGWim2CMWdOL4",
-          "label": "Utracone Oboje Uszu",
-          "script": null
-        }
-      },
-      "penalty": null,
-      "location": "Ucho"
-    },
-    "Broken Body (Major)": {
-      "id": "EaqlLRQigwnsEAXX",
-      "name": "Złamanie (Korpus) (Poważne)",
-      "description": "<p>Jedna z kości została poważnie strzaskana, więc albo sterczy pod dziwnym kątem, albo zwisa bezwładnie, trzymając się jedynie na skórze. Mało prawdopodobne, że zrośnie się bez odpowiedniej pomocy medycznej.</p>\n<p><span style=\"font-weight: bold;\">Korpus: </span>siła i zdolność poruszania się postaci są mocno ograniczone: Szybkość spada o połowę, a ponadto wszystkie Testy Siły i Zwinności otrzymują karę -30.&nbsp;</p>\n<h3>Leczenie</h3>\n<p>Złamana kość będzie zrastać się przez 40+1k10 dni. Pod koniec tego okresu należy wykonać Wymagający (+0) Test Odporności, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę:&nbsp;-10 do wszystkich Testów Zwinności, w których używa ramienia.</p>\n<p>Udany <strong>Wymagający (+0)</strong> test Leczenia wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny Wymagający (+0) Test Leczenia wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
-      "sourceId": "Compendium.wfrp4e-core.injuries.EaqlLRQigwnsEAXX",
-      "effects": {
-        "l5W27AsBX8jj1T80": {
-          "id": "l5W27AsBX8jj1T80",
-          "label": "Szybkość Zmniejszona o Połowę",
-          "script": "args.actor.details.move.value /= 2;"
-        },
-        "qIkF1AGNf4XxzaFv": {
-          "id": "qIkF1AGNf4XxzaFv",
-          "label": "Złamane Żebra",
-          "script": null
-        }
-      },
-      "penalty": "-30 do Siły i Zręczności, połowa Szybkości.",
-      "location": "Korpus"
-    },
-    "Torn Body Muscle (Major)": {
-      "id": "eWPN3CV2Eddwz8aM",
-      "name": "Zerwanie mięśni (Korpus) (Poważne)",
-      "description": "<p>Jeden z mięśni lub jakieś ważne ścięgno zostały poważnie uszkodzone, co wywołuje ogromny ból i poważną utratę ruchomości zranionej kończyny. &nbsp;</p>\n<p><strong>Korpus:</strong> -20 do wszystkich testów związanych z użyciem korpusu.</p>\n<p><span style=\"font-weight: bold;\">Leczenie: </span>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości, po których używanie kończyny będzie pociągało za sobą kary -10 do odpowiednich Testów. Mięśnie zagoją się całkowicie w ciągu następnych 30 dni - Bonus z Wytrzymałości. Test Leczenia nie pomoże w tej sytuacji - medyk po prostu stwierdzi, żeby nie używać trafionego miejsca.&nbsp;</p>",
-      "sourceId": "Compendium.wfrp4e-core.injuries.eWPN3CV2Eddwz8aM",
-      "effects": {
-        "VczyyG2FDfvOQflT": {
-          "id": "VczyyG2FDfvOQflT",
-          "label": "Naderwany Mięsień Brzucha",
-          "script": null
-        }
-      },
-      "penalty": "-20 do testów wymagających ruch tułowiem",
-      "location": "Korpus"
-    },
-    "Amputated Teeth": {
-      "id": "fBcZhOBn8IpoVqQ1",
-      "name": "Amputacja Zębów",
-      "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako Amputacja (trudność), musi wykonać Test Odporności (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan Powalenie. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom Oszołomienia. W przypadku Krytycznej Porażki (-4 PS) następuje Unconscious&nbsp;condition</p>\n<p>Wszystkie Amputacje wymagają leczenia Chirurgicznego, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Więcej o Chirurgii przeczytasz w księdze zasad na stronie 181.</p>\n<p><strong>Zęby:&nbsp;</strong> Utrata zębów może oszpecić postać, a poza tym znacznie utrudnia spożywanie posiłków. Za każde 2 utracone zęby Ogłada trwale spada o 1 punkt. Ponadto utrata ponad połowy zębów (ludzie: 16, elfy: 18, niziołki i krasnoludy: 20) sprawia, że jedzenie staje się bardzo uciążliwe, zajmuje dwa razy więcej czasu, a niektóre posiłki są niemożliwe do zjedzenia - jest to przede wszystkim kwestia odgrywania postaci i opisywania działań.</p>",
-      "sourceId": "Compendium.wfrp4e-core.injuries.fBcZhOBn8IpoVqQ1",
-      "penalty": null,
-      "location": "Zęby"
-    },
-    "Torn Arm Muscle (Minor)": {
-      "id": "GlShFJF2TpsNh1FX",
-      "name": "Zerwanie mięśni (Ramię) (Pomniejsze)",
-      "description": "<p>Jeden z mięśni został zerwany albo nastąpiło skręcenie stawu, co skutkuje ograniczeniem ruchomości i sporym bólem. &nbsp;</p>\n<p><strong>Ramię:&nbsp;</strong> -10 do wszystkich testów związanych z użyciem ramienia.</p>\n<p><span style=\"font-weight: bold;\">Leczenie: </span>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości. Sukces w Teście Leczenia zmniejszy ten okres o 1 dzień plus 1 dodatkowy dzień za każdy PS (premię tę można uzyskać tylko raz).&nbsp;</p>",
-      "sourceId": "Compendium.wfrp4e-core.injuries.GlShFJF2TpsNh1FX",
-      "effects": {
-        "9rO0RdQJqsNwv9lv": {
-          "id": "9rO0RdQJqsNwv9lv",
-          "label": "Naderwany Mięsień Ręki",
-          "script": null
-        }
-      },
-      "penalty": "-10 do testów dotyczących danej ręki",
-      "location": "Ręka"
-    },
-    "Amputated Foot": {
-      "id": "gz2xy41OSVZ8YBgI",
-      "name": "Amputacja Stopy",
-      "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako Amputacja (trudność), musi wykonać Test Odporności (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan Powalenie. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom Oszołomienia. W przypadku Krytycznej Porażki (-4 PS) następuje Unconscious&nbsp;condition</p>\n<p>Unconscious&nbsp;condition</p>\n<p><strong>Stopa</strong>: Szybkość zostaje trwale zmniejszona o połowę, a wszystkie Testy związane z poruszaniem się, jak np. Uniki, otrzymują karę -20. Utrata obu stóp znacznie utrudnia chodzenie. Może czas zatrudnić pachołka, który będzie służył za wierzchowca?</p>",
-      "sourceId": "Compendium.wfrp4e-core.injuries.gz2xy41OSVZ8YBgI",
-      "effects": {
-        "QHpPBISp2DCIRZp7": {
-          "id": "QHpPBISp2DCIRZp7",
-          "label": "Amputacja Stopy",
-          "script": null
-        },
-        "vFwI36wK9QnfgLGG": {
-          "id": "vFwI36wK9QnfgLGG",
-          "label": "Szybkość Zmniejszona o Połowę",
-          "script": "args.actor.details.move.value /= 2;"
-        }
-      },
-      "penalty": "-20 do testów związanych z ruchem, połowa szybkości",
-      "location": "Stopa"
-    },
-    "Broken Head (Major)": {
-      "id": "hCadFsTRvLN9faaY",
-      "name": "Złamanie (Czaszka) (Poważne)",
-      "description": "<p>Jedna z kości została poważnie strzaskana, więc albo sterczy pod dziwnym kątem, albo zwisa bezwładnie, trzymając się jedynie na skórze. Mało prawdopodobne, że zrośnie się bez odpowiedniej pomocy medycznej.</p>\n<p><span style=\"font-weight: bold;\">Głowa:</span><span style=\"font-weight: bold;\">&nbsp;</span>Postać będzie musiała przejść na dietę płynną, a dodatkowo wszystkie Testy Języków obarczone są karą -30.&nbsp;</p>\n<h3>Leczenie</h3>\n<p>Złamana kość będzie zrastać się przez 40+1k10 dni. Pod koniec tego okresu należy wykonać Wymagający (+0) Test Odporności, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę:&nbsp;-10 do wszystkich Testów Zwinności, w których używa ramienia.</p>\n<p>Udany <strong>Wymagający (+0)</strong> test Leczenia wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny Wymagający (+0) Test Leczenia wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
-      "sourceId": "Compendium.wfrp4e-core.injuries.hCadFsTRvLN9faaY",
-      "effects": {
-        "WLwNpLVQX79yOsdJ": {
-          "id": "WLwNpLVQX79yOsdJ",
-          "label": "Pęknięta Czaszka",
-          "script": "if (args.type == \"cast\" || (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"Language\")))) {\n   args.prefillModifiers.modifier -= 30;\n}"
-        }
-      },
-      "penalty": null,
-      "location": "Głowa"
-    },
-    "Amputated Leg": {
-      "id": "k00PimCWkff11IA0",
-      "name": "Amputacja Nogi",
-      "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako Amputacja (trudność), musi wykonać Test Odporności (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan Powalenie. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom Oszołomienia. W przypadku Krytycznej Porażki (-4 PS) następuje Unconscious&nbsp;condition</p>\n<pUnconscious&nbsp;condition</p>\n<p><strong>Noga:&nbsp;</strong> Szybkość zostaje trwale zmniejszona o połowę, a wszystkie Testy związane z poruszaniem się otrzymują karę -20. Niemożliwe jest wykonywanie Uników. Utrata obu nóg znacznie utrudnia chodzenie. Może czas zatrudnić pachołka, który będzie służył za wierzchowca?</p>",
-      "sourceId": "Compendium.wfrp4e-core.injuries.k00PimCWkff11IA0",
-      "effects": {
-        "p9uFm2XY1RGrjStF": {
-          "id": "p9uFm2XY1RGrjStF",
-          "label": "Szybkość Zmniejszona o Połowę",
-          "script": "args.actor.details.move.value /= 2;"
-        },
-        "wkJy3QCy8odqGvjm": {
-          "id": "wkJy3QCy8odqGvjm",
-          "label": "Amputacja Nogi",
-          "script": null
-        }
-      },
-      "penalty": "-20 do testów związanych z ruchem, nie może unikać, połowa szybkości",
-      "location": "Noga"
-    },
-    "Amputated Arm": {
-      "id": "MnMZv7ZXoRqoH9dS",
-      "name": "Amputacja Ramienia",
-      "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako Amputacja (trudność), musi wykonać Test Odporności (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan Powalenie. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom Oszołomienia. W przypadku Krytycznej Porażki (-4 PS) następuje Unconscious&nbsp;condition</p>\n<p>Unconscious&nbsp;condition</p>\n<p><strong>Ramię</strong>: Wszystkie Testy, w których niezbędne jest używanie obu dłoni, obarczone są karą -20, ponadto postać nie może używać broni dwuręcznych. Jeśli odcięte zostało ramię wiodące, Testy walki przy pomocy drugiej dłoni nadal wykonywane są z karą -20. Za 100 Punktów Doświadczenia można zmniejszyć tę karę o 5, ponieważ postać stopniowo uczy się władać drugą dłonią. Jeżeli odcięte zostanie jedno i drugie ramię to chyba czas na emeryturę.</p>",
-      "sourceId": "Compendium.wfrp4e-core.injuries.MnMZv7ZXoRqoH9dS",
-      "effects": {
-        "qPV4jIDGN9onOAYV": {
-          "id": "qPV4jIDGN9onOAYV",
-          "label": "Amputacja Ramienia",
-          "script": null
-        }
-      },
-      "penalty": "-20 do testów wymagających obu rąk",
-      "location": "Ręka"
-    },
-    "Broken Head (Minor)": {
-      "id": "nbhn2wX35b7Jrcbg",
-      "name": "Złamanie (Głowa) (Pomniejsze)",
-      "description": "<p>Złamanie jednej kości, ale bez przemieszczenia.&nbsp;</p>\n<p><span style=\"font-weight: bold;\">Głowa:</span><span style=\"font-weight: bold;\">&nbsp;</span>Postać będzie musiała przejść na dietę płynną, a dodatkowo wszystkie Testy Języków obarczone są karą -30.&nbsp;</p>\n<h3>Leczenie</h3>\n<p>Złamana kość będzie zrastać się przez 30+1k10 dni. Pod koniec tego okresu należy wykonać Wymagający (+0) Test Odporności, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę:&nbsp;-10 do wszystkich Testów Zwinności, w których używa ramienia.</p>\n<p>Udany <strong>Przeciętny (+20)</strong> test Leczenia wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny Przeciętny (+20) Test Leczenia wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
-      "sourceId": "Compendium.wfrp4e-core.injuries.nbhn2wX35b7Jrcbg",
-      "effects": {
-        "WtbK1vMvsJYKBbWj": {
-          "id": "WtbK1vMvsJYKBbWj",
-          "label": "Pęknięta Czaszka",
-          "script": "if (args.type == \"cast\" || (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"Language\")))) {\n   args.prefillModifiers.modifier -= 30;\n}"
-        }
-      },
-      "penalty": "-30 do wszystkich testów języka",
-      "location": "Głowa"
-    },
-    "Torn Leg Muscle (Minor)": {
-      "id": "nF5z1OEhpi4t6a6S",
-      "name": "Zerwanie mięśni (Noga) (Pomniejsze)",
-      "description": "<p>Jeden z mięśni został zerwany albo nastąpiło skręcenie stawu, co skutkuje ograniczeniem ruchomości i sporym bólem. &nbsp;</p>\n<p><strong>Noga:</strong> Szybkość spada o połowę. Testy związane z użyciem nogi wykonuje się z karą -10.</p>\n<p><span style=\"font-weight: bold;\">Leczenie: </span>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości. Sukces w Teście Leczenia zmniejszy ten okres o 1 dzień plus 1 dodatkowy dzień za każdy PS (premię tę można uzyskać tylko raz).&nbsp;</p>",
-      "sourceId": "Compendium.wfrp4e-core.injuries.nF5z1OEhpi4t6a6S",
-      "effects": {
-        "73XsH9pZ8Qymz0kN": {
-          "id": "73XsH9pZ8Qymz0kN",
-          "label": "Szybkość Zmniejszona o Połowę",
-          "script": "args.actor.details.move.value /= 2;"
-        },
-        "ErAJc8kPnAwubY1m": {
-          "id": "ErAJc8kPnAwubY1m",
-          "label": "Naderwany Mięsień Nogi",
-          "script": null
-        }
-      },
-      "penalty": "-10 do testów dotyczących danej nogi",
-      "location": "Noga"
-    },
-    "Broken Body (Minor)": {
-      "id": "QluSTTTq3viHJJUh",
-      "name": "Złamanie (Korpus) (Pomniejsze)",
-      "description": "<p>Złamanie jednej kości, ale bez przemieszczenia.&nbsp;</p>\n<p><span style=\"font-weight: bold;\">Korpus: </span>siła i zdolność poruszania się postaci są mocno ograniczone: Szybkość spada o połowę, a ponadto wszystkie Testy Siły i Zwinności otrzymują karę -30.&nbsp;</p>\n<h3>Leczenie</h3>\n<p>Złamana kość będzie zrastać się przez 30+1k10 dni. Pod koniec tego okresu należy wykonać Wymagający (+0) Test Odporności, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę:&nbsp;-10 do wszystkich Testów Zwinności, w których używa ramienia.</p>\n<p>Udany <strong>Przeciętny (+20)</strong> test Leczenia wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny Przeciętny (+20) Test Leczenia wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
-      "sourceId": "Compendium.wfrp4e-core.injuries.QluSTTTq3viHJJUh",
-      "effects": {
-        "CPG7bDRJSqCHaCni": {
-          "id": "CPG7bDRJSqCHaCni",
-          "label": "Kara do Poruszania się",
-          "script": "args.actor.details.move.value /= 2;"
-        },
-        "YNacfIHrXFATBGcL": {
-          "id": "YNacfIHrXFATBGcL",
-          "label": "Złamane Żebra",
-          "script": null
-        }
-      },
-      "penalty": "-30 do Siły i Zręczności, połowa Szybkości.",
-      "location": "Korpus"
-    },
-    "Torn Arm Muscle (Major)": {
-      "id": "qn4ZpvTQIX4rcJDl",
-      "name": "Zerwanie mięśni (Ramię) (Poważne)",
-      "description": "<p>Jeden z mięśni lub jakieś ważne ścięgno zostały poważnie uszkodzone, co wywołuje ogromny ból i poważną utratę ruchomości zranionej kończyny. &nbsp;</p>\n<p><strong>Ramię:&nbsp;</strong> -20 do wszystkich testów związanych z użyciem ramienia.</p>\n<p><span style=\"font-weight: bold;\">Leczenie: </span>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości, po których używanie kończyny będzie pociągało za sobą kary -10 do odpowiednich Testów. Mięśnie zagoją się całkowicie w ciągu następnych 30 dni - Bonus z Wytrzymałości. Test Leczenia nie pomoże w tej sytuacji - medyk po prostu stwierdzi, żeby nie używać trafionego miejsca.&nbsp;</p>",
-      "sourceId": "Compendium.wfrp4e-core.injuries.qn4ZpvTQIX4rcJDl",
-      "effects": {
-        "GUbysJIeA44LNOIq": {
-          "id": "GUbysJIeA44LNOIq",
-          "label": "Naderwany Mięsień Ręki",
-          "script": null
-        }
-      },
-      "penalty": "-20 do testów dotyczących danej ręki",
-      "location": "Ręka"
-    },
-    "Torn Head Muscle (Major)": {
-      "id": "RB2sN09lX3m7dkOg",
-      "name": "Zerwanie mięśni (Głowa) (Poważne)",
-      "description": "<p>Jeden z mięśni lub jakieś ważne ścięgno zostały poważnie uszkodzone, co wywołuje ogromny ból i poważną utratę ruchomości zranionej kończyny. &nbsp;</p>\n<p><strong>Głowa:</strong> -20 do wszystkich testów związanych z użyciem głowy.</p>\n<p><span style=\"font-weight: bold;\">Leczenie: </span>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości, po których używanie kończyny będzie pociągało za sobą kary -10 do odpowiednich Testów. Mięśnie zagoją się całkowicie w ciągu następnych 30 dni - Bonus z Wytrzymałości. Test Leczenia nie pomoże w tej sytuacji - medyk po prostu stwierdzi, żeby nie używać trafionego miejsca.&nbsp;</p>",
-      "sourceId": "Compendium.wfrp4e-core.injuries.RB2sN09lX3m7dkOg",
-      "effects": {
-        "q2drpcrYvUHjZBwg": {
-          "id": "q2drpcrYvUHjZBwg",
-          "label": "Naderwany Mięsień Szyi",
-          "script": null
-        }
-      },
-      "penalty": "-20 do testów wymagających ruchu głowy",
-      "location": "Głowa"
-    },
-    "Amputated Tongue": {
-      "id": "rkJA1DlK51QuRlJy",
-      "name": "Amputacja Języka",
-      "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako Amputacja (trudność), musi wykonać Test Odporności (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan Powalenie. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom Oszołomienia. W przypadku Krytycznej Porażki (-4 PS) następuje Unconscious&nbsp;condition</p>\n<p>Unconscious&nbsp;condition</p>\n<p><strong>Język: </strong>Utrata języka sprawia, że postać może jedynie pomrukiwać i chrząkać, a jej komunikacja ogranicza się do używania języka migowego. Postać automatycznie odnosi porażkę we wszystkich Testach Języków, które wymagają mówienia.</p>",
-      "sourceId": "Compendium.wfrp4e-core.injuries.rkJA1DlK51QuRlJy",
-      "penalty": "Automatyczna porażka dla testów języka",
-      "location": "Język"
-    },
-    "Broken Arm (Major)": {
-      "id": "rlDZZTj5PXjuRXa2",
-      "name": "Złamanie Ręki (Poważne)",
-      "description": "<p>Jedna z kości została poważnie strzaskana, więc albo sterczy pod dziwnym kątem, albo zwisa bezwładnie, trzymając się jedynie na skórze. Mało prawdopodobne, że zrośnie się bez odpowiedniej pomocy medycznej.&nbsp;</p>\n<p><span style=\"font-weight: bold;\">Ramię: </span>Pozostaje ci polegać na drugiej kończynie, ponieważ ból jest ogromny i zwykle konieczne są łubki. Wszystkie Testy, w których niezbędne jest używanie obu dłoni, obarczone są karą -20, ponadto postać nie może używać broni dwuręcznych; Jeśli odcięta została dłoń wiodąca, Testy walki przy pomocy drugiej dłoni nadal wykonywane są z karą -20</p>\n<h3>Leczenie</h3>\n<p>Złamana kość będzie zrastać się przez 40+1k10 dni. Pod koniec tego okresu należy wykonać Wymagający (+0) Test Odporności, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę:&nbsp;-10 do wszystkich Testów Zwinności, w których używa ramienia.</p>\n<p>Udany <strong>Wymagający (+0)</strong> test Leczenia wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny Wymagający (+0) Test Leczenia wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
-      "sourceId": "Compendium.wfrp4e-core.injuries.rlDZZTj5PXjuRXa2",
-      "effects": {
-        "m1KbLc6l2LK76961": {
-          "id": "m1KbLc6l2LK76961",
-          "label": "Złamana Ręka",
-          "script": null
-        }
-      },
-      "penalty": "-20 do testów wymagających obu rąk",
-      "location": "Ręka"
-    },
-    "Amputated Nose": {
-      "id": "SpPRZZRHxly7uo2G",
-      "name": "Amputacja Nosa",
-      "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako Amputacja (trudność), musi wykonać Test Odporności (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan Powalenie. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom Oszołomienia. W przypadku Krytycznej Porażki (-4 PS) następuje Unconscious&nbsp;condition</p>\n<p>Unconscious&nbsp;condition</p>\n<p><strong>Nos:&nbsp;</strong> Nos Utrata nosa sprawia, że postać zaczyna wyglądać naprawdę dziwacznie. Oznacza także trwałą utratę 20 punktów Ogłady, a także karę -30 do wszystkich Testów węchu.</p>",
-      "sourceId": "Compendium.wfrp4e-core.injuries.SpPRZZRHxly7uo2G",
-      "effects": {
-        "OTeQYlJcacd8ID4i": {
-          "id": "OTeQYlJcacd8ID4i",
-          "label": "Amputacja Nosa",
-          "script": null
-        }
-      },
-      "penalty": "-20 do Ogłady, -30 do Testów wymagających węchu",
-      "location": "Nos"
-    },
-    "Amputated Finger": {
-      "id": "SYjWiKDzMS6CtROJ",
-      "name": "Amputacja Palca u ręki",
-      "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako Amputacja (trudność), musi wykonać Test Odporności (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan Powalenie. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom Oszołomienia. W przypadku Krytycznej Porażki (-4 PS) następuje Unconscious&nbsp;condition</p>\n<p>Unconscious&nbsp;condition</p>\n<p><strong>Palce u rąk</strong>: Przede wszystkim chwyt zranioną dłonią jest osłabiony, co sprawia, że szanse na Pech podczas używania jej rosną. Za pierwszy stracony palec porażki we wszelkich odpowiednich Testach, w których na kościach wypadła 1, uznawane są za Pech. W przypadku dwóch odciętych palców Pech występuje, gdy na kościach wypadnie 1 lub 2, i tak dalej. Ponadto za każdy stracony palec wszystkie Testy z wykorzystaniem okaleczonej dłoni otrzymują karę -5. Jeśli postać straci w dłoni 4 lub 5 palców, należy zastosować zasady jak w przypadku odciętej dłoni.</p>",
-      "sourceId": "Compendium.wfrp4e-core.injuries.SYjWiKDzMS6CtROJ",
-      "effects": {
-        "DaOXNCrHEMsOleGx": {
-          "id": "DaOXNCrHEMsOleGx",
-          "label": "Utracony Palec",
-          "script": null
-        }
-      },
-      "penalty": "-5 do testów wymagających danej ręki",
-      "location": "Palec"
-    },
-    "Torn Head Muscle (Minor)": {
-      "id": "UytN3fDREi3JuKST",
-      "name": "Zerwanie mięśni (Głowa) (Pomniejsze)",
-      "description": "<p>Jeden z mięśni został zerwany albo nastąpiło skręcenie stawu, co skutkuje ograniczeniem ruchomości i sporym bólem. &nbsp;</p>\n<p><strong>Głowa:</strong> -20 do wszystkich testów związanych z użyciem korpusu.</p>\n<p><span style=\"font-weight: bold;\">Leczenie: </span>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości. Sukces w Teście Leczenia zmniejszy ten okres o 1 dzień plus 1 dodatkowy dzień za każdy PS (premię tę można uzyskać tylko raz).&nbsp;</p>",
-      "sourceId": "Compendium.wfrp4e-core.injuries.UytN3fDREi3JuKST",
-      "effects": {
-        "y2XL7QrWlGI6aloz": {
-          "id": "y2XL7QrWlGI6aloz",
-          "label": "Naderwany Mięsień Szyi",
-          "script": null
-        }
-      },
-      "penalty": null,
-      "location": "Głowa"
-    },
-    "Amputated Eye": {
-      "id": "weczkAMPlTjX7lqU",
-      "name": "Amputacja Oka",
-      "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako Amputacja (trudność), musi wykonać Test Odporności (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan Powalenie. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom Oszołomienia. W przypadku Krytycznej Porażki (-4 PS) następuje Unconscious&nbsp;condition</p>\n<p>Unconscious&nbsp;condition</p>\n<p><strong>Oko</strong>: Przede wszystkim chwyt zranioną dłonią jest osłabiony, co sprawia, że szanse na Pech podczas używania jej rosną. Za pierwszy stracony palec porażki we wszelkich odpowiednich Testach, w których na kościach wypadła 1, uznawane są za Pech. W przypadku dwóch odciętych palców Pech występuje, gdy na kościach wypadnie 1 lub 2, i tak dalej. Ponadto za każdy stracony palec wszystkie Testy z wykorzystaniem okaleczonej dłoni otrzymują karę -5. Jeśli postać straci w dłoni 4 lub 5 palców, należy zastosować zasady jak w przypadku odciętej dłoni.</p>",
-      "sourceId": "Compendium.wfrp4e-core.injuries.weczkAMPlTjX7lqU",
-      "effects": {
-        "HK53YUZJx5byXmup": {
-          "id": "HK53YUZJx5byXmup",
-          "label": "Utracone Oboje Oczu",
-          "script": null
-        },
-        "OBcPvTtXweBfzAaU": {
-          "id": "OBcPvTtXweBfzAaU",
-          "label": "Utracone Oko",
-          "script": "if (args.type == \"characteristic\" && args.item == \"fel\") {\n  args.prefillModifiers.modifier -= 5;\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"fel\") {\n    args.prefillModifiers.modifier -= 5;\n  }\n}"
-        }
-      },
-      "penalty": "-5 do Ogłady",
-      "location": "Oko"
-    },
-    "Amputated Toe": {
-      "id": "ZhMADOqoo0y8Q9bx",
-      "name": "Amputacja Palca u nóg",
-      "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako Amputacja (trudność), musi wykonać Test Odporności (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan Powalenie. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom Oszołomienia. W przypadku Krytycznej Porażki (-4 PS) następuje Unconscious&nbsp;condition</p>\n<p>Unconscious&nbsp;condition</p>\n<p><strong>Palce u nóg: </strong>Utrata palców u nóg mocno wpływa na równowagę. Za każdy utracony palec u nóg postać traci 1 punkt Zwinności i Walki Wręcz.</p>",
-      "sourceId": "Compendium.wfrp4e-core.injuries.ZhMADOqoo0y8Q9bx",
-      "effects": {
-        "n47pJamskjv7bbXl": {
-          "id": "n47pJamskjv7bbXl",
-          "label": "Amputacja Palca u nóg",
-          "script": null
-        }
-      },
-      "penalty": null,
-      "location": "Palce u nogi"
-    },
-    "Amputated Hand": {
-      "id": "zyocWSzEZEC826NS",
-      "name": "Amputacja Dłoni",
-      "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako Amputacja (trudność), musi wykonać Test Odporności (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan Powalenie. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom Oszołomienia. W przypadku Krytycznej Porażki (-4 PS) następuje Unconscious&nbsp;condition</p>\n<p>Wszystkie Amputacje wymagają leczenia Chirurgicznego, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Więcej o Chirurgii przeczytasz w księdze zasad na stronie 181.</p>\n<p><strong>Dłoń:&nbsp;</strong>&nbsp;Wszystkie Testy, w których niezbędne jest używanie obu dłoni, obarczone są karą -20, ponadto postać nie może używać broni dwuręcznych, jednak do przedramienia może przymocować tarczę. Jeśli odcięta została dłoń wiodąca, Testy walki przy pomocy drugiej dłoni nadal wykonywane są z karą -20. Za 100 Punktów Doświadczenia można zmniejszyć tę karę o 5, ponieważ postać stopniowo uczy się władać drugą dłonią. Jeśli odcięte zostaną obie dłonie, jedynym wyjściem dla postaci jest nauka walki hakami.</p>",
-      "sourceId": "Compendium.wfrp4e-core.injuries.zyocWSzEZEC826NS",
-      "effects": {
-        "rTIWkLVhHcMduvPJ": {
-          "id": "rTIWkLVhHcMduvPJ",
-          "label": "Amputacja Dłoni",
-          "script": null
-        }
-      },
-      "penalty": "-20 do testów wymagających obu rąk",
-      "location": "Dłoń"
-    }
-  }
 }

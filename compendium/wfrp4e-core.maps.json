@@ -1,217 +1,214 @@
 {
-  "label": "Mapy (Główny)",
-  "mapping": {
-    "image": "background.src",
-    "image-temp": "modules/wfrp4e-core-pl/images/gm-screen.webp",
-    "notes": {
-      "path": "notes",
-      "converter": "notes"
+    "label": "Mapy (Główny)",
+    "mapping": {
+        "image": "background.src",
+        "image-temp": "modules/wfrp4e-core-pl/images/gm-screen.webp",
+        "notes": {
+            "path": "notes",
+            "converter": "notes"
+        },
+        "scene_note": "flags.wfrp4e-core.scene-note",
+        "initialization_folder": "flags.wfrp4e-core.initialization-folder"
     },
-    "scene_note": "flags.wfrp4e-core.scene-note",
-    "initialization_folder": "flags.wfrp4e-core.initialization-folder"
-  },
-  "entries": {
-    "Barony of Böhrn": {
-      "initialization_folder": "Podręcznik Główny",
-      "image": "modules/wfrp4e-core-pl/images/barony-of-bohrn.webp",
-      "id": "Bk3yufokGdVtsQag",
-      "name": "Barony of Böhrn",
-      "scene_note": "Barony of Böhrn"
-    },
-    "GM Screen": {
-      "initialization_folder": "Podręcznik Główny",
-      "image": "modules/wfrp4e-core-pl/images/gm-screen.webp",
-      "id": "R4WcWZTHP25YCoW5",
-      "name": "GM Screen"
-    },
-    "Reikland": {
-      "initialization_folder": "Podręcznik Główny",
-      "image": "modules/wfrp4e-core-pl/images/reikland.webp",
-      "id": "vGrxlojYtdObKLF6",
-      "name": "Reikland",
-      "notes": {
-        "qwLZqgof9MM9fxNL": {
-          "text": ""
+    "entries": {
+        "Barony of Böhrn": {
+            "initialization_folder": "Core Rulebook",
+            "id": "Bk3yufokGdVtsQag",
+            "name": "Barony of Böhrn",
+            "scene_note": "Barony of Böhrn"
         },
-        "zF67PBeTGeSO8N2X": {
-          "text": ""
+        "GM Screen": {
+            "initialization_folder": "Core Rulebook",
+            "id": "R4WcWZTHP25YCoW5",
+            "name": "GM Screen"
         },
-        "z53xMHemNwXceALi": {
-          "text": ""
-        },
-        "bcdDxdgkXDqWUYAa": {
-          "text": ""
-        },
-        "icdy9caraZfPiQbG": {
-          "text": ""
-        },
-        "qdjGOEpB3dtRco1E": {
-          "text": ""
-        },
-        "1aMgGkrsR7NNuJ2F": {
-          "text": ""
-        },
-        "uZplfVxSvgUGwPSu": {
-          "text": ""
-        },
-        "ODOLuIwDaHlSlGLi": {
-          "text": ""
-        },
-        "YJD1V9XiXOgbR84v": {
-          "text": ""
-        },
-        "mRdvjgPpB7nhymup": {
-          "text": ""
-        },
-        "lAw6eR5NKXnroW0A": {
-          "text": ""
-        },
-        "PCWU01X92sQM8Cav": {
-          "text": ""
-        },
-        "pHjnFVWW98NCXFfp": {
-          "text": ""
-        },
-        "288I4Ej30MdsXQyL": {
-          "text": ""
-        },
-        "KKyjhxD6hvdBvWEm": {
-          "text": ""
-        },
-        "zeEAiYH32vAIrLRa": {
-          "text": ""
-        },
-        "DTQgs7JhJGDay4oH": {
-          "text": ""
-        },
-        "KxHBvo62UEELRDod": {
-          "text": ""
-        },
-        "FiV1fFbAbe8y10Az": {
-          "text": ""
-        },
-        "sN2OHlymApphiOBE": {
-          "text": ""
-        },
-        "1HxWIY8LAsBjcQzk": {
-          "text": ""
-        },
-        "5xs4eOIfrUbEkp99": {
-          "text": ""
-        },
-        "yLB0DrrubhTyhFIF": {
-          "text": ""
-        },
-        "USlMvzsH7ZvjMjYT": {
-          "text": ""
-        },
-        "yAOY3GiqPJOe5IF3": {
-          "text": ""
-        },
-        "jqjwB5yudRijotMz": {
-          "text": ""
-        },
-        "rxTF7OF5svJz7O2r": {
-          "text": ""
-        },
-        "mYH50EPXGbcrd5ek": {
-          "text": ""
-        },
-        "vNeMN1CnGEXaMVuc": {
-          "text": ""
-        },
-        "pnGAefxX2lTydntk": {
-          "text": ""
-        },
-        "EOOYcvQWRsGkWb6h": {
-          "text": ""
-        },
-        "cu0bfKJOgHXIbIWe": {
-          "text": ""
-        },
-        "T6M3zGu95aMEDyrW": {
-          "text": ""
-        },
-        "gmZ9B9ynrVKIdPUq": {
-          "text": ""
-        },
-        "RV506NrkX6FUpBWL": {
-          "text": ""
-        },
-        "Zk0LhoxblPoMh9Y9": {
-          "text": ""
-        },
-        "N2ziWIeXMX9lsadP": {
-          "text": ""
-        },
-        "lE64D7gMD3hs4bSI": {
-          "text": ""
-        },
-        "ksAyFHFhRqMWrYzx": {
-          "text": ""
-        },
-        "2kMSGwguacb2NAm4": {
-          "text": ""
-        },
-        "Fmk35wrW7TCqGyoj": {
-          "text": ""
-        },
-        "epi36INBrIwumQOd": {
-          "text": ""
-        },
-        "y2u6qj8Vgm80Phpv": {
-          "text": ""
-        },
-        "muqF2teC8vQbQ1Hg": {
-          "text": ""
-        },
-        "IL9jMnQU1sw6RTVe": {
-          "text": ""
-        },
-        "f0UOn9qc7xZqCRDp": {
-          "text": ""
-        },
-        "fixEB0RiwWcS30sI": {
-          "text": ""
-        },
-        "KMGcVvlZsG5aS54j": {
-          "text": ""
-        },
-        "EUuPuA4eCs58Rers": {
-          "text": ""
-        },
-        "Ji0wNK2Djw3dGzEO": {
-          "text": ""
-        },
-        "u5uTCjB9qKL9oG44": {
-          "text": ""
-        },
-        "37h4ydPseJ7rUegl": {
-          "text": "Th Schïlder"
-        },
-        "Rxg2t9aXsly5CMyX": {
-          "text": "The Mos"
-        },
-        "AbZqv2KOiyJTcJu0": {
-          "text": "Barony of Böhrn"
-        },
-        "Tvw7cdIr6Fy0kztI": {
-          "text": "The Tranig"
-        },
-        "UPy6zdOz8VHlfo8E": {
-          "text": "The Ober"
-        },
-        "9yvbmUihFDZsWDyT": {
-          "text": "The Tranig"
-        },
-        "OrDfoDYC2eRygg6R": {
-          "text": "The Ober"
-        },
-        "obnX6g5vGCJj6N22": {
-          "text": ""
+        "Reikland": {
+            "initialization_folder": "Core Rulebook",
+            "id": "vGrxlojYtdObKLF6",
+            "name": "Reikland",
+            "notes": {
+                "qwLZqgof9MM9fxNL": {
+                    "text": ""
+                },
+                "zF67PBeTGeSO8N2X": {
+                    "text": ""
+                },
+                "z53xMHemNwXceALi": {
+                    "text": ""
+                },
+                "bcdDxdgkXDqWUYAa": {
+                    "text": ""
+                },
+                "icdy9caraZfPiQbG": {
+                    "text": ""
+                },
+                "qdjGOEpB3dtRco1E": {
+                    "text": ""
+                },
+                "1aMgGkrsR7NNuJ2F": {
+                    "text": ""
+                },
+                "uZplfVxSvgUGwPSu": {
+                    "text": ""
+                },
+                "ODOLuIwDaHlSlGLi": {
+                    "text": ""
+                },
+                "YJD1V9XiXOgbR84v": {
+                    "text": ""
+                },
+                "mRdvjgPpB7nhymup": {
+                    "text": ""
+                },
+                "lAw6eR5NKXnroW0A": {
+                    "text": ""
+                },
+                "PCWU01X92sQM8Cav": {
+                    "text": ""
+                },
+                "pHjnFVWW98NCXFfp": {
+                    "text": ""
+                },
+                "288I4Ej30MdsXQyL": {
+                    "text": ""
+                },
+                "KKyjhxD6hvdBvWEm": {
+                    "text": ""
+                },
+                "zeEAiYH32vAIrLRa": {
+                    "text": ""
+                },
+                "DTQgs7JhJGDay4oH": {
+                    "text": ""
+                },
+                "KxHBvo62UEELRDod": {
+                    "text": ""
+                },
+                "FiV1fFbAbe8y10Az": {
+                    "text": ""
+                },
+                "sN2OHlymApphiOBE": {
+                    "text": ""
+                },
+                "1HxWIY8LAsBjcQzk": {
+                    "text": ""
+                },
+                "5xs4eOIfrUbEkp99": {
+                    "text": ""
+                },
+                "yLB0DrrubhTyhFIF": {
+                    "text": ""
+                },
+                "USlMvzsH7ZvjMjYT": {
+                    "text": ""
+                },
+                "yAOY3GiqPJOe5IF3": {
+                    "text": ""
+                },
+                "jqjwB5yudRijotMz": {
+                    "text": ""
+                },
+                "rxTF7OF5svJz7O2r": {
+                    "text": ""
+                },
+                "mYH50EPXGbcrd5ek": {
+                    "text": ""
+                },
+                "vNeMN1CnGEXaMVuc": {
+                    "text": ""
+                },
+                "pnGAefxX2lTydntk": {
+                    "text": ""
+                },
+                "EOOYcvQWRsGkWb6h": {
+                    "text": ""
+                },
+                "cu0bfKJOgHXIbIWe": {
+                    "text": ""
+                },
+                "T6M3zGu95aMEDyrW": {
+                    "text": ""
+                },
+                "gmZ9B9ynrVKIdPUq": {
+                    "text": ""
+                },
+                "RV506NrkX6FUpBWL": {
+                    "text": ""
+                },
+                "Zk0LhoxblPoMh9Y9": {
+                    "text": ""
+                },
+                "N2ziWIeXMX9lsadP": {
+                    "text": ""
+                },
+                "lE64D7gMD3hs4bSI": {
+                    "text": ""
+                },
+                "ksAyFHFhRqMWrYzx": {
+                    "text": ""
+                },
+                "2kMSGwguacb2NAm4": {
+                    "text": ""
+                },
+                "Fmk35wrW7TCqGyoj": {
+                    "text": ""
+                },
+                "epi36INBrIwumQOd": {
+                    "text": ""
+                },
+                "y2u6qj8Vgm80Phpv": {
+                    "text": ""
+                },
+                "muqF2teC8vQbQ1Hg": {
+                    "text": ""
+                },
+                "IL9jMnQU1sw6RTVe": {
+                    "text": ""
+                },
+                "f0UOn9qc7xZqCRDp": {
+                    "text": ""
+                },
+                "fixEB0RiwWcS30sI": {
+                    "text": ""
+                },
+                "KMGcVvlZsG5aS54j": {
+                    "text": ""
+                },
+                "EUuPuA4eCs58Rers": {
+                    "text": ""
+                },
+                "Ji0wNK2Djw3dGzEO": {
+                    "text": ""
+                },
+                "u5uTCjB9qKL9oG44": {
+                    "text": ""
+                },
+                "37h4ydPseJ7rUegl": {
+                    "text": "Th Schïlder"
+                },
+                "Rxg2t9aXsly5CMyX": {
+                    "text": "The Mos"
+                },
+                "AbZqv2KOiyJTcJu0": {
+                    "text": "Barony of Böhrn"
+                },
+                "Tvw7cdIr6Fy0kztI": {
+                    "text": "The Tranig"
+                },
+                "UPy6zdOz8VHlfo8E": {
+                    "text": "The Ober"
+                },
+                "9yvbmUihFDZsWDyT": {
+                    "text": "The Tranig"
+                },
+                "OrDfoDYC2eRygg6R": {
+                    "text": "The Ober"
+                },
+                "obnX6g5vGCJj6N22": {
+                    "text": ""
+                }
+            },
+            "scene_note": "Timeline of the Reikland"
         }
-      },
-      "scene_note": "Timeline of the Reikland"
     }
-  }
 }
