@@ -31,7 +31,7 @@
         "Room, private/night": {
             "id": "0TGOFL99jG1RJ4ft",
             "name": "Prywatny pokój na 1 noc",
-            "description": "<p>Może pomieścić 2 gości. Duże pokoje kosztująvpodwójną cenę i mieszczą 4 gości.</p>",
+            "description": "<p>Może pomieścić 2 gości. Duże pokoje kosztują podwójną cenę i mieszczą 4 gości.</p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.0TGOFL99jG1RJ4ft"
         },
         "Leather Skullcap": {
@@ -97,7 +97,7 @@
         "Blanket": {
             "id": "3GlaCQyLuugXHEM2",
             "name": "Koc",
-            "description": "<p></p>",
+            "description": "<p>Testy Odporności związane z wytrzymałością na zimno otrzymują bonus +20 podczas odpoczynku.</p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.3GlaCQyLuugXHEM2"
         },
         "Tweezers": {
@@ -140,10 +140,10 @@
                 "6pQrluba3OWBJgYI": {
                     "id": "6pQrluba3OWBJgYI",
                     "label": "Czepiec kolczy",
-                    "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Perception\")) {\n   args.prefillModifiers.modifier -= 10\n}"
+                    "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Perception\")) {\n    args.prefillModifiers.modifier -= 10\n}"
                 }
             },
-            "penalty": "-10 Perception"
+            "penalty": "-10 do Percepcji"
         },
         "Grain Flail": {
             "id": "56Y8YRC8wF2e6yye",
@@ -154,7 +154,7 @@
         "Main Gauche": {
             "id": "5DOi1id1tatHp9Q5",
             "name": "Lewak",
-            "description": "<p></p>",
+            "description": "<p>Duży sztylet używany przeważnie razem z bronią główną, trzymany w ręce niewiodącej.</p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.5DOi1id1tatHp9Q5"
         },
         "Mandrake Root": {
@@ -171,7 +171,7 @@
         },
         "Saddle and Harness": {
             "id": "5TDwZGuGwX1QJWAg",
-            "name": "Rząd koński",
+            "name": "Uprząż i siodło",
             "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.5TDwZGuGwX1QJWAg"
         },
@@ -180,7 +180,7 @@
             "name": "Śrut i proch",
             "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.5wItcVAcA6mfa62q",
-            "range": "As weapon"
+            "range": "jak bron"
         },
         "Quill Pen": {
             "id": "61Fx3RHhSqaLCnao",
@@ -199,7 +199,7 @@
             "name": "Strzała",
             "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.6GNNpWIGxO9CkTCR",
-            "range": "As weapon"
+            "range": "jak broń"
         },
         "Writing Kit": {
             "id": "6OmsMPtz0NzCwvzL",
@@ -245,8 +245,8 @@
         },
         "Repeater Pistol": {
             "id": "8dKmuti5IuIs9AJA",
-            "name": "Pistolet samopowtarzalny*",
-            "description": "<p></p>",
+            "name": "Pistolet samopowtarzalny",
+            "description": "<p>Każda Broń Prochowa i Eksperymentalna ma Zalety Prochowa i Przebijająca.</p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.8dKmuti5IuIs9AJA"
         },
         "Jewellery": {
@@ -348,7 +348,7 @@
         "Weirdroot": {
             "id": "b6tGqvNe1jYBdeN5",
             "name": "Dziwnokorzeń",
-            "description": "<p>Jeden z najpowszechniejszych narkotyków ulicznych w Imperium. Żuty dziwnokorzeń wywołuje euforię i przyjemne halucynacje. Niektórzy sugerują, że mogą być one powiązane z Wiatrami Magii. Narkotyk zapewnia premię +10 do Testów Odporności i Siły Woli, ale także karę -10 do Testów Zwinności, Inicjatywy i Inteligencji. <strong>Czas trwania</strong>: Aktywne podczas przeżuwania plus dodatkowe 1k10x10 minut.</p>",
+            "description": "<p>Jeden z najpowszechniejszych narkotyków ulicznych w Imperium. Żuty dziwnokorzeń wywołuje euforię i przyjemne halucynacje. Niektórzy sugerują, że mogą być one powiązane z Wiatrami Magii. Narkotyk zapewnia premię +10 do Testów Odporności i Siły Woli, ale także karę -10 do Testów Zwinności, Inicjatywy i Inteligencji. <strong>Czas trwania</strong>: Aktywne podczas przeżuwania plus dodatkowe [[/r 1d10 * 10]] minut.</p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.b6tGqvNe1jYBdeN5",
             "effects": {
                 "Sq1UQ9Xo4cuwWy2K": {
@@ -415,21 +415,21 @@
                 "u46Xpql4mjj6JOD0": {
                     "id": "u46Xpql4mjj6JOD0",
                     "label": "Płytowe Nagolenniki",
-                    "script": "if (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))) {\n   args.prefillModifiers.modifier -= 10;\n}"
+                    "script": "if (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))) {\n    args.prefillModifiers.modifier -= 10;\n}"
                 }
             },
-            "penalty": "-10 Stealth"
+            "penalty": "-10 do Skradania"
         },
         "Blunderbuss": {
             "id": "ByHt0vTWRIuHS2r8",
             "name": "Garłacz",
             "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.ByHt0vTWRIuHS2r8",
-            "special": "Blunderbusses are the only weapons listed that use the Small shot or Improvised shot ammunition. All other Blackpowder and engineering weapons use bullets."
+            "special": "Garłacze to jedyna z wymienionych broni, która wykorzystuje śrut lub śrut improwizowany. Wszystkie pozostałe typy Broni Prochowej i Eksperymentalnej wykorzystują pociski."
         },
         "Room, common/night": {
             "id": "BZmUt37Jk1UCokqS",
-            "name": "Wspólna izba na 1 noc",
+            "name": "Nocleg, wspólna izba na 1 noc",
             "description": "<p>Goście śpiący we wspólnych izbach powinni uważać na złodziejów.</p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.BZmUt37Jk1UCokqS"
         },
@@ -450,7 +450,7 @@
             "name": "Improwizowany śrut i proch",
             "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.CdsNf9MFRUhrJ3YA",
-            "range": "Half weapon"
+            "range": "1/2 zasięgu broni"
         },
         "Mad Cap Mushrooms": {
             "id": "CihEl1pzvTiMQswA",
@@ -512,7 +512,7 @@
                     "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Perception\")){\n   args.prefillModifiers.modifier -= 20;\n}"
                 }
             },
-            "penalty": "-20 Perception"
+            "penalty": "-20 do Percepcji"
         },
         "Destrier": {
             "id": "ebsbEIJOY0Jy5raF",
@@ -534,7 +534,7 @@
         },
         "Chalk": {
             "id": "elraWaIlaaHeKwKl",
-            "name": "kreda",
+            "name": "Kreda",
             "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.elraWaIlaaHeKwKl"
         },
@@ -558,7 +558,7 @@
         },
         "Flask of Spirits": {
             "id": "f6cvUapo8tQHp2OL",
-            "name": "Butelka Spirytusu",
+            "name": "Butelka spirytusu",
             "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.f6cvUapo8tQHp2OL"
         },
@@ -631,7 +631,7 @@
                 "K7C1LFtqdLQ5bhFS": {
                     "id": "K7C1LFtqdLQ5bhFS",
                     "label": "Mikstura lecznicza",
-                    "script": "let wounds = this.actor.status.wounds;\nif (wounds.value > 0) {\n  ui.notifications.notify(game.i18n.format(\"WFRP4E.EFFECT.CORE.HealingPotion\", {wounds: this.actor.characteristics.t.bonus}));\n  this.actor.modifyWounds(this.actor.characteristics.t.bonus);\n} else {\n  ui.notifications.error(game.i18n.localize(\"WFRP4E.EFFECT.CORE.HealingPotionNoWounds\"));\n}"
+                    "script": "let wounds = this.actor.status.wounds\nif (wounds.value == 0)\n  return ui.notifications.error(\"Brak efektu przy 0 punktach Żywotności\")\n\nui.notifications.notify(`Uleczone punkty Żywotności: ${this.actor.characteristics.t.bonus}`)\nthis.actor.modifyWounds(this.actor.characteristics.t.bonus)"
                 }
             }
         },
@@ -668,7 +668,7 @@
         "Waterskin": {
             "id": "hG90GkelSekqH7i8",
             "name": "Bukłak",
-            "description": "<p>Pojemność: 4,5 litra płynu.</p>",
+            "description": "<p>Liczy się jako założony, kiedy jest np. noszony na ramieniu. Pojemność: 4,5 litra płynu.</p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.hG90GkelSekqH7i8"
         },
         "Antitoxin Kit": {
@@ -734,7 +734,7 @@
         "Coat": {
             "id": "Ieyr3r0Skl57DkAJ",
             "name": "Opończa",
-            "description": "<p><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">Chroni noszącego przed niesprzyjającymi warunkami pogodowymi i niskimi temperaturami. Jeśli nie masz dobrej opończy lub czegoś podobnego, otrzymujesz kary z powodu zimna (patrz strona 181).</p></p>",
+            "description": "<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">Chroni noszącego przed niesprzyjającymi warunkami pogodowymi i niskimi temperaturami. Jeśli nie masz dobrej opończy lub czegoś podobnego, otrzymujesz kary z powodu zimna (patrz strona 181).</p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.Ieyr3r0Skl57DkAJ"
         },
         "Bedroll": {
@@ -810,7 +810,7 @@
         "Ale, Keg": {
             "id": "jyphOMwPqNU9KgmS",
             "name": "Beczułka piwa",
-            "description": "<p><pPojemność około 10 litrów. Puste beczułki można napełnić za 2 s.</p></p>",
+            "description": "<p>Pojemność około 10 litrów. Puste beczułki można napełnić za 2 s</p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.jyphOMwPqNU9KgmS"
         },
         "Lasso": {
@@ -818,7 +818,7 @@
             "name": "Arkan",
             "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.k0JKY8ck2QUx5mKS",
-            "special": "Entangling weapons have no range bands, just the listed range."
+            "special": "Broń Oplątująca nie ma zasięgu podzielonego na zakresy, a tylko działa na podany dystans."
         },
         "Animal Trap": {
             "id": "k0KeWhPgFGUcOgs0",
@@ -849,7 +849,7 @@
             "name": "Bełt",
             "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.kFROfGFdExfyJTg9",
-            "range": "As weapon"
+            "range": "jak broń"
         },
         "Engineering Marvel": {
             "id": "KGW0J62iYLqRIfS4",
@@ -895,8 +895,8 @@
         },
         "Bugman’s XXXXXX Ale, pint": {
             "id": "KzJkoB12jpidtngo",
-            "name": "Wyśmienite Piwo Bugmana XXXXXX",
-            "description": "<p>Merchants travel across the Old World to purchase this potent Dwarfen ale from the famous brewery founded by Josef Bugman. Bugman’s Ale is distributed to most major cities. One mug of Bugman’s counts as 4 mugs of normal ale for intoxication purposes (see @Item[Consume Alcohol]), and grants immunity to Fear Tests for 1d10 hours.</p>",
+            "name": "Przesławne, wyśmienite Piwo Bugmana XXXXXX",
+            "description": "<p>Kupcy przemierzają cały Stary Świat, by nabyć to krzepkie, krasnoludzkie piwo ze słynnego browaru założonego przez Josefa Bugmana. Ten rześki i podnoszący na duchu napój dostarczany jest do większości głównych miast. Jeśli chodzi o spożycie alkoholu, jeden kubek Bugmana liczy się jako 4 porcje zwykłego piwa (patrz @UUID[JournalEntry.6zOdTLv3YeYeJ4hR.JournalEntryPage.38Ux3mEWYuQ4heIT]{Mocna Głowa} na stronie 123) i zapewnia odporność na Testy Strachu przez 1k10 godzin.</p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.KzJkoB12jpidtngo"
         },
         "Abacus": {
@@ -914,7 +914,7 @@
         "Pewter Stein": {
             "id": "lIaPOGOBdJBvDZf4",
             "name": "Kufel cynowy",
-            "description": "<p></p>",
+            "description": "<p>Cynowy kubek/kufel z pokrywą</p>\n<p>&nbsp;</p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.lIaPOGOBdJBvDZf4"
         },
         "False Leg": {
@@ -961,8 +961,8 @@
         },
         "Repeater Handgun": {
             "id": "M23N8sjzEp16abQQ",
-            "name": "Rusznica samopowtarzalna*",
-            "description": "<p></p>",
+            "name": "Rusznica samopowtarzalna",
+            "description": "<p>Każda Broń Prochowa i Eksperymentalna ma Zalety Prochowa i Przebijająca</p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.M23N8sjzEp16abQQ"
         },
         "Chicken": {
@@ -997,7 +997,7 @@
         },
         "Tent": {
             "id": "MF43A52UBH8SHOnd",
-            "name": "namiot",
+            "name": "Namiot",
             "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.MF43A52UBH8SHOnd"
         },
@@ -1006,7 +1006,7 @@
             "name": "Pocisk kamienny",
             "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.mik7s6AqS8SMSaJ8",
-            "range": "As weapon"
+            "range": "jak broń"
         },
         "Improvised Weapon": {
             "id": "mRU10yAWWWs5WoKt",
@@ -1029,13 +1029,13 @@
         "Salwort": {
             "id": "mUTrC5DA6bF8DDWz",
             "name": "Salwort",
-            "description": "<p>Trzymany pod czyimś nosem zapach zmiażdżonej gałązki tego zioła usuwa 1 Stan Ogłuszenia. <strong>Dawka</strong>: 1 na starcie.</p>",
+            "description": "<p>Trzymany pod czyimś nosem zapach zmiażdżonej gałązki tego zioła usuwa 1 Stan Oszołomienie&nbsp;. <strong>Dawka</strong>: 1 na starcie.</p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.mUTrC5DA6bF8DDWz",
             "effects": {
                 "JGCSlLxbbXCPlkIY": {
                     "id": "JGCSlLxbbXCPlkIY",
                     "label": "Salwort",
-                    "script": "let stunned = this.actor.hasCondition(\"stunned\");\nif (stunned) {\n   ui.notifications.notify(game.i18n.localize(\"WFRP4E.EFFECT.CORE.Salwort\"));\n   await this.actor.removeCondition(\"stunned\", 1);\n}"
+                    "script": "let stunned= this.actor.hasCondition(\"stunned\")\nif (stunned)\n{\n   ui.notifications.notify(`Usunięto 1 Stan Oszołomienia`)\n   this.actor.removeCondition(\"stunned\", 1)\n}"
                 }
             }
         },
@@ -1067,13 +1067,13 @@
         "Faxtoryll": {
             "id": "nRfcszo6wF2sVFDn",
             "name": "Fakstoryl",
-            "description": "<p>Nacieranie rany okładami przygotowanymi z tego ziołowego koagulantu usuwa wszelkie Stany Krwawienie bez Testu Leczenia. Dawkowanie: 1 dawka na Ranę Krytyczną.</p>",
+            "description": "<p>Nacieranie rany okładami przygotowanymi z tego ziołowego koagulantu usuwa wszelkie Stany Krwawienie bez Testu Leczenia. <strong>Dawkowanie</strong>: 1 dawka na Ranę Krytyczną.</p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.nRfcszo6wF2sVFDn",
             "effects": {
                 "rzyXt1SCCnDq5tnt": {
                     "id": "rzyXt1SCCnDq5tnt",
                     "label": "Fakstoryl",
-                    "script": "let bleeding = this.actor.hasCondition(\"bleeding\")\nif (bleeding) {\n   ui.notifications.notify(game.i18n.format(\"WFRP4E.EFFECT.CORE.Faxtoryll\", {bleeding: bleeding.flags.wfrp4e.value}));\n   await this.actor.removeCondition(\"bleeding\", bleeding.flags.wfrp4e.value);\n}"
+                    "script": "let bleeding = this.actor.hasCondition(\"bleeding\")\nif (bleeding)\n{\n   ui.notifications.notify(`Usunięte Stany Krawienia: ${bleeding.flags.wfrp4e.value}`)\n   this.actor.removeCondition(\"bleeding\", bleeding.flags.wfrp4e.value)\n}"
                 }
             }
         },
@@ -1086,12 +1086,12 @@
         "Pony": {
             "id": "nVf2096t5ynzh0Qq",
             "name": "Kucyk",
-            "description": "<p>@Actor[12ARFrc7Dokxc72q]{Kucyk}</p><p>Udźwig: 14</p>",
+            "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.nVf2096t5ynzh0Qq"
         },
         "Rock": {
             "id": "NyIwm2Ge60jnUZft",
-            "name": "Komień",
+            "name": "Kamień",
             "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.NyIwm2Ge60jnUZft"
         },
@@ -1100,7 +1100,7 @@
             "name": "Kopia",
             "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.O2jqCh3Zb5eR4yXe",
-            "special": "Lances count as Improvised Weapons if used on a round where you have not Charged"
+            "special": "Kopie liczą się jako Broń Improwizowana, jeśli używane są podczas Rundy, w której nie wykonano Szarży"
         },
         "Book, Law": {
             "id": "o4FSm7YgmfNV4Qgq",
@@ -1135,7 +1135,7 @@
         "Nightshade": {
             "id": "OfGoWncevRmuj5TX",
             "name": "Nocny cień",
-            "description": "<p>Spożycie tego zioła powoduje, że ofiara zapada w głęboki sen po 2-3 godzinach, o ile nie przejdzie udanego Testu <strong>Odporności</strong>. Sen wywołany przez nocny cień trwa 1k10+4 godziny. <strong>Dawkowanie</strong>: 1 dawka na osobę.</p>",
+            "description": "<p>Spożycie tego zioła powoduje, że ofiara zapada w głęboki sen po 2-3 godzinach, o ile nie przejdzie udanego Testu Odporności. Sen wywołany przez nocny cień trwa 1k10+4 godziny. <strong>Dawkowanie</strong>: 1 dawka na osobę.</p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.OfGoWncevRmuj5TX"
         },
         "Lock Picks": {
@@ -1165,7 +1165,7 @@
         "Book, Religion": {
             "id": "PKkGM5Q0Chmt5qFe",
             "name": "Księga, religia",
-            "description": "<p><pKsięgi religijne dostępne są w Imperium we wszelakich formach. To kraina znana z przywiązania do religii. Istnieje chłonny rynek na najpopularniejsze teksty, z których większość jest tanio produkowana z użyciem pras drukarskich.</p></p>",
+            "description": "<p>Księgi religijne dostępne są w Imperium we wszelakich formach. To kraina znana z przywiązania do religii. Istnieje chłonny rynek na najpopularniejsze teksty, z których większość jest tanio produkowana z użyciem pras drukarskich.</p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.PKkGM5Q0Chmt5qFe"
         },
         "Pistol": {
@@ -1207,7 +1207,7 @@
         "Black Lotus": {
             "id": "qfd01sggD9xbCuJY",
             "name": "Czarny lotos",
-            "description": "<p>Ta śmiercionośna roślina rośnie w dżunglach Krain Południowych i wykorzystywana jest do zatruwania ostrzy. Ofiary, które odniosą co najmniej 1 obrażenie od ostrza pokrytego sokiem tej rośliny, natychmiast otrzymują 2 Stany <em>Zatrucie</em>. Przed działaniem chroni udany <strong>Trudny (-10) Test Odporności</strong>.</p>",
+            "description": "<p>Ta śmiercionośna roślina rośnie w dżunglach Krain Południowych i wykorzystywana jest do zatruwania ostrzy. Ofiary, które odniosą co najmniej 1 obrażenie od ostrza pokrytego sokiem tej rośliny, natychmiast otrzymują 2 Stany Zatrucie. Przed działaniem chroni udany <strong>Trudny (-10) Test Odporności</strong>.</p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.qfd01sggD9xbCuJY"
         },
         "Bolas": {
@@ -1297,7 +1297,7 @@
         "Riding Horse": {
             "id": "tL7ka28KOIvEi6Rc",
             "name": "Koń Wierzchowy",
-            "description": "<p>@Actor[4DTXl9hXbWlfLa5J]{Koń Wierzchowy}</p><p>Udźwig: 16</p>",
+            "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.tL7ka28KOIvEi6Rc"
         },
         "Pestle & Mortar": {
@@ -1318,7 +1318,7 @@
                     "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Perception\")) {\n   args.prefillModifiers.modifier -= 10;\n}"
                 }
             },
-            "penalty": "-10 Perception"
+            "penalty": "-10 do Percepcji"
         },
         "Candle": {
             "id": "TW3etL7RIU2EWTXp",
@@ -1392,7 +1392,7 @@
                     "script": "let ablaze = {{SL}} + 1;\nawait args.actor.addCondition(\"ablaze\", ablaze);"
                 }
             },
-            "special": "An Incendiary gives every affected target 1+SL Ablaze Conditions."
+            "special": "Objęty działaniem ładunku zapalającego cel otrzymuje 1+PS Stanów Podpalenie."
         },
         "Cup": {
             "id": "VIq5ronFVkpzF8Vb",
@@ -1445,7 +1445,7 @@
         "Instrument": {
             "id": "Wp9qIwlQo6dpszOw",
             "name": "Instrument",
-            "description": "<p>Do tej kategorii należą różne instrumenty muzyczne. Standardowa cena i Obciążenie odpowiadają instrumentom średniej wielkości (np. mandolinie, trąbce od powozu, niewielkiemu bębnowi). Małe instrumenty dostępne są za pół ceny i zabierają 0 punktów  Obciążenia (np. flet prosty lub poprzeczny, tamburyno). Większe instrumenty dostępne są za dwukrotnie wyższą cenę i zabierają 2 punkty Obciążenia (np. harfa, lutnia, duży bęben)</p>",
+            "description": "<p>Do tej kategorii należą różne instrumenty muzyczne. Standardowa cena i Obciążenie odpowiadają instrumentom średniej wielkości (np. mandolinie, trąbce od powozu, niewielkiemu bębnowi). Małe instrumenty dostępne są za pół ceny i zabierają 0 punktów Obciążenia (np. flet prosty lub poprzeczny, tamburyno). Większe instrumenty dostępne są za dwukrotnie wyższą cenę i zabierają 2 punkty Obciążenia (np. harfa, lutnia, duży bęben)</p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.Wp9qIwlQo6dpszOw"
         },
         "Comb": {
@@ -1483,14 +1483,14 @@
             "name": "Pocisk i proch",
             "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.xdAP96GGDb87m0Pr",
-            "range": "As weapon"
+            "range": "jak broń"
         },
         "Whip": {
             "id": "xiOYNJcfqPselfwT",
             "name": "Bicz",
             "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.xiOYNJcfqPselfwT",
-            "special": "Entangling weapons have no range bands, just the listed range."
+            "special": "Broń Oplątująca nie ma zasięgu podzielonego na zakresy, a tylko działa na podany dystans."
         },
         "Throwing Axe": {
             "id": "Xjwk84KnOKDaiZs1",
@@ -1531,7 +1531,7 @@
         "Hook": {
             "id": "YivL32R2L3J098VD",
             "name": "Hak",
-            "description": "<p><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\"><span style=\"color: #231f20;\">Bohater ma przymocowany hak w miejscu utraconej dłoni. To zaskakująco sprawnie działające narzędzie, gdy się do niego przywyknie. Pozwala zniwelować karę -20 do wszystkich Testów związanych z używaniem obu dłoni. Każde wydane 100 PD to 5 punktów odejmowanych od kary. Całkowite usunięcie kary wymaga wydania 400 PD. </span><strong><span style=\"color: #231f20;\">Bonus</span></strong><span style=\"font-weight: bold; color: #231f20;\">: </span><span style=\"color: #231f20;\">W walce w zwarciu haki traktowane są jak sztylety.</span></p></p>",
+            "description": "<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\"><span style=\"color: #231f20;\">Bohater ma przymocowany hak w miejscu utraconej dłoni. To zaskakująco sprawnie działające narzędzie, gdy się do niego przywyknie. Pozwala zniwelować karę -20 do wszystkich Testów związanych z używaniem obu dłoni. Każde wydane 100 PD to 5 punktów odejmowanych od kary. Całkowite usunięcie kary wymaga wydania 400 PD. </span><strong><span style=\"color: #231f20;\">Bonus</span></strong><span style=\"font-weight: bold; color: #231f20;\">: </span><span style=\"color: #231f20;\">W walce w zwarciu haki traktowane są jak sztylety.</span></p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.YivL32R2L3J098VD"
         },
         "Gloves": {
@@ -1573,13 +1573,13 @@
         "Vitality Draught": {
             "id": "ZBBi7LpWvNgQgRcw",
             "name": "Eliksir żywotności",
-            "description": "<p>Wypicie tego eliksiru natychmiast usuwa wszelkie Stany&nbsp;Zmęczenie.</p>",
+            "description": "<p>Wypicie tego eliksiru natychmiast usuwa wszelkie Stany Zmęczenie&nbsp;.</p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.ZBBi7LpWvNgQgRcw",
             "effects": {
                 "9ArLjt6oQqMDFsDu": {
                     "id": "9ArLjt6oQqMDFsDu",
                     "label": "Eliksir żywotności",
-                    "script": "let fatigued= this.actor.hasCondition(\"fatigued\");\nif (fatigued) {\n   ui.notifications.notify(game.i18n.format(\"WFRP4E.EFFECT.CORE.VitalityDraught\", {fatigued: fatigued.conditionValue}));\n   await this.actor.removeCondition(\"fatigued\", fatigued.conditionValue);\n}"
+                    "script": "let fatigued= this.actor.hasCondition(\"fatigued\")\nif (fatigued)\n{\n   ui.notifications.notify(`Usunięte Stany Zmęczenia: ${fatigued.conditionValue}`)\n   this.actor.removeCondition(\"fatigued\", fatigued.conditionValue)\n}"
                 }
             }
         },

@@ -574,11 +574,11 @@
         },
         "Toll Keeper": {
             "id": "4a69lleVImbw3JhI",
-            "name": "Mytnik",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.dN2K3ZBMu4rvGGpW]{Strażnik Dróg}</p>",
+            "name": "Mytniczka",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.dN2K3ZBMu4rvGGpW]{Strażniczka Dróg}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.4a69lleVImbw3JhI",
-            "careergroup": "Strażnik Dróg",
-            "class": "Wędrowiec",
+            "careergroup": "Strażniczka Dróg",
+            "class": "Wędrowcy",
             "skills": [
                 "Przekupstwo",
                 "Mocna Głowa",
@@ -587,7 +587,7 @@
                 "Targowanie",
                 "Broń Biała (Podstawowa)",
                 "Percepcja",
-                "Broń Zasięgowa (Kusze)"
+                "Broń Zasięgowa (Kusza)"
             ],
             "talents": [
                 "Zimna krew",
@@ -618,7 +618,7 @@
                 "Percepcja",
                 "Atletyka",
                 "Nawigacja",
-                "Broń Zasięgowa (Łuki)",
+                "Broń Zasięgowa (Łuk)",
                 "Jeździectwo (Konie)",
                 "Skradanie (Wieś)",
                 "Tropienie"
@@ -630,8 +630,8 @@
                 "Obieżyświat"
             ],
             "trappings": [
-                "Łuk",
-                "Strzały (10)"
+                "Łuk i 10 strzał",
+                "Kaftan kolczy"
             ]
         },
         "Maestro": {
@@ -640,7 +640,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.u9sso2ox8BNznmy4]{Artystka}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.4mlbPdEWU4d7Lh7Y",
             "careergroup": "Artystka",
-            "class": "Dworzanin",
+            "class": "Dworzanie",
             "skills": [
                 "Sztuka (Dowolna)",
                 "Opanowanie",
@@ -670,9 +670,9 @@
                 "Arcydzieło"
             ],
             "trappings": [
-                "3 Uczniów",
+                "Duży warsztat (Artysty)",
                 "Biblioteka (Sztuka)",
-                "Duży Warsztat (Artysty)"
+                "3 Uczniów"
             ]
         },
         "Student Engineer": {
@@ -681,7 +681,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.hVKMI3xwuUpO3P6c]{Inżynier}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.4TgG1CMJ0zoVPbiZ",
             "careergroup": "Inżynier",
-            "class": "Uczony",
+            "class": "Uczeni",
             "skills": [
                 "Mocna Głowa",
                 "Opanowanie",
@@ -709,7 +709,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.mBtIPoWNpXwAS5Yl]{Złodziej}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.4xxp72XMEqj6y25g",
             "careergroup": "Złodziej",
-            "class": "Łotr",
+            "class": "Łotry",
             "skills": [
                 "Atletyka",
                 "Wspinaczka",
@@ -723,12 +723,12 @@
                 "Plotkowanie",
                 "Wiedza (Lokalna)",
                 "Otwieranie Zamków",
-                "Sekretne Znaki (Złodzieje)",
+                "Sekretne Znaki (Złodziei)",
                 "Zwinne Palce",
                 "Przekupstwo",
                 "Hazard",
                 "Zastraszanie",
-                "Broń Zasięgowa (Kusze)"
+                "Broń Zasięgowa (Kusza)"
             ],
             "talents": [
                 "Widzenie w Ciemności",
@@ -746,7 +746,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ssJHG82vEHHRoAUF]{Szpieg}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.4YnbaP9MXqU4NBpt",
             "careergroup": "Szpieg",
-            "class": "Dworzanin",
+            "class": "Dworzanie",
             "skills": [
                 "Przekupstwo",
                 "Charyzma",
@@ -769,27 +769,27 @@
             ],
             "talents": [
                 "Atrakcyjny",
+                "Gładkie Słówka",
                 "Mistrz Charakteryzacji",
-                "Naśladowca",
-                "Gładkie Słówka"
+                "Naśladowca"
             ],
             "trappings": [
-                "Kałamarz i pióro",
-                "Sieć szpiegów i informatorów",
                 "Księga (Kryptografia)",
-                "Strych z Gołębiami Pocztowymi"
+                "Sieć szpiegów i informatorów",
+                "Strych z Gołębiami Pocztowymi",
+                "Kałamarz i Pióro"
             ]
         },
         "Mystic": {
             "id": "5C8dpF6YYiz7clnl",
-            "name": "Mistyk",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.CzebTXk5dirMAZ6p]{Mistyk}</p>",
+            "name": "Mistyczka",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.CzebTXk5dirMAZ6p]{Mistyczka}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.5C8dpF6YYiz7clnl",
-            "careergroup": "Mistyk",
+            "careergroup": "Mistyczka",
             "class": "Pospólstwo",
             "skills": [
                 "Charyzma",
-                "Występy (Wróżbiarstwo)",
+                "Występy (Wróżenie)",
                 "Unik",
                 "Plotkowanie",
                 "Targowanie",
@@ -819,7 +819,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Eg5D2UI3U4SAHnuU]{Szarlatan}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.5hmNqNxXRy3RjcFV",
             "careergroup": "Szarlatan",
-            "class": "Łotr",
+            "class": "Łotry",
             "skills": [
                 "Przekupstwo",
                 "Mocna Głowa",
@@ -833,23 +833,23 @@
             "talents": [
                 "Szuler",
                 "Szuler Kościany",
-                "Etykieta (Dowolna)",
+                "Etykieta (Dowolna Grupa)",
                 "Szczęście"
             ],
             "trappings": [
-                "Talia kart",
-                "Kości do gry",
                 "Plecak",
-                "2 Komplety Ubrań"
+                "2 komplety ubrań",
+                "Talia kart",
+                "Zestaw kości"
             ]
         },
         "Racketeer": {
             "id": "5WR3ZoMOeEzz5iPc",
-            "name": "Rekieter",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Z5QPZbUR3h422ozo]{Rekieter}</p>",
+            "name": "Rekieterka",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Z5QPZbUR3h422ozo]{Rekieterka}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.5WR3ZoMOeEzz5iPc",
-            "careergroup": "Rekieter",
-            "class": "Łotr",
+            "careergroup": "Rekieterka",
+            "class": "Łotry",
             "skills": [
                 "Mocna Głowa",
                 "Opanowanie",
@@ -874,8 +874,8 @@
             ],
             "trappings": [
                 "Broń ręczna",
-                "Kaftan kolczy",
-                "Kapelusz"
+                "Kapelusz",
+                "Kaftan kolczy"
             ]
         },
         "Menial": {
@@ -884,7 +884,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.iYnopOFkz5L6hljq]{Służąca}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.6846o00SGHkRuZB8",
             "careergroup": "Służąca",
-            "class": "Dworzanin",
+            "class": "Dworzanie",
             "skills": [
                 "Atletyka",
                 "Wspinaczka",
@@ -907,11 +907,11 @@
         },
         "Bounty Hunter General": {
             "id": "6Abdn6XfJCSI2rWJ",
-            "name": "Legendarny Łowca Nagród",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{Łowca Nagród}</p>",
+            "name": "Legendarna Łowczyni Nagród",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{Łowczyni Nagród}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.6Abdn6XfJCSI2rWJ",
-            "careergroup": "Łowca Nagród",
-            "class": "Wędrowiec",
+            "careergroup": "Łowczyni Nagród",
+            "class": "Wędrowcy",
             "skills": [
                 "Przekupstwo",
                 "Charyzma",
@@ -924,7 +924,7 @@
                 "Atletyka",
                 "Odporność",
                 "Zastraszanie",
-                "Broń Zasięgowa (Kusze)",
+                "Broń Zasięgowa (Kusza)",
                 "Broń Zasięgowa (Oplątująca)",
                 "Tropienie",
                 "Opieka nad Zwierzętami",
@@ -936,7 +936,7 @@
             ],
             "talents": [
                 "Prosto Między Oczy",
-                "Nieustraszony (Poszukiwani)",
+                "Nieustraszony (Cele Łowów)",
                 "Twardziel",
                 "Strzał Przebijający"
             ],
@@ -952,7 +952,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.iYVpqJ6bz8fokdmf]{Kapłan Bitewny}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.6D6FQRqfc6F3L5vZ",
             "careergroup": "Kapłan Bitewny",
-            "class": "Wojownik",
+            "class": "Wojownicy",
             "skills": [
                 "Opanowanie",
                 "Unik",
@@ -989,7 +989,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.c8JYF7Lvaaezt9RS]{Flisak}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.7A4HCcddeMYG3EZ6",
             "careergroup": "Flisak",
-            "class": "Wodniak",
+            "class": "Wodniacy",
             "skills": [
                 "Atletyka",
                 "Mocna Głowa",
@@ -1001,7 +1001,7 @@
                 "Pływanie",
                 "Hazard",
                 "Wiedza (Lokalna)",
-                "Wiedza (Rzeki)",
+                "Wiedza (Szlaki Rzeczne)",
                 "Broń Zasięgowa (Oplątująca)",
                 "Broń Zasięgowa (Miotana)",
                 "Zastawianie Pułapek",
@@ -1010,7 +1010,7 @@
                 "Broń Biała (Drzewcowa)",
                 "Percepcja",
                 "Występy (Gawędziarstwo)",
-                "Wiedza (Folklor)"
+                "Wiedza (Ludowa)"
             ],
             "talents": [
                 "Mistrz Rzemiosła (Szkutnictwo)",
@@ -1034,7 +1034,7 @@
                 "Odporność",
                 "Intuicja",
                 "Język (Magiczny)",
-                "Wiedza (Folklor)",
+                "Wiedza (Ludowa)",
                 "Wiedza (Zioła)",
                 "Sztuka Przetrwania",
                 "Percepcja",
@@ -1063,7 +1063,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.VzMDRJtha7epNzuX]{Paser}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.7w3Y5lZXMBa7N0uV",
             "careergroup": "Paser",
-            "class": "Łotr",
+            "class": "Łotry",
             "skills": [
                 "Charyzma",
                 "Mocna Głowa",
@@ -1091,7 +1091,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Mn7w0SSGfN7cu7gQ]{Medyczka}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.8bbV2yHKeT6QeOKd",
             "careergroup": "Medyczka",
-            "class": "Uczony",
+            "class": "Uczeni",
             "skills": [
                 "Przekupstwo",
                 "Opanowanie",
@@ -1106,18 +1106,18 @@
                 "Język (Gildii)",
                 "Wiedza (Anatomia)",
                 "Wiedza (Medycyna)",
-                "Rzemiosło (Balwierz)"
+                "Rzemiosło (Cyrulik)"
             ],
             "talents": [
                 "Zimna krew",
                 "Przestępca",
-                "Etykieta (Gildia)",
+                "Etykieta (Członkowie Cechu)",
                 "Chirurgia"
             ],
             "trappings": [
-                "Narzędzia Pracy (Medycyna)",
                 "Księga (Medycyna)",
-                "Licencja Cechu"
+                "Licencja Cechu",
+                "Narzędzia Pracy (Medycyna)"
             ]
         },
         "Merchant Prince": {
@@ -1126,7 +1126,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.h7GdfctKdjWL0Ejp]{Kupiec}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.8llxzvd0M3P59ctr",
             "careergroup": "Kupiec",
-            "class": "Mieszczanin",
+            "class": "Mieszczanie",
             "skills": [
                 "Opieka nad Zwierzętami",
                 "Przekupstwo",
@@ -1142,7 +1142,7 @@
                 "Język (Gildii)",
                 "Wiedza (Lokalna)",
                 "Percepcja",
-                "Opanowanie",
+                " Opanowanie",
                 "Język (Klasyczny)",
                 "Nawigacja",
                 "Sekretne Znaki (Gildii)",
@@ -1157,8 +1157,8 @@
             ],
             "trappings": [
                 "2 Łodzie Rzeczne lub 4 Wozy",
-                "2 Magazyny",
-                "Duża posiadłość w Mieście",
+                "Duża posiadłość w mieście",
+                "2 magazyny",
                 "1000 Złotych Koron",
                 "Dobre Ubranie"
             ]
@@ -1169,7 +1169,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.9XoJinyH6CsOcJ1h]{Posłaniec}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.8rVR4gVhsWeLo5Sf",
             "careergroup": "Posłaniec",
-            "class": "Wędrowiec",
+            "class": "Wędrowcy",
             "skills": [
                 "Atletyka",
                 "Wspinaczka",
@@ -1194,13 +1194,13 @@
             ],
             "talents": [
                 "Żyłka Handlowa",
-                "Nienawiść (Wyjęci spod Prawa)",
+                "Nienawiść (Banici)",
                 "Szycha",
                 "Niezwykle Odporny"
             ],
             "trappings": [
-                "Kaftan kolczy",
                 "Kurierzy",
+                "Kaftan kolczy",
                 "Zestaw do pisania"
             ]
         },
@@ -1210,7 +1210,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.1OTZ386bMWJ6wfzX]{Żołnierz}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.8vPHNztfk9x7K2Na",
             "careergroup": "Żołnierz",
-            "class": "Wojownik",
+            "class": "Wojownicy",
             "skills": [
                 "Atletyka",
                 "Wspinaczka",
@@ -1245,10 +1245,10 @@
         "Road Sergeant": {
             "id": "91unnpsRgrNFLZ18",
             "name": "Sierżant Strażników Dróg",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.dN2K3ZBMu4rvGGpW]{Strażnik Dróg}</p>",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.dN2K3ZBMu4rvGGpW]{Strażniczka Dróg}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.91unnpsRgrNFLZ18",
-            "careergroup": "Strażnik Dróg",
-            "class": "Wędrowiec",
+            "careergroup": "Strażniczka Dróg",
+            "class": "Wędrowcy",
             "skills": [
                 "Przekupstwo",
                 "Mocna Głowa",
@@ -1257,7 +1257,7 @@
                 "Targowanie",
                 "Broń Biała (Podstawowa)",
                 "Percepcja",
-                "Broń Zasięgowa (Kusze)",
+                "Broń Zasięgowa (Kusza)",
                 "Opieka nad Zwierzętami",
                 "Odporność",
                 "Zastraszanie",
@@ -1271,14 +1271,14 @@
             ],
             "talents": [
                 "Etykieta (Żołnierze)",
-                "Nieustraszony (Wyjęci spod Prawa)",
-                "Nienawiść (Dowolny)",
+                "Nieustraszony (Banici)",
+                "Nienawiść (Dowolne)",
                 "Nos do Kłopotów"
             ],
             "trappings": [
                 "Drużyna Strażników Dróg",
+                "Pistolet z 10 nabojami",
                 "Tarcza",
-                "Pistolet z 10 Nabojami",
                 "Symbol Rangi"
             ]
         },
@@ -1288,7 +1288,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.SrqxyWytyki4WYgC]{Banita}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.9631KpCQa7jvhmgS",
             "careergroup": "Banita",
-            "class": "Łotr",
+            "class": "Łotry",
             "skills": [
                 "Atletyka",
                 "Mocna Głowa",
@@ -1302,7 +1302,7 @@
                 "Leczenie",
                 "Wiedza (Lokalna)",
                 "Percepcja",
-                "Broń Zasięgowa (Łuki)",
+                "Broń Zasięgowa (Łuk)",
                 "Skradanie (Wieś)"
             ],
             "talents": [
@@ -1312,9 +1312,9 @@
                 "Traper"
             ],
             "trappings": [
-                "Łuk",
-                "10 Strzał",
-                "Tarcza"
+                "Łuk i 10 strzał",
+                "Tarcza",
+                "Namiot"
             ]
         },
         "Dock Master": {
@@ -1323,7 +1323,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.KslqDlYmY4trmf6S]{Doker}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.9PTQfMr98E3ei3Fo",
             "careergroup": "Doker",
-            "class": "Wodniak",
+            "class": "Wodniacy",
             "skills": [
                 "Atletyka",
                 "Wspinaczka",
@@ -1363,7 +1363,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.HndWncfaHb0nzNUq]{Ochroniarz}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.9q1yLMpfhX1bqvth",
             "careergroup": "Ochroniarz",
-            "class": "Wojownik",
+            "class": "Wojownicy",
             "skills": [
                 "Mocna Głowa",
                 "Odporność",
@@ -1378,7 +1378,7 @@
                 "Unik",
                 "Zastraszanie",
                 "Broń Biała (Drzewcowa)",
-                "Broń Zasięgowa (Łuki)"
+                "Broń Zasięgowa (Łuk)"
             ],
             "talents": [
                 "Nieustępliwy",
@@ -1433,7 +1433,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Mn7w0SSGfN7cu7gQ]{Medyczka}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.9XJ7Qs6pY6IO01u6",
             "careergroup": "Medyczka",
-            "class": "Uczony",
+            "class": "Uczeni",
             "skills": [
                 "Przekupstwo",
                 "Opanowanie",
@@ -1448,7 +1448,7 @@
                 "Język (Gildii)",
                 "Wiedza (Anatomia)",
                 "Wiedza (Medycyna)",
-                "Rzemiosło (Balwierz)",
+                "Rzemiosło (Cyrulik)",
                 "Mocna Głowa",
                 "Zastraszanie",
                 "Dowodzenie",
@@ -1473,7 +1473,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.GWrZq3xoRSsDnQe0]{Rzemieślniczka}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.9xszp5m5KRmj3bxX",
             "careergroup": "Rzemieślniczka",
-            "class": "Mieszczanin",
+            "class": "Mieszczanie",
             "skills": [
                 "Atletyka",
                 "Opanowanie",
@@ -1487,15 +1487,15 @@
                 "Targowanie",
                 "Wiedza (Lokalna)",
                 "Plotkowanie",
-                "Język (Gildii)",
+                "Język (Cechu)",
                 "Percepcja",
                 "Intuicja",
                 "Dowodzenie",
                 "Badania Naukowe",
-                "Sekretne Znaki (Gildii)"
+                "Sekretne Znaki (Cechu)"
             ],
             "talents": [
-                "Wyczulony Zmysł (Wzrok lub Dotyk)",
+                "Wyczulony Zmysł (Smak lub Dotyk)",
                 "Mistrz Rzemiosła (Dowolny)",
                 "Czytanie/Pisanie",
                 "Złota Rączka"
@@ -1511,7 +1511,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.zLWmjUbUdAOfiV3F]{Śledczy}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.a5B7FYYaSarc95Xc",
             "careergroup": "Śledczy",
-            "class": "Mieszczanin",
+            "class": "Mieszczanie",
             "skills": [
                 "Charyzma",
                 "Wspinaczka",
@@ -1535,10 +1535,10 @@
                 "Wytrwały"
             ],
             "trappings": [
-                "Broń ręczna",
                 "Skórzana kurta",
-                "Wytrych",
-                "Lupa"
+                "Broń ręczna",
+                "Lupa",
+                "Wytrych"
             ]
         },
         "Apprentice Artisan": {
@@ -1547,7 +1547,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.GWrZq3xoRSsDnQe0]{Rzemieślniczka}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.AFv0J8Mq9cbmNEVc",
             "careergroup": "Rzemieślniczka",
-            "class": "Mieszczanin",
+            "class": "Mieszczanie",
             "skills": [
                 "Atletyka",
                 "Opanowanie",
@@ -1560,13 +1560,13 @@
             ],
             "talents": [
                 "Talent Artystyczny",
-                "Wytwórca (Dowolny)",
+                "Wytwórca (Dowolne Rzemiosło)",
                 "Mocne Plecy",
                 "Bardzo Silny"
             ],
             "trappings": [
-                "Skórzany kaftan",
                 "Kreda",
+                "Skórzany kaftan",
                 "k10 Szmat"
             ]
         },
@@ -1576,7 +1576,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.mBtIPoWNpXwAS5Yl]{Złodziej}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.Ahe89KQIXpeadscI",
             "careergroup": "Złodziej",
-            "class": "Łotr",
+            "class": "Łotry",
             "skills": [
                 "Atletyka",
                 "Wspinaczka",
@@ -1594,8 +1594,8 @@
                 "Ogłuszenie"
             ],
             "trappings": [
-                "Skórzany kaftan",
                 "Łom",
+                "Skórzany kaftan",
                 "Worek"
             ]
         },
@@ -1605,7 +1605,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.c8JYF7Lvaaezt9RS]{Flisak}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.AJTl72JcueF1YGgg",
             "careergroup": "Flisak",
-            "class": "Wodniak",
+            "class": "Wodniacy",
             "skills": [
                 "Atletyka",
                 "Mocna Głowa",
@@ -1617,7 +1617,7 @@
                 "Pływanie",
                 "Hazard",
                 "Wiedza (Lokalna)",
-                "Wiedza (Rzeki)",
+                "Wiedza (Szlaki Rzeczne)",
                 "Broń Zasięgowa (Oplątująca)",
                 "Broń Zasięgowa (Miotana)",
                 "Zastawianie Pułapek",
@@ -1627,7 +1627,7 @@
                 "Percepcja"
             ],
             "talents": [
-                "Znawca (Rzeki)",
+                "Znawca (Szlaki Rzeczne)",
                 "Waleczne Serce",
                 "Wytrwały",
                 "Bardzo Silny"
@@ -1671,9 +1671,9 @@
                 "Czytanie/Pisanie"
             ],
             "trappings": [
-                "Zarządca",
-                "Koń z Siodłem i Uprzężą",
-                "Napierśnik Płytowy"
+                "Koń z siodłem i uprzężą",
+                "Napierśnik",
+                "Zarządca"
             ]
         },
         "Informer": {
@@ -1682,7 +1682,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ssJHG82vEHHRoAUF]{Szpieg}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.aOVRZJopZeR0acJs",
             "careergroup": "Szpieg",
-            "class": "Dworzanin",
+            "class": "Dworzanie",
             "skills": [
                 "Przekupstwo",
                 "Charyzma",
@@ -1700,8 +1700,8 @@
                 "Cień"
             ],
             "trappings": [
-                "Torba na Ramię Zawierająca 2 różne Komplety Ubrań",
-                "Węgiel do rysowania"
+                "Węgiel do rysowania",
+                "Torba na ramię zawierająca dwa różne komplety ubrań i płaszcz z kapturem"
             ]
         },
         "Chartered Engineer": {
@@ -1710,7 +1710,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.hVKMI3xwuUpO3P6c]{Inżynier}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.APKQuY39j7RHzJZD",
             "careergroup": "Inżynier",
-            "class": "Uczony",
+            "class": "Uczeni",
             "skills": [
                 "Mocna Głowa",
                 "Opanowanie",
@@ -1723,7 +1723,7 @@
                 "Powożenie",
                 "Unik",
                 "Nawigacja",
-                "Broń Zasięgowa (Inżynieryjna)",
+                "Broń Zasięgowa (Eksperymentalna)",
                 "Badania Naukowe",
                 "Język (Gildii)",
                 "Język (Khazalid)",
@@ -1740,9 +1740,9 @@
                 "Niewzruszony"
             ],
             "trappings": [
+                "Licencja Gildii",
                 "Biblioteka (Inżynieria)",
-                "Doskonałe Narzędzia Pracy (Inżyniera)",
-                "Licencja Cechu",
+                "Doskonałe narzędzia pracy (Inżyniera)",
                 "Duży Warsztat (Inżyniera)"
             ]
         },
@@ -1752,7 +1752,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.zLWmjUbUdAOfiV3F]{Śledczy}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.AQmofCPcdFZNXCV6",
             "careergroup": "Śledczy",
-            "class": "Mieszczanin",
+            "class": "Mieszczanie",
             "skills": [
                 "Charyzma",
                 "Wspinaczka",
@@ -1770,9 +1770,9 @@
                 "Czujny"
             ],
             "trappings": [
-                "Oliwa do lampy",
-                "Dziennik",
                 "Latarnia",
+                "Olej do lampy",
+                "Dziennik",
                 "Pióro i Kałamarz"
             ]
         },
@@ -1782,7 +1782,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.h1l9jvaIxsb92wtM]{Kapłan}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.AtWEBwIobFnhbQy7",
             "careergroup": "Kapłan",
-            "class": "Uczony",
+            "class": "Uczeni",
             "skills": [
                 "Atletyka",
                 "Opanowanie",
@@ -1803,7 +1803,7 @@
                 "Gadanina",
                 "Mól Książkowy",
                 "Etykieta (Kultyści)",
-                "Inwokacja (Dowolna)"
+                "Inwokacja (Dowolne Bóstwo)"
             ],
             "trappings": [
                 "Księga (Religia)",
@@ -1816,7 +1816,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.mKvUxzJyQmhgjDE0]{Szczurołap}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.aUb8sUfqyVyjGYO5",
             "careergroup": "Szczurołap",
-            "class": "Mieszczanin",
+            "class": "Mieszczanie",
             "skills": [
                 "Atletyka",
                 "Tresura (Psy)",
@@ -1835,17 +1835,17 @@
             ],
             "trappings": [
                 "Proca z amunicją",
-                "Mały, ale Zajadły Pies",
-                "Sakwa"
+                "Worek",
+                "Mały, ale zajadły pies"
             ]
         },
         "Warlock": {
             "id": "B0RRDSUqaCVp6P7h",
-            "name": "Arcyczarownik",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.7lNzR0hDPl98NrcX]{Czarownik}</p>",
+            "name": "Arcyczarownica",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.7lNzR0hDPl98NrcX]{Czarownica}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.B0RRDSUqaCVp6P7h",
-            "careergroup": "Czarownik",
-            "class": "Łotr",
+            "careergroup": "Czarownica",
+            "class": "Łotry",
             "skills": [
                 "Splatanie Magii",
                 "Opanowanie",
@@ -1875,8 +1875,8 @@
                 "Niezwykle Odporny"
             ],
             "trappings": [
-                "Czaszka",
-                "Szata"
+                "Szata",
+                "Czaszka"
             ]
         },
         "Procurer": {
@@ -1885,7 +1885,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.WmXiUhsOHIJia8OM]{Rajfur}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.BLHdxZVBGTrrGdxO",
             "careergroup": "Rajfur",
-            "class": "Łotr",
+            "class": "Łotry",
             "skills": [
                 "Przekupstwo",
                 "Charyzma",
@@ -1909,7 +1909,7 @@
             "talents": [
                 "Żyłka Handlowa",
                 "Defraudant",
-                "Etykieta (Dowolny)",
+                "Etykieta (Dowolna Grupa)",
                 "Charyzmatyczny"
             ],
             "trappings": [
@@ -1922,7 +1922,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.t41abSTLeMAdLiWS]{Szlachcic}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.BmttbXNr3ZwydNUo",
             "careergroup": "Szlachcic",
-            "class": "Dworzanin",
+            "class": "Dworzanie",
             "skills": [
                 "Przekupstwo",
                 "Mocna Głowa",
@@ -1940,9 +1940,9 @@
                 "Czytanie/Pisanie"
             ],
             "trappings": [
-                "Lusterko Ręczne albo Floret",
+                "Dworski strój",
+                "Floret albo lusterko ręczne",
                 "Biżuteria warta 3k10 Złotych Koron",
-                "Dworski Strój",
                 "Osobisty Służący"
             ]
         },
@@ -1952,7 +1952,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.XHYgf5oEwIeCEVNM]{Mieszczka}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.Bn5MHz2G7LJZxtpo",
             "careergroup": "Mieszczka",
-            "class": "Mieszczanin",
+            "class": "Mieszczanie",
             "skills": [
                 "Charyzma",
                 "Wspinaczka",
@@ -1982,19 +1982,19 @@
                 "Charyzmatyczny"
             ],
             "trappings": [
-                "Powóz z Lokajem",
-                "Duża Kamienica z Ogrodami i Służbą",
-                "Sieć Biur",
-                "Dobre Ubranie"
+                "Symbol władzy",
+                "Powóz z lokajem",
+                "Dobre Ubranie",
+                "Duża kamienica z ogrodami i służbą"
             ]
         },
         "Troubadour": {
             "id": "bNwRfl5P64gXgZON",
-            "name": "Trubadur",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.5nIDu8oyFVShLqne]{Kuglarz}</p>",
+            "name": "Trubadurka",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.5nIDu8oyFVShLqne]{Kuglarka}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.bNwRfl5P64gXgZON",
-            "careergroup": "Kuglarz",
-            "class": "Wędrowiec",
+            "careergroup": "Kuglarka",
+            "class": "Wędrowcy",
             "skills": [
                 "Atletyka",
                 "Charyzma",
@@ -2012,7 +2012,7 @@
                 "Broń Zasięgowa (Miotana)",
                 "Opieka nad Zwierzętami",
                 "Tresura (Dowolna)",
-                "Sztuka (Piśmiennictwo)",
+                "Sztuka (Pisarstwo)",
                 "Język (Dowolny)"
             ],
             "talents": [
@@ -2032,7 +2032,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.VzMDRJtha7epNzuX]{Paser}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.bO6PkXjLPKCwK4QC",
             "careergroup": "Paser",
-            "class": "Łotr",
+            "class": "Łotry",
             "skills": [
                 "Charyzma",
                 "Mocna Głowa",
@@ -2047,7 +2047,7 @@
                 "Intuicja",
                 "Percepcja",
                 "Sekretne Znaki (Złodziei)",
-                "Rzemiosło (Rytownictwo)",
+                "Rzemiosło (Grawerstwo)",
                 "Przekupstwo",
                 "Występy (Gawędziarstwo)",
                 "Wiedza (Sztuka)",
@@ -2062,9 +2062,9 @@
                 "Łapówkarz"
             ],
             "trappings": [
-                "Magazyn",
-                "Wynajęty Mięśniak",
-                "Sieć Informatorów"
+                "Wynajęty mięśniak",
+                "sieć Informatorów",
+                "Magazyn"
             ]
         },
         "Wizard Lord": {
@@ -2073,7 +2073,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.PKm1L6yjZ4PH0JJG]{Czarodziej}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.bTPBxrayfzeVmGsh",
             "careergroup": "Czarodziej",
-            "class": "Uczony",
+            "class": "Uczeni",
             "skills": [
                 "Splatanie Magii (Dowolne)",
                 "Unik",
@@ -2088,7 +2088,7 @@
                 "Plotkowanie",
                 "Zastraszanie",
                 "Język (Bitewny)",
-                "Język ()",
+                "Język (Dowolny)",
                 "Opieka nad Zwierzętami",
                 "Wycena",
                 "Wiedza (Sztuka Wojenna)",
@@ -2111,10 +2111,10 @@
         "Doktor": {
             "id": "bVzgXlt8eRGyXLLC",
             "name": "Doktor",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Mn7w0SSGfN7cu7gQ]{Lekarz}</p>",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Mn7w0SSGfN7cu7gQ]{Medyczka}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.bVzgXlt8eRGyXLLC",
-            "careergroup": "Lekarz",
-            "class": "Uczony",
+            "careergroup": "Medyczka",
+            "class": "Uczeni",
             "skills": [
                 "Przekupstwo",
                 "Opanowanie",
@@ -2136,10 +2136,10 @@
                 "Badania Naukowe"
             ],
             "talents": [
-                "Błyskotliwość",
                 "Etykieta (Uczeni)",
-                "Morderczy Atak",
-                "Odporny na (Choroby)"
+                "Odporny na (Choroby)",
+                "Błyskotliwość",
+                "Morderczy Atak"
             ],
             "trappings": [
                 "Uczeń",
@@ -2152,7 +2152,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.c8JYF7Lvaaezt9RS]{Flisak}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.c6OwfEq0g8FcpxxC",
             "careergroup": "Flisak",
-            "class": "Wodniak",
+            "class": "Wodniacy",
             "skills": [
                 "Atletyka",
                 "Mocna Głowa",
@@ -2166,12 +2166,12 @@
             "talents": [
                 "Rybak",
                 "Towarzyski",
-                "Doświadczony Wędrowiec (Mokradła)",
+                "Doświadczony Wędrowiec (Bagna)",
                 "Świetny Pływak"
             ],
             "trappings": [
-                "Wędka z Przynętą",
                 "Wiadro",
+                "Wędka z przynętą",
                 "Skórzane Nogawice"
             ]
         },
@@ -2181,7 +2181,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.N02cjJdNWPdc4PUS]{Strażnik}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.C8pqV1AJgqS6vUd6",
             "careergroup": "Strażnik",
-            "class": "Mieszczanin",
+            "class": "Mieszczanie",
             "skills": [
                 "Atletyka",
                 "Wspinaczka",
@@ -2210,7 +2210,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ssJHG82vEHHRoAUF]{Szpieg}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.cd8BJlDQUF1xoiSm",
             "careergroup": "Szpieg",
-            "class": "Dworzanin",
+            "class": "Dworzanie",
             "skills": [
                 "Przekupstwo",
                 "Charyzma",
@@ -2227,7 +2227,7 @@
                 "Sekretne Znaki (Dowolne)",
                 "Zwinne Palce",
                 "Opieka nad Zwierzętami",
-                "Tresura (Gołębie)",
+                "Tresura (Gołąb)",
                 "Język (Dowolny)",
                 "Dowodzenie",
                 "Wiedza (Dowolna)",
@@ -2241,7 +2241,9 @@
             ],
             "trappings": [
                 "Kantor z Pracownikami",
-                "Duża Szpiegowska Sieć Agentów, Szpiegów i Informatorów"
+                "Duża Szpiegowska Sieć Agentów",
+                "Szpiegów",
+                "i Informatorów"
             ]
         },
         "Foreman": {
@@ -2250,7 +2252,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.KslqDlYmY4trmf6S]{Doker}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.CJDvhhZbQ0UxxZKc",
             "careergroup": "Doker",
-            "class": "Wodniak",
+            "class": "Wodniacy",
             "skills": [
                 "Atletyka",
                 "Wspinaczka",
@@ -2285,10 +2287,10 @@
         "Wyrd": {
             "id": "CNoXG2ZZUudm8paf",
             "name": "Wiedźma",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.7lNzR0hDPl98NrcX]{Czarownik}</p>",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.7lNzR0hDPl98NrcX]{Czarownica}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.CNoXG2ZZUudm8paf",
-            "careergroup": "Czarownik",
-            "class": "Łotr",
+            "careergroup": "Czarownica",
+            "class": "Łotry",
             "skills": [
                 "Splatanie Magii",
                 "Opanowanie",
@@ -2316,9 +2318,9 @@
                 "Wykrywanie Magii"
             ],
             "trappings": [
-                "Amulety na Szczęście",
+                "Plecak",
                 "Płaszcz z Kilkoma Kieszeniami",
-                "Plecak"
+                "Amulety na szczęście"
             ]
         },
         "Riverwarden": {
@@ -2327,7 +2329,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ADHp81MC8050ngjm]{Strażnik Rzeczny}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.CXSKOpjA7a2kqWSq",
             "careergroup": "Strażnik Rzeczny",
-            "class": "Wodniak",
+            "class": "Wodniacy",
             "skills": [
                 "Atletyka",
                 "Unik",
@@ -2341,7 +2343,7 @@
                 "Charyzma",
                 "Zastraszanie",
                 "Plotkowanie",
-                "Wiedza (Rzeki)",
+                "Wiedza (Szlaki Rzeczne)",
                 "Broń Zasięgowa (Prochowa)"
             ],
             "talents": [
@@ -2351,9 +2353,9 @@
                 "Obieżyświat"
             ],
             "trappings": [
-                "Tarcza",
-                "Latarnia z Oliwą",
-                "Pistolet z 10 Nabojami"
+                "Latarnia z oliwą",
+                "Pistolet z 10 nabojami",
+                "Tarcza"
             ]
         },
         "Lawyer": {
@@ -2362,7 +2364,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.uIKbkjQpNUCGIQRv]{Prawniczka}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.cxwio1lR9eZdrQiy",
             "careergroup": "Prawniczka",
-            "class": "Uczony",
+            "class": "Uczeni",
             "skills": [
                 "Mocna Głowa",
                 "Odporność",
@@ -2382,27 +2384,27 @@
             "talents": [
                 "Przekonujący",
                 "Przestępca",
-                "Etykieta (Gildia)",
+                "Etykieta (Członkowie Gildii)",
                 "Charyzmatyczny"
             ],
             "trappings": [
-                "Licencja Gildii",
-                "Zestaw do pisania",
-                "Szaty Dworskie"
+                "Szaty dworskie",
+                "licencja Gildii",
+                "Zestaw do pisania"
             ]
         },
         "Hunter": {
             "id": "CZByQsYSeVyCVbzO",
-            "name": "Łowca",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Łowca}</p>",
+            "name": "Łowczyni",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Łowczyni}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.CZByQsYSeVyCVbzO",
-            "careergroup": "Łowca",
+            "careergroup": "Łowczyni",
             "class": "Pospólstwo",
             "skills": [
                 "Oswajanie",
                 "Wspinaczka",
                 "Odporność",
-                "Wiedza (Bestie)",
+                "Wiedza (Zwierzęta)",
                 "Sztuka Przetrwania",
                 "Percepcja",
                 "Broń Zasięgowa (Proca)",
@@ -2410,8 +2412,8 @@
                 "Opanowanie",
                 "Intuicja",
                 "Broń Biała (Podstawowa)",
-                "Broń Zasięgowa (Łuki)",
-                "Sekretne Znaki (Łowcy)",
+                "Broń Zasięgowa (Łuk)",
+                "Sekretne Znaki (Łowców)",
                 "Skradanie (Wieś)"
             ],
             "talents": [
@@ -2421,16 +2423,16 @@
                 "Strzelec Wyborowy"
             ],
             "trappings": [
-                "Łuk"
+                "Łuk z 10 strzałami"
             ]
         },
         "Giant Slayer": {
             "id": "d0uT5dtFmIbkbJ7l",
-            "name": "Zabójca Gigantów",
+            "name": "Zabójca Olbrzymów",
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.5leTOZ6Wj35bS1IV]{Zabójca}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.d0uT5dtFmIbkbJ7l",
             "careergroup": "Zabójca",
-            "class": "Wojownik",
+            "class": "Wojownicy",
             "skills": [
                 "Mocna Głowa",
                 "Opanowanie",
@@ -2454,9 +2456,9 @@
                 "Odwrócenie Szans"
             ],
             "trappings": [
-                "Głowa Trola",
-                "Wielki topór",
-                "Biżuteria"
+                "Wielki topor",
+                "Biżuteria",
+                "Głowa trolla"
             ]
         },
         "Guide": {
@@ -2480,22 +2482,22 @@
                 "Wyczucie Kierunku",
                 "Włóczykij",
                 "Czujny",
-                "Doświadczony Wędrowiec (Dowolny)"
+                "Doświadczony Wędrowiec (Dowolny Teren)"
             ],
             "trappings": [
                 "Broń ręczna",
-                "Mocne Buty i Płaszcz",
                 "Skórzana kurta",
+                "Mocne buty i płaszcz",
                 "Lina"
             ]
         },
         "Troupe Leader": {
             "id": "dNd0JKvUqjP3kiuy",
-            "name": "Przywódca Trupy",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.5nIDu8oyFVShLqne]{Kuglarz}</p>",
+            "name": "Przywódczyni Trupy",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.5nIDu8oyFVShLqne]{Kuglarka}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.dNd0JKvUqjP3kiuy",
-            "careergroup": "Kuglarz",
-            "class": "Wędrowiec",
+            "careergroup": "Kuglarka",
+            "class": "Wędrowcy",
             "skills": [
                 "Atletyka",
                 "Charyzma",
@@ -2513,14 +2515,14 @@
                 "Broń Zasięgowa (Miotana)",
                 "Opieka nad Zwierzętami",
                 "Tresura (Dowolna)",
-                "Sztuka (Piśmiennictwo)",
+                "Sztuka (Pisarstwo)",
                 "Język (Dowolny)",
                 "Powożenie",
                 "Dowodzenie"
             ],
             "talents": [
                 "Żyłka Handlowa",
-                "Etykieta (Dowolna)",
+                "Etykieta (Dowolna Grupa)",
                 "Obieżyświat",
                 "Czujny"
             ],
@@ -2536,7 +2538,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.3r4A1DOiF3laRWvq]{Zwadźca}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.DWAc2CYtbwx7zMwl",
             "careergroup": "Zwadźca",
-            "class": "Dworzanin",
+            "class": "Dworzanie",
             "skills": [
                 "Atletyka",
                 "Unik",
@@ -2576,7 +2578,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.0t9wtjQIoOofh8nO]{Poseł}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.E3z0o7AJ8cAFYKda",
             "careergroup": "Poseł",
-            "class": "Dworzanin",
+            "class": "Dworzanie",
             "skills": [
                 "Atletyka",
                 "Charyzma",
@@ -2586,7 +2588,7 @@
                 "Intuicja",
                 "Jeździectwo (Konie)",
                 "Wioślarstwo",
-                "Sztuka (Piśmiennictwo)",
+                "Sztuka (Pisarstwo)",
                 "Przekupstwo",
                 "Opanowanie",
                 "Plotkowanie",
@@ -2596,7 +2598,7 @@
             "talents": [
                 "Atrakcyjny",
                 "Gładkie Słówka",
-                "Etykieta (Dowolna)",
+                "Etykieta (Dowolna Grupa)",
                 "Obieżyświat"
             ],
             "trappings": [
@@ -2638,9 +2640,9 @@
                 "Błyskotliwość"
             ],
             "trappings": [
-                "3 Kataplazmy Lecznicze",
+                "Zbieracz ziół",
+                "3 kataplazmy lecznicze",
                 "Mikstura lecznicza",
-                "Zbieracz Ziół",
                 "Warsztat (Zielarza)"
             ]
         },
@@ -2650,7 +2652,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.h7GdfctKdjWL0Ejp]{Kupiec}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.eFMNueIi3zp6vs6e",
             "careergroup": "Kupiec",
-            "class": "Mieszczanin",
+            "class": "Mieszczanie",
             "skills": [
                 "Opieka nad Zwierzętami",
                 "Przekupstwo",
@@ -2670,12 +2672,12 @@
             "talents": [
                 "Łapówkarz",
                 "Defraudant",
-                "Etykieta (Gildia)",
+                "Etykieta (Członkowie Gildii)",
                 "Błyskotliwość"
             ],
             "trappings": [
                 "Łódź Rzeczna albo 2 Wozy",
-                "Licencja Cechu",
+                "Licencja Gildii",
                 "20 Złotych Koron"
             ]
         },
@@ -2685,7 +2687,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.bDoNOzzUiMdKqpps]{Hiena Cmentarna}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.eI3ibXzGlozn6GqV",
             "careergroup": "Hiena Cmentarna",
-            "class": "Łotr",
+            "class": "Łotry",
             "skills": [
                 "Wspinaczka",
                 "Opanowanie",
@@ -2709,8 +2711,8 @@
                 "Bardzo Silny"
             ],
             "trappings": [
-                "Broń ręczna",
                 "Plecak",
+                "Broń ręczna",
                 "Szpadel",
                 "Lampa Sztormowa z Oliwą"
             ]
@@ -2721,7 +2723,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.5leTOZ6Wj35bS1IV]{Zabójca}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.eIPqpYlN3H3CVCe4",
             "careergroup": "Zabójca",
-            "class": "Wojownik",
+            "class": "Wojownicy",
             "skills": [
                 "Mocna Głowa",
                 "Opanowanie",
@@ -2760,7 +2762,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.L3YNSsFKnqrqcmTn]{Rycerz}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.Esy17RVOZQw2gShT",
             "careergroup": "Rycerz",
-            "class": "Wojownik",
+            "class": "Wojownicy",
             "skills": [
                 "Atletyka",
                 "Opieka nad Zwierzętami",
@@ -2769,7 +2771,7 @@
                 "Wiedza (Heraldyka)",
                 "Broń Biała (Kawaleryjska)",
                 "Jeździectwo (Konie)",
-                "Rzemiosło (Kowalstwo)",
+                "Rzemiosło (Podkuwanie Koni)",
                 "Opanowanie",
                 "Unik",
                 "Odporność",
@@ -2781,7 +2783,7 @@
                 "Dowodzenie",
                 "Wiedza (Sztuka Wojenna)",
                 "Wiedza (Dowolna)",
-                "Sekretne Znaki (Rycerze Zakonni)"
+                "Sekretne Znaki (Zakonu Rycerskiego)"
             ],
             "talents": [
                 "Rozbrojenie",
@@ -2790,9 +2792,9 @@
                 "Morderczy Atak"
             ],
             "trappings": [
+                "Pełny hełm z pióropuszem",
                 "Giermek",
-                "Duży Oddział lub Kilka Małych Oddziałów Rycerzy",
-                "Pełny Hełm z Pióropuszem"
+                "duży oddział lub kilka małych oddziałów Rycerzy"
             ]
         },
         "Warden": {
@@ -2801,7 +2803,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.wbqpqbFoSnvoZ53j]{Namiestnik}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.ET4PZxqQ4RyBBWgN",
             "careergroup": "Namiestnik",
-            "class": "Dworzanin",
+            "class": "Dworzanie",
             "skills": [
                 "Atletyka",
                 "Oswajanie",
@@ -2814,14 +2816,14 @@
                 "Opieka nad Zwierzętami",
                 "Broń Biała (Podstawowa)",
                 "Sztuka Przetrwania",
-                "Broń Zasięgowa (Łuki)",
+                "Broń Zasięgowa (Łuk)",
                 "Jeździectwo (Konie)",
                 "Pływanie"
             ],
             "talents": [
                 "Posłuch u Zwierząt",
-                "Etykieta (Służący)",
-                "Doświadczony Wędrowiec (Dowolny)",
+                "Etykieta (Słudzy)",
+                "Doświadczony Wędrowiec (Dowolny Teren)",
                 "Włóczykij"
             ],
             "trappings": [
@@ -2833,10 +2835,10 @@
         "Vagabond": {
             "id": "eyKlEVLcSOvemRzp",
             "name": "Powsinoga",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.FdlybSv02jjXG1qW]{Kolporter}</p>",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.FdlybSv02jjXG1qW]{Domokrążca}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.eyKlEVLcSOvemRzp",
-            "careergroup": "Kolporter",
-            "class": "Wędrowiec",
+            "careergroup": "Domokrążca",
+            "class": "Wędrowcy",
             "skills": [
                 "Charyzma",
                 "Odporność",
@@ -2855,8 +2857,8 @@
             ],
             "trappings": [
                 "Plecak",
-                "Towary warte 2k10 Brązowych Monet",
                 "Zwijane posłanie",
+                "Towary warte 2k10 Brązowych Monet",
                 "Namiot"
             ]
         },
@@ -2866,7 +2868,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.9XoJinyH6CsOcJ1h]{Posłaniec}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.F6Q1mrBHZvKzHDkT",
             "careergroup": "Posłaniec",
-            "class": "Wędrowiec",
+            "class": "Wędrowcy",
             "skills": [
                 "Atletyka",
                 "Wspinaczka",
@@ -2891,8 +2893,8 @@
             ],
             "trappings": [
                 "Broń ręczna",
-                "Koń Wierzchowy z Rzędem",
-                "Skórzana kurta"
+                "Skórzana kurta",
+                "Koń wierzchowy z rzędem"
             ]
         },
         "Inquisitor": {
@@ -2901,7 +2903,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ADYQOtpsk5n1EHen]{Łowca Czarownic}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.FA6vYposVbL3caNR",
             "careergroup": "Łowca Czarownic",
-            "class": "Wędrowiec",
+            "class": "Wędrowcy",
             "skills": [
                 "Charyzma",
                 "Mocna Głowa",
@@ -2914,7 +2916,7 @@
                 "Opanowanie",
                 "Broń Biała (Podstawowa)",
                 "Plotkowanie",
-                "Wiedza (Wiedźmy)",
+                "Wiedza (Czarownice)",
                 "Broń Zasięgowa (Dowolna)",
                 "Jeździectwo (Konie)",
                 "Odporność",
@@ -2923,14 +2925,14 @@
                 "Wiedza (Lokalna)"
             ],
             "talents": [
-                "Nieustraszony (Wiedźmy)",
+                "Nieustraszony (Czarownice)",
                 "Nos do Kłopotów",
                 "Nieustępliwy",
                 "Odporność Psychiczna"
             ],
             "trappings": [
-                "Podwładni Oprawcy",
-                "Ubranie Dobrej Jakości"
+                "Ubranie dobrej jakości",
+                "podwładni Oprawcy"
             ]
         },
         "Hedgewise": {
@@ -2945,7 +2947,7 @@
                 "Odporność",
                 "Intuicja",
                 "Język (Magiczny)",
-                "Wiedza (Folklor)",
+                "Wiedza (Ludowa)",
                 "Wiedza (Zioła)",
                 "Sztuka Przetrwania",
                 "Percepcja",
@@ -2969,8 +2971,8 @@
                 "Odporność Psychiczna"
             ],
             "trappings": [
-                "Ceremonialny Płaszcz z Wiankiem",
-                "Zbiór Zwierzęcych Czaszek"
+                "zbiór zwierzęcych czaszek",
+                "Ceremonialny Płaszcz z Wiankiem"
             ]
         },
         "Tomb Robber": {
@@ -2979,7 +2981,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.bDoNOzzUiMdKqpps]{Hiena Cmentarna}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.FaAdpduKD4aUWAOg",
             "careergroup": "Hiena Cmentarna",
-            "class": "Łotr",
+            "class": "Łotry",
             "skills": [
                 "Wspinaczka",
                 "Opanowanie",
@@ -3004,14 +3006,14 @@
                 "Czytanie/Pisanie",
                 "Silny Cios",
                 "Wytrwały",
-                "Szczur Tunelowy"
+                "Szczur Kanałowy"
             ],
             "trappings": [
                 "Broń ręczna (Kilof)",
                 "Wóz z Koniem",
                 "Skórzana kurta",
-                "Narzędzia Pracy (Złodziei)",
-                "Lina"
+                "Lina",
+                "Narzędzia pracy (Złodziei)"
             ]
         },
         "Interrogator": {
@@ -3020,7 +3022,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ADYQOtpsk5n1EHen]{Łowca Czarownic}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.FbtA6PFHSH6iWaZk",
             "careergroup": "Łowca Czarownic",
-            "class": "Wędrowiec",
+            "class": "Wędrowcy",
             "skills": [
                 "Charyzma",
                 "Mocna Głowa",
@@ -3048,7 +3050,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.1OTZ386bMWJ6wfzX]{Żołnierz}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.FgVH1pPS9oRq0o2Z",
             "careergroup": "Żołnierz",
-            "class": "Wojownik",
+            "class": "Wojownicy",
             "skills": [
                 "Atletyka",
                 "Wspinaczka",
@@ -3072,9 +3074,9 @@
                 "Tarczownik"
             ],
             "trappings": [
-                "Broń (Dowolna)",
-                "Napierśnik Płytowy",
-                "Hełm"
+                "Napierśnik",
+                "Hełm",
+                "Broń (Dowolna)"
             ]
         },
         "Sewer Jack": {
@@ -3083,7 +3085,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.mKvUxzJyQmhgjDE0]{Szczurołap}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.fGwpty6AE9ZmRs9B",
             "careergroup": "Szczurołap",
-            "class": "Mieszczanin",
+            "class": "Mieszczanie",
             "skills": [
                 "Atletyka",
                 "Tresura (Psy)",
@@ -3108,12 +3110,12 @@
                 "Twardziel",
                 "Waleczne Serce",
                 "Silne Nogi",
-                "Szczur Tunelowy"
+                "Szczur Kanałowy"
             ],
             "trappings": [
+                "Lampa Davricha",
                 "Broń ręczna",
-                "Skórzana kurta",
-                "Lampa Davricha"
+                "Skórzana kurta"
             ]
         },
         "Knight": {
@@ -3122,7 +3124,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.L3YNSsFKnqrqcmTn]{Rycerz}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.FhK6JOd3LSTlHwoa",
             "careergroup": "Rycerz",
-            "class": "Wojownik",
+            "class": "Wojownicy",
             "skills": [
                 "Atletyka",
                 "Opieka nad Zwierzętami",
@@ -3131,7 +3133,7 @@
                 "Wiedza (Heraldyka)",
                 "Broń Biała (Kawaleryjska)",
                 "Jeździectwo (Konie)",
-                "Rzemiosło (Kowalstwo)",
+                "Rzemiosło (Podkuwanie Koni)",
                 "Opanowanie",
                 "Unik",
                 "Odporność",
@@ -3146,10 +3148,10 @@
                 "Silny Cios"
             ],
             "trappings": [
-                "Broń Biała (Dowolna)",
-                "Zbroja Płytowa z Hełmem",
-                "Rumak z Siodłem i Uprzężą",
-                "Kopia"
+                "Rumak z siodłem i uprzężą",
+                "Broń biała (dowolna)",
+                "Kopia",
+                "Zbroja płytowa z hełmem"
             ]
         },
         "Detective": {
@@ -3158,7 +3160,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.zLWmjUbUdAOfiV3F]{Śledczy}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.fiHq2JGODlbQRdKh",
             "careergroup": "Śledczy",
-            "class": "Mieszczanin",
+            "class": "Mieszczanie",
             "skills": [
                 "Charyzma",
                 "Wspinaczka",
@@ -3177,19 +3179,19 @@
                 "Przekupstwo",
                 "Wycena",
                 "Dowodzenie",
-                "Wiedza ()",
+                "Wiedza (Dowolna)",
                 "Zastraszanie",
-                "Wiedza ()"
+                "Wiedza (Dowolna)"
             ],
             "talents": [
                 "Wyczulony Zmysł (Dowolny)",
-                "Znawca (Dowolny)",
+                "Znawca (Dowolna Dziedzina)",
                 "Szybkie Czytanie",
                 "Wieża Pamięci"
             ],
             "trappings": [
-                "Luneta",
-                "Sieć Informatorów"
+                "sieć Informatorów",
+                "Luneta"
             ]
         },
         "Witch Hunter": {
@@ -3198,7 +3200,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ADYQOtpsk5n1EHen]{Łowca Czarownic}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.fixdd2ulR5HUyeoi",
             "careergroup": "Łowca Czarownic",
-            "class": "Wędrowiec",
+            "class": "Wędrowcy",
             "skills": [
                 "Charyzma",
                 "Mocna Głowa",
@@ -3211,7 +3213,7 @@
                 "Opanowanie",
                 "Broń Biała (Podstawowa)",
                 "Plotkowanie",
-                "Wiedza (Wiedźmy)",
+                "Wiedza (Czarownice)",
                 "Broń Zasięgowa (Dowolna)",
                 "Jeździectwo (Konie)"
             ],
@@ -3222,12 +3224,12 @@
                 "Cień"
             ],
             "trappings": [
-                "Koń Wierzchowy z Rzędem",
+                "Kusza pistoletowa albo pistolet",
+                "Kapelusz (kornet)",
                 "Skórzana kurta",
-                "Posrebrzany Miecz",
-                "Kusza Pistoletowa albo Pistolet",
+                "Koń wierzchowy z rzędem",
                 "Lina",
-                "Kapelusz (Kornet)"
+                "Posrebrzany miecz"
             ]
         },
         "Bawd": {
@@ -3236,7 +3238,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.WmXiUhsOHIJia8OM]{Rajfur}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.FLdR3uEEdQxkZiaP",
             "careergroup": "Rajfur",
-            "class": "Łotr",
+            "class": "Łotry",
             "skills": [
                 "Przekupstwo",
                 "Charyzma",
@@ -3270,7 +3272,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ADHp81MC8050ngjm]{Strażnik Rzeczny}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.FOGWbyemEGAkK746",
             "careergroup": "Strażnik Rzeczny",
-            "class": "Wodniak",
+            "class": "Wodniacy",
             "skills": [
                 "Atletyka",
                 "Unik",
@@ -3284,7 +3286,7 @@
                 "Charyzma",
                 "Zastraszanie",
                 "Plotkowanie",
-                "Wiedza (Rzeki)",
+                "Wiedza (Szlaki Rzeczne)",
                 "Broń Zasięgowa (Prochowa)",
                 "Wspinaczka",
                 "Opanowanie",
@@ -3292,15 +3294,15 @@
                 "Dowodzenie"
             ],
             "talents": [
-                "Nieustraszony (Wraki)",
-                "Nienawiść (Dowolny)",
+                "Nieustraszony (Piraci Rzeczni)",
+                "Nienawiść (Dowolne)",
                 "Pilot",
                 "Urodzony Żeglarz"
             ],
             "trappings": [
                 "Kotwiczka",
-                "Kaftan kolczy",
-                "Hełm"
+                "Hełm",
+                "Kaftan kolczy"
             ]
         },
         "Squire": {
@@ -3309,7 +3311,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.L3YNSsFKnqrqcmTn]{Rycerz}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.FrPCbQ7fq1Fchthn",
             "careergroup": "Rycerz",
-            "class": "Wojownik",
+            "class": "Wojownicy",
             "skills": [
                 "Atletyka",
                 "Opieka nad Zwierzętami",
@@ -3318,29 +3320,29 @@
                 "Wiedza (Heraldyka)",
                 "Broń Biała (Kawaleryjska)",
                 "Jeździectwo (Konie)",
-                "Rzemiosło (Kowalstwo)"
+                "Rzemiosło (Podkuwanie Koni)"
             ],
             "talents": [
-                "Etykieta (Dowolny)",
+                "Etykieta (Dowolna Grupa)",
                 "Urodzony w Siodle",
                 "Tragarz",
                 "Urodzony Wojownik"
             ],
             "trappings": [
-                "Koń Wierzchowy z Rzędem",
-                "Kaftan kolczy",
                 "Skórzana kurta",
+                "Kaftan kolczy",
+                "Koń wierzchowy z rzędem",
                 "Tarcza",
                 "Narzędzia Pracy (Podkuwanie Koni)"
             ]
         },
         "Road Warden": {
             "id": "fyeFolXwsxNfU30b",
-            "name": "Strażnik Dróg",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.dN2K3ZBMu4rvGGpW]{Strażnik Dróg}</p>",
+            "name": "Strażniczka Dróg",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.dN2K3ZBMu4rvGGpW]{Strażniczka Dróg}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.fyeFolXwsxNfU30b",
-            "careergroup": "Strażnik Dróg",
-            "class": "Wędrowiec",
+            "careergroup": "Strażniczka Dróg",
+            "class": "Wędrowcy",
             "skills": [
                 "Przekupstwo",
                 "Mocna Głowa",
@@ -3349,7 +3351,7 @@
                 "Targowanie",
                 "Broń Biała (Podstawowa)",
                 "Percepcja",
-                "Broń Zasięgowa (Kusze)",
+                "Broń Zasięgowa (Kusza)",
                 "Opieka nad Zwierzętami",
                 "Odporność",
                 "Zastraszanie",
@@ -3365,8 +3367,8 @@
             ],
             "trappings": [
                 "Broń ręczna",
-                "Koń Wierzchowy z Rzędem",
                 "Kaftan kolczy",
+                "Koń Wierzchowy z Rzędem",
                 "Lina"
             ]
         },
@@ -3376,7 +3378,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.SrqxyWytyki4WYgC]{Banita}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.g2vYtD3Mu7ujYTVF",
             "careergroup": "Banita",
-            "class": "Łotr",
+            "class": "Łotry",
             "skills": [
                 "Atletyka",
                 "Mocna Głowa",
@@ -3390,7 +3392,7 @@
                 "Leczenie",
                 "Wiedza (Lokalna)",
                 "Percepcja",
-                "Broń Zasięgowa (Łuki)",
+                "Broń Zasięgowa (Łuk)",
                 "Skradanie (Wieś)",
                 "Plotkowanie",
                 "Intuicja",
@@ -3416,7 +3418,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.tvJAKXB7R0EOr4oE]{Woźnica}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.G6o2q7tPhw4sgdOY",
             "careergroup": "Woźnica",
-            "class": "Wędrowiec",
+            "class": "Wędrowcy",
             "skills": [
                 "Opieka nad Zwierzętami",
                 "Oswajanie",
@@ -3456,7 +3458,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.tvJAKXB7R0EOr4oE]{Woźnica}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.g7Sts6Gzrcg4oDDI",
             "careergroup": "Woźnica",
-            "class": "Wędrowiec",
+            "class": "Wędrowcy",
             "skills": [
                 "Opieka nad Zwierzętami",
                 "Oswajanie",
@@ -3480,13 +3482,13 @@
             "talents": [
                 "Celny Strzał",
                 "Żyłka Handlowa",
-                "Nieustraszony (Wyjęci spod Prawa)",
+                "Nieustraszony (Banici)",
                 "Nos do Kłopotów"
             ],
             "trappings": [
                 "Kaftan kolczy",
-                "Dobry Płaszcz",
-                "Pistolet"
+                "Pistolet",
+                "Dobry płaszcz"
             ]
         },
         "Counsellor": {
@@ -3495,7 +3497,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.pwth0cd20Vdp0B9G]{Doradca}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.G9PT2bovEv02sVJJ",
             "careergroup": "Doradca",
-            "class": "Dworzanin",
+            "class": "Dworzanie",
             "skills": [
                 "Przekupstwo",
                 "Mocna Głowa",
@@ -3523,16 +3525,16 @@
                 "Gładkie Słówka"
             ],
             "trappings": [
-                "Asystent",
-                "Dobre Ubranie"
+                "Dobre Ubranie",
+                "Asystent"
             ]
         },
         "Councilor": {
             "id": "gb3Dy4ZgfB7VfBTM",
-            "name": "Gospodarz",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.EYkvtokq0FXlFaPa]{Chłop}</p>",
+            "name": "Gospodyni",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.EYkvtokq0FXlFaPa]{Chłopka}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.gb3Dy4ZgfB7VfBTM",
-            "careergroup": "Chłop",
+            "careergroup": "Chłopka",
             "class": "Pospólstwo",
             "skills": [
                 "Opieka nad Zwierzętami",
@@ -3555,14 +3557,14 @@
                 "Dowodzenie"
             ],
             "talents": [
-                "Wytwórca (Dowolny)",
+                "Wytwórca (Dowolne Rzemiosło)",
                 "Żyłka Handlowa",
                 "Waleczne Serce",
                 "Niezwykle Odporny"
             ],
             "trappings": [
-                "Dom Wiejski z Warsztatem",
-                "Wóz z Mułem"
+                "Wóz z mułem",
+                "Dom Wiejski z Warsztatem"
             ]
         },
         "Riverwoman": {
@@ -3571,7 +3573,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.c8JYF7Lvaaezt9RS]{Flisak}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.gmQjHw6wYJu4gd7b",
             "careergroup": "Flisak",
-            "class": "Wodniak",
+            "class": "Wodniacy",
             "skills": [
                 "Atletyka",
                 "Mocna Głowa",
@@ -3583,7 +3585,7 @@
                 "Pływanie",
                 "Hazard",
                 "Wiedza (Lokalna)",
-                "Wiedza (Rzeki)",
+                "Wiedza (Szlaki Rzeczne)",
                 "Broń Zasięgowa (Oplątująca)",
                 "Broń Zasięgowa (Miotana)",
                 "Zastawianie Pułapek"
@@ -3595,10 +3597,10 @@
                 "Wodniak"
             ],
             "trappings": [
+                "Pułapka na węgorze",
                 "Skórzany kaftan",
-                "Włócznia",
                 "Sieć",
-                "Pułapka na Węgorze"
+                "Włócznia"
             ]
         },
         "First Knight": {
@@ -3607,7 +3609,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.L3YNSsFKnqrqcmTn]{Rycerz}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.GPhqluMBhCeTnyNJ",
             "careergroup": "Rycerz",
-            "class": "Wojownik",
+            "class": "Wojownicy",
             "skills": [
                 "Atletyka",
                 "Opieka nad Zwierzętami",
@@ -3616,7 +3618,7 @@
                 "Wiedza (Heraldyka)",
                 "Broń Biała (Kawaleryjska)",
                 "Jeździectwo (Konie)",
-                "Rzemiosło (Kowalstwo)",
+                "Rzemiosło (Podkuwanie Koni)",
                 "Opanowanie",
                 "Unik",
                 "Odporność",
@@ -3645,7 +3647,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.tvJAKXB7R0EOr4oE]{Woźnica}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.GPruqXhcAaHQYucf",
             "careergroup": "Woźnica",
-            "class": "Wędrowiec",
+            "class": "Wędrowcy",
             "skills": [
                 "Opieka nad Zwierzętami",
                 "Oswajanie",
@@ -3673,7 +3675,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.HndWncfaHb0nzNUq]{Ochroniarz}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.gTxHixydLdCoWRmj",
             "careergroup": "Ochroniarz",
-            "class": "Wojownik",
+            "class": "Wojownicy",
             "skills": [
                 "Mocna Głowa",
                 "Odporność",
@@ -3686,14 +3688,14 @@
             ],
             "talents": [
                 "Szuler Kościany",
-                "Etykieta (Służący)",
+                "Etykieta (Słudzy)",
                 "Ogłuszenie",
                 "Wytrwały"
             ],
             "trappings": [
+                "Puklerz",
                 "Skórzany kaftan",
-                "Lampa Sztormowa z Oliwą",
-                "Puklerz"
+                "Lampa Sztormowa z Oliwą"
             ]
         },
         "Town Councilor": {
@@ -3702,7 +3704,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.XHYgf5oEwIeCEVNM]{Mieszczka}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.Gwp6K1rKShTQshqB",
             "careergroup": "Mieszczka",
-            "class": "Mieszczanin",
+            "class": "Mieszczanie",
             "skills": [
                 "Charyzma",
                 "Wspinaczka",
@@ -3740,7 +3742,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.wbqpqbFoSnvoZ53j]{Namiestnik}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.gWvUkc6mXh8LbsR9",
             "careergroup": "Namiestnik",
-            "class": "Dworzanin",
+            "class": "Dworzanie",
             "skills": [
                 "Atletyka",
                 "Oswajanie",
@@ -3753,7 +3755,7 @@
                 "Opieka nad Zwierzętami",
                 "Broń Biała (Podstawowa)",
                 "Sztuka Przetrwania",
-                "Broń Zasięgowa (Łuki)",
+                "Broń Zasięgowa (Łuk)",
                 "Jeździectwo (Konie)",
                 "Pływanie",
                 "Przekupstwo",
@@ -3765,7 +3767,7 @@
             ],
             "talents": [
                 "Władcza Postura",
-                "Etykieta (Dowolna)",
+                "Etykieta (Dowolna Grupa)",
                 "Znawca (Wiedza Lokalna)",
                 "Charyzmatyczny"
             ],
@@ -3781,7 +3783,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.t41abSTLeMAdLiWS]{Szlachcic}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.GYIOEWXugK9Dofg7",
             "careergroup": "Szlachcic",
-            "class": "Dworzanin",
+            "class": "Dworzanie",
             "skills": [
                 "Przekupstwo",
                 "Mocna Głowa",
@@ -3805,26 +3807,26 @@
                 "Charyzmatyczny"
             ],
             "trappings": [
-                "Koń Wierzchowy z Rzędem albo Powóz",
-                "Dobry Płaszcz albo Lewak",
-                "4 Służący Domowi",
-                "Biżuteria Warta 50 Złotych Koron",
-                "Dworski Strój",
-                "Strój Dobrej Jakości"
+                "4 Służący domowi",
+                "Dworski strój dobrej jakości",
+                "Dworski strój",
+                "Koń wierzchowy z rzędem albo powóz",
+                "Dobry płaszcz albo lewak",
+                "Biżuteria warta 50 Złotych Koron"
             ]
         },
         "Huntsmaster": {
             "id": "H9NZXz02SZXca8xp",
-            "name": "Nadworny Łowczy",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Łowca}</p>",
+            "name": "Nadworna Łowczyni",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Łowczyni}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.H9NZXz02SZXca8xp",
-            "careergroup": "Łowca",
+            "careergroup": "Łowczyni",
             "class": "Pospólstwo",
             "skills": [
                 "Oswajanie",
                 "Wspinaczka",
                 "Odporność",
-                "Wiedza (Bestie)",
+                "Wiedza (Zwierzęta)",
                 "Sztuka Przetrwania",
                 "Percepcja",
                 "Broń Zasięgowa (Proca)",
@@ -3832,15 +3834,15 @@
                 "Opanowanie",
                 "Intuicja",
                 "Broń Biała (Podstawowa)",
-                "Broń Zasięgowa (Łuki)",
-                "Sekretne Znaki (Łowcy)",
+                "Broń Zasięgowa (Łuk)",
+                "Sekretne Znaki (Łowców)",
                 "Skradanie (Wieś)",
                 "Nawigacja",
                 "Jeździectwo (Konie)",
                 "Pływanie",
                 "Tropienie",
                 "Opieka nad Zwierzętami",
-                "Tresura ()"
+                "Tresura (Dowolna)"
             ],
             "talents": [
                 "Nieustraszony (Potwory)",
@@ -3859,7 +3861,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.VzMDRJtha7epNzuX]{Paser}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.HN1cbMIPZ25m7ABR",
             "careergroup": "Paser",
-            "class": "Łotr",
+            "class": "Łotry",
             "skills": [
                 "Charyzma",
                 "Mocna Głowa",
@@ -3874,7 +3876,7 @@
                 "Intuicja",
                 "Percepcja",
                 "Sekretne Znaki (Złodziei)",
-                "Rzemiosło (Rytownictwo)",
+                "Rzemiosło (Grawerstwo)",
                 "Przekupstwo",
                 "Występy (Gawędziarstwo)",
                 "Wiedza (Sztuka)",
@@ -3896,7 +3898,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.37EZqecGmYFb0fdW]{Pirat Rzeczny}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.ho9cOHfrG2Zbeb7q",
             "careergroup": "Pirat Rzeczny",
-            "class": "Wodniak",
+            "class": "Wodniacy",
             "skills": [
                 "Wspinaczka",
                 "Mocna Głowa",
@@ -3914,10 +3916,10 @@
                 "Zastawianie Pułapek",
                 "Plotkowanie",
                 "Zastraszanie",
-                "Broń Zasięgowa (Kusze)",
+                "Broń Zasięgowa (Kusza)",
                 "Skradanie (Wieś)",
                 "Dowodzenie",
-                "Wiedza (Rzeki)"
+                "Wiedza (Szlaki Rzeczne)"
             ],
             "talents": [
                 "Wściekły Atak",
@@ -3926,8 +3928,8 @@
                 "Urodzony Wojownik"
             ],
             "trappings": [
-                "Beczułka Piwa",
-                "Flota Łodzi Rzecznych z Załogą Piratów",
+                "Flota łodzi rzecznych z załogą Piratów",
+                "Beczułka piwa",
                 "Kajdany"
             ]
         },
@@ -3937,7 +3939,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Eg5D2UI3U4SAHnuU]{Szarlatan}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.HoIgGN5ORog5dkIl",
             "careergroup": "Szarlatan",
-            "class": "Łotr",
+            "class": "Łotry",
             "skills": [
                 "Przekupstwo",
                 "Mocna Głowa",
@@ -3963,8 +3965,8 @@
             "trappings": [
                 "1 Sfałszowany Dokument",
                 "2 Komplety Ubrań Dobrej Jakości",
-                "Wybór Błyskotek i Amuletów",
-                "Wybór Kolorowych Proszków i Płynów"
+                "Wybór kolorowych proszków i płynów",
+                "Wybór błyskotek i amuletów"
             ]
         },
         "Assassin": {
@@ -3973,12 +3975,12 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.cXOl6phkTrPcUmwC]{Oprych}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.HtN6uHPj7sK6EWMZ",
             "careergroup": "Oprych",
-            "class": "Wojownik",
+            "class": "Wojownicy",
             "skills": [
                 "Atletyka",
                 "Unik",
                 "Odporność",
-                "Występy (Szyderstwo)",
+                "Występy (Szydzenie)",
                 "Plotkowanie",
                 "Targowanie",
                 "Zastraszanie",
@@ -3994,7 +3996,7 @@
                 "Nawigacja",
                 "Broń Zasięgowa (Miotana)",
                 "Występy (Aktorstwo)",
-                "Broń Zasięgowa (Kusze)"
+                "Broń Zasięgowa (Kusza)"
             ],
             "talents": [
                 "Celny Strzał",
@@ -4013,7 +4015,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.t41abSTLeMAdLiWS]{Szlachcic}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.huYKd0sYPnF4ReB0",
             "careergroup": "Szlachcic",
-            "class": "Dworzanin",
+            "class": "Dworzanie",
             "skills": [
                 "Przekupstwo",
                 "Mocna Głowa",
@@ -4043,10 +4045,10 @@
                 "Majętny"
             ],
             "trappings": [
-                "Lusterko Ręczne albo Floret",
-                "Biżuteria Warta 500 Złotych Koron",
-                "4 Komplety Strojów Dworskich Najlepszej Jakości",
+                "4 komplety strojów dworskich najlepszej jakości",
+                "Lusterko ręczne albo floret dobrej jakości",
                 "500 Złotych Koron",
+                "Biżuteria warta 500 Złotych Koron",
                 "Prowincja"
             ]
         },
@@ -4070,7 +4072,7 @@
                 "Mocna Głowa",
                 "Wycena",
                 "Broń Biała (Podstawowa)",
-                "Sekretne Znaki (Górnicy)",
+                "Sekretne Znaki (Górników)",
                 "Rzemiosło (Materiały Wybuchowe)",
                 "Plotkowanie",
                 "Wiedza (Geologia)",
@@ -4081,7 +4083,7 @@
                 "Cios Mierzony",
                 "Wytwórca (Materiały Wybuchowe)",
                 "Złota Rączka",
-                "Szczur Tunelowy"
+                "Szczur Kanałowy"
             ],
             "trappings": [
                 "Wielka Broń (Dwuręczny Kilof)",
@@ -4095,7 +4097,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.WmXiUhsOHIJia8OM]{Rajfur}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.HVa2264i6PF7C8hz",
             "careergroup": "Rajfur",
-            "class": "Łotr",
+            "class": "Łotry",
             "skills": [
                 "Przekupstwo",
                 "Charyzma",
@@ -4122,7 +4124,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.CmiCNv8YlslFqRqy]{Uczony}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.IeHydxYWUYrmEdPy",
             "careergroup": "Uczony",
-            "class": "Uczony",
+            "class": "Uczeni",
             "skills": [
                 "Mocna Głowa",
                 "Występy (Gawędziarstwo)",
@@ -4132,7 +4134,7 @@
                 "Język (Klasyczny)",
                 "Wiedza (Dowolna)",
                 "Badania Naukowe",
-                "Sztuka (Piśmiennictwo)",
+                "Sztuka (Pisarstwo)",
                 "Intuicja",
                 "Język (Dowolny)",
                 "Wiedza (Dowolna)",
@@ -4148,7 +4150,7 @@
             "talents": [
                 "Arcydzieło",
                 "Krasomówstwo",
-                "Znawca (Dowolny)",
+                "Znawca (Dowolna Dziedzina)",
                 "Czujny"
             ],
             "trappings": [
@@ -4161,7 +4163,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.hVKMI3xwuUpO3P6c]{Inżynier}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.ImUesrX52TXQyzvM",
             "careergroup": "Inżynier",
-            "class": "Uczony",
+            "class": "Uczeni",
             "skills": [
                 "Mocna Głowa",
                 "Opanowanie",
@@ -4174,34 +4176,34 @@
                 "Powożenie",
                 "Unik",
                 "Nawigacja",
-                "Broń Zasięgowa (Inżynieryjna)",
+                "Broń Zasięgowa (Eksperymentalna)",
                 "Badania Naukowe",
                 "Język (Gildii)"
             ],
             "talents": [
                 "Wytwórca (Inżynieria)",
-                "Etykieta (Gildia)",
+                "Etykieta (Członkowie Gildii)",
                 "Strzelec Wyborowy",
                 "Wyczucie Kierunku"
             ],
             "trappings": [
-                "Narzędzia Pracy (Inżyniera)",
-                "Licencja Cechu"
+                "Licencja Gildii Inżynierów",
+                "Narzędzia Pracy (Inżyniera)"
             ]
         },
         "Master Pilot": {
             "id": "ISxI2dNkiRQn0P4n",
-            "name": "Legendarny Pilot",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.TkF2ld3b72RlH2AR]{Pilot Rzeczny}</p>",
+            "name": "Legendarna Pilotka",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.TkF2ld3b72RlH2AR]{Pilotka Rzeczna}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.ISxI2dNkiRQn0P4n",
-            "careergroup": "Pilot Rzeczny",
-            "class": "Wodniak",
+            "careergroup": "Pilotka Rzeczna",
+            "class": "Wodniacy",
             "skills": [
                 "Mocna Głowa",
                 "Plotkowanie",
                 "Intuicja",
                 "Wiedza (Lokalna)",
-                "Wiedza (Rzeki)",
+                "Wiedza (Szlaki Rzeczne)",
                 "Percepcja",
                 "Wioślarstwo",
                 "Pływanie",
@@ -4225,8 +4227,8 @@
                 "Wytrwały"
             ],
             "trappings": [
-                "Mała Łódź Rzeczna",
-                "Chłopiec Pokładowy"
+                "Chłopiec pokładowy",
+                "Mała łódź rzeczna"
             ]
         },
         "Demagogue": {
@@ -4235,9 +4237,9 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.X6OBFMR8ywipAPOo]{Agitator}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.iW9bvaUXQ4QsZ3Re",
             "careergroup": "Agitator",
-            "class": "Mieszczanin",
+            "class": "Mieszczanie",
             "skills": [
-                "Sztuka (Piśmiennictwo)",
+                "Sztuka (Pisarstwo)",
                 "Przekupstwo",
                 "Charyzma",
                 "Mocna Głowa",
@@ -4259,25 +4261,25 @@
                 "Jeździectwo (Konie)"
             ],
             "talents": [
-                "Etykieta (Dowolna)",
+                "Etykieta (Dowolna Grupa)",
                 "Krasomówstwo",
                 "Intrygant",
                 "Charyzmatyczny"
             ],
             "trappings": [
-                "Prasa Drukarska",
-                "Patron",
                 "3 Pamflecistów",
+                "Patron",
+                "Prasa drukarska",
                 "Imponujący Kapelusz"
             ]
         },
         "Bounty Hunter": {
             "id": "J02PRoX8q5e0cDv6",
-            "name": "Łowca Nagród",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{Łowca Nagród}</p>",
+            "name": "Łowczyni Nagród",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.orZTfdJCm6OnUktl]{Łowczyni Nagród}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.J02PRoX8q5e0cDv6",
-            "careergroup": "Łowca Nagród",
-            "class": "Wędrowiec",
+            "careergroup": "Łowczyni Nagród",
+            "class": "Wędrowcy",
             "skills": [
                 "Przekupstwo",
                 "Charyzma",
@@ -4290,7 +4292,7 @@
                 "Atletyka",
                 "Odporność",
                 "Zastraszanie",
-                "Broń Zasięgowa (Kusze)",
+                "Broń Zasięgowa (Kusza)",
                 "Broń Zasięgowa (Oplątująca)",
                 "Tropienie"
             ],
@@ -4304,8 +4306,8 @@
                 "Kusza i 10 Bełtów",
                 "Skórzany Hełm",
                 "Kajdany",
-                "Glejty",
-                "Sieć"
+                "Sieć",
+                "Glejty"
             ]
         },
         "Flagellant": {
@@ -4314,7 +4316,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.0kij2AX9aaUnCxPv]{Biczownik}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.j3PetZr6vZXRutml",
             "careergroup": "Biczownik",
-            "class": "Wędrowiec",
+            "class": "Wędrowcy",
             "skills": [
                 "Unik",
                 "Odporność",
@@ -4322,7 +4324,7 @@
                 "Zastraszanie",
                 "Intuicja",
                 "Wiedza (Sigmar)",
-                "Broń Biała (Korbacze)",
+                "Broń Biała (Korbacz)",
                 "Sztuka Przetrwania",
                 "Sztuka (Ikony)",
                 "Atletyka",
@@ -4338,9 +4340,9 @@
                 "Nieubłagany"
             ],
             "trappings": [
-                "Proca",
                 "Tabliczka",
-                "Symbol religijny"
+                "Symbol religijny",
+                "Proca"
             ]
         },
         "Wizard": {
@@ -4349,9 +4351,9 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.PKm1L6yjZ4PH0JJG]{Czarodziej}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.JeWuOwm0nM4V1brh",
             "careergroup": "Czarodziej",
-            "class": "Uczony",
+            "class": "Uczeni",
             "skills": [
-                "Splatanie Magii (Dowolne)",
+                "Splatanie Magii (Dowolny Kolor)",
                 "Unik",
                 "Intuicja",
                 "Język (Magiczny)",
@@ -4367,7 +4369,7 @@
                 "Język (Dowolny)"
             ],
             "talents": [
-                "Magia Tajemna (Dowolna)",
+                "Magia Tajemna (Dowolna Tradycja)",
                 "Rozpoznanie Artefaktu",
                 "Ruchliwe dłonie",
                 "Szósty Zmysł"
@@ -4382,7 +4384,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.zLWmjUbUdAOfiV3F]{Śledczy}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.jGYtrDe0sNACF2pB",
             "careergroup": "Śledczy",
-            "class": "Mieszczanin",
+            "class": "Mieszczanie",
             "skills": [
                 "Charyzma",
                 "Wspinaczka",
@@ -4401,7 +4403,7 @@
                 "Przekupstwo",
                 "Wycena",
                 "Dowodzenie",
-                "Wiedza ()"
+                "Wiedza (Dowolna)"
             ],
             "talents": [
                 "Mól Książkowy",
@@ -4416,14 +4418,14 @@
         },
         "Fortune Teller": {
             "id": "jyfMHnPojhZVwF07",
-            "name": "Wróż",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.CzebTXk5dirMAZ6p]{Mistyk}</p>",
+            "name": "Wróżbiarka",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.CzebTXk5dirMAZ6p]{Mistyczka}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.jyfMHnPojhZVwF07",
-            "careergroup": "Mistyk",
+            "careergroup": "Mistyczka",
             "class": "Pospólstwo",
             "skills": [
                 "Charyzma",
-                "Występy (Wróżbiarstwo)",
+                "Występy (Wróżenie)",
                 "Unik",
                 "Plotkowanie",
                 "Targowanie",
@@ -4448,7 +4450,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.mBtIPoWNpXwAS5Yl]{Złodziej}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.KEEmMZK5mpcoRU69",
             "careergroup": "Złodziej",
-            "class": "Łotr",
+            "class": "Łotry",
             "skills": [
                 "Atletyka",
                 "Wspinaczka",
@@ -4462,7 +4464,7 @@
                 "Plotkowanie",
                 "Wiedza (Lokalna)",
                 "Otwieranie Zamków",
-                "Sekretne Znaki (Złodzieje)",
+                "Sekretne Znaki (Złodziei)",
                 "Zwinne Palce"
             ],
             "talents": [
@@ -4510,7 +4512,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.9XoJinyH6CsOcJ1h]{Posłaniec}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.KsiV56hwdm5dZ1RO",
             "careergroup": "Posłaniec",
-            "class": "Wędrowiec",
+            "class": "Wędrowcy",
             "skills": [
                 "Atletyka",
                 "Wspinaczka",
@@ -4538,9 +4540,9 @@
                 "Woltyżerka"
             ],
             "trappings": [
+                "Plecak",
                 "Juki",
-                "Tarcza",
-                "Plecak"
+                "Tarcza"
             ]
         },
         "Rabble Rouser": {
@@ -4549,9 +4551,9 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.X6OBFMR8ywipAPOo]{Agitator}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.KuG92SPVmXnbtdF5",
             "careergroup": "Agitator",
-            "class": "Mieszczanin",
+            "class": "Mieszczanie",
             "skills": [
-                "Sztuka (Piśmiennictwo)",
+                "Sztuka (Pisarstwo)",
                 "Przekupstwo",
                 "Charyzma",
                 "Mocna Głowa",
@@ -4587,7 +4589,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.EELJsJuoDVxiRu9e]{Gladiator}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.KVAOh3zmvzqAbhBr",
             "careergroup": "Gladiator",
-            "class": "Wojownik",
+            "class": "Wojownicy",
             "skills": [
                 "Atletyka",
                 "Opanowanie",
@@ -4600,13 +4602,13 @@
                 "Targowanie",
                 "Intuicja",
                 "Broń Biała (Podstawowa)",
-                "Broń Biała (Korbacze lub Dwuręczna)",
+                "Broń Biała (Korbacz lub Dwuręczna)",
                 "Percepcja",
                 "Broń Zasięgowa (Oplątująca)",
                 "Mocna Głowa",
                 "Plotkowanie",
                 "Wiedza (Anatomia)",
-                "Kuglarstwo (Zapasy)"
+                "Kuglarstwo (Walka Pokazowa)"
             ],
             "talents": [
                 "Mistrz Walki",
@@ -4615,20 +4617,20 @@
                 "Krzepki"
             ],
             "trappings": [
-                "Hełm",
-                "Napierśnik Płytowy"
+                "Napierśnik",
+                "Hełm"
             ]
         },
         "Sage": {
             "id": "L4FGhEguFJVNWk6O",
-            "name": "Widzący",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.CzebTXk5dirMAZ6p]{Mistyk}</p>",
+            "name": "Widząca",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.CzebTXk5dirMAZ6p]{Mistyczka}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.L4FGhEguFJVNWk6O",
-            "careergroup": "Mistyk",
+            "careergroup": "Mistyczka",
             "class": "Pospólstwo",
             "skills": [
                 "Charyzma",
-                "Występy (Wróżbiarstwo)",
+                "Występy (Wróżenie)",
                 "Unik",
                 "Plotkowanie",
                 "Targowanie",
@@ -4643,8 +4645,8 @@
                 "Wiedza (Astrologia)",
                 "Oswajanie",
                 "Występy (Gawędziarstwo)",
-                "Język ()",
-                "Sztuka (Piśmiennictwo)"
+                "Język (Dowolny)",
+                "Sztuka (Pisarstwo)"
             ],
             "talents": [
                 "Nos do Kłopotów",
@@ -4662,7 +4664,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.h1l9jvaIxsb92wtM]{Kapłan}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.lfRarot8alDa1WjG",
             "careergroup": "Kapłan",
-            "class": "Uczony",
+            "class": "Uczeni",
             "skills": [
                 "Atletyka",
                 "Opanowanie",
@@ -4678,20 +4680,20 @@
                 "Leczenie",
                 "Zastraszanie",
                 "Broń Biała (Podstawowa)",
-                "Sztuka (Piśmiennictwo)",
+                "Sztuka (Pisarstwo)",
                 "Występy (Przemawianie)",
                 "Dowodzenie",
                 "Wiedza (Heraldyka)"
             ],
             "talents": [
                 "Wyczulony Zmysł (Dowolny)",
-                "Nienawiść (Dowolny)",
+                "Nienawiść (Dowolne)",
                 "Porywająca Gorliwość",
                 "Odporność Psychiczna"
             ],
             "trappings": [
+                "Szaty dobrej jakości",
                 "Relikwia",
-                "Szata Dobrej Jakości",
                 "Podwładni Kapłani",
                 "Świątynia"
             ]
@@ -4702,12 +4704,12 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.f5m7s9K2y1zQNmej]{Mniszka}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.Lkk2NQC1dkUb6yOS",
             "careergroup": "Mniszka",
-            "class": "Uczony",
+            "class": "Uczeni",
             "skills": [
                 "Sztuka (Kaligrafia)",
                 "Opanowanie",
                 "Odporność",
-                "Występy (Bajarz)",
+                "Występy (Gawędziarstwo)",
                 "Plotkowanie",
                 "Leczenie",
                 "Wiedza (Teologia)",
@@ -4723,12 +4725,12 @@
                 "Etykieta (Kultyści)",
                 "Pierwsza Pomoc",
                 "Święte Wizje",
-                "Inwokacja (Dowolna)"
+                "Inwokacja (Dowolne Bóstwo)"
             ],
             "trappings": [
-                "Narzędzia Pracy (Dowolne)",
                 "Księga (Religia)",
-                "Relikwia"
+                "Relikwia",
+                "Narzędzia Pracy (Dowolne)"
             ]
         },
         "Watchman": {
@@ -4737,7 +4739,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.N02cjJdNWPdc4PUS]{Strażnik}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.LobXt1Wa3x3EogpB",
             "careergroup": "Strażnik",
-            "class": "Mieszczanin",
+            "class": "Mieszczanie",
             "skills": [
                 "Atletyka",
                 "Wspinaczka",
@@ -4761,9 +4763,9 @@
                 "Szybkobiegacz"
             ],
             "trappings": [
-                "Oliwa do Lampy",
-                "Miedziana Odznaka",
-                "Latarnia na Drągu"
+                "Latarnia na drągu",
+                "Olej do lampy",
+                "Miedziana odznaka"
             ]
         },
         "Herald": {
@@ -4772,7 +4774,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.0t9wtjQIoOofh8nO]{Poseł}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.loPti7wWf1qN01zO",
             "careergroup": "Poseł",
-            "class": "Dworzanin",
+            "class": "Dworzanie",
             "skills": [
                 "Atletyka",
                 "Charyzma",
@@ -4801,7 +4803,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.5leTOZ6Wj35bS1IV]{Zabójca}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.ltGl3eXxujQ23al3",
             "careergroup": "Zabójca",
-            "class": "Wojownik",
+            "class": "Wojownicy",
             "skills": [
                 "Mocna Głowa",
                 "Opanowanie",
@@ -4814,29 +4816,29 @@
             ],
             "talents": [
                 "Dwie Bronie",
-                "Nieustraszony (Wszystko!)",
+                "Nieustraszony (Wszystko)",
                 "Szał Bojowy",
                 "Zabójca"
             ],
             "trappings": [
-                "Flaszka Mocnego Alkoholu",
                 "Topór",
-                "Tatuaże",
-                "Wstyd i Hańba"
+                "Flaszka mocnego alkoholu",
+                "Wstyd i hańba",
+                "Tatuaże"
             ]
         },
         "Trapper": {
             "id": "LYBKDZ0AhutYewfD",
-            "name": "Traper",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Łowca}</p>",
+            "name": "Traperka",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Łowczyni}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.LYBKDZ0AhutYewfD",
-            "careergroup": "Łowca",
+            "careergroup": "Łowczyni",
             "class": "Pospólstwo",
             "skills": [
                 "Oswajanie",
                 "Wspinaczka",
                 "Odporność",
-                "Wiedza (Bestie)",
+                "Wiedza (Zwierzęta)",
                 "Sztuka Przetrwania",
                 "Percepcja",
                 "Broń Zasięgowa (Proca)",
@@ -4845,14 +4847,14 @@
             "talents": [
                 "Twardziel",
                 "Włóczykij",
-                "Doświadczony Wędrowiec (Dowolny)",
+                "Doświadczony Wędrowiec (Dowolny Teren)",
                 "Traper"
             ],
             "trappings": [
+                "Wybór sideł na zwierzęta",
                 "Broń ręczna",
-                "Mocne Buty i Płaszcz",
-                "Proca z 20 Kamiennymi Pociskami",
-                "Wybór Sideł na Zwierzęta"
+                "Mocne buty i płaszcz ",
+                "Proca z 10 kamiennymi pociskami"
             ]
         },
         "Seneschal": {
@@ -4861,7 +4863,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.wbqpqbFoSnvoZ53j]{Namiestnik}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.m2viFvv0MaXuxRit",
             "careergroup": "Namiestnik",
-            "class": "Dworzanin",
+            "class": "Dworzanie",
             "skills": [
                 "Atletyka",
                 "Oswajanie",
@@ -4874,7 +4876,7 @@
                 "Opieka nad Zwierzętami",
                 "Broń Biała (Podstawowa)",
                 "Sztuka Przetrwania",
-                "Broń Zasięgowa (Łuki)",
+                "Broń Zasięgowa (Łuk)",
                 "Jeździectwo (Konie)",
                 "Pływanie",
                 "Przekupstwo",
@@ -4889,9 +4891,9 @@
                 "Pomocny"
             ],
             "trappings": [
-                "Napierśnik Płytowy",
-                "Grupa Nadzorców i Namiestników",
-                "Ceremonialne Berło"
+                "Napierśnik",
+                "Ceremonialne berło",
+                "Grupa Nadzorców i Namiestników"
             ]
         },
         "Master Merchant": {
@@ -4900,7 +4902,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.h7GdfctKdjWL0Ejp]{Kupiec}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.mE6PJ1yIScBu6Tye",
             "careergroup": "Kupiec",
-            "class": "Mieszczanin",
+            "class": "Mieszczanie",
             "skills": [
                 "Opieka nad Zwierzętami",
                 "Przekupstwo",
@@ -4916,20 +4918,20 @@
                 "Język (Gildii)",
                 "Wiedza (Lokalna)",
                 "Percepcja",
-                "Opanowanie",
+                " Opanowanie",
                 "Język (Klasyczny)",
                 "Nawigacja",
                 "Sekretne Znaki (Gildii)"
             ],
             "talents": [
                 "Gładkie Słówka",
-                "Etykieta (Dowolna)",
+                "Etykieta (Dowolna Grupa)",
                 "Numizmatyka",
                 "Czujny"
             ],
             "trappings": [
+                "kamienica ze Służbą",
                 "Magazyn",
-                "Kamienica ze Służbą",
                 "100 Złotych Koron"
             ]
         },
@@ -4939,7 +4941,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.Rk1V9EvtZ0p5Qhwr]{Przewoźnik}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.MNaGRYlkySIdA6Nj",
             "careergroup": "Przewoźnik",
-            "class": "Wodniak",
+            "class": "Wodniacy",
             "skills": [
                 "Mocna Głowa",
                 "Unik",
@@ -4964,16 +4966,16 @@
         },
         "Tracker": {
             "id": "mokSUD62vhpKue2Z",
-            "name": "Tropiciel",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Łowca}</p>",
+            "name": "Tropicielka",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.T6c9MttfG0Fj4nDm]{Łowczyni}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.mokSUD62vhpKue2Z",
-            "careergroup": "Łowca",
+            "careergroup": "Łowczyni",
             "class": "Pospólstwo",
             "skills": [
                 "Oswajanie",
                 "Wspinaczka",
                 "Odporność",
-                "Wiedza (Bestie)",
+                "Wiedza (Zwierzęta)",
                 "Sztuka Przetrwania",
                 "Percepcja",
                 "Broń Zasięgowa (Proca)",
@@ -4981,8 +4983,8 @@
                 "Opanowanie",
                 "Intuicja",
                 "Broń Biała (Podstawowa)",
-                "Broń Zasięgowa (Łuki)",
-                "Sekretne Znaki (Łowcy)",
+                "Broń Zasięgowa (Łuk)",
+                "Sekretne Znaki (Łowców)",
                 "Skradanie (Wieś)",
                 "Nawigacja",
                 "Jeździectwo (Konie)",
@@ -4996,9 +4998,9 @@
                 "Strzał w Dziesiątkę"
             ],
             "trappings": [
-                "Backpack",
-                "Bedroll",
-                "Ten"
+                "Plecak",
+                "Zwijane posłanie",
+                "Namiot"
             ]
         },
         "Watch Captain": {
@@ -5007,7 +5009,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.N02cjJdNWPdc4PUS]{Strażnik}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.MR0d08qmDDbqujmS",
             "careergroup": "Strażnik",
-            "class": "Mieszczanin",
+            "class": "Mieszczanie",
             "skills": [
                 "Atletyka",
                 "Wspinaczka",
@@ -5037,19 +5039,19 @@
                 "Intrygant"
             ],
             "trappings": [
-                "Dobra Broń Ręczna",
-                "Koń Wierzchowy z Rzędem",
-                "Imponujący Symbol Rangi",
-                "Dobry Kapelusz"
+                "Koń wierzchowy z rzędem",
+                "Dobry kapelusz",
+                "Dobra broń ręczna",
+                "Imponujący symbol rangi"
             ]
         },
         "Hexer": {
             "id": "MsrHDvVgAb8tUJec",
-            "name": "Szptun",
-            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.7lNzR0hDPl98NrcX]{Czarownik}</p>",
+            "name": "Szeptucha",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.7lNzR0hDPl98NrcX]{Czarownica}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.MsrHDvVgAb8tUJec",
-            "careergroup": "Czarownik",
-            "class": "Łotr",
+            "careergroup": "Czarownica",
+            "class": "Łotry",
             "skills": [
                 "Splatanie Magii",
                 "Opanowanie",
@@ -5067,10 +5069,10 @@
                 "Magia Prosta"
             ],
             "trappings": [
-                "Szpilki",
-                "Lalka",
+                "Świece",
                 "Kreda",
-                "Świece"
+                "Lalka",
+                "Szpilki"
             ]
         },
         "Hedge Master": {
@@ -5085,7 +5087,7 @@
                 "Odporność",
                 "Intuicja",
                 "Język (Magiczny)",
-                "Wiedza (Folklor)",
+                "Wiedza (Ludowa)",
                 "Wiedza (Zioła)",
                 "Sztuka Przetrwania",
                 "Percepcja",
@@ -5107,8 +5109,8 @@
                 "Odporny na (Choroby)"
             ],
             "trappings": [
-                "Uczeń",
-                "Odosobniona Chata"
+                "Odosobniona chata",
+                "Uczeń"
             ]
         },
         "Light Cavalry Officer": {
@@ -5117,7 +5119,7 @@
             "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.wczCPcuHT4VQDLpL.JournalEntryPage.ArFOfnzJkToXBJBF]{Kawalerzysta}</p>",
             "sourceId": "Compendium.wfrp4e-core.careers.mVx5unQ28vIpavOo",
             "careergroup": "Kawalerzysta",
-            "class": "Wojownik",
+            "class": "Wojownicy",
             "skills": [
                 "Opieka nad Zwierzętami",
                 "Oswajanie",

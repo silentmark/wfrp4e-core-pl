@@ -26,7 +26,7 @@
         "Menacing": {
             "id": "0hn6UaKq8CoZP2zD",
             "name": "Groźny",
-            "description": "<p>Twoja postura i wygląd budzą obawę. Kiedy wykonujesz Test Zastraszania, uzyskujesz dodatkowe PS równe liczbie wykupień tego Talentu.  </p>",
+            "description": "<p>Twoja postura i wygląd budzą obawę. Kiedy wykonujesz Test Zastraszania, uzyskujesz dodatkowe PS równe liczbie wykupień tego Talentu.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.0hn6UaKq8CoZP2zD",
             "effects": {
                 "IRRiQjVGZiHjLnxt": {
@@ -47,14 +47,14 @@
         "Feint": {
             "id": "0pXva9EODy9bngQX",
             "name": "Finta",
-            "description": "<p>Pilnie ćwiczyłeś pozorowane ataki w zwarciu, by zmylić przeciwnika. W ramach swojej Akcji możesz wykonać fintę przeciwko uzbrojonemu przeciwnikowi. O jej powodzeniu rozstrzyga Przeciwstawny Test Broni Białej (Szermierczej) przeciw Broni Białej wroga. Jeśli go wygrasz i przed końcem następnej rundy zaatakujesz tego samego przeciwnika, możesz dodać PS z finty do swojego Testu ataku.  </p>",
+            "description": "<p>Pilnie ćwiczyłeś pozorowane ataki w zwarciu, by zmylić przeciwnika. W ramach swojej Akcji możesz wykonać fintę przeciwko uzbrojonemu przeciwnikowi. O jej powodzeniu rozstrzyga Przeciwstawny Test Broni Białej (Szermierczej) przeciw Broni Białej wroga. Jeśli go wygrasz i przed końcem następnej rundy zaatakujesz tego samego przeciwnika, możesz dodać PS z finty do swojego Testu ataku.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.0pXva9EODy9bngQX",
             "tests": "Broń Biała (Szermiercza) podczas Finty"
         },
         "Strider": {
             "id": "1dUizIgLBgn4jICC",
             "name": "Doświadczony Wędrowiec (Wybrany Teren)",
-            "description": "<p>Masz doświadczenie w wędrówce przez dzicz i potrafisz dobrze wybierać drogę. Nie działają na ciebie negatywne modyfikatory wynikające z wpływu wybranego terenu. Oto lista przykładów: Lasy, Pustynie, Moczary, Teren Kamienisty, Tundra, Wybrzeża.  </p>",
+            "description": "<p>Masz doświadczenie w wędrówce przez dzicz i potrafisz dobrze wybierać drogę. Nie działają na ciebie negatywne modyfikatory wynikające z wpływu wybranego terenu. Oto lista przykładów: Lasy, Pustynie, Moczary, Teren Kamienisty, Tundra, Wybrzeża.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.1dUizIgLBgn4jICC",
             "tests": "Atletyki podczas podróży w terenie"
         },
@@ -82,7 +82,7 @@
         "Fisherman": {
             "id": "1kgHcImgfyKI1IYp",
             "name": "Rybak",
-            "description": "<p>Jesteś obrotnym rybakiem i wiesz, jak zapełnić sieci. Jeżeli masz dostęp do odpowiednio dużego zbiornika wodnego, jesteś w stanie wyżywić siebie oraz tyle osób, ile razy wykupiłeś ten Talent, jeśli poświęcisz godzinę dziennie na wędkowanie. Liczbę złowionych ryb możesz zwiększyć, stosując zasady zbieractwa  </p>",
+            "description": "<p>Jesteś obrotnym rybakiem i wiesz, jak zapełnić sieci. Jeżeli masz dostęp do odpowiednio dużego zbiornika wodnego, jesteś w stanie wyżywić siebie oraz tyle osób, ile razy wykupiłeś ten Talent, jeśli poświęcisz godzinę dziennie na wędkowanie. Liczbę złowionych ryb możesz zwiększyć, stosując zasady zbieractwa</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.1kgHcImgfyKI1IYp",
             "tests": "Dowolne wiążące się z rybołówstwem"
         },
@@ -96,7 +96,7 @@
         "Dirty Fighting": {
             "id": "2Nzqsc9aclP6rpnl",
             "name": "Cios Poniżej Pasa",
-            "description": "<p>Nauczyłeś się brudnych sztuczek, stosowanych podczas walki bez broni. Zadajesz +1 punkt obrażeń za każde wykupienie tego Talentu, gdy trafisz przeciwnika, używając Umiejętności Broń Biała (Bijatyka). Uwaga: wykorzystanie tego Talentu w pojedynku bokserskim jest uważane za oszustwo  </p>",
+            "description": "<p>Nauczyłeś się brudnych sztuczek, stosowanych podczas walki bez broni. Zadajesz +1 punkt obrażeń za każde wykupienie tego Talentu, gdy trafisz przeciwnika, używając Umiejętności Broń Biała (Bijatyka). Uwaga: wykorzystanie tego Talentu w pojedynku bokserskim jest uważane za oszustwo.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.2Nzqsc9aclP6rpnl",
             "effects": {
                 "NznDJLYiqbwPzhZt": {
@@ -123,7 +123,7 @@
         "Argumentative": {
             "id": "41JhsSNW1Ttza3JK",
             "name": "Przekonujący",
-            "description": "<p>Przywykłeś do debatowania i obrony swojego zdania. Jeśli uda ci się Test Charyzmy, możesz normalnie obliczyć PS lub określić ich liczbę, odczytując wynik z kości jedności. Udany Test z wynikiem 24 może dać ci więc 4 PS  </p>",
+            "description": "<p>Przywykłeś do debatowania i obrony swojego zdania. Jeśli uda ci się Test Charyzmy, możesz normalnie obliczyć PS lub określić ich liczbę, odczytując wynik z kości jedności. Udany Test z wynikiem 24 może dać ci więc 4 PS</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.41JhsSNW1Ttza3JK",
             "effects": {
                 "oAsvKkgS9pLtavj7": {
@@ -132,12 +132,12 @@
                     "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Charm\") &&  (args.test.result.roll <= 5 || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop())\n   if (ones > SL) {\n     args.test.result.other.push(`<b>${this.effect.label}</b>: ${ones + args.test.successBonus + args.test.slBonus} SL if debating.`);\n   }\n}"
                 }
             },
-            "tests": "Charyzma, gdy prowadzisz debatę lub się z kimś spierasz na "
+            "tests": "Charyzma, gdy prowadzisz debatę lub się z kimś spierasz"
         },
         "Reaction Strike": {
             "id": "4AqSkJnFPqNuTkos",
             "name": "Atak Wyprzedzający",
-            "description": "<p>Twoje błyskawiczne ciosy pozwalają na powalenie przeciwników, zanim oni sami zdążą zaatakować. Kiedy wróg na ciebie Szarżuje, wykonaj udany Wymagający (+0) Test Inicjatywy, by natychmiast wykonać Darmowy Atak poza normalną kolejnością Rundy. Używasz broni, którą trzymasz w wiodącej ręce. Możesz wykonać tyle Ataków Wyprzedzających w Rundzie, ile razy wykupiłeś ten Talent, ale tylko raz na każdego szarżującego.  </p>",
+            "description": "<p>Twoje błyskawiczne ciosy pozwalają na powalenie przeciwników, zanim oni sami zdążą zaatakować. Kiedy wróg na ciebie Szarżuje, wykonaj udany Wymagający (+0) Test Inicjatywy, by natychmiast wykonać Darmowy Atak poza normalną kolejnością Rundy. Używasz broni, którą trzymasz w wiodącej ręce. Możesz wykonać tyle Ataków Wyprzedzających w Rundzie, ile razy wykupiłeś ten Talent, ale tylko raz na każdego szarżującego.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.4AqSkJnFPqNuTkos",
             "tests": "Initiative Tests concerning this Talent"
         },
@@ -157,21 +157,21 @@
         "Strong Swimmer": {
             "id": "4wnQc19allWlyOGe",
             "name": "Świetny Pływak",
-            "description": "<p>Bardzo dobrze pływasz i potrafisz na długo wstrzymać oddech pod wodą. Kiedy obliczasz, jak długo jesteś w stanie wytrzymać pod powierzchnią wody, do Bonusu z Wytrzymałości dodaj liczbę wykupień tego Talentu  </p>",
+            "description": "<p>Bardzo dobrze pływasz i potrafisz na długo wstrzymać oddech pod wodą. Kiedy obliczasz, jak długo jesteś w stanie wytrzymać pod powierzchnią wody, do Bonusu z Wytrzymałości dodaj liczbę wykupień tego Talentu</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.4wnQc19allWlyOGe",
             "tests": "Pływanie"
         },
         "Savant": {
             "id": "580fwhKfOZJFxMID",
             "name": "Znawca (Wiedza)",
-            "description": "<p>Jesteś prawdziwym ekspertem w wybranej dziedzinie wiedzy. Automatycznie potrafisz przytoczyć tyle poprawnych informacji na dany temat, ile razy wykupiłeś ten Talent, i nie musisz wykonywać Testu Wiedzy. Udany da ci dodatkowe wiadomości, określane przez MG według normalnych zasad  </p>",
+            "description": "<p>Jesteś prawdziwym ekspertem w wybranej dziedzinie wiedzy. Automatycznie potrafisz przytoczyć tyle poprawnych informacji na dany temat, ile razy wykupiłeś ten Talent i nie musisz wykonywać Testu Wiedzy. Udany test da ci dodatkowe wiadomości, określane przez MG według normalnych zasad.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.580fwhKfOZJFxMID",
             "tests": "Wiedza (wybrana dziedzina)"
         },
         "Fast Shot": {
             "id": "5eDd6iFeR9G6cCfz",
             "name": "Błyskawiczny Strzał",
-            "description": "<p>Jeśli posiadasz naładowaną broń dystansową, możesz z niej wystrzelić poza Kolejnością Inicjatywy, zanim zareaguje którykolwiek z uczestników walki. Rzut na trafienie wykonaj z uwzględnieniem wszystkich modyfikatorów. Użycie tego Talentu wymaga poświęcenia zarówno Akcji, jak i Ruchu z nadchodzącej Tury i kiedy nadejdzie twoja kolej, będą one traktowane jako wykorzystane. Jeśli ten Talent chcą wykorzystać dwie lub więcej postaci, pierwsza strzela ta, która wykupiła go więcej razy. Jeśli i na tym polu mamy remis, obydwie postacie strzelają równocześnie i wynik ich ataków powinien być rozliczony jednocze- śnie  </p>",
+            "description": "<p>Jeśli posiadasz naładowaną broń dystansową, możesz z niej wystrzelić poza Kolejnością Inicjatywy, zanim zareaguje którykolwiek z uczestników walki. Rzut na trafienie wykonaj z uwzględnieniem wszystkich modyfikatorów. Użycie tego Talentu wymaga poświęcenia zarówno Akcji, jak i Ruchu z nadchodzącej Tury i kiedy nadejdzie twoja kolej, będą one traktowane jako wykorzystane. Jeśli ten Talent chcą wykorzystać dwie lub więcej postaci, pierwsza strzela ta, która wykupiła go więcej razy. Jeśli i na tym polu mamy remis, obydwie postacie strzelają równocześnie i wynik ich ataków powinien być rozliczony jednocześnie</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.5eDd6iFeR9G6cCfz",
             "tests": "Broń Zasięgowa, gdy wykorzystujesz Talent Błyskawiczny "
         },
@@ -197,7 +197,7 @@
         "Numismatics": {
             "id": "5QcrpLQWWrsbKR79",
             "name": "Numizmatyka",
-            "description": "<p>Doskonale znasz się na różnych walutach Starego Świata i potrafisz oceniać ich wartość. Na podstawie swojego doświadczenia, bez konieczności wykonywania Testu, umiesz powiedzieć, ile warta jest moneta. Prosty Test Wyceny pozwoli ci wykryć podrabianą. Nie jest on przeciwstawiany PS uzyskanym wcześniej przez fałszerza.  </p>",
+            "description": "<p>Doskonale znasz się na różnych walutach Starego Świata i potrafisz oceniać ich wartość. Na podstawie swojego doświadczenia, bez konieczności wykonywania Testu, umiesz powiedzieć, ile warta jest moneta. Prosty Test Wyceny pozwoli ci wykryć podrabianą. Nie jest on przeciwstawiany PS uzyskanym wcześniej przez fałszerza.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.5QcrpLQWWrsbKR79",
             "tests": "Wycena podczas ustalania wartości monet"
         },
@@ -218,28 +218,28 @@
         "Tinker": {
             "id": "6lQRRgjz8IZH4bbV",
             "name": "Złota Rączka",
-            "description": "<p>Jesteś w stanie naprawić dosłownie wszystko, a kiedy coś reperujesz, traktujesz wszystkie niemagiczne Umiejętności Rzemiosła jako podstawowe.  </p>",
+            "description": "<p>Jesteś w stanie naprawić dosłownie wszystko, a kiedy coś reperujesz, traktujesz wszystkie niemagiczne Umiejętności Rzemiosła jako podstawowe.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.6lQRRgjz8IZH4bbV",
             "tests": "Rzemiosło, by naprawić uszkodzone przedmioty"
         },
         "Magical Sense": {
             "id": "6w30u0VPsAicrqb5",
             "name": "Wykrywanie Magii",
-            "description": "<p>Jesteś uodporniony na zaklęcia. Poziom Sukcesów czarów rzucanych na ciebie jest obniżony o 2 za każde wykupienie tego Talentu. Poziom Sukcesów jest obniżany tylko od najwyższej Odporności na Magię w obszarze oddziaływania czaru. Co więcej, nie możesz wykupić Talentów: Magia Tajemna, Błogosławieństwo, Inwokacja, Magia Prosta i Czarownica.  </p>",
+            "description": "<p>Jesteś uodporniony na zaklęcia. Poziom Sukcesów czarów rzucanych na ciebie jest obniżony o 2 za każde wykupienie tego Talentu. Poziom Sukcesów jest obniżany tylko od najwyższej Odporności na Magię w obszarze oddziaływania czaru. Co więcej, nie możesz wykupić Talentów: Magia Tajemna, Błogosławieństwo, Inwokacja, Magia Prosta i Czarownica.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.6w30u0VPsAicrqb5",
             "tests": "Intuicja, by wykrywać czarodziejów"
         },
         "Linguistics": {
             "id": "726gbrANZt8OqXr5",
             "name": "Poliglota",
-            "description": "<p>Masz naturalną łatwość uczenia się języków. Wystarczy ci miesiąc obcowania z którymś i udany Test Inteligencji (można go powtórzyć raz na miesiąc), byś mógł traktować jego znajomość jako Umiejętność Podstawową. Uwaga: ten Talent działa tylko na języki, którymi często porozumiewają się istoty, a więc nie na Język (magiczny).  </p>",
+            "description": "<p>Masz naturalną łatwość uczenia się języków. Wystarczy ci miesiąc obcowania z którymś i udany Test Inteligencji (można go powtórzyć raz na miesiąc), byś mógł traktować jego znajomość jako Umiejętność Podstawową. Uwaga: ten Talent działa tylko na języki, którymi często porozumiewają się istoty, a więc nie na Język (magiczny).</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.726gbrANZt8OqXr5",
             "tests": "Języki (Wszystkie)"
         },
         "Rapid Reload": {
             "id": "769B469sqx6FXPfn",
             "name": "Szybkie Przeładowanie",
-            "description": "<p>Potrafisz z łatwością przeładowywać bronie strzeleckie. Dodaj PS równe liczbie wykupień tego Talentu do Testów przeładowania broni dystansowej.  </p>",
+            "description": "<p>Potrafisz z łatwością przeładowywać bronie strzeleckie. Dodaj PS równe liczbie wykupień tego Talentu do Testów przeładowania broni dystansowej.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.769B469sqx6FXPfn",
             "effects": {
                 "nwmflkSKJ3gH7INJ": {
@@ -259,7 +259,7 @@
         "Nimble Fingered": {
             "id": "7bZjB82f6LSkeczP",
             "name": "Zręczny",
-            "description": "<p>Zyskujesz premię +5 do początkowej wartości Zręczności. Nie liczy się ona do sumy Rozwinięć.  </p>",
+            "description": "<p>Zyskujesz premię +5 do początkowej wartości Zręczności. Nie liczy się ona do sumy Rozwinięć.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.7bZjB82f6LSkeczP",
             "effects": {
                 "iT6aqNkxEikCpTEY": {
@@ -299,14 +299,14 @@
         "Roughrider": {
             "id": "9CAkY3SQjQxRTlNJ",
             "name": "Urodzony w Siodle",
-            "description": "<p>W siodle czujesz się jak w domu i nie straszne ci najtrudniejsze warunki. Wiesz, jak najlepiej wykorzystać wierzchowca w walce. Jeśli posiadasz Umiejętność Jeździectwo, możesz pokierować koniem tak, by podjął Akcję, a nie tylko wykonywał Ruch. Nie musisz w tym celu wykonywać do tego Testu Jeździectwa.  </p>",
+            "description": "<p>W siodle czujesz się jak w domu i nie straszne ci najtrudniejsze warunki. Wiesz, jak najlepiej wykorzystać wierzchowca w walce. Jeśli posiadasz Umiejętność Jeździectwo, możesz pokierować koniem tak, by podjął Akcję, a nie tylko wykonywał Ruch. Nie musisz w tym celu wykonywać do tego Testu Jeździectwa.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.9CAkY3SQjQxRTlNJ",
             "tests": "Jeździectwo (Konie) w walce"
         },
         "Animal Affinity": {
             "id": "9fq6p9Q6H02LjaSi",
             "name": "Posłuch u Zwierząt",
-            "description": "<p>Dzikie zwierzęta dobrze się czują w twojej obecności i często są posłuszne  twoim poleceniom. Wszystkie istoty o Cesze Zwierzę, których nie wytresowano, by były agresywne, uspokajają się w twojej obecności, chyba że mają powód, by zachować czujność. Ból, napaść czy naturalna wysoka agresja lub opieka nad młodymi mogą sprawić, że zwierzę nie podda się działaniu tego Talentu.</p>",
+            "description": "<p>Dzikie zwierzęta dobrze się czują w twojej obecności i często są posłuszne twoim poleceniom. Wszystkie istoty o Cesze Zwierzę, których nie wytresowano, by były agresywne, uspokajają się w twojej obecności, chyba że mają powód, by zachować czujność. Ból, napaść czy naturalna wysoka agresja lub opieka nad młodymi mogą sprawić, że zwierzę nie podda się działaniu tego Talentu.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.9fq6p9Q6H02LjaSi",
             "tests": "Oswajanie"
         },
@@ -320,35 +320,35 @@
         "Fast Hands": {
             "id": "9sMAf0xmehjEmUao",
             "name": "Ruchliwe dłonie",
-            "description": "<p>Manipulujesz dłońmi z zaskakującą zręcznością. Gapiom i przypadkowym obserwatorom nie przysługuje bierny Test Percepcji, gdy wykorzystujesz Umiejętność Zwinne Palce, chyba że żywią oni wobec ciebie podejrzenia i obserwują twoje ruchy. Testy Broni Białej (Bijatyki) wykonywane, by dotknąć przeciwnika, wykonujesz z premią +10 x liczba wykupień tego Talentu  </p>",
+            "description": "<p>Manipulujesz dłońmi z zaskakującą zręcznością. Gapiom i przypadkowym obserwatorom nie przysługuje bierny Test Percepcji, gdy wykorzystujesz Umiejętność Zwinne Palce, chyba że żywią oni wobec ciebie podejrzenia i obserwują twoje ruchy. Testy Broni Białej (Bijatyki) wykonywane, by dotknąć przeciwnika, wykonujesz z premią +10 x liczba wykupień tego Talentu</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.9sMAf0xmehjEmUao",
             "tests": "Zwinne Palce, Broń Biała (Bijatyka), aby dotknąć przeciwnika"
         },
         "Trapper": {
             "id": "a7v422EZcOUUC20X",
-            "name": "Traper",
-            "description": "<p>Wiesz, jak używać wnyków, i możesz wykonać Test Percepcji, by je zauważyć, bez konieczności deklarowania poszukiwań. MG będzie pewnie wolał wykonać go samemu, na wypadek gdyby rzut okazał się nieudany  </p>",
+            "name": "Traperka",
+            "description": "<p>Wiesz, jak używać wnyków, i możesz wykonać Test Percepcji, by je zauważyć, bez konieczności deklarowania poszukiwań. MG będzie pewnie wolał wykonać go samemu, na wypadek gdyby rzut okazał się nieudany.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.a7v422EZcOUUC20X",
             "tests": "Percepcja, by zauważyć pułapki, Zastawianie Pułapek"
         },
         "Nose for Trouble": {
             "id": "AcnFuDKRemLI9ey7",
             "name": "Nos do Kłopotów",
-            "description": "<p>Wiesz, jak wpaść w kłopoty i - jeszcze lepiej - jak się z nich wyłgać. Możesz wykonać Test Intuicji, by zorientować się, kto potencjalnie może sprawiać problemy. Test ten przysługuje ci, nawet gdyby nie wolno ci było go wykonać (z powodu działania innych Talentów, czarów itp.). Test ów będzie zapewne Przeciwstawny, jeśli napastnicy się kryją. MG może go wykonać w ukryciu za ciebie, byś nie wiedział, czy zakończy się on porażką, czy sukcesem. Jeśli zauważony przez ciebie wichrzyciel rozpocznie walkę, nie działa na ciebie Stan Zaskoczenie  </p>",
+            "description": "<p>Wiesz, jak wpaść w kłopoty i - jeszcze lepiej - jak się z nich wyłgać. Możesz wykonać Test Intuicji, by zorientować się, kto potencjalnie może sprawiać problemy. Test ten przysługuje ci, nawet gdyby nie wolno ci było go wykonać (z powodu działania innych Talentów, czarów itp.). Test ów będzie zapewne Przeciwstawny, jeśli napastnicy się kryją. MG może go wykonać w ukryciu za ciebie, byś nie wiedział, czy zakończy się on porażką, czy sukcesem. Jeśli zauważony przez ciebie wichrzyciel rozpocznie walkę, nie działa na ciebie Stan Zaskoczenie.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.AcnFuDKRemLI9ey7",
             "tests": "Każdy, by wypatrzeć potencjalne problemy"
         },
         "Orientation": {
             "id": "afREA9q7v4Scuozn",
             "name": "Wyczucie Kierunku",
-            "description": "<p>Instynktownie wyczuwasz kierunki świata. Zawsze wiesz, gdzie jest północ, jeśli tylko możesz zerknąć na gwiazdy, drzewa czy jakąkolwiek inną wskazówkę  </p>",
+            "description": "<p>Instynktownie wyczuwasz kierunki świata. Zawsze wiesz, gdzie jest północ, jeśli tylko możesz zerknąć na gwiazdy, drzewa czy jakąkolwiek inną wskazówkę.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.afREA9q7v4Scuozn",
             "tests": "Nawigacja"
         },
         "Sprinter": {
             "id": "AwUUEwwf2Vt4ksCN",
             "name": "Szybkobiegacz",
-            "description": "<p>Żwawo przebierasz nogami. Podczas Biegu twoja Szybkość jest traktowana, jakby była o 1 wyższa.  </p>",
+            "description": "<p>Żwawo przebierasz nogami. Podczas Biegu twoja Szybkość jest traktowana, jakby była o 1 wyższa.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.AwUUEwwf2Vt4ksCN",
             "effects": {
                 "SjJdt6yUkEkPqDgF": {
@@ -362,7 +362,7 @@
         "Supportive": {
             "id": "aZavWXbSXVBmWeJi",
             "name": "Pomocny",
-            "description": "<p>Wiesz, co i kiedy powiedzieć oraz jak najlepiej wypaść w oczach szlachetniej od ciebie urodzonych. Kiedy z powodzeniem użyjesz Umiejętności, by wpłynąć na tych, którzy mają wyższy od ciebie Status, możesz wybrać, czy wykorzystać normalnie obliczaną liczbę PS, czy zamiast niej użyć cyfry jedności kości, którymi rzucałeś. W ten sposób rzut 46 może dać +6 PS.  </p>",
+            "description": "<p>Wiesz, co i kiedy powiedzieć oraz jak najlepiej wypaść w oczach szlachetniej od ciebie urodzonych. Kiedy z powodzeniem użyjesz Umiejętności, by wpłynąć na tych, którzy mają wyższy od ciebie Status, możesz wybrać, czy wykorzystać normalnie obliczaną liczbę PS, czy zamiast niej użyć cyfry jedności kości, którymi rzucałeś. W ten sposób rzut 46 może dać +6 PS.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.aZavWXbSXVBmWeJi",
             "effects": {
                 "S487mwxmDJh9rULA": {
@@ -383,7 +383,7 @@
         "Lightning Reflexes": {
             "id": "BbStIySkF1hDM2zq",
             "name": "Szybki Refleks",
-            "description": "<p>Zyskujesz premię +5 do początkowej wartości Zwinności. Nie liczy się ona do sumy Rozwinięć  </p>",
+            "description": "<p>Zyskujesz premię +5 do początkowej wartości Zwinności. Nie liczy się ona do sumy Rozwinięć.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.BbStIySkF1hDM2zq",
             "effects": {
                 "Zz5EI68iOab1vbmQ": {
@@ -401,16 +401,16 @@
         "Furious Assault": {
             "id": "BlHVzfs0Ow6IYEDw",
             "name": "Wściekły Atak",
-            "description": "<p>Lawinowo zadajesz ciosy, zasypując wroga furią Ulryka. Raz na Rundę, jeśli trafisz przeciwnika w Walce Wręcz, możesz zużyć Przewagę albo spożytkować Ruch (zakładając, że w tej Rundzie możesz się jeszcze ruszyć), by wykonać od razu dodatkowy atak.  </p>",
+            "description": "<p>Lawinowo zadajesz ciosy, zasypując wroga furią Ulryka. Raz na Rundę, jeśli trafisz przeciwnika w Walce Wręcz, możesz zużyć Przewagę albo spożytkować Ruch (zakładając, że w tej Rundzie możesz się jeszcze ruszyć), by wykonać od razu dodatkowy atak.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.BlHVzfs0Ow6IYEDw",
             "tests": "Broń Biała podczas wykonywania dodatkowych ataków"
         },
         "Hunter's Eye": {
             "id": "bxbTiLzbaz4vdukT",
             "name": "Oko Łowcy",
-            "description": "<p>Jesteś dobrym myśliwym i znasz najlepsze sposoby szukania zwierzyny. Kiedy podróżujesz po bogatych w nią ziemiach, jesteś automatycznie w stanie wyżywić siebie i tylu towarzyszy, ile razy wykupiłeś ten Talent, jeśli tylko masz czas, by zapolować, oraz odpowiednie wyposażenie  </p>",
+            "description": "<p>Jesteś dobrym myśliwym i znasz najlepsze sposoby szukania zwierzyny. Kiedy podróżujesz po bogatych w nią ziemiach, jesteś automatycznie w stanie wyżywić siebie i tylu towarzyszy, ile razy wykupiłeś ten Talent, jeśli tylko masz czas, by zapolować, oraz odpowiednie wyposażenie.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.bxbTiLzbaz4vdukT",
-            "tests": "Dowolny wiążący się z Tropieniem lub polowaniem na zwie"
+            "tests": "Dowolny wiążący się z Tropieniem lub polowaniem na zwierzyne"
         },
         "Instinctive Diction": {
             "id": "BYChSVfMG004eflQ",
@@ -429,7 +429,7 @@
         "Diceman": {
             "id": "cAxNctMFWIAjDgV3",
             "name": "Szuler Kościany",
-            "description": "<p>Jesteś mistrzem gry w kości, a zarzuty oszustwa są nieuzasadnione. Kiedy z powodzeniem używasz Umiejętności Hazard czy Zwinne Palce podczas gry w kości, możesz albo zachować obliczoną normalnie liczbę PS, albo określić ich liczbę przez wynik na kości jedności. W ten sposób wynik rzutu 06 może oznaczać +6 PS. Je- śli podczas sesji będziecie naprawdę grali w kości, rzucasz tyloma więcej, ile razy wykupiłeś ten Talent, i wybierasz najlepsze rezultaty.  </p>",
+            "description": "<p>Jesteś mistrzem gry w kości, a zarzuty oszustwa są nieuzasadnione. Kiedy z powodzeniem używasz Umiejętności Hazard czy Zwinne Palce podczas gry w kości, możesz albo zachować obliczoną normalnie liczbę PS, albo określić ich liczbę przez wynik na kości jedności. W ten sposób wynik rzutu 06 może oznaczać +6 PS. Je- śli podczas sesji będziecie naprawdę grali w kości, rzucasz tyloma więcej, ile razy wykupiłeś ten Talent, i wybierasz najlepsze rezultaty.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.cAxNctMFWIAjDgV3",
             "tests": "Hazard lub Zwinne Palce podczas gier kościanych"
         },
