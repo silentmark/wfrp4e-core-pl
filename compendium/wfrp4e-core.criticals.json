@@ -1,8 +1,8 @@
 {
     "label": "Rany Krytyczne",
     "mapping": {
-        "wounds": "data.wounds.value",
-        "location": "data.location.value",
+        "wounds": "system.wounds.value",
+        "location": "system.location.value",
         "effects": {
             "path": "effects",
             "converter": "effects"

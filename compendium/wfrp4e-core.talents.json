@@ -1,9 +1,9 @@
 {
     "label": "Talenty",
     "mapping": {
-        "specification_label": "data.specification.label",
-        "specification": "data.specification.value",
-        "tests": "data.tests.value",
+        "specification_label": "system.specification.label",
+        "specification": "system.specification.value",
+        "tests": "system.tests.value",
         "effects": {
             "path": "effects",
             "converter": "effects"

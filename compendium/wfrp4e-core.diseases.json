@@ -1,13 +1,13 @@
 {
     "label": "Choroby",
     "mapping": {
-        "duration_value": "data.duration.value",
-        "duration_unit": "data.duration.unit",
-        "incubation_value": "data.incubation.value",
-        "incubation_unit": "data.incubation.unit",
-        "contraction": "data.contraction.value",
-        "symptoms": "data.symptoms.value",
-        "permanent": "data.permanent.value",
+        "duration_value": "system.duration.value",
+        "duration_unit": "system.duration.unit",
+        "incubation_value": "system.incubation.value",
+        "incubation_unit": "system.incubation.unit",
+        "contraction": "system.contraction.value",
+        "symptoms": "system.symptoms.value",
+        "permanent": "system.permanent.value",
         "effects": {
             "path": "effects",
             "converter": "effects"

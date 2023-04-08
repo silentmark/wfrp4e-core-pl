@@ -1,11 +1,11 @@
 {
     "label": "Profesje",
     "mapping": {
-        "skills": "data.skills",
-        "talents": "data.talents",
-        "class": "data.class.value",
-        "careergroup": "data.careergroup.value",
-        "trappings": "data.trappings"
+        "skills": "system.skills",
+        "talents": "system.talents",
+        "class": "system.class.value",
+        "careergroup": "system.careergroup.value",
+        "trappings": "system.trappings"
     },
     "entries": {
         "Brigand": {

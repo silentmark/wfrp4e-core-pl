@@ -1,9 +1,9 @@
 {
     "label": "Wyposażenie",
     "mapping": {
-        "penalties": "data.penalty.value",
-        "range": "data.range.value",
-        "special": "data.special.value",
+        "penalties": "system.penalty.value",
+        "range": "system.range.value",
+        "special": "system.special.value",
         "effects": {
             "path": "effects",
             "converter": "effects"

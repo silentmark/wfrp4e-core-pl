@@ -1,9 +1,9 @@
 {
     "label": "Cechy",
     "mapping": {
-        "roll": "data.rollable.skill",
-        "specification_label": "data.specification.label",
-        "specification": "data.specification.value",
+        "roll": "system.rollable.skill",
+        "specification_label": "system.specification.label",
+        "specification": "system.specification.value",
         "effects": {
             "path": "effects",
             "converter": "effects"

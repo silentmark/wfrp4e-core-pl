@@ -1,11 +1,11 @@
 {
     "label": "Modlitwy",
     "mapping": {
-        "duration": "data.duration.value",
-        "range": "data.range.value",
-        "target": "data.target.value",
-        "damage": "data.damage.value",
-        "overcast": "data.overcast.label",
+        "duration": "system.duration.value",
+        "range": "system.range.value",
+        "target": "system.target.value",
+        "damage": "system.damage.value",
+        "overcast": "system.overcast.label",
         "effects": {
             "path": "effects",
             "converter": "effects"
