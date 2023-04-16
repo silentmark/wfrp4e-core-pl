@@ -13,12 +13,12 @@
         "Petrifying Gaze": {
             "id": "0eEJ280MIC0IbEop",
             "name": "Petryfikujące Spojrzenie",
-            "description": "<p>Spojrzenie stworzenia potrafi zamienić ciało w kamień. W ramach swojej Akcji stworzenie może wydać wszystkie Przewagi, by użyć spojrzenia (minimalnie 1). Stworzenie wykonuje Test Przeciwstawny Umiejętności Strzeleckie/Inicjatywa, dodając 1 PS za każdą wydaną Przewagę. Przeciwnik dostaje 1 Stan Oszołomienie za każde 2 PS, o które wygrało stworzenie. Jeśli stworzenie wygra co najmniej o 6 PS, jego cel zostaje nieodwracalnie zamieniony w kamień. \nJeśli cel potrafi rzucać czary, można wykonać Test Przeciwstawny z Umiejętnością Język (Magiczny) zamiast Inicjatywy, co reprezentuje rzucanie przez cel kontr zaklęcia.</p>",
+            "description": "<p>Spojrzenie stworzenia potrafi zamienić ciało w kamień. W ramach swojej Akcji stworzenie może wydać wszystkie Przewagi, by użyć spojrzenia (minimalnie 1). Stworzenie wykonuje <b>Test Przeciwstawny Umiejętności Strzeleckie/Inicjatywa</b>, dodając 1 PS za każdą wydaną Przewagę. Przeciwnik dostaje 1 Stan @Condition[Oszołomienie] za każde 2 PS, o które wygrało stworzenie. Jeśli stworzenie wygra co najmniej o 6 PS, jego cel zostaje nieodwracalnie zamieniony w kamień. \nJeśli cel potrafi rzucać czary, można wykonać Test Przeciwstawny z Umiejętnością <b>Język (Magiczny)</b> zamiast Inicjatywy, co reprezentuje rzucanie przez cel kontr zaklęcia.</p>",
             "sourceId": "Compendium.wfrp4e-core.traits.0eEJ280MIC0IbEop"
         },
         "Animosity": {
             "id": "0VpT5yubw4UL7j6f",
-            "name": "Wrogość",
+            "name": "Wrogość (Obiekt)",
             "description": "<p>Stworzenie naprawdę nie lubi Obiektu. Za każdym razem, gdy spotyka przedstawiciela tej grupy, musi wykonać Test Psychologii. Jeśli Test się powiedzie, stworzenie może kląć i pluć, ale otrzyma jedynie karę -20 do wszystkich Testów Ogłady związanych z tą grupą. Jeśli Test się nie uda, stworzenie nie jest w stanie dłużej dusić Wrogości. Pod koniec każdej następnej Rundy należy wykonać kolejny Test Psychologii, by zakończyć atak. Jeśli Test się nie powiedzie, Wrogość zakończy się samoistnie, kiedy wszyscy członkowie nielubianej grupy znajdujący się w polu widzenia albo czmychną, albo zostaną spacyfikowani. Oszołomienie lub Utrata Przytomności naturalnie kończą napad Wrogości, podobnie jak niektóre inne Czynniki Psychologiczne. Kiedy stworzenie ma napad Wrogości, musi natychmiast zaatakować swoich wrogów - albo werbalnie (obelgami, drwinami itd.), albo fizycznie (zazwyczaj kończy się na pięściach), w zależności od okoliczności. Ponadto podczas takich drwin i innych prób werbalnych ataków stworzenie otrzymuje premię +1 PS. Strach i Groza natychmiast przerywają napad Wrogości.</p>",
             "sourceId": "Compendium.wfrp4e-core.traits.0VpT5yubw4UL7j6f",
             "specification": "Cel"

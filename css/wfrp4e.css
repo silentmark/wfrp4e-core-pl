@@ -1,3 +1,15 @@
+  /* ==================== (A) CASLON ANTIQUE ==================== */
+  @font-face {
+    font-family: "CaslonAntiquePL";
+    src: url('../fonts/CaslonAntiquePL.ttf');
+  }
+  @font-face {
+    font-family: "CaslonAntiquePL";
+    src: url('../fonts/CaslonAntique-BoldPL.ttf');
+    font-weight: bold;
+  }
+
+
 .app.window-app.sheet.wfrp4e.actor.character-sheet .tab.main.active .characteristics-table .table-header.table-row .table-header:first-of-type {
   max-width: 16%;
   width: 16%;
@@ -36,4 +48,217 @@
 
 .window-app.dialog .window-content .dialog-content .dialog-row .bonus-column label {
   min-width: 100px;
+}
+
+/*Fonts Start*/
+#tinymce .mce-content-body h1,
+.app.window-app.sheet .editor h1,
+.app.window-app.journal-sheet .journal-entry-page.text h1 {
+ font-family: CaslonAntiquePL !important;
+}
+
+#tinymce .mce-content-body h2,
+.app.window-app.sheet .editor h2,
+.app.window-app.journal-sheet .journal-entry-page.text h2 {
+  font-family: CaslonAntiquePL !important;
+}
+
+
+#tinymce .mce-content-body h3,
+.app.window-app.sheet .editor h3,
+.app.window-app.journal-sheet .journal-entry-page.text h3 {
+  font-family: CaslonAntiquePL !important;
+}
+
+#tinymce .mce-content-body .sidebar h4.sidebar-title,
+.app.window-app.sheet .editor .sidebar h4.sidebar-title,
+.app.window-app.journal-sheet .journal-entry-page.text .sidebar h4.sidebar-title {
+  font-family: CaslonAntiquePL !important;
+}
+
+:root {
+  /* =================== 1. ACTOR SHEET FONT STYLES =========== */
+    --window-header-title-font-family: CaslonAntiquePL !important;
+    --major-button-font-family: CaslonAntiquePL !important;
+    --tab-header-font-family: CaslonAntiquePL !important;
+    --actor-label-font-family: CaslonAntiquePL !important;
+}
+
+.sidebar-popout button,
+.sidebar-tab .directory-footer button,
+#macros .directory-footer button,
+#macros .directory-footer button,
+#sidebar button,
+#sidebar .header-actions button,
+.action-buttons button {
+  font-family: CaslonAntiquePL !important;
+}
+
+.combat-sidebar .combat-tracker-header {
+  font-family: CaslonAntiquePL !important;
+}
+
+.combat-sidebar #combat-controls a {
+  font-family: CaslonAntiquePL !important;
+}
+
+.app.window-app.sheet.item-sheet .item-header input[type="text"], input[type="password"] {
+  font-family: CaslonAntiquePL !important;
+}
+
+.app.window-app.sheet.item-sheet .item-details .label-text {
+  font-family: CaslonAntiquePL !important;
+}
+
+.app.window-app.sheet.item-sheet .sheet-tabs {
+  font-family: CaslonAntiquePL !important;
+}
+
+.app.window-app.sheet.item-sheet .tab .label-text {
+  font-family: CaslonAntiquePL !important;
+}
+
+.app.window-app.sheet.item-sheet.career-sheet .sheet-tabs {
+  font-family: CaslonAntiquePL !important;
+}
+
+.app.window-app.sheet.item-sheet.disease-sheet .sheet-tabs {
+  font-family: CaslonAntiquePL !important;
+}
+
+.app.window-app.sheet.item-sheet.talent-sheet .sheet-tabs {
+  font-family: CaslonAntiquePL !important;
+}
+
+.app.window-app.sheet.item-sheet.injury-sheet .sheet-tabs {
+  font-family: CaslonAntiquePL !important;
+}
+
+.app.window-app.sheet.item-sheet.injury-sheet .label-text {
+  font-family: CaslonAntiquePL !important;
+}
+
+.app.window-app.sheet.item-sheet.mutation-sheet .sheet-tabs {
+  font-family: CaslonAntiquePL !important;
+} 
+
+.app.window-app.sheet.item-sheet.creature-trait-sheet .sheet-tabs {
+  font-family: CaslonAntiquePL !important;
+} 
+
+.app.window-app.sheet.item-sheet.creature-trait-sheet .label-text {
+  font-family: CaslonAntiquePL !important;
+}
+
+.app.window-app.sheet.item-sheet.prayer-sheet .sheet-tabs {
+  font-family: CaslonAntiquePL !important;
+} 
+
+.app.window-app.sheet.item-sheet.prayer-sheet .label-text {
+  font-family: CaslonAntiquePL !important;
+}  
+
+.app.window-app.sheet.item-sheet.psychology-sheet .sheet-tabs {
+  font-family: CaslonAntiquePL !important;
+}  
+
+.app.window-app.sheet.item-sheet.skill-sheet .sheet-tabs {
+  font-family: CaslonAntiquePL !important;
+} 
+
+.app.window-app.sheet.item-sheet.skill-sheet .label-text {
+  font-family: CaslonAntiquePL !important;
+}
+
+.app.window-app.sheet.item-sheet.spell-sheet .sheet-tabs {
+  font-family: CaslonAntiquePL !important;
+} 
+
+.app.window-app.sheet.item-sheet.spell-sheet .label-text {
+  font-family: CaslonAntiquePL !important;
+}
+
+.app.window-app.sheet.wfrp4e.actor .tab.religion.active .religion-box-1 .blessed-label {
+  font-family: CaslonAntiquePL !important;
+}
+
+.app.window-app.sheet.wfrp4e.actor .tab.religion.active .religion-box-2 .sin-label {
+  font-family: CaslonAntiquePL !important;
+}
+
+.wfrp4e.actor .randomize-buttons .randomize-label {
+  font-family: CaslonAntiquePL !important;
+}
+
+#homebrew-settings .window-content form h2,
+#client-settings .window-content form h2 {
+  font-family: CaslonAntiquePL !important;
+}
+
+#homebrew-settings .window-content button,
+#client-settings .window-content button {
+  font-family: CaslonAntiquePL !important;
+}    
+
+#controls-reference h3 {
+  font-family: CaslonAntiquePL !important;
+}
+
+.window-app.app.journal-sheet .window-content input[name="name"],
+.window-app.app.journal-sheet .window-content input[name="title"] {
+  font-family: CaslonAntiquePL !important;
+}      
+
+#menu {
+  font-family: CaslonAntiquePL !important;
+}
+
+.wfrp4e.item-sheet .condition-value,
+  .wfrp4e.actor .condition-value {
+    font-family: CaslonAntiquePL !important;
+}
+
+#calendar-settings .window-content h1 {
+  font-family: CaslonAntiquePL !important;
+}
+
+#calendar-settings .window-content h2 {
+  font-family: CaslonAntiquePL !important;
+}
+
+.forien-quest-preview h1,
+#forien-quest-log h1,
+  .calendar-form-container h1 {
+    font-family: CaslonAntiquePL !important;
+}
+
+#dice-config h2,
+.forien-quest-preview h2,
+#forien-quest-log h2,
+.calendar-form-container h2 {
+  font-family: CaslonAntiquePL !important;
+}
+
+#drawing-config h3,
+#dd-importer h3,
+.calendar-form-container h3 {
+  font-family: CaslonAntiquePL !important;
+}
+
+.gm-screen-app button {
+  font-family: CaslonAntiquePL !important;
+}
+
+.simple-calendar.classic .form-group label {
+  font-family: CaslonAntiquePL !important;
+}
+
+.simple-calendar.classic .fsc-mf .tabs .fsc-nf.fsc-_h {
+  font-family: CaslonAntiquePL !important;
+}
+
+.chargen h1,
+.chargen h2,
+.chargen h3{
+  font-family: CaslonAntiquePL !important;
 }

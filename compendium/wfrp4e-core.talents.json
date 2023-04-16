@@ -1315,7 +1315,7 @@
         },
         "Pilot": {
             "id": "WEH97InIX29nzgW1",
-            "name": "Pilot Okrętowy",
+            "name": "Starsza Pilotka",
             "description": "<p>Potrafisz kierować okrętem po zdradliwych akwenach. Kiedy nie powiedzie ci się Test na niepewnych wodach, możesz odwrócić kolejność kości, jeżeli nowy wynik pozwoli ci odnieść sukces. Maksymalnie możesz w ten sposób osiągnąć +1 PS, ponieważ w ostatniej chwili wypatrzyłeś niebezpieczeństwo. </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.WEH97InIX29nzgW1",
             "tests": "Wiosłowanie lub Żeglowanie podczas wytyczania kursu przez "
