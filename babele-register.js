@@ -36,5 +36,29 @@ Hooks.on("init", () => {
 				return data;
 			});
 		},
+		
+		bestiary_traits: (items, translations) => {        
+			const defaultMethod = Converters.fromPack();
+			const translatedItems = defaultMethod(items, translations);
+			const dynamicMapping = new CompendiumMapping("Item", null);
+			const toTranslate = translatedItems.filter(x=> translations[x._id] != null)
+
+			for (let i = 0; i < toTranslate.length; i++) {
+				const item = toTranslate[i];
+				const pack = game.babele.packs.find(pack => pack.translated && pack.hasTranslation(item));
+				if(pack) {
+					let translatedItem = pack.translations[item.name];
+					const translatedData = dynamicMapping.map(item, translatedItem);
+					translatedItem = mergeObject(item, translatedData);
+					translatedItem.system.specification.value = translations[translatedItem._id].specification;
+					if (translations[translatedItem._id].tests) {
+						translatedItem.system.tests.value = translations[translatedItem._id].tests;
+					}
+					const index = translatedItems.findIndex(x=> item._id == item._id);
+					translatedItems[index] = translatedItem;
+				}
+			}
+			return translatedItems;
+		  }
 	});
 });
