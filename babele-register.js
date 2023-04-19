@@ -54,8 +54,6 @@ Hooks.on("init", () => {
 					if (translations[translatedItem._id].tests) {
 						translatedItem.system.tests.value = translations[translatedItem._id].tests;
 					}
-					const index = translatedItems.findIndex(x=> item._id == item._id);
-					translatedItems[index] = translatedItem;
 				}
 			}
 			return translatedItems;
