@@ -96,7 +96,7 @@ Hooks.on("setup", async function () {
 					"Dowodzenie",
 					"Wiedza (Reikland)",
 					"Broń Biała (Podstawowa)",
-					"Broń Zasięgowa (Łuki)",
+					"Broń Zasięgowa (Łuk)",
 				],
 				talents: ["Wróżba Losu", "Błyskotliwość, Charyzmatyczny", 3],
 			},
@@ -179,7 +179,7 @@ Hooks.on("setup", async function () {
 			"Dowodzenie",
 			"Wiedza (Reikland)",
 			"Broń Biała (Podstawowa)",
-			"Broń Zasięgowa (Łuki)",
+			"Broń Zasięgowa (Łuk)",
 		],
 		dwarf: [
 			"Mocna Głowa",
@@ -211,7 +211,7 @@ Hooks.on("setup", async function () {
 		],
 		helf: [
 			"Broń Biała (Podstawowa)",
-			"Broń Zasięgowa (Łuko)",
+			"Broń Zasięgowa (Łuk)",
 			"Dowodzenie",
 			"Język (Eltharin)",
 			"Muzyka (Dowolny instrument)",
@@ -226,7 +226,7 @@ Hooks.on("setup", async function () {
 		welf: [
 			"Atletyka",
 			"Broń Biała (Podstawowa)",
-			"Broń Zasięgowa (Łuko)",
+			"Broń Zasięgowa (Łuk)",
 			"Język (Eltharin)",
 			"Odporność",
 			"Percepcja",
@@ -303,7 +303,7 @@ Hooks.on("setup", async function () {
 		polearm: "Drzewcowa",
 		twohanded: "Dwuręczna",
 		blackpowder: "WFRP4E.GroupDescription.Blackpowder",
-		bow: "Łuki",
+		bow: "Łuk",
 		crossbow: "WFRP4E.GroupDescription.Crossbow",
 		entangling: "Pętającą",
 		engineering: "WFRP4E.GroupDescription.Engineering",
@@ -750,7 +750,7 @@ Hooks.on("setup", async function () {
 					symptom: true,
 					script: `
                             let modifier = 0
-                            if (this.effect.label.includes("Umiarkowane"))
+                            if (this.effect.label.includes("Umiarkowany"))
                                 modifier = -20
                             else
                                 modifier = -10
@@ -931,8 +931,8 @@ Hooks.on("setup", async function () {
 		},
 	};
 
-	for (let obj in WFRP4E) {
-		for (let el in WFRP4E[obj]) {
+	for (const obj in WFRP4E) {
+		for (const el in WFRP4E[obj]) {
 			if (typeof WFRP4E[obj][el] === "string") {
 				WFRP4E[obj][el] = game.i18n.localize(WFRP4E[obj][el]);
 			}
