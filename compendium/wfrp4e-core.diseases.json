@@ -129,7 +129,7 @@
                 },
                 "Sc30lmNSCIJ0DGab": {
                     "id": "Sc30lmNSCIJ0DGab",
-                    "label": "Biegunka (Poważna)"
+                    "label": "Biegunka (Poważny)"
                 },
                 "VBP4fo86uuFd6YiW": {
                     "id": "VBP4fo86uuFd6YiW",
@@ -142,7 +142,7 @@
             "contraction": "Porażka w <b>Łatwym (+40) Teście Odporności</b>, który należy wykonać, jeśli zainfekowany przedmiot trafi do ust.",
             "incubation_value": "2d10",
             "incubation_unit": "dni",
-            "symptoms": "Apatia, Biegunka (Poważna), Gorączka, Nawroty (Częste), Nudności",
+            "symptoms": "Apatia, Biegunka (Poważny), Gorączka, Nawroty (Częste), Nudności",
             "permanent": ""
         },
         "Festering Wound": {
@@ -197,7 +197,7 @@
                 },
                 "V2oU1zPnQR94HCJQ": {
                     "id": "V2oU1zPnQR94HCJQ",
-                    "label": "Gorączka",
+                    "label": "Gorączka (Poważny)",
                     "script": "\n                       \n                    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"]\nif (args.type == \"weapon\") {\n    args.prefillModifiers.modifier -= 10;\n}\nelse if (args.type == \"characteristic\") {\n    if (applicableCharacteristics.includes(args.item)) {\n        args.prefillModifiers.modifier -= 10;\n    }\n}\nelse if (args.type == \"skill\") {\n    if (applicableCharacteristics.includes(args.item.characteristic.key)) {\n        args.prefillModifiers.modifier -= 10\n    }\n}"
                 }
             },
@@ -206,7 +206,7 @@
             "contraction": "Powikłania w związku z inną chorobą lub otrzymaną Raną Krytyczną.",
             "incubation_value": "Natychmiastowa",
             "incubation_unit": "",
-            "symptoms": "Apatia, Gorączka (Wysoka), Uwiąd",
+            "symptoms": "Apatia, Gorączka (Poważny), Uwiąd",
             "permanent": ""
         },
         "Ratte Fever": {

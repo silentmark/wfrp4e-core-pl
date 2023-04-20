@@ -46,7 +46,7 @@
         "Broken Collar Bone": {
             "id": "39906D4BcVGzsiQp",
             "name": "Złamany obojczyk",
-            "description": "<p>Postać pada na ziemię w Stanie Utrata Przytomności i nie ocknie się, dopóki nie zostanie jej udzielona Pomoc Medyczna, a ponadto otrzymuje Uraz @Compendium[wfrp4e-core.injuries.EaqlLRQigwnsEAXX]{Złamanie (poważne)}.</p>",
+            "description": "<p>Postać pada na ziemię w Stanie <i>Utrata Przytomności</i> i nie ocknie się, dopóki nie zostanie jej udzielona <b>Pomoc Medyczna</b>, a ponadto otrzymuje Uraz @Compendium[wfrp4e-core.injuries.EaqlLRQigwnsEAXX]{Złamanie (poważne)}.</p>",
             "sourceId": "Compendium.wfrp4e-core.criticals.39906D4BcVGzsiQp",
             "effects": {
                 "QaSpvCS9KAifTCNw": {
@@ -79,7 +79,7 @@
         "Concussive Blow": {
             "id": "3Tk4cX1ri20oUoBh",
             "name": "Wstrząśnienie mózgu",
-            "description": "<p>Mózg obija się wewnątrz czaszki, a krew wypływa z nosa i uszu. Postać otrzymuje 1 poziom Stanu @Condition[Ogłuszenie], 2 poziomy Stanu @Condition[Krwawienie] oraz [[/r 1d10]] poziomów Stanu @Condition[Oszołomienia]. Ponadto na 1k10 dni uznaje się ją również za Zmęczoną. Jeśli postać otrzyma kolejną Ranę Krytyczną w głowę, będąc jeszcze Zmęczoną po ostatnim wstrząśnieniu mózgu, musi wykonać <strong>Przeciętny (+20) Test Odporności</strong>. Jeśli ten się nie powiedzie, otrzymuje Stan @Condition[Nieprzytomny].</p>",
+            "description": "<p>Mózg obija się wewnątrz czaszki, a krew wypływa z nosa i uszu. Postać otrzymuje 1 poziom Stanu @Condition[Ogłuszenie], 2 poziomy Stanu @Condition[Krwawienie] oraz [[/r 1d10]] poziomów Stanu @Condition[Oszołomienia]. Ponadto na [[/r 1d10]] dni uznaje się ją również za @Condition[Fatigued]{Zmęczoną}. Jeśli postać otrzyma kolejną Ranę Krytyczną w głowę, będąc jeszcze @Condition[Fatigued]{Zmęczoną} po ostatnim wstrząśnieniu mózgu, musi wykonać <strong>Przeciętny (+20) Test Odporności</strong>. Jeśli ten się nie powiedzie, otrzymuje Stan @Condition[Nieprzytomny].</p>",
             "sourceId": "Compendium.wfrp4e-core.criticals.3Tk4cX1ri20oUoBh",
             "effects": {
                 "4o8C5gO5JrPMQy7V": {
@@ -112,7 +112,7 @@
         "Dislocated Knee": {
             "id": "8GrHGyhYlbdxqluu",
             "name": "Zwichnięte kolano",
-            "description": "<p>Kolano zostaje wyrwane ze stawu. Postać otrzymuje Stan @Condition[Powalenie] i pada na ziemię. Musi zdać Trudny (-20) Test Odporności, w przeciwnym wypadku otrzyma 1 poziom Stanu @Condition[Oszołomienie], którego nie można usunąć, dopóki nie zostanie jej udzielona Pomoc Medyczna. Jednakże nastawienie kolana, nawet po udzieleniu Pomocy Medycznej, wymagać będzie <strong>Wydłużonego Przeciętnego (+20) Testu Leczenia</strong>, w którym należy osiągnąć co najmniej 6 PS. Dopiero wtedy postać będzie mogła znów ruszać nogą. Szybkość spada o połowę, a wszystkie Testy, w których wykorzystywana jest noga, otrzymują karę -10 przez [[/r 1d10]] dni.</p>",
+            "description": "<p>Kolano zostaje wyrwane ze stawu. Postać otrzymuje Stan @Condition[Powalenie] i pada na ziemię. Musi zdać <b>Trudny (-20) Test Odporności</b>, w przeciwnym wypadku otrzyma 1 poziom Stanu @Condition[Oszołomienie], którego nie można usunąć, dopóki nie zostanie jej udzielona <b>Pomoc Medyczna</b>. Jednakże nastawienie kolana, nawet po udzieleniu Pomocy Medycznej, wymagać będzie <strong>Wydłużonego Przeciętnego (+20) Testu Leczenia</strong>, w którym należy osiągnąć co najmniej 6 PS. Dopiero wtedy postać będzie mogła znów ruszać nogą. Szybkość spada o połowę, a wszystkie Testy, w których wykorzystywana jest noga, otrzymują karę -10 przez [[/r 1d10]] dni.</p>",
             "sourceId": "Compendium.wfrp4e-core.criticals.8GrHGyhYlbdxqluu",
             "effects": {
                 "vGXj3JcQSik2Fof6": {
@@ -155,7 +155,7 @@
         "Dislocated Shoulder": {
             "id": "92vQ9g5DxlWNmD1c",
             "name": "Wywichnięty bark",
-            "description": "<p>Ramię zostało wyrwane ze stawu. Postać musi zdać <strong>Trudny (-20) Test Odporności</strong>, w przeciwnym wypadku otrzyma Stany @Condition[Powalenie] i @Condition[Utrata Przytomności]. Wszystko, co było trzymane w dłoni, wypada, a ramię jest bezużyteczne i uznawane za stracone (patrz @Compendium[wfrp4e-core.injuries.MnMZv7ZXoRqoH9dS]{Amputacja}). Ponadto postać otrzymuje 1 poziom @Condition[Oszołomienie], dopóki nie zostanie jej udzielona Pomoc Medyczna. Jednakże nastawienie ramienia, nawet po udzieleniu Pomocy Medycznej, wymagać będzie Wydłużonego <strong>Przeciętnego (+20) Testu Leczenia</strong>, w którym należy osiągnąć co najmniej 6 PS. Dopiero wtedy postać będzie mogła znów ruszać ramieniem. Testy wykonywane przy pomocy tego ramienia obarczone są karą -10 przez <strong>[[/r 1d10]]</strong> dni.</p>",
+            "description": "<p>Ramię zostało wyrwane ze stawu. Postać musi zdać <strong>Trudny (-20) Test Odporności</strong>, w przeciwnym wypadku otrzyma Stany @Condition[Powalenie] i @Condition[Utrata Przytomności]. Wszystko, co było trzymane w dłoni, wypada, a ramię jest bezużyteczne i uznawane za stracone (patrz @Compendium[wfrp4e-core.injuries.MnMZv7ZXoRqoH9dS]{Amputacja}). Ponadto postać otrzymuje 1 poziom @Condition[Oszołomienie], dopóki nie zostanie jej udzielona <b>Pomoc Medyczna</b>. Jednakże nastawienie ramienia, nawet po udzieleniu Pomocy Medycznej, wymagać będzie Wydłużonego <strong>Przeciętnego (+20) Testu Leczenia</strong>, w którym należy osiągnąć co najmniej 6 PS. Dopiero wtedy postać będzie mogła znów ruszać ramieniem. Testy wykonywane przy pomocy tego ramienia obarczone są karą -10 przez <strong>[[/r 1d10]]</strong> dni.</p>",
             "sourceId": "Compendium.wfrp4e-core.criticals.92vQ9g5DxlWNmD1c",
             "effects": {
                 "Ce9QAvROf94V16sJ": {
@@ -185,7 +185,7 @@
         "Ruptured Tendon": {
             "id": "9MKzpUh761nGa76M",
             "name": "Zerwane ścięgno",
-            "description": "<p>W wyniku zerwania ścięgna w nodze postać otrzymuje Stany @Condition[Powalenie] i @Condition[Oszołomienie]. Musi także zdać <strong>Trudny (-20) Test Odporności</strong>, w przeciwnym wypadku nastąpi @Condition[Utrata Przytomności]. Noga jest bezwładna (patrz Amputacje), a cios skutkuje Urazem @Compendium[wfrp4e-core.injuries.3S4OYOZLauXctmev]{Zerwanie mięśni (poważne)}.</p>",
+            "description": "<p>W wyniku zerwania ścięgna w nodze postać otrzymuje Stany @Condition[Powalenie] i @Condition[Oszołomienie]. Musi także zdać <strong>Trudny (-20) Test Odporności</strong>, w przeciwnym wypadku nastąpi @Condition[Utrata Przytomności]. Noga jest bezwładna (patrz <b>Amputacje</b>), a cios skutkuje Urazem @Compendium[wfrp4e-core.injuries.3S4OYOZLauXctmev]{Zerwanie mięśni (poważne)}.</p>",
             "sourceId": "Compendium.wfrp4e-core.criticals.9MKzpUh761nGa76M",
             "effects": {
                 "ixCa0FfjTQFA9Th6": {
