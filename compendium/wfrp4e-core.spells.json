@@ -943,7 +943,7 @@
                 },
                 "qtClDATHbIL7tqjT": {
                     "id": "qtClDATHbIL7tqjT",
-                    "label": "Barkskin"
+                    "label": "Skóra z kory"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -1788,7 +1788,7 @@
             "effects": {
                 "3x5jSYFsX8fx42oy": {
                     "id": "3x5jSYFsX8fx42oy",
-                    "label": "Forest of Thorns",
+                    "label": "Pole cierniowe",
                     "script": "let test = await this.actor.setupCharacteristic(\"ag\");\nawait test.roll();\n\nif (test.result.outcome == \"failure\")\n{\n   await this.actor.addCondition(\"bleeding\")\n   this.actor.addCondition(\"entangled\")\n}"
                 }
             }
@@ -3924,7 +3924,7 @@
             "effects": {
                 "KlqYluyUB2nxWM4W": {
                     "id": "KlqYluyUB2nxWM4W",
-                    "label": "Scythe of Shyish",
+                    "label": "Kosa żniwiarza",
                     "script": "    let scythe = (await fromUuid(\"Compendium.wfrp4e-core.trappings.CXg7XOFJwu4LZ9LM\")).toObject();\n    scythe.name = \"Scythe of Shyish\";\n    scythe.system.damage.value = \"WPB + 3\"\n    scythe.system.equipped = true;\n    scythe.img = this.effect.icon\n    this.actor.createEmbeddedDocuments(\"Item\", [scythe])"
                 }
             }
@@ -4004,7 +4004,7 @@
             "effects": {
                 "UCY6gXI2WzgjrDhR": {
                     "id": "UCY6gXI2WzgjrDhR",
-                    "label": "Amber Talons",
+                    "label": "Szpony furii",
                     "script": "    let amberTalons = foundry.utils.deepClone(game.wfrp4e.config.systemItems.unarmed);\n    amberTalons.name = \"Amber Talons\";\n    amberTalons.system.damage.value = \"SB + WPB\"\n    amberTalons.system.equipped = true;\n    amberTalons.effects.push({\n        label : \"Amber Talons\",\n        transfer: false,\n        icon : \"modules/wfrp4e-core/icons/spells/amber-talons.png\" ,\n        flags : {\n          wfrp4e : {\n            effectApplication: \"damage\",\n            effectTrigger : \"applyDamage\",\n            hide : false,\n            preventDuplicateEffects: false,\n            script : \"if (args.totalWoundLoss >= 1)\\n{ \\n    args.actor.addCondition(\\\"bleeding\\\")\\n}\"\n          }\n        }\n      })\n    this.actor.createEmbeddedDocuments(\"Item\", [amberTalons])"
                 }
             }
@@ -4085,7 +4085,7 @@
                 "H5WPfe1FHjeSkerA": {
                     "script": "let item;\ndebugger;\nlet items = []\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.rOV2s6PQBBrhpMOv\")\n{\n    let data = item.toObject();\n    items.push(data)\n}\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.VUJUZVN3VYhOaPjj\")\n{\n    let data = item.toObject();\n    data.system.specification.value = 2\n    items.push(data)\n}\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.GbDyBCu8ZjDp6dkj\")\n{\n    let data = item.toObject();\n    items.push(data)\n}\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.a8MC97PLzl10WocT\")\n{\n    let data = item.toObject();\n    items.push(data)\n}\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.pLW9SVX0TVTYPiPv\")\n{\n    let data = item.toObject();\n    data.system.specification.value = this.actor.system.characteristics.s.bonus + 1;\n    items.push(data)\n}\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.pTorrE0l3VybAbtn\")\n{\n    let data = item.toObject();\n    data.system.specification.value = 1;\n    items.push(data)\n}\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.fjd1u9VAgiYzhBRp\")\n{\n    let data = item.toObject();\n    items.push(data)\n}\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.mDgEMOoJpi8DkRYb\")\n{\n    let data = item.toObject();\n    items.push(data)\n}\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.AtpAudHA4ybXVlWM\")\n{\n    let data = item.toObject();\n    data.system.specification.value = this.actor.system.characteristics.s.bonus + 2;\n    items.push(data)\n}\n\nthis.actor.createEmbeddedDocuments(\"Item\", items)\n",
                     "id": "H5WPfe1FHjeSkerA",
-                    "label": "Wyssan’s Wildform"
+                    "label": "Dzika postać Wissana"
                 }
             }
         },
@@ -4122,7 +4122,7 @@
                 "PN345hPPQdbkVjii": {
                     "script": "await args.actor.addCondition(\"blinded\")\nawait args.actor.addCondition(\"deafened\")\nargs.actor.addCondition(\"fatigued\")",
                     "id": "PN345hPPQdbkVjii",
-                    "label": "Mystifying Miasma"
+                    "label": "Strefa zamętu"
                 }
             }
         },
