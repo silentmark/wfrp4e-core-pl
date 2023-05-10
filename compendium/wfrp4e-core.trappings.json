@@ -722,7 +722,7 @@
         "Pole (3 yards)": {
             "id": "i2DKz375sriXqfkS",
             "name": "Drąg (3 metry)",
-            "description": "<p>Długi drąg używany do manewrowania łodzią. Może zostać użyty jako @Item[Improvised Weapon].</p>",
+            "description": "<p>Długi drąg używany do manewrowania łodzią. Może zostać użyty jako @UUID[Compendium.wfrp4e-core.trappings.mRU10yAWWWs5WoKt]{Broń Improwizowana}.</p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.i2DKz375sriXqfkS"
         },
         "Mail Coat": {
@@ -823,7 +823,7 @@
         "Animal Trap": {
             "id": "k0KeWhPgFGUcOgs0",
             "name": "Sidła na zwierzęta",
-            "description": "<p>Używane do chwytania zwierzyny (patrz Zbieranie pożywienia i ziół na stronie 129).</p>",
+            "description": "<p>Używane do chwytania zwierzyny (patrz @UUID[Compendium.wfrp4e-core.skills.os4NKy5Oy6sRt1eh]{Sztuka Przetrwania} lub Zbieranie pożywienia i ziół na stronie 129).</p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.k0KeWhPgFGUcOgs0"
         },
         "Heavy Crossbow": {

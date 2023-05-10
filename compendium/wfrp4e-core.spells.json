@@ -389,7 +389,14 @@
             "duration": "Bonus SW Rund",
             "target": "1",
             "range": "Siła Woli metrów",
-            "lore": "fire"
+            "lore": "fire",
+            "effects": {
+                "N25aw2AX02DBl2O5": {
+                    "id": "N25aw2AX02DBl2O5",
+                    "label": "Gorejący miecz Rhuin",
+                    "script": "args.item.system.qualities.value.push({name : \"impact\"})\nargs.item.createConditionalEffect({\n    \"label\": this.effect.label,\n    \"icon\" : this.effect.icon,\n    \"flags\": {\n        \"wfrp4e\": {\n            \"effectTrigger\": \"applyDamage\",\n            \"effectApplication\": \"damage\",\n            \"hide\": false,\n            \"preventDuplicateEffects\": false,\n            \"script\": \"args.actor.addCondition('ablaze')\"\n        }\n    },\n});"
+                }
+            }
         },
         "Push (Beasts)": {
             "id": "3Wilae1bkHUDR7Aj",

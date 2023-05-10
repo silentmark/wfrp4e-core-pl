@@ -12,13 +12,13 @@
         "Ruptered Ligament": {
             "id": "263ic3ulLuR9DPzP",
             "name": "Zerwane więzadło",
-            "description": "<p>Postać natychmiast upuszcza wszystko, co trzymała w dłoni. Otrzymuje @Compendium[wfrp4e-core.injuries.qn4ZpvTQIX4rcJDl]{Zerwanie mięśni (pomniejsze)}.</p>",
+            "description": "<p>Postać natychmiast upuszcza wszystko, co trzymała w dłoni. Otrzymuje @UUID[Compendium.wfrp4e-core.injuries.qn4ZpvTQIX4rcJDl]{Zerwanie mięśni (pomniejsze)}.</p>",
             "sourceId": "Compendium.wfrp4e-core.criticals.263ic3ulLuR9DPzP",
             "effects": {
                 "MgpYZu22zgrLdxmf": {
                     "id": "MgpYZu22zgrLdxmf",
                     "label": "Zerwane więzadło",
-                    "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.qn4ZpvTQIX4rcJDl\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.injuries.qn4ZpvTQIX4rcJDl\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
                 }
             },
             "wounds": "3",
