@@ -13,12 +13,15 @@ Hooks.on("init", () => {
 				//TODO: map script.
 				const translation = translations[data.label] || translations[data._id];
 				if (translations && translation) {
-					return mergeObject(
+				 	const newEffect = mergeObject(
 						data,
 						mergeObject(translation, { translated: true }),
 					);
+					if (translation.script?.indexOf("await ") > -1) {
+						newEffect.flags.wfrp4e.isAsync = true;
+					}
+					return newEffect;
 				}
-
 				return data;
 			});
 		},

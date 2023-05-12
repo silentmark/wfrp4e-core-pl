@@ -129,7 +129,7 @@
                 "oAsvKkgS9pLtavj7": {
                     "id": "oAsvKkgS9pLtavj7",
                     "label": "Przekonujący",
-                    "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Charm\") &&  (args.test.result.roll <= 5 || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop())\n   if (ones > SL) {\n     args.test.result.other.push(`<b>${this.effect.label}</b>: ${ones + args.test.successBonus + args.test.slBonus} SL if debating.`);\n   }\n}"
+                    "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Charm\") &&  (args.test.result.roll <= 5 || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop())\n   if (ones > SL) {\n     args.test.result.other.push(`<b>${this.effect.label}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS podczas dyskusji lub debaty.`);\n   }\n}"
                 }
             },
             "tests": "Charyzma, gdy prowadzisz debatę lub się z kimś spierasz"
@@ -139,7 +139,7 @@
             "name": "Atak Wyprzedzający",
             "description": "<p>Twoje błyskawiczne ciosy pozwalają na powalenie przeciwników, zanim oni sami zdążą zaatakować. Kiedy wróg na ciebie Szarżuje, wykonaj udany Wymagający (+0) Test Inicjatywy, by natychmiast wykonać Darmowy Atak poza normalną kolejnością Rundy. Używasz broni, którą trzymasz w wiodącej ręce. Możesz wykonać tyle Ataków Wyprzedzających w Rundzie, ile razy wykupiłeś ten Talent, ale tylko raz na każdego szarżującego.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.4AqSkJnFPqNuTkos",
-            "tests": "Initiative Tests concerning this Talent"
+            "tests": "Testy inicjatywy związane z tym talentem"
         },
         "Strike Mighty Blow": {
             "id": "4MJJCiOKPkBByYwW",
@@ -173,7 +173,7 @@
             "name": "Błyskawiczny Strzał",
             "description": "<p>Jeśli posiadasz naładowaną broń dystansową, możesz z niej wystrzelić poza Kolejnością Inicjatywy, zanim zareaguje którykolwiek z uczestników walki. Rzut na trafienie wykonaj z uwzględnieniem wszystkich modyfikatorów. Użycie tego Talentu wymaga poświęcenia zarówno Akcji, jak i Ruchu z nadchodzącej Tury i kiedy nadejdzie twoja kolej, będą one traktowane jako wykorzystane. Jeśli ten Talent chcą wykorzystać dwie lub więcej postaci, pierwsza strzela ta, która wykupiła go więcej razy. Jeśli i na tym polu mamy remis, obydwie postacie strzelają równocześnie i wynik ich ataków powinien być rozliczony jednocześnie</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.5eDd6iFeR9G6cCfz",
-            "tests": "Broń Zasięgowa, gdy wykorzystujesz Talent Błyskawiczny "
+            "tests": "Broń Zasięgowa, gdy wykorzystujesz Talent Błyskawiczny"
         },
         "Beneath Notice": {
             "id": "5KP9sOoLSGvj9EXp",
@@ -210,7 +210,7 @@
                 "pq0wuLa5jebvLTGR": {
                     "id": "pq0wuLa5jebvLTGR",
                     "label": "Atrakcyjny",
-                    "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Charm\") &&  (args.test.result.roll <= 5 || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop())\n   if (ones > SL)\n      args.test.result.other.push(`<b>${this.effect.label}</b>: ${ones + args.test.successBonus + args.test.slBonus} SL if target is attracted to you.`)\n}"
+                    "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Charm\") &&  (args.test.result.roll <= 5 || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop())\n   if (ones > SL)\n      args.test.result.other.push(`<b>${this.effect.label}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS jeśli cel testu uważa postać za pociągającą.`)\n}"
                 }
             },
             "tests": "Charyzma, by wpłynąć na tych, którym się podobasz"
@@ -280,28 +280,28 @@
                     "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Gossip\")) {\n    args.test.preData.canReverse = true;\n}"
                 }
             },
-            "tests": "Plotkowanie z wędrowcami"
+            "tests": "Testy Plotkowania z wędrowcami"
         },
         "Unshakable": {
             "id": "8oWhzlcw7oiHGMFu",
             "name": "Niewzruszony",
             "description": "<p>Jesteś twardym wiarusem, który przetrwał niejedną salwę z broni czarnoprochowej. Musisz wykonać Test Opanowania, by oprzeć się Stanowi Panika, dopiero kiedy zostaniesz zraniony przez broń prochową, a nie wtedy, gdy zostaniesz z niej tylko ostrzelany  </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.8oWhzlcw7oiHGMFu",
-            "tests": "Cool Tests to resist Blackpowder panic"
+            "tests": "Testy Opanowania przeciwko broni prochowej."
         },
         "Fearless": {
             "id": "8pVzgPkgWpTJvfhG",
             "name": "Nieustraszony (typ wroga)",
             "description": "<p> Jesteś tak odważny lub szalony, że strach przed pewnymi istotami jest dla ciebie wspomnieniem. Za pomocą jednego Przeciętnego (+20) Testu Opanowania możesz sprawić, że nie dotyczą cię efekty Zastraszania, Strachu i Grozy, powodowane przez określoną grupę wrogów. Oto typowe przykłady takich wrogów: Banici, Czarownice, Strażnicy, Wampiry, Zielonoskórzy, Zwierzoludzie.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.8pVzgPkgWpTJvfhG",
-            "tests": "Opanowanie przeciwko wrogiemu Zastraszaniu oraz Testom "
+            "tests": "Opanowanie przeciwko wrogiemu Zastraszaniu, Strachowi oraz Grozie"
         },
         "Roughrider": {
             "id": "9CAkY3SQjQxRTlNJ",
             "name": "Urodzony w Siodle",
             "description": "<p>W siodle czujesz się jak w domu i nie straszne ci najtrudniejsze warunki. Wiesz, jak najlepiej wykorzystać wierzchowca w walce. Jeśli posiadasz Umiejętność Jeździectwo, możesz pokierować koniem tak, by podjął Akcję, a nie tylko wykonywał Ruch. Nie musisz w tym celu wykonywać do tego Testu Jeździectwa.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.9CAkY3SQjQxRTlNJ",
-            "tests": "Jeździectwo (Konie) w walce"
+            "tests": "Testy Jeździectwa (Konie) w walce"
         },
         "Animal Affinity": {
             "id": "9fq6p9Q6H02LjaSi",
@@ -315,18 +315,18 @@
             "name": "Wyczulony Zmysł",
             "description": "<p>Jeden z twoich pięciu zmysłów jest tak wyczulony, że wyczuwasz to, co umyka innym. Możesz wykonać Test Percepcji, by dowiedzieć się czegoś więcej niż inni, opierając się na tym szczególnym zmyśle. Przykładowo może to być dostrzeżenie dalekiego orła, którego nie widzą inni, wywęszenie prawie niewyczuwalnej trucizny, dosłyszenie bicia serca myszy kryjącej się w ścianie, wyczucie dotykiem ukrytej wiadomości wyskrobanej na papierze czy porównanie smaku dwóch piw od tego samego piwowara, by dowiedzieć się, czy zostały nalane z dwóch różnych beczek.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.9h82z72XGo9tfgQS",
-            "tests": "Percepcja (z wykorzystaniem tego zmysłu)"
+            "tests": "Testy Percepcji wykorzystujące dany zmysł."
         },
         "Fast Hands": {
             "id": "9sMAf0xmehjEmUao",
             "name": "Ruchliwe dłonie",
             "description": "<p>Manipulujesz dłońmi z zaskakującą zręcznością. Gapiom i przypadkowym obserwatorom nie przysługuje bierny Test Percepcji, gdy wykorzystujesz Umiejętność Zwinne Palce, chyba że żywią oni wobec ciebie podejrzenia i obserwują twoje ruchy. Testy Broni Białej (Bijatyki) wykonywane, by dotknąć przeciwnika, wykonujesz z premią +10 x liczba wykupień tego Talentu</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.9sMAf0xmehjEmUao",
-            "tests": "Zwinne Palce, Broń Biała (Bijatyka), aby dotknąć przeciwnika"
+            "tests": "Test Zwinnych Palców, Broni Białej (Bijatyka), aby dotknąć przeciwnika"
         },
         "Trapper": {
             "id": "a7v422EZcOUUC20X",
-            "name": "Traperka",
+            "name": "Traper",
             "description": "<p>Wiesz, jak używać wnyków, i możesz wykonać Test Percepcji, by je zauważyć, bez konieczności deklarowania poszukiwań. MG będzie pewnie wolał wykonać go samemu, na wypadek gdyby rzut okazał się nieudany.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.a7v422EZcOUUC20X",
             "tests": "Percepcja, by zauważyć pułapki, Zastawianie Pułapek"
@@ -357,7 +357,7 @@
                     "script": "args.actor.details.move.run += 4;"
                 }
             },
-            "tests": "Atletyka podczas Biegu"
+            "tests": "Testy Atletyki podczas Biegu"
         },
         "Supportive": {
             "id": "aZavWXbSXVBmWeJi",
@@ -368,7 +368,7 @@
                 "S487mwxmDJh9rULA": {
                     "id": "S487mwxmDJh9rULA",
                     "label": "Pomocny",
-                    "script": "if (args.test.item && args.test.characteristicKey== \"fel\" &&  (args.test.result.roll <= 5 || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10);\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop());\n   if (ones > SL)\n      args.test.result.other.push(`<b>${this.effect.label}</b>: ${ones + args.test.successBonus + args.test.slBonus} SL if influencing those with a higher status.`);\n}"
+                    "script": "if (args.test.item && args.test.characteristicKey== \"fel\" &&  (args.test.result.roll <= 5 || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10);\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop());\n   if (ones > SL)\n      args.test.result.other.push(`<b>${this.effect.label}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS podczas wpływania na osoby o wyższym Statusie.`);\n}"
                 }
             },
             "tests": "Testy społeczne, by wpłynąć na stojących wyżej w hierarchii"
@@ -378,7 +378,7 @@
             "name": "Intrygant",
             "description": "<p>Jesteś mistrzem intryg i za każdym rogiem węszysz spiski. Raz na sesję możesz zadać MG pytanie o sytuację polityczną i zagmatwaną sieć powiązań, a on wykona w tajemnicy Test Inteligencji i przekaże ci pewną ilość informacji, zależną od liczby PS uzyskanych dzięki rzutowi. </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.b4x1qEWcevX7xK58",
-            "tests": "Inteligencji dotyczące tego Talentu"
+            "tests": "Testy Inteligencji dotyczące tego Talentu"
         },
         "Lightning Reflexes": {
             "id": "BbStIySkF1hDM2zq",
@@ -403,14 +403,14 @@
             "name": "Wściekły Atak",
             "description": "<p>Lawinowo zadajesz ciosy, zasypując wroga furią Ulryka. Raz na Rundę, jeśli trafisz przeciwnika w Walce Wręcz, możesz zużyć Przewagę albo spożytkować Ruch (zakładając, że w tej Rundzie możesz się jeszcze ruszyć), by wykonać od razu dodatkowy atak.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.BlHVzfs0Ow6IYEDw",
-            "tests": "Broń Biała podczas wykonywania dodatkowych ataków"
+            "tests": "Testy Broni Białej podczas wykonywania dodatkowych ataków"
         },
         "Hunter's Eye": {
             "id": "bxbTiLzbaz4vdukT",
             "name": "Oko Łowcy",
             "description": "<p>Jesteś dobrym myśliwym i znasz najlepsze sposoby szukania zwierzyny. Kiedy podróżujesz po bogatych w nią ziemiach, jesteś automatycznie w stanie wyżywić siebie i tylu towarzyszy, ile razy wykupiłeś ten Talent, jeśli tylko masz czas, by zapolować, oraz odpowiednie wyposażenie.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.bxbTiLzbaz4vdukT",
-            "tests": "Dowolny wiążący się z Tropieniem lub polowaniem na zwierzyne"
+            "tests": "Dowolny test wiążący się z Tropieniem lub polowaniem na zwierzyne"
         },
         "Instinctive Diction": {
             "id": "BYChSVfMG004eflQ",
@@ -431,7 +431,7 @@
             "name": "Szuler Kościany",
             "description": "<p>Jesteś mistrzem gry w kości, a zarzuty oszustwa są nieuzasadnione. Kiedy z powodzeniem używasz Umiejętności Hazard czy Zwinne Palce podczas gry w kości, możesz albo zachować obliczoną normalnie liczbę PS, albo określić ich liczbę przez wynik na kości jedności. W ten sposób wynik rzutu 06 może oznaczać +6 PS. Je- śli podczas sesji będziecie naprawdę grali w kości, rzucasz tyloma więcej, ile razy wykupiłeś ten Talent, i wybierasz najlepsze rezultaty.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.cAxNctMFWIAjDgV3",
-            "tests": "Hazard lub Zwinne Palce podczas gier kościanych"
+            "tests": "Test Hazardu lub Zwinnych Palców podczas gier kościanych"
         },
         "Strong Legs": {
             "id": "CV9btQn09S9Fn8Jk",
@@ -454,17 +454,17 @@
                 "AVhPxHHlKUolT589": {
                     "id": "AVhPxHHlKUolT589",
                     "label": "Snajper",
-                    "script": "if (args.item.range && args.item.range.bands) {\n    args.item.range.bands[game.i18n.localize(\"Long Range\")].modifier = 0\n    args.item.range.bands[game.i18n.localize(\"Extreme\")].modifier /= 2\n}"
+                    "script": "if (args.item.range && args.item.range.bands) {\n    args.item.range.bands[game.i18n.localize(\"Long Range\")].modifier = 0;\n    args.item.range.bands[game.i18n.localize(\"Extreme\")].modifier /= 2;\n}"
                 }
             },
-            "tests": "Broń Strzelecka (zasięg daleki lub bardzo daleki)"
+            "tests": "Testy Broni Zasięgowej (przy zasięgu dalekim lub bardzo dalekim)"
         },
         "Disarm": {
             "id": "DS44h27iCOvUBa4O",
             "name": "Rozbrojenie",
             "description": "<p> Celnym uderzeniem lub sprawnym ruchem nadgarstka jesteś w stanie wytrącić broń przeciwnikowi z dłoni. W ramach swojej Akcji wykonaj Przeciwstawny Test Broni Białej przeciwko wrogiemu Testowi Broni Białej. Jeśli ci się powiedzie, wybijasz broń z ręki przeciwnika, która odlatuje o 1k5 metrów w losowym kierunku. MG może zadecydować o tym, co dzieje się jeszcze. Jeśli wygrasz o 2 PS, ty decydujesz, jak daleko odleci broń, zamiast określać to losowo. Jeśli wygrasz o 4 PS, możesz też zadecydować, w którą stronę pofrunie. Jeżeli wygrasz Test o 6 PS lub więcej, łapiesz oręż przeciwnika, o ile masz wolną rękę. Ten Talent na nic się nie przyda, jeśli wróg nie używa broni lub jest większy od ciebie.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.DS44h27iCOvUBa4O",
-            "tests": "Broń Biała w sytuacjach związanych z tym Talentem"
+            "tests": "Test Broni Białej w sytuacjach związanych z tym Talentem"
         },
         "Fleet Footed": {
             "id": "E3vTSCzgrasNijUO",
@@ -490,7 +490,7 @@
                     "label": "Nienawiść (Grupa)"
                 }
             },
-            "tests": "Siła Woli (Opieranie się Grupie)"
+            "tests": "Test Siły Woli podczas opierania się danej grupie"
         },
         "Small": {
             "id": "eBwHnWdwQJ590ASb",
@@ -501,7 +501,7 @@
                 "keKRZ1nmziD1BMXg": {
                     "id": "keKRZ1nmziD1BMXg",
                     "label": "Mały",
-                    "script": "args.size = \"sml\""
+                    "script": "args.size = \"sml\";"
                 }
             }
         },
@@ -550,7 +550,7 @@
             "name": "Pierwsza Pomoc",
             "description": "<p>Potrafisz szybko opatrywać rany. Kiedy nie uda ci się Test Leczenia podczas używania Bandaży, możesz odwrócić kolejność kostek, jeśli to przyniesie ci sukces. Jeśli tak zrobisz, nie możesz uzyskać więcej niż +1 PS, ponieważ skupiasz się na szybkim, a nie dokładnym za- łożeniu opatrunku  </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.fEFAMNqh8nJIfBkM",
-            "tests": "Leczenie podczas Rundy walki"
+            "tests": "Testy leczenia, gdy trwa walka"
         },
         "Strong Back": {
             "id": "FF41XPboORgyDNsv",
@@ -579,7 +579,7 @@
                 "HRSjpI6pAoSuf9tl": {
                     "id": "HRSjpI6pAoSuf9tl",
                     "label": "Woltyżerka",
-                    "script": "if (args.type == \"characteristic\") {\n  if (args.options.dodge && this.actor.isMounted) {\n    args.prefillModifiers.modifier += 20\n  }\n}\n\nif (args.type == \"skill\") {\n  if (args.item.name == game.i18n.localize(\"NAME.Dodge\") && this.actor.isMounted) {\n    args.prefillModifiers.modifier += 20\n  }\n}"
+                    "script": "if (args.type == \"characteristic\") {\n  if (args.options.dodge && this.actor.isMounted) {\n    args.prefillModifiers.modifier += 20;\n  }\n}\n\nif (args.type == \"skill\") {\n  if (args.item.name == game.i18n.localize(\"NAME.Dodge\") && this.actor.isMounted) {\n    args.prefillModifiers.modifier += 20;\n  }\n}"
                 }
             },
             "tests": "Unik na koniu, Jeździectwo (Konie)"
@@ -595,7 +595,7 @@
             "name": "Bitewna Furia",
             "description": "<p>Jesteś w stanie lepiej kontrolować swój Szał Bojowy. Udany Test Opanowania pozwala ci otrząsnąć się z niego na końcu rundy  </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.FtjMeeGEO4YuGIBv",
-            "tests": "Broń Biała pod wpływem Szału Bojowego"
+            "tests": "Testy Broni Białej pod wpływem Szału Bojowego"
         },
         "Detect Artefact": {
             "id": "g3y373FnWJEAxgEB",
@@ -640,7 +640,7 @@
                 "ScsXdMC7SqNirMwx": {
                     "id": "ScsXdMC7SqNirMwx",
                     "label": "Zabójca",
-                    "script": "if (args.sizeDiff <= -2 && args.opposedTest.attackerTest.result.critical) {\n  args.damageMultiplier = Math.abs(args.sizeDiff)\n}\nlet sBonusDiff = args.opposedTest.defenderTest.actor.characteristics.t.bonus - args.opposedTest.attackerTest.actor.characteristics.s.bonus;\nlet weapon = args.opposedTest.attackerTest.item;\nif (sBonusDiff > 0 && weapon && weapon.damage.value.includes(\"SB\")) {\n  args.damage += sBonusDiff;\n}"
+                    "script": "if (args.sizeDiff <= -2 && args.opposedTest.attackerTest.result.critical) {\n  args.damageMultiplier = Math.abs(args.sizeDiff);\n}\nlet sBonusDiff = args.opposedTest.defenderTest.actor.characteristics.t.bonus - args.opposedTest.attackerTest.actor.characteristics.s.bonus;\nlet weapon = args.opposedTest.attackerTest.item;\nif (sBonusDiff > 0 && weapon && weapon.damage.value.includes(\"SB\")) {\n  args.damage += sBonusDiff;\n}"
                 }
             }
         },
@@ -656,7 +656,7 @@
             "name": "Biczownik",
             "description": "<p>Swój ból ofiarowałeś wyznawanemu bogu. Każdego dnia musisz spędzić pół dzwonu (pół godziny) na modlitwie, otrzymując obrażenia na poziomie liczby wykupień tego Talentu. Jeśli posiadasz Talent Szał Bojowy to do położenia się na najbliższy spoczynek możesz natychmiast wpaść w Szał Bojowy bez wykonywania Testów. Szał Bojowy zostaje dodany do listy Talentów dostępnych dla twojej bieżącej Profesji. Jeśli zaniedbasz biczowanie przez jeden dzień lub pozwolisz, by poszarpana skóra została uleczona, nie będziesz mógł wydawać Punktów Bohatera ani Determinacji, póki się znów nie wybiczujesz.  </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.Gs10qhA4CDmZyb1g",
-            "tests": "Opieranie się Niszczycielskim Potęgom"
+            "tests": "Testy podczas opierania się Niszczycielskim Potęgom"
         },
         "Careful Strike": {
             "id": "GU1KpgY3MeFIaDaq",
@@ -702,7 +702,7 @@
                     "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.ConsumeAlcohol\")) {\n    args.test.preData.canReverse = true;\n}"
                 }
             },
-            "tests": "Charyzma i Plotkowanie podczas przyjęć, Mocna Głowa"
+            "tests": "Testy charyzmy i plotkowanie podczas przyjęć, testy Mocnej Głowy"
         },
         "Frenzy": {
             "id": "hXcfygzujgyMN1uI",
@@ -732,17 +732,17 @@
         },
         "Sea Legs": {
             "id": "Ij9N3G8jzxb4lrwy",
-            "name": "Urodzony Żeglarz",
+            "name": "Chód marynarza",
             "description": "<p>Przywykłeś do kołysania fal morskich i mało prawdopodobne, byś zachorował na chorobę morską, nawet podczas najsilniejszych sztormów. W spokojnych warunkach nie musisz przeprowadzać Testu, by sprawdzić, czy na morzu chwycą cię mdłości. Gdy rozpęta się sztorm lub gdy chorobę morską powoduje magia, nie dotyczą cię modyfikatory negatywnie wpływające na opieranie się tej przypadłości.  </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.Ij9N3G8jzxb4lrwy",
-            "tests": "Wszystkie wykonywane, by oprzeć się chorobie morskiej"
+            "tests": "Wszystkie testy wykonywane, by oprzeć się chorobie morskiej"
         },
         "Stout-hearted": {
             "id": "IogM5gnsoOX63w7j",
             "name": "Waleczne Serce",
             "description": "<p>Nieważne, jak fatalne jest twoje położenie, ty się po prostu nie poddajesz. Na koniec swojej Tury i na koniec całej Rundy możesz wykonać Test Opanowania, by otrząsnąć się ze Stanu Panika  </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.IogM5gnsoOX63w7j",
-            "tests": "Opanowanie, by przełamać Stan "
+            "tests": "Test opanowania, by przełamać Stan Panika"
         },
         "Shieldsman": {
             "id": "IT3s7rmQFGNzIfYq",
@@ -753,17 +753,17 @@
                 "W5gSfWrnLHp2SYLA": {
                     "id": "W5gSfWrnLHp2SYLA",
                     "label": "Tarczownik",
-                    "script": "if (args.opposedTest.result.winner == \"attacker\") {\n  if (args.opposedTest.defenderTest.weapon && args.opposedTest.defenderTest.item.properties.qualities.shield) {\n    ui.notifications.notify(`<b>${this.effect.label}</b>: Gained ${this.item.Advances} Advantage`)\n    this.actor.setAdvantage(this.item.Advances)\n  }\n}"
+                    "script": "if (args.opposedTest.result.winner == \"attacker\") {\n  if (args.opposedTest.defenderTest.weapon && args.opposedTest.defenderTest.item.properties.qualities.shield) {\n    ui.notifications.notify(`<b>${this.effect.label}</b>: Otrzymano przewagi w liczbie: ${this.item.Advances}`)\n    this.actor.setAdvantage(this.item.Advances)i1\n  }\n}"
                 }
             },
-            "tests": "Any Test to defend with a shield"
+            "tests": "Dowolny test defensywny podczas używania tarczy"
         },
         "Drilled": {
             "id": "J9MK0AIaTbvd5oF6",
             "name": "Musztra",
             "description": "<p> Zostałeś wyszkolony w walce obok innych żołnierzy. Jeśli przeciwnik sprawi, że stracisz Przewagę, a znajdujesz się obok innej, aktywnej postaci z Talentem Musztra, możesz zachować 1 Przewagę za każde wykupienie tego Talentu.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.J9MK0AIaTbvd5oF6",
-            "tests": "Broń Biała, kiedy jesteś w pobliżu sojuszniczej postaci z tym "
+            "tests": "Testy broni białej, kiedy jesteś w pobliżu sojuszniczej postaci z tym talentem."
         },
         "Deadeye Shot": {
             "id": "jLJzZb4keVvE0qRv",
@@ -795,7 +795,7 @@
             "name": "Chodu!",
             "description": "<p>Kiedy na szali znajduje się twoje życie, potrafisz niezwykle sprawnie przebierać nogami. Podczas Ucieczki twoja Szybkość jest traktowana, jakby była o 1 wyższa.  </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.jrFIFLhyOYwcyMUl",
-            "tests": "Atletyka, gdy Uciekasz"
+            "tests": "Test atletki podczas ucieczki"
         },
         "Sharpshooter": {
             "id": "jrYW2OyDHd1Md2my",
@@ -815,28 +815,28 @@
             "name": "Ogłuszenie",
             "description": "<p>Wiesz, gdzie uderzyć, by wróg padł jak długi. Nie tyczy się ciebie negatywny modyfikator za atak mierzony w głowę, gdy używasz broni do Walki Wręcz z zaletą Ogłuszająca (patrz strona 298). Co więcej, w twoich rękach wszystkie bronie improwizowane są traktowane jako Ogłuszające.  </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.jt0DmVK9IiF6Sd2h",
-            "tests": "Broń Biała, gdy Ogłuszasz przeciwnika"
+            "tests": "Test broni Białej, gdy Ogłuszasz przeciwnika"
         },
         "Tenacious": {
             "id": "jviOQmy0luQOySC2",
             "name": "Wytrwały",
             "description": "<p>Bez względu na okoliczności i powagę sytuacji ty przenigdy się nie poddajesz. Podwajasz czas opierania się przeciwnościom, zapewniany przez udany Test Odporności. Wytrzymujesz długą jazdę, wystawienie na warunki atmosferyczne, rytuały i tym podobne trudności.  </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.jviOQmy0luQOySC2",
-            "tests": "Odporność, by wytrzymać trudności"
+            "tests": "Test odporności, podczas przetrzymywania trudów"
         },
         "Speedreader": {
             "id": "kQbVFzsh4LbaIzHU",
             "name": "Szybkie Czytanie",
             "description": "<p>Czytasz księgi z zadziwiającą szybkością. Możesz odwrócić kolejność kości nieudanego Testu Badań Naukowych, jeśli to przyniesie ci sukces. Jeżeli szybkie przeczytanie tekstu odgrywa rolę podczas walki, to w ciągu Rundy możesz przeanalizować tyle stron, ile PS uzyskasz dzięki udanemu Testowi Języków plus tyle, ile razy wykupiłeś ten Talent (minimum jedną, jeśli Test się nie powiódł).  </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.kQbVFzsh4LbaIzHU",
-            "tests": "Badania Naukowe i Język, gdy ważne jest szybkie przyswa"
+            "tests": "Testy Badania Naukowego i Języka, gdy ważne jest szybkie przyswajanie tekstu"
         },
         "Beat Blade": {
             "id": "L1MoarOIAlia1Ti4",
             "name": "Zbicie Broni",
             "description": "<p>Zostałeś wyszkolony w zadawaniu krótkich i gwałtownych uderzeń w oręż przeciwnika, dzięki czemu możesz sam zaatakować lub powstrzymać nadchodzący cios. W ramach swojej Akcji możesz zadeklarować Zbicie Broni przed rzutem. Wykonaj Test Broni Białej, a jeśli się powiedzie, twój przeciwnik traci -1 Przewagę oraz kolejną -1 za każdy twój PS. Ten Test nie jest Testem Przeciwstawnym. Nie możesz korzystać z tego Talentu, jeśli wrogowie nie używają broni lub są większego rozmiaru niż ty.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.L1MoarOIAlia1Ti4",
-            "tests": "Broń Biała, by zbić broń"
+            "tests": "Testy broni białej, by Zbić Broń"
         },
         "Old Salt": {
             "id": "L74MT9BDwE4CfutY",
@@ -862,14 +862,14 @@
             "name": "Naśladowca",
             "description": "<p>Masz ucho do gwar oraz do dialektów i potrafisz je naśladować. Jeśli osłuchasz się któregoś przez jeden dzień, możesz wykonać Test Inicjatywy (jeden na dzień) i jeśli się powiedzie, będziesz potrafił naśladować ten akcent. Miejscowi będą uważali, że gadasz po ichniemu i jesteś swój  </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.LU6Ycl5z4kp1Wr04",
-            "tests": "Występy (Aktorstwo), podczas których ważny jest akcent"
+            "tests": "Testy Występów (Aktorstwo), podczas których ważny jest akcent"
         },
         "Cat-tongued": {
             "id": "LzgxyMknSHjSkkeQ",
             "name": "Gładkie Słówka",
             "description": "<p>Jak Ranald Podstępny, potrafisz tak przeplatać prawdę z kłamstwem, że nie można odróżnić jednego od drugiego. Gdy wykorzystujesz Charyzmę do kłamania, twoi rozmówcy nie mogą wykonywać Przeciwstawnego Testu Intuicji, by sprawdzić, czy przypadkiem ich nie okłamujesz</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.LzgxyMknSHjSkkeQ",
-            "tests": "Charyzma podczas kłamania"
+            "tests": "Testy charyzmy podczas kłamania"
         },
         "Petty Magic": {
             "id": "mdPGZsn2396dEpOf",
@@ -882,7 +882,7 @@
             "name": "Żelazna Wola",
             "description": "<p>Jesteś twardy i potrafisz wytrzymać najsilniejsze ciosy. Jeśli jakiś efekt nakłada na postać co najmniej jeden Stan Oszołomienie, gracz może wykonać Wymagający (+0) Test Wytrzymałości, by go zignorować. Każdy PS pozwala ci uniknąć dodatkowego Stanu.  </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.mgeiaDZXei7JBEgo",
-            "tests": "Opanowanie przeciwstawiane Zastraszaniu"
+            "tests": "Test opanowania przeciwstawiane Zastraszaniu"
         },
         "Scale Sheer Surface": {
             "id": "MGEPI4jNhymNIRVz",
@@ -896,14 +896,14 @@
             "name": "Szósty Zmysł",
             "description": "<p>Masz niepokojące przeczucia, kiedy coś ci grozi, i umiesz odpowiednio na nie zareagować. MG może cię ostrzec, kiedy znajdujesz się w sytuacji, w której może stać ci się krzywda, jeśli powiedzie się sekretny Test Intuicji wykonany w twoim imieniu. Co więcej, jeżeli uda ci się Test Intuicji, nie jesteś zaskoczony. </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.mNoCuaVbFBflfO6X",
-            "tests": "Intuicji wykorzystujące twój Szósty Zmysł"
+            "tests": "Testy Intuicji wykorzystujące twój Szósty Zmysł"
         },
         "Distract": {
             "id": "MoiYSfJRPHu7SZCQ",
             "name": "Rozproszenie Uwagi",
             "description": "<p> Jesteś wytrenowany tak, by twoje ruchy rozpraszały uwagę przeciwnika i ułatwiały jego zaskoczenie. Możesz wykorzystać swój Ruch, aby użyć Rozpraszania Uwagi. Jest to Test Przeciwstawny Atletyki przeciw Opanowaniu przeciwnika. Jeśli wygrasz, twój przeciwnik nie może zbierać Przewagi aż do końca następnej Rundy.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.MoiYSfJRPHu7SZCQ",
-            "tests": "Athletics to Distract"
+            "tests": "Testy atletyki celem Rozproszenia Uwagi"
         },
         "Frightening": {
             "id": "mqo51ORnxijcqNNu",
@@ -929,7 +929,7 @@
             "name": "Chirurgia",
             "description": "<p>Lata nauki trudnego rzemiosła chirurga pozwalają ci dokonywać cudu operacji, zabiegu niezbędnego przy leczeniu najgroźniejszych obrażeń. W opisie wybranych Trafień Krytycznych znajdziecie informację, że wymagają one interwencji chirurga. Właśnie ty jesteś w stanie im zaradzić. Operacja to Wydłużony Wymagający (+0) Test Leczenia. Liczba wymaganych PS jest ustalana przez MG, ale zwykle to 5-10. Podczas procedury zadajesz pacjentowi 1k10 obrażeń i nakładasz na niego Stan Krwawienie za każdym razem, gdy wykonujesz Test. To oznacza, że chory może umrzeć, a szansa na to jest wysoka. Po operacji pacjent musi wykonać Przeciętny (+20) Test Odporności, a jego niepowodzenie oznacza drobną infekcję. </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.NP4EHyyh1yOLbsPU",
-            "tests": "Leczenie poza walką, czyli kiedy możesz właściwie zająć się "
+            "tests": "Leczenie poza walką, kiedy masz dostatecznie dużo czasu i spokoju"
         },
         "Robust": {
             "id": "nWLsoWQBCjPRKxYx",
@@ -956,7 +956,7 @@
             "name": "Porywająca Gorliwość",
             "description": "<p>Kiedy mówisz o czymś, co cię pasjonuje, o swoich przekonaniach czy religii, twoje słowa przepełnia gorliwość, a nawet fanatyzm. Możesz podwoić swoją Ogładę, gdy określasz liczbę osób, na które wpływa twój Talent Mówca, gdy poruszasz ważny dla ciebie temat.  </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.oGbDwnLOn3isPJpO",
-            "tests": "Charyzmy, kiedy mówisz o ważnej dla ciebie sprawie"
+            "tests": "Test Charyzmy, kiedy mówisz o ważnej dla ciebie sprawie"
         },
         "Sharp": {
             "id": "oQzTJEXUx28sCiH3",
@@ -988,14 +988,14 @@
                     "script": "if (args.test.result.charging) {\n   args.test.result.damage += 1;\n   args.test.result.additionalDamage += 1;\n}"
                 }
             },
-            "tests": "Broń Biała w Rundzie, w której Szarżowałeś"
+            "tests": "Testy Broni Białej w Rundzie, w której Szarżowałeś"
         },
         "Lip Reading": {
             "id": "OXfa9uwG36syzaix",
             "name": "Czytanie z Ruchu Warg",
             "description": "<p>Patrząc na usta innych, potrafisz dowiedzieć się, co mówią. Jeśli mo- żesz bez przeszkód obserwować dolną część twarzy istoty, wolno ci wykonać Test Percepcji, by zrozumieć, co mówi  </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.OXfa9uwG36syzaix",
-            "tests": "Testy Percepcji związane z wykorzystaniem tego Talentu. "
+            "tests": "Testy Percepcji związane z wykorzystaniem tego Talentu"
         },
         "Sure Shot": {
             "id": "phXzaUxl3mFqkmDq",
@@ -1015,7 +1015,7 @@
             "name": "Sekretna Tożsamość",
             "description": "<p>Posiadasz alter ego, które jest bogatszym lub biedniejszym człowiekiem od ciebie. Wybierz Profesję, na którą przystanie MG. Dopóki jesteś odpowiednio ubrany, dopóty możesz korzystać z oferowanego przez nią Statusu, zamiast swojego. To oznacza, że korzystasz z jej modyfikatorów do Testów Ogłady, a nawet możesz zignorować skutki działania Talentu Przestępca. Utrzymywanie sekretnej toż- samości wymaga udanych Testów Umiejętności Występy (Aktorstwo), gdy spotykasz kogoś, kto może cię przejrzeć. Każde wykupienie tego Talentu pozwala ci na stworzenie dodatkowej sekretnej tożsamości  </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.PJ4oxDExnuFNr2Fi",
-            "tests": "Występy (Aktorstwo), by uwiarygodnić swoją sekretną toż"
+            "tests": "Testy Występów (Aktorstwo), by uwiarygodnić swoją sekretną tożsamość"
         },
         "River Guide": {
             "id": "PoYlemaEIbZw30Em",
@@ -1029,14 +1029,14 @@
             "name": "Słuch Absolutny",
             "description": "<p>Jesteś w stanie dokładnie powtórzyć i zidentyfikować notację nutową. Co więcej, dodaj Umiejętność Występy (Śpiewanie) do listy Umiejętności swojej każdej bieżącej Profesji, a jeśli znajduje się ona na liście, koszt każdego Rozwinięcia spada o 5 PD  </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.pQjZdMJDDaz0DpAD",
-            "tests": "Występy (Śpiewanie), Języki (tonalne, takie jak Eltharin, Ki"
+            "tests": "Testy Występów (Śpiewanie), Języki (tonalne, takie jak Eltharin, Kitajski lub Magiczny)"
         },
         "Rover": {
             "id": "q58lK4kULJZB5GjE",
             "name": "Włóczykij",
             "description": "<p>W dziczy czujesz się jak u siebie i kiedy wykorzystujesz Umiejętność Skradanie, inni nie mogą wykonywać biernych Testów Percepcji, by cię zauważyć. Mogą im one przysługiwać, jeśli przeciwnicy stoją na straży lub wypatrują ukrytych napastników  </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.q58lK4kULJZB5GjE",
-            "tests": "Skradania na wsi"
+            "tests": "Testy Skradania na wsi"
         },
         "Witch!": {
             "id": "qdMbxW09FUoYBzmB",
@@ -1055,7 +1055,7 @@
             "name": "Odwrócenie Szans",
             "description": "<p>Tak przywykłeś do rozpaczliwej walki o życie, że potrafisz obrócić na swoją korzyść nawet największe kłopoty. Jeśli wygrasz Przeciwstawny Test Walki Wręcz, to zamiast zdobywać +1 Przewagę, możesz zabrać przeciwnikowi jego wszystkie zebrane Przewagi. Jeśli się na to zdecydujesz, nie zadajesz wrogowi obrażeń, nawet jeśli to twoja Tura w Rundzie.  </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.QolNfSUkezLoAcky",
-            "tests": "Broń Biała w obronie"
+            "tests": "Testy broni Białej podczas defensywy"
         },
         "Savvy": {
             "id": "QsrXxGZiHjth7RMg",
@@ -1087,7 +1087,7 @@
                     "script": "args.actor.status.encumbrance.max += 2;"
                 }
             },
-            "tests": "Siły podczas podnoszenia"
+            "tests": "Testy Siły podczas podnoszenia"
         },
         "Criminal": {
             "id": "r180vP86SlwyJc8W",
@@ -1098,7 +1098,7 @@
                 "tS0NjO6ujjQH6sV9": {
                     "id": "tS0NjO6ujjQH6sV9",
                     "label": "Przestępca",
-                    "script": "console.log(args)"
+                    "script": "console.log(args);"
                 }
             }
         },
@@ -1151,7 +1151,7 @@
             "name": "Geniusz Arytmetyczny",
             "description": "<p>Masz dar do cyferek i z łatwością potrafisz rozwiązywać problemy matematyczne. Na sesji wolno używać ci kalkulatora, by pokazać geniusz swojej postaci (chyba że go nie potrzebujesz i liczysz w pamięci).  </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.sBHarYXR2o7jD1VY",
-            "tests": "Wycena, Hazard"
+            "tests": "Testy Wyceny i Hazardu"
         },
         "Relentless": {
             "id": "SgjJMBgc85aswvhm",
@@ -1170,28 +1170,28 @@
             "name": "Wstrzemięźliwy",
             "description": "<p>Przywykłeś do tego, że jesz niewiele, i potrafisz przetrwać chude czasy. Jedząc połowę tego, co potrzebujesz, nie odczuwasz negatywnych skutków głodowania, chociaż jesteś nieco rozdrażniony. Testy głodu wykonujesz co 3 dni, a nie co 2  </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.spdiWsONKTzkLbg3",
-            "tests": "Odporności, by wytrzymać głód"
+            "tests": "Testy odporności, by wytrzymać głód"
         },
         "Etiquette": {
             "id": "sYbgpSnRqSZWgwFP",
             "name": "Etykieta (Grupa Społeczna)",
             "description": "<p>Dopóki jesteś odpowiednio ubrany i zachowujesz się należycie, potrafisz wtopić się w tłum wybranej grupy społecznej. Oto przykłady kilku z nich: Członkowie Gildii lub Cechu, Kultyści, Przestępcy, Służba, Szlachta, Uczeni, Żołnierze. Jeśli nie posiadasz tego Talentu, ci, którzy go mają, łatwo zauważą, że nie pasujesz do obcego środowiska. Widać to w zachowaniu bohatera. To oczywiście zależy od odgrywania, ale MG może wprowadzić tu odpowiedni modyfikator do Testów Ogłady  </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.sYbgpSnRqSZWgwFP",
-            "tests": "Charyzma lub Plotkowanie (Grupa Społeczna)"
+            "tests": "Testy charyzmy lub plotkowania przeciw (Grupa Społeczna)"
         },
         "Contortionist": {
             "id": "TaYriYcJkFuIdBKp",
             "name": "Człowiek Guma",
             "description": "<p>Jesteś w stanie wyginać swoje ciało i manipulować nim na sposoby, które zdają się przeczyć naturze. Dzięki temu możesz przeciskać się przez niewielkie otwory lub zmuszać kończyny do nieprawdopodobnych rzeczy. Granice tego wyznacza MG i udany Test Zwinności.  </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.TaYriYcJkFuIdBKp",
-            "tests": "Kuglarstwo lub Testy Zwinności w sytuacji, gdy przydaje się "
+            "tests": "Testy Kuglarstwa lub Testy Zwinności w sytuacji, gdy przydaje się gibkość"
         },
         "Waterman": {
             "id": "tlEg21DHMEJoWcJq",
             "name": "Wodniak",
             "description": "<p>Jesteś doświadczonym żeglarzem śródlądowym i jak mało kto znasz się na jednostkach rzecznych. Kiedy jesteś na pokładzie jednej z nich, nie stosują się do ciebie negatywne modyfikatory wynikające z falowania wód, kołysania pokładu, niepewnego podłoża itp. Co więcej, liczysz się za dwóch członków załogi, gdy trzeba zapewnić minimalną liczbę członków załogi, by wypłynąć na rzekę.  </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.tlEg21DHMEJoWcJq",
-            "tests": "Żeglarstwo na jednostkach pływających po rzece"
+            "tests": "Testy żeglarstwa na jednostkach pływających po rzece"
         },
         "In-fighter": {
             "id": "tX9R9rSYm2YyEnOK",
@@ -1205,7 +1205,7 @@
                     "script": "if (args.type == \"weapon\" && this.actor.hasSystemEffect(\"infighting\")) {\n     args.prefillModifiers.modifier += 10;\n}"
                 }
             },
-            "tests": "Podczas wchodzenia w zasięg broni przeciwnika i w walce "
+            "tests": "Testy podczas wchodzenia w zasięg broni przeciwnika i w walce kontaktowej"
         },
         "Combat Reflexes": {
             "id": "tXKX29QZBdHmyMc7",
@@ -1231,7 +1231,7 @@
             "name": "Żelazna Szczęka",
             "description": "<p> Jesteś twardy i potrafisz wytrzymać najsilniejsze ciosy. Jeśli jakiś efekt nakłada na postać co najmniej jeden Stan Oszołomienie, gracz może wykonać Wymagający (+0) Test Wytrzymałości, by go zignorować. Każdy PS pozwala ci uniknąć dodatkowego Stanu.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.UaDGF5MBFBwPq5YU",
-            "tests": "Odporność wykonywana przeciw "
+            "tests": "Test odporności wykonywana przeciw Oszołomieniu"
         },
         "Resolute": {
             "id": "uRvOg8AnCcP2ufx8",
@@ -1251,7 +1251,7 @@
             "name": "Dwie Bronie",
             "description": "<p>Kiedy jesteś uzbrojony w dwie bronie, podczas swojej Akcji możesz zaatakować obydwiema naraz. Najpierw wykonaj Test trafienia dla broni, którą trzymasz w wiodącej ręce, a jeśli trafisz, określ normalnie obrażenia. Zostaw kości 1k100 na stole, przydadzą się za chwilę. Skoro pierwszy atak się udał i zostały zadane obrażenia, możesz użyć drugiej broni, by uderzyć jeszcze raz. Wykorzystujesz wynik pierwszego rzutu, ale odwracasz kolejność kostek. I tak rzut na trafienie 34 stanie się 43. Pamiętaj, by obniżyć go o modyfikator wynikający z walki słabszą ręką (-20, chyba że posiadasz Talent Oburęczność). Drugi atak też jest Testem Przeciwstawnym. Twój przeciwnik wykonuje Test obrony, na nowo określane są obrażenia. Wyjątkiem jest sytuacja, gdy pierwszy atak zakończył się Trafieniem Krytycznym. Jeśli tak się stanie, wykorzystaj wynik rzutu w Tabeli Trafień Krytycznych do określenia, czy drugi atak trafił, czy nie. Na przykład, jeśli pierwszy atak trafił przeciwnika krytycznie w głowę, a wynik rzutu w Tabeli Trafień Krytycznych to 56 (Poważ- na rana oka), to korzystasz z tego rezultatu jako wyniku rzutu na trafienie w drugim ataku. Jeśli atakujesz obydwiema broniami, twoje rzuty na obronę obarczone są modyfikatorem -10 do końca twojej następnej Tury. Nie zyskujesz Przewagi za trafienie lub zranienie przeciwnika, jeśli korzystasz z tego Talentu, chyba że trafisz obydwoma atakami.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.URwIDtInCsxOoGqM",
-            "tests": "Broń Biała lub Zasięgowa, kiedy atakujesz dwoma sztukami "
+            "tests": "Test broni Białej lub Zasięgowej, kiedy atakujesz dwoma sztukami broni"
         },
         "Tower of Memories": {
             "id": "V9N0LMnXf1WYseCL",
@@ -1271,11 +1271,11 @@
             "name": "Odporny na (Zagrożenie)",
             "description": "<p>Twoja wielka wytrwałość pozwala ci poradzić sobie z niebezpieczeństwem. Automatycznie zdajesz pierwszy Test opierania się przeciwko konkretnemu typowi zagrożenia na danej sesji. Znane są Odporności na Choroby, Magię, Mutacje czy Trucizny. Jeśli w Te- ście ważne są Poziomy Sukcesu, to za ich liczbę przyjmujesz Bonus z Wytrzymałości. </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.vMYEkrWj0ip6ZOdv",
-            "tests": "Wszystkie, gdy opierasz się powiązanemu zagrożeniu",
+            "tests": "Wszystkie testy, gdy opierasz się powiązanemu zagrożeniu",
             "effects": {
                 "FQv1UAIrdvtf9Tlc": {
                     "id": "FQv1UAIrdvtf9Tlc",
-                    "label": "Resistance"
+                    "label": "Odporność"
                 }
             }
         },
@@ -1290,7 +1290,7 @@
             "name": "Walka w Ciasnocie",
             "description": "<p>Nauczyłeś się, jak najlepiej wykorzystywać w walce zamknięte przestrzenie. Nie dotyczą cię modyfikatory do Testów Broni Białej wynikające z walki w ciasnocie tuneli, okopów, jam gladiatorskich i im podobnych. Co więcej, możesz wykonywać Unik nawet wtedy, gdy nie mógłbyś tego zrobić z braku miejsca  </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.VscjNv6RzHFb9CQp",
-            "tests": "Unik w ciasnej przestrzeni"
+            "tests": "Test Uniku w ciasnej przestrzeni"
         },
         "Alley Cat": {
             "id": "wBhPFggGqIXwbx1r",
@@ -1338,14 +1338,14 @@
             "name": "Mistrz Charakteryzacji",
             "description": "<p>Jesteś ekspertem, jeśli chodzi o przejmowanie manieryzmów i upodabnianie się do kogoś. Zmieniając postawę, wykrzywiając twarz i dobierając ubranie, przestajesz przypominać siebie, nawet jeśli nie masz pod ręką zestawu do charakteryzacji. </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.WoXShzaYkV5F6c48",
-            "tests": "Występy (Aktorstwo), gdy udajesz kogoś innego"
+            "tests": "Testy Występów (Aktorstwo), gdy udajesz kogoś innego"
         },
         "Break and Enter": {
             "id": "wrpVYmdiIy1jPulc",
             "name": "Wtargnięcie z Włamaniem",
             "description": "<p>Jesteś ekspertem od wykopywania drzwi z zawiasów i niszczenia sprzętów. Zadajesz +1 punkt obrażeń za każdy wykupiony Talent Wtargnięcie z Włamaniem, kiedy próbujesz wybić okna, wyważyć drzwi, podważyć wieko skrzyni itp.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.wrpVYmdiIy1jPulc",
-            "tests": "Broń Biała, gdy próbujesz zniszczyć lub przesunąć przedmioty"
+            "tests": "Testy Broni Białej, gdy próbujesz zniszczyć lub przesunąć przedmioty"
         },
         "Concoct": {
             "id": "wXcJWxJdw0ib5b8W",
@@ -1359,7 +1359,7 @@
             "name": "Widzenie w Ciemności",
             "description": "<p>Bardzo dobrze widzisz w naturalnych ciemnościach. Jeśli masz źró- dło choćby słabego blasku (światło gwiazd, księżyca czy bioluminescencję), widzisz wyraźnie na 20 metrów na każde wykupienie tego Talentu. To nie koniec. Dla ciebie oświetlenie okolicy sięga dalej o 20 metrów na każde wykupienie tego Talentu. </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.x0WMGwuQzReXcQrs",
-            "tests": "Percepcja przy słabym świetle"
+            "tests": "Testy percepcji przy słabym świetle"
         },
         "Commanding Presence": {
             "id": "x8g3U68oi8XzWiYr",
@@ -1373,7 +1373,7 @@
             "name": "Riposta",
             "description": "<p>Wyznajesz zasadę, że najlepszą obroną jest atak, dlatego w walce błyskawicznie kontratakujesz, gdy tylko przeciwnik wyprowadzi cios. Jeśli twoja broń posiada zaletę Szybka, możesz zadać obrażenia, gdy jesteś atakowany, jakbyś wykonywał swoją Akcję. Ripostę możesz wykonać tyle razy w Rundzie, ile razy wykupisz ten Talent  </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.x8jsChg17VQ9XgiK",
-            "tests": "Broń Biała w obronie"
+            "tests": "Testy Broni Białej w defensywie"
         },
         "Accurate Shot": {
             "id": "XIcDsaW4D8wScezw",
@@ -1393,7 +1393,7 @@
             "name": "Cień",
             "description": "<p>Wiesz, jak podążać za innymi, by nie zostać na tym przyłapanym. Możesz wykorzystywać zasady śledzenia ze strony 128 bez konieczności wykonywania Testu Łączonego. Wystarczy, że wykonasz rzut na Percepcję lub Skradanie, zależnie od tego, która wartość jest wyższa.  </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.XSb3QVB9ipPBFt56",
-            "tests": "Wszystkie związane ze śledzeniem"
+            "tests": "Wszystkie testy związane ze śledzeniem"
         },
         "Public Speaker": {
             "id": "XU7D9CCmumuhqDUi",
@@ -1419,12 +1419,12 @@
             "name": "Szuler",
             "description": "<p>Przywykłeś do tego, że w grze w karty zwykle wygrywasz, choć twoje metody mogą być odrobinę nieuczciwe. Jeśli powiedzie ci się Test Hazardu lub Zwinnych Palców, możesz wybrać, czy skorzystać z normalnie uzyskanych PS, czy ich liczbę wyznaczyć, korzystając z cyfry jedności rzutu. W ten sposób wynik udanego Testu 28 oznaczałby uzyskanie +8 PS. Jeśli na sesji rzeczywiście używacie kart, możesz otrzymać w rozdaniu dodatkową liczbę kart, równą liczbie wykupień tego Talentu, wybrać najlepsze i odłożyć tyle, byś miał na ręku odpowiednią liczbę.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.Yiw5h1Kj4B2WLlfm",
-            "tests": "Hazard i Zwinne Palce w grach karcianych",
+            "tests": "Testy Hazardu i Zwinnych Palców w grach karcianych",
             "effects": {
                 "YsehPMUmEzTAH6UC": {
                     "id": "YsehPMUmEzTAH6UC",
-                    "label": "Cardsharp",
-                    "script": "if (args.test.item && (args.test.item.name == \"Gamble\" || args.test.item.name == \"Sleight of Hand\") && args.test.succeeded)\n{\n\nlet SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\nlet ones = Number(args.test.result.roll.toString().split(\"\").pop())\n\nif (ones > SL)\n   args.test.result.other.push(`<span class=\"hide-option\"><b>${this.effect.label}</b>: ${ones + args.test.successBonus + args.test.slBonus} SL if playing cards.</span>`)\n}"
+                    "label": "Szuler",
+                    "script": "if (args.test.item && (args.test.item.name == game.i18n.localize(\"NAME.Gamble\") || args.test.item.name == game.i18n.localize(\"NAME.SleightOfHand\")) && args.test.succeeded) {\nlet SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\nlet ones = Number(args.test.result.roll.toString().split(\"\").pop())\nif (ones > SL)\n   args.test.result.other.push(`<span class=\"hide-option\"><b>${this.effect.label}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS podczas gry w karty.</span>`)\n}"
                 }
             }
         },
@@ -1439,7 +1439,7 @@
             "name": "Szczur Tunelowy",
             "description": "<p>W tunelach, kanałach ściekowych i pod powierzchnią ziemi jesteś na swoim terenie. Kiedy wykorzystujesz w takich warunkach Umiejętność Skradanie, istotom wokoło nie przysługuje pasywny Test Percepcji. Zauważyć cię mogą dopiero wtedy, gdy będą cię czynnie wyglądały lub szukały ukrytych przeciwników  </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.Z91GFaT6FhEwyESU",
-            "tests": "Skradanie pod ziemią"
+            "tests": "Testy Skradania się pod ziemią"
         },
         "Very Strong": {
             "id": "Zf0vk2rjllpDh0Ua",

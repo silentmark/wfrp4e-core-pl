@@ -474,6 +474,7 @@ Hooks.on("setup", async function () {
                                 t.actor.applyFear(value, name)
                             })
                             game.user.updateTokenTargets([]);
+							game.user.broadcastActivity({targets:[]});
                         }
                         else {
                             game.wfrp4e.utility.postFear(value, name)

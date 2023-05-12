@@ -169,7 +169,7 @@
         "Thrill Hunter": {
             "id": "gMsd6II7Y1oBMddp",
             "name": "Uzależnienie od adrenaliny",
-            "description": "<p>Siła Woli +10, Inicjatywa -10.</p>",
+            "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.mutations.gMsd6II7Y1oBMddp",
             "effects": {
                 "39WPkucQosauvNSW": {
@@ -181,13 +181,13 @@
         "Fleshy Tentacle": {
             "id": "GtACPDzi25YNgV0m",
             "name": "Mięsista macka",
-            "description": "<p>Postać zyskuje Cechę Stworzenia Macki.</p>",
+            "description": "<p>Postać zyskuje Cechę Stworzenia @UUID[Compendium.wfrp4e-core.traits.4xF7M6ylIiGntekh]{Macki}.</p>",
             "sourceId": "Compendium.wfrp4e-core.mutations.GtACPDzi25YNgV0m",
             "effects": {
                 "FeJR7iTtlWYjOwo9": {
                     "id": "FeJR7iTtlWYjOwo9",
                     "label": "Mięsista macka",
-                    "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.4xF7M6ylIiGntekh\");\nitem = item.toObject();\nargs.actor.createEmbeddedDocuments(\"Item\", [item]);"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.traits.4xF7M6ylIiGntekh\").then(item => {\n    item = item.toObject();\n    args.actor.createEmbeddedDocuments(\"Item\", [item]);\n})"
                 }
             }
         },
@@ -292,12 +292,12 @@
                 "2Ohs6a56Gxu8VLHF": {
                     "id": "2Ohs6a56Gxu8VLHF",
                     "label": "Szał Bojowy",
-                    "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.psychologies.DrNUTPeodEgpWTnT\");\nitem = item.toObject();\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.psychologies.DrNUTPeodEgpWTnT\").then(item => {\nitem = item.toObject();\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);\n})"
                 },
                 "3ekXP5mRTRdaJptm": {
                     "id": "3ekXP5mRTRdaJptm",
                     "label": "Bezbożny szał",
-                    "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.psychologies.DrNUTPeodEgpWTnT\");\nitem = item.toObject();\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.psychologies.DrNUTPeodEgpWTnT\").then(item => {\nitem = item.toObject();\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);\n})"
                 }
             }
         },
@@ -334,7 +334,7 @@
         "Uneven Horns": {
             "id": "Pmcq5P7yRnYsoFYf",
             "name": "Nierówne rogi",
-            "description": "<p>+1 Punkt Pancerza na głowie, liczy się jako Broń Prosta o sile równej BS.</p>",
+            "description": "<p>+1 Punkt Pancerza na głowie, liczy się jako @UUID[Compendium.wfrp4e-core.traits.AtpAudHA4ybXVlWM]{Broń} o sile równej BS.</p>",
             "sourceId": "Compendium.wfrp4e-core.mutations.Pmcq5P7yRnYsoFYf",
             "effects": {
                 "2o80BN5wj3QZxpYJ": {
@@ -345,7 +345,7 @@
                 "n4ttJEJZfsfISN5O": {
                     "id": "n4ttJEJZfsfISN5O",
                     "label": "Nierówne rogi",
-                    "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.BqPZn6q3VHn9HUrW\");\nitem = item.toObject();\nitem.name = this.effect.label;\nitem.system.specification.value = this.actor.characteristics.s.bonus;\nitem.system.description.value = \"\";\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.traits.BqPZn6q3VHn9HUrW\").then(item => {\nitem = item.toObject();\nitem.name = this.effect.label;\nitem.system.specification.value = this.actor.characteristics.s.bonus;\nitem.system.description.value = \"\";\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);\n})"
                 }
             }
         },
@@ -370,7 +370,7 @@
                 "EfojtYV7NuxfAUrK": {
                     "id": "EfojtYV7NuxfAUrK",
                     "label": "Wibrysy",
-                    "script": "if (args.type == \"skill\" && args.item.name == \"Track\") {\n   args.prefillModifiers.modifier += 10;\n}"
+                    "script": "if (args.type == \"skill\" && args.item.name == game.i18.n.localize(\"NAME.Track\")) {\n   args.prefillModifiers.modifier += 10;\n}"
                 }
             }
         },
@@ -408,7 +408,7 @@
                 "hUqEsvcMfTbiNWHj": {
                     "id": "hUqEsvcMfTbiNWHj",
                     "label": "Nienawistne popędy",
-                    "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.psychologies.Q2MCUrG2HppMcvN0\");\nitem = item.toObject();\nlet species = args.actor.details.species.value || \"Human\";\nitem.name = `Animosity (all not ${species})`;\nargs.actor.createEmbeddedDocuments(\"Item\", [item]);"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.psychologies.Q2MCUrG2HppMcvN0\").then(item => {\n   item = item.toObject()\n    let species = args.actor.details.species.value || \"Human\"\n    item.name = `NIechęć (do wszystkich opróczL ${species})`\n    args.actor.createEmbeddedDocuments(\"Item\", [item])\n})"
                 }
             }
         },
@@ -426,13 +426,13 @@
         },
         "Beast Within": {
             "id": "VeCvAdN7TnwEyyu0",
-            "name": "Wewnętrzna bestia'",
+            "name": "Wewnętrzna bestia",
             "description": "<p>Siła Woli +10, Ogłada -5, Inteligencja -5.</p>",
             "sourceId": "Compendium.wfrp4e-core.mutations.VeCvAdN7TnwEyyu0",
             "effects": {
                 "KRT5ky5npGHcoSzv": {
                     "id": "KRT5ky5npGHcoSzv",
-                    "label": "Wewnętrzna bestia'"
+                    "label": "Wewnętrzna bestia"
                 }
             }
         },
@@ -469,7 +469,7 @@
                 "RpoMdbEmjj9FhPvU": {
                     "id": "RpoMdbEmjj9FhPvU",
                     "label": "Chwiejne morale",
-                    "script": "if (args.test.result.outcome == \"failure\") {\n    if (args.test.characteristicKey == \"wp\") {\n        await this.actor.addCondition(\"broken\")\n    }\n}"
+                    "script": "if (args.test.result.outcome == \"failure\") {\n    if (args.test.characteristicKey == \"wp\") {\n        this.actor.addCondition(\"broken\")\n    }\n}"
                 }
             }
         }

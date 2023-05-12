@@ -15,7 +15,7 @@
         "Death Mask": {
             "id": "0AQheUiRtffqfKNg",
             "name": "Maska śmierci",
-            "description": "<p>Morr działa za twoim pośrednictwem - stajesz się portalem, przez który objawia swą obecność twoim wrogom. Twoja twarz przybiera tak wynędzniały wygląd, że zyskujesz 1 poziom Strachu.</p>",
+            "description": "<p>Morr działa za twoim pośrednictwem - stajesz się portalem, przez który objawia swą obecność twoim wrogom. Twoja twarz przybiera tak wynędzniały wygląd, że zyskujesz Cechę @UUID[Compendium.wfrp4e-core.traits.pTorrE0l3VybAbtn]{Strach 1}.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.0AQheUiRtffqfKNg",
             "duration": "Bonus Ogd Rund",
             "target": "Ty",
@@ -47,7 +47,7 @@
         },
         "An Invitation": {
             "id": "1MUSq1xRyHCaIuAL",
-            "name": "Otwarcie ",
+            "name": "Otwarcie",
             "description": "<p>Mruczysz pod nosem jedną z zagadek Ranalda opisującą portale i to, czy istnieją, jeśli pozostają zamknięte. Jeden sposób zamknięcia drzwi, okna czy włazu, które są celem twojego Cudu, otwiera się - liny rozwiązują się, zamki otwierają, haczyki odskakują itd. Za każde +2 PS możesz unieszkodliwić kolejną metodę zamknięcia drzwi, okna czy włazu.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.1MUSq1xRyHCaIuAL",
             "duration": "Natychmiast",
@@ -96,7 +96,7 @@
                 "qpp49hHsrz2VmP1E": {
                     "id": "qpp49hHsrz2VmP1E",
                     "label": "Płomień Wiary",
-                    "script": "let damage = (await new Roll(\"1d10\").roll()).total;\nawait args.actor.applyBasicDamage(damage, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL})\nif (args.actor.has(\"Undead\") || args.actor.has(\"Daemonic\")) {\n  await args.actor.addCondition(\"ablaze\");\n}"
+                    "script": "let damage = (await new Roll(\"1d10\").roll()).total;\nawait args.actor.applyBasicDamage(damage, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL})\nif (args.actor.has(game.i18n.localize(\"NAME.Undead\")) || args.actor.has(game.i18n.localize(\"NAME.Daemonic\"))) {\n  await args.actor.addCondition(\"ablaze\");\n}"
                 }
             },
             "duration": "Natychmiast",
@@ -124,7 +124,7 @@
         "Howl of the Wolf": {
             "id": "9ALNZLZUZSLrLvkd",
             "name": "Wilczy zew",
-            "description": "<p>Wyjesz jak wilk, prosząc Ulryka o pomoc, a ten zsyła pomniejszego Sługę bożego w postaci Białego Wilka. Wilk będzie walczył z twoimi wrogami przez Czas Cudu, zanim zniknie i wróci na Łowisko Ulryka, wydawszy ostatnie, widmowe wycie, które mrozi krew w żyłach. Białe Wilki mają statystyki normalnych wilków (strona 317), ale dodatkowo odznaczają się także Cechami Stworzenia Furia, Magiczny oraz Rozmiar (Duży).</p>",
+            "description": "<p>Wyjesz jak wilk, prosząc Ulryka o pomoc, a ten zsyła pomniejszego Sługę bożego w postaci Białego Wilka. Wilk będzie walczył z twoimi wrogami przez Czas Cudu, zanim zniknie i wróci na Łowisko Ulryka, wydawszy ostatnie, widmowe wycie, które mrozi krew w żyłach. Białe Wilki mają statystyki normalnych wilków (strona 317), ale dodatkowo odznaczają się także Cechami Stworzenia @UUID[Compendium.wfrp4e-core.traits.yRhhOlt18COq4e1q]{Furia}, @UUID[Compendium.wfrp4e-core.traits.mDgEMOoJpi8DkRYb]{Magiczny } oraz @UUID[Compendium.wfrp4e-core.traits.8slW8CJ2oVTxeQ6q]{Rozmiar (Duży) .</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.9ALNZLZUZSLrLvkd",
             "duration": "Bonus Ogd Rund",
             "target": "Specjalny",
@@ -215,13 +215,13 @@
         "Beacon of Righteous Virtue": {
             "id": "Dk0zjtcANtahntHx",
             "name": "Aura odwagi",
-            "description": "<p>Wrzeszczysz modlitwy w imieniu Sigmara, który przepełnia cię świętym ogniem prawości. Wszyscy sojusznicy w zasięgu wzroku natychmiast tracą wszystkie poziomy Paniki i zyskują Talent Nieustraszony, dopóki pozostają w zasięgu twojego wzroku w trakcie trwania Cudu. Zielonoskórzy w polu widzenia zaczynają się bać i mierzą się ze Strachem (1).</p>",
+            "description": "<p>Wrzeszczysz modlitwy w imieniu Sigmara, który przepełnia cię świętym ogniem prawości. Wszyscy sojusznicy w zasięgu wzroku natychmiast tracą wszystkie poziomy Paniki i zyskują Talent @UUID[Compendium.wfrp4e-core.talents.8pVzgPkgWpTJvfhG]{Nieustraszony}, dopóki pozostają w zasięgu twojego wzroku w trakcie trwania Cudu. Zielonoskórzy w polu widzenia zaczynają się bać i mierzą się ze @UUID[Compendium.wfrp4e-core.traits.pTorrE0l3VybAbtn]{Strachem 1}</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.Dk0zjtcANtahntHx",
             "effects": {
                 "FaH4jPWjtPWfjjv2": {
                     "id": "FaH4jPWjtPWfjjv2",
                     "label": "Aura odwagi",
-                    "script": "let broken = args.actor.hasCondition(\"broken\");\nif (broken) {\n    await args.actor.removeCondition(\"broken\", broken.flags.wfrp4e.value);\n}"
+                    "script": "let broken = args.actor.hasCondition(\"broken\");\nif (broken) {\n    args.actor.removeCondition(\"broken\", broken.flags.wfrp4e.value);\n}"
                 }
             },
             "duration": "Bonus Ogd Rund",
@@ -246,7 +246,7 @@
         "Blessing of Battle": {
             "id": "ElmLfnrXliStS9CP",
             "name": "Błogosławieństwo Bitwy",
-            "description": "<p><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">Cel uzyskuje premię +10 do Walki Wręcz.</p></p>",
+            "description": "<p>Cel uzyskuje premię +10 do Walki Wręcz.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.ElmLfnrXliStS9CP",
             "effects": {
                 "5kCCldIgCQLXAiqq": {
@@ -261,13 +261,13 @@
         "Inspiring": {
             "id": "ezVl3vFWTwHfNXL3",
             "name": "Waleczność",
-            "description": "<p>Twoje głośne modlitwy napełniają szeregi duchem dyscypliny. Wszyscy objęci Cudem zyskują 1 poziom Talentu <em>Musztra.</em></p>",
+            "description": "<p>Twoje głośne modlitwy napełniają szeregi duchem dyscypliny. Wszyscy objęci Cudem zyskują 1 poziom Talentu @UUID[Compendium.wfrp4e-core.talents.J9MK0AIaTbvd5oF6]{Musztra}.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.ezVl3vFWTwHfNXL3",
             "effects": {
                 "PG0aFGzMCDuLR7fK": {
                     "id": "PG0aFGzMCDuLR7fK",
                     "label": "Waleczność",
-                    "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.talents.J9MK0AIaTbvd5oF6\");\nargs.actor.createEmbeddedDocuments(\"Item\", [item.toObject()]);"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.talents.J9MK0AIaTbvd5oF6\").then(item => {\n    args.actor.createEmbeddedDocuments(\"Item\", [item.toObject()])\n})"
                 }
             },
             "duration": "Bonus Ogd Rund",
@@ -277,7 +277,7 @@
         "Ulric's Fury": {
             "id": "F6iJdTrvBvGQ54G3",
             "name": "Dar Ulryka",
-            "description": "<p>Śpiewasz wściekłe modlitwy, a wściekłość Ulryka rozchodzi się wraz z twoim głosem. Cel jest pod wpływem Czynnika Psychologicznego <em>Szał Bojowy</em>.</p>",
+            "description": "<p>Śpiewasz wściekłe modlitwy, a wściekłość Ulryka rozchodzi się wraz z twoim głosem. Cel jest pod wpływem Czynnika Psychologicznego @UUID[Compendium.wfrp4e-core.psychologies.DrNUTPeodEgpWTnT]{Szał Bojowy}.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.F6iJdTrvBvGQ54G3",
             "duration": "Bonus Ogd Rund",
             "target": "1",
@@ -295,7 +295,7 @@
         "Wisdom of the Owl": {
             "id": "fAlQcNUb6TZtPKqk",
             "name": "Mądrość sowy",
-            "description": "<p>Wzywasz Verenę, by napełniła cię mądrością i wiedzą. Podczas trwania Cudu otrzymujesz premię +20 do Testów Inteligencji. Ponadto twoje źrenice rozszerzają się, dzięki czemu twój wzrok staje się przeszywający i niepokojący - otrzymujesz 1 poziom Talentów <br>Groźny</br> oraz <br>Wyczulony Zmysł (wzrok)</br>.</p>",
+            "description": "<p>Wzywasz Verenę, by napełniła cię mądrością i wiedzą. Podczas trwania Cudu otrzymujesz premię +20 do Testów Inteligencji. Ponadto twoje źrenice rozszerzają się, dzięki czemu twój wzrok staje się przeszywający i niepokojący - otrzymujesz 1 poziom Talentów @UUID[Compendium.wfrp4e-core.talents.0hn6UaKq8CoZP2zD]{Groźny} oraz @UUID[Compendium.wfrp4e-core.talents.9h82z72XGo9tfgQS]{Wyczulony Zmysł (wzrok)}.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.fAlQcNUb6TZtPKqk",
             "effects": {
                 "2lds6IDIyorYrvY4": {
@@ -311,7 +311,7 @@
         "Blessing of Charisma": {
             "id": "FElNQGNiPzaOwwKT",
             "name": "Błogosławieństwo Charyzmy",
-            "description": "<p><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">Cel uzyskuje premię +10 do Ogłady.</p></p>",
+            "description": "<p>Cel uzyskuje premię +10 do Ogłady.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.FElNQGNiPzaOwwKT",
             "effects": {
                 "NO3FdQ5qx6B5PjPm": {
@@ -386,13 +386,13 @@
         "Ranald's Grace": {
             "id": "hL7B3d7A0sYYjHXn",
             "name": "Spryt Ranalda",
-            "description": "<p>Prosisz Ranalda, by twój cel mógł lepiej poradzić sobie z zawiłościami rzeczywistości. Cel uzyskuje premię +10 do Zwinności, +10 do Skradania oraz 1 poziom Talentu <em>Na Cztery Łapy</em> na Czas cudu.</p>",
+            "description": "<p>Prosisz Ranalda, by twój cel mógł lepiej poradzić sobie z zawiłościami rzeczywistości. Cel uzyskuje premię +10 do Zwinności, +10 do Skradania oraz 1 poziom Talentu @UUID[Compendium.wfrp4e-core.talents.g4Q6AtzZuo5iIvD4]{Na Cztery Łapy} na czas cudu.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.hL7B3d7A0sYYjHXn",
             "effects": {
                 "y7N8PrEOVgsRaJGR": {
                     "id": "y7N8PrEOVgsRaJGR",
                     "label": "Na Cztery Łapy",
-                    "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.talents.g4Q6AtzZuo5iIvD4\");\nargs.actor.createEmbeddedDocuments(\"Item\", [item.toObject()]);"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.talents.g4Q6AtzZuo5iIvD4\").then(item => {\n    args.actor.createEmbeddedDocuments(\"Item\", [item.toObject()])\n})"
                 },
                 "yAJjiwiK0OSoIrkf": {
                     "id": "yAJjiwiK0OSoIrkf",
@@ -416,7 +416,7 @@
         "Vanquish the Unrighteous": {
             "id": "I8YPP2uRmUKyHEq2",
             "name": "Pogrom",
-            "description": "<p><pTwoje żarliwe modlitwy napełniają wybranych sojuszników szaleńczą pogardą wobec wrogów Sigmara. Wszyscy sojusznicy objęci Cudem otrzymują <br>Nienawiść</br> wobec zielonoskórych, nieumarłych i wszystkich innych sług Chaosu.</p></p>",
+            "description": "<p><pTwoje żarliwe modlitwy napełniają wybranych sojuszników szaleńczą pogardą wobec wrogów Sigmara. Wszyscy sojusznicy objęci Cudem otrzymują @UUID[Compendium.wfrp4e-core.psychologies.5hH73j2NgPdsLCZN]{Nienawiść} wobec zielonoskórych, nieumarłych i wszystkich innych sług Chaosu.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.I8YPP2uRmUKyHEq2",
             "duration": "Bonus Ogd Rund",
             "target": "Bonus Ogd sojusników",
@@ -449,7 +449,7 @@
         "Dooming": {
             "id": "itARFNqBAbwNDAAy",
             "name": "Wizja zagłady",
-            "description": "<p>Spozierasz głęboko w oczy swojego celu, szepcząc treny do Morra, który nagradza cię wizją losu celu, przebłysku czekającej go przyszłości. Zazwyczaj jest to wizja związana ze śmiercią. Cud może zostać wykorzystany jedynie raz w stosunku do tej samej osoby, po czym Talent Wróżba Losu można wykupić za PD, tak jakby był normalną częścią Profesji.</p>",
+            "description": "<p>Spozierasz głęboko w oczy swojego celu, szepcząc treny do Morra, który nagradza cię wizją losu celu, przebłysku czekającej go przyszłości. Zazwyczaj jest to wizja związana ze śmiercią. Cud może zostać wykorzystany jedynie raz w stosunku do tej samej osoby, po czym Talent @UUID[Compendium.wfrp4e-core.talents.fn8QNQQ1S2rh12Us]{Wróżba Losu} można wykupić za PD, tak jakby był normalną częścią Profesji.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.itARFNqBAbwNDAAy",
             "duration": "Natychmiast",
             "target": "1",
@@ -506,7 +506,7 @@
                 "qMveUjAJldH1xhlZ": {
                     "id": "qMveUjAJldH1xhlZ",
                     "label": "Błogosławieństwo Ochrony",
-                    "script": "ChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b> must pass an <b>Average (+20) Willpower</b> Test to attack this target!`, speaker : {alias : this.effect.label}});\nui.notifications.notify(`${this.actor.prototypeToken.name} must pass an <b>Average (+20) Willpower</b> Test to attack this target!`);"
+                    "script": "ChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b> musi zdać <b>Przeciętny (+20) Test Siły Woli</b> aby zaatakować cel!`, speaker : {alias : this.effect.label}});\nui.notifications.notify(`${this.actor.prototypeToken.name} musi zdać <b>Przeciętny (+20) Test Siły Woli</b> aby zaatakować cel!`);"
                 }
             },
             "duration": "6 Rund",
@@ -546,7 +546,7 @@
         "Leaping Stag": {
             "id": "mXKrxO8WRZ9QLHA6",
             "name": "Rączy jeleń",
-            "description": "<p>Śpiewasz ku czci Ojca Taala, który w zamian błogosławi cię szybkością i zwinnością. Zyskujesz +1 do Szybkości oraz 1 poziom Talentu <em>Silne Nogi</em>. Ponadto automatycznie udają ci się wszystkie Testy Atletyki (na poziomie co najmniej 0 PS). Jeśli Test zakończy się poniżej 0 PS, podnieś wynik do 0 PS.</p>",
+            "description": "<p>Śpiewasz ku czci Ojca Taala, który w zamian błogosławi cię szybkością i zwinnością. Zyskujesz +1 do Szybkości oraz 1 poziom Talentu @UUID[Compendium.wfrp4e-core.talents.CV9btQn09S9Fn8Jk]{Silne Nogi}. Ponadto automatycznie udają ci się wszystkie Testy Atletyki (na poziomie co najmniej 0 PS). Jeśli Test zakończy się poniżej 0 PS, podnieś wynik do 0 PS.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.mXKrxO8WRZ9QLHA6",
             "effects": {
                 "DIcpr650MAJVHQ5u": {
@@ -556,7 +556,7 @@
                 "q7pJlPm8uR0UxxN1": {
                     "id": "q7pJlPm8uR0UxxN1",
                     "label": "Rączy jeleń",
-                    "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.talents.CV9btQn09S9Fn8Jk\");\nargs.actor.createEmbeddedDocuments(\"Item\", [item.toObject()]);"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.talents.CV9btQn09S9Fn8Jk\").then(item => {\n    args.actor.createEmbeddedDocuments(\"Item\", [item.toObject()])\n})"
                 }
             },
             "duration": "Bonus Ogd Rund",
@@ -584,13 +584,13 @@
         "Fury's Call": {
             "id": "nyZNUwJ54MTLKQ7Y",
             "name": "Zew furii",
-            "description": "<p>Twoje żarliwe modlitwy napełniają twoich sojuszników szaleńczą pogardą wobec wrogów. Wszyscy sojusznicy objęci Cudem otrzymują <em>Nienawiść</em> wobec każdego, kto zetrze się z nimi w walce.</p>",
+            "description": "<p>Twoje żarliwe modlitwy napełniają twoich sojuszników szaleńczą pogardą wobec wrogów. Wszyscy sojusznicy objęci Cudem otrzymują @UUID[Compendium.wfrp4e-core.psychologies.5hH73j2NgPdsLCZN]{Nienawiść} wobec każdego, kto zetrze się z nimi w walce.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.nyZNUwJ54MTLKQ7Y",
             "effects": {
                 "Bt7ExFoPhWP05nr8": {
                     "id": "Bt7ExFoPhWP05nr8",
                     "label": "Zew furii",
-                    "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.psychologies.5hH73j2NgPdsLCZN\");\nargs.actor.createEmbeddedDocuments(\"Item\", [item.toObject()]);"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.psychologies.5hH73j2NgPdsLCZN\").then(item => {\n    args.actor.createEmbeddedDocuments(\"Item\", [item.toObject()])\n})"
                 }
             },
             "duration": "Bonus Ogd Rund",
@@ -648,7 +648,7 @@
                 "FbFPvypAtB428U0r": {
                     "id": "FbFPvypAtB428U0r",
                     "label": "Oplątanie",
-                    "script": "let num = 1 + {{overcast.usage.other.count}};\nif (!num || num <= 0); {\n   num = 1;\n}\nawait args.actor.addCondition(\"entangled\", num);"
+                    "script": "let num = 1 + {{overcast.usage.other.count}};\nif (!num || num <= 0); {\n   num = 1;\n}\nargs.actor.addCondition(\"entangled\", num);"
                 }
             },
             "duration": "Natychmiast",
@@ -667,7 +667,7 @@
         "Tooth and Claw": {
             "id": "PcKMAEF6UoaPSK6d",
             "name": "Kły i Pazury",
-            "description": "<p>Wzywasz Taala, by podzielił się z tobą brutalną siłą swojego królestwa. Zyskujesz Cechy Stworzenia Ugryzienie (Bonus z Siły +3) oraz Broń (Bonus z Siły +4). Są to ataki Magiczne.</p>",
+            "description": "<p>Wzywasz Taala, by podzielił się z tobą brutalną siłą swojego królestwa. Zyskujesz Cechy Stworzenia @UUID[Compendium.wfrp4e-core.traits.pLW9SVX0TVTYPiPv]{Ugryzienie} (Bonus z Siły +3) oraz @UUID[Compendium.wfrp4e-core.traits.AtpAudHA4ybXVlWM]{Broń } (Bonus z Siły +4). Są to ataki Magiczne.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.PcKMAEF6UoaPSK6d",
             "effects": {
                 "1TWDvZQnuHAsfxxd": {
@@ -689,7 +689,7 @@
                 "JlsdDkPK9j9Y65sB": {
                     "id": "JlsdDkPK9j9Y65sB",
                     "label": "Gorejące słońce",
-                    "script": "if (\"{{outcome}}\" == \"success\") {\n  let blinded = 1 + {{overcast.usage.other.count}};\n  await args.actor.addCondition(\"blinded\", blinded);\n}"
+                    "script": "if (\"{{outcome}}\" == \"success\") {\n  let blinded = 1 + {{overcast.usage.other.count}};\n  args.actor.addCondition(\"blinded\", blinded);\n}"
                 }
             },
             "duration": "Natychmiast",
@@ -732,7 +732,7 @@
                 "gvhH2LxUqQQxN6R8": {
                     "id": "gvhH2LxUqQQxN6R8",
                     "label": "Wieczny odpoczynek",
-                    "script": "if (args.actor.has(game.i18n.localize(\"NAME.Undead\")) && args.actor.has(game.i18n.localize(\"Construct\"))) {\n   await args.actor.addCondition(\"dead\");\n}"
+                    "script": "if (args.actor.has(game.i18n.localize(\"NAME.Undead\")) && args.actor.has(game.i18n.localize(\"NAME.Construct\"))) {\n   args.actor.addCondition(\"dead\");\n}"
                 }
             },
             "duration": "Natychmiast",
@@ -748,7 +748,7 @@
                 "dx14txcPj5zl0vjZ": {
                     "id": "dx14txcPj5zl0vjZ",
                     "label": "Kometa Sigmara",
-                    "script": "await args.actor.addCondition(\"ablaze\");"
+                    "script": "args.actor.addCondition(\"ablaze\");"
                 }
             },
             "duration": "Natychmiast",
@@ -801,7 +801,7 @@
         "Animal Instincts": {
             "id": "SZ88OXYo6F2q3vWb",
             "name": "Zwierzęcy Instynkt",
-            "description": "<p>Intonujesz pieśń opisującą nadnaturalne zmysły Taala, wzywając jego pomocy. W trakcie trwania Cudu zyskujesz 1 poziom Talentu <em>Wrażliwy Zmysł (wybierz jeden)</em>, a kiedy udasz się na spoczynek, natychmiast obudzisz się, jeśli zagrożenie zbliży się na tyle metrów, ile wynosi twoja Inicjatywa.</p>",
+            "description": "<p>Intonujesz pieśń opisującą nadnaturalne zmysły Taala, wzywając jego pomocy. W trakcie trwania Cudu zyskujesz 1 poziom Talentu @UUID[Compendium.wfrp4e-core.talents.9h82z72XGo9tfgQS]{Wrażliwy Zmysł (wybierz jeden)}, a kiedy udasz się na spoczynek, natychmiast obudzisz się, jeśli zagrożenie zbliży się na tyle metrów, ile wynosi twoja Inicjatywa.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.SZ88OXYo6F2q3vWb",
             "duration": "Bonus Ogd Godzin",
             "target": "1",
@@ -877,7 +877,7 @@
         "Hoarfrost's Chill": {
             "id": "v28a5ilgxvDJfBqR",
             "name": "Zimowy chłód",
-            "description": "<p><pWykrzykujesz wściekłe modlitwy, a zimny Ulryk na nie odpowiada. Twoje oczy błyszczą stalowoniebieskim światłem, a powietrze dookoła ciebie staje się nienaturalnie zimne. Wzbudzasz Strach (1) (strona 190) w sercach swoich wrogów, a wszyscy w promieniu tylu metrów, ile wynosi twoja Ogłada, tracą 1 poziom Przewagi na początku każdej Rundy, bo chłód przenika ich kości aż do szpiku.</p></p>",
+            "description": "<p>Wykrzykujesz wściekłe modlitwy, a zimny Ulryk na nie odpowiada. Twoje oczy błyszczą stalowoniebieskim światłem, a powietrze dookoła ciebie staje się nienaturalnie zimne. Wzbudzasz @UUID[Compendium.wfrp4e-core.traits.pTorrE0l3VybAbtn]{Strach (1)} (strona 190) w sercach swoich wrogów, a wszyscy w promieniu tylu metrów, ile wynosi twoja Ogłada, tracą 1 poziom Przewagi na początku każdej Rundy, bo chłód przenika ich kości aż do szpiku.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.v28a5ilgxvDJfBqR",
             "duration": "Bonus Ogd Rund",
             "target": "Ogłada metrów",

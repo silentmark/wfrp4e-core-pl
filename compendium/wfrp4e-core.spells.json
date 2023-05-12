@@ -25,13 +25,12 @@
                 "z5h8gLfbvL0aMPdK": {
                     "id": "z5h8gLfbvL0aMPdK",
                     "label": "Pierwsze proroctwo Amul",
-                    "script": "let fortunePoints = {{overcast.usage.other.current}};\nlet current = this.actor.status.fortune.value;\n\nthis.actor.update({\"system.status.fortune.value\" : fortunePoints + current});\n\nChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b> fortune points increased from ${current} to ${fortunePoints + current}`, speaker : {alias : this.effect.label}});"
+                    "script": "let fortunePoints = {{overcast.usage.other.current}};\nlet current = this.actor.status.fortune.value;\nthis.actor.update({\"system.status.fortune.value\" : fortunePoints + current});\n\nChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b> zwiększono liczbę punktów szczęścia z ${current} do ${fortunePoints + current}`, speaker : {alias : this.effect.label}});"
                 }
             },
             "duration": "Bonus I Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "heavens"
+            "range": "Ty"
         },
         "Dark Vision (Death)": {
             "id": "0Aec8e6nNCmSWIvQ",
@@ -40,8 +39,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.0Aec8e6nNCmSWIvQ",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "death"
+            "range": "Ty"
         },
         "Drop (Fire)": {
             "id": "0FlFXS9yDuLnr92k",
@@ -50,8 +48,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.0FlFXS9yDuLnr92k",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "fire"
+            "range": "Siła Woli metrów"
         },
         "Sanctify": {
             "id": "0HjjloXfVly8tZ4E",
@@ -60,8 +57,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.0HjjloXfVly8tZ4E",
             "duration": "Siła Woli minut",
             "target": "Bonus SW metrów",
-            "range": "Dotyk",
-            "lore": "death"
+            "range": "Dotyk"
         },
         "Terrifying (Death)": {
             "id": "0IzOYTDhNWrgHoXJ",
@@ -72,13 +68,12 @@
                 "lwonfNC9Tgd77ToA": {
                     "id": "lwonfNC9Tgd77ToA",
                     "label": "Przerażający wygląd (Śmierć)",
-                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
+                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "death"
+            "range": "Ty"
         },
         "Move Object (Metal)": {
             "id": "0JlQdHgFqT4RcPh1",
@@ -87,8 +82,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.0JlQdHgFqT4RcPh1",
             "duration": "1 Rund",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "metal"
+            "range": "Siła Woli metrów"
         },
         "Bolt (Witchcraft)": {
             "id": "146dtKeTjibo3Pmw",
@@ -97,8 +91,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.146dtKeTjibo3Pmw",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "witchcraft"
+            "range": "Siła Woli metrów"
         },
         "Distracting (Death)": {
             "id": "14tKnA2ILXw2oaMK",
@@ -114,27 +107,24 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "death"
+            "range": "Ty"
         },
         "Drop (Life)": {
             "id": "1ltl7lPCsWIr4H6h",
-            "name": "Niezdarność (Życie",
+            "name": "Niezdarność (Życie)",
             "description": "<p>Wlewasz magię w trzymany przez kogoś przedmiot. Może to być broń, lina lub czyjaś dłoń. Jeśli przeciwnikowi nie uda się <strong>Wymagający (+0) Test Zręczności</strong>, wypuści to, co trzyma w dłoni. Za każde 2 PS możesz dodać karę -10 do Testu Zręczności.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.1ltl7lPCsWIr4H6h",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "life"
+            "range": "Siła Woli metrów"
         },
         "Shadowsteed": {
             "id": "1ndRohs7YMmV2OHh",
             "name": "Rumak z cieni",
             "description": "<p>Przyzywasz rumaka z cieni. Nienaturalne ciało stworzenia jest czarne jak noc o północy i wydaje się jednocześnie materialne i niematerialne. Stosuje się do niego normalne zasady jeździectwa. Kiedy rumak z cieni nie przebywa na słońcu, zyskuje następujące Cechy Stworzenia: <em>Eteryczny, Magiczny, Nie Czuje Bólu, Skryty, Strach (1), Ochrona (9+) oraz Widzenie w Ciemności.</em></p>\n<p>&nbsp;</p>\n<p>Mimo tego, że rumak nie jest materialny, można na nim normalnie jeździć. Jeźdźcy, którzy posiadają Talent <em>Magia Tajemna (Cienie)</em>, zyskują w tym przypadku premię +20 do Testów Jeździectwa. Wszyscy inni otrzymują karę -20 do Testów Jeździectwa. Rumaki z cieni nie znają zmęczenia i nie muszą odpoczywać (choć ich jeźdźcy owszem!). Gdy pierwsze promienie słońca przebiją się nad horyzontem, rumak rozwiewa się w niematerialną mgłę. Jeździec, który w momencie zakończenia zaklęcia lub jego rozproszenia będzie dosiadał rumaka, otrzyma Obrażenia z powodu Upadk.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.1ndRohs7YMmV2OHh",
-            "duration": "Until the next sunrise",
-            "range": "Bonus SW metrów",
-            "lore": "shadow"
+            "duration": "Do następnego świtu",
+            "range": "Bonus SW metrów"
         },
         "Drop (Beasts)": {
             "id": "1PXlilHc99nrt0zn",
@@ -143,8 +133,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.1PXlilHc99nrt0zn",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "beasts"
+            "range": "Siła Woli metrów"
         },
         "Blast (Death)": {
             "id": "1QNOsOlEtjXccQjl",
@@ -153,8 +142,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.1QNOsOlEtjXccQjl",
             "duration": "Natychmiast",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów",
-            "lore": "death"
+            "range": "Siła Woli metrów"
         },
         "Firewall": {
             "id": "1RjTFiv9ooOW35LV",
@@ -165,13 +153,12 @@
                 "gs7bAYlGCSfRYAsh": {
                     "id": "gs7bAYlGCSfRYAsh",
                     "label": "Płomienna zasłona",
-                    "script": "await args.actor.addCondition(\"ablaze\");"
+                    "script": "args.actor.addCondition(\"ablaze\");"
                 }
             },
             "duration": "Bonus SW Rund",
             "target": "Specjalny",
-            "range": "Siła Woli metrów",
-            "lore": "fire"
+            "range": "Siła Woli metrów"
         },
         "Comet of Casandora": {
             "id": "208BiJLY0jXxelbd",
@@ -182,13 +169,12 @@
                 "RgMufN4ojXxwM49O": {
                     "id": "RgMufN4ojXxwM49O",
                     "label": "Kometa Kasandory",
-                    "script": "await this.actor.addCondition(\"ablaze\");\nawait this.actor.addCondition(\"prone\");"
+                    "script": "let that = this;\nthat.actor.addCondition(\"ablaze\").then(() => {that.actor.addCondition(\"prone\");});"
                 }
             },
             "duration": "Specjalny",
             "target": "Bonus I metrów",
-            "range": "Initiative metrów",
-            "lore": "heavens"
+            "range": "Inicjatywa metrów"
         },
         "Magic Shield (Daemonology)": {
             "id": "24ichKVP2EzyO5ob",
@@ -197,8 +183,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.24ichKVP2EzyO5ob",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "daemonology"
+            "range": "Ty"
         },
         "Shroud of Invisibility": {
             "id": "2ccKksxXFIMD2YLs",
@@ -207,8 +192,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.2ccKksxXFIMD2YLs",
             "duration": "Bonus SW Rund",
             "target": "1",
-            "range": "Dotyk",
-            "lore": "shadow"
+            "range": "Dotyk"
         },
         "Earthpool": {
             "id": "2cwR2BPkdi7IuV3e",
@@ -217,8 +201,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.2cwR2BPkdi7IuV3e",
             "duration": "Natychmiast",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "life"
+            "range": "Ty"
         },
         "Acquiescence": {
             "id": "2fBaYkBsPZzxNSNj",
@@ -234,8 +217,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "slaanesh"
+            "range": "Siła Woli metrów"
         },
         "Mundane Aura (Metal)": {
             "id": "2hxE68YnEOLIceHb",
@@ -244,8 +226,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.2hxE68YnEOLIceHb",
             "duration": "Siła Woli minut",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "metal"
+            "range": "Ty"
         },
         "Push (Witchcraft)": {
             "id": "2IQ888mDlSZjqSoL",
@@ -254,8 +235,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.2IQ888mDlSZjqSoL",
             "duration": "Natychmiast",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "witchcraft"
+            "range": "Ty"
         },
         "Chain Attack (Shadow)": {
             "id": "2jXYoW0CJoA5BoMd",
@@ -264,8 +244,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.2jXYoW0CJoA5BoMd",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów",
-            "lore": "shadow"
+            "range": "Siła Woli metrów"
         },
         "Fearsome (Necromancy)": {
             "id": "31sQbAwCE7viJDXi",
@@ -276,13 +255,12 @@
                 "0IC3xaAT9x78ci7w": {
                     "id": "0IC3xaAT9x78ci7w",
                     "label": "Straszny wygląd (Nekromancja)",
-                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
+                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 }
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "necromancy"
+            "range": "Ty"
         },
         "Net of Amyntok": {
             "id": "38qRyF13jCszeOe1",
@@ -293,13 +271,12 @@
                 "QeboSg8hSLhUoKy1": {
                     "id": "QeboSg8hSLhUoKy1",
                     "label": "Oszołomienie",
-                    "script": "await args.actor.addCondition(\"stunned\");"
+                    "script": "args.actor.addCondition(\"stunned\");"
                 }
             },
             "duration": "Bonus Int Rund (Celu)",
             "target": "1",
-            "range": "Bonus Int metrów",
-            "lore": "light"
+            "range": "Bonus Int metrów"
         },
         "Entangle (Necromancy)": {
             "id": "3BB6QnnDq8OvchRk",
@@ -310,13 +287,12 @@
                 "HV1cfQWe71Z1D8iA": {
                     "id": "HV1cfQWe71Z1D8iA",
                     "label": "Pochwycenie (Nekromancja)",
-                    "script": "await args.actor.addCondition(\"entangled\", {{result.overcast.other.current}})"
+                    "script": "args.actor.addCondition(\"entangled\", {{result.overcast.other.current}})"
                 }
             },
             "duration": "Specjalny",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "necromancy"
+            "range": "Siła Woli metrów"
         },
         "Fearsome (Metal)": {
             "id": "3dpFC0lsOPXEcTMX",
@@ -327,13 +303,12 @@
                 "xta2nDZv5vnjHseC": {
                     "id": "xta2nDZv5vnjHseC",
                     "label": "Straszny wygląd (Metal)",
-                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
+                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 }
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "metal"
+            "range": "Ty"
         },
         "Bridge": {
             "id": "3DvCrKaYw2mF42Nr",
@@ -351,8 +326,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.3eGh2vUgXRk3Czj8",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "1 metr",
-            "lore": "light"
+            "range": "1 metr"
         },
         "Aethyric Armour (Necromancy)": {
             "id": "3GDfAQLXIOuaDo1d",
@@ -368,8 +342,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "necromancy"
+            "range": "Ty"
         },
         "Blast (Daemonology)": {
             "id": "3mZ76XJX38pT2d7r",
@@ -378,8 +351,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.3mZ76XJX38pT2d7r",
             "duration": "Natychmiast",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów",
-            "lore": "daemonology"
+            "range": "Siła Woli metrów"
         },
         "Flaming Sword of Rhuin": {
             "id": "3SzMz3ZiGzbHRjTP",
@@ -389,11 +361,10 @@
             "duration": "Bonus SW Rund",
             "target": "1",
             "range": "Siła Woli metrów",
-            "lore": "fire",
             "effects": {
                 "N25aw2AX02DBl2O5": {
                     "id": "N25aw2AX02DBl2O5",
-                    "label": "Gorejący miecz Rhuin",
+                    "label": "Gorejący Miecz Rhuin",
                     "script": "args.item.system.qualities.value.push({name : \"impact\"})\nargs.item.createConditionalEffect({\n    \"label\": this.effect.label,\n    \"icon\" : this.effect.icon,\n    \"flags\": {\n        \"wfrp4e\": {\n            \"effectTrigger\": \"applyDamage\",\n            \"effectApplication\": \"damage\",\n            \"hide\": false,\n            \"preventDuplicateEffects\": false,\n            \"script\": \"args.actor.addCondition('ablaze')\"\n        }\n    },\n});"
                 }
             }
@@ -405,8 +376,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.3Wilae1bkHUDR7Aj",
             "duration": "Natychmiast",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "beasts"
+            "range": "Ty"
         },
         "Fearsome (Heavens)": {
             "id": "3XZDELqDQ1BBUAmI",
@@ -417,13 +387,12 @@
                 "yqyESk94xtKG9e2Z": {
                     "id": "yqyESk94xtKG9e2Z",
                     "label": "Straszny wygląd (Niebiosa)",
-                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
+                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n   game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 }
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "heavens"
+            "range": "Ty"
         },
         "Breath (Heavens)": {
             "id": "44AO7oTKwqUu78C1",
@@ -432,8 +401,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.44AO7oTKwqUu78C1",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "1 metr",
-            "lore": "heavens"
+            "range": "1 metr"
         },
         "Sleep": {
             "id": "4ePe5oNQakA8nJlk",
@@ -442,8 +410,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.4ePe5oNQakA8nJlk",
             "duration": "Bonus SW Rund",
             "target": "1",
-            "range": "Dotyk",
-            "lore": "petty"
+            "range": "Dotyk"
         },
         "Ward (Death)": {
             "id": "4iSZ7vop0NVz8xih",
@@ -452,8 +419,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.4iSZ7vop0NVz8xih",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "death"
+            "range": "Ty"
         },
         "Teleport (Life)": {
             "id": "4jNBpvM21vnZgUFw",
@@ -462,8 +428,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.4jNBpvM21vnZgUFw",
             "duration": "Natychmiast",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "life"
+            "range": "Ty"
         },
         "Teleport (Beasts)": {
             "id": "4mUZ6UbD79OwrjqX",
@@ -472,8 +437,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.4mUZ6UbD79OwrjqX",
             "duration": "Natychmiast",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "beasts"
+            "range": "Ty"
         },
         "Regenerate": {
             "id": "4NQUrs2PUNpYxlWs",
@@ -484,13 +448,12 @@
                 "YQKv7HWnnxmcOQty": {
                     "id": "YQKv7HWnnxmcOQty",
                     "label": "Regeneracja",
-                    "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")};\n\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\n\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`;\n      if (regen == 10) {\n         chatData.content += `<br>Additionally, they regenerate a Critical Wound.`;\n      }\n   } else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`;\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Additionally, they regenerate a Critical Wound.`;\n      }\n   } else {\n      chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`;\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}"
+                    "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")};\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> Odzyskana żywotność:  ${regen} .`;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`;\n      }\n   }\n   else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> wyrzucił ${regen} i odzyskał 1 punkt żywotności.`\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`\n      }\n   }\n   else {\n      chatData.content += `<b>${this.actor.name}</b> Rzut na regenerację: ${regen} - brak efektu.`\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}"
                 }
             },
             "duration": "Bonus SW Rund",
             "target": "1",
-            "range": "Dotyk",
-            "lore": "life"
+            "range": "Dotyk"
         },
         "Magic Shield (Beasts)": {
             "id": "4ZtCco8IAK6cucSc",
@@ -499,8 +462,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.4ZtCco8IAK6cucSc",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "beasts"
+            "range": "Ty"
         },
         "Magic Shield (Hedgecraft)": {
             "id": "4ZWGTJ8gMkw9qUaq",
@@ -509,8 +471,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.4ZWGTJ8gMkw9qUaq",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "hedgecraft"
+            "range": "Ty"
         },
         "Blinding Light": {
             "id": "57d5ugakBYcsphah",
@@ -521,13 +482,12 @@
                 "cu2P7Zg9f68sp27i": {
                     "id": "cu2P7Zg9f68sp27i",
                     "label": "Rozbłysk",
-                    "script": "if (this.actor.isOwner) {\n    await args.actor.addCondition(\"blinded\", {{SL}});\n}"
+                    "script": "if (this.actor.isOwner) {\n    args.actor.addCondition(\"blinded\", {{SL}});\n}"
                 }
             },
             "duration": "Natychmiast",
             "target": "Ty",
-            "range": "Siła Woli metrów",
-            "lore": "light"
+            "range": "Siła Woli metrów"
         },
         "Terrifying (Fire)": {
             "id": "5BZJbIORcBTnHCKL",
@@ -538,13 +498,12 @@
                 "Vn9rIVBiE84ajsvQ": {
                     "id": "Vn9rIVBiE84ajsvQ",
                     "label": "Przerażający wygląd (Ogień)",
-                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
+                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "fire"
+            "range": "Ty"
         },
         "Magic Shield (Witchcraft)": {
             "id": "5gADMmkF4LsoV3qP",
@@ -553,8 +512,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.5gADMmkF4LsoV3qP",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "witchcraft"
+            "range": "Ty"
         },
         "Flight (Metal)": {
             "id": "5QO1LkRkxCfaWCtS",
@@ -565,13 +523,12 @@
                 "FAccQCDysAjLWR4k": {
                     "id": "FAccQCDysAjLWR4k",
                     "label": "Lot (Metal)",
-                    "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.EO05HX7jql0g605A\");\nitem = item.toObject();\nitem.system.specification.value = this.actor.characteristics.ag.value;\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.traits.EO05HX7jql0g605A\").then(item => {\n   item = item.toObject()\n   item.system.specification.value = this.actor.characteristics.ag.value\n   this.actor.createEmbeddedDocuments(\"Item\", [item])\n})"
                 }
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "metal"
+            "range": "Ty"
         },
         "Move Object (Necromancy)": {
             "id": "5rRSPXB064kaD7S6",
@@ -580,8 +537,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.5rRSPXB064kaD7S6",
             "duration": "1 Rund",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "necromancy"
+            "range": "Siła Woli metrów"
         },
         "Aethyric Armour (Life)": {
             "id": "5srkF8mJss2fJbnH",
@@ -597,8 +553,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "life"
+            "range": "Ty"
         },
         "Magic Shield (Death)": {
             "id": "6ax6mO8DPMTrG5Sp",
@@ -607,8 +562,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.6ax6mO8DPMTrG5Sp",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "death"
+            "range": "Ty"
         },
         "Magic Shield (Heavens)": {
             "id": "6eu6VVbYzq5mCNGW",
@@ -617,8 +571,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.6eu6VVbYzq5mCNGW",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "heavens"
+            "range": "Ty"
         },
         "Teleport (Shadow)": {
             "id": "6GaqchV2dL60Xfsm",
@@ -627,8 +580,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.6GaqchV2dL60Xfsm",
             "duration": "Natychmiast",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "shadow"
+            "range": "Ty"
         },
         "Dome (Witchcraft)": {
             "id": "6stEgyIRF0XcKPhO",
@@ -637,8 +589,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.6stEgyIRF0XcKPhO",
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
-            "range": "Ty",
-            "lore": "witchcraft"
+            "range": "Ty"
         },
         "Aethyric Armour (Beasts)": {
             "id": "6XVrv2zgdL3CSJHX",
@@ -654,8 +605,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "beasts"
+            "range": "Ty"
         },
         "Breath (Witchcraft)": {
             "id": "75BkqdYuBwnlJl5D",
@@ -664,18 +614,16 @@
             "sourceId": "Compendium.wfrp4e-core.spells.75BkqdYuBwnlJl5D",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "1 metr",
-            "lore": "witchcraft"
+            "range": "1 metr"
         },
         "Reanimate": {
             "id": "7BJDTRG65hwt1fUK",
             "name": "Ożywienie umarłych",
             "description": "<p>Kierujesz cuchnące pasma gęstego <em>Dhar</em> przed siebie, wbijając je w ciała, ożywiając te, które niegdyś były martwe. Ożywiasz tyle martwych ciał (w postaci zombie) lub szkieletów w Zasięgu, ile wynosi twój Bonus z Siły Woli + PS. Rozpoczynają one Rundę w Stanie <em>Powalenie</em>. Przyzwani nieumarli będą całkowicie pod twoją kontrolą i wykonają proste rozkazy. Jeśli zostaniesz zabity lub otrzymasz Stan <em>Utrata Przytomności</em>, zaklęcie dobiegnie końca, a Ożywieńcy padną na ziemię. Za każde +2 PS w Teście Rzucenia Zaklęcia możesz przyzwać dodatkowe szkielety lub zombie w liczbie równej twojemu Bonusowi z Siły Woli + PS.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.7BJDTRG65hwt1fUK",
-            "duration": "Until sunrise",
+            "duration": "Do świtu",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów",
-            "lore": "necromancy"
+            "range": "Siła Woli metrów"
         },
         "Distracting (Daemonology)": {
             "id": "7HSRFiY46vA8M2zY",
@@ -691,8 +639,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "daemonology"
+            "range": "Ty"
         },
         "Mundane Aura (Fire)": {
             "id": "7pHcU30nMhgd0V5N",
@@ -701,8 +648,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.7pHcU30nMhgd0V5N",
             "duration": "Siła Woli minut",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "fire"
+            "range": "Ty"
         },
         "Corrosive Blood (Light)": {
             "id": "7QaIq838arGHgzKl",
@@ -713,13 +659,12 @@
                 "GZYUi96n8vcnUb9G": {
                     "id": "GZYUi96n8vcnUb9G",
                     "label": "Żrąca krew (Światło)",
-                    "script": "let content = `<b>${this.effect.label}</b>: All targets engaged with <b>${this.actor.prototypeToken.name}</b> take [[/r 1d10]] Damage, modified by TB and AP.`\n\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
+                    "script": "let content = `<b>${this.effect.label}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
                 }
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "light"
+            "range": "Ty"
         },
         "Push (Daemonology)": {
             "id": "7wK4srcIgc8USRYt",
@@ -728,8 +673,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.7wK4srcIgc8USRYt",
             "duration": "Natychmiast",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "daemonology"
+            "range": "Ty"
         },
         "Clarity of Thought": {
             "id": "82mmGLTAKQ4mrsBl",
@@ -738,8 +682,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.82mmGLTAKQ4mrsBl",
             "duration": "Inteligencja minut",
             "target": "1",
-            "range": "Dotyk",
-            "lore": "light"
+            "range": "Dotyk"
         },
         "Aethyric Arms (Fire)": {
             "id": "89Xcjrqa44LEluU5",
@@ -748,8 +691,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.89Xcjrqa44LEluU5",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "fire"
+            "range": "Ty"
         },
         "Blast (Shadow)": {
             "id": "8rRCSJGIdecFcpxm",
@@ -758,8 +700,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.8rRCSJGIdecFcpxm",
             "duration": "Natychmiast",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów",
-            "lore": "shadow"
+            "range": "Siła Woli metrów"
         },
         "Push (Fire)": {
             "id": "99QJoyyHfYBQz5Wz",
@@ -768,8 +709,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.99QJoyyHfYBQz5Wz",
             "duration": "Natychmiast",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "fire"
+            "range": "Ty"
         },
         "Drop (Hedgecraft)": {
             "id": "9bKioMmyDY2PV4MY",
@@ -778,15 +718,14 @@
             "sourceId": "Compendium.wfrp4e-core.spells.9bKioMmyDY2PV4MY",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "hedgecraft"
+            "range": "Siła Woli metrów"
         },
         "Arrow Shield": {
             "id": "9uRDDAjndugmNmZr",
             "name": "Niszczyciel strzał",
             "description": "<p>Wszelkie pociski z materii organicznej, jak np. strzały czy bełty z drewnianym promieniem, są automatycznie niszczone, jeśli wlecą w Zasięg zaklęcia - nie zadają żadnych obrażeń. Zaklęcie nie wpływa na pociski nieorganiczne, jak np. noże czy kule pistoletowe.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.9uRDDAjndugmNmZr",
-            "duration": "Bonus SW Rund+",
+            "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
             "range": "Ty"
         },
@@ -815,13 +754,12 @@
                 "Jcn6S9AgpBdRx9jI": {
                     "id": "Jcn6S9AgpBdRx9jI",
                     "label": "Żrąca krew (Niebiosa)",
-                    "script": "let content = `<b>${this.effect.label}</b>: All targets engaged with <b>${this.actor.prototypeToken.name}</b> take [[/r 1d10]] Damage, modified by TB and AP.`\n\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
+                    "script": "let content = `<b>${this.effect.label}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
                 }
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "heavens"
+            "range": "Ty"
         },
         "Creeping Menace": {
             "id": "a8npXWG2o4BxhtVV",
@@ -830,8 +768,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.a8npXWG2o4BxhtVV",
             "duration": "Bonus SW Rund",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "witchcraft"
+            "range": "Siła Woli metrów"
         },
         "Ward (Shadow)": {
             "id": "aCDDeeYF24waaPgT",
@@ -840,8 +777,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.aCDDeeYF24waaPgT",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "shadow"
+            "range": "Ty"
         },
         "Mundane Aura (Daemonology)": {
             "id": "aCOdKvw68yopHYJ2",
@@ -850,8 +786,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.aCOdKvw68yopHYJ2",
             "duration": "Siła Woli minut",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "daemonology"
+            "range": "Ty"
         },
         "Drop (Necromancy)": {
             "id": "aMQMBNGgolHJAzXF",
@@ -860,8 +795,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.aMQMBNGgolHJAzXF",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "necromancy"
+            "range": "Siła Woli metrów"
         },
         "Dark Vision (Beasts)": {
             "id": "aPhKykUG3I5R9P4u",
@@ -870,8 +804,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.aPhKykUG3I5R9P4u",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "beasts"
+            "range": "Ty"
         },
         "Distracting (Shadow)": {
             "id": "aT6shbEGQSOfHx57",
@@ -887,8 +820,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "shadow"
+            "range": "Ty"
         },
         "Nepenthe": {
             "id": "aVUKVQTwtWuQXIgx",
@@ -897,8 +829,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.aVUKVQTwtWuQXIgx",
             "duration": "Bonus SW Rund",
             "target": "Specjalny",
-            "range": "Dotyk",
-            "lore": "hedgecraft"
+            "range": "Dotyk"
         },
         "Teleport (Heavens)": {
             "id": "AwRVLEJZCLwPJKy2",
@@ -907,8 +838,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.AwRVLEJZCLwPJKy2",
             "duration": "Natychmiast",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "heavens"
+            "range": "Ty"
         },
         "Cauterise": {
             "id": "aWxO2jpMvmZUEsK9",
@@ -919,13 +849,12 @@
                 "miECAiZsYbFkZJwd": {
                     "id": "miECAiZsYbFkZJwd",
                     "label": "Przypalenie",
-                    "script": "let roll = (await new Roll(\"1d10\").roll());\nroll.toMessage({flavor: \"Wounds Healed\", speaker : {alias : args.actor.name}});\n\nlet wounds = duplicate(args.actor.status.wounds);\nwounds.value += roll.total;\n\nif (wounds.value > wounds.max) {\n    wounds.value = wounds.max;\n}\n\nargs.actor.update({\"system.status.wounds\" : wounds});\n\nlet bleeding = args.actor.hasCondition(\"bleeding\")\nif (bleeding) {\n    await args.actor.removeCondition(\"bleeding\", bleeding.flags.wfrp4e.value);\n}"
+                    "script": "let roll = (await new Roll(\"1d10\").roll());\nroll.toMessage({flavor: \"Uleczone rany\", speaker : {alias : args.actor.name}});\n\nlet wounds = duplicate(args.actor.status.wounds);\nwounds.value += roll.total;\n\nif (wounds.value > wounds.max) {\n    wounds.value = wounds.max;\n}\n\nawait args.actor.update({\"system.status.wounds\" : wounds});\n\nlet bleeding = args.actor.hasCondition(\"bleeding\")\nif (bleeding) {\n    await args.actor.removeCondition(\"bleeding\", bleeding.flags.wfrp4e.value);\n}"
                 }
             },
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Dotyk",
-            "lore": "fire"
+            "range": "Dotyk"
         },
         "Arrow Shield (Metal)": {
             "id": "AywiuNyA8bMS7yFi",
@@ -934,8 +863,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.AywiuNyA8bMS7yFi",
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
-            "range": "Ty",
-            "lore": "metal"
+            "range": "Ty"
         },
         "Barkskin": {
             "id": "B7iwAtfa9EgNvKMz",
@@ -955,8 +883,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "1",
-            "range": "Dotyk",
-            "lore": "life"
+            "range": "Dotyk"
         },
         "Bolt (Necromancy)": {
             "id": "B8dvTJtaLCHgfFuP",
@@ -965,8 +892,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.B8dvTJtaLCHgfFuP",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "necromancy"
+            "range": "Siła Woli metrów"
         },
         "Arrow Shield (Beasts)": {
             "id": "bd9bf1D55v6ov1UV",
@@ -975,8 +901,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.bd9bf1D55v6ov1UV",
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
-            "range": "Ty",
-            "lore": "beasts"
+            "range": "Ty"
         },
         "Dark Vision (Heavens)": {
             "id": "bgQpVEP0PZNsAheP",
@@ -985,8 +910,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.bgQpVEP0PZNsAheP",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "heavens"
+            "range": "Ty"
         },
         "Breath (Shadow)": {
             "id": "BKHMI2wI74a42ZQa",
@@ -995,8 +919,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.BKHMI2wI74a42ZQa",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "1 metr",
-            "lore": "shadow"
+            "range": "1 metr"
         },
         "Aethyric Arms (Heavens)": {
             "id": "bLCz5iBxd2wjfStI",
@@ -1005,8 +928,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.bLCz5iBxd2wjfStI",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "heavens"
+            "range": "Ty"
         },
         "Sly Hands": {
             "id": "BMnu4XfgsSqVnCB8",
@@ -1015,8 +937,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.BMnu4XfgsSqVnCB8",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "petty"
+            "range": "Ty"
         },
         "Mundane Aura (Beasts)": {
             "id": "bNdVPhv1OT8LJnnt",
@@ -1025,8 +946,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.bNdVPhv1OT8LJnnt",
             "duration": "Siła Woli minut",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "beasts"
+            "range": "Ty"
         },
         "Earthblood": {
             "id": "BU56aMyn8Hfaamrb",
@@ -1037,13 +957,12 @@
                 "c32DjCbePouMb7cz": {
                     "id": "c32DjCbePouMb7cz",
                     "label": "Krew ziemi",
-                    "script": "let caster = await fromUuid(this.effect.origin);\nif (caster) {\n    let bonus = caster.characteristics.wp.bonus;\n    this.actor.modifyWounds(bonus);\n    ChatMessage.create({content: `${this.actor.prototypeToken.name} regains ${bonus} Wounds (if in direct contact with the Earth)`, speaker : {alias : this.effect.label}})\n};"
+                    "script": "let caster = await fromUuid(this.effect.origin);\nif (caster) {\n    let bonus = caster.characteristics.wp.bonus;\n    this.actor.modifyWounds(bonus);\n    ChatMessage.create({content: `${this.actor.prototypeToken.name} odzyskuje żywtność: ${bonus} (jeśli jest w kontakcie z ziemią)`, speaker : {alias : this.effect.label}})\n};"
                 }
             },
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
-            "range": "Ty",
-            "lore": "life"
+            "range": "Ty"
         },
         "Entangle (Daemonology)": {
             "id": "bVcEr9YvMfBcE3tH",
@@ -1054,13 +973,12 @@
                 "TqTR2863RzMSKYQI": {
                     "id": "TqTR2863RzMSKYQI",
                     "label": "Pochwycenie (Demonologia)",
-                    "script": "await args.actor.addCondition(\"entangled\", {{result.overcast.other.current}})"
+                    "script": "args.actor.addCondition(\"entangled\", {{result.overcast.other.current}})"
                 }
             },
             "duration": "Specjalny",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "daemonology"
+            "range": "Siła Woli metrów"
         },
         "Push (Shadow)": {
             "id": "BWjNKaTolhIPbNcO",
@@ -1069,8 +987,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.BWjNKaTolhIPbNcO",
             "duration": "Natychmiast",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "shadow"
+            "range": "Ty"
         },
         "Chain Attack": {
             "id": "Bx5CC17pRNITWhg8",
@@ -1088,8 +1005,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.cAej1SjgJF1J0Lbx",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "1 metr",
-            "lore": "hedgecraft"
+            "range": "1 metr"
         },
         "Push (Heavens)": {
             "id": "cfuqgV2PTnjMrgT7",
@@ -1098,8 +1014,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.cfuqgV2PTnjMrgT7",
             "duration": "Natychmiast",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "heavens"
+            "range": "Ty"
         },
         "Breath": {
             "id": "cfvdViThaoOHyuSk",
@@ -1117,8 +1032,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.cjD53QYSatQwL6CR",
             "duration": "Siła Woli minut",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "petty"
+            "range": "Ty"
         },
         "Mundane Aura (Life)": {
             "id": "CJvmSabjtw2SNmMA",
@@ -1127,8 +1041,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.CJvmSabjtw2SNmMA",
             "duration": "Siła Woli minut",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "life"
+            "range": "Ty"
         },
         "Move Object (Beasts)": {
             "id": "CL2ysmNjmJopV9Tu",
@@ -1137,8 +1050,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.CL2ysmNjmJopV9Tu",
             "duration": "1 Rund",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "beasts"
+            "range": "Siła Woli metrów"
         },
         "The Evil Eye": {
             "id": "CnydL8p3PVAuF98w",
@@ -1147,8 +1059,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.CnydL8p3PVAuF98w",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów",
-            "lore": "witchcraft"
+            "range": "Siła Woli metrów"
         },
         "Conserve": {
             "id": "cSjAAjixcMdYrKBz",
@@ -1157,8 +1068,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.cSjAAjixcMdYrKBz",
             "duration": "Bonus SW dni",
             "target": "1",
-            "range": "1 metr",
-            "lore": "petty"
+            "range": "1 metr"
         },
         "Terrifying (Shadow)": {
             "id": "cSmcBYrwV385Tgbt",
@@ -1169,13 +1079,12 @@
                 "i1zZu3NLRiCyXlLK": {
                     "id": "i1zZu3NLRiCyXlLK",
                     "label": "Przerażający wygląd (Cień)",
-                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
+                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "shadow"
+            "range": "Ty"
         },
         "Entangle (Death)": {
             "id": "cuN77AhQ490wCmk6",
@@ -1186,13 +1095,12 @@
                 "Mu3WnR09smrosiup": {
                     "id": "Mu3WnR09smrosiup",
                     "label": "Pochwycenie (Śmierć)",
-                    "script": "await args.actor.addCondition(\"entangled\", {{result.overcast.other.current}})"
+                    "script": "args.actor.addCondition(\"entangled\", {{result.overcast.other.current}});"
                 }
             },
             "duration": "Specjalny",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "death"
+            "range": "Siła Woli metrów"
         },
         "Teleport": {
             "id": "CVam8L1cNsnxZHRR",
@@ -1212,13 +1120,12 @@
                 "DqW2ksGOFVorEAWR": {
                     "id": "DqW2ksGOFVorEAWR",
                     "label": "Straszny wygląd (Śmierć)",
-                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
+                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 }
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "death"
+            "range": "Ty"
         },
         "Move Object (Life)": {
             "id": "cwnBquEIHjnvkJ7E",
@@ -1227,8 +1134,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.cwnBquEIHjnvkJ7E",
             "duration": "1 Rund",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "life"
+            "range": "Siła Woli metrów"
         },
         "Move Object (Daemonology)": {
             "id": "d9VeHlESTpPYww5o",
@@ -1237,8 +1143,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.d9VeHlESTpPYww5o",
             "duration": "1 Rund",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "daemonology"
+            "range": "Siła Woli metrów"
         },
         "Entangle (Metal)": {
             "id": "dBIIdzVZh6cnbWDG",
@@ -1249,13 +1154,12 @@
                 "Y2WsEoBoIBZjynji": {
                     "id": "Y2WsEoBoIBZjynji",
                     "label": "Pochwycenie (Metal)",
-                    "script": "await args.actor.addCondition(\"entangled\", {{result.overcast.other.current}})"
+                    "script": "args.actor.addCondition(\"entangled\", {{result.overcast.other.current}});"
                 }
             },
             "duration": "Specjalny",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "metal"
+            "range": "Siła Woli metrów"
         },
         "Forge of Chamon": {
             "id": "ddnMcWMN4MftxGLr",
@@ -1264,8 +1168,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.ddnMcWMN4MftxGLr",
             "duration": "Siła Woli minut",
             "target": "Specjalny",
-            "range": "Bonus SW metrów",
-            "lore": "metal"
+            "range": "Bonus SW metrów"
         },
         "Dark Vision (Witchcraft)": {
             "id": "DDqqDmpevvF3Rrsb",
@@ -1274,8 +1177,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.DDqqDmpevvF3Rrsb",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "witchcraft"
+            "range": "Ty"
         },
         "Mindslip": {
             "id": "dGSUQiUmXHrGqwxY",
@@ -1284,8 +1186,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.dGSUQiUmXHrGqwxY",
             "duration": "Siła Woli minut",
             "target": "1",
-            "range": "1 metr",
-            "lore": "shadow"
+            "range": "1 metr"
         },
         "Aethyric Arms (Necromancy)": {
             "id": "dJYAXtG1e5pmo5NZ",
@@ -1294,8 +1195,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.dJYAXtG1e5pmo5NZ",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "necromancy"
+            "range": "Ty"
         },
         "Lie of the Land": {
             "id": "DOfyDATb1gcGOMry",
@@ -1304,8 +1204,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.DOfyDATb1gcGOMry",
             "duration": "Specjalny",
             "target": "Ty",
-            "range": "Bonus I Kilometrów",
-            "lore": "life"
+            "range": "Bonus I Kilometrów"
         },
         "Distracting (Witchcraft)": {
             "id": "DPRMGO9rhvdNz9w7",
@@ -1315,14 +1214,13 @@
             "effects": {
                 "1Go91fEPZPGcCuYW": {
                     "id": "1Go91fEPZPGcCuYW",
-                    "label": "Distracting",
+                    "label": "Dekoncentrujący",
                     "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.MVI0lXcg6vvtooAF\")\nthis.actor.createEmbeddedDocuments(\"Item\", [item.toObject()])"
                 }
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "witchcraft"
+            "range": "Ty"
         },
         "Entangle (Life)": {
             "id": "dQqsVfVNdO1PTdah",
@@ -1333,13 +1231,12 @@
                 "X1I1tLDoMesU8nf1": {
                     "id": "X1I1tLDoMesU8nf1",
                     "label": "Pochwycenie (Życie)",
-                    "script": "await args.actor.addCondition(\"entangled\", {{result.overcast.other.current}})"
+                    "script": "args.actor.addCondition(\"entangled\", {{result.overcast.other.current}});"
                 }
             },
             "duration": "Specjalny",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "life"
+            "range": "Siła Woli metrów"
         },
         "Mundane Aura (Witchcraft)": {
             "id": "DrOqNHjmQnFjiykU",
@@ -1348,8 +1245,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.DrOqNHjmQnFjiykU",
             "duration": "Siła Woli minut",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "witchcraft"
+            "range": "Ty"
         },
         "Fool’s Gold": {
             "id": "druJd5YFjyW5liTz",
@@ -1358,8 +1254,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.druJd5YFjyW5liTz",
             "duration": "Siła Woli minut",
             "target": "1",
-            "range": "Dotyk",
-            "lore": "metal"
+            "range": "Dotyk"
         },
         "Phâ’s Protection": {
             "id": "dS5zK3lMCumvuAAF",
@@ -1368,8 +1263,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.dS5zK3lMCumvuAAF",
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
-            "range": "Ty",
-            "lore": "light"
+            "range": "Ty"
         },
         "Aethyric Arms (Shadow)": {
             "id": "dUX1XGppNdZpUZyA",
@@ -1378,8 +1272,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.dUX1XGppNdZpUZyA",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "shadow"
+            "range": "Ty"
         },
         "Crown of Flame": {
             "id": "dzfhqgUxWleNZbyW",
@@ -1395,8 +1288,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "fire"
+            "range": "Ty"
         },
         "Corrosive Blood (Metal)": {
             "id": "E5M0Thnx6HFj46At",
@@ -1407,13 +1299,12 @@
                 "2kqXlGN3vRYzGwUe": {
                     "id": "2kqXlGN3vRYzGwUe",
                     "label": "Żrąca krew (Metal)",
-                    "script": "let content = `<b>${this.effect.label}</b>: All targets engaged with <b>${this.actor.prototypeToken.name}</b> take [[/r 1d10]] Damage, modified by TB and AP.`\n\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
+                    "script": "let content = `<b>${this.effect.label}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
                 }
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "metal"
+            "range": "Ty"
         },
         "Dark Vision (Metal)": {
             "id": "EfUTKGyYDR361dVu",
@@ -1422,8 +1313,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.EfUTKGyYDR361dVu",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "metal"
+            "range": "Ty"
         },
         "Fearsome (Fire)": {
             "id": "eJJRmbyFlNheGjMG",
@@ -1434,13 +1324,12 @@
                 "AaJb9eSWJVc9I0dG": {
                     "id": "AaJb9eSWJVc9I0dG",
                     "label": "Straszny wygląd (Ogień)",
-                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
+                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 }
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "fire"
+            "range": "Ty"
         },
         "Soul Vortex": {
             "id": "eJPjVeW9UEH891rm",
@@ -1451,13 +1340,12 @@
                 "Zdq7ThKolTWWRUXk": {
                     "id": "Zdq7ThKolTWWRUXk",
                     "label": "Panika",
-                    "script": "await args.actor.addCondition(\"broken\")"
+                    "script": "args.actor.addCondition(\"broken\");"
                 }
             },
             "duration": "Natychmiast",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów",
-            "lore": "death"
+            "range": "Siła Woli metrów"
         },
         "Bridge (Death)": {
             "id": "enG7NVLPcWHfRXg8",
@@ -1466,8 +1354,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.enG7NVLPcWHfRXg8",
             "duration": "Bonus SW Rund",
             "target": "Patrz opis",
-            "range": "Siła Woli metrów",
-            "lore": "death"
+            "range": "Siła Woli metrów"
         },
         "Chain Attack (Witchcraft)": {
             "id": "EpwqkFcmpYyme4aM",
@@ -1476,8 +1363,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.EpwqkFcmpYyme4aM",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów",
-            "lore": "witchcraft"
+            "range": "Siła Woli metrów"
         },
         "Chain Attack (Beasts)": {
             "id": "ET5sNnUsGslSNEAm",
@@ -1486,8 +1372,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.ET5sNnUsGslSNEAm",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów",
-            "lore": "beasts"
+            "range": "Siła Woli metrów"
         },
         "Magic Shield (Necromancy)": {
             "id": "eTAzKM5j06KwtdBt",
@@ -1496,8 +1381,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.eTAzKM5j06KwtdBt",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "necromancy"
+            "range": "Ty"
         },
         "Produce Small Animal": {
             "id": "EyBc9yQqFUNIP9S1",
@@ -1506,8 +1390,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.EyBc9yQqFUNIP9S1",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Dotyk",
-            "lore": "petty"
+            "range": "Dotyk"
         },
         "Flight (Fire)": {
             "id": "eYrq2tyVjW8C84w6",
@@ -1523,8 +1406,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "fire"
+            "range": "Ty"
         },
         "Magic Shield (Fire)": {
             "id": "f8bYT3ZqKLUZSZBY",
@@ -1533,8 +1415,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.f8bYT3ZqKLUZSZBY",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "fire"
+            "range": "Ty"
         },
         "Beast Master": {
             "id": "FaHVRxdljzqklNTC",
@@ -1543,8 +1424,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.FaHVRxdljzqklNTC",
             "duration": "Bonus SW dni",
             "target": "1",
-            "range": "Bonus SW metrów",
-            "lore": "beasts"
+            "range": "Bonus SW metrów"
         },
         "Mundane Aura (Hedgecraft)": {
             "id": "FbB3irDIi2cTRhUw",
@@ -1553,8 +1433,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.FbB3irDIi2cTRhUw",
             "duration": "Siła Woli minut",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "hedgecraft"
+            "range": "Ty"
         },
         "Chain Attack (Daemonology)": {
             "id": "fdhFU2wkYwpJIssM",
@@ -1563,8 +1442,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.fdhFU2wkYwpJIssM",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów",
-            "lore": "daemonology"
+            "range": "Siła Woli metrów"
         },
         "Distracting (Hedgecraft)": {
             "id": "FenXWblAuFNhVuZf",
@@ -1574,14 +1452,13 @@
             "effects": {
                 "1Go91fEPZPGcCuYW": {
                     "id": "1Go91fEPZPGcCuYW",
-                    "label": "Distracting",
+                    "label": "Dekoncentrujący",
                     "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.MVI0lXcg6vvtooAF\")\nthis.actor.createEmbeddedDocuments(\"Item\", [item.toObject()])"
                 }
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "hedgecraft"
+            "range": "Ty"
         },
         "Terrifying (Metal)": {
             "id": "fHYVckKx4fnqz75K",
@@ -1592,13 +1469,12 @@
                 "e1I1JSceGuuribMq": {
                     "id": "e1I1JSceGuuribMq",
                     "label": "Przerażający wygląd (Metal)",
-                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
+                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "metal"
+            "range": "Ty"
         },
         "Eavesdrop": {
             "id": "fmx1OeOsxkGf21wa",
@@ -1607,8 +1483,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.fmx1OeOsxkGf21wa",
             "duration": "Bonus I minut",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "petty"
+            "range": "Siła Woli metrów"
         },
         "Breath (Fire)": {
             "id": "FOmZlLUDNDfMAPuT",
@@ -1617,8 +1492,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.FOmZlLUDNDfMAPuT",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "1 metr",
-            "lore": "fire"
+            "range": "1 metr"
         },
         "Vanhel's Call": {
             "id": "foqexF06lguqPFK6",
@@ -1627,18 +1501,16 @@
             "sourceId": "Compendium.wfrp4e-core.spells.foqexF06lguqPFK6",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów",
-            "lore": "necromancy"
+            "range": "Siła Woli metrów"
         },
         "Raise Dead": {
             "id": "FRfAqPlOdwiIitR5",
             "name": "Ożywienie",
             "description": "<p>Czas: Do wschodu słońca Kierujesz ciężki podmuch <em>Dhar</em> w ziemię, sprawiając, że stare kości zaczynają się grupować i wstają z martwych. 1 + PS szkieletów wydrapie sobie drogę na powierzchnię w Zasięgu do końca Rundy, w porządku dowolnie ustalonym przez ciebie. Rozpoczynają one Rundę w Stanie Powalenie. Przyzwani nieumarli będą całkowicie pod twoją kontrolą i wykonają proste rozkazy. Jeśli zostaniesz zabity lub otrzymasz Stan Utrata Przytomności, zaklęcie dobiegnie końca, a przyzwani Ożywieńcy padną na ziemię. Za każde 2 PS w Teście Rzucenia Zaklęcia możesz przyzwać dodatkowe szkielety w liczbie równej PS.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.FRfAqPlOdwiIitR5",
-            "duration": "Until sunrise",
+            "duration": "Do świtu",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów",
-            "lore": "necromancy"
+            "range": "Siła Woli metrów"
         },
         "Dome (Metal)": {
             "id": "Ft0YBUCMN0VzE39c",
@@ -1647,8 +1519,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.Ft0YBUCMN0VzE39c",
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
-            "range": "Ty",
-            "lore": "metal"
+            "range": "Ty"
         },
         "Move Object (Light)": {
             "id": "fTjzN0fg1SmqvHYI",
@@ -1657,8 +1528,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.fTjzN0fg1SmqvHYI",
             "duration": "1 Rund",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "light"
+            "range": "Siła Woli metrów"
         },
         "Swift Passing": {
             "id": "fWZxupuKCC2rZ2g7",
@@ -1667,8 +1537,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.fWZxupuKCC2rZ2g7",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Dotyk",
-            "lore": "death"
+            "range": "Dotyk"
         },
         "Distracting (Heavens)": {
             "id": "fxdXQBC34eLXcySP",
@@ -1684,8 +1553,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "heavens"
+            "range": "Ty"
         },
         "Arrow Shield (Shadow)": {
             "id": "G2LKMsTYXJhzF1Tn",
@@ -1694,8 +1562,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.G2LKMsTYXJhzF1Tn",
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
-            "range": "Ty",
-            "lore": "shadow"
+            "range": "Ty"
         },
         "Blast": {
             "id": "gJYXrZa4pW49R9Vu",
@@ -1713,8 +1580,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.glZHSQzFnF9qXAwf",
             "duration": "Natychmiast",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "witchcraft"
+            "range": "Ty"
         },
         "Move Object (Hedgecraft)": {
             "id": "GolePQVaKMxEydLe",
@@ -1723,8 +1589,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.GolePQVaKMxEydLe",
             "duration": "1 Rund",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "hedgecraft"
+            "range": "Siła Woli metrów"
         },
         "Animal Friend": {
             "id": "gQ14yfwjfcJgNpMp",
@@ -1733,8 +1598,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.gQ14yfwjfcJgNpMp",
             "duration": "1 godzina",
             "target": "1",
-            "range": "1 metr",
-            "lore": "petty"
+            "range": "1 metr"
         },
         "Drop (Death)": {
             "id": "gQAE2ifjBM5Cp9Gi",
@@ -1743,8 +1607,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.gQAE2ifjBM5Cp9Gi",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "death"
+            "range": "Siła Woli metrów"
         },
         "Ward (Witchcraft)": {
             "id": "grTWA31QrNEIN1DB",
@@ -1753,8 +1616,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.grTWA31QrNEIN1DB",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "witchcraft"
+            "range": "Ty"
         },
         "Magic Shield (Shadow)": {
             "id": "gWMhBQ8wm1Td78Si",
@@ -1763,8 +1625,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.gWMhBQ8wm1Td78Si",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "shadow"
+            "range": "Ty"
         },
         "Beast Tongue": {
             "id": "gwnNz34Rh0jW4WmF",
@@ -1780,8 +1641,7 @@
             },
             "duration": "Siła Woli minut",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "beasts"
+            "range": "Ty"
         },
         "Forest of Thorns": {
             "id": "H1Q0YjIX1wuS4phQ",
@@ -1791,12 +1651,11 @@
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
             "range": "Siła Woli metrów",
-            "lore": "life",
             "effects": {
                 "3x5jSYFsX8fx42oy": {
                     "id": "3x5jSYFsX8fx42oy",
                     "label": "Pole cierniowe",
-                    "script": "let test = await this.actor.setupCharacteristic(\"ag\");\nawait test.roll();\n\nif (test.result.outcome == \"failure\")\n{\n   await this.actor.addCondition(\"bleeding\")\n   this.actor.addCondition(\"entangled\")\n}"
+                    "script": "if(this.actor.isOwner) { \nthis.actor.setupCharacteristic(\"ag\").then(async test => {\n    await test.roll();\n    if (test.result.outcome == \"failure\") {\n        await this.actor.addCondition(\"bleeding\");\n        await this.actor.addCondition(\"entangled\");\n    }\n}"
                 }
             }
         },
@@ -1809,13 +1668,12 @@
                 "B52dKwx9m9yq1GzC": {
                     "id": "B52dKwx9m9yq1GzC",
                     "label": "Pochwycenie (Ogień)",
-                    "script": "await args.actor.addCondition(\"entangled\", {{result.overcast.other.current}})"
+                    "script": "args.actor.addCondition(\"entangled\", {{result.overcast.other.current}});"
                 }
             },
             "duration": "Specjalny",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "fire"
+            "range": "Siła Woli metrów"
         },
         "Bolt (Heavens)": {
             "id": "ha5MaHoDPxGtzP2b",
@@ -1824,8 +1682,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.ha5MaHoDPxGtzP2b",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "heavens"
+            "range": "Siła Woli metrów"
         },
         "Aethyric Armour (Metal)": {
             "id": "HAnyF2QUfYGuXkPn",
@@ -1841,8 +1698,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "metal"
+            "range": "Ty"
         },
         "Dark Vision (Necromancy)": {
             "id": "hbWZeX5jVtGJXoTe",
@@ -1851,8 +1707,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.hbWZeX5jVtGJXoTe",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "necromancy"
+            "range": "Ty"
         },
         "Flight (Daemonology)": {
             "id": "hf9G7f8sMqZ0xweB",
@@ -1868,8 +1723,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "daemonology"
+            "range": "Ty"
         },
         "Bridge (Heavens)": {
             "id": "hFjPSbBEQXVQNXmW",
@@ -1878,8 +1732,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.hFjPSbBEQXVQNXmW",
             "duration": "Bonus SW Rund",
             "target": "patrz opis",
-            "range": "Siła Woli metrów",
-            "lore": "heavens"
+            "range": "Siła Woli metrów"
         },
         "Blast (Witchcraft)": {
             "id": "hgg9qZcvbotrA3V2",
@@ -1888,8 +1741,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.hgg9qZcvbotrA3V2",
             "duration": "Natychmiast",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów",
-            "lore": "witchcraft"
+            "range": "Siła Woli metrów"
         },
         "Blast (Beasts)": {
             "id": "HhfVsm3ZRwSahyMU",
@@ -1898,8 +1750,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.HhfVsm3ZRwSahyMU",
             "duration": "Natychmiast",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów",
-            "lore": "beasts"
+            "range": "Siła Woli metrów"
         },
         "Shock": {
             "id": "hKFeMAsntzXscIGy",
@@ -1910,13 +1761,12 @@
                 "FyR5DAoHrTepIw8G": {
                     "id": "FyR5DAoHrTepIw8G",
                     "label": "Porażenie",
-                    "script": "await args.actor.addCondition(\"stunned\")"
+                    "script": "args.actor.addCondition(\"stunned\")"
                 }
             },
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Dotyk",
-            "lore": "petty"
+            "range": "Dotyk"
         },
         "Chain Attack (Death)": {
             "id": "HM9WbGOtUngY5TEm",
@@ -1925,8 +1775,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.HM9WbGOtUngY5TEm",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów",
-            "lore": "death"
+            "range": "Siła Woli metrów"
         },
         "Bridge (Necromancy)": {
             "id": "hNOnwU998jZlnGuk",
@@ -1935,8 +1784,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.hNOnwU998jZlnGuk",
             "duration": "Bonus SW Rund",
             "target": "patrz opis",
-            "range": "Siła Woli metrów",
-            "lore": "necromancy"
+            "range": "Siła Woli metrów"
         },
         "Healing Light": {
             "id": "HOqmAugvYdgLwoQt",
@@ -1947,13 +1795,12 @@
                 "MR4PjON8mQsetjl4": {
                     "id": "MR4PjON8mQsetjl4",
                     "label": "Leczące światło",
-                    "script": "let caster = await fromUuid(this.effect.origin);\nif (caster) {\n   let healed = caster.characteristics.wp.bonus + caster.characteristics.int.bonus;\n   let wounds = duplicate(args.actor.status.wounds);\n   wounds.value += healed;\n       \n   if (wounds.value > wounds.max){\n      wounds.value = wounds.max;\n   }\n       \n   args.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create({content: `${this.actor.prototypeToken.name} regains ${healed} Wounds`, speaker : {alias : this.effect.label}})\n}\nthis.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute : {difficulty : \"vhard\"}, context : {success : \"1 Corruption point that was gained within the last hour is removed.\", failure: \"Nothing happens\"}}).then(async test => {\n   await test.roll();\n});"
+                    "script": "fromUuid(this.effect.origin).then(caster => {\n   if (caster) {\n       let healed= caster.characteristics.wp.bonus + caster.characteristics.int.bonus;\n       let wounds = duplicate(args.actor.status.wounds);\n       wounds.value+=healed;\n       if (wounds.value > wounds.max) {\n          wounds.value = wounds.max;\n       }\n       args.actor.update({\"system.status.wounds\" : wounds})\n       ChatMessage.create({content: `${this.actor.prototypeToken.name} odzyskuje punkty Żywotności: ${healed}`, speaker : {alias : this.effect.label}})\n   }\n})\n\nthis.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute : {difficulty : \"vhard\"}, context : {success : \"1 Punkt Zepsucia zdobyty w ostatniej godzinie zostaje usunięty.\", failure: \"nic się nie dzieje\"}}).then(async test => {\n   await test.roll();\n});"
                 }
             },
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Bonus SW metrów",
-            "lore": "light"
+            "range": "Bonus SW metrów"
         },
         "Great Fires of U’Zhul": {
             "id": "HpFkVJ2lYPAWumUL",
@@ -1964,13 +1811,12 @@
                 "ANinq8MojAZbYOvB": {
                     "id": "ANinq8MojAZbYOvB",
                     "label": "Główny Cel",
-                    "script": "let applyAP = (args.damageType == game.wfrp4e.config.DAMAGE_TYPE.IGNORE_TB || args.damageType == game.wfrp4e.config.DAMAGE_TYPE.NORMAL);\nlet applyTB = (args.damageType == game.wfrp4e.config.DAMAGE_TYPE.IGNORE_AP || args.damageType == game.wfrp4e.config.DAMAGE_TYPE.NORMAL);\n\nif (applyAP) {\n   let AP = args.AP;\n   args.totalWoundLoss += AP.used;\n   let apIndex = args.messageElements.findIndex(i => i.includes(game.i18n.localize(\"AP\")));\n   args.messageElements[apIndex] = \"0/\" + AP.value + \" \" + game.i18n.localize(\"AP\");\n}\n\nawait args.actor.addCondition(\"ablaze\", 2);\nawait args.actor.addCondition(\"prone\");"
+                    "script": "let applyAP = (args.damageType == game.wfrp4e.config.DAMAGE_TYPE.IGNORE_TB || args.damageType == game.wfrp4e.config.DAMAGE_TYPE.NORMAL);\nlet applyTB = (args.damageType == game.wfrp4e.config.DAMAGE_TYPE.IGNORE_AP || args.damageType == game.wfrp4e.config.DAMAGE_TYPE.NORMAL);\n\nif (applyAP) {\n   let AP = args.AP;\n   args.totalWoundLoss += AP.used;\n   let apIndex = args.messageElements.findIndex(i => i.includes(game.i18n.localize(\"AP\")));\n   args.messageElements[apIndex] = \"0/\" + AP.value + \" \" + game.i18n.localize(\"AP\");\n}\nargs.actor.addCondition(\"ablaze\", 2).then(() => { args.actor.addCondition(\"prone\"); });"
                 }
             },
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów",
-            "lore": "fire"
+            "range": "Siła Woli metrów"
         },
         "Screaming Skull": {
             "id": "HqInHmOviuLqymdm",
@@ -1981,13 +1827,12 @@
                 "7oLWNjhcKGn7ggII": {
                     "id": "7oLWNjhcKGn7ggII",
                     "label": "Wrzeszcząca czaszka",
-                    "script": "args.actor.setupSkill(game.i18n.localize(\"NAME.Cool\"), { context: { failure: \"Gained a @Condition[Broken] Condition\", success: \"Resisted the @Condition[Broken] Condition\" } }).then(async test => {\n   await test.roll();\n   if (test.result.outcome == \"failure\") {\n      await args.actor.addCondition(\"broken\")\n   }\n});"
+                    "script": "args.actor.setupSkill(game.i18n.localize(\"NAME.Cool\"), { context: { failure: \"Otrzymano stan @Condition[Panika]\", success: \"Obroniono się przed otrzymaniem Stanu @Condition[Panika]\" } }).then(async test => {\n   await test.roll();\n   if (test.result.outcome == \"failure\") {\n      await args.actor.addCondition(\"broken\")\n   }\n});"
                 }
             },
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów",
-            "lore": "necromancy"
+            "range": "Siła Woli metrów"
         },
         "Aethyric Armour (Light)": {
             "id": "HVtGSSEFgyQgpbx4",
@@ -2003,8 +1848,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "light"
+            "range": "Ty"
         },
         "Purify Water": {
             "id": "hW0jBCKx6noFKNMc",
@@ -2013,8 +1857,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.hW0jBCKx6noFKNMc",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "1 metr",
-            "lore": "petty"
+            "range": "1 metr"
         },
         "Bridge (Hedgecraft)": {
             "id": "HXZGXq1Ib6RytoH6",
@@ -2023,8 +1866,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.HXZGXq1Ib6RytoH6",
             "duration": "Bonus SW Rund",
             "target": "patrz opis",
-            "range": "Siła Woli metrów",
-            "lore": "hedgecraft"
+            "range": "Siła Woli metrów"
         },
         "Teleport (Necromancy)": {
             "id": "HZh2wueRro8Ks3yF",
@@ -2033,18 +1875,16 @@
             "sourceId": "Compendium.wfrp4e-core.spells.HZh2wueRro8Ks3yF",
             "duration": "Natychmiast",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "necromancy"
+            "range": "Ty"
         },
         "Arrow Shield (Necromancy)": {
             "id": "iEZnh3fR7X0E0wqb",
             "name": "Niszczyciel strzał (Nekromancja)",
             "description": "<p>Wszelkie pociski z materii organicznej, jak np. strzały czy bełty z drewnianym promieniem, są automatycznie niszczone, jeśli wlecą w Zasięg zaklęcia - nie zadają żadnych obrażeń. Zaklęcie nie wpływa na pociski nieorganiczne, jak np. noże czy kule pistoletowe.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.iEZnh3fR7X0E0wqb",
-            "duration": "Bonus SW Rund+",
+            "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
-            "range": "Ty",
-            "lore": "necromancy"
+            "range": "Ty"
         },
         "Steal Life": {
             "id": "ifjDVtgGEh787p20",
@@ -2055,13 +1895,12 @@
                 "XRM7FxEmLX5QBXmK": {
                     "id": "XRM7FxEmLX5QBXmK",
                     "label": "Wyssanie życia",
-                    "script": "let applyAP = (args.damageType == game.wfrp4e.config.DAMAGE_TYPE.IGNORE_TB || args.damageType == game.wfrp4e.config.DAMAGE_TYPE.NORMAL);\nif (applyAP) {\n   let AP = args.AP;\n   args.totalWoundLoss += AP.used;\n   let apIndex = args.messageElements.findIndex(i => i.includes(game.i18n.localize(\"AP\")));\n   args.messageElements[apIndex] = \"0/\" + AP.value + \" \" + game.i18n.localize(\"AP\");\n}\n\nlet woundsGained = Math.min(args.actor.status.wounds.value, args.totalWoundLoss);\nwoundsGained = Math.ceil(woundsGained / 2);\nlet attackerWounds = duplicate(args.attacker.status.wounds);\nattackerWounds.value += woundsGained;\nif (attackerWounds.value >= attackerWounds.max) {\n    attackerWounds.value = attackerWounds.max;\n}\n\nargs.attacker.update({\"system.status.wounds\" : attackerWounds});\n\nawait args.actor.addCondition(\"fatigued\");\nawait args.attacker.removeCondition(\"fatigued\", 10);\n\nChatMessage.create({content: `<b>${args.attacker.prototypeToken.name}</b> gains ${woundsGained} Wounds`, alias : {speaker : this.effect.label}});"
+                    "script": "let applyAP = (args.damageType == game.wfrp4e.config.DAMAGE_TYPE.IGNORE_TB || args.damageType == game.wfrp4e.config.DAMAGE_TYPE.NORMAL);\nif (applyAP) {\n   let AP = args.AP;\n   args.totalWoundLoss += AP.used;\n   let apIndex = args.messageElements.findIndex(i => i.includes(game.i18n.localize(\"AP\")));\n   args.messageElements[apIndex] = \"0/\" + AP.value + \" \" + game.i18n.localize(\"AP\");\n}\n\nlet woundsGained = Math.min(args.actor.status.wounds.value, args.totalWoundLoss);\nwoundsGained = Math.ceil(woundsGained / 2);\nlet attackerWounds = duplicate(args.attacker.status.wounds);\nattackerWounds.value += woundsGained;\nif (attackerWounds.value >= attackerWounds.max) {\n    attackerWounds.value = attackerWounds.max;\n}\n\nargs.attacker.update({\"system.status.wounds\" : attackerWounds});\n\nawait args.actor.addCondition(\"fatigued\");\nawait args.attacker.removeCondition(\"fatigued\", 10);\n\nChatMessage.create({content: `<b>${args.attacker.prototypeToken.name}</b> otrzymuje punkty Żywotności: ${woundsGained}`, alias : {speaker : this.effect.label}});"
                 }
             },
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "death"
+            "range": "Siła Woli metrów"
         },
         "Dazzle": {
             "id": "IFuUxTGFQAxp40si",
@@ -2072,18 +1911,17 @@
                 "IQxrQxWbfyyaEyJU": {
                     "id": "IQxrQxWbfyyaEyJU",
                     "label": "Oślepienie",
-                    "script": "await this.actor.addCondition(\"blinded\")"
+                    "script": "this.actor.addCondition(\"blinded\");"
                 },
                 "th43mvG7od8GUb2z": {
                     "id": "th43mvG7od8GUb2z",
                     "label": "Oślepienie",
-                    "script": "await this.actor.addCondition(\"blinded\")"
+                    "script": "this.actor.addCondition(\"blinded\");"
                 }
             },
             "duration": "Bonus SW Rund",
             "target": "1",
-            "range": "Dotyk",
-            "lore": "petty"
+            "range": "Dotyk"
         },
         "Bridge (Metal)": {
             "id": "IlDSC7F3Ns4NDbyi",
@@ -2092,8 +1930,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.IlDSC7F3Ns4NDbyi",
             "duration": "Bonus SW Rund",
             "target": "patrz opis",
-            "range": "Siła Woli metrów",
-            "lore": "metal"
+            "range": "Siła Woli metrów"
         },
         "Distracting (Necromancy)": {
             "id": "iLOpRevlkpP4zLMx",
@@ -2104,13 +1941,12 @@
                 "mkOdaFPd9d8hNxy6": {
                     "id": "mkOdaFPd9d8hNxy6",
                     "label": "Dekoncentracja (Nekromancja)",
-                    "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.MVI0lXcg6vvtooAF\")\nthis.actor.createEmbeddedDocuments(\"Item\", [item.toObject()])"
+                    "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.MVI0lXcg6vvtooAF\")\nthis.actor.createEmbeddedDocuments(\"Item\", [item.toObject()]);"
                 }
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "necromancy"
+            "range": "Ty"
         },
         "Dome (Beasts)": {
             "id": "ILOsg4RfvpUhXhQa",
@@ -2119,8 +1955,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.ILOsg4RfvpUhXhQa",
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
-            "range": "Ty",
-            "lore": "beasts"
+            "range": "Ty"
         },
         "Aethyric Arms (Hedgecraft)": {
             "id": "inUaqDqtE6jOumUJ",
@@ -2129,8 +1964,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.inUaqDqtE6jOumUJ",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "hedgecraft"
+            "range": "Ty"
         },
         "Corrosive Blood (Daemonology)": {
             "id": "iR1C4icHTLBIH2Mk",
@@ -2141,13 +1975,12 @@
                 "2Zr7zsa34PprJO60": {
                     "id": "2Zr7zsa34PprJO60",
                     "label": "Żrąca krew (Demonologia)",
-                    "script": "let content = `<b>${this.effect.label}</b>: All targets engaged with <b>${this.actor.prototypeToken.name}</b> take [[/r 1d10]] Damage, modified by TB and AP.`\n\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
+                    "script": "let content = `<b>${this.effect.label}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
                 }
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "daemonology"
+            "range": "Ty"
         },
         "Terrifying (Light)": {
             "id": "IuKAeoZqCEAC9NtH",
@@ -2158,13 +1991,12 @@
                 "1hUlk6hithj4k5hy": {
                     "id": "1hUlk6hithj4k5hy",
                     "label": "Przerażający wygląd (Światło)",
-                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
+                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "light"
+            "range": "Ty"
         },
         "Entangle (Heavens)": {
             "id": "IYclEWSEVogFXf3w",
@@ -2175,13 +2007,12 @@
                 "w3c2vrbpu05qJ3kM": {
                     "id": "w3c2vrbpu05qJ3kM",
                     "label": "Pochwycenie (Niebiosa)",
-                    "script": "await args.actor.addCondition(\"entangled\", {{result.overcast.other.current}})"
+                    "script": "args.actor.addCondition(\"entangled\", {{result.overcast.other.current}});"
                 }
             },
             "duration": "Specjalny",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "heavens"
+            "range": "Siła Woli metrów"
         },
         "Terrifying (Daemonology)": {
             "id": "Iz88EUCTmIYQXOY9",
@@ -2192,13 +2023,12 @@
                 "FxzwwQXechXWjBRy": {
                     "id": "FxzwwQXechXWjBRy",
                     "label": "Przerażający wygląd (Demonologia)",
-                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
+                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "daemonology"
+            "range": "Ty"
         },
         "Entangle (Shadow)": {
             "id": "J0DWeBBIa40gzWqV",
@@ -2209,13 +2039,12 @@
                 "xkRZK1nvJTYpZY2l": {
                     "id": "xkRZK1nvJTYpZY2l",
                     "label": "Pochwycenie (Cień)",
-                    "script": "await args.actor.addCondition(\"entangled\", {{result.overcast.other.current}})"
+                    "script": "args.actor.addCondition(\"entangled\", {{result.overcast.other.current}});"
                 }
             },
             "duration": "Specjalny",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "shadow"
+            "range": "Siła Woli metrów"
         },
         "Terrifying": {
             "id": "J0wUSVSnos7fBprP",
@@ -2226,7 +2055,7 @@
                 "LBVsdeQ9YT4jcFFF": {
                     "id": "LBVsdeQ9YT4jcFFF",
                     "label": "Przerażający wygląd",
-                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
+                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -2240,8 +2069,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.jD1PJib6NkYkatmq",
             "duration": "Bonus SW Rund",
             "target": "1",
-            "range": "Dotyk",
-            "lore": "death"
+            "range": "Dotyk"
         },
         "Corrosive Blood (Witchcraft)": {
             "id": "JDSX0Cin7I6UVCLH",
@@ -2251,14 +2079,13 @@
             "effects": {
                 "ijAyrzxWflh17gvL": {
                     "id": "ijAyrzxWflh17gvL",
-                    "label": "Corrosive Blood",
-                    "script": "let content = `<b>${this.effect.label}</b>: All targets engaged with <b>${this.actor.prototypeToken.name}</b> take [[/r 1d10]] Damage, modified by TB and AP.`\n\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
+                    "label": "Żrąca Krwa",
+                    "script": "let content = `<b>${this.effect.label}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
                 }
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "witchcraft"
+            "range": "Ty"
         },
         "Marsh Lights": {
             "id": "jdv7gnwKk6eEPtQK",
@@ -2267,8 +2094,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.jdv7gnwKk6eEPtQK",
             "duration": "Siła Woli minut",
             "target": "Specjalny",
-            "range": "Siła Woli metrów",
-            "lore": "petty"
+            "range": "Siła Woli metrów"
         },
         "Fat of the Land": {
             "id": "JGRyUj4AZq8oGpKs",
@@ -2277,8 +2103,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.JGRyUj4AZq8oGpKs",
             "duration": "Bonus SW dni",
             "target": "1",
-            "range": "Dotyk",
-            "lore": "life"
+            "range": "Dotyk"
         },
         "Mutable Metal": {
             "id": "jHMsJaaIQjyhYAgV",
@@ -2287,8 +2112,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.jHMsJaaIQjyhYAgV",
             "duration": "Bonus SW Rund",
             "target": "1",
-            "range": "Dotyk",
-            "lore": "metal"
+            "range": "Dotyk"
         },
         "Distracting (Beasts)": {
             "id": "JpKZSkyF2CZqkZ6d",
@@ -2304,8 +2128,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "beasts"
+            "range": "Ty"
         },
         "Drop (Light)": {
             "id": "jsWKM8TEIwgacZfm",
@@ -2314,8 +2137,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.jsWKM8TEIwgacZfm",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "light"
+            "range": "Siła Woli metrów"
         },
         "Ward (Metal)": {
             "id": "JvK9jnniMihpDuDX",
@@ -2324,8 +2146,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.JvK9jnniMihpDuDX",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "metal"
+            "range": "Ty"
         },
         "Open Lock": {
             "id": "jWfYyh7QyK6XaQRU",
@@ -2334,8 +2155,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.jWfYyh7QyK6XaQRU",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Dotyk",
-            "lore": "petty"
+            "range": "Dotyk"
         },
         "Blast (Metal)": {
             "id": "K0zoHArrRehHV8t2",
@@ -2344,8 +2164,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.K0zoHArrRehHV8t2",
             "duration": "Natychmiast",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów",
-            "lore": "metal"
+            "range": "Siła Woli metrów"
         },
         "Aethyric Armour (Shadow)": {
             "id": "k2DXiabtQZcgFggb",
@@ -2361,8 +2180,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "shadow"
+            "range": "Ty"
         },
         "Lifebloom": {
             "id": "K37ME8M75JvtM3Vr",
@@ -2371,8 +2189,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.K37ME8M75JvtM3Vr",
             "duration": "Specjalny",
             "target": "Specjalny",
-            "range": "Bonus SW metrów",
-            "lore": "life"
+            "range": "Bonus SW metrów"
         },
         "Move Object (Shadow)": {
             "id": "kD7mJjGJ6owqV9nI",
@@ -2381,8 +2198,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.kD7mJjGJ6owqV9nI",
             "duration": "1 Rund",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "shadow"
+            "range": "Siła Woli metrów"
         },
         "Flight (Hedgecraft)": {
             "id": "kF2gHZaxQmOK2qrl",
@@ -2392,14 +2208,13 @@
             "effects": {
                 "ZSGvMxczaTcygVrt": {
                     "id": "ZSGvMxczaTcygVrt",
-                    "label": "Flight",
+                    "label": "Lot",
                     "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.EO05HX7jql0g605A\");\nitem = item.toObject();\nitem.system.specification.value = this.actor.characteristics.ag.value;\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);"
                 }
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "hedgecraft"
+            "range": "Ty"
         },
         "Breath (Life)": {
             "id": "KGRIdIDE57BV54Ub",
@@ -2408,8 +2223,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.KGRIdIDE57BV54Ub",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "1 metr",
-            "lore": "life"
+            "range": "1 metr"
         },
         "Blast (Life)": {
             "id": "Kh8kZ4aq8Xjp0cyL",
@@ -2418,8 +2232,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.Kh8kZ4aq8Xjp0cyL",
             "duration": "Natychmiast",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów",
-            "lore": "life"
+            "range": "Siła Woli metrów"
         },
         "Flight (Witchcraft)": {
             "id": "kK3ONNbnqapduJ1q",
@@ -2429,14 +2242,13 @@
             "effects": {
                 "ZSGvMxczaTcygVrt": {
                     "id": "ZSGvMxczaTcygVrt",
-                    "label": "Flight",
+                    "label": "Lot",
                     "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.EO05HX7jql0g605A\");\nitem = item.toObject();\nitem.system.specification.value = this.actor.characteristics.ag.value;\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);"
                 }
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "witchcraft"
+            "range": "Ty"
         },
         "Mundane Aura (Light)": {
             "id": "kLkvuZtSsedoypGm",
@@ -2445,8 +2257,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.kLkvuZtSsedoypGm",
             "duration": "Siła Woli minut",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "light"
+            "range": "Ty"
         },
         "Aethyric Armour (Heavens)": {
             "id": "kMu92bwMe2jyXSjM",
@@ -2462,8 +2273,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "heavens"
+            "range": "Ty"
         },
         "Ward (Hedgecraft)": {
             "id": "koVVkI2BkuFI1O4t",
@@ -2472,8 +2282,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.koVVkI2BkuFI1O4t",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "hedgecraft"
+            "range": "Ty"
         },
         "Aethyric Arms (Death)": {
             "id": "Kv2amawh7q3zGEij",
@@ -2482,8 +2291,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.Kv2amawh7q3zGEij",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "death"
+            "range": "Ty"
         },
         "Push (Necromancy)": {
             "id": "KvapXfYXiCcAOe7S",
@@ -2492,8 +2300,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.KvapXfYXiCcAOe7S",
             "duration": "Natychmiast",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "necromancy"
+            "range": "Ty"
         },
         "Chain Attack (Light)": {
             "id": "kWo9eTmKWa0MxtrB",
@@ -2502,8 +2309,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.kWo9eTmKWa0MxtrB",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów",
-            "lore": "light"
+            "range": "Siła Woli metrów"
         },
         "Sounds": {
             "id": "lghYQXa227Sf8ofT",
@@ -2512,8 +2318,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.lghYQXa227Sf8ofT",
             "duration": "Bonus SW Rund",
             "target": "Specjalny",
-            "range": "Siła Woli metrów",
-            "lore": "petty"
+            "range": "Siła Woli metrów"
         },
         "Corrosive Blood (Life)": {
             "id": "LKrfb4o45tmEOmeg",
@@ -2524,13 +2329,12 @@
                 "ep4NGWnLqAQEWNCv": {
                     "id": "ep4NGWnLqAQEWNCv",
                     "label": "Żrąca krew (Życie)",
-                    "script": "let content = `<b>${this.effect.label}</b>: All targets engaged with <b>${this.actor.prototypeToken.name}</b> take [[/r 1d10]] Damage, modified by TB and AP.`\n\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
+                    "script": "let content = `<b>${this.effect.label}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
                 }
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "life"
+            "range": "Ty"
         },
         "Push": {
             "id": "lM8c3LlW4s3KBVHR",
@@ -2548,8 +2352,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.lniqTi6PlyCuLji6",
             "duration": "Natychmiast",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "light"
+            "range": "Ty"
         },
         "Ward": {
             "id": "LOEdFN7fP0JHuGoE",
@@ -2574,8 +2377,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "shadow"
+            "range": "Ty"
         },
         "The Amber Spear": {
             "id": "LTUC1fqIuuGSUaQ1",
@@ -2586,13 +2388,12 @@
                 "KnqbWqGhxkJtTZjj": {
                     "id": "KnqbWqGhxkJtTZjj",
                     "label": "Bursztynowa włócznia",
-                    "script": "await args.actor.addCondition(\"bleeding\");"
+                    "script": "args.actor.addCondition(\"bleeding\");"
                 }
             },
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów",
-            "lore": "beasts"
+            "range": "Siła Woli metrów"
         },
         "Fate’s Fickle Fingers": {
             "id": "lzTmKnhO1MY9ycPU",
@@ -2601,8 +2402,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.lzTmKnhO1MY9ycPU",
             "duration": "Bonus SW Rund",
             "target": "Bonus I metrów",
-            "range": "Ty",
-            "lore": "heavens"
+            "range": "Ty"
         },
         "Drop (Witchcraft)": {
             "id": "M3jbTwEZ8jZCxQ8Z",
@@ -2611,8 +2411,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.M3jbTwEZ8jZCxQ8Z",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "witchcraft"
+            "range": "Siła Woli metrów"
         },
         "Corrosive Blood (Beasts)": {
             "id": "MasblfJG8SmHrVCF",
@@ -2623,13 +2422,12 @@
                 "uxJ68z65aa82x6lz": {
                     "id": "uxJ68z65aa82x6lz",
                     "label": "Żrąca krew (Zwierzęta)",
-                    "script": "let content = `<b>${this.effect.label}</b>: All targets engaged with <b>${this.actor.prototypeToken.name}</b> take [[/r 1d10]] Damage, modified by TB and AP.`\n\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
+                    "script": "let content = `<b>${this.effect.label}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
                 }
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "beasts"
+            "range": "Ty"
         },
         "Bolt (Metal)": {
             "id": "mC2uukGCM4zykxUu",
@@ -2638,8 +2436,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.mC2uukGCM4zykxUu",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "metal"
+            "range": "Siła Woli metrów"
         },
         "Distracting (Fire)": {
             "id": "MdNzPNRgxkdMwbjj",
@@ -2655,8 +2452,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "fire"
+            "range": "Ty"
         },
         "Bolt (Hedgecraft)": {
             "id": "mfsHBe0DUomxl9Ro",
@@ -2665,8 +2461,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.mfsHBe0DUomxl9Ro",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "hedgecraft"
+            "range": "Siła Woli metrów"
         },
         "Move Object (Heavens)": {
             "id": "MhpmVs0WVP96uOnw",
@@ -2675,8 +2470,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.MhpmVs0WVP96uOnw",
             "duration": "1 Rund",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "heavens"
+            "range": "Siła Woli metrów"
         },
         "Bolt (Shadow)": {
             "id": "mifZY3mi9Ed23DAv",
@@ -2685,8 +2479,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.mifZY3mi9Ed23DAv",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "shadow"
+            "range": "Siła Woli metrów"
         },
         "Bearing": {
             "id": "MIgKjszwK6hk7Pps",
@@ -2695,8 +2488,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.MIgKjszwK6hk7Pps",
             "duration": "Natychmiast",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "petty"
+            "range": "Ty"
         },
         "Move Object (Witchcraft)": {
             "id": "mIwRtGGzTqs05fCH",
@@ -2705,8 +2497,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.mIwRtGGzTqs05fCH",
             "duration": "1 Rund",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "witchcraft"
+            "range": "Siła Woli metrów"
         },
         "Dome (Daemonology)": {
             "id": "mJAINJ9ufafeIUmq",
@@ -2715,8 +2506,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.mJAINJ9ufafeIUmq",
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
-            "range": "Ty",
-            "lore": "daemonology"
+            "range": "Ty"
         },
         "Magic Shield": {
             "id": "mJVPaGIUEg8cfpJj",
@@ -2734,8 +2524,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.MlF3ci9vxiDZYhmZ",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów",
-            "lore": "daemonology"
+            "range": "Siła Woli metrów"
         },
         "Aethyric Arms (Light)": {
             "id": "mOMiylDui4p0nDcO",
@@ -2744,8 +2533,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.mOMiylDui4p0nDcO",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "light"
+            "range": "Ty"
         },
         "Ward (Life)": {
             "id": "mRQTe8QOSt7MEwa0",
@@ -2754,8 +2542,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.mRQTe8QOSt7MEwa0",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "life"
+            "range": "Ty"
         },
         "Chain Attack (Fire)": {
             "id": "mYXcxTjAUlIHhlPo",
@@ -2764,8 +2551,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.mYXcxTjAUlIHhlPo",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów",
-            "lore": "fire"
+            "range": "Siła Woli metrów"
         },
         "Terrifying (Heavens)": {
             "id": "N1aBnhPpQUu0Bkuh",
@@ -2781,8 +2567,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "heavens"
+            "range": "Ty"
         },
         "Fearsome (Shadow)": {
             "id": "N9ICWNGmsYcBzmtv",
@@ -2798,8 +2583,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "shadow"
+            "range": "Ty"
         },
         "Breath (Necromancy)": {
             "id": "nbqYJUSsVCSzmOU5",
@@ -2808,8 +2592,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.nbqYJUSsVCSzmOU5",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "1 metr",
-            "lore": "necromancy"
+            "range": "1 metr"
         },
         "Fearsome": {
             "id": "neCKUJ2yMwEl6GAX",
@@ -2834,8 +2617,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.NeERYZQcEa0lI9kz",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów",
-            "lore": "petty"
+            "range": "Siła Woli metrów"
         },
         "Protective Charm": {
             "id": "ngOHho544P05W7Qi",
@@ -2844,8 +2626,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.ngOHho544P05W7Qi",
             "duration": "Bonus SW dni",
             "target": "Specjalny",
-            "range": "Dotyk",
-            "lore": "hedgecraft"
+            "range": "Dotyk"
         },
         "Arrow Shield (Heavens)": {
             "id": "nKmrZwwjvYcS0XhE",
@@ -2854,8 +2635,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.nKmrZwwjvYcS0XhE",
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
-            "range": "Ty",
-            "lore": "heavens"
+            "range": "Ty"
         },
         "Dome (Light)": {
             "id": "NM9FGsijRFByrl3M",
@@ -2864,8 +2644,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.NM9FGsijRFByrl3M",
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
-            "range": "Ty",
-            "lore": "light"
+            "range": "Ty"
         },
         "Flaming Hearts": {
             "id": "nTbPOZJx5WB6Y4lL",
@@ -2874,8 +2653,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.nTbPOZJx5WB6Y4lL",
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów",
-            "lore": "fire"
+            "range": "Siła Woli metrów"
         },
         "Chain Attack (Life)": {
             "id": "NUTVPuhPWA7xCCg3",
@@ -2884,8 +2662,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.NUTVPuhPWA7xCCg3",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów",
-            "lore": "life"
+            "range": "Siła Woli metrów"
         },
         "Octagram": {
             "id": "NwVgP5msZHERwEfK",
@@ -2894,8 +2671,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.NwVgP5msZHERwEfK",
             "duration": "Siła Woli minut",
             "target": "Bonus SW metrów across maximum",
-            "range": "Dotyk",
-            "lore": "daemonology"
+            "range": "Dotyk"
         },
         "Dark Vision (Shadow)": {
             "id": "NwZeZd81PTXTK1WO",
@@ -2904,8 +2680,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.NwZeZd81PTXTK1WO",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "shadow"
+            "range": "Ty"
         },
         "Protection from Rain": {
             "id": "NXHZ3RtPN3SrSH8I",
@@ -2914,8 +2689,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.NXHZ3RtPN3SrSH8I",
             "duration": "Bonus Wt godzin",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "petty"
+            "range": "Ty"
         },
         "Blight": {
             "id": "NytMCgP0IXtHnFwm",
@@ -2924,8 +2698,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.NytMCgP0IXtHnFwm",
             "duration": "Specjalny",
             "target": "Specjalny",
-            "range": "Bonus SW metrów",
-            "lore": "witchcraft"
+            "range": "Bonus SW metrów"
         },
         "Dome (Life)": {
             "id": "nZw4oN4yDo5ycrmk",
@@ -2934,8 +2707,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.nZw4oN4yDo5ycrmk",
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
-            "range": "Ty",
-            "lore": "life"
+            "range": "Ty"
         },
         "Terrifying (Beasts)": {
             "id": "o1FW2B7PwFhcT53j",
@@ -2951,8 +2723,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "beasts"
+            "range": "Ty"
         },
         "Drain": {
             "id": "O7G5olv0aWLpb7Ea",
@@ -2968,8 +2739,7 @@
             },
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Dotyk",
-            "lore": "petty"
+            "range": "Dotyk"
         },
         "Speed of Thought": {
             "id": "OB05oGoSZDzNYLjW",
@@ -2984,8 +2754,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "light"
+            "range": "Ty"
         },
         "Doppelganger": {
             "id": "OcYPErjJzQKOX2aI",
@@ -2994,8 +2763,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.OcYPErjJzQKOX2aI",
             "duration": "Bonus Int minut",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "shadow"
+            "range": "Ty"
         },
         "Bridge (Daemonology)": {
             "id": "Ofrbz80hutlvBXUe",
@@ -3004,8 +2772,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.Ofrbz80hutlvBXUe",
             "duration": "Bonus SW Rund",
             "target": "Patrz opis",
-            "range": "Siła Woli metrów",
-            "lore": "daemonology"
+            "range": "Siła Woli metrów"
         },
         "Dome (Hedgecraft)": {
             "id": "ohI6sEZ63WgKHMFJ",
@@ -3014,8 +2781,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.ohI6sEZ63WgKHMFJ",
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
-            "range": "Ty",
-            "lore": "hedgecraft"
+            "range": "Ty"
         },
         "Aethyric Armour (Death)": {
             "id": "ojamLp1DFHJfgX6J",
@@ -3031,8 +2797,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "death"
+            "range": "Ty"
         },
         "Terrifying (Witchcraft)": {
             "id": "OkrKY1720QEIXikD",
@@ -3048,8 +2813,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "witchcraft"
+            "range": "Ty"
         },
         "Feather of Lead": {
             "id": "oMTXHeEhzlQ3sx5M",
@@ -3070,8 +2834,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów",
-            "lore": "metal"
+            "range": "Siła Woli metrów"
         },
         "Aethyric Arms": {
             "id": "OnaQ9kiK5S2d31pE",
@@ -3089,8 +2852,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.ondTnKp6pE0s0bDD",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "necromancy"
+            "range": "Ty"
         },
         "Mundane Aura (Shadow)": {
             "id": "oNnQmw8hJH6f5ct0",
@@ -3099,8 +2861,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.oNnQmw8hJH6f5ct0",
             "duration": "Siła Woli minut",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "shadow"
+            "range": "Ty"
         },
         "Chain Attack (Necromancy)": {
             "id": "oqV2s1CJix4eAUW7",
@@ -3109,8 +2870,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.oqV2s1CJix4eAUW7",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów",
-            "lore": "necromancy"
+            "range": "Siła Woli metrów"
         },
         "Dark Vision (Daemonology)": {
             "id": "ovBsMewZzi7r6Ffx",
@@ -3119,8 +2879,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.ovBsMewZzi7r6Ffx",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "daemonology"
+            "range": "Ty"
         },
         "Illusion": {
             "id": "OwH4hpe1EReh06t3",
@@ -3129,8 +2888,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.OwH4hpe1EReh06t3",
             "duration": "Siła Woli minut",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów",
-            "lore": "shadow"
+            "range": "Siła Woli metrów"
         },
         "Transmutation of Chamon": {
             "id": "oZV3ImfM1kxQUCSD",
@@ -3151,8 +2909,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów",
-            "lore": "metal"
+            "range": "Siła Woli metrów"
         },
         "Drop (Shadow)": {
             "id": "P136wDtdbsbvOsAk",
@@ -3161,8 +2918,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.P136wDtdbsbvOsAk",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "shadow"
+            "range": "Siła Woli metrów"
         },
         "Warning": {
             "id": "PbCD8mjAKQSnxAe6",
@@ -3171,8 +2927,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.PbCD8mjAKQSnxAe6",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "1 metr",
-            "lore": "petty"
+            "range": "1 metr"
         },
         "Murmured Whisper": {
             "id": "pDvOunMrvaYoXjd9",
@@ -3181,8 +2936,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.pDvOunMrvaYoXjd9",
             "duration": "Bonus SW Rund",
             "target": "Specjalny",
-            "range": "Siła Woli metrów",
-            "lore": "petty"
+            "range": "Siła Woli metrów"
         },
         "Aethyric Armour": {
             "id": "pHITBuvCatCOBhZb",
@@ -3207,8 +2961,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.PIL4yBcGlk96cvcb",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Bonus SW metrów",
-            "lore": "light"
+            "range": "Bonus SW metrów"
         },
         "Bridge (Light)": {
             "id": "PiX6AORRMfW2xB6f",
@@ -3217,8 +2970,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.PiX6AORRMfW2xB6f",
             "duration": "Bonus SW Rund",
             "target": "Patrz opis",
-            "range": "Siła Woli metrów",
-            "lore": "light"
+            "range": "Siła Woli metrów"
         },
         "Aethyric Armour (Daemonology)": {
             "id": "pjZwhUmipn2XA6h1",
@@ -3234,8 +2986,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "daemonology"
+            "range": "Ty"
         },
         "Haunting Horror": {
             "id": "PkqPqy3Fy9fawQZ8",
@@ -3244,8 +2995,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.PkqPqy3Fy9fawQZ8",
             "duration": "Siła Woli dni",
             "target": "pojedyncza lokalizacja",
-            "range": "Dotyk",
-            "lore": "witchcraft"
+            "range": "Dotyk"
         },
         "Bridge (Life)": {
             "id": "PKuHxRwZ2SVVIE0y",
@@ -3254,8 +3004,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.PKuHxRwZ2SVVIE0y",
             "duration": "Bonus SW Rund",
             "target": "patrz opis",
-            "range": "Siła Woli metrów",
-            "lore": "life"
+            "range": "Siła Woli metrów"
         },
         "Fearsome (Daemonology)": {
             "id": "pMPYQC15eRIaJ2eL",
@@ -3271,8 +3020,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "daemonology"
+            "range": "Ty"
         },
         "Magic Shield (Life)": {
             "id": "PpMxNEHPJag1i9WJ",
@@ -3281,8 +3029,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.PpMxNEHPJag1i9WJ",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "life"
+            "range": "Ty"
         },
         "Mundane Aura (Necromancy)": {
             "id": "pqdLI8MBZlExTRmV",
@@ -3291,8 +3038,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.pqdLI8MBZlExTRmV",
             "duration": "Siła Woli minut",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "necromancy"
+            "range": "Ty"
         },
         "Fearsome (Light)": {
             "id": "pToozYRwOH6rC7ol",
@@ -3308,8 +3054,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "light"
+            "range": "Ty"
         },
         "Flight (Light)": {
             "id": "Pw4GYr6PZgFuOiT5",
@@ -3325,8 +3070,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "light"
+            "range": "Ty"
         },
         "Magic Shield (Light)": {
             "id": "pxfB6tZZVwKK8SG3",
@@ -3335,8 +3079,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.pxfB6tZZVwKK8SG3",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "light"
+            "range": "Ty"
         },
         "Fearsome (Life)": {
             "id": "pzccnv4TOgIyrf9R",
@@ -3352,8 +3095,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "life"
+            "range": "Ty"
         },
         "Flight (Life)": {
             "id": "Q8LodCIteEa4ufrn",
@@ -3369,8 +3111,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "life"
+            "range": "Ty"
         },
         "Breath (Death)": {
             "id": "QcJfSMq3c50pGBen",
@@ -3379,8 +3120,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.QcJfSMq3c50pGBen",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "1 metr",
-            "lore": "death"
+            "range": "1 metr"
         },
         "Destroy Lesser Demon": {
             "id": "Qg98e2pFgCW63aB1",
@@ -3400,8 +3140,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "daemonology"
+            "range": "Siła Woli metrów"
         },
         "Corrosive Blood": {
             "id": "qgWy2MsylxyyIm6V",
@@ -3426,8 +3165,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.qh3sckvH1ioaHODD",
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
-            "range": "Ty",
-            "lore": "death"
+            "range": "Ty"
         },
         "Blast (Light)": {
             "id": "qiLudcBEdA7qgrZp",
@@ -3436,8 +3174,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.qiLudcBEdA7qgrZp",
             "duration": "Natychmiast",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów",
-            "lore": "light"
+            "range": "Siła Woli metrów"
         },
         "Breath (Beasts)": {
             "id": "QkBpHcb2BuZMSDZt",
@@ -3446,8 +3183,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.QkBpHcb2BuZMSDZt",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "1 metr",
-            "lore": "beasts"
+            "range": "1 metr"
         },
         "Bolt": {
             "id": "QmjYLCaEn3YKHxdv",
@@ -3472,8 +3208,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "metal"
+            "range": "Ty"
         },
         "Hunter's Hide": {
             "id": "QSHKYMNy2yr1n9ww",
@@ -3488,8 +3223,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "beasts"
+            "range": "Ty"
         },
         "Choking Shadows": {
             "id": "qTVOlj1aU6776dep",
@@ -3505,8 +3239,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "1",
-            "range": "Bonus SW metrów",
-            "lore": "shadow"
+            "range": "Bonus SW metrów"
         },
         "Mundane Aura (Heavens)": {
             "id": "QtWY9ruGFQ6cncLQ",
@@ -3515,8 +3248,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.QtWY9ruGFQ6cncLQ",
             "duration": "Siła Woli minut",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "heavens"
+            "range": "Ty"
         },
         "Corrosive Blood (Fire)": {
             "id": "qwGYRwFkwMSHZDDj",
@@ -3532,8 +3264,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "fire"
+            "range": "Ty"
         },
         "Drop (Heavens)": {
             "id": "R0n47B7PvdOaTl23",
@@ -3542,8 +3273,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.R0n47B7PvdOaTl23",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "heavens"
+            "range": "Siła Woli metrów"
         },
         "T'Essla's Arc": {
             "id": "r3BgUFaaCzsLIUDi",
@@ -3559,8 +3289,7 @@
             },
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "heavens"
+            "range": "Siła Woli metrów"
         },
         "Dark Vision (Hedgecraft)": {
             "id": "Rd8i9cLTw16hepEE",
@@ -3569,8 +3298,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.Rd8i9cLTw16hepEE",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "hedgecraft"
+            "range": "Ty"
         },
         "Purge": {
             "id": "RiqCDDKRHTEJp3Bm",
@@ -3586,8 +3314,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów",
-            "lore": "fire"
+            "range": "Siła Woli metrów"
         },
         "Aethyric Armour (Hedgecraft)": {
             "id": "Rk5pxZwst5tg2YHq",
@@ -3603,8 +3330,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "hedgecraft"
+            "range": "Ty"
         },
         "Purple Pall of Shyish": {
             "id": "RkBdnQ4cjTLPUSim",
@@ -3625,8 +3351,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "death"
+            "range": "Ty"
         },
         "Bolt (Daemonology)": {
             "id": "Rkg1tMICxdRsH1zB",
@@ -3635,8 +3360,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.Rkg1tMICxdRsH1zB",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "daemonology"
+            "range": "Siła Woli metrów"
         },
         "Drop (Daemonology)": {
             "id": "rL22KLFNVzGrE9mG",
@@ -3645,8 +3369,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.rL22KLFNVzGrE9mG",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "daemonology"
+            "range": "Siła Woli metrów"
         },
         "Push (Death)": {
             "id": "RmIJdvjohr7n6nio",
@@ -3655,8 +3378,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.RmIJdvjohr7n6nio",
             "duration": "Natychmiast",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "death"
+            "range": "Ty"
         },
         "Blast (Fire)": {
             "id": "ROmZq14yqEXx6zYN",
@@ -3665,8 +3387,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.ROmZq14yqEXx6zYN",
             "duration": "Natychmiast",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów",
-            "lore": "fire"
+            "range": "Siła Woli metrów"
         },
         "Corrosive Blood (Death)": {
             "id": "Rpc1VfsdIfw0Zjzk",
@@ -3682,8 +3403,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "death"
+            "range": "Ty"
         },
         "Entangle (Light)": {
             "id": "RShhxeal5U14P8Bh",
@@ -3699,8 +3419,7 @@
             },
             "duration": "Specjalny",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "light"
+            "range": "Siła Woli metrów"
         },
         "Chain Attack (Hedgecraft)": {
             "id": "rsLiEvTUeBKUcgVU",
@@ -3709,8 +3428,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.rsLiEvTUeBKUcgVU",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów",
-            "lore": "hedgecraft"
+            "range": "Siła Woli metrów"
         },
         "Terrifying (Life)": {
             "id": "rtnNRlwNbYst1gZz",
@@ -3726,8 +3444,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "life"
+            "range": "Ty"
         },
         "Bridge (Witchcraft)": {
             "id": "RtvnuANjl8Xki4Zj",
@@ -3736,8 +3453,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.RtvnuANjl8Xki4Zj",
             "duration": "Bonus SW Rund",
             "target": "patrz opis",
-            "range": "Siła Woli metrów",
-            "lore": "witchcraft"
+            "range": "Siła Woli metrów"
         },
         "Move Object (Death)": {
             "id": "RuwPnfpvjAWQZzS3",
@@ -3746,8 +3462,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.RuwPnfpvjAWQZzS3",
             "duration": "1 Rund",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "death"
+            "range": "Siła Woli metrów"
         },
         "Dome (Fire)": {
             "id": "rxFZ0x4pfbK3LfZy",
@@ -3756,8 +3471,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.rxFZ0x4pfbK3LfZy",
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
-            "range": "Ty",
-            "lore": "fire"
+            "range": "Ty"
         },
         "Push (Life)": {
             "id": "RYrUWrXH6O22FZY8",
@@ -3766,8 +3480,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.RYrUWrXH6O22FZY8",
             "duration": "Natychmiast",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "life"
+            "range": "Ty"
         },
         "Magic Flame": {
             "id": "rZqr5r61z1kw9Zg5",
@@ -3776,8 +3489,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.rZqr5r61z1kw9Zg5",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "petty"
+            "range": "Ty"
         },
         "Push (Metal)": {
             "id": "S51eCqcrjMv7u7uH",
@@ -3786,8 +3498,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.S51eCqcrjMv7u7uH",
             "duration": "Natychmiast",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "metal"
+            "range": "Ty"
         },
         "Dome (Necromancy)": {
             "id": "SAjnT6vjJXmh8tDy",
@@ -3796,8 +3507,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.SAjnT6vjJXmh8tDy",
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
-            "range": "Ty",
-            "lore": "necromancy"
+            "range": "Ty"
         },
         "Terrifying (Necromancy)": {
             "id": "SfYwurel0h4mLYV0",
@@ -3813,8 +3523,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "necromancy"
+            "range": "Ty"
         },
         "Ward (Light)": {
             "id": "SGREGarfzIreXelO",
@@ -3823,8 +3532,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.SGREGarfzIreXelO",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "light"
+            "range": "Ty"
         },
         "Teleport (Metal)": {
             "id": "SJNRH1G9RJJftD5g",
@@ -3833,8 +3541,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.SJNRH1G9RJJftD5g",
             "duration": "Natychmiast",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "metal"
+            "range": "Ty"
         },
         "Aethyric Armour (Witchcraft)": {
             "id": "sjzGujskG5hqVOFv",
@@ -3850,8 +3557,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "witchcraft"
+            "range": "Ty"
         },
         "Entangle (Hedgecraft)": {
             "id": "sK8ozV9fMR73Tfbb",
@@ -3867,8 +3573,7 @@
             },
             "duration": "Specjalny",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "hedgecraft"
+            "range": "Siła Woli metrów"
         },
         "Banishment": {
             "id": "sknoH0n9P9uC0qvW",
@@ -3884,8 +3589,7 @@
             },
             "duration": "Natychmiast",
             "target": "Bonus SW metrów",
-            "range": "Ty",
-            "lore": "light"
+            "range": "Ty"
         },
         "Manifest Lesser Daemon": {
             "id": "soyujZNyzu7NKxMs",
@@ -3894,8 +3598,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.soyujZNyzu7NKxMs",
             "duration": "Bonus SW Rund",
             "target": "Specjalny",
-            "range": "Bonus SW metrów",
-            "lore": "daemonology"
+            "range": "Bonus SW metrów"
         },
         "Curse of Ill-Fortune": {
             "id": "sq47SZ1v9Pofa4L1",
@@ -3916,8 +3619,7 @@
             },
             "duration": "Bonus SW dni",
             "target": "1",
-            "range": "Bonus SW kilometrów",
-            "lore": "witchcraft"
+            "range": "Bonus SW kilometrów"
         },
         "Scythe of Shyish": {
             "id": "SQJQrAsAKc2Icatv",
@@ -3927,7 +3629,6 @@
             "duration": "Bonus SW Rund",
             "target": "Ty",
             "range": "Ty",
-            "lore": "death",
             "effects": {
                 "KlqYluyUB2nxWM4W": {
                     "id": "KlqYluyUB2nxWM4W",
@@ -3943,8 +3644,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.sWILR54qy3qsdQYQ",
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
-            "range": "Ty",
-            "lore": "heavens"
+            "range": "Ty"
         },
         "Nostrum": {
             "id": "sxFriQ3XAtvwlmMq",
@@ -3960,8 +3660,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Specjalny",
-            "range": "Dotyk",
-            "lore": "hedgecraft"
+            "range": "Dotyk"
         },
         "Dart": {
             "id": "T8nErqWnkqdvcNVz",
@@ -3970,8 +3669,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.T8nErqWnkqdvcNVz",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "petty"
+            "range": "Siła Woli metrów"
         },
         "Mundane Aura": {
             "id": "T9cEYAUhqBiTxrp2",
@@ -3996,8 +3694,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "life"
+            "range": "Ty"
         },
         "Amber Talons": {
             "id": "tCCaNirq3zCIkyri",
@@ -4007,7 +3704,6 @@
             "duration": "Bonus SW Rund",
             "target": "Ty",
             "range": "Ty",
-            "lore": "beasts",
             "effects": {
                 "UCY6gXI2WzgjrDhR": {
                     "id": "UCY6gXI2WzgjrDhR",
@@ -4023,8 +3719,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.teHEJyd80PqNHT9q",
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
-            "range": "Ty",
-            "lore": "life"
+            "range": "Ty"
         },
         "Bridge (Shadow)": {
             "id": "tHjTlaoBNbBHbW6z",
@@ -4033,8 +3728,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.tHjTlaoBNbBHbW6z",
             "duration": "Bonus SW Rund",
             "target": "patrz opis",
-            "range": "Siła Woli metrów",
-            "lore": "shadow"
+            "range": "Siła Woli metrów"
         },
         "Flight (Death)": {
             "id": "tkPrVMoZibf5kbhe",
@@ -4050,8 +3744,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "death"
+            "range": "Ty"
         },
         "Part the Branches": {
             "id": "TL2IelDsaRWflCeY",
@@ -4060,8 +3753,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.TL2IelDsaRWflCeY",
             "duration": "Siła Woli minut",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "hedgecraft"
+            "range": "Ty"
         },
         "Distracting": {
             "id": "tNMQQhBYzHoRq7AD",
@@ -4087,7 +3779,6 @@
             "duration": "Bonus SW Rund",
             "target": "Ty",
             "range": "Ty",
-            "lore": "beasts",
             "effects": {
                 "H5WPfe1FHjeSkerA": {
                     "script": "let item;\ndebugger;\nlet items = []\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.rOV2s6PQBBrhpMOv\")\n{\n    let data = item.toObject();\n    items.push(data)\n}\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.VUJUZVN3VYhOaPjj\")\n{\n    let data = item.toObject();\n    data.system.specification.value = 2\n    items.push(data)\n}\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.GbDyBCu8ZjDp6dkj\")\n{\n    let data = item.toObject();\n    items.push(data)\n}\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.a8MC97PLzl10WocT\")\n{\n    let data = item.toObject();\n    items.push(data)\n}\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.pLW9SVX0TVTYPiPv\")\n{\n    let data = item.toObject();\n    data.system.specification.value = this.actor.system.characteristics.s.bonus + 1;\n    items.push(data)\n}\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.pTorrE0l3VybAbtn\")\n{\n    let data = item.toObject();\n    data.system.specification.value = 1;\n    items.push(data)\n}\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.fjd1u9VAgiYzhBRp\")\n{\n    let data = item.toObject();\n    items.push(data)\n}\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.mDgEMOoJpi8DkRYb\")\n{\n    let data = item.toObject();\n    items.push(data)\n}\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.AtpAudHA4ybXVlWM\")\n{\n    let data = item.toObject();\n    data.system.specification.value = this.actor.system.characteristics.s.bonus + 2;\n    items.push(data)\n}\n\nthis.actor.createEmbeddedDocuments(\"Item\", items)\n",
@@ -4103,8 +3794,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.TtiLLfX0a21t2YpO",
             "duration": "Natychmiast",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów",
-            "lore": "heavens"
+            "range": "Siła Woli metrów"
         },
         "Move Object (Fire)": {
             "id": "TtuJjGh4fdU4mwBN",
@@ -4113,8 +3803,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.TtuJjGh4fdU4mwBN",
             "duration": "1 Rund",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "fire"
+            "range": "Siła Woli metrów"
         },
         "Mystifying Miasma": {
             "id": "Tv9BIBNTPT6JV0HG",
@@ -4124,7 +3813,6 @@
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
             "range": "Siła Woli metrów",
-            "lore": "shadow",
             "effects": {
                 "PN345hPPQdbkVjii": {
                     "script": "await args.actor.addCondition(\"blinded\")\nawait args.actor.addCondition(\"deafened\")\nargs.actor.addCondition(\"fatigued\")",
@@ -4140,8 +3828,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.tvErDOxKczBFsWEg",
             "duration": "Natychmiast",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "hedgecraft"
+            "range": "Ty"
         },
         "Twitch": {
             "id": "u0ykDg71xyZWSxn6",
@@ -4157,8 +3844,7 @@
             },
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Bonus SW metrów",
-            "lore": "petty"
+            "range": "Bonus SW metrów"
         },
         "Push (Hedgecraft)": {
             "id": "U2GkwX3ewQDa1FF6",
@@ -4167,8 +3853,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.U2GkwX3ewQDa1FF6",
             "duration": "Natychmiast",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "hedgecraft"
+            "range": "Ty"
         },
         "Flight (Heavens)": {
             "id": "U6P57Y8nJ3H7pFvx",
@@ -4184,8 +3869,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "heavens"
+            "range": "Ty"
         },
         "Ward (Beasts)": {
             "id": "U9eqCSFiwY04tN1F",
@@ -4194,8 +3878,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.U9eqCSFiwY04tN1F",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "beasts"
+            "range": "Ty"
         },
         "Ward (Heavens)": {
             "id": "uaCXMXoY3UaJ26ne",
@@ -4204,8 +3887,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.uaCXMXoY3UaJ26ne",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "heavens"
+            "range": "Ty"
         },
         "Fearsome (Witchcraft)": {
             "id": "Ue3cubdjhvh3zT6m",
@@ -4221,8 +3903,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "witchcraft"
+            "range": "Ty"
         },
         "Teleport (Fire)": {
             "id": "uej1rqpQSyzK9wRT",
@@ -4231,8 +3912,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.uej1rqpQSyzK9wRT",
             "duration": "Natychmiast",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "fire"
+            "range": "Ty"
         },
         "The Third Portent of Amul": {
             "id": "uIamxlmA6SWAa3YR",
@@ -4248,8 +3928,7 @@
             },
             "duration": "Bonus I Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "heavens"
+            "range": "Ty"
         },
         "Aethyric Arms (Beasts)": {
             "id": "UjgiulCattmtfeGL",
@@ -4258,8 +3937,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.UjgiulCattmtfeGL",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "beasts"
+            "range": "Ty"
         },
         "Bridge (Beasts)": {
             "id": "UkRsdBSzr4K0JsM8",
@@ -4268,8 +3946,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.UkRsdBSzr4K0JsM8",
             "duration": "Bonus SW Rund",
             "target": "patrz opis",
-            "range": "Siła Woli metrów",
-            "lore": "beasts"
+            "range": "Siła Woli metrów"
         },
         "Aqshy’s Aegis": {
             "id": "UktSswGGaToftXFk",
@@ -4278,8 +3955,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.UktSswGGaToftXFk",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "fire"
+            "range": "Ty"
         },
         "Aethyric Arms (Life)": {
             "id": "UMsw5Mi0Gs90yp5J",
@@ -4288,8 +3964,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.UMsw5Mi0Gs90yp5J",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "life"
+            "range": "Ty"
         },
         "Chain Attack (Metal)": {
             "id": "urBvn79ntZ0q44Op",
@@ -4298,8 +3973,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.urBvn79ntZ0q44Op",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów",
-            "lore": "metal"
+            "range": "Siła Woli metrów"
         },
         "Bolt (Beasts)": {
             "id": "UWg4WPFALcsoPKau",
@@ -4308,8 +3982,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.UWg4WPFALcsoPKau",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "beasts"
+            "range": "Siła Woli metrów"
         },
         "Dome": {
             "id": "uZdUrRFgNpTtY00H",
@@ -4327,8 +4000,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.UZux81S2ZnD9sx6U",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "fire"
+            "range": "Ty"
         },
         "Dark Vision (Fire)": {
             "id": "v0agvdbIs8UC85IE",
@@ -4337,8 +4009,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.v0agvdbIs8UC85IE",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "fire"
+            "range": "Ty"
         },
         "Glittering Robe": {
             "id": "v1Qrow72mtUtgkFC",
@@ -4347,8 +4018,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.v1Qrow72mtUtgkFC",
             "duration": "Toughness Bonus Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "metal"
+            "range": "Ty"
         },
         "Aethyric Arms (Witchcraft)": {
             "id": "VCoL70hvMNDfdg6S",
@@ -4357,8 +4027,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.VCoL70hvMNDfdg6S",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "witchcraft"
+            "range": "Ty"
         },
         "Caress of Laniph": {
             "id": "vEuljwoWR2rOTU5y",
@@ -4374,8 +4043,7 @@
             },
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Dotyk",
-            "lore": "death"
+            "range": "Dotyk"
         },
         "Shadowstep": {
             "id": "VFWBB9zlwCe5J9EZ",
@@ -4384,8 +4052,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.VFWBB9zlwCe5J9EZ",
             "duration": "Natychmiast",
             "target": "Ty",
-            "range": "Siła Woli metrów",
-            "lore": "shadow"
+            "range": "Siła Woli metrów"
         },
         "Corrosive Blood (Hedgecraft)": {
             "id": "vG5u7SZ7S5IYCZ9e",
@@ -4401,8 +4068,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "hedgecraft"
+            "range": "Ty"
         },
         "Bolt (Life)": {
             "id": "Vk12kqjcz6aV9o7w",
@@ -4411,8 +4077,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.Vk12kqjcz6aV9o7w",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "life"
+            "range": "Siła Woli metrów"
         },
         "Flight (Necromancy)": {
             "id": "vLhS0qwea9LjvK6u",
@@ -4428,8 +4093,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "necromancy"
+            "range": "Ty"
         },
         "Arrow Shield (Hedgecraft)": {
             "id": "vM8x6slw8TfuAJ9B",
@@ -4438,8 +4102,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.vM8x6slw8TfuAJ9B",
             "duration": "Bonus SW Rund+",
             "target": "Bonus SW metrów",
-            "range": "Ty",
-            "lore": "hedgecraft"
+            "range": "Ty"
         },
         "Teleport (Death)": {
             "id": "vwphk8DwbBkUABDZ",
@@ -4448,8 +4111,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.vwphk8DwbBkUABDZ",
             "duration": "Natychmiast",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "death"
+            "range": "Ty"
         },
         "Distracting (Light)": {
             "id": "vxbYDthV1f7D2nyx",
@@ -4465,8 +4127,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "light"
+            "range": "Ty"
         },
         "Blast (Necromancy)": {
             "id": "vzaBW9F5LVSAAV5H",
@@ -4475,8 +4136,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.vzaBW9F5LVSAAV5H",
             "duration": "Natychmiast",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów",
-            "lore": "necromancy"
+            "range": "Siła Woli metrów"
         },
         "Aethyric Arms (Metal)": {
             "id": "w0pZ963P6QS7Eh2a",
@@ -4485,8 +4145,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.w0pZ963P6QS7Eh2a",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "metal"
+            "range": "Ty"
         },
         "Push (Light)": {
             "id": "W47xmdZ3ztckm89t",
@@ -4495,8 +4154,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.W47xmdZ3ztckm89t",
             "duration": "Natychmiast",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "light"
+            "range": "Ty"
         },
         "Chain Attack (Heavens)": {
             "id": "w5b653yUVENuVHzy",
@@ -4505,8 +4163,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.w5b653yUVENuVHzy",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów",
-            "lore": "heavens"
+            "range": "Siła Woli metrów"
         },
         "Ward (Daemonology)": {
             "id": "W8VbsItRrBVRg9kg",
@@ -4515,8 +4172,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.W8VbsItRrBVRg9kg",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "daemonology"
+            "range": "Ty"
         },
         "Entangle (Witchcraft)": {
             "id": "W8yJ90nRD6DAmpfT",
@@ -4532,8 +4188,7 @@
             },
             "duration": "Specjalny",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "witchcraft"
+            "range": "Siła Woli metrów"
         },
         "Arrow Shield (Fire)": {
             "id": "WbaCw5ZrN1sZtbzu",
@@ -4542,8 +4197,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.WbaCw5ZrN1sZtbzu",
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
-            "range": "Ty",
-            "lore": "fire"
+            "range": "Ty"
         },
         "Entangle": {
             "id": "WeIdAA7KArjUZfyH",
@@ -4568,8 +4222,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.wHaglsPNfRMpKB9K",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Bonus SW metrów",
-            "lore": "metal"
+            "range": "Bonus SW metrów"
         },
         "Arrow Shield (Daemonology)": {
             "id": "wi9BBLoL1TIf5aUf",
@@ -4578,8 +4231,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.wi9BBLoL1TIf5aUf",
             "duration": "Bonus SW Rund+",
             "target": "Bonus SW metrów",
-            "range": "Ty",
-            "lore": "daemonology"
+            "range": "Ty"
         },
         "Light": {
             "id": "wj5pXiyhNjaP6pom",
@@ -4588,8 +4240,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.wj5pXiyhNjaP6pom",
             "duration": "Siła Woli minut",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "petty"
+            "range": "Ty"
         },
         "Beast Form": {
             "id": "WkItvLT52Bob8Up3",
@@ -4598,8 +4249,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.WkItvLT52Bob8Up3",
             "duration": "Siła Woli minut",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "beasts"
+            "range": "Ty"
         },
         "Blast (Hedgecraft)": {
             "id": "wknDEJDGTEPWqHtG",
@@ -4608,8 +4258,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.wknDEJDGTEPWqHtG",
             "duration": "Natychmiast",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów",
-            "lore": "hedgecraft"
+            "range": "Siła Woli metrów"
         },
         "Bolt (Light)": {
             "id": "WNJuabKOre8IAu8y",
@@ -4618,8 +4267,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.WNJuabKOre8IAu8y",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "light"
+            "range": "Siła Woli metrów"
         },
         "Move Object": {
             "id": "wQ5ld4yCCqhG0lqL",
@@ -4637,8 +4285,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.WqJubE8GuApAeIbb",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "fire"
+            "range": "Siła Woli metrów"
         },
         "Drop": {
             "id": "Wt6ikb1n9CivB3JN",
@@ -4668,8 +4315,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "heavens"
+            "range": "Ty"
         },
         "Dark Vision": {
             "id": "wx23bbK7pPqY2quI",
@@ -4687,8 +4333,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.Wz1bb0g1mklJHfft",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "1 metr",
-            "lore": "petty"
+            "range": "1 metr"
         },
         "Dark Vision (Light)": {
             "id": "wzDP2S8dphUGFWO3",
@@ -4697,8 +4342,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.wzDP2S8dphUGFWO3",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "light"
+            "range": "Ty"
         },
         "Fearsome (Beasts)": {
             "id": "X6dcIMLvfo9aiOoA",
@@ -4714,8 +4358,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "beasts"
+            "range": "Ty"
         },
         "Treason of Tzeentch": {
             "id": "xhGjRScyU149nK3i",
@@ -4731,8 +4374,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "tzeentch"
+            "range": "Siła Woli metrów"
         },
         "Stream of Corruption": {
             "id": "XhyZ140R1iA1J7wZ",
@@ -4748,8 +4390,7 @@
             },
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Specjalny",
-            "lore": "nurgle"
+            "range": "Specjalny"
         },
         "Mirkride": {
             "id": "xiTk3pZX0GYVO2TQ",
@@ -4758,8 +4399,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.xiTk3pZX0GYVO2TQ",
             "duration": "Bonus SW minut",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "hedgecraft"
+            "range": "Ty"
         },
         "Spring": {
             "id": "XnNAe4R8hSXY5IsS",
@@ -4768,8 +4408,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.XnNAe4R8hSXY5IsS",
             "duration": "Bonus SW Rund",
             "target": "Specjalny",
-            "range": "Dotyk",
-            "lore": "petty"
+            "range": "Dotyk"
         },
         "The Second Portent of Amul": {
             "id": "xPTG5wLvHULLEM2p",
@@ -4785,8 +4424,7 @@
             },
             "duration": "Bonus I Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "heavens"
+            "range": "Ty"
         },
         "Bridge (Fire)": {
             "id": "xQVVrzVD7V7yCq31",
@@ -4795,8 +4433,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.xQVVrzVD7V7yCq31",
             "duration": "Bonus SW Rund",
             "target": "patrz opis",
-            "range": "Siła Woli metrów",
-            "lore": "fire"
+            "range": "Siła Woli metrów"
         },
         "Breath (Daemonology)": {
             "id": "XS9i8PasJ33rNA2g",
@@ -4805,8 +4442,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.XS9i8PasJ33rNA2g",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "1 metr",
-            "lore": "daemonology"
+            "range": "1 metr"
         },
         "Starcrossed": {
             "id": "XXEIfkXpNxpfkamo",
@@ -4815,8 +4451,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.XXEIfkXpNxpfkamo",
             "duration": "Bonus I Rund",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "heavens"
+            "range": "Siła Woli metrów"
         },
         "Teleport (Daemonology)": {
             "id": "xyCPobJtYNSpYtr6",
@@ -4825,8 +4460,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.xyCPobJtYNSpYtr6",
             "duration": "Natychmiast",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "daemonology"
+            "range": "Ty"
         },
         "Magic Shield (Metal)": {
             "id": "Y7JOj3hCqq2OSzAb",
@@ -4835,8 +4469,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.Y7JOj3hCqq2OSzAb",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "metal"
+            "range": "Ty"
         },
         "Goodwill": {
             "id": "YaG8xthJF0zLy7xs",
@@ -4852,8 +4485,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Bonus Ogd",
-            "range": "Ty",
-            "lore": "hedgecraft"
+            "range": "Ty"
         },
         "Flight (Beasts)": {
             "id": "yC4ry3bNP2Lc04WK",
@@ -4869,8 +4501,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "beasts"
+            "range": "Ty"
         },
         "Enchant Weapon": {
             "id": "YDGi3tMQuK9MxXpt",
@@ -4879,8 +4510,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.YDGi3tMQuK9MxXpt",
             "duration": "Bonus SW Rund",
             "target": "Specjalny",
-            "range": "Dotyk",
-            "lore": "metal"
+            "range": "Dotyk"
         },
         "Corrosive Blood (Necromancy)": {
             "id": "yiI4a3Yufcm8NXN6",
@@ -4896,8 +4526,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "necromancy"
+            "range": "Ty"
         },
         "Corrosive Blood (Shadow)": {
             "id": "YijozJARkRLN9iGA",
@@ -4913,8 +4542,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "shadow"
+            "range": "Ty"
         },
         "Mundane Aura (Death)": {
             "id": "Ynbfu2VJDrYqN9aW",
@@ -4923,8 +4551,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.Ynbfu2VJDrYqN9aW",
             "duration": "Siła Woli minut",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "death"
+            "range": "Ty"
         },
         "Aethyric Armour (Fire)": {
             "id": "YNZdL7VIaShNfdnb",
@@ -4940,8 +4567,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "fire"
+            "range": "Ty"
         },
         "Arrow Shield (Witchcraft)": {
             "id": "YQtgIycHCNmyAl9N",
@@ -4950,8 +4576,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.YQtgIycHCNmyAl9N",
             "duration": "Bonus SW Rund+",
             "target": "Bonus SW metrów",
-            "range": "Ty",
-            "lore": "witchcraft"
+            "range": "Ty"
         },
         "Flock of Doom": {
             "id": "yR82MDHEF4zQoYyR",
@@ -4960,8 +4585,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.yR82MDHEF4zQoYyR",
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów",
-            "lore": "beasts"
+            "range": "Siła Woli metrów"
         },
         "Arrow Shield (Light)": {
             "id": "YsBRTjGGyISyUudZ",
@@ -4970,8 +4594,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.YsBRTjGGyISyUudZ",
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
-            "range": "Ty",
-            "lore": "light"
+            "range": "Ty"
         },
         "Drop (Metal)": {
             "id": "ZbJqeT8ffXMOPTMI",
@@ -4980,8 +4603,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.ZbJqeT8ffXMOPTMI",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "metal"
+            "range": "Siła Woli metrów"
         },
         "Dark Vision (Life)": {
             "id": "zcH25H2Zr7Xwq1Xd",
@@ -4990,8 +4612,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.zcH25H2Zr7Xwq1Xd",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "life"
+            "range": "Ty"
         },
         "Bolt (Death)": {
             "id": "zNobG855V6XwHTXh",
@@ -5000,8 +4621,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.zNobG855V6XwHTXh",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "death"
+            "range": "Siła Woli metrów"
         },
         "Fearsome (Hedgecraft)": {
             "id": "znOLIRYazprzZ8eI",
@@ -5017,8 +4637,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "hedgecraft"
+            "range": "Ty"
         },
         "Curse of Crippling Pain": {
             "id": "ZOlM8KjLfNIefAb0",
@@ -5027,8 +4646,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.ZOlM8KjLfNIefAb0",
             "duration": "Bonus SW Rund",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "witchcraft"
+            "range": "Siła Woli metrów"
         },
         "Aethyric Arms (Daemonology)": {
             "id": "ZqjcMFgrlsaS8zLZ",
@@ -5037,8 +4655,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.ZqjcMFgrlsaS8zLZ",
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "daemonology"
+            "range": "Ty"
         },
         "Breath (Metal)": {
             "id": "ZvNSOZZzAcjRBVBk",
@@ -5047,8 +4664,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.ZvNSOZZzAcjRBVBk",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "1 metr",
-            "lore": "metal"
+            "range": "1 metr"
         },
         "Arrow Shield (Death)": {
             "id": "zwQQb0upMLj8bFe9",
@@ -5057,8 +4673,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.zwQQb0upMLj8bFe9",
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
-            "range": "Ty",
-            "lore": "death"
+            "range": "Ty"
         },
         "Entangle (Beasts)": {
             "id": "ZwyxHwGUEIEAwgg6",
@@ -5074,8 +4689,7 @@
             },
             "duration": "Specjalny",
             "target": "1",
-            "range": "Siła Woli metrów",
-            "lore": "beasts"
+            "range": "Siła Woli metrów"
         },
         "Dome (Shadow)": {
             "id": "zXlqNl9jSTRWyKpm",
@@ -5084,8 +4698,7 @@
             "sourceId": "Compendium.wfrp4e-core.spells.zXlqNl9jSTRWyKpm",
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
-            "range": "Ty",
-            "lore": "shadow"
+            "range": "Ty"
         },
         "Terrifying (Hedgecraft)": {
             "id": "zYJQIjWT22jU76w2",
@@ -5101,8 +4714,7 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty",
-            "lore": "hedgecraft"
+            "range": "Ty"
         }
     }
 }

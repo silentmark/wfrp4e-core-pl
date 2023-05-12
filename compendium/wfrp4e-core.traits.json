@@ -191,7 +191,7 @@
                 "pV0NvELZXtpJJTfi": {
                     "id": "pV0NvELZXtpJJTfi",
                     "label": "Sieć",
-                    "script": "await args.actor.addCondition(\"entangled\");"
+                    "script": "args.actor.addCondition(\"entangled\");"
                 }
             },
             "specification": "#"
@@ -218,7 +218,7 @@
                 "ftGagmf8rj6rq3ir": {
                     "id": "ftGagmf8rj6rq3ir",
                     "label": "Tropiciel",
-                    "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\"))) {\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+                    "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\"))) {\n   let sl = this.actor.characteristics.i.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 }
             }
         },
@@ -280,7 +280,7 @@
                 "cwsT8KWhr0OgtWc1": {
                     "id": "cwsT8KWhr0OgtWc1",
                     "label": "Jad",
-                    "script": "if (args.totalWoundLoss > 0) {\n    await args.actor.addCondition(\"poisoned\");\n}"
+                    "script": "if (args.totalWoundLoss > 0) {\n    args.actor.addCondition(\"poisoned\");\n}"
                 }
             },
             "specification": "Trudność"
@@ -351,7 +351,7 @@
                 "4KinCaegUvscrFU9": {
                     "id": "4KinCaegUvscrFU9",
                     "label": "Wymiot",
-                    "script": "await args.actor.addCondition(\"stunned\");"
+                    "script": "args.actor.addCondition(\"stunned\");"
                 }
             },
             "specification": "+4"
@@ -383,7 +383,7 @@
                 "xTL3QAampKjHdKVh": {
                     "id": "xTL3QAampKjHdKVh",
                     "label": "Groza",
-                    "script": "let value = parseInt(this.item.specification.value);\nlet name = this.actor.prototypeToken.name;\nif (game.user.isGM && game.user.targets.size) {\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name);\n  })\n  game.user.updateTokenTargets([]);\n}\nelse {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
+                    "script": "let value = parseInt(this.item.specification.value);\nlet name = this.actor.prototypeToken.name;\nif (game.user.isGM && game.user.targets.size) {\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name);\n  })\n  game.user.updateTokenTargets([]);\n  game.user.broadcastActivity({targets: []})\n}\nelse {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },
             "specification": "Wartość"
@@ -397,7 +397,7 @@
                 "txcmOLjyNoW2BLSu": {
                     "id": "txcmOLjyNoW2BLSu",
                     "label": "Dusiciel",
-                    "script": "await args.actor.addCondition(\"entangled\");"
+                    "script": "args.actor.addCondition(\"entangled\");"
                 }
             }
         },
@@ -416,7 +416,7 @@
                 "mzNcVAruDOTiCGhS": {
                     "id": "mzNcVAruDOTiCGhS",
                     "label": "Kwasowa Krew",
-                    "script": "let content = `<b>${this.effect.label}</b>: All targets engaged with <b>${this.actor.prototypeToken.name}</b> take [[/r 1d10]] Damage, modified by TB and AP.`;\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}});"
+                    "script": "let content = `<b>${this.effect.label}</b>: Wszystkie cele związane walką z aktorem: <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń, uwzględniając modyfikatory z Wytrzymałości i Pancerza.`;\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}});"
                 }
             }
         },
@@ -499,7 +499,7 @@
                 "MNo99hhKFuloCyy8": {
                     "id": "MNo99hhKFuloCyy8",
                     "label": "Upiorne Wycie",
-                    "script": "let damage = (await new Roll(\"1d10\").roll()).total;\nawait args.actor.applyBasicDamage(damage, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL});\nawait args.actor.addCondition(\"deafened\", 3)\n\nargs.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute : {difficulty: \"average\" }, context : {failure: game.i18n.localize(\"WFRP4E.EFFECT.CORE.GhostlyHowlGain\"), success : game.i18n.localize(\"WFRP4E.EFFECT.CORE.GhostlyHowlAvoid\")}}).then(async test => {\n   await test.roll();\n   if (test.result.outcome == \"failure\") {\n      await args.actor.addCondition(\"broken\");\n   }\n});"
+                    "script": "let damage = (await new Roll(\"1d10\").roll()).total;\nawait args.actor.applyBasicDamage(damage, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL});\nawait args.actor.addCondition(\"deafened\", 3)\n\nlet test = await args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute : {difficulty: \"average\" }, context : {failure: \"Otrzymano stan Panika\"), success : \"Uniknięto stanu Panika\"}});\nawait test.roll();\nif (test.result.outcome == \"failure\") {\n      await args.actor.addCondition(\"broken\");\n}"
                 }
             }
         },
@@ -519,7 +519,7 @@
                 "ODxbsuuS0splmVEN": {
                     "id": "ODxbsuuS0splmVEN",
                     "label": "Strach",
-                    "script": "let value = parseInt(this.item.specification.value);\nlet name = this.actor.prototypeToken.name;\nif (game.user.isGM && game.user.targets.size) {\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  });\n  game.user.updateTokenTargets([]);\n}\nelse {\n  game.wfrp4e.utility.postFear(value, name);\n}"
+                    "script": "let value = parseInt(this.item.specification.value);\nlet name = this.actor.prototypeToken.name;\nif (game.user.isGM && game.user.targets.size) {\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  });\n  game.user.updateTokenTargets([]);\n  game.user.broadcastActivity({targets: []})\n}\nelse {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 }
             },
             "specification": "#"
@@ -546,7 +546,7 @@
                 "0CEu4kmUhYSxWGJZ": {
                     "id": "0CEu4kmUhYSxWGJZ",
                     "label": "Regeneracja",
-                    "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")};\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`;\n      if (regen == 10) {\n         chatData.content += `<br>Additionally, they regenerate a Critical Wound.`;\n      }\n   }\n   else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n      }\n   }\n   else {\n      chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}"
+                    "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")};\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> Odzyskana żywotność:  ${regen} .`;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`;\n      }\n   }\n   else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> wyrzucił ${regen} i odzyskał 1 punkt żywotności.`\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`\n      }\n   }\n   else {\n      chatData.content += `<b>${this.actor.name}</b> Rzut na regenerację: ${regen} - brak efektu.`\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}"
                 }
             }
         },
@@ -572,7 +572,7 @@
                 "gjbJu5OWDKFJvvyY": {
                     "id": "gjbJu5OWDKFJvvyY",
                     "label": "Zakażony",
-                    "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\") {\n   args.prefillModifiers.modifier -= 10\n}"
+                    "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\") {\n   args.prefillModifiers.modifier -= 10;\n}"
                 }
             }
         },
@@ -617,7 +617,7 @@
                 "3KXZhIkHukLOpg2l": {
                     "id": "3KXZhIkHukLOpg2l",
                     "label": "Atak Ogonem",
-                    "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value];\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value];\nif (attackerSize > actorSize) {\n   await args.actor.addCondition(\"prone\")\n   ChatMessage.create({content: `<b>Tail Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Prone]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
+                    "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value];\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value];\nif (attackerSize > actorSize) {\n   args.actor.addCondition(\"prone\");\n   ChatMessage.create({content: `<b>Atak Ogonem</b>: ${args.actor.prototypeToken.name} otrzymuje Stan @Condition[Powalenie]`, speaker : {alias: args.attacker.prototypeToken.name}});\n}"
                 }
             },
             "specification": "Obrażenia"
@@ -644,7 +644,7 @@
                 "6rMAx2bGefOkubv8": {
                     "id": "6rMAx2bGefOkubv8",
                     "label": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0) {\n     ChatMessage.create({ content: game.i18n.format(\"WFRP4E.EFFECT.CORE.Infected\", {name: this.actor.name}), whisper: ChatMessage.getWhisperRecipients(\"GM\") })\n}"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Prosty (+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 }
             }
         },
@@ -678,7 +678,7 @@
                 "CAcGBn8sq62mVUxJ": {
                     "id": "CAcGBn8sq62mVUxJ",
                     "label": "Pancerz",
-                    "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n    AP[\"head\"].value += (value - (APdamage.head || 0))\n    AP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\n    AP[\"lArm\"].value += (value - (APdamage.lArm || 0))\n    AP[\"body\"].value += (value - (APdamage.body || 0))\n    AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\n    AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+                    "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 }
             },
             "specification": "#"
@@ -717,7 +717,7 @@
                 "kPgI28vmSamM3u1s": {
                     "id": "kPgI28vmSamM3u1s",
                     "label": "Atak Językiem (Zasięg)",
-                    "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value];\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value];\nif (attackerSize > actorSize) {\n   await args.actor.addCondition(\"entangled\");\n   ChatMessage.create({content: `<b>Tongue Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Entangled]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
+                    "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value];\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value];\nif (attackerSize > actorSize) {\n   args.actor.addCondition(\"entangled\");\n   ChatMessage.create({content: `<b>Atak Językiem</b>: ${args.actor.prototypeToken.name} otrzymuje Stan @Condition[Pochwycenie]`, speaker : {alias: args.attacker.prototypeToken.name}});\n}"
                 }
             },
             "specification": "Wartość"
