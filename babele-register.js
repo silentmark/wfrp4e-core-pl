@@ -20,6 +20,9 @@ Hooks.on("init", () => {
 					if (translation.script?.indexOf("await ") > -1) {
 						newEffect.flags.wfrp4e.isAsync = true;
 					}
+					if (translation.script) {
+						newEffect.flags.wfrp4e.script = translation.script;
+					}
 					return newEffect;
 				}
 				return data;
