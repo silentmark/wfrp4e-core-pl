@@ -1,0 +1,223 @@
+[
+    {
+        "name": "Profesje",
+        "type": "RollTable",
+        "sorting": "a",
+        "sort": 0,
+        "color": null,
+        "flags": {
+            "wfrp4e-core": {
+                "initialization-parent": "Podręcznik Główny"
+            }
+        },
+        "folder": "q1AenxsJIhvixsjL",
+        "description": "",
+        "_stats": {
+            "systemId": "wfrp4e",
+            "systemVersion": "6.1.2",
+            "coreVersion": "10.285",
+            "createdTime": null,
+            "modifiedTime": 1663710536682,
+            "lastModifiedBy": "FIIsUxJ6xGvEDRPV"
+        },
+        "_id": "vcD5l8Ww9gJTzBPI"
+    },
+    {
+        "name": "Tworzenie Bohatera",
+        "type": "RollTable",
+        "sorting": "a",
+        "sort": 0,
+        "color": null,
+        "flags": {
+            "wfrp4e-core": {
+                "initialization-parent": "Podręcznik Główny"
+            }
+        },
+        "folder": "q1AenxsJIhvixsjL",
+        "description": "",
+        "_stats": {
+            "systemId": "wfrp4e",
+            "systemVersion": "6.1.2",
+            "coreVersion": "10.285",
+            "createdTime": null,
+            "modifiedTime": 1663710536683,
+            "lastModifiedBy": "FIIsUxJ6xGvEDRPV"
+        },
+        "_id": "WZc6Typd7rDDY51M"
+    },
+    {
+        "name": "Podręcznik Główny",
+        "sorting": "a",
+        "folder": null,
+        "type": "Scene",
+        "description": "",
+        "sort": 100000,
+        "color": "#465967",
+        "flags": {},
+        "_stats": {
+            "systemId": "wfrp4e",
+            "systemVersion": "6.1.2",
+            "coreVersion": "10.285",
+            "createdTime": null,
+            "modifiedTime": 1663710298081,
+            "lastModifiedBy": "FIIsUxJ6xGvEDRPV"
+        },
+        "_id": "0vhqcALLQQv8B5Sp"
+    },
+    {
+        "name": "Podręcznik Główny",
+        "sorting": "m",
+        "folder": null,
+        "type": "JournalEntry",
+        "description": "",
+        "sort": 100000,
+        "color": "#465967",
+        "flags": {},
+        "_stats": {
+            "systemId": "wfrp4e",
+            "systemVersion": "6.1.2",
+            "coreVersion": "10.285",
+            "createdTime": null,
+            "modifiedTime": 1663565823896,
+            "lastModifiedBy": "FIIsUxJ6xGvEDRPV"
+        },
+        "_id": "HYzAOEJnEEdE4b96"
+    },
+    {
+        "name": "Podręcznik Główny",
+        "type": "RollTable",
+        "sorting": "a",
+        "sort": 100000,
+        "color": "#465967",
+        "flags": {},
+        "folder": null,
+        "description": "",
+        "_stats": {
+            "systemId": "wfrp4e",
+            "systemVersion": "6.1.2",
+            "coreVersion": "10.285",
+            "createdTime": null,
+            "modifiedTime": 1663565696574,
+            "lastModifiedBy": "FIIsUxJ6xGvEDRPV"
+        },
+        "_id": "q1AenxsJIhvixsjL"
+    },
+    {
+        "name": "Zepsucie i Mutacje",
+        "type": "RollTable",
+        "sorting": "a",
+        "sort": 0,
+        "color": null,
+        "flags": {
+            "wfrp4e-core": {
+                "initialization-parent": "Podręcznik Główny"
+            }
+        },
+        "folder": "q1AenxsJIhvixsjL",
+        "description": "",
+        "_stats": {
+            "systemId": "wfrp4e",
+            "systemVersion": "6.1.2",
+            "coreVersion": "10.285",
+            "createdTime": null,
+            "modifiedTime": 1663710536684,
+            "lastModifiedBy": "FIIsUxJ6xGvEDRPV"
+        },
+        "_id": "A4cOzevSXv4qgo5T"
+    },
+    {
+        "name": "Trafienia Krytyczne",
+        "type": "RollTable",
+        "sorting": "a",
+        "sort": 0,
+        "color": null,
+        "flags": {
+            "wfrp4e-core": {
+                "initialization-parent": "Podręcznik Główny"
+            }
+        },
+        "folder": "q1AenxsJIhvixsjL",
+        "description": "",
+        "_stats": {
+            "systemId": "wfrp4e",
+            "systemVersion": "6.1.2",
+            "coreVersion": "10.285",
+            "createdTime": null,
+            "modifiedTime": 1663710536685,
+            "lastModifiedBy": "FIIsUxJ6xGvEDRPV"
+        },
+        "_id": "8weGmitrDTLOOfUO"
+    },
+    {
+        "name": "Przybornik Mistrza Gry",
+        "type": "RollTable",
+        "sorting": "a",
+        "sort": 0,
+        "color": null,
+        "flags": {
+            "wfrp4e-core": {
+                "initialization-parent": "Podręcznik Główny"
+            }
+        },
+        "folder": "q1AenxsJIhvixsjL",
+        "description": "",
+        "_stats": {
+            "systemId": "wfrp4e",
+            "systemVersion": "6.1.2",
+            "coreVersion": "10.285",
+            "createdTime": null,
+            "modifiedTime": 1663710536685,
+            "lastModifiedBy": "FIIsUxJ6xGvEDRPV"
+        },
+        "_id": "F25MxXYFzfwINMte"
+    },
+    {
+        "name": "Miejsca Trafień",
+        "type": "RollTable",
+        "sorting": "a",
+        "sort": 0,
+        "color": null,
+        "flags": {
+            "wfrp4e-core": {
+                "initialization-parent": "Podręcznik Główny"
+            }
+        },
+        "folder": "q1AenxsJIhvixsjL",
+        "description": "",
+        "_stats": {
+            "systemId": "wfrp4e",
+            "systemVersion": "6.1.2",
+            "coreVersion": "10.285",
+            "createdTime": null,
+            "modifiedTime": 1663710536686,
+            "lastModifiedBy": "FIIsUxJ6xGvEDRPV"
+        },
+        "_id": "sZWF0nhzpyWwDHIh"
+    },
+    {
+        "name": "Zasady domowe Moo",
+        "type": "RollTable",
+        "sorting": "a",
+        "sort": 100000,
+        "color": null,
+        "flags": {
+            "core": {
+                "sourceId": "Folder.s1OKLt8NaSnDVP4D"
+            },
+            "wfrp4e-core": {
+                "initialization-parent": "Podręcznik Główny"
+            }
+        },
+        "folder": "q1AenxsJIhvixsjL",
+        "description": "",
+        "_stats": {
+            "systemId": "wfrp4e",
+            "systemVersion": "6.1.2",
+            "coreVersion": "10.285",
+            "createdTime": null,
+            "modifiedTime": 1663710536687,
+            "lastModifiedBy": "FIIsUxJ6xGvEDRPV"
+        },
+        "_id": "re9KehOLoiuA8fNs"
+    }
+]

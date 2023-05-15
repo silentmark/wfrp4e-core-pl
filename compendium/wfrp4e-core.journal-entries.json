@@ -1,5 +1,5 @@
 {
-    "label": "Dzienniki (Podstawa)",
+    "label": "Dzienniki (Podręcznik Główny)",
     "mapping": {
         "initialization_folder": "flags.wfrp4e-core.initialization-folder",
         "image": "img",
@@ -49,7 +49,7 @@
             }
         },
         "Skills and Talents": {
-            "initialization_folder": "Core Rulebook",
+            "initialization_folder": "Podręcznik Główny",
             "id": "6zOdTLv3YeYeJ4hR",
             "name": "Umiejętności i Talenty",
             "pages": {
