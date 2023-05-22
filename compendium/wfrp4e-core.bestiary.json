@@ -74,8 +74,8 @@
             "name": "Czarna Bella",
             "description": "<section id=\"secret-MjIx27JoP8lYXwK6\" class=\"secret\"><p>Męża Bethildy zaszlachtowali zwierzoludzie, którzy napadli wioskę Reikherz. Cztery miesiące później kobieta została wyrzucona z domu, ponieważ nie była w stanie płacić czynszu. Zdesperowana zwróciła się do swojego kuzyna, Alwina, poszukiwanego banity. Przekonanie go zajęło niewiele czasu i Bethilda dołączyła do grupy bandytów nękających drogę Karstadt–Siedlung. Bethilda była zaskoczona, jak bardzo ekscytujące okazało się rabowanie na gościńcu. Teraz każe zwać się Czarną Bellą i słynie z brutalnej bezwzględności, co zaczęło głęboko martwić jej kuzyna.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.2lvE7Ypir9uuRjVT",
-            "gender": "human",
-            "species": "Female",
+            "gender": "Female",
+            "species": "human",
             "effects": {
                 "ifR8JNd40yyrfvGn": {
                     "id": "ifR8JNd40yyrfvGn",
@@ -122,8 +122,8 @@
             "name": "Leśny Elf",
             "description": "<section id=\"secret-HaVbfBaaBSzWZbNX\" class=\"secret\"><p>@UUID[JournalEntry.IQ0PgoJihQltCBUU.JournalEntryPage.l0f11ypRjH9sR48Q#wood-elves]{Leśne Elfy}</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.5wl3KH6hXsGwUcZa",
-            "gender": "Wood Elf",
-            "species": "Różne",
+            "gender": "Różne",
+            "species": "Wood Elf",
             "effects": {
                 "7xnO2hDZ63QDUQ6E": {
                     "id": "7xnO2hDZ63QDUQ6E",
@@ -206,8 +206,8 @@
             "name": "Ghoul z Krypty",
             "description": "<section id=\"secret-cSI55YBJfss3QSgb\" class=\"secret\"><p>Należą do najżałośniejszych stworzeń w Starym Świecie. Ghule to brzydkie, zgarbione stwory o bladej, brudnej skórze i ostrych, żółtych zębach, którymi zdzierają ciało z kości ofiar. Ghule podążają za magicznymi energiami Shyish i Dhar, co w praktyce oznacza, że ściągają na cmentarze i do krypt oraz krążą po polach bitew.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.6B7LMdYtunAftsFN",
-            "gender": "Ghoul",
-            "species": "???",
+            "gender": "???",
+            "species": "Ghoul",
             "effects": {
                 "yuPctOwSU2nLHscr": {
                     "id": "yuPctOwSU2nLHscr",
@@ -237,8 +237,8 @@
             "name": "Dzik",
             "description": "<section id=\"secret-0mOdzM97CZBimHFw\" class=\"secret\"><p>Buszujące po lasach dziki to stworzenia skryte, ale osaczone walczą, używając ostrych kłów z zaciekłością, która szokuje nieprzygotowanych. Chociaż większość dzików ma 150-180 cm długości, niektóre osiągają niezwykłe rozmiary. Największe okazy cenione są przez orki, które wykorzystują je jako przerażające wierzchowce bojowe.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.7629Eaow3acVS59H",
-            "gender": "Boar",
-            "species": "Różne",
+            "gender": "Różne",
+            "species": "Boar",
             "effects": {
                 "1Um0xlQTwtLEaw15": {
                     "id": "1Um0xlQTwtLEaw15",
@@ -303,8 +303,8 @@
             "name": "Człowiek",
             "description": "<section id=\"secret-vD5MVV7CgllMC91b\" class=\"secret\"><p>@UUID[JournalEntry.IQ0PgoJihQltCBUU.JournalEntryPage.l0f11ypRjH9sR48Q#humans-(reiklander)]{Ludzie (Reiklandczycy)}</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.7ihBjcHcewZ2Obul",
-            "gender": "Człowiek",
-            "species": "Różne",
+            "gender": "Różne",
+            "species": "Człowiek",
             "items": {
                 "0nMFfaZyQkgXL83f": {
                     "id": "0nMFfaZyQkgXL83f",
@@ -359,8 +359,8 @@
             "name": "Troll",
             "description": "<section id=\"secret-6aymVnM91tQxg16V\" class=\"secret\"><blockquote><p>Zapewniam, sir, że przeprowadziliśmy szeroko zakrojone badania w tej dziedzinie i w ich trakcie straciliśmy kilku z naszych najodważniejszych taksonomistów. W tej chwili w Imperium żyją dokładnie dwadzieścia trzy odmiany trolla – wliczając w to siedemnaście podgatunków i dwie niepotwierdzone obserwacje, które nie zostały jeszcze sklasyfikowane. Towarzystwo Imperialne zostało założone właśnie po to, by\nzapewniać taki poziom szczegółów; wiemy, że podawane przez nas liczby są ścisłe.</p><p style=\"text-align: right;\"><em>– Ignatius z Nuln, uczony</em></p></blockquote>\n<p>Trolle to brudne, wstrętne stwory, które nękają wszystkie zakątki Starego Świata. Szybko dostosowują się do otoczenia i występują w różnych odmianach. Wszystkie jednak są wielkie i okazałe. To stworzenia tępe i kierowane instynktem poszukiwania żarcia, ale lubią gromadzić też inne dobra. Leża trolli mogą skrywać przydatne i cenne skarby... A także okropne resztki ich posiłków. Chociaż istnieje wiele gatunków trolli, wszystkie mają pewne wspólne cechy: zazwyczaj są niezwykle głupie, co oznacza, że każdy bystry przeciwnik ma nad nimi przewagę; mogą się regenerować, co sprawia, że niezwykle trudno je zabić; a także potrafią na zawołanie zwrócić ostatni posiłek, wymiotując żrącą żółcią na szokująco dużą odległość - chociaż nie cierpią tego robić, ponieważ są potem straszliwie głodne.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.7qslmdLa7so3BmFk",
-            "gender": "Troll",
-            "species": "Varies",
+            "gender": "Varies",
+            "species": "Troll",
             "effects": {
                 "0RSawVy6iLMk3d3Z": {
                     "id": "0RSawVy6iLMk3d3Z",
@@ -427,8 +427,8 @@
             "name": "Gryf",
             "description": "<section id=\"secret-idJ9qUex4SNJsvUT\" class=\"secret\"><p>Posiadające przód ciała i skrzydła orła oraz zad wielkiego kota gryfy to eleganckie bestie o naturalnie dumnym i królewskim wyglądzie. Gniazdują wysoko w górach otaczających Imperium i są szybkimi, skutecznymi zabójcami, nieskorymi do bezmyślnego zniszczenia, jakiego dokonują stwory takie jak hipogryfy lub mantikory. Być może ze względu na ten pozór szlachetności wizerunek gryfa jest nadzwyczaj popularny w Imperium i wykorzystywany w heraldyce, ikonografii religijnej oraz jako symbol samego Imperium. Ponadto gryfy są jednymi z najinteligentniejszych zwierząt. Jeśli zostaną schwytane stosunkowo młode i poddane prawidłowemu szkoleniu, mogą być niesamowicie wierne, zdolne do przewidywania i posłusznego wykonywania szerokiego wachlarza komend. Są tak bardzo poszukiwane, że co rusz słyszy się o myśliwym, który stracił życie, próbując zdobyć jaja gryfa na sprzedaż. Prawdopodobnie najsłynniejszym gryfem w Reiklandzie jest Szpon Śmierci. Trzymany w Imperialnym Zwierzyńcu w Altdorfie Szpon Śmierci stanowi osobistą własność następcy tronu Reiklandu i podobno wykluł się dzięki troskliwej opiece samego Imperatora Karla-Franza - ta opowieść zapoczątkowała drukowanie wszelkiego rodzaju sprośnych karykatur w wywrotowych pamfletach.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.8g9rnHLiZ1pJcPPt",
-            "gender": "Griffon",
-            "species": "Różne",
+            "gender": "Różne",
+            "species": "Griffon",
             "effects": {
                 "NY16gROis1ONxIjo": {
                     "id": "NY16gROis1ONxIjo",
@@ -471,8 +471,8 @@
             "name": "Demonetka Slaanesha",
             "description": "<section id=\"secret-BXyeWId7fp0PJmOI\" class=\"secret\"><p>Podobnie jak wszystkie stwory Księcia Bólu i Rozkoszy, demonetki Slaanesha są jednocześnie piękne i budzące grozę. Otacza je nieziemski urok, który urąga wszelkiemu rozsądkowi i przeczy zdrowym zmysłom. Sprawia, że wrogowie są bezsilni, nie będąc w stanie stawiać oporu, zafascynowani bluźnierczą zmysłowością potwornych postaci. Demonetki mają kremową, bladą skórę i wielkie, głęboko czarne oczy. Ich delikatne skronie zdobią powiewające swobodnie włosy o nienaturalnej barwie. Ich smukłe ręce kończą się zakrzywionymi krabimi szczypcami zamiast dłońmi.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.8gG2Wim6wAlJWRax",
-            "gender": "Daemon",
-            "species": "???",
+            "gender": "???",
+            "species": "Daemon",
             "effects": {
                 "6McxapDczZuyQyg5": {
                     "id": "6McxapDczZuyQyg5",
@@ -505,8 +505,8 @@
             "name": "Dżabersmok",
             "description": "<section id=\"secret-ZoRnOiMJetjmYnjP\" class=\"secret\"><p>Dżabersmoki to prastare stwory Chaosu, które czają się pod cienistymi okapami najgłębszych, najciemniejszych lasów. To szaleńcze stworzenia. Dżabersmok stanowi odrażające połączenie ropuchy, smoka mułowego i owada - wszystko to wypełnione kwasową, czarną krwią, która tryska obficie z najmniejszej rany. Co gorsza, sam widok tego koszmaru przyprawia o utratę zdrowych zmysłów. Ofiara bełkocze, szwargocze bez ładu i składu, rzuca się z pazurami do oczu i rechocze szaleńczym śmiechem. To ułatwia dżabersmokowi jej zdobycie. </p><p>Nie koniec na tym. Dżabersmok ma lepki jęzor, którym może atakować i wciągać kolejny posiłek do rozdziawionej gęby. Jak przystało na jego wygląd, stwór chodzi, kiwając się nieporadnie, a nawet posiada skrzydła, które są jednak za małe, by mogły faktycznie poderwać nadęte cielsko.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.9q8QzWB4o7aj6ZxL",
-            "gender": "Jabberslythe",
-            "species": "Różne",
+            "gender": "Różne",
+            "species": "Jabberslythe",
             "effects": {
                 "hOe0V10JbyWGeTVZ": {
                     "id": "hOe0V10JbyWGeTVZ",
@@ -606,8 +606,8 @@
             "name": "Hydra",
             "description": "<section id=\"secret-y3bSlbe8NGBkeQXt\" class=\"secret\"><p>Wielogłowa, przypominająca jaszczura hydra ma ciężkie ciało podtrzymujące plątaninę szyi i łbów, które zioną dymiącym ogniem i wściekle kąsają. To zaskakująco zaciekłe i skryte stwory. Hydry potrafią skradać się za ofiarą przez wiele kilometrów, jednak zwykle tracą cierpliwość i rzucają się do ataku przy akompaniamencie ryku ze wszystkich paszcz.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.A4G4bTYxot3ZygZO",
-            "gender": "Hydra",
-            "species": "Varies",
+            "gender": "Varies",
+            "species": "Hydra",
             "effects": {
                 "0MLUyVBvdjHhCNj7": {
                     "id": "0MLUyVBvdjHhCNj7",
@@ -667,8 +667,8 @@
             "name": "Wąż",
             "description": "<section id=\"secret-tj8CFhFF60AgqJKX\" class=\"secret\"><p>Węże można znaleźć w całym Imperium, zwłaszcza w głębi lasów. Większość jest niegroźna, ale niektóre mają zabójczy jad lub potrafią udusić swoją ofiarę. Podobnie jak wiele stworzeń Starego Świata, mogą wyrosnąć do olbrzymich rozmiarów - jak ogromny żmij bagienny, który stanowi prawdziwe zagrożenie nawet dla najsilniejszego najemnika.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.AAiKqD1IoweDpJI7",
-            "gender": "Snake",
-            "species": "Różne",
+            "gender": "Różne",
+            "species": "Snake",
             "effects": {
                 "AZJmwDrTSFXmYbmZ": {
                     "id": "AZJmwDrTSFXmYbmZ",
@@ -778,8 +778,8 @@
             "name": "Koń",
             "description": "<section id=\"secret-KVVskb3Id1ELGbjT\" class=\"secret\"><p>Konie hodowane są z przeznaczeniem do wykonywania rozmaitych prac. Należą do nich chyże wierzchowce kurierów, krzepkie rumaki rycerzy i wielkie konie ciągnące wozy farmerów. Są tak przydatne, że handel końmi stał się w Reiklandzie niemal konkurencją sportową. Nieuczciwi sprzedawcy chcą zarobić kosztem ignoranckiego nabywcy. Wypełniają luki i malują zęby podstarzałych koni albo wpychają im do nozdrzy szmaty wchłaniające śluz. Nieznający się na rzeczy kupujący powinni mieć się na baczności.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.b1R5sW6lYIViJ2ki",
-            "gender": "Horse",
-            "species": "Różne",
+            "gender": "Różne",
+            "species": "Horse",
             "effects": {
                 "6unzSR1G5M42Z6CZ": {
                     "id": "6unzSR1G5M42Z6CZ",
@@ -824,8 +824,8 @@
             "name": "Minotaur",
             "description": "<section id=\"secret-rgCbHIibGUe2g7ZT\" class=\"secret\"><p>Potężne i zwaliste, przypominające byki minotaury górują nawet nad największymi bestigorami. Stada z dużą grupą minotaurów uważają się za szczególnie pobłogosławione przez Mrocznych Bogów. Hordy zwierzoludzi zbierają się wokół minotaurów, których imponująca postura dodaje odwagi mniejszym stworom.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.cAK1bMj1ne7HPcxI",
-            "gender": "Minotaur",
-            "species": "Różne",
+            "gender": "Różne",
+            "species": "Minotaur",
             "effects": {
                 "ewYHNH1NhqbrdUdT": {
                     "id": "ewYHNH1NhqbrdUdT",
@@ -871,8 +871,8 @@
             "name": "Szaman Rykowców",
             "description": "<section id=\"secret-eAxmRlZso0kqKsap\" class=\"secret\"><p>Szamani rykowców rodzą się z instynktowną umiejętnością władania mocami Chaosu, z której korzystają z przerażającą skutecznością. Są unikatowi wśród zwierzoludzi i nigdy nie muszą bronić się przed innymi członkami swojego stada, nikt bowiem nie ośmiela się wyrządzać im krzywdy - ich głos wyraża podobno wolę samych Mrocznych Bogów.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.cHVOdcEkuatqjYV1",
-            "gender": "Bray Shaman",
-            "species": "Różne",
+            "gender": "Różne",
+            "species": "Bray Shaman",
             "effects": {
                 "57dNdaZIiftVFa4X": {
                     "id": "57dNdaZIiftVFa4X",
@@ -927,8 +927,8 @@
             "name": "Ork",
             "description": "<section id=\"secret-Fkkw0kiOwXuiWN3G\" class=\"secret\"><blockquote><p>My som najlepsze. My nie som jak te słabe gobosy czy gupie trole. My som twardziele! Jak które powiedzom, że my nie som, to my im zdepczem łby.</p><p style=\"text-align: right\"><em>– Gurkk skulltaka, wódz orków</em></p></blockquote>\n<p>&nbsp;</p>\n<p>Orki są wstrętne, brutalne, wojownicze i niemal niewrażliwe na ból. Mają muskularne, krępe ciała, szerokie, potężne barki i nie pozwolą, by drobnostka w rodzaju straconej ręki przeszkodziła im w dobrym łomocie. Stworzone są do walki i niczego innego nie lubią bardziej. Gdy nie mają wrogów, z którymi mogą walczyć, biorą się za grupy rywalizujących z nimi zielonoskórych. Jeśli nie ma rywali, walczą między sobą. Chociaż nie tak liczne jak gobliny, są od nich większe i silniejsze, co pokazują przy każdej okazji. Orki mogą osiągać ogromne rozmiary. Większe orki są silniejsze, twardsze i bardziej agresywne, a zatem cieszą się większym prestiżem: w ich wojowniczym społeczeństwie rację ma ten, kto jest silniejszy. Niektóre orki dosiadają w boju wielkich dzików. To widok, który u mało kogo nie wzbudza przerażenia.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.E7BiDqsB55BrOQut",
-            "gender": "Orc",
-            "species": "???",
+            "gender": "???",
+            "species": "Orc",
             "effects": {
                 "bqeYNnSwAUGdOlFn": {
                     "id": "bqeYNnSwAUGdOlFn",
@@ -966,8 +966,8 @@
             "name": "Dieter Käsegeier",
             "description": "",
             "sourceId": "Compendium.wfrp4e-core.bestiary.ePPk15Vxu9RxPtYV",
-            "gender": "Człowiek",
-            "species": "Mężczyzna",
+            "gender": "Mężczyzna",
+            "species": "Człowiek",
             "items": {
                 "wKwel9MG7NIG3i3w": {
                     "id": "wKwel9MG7NIG3i3w",
@@ -1033,8 +1033,8 @@
             "name": "Klanbrat",
             "description": "<section id=\"secret-Y5U5kScxBjhDwZf0\" class=\"secret\"><p>Większość skavenów stanowią klanbracia pochodzący z jednego z wielu złożonych skaveńskich klanów, które nieustannie kłócą się, politykują, wbijają sobie noże w plecy i w końcu wojują między sobą. Generalnie działają z rozkazu skavena o wyższym statusie, ale zawsze szukają sposobu, by zdobyć dla siebie lepszą pozycję, najczęściej poprzez zdradę. Zwykle odziani są w pleśniejącą skórę lub brudne szmaty z kawałkami pordzewiałego i zmatowiałego metalu służącymi za prowizoryczny pancerz. Klanbracia często wysyłani są jako zwiadowcy lub łupieżcy, którzy zdobywają potrzebne dobra, szukają spaczenia lub łowią niewolników.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.F1vAZZcmVKkRw8xn",
-            "gender": "Skaven",
-            "species": "Mężczyzna",
+            "gender": "Mężczyzna",
+            "species": "Skaven",
             "effects": {
                 "DP3A4yKupZcsSVEa": {
                     "id": "DP3A4yKupZcsSVEa",
@@ -1071,8 +1071,8 @@
             "name": "Bagienna Ośmiornica",
             "description": "<section id=\"secret-MIXixnWHdc5yzqhl\" class=\"secret\"><p>Bagienne ośmiornice czają się w płytkich wodach, zazwyczaj w bagnach i na moczarach. Czekają na ofiarę w całkowitym bezruchu, zdolne wyczuć wibracje powodowane przez zbliżające się stworzenia. Potem wyskakują z błotnistej wody, starając się chwycić i utopić zdobycz za pomocą silnych macek. Bagienne ośmiornice mają kamuflaż doskonale przystosowany do bagnistego otoczenia - zwykle pokryte są zielonymi i brązowymi cętkami. Jedyną wskazówką zdradzającą ich obecność są wielkie, szkliste oczy. Większość ośmiornic ma macki długości około 6 metrów i ciało mierzące prawie 2 metry. Krążą jednak opowieści, że mogą urosnąć wielokrotnie większe, zwłaszcza gdy mają zapewniony regularny napływ mięsa.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.FmEDHnfAe2iIugpt",
-            "gender": "Bagienna Ośmiornica",
-            "species": "Różne",
+            "gender": "Różne",
+            "species": "Bagienna Ośmiornica",
             "effects": {
                 "GxQbXgR3pFYMCnbA": {
                     "id": "GxQbXgR3pFYMCnbA",
@@ -1115,8 +1115,8 @@
             "name": "Gołąb",
             "description": "<section id=\"secret-Xfobvpz375Ivv2Vq\" class=\"secret\"><p>Gołębie hodowane są w całym Reiklandzie w celu dostarczania wszelkiego rodzaju wiadomości. Ostatnio zasłynęły z przenoszenia bardziej zabójczych ładunków. Łatwo dostępne ptaki stały się ulubieńcami inżynierów, którzy z różnym powodzeniem wysyłają swoje ‘bomby gołębie’.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.ge5zXH2qboxaac7v",
-            "gender": "Pigeon",
-            "species": "Różne",
+            "gender": "Różne",
+            "species": "Pigeon",
             "items": {
                 "d9aBm18f4WNsldem": {
                     "specification": "0"
@@ -1143,8 +1143,8 @@
             "name": "Duch",
             "description": "<section id=\"secret-9uAOsyYqBzjZwuw2\" class=\"secret\"><p>Duchy to pozostałości udręczonych istot, które umarły, za życia nie ukończywszy swoich spraw. Podobnie jak szkielety i zombi, duchy mogą być wzywane przez wampiry lub nekromantów albo nawiedzać obszary przesycone Dhar. W wyjątkowych okolicznościach szczególnie zdeterminowane duchy wyrywają się z Królestwa Morra, pragnąc wypełnić swoje życiowe plany. Jednak takie przypadki szybko przyciągają uwagę Morrytów lub czarodziejów Zakonu Ametystu. Wzywane za pomocą nekromanckiej sztuki duchy zbierają się w rój, tworząc wielkie Zastępy Duchów, które spadają jak burza na wrogów, siejąc strach i zamęt.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.GgSxlomoV220kd3G",
-            "gender": "Nieumarły",
-            "species": "???",
+            "gender": "???",
+            "species": "Nieumarły",
             "effects": {
                 "1Mrt7AY40I5qtpf2": {
                     "id": "1Mrt7AY40I5qtpf2",
@@ -1176,8 +1176,8 @@
             "name": "Fenbeast",
             "description": "<section id=\"secret-UotH6C0fP5xmn37q\" class=\"secret\"><p>Tworzone przez czarodziejów z mułu bagnisk i moczarów bestie bagienne to praktycznie bezmyślne automaty spajane siłą magii. Są w przybliżeniu człekokształtne i zbudowane z błota, kości, gałęzi oraz śluzu. Utrzymanie ich w całości wymaga znacznych zasobów magii. Od czasu do czasu tworzone są przez czarodziejów władających magią Jadeitu. Służą im za ochroniarzy lub wypełniają określone zadania wymagające brutalnej siły albo bezmyślnego zabijania. Czasami pojawiają się same z siebie, powstając w stojących, gnijących stawach, gdzie nurt magii został zakłócony. Podobno Kolegium Jadeitu w Altdorfie trzyma tuzin tych stworów w charakterze służących, którzy dźwigają ciężary i przynoszą różne rzeczy dla starszych czarodziejów. W spójnej postaci trzyma je nieustanne splatanie magii dokonywane przez dziesiątki uczniów.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.HKSn8iNSS9WcAuJc",
-            "gender": "Construct",
-            "species": "???",
+            "gender": "???",
+            "species": "Construct",
             "effects": {
                 "4KDekULCgM5D43lo": {
                     "id": "4KDekULCgM5D43lo",
@@ -1219,8 +1219,8 @@
             "name": "Widma z Kurchanu",
             "description": "<section id=\"secret-SRisNdSeAF3nCZxk\" class=\"secret\"><p>Widma z kurhanu to wyjątkowo potężne duchy, eteryczne pozostałości ambitnych nekromantów, którzy usiłowali przedłużyć swoje istnienie za pomocą mrocznej magii. Za życia odznaczali się złowrogą siłą woli, która po śmierci pcha ich do wywierania straszliwej zemsty na pełnych ognia duszach żywych. Wiele takich widm nawiedza spowite mgłami kurhany, jakich pełno na ziemiach Imperium, szczególnie w @UUID[JournalEntry.ozE2DMCMK64eE5pD.JournalEntryPage.mdjl1WxjZLeuSWAN]{Hägerkrybach}.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.hMbcLVjk7eUdxtqC",
-            "gender": "Nieumarły",
-            "species": "???",
+            "gender": "???",
+            "species": "Nieumarły",
             "effects": {
                 "7raTPW24WcAjGAEa": {
                     "id": "7raTPW24WcAjGAEa",
@@ -1242,8 +1242,8 @@
             "name": "Olbrzym",
             "description": "<section id=\"secret-O6EcvTeDSGoa2RC2\" class=\"secret\"><p>Olbrzymy to samotnicze stworzenia, które zwykle unikają cywilizacji. Większość czatuje w niedostępnych i wysoko położonych miejscach wokół Imperium. Zaszywają się w jaskiniach i zapomnianych ruinach, z dala od mniejszych ludzi, chociaż czasami wędrują na podgórza w poszukiwaniu jedzenia. Słyną z agresywności i gwałtowności zarówno ze względu na swoje zastraszające rozmiary, pożeranie bydła, jak i związki z łupieżczymi armiami zielonoskórych, którzy ich niewolą. W rzeczywistości wiele olbrzymów to łagodne istoty, czasem podatne na wybuchy wściekłości i zaciekle chroniące swojej prywatności, ale niekoniecznie wrogie wobec innych. Ponieważ są długowieczne, plotki utrzymują, że olbrzymy nabyły prastarą wiedzę, chociaż większość wydaje się niezbyt przytomna i z pewnością bardziej zainteresowana alkoholem niż debatami na temat historii.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.HZfZaCjdniz5Z4CP",
-            "gender": "Giant",
-            "species": "Różne",
+            "gender": "Różne",
+            "species": "Giant",
             "effects": {
                 "fJ2cKJpIEXsOjtgz": {
                     "id": "fJ2cKJpIEXsOjtgz",
@@ -1295,8 +1295,8 @@
             "name": "Krasnolud",
             "description": "<section id=\"secret-h5cBaU8rkw7UFZmU\" class=\"secret\"><p>@UUID[JournalEntry.IQ0PgoJihQltCBUU.JournalEntryPage.l0f11ypRjH9sR48Q#dwarfs]{Krasnoludy}</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.ImdVnI8mEiOmKriI",
-            "gender": "Krasnolud",
-            "species": "Różne",
+            "gender": "Różne",
+            "species": "Krasnolud",
             "effects": {
                 "tOJQgYSoaltZanQ3": {
                     "id": "tOJQgYSoaltZanQ3",
@@ -1393,8 +1393,8 @@
             "name": "Wywerna",
             "description": "<section id=\"secret-cyNfNjzSosW7sqqJ\" class=\"secret\"><p>Chociaż niedouczeni często mylą je ze @UUID[Compendium.wfrp4e-core.bestiary.LZttdCIxmFr1sGsS]{Smokami}, poza powierzchownym podobieństwem cuchnące wywerny w niczym nie przypominają tych dostojnych stworzeń. To tchórzliwe ścierwojady o słabym wzroku. Zwykle zaspokajają swój wielki apetyt, porywając bezbronne zwierzęta - głównie owce i kozy - unikają też otwartej walki, gdy to tylko możliwe. W odróżnieniu od innych potworów z gór wywerny nie chronią szczególnie zaciekle terytorium i przeważnie przenoszą się w inne miejsce, gdy coś wtargnie na ich tereny łowieckie. </p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.KeB0khEeq462qTJw",
-            "gender": "Wywerna",
-            "species": "Różne",
+            "gender": "Różne",
+            "species": "Wywerna",
             "effects": {
                 "aqeOBcr9TbqHg8rK": {
                     "id": "aqeOBcr9TbqHg8rK",
@@ -1458,8 +1458,8 @@
             "name": "Szturmoszczur",
             "description": "<section id=\"secret-1mHIdKmXK0Gpzm7P\" class=\"secret\"><p>Elitarnymi wojownikami skavenów są szturmoszczury: większe, silniejsze, twardsze i bardziej zdyscyplinowane od @UUID[Compendium.wfrp4e-core.bestiary.F1vAZZcmVKkRw8xn]{Klanbraci}. Służą jako podstawowa jednostka każdego większego napadu i pełnią funkcję ochroniarzy ważnych skavenów. Szturmoszczury są zwykle dobrze uzbrojone i opancerzone. Posługują się bronią preferowaną przez swój klan.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.kl4qHg0mqWOApBqH",
-            "gender": "Skaven",
-            "species": "???",
+            "gender": "???",
+            "species": "Skaven",
             "effects": {
                 "AQSOb0ip3rTeKQSe": {
                     "id": "AQSOb0ip3rTeKQSe",
@@ -1494,8 +1494,8 @@
             "name": "Fimir",
             "description": "<section id=\"secret-ESTE07FU4VXbZtgm\" class=\"secret\"><blockquote><p> Spędzaliśmy miesiąc miodowy w rodzinnym domku letniskowym nad morzem. Pewnego ranka, gdy poszliśmy zaczerpnąć świeżego powietrza nad urwiskiem, otoczyła nas mgła. Nagle zrobiło się dziwnie cicho. Wtedy, zupełnie znikąd... Bagienne demony! Wielkie, jednookie brutale o beczkowatych ciałach. Zostałem z łomotem powalony na ziemię smagnięciem ogona. Inny stwór poderwał Gretę i przerzucił ją sobie przez ramię. Potem po prostu zniknęły we mgle, tak samo szybko i cicho, jak się pojawiły. Przysięgam na Verenę, że to prawda.</p><p style=\"text-align: right;\">– <em>Oleg Grauhof, reiklandzki kupiec, tuż przed powieszeniem za zamordowanie żony</em></p></blockquote>\n<p>Fimiry to tajemnicze, jednookie, podobne do gadów stworzenia, które grasują w najciemniejszych zakątkach wilgotnych bagien i trzęsawisk zachodniego Reiklandu. Unikają światła słonecznego i pojawiają się zwykle tylko o świcie lub o zmierzchu albo pod osłoną mgły, aby porywać ofiary w sobie tylko znanych, przerażających celach. Znane są przypadki, gdy ludzcy czarownicy na tyle lekkomyślni lub zdesperowani, by zwracać się do demonów, szukali fimirów, chcąc poznać ich niepokojące tajemnice. Mówi się bowiem, że stwory te przywołują i kontrolują istoty demoniczne. Można tylko zgadywać, czy większe ryzyko stanowi igranie z Niszczycielskimi Potęgami, czy układanie się z fimirami. Społeczeństwo fimirów jest matriarchalne. Każdemu klanowi przewodzi potężna wiedźma zwana mergą, której pomaga kadra pomniejszych czarowników nazywanych dirachami. Większość członków klanu to pokorne szerle. Chroni ich kasta wojowników, fimmów, którzy mają kostne kolce i guzy na ogonach. Używają ich do gruchotania kości niebacznych przeciwników.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.kt9ob9BdK6zLDWxn",
-            "gender": "Fimir",
-            "species": "Różne",
+            "gender": "Różne",
+            "species": "Fimir",
             "effects": {
                 "Olnjb0FfVEIu8Dfy": {
                     "id": "Olnjb0FfVEIu8Dfy",
@@ -1528,8 +1528,8 @@
             "name": "Niedźwiedź",
             "description": "<section id=\"secret-dK2N4KnI1iBNUe7c\" class=\"secret\"><p>To wędrowcy po bezdrożach Reiklandu. Niedźwiedzie zwykle są nieśmiałymi samotnikami. Stają się agresywne tylko wtedy, gdy intruzi zagrażają ich młodym lub gdy są ranne. Kiedy brakuje pożywienia, podchodzą do niechronionych osad i podróżnych, zwłaszcza tych, którzy nie pilnują należycie swojego prowiantu.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.KtYgLHcSLpHmnGI2",
-            "gender": "Niedźwiedź",
-            "species": "Różne",
+            "gender": "Różne",
+            "species": "Niedźwiedź",
             "effects": {
                 "IqOfqzHSo07O42bW": {
                     "id": "IqOfqzHSo07O42bW",
@@ -1584,8 +1584,8 @@
             "name": "Krwiopuszcz Khorne'a'",
             "description": "<section id=\"secret-hADj0UTb9AFeUL5y\" class=\"secret\"><p>Wybrańcy Khorna, krwiopuszcze, grasują na polach bitew Starego Świata, zbierając czaszki i odbierając żywoty ku czci Boga Krwi. Z ich potwornych, rogatych obliczy wystają ostre jak igły zęby. Ich krwawoczerwona skóra jest twarda jak mosiądz wykuty na kowadłach nieustannej wojny. Każdy krwiopuszcz niesie Piekielne Ostrze, przeraźliwie ostry miecz unurzany w posoce, którym wymachuje z przerażającą niedbałością, poddając się słodkiemu doznaniu bezsensownej rzezi.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.KZkuwdOYmE3nwB2n",
-            "gender": "Demon",
-            "species": "???",
+            "gender": "???",
+            "species": "Demon",
             "effects": {
                 "g94D7Xf8rvTG1pZP": {
                     "id": "g94D7Xf8rvTG1pZP",
@@ -1634,8 +1634,8 @@
             "name": "Wilk",
             "description": "<section id=\"secret-wJXgxaCwSmFphyyH\" class=\"secret\"><p>Wilki zazwyczaj polują w stadach i znane są jako zacięci łowcy, którzy ścigają swoją ofiarę przez dziesiątki kilometrów bez odpoczynku czy wytchnienia. W Reiklandzie grasuje kilka odmian wilków, włącznie z groźnymi olbrzymimi wilkami, które są chwytane i hodowane przez @UUID[Compendium.wfrp4e-core.bestiary.zzdOpKqBC28J66Mn]{Gobliny} do użytku jako strażnicy oraz wierzchowce.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.lSvYEInG8sZ03vqd",
-            "gender": "Wilk",
-            "species": "Różne",
+            "gender": "Różne",
+            "species": "Wilk",
             "effects": {
                 "0G0YQcWhI9FIZV2H": {
                     "id": "0G0YQcWhI9FIZV2H",
@@ -1701,8 +1701,8 @@
             "name": "Smok",
             "description": "<section id=\"secret-KSwR21KkcJ73Jpeh\" class=\"secret\"><p>Smoki rządziły niebiosami na długo przed tym, zanim starsze rasy pojawiły się w Znanym Świecie. Podczas gdy współczesne smoki są ledwie cieniem swoich prastarych braci, pozostają jednymi z najpotężniejszych stworzeń znanych Imperium. Kilka pozostałych starych smoków jest przerażająco ogromnych. Rzadko budzą się ze snu. Mała drużyna poszukiwaczy przygód, która rozjuszyłaby smoka, powinna brać nogi za pas. Przeciw takiej bestii wiele nie wskóra.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.LZttdCIxmFr1sGsS",
-            "gender": "Smok",
-            "species": "Różne",
+            "gender": "Różne",
+            "species": "Smok",
             "effects": {
                 "KoTQebmQ0cj0Xyt1": {
                     "id": "KoTQebmQ0cj0Xyt1",
@@ -1773,8 +1773,8 @@
             "name": "Demigryf",
             "description": "<section id=\"secret-ltXKkluUM9F2zFRG\" class=\"secret\"><p>Posiadające głowę orła i korpus lwa półgryfy to potężne stworzenia o szlachetnym wyglądzie. Wędrują po lasach i łąkach Imperium, zwykle trzymając się z dala od ludzkich osad. Polują w pojedynkę. Najodważniejsze zakony rycerskie wykorzystują schwytane półgryfy jako rumaki bojowe. W odróżnieniu od większych potwornych wierzchowców, które zazwyczaj są zabierane jako młode lub hodowane w niewoli, te często chwyta się dorosłe. Stanowi to wręcz rytuał inicjacji w niektórych zakonach.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.MLtDY4bwzGQpaABN",
-            "gender": "Półgryf",
-            "species": "Różne",
+            "gender": "Różne",
+            "species": "Półgryf",
             "effects": {
                 "oSs7PpjCezuRbO4q": {
                     "id": "oSs7PpjCezuRbO4q",
@@ -1819,8 +1819,8 @@
             "name": "Szkielet",
             "description": "<section id=\"secret-6jYDpHebVUxzqTcU\" class=\"secret\"><blockquote><p>Uniosłem ciężką pokrywę, spodziewając się znaleźć przewspaniałą, złotą maskę pośmiertną Khetanken. Ale zostałem wprowadzony w błąd. Z głębi wystrzeliła koścista dłoń, która złapała mnie za szyję. Przestraszony, upuściłem pokrywę i przedramię zostało odcięte, więżąc nieumarłego stwora w sarkofagu.</p><p>Ale ręka trzymała mocno, ściskając mi szyję, tak że ledwo mogłem oddychać! Myślałem, że zaraz umrę. Jednak siostra Celestine skropiła tę rękę odrobiną swojej wody święconej i kończyna znowu zamarła.</p><p>Używam jej teraz jako drapaczki do pleców.</p><p style=\"text-align: right;\"><em>– Hubert Karter, rabuś grobowców</em></p></blockquote>\n<p>Szkielety to pozbawione ciała kości dawno umarłych, poruszane mroczną magią, która zmusza je, by chodziły po ziemi, szydząc z żywych. Ci, którzy po śmierci nie zostali złożeni na spoczynek zgodnie z rytuałami Morra, Boga Śmierci, mogą zostać wskrzeszeni w tej postaci przez wystarczająco potężnego nekromantę. Całkowicie bezmyślne szkielety będą walczyły, dopóki ich kości nie zostaną rozbite na kawałki. Nie wiedzą, co to odwaga, ponieważ nie wiedzą, co to strach. Nie mogą zostać zabite, ponieważ nie są żywe.</p>\n<blockquote class=\"sidebar\"><h3 style=\"text-align: center; text-transform:uppercase\" class=\"sidebar-title no-toc\"><em>Zasada opcjonalna: Same kości</em></h3><p><strong><span style=\"font-family: CaslonPro\"><span style=\"color: rgb(0, 0, 0); font-family: CaslonPro; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 500; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;\">Jeśli chcesz oddać kościstą naturę szkieletów, możesz wprowadzić karę -1 punkt Obrażeń do Ran zadawanych przez broń, która nie posiada cechy Ogłuszająca.</span></span></strong></p></blockquote></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.Mt5JAoOSaEH1PdcP",
-            "gender": "Nieumarły",
-            "species": "???",
+            "gender": "???",
+            "species": "Nieumarły",
             "effects": {
                 "gV7u0gkGjd7e104i": {
                     "id": "gV7u0gkGjd7e104i",
@@ -1860,8 +1860,8 @@
             "name": "Ogr",
             "description": "<section id=\"secret-H6gOCFUUwgl4V5bb\" class=\"secret\"><blockquote><p><span class=\"fontstyle0\">‘Tak, wezwałem je, ponieważ potrzebowałem dodatkowych rąk do pracy. Tak, wiem, że pożerają wasze bydło przeznaczone na sprzedaż. I tak, wiem, że ogry mają wielki apetyt. Wywiesiłem w miejscowej strażnicy ogłoszenie o małej nagrodzie dla kogokolwiek, kto zdoła sprawić, by sobie poszły. To powinno w zupełności wystarczyć.’</span></p><p style=\"text-align: right\"><em><span class=\"fontstyle0\" style=\"font-size: 10pt;\">- Augustus von Raushvel, baron Doliny Raush Vale</span></em> </p></blockquote><p>&nbsp;</p>\n<p><span class=\"fontstyle0\">Są wielkie, hałaśliwe, brutalne i niezwykle porywcze. Życiową motywacją ogrów jest potrzeba napełniania swoich ogromnych, muskularnych brzuchów. Brakuje im sprytu lub inteligencji, by robić to mądrze, dlatego w większości sytuacji standardowo wybierają rozwiązanie siłowe. Ogry pochodzą z krain położonych daleko na wschodzie, ale są częstym widokiem w Starym Świecie, uwielbiają bowiem wędrować i stale poszukują nowego mięsiwa za horyzontem. W czasie swoich trwających dekady wypraw po jedzenie ciężko pracują, starają się integrować, noszą miejscowe ubrania i naśladują lokalne zwyczaje, które są w stanie zrozumieć, ponieważ to wszystko zwiększa szansę na otrzymanie kolejnego posiłku.</span></p><p><span class=\"fontstyle0\">W Imperium często służą w Armii Prowincji i codziennie widuje się je w większych miastach, gdzie pracują jako osiłki do wynajęcia. Niziołkowa Gildia Majstrów (przedsiębiorcy budowlani) w wielu miastach i miasteczkach Imperium praktycznie całkowicie opanowała rynek taniej siły roboczej, jaką stanowią ogry, co bardzo irytuje konkurencję.</span></p>\n<blockquote class=\"sidebar\"><h3 style=\"text-align: center\"><em>NIZIOŁKI I OGRY</em></h3><p><em>Nikt nie wie, dlaczego tak jest, ale niziołki i ogry po prostu się dogadują. Większość starszyzny niziołkowych klanów ma jednego lub dwóch ogrzych ochroniarzy. Mówi się, że Starszy Krainy Zgromadzenia rzadko podróżuje bez swojego starego przyjaciela, Zorartha Nogogryza, leciwego ogra, który żyje w Imperium od prawie stulecia. W zamian liczne bandy najemnicze ogrów zatrudniają niziołki w charakterze kucharzy. Jednak ta relacja nie zawsze jest harmonijna. Słynny jest przypadek, gdy Golgfag Ludojad, kapitan najemników nazwanych z polotem Ludojadami Golgfaga, najął mały klan niziołków, by nakarmiły regiment ogrów i jego samego po wielkim zwycięstwie. Wszystko było w porządku do chwili, gdy Golgfag zdał sobie sprawę, że kucharze smakują znacznie lepiej niż przygotowana przez nich strawa...</em></p></blockquote></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.nPvDzBcqDGuRaS7x",
-            "gender": "Ogr",
-            "species": "Różne",
+            "gender": "Różne",
+            "species": "Ogr",
             "effects": {
                 "hqaGKb66rmZOzKmd": {
                     "id": "hqaGKb66rmZOzKmd",
@@ -1896,8 +1896,8 @@
             "name": "Stellemar",
             "description": "",
             "sourceId": "Compendium.wfrp4e-core.bestiary.nRJxtciIhTHKqAvY",
-            "gender": "Człowiek",
-            "species": "Mężczyzna",
+            "gender": "Mężczyzna",
+            "species": "Człowiek",
             "effects": {
                 "hOq8PVdAmbaybEZY": {
                     "id": "hOq8PVdAmbaybEZY",
@@ -1963,8 +1963,8 @@
             "name": "Olbrzymi Szczur",
             "description": "<section id=\"secret-YKv2jV3fetoEvF1C\" class=\"secret\"><p>Szczury przedostają się wszędzie. Szczególnie rozpowszechnione są w miastach i miasteczkach. Im bardziej stłoczeni są ludzie, tym bardziej stłoczone są z nimi szczury, co jest szczególnie groźne, gdy stwory okazują się nosicielami zarazy. Chociaż szczury zwykle są małe, mogą wyrastać do monstrualnych rozmiarów. Pojawiały się doniesienia o szczurach pod Altdorfem o rozmiarach człowieka lub jeszcze większych. Aby trzymać je w ryzach, zatrudnia się szczurołapów.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.oenbbB0PitRWUBfZ",
-            "gender": "Szczur",
-            "species": "Różne",
+            "gender": "Różne",
+            "species": "Szczur",
             "effects": {
                 "0UNgfpiAb8N9Y3DK": {
                     "id": "0UNgfpiAb8N9Y3DK",
@@ -2044,8 +2044,8 @@
             "name": "Wysoki Elf",
             "description": "<section id=\"secret-1iA2MDDwFn6grbL6\" class=\"secret\"><p>@UUID[JournalEntry.IQ0PgoJihQltCBUU.JournalEntryPage.l0f11ypRjH9sR48Q#high-elves]{Wysokie Elfy}</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.QutqbzpxKqsjQ6yN",
-            "gender": "Wysoki Elf",
-            "species": "Różne",
+            "gender": "Różne",
+            "species": "Wysoki Elf",
             "effects": {
                 "0FIrnHwrgwP3EHHO": {
                     "id": "0FIrnHwrgwP3EHHO",
@@ -2128,8 +2128,8 @@
             "name": "Pies",
             "description": "<section id=\"secret-D3VMZDvgXxuda96A\" class=\"secret\"><p>Psy hodowane są w całym Starym Świecie z przeznaczeniem do niezliczonych zadań. Podczas gdy rozpieszczone pudle dworzan z @UUID[JournalEntry.ozE2DMCMK64eE5pD.JournalEntryPage.V6tkgQ9A2skppjyl]{Altdorfu} stanowią zagrożenie jedynie dla godności poszukiwacza przygód, większe rasy, włącznie z tymi, które przyuczane są do udziału w bitwach lub walkach psów, mogą być bardzo groźne.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.R1iWvfV9EvgIc8bJ",
-            "gender": "Pies",
-            "species": "Różne",
+            "gender": "Różne",
+            "species": "Pies",
             "effects": {
                 "1Y0FHMq0KHA49EFv": {
                     "id": "1Y0FHMq0KHA49EFv",
@@ -2198,8 +2198,8 @@
             "name": "Gor",
             "description": "<section id=\"secret-1fmdbB41OA1FbT2r\" class=\"secret\"><p>Gory, najpowszechniejsze ze zwierzoludzi, są zakałą niemal każdego lasu w Starym Świecie. Znacznie różnią się między sobą wyglądem, ale wszystkie łączą cechy zwierzęce i ludzkie. Często mają głowy i nogi kozłów oraz korpus i ramiona ludzi. Jedyną cechą, którą posiadają wszystkie gory, jest para wielkich rogów - im większe, tym lepiej, rogi wyznaczają bowiem status wśród zwierzoludzi. To cecha, która odróżnia je od ungorów i innoskórych. Największe gory znane są pod nazwą bestigorów.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.R37OtN5gmPWCYOP3",
-            "gender": "Gor",
-            "species": "Różne",
+            "gender": "Różne",
+            "species": "Gor",
             "effects": {
                 "B32NmuUIRuV9mQSk": {
                     "id": "B32NmuUIRuV9mQSk",
@@ -2261,8 +2261,8 @@
             "name": "Niziołek",
             "description": "<section id=\"secret-d1ADsyWS6KDQFxDE\" class=\"secret\"><p>@UUID[JournalEntry.IQ0PgoJihQltCBUU.JournalEntryPage.l0f11ypRjH9sR48Q#halflings]{Niziołki}</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.r70e6JNM3MjWIb7N",
-            "gender": "Niziołek",
-            "species": "Varies",
+            "gender": "Varies",
+            "species": "Niziołek",
             "effects": {
                 "YTUcjOSNS0tab2qC": {
                     "id": "YTUcjOSNS0tab2qC",
@@ -2327,8 +2327,8 @@
             "name": "Hipogryf",
             "description": "<section id=\"secret-KHQFu97XTyUsvDjI\" class=\"secret\"><p>Niezwykle zaciekłe i terytorialne hipogryfy mają głowę i skrzydła orła, przednią część ciała lwa oraz koński zad. Pochodzą najczęściej z @UUID[JournalEntry.ozE2DMCMK64eE5pD.JournalEntryPage.w0YfGxsBuLoODCgc]{Gór Szarych}. Atakują bez prowokacji, niemal bezmyślne w swojej furii, drąc ciało na strzępy, aby pożreć je później. Wpadają w tak wielki szał, że pojedynczy hipogryf może wybić całe stado bydła, aby potem odlecieć z wybranym kawałem mięsa, zostawiwszy resztę padlinożernym ptakom. Hipogryfy nie są zbyt inteligentne i gdy polują, zwykle starają się zabić wszystko w polu widzenia. Myślą, że cokolwiek zniknęło im z oczu, przepadło na zawsze. Oznacza to, że faktyczna liczba zgonów spowodowanych przez hipogryfy jest stosunkowo niska, ponieważ wystarczy znaleźć dobrą kryjówkę, aby ich uniknąć.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.RiXpMLex8SZf6gaQ",
-            "gender": "Hipogryf",
-            "species": "Różne",
+            "gender": "Różne",
+            "species": "Hipogryf",
             "effects": {
                 "9MpsAdM1z4Iz847T": {
                     "id": "9MpsAdM1z4Iz847T",
@@ -2370,8 +2370,8 @@
             "name": "Kastor Erichson",
             "description": "",
             "sourceId": "Compendium.wfrp4e-core.bestiary.Rs3lMA5UavTlTiJW",
-            "gender": "Człowiek",
-            "species": "Mężczyzna",
+            "gender": "Mężczyzna",
+            "species": "Człowiek",
             "items": {
                 "Immunity to Psychology": {
                     "id": "aNSAl7IEOWmr6ear",
@@ -2446,8 +2446,8 @@
             "name": "Fr'hough Mournbreath",
             "description": "",
             "sourceId": "Compendium.wfrp4e-core.bestiary.sbQ5mDvNZ7qQm8YY",
-            "gender": "Demon",
-            "species": "???",
+            "gender": "???",
+            "species": "Demon",
             "effects": {
                 "aWuh4mvcUREGgITl": {
                     "id": "aWuh4mvcUREGgITl",
@@ -2518,8 +2518,8 @@
             "name": "Wampir",
             "description": "<section id=\"secret-psHPfMEeNxOmbpwn\" class=\"secret\"><p>Wampiry postrzegają same siebie jako władców nocy. Wiele z nich może podawać się za ludzi, a niektóre rzeczywiście przez długi czas przebywały pośród żywych. Pomimo zewnętrznego podobieństwa do ludzi pod ich bladą skórą nie bije serce, a zamiast zwykłego głodu, jak u śmiertelników, odczuwają nieustanne łaknienie krwi. Wszystkie wampiry Starego Świata wywodzą się ze starożytnych rodów, które powstały tysiące lat temu daleko na południu. Wiele z nich jest niezwykle dumnych ze swojego pochodzenia oraz cech i tradycji, które odróżniają je od innych. Wampiry różnych rodowodów są często zaciekłymi rywalami, ale mają dość rozsądku, by stawać ramię w ramię w razie konieczności zmierzenia się z potężniejszymi wrogami.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.T5qAtpoKtB8iwTBd",
-            "gender": "Nieumarły",
-            "species": "Różne",
+            "gender": "Różne",
+            "species": "Nieumarły",
             "effects": {
                 "6kNrq95i4DO3bERL": {
                     "id": "6kNrq95i4DO3bERL",
@@ -2567,8 +2567,8 @@
             "name": "Zombie",
             "description": "<section id=\"secret-E4HqcQ4lwXPfIFHB\" class=\"secret\"><p>Podobnie jak @UUID[Compendium.wfrp4e-core.bestiary.Mt5JAoOSaEH1PdcP]{Szkielety}, zombi to ożywione zwłoki spajane przez plugawą magię. W odróżnieniu od szkieletów zombi to niedawno umarli i większość ich ciała nadal istnieje. Gnijące i zepsute mięso zwisa z robaczywych, nabrzmiałych organów wewnętrznych. Gdy walczą, ich ciało i narządy odpadają od kości, wydzielając przyprawiający o mdłości, obrzydliwy odór, wystarczająco silny, by wywrócić żołądek każdemu poza najtwardszymi żołnierzami.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.T79RqnDOAQLn3I1s",
-            "gender": "Nieumarły",
-            "species": "???",
+            "gender": "???",
+            "species": "Nieumarły",
             "effects": {
                 "49ACIsgTnGtu4gLu": {
                     "id": "49ACIsgTnGtu4gLu",
@@ -2615,8 +2615,8 @@
             "name": "Banshee",
             "description": "<section id=\"secret-wmQDClJDzh3hfRuX\" class=\"secret\"><p>Płaczki to widmowe pozostałości niegdyś potężnych wiedźm, których duchy przesiąknięte są plugawą energią <em>Dhar</em>. Ich niespokojne nieżycie wypełnia udręka z powodu straty i zgorzknienia, ziejąca pustka w duszach, która wyrywa z ich piersi przerażające, szarpiące duszę wycie. Jest ono tak straszliwe, że może doprowadzić do szaleństwa tych, którzy je słyszą, a nawet zatrzymać bicie serca.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.TWy5l4uYTRAtjfit",
-            "gender": "Nieumarły",
-            "species": "???",
+            "gender": "???",
+            "species": "Nieumarły",
             "effects": {
                 "dle3lIXmTOn2icAD": {
                     "id": "dle3lIXmTOn2icAD",
@@ -2635,8 +2635,8 @@
             "name": "Upiorny Wilk",
             "description": "<section id=\"secret-UXaAD3dsZgu2qEkD\" class=\"secret\"><p>Gdy ziemia oddaje zmarłych, powstają nie tylko ludzie. W imieniu swoich mrocznych panów na nocne łowy wyruszają makabryczne parodie olbrzymich basiorów z lśniącymi ślepiami i strzępami ciała odpadającymi od gnijących, butwiejących ścierw - upiorne wilki. W Reiklandzie mówi się, że gdy Morrslieb stoi w pełni, upiorne wilki grasują po nawiedzonych lasach @UUID[JournalEntry.ozE2DMCMK64eE5pD.JournalEntryPage.mdjl1WxjZLeuSWAN]{Hägerkrybów}. Biegają w poszukiwaniu ofiary, aby zaspokoić swój nienasycony głód, przeklęte żądzą pożerania mięsa i wyostrzoną wrażliwością na zapach krwi.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.umddAQkmxVYG0AzO",
-            "gender": "Nieumarły",
-            "species": "???",
+            "gender": "???",
+            "species": "Nieumarły",
             "effects": {
                 "2sNt3r9r3TxcS3Mn": {
                     "id": "2sNt3r9r3TxcS3Mn",
@@ -2697,8 +2697,8 @@
             "name": "Szczurogr",
             "description": "<section id=\"secret-3UMUO87tTablqd9e\" class=\"secret\"><p>Szczurogry to zwaliste brutale hodowane w ciemnych jaskiniach Podimperium przez obłąkanych poganiaczy klanu Moulder. Są głupie, ale także nieulękłe i nieustępliwe w walce, gdy poganiają je skaveńscy panowie. Rzadko bywają spotykane w pojedynkę. Zwykle towarzyszą Szarym Prorokom lub innym skavenom wysokiej rangi, którym służą jako ochroniarze.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.VfJgGmCTWqb0IDSW",
-            "gender": "Skaven",
-            "species": "Mężczyzna",
+            "gender": "Mężczyzna",
+            "species": "Skaven",
             "effects": {
                 "bpkQmrr8idJ1a2nL": {
                     "id": "bpkQmrr8idJ1a2nL",
@@ -2761,8 +2761,8 @@
             "name": "Zębacz Jaskiniowy",
             "description": "<section id=\"secret-oDtCiP01aJblHtLV\" class=\"secret\"><p>Zębacze to duże, okrągławe, grzybowate stwory, które żyją głęboko pod ziemią w najwilgotniejszych, najciemniejszych jaskiniach. Mają rozdziawioną gębę i wielkie, ostre zęby. Cenione są przez gobliny za mięso i skórę oraz służą im jako strażnicy lub pupile.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.VMceSpLje0J7lfP0",
-            "gender": "Squig",
-            "species": "???",
+            "gender": "???",
+            "species": "Squig",
             "effects": {
                 "H9nEvznJNmC6aD4v": {
                     "id": "H9nEvznJNmC6aD4v",
@@ -2827,8 +2827,8 @@
             "name": "Olbrzymi Pająk",
             "description": "<section id=\"secret-4zOoWWzKvxCdyQBR\" class=\"secret\"><p>Olbrzymie pająki czają się głęboko w lasach i jaskiniach Imperium, ale mogą żyć gdziekolwiek, włącznie z zakurzonymi strychami i ciemnymi piwnicami. Większość chwyta ofiary w mocne sieci, a następnie wstrzykuje im jad. Chociaż większość ma rozmiary dużego szczura, niektóre odmiany olbrzymich pająków są przerażająco wielkie. Leśne gobliny często chwytają większe okazy, by służyły im za wierzchowce.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.VPVnyae6VHeD9cEP",
-            "gender": "Pająk",
-            "species": "Różne",
+            "gender": "Różne",
+            "species": "Pająk",
             "effects": {
                 "1oH1ylww2XXvCgdX": {
                     "id": "1oH1ylww2XXvCgdX",
@@ -2914,8 +2914,8 @@
             "name": "Ungor",
             "description": "<section id=\"secret-hOrEyZdCdR6bSlAT\" class=\"secret\"><p>Ungory mają szczątkowe lub bardzo krótkie rogi, a zatem rzadko uważane są za „Gory” przez resztę stada. Niektóre odznaczają się niemal ludzką twarzą, dzięki czemu są skutecznymi wywiadowcami, ale także stają się przedmiotem szykan. Istotnie, ungory są źle traktowane przez @UUID[Compendium.wfrp4e-core.bestiary.R37OtN5gmPWCYOP3]{Gory} i bywają niskie lub niedożywione w porównaniu ze swoimi wielkorogimi braćmi. To sprawia, że stają się zgorzkniałymi stworzeniami, które pragną wyładować na innych jątrzącą się w nich zazdrość.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.vrYs3cbxvXtre6rv",
-            "gender": "Ungor",
-            "species": "Varies",
+            "gender": "Varies",
+            "species": "Ungor",
             "effects": {
                 "0Qm0sltf7LI6OS8H": {
                     "id": "0Qm0sltf7LI6OS8H",
@@ -2969,8 +2969,8 @@
             "name": "Snotling",
             "description": "<section id=\"secret-BqvRpOU9iDidxoBa\" class=\"secret\"><p>Stwory o mózgu wielkości orzeszka, podobne do podekscytowanych, niekontrolowanych szczeniąt. Snotlingi to zbieracze i urodzeni imitatorzy. Zbierają kości i błyszczące rzeczy albo naśladują zachowanie wszystkiego, co widzą. Gdy zostaną pchnięte do walki przez @UUID[Compendium.wfrp4e-core.bestiary.zzdOpKqBC28J66Mn]{Gobliny} lub @UUID[Compendium.wfrp4e-core.bestiary.E7BiDqsB55BrOQut]{Orki}, walczą w cuchnących rojach, starając się stłamsić wrogów samą swoją liczebnością. Wykorzystują przy tym wszelkiego rodzaju odrażające i szkodliwe substancje, jak trujące grzyby i odchody, którymi rzucają w przeciwników.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.wdnXbjtKK7MtsZzc",
-            "gender": "Zielonoskóry",
-            "species": "???",
+            "gender": "???",
+            "species": "Zielonoskóry",
             "effects": {
                 "Gd3ciWnuttQ0eagx": {
                     "id": "Gd3ciWnuttQ0eagx",
@@ -3019,8 +3019,8 @@
             "name": "Varghulf",
             "description": "<section id=\"secret-f8TGSacwlNZd26YU\" class=\"secret\"><p>Większość wampirów utrzymuje w równowadze swoje nieumarłe łaknienie krwi z ułudą obycia i przyzwoitości, pozując na arystokrację ożywieńców. Niektóre jednak odrzucają swą ludzką fasadę, poddając się wewnętrznej bestii. Te varghulfy to brutalne i dzikie stworzenia pozbawione wszelkiego wyrafinowania, całkowicie pochłonięte przez zwierzęce dążenie do zaspokojenia własnych potrzeb. Pojawiają się pod postacią wielkich, nadętych bestii podobnych do nietoperza, które pławią się w prymitywnej żądzy krwi.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.XoSSlIsqXkiBlycn",
-            "gender": "Nieumarły",
-            "species": "???",
+            "gender": "???",
+            "species": "Nieumarły",
             "effects": {
                 "5vGOusPp76nuFjCS": {
                     "id": "5vGOusPp76nuFjCS",
@@ -3082,8 +3082,8 @@
             "name": "Mantikora",
             "description": "<section id=\"secret-F7nAtWNkv1I7DC2i\" class=\"secret\"><blockquote><p>Gdy podróżowałem z elfami do Ulthuanu, widziałem mnóstwo rzeczy, które zdumiałyby większość ludzi w domu. Pewnego razu ujrzałem mantikorę, tyle że pośrodku jej lwiego łba znajdowała się twarz wielkiego elfa! Należałoby chyba nazwać tego stwora elftikorą.</p><p style=\"text-align: right;\"><em>- Adhemar Fitztancred, Szary Strażnik, gawędziarz i kłamca</em></p></blockquote>\n<p>Na szczęście występują rzadko. Mantikory są niemiłosiernie zawzięte, z niezwykłą brutalnością dążąc do usunięcia ze swojego terytorium drapieżnych rywali. Dlatego zwykle wiadomo, że wchodzi się na teren mantikory - wzniesienia zawalone są ścierwami innych potworów. Stwór ma głowę i korpus zniekształconego wielkiego kota (chociaż czasami jego twarz wydaje się niemal zbyt ludzka), skrzydła nietoperza i paskudny, młócący, kolczasty ogon.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.XtVkAVgZRIIgrBXb",
-            "gender": "Mantikora",
-            "species": "Różne",
+            "gender": "Różne",
+            "species": "Mantikora",
             "effects": {
                 "dlQkrrgpAQLRGHsP": {
                     "id": "dlQkrrgpAQLRGHsP",
@@ -3136,8 +3136,8 @@
             "name": "Pol Dankels",
             "description": "<section id=\"secret-GH764CZAlWZYVjyB\" class=\"secret\"><p>Pol myślał, że pójdzie w ślady rodziców i będzie prowadził Piekarnię pod Zbawiennym Bertramem w Tahme, lecz bogowie mieli inne plany. To były jego dwudzieste trzecie urodziny. Dzień, w którym żona Pola dowiedziała się, że mąż sypia z jej siostrą. Gdy spróbowała odebrać mu ich troje dzieci, coś w nim pękło. Gapie twierdzili, że jego oczy zabłysły na żółto, a z dłoni buchnęły pomarańczowe płomienie. Jeśli chodzi o Pola, widział tylko świat zamazany czerwienią, gdy piekarnia stała w ogniu. To było siedem miesięcy temu. Od tamtego czasu Pol wędruje wraz z trójką swoich dzieci, desperacko uciekając przed łowcami czarownic i wysłannikami żony. Nie pozwoli, by go złapali. Jego dzieci go potrzebują.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.YavXt2NP9N8Puxse",
-            "gender": "Człowiek",
-            "species": "Mężczyzna",
+            "gender": "Mężczyzna",
+            "species": "Człowiek",
             "effects": {
                 "nZUvl5pnY3xEBtkg": {
                     "id": "nZUvl5pnY3xEBtkg",
@@ -3169,8 +3169,8 @@
             "name": "Pegaz",
             "description": "<section id=\"secret-5kEjANcNIwA5N8HX\" class=\"secret\"><blockquote><p>A juści, okoliczne pola nader żyzne. Wicie, to przez pegazy. Nie trza kupować gnoju na nawóz, bo spada z niebiesiech jak dar od bogów. Jeno lepiej nie stać pod stadem, gdy przelatuje górą. Paskudna sprawa. Nader paskudna. </p><p style=\"text-align: right;\"><em>– Berthold Bruner, farmer i obserwator pegazów</em></p></blockquote>\n<p>Pegazy to urodziwe białe konie z wielkimi, łabędzimi skrzydłami. Są wytrwałymi i niestrudzonymi lotnikami. Latają wielkimi stadami w wysokich górach, najwyraźniej czerpiąc ogromną radość z szybowania i wirowania w krętych prądach powietrznych. Są oczywistymi kandydatami na wierzchowce i niejeden wojownik lub zwiadowca usiłował schwytać dla siebie pegaza. Pegazy są bardzo inteligentne, a według niektórych same pozwalają się schwytać, jeśli tego chcą. To doprowadziło do powstania wszelkiego rodzaju fantastycznych, romantycznych legend, zgodnie z którymi wybrańcami pegazów mogą być tylko osoby wystarczająco godne lub cnotliwe.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.Yee9gwxJUceGbnO2",
-            "gender": "Pegaz",
-            "species": "Różne",
+            "gender": "Różne",
+            "species": "Pegaz",
             "effects": {
                 "bLNxCmpxb9SlSBFC": {
                     "id": "bLNxCmpxb9SlSBFC",
@@ -3210,8 +3210,8 @@
             "name": "Bazyliszek",
             "description": "<section id=\"secret-zdzlEp0D0ezaKtyw\" class=\"secret\"><p>Te ośmionogie, gadzie stwory są samotnicze i nieuchwytne. Podobno należą do najstarszych stworzeń Chaosu. Jak twierdzą pogłoski, przepełnia je tak wielka złość i jad, że zatruta jest nawet ziemia, po której chodzą. Także ich ukąszenie jest trujące, ale największy lęk budzi petryfikujące spojrzenie tych potworów. Obecnie spotyka się je rzadko, jednak bazyliszki to wciąż groźni przeciwnicy. Ich gruczoły i organy są wysoko cenione przez czarodziejów i alchemików, dlatego szukający okazji łowcy często sprawdzają, ile jest prawdy w pogłoskach o bazyliszkach bytujących podobno w dzikich ostępach @UUID[JournalEntry.ozE2DMCMK64eE5pD.JournalEntryPage.0Cmr0LZ3boLbNt6p]{Vorberglandu}. Niewielu powraca z takich wypraw.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.z8f3vySKIpTxGr62",
-            "gender": "Bazyliszek",
-            "species": "Różne",
+            "gender": "Różne",
+            "species": "Bazyliszek",
             "effects": {
                 "7VBwjr1LazKiJJh9": {
                     "id": "7VBwjr1LazKiJJh9",
@@ -3270,8 +3270,8 @@
             "name": "Goblin",
             "description": "<section id=\"secret-E2Z0jegOrNEyLilA\" class=\"secret\"><blockquote><p>Gobliny, sir. Tysiące goblinów!</p><p style=\"text-align: right\"><em>– Porucznik Bromkopf, 24. Reiklandzki Regiment Piechoty</em></p></blockquote>\n<p>Są wychudzone, złośliwe, zwinne i inteligentne. Błędem jest niedocenianie instynktu samozachowawczego goblinów. Chociaż są tchórzliwe, chętnie zbierają się w bandy, jeśli to zapewnia im znaczną przewagę liczebną. Często dołączają do armii @UUID[Compendium.wfrp4e-core.bestiary.E7BiDqsB55BrOQut]{Orków} - nie zawsze z własnego wyboru - oportunistycznie korzystając z łupów wojennych, podczas gdy inni zajmują się większością faktycznej walki.</p>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.zzdOpKqBC28J66Mn",
-            "gender": "Goblin",
-            "species": "???",
+            "gender": "???",
+            "species": "Goblin",
             "effects": {
                 "i8TsOAxC47ofJl4x": {
                     "id": "i8TsOAxC47ofJl4x",
