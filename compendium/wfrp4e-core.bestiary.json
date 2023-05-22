@@ -18,13 +18,13 @@
             "name": "Smukłoudy Jęzobicz",
             "description": "<p>Ostatecznym celem wszystkich czempionów Chaosu jest dostąpienie apoteozy: wyniesienia ponad demoniczne szeregi i służenia swojemu panu przez wieczność jako książę demonów w Królestwach Chaosu. To potężne istoty o wielkiej mocy. Książęta demonów są straszliwymi wrogami, starcia z którymi unikają nawet najwięksi bohaterowie Imperium.</p>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.28MwFcDPwpcO12kt",
-            "gender": "Książę Demonów",
-            "species": "???",
+            "gender": "???",
+            "species": "Książę Demonów",
             "effects": {
                 "dt9CX3Pq7QKw25z4": {
                     "id": "dt9CX3Pq7QKw25z4",
                     "label": "Dekoncentrujący",
-                    "script": "args.prefillModifiers.modifier -= 20"
+                    "script": "args.prefillModifiers.modifier -= 20;"
                 },
                 "nL9vz5id4ikQFGls": {
                     "id": "nL9vz5id4ikQFGls",

@@ -1,5 +1,5 @@
 {
-    "label": "Mapy (Główny)",
+    "label": "Mapy (Podręcznik Główny)",
     "mapping": {
         "image": "background.src",
         "image-temp": "modules/wfrp4e-core-pl/images/gm-screen.webp",
@@ -12,20 +12,23 @@
     },
     "entries": {
         "Barony of Böhrn": {
-            "initialization_folder": "Core Rulebook",
+            "initialization_folder": "Podręcznik Główny",
             "id": "Bk3yufokGdVtsQag",
-            "name": "Barony of Böhrn",
-            "scene_note": "Barony of Böhrn"
+            "name": "Baronia Böhrn",
+            "scene_note": "Baronia Böhrn",
+            "image": "modules/wfrp4e-core-pl/images/barony-of-bohrn.webp"
         },
         "GM Screen": {
-            "initialization_folder": "Core Rulebook",
+            "initialization_folder": "Podręcznik Główny",
             "id": "R4WcWZTHP25YCoW5",
-            "name": "GM Screen"
+            "name": "Ekran Mistrza Gry",
+            "image": "modules/wfrp4e-core-pl/images/gm-screen.webp"
         },
         "Reikland": {
-            "initialization_folder": "Core Rulebook",
+            "initialization_folder": "Podręcznik Główny",
             "id": "vGrxlojYtdObKLF6",
             "name": "Reikland",
+            "image": "modules/wfrp4e-core-pl/images/reikland.webp",
             "notes": {
                 "qwLZqgof9MM9fxNL": {
                     "text": ""

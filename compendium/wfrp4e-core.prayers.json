@@ -39,7 +39,7 @@
         "Rhya's Touch": {
             "id": "0uT3mzx8v4H3gVQj",
             "name": "Dotyk Rhyi",
-            "description": "<p>Kładziesz dłonie na zranionym lub chorym celu i wznosisz modlitewne pieśni. Wybierz jeden z poniższych efektów:</p>\n<p>• leczysz liczbę Żywotności równą Bonusowi z Ogłady</p>\n<p>• leczysz 1 naturalnie występującą chorobę.</p>\n<pZa każde 2 PS możesz wybrać dodatkowy efekt lub wzmocnić już raz wybrany. Cud ten działa powoli, a efekty widać dopiero po około 10 minutach. Jeśli coś przerwie jego działanie, będzie trzeba poprosić bóstwo o kolejny Cud.</p>",
+            "description": "<p>Kładziesz dłonie na zranionym lub chorym celu i wznosisz modlitewne pieśni. Wybierz jeden z poniższych efektów:</p>\n<p>• leczysz liczbę Żywotności równą Bonusowi z Ogłady</p>\n<p>• leczysz 1 naturalnie występującą chorobę.</p>\n<p>Za każde 2 PS możesz wybrać dodatkowy efekt lub wzmocnić już raz wybrany. Cud ten działa powoli, a efekty widać dopiero po około 10 minutach. Jeśli coś przerwie jego działanie, będzie trzeba poprosić bóstwo o kolejny Cud.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.0uT3mzx8v4H3gVQj",
             "duration": "Specjalny",
             "target": "1",
@@ -106,7 +106,7 @@
         "Eagle's Eye": {
             "id": "7KUKKbXBv8MbyEHt",
             "name": "Z lotu orła",
-            "description": "<p>Czas: Liczba Rund równa Bonusowi z Ogłady Wzywasz Myrmidię, by zesłała Sługę bożego, który podzieli się z tobą wiedzą o twoich wrogach. Na niebie pojawia się szybujący, widmowy orzeł. Wygląda jak zwykły orzeł i ma identyczne zdolności, ale nie może fizycznie wpływać na świat. Nie może też zostać w żaden sposób zraniony. Podczas trwania Cudu możesz patrzeć oczami orła i kontrolować jego lot, przeczesując pole bitwy i szpiegując swoich wrogów. Obraz jest ostry, ale nie masz dostępu do żadnych Talentów postaci, które wzmacniają zmysły, jak np. Widzenie w Ciemności. Gdy patrzysz na świat oczami orła, tracisz wzrok, więc lepiej, by ktoś w tym czasie mógł cię ochraniać.</p>",
+            "description": "<p>Wzywasz Myrmidię, by zesłała Sługę bożego, który podzieli się z tobą wiedzą o twoich wrogach. Na niebie pojawia się szybujący, widmowy orzeł. Wygląda jak zwykły orzeł i ma identyczne zdolności, ale nie może fizycznie wpływać na świat. Nie może też zostać w żaden sposób zraniony. Podczas trwania Cudu możesz patrzeć oczami orła i kontrolować jego lot, przeczesując pole bitwy i szpiegując swoich wrogów. Obraz jest ostry, ale nie masz dostępu do żadnych Talentów postaci, które wzmacniają zmysły, jak np. Widzenie w Ciemności. Gdy patrzysz na świat oczami orła, tracisz wzrok, więc lepiej, by ktoś w tym czasie mógł cię ochraniać.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.7KUKKbXBv8MbyEHt",
             "duration": "Bonus Ogd Rund",
             "target": "Ty",
@@ -115,7 +115,7 @@
         "Balm to a Wounded Mind": {
             "id": "8LcAFB6W37LDN70K",
             "name": "Balsam na duszę",
-            "description": "<p>Wzywasz Shallyę, by uspokoiła strudzone umysły twoich celów. Wszystkie efekty Psychologii w trakcie trwania Cudu zostają usunięte. Następnie cele zapadają w głęboki i relaksujący sen, który będzie trwał aż do świtu, chyba że coś rozbudzi cele. Niechętne cele muszą wykonać Wymagający (+0) Test Opanowania, by nie zasnąć.</p>",
+            "description": "<p>Wzywasz Shallyę, by uspokoiła strudzone umysły twoich celów. Wszystkie efekty Psychologii w trakcie trwania Cudu zostają usunięte. Następnie cele zapadają w głęboki i relaksujący sen, który będzie trwał aż do świtu, chyba że coś rozbudzi cele. Niechętne cele muszą wykonać <b>Wymagający (+0) Test Opanowania</b>, by nie zasnąć.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.8LcAFB6W37LDN70K",
             "duration": "Bonus Ogd Minut",
             "target": "1",
@@ -124,7 +124,7 @@
         "Howl of the Wolf": {
             "id": "9ALNZLZUZSLrLvkd",
             "name": "Wilczy zew",
-            "description": "<p>Wyjesz jak wilk, prosząc Ulryka o pomoc, a ten zsyła pomniejszego Sługę bożego w postaci Białego Wilka. Wilk będzie walczył z twoimi wrogami przez Czas Cudu, zanim zniknie i wróci na Łowisko Ulryka, wydawszy ostatnie, widmowe wycie, które mrozi krew w żyłach. Białe Wilki mają statystyki normalnych wilków (strona 317), ale dodatkowo odznaczają się także Cechami Stworzenia @UUID[Compendium.wfrp4e-core.traits.yRhhOlt18COq4e1q]{Furia}, @UUID[Compendium.wfrp4e-core.traits.mDgEMOoJpi8DkRYb]{Magiczny } oraz @UUID[Compendium.wfrp4e-core.traits.8slW8CJ2oVTxeQ6q]{Rozmiar (Duży) .</p>",
+            "description": "<p>Wyjesz jak wilk, prosząc Ulryka o pomoc, a ten zsyła pomniejszego Sługę bożego w postaci Białego Wilka. Wilk będzie walczył z twoimi wrogami przez Czas Cudu, zanim zniknie i wróci na Łowisko Ulryka, wydawszy ostatnie, widmowe wycie, które mrozi krew w żyłach. Białe Wilki mają statystyki normalnych wilków (strona 317), ale dodatkowo odznaczają się także Cechami Stworzenia @UUID[Compendium.wfrp4e-core.traits.yRhhOlt18COq4e1q]{Furia}, @UUID[Compendium.wfrp4e-core.traits.mDgEMOoJpi8DkRYb]{Magiczny } oraz @UUID[Compendium.wfrp4e-core.traits.8slW8CJ2oVTxeQ6q]{Rozmiar (Duży).</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.9ALNZLZUZSLrLvkd",
             "duration": "Bonus Ogd Rund",
             "target": "Specjalny",
@@ -142,7 +142,7 @@
         "Spear of Myrmidia": {
             "id": "BVZWihaal1zq3aJs",
             "name": "Włócznia Myrmidii",
-            "description": "<p>Kiedy dzierżysz włócznię, zyskuje ona właściwość Przebijająca i uznaje się ją za Magiczną.</p>",
+            "description": "<p>Kiedy dzierżysz włócznię, zyskuje ona właściwość <i>Przebijająca</i> i uznaje się ją za Magiczną.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.BVZWihaal1zq3aJs",
             "duration": "Bonus Ogd Rund",
             "target": "Ty",
@@ -377,7 +377,7 @@
         "The Snow King's Judgement": {
             "id": "GVMPSJwgscMVJzpX",
             "name": "Prawo Śnieżnego Króla",
-            "description": "<p>Wzywasz Ulryka, by okazał pogardę słabym, tchórzliwym i oszukańczym stworzeniom. Cel otrzymuje 1k10 Obrażeń, które ignorują Bonus z Wytrzymałości oraz Punkty Pancerza. Jeśli MG uzna, że cel nie jest ani słaby, ani tchórzliwy, ani oszukańczy, Obrażenia otrzymujesz ty.</p>",
+            "description": "<p>Wzywasz Ulryka, by okazał pogardę słabym, tchórzliwym i oszukańczym stworzeniom. Cel otrzymuje [[/r 1d10]] Obrażeń, które ignorują Bonus z Wytrzymałości oraz Punkty Pancerza. Jeśli MG uzna, że cel nie jest ani słaby, ani tchórzliwy, ani oszukańczy, Obrażenia otrzymujesz ty.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.GVMPSJwgscMVJzpX",
             "duration": "Natychmiast",
             "target": "1",
@@ -400,14 +400,14 @@
                     "script": "if (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))) {\n    args.prefillModifiers.modifier += 10;\n}"
                 }
             },
-            "duration": "Bonus Zr Rund",
+            "duration": "Bonus Zw Rund",
             "target": "1",
             "range": "Dotyk"
         },
         "Drowned Man's Face": {
             "id": "i5DW3xX2lGu6Pps6",
             "name": "Twarz topielca",
-            "description": "<p>Błagasz Mananna o to, by utopił twoich wrogów. Gdy Cud jest aktywny, płuca celów nieustannie wypełniają się słoną wodą, a ich włosy powiewają w powietrzu, jakby były pod wodą. Cel otrzymuje 1 poziom Wyczerpania i podczas trwania Cudu stosuje się do niego wszystkie zasady Utonięcia i Uduszenia (strona 181). Po zakończeniu Cudu cel musi wykonać <strong>Trudny (-20) Test Odpornośći</strong>. Jeśli się nie powiedzie, cel otrzymuje Stan Powalenie.</p>",
+            "description": "<p>Błagasz Mananna o to, by utopił twoich wrogów. Gdy Cud jest aktywny, płuca celów nieustannie wypełniają się słoną wodą, a ich włosy powiewają w powietrzu, jakby były pod wodą. Cel otrzymuje 1 poziom @Condition[Zmęczenie]{Zmęczenia} i podczas trwania Cudu stosuje się do niego wszystkie zasady Utonięcia i Uduszenia (strona 181). Po zakończeniu Cudu cel musi wykonać <strong>Trudny (-20) Test Odpornośći</strong>. Jeśli się nie powiedzie, cel otrzymuje Stan @Condition[Powalenie].</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.i5DW3xX2lGu6Pps6",
             "duration": "Bonus Ogd Rund",
             "target": "1",
@@ -416,10 +416,10 @@
         "Vanquish the Unrighteous": {
             "id": "I8YPP2uRmUKyHEq2",
             "name": "Pogrom",
-            "description": "<p><pTwoje żarliwe modlitwy napełniają wybranych sojuszników szaleńczą pogardą wobec wrogów Sigmara. Wszyscy sojusznicy objęci Cudem otrzymują @UUID[Compendium.wfrp4e-core.psychologies.5hH73j2NgPdsLCZN]{Nienawiść} wobec zielonoskórych, nieumarłych i wszystkich innych sług Chaosu.</p>",
+            "description": "<p>Twoje żarliwe modlitwy napełniają wybranych sojuszników szaleńczą pogardą wobec wrogów Sigmara. Wszyscy sojusznicy objęci Cudem otrzymują @UUID[Compendium.wfrp4e-core.psychologies.5hH73j2NgPdsLCZN]{Nienawiść} wobec zielonoskórych, nieumarłych i wszystkich innych sług Chaosu.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.I8YPP2uRmUKyHEq2",
             "duration": "Bonus Ogd Rund",
-            "target": "Bonus Ogd sojusników",
+            "target": "Bonus Ogd sojuszników",
             "range": "Ogłada metrów"
         },
         "Blessing of Fortune": {
@@ -546,7 +546,7 @@
         "Leaping Stag": {
             "id": "mXKrxO8WRZ9QLHA6",
             "name": "Rączy jeleń",
-            "description": "<p>Śpiewasz ku czci Ojca Taala, który w zamian błogosławi cię szybkością i zwinnością. Zyskujesz +1 do Szybkości oraz 1 poziom Talentu @UUID[Compendium.wfrp4e-core.talents.CV9btQn09S9Fn8Jk]{Silne Nogi}. Ponadto automatycznie udają ci się wszystkie Testy Atletyki (na poziomie co najmniej 0 PS). Jeśli Test zakończy się poniżej 0 PS, podnieś wynik do 0 PS.</p>",
+            "description": "<p>Śpiewasz ku czci Ojca Taala, który w zamian błogosławi cię szybkością i zwinnością. Zyskujesz +1 do Szybkości oraz 1 poziom Talentu @UUID[Compendium.wfrp4e-core.talents.CV9btQn09S9Fn8Jk]{Silne Nogi}. Ponadto automatycznie udają ci się wszystkie Testy <b>Atletyki</b> (na poziomie co najmniej 0 PS). Jeśli Test zakończy się poniżej 0 PS, podnieś wynik do 0 PS.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.mXKrxO8WRZ9QLHA6",
             "effects": {
                 "DIcpr650MAJVHQ5u": {
@@ -566,7 +566,7 @@
         "King of the Wild": {
             "id": "n8MfaJhczROmscCR",
             "name": "Władca zwierząt",
-            "description": "<p>ntonujesz niską pieśń, a Taal odpowiada stworzeniem dzikiego zwierzęcia odpowiedniego dla danej okolicy, które będzie wykonywać twoje polecenia przez Czas Cudu. Przykładowe zwierzęta do wezwania znajdziesz w <strong>Zwierzyńcu Reiklandu (strona 314).</strong></p>",
+            "description": "<p>Intonujesz niską pieśń, a Taal odpowiada stworzeniem dzikiego zwierzęcia odpowiedniego dla danej okolicy, które będzie wykonywać twoje polecenia przez Czas Cudu. Przykładowe zwierzęta do wezwania znajdziesz w <strong>Zwierzyńcu Reiklandu (strona 314).</strong></p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.n8MfaJhczROmscCR",
             "duration": "Bonus Ogd Rund",
             "target": "1",
@@ -600,7 +600,7 @@
         "Sword of Justice": {
             "id": "o5soyuEJoUk9HmCC",
             "name": "Miecz sprawiedliwości",
-            "description": "<p>Modlisz się do Vereny, by kierowała twoim ostrzem i pomogła ci uderzyć w niesprawiedliwych. Kiedy dzierżysz miecz, ignoruje on wszelkie Punkty Pancerza i uznaje się go za Magiczny. Ponadto, jeśli twój cios trafia przestępcę (co ustala MG), musi on zdać <strong>Przeciętny (+20) Test Odporności</strong> albo otrzymuje Stan Utrata Przytomności na co najmniej tyle Rund, ile wynosi twój Bonus z Ogłady. Jeśli taki nieprzytomny przeciwnik padnie ofiarą przestępstwa, otrzymasz 1 Punkt Grzechu za każde przestępstwo. </p>",
+            "description": "<p>Modlisz się do Vereny, by kierowała twoim ostrzem i pomogła ci uderzyć w niesprawiedliwych. Kiedy dzierżysz miecz, ignoruje on wszelkie Punkty Pancerza i uznaje się go za Magiczny. Ponadto, jeśli twój cios trafia przestępcę (co ustala MG), musi on zdać <strong>Przeciętny (+20) Test Odporności</strong> albo otrzymuje Stan @Condition[Utrata Przytomności] na co najmniej tyle Rund, ile wynosi twój Bonus z Ogłady. Jeśli taki nieprzytomny przeciwnik padnie ofiarą przestępstwa, otrzymasz 1 Punkt Grzechu za każde przestępstwo. </p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.o5soyuEJoUk9HmCC",
             "duration": "Bonus Ogd Rund",
             "target": "Ty",
@@ -612,8 +612,8 @@
             "description": "<p>Błagasz Verenę, prosząc o jej osąd nad domniemanym przestępcą. Jeśli twój cel popełnił przestępstwo, a twierdzi, że tego nie zrobił, na czas trwania tego Cudu otrzyma 1 poziom Pochwycenia, który nie może zostać usunięty, dopóki Cud jest w mocy. Jeśli twoje oskarżenia okażą się błędne, Verena nie będzie pochwalać twojego braku wyczucia - otrzymasz 1 Punkt Grzechu i natychmiast musisz wykonać rzut oraz porównać jego wynik z <strong>tabelą Gniew Bogów.</strong> </p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.oI3iwxVEXHRLSael",
             "duration": "Bonus Ogd Rund",
-            "target": "Ty",
-            "range": "Ty"
+            "target": "1",
+            "range": "Ogd Metrów"
         },
         "Rhya's Harvest": {
             "id": "OiMiQmsv1mut24jD",
@@ -642,7 +642,7 @@
         "Tanglefoot": {
             "id": "ONz21FviMRk3AyvE",
             "name": "Oplątanie",
-            "description": "<p>Błagasz Taala w modlitwach, by chronił swe dzikie ostępy. Korzenie, pnącza i gałązki oplatają się dookoła twoich wrogów. Wszystkie cele w promieniu tylu metrów, ile wynosi twój Bonus z Ogłady, otrzymują 1 poziom <br>Pochwycenia</br>. Za każde +2 PS możesz zwiększyć zasięg o tyle metrów, ile wynosi twój Bonus z Ogłady, lub zwiększyć poziomy Pochwycenia. W przypadkach prób uwolnienia się Oplątanie ma Siłę równą twojej Sile Woli.</p>",
+            "description": "<p>Błagasz Taala w modlitwach, by chronił swe dzikie ostępy. Korzenie, pnącza i gałązki oplatają się dookoła twoich wrogów. Wszystkie cele w promieniu tylu metrów, ile wynosi twój Bonus z Ogłady, otrzymują 1 poziom @Condition[Pochwycenie]{Pochwycenia}</br>. Za każde +2 PS możesz zwiększyć zasięg o tyle metrów, ile wynosi twój Bonus z Ogłady, lub zwiększyć poziomy @Condition[Pochwycenie]{Pochwycenia}. W przypadkach prób uwolnienia się Oplątanie ma Siłę równą twojej Sile Woli.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.ONz21FviMRk3AyvE",
             "effects": {
                 "FbFPvypAtB428U0r": {
@@ -667,7 +667,7 @@
         "Tooth and Claw": {
             "id": "PcKMAEF6UoaPSK6d",
             "name": "Kły i Pazury",
-            "description": "<p>Wzywasz Taala, by podzielił się z tobą brutalną siłą swojego królestwa. Zyskujesz Cechy Stworzenia @UUID[Compendium.wfrp4e-core.traits.pLW9SVX0TVTYPiPv]{Ugryzienie} (Bonus z Siły +3) oraz @UUID[Compendium.wfrp4e-core.traits.AtpAudHA4ybXVlWM]{Broń } (Bonus z Siły +4). Są to ataki Magiczne.</p>",
+            "description": "<p>Wzywasz Taala, by podzielił się z tobą brutalną siłą swojego królestwa. Zyskujesz Cechy Stworzenia @UUID[Compendium.wfrp4e-core.traits.pLW9SVX0TVTYPiPv]{Ugryzienie} (Bonus z Siły +3) oraz @UUID[Compendium.wfrp4e-core.traits.AtpAudHA4ybXVlWM]{Broń} (Bonus z Siły +4). Są to ataki Magiczne.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.PcKMAEF6UoaPSK6d",
             "effects": {
                 "1TWDvZQnuHAsfxxd": {
@@ -683,7 +683,7 @@
         "Blazing Sun": {
             "id": "Q91bWCEn0gt33fGT",
             "name": "Gorejące słońce",
-            "description": "<p>Wzywasz Myrmidię, by poraziła niegodnych wrogów na polu bitwy, a jej odpowiedź przybiera postać oślepiającego rozbłysku złotego światła. Wszyscy, którzy nie wyznają Myrmidii, a spojrzą w twoim kierunku, otrzymają 1 poziom Oślepienia. Za każde +2 PS otrzymują +1 poziom Oślepienia.</p>",
+            "description": "<p>Wzywasz Myrmidię, by poraziła niegodnych wrogów na polu bitwy, a jej odpowiedź przybiera postać oślepiającego rozbłysku złotego światła. Wszyscy, którzy nie wyznają Myrmidii, a spojrzą w twoim kierunku, otrzymają 1 poziom @Condition[Oślepienie]{Oślepienia}. Za każde +2 PS otrzymują +1 poziom @Condition[Oślepienie]{Oślepienia}.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.Q91bWCEn0gt33fGT",
             "effects": {
                 "JlsdDkPK9j9Y65sB": {
@@ -717,7 +717,7 @@
         "Blind Justice": {
             "id": "R6Q16WOXcPfaHnOb",
             "name": "Ślepa dziewica",
-            "description": "<p>Wymawiasz modlitwy sławiące wyostrzone zmysły Vereny, które są w stanie przejrzeć wszelkie rzeczy i ujrzeć prawdę. Wykonaj Prosty <strong>Wymagający (+0) Test Percepcji</strong>, by przejrzeć wszelkie zaklęcia i Cuda, których efektem są iluzje lub zmylenie zmysłów. Możesz również wykonać <strong>Przeciętny (+20) Test Intuicji</strong>, by ustalić, czy osoba, z którą rozmawiasz, kłamie, czy nie. Uwaga! Dowiesz się jedynie, czy postać wierzy, że mówi prawdę. Jeśli się po prostu myli, ten efekt tego nie zdradzi. <br><br></p>",
+            "description": "<p>Wymawiasz modlitwy sławiące wyostrzone zmysły Vereny, które są w stanie przejrzeć wszelkie rzeczy i ujrzeć prawdę. Wykonaj <strong>Prosty Wymagający (+0) Test Percepcji</strong>, by przejrzeć wszelkie zaklęcia i Cuda, których efektem są iluzje lub zmylenie zmysłów. Możesz również wykonać <strong>Przeciętny (+20) Test Intuicji</strong>, by ustalić, czy osoba, z którą rozmawiasz, kłamie, czy nie. <strong>Uwaga!</strong> Dowiesz się jedynie, czy postać wierzy, że mówi prawdę. Jeśli się po prostu myli, ten efekt tego nie zdradzi.<br><br></p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.R6Q16WOXcPfaHnOb",
             "duration": "Bonus Ogd Rund",
             "target": "Ty",
@@ -726,7 +726,7 @@
         "Last Rites": {
             "id": "rbdxcYoj8N2eMaqV",
             "name": "Wieczny odpoczynek",
-            "description": "<p>Śpiewasz uroczyste requiem nad zwłokami. Cud gwarantuje, że dusza zostanie odesłana przez portal do dziedziny Morra. Ponadto ciało to nie będzie mogło zostać wskrzeszone żadnym z zaklęć z Tradycji Nekromancji. Jeśli celem Cudu jest stworzenie o Cesze Ożywieniec lub Konstrukt, zostanie zniszczone.</p>",
+            "description": "<p>Śpiewasz uroczyste requiem nad zwłokami. Cud gwarantuje, że dusza zostanie odesłana przez portal do dziedziny Morra. Ponadto ciało to nie będzie mogło zostać wskrzeszone żadnym z zaklęć z Tradycji Nekromancji. Jeśli celem Cudu jest stworzenie o Cesze <i>Ożywieniec</i> lub <i>Konstrukt</i>, zostanie zniszczone.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.rbdxcYoj8N2eMaqV",
             "effects": {
                 "gvhH2LxUqQQxN6R8": {
@@ -742,7 +742,7 @@
         "Twin-tailed Comet": {
             "id": "rjkMzFwN1trbSLL8",
             "name": "Kometa Sigmara",
-            "description": "<p>Skandując litanie do Sigmara, wzywasz go, by zmiażdżył twych wrogów. Kometa o dwóch ogonach pikuje z przestworzy w kuli ognia i zniszczenia, trafiając w dowolny punkt w zasięgu wzroku i Zasięgu Cudu. Wszystko w zasięgu tylu metrów od miejsca uderzenia, ile wynosi Bonus z Ogłady, otrzymuje 1k10 + PS Obrażeń, które ignorują Bonus z Wytrzymałości oraz Punkty Pancerza, a ponadto otrzymuje także 1 poziom Podpalenia. Wyznaczone miejsce uderzenia nie może znajdować się w budynku. Co więcej, celować można jedynie w tych, których Sigmar uzna za wrogów.</p>",
+            "description": "<p>Skandując litanie do Sigmara, wzywasz go, by zmiażdżył twych wrogów. Kometa o dwóch ogonach pikuje z przestworzy w kuli ognia i zniszczenia, trafiając w dowolny punkt w zasięgu wzroku i Zasięgu Cudu. Wszystko w zasięgu tylu metrów od miejsca uderzenia, ile wynosi Bonus z Ogłady, otrzymuje 1k10 + PS Obrażeń, które ignorują Bonus z Wytrzymałości oraz Punkty Pancerza, a ponadto otrzymuje także 1 poziom @Condition[Podpalenie]{Podpalenia}. Wyznaczone miejsce uderzenia nie może znajdować się w budynku. Co więcej, celować można jedynie w tych, których Sigmar uzna za wrogów.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.rjkMzFwN1trbSLL8",
             "effects": {
                 "dx14txcPj5zl0vjZ": {
@@ -758,7 +758,7 @@
         "Winter's Bite": {
             "id": "rrfrmqCpy10u7c9o",
             "name": "Odmrożenia",
-            "description": "<p>Ryczysz modlitwy do Ulryka, sławiąc jego nienasycony topór Blitzbeil. Jeśli dzierżysz topór, uznaje się go za Magiczny. Ponadto broń zadaje Obrażenia zwiększone o PS, a każda żywa istota trafiona toporem musi także wykonać <strong>Wymagający (+0) Test Odporności</strong>. Jeśli ten się nie powiedzie, istota otrzyma również 1 poziom <br>Oszołomienia</br>. Trafione cele tracą za to wszystkie poziomy <br>Krwawienia</br>, ponieważ krew zamarza im w żyłach. Podczas trwania Cudu Obrażenia zadane ciosem twojego topora nie mogą wywołać Krwawienia.</p>",
+            "description": "<p>Ryczysz modlitwy do Ulryka, sławiąc jego nienasycony topór Blitzbeil. Jeśli dzierżysz topór, uznaje się go za Magiczny. Ponadto broń zadaje Obrażenia zwiększone o PS, a każda żywa istota trafiona toporem musi także wykonać <strong>Wymagający (+0) Test Odporności</strong>. Jeśli ten się nie powiedzie, istota otrzyma również 1 poziom Condition[Oszołomienie]{Oszołomienia}. Trafione cele tracą za to wszystkie poziomy @Condition[Krwawienie]{Krwawienia}, ponieważ krew zamarza im w żyłach. Podczas trwania Cudu Obrażenia zadane ciosem twojego topora nie mogą wywołać @Condition[Krwawienie]{Krwawienia}.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.rrfrmqCpy10u7c9o",
             "duration": "Bonus Ogd Rund",
             "target": "Ty",
@@ -767,7 +767,7 @@
         "Destroy Undead": {
             "id": "sdSy4k7ygDhAjSSX",
             "name": "Zniszczenie ożywieńca",
-            "description": "<p>Przyzywasz moce Morra, by zmieść nieumarłych z powierzchni ziemi. Czarny ogień błyska na twoim ciele, formując idealny okrąg o promieniu równym Bonusowi z Ogłady w metrach. Wszystkie potencjalne cele o Cesze Stworzenia Ożywieniec otrzymują 1k10 Obrażeń ignorujących Bonus z Wytrzymałości oraz Punkty Pancerza. Każdy Ożywieniec zniszczony dzięki temu Cudowi nie może zostać wskrzeszony za pomocą nekromancji, przynajmniej w standardowych okolicznościach. Za każde +2 PS możesz zwiększyć zasięg okręgu o tyle metrów, ile wynosi Bonus z Ogłady.</p>",
+            "description": "<p>Przyzywasz moce Morra, by zmieść nieumarłych z powierzchni ziemi. Czarny ogień błyska na twoim ciele, formując idealny okrąg o promieniu równym Bonusowi z Ogłady w metrach. Wszystkie potencjalne cele o Cesze Stworzenia <i>Ożywieniec</i> otrzymują 1k10 Obrażeń ignorujących Bonus z Wytrzymałości oraz Punkty Pancerza. Każdy <i>Ożywieniec</i> zniszczony dzięki temu Cudowi nie może zostać wskrzeszony za pomocą nekromancji, przynajmniej w standardowych okolicznościach. Za każde +2 PS możesz zwiększyć zasięg okręgu o tyle metrów, ile wynosi Bonus z Ogłady.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.sdSy4k7ygDhAjSSX",
             "effects": {
                 "HqH1WB4M1YCR0kRg": {
@@ -785,14 +785,14 @@
             "name": "Niepokalana niewinność",
             "description": "<p>Położywszy dłonie na umęczonej istocie, błagasz Shallyę, by oczyściła ją z niedawno nabytego spaczenia. Cel traci 1 Punkt Zepsucia, a za każde 2 PS - kolejny punkt. Niestety Bogowie Chaosu nie lubią, gdy ktoś tak jawnie wchodzi im w paradę. Jeśli próba wywołania Cudu zakończy się Pechem, ty i twój cel otrzymujecie po 1k10 Punktów Zepsucia oprócz standardowych efektów. Cud musi zostać wywołany maksymalnie w ciągu godziny od nabycia Punktu Zepsucia.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.SItGUVYokyOo7csk",
-            "duration": "Specjalny",
+            "duration": "Natychmiast",
             "target": "1",
             "range": "Dotyk"
         },
         "Stay Morr's Hand": {
             "id": "SjKFVBXgLC51dnQz",
             "name": "Wstrzymanie dłoni Morra",
-            "description": "<p>Dotykasz oczu kogoś bliskiego śmierci i prosisz Morra, by prowadził tę duszę, ale nie zabierał jej do siebie. Cel musi mieć 0 Żywotności i chcieć poddać się Cudowi. Przez Czas Cudu cel jest pod wpływem Stanu Utrata Przytomności i dopóki trwa Cud, jego stan się nie pogorszy - choroby zostaną powstrzymane, Rany Krytyczne zignorowane, trucizny zwalczane itd. Gdy Cud dobiegnie końca, można albo przeprowadzić odpowiednie leczenie, albo możesz oddać celowi ostatnią posługę. Jeśli to zrobisz, co zajmuje około minuty, dusza celu popłynie przez portal Morra w objęcia śmierci, a ciało nigdy nie będzie mogło zostać wykorzystane przez nekromantów.</p>",
+            "description": "<p>Dotykasz oczu kogoś bliskiego śmierci i prosisz Morra, by prowadził tę duszę, ale nie zabierał jej do siebie. Cel musi mieć 0 Żywotności i chcieć poddać się Cudowi. Przez Czas Cudu cel jest pod wpływem Stanu @Condition[Utrata Przytomności] i dopóki trwa Cud, jego stan się nie pogorszy - choroby zostaną powstrzymane, Rany Krytyczne zignorowane, trucizny zwalczane itd. Gdy Cud dobiegnie końca, można albo przeprowadzić odpowiednie leczenie, albo możesz oddać celowi ostatnią posługę. Jeśli to zrobisz, co zajmuje około minuty, dusza celu popłynie przez portal Morra w objęcia śmierci, a ciało nigdy nie będzie mogło zostać wykorzystane przez nekromantów.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.SjKFVBXgLC51dnQz",
             "duration": "Bonus Ogd Godzin (Specjalny)",
             "target": "1",
@@ -801,7 +801,7 @@
         "Animal Instincts": {
             "id": "SZ88OXYo6F2q3vWb",
             "name": "Zwierzęcy Instynkt",
-            "description": "<p>Intonujesz pieśń opisującą nadnaturalne zmysły Taala, wzywając jego pomocy. W trakcie trwania Cudu zyskujesz 1 poziom Talentu @UUID[Compendium.wfrp4e-core.talents.9h82z72XGo9tfgQS]{Wrażliwy Zmysł (wybierz jeden)}, a kiedy udasz się na spoczynek, natychmiast obudzisz się, jeśli zagrożenie zbliży się na tyle metrów, ile wynosi twoja Inicjatywa.</p>",
+            "description": "<p>Intonujesz pieśń opisującą nadnaturalne zmysły Taala, wzywając jego pomocy. W trakcie trwania Cudu zyskujesz 1 poziom Talentu @UUID[Compendium.wfrp4e-core.talents.9h82z72XGo9tfgQS]{Wyczulony Zmysł (wybierz jeden)}, a kiedy udasz się na spoczynek, natychmiast obudzisz się, jeśli zagrożenie zbliży się na tyle metrów, ile wynosi twoja Inicjatywa.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.SZ88OXYo6F2q3vWb",
             "duration": "Bonus Ogd Godzin",
             "target": "1",
@@ -843,7 +843,7 @@
         "Portal's Threshold": {
             "id": "uE6AXjMjYvtvXQvy",
             "name": "Próg życia",
-            "description": "<p>Rysujesz na ziemi linię długą na 8 metrów, wznosząc pieśń żałobną do Morra. W wyniku działania Cudu pojawia się niewyraźny, cienisty portal, z którego dobiega krakanie kruków. Istoty o Cesze Stworzenia Ożywieniec muszą wykonać <strong>Wymagający (+0) Test Siły Woli</strong>, by przejść przez tę linię. Stworzenia, które mają jednocześnie Cechy Konstrukt i Ożywieniec po prostu nie są w stanie jej przekroczyć. Efekt Cudu utrzymuje się aż do zmierzchu.</p>",
+            "description": "<p>Rysujesz na ziemi linię długą na 8 metrów, wznosząc pieśń żałobną do Morra. W wyniku działania Cudu pojawia się niewyraźny, cienisty portal, z którego dobiega krakanie kruków. Istoty o Cesze Stworzenia <i>Ożywieniec</i> muszą wykonać <strong>Wymagający (+0) Test Siły Woli</strong>, by przejść przez tę linię. Stworzenia, które mają jednocześnie Cechy <i>Konstrukt</i> i <i>Ożywieniec</i> po prostu nie są w stanie jej przekroczyć. Efekt Cudu utrzymuje się aż do zmierzchu.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.uE6AXjMjYvtvXQvy",
             "duration": "Specjalny",
             "target": "8 metrów",
@@ -902,7 +902,7 @@
         "Sea Legs": {
             "id": "VUyCJ5LRPkuC5iZx",
             "name": "Chód marynarza",
-            "description": "<p>Cele natychmiast zostają zanurzone w słonej wodzie, zataczając się, jakby stały na rozchybotanym pokładzie statku w trakcie sztormu. Ich włosy targa widmowy wiatr, a rozbryzgi wody biją w ich skórę. Uzyskują po 1 poziomie Stanów <em>Oszołomienie</em>, <em>Oślepienie</em> i <em>Wyczerpanie</em>, a ponadto muszą wykonać pomyślnie <strong>Przeciętny (+20) Test Zwinności</strong>, by w ogóle móc się przemieszczać i korzystać z Ruchu. Jeśli im się nie powiedzie, otrzymują Stan Powalenie.</p>",
+            "description": "<p>Cele natychmiast zostają zanurzone w słonej wodzie, zataczając się, jakby stały na rozchybotanym pokładzie statku w trakcie sztormu. Ich włosy targa widmowy wiatr, a rozbryzgi wody biją w ich skórę. Uzyskują po 1 poziomie Stanów @Condition[Oszołomienie], @Condition[Oślepienie] i @Condition[Wyczerpanie], a ponadto muszą wykonać pomyślnie <strong>Przeciętny (+20) Test Zwinności</strong>, by w ogóle móc się przemieszczać i korzystać z Ruchu. Jeśli im się nie powiedzie, otrzymują Stan @Condition[Powalenie].</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.VUyCJ5LRPkuC5iZx",
             "effects": {
                 "s0zdvcCpdHza4MZf": {
@@ -918,7 +918,7 @@
         "Sigmar's Fiery Hammer": {
             "id": "WgZx3xma6vYGz17e",
             "name": "Młot Sigmara",
-            "description": "<p>Skandujesz błogosławieństwa w imieniu Sigmara. Jeśli dzierżysz młot bojowy, uznaje się go za Magiczny, zadający Obrażenia zwiększone o Bonus z Ogłady. Ponadto każdy trafiony cel otrzymuje Stany <em>Powalony</em> i <em>Podpalenie</em> (jeden poziom).</p>",
+            "description": "<p>Skandujesz błogosławieństwa w imieniu Sigmara. Jeśli dzierżysz młot bojowy, uznaje się go za Magiczny, zadający Obrażenia zwiększone o Bonus z Ogłady. Ponadto każdy trafiony cel otrzymuje Stany @Condition[Powalenie] i @Condition[Podpalenie] (jeden poziom).</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.WgZx3xma6vYGz17e",
             "duration": "Bonus Ogd Rund",
             "target": "Ty",

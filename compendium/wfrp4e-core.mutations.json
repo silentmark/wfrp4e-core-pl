@@ -11,7 +11,7 @@
         "Chaotic Dreams": {
             "id": "0jaMZRJvJ5L12WZ2",
             "name": "Chaotyczne sny",
-            "description": "<p>Postać przez pierwsze 2 godziny po śnie uznawana jest za Wyczerpaną.</p>",
+            "description": "<p>Postać przez pierwsze 2 godziny po śnie uznawana jest za @Condition[Zmęczenie]{Zmęczoną}.</p>",
             "sourceId": "Compendium.wfrp4e-core.mutations.0jaMZRJvJ5L12WZ2",
             "effects": {
                 "XRfGwpANht6wpmpR": {
@@ -169,7 +169,7 @@
         "Thrill Hunter": {
             "id": "gMsd6II7Y1oBMddp",
             "name": "Uzależnienie od adrenaliny",
-            "description": "<p></p>",
+            "description": "<p>Siła Woli +10, Inicjatywa –10.</p>",
             "sourceId": "Compendium.wfrp4e-core.mutations.gMsd6II7Y1oBMddp",
             "effects": {
                 "39WPkucQosauvNSW": {
@@ -219,7 +219,7 @@
         "Corpulent": {
             "id": "iLZcSRUbxKBecACZ",
             "name": "Otyłość",
-            "description": "<p>Szybkość -1, Siła +5, Krzepa +5.</p>",
+            "description": "<p>Szybkość -1, Siła +5, Wytrzymałość +5.</p>",
             "sourceId": "Compendium.wfrp4e-core.mutations.iLZcSRUbxKBecACZ",
             "effects": {
                 "A3qEjzJ8tFTTWDPl": {
@@ -243,7 +243,7 @@
         "Inverted Face": {
             "id": "JR6GZJDVNupDnnbm",
             "name": "Odwrócona twarz",
-            "description": "<p>Bez specjalnego efektu.</p>",
+            "description": "<p>–20 do testów Ogłady.</p>",
             "sourceId": "Compendium.wfrp4e-core.mutations.JR6GZJDVNupDnnbm",
             "effects": {
                 "W6GtdIEcYRTTdUbk": {
@@ -334,7 +334,7 @@
         "Uneven Horns": {
             "id": "Pmcq5P7yRnYsoFYf",
             "name": "Nierówne rogi",
-            "description": "<p>+1 Punkt Pancerza na głowie, liczy się jako @UUID[Compendium.wfrp4e-core.traits.AtpAudHA4ybXVlWM]{Broń} o sile równej BS.</p>",
+            "description": "<p>+1 Punkt Pancerza na głowie, liczy się jako Cecha Stworzenia @UUID[Compendium.wfrp4e-core.traits.AtpAudHA4ybXVlWM]{Broń} o współczynniku obrażeń +BS.</p>",
             "sourceId": "Compendium.wfrp4e-core.mutations.Pmcq5P7yRnYsoFYf",
             "effects": {
                 "2o80BN5wj3QZxpYJ": {
@@ -463,7 +463,7 @@
         "Shaky Morale": {
             "id": "Zh68gzYMLW8vZgVo",
             "name": "Chwiejne morale",
-            "description": "<p>Za każdym razem, gdy postaci nie powiedzie się Test Siły Woli, otrzymuje 1 poziom Paniki.</p>",
+            "description": "<p>Za każdym razem, gdy postaci nie powiedzie się Test Siły Woli, otrzymuje 1 poziom @Condition[Panika]{Paniki}.</p>",
             "sourceId": "Compendium.wfrp4e-core.mutations.Zh68gzYMLW8vZgVo",
             "effects": {
                 "RpoMdbEmjj9FhPvU": {

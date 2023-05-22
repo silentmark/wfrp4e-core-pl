@@ -308,7 +308,7 @@ Hooks.on("setup", async function () {
 		entangling: "Pętającą",
 		engineering: "WFRP4E.GroupDescription.Engineering",
 		explosives: "WFRP4E.GroupDescription.Explosives",
-		sling: "Proce",
+		sling: "Proca",
 		throwing: "WFRP4E.GroupDescription.Throwing",
 	};
 
