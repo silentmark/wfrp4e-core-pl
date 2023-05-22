@@ -902,7 +902,7 @@
         "Sea Legs": {
             "id": "VUyCJ5LRPkuC5iZx",
             "name": "Chód marynarza",
-            "description": "<p>Cele natychmiast zostają zanurzone w słonej wodzie, zataczając się, jakby stały na rozchybotanym pokładzie statku w trakcie sztormu. Ich włosy targa widmowy wiatr, a rozbryzgi wody biją w ich skórę. Uzyskują po 1 poziomie Stanów @Condition[Oszołomienie], @Condition[Oślepienie] i @Condition[Wyczerpanie], a ponadto muszą wykonać pomyślnie <strong>Przeciętny (+20) Test Zwinności</strong>, by w ogóle móc się przemieszczać i korzystać z Ruchu. Jeśli im się nie powiedzie, otrzymują Stan @Condition[Powalenie].</p>",
+            "description": "<p>Cele natychmiast zostają zanurzone w słonej wodzie, zataczając się, jakby stały na rozchybotanym pokładzie statku w trakcie sztormu. Ich włosy targa widmowy wiatr, a rozbryzgi wody biją w ich skórę. Uzyskują po 1 poziomie Stanów @Condition[Oszołomienie], @Condition[Oślepienie] i @Condition[Zmęczenie], a ponadto muszą wykonać pomyślnie <strong>Przeciętny (+20) Test Zwinności</strong>, by w ogóle móc się przemieszczać i korzystać z Ruchu. Jeśli im się nie powiedzie, otrzymują Stan @Condition[Powalenie].</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.VUyCJ5LRPkuC5iZx",
             "effects": {
                 "s0zdvcCpdHza4MZf": {
