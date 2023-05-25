@@ -82,7 +82,7 @@
         "Fisherman": {
             "id": "1kgHcImgfyKI1IYp",
             "name": "Rybak",
-            "description": "<p>Jesteś obrotnym rybakiem i wiesz, jak zapełnić sieci. Jeżeli masz dostęp do odpowiednio dużego zbiornika wodnego, jesteś w stanie wyżywić siebie oraz tyle osób, ile razy wykupiłeś ten Talent, jeśli poświęcisz godzinę dziennie na wędkowanie. Liczbę złowionych ryb możesz zwiększyć, stosując zasady zbieractwa</p>",
+            "description": "<p>Jesteś obrotnym rybakiem i wiesz, jak zapełnić sieci. Jeżeli masz dostęp do odpowiednio dużego zbiornika wodnego, jesteś w stanie wyżywić siebie oraz tyle osób, ile razy wykupiłeś ten Talent, jeśli poświęcisz godzinę dziennie na wędkowanie. Liczbę złowionych ryb możesz zwiększyć, stosując zasady @UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.cFqWFER60SjM5Wn3#options:-gathering-food-and-herbs]{zbieractwa}</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.1kgHcImgfyKI1IYp",
             "tests": "Dowolne wiążące się z rybołówstwem"
         },
@@ -96,7 +96,7 @@
         "Dirty Fighting": {
             "id": "2Nzqsc9aclP6rpnl",
             "name": "Cios Poniżej Pasa",
-            "description": "<p>Nauczyłeś się brudnych sztuczek, stosowanych podczas walki bez broni. Zadajesz +1 punkt obrażeń za każde wykupienie tego Talentu, gdy trafisz przeciwnika, używając Umiejętności Broń Biała (Bijatyka). Uwaga: wykorzystanie tego Talentu w pojedynku bokserskim jest uważane za oszustwo.</p>",
+            "description": "<p>Nauczyłeś się brudnych sztuczek, stosowanych podczas walki bez broni. Zadajesz +1 punkt obrażeń za każde wykupienie tego Talentu, gdy trafisz przeciwnika, używając Umiejętności Broń Biała (Bijatyka).</p>\n <p><strong>Uwaga</strong>: wykorzystanie tego Talentu w pojedynku bokserskim jest uważane za oszustwo.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.2Nzqsc9aclP6rpnl",
             "effects": {
                 "NznDJLYiqbwPzhZt": {
@@ -137,7 +137,7 @@
         "Reaction Strike": {
             "id": "4AqSkJnFPqNuTkos",
             "name": "Atak Wyprzedzający",
-            "description": "<p>Twoje błyskawiczne ciosy pozwalają na powalenie przeciwników, zanim oni sami zdążą zaatakować. Kiedy wróg na ciebie Szarżuje, wykonaj udany Wymagający (+0) Test Inicjatywy, by natychmiast wykonać Darmowy Atak poza normalną kolejnością Rundy. Używasz broni, którą trzymasz w wiodącej ręce. Możesz wykonać tyle Ataków Wyprzedzających w Rundzie, ile razy wykupiłeś ten Talent, ale tylko raz na każdego szarżującego.</p>",
+            "description": "<p>Twoje błyskawiczne ciosy pozwalają na powalenie przeciwników, zanim oni sami zdążą zaatakować. Kiedy wróg na ciebie Szarżuje, wykonaj udany <strong>Wymagający (+0) Test Inicjatywy</strong>, by natychmiast wykonać Darmowy Atak poza normalną kolejnością Rundy. Używasz broni, którą trzymasz w wiodącej ręce. Możesz wykonać tyle Ataków Wyprzedzających w Rundzie, ile razy wykupiłeś ten Talent, ale tylko raz na każdego szarżującego.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.4AqSkJnFPqNuTkos",
             "tests": "Testy inicjatywy związane z tym talentem"
         },
@@ -157,7 +157,7 @@
         "Strong Swimmer": {
             "id": "4wnQc19allWlyOGe",
             "name": "Świetny Pływak",
-            "description": "<p>Bardzo dobrze pływasz i potrafisz na długo wstrzymać oddech pod wodą. Kiedy obliczasz, jak długo jesteś w stanie wytrzymać pod powierzchnią wody, do Bonusu z Wytrzymałości dodaj liczbę wykupień tego Talentu</p>",
+            "description": "<p>Bardzo dobrze pływasz i potrafisz na długo wstrzymać oddech pod wodą. Kiedy obliczasz, jak długo jesteś w stanie wytrzymać pod powierzchnią wody, do Bonusu z Wytrzymałości dodaj liczbę wykupień tego Talentu.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.4wnQc19allWlyOGe",
             "tests": "Pływanie"
         },
@@ -436,7 +436,7 @@
         "Strong Legs": {
             "id": "CV9btQn09S9Fn8Jk",
             "name": "Silne Nogi",
-            "description": "<p>Masz silne nogi, dzięki którym jesteś w stanie wykonywać nieprawdopodobnie dalekie skoki. Dodaj liczbę wykupień tego Talentu do PS Testów Atletyki wiążących się ze skakaniem  </p>",
+            "description": "<p>Masz silne nogi, dzięki którym jesteś w stanie wykonywać nieprawdopodobnie dalekie skoki. Dodaj liczbę wykupień tego Talentu do PS Testów Atletyki wiążących się ze skakaniem.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.CV9btQn09S9Fn8Jk",
             "effects": {
                 "VaILgn8RaKpqAueV": {
@@ -448,7 +448,7 @@
         "Sniper": {
             "id": "cygaI9gq4BQJvbB5",
             "name": "Snajper",
-            "description": "<p>Kiedy strzelasz, odległość nie ma dla ciebie znaczenia. Eliminujesz cele z taką samą łatwością, jakby były niedaleko. Strzelanie na daleki zasięg nie wiąże się dla ciebie z żadnymi negatywnymi modyfikatorami, a na bardzo daleki oznacza tylko połowiczne modyfikatory  </p>",
+            "description": "<p>Kiedy strzelasz, odległość nie ma dla ciebie znaczenia. Eliminujesz cele z taką samą łatwością, jakby były niedaleko. Strzelanie na daleki zasięg nie wiąże się dla ciebie z żadnymi negatywnymi modyfikatorami, a na bardzo daleki oznacza tylko połowiczne modyfikatory.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.cygaI9gq4BQJvbB5",
             "effects": {
                 "AVhPxHHlKUolT589": {
@@ -462,14 +462,14 @@
         "Disarm": {
             "id": "DS44h27iCOvUBa4O",
             "name": "Rozbrojenie",
-            "description": "<p> Celnym uderzeniem lub sprawnym ruchem nadgarstka jesteś w stanie wytrącić broń przeciwnikowi z dłoni. W ramach swojej Akcji wykonaj Przeciwstawny Test Broni Białej przeciwko wrogiemu Testowi Broni Białej. Jeśli ci się powiedzie, wybijasz broń z ręki przeciwnika, która odlatuje o 1k5 metrów w losowym kierunku. MG może zadecydować o tym, co dzieje się jeszcze. Jeśli wygrasz o 2 PS, ty decydujesz, jak daleko odleci broń, zamiast określać to losowo. Jeśli wygrasz o 4 PS, możesz też zadecydować, w którą stronę pofrunie. Jeżeli wygrasz Test o 6 PS lub więcej, łapiesz oręż przeciwnika, o ile masz wolną rękę. Ten Talent na nic się nie przyda, jeśli wróg nie używa broni lub jest większy od ciebie.</p>",
+            "description": "<p> Celnym uderzeniem lub sprawnym ruchem nadgarstka jesteś w stanie wytrącić broń przeciwnikowi z dłoni. W ramach swojej Akcji wykonaj <strong>Przeciwstawny Test Broni Białej</strong> przeciwko wrogiemu Testowi Broni Białej. Jeśli ci się powiedzie, wybijasz broń z ręki przeciwnika, która odlatuje o 1k5 metrów w losowym kierunku. MG może zadecydować o tym, co dzieje się jeszcze. Jeśli wygrasz o 2 PS, ty decydujesz, jak daleko odleci broń, zamiast określać to losowo. Jeśli wygrasz o 4 PS, możesz też zadecydować, w którą stronę pofrunie. Jeżeli wygrasz Test o 6 PS lub więcej, łapiesz oręż przeciwnika, o ile masz wolną rękę. Ten Talent na nic się nie przyda, jeśli wróg nie używa broni lub jest większy od ciebie.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.DS44h27iCOvUBa4O",
             "tests": "Test Broni Białej w sytuacjach związanych z tym Talentem"
         },
         "Fleet Footed": {
             "id": "E3vTSCzgrasNijUO",
             "name": "Bardzo Szybki",
-            "description": "<p>Twoja Szybkość zwiększa się o +1.  </p>",
+            "description": "<p>Twoja Szybkość zwiększa się o +1.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.E3vTSCzgrasNijUO",
             "effects": {
                 "3fOs9R0x04viu1cj": {

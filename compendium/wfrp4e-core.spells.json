@@ -2562,7 +2562,7 @@
                 "qztdckrvntmjpLW3": {
                     "id": "qztdckrvntmjpLW3",
                     "label": "Przerażający wygląd (Niebiosa)",
-                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
+                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -2578,7 +2578,7 @@
                 "kRuAJlNi891asvJ4": {
                     "id": "kRuAJlNi891asvJ4",
                     "label": "Straszny wygląd (Cień)",
-                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
+                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -2603,7 +2603,7 @@
                 "h0eBJ7aybKZoO6wd": {
                     "id": "h0eBJ7aybKZoO6wd",
                     "label": "Straszny wygląd",
-                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
+                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -2718,7 +2718,7 @@
                 "eAPUB6aO9oHrZXf0": {
                     "id": "eAPUB6aO9oHrZXf0",
                     "label": "Przerażający wygląd (Zwierzęta)",
-                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
+                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -2808,7 +2808,7 @@
                 "LBVsdeQ9YT4jcFFF": {
                     "id": "LBVsdeQ9YT4jcFFF",
                     "label": "Terrifying",
-                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
+                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -2904,7 +2904,7 @@
                 "P9etlFW2PaP0Wsq5": {
                     "id": "P9etlFW2PaP0Wsq5",
                     "label": "Transmutacja Chamonu",
-                    "script": "let applyTB = (args.damageType == game.wfrp4e.config.DAMAGE_TYPE.IGNORE_AP || args.damageType == game.wfrp4e.config.DAMAGE_TYPE.NORMAL)\n\n\nif (applyTB)\n{\n   let TB = args.actor.characteristics.t.bonus\n\n   args.totalWoundLoss += TB\n   let apIndex = args.messageElements.findIndex(i => i.includes(game.i18n.localize(\"TB\")))\n   args.messageElements[apIndex] = \"0/\" + TB + \" \" + game.i18n.localize(\"TB\")\n}\n\nargs.actor.addCondition(\"blinded\")\nargs.actor.addCondition(\"deafened\")\nargs.actor.addCondition(\"stunned\")"
+                    "script": "let applyTB = (args.damageType == game.wfrp4e.config.DAMAGE_TYPE.IGNORE_AP || args.damageType == game.wfrp4e.config.DAMAGE_TYPE.NORMAL)\nif (applyTB) {\n   let TB = args.actor.characteristics.t.bonus\n   args.totalWoundLoss += TB\n   let apIndex = args.messageElements.findIndex(i => i.includes(game.i18n.localize(\"TB\")))\n   args.messageElements[apIndex] = \"0/\" + TB + \" \" + game.i18n.localize(\"TB\")\n}\n\nargs.actor.addCondition(\"blinded\")\nargs.actor.addCondition(\"deafened\")\nargs.actor.addCondition(\"stunned\")"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -3015,7 +3015,7 @@
                 "7P2lVRPgSbVeIkmo": {
                     "id": "7P2lVRPgSbVeIkmo",
                     "label": "Straszny wygląd (Demonologia)",
-                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
+                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -3049,7 +3049,7 @@
                 "0TUeQSSRSy8U34xP": {
                     "id": "0TUeQSSRSy8U34xP",
                     "label": "Straszny wygląd (Światło)",
-                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
+                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -3090,7 +3090,7 @@
                 "KnZV2v47uujjJq0y": {
                     "id": "KnZV2v47uujjJq0y",
                     "label": "Straszny wygląd (Życie)",
-                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
+                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -3151,7 +3151,7 @@
                 "ijAyrzxWflh17gvL": {
                     "id": "ijAyrzxWflh17gvL",
                     "label": "Żrąca krew",
-                    "script": "let content = `<b>${this.effect.label}</b>: All targets engaged with <b>${this.actor.prototypeToken.name}</b> take [[/r 1d10]] Damage, modified by TB and AP.`\n\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
+                    "script": "let content = `<b>${this.effect.label}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -3234,7 +3234,7 @@
                 "BYZhExaWoV0giDVw": {
                     "id": "BYZhExaWoV0giDVw",
                     "label": "Dusiciel",
-                    "script": "await args.actor.addCondition(\"fatigued\")"
+                    "script": "args.actor.addCondition(\"fatigued\")"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -3259,7 +3259,7 @@
                 "L20zbzBpxRd57Cdz": {
                     "id": "L20zbzBpxRd57Cdz",
                     "label": "Żrąca krew (Ogień)",
-                    "script": "let content = `<b>${this.effect.label}</b>: All targets engaged with <b>${this.actor.prototypeToken.name}</b> take [[/r 1d10]] Damage, modified by TB and AP.`\n\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
+                    "script": "let content = `<b>${this.effect.label}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -3309,7 +3309,7 @@
                 "Yd3pH9h1bmXCe2He": {
                     "id": "Yd3pH9h1bmXCe2He",
                     "label": "Oczyszczający płomień",
-                    "script": "await args.actor.addCondition(\"ablaze\", {{SL}})"
+                    "script": "args.actor.addCondition(\"ablaze\", {{SL}})"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -3398,7 +3398,7 @@
                 "ZyISwBsXNEzt53l6": {
                     "id": "ZyISwBsXNEzt53l6",
                     "label": "Żrąca krew (Śmierć)",
-                    "script": "let content = `<b>${this.effect.label}</b>: All targets engaged with <b>${this.actor.prototypeToken.name}</b> take [[/r 1d10]] Damage, modified by TB and AP.`\n\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
+                    "script": "let content = `<b>${this.effect.label}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -3414,7 +3414,7 @@
                 "8pi3tkafhSjeT3tQ": {
                     "id": "8pi3tkafhSjeT3tQ",
                     "label": "Pochwycenie (Światło)",
-                    "script": "await args.actor.addCondition(\"entangled\", {{result.overcast.other.current}})"
+                    "script": "args.actor.addCondition(\"entangled\", {{result.overcast.other.current}})"
                 }
             },
             "duration": "Specjalny",
@@ -3439,7 +3439,7 @@
                 "kWZqFVvBilk0ychs": {
                     "id": "kWZqFVvBilk0ychs",
                     "label": "Przerażający wygląd (Życie)",
-                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
+                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -3518,7 +3518,7 @@
                 "V1FjDZ9SQQbVNGFn": {
                     "id": "V1FjDZ9SQQbVNGFn",
                     "label": "Przerażający wygląd (Nekromancja)",
-                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
+                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -3567,8 +3567,8 @@
             "effects": {
                 "rkdNgKmock9JyCuI": {
                     "id": "rkdNgKmock9JyCuI",
-                    "label": "Entangle",
-                    "script": "await args.actor.addCondition(\"entangled\", {{result.overcast.other.current}})"
+                    "label": "Pochwycenie",
+                    "script": "args.actor.addCondition(\"entangled\", {{result.overcast.other.current}})"
                 }
             },
             "duration": "Specjalny",
@@ -3633,7 +3633,7 @@
                 "KlqYluyUB2nxWM4W": {
                     "id": "KlqYluyUB2nxWM4W",
                     "label": "Kosa żniwiarza",
-                    "script": "    let scythe = (await fromUuid(\"Compendium.wfrp4e-core.trappings.CXg7XOFJwu4LZ9LM\")).toObject();\n    scythe.name = \"Scythe of Shyish\";\n    scythe.system.damage.value = \"WPB + 3\"\n    scythe.system.equipped = true;\n    scythe.img = this.effect.icon\n    this.actor.createEmbeddedDocuments(\"Item\", [scythe])"
+                    "script": "    let scythe = (await fromUuid(\"Compendium.wfrp4e-core.trappings.CXg7XOFJwu4LZ9LM\")).toObject();\n    scythe.name = \"Kosa żniwiarza\";\n    scythe.system.damage.value = \"Bonus SW + 3\"\n    scythe.system.equipped = true;\n    scythe.img = this.effect.icon\n    this.actor.createEmbeddedDocuments(\"Item\", [scythe])"
                 }
             }
         },
@@ -3655,7 +3655,7 @@
                 "oIkRPQkyEQkUxqWV": {
                     "id": "oIkRPQkyEQkUxqWV",
                     "label": "Panaceum",
-                    "script": "let caster = await fromUuid(this.effect.origin);\nif (caster) {\n   let healed = caster.characteristics.wp.bonus;\n   let wounds = duplicate(args.actor.status.wounds);\n   wounds.value += healed;    \n   if (wounds.value > wounds.max) {\n      wounds.value = wounds.max;\n   }\n   args.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create({content: `${this.actor.prototypeToken.name} regains ${healed} Wounds`, speaker : {alias : this.effect.label}})\n}"
+                    "script": "fromUuid(this.effect.origin).then(caster => {\n   if (caster)\n   {\n       let healed= caster.characteristics.wp.bonus\n       let wounds = duplicate(args.actor.status.wounds)\n       wounds.value+=healed\n       \n       if (wounds.value > wounds.max)\n          wounds.value = wounds.max\n       \n       args.actor.update({\"system.status.wounds\" : wounds})\n       ChatMessage.create({content: `${this.actor.prototypeToken.name} odzyskuje Punkty Żywotności: ${healed}`, speaker : {alias : this.effect.label}})\n   }\n})"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -3708,7 +3708,7 @@
                 "UCY6gXI2WzgjrDhR": {
                     "id": "UCY6gXI2WzgjrDhR",
                     "label": "Szpony furii",
-                    "script": "    let amberTalons = foundry.utils.deepClone(game.wfrp4e.config.systemItems.unarmed);\n    amberTalons.name = \"Amber Talons\";\n    amberTalons.system.damage.value = \"SB + WPB\"\n    amberTalons.system.equipped = true;\n    amberTalons.effects.push({\n        label : \"Amber Talons\",\n        transfer: false,\n        icon : \"modules/wfrp4e-core/icons/spells/amber-talons.png\" ,\n        flags : {\n          wfrp4e : {\n            effectApplication: \"damage\",\n            effectTrigger : \"applyDamage\",\n            hide : false,\n            preventDuplicateEffects: false,\n            script : \"if (args.totalWoundLoss >= 1)\\n{ \\n    args.actor.addCondition(\\\"bleeding\\\")\\n}\"\n          }\n        }\n      })\n    this.actor.createEmbeddedDocuments(\"Item\", [amberTalons])"
+                    "script": "    let amberTalons = foundry.utils.deepClone(game.wfrp4e.config.systemItems.unarmed);\n    amberTalons.name = \"Szpony furii\";\n    amberTalons.system.damage.value = \"SB + WPB\"\n    amberTalons.system.equipped = true;\n    amberTalons.effects.push({\n        label : \"Szpony furii\",\n        transfer: false,\n        icon : \"modules/wfrp4e-core/icons/spells/amber-talons.png\" ,\n        flags : {\n          wfrp4e : {\n            effectApplication: \"damage\",\n            effectTrigger : \"applyDamage\",\n            hide : false,\n            preventDuplicateEffects: false,\n            script : \"if (args.totalWoundLoss >= 1)\\n{ \\n    args.actor.addCondition(\\\"bleeding\\\")\\n}\"\n          }\n        }\n      })\n    this.actor.createEmbeddedDocuments(\"Item\", [amberTalons])"
                 }
             }
         },
@@ -3815,7 +3815,7 @@
             "range": "Siła Woli metrów",
             "effects": {
                 "PN345hPPQdbkVjii": {
-                    "script": "await args.actor.addCondition(\"blinded\")\nawait args.actor.addCondition(\"deafened\")\nargs.actor.addCondition(\"fatigued\")",
+                    "script": "await args.actor.addCondition(\"blinded\");\nawait args.actor.addCondition(\"deafened\");\nawait args.actor.addCondition(\"fatigued\");",
                     "id": "PN345hPPQdbkVjii",
                     "label": "Strefa zamętu"
                 }
@@ -3839,7 +3839,7 @@
                 "6q6juCHKRB8tK40c": {
                     "id": "6q6juCHKRB8tK40c",
                     "label": "Drganie",
-                    "script": "args.actor.setupCharacteristic(\"dex\", {context : {failure : \"Drops the item\"}}).then(async test => {\n      await test.roll();\n});"
+                    "script": "args.actor.setupCharacteristic(\"dex\", {context : {failure : \"Upuszczenie Przedmiotu\"}}).then(async test => {\n      await test.roll();\n});"
                 }
             },
             "duration": "Natychmiast",
@@ -3897,8 +3897,8 @@
             "effects": {
                 "h0eBJ7aybKZoO6wd": {
                     "id": "h0eBJ7aybKZoO6wd",
-                    "label": "Fearsome",
-                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
+                    "label": "Straszny Wygląd",
+                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -3923,7 +3923,7 @@
                 "5OfdCRheCpwJsYh2": {
                     "id": "5OfdCRheCpwJsYh2",
                     "label": "Trzecie proroctwo Amul",
-                    "script": "let current = this.actor.status.fate.value;\nthis.actor.update({\"system.status.fate.value\" : current + 1});\nChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b> fate points increased from ${current} to ${current + 1}`, speaker : {alias : this.effect.label}})"
+                    "script": "let current = this.actor.status.fate.value;\nthis.actor.update({\"system.status.fate.value\" : current + 1});\nChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b>: zmiana liczby Punktów Przeznaczenia z ${current} na ${current + 1}`, speaker : {alias : this.effect.label}})"
                 }
             },
             "duration": "Bonus I Rund",
@@ -4016,7 +4016,7 @@
             "name": "Lśniąca szata",
             "description": "<p>Dzikie podmuchy <em>Chamonu</em> wirują dookoła ciebie, odbijając ciosy i przechwytując pociski oraz magiczne ataki. Zyskujesz Cechę Stworzenia <em>Ochrona (9+)</em> przeciwko wszystkim atakom i zaklęciom, których jesteś celem. Każdy skutecznie odparty atak zwiększa skuteczność <em>Ochrony</em> o 1 poziom, maksymalnie do <em>Ochrona (3+)</em>.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.v1Qrow72mtUtgkFC",
-            "duration": "Toughness Bonus Rund",
+            "duration": "Bonus Wt Rund",
             "target": "Ty",
             "range": "Ty"
         },
@@ -4038,7 +4038,7 @@
                 "oyPvSJ706ELzF7Qb": {
                     "id": "oyPvSJ706ELzF7Qb",
                     "label": "Pieszczota Laniph",
-                    "script": "let applyAP = (args.damageType == game.wfrp4e.config.DAMAGE_TYPE.IGNORE_TB || args.damageType == game.wfrp4e.config.DAMAGE_TYPE.NORMAL);\nlet applyTB = (args.damageType == game.wfrp4e.config.DAMAGE_TYPE.IGNORE_AP || args.damageType == game.wfrp4e.config.DAMAGE_TYPE.NORMAL);\n\nif (applyAP) {\n   let AP = args.AP;\n   args.totalWoundLoss += AP.used;\n   let apIndex = args.messageElements.findIndex(i => i.includes(game.i18n.localize(\"AP\")));\n   args.messageElements[apIndex] = \"0/\" + AP.value + \" \" + game.i18n.localize(\"AP\");\n}\n\nif (applyTB) {\n   let TB = args.actor.characteristics.t.bonus;\n   args.totalWoundLoss += TB;\n   let apIndex = args.messageElements.findIndex(i => i.includes(game.i18n.localize(\"TB\")));\n   args.messageElements[apIndex] = \"0/\" + TB + \" \" + game.i18n.localize(\"TB\");\n}\nlet woundsGained = Math.min(args.totalWoundLoss, args.actor.status.wounds.value);\nwoundsGained = Math.floor(woundsGained / 2);\nlet attackerWounds = duplicate(args.attacker.status.wounds);\nattackerWounds.value += woundsGained;\nif (attackerWounds.value >= attackerWounds.max) {\n   attackerWounds.value = attackerWounds.max;\n}\nargs.attacker.update({ \"system.status.wounds\": attackerWounds });\nChatMessage.create({ content: `<b>${args.attacker.prototypeToken.name}</b> gains ${woundsGained} Wounds` });"
+                    "script": "let applyAP = (args.damageType == game.wfrp4e.config.DAMAGE_TYPE.IGNORE_TB || args.damageType == game.wfrp4e.config.DAMAGE_TYPE.NORMAL);\nlet applyTB = (args.damageType == game.wfrp4e.config.DAMAGE_TYPE.IGNORE_AP || args.damageType == game.wfrp4e.config.DAMAGE_TYPE.NORMAL);\n\nif (applyAP) {\n   let AP = args.AP;\n   args.totalWoundLoss += AP.used;\n   let apIndex = args.messageElements.findIndex(i => i.includes(game.i18n.localize(\"AP\")));\n   args.messageElements[apIndex] = \"0/\" + AP.value + \" \" + game.i18n.localize(\"AP\");\n}\n\nif (applyTB) {\n   let TB = args.actor.characteristics.t.bonus;\n   args.totalWoundLoss += TB;\n   let apIndex = args.messageElements.findIndex(i => i.includes(game.i18n.localize(\"TB\")));\n   args.messageElements[apIndex] = \"0/\" + TB + \" \" + game.i18n.localize(\"TB\");\n}\nlet woundsGained = Math.min(args.totalWoundLoss, args.actor.status.wounds.value);\nwoundsGained = Math.floor(woundsGained / 2);\nlet attackerWounds = duplicate(args.attacker.status.wounds);\nattackerWounds.value += woundsGained;\nif (attackerWounds.value >= attackerWounds.max) {\n   attackerWounds.value = attackerWounds.max;\n}\nargs.attacker.update({ \"system.status.wounds\": attackerWounds });\nChatMessage.create({ content: `<b>${args.attacker.prototypeToken.name}</b> otrzymuje obrażenia: ${woundsGained}` });"
                 }
             },
             "duration": "Natychmiast",
@@ -4062,8 +4062,8 @@
             "effects": {
                 "ijAyrzxWflh17gvL": {
                     "id": "ijAyrzxWflh17gvL",
-                    "label": "Corrosive Blood",
-                    "script": "let content = `<b>${this.effect.label}</b>: All targets engaged with <b>${this.actor.prototypeToken.name}</b> take [[/r 1d10]] Damage, modified by TB and AP.`\n\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
+                    "label": "Żrąca Krew",
+                    "script": "let content = `<b>${this.effect.label}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -4100,7 +4100,7 @@
             "name": "Niszczyciel strzał (Guślarstwo)",
             "description": "<p>Wszelkie pociski z materii organicznej, jak np. strzały czy bełty z drewnianym promieniem, są automatycznie niszczone, jeśli wlecą w Zasięg zaklęcia - nie zadają żadnych obrażeń. Zaklęcie nie wpływa na pociski nieorganiczne, jak np. noże czy kule pistoletowe.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.vM8x6slw8TfuAJ9B",
-            "duration": "Bonus SW Rund+",
+            "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
             "range": "Ty"
         },
@@ -4182,8 +4182,8 @@
             "effects": {
                 "rkdNgKmock9JyCuI": {
                     "id": "rkdNgKmock9JyCuI",
-                    "label": "Entangle",
-                    "script": "await args.actor.addCondition(\"entangled\", {{result.overcast.other.current}})"
+                    "label": "Pochwycenie",
+                    "script": "args.actor.addCondition(\"entangled\", {{result.overcast.other.current}});"
                 }
             },
             "duration": "Specjalny",
@@ -4208,7 +4208,7 @@
                 "rkdNgKmock9JyCuI": {
                     "id": "rkdNgKmock9JyCuI",
                     "label": "Pochwycenie",
-                    "script": "await args.actor.addCondition(\"entangled\", {{result.overcast.other.current}})"
+                    "script": "args.actor.addCondition(\"entangled\", {{result.overcast.other.current}})"
                 }
             },
             "duration": "Specjalny",
@@ -4229,7 +4229,7 @@
             "name": "Niszczyciel strzał (Demonologia)",
             "description": "<p>Wszelkie pociski z materii organicznej, jak np. strzały czy bełty z drewnianym promieniem, są automatycznie niszczone, jeśli wlecą w Zasięg zaklęcia - nie zadają żadnych obrażeń. Zaklęcie nie wpływa na pociski nieorganiczne, jak np. noże czy kule pistoletowe.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.wi9BBLoL1TIf5aUf",
-            "duration": "Bonus SW Rund+",
+            "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
             "range": "Ty"
         },
@@ -4310,7 +4310,7 @@
                 "NKJv25t13M4KsYdE": {
                     "id": "NKJv25t13M4KsYdE",
                     "label": "Niebiańskie Obrażenia",
-                    "script": "if ((args.attackerTest.weapon && args.attackerTest.weapon.attackType == \"melee\") || (args.attackerTest.trait && !args.attackerTest.trait.name.includes(game.i18n.localize(\"NAME.TraitRanged\")))) {\n    let content = `<b>${args.attackerTest.actor.prototypeToken.name}</b> takes ${this.actor.characteristics.wp.bonus} Damage from Cerulean Shield if they used a metal weapon.`\n    args.opposedTest.result.other.push(content);\n}"
+                    "script": "if ((args.attackerTest.weapon && args.attackerTest.weapon.attackType == \"melee\") || (args.attackerTest.trait && !args.attackerTest.trait.name.includes(game.i18n.localize(\"NAME.TraitRanged\")))) {\n    let content = `<b>${args.attackerTest.actor.prototypeToken.name}</b> otrzymuje ${this.actor.characteristics.wp.bonus} Obrażeń od Niebiańskiej Tarczy jeśli używają metalowej broni.`\n    args.opposedTest.result.other.push(content);\n}"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -4353,7 +4353,7 @@
                 "66ekfI3zFgYh6OkE": {
                     "id": "66ekfI3zFgYh6OkE",
                     "label": "Straszny wygląd (Zwierzęta)",
-                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
+                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -4419,7 +4419,7 @@
                 "2ZR0nyijw6fsufWi": {
                     "id": "2ZR0nyijw6fsufWi",
                     "label": "Drugie proroctwo Amul",
-                    "script": "let fortunePoints = {{overcast.usage.other.current}}\nlet current = this.actor.status.fortune.value\n\nthis.actor.update({\"system.status.fortune.value\" : fortunePoints + current})\n\nChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b> fortune points increased from ${current} to ${fortunePoints + current}`, speaker : {alias : this.effect.label}})"
+                    "script": "let fortunePoints = {{overcast.usage.other.current}}\nlet current = this.actor.status.fortune.value\n\nthis.actor.update({\"system.status.fortune.value\" : fortunePoints + current})\n\nChatMessage.create({content : `Zwiększono Punkty Szczęścia <b>${this.actor.prototypeToken.name}</b> z ${current} na ${fortunePoints + current}`, speaker : {alias : this.effect.label}})"
                 }
             },
             "duration": "Bonus I Rund",
@@ -4521,7 +4521,7 @@
                 "tlF4LFjOqoCv0Kpj": {
                     "id": "tlF4LFjOqoCv0Kpj",
                     "label": "Żrąca krew (Nekromancja)",
-                    "script": "let content = `<b>${this.effect.label}</b>: All targets engaged with <b>${this.actor.prototypeToken.name}</b> take [[/r 1d10]] Damage, modified by TB and AP.`\n\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
+                    "script": "let content = `<b>${this.effect.label}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -4537,7 +4537,7 @@
                 "WXWnl2mm3jPCTekB": {
                     "id": "WXWnl2mm3jPCTekB",
                     "label": "Żrąca krew (Cień)",
-                    "script": "let content = `<b>${this.effect.label}</b>: All targets engaged with <b>${this.actor.prototypeToken.name}</b> take [[/r 1d10]] Damage, modified by TB and AP.`\n\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
+                    "script": "let content = `<b>${this.effect.label}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -4574,7 +4574,7 @@
             "name": "Niszczyciel strzał (Czarownictwo)",
             "description": "<p>Wszelkie pociski z materii organicznej, jak np. strzały czy bełty z drewnianym promieniem, są automatycznie niszczone, jeśli wlecą w Zasięg zaklęcia - nie zadają żadnych obrażeń. Zaklęcie nie wpływa na pociski nieorganiczne, jak np. noże czy kule pistoletowe.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.YQtgIycHCNmyAl9N",
-            "duration": "Bonus SW Rund+",
+            "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
             "range": "Ty"
         },
@@ -4631,8 +4631,8 @@
             "effects": {
                 "h0eBJ7aybKZoO6wd": {
                     "id": "h0eBJ7aybKZoO6wd",
-                    "label": "Fearsome",
-                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
+                    "label": "Straszny Wygląd",
+                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -4684,7 +4684,7 @@
                 "sKt0LZW6GhLfOIG0": {
                     "id": "sKt0LZW6GhLfOIG0",
                     "label": "Pochwycenie (Zwierzęta)",
-                    "script": "await args.actor.addCondition(\"entangled\", {{result.overcast.other.current}})"
+                    "script": "args.actor.addCondition(\"entangled\", {{result.overcast.other.current}});"
                 }
             },
             "duration": "Specjalny",
@@ -4708,8 +4708,8 @@
             "effects": {
                 "LBVsdeQ9YT4jcFFF": {
                     "id": "LBVsdeQ9YT4jcFFF",
-                    "label": "Terrifying",
-                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
+                    "label": "Przerażający Wygląd",
+                    "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },
             "duration": "Bonus SW Rund",
