@@ -902,7 +902,7 @@
             "name": "Tabela Większych Manifestacji (Moo)",
             "description": "",
             "results": {
-                "1-5": "<p><strong>Ghostly Voices</strong>: Daemonic darkly seductive voices whisper within Willpower yards; everyone who hears them must pass a <strong>Challenging (+0) Cool Test</strong> or gain 1 Corruption point.</p>",
+                "1-5": "<p><strong>Widmowe głosy</strong>: Demoniczne, mroczne, uwodzicielskie głosy szepczą w promieniu Siła Woli metrów; każdy, kto je usłyszy, musi zdać <strong>Wymagający (+0) test Opanowania</strong> lub otrzymuje 1 punkt Zepsucia.</p>",
                 "6-10": "<p><strong>Mindnumb</strong>: Uncontrolled magic partially burns out your casting ability. Your skill advances in Language (Magick) and Channeling are halved for the next 24 hours.</p>",
                 "11-15": "<p><strong>Aethyric Shock</strong>: You suffer [[1d10]] wounds ignoring Toughness Bonus or Armour: Every nail on your body blackens and wrenches free, the energies of your Wind scour you, your blood momentarily boils inside your body, etc. Pass an <strong>Average(+20) Endurance Test</strong> or gain a @Condition[Stunned] condition.</p>",
                 "16-20": "<p><strong>Following Winds</strong>: Your Wind follows you for the next [[1d10]] hours. This is noticeable and difficult to explain to any suspicious bystanders. Shyish might cause plant life nearby you to wither and die, Aqshy the eruption of small fires, etc.</p>",
