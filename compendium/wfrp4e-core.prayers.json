@@ -448,7 +448,7 @@
         },
         "Dooming": {
             "id": "itARFNqBAbwNDAAy",
-            "name": "Wizja zagłady",
+            "name": "Wróżba Losu",
             "description": "<p>Spozierasz głęboko w oczy swojego celu, szepcząc treny do Morra, który nagradza cię wizją losu celu, przebłysku czekającej go przyszłości. Zazwyczaj jest to wizja związana ze śmiercią. Cud może zostać wykorzystany jedynie raz w stosunku do tej samej osoby, po czym Talent @UUID[Compendium.wfrp4e-core.talents.fn8QNQQ1S2rh12Us]{Wróżba Losu} można wykupić za PD, tak jakby był normalną częścią Profesji.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.itARFNqBAbwNDAAy",
             "duration": "Natychmiast",

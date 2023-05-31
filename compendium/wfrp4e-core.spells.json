@@ -576,7 +576,7 @@
         "Teleport (Shadow)": {
             "id": "6GaqchV2dL60Xfsm",
             "name": "Przeskok (Cień)",
-            "description": "<p>Wykorzystując magię, przemieszczasz się natychmiast na odległość wynoszącą maksymalnie tyle, ile wynosi twój Bonus z Siły Woli. Dzięki temu możesz nie przejmować się jarami, dołami, pułapkami i innymi niebezpieczeństwami, ignorując przeszkody. Za każde +2 PS możesz zwiększyć dystans takiej teleportacji o tyle metrów, ile wynosi twój Bonus z Siły Woli.</p>",
+            "description": "<p>Wykorzystując magię, przemieszczasz się natychmiast na odległość wynoszącą maksymalnie tyle, ile wynosi twój Bonus z Siły Woli. Dzięki temu możesz nie przejmować się jarami, dołami, pułapkami i innymi niebezpieczeństwami, ignorując przeszkody. Za każde +2 PS możesz zwiększyć dystans takiej teleportacji o tyle metrów, ile wynosi twój Bonus z Siły Woli.</p>\n\n<p>Zaklęcia z Tradycji Cieni są dyskretne i podstępne do tego stopnia, że w przypadku tej Tradycji <i>Lingua Praestantia</i> może być mówiona szeptem. Wszelkie ochronne zaklęcia oplatają cel kłębami cieni i dymu, sprawiając, że wydaje się niewyraźny i rozmyty. Ponadto wszystkie zaklęcia z Tradycji Cieni zadają Obrażenia, które ignorują wszelkie niemagiczne Punkty Pancerza.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.6GaqchV2dL60Xfsm",
             "duration": "Natychmiast",
             "target": "Ty",
@@ -585,7 +585,7 @@
         "Dome (Witchcraft)": {
             "id": "6stEgyIRF0XcKPhO",
             "name": "Kopuła (Czarownictwo)",
-            "description": "<p>Tworzysz nad sobą kopułę z magicznej energii, która blokuje ataki. Każdy w Zasięgu zyskuje Cechę Stworzenia <em>Ochrona (6+)</em> przeciwko magicznym lub dystansowym wyprowadzanym zza kopuły. Wszystkie ataki wewnątrz kopuły wykonywane są normalnie.</p>\n<p>&nbsp;</p>\n<blockquote>\n<p>Stworzenie jest magiczne, nosi specjalny talizman albo ma szczęście - niektóre ciosy po prostu go nie trafiają. Rzuć 1k10 po każdym otrzymanym ciosie. Jeśli stworzenie wyrzuci tyle, ile wynosi podana wartość, lub więcej, cios zostaje zignorowany, nawet jeśli jest to Trafienie Krytyczne.&nbsp;</p>\n</blockquote>\n<p>&nbsp;</p>",
+            "description": "<p>Tworzysz nad sobą kopułę z magicznej energii, która blokuje ataki. Każdy w Zasięgu zyskuje Cechę Stworzenia @UUID[Compendium.wfrp4e-core.traits.Bvd2aZ0gQUXHfCTh]{Ochrona (6+)}  przeciwko magicznym lub dystansowym wyprowadzanym zza kopuły. Wszystkie ataki wewnątrz kopuły wykonywane są normalnie.</p>\n\n<p>Zaklęcia z Tradycji Czarownictwa korzystają z dowolnego dostępnego Wiatru Magii, nie zważając na niebezpieczeństwa płynące z mieszania Wiatrów. Za każdym razem, gdy postać korzystająca z Czarownictwa wywołuje Manifestację, otrzymuje też 1 Punkt Zepsucia. Każde zaklęcie tej Tradycji może zadać dodatkowo każdemu celowi 1 poziom Stanu @Condition[Krwawienie]. Poza tym Testy Rzucania zaklęć i Splatania Magii z tej Tradycji skutkują automatyczną Manifestacją, chyba że do rzucenia zaklęcia używane są składniki. Za to składnik nie chroni przed późniejszymi Manifestacjami, jeśli takie się pojawią. Na szczęście składniki Tradycji Czarownictwa są tanie i powszechnie dostępne. Zazwyczaj są to części ciał małych zwierząt. Składniki zaklęć kosztują tyle brązowych pensów (a nie srebrnych szylingów), ile wynosi PZ. Ewentualnie czarownica może poszukać składników na własną rękę, używając Umiejętności Sztuka Przetrwania. Udany Test skutkuje pozyskaniem 1 + PS składników, jak opisano w ramce Zdobywanie Pożywienia i Ziół na stronie 129.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.6stEgyIRF0XcKPhO",
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
@@ -594,7 +594,7 @@
         "Aethyric Armour (Beasts)": {
             "id": "6XVrv2zgdL3CSJHX",
             "name": "Pancerz Eteru (Zwierzęta)",
-            "description": "<p>Zyskujesz 1 Punkt Pancerza na wszystkich Miejscach Trafień, oplatając się ochronnym pasem magii.</p>",
+            "description": "<p>Zyskujesz 1 Punkt Pancerza na wszystkich Miejscach Trafień, oplatając się ochronnym pasem magii.</p>\n\n<p>Wiatr Bursztynowy, <i>Ghur</i>, niesie ze sobą dreszcz, pierwotną wściekłość, która wytrąca z równowagi zarówno zwierzęta, jak i stworzenia myślące. Po każdym udanym rzuceniu zaklęcia z Tradycji Zwierząt możesz dodatkowo zyskać Cechę Stworzenia @UUID[Compendium.wfrp4e-core.traits.pTorrE0l3VybAbtn]{Strach (1)} na [[/r 1d10]] Rund.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.6XVrv2zgdL3CSJHX",
             "effects": {
                 "JXm1XYeumrZbROEj": {
@@ -610,7 +610,7 @@
         "Breath (Witchcraft)": {
             "id": "75BkqdYuBwnlJl5D",
             "name": "Zionięcie (Czarownictwo)",
-            "description": "<p>Natychmiast wykonujesz Zionięcie, tak jak opisano przy aktywacji Cechy Stworzenia Zionięcie, za 2 Przewagi. Zionięcie jest magicznym pociskiem o współczynniku Obrażeń +Bonus z Wytrzymałości. MG zdecyduje, jaki rodzaj Zionięcia najbardziej pasuje do twojej Tradycji.</p>\n<p>&nbsp;</p>\n<blockquote>\n<p>Zionięcie +Obrażenia (typ) Stworzenie posługuje się zionięciem jako potężną bronią. W swojej Turze, kosztem 2 Przewag, może aktywować Zionięcie jako Darmowy Atak. Wybierz 1 cel, który stworzenie widzi w promieniu 20 + Bonus z Wytrzymałości metrów. Trafione zostają wszystkie postacie wokół tego celu w promieniu tylu metrów, ile wynosi Bonus z Siły, podobnie jak wszystkie postacie znajdujące się między stworzeniem a celem. Przeprowadź <strong>Test Przeciwstawny Umiejętności Strzeleckie/Unik</strong> przeciwko wszystkim objętym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Każdy cel, który przegrał Test, otrzymuje trafienie zadające wskazaną wartość Obrażeń. Co więcej, jeśli przy Cesze Stworzenia wymieniony jest jeden z opisanych niżej typów zionięcia, zastosuj wskazane zasady.</p>\n<p>• Zimno: Cele dostają jeden Stan Oszołomiony za każde pełne 5 odniesionych Ran (minimalnie 1).</p>\n<p>• Kwas: Noszony przez objęte efektem postaci pancerze oraz wszelka broń dostają 1 punkt Uszkodzeń.</p>\n<p>• Ogień: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Podpalenie.</p>\n<p>• Elektryczność: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Oszołomienie.</p>\n<p>• Trucizna: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Zatrucie.</p>\n<p>• Dym: Obszar wypełnia się dymem, który zasłania pole widzenia na tyle Rund, ile wynosi Bonus z Wytrzymałości.</p>\n<p>Stworzenie jest odporne na własne Zionięcie. Ten atak jest Magiczny.</p>\n</blockquote>",
+            "description": "<p>Natychmiast wykonujesz Zionięcie, tak jak opisano przy aktywacji Cechy Stworzenia @UUID[Compendium.wfrp4e-core.traits.uqGxFOEqeurwkAO3]{Zionięcie}, za 2 Przewagi. Zionięcie jest <i>magicznym pociskiem</i> o współczynniku Obrażeń +Bonus z Wytrzymałości. MG zdecyduje, jaki rodzaj Zionięcia najbardziej pasuje do twojej Tradycji.</p>\n\n<p>Zaklęcia z Tradycji Czarownictwa korzystają z dowolnego dostępnego Wiatru Magii, nie zważając na niebezpieczeństwa płynące z mieszania Wiatrów. Za każdym razem, gdy postać korzystająca z Czarownictwa wywołuje Manifestację, otrzymuje też 1 Punkt Zepsucia. Każde zaklęcie tej Tradycji może zadać dodatkowo każdemu celowi 1 poziom Stanu @Condition[Krwawienie]. Poza tym Testy Rzucania zaklęć i Splatania Magii z tej Tradycji skutkują automatyczną Manifestacją, chyba że do rzucenia zaklęcia używane są składniki. Za to składnik nie chroni przed późniejszymi Manifestacjami, jeśli takie się pojawią. Na szczęście składniki Tradycji Czarownictwa są tanie i powszechnie dostępne. Zazwyczaj są to części ciał małych zwierząt. Składniki zaklęć kosztują tyle brązowych pensów (a nie srebrnych szylingów), ile wynosi PZ. Ewentualnie czarownica może poszukać składników na własną rękę, używając Umiejętności Sztuka Przetrwania. Udany Test skutkuje pozyskaniem 1 + PS składników, jak opisano w ramce Zdobywanie Pożywienia i Ziół na stronie 129.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.75BkqdYuBwnlJl5D",
             "duration": "Natychmiast",
             "target": "1",
@@ -619,7 +619,7 @@
         "Reanimate": {
             "id": "7BJDTRG65hwt1fUK",
             "name": "Ożywienie umarłych",
-            "description": "<p>Kierujesz cuchnące pasma gęstego <em>Dhar</em> przed siebie, wbijając je w ciała, ożywiając te, które niegdyś były martwe. Ożywiasz tyle martwych ciał (w postaci zombie) lub szkieletów w Zasięgu, ile wynosi twój Bonus z Siły Woli + PS. Rozpoczynają one Rundę w Stanie <em>Powalenie</em>. Przyzwani nieumarli będą całkowicie pod twoją kontrolą i wykonają proste rozkazy. Jeśli zostaniesz zabity lub otrzymasz Stan <em>Utrata Przytomności</em>, zaklęcie dobiegnie końca, a Ożywieńcy padną na ziemię. Za każde +2 PS w Teście Rzucenia Zaklęcia możesz przyzwać dodatkowe szkielety lub zombie w liczbie równej twojemu Bonusowi z Siły Woli + PS.</p>",
+            "description": "<p>Kierujesz cuchnące pasma gęstego <em>Dhar</em> przed siebie, wbijając je w ciała, ożywiając te, które niegdyś były martwe. Ożywiasz tyle martwych ciał (w postaci zombie) lub szkieletów w Zasięgu, ile wynosi twój Bonus z Siły Woli + PS. Rozpoczynają one Rundę w Stanie @Condition[Powalenie].</p><p>Przyzwani nieumarli będą całkowicie pod twoją kontrolą i wykonają proste rozkazy. Jeśli zostaniesz zabity lub otrzymasz Stan @Condition[Utrata Przytomności], zaklęcie dobiegnie końca, a Ożywieńcy padną na ziemię. Za każde +2 PS w Teście Rzucenia Zaklęcia możesz przyzwać dodatkowe szkielety lub zombie w liczbie równej twojemu Bonusowi z Siły Woli + PS.</p>\n\n<p>Nekromancja jest starożytną i krwawą dziedziną magii zajmującą się śmiercią i poszukiwaniem nieśmiertelności, co zazwyczaj wymaga babrania się w gnijących zwłokach. Biorąc pod uwagę, że jest to jedna z najbardziej nikczemnych i heretyckich Tradycji Magii, niewielu podchodzi do studiowania jej z lekceważeniem, ponieważ niedocenianie potworności związanych z umarłymi i nieumarłymi może się bardzo źle skończyć.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.7BJDTRG65hwt1fUK",
             "duration": "Do świtu",
             "target": "Bonus SW metrów",
@@ -628,7 +628,7 @@
         "Distracting (Daemonology)": {
             "id": "7HSRFiY46vA8M2zY",
             "name": "Dekoncentracja (Demonologia)",
-            "description": "<p>Otaczasz się wirującą i świszczącą mocą, która rozprasza wrogów. Podczas trwania zaklęcia zyskujesz Cechę Stworzenia <em>Dekoncentrujący</em>.</p>\n<p>&nbsp;</p>\n<blockquote>\n<p>Stworzenie rozprasza lub dezorientuje wrogów, być może wydzielając usypiający zapach lub powalający smród, a może ze względu na przerażająco dziwaczny wygląd. Wszystkie żywe cele w promieniu tylu metrów, ile wynosi jego Bonus z Wytrzymałości, dostają karę -20 do wszystkich Testów. Cel może dostać tę karę tylko raz - bez względu na to, jak wielu jest dekoncentrujących wrogów.</p>\n</blockquote>\n<p>&nbsp;</p>",
+            "description": "<p>Otaczasz się wirującą i świszczącą mocą, która rozprasza wrogów. Podczas trwania zaklęcia zyskujesz Cechę Stworzenia @UUID[Compendium.wfrp4e-core.traits.MVI0lXcg6vvtooAF]{Dekoncentrujący}.</p>\n\n<p>Zakazana Tradycja Demonologii skupia się wokół przyzywania, wiązania i kontrolowania demonów, zazwyczaj po to, by zwiększyć moc czarodzieja. Jest przerażająco niebezpieczna i zwykle wiedzie do upadku demonologa, ponieważ jego dusza jest wyniszczana przez Niszczycielskie Potęgi – w ten sposób rodzi się nowy Czarnoksiężnik Chaosu.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.7HSRFiY46vA8M2zY",
             "effects": {
                 "caxzQfTuX9n9oJFk": {
@@ -644,7 +644,7 @@
         "Mundane Aura (Fire)": {
             "id": "7pHcU30nMhgd0V5N",
             "name": "Aura codzienności (Ogień)",
-            "description": "<p>Wysysasz wszelkie Wiatry Magii ze swego ciała i swojego dobytku, usuwając wszelkie ślady magicznej aury. Przez okres trwania zaklęcia dla osób posiadających Talent Percepcja Magiczna lub podobny wydajesz się zwykłą osobą, nieposiadającą nadprzyrodzonych zdolności. Nie wytwarzasz wtedy żadnych eterycznych wibracji i twoja magiczna aura nie może zostać wykryta żadnymi sposobami. Podczas trwania tego zaklęcia nie możesz rzucać żadnych zaklęć. Aura codzienności rozprasza się natychmiast, gdy rozpoczniesz Test Splatania Magii.</p>",
+            "description": "<p>Wysysasz wszelkie Wiatry Magii ze swego ciała i swojego dobytku, usuwając wszelkie ślady magicznej aury. Przez okres trwania zaklęcia dla osób posiadających Talent <i>Percepcja Magiczna</i> lub podobny wydajesz się zwykłą osobą, nieposiadającą nadprzyrodzonych zdolności. Nie wytwarzasz wtedy żadnych eterycznych wibracji i twoja magiczna aura nie może zostać wykryta żadnymi sposobami. Podczas trwania tego zaklęcia nie możesz rzucać żadnych zaklęć. Aura codzienności rozprasza się natychmiast, gdy rozpoczniesz Test Splatania Magii.</p>\n\n<p>Tradycja Ognia i płomienny Wiatr <i>Aqshy</i> z całą pewnością nie należą do subtelnych. Zaklęcia tej Tradycji są przepełnione ferworem i objawiają się w spektakularny sposób, zazwyczaj jasnym płomieniem i piekącym skwarem. Możesz zadać +1 poziom @Condition[Podpalenie]{Podpalenia} każdemu celowi zaklęć Tradycji Ognia, jeśli nie ma on Talentu <i>Magia Tajemna (Ogień)</i>. Każdy poziom @Condition[Podpalenie]{Podpalenia} w zasięgu twojego Bonusu z Siły Woli metrów dodaje +10 do Testów Rzucania Zaklęć i Splatania Magii Wiatru Aqshy.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.7pHcU30nMhgd0V5N",
             "duration": "Siła Woli minut",
             "target": "Ty",
@@ -653,7 +653,7 @@
         "Corrosive Blood (Light)": {
             "id": "7QaIq838arGHgzKl",
             "name": "Żrąca krew (Światło)",
-            "description": "<p>Wypełniasz swoje ciało magią, a twoja krew nabiera niezwykłych właściwości. Zyskujesz Cechę Stworzenia Kwasowa Krew:&nbsp;</p>\n<p>&nbsp;</p>\n<blockquote>\n<p>Krew stworzenia jest żrąca. Za każdym razem, gdy zostanie ono ranione, tryska z niego krew i wszystkie związane z nim walką cele dostają 1k10 Ran. Są one normalnie obniżane przez Bonus z Wytrzymałości i Punkty Pancerza, ale wynoszą minimum 1.</p>\n</blockquote>",
+            "description": "<p>Wypełniasz swoje ciało magią, a twoja krew nabiera niezwykłych właściwości. Zyskujesz Cechę Stworzenia @UUID[Compendium.wfrp4e-core.traits.M5QSWOYt2Rbv2yxW]{Kwasowa Krew}</p>\n\n<p>Magia Tajemna Tradycji Światła emituje oślepiające promienie białego światła lub okrywa czarodzieja połyskliwymi falami promieniującej czystości. Możesz zadać +1 poziom @Condition[Oślepienie]{Oślepienia} wszystkim celom zaklęć Tradycji Światła, chyba że mają Talent <i>Magia Tajemna (Światło)</i>.</p>\n<p>Jeśli cel ma Cechę Stworzenia <i>Demoniczny</i> albo <i>Ożywieniec</i>, zaklęcia zadają dodatkowe Obrażenia równe Bonusowi z Inteligencji, które ignorują Bonus z Wytrzymałości oraz Punkty Pancerza.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.7QaIq838arGHgzKl",
             "effects": {
                 "GZYUi96n8vcnUb9G": {
@@ -669,7 +669,7 @@
         "Push (Daemonology)": {
             "id": "7wK4srcIgc8USRYt",
             "name": "Odepchnięcie (Demonologia)",
-            "description": "<p>Wszystkie żywe stworzenia w promieniu tylu metrów, ile wynosi twój Bonus z Siły Woli, zostają odepchnięte na taką właśnie odległość i zostają <em>Powalone</em>. Jeśli wpadną na ścianę lub inną dużą przeszkodę, zatrzymują się na niej, ale otrzymują tyle Obrażeń, ile metrów powinny jeszcze przebyć. Za każde +2 PS możesz odepchnąć przeciwników dalej - o tyle metrów, ile wynosi Bonus z Siły Woli.</p>",
+            "description": "<p>Wszystkie żywe stworzenia w promieniu tylu metrów, ile wynosi twój Bonus z Siły Woli, zostają odepchnięte na taką właśnie odległość i zostają @Condition[Powalenie]{Powalone}. Jeśli wpadną na ścianę lub inną dużą przeszkodę, zatrzymują się na niej, ale otrzymują tyle Obrażeń, ile metrów powinny jeszcze przebyć. Za każde +2 PS możesz odepchnąć przeciwników dalej - o tyle metrów, ile wynosi Bonus z Siły Woli.</p>\n\n<p>Zakazana Tradycja Demonologii skupia się wokół przyzywania, wiązania i kontrolowania demonów, zazwyczaj po to, by zwiększyć moc czarodzieja. Jest przerażająco niebezpieczna i zwykle wiedzie do upadku demonologa, ponieważ jego dusza jest wyniszczana przez Niszczycielskie Potęgi – w ten sposób rodzi się nowy Czarnoksiężnik Chaosu.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.7wK4srcIgc8USRYt",
             "duration": "Natychmiast",
             "target": "Ty",
@@ -678,7 +678,7 @@
         "Clarity of Thought": {
             "id": "82mmGLTAKQ4mrsBl",
             "name": "Jasność umysłu",
-            "description": "<p>Uspokajasz umysł celu, dzięki czemu może on myśleć bez przeszkód. Wszystkie modyfikatory ujemne wpływające na proces myślenia - wynikające ze Stanów, mutacji umysłu czy Psychologii albo dowolnych innych źródeł - na czas trwania zaklęcia nie są brane pod uwagę.</p>",
+            "description": "<p>Uspokajasz umysł celu, dzięki czemu może on myśleć bez przeszkód. Wszystkie modyfikatory ujemne wpływające na proces myślenia - wynikające ze Stanów, mutacji umysłu czy Psychologii albo dowolnych innych źródeł - na czas trwania zaklęcia nie są brane pod uwagę.</p>\n\n<p>Magia Tajemna Tradycji Światła emituje oślepiające promienie białego światła lub okrywa czarodzieja połyskliwymi falami promieniującej czystości. Możesz zadać +1 poziom @Condition[Oślepienie]{Oślepienia} wszystkim celom zaklęć Tradycji Światła, chyba że mają Talent <i>Magia Tajemna (Światło)</i>.</p>\n<p>Jeśli cel ma Cechę Stworzenia <i>Demoniczny</i> albo <i>Ożywieniec</i>, zaklęcia zadają dodatkowe Obrażenia równe Bonusowi z Inteligencji, które ignorują Bonus z Wytrzymałości oraz Punkty Pancerza.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.82mmGLTAKQ4mrsBl",
             "duration": "Inteligencja minut",
             "target": "1",
@@ -687,7 +687,7 @@
         "Aethyric Arms (Fire)": {
             "id": "89Xcjrqa44LEluU5",
             "name": "Magiczna broń (Ogień)",
-            "description": "<p>Możesz stworzyć broń białą, której Obrażenia równe będą +Bonus z Siły Woli. Broń ta może przybrać dowolną formę i używa się jej za pomocą dowolnej posiadanej Umiejętności Broń Biała. Uznaje się ją za Magiczną.</p>",
+            "description": "<p>Możesz stworzyć broń białą, której Obrażenia równe będą +Bonus z Siły Woli. Broń ta może przybrać dowolną formę i używa się jej za pomocą dowolnej posiadanej Umiejętności <i>Broń Biała</i>. Uznaje się ją za Magiczną.</p>\n\n<p>Tradycja Ognia i płomienny Wiatr <i>Aqshy</i> z całą pewnością nie należą do subtelnych. Zaklęcia tej Tradycji są przepełnione ferworem i objawiają się w spektakularny sposób, zazwyczaj jasnym płomieniem i piekącym skwarem. Możesz zadać +1 poziom @Condition[Podpalenie]{Podpalenia} każdemu celowi zaklęć Tradycji Ognia, jeśli nie ma on Talentu <i>Magia Tajemna (Ogień)</i>. Każdy poziom @Condition[Podpalenie]{Podpalenia} w zasięgu twojego Bonusu z Siły Woli metrów dodaje +10 do Testów Rzucania Zaklęć i Splatania Magii Wiatru Aqshy.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.89Xcjrqa44LEluU5",
             "duration": "Bonus SW Rund",
             "target": "Ty",
@@ -696,7 +696,7 @@
         "Blast (Shadow)": {
             "id": "8rRCSJGIdecFcpxm",
             "name": "Wybuch (Cień)",
-            "description": "<p>Formujesz magię w wybuchowy podmuch. Uznawany jest on za magiczny pocisk o współczynniku Obrażeń +3 zadawanym wszystkim celom w Zasięgu.</p>",
+            "description": "<p>Formujesz magię w wybuchowy podmuch. Uznawany jest on za <i>magiczny pocisk</i> o współczynniku Obrażeń +3 zadawanym wszystkim celom w Zasięgu.</p>\n\n<p>Zaklęcia z Tradycji Cieni są dyskretne i podstępne do tego stopnia, że w przypadku tej Tradycji <i>Lingua Praestantia</i> może być mówiona szeptem. Wszelkie ochronne zaklęcia oplatają cel kłębami cieni i dymu, sprawiając, że wydaje się niewyraźny i rozmyty. Ponadto wszystkie zaklęcia z Tradycji Cieni zadają Obrażenia, które ignorują wszelkie niemagiczne Punkty Pancerza.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.8rRCSJGIdecFcpxm",
             "duration": "Natychmiast",
             "target": "Bonus SW metrów",
@@ -705,7 +705,7 @@
         "Push (Fire)": {
             "id": "99QJoyyHfYBQz5Wz",
             "name": "Odepchnięcie (Ogień)",
-            "description": "<p>Wszystkie żywe stworzenia w promieniu tylu metrów, ile wynosi twój Bonus z Siły Woli, zostają odepchnięte na taką właśnie odległość i zostają <em>Powalone</em>. Jeśli wpadną na ścianę lub inną dużą przeszkodę, zatrzymują się na niej, ale otrzymują tyle Obrażeń, ile metrów powinny jeszcze przebyć. Za każde +2 PS możesz odepchnąć przeciwników dalej - o tyle metrów, ile wynosi Bonus z Siły Woli.</p>",
+            "description": "<p>Wszystkie żywe stworzenia w promieniu tylu metrów, ile wynosi twój Bonus z Siły Woli, zostają odepchnięte na taką właśnie odległość i zostają @Condition[Powalenie]{Powalone}. Jeśli wpadną na ścianę lub inną dużą przeszkodę, zatrzymują się na niej, ale otrzymują tyle Obrażeń, ile metrów powinny jeszcze przebyć. Za każde +2 PS możesz odepchnąć przeciwników dalej - o tyle metrów, ile wynosi Bonus z Siły Woli.</p>\n\n<p>Tradycja Ognia i płomienny Wiatr <i>Aqshy</i> z całą pewnością nie należą do subtelnych. Zaklęcia tej Tradycji są przepełnione ferworem i objawiają się w spektakularny sposób, zazwyczaj jasnym płomieniem i piekącym skwarem. Możesz zadać +1 poziom @Condition[Podpalenie]{Podpalenia} każdemu celowi zaklęć Tradycji Ognia, jeśli nie ma on Talentu <i>Magia Tajemna (Ogień)</i>. Każdy poziom @Condition[Podpalenie]{Podpalenia} w zasięgu twojego Bonusu z Siły Woli metrów dodaje +10 do Testów Rzucania Zaklęć i Splatania Magii Wiatru Aqshy.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.99QJoyyHfYBQz5Wz",
             "duration": "Natychmiast",
             "target": "Ty",
@@ -714,7 +714,7 @@
         "Drop (Hedgecraft)": {
             "id": "9bKioMmyDY2PV4MY",
             "name": "Niezdarność (Guślarstwo)",
-            "description": "<p>Wlewasz magię w trzymany przez kogoś przedmiot. Może to być broń, lina lub czyjaś dłoń. Jeśli przeciwnikowi nie uda się <strong>Wymagający (+0) Test Zręczności</strong>, wypuści to, co trzyma w dłoni. Za każde 2 PS możesz dodać karę -10 do Testu Zręczności.</p>",
+            "description": "<p>Wlewasz magię w trzymany przez kogoś przedmiot. Może to być broń, lina lub czyjaś dłoń. Jeśli przeciwnikowi nie uda się <strong>Wymagający (+0) Test Zręczności</strong>, wypuści to, co trzyma w dłoni. Za każde 2 PS możesz dodać karę -10 do Testu Zręczności.</p>\n\n<p>Guślarze wierzą, że ich zdolności to dar od bogów, więc o osobach zdolnych rzucać zaklęcia mówią „nieliczni wybrańcy”. Z powodu swoich starożytnych tradycji i głęboko zakorzenionych wierzeń nie mogą rzucać zaklęć, jeśli nie posiadają składników, które są dla nich nieodzowną częścią ich procesu czarowania.</p>\n<p>Na szczęście są to zazwyczaj dość łatwe do znalezienia składniki, czy to na obrzeżach cywilizacji, czy w formie roślin lub ziół. Udany Test Wiedzy (Zielarstwa) skutkuje pozyskaniem 1 + PS składników, jak opisano w ramce Zbieranie Pożywienia i Ziół na stronie 129. Ewentualnie można je kupić za cenę 5 brązowych pensów sztuka.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.9bKioMmyDY2PV4MY",
             "duration": "Natychmiast",
             "target": "1",
@@ -732,7 +732,7 @@
         "Flight": {
             "id": "9wmmln3DunIqGXM2",
             "name": "Lot",
-            "description": "<p><span style=\"color: #231f20;\">Możesz latać - dzięki eterycznym skrzydłom, w kolumnie magicznego światła lub w inny odpowiedni dla Tradycji sposób. Zyskujesz Cechę Stworzenia Latanie </span><span style=\"color: #231f20;\">(Zwinność).</span></p>\n<p>&nbsp;</p>\n<blockquote>\n<p>Gdy stworzenie wykonuje Ruch, może przelecieć tyle metrów, ile wynosi podana wartość. Lecąc, ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydować, czy wyląduje, czy będzie kontynuować lot. Może w ramach tego ruchu wykonać Szarżę. Jeśli na początku swojej Tury leci, musi wybrać jako Ruch Latanie. Jeśli nie jest w stanie tego zrobić, MG decyduje, jak daleko stworzenie upadnie</p>\n<p> Biorąc stworzenie na cel, zmierz odległość horyzontalną jak normalnie, a następnie zwiększ dystans o 1 poziom. Zatem strzał na Dalekim zasięgu stanie się strzałem na Bardzo dalekim zasięgu. Natomiast jeśli był to Bardzo daleki zasięg, stworzenia nie można dosięgnąć strzałem. Lecąc, stworzenie dostaje karę -20 do wszystkich prób walki dystansowej, ponieważ nurkuje w powietrzu i zatacza kręgi.&nbsp;</p>\n<p>&nbsp;</p>\n</blockquote>",
+            "description": "<p><span style=\"color: #231f20;\">Możesz latać - dzięki eterycznym skrzydłom, w kolumnie magicznego światła lub w inny odpowiedni dla Tradycji sposób. Zyskujesz Cechę Stworzenia @UUID[Compendium.wfrp4e-core.traits.EO05HX7jql0g605A]{Latanie (Zwinność)}.</span></p>",
             "sourceId": "Compendium.wfrp4e-core.spells.9wmmln3DunIqGXM2",
             "effects": {
                 "ZSGvMxczaTcygVrt": {
@@ -748,7 +748,7 @@
         "Corrosive Blood (Heavens)": {
             "id": "a0rkY56nliMmxoCf",
             "name": "Żrąca krew (Niebiosa)",
-            "description": "<p>Wypełniasz swoje ciało magią, a twoja krew nabiera niezwykłych właściwości. Zyskujesz Cechę Stworzenia Kwasowa Krew:&nbsp;</p>\n<p>&nbsp;</p>\n<blockquote>\n<p>Krew stworzenia jest żrąca. Za każdym razem, gdy zostanie ono ranione, tryska z niego krew i wszystkie związane z nim walką cele dostają 1k10 Ran. Są one normalnie obniżane przez Bonus z Wytrzymałości i Punkty Pancerza, ale wynoszą minimum 1.</p>\n</blockquote>",
+            "description": "<p>Wypełniasz swoje ciało magią, a twoja krew nabiera niezwykłych właściwości. Zyskujesz Cechę Stworzenia @UUID[Compendium.wfrp4e-core.traits.M5QSWOYt2Rbv2yxW]{Kwasowa Krew}</p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.a0rkY56nliMmxoCf",
             "effects": {
                 "Jcn6S9AgpBdRx9jI": {
@@ -764,7 +764,7 @@
         "Creeping Menace": {
             "id": "a8npXWG2o4BxhtVV",
             "name": "Pełzające paskudztwo",
-            "description": "<p>Przyzywasz rój pełzających stworzeń, które nękają twoich wrogów. Każdy cel objęty zaklęciem natychmiast zostaje Związany walką z gigantycznymi szczurami, gigantycznymi pająkami lub wężami. Skorzystaj ze standardowych statystyk odpowiedniego typu, dodając właściwość Rój. Poświęcając Akcję, możesz wykonać <strong>Wymagający (+0) Test Oswajania</strong>, by skierować jeden lub więcej rojów do ataku na inny cel. Po zakończeniu zaklęcia wszelkie pozostałe stworzenia z rojów rozpływają się w cieniach.</p>",
+            "description": "<p>Przyzywasz rój pełzających stworzeń, które nękają twoich wrogów. Każdy cel objęty zaklęciem natychmiast zostaje Związany walką z gigantycznymi szczurami, gigantycznymi pająkami lub wężami. Skorzystaj ze standardowych statystyk odpowiedniego typu, dodając właściwość Rój. Poświęcając Akcję, możesz wykonać <strong>Wymagający (+0) Test Oswajania</strong>, by skierować jeden lub więcej rojów do ataku na inny cel. Po zakończeniu zaklęcia wszelkie pozostałe stworzenia z rojów rozpływają się w cieniach.</p>\n\n<p>Zaklęcia z Tradycji Czarownictwa korzystają z dowolnego dostępnego Wiatru Magii, nie zważając na niebezpieczeństwa płynące z mieszania Wiatrów. Za każdym razem, gdy postać korzystająca z Czarownictwa wywołuje Manifestację, otrzymuje też 1 Punkt Zepsucia. Każde zaklęcie tej Tradycji może zadać dodatkowo każdemu celowi 1 poziom Stanu @Condition[Krwawienie]. Poza tym Testy Rzucania zaklęć i Splatania Magii z tej Tradycji skutkują automatyczną Manifestacją, chyba że do rzucenia zaklęcia używane są składniki. Za to składnik nie chroni przed późniejszymi Manifestacjami, jeśli takie się pojawią. Na szczęście składniki Tradycji Czarownictwa są tanie i powszechnie dostępne. Zazwyczaj są to części ciał małych zwierząt. Składniki zaklęć kosztują tyle brązowych pensów (a nie srebrnych szylingów), ile wynosi PZ. Ewentualnie czarownica może poszukać składników na własną rękę, używając Umiejętności Sztuka Przetrwania. Udany Test skutkuje pozyskaniem 1 + PS składników, jak opisano w ramce Zdobywanie Pożywienia i Ziół na stronie 129.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.a8npXWG2o4BxhtVV",
             "duration": "Bonus SW Rund",
             "target": "1",
@@ -773,7 +773,7 @@
         "Ward (Shadow)": {
             "id": "aCDDeeYF24waaPgT",
             "name": "Magiczna ochrona (Cień)",
-            "description": "<p>&nbsp;</p>\n<p>Oplatasz się ochronną magią, zyskując Cechę Stworzenia Ochrona (9+)</p>\n<p>&nbsp;</p>\n<blockquote>\n<p>Stworzenie jest magiczne, nosi specjalny talizman albo ma szczęście - niektóre ciosy po prostu go nie trafiają. Rzuć 1k10 po każdym otrzymanym ciosie. Jeśli stworzenie wyrzuci tyle, ile wynosi podana wartość, lub więcej, cios zostaje zignorowany, nawet jeśli jest to Trafienie Krytyczne.</p>\n</blockquote>",
+            "description": "<p>Oplatasz się ochronną magią, zyskując Cechę Stworzenia @UUID[Compendium.wfrp4e-core.traits.Bvd2aZ0gQUXHfCTh]{Ochrona (9+)}.</p>\n\n<p>Zaklęcia z Tradycji Cieni są dyskretne i podstępne do tego stopnia, że w przypadku tej Tradycji <i>Lingua Praestantia</i> może być mówiona szeptem. Wszelkie ochronne zaklęcia oplatają cel kłębami cieni i dymu, sprawiając, że wydaje się niewyraźny i rozmyty. Ponadto wszystkie zaklęcia z Tradycji Cieni zadają Obrażenia, które ignorują wszelkie niemagiczne Punkty Pancerza.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.aCDDeeYF24waaPgT",
             "duration": "Bonus SW Rund",
             "target": "Ty",
@@ -782,7 +782,7 @@
         "Mundane Aura (Daemonology)": {
             "id": "aCOdKvw68yopHYJ2",
             "name": "Aura codzienności (Demonologia)",
-            "description": "<p>Wysysasz wszelkie Wiatry Magii ze swego ciała i swojego dobytku, usuwając wszelkie ślady magicznej aury. Przez okres trwania zaklęcia dla osób posiadających Talent Percepcja Magiczna lub podobny wydajesz się zwykłą osobą, nieposiadającą nadprzyrodzonych zdolności. Nie wytwarzasz wtedy żadnych eterycznych wibracji i twoja magiczna aura nie może zostać wykryta żadnymi sposobami. Podczas trwania tego zaklęcia nie możesz rzucać żadnych zaklęć. Aura codzienności rozprasza się natychmiast, gdy rozpoczniesz Test Splatania Magii.</p>",
+            "description": "<p>Wysysasz wszelkie Wiatry Magii ze swego ciała i swojego dobytku, usuwając wszelkie ślady magicznej aury. Przez okres trwania zaklęcia dla osób posiadających Talent <i>Percepcja Magiczna</i> lub podobny wydajesz się zwykłą osobą, nieposiadającą nadprzyrodzonych zdolności. Nie wytwarzasz wtedy żadnych eterycznych wibracji i twoja magiczna aura nie może zostać wykryta żadnymi sposobami. Podczas trwania tego zaklęcia nie możesz rzucać żadnych zaklęć. Aura codzienności rozprasza się natychmiast, gdy rozpoczniesz Test Splatania Magii.</p>\n\n<p>Zakazana Tradycja Demonologii skupia się wokół przyzywania, wiązania i kontrolowania demonów, zazwyczaj po to, by zwiększyć moc czarodzieja. Jest przerażająco niebezpieczna i zwykle wiedzie do upadku demonologa, ponieważ jego dusza jest wyniszczana przez Niszczycielskie Potęgi – w ten sposób rodzi się nowy Czarnoksiężnik Chaosu.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.aCOdKvw68yopHYJ2",
             "duration": "Siła Woli minut",
             "target": "Ty",
@@ -791,7 +791,7 @@
         "Drop (Necromancy)": {
             "id": "aMQMBNGgolHJAzXF",
             "name": "Niezdarność (Nekromancja)",
-            "description": "<p>Wlewasz magię w trzymany przez kogoś przedmiot. Może to być broń, lina lub czyjaś dłoń. Jeśli przeciwnikowi nie uda się <strong>Wymagający (+0) Test Zręczności</strong>, wypuści to, co trzyma w dłoni. Za każde 2 PS możesz dodać karę -10 do Testu Zręczności.</p>",
+            "description": "<p>Wlewasz magię w trzymany przez kogoś przedmiot. Może to być broń, lina lub czyjaś dłoń. Jeśli przeciwnikowi nie uda się <strong>Wymagający (+0) Test Zręczności</strong>, wypuści to, co trzyma w dłoni. Za każde 2 PS możesz dodać karę -10 do Testu Zręczności.</p>\n\n<p>Nekromancja jest starożytną i krwawą dziedziną magii zajmującą się śmiercią i poszukiwaniem nieśmiertelności, co zazwyczaj wymaga babrania się w gnijących zwłokach. Biorąc pod uwagę, że jest to jedna z najbardziej nikczemnych i heretyckich Tradycji Magii, niewielu podchodzi do studiowania jej z lekceważeniem, ponieważ niedocenianie potworności związanych z umarłymi i nieumarłymi może się bardzo źle skończyć.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.aMQMBNGgolHJAzXF",
             "duration": "Natychmiast",
             "target": "1",
@@ -800,7 +800,7 @@
         "Dark Vision (Beasts)": {
             "id": "aPhKykUG3I5R9P4u",
             "name": "Widzenie w ciemności (Zwierzęta)",
-            "description": "<p>Twoje naturalne zmysły zostają wzmocnione dzięki postrzeganiu magii. Podczas trwania zaklęcia zyskujesz Cechę Stworzenia <em>Widzenie w Mroku</em></p>\n<p>&nbsp;</p>\n<blockquote>\n<p>Postać potrafi widzieć w ciemności jak w świetle dziennym.</p>\n</blockquote>",
+            "description": "<p>Twoje naturalne zmysły zostają wzmocnione dzięki postrzeganiu magii. Podczas trwania zaklęcia zyskujesz Cechę Stworzenia @UUID[Compendium.wfrp4e-core.traits.JQa5DLnTs2SEzRrc]{Widzenie w Mroku}.</p>\n\n<p>Wiatr Bursztynowy, <i>Ghur</i>, niesie ze sobą dreszcz, pierwotną wściekłość, która wytrąca z równowagi zarówno zwierzęta, jak i stworzenia myślące. Po każdym udanym rzuceniu zaklęcia z Tradycji Zwierząt możesz dodatkowo zyskać Cechę Stworzenia @UUID[Compendium.wfrp4e-core.traits.pTorrE0l3VybAbtn]{Strach (1)} na [[/r 1d10]] Rund.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.aPhKykUG3I5R9P4u",
             "duration": "Bonus SW Rund",
             "target": "Ty",
@@ -809,7 +809,7 @@
         "Distracting (Shadow)": {
             "id": "aT6shbEGQSOfHx57",
             "name": "Dekoncentracja (Cień)",
-            "description": "<p>Otaczasz się wirującą i świszczącą mocą, która rozprasza wrogów. Podczas trwania zaklęcia zyskujesz Cechę Stworzenia <em>Dekoncentrujący</em>.</p>\n<p>&nbsp;</p>\n<blockquote>\n<p>Stworzenie rozprasza lub dezorientuje wrogów, być może wydzielając usypiający zapach lub powalający smród, a może ze względu na przerażająco dziwaczny wygląd. Wszystkie żywe cele w promieniu tylu metrów, ile wynosi jego Bonus z Wytrzymałości, dostają karę -20 do wszystkich Testów. Cel może dostać tę karę tylko raz - bez względu na to, jak wielu jest dekoncentrujących wrogów.</p>\n</blockquote>\n<p>&nbsp;</p>",
+            "description": "<p>Otaczasz się wirującą i świszczącą mocą, która rozprasza wrogów. Podczas trwania zaklęcia zyskujesz Cechę Stworzenia @UUID[Compendium.wfrp4e-core.traits.MVI0lXcg6vvtooAF]{Dekoncentrujący}.</p>\n\n<p>Zaklęcia z Tradycji Cieni są dyskretne i podstępne do tego stopnia, że w przypadku tej Tradycji <i>Lingua Praestantia</i> może być mówiona szeptem. Wszelkie ochronne zaklęcia oplatają cel kłębami cieni i dymu, sprawiając, że wydaje się niewyraźny i rozmyty. Ponadto wszystkie zaklęcia z Tradycji Cieni zadają Obrażenia, które ignorują wszelkie niemagiczne Punkty Pancerza.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.aT6shbEGQSOfHx57",
             "effects": {
                 "cD3jmdr21YY45gQA": {
@@ -825,7 +825,7 @@
         "Nepenthe": {
             "id": "aVUKVQTwtWuQXIgx",
             "name": "Eliksir zapomnienia",
-            "description": "<p>Mruczysz potężne słowa nad przygotowanym uprzednio naparem z ziół, magicznie przemieniając go w potężny eliksir. Jeśli zostanie wypity podczas trwania tego zaklęcia, cel może zdecydować, by zupełnie i trwale zapomnieć jedną osobę.</p>",
+            "description": "<p>Mruczysz potężne słowa nad przygotowanym uprzednio naparem z ziół, magicznie przemieniając go w potężny eliksir. Jeśli zostanie wypity podczas trwania tego zaklęcia, cel może zdecydować, by zupełnie i trwale zapomnieć jedną osobę.</p>\n\n<p>Guślarze wierzą, że ich zdolności to dar od bogów, więc o osobach zdolnych rzucać zaklęcia mówią „nieliczni wybrańcy”. Z powodu swoich starożytnych tradycji i głęboko zakorzenionych wierzeń nie mogą rzucać zaklęć, jeśli nie posiadają składników, które są dla nich nieodzowną częścią ich procesu czarowania.</p>\n<p>Na szczęście są to zazwyczaj dość łatwe do znalezienia składniki, czy to na obrzeżach cywilizacji, czy w formie roślin lub ziół. Udany Test Wiedzy (Zielarstwa) skutkuje pozyskaniem 1 + PS składników, jak opisano w ramce Zbieranie Pożywienia i Ziół na stronie 129. Ewentualnie można je kupić za cenę 5 brązowych pensów sztuka.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.aVUKVQTwtWuQXIgx",
             "duration": "Bonus SW Rund",
             "target": "Specjalny",
@@ -834,7 +834,7 @@
         "Teleport (Heavens)": {
             "id": "AwRVLEJZCLwPJKy2",
             "name": "Przeskok (Niebiosa)",
-            "description": "<p>Wykorzystując magię, przemieszczasz się natychmiast na odległość wynoszącą maksymalnie tyle, ile wynosi twój Bonus z Siły Woli. Dzięki temu możesz nie przejmować się jarami, dołami, pułapkami i innymi niebezpieczeństwami, ignorując przeszkody. Za każde +2 PS możesz zwiększyć dystans takiej teleportacji o tyle metrów, ile wynosi twój Bonus z Siły Woli.</p>",
+            "description": "<p>Wykorzystując magię, przemieszczasz się natychmiast na odległość wynoszącą maksymalnie tyle, ile wynosi twój Bonus z Siły Woli. Dzięki temu możesz nie przejmować się jarami, dołami, pułapkami i innymi niebezpieczeństwami, ignorując przeszkody. Za każde +2 PS możesz zwiększyć dystans takiej teleportacji o tyle metrów, ile wynosi twój Bonus z Siły Woli.</p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.AwRVLEJZCLwPJKy2",
             "duration": "Natychmiast",
             "target": "Ty",
@@ -843,7 +843,7 @@
         "Cauterise": {
             "id": "aWxO2jpMvmZUEsK9",
             "name": "Przypalenie",
-            "description": "<p>Przepuszczając <em>Aqshy</em> przez swoje dłonie, kładziesz je na rany sojusznika. Natychmiast leczysz 1k10 Ran i usuwasz wszystkie poziomy <em>Krwawienia</em>. Ponadto rany te nie ulegną zakażeniu.</p>\n<p>&nbsp;</p>\n<p>Cele, które nie mają Talentu <em>Magia Tajemna (Ogień)</em>, muszą zdać <strong>Wymagający (+0) Test Opanowania</strong> lub zaczną wrzeszczeć z bólu. Jeśli nie powiedzie się on o -6 lub więcej PS, następuje Utrata <em>Przytomności</e>,&nbsp; cel do końca życia będzie miał paskudną bliznę. Odzyskuje przytomność 1k10 godzin później.</p>",
+            "description": "<p>Przepuszczając <em>Aqshy</em> przez swoje dłonie, kładziesz je na rany sojusznika. Natychmiast leczysz [[/r 1d10]] Ran i usuwasz wszystkie poziomy @Condition[Krwawienie]{Krwawienia}. Ponadto rany te nie ulegną zakażeniu.</p>\n<p>Cele, które nie mają Talentu <em>Magia Tajemna (Ogień)</em>, muszą zdać <strong>Wymagający (+0) Test Opanowania</strong> lub zaczną wrzeszczeć z bólu. Jeśli nie powiedzie się on o -6 lub więcej PS, następuje @Condition[Utrata Przytomności], cel do końca życia będzie miał paskudną bliznę. Odzyskuje przytomność 1k10 godzin później.</p>\n\n<p>Tradycja Ognia i płomienny Wiatr <i>Aqshy</i> z całą pewnością nie należą do subtelnych. Zaklęcia tej Tradycji są przepełnione ferworem i objawiają się w spektakularny sposób, zazwyczaj jasnym płomieniem i piekącym skwarem. Możesz zadać +1 poziom @Condition[Podpalenie]{Podpalenia} każdemu celowi zaklęć Tradycji Ognia, jeśli nie ma on Talentu <i>Magia Tajemna (Ogień)</i>. Każdy poziom @Condition[Podpalenie]{Podpalenia} w zasięgu twojego Bonusu z Siły Woli metrów dodaje +10 do Testów Rzucania Zaklęć i Splatania Magii Wiatru Aqshy.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.aWxO2jpMvmZUEsK9",
             "effects": {
                 "miECAiZsYbFkZJwd": {
