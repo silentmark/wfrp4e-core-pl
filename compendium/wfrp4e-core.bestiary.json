@@ -24,7 +24,7 @@
                 "dt9CX3Pq7QKw25z4": {
                     "id": "dt9CX3Pq7QKw25z4",
                     "label": "Dekoncentrujący",
-                    "script": "args.prefillModifiers.modifier -= 20;"
+                    "script": "args.prefillModifiers.modifier -= 20"
                 },
                 "nL9vz5id4ikQFGls": {
                     "id": "nL9vz5id4ikQFGls",
