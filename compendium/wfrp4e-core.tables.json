@@ -919,7 +919,7 @@
                 "71-75": "<p><strong>Opętanie przez Demona</strong>: Jesteś opętany przez Daemoniczną istotę przez jedną minutę. W tym czasie MG kontroluje wszystkie twoje działania a gdy ponownie przejmiesz kontrolę nad swoim ciałem nie masz wspomnień o tym co właśnie zrobiłeś.</p>",
                 "76-80": "<p><strong>Sprzężenie zwrotne Eteru</strong>: Magia wzrasta wokół ciebie, powodując straszliwe stygmaty. Każdy w odległości liczby jardów równej twojej Sile Woli otrzymuje 1 ranę i musi zdać <strong>Wymagający (+0) test Opanowania</strong> lub otrzymuje stan @Condition[Panika]. Jeśli nie ma innych istot w tej odległości, natychmiast otrzymujesz [[2d10]] ran.</p>",
                 "81-85": "<p><strong>Nieznośne osłabienie</strong>: Wiatry Magii niosą ze sobą nić Chaosu, dusząc twoją duszę i powalając cię na kolana. Otrzymujesz 1 punkt Korupcji, 1 stan @Condition[Zmęczenie] i stan @Condition[Powalony].</p>",
-                "86-90": "<p><strong>Podwójne kłopoty</strong>: Wiatry Magii zabierają twoją magię, powodując, że działa ona gdzieś indziej w promieniu [[1d10]] mil. Mistrz Gry jest zachęcany do wywołania konsekwencji i rozważenia ciekawych chaotycznych sposobów w jaki twoja magia mogłaby zostać zdeformowana lub zdeprawowana.</p>",
+                "86-90": "<p><strong>Podwójne kłopoty</strong>: Wiatry Magii zabierają twoją magię, powodując, że działa ona gdzieś indziej w promieniu [[1d10]] kilometrów. Mistrz Gry jest zachęcany do wywołania konsekwencji i rozważenia ciekawych chaotycznych sposobów w jaki twoja magia mogłaby zostać zdeformowana lub zdeprawowana.</p>",
                 "91-95": "<p><strong>Burza Chaosu</strong>: Rzuć na tabeli @Table[minormis]{Mniejsze Manifestacje}. Ty i [[1d10]] najbliższych istot doznajecie tego efektu.</p>",
                 "96-100": "<p><strong>Sztuczka losu</strong>: Rzuć na tabeli @Table[catastrophicmis]{Katastroficzne Manifestacje}.</p>"
             }
@@ -1456,7 +1456,7 @@
             "results": {
                 "1-5": "<b>Czarnoksięstwo</b>: Pojawia się mały znak Chaosu: mleko w pobliżu kwaśnieje, zwierzęta straszą, wieje zimny wietrzyk itp.",
                 "6-10": "<b>Oczy wiedźmy</b>: Twoje oczy przez [[1d10]] godzin są w kolorze twojej Tradycji Magicznej. Kiedy twoje oczy są zabarwione, otrzymujesz 1 stan @Condition[Oślepienia].",
-                "11-15": "<b>Zły urok</b>: Płody rolne lub pola uprawne w promieniu Bonusu Siły Woli mil są dotknięte zarazą i gniją.",
+                "11-15": "<b>Zły urok</b>: Płody rolne lub pola uprawne w promieniu Bonusu Siły Woli kilometrów są dotknięte zarazą i gniją.",
                 "16-20": "<b>Wosk duszy</b>: Twoje uszy zatykają się nienaturalnym woskiem, który można usunąć tylko za pomocą umiejętności Uzdrowienie. Do tego czasu masz 1 stan @Condition[Ogłuszony].",
                 "21-25": "<b>Czarodziejskie światło</b>: Świecisz niesamowitym światłem w kolorze swojej Tradycji Magii, emitując światło jak duże ognisko przez [[1d10]] rund.",
                 "26-30": "<b>Potworne szepty</b>: Głos demonicznej istoty dociera do ciebie. Zdaj <b>Wymagający (+0) Test Siły Woli</b>, aby uniknąć słuchania lub otrzymujesz 1 punkt Zepsucia.",
@@ -1471,7 +1471,7 @@
                 "71-75": "<b>Niezdarny język</b>: Twój język staje się gruby i spuchnięty. Wszystkie testy językowe (w tym testy rzucania czarów) podlegają karze -10 przez [[1kd0]] rund.",
                 "76-80": "<b>Zgroza!</b>: Zdaj <b>Trudny (-20) Test Opanowania</b> lub otrzymujesz 1 stan @Condition[Panika].",
                 "81-85": "<b>Klątwa zepsucia</b>: Otrzymujesz 1 punkt zepsucia, gdy dzika magia doprowadzi cię na skraj straszliwej prawdy.",
-                "86-90": "<b>Podwójne kłopoty</b>: Wiatry Magii przesuwają twoje zaklęcie, sprawiając, że zacznie ono działać w innym miejscu w promieniu [[1d10]] mil. MG jest zachęcany do wyciągnięcia z tego powodu konsekwencji.",
+                "86-90": "<b>Podwójne kłopoty</b>: Wiatry Magii przesuwają twoje zaklęcie, sprawiając, że zacznie ono działać w innym miejscu w promieniu [[1d10]] kilometrów. MG jest zachęcany do wyciągnięcia z tego powodu konsekwencji.",
                 "91-95": "<b>Nieszczęścia chodzą parami</b>: Rzuć dwukrotnie w tabeli @Table[minormis]{Mniejsze Manifestacje}",
                 "96-100": "<b>Pech!</b>: zamiast tego rzuć w tabeli@Table[majormis]{Wieksza Manifestacja}."
             }
