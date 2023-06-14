@@ -66,7 +66,7 @@
                 },
                 "NKiIPNQehPO9eaxm": {
                     "id": "NKiIPNQehPO9eaxm",
-                    "label": "Uwiąd (Umiarkowany)",
+                    "label": "Uwiąd (Średnie)",
                     "script": "\n                        let difficulty = \"\"\nif (this.effect.label.includes(game.i18n.localize(\"Moderate\"))) {\n    difficulty = \"easy\";\n}\nelse if (this.effect.label.includes(game.i18n.localize(\"Severe\"))) {\n    difficulty = \"average\";\n}\nelse {\n    difficulty = \"veasy\";\n}\n\nif (this.actor.isOwner) { \n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {context : {failure : args.actor.name + \" umiera z powodu Uwiądu\"}, absolute: {difficulty}, appendTitle : \" - Uwiąd\"}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"dead\")\n        }\n    });\n}"
                 },
                 "qNWBcG8TYO5QGmLk": {
@@ -80,7 +80,7 @@
             "contraction": "Co godzinę (albo i częściej) należy wykonać <b>Przeciętny (+20) Test Odporności</b>, jeśli postać przebywa w okolicy opanowanej przez zarażone pchły lub została wystawiona na działanie skażonych cieczy.",
             "incubation_value": "1d10",
             "incubation_unit": "minut",
-            "symptoms": "Apatia, Dymienica, Gangrena, Gorączka, Uwiąd (Umiarkowany)",
+            "symptoms": "Apatia, Dymienica, Gangrena, Gorączka, Uwiąd (Średnie)",
             "permanent": ""
         },
         "Packer's Pox": {
@@ -271,7 +271,7 @@
                 },
                 "Sp93ZiJ4eq26v8UO": {
                     "id": "Sp93ZiJ4eq26v8UO",
-                    "label": "Biegunka (Umiarkowany)"
+                    "label": "Biegunka (Średnie)"
                 }
             },
             "duration_value": "1d10",
@@ -279,7 +279,7 @@
             "contraction": "Porażka w <b>Łatwym (+40) Teście Odporności</b>, który należy wykonać, jeśli zainfekowany przedmiot trafi do ust.",
             "incubation_value": "1d10",
             "incubation_unit": "godzin",
-            "symptoms": "Apatia, Biegunka (Umiarkowany), Nudności",
+            "symptoms": "Apatia, Biegunka (Średnie), Nudności",
             "permanent": ""
         },
         "Itching Pox": {

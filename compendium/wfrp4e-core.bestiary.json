@@ -29,12 +29,12 @@
                 "nL9vz5id4ikQFGls": {
                     "id": "nL9vz5id4ikQFGls",
                     "label": "Pancerz",
-                    "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+                    "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "WZ3jFENJwIhkufce": {
                     "id": "WZ3jFENJwIhkufce",
                     "label": "Groza",
-                    "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postTerror(value, name)\n}"
+                    "script": "let value = parseInt(this.item.specification.value);\nlet name = this.actor.prototypeToken.name;\nif (game.user.isGM && game.user.targets.size) {\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name);\n  })\n  game.user.updateTokenTargets([]);\n  game.user.broadcastActivity({targets: []})\n}\nelse {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },
             "items": {
@@ -49,11 +49,11 @@
                 },
                 "5UkGwlZAf2pp0qdO": {
                     "id": "5UkGwlZAf2pp0qdO",
-                    "name": "Rogi ()",
-                    "description": "<p>Stworzenie ma rogi lub inne ostre wyrostki (jeśli jego Cecha Stworzenia Rogi reprezentuje coś innego, będzie to określone w nawiasie). Gdy stworzenie zyskuje Przewagę na skutek Szarżowania, może wykonać Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podaną wartość Obrażeń (Bonus z Siły stworzenia jest już wliczony).</p>",
-                    "originalName": "Horns",
+                    "name": "Rogi (typ)",
+                    "description": "<p>Stworzenie ma rogi lub inne ostre wyrostki (jeśli jego Cecha Stworzenia Rogi reprezentuje coś innego, będzie to określone w nawiasie). Gdy stworzenie zyskuje Przewagę na skutek Szarżowania, może\nwykonać Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podaną wartość Obrażeń (Bonus z Siły stworzenia jest już wliczony).</p>",
+                    "originalName": "Rogi",
                     "sourceId": "Compendium.wfrp4e-core.traits.BqPZn6q3VHn9HUrW",
-                    "specification": "#"
+                    "specification": "4"
                 },
                 "pwtql3Ia8555L2v7": {
                     "specification": "Duży"
@@ -74,13 +74,13 @@
             "name": "Czarna Bella",
             "description": "<section id=\"secret-MjIx27JoP8lYXwK6\" class=\"secret\"><p>Męża Bethildy zaszlachtowali zwierzoludzie, którzy napadli wioskę Reikherz. Cztery miesiące później kobieta została wyrzucona z domu, ponieważ nie była w stanie płacić czynszu. Zdesperowana zwróciła się do swojego kuzyna, Alwina, poszukiwanego banity. Przekonanie go zajęło niewiele czasu i Bethilda dołączyła do grupy bandytów nękających drogę Karstadt–Siedlung. Bethilda była zaskoczona, jak bardzo ekscytujące okazało się rabowanie na gościńcu. Teraz każe zwać się Czarną Bellą i słynie z brutalnej bezwzględności, co zaczęło głęboko martwić jej kuzyna.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.2lvE7Ypir9uuRjVT",
-            "gender": "Female",
-            "species": "human",
+            "gender": "Kobieta",
+            "species": "Człowiek",
             "effects": {
                 "ifR8JNd40yyrfvGn": {
                     "id": "ifR8JNd40yyrfvGn",
                     "label": "Pancerz",
-                    "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+                    "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "rGJP5XWv7qHS0RWn": {
                     "id": "rGJP5XWv7qHS0RWn",
@@ -94,7 +94,7 @@
                 "tnEt2g6N1fk9LIbJ": {
                     "id": "tnEt2g6N1fk9LIbJ",
                     "label": "Mieszkaniec Lasu",
-                    "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+                    "script": "if (args.type == \"skill\" && (args.item.name == game.i18n.localize(\"NAME.Climb\")  || args.item.name.includes(game.i18n.localize(\"NAME.Stealth\")))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 }
             },
             "items": {
@@ -111,7 +111,7 @@
                     "id": "Iw5LFliUnIdaa7gL",
                     "name": "Strzelanie (50)",
                     "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
-                    "originalName": "Ranged (50)",
+                    "originalName": "Strzelanie (50)",
                     "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
                     "specification": "8"
                 }
@@ -123,17 +123,17 @@
             "description": "<section id=\"secret-HaVbfBaaBSzWZbNX\" class=\"secret\"><p>@UUID[JournalEntry.IQ0PgoJihQltCBUU.JournalEntryPage.l0f11ypRjH9sR48Q#wood-elves]{Leśne Elfy}</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.5wl3KH6hXsGwUcZa",
             "gender": "Różne",
-            "species": "Wood Elf",
+            "species": "Leśny Elf",
             "effects": {
                 "7xnO2hDZ63QDUQ6E": {
                     "id": "7xnO2hDZ63QDUQ6E",
                     "label": "Tropiciel",
-                    "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+                    "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\"))) {\n   let sl = this.actor.characteristics.i.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 },
                 "BoUTC9kraBVqscZf": {
                     "id": "BoUTC9kraBVqscZf",
                     "label": "Skryty",
-                    "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Stealth\"))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+                    "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 },
                 "Cp0fK7qqV5Jyptgv": {
                     "id": "Cp0fK7qqV5Jyptgv",
@@ -143,7 +143,7 @@
                 "JiMjptl7bJAvnBBV": {
                     "id": "JiMjptl7bJAvnBBV",
                     "label": "Mieszkaniec Lasu",
-                    "script": "if (args.type == \"skill\" && (args.item.name == \"Climb\"  || args.item.name.includes(\"Stealth\")))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+                    "script": "if (args.type == \"skill\" && (args.item.name == game.i18n.localize(\"NAME.Climb\")  || args.item.name.includes(game.i18n.localize(\"NAME.Stealth\")))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 }
             },
             "items": {
@@ -157,7 +157,7 @@
                     "id": "ZVEbgMhQfBkw2lcV",
                     "name": "Strzelanie (150)",
                     "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
-                    "originalName": "Ranged (150)",
+                    "originalName": "Strzelanie (150)",
                     "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
                     "specification": "9"
                 },
@@ -166,37 +166,37 @@
                 },
                 "fdq3RFSOKl5b3WzW": {
                     "id": "fdq3RFSOKl5b3WzW",
-                    "name": "Sztuka ()",
-                    "description": "<p>Potrafisz tworzyć dzieła sztuki w jednej z jej licznych odmian. Brak fachowych narzędzi może wiązać się z negatywnymi modyfikatorami do Testu. Poziomy Sukcesu osiągnięte podczas Testu określają, jak wysokiej jakości jest tworzone dzieło. Skomplikowane lub duże przedsięwzięcie artystyczne może wymagać Testu Wydłużonego. Umiejętność tworzenia dzieł sztuki ma niewielkie zastosowanie w walce, ale marmurowe popiersie może być rzydatne, gdy zwali się je przeciwnikowi na głowę.</p>",
-                    "originalName": "Art",
+                    "name": "Sztuka (Dowolna)",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
+                    "originalName": "Sztuka",
                     "sourceId": "Compendium.wfrp4e-core.skills.fdq3RFSOKl5b3WzW"
                 },
                 "0CwV96kTDRF0jUhk": {
                     "id": "0CwV96kTDRF0jUhk",
-                    "name": "Występy ()",
-                    "description": "<p>Ta Umiejętność pozwala ci zabawiać tłumy słowem mówionym, być może śpiewem, odgrywaniem ról lub nawet dowcipem. Udany Test oznacza, że widzowie słuchali występu, a PS wskazują, jak dobrze wypadłeś. W walce Występy mają raczej skromne zastosowanie, choć aktorstwo można wykorzystać, by zwieść lub oszukać przeciwników</p><p><b>Specjalizacje:</b> Aktorstwo, Gawędziarstwo, Komedianctwo, Śpiewanie.</p>",
-                    "originalName": "Entertain",
+                    "name": "Występy (Dowolne)",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Występy}</p>",
+                    "originalName": "Występy",
                     "sourceId": "Compendium.wfrp4e-core.skills.0CwV96kTDRF0jUhk"
                 },
                 "F8NfBZdVSEIGCMtu": {
                     "id": "F8NfBZdVSEIGCMtu",
-                    "name": "Broń Biała ()",
-                    "description": "<p>Ta Umiejętność opisuje twoją sprawność w posługiwaniu się rodzajem broni do walki wręcz. Każda Specjalizacja w Broni Białej oznacza, że zostałeś wyszkolony w walce daną kategorią oręża. Jeśli chcesz lub przyjdzie ci walczyć bronią, w której nie jesteś wyszkolony, zajrzyj do Rozdziału 11: Przewodnik konsumenta, gdzie w opisie broni znajdziesz zasady i negatywne modyfikatory stosowane w tej sytuacji. Rozdział 5: Zasady bardziej szczegółowo opisuje walkę i wykorzystanie tej Umiejętności.</p><p>Specjalizacje: Podstawowa, Bijatyka, Drzewcowa, Dwuręczna, Kawaleryjska, Korbacze, Parująca, Szermiercza.</p>",
-                    "originalName": "Melee",
+                    "name": "Broń Biała (Podstawowa)",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
+                    "originalName": "Broń Biała",
                     "sourceId": "Compendium.wfrp4e-core.skills.F8NfBZdVSEIGCMtu"
                 },
                 "MeXCAQ3wqJzX07X7": {
                     "id": "MeXCAQ3wqJzX07X7",
-                    "name": "Jeździectwo ()",
-                    "description": "<p>Ta Umiejętność określa, jak dobrze radzisz sobie z jeżdżeniem na określonym rodzaju zwierząt. Jeździectwo (Konie) pozwala ci dosiadać koni, mułów czy osłów i im podobnych. Testy Jeździectwa musisz wykonywać jedynie wtedy, gdy podejmujesz się czegoś niecodziennego: zmuszasz rumaka do wyścigu, podejmujesz się ujeżdżania, pokonujesz niebezpieczny teren czy szarżujesz do walki. Jeśli robisz coś prostszego i posiadasz choć jeden punkt Rozwinięcia w tej Umiejętności, działanie kończy się sukcesem bez Testu.</p><p>Dosiadając wierzchowca, poruszasz się z jego Szybkością, a jeśli zmuszasz go do skoków czy biegu, wykonujesz Test Jeździectwa, a nie Atletyki. Jeśli gnasz do dalekiego celu, może być wymagany Wydłużony Test Jeździectwa, a liczba potrzebnych PS zależy od odległości do pokonania. Liczba wymaganych Testów będzie wskazywała na to, jak daleko jest do punktu docelowego. Na Testy Jeździectwa mogą wpływać modyfikatory związane z warunkami pogodowymi czy narowistością wierzchowca. Więcej informacji o nich znajduje się w Rozdziale 12: Bestiariusz.</p><p>Jeździectwo jest niezwykle przydatne i często wykorzystywane w walce, co opisano w Rozdziale 5: Zasady</p><p>Specjalizacje: Konie, Gryfy, Pegazy, Półgryfy, Wielkie Wilki</p>",
-                    "originalName": "Ride",
+                    "name": "Jeździectwo",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Jeździectwo}</p>",
+                    "originalName": "Jeździectwo",
                     "sourceId": "Compendium.wfrp4e-core.skills.MeXCAQ3wqJzX07X7"
                 },
                 "McTtmZu3Ac8Lh48W": {
                     "id": "McTtmZu3Ac8Lh48W",
-                    "name": "Skradanie ()",
-                    "description": "<p>Ta Umiejętność pozwala ci na podkradanie się i ukrywanie w lepszym stopniu niż innym. Testy Skradania są Testami Przeciwstawnymi, wykonywanymi przeciwko Percepcji przeciwnika i modyfikowanymi przez warunki, takie jak ciemność, łatwość ukrycia się w trakcie przemykania czy choćby twój ubiór. Spora lub Zdumiewająca Porażka podczas Testu Skradania oznacza, że ściągasz na siebie uwagę wrogów, przed którymi chciałeś się ukryć.</p><p>Skradanie się może mieć wiele zastosowań w walce. Pierwszym przychodzącym na myśl jest ukrycie się, by przygotować zasadzkę lub by zakraść się i zaatakować od tyłu. Rozdział 5: Zasady opisuje, co się wtedy dzieje. Skradania można też użyć, by niepostrzeżenie dać nogę, jeśli walka nie idzie po naszej myśli...</p><p>Specjalizacje: Podziemia, Miasto, Wieś.</p><p>Śledzenie to nic innego, jak podążanie za kimś tak, by o tym nie wiedział. Wymaga to Łączonego Testu Percepcji i Skradania. Jeśli cel próbuje zgubić ogon, Test staje się Przeciwstawny, wykonywany przeciwko Skradaniu się śledzonego. Jeśli uda ci się Test Percepcji, ale nie Skradania, podążasz za celem, ale zostajesz zauważony. Jeśli uda się Test Skradania, ale nie Percepcji, to tracisz cel z oczu, ale pozostajesz niezauważony.</p>",
-                    "originalName": "Stealth",
+                    "name": "Skradanie",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Skradanie}</p>",
+                    "originalName": "Skradanie",
                     "sourceId": "Compendium.wfrp4e-core.skills.McTtmZu3Ac8Lh48W"
                 }
             }
@@ -207,12 +207,12 @@
             "description": "<section id=\"secret-cSI55YBJfss3QSgb\" class=\"secret\"><p>Należą do najżałośniejszych stworzeń w Starym Świecie. Ghule to brzydkie, zgarbione stwory o bladej, brudnej skórze i ostrych, żółtych zębach, którymi zdzierają ciało z kości ofiar. Ghule podążają za magicznymi energiami Shyish i Dhar, co w praktyce oznacza, że ściągają na cmentarze i do krypt oraz krążą po polach bitew.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.6B7LMdYtunAftsFN",
             "gender": "???",
-            "species": "Ghoul",
+            "species": "Ghul",
             "effects": {
                 "yuPctOwSU2nLHscr": {
                     "id": "yuPctOwSU2nLHscr",
                     "label": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Prosty (+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "ZxTHLjvTvkErPA1u": {
                     "id": "ZxTHLjvTvkErPA1u",
@@ -235,10 +235,10 @@
         "Boar": {
             "id": "7629Eaow3acVS59H",
             "name": "Dzik",
-            "description": "<section id=\"secret-0mOdzM97CZBimHFw\" class=\"secret\"><p>Buszujące po lasach dziki to stworzenia skryte, ale osaczone walczą, używając ostrych kłów z zaciekłością, która szokuje nieprzygotowanych. Chociaż większość dzików ma 150-180 cm długości, niektóre osiągają niezwykłe rozmiary. Największe okazy cenione są przez orki, które wykorzystują je jako przerażające wierzchowce bojowe.</p></section>",
+            "description": "<section id=\"secret-0mOdzM97CZBimHFw\" class=\"secret\"><p>Buszujące po lasach dziki to stworzenia skryte, ale osaczone walczą, używając ostrych kłów z zaciekłością, która szokuje nieprzygotowanych. Chociaż większość dzików ma 150–180 cm długości, niektóre osiągają niezwykłe rozmiary. Największe okazy cenione są przez orki, które wykorzystują je jako przerażające wierzchowce bojowe.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.7629Eaow3acVS59H",
             "gender": "Różne",
-            "species": "Boar",
+            "species": "Dzik",
             "effects": {
                 "1Um0xlQTwtLEaw15": {
                     "id": "1Um0xlQTwtLEaw15",
@@ -248,7 +248,7 @@
                 "2ubzZUjCYNhscBVW": {
                     "id": "2ubzZUjCYNhscBVW",
                     "label": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Prosty (+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "b2wHjjEjkMI6a2mS": {
                     "id": "b2wHjjEjkMI6a2mS",
@@ -258,12 +258,12 @@
                 "gI0E1Xb8OT8EvZ9R": {
                     "id": "gI0E1Xb8OT8EvZ9R",
                     "label": "Pancerz",
-                    "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+                    "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "QmzFxVck35BuGoMx": {
                     "id": "QmzFxVck35BuGoMx",
                     "label": "Szał Bojowy",
-                    "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
+                    "script": "args.actor.characteristics.s.bonus += 1;\nargs.actor.characteristics.s.calculationBonusModifier -= 1;"
                 }
             },
             "items": {
@@ -271,10 +271,10 @@
                     "specification": "Duży"
                 },
                 "bLW0cKRs9EDtId10": {
-                    "specification": "Wojna"
+                    "specification": "Magia"
                 },
                 "uVaf1rjJNaFaTknG": {
-                    "specification": "Mount"
+                    "specification": "Wierzchowiec"
                 },
                 "5HX4M27jZmJd8vAj": {
                     "specification": "1"
@@ -283,18 +283,18 @@
                     "specification": "3"
                 },
                 "yuPO362FIauTTjBO": {
-                    "specification": "Broken"
+                    "specification": "Panika"
                 },
                 "CRp7bes9VRquV1ND": {
-                    "specification": "War"
+                    "specification": "Wojna"
                 },
                 "TN5IjqMpGoM7FQTc": {
                     "id": "TN5IjqMpGoM7FQTc",
-                    "name": "Rogi ()",
+                    "name": "Rogi (Kły)",
                     "description": "<p>Stworzenie ma rogi lub inne ostre wyrostki (jeśli jego Cecha Stworzenia Rogi reprezentuje coś innego, będzie to określone w nawiasie). Gdy stworzenie zyskuje Przewagę na skutek Szarżowania, może wykonać Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podaną wartość Obrażeń (Bonus z Siły stworzenia jest już wliczony).</p>",
-                    "originalName": "Horns (Tusks)",
+                    "originalName": "Horns (Kły)",
                     "sourceId": "Compendium.wfrp4e-core.traits.BqPZn6q3VHn9HUrW",
-                    "specification": "#"
+                    "specification": "3"
                 }
             }
         },
@@ -310,7 +310,7 @@
                     "id": "0nMFfaZyQkgXL83f",
                     "name": "Strzelanie (50)",
                     "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
-                    "originalName": "Ranged (50)",
+                    "originalName": "Strzelanie (50)",
                     "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
                     "specification": "8"
                 },
@@ -319,37 +319,37 @@
                 },
                 "fdq3RFSOKl5b3WzW": {
                     "id": "fdq3RFSOKl5b3WzW",
-                    "name": "Sztuka ()",
-                    "description": "<p>Potrafisz tworzyć dzieła sztuki w jednej z jej licznych odmian. Brak fachowych narzędzi może wiązać się z negatywnymi modyfikatorami do Testu. Poziomy Sukcesu osiągnięte podczas Testu określają, jak wysokiej jakości jest tworzone dzieło. Skomplikowane lub duże przedsięwzięcie artystyczne może wymagać Testu Wydłużonego. Umiejętność tworzenia dzieł sztuki ma niewielkie zastosowanie w walce, ale marmurowe popiersie może być rzydatne, gdy zwali się je przeciwnikowi na głowę.</p>",
-                    "originalName": "Art",
+                    "name": "Sztuka (Dowolna)",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
+                    "originalName": "Sztuka",
                     "sourceId": "Compendium.wfrp4e-core.skills.fdq3RFSOKl5b3WzW"
                 },
                 "0CwV96kTDRF0jUhk": {
                     "id": "0CwV96kTDRF0jUhk",
-                    "name": "Występy ()",
-                    "description": "<p>Ta Umiejętność pozwala ci zabawiać tłumy słowem mówionym, być może śpiewem, odgrywaniem ról lub nawet dowcipem. Udany Test oznacza, że widzowie słuchali występu, a PS wskazują, jak dobrze wypadłeś. W walce Występy mają raczej skromne zastosowanie, choć aktorstwo można wykorzystać, by zwieść lub oszukać przeciwników</p><p><b>Specjalizacje:</b> Aktorstwo, Gawędziarstwo, Komedianctwo, Śpiewanie.</p>",
-                    "originalName": "Entertain",
+                    "name": "Występy (Dowolne)",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Występy}</p>",
+                    "originalName": "Występy",
                     "sourceId": "Compendium.wfrp4e-core.skills.0CwV96kTDRF0jUhk"
                 },
                 "F8NfBZdVSEIGCMtu": {
                     "id": "F8NfBZdVSEIGCMtu",
-                    "name": "Broń Biała ()",
-                    "description": "<p>Ta Umiejętność opisuje twoją sprawność w posługiwaniu się rodzajem broni do walki wręcz. Każda Specjalizacja w Broni Białej oznacza, że zostałeś wyszkolony w walce daną kategorią oręża. Jeśli chcesz lub przyjdzie ci walczyć bronią, w której nie jesteś wyszkolony, zajrzyj do Rozdziału 11: Przewodnik konsumenta, gdzie w opisie broni znajdziesz zasady i negatywne modyfikatory stosowane w tej sytuacji. Rozdział 5: Zasady bardziej szczegółowo opisuje walkę i wykorzystanie tej Umiejętności.</p><p>Specjalizacje: Podstawowa, Bijatyka, Drzewcowa, Dwuręczna, Kawaleryjska, Korbacze, Parująca, Szermiercza.</p>",
-                    "originalName": "Melee",
+                    "name": "Broń Biała (Podstawowa)",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
+                    "originalName": "Broń Biała",
                     "sourceId": "Compendium.wfrp4e-core.skills.F8NfBZdVSEIGCMtu"
                 },
                 "MeXCAQ3wqJzX07X7": {
                     "id": "MeXCAQ3wqJzX07X7",
-                    "name": "Jeździectwo ()",
-                    "description": "<p>Ta Umiejętność określa, jak dobrze radzisz sobie z jeżdżeniem na określonym rodzaju zwierząt. Jeździectwo (Konie) pozwala ci dosiadać koni, mułów czy osłów i im podobnych. Testy Jeździectwa musisz wykonywać jedynie wtedy, gdy podejmujesz się czegoś niecodziennego: zmuszasz rumaka do wyścigu, podejmujesz się ujeżdżania, pokonujesz niebezpieczny teren czy szarżujesz do walki. Jeśli robisz coś prostszego i posiadasz choć jeden punkt Rozwinięcia w tej Umiejętności, działanie kończy się sukcesem bez Testu.</p><p>Dosiadając wierzchowca, poruszasz się z jego Szybkością, a jeśli zmuszasz go do skoków czy biegu, wykonujesz Test Jeździectwa, a nie Atletyki. Jeśli gnasz do dalekiego celu, może być wymagany Wydłużony Test Jeździectwa, a liczba potrzebnych PS zależy od odległości do pokonania. Liczba wymaganych Testów będzie wskazywała na to, jak daleko jest do punktu docelowego. Na Testy Jeździectwa mogą wpływać modyfikatory związane z warunkami pogodowymi czy narowistością wierzchowca. Więcej informacji o nich znajduje się w Rozdziale 12: Bestiariusz.</p><p>Jeździectwo jest niezwykle przydatne i często wykorzystywane w walce, co opisano w Rozdziale 5: Zasady</p><p>Specjalizacje: Konie, Gryfy, Pegazy, Półgryfy, Wielkie Wilki</p>",
-                    "originalName": "Ride",
+                    "name": "Jeździectwo",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Jeździectwo}</p>",
+                    "originalName": "Jeździectwo",
                     "sourceId": "Compendium.wfrp4e-core.skills.MeXCAQ3wqJzX07X7"
                 },
                 "McTtmZu3Ac8Lh48W": {
                     "id": "McTtmZu3Ac8Lh48W",
-                    "name": "Skradanie ()",
-                    "description": "<p>Ta Umiejętność pozwala ci na podkradanie się i ukrywanie w lepszym stopniu niż innym. Testy Skradania są Testami Przeciwstawnymi, wykonywanymi przeciwko Percepcji przeciwnika i modyfikowanymi przez warunki, takie jak ciemność, łatwość ukrycia się w trakcie przemykania czy choćby twój ubiór. Spora lub Zdumiewająca Porażka podczas Testu Skradania oznacza, że ściągasz na siebie uwagę wrogów, przed którymi chciałeś się ukryć.</p><p>Skradanie się może mieć wiele zastosowań w walce. Pierwszym przychodzącym na myśl jest ukrycie się, by przygotować zasadzkę lub by zakraść się i zaatakować od tyłu. Rozdział 5: Zasady opisuje, co się wtedy dzieje. Skradania można też użyć, by niepostrzeżenie dać nogę, jeśli walka nie idzie po naszej myśli...</p><p>Specjalizacje: Podziemia, Miasto, Wieś.</p><p>Śledzenie to nic innego, jak podążanie za kimś tak, by o tym nie wiedział. Wymaga to Łączonego Testu Percepcji i Skradania. Jeśli cel próbuje zgubić ogon, Test staje się Przeciwstawny, wykonywany przeciwko Skradaniu się śledzonego. Jeśli uda ci się Test Percepcji, ale nie Skradania, podążasz za celem, ale zostajesz zauważony. Jeśli uda się Test Skradania, ale nie Percepcji, to tracisz cel z oczu, ale pozostajesz niezauważony.</p>",
-                    "originalName": "Stealth",
+                    "name": "Skradanie",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Skradanie}</p>",
+                    "originalName": "Skradanie",
                     "sourceId": "Compendium.wfrp4e-core.skills.McTtmZu3Ac8Lh48W"
                 }
             }
@@ -357,15 +357,15 @@
         "Troll": {
             "id": "7qslmdLa7so3BmFk",
             "name": "Troll",
-            "description": "<section id=\"secret-6aymVnM91tQxg16V\" class=\"secret\"><blockquote><p>Zapewniam, sir, że przeprowadziliśmy szeroko zakrojone badania w tej dziedzinie i w ich trakcie straciliśmy kilku z naszych najodważniejszych taksonomistów. W tej chwili w Imperium żyją dokładnie dwadzieścia trzy odmiany trolla – wliczając w to siedemnaście podgatunków i dwie niepotwierdzone obserwacje, które nie zostały jeszcze sklasyfikowane. Towarzystwo Imperialne zostało założone właśnie po to, by\nzapewniać taki poziom szczegółów; wiemy, że podawane przez nas liczby są ścisłe.</p><p style=\"text-align: right;\"><em>– Ignatius z Nuln, uczony</em></p></blockquote>\n<p>Trolle to brudne, wstrętne stwory, które nękają wszystkie zakątki Starego Świata. Szybko dostosowują się do otoczenia i występują w różnych odmianach. Wszystkie jednak są wielkie i okazałe. To stworzenia tępe i kierowane instynktem poszukiwania żarcia, ale lubią gromadzić też inne dobra. Leża trolli mogą skrywać przydatne i cenne skarby... A także okropne resztki ich posiłków. Chociaż istnieje wiele gatunków trolli, wszystkie mają pewne wspólne cechy: zazwyczaj są niezwykle głupie, co oznacza, że każdy bystry przeciwnik ma nad nimi przewagę; mogą się regenerować, co sprawia, że niezwykle trudno je zabić; a także potrafią na zawołanie zwrócić ostatni posiłek, wymiotując żrącą żółcią na szokująco dużą odległość - chociaż nie cierpią tego robić, ponieważ są potem straszliwie głodne.</p></section>",
+            "description": "<section id=\"secret-6aymVnM91tQxg16V\" class=\"secret\"><blockquote><p>Zapewniam, sir, że przeprowadziliśmy szeroko zakrojone badania w tej dziedzinie i w ich trakcie straciliśmy kilku z naszych najodważniejszych taksonomistów. W tej chwili w Imperium żyją dokładnie dwadzieścia trzy odmiany trolla – wliczając w to siedemnaście podgatunków i dwie niepotwierdzone obserwacje, które nie zostały jeszcze sklasyfikowane. Towarzystwo Imperialne zostało założone właśnie po to, by zapewniać taki poziom szczegółów; wiemy, że podawane przez nas liczby są ścisłe.</p><p style=\"text-align: right;\"><em>– Ignatius z Nuln, uczony</em></p></blockquote><p> Trolle to brudne, wstrętne stwory, które nękają wszystkie zakątki Starego Świata. Szybko dostosowują się do otoczenia i występują w różnych odmianach. Wszystkie jednak są wielkie i okazałe. To stworzenia tępe i kierowane instynktem poszukiwania żarcia, ale lubią gromadzić też inne dobra. Leża trolli mogą skrywać przydatne i cenne skarby... A także okropne resztki ich posiłków. Chociaż istnieje wiele gatunków trolli, wszystkie mają pewne wspólne cechy: zazwyczaj są niezwykle głupie, co oznacza, że każdy bystry przeciwnik ma nad nimi przewagę; mogą się regenerować, co sprawia, że niezwykle trudno je zabić; a także potrafią na zawołanie zwrócić ostatni posiłek, wymiotując żrącą żółcią na szokująco dużą odległość – chociaż nie cierpią tego robić, ponieważ są potem straszliwie głodne.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.7qslmdLa7so3BmFk",
-            "gender": "Varies",
+            "gender": "Różne",
             "species": "Troll",
             "effects": {
                 "0RSawVy6iLMk3d3Z": {
                     "id": "0RSawVy6iLMk3d3Z",
                     "label": "Regeneracja",
-                    "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")}\n\nlet wounds = duplicate(this.actor.status.wounds)\nlet regen = (await new Roll(\"1d10\").roll()).total\n\nif (wounds.value >= wounds.max)\n   return\n\nif (wounds.value > 0)\n{\n   wounds.value += regen\n   if (wounds.value > wounds.max) \n        wounds.value = wounds.max\n   chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`\n   \n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse if (regen >= 8)\n{\n    chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n    wounds.value += 1\n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse\n{\n    chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n}\n\nthis.actor.update({\"system.status.wounds\" : wounds})\nChatMessage.create(chatData)"
+                    "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")};\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> Odzyskana żywotność:  ${regen} .`;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`;\n      }\n   }\n   else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> wyrzucił ${regen} i odzyskał 1 punkt żywotności.`\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`\n      }\n   }\n   else {\n      chatData.content += `<b>${this.actor.name}</b> Rzut na regenerację: ${regen} - brak efektu.`\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}"
                 },
                 "0usIukVS0gAmrqPq": {
                     "id": "0usIukVS0gAmrqPq",
@@ -384,27 +384,27 @@
                 "iZcLi1wlNXiV2Yvh": {
                     "id": "iZcLi1wlNXiV2Yvh",
                     "label": "Skryty",
-                    "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Stealth\"))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+                    "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 },
                 "og3WYIZ7LGZlE898": {
                     "id": "og3WYIZ7LGZlE898",
                     "label": "Szał Bojowy",
-                    "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
+                    "script": "args.actor.characteristics.s.bonus += 1;\nargs.actor.characteristics.s.calculationBonusModifier -= 1;"
                 },
                 "PydwaFG00Dz7lsLg": {
                     "id": "PydwaFG00Dz7lsLg",
                     "label": "Pancerz",
-                    "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+                    "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "Qv9IU50A1hEVAXl1": {
                     "id": "Qv9IU50A1hEVAXl1",
                     "label": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Prosty (+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "rJYy8szkNGqUs605": {
                     "id": "rJYy8szkNGqUs605",
                     "label": "Ziemnowodny",
-                    "script": "if (args.type == \"skill\" && args.item.name == \"Swim\")\n    args.prefillModifiers.slBonus += this.actor.characteristics.ag.bonus"
+                    "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Swim\")) {\n    args.prefillModifiers.slBonus += this.actor.characteristics.ag.bonus;\n}"
                 }
             },
             "items": {
@@ -425,15 +425,15 @@
         "Griffon": {
             "id": "8g9rnHLiZ1pJcPPt",
             "name": "Gryf",
-            "description": "<section id=\"secret-idJ9qUex4SNJsvUT\" class=\"secret\"><p>Posiadające przód ciała i skrzydła orła oraz zad wielkiego kota gryfy to eleganckie bestie o naturalnie dumnym i królewskim wyglądzie. Gniazdują wysoko w górach otaczających Imperium i są szybkimi, skutecznymi zabójcami, nieskorymi do bezmyślnego zniszczenia, jakiego dokonują stwory takie jak hipogryfy lub mantikory. Być może ze względu na ten pozór szlachetności wizerunek gryfa jest nadzwyczaj popularny w Imperium i wykorzystywany w heraldyce, ikonografii religijnej oraz jako symbol samego Imperium. Ponadto gryfy są jednymi z najinteligentniejszych zwierząt. Jeśli zostaną schwytane stosunkowo młode i poddane prawidłowemu szkoleniu, mogą być niesamowicie wierne, zdolne do przewidywania i posłusznego wykonywania szerokiego wachlarza komend. Są tak bardzo poszukiwane, że co rusz słyszy się o myśliwym, który stracił życie, próbując zdobyć jaja gryfa na sprzedaż. Prawdopodobnie najsłynniejszym gryfem w Reiklandzie jest Szpon Śmierci. Trzymany w Imperialnym Zwierzyńcu w Altdorfie Szpon Śmierci stanowi osobistą własność następcy tronu Reiklandu i podobno wykluł się dzięki troskliwej opiece samego Imperatora Karla-Franza - ta opowieść zapoczątkowała drukowanie wszelkiego rodzaju sprośnych karykatur w wywrotowych pamfletach.</p></section>",
+            "description": "<section id=\"secret-idJ9qUex4SNJsvUT\" class=\"secret\"><p>Posiadające przód ciała i skrzydła orła oraz zad wielkiego kota gryfy to eleganckie bestie o naturalnie dumnym i królewskim wyglądzie. Gniazdują wysoko w górach otaczających Imperium i są szybkimi, skutecznymi zabójcami, nieskorymi do bezmyślnego zniszczenia, jakiego dokonują stwory takie jak hipogryfy lub mantikory. Być może ze względu na ten pozór szlachetności wizerunek gryfa jest nadzwyczaj popularny w Imperium i wykorzystywany w heraldyce, ikonografii religijnej oraz jako symbol samego Imperium. Ponadto gryfy są jednymi z najinteligentniejszych zwierząt. Jeśli zostaną schwytane stosunkowo młode i poddane prawidłowemu szkoleniu, mogą być niesamowicie wierne, zdolne do przewidywania i posłusznego wykonywania szerokiego wachlarza komend. Są tak bardzo poszukiwane, że co rusz słyszy się o myśliwym, który stracił życie, próbując zdobyć jaja gryfa na sprzedaż. Prawdopodobnie najsłynniejszym gryfem w Reiklandzie jest Szpon Śmierci. Trzymany w Imperialnym Zwierzyńcu w Altdorfie Szpon Śmierci stanowi osobistą własność następcy tronu Reiklandu i podobno wykluł się dzięki troskliwej opiece samego Imperatora Karla-Franza – ta opowieść zapoczątkowała drukowanie wszelkiego rodzaju sprośnych karykatur w wywrotowych pamfletach..</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.8g9rnHLiZ1pJcPPt",
             "gender": "Różne",
-            "species": "Griffon",
+            "species": "Gryf",
             "effects": {
                 "NY16gROis1ONxIjo": {
                     "id": "NY16gROis1ONxIjo",
                     "label": "Pancerz",
-                    "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+                    "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 }
             },
             "items": {
@@ -447,22 +447,22 @@
                     "specification": "4"
                 },
                 "zSSROwPpQKFuoM0d": {
-                    "specification": "8+"
+                    "specification": "80"
                 },
                 "Acy4D4CcywEojlk7": {
-                    "specification": "Wojna"
+                    "specification": "Panik"
                 },
                 "5yEIC347vMbYTl0f": {
-                    "specification": "Guard"
+                    "specification": "Strażnik"
                 },
                 "StY3iLfYUyRQklzy": {
-                    "specification": "Magic"
+                    "specification": "Magia"
                 },
                 "7lXkbQAvTraQ2JGT": {
-                    "specification": "Mount"
+                    "specification": "Wierzchowiec"
                 },
                 "4b5lFpAVTChvN7BB": {
-                    "specification": "War"
+                    "specification": "Wojna"
                 }
             }
         },
@@ -472,12 +472,12 @@
             "description": "<section id=\"secret-BXyeWId7fp0PJmOI\" class=\"secret\"><p>Podobnie jak wszystkie stwory Księcia Bólu i Rozkoszy, demonetki Slaanesha są jednocześnie piękne i budzące grozę. Otacza je nieziemski urok, który urąga wszelkiemu rozsądkowi i przeczy zdrowym zmysłom. Sprawia, że wrogowie są bezsilni, nie będąc w stanie stawiać oporu, zafascynowani bluźnierczą zmysłowością potwornych postaci. Demonetki mają kremową, bladą skórę i wielkie, głęboko czarne oczy. Ich delikatne skronie zdobią powiewające swobodnie włosy o nienaturalnej barwie. Ich smukłe ręce kończą się zakrzywionymi krabimi szczypcami zamiast dłońmi.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.8gG2Wim6wAlJWRax",
             "gender": "???",
-            "species": "Daemon",
+            "species": "Demon",
             "effects": {
                 "6McxapDczZuyQyg5": {
                     "id": "6McxapDczZuyQyg5",
                     "label": "Strach",
-                    "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postFear(value, name)\n}"
+                    "script": "let value = parseInt(this.item.specification.value);\nlet name = this.actor.prototypeToken.name;\nif (game.user.isGM && game.user.targets.size) {\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  });\n  game.user.updateTokenTargets([]);\n  game.user.broadcastActivity({targets: []})\n}\nelse {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 },
                 "c6x02cj76dxuPEnS": {
                     "id": "c6x02cj76dxuPEnS",
@@ -487,7 +487,7 @@
             },
             "items": {
                 "466DNyVpTyewrxzu": {
-                    "specification": "Nienadzwyczajna"
+                    "specification": "Średnie"
                 },
                 "khsYyhwNkMWJ1BNs": {
                     "specification": "8+"
@@ -503,15 +503,15 @@
         "Jabberslythe": {
             "id": "9q8QzWB4o7aj6ZxL",
             "name": "Dżabersmok",
-            "description": "<section id=\"secret-ZoRnOiMJetjmYnjP\" class=\"secret\"><p>Dżabersmoki to prastare stwory Chaosu, które czają się pod cienistymi okapami najgłębszych, najciemniejszych lasów. To szaleńcze stworzenia. Dżabersmok stanowi odrażające połączenie ropuchy, smoka mułowego i owada - wszystko to wypełnione kwasową, czarną krwią, która tryska obficie z najmniejszej rany. Co gorsza, sam widok tego koszmaru przyprawia o utratę zdrowych zmysłów. Ofiara bełkocze, szwargocze bez ładu i składu, rzuca się z pazurami do oczu i rechocze szaleńczym śmiechem. To ułatwia dżabersmokowi jej zdobycie. </p><p>Nie koniec na tym. Dżabersmok ma lepki jęzor, którym może atakować i wciągać kolejny posiłek do rozdziawionej gęby. Jak przystało na jego wygląd, stwór chodzi, kiwając się nieporadnie, a nawet posiada skrzydła, które są jednak za małe, by mogły faktycznie poderwać nadęte cielsko.</p></section>",
+            "description": "<section id=\"secret-ZoRnOiMJetjmYnjP\" class=\"secret\"><p>Dżabersmoki to prastare stwory Chaosu, które czają się pod cienistymi okapami najgłębszych, najciemniejszych lasów. To szaleńcze stworzenia. Dżabersmok stanowi odrażające połączenie ropuchy, smoka mułowego i owada – wszystko to wypełnione kwasową, czarną krwią, która tryska obficie z najmniejszej rany. Co gorsza, sam widok tego koszmaru przyprawia o utratę zdrowych zmysłów. Ofiara bełkocze, szwargocze bez ładu i składu, rzuca się z pazurami do oczu i rechocze szaleńczym śmiechem. To ułatwia dżabersmokowi jej zdobycie. </p><p>Nie koniec na tym. Dżabersmok ma lepki jęzor, którym może atakować i wciągać kolejny posiłek do rozdziawionej gęby. Jak przystało na jego wygląd, stwór chodzi, kiwając się nieporadnie, a nawet posiada skrzydła, które są jednak za małe, by mogły faktycznie poderwać nadęte cielsko..</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.9q8QzWB4o7aj6ZxL",
             "gender": "Różne",
-            "species": "Jabberslythe",
+            "species": "Dżabersmok",
             "effects": {
                 "hOe0V10JbyWGeTVZ": {
                     "id": "hOe0V10JbyWGeTVZ",
                     "label": "Pancerz",
-                    "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+                    "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "jvE7KJwJTJJJcOip": {
                     "id": "jvE7KJwJTJJJcOip",
@@ -521,7 +521,7 @@
                 "K11BUhxEOwL0OmRR": {
                     "id": "K11BUhxEOwL0OmRR",
                     "label": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Infected: ${args.actor.name}</b> must pass an <b>Easy (+40) Endurance</b> Test or gain a @Compendium[wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Festering Wound}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Prosty (+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "naCAi2JxEh991ITv": {
                     "id": "naCAi2JxEh991ITv",
@@ -531,7 +531,7 @@
                 "UymeVioxlCVCkCcu": {
                     "id": "UymeVioxlCVCkCcu",
                     "label": "Atak Ogonem",
-                    "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value]\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value]\n\nif (attackerSize > actorSize)\n{\n   args.actor.addCondition(\"prone\")\n   ChatMessage.create({content: `<b>Tail Attack</b>: ${args.actor.prototypeToken.name} is now @Condition[Prone]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
+                    "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value];\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value];\nif (attackerSize > actorSize) {\n   args.actor.addCondition(\"prone\");\n   ChatMessage.create({content: `<b>Atak Ogonem</b>: ${args.actor.prototypeToken.name} otrzymuje Stan @Condition[Powalenie]`, speaker : {alias: args.attacker.prototypeToken.name}});\n}"
                 },
                 "Z32WU7rxN7WD0p19": {
                     "id": "Z32WU7rxN7WD0p19",
@@ -558,8 +558,8 @@
                 "PgSdNDqWz5I7nh2V": {
                     "id": "PgSdNDqWz5I7nh2V",
                     "name": "Atak Językiem (12)",
-                    "description": "<p>Chwytny język stworzenia może owijać się wokół ofiary, wciągając ją aż do makabrycznego końca. W swojej Turze stworzenie może wykonać Darmowy Atak, wydając 1 Przewagę. To atak dystansowy, który zadaje tyle Obrażeń, ile wynosi podana wartość (zasięg podany jest w nawiasie). Jeśli atak trafi, cel dostaje 1 Stan Pochwycenie, a jeśli ma mniejszy Rozmiar, zostaje przyciągnięty do stworzenia i Związany Walką wręcz. Stworzenie może następnie zdecydować, czy wypuści cel, wykonując Darmowy Atak z użyciem swojej cechy Broń, czy będzie trzymać cel owinięty językiem, zapoczątkowując Chwyt.</p>",
-                    "originalName": "Tongue Attack (12)",
+                    "description": "<p>Chwytny język stworzenia może owijać się wokół ofiary, wciągając ją aż do makabrycznego końca. W swojej Turze stworzenie może wykonać Darmowy Atak, wydając 1 Przewagę. To atak dystansowy, który zadaje tyle Obrażeń, ile wynosi podana wartość (zasięg podany jest w nawiasie). Jeśli atak trafi, cel dostaje 1 Stan <i>Pochwycenie</i>, a jeśli ma mniejszy <i>Rozmiar</i>, zostaje przyciągnięty do stworzenia i Związany Walką wręcz. Stworzenie może następnie zdecydować, czy wypuści cel, wykonując Darmowy Atak z użyciem swojej cechy <i>Broń</i>, czy będzie trzymać cel owinięty językiem, zapoczątkowując Chwyt (patrz strona 163).</p>",
+                    "originalName": "Atak Językiem (12)",
                     "sourceId": "Compendium.wfrp4e-core.traits.xg6z63j6BH5AaqLL",
                     "specification": "+5"
                 }
@@ -568,7 +568,7 @@
         "Chaos Warrior": {
             "id": "a05lQsGjSv62wF0U",
             "name": "Wojownik Chaosu",
-            "description": "<section id=\"secret-UmFQtYU7axewKKpu\" class=\"secret\"><blockquote><p>Największe zagrożenie leży na ponurej północy. To wytwór innego miejsca, innego czasu, który spadł na nas z powodu nieszczęścia lub błędu dawno martwych bogów. Żarłocznie pożera nasz świat, trzęsąc się z niecierpliwości, wysyłając hordy najbardziej wojowniczych i zazdrosnych ludów ze wszystkich: naszych własnych krewniaków, plemiona ludzi.</p><p style=\"text-align: right;\"><em>— Phitzer, wissenlandzki czarownik</em></p></blockquote>\n<p>Ciężko uzbrojone i zwaliste brutale w pancerzach ozdobionych kolcami i symbolami swoich bóstw wywołującymi zabobonny strach - wojownicy Chaosu zdecydowanie nie są już ludźmi. Nic nie pozostało z ich wcześniejszego życia. Istnieją wyłącznie po to, by służyć swojemu mrocznemu patronowi. Podczas gdy większość wojowników Chaosu to wywyższeni łupieżcy pochodzący z krain położonych daleko na północy, kilku wybranych kultystów może otrzymać od Mrocznych Bogów nagrodę w postaci Pancerza Chaosu. Taka zbroja daje im wielką potęgę, a ceną jest to, że nie będą mogli jej zdjąć, dopóki będą żyli. Ponieważ niewielu wojowników może się z nimi mierzyć w walce, a żaden rycerz nie jest lepiej chroniony, zwykle żyją całkiem długo.</p></section>",
+            "description": "<section id=\"secret-UmFQtYU7axewKKpu\" class=\"secret\"><blockquote><p>Największe zagrożenie leży na ponurej północy. To wytwór innego miejsca, innego czasu, który spadł na nas z powodu nieszczęścia lub błędu dawno martwych bogów. Żarłocznie pożera nasz świat, trzęsąc się z niecierpliwości, wysyłając hordy najbardziej wojowniczych i zazdrosnych ludów ze wszystkich: naszych własnych krewniaków, plemiona ludzi..</p><p style=\"text-align: right;\"><em>— Phitzer, wissenlandzki czarownik</em></p></blockquote>\n<p>Ciężko uzbrojone i zwaliste brutale w pancerzach ozdobionych kolcami i symbolami swoich bóstw wywołującymi zabobonny strach – wojownicy Chaosu zdecydowanie nie są już ludźmi. Nic nie pozostało z ich wcześniejszego życia. Istnieją wyłącznie po to, by służyć swojemu mrocznemu patronowi. Podczas gdy większość wojowników Chaosu to wywyższeni łupieżcy pochodzący z krain położonych daleko na północy, kilku wybranych kultystów może otrzymać od Mrocznych Bogów nagrodę w postaci Pancerza Chaosu. Taka zbroja daje im wielką potęgę, a ceną jest to, że nie będą\nmogli jej zdjąć, dopóki będą żyli. Ponieważ niewielu wojowników może się z nimi mierzyć w walce, a żaden rycerz nie jest lepiej chroniony, zwykle żyją całkiem długo.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.a05lQsGjSv62wF0U",
             "gender": "???",
             "species": "???",
@@ -576,12 +576,12 @@
                 "2EnGjwTeLDzY8fl4": {
                     "id": "2EnGjwTeLDzY8fl4",
                     "label": "Szał Bojowy",
-                    "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
+                    "script": "args.actor.characteristics.s.bonus += 1;\nargs.actor.characteristics.s.calculationBonusModifier -= 1;"
                 },
                 "2XnJOh6bY4dL2aHK": {
                     "id": "2XnJOh6bY4dL2aHK",
                     "label": "Pancerz",
-                    "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+                    "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "B7KcEOJcl8VapKin": {
                     "id": "B7KcEOJcl8VapKin",
@@ -594,7 +594,7 @@
                     "specification": "5"
                 },
                 "ISAlKlZTpzGmmufs": {
-                    "specification": "Pomniejsza"
+                    "specification": "Pomniejsze"
                 },
                 "pkG19GQLxPQvo9Ip": {
                     "specification": "Chaos"
@@ -606,7 +606,7 @@
             "name": "Hydra",
             "description": "<section id=\"secret-y3bSlbe8NGBkeQXt\" class=\"secret\"><p>Wielogłowa, przypominająca jaszczura hydra ma ciężkie ciało podtrzymujące plątaninę szyi i łbów, które zioną dymiącym ogniem i wściekle kąsają. To zaskakująco zaciekłe i skryte stwory. Hydry potrafią skradać się za ofiarą przez wiele kilometrów, jednak zwykle tracą cierpliwość i rzucają się do ataku przy akompaniamencie ryku ze wszystkich paszcz.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.A4G4bTYxot3ZygZO",
-            "gender": "Varies",
+            "gender": "Różne",
             "species": "Hydra",
             "effects": {
                 "0MLUyVBvdjHhCNj7": {
@@ -627,22 +627,22 @@
                 "hEkj1nU1brRzYRyo": {
                     "id": "hEkj1nU1brRzYRyo",
                     "label": "Pancerz",
-                    "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+                    "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "qvLucnQHOAXPt0q4": {
                     "id": "qvLucnQHOAXPt0q4",
                     "label": "Tropiciel",
-                    "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Track\"))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+                    "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\"))) {\n   let sl = this.actor.characteristics.i.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 },
                 "YG6qLpm09WrEm3VK": {
                     "id": "YG6qLpm09WrEm3VK",
                     "label": "Skryty",
-                    "script": "if (args.type == \"skill\" &&  args.item.name.includes(\"Stealth\"))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+                    "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 },
                 "yXWM7kW5OtrJn11h": {
                     "id": "yXWM7kW5OtrJn11h",
                     "label": "Regeneracja",
-                    "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")}\n\nlet wounds = duplicate(this.actor.status.wounds)\nlet regen = (await new Roll(\"1d10\").roll()).total\n\nif (wounds.value >= wounds.max)\n   return\n\nif (wounds.value > 0)\n{\n   wounds.value += regen\n   if (wounds.value > wounds.max) \n        wounds.value = wounds.max\n   chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`\n   \n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse if (regen >= 8)\n{\n    chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n    wounds.value += 1\n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse\n{\n    chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n}\n\nthis.actor.update({\"system.status.wounds\" : wounds})\nChatMessage.create(chatData)"
+                    "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")};\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> Odzyskana żywotność:  ${regen} .`;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`;\n      }\n   }\n   else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> wyrzucił ${regen} i odzyskał 1 punkt żywotności.`\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`\n      }\n   }\n   else {\n      chatData.content += `<b>${this.actor.name}</b> Rzut na regenerację: ${regen} - brak efektu.`\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}"
                 }
             },
             "items": {
@@ -651,11 +651,11 @@
                 },
                 "ewORSQXEbQj77ibt": {
                     "id": "ewORSQXEbQj77ibt",
-                    "name": "Zionięcie ()",
-                    "description": "<p>Stworzenie posługuje się zionięciem jako potężną bronią. W swojej Turze, kosztem 2 Przewag, może aktywować Zionięcie jako Darmowy Atak. Wybierz 1 cel, który stworzenie widzi w promieniu 20 + Bonus z Wytrzymałości metrów. Trafione zostają wszystkie postacie wokół tego celu w promieniu tylu metrów, ile wynosi Bonus z Siły, podobnie jak wszystkie postacie znajdujące się między stworzeniem a celem. Przeprowadź Test Przeciwstawny Umiejętności Strzeleckie/Unik przeciwko wszystkim objętym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Każdy cel, który przegrał Test, otrzymuje trafienie zadające wskazaną wartość Obrażeń. Co więcej, jeśli przy Cesze Stworzenia wymieniony jest jeden z opisanych niżej typów zionięcia, zastosuj wskazane zasady.</p><p><b>Dym</b>: Obszar wypełnia się dymem, który zasłania pole widzenia na tyle Rund, ile wynosi Bonus z Wytrzymałości.</p><p><b>Elektryczność</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Oszołomienie.</p><p><b>Kwas</b>: Noszony przez objęte efektem postaci pancerze oraz wszelka broń dostają 1 punkt Uszkodzeń.</p><p><b>Ogień</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Podpalenie.</p><p><b>Trucizna</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Zatrucie.</p><p><b>Zimno</b>: Cele dostają jeden Stan Oszołomiony za każde pełne 5 odniesionych Ran (minimalnie 1).</p><p>Stworzenie jest odporne na własne Zionięcie. Ten atak jest Magiczny.</p>",
-                    "originalName": "Breath (Fire)",
+                    "name": "Zionięcie (Ogień)",
+                    "description": "<p>Stworzenie posługuje się zionięciem jako potężną bronią. W swojej Turze, kosztem 2 Przewag, może aktywować <i>Zionięcie</i> jako Darmowy Atak. Wybierz 1 cel, który stworzenie widzi w promieniu\n20 + Bonus z Wytrzymałości metrów. Trafione zostają wszystkie postacie wokół tego celu w promieniu tylu metrów, ile wynosi Bonus z Siły, podobnie jak wszystkie postacie znajdujące się między\nstworzeniem a celem. Przeprowadź <b>Test Przeciwstawny Umiejętności Strzeleckie/Unik</b> przeciwko wszystkim objętym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Każdy cel, który przegrał Test, otrzymuje trafienie zadające wskazaną wartość Obrażeń. Co więcej, jeśli przy Cesze Stworzenia wymieniony jest jeden z opisanych niżej typów zionięcia, zastosuj wskazane zasady.</p><p><b>Ogień</b>Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan <i>Podpalenie</i></p>\n<p>Stworzenie jest odporne na własne <i>Zionięcie</i>. Ten atak jest <i>Magiczny</i></p>",
+                    "originalName": "Zionięcie (Ogień)",
                     "sourceId": "Compendium.wfrp4e-core.traits.uqGxFOEqeurwkAO3",
-                    "specification": "# (Typ)"
+                    "specification": "10"
                 },
                 "nAT0d32eoXu4bnlX": {
                     "specification": "Wielki"
@@ -668,7 +668,7 @@
             "description": "<section id=\"secret-tj8CFhFF60AgqJKX\" class=\"secret\"><p>Węże można znaleźć w całym Imperium, zwłaszcza w głębi lasów. Większość jest niegroźna, ale niektóre mają zabójczy jad lub potrafią udusić swoją ofiarę. Podobnie jak wiele stworzeń Starego Świata, mogą wyrosnąć do olbrzymich rozmiarów - jak ogromny żmij bagienny, który stanowi prawdziwe zagrożenie nawet dla najsilniejszego najemnika.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.AAiKqD1IoweDpJI7",
             "gender": "Różne",
-            "species": "Snake",
+            "species": "Wąz",
             "effects": {
                 "AZJmwDrTSFXmYbmZ": {
                     "id": "AZJmwDrTSFXmYbmZ",
@@ -697,7 +697,7 @@
                 "jlXEMtg1ZSF4Yp6S": {
                     "id": "jlXEMtg1ZSF4Yp6S",
                     "label": "Pancerz",
-                    "script": "let AP = args.actor.status.armour\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
+                    "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "lFRSbDt7k03dyVAN": {
                     "id": "lFRSbDt7k03dyVAN",
@@ -730,22 +730,22 @@
                     "specification": "2"
                 },
                 "sYb57bSJjriHLb4o": {
-                    "specification": "Wielki"
+                    "specification": "Niewielki"
                 },
                 "MIXJ4Z4cTkjADATO": {
-                    "specification": "Small"
+                    "specification": "Mały"
                 },
                 "N4goRWK3hHejmZp0": {
-                    "specification": "Little"
+                    "specification": "Drobny"
                 },
                 "9bZr7SFHPF78gakJ": {
-                    "specification": "Average"
+                    "specification": "Średni"
                 },
                 "tlgEXaWNYWcJ38pH": {
-                    "specification": "Large"
+                    "specification": "Duży"
                 },
                 "kaUNC2qBR8bHp3vu": {
-                    "specification": "Enormous"
+                    "specification": "Wielki"
                 },
                 "UjLUQN0Ucs4DXNEZ": {
                     "specification": "1"
@@ -859,7 +859,7 @@
                     "specification": "5"
                 },
                 "PZ3sgVNFEoCAHbxS": {
-                    "specification": "Pomniejsza"
+                    "specification": "Pomniejsze"
                 },
                 "sAFnvCirSrYDHnav": {
                     "specification": "Sierściawka"
@@ -892,7 +892,7 @@
             },
             "items": {
                 "IWpnxgGkNo5Alk3V": {
-                    "specification": "Pomniejsza"
+                    "specification": "Pomniejsze"
                 },
                 "R3QInQJ2s8snyqZL": {
                     "id": "R3QInQJ2s8snyqZL",
@@ -1375,7 +1375,7 @@
             },
             "items": {
                 "9ZXB9vC3i89BXcG7": {
-                    "specification": "Pomniejsza"
+                    "specification": "Pomniejsze"
                 },
                 "qY89UXoZDjo71poh": {
                     "specification": "3"
@@ -1608,7 +1608,7 @@
                     "specification": "5"
                 },
                 "qUPqH72HX7g7kvzq": {
-                    "specification": "Nienadzwyczajna"
+                    "specification": "Średnie"
                 },
                 "XFGqlcDggznmF6Jc": {
                     "specification": "8+"
@@ -1851,7 +1851,7 @@
                     "specification": "2"
                 },
                 "GonZNvC2WV2yDxBd": {
-                    "specification": "Pomniejsza"
+                    "specification": "Pomniejsze"
                 }
             }
         },
@@ -2028,7 +2028,7 @@
             "species": "???",
             "items": {
                 "CT2y2gt1mEdp7Z4l": {
-                    "specification": "Pomniejsza"
+                    "specification": "Pomniejsze"
                 },
                 "PAvotUwS46Wlcked": {
                     "id": "PAvotUwS46Wlcked",
@@ -2237,7 +2237,7 @@
                     "specification": "#"
                 },
                 "CwkLIxJOKxsgXuAx": {
-                    "specification": "Pomniejsza"
+                    "specification": "Pomniejsze"
                 },
                 "VPdpfIlsQA7WoBul": {
                     "specification": "Sierściawka"
@@ -2552,7 +2552,7 @@
                     "specification": "3"
                 },
                 "GWoF1sqHoCgSzYyd": {
-                    "specification": "Pomniejsza"
+                    "specification": "Pomniejsze"
                 },
                 "J8Aqp9R1G3f3RQsK": {
                     "specification": "Nekromancja"
@@ -2606,7 +2606,7 @@
                     "specification": "2"
                 },
                 "1H2FiYGipa8e0edP": {
-                    "specification": "Pomniejsza"
+                    "specification": "Pomniejsze"
                 }
             }
         },
@@ -2688,7 +2688,7 @@
                     "specification": "3"
                 },
                 "k0AyWgEi3764ZyYU": {
-                    "specification": "Pomniejsza"
+                    "specification": "Pomniejsze"
                 }
             }
         },
@@ -2734,7 +2734,7 @@
                     "specification": "Duży"
                 },
                 "jSiRZycNtvia4m05": {
-                    "specification": "Pomniejsza"
+                    "specification": "Pomniejsze"
                 },
                 "WcsBDkSTuQ7iUAGT": {
                     "specification": "Szczurza Gorączka"
@@ -2946,7 +2946,7 @@
                     "specification": "1"
                 },
                 "XhgXGogXguQlQYkF": {
-                    "specification": "Pomniejsza"
+                    "specification": "Pomniejsze"
                 },
                 "pGxwP5fqOGoe9G4b": {
                     "specification": "Sierściawka"
@@ -3073,7 +3073,7 @@
                     "specification": "Duży"
                 },
                 "DpYOWHWmBKACi60D": {
-                    "specification": "Pomniejsza"
+                    "specification": "Pomniejsze"
                 }
             }
         },
