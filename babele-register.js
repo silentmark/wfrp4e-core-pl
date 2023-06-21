@@ -66,3 +66,11 @@ Hooks.on("init", () => {
 		  }
 	});
 });
+
+Hooks.on("setup", () => {
+    CompendiumCollection.CACHE_LIFETIME_SECONDS = 1;
+});
+
+Hooks.on("ready", () => {
+    CompendiumCollection.CACHE_LIFETIME_SECONDS = 300;
+});
