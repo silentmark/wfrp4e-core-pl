@@ -40,7 +40,7 @@
         "Combat Aware": {
             "id": "0LdHytqyNmg2pcAX",
             "name": "Zmysł Bitewny",
-            "description": "<p>Szybki rzut oka na pole bitwy pozwala ci błyskawicznie ocenić sytuację i podjąć decyzję, co robić. Możesz wykonać Wymagający (+0) Test Percepcji, by nie być zaskoczonym. Trudność tego Testu może być modyfikowana przez warunki na polu walki.</p>",
+            "description": "<p>Szybki rzut oka na pole bitwy pozwala ci błyskawicznie ocenić sytuację i podjąć decyzję, co robić. Możesz wykonać <strong>Wymagający (+0) Test Percepcji</strong>, by nie być zaskoczonym. Trudność tego Testu może być modyfikowana przez warunki na polu walki.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.0LdHytqyNmg2pcAX",
             "tests": "Percepcja w trakcie walki"
         },
@@ -117,7 +117,7 @@
         "Arcane Magic": {
             "id": "3O9clK7LGyuLTHPW",
             "name": "Magia Tajemna (Tradycja)",
-            "description": "<p> </p> <p> Studiowałeś jedną z ośmiu tradycji magii: Cienia, Metalu, Niebios, Ognia, Śmierci, Światła, Zwierząt lub Życia albo praktykujesz którąś z mniej znanych: Guślarstwa czy Nekromancji. Możesz zapamiętywać czary ze swojej wybranej tradycji, płacąc za nie podany niżej koszt w Punktach Doświadczenia:   </p> <p> </p> <div> <table title=\"\" border=\"1\" summary=\"\" cellspacing=\"0\" cellpadding=\"0\"> <tbody> <tr> <td> <p>Number of Spells Currently Known</p> </td> <td> <p>XP Cost for a new spell</p> </td> </tr> <tr> <td> <p>Intelligence Bonus × 1 </p> </td> <td> <p>100 XP</p> </td> </tr> <tr> <td> <p>Intelligence Bonus × 2</p> </td> <td> <p>200 XP</p> </td> </tr> <tr> <td> <p>Intelligence Bonus × 3</p> </td> <td> <p>300 XP</p> </td> </tr> <tr> <td> <p>Intelligence Bonus × 4</p> </td> <td> <p>400 XP</p> </td> </tr> </tbody> </table> </div> <p> ...and so on.</p> <p> </p> <p> Jeśli twój Bonus z Inteligencji równy jest 4, to pierwsze pięć zaklęć będą cię kosztowały 100 PD, kolejne 4 już 200 PD i tak dalej. Obszerniejsze zasady dotyczące nauki nowych zaklęć znajdują się w Rozdziale 8: Magia. W normalnych warunkach nie możesz nabyć więcej niż jednego Talentu Magia Tajemna (Tradycja). Co więcej, je- śli posiadasz Talent Magia Tajemna (Tradycja), nie możesz wykupić Talentów Błogosławieństwo i Inwokacja. Za 100 PD możesz wyzbyć się tego Talentu, natychmiast tracąc dostęp do wszystkich zapewnianych przez niego czarów   </p> <p> </p> <p> </p>",
+            "description": "<p> </p> <p> Studiowałeś jedną z ośmiu tradycji magii: Cienia, Metalu, Niebios, Ognia, Śmierci, Światła, Zwierząt lub Życia albo praktykujesz którąś z mniej znanych: Guślarstwa czy Nekromancji. Możesz zapamiętywać czary ze swojej wybranej tradycji, płacąc za nie podany niżej koszt w Punktach Doświadczenia: </p> <p> </p> <div> <table title=\"\" border=\"1\" summary=\"\" cellspacing=\"0\" cellpadding=\"0\"> <tbody> <tr> <td> <p>Number of Spells Currently Known</p> </td> <td> <p>XP Cost for a new spell</p> </td> </tr> <tr> <td> <p>Intelligence Bonus × 1 </p> </td> <td> <p>100 XP</p> </td> </tr> <tr> <td> <p>Intelligence Bonus × 2</p> </td> <td> <p>200 XP</p> </td> </tr> <tr> <td> <p>Intelligence Bonus × 3</p> </td> <td> <p>300 XP</p> </td> </tr> <tr> <td> <p>Intelligence Bonus × 4</p> </td> <td> <p>400 XP</p> </td> </tr> </tbody> </table> </div> <p> ...and so on.</p> <p> </p> <p> Jeśli twój Bonus z Inteligencji równy jest 4, to pierwsze pięć zaklęć będą cię kosztowały 100 PD, kolejne 4 już 200 PD i tak dalej. Obszerniejsze zasady dotyczące nauki nowych zaklęć znajdują się w Rozdziale 8: Magia. W normalnych warunkach nie możesz nabyć więcej niż jednego Talentu Magia Tajemna (Tradycja). Co więcej, je- śli posiadasz Talent Magia Tajemna (Tradycja), nie możesz wykupić Talentów Błogosławieństwo i Inwokacja. Za 100 PD możesz wyzbyć się tego Talentu, natychmiast tracąc dostęp do wszystkich zapewnianych przez niego czarów.</p> <p> </p> <p> </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.3O9clK7LGyuLTHPW"
         },
         "Argumentative": {
@@ -225,14 +225,14 @@
         "Magical Sense": {
             "id": "6w30u0VPsAicrqb5",
             "name": "Wykrywanie Magii",
-            "description": "<p>Jesteś uodporniony na zaklęcia. Poziom Sukcesów czarów rzucanych na ciebie jest obniżony o 2 za każde wykupienie tego Talentu. Poziom Sukcesów jest obniżany tylko od najwyższej Odporności na Magię w obszarze oddziaływania czaru. Co więcej, nie możesz wykupić Talentów: Magia Tajemna, Błogosławieństwo, Inwokacja, Magia Prosta i Czarownica.</p>",
+            "description": "<p>Potrafisz wyczuć obecność Wiatrów Magii w innych. Możesz wykonać <strong>Przeciętny (+20) Test Intuicji</strong>, gdy spotykasz się z osobą władającą czarami. Jeśli się on powiedzie, wyczuwasz jej zdolności. To nie wszystko, jeśli osiągniesz Zdumiewający (+6) Sukces możesz także określić najwyższą Specjalizację Splatania Magii tej osoby.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.6w30u0VPsAicrqb5",
             "tests": "Intuicja, by wykrywać czarodziejów"
         },
         "Linguistics": {
             "id": "726gbrANZt8OqXr5",
             "name": "Poliglota",
-            "description": "<p>Masz naturalną łatwość uczenia się języków. Wystarczy ci miesiąc obcowania z którymś i udany Test Inteligencji (można go powtórzyć raz na miesiąc), byś mógł traktować jego znajomość jako Umiejętność Podstawową. Uwaga: ten Talent działa tylko na języki, którymi często porozumiewają się istoty, a więc nie na Język (magiczny).</p>",
+            "description": "<p>Masz naturalną łatwość uczenia się języków. Wystarczy ci miesiąc obcowania z którymś i udany Test Inteligencji (można go powtórzyć raz na miesiąc), byś mógł traktować jego znajomość jako Umiejętność Podstawową. <strong>Uwaga</strong>: ten Talent działa tylko na języki, którymi często porozumiewają się istoty, a więc nie na Język (magiczny).</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.726gbrANZt8OqXr5",
             "tests": "Języki (Wszystkie)"
         },
@@ -252,7 +252,7 @@
         "Blather": {
             "id": "77p3QRKgFWakkndF",
             "name": "Gadanina",
-            "description": "<p>W Nordlandzie mówi się, że otwierasz usta, a kiszki przez ciebie przemawiają, w Ostlandzie zaś, że pleciesz bzdury. Gadanina to wylewanie strumienia słów lub niepotrzebne i kwieciste rozwodzenie się nad sprawami trywialnymi lub wręcz pozbawionymi sensu, by wprowadzić rozmówcę w zdumienie i zakłopotanie. Do Gadaniny wykorzystujesz Umiejętność Charyzma w Teście Przeciwstawnym z Inteligencją. Sukces oznacza, że twój rozmówca znajduje się w Stanie Oszołomienie. Każdy poziom Gadaniny sprawia, że cel otrzymuje Stan kolejny raz. Taka osoba bądź istota stoi oniemiała, próbując zrozumieć, o czym mówisz i czego chcesz. Kiedy zagadany osobnik otrząśnie się z oszołomienia i zrozumie, co się dzia- ło, może nie być szczęśliwy z tego, jak go zmieszałeś. Ostatecznie zawracałeś mu głowę głupotami. Kiedy przestaniesz nawijać, cel natychmiast otrząśnie się ze Stanu Oszołomienie spowodowanego Gadaniną. Tego Talentu możesz używać tylko raz na danej osobie podczas jednej sceny (a nawet jeszcze rzadziej, jeśli MG tak uzna). Może zdarzyć się tak, że ten sam człowiek drugi raz na twoje paplanie nie da się już nabrać.</p>",
+            "description": "<p>W Nordlandzie mówi się, że otwierasz usta, a kiszki przez ciebie przemawiają, w Ostlandzie zaś, że pleciesz bzdury. Gadanina to wylewanie strumienia słów lub niepotrzebne i kwieciste rozwodzenie się nad sprawami trywialnymi lub wręcz pozbawionymi sensu, by wprowadzić rozmówcę w zdumienie i zakłopotanie. Do Gadaniny wykorzystujesz Umiejętność Charyzma w <strong>Teście Przeciwstawnym z Inteligencją</strong>. Sukces oznacza, że twój rozmówca znajduje się w Stanie Oszołomienie. Każdy poziom Gadaniny sprawia, że cel otrzymuje Stan kolejny raz. Taka osoba bądź istota stoi oniemiała, próbując zrozumieć, o czym mówisz i czego chcesz. Kiedy zagadany osobnik otrząśnie się z oszołomienia i zrozumie, co się dzia- ło, może nie być szczęśliwy z tego, jak go zmieszałeś. Ostatecznie zawracałeś mu głowę głupotami. Kiedy przestaniesz nawijać, cel natychmiast otrząśnie się ze Stanu Oszołomienie spowodowanego Gadaniną. Tego Talentu możesz używać tylko raz na danej osobie podczas jednej sceny (a nawet jeszcze rzadziej, jeśli MG tak uzna). Może zdarzyć się tak, że ten sam człowiek drugi raz na twoje paplanie nie da się już nabrać.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.77p3QRKgFWakkndF",
             "tests": "Charyzma, by kogoś zagadać"
         },
@@ -285,14 +285,14 @@
         "Unshakable": {
             "id": "8oWhzlcw7oiHGMFu",
             "name": "Niewzruszony",
-            "description": "<p>Jesteś twardym wiarusem, który przetrwał niejedną salwę z broni czarnoprochowej. Musisz wykonać Test Opanowania, by oprzeć się Stanowi Panika, dopiero kiedy zostaniesz zraniony przez broń prochową, a nie wtedy, gdy zostaniesz z niej tylko ostrzelany  </p>",
+            "description": "<p>Jesteś twardym wiarusem, który przetrwał niejedną salwę z broni czarnoprochowej. Musisz wykonać Test Opanowania, by oprzeć się Stanowi <em>Panika</em>, dopiero kiedy zostaniesz zraniony przez broń prochową, a nie wtedy, gdy zostaniesz z niej tylko ostrzelany.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.8oWhzlcw7oiHGMFu",
-            "tests": "Testy Opanowania przeciwko broni prochowej."
+            "tests": "Testy Opanowania przeciwko broni prochowej"
         },
         "Fearless": {
             "id": "8pVzgPkgWpTJvfhG",
             "name": "Nieustraszony (typ wroga)",
-            "description": "<p> Jesteś tak odważny lub szalony, że strach przed pewnymi istotami jest dla ciebie wspomnieniem. Za pomocą jednego Przeciętnego (+20) Testu Opanowania możesz sprawić, że nie dotyczą cię efekty Zastraszania, Strachu i Grozy, powodowane przez określoną grupę wrogów. Oto typowe przykłady takich wrogów: Banici, Czarownice, Strażnicy, Wampiry, Zielonoskórzy, Zwierzoludzie.</p>",
+            "description": "<p>Jesteś tak odważny lub szalony, że strach przed pewnymi istotami jest dla ciebie wspomnieniem. Za pomocą jednego <strong>Przeciętnego (+20) Testu Opanowania</strong> możesz sprawić, że nie dotyczą cię efekty Zastraszania, Strachu i Grozy, powodowane przez określoną grupę wrogów. Oto typowe przykłady takich wrogów: Banici, Czarownice, Strażnicy, Wampiry, Zielonoskórzy, Zwierzoludzie.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.8pVzgPkgWpTJvfhG",
             "tests": "Opanowanie przeciwko wrogiemu Zastraszaniu, Strachowi oraz Grozie"
         },
@@ -334,7 +334,7 @@
         "Nose for Trouble": {
             "id": "AcnFuDKRemLI9ey7",
             "name": "Nos do Kłopotów",
-            "description": "<p>Wiesz, jak wpaść w kłopoty i - jeszcze lepiej - jak się z nich wyłgać. Możesz wykonać Test Intuicji, by zorientować się, kto potencjalnie może sprawiać problemy. Test ten przysługuje ci, nawet gdyby nie wolno ci było go wykonać (z powodu działania innych Talentów, czarów itp.). Test ów będzie zapewne Przeciwstawny, jeśli napastnicy się kryją. MG może go wykonać w ukryciu za ciebie, byś nie wiedział, czy zakończy się on porażką, czy sukcesem. Jeśli zauważony przez ciebie wichrzyciel rozpocznie walkę, nie działa na ciebie Stan Zaskoczenie.</p>",
+            "description": "<p>Wiesz, jak wpaść w kłopoty i - jeszcze lepiej - jak się z nich wyłgać. Możesz wykonać Test Intuicji, by zorientować się, kto potencjalnie może sprawiać problemy. Test ten przysługuje ci, nawet gdyby nie wolno ci było go wykonać (z powodu działania innych Talentów, czarów itp.). Test ów będzie zapewne Przeciwstawny, jeśli napastnicy się kryją. MG może go wykonać w ukryciu za ciebie, byś nie wiedział, czy zakończy się on porażką, czy sukcesem. Jeśli zauważony przez ciebie wichrzyciel rozpocznie walkę, nie działa na ciebie Stan <em>Zaskoczenie</em>.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.AcnFuDKRemLI9ey7",
             "tests": "Każdy, by wypatrzeć potencjalne problemy"
         },
@@ -395,7 +395,7 @@
         "Jump Up": {
             "id": "BIaLeh4CPFaTMbFz",
             "name": "Sprężynka",
-            "description": "<p> Ciebie nie da się obalić na ziemię. Możesz wykonać Wymagający (+0) Test Atletyki, by natychmiast wstać po tym, jak nałożony zostanie na ciebie Stan Powalony. Ten Test Atletyki jest modyfikowany przez siłę uderzenia, które posłało cię na ziemię. Za każde 10 punktów Siły wroga ponad twoją Wytrzymałość otrzymujesz modyfikator -10 do Testu Atletyki. Jeśli Siła przeciwnika była niższa od twojej Wytrzymałości, otrzymujesz +10 za każde 10 punktów różnicy.</p>",
+            "description": "<p> Ciebie nie da się obalić na ziemię. Możesz wykonać <strong>Wymagający (+0) Test Atletyki</strong>, by natychmiast wstać po tym, jak nałożony zostanie na ciebie Stan Powalony. Ten Test Atletyki jest modyfikowany przez siłę uderzenia, które posłało cię na ziemię. Za każde 10 punktów Siły wroga ponad twoją Wytrzymałość otrzymujesz modyfikator -10 do Testu Atletyki. Jeśli Siła przeciwnika była niższa od twojej Wytrzymałości, otrzymujesz +10 za każde 10 punktów różnicy.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.BIaLeh4CPFaTMbFz"
         },
         "Furious Assault": {
@@ -482,7 +482,7 @@
         "Hatred": {
             "id": "E98mVLZgE8bX5vQW",
             "name": "Nienawiść (Grupa)",
-            "description": "<p>Coś w Starym Świecie powoduje twoją nienawiść. Każde wykupienie tego Talentu to jej nowy obiekt, a przykładowe grupy to: Banici, Czarownice, Ożywieńcy, Potwory, Sigmaryci, Zielonoskórzy, Zwierzoludzie.  </p>",
+            "description": "<p>Coś w Starym Świecie powoduje twoją @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.5w5YLPNd6AaU4f85]{Nienawiść}. Każde wykupienie tego Talentu to jej nowy obiekt, a przykładowe grupy to: Banici, Czarownice, Ożywieńcy, Potwory, Sigmaryci, Zielonoskórzy, Zwierzoludzie.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.E98mVLZgE8bX5vQW",
             "effects": {
                 "3vgrN50Ul3S5T2j6": {
@@ -495,7 +495,7 @@
         "Small": {
             "id": "eBwHnWdwQJ590ASb",
             "name": "Mały",
-            "description": "<p>Jesteś niższy od większości mieszkańców Starego Świata.  </p>",
+            "description": "<p>Jesteś niższy od większości mieszkańców Starego Świata. </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.eBwHnWdwQJ590ASb",
             "effects": {
                 "keKRZ1nmziD1BMXg": {
@@ -508,7 +508,7 @@
         "Crack the Whip": {
             "id": "edsenrEYTLOtpa6b",
             "name": "Z Bata",
-            "description": "<p>Wiesz, jak zmusić zwierzę do większego wysiłku. Kiedy Ucieka ono lub Biegnie, jego szybkość zwiększa się o +1, gdy popędzasz je batem lub biczem.  </p>",
+            "description": "<p>Wiesz, jak zmusić zwierzę do większego wysiłku. Kiedy Ucieka ono lub Biegnie, jego szybkość zwiększa się o +1, gdy popędzasz je batem lub biczem.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.edsenrEYTLOtpa6b",
             "tests": "Powożenie lub Jeździectwo podczas Ucieczki lub Biegu"
         },
@@ -522,7 +522,7 @@
         "Magic Resistance": {
             "id": "eowbsW6oHGSNJmxV",
             "name": "Odporność na Magię",
-            "description": "<p>Jesteś uodporniony na zaklęcia. Poziom Sukcesów czarów rzucanych na ciebie jest obniżony o 2 za każde wykupienie tego Talentu. Poziom Sukcesów jest obniżany tylko od najwyższej Odporności na Magię w obszarze oddziaływania czaru. Co więcej, nie możesz wykupić Talentów: Magia Tajemna, Błogosławieństwo, Inwokacja, Magia Prosta i Czarownica.  </p>",
+            "description": "<p>Jesteś uodporniony na zaklęcia. Poziom Sukcesów czarów rzucanych na ciebie jest obniżony o 2 za każde wykupienie tego Talentu. Poziom Sukcesów jest obniżany tylko od najwyższej Odporności na Magię w obszarze oddziaływania czaru. Co więcej, nie możesz wykupić Talentów: <em>Magia Tajemna</em>, <em>Błogosławieństwo</em>, <em>Inwokacja</em>, <em>Magia Prosta</em> i <em>Czarownica</em>.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.eowbsW6oHGSNJmxV",
             "effects": {
                 "EsoBJtVEVYxCXdRb": {
@@ -542,20 +542,20 @@
         "War Wizard": {
             "id": "F2EiuAc6IpaGd4J7",
             "name": "Mag Bitewny",
-            "description": "<p>Zostałeś wyszkolony w rzucaniu czarów podczas bitwy. W swojej Turze możesz rzucić jeden czar o Poziomie Zaklęcia 5 lub niższym w Akcji Darmowej (Test wykonujesz normalnie). Nie używasz zatem pełnej Akcji i możesz ją wykorzystać w dowolny sposób. Jednak w tej Turze nie możesz już rzucić kolejnego czaru.  </p>",
+            "description": "<p>Zostałeś wyszkolony w rzucaniu czarów podczas bitwy. W swojej Turze możesz rzucić jeden czar o Poziomie Zaklęcia 5 lub niższym w Akcji Darmowej (Test wykonujesz normalnie). Nie używasz zatem pełnej Akcji i możesz ją wykorzystać w dowolny sposób. Jednak w tej Turze nie możesz już rzucić kolejnego czaru.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.F2EiuAc6IpaGd4J7"
         },
         "Field Dressing": {
             "id": "fEFAMNqh8nJIfBkM",
             "name": "Pierwsza Pomoc",
-            "description": "<p>Potrafisz szybko opatrywać rany. Kiedy nie uda ci się Test Leczenia podczas używania Bandaży, możesz odwrócić kolejność kostek, jeśli to przyniesie ci sukces. Jeśli tak zrobisz, nie możesz uzyskać więcej niż +1 PS, ponieważ skupiasz się na szybkim, a nie dokładnym za- łożeniu opatrunku  </p>",
+            "description": "<p>Potrafisz szybko opatrywać rany. Kiedy nie uda ci się Test Leczenia podczas używania Bandaży, możesz odwrócić kolejność kostek, jeśli to przyniesie ci sukces. Jeśli tak zrobisz, nie możesz uzyskać więcej niż +1 PS, ponieważ skupiasz się na szybkim, a nie dokładnym za- łożeniu opatrunku.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.fEFAMNqh8nJIfBkM",
             "tests": "Testy leczenia, gdy trwa walka"
         },
         "Strong Back": {
             "id": "FF41XPboORgyDNsv",
             "name": "Mocne Plecy",
-            "description": "<p>Twój kark jest twardy od ciężkiej harówki. Możesz dodać liczbę wykupień tego Talentu do PS Przeciwstawnych Testów Siły i nieść dodatkowy ekwipunek o wadze równej liczbie wykupień tego Talentu w punktach Obciążenia  </p>",
+            "description": "<p>Twój kark jest twardy od ciężkiej harówki. Możesz dodać liczbę wykupień tego Talentu do PS Przeciwstawnych Testów Siły i nieść dodatkowy ekwipunek o wadze równej liczbie wykupień tego Talentu w punktach Obciążenia.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.FF41XPboORgyDNsv",
             "effects": {
                 "J5IUFXDMXgCJSPXW": {
@@ -573,7 +573,7 @@
         "Trick Riding": {
             "id": "FjTnaxixsu1ShNNr",
             "name": "Woltyżerka",
-            "description": "<p>Jesteś w stanie wykonywać nieprawdopodobne rzeczy na końskim grzbiecie. W siodle możesz podejmować Testy Umiejętności Kuglarstwo i nie masz ujemnych modyfikatorów do Uniku. Co więcej, kiedy jesteś na koniu, możesz wykonać Ruch na początku Rundy, a nie w swojej Turze  </p>",
+            "description": "<p>Jesteś w stanie wykonywać nieprawdopodobne rzeczy na końskim grzbiecie. W siodle możesz podejmować Testy Umiejętności Kuglarstwo i nie masz ujemnych modyfikatorów do Uniku. Co więcej, kiedy jesteś na koniu, możesz wykonać Ruch na początku Rundy, a nie w swojej Turze.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.FjTnaxixsu1ShNNr",
             "effects": {
                 "HRSjpI6pAoSuf9tl": {
@@ -587,20 +587,20 @@
         "Doomed": {
             "id": "fn8QNQQ1S2rh12Us",
             "name": "Wróżba Losu",
-            "description": "<p>Gdy miałeś 10 lat kapłan Morra, zwany Czarnowidzem, zabrał cię do siebie, by na osobności przepowiedzieć ci twą zgubę. Dokonało się to podczas obrzędu w oparach kadzidła, nazywanego Wróżbą Losu. Omówcie tę sprawę z MG i wymyślcie coś odpowiedniego. Jeśli twoja postać zginie w okolicznościach, które przypominają te z przepowiedni, kolejna postać którą stworzysz otrzymuje połowę jej punktów doświadczenia, które pierwsza zdobyła podczas gry  </p>",
+            "description": "<p>Gdy miałeś 10 lat kapłan Morra, zwany Czarnowidzem, zabrał cię do siebie, by na osobności przepowiedzieć ci twą zgubę. Dokonało się to podczas obrzędu w oparach kadzidła, nazywanego Wróżbą Losu. Omówcie tę sprawę z MG i wymyślcie coś odpowiedniego. Jeśli twoja postać zginie w okolicznościach, które przypominają te z przepowiedni, kolejna postać którą stworzysz otrzymuje połowę jej punktów doświadczenia, które pierwsza zdobyła podczas gry.</p>\n<p>@Table[doom]</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.fn8QNQQ1S2rh12Us"
         },
         "Battle Rage": {
             "id": "FtjMeeGEO4YuGIBv",
             "name": "Bitewna Furia",
-            "description": "<p>Jesteś w stanie lepiej kontrolować swój Szał Bojowy. Udany Test Opanowania pozwala ci otrząsnąć się z niego na końcu rundy  </p>",
+            "description": "<p>Jesteś w stanie lepiej kontrolować swój Szał Bojowy. Udany Test Opanowania pozwala ci otrząsnąć się z niego na końcu rundy.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.FtjMeeGEO4YuGIBv",
             "tests": "Testy Broni Białej pod wpływem Szału Bojowego"
         },
         "Detect Artefact": {
             "id": "g3y373FnWJEAxgEB",
             "name": "Rozpoznanie Artefaktu",
-            "description": "<p>Jesteś w stanie wykryć, czy w danym przedmiocie zaklęta jest magia. Możesz wykonać Test Intuicji, gdy go dotykasz. Jeśli Test się powiedzie, każdy PS pozwala ci poznać jedną zasadę, która ma zastosowanie wobec przedmiotu (jeśli tak w ogóle jest). W zwykłych przypadkach możesz wykonać tylko jeden Test wobec danego artefaktu.  </p>",
+            "description": "<p>Jesteś w stanie wykryć, czy w danym przedmiocie zaklęta jest magia. Możesz wykonać Test Intuicji, gdy go dotykasz. Jeśli Test się powiedzie, każdy PS pozwala ci poznać jedną zasadę, która ma zastosowanie wobec przedmiotu (jeśli tak w ogóle jest). W zwykłych przypadkach możesz wykonać tylko jeden Test wobec danego artefaktu.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.g3y373FnWJEAxgEB",
             "tests": "Test Intuicji związany z wykrywaniem magicznych artefaktów"
         },
@@ -621,20 +621,20 @@
         "Master Tradesman": {
             "id": "GHmXS9zGNx3PWYZc",
             "name": "Mistrz Rzemiosła (Rzemiosło)",
-            "description": "<p>Jesteś wybitnie wykwalifikowany w danym rzemiośle. Możesz zmniejszyć liczbę wymaganych PS podczas Testu Wydłużonego tego Rzemiosła o tyle, ile razy wykupiłeś ten Talent  </p>",
+            "description": "<p>Jesteś wybitnie wykwalifikowany w danym rzemiośle. Możesz zmniejszyć liczbę wymaganych PS podczas Testu Wydłużonego tego Rzemiosła o tyle, ile razy wykupiłeś ten Talent.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.GHmXS9zGNx3PWYZc",
             "tests": "Pasujący Wydłużony Test tego Rzemiosła"
         },
         "Read/Write": {
             "id": "GogGbYxkVdCmiKqf",
             "name": "Czytanie/Pisanie",
-            "description": "<p>Jesteś jednym z nielicznych piśmiennych Staroświatowców. Potrafisz czytać i pisać (o ile to możliwe) w każdym języku, którym umiesz się posługiwać  </p>",
+            "description": "<p>Jesteś jednym z nielicznych piśmiennych Staroświatowców. Potrafisz czytać i pisać (o ile to możliwe) w każdym języku, którym umiesz się posługiwać.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.GogGbYxkVdCmiKqf"
         },
         "Slayer": {
             "id": "GOtpCOZ2br14GrBW",
             "name": "Zabójca",
-            "description": "<p>Kiedy określasz wysokość obrażeń, możesz wykorzystać Bonus z Wytrzymałości wroga zamiast swojego Bonusu z Siły, oczywiście jeśli jest wyższy. Musisz to zrobić, zanim zmodyfikujesz swoją Siłę lub wynikający z niej modyfikator. Co więcej, jeśli twój wróg jest od ciebie większy, a ty zadasz Trafienie Krytyczne (patrz strona 159), pomnóż zadawane obrażenia o tyle kategorii wielkości, ile was dzieli. Na przykład: dwie kategorie oznaczają obrażenia x2, trzy kategorie obrażenia x3 i tak dalej. Mnożnik jest określany i stosowany dopiero po uwzględnieniu wszystkich innych modyfikatorów.  </p>",
+            "description": "<p>Kiedy określasz wysokość obrażeń, możesz wykorzystać Bonus z Wytrzymałości wroga zamiast swojego Bonusu z Siły, oczywiście jeśli jest wyższy. Musisz to zrobić, zanim zmodyfikujesz swoją Siłę lub wynikający z niej modyfikator. Co więcej, jeśli twój wróg jest od ciebie większy, a ty zadasz Trafienie Krytyczne (patrz strona 159), pomnóż zadawane obrażenia o tyle kategorii wielkości, ile was dzieli. Na przykład: dwie kategorie oznaczają obrażenia x2, trzy kategorie obrażenia x3 i tak dalej. Mnożnik jest określany i stosowany dopiero po uwzględnieniu wszystkich innych modyfikatorów.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.GOtpCOZ2br14GrBW",
             "effects": {
                 "ScsXdMC7SqNirMwx": {
@@ -647,14 +647,14 @@
         "Craftsman": {
             "id": "GRRN3XAKIpEVCY7z",
             "name": "Wytwórca",
-            "description": "<p>Jesteś prawdziwie uzdolniony. Dodaj rzemiosło powiązane z tym Talentem do listy Umiejętności aktualnej Profesji. Jeśli już wcześniej było na niej wymienione, za każde jego Rozwinięcie płacisz 5 PD mniej.  </p>",
+            "description": "<p>Jesteś prawdziwie uzdolniony. Dodaj rzemiosło powiązane z tym Talentem do listy Umiejętności aktualnej Profesji. Jeśli już wcześniej było na niej wymienione, za każde jego Rozwinięcie płacisz 5 PD mniej.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.GRRN3XAKIpEVCY7z",
             "tests": "Rzemiosło (Dowolne)"
         },
         "Flagellant": {
             "id": "Gs10qhA4CDmZyb1g",
             "name": "Biczownik",
-            "description": "<p>Swój ból ofiarowałeś wyznawanemu bogu. Każdego dnia musisz spędzić pół dzwonu (pół godziny) na modlitwie, otrzymując obrażenia na poziomie liczby wykupień tego Talentu. Jeśli posiadasz Talent Szał Bojowy to do położenia się na najbliższy spoczynek możesz natychmiast wpaść w Szał Bojowy bez wykonywania Testów. Szał Bojowy zostaje dodany do listy Talentów dostępnych dla twojej bieżącej Profesji. Jeśli zaniedbasz biczowanie przez jeden dzień lub pozwolisz, by poszarpana skóra została uleczona, nie będziesz mógł wydawać Punktów Bohatera ani Determinacji, póki się znów nie wybiczujesz.  </p>",
+            "description": "<p>Swój ból ofiarowałeś wyznawanemu bogu. Każdego dnia musisz spędzić pół dzwonu (pół godziny) na modlitwie, otrzymując obrażenia na poziomie liczby wykupień tego Talentu. Jeśli posiadasz Talent Szał Bojowy to do położenia się na najbliższy spoczynek możesz natychmiast wpaść w Szał Bojowy bez wykonywania Testów. Szał Bojowy zostaje dodany do listy Talentów dostępnych dla twojej bieżącej Profesji. Jeśli zaniedbasz biczowanie przez jeden dzień lub pozwolisz, by poszarpana skóra została uleczona, nie będziesz mógł wydawać Punktów Bohatera ani Determinacji, póki się znów nie wybiczujesz.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.Gs10qhA4CDmZyb1g",
             "tests": "Testy podczas opierania się Niszczycielskim Potęgom"
         },
@@ -673,20 +673,20 @@
         "Embezzle": {
             "id": "HIofcsDLjXGKzSZf",
             "name": "Defraudant",
-            "description": "<p> Potrafisz podprowadzać pieniądze swoich pryncypałów tak, by tego nie odkryli. Kiedy pozyskujesz dochód podczas zarabiania (w trakcie gry lub oddając się Zajęciu Dochód), możesz wykonać Przeciwstawny Test Inteligencji przeciwko swojemu pracodawcy (jeśli masz takowego). Jeżeli wygrasz, niepostrzeżenie podprowadzasz 2k10 + PS miedzianych pensów, 1k10 + PS srebrnych szylingów lub 1 + PS złotych koron (w zależności od wysokości obrotów, co jest w gestii MG). Jeśli twój pracodawca wygra o +6 PS, zgarniasz pieniądze, ale zostajesz nakryty. Konsekwencje zależą od MG. Inne wyniki oznaczają, że nie udało ci się zrobić defraudacji i nie ukradłeś żadnych pieniędzy. </p>",
+            "description": "<p> Potrafisz podprowadzać pieniądze swoich pryncypałów tak, by tego nie odkryli. Kiedy pozyskujesz dochód podczas zarabiania (w trakcie gry lub oddając się Zajęciu Dochód), możesz wykonać <strong>Przeciwstawny Test Inteligencji</strong> przeciwko swojemu pracodawcy (jeśli masz takowego). Jeżeli wygrasz, niepostrzeżenie podprowadzasz 2k10 + PS miedzianych pensów, 1k10 + PS srebrnych szylingów lub 1 + PS złotych koron (w zależności od wysokości obrotów, co jest w gestii MG). Jeśli twój pracodawca wygra o +6 PS, zgarniasz pieniądze, ale zostajesz nakryty. Konsekwencje zależą od MG. Inne wyniki oznaczają, że nie udało ci się zrobić defraudacji i nie ukradłeś żadnych pieniędzy.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.HIofcsDLjXGKzSZf",
             "tests": "Inteligencja (Defraudacja)"
         },
         "Chaos Magic": {
             "id": "hiU7vhBOVpVI8c7C",
             "name": "Magia Chaosu (Tradycja)",
-            "description": "<p>Przez przypadek (lub wręcz przeciwnie) część twojej duszy przypadła jednemu z Mrocznych Bogów i jesteś w stanie korzystać z wszetecznej magii Chaosu. Twój złowrogi patron zapewnia ci dostęp do jednego czaru z wybranej tradycji (najczęściej Nurgla, Slaanesha lub Tzeentcha), a wraz z nim otrzymujesz Punkt Zepsucia, gdy bluźniercza formuła wypala się w twoim umyśle, byś nigdy jej nie zapomniał. Za każdym razem, gdy wykupujesz ten Talent, musisz zapłacić za niego 100 PD, a więc jest inaczej niż w przypadku innych tradycji. W zamian za to otrzymujesz czar z wybranej tradycji i 1 Punkt Zepsucia. W normalnych warunkach możesz znać tylko jedną tradycję magii Chaosu  </p>",
+            "description": "<p>Przez przypadek (lub wręcz przeciwnie) część twojej duszy przypadła jednemu z Mrocznych Bogów i jesteś w stanie korzystać z wszetecznej magii Chaosu. Twój złowrogi patron zapewnia ci dostęp do jednego czaru z wybranej tradycji (najczęściej Nurgla, Slaanesha lub Tzeentcha), a wraz z nim otrzymujesz Punkt Zepsucia, gdy bluźniercza formuła wypala się w twoim umyśle, byś nigdy jej nie zapomniał. Za każdym razem, gdy wykupujesz ten Talent, musisz zapłacić za niego 100 PD, a więc jest inaczej niż w przypadku innych tradycji. W zamian za to otrzymujesz czar z wybranej tradycji i 1 Punkt Zepsucia. W normalnych warunkach możesz znać tylko jedną tradycję magii Chaosu.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.hiU7vhBOVpVI8c7C"
         },
         "Step Aside": {
             "id": "HpGjzrSR4tdogJtl",
             "name": "Zejście z Linii",
-            "description": "<p>Wiesz, jak znaleźć się tam, gdzie nie sięga oręż wroga. Jeśli wykorzystujesz Umiejętność Unik, by zejść z linii ciosu, i wygrasz Test Przeciwstawny, możesz poruszyć się na odległość do 2 metrów i nie liczysz się jako związany walką. Przeciwnicy nie mogą wykonać przeciwko tobie darmowych ataków.  </p>",
+            "description": "<p>Wiesz, jak znaleźć się tam, gdzie nie sięga oręż wroga. Jeśli wykorzystujesz Umiejętność Unik, by zejść z linii ciosu, i wygrasz Test Przeciwstawny, możesz poruszyć się na odległość do 2 metrów i nie liczysz się jako związany walką. Przeciwnicy nie mogą wykonać przeciwko tobie darmowych ataków.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.HpGjzrSR4tdogJtl",
             "tests": "Unik, gdy używasz tego Talentu"
         },
@@ -707,7 +707,7 @@
         "Frenzy": {
             "id": "hXcfygzujgyMN1uI",
             "name": "Szał Bojowy",
-            "description": "<p><p style=\"user-select: text; color: #111111;\">With a Willpower Test, you can work yourself into a state of frenzy by psyching yourself up, howling, biting your shield, or similar. If you succeed, you become subject to Frenzy.</p> <p style=\"user-select: text; color: #111111;\">&nbsp;</p> <p style=\"user-select: text; color: #111111;\">While subject to Frenzy you are immune to all other psychology, and will not ﬂee or retreat for any reason; indeed you must always move at full rate towards the closest enemy you can see in order to attack. Generally, the only Action you may take is a Weapon Skill Test or an Athletics Test to reach an enemy more quickly. Further, you may take a Free Action Melee Test each Round as you are throwing everything you have into your attacks. Lastly, you gain a bonus of +1 Strength Bonus, such is your ferocity. You remain in Frenzy until all enemies in your line of sight are pacified, or you receive the&nbsp;<em style=\"user-select: text;\">Stunned</em>&nbsp;or&nbsp;<em style=\"user-select: text;\">Unconscious</em>&nbsp;condition. After your Frenzy is over you immediately receive a&nbsp;<em style=\"user-select: text;\">Fatigued</em>&nbsp;condition.</p></p>",
+            "description": "<p style=\"user-select: text; color: #111111;\">Dzięki Testowi Siły Woli postać może wprowadzić się w stan furii, motywując się, wyjąc, gryząc tarczę itd. Jeśli Test się uda, postać wpada w Szał Bojowy.</p>\n<p style=\"user-select: text; color: #111111;\">W trakcie Szału Bojowego postać jest niewrażliwa na wszystkie inne Czynniki Psychologiczne i nie ucieknie ani nie wycofa się z żadnego powodu. Mało tego – musi zawsze poruszać się z pełną prędkością w stronę najbliższego widzianego przeciwnika, by go zaatakować. Ogólnie rzecz biorąc, jedynymi Akcjami, jakie można wtedy wykonać, są Testy Broni Białej w zwarciu albo Atletyki, by szybciej dobiec do przeciwnika. Poza tym w każdej Rundzie postać otrzymuje Akcję Darmową w postaci dodatkowego ataku wręcz, ponieważ naprawdę daje z siebie wszystko. A jakby tego było mało, zaciekłość i brutalność skutkuje podniesieniem Bonusu z Siły o +1. Postać pozostaje w Szale Bojowym, dopóki wszyscy wrogowie w polu widzenia nie zostaną unieszkodliwieni albo dopóki postać nie otrzyma przynajmniej 1 poziomu Stanu @Condition[Oszołomienie] lub nie nastąpi @Condition[Utrata Przytomności]. Po zakończeniu Szału Bojowego postać natychmiast otrzymuje 1 poziom Stanu @Condition[Zmęczenie].</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.hXcfygzujgyMN1uI",
             "effects": {
                 "y1pfxqA1jLh5Ywca": {
@@ -733,21 +733,21 @@
         "Sea Legs": {
             "id": "Ij9N3G8jzxb4lrwy",
             "name": "Chód marynarza",
-            "description": "<p>Przywykłeś do kołysania fal morskich i mało prawdopodobne, byś zachorował na chorobę morską, nawet podczas najsilniejszych sztormów. W spokojnych warunkach nie musisz przeprowadzać Testu, by sprawdzić, czy na morzu chwycą cię mdłości. Gdy rozpęta się sztorm lub gdy chorobę morską powoduje magia, nie dotyczą cię modyfikatory negatywnie wpływające na opieranie się tej przypadłości.  </p>",
+            "description": "<p>Przywykłeś do kołysania fal morskich i mało prawdopodobne, byś zachorował na chorobę morską, nawet podczas najsilniejszych sztormów. W spokojnych warunkach nie musisz przeprowadzać Testu, by sprawdzić, czy na morzu chwycą cię mdłości. Gdy rozpęta się sztorm lub gdy chorobę morską powoduje magia, nie dotyczą cię modyfikatory negatywnie wpływające na opieranie się tej przypadłości.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.Ij9N3G8jzxb4lrwy",
             "tests": "Wszystkie testy wykonywane, by oprzeć się chorobie morskiej"
         },
         "Stout-hearted": {
             "id": "IogM5gnsoOX63w7j",
             "name": "Waleczne Serce",
-            "description": "<p>Nieważne, jak fatalne jest twoje położenie, ty się po prostu nie poddajesz. Na koniec swojej Tury i na koniec całej Rundy możesz wykonać Test Opanowania, by otrząsnąć się ze Stanu Panika  </p>",
+            "description": "<p>Nieważne, jak fatalne jest twoje położenie, ty się po prostu nie poddajesz. Na koniec swojej Tury i na koniec całej Rundy możesz wykonać Test Opanowania, by otrząsnąć się ze Stanu Panika.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.IogM5gnsoOX63w7j",
             "tests": "Test opanowania, by przełamać Stan Panika"
         },
         "Shieldsman": {
             "id": "IT3s7rmQFGNzIfYq",
             "name": "Tarczownik",
-            "description": "<p>Potrafisz tak posługiwać się tarczą, by wrogowie znaleźli się tam, gdzie chcesz, i umiesz wykorzystywać wynikającą z tego przewagę. Jeśli używasz tarczy do obrony i przegrasz Test Przeciwstawny, to mimo wszystko zyskujesz tyle punktów Przewagi, ile razy masz wykupiony ten Talent.  </p>",
+            "description": "<p>Potrafisz tak posługiwać się tarczą, by wrogowie znaleźli się tam, gdzie chcesz, i umiesz wykorzystywać wynikającą z tego przewagę. Jeśli używasz tarczy do obrony i przegrasz Test Przeciwstawny, to mimo wszystko zyskujesz tyle punktów Przewagi, ile razy masz wykupiony ten Talent.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.IT3s7rmQFGNzIfYq",
             "effects": {
                 "W5gSfWrnLHp2SYLA": {
@@ -774,7 +774,7 @@
         "Coolheaded": {
             "id": "JLzJws09GMw9GWBV",
             "name": "Zimna krew",
-            "description": "<p>Zyskujesz premię +5 do początkowej wartości Siły Woli, co nie wlicza się do sumy Rozwinięć  </p>",
+            "description": "<p>Zyskujesz premię +5 do początkowej wartości Siły Woli, co nie wlicza się do sumy Rozwinięć.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.JLzJws09GMw9GWBV",
             "effects": {
                 "QTmmZBqgkJMBn9KT": {
@@ -786,21 +786,21 @@
         "Seasoned Traveller": {
             "id": "jQmIu8P85tF0njmD",
             "name": "Obieżyświat",
-            "description": "<p>Jesteś jednym z tych ciekawskich, którzy nie potrafią usiedzieć na miejscu i wędrują po świecie wszerz i wzdłuż, ucząc się wielu przydatnych informacji. Dodaj Umiejętność Wiedza (Lokalna) do swojej każdej bieżącej Profesji, a jeśli już jest na liście dostępnych, możesz wykupić na tym poziomie jedną dodatkową Wiedzę (Lokalną). Za Rozwinięcie każdej z takich Umiejętności płacisz zawsze 5 PD mniej. Przykładowe Specjalizacje to Altdorf, Vorbergland czy Ubersreik.  </p>",
+            "description": "<p>Jesteś jednym z tych ciekawskich, którzy nie potrafią usiedzieć na miejscu i wędrują po świecie wszerz i wzdłuż, ucząc się wielu przydatnych informacji. Dodaj Umiejętność Wiedza (Lokalna) do swojej każdej bieżącej Profesji, a jeśli już jest na liście dostępnych, możesz wykupić na tym poziomie jedną dodatkową Wiedzę (Lokalną). Za Rozwinięcie każdej z takich Umiejętności płacisz zawsze 5 PD mniej. Przykładowe Specjalizacje to Altdorf, Vorbergland czy Ubersreik.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.jQmIu8P85tF0njmD",
             "tests": "Dowolnej Wiedzy związanej z okolicą"
         },
         "Flee!": {
             "id": "jrFIFLhyOYwcyMUl",
             "name": "Chodu!",
-            "description": "<p>Kiedy na szali znajduje się twoje życie, potrafisz niezwykle sprawnie przebierać nogami. Podczas Ucieczki twoja Szybkość jest traktowana, jakby była o 1 wyższa.  </p>",
+            "description": "<p>Kiedy na szali znajduje się twoje życie, potrafisz niezwykle sprawnie przebierać nogami. Podczas Ucieczki twoja Szybkość jest traktowana, jakby była o 1 wyższa.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.jrFIFLhyOYwcyMUl",
             "tests": "Test atletki podczas ucieczki"
         },
         "Sharpshooter": {
             "id": "jrYW2OyDHd1Md2my",
             "name": "Strzał w Dziesiątkę",
-            "description": "<p>Strzelasz celnie w cel niezależnie od jego wielkości. Dzięki temu nie mają na ciebie wpływu negatywne modyfikatory strzelania, wynikające z rozmiaru celu.  </p>",
+            "description": "<p>Strzelasz celnie w cel niezależnie od jego wielkości. Dzięki temu nie mają na ciebie wpływu negatywne modyfikatory strzelania, wynikające z rozmiaru celu.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.jrYW2OyDHd1Md2my",
             "effects": {
                 "AdXR6L7rmxEgkVlB": {
@@ -813,21 +813,21 @@
         "Strike to Stun": {
             "id": "jt0DmVK9IiF6Sd2h",
             "name": "Ogłuszenie",
-            "description": "<p>Wiesz, gdzie uderzyć, by wróg padł jak długi. Nie tyczy się ciebie negatywny modyfikator za atak mierzony w głowę, gdy używasz broni do Walki Wręcz z zaletą Ogłuszająca (patrz strona 298). Co więcej, w twoich rękach wszystkie bronie improwizowane są traktowane jako Ogłuszające.  </p>",
+            "description": "<p>Wiesz, gdzie uderzyć, by wróg padł jak długi. Nie tyczy się ciebie negatywny modyfikator za atak mierzony w głowę, gdy używasz broni do Walki Wręcz z zaletą Ogłuszająca (patrz strona 298). Co więcej, w twoich rękach wszystkie bronie improwizowane są traktowane jako Ogłuszające.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.jt0DmVK9IiF6Sd2h",
             "tests": "Test broni Białej, gdy Ogłuszasz przeciwnika"
         },
         "Tenacious": {
             "id": "jviOQmy0luQOySC2",
             "name": "Wytrwały",
-            "description": "<p>Bez względu na okoliczności i powagę sytuacji ty przenigdy się nie poddajesz. Podwajasz czas opierania się przeciwnościom, zapewniany przez udany Test Odporności. Wytrzymujesz długą jazdę, wystawienie na warunki atmosferyczne, rytuały i tym podobne trudności.  </p>",
+            "description": "<p>Bez względu na okoliczności i powagę sytuacji ty przenigdy się nie poddajesz. Podwajasz czas opierania się przeciwnościom, zapewniany przez udany Test Odporności. Wytrzymujesz długą jazdę, wystawienie na warunki atmosferyczne, rytuały i tym podobne trudności.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.jviOQmy0luQOySC2",
             "tests": "Test odporności, podczas przetrzymywania trudów"
         },
         "Speedreader": {
             "id": "kQbVFzsh4LbaIzHU",
             "name": "Szybkie Czytanie",
-            "description": "<p>Czytasz księgi z zadziwiającą szybkością. Możesz odwrócić kolejność kości nieudanego Testu Badań Naukowych, jeśli to przyniesie ci sukces. Jeżeli szybkie przeczytanie tekstu odgrywa rolę podczas walki, to w ciągu Rundy możesz przeanalizować tyle stron, ile PS uzyskasz dzięki udanemu Testowi Języków plus tyle, ile razy wykupiłeś ten Talent (minimum jedną, jeśli Test się nie powiódł).  </p>",
+            "description": "<p>Czytasz księgi z zadziwiającą szybkością. Możesz odwrócić kolejność kości nieudanego Testu Badań Naukowych, jeśli to przyniesie ci sukces. Jeżeli szybkie przeczytanie tekstu odgrywa rolę podczas walki, to w ciągu Rundy możesz przeanalizować tyle stron, ile PS uzyskasz dzięki udanemu Testowi Języków plus tyle, ile razy wykupiłeś ten Talent (minimum jedną, jeśli Test się nie powiódł).</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.kQbVFzsh4LbaIzHU",
             "tests": "Testy Badania Naukowego i Języka, gdy ważne jest szybkie przyswajanie tekstu"
         },
@@ -841,14 +841,14 @@
         "Old Salt": {
             "id": "L74MT9BDwE4CfutY",
             "name": "Wilk Morski",
-            "description": "<p>Jesteś doświadczonym żeglarzem i przywykłeś do życia na morzu. Nie dotyczą cię negatywne modyfikatory do Testów spowodowane przez kiepską pogodę, kołysanie statku itp. Co więcej, liczysz się za dwóch członków załogi, gdy trzeba obsadzić jednostkę wychodzącą w morze.  </p>",
+            "description": "<p>Jesteś doświadczonym żeglarzem i przywykłeś do życia na morzu. Nie dotyczą cię negatywne modyfikatory do Testów spowodowane przez kiepską pogodę, kołysanie statku itp. Co więcej, liczysz się za dwóch członków załogi, gdy trzeba obsadzić jednostkę wychodzącą w morze.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.L74MT9BDwE4CfutY",
             "tests": "Żeglowanie (każdy statek morski)"
         },
         "Suave": {
             "id": "LPgjE0cexTVOBVCY",
             "name": "Charyzmatyczny",
-            "description": "<p>Twoja początkowa Ogłada zwiększa się na stałe o +5 (co nie wlicza się do sumy Rozwinięć postaci).  </p>",
+            "description": "<p>Twoja początkowa Ogłada zwiększa się na stałe o +5 (co nie wlicza się do sumy Rozwinięć postaci).</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.LPgjE0cexTVOBVCY",
             "effects": {
                 "KtcX1mblPyZZwVBC": {
@@ -860,7 +860,7 @@
         "Mimic": {
             "id": "LU6Ycl5z4kp1Wr04",
             "name": "Naśladowca",
-            "description": "<p>Masz ucho do gwar oraz do dialektów i potrafisz je naśladować. Jeśli osłuchasz się któregoś przez jeden dzień, możesz wykonać Test Inicjatywy (jeden na dzień) i jeśli się powiedzie, będziesz potrafił naśladować ten akcent. Miejscowi będą uważali, że gadasz po ichniemu i jesteś swój  </p>",
+            "description": "<p>Masz ucho do gwar oraz do dialektów i potrafisz je naśladować. Jeśli osłuchasz się któregoś przez jeden dzień, możesz wykonać Test Inicjatywy (jeden na dzień) i jeśli się powiedzie, będziesz potrafił naśladować ten akcent. Miejscowi będą uważali, że gadasz po ichniemu i jesteś swój.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.LU6Ycl5z4kp1Wr04",
             "tests": "Testy Występów (Aktorstwo), podczas których ważny jest akcent"
         },
@@ -874,20 +874,20 @@
         "Petty Magic": {
             "id": "mdPGZsn2396dEpOf",
             "name": "Magia Prosta",
-            "description": "<p><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\"> Zawsze miałeś smykałkę do rzucania czarów i opanowałeś metody ich podstawowej kontroli. Kiedy wykupujesz ten Talent, uczysz się i zapamiętujesz tyle czarów, ile wynosi modyfikator z twojej Siły Woli. Kolejnych czarów możesz się nauczyć, korzystając z poniższej tabeli kosztów:   </p>   <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\"> </p>   <div style=\"direction: ltr;\">   <table style=\"direction: ltr; border-collapse: collapse; border: 1pt solid #A3A3A3;\" title=\"\" border=\"1\" summary=\"\" cellspacing=\"0\" cellpadding=\"0\">   <tbody>   <tr>   <td style=\"vertical-align: top; width: 2.4312in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">   <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">No. of Petty Spells Currently Known</p>   </td>   <td style=\"vertical-align: top; width: 1.5833in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">   <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\"><span style=\"mso-spacerun: yes;\"> </span>XP Cost for a new spell</p>   </td>   </tr>   <tr>   <td style=\"vertical-align: top; width: 2.4125in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">   <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">Up to Willpower Bonus × 1</p>   </td>   <td style=\"vertical-align: top; width: 1.5333in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">   <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">50 XP</p>   </td>   </tr>   <tr>   <td style=\"vertical-align: top; width: 2.4125in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">   <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">Up to Willpower Bonus × 2</p>   </td>   <td style=\"vertical-align: top; width: 1.5333in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">   <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">100 XP</p>   </td>   </tr>   <tr>   <td style=\"vertical-align: top; width: 2.4125in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">   <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">Up to Willpower Bonus × 3</p>   </td>   <td style=\"vertical-align: top; width: 1.5333in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">   <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">150 XP</p>   </td>   </tr>   <tr>   <td style=\"vertical-align: top; width: 2.4125in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">   <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">Up to Willpower Bonus × 4</p>   </td>   <td style=\"vertical-align: top; width: 1.5333in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\">   <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">200 XP</p>   </td>   </tr>   </tbody>   </table>   </div>   <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">...and so on.</p>   <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\"> </p>   <p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\"> Jeśli twój Bonus z Siły Woli wynosi 3 i znasz 3 zaklęcia Magii Prostej, to pierwsze wykupywane zaklęcie kosztuje 50 PD, kolejne trzy 100 PD i tak dalej.</p></p>",
+            "description": "<p><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\"> Zawsze miałeś smykałkę do rzucania czarów i opanowałeś metody ich podstawowej kontroli. Kiedy wykupujesz ten Talent, uczysz się tylu zaklęć Magii Prostej, ile wynosi twój Bonus z Siły Woli. Kolejnych czarów możesz się nauczyć, korzystając z poniższej tabeli kosztów:</p><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\"> </p><div style=\"direction: ltr;\"><table style=\"direction: ltr; border-collapse: collapse; border: 1pt solid #A3A3A3;\" title=\"\" border=\"1\" summary=\"\" cellspacing=\"0\" cellpadding=\"0\"><tbody><tr><td style=\"vertical-align: top; width: 2.4312in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\"><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">Liczba znanych czarów Magii Prostej</p></td><td style=\"vertical-align: top; width: 1.5833in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\"><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\"><span style=\"mso-spacerun: yes;\"> </span>Koszt nowego czaru w PD</p></td></tr><tr><td style=\"vertical-align: top; width: 2.4125in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\"><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">do Bonusu z Siły Woli x1</p></td><td style=\"vertical-align: top; width: 1.5333in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\"><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">50 PD</p></td></tr><tr><td style=\"vertical-align: top; width: 2.4125in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\"><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">do Bonusu z Siły Woli x2</p></td><td style=\"vertical-align: top; width: 1.5333in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\"><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">100 PD</p></td></tr><tr><td style=\"vertical-align: top; width: 2.4125in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\"><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">do Bonusu z Siły Woli x3</p></td><td style=\"vertical-align: top; width: 1.5333in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\"><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">150 PD</p></td></tr><tr><td style=\"vertical-align: top; width: 2.4125in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\"><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">do Bonusu z Siły Woli x4</p></td><td style=\"vertical-align: top; width: 1.5333in; padding: 4pt 4pt 4pt 4pt; border: 1pt solid #A3A3A3;\"><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">200 PD</p></td></tr></tbody></table></div><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">…i tak dalej</p><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\"> </p><p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt;\">Jeśli twój Bonus z Siły Woli wynosi 3 i znasz 3 zaklęcia Magii Prostej, to pierwsze wykupywane zaklęcie kosztuje 50 PD, kolejne trzy 100 PD i tak dalej.</p></p>",
             "sourceId": "Compendium.wfrp4e-core.talents.mdPGZsn2396dEpOf"
         },
         "Iron Will": {
             "id": "mgeiaDZXei7JBEgo",
             "name": "Żelazna Wola",
-            "description": "<p>Jesteś twardy i potrafisz wytrzymać najsilniejsze ciosy. Jeśli jakiś efekt nakłada na postać co najmniej jeden Stan Oszołomienie, gracz może wykonać Wymagający (+0) Test Wytrzymałości, by go zignorować. Każdy PS pozwala ci uniknąć dodatkowego Stanu.  </p>",
+            "description": "<p>Jesteś twardy i potrafisz wytrzymać najsilniejsze ciosy. Jeśli jakiś efekt nakłada na postać co najmniej jeden Stan Oszołomienie, gracz może wykonać Wymagający (+0) Test Wytrzymałości, by go zignorować. Każdy PS pozwala ci uniknąć dodatkowego Stanu.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.mgeiaDZXei7JBEgo",
             "tests": "Test opanowania przeciwstawiane Zastraszaniu"
         },
         "Scale Sheer Surface": {
             "id": "MGEPI4jNhymNIRVz",
             "name": "Wyborny Wspinacz",
-            "description": "<p>Jesteś świetny we wdrapywaniu się i chodzeniu po górach. Możesz próbować wspinać się na z pozoru niezdobyte zbocza czy szczyty. Nie straszne ci zamkowe blanki, szelfy lodowe, gipsowane ściany i im podobne. Nie tyczą się ciebie negatywne modyfikatory Wspinaczki, wymuszane przez trudność, jaką sprawia powierzchnia, po której się pniesz.  </p>",
+            "description": "<p>Jesteś świetny we wdrapywaniu się i chodzeniu po górach. Możesz próbować wspinać się na z pozoru niezdobyte zbocza czy szczyty. Nie straszne ci zamkowe blanki, szelfy lodowe, gipsowane ściany i im podobne. Nie tyczą się ciebie negatywne modyfikatory Wspinaczki, wymuszane przez trudność, jaką sprawia powierzchnia, po której się pniesz.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.MGEPI4jNhymNIRVz",
             "tests": "Wspinaczka"
         },
@@ -901,14 +901,14 @@
         "Distract": {
             "id": "MoiYSfJRPHu7SZCQ",
             "name": "Rozproszenie Uwagi",
-            "description": "<p> Jesteś wytrenowany tak, by twoje ruchy rozpraszały uwagę przeciwnika i ułatwiały jego zaskoczenie. Możesz wykorzystać swój Ruch, aby użyć Rozpraszania Uwagi. Jest to Test Przeciwstawny Atletyki przeciw Opanowaniu przeciwnika. Jeśli wygrasz, twój przeciwnik nie może zbierać Przewagi aż do końca następnej Rundy.</p>",
+            "description": "<p> Jesteś wytrenowany tak, by twoje ruchy rozpraszały uwagę przeciwnika i ułatwiały jego zaskoczenie. Możesz wykorzystać swój Ruch, aby użyć Rozpraszania Uwagi. Jest to <strong>Test Przeciwstawny Atletyki przeciw Opanowaniu przeciwnika</strong>. Jeśli wygrasz, twój przeciwnik nie może zbierać Przewagi aż do końca następnej Rundy.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.MoiYSfJRPHu7SZCQ",
             "tests": "Testy atletyki celem Rozproszenia Uwagi"
         },
         "Frightening": {
             "id": "mqo51ORnxijcqNNu",
             "name": "Straszny",
-            "description": "<p>Każdy przy zdrowych zmysłach pomyśli dwa razy, zanim do ciebie podejdzie. Możesz zadecydować, że w danej sytuacji wzbudzasz Strach na poziomie 1. Każde wykupienie tego Talentu podwyższa siłę Strachu o +1.  </p>",
+            "description": "<p>Każdy przy zdrowych zmysłach pomyśli dwa razy, zanim do ciebie podejdzie. Możesz zadecydować, że w danej sytuacji wzbudzasz Strach na poziomie 1. Każde wykupienie tego Talentu podwyższa siłę Strachu o +1.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.mqo51ORnxijcqNNu"
         },
         "Combat Master": {
@@ -920,14 +920,14 @@
         "Holy Visions": {
             "id": "Nj3tC8A5fZ3zEdMR",
             "name": "Święte Wizje",
-            "description": "<p>Wyraźnie widzisz boskie dzieła wokół siebie. Zawsze wiesz, kiedy wkraczasz na świętą ziemię, i możesz wykonać Test Intuicji, by zstąpiła na ciebie wizja (często niejasna i postrzegana przez paradygmat twojej wiary lub osobistych wartości) opisująca okolicę i to, co najważniejszego się w niej wydarzyło w przeszłości  </p>",
+            "description": "<p>Wyraźnie widzisz boskie dzieła wokół siebie. Zawsze wiesz, kiedy wkraczasz na świętą ziemię, i możesz wykonać Test Intuicji, by zstąpiła na ciebie wizja (często niejasna i postrzegana przez paradygmat twojej wiary lub osobistych wartości) opisująca okolicę i to, co najważniejszego się w niej wydarzyło w przeszłości.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.Nj3tC8A5fZ3zEdMR",
             "tests": "Testy Intuicji, kiedy znajdujesz się na świętej ziemi"
         },
         "Surgery": {
             "id": "NP4EHyyh1yOLbsPU",
             "name": "Chirurgia",
-            "description": "<p>Lata nauki trudnego rzemiosła chirurga pozwalają ci dokonywać cudu operacji, zabiegu niezbędnego przy leczeniu najgroźniejszych obrażeń. W opisie wybranych Trafień Krytycznych znajdziecie informację, że wymagają one interwencji chirurga. Właśnie ty jesteś w stanie im zaradzić. Operacja to Wydłużony Wymagający (+0) Test Leczenia. Liczba wymaganych PS jest ustalana przez MG, ale zwykle to 5-10. Podczas procedury zadajesz pacjentowi 1k10 obrażeń i nakładasz na niego Stan Krwawienie za każdym razem, gdy wykonujesz Test. To oznacza, że chory może umrzeć, a szansa na to jest wysoka. Po operacji pacjent musi wykonać Przeciętny (+20) Test Odporności, a jego niepowodzenie oznacza drobną infekcję. </p>",
+            "description": "<p>Lata nauki trudnego rzemiosła chirurga pozwalają ci dokonywać cudu operacji, zabiegu niezbędnego przy leczeniu najgroźniejszych obrażeń. W opisie wybranych Trafień Krytycznych znajdziecie informację, że wymagają one interwencji chirurga. Właśnie ty jesteś w stanie im zaradzić. Operacja to Wydłużony Wymagający (+0) Test Leczenia. Liczba wymaganych PS jest ustalana przez MG, ale zwykle to 5-10. Podczas procedury zadajesz pacjentowi 1k10 obrażeń i nakładasz na niego Stan <em>Krwawienie</em> za każdym razem, gdy wykonujesz Test. To oznacza, że chory może umrzeć, a szansa na to jest wysoka. Po operacji pacjent musi wykonać <strong>Przeciętny (+20) Test Odporności</strong>, a jego niepowodzenie oznacza Mniejszą Infekcję.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.NP4EHyyh1yOLbsPU",
             "tests": "Leczenie poza walką, kiedy masz dostatecznie dużo czasu i spokoju"
         },
@@ -947,21 +947,21 @@
         "Second Sight": {
             "id": "OEjUvJKi0xmBwbS2",
             "name": "Percepcja Magiczna",
-            "description": "<p>Potrafisz dostrzegać zmienne Wiatry Magii, które dmą od Bram Chaosu na biegunach świata. Dzięki temu Talentowi posiadasz zdolność postrzegania magii  </p>",
+            "description": "<p>Potrafisz dostrzegać zmienne Wiatry Magii, które dmą od Bram Chaosu na biegunach świata. Dzięki temu Talentowi posiadasz zdolność @UUID[JournalEntry.YBVrpUHEjohB1H4f.JournalEntryPage.BU7yhLmMdEyvbfkR#second-sight]{postrzegania magii}.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.OEjUvJKi0xmBwbS2",
             "tests": "Każdy Test dotyczący wykrywania Wiatrów Magii"
         },
         "Impassioned Zeal": {
             "id": "oGbDwnLOn3isPJpO",
             "name": "Porywająca Gorliwość",
-            "description": "<p>Kiedy mówisz o czymś, co cię pasjonuje, o swoich przekonaniach czy religii, twoje słowa przepełnia gorliwość, a nawet fanatyzm. Możesz podwoić swoją Ogładę, gdy określasz liczbę osób, na które wpływa twój Talent Mówca, gdy poruszasz ważny dla ciebie temat.  </p>",
+            "description": "<p>Kiedy mówisz o czymś, co cię pasjonuje, o swoich przekonaniach czy religii, twoje słowa przepełnia gorliwość, a nawet fanatyzm. Możesz podwoić swoją Ogładę, gdy określasz liczbę osób, na które wpływa twój Talent Mówca, gdy poruszasz ważny dla ciebie temat.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.oGbDwnLOn3isPJpO",
             "tests": "Test Charyzmy, kiedy mówisz o ważnej dla ciebie sprawie"
         },
         "Sharp": {
             "id": "oQzTJEXUx28sCiH3",
             "name": "Czujny",
-            "description": "<p>Swoją początkową Inicjatywę zwiększasz na stałe o +5, co nie liczy się do sumy Rozwinięć twojej postaci.  </p>",
+            "description": "<p>Swoją początkową Inicjatywę zwiększasz na stałe o +5, co nie liczy się do sumy Rozwinięć twojej postaci.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.oQzTJEXUx28sCiH3",
             "effects": {
                 "brTadWGpAAr78Pwx": {
@@ -973,7 +973,7 @@
         "Wealthy": {
             "id": "OROfMcVqRnZHINkU",
             "name": "Majętny",
-            "description": "<p>Jesteś bajecznie bogaty i rzadko kiedy brakuje ci pieniędzy. Kiedy zarabiasz (włączając w to Zajęcie Dochód), zarabiasz +1 złotą koronę więcej za każdy poziom tego Talentu  </p>",
+            "description": "<p>Jesteś bajecznie bogaty i rzadko kiedy brakuje ci pieniędzy. Kiedy zarabiasz (włączając w to Zajęcie Dochód), zarabiasz +1 złotą koronę więcej za każdy poziom tego Talentu.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.OROfMcVqRnZHINkU"
         },
         "Berserk Charge": {
@@ -993,14 +993,14 @@
         "Lip Reading": {
             "id": "OXfa9uwG36syzaix",
             "name": "Czytanie z Ruchu Warg",
-            "description": "<p>Patrząc na usta innych, potrafisz dowiedzieć się, co mówią. Jeśli mo- żesz bez przeszkód obserwować dolną część twarzy istoty, wolno ci wykonać Test Percepcji, by zrozumieć, co mówi  </p>",
+            "description": "<p>Patrząc na usta innych, potrafisz dowiedzieć się, co mówią. Jeśli mo- żesz bez przeszkód obserwować dolną część twarzy istoty, wolno ci wykonać <strong>Test Percepcji</strong>, by zrozumieć, co mówi.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.OXfa9uwG36syzaix",
             "tests": "Testy Percepcji związane z wykorzystaniem tego Talentu"
         },
         "Sure Shot": {
             "id": "phXzaUxl3mFqkmDq",
             "name": "Strzał Przebijający",
-            "description": "<p>Wiesz, jak odszukać słaby punkt w pancerzu obranego celu. Kiedy trafisz, wykonując Test Broni Zasięgowej, możesz zignorować tyle Punktów Pancerza wroga, ile razy wykupiłeś ten Talent  </p>",
+            "description": "<p>Wiesz, jak odszukać słaby punkt w pancerzu obranego celu. Kiedy trafisz, wykonując <strong>Test Broni Zasięgowej</strong>, możesz zignorować tyle Punktów Pancerza wroga, ile razy wykupiłeś ten Talent.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.phXzaUxl3mFqkmDq",
             "effects": {
                 "FT9ngGg2C68sBxzc": {
@@ -1013,47 +1013,47 @@
         "Secret Identity": {
             "id": "PJ4oxDExnuFNr2Fi",
             "name": "Sekretna Tożsamość",
-            "description": "<p>Posiadasz alter ego, które jest bogatszym lub biedniejszym człowiekiem od ciebie. Wybierz Profesję, na którą przystanie MG. Dopóki jesteś odpowiednio ubrany, dopóty możesz korzystać z oferowanego przez nią Statusu, zamiast swojego. To oznacza, że korzystasz z jej modyfikatorów do Testów Ogłady, a nawet możesz zignorować skutki działania Talentu Przestępca. Utrzymywanie sekretnej toż- samości wymaga udanych Testów Umiejętności Występy (Aktorstwo), gdy spotykasz kogoś, kto może cię przejrzeć. Każde wykupienie tego Talentu pozwala ci na stworzenie dodatkowej sekretnej tożsamości  </p>",
+            "description": "<p>Posiadasz alter ego, które jest bogatszym lub biedniejszym człowiekiem od ciebie. Wybierz Profesję, na którą przystanie MG. Dopóki jesteś odpowiednio ubrany, dopóty możesz korzystać z oferowanego przez nią Statusu, zamiast swojego. To oznacza, że korzystasz z jej modyfikatorów do Testów Ogłady, a nawet możesz zignorować skutki działania Talentu Przestępca. Utrzymywanie sekretnej toż- samości wymaga udanych Testów Umiejętności Występy (Aktorstwo), gdy spotykasz kogoś, kto może cię przejrzeć. Każde wykupienie tego Talentu pozwala ci na stworzenie dodatkowej sekretnej tożsamości.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.PJ4oxDExnuFNr2Fi",
             "tests": "Testy Występów (Aktorstwo), by uwiarygodnić swoją sekretną tożsamość"
         },
         "River Guide": {
             "id": "PoYlemaEIbZw30Em",
             "name": "Pilot Rzeczny",
-            "description": "<p>Znasz wszystkie tajniki żeglowania po rzekach. Nie musisz wykonywać Testu, by przeprowadzić jednostkę przez niebezpieczne wody, chyba że jego trudność wynosi -10 lub więcej. Łatwiejsze Testy automatycznie kończą się sukcesem. Co więcej, jeśli posiadasz Wiedzę (Okolica), w ogóle nie musisz przeprowadzać Testów, tak dobrze znasz te tereny i lokalny nurt.  </p>",
+            "description": "<p>Znasz wszystkie tajniki żeglowania po rzekach. Nie musisz wykonywać Testu, by przeprowadzić jednostkę przez niebezpieczne wody, chyba że jego trudność wynosi -10 lub więcej. Łatwiejsze Testy automatycznie kończą się sukcesem. Co więcej, jeśli posiadasz Wiedzę (Okolica), w ogóle nie musisz przeprowadzać Testów, tak dobrze znasz te tereny i lokalny nurt.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.PoYlemaEIbZw30Em",
             "tests": "Każdy Test Wiedzy dotyczący rzeki"
         },
         "Perfect Pitch": {
             "id": "pQjZdMJDDaz0DpAD",
             "name": "Słuch Absolutny",
-            "description": "<p>Jesteś w stanie dokładnie powtórzyć i zidentyfikować notację nutową. Co więcej, dodaj Umiejętność Występy (Śpiewanie) do listy Umiejętności swojej każdej bieżącej Profesji, a jeśli znajduje się ona na liście, koszt każdego Rozwinięcia spada o 5 PD  </p>",
+            "description": "<p>Jesteś w stanie dokładnie powtórzyć i zidentyfikować notację nutową. Co więcej, dodaj Umiejętność Występy (Śpiewanie) do listy Umiejętności swojej każdej bieżącej Profesji, a jeśli znajduje się ona na liście, koszt każdego Rozwinięcia spada o 5 PD.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.pQjZdMJDDaz0DpAD",
             "tests": "Testy Występów (Śpiewanie), Języki (tonalne, takie jak Eltharin, Kitajski lub Magiczny)"
         },
         "Rover": {
             "id": "q58lK4kULJZB5GjE",
             "name": "Włóczykij",
-            "description": "<p>W dziczy czujesz się jak u siebie i kiedy wykorzystujesz Umiejętność Skradanie, inni nie mogą wykonywać biernych Testów Percepcji, by cię zauważyć. Mogą im one przysługiwać, jeśli przeciwnicy stoją na straży lub wypatrują ukrytych napastników  </p>",
+            "description": "<p>W dziczy czujesz się jak u siebie i kiedy wykorzystujesz Umiejętność Skradanie, inni nie mogą wykonywać biernych Testów Percepcji, by cię zauważyć. Mogą im one przysługiwać, jeśli przeciwnicy stoją na straży lub wypatrują ukrytych napastników.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.q58lK4kULJZB5GjE",
             "tests": "Testy Skradania na wsi"
         },
         "Witch!": {
             "id": "qdMbxW09FUoYBzmB",
             "name": "Czarownica!",
-            "description": "<p>Sama z siebie nauczyłaś się, jak rzucać czary, często robiąc to metodą prób i błędów. Dodaj Język (Magiczny) do listy Umiejętności każdej bieżącej Profesji. Jeśli się już na niej znajduje, każde Rozwinięcie tej Umiejętności kosztuje cię o 5 PD mniej. Co więcej, możesz w dowolnym momencie wydać Punkt Bohatera, by Twoja postać mogła rzucić wybrane przez ciebie zaklęcie z dowolnej Tradycji Magii Tajemnej. Zostaje ono dodane do listy znanych postaci czarów. Możesz tak uczynić tyle razy, ile razy masz wykupiony ten Talent  </p>",
+            "description": "<p>Sama z siebie nauczyłaś się, jak rzucać czary, często robiąc to metodą prób i błędów. Dodaj Język (Magiczny) do listy Umiejętności każdej bieżącej Profesji. Jeśli się już na niej znajduje, każde Rozwinięcie tej Umiejętności kosztuje cię o 5 PD mniej. Co więcej, możesz w dowolnym momencie wydać Punkt Bohatera, by Twoja postać mogła rzucić wybrane przez ciebie zaklęcie z dowolnej Tradycji Magii Tajemnej. Zostaje ono dodane do listy znanych postaci czarów. Możesz tak uczynić tyle razy, ile razy masz wykupiony ten Talent.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.qdMbxW09FUoYBzmB"
         },
         "Magnum Opus": {
             "id": "QdvY9hoDTbr12jXq",
             "name": "Arcydzieło",
-            "description": "<p>Jesteś niekwestionowanym mistrzem w swojej dziedzinie, tworzącym dzieła tak złożone, że inni mogą je tylko podziwiać, zachwycając się twoim geniuszem. Za każdym razem, gdy wykupujesz ten Talent, tworzysz niezwykłe dzieło, wykorzystując Umiejętność Sztuka lub Rzemiosło. Nie ma ono sobie równych, będzie po wieki inspirowało, zadziwiało i budziło zachwyt swoją wyjątkowością. MG określa premie, które ci przysługują z tej racji. Zwykle wpływają one na Testy Ogłady w kontaktach z tymi, którzy podziwiają twoją sztukę. Sprzedaż dzieła powinna dać ci przynajmniej dziesięciokrotną wartość zwykłej ceny, a czasami nawet więcej  </p>",
+            "description": "<p>Jesteś niekwestionowanym mistrzem w swojej dziedzinie, tworzącym dzieła tak złożone, że inni mogą je tylko podziwiać, zachwycając się twoim geniuszem. Za każdym razem, gdy wykupujesz ten Talent, tworzysz niezwykłe dzieło, wykorzystując Umiejętność Sztuka lub Rzemiosło. Nie ma ono sobie równych, będzie po wieki inspirowało, zadziwiało i budziło zachwyt swoją wyjątkowością. MG określa premie, które ci przysługują z tej racji. Zwykle wpływają one na Testy Ogłady w kontaktach z tymi, którzy podziwiają twoją sztukę. Sprzedaż dzieła powinna dać ci przynajmniej dziesięciokrotną wartość zwykłej ceny, a czasami nawet więcej.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.QdvY9hoDTbr12jXq"
         },
         "Reversal": {
             "id": "QolNfSUkezLoAcky",
             "name": "Odwrócenie Szans",
-            "description": "<p>Tak przywykłeś do rozpaczliwej walki o życie, że potrafisz obrócić na swoją korzyść nawet największe kłopoty. Jeśli wygrasz Przeciwstawny Test Walki Wręcz, to zamiast zdobywać +1 Przewagę, możesz zabrać przeciwnikowi jego wszystkie zebrane Przewagi. Jeśli się na to zdecydujesz, nie zadajesz wrogowi obrażeń, nawet jeśli to twoja Tura w Rundzie.  </p>",
+            "description": "<p>Tak przywykłeś do rozpaczliwej walki o życie, że potrafisz obrócić na swoją korzyść nawet największe kłopoty. Jeśli wygrasz <strong>Przeciwstawny Test Walki Wręcz</strong>, to zamiast zdobywać +1 Przewagę, możesz zabrać przeciwnikowi jego wszystkie zebrane Przewagi. Jeśli się na to zdecydujesz, nie zadajesz wrogowi obrażeń, nawet jeśli to twoja Tura w Rundzie.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.QolNfSUkezLoAcky",
             "tests": "Testy broni Białej podczas defensywy"
         },
@@ -1072,13 +1072,13 @@
         "Bless": {
             "id": "QyjWtSdnVMT04l5Y",
             "name": "Błogosławieństwo (Boska Tradycja)",
-            "description": "<p>Któryś z bogów czuwa nad tobą i odpowiada na twoje proste modlitwy. Możesz wykorzystywać błogosławieństwa swojego pana, co opisano w Rozdziale 7: Religie i wierzenia. Normalnie możesz znać tylko jedną boską tradycję na Talent Błogosławieństwo  </p>",
+            "description": "<p>Któryś z bogów czuwa nad tobą i odpowiada na twoje proste modlitwy. Możesz wykorzystywać błogosławieństwa swojego pana, co opisano w Rozdziale 7: Religie i wierzenia. Normalnie możesz znać tylko jedną boską tradycję na Talent Błogosławieństwo.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.QyjWtSdnVMT04l5Y"
         },
         "Sturdy": {
             "id": "qZ4cFy6z482ZONuA",
             "name": "Tragarz",
-            "description": "<p>Twoje krępe ciało świetnie nadaje się do tego, by dźwigać ciężary. Liczba punktów obciążenia, które możesz nosić, zwiększa się o liczbę wykupień tego Talentu x2.  </p>",
+            "description": "<p>Twoje krępe ciało świetnie nadaje się do tego, by dźwigać ciężary. Liczba punktów obciążenia, które możesz nosić, zwiększa się o liczbę wykupień tego Talentu x2.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.qZ4cFy6z482ZONuA",
             "effects": {
                 "JGnq108l9XA1xAWM": {
@@ -1092,7 +1092,7 @@
         "Criminal": {
             "id": "r180vP86SlwyJc8W",
             "name": "Przestępca",
-            "description": "<p>Jesteś bandytą, który zarabia na swojej działalności i niekiedy się z tym nie kryje. Jeśli w trakcie gry będziesz zarabiał lub oddasz się Zajęciu Dochód, odwołaj się do poniższej tabeli.   :</p> <p> </p> <div> <table title=\"\" border=\"1\" summary=\"\" cellspacing=\"0\" cellpadding=\"0\"> <tbody> <tr> <td> <p>Career Level</p> </td> <td> <p>Bonus Money per time the Talent is taken</p> </td> </tr> <tr> <td> <p>1</p> </td> <td> <p>+2d10 brass pennies</p> </td> </tr> <tr> <td> <p>2</p> </td> <td> <p>+1d10 silver shillings</p> </td> </tr> <tr> <td> <p>3 </p> </td> <td> <p>+2d10 silver shillings</p> </td> </tr> <tr> <td> <p>4</p> </td> <td> <p>+1 gold crown</p> </td> </tr> </tbody> </table> </div> <p> </p> <p> Ponieważ nie kryjesz się ze swoją przestępczą naturą, inni automatycznie uważają cię za osobę niższego Statusu, chyba że sami posiadają ten Talent. Wtedy wasz Status jest ustalany normalnie. Od ciebie zależy, jak można poznać, że jesteś kryminalistą: czy to wię- zienne tatuaże, czy obcesowy sposób bycia. Lokalne władze i straże są wobec ciebie podejrzliwe i zawsze patrzą ci na ręce, a im więcej razy wykupisz ten Talent, tym za większego zbira uchodzisz. Bezpo- średnie skutki zależą od MG. Kryminaliści bez Talentu Przestępca zarabiają znacznie mniejsze pieniądze, ale zachowują dawny Status. Za zgodą MG możesz wydać tyle PD, ile cię kosztował, by pozbyć się tego Talentu.</p>",
+            "description": "<p>Jesteś bandytą, który zarabia na swojej działalności i niekiedy się z tym nie kryje. Jeśli w trakcie gry będziesz zarabiał lub oddasz się Zajęciu Dochód, odwołaj się do poniższej tabeli. :</p> <p> </p> <div> <table title=\"\" border=\"1\" summary=\"\" cellspacing=\"0\" cellpadding=\"0\"> <tbody> <tr> <td> <p>Poziom Profesji</p> </td> <td> <p>Dodatkowe pieniądze na liczbę wykupień Talentu</p> </td> </tr> <tr> <td> <p>1</p> </td> <td> <p>+2k10 miedzianych pensów</p> </td> </tr> <tr> <td> <p>2</p> </td> <td> <p>+1k10 srebrnych szylingów</p> </td> </tr> <tr> <td> <p>3 </p> </td> <td> <p>+2k10 srebrnych szylingów</p> </td> </tr> <tr> <td> <p>4</p> </td> <td> <p>+1 złota korona</p> </td> </tr> </tbody> </table> </div> <p> </p> <p>Ponieważ nie kryjesz się ze swoją przestępczą naturą, inni automatycznie uważają cię za osobę niższego Statusu, chyba że sami posiadają ten Talent. Wtedy wasz Status jest ustalany normalnie. Od ciebie zależy, jak można poznać, że jesteś kryminalistą: czy to wię- zienne tatuaże, czy obcesowy sposób bycia. Lokalne władze i straże są wobec ciebie podejrzliwe i zawsze patrzą ci na ręce, a im więcej razy wykupisz ten Talent, tym za większego zbira uchodzisz. Bezpo- średnie skutki zależą od MG. Kryminaliści bez Talentu Przestępca zarabiają znacznie mniejsze pieniądze, ale zachowują dawny Status. Za zgodą MG możesz wydać tyle PD, ile cię kosztował, by pozbyć się tego Talentu.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.r180vP86SlwyJc8W",
             "effects": {
                 "tS0NjO6ujjQH6sV9": {
@@ -1105,13 +1105,13 @@
         "Kingpin": {
             "id": "RbnrfHf7GSQap0ig",
             "name": "Szycha",
-            "description": "<p>Pomimo powiązań z półświatkiem otacza cię aura szacunku. Twojej postaci nie dotyczy utrata Statusu spowodowana przez Talent Przestępca  </p>",
+            "description": "<p>Pomimo powiązań z półświatkiem otacza cię aura szacunku. Twojej postaci nie dotyczy utrata Statusu spowodowana przez Talent Przestępca.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.RbnrfHf7GSQap0ig"
         },
         "Very Resilient": {
             "id": "RmY0CUjiFYZ3GEKY",
             "name": "Niezwykle Odporny",
-            "description": "<p>Twoja początkowa Wytrzymałość zostaje na stałe podniesiona o +5, co nie liczy się do sumy twoich Rozwinięć.  </p>",
+            "description": "<p>Twoja początkowa Wytrzymałość zostaje na stałe podniesiona o +5, co nie liczy się do sumy twoich Rozwinięć.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.RmY0CUjiFYZ3GEKY",
             "effects": {
                 "vntOVrHSurqI8lbG": {
@@ -1123,7 +1123,7 @@
         "Strike to Injure": {
             "id": "RWJrupj9seau0w31",
             "name": "Morderczy Atak",
-            "description": "<p>Wiesz dobrze, gdzie uderzyć, by wyrządzić jak najwięcej krzywdy. Kiedy zadasz Ranę Krytyczną, zwiększasz też obrażenia o tyle, ile razy wykupiłeś ten Talent  </p>",
+            "description": "<p>Wiesz dobrze, gdzie uderzyć, by wyrządzić jak najwięcej krzywdy. Kiedy zadasz Ranę Krytyczną, zwiększasz też obrażenia o tyle, ile razy wykupiłeś ten Talent.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.RWJrupj9seau0w31",
             "effects": {
                 "3HTxEPAJdtbQaygL": {
@@ -1136,7 +1136,7 @@
         "Holy Hatred": {
             "id": "RyxOZqcBNZ7Zw721",
             "name": "Święta Nienawiść",
-            "description": "<p>Twoje modlitwy ociekają nienawiścią wobec bluźnierców. Swoimi cudami zadajesz +1 punkt obrażeń za każde wykupienie tego Talentu  </p>",
+            "description": "<p>Twoje modlitwy ociekają nienawiścią wobec bluźnierców. Swoimi cudami zadajesz +1 punkt obrażeń za każde wykupienie tego Talentu.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.RyxOZqcBNZ7Zw721",
             "effects": {
                 "3f87V2dvHVJTzwC7": {
@@ -1149,47 +1149,47 @@
         "Super Numerate": {
             "id": "sBHarYXR2o7jD1VY",
             "name": "Geniusz Arytmetyczny",
-            "description": "<p>Masz dar do cyferek i z łatwością potrafisz rozwiązywać problemy matematyczne. Na sesji wolno używać ci kalkulatora, by pokazać geniusz swojej postaci (chyba że go nie potrzebujesz i liczysz w pamięci).  </p>",
+            "description": "<p>Masz dar do cyferek i z łatwością potrafisz rozwiązywać problemy matematyczne. Na sesji wolno używać ci kalkulatora, by pokazać geniusz swojej postaci (chyba że go nie potrzebujesz i liczysz w pamięci).</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.sBHarYXR2o7jD1VY",
             "tests": "Testy Wyceny i Hazardu"
         },
         "Relentless": {
             "id": "SgjJMBgc85aswvhm",
             "name": "Nieustępliwy",
-            "description": "<p>Kiedy skupisz się na celu, nie sposób cię powstrzymać przed dotarciem do niego. Jeśli wykorzystujesz Przewagę podczas Odwrotu, możesz zachować jej tyle, ile razy masz wykupiony ten Talent. Co więcej, możesz wykorzystać Przewagi do Odwrotu, nawet jeśli masz ich mniej niż przeciwnik  </p>",
+            "description": "<p>Kiedy skupisz się na celu, nie sposób cię powstrzymać przed dotarciem do niego. Jeśli wykorzystujesz Przewagę podczas Odwrotu, możesz zachować jej tyle, ile razy masz wykupiony ten Talent. Co więcej, możesz wykorzystać Przewagi do Odwrotu, nawet jeśli masz ich mniej niż przeciwnik.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.SgjJMBgc85aswvhm"
         },
         "Well-prepared": {
             "id": "SHH2vUpNxj0wmmPT",
             "name": "Dobrze Przygotowany",
-            "description": "<p>Dobrze przewidujesz, czego będą potrzebować inni i co przyda się tobie. Tyle razy na sesję, ile razy wykupiłeś ten Talent, możesz wyciągnąć z plecaka lub sakwy niezbędny przedmiot, jeśli jego ciężar w punktach obciążenia wynosi 0, mógł zostać niedawno kupiony i jego posiadanie nie jest czymś niezwykłym. Może to być butelka spirytusu, potrzebna do polania rany kompana, lub gwizdek, którego zabrakło występującemu cyrkowcowi. Kiedy użyjesz tego Talentu, odlicz pieniądze za przedmiot, pokazując tym, że wcześniej go kupiłeś  </p>",
+            "description": "<p>Dobrze przewidujesz, czego będą potrzebować inni i co przyda się tobie. Tyle razy na sesję, ile razy wykupiłeś ten Talent, możesz wyciągnąć z plecaka lub sakwy niezbędny przedmiot, jeśli jego ciężar w punktach obciążenia wynosi 0, mógł zostać niedawno kupiony i jego posiadanie nie jest czymś niezwykłym. Może to być butelka spirytusu, potrzebna do polania rany kompana, lub gwizdek, którego zabrakło występującemu cyrkowcowi. Kiedy użyjesz tego Talentu, odlicz pieniądze za przedmiot, pokazując tym, że wcześniej go kupiłeś.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.SHH2vUpNxj0wmmPT"
         },
         "Stone Soup": {
             "id": "spdiWsONKTzkLbg3",
             "name": "Wstrzemięźliwy",
-            "description": "<p>Przywykłeś do tego, że jesz niewiele, i potrafisz przetrwać chude czasy. Jedząc połowę tego, co potrzebujesz, nie odczuwasz negatywnych skutków głodowania, chociaż jesteś nieco rozdrażniony. Testy głodu wykonujesz co 3 dni, a nie co 2  </p>",
+            "description": "<p>Przywykłeś do tego, że jesz niewiele, i potrafisz przetrwać chude czasy. Jedząc połowę tego, co potrzebujesz, nie odczuwasz negatywnych skutków głodowania, chociaż jesteś nieco rozdrażniony. Testy głodu wykonujesz co 3 dni, a nie co 2.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.spdiWsONKTzkLbg3",
             "tests": "Testy odporności, by wytrzymać głód"
         },
         "Etiquette": {
             "id": "sYbgpSnRqSZWgwFP",
             "name": "Etykieta (Grupa Społeczna)",
-            "description": "<p>Dopóki jesteś odpowiednio ubrany i zachowujesz się należycie, potrafisz wtopić się w tłum wybranej grupy społecznej. Oto przykłady kilku z nich: Członkowie Gildii lub Cechu, Kultyści, Przestępcy, Służba, Szlachta, Uczeni, Żołnierze. Jeśli nie posiadasz tego Talentu, ci, którzy go mają, łatwo zauważą, że nie pasujesz do obcego środowiska. Widać to w zachowaniu bohatera. To oczywiście zależy od odgrywania, ale MG może wprowadzić tu odpowiedni modyfikator do Testów Ogłady  </p>",
+            "description": "<p>Dopóki jesteś odpowiednio ubrany i zachowujesz się należycie, potrafisz wtopić się w tłum wybranej grupy społecznej. Oto przykłady kilku z nich: Członkowie Gildii lub Cechu, Kultyści, Przestępcy, Służba, Szlachta, Uczeni, Żołnierze. Jeśli nie posiadasz tego Talentu, ci, którzy go mają, łatwo zauważą, że nie pasujesz do obcego środowiska. Widać to w zachowaniu bohatera. To oczywiście zależy od odgrywania, ale MG może wprowadzić tu odpowiedni modyfikator do Testów Ogłady.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.sYbgpSnRqSZWgwFP",
             "tests": "Testy charyzmy lub plotkowania przeciw (Grupa Społeczna)"
         },
         "Contortionist": {
             "id": "TaYriYcJkFuIdBKp",
             "name": "Człowiek Guma",
-            "description": "<p>Jesteś w stanie wyginać swoje ciało i manipulować nim na sposoby, które zdają się przeczyć naturze. Dzięki temu możesz przeciskać się przez niewielkie otwory lub zmuszać kończyny do nieprawdopodobnych rzeczy. Granice tego wyznacza MG i udany Test Zwinności.  </p>",
+            "description": "<p>Jesteś w stanie wyginać swoje ciało i manipulować nim na sposoby, które zdają się przeczyć naturze. Dzięki temu możesz przeciskać się przez niewielkie otwory lub zmuszać kończyny do nieprawdopodobnych rzeczy. Granice tego wyznacza MG i udany Test Zwinności.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.TaYriYcJkFuIdBKp",
             "tests": "Testy Kuglarstwa lub Testy Zwinności w sytuacji, gdy przydaje się gibkość"
         },
         "Waterman": {
             "id": "tlEg21DHMEJoWcJq",
             "name": "Wodniak",
-            "description": "<p>Jesteś doświadczonym żeglarzem śródlądowym i jak mało kto znasz się na jednostkach rzecznych. Kiedy jesteś na pokładzie jednej z nich, nie stosują się do ciebie negatywne modyfikatory wynikające z falowania wód, kołysania pokładu, niepewnego podłoża itp. Co więcej, liczysz się za dwóch członków załogi, gdy trzeba zapewnić minimalną liczbę członków załogi, by wypłynąć na rzekę.  </p>",
+            "description": "<p>Jesteś doświadczonym żeglarzem śródlądowym i jak mało kto znasz się na jednostkach rzecznych. Kiedy jesteś na pokładzie jednej z nich, nie stosują się do ciebie negatywne modyfikatory wynikające z falowania wód, kołysania pokładu, niepewnego podłoża itp. Co więcej, liczysz się za dwóch członków załogi, gdy trzeba zapewnić minimalną liczbę członków załogi, by wypłynąć na rzekę.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.tlEg21DHMEJoWcJq",
             "tests": "Testy żeglarstwa na jednostkach pływających po rzece"
         },
@@ -1210,7 +1210,7 @@
         "Combat Reflexes": {
             "id": "tXKX29QZBdHmyMc7",
             "name": "Bitewny Refleks",
-            "description": "<p>Reagujesz szybko jak błyskawica, dlatego za każde wykupienie tego Talentu otrzymujesz +10 do Inicjatywy, gdy określana jest kolejność Inicjatywy  </p>",
+            "description": "<p>Reagujesz szybko jak błyskawica, dlatego za każde wykupienie tego Talentu otrzymujesz +10 do Inicjatywy, gdy określana jest kolejność Inicjatywy.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.tXKX29QZBdHmyMc7",
             "effects": {
                 "7i8RGItRAF5GLESP": {
@@ -1223,13 +1223,13 @@
         "Luck": {
             "id": "u0CFf3xwiyidD9T5",
             "name": "Szczęście",
-            "description": "<p>Powiadają, że kiedy się rodziłeś, Ranald się uśmiechnął. Maksymalna liczba twoich Punktów Szczęścia jest równa sumie liczby Punktów Przeznaczenia i liczby wykupień tego Talentu  </p>",
+            "description": "<p>Powiadają, że kiedy się rodziłeś, Ranald się uśmiechnął. Maksymalna liczba twoich Punktów Szczęścia jest równa sumie liczby Punktów Przeznaczenia i liczby wykupień tego Talentu.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.u0CFf3xwiyidD9T5"
         },
         "Iron Jaw": {
             "id": "UaDGF5MBFBwPq5YU",
             "name": "Żelazna Szczęka",
-            "description": "<p> Jesteś twardy i potrafisz wytrzymać najsilniejsze ciosy. Jeśli jakiś efekt nakłada na postać co najmniej jeden Stan Oszołomienie, gracz może wykonać Wymagający (+0) Test Wytrzymałości, by go zignorować. Każdy PS pozwala ci uniknąć dodatkowego Stanu.</p>",
+            "description": "<p> Jesteś twardy i potrafisz wytrzymać najsilniejsze ciosy. Jeśli jakiś efekt nakłada na postać co najmniej jeden Stan Oszołomienie, gracz może wykonać <strong>Wymagający (+0) Test Wytrzymałości</strong>, by go zignorować. Każdy PS pozwala ci uniknąć dodatkowego Stanu.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.UaDGF5MBFBwPq5YU",
             "tests": "Test odporności wykonywana przeciw Oszołomieniu"
         },
@@ -1256,13 +1256,13 @@
         "Tower of Memories": {
             "id": "V9N0LMnXf1WYseCL",
             "name": "Wieża Pamięci",
-            "description": "<p>Ta technika pamięciowa została opracowana przez kult Vereny, a swoje korzenie ma w praktykach elfich mistrzów wiedzy z Hoeth. Wieża Pamięci pozwala ci bezbłędnie przypomnieć sobie fakty i wydarzenia, ponieważ kolekcjonujesz je w wyimaginowanej wieży. Przywoływanie sekwencji tylu wspomnień, ile wynosi twoja Inteligencja, nie wymaga żadnego Testu, ale zapamiętywanie każdych dodatkowych 10 informacji wymaga Testu Inteligencji o zwiększają- cym się stopniu trudności, by je sobie poprawnie przypomnieć. Stopień trudności zaczyna się od Bardzo Łatwego (+60) dla 10 faktów, później staje się Łatwy (+40) dla 20, Przeciętny (+20) dla 30 i tak dalej. Jednym z najoczywistszych zastosowań tego Talentu są gry hazardowe, Talent może dać premię od +20 do +60 do Testów Umiejętności Hazard, w zależności od tego, jak bardzo pomocna w grze jest pamięć. MG może uznać, że Wieża Pamięci przyda się w innych sytuacjach, odpowiednio modyfikując Testy. Za każdym razem, gdy wykupujesz ten Talent, możesz zapamiętać dodatkową sekwencję (odpowiednią wartości Inteligencji) faktów bez potrzeby usuwania z pamięci poprzedniej.  </p>",
+            "description": "<p>Ta technika pamięciowa została opracowana przez kult Vereny, a swoje korzenie ma w praktykach elfich mistrzów wiedzy z Hoeth. Wieża Pamięci pozwala ci bezbłędnie przypomnieć sobie fakty i wydarzenia, ponieważ kolekcjonujesz je w wyimaginowanej wieży. Przywoływanie sekwencji tylu wspomnień, ile wynosi twoja Inteligencja, nie wymaga żadnego Testu, ale zapamiętywanie każdych dodatkowych 10 informacji wymaga Testu Inteligencji o zwiększają- cym się stopniu trudności, by je sobie poprawnie przypomnieć. Stopień trudności zaczyna się od <strong>Bardzo Łatwego (+60)</strong> dla 10 faktów, później staje się <strong>Łatwy (+40)</strong> dla 20, <strong>Przeciętny (+20)</strong> dla 30 i tak dalej. Jednym z najoczywistszych zastosowań tego Talentu są gry hazardowe, Talent może dać premię od +20 do +60 do Testów Umiejętności Hazard, w zależności od tego, jak bardzo pomocna w grze jest pamięć. MG może uznać, że Wieża Pamięci przyda się w innych sytuacjach, odpowiednio modyfikując Testy. Za każdym razem, gdy wykupujesz ten Talent, możesz zapamiętać dodatkową sekwencję (odpowiednią wartości Inteligencji) faktów bez potrzeby usuwania z pamięci poprzedniej.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.V9N0LMnXf1WYseCL"
         },
         "War Leader": {
             "id": "vCgEAetBMngR53aT",
             "name": "Wódz",
-            "description": "<p>Twój niewzruszony wzrok i inspirujące słowa popychają żołnierzy do jeszcze zacieklejszej walki. Podkomendni, którzy cię widzą, w jednym Teście Siły Woli na Rundę zyskują dodatkowe PS równe temu, ile razy masz wykupiony ten Talent. Dany wojownik może korzystać z premii tylko jednego dowódcy naraz.  </p>",
+            "description": "<p>Twój niewzruszony wzrok i inspirujące słowa popychają żołnierzy do jeszcze zacieklejszej walki. Podkomendni, którzy cię widzą, w jednym Teście Siły Woli na Rundę zyskują dodatkowe PS równe temu, ile razy masz wykupiony ten Talent. Dany wojownik może korzystać z premii tylko jednego dowódcy naraz.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.vCgEAetBMngR53aT",
             "tests": "Dowodzenie podczas wojny"
         },
@@ -1282,13 +1282,13 @@
         "Invoke": {
             "id": "voV0C2ar1bKpcpnH",
             "name": "Inwokacja",
-            "description": "<p> Zostałeś pobłogosławiony przez swego boskiego patrona, dzięki czemu zyskujesz zdolność czynienia jednego z jego Cudów. Mo- żesz wykupywać kolejne cuda za 100 PD pomnożone przez liczbę obecnie znanych cudów. Pełne zasady tego, jak się ich uczysz, znajdują się w Rozdziale 7: Religie i wierzenia. W normalnych okolicznościach nie możesz wykupić tego Talentu więcej niż jeden raz. Co więcej, nie możesz też kupić Talentów Magia Prosta i Magia Tajemna, jeśli posiadasz Talent Inwokacja. Po wydaniu 100 PD możesz się pozbyć tego Talentu, ale natychmiast utracisz dostęp do wszystkich zapewnianych przez niego cudów. Narażasz się też na gniew swego boga, a MG obmyśli, jak będzie się on przejawiał.</p>",
+            "description": "<p> Zostałeś pobłogosławiony przez swego boskiego patrona, dzięki czemu zyskujesz zdolność czynienia jednego z jego Cudów. Mo- żesz wykupywać kolejne cuda za 100 PD pomnożone przez liczbę obecnie znanych cudów. Pełne zasady tego, jak się ich uczysz, znajdują się w <strong>Rozdziale 7: Religie i wierzenia</strong>. W normalnych okolicznościach nie możesz wykupić tego Talentu więcej niż jeden raz. Co więcej, nie możesz też kupić Talentów <em>Magia Prosta</em> i <em>Magia Tajemna</em>, jeśli posiadasz Talent Inwokacja. Po wydaniu 100 PD możesz się pozbyć tego Talentu, ale natychmiast utracisz dostęp do wszystkich zapewnianych przez niego cudów. Narażasz się też na gniew swego boga, a MG obmyśli, jak będzie się on przejawiał.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.voV0C2ar1bKpcpnH"
         },
         "Enclosed Fighter": {
             "id": "VscjNv6RzHFb9CQp",
             "name": "Walka w Ciasnocie",
-            "description": "<p>Nauczyłeś się, jak najlepiej wykorzystywać w walce zamknięte przestrzenie. Nie dotyczą cię modyfikatory do Testów Broni Białej wynikające z walki w ciasnocie tuneli, okopów, jam gladiatorskich i im podobnych. Co więcej, możesz wykonywać Unik nawet wtedy, gdy nie mógłbyś tego zrobić z braku miejsca  </p>",
+            "description": "<p>Nauczyłeś się, jak najlepiej wykorzystywać w walce zamknięte przestrzenie. Nie dotyczą cię modyfikatory do Testów Broni Białej wynikające z walki w ciasnocie tuneli, okopów, jam gladiatorskich i im podobnych. Co więcej, możesz wykonywać Unik nawet wtedy, gdy nie mógłbyś tego zrobić z braku miejsca.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.VscjNv6RzHFb9CQp",
             "tests": "Test Uniku w ciasnej przestrzeni"
         },
@@ -1309,7 +1309,7 @@
         "Inspiring": {
             "id": "WCXnFSV4WOSmzzc4",
             "name": "Inspirujący",
-            "description": "<p> Twoje słowa i zachęty mogą przechylić szalę zwycięstwa w bitwie. Poniższa tabela pokazuje, ile osób ulegnie wpływowi Dowodzenia podczas wojny.</p> <p> </p> <div> <table title=\"\" border=\"1\" summary=\"\" cellspacing=\"0\" cellpadding=\"0\"> <tbody> <tr> <td> <p>Talent Taken</p> </td> <td> <p>Number of soldiers inﬂuenced</p> </td> </tr> <tr> <td> <p>1</p> </td> <td> <p>As normal × 5</p> </td> </tr> <tr> <td> <p>2</p> </td> <td> <p>As normal × 10</p> </td> </tr> <tr> <td> <p>3</p> </td> <td> <p> As normal × 20</p> </td> </tr> <tr> <td> <p>4</p> </td> <td> <p> As normal × 50</p> </td> </tr> <tr> <td> <p>5</p> </td> <td> <p> As normal × 100</p> </td> </tr> <tr> <td> <p>6</p> </td> <td> <p> As normal × 200</p> </td> </tr> <tr> <td> <p>7</p> </td> <td> <p> As normal × 500</p> </td> </tr> <tr> <td> <p>8</p> </td> <td> <p> As normal × 1000</p> </td> </tr> <tr> <td> <p>9</p> </td> <td> <p> All who can hear your inspiring voice</p> </td> </tr> </tbody> </table> </div>",
+            "description": "<p>Twoje słowa i zachęty mogą przechylić szalę zwycięstwa w bitwie. Poniższa tabela pokazuje, ile osób ulegnie wpływowi Dowodzenia podczas wojny.</p> <p> </p> <div> <table title=\"\" border=\"1\" summary=\"\" cellspacing=\"0\" cellpadding=\"0\"> <tbody> <tr> <td> <p>Liczba wykupień Talentu</p> </td> <td> <p>Liczba żołnierzy pod twoim wpływem</p> </td> </tr> <tr> <td> <p>1</p> </td> <td> <p>Normalna x5</p> </td> </tr> <tr> <td> <p>2</p> </td> <td> <p>Normalna x10</p> </td> </tr> <tr> <td> <p>3</p> </td> <td> <p>Normalna x20</p> </td> </tr> <tr> <td> <p>4</p> </td> <td> <p>Normalna x50</p> </td> </tr> <tr> <td> <p>5</p> </td> <td> <p>Normalna x100</p> </td> </tr> <tr> <td> <p>6</p> </td> <td> <p>Normalna x200</p> </td> </tr> <tr> <td> <p>7</p> </td> <td> <p>Normalna x500</p> </td> </tr> <tr> <td> <p>8</p> </td> <td> <p>Normalna x1000</p> </td> </tr> <tr> <td> <p>9</p> </td> <td> <p>Wszyscy, którzy cię słyszą</p> </td> </tr> </tbody> </table> </div>",
             "sourceId": "Compendium.wfrp4e-core.talents.WCXnFSV4WOSmzzc4",
             "tests": "Dowodzenie podczas wojny"
         },
@@ -1318,12 +1318,12 @@
             "name": "Starsza Pilotka",
             "description": "<p>Potrafisz kierować okrętem po zdradliwych akwenach. Kiedy nie powiedzie ci się Test na niepewnych wodach, możesz odwrócić kolejność kości, jeżeli nowy wynik pozwoli ci odnieść sukces. Maksymalnie możesz w ten sposób osiągnąć +1 PS, ponieważ w ostatniej chwili wypatrzyłeś niebezpieczeństwo. </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.WEH97InIX29nzgW1",
-            "tests": "Wiosłowanie lub Żeglowanie podczas wytyczania kursu przez "
+            "tests": "Wiosłowanie lub Żeglowanie podczas wytyczania kursu przez nieznane wody"
         },
         "Pure Soul": {
             "id": "wNvPXAhlKABl6hpk",
             "name": "Czysta Dusza",
-            "description": "<p>Twoja dusza jest nieskalana i odporna na zakusy Chaosu. Zanim będziesz musiał wykonać Test poddania się Zepsuciu, możesz przyjąć dodatkowe jego Punkty w liczbie równej liczbie wykupień tego Talentu  </p>",
+            "description": "<p>Twoja dusza jest nieskalana i odporna na zakusy Chaosu. Zanim będziesz musiał wykonać Test poddania się Zepsuciu, możesz przyjąć dodatkowe jego Punkty w liczbie równej liczbie wykupień tego Talentu.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.wNvPXAhlKABl6hpk",
             "effects": {
                 "2COWvsyLyfHXDcJJ": {
@@ -1350,7 +1350,7 @@
         "Concoct": {
             "id": "wXcJWxJdw0ib5b8W",
             "name": "Przyrządzanie Mikstur",
-            "description": "<p>Wiesz, jak przyrządzać napary, wywary i susze. Możesz podjąć się jednego darmowego Zajęcia Wytwórstwa, by użyć Rzemiosła (Aptekarstwa) bez dostępu do Warsztatu. Pozostałe Zajęcia Wytwórstwa należy przeprowadzić normalnie.  </p>",
+            "description": "<p>Wiesz, jak przyrządzać napary, wywary i susze. Możesz podjąć się jednego darmowego Zajęcia Wytwórstwa, by użyć Rzemiosła (Aptekarstwa) bez dostępu do Warsztatu. Pozostałe Zajęcia Wytwórstwa należy przeprowadzić normalnie.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.wXcJWxJdw0ib5b8W",
             "tests": "Rzemiosło (Aptekarstwo)"
         },
@@ -1364,14 +1364,14 @@
         "Commanding Presence": {
             "id": "x8g3U68oi8XzWiYr",
             "name": "Władcza Postura",
-            "description": "<p>Twoja fizjonomia powoduje u innych cichy podziw i zachwyt. Aura władczości sprawia, że ci o niższym Statusie nie mogą przeciwstawiać się swoją Siłą Woli, gdy inicjujesz Test Dowodzenia. Wrogowie będą bardziej oporni na działanie twej aury, ale pospolity gmin rzadko ośmieli się sprzeciwić.  </p>",
+            "description": "<p>Twoja fizjonomia powoduje u innych cichy podziw i zachwyt. Aura władczości sprawia, że ci o niższym Statusie nie mogą przeciwstawiać się swoją Siłą Woli, gdy inicjujesz Test Dowodzenia. Wrogowie będą bardziej oporni na działanie twej aury, ale pospolity gmin rzadko ośmieli się sprzeciwić.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.x8g3U68oi8XzWiYr",
             "tests": "Dowodzenie"
         },
         "Riposte": {
             "id": "x8jsChg17VQ9XgiK",
             "name": "Riposta",
-            "description": "<p>Wyznajesz zasadę, że najlepszą obroną jest atak, dlatego w walce błyskawicznie kontratakujesz, gdy tylko przeciwnik wyprowadzi cios. Jeśli twoja broń posiada zaletę Szybka, możesz zadać obrażenia, gdy jesteś atakowany, jakbyś wykonywał swoją Akcję. Ripostę możesz wykonać tyle razy w Rundzie, ile razy wykupisz ten Talent  </p>",
+            "description": "<p>Wyznajesz zasadę, że najlepszą obroną jest atak, dlatego w walce błyskawicznie kontratakujesz, gdy tylko przeciwnik wyprowadzi cios. Jeśli twoja broń posiada zaletę Szybka, możesz zadać obrażenia, gdy jesteś atakowany, jakbyś wykonywał swoją Akcję. Ripostę możesz wykonać tyle razy w Rundzie, ile razy wykupisz ten Talent.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.x8jsChg17VQ9XgiK",
             "tests": "Testy Broni Białej w defensywie"
         },
@@ -1391,14 +1391,14 @@
         "Shadow": {
             "id": "XSb3QVB9ipPBFt56",
             "name": "Cień",
-            "description": "<p>Wiesz, jak podążać za innymi, by nie zostać na tym przyłapanym. Możesz wykorzystywać zasady śledzenia ze strony 128 bez konieczności wykonywania Testu Łączonego. Wystarczy, że wykonasz rzut na Percepcję lub Skradanie, zależnie od tego, która wartość jest wyższa.  </p>",
+            "description": "<p>Wiesz, jak podążać za innymi, by nie zostać na tym przyłapanym. Możesz wykorzystywać zasady śledzenia ze strony 128 bez konieczności wykonywania Testu Łączonego. Wystarczy, że wykonasz rzut na Percepcję lub Skradanie, zależnie od tego, która wartość jest wyższa.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.XSb3QVB9ipPBFt56",
             "tests": "Wszystkie testy związane ze śledzeniem"
         },
         "Public Speaker": {
             "id": "XU7D9CCmumuhqDUi",
             "name": "Mówca",
-            "description": "<p> Jesteś umiejętnym oratorem i wiesz, jak urabiać tłumy. Poniższa tabela wskazuje, ile osób ulegnie twojemu wpływowi, gdy wykonasz Test Charyzmy (patrz strona 119) podczas przemawiania.   </p> <p> </p> <div> <table title=\"\" border=\"1\" summary=\"\" cellspacing=\"0\" cellpadding=\"0\"> <tbody> <tr> <td> <p>Talent Taken</p> </td> <td> <p>Number of soldiers inﬂuenced</p> </td> </tr> <tr> <td> <p>1</p> </td> <td> <p>As normal × 5</p> </td> </tr> <tr> <td> <p>2</p> </td> <td> <p>As normal × 10</p> </td> </tr> <tr> <td> <p>3</p> </td> <td> <p> As normal × 20</p> </td> </tr> <tr> <td> <p>4</p> </td> <td> <p> As normal × 50</p> </td> </tr> <tr> <td> <p>5</p> </td> <td> <p> As normal × 100</p> </td> </tr> <tr> <td> <p>6</p> </td> <td> <p> As normal × 200</p> </td> </tr> <tr> <td> <p>7</p> </td> <td> <p> As normal × 500</p> </td> </tr> <tr> <td> <p>8</p> </td> <td> <p> As normal × 1000</p> </td> </tr> <tr> <td> <p>9</p> </td> <td> <p> All who can hear your inspiring voice</p> </td> </tr> </tbody> </table> </div>",
+            "description": "<p>Jesteś umiejętnym oratorem i wiesz, jak urabiać tłumy. Poniższa tabela wskazuje, ile osób ulegnie twojemu wpływowi, gdy wykonasz Test Charyzmy (patrz strona 119) podczas przemawiania.</p> <p> </p> <div> <table title=\"\" border=\"1\" summary=\"\" cellspacing=\"0\" cellpadding=\"0\"> <tbody> <tr> <td> <p>Liczba wykupień Talentu</p> </td> <td> <p>Liczba przekonanych\n</p> </td> </tr> <tr> <td> <p>1</p> </td> <td> <p>zwykła x5</p> </td> </tr> <tr> <td> <p>2</p> </td> <td> <p>zwykła x10</p> </td> </tr> <tr> <td> <p>3</p> </td> <td> <p>zwykła x20</p> </td> </tr> <tr> <td> <p>4</p> </td> <td> <p>zwykła x50</p> </td> </tr> <tr> <td> <p>5</p> </td> <td> <p>zwykła x100</p> </td> </tr> <tr> <td> <p>6</p> </td> <td> <p> zwykła x200</p> </td> </tr> <tr> <td> <p>7</p> </td> <td> <p>zwykła x500</p> </td> </tr> <tr> <td> <p>8</p> </td> <td> <p>zwykła x1000</p> </td> </tr> <tr> <td> <p>9</p> </td> <td> <p>wszyscy, którzy słyszą twój słowiczy głos</p> </td> </tr> </tbody> </table> </div>",
             "sourceId": "Compendium.wfrp4e-core.talents.XU7D9CCmumuhqDUi"
         },
         "Implacable": {
@@ -1431,20 +1431,20 @@
         "Strong-minded": {
             "id": "Ywo6fZNPC4zbHHSQ",
             "name": "Odporność Psychiczna",
-            "description": "<p>Jesteś uosobieniem determinacji i niezłomności. Dodaj tyle Punktów Determinacji do ich maksymalnej puli, ile razy wykupiłeś ten Talent  </p>",
+            "description": "<p>Jesteś uosobieniem determinacji i niezłomności. Dodaj tyle Punktów Determinacji do ich maksymalnej puli, ile razy wykupiłeś ten Talent.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.Ywo6fZNPC4zbHHSQ"
         },
         "Tunnel Rat": {
             "id": "Z91GFaT6FhEwyESU",
             "name": "Szczur Tunelowy",
-            "description": "<p>W tunelach, kanałach ściekowych i pod powierzchnią ziemi jesteś na swoim terenie. Kiedy wykorzystujesz w takich warunkach Umiejętność Skradanie, istotom wokoło nie przysługuje pasywny Test Percepcji. Zauważyć cię mogą dopiero wtedy, gdy będą cię czynnie wyglądały lub szukały ukrytych przeciwników  </p>",
+            "description": "<p>W tunelach, kanałach ściekowych i pod powierzchnią ziemi jesteś na swoim terenie. Kiedy wykorzystujesz w takich warunkach Umiejętność Skradanie, istotom wokoło nie przysługuje pasywny Test Percepcji. Zauważyć cię mogą dopiero wtedy, gdy będą cię czynnie wyglądały lub szukały ukrytych przeciwników.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.Z91GFaT6FhEwyESU",
             "tests": "Testy Skradania się pod ziemią"
         },
         "Very Strong": {
             "id": "Zf0vk2rjllpDh0Ua",
             "name": "Bardzo Silny",
-            "description": "<p>Twoja początkowa Siła zostaje na stałe podniesiona o +5, co nie liczy się do sumy twoich Rozwinięć.  </p>",
+            "description": "<p>Twoja początkowa Siła zostaje na stałe podniesiona o +5, co nie liczy się do sumy twoich Rozwinięć.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.Zf0vk2rjllpDh0Ua",
             "effects": {
                 "4dEzF6K4pP539zRF": {
@@ -1456,7 +1456,7 @@
         "Warrior Born": {
             "id": "zGQ0ShUTSlUvVtWh",
             "name": "Urodzony Wojownik",
-            "description": "<p>Twoja początkowa Walka Wręcz zostaje na stałe podniesiona o +5, co nie liczy się do sumy twoich Rozwinięć  </p>",
+            "description": "<p>Twoja początkowa Walka Wręcz zostaje na stałe podniesiona o +5, co nie liczy się do sumy twoich Rozwinięć.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.zGQ0ShUTSlUvVtWh",
             "effects": {
                 "yjOMm9SFJOK8QBvQ": {
@@ -1468,7 +1468,7 @@
         "Hardy": {
             "id": "zImcTgEl2XNnbu5W",
             "name": "Twardziel",
-            "description": "<p>Na stałe zwiększasz swoją Żywotność o Bonus z Wytrzymałości. Je- śli ten się zwiększy, wraz z nim wzrośnie również twoja Żywotność wynikająca z tego Talentu  </p>",
+            "description": "<p>Na stałe zwiększasz swoją Żywotność o Bonus z Wytrzymałości. Je- śli ten się zwiększy, wraz z nim wzrośnie również twoja Żywotność wynikająca z tego Talentu.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.zImcTgEl2XNnbu5W",
             "effects": {
                 "REeG0AV5Sm4fTAIJ": {

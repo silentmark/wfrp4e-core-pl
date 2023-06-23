@@ -144,7 +144,7 @@
         },
         "Hatred": {
             "id": "aE3pyW20Orvdjzj0",
-            "name": "Nienawiść",
+            "name": "Nienawiść (Grupa)",
             "description": "<p>Stworzenie naprawdę nienawidzi Obiektu. Stworzenie nigdy nie może nawiązać kontaktów z kimś lub czymś, czego nienawidzi. Za każdym razem, gdy spotyka przedstawiciela znienawidzonej grupy, musi wykonać Test Psychologii. Jeśli ten się nie uda, stworzenie nie jest w stanie dłużej powstrzymywać swojej Nienawiści. Pod koniec każdej następnej Rundy stworzenie może wykonać kolejny Test Psychologii, by zakończyć napad Nienawiści. Taki atak sam dobiegnie końca, kiedy wszyscy członkowie znienawidzonej grupy znajdujący się w polu widzenia albo uciekną, albo zginą. Utrata Przytomności przynosi identyczny skutek.</p><p>Stworzenie będąca w szale Nienawiści musi natychmiast podjąć próbę zniszczenia znienawidzonej grupy w najszybszy i najbardziej zabójczy znany jej sposób. Otrzymuje premię +1 PS do wszystkich Testów walki przeciwko tej grupie, jest niewrażliwe na Strach oraz Zastraszanie (ale nie na Grozę) wywoływane przez znienawidzonego wroga.</p>",
             "sourceId": "Compendium.wfrp4e-core.traits.aE3pyW20Orvdjzj0",
             "specification": "Cel"
@@ -644,7 +644,7 @@
                 "6rMAx2bGefOkubv8": {
                     "id": "6rMAx2bGefOkubv8",
                     "label": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Prosty (+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 }
             }
         },
