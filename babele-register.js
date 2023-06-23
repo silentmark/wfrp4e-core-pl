@@ -67,10 +67,19 @@ Hooks.on("init", () => {
 	});
 });
 
-Hooks.on("setup", () => {
-    CompendiumCollection.CACHE_LIFETIME_SECONDS = 1;
-});
+(function disableCache() {
+	console.log("BABELE: Disable cache");
+	CompendiumCollection.CACHE_LIFETIME_SECONDS = 1;
+})();
+
 
 Hooks.on("ready", () => {
-    CompendiumCollection.CACHE_LIFETIME_SECONDS = 300;
+	setTimeout(() => {
+		console.log("BABELE: Enable cache");
+		CompendiumCollection.CACHE_LIFETIME_SECONDS = 300;
+
+		game.packs.forEach(p => {
+			p._flush = foundry.utils.debounce(p.clear.bind(p), CompendiumCollection.CACHE_LIFETIME_SECONDS * 1000);
+		});
+	}, 1000);
 });
