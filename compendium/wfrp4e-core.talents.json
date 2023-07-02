@@ -1468,7 +1468,7 @@
         "Hardy": {
             "id": "zImcTgEl2XNnbu5W",
             "name": "Twardziel",
-            "description": "<p>Na stałe zwiększasz swoją Żywotność o Bonus z Wytrzymałości. Je- śli ten się zwiększy, wraz z nim wzrośnie również twoja Żywotność wynikająca z tego Talentu.</p>",
+            "description": "<p>Na stałe zwiększasz swoją Żywotność o Bonus z Wytrzymałości. Jeśli ten się zwiększy, wraz z nim wzrośnie również twoja Żywotność wynikająca z tego Talentu.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.zImcTgEl2XNnbu5W",
             "effects": {
                 "REeG0AV5Sm4fTAIJ": {
