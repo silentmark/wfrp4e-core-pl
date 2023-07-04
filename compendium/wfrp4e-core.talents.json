@@ -522,7 +522,7 @@
         "Magic Resistance": {
             "id": "eowbsW6oHGSNJmxV",
             "name": "Odporność na Magię",
-            "description": "<p>Jesteś uodporniony na zaklęcia. Poziom Sukcesów czarów rzucanych na ciebie jest obniżony o 2 za każde wykupienie tego Talentu. Poziom Sukcesów jest obniżany tylko od najwyższej Odporności na Magię w obszarze oddziaływania czaru. Co więcej, nie możesz wykupić Talentów: <em>Magia Tajemna</em>, <em>Błogosławieństwo</em>, <em>Inwokacja</em>, <em>Magia Prosta</em> i <em>Czarownica</em>.</p>",
+            "description": "<p>Jesteś uodporniony na zaklęcia. Poziom Sukcesów czarów rzucanych na ciebie jest obniżony o 2 za każde wykupienie tego Talentu. Poziom Sukcesów jest obniżany tylko od najwyższej Odporności na Magię w obszarze oddziaływania czaru. Co więcej, nie możesz wykupić Talentów: <em>Magia Tajemna</em>, <em>Błogosławieństwo</em>, <em>Inwokacja</em>, <em>Magia Prosta</em> i <em>Czarownica</em></p>",
             "sourceId": "Compendium.wfrp4e-core.talents.eowbsW6oHGSNJmxV",
             "effects": {
                 "EsoBJtVEVYxCXdRb": {
