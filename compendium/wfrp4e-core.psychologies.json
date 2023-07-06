@@ -21,7 +21,8 @@
             "effects": {
                 "6QhtnGcV5T0JXQZN": {
                     "id": "6QhtnGcV5T0JXQZN",
-                    "label": "Nienawiść"
+                    "label": "Nienawiść",
+                    "description": "Combat Test vs Hated Group"
                 }
             }
         },
@@ -58,7 +59,8 @@
             "effects": {
                 "R2HbCmmf2tsHfeM2": {
                     "id": "R2HbCmmf2tsHfeM2",
-                    "label": "Miłość"
+                    "label": "Miłość",
+                    "description": "Tests related to defending Loved ones"
                 }
             }
         },

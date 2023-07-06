@@ -1,5 +1,5 @@
 {
-    "label": "Cechy",
+    "label": "Cechy Stworzeń",
     "mapping": {
         "roll": "system.rollable.skill",
         "specification_label": "system.specification.label",
@@ -19,7 +19,7 @@
         "Animosity": {
             "id": "0VpT5yubw4UL7j6f",
             "name": "Wrogość (Obiekt)",
-            "description": "<p>Stworzenie naprawdę nie lubi Obiektu. Za każdym razem, gdy spotyka przedstawiciela tej grupy, musi wykonać Test Psychologii. Jeśli Test się powiedzie, stworzenie może kląć i pluć, ale otrzyma jedynie karę -20 do wszystkich Testów Ogłady związanych z tą grupą. Jeśli Test się nie uda, stworzenie nie jest w stanie dłużej dusić Wrogości. Pod koniec każdej następnej Rundy należy wykonać kolejny Test Psychologii, by zakończyć atak. Jeśli Test się nie powiedzie, Wrogość zakończy się samoistnie, kiedy wszyscy członkowie nielubianej grupy znajdujący się w polu widzenia albo czmychną, albo zostaną spacyfikowani. Oszołomienie lub Utrata Przytomności naturalnie kończą napad Wrogości, podobnie jak niektóre inne Czynniki Psychologiczne. Kiedy stworzenie ma napad Wrogości, musi natychmiast zaatakować swoich wrogów - albo werbalnie (obelgami, drwinami itd.), albo fizycznie (zazwyczaj kończy się na pięściach), w zależności od okoliczności. Ponadto podczas takich drwin i innych prób werbalnych ataków stworzenie otrzymuje premię +1 PS. Strach i Groza natychmiast przerywają napad Wrogości.</p>",
+            "description": "<p>Stworzenie naprawdę nie lubi Obiektu.</p>\n<p>Postać żywi wrogość wobec grupy „x”, co zazwyczaj oznacza jakąś grupę społeczną lub typ stworzeń, jak np. „mieszkańcy Nordlandu”, „zwierzoludzie” czy „szlachta”. Za każdym razem, gdy spotyka przedstawiciela tej grupy, musi wykonać Test Psychologii. Jeśli Test się powiedzie, postać może kląć i pluć, ale otrzyma jedynie karę -20 do wszystkich Testów Ogłady związanych z tą grupą. Jeśli Test się nie uda, postać nie jest w stanie dłużej dusić Wrogości.</p>\n<p>Pod koniec każdej następnej Rundy należy wykonać kolejny Test Psychologii, by zakończyć atak. Jeśli Test się nie powiedzie, Wrogość zakończy się samoistnie, kiedy wszyscy członkowie nielubianej grupy znajdujący się w polu widzenia albo czmychną, albo zostaną spacyfikowani. Oszołomienie lub Utrata Przytomności naturalnie kończą napad Wrogości, podobnie jak niektóre inne Czynniki Psychologiczne.</p>\n<p>Kiedy postać ma napad Wrogości:</p>\n<ul>\n<li>Musi natychmiast zaatakować swoich wrogów – albo werbalnie (obelgami, drwinami itd.), albo fizycznie (zazwyczaj kończy się na pięściach), w zależności od okoliczności.</li>\n<li>Ponadto podczas takich drwin i innych prób werbalnych ataków postać otrzymuje premię +1 PS.</li>\n</ul>\n<p>Strach i Groza natychmiast przerywają napad Wrogości.</p>",
             "sourceId": "Compendium.wfrp4e-core.traits.0VpT5yubw4UL7j6f",
             "specification": "Cel"
         },
@@ -63,7 +63,7 @@
         "Afraid": {
             "id": "4CMKeDTDrRQZbPIJ",
             "name": "Lęk",
-            "description": "<p>Stworzenie odczuwa Strach (0) przy spotkaniu z Obiektem.</p><p>Podczas Wydłużonego Testu Opanowania należy osiągnąć tyle PS, ile wynosi ta wartość. Test można ponawiać pod koniec każdej Rundy, dopóki liczba PS nie zrówna się z Poziomem Strachu Obiektu lub go nie przekroczy. Dopóki się to nie stanie, stworzenie jest zdjęte Strachem. W takiej sytuacji otrzymuje karę -1 PS do wszystkich Testów, które w jakikolwiek sposób wpłynęłyby na źródło Strachu. Ponadto stworzenie nie może podejść do czegokolwiek, co wywołuje w nim Strach, jeśli nie zda Wymagającego (+0) Testu Opanowania. Jeśli Obiekt zacznie się zbliżać, również należy wykonać Wymagający (+0) Test Opanowania - jeżeli się nie powiedzie, stworzenie otrzymuje 1 poziom Paniki.</p>",
+            "description": "<p>Stworzenie odczuwa Strach (0) przy spotkaniu z Obiektem.</p>\n<p>Strach jest objawem ekstremalnej awersji wobec czegoś. Stworzenia, które wzbudzają Strach, w statystykach mają również Współczynnik Strachu równy „x”. Podczas Wydłużonego Testu Opanowania należy osiągnąć tyle PS, ile wynosi ta wartość. Test można ponawiać pod koniec każdej Rundy, dopóki liczba PS nie zrówna się z Poziomem Strachu danego stworzenia lub go nie przekroczy. Dopóki się to nie stanie, postać jest zdjęta Strachem:</p>\n<ul>\n<li>Otrzymuje karę -1 PS do wszystkich Testów, które w jakikolwiek sposób wpłynęłyby na źródło Strachu.</li>\n<li>Postać nie może podejść do czegokolwiek, co wywołuje w niej Strach, jeśli nie zda <strong>Wymagającego (+0) Testu Opanowania</strong>. Jeśli stworzenie zacznie się zbliżać, również należy wykonać <strong>Wymagający (+0) Test Opanowania</strong> – jeżeli się nie powiedzie, postać otrzymuje 1 poziom Paniki.</li>\n</ul>",
             "sourceId": "Compendium.wfrp4e-core.traits.4CMKeDTDrRQZbPIJ",
             "specification": "Cel"
         },

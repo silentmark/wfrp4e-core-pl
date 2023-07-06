@@ -11,17 +11,20 @@ Hooks.on("init", () => {
 		effects: (effects, translations) => {
 			return effects.map((data) => {
 				//TODO: map script.
-				const translation = translations[data.label] || translations[data._id];
+				const translation = translations[data.label] || translations[data.id];
 				if (translations && translation) {
 				 	const newEffect = mergeObject(
 						data,
 						mergeObject(translation, { translated: true }),
 					);
-					if (translation.script?.indexOf("await ") > -1) {
-						newEffect.flags.wfrp4e.isAsync = true;
-					}
 					if (translation.script) {
 						newEffect.flags.wfrp4e.script = translation.script;
+					}
+					if (translation.secondaryScript) {
+						newEffect.flags.wfrp4e.secondaryEffect.script = translation.secondaryScript;
+					}
+					if (translation.description) {
+						newEffect.flags.wfrp4e.effectData.description = translation.description;
 					}
 					return newEffect;
 				}
@@ -32,7 +35,7 @@ Hooks.on("init", () => {
 		notes: (notes, translations) => {
 			// TODO: notes on map.
 			return notes.map((data) => {
-				const translation = translations[data._id];
+				const translation = translations[data.id];
 				if (translations && translation) {
 					return mergeObject(
 						data,
@@ -47,7 +50,7 @@ Hooks.on("init", () => {
 			const defaultMethod = Converters.fromPack();
 			const translatedItems = defaultMethod(items, translations);
 			const dynamicMapping = new CompendiumMapping("Item", null);
-			const toTranslate = translatedItems.filter(x=> translations[x._id] != null)
+			const toTranslate = translatedItems.filter(x=> translations[x.id] != null)
 
 			for (let i = 0; i < toTranslate.length; i++) {
 				const item = toTranslate[i];
@@ -56,9 +59,9 @@ Hooks.on("init", () => {
 					let translatedItem = pack.translations[item.name];
 					const translatedData = dynamicMapping.map(item, translatedItem);
 					translatedItem = mergeObject(item, translatedData);
-					translatedItem.system.specification.value = translations[translatedItem._id].specification;
-					if (translations[translatedItem._id].tests) {
-						translatedItem.system.tests.value = translations[translatedItem._id].tests;
+					translatedItem.system.specification.value = translations[translatedItem.id].specification;
+					if (translations[translatedItem.id].tests) {
+						translatedItem.system.tests.value = translations[translatedItem.id].tests;
 					}
 				}
 			}

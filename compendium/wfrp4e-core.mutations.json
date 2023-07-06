@@ -31,7 +31,8 @@
                     "id": "mfFTDXJ0SygBMRmF",
                     "label": "Paranoja"
                 }
-            }
+            },
+            "modifier": "-5 Initiative, -5 Intelligence"
         },
         "Jealous Thoughts": {
             "id": "2JQWBLFSixeI6W6L",
@@ -43,7 +44,8 @@
                     "id": "rAvBBRHH27iSpP87",
                     "label": "Zazdrosne myśli"
                 }
-            }
+            },
+            "modifier": "-10 Fellowship"
         },
         "Erratic Fantasist": {
             "id": "2xvxa9Y8cqHzxuPd",
@@ -55,7 +57,8 @@
                     "id": "4rt99MvDqb1zR2MG",
                     "label": "Mitomania"
                 }
-            }
+            },
+            "modifier": "-5 Initiative, -5 Willpower"
         },
         "Short Legs": {
             "id": "4OMI3eligS2L0LiL",
@@ -67,7 +70,8 @@
                     "id": "Go6qdctMDg9FSLwm",
                     "label": "Krótkie nogi"
                 }
-            }
+            },
+            "modifier": "-1 Movement"
         },
         "Unending Malice": {
             "id": "apBxYVRVp4Jt6gxy",
@@ -80,12 +84,13 @@
                     "label": "Złe zamiary",
                     "script": "if (args.type == \"weapon\" || args.type == \"cast\") {\n   args.prefillModifiers.modifier += 10;\n}\nelse {\n   args.prefillModifiers.modifier -= 10;\n}"
                 }
-            }
+            },
+            "modifier": "-10 to any Test not hurting another, +10 on Tests to hurt"
         },
         "Patchy Feathers": {
             "id": "ArCg0WaBxLgPQA8F",
             "name": "Niejednolite opierzenie",
-            "description": "<p>Rzuć dwukrotnie, by ustalić Miejsce Trafienia porosłe pierzem.</p>",
+            "description": "<p>Rzuć dwukrotnie w tabeli @Table[hitloc]{Miejsca Trafień}, by ustalić miejsca porosłe pierzem.</p>",
             "sourceId": "Compendium.wfrp4e-core.mutations.ArCg0WaBxLgPQA8F"
         },
         "Totally Unhinged": {
@@ -98,7 +103,8 @@
                     "id": "JTKbY08Ya8XiV33s",
                     "label": "Kompletny świr"
                 }
-            }
+            },
+            "modifier": "-20 Fellowship, +10 Willpower"
         },
         "Worried Jitters": {
             "id": "BZ5iT2wQq7rOQ0Vo",
@@ -110,7 +116,8 @@
                     "id": "sijTILz9kZO5oASo",
                     "label": "Drżączka"
                 }
-            }
+            },
+            "modifier": "+5 Agility, -5 Fellowship"
         },
         "Fearful Concern": {
             "id": "CAqBwTw411GEyc4d",
@@ -122,12 +129,13 @@
                     "id": "Hp214Mf1VQEpwpN5",
                     "label": "Straszny niepokój"
                 }
-            }
+            },
+            "modifier": "-10 Willpower"
         },
         "Weeping Pus": {
             "id": "cXeFXMf7IhxiGGPK",
             "name": "Sącząca się ropa",
-            "description": "<p>Rzuć k100, by ustalić Miejsce Trafienia, z którego się sączy.</p>",
+            "description": "<p>Rzuć w tabeli @Table[hitloc]{Miejsca Trafień}, by ustalić miejsce, z którego się sączy.</p>",
             "sourceId": "Compendium.wfrp4e-core.mutations.cXeFXMf7IhxiGGPK"
         },
         "Inhuman Beauty": {
@@ -140,7 +148,8 @@
                     "id": "73ZIsujmxVg9kAlF",
                     "label": "Nieludzka uroda"
                 }
-            }
+            },
+            "modifier": "+10 Fellowship; you do not scar"
         },
         "Emaciated": {
             "id": "dsYDcdQfJGc7wxSX",
@@ -152,7 +161,8 @@
                     "id": "Hkhq8FTiyNEsfHUF",
                     "label": "Wychudzone ciało"
                 }
-            }
+            },
+            "modifier": "-10 Strength, +5 Agility"
         },
         "Crawling Skin": {
             "id": "DVF74DvmMttrvboI",
@@ -164,7 +174,8 @@
                     "id": "FsfgCNLgJOUHSGMo",
                     "label": "Nieustanne dreszcze"
                 }
-            }
+            },
+            "modifier": "-5 Initiative, -5 Dexterity"
         },
         "Thrill Hunter": {
             "id": "gMsd6II7Y1oBMddp",
@@ -176,7 +187,8 @@
                     "id": "39WPkucQosauvNSW",
                     "label": "Uzależnienie od adrenaliny"
                 }
-            }
+            },
+            "modifier": "+10 Willpower, -10 Initiative"
         },
         "Fleshy Tentacle": {
             "id": "GtACPDzi25YNgV0m",
@@ -199,9 +211,11 @@
             "effects": {
                 "egLqzQE6VJ1xG91R": {
                     "id": "egLqzQE6VJ1xG91R",
-                    "label": "Strach przed samotnością"
+                    "label": "Strach przed samotnością",
+                    "description": "Penalty when alone"
                 }
-            }
+            },
+            "modifier": "-10 to any Test when alone"
         },
         "Iron Skin": {
             "id": "hTm0rQkQTpm0OT3n",
@@ -214,7 +228,8 @@
                     "label": "Stalowa skóra",
                     "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 2;\nAP[\"rArm\"].value += 2;\nAP[\"lArm\"].value += 2;\nAP[\"body\"].value += 2;\nAP[\"lLeg\"].value += 2;\nAP[\"rLeg\"].value += 2;"
                 }
-            }
+            },
+            "modifier": "+2 Armor Points to all locations, -10 Agility"
         },
         "Corpulent": {
             "id": "iLZcSRUbxKBecACZ",
@@ -226,7 +241,8 @@
                     "id": "A3qEjzJ8tFTTWDPl",
                     "label": "Otyłość"
                 }
-            }
+            },
+            "modifier": "-1 Movement, +5 Strength, +5 Toughness"
         },
         "Enormous Eye": {
             "id": "JaEYSLJU5B2bknNc",
@@ -236,14 +252,16 @@
             "effects": {
                 "iZgljsMJIgKH6L0P": {
                     "id": "iZgljsMJIgKH6L0P",
-                    "label": "Ogromne oko"
+                    "label": "Ogromne oko",
+                    "description": "Perception Tests involving sight"
                 }
-            }
+            },
+            "modifier": "+10 on Perception Tests involving sight"
         },
         "Inverted Face": {
             "id": "JR6GZJDVNupDnnbm",
             "name": "Odwrócona twarz",
-            "description": "<p>–20 do testów Ogłady.</p>",
+            "description": "<p>–20 do wszystkich testów Ogłady.</p>",
             "sourceId": "Compendium.wfrp4e-core.mutations.JR6GZJDVNupDnnbm",
             "effects": {
                 "W6GtdIEcYRTTdUbk": {
@@ -251,7 +269,8 @@
                     "label": "Odwrócona twarz",
                     "script": "if (args.type == \"characteristic\" && args.item == \"fel\") {\n  args.prefillModifiers.modifier -= 20;\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"fel\") {\n    args.prefillModifiers.modifier -= 20\n  }\n}"
                 }
-            }
+            },
+            "modifier": "-20 to all Fellowship Tests"
         },
         "Tortured Visions": {
             "id": "JS0LEfU1Y5clOJpT",
@@ -263,7 +282,8 @@
                     "id": "FckYHxsq1fxb9QNo",
                     "label": "Dręczące wizje"
                 }
-            }
+            },
+            "modifier": "-10 Initiative"
         },
         "Lolling Tongue": {
             "id": "kwLyvpNGE1MrDUw9",
@@ -273,9 +293,11 @@
             "effects": {
                 "UuWZEOCSqCXzdXO8": {
                     "id": "UuWZEOCSqCXzdXO8",
-                    "label": "Zwisający jęzor"
+                    "label": "Zwisający jęzor",
+                    "description": "Language test when speaking"
                 }
-            }
+            },
+            "modifier": "-10 to all Language Tests when speaking"
         },
         "Glowing Skin": {
             "id": "LWBMThQzG5aCSNXP",
@@ -286,7 +308,7 @@
         "Unholy Rage": {
             "id": "MdrqSnA014jBggAV",
             "name": "Bezbożny szał",
-            "description": "<p>Szał Bojowy, Walka Wręcz +10.</p>",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.psychologies.DrNUTPeodEgpWTnT]{Szał Bojowy}, Walka Wręcz +10.</p>",
             "sourceId": "Compendium.wfrp4e-core.mutations.MdrqSnA014jBggAV",
             "effects": {
                 "2Ohs6a56Gxu8VLHF": {
@@ -299,12 +321,13 @@
                     "label": "Bezbożny szał",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.psychologies.DrNUTPeodEgpWTnT\").then(item => {\nitem = item.toObject();\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);\n})"
                 }
-            }
+            },
+            "modifier": "+10 Weapon Skill, Subject to Frenzy"
         },
         "Extra Mouth": {
             "id": "NzRTWXHlQ8I46RW4",
             "name": "Dodatkowe usta",
-            "description": "<p>Rzuć kośćmi, by ustalić Miejsce Trafienia, w którym się pojawią.</p>",
+            "description": "<p>Rzuć w tabeli @Table[hitloc]{Miejsca Trafień}, by ustalić miejsce, w którym się pojawią.</p>",
             "sourceId": "Compendium.wfrp4e-core.mutations.NzRTWXHlQ8I46RW4"
         },
         "Animalistic Legs": {
@@ -317,7 +340,8 @@
                     "id": "1WuNk8jD1SyJIdHE",
                     "label": "Bonus do Szybkości"
                 }
-            }
+            },
+            "modifier": "+1 Movement"
         },
         "Hollow Heart": {
             "id": "oZzmVlMOZ02NaPkZ",
@@ -329,17 +353,18 @@
                     "id": "C3nRwWnS8XEQfRQi",
                     "label": "Bezduszność"
                 }
-            }
+            },
+            "modifier": "+10 Willpower, -10 Fellowship"
         },
         "Uneven Horns": {
             "id": "Pmcq5P7yRnYsoFYf",
             "name": "Nierówne rogi",
-            "description": "<p>+1 Punkt Pancerza na głowie, liczy się jako Cecha Stworzenia @UUID[Compendium.wfrp4e-core.traits.AtpAudHA4ybXVlWM]{Broń} o współczynniku obrażeń +BS.</p>",
+            "description": "<p>+1 Punkt Pancerza na głowie. Liczy się jako Cecha Stworzenia @UUID[Compendium.wfrp4e-core.traits.AtpAudHA4ybXVlWM]{Broń} o współczynniku obrażeń +BS. Tej mutacji nie da się ukryć.</p>",
             "sourceId": "Compendium.wfrp4e-core.mutations.Pmcq5P7yRnYsoFYf",
             "effects": {
                 "2o80BN5wj3QZxpYJ": {
                     "id": "2o80BN5wj3QZxpYJ",
-                    "label": "Nierówne rogi",
+                    "label": "Nierówne rogi PP",
                     "script": "args.actor.status.armour[\"head\"].value += 1;"
                 },
                 "n4ttJEJZfsfISN5O": {
@@ -347,7 +372,8 @@
                     "label": "Nierówne rogi",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.traits.BqPZn6q3VHn9HUrW\").then(item => {\nitem = item.toObject();\nitem.name = this.effect.label;\nitem.system.specification.value = this.actor.characteristics.s.bonus;\nitem.system.description.value = \"\";\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);\n})"
                 }
-            }
+            },
+            "modifier": "+1 Armor Points to the Head"
         },
         "Mental Blocks": {
             "id": "Seb2VOuQVhBGVGN3",
@@ -359,7 +385,8 @@
                     "id": "sQs8JwxXFQcfvDLD",
                     "label": "Blokada psychiczna"
                 }
-            }
+            },
+            "modifier": "-10 Intelligence"
         },
         "Whiskered Snout": {
             "id": "SFKV0IBLLsbCMu7S",
@@ -372,7 +399,8 @@
                     "label": "Wibrysy",
                     "script": "if (args.type == \"skill\" && args.item.name == game.i18.n.localize(\"NAME.Track\")) {\n   args.prefillModifiers.modifier += 10;\n}"
                 }
-            }
+            },
+            "modifier": "+10 Track"
         },
         "Thorny Scales": {
             "id": "SPBRzPenZYA05KiK",
@@ -385,7 +413,8 @@
                     "label": "Kolczaste łuski",
                     "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 1;\nAP[\"rArm\"].value += 1;\nAP[\"lArm\"].value += 1;\nAP[\"body\"].value += 1;\nAP[\"lLeg\"].value += 1;\nAP[\"rLeg\"].value += 1;"
                 }
-            }
+            },
+            "modifier": "+1 Armor Points to all locations"
         },
         "Distended Digits": {
             "id": "t1sSiZO0cCKbT4ZA",
@@ -397,12 +426,13 @@
                     "id": "9tlBnF93gLOLbCs2",
                     "label": "Wydłużone palce"
                 }
-            }
+            },
+            "modifier": "+10 Dexterity"
         },
         "Hateful Impulses": {
             "id": "tcBFO4ATKpT0h3GT",
             "name": "Nienawistne popędy",
-            "description": "<p>Wrogość wobec wszystkich istot poza rasą postaci.</p>",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.psychologies.Q2MCUrG2HppMcvN0]{Wrogość} wobec wszystkich istot poza rasą postaci.</p>",
             "sourceId": "Compendium.wfrp4e-core.mutations.tcBFO4ATKpT0h3GT",
             "effects": {
                 "hUqEsvcMfTbiNWHj": {
@@ -422,7 +452,8 @@
                     "id": "Jv17LNhTsc3DqbRJ",
                     "label": "Dodatkowe stawy w nogach"
                 }
-            }
+            },
+            "modifier": "+5 Agility"
         },
         "Beast Within": {
             "id": "VeCvAdN7TnwEyyu0",
@@ -434,7 +465,8 @@
                     "id": "KRT5ky5npGHcoSzv",
                     "label": "Wewnętrzna bestia"
                 }
-            }
+            },
+            "modifier": "+10 Willpower, -5 Fellowship, -5 Intelligence"
         },
         "Awful Cravings": {
             "id": "WUuVChLDF6fOLmHX",
@@ -446,7 +478,8 @@
                     "id": "uMETdH7d0Hlt1yRa",
                     "label": "Odrażające zachcianki"
                 }
-            }
+            },
+            "modifier": "-5 Fellowship, -5 Willpower"
         },
         "Profane Urgency": {
             "id": "ytEJJWKVLwcywXCQ",
@@ -458,7 +491,8 @@
                     "id": "WRlYLsW6TkKNs7lX",
                     "label": "Bluźniercze popędy"
                 }
-            }
+            },
+            "modifier": "-10 Willpower, +10 Agility"
         },
         "Shaky Morale": {
             "id": "Zh68gzYMLW8vZgVo",
@@ -471,7 +505,8 @@
                     "label": "Chwiejne morale",
                     "script": "if (args.test.result.outcome == \"failure\") {\n    if (args.test.characteristicKey == \"wp\") {\n        this.actor.addCondition(\"broken\")\n    }\n}"
                 }
-            }
+            },
+            "modifier": "Gain a Broken Condition if you fail a Test derived from Willpower"
         }
     }
 }

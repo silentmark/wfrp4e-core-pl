@@ -32,7 +32,8 @@
                 "IRRiQjVGZiHjLnxt": {
                     "id": "IRRiQjVGZiHjLnxt",
                     "label": "Groźny",
-                    "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Intimidate\")) {\n    args.prefillModifiers.slBonus += 1;\n}"
+                    "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Intimidate\")) {\n    args.prefillModifiers.slBonus += 1;\n}",
+                    "description": "Intimidate"
                 }
             },
             "tests": "Zastraszanie"
@@ -441,7 +442,8 @@
             "effects": {
                 "VaILgn8RaKpqAueV": {
                     "id": "VaILgn8RaKpqAueV",
-                    "label": "Silne Nogi"
+                    "label": "Silne Nogi",
+                    "description": "Athletics Tests involving Leaping"
                 }
             }
         },
@@ -487,7 +489,8 @@
             "effects": {
                 "3vgrN50Ul3S5T2j6": {
                     "id": "3vgrN50Ul3S5T2j6",
-                    "label": "Nienawiść (Grupa)"
+                    "label": "Nienawiść (Grupa)",
+                    "description": "Combat Test vs Hated Group"
                 }
             },
             "tests": "Test Siły Woli podczas opierania się danej grupie"
@@ -565,7 +568,8 @@
                 },
                 "V6DfeSCAubOnx2rs": {
                     "id": "V6DfeSCAubOnx2rs",
-                    "label": "Bonus do Testu Przeciwstawnego"
+                    "label": "Bonus do Testu Przeciwstawnego",
+                    "description": "Opposed Strength Tests"
                 }
             },
             "tests": "Wiosłowanie lub Pływanie"
@@ -1500,7 +1504,8 @@
             "effects": {
                 "6m85TVcbkk2geHrE": {
                     "id": "6m85TVcbkk2geHrE",
-                    "label": "Krasomówstwo"
+                    "label": "Krasomówstwo",
+                    "description": "Using Charm when Public Speaking before a crowd"
                 }
             }
         }

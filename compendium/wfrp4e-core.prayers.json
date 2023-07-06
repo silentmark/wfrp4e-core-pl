@@ -15,7 +15,7 @@
         "Death Mask": {
             "id": "0AQheUiRtffqfKNg",
             "name": "Maska śmierci",
-            "description": "<p>Morr działa za twoim pośrednictwem - stajesz się portalem, przez który objawia swą obecność twoim wrogom. Twoja twarz przybiera tak wynędzniały wygląd, że zyskujesz Cechę @UUID[Compendium.wfrp4e-core.traits.pTorrE0l3VybAbtn]{Strach 1}.</p>",
+            "description": "<p>Morr działa za twoim pośrednictwem - stajesz się portalem, przez który objawia swą obecność twoim wrogom. Twoja twarz przybiera tak wynędzniały wygląd, że zyskujesz Cechę Stworzenia @UUID[Compendium.wfrp4e-core.traits.pTorrE0l3VybAbtn]{Strach 1}.</p>",
             "sourceId": "Compendium.wfrp4e-core.prayers.0AQheUiRtffqfKNg",
             "duration": "Bonus Ogd Rund",
             "target": "Ty",
