@@ -55,10 +55,11 @@
             "effects": {
                 "s7ir53mI80aA1FGh": {
                     "id": "s7ir53mI80aA1FGh",
-                    "label": "Złamana Ręka"
+                    "label": "Złamana Ręka",
+                    "description": "Dowolny wiążący się z użyciem dwóch rąk"
                 }
             },
-            "penalty": "-20 do testów wymagających obu rąk",
+            "penalty": "-20 do Testów wiążący się z użyciem dwóch rąk",
             "location": "Ręka"
         },
         "Broken Leg (Minor)": {
@@ -90,7 +91,7 @@
                     "label": "Naderwany Mięsień Tułowia"
                 }
             },
-            "penalty": "-10 do testów wymagających ruchu tułowiem",
+            "penalty": "-10 do Testów związanych z użyciem korpusu",
             "location": "Korpus"
         },
         "Amputated Ear": {
@@ -141,7 +142,7 @@
                     "label": "Naderwany Mięsień Tułowia"
                 }
             },
-            "penalty": "-20 do testów wymagających ruch tułowiem",
+            "penalty": "-20 do Testów związanych z użyciem korpusu",
             "location": "Korpus"
         },
         "Amputated Teeth": {
@@ -228,7 +229,7 @@
                     "label": "Amputacja Ramienia"
                 }
             },
-            "penalty": "-20 do testów wymagających obu rąk",
+            "penalty": "-20 do Testów wiążący się z użyciem dwóch rąk",
             "location": "Ręka"
         },
         "Broken Head (Minor)": {
@@ -328,10 +329,11 @@
             "effects": {
                 "m1KbLc6l2LK76961": {
                     "id": "m1KbLc6l2LK76961",
-                    "label": "Złamana Ręka"
+                    "label": "Złamana Ręka",
+                    "description": "Dowolny wiążący się z użyciem dwóch rąk"
                 }
             },
-            "penalty": "-20 do testów wymagających obu rąk",
+            "penalty": "-20 do Testów wiążący się z użyciem dwóch rąk",
             "location": "Ręka"
         },
         "Amputated Nose": {
@@ -418,7 +420,7 @@
                     "label": "Amputacja Dłoni"
                 }
             },
-            "penalty": "-20 do testów wymagających obu rąk",
+            "penalty": "-20 do Testów wiążący się z użyciem dwóch rąk",
             "location": "Dłoń"
         }
     }

@@ -70,7 +70,8 @@
             "effects": {
                 "megBKxKy2Xu8LoXg": {
                     "id": "megBKxKy2Xu8LoXg",
-                    "label": "Oślepienie"
+                    "label": "Oślepienie",
+                    "description": "Testy związane ze wzrokiem"
                 }
             },
             "wounds": "1",
@@ -84,7 +85,8 @@
             "effects": {
                 "4o8C5gO5JrPMQy7V": {
                     "id": "4o8C5gO5JrPMQy7V",
-                    "label": "Ogłuszenie"
+                    "label": "Ogłuszenie",
+                    "description": "Testy związane ze słuchem"
                 },
                 "AyoqSH1wIlPXFrdJ": {
                     "id": "AyoqSH1wIlPXFrdJ",
@@ -146,7 +148,8 @@
                 },
                 "waGy0xtIvPj1cT0D": {
                     "id": "waGy0xtIvPj1cT0D",
-                    "label": "Oślepienie"
+                    "label": "Oślepienie",
+                    "description": "Testy związane ze wzrokiem"
                 }
             },
             "wounds": "5",
@@ -414,7 +417,8 @@
             "effects": {
                 "7a3L530CIhnX5cTl": {
                     "id": "7a3L530CIhnX5cTl",
-                    "label": "Ogłuszenie"
+                    "label": "Ogłuszenie",
+                    "description": "Testy związane ze słuchem"
                 }
             },
             "wounds": "1",
@@ -501,7 +505,8 @@
             "effects": {
                 "4G9KjSyQNM9UFOlS": {
                     "id": "4G9KjSyQNM9UFOlS",
-                    "label": "Oślepienie"
+                    "label": "Oślepienie",
+                    "description": "Testy związane ze wzrokiem"
                 },
                 "jatRx58WzHQUA31m": {
                     "id": "jatRx58WzHQUA31m",
@@ -533,7 +538,8 @@
                 },
                 "sTAtmClXjBUnD5VO": {
                     "id": "sTAtmClXjBUnD5VO",
-                    "label": "Oślepienie"
+                    "label": "Oślepienie",
+                    "description": "Testy związane ze wzrokiem"
                 }
             },
             "wounds": "2",
@@ -590,7 +596,8 @@
             "effects": {
                 "bpo2NXwpg23AKY9y": {
                     "id": "bpo2NXwpg23AKY9y",
-                    "label": "Poważna rana ucha"
+                    "label": "Poważna rana ucha",
+                    "description": "Testy związane ze słuchem"
                 }
             },
             "wounds": "3",
@@ -656,7 +663,8 @@
             "effects": {
                 "749ILWkBSZeetB7y": {
                     "id": "749ILWkBSZeetB7y",
-                    "label": "Oślepienie"
+                    "label": "Oślepienie",
+                    "description": "Testy związane ze wzrokiem"
                 },
                 "dJsRgSNjJtohBYPc": {
                     "id": "dJsRgSNjJtohBYPc",
@@ -678,7 +686,8 @@
                 },
                 "SbOvAmqaK31JREjI": {
                     "id": "SbOvAmqaK31JREjI",
-                    "label": "Ogłuszenie"
+                    "label": "Ogłuszenie",
+                    "description": "Testy związane ze słuchem"
                 }
             },
             "wounds": "2",
@@ -809,7 +818,8 @@
             "effects": {
                 "jIlysiOZ0LFz6cgj": {
                     "id": "jIlysiOZ0LFz6cgj",
-                    "label": "Oślepienie"
+                    "label": "Oślepienie",
+                    "description": "Testy związane ze wzrokiem"
                 }
             },
             "wounds": "2",
@@ -1134,7 +1144,8 @@
             "effects": {
                 "pnqEtu6lQlejU6CV": {
                     "id": "pnqEtu6lQlejU6CV",
-                    "label": "Zawadiacka rana"
+                    "label": "Zawadiacka rana",
+                    "description": "Testy społeczne, na które wpłynie budząca szacunek blizna"
                 },
                 "TPyAKE9d05Y7HuxL": {
                     "id": "TPyAKE9d05Y7HuxL",
@@ -1386,7 +1397,8 @@
             "effects": {
                 "FZuPzqtWTtFMIciJ": {
                     "id": "FZuPzqtWTtFMIciJ",
-                    "label": "Ogłuszenie"
+                    "label": "Ogłuszenie",
+                    "description": "Testy związane ze słuchem"
                 },
                 "kaAFU5cxgv0idSQZ": {
                     "id": "kaAFU5cxgv0idSQZ",

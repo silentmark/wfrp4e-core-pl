@@ -33,7 +33,7 @@
                     "id": "IRRiQjVGZiHjLnxt",
                     "label": "Groźny",
                     "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Intimidate\")) {\n    args.prefillModifiers.slBonus += 1;\n}",
-                    "description": "Intimidate"
+                    "description": "Zastraszanie"
                 }
             },
             "tests": "Zastraszanie"
@@ -443,7 +443,7 @@
                 "VaILgn8RaKpqAueV": {
                     "id": "VaILgn8RaKpqAueV",
                     "label": "Silne Nogi",
-                    "description": "Athletics Tests involving Leaping"
+                    "description": "Testy Atletyki wiążące się ze skakaniem"
                 }
             }
         },
@@ -490,7 +490,7 @@
                 "3vgrN50Ul3S5T2j6": {
                     "id": "3vgrN50Ul3S5T2j6",
                     "label": "Nienawiść (Grupa)",
-                    "description": "Combat Test vs Hated Group"
+                    "description": "Test walki przeciwko znienawidzonej grupie"
                 }
             },
             "tests": "Test Siły Woli podczas opierania się danej grupie"
@@ -498,7 +498,7 @@
         "Small": {
             "id": "eBwHnWdwQJ590ASb",
             "name": "Mały",
-            "description": "<p>Jesteś niższy od większości mieszkańców Starego Świata. </p>",
+            "description": "<p>Jesteś niższy od większości mieszkańców Starego Świata. Zasady dotyczące rozmiaru znajdują się w opisie Cechy Stworzenia: @UUID[Compendium.wfrp4e-core.traits.8slW8CJ2oVTxeQ6q]{Rozmiar}.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.eBwHnWdwQJ590ASb",
             "effects": {
                 "keKRZ1nmziD1BMXg": {
@@ -569,7 +569,7 @@
                 "V6DfeSCAubOnx2rs": {
                     "id": "V6DfeSCAubOnx2rs",
                     "label": "Bonus do Testu Przeciwstawnego",
-                    "description": "Opposed Strength Tests"
+                    "description": "Przeciwstawny Test Siły"
                 }
             },
             "tests": "Wiosłowanie lub Pływanie"
@@ -1253,7 +1253,7 @@
         "Dual Wielder": {
             "id": "URwIDtInCsxOoGqM",
             "name": "Dwie Bronie",
-            "description": "<p>Kiedy jesteś uzbrojony w dwie bronie, podczas swojej Akcji możesz zaatakować obydwiema naraz. Najpierw wykonaj Test trafienia dla broni, którą trzymasz w wiodącej ręce, a jeśli trafisz, określ normalnie obrażenia. Zostaw kości 1k100 na stole, przydadzą się za chwilę. Skoro pierwszy atak się udał i zostały zadane obrażenia, możesz użyć drugiej broni, by uderzyć jeszcze raz. Wykorzystujesz wynik pierwszego rzutu, ale odwracasz kolejność kostek. I tak rzut na trafienie 34 stanie się 43. Pamiętaj, by obniżyć go o modyfikator wynikający z walki słabszą ręką (-20, chyba że posiadasz Talent Oburęczność). Drugi atak też jest Testem Przeciwstawnym. Twój przeciwnik wykonuje Test obrony, na nowo określane są obrażenia. Wyjątkiem jest sytuacja, gdy pierwszy atak zakończył się Trafieniem Krytycznym. Jeśli tak się stanie, wykorzystaj wynik rzutu w Tabeli Trafień Krytycznych do określenia, czy drugi atak trafił, czy nie. Na przykład, jeśli pierwszy atak trafił przeciwnika krytycznie w głowę, a wynik rzutu w Tabeli Trafień Krytycznych to 56 (Poważ- na rana oka), to korzystasz z tego rezultatu jako wyniku rzutu na trafienie w drugim ataku. Jeśli atakujesz obydwiema broniami, twoje rzuty na obronę obarczone są modyfikatorem -10 do końca twojej następnej Tury. Nie zyskujesz Przewagi za trafienie lub zranienie przeciwnika, jeśli korzystasz z tego Talentu, chyba że trafisz obydwoma atakami.</p>",
+            "description": "<p>Kiedy jesteś uzbrojony w dwie bronie, podczas swojej Akcji możesz zaatakować obydwiema naraz. Najpierw wykonaj Test trafienia dla broni, którą trzymasz w wiodącej ręce, a jeśli trafisz, określ normalnie obrażenia. Zostaw kości 1k100 na stole, przydadzą się za chwilę. Skoro pierwszy atak się udał i zostały zadane obrażenia, możesz użyć drugiej broni, by uderzyć jeszcze raz. Wykorzystujesz wynik pierwszego rzutu, ale odwracasz kolejność kostek. I tak rzut na trafienie 34 stanie się 43. Pamiętaj, by obniżyć go o modyfikator wynikający z walki słabszą ręką (-20, chyba że posiadasz Talent Oburęczność). Drugi atak też jest Testem Przeciwstawnym. Twój przeciwnik wykonuje Test obrony, na nowo określane są obrażenia. Wyjątkiem jest sytuacja, gdy pierwszy atak zakończył się Trafieniem Krytycznym. Jeśli tak się stanie, wykorzystaj wynik rzutu w Tabeli Trafień Krytycznych do określenia, czy drugi atak trafił, czy nie. Na przykład, jeśli pierwszy atak trafił przeciwnika krytycznie w głowę, a wynik rzutu w Tabeli Trafień Krytycznych to 56 (Poważna rana oka), to korzystasz z tego rezultatu jako wyniku rzutu na trafienie w drugim ataku. Jeśli atakujesz obydwiema broniami, twoje rzuty na obronę obarczone są modyfikatorem -10 do końca twojej następnej Tury. Nie zyskujesz Przewagi za trafienie lub zranienie przeciwnika, jeśli korzystasz z tego Talentu, chyba że trafisz obydwoma atakami.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.URwIDtInCsxOoGqM",
             "tests": "Test broni Białej lub Zasięgowej, kiedy atakujesz dwoma sztukami broni"
         },
@@ -1279,7 +1279,7 @@
             "effects": {
                 "FQv1UAIrdvtf9Tlc": {
                     "id": "FQv1UAIrdvtf9Tlc",
-                    "label": "Odporność"
+                    "name": "Odporny na (Zagrożenie)"
                 }
             }
         },
@@ -1395,7 +1395,7 @@
         "Shadow": {
             "id": "XSb3QVB9ipPBFt56",
             "name": "Cień",
-            "description": "<p>Wiesz, jak podążać za innymi, by nie zostać na tym przyłapanym. Możesz wykorzystywać zasady śledzenia ze strony 128 bez konieczności wykonywania Testu Łączonego. Wystarczy, że wykonasz rzut na Percepcję lub Skradanie, zależnie od tego, która wartość jest wyższa.</p>",
+            "description": "<p>Wiesz, jak podążać za innymi, by nie zostać na tym przyłapanym. Możesz wykorzystywać zasady @UUID[Compendium.wfrp4e-core.skills.McTtmZu3Ac8Lh48W]{Śledzenia} bez konieczności wykonywania Testu Łączonego. Wystarczy, że wykonasz rzut na Percepcję lub Skradanie, zależnie od tego, która wartość jest wyższa.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.XSb3QVB9ipPBFt56",
             "tests": "Wszystkie testy związane ze śledzeniem"
         },
