@@ -133,7 +133,7 @@
                     "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Charm\") &&  (args.test.result.roll <= 5 || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop())\n   if (ones > SL) {\n     args.test.result.other.push(`<b>${this.effect.label}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS podczas dyskusji lub debaty.`);\n   }\n}"
                 }
             },
-            "tests": "Charyzma, gdy prowadzisz debatę lub się z kimś spierasz"
+            "tests": "Test Charyzmy, gdy prowadzisz debatę lub się z kimś spierasz na argumenty"
         },
         "Reaction Strike": {
             "id": "4AqSkJnFPqNuTkos",
@@ -1505,7 +1505,7 @@
                 "6m85TVcbkk2geHrE": {
                     "id": "6m85TVcbkk2geHrE",
                     "label": "Krasomówstwo",
-                    "description": "Using Charm when Public Speaking before a crowd"
+                    "description": "Test Charyzmy podczas przemawiania do tłumu"
                 }
             }
         }
