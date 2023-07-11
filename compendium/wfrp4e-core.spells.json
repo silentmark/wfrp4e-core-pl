@@ -3594,7 +3594,7 @@
         "Manifest Lesser Daemon": {
             "id": "soyujZNyzu7NKxMs",
             "name": "Przyzwanie pomniejszego demona",
-            "description": "<p>Kierujesz obrzydliwym strumieniem Dhar, na chwilę rozrywając materię rzeczywistości. Przez wyrwę natychmiast przechodzi pomniejszy demon. Wykonaj <strong>Przeciwstawny Test Splatania Magii (Dhar)/Siła Woli</strong> przeciwko demonowi. Jeśli uda ci się go wygrać, demon zareaguje na jedną komendę z twojej strony - bardzo dosłownie - a później zniknie (zakładając, że uda mu się zakończyć zadanie, zanim nie skończy się zaklęcie). Jeśli przegrasz Test, demon natychmiast zaatakuje.</p>",
+            "description": "<p>Kierujesz obrzydliwym strumieniem <em>Dhar</em>, na chwilę rozrywając materię rzeczywistości. Przez wyrwę natychmiast przechodzi pomniejszy demon. Wykonaj <strong>Przeciwstawny Test Splatania Magii (Dhar)/Siła Woli</strong> przeciwko demonowi. Jeśli uda ci się go wygrać, demon zareaguje na jedną komendę z twojej strony - bardzo dosłownie - a później zniknie (zakładając, że uda mu się zakończyć zadanie, zanim nie skończy się zaklęcie). Jeśli przegrasz Test, demon natychmiast zaatakuje.</p>\n\n<p>Zakazana Tradycja Demonologii skupia się wokół przyzywania, wiązania i kontrolowania demonów, zazwyczaj po to, by zwiększyć moc czarodzieja. Jest przerażająco niebezpieczna i zwykle wiedzie do upadku demonologa, ponieważ jego dusza jest wyniszczana przez Niszczycielskie Potęgi – w ten sposób rodzi się nowy Czarnoksiężnik Chaosu.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.soyujZNyzu7NKxMs",
             "duration": "Bonus SW Rund",
             "target": "Specjalny",
@@ -3603,7 +3603,7 @@
         "Curse of Ill-Fortune": {
             "id": "sq47SZ1v9Pofa4L1",
             "name": "Klątwa pecha",
-            "description": "<p>Składnikiem do tego zaklęcia jest jakiś przedmiot, który wcześniej był w posiadaniu celu: albo coś osobistego, albo pukiel włosów. Przez czas trwania zaklęcia cel prześladuje pech. Przykładowo pękają troki i łańcuchy oraz dzieje się wiele innych nieprzyjemnych, ale drobnych efektów narracyjnych. Cel otrzymuje karę -10 do wszystkich Testów (co sumuje się ze wszystkimi innymi modyfikatorami), a ponadto nie może używać Punktów Szczęścia.</p>",
+            "description": "<p>Składnikiem do tego zaklęcia jest jakiś przedmiot, który wcześniej był w posiadaniu celu: albo coś osobistego, albo pukiel włosów. Przez czas trwania zaklęcia cel prześladuje pech. Przykładowo pękają troki i łańcuchy oraz dzieje się wiele innych nieprzyjemnych, ale drobnych efektów narracyjnych. Cel otrzymuje karę -10 do wszystkich Testów (co sumuje się ze wszystkimi innymi modyfikatorami), a ponadto nie może używać Punktów Szczęścia.</p>\n\n<p>Zaklęcia z Tradycji Czarownictwa korzystają z dowolnego dostępnego Wiatru Magii, nie zważając na niebezpieczeństwa płynące z mieszania Wiatrów. Za każdym razem, gdy postać korzystająca z Czarownictwa wywołuje Manifestację, otrzymuje też 1 Punkt Zepsucia. Każde zaklęcie tej Tradycji może zadać dodatkowo każdemu celowi 1 poziom Stanu @Condition[Krwawienie]. Poza tym Testy Rzucania zaklęć i Splatania Magii z tej Tradycji skutkują automatyczną Manifestacją, chyba że do rzucenia zaklęcia używane są składniki. Za to składnik nie chroni przed późniejszymi Manifestacjami, jeśli takie się pojawią. Na szczęście składniki Tradycji Czarownictwa są tanie i powszechnie dostępne. Zazwyczaj są to części ciał małych zwierząt. Składniki zaklęć kosztują tyle brązowych pensów (a nie srebrnych szylingów), ile wynosi PZ. Ewentualnie czarownica może poszukać składników na własną rękę, używając Umiejętności Sztuka Przetrwania. Udany Test skutkuje pozyskaniem 1 + PS składników, jak opisano w ramce Zdobywanie Pożywienia i Ziół na stronie 129.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.sq47SZ1v9Pofa4L1",
             "effects": {
                 "gNLrxf0HKogk6Gqi": {
@@ -3624,7 +3624,7 @@
         "Scythe of Shyish": {
             "id": "SQJQrAsAKc2Icatv",
             "name": "Kosa żniwiarza",
-            "description": "<p>Wyczarowujesz magiczną kosę, której możesz używać w walce przy pomocy Umiejętności Broń Biała (Drzewcowa). Działa ona jak normalna kosa, której Obrażenia równe są +Bonus z Siły Woli+3. Wrogowie o Cesze Stworzenia <em>Ożywieniec</em> nie otrzymują żadnej Przewagi podczas walki z tobą.</p>",
+            "description": "<p>Wyczarowujesz magiczną kosę, której możesz używać w walce przy pomocy Umiejętności Broń Biała (Drzewcowa). Działa ona jak normalna kosa, której Obrażenia równe są +Bonus z Siły Woli+3. Wrogowie o Cesze Stworzenia @UUID[Compendium.wfrp4e-core.traits.PFTD9gDvRWW9uh5g]{Ożywieniec} nie otrzymują żadnej Przewagi podczas walki z tobą.</p>\n\n<p>Fioletowy Wiatr <i>Shyish</i> niesie ze sobą suche, piaszczyste wichry i uporczywy szelest piasku przesypującego się w klepsydrze Czasu. Ofensywne zaklęcia z Tradycji Śmierci odzierają z życia, pozbawiają sił lub działają otępiająco. Możesz dopisać +1 poziom @Condition[Zmęczenie]{Zmęczenia} do każdego żywego celu zaklęcia z tej Tradycji. W ten sposób cel może otrzymać wyłącznie 1 poziom @Condition[Zmęczenie]{Zmęczenia} na jedno zaklęcie.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.SQJQrAsAKc2Icatv",
             "duration": "Bonus SW Rund",
             "target": "Ty",
@@ -3640,7 +3640,7 @@
         "Dome (Heavens)": {
             "id": "sWILR54qy3qsdQYQ",
             "name": "Kopuła (Niebiosa)",
-            "description": "<p>Tworzysz nad sobą kopułę z magicznej energii, która blokuje ataki. Każdy w Zasięgu zyskuje Cechę Stworzenia <em>Ochrona (6+)</em> przeciwko magicznym lub dystansowym wyprowadzanym zza kopuły. Wszystkie ataki wewnątrz kopuły wykonywane są normalnie.</p>\n<p>&nbsp;</p>\n<blockquote>\n<p>Stworzenie jest magiczne, nosi specjalny talizman albo ma szczęście - niektóre ciosy po prostu go nie trafiają. Rzuć 1k10 po każdym otrzymanym ciosie. Jeśli stworzenie wyrzuci tyle, ile wynosi podana wartość, lub więcej, cios zostaje zignorowany, nawet jeśli jest to Trafienie Krytyczne.&nbsp;</p>\n</blockquote>\n<p>&nbsp;</p>",
+            "description": "<p>Tworzysz nad sobą kopułę z magicznej energii, która blokuje ataki. Każdy w Zasięgu zyskuje Cechę Stworzenia <em>Ochrona (6+)</em> przeciwko magicznym lub dystansowym wyprowadzanym zza kopuły. Wszystkie ataki wewnątrz kopuły wykonywane są normalnie.</p>\n\n<p>Magii Tradycji Niebios towarzyszy trzask błyskawic i zapach ozonu. Zaklęcia zadające Obrażenia ignorują Punkty Pancerza metalowych zbroi i przeskakują do wszystkich celów w promieniu 2 metrów, oprócz takich istot, które mają Talent <i>Magia Tajemna (Niebiosa)</i>, zadając Obrażenia równe Bonusowi z Siły Woli (traktowane jak <i>magiczny pocisk</i>).</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.sWILR54qy3qsdQYQ",
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
@@ -3649,7 +3649,7 @@
         "Nostrum": {
             "id": "sxFriQ3XAtvwlmMq",
             "name": "Panaceum",
-            "description": "<p>Skandujesz zaklęcie nad przygotowaną wcześniej miksturą, przepełniając ją magiczną mocą. Jeśli zostanie wypita podczas trwania tego zaklęcia, cel może natychmiast uleczyć tyle Ran, ile wynosi twój Bonus z Siły Woli. Ponadto leczona jest także jedna choroba. Za każde 2 PS możesz wyleczyć dodatkową chorobę.</p>",
+            "description": "<p>Skandujesz zaklęcie nad przygotowaną wcześniej miksturą, przepełniając ją magiczną mocą. Jeśli zostanie wypita podczas trwania tego zaklęcia, cel może natychmiast uleczyć tyle Ran, ile wynosi twój Bonus z Siły Woli. Ponadto leczona jest także jedna choroba. Za każde 2 PS możesz wyleczyć dodatkową chorobę.</p>\n\n<p>Guślarze wierzą, że ich zdolności to dar od bogów, więc o osobach zdolnych rzucać zaklęcia mówią „nieliczni wybrańcy”. Z powodu swoich starożytnych tradycji i głęboko zakorzenionych wierzeń nie mogą rzucać zaklęć, jeśli nie posiadają składników, które są dla nich nieodzowną częścią ich procesu czarowania.</p>\n<p>Na szczęście są to zazwyczaj dość łatwe do znalezienia składniki, czy to na obrzeżach cywilizacji, czy w formie roślin lub ziół. Udany Test Wiedzy (Zielarstwa) skutkuje pozyskaniem 1 + PS składników, jak opisano w ramce Zbieranie Pożywienia i Ziół na stronie 129. Ewentualnie można je kupić za cenę 5 brązowych pensów sztuka.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.sxFriQ3XAtvwlmMq",
             "effects": {
                 "oIkRPQkyEQkUxqWV": {
@@ -3664,8 +3664,8 @@
         },
         "Dart": {
             "id": "T8nErqWnkqdvcNVz",
-            "name": "Strzałka",
-            "description": "<p>Sprawiasz, że malutka strzałka, cała z magicznej energii, wystrzeliwuje ci z palców. Uznaje się ją za magiczny pocisk ze współczynnikiem Obrażeń +0.</p>",
+            "name": "Magiczne żądło",
+            "description": "<p>Sprawiasz, że malutka strzałka, cała z magicznej energii, wystrzeliwuje ci z palców. Uznaje się ją za <i>magiczny pocisk</i> ze współczynnikiem Obrażeń +0.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.T8nErqWnkqdvcNVz",
             "duration": "Natychmiast",
             "target": "1",
@@ -3674,7 +3674,7 @@
         "Mundane Aura": {
             "id": "T9cEYAUhqBiTxrp2",
             "name": "Aura codzienności",
-            "description": "<p>Wysysasz wszelkie Wiatry Magii ze swego ciała i swojego dobytku, usuwając wszelkie ślady magicznej aury. Przez okres trwania zaklęcia dla osób posiadających Talent Percepcja Magiczna lub podobny wydajesz się zwykłą osobą, nieposiadającą nadprzyrodzonych zdolności. Nie wytwarzasz wtedy żadnych eterycznych wibracji i twoja magiczna aura nie może zostać wykryta żadnymi sposobami. Podczas trwania tego zaklęcia nie możesz rzucać żadnych zaklęć. Aura codzienności rozprasza się natychmiast, gdy rozpoczniesz Test Splatania Magii.</p>",
+            "description": "<p>Wysysasz wszelkie Wiatry Magii ze swego ciała i swojego dobytku, usuwając wszelkie ślady magicznej aury. Przez okres trwania zaklęcia dla osób posiadających Talent <i>Percepcja Magiczna</i> lub podobny wydajesz się zwykłą osobą, nieposiadającą nadprzyrodzonych zdolności. Nie wytwarzasz wtedy żadnych eterycznych wibracji i twoja magiczna aura nie może zostać wykryta żadnymi sposobami. Podczas trwania tego zaklęcia nie możesz rzucać żadnych zaklęć. Aura codzienności rozprasza się natychmiast, gdy rozpoczniesz Test Splatania Magii.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.T9cEYAUhqBiTxrp2",
             "duration": "Siła Woli minut",
             "target": "Ty",
@@ -3683,7 +3683,7 @@
         "Distracting (Life)": {
             "id": "tbgyz5b4lR8k1Nk4",
             "name": "Dekoncentracja (Życie)",
-            "description": "<p>Otaczasz się wirującą i świszczącą mocą, która rozprasza wrogów. Podczas trwania zaklęcia zyskujesz Cechę Stworzenia <em>Dekoncentrujący</em>.</p>\n<p>&nbsp;</p>\n<blockquote>\n<p>Stworzenie rozprasza lub dezorientuje wrogów, być może wydzielając usypiający zapach lub powalający smród, a może ze względu na przerażająco dziwaczny wygląd. Wszystkie żywe cele w promieniu tylu metrów, ile wynosi jego Bonus z Wytrzymałości, dostają karę -20 do wszystkich Testów. Cel może dostać tę karę tylko raz - bez względu na to, jak wielu jest dekoncentrujących wrogów.</p>\n</blockquote>\n<p>&nbsp;</p>",
+            "description": "<p>Otaczasz się wirującą i świszczącą mocą, która rozprasza wrogów. Podczas trwania zaklęcia zyskujesz Cechę Stworzenia @UUID[Compendium.wfrp4e-core.traits.MVI0lXcg6vvtooAF]{Dekoncentrujący}.</p>\n\n<p>Zaklęcia rzucane przy pomocy Jadeitowego Wiatru <i>Ghyran</i> są przesycone życiem i najczęściej objawiają się w postaci wibrującego, zielonego światła, któremu towarzyszą naturalne zjawiska o nadprzyrodzonych właściwościach. Pnącza, podszycie, drzewa i rzeki naginają się do woli druidów.</p>\n<p>Otrzymujesz premię +10 do Testów Rzucania Zaklęć i Splatania Magii, jeśli znajdujesz się w środowisku wiejskim lub dzikim. Żywe stworzenia (np. te, które nie mają Cechy Stworzenia <i>Demoniczny</i> lub <i>Ożywieniec</i>) będące celem magii z Tradycji Życia tracą wszystkie poziomy @Condition[Krwawienie]{Krwawienia} i @Condition[Zmęczenie]{Zmęczenia} dzięki temu, że życiodajna magia przepływa przez ich ciała. Z drugiej strony stworzenia, które mają Cechę Stworzenia <i>Ożywieniec</i>, otrzymują dodatkowe Obrażenia równe Bonusowi z Siły Woli rzucającego, które ignorują Bonus za Wytrzymałość oraz Punkty Pancerza.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.tbgyz5b4lR8k1Nk4",
             "effects": {
                 "dcp6z9mCAU5ekbcG": {
@@ -3699,7 +3699,7 @@
         "Amber Talons": {
             "id": "tCCaNirq3zCIkyri",
             "name": "Szpony furii",
-            "description": "<p>Twoje paznokcie zmieniają się w niezwykle ostre pazury z kryształowego bursztynu. Ataki bez broni, z wykorzystaniem Umiejętności Broń Biała (Bijatyka) liczą się jako magiczne, zadają Obrażenia + Bonus z Siły Woli, a za każdym razem, gdy atak kończy się zadaniem Rany, cel otrzymuje też +1 poziom Stanu <strong>Krwawienie.</strong></p>",
+            "description": "<p>Twoje paznokcie zmieniają się w niezwykle ostre pazury z kryształowego bursztynu. Ataki bez broni, z wykorzystaniem Umiejętności Broń Biała (Bijatyka) liczą się jako magiczne, zadają Obrażenia + Bonus z Siły Woli, a za każdym razem, gdy atak kończy się zadaniem Rany, cel otrzymuje też +1 poziom Stanu @Condition[Krwawienie].</p>\n\n<p>Wiatr Bursztynowy, <i>Ghur</i>, niesie ze sobą dreszcz, pierwotną wściekłość, która wytrąca z równowagi zarówno zwierzęta, jak i stworzenia myślące. Po każdym udanym rzuceniu zaklęcia z Tradycji Zwierząt możesz dodatkowo zyskać Cechę Stworzenia @UUID[Compendium.wfrp4e-core.traits.pTorrE0l3VybAbtn]{Strach (1)} na [[/r 1d10]] Rund.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.tCCaNirq3zCIkyri",
             "duration": "Bonus SW Rund",
             "target": "Ty",
@@ -3715,7 +3715,7 @@
         "Arrow Shield (Life)": {
             "id": "teHEJyd80PqNHT9q",
             "name": "Niszczyciel strzał (Życie)",
-            "description": "<p>Wszelkie pociski z materii organicznej, jak np. strzały czy bełty z drewnianym promieniem, są automatycznie niszczone, jeśli wlecą w Zasięg zaklęcia - nie zadają żadnych obrażeń. Zaklęcie nie wpływa na pociski nieorganiczne, jak np. noże czy kule pistoletowe.</p>\n\n <b>Lore:</b> Receive a +10 bonus to Casting and Channeling rolls when in a rural or wilderness environment. Living creatures — e.g. those without the Daemonic or Undead Creature Traits — targeted by Arcane Spells from the Lore of Life have all Fatigued and Bleeding Conditions removed after any other eﬀects have been applied as life magic ﬂoods through them. Creatures with the Undead Creature Trait, on the other hand, suﬀer additional Damage equal to your Willpower Bonus, ignoring Toughness Bonus and Armor Points, if aﬀected by any spell cast with the Lore of Life.",
+            "description": "<p>Wszelkie pociski z materii organicznej, jak np. strzały czy bełty z drewnianym promieniem, są automatycznie niszczone, jeśli wlecą w Zasięg zaklęcia - nie zadają żadnych obrażeń. Zaklęcie nie wpływa na pociski nieorganiczne, jak np. noże czy kule pistoletowe.</p>\n\n<p>Zaklęcia rzucane przy pomocy Jadeitowego Wiatru <i>Ghyran</i> są przesycone życiem i najczęściej objawiają się w postaci wibrującego, zielonego światła, któremu towarzyszą naturalne zjawiska o nadprzyrodzonych właściwościach. Pnącza, podszycie, drzewa i rzeki naginają się do woli druidów.</p>\n<p>Otrzymujesz premię +10 do Testów Rzucania Zaklęć i Splatania Magii, jeśli znajdujesz się w środowisku wiejskim lub dzikim. Żywe stworzenia (np. te, które nie mają Cechy Stworzenia <i>Demoniczny</i> lub <i>Ożywieniec</i>) będące celem magii z Tradycji Życia tracą wszystkie poziomy @Condition[Krwawienie]{Krwawienia} i @Condition[Zmęczenie]{Zmęczenia} dzięki temu, że życiodajna magia przepływa przez ich ciała. Z drugiej strony stworzenia, które mają Cechę Stworzenia <i>Ożywieniec</i>, otrzymują dodatkowe Obrażenia równe Bonusowi z Siły Woli rzucającego, które ignorują Bonus za Wytrzymałość oraz Punkty Pancerza.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.teHEJyd80PqNHT9q",
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
@@ -3724,7 +3724,7 @@
         "Bridge (Shadow)": {
             "id": "tHjTlaoBNbBHbW6z",
             "name": "Most (Cień)",
-            "description": "<p>Tworzysz most z magicznej energii, którego długość i szerokość w metrach mogą być równe maksymalnie tyle, ile wynosi twój Bonus z Siły Woli. Za każde 2 PS możesz zwiększyć szerokość lub długość mostu o tyle metrów, ile wynosi Bonus z Siły Woli.</p>",
+            "description": "<p>Tworzysz most z magicznej energii, którego długość i szerokość w metrach mogą być równe maksymalnie tyle, ile wynosi twój Bonus z Siły Woli. Za każde 2 PS możesz zwiększyć szerokość lub długość mostu o tyle metrów, ile wynosi Bonus z Siły Woli.</p>\n\n<p>Zaklęcia z Tradycji Cieni są dyskretne i podstępne do tego stopnia, że w przypadku tej Tradycji <i>Lingua Praestantia</i> może być mówiona szeptem. Wszelkie ochronne zaklęcia oplatają cel kłębami cieni i dymu, sprawiając, że wydaje się niewyraźny i rozmyty. Ponadto wszystkie zaklęcia z Tradycji Cieni zadają Obrażenia, które ignorują wszelkie niemagiczne Punkty Pancerza.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.tHjTlaoBNbBHbW6z",
             "duration": "Bonus SW Rund",
             "target": "patrz opis",
@@ -3733,7 +3733,7 @@
         "Flight (Death)": {
             "id": "tkPrVMoZibf5kbhe",
             "name": "Lot (Śmierć)",
-            "description": "<p><span style=\"color: #231f20;\">Możesz latać - dzięki eterycznym skrzydłom, w kolumnie magicznego światła lub w inny odpowiedni dla Tradycji sposób. Zyskujesz Cechę Stworzenia Latanie </span><span style=\"color: #231f20;\">(Zwinność).</span></p>\n<p>&nbsp;</p>\n<blockquote>\n<p>Gdy stworzenie wykonuje Ruch, może przelecieć tyle metrów, ile wynosi podana wartość. Lecąc, ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydować, czy wyląduje, czy będzie kontynuować lot. Może w ramach tego ruchu wykonać Szarżę. Jeśli na początku swojej Tury leci, musi wybrać jako Ruch Latanie. Jeśli nie jest w stanie tego zrobić, MG decyduje, jak daleko stworzenie upadnie</p>\n<p> Biorąc stworzenie na cel, zmierz odległość horyzontalną jak normalnie, a następnie zwiększ dystans o 1 poziom. Zatem strzał na Dalekim zasięgu stanie się strzałem na Bardzo dalekim zasięgu. Natomiast jeśli był to Bardzo daleki zasięg, stworzenia nie można dosięgnąć strzałem. Lecąc, stworzenie dostaje karę -20 do wszystkich prób walki dystansowej, ponieważ nurkuje w powietrzu i zatacza kręgi.&nbsp;</p>\n<p>&nbsp;</p>\n</blockquote>",
+            "description": "<p><span style=\"color: #231f20;\">Możesz latać - dzięki eterycznym skrzydłom, w kolumnie magicznego światła lub w inny odpowiedni dla Tradycji sposób. Zyskujesz Cechę Stworzenia @UUID[Compendium.wfrp4e-core.traits.EO05HX7jql0g605A]{Latanie (Zwinność)}.</span></p>\n\n<p>Fioletowy Wiatr <i>Shyish</i> niesie ze sobą suche, piaszczyste wichry i uporczywy szelest piasku przesypującego się w klepsydrze Czasu. Ofensywne zaklęcia z Tradycji Śmierci odzierają z życia, pozbawiają sił lub działają otępiająco. Możesz dopisać +1 poziom @Condition[Zmęczenie]{Zmęczenia} do każdego żywego celu zaklęcia z tej Tradycji. W ten sposób cel może otrzymać wyłącznie 1 poziom @Condition[Zmęczenie]{Zmęczenia} na jedno zaklęcie.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.tkPrVMoZibf5kbhe",
             "effects": {
                 "mpIzJHvcN4RSmTdr": {
@@ -3749,7 +3749,7 @@
         "Part the Branches": {
             "id": "TL2IelDsaRWflCeY",
             "name": "Spojrzenie przez zasłonę",
-            "description": "<p>Twoje źrenice rozszerzają się, gdy tylko kończysz wymawiać słowa zaklęcia, dzięki czemu możesz wejrzeć w świat duchów. Jesteś w stanie zobaczyć niewidzialne stworzenia, duchy i demony - nawet te, których nie da się ujrzeć przy użyciu innych zdolności.</p>",
+            "description": "<p>Twoje źrenice rozszerzają się, gdy tylko kończysz wymawiać słowa zaklęcia, dzięki czemu możesz wejrzeć w świat duchów. Jesteś w stanie zobaczyć niewidzialne stworzenia, duchy i demony - nawet te, których nie da się ujrzeć przy użyciu innych zdolności.</p>\n\n<p>Guślarze wierzą, że ich zdolności to dar od bogów, więc o osobach zdolnych rzucać zaklęcia mówią „nieliczni wybrańcy”. Z powodu swoich starożytnych tradycji i głęboko zakorzenionych wierzeń nie mogą rzucać zaklęć, jeśli nie posiadają składników, które są dla nich nieodzowną częścią ich procesu czarowania.</p>\n<p>Na szczęście są to zazwyczaj dość łatwe do znalezienia składniki, czy to na obrzeżach cywilizacji, czy w formie roślin lub ziół. Udany Test Wiedzy (Zielarstwa) skutkuje pozyskaniem 1 + PS składników, jak opisano w ramce Zbieranie Pożywienia i Ziół na stronie 129. Ewentualnie można je kupić za cenę 5 brązowych pensów sztuka.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.TL2IelDsaRWflCeY",
             "duration": "Siła Woli minut",
             "target": "Ty",
@@ -3758,7 +3758,7 @@
         "Distracting": {
             "id": "tNMQQhBYzHoRq7AD",
             "name": "Dekoncentracja",
-            "description": "<p>Otaczasz się wirującą i świszczącą mocą, która rozprasza wrogów. Podczas trwania zaklęcia zyskujesz Cechę Stworzenia <em>Dekoncentrujący</em>.</p>\n<p>&nbsp;</p>\n<blockquote>\n<p>Stworzenie rozprasza lub dezorientuje wrogów, być może wydzielając usypiający zapach lub powalający smród, a może ze względu na przerażająco dziwaczny wygląd. Wszystkie żywe cele w promieniu tylu metrów, ile wynosi jego Bonus z Wytrzymałości, dostają karę -20 do wszystkich Testów. Cel może dostać tę karę tylko raz - bez względu na to, jak wielu jest dekoncentrujących wrogów.</p>\n</blockquote>\n<p>&nbsp;</p>",
+            "description": "<p>Otaczasz się wirującą i świszczącą mocą, która rozprasza wrogów. Podczas trwania zaklęcia zyskujesz Cechę Stworzenia @UUID[Compendium.wfrp4e-core.traits.MVI0lXcg6vvtooAF]{Dekoncentrujący}.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.tNMQQhBYzHoRq7AD",
             "effects": {
                 "1Go91fEPZPGcCuYW": {
@@ -3774,7 +3774,7 @@
         "Wyssan’s Wildform": {
             "id": "trieNRiCCulTerPb",
             "name": "Dzika postać Wissana",
-            "description": "<p>Przyzywasz dziką moc <em>Ghur</em>, zanurzasz się w niej i poddajesz się rozkoszom dzikości. Zyskujesz następujące Cechy Stworzenia: <em>Broń (+Bonus z Siły +2), Duży, Mieszkaniec Lasu, Magiczny, Pancerz (2), Strach (1), Szał Bojowy, Ugryzienie (+Bonus z Siły +1), Wojowniczy</em>. Podczas trwania zaklęcia nie jesteś w stanie używać żadnego Języka ani Wiedzy.</p>",
+            "description": "<p>Przyzywasz dziką moc <em>Ghur</em>, zanurzasz się w niej i poddajesz się rozkoszom dzikości. Zyskujesz następujące Cechy Stworzenia: @UUID[Compendium.wfrp4e-core.traits.AtpAudHA4ybXVlWM]{Broń (+ Bonus z Siły +2)}, @UUID[Compendium.wfrp4e-core.traits.a8MC97PLzl10WocT]{Duży}, @UUID[Compendium.wfrp4e-core.traits.rOV2s6PQBBrhpMOv]{Mieszkaniec Lasu}, @UUID[Compendium.wfrp4e-core.traits.mDgEMOoJpi8DkRYb]{Magiczny}, @UUID[Compendium.wfrp4e-core.traits.VUJUZVN3VYhOaPjj]{Pancerz (2)}, @UUID[Compendium.wfrp4e-core.traits.pTorrE0l3VybAbtn]{Strach (1)}, @UUID[Compendium.wfrp4e-core.traits.fjd1u9VAgiYzhBRp]{Szał Bojowy}, @UUID[Compendium.wfrp4e-core.traits.pLW9SVX0TVTYPiPv]{Ugryzienie (+ Bonus z Siły +1)}, @UUID[Compendium.wfrp4e-core.traits.GbDyBCu8ZjDp6dkj]{Wojowniczy}. Podczas trwania zaklęcia nie jesteś w stanie używać żadnego Języka ani Wiedzy.</p>\n\n<p>Wiatr Bursztynowy, <i>Ghur</i>, niesie ze sobą dreszcz, pierwotną wściekłość, która wytrąca z równowagi zarówno zwierzęta, jak i stworzenia myślące. Po każdym udanym rzuceniu zaklęcia z Tradycji Zwierząt możesz dodatkowo zyskać Cechę Stworzenia @UUID[Compendium.wfrp4e-core.traits.pTorrE0l3VybAbtn]{Strach (1)} na [[/r 1d10]] Rund.</p>",
             "sourceId": "Compendium.wfrp4e-core.spells.trieNRiCCulTerPb",
             "duration": "Bonus SW Rund",
             "target": "Ty",
