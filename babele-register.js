@@ -11,7 +11,7 @@ Hooks.on("init", () => {
 		effects: (effects, translations) => {
 			return effects.map((data) => {
 				//TODO: map script.
-				const translation = translations[data.label] || translations[data.id];
+				const translation = translations[data.label] || translations[data.id] || translations[data._id];
 				if (translations && translation) {
 				 	const newEffect = mergeObject(
 						data,
@@ -35,7 +35,7 @@ Hooks.on("init", () => {
 		notes: (notes, translations) => {
 			// TODO: notes on map.
 			return notes.map((data) => {
-				const translation = translations[data.id];
+				const translation = translations[data.id] ?? translations[data._id];
 				if (translations && translation) {
 					return mergeObject(
 						data,
@@ -50,7 +50,7 @@ Hooks.on("init", () => {
 			const defaultMethod = Converters.fromPack();
 			const translatedItems = defaultMethod(items, translations);
 			const dynamicMapping = new CompendiumMapping("Item", null);
-			const toTranslate = translatedItems.filter(x=> translations[x.id] != null)
+			const toTranslate = translatedItems.filter(x=> translations[x.id] != null || translations[x._id] != null)
 
 			for (let i = 0; i < toTranslate.length; i++) {
 				const item = toTranslate[i];
@@ -59,9 +59,9 @@ Hooks.on("init", () => {
 					let translatedItem = pack.translations[item.name];
 					const translatedData = dynamicMapping.map(item, translatedItem);
 					translatedItem = mergeObject(item, translatedData);
-					translatedItem.system.specification.value = translations[translatedItem.id].specification;
-					if (translations[translatedItem.id].tests) {
-						translatedItem.system.tests.value = translations[translatedItem.id].tests;
+					translatedItem.system.specification.value = (translations[translatedItem.id] ?? translations[translatedItem._id]).specification;
+					if ((translations[translatedItem.id] ?? translations[translatedItem._id]).tests) {
+						translatedItem.system.tests.value = (translations[translatedItem.id] ?? translations[translatedItem._id]).tests;
 					}
 				}
 			}
