@@ -275,21 +275,21 @@ Hooks.on("setup", async function () {
 	};
 
 	WFRP4E.classTrappings = {
-		Academics: "ClassTrappings.Academics",
-		Academic: "ClassTrappings.Academics",
-		Burghers: "ClassTrappings.Burghers",
-		Burgher: "ClassTrappings.Burghers",
-		Courtiers: "ClassTrappings.Courtiers",
-		Courtier: "ClassTrappings.Courtiers",
-		Peasants: "ClassTrappings.Peasants",
-		Peasant: "ClassTrappings.Peasants",
-		Rangers: "ClassTrappings.Rangers",
-		Ranger: "ClassTrappings.Rangers",
-		Riverfolk: "ClassTrappings.Riverfolk",
-		Rogues: "ClassTrappings.Rogues",
-		Rogue: "ClassTrappings.Rogues",
-		Warriors: "ClassTrappings.Warriors",
-		Warrior: "ClassTrappings.Warriors",
+		Uczeni: "ClassTrappings.Academics",
+		Uczony: "ClassTrappings.Academics",
+		Mieszczanie: "ClassTrappings.Burghers",
+		Mieszczanin: "ClassTrappings.Burghers",
+		Dworzanie: "ClassTrappings.Courtiers",
+		Dworzanin: "ClassTrappings.Courtiers",
+		Pospólstwo: "ClassTrappings.Peasants",
+		Wędrowcy: "ClassTrappings.Rangers",
+		Wędrowiec: "ClassTrappings.Rangers",
+		Wodniacy: "ClassTrappings.Riverfolk",
+		Wodniak: "ClassTrappings.Riverfolk",
+		Łotry: "ClassTrappings.Rogues",
+		Łotr: "ClassTrappings.Rogues",
+		Wojownicy: "ClassTrappings.Warriors",
+		Wojownik: "ClassTrappings.Warriors",
 	};
 
 	// Weapon Group Descriptions
