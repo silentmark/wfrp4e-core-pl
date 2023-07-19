@@ -322,7 +322,7 @@
                     "script": "fromUuid(\"Compendium.wfrp4e-core.psychologies.DrNUTPeodEgpWTnT\").then(item => {\nitem = item.toObject();\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);\n})"
                 }
             },
-            "modifier": "@UUID[Compendium.wfrp4e-core.psychologies.DrNUTPeodEgpWTnT]{Szał Bojowy}, Walka Wręcz +10"
+            "modifier": "Szał Bojowy, Walka Wręcz +10"
         },
         "Extra Mouth": {
             "id": "NzRTWXHlQ8I46RW4",
