@@ -119,7 +119,7 @@
         },
         "Wood Elf": {
             "id": "5wl3KH6hXsGwUcZa",
-            "name": "Leśny Elf",
+            "name": "Leśny elf",
             "description": "<section id=\"secret-HaVbfBaaBSzWZbNX\" class=\"secret\"><p>@UUID[JournalEntry.IQ0PgoJihQltCBUU.JournalEntryPage.l0f11ypRjH9sR48Q#wood-elves]{Leśne Elfy}</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.5wl3KH6hXsGwUcZa",
             "gender": "Różne",
@@ -2041,11 +2041,11 @@
         },
         "High Elf": {
             "id": "QutqbzpxKqsjQ6yN",
-            "name": "Wysoki Elf",
+            "name": "Wysoki elf",
             "description": "<section id=\"secret-1iA2MDDwFn6grbL6\" class=\"secret\"><p>@UUID[JournalEntry.IQ0PgoJihQltCBUU.JournalEntryPage.l0f11ypRjH9sR48Q#high-elves]{Wysokie Elfy}</p></section>",
             "sourceId": "Compendium.wfrp4e-core.bestiary.QutqbzpxKqsjQ6yN",
             "gender": "Różne",
-            "species": "Wysoki Elf",
+            "species": "Wysoki elf",
             "effects": {
                 "0FIrnHwrgwP3EHHO": {
                     "id": "0FIrnHwrgwP3EHHO",

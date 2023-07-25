@@ -432,7 +432,14 @@
             "name": "Szuler Kościany",
             "description": "<p>Jesteś mistrzem gry w kości, a zarzuty oszustwa są nieuzasadnione. Kiedy z powodzeniem używasz Umiejętności Hazard czy Zwinne Palce podczas gry w kości, możesz albo zachować obliczoną normalnie liczbę PS, albo określić ich liczbę przez wynik na kości jedności. W ten sposób wynik rzutu 06 może oznaczać +6 PS. Je- śli podczas sesji będziecie naprawdę grali w kości, rzucasz tyloma więcej, ile razy wykupiłeś ten Talent, i wybierasz najlepsze rezultaty.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.cAxNctMFWIAjDgV3",
-            "tests": "Test Hazardu lub Zwinnych Palców podczas gier kościanych"
+            "tests": "Test Hazardu lub Zwinnych Palców podczas gier kościanych",
+            "effects": {
+                "PNMqJy5zpPTXOd37": {
+                    "label": "Szuler Kościany",
+                    "id": "PNMqJy5zpPTXOd37",
+                    "script": "if (args.test.item && (args.test.item.name == game.i18n.localize(\"NAME.Gamble\") || args.test.item.name == game.i18n.localize(\"NAME.SleightOfHand\")) && args.test.succeeded)\n{\n\nlet SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\nlet ones = Number(args.test.result.roll.toString().split(\"\").pop())\n\nif (ones > SL)\n   args.test.result.other.push(`<span class=\"hide-option\"><b>${this.effect.label}</b>: ${ones + args.test.successBonus + args.test.slBonus} SL if playing with dice.</span>`)\n}"
+                }
+            }
         },
         "Strong Legs": {
             "id": "CV9btQn09S9Fn8Jk",

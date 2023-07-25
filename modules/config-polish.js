@@ -408,20 +408,20 @@ Hooks.on("setup", async function () {
 	};
 
 	WFRP4E.symptoms = {
-		blight: "Uwiąd",
-		buboes: "Dymienica",
-		convulsions: "Konwulsje",
-		coughsAndSneezes: "Kaszel i katar",
-		fever: "Gorączka",
-		flux: "Biegunka",
-		gangrene: "Gangrena",
-		lingering: "Nawroty",
-		malaise: "Apatia",
-		nausea: "Nudności",
-		pox: "Wysypka",
-		wounded: "Uciążliwa Rana",
-		delirium: "Delirium",
-		swelling: "Obrzęk",
+        "blight": "WFRP4E.Symptom.Blight",
+        "buboes": "WFRP4E.Symptom.Buboes",
+        "convulsions": "WFRP4E.Symptom.Convulsions",
+        "coughsAndSneezes": "WFRP4E.Symptom.CoughsandSneezes",
+        "fever": "WFRP4E.Symptom.Fever",
+        "flux": "WFRP4E.Symptom.Flux",
+        "gangrene": "WFRP4E.Symptom.Gangrene",
+        "lingering": "WFRP4E.Symptom.Lingering",
+        "malaise": "WFRP4E.Symptom.Malaise",
+        "nausea": "WFRP4E.Symptom.Nausea",
+        "pox": "WFRP4E.Symptom.Pox",
+        "wounded": "WFRP4E.Symptom.Wounded",
+		"delirium": "Delirium",
+		"swelling": "Obrzęk",
 	};
 
 	WFRP4E.symptomDescriptions = {
@@ -686,7 +686,7 @@ Hooks.on("setup", async function () {
 	};
 
 	WFRP4E.symptomEffects = {
-		blight: {
+        "WFRP4E.Symptom.Blight": {
 			label: "Uwiąd",
 			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
 			transfer: true,
@@ -715,7 +715,7 @@ Hooks.on("setup", async function () {
 				},
 			},
 		},
-		buboes: {
+        "WFRP4E.Symptom.Buboes": {
 			label: "Dymienica",
 			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
 			transfer: true,
@@ -740,7 +740,7 @@ Hooks.on("setup", async function () {
 				},
 			},
 		},
-		convulsions: {
+        "WFRP4E.Symptom.Convulsions": {
 			label: "Konwulsje",
 			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
 			transfer: true,
@@ -770,7 +770,7 @@ Hooks.on("setup", async function () {
 				},
 			},
 		},
-		fever: {
+		"WFRP4E.Symptom.Fever": {
 			label: "Gorączka",
 			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
 			transfer: true,
@@ -797,7 +797,7 @@ Hooks.on("setup", async function () {
 				},
 			},
 		},
-		flux: {
+        "WFRP4E.Symptom.Flux": {
 			label: "Biegunka",
 			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
 			transfer: true,
@@ -807,7 +807,7 @@ Hooks.on("setup", async function () {
 				},
 			},
 		},
-		lingering: {
+        "WFRP4E.Symptom.Lingering": {
 			label: "Nawroty",
 			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
 			transfer: true,
@@ -817,7 +817,7 @@ Hooks.on("setup", async function () {
 				},
 			},
 		},
-		coughsAndSneezes: {
+        "WFRP4E.Symptom.CoughsandSneezes": {
 			label: "Kaszel i katar",
 			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
 			transfer: true,
@@ -827,7 +827,7 @@ Hooks.on("setup", async function () {
 				},
 			},
 		},
-		gangrene: {
+        "WFRP4E.Symptom.Gangrene": {
 			label: "Gangrena",
 			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
 			transfer: true,
@@ -849,7 +849,7 @@ Hooks.on("setup", async function () {
 				},
 			},
 		},
-		malaise: {
+        "WFRP4E.Symptom.Malaise": {
 			label: "Apatia",
 			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
 			transfer: true,
@@ -870,7 +870,7 @@ Hooks.on("setup", async function () {
 				},
 			},
 		},
-		nausea: {
+        "WFRP4E.Symptom.Nausea": {
 			label: "Nudności",
 			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
 			transfer: true,
@@ -889,7 +889,7 @@ Hooks.on("setup", async function () {
 				},
 			},
 		},
-		pox: {
+        "WFRP4E.Symptom.Pox": {
 			label: "Wysypka",
 			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
 			transfer: true,
@@ -908,7 +908,7 @@ Hooks.on("setup", async function () {
 				},
 			},
 		},
-		wounded: {
+        "WFRP4E.Symptom.Wounded": {
 			label: "Uciążliwa Rana",
 			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
 			transfer: true,
