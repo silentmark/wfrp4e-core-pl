@@ -118,13 +118,13 @@
         "Arcane Magic": {
             "id": "3O9clK7LGyuLTHPW",
             "name": "Magia Tajemna (Tradycja)",
-            "description": "<p> </p> <p> Studiowałeś jedną z ośmiu tradycji magii: Cienia, Metalu, Niebios, Ognia, Śmierci, Światła, Zwierząt lub Życia albo praktykujesz którąś z mniej znanych: Guślarstwa czy Nekromancji. Możesz zapamiętywać czary ze swojej wybranej tradycji, płacąc za nie podany niżej koszt w Punktach Doświadczenia: </p> <p> </p> <div> <table title=\"\" border=\"1\" summary=\"\" cellspacing=\"0\" cellpadding=\"0\"> <tbody> <tr> <td> <p>Number of Spells Currently Known</p> </td> <td> <p>XP Cost for a new spell</p> </td> </tr> <tr> <td> <p>Intelligence Bonus × 1 </p> </td> <td> <p>100 XP</p> </td> </tr> <tr> <td> <p>Intelligence Bonus × 2</p> </td> <td> <p>200 XP</p> </td> </tr> <tr> <td> <p>Intelligence Bonus × 3</p> </td> <td> <p>300 XP</p> </td> </tr> <tr> <td> <p>Intelligence Bonus × 4</p> </td> <td> <p>400 XP</p> </td> </tr> </tbody> </table> </div> <p> ...and so on.</p> <p> </p> <p> Jeśli twój Bonus z Inteligencji równy jest 4, to pierwsze pięć zaklęć będą cię kosztowały 100 PD, kolejne 4 już 200 PD i tak dalej. Obszerniejsze zasady dotyczące nauki nowych zaklęć znajdują się w Rozdziale 8: Magia. W normalnych warunkach nie możesz nabyć więcej niż jednego Talentu Magia Tajemna (Tradycja). Co więcej, je- śli posiadasz Talent Magia Tajemna (Tradycja), nie możesz wykupić Talentów Błogosławieństwo i Inwokacja. Za 100 PD możesz wyzbyć się tego Talentu, natychmiast tracąc dostęp do wszystkich zapewnianych przez niego czarów.</p> <p> </p> <p> </p>",
+            "description": "<p> Studiowałeś jedną z ośmiu tradycji magii: Cienia, Metalu, Niebios, Ognia, Śmierci, Światła, Zwierząt lub Życia albo praktykujesz którąś z mniej znanych: Guślarstwa czy Nekromancji. Możesz zapamiętywać czary ze swojej wybranej tradycji, płacąc za nie podany niżej koszt w Punktach Doświadczenia: </p> <div> <table title=\"\" border=\"1\" summary=\"\" cellspacing=\"0\" cellpadding=\"0\"> <tbody> <tr> <td> <p>Liczba już znanych zaklęć</p> </td> <td> <p>Koszt nowego czaru w PD</p> </td> </tr> <tr> <td> <p>do Bonusu z Inteligencji × 1 </p> </td> <td> <p>100 PD</p> </td> </tr> <tr> <td> <p>do Bonusu z Inteligencji × 2</p> </td> <td> <p>200 PD</p> </td> </tr> <tr> <td> <p>do Bonusu z Inteligencji × 3</p> </td> <td> <p>300 PD</p> </td> </tr> <tr> <td> <p>do Bonusu z Inteligencji × 4</p> </td> <td> <p>400 PD</p> </td> </tr> </tbody> </table> </div> <p> ...i tak dalej.</p> <p> Jeśli twój Bonus z Inteligencji równy jest 4, to pierwsze pięć zaklęć będą cię kosztowały 100 PD, kolejne 4 już 200 PD i tak dalej. Obszerniejsze zasady dotyczące nauki nowych zaklęć znajdują się w @UUID[Compendium.wfrp4e-core.journal-entries.YBVrpUHEjohB1H4f]{Rozdziale Magia}>. W normalnych warunkach nie możesz nabyć więcej niż jednego Talentu <i>Magia Tajemna (Tradycja)</i>. Co więcej, jeśli posiadasz Talent <i>Magia Tajemna (Tradycja)</i>, nie możesz wykupić Talentów @UUID[Compendium.wfrp4e-core.talents.QyjWtSdnVMT04l5Y]{Błogosławieństwo} i @UUID[Compendium.wfrp4e-core.talents.voV0C2ar1bKpcpnH]{Inwokacja}. Za 100 PD możesz wyzbyć się tego Talentu, natychmiast tracąc dostęp do wszystkich zapewnianych przez niego czarów.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.3O9clK7LGyuLTHPW"
         },
         "Argumentative": {
             "id": "41JhsSNW1Ttza3JK",
             "name": "Przekonujący",
-            "description": "<p>Przywykłeś do debatowania i obrony swojego zdania. Jeśli uda ci się Test Charyzmy, możesz normalnie obliczyć PS lub określić ich liczbę, odczytując wynik z kości jedności. Udany Test z wynikiem 24 może dać ci więc 4 PS</p>",
+            "description": "<p>Przywykłeś do debatowania i obrony swojego zdania. Jeśli uda ci się Test Charyzmy, możesz normalnie obliczyć PS lub określić ich liczbę, odczytując wynik z kości jedności. Udany Test z wynikiem 24 może dać ci więc 4 PS.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.41JhsSNW1Ttza3JK",
             "effects": {
                 "oAsvKkgS9pLtavj7": {
@@ -179,7 +179,7 @@
         "Beneath Notice": {
             "id": "5KP9sOoLSGvj9EXp",
             "name": "Niegodny Uwagi",
-            "description": "<p>Wielcy i możni nie zwracają na ciebie uwagi. Jeśli jesteś zwyczajnie ubrany i nie zachowujesz się niestosownie, osoby z wyż- szego poziomu Statusu nie przejmują się tobą, chyba że twoja obecność jest wybitnie niestosowna. Talent ten sprawia, że masz wiele okazji do podsłuchania rozmów, których nie powinieneś być świadkiem. Co więcej, osoby o wyższym poziomie Statusu nie otrzymują Przewagi za uderzenie ciebie lub zadanie obrażeń w walce, ponieważ pomiatanie takim łachudrą jak ty nie przynosi im żadnego honoru.</p>",
+            "description": "<p>Wielcy i możni nie zwracają na ciebie uwagi. Jeśli jesteś zwyczajnie ubrany i nie zachowujesz się niestosownie, osoby z wyższego poziomu Statusu nie przejmują się tobą, chyba że twoja obecność jest wybitnie niestosowna. Talent ten sprawia, że masz wiele okazji do podsłuchania rozmów, których nie powinieneś być świadkiem. Co więcej, osoby o wyższym poziomie Statusu nie otrzymują Przewagi za uderzenie ciebie lub zadanie obrażeń w walce, ponieważ pomiatanie takim łachudrą jak ty nie przynosi im żadnego honoru.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.5KP9sOoLSGvj9EXp",
             "tests": "Skradanie, kiedy jesteś na widoku"
         },
@@ -253,7 +253,7 @@
         "Blather": {
             "id": "77p3QRKgFWakkndF",
             "name": "Gadanina",
-            "description": "<p>W Nordlandzie mówi się, że otwierasz usta, a kiszki przez ciebie przemawiają, w Ostlandzie zaś, że pleciesz bzdury. Gadanina to wylewanie strumienia słów lub niepotrzebne i kwieciste rozwodzenie się nad sprawami trywialnymi lub wręcz pozbawionymi sensu, by wprowadzić rozmówcę w zdumienie i zakłopotanie. Do Gadaniny wykorzystujesz Umiejętność Charyzma w <strong>Teście Przeciwstawnym z Inteligencją</strong>. Sukces oznacza, że twój rozmówca znajduje się w Stanie Oszołomienie. Każdy poziom Gadaniny sprawia, że cel otrzymuje Stan kolejny raz. Taka osoba bądź istota stoi oniemiała, próbując zrozumieć, o czym mówisz i czego chcesz. Kiedy zagadany osobnik otrząśnie się z oszołomienia i zrozumie, co się dzia- ło, może nie być szczęśliwy z tego, jak go zmieszałeś. Ostatecznie zawracałeś mu głowę głupotami. Kiedy przestaniesz nawijać, cel natychmiast otrząśnie się ze Stanu Oszołomienie spowodowanego Gadaniną. Tego Talentu możesz używać tylko raz na danej osobie podczas jednej sceny (a nawet jeszcze rzadziej, jeśli MG tak uzna). Może zdarzyć się tak, że ten sam człowiek drugi raz na twoje paplanie nie da się już nabrać.</p>",
+            "description": "<p>W Nordlandzie mówi się, że otwierasz usta, a kiszki przez ciebie przemawiają, w Ostlandzie zaś, że pleciesz bzdury. Gadanina to wylewanie strumienia słów lub niepotrzebne i kwieciste rozwodzenie się nad sprawami trywialnymi lub wręcz pozbawionymi sensu, by wprowadzić rozmówcę w zdumienie i zakłopotanie. Do Gadaniny wykorzystujesz Umiejętność Charyzma w <strong>Teście Przeciwstawnym z Inteligencją</strong>. Sukces oznacza, że twój rozmówca znajduje się w Stanie <i>Oszołomienie</i>. Każdy poziom Gadaniny sprawia, że cel otrzymuje Stan kolejny raz. Taka osoba bądź istota stoi oniemiała, próbując zrozumieć, o czym mówisz i czego chcesz. Kiedy zagadany osobnik otrząśnie się z oszołomienia i zrozumie, co się działo, może nie być szczęśliwy z tego, jak go zmieszałeś. Ostatecznie zawracałeś mu głowę głupotami. Kiedy przestaniesz nawijać, cel natychmiast otrząśnie się ze Stanu <i>Oszołomienie</i> spowodowanego Gadaniną. Tego Talentu możesz używać tylko raz na danej osobie podczas jednej sceny (a nawet jeszcze rzadziej, jeśli MG tak uzna). Może zdarzyć się tak, że ten sam człowiek drugi raz na twoje paplanie nie da się już nabrać.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.77p3QRKgFWakkndF",
             "tests": "Charyzma, by kogoś zagadać"
         },
@@ -321,7 +321,7 @@
         "Fast Hands": {
             "id": "9sMAf0xmehjEmUao",
             "name": "Ruchliwe dłonie",
-            "description": "<p>Manipulujesz dłońmi z zaskakującą zręcznością. Gapiom i przypadkowym obserwatorom nie przysługuje bierny Test Percepcji, gdy wykorzystujesz Umiejętność Zwinne Palce, chyba że żywią oni wobec ciebie podejrzenia i obserwują twoje ruchy. Testy Broni Białej (Bijatyki) wykonywane, by dotknąć przeciwnika, wykonujesz z premią +10 x liczba wykupień tego Talentu</p>",
+            "description": "<p>Manipulujesz dłońmi z zaskakującą zręcznością. Gapiom i przypadkowym obserwatorom nie przysługuje bierny Test Percepcji, gdy wykorzystujesz Umiejętność Zwinne Palce, chyba że żywią oni wobec ciebie podejrzenia i obserwują twoje ruchy. Testy Broni Białej (Bijatyki) wykonywane, by dotknąć przeciwnika, wykonujesz z premią +10 x liczba wykupień tego Talentu.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.9sMAf0xmehjEmUao",
             "tests": "Test Zwinnych Palców, Broni Białej (Bijatyka), aby dotknąć przeciwnika"
         },
@@ -396,7 +396,7 @@
         "Jump Up": {
             "id": "BIaLeh4CPFaTMbFz",
             "name": "Sprężynka",
-            "description": "<p> Ciebie nie da się obalić na ziemię. Możesz wykonać <strong>Wymagający (+0) Test Atletyki</strong>, by natychmiast wstać po tym, jak nałożony zostanie na ciebie Stan Powalony. Ten Test Atletyki jest modyfikowany przez siłę uderzenia, które posłało cię na ziemię. Za każde 10 punktów Siły wroga ponad twoją Wytrzymałość otrzymujesz modyfikator -10 do Testu Atletyki. Jeśli Siła przeciwnika była niższa od twojej Wytrzymałości, otrzymujesz +10 za każde 10 punktów różnicy.</p>",
+            "description": "<p> Ciebie nie da się obalić na ziemię. Możesz wykonać <strong>Wymagający (+0) Test Atletyki</strong>, by natychmiast wstać po tym, jak nałożony zostanie na ciebie Stan <i>Powalony</i>. Ten Test Atletyki jest modyfikowany przez siłę uderzenia, które posłało cię na ziemię. Za każde 10 punktów Siły wroga ponad twoją Wytrzymałość otrzymujesz modyfikator -10 do Testu Atletyki. Jeśli Siła przeciwnika była niższa od twojej Wytrzymałości, otrzymujesz +10 za każde 10 punktów różnicy.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.BIaLeh4CPFaTMbFz"
         },
         "Furious Assault": {
@@ -411,7 +411,7 @@
             "name": "Oko Łowcy",
             "description": "<p>Jesteś dobrym myśliwym i znasz najlepsze sposoby szukania zwierzyny. Kiedy podróżujesz po bogatych w nią ziemiach, jesteś automatycznie w stanie wyżywić siebie i tylu towarzyszy, ile razy wykupiłeś ten Talent, jeśli tylko masz czas, by zapolować, oraz odpowiednie wyposażenie.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.bxbTiLzbaz4vdukT",
-            "tests": "Dowolny test wiążący się z Tropieniem lub polowaniem na zwierzyne"
+            "tests": "Dowolny test wiążący się z Tropieniem lub polowaniem na zwierzynę"
         },
         "Instinctive Diction": {
             "id": "BYChSVfMG004eflQ",
@@ -430,7 +430,7 @@
         "Diceman": {
             "id": "cAxNctMFWIAjDgV3",
             "name": "Szuler Kościany",
-            "description": "<p>Jesteś mistrzem gry w kości, a zarzuty oszustwa są nieuzasadnione. Kiedy z powodzeniem używasz Umiejętności Hazard czy Zwinne Palce podczas gry w kości, możesz albo zachować obliczoną normalnie liczbę PS, albo określić ich liczbę przez wynik na kości jedności. W ten sposób wynik rzutu 06 może oznaczać +6 PS. Je- śli podczas sesji będziecie naprawdę grali w kości, rzucasz tyloma więcej, ile razy wykupiłeś ten Talent, i wybierasz najlepsze rezultaty.</p>",
+            "description": "<p>Jesteś mistrzem gry w kości, a zarzuty oszustwa są nieuzasadnione. Kiedy z powodzeniem używasz Umiejętności Hazard czy Zwinne Palce podczas gry w kości, możesz albo zachować obliczoną normalnie liczbę PS, albo określić ich liczbę przez wynik na kości jedności. W ten sposób wynik rzutu 06 może oznaczać +6 PS. Jeśli podczas sesji będziecie naprawdę grali w kości, rzucasz tyloma więcej, ile razy wykupiłeś ten Talent, i wybierasz najlepsze rezultaty.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.cAxNctMFWIAjDgV3",
             "tests": "Test Hazardu lub Zwinnych Palców podczas gier kościanych",
             "effects": {
@@ -525,14 +525,14 @@
         "Panhandle": {
             "id": "eEHauevJWhmzvCSx",
             "name": "Naciągacz",
-            "description": "<p>Doskonaliłeś się w żebraniu tak długo, że teraz wzruszysz nawet osobę o sercu z najtwardszego kamienia. Testy Charyzmy podczas żebrania wykonujesz co pół godziny, a nie co godzinę </p>",
+            "description": "<p>Doskonaliłeś się w żebraniu tak długo, że teraz wzruszysz nawet osobę o sercu z najtwardszego kamienia. Testy Charyzmy podczas żebrania wykonujesz co pół godziny, a nie co godzinę.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.eEHauevJWhmzvCSx",
             "tests": "Charyzma (Żebractwo)"
         },
         "Magic Resistance": {
             "id": "eowbsW6oHGSNJmxV",
             "name": "Odporność na Magię",
-            "description": "<p>Jesteś uodporniony na zaklęcia. Poziom Sukcesów czarów rzucanych na ciebie jest obniżony o 2 za każde wykupienie tego Talentu. Poziom Sukcesów jest obniżany tylko od najwyższej Odporności na Magię w obszarze oddziaływania czaru. Co więcej, nie możesz wykupić Talentów: <em>Magia Tajemna</em>, <em>Błogosławieństwo</em>, <em>Inwokacja</em>, <em>Magia Prosta</em> i <em>Czarownica</em></p>",
+            "description": "<p>Jesteś uodporniony na zaklęcia. Poziom Sukcesów czarów rzucanych na ciebie jest obniżony o 2 za każde wykupienie tego Talentu. Poziom Sukcesów jest obniżany tylko od najwyższej Odporności na Magię w obszarze oddziaływania czaru. Co więcej, nie możesz wykupić Talentów: <em>Magia Tajemna</em>, <em>Błogosławieństwo</em>, <em>Inwokacja</em>, <em>Magia Prosta</em> i <em>Czarownica</em>.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.eowbsW6oHGSNJmxV",
             "effects": {
                 "EsoBJtVEVYxCXdRb": {
@@ -545,7 +545,7 @@
         "Dealmaker": {
             "id": "epPBu7x6BRWp2PHG",
             "name": "Żyłka Handlowa",
-            "description": "<p> Jesteś sprawnym przekupniem i znasz sposoby na dobicie targu. Kiedy używasz Umiejętności Targowanie, obniżasz lub podwyższasz cenę o dodatkowe 10%. Uwaga: MG ma prawo do limitowania zmniejszania cen, by pokazać, że kupiec nie sprzeda przedmiotu poniżej poniesionych przez siebie kosztów. </p>",
+            "description": "<p> Jesteś sprawnym przekupniem i znasz sposoby na dobicie targu. Kiedy używasz Umiejętności Targowanie, obniżasz lub podwyższasz cenę o dodatkowe 10%. <b>Uwaga:</b> MG ma prawo do limitowania zmniejszania cen, by pokazać, że kupiec nie sprzeda przedmiotu poniżej poniesionych przez siebie kosztów. </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.epPBu7x6BRWp2PHG",
             "tests": "Targowanie"
         },
@@ -558,7 +558,7 @@
         "Field Dressing": {
             "id": "fEFAMNqh8nJIfBkM",
             "name": "Pierwsza Pomoc",
-            "description": "<p>Potrafisz szybko opatrywać rany. Kiedy nie uda ci się Test Leczenia podczas używania Bandaży, możesz odwrócić kolejność kostek, jeśli to przyniesie ci sukces. Jeśli tak zrobisz, nie możesz uzyskać więcej niż +1 PS, ponieważ skupiasz się na szybkim, a nie dokładnym za- łożeniu opatrunku.</p>",
+            "description": "<p>Potrafisz szybko opatrywać rany. Kiedy nie uda ci się Test Leczenia podczas używania Bandaży, możesz odwrócić kolejność kostek, jeśli to przyniesie ci sukces. Jeśli tak zrobisz, nie możesz uzyskać więcej niż +1 PS, ponieważ skupiasz się na szybkim, a nie dokładnym założeniu opatrunku.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.fEFAMNqh8nJIfBkM",
             "tests": "Testy leczenia, gdy trwa walka"
         },
@@ -625,7 +625,7 @@
         "Pharmacist": {
             "id": "G4rPR0XGiYFUZWKi",
             "name": "Aptekarz",
-            "description": "<p>Jesteś świetnym aptekarzem i lepiej od innych wyrabiasz pigułki, maści, smarowidła, olejki, kremy i im podobne. Możesz odwrócić kolejność kości nieudanego Testu Rzemiosła (Aptekarstwa), jeśli nowy wynik pozwoli ci odnieść sukces. </p>",
+            "description": "<p>Jesteś świetnym aptekarzem i lepiej od innych wyrabiasz pigułki, maści, smarowidła, olejki, kremy i im podobne. Możesz odwrócić kolejność kości nieudanego Testu Rzemiosła (Aptekarstwa), jeśli nowy wynik pozwoli ci odnieść sukces.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.G4rPR0XGiYFUZWKi",
             "tests": "Rzemiosło (Aptekarstwo)"
         },
@@ -672,7 +672,7 @@
         "Careful Strike": {
             "id": "GU1KpgY3MeFIaDaq",
             "name": "Cios Mierzony",
-            "description": "<p>Czy w walce wręcz, czy strzelając, umiesz trafiać tam, gdzie najbardziej zaboli. Możesz zmodyfikować Miejsce Trafienia +/-10 za każ- de wykupienie tego Talentu. Na przykład, jeśli kupiłeś go dwa razy, a wynik 34 wskazuje na prawe ramię, to możesz zmniejszyć go do 14 i trafić w lewe ramię lub zwiększyć do 54 i ugodzić w korpus</p>",
+            "description": "<p>Czy w walce wręcz, czy strzelając, umiesz trafiać tam, gdzie najbardziej zaboli. Możesz zmodyfikować Miejsce Trafienia +/-10 za każde wykupienie tego Talentu. Na przykład, jeśli kupiłeś go dwa razy, a wynik 34 wskazuje na prawe ramię, to możesz zmniejszyć go do 14 i trafić w lewe ramię lub zwiększyć do 54 i ugodzić w korpus.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.GU1KpgY3MeFIaDaq",
             "effects": {
                 "c66r2RrClNOTONMB": {
@@ -684,7 +684,7 @@
         "Embezzle": {
             "id": "HIofcsDLjXGKzSZf",
             "name": "Defraudant",
-            "description": "<p> Potrafisz podprowadzać pieniądze swoich pryncypałów tak, by tego nie odkryli. Kiedy pozyskujesz dochód podczas zarabiania (w trakcie gry lub oddając się Zajęciu Dochód), możesz wykonać <strong>Przeciwstawny Test Inteligencji</strong> przeciwko swojemu pracodawcy (jeśli masz takowego). Jeżeli wygrasz, niepostrzeżenie podprowadzasz 2k10 + PS miedzianych pensów, 1k10 + PS srebrnych szylingów lub 1 + PS złotych koron (w zależności od wysokości obrotów, co jest w gestii MG). Jeśli twój pracodawca wygra o +6 PS, zgarniasz pieniądze, ale zostajesz nakryty. Konsekwencje zależą od MG. Inne wyniki oznaczają, że nie udało ci się zrobić defraudacji i nie ukradłeś żadnych pieniędzy.</p>",
+            "description": "<p> Potrafisz podprowadzać pieniądze swoich pryncypałów tak, by tego nie odkryli. Kiedy pozyskujesz dochód podczas zarabiania (w trakcie gry lub oddając się Zajęciu <i>Dochód</i>), możesz wykonać <strong>Przeciwstawny Test Inteligencji</strong> przeciwko swojemu pracodawcy (jeśli masz takowego). Jeżeli wygrasz, niepostrzeżenie podprowadzasz 2k10 + PS miedzianych pensów, 1k10 + PS srebrnych szylingów lub 1 + PS złotych koron (w zależności od wysokości obrotów, co jest w gestii MG). Jeśli twój pracodawca wygra o +6 PS, zgarniasz pieniądze, ale zostajesz nakryty. Konsekwencje zależą od MG. Inne wyniki oznaczają, że nie udało ci się zrobić defraudacji i nie ukradłeś żadnych pieniędzy.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.HIofcsDLjXGKzSZf",
             "tests": "Inteligencja (Defraudacja)"
         },
@@ -743,7 +743,7 @@
         },
         "Sea Legs": {
             "id": "Ij9N3G8jzxb4lrwy",
-            "name": "Chód marynarza",
+            "name": "Urodzony żeglarz",
             "description": "<p>Przywykłeś do kołysania fal morskich i mało prawdopodobne, byś zachorował na chorobę morską, nawet podczas najsilniejszych sztormów. W spokojnych warunkach nie musisz przeprowadzać Testu, by sprawdzić, czy na morzu chwycą cię mdłości. Gdy rozpęta się sztorm lub gdy chorobę morską powoduje magia, nie dotyczą cię modyfikatory negatywnie wpływające na opieranie się tej przypadłości.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.Ij9N3G8jzxb4lrwy",
             "tests": "Wszystkie testy wykonywane, by oprzeć się chorobie morskiej"
@@ -751,7 +751,7 @@
         "Stout-hearted": {
             "id": "IogM5gnsoOX63w7j",
             "name": "Waleczne Serce",
-            "description": "<p>Nieważne, jak fatalne jest twoje położenie, ty się po prostu nie poddajesz. Na koniec swojej Tury i na koniec całej Rundy możesz wykonać Test Opanowania, by otrząsnąć się ze Stanu Panika.</p>",
+            "description": "<p>Nieważne, jak fatalne jest twoje położenie, ty się po prostu nie poddajesz. Na koniec swojej Tury i na koniec całej Rundy możesz wykonać Test Opanowania, by otrząsnąć się ze Stanu @Condition[Panika].</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.IogM5gnsoOX63w7j",
             "tests": "Test opanowania, by przełamać Stan Panika"
         },
@@ -878,7 +878,7 @@
         "Cat-tongued": {
             "id": "LzgxyMknSHjSkkeQ",
             "name": "Gładkie Słówka",
-            "description": "<p>Jak Ranald Podstępny, potrafisz tak przeplatać prawdę z kłamstwem, że nie można odróżnić jednego od drugiego. Gdy wykorzystujesz Charyzmę do kłamania, twoi rozmówcy nie mogą wykonywać Przeciwstawnego Testu Intuicji, by sprawdzić, czy przypadkiem ich nie okłamujesz</p>",
+            "description": "<p>Jak Ranald Podstępny, potrafisz tak przeplatać prawdę z kłamstwem, że nie można odróżnić jednego od drugiego. Gdy wykorzystujesz Charyzmę do kłamania, twoi rozmówcy nie mogą wykonywać Przeciwstawnego Testu Intuicji, by sprawdzić, czy przypadkiem ich nie okłamujesz.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.LzgxyMknSHjSkkeQ",
             "tests": "Testy charyzmy podczas kłamania"
         },
@@ -891,7 +891,7 @@
         "Iron Will": {
             "id": "mgeiaDZXei7JBEgo",
             "name": "Żelazna Wola",
-            "description": "<p>Jesteś twardy i potrafisz wytrzymać najsilniejsze ciosy. Jeśli jakiś efekt nakłada na postać co najmniej jeden Stan Oszołomienie, gracz może wykonać Wymagający (+0) Test Wytrzymałości, by go zignorować. Każdy PS pozwala ci uniknąć dodatkowego Stanu.</p>",
+            "description": "<p>Masz w sobie niezłomną wolę i sam z siebie nigdy się nie cofniesz. Wykorzystanie przeciwko tobie Zastraszania nie powoduje u ciebie Strachu i nie uciszy cię w wygłaszaniu poglądów przeciwko agresorom.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.mgeiaDZXei7JBEgo",
             "tests": "Test opanowania przeciwstawiane Zastraszaniu"
         },
@@ -912,7 +912,7 @@
         "Distract": {
             "id": "MoiYSfJRPHu7SZCQ",
             "name": "Rozproszenie Uwagi",
-            "description": "<p> Jesteś wytrenowany tak, by twoje ruchy rozpraszały uwagę przeciwnika i ułatwiały jego zaskoczenie. Możesz wykorzystać swój Ruch, aby użyć Rozpraszania Uwagi. Jest to <strong>Test Przeciwstawny Atletyki przeciw Opanowaniu przeciwnika</strong>. Jeśli wygrasz, twój przeciwnik nie może zbierać Przewagi aż do końca następnej Rundy.</p>",
+            "description": "<p>Jesteś wytrenowany tak, by twoje ruchy rozpraszały uwagę przeciwnika i ułatwiały jego zaskoczenie. Możesz wykorzystać swój Ruch, aby użyć Rozpraszania Uwagi. Jest to <strong>Test Przeciwstawny Atletyki przeciw Opanowaniu przeciwnika</strong>. Jeśli wygrasz, twój przeciwnik nie może zbierać Przewagi aż do końca następnej Rundy.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.MoiYSfJRPHu7SZCQ",
             "tests": "Testy atletyki celem Rozproszenia Uwagi"
         },
@@ -938,7 +938,7 @@
         "Surgery": {
             "id": "NP4EHyyh1yOLbsPU",
             "name": "Chirurgia",
-            "description": "<p>Lata nauki trudnego rzemiosła chirurga pozwalają ci dokonywać cudu operacji, zabiegu niezbędnego przy leczeniu najgroźniejszych obrażeń. W opisie wybranych Trafień Krytycznych znajdziecie informację, że wymagają one interwencji chirurga. Właśnie ty jesteś w stanie im zaradzić. Operacja to Wydłużony Wymagający (+0) Test Leczenia. Liczba wymaganych PS jest ustalana przez MG, ale zwykle to 5-10. Podczas procedury zadajesz pacjentowi 1k10 obrażeń i nakładasz na niego Stan <em>Krwawienie</em> za każdym razem, gdy wykonujesz Test. To oznacza, że chory może umrzeć, a szansa na to jest wysoka. Po operacji pacjent musi wykonać <strong>Przeciętny (+20) Test Odporności</strong>, a jego niepowodzenie oznacza Mniejszą Infekcję.</p>",
+            "description": "<p>Lata nauki trudnego rzemiosła chirurga pozwalają ci dokonywać cudu operacji, zabiegu niezbędnego przy leczeniu najgroźniejszych obrażeń. W opisie wybranych Trafień Krytycznych znajdziecie informację, że wymagają one interwencji chirurga. Właśnie ty jesteś w stanie im zaradzić. Operacja to Wydłużony Wymagający (+0) Test Leczenia. Liczba wymaganych PS jest ustalana przez MG, ale zwykle to 5-10. Podczas procedury zadajesz pacjentowi 1k10 obrażeń i nakładasz na niego Stan <em>Krwawienie</em> za każdym razem, gdy wykonujesz Test. To oznacza, że chory może umrzeć, a szansa na to jest wysoka. Po operacji pacjent musi wykonać <strong>Przeciętny (+20) Test Odporności</strong>, a jego niepowodzenie oznacza Pomniejszą Infekcję.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.NP4EHyyh1yOLbsPU",
             "tests": "Leczenie poza walką, kiedy masz dostatecznie dużo czasu i spokoju"
         },
