@@ -11,7 +11,7 @@ Hooks.on("init", () => {
 		effects: (effects, translations) => {
 			return effects.map((data) => {
 				//TODO: map script.
-				const translation = translations[data.label] || translations[data.id] || translations[data._id];
+				const translation = translations[data.name] || translations[data.id] || translations[data._id];
 				if (translations && translation) {
 				 	const newEffect = mergeObject(
 						data,

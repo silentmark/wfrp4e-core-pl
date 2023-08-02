@@ -16,7 +16,7 @@
             "effects": {
                 "XRfGwpANht6wpmpR": {
                     "id": "XRfGwpANht6wpmpR",
-                    "label": "Zmęczenie",
+                    "name": "Zmęczenie",
                     "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');"
                 }
             }
@@ -29,7 +29,7 @@
             "effects": {
                 "mfFTDXJ0SygBMRmF": {
                     "id": "mfFTDXJ0SygBMRmF",
-                    "label": "Paranoja"
+                    "name": "Paranoja"
                 }
             },
             "modifier": "Inicjatywa -5, Inteligencja -5"
@@ -42,7 +42,7 @@
             "effects": {
                 "rAvBBRHH27iSpP87": {
                     "id": "rAvBBRHH27iSpP87",
-                    "label": "Zazdrosne myśli"
+                    "name": "Zazdrosne myśli"
                 }
             },
             "modifier": "Ogłada -10"
@@ -55,7 +55,7 @@
             "effects": {
                 "4rt99MvDqb1zR2MG": {
                     "id": "4rt99MvDqb1zR2MG",
-                    "label": "Mitomania"
+                    "name": "Mitomania"
                 }
             },
             "modifier": "Inicjatywa -5, Siła Woli -5"
@@ -68,7 +68,7 @@
             "effects": {
                 "Go6qdctMDg9FSLwm": {
                     "id": "Go6qdctMDg9FSLwm",
-                    "label": "Krótkie nogi"
+                    "name": "Krótkie nogi"
                 }
             },
             "modifier": "Szybkość -1"
@@ -81,7 +81,7 @@
             "effects": {
                 "zE2zFBWnHMLkNdqR": {
                     "id": "zE2zFBWnHMLkNdqR",
-                    "label": "Złe zamiary",
+                    "name": "Złe zamiary",
                     "script": "if (args.type == \"weapon\" || args.type == \"cast\") {\n   args.prefillModifiers.modifier += 10;\n}\nelse {\n   args.prefillModifiers.modifier -= 10;\n}"
                 }
             },
@@ -101,7 +101,7 @@
             "effects": {
                 "JTKbY08Ya8XiV33s": {
                     "id": "JTKbY08Ya8XiV33s",
-                    "label": "Kompletny świr"
+                    "name": "Kompletny świr"
                 }
             },
             "modifier": "Ogłada -20, Siła Woli +10"
@@ -114,7 +114,7 @@
             "effects": {
                 "sijTILz9kZO5oASo": {
                     "id": "sijTILz9kZO5oASo",
-                    "label": "Drżączka"
+                    "name": "Drżączka"
                 }
             },
             "modifier": "Zwinność +5, Ogłada -5"
@@ -127,7 +127,7 @@
             "effects": {
                 "Hp214Mf1VQEpwpN5": {
                     "id": "Hp214Mf1VQEpwpN5",
-                    "label": "Straszny niepokój"
+                    "name": "Straszny niepokój"
                 }
             },
             "modifier": "Siła Woli -10"
@@ -146,7 +146,7 @@
             "effects": {
                 "73ZIsujmxVg9kAlF": {
                     "id": "73ZIsujmxVg9kAlF",
-                    "label": "Nieludzka uroda"
+                    "name": "Nieludzka uroda"
                 }
             },
             "modifier": "Ogłada +10, rany zawsze goją się bez blizn"
@@ -159,7 +159,7 @@
             "effects": {
                 "Hkhq8FTiyNEsfHUF": {
                     "id": "Hkhq8FTiyNEsfHUF",
-                    "label": "Wychudzone ciało"
+                    "name": "Wychudzone ciało"
                 }
             },
             "modifier": "Siła -10, Zwinność +5"
@@ -172,7 +172,7 @@
             "effects": {
                 "FsfgCNLgJOUHSGMo": {
                     "id": "FsfgCNLgJOUHSGMo",
-                    "label": "Nieustanne dreszcze"
+                    "name": "Nieustanne dreszcze"
                 }
             },
             "modifier": "Inicjatywa -5, Zręczność -5"
@@ -185,7 +185,7 @@
             "effects": {
                 "39WPkucQosauvNSW": {
                     "id": "39WPkucQosauvNSW",
-                    "label": "Uzależnienie od adrenaliny"
+                    "name": "Uzależnienie od adrenaliny"
                 }
             },
             "modifier": "Siła Woli +10, Inicjatywa –10"
@@ -198,7 +198,7 @@
             "effects": {
                 "FeJR7iTtlWYjOwo9": {
                     "id": "FeJR7iTtlWYjOwo9",
-                    "label": "Mięsista macka",
+                    "name": "Mięsista macka",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.traits.4xF7M6ylIiGntekh\").then(item => {\n    item = item.toObject();\n    args.actor.createEmbeddedDocuments(\"Item\", [item]);\n})"
                 }
             }
@@ -211,7 +211,7 @@
             "effects": {
                 "egLqzQE6VJ1xG91R": {
                     "id": "egLqzQE6VJ1xG91R",
-                    "label": "Strach przed samotnością",
+                    "name": "Strach przed samotnością",
                     "description": "Dowolny Test wykonywanych w samotności"
                 }
             },
@@ -225,7 +225,7 @@
             "effects": {
                 "GIKMXwsPucxzpD3K": {
                     "id": "GIKMXwsPucxzpD3K",
-                    "label": "Stalowa skóra",
+                    "name": "Stalowa skóra",
                     "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 2;\nAP[\"rArm\"].value += 2;\nAP[\"lArm\"].value += 2;\nAP[\"body\"].value += 2;\nAP[\"lLeg\"].value += 2;\nAP[\"rLeg\"].value += 2;"
                 }
             },
@@ -239,7 +239,7 @@
             "effects": {
                 "A3qEjzJ8tFTTWDPl": {
                     "id": "A3qEjzJ8tFTTWDPl",
-                    "label": "Otyłość"
+                    "name": "Otyłość"
                 }
             },
             "modifier": "Szybkość -1, Siła +5, Wytrzymałość +5"
@@ -252,7 +252,7 @@
             "effects": {
                 "iZgljsMJIgKH6L0P": {
                     "id": "iZgljsMJIgKH6L0P",
-                    "label": "Ogromne oko",
+                    "name": "Ogromne oko",
                     "description": "Percepcja związana ze wzrokiem"
                 }
             },
@@ -266,7 +266,7 @@
             "effects": {
                 "W6GtdIEcYRTTdUbk": {
                     "id": "W6GtdIEcYRTTdUbk",
-                    "label": "Odwrócona twarz",
+                    "name": "Odwrócona twarz",
                     "script": "if (args.type == \"characteristic\" && args.item == \"fel\") {\n  args.prefillModifiers.modifier -= 20;\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"fel\") {\n    args.prefillModifiers.modifier -= 20\n  }\n}"
                 }
             },
@@ -280,7 +280,7 @@
             "effects": {
                 "FckYHxsq1fxb9QNo": {
                     "id": "FckYHxsq1fxb9QNo",
-                    "label": "Dręczące wizje"
+                    "name": "Dręczące wizje"
                 }
             },
             "modifier": "Inicjatywa -10"
@@ -293,7 +293,7 @@
             "effects": {
                 "UuWZEOCSqCXzdXO8": {
                     "id": "UuWZEOCSqCXzdXO8",
-                    "label": "Zwisający jęzor",
+                    "name": "Zwisający jęzor",
                     "description": "Test Języka wymagający mówienia"
                 }
             },
@@ -313,12 +313,12 @@
             "effects": {
                 "2Ohs6a56Gxu8VLHF": {
                     "id": "2Ohs6a56Gxu8VLHF",
-                    "label": "Szał Bojowy",
+                    "name": "Szał Bojowy",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.psychologies.DrNUTPeodEgpWTnT\").then(item => {\nitem = item.toObject();\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);\n})"
                 },
                 "3ekXP5mRTRdaJptm": {
                     "id": "3ekXP5mRTRdaJptm",
-                    "label": "Bezbożny szał",
+                    "name": "Bezbożny szał",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.psychologies.DrNUTPeodEgpWTnT\").then(item => {\nitem = item.toObject();\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);\n})"
                 }
             },
@@ -338,7 +338,7 @@
             "effects": {
                 "1WuNk8jD1SyJIdHE": {
                     "id": "1WuNk8jD1SyJIdHE",
-                    "label": "Bonus do Szybkości"
+                    "name": "Bonus do Szybkości"
                 }
             },
             "modifier": "Szybkość +1"
@@ -351,7 +351,7 @@
             "effects": {
                 "C3nRwWnS8XEQfRQi": {
                     "id": "C3nRwWnS8XEQfRQi",
-                    "label": "Bezduszność"
+                    "name": "Bezduszność"
                 }
             },
             "modifier": "Siła Woli +10, Ogłada -10"
@@ -364,13 +364,13 @@
             "effects": {
                 "2o80BN5wj3QZxpYJ": {
                     "id": "2o80BN5wj3QZxpYJ",
-                    "label": "Nierówne rogi PP",
+                    "name": "Nierówne rogi PP",
                     "script": "args.actor.status.armour[\"head\"].value += 1;"
                 },
                 "n4ttJEJZfsfISN5O": {
                     "id": "n4ttJEJZfsfISN5O",
-                    "label": "Nierówne rogi",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.traits.BqPZn6q3VHn9HUrW\").then(item => {\nitem = item.toObject();\nitem.name = this.effect.label;\nitem.system.specification.value = this.actor.characteristics.s.bonus;\nitem.system.description.value = \"\";\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);\n})"
+                    "name": "Nierówne rogi",
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.traits.BqPZn6q3VHn9HUrW\").then(item => {\nitem = item.toObject();\nitem.name = this.effect.name;\nitem.system.specification.value = this.actor.characteristics.s.bonus;\nitem.system.description.value = \"\";\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);\n})"
                 }
             },
             "modifier": "+1 Punkt Pancerza na głowie"
@@ -383,7 +383,7 @@
             "effects": {
                 "sQs8JwxXFQcfvDLD": {
                     "id": "sQs8JwxXFQcfvDLD",
-                    "label": "Blokada psychiczna"
+                    "name": "Blokada psychiczna"
                 }
             },
             "modifier": "Inteligencja -10"
@@ -396,7 +396,7 @@
             "effects": {
                 "EfojtYV7NuxfAUrK": {
                     "id": "EfojtYV7NuxfAUrK",
-                    "label": "Wibrysy",
+                    "name": "Wibrysy",
                     "script": "if (args.type == \"skill\" && args.item.name == game.i18.n.localize(\"NAME.Track\")) {\n   args.prefillModifiers.modifier += 10;\n}"
                 }
             },
@@ -410,7 +410,7 @@
             "effects": {
                 "mbj1Q28xiYuHC3z2": {
                     "id": "mbj1Q28xiYuHC3z2",
-                    "label": "Kolczaste łuski",
+                    "name": "Kolczaste łuski",
                     "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 1;\nAP[\"rArm\"].value += 1;\nAP[\"lArm\"].value += 1;\nAP[\"body\"].value += 1;\nAP[\"lLeg\"].value += 1;\nAP[\"rLeg\"].value += 1;"
                 }
             },
@@ -424,7 +424,7 @@
             "effects": {
                 "9tlBnF93gLOLbCs2": {
                     "id": "9tlBnF93gLOLbCs2",
-                    "label": "Wydłużone palce"
+                    "name": "Wydłużone palce"
                 }
             },
             "modifier": "Zręczność +10"
@@ -437,7 +437,7 @@
             "effects": {
                 "hUqEsvcMfTbiNWHj": {
                     "id": "hUqEsvcMfTbiNWHj",
-                    "label": "Nienawistne popędy",
+                    "name": "Nienawistne popędy",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.psychologies.Q2MCUrG2HppMcvN0\").then(item => {\nitem = item.toObject()\nlet species = args.actor.details.species.value || \"własną rasą\"\nitem.name = `Wrogość (do wszystkich poza: ${species})`\nargs.actor.createEmbeddedDocuments(\"Item\", [item])\n})"
                 }
             }
@@ -450,7 +450,7 @@
             "effects": {
                 "Jv17LNhTsc3DqbRJ": {
                     "id": "Jv17LNhTsc3DqbRJ",
-                    "label": "Dodatkowe stawy w nogach"
+                    "name": "Dodatkowe stawy w nogach"
                 }
             },
             "modifier": "Zwinność +5"
@@ -463,7 +463,7 @@
             "effects": {
                 "KRT5ky5npGHcoSzv": {
                     "id": "KRT5ky5npGHcoSzv",
-                    "label": "Wewnętrzna bestia"
+                    "name": "Wewnętrzna bestia"
                 }
             },
             "modifier": "Siła Woli +10, Ogłada -5, Inteligencja -5"
@@ -476,7 +476,7 @@
             "effects": {
                 "uMETdH7d0Hlt1yRa": {
                     "id": "uMETdH7d0Hlt1yRa",
-                    "label": "Odrażające zachcianki"
+                    "name": "Odrażające zachcianki"
                 }
             },
             "modifier": "Ogłada -5, Siła Woli -5"
@@ -489,7 +489,7 @@
             "effects": {
                 "WRlYLsW6TkKNs7lX": {
                     "id": "WRlYLsW6TkKNs7lX",
-                    "label": "Bluźniercze popędy"
+                    "name": "Bluźniercze popędy"
                 }
             },
             "modifier": "Siła Woli -10, Zwinność +10"
@@ -502,7 +502,7 @@
             "effects": {
                 "RpoMdbEmjj9FhPvU": {
                     "id": "RpoMdbEmjj9FhPvU",
-                    "label": "Chwiejne morale",
+                    "name": "Chwiejne morale",
                     "script": "if (args.test.result.outcome == \"failure\") {\n    if (args.test.characteristicKey == \"wp\") {\n        this.actor.addCondition(\"broken\")\n    }\n}"
                 }
             },

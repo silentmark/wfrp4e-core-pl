@@ -22,16 +22,16 @@
             "effects": {
                 "FLB8zGutyEQWgRlb": {
                     "id": "FLB8zGutyEQWgRlb",
-                    "label": "Nawroty (Sporadyczne)"
+                    "name": "Nawroty (Sporadyczne)"
                 },
                 "TbXenWmw4yRg7qlf": {
                     "id": "TbXenWmw4yRg7qlf",
-                    "label": "Uciążliwa rana",
+                    "name": "Uciążliwa rana",
                     "script": "\n                        if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty : \"average\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            let disease = await fromUuid(\"Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb\");\n            args.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()]);\n        }\n    });\n}"
                 },
                 "tf4IaDGr6PVsHl7w": {
                     "id": "tf4IaDGr6PVsHl7w",
-                    "label": "Apatia",
+                    "name": "Apatia",
                     "script": "\n                    if (game.user.isUniqueGM) {\n    let fatigued = args.actor.hasCondition(\"fatigued\");\n    if (!fatigued) {\n        args.actor.addCondition(\"fatigued\");\n        ui.notifications.notify(\"\" + args.actor.name + \" otrzymał zmęczenie, którego nie można usunąć dopóki nie zostanie wyleczony symptom Apatii.\");\n    }\n}\n                    "
                 }
             },
@@ -51,27 +51,27 @@
             "effects": {
                 "1J3ape1RdCwgziZe": {
                     "id": "1J3ape1RdCwgziZe",
-                    "label": "Apatia",
+                    "name": "Apatia",
                     "script": "\n                    if (game.user.isUniqueGM) {\n    let fatigued = args.actor.hasCondition(\"fatigued\");\n    if (!fatigued) {\n        args.actor.addCondition(\"fatigued\");\n        ui.notifications.notify(\"\" + args.actor.name + \" otrzymał zmęczenie, którego nie można usunąc dopóki nie zostanie wyleczony symptom Apatii.\");\n    }\n}\n                    "
                 },
                 "BdDKgmnnXyID5l9r": {
                     "id": "BdDKgmnnXyID5l9r",
-                    "label": "Gorączka",
+                    "name": "Gorączka",
                     "script": "\n                       \n                    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"]\nif (args.type == \"weapon\") {\n    args.prefillModifiers.modifier -= 10;\n}\nelse if (args.type == \"characteristic\") {\n    if (applicableCharacteristics.includes(args.item)) {\n        args.prefillModifiers.modifier -= 10\n    }\n}\nelse if (args.type == \"skill\") {\n    if (applicableCharacteristics.includes(args.item.characteristic.key)) {\n                            args.prefillModifiers.modifier -= 10;\n    }\n}"
                 },
                 "NcJoF1DR82jScspx": {
                     "id": "NcJoF1DR82jScspx",
-                    "label": "Dymienica",
+                    "name": "Dymienica",
                     "script": "\n                    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"]\nif (args.type == \"weapon\") {\n    args.prefillModifiers.modifier -= 10\n}\nelse if (args.type == \"characteristic\") {\n    if (applicableCharacteristics.includes(args.item.key)) {\n        args.prefillModifiers.modifier -= 10;\n    }\n}\nelse if (args.type == \"skill\") {\n    if (applicableCharacteristics.includes(args.item.characteristic.key)) {\n        args.prefillModifiers.modifier -= 10;\n    }\n}\n            "
                 },
                 "NKiIPNQehPO9eaxm": {
                     "id": "NKiIPNQehPO9eaxm",
-                    "label": "Uwiąd (Średnie)",
-                    "script": "\n                        let difficulty = \"\"\nif (this.effect.label.includes(game.i18n.localize(\"Moderate\"))) {\n    difficulty = \"easy\";\n}\nelse if (this.effect.label.includes(game.i18n.localize(\"Severe\"))) {\n    difficulty = \"average\";\n}\nelse {\n    difficulty = \"veasy\";\n}\n\nif (this.actor.isOwner) { \n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {context : {failure : args.actor.name + \" umiera z powodu Uwiądu\"}, absolute: {difficulty}, appendTitle : \" - Uwiąd\"}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"dead\")\n        }\n    });\n}"
+                    "name": "Uwiąd (Średnie)",
+                    "script": "\n                        let difficulty = \"\"\nif (this.effect.name.includes(game.i18n.localize(\"Moderate\"))) {\n    difficulty = \"easy\";\n}\nelse if (this.effect.name.includes(game.i18n.localize(\"Severe\"))) {\n    difficulty = \"average\";\n}\nelse {\n    difficulty = \"veasy\";\n}\n\nif (this.actor.isOwner) { \n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {context : {failure : args.actor.name + \" umiera z powodu Uwiądu\"}, absolute: {difficulty}, appendTitle : \" - Uwiąd\"}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"dead\")\n        }\n    });\n}"
                 },
                 "qNWBcG8TYO5QGmLk": {
                     "id": "qNWBcG8TYO5QGmLk",
-                    "label": "Gangrena",
+                    "name": "Gangrena",
                     "script": "\n                        if (args.type == \"characteristic\" && args.item == \"fel\") {\n    if (args.item == \"fel\") {\n        args.prefillModifiers.modifier -= 10;\n    }\n} else if (args.type == \"skill\") {\n    if (args.item.characteristic.key == \"fel\") {\n        args.prefillModifiers.modifier -= 10;\n    }\n}"
                 }
             },
@@ -91,11 +91,11 @@
             "effects": {
                 "1PIxT3ieQbomnHR5": {
                     "id": "1PIxT3ieQbomnHR5",
-                    "label": "Nawroty (Częste)"
+                    "name": "Nawroty (Częste)"
                 },
                 "aHhqh3ReDbl1CC33": {
                     "id": "aHhqh3ReDbl1CC33",
-                    "label": "Wysypka",
+                    "name": "Wysypka",
                     "script": "\n                       \n                        if (args.type == \"characteristic\" && args.item == \"fel\") {\n        args.prefillModifiers.modifier -= 10;\n} else if (args.type == \"skill\") {\n        if (args.item.characteristic.key == \"fel\") {\n                args.prefillModifiers.modifier -= 10;\n        }\n}"
                 }
             },
@@ -115,25 +115,25 @@
             "effects": {
                 "55OiJcxPalh86HH8": {
                     "id": "55OiJcxPalh86HH8",
-                    "label": "Nudności",
+                    "name": "Nudności",
                     "script": "\n                    if (this.actor.isOwner && args.test.result.outcome == \"failure\") {\n    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"]\n    if (applicableCharacteristics.includes(args.test.characteristicKey)) {\n        this.actor.addCondition(\"stunned\");\n    }\n}\n                    "
                 },
                 "DjYLhjvUbllWMrKk": {
                     "id": "DjYLhjvUbllWMrKk",
-                    "label": "Nawroty (Częste)"
+                    "name": "Nawroty (Częste)"
                 },
                 "KnlIy1IoRQ4KsvuV": {
                     "id": "KnlIy1IoRQ4KsvuV",
-                    "label": "Gorączka",
+                    "name": "Gorączka",
                     "script": "\n                       \n                    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"];\nif (args.type == \"weapon\") {\n    args.prefillModifiers.modifier -= 10;\n} else if (args.type == \"characteristic\") {\n    if (applicableCharacteristics.includes(args.item)) {\n        args.prefillModifiers.modifier -= 10;\n    }\n} else if (args.type == \"skill\") {\n    if (applicableCharacteristics.includes(args.item.characteristic.key)) {\n        args.prefillModifiers.modifier -= 10;\n    }\n}"
                 },
                 "Sc30lmNSCIJ0DGab": {
                     "id": "Sc30lmNSCIJ0DGab",
-                    "label": "Biegunka (Poważny)"
+                    "name": "Biegunka (Poważny)"
                 },
                 "VBP4fo86uuFd6YiW": {
                     "id": "VBP4fo86uuFd6YiW",
-                    "label": "Apatia",
+                    "name": "Apatia",
                     "script": "\n                    if (game.user.isUniqueGM) {\n    let fatigued = args.actor.hasCondition(\"fatigued\");\n    if (!fatigued) {\n        args.actor.addCondition(\"fatigued\")\n        ui.notifications.notify(\"\" + args.actor.name + \" otrzymał zmęczenie, którego nie można usunąć dopóki nie zostanie wyleczony symptom Apatii.\");\n    }\n}\n                    "
                 }
             },
@@ -153,22 +153,22 @@
             "effects": {
                 "2cuvlgkALYIx6KCh": {
                     "id": "2cuvlgkALYIx6KCh",
-                    "label": "Apatia",
+                    "name": "Apatia",
                     "script": "\n                    if (game.user.isUniqueGM) {\n    let fatigued = args.actor.hasCondition(\"fatigued\");\n    if (!fatigued) {\n        args.actor.addCondition(\"fatigued\");\n        ui.notifications.notify(\"\" + args.actor.name + \" otrzymał zmęczenie, którego nie można usunąć dopóki nie zostanie wyleczony symptom Apatii.\");\n    }\n}\n                    "
                 },
                 "Bhn6hjQFNCEMU6et": {
                     "id": "Bhn6hjQFNCEMU6et",
-                    "label": "Uciążliwa rana",
+                    "name": "Uciążliwa rana",
                     "script": "\n                        if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty : \"average\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            let disease = await fromUuid(\"Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb\");\n            args.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()]);\n        }\n    });\n}"
                 },
                 "InNO9elKVbhdUMyB": {
                     "id": "InNO9elKVbhdUMyB",
-                    "label": "Gorączka",
+                    "name": "Gorączka",
                     "script": "\n                       \n                    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"]\nif (args.type == \"weapon\") {\n    args.prefillModifiers.modifier -= 10;\n} else if (args.type == \"characteristic\") {\n    if (applicableCharacteristics.includes(args.item)) {\n        args.prefillModifiers.modifier -= 10;\n    }\n} else if (args.type == \"skill\") {\n    if (applicableCharacteristics.includes(args.item.characteristic.key)) {\n        args.prefillModifiers.modifier -= 10;\n    }\n}"
                 },
                 "nKPv1wHQXwUsBdf7": {
                     "id": "nKPv1wHQXwUsBdf7",
-                    "label": "Nawroty (Częste)"
+                    "name": "Nawroty (Częste)"
                 }
             },
             "duration_value": "1d10",
@@ -187,17 +187,17 @@
             "effects": {
                 "NHyxRtRt9rsjjz4r": {
                     "id": "NHyxRtRt9rsjjz4r",
-                    "label": "Apatia",
+                    "name": "Apatia",
                     "script": "\n                    if (game.user.isUniqueGM) {\n    let fatigued = args.actor.hasCondition(\"fatigued\");\n    if (!fatigued)  {\n        args.actor.addCondition(\"fatigued\");\n        ui.notifications.notify(\"\" + args.actor.name + \" otrzymał zmęczenie, którego nie można usunąć dopóki nie zostanie wyleczony symptom Apatii.\");\n    }\n}\n                    "
                 },
                 "TH7hPoURLnjdJSSl": {
                     "id": "TH7hPoURLnjdJSSl",
-                    "label": "Uwiąd",
-                    "script": "\n                        let difficulty = \"\";\nif (this.effect.label.includes(game.i18n.localize(\"Moderate\"))) {\n    difficulty = \"easy\";\n} else if (this.effect.label.includes(game.i18n.localize(\"Severe\"))) {\n    difficulty = \"average\";\n} else {\n    difficulty = \"veasy\";\n}\nif (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {context : {failure : args.actor.name + \" umiera z powodu Uwiądu\"}, absolute: {difficulty}, appendTitle : \" - Uwiąd\"}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"dead\");\n        }\n    });\n}"
+                    "name": "Uwiąd",
+                    "script": "\n                        let difficulty = \"\";\nif (this.effect.name.includes(game.i18n.localize(\"Moderate\"))) {\n    difficulty = \"easy\";\n} else if (this.effect.name.includes(game.i18n.localize(\"Severe\"))) {\n    difficulty = \"average\";\n} else {\n    difficulty = \"veasy\";\n}\nif (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {context : {failure : args.actor.name + \" umiera z powodu Uwiądu\"}, absolute: {difficulty}, appendTitle : \" - Uwiąd\"}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"dead\");\n        }\n    });\n}"
                 },
                 "V2oU1zPnQR94HCJQ": {
                     "id": "V2oU1zPnQR94HCJQ",
-                    "label": "Gorączka (Poważny)",
+                    "name": "Gorączka (Poważny)",
                     "script": "\n                       \n                    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"]\nif (args.type == \"weapon\") {\n    args.prefillModifiers.modifier -= 10;\n}\nelse if (args.type == \"characteristic\") {\n    if (applicableCharacteristics.includes(args.item)) {\n        args.prefillModifiers.modifier -= 10;\n    }\n}\nelse if (args.type == \"skill\") {\n    if (applicableCharacteristics.includes(args.item.characteristic.key)) {\n        args.prefillModifiers.modifier -= 10\n    }\n}"
                 }
             },
@@ -217,31 +217,31 @@
             "effects": {
                 "0Tr1JZZBjSXaP6Sa": {
                     "id": "0Tr1JZZBjSXaP6Sa",
-                    "label": "Gorączka",
+                    "name": "Gorączka",
                     "script": "\n                       \n                    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"];\nif (args.type == \"weapon\") {\n    args.prefillModifiers.modifier -= 10;\n} else if (args.type == \"characteristic\") {\n    if (applicableCharacteristics.includes(args.item)) {\n        args.prefillModifiers.modifier -= 10;\n    }\n} else if (args.type == \"skill\") {\n    if (applicableCharacteristics.includes(args.item.characteristic.key)) {\n        args.prefillModifiers.modifier -= 10;\n    }\n}"
                 },
                 "hUAPgI4Gb09zd1ut": {
                     "id": "hUAPgI4Gb09zd1ut",
-                    "label": "Uciążliwa Rana",
+                    "name": "Uciążliwa Rana",
                     "script": "\n                        if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty : \"average\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            let disease = await fromUuid(\"Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb\");\n            args.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()]);\n        }\n    });\n}"
                 },
                 "i4ivBVyls07XXZ8h": {
                     "id": "i4ivBVyls07XXZ8h",
-                    "label": "Wysypka",
+                    "name": "Wysypka",
                     "script": "\n                       \n                        if (args.type == \"characteristic\" && args.item == \"fel\") {\n        args.prefillModifiers.modifier -= 10;\n} else if (args.type == \"skill\") {\n        if (args.item.characteristic.key == \"fel\" ){\n                args.prefillModifiers.modifier -= 10;\n        }\n}"
                 },
                 "NZTzhqDUMfcFyOK2": {
                     "id": "NZTzhqDUMfcFyOK2",
-                    "label": "Konwulsje",
-                    "script": "\n                        let modifier = 0\nif (this.effect.label.includes(game.i18n.localize(\"Moderate\"))) {\n    modifier = -20;\n}\nelse {\n    modifier = -10;\n}\n\nlet applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"ag\", \"t\", \"dex\"]\nif (args.type == \"weapon\") {\n    args.prefillModifiers.modifier += modifier;\n} else if (args.type == \"characteristic\") {\n    if (applicableCharacteristics.includes(args.item)) {\n        args.prefillModifiers.modifier += modifier;\n    } \n} else if (args.type == \"skill\") {\n    if (applicableCharacteristics.includes(args.item.characteristic.key)) {\n        args.prefillModifiers.modifier += modifier;\n    }\n}"
+                    "name": "Konwulsje",
+                    "script": "\n                        let modifier = 0\nif (this.effect.name.includes(game.i18n.localize(\"Moderate\"))) {\n    modifier = -20;\n}\nelse {\n    modifier = -10;\n}\n\nlet applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"ag\", \"t\", \"dex\"]\nif (args.type == \"weapon\") {\n    args.prefillModifiers.modifier += modifier;\n} else if (args.type == \"characteristic\") {\n    if (applicableCharacteristics.includes(args.item)) {\n        args.prefillModifiers.modifier += modifier;\n    } \n} else if (args.type == \"skill\") {\n    if (applicableCharacteristics.includes(args.item.characteristic.key)) {\n        args.prefillModifiers.modifier += modifier;\n    }\n}"
                 },
                 "PfGvYCS6yUbrcpYr": {
                     "id": "PfGvYCS6yUbrcpYr",
-                    "label": "Nawroty (Umiarkowane)"
+                    "name": "Nawroty (Umiarkowane)"
                 },
                 "QdZZlcWkKdwev0VI": {
                     "id": "QdZZlcWkKdwev0VI",
-                    "label": "Apatia",
+                    "name": "Apatia",
                     "script": "\n                    if (game.user.isUniqueGM) {\n    let fatigued = args.actor.hasCondition(\"fatigued\");\n    if (!fatigued)     {\n        args.actor.addCondition(\"fatigued\");\n        ui.notifications.notify(\"\" + args.actor.name + \" otrzymał zmęczenie, którego nie można usunąć dopóki nie zostanie wyleczony symptom Apatii.\");\n    }\n}\n                    "
                 }
             },
@@ -261,17 +261,17 @@
             "effects": {
                 "fquDNK6fxIYlnWX1": {
                     "id": "fquDNK6fxIYlnWX1",
-                    "label": "Apatia",
+                    "name": "Apatia",
                     "script": "\n                    if (game.user.isUniqueGM) {\n    let fatigued = args.actor.hasCondition(\"fatigued\");\n    if (!fatigued) {\n        args.actor.addCondition(\"fatigued\");\n        ui.notifications.notify(\"\" + args.actor.name + \" otrzymał zmęczenie, którego nie można usunąć dopóki nie zostanie wyleczony symptom Apatii.\");\n    }\n}\n                    "
                 },
                 "heL1cJFCuElfQoeS": {
                     "id": "heL1cJFCuElfQoeS",
-                    "label": "Nudności",
+                    "name": "Nudności",
                     "script": "\n                    if (this.actor.isOwner && args.test.result.outcome == \"failure\") {\n    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"]\n    if (applicableCharacteristics.includes(args.test.characteristicKey)) {\n        this.actor.addCondition(\"stunned\");\n    }\n}\n                    "
                 },
                 "Sp93ZiJ4eq26v8UO": {
                     "id": "Sp93ZiJ4eq26v8UO",
-                    "label": "Biegunka (Średnie)"
+                    "name": "Biegunka (Średnie)"
                 }
             },
             "duration_value": "1d10",
@@ -290,12 +290,12 @@
             "effects": {
                 "c9ty7yoIpDJfwDqo": {
                     "id": "c9ty7yoIpDJfwDqo",
-                    "label": "Wysypka",
+                    "name": "Wysypka",
                     "script": "\n                       \n                        if (args.type == \"characteristic\" && args.item == \"fel\") {\n        args.prefillModifiers.modifier -= 10;\n} else if (args.type == \"skill\") {\n        if (args.item.characteristic.key == \"fel\") {\n                args.prefillModifiers.modifier -= 10;\n        }\n}"
                 },
                 "vgz3aqUkKvksDs7X": {
                     "id": "vgz3aqUkKvksDs7X",
-                    "label": "Kaszel i katar"
+                    "name": "Kaszel i katar"
                 }
             },
             "duration_value": "1d10+7",

@@ -24,8 +24,8 @@
             "effects": {
                 "z5h8gLfbvL0aMPdK": {
                     "id": "z5h8gLfbvL0aMPdK",
-                    "label": "Pierwsze proroctwo Amul",
-                    "script": "let fortunePoints = {{overcast.usage.other.current}};\nlet current = this.actor.status.fortune.value;\nthis.actor.update({\"system.status.fortune.value\" : fortunePoints + current});\n\nChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b> zwiększono liczbę punktów szczęścia z ${current} do ${fortunePoints + current}`, speaker : {alias : this.effect.label}});"
+                    "name": "Pierwsze proroctwo Amul",
+                    "script": "let fortunePoints = {{overcast.usage.other.current}};\nlet current = this.actor.status.fortune.value;\nthis.actor.update({\"system.status.fortune.value\" : fortunePoints + current});\n\nChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b> zwiększono liczbę punktów szczęścia z ${current} do ${fortunePoints + current}`, speaker : {alias : this.effect.name}});"
                 }
             },
             "duration": "Bonus I Rund",
@@ -67,7 +67,7 @@
             "effects": {
                 "lwonfNC9Tgd77ToA": {
                     "id": "lwonfNC9Tgd77ToA",
-                    "label": "Przerażający wygląd (Śmierć)",
+                    "name": "Przerażający wygląd (Śmierć)",
                     "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },
@@ -101,7 +101,7 @@
             "effects": {
                 "fVw6vOUKTvsKVyDi": {
                     "id": "fVw6vOUKTvsKVyDi",
-                    "label": "Dekoncentracja (Śmierć)",
+                    "name": "Dekoncentracja (Śmierć)",
                     "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.MVI0lXcg6vvtooAF\")\nthis.actor.createEmbeddedDocuments(\"Item\", [item.toObject()], {fromEffect : this.effect.id})"
                 }
             },
@@ -152,7 +152,7 @@
             "effects": {
                 "gs7bAYlGCSfRYAsh": {
                     "id": "gs7bAYlGCSfRYAsh",
-                    "label": "Płomienna zasłona",
+                    "name": "Płomienna zasłona",
                     "script": "args.actor.addCondition(\"ablaze\");"
                 }
             },
@@ -168,7 +168,7 @@
             "effects": {
                 "RgMufN4ojXxwM49O": {
                     "id": "RgMufN4ojXxwM49O",
-                    "label": "Kometa Kasandory",
+                    "name": "Kometa Kasandory",
                     "script": "let that = this;\nthat.actor.addCondition(\"ablaze\").then(() => {that.actor.addCondition(\"prone\");});"
                 }
             },
@@ -211,7 +211,7 @@
             "effects": {
                 "WnphDGxgJbUeOzXg": {
                     "id": "WnphDGxgJbUeOzXg",
-                    "label": "Idylla",
+                    "name": "Idylla",
                     "script": "this.actor.characteristics.i.value = 10"
                 }
             },
@@ -254,7 +254,7 @@
             "effects": {
                 "0IC3xaAT9x78ci7w": {
                     "id": "0IC3xaAT9x78ci7w",
-                    "label": "Straszny wygląd (Nekromancja)",
+                    "name": "Straszny wygląd (Nekromancja)",
                     "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 }
             },
@@ -270,7 +270,7 @@
             "effects": {
                 "QeboSg8hSLhUoKy1": {
                     "id": "QeboSg8hSLhUoKy1",
-                    "label": "Oszołomienie",
+                    "name": "Oszołomienie",
                     "script": "args.actor.addCondition(\"stunned\");"
                 }
             },
@@ -286,7 +286,7 @@
             "effects": {
                 "HV1cfQWe71Z1D8iA": {
                     "id": "HV1cfQWe71Z1D8iA",
-                    "label": "Pochwycenie (Nekromancja)",
+                    "name": "Pochwycenie (Nekromancja)",
                     "script": "args.actor.addCondition(\"entangled\", {{result.overcast.other.current}})"
                 }
             },
@@ -302,7 +302,7 @@
             "effects": {
                 "xta2nDZv5vnjHseC": {
                     "id": "xta2nDZv5vnjHseC",
-                    "label": "Straszny wygląd (Metal)",
+                    "name": "Straszny wygląd (Metal)",
                     "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 }
             },
@@ -336,7 +336,7 @@
             "effects": {
                 "XwqA8lEgbB5ILNyt": {
                     "id": "XwqA8lEgbB5ILNyt",
-                    "label": "Pancerz Eteru (Nekromancja)",
+                    "name": "Pancerz Eteru (Nekromancja)",
                     "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 1;\nAP[\"rArm\"].value += 1;\nAP[\"lArm\"].value += 1;\nAP[\"body\"].value += 1;\nAP[\"lLeg\"].value += 1;\nAP[\"rLeg\"].value += 1;"
                 }
             },
@@ -364,8 +364,8 @@
             "effects": {
                 "N25aw2AX02DBl2O5": {
                     "id": "N25aw2AX02DBl2O5",
-                    "label": "Gorejący Miecz Rhuin",
-                    "script": "args.item.system.qualities.value.push({name : \"impact\"})\nargs.item.createConditionalEffect({\n    \"label\": this.effect.label,\n    \"icon\" : this.effect.icon,\n    \"flags\": {\n        \"wfrp4e\": {\n            \"effectTrigger\": \"applyDamage\",\n            \"effectApplication\": \"damage\",\n            \"hide\": false,\n            \"preventDuplicateEffects\": false,\n            \"script\": \"args.actor.addCondition('ablaze')\"\n        }\n    },\n});"
+                    "name": "Gorejący Miecz Rhuin",
+                    "script": "args.item.system.qualities.value.push({name : \"impact\"})\nargs.item.createConditionalEffect({\n    \"name\": this.effect.name,\n    \"icon\" : this.effect.icon,\n    \"flags\": {\n        \"wfrp4e\": {\n            \"effectTrigger\": \"applyDamage\",\n            \"effectApplication\": \"damage\",\n            \"hide\": false,\n            \"preventDuplicateEffects\": false,\n            \"script\": \"args.actor.addCondition('ablaze')\"\n        }\n    },\n});"
                 }
             }
         },
@@ -386,7 +386,7 @@
             "effects": {
                 "yqyESk94xtKG9e2Z": {
                     "id": "yqyESk94xtKG9e2Z",
-                    "label": "Straszny wygląd (Niebiosa)",
+                    "name": "Straszny wygląd (Niebiosa)",
                     "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n   game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 }
             },
@@ -447,7 +447,7 @@
             "effects": {
                 "YQKv7HWnnxmcOQty": {
                     "id": "YQKv7HWnnxmcOQty",
-                    "label": "Regeneracja",
+                    "name": "Regeneracja",
                     "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")};\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> Odzyskana żywotność:  ${regen} .`;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`;\n      }\n   }\n   else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> wyrzucił ${regen} i odzyskał 1 punkt żywotności.`\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`\n      }\n   }\n   else {\n      chatData.content += `<b>${this.actor.name}</b> Rzut na regenerację: ${regen} - brak efektu.`\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}"
                 }
             },
@@ -481,7 +481,7 @@
             "effects": {
                 "cu2P7Zg9f68sp27i": {
                     "id": "cu2P7Zg9f68sp27i",
-                    "label": "Rozbłysk",
+                    "name": "Rozbłysk",
                     "script": "if (this.actor.isOwner) {\n    args.actor.addCondition(\"blinded\", {{SL}});\n}"
                 }
             },
@@ -497,7 +497,7 @@
             "effects": {
                 "Vn9rIVBiE84ajsvQ": {
                     "id": "Vn9rIVBiE84ajsvQ",
-                    "label": "Przerażający wygląd (Ogień)",
+                    "name": "Przerażający wygląd (Ogień)",
                     "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },
@@ -522,7 +522,7 @@
             "effects": {
                 "FAccQCDysAjLWR4k": {
                     "id": "FAccQCDysAjLWR4k",
-                    "label": "Lot (Metal)",
+                    "name": "Lot (Metal)",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.traits.EO05HX7jql0g605A\").then(item => {\n   item = item.toObject()\n   item.system.specification.value = this.actor.characteristics.ag.value\n   this.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect : this.effect.id})\n})"
                 }
             },
@@ -547,7 +547,7 @@
             "effects": {
                 "dDctSBLOxCXM6uTF": {
                     "id": "dDctSBLOxCXM6uTF",
-                    "label": "Pancerz Eteru (Życie)",
+                    "name": "Pancerz Eteru (Życie)",
                     "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 1;\nAP[\"rArm\"].value += 1;\nAP[\"lArm\"].value += 1;\nAP[\"body\"].value += 1;\nAP[\"lLeg\"].value += 1;\nAP[\"rLeg\"].value += 1;"
                 }
             },
@@ -599,7 +599,7 @@
             "effects": {
                 "JXm1XYeumrZbROEj": {
                     "id": "JXm1XYeumrZbROEj",
-                    "label": "Pancerz Eteru (Zwierzęta)",
+                    "name": "Pancerz Eteru (Zwierzęta)",
                     "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 1;\nAP[\"rArm\"].value += 1;\nAP[\"lArm\"].value += 1;\nAP[\"body\"].value += 1;\nAP[\"lLeg\"].value += 1;\nAP[\"rLeg\"].value += 1;"
                 }
             },
@@ -633,7 +633,7 @@
             "effects": {
                 "caxzQfTuX9n9oJFk": {
                     "id": "caxzQfTuX9n9oJFk",
-                    "label": "Dekoncentracja (Demonologia)",
+                    "name": "Dekoncentracja (Demonologia)",
                     "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.MVI0lXcg6vvtooAF\")\nthis.actor.createEmbeddedDocuments(\"Item\", [item.toObject()], {fromEffect : this.effect.id})"
                 }
             },
@@ -658,8 +658,8 @@
             "effects": {
                 "GZYUi96n8vcnUb9G": {
                     "id": "GZYUi96n8vcnUb9G",
-                    "label": "Żrąca krew (Światło)",
-                    "script": "let content = `<b>${this.effect.label}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
+                    "name": "Żrąca krew (Światło)",
+                    "script": "let content = `<b>${this.effect.name}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -737,7 +737,7 @@
             "effects": {
                 "ZSGvMxczaTcygVrt": {
                     "id": "ZSGvMxczaTcygVrt",
-                    "label": "Lot",
+                    "name": "Lot",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.traits.EO05HX7jql0g605A\").then(item => {\n   item = item.toObject()\n   item.system.specification.value = this.actor.characteristics.ag.value\n   this.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect : this.effect.id})\n})"
                 }
             },
@@ -753,8 +753,8 @@
             "effects": {
                 "Jcn6S9AgpBdRx9jI": {
                     "id": "Jcn6S9AgpBdRx9jI",
-                    "label": "Żrąca krew (Niebiosa)",
-                    "script": "let content = `<b>${this.effect.label}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
+                    "name": "Żrąca krew (Niebiosa)",
+                    "script": "let content = `<b>${this.effect.name}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -814,7 +814,7 @@
             "effects": {
                 "cD3jmdr21YY45gQA": {
                     "id": "cD3jmdr21YY45gQA",
-                    "label": "Dekoncentracja (Cień)",
+                    "name": "Dekoncentracja (Cień)",
                     "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.MVI0lXcg6vvtooAF\")\nthis.actor.createEmbeddedDocuments(\"Item\", [item.toObject()], {fromEffect : this.effect.id})"
                 }
             },
@@ -848,7 +848,7 @@
             "effects": {
                 "miECAiZsYbFkZJwd": {
                     "id": "miECAiZsYbFkZJwd",
-                    "label": "Przypalenie",
+                    "name": "Przypalenie",
                     "script": "let roll = (await new Roll(\"1d10\").roll());\nroll.toMessage({flavor: \"Uleczone rany\", speaker : {alias : args.actor.name}});\n\nlet wounds = duplicate(args.actor.status.wounds);\nwounds.value += roll.total;\n\nif (wounds.value > wounds.max) {\n    wounds.value = wounds.max;\n}\n\nawait args.actor.update({\"system.status.wounds\" : wounds});\n\nlet bleeding = args.actor.hasCondition(\"bleeding\")\nif (bleeding) {\n    await args.actor.removeCondition(\"bleeding\", bleeding.flags.wfrp4e.value);\n}"
                 }
             },
@@ -873,12 +873,12 @@
             "effects": {
                 "Fs44PSPJ1je56N62": {
                     "id": "Fs44PSPJ1je56N62",
-                    "label": "Skóra z kory",
+                    "name": "Skóra z kory",
                     "script": "args.actor.characteristics.t.bonus += 2;\nargs.actor.characteristics.t.calculationBonusModifier -= 2;"
                 },
                 "qtClDATHbIL7tqjT": {
                     "id": "qtClDATHbIL7tqjT",
-                    "label": "Skóra z kory"
+                    "name": "Skóra z kory"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -956,8 +956,8 @@
             "effects": {
                 "c32DjCbePouMb7cz": {
                     "id": "c32DjCbePouMb7cz",
-                    "label": "Krew ziemi",
-                    "script": "let caster = await fromUuid(this.effect.origin);\nif (caster) {\n    let bonus = caster.characteristics.wp.bonus;\n    this.actor.modifyWounds(bonus);\n    ChatMessage.create({content: `${this.actor.prototypeToken.name} odzyskuje żywtność: ${bonus} (jeśli jest w kontakcie z ziemią)`, speaker : {alias : this.effect.label}})\n};"
+                    "name": "Krew ziemi",
+                    "script": "let caster = await fromUuid(this.effect.origin);\nif (caster) {\n    let bonus = caster.characteristics.wp.bonus;\n    this.actor.modifyWounds(bonus);\n    ChatMessage.create({content: `${this.actor.prototypeToken.name} odzyskuje żywtność: ${bonus} (jeśli jest w kontakcie z ziemią)`, speaker : {alias : this.effect.name}})\n};"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -972,7 +972,7 @@
             "effects": {
                 "TqTR2863RzMSKYQI": {
                     "id": "TqTR2863RzMSKYQI",
-                    "label": "Pochwycenie (Demonologia)",
+                    "name": "Pochwycenie (Demonologia)",
                     "script": "args.actor.addCondition(\"entangled\", {{result.overcast.other.current}})"
                 }
             },
@@ -1078,7 +1078,7 @@
             "effects": {
                 "i1zZu3NLRiCyXlLK": {
                     "id": "i1zZu3NLRiCyXlLK",
-                    "label": "Przerażający wygląd (Cień)",
+                    "name": "Przerażający wygląd (Cień)",
                     "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },
@@ -1094,7 +1094,7 @@
             "effects": {
                 "Mu3WnR09smrosiup": {
                     "id": "Mu3WnR09smrosiup",
-                    "label": "Pochwycenie (Śmierć)",
+                    "name": "Pochwycenie (Śmierć)",
                     "script": "args.actor.addCondition(\"entangled\", {{result.overcast.other.current}});"
                 }
             },
@@ -1119,7 +1119,7 @@
             "effects": {
                 "DqW2ksGOFVorEAWR": {
                     "id": "DqW2ksGOFVorEAWR",
-                    "label": "Straszny wygląd (Śmierć)",
+                    "name": "Straszny wygląd (Śmierć)",
                     "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 }
             },
@@ -1153,7 +1153,7 @@
             "effects": {
                 "Y2WsEoBoIBZjynji": {
                     "id": "Y2WsEoBoIBZjynji",
-                    "label": "Pochwycenie (Metal)",
+                    "name": "Pochwycenie (Metal)",
                     "script": "args.actor.addCondition(\"entangled\", {{result.overcast.other.current}});"
                 }
             },
@@ -1214,7 +1214,7 @@
             "effects": {
                 "1Go91fEPZPGcCuYW": {
                     "id": "1Go91fEPZPGcCuYW",
-                    "label": "Dekoncentrujący",
+                    "name": "Dekoncentrujący",
                     "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.MVI0lXcg6vvtooAF\")\nthis.actor.createEmbeddedDocuments(\"Item\", [item.toObject()], {fromEffect : this.effect.id})"
                 }
             },
@@ -1230,7 +1230,7 @@
             "effects": {
                 "X1I1tLDoMesU8nf1": {
                     "id": "X1I1tLDoMesU8nf1",
-                    "label": "Pochwycenie (Życie)",
+                    "name": "Pochwycenie (Życie)",
                     "script": "args.actor.addCondition(\"entangled\", {{result.overcast.other.current}});"
                 }
             },
@@ -1282,7 +1282,7 @@
             "effects": {
                 "VxgpVBMx8k8Q9jra": {
                     "id": "VxgpVBMx8k8Q9jra",
-                    "label": "Ognista korona",
+                    "name": "Ognista korona",
                     "script": "if (args.type == \"cast\" || args.type == \"channelling\") {\n   if (args.item.lore.value == \"fire\") {\n        args.prefillModifiers.modifier += 10\n   }\n}"
                 }
             },
@@ -1298,8 +1298,8 @@
             "effects": {
                 "2kqXlGN3vRYzGwUe": {
                     "id": "2kqXlGN3vRYzGwUe",
-                    "label": "Żrąca krew (Metal)",
-                    "script": "let content = `<b>${this.effect.label}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
+                    "name": "Żrąca krew (Metal)",
+                    "script": "let content = `<b>${this.effect.name}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -1323,7 +1323,7 @@
             "effects": {
                 "AaJb9eSWJVc9I0dG": {
                     "id": "AaJb9eSWJVc9I0dG",
-                    "label": "Straszny wygląd (Ogień)",
+                    "name": "Straszny wygląd (Ogień)",
                     "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 }
             },
@@ -1339,7 +1339,7 @@
             "effects": {
                 "Zdq7ThKolTWWRUXk": {
                     "id": "Zdq7ThKolTWWRUXk",
-                    "label": "Panika",
+                    "name": "Panika",
                     "script": "args.actor.addCondition(\"broken\");"
                 }
             },
@@ -1400,7 +1400,7 @@
             "effects": {
                 "ilqvsNpt1O1vIGBY": {
                     "id": "ilqvsNpt1O1vIGBY",
-                    "label": "Lot (Ogień)",
+                    "name": "Lot (Ogień)",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.traits.EO05HX7jql0g605A\").then(item => {\n   item = item.toObject()\n   item.system.specification.value = this.actor.characteristics.ag.value\n   this.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect : this.effect.id})\n})"
                 }
             },
@@ -1452,7 +1452,7 @@
             "effects": {
                 "1Go91fEPZPGcCuYW": {
                     "id": "1Go91fEPZPGcCuYW",
-                    "label": "Dekoncentrujący",
+                    "name": "Dekoncentrujący",
                     "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.MVI0lXcg6vvtooAF\")\nthis.actor.createEmbeddedDocuments(\"Item\", [item.toObject()], {fromEffect : this.effect.id})"
                 }
             },
@@ -1468,7 +1468,7 @@
             "effects": {
                 "e1I1JSceGuuribMq": {
                     "id": "e1I1JSceGuuribMq",
-                    "label": "Przerażający wygląd (Metal)",
+                    "name": "Przerażający wygląd (Metal)",
                     "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },
@@ -1547,7 +1547,7 @@
             "effects": {
                 "tbdnvlmuItgP5abc": {
                     "id": "tbdnvlmuItgP5abc",
-                    "label": "Dekoncentracja (Niebiosa)",
+                    "name": "Dekoncentracja (Niebiosa)",
                     "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.MVI0lXcg6vvtooAF\")\nthis.actor.createEmbeddedDocuments(\"Item\", [item.toObject()], {fromEffect : this.effect.id})"
                 }
             },
@@ -1635,7 +1635,7 @@
             "effects": {
                 "UW3d5MaZw81uZEnR": {
                     "id": "UW3d5MaZw81uZEnR",
-                    "label": "Mowa zwierząt",
+                    "name": "Mowa zwierząt",
                     "script": "if (args.type == \"skill\" && (args.item.name == game.i18n.localize(\"NAME.CharmAnimal\") || args.item.name.includes(game.i18n.localize(\"NAME.AnimalTraining\")))) {\n    args.prefillModifiers.modifier += 20;\n}"
                 }
             },
@@ -1654,7 +1654,7 @@
             "effects": {
                 "3x5jSYFsX8fx42oy": {
                     "id": "3x5jSYFsX8fx42oy",
-                    "label": "Pole cierniowe",
+                    "name": "Pole cierniowe",
                     "script": "if(this.actor.isOwner) { \nthis.actor.setupCharacteristic(\"ag\").then(async test => {\n    await test.roll();\n    if (test.result.outcome == \"failure\") {\n        await this.actor.addCondition(\"bleeding\");\n        await this.actor.addCondition(\"entangled\");\n    }\n}"
                 }
             }
@@ -1667,7 +1667,7 @@
             "effects": {
                 "B52dKwx9m9yq1GzC": {
                     "id": "B52dKwx9m9yq1GzC",
-                    "label": "Pochwycenie (Ogień)",
+                    "name": "Pochwycenie (Ogień)",
                     "script": "args.actor.addCondition(\"entangled\", {{result.overcast.other.current}});"
                 }
             },
@@ -1692,7 +1692,7 @@
             "effects": {
                 "Ng5BtXTn3qPCJLar": {
                     "id": "Ng5BtXTn3qPCJLar",
-                    "label": "Pancerz Eteru (Metal)",
+                    "name": "Pancerz Eteru (Metal)",
                     "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 1;\nAP[\"rArm\"].value += 1;\nAP[\"lArm\"].value += 1;\nAP[\"body\"].value += 1;\nAP[\"lLeg\"].value += 1;\nAP[\"rLeg\"].value += 1;"
                 }
             },
@@ -1717,7 +1717,7 @@
             "effects": {
                 "SC5vM7wSWVsnPRo7": {
                     "id": "SC5vM7wSWVsnPRo7",
-                    "label": "Lot (Demonologia)",
+                    "name": "Lot (Demonologia)",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.traits.EO05HX7jql0g605A\").then(item => {\n   item = item.toObject()\n   item.system.specification.value = this.actor.characteristics.ag.value\n   this.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect : this.effect.id})\n})"
                 }
             },
@@ -1760,7 +1760,7 @@
             "effects": {
                 "FyR5DAoHrTepIw8G": {
                     "id": "FyR5DAoHrTepIw8G",
-                    "label": "Porażenie",
+                    "name": "Porażenie",
                     "script": "args.actor.addCondition(\"stunned\")"
                 }
             },
@@ -1794,8 +1794,8 @@
             "effects": {
                 "MR4PjON8mQsetjl4": {
                     "id": "MR4PjON8mQsetjl4",
-                    "label": "Leczące światło",
-                    "script": "fromUuid(this.effect.origin).then(caster => {\n   if (caster) {\n       let healed= caster.characteristics.wp.bonus + caster.characteristics.int.bonus;\n       let wounds = duplicate(args.actor.status.wounds);\n       wounds.value+=healed;\n       if (wounds.value > wounds.max) {\n          wounds.value = wounds.max;\n       }\n       args.actor.update({\"system.status.wounds\" : wounds})\n       ChatMessage.create({content: `${this.actor.prototypeToken.name} odzyskuje punkty Żywotności: ${healed}`, speaker : {alias : this.effect.label}})\n   }\n})\n\nthis.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute : {difficulty : \"vhard\"}, context : {success : \"1 Punkt Zepsucia zdobyty w ostatniej godzinie zostaje usunięty.\", failure: \"nic się nie dzieje\"}}).then(async test => {\n   await test.roll();\n});"
+                    "name": "Leczące światło",
+                    "script": "fromUuid(this.effect.origin).then(caster => {\n   if (caster) {\n       let healed= caster.characteristics.wp.bonus + caster.characteristics.int.bonus;\n       let wounds = duplicate(args.actor.status.wounds);\n       wounds.value+=healed;\n       if (wounds.value > wounds.max) {\n          wounds.value = wounds.max;\n       }\n       args.actor.update({\"system.status.wounds\" : wounds})\n       ChatMessage.create({content: `${this.actor.prototypeToken.name} odzyskuje punkty Żywotności: ${healed}`, speaker : {alias : this.effect.name}})\n   }\n})\n\nthis.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute : {difficulty : \"vhard\"}, context : {success : \"1 Punkt Zepsucia zdobyty w ostatniej godzinie zostaje usunięty.\", failure: \"nic się nie dzieje\"}}).then(async test => {\n   await test.roll();\n});"
                 }
             },
             "duration": "Natychmiast",
@@ -1810,7 +1810,7 @@
             "effects": {
                 "ANinq8MojAZbYOvB": {
                     "id": "ANinq8MojAZbYOvB",
-                    "label": "Główny Cel",
+                    "name": "Główny Cel",
                     "script": "let applyAP = (args.damageType == game.wfrp4e.config.DAMAGE_TYPE.IGNORE_TB || args.damageType == game.wfrp4e.config.DAMAGE_TYPE.NORMAL);\nlet applyTB = (args.damageType == game.wfrp4e.config.DAMAGE_TYPE.IGNORE_AP || args.damageType == game.wfrp4e.config.DAMAGE_TYPE.NORMAL);\n\nif (applyAP) {\n   let AP = args.AP;\n   args.totalWoundLoss += AP.used;\n   let apIndex = args.messageElements.findIndex(i => i.includes(game.i18n.localize(\"AP\")));\n   args.messageElements[apIndex] = \"0/\" + AP.value + \" \" + game.i18n.localize(\"AP\");\n}\nargs.actor.addCondition(\"ablaze\", 2).then(() => { args.actor.addCondition(\"prone\"); });"
                 }
             },
@@ -1826,7 +1826,7 @@
             "effects": {
                 "7oLWNjhcKGn7ggII": {
                     "id": "7oLWNjhcKGn7ggII",
-                    "label": "Wrzeszcząca czaszka",
+                    "name": "Wrzeszcząca czaszka",
                     "script": "args.actor.setupSkill(game.i18n.localize(\"NAME.Cool\"), { context: { failure: \"Otrzymano stan @Condition[Panika]\", success: \"Obroniono się przed otrzymaniem Stanu @Condition[Panika]\" } }).then(async test => {\n   await test.roll();\n   if (test.result.outcome == \"failure\") {\n      await args.actor.addCondition(\"broken\")\n   }\n})"
                 }
             },
@@ -1842,7 +1842,7 @@
             "effects": {
                 "Qsgb0tC08K5bpuLL": {
                     "id": "Qsgb0tC08K5bpuLL",
-                    "label": "Pancerz Eteru (Światło)",
+                    "name": "Pancerz Eteru (Światło)",
                     "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 1;\nAP[\"rArm\"].value += 1;\nAP[\"lArm\"].value += 1;\nAP[\"body\"].value += 1;\nAP[\"lLeg\"].value += 1;\nAP[\"rLeg\"].value += 1;"
                 }
             },
@@ -1894,8 +1894,8 @@
             "effects": {
                 "XRM7FxEmLX5QBXmK": {
                     "id": "XRM7FxEmLX5QBXmK",
-                    "label": "Wyssanie życia",
-                    "script": "let applyAP = (args.damageType == game.wfrp4e.config.DAMAGE_TYPE.IGNORE_TB || args.damageType == game.wfrp4e.config.DAMAGE_TYPE.NORMAL);\nif (applyAP) {\n   let AP = args.AP;\n   args.totalWoundLoss += AP.used;\n   let apIndex = args.messageElements.findIndex(i => i.includes(game.i18n.localize(\"AP\")));\n   args.messageElements[apIndex] = \"0/\" + AP.value + \" \" + game.i18n.localize(\"AP\");\n}\n\nlet woundsGained = Math.min(args.actor.status.wounds.value, args.totalWoundLoss);\nwoundsGained = Math.ceil(woundsGained / 2);\nlet attackerWounds = duplicate(args.attacker.status.wounds);\nattackerWounds.value += woundsGained;\nif (attackerWounds.value >= attackerWounds.max) {\n    attackerWounds.value = attackerWounds.max;\n}\n\nargs.attacker.update({\"system.status.wounds\" : attackerWounds});\n\nawait args.actor.addCondition(\"fatigued\");\nawait args.attacker.removeCondition(\"fatigued\", 10);\n\nChatMessage.create({content: `<b>${args.attacker.prototypeToken.name}</b> otrzymuje punkty Żywotności: ${woundsGained}`, alias : {speaker : this.effect.label}});"
+                    "name": "Wyssanie życia",
+                    "script": "let applyAP = (args.damageType == game.wfrp4e.config.DAMAGE_TYPE.IGNORE_TB || args.damageType == game.wfrp4e.config.DAMAGE_TYPE.NORMAL);\nif (applyAP) {\n   let AP = args.AP;\n   args.totalWoundLoss += AP.used;\n   let apIndex = args.messageElements.findIndex(i => i.includes(game.i18n.localize(\"AP\")));\n   args.messageElements[apIndex] = \"0/\" + AP.value + \" \" + game.i18n.localize(\"AP\");\n}\n\nlet woundsGained = Math.min(args.actor.status.wounds.value, args.totalWoundLoss);\nwoundsGained = Math.ceil(woundsGained / 2);\nlet attackerWounds = duplicate(args.attacker.status.wounds);\nattackerWounds.value += woundsGained;\nif (attackerWounds.value >= attackerWounds.max) {\n    attackerWounds.value = attackerWounds.max;\n}\n\nargs.attacker.update({\"system.status.wounds\" : attackerWounds});\n\nawait args.actor.addCondition(\"fatigued\");\nawait args.attacker.removeCondition(\"fatigued\", 10);\n\nChatMessage.create({content: `<b>${args.attacker.prototypeToken.name}</b> otrzymuje punkty Żywotności: ${woundsGained}`, alias : {speaker : this.effect.name}});"
                 }
             },
             "duration": "Natychmiast",
@@ -1910,12 +1910,12 @@
             "effects": {
                 "IQxrQxWbfyyaEyJU": {
                     "id": "IQxrQxWbfyyaEyJU",
-                    "label": "Oślepienie",
+                    "name": "Oślepienie",
                     "script": "this.actor.addCondition(\"blinded\");"
                 },
                 "th43mvG7od8GUb2z": {
                     "id": "th43mvG7od8GUb2z",
-                    "label": "Oślepienie",
+                    "name": "Oślepienie",
                     "script": "this.actor.addCondition(\"blinded\");"
                 }
             },
@@ -1940,7 +1940,7 @@
             "effects": {
                 "mkOdaFPd9d8hNxy6": {
                     "id": "mkOdaFPd9d8hNxy6",
-                    "label": "Dekoncentracja (Nekromancja)",
+                    "name": "Dekoncentracja (Nekromancja)",
                     "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.MVI0lXcg6vvtooAF\")\nthis.actor.createEmbeddedDocuments(\"Item\", [item.toObject()], {fromEffect : this.effect.id})"
                 }
             },
@@ -1974,8 +1974,8 @@
             "effects": {
                 "2Zr7zsa34PprJO60": {
                     "id": "2Zr7zsa34PprJO60",
-                    "label": "Żrąca krew (Demonologia)",
-                    "script": "let content = `<b>${this.effect.label}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
+                    "name": "Żrąca krew (Demonologia)",
+                    "script": "let content = `<b>${this.effect.name}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -1990,7 +1990,7 @@
             "effects": {
                 "1hUlk6hithj4k5hy": {
                     "id": "1hUlk6hithj4k5hy",
-                    "label": "Przerażający wygląd (Światło)",
+                    "name": "Przerażający wygląd (Światło)",
                     "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },
@@ -2006,7 +2006,7 @@
             "effects": {
                 "w3c2vrbpu05qJ3kM": {
                     "id": "w3c2vrbpu05qJ3kM",
-                    "label": "Pochwycenie (Niebiosa)",
+                    "name": "Pochwycenie (Niebiosa)",
                     "script": "args.actor.addCondition(\"entangled\", {{result.overcast.other.current}});"
                 }
             },
@@ -2022,7 +2022,7 @@
             "effects": {
                 "FxzwwQXechXWjBRy": {
                     "id": "FxzwwQXechXWjBRy",
-                    "label": "Przerażający wygląd (Demonologia)",
+                    "name": "Przerażający wygląd (Demonologia)",
                     "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },
@@ -2038,7 +2038,7 @@
             "effects": {
                 "xkRZK1nvJTYpZY2l": {
                     "id": "xkRZK1nvJTYpZY2l",
-                    "label": "Pochwycenie (Cień)",
+                    "name": "Pochwycenie (Cień)",
                     "script": "args.actor.addCondition(\"entangled\", {{result.overcast.other.current}});"
                 }
             },
@@ -2054,7 +2054,7 @@
             "effects": {
                 "LBVsdeQ9YT4jcFFF": {
                     "id": "LBVsdeQ9YT4jcFFF",
-                    "label": "Przerażający wygląd",
+                    "name": "Przerażający wygląd",
                     "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },
@@ -2079,8 +2079,8 @@
             "effects": {
                 "ijAyrzxWflh17gvL": {
                     "id": "ijAyrzxWflh17gvL",
-                    "label": "Żrąca Krwa",
-                    "script": "let content = `<b>${this.effect.label}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
+                    "name": "Żrąca Krwa",
+                    "script": "let content = `<b>${this.effect.name}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -2122,7 +2122,7 @@
             "effects": {
                 "sjm8fc0fulE9DBm7": {
                     "id": "sjm8fc0fulE9DBm7",
-                    "label": "Dekoncentracja (Zwierzęta)",
+                    "name": "Dekoncentracja (Zwierzęta)",
                     "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.MVI0lXcg6vvtooAF\")\nthis.actor.createEmbeddedDocuments(\"Item\", [item.toObject()], {fromEffect : this.effect.id})"
                 }
             },
@@ -2174,7 +2174,7 @@
             "effects": {
                 "gZklxwWPUOJ8wsTE": {
                     "id": "gZklxwWPUOJ8wsTE",
-                    "label": "Pancerz Eteru (Cień)",
+                    "name": "Pancerz Eteru (Cień)",
                     "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 1;\nAP[\"rArm\"].value += 1;\nAP[\"lArm\"].value += 1;\nAP[\"body\"].value += 1;\nAP[\"lLeg\"].value += 1;\nAP[\"rLeg\"].value += 1;"
                 }
             },
@@ -2208,7 +2208,7 @@
             "effects": {
                 "ZSGvMxczaTcygVrt": {
                     "id": "ZSGvMxczaTcygVrt",
-                    "label": "Lot",
+                    "name": "Lot",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.traits.EO05HX7jql0g605A\").then(item => {\n   item = item.toObject()\n   item.system.specification.value = this.actor.characteristics.ag.value\n   this.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect : this.effect.id})\n})"
                 }
             },
@@ -2242,7 +2242,7 @@
             "effects": {
                 "ZSGvMxczaTcygVrt": {
                     "id": "ZSGvMxczaTcygVrt",
-                    "label": "Lot",
+                    "name": "Lot",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.traits.EO05HX7jql0g605A\").then(item => {\n   item = item.toObject()\n   item.system.specification.value = this.actor.characteristics.ag.value\n   this.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect : this.effect.id})\n})"
                 }
             },
@@ -2267,7 +2267,7 @@
             "effects": {
                 "TW00WnICgbMz2miu": {
                     "id": "TW00WnICgbMz2miu",
-                    "label": "Pancerz Eteru (Niebiosa)",
+                    "name": "Pancerz Eteru (Niebiosa)",
                     "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 1;\nAP[\"rArm\"].value += 1;\nAP[\"lArm\"].value += 1;\nAP[\"body\"].value += 1;\nAP[\"lLeg\"].value += 1;\nAP[\"rLeg\"].value += 1;"
                 }
             },
@@ -2328,8 +2328,8 @@
             "effects": {
                 "ep4NGWnLqAQEWNCv": {
                     "id": "ep4NGWnLqAQEWNCv",
-                    "label": "Żrąca krew (Życie)",
-                    "script": "let content = `<b>${this.effect.label}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
+                    "name": "Żrąca krew (Życie)",
+                    "script": "let content = `<b>${this.effect.name}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -2371,7 +2371,7 @@
             "effects": {
                 "jVocrS6Ewt0dQ7j6": {
                     "id": "jVocrS6Ewt0dQ7j6",
-                    "label": "Lot (Cień)",
+                    "name": "Lot (Cień)",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.traits.EO05HX7jql0g605A\").then(item => {\n   item = item.toObject()\n   item.system.specification.value = this.actor.characteristics.ag.value\n   this.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect : this.effect.id})\n})"
                 }
             },
@@ -2387,7 +2387,7 @@
             "effects": {
                 "KnqbWqGhxkJtTZjj": {
                     "id": "KnqbWqGhxkJtTZjj",
-                    "label": "Bursztynowa włócznia",
+                    "name": "Bursztynowa włócznia",
                     "script": "args.actor.addCondition(\"bleeding\");"
                 }
             },
@@ -2421,8 +2421,8 @@
             "effects": {
                 "uxJ68z65aa82x6lz": {
                     "id": "uxJ68z65aa82x6lz",
-                    "label": "Żrąca krew (Zwierzęta)",
-                    "script": "let content = `<b>${this.effect.label}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
+                    "name": "Żrąca krew (Zwierzęta)",
+                    "script": "let content = `<b>${this.effect.name}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -2446,7 +2446,7 @@
             "effects": {
                 "WCqVzFlHwMFOXeSJ": {
                     "id": "WCqVzFlHwMFOXeSJ",
-                    "label": "Dekoncentracja (Ogień)",
+                    "name": "Dekoncentracja (Ogień)",
                     "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.MVI0lXcg6vvtooAF\")\nthis.actor.createEmbeddedDocuments(\"Item\", [item.toObject()], {fromEffect : this.effect.id})"
                 }
             },
@@ -2561,7 +2561,7 @@
             "effects": {
                 "qztdckrvntmjpLW3": {
                     "id": "qztdckrvntmjpLW3",
-                    "label": "Przerażający wygląd (Niebiosa)",
+                    "name": "Przerażający wygląd (Niebiosa)",
                     "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },
@@ -2577,7 +2577,7 @@
             "effects": {
                 "kRuAJlNi891asvJ4": {
                     "id": "kRuAJlNi891asvJ4",
-                    "label": "Straszny wygląd (Cień)",
+                    "name": "Straszny wygląd (Cień)",
                     "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 }
             },
@@ -2602,7 +2602,7 @@
             "effects": {
                 "h0eBJ7aybKZoO6wd": {
                     "id": "h0eBJ7aybKZoO6wd",
-                    "label": "Straszny wygląd",
+                    "name": "Straszny wygląd",
                     "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 }
             },
@@ -2717,7 +2717,7 @@
             "effects": {
                 "eAPUB6aO9oHrZXf0": {
                     "id": "eAPUB6aO9oHrZXf0",
-                    "label": "Przerażający wygląd (Zwierzęta)",
+                    "name": "Przerażający wygląd (Zwierzęta)",
                     "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },
@@ -2733,7 +2733,7 @@
             "effects": {
                 "iDhfCzLVKQ90SdAN": {
                     "id": "iDhfCzLVKQ90SdAN",
-                    "label": "Wyssanie",
+                    "name": "Wyssanie",
                     "script": "let wounds = duplicate(args.attacker.status.wounds);\nwounds.value += 1;\n\nif (wounds.value > wounds.max) {\n   wounds.value = wounds.max;\n}\n\nargs.attacker.update({\"system.status.wounds\" : wounds});\nChatMessage.create({content: `${args.attacker.prototypeToken.name} recovers 1 Wound.`});"
                 }
             },
@@ -2749,7 +2749,7 @@
             "effects": {
                 "dmxjTmeEaw5bs1sw": {
                     "id": "dmxjTmeEaw5bs1sw",
-                    "label": "Natchnienie"
+                    "name": "Natchnienie"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -2791,7 +2791,7 @@
             "effects": {
                 "sEiW2jS2NdLcTeSo": {
                     "id": "sEiW2jS2NdLcTeSo",
-                    "label": "Pancerz Eteru (Śmierć)",
+                    "name": "Pancerz Eteru (Śmierć)",
                     "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 1;\nAP[\"rArm\"].value += 1;\nAP[\"lArm\"].value += 1;\nAP[\"body\"].value += 1;\nAP[\"lLeg\"].value += 1;\nAP[\"rLeg\"].value += 1;"
                 }
             },
@@ -2807,7 +2807,7 @@
             "effects": {
                 "LBVsdeQ9YT4jcFFF": {
                     "id": "LBVsdeQ9YT4jcFFF",
-                    "label": "Przerażający wygląd (Czarownictwo)",
+                    "name": "Przerażający wygląd (Czarownictwo)",
                     "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },
@@ -2823,12 +2823,12 @@
             "effects": {
                 "dThQOqhp4tned27Q": {
                     "id": "dThQOqhp4tned27Q",
-                    "label": "Pancerz z Ołowiu - nieobciążony",
+                    "name": "Pancerz z Ołowiu - nieobciążony",
                     "script": "this.actor.status.encumbrance.state = 0;\nthis.actor.status.encumbrance.pct = 0;"
                 },
                 "EDZYgEcsj41nykmR": {
                     "id": "EDZYgEcsj41nykmR",
-                    "label": "Pancerz z Ołowiu - przeciążony",
+                    "name": "Pancerz z Ołowiu - przeciążony",
                     "script": "this.actor.status.encumbrance.state += 2\nthis.actor.status.encumbrance.pct = 100;"
                 }
             },
@@ -2898,12 +2898,12 @@
             "effects": {
                 "3dcW4ets6FUgMbJr": {
                     "id": "3dcW4ets6FUgMbJr",
-                    "label": "Transmutacja (Pancerz)",
+                    "name": "Transmutacja (Pancerz)",
                     "script": "let AP = args.actor.status.armour\n\nAP[\"head\"].value += 1\nAP[\"rArm\"].value += 1\nAP[\"lArm\"].value += 1\nAP[\"body\"].value += 1\nAP[\"lLeg\"].value += 1\nAP[\"rLeg\"].value += 1"
                 },
                 "P9etlFW2PaP0Wsq5": {
                     "id": "P9etlFW2PaP0Wsq5",
-                    "label": "Transmutacja Chamonu",
+                    "name": "Transmutacja Chamonu",
                     "script": "let applyTB = (args.damageType == game.wfrp4e.config.DAMAGE_TYPE.IGNORE_AP || args.damageType == game.wfrp4e.config.DAMAGE_TYPE.NORMAL)\nif (applyTB) {\n   let TB = args.actor.characteristics.t.bonus\n   args.totalWoundLoss += TB\n   let apIndex = args.messageElements.findIndex(i => i.includes(game.i18n.localize(\"TB\")))\n   args.messageElements[apIndex] = \"0/\" + TB + \" \" + game.i18n.localize(\"TB\")\n}\n\nargs.actor.addCondition(\"blinded\")\nargs.actor.addCondition(\"deafened\")\nargs.actor.addCondition(\"stunned\")"
                 }
             },
@@ -2946,7 +2946,7 @@
             "effects": {
                 "WrO1HvuHzOuFR2f9": {
                     "id": "WrO1HvuHzOuFR2f9",
-                    "label": "Pancerz Eteru",
+                    "name": "Pancerz Eteru",
                     "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 1;\nAP[\"rArm\"].value += 1;\nAP[\"lArm\"].value += 1;\nAP[\"body\"].value += 1;\nAP[\"lLeg\"].value += 1;\nAP[\"rLeg\"].value += 1;"
                 }
             },
@@ -2980,7 +2980,7 @@
             "effects": {
                 "kprlc3puP6zIpw57": {
                     "id": "kprlc3puP6zIpw57",
-                    "label": "Pancerz Eteru (Demonologia)",
+                    "name": "Pancerz Eteru (Demonologia)",
                     "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 1;\nAP[\"rArm\"].value += 1;\nAP[\"lArm\"].value += 1;\nAP[\"body\"].value += 1;\nAP[\"lLeg\"].value += 1;\nAP[\"rLeg\"].value += 1;"
                 }
             },
@@ -3014,7 +3014,7 @@
             "effects": {
                 "7P2lVRPgSbVeIkmo": {
                     "id": "7P2lVRPgSbVeIkmo",
-                    "label": "Straszny wygląd (Demonologia)",
+                    "name": "Straszny wygląd (Demonologia)",
                     "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 }
             },
@@ -3048,7 +3048,7 @@
             "effects": {
                 "0TUeQSSRSy8U34xP": {
                     "id": "0TUeQSSRSy8U34xP",
-                    "label": "Straszny wygląd (Światło)",
+                    "name": "Straszny wygląd (Światło)",
                     "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 }
             },
@@ -3064,7 +3064,7 @@
             "effects": {
                 "Z6VVttxZkdCc7Iww": {
                     "id": "Z6VVttxZkdCc7Iww",
-                    "label": "Lot (Światło)",
+                    "name": "Lot (Światło)",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.traits.EO05HX7jql0g605A\").then(item => {\n   item = item.toObject()\n   item.system.specification.value = this.actor.characteristics.ag.value\n   this.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect : this.effect.id})\n})"
                 }
             },
@@ -3089,7 +3089,7 @@
             "effects": {
                 "KnZV2v47uujjJq0y": {
                     "id": "KnZV2v47uujjJq0y",
-                    "label": "Straszny wygląd (Życie)",
+                    "name": "Straszny wygląd (Życie)",
                     "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 }
             },
@@ -3105,7 +3105,7 @@
             "effects": {
                 "HEEMowxEAskvHTqI": {
                     "id": "HEEMowxEAskvHTqI",
-                    "label": "Lot (Życie)",
+                    "name": "Lot (Życie)",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.traits.EO05HX7jql0g605A\").then(item => {\n   item = item.toObject()\n   item.system.specification.value = this.actor.characteristics.ag.value\n   this.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect : this.effect.id})\n})"
                 }
             },
@@ -3130,12 +3130,12 @@
             "effects": {
                 "JNJyfmBZaCJw2ZVB": {
                     "id": "JNJyfmBZaCJw2ZVB",
-                    "label": "Zniszczenie pomniejszego demona",
+                    "name": "Zniszczenie pomniejszego demona",
                     "script": "if (this.actor.has(game.i18n.localize(\"NAME.Daemonic\"))) {\n   let caster = await fromUuid(this.effect.origin);\n   if (caster) {\n      let wp = caster.characteristics.wp\n      if (this.actor.characteristics.wp.value < wp.value) {\n         await this.actor.applyBasicDamage(wp.bonus, { damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL});\n      }\n   }\n}"
                 },
                 "poXtxybcRrubQAME": {
                     "id": "poXtxybcRrubQAME",
-                    "label": "Bonus do Atrybutu"
+                    "name": "Bonus do Atrybutu"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -3150,8 +3150,8 @@
             "effects": {
                 "ijAyrzxWflh17gvL": {
                     "id": "ijAyrzxWflh17gvL",
-                    "label": "Żrąca krew",
-                    "script": "let content = `<b>${this.effect.label}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
+                    "name": "Żrąca krew",
+                    "script": "let content = `<b>${this.effect.name}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -3202,7 +3202,7 @@
             "effects": {
                 "Z1OYYrhuIhG8t9kD": {
                     "id": "Z1OYYrhuIhG8t9kD",
-                    "label": "Dekoncentracja (Metal)",
+                    "name": "Dekoncentracja (Metal)",
                     "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.MVI0lXcg6vvtooAF\")\nthis.actor.createEmbeddedDocuments(\"Item\", [item.toObject()], {fromEffect : this.effect.id})"
                 }
             },
@@ -3218,7 +3218,7 @@
             "effects": {
                 "vFNbNjTgSXZNs0tV": {
                     "id": "vFNbNjTgSXZNs0tV",
-                    "label": "Skóra łowcy"
+                    "name": "Skóra łowcy"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -3233,7 +3233,7 @@
             "effects": {
                 "BYZhExaWoV0giDVw": {
                     "id": "BYZhExaWoV0giDVw",
-                    "label": "Dusiciel",
+                    "name": "Dusiciel",
                     "script": "args.actor.addCondition(\"fatigued\")"
                 }
             },
@@ -3258,8 +3258,8 @@
             "effects": {
                 "L20zbzBpxRd57Cdz": {
                     "id": "L20zbzBpxRd57Cdz",
-                    "label": "Żrąca krew (Ogień)",
-                    "script": "let content = `<b>${this.effect.label}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
+                    "name": "Żrąca krew (Ogień)",
+                    "script": "let content = `<b>${this.effect.name}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -3283,7 +3283,7 @@
             "effects": {
                 "mZeuk9vqhH1nn27h": {
                     "id": "mZeuk9vqhH1nn27h",
-                    "label": "Błyskawica T’Essli",
+                    "name": "Błyskawica T’Essli",
                     "script": "args.actor.addCondition(\"blinded\")"
                 }
             },
@@ -3308,7 +3308,7 @@
             "effects": {
                 "Yd3pH9h1bmXCe2He": {
                     "id": "Yd3pH9h1bmXCe2He",
-                    "label": "Oczyszczający płomień",
+                    "name": "Oczyszczający płomień",
                     "script": "args.actor.addCondition(\"ablaze\", {{SL}})"
                 }
             },
@@ -3324,7 +3324,7 @@
             "effects": {
                 "WrO1HvuHzOuFR2f9": {
                     "id": "WrO1HvuHzOuFR2f9",
-                    "label": "Pancerz Eteru",
+                    "name": "Pancerz Eteru",
                     "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 1;\nAP[\"rArm\"].value += 1;\nAP[\"lArm\"].value += 1;\nAP[\"body\"].value += 1;\nAP[\"lLeg\"].value += 1;\nAP[\"rLeg\"].value += 1;"
                 }
             },
@@ -3340,12 +3340,12 @@
             "effects": {
                 "RMBDRJucoaXolbJX": {
                     "id": "RMBDRJucoaXolbJX",
-                    "label": "Strach",
+                    "name": "Strach",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.traits.pTorrE0l3VybAbtn\").then(item => {\nitem = item.toObject()\nitem.system.specification.value = {{result.overcast.other.current}}\nthis.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect : this.effect.id})\n})"
                 },
                 "TQBQTcM5ZsdKnmHg": {
                     "id": "TQBQTcM5ZsdKnmHg",
-                    "label": "Purpurowy całun",
+                    "name": "Purpurowy całun",
                     "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += args.actor.characteristics.wp.bonus;\nAP[\"rArm\"].value += args.actor.characteristics.wp.bonus;\nAP[\"lArm\"].value += args.actor.characteristics.wp.bonus;\nAP[\"body\"].value += args.actor.characteristics.wp.bonus;\nAP[\"lLeg\"].value += args.actor.characteristics.wp.bonus;\nAP[\"rLeg\"].value += args.actor.characteristics.wp.bonus;"
                 }
             },
@@ -3397,8 +3397,8 @@
             "effects": {
                 "ZyISwBsXNEzt53l6": {
                     "id": "ZyISwBsXNEzt53l6",
-                    "label": "Żrąca krew (Śmierć)",
-                    "script": "let content = `<b>${this.effect.label}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
+                    "name": "Żrąca krew (Śmierć)",
+                    "script": "let content = `<b>${this.effect.name}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -3413,7 +3413,7 @@
             "effects": {
                 "8pi3tkafhSjeT3tQ": {
                     "id": "8pi3tkafhSjeT3tQ",
-                    "label": "Pochwycenie (Światło)",
+                    "name": "Pochwycenie (Światło)",
                     "script": "args.actor.addCondition(\"entangled\", {{result.overcast.other.current}})"
                 }
             },
@@ -3438,7 +3438,7 @@
             "effects": {
                 "kWZqFVvBilk0ychs": {
                     "id": "kWZqFVvBilk0ychs",
-                    "label": "Przerażający wygląd (Życie)",
+                    "name": "Przerażający wygląd (Życie)",
                     "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },
@@ -3517,7 +3517,7 @@
             "effects": {
                 "V1FjDZ9SQQbVNGFn": {
                     "id": "V1FjDZ9SQQbVNGFn",
-                    "label": "Przerażający wygląd (Nekromancja)",
+                    "name": "Przerażający wygląd (Nekromancja)",
                     "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },
@@ -3551,7 +3551,7 @@
             "effects": {
                 "WrO1HvuHzOuFR2f9": {
                     "id": "WrO1HvuHzOuFR2f9",
-                    "label": "Pancerz Eteru",
+                    "name": "Pancerz Eteru",
                     "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 1;\nAP[\"rArm\"].value += 1;\nAP[\"lArm\"].value += 1;\nAP[\"body\"].value += 1;\nAP[\"lLeg\"].value += 1;\nAP[\"rLeg\"].value += 1;"
                 }
             },
@@ -3567,7 +3567,7 @@
             "effects": {
                 "rkdNgKmock9JyCuI": {
                     "id": "rkdNgKmock9JyCuI",
-                    "label": "Pochwycenie",
+                    "name": "Pochwycenie",
                     "script": "args.actor.addCondition(\"entangled\", {{result.overcast.other.current}})"
                 }
             },
@@ -3583,7 +3583,7 @@
             "effects": {
                 "5d4TlRuekyu6xW2g": {
                     "id": "5d4TlRuekyu6xW2g",
-                    "label": "Wypędzenie",
+                    "name": "Wypędzenie",
                     "script": "fromUuid(this.effect.origin).then(caster=> {\n    if (caster&& (args.actor.has(game.i18n.localize(\"NAME.Undead\")) || args.actor.has(game.i18n.localize(\"NAME.Daemonic\"))))\n    {\n         let wp = caster.characteristics.wp.value\n         if (wp > args.actor.characteristics.t.value)\n         {\n             if (args.actor.has(game.i18n.localize(\"NAME.Unstable\")))\n             {\n                args.actor.update({\"system.status.wounds.value\" : 0})\n                args.actor.addCondition(\"dead\")\n             }\n             else\n             {\n                fromUuid(\"Compendium.wfrp4e-core.traits.D0ImWEIMSDgElsnl\").then(item => {\n                    args.actor.createEmbeddedDocuments(\"Item\", [item.toObject()], {fromEffect : this.effect.id})\n                    ChatMessage.create({content : `Added Unstable to ${args.actor.prototypeToken.name}`, speaker : {alias: caster.name}})\n                })\n             }\n         }\n    }\n })"
                 }
             },
@@ -3608,12 +3608,12 @@
             "effects": {
                 "gNLrxf0HKogk6Gqi": {
                     "id": "gNLrxf0HKogk6Gqi",
-                    "label": "Ograniczenie Punktów Szczęścia",
+                    "name": "Ograniczenie Punktów Szczęścia",
                     "script": "args.actor.status.fortune.value = 0"
                 },
                 "zFqJGepPilWiSBCm": {
                     "id": "zFqJGepPilWiSBCm",
-                    "label": "Klątwa pecha",
+                    "name": "Klątwa pecha",
                     "script": "args.prefillModifiers.modifier -= 10"
                 }
             },
@@ -3632,7 +3632,7 @@
             "effects": {
                 "KlqYluyUB2nxWM4W": {
                     "id": "KlqYluyUB2nxWM4W",
-                    "label": "Kosa żniwiarza",
+                    "name": "Kosa żniwiarza",
                     "script": "    let scythe = (await fromUuid(\"Compendium.wfrp4e-core.trappings.CXg7XOFJwu4LZ9LM\")).toObject();\n    scythe.name = \"Kosa żniwiarza\";\n    scythe.system.damage.value = \"Bonus SW + 3\"\n    scythe.system.equipped = true;\n    scythe.img = this.effect.icon\n    this.actor.createEmbeddedDocuments(\"Item\", [scythe], {fromEffect : this.effect.id})"
                 }
             }
@@ -3654,8 +3654,8 @@
             "effects": {
                 "oIkRPQkyEQkUxqWV": {
                     "id": "oIkRPQkyEQkUxqWV",
-                    "label": "Panaceum",
-                    "script": "fromUuid(this.effect.origin).then(caster => {\n   if (caster)\n   {\n       let healed= caster.characteristics.wp.bonus\n       let wounds = duplicate(args.actor.status.wounds)\n       wounds.value+=healed\n       \n       if (wounds.value > wounds.max)\n          wounds.value = wounds.max\n       \n       args.actor.update({\"system.status.wounds\" : wounds})\n       ChatMessage.create({content: `${this.actor.prototypeToken.name} odzyskuje Punkty Żywotności: ${healed}`, speaker : {alias : this.effect.label}})\n   }\n})"
+                    "name": "Panaceum",
+                    "script": "fromUuid(this.effect.origin).then(caster => {\n   if (caster)\n   {\n       let healed= caster.characteristics.wp.bonus\n       let wounds = duplicate(args.actor.status.wounds)\n       wounds.value+=healed\n       \n       if (wounds.value > wounds.max)\n          wounds.value = wounds.max\n       \n       args.actor.update({\"system.status.wounds\" : wounds})\n       ChatMessage.create({content: `${this.actor.prototypeToken.name} odzyskuje Punkty Żywotności: ${healed}`, speaker : {alias : this.effect.name}})\n   }\n})"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -3688,7 +3688,7 @@
             "effects": {
                 "dcp6z9mCAU5ekbcG": {
                     "id": "dcp6z9mCAU5ekbcG",
-                    "label": "Dekoncentracja (Życie)",
+                    "name": "Dekoncentracja (Życie)",
                     "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.MVI0lXcg6vvtooAF\")\nthis.actor.createEmbeddedDocuments(\"Item\", [item.toObject()], {fromEffect : this.effect.id})"
                 }
             },
@@ -3707,8 +3707,8 @@
             "effects": {
                 "UCY6gXI2WzgjrDhR": {
                     "id": "UCY6gXI2WzgjrDhR",
-                    "label": "Szpony furii",
-                    "script": "    let amberTalons = foundry.utils.deepClone(game.wfrp4e.config.systemItems.unarmed);\n    amberTalons.name = \"Szpony furii\";\n    amberTalons.system.damage.value = \"SB + WPB\"\n    amberTalons.system.equipped = true;\n    amberTalons.effects.push({\n        label : \"Szpony furii\",\n        transfer: false,\n        icon : \"modules/wfrp4e-core/icons/spells/amber-talons.png\" ,\n        flags : {\n          wfrp4e : {\n            effectApplication: \"damage\",\n            effectTrigger : \"applyDamage\",\n            hide : false,\n            preventDuplicateEffects: false,\n            script : \"if (args.totalWoundLoss >= 1)\\n{ \\n    args.actor.addCondition(\\\"bleeding\\\")\\n}\"\n          }\n        }\n      })\n    this.actor.createEmbeddedDocuments(\"Item\", [amberTalons])"
+                    "name": "Szpony furii",
+                    "script": "    let amberTalons = foundry.utils.deepClone(game.wfrp4e.config.systemItems.unarmed);\n    amberTalons.name = \"Szpony furii\";\n    amberTalons.system.damage.value = \"SB + WPB\"\n    amberTalons.system.equipped = true;\n    amberTalons.effects.push({\n        name : \"Szpony furii\",\n        transfer: false,\n        icon : \"modules/wfrp4e-core/icons/spells/amber-talons.png\" ,\n        flags : {\n          wfrp4e : {\n            effectApplication: \"damage\",\n            effectTrigger : \"applyDamage\",\n            hide : false,\n            preventDuplicateEffects: false,\n            script : \"if (args.totalWoundLoss >= 1)\\n{ \\n    args.actor.addCondition(\\\"bleeding\\\")\\n}\"\n          }\n        }\n      })\n    this.actor.createEmbeddedDocuments(\"Item\", [amberTalons])"
                 }
             }
         },
@@ -3738,7 +3738,7 @@
             "effects": {
                 "mpIzJHvcN4RSmTdr": {
                     "id": "mpIzJHvcN4RSmTdr",
-                    "label": "Lot (Śmierć)",
+                    "name": "Lot (Śmierć)",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.traits.EO05HX7jql0g605A\").then(item => {\n   item = item.toObject()\n   item.system.specification.value = this.actor.characteristics.ag.value\n   this.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect : this.effect.id})\n})"
                 }
             },
@@ -3763,7 +3763,7 @@
             "effects": {
                 "1Go91fEPZPGcCuYW": {
                     "id": "1Go91fEPZPGcCuYW",
-                    "label": "Dekoncentracja",
+                    "name": "Dekoncentracja",
                     "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.MVI0lXcg6vvtooAF\")\nthis.actor.createEmbeddedDocuments(\"Item\", [item.toObject()], {fromEffect : this.effect.id})"
                 }
             },
@@ -3783,7 +3783,7 @@
                 "H5WPfe1FHjeSkerA": {
                     "script": "let item;\ndebugger;\nlet items = []\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.rOV2s6PQBBrhpMOv\")\n{\n    let data = item.toObject();\n    items.push(data)\n}\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.VUJUZVN3VYhOaPjj\")\n{\n    let data = item.toObject();\n    data.system.specification.value = 2\n    items.push(data)\n}\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.GbDyBCu8ZjDp6dkj\")\n{\n    let data = item.toObject();\n    items.push(data)\n}\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.a8MC97PLzl10WocT\")\n{\n    let data = item.toObject();\n    items.push(data)\n}\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.pLW9SVX0TVTYPiPv\")\n{\n    let data = item.toObject();\n    data.system.specification.value = this.actor.system.characteristics.s.bonus + 1;\n    items.push(data)\n}\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.pTorrE0l3VybAbtn\")\n{\n    let data = item.toObject();\n    data.system.specification.value = 1;\n    items.push(data)\n}\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.fjd1u9VAgiYzhBRp\")\n{\n    let data = item.toObject();\n    items.push(data)\n}\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.mDgEMOoJpi8DkRYb\")\n{\n    let data = item.toObject();\n    items.push(data)\n}\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.AtpAudHA4ybXVlWM\")\n{\n    let data = item.toObject();\n    data.system.specification.value = this.actor.system.characteristics.s.bonus + 2;\n    items.push(data)\n}\n\nthis.actor.createEmbeddedDocuments(\"Item\", items, {fromEffect : this.effect.id})\n",
                     "id": "H5WPfe1FHjeSkerA",
-                    "label": "Dzika postać Wissana"
+                    "name": "Dzika postać Wissana"
                 }
             }
         },
@@ -3817,7 +3817,7 @@
                 "PN345hPPQdbkVjii": {
                     "script": "await args.actor.addCondition(\"blinded\");\nawait args.actor.addCondition(\"deafened\");\nawait args.actor.addCondition(\"fatigued\");",
                     "id": "PN345hPPQdbkVjii",
-                    "label": "Strefa zamętu"
+                    "name": "Strefa zamętu"
                 }
             }
         },
@@ -3838,7 +3838,7 @@
             "effects": {
                 "6q6juCHKRB8tK40c": {
                     "id": "6q6juCHKRB8tK40c",
-                    "label": "Drganie",
+                    "name": "Drganie",
                     "script": "args.actor.setupCharacteristic(\"dex\", {context : {failure : \"Upuszczenie Przedmiotu\"}}).then(async test => {\n      await test.roll();\n});"
                 }
             },
@@ -3863,7 +3863,7 @@
             "effects": {
                 "mPtrAwHjzrMPyL9o": {
                     "id": "mPtrAwHjzrMPyL9o",
-                    "label": "Lot (Niebiosa)",
+                    "name": "Lot (Niebiosa)",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.traits.EO05HX7jql0g605A\").then(item => {\n   item = item.toObject()\n   item.system.specification.value = this.actor.characteristics.ag.value\n   this.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect : this.effect.id})\n})"
                 }
             },
@@ -3897,7 +3897,7 @@
             "effects": {
                 "h0eBJ7aybKZoO6wd": {
                     "id": "h0eBJ7aybKZoO6wd",
-                    "label": "Straszny Wygląd",
+                    "name": "Straszny Wygląd",
                     "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 }
             },
@@ -3922,8 +3922,8 @@
             "effects": {
                 "5OfdCRheCpwJsYh2": {
                     "id": "5OfdCRheCpwJsYh2",
-                    "label": "Trzecie proroctwo Amul",
-                    "script": "let current = this.actor.status.fate.value;\nthis.actor.update({\"system.status.fate.value\" : current + 1});\nChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b>: zmiana liczby Punktów Przeznaczenia z ${current} na ${current + 1}`, speaker : {alias : this.effect.label}})"
+                    "name": "Trzecie proroctwo Amul",
+                    "script": "let current = this.actor.status.fate.value;\nthis.actor.update({\"system.status.fate.value\" : current + 1});\nChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b>: zmiana liczby Punktów Przeznaczenia z ${current} na ${current + 1}`, speaker : {alias : this.effect.name}})"
                 }
             },
             "duration": "Bonus I Rund",
@@ -4037,7 +4037,7 @@
             "effects": {
                 "oyPvSJ706ELzF7Qb": {
                     "id": "oyPvSJ706ELzF7Qb",
-                    "label": "Pieszczota Laniph",
+                    "name": "Pieszczota Laniph",
                     "script": "let applyAP = (args.damageType == game.wfrp4e.config.DAMAGE_TYPE.IGNORE_TB || args.damageType == game.wfrp4e.config.DAMAGE_TYPE.NORMAL);\nlet applyTB = (args.damageType == game.wfrp4e.config.DAMAGE_TYPE.IGNORE_AP || args.damageType == game.wfrp4e.config.DAMAGE_TYPE.NORMAL);\n\nif (applyAP) {\n   let AP = args.AP;\n   args.totalWoundLoss += AP.used;\n   let apIndex = args.messageElements.findIndex(i => i.includes(game.i18n.localize(\"AP\")));\n   args.messageElements[apIndex] = \"0/\" + AP.value + \" \" + game.i18n.localize(\"AP\");\n}\n\nif (applyTB) {\n   let TB = args.actor.characteristics.t.bonus;\n   args.totalWoundLoss += TB;\n   let apIndex = args.messageElements.findIndex(i => i.includes(game.i18n.localize(\"TB\")));\n   args.messageElements[apIndex] = \"0/\" + TB + \" \" + game.i18n.localize(\"TB\");\n}\nlet woundsGained = Math.min(args.totalWoundLoss, args.actor.status.wounds.value);\nwoundsGained = Math.floor(woundsGained / 2);\nlet attackerWounds = duplicate(args.attacker.status.wounds);\nattackerWounds.value += woundsGained;\nif (attackerWounds.value >= attackerWounds.max) {\n   attackerWounds.value = attackerWounds.max;\n}\nargs.attacker.update({ \"system.status.wounds\": attackerWounds });\nChatMessage.create({ content: `<b>${args.attacker.prototypeToken.name}</b> otrzymuje obrażenia: ${woundsGained}` });"
                 }
             },
@@ -4062,8 +4062,8 @@
             "effects": {
                 "ijAyrzxWflh17gvL": {
                     "id": "ijAyrzxWflh17gvL",
-                    "label": "Żrąca Krew",
-                    "script": "let content = `<b>${this.effect.label}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
+                    "name": "Żrąca Krew",
+                    "script": "let content = `<b>${this.effect.name}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -4087,7 +4087,7 @@
             "effects": {
                 "5dmiMrIZR4kWmxGe": {
                     "id": "5dmiMrIZR4kWmxGe",
-                    "label": "Lot (Nekromancja)",
+                    "name": "Lot (Nekromancja)",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.traits.EO05HX7jql0g605A\").then(item => {\n   item = item.toObject()\n   item.system.specification.value = this.actor.characteristics.ag.value\n   this.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect : this.effect.id})\n})"
                 }
             },
@@ -4121,7 +4121,7 @@
             "effects": {
                 "mBhha1Apy1vvBfxN": {
                     "id": "mBhha1Apy1vvBfxN",
-                    "label": "Dekoncentracja (Światło)",
+                    "name": "Dekoncentracja (Światło)",
                     "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.MVI0lXcg6vvtooAF\")\nthis.actor.createEmbeddedDocuments(\"Item\", [item.toObject()], {fromEffect : this.effect.id})"
                 }
             },
@@ -4182,7 +4182,7 @@
             "effects": {
                 "rkdNgKmock9JyCuI": {
                     "id": "rkdNgKmock9JyCuI",
-                    "label": "Pochwycenie",
+                    "name": "Pochwycenie",
                     "script": "args.actor.addCondition(\"entangled\", {{result.overcast.other.current}});"
                 }
             },
@@ -4207,7 +4207,7 @@
             "effects": {
                 "rkdNgKmock9JyCuI": {
                     "id": "rkdNgKmock9JyCuI",
-                    "label": "Pochwycenie",
+                    "name": "Pochwycenie",
                     "script": "args.actor.addCondition(\"entangled\", {{result.overcast.other.current}})"
                 }
             },
@@ -4304,12 +4304,12 @@
             "effects": {
                 "LLZJsIbfE5Y5fjYs": {
                     "id": "LLZJsIbfE5Y5fjYs",
-                    "label": "Niebiańska tarcza",
+                    "name": "Niebiańska tarcza",
                     "script": "if ((args.opposedTest.attackerTest.item && args.opposedTest.attackerTest.item.attackType == \"melee\") || (args.opposedTest.attackerTest.item && !args.opposedTest.attackerTest.item.name.includes(game.i18n.localise(\"NAME.TraitRanged\")))) {\n    args.actor.status.armour[args.opposedTest.result.hitloc.value].value += {{SL}};\n}"
                 },
                 "NKJv25t13M4KsYdE": {
                     "id": "NKJv25t13M4KsYdE",
-                    "label": "Niebiańskie Obrażenia",
+                    "name": "Niebiańskie Obrażenia",
                     "script": "if ((args.attackerTest.weapon && args.attackerTest.weapon.attackType == \"melee\") || (args.attackerTest.trait && !args.attackerTest.trait.name.includes(game.i18n.localize(\"NAME.TraitRanged\")))) {\n    let content = `<b>${args.attackerTest.actor.prototypeToken.name}</b> otrzymuje ${this.actor.characteristics.wp.bonus} Obrażeń od Niebiańskiej Tarczy jeśli używają metalowej broni.`\n    args.opposedTest.result.other.push(content);\n}"
                 }
             },
@@ -4352,7 +4352,7 @@
             "effects": {
                 "66ekfI3zFgYh6OkE": {
                     "id": "66ekfI3zFgYh6OkE",
-                    "label": "Straszny wygląd (Zwierzęta)",
+                    "name": "Straszny wygląd (Zwierzęta)",
                     "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 }
             },
@@ -4368,7 +4368,7 @@
             "effects": {
                 "r51ofNctJILNg4wn": {
                     "id": "r51ofNctJILNg4wn",
-                    "label": "Zdradliwość Tzeentcha",
+                    "name": "Zdradliwość Tzeentcha",
                     "script": "if (args.item.type == \"skill\")\n   args.item.system.advances.value = 0;\nif (args.item.type == \"talent\")\n    args.item.system.tests.value = \"\";\nif (args.item.type == \"weapon\")\n   args.item.system.qualities.value = [];"
                 }
             },
@@ -4384,7 +4384,7 @@
             "effects": {
                 "KAXAHr5NdusLTz6k": {
                     "id": "KAXAHr5NdusLTz6k",
-                    "label": "Struga zepsucia",
+                    "name": "Struga zepsucia",
                     "script": "if (args.totalWoundLoss > args.actor.characteristics.t.bonus)\n{\n  args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n    await test.roll()\n    if (test.result.outcome == \"failure\") {\n      let disease = await fromUuid(\"Compendium.wfrp4e-core.diseases.M8XyRs9DN12XsFTQ\")\n      disease = disease.toObject()\n      disease.system.duration.active = true\n      args.actor.createEmbeddedDocuments(\"Item\", [disease])\n    }\n  })\n}"
                 }
             },
@@ -4418,8 +4418,8 @@
             "effects": {
                 "2ZR0nyijw6fsufWi": {
                     "id": "2ZR0nyijw6fsufWi",
-                    "label": "Drugie proroctwo Amul",
-                    "script": "let fortunePoints = {{overcast.usage.other.current}}\nlet current = this.actor.status.fortune.value\n\nthis.actor.update({\"system.status.fortune.value\" : fortunePoints + current})\n\nChatMessage.create({content : `Zwiększono Punkty Szczęścia <b>${this.actor.prototypeToken.name}</b> z ${current} na ${fortunePoints + current}`, speaker : {alias : this.effect.label}})"
+                    "name": "Drugie proroctwo Amul",
+                    "script": "let fortunePoints = {{overcast.usage.other.current}}\nlet current = this.actor.status.fortune.value\n\nthis.actor.update({\"system.status.fortune.value\" : fortunePoints + current})\n\nChatMessage.create({content : `Zwiększono Punkty Szczęścia <b>${this.actor.prototypeToken.name}</b> z ${current} na ${fortunePoints + current}`, speaker : {alias : this.effect.name}})"
                 }
             },
             "duration": "Bonus I Rund",
@@ -4479,7 +4479,7 @@
             "effects": {
                 "ol8DlLQwPE4A9Xul": {
                     "id": "ol8DlLQwPE4A9Xul",
-                    "label": "Dobra wola",
+                    "name": "Dobra wola",
                     "script": "if (args.type == \"characteristic\" && args.item == \"fel\") {\n    if (args.item == \"fel\") {\n        args.prefillModifiers.modifier += 10;\n    }\n} else if (args.type == \"skill\") {\n    if (args.item.characteristic.key == \"fel\") {\n        args.prefillModifiers.modifier += 10;\n    }\n}"
                 }
             },
@@ -4495,7 +4495,7 @@
             "effects": {
                 "Wlcmo7UeUkUeMkdB": {
                     "id": "Wlcmo7UeUkUeMkdB",
-                    "label": "Lot (Zwierzęta)",
+                    "name": "Lot (Zwierzęta)",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.traits.EO05HX7jql0g605A\").then(item => {\n   item = item.toObject()\n   item.system.specification.value = this.actor.characteristics.ag.value\n   this.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect : this.effect.id})\n})"
                 }
             },
@@ -4520,8 +4520,8 @@
             "effects": {
                 "tlF4LFjOqoCv0Kpj": {
                     "id": "tlF4LFjOqoCv0Kpj",
-                    "label": "Żrąca krew (Nekromancja)",
-                    "script": "let content = `<b>${this.effect.label}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
+                    "name": "Żrąca krew (Nekromancja)",
+                    "script": "let content = `<b>${this.effect.name}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -4536,8 +4536,8 @@
             "effects": {
                 "WXWnl2mm3jPCTekB": {
                     "id": "WXWnl2mm3jPCTekB",
-                    "label": "Żrąca krew (Cień)",
-                    "script": "let content = `<b>${this.effect.label}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
+                    "name": "Żrąca krew (Cień)",
+                    "script": "let content = `<b>${this.effect.name}</b>: wszyscy aktorzy związani walką z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń zmodyfikowanych przez Bonus z Wytrzymałości i Pancerz.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
                 }
             },
             "duration": "Bonus SW Rund",
@@ -4561,7 +4561,7 @@
             "effects": {
                 "69xMx0Uu7OTUlERE": {
                     "id": "69xMx0Uu7OTUlERE",
-                    "label": "Pancerz Eteru (Ogień)",
+                    "name": "Pancerz Eteru (Ogień)",
                     "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 1;\nAP[\"rArm\"].value += 1;\nAP[\"lArm\"].value += 1;\nAP[\"body\"].value += 1;\nAP[\"lLeg\"].value += 1;\nAP[\"rLeg\"].value += 1;"
                 }
             },
@@ -4631,7 +4631,7 @@
             "effects": {
                 "h0eBJ7aybKZoO6wd": {
                     "id": "h0eBJ7aybKZoO6wd",
-                    "label": "Straszny Wygląd",
+                    "name": "Straszny Wygląd",
                     "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyFear(value, name)\n    })\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 }
             },
@@ -4683,7 +4683,7 @@
             "effects": {
                 "sKt0LZW6GhLfOIG0": {
                     "id": "sKt0LZW6GhLfOIG0",
-                    "label": "Pochwycenie (Zwierzęta)",
+                    "name": "Pochwycenie (Zwierzęta)",
                     "script": "args.actor.addCondition(\"entangled\", {{result.overcast.other.current}});"
                 }
             },
@@ -4708,7 +4708,7 @@
             "effects": {
                 "LBVsdeQ9YT4jcFFF": {
                     "id": "LBVsdeQ9YT4jcFFF",
-                    "label": "Przerażający Wygląd",
+                    "name": "Przerażający Wygląd",
                     "script": "let value = 1;\nlet name = this.actor.prototypeToken.name;\n\nif (game.user.isGM) {\n  if (game.user.targets.size) {\n    game.user.targets.forEach(t => {\n      t.actor.applyTerror(value, name)\n    });\n    game.user.updateTokenTargets([]);\n    game.user.broadcastActivity({targets: []});\n  }\n} else {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },

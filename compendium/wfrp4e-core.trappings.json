@@ -139,7 +139,7 @@
             "effects": {
                 "6pQrluba3OWBJgYI": {
                     "id": "6pQrluba3OWBJgYI",
-                    "label": "Czepiec kolczy",
+                    "name": "Czepiec kolczy",
                     "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Perception\")) {\n    args.prefillModifiers.modifier -= 10\n}"
                 }
             },
@@ -353,7 +353,7 @@
             "effects": {
                 "Sq1UQ9Xo4cuwWy2K": {
                     "id": "Sq1UQ9Xo4cuwWy2K",
-                    "label": "Dziwnokorzeń",
+                    "name": "Dziwnokorzeń",
                     "script": "if (args.type == \"characteristic\") {\n  if (args.item == \"wp\" || args.item == \"t\")\n    args.prefillModifiers.modifier += 10\n  else if (args.item == \"ag\" || args.item == \"i\" || args.item == \"int\")\n    args.prefillModifiers.modifier -= 10\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"wp\" || args.item.characteristic.key == \"t\")\n  args.prefillModifiers.modifier += 10\n  else if (args.item.characteristic.key == \"ag\" || args.item.characteristic.key == \"i\" || args.item.characteristic.key == \"int\")\n    args.prefillModifiers.modifier -= 10\n}\nelse if (args.type == \"cast\") {\n  args.prefillModifiers.modifier -= 10\n}\nelse if (args.type == \"channelling\") {\n  args.prefillModifiers.modifier += 10\n}"
                 }
             }
@@ -414,7 +414,7 @@
             "effects": {
                 "u46Xpql4mjj6JOD0": {
                     "id": "u46Xpql4mjj6JOD0",
-                    "label": "Płytowe Nagolenniki",
+                    "name": "Płytowe Nagolenniki",
                     "script": "if (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))) {\n    args.prefillModifiers.modifier -= 10;\n}"
                 }
             },
@@ -508,7 +508,7 @@
             "effects": {
                 "Vljt1mEPqTTJIIxs": {
                     "id": "Vljt1mEPqTTJIIxs",
-                    "label": "Hełm płytowy",
+                    "name": "Hełm płytowy",
                     "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Perception\")){\n   args.prefillModifiers.modifier -= 20;\n}"
                 }
             },
@@ -630,7 +630,7 @@
             "effects": {
                 "K7C1LFtqdLQ5bhFS": {
                     "id": "K7C1LFtqdLQ5bhFS",
-                    "label": "Mikstura lecznicza",
+                    "name": "Mikstura lecznicza",
                     "script": "let wounds = this.actor.status.wounds\nif (wounds.value == 0)\n  return ui.notifications.error(\"Brak efektu przy 0 punktach Żywotności\")\n\nui.notifications.notify(`Uleczone punkty Żywotności: ${this.actor.characteristics.t.bonus}`)\nthis.actor.modifyWounds(this.actor.characteristics.t.bonus)"
                 }
             }
@@ -793,11 +793,11 @@
             "effects": {
                 "TApb9RQHQJcksYYL": {
                     "id": "TApb9RQHQJcksYYL",
-                    "label": "Rozkosz Ranalda"
+                    "name": "Rozkosz Ranalda"
                 },
                 "vLMdJ6dsFuAAIee5": {
                     "id": "vLMdJ6dsFuAAIee5",
-                    "label": "Efekt po ustaniu rozkoszy Ranalda"
+                    "name": "Efekt po ustaniu rozkoszy Ranalda"
                 }
             }
         },
@@ -1034,7 +1034,7 @@
             "effects": {
                 "JGCSlLxbbXCPlkIY": {
                     "id": "JGCSlLxbbXCPlkIY",
-                    "label": "Salwort",
+                    "name": "Salwort",
                     "script": "let stunned= this.actor.hasCondition(\"stunned\")\nif (stunned)\n{\n   ui.notifications.notify(`Usunięto 1 Stan Oszołomienia`)\n   this.actor.removeCondition(\"stunned\", 1)\n}"
                 }
             }
@@ -1072,7 +1072,7 @@
             "effects": {
                 "rzyXt1SCCnDq5tnt": {
                     "id": "rzyXt1SCCnDq5tnt",
-                    "label": "Fakstoryl",
+                    "name": "Fakstoryl",
                     "script": "let bleeding = this.actor.hasCondition(\"bleeding\")\nif (bleeding)\n{\n   ui.notifications.notify(`Usunięte Stany Krawienia: ${bleeding.flags.wfrp4e.value}`)\n   this.actor.removeCondition(\"bleeding\", bleeding.flags.wfrp4e.value)\n}"
                 }
             }
@@ -1314,7 +1314,7 @@
             "effects": {
                 "YLns5DNubGbr27Lh": {
                     "id": "YLns5DNubGbr27Lh",
-                    "label": "Hełm Płytowy (Otwarty)",
+                    "name": "Hełm Płytowy (Otwarty)",
                     "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Perception\")) {\n   args.prefillModifiers.modifier -= 10;\n}"
                 }
             },
@@ -1388,7 +1388,7 @@
             "effects": {
                 "BRhiXQ6Pig4FoZlF": {
                     "id": "BRhiXQ6Pig4FoZlF",
-                    "label": "Ładunek zapalający",
+                    "name": "Ładunek zapalający",
                     "script": "let ablaze = {{SL}} + 1;\nawait args.actor.addCondition(\"ablaze\", ablaze);"
                 }
             },
@@ -1578,7 +1578,7 @@
             "effects": {
                 "9ArLjt6oQqMDFsDu": {
                     "id": "9ArLjt6oQqMDFsDu",
-                    "label": "Eliksir żywotności",
+                    "name": "Eliksir żywotności",
                     "script": "let fatigued= this.actor.hasCondition(\"fatigued\")\nif (fatigued)\n{\n   ui.notifications.notify(`Usunięte Stany Zmęczenia: ${fatigued.conditionValue}`)\n   this.actor.removeCondition(\"fatigued\", fatigued.conditionValue)\n}"
                 }
             }

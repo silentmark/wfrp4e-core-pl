@@ -17,7 +17,7 @@
             "effects": {
                 "MgpYZu22zgrLdxmf": {
                     "id": "MgpYZu22zgrLdxmf",
-                    "label": "Zerwane więzadło",
+                    "name": "Zerwane więzadło",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.injuries.qn4ZpvTQIX4rcJDl\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
                 }
             },
@@ -32,12 +32,12 @@
             "effects": {
                 "HgsptGxBG4CYhlk2": {
                     "id": "HgsptGxBG4CYhlk2",
-                    "label": "Cios w udo",
+                    "name": "Cios w udo",
                     "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"average\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}"
                 },
                 "LkPmb8RmlhPowqfB": {
                     "id": "LkPmb8RmlhPowqfB",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 }
             },
             "wounds": "2",
@@ -51,12 +51,12 @@
             "effects": {
                 "QaSpvCS9KAifTCNw": {
                     "id": "QaSpvCS9KAifTCNw",
-                    "label": "Złamany obojczyk",
+                    "name": "Złamany obojczyk",
                     "script": "fromUuid('Compendium.wfrp4e-core.injuries.EaqlLRQigwnsEAXX').then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
                 },
                 "yYBsiXJGftVmMEeQ": {
                     "id": "yYBsiXJGftVmMEeQ",
-                    "label": "Utrata Przytomności"
+                    "name": "Utrata Przytomności"
                 }
             },
             "wounds": "5",
@@ -70,7 +70,7 @@
             "effects": {
                 "megBKxKy2Xu8LoXg": {
                     "id": "megBKxKy2Xu8LoXg",
-                    "label": "Oślepienie",
+                    "name": "Oślepienie",
                     "description": "Testy związane ze wzrokiem"
                 }
             },
@@ -85,26 +85,26 @@
             "effects": {
                 "4o8C5gO5JrPMQy7V": {
                     "id": "4o8C5gO5JrPMQy7V",
-                    "label": "Ogłuszenie",
+                    "name": "Ogłuszenie",
                     "description": "Testy związane ze słuchem"
                 },
                 "AyoqSH1wIlPXFrdJ": {
                     "id": "AyoqSH1wIlPXFrdJ",
-                    "label": "Zmęczenie",
+                    "name": "Zmęczenie",
                     "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
                 },
                 "F77tiXuPleKy6QKB": {
                     "id": "F77tiXuPleKy6QKB",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 },
                 "TYzxQVbjCM2iyLVl": {
                     "id": "TYzxQVbjCM2iyLVl",
-                    "label": "Wstrząśnienie mózgu",
+                    "name": "Wstrząśnienie mózgu",
                     "script": "let roll = (await new Roll(\"1d10\").roll()).total;\nawait args.actor.addCondition(\"stunned\", roll);"
                 },
                 "zirzZTdRx8xz8RI6": {
                     "id": "zirzZTdRx8xz8RI6",
-                    "label": "Wstrząśnienie mózgu - Zmęczenie",
+                    "name": "Wstrząśnienie mózgu - Zmęczenie",
                     "script": "if (args.opposedTest.result.hitloc.value == \"head\" && (args.opposedTest.attackerTest.result.critical || args.actor.status.wounds.value - args.totalWoundLoss < 0)) {\n  if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), { absolute: { difficulty: \"average\" } }).then(async test => {\n      await test.roll();\n      if (test.result.outcome == \"failure\") {\n          await args.actor.addCondition(\"unconscious\");\n      }\n    });\n  }\n}"
                 }
             },
@@ -119,7 +119,7 @@
             "effects": {
                 "vGXj3JcQSik2Fof6": {
                     "id": "vGXj3JcQSik2Fof6",
-                    "label": "Zwichnięte kolano",
+                    "name": "Zwichnięte kolano",
                     "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"stunned\");\n        }\n     });\n}"
                 }
             },
@@ -134,21 +134,21 @@
             "effects": {
                 "348txVEUS8rth7YB": {
                     "id": "348txVEUS8rth7YB",
-                    "label": "Oszołomienie",
+                    "name": "Oszołomienie",
                     "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
                 },
                 "7j3RINGp5K4ejLTp": {
                     "id": "7j3RINGp5K4ejLTp",
-                    "label": "Oszpecający cios",
+                    "name": "Oszpecający cios",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.injuries.weczkAMPlTjX7lqU\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})\nfromUuid(\"Compendium.wfrp4e-core.injuries.SpPRZZRHxly7uo2G\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})"
                 },
                 "hawmXZ36uvoIAWpv": {
                     "id": "hawmXZ36uvoIAWpv",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 },
                 "waGy0xtIvPj1cT0D": {
                     "id": "waGy0xtIvPj1cT0D",
-                    "label": "Oślepienie",
+                    "name": "Oślepienie",
                     "description": "Testy związane ze wzrokiem"
                 }
             },
@@ -163,7 +163,7 @@
             "effects": {
                 "Ce9QAvROf94V16sJ": {
                     "id": "Ce9QAvROf94V16sJ",
-                    "label": "Wywichnięty bark",
+                    "name": "Wywichnięty bark",
                     "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n            await args.actor.addCondition(\"stunned\");\n        }\n     });\n}"
                 }
             },
@@ -178,7 +178,7 @@
             "effects": {
                 "9dEo6xx3LZwu32td": {
                     "id": "9dEo6xx3LZwu32td",
-                    "label": "Skręcona kostka",
+                    "name": "Skręcona kostka",
                     "script": "if (args.type == \"skill\" && args.item.characteristic.key == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}\nif (args.type == \"characteristic\" && args.item == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}"
                 }
             },
@@ -193,7 +193,7 @@
             "effects": {
                 "ixCa0FfjTQFA9Th6": {
                     "id": "ixCa0FfjTQFA9Th6",
-                    "label": "Zerwane ścięgno",
+                    "name": "Zerwane ścięgno",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.injuries.3S4OYOZLauXctmev\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n});\n\nif (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n     });\n}"
                 }
             },
@@ -208,16 +208,16 @@
             "effects": {
                 "1hf8KQbl7iZKhhzD": {
                     "id": "1hf8KQbl7iZKhhzD",
-                    "label": "Oszołomienie",
+                    "name": "Oszołomienie",
                     "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
                 },
                 "DRpsrtMYsEn6RXb4": {
                     "id": "DRpsrtMYsEn6RXb4",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 },
                 "zyFwXMjRg8797kTY": {
                     "id": "zyFwXMjRg8797kTY",
-                    "label": "Rozszarpany biceps",
+                    "name": "Rozszarpany biceps",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.injuries.qn4ZpvTQIX4rcJDl\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
                 }
             },
@@ -232,21 +232,21 @@
             "effects": {
                 "OV1vfh4PQRfDwofO": {
                     "id": "OV1vfh4PQRfDwofO",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 },
                 "r5t7w5lcG1iddbUt": {
                     "id": "r5t7w5lcG1iddbUt",
-                    "label": "Przecięte ścięgna",
+                    "name": "Przecięte ścięgna",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.injuries.k00PimCWkff11IA0\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
                 },
                 "URt2bkWmWumsEP1k": {
                     "id": "URt2bkWmWumsEP1k",
-                    "label": "Oszołomienie",
+                    "name": "Oszołomienie",
                     "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
                 },
                 "wVKOGkIJf8YblbFA": {
                     "id": "wVKOGkIJf8YblbFA",
-                    "label": "Powalenie",
+                    "name": "Powalenie",
                     "script": "args.prefillModifiers.modifier -= 20"
                 }
             },
@@ -261,11 +261,11 @@
             "effects": {
                 "2NSVzeLs6V2jWa8K": {
                     "id": "2NSVzeLs6V2jWa8K",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 },
                 "nlxBZY9R2qxa7bkC": {
                     "id": "nlxBZY9R2qxa7bkC",
-                    "label": "Paskudnie przecięty paluch",
+                    "name": "Paskudnie przecięty paluch",
                     "script": "if (this.actor.isOwner) {\n    this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n      await test.roll();\n      if (test.result.outcome == \"failure\") {\n          let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.ZhMADOqoo0y8Q9bx\");\n          this.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n          this.actor.deleteEmbeddedEntity(\"ActiveEffect\", this.effect._id);\n      }\n    });\n}"
                 }
             },
@@ -280,17 +280,17 @@
             "effects": {
                 "53D0C2BXQCCAMXSu": {
                     "id": "53D0C2BXQCCAMXSu",
-                    "label": "Poszarpane udo",
+                    "name": "Poszarpane udo",
                     "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n    });\n}"
                 },
                 "jYEOUXmmtfU0bnjS": {
                     "id": "jYEOUXmmtfU0bnjS",
-                    "label": "Poszarpane udo",
+                    "name": "Poszarpane udo",
                     "script": "if (args.opposedTest.result.hitloc.value == \"LEG_LOCATION_HERE\") { // rLeg or lLeg\n    args.actor.addCondition(\"bleeding\", 1);\n}"
                 },
                 "RorPd1gHCj5K5e5E": {
                     "id": "RorPd1gHCj5K5e5E",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 }
             },
             "wounds": "3",
@@ -304,12 +304,12 @@
             "effects": {
                 "GHwgHe9nIfj3RsTG": {
                     "id": "GHwgHe9nIfj3RsTG",
-                    "label": "Połamane żebra",
+                    "name": "Połamane żebra",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.injuries.QluSTTTq3viHJJUh\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
                 },
                 "vc2JuBUI00H1WZwf": {
                     "id": "vc2JuBUI00H1WZwf",
-                    "label": "Oszołomienie",
+                    "name": "Oszołomienie",
                     "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
                 }
             },
@@ -324,7 +324,7 @@
             "effects": {
                 "Xk9jhNPT42L2nloL": {
                     "id": "Xk9jhNPT42L2nloL",
-                    "label": "Skręcenie",
+                    "name": "Skręcenie",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.injuries.GlShFJF2TpsNh1FX\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
                 }
             },
@@ -339,12 +339,12 @@
             "effects": {
                 "g9ZNTiFKGxZBQkvT": {
                     "id": "g9ZNTiFKGxZBQkvT",
-                    "label": "Oszołomienie",
+                    "name": "Oszołomienie",
                     "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
                 },
                 "OipdUoeetMzgA4m9": {
                     "id": "OipdUoeetMzgA4m9",
-                    "label": "Złamana szczęka",
+                    "name": "Złamana szczęka",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.injuries.nbhn2wX35b7Jrcbg\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
                 }
             },
@@ -359,7 +359,7 @@
             "effects": {
                 "v0B4racbne2RYIqD": {
                     "id": "v0B4racbne2RYIqD",
-                    "label": "Dekapitacja",
+                    "name": "Dekapitacja",
                     "script": "await this.actor.addCondition(\"dead\");\nawait this.actor.setWounds(0);\nChatMessage.create({content: await game.wfrp4e.tables.formatChatRoll(\"scatter\")});"
                 }
             },
@@ -374,7 +374,7 @@
             "effects": {
                 "Bc6aSIrK2fSMoTBP": {
                     "id": "Bc6aSIrK2fSMoTBP",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 }
             },
             "wounds": "1",
@@ -388,21 +388,21 @@
             "effects": {
                 "2ngJlZ488J7L1sD7": {
                     "id": "2ngJlZ488J7L1sD7",
-                    "label": "Powalenie",
+                    "name": "Powalenie",
                     "script": "args.prefillModifiers.modifier -= 20"
                 },
                 "n4NWJIGZiDU9aWt4": {
                     "id": "n4NWJIGZiDU9aWt4",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 },
                 "rIF8c6C0BNeSjDv2": {
                     "id": "rIF8c6C0BNeSjDv2",
-                    "label": "Oszołomienie",
+                    "name": "Oszołomienie",
                     "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
                 },
                 "yZAbuVNb4ExBntt9": {
                     "id": "yZAbuVNb4ExBntt9",
-                    "label": "Odcięta stopa",
+                    "name": "Odcięta stopa",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.injuries.gz2xy41OSVZ8YBgI\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
                 }
             },
@@ -417,7 +417,7 @@
             "effects": {
                 "7a3L530CIhnX5cTl": {
                     "id": "7a3L530CIhnX5cTl",
-                    "label": "Ogłuszenie",
+                    "name": "Ogłuszenie",
                     "description": "Testy związane ze słuchem"
                 }
             },
@@ -432,7 +432,7 @@
             "effects": {
                 "AiDPNet52D6Mwycb": {
                     "id": "AiDPNet52D6Mwycb",
-                    "label": "Naderwane mięśnie pleców",
+                    "name": "Naderwane mięśnie pleców",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.injuries.eWPN3CV2Eddwz8aM\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
                 }
             },
@@ -447,7 +447,7 @@
             "effects": {
                 "JyeUMIMAfyK0ZjUn": {
                     "id": "JyeUMIMAfyK0ZjUn",
-                    "label": "Strzaskana miednica",
+                    "name": "Strzaskana miednica",
                     "script": "await this.actor.addCondition(\"dead\")"
                 }
             },
@@ -462,11 +462,11 @@
             "effects": {
                 "us244BgOUN1LRLnc": {
                     "id": "us244BgOUN1LRLnc",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 },
                 "zYfCX8Eq2VkRFhNI": {
                     "id": "zYfCX8Eq2VkRFhNI",
-                    "label": "Złamany nos",
+                    "name": "Złamany nos",
                     "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"stunned\")\n        }\n     });\n}"
                 }
             },
@@ -481,17 +481,17 @@
             "effects": {
                 "3rDSK76g1cKpmn40": {
                     "id": "3rDSK76g1cKpmn40",
-                    "label": "Oszołomienie",
+                    "name": "Oszołomienie",
                     "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
                 },
                 "6KtIpUxSWrqIewki": {
                     "id": "6KtIpUxSWrqIewki",
-                    "label": "Zmasakrowana dłoń",
+                    "name": "Zmasakrowana dłoń",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.injuries.SYjWiKDzMS6CtROJ\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
                 },
                 "lSn9Mr174doheAbo": {
                     "id": "lSn9Mr174doheAbo",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 }
             },
             "wounds": "5",
@@ -505,21 +505,21 @@
             "effects": {
                 "4G9KjSyQNM9UFOlS": {
                     "id": "4G9KjSyQNM9UFOlS",
-                    "label": "Oślepienie",
+                    "name": "Oślepienie",
                     "description": "Testy związane ze wzrokiem"
                 },
                 "jatRx58WzHQUA31m": {
                     "id": "jatRx58WzHQUA31m",
-                    "label": "Oszołomienie",
+                    "name": "Oszołomienie",
                     "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
                 },
                 "pSm6zIWXDFmFg3Zq": {
                     "id": "pSm6zIWXDFmFg3Zq",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 },
                 "SYIKc7QymcGfIwN9": {
                     "id": "SYIKc7QymcGfIwN9",
-                    "label": "Wybite oko",
+                    "name": "Wybite oko",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.injuries.weczkAMPlTjX7lqU\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
                 }
             },
@@ -534,11 +534,11 @@
             "effects": {
                 "DhFtbgaZVeqb8kaH": {
                     "id": "DhFtbgaZVeqb8kaH",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 },
                 "sTAtmClXjBUnD5VO": {
                     "id": "sTAtmClXjBUnD5VO",
-                    "label": "Oślepienie",
+                    "name": "Oślepienie",
                     "description": "Testy związane ze wzrokiem"
                 }
             },
@@ -553,11 +553,11 @@
             "effects": {
                 "fcr0kAJMhiUc1n7k": {
                     "id": "fcr0kAJMhiUc1n7k",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 },
                 "rKSl42ZfhRErzUTS": {
                     "id": "rKSl42ZfhRErzUTS",
-                    "label": "Ziejąca rana korpusu",
+                    "name": "Ziejąca rana korpusu",
                     "script": "if (args.opposedTest.result.hitloc.value == \"body\") {\n    args.actor.addCondition(\"bleeding\", 1);\n}"
                 }
             },
@@ -572,16 +572,16 @@
             "effects": {
                 "k8a0UhmO2dc0eg89": {
                     "id": "k8a0UhmO2dc0eg89",
-                    "label": "Oszołomienie",
+                    "name": "Oszołomienie",
                     "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
                 },
                 "MeryWEfxh1qfb4qD": {
                     "id": "MeryWEfxh1qfb4qD",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 },
                 "oScP7BQrypeVVVbf": {
                     "id": "oScP7BQrypeVVVbf",
-                    "label": "Bolesne cięcie",
+                    "name": "Bolesne cięcie",
                     "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n    });\n}"
                 }
             },
@@ -596,7 +596,7 @@
             "effects": {
                 "bpo2NXwpg23AKY9y": {
                     "id": "bpo2NXwpg23AKY9y",
-                    "label": "Poważna rana ucha",
+                    "name": "Poważna rana ucha",
                     "description": "Testy związane ze słuchem"
                 }
             },
@@ -611,11 +611,11 @@
             "effects": {
                 "HkPD4WDbEYIz83dy": {
                     "id": "HkPD4WDbEYIz83dy",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 },
                 "rG3wXUaHLNu7IcYO": {
                     "id": "rG3wXUaHLNu7IcYO",
-                    "label": "Odcięty palec",
+                    "name": "Odcięty palec",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.injuries.SYjWiKDzMS6CtROJ\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
                 }
             },
@@ -630,17 +630,17 @@
             "effects": {
                 "lanapxEmE0mai3mV": {
                     "id": "lanapxEmE0mai3mV",
-                    "label": "Rozerwana łydka",
+                    "name": "Rozerwana łydka",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.injuries.3S4OYOZLauXctmev\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})\n\nfromUuid(\"Compendium.wfrp4e-core.injuries.7mCcI3q7hgWcmbBU\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
                 },
                 "RW5eRZ7NxikYNagM": {
                     "id": "RW5eRZ7NxikYNagM",
-                    "label": "Oszołomienie",
+                    "name": "Oszołomienie",
                     "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
                 },
                 "YS3kViPKuIu9Aaif": {
                     "id": "YS3kViPKuIu9Aaif",
-                    "label": "Powalenie",
+                    "name": "Powalenie",
                     "script": "args.prefillModifiers.modifier -= 20"
                 }
             },
@@ -663,12 +663,12 @@
             "effects": {
                 "749ILWkBSZeetB7y": {
                     "id": "749ILWkBSZeetB7y",
-                    "label": "Oślepienie",
+                    "name": "Oślepienie",
                     "description": "Testy związane ze wzrokiem"
                 },
                 "dJsRgSNjJtohBYPc": {
                     "id": "dJsRgSNjJtohBYPc",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 }
             },
             "wounds": "3",
@@ -682,11 +682,11 @@
             "effects": {
                 "CwBoFiJqX5bc27F2": {
                     "id": "CwBoFiJqX5bc27F2",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 },
                 "SbOvAmqaK31JREjI": {
                     "id": "SbOvAmqaK31JREjI",
-                    "label": "Ogłuszenie",
+                    "name": "Ogłuszenie",
                     "description": "Testy związane ze słuchem"
                 }
             },
@@ -701,12 +701,12 @@
             "effects": {
                 "kub1YScTxM1VNLHK": {
                     "id": "kub1YScTxM1VNLHK",
-                    "label": "Paskudne cięcie",
+                    "name": "Paskudne cięcie",
                     "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}"
                 },
                 "MeZJb40J14iJng8X": {
                     "id": "MeZJb40J14iJng8X",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 }
             },
             "wounds": "3",
@@ -720,7 +720,7 @@
             "effects": {
                 "tyXuApNnqAV4JcJ5": {
                     "id": "tyXuApNnqAV4JcJ5",
-                    "label": "Zgruchotana dłoń",
+                    "name": "Zgruchotana dłoń",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.injuries.zyocWSzEZEC826NS\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})\n\nif (this.actor.isOwner) {\n args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n          await test.roll();\n          if (test.result.outcome == \"failure\") { \n               await args.actor.addCondition(\"prone\");\n               await args.actor.addCondition(\"stunned\");\n          }\n     });\n}"
                 }
             },
@@ -735,7 +735,7 @@
             "effects": {
                 "sw8YrBAP6gfhSTSH": {
                     "id": "sw8YrBAP6gfhSTSH",
-                    "label": "Zmiażdżony łokieć",
+                    "name": "Zmiażdżony łokieć",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.injuries.rlDZZTj5PXjuRXa2\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
                 }
             },
@@ -750,11 +750,11 @@
             "effects": {
                 "1WF2x6qda0OfmM8Y": {
                     "id": "1WF2x6qda0OfmM8Y",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 },
                 "bvNWTQ0W26esdMso": {
                     "id": "bvNWTQ0W26esdMso",
-                    "label": "Krwotok wewnętrzny",
+                    "name": "Krwotok wewnętrzny",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.diseases.M8XyRs9DN12XsFTQ\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
                 }
             },
@@ -769,12 +769,12 @@
             "effects": {
                 "1sDNirNcv4XZnubO": {
                     "id": "1sDNirNcv4XZnubO",
-                    "label": "Ziejąca rana ramienia",
+                    "name": "Ziejąca rana ramienia",
                     "script": "if (args.opposedTest.result.hitloc.value == \"ARM_LOCATION_HERE\") {// lArm or rArm\n    args.actor.addCondition(\"bleeding\", 1);\n}"
                 },
                 "7OVwCkJ6rgnfZn81": {
                     "id": "7OVwCkJ6rgnfZn81",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 }
             },
             "wounds": "3",
@@ -788,7 +788,7 @@
             "effects": {
                 "Du7cZodgpEKD8eK8": {
                     "id": "Du7cZodgpEKD8eK8",
-                    "label": "Rozpłatanie",
+                    "name": "Rozpłatanie",
                     "script": "await this.actor.addCondition(\"dead\")"
                 }
             },
@@ -803,7 +803,7 @@
             "effects": {
                 "qfUJIoRqhr1u8ODw": {
                     "id": "qfUJIoRqhr1u8ODw",
-                    "label": "Cios w krzyż",
+                    "name": "Cios w krzyż",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.injuries.7rBhIRo96Mydo0Cv\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
                 }
             },
@@ -818,7 +818,7 @@
             "effects": {
                 "jIlysiOZ0LFz6cgj": {
                     "id": "jIlysiOZ0LFz6cgj",
-                    "label": "Oślepienie",
+                    "name": "Oślepienie",
                     "description": "Testy związane ze wzrokiem"
                 }
             },
@@ -833,7 +833,7 @@
             "effects": {
                 "3hbs7SBwqUyfpvFs": {
                     "id": "3hbs7SBwqUyfpvFs",
-                    "label": "Poniżej pasa!",
+                    "name": "Poniżej pasa!",
                     "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"stunned\", 3);\n        }\n     });\n}"
                 }
             },
@@ -848,12 +848,12 @@
             "effects": {
                 "EwflBBAdP3PfmQzC": {
                     "id": "EwflBBAdP3PfmQzC",
-                    "label": "Oszołomienie",
+                    "name": "Oszołomienie",
                     "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
                 },
                 "WHjhLJT1O6cxIv8u": {
                     "id": "WHjhLJT1O6cxIv8u",
-                    "label": "Złamane biodro",
+                    "name": "Złamane biodro",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.injuries.QluSTTTq3viHJJUh\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})\nif (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}"
                 }
             },
@@ -868,12 +868,12 @@
             "effects": {
                 "9qPw0U171RIZCiO4": {
                     "id": "9qPw0U171RIZCiO4",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 },
                 "N5WsBzINexkLMQVY": {
                     "id": "N5WsBzINexkLMQVY",
-                    "label": "Rozkwaszone usta",
-                    "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.injuries.fBcZhOBn8IpoVqQ1\");\ninjury = item.toObject();\nlet teeth = (await new Roll(\"1d10\").roll()).total;\nChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b> stracił zęby w liczbie: ${teeth} `, speaker : {alias: this.effect.label}});\ninjury.system.location.value = `${teeth} ${injury.system.location.value}`;\nargs.actor.createEmbeddedDocuments(\"Item\", [injury]);"
+                    "name": "Rozkwaszone usta",
+                    "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.injuries.fBcZhOBn8IpoVqQ1\");\ninjury = item.toObject();\nlet teeth = (await new Roll(\"1d10\").roll()).total;\nChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b> stracił zęby w liczbie: ${teeth} `, speaker : {alias: this.effect.name}});\ninjury.system.location.value = `${teeth} ${injury.system.location.value}`;\nargs.actor.createEmbeddedDocuments(\"Item\", [injury]);"
                 }
             },
             "wounds": "4",
@@ -887,7 +887,7 @@
             "effects": {
                 "VJ0bwQJne0HNmtph": {
                     "id": "VJ0bwQJne0HNmtph",
-                    "label": "Oszołomienie",
+                    "name": "Oszołomienie",
                     "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
                 }
             },
@@ -902,12 +902,12 @@
             "effects": {
                 "XWadxhMkEKpv03Mk": {
                     "id": "XWadxhMkEKpv03Mk",
-                    "label": "Oszołomienie",
+                    "name": "Oszołomienie",
                     "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
                 },
                 "zdZncZOvjLblz909": {
                     "id": "zdZncZOvjLblz909",
-                    "label": "Strzaskana klatka piersiowa",
+                    "name": "Strzaskana klatka piersiowa",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.injuries.EaqlLRQigwnsEAXX\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
                 }
             },
@@ -922,22 +922,22 @@
             "effects": {
                 "0wiLtR9wzYfqn7kK": {
                     "id": "0wiLtR9wzYfqn7kK",
-                    "label": "Strzaskane kolano",
+                    "name": "Strzaskane kolano",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.injuries.2iult41Jehz0F1O8\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
                 },
                 "frTFfaHrrJxQMQvi": {
                     "id": "frTFfaHrrJxQMQvi",
-                    "label": "Oszołomienie",
+                    "name": "Oszołomienie",
                     "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
                 },
                 "VeT5PVDzmP96JWCM": {
                     "id": "VeT5PVDzmP96JWCM",
-                    "label": "Powalenie",
+                    "name": "Powalenie",
                     "script": "args.prefillModifiers.modifier -= 20"
                 },
                 "zn1gNVJsB6wLvLmH": {
                     "id": "zn1gNVJsB6wLvLmH",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 }
             },
             "wounds": "4",
@@ -959,11 +959,11 @@
             "effects": {
                 "1nNGzJZNKnuXr9W7": {
                     "id": "1nNGzJZNKnuXr9W7",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 },
                 "nWRttvafUnh1XIZU": {
                     "id": "nWRttvafUnh1XIZU",
-                    "label": "Zmiażdżona stopa",
+                    "name": "Zmiażdżona stopa",
                     "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), { absolute: { difficulty: \"average\" } }).then(async test => {\n      await test.roll();\n      if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n            let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.ZhMADOqoo0y8Q9bx\");\n            injury = injury.toObject();\n            injury.system.location.value = `${Math.clamped(Math.abs(test.result.SL) + 1, 1, 5)} ${injury.system.location.value}`\n            args.actor.createEmbeddedDocuments(\"Item\", [injury]);\n      }\n    });\n}"
                 }
             },
@@ -978,12 +978,12 @@
             "effects": {
                 "wAq76bdunkcb9wTw": {
                     "id": "wAq76bdunkcb9wTw",
-                    "label": "Oszołomienie",
+                    "name": "Oszołomienie",
                     "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
                 },
                 "WjHgjbRuh0M3H8g6": {
                     "id": "WjHgjbRuh0M3H8g6",
-                    "label": "Zmiażdżona żuchwa",
+                    "name": "Zmiażdżona żuchwa",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.injuries.hCadFsTRvLN9faaY\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})\n\nif (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n     });\n}"
                 }
             },
@@ -1006,7 +1006,7 @@
             "effects": {
                 "zZmnf7k6JvRb7ULV": {
                     "id": "zZmnf7k6JvRb7ULV",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 }
             },
             "wounds": "1",
@@ -1020,11 +1020,11 @@
             "effects": {
                 "4eZoTEFC5ZbQifn7": {
                     "id": "4eZoTEFC5ZbQifn7",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 },
                 "KSraZUHBV7dm7jom": {
                     "id": "KSraZUHBV7dm7jom",
-                    "label": "Rana brzucha",
+                    "name": "Rana brzucha",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb\").then(disease=> {\n args.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()])\n})"
                 }
             },
@@ -1039,17 +1039,17 @@
             "effects": {
                 "6FBVi7EOhHnDesA0": {
                     "id": "6FBVi7EOhHnDesA0",
-                    "label": "Oszołomienie",
+                    "name": "Oszołomienie",
                     "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
                 },
                 "jXnxVAZFV82gebaR": {
                     "id": "jXnxVAZFV82gebaR",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 },
                 "Ru3d8ZlbJSm8NlaU": {
                     "id": "Ru3d8ZlbJSm8NlaU",
-                    "label": "Zgruchotana szczęka",
-                    "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.fBcZhOBn8IpoVqQ1\");\ninjury = injury.toObject()\nlet teeth = (await new Roll(\"1d10\").roll()).total;\nChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b> stracił zęby w liczbie: ${teeth}`, speaker : {alias: this.effect.label}});\ninjury.system.location.value = `${teeth} ${injury.system.location.value}`;\nargs.actor.createEmbeddedDocuments(\"Item\", [injury]);\n\ninjury = await fromUuid(\"Compendium.wfrp4e-core.injuries.rkJA1DlK51QuRlJy\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n\ninjury = await fromUuid(\"Compendium.wfrp4e-core.injuries.hCadFsTRvLN9faaY\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n\nif (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n     });\n}"
+                    "name": "Zgruchotana szczęka",
+                    "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.injuries.fBcZhOBn8IpoVqQ1\");\ninjury = injury.toObject()\nlet teeth = (await new Roll(\"1d10\").roll()).total;\nChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b> stracił zęby w liczbie: ${teeth}`, speaker : {alias: this.effect.name}});\ninjury.system.location.value = `${teeth} ${injury.system.location.value}`;\nargs.actor.createEmbeddedDocuments(\"Item\", [injury]);\n\ninjury = await fromUuid(\"Compendium.wfrp4e-core.injuries.rkJA1DlK51QuRlJy\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n\ninjury = await fromUuid(\"Compendium.wfrp4e-core.injuries.hCadFsTRvLN9faaY\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n\nif (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n     });\n}"
                 }
             },
             "wounds": "5",
@@ -1063,7 +1063,7 @@
             "effects": {
                 "vIjf5xtB3kGSjrwR": {
                     "id": "vIjf5xtB3kGSjrwR",
-                    "label": "Stłuczone żebra",
+                    "name": "Stłuczone żebra",
                     "script": "if (args.type == \"skill\" && args.item.characteristic.key == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}\nif (args.type == \"characteristic\" && args.item == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}"
                 }
             },
@@ -1078,7 +1078,7 @@
             "effects": {
                 "hWDMK94Lo7Vlo7qF": {
                     "id": "hWDMK94Lo7Vlo7qF",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 }
             },
             "wounds": "2",
@@ -1092,12 +1092,12 @@
             "effects": {
                 "7JMNhRyCgMlmfLLK": {
                     "id": "7JMNhRyCgMlmfLLK",
-                    "label": "Uszkodzenie tętnicy",
+                    "name": "Uszkodzenie tętnicy",
                     "script": "if (args.opposedTest.result.hitloc.value == \"body\") {\n    args.actor.addCondition(\"bleeding\", 2);\n}"
                 },
                 "fcOYmx9WLncp95Sl": {
                     "id": "fcOYmx9WLncp95Sl",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 }
             },
             "wounds": "3",
@@ -1111,12 +1111,12 @@
             "effects": {
                 "AdMOpRguQRPZCjVm": {
                     "id": "AdMOpRguQRPZCjVm",
-                    "label": "Zerwane mięśnie",
+                    "name": "Zerwane mięśnie",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.injuries.GlShFJF2TpsNh1FX\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
                 },
                 "kYbKdoUQIYq3zSTN": {
                     "id": "kYbKdoUQIYq3zSTN",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 }
             },
             "wounds": "2",
@@ -1130,7 +1130,7 @@
             "effects": {
                 "d2Gh2PYEwe7NdMWQ": {
                     "id": "d2Gh2PYEwe7NdMWQ",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 }
             },
             "wounds": "1",
@@ -1144,12 +1144,12 @@
             "effects": {
                 "pnqEtu6lQlejU6CV": {
                     "id": "pnqEtu6lQlejU6CV",
-                    "label": "Zawadiacka rana",
+                    "name": "Zawadiacka rana",
                     "description": "Testy społeczne, na które wpłynie budząca szacunek blizna"
                 },
                 "TPyAKE9d05Y7HuxL": {
                     "id": "TPyAKE9d05Y7HuxL",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 }
             },
             "wounds": "1",
@@ -1163,7 +1163,7 @@
             "effects": {
                 "Uxp4sb58T0fiOXEB": {
                     "id": "Uxp4sb58T0fiOXEB",
-                    "label": "Stłuczony palec",
+                    "name": "Stłuczony palec",
                     "script": "if (args.type == \"skill\" && args.item.characteristic.key == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}\nif (args.type == \"characteristic\" && args.item == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}"
                 }
             },
@@ -1178,7 +1178,7 @@
             "effects": {
                 "yJmV5ry9bcyqV5fL": {
                     "id": "yJmV5ry9bcyqV5fL",
-                    "label": "Skręcone kolano",
+                    "name": "Skręcone kolano",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.injuries.3S4OYOZLauXctmev\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
                 }
             },
@@ -1193,7 +1193,7 @@
             "effects": {
                 "Te5ujLd9jiLGSVJr": {
                     "id": "Te5ujLd9jiLGSVJr",
-                    "label": "Odcięte ramię",
+                    "name": "Odcięte ramię",
                     "script": "await this.actor.addCondition(\"dead\")"
                 }
             },
@@ -1208,17 +1208,17 @@
             "effects": {
                 "5A8VfGUQYx8Q0M0G": {
                     "id": "5A8VfGUQYx8Q0M0G",
-                    "label": "Szybkość zmniejszona o połowę",
+                    "name": "Szybkość zmniejszona o połowę",
                     "script": "args.actor.details.move.value /= 2"
                 },
                 "NrZ8LRI1dsP46RmJ": {
                     "id": "NrZ8LRI1dsP46RmJ",
-                    "label": "Oszołomienie",
+                    "name": "Oszołomienie",
                     "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
                 },
                 "uaaFc96JlTCALmeJ": {
                     "id": "uaaFc96JlTCALmeJ",
-                    "label": "Bez tchu",
+                    "name": "Bez tchu",
                     "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"average\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}"
                 }
             },
@@ -1233,16 +1233,16 @@
             "effects": {
                 "m5CJfHO2ZfBORtkr": {
                     "id": "m5CJfHO2ZfBORtkr",
-                    "label": "Powalenie",
+                    "name": "Powalenie",
                     "script": "args.prefillModifiers.modifier -= 20"
                 },
                 "SlYdtHgMRI6vCztC": {
                     "id": "SlYdtHgMRI6vCztC",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 },
                 "xN966TmmV1zEtGy9": {
                     "id": "xN966TmmV1zEtGy9",
-                    "label": "Porąbana noga",
+                    "name": "Porąbana noga",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.injuries.7mCcI3q7hgWcmbBU\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})\n\nif (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"stunned\");\n        }\n     });\n}"
                 }
             },
@@ -1257,12 +1257,12 @@
             "effects": {
                 "3EKhg6lJsU12PXIN": {
                     "id": "3EKhg6lJsU12PXIN",
-                    "label": "Cios w bebechy",
+                    "name": "Cios w bebechy",
                     "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"easy\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}"
                 },
                 "cTrI8BgwwT6KbOcx": {
                     "id": "cTrI8BgwwT6KbOcx",
-                    "label": "Oszołomienie",
+                    "name": "Oszołomienie",
                     "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
                 }
             },
@@ -1285,7 +1285,7 @@
             "effects": {
                 "rtWfTN6wJ4BbJslf": {
                     "id": "rtWfTN6wJ4BbJslf",
-                    "label": "Zwichnięta kostka",
+                    "name": "Zwichnięta kostka",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.injuries.nF5z1OEhpi4t6a6S\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
                 }
             },
@@ -1300,7 +1300,7 @@
             "effects": {
                 "BjIyeZdTw8TPV9qC": {
                     "id": "BjIyeZdTw8TPV9qC",
-                    "label": "Nadwyrężone kolano",
+                    "name": "Nadwyrężone kolano",
                     "script": "if (args.type == \"skill\" && args.item.characteristic.key == \"ag\") {\n   args.prefillModifiers.modifier -= 20;\n}\nif (args.type == \"characteristic\" && args.item == \"ag\") {\n   args.prefillModifiers.modifier -= 20;\n}"
                 }
             },
@@ -1315,16 +1315,16 @@
             "effects": {
                 "AgeemYAqqhNVFHBz": {
                     "id": "AgeemYAqqhNVFHBz",
-                    "label": "Oszołomienie",
+                    "name": "Oszołomienie",
                     "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
                 },
                 "GlKd8FG7CTvU8JRC": {
                     "id": "GlKd8FG7CTvU8JRC",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 },
                 "nOCDyzwdMDX9kunm": {
                     "id": "nOCDyzwdMDX9kunm",
-                    "label": "Głębokie cięcie",
+                    "name": "Głębokie cięcie",
                     "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n    });\n}\n\nfromUuid(\"Compendium.wfrp4e-core.injuries.GlShFJF2TpsNh1FX\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})"
                 }
             },
@@ -1339,7 +1339,7 @@
             "effects": {
                 "UEnlvAwvGq0076To": {
                     "id": "UEnlvAwvGq0076To",
-                    "label": "Utrata równowagi",
+                    "name": "Utrata równowagi",
                     "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}"
                 }
             },
@@ -1354,7 +1354,7 @@
             "effects": {
                 "C28zNPsk79lesc2H": {
                     "id": "C28zNPsk79lesc2H",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 }
             },
             "wounds": "1",
@@ -1368,21 +1368,21 @@
             "effects": {
                 "0aCPrsOCLEVcZGxF": {
                     "id": "0aCPrsOCLEVcZGxF",
-                    "label": "Przecięte ścięgno",
+                    "name": "Przecięte ścięgno",
                     "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n     });\n}\n\nfromUuid(\"Compendium.wfrp4e-core.injuries.MnMZv7ZXoRqoH9dS\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})"
                 },
                 "3WIVf1QT93cut5OA": {
                     "id": "3WIVf1QT93cut5OA",
-                    "label": "Powalenie",
+                    "name": "Powalenie",
                     "script": "args.prefillModifiers.modifier -= 20"
                 },
                 "9FdeaoISEUYHNkxv": {
                     "id": "9FdeaoISEUYHNkxv",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 },
                 "9qQs2OvZgvHzRHix": {
                     "id": "9qQs2OvZgvHzRHix",
-                    "label": "Oszołomienie",
+                    "name": "Oszołomienie",
                     "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
                 }
             },
@@ -1397,17 +1397,17 @@
             "effects": {
                 "FZuPzqtWTtFMIciJ": {
                     "id": "FZuPzqtWTtFMIciJ",
-                    "label": "Ogłuszenie",
+                    "name": "Ogłuszenie",
                     "description": "Testy związane ze słuchem"
                 },
                 "kaAFU5cxgv0idSQZ": {
                     "id": "kaAFU5cxgv0idSQZ",
-                    "label": "Zgruchotane ucho",
+                    "name": "Zgruchotane ucho",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.injuries.8piWcBKFlQ2J1E3A\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
                 },
                 "lDs43plzT9i4Jxzb": {
                     "id": "lDs43plzT9i4Jxzb",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 }
             },
             "wounds": "4",
@@ -1421,7 +1421,7 @@
             "effects": {
                 "5EOJYNGGp4ZPXIGL": {
                     "id": "5EOJYNGGp4ZPXIGL",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 }
             },
             "wounds": "2",
@@ -1435,7 +1435,7 @@
             "effects": {
                 "sVTAurntsVHWamj6": {
                     "id": "sVTAurntsVHWamj6",
-                    "label": "Czyste złamanie",
+                    "name": "Czyste złamanie",
                     "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"difficult\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"stunned\");\n        }\n    });\n}\nfromUuid(\"Compendium.wfrp4e-core.injuries.4lj1ik958mbgAlaF\").then(injury => {\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})"
                 }
             },
@@ -1450,12 +1450,12 @@
             "effects": {
                 "pZD9xrlAHiaRru0d": {
                     "id": "pZD9xrlAHiaRru0d",
-                    "label": "Poważna rana klatki piersiowej",
+                    "name": "Poważna rana klatki piersiowej",
                     "script": "if (args.opposedTest.result.hitloc.value == \"body\") {\n    args.actor.addCondition(\"bleeding\", 2);\n}"
                 },
                 "T2qqXZGkwHjeIG23": {
                     "id": "T2qqXZGkwHjeIG23",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 }
             },
             "wounds": "4",
@@ -1469,11 +1469,11 @@
             "effects": {
                 "R8yyVjVN2G9uGe1Z": {
                     "id": "R8yyVjVN2G9uGe1Z",
-                    "label": "Krwawienie"
+                    "name": "Krwawienie"
                 },
                 "UGeKGGNmXVJAieTa": {
                     "id": "UGeKGGNmXVJAieTa",
-                    "label": "Uszkodzona tętnica",
+                    "name": "Uszkodzona tętnica",
                     "script": "if (args.opposedTest.result.hitloc.value == \"ARM_LOCATION_HERE\") { // lArm or rArm\n    args.actor.addCondition(\"bleeding\", 2);\n}"
                 }
             },

@@ -697,9 +697,9 @@ Hooks.on("setup", async function () {
 					symptom: true,
 					script: `
                             let difficulty = ""
-                            if (this.effect.label.includes("Umiarkowany"))
+                            if (this.effect.name.includes("Umiarkowany"))
                                 difficulty = "easy"
-                            else if (this.effect.label.includes("Poważny"))
+                            else if (this.effect.name.includes("Poważny"))
                                 difficulty = "average"
                             else
                                 difficulty = "veasy"
@@ -751,7 +751,7 @@ Hooks.on("setup", async function () {
 					symptom: true,
 					script: `
                             let modifier = 0
-                            if (this.effect.label.includes("Umiarkowany"))
+                            if (this.effect.name.includes("Umiarkowany"))
                                 modifier = -20
                             else
                                 modifier = -10

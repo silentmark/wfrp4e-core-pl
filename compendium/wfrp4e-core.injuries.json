@@ -18,11 +18,11 @@
             "effects": {
                 "tZayAMRUW6AVaa12": {
                     "id": "tZayAMRUW6AVaa12",
-                    "label": "Złamana Noga"
+                    "name": "Złamana Noga"
                 },
                 "ZwCU28eoOKqibVfu": {
                     "id": "ZwCU28eoOKqibVfu",
-                    "label": "Kara do Poruszania się",
+                    "name": "Kara do Poruszania się",
                     "script": "args.actor.details.move.value /= 2;"
                 }
             },
@@ -37,11 +37,11 @@
             "effects": {
                 "e5BPTZkHGMJuDX2p": {
                     "id": "e5BPTZkHGMJuDX2p",
-                    "label": "Naderwany Mięsień Nogi"
+                    "name": "Naderwany Mięsień Nogi"
                 },
                 "t1Anp3f9yR4IJqpR": {
                     "id": "t1Anp3f9yR4IJqpR",
-                    "label": "Kara do Poruszania się",
+                    "name": "Kara do Poruszania się",
                     "script": "args.actor.details.move.value /= 2;"
                 }
             },
@@ -55,7 +55,7 @@
             "effects": {
                 "s7ir53mI80aA1FGh": {
                     "id": "s7ir53mI80aA1FGh",
-                    "label": "Złamana Ręka",
+                    "name": "Złamana Ręka",
                     "description": "Dowolny wiążący się z użyciem dwóch rąk"
                 }
             },
@@ -70,12 +70,12 @@
             "effects": {
                 "DYDPqHfkDkbRBwqH": {
                     "id": "DYDPqHfkDkbRBwqH",
-                    "label": "Kara do Poruszania się",
+                    "name": "Kara do Poruszania się",
                     "script": "args.actor.details.move.value /= 2;"
                 },
                 "j9pWVPJtatDruv0Y": {
                     "id": "j9pWVPJtatDruv0Y",
-                    "label": "Złamana Noga"
+                    "name": "Złamana Noga"
                 }
             },
             "location": "Noga"
@@ -88,7 +88,7 @@
             "effects": {
                 "Aans92KGaO90qXGV": {
                     "id": "Aans92KGaO90qXGV",
-                    "label": "Naderwany Mięsień Tułowia"
+                    "name": "Naderwany Mięsień Tułowia"
                 }
             },
             "penalty": "-10 do Testów związanych z użyciem korpusu",
@@ -102,12 +102,12 @@
             "effects": {
                 "i6SjnYZ0pNeN8SNZ": {
                     "id": "i6SjnYZ0pNeN8SNZ",
-                    "label": "Utracone Ucho",
+                    "name": "Utracone Ucho",
                     "script": "if (args.type == \"characteristic\" && args.item == \"fel\"){\n  args.prefillModifiers.modifier -= 5;\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"fel\") {\n    args.prefillModifiers.modifier -= 5\n  }\n}"
                 },
                 "NjLgGWim2CMWdOL4": {
                     "id": "NjLgGWim2CMWdOL4",
-                    "label": "Utracone Oboje Uszu"
+                    "name": "Utracone Oboje Uszu"
                 }
             },
             "location": "Ucho"
@@ -120,12 +120,12 @@
             "effects": {
                 "l5W27AsBX8jj1T80": {
                     "id": "l5W27AsBX8jj1T80",
-                    "label": "Szybkość Zmniejszona o Połowę",
+                    "name": "Szybkość Zmniejszona o Połowę",
                     "script": "args.actor.details.move.value /= 2;"
                 },
                 "qIkF1AGNf4XxzaFv": {
                     "id": "qIkF1AGNf4XxzaFv",
-                    "label": "Złamane Żebra"
+                    "name": "Złamane Żebra"
                 }
             },
             "penalty": "-30 do Siły i Zręczności, połowa Szybkości.",
@@ -139,7 +139,7 @@
             "effects": {
                 "VczyyG2FDfvOQflT": {
                     "id": "VczyyG2FDfvOQflT",
-                    "label": "Naderwany Mięsień Tułowia"
+                    "name": "Naderwany Mięsień Tułowia"
                 }
             },
             "penalty": "-20 do Testów związanych z użyciem korpusu",
@@ -160,7 +160,7 @@
             "effects": {
                 "9rO0RdQJqsNwv9lv": {
                     "id": "9rO0RdQJqsNwv9lv",
-                    "label": "Naderwany Mięsień Ręki"
+                    "name": "Naderwany Mięsień Ręki"
                 }
             },
             "penalty": "-10 do testów dotyczących danej ręki",
@@ -174,11 +174,11 @@
             "effects": {
                 "QHpPBISp2DCIRZp7": {
                     "id": "QHpPBISp2DCIRZp7",
-                    "label": "Amputacja Stopy"
+                    "name": "Amputacja Stopy"
                 },
                 "vFwI36wK9QnfgLGG": {
                     "id": "vFwI36wK9QnfgLGG",
-                    "label": "Szybkość Zmniejszona o Połowę",
+                    "name": "Szybkość Zmniejszona o Połowę",
                     "script": "args.actor.details.move.value /= 2;"
                 }
             },
@@ -193,7 +193,7 @@
             "effects": {
                 "WLwNpLVQX79yOsdJ": {
                     "id": "WLwNpLVQX79yOsdJ",
-                    "label": "Pęknięta Czaszka",
+                    "name": "Pęknięta Czaszka",
                     "script": "if (args.type == \"cast\" || (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"Language\")))) {\n   args.prefillModifiers.modifier -= 30;\n}"
                 }
             },
@@ -207,12 +207,12 @@
             "effects": {
                 "p9uFm2XY1RGrjStF": {
                     "id": "p9uFm2XY1RGrjStF",
-                    "label": "Szybkość Zmniejszona o Połowę",
+                    "name": "Szybkość Zmniejszona o Połowę",
                     "script": "args.actor.details.move.value /= 2;"
                 },
                 "wkJy3QCy8odqGvjm": {
                     "id": "wkJy3QCy8odqGvjm",
-                    "label": "Amputacja Nogi"
+                    "name": "Amputacja Nogi"
                 }
             },
             "penalty": "-20 do testów związanych z ruchem, nie może unikać, połowa szybkości",
@@ -226,7 +226,7 @@
             "effects": {
                 "qPV4jIDGN9onOAYV": {
                     "id": "qPV4jIDGN9onOAYV",
-                    "label": "Amputacja Ramienia"
+                    "name": "Amputacja Ramienia"
                 }
             },
             "penalty": "-20 do Testów wiążący się z użyciem dwóch rąk",
@@ -240,7 +240,7 @@
             "effects": {
                 "WtbK1vMvsJYKBbWj": {
                     "id": "WtbK1vMvsJYKBbWj",
-                    "label": "Pęknięta Czaszka",
+                    "name": "Pęknięta Czaszka",
                     "script": "if (args.type == \"cast\" || (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"Language\")))) {\n   args.prefillModifiers.modifier -= 30;\n}"
                 }
             },
@@ -255,12 +255,12 @@
             "effects": {
                 "73XsH9pZ8Qymz0kN": {
                     "id": "73XsH9pZ8Qymz0kN",
-                    "label": "Szybkość Zmniejszona o Połowę",
+                    "name": "Szybkość Zmniejszona o Połowę",
                     "script": "args.actor.details.move.value /= 2;"
                 },
                 "ErAJc8kPnAwubY1m": {
                     "id": "ErAJc8kPnAwubY1m",
-                    "label": "Naderwany Mięsień Nogi"
+                    "name": "Naderwany Mięsień Nogi"
                 }
             },
             "penalty": "-10 do testów dotyczących danej nogi",
@@ -274,12 +274,12 @@
             "effects": {
                 "CPG7bDRJSqCHaCni": {
                     "id": "CPG7bDRJSqCHaCni",
-                    "label": "Kara do Poruszania się",
+                    "name": "Kara do Poruszania się",
                     "script": "args.actor.details.move.value /= 2;"
                 },
                 "YNacfIHrXFATBGcL": {
                     "id": "YNacfIHrXFATBGcL",
-                    "label": "Złamane Żebra"
+                    "name": "Złamane Żebra"
                 }
             },
             "penalty": "-30 do Siły i Zręczności, połowa Szybkości.",
@@ -293,7 +293,7 @@
             "effects": {
                 "GUbysJIeA44LNOIq": {
                     "id": "GUbysJIeA44LNOIq",
-                    "label": "Naderwany Mięsień Ręki"
+                    "name": "Naderwany Mięsień Ręki"
                 }
             },
             "penalty": "-20 do testów dotyczących danej ręki",
@@ -307,7 +307,7 @@
             "effects": {
                 "q2drpcrYvUHjZBwg": {
                     "id": "q2drpcrYvUHjZBwg",
-                    "label": "Naderwany Mięsień Szyi"
+                    "name": "Naderwany Mięsień Szyi"
                 }
             },
             "penalty": "-20 do testów wymagających ruchu głowy",
@@ -329,7 +329,7 @@
             "effects": {
                 "m1KbLc6l2LK76961": {
                     "id": "m1KbLc6l2LK76961",
-                    "label": "Złamana Ręka",
+                    "name": "Złamana Ręka",
                     "description": "Dowolny wiążący się z użyciem dwóch rąk"
                 }
             },
@@ -344,7 +344,7 @@
             "effects": {
                 "OTeQYlJcacd8ID4i": {
                     "id": "OTeQYlJcacd8ID4i",
-                    "label": "Amputacja Nosa"
+                    "name": "Amputacja Nosa"
                 }
             },
             "penalty": "-20 do Ogłady, -30 do Testów wymagających węchu",
@@ -358,7 +358,7 @@
             "effects": {
                 "DaOXNCrHEMsOleGx": {
                     "id": "DaOXNCrHEMsOleGx",
-                    "label": "Utracony Palec"
+                    "name": "Utracony Palec"
                 }
             },
             "penalty": "-5 do testów wymagających danej ręki",
@@ -372,7 +372,7 @@
             "effects": {
                 "y2XL7QrWlGI6aloz": {
                     "id": "y2XL7QrWlGI6aloz",
-                    "label": "Naderwany Mięsień Szyi"
+                    "name": "Naderwany Mięsień Szyi"
                 }
             },
             "location": "Głowa"
@@ -385,12 +385,12 @@
             "effects": {
                 "HK53YUZJx5byXmup": {
                     "id": "HK53YUZJx5byXmup",
-                    "label": "Utracone Oboje Oczu",
+                    "name": "Utracone Oboje Oczu",
                     "description": "Testy związane ze wzrokiem"
                 },
                 "OBcPvTtXweBfzAaU": {
                     "id": "OBcPvTtXweBfzAaU",
-                    "label": "Utracone Oko",
+                    "name": "Utracone Oko",
                     "script": "if (args.type == \"characteristic\" && args.item == \"fel\") {\n  args.prefillModifiers.modifier -= 5;\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"fel\") {\n    args.prefillModifiers.modifier -= 5;\n  }\n}"
                 }
             },
@@ -405,7 +405,7 @@
             "effects": {
                 "n47pJamskjv7bbXl": {
                     "id": "n47pJamskjv7bbXl",
-                    "label": "Amputacja Palca u nóg"
+                    "name": "Amputacja Palca u nóg"
                 }
             },
             "location": "Palce u nogi"
@@ -418,7 +418,7 @@
             "effects": {
                 "rTIWkLVhHcMduvPJ": {
                     "id": "rTIWkLVhHcMduvPJ",
-                    "label": "Amputacja Dłoni"
+                    "name": "Amputacja Dłoni"
                 }
             },
             "penalty": "-20 do Testów wiążący się z użyciem dwóch rąk",

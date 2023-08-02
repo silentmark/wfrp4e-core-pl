@@ -18,7 +18,7 @@
             "effects": {
                 "SVUtglybdq15RZEK": {
                     "id": "SVUtglybdq15RZEK",
-                    "label": "Artylerzysta",
+                    "name": "Artylerzysta",
                     "script": "if (args.options.reload && args.options.weapon && args.options.weapon.weaponGroup.value == \"blackpowder\") {\n   args.prefillModifiers.slBonus += 1\n}"
                 }
             }
@@ -31,7 +31,7 @@
             "effects": {
                 "IRRiQjVGZiHjLnxt": {
                     "id": "IRRiQjVGZiHjLnxt",
-                    "label": "Groźny",
+                    "name": "Groźny",
                     "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Intimidate\")) {\n    args.prefillModifiers.slBonus += 1;\n}",
                     "description": "Zastraszanie"
                 }
@@ -74,7 +74,7 @@
             "effects": {
                 "mqSUg3ORIh2YCotB": {
                     "id": "mqSUg3ORIh2YCotB",
-                    "label": "Zmysł Magii",
+                    "name": "Zmysł Magii",
                     "script": "// Remove the miscast if doubles rolled and succeeded\nif(args.test.result.outcome == \"success\" && args.test.result.minormis && args.test.result.roll % 11 == 0) {\n    delete args.test.result.minormis\n}\n// Decrement the major miscast to minor miscast\nelse if(args.test.result.outcome == \"success\" && args.test.result.majormis && args.test.result.roll % 11 == 0) {\n    delete args.test.result.majormis;\n    args.test.result.minormis = game.i18n.localize(\"ROLL.MinorMis\");\n}"
                 }
             },
@@ -102,7 +102,7 @@
             "effects": {
                 "NznDJLYiqbwPzhZt": {
                     "id": "NznDJLYiqbwPzhZt",
-                    "label": "Cios Poniżej Pasa",
+                    "name": "Cios Poniżej Pasa",
                     "script": "if (args.item.type == \"weapon\" && args.item.weaponGroup.value == \"brawling\") {\n    args.item.damage.value += \" + 1\";\n}"
                 }
             },
@@ -129,8 +129,8 @@
             "effects": {
                 "oAsvKkgS9pLtavj7": {
                     "id": "oAsvKkgS9pLtavj7",
-                    "label": "Przekonujący",
-                    "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Charm\") &&  (args.test.result.roll <= 5 || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop())\n   if (ones > SL) {\n     args.test.result.other.push(`<b>${this.effect.label}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS podczas dyskusji lub debaty.`);\n   }\n}"
+                    "name": "Przekonujący",
+                    "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Charm\") &&  (args.test.result.roll <= 5 || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop())\n   if (ones > SL) {\n     args.test.result.other.push(`<b>${this.effect.name}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS podczas dyskusji lub debaty.`);\n   }\n}"
                 }
             },
             "tests": "Test Charyzmy, gdy prowadzisz debatę lub się z kimś spierasz na argumenty"
@@ -150,7 +150,7 @@
             "effects": {
                 "1FkIE179oDa65hOI": {
                     "id": "1FkIE179oDa65hOI",
-                    "label": "Silny Cios",
+                    "name": "Silny Cios",
                     "script": "args.actor.flags.meleeDamageIncrease += 1;"
                 }
             }
@@ -191,7 +191,7 @@
             "effects": {
                 "o9nh6cysRfyobzdc": {
                     "id": "o9nh6cysRfyobzdc",
-                    "label": "Strzelec Wyborowy"
+                    "name": "Strzelec Wyborowy"
                 }
             }
         },
@@ -210,8 +210,8 @@
             "effects": {
                 "pq0wuLa5jebvLTGR": {
                     "id": "pq0wuLa5jebvLTGR",
-                    "label": "Atrakcyjny",
-                    "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Charm\") &&  (args.test.result.roll <= 5 || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop())\n   if (ones > SL)\n      args.test.result.other.push(`<b>${this.effect.label}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS jeśli cel testu uważa postać za pociągającą.`)\n}"
+                    "name": "Atrakcyjny",
+                    "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Charm\") &&  (args.test.result.roll <= 5 || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop())\n   if (ones > SL)\n      args.test.result.other.push(`<b>${this.effect.name}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS jeśli cel testu uważa postać za pociągającą.`)\n}"
                 }
             },
             "tests": "Charyzma, by wpłynąć na tych, którym się podobasz"
@@ -245,7 +245,7 @@
             "effects": {
                 "nwmflkSKJ3gH7INJ": {
                     "id": "nwmflkSKJ3gH7INJ",
-                    "label": "Szybkie Przeładowanie",
+                    "name": "Szybkie Przeładowanie",
                     "script": "if (args.options.reload && args.options.weapon) {\n   args.prefillModifiers.slBonus += 1;\n}"
                 }
             }
@@ -265,7 +265,7 @@
             "effects": {
                 "iT6aqNkxEikCpTEY": {
                     "id": "iT6aqNkxEikCpTEY",
-                    "label": "Zręczny"
+                    "name": "Zręczny"
                 }
             }
         },
@@ -277,7 +277,7 @@
             "effects": {
                 "TFSgPCFx1KpFepgz": {
                     "id": "TFSgPCFx1KpFepgz",
-                    "label": "Towarzyski",
+                    "name": "Towarzyski",
                     "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Gossip\")) {\n    args.test.preData.canReverse = true;\n}"
                 }
             },
@@ -354,7 +354,7 @@
             "effects": {
                 "SjJdt6yUkEkPqDgF": {
                     "id": "SjJdt6yUkEkPqDgF",
-                    "label": "Szybkobiegacz",
+                    "name": "Szybkobiegacz",
                     "script": "args.actor.details.move.run += 4;"
                 }
             },
@@ -368,8 +368,8 @@
             "effects": {
                 "S487mwxmDJh9rULA": {
                     "id": "S487mwxmDJh9rULA",
-                    "label": "Pomocny",
-                    "script": "if (args.test.item && args.test.characteristicKey== \"fel\" &&  (args.test.result.roll <= 5 || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10);\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop());\n   if (ones > SL)\n      args.test.result.other.push(`<b>${this.effect.label}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS podczas wpływania na osoby o wyższym Statusie.`);\n}"
+                    "name": "Pomocny",
+                    "script": "if (args.test.item && args.test.characteristicKey== \"fel\" &&  (args.test.result.roll <= 5 || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10);\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop());\n   if (ones > SL)\n      args.test.result.other.push(`<b>${this.effect.name}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS podczas wpływania na osoby o wyższym Statusie.`);\n}"
                 }
             },
             "tests": "Testy społeczne, by wpłynąć na stojących wyżej w hierarchii"
@@ -389,7 +389,7 @@
             "effects": {
                 "Zz5EI68iOab1vbmQ": {
                     "id": "Zz5EI68iOab1vbmQ",
-                    "label": "Szybki Refleks"
+                    "name": "Szybki Refleks"
                 }
             }
         },
@@ -421,7 +421,7 @@
             "effects": {
                 "PixW61vvKOev7oHu": {
                     "id": "PixW61vvKOev7oHu",
-                    "label": "Precyzyjne Inkantowanie",
+                    "name": "Precyzyjne Inkantowanie",
                     "script": "// Remove the miscast if doubles rolled and succeeded\nif(args.test.result.outcome == \"success\" && args.test.result.minormis && args.test.result.roll % 11 == 0) {\n    delete args.test.result.minormis;\n}\n// Decrement the major miscast to minor miscast\nelse if(args.test.result.outcome == \"success\" && args.test.result.majormis && args.test.result.roll % 11 == 0) {\n    delete args.test.result.majormis;\n    args.test.result.minormis = game.i18n.localize(\"ROLL.MinorMis\");\n}"
                 }
             },
@@ -435,9 +435,9 @@
             "tests": "Test Hazardu lub Zwinnych Palców podczas gier kościanych",
             "effects": {
                 "PNMqJy5zpPTXOd37": {
-                    "label": "Szuler Kościany",
+                    "name": "Szuler Kościany",
                     "id": "PNMqJy5zpPTXOd37",
-                    "script": "if (args.test.item && (args.test.item.name == game.i18n.localize(\"NAME.Gamble\") || args.test.item.name == game.i18n.localize(\"NAME.SleightOfHand\")) && args.test.succeeded)\n{\n\nlet SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\nlet ones = Number(args.test.result.roll.toString().split(\"\").pop())\n\nif (ones > SL)\n   args.test.result.other.push(`<span class=\"hide-option\"><b>${this.effect.label}</b>: ${ones + args.test.successBonus + args.test.slBonus} SL if playing with dice.</span>`)\n}"
+                    "script": "if (args.test.item && (args.test.item.name == game.i18n.localize(\"NAME.Gamble\") || args.test.item.name == game.i18n.localize(\"NAME.SleightOfHand\")) && args.test.succeeded)\n{\n\nlet SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\nlet ones = Number(args.test.result.roll.toString().split(\"\").pop())\n\nif (ones > SL)\n   args.test.result.other.push(`<span class=\"hide-option\"><b>${this.effect.name}</b>: ${ones + args.test.successBonus + args.test.slBonus} SL if playing with dice.</span>`)\n}"
                 }
             }
         },
@@ -449,7 +449,7 @@
             "effects": {
                 "VaILgn8RaKpqAueV": {
                     "id": "VaILgn8RaKpqAueV",
-                    "label": "Silne Nogi",
+                    "name": "Silne Nogi",
                     "description": "Testy Atletyki wiążące się ze skakaniem"
                 }
             }
@@ -462,7 +462,7 @@
             "effects": {
                 "AVhPxHHlKUolT589": {
                     "id": "AVhPxHHlKUolT589",
-                    "label": "Snajper",
+                    "name": "Snajper",
                     "script": "if (args.item.range && args.item.range.bands) {\n    args.item.range.bands[game.i18n.localize(\"Long Range\")].modifier = 0;\n    args.item.range.bands[game.i18n.localize(\"Extreme\")].modifier /= 2;\n}"
                 }
             },
@@ -483,7 +483,7 @@
             "effects": {
                 "3fOs9R0x04viu1cj": {
                     "id": "3fOs9R0x04viu1cj",
-                    "label": "Bardzo Szybki",
+                    "name": "Bardzo Szybki",
                     "script": "args.actor.details.move.value += 1;"
                 }
             }
@@ -496,7 +496,7 @@
             "effects": {
                 "3vgrN50Ul3S5T2j6": {
                     "id": "3vgrN50Ul3S5T2j6",
-                    "label": "Nienawiść (Grupa)",
+                    "name": "Nienawiść (Grupa)",
                     "description": "Test walki przeciwko znienawidzonej grupie"
                 }
             },
@@ -510,7 +510,7 @@
             "effects": {
                 "keKRZ1nmziD1BMXg": {
                     "id": "keKRZ1nmziD1BMXg",
-                    "label": "Mały",
+                    "name": "Mały",
                     "script": "args.size = \"sml\";"
                 }
             }
@@ -537,7 +537,7 @@
             "effects": {
                 "EsoBJtVEVYxCXdRb": {
                     "id": "EsoBJtVEVYxCXdRb",
-                    "label": "Odporność na Magię",
+                    "name": "Odporność na Magię",
                     "script": "if (args.type == \"cast\") {\n       args.prefillModifiers.slBonus -= 2;\n}"
                 }
             }
@@ -570,12 +570,12 @@
             "effects": {
                 "J5IUFXDMXgCJSPXW": {
                     "id": "J5IUFXDMXgCJSPXW",
-                    "label": "Mocne Plecy",
+                    "name": "Mocne Plecy",
                     "script": "args.actor.status.encumbrance.max += 1;"
                 },
                 "V6DfeSCAubOnx2rs": {
                     "id": "V6DfeSCAubOnx2rs",
-                    "label": "Bonus do Testu Przeciwstawnego",
+                    "name": "Bonus do Testu Przeciwstawnego",
                     "description": "Przeciwstawny Test Siły"
                 }
             },
@@ -589,7 +589,7 @@
             "effects": {
                 "HRSjpI6pAoSuf9tl": {
                     "id": "HRSjpI6pAoSuf9tl",
-                    "label": "Woltyżerka",
+                    "name": "Woltyżerka",
                     "script": "if (args.type == \"characteristic\") {\n  if (args.options.dodge && this.actor.isMounted) {\n    args.prefillModifiers.modifier += 20;\n  }\n}\n\nif (args.type == \"skill\") {\n  if (args.item.name == game.i18n.localize(\"NAME.Dodge\") && this.actor.isMounted) {\n    args.prefillModifiers.modifier += 20;\n  }\n}"
                 }
             },
@@ -650,7 +650,7 @@
             "effects": {
                 "ScsXdMC7SqNirMwx": {
                     "id": "ScsXdMC7SqNirMwx",
-                    "label": "Zabójca",
+                    "name": "Zabójca",
                     "script": "if (args.sizeDiff <= -2 && args.opposedTest.attackerTest.result.critical) {\n  args.damageMultiplier = Math.abs(args.sizeDiff);\n}\nlet sBonusDiff = args.opposedTest.defenderTest.actor.characteristics.t.bonus - args.opposedTest.attackerTest.actor.characteristics.s.bonus;\nlet weapon = args.opposedTest.attackerTest.item;\nif (sBonusDiff > 0 && weapon && weapon.damage.value.includes(\"SB\")) {\n  args.damage += sBonusDiff;\n}"
                 }
             }
@@ -677,7 +677,7 @@
             "effects": {
                 "c66r2RrClNOTONMB": {
                     "id": "c66r2RrClNOTONMB",
-                    "label": "Cios Mierzony"
+                    "name": "Cios Mierzony"
                 }
             }
         },
@@ -709,7 +709,7 @@
             "effects": {
                 "rdiV37QZ38bf5z2P": {
                     "id": "rdiV37QZ38bf5z2P",
-                    "label": "Hulaka",
+                    "name": "Hulaka",
                     "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.ConsumeAlcohol\")) {\n    args.test.preData.canReverse = true;\n}"
                 }
             },
@@ -723,7 +723,7 @@
             "effects": {
                 "y1pfxqA1jLh5Ywca": {
                     "id": "y1pfxqA1jLh5Ywca",
-                    "label": "Szał Bojowy",
+                    "name": "Szał Bojowy",
                     "script": "args.actor.characteristics.s.bonus += 1;\nargs.actor.characteristics.s.calculationBonusModifier -= 1;"
                 }
             }
@@ -736,7 +736,7 @@
             "effects": {
                 "jc0qgnuBJlMsA5Yn": {
                     "id": "jc0qgnuBJlMsA5Yn",
-                    "label": "Oburęczność",
+                    "name": "Oburęczność",
                     "script": "args.actor.flags.ambi += 1;"
                 }
             }
@@ -763,8 +763,8 @@
             "effects": {
                 "W5gSfWrnLHp2SYLA": {
                     "id": "W5gSfWrnLHp2SYLA",
-                    "label": "Tarczownik",
-                    "script": "if (args.opposedTest.result.winner == \"attacker\") {\n  if (args.opposedTest.defenderTest.weapon && args.opposedTest.defenderTest.item.properties.qualities.shield) {\n    ui.notifications.notify(`<b>${this.effect.label}</b>: Otrzymano przewagi w liczbie: ${this.item.Advances}`)\n    this.actor.setAdvantage(this.item.Advances)i1\n  }\n}"
+                    "name": "Tarczownik",
+                    "script": "if (args.opposedTest.result.winner == \"attacker\") {\n  if (args.opposedTest.defenderTest.weapon && args.opposedTest.defenderTest.item.properties.qualities.shield) {\n    ui.notifications.notify(`<b>${this.effect.name}</b>: Otrzymano przewagi w liczbie: ${this.item.Advances}`)\n    this.actor.setAdvantage(this.item.Advances)i1\n  }\n}"
                 }
             },
             "tests": "Dowolny test defensywny podczas używania tarczy"
@@ -790,7 +790,7 @@
             "effects": {
                 "QTmmZBqgkJMBn9KT": {
                     "id": "QTmmZBqgkJMBn9KT",
-                    "label": "Zimna krew"
+                    "name": "Zimna krew"
                 }
             }
         },
@@ -816,7 +816,7 @@
             "effects": {
                 "AdXR6L7rmxEgkVlB": {
                     "id": "AdXR6L7rmxEgkVlB",
-                    "label": "Strzał w Dziesiątkę",
+                    "name": "Strzał w Dziesiątkę",
                     "script": "if (args.options.sizeModifier < 0) {\n   args.prefillModifiers.modifier -= args.options.sizeModifier;\n}"
                 }
             }
@@ -864,7 +864,7 @@
             "effects": {
                 "KtcX1mblPyZZwVBC": {
                     "id": "KtcX1mblPyZZwVBC",
-                    "label": "Charyzmatyczny"
+                    "name": "Charyzmatyczny"
                 }
             }
         },
@@ -950,7 +950,7 @@
             "effects": {
                 "yTGSEMqLFPOts08w": {
                     "id": "yTGSEMqLFPOts08w",
-                    "label": "Krzepki",
+                    "name": "Krzepki",
                     "script": "args.totalWoundLoss -= 1;\nargs.messageElements.push(\"1 \" + game.i18n.localize(\"NAME.Robust\"));\nif (args.totalWoundLoss <= 0) {\n  let weapon = args.opposedTest.attackerTest.weapon;\n  if (weapon && weapon.properties.flaws.undamaging) {\n    args.totalWoundLoss = 0;\n  } else {\n    args.totalWoundLoss = 1;\n  }\n}"
                 }
             }
@@ -977,7 +977,7 @@
             "effects": {
                 "brTadWGpAAr78Pwx": {
                     "id": "brTadWGpAAr78Pwx",
-                    "label": "Czujny"
+                    "name": "Czujny"
                 }
             }
         },
@@ -995,7 +995,7 @@
             "effects": {
                 "6dxDagVXzDKL4vgR": {
                     "id": "6dxDagVXzDKL4vgR",
-                    "label": "Berserkerska Szarża",
+                    "name": "Berserkerska Szarża",
                     "script": "if (args.test.result.charging) {\n   args.test.result.damage += 1;\n   args.test.result.additionalDamage += 1;\n}"
                 }
             },
@@ -1016,7 +1016,7 @@
             "effects": {
                 "FT9ngGg2C68sBxzc": {
                     "id": "FT9ngGg2C68sBxzc",
-                    "label": "Strzał Przebijający",
+                    "name": "Strzał Przebijający",
                     "script": "if (args.opposedTest.attackerTest.weapon.attackType == \"ranged\") {\n    let applyAP = (args.damageType == game.wfrp4e.config.DAMAGE_TYPE.IGNORE_TB || args.damageType == game.wfrp4e.config.DAMAGE_TYPE.NORMAL);\n    let AP = args.AP;\n    if (applyAP) {\n        newUsed = Math.max(AP.used - this.item.Advances, 0);\n        args.totalWoundLoss += (AP.used - newUsed);\n        let apIndex = args.messageElements.findIndex(i => i.includes(game.i18n.localize(\"AP\")))\n        args.messageElements[apIndex] = newUsed + \"/\" + AP.value + \" \" + game.i18n.localize(\"AP\")\n    }\n}"
                 }
             }
@@ -1076,7 +1076,7 @@
             "effects": {
                 "sx7NGIdCYniQHaHi": {
                     "id": "sx7NGIdCYniQHaHi",
-                    "label": "Błyskotliwość"
+                    "name": "Błyskotliwość"
                 }
             }
         },
@@ -1094,7 +1094,7 @@
             "effects": {
                 "JGnq108l9XA1xAWM": {
                     "id": "JGnq108l9XA1xAWM",
-                    "label": "Tragarz",
+                    "name": "Tragarz",
                     "script": "args.actor.status.encumbrance.max += 2;"
                 }
             },
@@ -1108,7 +1108,7 @@
             "effects": {
                 "tS0NjO6ujjQH6sV9": {
                     "id": "tS0NjO6ujjQH6sV9",
-                    "label": "Przestępca",
+                    "name": "Przestępca",
                     "script": "console.log(args);"
                 }
             }
@@ -1127,7 +1127,7 @@
             "effects": {
                 "vntOVrHSurqI8lbG": {
                     "id": "vntOVrHSurqI8lbG",
-                    "label": "Niezwykle Odporny"
+                    "name": "Niezwykle Odporny"
                 }
             }
         },
@@ -1139,7 +1139,7 @@
             "effects": {
                 "3HTxEPAJdtbQaygL": {
                     "id": "3HTxEPAJdtbQaygL",
-                    "label": "Morderczy Atak",
+                    "name": "Morderczy Atak",
                     "script": "if (args.test.result.critical) {\n   args.test.result.damage +=1;\n   args.test.result.additionalDamage += 1;\n}"
                 }
             }
@@ -1152,7 +1152,7 @@
             "effects": {
                 "3f87V2dvHVJTzwC7": {
                     "id": "3f87V2dvHVJTzwC7",
-                    "label": "Święta Nienawiść",
+                    "name": "Święta Nienawiść",
                     "script": "if (args.item.type == \"prayer\" && (args.item.damage.value || args.item.damage.dice)) {\n    args.item.damage.value += \"+1\";\n}"
                 }
             }
@@ -1212,7 +1212,7 @@
             "effects": {
                 "Eu8Ajiixpb7rdqVW": {
                     "id": "Eu8Ajiixpb7rdqVW",
-                    "label": "Skrócenie Dystansu",
+                    "name": "Skrócenie Dystansu",
                     "script": "if (args.type == \"weapon\" && this.actor.hasSystemEffect(\"infighting\")) {\n     args.prefillModifiers.modifier += 10;\n}"
                 }
             },
@@ -1226,7 +1226,7 @@
             "effects": {
                 "7i8RGItRAF5GLESP": {
                     "id": "7i8RGItRAF5GLESP",
-                    "label": "Bitewny Refleks",
+                    "name": "Bitewny Refleks",
                     "script": "let initiativeSetting = game.settings.get(\"wfrp4e\", \"initiativeRule\");\n\nswitch (initiativeSetting) {\n  case \"default\":\n    args.initiative += \"+10\"\n    break;\n\n  case \"sl\":\n    args.initiative += \"+1\"\n    break;\n\n  case \"d10Init\":\n    args.initiative += \"+10\"\n    break;\n\n  case \"d10InitAgi\":\n    args.initiative += \"+1\"\n    break;\n}"
                 }
             }
@@ -1252,7 +1252,7 @@
             "effects": {
                 "CTK46A6miFIRTbVG": {
                     "id": "CTK46A6miFIRTbVG",
-                    "label": "Nieugięty",
+                    "name": "Nieugięty",
                     "script": "if (args.test.result.charging) {\n   args.test.result.damage += 1;\n   args.test.result.additionalDamage += 1;\n}"
                 }
             }
@@ -1286,7 +1286,7 @@
             "effects": {
                 "FQv1UAIrdvtf9Tlc": {
                     "id": "FQv1UAIrdvtf9Tlc",
-                    "label": "Odporny na (Zagrożenie)"
+                    "name": "Odporny na (Zagrożenie)"
                 }
             }
         },
@@ -1311,7 +1311,7 @@
             "effects": {
                 "kS7RdyolGOxATaC3": {
                     "id": "kS7RdyolGOxATaC3",
-                    "label": "Ulicznik",
+                    "name": "Ulicznik",
                     "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.StealthUrban\")) {\n    args.test.preData.canReverse = true;\n}"
                 }
             },
@@ -1339,7 +1339,7 @@
             "effects": {
                 "2COWvsyLyfHXDcJJ": {
                     "id": "2COWvsyLyfHXDcJJ",
-                    "label": "Czysta Dusza",
+                    "name": "Czysta Dusza",
                     "script": "args.actor.status.corruption.max += 1;"
                 }
             }
@@ -1394,7 +1394,7 @@
             "effects": {
                 "ors3yseo6f4uQCgq": {
                     "id": "ors3yseo6f4uQCgq",
-                    "label": "Celny Strzał",
+                    "name": "Celny Strzał",
                     "script": "args.actor.flags.rangedDamageIncrease += 1;"
                 }
             }
@@ -1420,7 +1420,7 @@
             "effects": {
                 "O6qLwcpRh7LjEm4o": {
                     "id": "O6qLwcpRh7LjEm4o",
-                    "label": "Nieubłagany",
+                    "name": "Nieubłagany",
                     "script": "args.effect.flags.wfrp4e.value -= 1;"
                 }
             }
@@ -1434,8 +1434,8 @@
             "effects": {
                 "YsehPMUmEzTAH6UC": {
                     "id": "YsehPMUmEzTAH6UC",
-                    "label": "Szuler",
-                    "script": "if (args.test.item && (args.test.item.name == game.i18n.localize(\"NAME.Gamble\") || args.test.item.name == game.i18n.localize(\"NAME.SleightOfHand\")) && args.test.succeeded) {\nlet SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\nlet ones = Number(args.test.result.roll.toString().split(\"\").pop())\nif (ones > SL)\n   args.test.result.other.push(`<span class=\"hide-option\"><b>${this.effect.label}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS podczas gry w karty.</span>`)\n}"
+                    "name": "Szuler",
+                    "script": "if (args.test.item && (args.test.item.name == game.i18n.localize(\"NAME.Gamble\") || args.test.item.name == game.i18n.localize(\"NAME.SleightOfHand\")) && args.test.succeeded) {\nlet SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\nlet ones = Number(args.test.result.roll.toString().split(\"\").pop())\nif (ones > SL)\n   args.test.result.other.push(`<span class=\"hide-option\"><b>${this.effect.name}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS podczas gry w karty.</span>`)\n}"
                 }
             }
         },
@@ -1460,7 +1460,7 @@
             "effects": {
                 "4dEzF6K4pP539zRF": {
                     "id": "4dEzF6K4pP539zRF",
-                    "label": "Bardzo Silny"
+                    "name": "Bardzo Silny"
                 }
             }
         },
@@ -1472,7 +1472,7 @@
             "effects": {
                 "yjOMm9SFJOK8QBvQ": {
                     "id": "yjOMm9SFJOK8QBvQ",
-                    "label": "Urodzony Wojownik"
+                    "name": "Urodzony Wojownik"
                 }
             }
         },
@@ -1484,7 +1484,7 @@
             "effects": {
                 "REeG0AV5Sm4fTAIJ": {
                     "id": "REeG0AV5Sm4fTAIJ",
-                    "label": "Twardziel",
+                    "name": "Twardziel",
                     "script": "args.multiplier.tb += 1;"
                 }
             }
@@ -1497,7 +1497,7 @@
             "effects": {
                 "LKDNluFVNLBNUH4N": {
                     "id": "LKDNluFVNLBNUH4N",
-                    "label": "Mól Książkowy",
+                    "name": "Mól Książkowy",
                     "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Research\")) {\n    args.test.preData.canReverse = true;\n}"
                 }
             },
@@ -1511,7 +1511,7 @@
             "effects": {
                 "6m85TVcbkk2geHrE": {
                     "id": "6m85TVcbkk2geHrE",
-                    "label": "Krasomówstwo",
+                    "name": "Krasomówstwo",
                     "description": "Test Charyzmy podczas przemawiania do tłumu"
                 }
             }

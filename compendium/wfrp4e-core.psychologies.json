@@ -21,7 +21,7 @@
             "effects": {
                 "6QhtnGcV5T0JXQZN": {
                     "id": "6QhtnGcV5T0JXQZN",
-                    "label": "Nienawiść",
+                    "name": "Nienawiść",
                     "description": "Test walki przeciwko znienawidzonej grupie"
                 }
             }
@@ -34,7 +34,7 @@
             "effects": {
                 "fChUE7dauqBKrKWx": {
                     "id": "fChUE7dauqBKrKWx",
-                    "label": "Szał Bojowy",
+                    "name": "Szał Bojowy",
                     "script": "args.actor.characteristics.s.bonus += 1;\nargs.actor.characteristics.s.calculationBonusModifier -= 1;"
                 }
             }
@@ -59,7 +59,7 @@
             "effects": {
                 "R2HbCmmf2tsHfeM2": {
                     "id": "R2HbCmmf2tsHfeM2",
-                    "label": "Miłość",
+                    "name": "Miłość",
                     "description": "Tests related to defending Loved ones"
                 }
             }

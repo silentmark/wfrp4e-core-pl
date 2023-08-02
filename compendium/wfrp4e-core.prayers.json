@@ -29,7 +29,7 @@
             "effects": {
                 "TZyqbCq1ywZ6LtTv": {
                     "id": "TZyqbCq1ywZ6LtTv",
-                    "label": "Błogosławieństwo Wytrzymałości"
+                    "name": "Błogosławieństwo Wytrzymałości"
                 }
             },
             "duration": "6 Rund",
@@ -71,7 +71,7 @@
             "effects": {
                 "lfR1p5Ph2BQCPl3G": {
                     "id": "lfR1p5Ph2BQCPl3G",
-                    "label": "Błogosławieństwo Prawości"
+                    "name": "Błogosławieństwo Prawości"
                 }
             },
             "duration": "6 Rund",
@@ -95,7 +95,7 @@
             "effects": {
                 "qpp49hHsrz2VmP1E": {
                     "id": "qpp49hHsrz2VmP1E",
-                    "label": "Płomień Wiary",
+                    "name": "Płomień Wiary",
                     "script": "let damage = (await new Roll(\"1d10\").roll()).total;\nawait args.actor.applyBasicDamage(damage, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL})\nif (args.actor.has(game.i18n.localize(\"NAME.Undead\")) || args.actor.has(game.i18n.localize(\"NAME.Daemonic\"))) {\n  await args.actor.addCondition(\"ablaze\");\n}"
                 }
             },
@@ -156,7 +156,7 @@
             "effects": {
                 "tVy8wXAtGTHx0qsV": {
                     "id": "tVy8wXAtGTHx0qsV",
-                    "label": "Błogosławieństwo Łowów"
+                    "name": "Błogosławieństwo Łowów"
                 }
             },
             "duration": "6 Rund",
@@ -171,7 +171,7 @@
             "effects": {
                 "xBeaS7jKIhHvsBaC": {
                     "id": "xBeaS7jKIhHvsBaC",
-                    "label": "Błogosławieństwo Uzdrawiania",
+                    "name": "Błogosławieństwo Uzdrawiania",
                     "script": "let wounds = args.actor.status.wounds;\nif (wounds.value < wounds.max) {\n   args.actor.update({\"system.status.wounds.value\" : wounds.value + 1});\n}"
                 }
             },
@@ -187,7 +187,7 @@
             "effects": {
                 "xfFaPn5kqQz7CRBJ": {
                     "id": "xfFaPn5kqQz7CRBJ",
-                    "label": "Błogosławieństwo Odwagi"
+                    "name": "Błogosławieństwo Odwagi"
                 }
             },
             "duration": "6 Rund",
@@ -220,7 +220,7 @@
             "effects": {
                 "FaH4jPWjtPWfjjv2": {
                     "id": "FaH4jPWjtPWfjjv2",
-                    "label": "Aura odwagi",
+                    "name": "Aura odwagi",
                     "script": "let broken = args.actor.hasCondition(\"broken\");\nif (broken) {\n    args.actor.removeCondition(\"broken\", broken.flags.wfrp4e.value);\n}"
                 }
             },
@@ -236,7 +236,7 @@
             "effects": {
                 "LGXFRw2UC3M1ZCRf": {
                     "id": "LGXFRw2UC3M1ZCRf",
-                    "label": "Błogosławieństwo Dzikości"
+                    "name": "Błogosławieństwo Dzikości"
                 }
             },
             "duration": "6 Rund",
@@ -251,7 +251,7 @@
             "effects": {
                 "5kCCldIgCQLXAiqq": {
                     "id": "5kCCldIgCQLXAiqq",
-                    "label": "Błogosławieństwo Bitwy"
+                    "name": "Błogosławieństwo Bitwy"
                 }
             },
             "duration": "6 Rund",
@@ -266,7 +266,7 @@
             "effects": {
                 "PG0aFGzMCDuLR7fK": {
                     "id": "PG0aFGzMCDuLR7fK",
-                    "label": "Waleczność",
+                    "name": "Waleczność",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.talents.J9MK0AIaTbvd5oF6\").then(item => {\n    args.actor.createEmbeddedDocuments(\"Item\", [item.toObject()])\n})"
                 }
             },
@@ -300,7 +300,7 @@
             "effects": {
                 "2lds6IDIyorYrvY4": {
                     "id": "2lds6IDIyorYrvY4",
-                    "label": "Mądrość sowy",
+                    "name": "Mądrość sowy",
                     "script": "if (args.type == \"characteristic\" && args.item == \"int\") {\n  args.prefillModifiers.modifier += 20;\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"int\") {\n    args.prefillModifiers.modifier += 20;\n  }\n}"
                 }
             },
@@ -316,7 +316,7 @@
             "effects": {
                 "NO3FdQ5qx6B5PjPm": {
                     "id": "NO3FdQ5qx6B5PjPm",
-                    "label": "Błogosławieństwo Charyzmy"
+                    "name": "Błogosławieństwo Charyzmy"
                 }
             },
             "duration": "6 Rund",
@@ -349,7 +349,7 @@
             "effects": {
                 "zcary1qugwge597m": {
                     "id": "zcary1qugwge597m",
-                    "label": "Błogosławieństwo Mądrości"
+                    "name": "Błogosławieństwo Mądrości"
                 }
             },
             "duration": "6 Rund",
@@ -391,12 +391,12 @@
             "effects": {
                 "y7N8PrEOVgsRaJGR": {
                     "id": "y7N8PrEOVgsRaJGR",
-                    "label": "Na Cztery Łapy",
+                    "name": "Na Cztery Łapy",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.talents.g4Q6AtzZuo5iIvD4\").then(item => {\n    args.actor.createEmbeddedDocuments(\"Item\", [item.toObject()])\n})"
                 },
                 "yAJjiwiK0OSoIrkf": {
                     "id": "yAJjiwiK0OSoIrkf",
-                    "label": "Spryt Ranalda",
+                    "name": "Spryt Ranalda",
                     "script": "if (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))) {\n    args.prefillModifiers.modifier += 10;\n}"
                 }
             },
@@ -430,7 +430,7 @@
             "effects": {
                 "FDxjikn1S8EqbYZU": {
                     "id": "FDxjikn1S8EqbYZU",
-                    "label": "Błogosławieństwo Szczęścia"
+                    "name": "Błogosławieństwo Szczęścia"
                 }
             },
             "duration": "6 Rund",
@@ -472,7 +472,7 @@
             "effects": {
                 "0MpJUKwHZIc5wMWy": {
                     "id": "0MpJUKwHZIc5wMWy",
-                    "label": "Błogosławieństwo Zdrowia"
+                    "name": "Błogosławieństwo Zdrowia"
                 }
             },
             "duration": "Natychmiast",
@@ -505,8 +505,8 @@
             "effects": {
                 "qMveUjAJldH1xhlZ": {
                     "id": "qMveUjAJldH1xhlZ",
-                    "label": "Błogosławieństwo Ochrony",
-                    "script": "ChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b> musi zdać <b>Przeciętny (+20) Test Siły Woli</b> aby zaatakować cel!`, speaker : {alias : this.effect.label}});\nui.notifications.notify(`${this.actor.prototypeToken.name} musi zdać <b>Przeciętny (+20) Test Siły Woli</b> aby zaatakować cel!`);"
+                    "name": "Błogosławieństwo Ochrony",
+                    "script": "ChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b> musi zdać <b>Przeciętny (+20) Test Siły Woli</b> aby zaatakować cel!`, speaker : {alias : this.effect.name}});\nui.notifications.notify(`${this.actor.prototypeToken.name} musi zdać <b>Przeciętny (+20) Test Siły Woli</b> aby zaatakować cel!`);"
                 }
             },
             "duration": "6 Rund",
@@ -521,7 +521,7 @@
             "effects": {
                 "Gas9DsCrikTUmUtu": {
                     "id": "Gas9DsCrikTUmUtu",
-                    "label": "Błogosławieństwo Siły"
+                    "name": "Błogosławieństwo Siły"
                 }
             },
             "duration": "6 Rund",
@@ -536,7 +536,7 @@
             "effects": {
                 "GjyHbaIqJLZYxLq4": {
                     "id": "GjyHbaIqJLZYxLq4",
-                    "label": "Błogosławieństwo Wdzięku"
+                    "name": "Błogosławieństwo Wdzięku"
                 }
             },
             "duration": "6 Rund",
@@ -551,11 +551,11 @@
             "effects": {
                 "DIcpr650MAJVHQ5u": {
                     "id": "DIcpr650MAJVHQ5u",
-                    "label": "Zwiększenie Szybkości"
+                    "name": "Zwiększenie Szybkości"
                 },
                 "q7pJlPm8uR0UxxN1": {
                     "id": "q7pJlPm8uR0UxxN1",
-                    "label": "Rączy jeleń",
+                    "name": "Rączy jeleń",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.talents.CV9btQn09S9Fn8Jk\").then(item => {\n    args.actor.createEmbeddedDocuments(\"Item\", [item.toObject()])\n})"
                 }
             },
@@ -589,7 +589,7 @@
             "effects": {
                 "Bt7ExFoPhWP05nr8": {
                     "id": "Bt7ExFoPhWP05nr8",
-                    "label": "Zew furii",
+                    "name": "Zew furii",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.psychologies.5hH73j2NgPdsLCZN\").then(item => {\n    args.actor.createEmbeddedDocuments(\"Item\", [item.toObject()])\n})"
                 }
             },
@@ -632,7 +632,7 @@
             "effects": {
                 "HZaxjSj49yUXZYCn": {
                     "id": "HZaxjSj49yUXZYCn",
-                    "label": "Błogosławieństwo Finezji"
+                    "name": "Błogosławieństwo Finezji"
                 }
             },
             "duration": "6 Rund",
@@ -647,7 +647,7 @@
             "effects": {
                 "FbFPvypAtB428U0r": {
                     "id": "FbFPvypAtB428U0r",
-                    "label": "Oplątanie",
+                    "name": "Oplątanie",
                     "script": "let num = 1 + {{overcast.usage.other.count}};\nif (!num || num <= 0); {\n   num = 1;\n}\nargs.actor.addCondition(\"entangled\", num);"
                 }
             },
@@ -672,7 +672,7 @@
             "effects": {
                 "1TWDvZQnuHAsfxxd": {
                     "id": "1TWDvZQnuHAsfxxd",
-                    "label": "Kły i Pazury",
+                    "name": "Kły i Pazury",
                     "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.traits.pLW9SVX0TVTYPiPv\");\nitem = item.toObject();\nitem.system.specification.value = 3;\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);\nitem = await fromUuid(\"Compendium.wfrp4e-core.traits.AtpAudHA4ybXVlWM\");\nitem = item.toObject();\nitem.system.specification.value = 4;\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);"
                 }
             },
@@ -688,7 +688,7 @@
             "effects": {
                 "JlsdDkPK9j9Y65sB": {
                     "id": "JlsdDkPK9j9Y65sB",
-                    "label": "Gorejące słońce",
+                    "name": "Gorejące słońce",
                     "script": "if (\"{{outcome}}\" == \"success\") {\n  let blinded = 1 + {{overcast.usage.other.count}};\n  args.actor.addCondition(\"blinded\", blinded);\n}"
                 }
             },
@@ -731,7 +731,7 @@
             "effects": {
                 "gvhH2LxUqQQxN6R8": {
                     "id": "gvhH2LxUqQQxN6R8",
-                    "label": "Wieczny odpoczynek",
+                    "name": "Wieczny odpoczynek",
                     "script": "if (args.actor.has(game.i18n.localize(\"NAME.Undead\")) && args.actor.has(game.i18n.localize(\"NAME.Construct\"))) {\n   args.actor.addCondition(\"dead\");\n}"
                 }
             },
@@ -747,7 +747,7 @@
             "effects": {
                 "dx14txcPj5zl0vjZ": {
                     "id": "dx14txcPj5zl0vjZ",
-                    "label": "Kometa Sigmara",
+                    "name": "Kometa Sigmara",
                     "script": "args.actor.addCondition(\"ablaze\");"
                 }
             },
@@ -772,7 +772,7 @@
             "effects": {
                 "HqH1WB4M1YCR0kRg": {
                     "id": "HqH1WB4M1YCR0kRg",
-                    "label": "Zniszczenie ożywieńca",
+                    "name": "Zniszczenie ożywieńca",
                     "script": "if (args.actor.has(game.i18n.localize(\"NAME.Undead\"))) {\n    let damage = (await new Roll(\"1d10\").roll()).total;\n    await args.actor.applyBasicDamage(damage, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL});\n}"
                 }
             },
@@ -833,7 +833,7 @@
             "effects": {
                 "HzWovpDiGQ129yZu": {
                     "id": "HzWovpDiGQ129yZu",
-                    "label": "Błogosławieństwo Sprytu"
+                    "name": "Błogosławieństwo Sprytu"
                 }
             },
             "duration": "6 Rund",
@@ -857,7 +857,7 @@
             "effects": {
                 "aaiZynMi60jGc0Jn": {
                     "id": "aaiZynMi60jGc0Jn",
-                    "label": "Wytrwałość Eremity",
+                    "name": "Wytrwałość Eremity",
                     "script": "let stunned = args.actor.hasCondition(\"stunned\")\nif (stunned)\n   setProperty(stunned, \"flags.wfrp4e.script\", \"\")\n\nlet poisoned= args.actor.hasCondition(\"poisoned\")\nif (poisoned)\n   setProperty(poisoned, \"flags.wfrp4e.script\", \"\")\n\nlet deafened = args.actor.hasCondition(\"deafened\")\nif (deafened)\n   setProperty(deafened, \"flags.wfrp4e.effectTrigger\", \"\")\n\nlet entangled = args.actor.hasCondition(\"entangled\")\nif (entangled)\n   setProperty(entangled, \"flags.wfrp4e.effectTrigger\", \"\")\n\nlet fatigued = args.actor.hasCondition(\"fatigued\")\nif (fatigued)\n   setProperty(fatigued, \"flags.wfrp4e.script\", \"\")\n\nlet blinded = args.actor.hasCondition(\"blinded\")\nif (blinded)\n   setProperty(blinded, \"flags.wfrp4e.effectTrigger\", \"\")\n\nlet broken = args.actor.hasCondition(\"broken\")\nif (broken)\n   setProperty(broken, \"flags.wfrp4e.effectTrigger\", \"\")\n\nlet prone= args.actor.hasCondition(\"prone\")\nif (prone)\n   setProperty(prone, \"flags.wfrp4e.effectTrigger\", \"\")"
                 }
             },
@@ -891,7 +891,7 @@
             "effects": {
                 "4hBoeFxZYT68Npxr": {
                     "id": "4hBoeFxZYT68Npxr",
-                    "label": "Tarcza Myrmidii",
+                    "name": "Tarcza Myrmidii",
                     "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 1;\nAP[\"rArm\"].value += 1;\nAP[\"lArm\"].value += 1;\nAP[\"body\"].value += 1;\nAP[\"lLeg\"].value += 1;\nAP[\"rLeg\"].value += 1;"
                 }
             },
@@ -907,7 +907,7 @@
             "effects": {
                 "s0zdvcCpdHza4MZf": {
                     "id": "s0zdvcCpdHza4MZf",
-                    "label": "Chód marynarza",
+                    "name": "Chód marynarza",
                     "script": "await args.actor.addCondition(\"blinded\")\nawait args.actor.addCondition(\"deafened\")\nawait args.actor.addCondition(\"fatigued\")"
                 }
             },

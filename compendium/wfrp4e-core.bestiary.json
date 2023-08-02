@@ -23,17 +23,17 @@
             "effects": {
                 "dt9CX3Pq7QKw25z4": {
                     "id": "dt9CX3Pq7QKw25z4",
-                    "label": "Dekoncentrujący",
+                    "name": "Dekoncentrujący",
                     "script": "args.prefillModifiers.modifier -= 20"
                 },
                 "nL9vz5id4ikQFGls": {
                     "id": "nL9vz5id4ikQFGls",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "WZ3jFENJwIhkufce": {
                     "id": "WZ3jFENJwIhkufce",
-                    "label": "Groza",
+                    "name": "Groza",
                     "script": "let value = parseInt(this.item.specification.value);\nlet name = this.actor.prototypeToken.name;\nif (game.user.isGM && game.user.targets.size) {\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name);\n  })\n  game.user.updateTokenTargets([]);\n  game.user.broadcastActivity({targets: []})\n}\nelse {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },
@@ -79,21 +79,21 @@
             "effects": {
                 "ifR8JNd40yyrfvGn": {
                     "id": "ifR8JNd40yyrfvGn",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "rGJP5XWv7qHS0RWn": {
                     "id": "rGJP5XWv7qHS0RWn",
-                    "label": "Twardziel",
+                    "name": "Twardziel",
                     "script": "args.multiplier.tb += 1"
                 },
                 "rNWdg6vHRANHnqIU": {
                     "id": "rNWdg6vHRANHnqIU",
-                    "label": "Siłacz"
+                    "name": "Siłacz"
                 },
                 "tnEt2g6N1fk9LIbJ": {
                     "id": "tnEt2g6N1fk9LIbJ",
-                    "label": "Mieszkaniec Lasu",
+                    "name": "Mieszkaniec Lasu",
                     "script": "if (args.type == \"skill\" && (args.item.name == game.i18n.localize(\"NAME.Climb\")  || args.item.name.includes(game.i18n.localize(\"NAME.Stealth\")))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 }
             },
@@ -127,22 +127,22 @@
             "effects": {
                 "7xnO2hDZ63QDUQ6E": {
                     "id": "7xnO2hDZ63QDUQ6E",
-                    "label": "Tropiciel",
+                    "name": "Tropiciel",
                     "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\"))) {\n   let sl = this.actor.characteristics.i.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 },
                 "BoUTC9kraBVqscZf": {
                     "id": "BoUTC9kraBVqscZf",
-                    "label": "Skryty",
+                    "name": "Skryty",
                     "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 },
                 "Cp0fK7qqV5Jyptgv": {
                     "id": "Cp0fK7qqV5Jyptgv",
-                    "label": "Odporność na Magię",
+                    "name": "Odporność na Magię",
                     "script": "if (args.type == \"cast\")\n       args.prefillModifiers.slBonus -= 2"
                 },
                 "JiMjptl7bJAvnBBV": {
                     "id": "JiMjptl7bJAvnBBV",
-                    "label": "Mieszkaniec Lasu",
+                    "name": "Mieszkaniec Lasu",
                     "script": "if (args.type == \"skill\" && (args.item.name == game.i18n.localize(\"NAME.Climb\")  || args.item.name.includes(game.i18n.localize(\"NAME.Stealth\")))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 }
             },
@@ -211,12 +211,12 @@
             "effects": {
                 "yuPctOwSU2nLHscr": {
                     "id": "yuPctOwSU2nLHscr",
-                    "label": "Zaraza",
+                    "name": "Zaraza",
                     "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy (+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "ZxTHLjvTvkErPA1u": {
                     "id": "ZxTHLjvTvkErPA1u",
-                    "label": "Jad",
+                    "name": "Jad",
                     "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
                 }
             },
@@ -242,27 +242,27 @@
             "effects": {
                 "1Um0xlQTwtLEaw15": {
                     "id": "1Um0xlQTwtLEaw15",
-                    "label": "Długi Krok",
+                    "name": "Długi Krok",
                     "script": "args.actor.details.move.run *= 1.5"
                 },
                 "2ubzZUjCYNhscBVW": {
                     "id": "2ubzZUjCYNhscBVW",
-                    "label": "Zaraza",
+                    "name": "Zaraza",
                     "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy (+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "b2wHjjEjkMI6a2mS": {
                     "id": "b2wHjjEjkMI6a2mS",
-                    "label": "Zakażony",
+                    "name": "Zakażony",
                     "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
                 },
                 "gI0E1Xb8OT8EvZ9R": {
                     "id": "gI0E1Xb8OT8EvZ9R",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "QmzFxVck35BuGoMx": {
                     "id": "QmzFxVck35BuGoMx",
-                    "label": "Szał Bojowy",
+                    "name": "Szał Bojowy",
                     "script": "args.actor.characteristics.s.bonus += 1;\nargs.actor.characteristics.s.calculationBonusModifier -= 1;"
                 }
             },
@@ -364,46 +364,46 @@
             "effects": {
                 "0RSawVy6iLMk3d3Z": {
                     "id": "0RSawVy6iLMk3d3Z",
-                    "label": "Regeneracja",
+                    "name": "Regeneracja",
                     "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")};\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> Odzyskana żywotność:  ${regen} .`;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`;\n      }\n   }\n   else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> wyrzucił ${regen} i odzyskał 1 punkt żywotności.`\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`\n      }\n   }\n   else {\n      chatData.content += `<b>${this.actor.name}</b> Rzut na regenerację: ${regen} - brak efektu.`\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}"
                 },
                 "0usIukVS0gAmrqPq": {
                     "id": "0usIukVS0gAmrqPq",
-                    "label": "Zakażony",
+                    "name": "Zakażony",
                     "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
                 },
                 "12s7pdXgLCnuWwie": {
                     "id": "12s7pdXgLCnuWwie",
-                    "label": "Twardy"
+                    "name": "Twardy"
                 },
                 "CuNT6BeiHCjykOLx": {
                     "id": "CuNT6BeiHCjykOLx",
-                    "label": "Wymiot",
+                    "name": "Wymiot",
                     "script": "args.actor.addCondition(\"stunned\")"
                 },
                 "iZcLi1wlNXiV2Yvh": {
                     "id": "iZcLi1wlNXiV2Yvh",
-                    "label": "Skryty",
+                    "name": "Skryty",
                     "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 },
                 "og3WYIZ7LGZlE898": {
                     "id": "og3WYIZ7LGZlE898",
-                    "label": "Szał Bojowy",
+                    "name": "Szał Bojowy",
                     "script": "args.actor.characteristics.s.bonus += 1;\nargs.actor.characteristics.s.calculationBonusModifier -= 1;"
                 },
                 "PydwaFG00Dz7lsLg": {
                     "id": "PydwaFG00Dz7lsLg",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "Qv9IU50A1hEVAXl1": {
                     "id": "Qv9IU50A1hEVAXl1",
-                    "label": "Zaraza",
+                    "name": "Zaraza",
                     "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy (+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "rJYy8szkNGqUs605": {
                     "id": "rJYy8szkNGqUs605",
-                    "label": "Ziemnowodny",
+                    "name": "Ziemnowodny",
                     "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Swim\")) {\n    args.prefillModifiers.slBonus += this.actor.characteristics.ag.bonus;\n}"
                 }
             },
@@ -432,7 +432,7 @@
             "effects": {
                 "NY16gROis1ONxIjo": {
                     "id": "NY16gROis1ONxIjo",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 }
             },
@@ -476,12 +476,12 @@
             "effects": {
                 "6McxapDczZuyQyg5": {
                     "id": "6McxapDczZuyQyg5",
-                    "label": "Strach",
+                    "name": "Strach",
                     "script": "let value = parseInt(this.item.specification.value);\nlet name = this.actor.prototypeToken.name;\nif (game.user.isGM && game.user.targets.size) {\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  });\n  game.user.updateTokenTargets([]);\n  game.user.broadcastActivity({targets: []})\n}\nelse {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 },
                 "c6x02cj76dxuPEnS": {
                     "id": "c6x02cj76dxuPEnS",
-                    "label": "Dekoncentrujący",
+                    "name": "Dekoncentrujący",
                     "script": "args.prefillModifiers.modifier -= 20"
                 }
             },
@@ -510,32 +510,32 @@
             "effects": {
                 "hOe0V10JbyWGeTVZ": {
                     "id": "hOe0V10JbyWGeTVZ",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "jvE7KJwJTJJJcOip": {
                     "id": "jvE7KJwJTJJJcOip",
-                    "label": "Skoczny",
+                    "name": "Skoczny",
                     "script": "this.actor.details.move.run *= 2"
                 },
                 "K11BUhxEOwL0OmRR": {
                     "id": "K11BUhxEOwL0OmRR",
-                    "label": "Zaraza",
+                    "name": "Zaraza",
                     "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy (+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "naCAi2JxEh991ITv": {
                     "id": "naCAi2JxEh991ITv",
-                    "label": "Dekoncentrujący",
+                    "name": "Dekoncentrujący",
                     "script": "args.prefillModifiers.modifier -= 20"
                 },
                 "UymeVioxlCVCkCcu": {
                     "id": "UymeVioxlCVCkCcu",
-                    "label": "Atak Ogonem",
+                    "name": "Atak Ogonem",
                     "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value];\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value];\nif (attackerSize > actorSize) {\n   args.actor.addCondition(\"prone\");\n   ChatMessage.create({content: `<b>Atak Ogonem</b>: ${args.actor.prototypeToken.name} otrzymuje Stan @Condition[Powalenie]`, speaker : {alias: args.attacker.prototypeToken.name}});\n}"
                 },
                 "Z32WU7rxN7WD0p19": {
                     "id": "Z32WU7rxN7WD0p19",
-                    "label": "Jad",
+                    "name": "Jad",
                     "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
                 }
             },
@@ -575,17 +575,17 @@
             "effects": {
                 "2EnGjwTeLDzY8fl4": {
                     "id": "2EnGjwTeLDzY8fl4",
-                    "label": "Szał Bojowy",
+                    "name": "Szał Bojowy",
                     "script": "args.actor.characteristics.s.bonus += 1;\nargs.actor.characteristics.s.calculationBonusModifier -= 1;"
                 },
                 "2XnJOh6bY4dL2aHK": {
                     "id": "2XnJOh6bY4dL2aHK",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "B7KcEOJcl8VapKin": {
                     "id": "B7KcEOJcl8VapKin",
-                    "label": "Dekoncentrujący",
+                    "name": "Dekoncentrujący",
                     "script": "args.prefillModifiers.modifier -= 20"
                 }
             },
@@ -611,37 +611,37 @@
             "effects": {
                 "0MLUyVBvdjHhCNj7": {
                     "id": "0MLUyVBvdjHhCNj7",
-                    "label": "Jad",
+                    "name": "Jad",
                     "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
                 },
                 "DEMWwWEEunP3uESO": {
                     "id": "DEMWwWEEunP3uESO",
-                    "label": "Długi Krok",
+                    "name": "Długi Krok",
                     "script": "args.actor.details.move.run *= 1.5"
                 },
                 "HAcV7oeCejIJP43v": {
                     "id": "HAcV7oeCejIJP43v",
-                    "label": "Dusiciel",
+                    "name": "Dusiciel",
                     "script": "args.actor.addCondition(\"entangled\")"
                 },
                 "hEkj1nU1brRzYRyo": {
                     "id": "hEkj1nU1brRzYRyo",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "qvLucnQHOAXPt0q4": {
                     "id": "qvLucnQHOAXPt0q4",
-                    "label": "Tropiciel",
+                    "name": "Tropiciel",
                     "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\"))) {\n   let sl = this.actor.characteristics.i.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 },
                 "YG6qLpm09WrEm3VK": {
                     "id": "YG6qLpm09WrEm3VK",
-                    "label": "Skryty",
+                    "name": "Skryty",
                     "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 },
                 "yXWM7kW5OtrJn11h": {
                     "id": "yXWM7kW5OtrJn11h",
-                    "label": "Regeneracja",
+                    "name": "Regeneracja",
                     "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")};\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> Odzyskana żywotność:  ${regen} .`;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`;\n      }\n   }\n   else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> wyrzucił ${regen} i odzyskał 1 punkt żywotności.`\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`\n      }\n   }\n   else {\n      chatData.content += `<b>${this.actor.name}</b> Rzut na regenerację: ${regen} - brak efektu.`\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}"
                 }
             },
@@ -672,56 +672,56 @@
             "effects": {
                 "AZJmwDrTSFXmYbmZ": {
                     "id": "AZJmwDrTSFXmYbmZ",
-                    "label": "Jad",
+                    "name": "Jad",
                     "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
                 },
                 "dTcIYwLvYA5t8sDU": {
                     "id": "dTcIYwLvYA5t8sDU",
-                    "label": "Jad",
+                    "name": "Jad",
                     "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
                 },
                 "Fxr0yjCvS8hoUpLV": {
                     "id": "Fxr0yjCvS8hoUpLV",
-                    "label": "Szybki"
+                    "name": "Szybki"
                 },
                 "GtthdHaTJAwVkrJ9": {
                     "id": "GtthdHaTJAwVkrJ9",
-                    "label": "Jad",
+                    "name": "Jad",
                     "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
                 },
                 "I9acOqq8FwdHK4jp": {
                     "id": "I9acOqq8FwdHK4jp",
-                    "label": "Jad",
+                    "name": "Jad",
                     "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
                 },
                 "jlXEMtg1ZSF4Yp6S": {
                     "id": "jlXEMtg1ZSF4Yp6S",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "lFRSbDt7k03dyVAN": {
                     "id": "lFRSbDt7k03dyVAN",
-                    "label": "Rój",
+                    "name": "Rój",
                     "script": "if (args.type == \"weapon\" && args.item.attackType == \"ranged\")\n   args.prefillModifiers.modifier += 40"
                 },
                 "lgsgK3ovI4m7TaNu": {
                     "id": "lgsgK3ovI4m7TaNu",
-                    "label": "Jad",
+                    "name": "Jad",
                     "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
                 },
                 "mqcsP2kkrwWbWbAi": {
                     "id": "mqcsP2kkrwWbWbAi",
-                    "label": "Rój",
+                    "name": "Rój",
                     "script": "args.wounds *= 5"
                 },
                 "nx0b4Nu9xX84g4Y4": {
                     "id": "nx0b4Nu9xX84g4Y4",
-                    "label": "Jad",
+                    "name": "Jad",
                     "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
                 },
                 "up34nRMaCkOJxNay": {
                     "id": "up34nRMaCkOJxNay",
-                    "label": "Jad",
+                    "name": "Jad",
                     "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
                 }
             },
@@ -783,12 +783,12 @@
             "effects": {
                 "6unzSR1G5M42Z6CZ": {
                     "id": "6unzSR1G5M42Z6CZ",
-                    "label": "Długi Krok",
+                    "name": "Długi Krok",
                     "script": "args.actor.details.move.run *= 1.5"
                 },
                 "nUshnmpYX9NBBgy6": {
                     "id": "nUshnmpYX9NBBgy6",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 }
             },
@@ -829,17 +829,17 @@
             "effects": {
                 "ewYHNH1NhqbrdUdT": {
                     "id": "ewYHNH1NhqbrdUdT",
-                    "label": "Zaraza",
+                    "name": "Zaraza",
                     "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "GaAgVavnDkXJ3MBM": {
                     "id": "GaAgVavnDkXJ3MBM",
-                    "label": "Mieszkaniec Lasu",
+                    "name": "Mieszkaniec Lasu",
                     "script": "if (args.type == \"skill\" && (args.item.name == game.i18n.localize(\"NAME.Climb\")  || args.item.name.includes(game.i18n.localize(\"NAME.Stealth\")))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 },
                 "QmCtqXe6YN7WlnOv": {
                     "id": "QmCtqXe6YN7WlnOv",
-                    "label": "Zakażony",
+                    "name": "Zakażony",
                     "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
                 }
             },
@@ -876,17 +876,17 @@
             "effects": {
                 "57dNdaZIiftVFa4X": {
                     "id": "57dNdaZIiftVFa4X",
-                    "label": "Zaraza",
+                    "name": "Zaraza",
                     "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "YearuHmEDjqfcbYG": {
                     "id": "YearuHmEDjqfcbYG",
-                    "label": "Mieszkaniec Lasu",
+                    "name": "Mieszkaniec Lasu",
                     "script": "if (args.type == \"skill\" && (args.item.name == game.i18n.localize(\"NAME.Climb\")  || args.item.name.includes(game.i18n.localize(\"NAME.Stealth\")))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 },
                 "zxS5779U5zWckwsT": {
                     "id": "zxS5779U5zWckwsT",
-                    "label": "Zakażony",
+                    "name": "Zakażony",
                     "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
                 }
             },
@@ -932,12 +932,12 @@
             "effects": {
                 "bqeYNnSwAUGdOlFn": {
                     "id": "bqeYNnSwAUGdOlFn",
-                    "label": "Zaraza",
+                    "name": "Zaraza",
                     "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "MReG9f3QPwSwxnvF": {
                     "id": "MReG9f3QPwSwxnvF",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 }
             },
@@ -1038,22 +1038,22 @@
             "effects": {
                 "DP3A4yKupZcsSVEa": {
                     "id": "DP3A4yKupZcsSVEa",
-                    "label": "Zaraza",
+                    "name": "Zaraza",
                     "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "EBgGr3gX7hyKDx4S": {
                     "id": "EBgGr3gX7hyKDx4S",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "l16xCMo9W8rmU2qE": {
                     "id": "l16xCMo9W8rmU2qE",
-                    "label": "Tropiciel",
+                    "name": "Tropiciel",
                     "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\"))) {\n   let sl = this.actor.characteristics.i.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 },
                 "tM906M93hAn36zTl": {
                     "id": "tM906M93hAn36zTl",
-                    "label": "Skryty",
+                    "name": "Skryty",
                     "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 }
             },
@@ -1076,17 +1076,17 @@
             "effects": {
                 "GxQbXgR3pFYMCnbA": {
                     "id": "GxQbXgR3pFYMCnbA",
-                    "label": "Skryty",
+                    "name": "Skryty",
                     "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 },
                 "kbI0TMBhGCVGWUJI": {
                     "id": "kbI0TMBhGCVGWUJI",
-                    "label": "Ziemnowodny",
+                    "name": "Ziemnowodny",
                     "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Swim\")) {\n    args.prefillModifiers.slBonus += this.actor.characteristics.ag.bonus;\n}"
                 },
                 "zZeCk4zXLUI80TP0": {
                     "id": "zZeCk4zXLUI80TP0",
-                    "label": "Dusiciel",
+                    "name": "Dusiciel",
                     "script": "args.actor.addCondition(\"entangled\")"
                 }
             },
@@ -1148,17 +1148,17 @@
             "effects": {
                 "1Mrt7AY40I5qtpf2": {
                     "id": "1Mrt7AY40I5qtpf2",
-                    "label": "Strach",
+                    "name": "Strach",
                     "script": "let value = parseInt(this.item.specification.value);\nlet name = this.actor.prototypeToken.name;\nif (game.user.isGM && game.user.targets.size) {\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  });\n  game.user.updateTokenTargets([]);\n  game.user.broadcastActivity({targets: []})\n}\nelse {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 },
                 "aDKbAbEnndqeqtnV": {
                     "id": "aDKbAbEnndqeqtnV",
-                    "label": "Rój",
+                    "name": "Rój",
                     "script": "if (args.type == \"weapon\" && args.item.attackType == \"ranged\")\n   args.prefillModifiers.modifier += 40"
                 },
                 "rqiLCymCM1k80Fjq": {
                     "id": "rqiLCymCM1k80Fjq",
-                    "label": "Rój",
+                    "name": "Rój",
                     "script": "args.wounds *= 5"
                 }
             },
@@ -1181,27 +1181,27 @@
             "effects": {
                 "4KDekULCgM5D43lo": {
                     "id": "4KDekULCgM5D43lo",
-                    "label": "Regeneracja",
+                    "name": "Regeneracja",
                     "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")};\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> Odzyskana żywotność:  ${regen} .`;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`;\n      }\n   }\n   else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> wyrzucił ${regen} i odzyskał 1 punkt żywotności.`\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`\n      }\n   }\n   else {\n      chatData.content += `<b>${this.actor.name}</b> Rzut na regenerację: ${regen} - brak efektu.`\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}"
                 },
                 "ctGcZ8iKfXP1XhPe": {
                     "id": "ctGcZ8iKfXP1XhPe",
-                    "label": "Szał Bojowy",
+                    "name": "Szał Bojowy",
                     "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
                 },
                 "fwYivzDn7ow90SqU": {
                     "id": "fwYivzDn7ow90SqU",
-                    "label": "Zakażony",
+                    "name": "Zakażony",
                     "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
                 },
                 "miucKXfXYxxrGg9k": {
                     "id": "miucKXfXYxxrGg9k",
-                    "label": "Konstrukt",
+                    "name": "Konstrukt",
                     "script": "args.wpb = args.sb"
                 },
                 "pIZn0gi5DawtO2k4": {
                     "id": "pIZn0gi5DawtO2k4",
-                    "label": "Zaraza",
+                    "name": "Zaraza",
                     "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 }
             },
@@ -1224,7 +1224,7 @@
             "effects": {
                 "7raTPW24WcAjGAEa": {
                     "id": "7raTPW24WcAjGAEa",
-                    "label": "Groza",
+                    "name": "Groza",
                     "script": "let value = parseInt(this.item.specification.value);\nlet name = this.actor.prototypeToken.name;\nif (game.user.isGM && game.user.targets.size) {\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name);\n  })\n  game.user.updateTokenTargets([]);\n  game.user.broadcastActivity({targets: []})\n}\nelse {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },
@@ -1247,26 +1247,26 @@
             "effects": {
                 "fJ2cKJpIEXsOjtgz": {
                     "id": "fJ2cKJpIEXsOjtgz",
-                    "label": "Długi Krok",
+                    "name": "Długi Krok",
                     "script": "args.actor.details.move.run *= 1.5"
                 },
                 "IdR5SsSJ3isgNHwm": {
                     "id": "IdR5SsSJ3isgNHwm",
-                    "label": "Zakażony",
+                    "name": "Zakażony",
                     "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
                 },
                 "sAFQuKd3sZtwF4AO": {
                     "id": "sAFQuKd3sZtwF4AO",
-                    "label": "Zaraza",
+                    "name": "Zaraza",
                     "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "uEepI4AVRxzrvnbi": {
                     "id": "uEepI4AVRxzrvnbi",
-                    "label": "Twardy"
+                    "name": "Twardy"
                 },
                 "vLCiRGKhIaBgcQrA": {
                     "id": "vLCiRGKhIaBgcQrA",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 }
             },
@@ -1300,7 +1300,7 @@
             "effects": {
                 "tOJQgYSoaltZanQ3": {
                     "id": "tOJQgYSoaltZanQ3",
-                    "label": "Odporność na Magię",
+                    "name": "Odporność na Magię",
                     "script": "if (args.type == \"cast\")\n       args.prefillModifiers.slBonus -= 2"
                 }
             },
@@ -1369,7 +1369,7 @@
             "effects": {
                 "zXyLukfpBQffMjB1": {
                     "id": "zXyLukfpBQffMjB1",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 }
             },
@@ -1398,17 +1398,17 @@
             "effects": {
                 "aqeOBcr9TbqHg8rK": {
                     "id": "aqeOBcr9TbqHg8rK",
-                    "label": "Atak Ogonem",
+                    "name": "Atak Ogonem",
                     "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value];\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value];\nif (attackerSize > actorSize) {\n   args.actor.addCondition(\"prone\");\n   ChatMessage.create({content: `<b>Atak Ogonem</b>: ${args.actor.prototypeToken.name} otrzymuje Stan @Condition[Powalenie]`, speaker : {alias: args.attacker.prototypeToken.name}});\n}"
                 },
                 "VzlGoVJEgniCqoOm": {
                     "id": "VzlGoVJEgniCqoOm",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "WNl1StgVFqYrrgup": {
                     "id": "WNl1StgVFqYrrgup",
-                    "label": "Jad",
+                    "name": "Jad",
                     "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
                 }
             },
@@ -1463,17 +1463,17 @@
             "effects": {
                 "AQSOb0ip3rTeKQSe": {
                     "id": "AQSOb0ip3rTeKQSe",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "lHrBRLdd2RfjZe04": {
                     "id": "lHrBRLdd2RfjZe04",
-                    "label": "Tropiciel",
+                    "name": "Tropiciel",
                     "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\"))) {\n   let sl = this.actor.characteristics.i.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 },
                 "YuslwdFq9jlMRYWd": {
                     "id": "YuslwdFq9jlMRYWd",
-                    "label": "Zaraza",
+                    "name": "Zaraza",
                     "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 }
             },
@@ -1499,12 +1499,12 @@
             "effects": {
                 "Olnjb0FfVEIu8Dfy": {
                     "id": "Olnjb0FfVEIu8Dfy",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "R5Cs02d94yP5yeCR": {
                     "id": "R5Cs02d94yP5yeCR",
-                    "label": "Atak Ogonem",
+                    "name": "Atak Ogonem",
                     "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value];\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value];\nif (attackerSize > actorSize) {\n   args.actor.addCondition(\"prone\");\n   ChatMessage.create({content: `<b>Atak Ogonem</b>: ${args.actor.prototypeToken.name} otrzymuje Stan @Condition[Powalenie]`, speaker : {alias: args.attacker.prototypeToken.name}});\n}"
                 }
             },
@@ -1533,22 +1533,22 @@
             "effects": {
                 "IqOfqzHSo07O42bW": {
                     "id": "IqOfqzHSo07O42bW",
-                    "label": "Długi Krok",
+                    "name": "Długi Krok",
                     "script": "args.actor.details.move.run *= 1.5"
                 },
                 "Lq3jDQRRPl81n1zQ": {
                     "id": "Lq3jDQRRPl81n1zQ",
-                    "label": "Zaraza",
+                    "name": "Zaraza",
                     "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "PcEJZM9L1pVonmks": {
                     "id": "PcEJZM9L1pVonmks",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "Xfrts1724Mg1fCvp": {
                     "id": "Xfrts1724Mg1fCvp",
-                    "label": "Zakażony",
+                    "name": "Zakażony",
                     "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
                 }
             },
@@ -1589,17 +1589,17 @@
             "effects": {
                 "g94D7Xf8rvTG1pZP": {
                     "id": "g94D7Xf8rvTG1pZP",
-                    "label": "Strach",
+                    "name": "Strach",
                     "script": "let value = parseInt(this.item.specification.value);\nlet name = this.actor.prototypeToken.name;\nif (game.user.isGM && game.user.targets.size) {\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  });\n  game.user.updateTokenTargets([]);\n  game.user.broadcastActivity({targets: []})\n}\nelse {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 },
                 "iRC0LbxUatdhYIRI": {
                     "id": "iRC0LbxUatdhYIRI",
-                    "label": "Szał Bojowy",
+                    "name": "Szał Bojowy",
                     "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
                 },
                 "QuhKHQc4wskQZfaJ": {
                     "id": "QuhKHQc4wskQZfaJ",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 }
             },
@@ -1639,27 +1639,27 @@
             "effects": {
                 "0G0YQcWhI9FIZV2H": {
                     "id": "0G0YQcWhI9FIZV2H",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "cL0khtn99Alcfu6X": {
                     "id": "cL0khtn99Alcfu6X",
-                    "label": "Szał Bojowy",
+                    "name": "Szał Bojowy",
                     "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
                 },
                 "PKm5XdZlzIyPES4k": {
                     "id": "PKm5XdZlzIyPES4k",
-                    "label": "Tropiciel",
+                    "name": "Tropiciel",
                     "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\"))) {\n   let sl = this.actor.characteristics.i.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 },
                 "XbQJexDDEreVMvWb": {
                     "id": "XbQJexDDEreVMvWb",
-                    "label": "Zaraza",
+                    "name": "Zaraza",
                     "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "XxRSNVXnvMYARNe1": {
                     "id": "XxRSNVXnvMYARNe1",
-                    "label": "Długi Krok",
+                    "name": "Długi Krok",
                     "script": "args.actor.details.move.run *= 1.5"
                 }
             },
@@ -1706,27 +1706,27 @@
             "effects": {
                 "KoTQebmQ0cj0Xyt1": {
                     "id": "KoTQebmQ0cj0Xyt1",
-                    "label": "Mieszkaniec Lasu",
+                    "name": "Mieszkaniec Lasu",
                     "script": "if (args.type == \"skill\" && (args.item.name == game.i18n.localize(\"NAME.Climb\")  || args.item.name.includes(game.i18n.localize(\"NAME.Stealth\")))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 },
                 "V5PnKDuND25WHadD": {
                     "id": "V5PnKDuND25WHadD",
-                    "label": "Atak Ogonem",
+                    "name": "Atak Ogonem",
                     "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value];\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value];\nif (attackerSize > actorSize) {\n   args.actor.addCondition(\"prone\");\n   ChatMessage.create({content: `<b>Atak Ogonem</b>: ${args.actor.prototypeToken.name} otrzymuje Stan @Condition[Powalenie]`, speaker : {alias: args.attacker.prototypeToken.name}});\n}"
                 },
                 "wfbLLo6NBnAGvsv1": {
                     "id": "wfbLLo6NBnAGvsv1",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "Ws7vLIKJGkhARFfl": {
                     "id": "Ws7vLIKJGkhARFfl",
-                    "label": "Jad",
+                    "name": "Jad",
                     "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
                 },
                 "ZWVFTCTzUJ9PNMqc": {
                     "id": "ZWVFTCTzUJ9PNMqc",
-                    "label": "Zakażony",
+                    "name": "Zakażony",
                     "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
                 }
             },
@@ -1778,12 +1778,12 @@
             "effects": {
                 "oSs7PpjCezuRbO4q": {
                     "id": "oSs7PpjCezuRbO4q",
-                    "label": "Długi Krok",
+                    "name": "Długi Krok",
                     "script": "args.actor.details.move.run *= 1.5"
                 },
                 "WRWwQXlbPuecT6Rt": {
                     "id": "WRWwQXlbPuecT6Rt",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 }
             },
@@ -1824,22 +1824,22 @@
             "effects": {
                 "gV7u0gkGjd7e104i": {
                     "id": "gV7u0gkGjd7e104i",
-                    "label": "Strach",
+                    "name": "Strach",
                     "script": "let value = parseInt(this.item.specification.value);\nlet name = this.actor.prototypeToken.name;\nif (game.user.isGM && game.user.targets.size) {\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  });\n  game.user.updateTokenTargets([]);\n  game.user.broadcastActivity({targets: []})\n}\nelse {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 },
                 "MKIdS8288qVwdktI": {
                     "id": "MKIdS8288qVwdktI",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "RxHIWFoZFen5wq0X": {
                     "id": "RxHIWFoZFen5wq0X",
-                    "label": "Konstrukt",
+                    "name": "Konstrukt",
                     "script": "args.wpb = args.sb"
                 },
                 "te4iHJZxCnazYyuC": {
                     "id": "te4iHJZxCnazYyuC",
-                    "label": "Zaraza",
+                    "name": "Zaraza",
                     "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 }
             },
@@ -1865,17 +1865,17 @@
             "effects": {
                 "hqaGKb66rmZOzKmd": {
                     "id": "hqaGKb66rmZOzKmd",
-                    "label": "Tropiciel",
+                    "name": "Tropiciel",
                     "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\"))) {\n   let sl = this.actor.characteristics.i.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 },
                 "KZHbYxdSFPPIGvnN": {
                     "id": "KZHbYxdSFPPIGvnN",
-                    "label": "Zaraza",
+                    "name": "Zaraza",
                     "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "oI4k12fesVuWcQ08": {
                     "id": "oI4k12fesVuWcQ08",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 }
             },
@@ -1901,22 +1901,22 @@
             "effects": {
                 "hOq8PVdAmbaybEZY": {
                     "id": "hOq8PVdAmbaybEZY",
-                    "label": "Celny Strzał",
+                    "name": "Celny Strzał",
                     "script": "args.actor.flags.rangedDamageIncrease += 1"
                 },
                 "L9y8czfFuDcKdvvW": {
                     "id": "L9y8czfFuDcKdvvW",
-                    "label": "Celny Strzał",
+                    "name": "Celny Strzał",
                     "script": "args.actor.flags.rangedDamageIncrease += 1"
                 },
                 "wvAlyqES4wdX8uWH": {
                     "id": "wvAlyqES4wdX8uWH",
-                    "label": "Twardziel",
+                    "name": "Twardziel",
                     "script": "args.multiplier.tb += 1"
                 },
                 "YN1BHO02pnOOQNus": {
                     "id": "YN1BHO02pnOOQNus",
-                    "label": "Celny Strzał",
+                    "name": "Celny Strzał",
                     "script": "args.actor.flags.rangedDamageIncrease += 1"
                 }
             },
@@ -1968,27 +1968,27 @@
             "effects": {
                 "0UNgfpiAb8N9Y3DK": {
                     "id": "0UNgfpiAb8N9Y3DK",
-                    "label": "Długi Krok",
+                    "name": "Długi Krok",
                     "script": "args.actor.details.move.run *= 1.5"
                 },
                 "5hnLqyWuIc3Gfuf9": {
                     "id": "5hnLqyWuIc3Gfuf9",
-                    "label": "Rój",
+                    "name": "Rój",
                     "script": "if (args.type == \"weapon\" && args.item.attackType == \"ranged\")\n   args.prefillModifiers.modifier += 40"
                 },
                 "7fQU4Bru8lQZxnbl": {
                     "id": "7fQU4Bru8lQZxnbl",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "BVzoQjaRA9CurB8p": {
                     "id": "BVzoQjaRA9CurB8p",
-                    "label": "Zaraza",
+                    "name": "Zaraza",
                     "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "sFDU1ghXQlAFpE7v": {
                     "id": "sFDU1ghXQlAFpE7v",
-                    "label": "Rój",
+                    "name": "Rój",
                     "script": "args.wounds *= 5"
                 }
             },
@@ -2049,22 +2049,22 @@
             "effects": {
                 "0FIrnHwrgwP3EHHO": {
                     "id": "0FIrnHwrgwP3EHHO",
-                    "label": "Odporność na Magię",
+                    "name": "Odporność na Magię",
                     "script": "if (args.type == \"cast\")\n       args.prefillModifiers.slBonus -= 2"
                 },
                 "3T0aaV8hko4NoJni": {
                     "id": "3T0aaV8hko4NoJni",
-                    "label": "Tropiciel",
+                    "name": "Tropiciel",
                     "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\"))) {\n   let sl = this.actor.characteristics.i.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 },
                 "5v9bqwxYNynPP86w": {
                     "id": "5v9bqwxYNynPP86w",
-                    "label": "Skryty",
+                    "name": "Skryty",
                     "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 },
                 "Li1GkrmZ24SXxLjS": {
                     "id": "Li1GkrmZ24SXxLjS",
-                    "label": "Mieszkaniec Lasu",
+                    "name": "Mieszkaniec Lasu",
                     "script": "if (args.type == \"skill\" && (args.item.name == game.i18n.localize(\"NAME.Climb\")  || args.item.name.includes(game.i18n.localize(\"NAME.Stealth\")))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 }
             },
@@ -2133,27 +2133,27 @@
             "effects": {
                 "1Y0FHMq0KHA49EFv": {
                     "id": "1Y0FHMq0KHA49EFv",
-                    "label": "Zaraza",
+                    "name": "Zaraza",
                     "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "4QleJhHGp2DXsStM": {
                     "id": "4QleJhHGp2DXsStM",
-                    "label": "Długi Krok",
+                    "name": "Długi Krok",
                     "script": "args.actor.details.move.run *= 1.5"
                 },
                 "6OhiDxi26wq9sV2p": {
                     "id": "6OhiDxi26wq9sV2p",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "QtFmvlxRHMCjeW3D": {
                     "id": "QtFmvlxRHMCjeW3D",
-                    "label": "Tropiciel",
+                    "name": "Tropiciel",
                     "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\"))) {\n   let sl = this.actor.characteristics.i.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 },
                 "VhfIZVF6YlnpqdnY": {
                     "id": "VhfIZVF6YlnpqdnY",
-                    "label": "Szał Bojowy",
+                    "name": "Szał Bojowy",
                     "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
                 }
             },
@@ -2203,27 +2203,27 @@
             "effects": {
                 "B32NmuUIRuV9mQSk": {
                     "id": "B32NmuUIRuV9mQSk",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "C2pE9fd3qOIH9KSz": {
                     "id": "C2pE9fd3qOIH9KSz",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "OGivLVdVoT6H3rNc": {
                     "id": "OGivLVdVoT6H3rNc",
-                    "label": "Zaraza",
+                    "name": "Zaraza",
                     "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "W0ZCppsMI1uadFxK": {
                     "id": "W0ZCppsMI1uadFxK",
-                    "label": "Mieszkaniec Lasu",
+                    "name": "Mieszkaniec Lasu",
                     "script": "if (args.type == \"skill\" && (args.item.name == game.i18n.localize(\"NAME.Climb\")  || args.item.name.includes(game.i18n.localize(\"NAME.Stealth\")))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 },
                 "WkxXGBWJRCNeJiq9": {
                     "id": "WkxXGBWJRCNeJiq9",
-                    "label": "Zakażony",
+                    "name": "Zakażony",
                     "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
                 }
             },
@@ -2266,7 +2266,7 @@
             "effects": {
                 "YTUcjOSNS0tab2qC": {
                     "id": "YTUcjOSNS0tab2qC",
-                    "label": "Skryty",
+                    "name": "Skryty",
                     "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 }
             },
@@ -2332,12 +2332,12 @@
             "effects": {
                 "9MpsAdM1z4Iz847T": {
                     "id": "9MpsAdM1z4Iz847T",
-                    "label": "Długi Krok",
+                    "name": "Długi Krok",
                     "script": "args.actor.details.move.run *= 1.5"
                 },
                 "rGrZd5lWTROBeYdU": {
                     "id": "rGrZd5lWTROBeYdU",
-                    "label": "Szał Bojowy",
+                    "name": "Szał Bojowy",
                     "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
                 }
             },
@@ -2451,22 +2451,22 @@
             "effects": {
                 "aWuh4mvcUREGgITl": {
                     "id": "aWuh4mvcUREGgITl",
-                    "label": "Zakażony",
+                    "name": "Zakażony",
                     "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
                 },
                 "E8VUoXmrPhsjO6wt": {
                     "id": "E8VUoXmrPhsjO6wt",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "QhSLr0cWvRaQUp5T": {
                     "id": "QhSLr0cWvRaQUp5T",
-                    "label": "Zaraza",
+                    "name": "Zaraza",
                     "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "vTg3YNSmOjtPASjX": {
                     "id": "vTg3YNSmOjtPASjX",
-                    "label": "Groza",
+                    "name": "Groza",
                     "script": "let value = parseInt(this.item.specification.value);\nlet name = this.actor.prototypeToken.name;\nif (game.user.isGM && game.user.targets.size) {\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name);\n  })\n  game.user.updateTokenTargets([]);\n  game.user.broadcastActivity({targets: []})\n}\nelse {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },
@@ -2523,27 +2523,27 @@
             "effects": {
                 "6kNrq95i4DO3bERL": {
                     "id": "6kNrq95i4DO3bERL",
-                    "label": "Tropiciel",
+                    "name": "Tropiciel",
                     "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\"))) {\n   let sl = this.actor.characteristics.i.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 },
                 "DHEpsVPMxgz4YEBD": {
                     "id": "DHEpsVPMxgz4YEBD",
-                    "label": "Dekoncentrujący",
+                    "name": "Dekoncentrujący",
                     "script": "args.prefillModifiers.modifier -= 20"
                 },
                 "lgA5hKW9RvRZ8ZF0": {
                     "id": "lgA5hKW9RvRZ8ZF0",
-                    "label": "Szał Bojowy",
+                    "name": "Szał Bojowy",
                     "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
                 },
                 "mDuKRFfaLTwEHOq9": {
                     "id": "mDuKRFfaLTwEHOq9",
-                    "label": "Strach",
+                    "name": "Strach",
                     "script": "let value = parseInt(this.item.specification.value);\nlet name = this.actor.prototypeToken.name;\nif (game.user.isGM && game.user.targets.size) {\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  });\n  game.user.updateTokenTargets([]);\n  game.user.broadcastActivity({targets: []})\n}\nelse {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 },
                 "Y6h1aNL9xJiu7ZgF": {
                     "id": "Y6h1aNL9xJiu7ZgF",
-                    "label": "Regeneracja",
+                    "name": "Regeneracja",
                     "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")};\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> Odzyskana żywotność:  ${regen} .`;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`;\n      }\n   }\n   else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> wyrzucił ${regen} i odzyskał 1 punkt żywotności.`\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`\n      }\n   }\n   else {\n      chatData.content += `<b>${this.actor.name}</b> Rzut na regenerację: ${regen} - brak efektu.`\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}"
                 }
             },
@@ -2572,32 +2572,32 @@
             "effects": {
                 "49ACIsgTnGtu4gLu": {
                     "id": "49ACIsgTnGtu4gLu",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "dstnZMHpScBQxyyC": {
                     "id": "dstnZMHpScBQxyyC",
-                    "label": "Konstrukt",
+                    "name": "Konstrukt",
                     "script": "args.wpb = args.sb"
                 },
                 "Gv7DNzuCVNnni8Ox": {
                     "id": "Gv7DNzuCVNnni8Ox",
-                    "label": "Zaraza",
+                    "name": "Zaraza",
                     "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "HWton3fD0O4haA1O": {
                     "id": "HWton3fD0O4haA1O",
-                    "label": "Strach",
+                    "name": "Strach",
                     "script": "let value = parseInt(this.item.specification.value);\nlet name = this.actor.prototypeToken.name;\nif (game.user.isGM && game.user.targets.size) {\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  });\n  game.user.updateTokenTargets([]);\n  game.user.broadcastActivity({targets: []})\n}\nelse {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 },
                 "RT4ESTox6v57m0TO": {
                     "id": "RT4ESTox6v57m0TO",
-                    "label": "Dekoncentrujący",
+                    "name": "Dekoncentrujący",
                     "script": "args.prefillModifiers.modifier -= 20"
                 },
                 "T4mCjWLkjhUJYnSf": {
                     "id": "T4mCjWLkjhUJYnSf",
-                    "label": "Zakażony",
+                    "name": "Zakażony",
                     "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
                 }
             },
@@ -2620,7 +2620,7 @@
             "effects": {
                 "dle3lIXmTOn2icAD": {
                     "id": "dle3lIXmTOn2icAD",
-                    "label": "Groza",
+                    "name": "Groza",
                     "script": "let value = parseInt(this.item.specification.value);\nlet name = this.actor.prototypeToken.name;\nif (game.user.isGM && game.user.targets.size) {\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name);\n  })\n  game.user.updateTokenTargets([]);\n  game.user.broadcastActivity({targets: []})\n}\nelse {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 }
             },
@@ -2640,37 +2640,37 @@
             "effects": {
                 "2sNt3r9r3TxcS3Mn": {
                     "id": "2sNt3r9r3TxcS3Mn",
-                    "label": "Zaraza",
+                    "name": "Zaraza",
                     "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "bEyqgfTDcEfyFX5h": {
                     "id": "bEyqgfTDcEfyFX5h",
-                    "label": "Konstrukt",
+                    "name": "Konstrukt",
                     "script": "args.wpb = args.sb"
                 },
                 "dAVMjmHzUY9Iu3Jr": {
                     "id": "dAVMjmHzUY9Iu3Jr",
-                    "label": "Długi Krok",
+                    "name": "Długi Krok",
                     "script": "args.actor.details.move.run *= 1.5"
                 },
                 "fn5rur4oPtQcYOtf": {
                     "id": "fn5rur4oPtQcYOtf",
-                    "label": "Dekoncentrujący",
+                    "name": "Dekoncentrujący",
                     "script": "args.prefillModifiers.modifier -= 20"
                 },
                 "jS6JjuVotk1qMAdw": {
                     "id": "jS6JjuVotk1qMAdw",
-                    "label": "Strach",
+                    "name": "Strach",
                     "script": "let value = parseInt(this.item.specification.value);\nlet name = this.actor.prototypeToken.name;\nif (game.user.isGM && game.user.targets.size) {\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  });\n  game.user.updateTokenTargets([]);\n  game.user.broadcastActivity({targets: []})\n}\nelse {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 },
                 "MeUFxAGHn8sBIQPD": {
                     "id": "MeUFxAGHn8sBIQPD",
-                    "label": "Tropiciel",
+                    "name": "Tropiciel",
                     "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\"))) {\n   let sl = this.actor.characteristics.i.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 },
                 "XQ1gi8Yf8yZljDlW": {
                     "id": "XQ1gi8Yf8yZljDlW",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 }
             },
@@ -2702,27 +2702,27 @@
             "effects": {
                 "bpkQmrr8idJ1a2nL": {
                     "id": "bpkQmrr8idJ1a2nL",
-                    "label": "Zakażony",
+                    "name": "Zakażony",
                     "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
                 },
                 "l8MNGZiH05ol80fC": {
                     "id": "l8MNGZiH05ol80fC",
-                    "label": "Zaraza",
+                    "name": "Zaraza",
                     "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "MrOjhZLrQXj2MnQN": {
                     "id": "MrOjhZLrQXj2MnQN",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "oKLgYvM78rTHvG9u": {
                     "id": "oKLgYvM78rTHvG9u",
-                    "label": "Atak Ogonem",
+                    "name": "Atak Ogonem",
                     "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value];\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value];\nif (attackerSize > actorSize) {\n   args.actor.addCondition(\"prone\");\n   ChatMessage.create({content: `<b>Atak Ogonem</b>: ${args.actor.prototypeToken.name} otrzymuje Stan @Condition[Powalenie]`, speaker : {alias: args.attacker.prototypeToken.name}});\n}"
                 },
                 "YtLiz2xUwvF1mj2S": {
                     "id": "YtLiz2xUwvF1mj2S",
-                    "label": "Tropiciel",
+                    "name": "Tropiciel",
                     "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\"))) {\n   let sl = this.actor.characteristics.i.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 }
             },
@@ -2766,17 +2766,17 @@
             "effects": {
                 "H9nEvznJNmC6aD4v": {
                     "id": "H9nEvznJNmC6aD4v",
-                    "label": "Szał Bojowy",
+                    "name": "Szał Bojowy",
                     "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
                 },
                 "jkpfCxuk6QLS3Ang": {
                     "id": "jkpfCxuk6QLS3Ang",
-                    "label": "Skoczny",
+                    "name": "Skoczny",
                     "script": "this.actor.details.move.run *= 2"
                 },
                 "LQsrUYm7M42rptNN": {
                     "id": "LQsrUYm7M42rptNN",
-                    "label": "Zaraza",
+                    "name": "Zaraza",
                     "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 }
             },
@@ -2832,32 +2832,32 @@
             "effects": {
                 "1oH1ylww2XXvCgdX": {
                     "id": "1oH1ylww2XXvCgdX",
-                    "label": "Rój",
+                    "name": "Rój",
                     "script": "if (args.type == \"weapon\" && args.item.attackType == \"ranged\")\n   args.prefillModifiers.modifier += 40"
                 },
                 "Bv323jo9bqLWMEU0": {
                     "id": "Bv323jo9bqLWMEU0",
-                    "label": "Jad",
+                    "name": "Jad",
                     "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
                 },
                 "Hc7uwM7V7e7k1izk": {
                     "id": "Hc7uwM7V7e7k1izk",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "HeHsfnqkOe5K4U8r": {
                     "id": "HeHsfnqkOe5K4U8r",
-                    "label": "Sieć",
+                    "name": "Sieć",
                     "script": "args.actor.addCondition(\"entangled\")"
                 },
                 "qfHKTSZ6miVcSoSV": {
                     "id": "qfHKTSZ6miVcSoSV",
-                    "label": "Rój",
+                    "name": "Rój",
                     "script": "args.wounds *= 5"
                 },
                 "qunKHRapK48sB5fF": {
                     "id": "qunKHRapK48sB5fF",
-                    "label": "Mieszkaniec Lasu",
+                    "name": "Mieszkaniec Lasu",
                     "script": "if (args.type == \"skill\" && (args.item.name == game.i18n.localize(\"NAME.Climb\")  || args.item.name.includes(game.i18n.localize(\"NAME.Stealth\")))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 }
             },
@@ -2919,22 +2919,22 @@
             "effects": {
                 "0Qm0sltf7LI6OS8H": {
                     "id": "0Qm0sltf7LI6OS8H",
-                    "label": "Zakażony",
+                    "name": "Zakażony",
                     "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
                 },
                 "tC23Vjf8UInFMUUe": {
                     "id": "tC23Vjf8UInFMUUe",
-                    "label": "Zaraza",
+                    "name": "Zaraza",
                     "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "tTkp9d5hUxKZNROU": {
                     "id": "tTkp9d5hUxKZNROU",
-                    "label": "Mieszkaniec Lasu",
+                    "name": "Mieszkaniec Lasu",
                     "script": "if (args.type == \"skill\" && (args.item.name == game.i18n.localize(\"NAME.Climb\")  || args.item.name.includes(game.i18n.localize(\"NAME.Stealth\")))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 },
                 "v8ab0CxHts03RoTj": {
                     "id": "v8ab0CxHts03RoTj",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 }
             },
@@ -2974,22 +2974,22 @@
             "effects": {
                 "Gd3ciWnuttQ0eagx": {
                     "id": "Gd3ciWnuttQ0eagx",
-                    "label": "Jad",
+                    "name": "Jad",
                     "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
                 },
                 "K716oGYB6WDANWMg": {
                     "id": "K716oGYB6WDANWMg",
-                    "label": "Rój",
+                    "name": "Rój",
                     "script": "if (args.type == \"weapon\" && args.item.attackType == \"ranged\")\n   args.prefillModifiers.modifier += 40"
                 },
                 "MhhGC5b9344Ecqnk": {
                     "id": "MhhGC5b9344Ecqnk",
-                    "label": "Zaraza",
+                    "name": "Zaraza",
                     "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "rPpBfzaGWof5yf0b": {
                     "id": "rPpBfzaGWof5yf0b",
-                    "label": "Rój",
+                    "name": "Rój",
                     "script": "args.wounds *= 5"
                 }
             },
@@ -3024,32 +3024,32 @@
             "effects": {
                 "5vGOusPp76nuFjCS": {
                     "id": "5vGOusPp76nuFjCS",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "DGDpCWDOKKcaplbe": {
                     "id": "DGDpCWDOKKcaplbe",
-                    "label": "Szał Bojowy",
+                    "name": "Szał Bojowy",
                     "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
                 },
                 "R4fA4w2yTpmct7a7": {
                     "id": "R4fA4w2yTpmct7a7",
-                    "label": "Regeneracja",
+                    "name": "Regeneracja",
                     "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")};\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> Odzyskana żywotność:  ${regen} .`;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`;\n      }\n   }\n   else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> wyrzucił ${regen} i odzyskał 1 punkt żywotności.`\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`\n      }\n   }\n   else {\n      chatData.content += `<b>${this.actor.name}</b> Rzut na regenerację: ${regen} - brak efektu.`\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}"
                 },
                 "VM4pv8D3no7z7Gvw": {
                     "id": "VM4pv8D3no7z7Gvw",
-                    "label": "Tropiciel",
+                    "name": "Tropiciel",
                     "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\"))) {\n   let sl = this.actor.characteristics.i.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 },
                 "WbtH8VyrGiMhVDF1": {
                     "id": "WbtH8VyrGiMhVDF1",
-                    "label": "Groza",
+                    "name": "Groza",
                     "script": "let value = parseInt(this.item.specification.value);\nlet name = this.actor.prototypeToken.name;\nif (game.user.isGM && game.user.targets.size) {\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name);\n  })\n  game.user.updateTokenTargets([]);\n  game.user.broadcastActivity({targets: []})\n}\nelse {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
                 },
                 "yPCY4AzgmpJhjmUu": {
                     "id": "yPCY4AzgmpJhjmUu",
-                    "label": "Strach",
+                    "name": "Strach",
                     "script": "let value = parseInt(this.item.specification.value);\nlet name = this.actor.prototypeToken.name;\nif (game.user.isGM && game.user.targets.size) {\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  });\n  game.user.updateTokenTargets([]);\n  game.user.broadcastActivity({targets: []})\n}\nelse {\n  game.wfrp4e.utility.postFear(value, name);\n}"
                 }
             },
@@ -3087,17 +3087,17 @@
             "effects": {
                 "dlQkrrgpAQLRGHsP": {
                     "id": "dlQkrrgpAQLRGHsP",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "Rm3d5PT9jADL4gay": {
                     "id": "Rm3d5PT9jADL4gay",
-                    "label": "Jad",
+                    "name": "Jad",
                     "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
                 },
                 "wcaZyIkoc6mIj05E": {
                     "id": "wcaZyIkoc6mIj05E",
-                    "label": "Atak Ogonem",
+                    "name": "Atak Ogonem",
                     "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value];\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value];\nif (attackerSize > actorSize) {\n   args.actor.addCondition(\"prone\");\n   ChatMessage.create({content: `<b>Atak Ogonem</b>: ${args.actor.prototypeToken.name} otrzymuje Stan @Condition[Powalenie]`, speaker : {alias: args.attacker.prototypeToken.name}});\n}"
                 }
             },
@@ -3141,15 +3141,15 @@
             "effects": {
                 "nZUvl5pnY3xEBtkg": {
                     "id": "nZUvl5pnY3xEBtkg",
-                    "label": "Przebiegły"
+                    "name": "Przebiegły"
                 },
                 "OziS2EaX3BzYrkYI": {
                     "id": "OziS2EaX3BzYrkYI",
-                    "label": "Sprytny"
+                    "name": "Sprytny"
                 },
                 "T2E7JWk3xMOy3WC9": {
                     "id": "T2E7JWk3xMOy3WC9",
-                    "label": "Twardy"
+                    "name": "Twardy"
                 }
             },
             "items": {
@@ -3174,7 +3174,7 @@
             "effects": {
                 "bLNxCmpxb9SlSBFC": {
                     "id": "bLNxCmpxb9SlSBFC",
-                    "label": "Długi Krok",
+                    "name": "Długi Krok",
                     "script": "args.actor.details.move.run *= 1.5"
                 }
             },
@@ -3215,32 +3215,32 @@
             "effects": {
                 "7VBwjr1LazKiJJh9": {
                     "id": "7VBwjr1LazKiJJh9",
-                    "label": "Zaraza",
+                    "name": "Zaraza",
                     "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "bhOGqfpoKJEhqbxd": {
                     "id": "bhOGqfpoKJEhqbxd",
-                    "label": "Zimnokrwisty",
+                    "name": "Zimnokrwisty",
                     "script": "if (args.test.characteristicKey == \"wp\")\n   args.test.preData.canReverse = true"
                 },
                 "Cvlcy71V4UoNUDFj": {
                     "id": "Cvlcy71V4UoNUDFj",
-                    "label": "Długi Krok",
+                    "name": "Długi Krok",
                     "script": "args.actor.details.move.run *= 1.5"
                 },
                 "Gxa1i8z4wfyCpoga": {
                     "id": "Gxa1i8z4wfyCpoga",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "MQShn2Ex6g9j3zTI": {
                     "id": "MQShn2Ex6g9j3zTI",
-                    "label": "Jad",
+                    "name": "Jad",
                     "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
                 },
                 "TPQXGnY2hMQdbwGn": {
                     "id": "TPQXGnY2hMQdbwGn",
-                    "label": "Atak Ogonem",
+                    "name": "Atak Ogonem",
                     "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value];\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value];\nif (attackerSize > actorSize) {\n   args.actor.addCondition(\"prone\");\n   ChatMessage.create({content: `<b>Atak Ogonem</b>: ${args.actor.prototypeToken.name} otrzymuje Stan @Condition[Powalenie]`, speaker : {alias: args.attacker.prototypeToken.name}});\n}"
                 }
             },
@@ -3275,22 +3275,22 @@
             "effects": {
                 "i8TsOAxC47ofJl4x": {
                     "id": "i8TsOAxC47ofJl4x",
-                    "label": "Pancerz",
+                    "name": "Pancerz",
                     "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));;\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
                 },
                 "L73KcIKLc1jZcLFR": {
                     "id": "L73KcIKLc1jZcLFR",
-                    "label": "Jad",
+                    "name": "Jad",
                     "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
                 },
                 "pftSjYK6DieRahrK": {
                     "id": "pftSjYK6DieRahrK",
-                    "label": "Zaraza",
+                    "name": "Zaraza",
                     "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "rf1Ie1fPN8s8EpAU": {
                     "id": "rf1Ie1fPN8s8EpAU",
-                    "label": "Mieszkaniec Lasu",
+                    "name": "Mieszkaniec Lasu",
                     "script": "if (args.type == \"skill\" && (args.item.name == game.i18n.localize(\"NAME.Climb\")  || args.item.name.includes(game.i18n.localize(\"NAME.Stealth\")))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
                 }
             },
