@@ -458,7 +458,7 @@ Hooks.on("setup", async function () {
 
 	WFRP4E.loreEffects = {
 		beasts: {
-			label: "Tradycja Zwierząt",
+			name: "Tradycja Zwierząt",
 			icon: "modules/wfrp4e-core/icons/spells/beasts.png",
 			transfer: true,
 			flags: {
@@ -484,7 +484,7 @@ Hooks.on("setup", async function () {
 			},
 		},
 		death: {
-			label: "Tradycja Śmierci",
+			name: "Tradycja Śmierci",
 			icon: "modules/wfrp4e-core/icons/spells/death.png",
 			transfer: true,
 			flags: {
@@ -500,7 +500,7 @@ Hooks.on("setup", async function () {
 			},
 		},
 		fire: {
-			label: "Tradycja Ognia",
+			name: "Tradycja Ognia",
 			icon: "modules/wfrp4e-core/icons/spells/fire.png",
 			transfer: true,
 			flags: {
@@ -516,7 +516,7 @@ Hooks.on("setup", async function () {
 			},
 		},
 		heavens: {
-			label: "Tradycja Niebios",
+			name: "Tradycja Niebios",
 			icon: "modules/wfrp4e-core/icons/spells/heavens.png",
 			transfer: true,
 			flags: {
@@ -548,7 +548,7 @@ Hooks.on("setup", async function () {
 			},
 		},
 		metal: {
-			label: "Tradycja Metalu",
+			name: "Tradycja Metalu",
 			icon: "modules/wfrp4e-core/icons/spells/metal.png",
 			transfer: true,
 			flags: {
@@ -585,7 +585,7 @@ Hooks.on("setup", async function () {
 			},
 		},
 		life: {
-			label: "Tradycja Życia",
+			name: "Tradycja Życia",
 			icon: "modules/wfrp4e-core/icons/spells/life.png",
 			transfer: true,
 			flags: {
@@ -612,7 +612,7 @@ Hooks.on("setup", async function () {
 			},
 		},
 		light: {
-			label: "Tradycja Światła",
+			name: "Tradycja Światła",
 			icon: "modules/wfrp4e-core/icons/spells/light.png",
 			transfer: true,
 			flags: {
@@ -633,7 +633,7 @@ Hooks.on("setup", async function () {
 			},
 		},
 		shadow: {
-			label: "Tradycja Cieni",
+			name: "Tradycja Cieni",
 			icon: "modules/wfrp4e-core/icons/spells/shadow.png",
 			transfer: true,
 			flags: {
@@ -655,7 +655,7 @@ Hooks.on("setup", async function () {
 			},
 		},
 		hedgecraft: {
-			label: "Tradycja Guślarstwa",
+			name: "Tradycja Guślarstwa",
 			icon: "modules/wfrp4e-core/icons/spells/hedgecraft.png",
 			transfer: true,
 			flags: {
@@ -668,7 +668,7 @@ Hooks.on("setup", async function () {
 			},
 		},
 		witchcraft: {
-			label: "Tradycja Czarownictwa",
+			name: "Tradycja Czarownictwa",
 			icon: "modules/wfrp4e-core/icons/spells/witchcraft.png",
 			transfer: true,
 			flags: {
@@ -687,7 +687,7 @@ Hooks.on("setup", async function () {
 
 	WFRP4E.symptomEffects = {
         "WFRP4E.Symptom.Blight": {
-			label: "Uwiąd",
+			name: "Uwiąd",
 			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
 			transfer: true,
 			flags: {
@@ -716,7 +716,7 @@ Hooks.on("setup", async function () {
 			},
 		},
         "WFRP4E.Symptom.Buboes": {
-			label: "Dymienica",
+			name: "Dymienica",
 			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
 			transfer: true,
 			flags: {
@@ -741,7 +741,7 @@ Hooks.on("setup", async function () {
 			},
 		},
         "WFRP4E.Symptom.Convulsions": {
-			label: "Konwulsje",
+			name: "Konwulsje",
 			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
 			transfer: true,
 			flags: {
@@ -771,7 +771,7 @@ Hooks.on("setup", async function () {
 			},
 		},
 		"WFRP4E.Symptom.Fever": {
-			label: "Gorączka",
+			name: "Gorączka",
 			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
 			transfer: true,
 			flags: {
@@ -798,7 +798,7 @@ Hooks.on("setup", async function () {
 			},
 		},
         "WFRP4E.Symptom.Flux": {
-			label: "Biegunka",
+			name: "Biegunka",
 			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
 			transfer: true,
 			flags: {
@@ -808,7 +808,7 @@ Hooks.on("setup", async function () {
 			},
 		},
         "WFRP4E.Symptom.Lingering": {
-			label: "Nawroty",
+			name: "Nawroty",
 			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
 			transfer: true,
 			flags: {
@@ -818,7 +818,7 @@ Hooks.on("setup", async function () {
 			},
 		},
         "WFRP4E.Symptom.CoughsandSneezes": {
-			label: "Kaszel i katar",
+			name: "Kaszel i katar",
 			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
 			transfer: true,
 			flags: {
@@ -828,7 +828,7 @@ Hooks.on("setup", async function () {
 			},
 		},
         "WFRP4E.Symptom.Gangrene": {
-			label: "Gangrena",
+			name: "Gangrena",
 			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
 			transfer: true,
 			flags: {
@@ -850,7 +850,7 @@ Hooks.on("setup", async function () {
 			},
 		},
         "WFRP4E.Symptom.Malaise": {
-			label: "Apatia",
+			name: "Apatia",
 			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
 			transfer: true,
 			flags: {
@@ -871,7 +871,7 @@ Hooks.on("setup", async function () {
 			},
 		},
         "WFRP4E.Symptom.Nausea": {
-			label: "Nudności",
+			name: "Nudności",
 			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
 			transfer: true,
 			flags: {
@@ -890,7 +890,7 @@ Hooks.on("setup", async function () {
 			},
 		},
         "WFRP4E.Symptom.Pox": {
-			label: "Wysypka",
+			name: "Wysypka",
 			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
 			transfer: true,
 			flags: {
@@ -909,7 +909,7 @@ Hooks.on("setup", async function () {
 			},
 		},
         "WFRP4E.Symptom.Wounded": {
-			label: "Uciążliwa Rana",
+			name: "Uciążliwa Rana",
 			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
 			transfer: true,
 			flags: {
