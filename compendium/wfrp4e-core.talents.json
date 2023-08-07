@@ -984,7 +984,7 @@
         "Wealthy": {
             "id": "OROfMcVqRnZHINkU",
             "name": "Majętny",
-            "description": "<p>Jesteś bajecznie bogaty i rzadko kiedy brakuje ci pieniędzy. Kiedy zarabiasz (włączając w to Zajęcie Dochód), zarabiasz +1 złotą koronę więcej za każdy poziom tego Talentu.</p>",
+            "description": "<p>Jesteś bajecznie bogaty i rzadko kiedy brakuje ci pieniędzy. Kiedy zarabiasz (włączając w to Zajęcie <i>Dochód</i>), zarabiasz +1 złotą koronę więcej za każdy poziom tego Talentu.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.OROfMcVqRnZHINkU"
         },
         "Berserk Charge": {
@@ -1004,7 +1004,7 @@
         "Lip Reading": {
             "id": "OXfa9uwG36syzaix",
             "name": "Czytanie z Ruchu Warg",
-            "description": "<p>Patrząc na usta innych, potrafisz dowiedzieć się, co mówią. Jeśli mo- żesz bez przeszkód obserwować dolną część twarzy istoty, wolno ci wykonać <strong>Test Percepcji</strong>, by zrozumieć, co mówi.</p>",
+            "description": "<p>Patrząc na usta innych, potrafisz dowiedzieć się, co mówią. Jeśli możesz bez przeszkód obserwować dolną część twarzy istoty, wolno ci wykonać <strong>Test Percepcji</strong>, by zrozumieć, co mówi.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.OXfa9uwG36syzaix",
             "tests": "Testy Percepcji związane z wykorzystaniem tego Talentu"
         },
@@ -1024,7 +1024,7 @@
         "Secret Identity": {
             "id": "PJ4oxDExnuFNr2Fi",
             "name": "Sekretna Tożsamość",
-            "description": "<p>Posiadasz alter ego, które jest bogatszym lub biedniejszym człowiekiem od ciebie. Wybierz Profesję, na którą przystanie MG. Dopóki jesteś odpowiednio ubrany, dopóty możesz korzystać z oferowanego przez nią Statusu, zamiast swojego. To oznacza, że korzystasz z jej modyfikatorów do Testów Ogłady, a nawet możesz zignorować skutki działania Talentu Przestępca. Utrzymywanie sekretnej toż- samości wymaga udanych Testów Umiejętności Występy (Aktorstwo), gdy spotykasz kogoś, kto może cię przejrzeć. Każde wykupienie tego Talentu pozwala ci na stworzenie dodatkowej sekretnej tożsamości.</p>",
+            "description": "<p>Posiadasz alter ego, które jest bogatszym lub biedniejszym człowiekiem od ciebie. Wybierz Profesję, na którą przystanie MG. Dopóki jesteś odpowiednio ubrany, dopóty możesz korzystać z oferowanego przez nią Statusu, zamiast swojego. To oznacza, że korzystasz z jej modyfikatorów do Testów Ogłady, a nawet możesz zignorować skutki działania Talentu Przestępca. Utrzymywanie sekretnej tożsamości wymaga udanych Testów Umiejętności Występy (Aktorstwo), gdy spotykasz kogoś, kto może cię przejrzeć. Każde wykupienie tego Talentu pozwala ci na stworzenie dodatkowej sekretnej tożsamości.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.PJ4oxDExnuFNr2Fi",
             "tests": "Testy Występów (Aktorstwo), by uwiarygodnić swoją sekretną tożsamość"
         },
@@ -1083,7 +1083,7 @@
         "Bless": {
             "id": "QyjWtSdnVMT04l5Y",
             "name": "Błogosławieństwo (Boska Tradycja)",
-            "description": "<p>Któryś z bogów czuwa nad tobą i odpowiada na twoje proste modlitwy. Możesz wykorzystywać błogosławieństwa swojego pana, co opisano w Rozdziale 7: Religie i wierzenia. Normalnie możesz znać tylko jedną boską tradycję na Talent Błogosławieństwo.</p>",
+            "description": "<p>Któryś z bogów czuwa nad tobą i odpowiada na twoje proste modlitwy. Możesz wykorzystywać błogosławieństwa swojego pana, co opisano w <b>Rozdziale 7: Religie i wierzenia</b>. Normalnie możesz znać tylko jedną boską tradycję na Talent Błogosławieństwo.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.QyjWtSdnVMT04l5Y"
         },
         "Sturdy": {
@@ -1103,7 +1103,7 @@
         "Criminal": {
             "id": "r180vP86SlwyJc8W",
             "name": "Przestępca",
-            "description": "<p>Jesteś bandytą, który zarabia na swojej działalności i niekiedy się z tym nie kryje. Jeśli w trakcie gry będziesz zarabiał lub oddasz się Zajęciu Dochód, odwołaj się do poniższej tabeli. :</p> <p> </p> <div> <table title=\"\" border=\"1\" summary=\"\" cellspacing=\"0\" cellpadding=\"0\"> <tbody> <tr> <td> <p>Poziom Profesji</p> </td> <td> <p>Dodatkowe pieniądze na liczbę wykupień Talentu</p> </td> </tr> <tr> <td> <p>1</p> </td> <td> <p>+2k10 miedzianych pensów</p> </td> </tr> <tr> <td> <p>2</p> </td> <td> <p>+1k10 srebrnych szylingów</p> </td> </tr> <tr> <td> <p>3 </p> </td> <td> <p>+2k10 srebrnych szylingów</p> </td> </tr> <tr> <td> <p>4</p> </td> <td> <p>+1 złota korona</p> </td> </tr> </tbody> </table> </div> <p> </p> <p>Ponieważ nie kryjesz się ze swoją przestępczą naturą, inni automatycznie uważają cię za osobę niższego Statusu, chyba że sami posiadają ten Talent. Wtedy wasz Status jest ustalany normalnie. Od ciebie zależy, jak można poznać, że jesteś kryminalistą: czy to wię- zienne tatuaże, czy obcesowy sposób bycia. Lokalne władze i straże są wobec ciebie podejrzliwe i zawsze patrzą ci na ręce, a im więcej razy wykupisz ten Talent, tym za większego zbira uchodzisz. Bezpo- średnie skutki zależą od MG. Kryminaliści bez Talentu Przestępca zarabiają znacznie mniejsze pieniądze, ale zachowują dawny Status. Za zgodą MG możesz wydać tyle PD, ile cię kosztował, by pozbyć się tego Talentu.</p>",
+            "description": "<p>Jesteś bandytą, który zarabia na swojej działalności i niekiedy się z tym nie kryje. Jeśli w trakcie gry będziesz zarabiał lub oddasz się Zajęciu <i>Dochód</i>, odwołaj się do poniższej tabeli:</p> <p> </p> <div> <table title=\"\" border=\"1\" summary=\"\" cellspacing=\"0\" cellpadding=\"0\"> <tbody> <tr> <td> <p>Poziom Profesji</p> </td> <td> <p>Dodatkowe pieniądze na liczbę wykupień Talentu</p> </td> </tr> <tr> <td> <p>1</p> </td> <td> <p>+2k10 miedzianych pensów</p> </td> </tr> <tr> <td> <p>2</p> </td> <td> <p>+1k10 srebrnych szylingów</p> </td> </tr> <tr> <td> <p>3 </p> </td> <td> <p>+2k10 srebrnych szylingów</p> </td> </tr> <tr> <td> <p>4</p> </td> <td> <p>+1 złota korona</p> </td> </tr> </tbody> </table> </div> <p> </p> <p>Ponieważ nie kryjesz się ze swoją przestępczą naturą, inni automatycznie uważają cię za osobę niższego Statusu, chyba że sami posiadają ten Talent. Wtedy wasz Status jest ustalany normalnie. Od ciebie zależy, jak można poznać, że jesteś kryminalistą: czy to więzienne tatuaże, czy obcesowy sposób bycia. Lokalne władze i straże są wobec ciebie podejrzliwe i zawsze patrzą ci na ręce, a im więcej razy wykupisz ten Talent, tym za większego zbira uchodzisz. Bezpośrednie skutki zależą od MG. Kryminaliści bez Talentu Przestępca zarabiają znacznie mniejsze pieniądze, ale zachowują dawny Status. Za zgodą MG możesz wydać tyle PD, ile cię kosztował, by pozbyć się tego Talentu.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.r180vP86SlwyJc8W",
             "effects": {
                 "tS0NjO6ujjQH6sV9": {
@@ -1207,7 +1207,7 @@
         "In-fighter": {
             "id": "tX9R9rSYm2YyEnOK",
             "name": "Skrócenie Dystansu",
-            "description": "<p> Wiesz, jak przyciągnąć do siebie przeciwnika, i nie dotyczą cię modyfikatory za walkę z wrogiem, który ma broń dłuższą niż Twoja. Jeśli używasz opcjonalnych zasad walki kontaktowej, otrzymujesz premię +10 do trafienia przeciwnika.</p>",
+            "description": "<p> Wiesz, jak przyciągnąć do siebie przeciwnika, i nie dotyczą cię modyfikatory za walkę z wrogiem, który ma broń dłuższą niż Twoja. Jeśli używasz <b>opcjonalnych zasad walki kontaktowej</b>, otrzymujesz premię +10 do trafienia przeciwnika.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.tX9R9rSYm2YyEnOK",
             "effects": {
                 "Eu8Ajiixpb7rdqVW": {
@@ -1240,7 +1240,7 @@
         "Iron Jaw": {
             "id": "UaDGF5MBFBwPq5YU",
             "name": "Żelazna Szczęka",
-            "description": "<p> Jesteś twardy i potrafisz wytrzymać najsilniejsze ciosy. Jeśli jakiś efekt nakłada na postać co najmniej jeden Stan Oszołomienie, gracz może wykonać <strong>Wymagający (+0) Test Wytrzymałości</strong>, by go zignorować. Każdy PS pozwala ci uniknąć dodatkowego Stanu.</p>",
+            "description": "<p> Jesteś twardy i potrafisz wytrzymać najsilniejsze ciosy. Jeśli jakiś efekt nakłada na postać co najmniej jeden Stan <i>Oszołomienie</i>, gracz może wykonać <strong>Wymagający (+0) Test Wytrzymałości</strong>, by go zignorować. Każdy PS pozwala ci uniknąć dodatkowego Stanu.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.UaDGF5MBFBwPq5YU",
             "tests": "Test odporności wykonywana przeciw Oszołomieniu"
         },
@@ -1280,7 +1280,7 @@
         "Resistance": {
             "id": "vMYEkrWj0ip6ZOdv",
             "name": "Odporny na (Zagrożenie)",
-            "description": "<p>Twoja wielka wytrwałość pozwala ci poradzić sobie z niebezpieczeństwem. Automatycznie zdajesz pierwszy Test opierania się przeciwko konkretnemu typowi zagrożenia na danej sesji. Znane są Odporności na Choroby, Magię, Mutacje czy Trucizny. Jeśli w Te- ście ważne są Poziomy Sukcesu, to za ich liczbę przyjmujesz Bonus z Wytrzymałości. </p>",
+            "description": "<p>Twoja wielka wytrwałość pozwala ci poradzić sobie z niebezpieczeństwem. Automatycznie zdajesz pierwszy Test opierania się przeciwko konkretnemu typowi zagrożenia na danej sesji. Znane są Odporności na Choroby, Magię, Mutacje czy Trucizny. Jeśli w Teście ważne są Poziomy Sukcesu, to za ich liczbę przyjmujesz Bonus z Wytrzymałości. </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.vMYEkrWj0ip6ZOdv",
             "tests": "Wszystkie testy, gdy opierasz się powiązanemu zagrożeniu",
             "effects": {
@@ -1293,7 +1293,7 @@
         "Invoke": {
             "id": "voV0C2ar1bKpcpnH",
             "name": "Inwokacja",
-            "description": "<p> Zostałeś pobłogosławiony przez swego boskiego patrona, dzięki czemu zyskujesz zdolność czynienia jednego z jego Cudów. Mo- żesz wykupywać kolejne cuda za 100 PD pomnożone przez liczbę obecnie znanych cudów. Pełne zasady tego, jak się ich uczysz, znajdują się w <strong>Rozdziale 7: Religie i wierzenia</strong>. W normalnych okolicznościach nie możesz wykupić tego Talentu więcej niż jeden raz. Co więcej, nie możesz też kupić Talentów <em>Magia Prosta</em> i <em>Magia Tajemna</em>, jeśli posiadasz Talent Inwokacja. Po wydaniu 100 PD możesz się pozbyć tego Talentu, ale natychmiast utracisz dostęp do wszystkich zapewnianych przez niego cudów. Narażasz się też na gniew swego boga, a MG obmyśli, jak będzie się on przejawiał.</p>",
+            "description": "<p> Zostałeś pobłogosławiony przez swego boskiego patrona, dzięki czemu zyskujesz zdolność czynienia jednego z jego Cudów. Możesz wykupywać kolejne cuda za 100 PD pomnożone przez liczbę obecnie znanych cudów. Pełne zasady tego, jak się ich uczysz, znajdują się w <strong>Rozdziale 7: Religie i wierzenia</strong>. W normalnych okolicznościach nie możesz wykupić tego Talentu więcej niż jeden raz. Co więcej, nie możesz też kupić Talentów <em>Magia Prosta</em> i <em>Magia Tajemna</em>, jeśli posiadasz Talent Inwokacja. Po wydaniu 100 PD możesz się pozbyć tego Talentu, ale natychmiast utracisz dostęp do wszystkich zapewnianych przez niego cudów. Narażasz się też na gniew swego boga, a MG obmyśli, jak będzie się on przejawiał.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.voV0C2ar1bKpcpnH"
         },
         "Enclosed Fighter": {
@@ -1361,14 +1361,14 @@
         "Concoct": {
             "id": "wXcJWxJdw0ib5b8W",
             "name": "Przyrządzanie Mikstur",
-            "description": "<p>Wiesz, jak przyrządzać napary, wywary i susze. Możesz podjąć się jednego darmowego Zajęcia Wytwórstwa, by użyć Rzemiosła (Aptekarstwa) bez dostępu do Warsztatu. Pozostałe Zajęcia Wytwórstwa należy przeprowadzić normalnie.</p>",
+            "description": "<p>Wiesz, jak przyrządzać napary, wywary i susze. Możesz podjąć się jednego darmowego Zajęcia <i>Wytwórstwa</i>, by użyć Rzemiosła (Aptekarstwa) bez dostępu do Warsztatu. Pozostałe Zajęcia <i>Wytwórstwa</i> należy przeprowadzić normalnie.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.wXcJWxJdw0ib5b8W",
             "tests": "Rzemiosło (Aptekarstwo)"
         },
         "Night Vision": {
             "id": "x0WMGwuQzReXcQrs",
             "name": "Widzenie w Ciemności",
-            "description": "<p>Bardzo dobrze widzisz w naturalnych ciemnościach. Jeśli masz źró- dło choćby słabego blasku (światło gwiazd, księżyca czy bioluminescencję), widzisz wyraźnie na 20 metrów na każde wykupienie tego Talentu. To nie koniec. Dla ciebie oświetlenie okolicy sięga dalej o 20 metrów na każde wykupienie tego Talentu. </p>",
+            "description": "<p>Bardzo dobrze widzisz w naturalnych ciemnościach. Jeśli masz źródło choćby słabego blasku (światło gwiazd, księżyca czy bioluminescencję), widzisz wyraźnie na 20 metrów na każde wykupienie tego Talentu. To nie koniec. Dla ciebie oświetlenie okolicy sięga dalej o 20 metrów na każde wykupienie tego Talentu. </p>",
             "sourceId": "Compendium.wfrp4e-core.talents.x0WMGwuQzReXcQrs",
             "tests": "Testy percepcji przy słabym świetle"
         },
@@ -1415,7 +1415,7 @@
         "Implacable": {
             "id": "xx8SgdWYEjKct7ym",
             "name": "Nieubłagany",
-            "description": "<p>Trzeba nie lada wysiłku, by cię wykończyć. Twojej postaci nie dotyczy utrata żywotności, spowodowana Stanem Krwawienie. Każde wykupienie tego Talentu powoduje, że możesz zignorować jedną ranę spowodowaną przez ten Stan.</p>",
+            "description": "<p>Trzeba nie lada wysiłku, by cię wykończyć. Twojej postaci nie dotyczy utrata żywotności, spowodowana Stanem <i>Krwawienie</i>. Każde wykupienie tego Talentu powoduje, że możesz zignorować jedną ranę spowodowaną przez ten Stan.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.xx8SgdWYEjKct7ym",
             "effects": {
                 "O6qLwcpRh7LjEm4o": {
