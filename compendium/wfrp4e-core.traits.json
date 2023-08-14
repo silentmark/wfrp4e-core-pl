@@ -377,7 +377,7 @@
         "Terror": {
             "id": "kJNAY1YRaCy9IgmT",
             "name": "Groza",
-            "description": "<p>Stworzenie w sposób nadnaturalny wzbudza mrożącą krew w żyłach Grozę w innych istotach. Poziom Grozy równy jest podanej wartości.</p>",
+            "description": "<p>Stworzenie w sposób nadnaturalny wzbudza mrożącą krew w żyłach <i>Grozę</i> w innych istotach. Poziom Grozy równy jest podanej wartości.</p>",
             "sourceId": "Compendium.wfrp4e-core.traits.kJNAY1YRaCy9IgmT",
             "effects": {
                 "xTL3QAampKjHdKVh": {
@@ -391,7 +391,7 @@
         "Constrictor": {
             "id": "KynNUYYKzTMeHrKl",
             "name": "Dusiciel",
-            "description": "<p>Stworzenie potrafi ściskać i miażdżyć ofiary. Każdy udany rzut na trafienie daje celowi Stan Pochwycenie. Jeżeli do tego dojdzie, stworzenie może wejść w Chwyt.</p>",
+            "description": "<p>Stworzenie potrafi ściskać i miażdżyć ofiary. Każdy udany rzut na trafienie daje celowi Stan @Condition[Pochwycenie]. Jeżeli do tego dojdzie, stworzenie może wejść w Chwyt.</p>",
             "sourceId": "Compendium.wfrp4e-core.traits.KynNUYYKzTMeHrKl",
             "effects": {
                 "txcmOLjyNoW2BLSu": {
@@ -404,13 +404,13 @@
         "Mutation": {
             "id": "lV7Bxi3T3ps4QBlc",
             "name": "Mutacja",
-            "description": "<p>Stworzenie zostało „pobłogosławione” mutacją. Wykonaj dla niego rzut w Tabeli Spaczenia Fizycznego.</p>",
+            "description": "<p>Stworzenie zostało „pobłogosławione” mutacją. Wykonaj dla niego rzut w @Table[mutatephys]{Tabeli Spaczenia Fizycznego}.</p>",
             "sourceId": "Compendium.wfrp4e-core.traits.lV7Bxi3T3ps4QBlc"
         },
         "Corrosive Blood": {
             "id": "M5QSWOYt2Rbv2yxW",
             "name": "Kwasowa Krew",
-            "description": "<p>Krew stworzenia jest żrąca. Za każdym razem, gdy zostanie ono ranione, tryska z niego krew i wszystkie związane z nim walką cele dostają 1k10 Ran. Są one normalnie obniżane przez Bonus z Wytrzymałości i Punkty Pancerza, ale wynoszą minimum 1.</p>",
+            "description": "<p>Krew stworzenia jest żrąca. Za każdym razem, gdy zostanie ono ranione, tryska z niego krew i wszystkie związane z nim walką cele dostają [[/r 1d10]] Ran. Są one normalnie obniżane przez Bonus z Wytrzymałości i Punkty Pancerza, ale wynoszą minimum 1.</p>",
             "sourceId": "Compendium.wfrp4e-core.traits.M5QSWOYt2Rbv2yxW",
             "effects": {
                 "mzNcVAruDOTiCGhS": {
@@ -436,7 +436,7 @@
         "Magical": {
             "id": "mDgEMOoJpi8DkRYb",
             "name": "Magiczny",
-            "description": "<p>Stworzenie spowite jest magią. Wszystkie jego ataki liczą się jako Magiczne, co oznacza, że może ranić istoty wrażliwe tylko na ataki magiczne.</p>",
+            "description": "<p>Stworzenie spowite jest magią. Wszystkie jego ataki liczą się jako <i>Magiczne</i>, co oznacza, że może ranić istoty wrażliwe tylko na ataki magiczne.</p>",
             "sourceId": "Compendium.wfrp4e-core.traits.mDgEMOoJpi8DkRYb"
         },
         "Distracting": {
@@ -585,7 +585,7 @@
         "Construct": {
             "id": "UB4mDroL6S1F9B4u",
             "name": "Konstrukt",
-            "description": "<p>Stworzenie jest konstruktem z magii, całkiem bezrozumnym i spajanym przez magiczne więzy. Nie ma Cech Inteligencja, Siła Woli ani Ogłada i nigdy nie musi ich testować. Jeśli brakuje czarodzieja, który by je kontrolował, albo stworzenie nie posiada cechy Terytorialny, wałęsa się bezmyślnie, podążając za nurtami przenikającej otoczenie magii.</p><p>Gdy trzeba obliczyć Żywotność stwora i wymagane jest określenie Bonusu z Siły Woli, użyj jego Bonusu z Siły. Wszystkie ataki stworzenia są Magiczne.</p>",
+            "description": "<p>Stworzenie jest konstruktem z magii, całkiem bezrozumnym i spajanym przez magiczne więzy. Nie ma Cech Inteligencja, Siła Woli ani Ogłada i nigdy nie musi ich testować. Jeśli brakuje czarodzieja, który by je kontrolował, albo stworzenie nie posiada cechy <i>Terytorialny</i>, wałęsa się bezmyślnie, podążając za nurtami przenikającej otoczenie magii.</p><p>Gdy trzeba obliczyć Żywotność stwora i wymagane jest określenie Bonusu z Siły Woli, użyj jego Bonusu z Siły. Wszystkie ataki stworzenia są <i>Magiczne</i>.</p>",
             "sourceId": "Compendium.wfrp4e-core.traits.UB4mDroL6S1F9B4u",
             "effects": {
                 "mkDK0Yqvb4JqL1zq": {
@@ -611,7 +611,7 @@
         "Tail Attack": {
             "id": "UnJ25lL8aUzem5JO",
             "name": "Atak Ogonem",
-            "description": "<p>Stworzenie potrafi zwalać z nóg przeciwników machnięciem ogona. W swojej Turze może wykonać Darmowy Atak, wydając 1 Przewagę. Ogon zadaje tyle Obrażeń, ile wynosi podana wartość, która już zawiera Bonus z Siły stworzenia. Przeciwnicy o Rozmiarze mniejszym niż stworzenie, którzy odniosą jakiekolwiek Rany na skutek tego ataku, dostają także Stan Powalony.</p>",
+            "description": "<p>Stworzenie potrafi zwalać z nóg przeciwników machnięciem ogona. W swojej Turze może wykonać Darmowy Atak, wydając 1 Przewagę. Ogon zadaje tyle Obrażeń, ile wynosi podana wartość, <i>która już zawiera Bonus z Siły stworzenia</i>. Przeciwnicy o <i>Rozmiarze</i> mniejszym niż stworzenie, którzy odniosą jakiekolwiek Rany na skutek tego ataku, dostają także Stan @Condition[Powalenie]{Powalony}.</p>",
             "sourceId": "Compendium.wfrp4e-core.traits.UnJ25lL8aUzem5JO",
             "effects": {
                 "3KXZhIkHukLOpg2l": {
@@ -625,20 +625,20 @@
         "Breath": {
             "id": "uqGxFOEqeurwkAO3",
             "name": "Zionięcie ()",
-            "description": "<p>Stworzenie posługuje się zionięciem jako potężną bronią. W swojej Turze, kosztem 2 Przewag, może aktywować Zionięcie jako Darmowy Atak. Wybierz 1 cel, który stworzenie widzi w promieniu 20 + Bonus z Wytrzymałości metrów. Trafione zostają wszystkie postacie wokół tego celu w promieniu tylu metrów, ile wynosi Bonus z Siły, podobnie jak wszystkie postacie znajdujące się między stworzeniem a celem. Przeprowadź Test Przeciwstawny Umiejętności Strzeleckie/Unik przeciwko wszystkim objętym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Każdy cel, który przegrał Test, otrzymuje trafienie zadające wskazaną wartość Obrażeń. Co więcej, jeśli przy Cesze Stworzenia wymieniony jest jeden z opisanych niżej typów zionięcia, zastosuj wskazane zasady.</p><p><b>Dym</b>: Obszar wypełnia się dymem, który zasłania pole widzenia na tyle Rund, ile wynosi Bonus z Wytrzymałości.</p><p><b>Elektryczność</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Oszołomienie.</p><p><b>Kwas</b>: Noszony przez objęte efektem postaci pancerze oraz wszelka broń dostają 1 punkt Uszkodzeń.</p><p><b>Ogień</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Podpalenie.</p><p><b>Trucizna</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Zatrucie.</p><p><b>Zimno</b>: Cele dostają jeden Stan Oszołomiony za każde pełne 5 odniesionych Ran (minimalnie 1).</p><p>Stworzenie jest odporne na własne Zionięcie. Ten atak jest Magiczny.</p>",
+            "description": "<p>Stworzenie posługuje się zionięciem jako potężną bronią. W swojej Turze, kosztem 2 Przewag, może aktywować <i>Zionięcie</i> jako Darmowy Atak. Wybierz 1 cel, który stworzenie widzi w promieniu 20 + Bonus z Wytrzymałości metrów. Trafione zostają wszystkie postacie wokół tego celu w promieniu tylu metrów, ile wynosi Bonus z Siły, podobnie jak wszystkie postacie znajdujące się między stworzeniem a celem. Przeprowadź <b>Test Przeciwstawny Umiejętności Strzeleckie/Unik</b> przeciwko wszystkim objętym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Każdy cel, który przegrał Test, otrzymuje trafienie zadające wskazaną wartość Obrażeń. Co więcej, jeśli przy Cesze Stworzenia wymieniony jest jeden z opisanych niżej typów zionięcia, zastosuj wskazane zasady.</p><p><b>Dym</b>: Obszar wypełnia się dymem, który zasłania pole widzenia na tyle Rund, ile wynosi Bonus z Wytrzymałości.</p><p><b>Elektryczność</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan @Condition[Oszołomienie].</p><p><b>Kwas</b>: Noszony przez objęte efektem postaci pancerze oraz wszelka broń dostają 1 punkt Uszkodzeń.</p><p><b>Ogień</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan @Condition[Podpalenie].</p><p><b>Trucizna</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan @Condition[Zatrucie].</p><p><b>Zimno</b>: Cele dostają jeden Stan @Condition[Oszołomienie]{Oszołomiony} za każde pełne 5 odniesionych Ran (minimalnie 1).</p><p>Stworzenie jest odporne na własne <i>Zionięcie</i>. Ten atak jest <i>Magiczny</i>.</p>",
             "sourceId": "Compendium.wfrp4e-core.traits.uqGxFOEqeurwkAO3",
             "specification": "# (Typ)"
         },
         "Die Hard": {
             "id": "UsJ2uIOOtHA7JqD5",
             "name": "Nie do Zdarcia",
-            "description": "<p>Bez względu na to, jak mocno obrywa stworzenie, wciąż się podnosi. Wszystkie Rany Krytyczne, których wynikiem nie jest śmierć, mogą zostać wyleczone; wystarczy połączyć potrzebne części ciała w odpowiednich miejscach, może unieruchamiając je klamrami lub dużymi kołkami, a stwór zaraz będzie gotowy funkcjonować dalej. Nawet „śmierć” można „wyleczyć”, jeśli do ciała zostaną przymocowane odpowiednie części takie jak stracona głowa. Jeśli nastąpi zgon, a wszystkie części ciała będą na swoim miejscu, stworzenie może wykonywać po swojej śmierci Wymagający (+0) Test Odporności z PS wynoszącym 6 na początku każdej Rundy (przez tyle Rund, ile wynosi jego Bonus z Wytrzymałości). Jeśli Test jest udany, stworzenie z charkotem budzi się do życia z 1 punktem Żywotności.</p>",
+            "description": "<p>Bez względu na to, jak mocno obrywa stworzenie, wciąż się podnosi. Wszystkie Rany Krytyczne, których wynikiem nie jest śmierć, mogą zostać wyleczone; wystarczy połączyć potrzebne części ciała w odpowiednich miejscach, może unieruchamiając je klamrami lub dużymi kołkami, a stwór zaraz będzie gotowy funkcjonować dalej. Nawet „śmierć” można „wyleczyć”, jeśli do ciała zostaną przymocowane odpowiednie części takie jak stracona głowa. Jeśli nastąpi zgon, a wszystkie części ciała będą na swoim miejscu, stworzenie może wykonywać po swojej śmierci <b>Wymagający (+0) Test Odporności</b> z <b>PS wynoszącym 6<?b> na początku każdej Rundy (przez tyle Rund, ile wynosi jego Bonus z Wytrzymałości). Jeśli Test jest udany, stworzenie z charkotem budzi się do życia z 1 punktem Żywotności.</p>",
             "sourceId": "Compendium.wfrp4e-core.traits.UsJ2uIOOtHA7JqD5"
         },
         "Infected": {
             "id": "V0c3qBU1CMm8bmsW",
             "name": "Zaraza",
-            "description": "<p>Stworzenie (albo jego broń) przenosi paskudną infekcję. Jeśli spowoduje utratę Żywotności żyjącego przeciwnika, musi on zdać Łatwy (+40) Test Odporności, inaczej nabawi się Ropiejącej Rany.</p>",
+            "description": "<p>Stworzenie (albo jego broń) przenosi paskudną infekcję. Jeśli spowoduje utratę Żywotności żyjącego przeciwnika, musi on zdać <b>Łatwy (+40) Test Odporności</b>, inaczej nabawi się @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącej Rany}.</p>",
             "sourceId": "Compendium.wfrp4e-core.traits.V0c3qBU1CMm8bmsW",
             "effects": {
                 "6rMAx2bGefOkubv8": {
@@ -651,14 +651,14 @@
         "Trained": {
             "id": "V0naR1YbYCl0KIxp",
             "name": "Wyszkolony",
-            "description": "<p>Ta cecha reprezentuje zwierzęta, które zostały wyszkolone z użyciem Umiejętności Tresura. Umiejętności znane zwierzęciu podane są w nawiasie. Możesz tworzyć własne wyszkolone umiejętności.</p><p><strong>Aportujący</strong>: Zwierzę zostało nauczone aportowania. Normalnie jest to zarezerwowane dla psów i podobnych stworzeń.</p><p><strong>Bojowy</strong>: Zwierzę zostało przyuczone do udziału w walce i dostaje +10 do Walki Wręcz. Ponadto może ignorować Cechę Stworzenia Płochliwy w odniesieniu do głośnych dźwięków.</p><p><strong>Maskotka</strong>: Zwierzę zostało nauczone zabawiania innych. Dostaje premię +10 do odpowiednich Testów Muzyki, Sztuki lub Występów.</p><p><strong>Magiczny</strong>: Zwierzę zostało nauczone ignorowania cechy Płochliwy w odniesieniu do magii. To cecha wymagana przez czarodziejów, którzy chcą kupić konia.</p><p><strong>Pociągowy</strong>: Zwierzę zostało nauczone ciągnąć karetę, wóz, pług i tym podobne.</p><p><strong>Powracający</strong>: Zwierzę zostało nauczone powracania do domu, gdy zostanie wypuszczone lub zgubione.</p><p><strong>Stóżujący</strong>: Zwierzę zostało nauczone pozostawania w miejscu lub patrolowania okolicy jako strażnik. Uzyskuje Cechę Stworzenia Terytorialny.</p><p><strong>Ujarzmiony</strong>: Zwierzę zostało nauczone ignorowania swojej cechy Zwierzęcy. Dostaje 2k10 Ogłady.</p><p><strong>Wierzchowiec</strong>: Zwierzę pozwala się dosiadać. Niektóre stworzenia są wyjątkowo wojownicze i nie zaakceptują jeźdźca, który nie posiada odpowiedniej Umiejętności. Zatem jeśli chcesz dosiadać gryfa, musisz mieć Umiejętność Jeździectwo (Gryfy).</p>",
+            "description": "<p>Ta cecha reprezentuje zwierzęta, które zostały wyszkolone z użyciem Umiejętności Tresura. Umiejętności znane zwierzęciu podane są w nawiasie. Możesz tworzyć własne wyszkolone umiejętności.</p><p><strong>Aportujący</strong>: Zwierzę zostało nauczone aportowania. Normalnie jest to zarezerwowane dla psów i podobnych stworzeń.</p><p><strong>Bojowy</strong>: Zwierzę zostało przyuczone do udziału w walce i dostaje +10 do Walki Wręcz. Ponadto może ignorować Cechę Stworzenia <i>Płochliwy</i> w odniesieniu do głośnych dźwięków.</p><p><strong>Maskotka</strong>: Zwierzę zostało nauczone zabawiania innych. Dostaje premię +10 do odpowiednich Testów Muzyki, Sztuki lub Występów.</p><p><strong>Magiczny</strong>: Zwierzę zostało nauczone ignorowania cechy <i>Płochliwy</i> w odniesieniu do magii. To cecha wymagana przez czarodziejów, którzy chcą kupić konia.</p><p><strong>Pociągowy</strong>: Zwierzę zostało nauczone ciągnąć karetę, wóz, pług i tym podobne.</p><p><strong>Powracający</strong>: Zwierzę zostało nauczone powracania do domu, gdy zostanie wypuszczone lub zgubione.</p><p><strong>Stóżujący</strong>: Zwierzę zostało nauczone pozostawania w miejscu lub patrolowania okolicy jako strażnik. Uzyskuje Cechę Stworzenia <i>Terytorialny</i>.</p><p><strong>Ujarzmiony</strong>: Zwierzę zostało nauczone ignorowania swojej cechy <i>Zwierzęcy</i>. Dostaje 2k10 Ogłady.</p><p><strong>Wierzchowiec</strong>: Zwierzę pozwala się dosiadać. Niektóre stworzenia są wyjątkowo wojownicze i nie zaakceptują jeźdźca, który nie posiada odpowiedniej Umiejętności. Zatem jeśli chcesz dosiadać gryfa, musisz mieć Umiejętność Jeździectwo (Gryfy).</p>",
             "sourceId": "Compendium.wfrp4e-core.traits.V0naR1YbYCl0KIxp",
             "specification": "Wyszkolona Umiejętność"
         },
         "Daemonic": {
             "id": "v3uzEthcq0JRar0J",
             "name": "Demoniczny",
-            "description": "<p>Esencję stworzenia stanowi surowa magia, a w tym, co uchodzi za jej żyły, płynie paskudna posoka. Demoniczne stwory nie muszą zaspokajać normalnych potrzeb życiowych. Nie potrzebują jedzenia, wodyani powietrza.</p><p>Wszystkie ataki stworzenia są Magiczne. Kiedy stworzenie zostanie trafione, rzuć 1k10. Jeśli wyrzuci tyle, ile wynosi próg, lub więcej, cios zostaje zignorowany, nawet jeśli jest to Trafienie Krytyczne. Za tojeśli Żywotność stworzenia zostanie zredukowana do 0, jego dusza natychmiast powraca do Królestw Chaosu. Stworzenie zostaje usuniętez rozgrywki.</p>",
+            "description": "<p>Esencję stworzenia stanowi surowa magia, a w tym, co uchodzi za jej żyły, płynie paskudna posoka. Demoniczne stwory nie muszą zaspokajać normalnych potrzeb życiowych. Nie potrzebują jedzenia, wody ani powietrza.</p><p>Wszystkie ataki stworzenia są <i>Magiczne</i>. Kiedy stworzenie zostanie trafione, rzuć 1k10. Jeśli wyrzuci tyle, ile wynosi próg, lub więcej, cios zostaje zignorowany, nawet jeśli jest to Trafienie Krytyczne. Za to jeśli Żywotność stworzenia zostanie zredukowana do 0, jego dusza natychmiast powraca do Królestw Chaosu. Stworzenie zostaje usunięte z rozgrywki.</p>",
             "sourceId": "Compendium.wfrp4e-core.traits.v3uzEthcq0JRar0J",
             "specification": "Wartość #"
         },
@@ -693,7 +693,7 @@
         "Leader": {
             "id": "wGTD2LezlI6Atyy0",
             "name": "Przywódca",
-            "description": "<p>Stworzenie jest doświadczonym przywódcą. Dostaje premię +10 do Ogłady i Siły Woli. Uwaga: tej cechy nie mogą wybierać stworzenia posiadające cechę Zwierzęcy.</p>",
+            "description": "<p>Stworzenie jest doświadczonym przywódcą. Dostaje premię +10 do Ogłady i Siły Woli. <b>Uwaga:</b> tej cechy nie mogą wybierać stworzenia posiadające cechę <i>Zwierzęcy</i>.</p>",
             "sourceId": "Compendium.wfrp4e-core.traits.wGTD2LezlI6Atyy0",
             "effects": {
                 "qjz6qX4wkAN2Eldl": {
@@ -711,7 +711,7 @@
         "Tongue Attack (Range)": {
             "id": "xg6z63j6BH5AaqLL",
             "name": "Atak Językiem (Zasięg)",
-            "description": "<p>Chwytny język stworzenia może owijać się wokół ofiary, wciągając ją aż do makabrycznego końca. W swojej Turze stworzenie może wykonać Darmowy Atak, wydając 1 Przewagę. To atak dystansowy, który zadaje tyle Obrażeń, ile wynosi podana wartość (zasięg podany jest w nawiasie). Jeśli atak trafi, cel dostaje 1 Stan Pochwycenie, a jeśli ma mniejszy Rozmiar, zostaje przyciągnięty do stworzenia i Związany Walką wręcz. Stworzenie może następnie zdecydować, czy wypuści cel, wykonując Darmowy Atak z użyciem swojej cechy Broń, czy będzie trzymać cel owinięty językiem, zapoczątkowując Chwyt.</p>",
+            "description": "<p>Chwytny język stworzenia może owijać się wokół ofiary, wciągając ją aż do makabrycznego końca. W swojej Turze stworzenie może wykonać Darmowy Atak, wydając 1 Przewagę. To atak dystansowy, który zadaje tyle Obrażeń, ile wynosi podana wartość (zasięg podany jest w nawiasie). Jeśli atak trafi, cel dostaje 1 Stan @Condition[Pochwycenie], a jeśli ma mniejszy <i>Rozmiar</i>, zostaje przyciągnięty do stworzenia i Związany Walką wręcz. Stworzenie może następnie zdecydować, czy wypuści cel, wykonując Darmowy Atak z użyciem swojej cechy <i>Broń</i>, czy będzie trzymać cel owinięty językiem, zapoczątkowując Chwyt.</p>",
             "sourceId": "Compendium.wfrp4e-core.traits.xg6z63j6BH5AaqLL",
             "effects": {
                 "kPgI28vmSamM3u1s": {
@@ -738,7 +738,7 @@
         "Frenzy": {
             "id": "yRhhOlt18COq4e1q",
             "name": "Szał Bojowy",
-            "description": "<p>Stworzenie może wpadać w Szał Bojowy. Podczas Szału Bojowego jest odporne na zasady Psychologii, nie wycofa się z żadnego powodu, musi zawsze poruszać się z pełną prędkością w stronę najbliższego widzianego przeciwnika, by go zaatakować. Jedynymi Akcjami, jakie można wtedy wykonać, są Testy Broni Białej w zwarciu albo Atletyki, by szybciej dobiec do przeciwnika. Poza tym w każdej Rundzie postać otrzymuje Akcję Darmową w postaci dodatkowego ataku wręcz, ponieważ naprawdę daje z siebie wszystko. A jakby tego było mało, zaciekłość i brutalność skutkuje podniesieniem Bonusu z Siły o +1. Postać pozostaje w Szale Bojowym, dopóki wszyscy wrogowie w polu widzenia nie zostaną unieszkodliwieni albo dopóki postać nie otrzyma przynajmniej 1 poziomu Oszołomienia lub nie nastąpi Utrata Przytomności. Po zakończeniu Szału Bojowego postać natychmiast otrzymuje 1 poziom Zmęczenia.</p>",
+            "description": "<p>Stworzenie może wpadać w <i>Szał Bojowy</i>. Podczas Szału Bojowego jest odporne na zasady Psychologii, nie wycofa się z żadnego powodu, musi zawsze poruszać się z pełną prędkością w stronę najbliższego widzianego przeciwnika, by go zaatakować. Jedynymi Akcjami, jakie można wtedy wykonać, są Testy Broni Białej w zwarciu albo Atletyki, by szybciej dobiec do przeciwnika. Poza tym w każdej Rundzie postać otrzymuje Akcję Darmową w postaci dodatkowego ataku wręcz, ponieważ naprawdę daje z siebie wszystko. A jakby tego było mało, zaciekłość i brutalność skutkuje podniesieniem Bonusu z Siły o +1. Postać pozostaje w Szale Bojowym, dopóki wszyscy wrogowie w polu widzenia nie zostaną unieszkodliwieni albo dopóki postać nie otrzyma przynajmniej 1 poziomu Oszołomienia lub nie nastąpi Utrata Przytomności. Po zakończeniu Szału Bojowego postać natychmiast otrzymuje 1 poziom Zmęczenia.</p>",
             "sourceId": "Compendium.wfrp4e-core.traits.yRhhOlt18COq4e1q",
             "effects": {
                 "jTfCjCCrfFHKqXhz": {
@@ -751,7 +751,7 @@
         "Magic Resistance": {
             "id": "yrkI7ATjqLPDTFmZ",
             "name": "Odporność na Magię",
-            "description": "<p>Efekt wywierany przez magię na stworzenie jest ograniczony. PS dowolnego wpływającego na stworzenie czaru zmniejszany jest o podaną wartość. Zatem Odporność na Magię 2 zmniejsza PS o 2.</p>",
+            "description": "<p>Efekt wywierany przez magię na stworzenie jest ograniczony. PS dowolnego wpływającego na stworzenie czaru zmniejszany jest o podaną wartość. Zatem <i>Odporność na Magię 2</i> zmniejsza PS o 2.</p>",
             "sourceId": "Compendium.wfrp4e-core.traits.yrkI7ATjqLPDTFmZ",
             "effects": {
                 "PWNOSwxsePCN7sKH": {

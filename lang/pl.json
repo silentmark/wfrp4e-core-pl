@@ -1729,5 +1729,15 @@
     "WFRP4E.Symptom.Convulsions": "Konwulsje",
     "WFRP4E.Symptom.CoughsandSneezes": "Kaszel i katar",
     "WFRP4E.Symptom.Fever": "Gorączka",
-    "WFRP4E.Symptom.Flux": "Biegunka"
+    "WFRP4E.Symptom.Flux": "Biegunka",
+    "CHAT.NoMoreLeft": "No more Credit instances left.",
+    "WFRP4E.ConditionName.Covered": "Zasłona przed Strzałem",
+    "Seconds": "seconds",
+    "BUGREPORT.NeedsAttention": "NEEDS ATTENTION",
+    "BUGREPORT.Settled": "SETTLED",
+    "BUGREPORT.LoadingIssues": "Loading Issues",
+    "INIT.ResolveDuplicates": "Resolve Duplicates",
+    "BUGREPORT.AlertHint": "This report either wasn't reproducible or needs some more information. Click on the title to see details.",
+    "BUGREPORT.APiLimitReached": "You have reached GitHub's API usage limit. You will need to either wait an hour before submitting or submit it manually on the Github website.",
+    "INIT.ResolveDuplicatesNote": "These Documents already exist in the world; would you like to apply the data from the initialized module instead?<br><br>Leaving a Document checked will apply the new data, otherwise no modifications will be made."
 }

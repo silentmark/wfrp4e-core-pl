@@ -945,13 +945,18 @@ Hooks.on("setup", async function () {
 	game.wfrp4e.config.effectTriggers = {
 		invoke: "Wywołanie Ręczne (invoke)",
 		oneTime: "Jednorazowe (oneTime)",
+		"addItems" : "Dodaj Przedmiot (addItems)",
 		dialogChoice: "Wybór z Dialogu (dialogChoice)",
 		prefillDialog: "Wypełniony Dialog (prefillDialog)",
+		"update" : "Aktualizacja (update)",
 		prePrepareData: "Przygotowane wcześniej Dane (prePrepareData)",
 		prePrepareItems: "Przygotowany wcześniej Przedmiot Aktora (prePrepareItems)",
 		prepareData: "Przygotuj Dane (prepareData)",
 		preWoundCalc: "Prekalkulacja Ran (preWoundCalc)",
 		woundCalc: "Liczenie Ran (woundCalc)",
+		"calculateSize" : "Obilcz Rozmiar (calculateSize)",
+		"preAPCalc" : "Przed obliczeniem Pancerza (preAPCalc)",
+		"APCalc" : "Oblicz pancerz (APCalc)",
 		preApplyDamage: "Aplikuj wstępnie Obrażenia (preApplyDamage)",
 		applyDamage: "Aplikuj Obrażenia (applyDamage)",
 		preTakeDamage: "Otrzymuj wstępnie Obrażenia (preTakeDamage)",
@@ -980,6 +985,7 @@ Hooks.on("setup", async function () {
 		calculateOpposedDamage: "Przelicz Obrażenia Przeciwstawne (calculateOpposedDamage)",
 		targetPrefillDialog: "Wstępnie wypełniony Dialog Celu (targetPrefillDialog)",
 		getInitiativeFormula: "Przejmij Inicjatywę (getInitiativeFormula)",
+		startTurn : "Start Turn (startTurn)",
 		endTurn: "Koniec Tury (endTurn)",
 		endRound: "Koniec Rundy (endRound)",
 		endCombat: "Koniec Walki (endCombat)",
@@ -995,6 +1001,14 @@ Hooks.on("setup", async function () {
     
         actor : aktor właściwy dla efektu
         `,
+
+		addItems : 
+		`Like Immediate effects, this happens once, but the effect will remain. This lets the effect also delete the added items when the effect is deleted. Can be async.
+		args: 
+	
+		actor : actor who owns the effect
+		`,
+
 		prefillDialog: `Ten efekt jest stosowany przed pokazaniem okna dialogowego rzutu i powinien zmienić wartości wstępnie wypełnione w sekcji bonusowej.
         args:
     
@@ -1006,6 +1020,14 @@ Hooks.on("setup", async function () {
         Example:
         if (args.type == "skill" && args.item.name == "Atletismo") args.prefillModifiers.modifier += 10`,
 
+		"update" : 
+		`This effect runs when an actor or an embedded document is changed. Can be async.
+		args:
+	
+		item: if an item is modified, it is provided as an argument
+		effect: if an effect is modified, it is provided as an argument
+		`,
+	
 		prePrepareData: `Ten efekt jest stosowany przed obliczeniem jakichkolwiek danych aktora.
         args:
     
@@ -1049,6 +1071,33 @@ Hooks.on("setup", async function () {
         e.g. for Swarm: "wounds *= 5"
         `,
 
+		calculateSize : 
+		`This effect is applied after size calculation, where it can be overridden. Cannot be async.
+	
+		args:
+	
+		size : Size value
+	
+		e.g. for Small: "args.size = 'sml'"
+		`,
+	
+		preAPCalc : `This effect is applied before AP is calculated. Cannot be async.
+	
+		args:
+	
+		AP : Armour object
+	
+		e.g. args.AP.head.value += 1
+		`,
+		APCalc : `This effect is applied after AP is calculated. Cannot be async.
+	
+		args:
+	
+		AP : Armour object
+	
+		e.g. args.AP.head.value += 1
+		`,
+	
 		preApplyDamage: `Ten efekt występuje przed nałożeniem obrażeń na test przeciwstawny.
         args:
     
@@ -1300,6 +1349,14 @@ Hooks.on("setup", async function () {
         combat: obecna walka
         `,
 
+		startTurn : 
+		`This effect runs at the start of an actor's turn. Can be async.
+	
+		args:
+	
+		combat: current combat
+		`,
+	
 		endRound: `Ten efekt jest wykonywany na koniec rundy.
     
         args:
