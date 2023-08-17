@@ -1258,7 +1258,7 @@
     "SHEET.InvokeEffect": "Wywołaj {effect}",
     "SHEET.ExpChange": "Wydano / Otrzymano",
     "Reason": "Powód",
-    "SHEET.TotalSpentExp": "Łącznie Wydano / Łacznie Otrzymano",
+    "SHEET.TotalSpentExp": "Łącznie Wydano / Wszystko",
     "SHEET.CharacteristicCurrent": "Obecne",
     "SHEET.ExperienceCurrent": "Obecne",
     "SHEET.CareerCurrent": "Obecne",
