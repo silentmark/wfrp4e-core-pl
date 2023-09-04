@@ -1,5 +1,6 @@
 Hooks.on("init", () => {
 	CONFIG.supportedLanguages["pl"] = "pl";
+    game.data.packs = game.data.packs.filter(i => i.name != "basic" || i.system != "wfrp4e");
 
 	// Register Advantage cap
 	game.settings.register("wfrp4e-core", "initialized", {
@@ -41,8 +42,8 @@ WFRP4eCoreInitWrapper.prototype.render = function () {
 	Special thanks to: <b>Games Workshop, Fatshark</b><br><br>
 	
 	<a href="mailto: info@cubicle7games.com">info@cubicle7games.com</a>`;
-
-	const moduleInitializer = new game.wfrp4e.apps.ModuleInitializer(
+    
+    const moduleInitializer = new game.wfrp4e.apps.ModuleInitializer(
 		"wfrp4e-core",
 		"WFRP4e - Inicjalizacja Podręcznika Głównego",
 		html
