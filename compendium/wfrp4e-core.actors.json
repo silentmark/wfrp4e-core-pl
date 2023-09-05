@@ -964,7 +964,7 @@
         "Dieter Käsegeier": {
             "id": "ePPk15Vxu9RxPtYV",
             "name": "Dieter Käsegeier",
-            "description": "",
+            "description": "entries.Dieter Käsegeier.description",
             "sourceId": "Compendium.wfrp4e-core.bestiary.ePPk15Vxu9RxPtYV",
             "gender": "Mężczyzna",
             "species": "Człowiek",
@@ -1022,9 +1022,9 @@
                 "oLc1S9aswJrhkReV": {
                     "id": "oLc1S9aswJrhkReV",
                     "name": "Miecz",
-                    "description": "",
+                    "description": "entries.Dieter Käsegeier.items.oLc1S9aswJrhkReV.description",
                     "originalName": "Miecz",
-                    "sourceId": ""
+                    "sourceId": "entries.Dieter Käsegeier.items.oLc1S9aswJrhkReV.sourceId"
                 }
             }
         },
@@ -1894,7 +1894,7 @@
         "Stellemar": {
             "id": "nRJxtciIhTHKqAvY",
             "name": "Stellemar",
-            "description": "",
+            "description": "entries.Stellemar.description",
             "sourceId": "Compendium.wfrp4e-core.bestiary.nRJxtciIhTHKqAvY",
             "gender": "Mężczyzna",
             "species": "Człowiek",
@@ -2033,9 +2033,9 @@
                 "PAvotUwS46Wlcked": {
                     "id": "PAvotUwS46Wlcked",
                     "name": "Dowolna Cecha Stworzenia",
-                    "description": "",
+                    "description": "entries.Mutant.items.PAvotUwS46Wlcked.description",
                     "originalName": "Dowolna Cecha Stworzenia",
-                    "sourceId": ""
+                    "sourceId": "entries.Mutant.items.PAvotUwS46Wlcked.sourceId"
                 }
             }
         },
@@ -2368,7 +2368,7 @@
         "Kastor Erichson": {
             "id": "Rs3lMA5UavTlTiJW",
             "name": "Kastor Erichson",
-            "description": "",
+            "description": "entries.Kastor Erichson.description",
             "sourceId": "Compendium.wfrp4e-core.bestiary.Rs3lMA5UavTlTiJW",
             "gender": "Mężczyzna",
             "species": "Człowiek",
@@ -2400,9 +2400,9 @@
                 "yymhDcCRUdL6jFCS": {
                     "id": "yymhDcCRUdL6jFCS",
                     "name": "Broń Ręczna (Szpon)",
-                    "description": "",
+                    "description": "entries.Kastor Erichson.items.yymhDcCRUdL6jFCS.description",
                     "originalName": "Szpon",
-                    "sourceId": ""
+                    "sourceId": "entries.Kastor Erichson.items.yymhDcCRUdL6jFCS.sourceId"
                 },
                 "ioeUa6sC1922vxS6": {
                     "id": "ioeUa6sC1922vxS6",
@@ -3258,7 +3258,7 @@
                     "specification": "Wielki"
                 },
                 "sE3LdVbjkgeNDywj": {
-                    "specification": 0
+                    "specification": "entries.Basilisk.items.sE3LdVbjkgeNDywj.specification"
                 },
                 "br509sRTPa9eVV4J": {
                     "specification": "Dowolny"

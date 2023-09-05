@@ -1065,7 +1065,7 @@
                 "81-85": "<p><strong>Nieznośne osłabienie</strong>: Wiatry Magii niosą ze sobą nić Chaosu, dusząc twoją duszę i powalając cię na kolana. Otrzymujesz 1 punkt Korupcji, 1 stan @Condition[Zmęczenie] i stan @Condition[Powalony].</p>",
                 "86-90": "<p><strong>Podwójne kłopoty</strong>: Wiatry Magii zabierają twoją magię, powodując, że działa ona gdzieś indziej w promieniu [[1d10]] kilometrów. Mistrz Gry jest zachęcany do wywołania konsekwencji i rozważenia ciekawych chaotycznych sposobów w jaki twoja magia mogłaby zostać zdeformowana lub zdeprawowana.</p>",
                 "91-95": "<p><strong>Burza Chaosu</strong>: Rzuć na tabeli @Table[minormis]{Mniejsze Manifestacje}. Ty i [[1d10]] najbliższych istot doznajecie tego efektu.</p>",
-                "96-100": "<p><strong>Sztuczka losu</strong>: Rzuć na tabeli @Table[catastrophicmis]{Katastroficzne Manifestacje}.</p>"
+                "96-100": "<p><strong>Sztuczka losu</strong>: Rzuć na tabeli @Table[catastrophicmis]{Katastrofalne Manifestacje}.</p>"
             }
         },
         "Dooming": {
@@ -1414,12 +1414,12 @@
         "Catastrophic Miscast Table (Moo)": {
             "initialization_folder": "Zasady domowe Moo",
             "id": "SdruU0zkacpwCMJn",
-            "name": "Tabela Katastroficznych Manifestacji (Moo)",
+            "name": "Tabela Katastrofalnych Manifestacji (Moo)",
             "description": "",
             "results": {
                 "1-10": "<b>Burza Eteru</b>: Każdy w zasięgu Bonusu Siły Woli jardów otrzymuje [[1d10]] ran ignorujących Bonus Wytrzymałości i Pancerz oraz dodatkowo upada @Condition[Powalenie]. Jeśli nie ma innych celów w zasięgu, magia nie ma gdzie się ulotnić i twoja głowa eksploduje rozrzucając krwawe kawałki na [[1d10]] jardów.",
                 "11-20": "<b>Atak Eteru</b>: Otrzymujesz rane krytyczna w losowe miejsce @Table[hitloc] z bonusem +[[1d10*5]]% do wyniku rzutu - niekontrolowana magia uderza cię z niszczycielską siłą.",
-                "21-30": "<b>Heretycka wizja</b>: Wizja chaosu przytłacza twoje zmysły i powoduje przerażające objawienie. Otrzymujesz [[1d10]] punktów zepsucia i @Stan[Oszołomienie], którego nie można usunąć przez taką samą liczbę rund.",
+                "21-30": "<b>Heretycka wizja</b>: Wizja chaosu przytłacza twoje zmysły i powoduje przerażające objawienie. Otrzymujesz [[1d10]] punktów zepsucia i @Condition[Oszołomienie], którego nie można usunąć przez taką samą liczbę rund.",
                 "31-40": "<b>Pochłonięcie umysłu</b>: Twoja zdolność do używania magii jest z ciebie wypalona. Za każde pełne 24 godziny, które upływają odzyskujesz 5% utraconej zdolności Języka (Magicznego) i Splatania Magii. Nie możesz rzucać zaklęć dopóki nie odzyskasz minimum 5% swoich umiejętności.",
                 "41-50": "<b>Wybuch wściekłości</b>: Wszyscy w promieniu Bonusu Siły Woli jardów są natychmiast i irracjonalnie oburzeni samą twoją obecnością. Natychmiast wpadają w Szał i ruszają, by cię zaatakować. Odzyskują rozsądek dopiero po [[1d10]] rundach lub po twojej gwałtownej śmierci.",
                 "51-60": "<b>Nieproszona kompania</b>: Zostajesz zaatakowany przez pomniejsze demony w liczbie równej twojemu Bonusowi Siły Woli. Pojawiają się z Eteru w promieniu 12 jardów od ciebie.",
@@ -1728,7 +1728,7 @@
                 "21-25": "<b>Czarodziejskie światło</b>: Świecisz niesamowitym światłem w kolorze swojej Tradycji Magii, emitując światło jak duże ognisko przez [[1d10]] rund.",
                 "26-30": "<b>Potworne szepty</b>: Głos demonicznej istoty dociera do ciebie. Zdaj <b>Wymagający (+0) Test Siły Woli</b>, aby uniknąć słuchania lub otrzymujesz 1 punkt Zepsucia.",
                 "31-35": "<b>Krwawienie twarzy</b>: Twój nos, oczy i uszy obficie krwawią. Otrzymujesz 1 stan @Condition[Krwawienie].",
-                "36-40": "<b>Trzęsienie Duszy</b>: Otrzymujesz stan @Stan[Powalony].",
+                "36-40": "<b>Trzęsienie Duszy</b>: Otrzymujesz stan @Condition[Powalony].",
                 "41-45": "<b>Igła eteru</b>: Otrzymujesz 1 ranę: [[1d5]] twoje paznokcie czernieją i opadają, pojawia się mała rana w kształcie heretyckiego symbolu, wgryzasz się w usta lub język z powodu mistycznego szoku itp.",
                 "46-50": "<b>Samowolne ubrania</b>: Twoje ubrania wiją się jakby były żywe. Otrzymujesz 1 stan @Condition[Splątanie] o sile [[1d10*5]].",
                 "51-55": "<b>Pełzająca kongregacja</b>: Owady wypełniają teren wokół ciebie, brzęcząc i pełzając. Jeśli jesteś w walce, rzuć <b>Wymagający (+0) Test Opanowania</b> lub otrzymujesz Stan @Condition[Zaskoczony].",

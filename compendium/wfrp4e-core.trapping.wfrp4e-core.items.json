@@ -366,7 +366,7 @@
         },
         "Lamp Oil": {
             "id": "Bal23aLiOmnht42h",
-            "name": "Lampa oliwna",
+            "name": "Olej do lampy",
             "description": "<p>Zawiera paliwo wystarczające na 4 godziny świecenia blaskiem średniego płomienia lub 8 godzin słabego płomienia odpowiadającego jasności świecy.</p>",
             "sourceId": "Compendium.wfrp4e-core.trappings.Bal23aLiOmnht42h"
         },

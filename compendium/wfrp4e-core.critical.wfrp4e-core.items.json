@@ -71,7 +71,8 @@
                 "megBKxKy2Xu8LoXg": {
                     "id": "megBKxKy2Xu8LoXg",
                     "name": "Oślepienie",
-                    "description": "Testy związane ze wzrokiem"
+                    "description": "Testy związane ze wzrokiem",
+                    "secondaryScript": "if (args.item && args.item.attackType=='melee') args.prefillModifiers.modifier += 10 * this.effect.conditionValue"
                 }
             },
             "wounds": "1",
@@ -149,7 +150,8 @@
                 "waGy0xtIvPj1cT0D": {
                     "id": "waGy0xtIvPj1cT0D",
                     "name": "Oślepienie",
-                    "description": "Testy związane ze wzrokiem"
+                    "description": "Testy związane ze wzrokiem",
+                    "secondaryScript": "if (args.item && args.item.attackType=='melee') args.prefillModifiers.modifier += 10 * this.effect.conditionValue"
                 }
             },
             "wounds": "5",
@@ -247,7 +249,8 @@
                 "wVKOGkIJf8YblbFA": {
                     "id": "wVKOGkIJf8YblbFA",
                     "name": "Powalenie",
-                    "script": "args.prefillModifiers.modifier -= 20"
+                    "script": "args.prefillModifiers.modifier -= 20",
+                    "secondaryScript": "if (args.type == 'weapon' && args.item.attackType=='melee') args.prefillModifiers.modifier += 20"
                 }
             },
             "wounds": "5",
@@ -389,7 +392,8 @@
                 "2ngJlZ488J7L1sD7": {
                     "id": "2ngJlZ488J7L1sD7",
                     "name": "Powalenie",
-                    "script": "args.prefillModifiers.modifier -= 20"
+                    "script": "args.prefillModifiers.modifier -= 20",
+                    "secondaryScript": "if (args.type == 'weapon' && args.item.attackType=='melee') args.prefillModifiers.modifier += 20"
                 },
                 "n4NWJIGZiDU9aWt4": {
                     "id": "n4NWJIGZiDU9aWt4",
@@ -506,7 +510,8 @@
                 "4G9KjSyQNM9UFOlS": {
                     "id": "4G9KjSyQNM9UFOlS",
                     "name": "Oślepienie",
-                    "description": "Testy związane ze wzrokiem"
+                    "description": "Testy związane ze wzrokiem",
+                    "secondaryScript": "if (args.item && args.item.attackType=='melee') args.prefillModifiers.modifier += 10 * this.effect.conditionValue"
                 },
                 "jatRx58WzHQUA31m": {
                     "id": "jatRx58WzHQUA31m",
@@ -539,7 +544,8 @@
                 "sTAtmClXjBUnD5VO": {
                     "id": "sTAtmClXjBUnD5VO",
                     "name": "Oślepienie",
-                    "description": "Testy związane ze wzrokiem"
+                    "description": "Testy związane ze wzrokiem",
+                    "secondaryScript": "if (args.item && args.item.attackType=='melee') args.prefillModifiers.modifier += 10 * this.effect.conditionValue"
                 }
             },
             "wounds": "2",
@@ -641,7 +647,8 @@
                 "YS3kViPKuIu9Aaif": {
                     "id": "YS3kViPKuIu9Aaif",
                     "name": "Powalenie",
-                    "script": "args.prefillModifiers.modifier -= 20"
+                    "script": "args.prefillModifiers.modifier -= 20",
+                    "secondaryScript": "if (args.type == 'weapon' && args.item.attackType=='melee') args.prefillModifiers.modifier += 20"
                 }
             },
             "wounds": "4",
@@ -664,7 +671,8 @@
                 "749ILWkBSZeetB7y": {
                     "id": "749ILWkBSZeetB7y",
                     "name": "Oślepienie",
-                    "description": "Testy związane ze wzrokiem"
+                    "description": "Testy związane ze wzrokiem",
+                    "secondaryScript": "if (args.item && args.item.attackType=='melee') args.prefillModifiers.modifier += 10 * this.effect.conditionValue"
                 },
                 "dJsRgSNjJtohBYPc": {
                     "id": "dJsRgSNjJtohBYPc",
@@ -819,7 +827,8 @@
                 "jIlysiOZ0LFz6cgj": {
                     "id": "jIlysiOZ0LFz6cgj",
                     "name": "Oślepienie",
-                    "description": "Testy związane ze wzrokiem"
+                    "description": "Testy związane ze wzrokiem",
+                    "secondaryScript": "if (args.item && args.item.attackType=='melee') args.prefillModifiers.modifier += 10 * this.effect.conditionValue"
                 }
             },
             "wounds": "2",
@@ -933,7 +942,8 @@
                 "VeT5PVDzmP96JWCM": {
                     "id": "VeT5PVDzmP96JWCM",
                     "name": "Powalenie",
-                    "script": "args.prefillModifiers.modifier -= 20"
+                    "script": "args.prefillModifiers.modifier -= 20",
+                    "secondaryScript": "if (args.type == 'weapon' && args.item.attackType=='melee') args.prefillModifiers.modifier += 20"
                 },
                 "zn1gNVJsB6wLvLmH": {
                     "id": "zn1gNVJsB6wLvLmH",
@@ -1234,7 +1244,8 @@
                 "m5CJfHO2ZfBORtkr": {
                     "id": "m5CJfHO2ZfBORtkr",
                     "name": "Powalenie",
-                    "script": "args.prefillModifiers.modifier -= 20"
+                    "script": "args.prefillModifiers.modifier -= 20",
+                    "secondaryScript": "if (args.type == 'weapon' && args.item.attackType=='melee') args.prefillModifiers.modifier += 20"
                 },
                 "SlYdtHgMRI6vCztC": {
                     "id": "SlYdtHgMRI6vCztC",
@@ -1374,7 +1385,8 @@
                 "3WIVf1QT93cut5OA": {
                     "id": "3WIVf1QT93cut5OA",
                     "name": "Powalenie",
-                    "script": "args.prefillModifiers.modifier -= 20"
+                    "script": "args.prefillModifiers.modifier -= 20",
+                    "secondaryScript": "if (args.type == 'weapon' && args.item.attackType=='melee') args.prefillModifiers.modifier += 20"
                 },
                 "9FdeaoISEUYHNkxv": {
                     "id": "9FdeaoISEUYHNkxv",

@@ -78,7 +78,7 @@
                     "script": "// Remove the miscast if doubles rolled and succeeded\nif(args.test.result.outcome == \"success\" && args.test.result.minormis && args.test.result.roll % 11 == 0) {\n    delete args.test.result.minormis\n}\n// Decrement the major miscast to minor miscast\nelse if(args.test.result.outcome == \"success\" && args.test.result.majormis && args.test.result.roll % 11 == 0) {\n    delete args.test.result.majormis;\n    args.test.result.minormis = game.i18n.localize(\"ROLL.MinorMis\");\n}"
                 }
             },
-            "tests": "Splatanie Magii (Dowolny Wiatr Magii)"
+            "tests": "Splatanie Magii (Wszystkie Wiatry Magii)"
         },
         "Fisherman": {
             "id": "1kgHcImgfyKI1IYp",
@@ -118,22 +118,22 @@
         "Arcane Magic": {
             "id": "3O9clK7LGyuLTHPW",
             "name": "Magia Tajemna (Tradycja)",
-            "description": "<p> Studiowałeś jedną z ośmiu tradycji magii: Cienia, Metalu, Niebios, Ognia, Śmierci, Światła, Zwierząt lub Życia albo praktykujesz którąś z mniej znanych: Guślarstwa czy Nekromancji. Możesz zapamiętywać czary ze swojej wybranej tradycji, płacąc za nie podany niżej koszt w Punktach Doświadczenia: </p> <div> <table title=\"\" border=\"1\" summary=\"\" cellspacing=\"0\" cellpadding=\"0\"> <tbody> <tr> <td> <p>Liczba już znanych zaklęć</p> </td> <td> <p>Koszt nowego czaru w PD</p> </td> </tr> <tr> <td> <p>do Bonusu z Inteligencji × 1 </p> </td> <td> <p>100 PD</p> </td> </tr> <tr> <td> <p>do Bonusu z Inteligencji × 2</p> </td> <td> <p>200 PD</p> </td> </tr> <tr> <td> <p>do Bonusu z Inteligencji × 3</p> </td> <td> <p>300 PD</p> </td> </tr> <tr> <td> <p>do Bonusu z Inteligencji × 4</p> </td> <td> <p>400 PD</p> </td> </tr> </tbody> </table> </div> <p> ...i tak dalej.</p> <p> Jeśli twój Bonus z Inteligencji równy jest 4, to pierwsze pięć zaklęć będą cię kosztowały 100 PD, kolejne 4 już 200 PD i tak dalej. Obszerniejsze zasady dotyczące nauki nowych zaklęć znajdują się w @UUID[Compendium.wfrp4e-core.journal-entries.YBVrpUHEjohB1H4f]{Rozdziale Magia}>. W normalnych warunkach nie możesz nabyć więcej niż jednego Talentu <i>Magia Tajemna (Tradycja)</i>. Co więcej, jeśli posiadasz Talent <i>Magia Tajemna (Tradycja)</i>, nie możesz wykupić Talentów @UUID[Compendium.wfrp4e-core.talents.QyjWtSdnVMT04l5Y]{Błogosławieństwo} i @UUID[Compendium.wfrp4e-core.talents.voV0C2ar1bKpcpnH]{Inwokacja}. Za 100 PD możesz wyzbyć się tego Talentu, natychmiast tracąc dostęp do wszystkich zapewnianych przez niego czarów.</p>",
+            "description": "<p>Studiowałeś jedną z ośmiu tradycji magii: Cienia, Metalu, Niebios, Ognia, Śmierci, Światła, Zwierząt lub Życia albo praktykujesz którąś z mniej znanych: Guślarstwa czy Nekromancji. Możesz zapamiętywać czary ze swojej wybranej tradycji, płacąc za nie podany niżej koszt w Punktach Doświadczenia:</p>\n<div>\n    <table title=\"\" border=\"1\">\n        <tbody><tr>\n                <td>\n                    <p>Liczba już znanych zaklęć</p>\n                </td>\n                <td>\n                    <p>Koszt nowego czaru w PD</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>do Bonusu z Inteligencji × 1 </p>\n                </td>\n                <td>\n                    <p>100 PD</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>do Bonusu z Inteligencji × 2</p>\n                </td>\n                <td>\n                    <p>200 PD</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>do Bonusu z Inteligencji × 3</p>\n                </td>\n                <td>\n                    <p>300 PD</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>do Bonusu z Inteligencji × 4</p>\n                </td>\n                <td>\n                    <p>400 PD</p>\n                </td>\n</tr></tbody>\n    </table>\n</div>\n<p> …i tak dalej.</p>\n<p>Jeśli twój Bonus z Inteligencji równy jest 4, to pierwsze zaklęcie oraz następne cztery będą cię kosztowały 100 PD, kolejne 4 już 200 PD i tak dalej. Obszerniejsze zasady dotyczące nauki nowych zaklęć znajdują się w @UUID[Compendium.wfrp4e-core.journals.YBVrpUHEjohB1H4f]{Rozdziale 8: Magia}. W normalnych warunkach nie możesz nabyć więcej niż jednego Talentu Magia Tajemna (Tradycja). Co więcej, jeśli posiadasz Talent Magia Tajemna (Tradycja), nie możesz wykupić Talentów @UUID[Compendium.wfrp4e-core.talents.QyjWtSdnVMT04l5Y]{Błogosławieństwo} i @UUID[Compendium.wfrp4e-core.talents.voV0C2ar1bKpcpnH]{Inwokacja}. Za 100 PD możesz wyzbyć się tego Talentu, natychmiast tracąc dostęp do wszystkich zapewnianych przez niego czarów.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.3O9clK7LGyuLTHPW"
         },
         "Argumentative": {
             "id": "41JhsSNW1Ttza3JK",
             "name": "Przekonujący",
-            "description": "<p>Przywykłeś do debatowania i obrony swojego zdania. Jeśli uda ci się Test Charyzmy, możesz normalnie obliczyć PS lub określić ich liczbę, odczytując wynik z kości jedności. Udany Test z wynikiem 24 może dać ci więc 4 PS.</p>",
+            "description": "<p>Przywykłeś do debatowania i obrony swojego zdania. Jeśli uda ci się Test Charyzmy podczas debaty z oponentem, możesz normalnie obliczyć PS lub określić ich liczbę, odczytując wynik z kości jedności. Udany Test z wynikiem 24 może dać ci więc 4 PS.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.41JhsSNW1Ttza3JK",
             "effects": {
                 "oAsvKkgS9pLtavj7": {
                     "id": "oAsvKkgS9pLtavj7",
                     "name": "Przekonujący",
-                    "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Charm\") &&  (args.test.result.roll <= 5 || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop())\n   if (ones > SL) {\n     args.test.result.other.push(`<b>${this.effect.name}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS podczas dyskusji lub debaty.`);\n   }\n}"
+                    "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Charm\") &&  (args.test.result.roll <= 5 || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop())\n   if (ones > SL) {\n     args.test.result.other.push(`<b>${this.effect.name}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS jeśli prowadzisz debatę.`);\n   }\n}"
                 }
             },
-            "tests": "Test Charyzmy, gdy prowadzisz debatę lub się z kimś spierasz na argumenty"
+            "tests": "Charyzma, gdy prowadzisz debatę lub się z kimś spierasz na argumenty"
         },
         "Reaction Strike": {
             "id": "4AqSkJnFPqNuTkos",
@@ -211,7 +211,7 @@
                 "pq0wuLa5jebvLTGR": {
                     "id": "pq0wuLa5jebvLTGR",
                     "name": "Atrakcyjny",
-                    "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Charm\") &&  (args.test.result.roll <= 5 || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop())\n   if (ones > SL)\n      args.test.result.other.push(`<b>${this.effect.name}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS jeśli cel testu uważa postać za pociągającą.`)\n}"
+                    "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Charm\") &&  (args.test.result.roll <= 5 || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop())\n   if (ones > SL)\n      args.test.result.other.push(`<b>${this.effect.name}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS jeśli podobasz się celowi testu.`)\n}"
                 }
             },
             "tests": "Charyzma, by wpłynąć na tych, którym się podobasz"
@@ -437,7 +437,7 @@
                 "PNMqJy5zpPTXOd37": {
                     "name": "Szuler Kościany",
                     "id": "PNMqJy5zpPTXOd37",
-                    "script": "if (args.test.item && (args.test.item.name == game.i18n.localize(\"NAME.Gamble\") || args.test.item.name == game.i18n.localize(\"NAME.SleightOfHand\")) && args.test.succeeded)\n{\n\nlet SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\nlet ones = Number(args.test.result.roll.toString().split(\"\").pop())\n\nif (ones > SL)\n   args.test.result.other.push(`<span class=\"hide-option\"><b>${this.effect.name}</b>: ${ones + args.test.successBonus + args.test.slBonus} SL if playing with dice.</span>`)\n}"
+                    "script": "if (args.test.item && (args.test.item.name == game.i18n.localize(\"NAME.Gamble\") || args.test.item.name == game.i18n.localize(\"NAME.SleightOfHand\")) && args.test.succeeded)\n{\n\nlet SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\nlet ones = Number(args.test.result.roll.toString().split(\"\").pop())\n\nif (ones > SL)\n   args.test.result.other.push(`<span class=\"hide-option\"><b>${this.effect.label}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS jeśli grasz w kości.</span>`)\n}"
                 }
             }
         },
@@ -471,9 +471,9 @@
         "Disarm": {
             "id": "DS44h27iCOvUBa4O",
             "name": "Rozbrojenie",
-            "description": "<p> Celnym uderzeniem lub sprawnym ruchem nadgarstka jesteś w stanie wytrącić broń przeciwnikowi z dłoni. W ramach swojej Akcji wykonaj <strong>Przeciwstawny Test Broni Białej</strong> przeciwko wrogiemu Testowi Broni Białej. Jeśli ci się powiedzie, wybijasz broń z ręki przeciwnika, która odlatuje o 1k5 metrów w losowym kierunku. MG może zadecydować o tym, co dzieje się jeszcze. Jeśli wygrasz o 2 PS, ty decydujesz, jak daleko odleci broń, zamiast określać to losowo. Jeśli wygrasz o 4 PS, możesz też zadecydować, w którą stronę pofrunie. Jeżeli wygrasz Test o 6 PS lub więcej, łapiesz oręż przeciwnika, o ile masz wolną rękę. Ten Talent na nic się nie przyda, jeśli wróg nie używa broni lub jest większy od ciebie.</p>",
+            "description": "<p>Celnym uderzeniem lub sprawnym ruchem nadgarstka jesteś w stanie wytrącić broń przeciwnikowi z dłoni. W ramach swojej Akcji wykonaj <strong>Przeciwstawny Test Broni Białej</strong> przeciwko wrogiemu <strong>Testowi Broni Białej</strong>. Jeśli ci się powiedzie, wybijasz broń z ręki przeciwnika, która odlatuje o 1k5 metrów w losowym kierunku. MG może zadecydować o tym, co dzieje się jeszcze. Jeśli wygrasz o 2 PS, ty decydujesz, jak daleko odleci broń, zamiast określać to losowo. Jeśli wygrasz o 4 PS, możesz też zadecydować, w którą stronę pofrunie. Jeżeli wygrasz Test o 6 PS lub więcej, łapiesz oręż przeciwnika, o ile masz wolną rękę. Ten Talent na nic się nie przyda, jeśli wróg nie używa broni lub jest większy od ciebie.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.DS44h27iCOvUBa4O",
-            "tests": "Test Broni Białej w sytuacjach związanych z tym Talentem"
+            "tests": "Broń Biała w sytuacjach związanych z tym Talentem"
         },
         "Fleet Footed": {
             "id": "E3vTSCzgrasNijUO",
@@ -613,7 +613,7 @@
             "name": "Rozpoznanie Artefaktu",
             "description": "<p>Jesteś w stanie wykryć, czy w danym przedmiocie zaklęta jest magia. Możesz wykonać Test Intuicji, gdy go dotykasz. Jeśli Test się powiedzie, każdy PS pozwala ci poznać jedną zasadę, która ma zastosowanie wobec przedmiotu (jeśli tak w ogóle jest). W zwykłych przypadkach możesz wykonać tylko jeden Test wobec danego artefaktu.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.g3y373FnWJEAxgEB",
-            "tests": "Test Intuicji związany z wykrywaniem magicznych artefaktów"
+            "tests": "Intuicja związana z wykrywaniem magicznych artefaktów"
         },
         "Catfall": {
             "id": "g4Q6AtzZuo5iIvD4",
@@ -1083,7 +1083,7 @@
         "Bless": {
             "id": "QyjWtSdnVMT04l5Y",
             "name": "Błogosławieństwo (Boska Tradycja)",
-            "description": "<p>Któryś z bogów czuwa nad tobą i odpowiada na twoje proste modlitwy. Możesz wykorzystywać błogosławieństwa swojego pana, co opisano w <b>Rozdziale 7: Religie i wierzenia</b>. Normalnie możesz znać tylko jedną boską tradycję na Talent Błogosławieństwo.</p>",
+            "description": "<p>Któryś z bogów czuwa nad tobą i odpowiada na twoje proste modlitwy. Możesz wykorzystywać błogosławieństwa swojego pana, co opisano w @UUID[Compendium.wfrp4e-core.journals.NcH9OhleJFfaUdon]{Religie i wierzenia}. Normalnie możesz znać tylko jedną boską tradycję na Talent Błogosławieństwo.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.QyjWtSdnVMT04l5Y"
         },
         "Sturdy": {
@@ -1293,7 +1293,7 @@
         "Invoke": {
             "id": "voV0C2ar1bKpcpnH",
             "name": "Inwokacja",
-            "description": "<p> Zostałeś pobłogosławiony przez swego boskiego patrona, dzięki czemu zyskujesz zdolność czynienia jednego z jego Cudów. Możesz wykupywać kolejne cuda za 100 PD pomnożone przez liczbę obecnie znanych cudów. Pełne zasady tego, jak się ich uczysz, znajdują się w <strong>Rozdziale 7: Religie i wierzenia</strong>. W normalnych okolicznościach nie możesz wykupić tego Talentu więcej niż jeden raz. Co więcej, nie możesz też kupić Talentów <em>Magia Prosta</em> i <em>Magia Tajemna</em>, jeśli posiadasz Talent Inwokacja. Po wydaniu 100 PD możesz się pozbyć tego Talentu, ale natychmiast utracisz dostęp do wszystkich zapewnianych przez niego cudów. Narażasz się też na gniew swego boga, a MG obmyśli, jak będzie się on przejawiał.</p>",
+            "description": "<p>Zostałeś pobłogosławiony przez swego boskiego patrona, dzięki czemu zyskujesz zdolność czynienia jednego z jego Cudów. Możesz wykupywać kolejne cuda za 100 PD pomnożone przez liczbę obecnie znanych cudów. Pełne zasady tego, jak się ich uczysz, znajdują się w @UUID[Compendium.wfrp4e-core.journals.NcH9OhleJFfaUdon]{Rozdziale 7: Religie i wierzenia}. W normalnych okolicznościach nie możesz wykupić tego Talentu więcej niż jeden raz. Co więcej, nie możesz też kupić Talentów @UUID[Compendium.wfrp4e-core.talents.mdPGZsn2396dEpOf]{Magia Prosta} i @UUID[Compendium.wfrp4e-core.talents.3O9clK7LGyuLTHPW]{Magia Tajemna}, jeśli posiadasz Talent Inwokacja. Po wydaniu 100 PD możesz się pozbyć tego Talentu, ale natychmiast utracisz dostęp do wszystkich zapewnianych przez niego cudów. Narażasz się też na gniew swego boga, a MG obmyśli, jak będzie się on przejawiał.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.voV0C2ar1bKpcpnH"
         },
         "Enclosed Fighter": {
@@ -1368,9 +1368,9 @@
         "Night Vision": {
             "id": "x0WMGwuQzReXcQrs",
             "name": "Widzenie w Ciemności",
-            "description": "<p>Bardzo dobrze widzisz w naturalnych ciemnościach. Jeśli masz źródło choćby słabego blasku (światło gwiazd, księżyca czy bioluminescencję), widzisz wyraźnie na 20 metrów na każde wykupienie tego Talentu. To nie koniec. Dla ciebie oświetlenie okolicy sięga dalej o 20 metrów na każde wykupienie tego Talentu. </p>",
+            "description": "<p>Bardzo dobrze widzisz w naturalnych ciemnościach. Jeśli masz źródło choćby słabego blasku (światło gwiazd, księżyca czy bioluminescencję), widzisz wyraźnie na 20 metrów na każde wykupienie tego Talentu. To nie koniec. Dla ciebie oświetlenie okolicy sięga dalej o 20 metrów na każde wykupienie tego Talentu.</p>",
             "sourceId": "Compendium.wfrp4e-core.talents.x0WMGwuQzReXcQrs",
-            "tests": "Testy percepcji przy słabym świetle"
+            "tests": "Percepcja przy słabym świetle"
         },
         "Commanding Presence": {
             "id": "x8g3U68oi8XzWiYr",
@@ -1435,7 +1435,7 @@
                 "YsehPMUmEzTAH6UC": {
                     "id": "YsehPMUmEzTAH6UC",
                     "name": "Szuler",
-                    "script": "if (args.test.item && (args.test.item.name == game.i18n.localize(\"NAME.Gamble\") || args.test.item.name == game.i18n.localize(\"NAME.SleightOfHand\")) && args.test.succeeded) {\nlet SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\nlet ones = Number(args.test.result.roll.toString().split(\"\").pop())\nif (ones > SL)\n   args.test.result.other.push(`<span class=\"hide-option\"><b>${this.effect.name}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS podczas gry w karty.</span>`)\n}"
+                    "script": "if (args.test.item && (args.test.item.name == game.i18n.localize(\"NAME.Gamble\") || args.test.item.name == game.i18n.localize(\"NAME.SleightOfHand\")) && args.test.succeeded) {\nlet SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\nlet ones = Number(args.test.result.roll.toString().split(\"\").pop())\nif (ones > SL)\n   args.test.result.other.push(`<span class=\"hide-option\"><b>${this.effect.name}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS jeśli grasz w karty.</span>`)\n}"
                 }
             }
         },
