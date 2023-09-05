@@ -439,7 +439,7 @@
             "target": "Ty",
             "range": "Ty"
         },
-        "Regenerate": {
+        "4NQUrs2PUNpYxlWs": {
             "id": "4NQUrs2PUNpYxlWs",
             "name": "Regeneracja",
             "description": "<p>Twój cel zyskuje Cechę Stworzenia @UUID[Compendium.wfrp4e-core.items.SfUUdOGjdYpr3KSR]{Regeneracja}.</p>\n\n<p>Zaklęcia rzucane przy pomocy Jadeitowego Wiatru <i>Ghyran</i> są przesycone życiem i najczęściej objawiają się w postaci wibrującego, zielonego światła, któremu towarzyszą naturalne zjawiska o nadprzyrodzonych właściwościach. Pnącza, podszycie, drzewa i rzeki naginają się do woli druidów.</p>\n<p>Otrzymujesz premię +10 do Testów Rzucania Zaklęć i Splatania Magii, jeśli znajdujesz się w środowisku wiejskim lub dzikim. Żywe stworzenia (np. te, które nie mają Cechy Stworzenia <i>Demoniczny</i> lub <i>Ożywieniec</i>) będące celem magii z Tradycji Życia tracą wszystkie poziomy @Condition[Krwawienie]{Krwawienia} i @Condition[Zmęczenie]{Zmęczenia} dzięki temu, że życiodajna magia przepływa przez ich ciała. Z drugiej strony stworzenia, które mają Cechę Stworzenia <i>Ożywieniec</i>, otrzymują dodatkowe Obrażenia równe Bonusowi z Siły Woli rzucającego, które ignorują Bonus za Wytrzymałość oraz Punkty Pancerza.</p>",
@@ -729,7 +729,7 @@
             "target": "Bonus SW metrów",
             "range": "Ty"
         },
-        "Flight": {
+        "9wmmln3DunIqGXM2": {
             "id": "9wmmln3DunIqGXM2",
             "name": "Lot",
             "description": "<p><span style=\"color: #231f20;\">Możesz latać - dzięki eterycznym skrzydłom, w kolumnie magicznego światła lub w inny odpowiedni dla Tradycji sposób. Zyskujesz Cechę Stworzenia @UUID[Compendium.wfrp4e-core.items.EO05HX7jql0g605A]{Latanie (Zwinność)}.</span></p>",
@@ -1016,7 +1016,7 @@
             "target": "Ty",
             "range": "Ty"
         },
-        "Breath": {
+        "cfvdViThaoOHyuSk": {
             "id": "cfvdViThaoOHyuSk",
             "name": "Zionięcie",
             "description": "<p>Natychmiast wykonujesz Zionięcie, tak jak opisano przy aktywacji Cechy Stworzenia @UUID[Compendium.wfrp4e-core.items.uqGxFOEqeurwkAO3]{Zionięcie}, za 2 Przewagi. Zionięcie jest <i>magicznym pociskiem</i> o współczynniku Obrażeń +Bonus z Wytrzymałości. MG zdecyduje, jaki rodzaj Zionięcia najbardziej pasuje do twojej Tradycji.</p>",
@@ -2354,7 +2354,7 @@
             "target": "Ty",
             "range": "Ty"
         },
-        "Ward": {
+        "LOEdFN7fP0JHuGoE": {
             "id": "LOEdFN7fP0JHuGoE",
             "name": "Magiczna ochrona",
             "description": "<p>Oplatasz się ochronną magią, zyskując Cechę Stworzenia @UUID[Compendium.wfrp4e-core.items.Bvd2aZ0gQUXHfCTh]{Ochrona (9+)}.</p>",
@@ -3142,7 +3142,7 @@
             "target": "1",
             "range": "Siła Woli metrów"
         },
-        "Corrosive Blood": {
+        "qgWy2MsylxyyIm6V": {
             "id": "qgWy2MsylxyyIm6V",
             "name": "Żrąca krew",
             "description": "<p>Wypełniasz swoje ciało magią, a twoja krew nabiera niezwykłych właściwości. Zyskujesz Cechę Stworzenia @UUID[Compendium.wfrp4e-core.items.M5QSWOYt2Rbv2yxW]{Kwasowa Krew}. </p>",
@@ -3185,7 +3185,7 @@
             "target": "1",
             "range": "1 metr"
         },
-        "Bolt": {
+        "QmjYLCaEn3YKHxdv": {
             "id": "QmjYLCaEn3YKHxdv",
             "name": "Pocisk",
             "description": "<p>Tworzysz magiczne wyładowanie odpowiadające charakterowi Tradycji. Jest ono <i>magicznym pociskiem</i> zadającym Obrażenia +4.</p>",
@@ -3662,7 +3662,7 @@
             "target": "Specjalny",
             "range": "Dotyk"
         },
-        "Dart": {
+        "T8nErqWnkqdvcNVz": {
             "id": "T8nErqWnkqdvcNVz",
             "name": "Magiczne żądło",
             "description": "<p>Sprawiasz, że malutka strzałka, cała z magicznej energii, wystrzeliwuje ci z palców. Uznaje się ją za <i>magiczny pocisk</i> ze współczynnikiem Obrażeń +0.</p>",
@@ -3755,7 +3755,7 @@
             "target": "Ty",
             "range": "Ty"
         },
-        "Distracting": {
+        "tNMQQhBYzHoRq7AD": {
             "id": "tNMQQhBYzHoRq7AD",
             "name": "Dekoncentracja",
             "description": "<p>Otaczasz się wirującą i świszczącą mocą, która rozprasza wrogów. Podczas trwania zaklęcia zyskujesz Cechę Stworzenia @UUID[Compendium.wfrp4e-core.items.MVI0lXcg6vvtooAF]{Dekoncentrujący}.</p>",
@@ -4317,7 +4317,7 @@
             "target": "Ty",
             "range": "Ty"
         },
-        "Dark Vision": {
+        "wx23bbK7pPqY2quI": {
             "id": "wx23bbK7pPqY2quI",
             "name": "Widzenie w ciemności",
             "description": "<p>Twoje naturalne zmysły zostają wzmocnione dzięki postrzeganiu magii. Podczas trwania zaklęcia zyskujesz Cechę Stworzenia @UUID[Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc]{Widzenie w Mroku}.</p>",

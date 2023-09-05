@@ -258,7 +258,7 @@
             "target": "1",
             "range": "6 metrów"
         },
-        "Inspiring": {
+        "ezVl3vFWTwHfNXL3": {
             "id": "ezVl3vFWTwHfNXL3",
             "name": "Waleczność",
             "description": "<p>Twoje głośne modlitwy napełniają szeregi duchem dyscypliny. Wszyscy objęci Cudem zyskują 1 poziom Talentu @UUID[Compendium.wfrp4e-core.items.J9MK0AIaTbvd5oF6]{Musztra}.</p>",
@@ -899,7 +899,7 @@
             "target": "Bonus Int sojuszników",
             "range": "Ogłada metrów"
         },
-        "Sea Legs": {
+        "VUyCJ5LRPkuC5iZx": {
             "id": "VUyCJ5LRPkuC5iZx",
             "name": "Chód marynarza",
             "description": "<p>Cele natychmiast zostają zanurzone w słonej wodzie, zataczając się, jakby stały na rozchybotanym pokładzie statku w trakcie sztormu. Ich włosy targa widmowy wiatr, a rozbryzgi wody biją w ich skórę. Uzyskują po 1 poziomie Stanów @Condition[Oszołomienie], @Condition[Oślepienie] i @Condition[Zmęczenie], a ponadto muszą wykonać pomyślnie <strong>Przeciętny (+20) Test Zwinności</strong>, by w ogóle móc się przemieszczać i korzystać z Ruchu. Jeśli im się nie powiedzie, otrzymują Stan @Condition[Powalenie].</p>",

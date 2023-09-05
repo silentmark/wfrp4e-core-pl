@@ -7,6 +7,65 @@ Hooks.on("init", () => {
 		});
 	}
 
+	Babele.get().loadTranslations = async function () {
+        const lang = game.settings.get('core', 'language');
+        const directory = game.settings.get('babele', 'directory');
+        const directories = this.modules
+            .filter(module => module.lang === lang)
+            .map(module => `modules/${module.module}/${module.dir}`);
+
+        if(directory && directory.trim && directory.trim()) {
+            directories.push(`${directory}/${lang}`);
+        }
+
+        if(this.systemTranslationsDir) {
+            directories.push(`systems/${game.system.id}/${this.systemTranslationsDir}/${lang}`);
+        }
+
+        let files = [];
+        if(game.user.hasPermission('FILES_BROWSE')) {
+            for(let i=0; i<directories.length; i++) {
+                try {
+                    let result = await FilePicker.browse("data", directories[i]);
+                    result.files.forEach(file => files.push(file));
+                } catch (err) {
+                    console.warn("Babele: " + err)
+                }
+            }
+            if(game.user.isGM) {
+                game.settings.set('babele', 'translationFiles', files);
+            }
+        } else {
+            files = game.settings.get('babele', 'translationFiles');
+        }
+
+        let allTranslations = [];
+        if(files.length === 0) {
+            console.log(`Babele | no compendium translation files found for ${lang} language.`);
+        } else {
+            for ( let metadata of game.data.packs ) {
+                const collection = this.getCollection(metadata);
+                if(this.supported(metadata)) {
+                    const urls = files.filter(file => file.endsWith(`${collection}.json`));
+                    if(urls.length === 0) {
+                        console.log(`Babele | no translation file found for ${collection} pack`);
+                    } else {
+                        const [translations] = await Promise.all(
+                                [Promise.all(urls.map((url) => fetch(url).then((r) => r.json()).catch(e => {})))]
+                        );
+						
+						let translation = {};
+						translations.forEach(t => {mergeObject(translation, t)})
+						console.log(`Babele | translation for ${collection} pack successfully loaded`);
+						allTranslations.push(mergeObject(translation, { collection: collection }));
+                    }
+                }
+            }
+        }
+        return allTranslations;
+    }
+
+
 	Babele.get().registerConverters({
 		effects: (effects, translations) => {
 			return effects.map((data) => {

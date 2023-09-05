@@ -325,7 +325,7 @@
             "sourceId": "Compendium.wfrp4e-core.items.9sMAf0xmehjEmUao",
             "tests": "Test Zwinnych Palców, Broni Białej (Bijatyka), aby dotknąć przeciwnika"
         },
-        "Trapper": {
+        "a7v422EZcOUUC20X": {
             "id": "a7v422EZcOUUC20X",
             "name": "Traper",
             "description": "<p>Wiesz, jak używać wnyków, i możesz wykonać Test Percepcji, by je zauważyć, bez konieczności deklarowania poszukiwań. MG będzie pewnie wolał wykonać go samemu, na wypadek gdyby rzut okazał się nieudany.</p>",
@@ -488,7 +488,7 @@
                 }
             }
         },
-        "Hatred": {
+        "E98mVLZgE8bX5vQW": {
             "id": "E98mVLZgE8bX5vQW",
             "name": "Nienawiść (Grupa)",
             "description": "<p>Coś w Starym Świecie powoduje twoją @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.5w5YLPNd6AaU4f85]{Nienawiść}. Każde wykupienie tego Talentu to jej nowy obiekt, a przykładowe grupy to: Banici, Czarownice, Ożywieńcy, Potwory, Sigmaryci, Zielonoskórzy, Zwierzoludzie.</p>",
@@ -529,7 +529,7 @@
             "sourceId": "Compendium.wfrp4e-core.items.eEHauevJWhmzvCSx",
             "tests": "Charyzma (Żebractwo)"
         },
-        "Magic Resistance": {
+        "eowbsW6oHGSNJmxV": {
             "id": "eowbsW6oHGSNJmxV",
             "name": "Odporność na Magię",
             "description": "<p>Jesteś uodporniony na zaklęcia. Poziom Sukcesów czarów rzucanych na ciebie jest obniżony o 2 za każde wykupienie tego Talentu. Poziom Sukcesów jest obniżany tylko od najwyższej Odporności na Magię w obszarze oddziaływania czaru. Co więcej, nie możesz wykupić Talentów: <em>Magia Tajemna</em>, <em>Błogosławieństwo</em>, <em>Inwokacja</em>, <em>Magia Prosta</em> i <em>Czarownica</em>.</p>",
@@ -662,7 +662,7 @@
             "sourceId": "Compendium.wfrp4e-core.items.GRRN3XAKIpEVCY7z",
             "tests": "Rzemiosło (Dowolne)"
         },
-        "Flagellant": {
+        "Gs10qhA4CDmZyb1g": {
             "id": "Gs10qhA4CDmZyb1g",
             "name": "Biczownik",
             "description": "<p>Swój ból ofiarowałeś wyznawanemu bogu. Każdego dnia musisz spędzić pół dzwonu (pół godziny) na modlitwie, otrzymując obrażenia na poziomie liczby wykupień tego Talentu. Jeśli posiadasz Talent Szał Bojowy to do położenia się na najbliższy spoczynek możesz natychmiast wpaść w Szał Bojowy bez wykonywania Testów. Szał Bojowy zostaje dodany do listy Talentów dostępnych dla twojej bieżącej Profesji. Jeśli zaniedbasz biczowanie przez jeden dzień lub pozwolisz, by poszarpana skóra została uleczona, nie będziesz mógł wydawać Punktów Bohatera ani Determinacji, póki się znów nie wybiczujesz.</p>",
@@ -715,7 +715,7 @@
             },
             "tests": "Testy charyzmy i plotkowanie podczas przyjęć, testy Mocnej Głowy"
         },
-        "Frenzy": {
+        "hXcfygzujgyMN1uI": {
             "id": "hXcfygzujgyMN1uI",
             "name": "Szał Bojowy",
             "description": "<p style=\"user-select: text; color: #111111;\">Dzięki Testowi Siły Woli postać może wprowadzić się w stan furii, motywując się, wyjąc, gryząc tarczę itd. Jeśli Test się uda, postać wpada w Szał Bojowy.</p>\n<p style=\"user-select: text; color: #111111;\">W trakcie Szału Bojowego postać jest niewrażliwa na wszystkie inne Czynniki Psychologiczne i nie ucieknie ani nie wycofa się z żadnego powodu. Mało tego – musi zawsze poruszać się z pełną prędkością w stronę najbliższego widzianego przeciwnika, by go zaatakować. Ogólnie rzecz biorąc, jedynymi Akcjami, jakie można wtedy wykonać, są Testy Broni Białej w zwarciu albo Atletyki, by szybciej dobiec do przeciwnika. Poza tym w każdej Rundzie postać otrzymuje Akcję Darmową w postaci dodatkowego ataku wręcz, ponieważ naprawdę daje z siebie wszystko. A jakby tego było mało, zaciekłość i brutalność skutkuje podniesieniem Bonusu z Siły o +1. Postać pozostaje w Szale Bojowym, dopóki wszyscy wrogowie w polu widzenia nie zostaną unieszkodliwieni albo dopóki postać nie otrzyma przynajmniej 1 poziomu Stanu @Condition[Oszołomienie] lub nie nastąpi @Condition[Utrata Przytomności]. Po zakończeniu Szału Bojowego postać natychmiast otrzymuje 1 poziom Stanu @Condition[Zmęczenie].</p>",
@@ -741,7 +741,7 @@
                 }
             }
         },
-        "Sea Legs": {
+        "Ij9N3G8jzxb4lrwy": {
             "id": "Ij9N3G8jzxb4lrwy",
             "name": "Urodzony żeglarz",
             "description": "<p>Przywykłeś do kołysania fal morskich i mało prawdopodobne, byś zachorował na chorobę morską, nawet podczas najsilniejszych sztormów. W spokojnych warunkach nie musisz przeprowadzać Testu, by sprawdzić, czy na morzu chwycą cię mdłości. Gdy rozpęta się sztorm lub gdy chorobę morską powoduje magia, nie dotyczą cię modyfikatory negatywnie wpływające na opieranie się tej przypadłości.</p>",
@@ -1317,14 +1317,14 @@
             },
             "tests": "Skradanie (Miasto)"
         },
-        "Inspiring": {
+        "WCXnFSV4WOSmzzc4": {
             "id": "WCXnFSV4WOSmzzc4",
             "name": "Inspirujący",
             "description": "<p>Twoje słowa i zachęty mogą przechylić szalę zwycięstwa w bitwie. Poniższa tabela pokazuje, ile osób ulegnie wpływowi Dowodzenia podczas wojny.</p> <p> </p> <div> <table title=\"\" border=\"1\" summary=\"\" cellspacing=\"0\" cellpadding=\"0\"> <tbody> <tr> <td> <p>Liczba wykupień Talentu</p> </td> <td> <p>Liczba żołnierzy pod twoim wpływem</p> </td> </tr> <tr> <td> <p>1</p> </td> <td> <p>Normalna x5</p> </td> </tr> <tr> <td> <p>2</p> </td> <td> <p>Normalna x10</p> </td> </tr> <tr> <td> <p>3</p> </td> <td> <p>Normalna x20</p> </td> </tr> <tr> <td> <p>4</p> </td> <td> <p>Normalna x50</p> </td> </tr> <tr> <td> <p>5</p> </td> <td> <p>Normalna x100</p> </td> </tr> <tr> <td> <p>6</p> </td> <td> <p>Normalna x200</p> </td> </tr> <tr> <td> <p>7</p> </td> <td> <p>Normalna x500</p> </td> </tr> <tr> <td> <p>8</p> </td> <td> <p>Normalna x1000</p> </td> </tr> <tr> <td> <p>9</p> </td> <td> <p>Wszyscy, którzy cię słyszą</p> </td> </tr> </tbody> </table> </div>",
             "sourceId": "Compendium.wfrp4e-core.items.WCXnFSV4WOSmzzc4",
             "tests": "Dowodzenie podczas wojny"
         },
-        "Pilot": {
+        "WEH97InIX29nzgW1": {
             "id": "WEH97InIX29nzgW1",
             "name": "Starsza Pilotka",
             "description": "<p>Potrafisz kierować okrętem po zdradliwych akwenach. Kiedy nie powiedzie ci się Test na niepewnych wodach, możesz odwrócić kolejność kości, jeżeli nowy wynik pozwoli ci odnieść sukces. Maksymalnie możesz w ten sposób osiągnąć +1 PS, ponieważ w ostatniej chwili wypatrzyłeś niebezpieczeństwo. </p>",
@@ -1365,7 +1365,7 @@
             "sourceId": "Compendium.wfrp4e-core.items.wXcJWxJdw0ib5b8W",
             "tests": "Rzemiosło (Aptekarstwo)"
         },
-        "Night Vision": {
+        "x0WMGwuQzReXcQrs": {
             "id": "x0WMGwuQzReXcQrs",
             "name": "Widzenie w Ciemności",
             "description": "<p>Bardzo dobrze widzisz w naturalnych ciemnościach. Jeśli masz źródło choćby słabego blasku (światło gwiazd, księżyca czy bioluminescencję), widzisz wyraźnie na 20 metrów na każde wykupienie tego Talentu. To nie koniec. Dla ciebie oświetlenie okolicy sięga dalej o 20 metrów na każde wykupienie tego Talentu.</p>",
@@ -1476,7 +1476,7 @@
                 }
             }
         },
-        "Hardy": {
+        "zImcTgEl2XNnbu5W": {
             "id": "zImcTgEl2XNnbu5W",
             "name": "Twardziel",
             "description": "<p>Na stałe zwiększasz swoją Żywotność o Bonus z Wytrzymałości. Jeśli ten się zwiększy, wraz z nim wzrośnie również twoja Żywotność wynikająca z tego Talentu.</p>",

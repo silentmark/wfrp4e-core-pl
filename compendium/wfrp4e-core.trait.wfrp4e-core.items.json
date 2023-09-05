@@ -142,7 +142,7 @@
                 }
             }
         },
-        "Hatred": {
+        "aE3pyW20Orvdjzj0": {
             "id": "aE3pyW20Orvdjzj0",
             "name": "Nienawiść (Grupa)",
             "description": "<p>Stworzenie naprawdę nienawidzi Obiektu.</p>\n<p>Postać skrywa w duszy głęboką Nienawiść do „x”, czyli jakiejś grupy ludzi czy stworzeń, np. „mieszkańców Hochlandu”, „ośmiornic bagiennych” czy „handlarzy niewolników”. Postać nigdy nie może nawiązać kontaktów z kimś lub czymś, czego nienawidzi.</p>\n<p>Za każdym razem, gdy spotyka przedstawiciela znienawidzonej grupy, musi wykonać Test Psychologii. Jeśli ten się nie uda, postać nie jest w stanie dłużej powstrzymywać swojej Nienawiści. Pod koniec każdej następnej Rundy postać może wykonać kolejny Test Psychologii, by zakończyć napad Nienawiści. Taki atak sam dobiegnie końca, kiedy wszyscy członkowie znienawidzonej grupy znajdujący się w polu widzenia albo uciekną, albo zginą. Utrata Przytomności przynosi identyczny skutek.</p>\n<p>Postać będąca w szale Nienawiści musi natychmiast podjąć próbę zniszczenia znienawidzonej grupy w najszybszy i najbardziej zabójczy znany jej sposób: </p>\n<ul>\n<li>Otrzymuje premię +1 PS do wszystkich Testów walki przeciwko tej grupie.</li>\n<li>Jest niewrażliwa na Strach oraz Zastraszanie (ale nie na Grozę) wywoływane przez znienawidzonego wroga.</li>\n</ul>",
@@ -175,7 +175,7 @@
             "sourceId": "Compendium.wfrp4e-core.items.BqPZn6q3VHn9HUrW",
             "specification": "#"
         },
-        "Ward": {
+        "Bvd2aZ0gQUXHfCTh": {
             "id": "Bvd2aZ0gQUXHfCTh",
             "name": "Ochrona",
             "description": "<p>Stworzenie jest magiczne, nosi specjalny talizman albo ma szczęście – niektóre ciosy po prostu go nie trafiają. Rzuć [[/r 1d10]] po każdym otrzymanym ciosie. Jeśli stworzenie wyrzuci tyle, ile wynosi podana wartość, lub więcej, cios zostaje zignorowany, nawet jeśli jest to Trafienie Krytyczne.</p>",
@@ -209,7 +209,7 @@
             "sourceId": "Compendium.wfrp4e-core.items.c1T7MelXEZLQfpVv",
             "specification": "Bóstwo"
         },
-        "Tracker": {
+        "ClOlztW6hH8rslbp": {
             "id": "ClOlztW6hH8rslbp",
             "name": "Tropiciel",
             "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
@@ -246,7 +246,7 @@
                 }
             }
         },
-        "Flight": {
+        "EO05HX7jql0g605A": {
             "id": "EO05HX7jql0g605A",
             "name": "Latanie",
             "description": "<p>Gdy stworzenie wykonuje Ruch, może przelecieć tyle metrów, ile wynosi podana wartość. Lecąc, ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydować, czy wyląduje, czy będzie kontynuować lot. Może w ramach tego ruchu wykonać Szarżę. Jeśli na początku swojej Tury leci, musi wybrać jako Ruch Latanie. Jeśli nie jest w stanie tego zrobić, MG decyduje, jak daleko stworzenie upadnie.</p>\n<p>Biorąc stworzenie na cel, zmierz odległość horyzontalną jak normalnie, a następnie zwiększ dystans o 1 poziom. Zatem strzał na Dalekim zasięgu stanie się strzałem na Bardzo dalekim zasięgu. Natomiast jeśli był to Bardzo daleki zasięg, stworzenia nie można dosięgnąć strzałem.</p>\n<p>Lecąc, stworzenie dostaje karę -20 do wszystkich prób walki dystansowej, ponieważ nurkuje w powietrzu i zatacza kręgi.</p>",
@@ -259,7 +259,7 @@
             "description": "<p>Stworzenie ulega czasami wszechogarniającej wściekłości. Może wydać wszystkie Przewagi (minimalnie 1), by wzbudzić w sobie <i>Nienawiść</i> wobec przeciwników w walce wręcz. Jeżeli stworzenie zebrało przynajmniej 3 Przewagi, może wydać wszystkie Przewagi, by wpaść w <i>Szał Bojowy</i>.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.fjd1u9VAgiYzhBRp"
         },
-        "Night Vision": {
+        "FmHDbCOy3pH8yKhm": {
             "id": "FmHDbCOy3pH8yKhm",
             "name": "Widzenie w Ciemności",
             "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
@@ -292,7 +292,7 @@
             "sourceId": "Compendium.wfrp4e-core.items.GwjvDLZz3PvK6xgs",
             "specification": "Cel"
         },
-        "Hardy": {
+        "HbrwGhUl0ZXz4kLA": {
             "id": "HbrwGhUl0ZXz4kLA",
             "name": "Twardziel",
             "description": "<p>Stworzenie jest w stanie przyjąć więcej obrażeń niż większość innych istot. Zwiększ Żywotność stworzenia o wartość równą jego Bonusowi z Wytrzymałości (zastosuj to przed wszelkimi modyfikatorami <i>Rozmiaru</i>).</p>",
@@ -336,7 +336,7 @@
             "description": "<p>To stworzenie strzeże określonego obszaru lub miejsca. Będzie walczyło do śmierci w jego obronie i normalnie nie będzie ścigało wrogów, jeśli uciekną z tego obszaru.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.JIAe7i7dqTQBu4do"
         },
-        "Dark Vision": {
+        "JQa5DLnTs2SEzRrc": {
             "id": "JQa5DLnTs2SEzRrc",
             "name": "Widzenie w Mroku",
             "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>",
@@ -407,7 +407,7 @@
             "description": "<p>Stworzenie zostało „pobłogosławione” mutacją. Wykonaj dla niego rzut w @Table[mutatephys]{Tabeli Spaczenia Fizycznego}.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.lV7Bxi3T3ps4QBlc"
         },
-        "Corrosive Blood": {
+        "M5QSWOYt2Rbv2yxW": {
             "id": "M5QSWOYt2Rbv2yxW",
             "name": "Kwasowa Krew",
             "description": "<p>Krew stworzenia jest żrąca. Za każdym razem, gdy zostanie ono ranione, tryska z niego krew i wszystkie związane z nim walką cele dostają [[/r 1d10]] Ran. Są one normalnie obniżane przez Bonus z Wytrzymałości i Punkty Pancerza, ale wynoszą minimum 1.</p>",
@@ -439,7 +439,7 @@
             "description": "<p>Stworzenie spowite jest magią. Wszystkie jego ataki liczą się jako <i>Magiczne</i>, co oznacza, że może ranić istoty wrażliwe tylko na ataki magiczne.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.mDgEMOoJpi8DkRYb"
         },
-        "Distracting": {
+        "MVI0lXcg6vvtooAF": {
             "id": "MVI0lXcg6vvtooAF",
             "name": "Dekoncentrujący",
             "description": "<p>Stworzenie rozprasza lub dezorientuje wrogów, być może wydzielając usypiający zapach lub powalający smród, a może ze względu na przerażająco dziwaczny wygląd. Wszystkie żywe cele w promieniu tylu metrów, ile wynosi jego Bonus z Wytrzymałości, dostają karę -20 do wszystkich Testów. Cel może dostać tę karę tylko raz - bez względu na to, jak wielu jest dekoncentrujących wrogów.</p>",
@@ -537,7 +537,7 @@
                 }
             }
         },
-        "Regenerate": {
+        "SfUUdOGjdYpr3KSR": {
             "id": "SfUUdOGjdYpr3KSR",
             "name": "Regeneracja",
             "description": "<p>Stworzenie leczy się w niezwykłym tempie. Nawet jego odcięte części ciała mogą odrastać. Na początku każdej Rundy, o ile pozostało mu ponad 0 Żywotności, stworzenie automatycznie regeneruje 1k10 punktów Żywotności. Jeśli pozostało mu 0 Żywotności, regeneruje jedną Ranę po wyrzuceniu 8+ na 1k10. Jeśli kiedykolwiek podczas regeneracji wyrzuci 10, może w pełni zregenerować także Ranę Krytyczną, anulując w ten sposób wszelkie powiązane z nią kary i Stany. Poza tym wszelkie Rany Krytyczne lub Rany spowodowane przez ogień nie mogą być regenerowane i powinny być zapisywane oddzielnie.</p>",
@@ -622,7 +622,7 @@
             },
             "specification": "Obrażenia"
         },
-        "Breath": {
+        "uqGxFOEqeurwkAO3": {
             "id": "uqGxFOEqeurwkAO3",
             "name": "Zionięcie ()",
             "description": "<p>Stworzenie posługuje się zionięciem jako potężną bronią. W swojej Turze, kosztem 2 Przewag, może aktywować <i>Zionięcie</i> jako Darmowy Atak. Wybierz 1 cel, który stworzenie widzi w promieniu 20 + Bonus z Wytrzymałości metrów. Trafione zostają wszystkie postacie wokół tego celu w promieniu tylu metrów, ile wynosi Bonus z Siły, podobnie jak wszystkie postacie znajdujące się między stworzeniem a celem. Przeprowadź <b>Test Przeciwstawny Umiejętności Strzeleckie/Unik</b> przeciwko wszystkim objętym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Każdy cel, który przegrał Test, otrzymuje trafienie zadające wskazaną wartość Obrażeń. Co więcej, jeśli przy Cesze Stworzenia wymieniony jest jeden z opisanych niżej typów zionięcia, zastosuj wskazane zasady.</p><p><b>Dym</b>: Obszar wypełnia się dymem, który zasłania pole widzenia na tyle Rund, ile wynosi Bonus z Wytrzymałości.</p><p><b>Elektryczność</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan @Condition[Oszołomienie].</p><p><b>Kwas</b>: Noszony przez objęte efektem postaci pancerze oraz wszelka broń dostają 1 punkt Uszkodzeń.</p><p><b>Ogień</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan @Condition[Podpalenie].</p><p><b>Trucizna</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan @Condition[Zatrucie].</p><p><b>Zimno</b>: Cele dostają jeden Stan @Condition[Oszołomienie]{Oszołomiony} za każde pełne 5 odniesionych Ran (minimalnie 1).</p><p>Stworzenie jest odporne na własne <i>Zionięcie</i>. Ten atak jest <i>Magiczny</i>.</p>",
@@ -735,7 +735,7 @@
             "sourceId": "Compendium.wfrp4e-core.items.xsGbDFqK2qh7lsIj",
             "specification": "Siła Korupcji"
         },
-        "Frenzy": {
+        "yRhhOlt18COq4e1q": {
             "id": "yRhhOlt18COq4e1q",
             "name": "Szał Bojowy",
             "description": "<p>Stworzenie może wpadać w <i>Szał Bojowy</i>. Podczas Szału Bojowego jest odporne na zasady Psychologii, nie wycofa się z żadnego powodu, musi zawsze poruszać się z pełną prędkością w stronę najbliższego widzianego przeciwnika, by go zaatakować. Jedynymi Akcjami, jakie można wtedy wykonać, są Testy Broni Białej w zwarciu albo Atletyki, by szybciej dobiec do przeciwnika. Poza tym w każdej Rundzie postać otrzymuje Akcję Darmową w postaci dodatkowego ataku wręcz, ponieważ naprawdę daje z siebie wszystko. A jakby tego było mało, zaciekłość i brutalność skutkuje podniesieniem Bonusu z Siły o +1. Postać pozostaje w Szale Bojowym, dopóki wszyscy wrogowie w polu widzenia nie zostaną unieszkodliwieni albo dopóki postać nie otrzyma przynajmniej 1 poziomu Oszołomienia lub nie nastąpi Utrata Przytomności. Po zakończeniu Szału Bojowego postać natychmiast otrzymuje 1 poziom Zmęczenia.</p>",
@@ -748,7 +748,7 @@
                 }
             }
         },
-        "Magic Resistance": {
+        "yrkI7ATjqLPDTFmZ": {
             "id": "yrkI7ATjqLPDTFmZ",
             "name": "Odporność na Magię",
             "description": "<p>Efekt wywierany przez magię na stworzenie jest ograniczony. PS dowolnego wpływającego na stworzenie czaru zmniejszany jest o podaną wartość. Zatem <i>Odporność na Magię 2</i> zmniejsza PS o 2.</p>",

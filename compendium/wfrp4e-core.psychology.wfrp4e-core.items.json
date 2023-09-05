@@ -26,7 +26,7 @@
                 }
             }
         },
-        "Frenzy": {
+        "DrNUTPeodEgpWTnT": {
             "id": "DrNUTPeodEgpWTnT",
             "name": "Szał Bojowy",
             "description": "<p>Dzięki Testowi Siły Woli postać może wprowadzić się w stan furii, motywując się, wyjąc, gryząc tarczę itd. Jeśli Test się uda, postać wpada w Szał Bojowy.</p>\n<p>W trakcie Szału Bojowego</p><ul><li>postać jest niewrażliwa na wszystkie inne Czynniki Psychologiczne i nie ucieknie ani nie wycofa się z żadnego powodu.;</li><li>Mało tego - musi zawsze poruszać się z pełną prędkością w stronę najbliższego widzianego przeciwnika, by go zaatakować.</li><li>Ogólnie rzecz biorąc, jedynymi Akcjami, jakie można wtedy wykonać, są Testy Broni Białej w zwarciu albo Atletyki, by szybciej dobiec do przeciwnika.</li><li>Poza tym w każdej Rundzie postać otrzymuje Akcję Darmową w postaci dodatkowego ataku wręcz, ponieważ naprawdę daje z siebie wszystko. </li><li>A jakby tego było mało, zaciekłość i brutalność skutkuje podniesieniem Bonusu z Siły o +1.</li></ul>\n<p>Postać pozostaje w Szale Bojowym, dopóki wszyscy wrogowie w polu widzenia nie zostaną unieszkodliwieni albo dopóki postać nie otrzyma przynajmniej 1 poziomu Stanu <em>@Condition[Oszołomienie]</em> lub nie nastąpi Stan <em>@Condition[Utrata Przytomności]</em>. Po zakończeniu Szału Bojowego postać natychmiast otrzymuje 1 poziom Stanu <em>@Condition[Zmęczenie]</a></em>.</p></p>",
