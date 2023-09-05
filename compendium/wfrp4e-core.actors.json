@@ -17,7 +17,7 @@
             "id": "28MwFcDPwpcO12kt",
             "name": "Smukłoudy Jęzobicz",
             "description": "<p>Ostatecznym celem wszystkich czempionów Chaosu jest dostąpienie apoteozy: wyniesienia ponad demoniczne szeregi i służenia swojemu panu przez wieczność jako książę demonów w Królestwach Chaosu. To potężne istoty o wielkiej mocy. Książęta demonów są straszliwymi wrogami, starcia z którymi unikają nawet najwięksi bohaterowie Imperium.</p>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.28MwFcDPwpcO12kt",
+            "sourceId": "Compendium.wfrp4e-core.actors.28MwFcDPwpcO12kt",
             "gender": "???",
             "species": "Książę Demonów",
             "effects": {
@@ -52,7 +52,7 @@
                     "name": "Rogi (typ)",
                     "description": "<p>Stworzenie ma rogi lub inne ostre wyrostki (jeśli jego Cecha Stworzenia Rogi reprezentuje coś innego, będzie to określone w nawiasie). Gdy stworzenie zyskuje Przewagę na skutek Szarżowania, może\nwykonać Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podaną wartość Obrażeń (Bonus z Siły stworzenia jest już wliczony).</p>",
                     "originalName": "Rogi",
-                    "sourceId": "Compendium.wfrp4e-core.traits.BqPZn6q3VHn9HUrW",
+                    "sourceId": "Compendium.wfrp4e-core.items.BqPZn6q3VHn9HUrW",
                     "specification": "4"
                 },
                 "pwtql3Ia8555L2v7": {
@@ -73,7 +73,7 @@
             "id": "2lvE7Ypir9uuRjVT",
             "name": "Czarna Bella",
             "description": "<section id=\"secret-MjIx27JoP8lYXwK6\" class=\"secret\"><p>Męża Bethildy zaszlachtowali zwierzoludzie, którzy napadli wioskę Reikherz. Cztery miesiące później kobieta została wyrzucona z domu, ponieważ nie była w stanie płacić czynszu. Zdesperowana zwróciła się do swojego kuzyna, Alwina, poszukiwanego banity. Przekonanie go zajęło niewiele czasu i Bethilda dołączyła do grupy bandytów nękających drogę Karstadt–Siedlung. Bethilda była zaskoczona, jak bardzo ekscytujące okazało się rabowanie na gościńcu. Teraz każe zwać się Czarną Bellą i słynie z brutalnej bezwzględności, co zaczęło głęboko martwić jej kuzyna.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.2lvE7Ypir9uuRjVT",
+            "sourceId": "Compendium.wfrp4e-core.actors.2lvE7Ypir9uuRjVT",
             "gender": "Kobieta",
             "species": "Człowiek",
             "effects": {
@@ -112,7 +112,7 @@
                     "name": "Strzelanie (50)",
                     "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
                     "originalName": "Strzelanie (50)",
-                    "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
+                    "sourceId": "Compendium.wfrp4e-core.items.Z1TGphWhic2E3Lfx",
                     "specification": "8"
                 }
             }
@@ -121,7 +121,7 @@
             "id": "5wl3KH6hXsGwUcZa",
             "name": "Leśny elf",
             "description": "<section id=\"secret-HaVbfBaaBSzWZbNX\" class=\"secret\"><p>@UUID[JournalEntry.IQ0PgoJihQltCBUU.JournalEntryPage.l0f11ypRjH9sR48Q#wood-elves]{Leśne Elfy}</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.5wl3KH6hXsGwUcZa",
+            "sourceId": "Compendium.wfrp4e-core.actors.5wl3KH6hXsGwUcZa",
             "gender": "Różne",
             "species": "Leśny Elf",
             "effects": {
@@ -158,7 +158,7 @@
                     "name": "Strzelanie (150)",
                     "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
                     "originalName": "Strzelanie (150)",
-                    "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
+                    "sourceId": "Compendium.wfrp4e-core.items.Z1TGphWhic2E3Lfx",
                     "specification": "9"
                 },
                 "8aVanym1jM10gjK6": {
@@ -167,37 +167,37 @@
                 "fdq3RFSOKl5b3WzW": {
                     "id": "fdq3RFSOKl5b3WzW",
                     "name": "Sztuka (Dowolna)",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
                     "originalName": "Sztuka",
-                    "sourceId": "Compendium.wfrp4e-core.skills.fdq3RFSOKl5b3WzW"
+                    "sourceId": "Compendium.wfrp4e-core.items.fdq3RFSOKl5b3WzW"
                 },
                 "0CwV96kTDRF0jUhk": {
                     "id": "0CwV96kTDRF0jUhk",
                     "name": "Występy (Dowolne)",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Występy}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Występy}</p>",
                     "originalName": "Występy",
-                    "sourceId": "Compendium.wfrp4e-core.skills.0CwV96kTDRF0jUhk"
+                    "sourceId": "Compendium.wfrp4e-core.items.0CwV96kTDRF0jUhk"
                 },
                 "F8NfBZdVSEIGCMtu": {
                     "id": "F8NfBZdVSEIGCMtu",
                     "name": "Broń Biała (Podstawowa)",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
                     "originalName": "Broń Biała",
-                    "sourceId": "Compendium.wfrp4e-core.skills.F8NfBZdVSEIGCMtu"
+                    "sourceId": "Compendium.wfrp4e-core.items.F8NfBZdVSEIGCMtu"
                 },
                 "MeXCAQ3wqJzX07X7": {
                     "id": "MeXCAQ3wqJzX07X7",
                     "name": "Jeździectwo",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Jeździectwo}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Jeździectwo}</p>",
                     "originalName": "Jeździectwo",
-                    "sourceId": "Compendium.wfrp4e-core.skills.MeXCAQ3wqJzX07X7"
+                    "sourceId": "Compendium.wfrp4e-core.items.MeXCAQ3wqJzX07X7"
                 },
                 "McTtmZu3Ac8Lh48W": {
                     "id": "McTtmZu3Ac8Lh48W",
                     "name": "Skradanie",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Skradanie}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Skradanie}</p>",
                     "originalName": "Skradanie",
-                    "sourceId": "Compendium.wfrp4e-core.skills.McTtmZu3Ac8Lh48W"
+                    "sourceId": "Compendium.wfrp4e-core.items.McTtmZu3Ac8Lh48W"
                 }
             }
         },
@@ -205,14 +205,14 @@
             "id": "6B7LMdYtunAftsFN",
             "name": "Ghoul z Krypty",
             "description": "<section id=\"secret-cSI55YBJfss3QSgb\" class=\"secret\"><p>Należą do najżałośniejszych stworzeń w Starym Świecie. Ghule to brzydkie, zgarbione stwory o bladej, brudnej skórze i ostrych, żółtych zębach, którymi zdzierają ciało z kości ofiar. Ghule podążają za magicznymi energiami Shyish i Dhar, co w praktyce oznacza, że ściągają na cmentarze i do krypt oraz krążą po polach bitew.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.6B7LMdYtunAftsFN",
+            "sourceId": "Compendium.wfrp4e-core.actors.6B7LMdYtunAftsFN",
             "gender": "???",
             "species": "Ghul",
             "effects": {
                 "yuPctOwSU2nLHscr": {
                     "id": "yuPctOwSU2nLHscr",
                     "name": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy (+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy (+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "ZxTHLjvTvkErPA1u": {
                     "id": "ZxTHLjvTvkErPA1u",
@@ -236,7 +236,7 @@
             "id": "7629Eaow3acVS59H",
             "name": "Dzik",
             "description": "<section id=\"secret-0mOdzM97CZBimHFw\" class=\"secret\"><p>Buszujące po lasach dziki to stworzenia skryte, ale osaczone walczą, używając ostrych kłów z zaciekłością, która szokuje nieprzygotowanych. Chociaż większość dzików ma 150–180 cm długości, niektóre osiągają niezwykłe rozmiary. Największe okazy cenione są przez orki, które wykorzystują je jako przerażające wierzchowce bojowe.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.7629Eaow3acVS59H",
+            "sourceId": "Compendium.wfrp4e-core.actors.7629Eaow3acVS59H",
             "gender": "Różne",
             "species": "Dzik",
             "effects": {
@@ -248,7 +248,7 @@
                 "2ubzZUjCYNhscBVW": {
                     "id": "2ubzZUjCYNhscBVW",
                     "name": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy (+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy (+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "b2wHjjEjkMI6a2mS": {
                     "id": "b2wHjjEjkMI6a2mS",
@@ -293,7 +293,7 @@
                     "name": "Rogi (Kły)",
                     "description": "<p>Stworzenie ma rogi lub inne ostre wyrostki (jeśli jego Cecha Stworzenia Rogi reprezentuje coś innego, będzie to określone w nawiasie). Gdy stworzenie zyskuje Przewagę na skutek Szarżowania, może wykonać Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podaną wartość Obrażeń (Bonus z Siły stworzenia jest już wliczony).</p>",
                     "originalName": "Horns (Kły)",
-                    "sourceId": "Compendium.wfrp4e-core.traits.BqPZn6q3VHn9HUrW",
+                    "sourceId": "Compendium.wfrp4e-core.items.BqPZn6q3VHn9HUrW",
                     "specification": "3"
                 }
             }
@@ -302,7 +302,7 @@
             "id": "7ihBjcHcewZ2Obul",
             "name": "Człowiek",
             "description": "<section id=\"secret-vD5MVV7CgllMC91b\" class=\"secret\"><p>@UUID[JournalEntry.IQ0PgoJihQltCBUU.JournalEntryPage.l0f11ypRjH9sR48Q#humans-(reiklander)]{Ludzie (Reiklandczycy)}</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.7ihBjcHcewZ2Obul",
+            "sourceId": "Compendium.wfrp4e-core.actors.7ihBjcHcewZ2Obul",
             "gender": "Różne",
             "species": "Człowiek",
             "items": {
@@ -311,7 +311,7 @@
                     "name": "Strzelanie (50)",
                     "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
                     "originalName": "Strzelanie (50)",
-                    "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
+                    "sourceId": "Compendium.wfrp4e-core.items.Z1TGphWhic2E3Lfx",
                     "specification": "8"
                 },
                 "BrakSubtRcj6MXsw": {
@@ -320,37 +320,37 @@
                 "fdq3RFSOKl5b3WzW": {
                     "id": "fdq3RFSOKl5b3WzW",
                     "name": "Sztuka (Dowolna)",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
                     "originalName": "Sztuka",
-                    "sourceId": "Compendium.wfrp4e-core.skills.fdq3RFSOKl5b3WzW"
+                    "sourceId": "Compendium.wfrp4e-core.items.fdq3RFSOKl5b3WzW"
                 },
                 "0CwV96kTDRF0jUhk": {
                     "id": "0CwV96kTDRF0jUhk",
                     "name": "Występy (Dowolne)",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Występy}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Występy}</p>",
                     "originalName": "Występy",
-                    "sourceId": "Compendium.wfrp4e-core.skills.0CwV96kTDRF0jUhk"
+                    "sourceId": "Compendium.wfrp4e-core.items.0CwV96kTDRF0jUhk"
                 },
                 "F8NfBZdVSEIGCMtu": {
                     "id": "F8NfBZdVSEIGCMtu",
                     "name": "Broń Biała (Podstawowa)",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
                     "originalName": "Broń Biała",
-                    "sourceId": "Compendium.wfrp4e-core.skills.F8NfBZdVSEIGCMtu"
+                    "sourceId": "Compendium.wfrp4e-core.items.F8NfBZdVSEIGCMtu"
                 },
                 "MeXCAQ3wqJzX07X7": {
                     "id": "MeXCAQ3wqJzX07X7",
                     "name": "Jeździectwo",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Jeździectwo}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Jeździectwo}</p>",
                     "originalName": "Jeździectwo",
-                    "sourceId": "Compendium.wfrp4e-core.skills.MeXCAQ3wqJzX07X7"
+                    "sourceId": "Compendium.wfrp4e-core.items.MeXCAQ3wqJzX07X7"
                 },
                 "McTtmZu3Ac8Lh48W": {
                     "id": "McTtmZu3Ac8Lh48W",
                     "name": "Skradanie",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Skradanie}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Skradanie}</p>",
                     "originalName": "Skradanie",
-                    "sourceId": "Compendium.wfrp4e-core.skills.McTtmZu3Ac8Lh48W"
+                    "sourceId": "Compendium.wfrp4e-core.items.McTtmZu3Ac8Lh48W"
                 }
             }
         },
@@ -358,7 +358,7 @@
             "id": "7qslmdLa7so3BmFk",
             "name": "Troll",
             "description": "<section id=\"secret-6aymVnM91tQxg16V\" class=\"secret\"><blockquote><p>Zapewniam, sir, że przeprowadziliśmy szeroko zakrojone badania w tej dziedzinie i w ich trakcie straciliśmy kilku z naszych najodważniejszych taksonomistów. W tej chwili w Imperium żyją dokładnie dwadzieścia trzy odmiany trolla – wliczając w to siedemnaście podgatunków i dwie niepotwierdzone obserwacje, które nie zostały jeszcze sklasyfikowane. Towarzystwo Imperialne zostało założone właśnie po to, by zapewniać taki poziom szczegółów; wiemy, że podawane przez nas liczby są ścisłe.</p><p style=\"text-align: right;\"><em>– Ignatius z Nuln, uczony</em></p></blockquote><p> Trolle to brudne, wstrętne stwory, które nękają wszystkie zakątki Starego Świata. Szybko dostosowują się do otoczenia i występują w różnych odmianach. Wszystkie jednak są wielkie i okazałe. To stworzenia tępe i kierowane instynktem poszukiwania żarcia, ale lubią gromadzić też inne dobra. Leża trolli mogą skrywać przydatne i cenne skarby... A także okropne resztki ich posiłków. Chociaż istnieje wiele gatunków trolli, wszystkie mają pewne wspólne cechy: zazwyczaj są niezwykle głupie, co oznacza, że każdy bystry przeciwnik ma nad nimi przewagę; mogą się regenerować, co sprawia, że niezwykle trudno je zabić; a także potrafią na zawołanie zwrócić ostatni posiłek, wymiotując żrącą żółcią na szokująco dużą odległość – chociaż nie cierpią tego robić, ponieważ są potem straszliwie głodne.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.7qslmdLa7so3BmFk",
+            "sourceId": "Compendium.wfrp4e-core.actors.7qslmdLa7so3BmFk",
             "gender": "Różne",
             "species": "Troll",
             "effects": {
@@ -399,7 +399,7 @@
                 "Qv9IU50A1hEVAXl1": {
                     "id": "Qv9IU50A1hEVAXl1",
                     "name": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy (+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy (+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "rJYy8szkNGqUs605": {
                     "id": "rJYy8szkNGqUs605",
@@ -426,7 +426,7 @@
             "id": "8g9rnHLiZ1pJcPPt",
             "name": "Gryf",
             "description": "<section id=\"secret-idJ9qUex4SNJsvUT\" class=\"secret\"><p>Posiadające przód ciała i skrzydła orła oraz zad wielkiego kota gryfy to eleganckie bestie o naturalnie dumnym i królewskim wyglądzie. Gniazdują wysoko w górach otaczających Imperium i są szybkimi, skutecznymi zabójcami, nieskorymi do bezmyślnego zniszczenia, jakiego dokonują stwory takie jak hipogryfy lub mantikory. Być może ze względu na ten pozór szlachetności wizerunek gryfa jest nadzwyczaj popularny w Imperium i wykorzystywany w heraldyce, ikonografii religijnej oraz jako symbol samego Imperium. Ponadto gryfy są jednymi z najinteligentniejszych zwierząt. Jeśli zostaną schwytane stosunkowo młode i poddane prawidłowemu szkoleniu, mogą być niesamowicie wierne, zdolne do przewidywania i posłusznego wykonywania szerokiego wachlarza komend. Są tak bardzo poszukiwane, że co rusz słyszy się o myśliwym, który stracił życie, próbując zdobyć jaja gryfa na sprzedaż. Prawdopodobnie najsłynniejszym gryfem w Reiklandzie jest Szpon Śmierci. Trzymany w Imperialnym Zwierzyńcu w Altdorfie Szpon Śmierci stanowi osobistą własność następcy tronu Reiklandu i podobno wykluł się dzięki troskliwej opiece samego Imperatora Karla-Franza – ta opowieść zapoczątkowała drukowanie wszelkiego rodzaju sprośnych karykatur w wywrotowych pamfletach..</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.8g9rnHLiZ1pJcPPt",
+            "sourceId": "Compendium.wfrp4e-core.actors.8g9rnHLiZ1pJcPPt",
             "gender": "Różne",
             "species": "Gryf",
             "effects": {
@@ -470,7 +470,7 @@
             "id": "8gG2Wim6wAlJWRax",
             "name": "Demonetka Slaanesha",
             "description": "<section id=\"secret-BXyeWId7fp0PJmOI\" class=\"secret\"><p>Podobnie jak wszystkie stwory Księcia Bólu i Rozkoszy, demonetki Slaanesha są jednocześnie piękne i budzące grozę. Otacza je nieziemski urok, który urąga wszelkiemu rozsądkowi i przeczy zdrowym zmysłom. Sprawia, że wrogowie są bezsilni, nie będąc w stanie stawiać oporu, zafascynowani bluźnierczą zmysłowością potwornych postaci. Demonetki mają kremową, bladą skórę i wielkie, głęboko czarne oczy. Ich delikatne skronie zdobią powiewające swobodnie włosy o nienaturalnej barwie. Ich smukłe ręce kończą się zakrzywionymi krabimi szczypcami zamiast dłońmi.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.8gG2Wim6wAlJWRax",
+            "sourceId": "Compendium.wfrp4e-core.actors.8gG2Wim6wAlJWRax",
             "gender": "???",
             "species": "Demon",
             "effects": {
@@ -504,7 +504,7 @@
             "id": "9q8QzWB4o7aj6ZxL",
             "name": "Dżabersmok",
             "description": "<section id=\"secret-ZoRnOiMJetjmYnjP\" class=\"secret\"><p>Dżabersmoki to prastare stwory Chaosu, które czają się pod cienistymi okapami najgłębszych, najciemniejszych lasów. To szaleńcze stworzenia. Dżabersmok stanowi odrażające połączenie ropuchy, smoka mułowego i owada – wszystko to wypełnione kwasową, czarną krwią, która tryska obficie z najmniejszej rany. Co gorsza, sam widok tego koszmaru przyprawia o utratę zdrowych zmysłów. Ofiara bełkocze, szwargocze bez ładu i składu, rzuca się z pazurami do oczu i rechocze szaleńczym śmiechem. To ułatwia dżabersmokowi jej zdobycie. </p><p>Nie koniec na tym. Dżabersmok ma lepki jęzor, którym może atakować i wciągać kolejny posiłek do rozdziawionej gęby. Jak przystało na jego wygląd, stwór chodzi, kiwając się nieporadnie, a nawet posiada skrzydła, które są jednak za małe, by mogły faktycznie poderwać nadęte cielsko..</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.9q8QzWB4o7aj6ZxL",
+            "sourceId": "Compendium.wfrp4e-core.actors.9q8QzWB4o7aj6ZxL",
             "gender": "Różne",
             "species": "Dżabersmok",
             "effects": {
@@ -521,7 +521,7 @@
                 "K11BUhxEOwL0OmRR": {
                     "id": "K11BUhxEOwL0OmRR",
                     "name": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy (+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy (+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "naCAi2JxEh991ITv": {
                     "id": "naCAi2JxEh991ITv",
@@ -560,7 +560,7 @@
                     "name": "Atak Językiem (12)",
                     "description": "<p>Chwytny język stworzenia może owijać się wokół ofiary, wciągając ją aż do makabrycznego końca. W swojej Turze stworzenie może wykonać Darmowy Atak, wydając 1 Przewagę. To atak dystansowy, który zadaje tyle Obrażeń, ile wynosi podana wartość (zasięg podany jest w nawiasie). Jeśli atak trafi, cel dostaje 1 Stan <i>Pochwycenie</i>, a jeśli ma mniejszy <i>Rozmiar</i>, zostaje przyciągnięty do stworzenia i Związany Walką wręcz. Stworzenie może następnie zdecydować, czy wypuści cel, wykonując Darmowy Atak z użyciem swojej cechy <i>Broń</i>, czy będzie trzymać cel owinięty językiem, zapoczątkowując Chwyt (patrz strona 163).</p>",
                     "originalName": "Atak Językiem (12)",
-                    "sourceId": "Compendium.wfrp4e-core.traits.xg6z63j6BH5AaqLL",
+                    "sourceId": "Compendium.wfrp4e-core.items.xg6z63j6BH5AaqLL",
                     "specification": "+5"
                 }
             }
@@ -569,7 +569,7 @@
             "id": "a05lQsGjSv62wF0U",
             "name": "Wojownik Chaosu",
             "description": "<section id=\"secret-UmFQtYU7axewKKpu\" class=\"secret\"><blockquote><p>Największe zagrożenie leży na ponurej północy. To wytwór innego miejsca, innego czasu, który spadł na nas z powodu nieszczęścia lub błędu dawno martwych bogów. Żarłocznie pożera nasz świat, trzęsąc się z niecierpliwości, wysyłając hordy najbardziej wojowniczych i zazdrosnych ludów ze wszystkich: naszych własnych krewniaków, plemiona ludzi..</p><p style=\"text-align: right;\"><em>— Phitzer, wissenlandzki czarownik</em></p></blockquote>\n<p>Ciężko uzbrojone i zwaliste brutale w pancerzach ozdobionych kolcami i symbolami swoich bóstw wywołującymi zabobonny strach – wojownicy Chaosu zdecydowanie nie są już ludźmi. Nic nie pozostało z ich wcześniejszego życia. Istnieją wyłącznie po to, by służyć swojemu mrocznemu patronowi. Podczas gdy większość wojowników Chaosu to wywyższeni łupieżcy pochodzący z krain położonych daleko na północy, kilku wybranych kultystów może otrzymać od Mrocznych Bogów nagrodę w postaci Pancerza Chaosu. Taka zbroja daje im wielką potęgę, a ceną jest to, że nie będą\nmogli jej zdjąć, dopóki będą żyli. Ponieważ niewielu wojowników może się z nimi mierzyć w walce, a żaden rycerz nie jest lepiej chroniony, zwykle żyją całkiem długo.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.a05lQsGjSv62wF0U",
+            "sourceId": "Compendium.wfrp4e-core.actors.a05lQsGjSv62wF0U",
             "gender": "???",
             "species": "???",
             "effects": {
@@ -605,7 +605,7 @@
             "id": "A4G4bTYxot3ZygZO",
             "name": "Hydra",
             "description": "<section id=\"secret-y3bSlbe8NGBkeQXt\" class=\"secret\"><p>Wielogłowa, przypominająca jaszczura hydra ma ciężkie ciało podtrzymujące plątaninę szyi i łbów, które zioną dymiącym ogniem i wściekle kąsają. To zaskakująco zaciekłe i skryte stwory. Hydry potrafią skradać się za ofiarą przez wiele kilometrów, jednak zwykle tracą cierpliwość i rzucają się do ataku przy akompaniamencie ryku ze wszystkich paszcz.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.A4G4bTYxot3ZygZO",
+            "sourceId": "Compendium.wfrp4e-core.actors.A4G4bTYxot3ZygZO",
             "gender": "Różne",
             "species": "Hydra",
             "effects": {
@@ -654,7 +654,7 @@
                     "name": "Zionięcie (Ogień)",
                     "description": "<p>Stworzenie posługuje się zionięciem jako potężną bronią. W swojej Turze, kosztem 2 Przewag, może aktywować <i>Zionięcie</i> jako Darmowy Atak. Wybierz 1 cel, który stworzenie widzi w promieniu\n20 + Bonus z Wytrzymałości metrów. Trafione zostają wszystkie postacie wokół tego celu w promieniu tylu metrów, ile wynosi Bonus z Siły, podobnie jak wszystkie postacie znajdujące się między\nstworzeniem a celem. Przeprowadź <b>Test Przeciwstawny Umiejętności Strzeleckie/Unik</b> przeciwko wszystkim objętym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Każdy cel, który przegrał Test, otrzymuje trafienie zadające wskazaną wartość Obrażeń. Co więcej, jeśli przy Cesze Stworzenia wymieniony jest jeden z opisanych niżej typów zionięcia, zastosuj wskazane zasady.</p><p><b>Ogień</b>Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan <i>Podpalenie</i></p>\n<p>Stworzenie jest odporne na własne <i>Zionięcie</i>. Ten atak jest <i>Magiczny</i></p>",
                     "originalName": "Zionięcie (Ogień)",
-                    "sourceId": "Compendium.wfrp4e-core.traits.uqGxFOEqeurwkAO3",
+                    "sourceId": "Compendium.wfrp4e-core.items.uqGxFOEqeurwkAO3",
                     "specification": "10"
                 },
                 "nAT0d32eoXu4bnlX": {
@@ -666,7 +666,7 @@
             "id": "AAiKqD1IoweDpJI7",
             "name": "Wąż",
             "description": "<section id=\"secret-tj8CFhFF60AgqJKX\" class=\"secret\"><p>Węże można znaleźć w całym Imperium, zwłaszcza w głębi lasów. Większość jest niegroźna, ale niektóre mają zabójczy jad lub potrafią udusić swoją ofiarę. Podobnie jak wiele stworzeń Starego Świata, mogą wyrosnąć do olbrzymich rozmiarów - jak ogromny żmij bagienny, który stanowi prawdziwe zagrożenie nawet dla najsilniejszego najemnika.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.AAiKqD1IoweDpJI7",
+            "sourceId": "Compendium.wfrp4e-core.actors.AAiKqD1IoweDpJI7",
             "gender": "Różne",
             "species": "Wąz",
             "effects": {
@@ -777,7 +777,7 @@
             "id": "b1R5sW6lYIViJ2ki",
             "name": "Koń",
             "description": "<section id=\"secret-KVVskb3Id1ELGbjT\" class=\"secret\"><p>Konie hodowane są z przeznaczeniem do wykonywania rozmaitych prac. Należą do nich chyże wierzchowce kurierów, krzepkie rumaki rycerzy i wielkie konie ciągnące wozy farmerów. Są tak przydatne, że handel końmi stał się w Reiklandzie niemal konkurencją sportową. Nieuczciwi sprzedawcy chcą zarobić kosztem ignoranckiego nabywcy. Wypełniają luki i malują zęby podstarzałych koni albo wpychają im do nozdrzy szmaty wchłaniające śluz. Nieznający się na rzeczy kupujący powinni mieć się na baczności..</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.b1R5sW6lYIViJ2ki",
+            "sourceId": "Compendium.wfrp4e-core.actors.b1R5sW6lYIViJ2ki",
             "gender": "Różne",
             "species": "Koń",
             "effects": {
@@ -823,14 +823,14 @@
             "id": "cAK1bMj1ne7HPcxI",
             "name": "Minotaur",
             "description": "<section id=\"secret-rgCbHIibGUe2g7ZT\" class=\"secret\"><p>Potężne i zwaliste, przypominające byki minotaury górują nawet nad największymi bestigorami. Stada z dużą grupą minotaurów uważają się za szczególnie pobłogosławione przez Mrocznych Bogów. Hordy zwierzoludzi zbierają się wokół minotaurów, których imponująca postura dodaje odwagi mniejszym stworom..</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.cAK1bMj1ne7HPcxI",
+            "sourceId": "Compendium.wfrp4e-core.actors.cAK1bMj1ne7HPcxI",
             "gender": "Różne",
             "species": "Minotaur",
             "effects": {
                 "ewYHNH1NhqbrdUdT": {
                     "id": "ewYHNH1NhqbrdUdT",
                     "name": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "GaAgVavnDkXJ3MBM": {
                     "id": "GaAgVavnDkXJ3MBM",
@@ -849,7 +849,7 @@
                     "name": "Rogi",
                     "description": "<p>Stworzenie ma rogi lub inne ostre wyrostki (jeśli jego Cecha Stworzenia Rogi reprezentuje coś innego, będzie to określone w nawiasie). Gdy stworzenie zyskuje Przewagę na skutek Szarżowania, może wykonać Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podaną wartość Obrażeń (Bonus z Siły stworzenia jest już wliczony).</p>",
                     "originalName": "Rogi",
-                    "sourceId": "Compendium.wfrp4e-core.traits.BqPZn6q3VHn9HUrW",
+                    "sourceId": "Compendium.wfrp4e-core.items.BqPZn6q3VHn9HUrW",
                     "specification": "5"
                 },
                 "LIesqIMvBE3xnoSH": {
@@ -870,14 +870,14 @@
             "id": "cHVOdcEkuatqjYV1",
             "name": "Szaman Rykowców",
             "description": "<section id=\"secret-eAxmRlZso0kqKsap\" class=\"secret\"><p>Szamani rykowców rodzą się z instynktowną umiejętnością władania mocami Chaosu, z której korzystają z przerażającą skutecznością. Są unikatowi wśród zwierzoludzi i nigdy nie muszą bronić się przed innymi członkami swojego stada, nikt bowiem nie ośmiela się wyrządzać im krzywdy – ich głos wyraża podobno wolę samych Mrocznych Bogów.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.cHVOdcEkuatqjYV1",
+            "sourceId": "Compendium.wfrp4e-core.actors.cHVOdcEkuatqjYV1",
             "gender": "Różne",
             "species": "Szaman Rykowców",
             "effects": {
                 "57dNdaZIiftVFa4X": {
                     "id": "57dNdaZIiftVFa4X",
                     "name": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "YearuHmEDjqfcbYG": {
                     "id": "YearuHmEDjqfcbYG",
@@ -899,7 +899,7 @@
                     "name": "Rogi",
                     "description": "<p>Stworzenie ma rogi lub inne ostre wyrostki (jeśli jego Cecha Stworzenia Rogi reprezentuje coś innego, będzie to określone w nawiasie). Gdy stworzenie zyskuje Przewagę na skutek Szarżowania, może wykonać Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podaną wartość Obrażeń (Bonus z Siły stworzenia jest już wliczony).</p>",
                     "originalName": "Rogi",
-                    "sourceId": "Compendium.wfrp4e-core.traits.BqPZn6q3VHn9HUrW",
+                    "sourceId": "Compendium.wfrp4e-core.items.BqPZn6q3VHn9HUrW",
                     "specification": "3"
                 },
                 "iOBouCzVupwZtfcU": {
@@ -926,14 +926,14 @@
             "id": "E7BiDqsB55BrOQut",
             "name": "Ork",
             "description": "<section id=\"secret-Fkkw0kiOwXuiWN3G\" class=\"secret\"><blockquote><p>My som najlepsze. My nie som jak te słabe gobosy czy gupie trole. My som twardziele! Jak które powiedzom, że my nie som, to my im zdepczem łby.</p><p style=\"text-align: right\"><em>– Gurkk Czachołap, wódz orków.</em></p></blockquote>\n<p></p>\n<p>Orki są wstrętne, brutalne, wojownicze i niemal niewrażliwe na ból. Mają muskularne, krępe ciała, szerokie, potężne barki i nie pozwolą, by drobnostka w rodzaju straconej ręki przeszkodziła im w dobrym łomocie. Stworzone są do walki i niczego innego nie lubią bardziej. Gdy nie mają wrogów, z którymi mogą walczyć, biorą się za grupy rywalizujących z nimi zielonoskórych. Jeśli nie ma rywali, walczą między sobą. Chociaż nie tak liczne jak gobliny, są od nich większe i silniejsze, co pokazują przy każdej okazji. Orki mogą osiągać ogromne rozmiary. Większe orki są silniejsze, twardsze i bardziej agresywne, a zatem cieszą się większym prestiżem: w ich wojowniczym społeczeństwie rację ma ten, kto jest silniejszy. Niektóre orki dosiadają w boju wielkich dzików. To widok, który u mało kogo nie wzbudza przerażenia.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.E7BiDqsB55BrOQut",
+            "sourceId": "Compendium.wfrp4e-core.actors.E7BiDqsB55BrOQut",
             "gender": "???",
             "species": "Ork",
             "effects": {
                 "bqeYNnSwAUGdOlFn": {
                     "id": "bqeYNnSwAUGdOlFn",
                     "name": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "MReG9f3QPwSwxnvF": {
                     "id": "MReG9f3QPwSwxnvF",
@@ -953,7 +953,7 @@
                     "name": "Strzelanie (50)",
                     "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
                     "originalName": "Strzelanie (50)",
-                    "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
+                    "sourceId": "Compendium.wfrp4e-core.items.Z1TGphWhic2E3Lfx",
                     "specification": "8"
                 },
                 "zrKcOsS7laWCMJLz": {
@@ -965,58 +965,58 @@
             "id": "ePPk15Vxu9RxPtYV",
             "name": "Dieter Käsegeier",
             "description": "entries.Dieter Käsegeier.description",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.ePPk15Vxu9RxPtYV",
+            "sourceId": "Compendium.wfrp4e-core.actors.ePPk15Vxu9RxPtYV",
             "gender": "Mężczyzna",
             "species": "Człowiek",
             "items": {
                 "wKwel9MG7NIG3i3w": {
                     "id": "wKwel9MG7NIG3i3w",
                     "name": "Rzemiosło (Nabiał)",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Rzemiosło}",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.jmFSm7UvmHEq52iu]{Rzemiosło}",
                     "originalName": "Rzemiosło (Nabiał)",
-                    "sourceId": "Compendium.wfrp4e-core.skills.wKwel9MG7NIG3i3w"
+                    "sourceId": "Compendium.wfrp4e-core.items.wKwel9MG7NIG3i3w"
                 },
                 "MDubBPPE7C8Q2qTR": {
                     "id": "MDubBPPE7C8Q2qTR",
                     "name": "Sztuka",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}",
                     "originalName": "Sztuka",
-                    "sourceId": "Compendium.wfrp4e-core.skills.fdq3RFSOKl5b3WzW"
+                    "sourceId": "Compendium.wfrp4e-core.items.fdq3RFSOKl5b3WzW"
                 },
                 "RmnTqhRJYQZaOzuh": {
                     "id": "RmnTqhRJYQZaOzuh",
                     "name": "Występy",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Występy}",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Występy}",
                     "originalName": "Występy",
-                    "sourceId": "Compendium.wfrp4e-core.skills.0CwV96kTDRF0jUhk"
+                    "sourceId": "Compendium.wfrp4e-core.items.0CwV96kTDRF0jUhk"
                 },
                 "xNekCAKmrxubmS21": {
                     "id": "xNekCAKmrxubmS21",
                     "name": "Broń Biała (Podstawowa)",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}",
                     "originalName": "Broń Biała (Podstawowa)",
-                    "sourceId": "Compendium.wfrp4e-core.skills.F8NfBZdVSEIGCMtu"
+                    "sourceId": "Compendium.wfrp4e-core.items.F8NfBZdVSEIGCMtu"
                 },
                 "4mxm3tcphtnS638r": {
                     "id": "4mxm3tcphtnS638r",
                     "name": "Jeździectwo",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Jeździectwo}",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Jeździectwo}",
                     "originalName": "Jeździectwo",
-                    "sourceId": "Compendium.wfrp4e-core.skills.MeXCAQ3wqJzX07X7"
+                    "sourceId": "Compendium.wfrp4e-core.items.MeXCAQ3wqJzX07X7"
                 },
                 "Oke7F8bz3mqG0x1y": {
                     "id": "Oke7F8bz3mqG0x1y",
                     "name": "Skradanie",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Skradanie}",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Skradanie}",
                     "originalName": "Skradanie",
-                    "sourceId": "Compendium.wfrp4e-core.skills.McTtmZu3Ac8Lh48W"
+                    "sourceId": "Compendium.wfrp4e-core.items.McTtmZu3Ac8Lh48W"
                 },
                 "Pf0EQ6yXj4Ds51nC": {
                     "id": "Pf0EQ6yXj4Ds51nC",
                     "name": "Wyczulony Zmysł (Smak)",
                     "description": "<p>Jeden z twoich pięciu zmysłów jest tak wyczulony, że wyczuwasz to, co umyka innym. Możesz wykonać Test Percepcji, by dowiedzieć się czegoś więcej niż inni, opierając się na tym szczególnym zmyśle. Przykładowo może to być dostrzeżenie dalekiego orła, którego nie widzą inni, wywęszenie prawie niewyczuwalnej trucizny, dosłyszenie bicia serca myszy kryjącej się w ścianie, wyczucie dotykiem ukrytej wiadomości wyskrobanej na papierze czy porównanie smaku dwóch piw od tego samego piwowara, by dowiedzieć się, czy zostały nalane z dwóch różnych beczek.</p>",
                     "originalName": "Wyczulony Zmysł (Smak)",
-                    "sourceId": "Compendium.wfrp4e-core.talents.9h82z72XGo9tfgQS",
+                    "sourceId": "Compendium.wfrp4e-core.items.9h82z72XGo9tfgQS",
                     "tests": "Percepcja (Smak)"
                 },
                 "oLc1S9aswJrhkReV": {
@@ -1032,14 +1032,14 @@
             "id": "F1vAZZcmVKkRw8xn",
             "name": "Klanbrat",
             "description": "<section id=\"secret-Y5U5kScxBjhDwZf0\" class=\"secret\"><p>Większość skavenów stanowią klanbracia pochodzący z jednego z wielu złożonych skaveńskich klanów, które nieustannie kłócą się, politykują, wbijają sobie noże w plecy i w końcu wojują między sobą. Generalnie działają z rozkazu skavena o wyższym statusie, ale zawsze szukają sposobu, by zdobyć dla siebie lepszą pozycję, najczęściej poprzez zdradę. Zwykle odziani są w pleśniejącą skórę lub brudne szmaty z kawałkami pordzewiałego i zmatowiałego metalu służącymi za prowizoryczny pancerz. Klanbracia często wysyłani są jako zwiadowcy lub łupieżcy, którzy zdobywają potrzebne dobra, szukają spaczenia lub łowią niewolników.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.F1vAZZcmVKkRw8xn",
+            "sourceId": "Compendium.wfrp4e-core.actors.F1vAZZcmVKkRw8xn",
             "gender": "Mężczyzna",
             "species": "Skaven",
             "effects": {
                 "DP3A4yKupZcsSVEa": {
                     "id": "DP3A4yKupZcsSVEa",
                     "name": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "EBgGr3gX7hyKDx4S": {
                     "id": "EBgGr3gX7hyKDx4S",
@@ -1070,7 +1070,7 @@
             "id": "FmEDHnfAe2iIugpt",
             "name": "Bagienna Ośmiornica",
             "description": "<section id=\"secret-MIXixnWHdc5yzqhl\" class=\"secret\"><p>Bagienne ośmiornice czają się w płytkich wodach, zazwyczaj w bagnach i na moczarach. Czekają na ofiarę w całkowitym bezruchu, zdolne wyczuć wibracje powodowane przez zbliżające się stworzenia. Potem wyskakują z błotnistej wody, starając się chwycić i utopić zdobycz za pomocą silnych macek. Bagienne ośmiornice mają kamuflaż doskonale przystosowany do bagnistego otoczenia - zwykle pokryte są zielonymi i brązowymi cętkami. Jedyną wskazówką zdradzającą ich obecność są wielkie, szkliste oczy. Większość ośmiornic ma macki długości około 6 metrów i ciało mierzące prawie 2 metry. Krążą jednak opowieści, że mogą urosnąć wielokrotnie większe, zwłaszcza gdy mają zapewniony regularny napływ mięsa.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.FmEDHnfAe2iIugpt",
+            "sourceId": "Compendium.wfrp4e-core.actors.FmEDHnfAe2iIugpt",
             "gender": "Różne",
             "species": "Bagienna Ośmiornica",
             "effects": {
@@ -1099,7 +1099,7 @@
                     "name": "Macki (8)",
                     "description": "<p>Stworzenie ma macki w liczbie 8. Dostaje jeden Darmowy Atak na mackę. Atak każdej macki zadaje tyle Obrażeń, ile wynosi podana wartość - zawiera już ona <i>Bonus z Siły stworzenia</i>. Jeśli atak zada Obrażenia, może ponadto dać przeciwnikowi Stan <b>Pochwycenie</b>, co zapoczątkowuje <i>Chwyt</i> celu przez daną mackę. Jeśli macka wykonuje  <i>Chwyt</i>, aby rozstrzygnąć jego wynik, użyj Darmowego Ataku macki zamiast wykorzystywania Akcji stwora.</p>",
                     "originalName": "Macki (8)",
-                    "sourceId": "Compendium.wfrp4e-core.traits.4xF7M6ylIiGntekh",
+                    "sourceId": "Compendium.wfrp4e-core.items.4xF7M6ylIiGntekh",
                     "specification": "1"
                 },
                 "qtUYWxjcjVewFqs5": {
@@ -1114,7 +1114,7 @@
             "id": "ge5zXH2qboxaac7v",
             "name": "Gołąb",
             "description": "<section id=\"secret-Xfobvpz375Ivv2Vq\" class=\"secret\"><p>Gołębie hodowane są w całym Reiklandzie w celu dostarczania wszelkiego rodzaju wiadomości. Ostatnio zasłynęły z przenoszenia bardziej zabójczych ładunków. Łatwo dostępne ptaki stały się ulubieńcami inżynierów, którzy z różnym powodzeniem wysyłają swoje ‘bomby gołębie’.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.ge5zXH2qboxaac7v",
+            "sourceId": "Compendium.wfrp4e-core.actors.ge5zXH2qboxaac7v",
             "gender": "Różne",
             "species": "Gołąb",
             "items": {
@@ -1142,7 +1142,7 @@
             "id": "GgSxlomoV220kd3G",
             "name": "Duch",
             "description": "<section id=\"secret-9uAOsyYqBzjZwuw2\" class=\"secret\"><p>Duchy to pozostałości udręczonych istot, które umarły, za życia nie ukończywszy swoich spraw. Podobnie jak szkielety i zombi, duchy mogą być wzywane przez wampiry lub nekromantów albo nawiedzać obszary przesycone Dhar. W wyjątkowych okolicznościach szczególnie zdeterminowane duchy wyrywają się z Królestwa Morra, pragnąc wypełnić swoje życiowe plany. Jednak takie przypadki szybko przyciągają uwagę Morrytów lub czarodziejów Zakonu Ametystu. Wzywane za pomocą nekromanckiej sztuki duchy zbierają się w rój, tworząc wielkie Zastępy Duchów, które spadają jak burza na wrogów, siejąc strach i zamęt.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.GgSxlomoV220kd3G",
+            "sourceId": "Compendium.wfrp4e-core.actors.GgSxlomoV220kd3G",
             "gender": "???",
             "species": "Nieumarły",
             "effects": {
@@ -1175,7 +1175,7 @@
             "id": "HKSn8iNSS9WcAuJc",
             "name": "Bagienna Bestia",
             "description": "<section id=\"secret-UotH6C0fP5xmn37q\" class=\"secret\"><p>Tworzone przez czarodziejów z mułu bagnisk i moczarów bestie bagienne to praktycznie bezmyślne automaty spajane siłą magii. Są w przybliżeniu człekokształtne i zbudowane z błota, kości, gałęzi oraz śluzu. Utrzymanie ich w całości wymaga znacznych zasobów magii. Od czasu do czasu tworzone są przez czarodziejów władających magią Jadeitu. Służą im za ochroniarzy lub wypełniają określone zadania wymagające brutalnej siły albo bezmyślnego zabijania. Czasami pojawiają się same z siebie, powstając w stojących, gnijących stawach, gdzie nurt magii został zakłócony. Podobno Kolegium Jadeitu w Altdorfie trzyma tuzin tych stworów w charakterze służących, którzy dźwigają ciężary i przynoszą różne rzeczy dla starszych czarodziejów. W spójnej postaci trzyma je nieustanne splatanie magii dokonywane przez dziesiątki uczniów.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.HKSn8iNSS9WcAuJc",
+            "sourceId": "Compendium.wfrp4e-core.actors.HKSn8iNSS9WcAuJc",
             "gender": "???",
             "species": "Konstrukt",
             "effects": {
@@ -1202,7 +1202,7 @@
                 "pIZn0gi5DawtO2k4": {
                     "id": "pIZn0gi5DawtO2k4",
                     "name": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 }
             },
             "items": {
@@ -1218,7 +1218,7 @@
             "id": "hMbcLVjk7eUdxtqC",
             "name": "Widma z Kurchanu",
             "description": "<section id=\"secret-SRisNdSeAF3nCZxk\" class=\"secret\"><p>Widma z kurhanu to wyjątkowo potężne duchy, eteryczne pozostałości ambitnych nekromantów, którzy usiłowali przedłużyć swoje istnienie za pomocą mrocznej magii. Za życia odznaczali się złowrogą siłą woli, która po śmierci pcha ich do wywierania straszliwej zemsty na pełnych ognia duszach żywych. Wiele takich widm nawiedza spowite mgłami kurhany, jakich pełno na ziemiach Imperium, szczególnie w @UUID[JournalEntry.ozE2DMCMK64eE5pD.JournalEntryPage.mdjl1WxjZLeuSWAN]{Hägerkrybach}.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.hMbcLVjk7eUdxtqC",
+            "sourceId": "Compendium.wfrp4e-core.actors.hMbcLVjk7eUdxtqC",
             "gender": "???",
             "species": "Nieumarły",
             "effects": {
@@ -1241,7 +1241,7 @@
             "id": "HZfZaCjdniz5Z4CP",
             "name": "Olbrzym",
             "description": "<section id=\"secret-O6EcvTeDSGoa2RC2\" class=\"secret\"><p>Olbrzymy to samotnicze stworzenia, które zwykle unikają cywilizacji. Większość czatuje w niedostępnych i wysoko położonych miejscach wokół Imperium. Zaszywają się w jaskiniach i zapomnianych ruinach, z dala od mniejszych ludzi, chociaż czasami wędrują na podgórza w poszukiwaniu jedzenia. Słyną z agresywności i gwałtowności zarówno ze względu na swoje zastraszające rozmiary, pożeranie bydła, jak i związki z łupieżczymi armiami zielonoskórych, którzy ich niewolą. W rzeczywistości wiele olbrzymów to łagodne istoty, czasem podatne na wybuchy wściekłości i zaciekle chroniące swojej prywatności, ale niekoniecznie wrogie wobec innych. Ponieważ są długowieczne, plotki utrzymują, że olbrzymy nabyły prastarą wiedzę, chociaż większość wydaje się niezbyt przytomna i z pewnością bardziej zainteresowana alkoholem niż debatami na temat historii.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.HZfZaCjdniz5Z4CP",
+            "sourceId": "Compendium.wfrp4e-core.actors.HZfZaCjdniz5Z4CP",
             "gender": "Różne",
             "species": "Olbrzym",
             "effects": {
@@ -1258,7 +1258,7 @@
                 "sAFQuKd3sZtwF4AO": {
                     "id": "sAFQuKd3sZtwF4AO",
                     "name": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "uEepI4AVRxzrvnbi": {
                     "id": "uEepI4AVRxzrvnbi",
@@ -1282,7 +1282,7 @@
                     "name": "Zionięcie (Pijackie Rzygnięcie)",
                     "description": "<p>Stworzenie posługuje się zionięciem jako potężną bronią. W swojej Turze, kosztem 2 Przewag, może aktywować Zionięcie jako Darmowy Atak. Wybierz 1 cel, który stworzenie widzi w promieniu 20 + Bonus z Wytrzymałości metrów. Trafione zostają wszystkie postacie wokół tego celu w promieniu tylu metrów, ile wynosi Bonus z Siły, podobnie jak wszystkie postacie znajdujące się między stworzeniem a celem. Przeprowadź Test Przeciwstawny Umiejętności Strzeleckie/Unik przeciwko wszystkim objętym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Każdy cel, który przegrał Test, otrzymuje trafienie zadające wskazaną wartość Obrażeń. Co więcej, jeśli przy Cesze Stworzenia wymieniony jest jeden z opisanych niżej typów zionięcia, zastosuj wskazane zasady.</p><p><b>Dym</b>: Obszar wypełnia się dymem, który zasłania pole widzenia na tyle Rund, ile wynosi Bonus z Wytrzymałości.</p><p><b>Elektryczność</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Oszołomienie.</p><p><b>Kwas</b>: Noszony przez objęte efektem postaci pancerze oraz wszelka broń dostają 1 punkt Uszkodzeń.</p><p><b>Ogień</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Podpalenie.</p><p><b>Trucizna</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Zatrucie.</p><p><b>Zimno</b>: Cele dostają jeden Stan Oszołomiony za każde pełne 5 odniesionych Ran (minimalnie 1).</p><p>Stworzenie jest odporne na własne Zionięcie. Ten atak jest Magiczny.</p>",
                     "originalName": "Zionięcie (Pijackie Rzygnięcie)",
-                    "sourceId": "Compendium.wfrp4e-core.traits.uqGxFOEqeurwkAO3",
+                    "sourceId": "Compendium.wfrp4e-core.items.uqGxFOEqeurwkAO3",
                     "specification": "#"
                 },
                 "g20Mf9glsFbJagSX": {
@@ -1294,7 +1294,7 @@
             "id": "ImdVnI8mEiOmKriI",
             "name": "Krasnolud",
             "description": "<section id=\"secret-h5cBaU8rkw7UFZmU\" class=\"secret\"><p>@UUID[JournalEntry.IQ0PgoJihQltCBUU.JournalEntryPage.l0f11ypRjH9sR48Q#dwarfs]{Krasnoludy}</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.ImdVnI8mEiOmKriI",
+            "sourceId": "Compendium.wfrp4e-core.actors.ImdVnI8mEiOmKriI",
             "gender": "Różne",
             "species": "Krasnolud",
             "effects": {
@@ -1310,7 +1310,7 @@
                     "name": "Strzelanie (50)",
                     "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
                     "originalName": "Strzelanie (50)",
-                    "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
+                    "sourceId": "Compendium.wfrp4e-core.items.Z1TGphWhic2E3Lfx",
                     "specification": "8"
                 },
                 "wNYPz9j5BbAuOsXL": {
@@ -1325,37 +1325,37 @@
                 "fdq3RFSOKl5b3WzW": {
                     "id": "fdq3RFSOKl5b3WzW",
                     "name": "Sztuka",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}",
                     "originalName": "Sztuka",
-                    "sourceId": "Compendium.wfrp4e-core.skills.fdq3RFSOKl5b3WzW"
+                    "sourceId": "Compendium.wfrp4e-core.items.fdq3RFSOKl5b3WzW"
                 },
                 "0CwV96kTDRF0jUhk": {
                     "id": "0CwV96kTDRF0jUhk",
                     "name": "Występy",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Występy}",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Występy}",
                     "originalName": "Występy",
-                    "sourceId": "Compendium.wfrp4e-core.skills.0CwV96kTDRF0jUhk"
+                    "sourceId": "Compendium.wfrp4e-core.items.0CwV96kTDRF0jUhk"
                 },
                 "F8NfBZdVSEIGCMtu": {
                     "id": "F8NfBZdVSEIGCMtu",
                     "name": "Broń Biała (Podstawowa)",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
                     "originalName": "Broń Biała (Podstawowa)",
-                    "sourceId": "Compendium.wfrp4e-core.skills.F8NfBZdVSEIGCMtu"
+                    "sourceId": "Compendium.wfrp4e-core.items.F8NfBZdVSEIGCMtu"
                 },
                 "MeXCAQ3wqJzX07X7": {
                     "id": "MeXCAQ3wqJzX07X7",
                     "name": "Jeździectwo",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Jeździectwo}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Jeździectwo}</p>",
                     "originalName": "Jeździectwo",
-                    "sourceId": "Compendium.wfrp4e-core.skills.MeXCAQ3wqJzX07X7"
+                    "sourceId": "Compendium.wfrp4e-core.items.MeXCAQ3wqJzX07X7"
                 },
                 "McTtmZu3Ac8Lh48W": {
                     "id": "McTtmZu3Ac8Lh48W",
                     "name": "Skradanie",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Skradanie}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Skradanie}</p>",
                     "originalName": "Skradanie",
-                    "sourceId": "Compendium.wfrp4e-core.skills.McTtmZu3Ac8Lh48W"
+                    "sourceId": "Compendium.wfrp4e-core.items.McTtmZu3Ac8Lh48W"
                 }
             }
         },
@@ -1363,7 +1363,7 @@
             "id": "jfMhkQGzjFWDxVOm",
             "name": "Kultysta",
             "description": "<section id=\"secret-njo6IVKU18vA4SxA\" class=\"secret\"><p>Dla tych, których nie dotknęła plaga Chaosu, jego piętno wydaje się przerażająco obce. Jednak tacy, którzy zostali wystawieni na jego wpływ, każdy krok ku potępieniu, każdy pomysł zbliżający ich do Chaosu uważają nie tylko za logiczny, ale i nieunikniony. Niektórzy szczególnie gorliwi wyznawcy zakazanych kultów obdarzani są przez swych bogów „darami”: to paskudne mutacje, które gwarantują im śmierć w przypadku odkrycia ich sekretu przez łowców czarownic.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.jfMhkQGzjFWDxVOm",
+            "sourceId": "Compendium.wfrp4e-core.actors.jfMhkQGzjFWDxVOm",
             "gender": "Różne",
             "species": "Różne",
             "effects": {
@@ -1391,8 +1391,8 @@
         "Wyvern": {
             "id": "KeB0khEeq462qTJw",
             "name": "Wywerna",
-            "description": "<section id=\"secret-cyNfNjzSosW7sqqJ\" class=\"secret\"><p>Chociaż niedouczeni często mylą je ze @UUID[Compendium.wfrp4e-core.bestiary.LZttdCIxmFr1sGsS]{Smokami}, poza powierzchownym podobieństwem cuchnące wywerny w niczym nie przypominają tych dostojnych stworzeń. To tchórzliwe ścierwojady o słabym wzroku. Zwykle zaspokajają swój wielki apetyt, porywając bezbronne zwierzęta - głównie owce i kozy - unikają też otwartej walki, gdy to tylko możliwe. W odróżnieniu od innych potworów z gór wywerny nie chronią szczególnie zaciekle terytorium i przeważnie przenoszą się w inne miejsce, gdy coś wtargnie na ich tereny łowieckie. </p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.KeB0khEeq462qTJw",
+            "description": "<section id=\"secret-cyNfNjzSosW7sqqJ\" class=\"secret\"><p>Chociaż niedouczeni często mylą je ze @UUID[Compendium.wfrp4e-core.actors.LZttdCIxmFr1sGsS]{Smokami}, poza powierzchownym podobieństwem cuchnące wywerny w niczym nie przypominają tych dostojnych stworzeń. To tchórzliwe ścierwojady o słabym wzroku. Zwykle zaspokajają swój wielki apetyt, porywając bezbronne zwierzęta - głównie owce i kozy - unikają też otwartej walki, gdy to tylko możliwe. W odróżnieniu od innych potworów z gór wywerny nie chronią szczególnie zaciekle terytorium i przeważnie przenoszą się w inne miejsce, gdy coś wtargnie na ich tereny łowieckie. </p></section>",
+            "sourceId": "Compendium.wfrp4e-core.actors.KeB0khEeq462qTJw",
             "gender": "Różne",
             "species": "Wywerna",
             "effects": {
@@ -1445,7 +1445,7 @@
                     "name": "Rogi",
                     "description": "<p>Stworzenie ma rogi lub inne ostre wyrostki (jeśli jego Cecha Stworzenia Rogi reprezentuje coś innego, będzie to określone w nawiasie). Gdy stworzenie zyskuje Przewagę na skutek Szarżowania, może wykonać Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podaną wartość Obrażeń (Bonus z Siły stworzenia jest już wliczony).</p>",
                     "originalName": "Rogi",
-                    "sourceId": "Compendium.wfrp4e-core.traits.BqPZn6q3VHn9HUrW",
+                    "sourceId": "Compendium.wfrp4e-core.items.BqPZn6q3VHn9HUrW",
                     "specification": "3"
                 },
                 "33k4zx7r6T6iSMBu": {
@@ -1456,8 +1456,8 @@
         "Stormvermin": {
             "id": "kl4qHg0mqWOApBqH",
             "name": "Szturmoszczur",
-            "description": "<section id=\"secret-1mHIdKmXK0Gpzm7P\" class=\"secret\"><p>Elitarnymi wojownikami skavenów są szturmoszczury: większe, silniejsze, twardsze i bardziej zdyscyplinowane od @UUID[Compendium.wfrp4e-core.bestiary.F1vAZZcmVKkRw8xn]{Klanbraci}. Służą jako podstawowa jednostka każdego większego napadu i pełnią funkcję ochroniarzy ważnych skavenów. Szturmoszczury są zwykle dobrze uzbrojone i opancerzone. Posługują się bronią preferowaną przez swój klan.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.kl4qHg0mqWOApBqH",
+            "description": "<section id=\"secret-1mHIdKmXK0Gpzm7P\" class=\"secret\"><p>Elitarnymi wojownikami skavenów są szturmoszczury: większe, silniejsze, twardsze i bardziej zdyscyplinowane od @UUID[Compendium.wfrp4e-core.actors.F1vAZZcmVKkRw8xn]{Klanbraci}. Służą jako podstawowa jednostka każdego większego napadu i pełnią funkcję ochroniarzy ważnych skavenów. Szturmoszczury są zwykle dobrze uzbrojone i opancerzone. Posługują się bronią preferowaną przez swój klan.</p></section>",
+            "sourceId": "Compendium.wfrp4e-core.actors.kl4qHg0mqWOApBqH",
             "gender": "???",
             "species": "Skaven",
             "effects": {
@@ -1474,7 +1474,7 @@
                 "YuslwdFq9jlMRYWd": {
                     "id": "YuslwdFq9jlMRYWd",
                     "name": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 }
             },
             "items": {
@@ -1493,7 +1493,7 @@
             "id": "kt9ob9BdK6zLDWxn",
             "name": "Fimir",
             "description": "<section id=\"secret-ESTE07FU4VXbZtgm\" class=\"secret\"><blockquote><p> Spędzaliśmy miesiąc miodowy w rodzinnym domku letniskowym nad morzem. Pewnego ranka, gdy poszliśmy zaczerpnąć świeżego powietrza nad urwiskiem, otoczyła nas mgła. Nagle zrobiło się dziwnie cicho. Wtedy, zupełnie znikąd... Bagienne demony! Wielkie, jednookie brutale o beczkowatych ciałach. Zostałem z łomotem powalony na ziemię smagnięciem ogona. Inny stwór poderwał Gretę i przerzucił ją sobie przez ramię. Potem po prostu zniknęły we mgle, tak samo szybko i cicho, jak się pojawiły. Przysięgam na Verenę, że to prawda.</p><p style=\"text-align: right;\">– <em>Oleg Grauhof, reiklandzki kupiec, tuż przed powieszeniem za zamordowanie żony</em></p></blockquote>\n<p>Fimiry to tajemnicze, jednookie, podobne do gadów stworzenia, które grasują w najciemniejszych zakątkach wilgotnych bagien i trzęsawisk zachodniego Reiklandu. Unikają światła słonecznego i pojawiają się zwykle tylko o świcie lub o zmierzchu albo pod osłoną mgły, aby porywać ofiary w sobie tylko znanych, przerażających celach. Znane są przypadki, gdy ludzcy czarownicy na tyle lekkomyślni lub zdesperowani, by zwracać się do demonów, szukali fimirów, chcąc poznać ich niepokojące tajemnice. Mówi się bowiem, że stwory te przywołują i kontrolują istoty demoniczne. Można tylko zgadywać, czy większe ryzyko stanowi igranie z Niszczycielskimi Potęgami, czy układanie się z fimirami. Społeczeństwo fimirów jest matriarchalne. Każdemu klanowi przewodzi potężna wiedźma zwana mergą, której pomaga kadra pomniejszych czarowników nazywanych dirachami. Większość członków klanu to pokorne szerle. Chroni ich kasta wojowników, fimmów, którzy mają kostne kolce i guzy na ogonach. Używają ich do gruchotania kości niebacznych przeciwników.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.kt9ob9BdK6zLDWxn",
+            "sourceId": "Compendium.wfrp4e-core.actors.kt9ob9BdK6zLDWxn",
             "gender": "Różne",
             "species": "Fimir",
             "effects": {
@@ -1527,7 +1527,7 @@
             "id": "KtYgLHcSLpHmnGI2",
             "name": "Niedźwiedź",
             "description": "<section id=\"secret-dK2N4KnI1iBNUe7c\" class=\"secret\"><p>To wędrowcy po bezdrożach Reiklandu. Niedźwiedzie zwykle są nieśmiałymi samotnikami. Stają się agresywne tylko wtedy, gdy intruzi zagrażają ich młodym lub gdy są ranne. Kiedy brakuje pożywienia, podchodzą do niechronionych osad i podróżnych, zwłaszcza tych, którzy nie pilnują należycie swojego prowiantu.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.KtYgLHcSLpHmnGI2",
+            "sourceId": "Compendium.wfrp4e-core.actors.KtYgLHcSLpHmnGI2",
             "gender": "Różne",
             "species": "Niedźwiedź",
             "effects": {
@@ -1539,7 +1539,7 @@
                 "Lq3jDQRRPl81n1zQ": {
                     "id": "Lq3jDQRRPl81n1zQ",
                     "name": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "PcEJZM9L1pVonmks": {
                     "id": "PcEJZM9L1pVonmks",
@@ -1583,7 +1583,7 @@
             "id": "KZkuwdOYmE3nwB2n",
             "name": "Krwiopuszcz Khorna",
             "description": "<section id=\"secret-hADj0UTb9AFeUL5y\" class=\"secret\"><p>Wybrańcy Khorna, krwiopuszcze, grasują na polach bitew Starego Świata, zbierając czaszki i odbierając żywoty ku czci Boga Krwi. Z ich potwornych, rogatych obliczy wystają ostre jak igły zęby. Ich krwawoczerwona skóra jest twarda jak mosiądz wykuty na kowadłach nieustannej wojny. Każdy krwiopuszcz niesie Piekielne Ostrze, przeraźliwie ostry miecz unurzany w posoce, którym wymachuje z przerażającą niedbałością, poddając się słodkiemu doznaniu bezsensownej rzezi.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.KZkuwdOYmE3nwB2n",
+            "sourceId": "Compendium.wfrp4e-core.actors.KZkuwdOYmE3nwB2n",
             "gender": "???",
             "species": "Demon",
             "effects": {
@@ -1621,7 +1621,7 @@
                     "name": "Rogi",
                     "description": "<p>Stworzenie ma rogi lub inne ostre wyrostki (jeśli jego Cecha Stworzenia Rogi reprezentuje coś innego, będzie to określone w nawiasie). Gdy stworzenie zyskuje Przewagę na skutek Szarżowania, może wykonać Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podaną wartość Obrażeń (Bonus z Siły stworzenia jest już wliczony).</p>",
                     "originalName": "Rogi",
-                    "sourceId": "Compendium.wfrp4e-core.traits.BqPZn6q3VHn9HUrW",
+                    "sourceId": "Compendium.wfrp4e-core.items.BqPZn6q3VHn9HUrW",
                     "specification": "4"
                 },
                 "7eP4nwiUvwksPauu": {
@@ -1632,8 +1632,8 @@
         "Wolf": {
             "id": "lSvYEInG8sZ03vqd",
             "name": "Wilk",
-            "description": "<section id=\"secret-wJXgxaCwSmFphyyH\" class=\"secret\"><p>Wilki zazwyczaj polują w stadach i znane są jako zacięci łowcy, którzy ścigają swoją ofiarę przez dziesiątki kilometrów bez odpoczynku czy wytchnienia. W Reiklandzie grasuje kilka odmian wilków, włącznie z groźnymi olbrzymimi wilkami, które są chwytane i hodowane przez @UUID[Compendium.wfrp4e-core.bestiary.zzdOpKqBC28J66Mn]{Gobliny} do użytku jako strażnicy oraz wierzchowce.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.lSvYEInG8sZ03vqd",
+            "description": "<section id=\"secret-wJXgxaCwSmFphyyH\" class=\"secret\"><p>Wilki zazwyczaj polują w stadach i znane są jako zacięci łowcy, którzy ścigają swoją ofiarę przez dziesiątki kilometrów bez odpoczynku czy wytchnienia. W Reiklandzie grasuje kilka odmian wilków, włącznie z groźnymi olbrzymimi wilkami, które są chwytane i hodowane przez @UUID[Compendium.wfrp4e-core.actors.zzdOpKqBC28J66Mn]{Gobliny} do użytku jako strażnicy oraz wierzchowce.</p></section>",
+            "sourceId": "Compendium.wfrp4e-core.actors.lSvYEInG8sZ03vqd",
             "gender": "Różne",
             "species": "Wilk",
             "effects": {
@@ -1655,7 +1655,7 @@
                 "XbQJexDDEreVMvWb": {
                     "id": "XbQJexDDEreVMvWb",
                     "name": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "XxRSNVXnvMYARNe1": {
                     "id": "XxRSNVXnvMYARNe1",
@@ -1700,7 +1700,7 @@
             "id": "LZttdCIxmFr1sGsS",
             "name": "Smok",
             "description": "<section id=\"secret-KSwR21KkcJ73Jpeh\" class=\"secret\"><p>Smoki rządziły niebiosami na długo przed tym, zanim starsze rasy pojawiły się w Znanym Świecie. Podczas gdy współczesne smoki są ledwie cieniem swoich prastarych braci, pozostają jednymi z najpotężniejszych stworzeń znanych Imperium. Kilka pozostałych starych smoków jest przerażająco ogromnych. Rzadko budzą się ze snu. Mała drużyna poszukiwaczy przygód, która rozjuszyłaby smoka, powinna brać nogi za pas. Przeciw takiej bestii wiele nie wskóra.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.LZttdCIxmFr1sGsS",
+            "sourceId": "Compendium.wfrp4e-core.actors.LZttdCIxmFr1sGsS",
             "gender": "Różne",
             "species": "Smok",
             "effects": {
@@ -1742,7 +1742,7 @@
                     "name": "Zionięcie (Różne)",
                     "description": "<p>Stworzenie posługuje się zionięciem jako potężną bronią. W swojej Turze, kosztem 2 Przewag, może aktywować Zionięcie jako Darmowy Atak. Wybierz 1 cel, który stworzenie widzi w promieniu 20 + Bonus z Wytrzymałości metrów. Trafione zostają wszystkie postacie wokół tego celu w promieniu tylu metrów, ile wynosi Bonus z Siły, podobnie jak wszystkie postacie znajdujące się między stworzeniem a celem. Przeprowadź Test Przeciwstawny Umiejętności Strzeleckie/Unik przeciwko wszystkim objętym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Każdy cel, który przegrał Test, otrzymuje trafienie zadające wskazaną wartość Obrażeń. Co więcej, jeśli przy Cesze Stworzenia wymieniony jest jeden z opisanych niżej typów zionięcia, zastosuj wskazane zasady.</p><p><b>Dym</b>: Obszar wypełnia się dymem, który zasłania pole widzenia na tyle Rund, ile wynosi Bonus z Wytrzymałości.</p><p><b>Elektryczność</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Oszołomienie.</p><p><b>Kwas</b>: Noszony przez objęte efektem postaci pancerze oraz wszelka broń dostają 1 punkt Uszkodzeń.</p><p><b>Ogień</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Podpalenie.</p><p><b>Trucizna</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Zatrucie.</p><p><b>Zimno</b>: Cele dostają jeden Stan Oszołomiony za każde pełne 5 odniesionych Ran (minimalnie 1).</p><p>Stworzenie jest odporne na własne Zionięcie. Ten atak jest Magiczny.</p>",
                     "originalName": "Zionięcie (Różne)",
-                    "sourceId": "Compendium.wfrp4e-core.traits.uqGxFOEqeurwkAO3",
+                    "sourceId": "Compendium.wfrp4e-core.items.uqGxFOEqeurwkAO3",
                     "specification": "15"
                 },
                 "1vJSySYMpq40Vdpu": {
@@ -1772,7 +1772,7 @@
             "id": "MLtDY4bwzGQpaABN",
             "name": "Półgryf",
             "description": "<section id=\"secret-ltXKkluUM9F2zFRG\" class=\"secret\"><p>Posiadające głowę orła i korpus lwa półgryfy to potężne stworzenia o szlachetnym wyglądzie. Wędrują po lasach i łąkach Imperium, zwykle trzymając się z dala od ludzkich osad. Polują w pojedynkę. Najodważniejsze zakony rycerskie wykorzystują schwytane półgryfy jako rumaki bojowe. W odróżnieniu od większych potwornych wierzchowców, które zazwyczaj są zabierane jako młode lub hodowane w niewoli, te często chwyta się dorosłe. Stanowi to wręcz rytuał inicjacji w niektórych zakonach.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.MLtDY4bwzGQpaABN",
+            "sourceId": "Compendium.wfrp4e-core.actors.MLtDY4bwzGQpaABN",
             "gender": "Różne",
             "species": "Półgryf",
             "effects": {
@@ -1818,7 +1818,7 @@
             "id": "Mt5JAoOSaEH1PdcP",
             "name": "Szkielet",
             "description": "<section id=\"secret-6jYDpHebVUxzqTcU\" class=\"secret\"><blockquote><p>Uniosłem ciężką pokrywę, spodziewając się znaleźć przewspaniałą, złotą maskę pośmiertną Khetanken. Ale zostałem wprowadzony w błąd. Z głębi wystrzeliła koścista dłoń, która złapała mnie za szyję. Przestraszony, upuściłem pokrywę i przedramię zostało odcięte, więżąc nieumarłego stwora w sarkofagu.</p><p>Ale ręka trzymała mocno, ściskając mi szyję, tak że ledwo mogłem oddychać! Myślałem, że zaraz umrę. Jednak siostra Celestine skropiła tę rękę odrobiną swojej wody święconej i kończyna znowu zamarła.</p><p>Używam jej teraz jako drapaczki do pleców.</p><p style=\"text-align: right;\"><em>– Hubert Karter, rabuś grobowców</em></p></blockquote>\n<p>Szkielety to pozbawione ciała kości dawno umarłych, poruszane mroczną magią, która zmusza je, by chodziły po ziemi, szydząc z żywych. Ci, którzy po śmierci nie zostali złożeni na spoczynek zgodnie z rytuałami Morra, Boga Śmierci, mogą zostać wskrzeszeni w tej postaci przez wystarczająco potężnego nekromantę. Całkowicie bezmyślne szkielety będą walczyły, dopóki ich kości nie zostaną rozbite na kawałki. Nie wiedzą, co to odwaga, ponieważ nie wiedzą, co to strach. Nie mogą zostać zabite, ponieważ nie są żywe.</p>\n<blockquote class=\"sidebar\"><h3 style=\"text-align: center; text-transform:uppercase\" class=\"sidebar-title no-toc\"><em>Zasada opcjonalna: Same kości</em></h3><p><strong><span style=\"font-family: CaslonPro\"><span style=\"color: rgb(0, 0, 0); font-family: CaslonPro; font-size: 14px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; font-weight: 500; letter-spacing: normal; orphans: 2; text-align: start; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; display: inline !important; float: none;\">Jeśli chcesz oddać kościstą naturę szkieletów, możesz wprowadzić karę -1 punkt Obrażeń do Ran zadawanych przez broń, która nie posiada cechy Ogłuszająca.</span></span></strong></p></blockquote></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.Mt5JAoOSaEH1PdcP",
+            "sourceId": "Compendium.wfrp4e-core.actors.Mt5JAoOSaEH1PdcP",
             "gender": "???",
             "species": "Nieumarły",
             "effects": {
@@ -1840,7 +1840,7 @@
                 "te4iHJZxCnazYyuC": {
                     "id": "te4iHJZxCnazYyuC",
                     "name": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 }
             },
             "items": {
@@ -1859,7 +1859,7 @@
             "id": "nPvDzBcqDGuRaS7x",
             "name": "Ogr",
             "description": "<section id=\"secret-H6gOCFUUwgl4V5bb\" class=\"secret\"><blockquote><p><span class=\"fontstyle0\">‘Tak, wezwałem je, ponieważ potrzebowałem dodatkowych rąk do pracy. Tak, wiem, że pożerają wasze bydło przeznaczone na sprzedaż. I tak, wiem, że ogry mają wielki apetyt. Wywiesiłem w miejscowej strażnicy ogłoszenie o małej nagrodzie dla kogokolwiek, kto zdoła sprawić, by sobie poszły. To powinno w zupełności wystarczyć..’</span></p><p style=\"text-align: right\"><em><span class=\"fontstyle0\" style=\"font-size: 10pt;\">– Augustus von Raushvel, baron Doliny Raush</span></em>  </p></blockquote><p>Są wielkie, hałaśliwe, brutalne i niezwykle porywcze. Życiową motywacją ogrów jest potrzeba napełniania swoich ogromnych, muskularnych brzuchów. Brakuje im sprytu lub inteligencji, by robić to mądrze, dlatego w większości sytuacji standardowo wybierają rozwiązanie siłowe. Ogry pochodzą z krain położonych daleko na wschodzie, ale są częstym widokiem w Starym Świecie, uwielbiają bowiem wędrować i stale poszukują nowego mięsiwa za horyzontem. W czasie swoich trwających dekady wypraw po jedzenie ciężko pracują, starają się integrować, noszą miejscowe ubrania i naśladują lokalne zwyczaje, które są w stanie zrozumieć, ponieważ to wszystko zwiększa szansę na otrzymanie kolejnego posiłku.</p><p>W Imperium często służą w Armii Prowincji i codziennie widuje się je w większych miastach, gdzie pracują jako osiłki do wynajęcia. Niziołkowa Gildia Majstrów (przedsiębiorcy budowlani) w wielu miastach i miasteczkach Imperium praktycznie całkowicie opanowała rynek taniej siły roboczej, jaką stanowią ogry, co bardzo irytuje konkurencję.</p><blockquote class=\"sidebar\"><h3 style=\"text-align: center\"><em>Niziołki i Ogry</em></h3><p><em>Nikt nie wie, dlaczego tak jest, ale niziołki i ogry po prostu się dogadują. Większość starszyzny niziołkowych klanów ma jednego lub dwóch ogrzych ochroniarzy. Mówi się, że Starszy Krainy Zgromadzenia rzadko podróżuje bez swojego starego przyjaciela, Zorartha Nogogryza, leciwego ogra, który żyje w Imperium od prawie stulecia. W zamian liczne bandy najemnicze ogrów zatrudniają niziołki w charakterze kucharzy. Jednak ta relacja nie zawsze jest harmonijna. Słynny jest przypadek, gdy Golgfag Ludojad, kapitan najemników nazwanych z polotem Ludojadami Golgfaga, najął mały klan niziołków, by nakarmiły regiment ogrów i jego samego po wielkim zwycięstwie. Wszystko było w porządku do chwili, gdy Golgfag zdał sobie sprawę, że kucharze smakują znacznie lepiej niż przygotowana przez nich strawa...</em></p></blockquote></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.nPvDzBcqDGuRaS7x",
+            "sourceId": "Compendium.wfrp4e-core.actors.nPvDzBcqDGuRaS7x",
             "gender": "Różne",
             "species": "Ogr",
             "effects": {
@@ -1871,7 +1871,7 @@
                 "KZHbYxdSFPPIGvnN": {
                     "id": "KZHbYxdSFPPIGvnN",
                     "name": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "oI4k12fesVuWcQ08": {
                     "id": "oI4k12fesVuWcQ08",
@@ -1895,7 +1895,7 @@
             "id": "nRJxtciIhTHKqAvY",
             "name": "Stellemar",
             "description": "entries.Stellemar.description",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.nRJxtciIhTHKqAvY",
+            "sourceId": "Compendium.wfrp4e-core.actors.nRJxtciIhTHKqAvY",
             "gender": "Mężczyzna",
             "species": "Człowiek",
             "effects": {
@@ -1924,37 +1924,37 @@
                 "2i3xWlNycMqxH9dA": {
                     "id": "2i3xWlNycMqxH9dA",
                     "name": "Sztuka",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
                     "originalName": "Sztuka",
-                    "sourceId": "Compendium.wfrp4e-core.skills.fdq3RFSOKl5b3WzW"
+                    "sourceId": "Compendium.wfrp4e-core.items.fdq3RFSOKl5b3WzW"
                 },
                 "VerUYEhmNSC1CzBD": {
                     "id": "VerUYEhmNSC1CzBD",
                     "name": "Występy",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Występy}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Występy}</p>",
                     "originalName": "Występy",
-                    "sourceId": "Compendium.wfrp4e-core.skills.0CwV96kTDRF0jUhk"
+                    "sourceId": "Compendium.wfrp4e-core.items.0CwV96kTDRF0jUhk"
                 },
                 "umdo4AdnAmTKhuMc": {
                     "id": "umdo4AdnAmTKhuMc",
                     "name": "Broń Biała (Podstawowa)",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
                     "originalName": "Broń Biała",
-                    "sourceId": "Compendium.wfrp4e-core.skills.F8NfBZdVSEIGCMtu"
+                    "sourceId": "Compendium.wfrp4e-core.items.F8NfBZdVSEIGCMtu"
                 },
                 "MNU1Lw3R0aRKT79U": {
                     "id": "MNU1Lw3R0aRKT79U",
                     "name": "Jeździectwo",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Jeździectwo}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Jeździectwo}</p>",
                     "originalName": "Jeździectwo",
-                    "sourceId": "Compendium.wfrp4e-core.skills.MeXCAQ3wqJzX07X7"
+                    "sourceId": "Compendium.wfrp4e-core.items.MeXCAQ3wqJzX07X7"
                 },
                 "2N1kE0ojilsHZNZJ": {
                     "id": "2N1kE0ojilsHZNZJ",
                     "name": "Skradanie",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Skradanie}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Skradanie}</p>",
                     "originalName": "Skradanie",
-                    "sourceId": "Compendium.wfrp4e-core.skills.McTtmZu3Ac8Lh48W"
+                    "sourceId": "Compendium.wfrp4e-core.items.McTtmZu3Ac8Lh48W"
                 }
             }
         },
@@ -1962,7 +1962,7 @@
             "id": "oenbbB0PitRWUBfZ",
             "name": "Olbrzymi Szczur",
             "description": "<section id=\"secret-YKv2jV3fetoEvF1C\" class=\"secret\"><p>Szczury przedostają się wszędzie. Szczególnie rozpowszechnione są w miastach i miasteczkach. Im bardziej stłoczeni są ludzie, tym bardziej stłoczone są z nimi szczury, co jest szczególnie groźne, gdy stwory okazują się nosicielami zarazy. Chociaż szczury zwykle są małe, mogą wyrastać do monstrualnych rozmiarów. Pojawiały się doniesienia o szczurach pod Altdorfem o rozmiarach człowieka lub jeszcze większych. Aby trzymać je w ryzach, zatrudnia się szczurołapów.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.oenbbB0PitRWUBfZ",
+            "sourceId": "Compendium.wfrp4e-core.actors.oenbbB0PitRWUBfZ",
             "gender": "Różne",
             "species": "Szczur",
             "effects": {
@@ -1984,7 +1984,7 @@
                 "BVzoQjaRA9CurB8p": {
                     "id": "BVzoQjaRA9CurB8p",
                     "name": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "sFDU1ghXQlAFpE7v": {
                     "id": "sFDU1ghXQlAFpE7v",
@@ -2023,7 +2023,7 @@
             "id": "P0GkA7DPaLbeOTkf",
             "name": "Mutant",
             "description": "<section id=\"secret-RCtLjQDm9fZUQznl\" class=\"secret\"><p>Jednym z najtragiczniejszych losów, jaki może stać się udziałem człowieka, jest ulegnięcie mutagennemu wpływowi Chaosu. To może wydarzyć się bez jakiegokolwiek powodu. Bywa nawet, że rodzą się zmutowane dzieci. Gdy coś takiego się stanie, wielu rodziców nie potrafi zdobyć się na zamordowanie własnego potomstwa. Zamiast tego porzucają je w lasach, gdzie umiera albo zostaje przyjęte przez innych mutantów, a nawet zwierzoludzi. Bez względu na to, jak bardzo mogą być niewinni, wszyscy mutanci budzą grozę wśród zwykłych ludzi, dlatego większość porzuconych i zgorzkniałych mutantów oddaje się Mrocznym Bogom. Ewentualnie kończą ze sobą, zanim będzie za późno.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.P0GkA7DPaLbeOTkf",
+            "sourceId": "Compendium.wfrp4e-core.actors.P0GkA7DPaLbeOTkf",
             "gender": "???",
             "species": "???",
             "items": {
@@ -2043,7 +2043,7 @@
             "id": "QutqbzpxKqsjQ6yN",
             "name": "Wysoki elf",
             "description": "<section id=\"secret-1iA2MDDwFn6grbL6\" class=\"secret\"><p>@UUID[JournalEntry.IQ0PgoJihQltCBUU.JournalEntryPage.l0f11ypRjH9sR48Q#high-elves]{Wysokie Elfy}</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.QutqbzpxKqsjQ6yN",
+            "sourceId": "Compendium.wfrp4e-core.actors.QutqbzpxKqsjQ6yN",
             "gender": "Różne",
             "species": "Wysoki elf",
             "effects": {
@@ -2080,7 +2080,7 @@
                     "name": "Strzelanie (150)",
                     "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
                     "originalName": "Strzelanie (150)",
-                    "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
+                    "sourceId": "Compendium.wfrp4e-core.items.Z1TGphWhic2E3Lfx",
                     "specification": "9"
                 },
                 "8aVanym1jM10gjK6": {
@@ -2089,37 +2089,37 @@
                 "fdq3RFSOKl5b3WzW": {
                     "id": "fdq3RFSOKl5b3WzW",
                     "name": "Sztuka",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
                     "originalName": "Sztuka",
-                    "sourceId": "Compendium.wfrp4e-core.skills.fdq3RFSOKl5b3WzW"
+                    "sourceId": "Compendium.wfrp4e-core.items.fdq3RFSOKl5b3WzW"
                 },
                 "0CwV96kTDRF0jUhk": {
                     "id": "0CwV96kTDRF0jUhk",
                     "name": "Występy",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Występy}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Występy}</p>",
                     "originalName": "Występy",
-                    "sourceId": "Compendium.wfrp4e-core.skills.0CwV96kTDRF0jUhk"
+                    "sourceId": "Compendium.wfrp4e-core.items.0CwV96kTDRF0jUhk"
                 },
                 "F8NfBZdVSEIGCMtu": {
                     "id": "F8NfBZdVSEIGCMtu",
                     "name": "Broń Biała (Podstawowa)",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
                     "originalName": "Broń Biała",
-                    "sourceId": "Compendium.wfrp4e-core.skills.F8NfBZdVSEIGCMtu"
+                    "sourceId": "Compendium.wfrp4e-core.items.F8NfBZdVSEIGCMtu"
                 },
                 "MeXCAQ3wqJzX07X7": {
                     "id": "MeXCAQ3wqJzX07X7",
                     "name": "Jeździectwo",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Jeździectwo}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Jeździectwo}</p>",
                     "originalName": "Jeździectwo",
-                    "sourceId": "Compendium.wfrp4e-core.skills.MeXCAQ3wqJzX07X7"
+                    "sourceId": "Compendium.wfrp4e-core.items.MeXCAQ3wqJzX07X7"
                 },
                 "McTtmZu3Ac8Lh48W": {
                     "id": "McTtmZu3Ac8Lh48W",
                     "name": "Skradanie",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Skradanie}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Skradanie}</p>",
                     "originalName": "Skradanie",
-                    "sourceId": "Compendium.wfrp4e-core.skills.McTtmZu3Ac8Lh48W"
+                    "sourceId": "Compendium.wfrp4e-core.items.McTtmZu3Ac8Lh48W"
                 }
             }
         },
@@ -2127,14 +2127,14 @@
             "id": "R1iWvfV9EvgIc8bJ",
             "name": "Pies",
             "description": "<section id=\"secret-D3VMZDvgXxuda96A\" class=\"secret\"><p>Psy hodowane są w całym Starym Świecie z przeznaczeniem do niezliczonych zadań. Podczas gdy rozpieszczone pudle dworzan z @UUID[JournalEntry.ozE2DMCMK64eE5pD.JournalEntryPage.V6tkgQ9A2skppjyl]{Altdorfu} stanowią zagrożenie jedynie dla godności poszukiwacza przygód, większe rasy, włącznie z tymi, które przyuczane są do udziału w bitwach lub walkach psów, mogą być bardzo groźne.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.R1iWvfV9EvgIc8bJ",
+            "sourceId": "Compendium.wfrp4e-core.actors.R1iWvfV9EvgIc8bJ",
             "gender": "Różne",
             "species": "Pies",
             "effects": {
                 "1Y0FHMq0KHA49EFv": {
                     "id": "1Y0FHMq0KHA49EFv",
                     "name": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "4QleJhHGp2DXsStM": {
                     "id": "4QleJhHGp2DXsStM",
@@ -2197,7 +2197,7 @@
             "id": "R37OtN5gmPWCYOP3",
             "name": "Gor",
             "description": "<section id=\"secret-1fmdbB41OA1FbT2r\" class=\"secret\"><p>Gory, najpowszechniejsze ze zwierzoludzi, są zakałą niemal każdego lasu w Starym Świecie. Znacznie różnią się między sobą wyglądem, ale wszystkie łączą cechy zwierzęce i ludzkie. Często mają głowy i nogi kozłów oraz korpus i ramiona ludzi. Jedyną cechą, którą posiadają wszystkie gory, jest para wielkich rogów - im większe, tym lepiej, rogi wyznaczają bowiem status wśród zwierzoludzi. To cecha, która odróżnia je od ungorów i innoskórych. Największe gory znane są pod nazwą bestigorów.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.R37OtN5gmPWCYOP3",
+            "sourceId": "Compendium.wfrp4e-core.actors.R37OtN5gmPWCYOP3",
             "gender": "Różne",
             "species": "Gor",
             "effects": {
@@ -2214,7 +2214,7 @@
                 "OGivLVdVoT6H3rNc": {
                     "id": "OGivLVdVoT6H3rNc",
                     "name": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "W0ZCppsMI1uadFxK": {
                     "id": "W0ZCppsMI1uadFxK",
@@ -2233,7 +2233,7 @@
                     "name": "Rogi",
                     "description": "<p>Stworzenie ma rogi lub inne ostre wyrostki (jeśli jego Cecha Stworzenia Rogi reprezentuje coś innego, będzie to określone w nawiasie). Gdy stworzenie zyskuje Przewagę na skutek Szarżowania, może wykonać Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podaną wartość Obrażeń (Bonus z Siły stworzenia jest już wliczony).</p>",
                     "originalName": "Rogi",
-                    "sourceId": "Compendium.wfrp4e-core.traits.BqPZn6q3VHn9HUrW",
+                    "sourceId": "Compendium.wfrp4e-core.items.BqPZn6q3VHn9HUrW",
                     "specification": "3"
                 },
                 "CwkLIxJOKxsgXuAx": {
@@ -2260,7 +2260,7 @@
             "id": "r70e6JNM3MjWIb7N",
             "name": "Niziołek",
             "description": "<section id=\"secret-d1ADsyWS6KDQFxDE\" class=\"secret\"><p>@UUID[JournalEntry.IQ0PgoJihQltCBUU.JournalEntryPage.l0f11ypRjH9sR48Q#halflings]{Niziołki}</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.r70e6JNM3MjWIb7N",
+            "sourceId": "Compendium.wfrp4e-core.actors.r70e6JNM3MjWIb7N",
             "gender": "Różne",
             "species": "Niziołek",
             "effects": {
@@ -2282,43 +2282,43 @@
                     "name": "Strzelanie (25)",
                     "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
                     "originalName": "Strzelanie (25)",
-                    "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
+                    "sourceId": "Compendium.wfrp4e-core.items.Z1TGphWhic2E3Lfx",
                     "specification": "7"
                 },
                 "fdq3RFSOKl5b3WzW": {
                     "id": "fdq3RFSOKl5b3WzW",
                     "name": "Sztuka",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
                     "originalName": "Sztuka",
-                    "sourceId": "Compendium.wfrp4e-core.skills.fdq3RFSOKl5b3WzW"
+                    "sourceId": "Compendium.wfrp4e-core.items.fdq3RFSOKl5b3WzW"
                 },
                 "0CwV96kTDRF0jUhk": {
                     "id": "0CwV96kTDRF0jUhk",
                     "name": "Występy",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Występy}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Występy}</p>",
                     "originalName": "Występy",
-                    "sourceId": "Compendium.wfrp4e-core.skills.0CwV96kTDRF0jUhk"
+                    "sourceId": "Compendium.wfrp4e-core.items.0CwV96kTDRF0jUhk"
                 },
                 "F8NfBZdVSEIGCMtu": {
                     "id": "F8NfBZdVSEIGCMtu",
                     "name": "Broń Biała (Podstawowa)",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
                     "originalName": "Broń Biała",
-                    "sourceId": "Compendium.wfrp4e-core.skills.F8NfBZdVSEIGCMtu"
+                    "sourceId": "Compendium.wfrp4e-core.items.F8NfBZdVSEIGCMtu"
                 },
                 "MeXCAQ3wqJzX07X7": {
                     "id": "MeXCAQ3wqJzX07X7",
                     "name": "Jeździectwo",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Jeździectwo}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Jeździectwo}</p>",
                     "originalName": "Jeździectwo",
-                    "sourceId": "Compendium.wfrp4e-core.skills.MeXCAQ3wqJzX07X7"
+                    "sourceId": "Compendium.wfrp4e-core.items.MeXCAQ3wqJzX07X7"
                 },
                 "McTtmZu3Ac8Lh48W": {
                     "id": "McTtmZu3Ac8Lh48W",
                     "name": "Skradanie",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Skradanie}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Skradanie}</p>",
                     "originalName": "Skradanie",
-                    "sourceId": "Compendium.wfrp4e-core.skills.McTtmZu3Ac8Lh48W"
+                    "sourceId": "Compendium.wfrp4e-core.items.McTtmZu3Ac8Lh48W"
                 }
             }
         },
@@ -2326,7 +2326,7 @@
             "id": "RiXpMLex8SZf6gaQ",
             "name": "Hipogryf",
             "description": "<section id=\"secret-KHQFu97XTyUsvDjI\" class=\"secret\"><p>Niezwykle zaciekłe i terytorialne hipogryfy mają głowę i skrzydła orła, przednią część ciała lwa oraz koński zad. Pochodzą najczęściej z @UUID[JournalEntry.ozE2DMCMK64eE5pD.JournalEntryPage.w0YfGxsBuLoODCgc]{Gór Szarych}. Atakują bez prowokacji, niemal bezmyślne w swojej furii, drąc ciało na strzępy, aby pożreć je później. Wpadają w tak wielki szał, że pojedynczy hipogryf może wybić całe stado bydła, aby potem odlecieć z wybranym kawałem mięsa, zostawiwszy resztę padlinożernym ptakom. Hipogryfy nie są zbyt inteligentne i gdy polują, zwykle starają się zabić wszystko w polu widzenia. Myślą, że cokolwiek zniknęło im z oczu, przepadło na zawsze. Oznacza to, że faktyczna liczba zgonów spowodowanych przez hipogryfy jest stosunkowo niska, ponieważ wystarczy znaleźć dobrą kryjówkę, aby ich uniknąć.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.RiXpMLex8SZf6gaQ",
+            "sourceId": "Compendium.wfrp4e-core.actors.RiXpMLex8SZf6gaQ",
             "gender": "Różne",
             "species": "Hipogryf",
             "effects": {
@@ -2369,7 +2369,7 @@
             "id": "Rs3lMA5UavTlTiJW",
             "name": "Kastor Erichson",
             "description": "entries.Kastor Erichson.description",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.Rs3lMA5UavTlTiJW",
+            "sourceId": "Compendium.wfrp4e-core.actors.Rs3lMA5UavTlTiJW",
             "gender": "Mężczyzna",
             "species": "Człowiek",
             "items": {
@@ -2378,7 +2378,7 @@
                     "name": "Niewrażliwość",
                     "description": "<p>Stworzenie jest całkowicie niewrażliwe na określonego rodzaju Obrażenia, takie jak od trucizny, magii lub elektryczności. Wszelkie Obrażenia tego rodzaju, włącznie z Ranami Krytycznymi, są ignorowane.</p>",
                     "originalName": "Immunity to Psychology",
-                    "sourceId": "Compendium.wfrp4e-core.traits.3wCtgMDNnu8MFmyk",
+                    "sourceId": "Compendium.wfrp4e-core.items.3wCtgMDNnu8MFmyk",
                     "specification": "Typ"
                 },
                 "HkgHJKXAM4hl9OJ4": {
@@ -2386,7 +2386,7 @@
                     "name": "Wyczulony Zmysł (Zapach)",
                     "description": "<p>Jeden z twoich pięciu zmysłów jest tak wyczulony, że wyczuwasz to, co umyka innym. Możesz wykonać Test Percepcji, by dowiedzieć się czegoś więcej niż inni, opierając się na tym szczególnym zmyśle. Przykładowo może to być dostrzeżenie dalekiego orła, którego nie widzą inni, wywęszenie prawie niewyczuwalnej trucizny, dosłyszenie bicia serca myszy kryjącej się w ścianie, wyczucie dotykiem ukrytej wiadomości wyskrobanej na papierze czy porównanie smaku dwóch piw od tego samego piwowara, by dowiedzieć się, czy zostały nalane z dwóch różnych beczek.</p>",
                     "originalName": "Wyczulony Zmysł (Węch)",
-                    "sourceId": "Compendium.wfrp4e-core.talents.9h82z72XGo9tfgQS",
+                    "sourceId": "Compendium.wfrp4e-core.items.9h82z72XGo9tfgQS",
                     "tests": "Percepcja (z wykorzystaniem zmysłu Wechu)"
                 },
                 "aNSAl7IEOWmr6ear": {
@@ -2394,7 +2394,7 @@
                     "name": "Niewrażliwość",
                     "description": "<p>Stworzenie jest całkowicie niewrażliwe na określonego rodzaju Obrażenia, takie jak od trucizny, magii lub elektryczności. Wszelkie Obrażenia tego rodzaju, włącznie z Ranami Krytycznymi, są ignorowane.</p>",
                     "originalName": "Immunity to Psychology",
-                    "sourceId": "Compendium.wfrp4e-core.traits.3wCtgMDNnu8MFmyk",
+                    "sourceId": "Compendium.wfrp4e-core.items.3wCtgMDNnu8MFmyk",
                     "specification": "Typ"
                 },
                 "yymhDcCRUdL6jFCS": {
@@ -2407,37 +2407,37 @@
                 "ioeUa6sC1922vxS6": {
                     "id": "ioeUa6sC1922vxS6",
                     "name": "Sztuka",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
                     "originalName": "Sztuka",
-                    "sourceId": "Compendium.wfrp4e-core.skills.fdq3RFSOKl5b3WzW"
+                    "sourceId": "Compendium.wfrp4e-core.items.fdq3RFSOKl5b3WzW"
                 },
                 "JJ2sg3z6etavmN7K": {
                     "id": "JJ2sg3z6etavmN7K",
                     "name": "Występy",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Występy}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Występy}</p>",
                     "originalName": "Występy",
-                    "sourceId": "Compendium.wfrp4e-core.skills.0CwV96kTDRF0jUhk"
+                    "sourceId": "Compendium.wfrp4e-core.items.0CwV96kTDRF0jUhk"
                 },
                 "DDsC8MrjJXqbJgzW": {
                     "id": "DDsC8MrjJXqbJgzW",
                     "name": "Broń Biała (Podstawowa)",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
                     "originalName": "Broń Biała",
-                    "sourceId": "Compendium.wfrp4e-core.skills.F8NfBZdVSEIGCMtu"
+                    "sourceId": "Compendium.wfrp4e-core.items.F8NfBZdVSEIGCMtu"
                 },
                 "88BOESmJiFddAUjl": {
                     "id": "88BOESmJiFddAUjl",
                     "name": "Jeździectwo",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Jeździectwo}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Jeździectwo}</p>",
                     "originalName": "Jeździectwo",
-                    "sourceId": "Compendium.wfrp4e-core.skills.MeXCAQ3wqJzX07X7"
+                    "sourceId": "Compendium.wfrp4e-core.items.MeXCAQ3wqJzX07X7"
                 },
                 "blbMFgFV2qLGKWPz": {
                     "id": "blbMFgFV2qLGKWPz",
                     "name": "Skradanie",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Skradanie}</p>",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Skradanie}</p>",
                     "originalName": "Skradanie",
-                    "sourceId": "Compendium.wfrp4e-core.skills.McTtmZu3Ac8Lh48W"
+                    "sourceId": "Compendium.wfrp4e-core.items.McTtmZu3Ac8Lh48W"
                 }
             }
         },
@@ -2445,7 +2445,7 @@
             "id": "sbQ5mDvNZ7qQm8YY",
             "name": "Fr’hough Żałobny Oddech",
             "description": "<p>Ostatecznym celem wszystkich czempionów Chaosu jest dostąpienie apoteozy: wyniesienia ponad demoniczne szeregi i służenia swojemu panu przez wieczność jako książę demonów w Królestwach Chaosu. To potężne istoty o wielkiej mocy. Książęta demonów są straszliwymi wrogami, starcia z którymi unikają nawet najwięksi bohaterowie Imperium.</p>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.sbQ5mDvNZ7qQm8YY",
+            "sourceId": "Compendium.wfrp4e-core.actors.sbQ5mDvNZ7qQm8YY",
             "gender": "???",
             "species": "Książę Demonów",
             "effects": {
@@ -2462,7 +2462,7 @@
                 "QhSLr0cWvRaQUp5T": {
                     "id": "QhSLr0cWvRaQUp5T",
                     "name": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "vTg3YNSmOjtPASjX": {
                     "id": "vTg3YNSmOjtPASjX",
@@ -2479,7 +2479,7 @@
                     "name": "Zionięcie (Kwas)",
                     "description": "<p>Stworzenie posługuje się zionięciem jako potężną bronią. W swojej Turze, kosztem 2 Przewag, może aktywować Zionięcie jako Darmowy Atak. Wybierz 1 cel, który stworzenie widzi w promieniu 20 + Bonus z Wytrzymałości metrów. Trafione zostają wszystkie postacie wokół tego celu w promieniu tylu metrów, ile wynosi Bonus z Siły, podobnie jak wszystkie postacie znajdujące się między stworzeniem a celem. Przeprowadź Test Przeciwstawny Umiejętności Strzeleckie/Unik przeciwko wszystkim objętym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Każdy cel, który przegrał Test, otrzymuje trafienie zadające wskazaną wartość Obrażeń. Co więcej, jeśli przy Cesze Stworzenia wymieniony jest jeden z opisanych niżej typów zionięcia, zastosuj wskazane zasady.</p><p><b>Dym</b>: Obszar wypełnia się dymem, który zasłania pole widzenia na tyle Rund, ile wynosi Bonus z Wytrzymałości.</p><p><b>Elektryczność</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Oszołomienie.</p><p><b>Kwas</b>: Noszony przez objęte efektem postaci pancerze oraz wszelka broń dostają 1 punkt Uszkodzeń.</p><p><b>Ogień</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Podpalenie.</p><p><b>Trucizna</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Zatrucie.</p><p><b>Zimno</b>: Cele dostają jeden Stan Oszołomiony za każde pełne 5 odniesionych Ran (minimalnie 1).</p><p>Stworzenie jest odporne na własne Zionięcie. Ten atak jest Magiczny.</p>",
                     "originalName": "Zionięcie (Kwas)",
-                    "sourceId": "Compendium.wfrp4e-core.traits.uqGxFOEqeurwkAO3",
+                    "sourceId": "Compendium.wfrp4e-core.items.uqGxFOEqeurwkAO3",
                     "specification": "12"
                 },
                 "7z9zOThNa6ybWqhM": {
@@ -2496,7 +2496,7 @@
                     "name": "Rogi",
                     "description": "<p>Stworzenie ma rogi lub inne ostre wyrostki (jeśli jego Cecha Stworzenia Rogi reprezentuje coś innego, będzie to określone w nawiasie). Gdy stworzenie zyskuje Przewagę na skutek Szarżowania, może wykonać Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podaną wartość Obrażeń (Bonus z Siły stworzenia jest już wliczony).</p>",
                     "originalName": "Rogi",
-                    "sourceId": "Compendium.wfrp4e-core.traits.BqPZn6q3VHn9HUrW",
+                    "sourceId": "Compendium.wfrp4e-core.items.BqPZn6q3VHn9HUrW",
                     "specification": "2"
                 },
                 "Ce9kqvDKxtNHg3Yx": {
@@ -2517,7 +2517,7 @@
             "id": "T5qAtpoKtB8iwTBd",
             "name": "Wampir",
             "description": "<section id=\"secret-psHPfMEeNxOmbpwn\" class=\"secret\"><p>Wampiry postrzegają same siebie jako władców nocy. Wiele z nich może podawać się za ludzi, a niektóre rzeczywiście przez długi czas przebywały pośród żywych. Pomimo zewnętrznego podobieństwa do ludzi pod ich bladą skórą nie bije serce, a zamiast zwykłego głodu, jak u śmiertelników, odczuwają nieustanne łaknienie krwi. Wszystkie wampiry Starego Świata wywodzą się ze starożytnych rodów, które powstały tysiące lat temu daleko na południu. Wiele z nich jest niezwykle dumnych ze swojego pochodzenia oraz cech i tradycji, które odróżniają je od innych. Wampiry różnych rodowodów są często zaciekłymi rywalami, ale mają dość rozsądku, by stawać ramię w ramię w razie konieczności zmierzenia się z potężniejszymi wrogami.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.T5qAtpoKtB8iwTBd",
+            "sourceId": "Compendium.wfrp4e-core.actors.T5qAtpoKtB8iwTBd",
             "gender": "Różne",
             "species": "Nieumarły",
             "effects": {
@@ -2565,8 +2565,8 @@
         "Zombie": {
             "id": "T79RqnDOAQLn3I1s",
             "name": "Zombie",
-            "description": "<section id=\"secret-E4HqcQ4lwXPfIFHB\" class=\"secret\"><p>Podobnie jak @UUID[Compendium.wfrp4e-core.bestiary.Mt5JAoOSaEH1PdcP]{Szkielety}, zombi to ożywione zwłoki spajane przez plugawą magię. W odróżnieniu od szkieletów zombi to niedawno umarli i większość ich ciała nadal istnieje. Gnijące i zepsute mięso zwisa z robaczywych, nabrzmiałych organów wewnętrznych. Gdy walczą, ich ciało i narządy odpadają od kości, wydzielając przyprawiający o mdłości, obrzydliwy odór, wystarczająco silny, by wywrócić żołądek każdemu poza najtwardszymi żołnierzami.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.T79RqnDOAQLn3I1s",
+            "description": "<section id=\"secret-E4HqcQ4lwXPfIFHB\" class=\"secret\"><p>Podobnie jak @UUID[Compendium.wfrp4e-core.actors.Mt5JAoOSaEH1PdcP]{Szkielety}, zombi to ożywione zwłoki spajane przez plugawą magię. W odróżnieniu od szkieletów zombi to niedawno umarli i większość ich ciała nadal istnieje. Gnijące i zepsute mięso zwisa z robaczywych, nabrzmiałych organów wewnętrznych. Gdy walczą, ich ciało i narządy odpadają od kości, wydzielając przyprawiający o mdłości, obrzydliwy odór, wystarczająco silny, by wywrócić żołądek każdemu poza najtwardszymi żołnierzami.</p></section>",
+            "sourceId": "Compendium.wfrp4e-core.actors.T79RqnDOAQLn3I1s",
             "gender": "???",
             "species": "Nieumarły",
             "effects": {
@@ -2583,7 +2583,7 @@
                 "Gv7DNzuCVNnni8Ox": {
                     "id": "Gv7DNzuCVNnni8Ox",
                     "name": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "HWton3fD0O4haA1O": {
                     "id": "HWton3fD0O4haA1O",
@@ -2614,7 +2614,7 @@
             "id": "TWy5l4uYTRAtjfit",
             "name": "Banshee",
             "description": "<section id=\"secret-wmQDClJDzh3hfRuX\" class=\"secret\"><p>Płaczki to widmowe pozostałości niegdyś potężnych wiedźm, których duchy przesiąknięte są plugawą energią <em>Dhar</em>. Ich niespokojne nieżycie wypełnia udręka z powodu straty i zgorzknienia, ziejąca pustka w duszach, która wyrywa z ich piersi przerażające, szarpiące duszę wycie. Jest ono tak straszliwe, że może doprowadzić do szaleństwa tych, którzy je słyszą, a nawet zatrzymać bicie serca.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.TWy5l4uYTRAtjfit",
+            "sourceId": "Compendium.wfrp4e-core.actors.TWy5l4uYTRAtjfit",
             "gender": "???",
             "species": "Nieumarły",
             "effects": {
@@ -2634,14 +2634,14 @@
             "id": "umddAQkmxVYG0AzO",
             "name": "Upiorny Wilk",
             "description": "<section id=\"secret-UXaAD3dsZgu2qEkD\" class=\"secret\"><p>Gdy ziemia oddaje zmarłych, powstają nie tylko ludzie. W imieniu swoich mrocznych panów na nocne łowy wyruszają makabryczne parodie olbrzymich basiorów z lśniącymi ślepiami i strzępami ciała odpadającymi od gnijących, butwiejących ścierw - upiorne wilki. W Reiklandzie mówi się, że gdy Morrslieb stoi w pełni, upiorne wilki grasują po nawiedzonych lasach @UUID[JournalEntry.ozE2DMCMK64eE5pD.JournalEntryPage.mdjl1WxjZLeuSWAN]{Hägerkrybów}. Biegają w poszukiwaniu ofiary, aby zaspokoić swój nienasycony głód, przeklęte żądzą pożerania mięsa i wyostrzoną wrażliwością na zapach krwi.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.umddAQkmxVYG0AzO",
+            "sourceId": "Compendium.wfrp4e-core.actors.umddAQkmxVYG0AzO",
             "gender": "???",
             "species": "???",
             "effects": {
                 "2sNt3r9r3TxcS3Mn": {
                     "id": "2sNt3r9r3TxcS3Mn",
                     "name": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "bEyqgfTDcEfyFX5h": {
                     "id": "bEyqgfTDcEfyFX5h",
@@ -2696,7 +2696,7 @@
             "id": "VfJgGmCTWqb0IDSW",
             "name": "Szczurogr",
             "description": "<section id=\"secret-3UMUO87tTablqd9e\" class=\"secret\"><p>Szczurogry to zwaliste brutale hodowane w ciemnych jaskiniach Podimperium przez obłąkanych poganiaczy klanu Moulder. Są głupie, ale także nieulękłe i nieustępliwe w walce, gdy poganiają je skaveńscy panowie. Rzadko bywają spotykane w pojedynkę. Zwykle towarzyszą Szarym Prorokom lub innym skavenom wysokiej rangi, którym służą jako ochroniarze.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.VfJgGmCTWqb0IDSW",
+            "sourceId": "Compendium.wfrp4e-core.actors.VfJgGmCTWqb0IDSW",
             "gender": "Mężczyzna",
             "species": "Skaven",
             "effects": {
@@ -2708,7 +2708,7 @@
                 "l8MNGZiH05ol80fC": {
                     "id": "l8MNGZiH05ol80fC",
                     "name": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "MrOjhZLrQXj2MnQN": {
                     "id": "MrOjhZLrQXj2MnQN",
@@ -2760,7 +2760,7 @@
             "id": "VMceSpLje0J7lfP0",
             "name": "Zębacz Jaskiniowy",
             "description": "<section id=\"secret-oDtCiP01aJblHtLV\" class=\"secret\"><p>Zębacze to duże, okrągławe, grzybowate stwory, które żyją głęboko pod ziemią w najwilgotniejszych, najciemniejszych jaskiniach. Mają rozdziawioną gębę i wielkie, ostre zęby. Cenione są przez gobliny za mięso i skórę oraz służą im jako strażnicy lub pupile.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.VMceSpLje0J7lfP0",
+            "sourceId": "Compendium.wfrp4e-core.actors.VMceSpLje0J7lfP0",
             "gender": "???",
             "species": "Zębacz",
             "effects": {
@@ -2777,7 +2777,7 @@
                 "LQsrUYm7M42rptNN": {
                     "id": "LQsrUYm7M42rptNN",
                     "name": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 }
             },
             "items": {
@@ -2786,7 +2786,7 @@
                     "name": "Zionięcie (Kwas)",
                     "description": "<p><p>Stworzenie posługuje się zionięciem jako potężną bronią. W swojej Turze, kosztem 2 Przewag, może aktywować Zionięcie jako Darmowy Atak. Wybierz 1 cel, który stworzenie widzi w promieniu 20 + Bonus z Wytrzymałości metrów. Trafione zostają wszystkie postacie wokół tego celu w promieniu tylu metrów, ile wynosi Bonus z Siły, podobnie jak wszystkie postacie znajdujące się między stworzeniem a celem. Przeprowadź Test Przeciwstawny Umiejętności Strzeleckie/Unik przeciwko wszystkim objętym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Każdy cel, który przegrał Test, otrzymuje trafienie zadające wskazaną wartość Obrażeń. Co więcej, jeśli przy Cesze Stworzenia wymieniony jest jeden z opisanych niżej typów zionięcia, zastosuj wskazane zasady.</p><p><b>Dym</b>: Obszar wypełnia się dymem, który zasłania pole widzenia na tyle Rund, ile wynosi Bonus z Wytrzymałości.</p><p><b>Elektryczność</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Oszołomienie.</p><p><b>Kwas</b>: Noszony przez objęte efektem postaci pancerze oraz wszelka broń dostają 1 punkt Uszkodzeń.</p><p><b>Ogień</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Podpalenie.</p><p><b>Trucizna</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Zatrucie.</p><p><b>Zimno</b>: Cele dostają jeden Stan Oszołomiony za każde pełne 5 odniesionych Ran (minimalnie 1).</p><p>Stworzenie jest odporne na własne Zionięcie. Ten atak jest Magiczny.</p>",
                     "originalName": "Zionięcie (Kwas)",
-                    "sourceId": "Compendium.wfrp4e-core.traits.uqGxFOEqeurwkAO3",
+                    "sourceId": "Compendium.wfrp4e-core.items.uqGxFOEqeurwkAO3",
                     "specification": "#"
                 },
                 "lKOZc9AF6bROuqiO": {
@@ -2794,7 +2794,7 @@
                     "name": "Zionięcie (Gaz)",
                     "description": "<p>Stworzenie posługuje się zionięciem jako potężną bronią. W swojej Turze, kosztem 2 Przewag, może aktywować Zionięcie jako Darmowy Atak. Wybierz 1 cel, który stworzenie widzi w promieniu 20 + Bonus z Wytrzymałości metrów. Trafione zostają wszystkie postacie wokół tego celu w promieniu tylu metrów, ile wynosi Bonus z Siły, podobnie jak wszystkie postacie znajdujące się między stworzeniem a celem. Przeprowadź Test Przeciwstawny Umiejętności Strzeleckie/Unik przeciwko wszystkim objętym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Każdy cel, który przegrał Test, otrzymuje trafienie zadające wskazaną wartość Obrażeń. Co więcej, jeśli przy Cesze Stworzenia wymieniony jest jeden z opisanych niżej typów zionięcia, zastosuj wskazane zasady.</p><p><b>Dym</b>: Obszar wypełnia się dymem, który zasłania pole widzenia na tyle Rund, ile wynosi Bonus z Wytrzymałości.</p><p><b>Elektryczność</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Oszołomienie.</p><p><b>Kwas</b>: Noszony przez objęte efektem postaci pancerze oraz wszelka broń dostają 1 punkt Uszkodzeń.</p><p><b>Ogień</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Podpalenie.</p><p><b>Trucizna</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan Zatrucie.</p><p><b>Zimno</b>: Cele dostają jeden Stan Oszołomiony za każde pełne 5 odniesionych Ran (minimalnie 1).</p><p>Stworzenie jest odporne na własne Zionięcie. Ten atak jest Magiczny.</p>",
                     "originalName": "Zionięcie (Gaz)",
-                    "sourceId": "Compendium.wfrp4e-core.traits.uqGxFOEqeurwkAO3",
+                    "sourceId": "Compendium.wfrp4e-core.items.uqGxFOEqeurwkAO3",
                     "specification": "# "
                 },
                 "hSO0gtfx8YEnQemo": {
@@ -2802,7 +2802,7 @@
                     "name": "Rogi",
                     "description": "<p>Stworzenie ma rogi lub inne ostre wyrostki (jeśli jego Cecha Stworzenia Rogi reprezentuje coś innego, będzie to określone w nawiasie). Gdy stworzenie zyskuje Przewagę na skutek Szarżowania, może wykonać Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podaną wartość Obrażeń (Bonus z Siły stworzenia jest już wliczony).</p>",
                     "originalName": "Rogi",
-                    "sourceId": "Compendium.wfrp4e-core.traits.BqPZn6q3VHn9HUrW",
+                    "sourceId": "Compendium.wfrp4e-core.items.BqPZn6q3VHn9HUrW",
                     "specification": "4"
                 },
                 "V9hjUnayLKs2omEV": {
@@ -2826,7 +2826,7 @@
             "id": "VPVnyae6VHeD9cEP",
             "name": "Olbrzymi Pająk",
             "description": "<section id=\"secret-4zOoWWzKvxCdyQBR\" class=\"secret\"><p>Olbrzymie pająki czają się głęboko w lasach i jaskiniach Imperium, ale mogą żyć gdziekolwiek, włącznie z zakurzonymi strychami i ciemnymi piwnicami. Większość chwyta ofiary w mocne sieci, a następnie wstrzykuje im jad. Chociaż większość ma rozmiary dużego szczura, niektóre odmiany olbrzymich pająków są przerażająco wielkie. Leśne gobliny często chwytają większe okazy, by służyły im za wierzchowce.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.VPVnyae6VHeD9cEP",
+            "sourceId": "Compendium.wfrp4e-core.actors.VPVnyae6VHeD9cEP",
             "gender": "Różne",
             "species": "Pająk",
             "effects": {
@@ -2912,8 +2912,8 @@
         "Ungor": {
             "id": "vrYs3cbxvXtre6rv",
             "name": "Ungor",
-            "description": "<section id=\"secret-hOrEyZdCdR6bSlAT\" class=\"secret\"><p>Ungory mają szczątkowe lub bardzo krótkie rogi, a zatem rzadko uważane są za „Gory” przez resztę stada. Niektóre odznaczają się niemal ludzką twarzą, dzięki czemu są skutecznymi wywiadowcami, ale także stają się przedmiotem szykan. Istotnie, ungory są źle traktowane przez @UUID[Compendium.wfrp4e-core.bestiary.R37OtN5gmPWCYOP3]{Gory} i bywają niskie lub niedożywione w porównaniu ze swoimi wielkorogimi braćmi. To sprawia, że stają się zgorzkniałymi stworzeniami, które pragną wyładować na innych jątrzącą się w nich zazdrość.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.vrYs3cbxvXtre6rv",
+            "description": "<section id=\"secret-hOrEyZdCdR6bSlAT\" class=\"secret\"><p>Ungory mają szczątkowe lub bardzo krótkie rogi, a zatem rzadko uważane są za „Gory” przez resztę stada. Niektóre odznaczają się niemal ludzką twarzą, dzięki czemu są skutecznymi wywiadowcami, ale także stają się przedmiotem szykan. Istotnie, ungory są źle traktowane przez @UUID[Compendium.wfrp4e-core.actors.R37OtN5gmPWCYOP3]{Gory} i bywają niskie lub niedożywione w porównaniu ze swoimi wielkorogimi braćmi. To sprawia, że stają się zgorzkniałymi stworzeniami, które pragną wyładować na innych jątrzącą się w nich zazdrość.</p></section>",
+            "sourceId": "Compendium.wfrp4e-core.actors.vrYs3cbxvXtre6rv",
             "gender": "Różne",
             "species": "Ungor",
             "effects": {
@@ -2925,7 +2925,7 @@
                 "tC23Vjf8UInFMUUe": {
                     "id": "tC23Vjf8UInFMUUe",
                     "name": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "tTkp9d5hUxKZNROU": {
                     "id": "tTkp9d5hUxKZNROU",
@@ -2959,7 +2959,7 @@
                     "name": "Strzelanie (25)",
                     "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
                     "originalName": "Strzelanie (25)",
-                    "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
+                    "sourceId": "Compendium.wfrp4e-core.items.Z1TGphWhic2E3Lfx",
                     "specification": "7"
                 }
             }
@@ -2967,8 +2967,8 @@
         "Snotling": {
             "id": "wdnXbjtKK7MtsZzc",
             "name": "Snotling",
-            "description": "<section id=\"secret-BqvRpOU9iDidxoBa\" class=\"secret\"><p>Stwory o mózgu wielkości orzeszka, podobne do podekscytowanych, niekontrolowanych szczeniąt. Snotlingi to zbieracze i urodzeni imitatorzy. Zbierają kości i błyszczące rzeczy albo naśladują zachowanie wszystkiego, co widzą. Gdy zostaną pchnięte do walki przez @UUID[Compendium.wfrp4e-core.bestiary.zzdOpKqBC28J66Mn]{Gobliny} lub @UUID[Compendium.wfrp4e-core.bestiary.E7BiDqsB55BrOQut]{Orki}, walczą w cuchnących rojach, starając się stłamsić wrogów samą swoją liczebnością. Wykorzystują przy tym wszelkiego rodzaju odrażające i szkodliwe substancje, jak trujące grzyby i odchody, którymi rzucają w przeciwników.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.wdnXbjtKK7MtsZzc",
+            "description": "<section id=\"secret-BqvRpOU9iDidxoBa\" class=\"secret\"><p>Stwory o mózgu wielkości orzeszka, podobne do podekscytowanych, niekontrolowanych szczeniąt. Snotlingi to zbieracze i urodzeni imitatorzy. Zbierają kości i błyszczące rzeczy albo naśladują zachowanie wszystkiego, co widzą. Gdy zostaną pchnięte do walki przez @UUID[Compendium.wfrp4e-core.actors.zzdOpKqBC28J66Mn]{Gobliny} lub @UUID[Compendium.wfrp4e-core.actors.E7BiDqsB55BrOQut]{Orki}, walczą w cuchnących rojach, starając się stłamsić wrogów samą swoją liczebnością. Wykorzystują przy tym wszelkiego rodzaju odrażające i szkodliwe substancje, jak trujące grzyby i odchody, którymi rzucają w przeciwników.</p></section>",
+            "sourceId": "Compendium.wfrp4e-core.actors.wdnXbjtKK7MtsZzc",
             "gender": "???",
             "species": "Zielonoskóry",
             "effects": {
@@ -2985,7 +2985,7 @@
                 "MhhGC5b9344Ecqnk": {
                     "id": "MhhGC5b9344Ecqnk",
                     "name": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "rPpBfzaGWof5yf0b": {
                     "id": "rPpBfzaGWof5yf0b",
@@ -3018,7 +3018,7 @@
             "id": "XoSSlIsqXkiBlycn",
             "name": "Varghulf",
             "description": "<section id=\"secret-f8TGSacwlNZd26YU\" class=\"secret\"><p>Większość wampirów utrzymuje w równowadze swoje nieumarłe łaknienie krwi z ułudą obycia i przyzwoitości, pozując na arystokrację ożywieńców. Niektóre jednak odrzucają swą ludzką fasadę, poddając się wewnętrznej bestii. Te varghulfy to brutalne i dzikie stworzenia pozbawione wszelkiego wyrafinowania, całkowicie pochłonięte przez zwierzęce dążenie do zaspokojenia własnych potrzeb. Pojawiają się pod postacią wielkich, nadętych bestii podobnych do nietoperza, które pławią się w prymitywnej żądzy krwi.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.XoSSlIsqXkiBlycn",
+            "sourceId": "Compendium.wfrp4e-core.actors.XoSSlIsqXkiBlycn",
             "gender": "???",
             "species": "Nieumarły",
             "effects": {
@@ -3081,7 +3081,7 @@
             "id": "XtVkAVgZRIIgrBXb",
             "name": "Mantikora",
             "description": "<section id=\"secret-F7nAtWNkv1I7DC2i\" class=\"secret\"><blockquote><p>Gdy podróżowałem z elfami do Ulthuanu, widziałem mnóstwo rzeczy, które zdumiałyby większość ludzi w domu. Pewnego razu ujrzałem mantikorę, tyle że pośrodku jej lwiego łba znajdowała się twarz wielkiego elfa! Należałoby chyba nazwać tego stwora elftikorą.</p><p style=\"text-align: right;\"><em>- Adhemar Fitztancred, Szary Strażnik, gawędziarz i kłamca</em></p></blockquote>\n<p>Na szczęście występują rzadko. Mantikory są niemiłosiernie zawzięte, z niezwykłą brutalnością dążąc do usunięcia ze swojego terytorium drapieżnych rywali. Dlatego zwykle wiadomo, że wchodzi się na teren mantikory - wzniesienia zawalone są ścierwami innych potworów. Stwór ma głowę i korpus zniekształconego wielkiego kota (chociaż czasami jego twarz wydaje się niemal zbyt ludzka), skrzydła nietoperza i paskudny, młócący, kolczasty ogon.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.XtVkAVgZRIIgrBXb",
+            "sourceId": "Compendium.wfrp4e-core.actors.XtVkAVgZRIIgrBXb",
             "gender": "Różne",
             "species": "Mantikora",
             "effects": {
@@ -3135,7 +3135,7 @@
             "id": "YavXt2NP9N8Puxse",
             "name": "Pol Dankels",
             "description": "<section id=\"secret-GH764CZAlWZYVjyB\" class=\"secret\"><p>Pol myślał, że pójdzie w ślady rodziców i będzie prowadził Piekarnię pod Zbawiennym Bertramem w Tahme, lecz bogowie mieli inne plany. To były jego dwudzieste trzecie urodziny. Dzień, w którym żona Pola dowiedziała się, że mąż sypia z jej siostrą. Gdy spróbowała odebrać mu ich troje dzieci, coś w nim pękło. Gapie twierdzili, że jego oczy zabłysły na żółto, a z dłoni buchnęły pomarańczowe płomienie. Jeśli chodzi o Pola, widział tylko świat zamazany czerwienią, gdy piekarnia stała w ogniu. To było siedem miesięcy temu. Od tamtego czasu Pol wędruje wraz z trójką swoich dzieci, desperacko uciekając przed łowcami czarownic i wysłannikami żony. Nie pozwoli, by go złapali. Jego dzieci go potrzebują.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.YavXt2NP9N8Puxse",
+            "sourceId": "Compendium.wfrp4e-core.actors.YavXt2NP9N8Puxse",
             "gender": "Mężczyzna",
             "species": "Człowiek",
             "effects": {
@@ -3168,7 +3168,7 @@
             "id": "Yee9gwxJUceGbnO2",
             "name": "Pegaz",
             "description": "<section id=\"secret-5kEjANcNIwA5N8HX\" class=\"secret\"><blockquote><p>A juści, okoliczne pola nader żyzne. Wicie, to przez pegazy. Nie trza kupować gnoju na nawóz, bo spada z niebiesiech jak dar od bogów. Jeno lepiej nie stać pod stadem, gdy przelatuje górą. Paskudna sprawa. Nader paskudna. </p><p style=\"text-align: right;\"><em>– Berthold Bruner, farmer i obserwator pegazów</em></p></blockquote>\n<p>Pegazy to urodziwe białe konie z wielkimi, łabędzimi skrzydłami. Są wytrwałymi i niestrudzonymi lotnikami. Latają wielkimi stadami w wysokich górach, najwyraźniej czerpiąc ogromną radość z szybowania i wirowania w krętych prądach powietrznych. Są oczywistymi kandydatami na wierzchowce i niejeden wojownik lub zwiadowca usiłował schwytać dla siebie pegaza. Pegazy są bardzo inteligentne, a według niektórych same pozwalają się schwytać, jeśli tego chcą. To doprowadziło do powstania wszelkiego rodzaju fantastycznych, romantycznych legend, zgodnie z którymi wybrańcami pegazów mogą być tylko osoby wystarczająco godne lub cnotliwe.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.Yee9gwxJUceGbnO2",
+            "sourceId": "Compendium.wfrp4e-core.actors.Yee9gwxJUceGbnO2",
             "gender": "Różne",
             "species": "Pegaz",
             "effects": {
@@ -3209,14 +3209,14 @@
             "id": "z8f3vySKIpTxGr62",
             "name": "Bazyliszek",
             "description": "<section id=\"secret-zdzlEp0D0ezaKtyw\" class=\"secret\"><p>Te ośmionogie, gadzie stwory są samotnicze i nieuchwytne. Podobno należą do najstarszych stworzeń Chaosu. Jak twierdzą pogłoski, przepełnia je tak wielka złość i jad, że zatruta jest nawet ziemia, po której chodzą. Także ich ukąszenie jest trujące, ale największy lęk budzi petryfikujące spojrzenie tych potworów. Obecnie spotyka się je rzadko, jednak bazyliszki to wciąż groźni przeciwnicy. Ich gruczoły i organy są wysoko cenione przez czarodziejów i alchemików, dlatego szukający okazji łowcy często sprawdzają, ile jest prawdy w pogłoskach o bazyliszkach bytujących podobno w dzikich ostępach @UUID[JournalEntry.ozE2DMCMK64eE5pD.JournalEntryPage.0Cmr0LZ3boLbNt6p]{Vorberglandu}. Niewielu powraca z takich wypraw.</p></section>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.z8f3vySKIpTxGr62",
+            "sourceId": "Compendium.wfrp4e-core.actors.z8f3vySKIpTxGr62",
             "gender": "Różne",
             "species": "Bazyliszek",
             "effects": {
                 "7VBwjr1LazKiJJh9": {
                     "id": "7VBwjr1LazKiJJh9",
                     "name": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "bhOGqfpoKJEhqbxd": {
                     "id": "bhOGqfpoKJEhqbxd",
@@ -3268,8 +3268,8 @@
         "Goblin": {
             "id": "zzdOpKqBC28J66Mn",
             "name": "Goblin",
-            "description": "<section id=\"secret-E2Z0jegOrNEyLilA\" class=\"secret\"><blockquote><p>Gobliny, sir. Tysiące goblinów!</p><p style=\"text-align: right\"><em>– Porucznik Bromkopf, 24. Reiklandzki Regiment Piechoty</em></p></blockquote>\n<p>Są wychudzone, złośliwe, zwinne i inteligentne. Błędem jest niedocenianie instynktu samozachowawczego goblinów. Chociaż są tchórzliwe, chętnie zbierają się w bandy, jeśli to zapewnia im znaczną przewagę liczebną. Często dołączają do armii @UUID[Compendium.wfrp4e-core.bestiary.E7BiDqsB55BrOQut]{Orków} - nie zawsze z własnego wyboru - oportunistycznie korzystając z łupów wojennych, podczas gdy inni zajmują się większością faktycznej walki.</p>",
-            "sourceId": "Compendium.wfrp4e-core.bestiary.zzdOpKqBC28J66Mn",
+            "description": "<section id=\"secret-E2Z0jegOrNEyLilA\" class=\"secret\"><blockquote><p>Gobliny, sir. Tysiące goblinów!</p><p style=\"text-align: right\"><em>– Porucznik Bromkopf, 24. Reiklandzki Regiment Piechoty</em></p></blockquote>\n<p>Są wychudzone, złośliwe, zwinne i inteligentne. Błędem jest niedocenianie instynktu samozachowawczego goblinów. Chociaż są tchórzliwe, chętnie zbierają się w bandy, jeśli to zapewnia im znaczną przewagę liczebną. Często dołączają do armii @UUID[Compendium.wfrp4e-core.actors.E7BiDqsB55BrOQut]{Orków} - nie zawsze z własnego wyboru - oportunistycznie korzystając z łupów wojennych, podczas gdy inni zajmują się większością faktycznej walki.</p>",
+            "sourceId": "Compendium.wfrp4e-core.actors.zzdOpKqBC28J66Mn",
             "gender": "???",
             "species": "Goblin",
             "effects": {
@@ -3286,7 +3286,7 @@
                 "pftSjYK6DieRahrK": {
                     "id": "pftSjYK6DieRahrK",
                     "name": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "rf1Ie1fPN8s8EpAU": {
                     "id": "rf1Ie1fPN8s8EpAU",
@@ -3312,7 +3312,7 @@
                     "name": "Strzelanie (25)",
                     "description": "<p>Stworzenie dysponuje bronią dystansową. Broń zadaje podane Obrażenia, a jej zasięg w metrach podany jest w nawiasie.</p>",
                     "originalName": "Strzelanie (25)",
-                    "sourceId": "Compendium.wfrp4e-core.traits.Z1TGphWhic2E3Lfx",
+                    "sourceId": "Compendium.wfrp4e-core.items.Z1TGphWhic2E3Lfx",
                     "specification": "7"
                 }
             }

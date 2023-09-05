@@ -18,7 +18,7 @@
             "id": "1hQuVFZt9QnnbWzg",
             "name": "Pomniejsza Infekcja",
             "description": "<p><i>Pomniejsze Infekcje</i> to wolno gojące się rany, którym towarzyszy drobna opuchlizna i gorączka. W Starym Świecie są równie powszechne, co powietrze. Większość z nich goi się sama z biegiem czasu, więc mało kto w ogóle się nimi martwi - dopóki nie jest za późno i przed chorym nie otwierają się Bramy Morra.</p>",
-            "sourceId": "Compendium.wfrp4e-core.diseases.1hQuVFZt9QnnbWzg",
+            "sourceId": "Compendium.wfrp4e-core.items.1hQuVFZt9QnnbWzg",
             "effects": {
                 "FLB8zGutyEQWgRlb": {
                     "id": "FLB8zGutyEQWgRlb",
@@ -27,7 +27,7 @@
                 "TbXenWmw4yRg7qlf": {
                     "id": "TbXenWmw4yRg7qlf",
                     "name": "Uciążliwa rana",
-                    "script": "\n                        if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty : \"average\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            let disease = await fromUuid(\"Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb\");\n            args.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()]);\n        }\n    });\n}"
+                    "script": "\n                        if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty : \"average\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            let disease = await fromUuid(\"Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb\");\n            args.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()]);\n        }\n    });\n}"
                 },
                 "tf4IaDGr6PVsHl7w": {
                     "id": "tf4IaDGr6PVsHl7w",
@@ -47,7 +47,7 @@
             "id": "aKiuGzlVO51JvsjV",
             "name": "Czarna Dżuma",
             "description": "<p>Historycy twierdzą, że setki lat temu szczury zalały Imperium i przyniosły ze sobą <i>Czarną Dżumę</i>, która wybiła 90% populacji ludzi. Niewyjaśnione wybuchy tej straszliwej choroby zdarzają się do dzisiaj, a wtedy zjawiają się na miejscu niezwykle poważne mniszki w bieli. @UUID[JournalEntry.NcH9OhleJFfaUdon.JournalEntryPage.TjfeXu3fimHJ5I9Q]{Kult Shallyi} poprzysiągł wytrzebienie tej obrzydliwej choroby z powierzchni ziemi, więc korzystając z nadanych im starożytnych praw, kapłani i kapłanki Shallyi wznoszą otoczone białymi linami szpitale-izolatki wszędzie tam, gdzie występuje <i>Czarna Dżuma</i>. Nikt nie wejdzie na teren kwarantanny ani go nie opuści, dopóki epidemia nie zostanie opanowana, a ciała pochowane w odpowiedni sposób.</p>",
-            "sourceId": "Compendium.wfrp4e-core.diseases.aKiuGzlVO51JvsjV",
+            "sourceId": "Compendium.wfrp4e-core.items.aKiuGzlVO51JvsjV",
             "effects": {
                 "1J3ape1RdCwgziZe": {
                     "id": "1J3ape1RdCwgziZe",
@@ -87,7 +87,7 @@
             "id": "BC4QyBeYAiw8cRuM",
             "name": "Sierściawka",
             "description": "<p>To powszechna choroba wśród myśliwych, kuśnierzy i handlarzy. <i>Sierściawką</i> można zarazić się od zainfekowanego bydła i owiec, w tym poprzez dotykanie ich skór lub wełny, albo od ciał zwierząt, które padły na tę chorobę. Zaczyna się niewinnie - od małej, swędzącej wysypki, ale szybko całe ciało pokrywa się różowymi, głębokimi pęcherzami, choć zazwyczaj najwięcej występuje ich na korpusie i ramionach. Nie jest to najgroźniejsza z osp panoszących się po Imperium, ale potrafi utrzymywać się przez długi czas, a niekiedy bywa nawet śmiertelna.</p>",
-            "sourceId": "Compendium.wfrp4e-core.diseases.BC4QyBeYAiw8cRuM",
+            "sourceId": "Compendium.wfrp4e-core.items.BC4QyBeYAiw8cRuM",
             "effects": {
                 "1PIxT3ieQbomnHR5": {
                     "id": "1PIxT3ieQbomnHR5",
@@ -111,7 +111,7 @@
             "id": "herUmN51D9TiL2Vn",
             "name": "Czerwonka",
             "description": "<p><i>Czerwonka</i> jest wiecznym problemem w całym Imperium i dość powszechnie uznaje się ją za karę wymierzoną bezbożnikom przez bogów. Ta infekcja sprawia, że nieszczęsny chory musi się często i boleśnie wypróżniać. Czerwonka jest chorobą endemiczną w armiach Imperium - podobno wykańcza więcej żołnierzy niż ciosy wrogów. Typowe lekarstwa obejmują m.in. spożywanie krwistych puddingów, by uzupełnić utracone płyny, „czopowanie” oraz wcieranie tłuszczu w dotknięte chorobą miejsca, by zmniejszyć pieczenie i swędzenie.</p>",
-            "sourceId": "Compendium.wfrp4e-core.diseases.herUmN51D9TiL2Vn",
+            "sourceId": "Compendium.wfrp4e-core.items.herUmN51D9TiL2Vn",
             "effects": {
                 "55OiJcxPalh86HH8": {
                     "id": "55OiJcxPalh86HH8",
@@ -149,7 +149,7 @@
             "id": "kKccDTGzWzSXCBOb",
             "name": "Ropiejąca Rana",
             "description": "<p>Zakażone cięcia i otarcia są dość powszechne, więc naturalnie narosło mnóstwo zabobonów i teorii, jak powinno się je leczyć. Kompresy wykonane z liści, gnoju, skóry ropuch i piór gołębi są tak powszechne jak wcieranie w ranę ziemi ze świątyń Sigmara. Większość lekarzy twierdzi, że to bzdury, skłaniając się do bardziej naukowych remediów, jak np. mieszania żółci czarnego wołu z trzema łyżkami uryny pacjenta i połową łyżki soli, a potem wcierania mieszanki w zaognioną <i>Ropiejącą Ranę</i>. Wrzaski leczonych są przecież najlepszym dowodem, że lekarstwo działa, czyż nie?</p>",
-            "sourceId": "Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb",
+            "sourceId": "Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb",
             "effects": {
                 "2cuvlgkALYIx6KCh": {
                     "id": "2cuvlgkALYIx6KCh",
@@ -159,7 +159,7 @@
                 "Bhn6hjQFNCEMU6et": {
                     "id": "Bhn6hjQFNCEMU6et",
                     "name": "Uciążliwa rana",
-                    "script": "\n                        if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty : \"average\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            let disease = await fromUuid(\"Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb\");\n            args.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()]);\n        }\n    });\n}"
+                    "script": "\n                        if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty : \"average\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            let disease = await fromUuid(\"Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb\");\n            args.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()]);\n        }\n    });\n}"
                 },
                 "InNO9elKVbhdUMyB": {
                     "id": "InNO9elKVbhdUMyB",
@@ -183,7 +183,7 @@
             "id": "M8XyRs9DN12XsFTQ",
             "name": "Zatrucie Krwi",
             "description": "<p>Krew jest zainfekowana, a serce pompuje chorobę, rozprzestrzeniając ją po organizmie. Przystawianie pijawek jest dość powszechnie stosowanym remedium, choć niektórzy cyrulicy skłaniają się ku precyzyjnemu nacinaniu szyi, by upuścić skażoną krew, jednocześnie nakazując spożywanie dużych ilości zdrowej krwi, by uzupełnić jej utratę. Niezależnie od tego, czy pacjent akceptuje takie leczenie, czy nie, nieleczone <i>Zatrucie Krwi</i> jest śmiertelne, więc prędzej czy później chory spotka się z Gildią Płaczek lub @UUID[JournalEntry.NcH9OhleJFfaUdon.JournalEntryPage.HfmrIexylrgxIz2x]{Kultem Morra}</p>",
-            "sourceId": "Compendium.wfrp4e-core.diseases.M8XyRs9DN12XsFTQ",
+            "sourceId": "Compendium.wfrp4e-core.items.M8XyRs9DN12XsFTQ",
             "effects": {
                 "NHyxRtRt9rsjjz4r": {
                     "id": "NHyxRtRt9rsjjz4r",
@@ -213,7 +213,7 @@
             "id": "QiHMX5OyXBhWCYoF",
             "name": "Szczurza Gorączka",
             "description": "<p>Do zakażenia dochodzi za sprawą zainfekowanych gryzoni. Budząca postrach <i>Szczurza Gorączka</i> objawia się zapalnymi wysypkami i owrzodzeniem, a później temperatura szybko rośnie, dopóki ciałem nie zaczną targać konwulsje. Rzadko kiedy choroba jest śmiertelna, ale bardzo mocno osłabia organizm, a wyleczenie się zajmuje wiele dni, więc większość chorych spróbuje wszystkiego, byle tylko złagodzić objawy. W Altdorfie jednym z powszechniejszych remediów jest samobiczowanie - podobno przynosi ulgę swędzącej skórze. Natomiast w Talabheim prym wiedzie nasmarowanie się kozim serem zmieszanym z importowanymi z Kisleva lodowymi papryczkami. W dużych miastach i miasteczkach <i>Szczurza Gorączka</i> zwana jest także „Mielonką”, co chyba wystarczająco oddaje fakt, że wiele pysznych pasztecików zawiera skażone szczurze mięso, które stosuje się jako substytut droższych gatunków.</p>",
-            "sourceId": "Compendium.wfrp4e-core.diseases.QiHMX5OyXBhWCYoF",
+            "sourceId": "Compendium.wfrp4e-core.items.QiHMX5OyXBhWCYoF",
             "effects": {
                 "0Tr1JZZBjSXaP6Sa": {
                     "id": "0Tr1JZZBjSXaP6Sa",
@@ -223,7 +223,7 @@
                 "hUAPgI4Gb09zd1ut": {
                     "id": "hUAPgI4Gb09zd1ut",
                     "name": "Uciążliwa Rana",
-                    "script": "\n                        if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty : \"average\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            let disease = await fromUuid(\"Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb\");\n            args.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()]);\n        }\n    });\n}"
+                    "script": "\n                        if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty : \"average\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            let disease = await fromUuid(\"Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb\");\n            args.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()]);\n        }\n    });\n}"
                 },
                 "i4ivBVyls07XXZ8h": {
                     "id": "i4ivBVyls07XXZ8h",
@@ -258,7 +258,7 @@
             "id": "txeLd7R13qxSvmsr",
             "name": "Smrodliwe Wiatry",
             "description": "<p>Jedynie minutą ciszy można podsumować podejście do kuchennej higieny w Imperium. Popularnym mitem jest więc, że jedzenie przygotowane przez niziołki nie wywołuje <i>Smrodliwych Wiatrów</i>, ale ci, którzy zapisali się na „wyścig do wygódki”, jedząc tanie paszteciki tej rasy ze straganów, których pełno w Altdorfie, zapewne by się z tą teorią nie zgodzili... Oczywiście zakładając, że udałoby im się pozostać poza sławojką na tyle długo, by w ogóle wziąć udział w dyskusji.</p>",
-            "sourceId": "Compendium.wfrp4e-core.diseases.txeLd7R13qxSvmsr",
+            "sourceId": "Compendium.wfrp4e-core.items.txeLd7R13qxSvmsr",
             "effects": {
                 "fquDNK6fxIYlnWX1": {
                     "id": "fquDNK6fxIYlnWX1",
@@ -287,7 +287,7 @@
             "id": "UAwTqZ3hqNb7vq9s",
             "name": "Świerzbospa",
             "description": "<p>Epidemie <i>Świerzbospy</i> wybuchają corocznie przede wszystkim w miastach i miasteczkach w całym Imperium. Choroba, która wywołuje powstawanie swędzących pęcherzy na całym ciele, jest stosunkowo łagodna i bardzo rzadko wywołuje jakieś powikłania, więc zazwyczaj najbardziej martwią się rodzice chorego lub próżni wielmoże. W świątyniach Shallyi zazwyczaj można od ręki dostać fiolkę z białą maścią, która zmniejsza swędzenie.</p>",
-            "sourceId": "Compendium.wfrp4e-core.diseases.UAwTqZ3hqNb7vq9s",
+            "sourceId": "Compendium.wfrp4e-core.items.UAwTqZ3hqNb7vq9s",
             "effects": {
                 "c9ty7yoIpDJfwDqo": {
                     "id": "c9ty7yoIpDJfwDqo",
