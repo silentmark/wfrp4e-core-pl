@@ -1,5 +1,5 @@
 {
-    "label": "Bestiarusz",
+    "label": "Bestiarusz (Podręcznik Główny)",
     "mapping": {
         "species": "system.details.species.value",
         "gender": "system.details.gender.value",

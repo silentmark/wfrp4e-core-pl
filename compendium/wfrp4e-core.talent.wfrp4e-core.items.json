@@ -1,5 +1,5 @@
 {
-    "label": "Talenty",
+    "label": "Przedmioty (Podręcznik Główny)",
     "mapping": {
         "specification_label": "system.specification.label",
         "specification": "system.specification.value",
@@ -1516,5 +1516,8 @@
                 }
             }
         }
+    },
+    "folders": {
+        "Talents": "Talenty"
     }
 }

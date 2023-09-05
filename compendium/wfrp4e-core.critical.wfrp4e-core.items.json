@@ -1,5 +1,5 @@
 {
-    "label": "Rany Krytyczne",
+    "label": "Przedmioty (Podręcznik Główny)",
     "mapping": {
         "wounds": "system.wounds.value",
         "location": "system.location.value",
@@ -1492,5 +1492,8 @@
             "wounds": "4",
             "location": "Ręka"
         }
+    },
+    "folders": {
+        "Criticals": "Rany Krytyczne"
     }
 }

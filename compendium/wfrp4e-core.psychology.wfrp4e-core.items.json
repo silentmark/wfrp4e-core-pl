@@ -1,5 +1,5 @@
 {
-    "label": "Czynniki Psychologiczne",
+    "label": "Przedmioty (Podręcznik Główny)",
     "mapping": {
         "effects": {
             "path": "effects",
@@ -88,5 +88,8 @@
             "description": "<p>Postać żywi wrogość wobec grupy „x”, co zazwyczaj oznacza jakąś grupę społeczną lub typ stworzeń, jak np. „mieszkańcy Nordlandu”, „zwierzoludzie” czy „szlachta”. Za każdym razem, gdy spotyka przedstawiciela tej grupy, musi wykonać Test Psychologii. Jeśli Test się powiedzie, postać może kląć i pluć, ale otrzyma jedynie karę -20 o wszystkich Testów Ogłady związanych z tą grupą. Jeśli Test się nie uda, postać nie jest w stanie dłużej dusić Wrogości.</p>\n<p>Pod koniec każdej następnej Rundy należy wykonać kolejny Test Psychologii, by zakończyć atak. Jeśli Test się nie powiedzie, Wrogość zakończy się samoistnie, kiedy wszyscy członkowie nielubianej grupy znajdujący się w polu widzenia albo czmychną, albo zostaną spacyfikowani. Stan <em>@Condition[Oszołomienie]</em> lub Stan <em>@Condition[Utrata Przytomności]</em> naturalnie kończą napad Wrogości, podobnie jak niektóre inne Czynniki Psychologiczne.</p>\n<p>Kiedy postać ma napad Wrogości,</p><ul><li>musi natychmiast zaatakować swoich wrogów - albo werbalnie (obelgami, drwinami itd.), albo fizycznie (zazwyczaj kończy się na pięściach), w zależności od okoliczności</li><li>Ponadto podczas takich drwin i innych prób werbalnych ataków postać otrzymuje premię +1 PS.</li></ul><p> @Compendium[wfrp4e-core.items.Ib2YQYChktDFN93y]{Strach} i @Compendium[wfrp4e.psychologies.meMkLEwdJIDLxM0B]{Grozę} natychmiast przerywają napad Wrogości.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Q2MCUrG2HppMcvN0"
         }
+    },
+    "folders": {
+        "Psychologies": "Czynniki Psychologiczne"
     }
 }

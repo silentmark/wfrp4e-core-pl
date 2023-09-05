@@ -1,5 +1,5 @@
 {
-    "label": "Umiejętności",
+    "label": "Przedmioty (Podręcznik Główny)",
     "mapping": {
         "sourceId": "flags.core.sourceId"
     },
@@ -910,5 +910,8 @@
             "description": "<p>Dzięki tej Umiejętności potrafisz odnaleźć się w dziczy, podróżować orientując się według charakterystycznych punktów terenowych, gwiazd lub korzystać z map. Samo posiadanie tej Umiejętności sprawia, że z grubsza wiesz gdzie jesteś i bez Testu potrafisz dotrzeć z jednego charakterystycznego miejsca do drugiego. Rzut na tę Umiejętność jest wymagany wtedy, gdy bohater jest zdezorientowany lub gdy podróżuje z dala od utartych szlaków i znanych mu okolic. Powodzenie Testu oznacza, że obiera dobry kierunek lub unika jakiegoś nieszczęścia.</p><p>Jeżeli podróż się ciągnie, MG może poprosić o Wydłużony Test Nawigacji, zmodyfikowany przez panujące warunki, obecność charakterystycznych punktów terenowych i dostęp do informacji geograficznych. Wymagana liczba PS zależy od tego, jak daleko znajduje się cel podróży. Jeden rzut może oznaczać od godziny do dnia wędrówki, zależnie od tego dokąd udają się bohaterowie.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.zZUX7wO4rOo8k9F0"
         }
+    },
+    "folders": {
+        "Skills": "Umiejętności"
     }
 }

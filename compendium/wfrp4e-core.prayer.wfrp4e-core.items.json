@@ -1,5 +1,5 @@
 {
-    "label": "Modlitwy",
+    "label": "Przedmioty (Podręcznik Główny)",
     "mapping": {
         "duration": "system.duration.value",
         "range": "system.range.value",
@@ -942,5 +942,8 @@
             "target": "1",
             "range": "Ogłada metrów"
         }
+    },
+    "folders": {
+        "Prayers": "Modlitwy"
     }
 }

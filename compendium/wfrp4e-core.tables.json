@@ -1834,5 +1834,14 @@
                 "90-100": "Prawa noga"
             }
         }
+    },
+    "folders": {
+        "Character Creation": "Tworzenie Bohatera",
+        "Core Rulebook": "Podręcznik Główny",
+        "Corruption & Mutation Tables": "Mutacje i Zepsucie",
+        "Critical Hit Tables": "Trafienia Krytyczne",
+        "GM Booklet": "Przybornik MG",
+        "Hit Location": "Lokacje Trafień",
+        "Moo's Homebrew": "Domówka Moo"
     }
 }

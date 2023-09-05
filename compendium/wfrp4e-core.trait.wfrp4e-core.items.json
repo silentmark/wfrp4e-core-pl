@@ -1,5 +1,5 @@
 {
-    "label": "Cechy Stworzeń",
+    "label": "Przedmioty (Podręcznik Główny)",
     "mapping": {
         "roll": "system.rollable.skill",
         "specification_label": "system.specification.label",
@@ -768,5 +768,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Z1TGphWhic2E3Lfx",
             "specification": "Obrażenia"
         }
+    },
+    "folders": {
+        "Traits": "Cechy Stworzeń"
     }
 }

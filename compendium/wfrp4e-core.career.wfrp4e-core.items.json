@@ -1,5 +1,5 @@
 {
-    "label": "Profesje",
+    "label": "Przedmioty (Podręcznik Główny)",
     "mapping": {
         "skills": "system.skills",
         "talents": "system.talents",
@@ -9154,6 +9154,6 @@
         }
     },
     "folders": {
-        "Careers": "Careers"
+        "Careers": "Profesje"
     }
 }

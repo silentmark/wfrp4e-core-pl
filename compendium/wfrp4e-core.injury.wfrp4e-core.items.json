@@ -1,5 +1,5 @@
 {
-    "label": "Urazy",
+    "label": "Przedmioty (Podręcznik Główny)",
     "mapping": {
         "location": "system.location.value",
         "penalty": "system.penalty.value",
@@ -441,5 +441,8 @@
             "penalty": "-20 do Testów wiążący się z użyciem dwóch rąk",
             "location": "Dłoń"
         }
+    },
+    "folders": {
+        "Injuries": "Urazy"
     }
 }

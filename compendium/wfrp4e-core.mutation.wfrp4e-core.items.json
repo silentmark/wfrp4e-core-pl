@@ -1,5 +1,5 @@
 {
-    "label": "Mutacje",
+    "label": "Przedmioty (Podręcznik Główny)",
     "mapping": {
         "modifier": "system.modifier.value",
         "effects": {
@@ -508,5 +508,8 @@
             },
             "modifier": "Za każdym razem, gdy postaci nie powiedzie się Test Siły Woli, otrzymuje 1 poziom @Condition[Panika]{Paniki}"
         }
+    },
+    "folders": {
+        "Mutations": "Mutacje"
     }
 }

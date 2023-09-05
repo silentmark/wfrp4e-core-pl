@@ -1,5 +1,5 @@
 {
-    "label": "Choroby",
+    "label": "Przedmioty (Podręcznik Główny)",
     "mapping": {
         "duration_value": "system.duration.value",
         "duration_unit": "system.duration.unit",
@@ -307,5 +307,8 @@
             "symptoms": "Kaszel i katar, Wysypka",
             "permanent": "Po jednym zachorowaniu na <i>Świerzbospę</i> organizm uodparnia się na nią całkowicie."
         }
+    },
+    "folders": {
+        "Diseases": "Choroby"
     }
 }

@@ -1,5 +1,5 @@
 {
-    "label": "Wyposażenie",
+    "label": "Przedmioty (Podręcznik Główny)",
     "mapping": {
         "penalties": "system.penalty.value",
         "range": "system.range.value",
@@ -1619,5 +1619,8 @@
             "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.items.zuFTVmBtN51K94Xy"
         }
+    },
+    "folders": {
+        "Trappings": "Wyposażenie"
     }
 }
