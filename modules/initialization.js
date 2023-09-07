@@ -43,37 +43,7 @@ WFRP4eCoreInitWrapper.prototype.render = function () {
 	
 	<a href="mailto: info@cubicle7games.com">info@cubicle7games.com</a>`;
     
-    const moduleInitializer = new game.wfrp4e.apps.ModuleInitializer(
-		"wfrp4e-core",
-		"WFRP4e - Inicjalizacja Podręcznika Głównego",
-		html
-	);
-    
-    moduleInitializer.initialize = async function () {
-        return new Promise((resolve) => {
-            fetch(`modules/${this.moduleKey}-pl/initialization.json`).then(async r => r.json()).then(async json => {
-                let createdFolders = await Folder.create(json)
-                for (let folder of createdFolders)
-                    this.folders[folder.type][folder.name] = folder;
-
-                for (let folderType in this.folders) {
-                    for (let folder in this.folders[folderType]) {
-
-                        let parent = this.folders[folderType][folder].getFlag(this.moduleKey, "initialization-parent")
-                        if (parent) {
-                            let parentId = this.folders[folderType][parent].id
-                            await this.folders[folderType][folder].update({ parent: parentId })
-                        }
-                    }
-                }
-
-                await this.initializeDocuments()
-                resolve()
-            })
-        })
-    };
-
-    moduleInitializer.render(true);
+    new game.wfrp4e.apps.ModuleInitializer("wfrp4e-core", "WFRP4e - Inicjalizacja Podręcznika Głównego", html).render(true);
 }
 
 CONFIG.JournalEntry.noteIcons = {
