@@ -32,7 +32,7 @@
                 "tf4IaDGr6PVsHl7w": {
                     "id": "tf4IaDGr6PVsHl7w",
                     "name": "Apatia",
-                    "script": "\n                    if (game.user.isUniqueGM) {\n    let fatigued = args.actor.hasCondition(\"fatigued\");\n    if (!fatigued) {\n        args.actor.addCondition(\"fatigued\");\n        ui.notifications.notify(\"\" + args.actor.name + \" otrzymał zmęczenie, którego nie można usunąć dopóki nie zostanie wyleczony symptom Apatii.\");\n    }\n}"
+                    "script": "                    if (game.user.isUniqueGM) {\n    let fatigued = args.actor.hasCondition(\"fatigued\");\n    if (!fatigued) {\n        args.actor.addCondition(\"fatigued\");\n        ui.notifications.notify(\"\" + args.actor.name + \" otrzymał zmęczenie, którego nie można usunąć dopóki nie zostanie wyleczony symptom Apatii.\");\n    }\n}"
                 }
             },
             "duration_value": "1d10",
@@ -41,7 +41,7 @@
             "incubation_value": "1d10",
             "incubation_unit": "dni",
             "symptoms": "Apatia, Nawroty (Sporadyczne), Uciążliwa rana",
-            "permanent": "entries.Minor Infection.permanent"
+            "permanent": " "
         },
         "The Black Plague": {
             "id": "aKiuGzlVO51JvsjV",
@@ -52,7 +52,7 @@
                 "1J3ape1RdCwgziZe": {
                     "id": "1J3ape1RdCwgziZe",
                     "name": "Apatia",
-                    "script": "\n                    if (game.user.isUniqueGM) {\n    let fatigued = args.actor.hasCondition(\"fatigued\");\n    if (!fatigued) {\n        args.actor.addCondition(\"fatigued\");\n        ui.notifications.notify(\"\" + args.actor.name + \" otrzymał zmęczenie, którego nie można usunąc dopóki nie zostanie wyleczony symptom Apatii.\");\n    }\n}"
+                    "script": "                    if (game.user.isUniqueGM) {\n    let fatigued = args.actor.hasCondition(\"fatigued\");\n    if (!fatigued) {\n        args.actor.addCondition(\"fatigued\");\n        ui.notifications.notify(\"\" + args.actor.name + \" otrzymał zmęczenie, którego nie można usunąc dopóki nie zostanie wyleczony symptom Apatii.\");\n    }\n}"
                 },
                 "BdDKgmnnXyID5l9r": {
                     "id": "BdDKgmnnXyID5l9r",
@@ -62,7 +62,7 @@
                 "NcJoF1DR82jScspx": {
                     "id": "NcJoF1DR82jScspx",
                     "name": "Dymienica",
-                    "script": "\n                    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"]\nif (args.type == \"weapon\") {\n    args.prefillModifiers.modifier -= 10\n}\nelse if (args.type == \"characteristic\") {\n    if (applicableCharacteristics.includes(args.item.key)) {\n        args.prefillModifiers.modifier -= 10;\n    }\n}\nelse if (args.type == \"skill\") {\n    if (applicableCharacteristics.includes(args.item.characteristic.key)) {\n        args.prefillModifiers.modifier -= 10;\n    }\n}\n"
+                    "script": "                    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"]\nif (args.type == \"weapon\") {\n    args.prefillModifiers.modifier -= 10\n}\nelse if (args.type == \"characteristic\") {\n    if (applicableCharacteristics.includes(args.item.key)) {\n        args.prefillModifiers.modifier -= 10;\n    }\n}\nelse if (args.type == \"skill\") {\n    if (applicableCharacteristics.includes(args.item.characteristic.key)) {\n        args.prefillModifiers.modifier -= 10;\n    }\n}"
                 },
                 "NKiIPNQehPO9eaxm": {
                     "id": "NKiIPNQehPO9eaxm",
@@ -81,7 +81,7 @@
             "incubation_value": "1d10",
             "incubation_unit": "minut",
             "symptoms": "Apatia, Dymienica, Gangrena, Gorączka, Uwiąd (Średnie)",
-            "permanent": "entries.The Black Plague.permanent"
+            "permanent": " "
         },
         "Packer's Pox": {
             "id": "BC4QyBeYAiw8cRuM",
@@ -105,7 +105,7 @@
             "incubation_value": "1d10",
             "incubation_unit": "dni",
             "symptoms": "Nawroty (Częste), Wysypka",
-            "permanent": "entries.Packer's Pox.permanent"
+            "permanent": " "
         },
         "The Bloody Flux": {
             "id": "herUmN51D9TiL2Vn",
@@ -116,7 +116,7 @@
                 "55OiJcxPalh86HH8": {
                     "id": "55OiJcxPalh86HH8",
                     "name": "Nudności",
-                    "script": "\n                    if (this.actor.isOwner && args.test.result.outcome == \"failure\") {\n    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"]\n    if (applicableCharacteristics.includes(args.test.characteristicKey)) {\n        this.actor.addCondition(\"stunned\");\n    }\n}\n"
+                    "script": "                    if (this.actor.isOwner && args.test.result.outcome == \"failure\") {\n    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"]\n    if (applicableCharacteristics.includes(args.test.characteristicKey)) {\n        this.actor.addCondition(\"stunned\");\n    }\n}"
                 },
                 "DjYLhjvUbllWMrKk": {
                     "id": "DjYLhjvUbllWMrKk",
@@ -134,7 +134,7 @@
                 "VBP4fo86uuFd6YiW": {
                     "id": "VBP4fo86uuFd6YiW",
                     "name": "Apatia",
-                    "script": "\n                    if (game.user.isUniqueGM) {\n    let fatigued = args.actor.hasCondition(\"fatigued\");\n    if (!fatigued) {\n        args.actor.addCondition(\"fatigued\")\n        ui.notifications.notify(\"\" + args.actor.name + \" otrzymał zmęczenie, którego nie można usunąć dopóki nie zostanie wyleczony symptom Apatii.\");\n    }\n}"
+                    "script": "                    if (game.user.isUniqueGM) {\n    let fatigued = args.actor.hasCondition(\"fatigued\");\n    if (!fatigued) {\n        args.actor.addCondition(\"fatigued\")\n        ui.notifications.notify(\"\" + args.actor.name + \" otrzymał zmęczenie, którego nie można usunąć dopóki nie zostanie wyleczony symptom Apatii.\");\n    }\n}"
                 }
             },
             "duration_value": "1d10",
@@ -143,7 +143,7 @@
             "incubation_value": "2d10",
             "incubation_unit": "dni",
             "symptoms": "Apatia, Biegunka (Poważny), Gorączka, Nawroty (Częste), Nudności",
-            "permanent": "entries.The Bloody Flux.permanent"
+            "permanent": " "
         },
         "Festering Wound": {
             "id": "kKccDTGzWzSXCBOb",
@@ -154,7 +154,7 @@
                 "2cuvlgkALYIx6KCh": {
                     "id": "2cuvlgkALYIx6KCh",
                     "name": "Apatia",
-                    "script": "\n                    if (game.user.isUniqueGM) {\n    let fatigued = args.actor.hasCondition(\"fatigued\");\n    if (!fatigued) {\n        args.actor.addCondition(\"fatigued\");\n        ui.notifications.notify(\"\" + args.actor.name + \" otrzymał zmęczenie, którego nie można usunąć dopóki nie zostanie wyleczony symptom Apatii.\");\n    }\n}\n"
+                    "script": "                    if (game.user.isUniqueGM) {\n    let fatigued = args.actor.hasCondition(\"fatigued\");\n    if (!fatigued) {\n        args.actor.addCondition(\"fatigued\");\n        ui.notifications.notify(\"\" + args.actor.name + \" otrzymał zmęczenie, którego nie można usunąć dopóki nie zostanie wyleczony symptom Apatii.\");\n    }\n}"
                 },
                 "Bhn6hjQFNCEMU6et": {
                     "id": "Bhn6hjQFNCEMU6et",
@@ -177,7 +177,7 @@
             "incubation_value": "1d10 dni lub natychmiast, jeśli jest skutkiem powikłania.",
             "incubation_unit": "dni",
             "symptoms": "Apatia, Gorączka, Nawroty (Częste), Uciążliwa rana, Biegunka, Nudności",
-            "permanent": "entries.Festering Wound.permanent"
+            "permanent": " "
         },
         "Blood Rot": {
             "id": "M8XyRs9DN12XsFTQ",
@@ -188,7 +188,7 @@
                 "NHyxRtRt9rsjjz4r": {
                     "id": "NHyxRtRt9rsjjz4r",
                     "name": "Apatia",
-                    "script": "\n                    if (game.user.isUniqueGM) {\n    let fatigued = args.actor.hasCondition(\"fatigued\");\n    if (!fatigued)  {\n        args.actor.addCondition(\"fatigued\");\n        ui.notifications.notify(\"\" + args.actor.name + \" otrzymał zmęczenie, którego nie można usunąć dopóki nie zostanie wyleczony symptom Apatii.\");\n    }\n}\n"
+                    "script": "                    if (game.user.isUniqueGM) {\n    let fatigued = args.actor.hasCondition(\"fatigued\");\n    if (!fatigued)  {\n        args.actor.addCondition(\"fatigued\");\n        ui.notifications.notify(\"\" + args.actor.name + \" otrzymał zmęczenie, którego nie można usunąć dopóki nie zostanie wyleczony symptom Apatii.\");\n    }\n}"
                 },
                 "TH7hPoURLnjdJSSl": {
                     "id": "TH7hPoURLnjdJSSl",
@@ -205,9 +205,9 @@
             "duration_unit": "dni",
             "contraction": "Powikłania w związku z inną chorobą lub otrzymaną Raną Krytyczną.",
             "incubation_value": "Natychmiastowa",
-            "incubation_unit": "entries.Blood Rot.incubation_unit",
+            "incubation_unit": " ",
             "symptoms": "Apatia, Gorączka (Poważny), Uwiąd",
-            "permanent": "entries.Blood Rot.permanent"
+            "permanent": " "
         },
         "Ratte Fever": {
             "id": "QiHMX5OyXBhWCYoF",
@@ -242,7 +242,7 @@
                 "QdZZlcWkKdwev0VI": {
                     "id": "QdZZlcWkKdwev0VI",
                     "name": "Apatia",
-                    "script": "\n                    if (game.user.isUniqueGM) {\n    let fatigued = args.actor.hasCondition(\"fatigued\");\n    if (!fatigued)     {\n        args.actor.addCondition(\"fatigued\");\n        ui.notifications.notify(\"\" + args.actor.name + \" otrzymał zmęczenie, którego nie można usunąć dopóki nie zostanie wyleczony symptom Apatii.\");\n    }\n}"
+                    "script": "                    if (game.user.isUniqueGM) {\n    let fatigued = args.actor.hasCondition(\"fatigued\");\n    if (!fatigued)     {\n        args.actor.addCondition(\"fatigued\");\n        ui.notifications.notify(\"\" + args.actor.name + \" otrzymał zmęczenie, którego nie można usunąć dopóki nie zostanie wyleczony symptom Apatii.\");\n    }\n}"
                 }
             },
             "duration_value": "3d10+10",
@@ -251,7 +251,7 @@
             "incubation_value": "3d10+5",
             "incubation_unit": "dni",
             "symptoms": "Apatia, Gorączka, Konwulsje, Nawroty (Umiarkowane), Wysypka, Uciążliwa Rana",
-            "permanent": "entries.Ratte Fever.permanent"
+            "permanent": " "
         },
         "Galloping Trots": {
             "id": "txeLd7R13qxSvmsr",
@@ -262,12 +262,12 @@
                 "fquDNK6fxIYlnWX1": {
                     "id": "fquDNK6fxIYlnWX1",
                     "name": "Apatia",
-                    "script": "\n                    if (game.user.isUniqueGM) {\n    let fatigued = args.actor.hasCondition(\"fatigued\");\n    if (!fatigued) {\n        args.actor.addCondition(\"fatigued\");\n        ui.notifications.notify(\"\" + args.actor.name + \" otrzymał zmęczenie, którego nie można usunąc dopóki nie zostanie wyleczony symptom Apatii.\");\n    }\n}"
+                    "script": "                    if (game.user.isUniqueGM) {\n    let fatigued = args.actor.hasCondition(\"fatigued\");\n    if (!fatigued) {\n        args.actor.addCondition(\"fatigued\");\n        ui.notifications.notify(\"\" + args.actor.name + \" otrzymał zmęczenie, którego nie można usunąc dopóki nie zostanie wyleczony symptom Apatii.\");\n    }\n}"
                 },
                 "heL1cJFCuElfQoeS": {
                     "id": "heL1cJFCuElfQoeS",
                     "name": "Nudności",
-                    "script": "\n                    if (this.actor.isOwner && args.test.result.outcome == \"failure\") {\n    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"]\n    if (applicableCharacteristics.includes(args.test.characteristicKey)) {\n        this.actor.addCondition(\"stunned\");\n    }\n}\n"
+                    "script": "                    if (this.actor.isOwner && args.test.result.outcome == \"failure\") {\n    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"]\n    if (applicableCharacteristics.includes(args.test.characteristicKey)) {\n        this.actor.addCondition(\"stunned\");\n    }\n}"
                 },
                 "Sp93ZiJ4eq26v8UO": {
                     "id": "Sp93ZiJ4eq26v8UO",
@@ -280,7 +280,7 @@
             "incubation_value": "1d10",
             "incubation_unit": "godzin",
             "symptoms": "Apatia, Biegunka (Średnie), Nudności",
-            "permanent": "entries.Galloping Trots.permanent"
+            "permanent": " "
         },
         "Itching Pox": {
             "id": "UAwTqZ3hqNb7vq9s",

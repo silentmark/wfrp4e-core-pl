@@ -118,7 +118,7 @@
         "Arcane Magic": {
             "id": "3O9clK7LGyuLTHPW",
             "name": "Magia Tajemna (Tradycja)",
-            "description": "<p>Studiowałeś jedną z ośmiu tradycji magii: Cienia, Metalu, Niebios, Ognia, Śmierci, Światła, Zwierząt lub Życia albo praktykujesz którąś z mniej znanych: Guślarstwa czy Nekromancji. Możesz zapamiętywać czary ze swojej wybranej tradycji, płacąc za nie podany niżej koszt w Punktach Doświadczenia:</p>\n<div>\n    <table title=\"\" border=\"1\">\n        <tbody><tr>\n                <td>\n                    <p>Liczba już znanych zaklęć</p>\n                </td>\n                <td>\n                    <p>Koszt nowego czaru w PD</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>do Bonusu z Inteligencji × 1 </p>\n                </td>\n                <td>\n                    <p>100 PD</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>do Bonusu z Inteligencji × 2</p>\n                </td>\n                <td>\n                    <p>200 PD</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>do Bonusu z Inteligencji × 3</p>\n                </td>\n                <td>\n                    <p>300 PD</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>do Bonusu z Inteligencji × 4</p>\n                </td>\n                <td>\n                    <p>400 PD</p>\n                </td>\n</tr></tbody>\n    </table>\n</div>\n<p> …i tak dalej.</p>\n<p>Jeśli twój Bonus z Inteligencji równy jest 4, to pierwsze zaklęcie oraz następne cztery będą cię kosztowały 100 PD, kolejne 4 już 200 PD i tak dalej. Obszerniejsze zasady dotyczące nauki nowych zaklęć znajdują się w @UUID[Compendium.wfrp4e-core.journals.YBVrpUHEjohB1H4f]{Rozdziale 8: Magia}. W normalnych warunkach nie możesz nabyć więcej niż jednego Talentu Magia Tajemna (Tradycja). Co więcej, jeśli posiadasz Talent Magia Tajemna (Tradycja), nie możesz wykupić Talentów @UUID[Compendium.wfrp4e-core.items.QyjWtSdnVMT04l5Y]{Błogosławieństwo} i @UUID[Compendium.wfrp4e-core.items.voV0C2ar1bKpcpnH]{Inwokacja}. Za 100 PD możesz wyzbyć się tego Talentu, natychmiast tracąc dostęp do wszystkich zapewnianych przez niego czarów.</p>",
+            "description": "<p>Studiowałeś jedną z ośmiu tradycji magii: Cienia, Metalu, Niebios, Ognia, Śmierci, Światła, Zwierząt lub Życia albo praktykujesz którąś z mniej znanych: Guślarstwa czy Nekromancji. Możesz zapamiętywać czary ze swojej wybranej tradycji, płacąc za nie podany niżej koszt w Punktach Doświadczenia:</p>\n<div>\n <table title=\"\" border=\"1\">\n <tbody><tr>\n                <td>\n                    <p>Liczba już znanych zaklęć</p>\n                </td>\n                <td>\n                    <p>Koszt nowego czaru w PD</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>do Bonusu z Inteligencji × 1 </p>\n                </td>\n                <td>\n                    <p>100 PD</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>do Bonusu z Inteligencji × 2</p>\n                </td>\n                <td>\n                    <p>200 PD</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>do Bonusu z Inteligencji × 3</p>\n                </td>\n                <td>\n                    <p>300 PD</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>do Bonusu z Inteligencji × 4</p>\n                </td>\n                <td>\n                    <p>400 PD</p>\n                </td>\n</tr></tbody>\n    </table>\n</div>\n<p> …i tak dalej.</p>\n<p>Jeśli twój Bonus z Inteligencji równy jest 4, to pierwsze zaklęcie oraz następne cztery będą cię kosztowały 100 PD, kolejne 4 już 200 PD i tak dalej. Obszerniejsze zasady dotyczące nauki nowych zaklęć znajdują się w @UUID[Compendium.wfrp4e-core.journals.YBVrpUHEjohB1H4f]{Rozdziale 8: Magia}. W normalnych warunkach nie możesz nabyć więcej niż jednego Talentu Magia Tajemna (Tradycja). Co więcej, jeśli posiadasz Talent Magia Tajemna (Tradycja), nie możesz wykupić Talentów @UUID[Compendium.wfrp4e-core.items.QyjWtSdnVMT04l5Y]{Błogosławieństwo} i @UUID[Compendium.wfrp4e-core.items.voV0C2ar1bKpcpnH]{Inwokacja}. Za 100 PD możesz wyzbyć się tego Talentu, natychmiast tracąc dostęp do wszystkich zapewnianych przez niego czarów.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.3O9clK7LGyuLTHPW"
         },
         "Argumentative": {
@@ -130,7 +130,7 @@
                 "oAsvKkgS9pLtavj7": {
                     "id": "oAsvKkgS9pLtavj7",
                     "name": "Przekonujący",
-                    "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Charm\") &&  (args.test.result.roll <= 5 || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop())\n   if (ones > SL) {\n     args.test.result.other.push(`<b>${this.effect.name}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS jeśli prowadzisz debatę.`);\n   }\n}"
+                    "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Charm\") &&  (args.test.result.roll <= game.settings.get(\"wfrp4e\", \"automaticSuccess\") || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop())\n   if (ones > SL) {\n     args.test.result.other.push(`<b>${this.effect.name}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS jeśli prowadzisz debatę.`);\n   }\n}"
                 }
             },
             "tests": "Charyzma, gdy prowadzisz debatę lub się z kimś spierasz na argumenty"
@@ -158,7 +158,7 @@
         "Strong Swimmer": {
             "id": "4wnQc19allWlyOGe",
             "name": "Świetny Pływak",
-            "description": "<p>Bardzo dobrze pływasz i potrafisz na długo wstrzymać oddech pod wodą. Kiedy obliczasz, jak długo jesteś w stanie wytrzymać pod powierzchnią wody, do Bonusu z Wytrzymałości dodaj liczbę wykupień tego Talentu.</p>",
+            "description": "<p>Bardzo dobrze pływasz i potrafisz na długo wstrzymać oddech pod wodą. Kiedy obliczasz, jak długo jesteś w stanie @UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#drowning-and-suffocation]{wytrzymać pod powierzchnią wody}, do Bonusu z Wytrzymałości dodaj liczbę wykupień tego Talentu.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.4wnQc19allWlyOGe",
             "tests": "Pływanie"
         },
@@ -211,7 +211,7 @@
                 "pq0wuLa5jebvLTGR": {
                     "id": "pq0wuLa5jebvLTGR",
                     "name": "Atrakcyjny",
-                    "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Charm\") &&  (args.test.result.roll <= 5 || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop())\n   if (ones > SL)\n      args.test.result.other.push(`<b>${this.effect.name}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS jeśli podobasz się celowi testu.`)\n}"
+                    "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Charm\") &&  (args.test.result.roll <= game.settings.get(\"wfrp4e\", \"automaticSuccess\") || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop())\n   if (ones > SL)\n      args.test.result.other.push(`<b>${this.effect.name}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS jeśli podobasz się celowi testu.`)\n}"
                 }
             },
             "tests": "Charyzma, by wpłynąć na tych, którym się podobasz"
@@ -369,7 +369,7 @@
                 "S487mwxmDJh9rULA": {
                     "id": "S487mwxmDJh9rULA",
                     "name": "Pomocny",
-                    "script": "if (args.test.item && args.test.characteristicKey== \"fel\" &&  (args.test.result.roll <= 5 || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10);\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop());\n   if (ones > SL)\n      args.test.result.other.push(`<b>${this.effect.name}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS podczas wpływania na osoby o wyższym Statusie.`);\n}"
+                    "script": "if (args.test.item && args.test.characteristicKey== \"fel\" &&  (args.test.result.roll <= game.settings.get(\"wfrp4e\", \"automaticSuccess\") || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10);\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop());\n   if (ones > SL)\n      args.test.result.other.push(`<b>${this.effect.name}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS podczas wpływania na osoby o wyższym Statusie.`);\n}"
                 }
             },
             "tests": "Testy społeczne, by wpłynąć na stojących wyżej w hierarchii"
@@ -1421,7 +1421,7 @@
                 "O6qLwcpRh7LjEm4o": {
                     "id": "O6qLwcpRh7LjEm4o",
                     "name": "Nieubłagany",
-                    "script": "args.effect.flags.wfrp4e.value -= 1;"
+                    "script": "if (args.effect.conditionId == \"bleeding\")\n    args.effect.flags.wfrp4e.value -= 1"
                 }
             }
         },

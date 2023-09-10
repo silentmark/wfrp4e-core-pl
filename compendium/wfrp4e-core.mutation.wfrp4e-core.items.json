@@ -20,7 +20,7 @@
                     "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');"
                 }
             },
-            "modifier": ""
+            "modifier": " "
         },
         "Suspicious Mind": {
             "id": "1MI5UADJkt042mGm",
@@ -93,7 +93,7 @@
             "name": "Niejednolite opierzenie",
             "description": "<p>Rzuć dwukrotnie w tabeli @Table[hitloc]{Miejsca Trafień}, by ustalić miejsca porosłe pierzem.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.ArCg0WaBxLgPQA8F",
-            "modifier": ""
+            "modifier": " "
         },
         "Totally Unhinged": {
             "id": "atYAndIzpFIfq0Wb",
@@ -139,7 +139,7 @@
             "name": "Sącząca się ropa",
             "description": "<p>Rzuć w tabeli @Table[hitloc]{Miejsca Trafień}, by ustalić miejsce, z którego się sączy.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.cXeFXMf7IhxiGGPK",
-            "modifier": ""
+            "modifier": " "
         },
         "Inhuman Beauty": {
             "id": "dAnz27Q409wtHfxc",
@@ -205,7 +205,7 @@
                     "script": "fromUuid(\"Compendium.wfrp4e-core.items.4xF7M6ylIiGntekh\").then(item => {\n    item = item.toObject();\n    args.actor.createEmbeddedDocuments(\"Item\", [item]);\n})"
                 }
             },
-            "modifier": ""
+            "modifier": " "
         },
         "Lonely Spirit": {
             "id": "HEaxp50NEPnFiihl",
@@ -308,7 +308,7 @@
             "name": "Świecąca skóra",
             "description": "<p>Blask porównywalny z płomieniem świecy.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.LWBMThQzG5aCSNXP",
-            "modifier": ""
+            "modifier": " "
         },
         "Unholy Rage": {
             "id": "MdrqSnA014jBggAV",
@@ -334,7 +334,7 @@
             "name": "Dodatkowe usta",
             "description": "<p>Rzuć w tabeli @Table[hitloc]{Miejsca Trafień}, by ustalić miejsce, w którym się pojawią.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.NzRTWXHlQ8I46RW4",
-            "modifier": ""
+            "modifier": " "
         },
         "Animalistic Legs": {
             "id": "op4GKikIQee7JMXw",
@@ -447,7 +447,7 @@
                     "script": "fromUuid(\"Compendium.wfrp4e-core.items.Q2MCUrG2HppMcvN0\").then(item => {\nitem = item.toObject()\nlet species = args.actor.details.species.value || \"własną rasą\"\nitem.name = `Wrogość (do wszystkich poza: ${species})`\nargs.actor.createEmbeddedDocuments(\"Item\", [item])\n})"
                 }
             },
-            "modifier": ""
+            "modifier": " "
         },
         "Extra Leg Joints": {
             "id": "u5lMTKaOsZfiE3p0",

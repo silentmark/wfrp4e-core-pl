@@ -8,7 +8,7 @@
             "initialization_folder": "Profesje",
             "id": "0vV4bJ7fhZzuPkVh",
             "name": "Losowe Profesje - Człowiek (Reiklandczyk)",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-1": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.86gkaanqt19xYCRa]{Aptekarka}",
                 "2-2": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.hVKMI3xwuUpO3P6c]{Inżynier}",
@@ -92,7 +92,7 @@
             "initialization_folder": "Tworzenie Bohatera",
             "id": "5DrR1sTIBLa3vUBX",
             "name": "Kolor Włosów - Człowiek",
-            "description": "",
+            "description": " ",
             "results": {
                 "15-17": "Czarny",
                 "12-14": "Ciemny brąz",
@@ -138,7 +138,7 @@
             "initialization_folder": "Trafienia Krytyczne",
             "id": "7KReueNRjaI6dVLk",
             "name": "Rany Krytyczne Głowy",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-10": "Zawadiacka rana",
                 "11-20": "Płytkie cięcie w głowę",
@@ -166,7 +166,7 @@
             "initialization_folder": "Zasady domowe Moo",
             "id": "7mQ2d4AN6mEOhD1G",
             "name": "Tabela \"Ożeż!\" - broń prochowa (Moo)",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-10": "<p><strong>Częściowy wypał</strong>: Nie cały proch się zapala. Broń strzela, ale jej obrażenia są zmniejszone o połowę i traci wszystkie swoje cechy. Jeśli strzelano na długi dystans, słaby strzał nie ma wystarczającej mocy, aby dotrzeć do celu lub go uszkodzić.</p>",
                 "11-30": "<p><strong>Ładunek nie zapala się</strong>: Nic się nie dzieje ale w następnej rundzie możesz strzelać normalnie.</p>",
@@ -180,7 +180,7 @@
             "initialization_folder": "Tworzenie Bohatera",
             "id": "926ggfaoK3lFcsHe",
             "name": "Kolor Włosów - Niziołek",
-            "description": "",
+            "description": " ",
             "results": {
                 "18-18": "Migdałowy",
                 "8-11": "Kasztanowy",
@@ -198,7 +198,7 @@
             "initialization_folder": "Przybornik Mistrza Gry",
             "id": "amwtR5qoZjUHKpg2",
             "name": "Szukam Pracy! - Kto",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-1": "Ten, który uciekł…",
                 "2-2": "Sprośny świntuch z fałszywym bretońskim akcentem…",
@@ -306,7 +306,7 @@
             "initialization_folder": "Podręcznik Główny",
             "id": "B6H8lLrhLg3fifoh",
             "name": "Na Marginesie Społeczeństwa",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-2": "<b>Odrzuca Status.</b> Postać opiera się obyczajom związanym ze Statusem, więc nie działają na nią jego efekty.",
                 "3-8": "<b>Reakcja standardowa</b>: Na postać działają normalne zasady Statusu.",
@@ -317,7 +317,7 @@
             "initialization_folder": "Miejsca Trafień",
             "id": "bF4KEpOxadDG0wS7",
             "name": "Tabela Trafień - Pająk",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-9": "Głowa",
                 "10-44": "Nogi",
@@ -329,7 +329,7 @@
             "initialization_folder": "Tworzenie Bohatera",
             "id": "blUUlcr8Jp4mvZAz",
             "name": "Kolor Oczu - Człowiek",
-            "description": "",
+            "description": " ",
             "results": {
                 "12-14": "Szary",
                 "20-20": "Czarny",
@@ -347,7 +347,7 @@
             "initialization_folder": "Tworzenie Bohatera",
             "id": "boJ7tb1ePWEbrr1C",
             "name": "Kolor Włosów - Leśny Elf",
-            "description": "",
+            "description": " ",
             "results": {
                 "3-3": "Popielaty",
                 "2-2": "Srebrnosiwy",
@@ -365,7 +365,7 @@
             "initialization_folder": "Przybornik Mistrza Gry",
             "id": "BulvptumUSTWIIvh",
             "name": "Cechy Postaci",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-4": "Arogancki",
                 "5-8": "Sprośny",
@@ -398,7 +398,7 @@
             "initialization_folder": "Podręcznik Główny",
             "id": "CcKYnmbQyRzGkrFy",
             "name": "Gniew Bogów",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-5": "<b>Święte wizje</b>: Twoje zmysły dręczą wizje ukazujące twojego boga. Wykonaj <b>Przeciętny (+20) Test Odporności</b>. W razie porażki dostajesz jeden Stan @Condition[Oszołomienie]. MG decyduje, co dokładnie przedstawiają wizje.",
                 "6-10": "<p><strong>Przemyśl swoje uczynki</strong>: Do końca tygodnia każdy udany Test Modlitwy będzie traktowany, jakby miał 0 PS.</p>",
@@ -437,7 +437,7 @@
             "initialization_folder": "Podręcznik Główny",
             "id": "cd4HUD1gqyDDRDDO",
             "name": "Wiry Wiatrów",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-1": "-30",
                 "2-3": "-10",
@@ -450,7 +450,7 @@
             "initialization_folder": "Trafienia Krytyczne",
             "id": "CUIX4e2hiHdSoJ64",
             "name": "Rany Krytyczne Korpusu",
-            "description": "",
+            "description": " ",
             "results": {
                 "11-20": "Cios w bebechy",
                 "21-25": "Poniżej pasa!",
@@ -478,7 +478,7 @@
             "initialization_folder": "Przybornik Mistrza Gry",
             "id": "daw0ilZ4akcQ7isG",
             "name": "Wchodzisz do karczmy, a tam?",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-2": "<p>Ulewny deszcze sprawił, że szczury uciekają z zalanych kanałów wprost do głównej izby! Ludzie krzyczą, wskakują na stoły, po prostu piekło na ziemi.</p>",
                 "3-4": "<p>Krasnoludzka panna w powłóczystej szacie i elfi mężczyzna w zielonej tunice wpatrują się z napięciem w planszę do @UUID[Compendium.wfrp4e-rnhd.journals.OnhGK8IE9SCGAlRT.JournalEntryPage.KphQ4JDGPn7zaP7m]{Alvatafl}. Wszyscy w oberży przyglądają im się z zapartym tchem. Żadne z nich nie wykonało ruchu od dobrych dziesięciu minut...</p>",
@@ -536,7 +536,7 @@
             "initialization_folder": "Zepsucie i Mutacje",
             "id": "Dr2lB55Ju6KYw4Oc",
             "name": "Rozkład Ciała i Umysłu - Krasnolud",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-5": "<b>Ciało</b>: @Table[mutatephys]",
                 "6-100": "<b>Umysł</b>: @Table[mutatemental]"
@@ -546,7 +546,7 @@
             "initialization_folder": "Przybornik Mistrza Gry",
             "id": "Ey0yDGXFCZjeXbaq",
             "name": "Przykładowe Motywacje",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-4": "Władza",
                 "5-8": "Zmiana",
@@ -579,7 +579,7 @@
             "initialization_folder": "Przybornik Mistrza Gry",
             "id": "F1pQpcy1DTMlsIiJ",
             "name": "Skąd my się znamy?",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-2": "Obydwoje siedzieliśmy w jednym ze znamienitych imperialnych więzień.",
                 "3-4": "Byliśmy parą kochanków, ale kaprysy Katyi sprawiły, że się rozstaliśmy.",
@@ -595,7 +595,7 @@
                 "23-24": "Obydwoje byliśmy wśród uchodźców, gdy zielonoskórzy najechali nasze księstwo.",
                 "25-26": "Spotkaliśmy się lata temu, w mieście na drugim końcu Starego Świata.",
                 "27-28": "Obydwoje byliśmy ofiarami tego samego nieszczęścia, gdy wzeszedł Morrslieb błyszczący bladą zielenią.",
-                "29-30": "Obydwoje braliśmy udział w bójce na Ulicy Tysiąca Tawern w Altdorfie. Dla bezpieczeństwa połączyliśmy wtedy siły.",
+                "29-30": "Obydwoje braliśmy udział w bójce na @UUID[Compendium.wfrp4e-altdorf.journals.EmhvOkkzAir6pzCB.JournalEntryPage.XhWgwj2BstdmYY95]{Ulicy Tysiąca Tawern w Altdorfie}. Dla bezpieczeństwa połączyliśmy wtedy siły.",
                 "31-32": "Jedno z nas zostało przez drugie pomylone z kimś zupełnie innym, co doprowadziło do ciągu krępujących wydarzeń, zanim ktokolwiek się zorientował.",
                 "33-34": "Poznaliśmy się na trakcie, gdy zmierzaliśmy w tym samym kierunku. Dobrze się nam rozmawiało.",
                 "35-36": "Pewien strażnik dróg wrobił nas obydwoje w zbrodnię, której nie popełniliśmy.",
@@ -637,7 +637,7 @@
             "initialization_folder": "Tworzenie Bohatera",
             "id": "FM6ASUoNX21MHuWa",
             "name": "Rasy",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-90": "Człowiek",
                 "91-94": "Niziołek",
@@ -650,7 +650,7 @@
             "initialization_folder": "Tworzenie Bohatera",
             "id": "FRkn5r1xM27CblfH",
             "name": "Losowe Talenty",
-            "description": "",
+            "description": " ",
             "results": {
                 "2-2": "Oburęczność",
                 "3-3": "Posłuch u Zwierząt",
@@ -690,7 +690,7 @@
             "initialization_folder": "Przybornik Mistrza Gry",
             "id": "GuA31ySX6a0rOVt2",
             "name": "Szukam Pracy! - Dlaczego",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-1": "...żeby mógł prowadzić swoje obrzydliwe badania w tajemnicy.",
                 "2-2": "...żeby mógł prowadzić swoje obrzydliwe badania w tajemnicy.",
@@ -798,7 +798,7 @@
             "initialization_folder": "Tworzenie Bohatera",
             "id": "i4MGrapdsl4adppz",
             "name": "Kolor Włosów - Krasnolud",
-            "description": "",
+            "description": " ",
             "results": {
                 "20-20": "Czarny",
                 "12-14": "Brąz",
@@ -816,7 +816,7 @@
             "initialization_folder": "Przybornik Mistrza Gry",
             "id": "InqkdaiCQ98h7Ddl",
             "name": "Szukam Pracy! - Co",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-1": "...potrzebuje Bohaterów, żeby zaaranżowali spotkanie między nim a podejrzaną personą…",
                 "2-2": "...potrzebuje Bohaterów, żeby zaaranżowali spotkanie między nim a podejrzaną personą…",
@@ -924,7 +924,7 @@
             "initialization_folder": "Podręcznik Główny",
             "id": "iPVwX0ul6lHVbKSX",
             "name": "Manifestacje - Pomniejsze",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-5": "<b>Wiedźmi znak</b>: Pierwsza istota, która urodzi się w promieniu dwóch kilometrów, będzie zmutowana.",
                 "6-10": "<b>Skwaśniałe mleko</b>: Wszelkie mleko w promieniu [[1d100]] metrów natychmiast kwaśnieje, wino i żywność psuje się.",
@@ -952,7 +952,7 @@
             "initialization_folder": "Trafienia Krytyczne",
             "id": "j2joGAVBNJgS1G1g",
             "name": "Rany Krytyczne Nóg",
-            "description": "",
+            "description": " ",
             "results": {
                 "11-20": "Skręcona kostka",
                 "21-25": "Płytkie cięcie w nogę",
@@ -980,7 +980,7 @@
             "initialization_folder": "Zepsucie i Mutacje",
             "id": "jfs4FXVTtWSjA6Or",
             "name": "Rozkład Ciała i Umysłu - Leśny Elf",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-100": "<b>Umysł</b>: @Table[mutatemental]"
             }
@@ -989,7 +989,7 @@
             "initialization_folder": "Trafienia Krytyczne",
             "id": "JYX8E8WgNb2em8g3",
             "name": "Rany Krytyczne Rąk",
-            "description": "",
+            "description": " ",
             "results": {
                 "11-20": "Płytkie cięcie w ramię",
                 "21-25": "Skręcenie",
@@ -1017,7 +1017,7 @@
             "initialization_folder": "Zepsucie i Mutacje",
             "id": "JyxIbzfh2pn7DLhh",
             "name": "Rozkład Ciała i Umysłu - Niziołek",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-10": "<b>Ciało</b>: @Table[mutatephys]",
                 "11-100": "<b>Umysł</b>: @Table[mutatemental]"
@@ -1027,7 +1027,7 @@
             "initialization_folder": "Tworzenie Bohatera",
             "id": "kCQgOdJM75fWwLm3",
             "name": "Kolor Oczu - Wysoki Elf",
-            "description": "",
+            "description": " ",
             "results": {
                 "15-17": "Bursztynowy",
                 "4-4": "Akwamaryna",
@@ -1044,7 +1044,7 @@
             "initialization_folder": "Zasady domowe Moo",
             "id": "kuRQ1DeNp2Ar87Ns",
             "name": "Tabela Większych Manifestacji (Moo)",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-5": "<p><strong>Widmowe głosy</strong>: Demoniczne, mroczne, uwodzicielskie głosy szepczą w promieniu Siła Woli metrów; każdy, kto je usłyszy, musi zdać <strong>Wymagający (+0) test Opanowania</strong> lub otrzymuje 1 punkt Zepsucia.</p>",
                 "6-10": "<p><strong>Odrętwienie umysłu</strong>: Niekontrolowana magia częściowo wypala twoją zdolność rzucania zaklęć. Twoje umiejętności Jezyk Magiczny i Splatanie Magii są zmniejszone o połowę przez następne 24 godziny.</p>",
@@ -1072,7 +1072,7 @@
             "initialization_folder": "Przybornik Mistrza Gry",
             "id": "led1vSPKcqMpS6jp",
             "name": "Wróżba Losu",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-1": "Słowo wiedźmy przepisem twej zguby.",
                 "2-2": "Ciepłym napitkiem będzie krew bijąca z rany.",
@@ -1180,7 +1180,7 @@
             "initialization_folder": "Przybornik Mistrza Gry",
             "id": "LOdKYRft8fSbYJPP",
             "name": "Ambicja postaci",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-4": "Uniknięcie zobowiązania",
                 "5-8": "Zostać uwiecznionym",
@@ -1213,7 +1213,7 @@
             "initialization_folder": "Podręcznik Główny",
             "id": "MWkeER1iuwAJASNo",
             "name": "Pech!",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-20": "Podczas swojego ataku postać uderza w jakąś część własnego ciała (może z tego wyniknąć mnóstwo śmiechu!) - otrzymuje 1 Ranę, ignorując Bonus z Wytrzymałości i Punkty Pancerza.",
                 "21-40": "Słychać straszny zgrzyt. Broń szczerbi się, nadłamuje albo zacina i otrzymuje 1 Punkt Uszkodzeń. W następnej Rundzie, niezależnie od Inicjatywy, Talentów i innych specjalnych zasad, postać wykonuje swoją Turę ostatnia, ponieważ musi dojść do siebie.",
@@ -1228,7 +1228,7 @@
             "initialization_folder": "Profesje",
             "id": "OT9tBLUxvNWc62i1",
             "name": "Losowe Profesje - Krasnolud",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-1": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.86gkaanqt19xYCRa]{Aptekarka}",
                 "2-4": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.hVKMI3xwuUpO3P6c]{Inżynier}",
@@ -1283,7 +1283,7 @@
             "initialization_folder": "Tworzenie Bohatera",
             "id": "ovsFYzUj4bUbVlLJ",
             "name": "Kolor Oczu - Leśny Elf",
-            "description": "",
+            "description": " ",
             "results": {
                 "8-14": "Kasztanowy",
                 "15-17": "Ciemnobrązowy",
@@ -1299,7 +1299,7 @@
             "initialization_folder": "Przybornik Mistrza Gry",
             "id": "pzE8UgW7ExP0Tfhm",
             "name": "Dziwactwo postaci",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-4": "Późny rozkwit talentu magicznego",
                 "5-8": "Uzależniony od nielegalnych substancji lub działań",
@@ -1332,7 +1332,7 @@
             "initialization_folder": "Tworzenie Bohatera",
             "id": "rLqbkZtr3az6EFiz",
             "name": "Kolor Włosów - Wysoki Elf",
-            "description": "",
+            "description": " ",
             "results": {
                 "18-18": "Kasztanowy",
                 "20-20": "Czarny",
@@ -1350,7 +1350,7 @@
             "initialization_folder": "Profesje",
             "id": "RQ0G7UVPeXR3jp2J",
             "name": "Losowe Profesje - Niziołek",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-1": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.86gkaanqt19xYCRa]{Aptekarka}",
                 "2-2": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.hVKMI3xwuUpO3P6c]{Inżynier}",
@@ -1406,7 +1406,7 @@
             "initialization_folder": "Zepsucie i Mutacje",
             "id": "RzL4vZhqGBT8vzvM",
             "name": "Rozkład Ciała i Umysłu - Wysoki Elf",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-100": "<b>Umysł</b>: @Table[mutatemental]"
             }
@@ -1415,7 +1415,7 @@
             "initialization_folder": "Zasady domowe Moo",
             "id": "SdruU0zkacpwCMJn",
             "name": "Tabela Katastrofalnych Manifestacji (Moo)",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-10": "<b>Burza Eteru</b>: Każdy w zasięgu Bonusu Siły Woli jardów otrzymuje [[1d10]] ran ignorujących Bonus Wytrzymałości i Pancerz oraz dodatkowo upada @Condition[Powalenie]. Jeśli nie ma innych celów w zasięgu, magia nie ma gdzie się ulotnić i twoja głowa eksploduje rozrzucając krwawe kawałki na [[1d10]] jardów.",
                 "11-20": "<b>Atak Eteru</b>: Otrzymujesz rane krytyczna w losowe miejsce @Table[hitloc] z bonusem +[[1d10*5]]% do wyniku rzutu - niekontrolowana magia uderza cię z niszczycielską siłą.",
@@ -1435,7 +1435,7 @@
             "initialization_folder": "Profesje",
             "id": "sHYQ3gGxjpOJNxId",
             "name": "Losowe Profesje - Leśny Elf",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-1": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.CmiCNv8YlslFqRqy]{Uczony}",
                 "6-10": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.GWrZq3xoRSsDnQe0]{Rzemieślniczka}",
@@ -1465,7 +1465,7 @@
             "initialization_folder": "Zepsucie i Mutacje",
             "id": "tv5GR764IfuVfGtE",
             "name": "Rozkład Ciała i Umysłu - Człowiek",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-50": "<b>Ciało</b>: @Table[mutatephys]",
                 "51-100": "<b>Umysł</b>: @Table[mutatemental]"
@@ -1475,7 +1475,7 @@
             "initialization_folder": "Podręcznik Główny",
             "id": "uRl0oCMXjTkv0ptj",
             "name": "Wróżba Losu - 2",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-1": "Koniec twój lepkim będzie.",
                 "2-2": "Solanka trucizną dla języka twego się stanie.",
@@ -1583,7 +1583,7 @@
             "initialization_folder": "Tworzenie Bohatera",
             "id": "usXLpt05tZg7PhVL",
             "name": "Kolor Oczu - Krasnolud",
-            "description": "",
+            "description": " ",
             "results": {
                 "5-7": "Niebieski",
                 "2-2": "Czarny jak węgiel",
@@ -1601,7 +1601,7 @@
             "initialization_folder": "Podręcznik Główny",
             "id": "VWxRayAV77touQMT",
             "name": "Tabela Podróży",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-1": "<b>Spokojna podróż</b>: Podróż szczęśliwie mija bezwypadkowo. Bohaterowie dobrze wypoczywają, sceneria jest wyjątkowo inspirująca. Być może spotkali bohatera niezależnego – uzdrowiciela albo pomocnego kapłana. Bohaterowie mogą wyleczyć wszystkie Rany i tracą wszystkie Stany @Condition[Zmęczenie].",
                 "2-2": "<b>Atak!</b>: Postacie zostają zaatakowane podczas swojej podróży. Może to być pechowe spotkanie związane z obszarem, przez który podróżują (na przykład zwierzoludzie w głębokim lesie) lub coś zaplanowanego przez ich przeciwników (wynajętych zbirów aby zatrzymać postacie w dotarciu do celu). Jeśli nie zdadzą testu <b>przeciętnej (+20) percepcji</b>, mogą nawet wpaść w zasadzkę!",
@@ -1619,7 +1619,7 @@
             "initialization_folder": "Podręcznik Główny",
             "id": "w1hLPRX2e30ZnXKq",
             "name": "Niepowodzenie podróży",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-2": "<b>Zerwana uprząż</b>: Jeden koń (lub odpowiednik) uwalnia się; odpowiednio zmniejszając prędkość podróży.",
                 "3-5": "<b>Wstrząsy w transporcie</b>: Pasażerowie otrzymują 1 punkt obrażeń, a delikatny ładunek może zostać uszkodzony.",
@@ -1631,7 +1631,7 @@
             "initialization_folder": "Tworzenie Bohatera",
             "id": "W7CkVHr34dSi7QeH",
             "name": "Kolor Oczu - Niziołek",
-            "description": "",
+            "description": " ",
             "results": {
                 "3-3": "Szary",
                 "5-7": "Niebieski",
@@ -1648,7 +1648,7 @@
             "initialization_folder": "Profesje",
             "id": "wDt3rHbbBVUfX6nw",
             "name": "Losowe Profesje - Wysoki Elf",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-2": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.86gkaanqt19xYCRa]{Aptekarka}",
                 "3-6": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.uIKbkjQpNUCGIQRv]{Prawniczka}",
@@ -1691,7 +1691,7 @@
             "initialization_folder": "Podręcznik Główny",
             "id": "we8Vo5GC3ZsDI7aA",
             "name": "Tabela Większych Manifestacji",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-5": "<p><strong>Upiorne głosy</strong>: Każdy w promieniu tylu metrów, ile wynosi Siła Woli postaci, słyszy mroczne, nęcące szepty, które są emanacją Dziedziny Chaosu. Wszystkie myślące stworzenia muszą zdać <strong>Przeciętny (+20) Test Opanowania</strong> albo otrzymują 1 Punkt Zepsucia.</p>",
                 "6-10": "<p><strong>Przeklęty wzrok</strong>: Oczy postaci nabierają nienaturalnego koloru, odpowiedniego dla Tradycji zaklęcia, na [[1d10]] godzin. W tym czasie postać cierpi z powodu 1 poziomu @Condition[Oślepienie], co nie może zostać wyleczone ani rozproszone żadnym sposobem.</p>",
@@ -1703,7 +1703,7 @@
                 "36-40": "<p><strong>Rój</strong>: Postać zostaje zaatakowana przez chmarę eterycznych szczurów, gigantycznych pająków, węży lub innych podobnych stworzeń (decyduje MG). Użyj standardowych charakterystyk, odpowiednich dla danego gatunku stworzenia, dodając Cechę Stworzenia Rój. Po [[1d10]] Rundach, jeśli nie zostały zniszczone wcześniej, stwory znikają.</p>",
                 "41-45": "<p><strong>Szmaciana lalka</strong>: Postać zostaje wyrzucona w powietrze i leci [[1d10]] metrów w losowym kierunku. Otrzymuje [[1d10]] Obrażeń ignorujących Punkty Pancerza, zostaje również @Condition[Powalona].</p>",
                 "46-50": "<p><strong>Zmrożone kończyny</strong>: Jedna kończyna (losowa) zostaje zamrożona na [[1d10]] godzin. Przez ten czas jest zupełnie bezużyteczna, jakby została @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#amputated-parts]{Amputowana}.</p>",
-                "51-55": "<p><strong>Mroczna ślepota</strong>: Na [[1d10]] godzin postać traci swój Talent Percepcja Magiczna. Wszelkie Testy Splatania Magii otrzymują karę -20.</p>",
+                "51-55": "<p><strong>Mroczna ślepota</strong>: Na [[1d10]] godzin postać traci swój Talent @UUID[Compendium.wfrp4e-core.talentitems.OEjUvJKi0xmBwbS2]{Percepcja Magiczna}. Wszelkie Testy Splatania Magii otrzymują karę -20.</p>",
                 "56-60": "<p><strong>Chaotyczna dalekowzroczność</strong>: Otrzymujesz premiową pulę [[1d10]] Punktów Szczęścia (które mogą przekroczyć normalny limit). Za każdym razem, gdy postać korzysta z tych punktów, otrzymuje 1 Punkt Zepsucia. Wszelkie pozostałe Punkty Szczęścia zdobyte w ten sposób przepadają po zakończeniu sesji gry.</p>",
                 "61-65": "<p><strong>Lewitacja</strong>: Wiatry Magii porywają postać w powietrze. Na [[1d10]] minut unosi się [[1d10]] metrów nad ziemią. Inne postaci mogą ją przemieszczać siłą. Ponadto postać może poruszać się sama dzięki zaklęciom, skrzydłom i innym zabiegom, ale jeśli zostanie pozostawiona sama sobie, uniesie się z powrotem jak balonik. Niekontrolowana lewitacja kończy się @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.bdfiyhEYtKs7irqc#falling]{upadkiem}.</p>",
                 "66-70": "<p><strong>Wymioty</strong>: Postać wymiotuje, wyrzucając z siebie o wiele więcej odrażająco śmierdzących wymiocin, niż mogłoby pomieścić ciało. Postać otrzymuje 1 poziom @Condition[Oszołomienia], który utrzymuje się przez [[1d10]] Rund.</p>",
@@ -1719,7 +1719,7 @@
             "initialization_folder": "Zasady domowe Moo",
             "id": "xPenaTMFvD4BVEeK",
             "name": "Tabela Mniejszych Manifestacji (Moo)",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-5": "<b>Czarnoksięstwo</b>: Pojawia się mały znak Chaosu: mleko w pobliżu kwaśnieje, zwierzęta straszą, wieje zimny wietrzyk itp.",
                 "6-10": "<b>Oczy wiedźmy</b>: Twoje oczy przez [[1d10]] godzin są w kolorze twojej Tradycji Magicznej. Kiedy twoje oczy są zabarwione, otrzymujesz 1 stan @Condition[Oślepienia].",
@@ -1775,7 +1775,7 @@
             "initialization_folder": "Miejsca Trafień",
             "id": "YWzuhQN0d9orIm2h",
             "name": "Tabela Trafień - Wąż",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-19": "Głowa",
                 "20-100": "Korpus"
@@ -1785,7 +1785,7 @@
             "initialization_folder": "Podręcznik Główny",
             "id": "zPZbN8DOX2V1ZwWl",
             "name": "Wydarzenia",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-3": "<p><strong>Sprzymierzeniec przed sądem</strong>: Jeden z twoich sprzymierzeńców (wybór MG) został uwikłany w straszną zbrodnię. Bohater posiadający licencję Cechu Prawników może zużyć Zajęcie, aby spróbować uwolnić sprzymierzeńca po udanym <strong>Przeciętnym (+20) Teście Wiedzy (Prawo)</strong>. W innym przypadku do oczyszczenia sprzymierzeńca z zarzutów (albo, jeśli jest winny, do zapewnienia mu spreparowanego alibi) potrzebne będą 3 Zajęcia zużyte przez drużynę. Jeśli sprzymierzeniec został uwolniony, zyskujesz Dużą przysługę (patrz Zajęcie @UUID[JournalEntry.gLDW6JBuoYuzCoya.JournalEntryPage.MystHpnI1Ki0v4dl]{Wyświadcz mi przysługę!}) do wykorzystania w przyszłości. Jeśli tak się nie stało, sprzymierzeniec zawiśnie!</p>",
                 "4-6": "<p><strong>Tajemnicza aukcja</strong>: Licytowane jest mienie niedawno zmarłego sąsiada, włącznie z zakurzoną, starą książką nieznanego pochodzenia. Jeśli jesteś w stanie zapłacić cenę wywoławczą 10 ZK, książka jest twoja! Poza wszelkimi innymi korzyściami, które może zapewnić książka (określa je MG), każda postać będąca Uczonym, która podejmie Zajęcie @UUID[JournalEntry.gLDW6JBuoYuzCoya.JournalEntryPage.2fjLtw5evY7LnjS0]{Zgłębianie wiedzy}, dostaje +20 do Testu.</p>",
@@ -1824,7 +1824,7 @@
             "initialization_folder": "Miejsca Trafień",
             "id": "zRpXGjimt56taWH8",
             "name": "Miejsca Trafień",
-            "description": "",
+            "description": " ",
             "results": {
                 "1-9": "Głowa",
                 "10-24": "Lewe ramię",

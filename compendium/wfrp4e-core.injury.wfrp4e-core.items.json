@@ -19,7 +19,7 @@
                 "tZayAMRUW6AVaa12": {
                     "id": "tZayAMRUW6AVaa12",
                     "name": "Złamana Noga",
-                    "description": "Relies on mobility"
+                    "description": "Testy związane z poruszaniem się"
                 },
                 "ZwCU28eoOKqibVfu": {
                     "id": "ZwCU28eoOKqibVfu",
@@ -39,7 +39,7 @@
                 "e5BPTZkHGMJuDX2p": {
                     "id": "e5BPTZkHGMJuDX2p",
                     "name": "Naderwany Mięsień Nogi",
-                    "description": "Tests involving leg with Torn Muscle"
+                    "description": "Test wymagające użycia nogi z naderwanym mięśniem"
                 },
                 "t1Anp3f9yR4IJqpR": {
                     "id": "t1Anp3f9yR4IJqpR",
@@ -78,7 +78,7 @@
                 "j9pWVPJtatDruv0Y": {
                     "id": "j9pWVPJtatDruv0Y",
                     "name": "Złamana Noga",
-                    "description": "Tests that rely on mobility"
+                    "description": "Testy związane z poruszaniem się"
                 }
             },
             "location": "Noga"
@@ -92,7 +92,7 @@
                 "Aans92KGaO90qXGV": {
                     "id": "Aans92KGaO90qXGV",
                     "name": "Naderwany Mięsień Tułowia",
-                    "description": "Involves the body"
+                    "description": "Testy związane z poruszaniem korpusem"
                 }
             },
             "penalty": "-10 do Testów związanych z użyciem korpusu",
@@ -112,7 +112,7 @@
                 "NjLgGWim2CMWdOL4": {
                     "id": "NjLgGWim2CMWdOL4",
                     "name": "Utracone Oboje Uszu",
-                    "description": "Hearing based Perception test"
+                    "description": "Testy Percepcji oparte na słuchu"
                 }
             },
             "location": "Ucho"
@@ -145,7 +145,7 @@
                 "VczyyG2FDfvOQflT": {
                     "id": "VczyyG2FDfvOQflT",
                     "name": "Naderwany Mięsień Tułowia",
-                    "description": "Involves the body"
+                    "description": "Testy związane z poruszaniem korpusem"
                 }
             },
             "penalty": "-20 do Testów związanych z użyciem korpusu",
@@ -167,7 +167,7 @@
                 "9rO0RdQJqsNwv9lv": {
                     "id": "9rO0RdQJqsNwv9lv",
                     "name": "Naderwany Mięsień Ręki",
-                    "description": "Using arm with Torn Muscle"
+                    "description": "Test wymagające użycia ręki z naderwanym mięśniem"
                 }
             },
             "penalty": "-10 do testów dotyczących danej ręki",
@@ -182,7 +182,7 @@
                 "QHpPBISp2DCIRZp7": {
                     "id": "QHpPBISp2DCIRZp7",
                     "name": "Amputacja Stopy",
-                    "description": "Relies on mobility"
+                    "description": "Testy wymagające poruszania się"
                 },
                 "vFwI36wK9QnfgLGG": {
                     "id": "vFwI36wK9QnfgLGG",
@@ -221,7 +221,7 @@
                 "wkJy3QCy8odqGvjm": {
                     "id": "wkJy3QCy8odqGvjm",
                     "name": "Amputacja Nogi",
-                    "description": "Relies on mobility"
+                    "description": "Testy związane z poruszaniem się"
                 }
             },
             "penalty": "-20 do testów związanych z ruchem, nie może unikać, połowa szybkości",
@@ -236,7 +236,7 @@
                 "qPV4jIDGN9onOAYV": {
                     "id": "qPV4jIDGN9onOAYV",
                     "name": "Amputacja Ramienia",
-                    "description": "Relies on two hands"
+                    "description": "Testy wymagające obu rąk"
                 }
             },
             "penalty": "-20 do Testów wiążący się z użyciem dwóch rąk",
@@ -271,7 +271,7 @@
                 "ErAJc8kPnAwubY1m": {
                     "id": "ErAJc8kPnAwubY1m",
                     "name": "Naderwany Mięsień Nogi",
-                    "description": "Involves leg with Torn Muscle"
+                    "description": "Test wymagające użycia nogi z naderwanym mięśniem"
                 }
             },
             "penalty": "-10 do testów dotyczących danej nogi",
@@ -305,7 +305,7 @@
                 "GUbysJIeA44LNOIq": {
                     "id": "GUbysJIeA44LNOIq",
                     "name": "Naderwany Mięsień Ręki",
-                    "description": "Using arm with Torn Muscle"
+                    "description": "Test wymagające użycia ręki z naderwanym mięśniem"
                 }
             },
             "penalty": "-20 do testów dotyczących danej ręki",
@@ -320,7 +320,7 @@
                 "q2drpcrYvUHjZBwg": {
                     "id": "q2drpcrYvUHjZBwg",
                     "name": "Naderwany Mięsień Szyi",
-                    "description": "Involves the head"
+                    "description": "Testy wymagające ruszaniem głową"
                 }
             },
             "penalty": "-20 do testów wymagających ruchu głowy",
@@ -358,7 +358,7 @@
                 "OTeQYlJcacd8ID4i": {
                     "id": "OTeQYlJcacd8ID4i",
                     "name": "Amputacja Nosa",
-                    "description": "Involving Smell"
+                    "description": "Testy wymagające węchu"
                 }
             },
             "penalty": "-20 do Ogłady, -30 do Testów wymagających węchu",
@@ -373,7 +373,7 @@
                 "DaOXNCrHEMsOleGx": {
                     "id": "DaOXNCrHEMsOleGx",
                     "name": "Utracony Palec",
-                    "description": "Lost Fingers"
+                    "description": "Utracony Palec"
                 }
             },
             "penalty": "-5 do testów wymagających danej ręki",
@@ -388,7 +388,7 @@
                 "y2XL7QrWlGI6aloz": {
                     "id": "y2XL7QrWlGI6aloz",
                     "name": "Naderwany Mięsień Szyi",
-                    "description": "Involves the head"
+                    "description": "Testy wymagające ruszaniem głową"
                 }
             },
             "location": "Głowa"
@@ -435,7 +435,7 @@
                 "rTIWkLVhHcMduvPJ": {
                     "id": "rTIWkLVhHcMduvPJ",
                     "name": "Amputacja Dłoni",
-                    "description": "Relies on two hands"
+                    "description": "Testy wymagające obu rąk"
                 }
             },
             "penalty": "-20 do Testów wiążący się z użyciem dwóch rąk",

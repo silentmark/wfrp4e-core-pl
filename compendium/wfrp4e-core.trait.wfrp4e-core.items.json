@@ -191,7 +191,7 @@
                 "pV0NvELZXtpJJTfi": {
                     "id": "pV0NvELZXtpJJTfi",
                     "name": "Sieć",
-                    "script": "args.actor.addCondition(\"entangled\");"
+                    "script": "args.actor.addCondition(\"entangled\")"
                 }
             },
             "specification": "#"
@@ -218,7 +218,7 @@
                 "ftGagmf8rj6rq3ir": {
                     "id": "ftGagmf8rj6rq3ir",
                     "name": "Tropiciel",
-                    "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\"))) {\n   let sl = this.actor.characteristics.i.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
+                    "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\")))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
                 }
             }
         },
@@ -237,12 +237,12 @@
                 "FLoUbmMqNQMuJfZx": {
                     "id": "FLoUbmMqNQMuJfZx",
                     "name": "Bonusy Roju",
-                    "script": "args.wounds *= 5;"
+                    "script": "args.wounds *= 5"
                 },
                 "tEaxMHcTWod19AVP": {
                     "id": "tEaxMHcTWod19AVP",
                     "name": "Rój",
-                    "script": "if (args.type == \"weapon\" && args.item.attackType == \"ranged\") {\n   args.prefillModifiers.modifier += 40;\n}"
+                    "script": "if (args.type == \"weapon\" && args.item.attackType == \"ranged\")\n   args.prefillModifiers.modifier += 40"
                 }
             }
         },
@@ -280,7 +280,7 @@
                 "cwsT8KWhr0OgtWc1": {
                     "id": "cwsT8KWhr0OgtWc1",
                     "name": "Jad",
-                    "script": "if (args.totalWoundLoss > 0) {\n    args.actor.addCondition(\"poisoned\");\n}"
+                    "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
                 }
             },
             "specification": "Trudność"
@@ -301,7 +301,7 @@
                 "yrUvulIfrQfAJmkB": {
                     "id": "yrUvulIfrQfAJmkB",
                     "name": "Twardziel",
-                    "script": "args.multiplier.tb += 1;"
+                    "script": "args.multiplier.tb += 1"
                 }
             }
         },
@@ -326,7 +326,7 @@
                 "1XRT8BzRtNWArfau": {
                     "id": "1XRT8BzRtNWArfau",
                     "name": "Skoczny",
-                    "script": "this.actor.details.move.run *= 2;"
+                    "script": "this.actor.details.move.run *= 2"
                 }
             }
         },
@@ -383,7 +383,7 @@
                 "xTL3QAampKjHdKVh": {
                     "id": "xTL3QAampKjHdKVh",
                     "name": "Groza",
-                    "script": "let value = parseInt(this.item.specification.value);\nlet name = this.actor.prototypeToken.name;\nif (game.user.isGM && game.user.targets.size) {\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name);\n  })\n  game.user.updateTokenTargets([]);\n  game.user.broadcastActivity({targets: []})\n}\nelse {\n  game.wfrp4e.utility.postTerror(value, name);\n}"
+                    "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name)\n  })\n  game.user.updateTokenTargets([]);\n  game.user.broadcastActivity({targets: []})\n}\nelse \n{\n  game.wfrp4e.utility.postTerror(value, name)\n}"
                 }
             },
             "specification": "Wartość"
@@ -397,7 +397,7 @@
                 "txcmOLjyNoW2BLSu": {
                     "id": "txcmOLjyNoW2BLSu",
                     "name": "Dusiciel",
-                    "script": "args.actor.addCondition(\"entangled\");"
+                    "script": "args.actor.addCondition(\"entangled\")"
                 }
             }
         },
@@ -416,7 +416,7 @@
                 "mzNcVAruDOTiCGhS": {
                     "id": "mzNcVAruDOTiCGhS",
                     "name": "Kwasowa Krew",
-                    "script": "let content = `<b>${this.effect.name}</b>: Wszystkie cele związane walką z aktorem: <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń, uwzględniając modyfikatory z Wytrzymałości i Pancerza.`;\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}});"
+                    "script": "let content = `<b>${this.effect.name}</b>: Wszystkie cele związane walką z aktorem: <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń, uwzględniając modyfikatory z Wytrzymałości i Pancerza.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
                 }
             }
         },
@@ -448,7 +448,7 @@
                 "et9TgrjWHZYQI7OJ": {
                     "id": "et9TgrjWHZYQI7OJ",
                     "name": "Dekoncentrujący",
-                    "script": "args.prefillModifiers.modifier -= 20;"
+                    "script": "args.prefillModifiers.modifier -= 20"
                 }
             }
         },
@@ -473,7 +473,7 @@
                 "0AgiLabg8eB4LItu": {
                     "id": "0AgiLabg8eB4LItu",
                     "name": "Skryty",
-                    "script": "if (args.item?.id == this.item.id || (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))))\n{\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
+                    "script": "if (args.item?.id == this.item.id || (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
                 }
             }
         },
@@ -533,7 +533,7 @@
                 "HipPSD61s7Vkcru0": {
                     "id": "HipPSD61s7Vkcru0",
                     "name": "Mieszkaniec Lasu",
-                    "script": "if (args.type == \"skill\" && (args.item.name == game.i18n.localize(\"NAME.Climb\")  || args.item.name.includes(game.i18n.localize(\"NAME.Stealth\")))) {\n   let sl = this.actor.characteristics.ag.bonus;\n   args.prefillModifiers.slBonus += sl;\n}"
+                    "script": "if (args.type == \"skill\" && (args.item.name == game.i18n.localize(\"NAME.Climb\")  || args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
                 }
             }
         },
@@ -559,7 +559,7 @@
                 "KZWyDUhYS7K60RF0": {
                     "id": "KZWyDUhYS7K60RF0",
                     "name": "Ziemnowodny",
-                    "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Swim\")) {\n    args.prefillModifiers.slBonus += this.actor.characteristics.ag.bonus;\n}"
+                    "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Swim\"))\n    args.prefillModifiers.slBonus += this.actor.characteristics.ag.bonus"
                 }
             }
         },
@@ -572,7 +572,7 @@
                 "gjbJu5OWDKFJvvyY": {
                     "id": "gjbJu5OWDKFJvvyY",
                     "name": "Zakażony",
-                    "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\") {\n   args.prefillModifiers.modifier -= 10;\n}"
+                    "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10"
                 }
             }
         },
@@ -591,7 +591,7 @@
                 "mkDK0Yqvb4JqL1zq": {
                     "id": "mkDK0Yqvb4JqL1zq",
                     "name": "Konstrukt",
-                    "script": "args.wpb = args.sb;"
+                    "script": "args.wpb = args.sb"
                 }
             }
         },
@@ -617,14 +617,14 @@
                 "3KXZhIkHukLOpg2l": {
                     "id": "3KXZhIkHukLOpg2l",
                     "name": "Atak Ogonem",
-                    "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value];\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value];\nif (attackerSize > actorSize) {\n   args.actor.addCondition(\"prone\");\n   ChatMessage.create({content: `<b>Atak Ogonem</b>: ${args.actor.prototypeToken.name} otrzymuje Stan @Condition[Powalenie]`, speaker : {alias: args.attacker.prototypeToken.name}});\n}"
+                    "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value]\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value]\nif (attackerSize > actorSize) {\n   args.actor.addCondition(\"prone\")\n   ChatMessage.create({content: `<b>Atak Ogonem</b>: ${args.actor.prototypeToken.name} otrzymuje Stan @Condition[Powalenie]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
                 }
             },
             "specification": "Obrażenia"
         },
         "uqGxFOEqeurwkAO3": {
             "id": "uqGxFOEqeurwkAO3",
-            "name": "Zionięcie ()",
+            "name": "Zionięcie",
             "description": "<p>Stworzenie posługuje się zionięciem jako potężną bronią. W swojej Turze, kosztem 2 Przewag, może aktywować <i>Zionięcie</i> jako Darmowy Atak. Wybierz 1 cel, który stworzenie widzi w promieniu 20 + Bonus z Wytrzymałości metrów. Trafione zostają wszystkie postacie wokół tego celu w promieniu tylu metrów, ile wynosi Bonus z Siły, podobnie jak wszystkie postacie znajdujące się między stworzeniem a celem. Przeprowadź <b>Test Przeciwstawny Umiejętności Strzeleckie/Unik</b> przeciwko wszystkim objętym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Każdy cel, który przegrał Test, otrzymuje trafienie zadające wskazaną wartość Obrażeń. Co więcej, jeśli przy Cesze Stworzenia wymieniony jest jeden z opisanych niżej typów zionięcia, zastosuj wskazane zasady.</p><p><b>Dym</b>: Obszar wypełnia się dymem, który zasłania pole widzenia na tyle Rund, ile wynosi Bonus z Wytrzymałości.</p><p><b>Elektryczność</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan @Condition[Oszołomienie].</p><p><b>Kwas</b>: Noszony przez objęte efektem postaci pancerze oraz wszelka broń dostają 1 punkt Uszkodzeń.</p><p><b>Ogień</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan @Condition[Podpalenie].</p><p><b>Trucizna</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan @Condition[Zatrucie].</p><p><b>Zimno</b>: Cele dostają jeden Stan @Condition[Oszołomienie]{Oszołomiony} za każde pełne 5 odniesionych Ran (minimalnie 1).</p><p>Stworzenie jest odporne na własne <i>Zionięcie</i>. Ten atak jest <i>Magiczny</i>.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.uqGxFOEqeurwkAO3",
             "specification": "# (Typ)"
@@ -644,7 +644,7 @@
                 "6rMAx2bGefOkubv8": {
                     "id": "6rMAx2bGefOkubv8",
                     "name": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
+                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
                 }
             }
         },
@@ -678,7 +678,7 @@
                 "CAcGBn8sq62mVUxJ": {
                     "id": "CAcGBn8sq62mVUxJ",
                     "name": "Pancerz",
-                    "script": "let AP = args.actor.status.armour;\nlet APdamage = this.item.getFlag('wfrp4e', 'APdamage') || {};\nlet value = parseInt(this.item.specification.value);\nif (Number.isNumeric(value)) {\n AP[\"head\"].value += (value - (APdamage.head || 0));\n AP[\"rArm\"].value += (value - (APdamage.rArm|| 0));\n AP[\"lArm\"].value += (value - (APdamage.lArm || 0));\n AP[\"body\"].value += (value - (APdamage.body || 0))\n AP[\"lLeg\"].value += (value - (APdamage.lLeg || 0));\n AP[\"rLeg\"].value += (value - (APdamage.rLeg || 0));\n}"
+                    "script": "let AP = args.actor.status.armour\nlet APdamage = this.item?.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item?.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}"
                 }
             },
             "specification": "#"
@@ -717,7 +717,7 @@
                 "kPgI28vmSamM3u1s": {
                     "id": "kPgI28vmSamM3u1s",
                     "name": "Atak Językiem (Zasięg)",
-                    "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value];\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value];\nif (attackerSize > actorSize) {\n   args.actor.addCondition(\"entangled\");\n   ChatMessage.create({content: `<b>Atak Językiem</b>: ${args.actor.prototypeToken.name} otrzymuje Stan @Condition[Pochwycenie]`, speaker : {alias: args.attacker.prototypeToken.name}});\n}"
+                    "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value]\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value]\n\nif (attackerSize > actorSize)\n{\n   args.actor.addCondition(\"entangled\")\n   ChatMessage.create({content: `<b>Atak Językiem</b>: ${args.actor.prototypeToken.name} otrzymuje Stan @Condition[Pochwycenie]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
                 }
             },
             "specification": "Wartość"
@@ -744,7 +744,7 @@
                 "jTfCjCCrfFHKqXhz": {
                     "id": "jTfCjCCrfFHKqXhz",
                     "name": "Szał Bojowy",
-                    "script": "args.actor.characteristics.s.bonus += 1;\nargs.actor.characteristics.s.calculationBonusModifier -= 1;"
+                    "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
                 }
             }
         },
@@ -757,7 +757,7 @@
                 "PWNOSwxsePCN7sKH": {
                     "id": "PWNOSwxsePCN7sKH",
                     "name": "Odporność na Magię",
-                    "script": "if (args.type == \"cast\") {\n       args.prefillModifiers.slBonus -= (Number(this.item.specification.value) || 0);\n}"
+                    "script": "if (args.type == \"cast\")\n       args.prefillModifiers.slBonus -= (Number(this.item.specification.value) || 0)"
                 }
             }
         },

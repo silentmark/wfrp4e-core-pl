@@ -648,7 +648,7 @@
                 "FbFPvypAtB428U0r": {
                     "id": "FbFPvypAtB428U0r",
                     "name": "Oplątanie",
-                    "script": "let num = 1 + {{overcast.usage.other.count}};\nif (!num || num <= 0); {\n   num = 1;\n}\nargs.actor.addCondition(\"entangled\", num);"
+                    "script": "let num = 1 + {{overcast.usage.other.count}};\nif (!num || num <= 0) {\n   num = 1;\n}\nargs.actor.addCondition(\"entangled\", num);"
                 }
             },
             "duration": "Natychmiast",
@@ -673,7 +673,7 @@
                 "1TWDvZQnuHAsfxxd": {
                     "id": "1TWDvZQnuHAsfxxd",
                     "name": "Kły i Pazury",
-                    "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.pLW9SVX0TVTYPiPv\");\nitem = item.toObject();\nitem.system.specification.value = 3;\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);\nitem = await fromUuid(\"Compendium.wfrp4e-core.items.AtpAudHA4ybXVlWM\");\nitem = item.toObject();\nitem.system.specification.value = 4;\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);"
+                    "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.pLW9SVX0TVTYPiPv\");\nitem = item.toObject();\nitem.system.specification.value = 3;\nthis.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect : this.effect.id});\nitem = await fromUuid(\"Compendium.wfrp4e-core.items.AtpAudHA4ybXVlWM\");\nitem = item.toObject();\nitem.system.specification.value = 4;\nthis.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect : this.effect.id});"
                 }
             },
             "duration": "Bonus Ogd Rund",
