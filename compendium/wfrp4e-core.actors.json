@@ -66,6 +66,27 @@
                 },
                 "G8NP3zcUJ8upkFBc": {
                     "specification": "5"
+                },
+                "Erkv66fXbih0f8lT": {
+                    "id": "MVI0lXcg6vvtooAF",
+                    "name": "Dekoncentrujący",
+                    "originalName": "Distracting",
+                    "sourceId": "Compendium.wfrp4e-core.items.MVI0lXcg6vvtooAF",
+                    "effects": {
+                        "et9TgrjWHZYQI7OJ": {
+                            "name": "Dekoncentrujący",
+                            "script": "args.prefillModifiers.modifier -= 20",
+                            "id": "et9TgrjWHZYQI7OJ"
+                        }
+                    },
+                    "description": "<p>Stworzenie rozprasza lub dezorientuje wrogów, być może wydzielając usypiający zapach lub powalający smród, a może ze względu na przerażająco dziwaczny wygląd. Wszystkie żywe cele w promieniu tylu metrów, ile wynosi jego Bonus z Wytrzymałości, dostają karę -20 do wszystkich Testów. Cel może dostać tę karę tylko raz - bez względu na to, jak wielu jest dekoncentrujących wrogów.</p>"
+                },
+                "PPnSxZCLQGkunhgs": {
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "name": "Widzenie w Ciemności",
+                    "originalName": "Night Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
                 }
             }
         },
@@ -114,6 +135,20 @@
                     "originalName": "Strzelanie (50)",
                     "sourceId": "Compendium.wfrp4e-core.items.Z1TGphWhic2E3Lfx",
                     "specification": "8"
+                },
+                "HbrwGhUl0ZXz4kLA": {
+                    "originalName": "Hardy",
+                    "sourceId": "Compendium.wfrp4e-core.items.HbrwGhUl0ZXz4kLA",
+                    "effects": {
+                        "yrUvulIfrQfAJmkB": {
+                            "id": "yrUvulIfrQfAJmkB",
+                            "name": "Twardziel",
+                            "script": "args.multiplier.tb += 1"
+                        }
+                    },
+                    "id": "HbrwGhUl0ZXz4kLA",
+                    "name": "Twardziel",
+                    "description": "<p>The creature can sustain more damage than most. Increase its Wounds by a number equal to its Toughness Bonus (applied before any Size modifers).</p>"
                 }
             }
         },
@@ -198,6 +233,41 @@
                     "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Skradanie}</p>",
                     "originalName": "Skradanie",
                     "sourceId": "Compendium.wfrp4e-core.items.McTtmZu3Ac8Lh48W"
+                },
+                "Ha9oYELxF5siRpWB": {
+                    "name": "Widzenie w Ciemności",
+                    "originalName": "Night Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
+                    "id": "FmHDbCOy3pH8yKhm"
+                },
+                "ErSbq6fLveOdzSWw": {
+                    "id": "yrkI7ATjqLPDTFmZ",
+                    "name": "Odporność na Magię",
+                    "description": "<p>Efekt wywierany przez magię na stworzenie jest ograniczony. PS dowolnego wpływającego na stworzenie czaru zmniejszany jest o podaną wartość. Zatem <i>Odporność na Magię 2</i> zmniejsza PS o 2.</p>",
+                    "originalName": "Magic Resistance",
+                    "effects": {
+                        "PWNOSwxsePCN7sKH": {
+                            "id": "PWNOSwxsePCN7sKH",
+                            "name": "Odporność na Magię",
+                            "script": "if (args.type == \"cast\")\n       args.prefillModifiers.slBonus -= (Number(this.item.specification.value) || 0)"
+                        }
+                    },
+                    "sourceId": "Compendium.wfrp4e-core.items.yrkI7ATjqLPDTFmZ"
+                },
+                "PJL8VIepHyRkwazR": {
+                    "id": "ClOlztW6hH8rslbp",
+                     "name": "Tropiciel",
+                    "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
+                    "originalName": "Tracker",
+                    "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp",
+                    "effects": {
+                        "ftGagmf8rj6rq3ir": {
+                            "id": "ftGagmf8rj6rq3ir",
+                             "name": "Tropiciel",
+                            "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\")))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+                        }
+                    }
                 }
             }
         },
@@ -229,6 +299,13 @@
                 },
                 "WzKrgNhc73jwRAUS": {
                     "specification": "Wymagający"
+                },
+                "H1IIwUfwFijJNbSx": {
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "name": "Widzenie w Ciemności",
+                    "originalName": "Night Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
                 }
             }
         },
@@ -295,6 +372,27 @@
                     "originalName": "Horns (Kły)",
                     "sourceId": "Compendium.wfrp4e-core.items.BqPZn6q3VHn9HUrW",
                     "specification": "3"
+                },
+                "7kdJ5EGRI0Ptn7wd": {
+                    "id": "yRhhOlt18COq4e1q",
+                    "name": "Szał Bojowy",
+                    "originalName": "Frenzy",
+                    "sourceId": "Compendium.wfrp4e-core.items.yRhhOlt18COq4e1q",
+                    "effects": {
+                        "jTfCjCCrfFHKqXhz": {
+                            "id": "jTfCjCCrfFHKqXhz",
+                            "name": "Szał Bojowy",
+                            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
+                        }
+                    },
+                    "description": "<p>Stworzenie może wpadać w <i>Szał Bojowy</i>. Podczas Szału Bojowego jest odporne na zasady Psychologii, nie wycofa się z żadnego powodu, musi zawsze poruszać się z pełną prędkością w stronę najbliższego widzianego przeciwnika, by go zaatakować. Jedynymi Akcjami, jakie można wtedy wykonać, są Testy Broni Białej w zwarciu albo Atletyki, by szybciej dobiec do przeciwnika. Poza tym w każdej Rundzie postać otrzymuje Akcję Darmową w postaci dodatkowego ataku wręcz, ponieważ naprawdę daje z siebie wszystko. A jakby tego było mało, zaciekłość i brutalność skutkuje podniesieniem Bonusu z Siły o +1. Postać pozostaje w Szale Bojowym, dopóki wszyscy wrogowie w polu widzenia nie zostaną unieszkodliwieni albo dopóki postać nie otrzyma przynajmniej 1 poziomu Oszołomienia lub nie nastąpi Utrata Przytomności. Po zakończeniu Szału Bojowego postać natychmiast otrzymuje 1 poziom Zmęczenia.</p>"
+                },
+                "6CWV4mZdmEZA8KTQ": {
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "name": "Widzenie w Ciemności",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
+                    "originalName": "Night Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm"
                 }
             }
         },
@@ -419,6 +517,55 @@
                 },
                 "kTCUCyy5eRbdAUrO": {
                     "specification": "Duży"
+                },
+                "YbDMejQNiJnQInpR": {
+                    "id": "SfUUdOGjdYpr3KSR",
+                    "name": "Regeneracja",
+                    "originalName": "Regenerate",
+                    "sourceId": "Compendium.wfrp4e-core.items.SfUUdOGjdYpr3KSR",
+                    "effects": {
+                        "0CEu4kmUhYSxWGJZ": {
+                            "id": "0CEu4kmUhYSxWGJZ",
+                            "name": "Regeneracja",
+                            "script": "let chatData = {content: \"\", speaker : {alias : this.effect.label}, whisper: ChatMessage.getWhisperRecipients(\"GM\")}\n\nlet wounds = duplicate(this.actor.status.wounds)\nlet regen = (await new Roll(\"1d10\").roll({async: true})).total\n\nif (wounds.value >= wounds.max)\n   return\n\nif (wounds.value > 0)\n{\n   wounds.value += regen\n   if (wounds.value > wounds.max) \n        wounds.value = wounds.max\n   chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`\n   \n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse if (regen >= 8)\n{\n    chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n    wounds.value += 1\n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse\n{\n    chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n}\n\nthis.actor.update({\"system.status.wounds\" : wounds})\nChatMessage.create(chatData)"
+                        }
+                    },
+                    "description": "<p>Stworzenie leczy się w niezwykłym tempie. Nawet jego odcięte części ciała mogą odrastać. Na początku każdej Rundy, o ile pozostało mu ponad 0 Żywotności, stworzenie automatycznie regeneruje 1k10 punktów Żywotności. Jeśli pozostało mu 0 Żywotności, regeneruje jedną Ranę po wyrzuceniu 8+ na 1k10. Jeśli kiedykolwiek podczas regeneracji wyrzuci 10, może w pełni zregenerować także Ranę Krytyczną, anulując w ten sposób wszelkie powiązane z nią kary i Stany. Poza tym wszelkie Rany Krytyczne lub Rany spowodowane przez ogień nie mogą być regenerowane i powinny być zapisywane oddzielnie.</p>"
+                },
+                "onATYjyFvqAOIFDt": {
+                    "id": "yRhhOlt18COq4e1q",
+                    "name": "Szał Bojowy",
+                    "description": "<p>Stworzenie może wpadać w <i>Szał Bojowy</i>. Podczas Szału Bojowego jest odporne na zasady Psychologii, nie wycofa się z żadnego powodu, musi zawsze poruszać się z pełną prędkością w stronę najbliższego widzianego przeciwnika, by go zaatakować. Jedynymi Akcjami, jakie można wtedy wykonać, są Testy Broni Białej w zwarciu albo Atletyki, by szybciej dobiec do przeciwnika. Poza tym w każdej Rundzie postać otrzymuje Akcję Darmową w postaci dodatkowego ataku wręcz, ponieważ naprawdę daje z siebie wszystko. A jakby tego było mało, zaciekłość i brutalność skutkuje podniesieniem Bonusu z Siły o +1. Postać pozostaje w Szale Bojowym, dopóki wszyscy wrogowie w polu widzenia nie zostaną unieszkodliwieni albo dopóki postać nie otrzyma przynajmniej 1 poziomu Oszołomienia lub nie nastąpi Utrata Przytomności. Po zakończeniu Szału Bojowego postać natychmiast otrzymuje 1 poziom Zmęczenia.</p>",
+                    "originalName": "Frenzy",
+                    "sourceId": "Compendium.wfrp4e-core.items.yRhhOlt18COq4e1q",
+                    "effects": {
+                        "jTfCjCCrfFHKqXhz": {
+                            "id": "jTfCjCCrfFHKqXhz",
+                            "name": "Szał Bojowy",
+                            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
+                        }
+                    }
+                },
+                "wjsNJ53vxrRdiatn": {
+                    "id": "yrkI7ATjqLPDTFmZ",
+                    "name": "Odporność na Magię",
+                    "originalName": "Magic Resistance",
+                    "sourceId": "Compendium.wfrp4e-core.items.yrkI7ATjqLPDTFmZ",
+                    "effects": {
+                        "PWNOSwxsePCN7sKH": {
+                            "id": "PWNOSwxsePCN7sKH",
+                            "name": "Odporność na Magię",
+                            "script": "if (args.type == \"cast\")\n       args.prefillModifiers.slBonus -= (Number(this.item.specification.value) || 0)"
+                        }
+                    },
+                    "description": "<p>Efekt wywierany przez magię na stworzenie jest ograniczony. PS dowolnego wpływającego na stworzenie czaru zmniejszany jest o podaną wartość. Zatem <i>Odporność na Magię 2</i> zmniejsza PS o 2.</p>"
+                },
+                "K7d7L2AAjm7RryqI": {
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "name": "Widzenie w Ciemności",
+                    "originalName": "Night Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
                 }
             }
         },
@@ -447,7 +594,12 @@
                     "specification": "4"
                 },
                 "zSSROwPpQKFuoM0d": {
-                    "specification": "80"
+                    "specification": "80",
+                    "id": "EO05HX7jql0g605A",
+                    "name": "Latanie",
+                    "originalName": "Flight",
+                    "sourceId": "Compendium.wfrp4e-core.items.EO05HX7jql0g605A",
+                    "description": "<p>Gdy stworzenie wykonuje Ruch, może przelecieć tyle metrów, ile wynosi podana wartość. Lecąc, ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydować, czy wyląduje, czy będzie kontynuować lot. Może w ramach tego ruchu wykonać Szarżę. Jeśli na początku swojej Tury leci, musi wybrać jako Ruch Latanie. Jeśli nie jest w stanie tego zrobić, MG decyduje, jak daleko stworzenie upadnie.</p>\n<p>Biorąc stworzenie na cel, zmierz odległość horyzontalną jak normalnie, a następnie zwiększ dystans o 1 poziom. Zatem strzał na Dalekim zasięgu stanie się strzałem na Bardzo dalekim zasięgu. Natomiast jeśli był to Bardzo daleki zasięg, stworzenia nie można dosięgnąć strzałem.</p>\n<p>Lecąc, stworzenie dostaje karę -20 do wszystkich prób walki dystansowej, ponieważ nurkuje w powietrzu i zatacza kręgi.</p>"
                 },
                 "Acy4D4CcywEojlk7": {
                     "specification": "Ujarzmiony"
@@ -463,6 +615,13 @@
                 },
                 "4b5lFpAVTChvN7BB": {
                     "specification": "Bojowy"
+                },
+                "PofF9MLx1Ywqk5jK": {
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "name": "Widzenie w Ciemności",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
+                    "originalName": "Night Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm"
                 }
             }
         },
@@ -497,6 +656,27 @@
                 },
                 "vtuwSF1vicHaILVj": {
                     "specification": "5"
+                },
+                "9v0zzqcnGg4Ch00U": {
+                    "name": "Dekoncentrujący",
+                    "originalName": "Distracting",
+                    "sourceId": "Compendium.wfrp4e-core.items.MVI0lXcg6vvtooAF",
+                    "effects": {
+                        "et9TgrjWHZYQI7OJ": {
+                            "id": "et9TgrjWHZYQI7OJ",
+                            "name": "Dekoncentrujący",
+                            "script": "args.prefillModifiers.modifier -= 20"
+                        }
+                    },
+                    "id": "MVI0lXcg6vvtooAF",
+                    "description": "<p>Stworzenie rozprasza lub dezorientuje wrogów, być może wydzielając usypiający zapach lub powalający smród, a może ze względu na przerażająco dziwaczny wygląd. Wszystkie żywe cele w promieniu tylu metrów, ile wynosi jego Bonus z Wytrzymałości, dostają karę -20 do wszystkich Testów. Cel może dostać tę karę tylko raz - bez względu na to, jak wielu jest dekoncentrujących wrogów.</p>"
+                },
+                "ZU3t7GgNhKWjtBnn": {
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "name": "Widzenie w Ciemności",
+                    "originalName": "Night Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
                 }
             }
         },
@@ -562,6 +742,41 @@
                     "originalName": "Atak Językiem (12)",
                     "sourceId": "Compendium.wfrp4e-core.items.xg6z63j6BH5AaqLL",
                     "specification": "+5"
+                },
+                "GqOvZ9qNezY3OOdm": {
+                    "id": "M5QSWOYt2Rbv2yxW",
+                    "name": "Kwasowa Krew",
+                    "originalName": "Corrosive Blood",
+                    "sourceId": "Compendium.wfrp4e-core.items.M5QSWOYt2Rbv2yxW",
+                    "effects": {
+                        "mzNcVAruDOTiCGhS": {
+                            "id": "mzNcVAruDOTiCGhS",
+                            "name": "Kwasowa Krew",
+                            "script": "let content = `<b>${this.effect.label}</b>: All targets engaged with <b>${this.actor.prototypeToken.name}</b> take [[/r 1d10]] Damage, modified by TB and AP.`\n\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
+                        }
+                    },
+                    "description": "<p>Krew stworzenia jest żrąca. Za każdym razem, gdy zostanie ono ranione, tryska z niego krew i wszystkie związane z nim walką cele dostają [[/r 1d10]] Ran. Są one normalnie obniżane przez Bonus z Wytrzymałości i Punkty Pancerza, ale wynoszą minimum 1.</p>"
+                },
+                "pUhJszmfx337KtDw": {
+                    "id": "MVI0lXcg6vvtooAF",
+                    "name": "Dekoncentrujący",
+                    "description": "<p>Stworzenie rozprasza lub dezorientuje wrogów, być może wydzielając usypiający zapach lub powalający smród, a może ze względu na przerażająco dziwaczny wygląd. Wszystkie żywe cele w promieniu tylu metrów, ile wynosi jego Bonus z Wytrzymałości, dostają karę -20 do wszystkich Testów. Cel może dostać tę karę tylko raz - bez względu na to, jak wielu jest dekoncentrujących wrogów.</p>",
+                    "originalName": "Distracting",
+                    "sourceId": "Compendium.wfrp4e-core.items.MVI0lXcg6vvtooAF",
+                    "effects": {
+                        "et9TgrjWHZYQI7OJ": {
+                            "id": "et9TgrjWHZYQI7OJ",
+                            "name": "Dekoncentrujący",
+                            "script": "args.prefillModifiers.modifier -= 20"
+                        }
+                    }
+                },
+                "SwFL0AiCQaSln0sP": {
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "name": "Widzenie w Ciemności",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
+                    "originalName": "Night Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm"
                 }
             }
         },
@@ -598,6 +813,34 @@
                 },
                 "pkG19GQLxPQvo9Ip": {
                     "specification": "Chaos"
+                },
+                "e9fI6pmDjlTEn7tU": {
+                    "id": "MVI0lXcg6vvtooAF",
+                    "name": "Dekoncentrujący",
+                    "originalName": "Distracting",
+                    "sourceId": "Compendium.wfrp4e-core.items.MVI0lXcg6vvtooAF",
+                    "effects": {
+                        "et9TgrjWHZYQI7OJ": {
+                            "id": "et9TgrjWHZYQI7OJ",
+                            "name": "Dekoncentrujący",
+                            "script": "args.prefillModifiers.modifier -= 20"
+                        }
+                    },
+                    "description": "<p>Stworzenie rozprasza lub dezorientuje wrogów, być może wydzielając usypiający zapach lub powalający smród, a może ze względu na przerażająco dziwaczny wygląd. Wszystkie żywe cele w promieniu tylu metrów, ile wynosi jego Bonus z Wytrzymałości, dostają karę -20 do wszystkich Testów. Cel może dostać tę karę tylko raz - bez względu na to, jak wielu jest dekoncentrujących wrogów.</p>"
+                },
+                "tfS2IqRqVndOgGjv": {
+                    "id": "yRhhOlt18COq4e1q",
+                    "originalName": "Frenzy",
+                    "name": "Szał Bojowy",
+                    "sourceId": "Compendium.wfrp4e-core.items.yRhhOlt18COq4e1q",
+                    "effects": {
+                        "jTfCjCCrfFHKqXhz": {
+                            "id": "jTfCjCCrfFHKqXhz",
+                            "name": "Szał Bojowy",
+                            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
+                        }
+                    },
+                    "description": "<p>Stworzenie może wpadać w <i>Szał Bojowy</i>. Podczas Szału Bojowego jest odporne na zasady Psychologii, nie wycofa się z żadnego powodu, musi zawsze poruszać się z pełną prędkością w stronę najbliższego widzianego przeciwnika, by go zaatakować. Jedynymi Akcjami, jakie można wtedy wykonać, są Testy Broni Białej w zwarciu albo Atletyki, by szybciej dobiec do przeciwnika. Poza tym w każdej Rundzie postać otrzymuje Akcję Darmową w postaci dodatkowego ataku wręcz, ponieważ naprawdę daje z siebie wszystko. A jakby tego było mało, zaciekłość i brutalność skutkuje podniesieniem Bonusu z Siły o +1. Postać pozostaje w Szale Bojowym, dopóki wszyscy wrogowie w polu widzenia nie zostaną unieszkodliwieni albo dopóki postać nie otrzyma przynajmniej 1 poziomu Oszołomienia lub nie nastąpi Utrata Przytomności. Po zakończeniu Szału Bojowego postać natychmiast otrzymuje 1 poziom Zmęczenia.</p>"
                 }
             }
         },
@@ -659,6 +902,41 @@
                 },
                 "nAT0d32eoXu4bnlX": {
                     "specification": "Wielki"
+                },
+                "31TfvmF4Baa2Vhib": {
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "name": "Widzenie w Ciemności",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
+                    "originalName": "Night Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm"
+                },
+                "yRe6OWVM89awFWO5": {
+                    "id": "SfUUdOGjdYpr3KSR",
+                    "originalName": "Regenerate",
+                    "sourceId": "Compendium.wfrp4e-core.items.SfUUdOGjdYpr3KSR",
+                    "effects": {
+                        "0CEu4kmUhYSxWGJZ": {
+                            "id": "0CEu4kmUhYSxWGJZ",
+                            "name": "Regeneracja",
+                            "script": "let chatData = {content: \"\", speaker : {alias : this.effect.label}, whisper: ChatMessage.getWhisperRecipients(\"GM\")}\n\nlet wounds = duplicate(this.actor.status.wounds)\nlet regen = (await new Roll(\"1d10\").roll({async: true})).total\n\nif (wounds.value >= wounds.max)\n   return\n\nif (wounds.value > 0)\n{\n   wounds.value += regen\n   if (wounds.value > wounds.max) \n        wounds.value = wounds.max\n   chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`\n   \n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse if (regen >= 8)\n{\n    chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n    wounds.value += 1\n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse\n{\n    chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n}\n\nthis.actor.update({\"system.status.wounds\" : wounds})\nChatMessage.create(chatData)"
+                        }
+                    },
+                    "name": "Regeneracja",
+                    "description": "<p>Stworzenie leczy się w niezwykłym tempie. Nawet jego odcięte części ciała mogą odrastać. Na początku każdej Rundy, o ile pozostało mu ponad 0 Żywotności, stworzenie automatycznie regeneruje 1k10 punktów Żywotności. Jeśli pozostało mu 0 Żywotności, regeneruje jedną Ranę po wyrzuceniu 8+ na 1k10. Jeśli kiedykolwiek podczas regeneracji wyrzuci 10, może w pełni zregenerować także Ranę Krytyczną, anulując w ten sposób wszelkie powiązane z nią kary i Stany. Poza tym wszelkie Rany Krytyczne lub Rany spowodowane przez ogień nie mogą być regenerowane i powinny być zapisywane oddzielnie.</p>"
+                },
+                "SIduEI981EidAIHS": {
+                    "id": "ClOlztW6hH8rslbp",
+                     "name": "Tropiciel",
+                    "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
+                    "originalName": "Tracker",
+                    "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp",
+                    "effects": {
+                        "ftGagmf8rj6rq3ir": {
+                            "id": "ftGagmf8rj6rq3ir",
+                             "name": "Tropiciel",
+                            "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\")))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+                        }
+                    }
                 }
             }
         },
@@ -863,6 +1141,13 @@
                 },
                 "sAFnvCirSrYDHnav": {
                     "specification": "Sierściawka"
+                },
+                "1tVLQaFhNyXvMMUX": {
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "name": "Widzenie w Ciemności",
+                    "originalName": "Night Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
                 }
             }
         },
@@ -919,6 +1204,13 @@
                 },
                 "FJPIIwJPHK7s8Oqg": {
                     "specification": "Duży"
+                },
+                "HTyifBrlocGVD7qi": {
+                    "name": "Widzenie w Ciemności",
+                    "originalName": "Night Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
                 }
             }
         },
@@ -958,6 +1250,13 @@
                 },
                 "zrKcOsS7laWCMJLz": {
                     "specification": "Duży"
+                },
+                "HC94u6XxBshfQZ5H": {
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "name": "Widzenie w Ciemności",
+                    "originalName": "Night Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
                 }
             }
         },
@@ -1063,6 +1362,27 @@
                 },
                 "H2vIyAw5CBnPmVKn": {
                     "specification": "Szczurza Gorączka"
+                },
+                "sv3c7137dOIJD1Se": {
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "name": "Widzenie w Ciemności",
+                    "originalName": "Night Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
+                },
+                "EWGTPmBgRqu2Nqft": {
+                    "id": "ClOlztW6hH8rslbp",
+                     "name": "Tropiciel",
+                    "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
+                    "originalName": "Tracker",
+                    "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp",
+                    "effects": {
+                        "ftGagmf8rj6rq3ir": {
+                            "id": "ftGagmf8rj6rq3ir",
+                             "name": "Tropiciel",
+                            "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\")))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+                        }
+                    }
                 }
             }
         },
@@ -1128,7 +1448,12 @@
                     "specification": "Ujarzmiony"
                 },
                 "T3oYXEfjfOiqwz0Q": {
-                    "specification": "100"
+                    "specification": "100",
+                    "id": "EO05HX7jql0g605A",
+                    "name": "Latanie",
+                    "originalName": "Flight",
+                    "sourceId": "Compendium.wfrp4e-core.items.EO05HX7jql0g605A",
+                    "description": "<p>Gdy stworzenie wykonuje Ruch, może przelecieć tyle metrów, ile wynosi podana wartość. Lecąc, ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydować, czy wyląduje, czy będzie kontynuować lot. Może w ramach tego ruchu wykonać Szarżę. Jeśli na początku swojej Tury leci, musi wybrać jako Ruch Latanie. Jeśli nie jest w stanie tego zrobić, MG decyduje, jak daleko stworzenie upadnie.</p>\n<p>Biorąc stworzenie na cel, zmierz odległość horyzontalną jak normalnie, a następnie zwiększ dystans o 1 poziom. Zatem strzał na Dalekim zasięgu stanie się strzałem na Bardzo dalekim zasięgu. Natomiast jeśli był to Bardzo daleki zasięg, stworzenia nie można dosięgnąć strzałem.</p>\n<p>Lecąc, stworzenie dostaje karę -20 do wszystkich prób walki dystansowej, ponieważ nurkuje w powietrzu i zatacza kręgi.</p>"
                 },
                 "6yxv7Ob2UIKIDP7L": {
                     "specification": "Mały"
@@ -1168,6 +1493,21 @@
                 },
                 "3tDljanPNcIVpvmw": {
                     "specification": "3"
+                },
+                "ZC2QkQu7guacFpbJ": {
+                    "id": "JQa5DLnTs2SEzRrc",
+                    "name": "Widzenie w Mroku",
+                    "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>",
+                    "originalName": "Dark Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc"
+                },
+                "PvvKNlPhknsCQLfe": {
+                    "id": "aE3pyW20Orvdjzj0",
+                    "name": "Nienawiść (Grupa)",
+                    "originalName": "Hatred",
+                    "sourceId": "Compendium.wfrp4e-core.items.aE3pyW20Orvdjzj0",
+                    "specification": "Zielonoskórzy",
+                    "description": "<p>Stworzenie naprawdę nienawidzi Celu.</p>\n<p>Postać skrywa w duszy głęboką Nienawiść do „x”, czyli jakiejś grupy ludzi czy stworzeń, np. „mieszkańców Hochlandu”, „ośmiornic bagiennych” czy „handlarzy niewolników”. Postać nigdy nie może nawiązać kontaktów z kimś lub czymś, czego nienawidzi.</p>\n<p>Za każdym razem, gdy spotyka przedstawiciela znienawidzonej grupy, musi wykonać Test Psychologii. Jeśli ten się nie uda, postać nie jest w stanie dłużej powstrzymywać swojej Nienawiści. Pod koniec każdej następnej Rundy postać może wykonać kolejny Test Psychologii, by zakończyć napad Nienawiści. Taki atak sam dobiegnie końca, kiedy wszyscy członkowie znienawidzonej grupy znajdujący się w polu widzenia albo uciekną, albo zginą. Utrata Przytomności przynosi identyczny skutek.</p>\n<p>Postać będąca w szale Nienawiści musi natychmiast podjąć próbę zniszczenia znienawidzonej grupy w najszybszy i najbardziej zabójczy znany jej sposób: </p>\n<ul>\n<li>Otrzymuje premię +1 PS do wszystkich Testów walki przeciwko tej grupie.</li>\n<li>Jest niewrażliwa na Strach oraz Zastraszanie (ale nie na Grozę) wywoływane przez znienawidzonego wroga.</li>\n</ul>"
                 }
             }
         },
@@ -1211,6 +1551,41 @@
                 },
                 "yZZOiLkpJhVdwmJH": {
                     "specification": "3"
+                },
+                "Clanj11BxMrcIvLO": {
+                    "id": "JQa5DLnTs2SEzRrc",
+                    "name": "Widzenie w Mroku",
+                    "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>",
+                    "originalName": "Dark Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc"
+                },
+                "tdjhpd6AdJORQe6D": {
+                    "id": "SfUUdOGjdYpr3KSR",
+                    "name": "Regeneracja",
+                    "description": "<p>Stworzenie leczy się w niezwykłym tempie. Nawet jego odcięte części ciała mogą odrastać. Na początku każdej Rundy, o ile pozostało mu ponad 0 Żywotności, stworzenie automatycznie regeneruje 1k10 punktów Żywotności. Jeśli pozostało mu 0 Żywotności, regeneruje jedną Ranę po wyrzuceniu 8+ na 1k10. Jeśli kiedykolwiek podczas regeneracji wyrzuci 10, może w pełni zregenerować także Ranę Krytyczną, anulując w ten sposób wszelkie powiązane z nią kary i Stany. Poza tym wszelkie Rany Krytyczne lub Rany spowodowane przez ogień nie mogą być regenerowane i powinny być zapisywane oddzielnie.</p>",
+                    "originalName": "Regenerate",
+                    "sourceId": "Compendium.wfrp4e-core.items.SfUUdOGjdYpr3KSR",
+                    "effects": {
+                        "0CEu4kmUhYSxWGJZ": {
+                            "id": "0CEu4kmUhYSxWGJZ",
+                            "name": "Regeneracja",
+                            "script": "let chatData = {content: \"\", speaker : {alias : this.effect.label}, whisper: ChatMessage.getWhisperRecipients(\"GM\")}\n\nlet wounds = duplicate(this.actor.status.wounds)\nlet regen = (await new Roll(\"1d10\").roll({async: true})).total\n\nif (wounds.value >= wounds.max)\n   return\n\nif (wounds.value > 0)\n{\n   wounds.value += regen\n   if (wounds.value > wounds.max) \n        wounds.value = wounds.max\n   chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`\n   \n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse if (regen >= 8)\n{\n    chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n    wounds.value += 1\n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse\n{\n    chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n}\n\nthis.actor.update({\"system.status.wounds\" : wounds})\nChatMessage.create(chatData)"
+                        }
+                    }
+                },
+                "FjLM8VwaISABC2Tt": {
+                    "originalName": "Frenzy",
+                    "id": "yRhhOlt18COq4e1q",
+                    "name": "Szał Bojowy",
+                    "sourceId": "Compendium.wfrp4e-core.items.yRhhOlt18COq4e1q",
+                    "effects": {
+                        "jTfCjCCrfFHKqXhz": {
+                            "id": "jTfCjCCrfFHKqXhz",
+                            "name": "Szał Bojowy",
+                            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
+                        }
+                    },
+                    "description": "<p>Stworzenie może wpadać w <i>Szał Bojowy</i>. Podczas Szału Bojowego jest odporne na zasady Psychologii, nie wycofa się z żadnego powodu, musi zawsze poruszać się z pełną prędkością w stronę najbliższego widzianego przeciwnika, by go zaatakować. Jedynymi Akcjami, jakie można wtedy wykonać, są Testy Broni Białej w zwarciu albo Atletyki, by szybciej dobiec do przeciwnika. Poza tym w każdej Rundzie postać otrzymuje Akcję Darmową w postaci dodatkowego ataku wręcz, ponieważ naprawdę daje z siebie wszystko. A jakby tego było mało, zaciekłość i brutalność skutkuje podniesieniem Bonusu z Siły o +1. Postać pozostaje w Szale Bojowym, dopóki wszyscy wrogowie w polu widzenia nie zostaną unieszkodliwieni albo dopóki postać nie otrzyma przynajmniej 1 poziomu Oszołomienia lub nie nastąpi Utrata Przytomności. Po zakończeniu Szału Bojowego postać natychmiast otrzymuje 1 poziom Zmęczenia.</p>"
                 }
             }
         },
@@ -1234,6 +1609,13 @@
                 },
                 "W1F7qf8SQNqv5fGh": {
                     "specification": "6"
+                },
+                "ECf7whUrkOq6Xzvt": {
+                    "id": "JQa5DLnTs2SEzRrc",
+                    "name": "Widzenie w Mroku",
+                    "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>",
+                    "originalName": "Dark Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc"
                 }
             }
         },
@@ -1287,6 +1669,13 @@
                 },
                 "g20Mf9glsFbJagSX": {
                     "specification": "Monstrualny"
+                },
+                "yStBDh5YsnBogbUw": {
+                    "name": "Widzenie w Ciemności",
+                    "originalName": "Night Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
                 }
             }
         },
@@ -1317,7 +1706,12 @@
                     "specification": "Dowolny"
                 },
                 "D2Q5PMiivGzUO6Ij": {
-                    "specification": "Zielonoskórzy"
+                    "specification": "Zielonoskórzy",
+                    "name": "Nienawiść (Grupa)",
+                    "originalName": "Hatred",
+                    "sourceId": "Compendium.wfrp4e-core.items.aE3pyW20Orvdjzj0",
+                    "id": "aE3pyW20Orvdjzj0",
+                    "description": "<p>Stworzenie naprawdę nienawidzi Celu.</p>\n<p>Postać skrywa w duszy głęboką Nienawiść do „x”, czyli jakiejś grupy ludzi czy stworzeń, np. „mieszkańców Hochlandu”, „ośmiornic bagiennych” czy „handlarzy niewolników”. Postać nigdy nie może nawiązać kontaktów z kimś lub czymś, czego nienawidzi.</p>\n<p>Za każdym razem, gdy spotyka przedstawiciela znienawidzonej grupy, musi wykonać Test Psychologii. Jeśli ten się nie uda, postać nie jest w stanie dłużej powstrzymywać swojej Nienawiści. Pod koniec każdej następnej Rundy postać może wykonać kolejny Test Psychologii, by zakończyć napad Nienawiści. Taki atak sam dobiegnie końca, kiedy wszyscy członkowie znienawidzonej grupy znajdujący się w polu widzenia albo uciekną, albo zginą. Utrata Przytomności przynosi identyczny skutek.</p>\n<p>Postać będąca w szale Nienawiści musi natychmiast podjąć próbę zniszczenia znienawidzonej grupy w najszybszy i najbardziej zabójczy znany jej sposób: </p>\n<ul>\n<li>Otrzymuje premię +1 PS do wszystkich Testów walki przeciwko tej grupie.</li>\n<li>Jest niewrażliwa na Strach oraz Zastraszanie (ale nie na Grozę) wywoływane przez znienawidzonego wroga.</li>\n</ul>"
                 },
                 "xRZn9M7QAZTCg2Lw": {
                     "specification": "Dowolny"
@@ -1356,6 +1750,27 @@
                     "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Skradanie}</p>",
                     "originalName": "Skradanie",
                     "sourceId": "Compendium.wfrp4e-core.items.McTtmZu3Ac8Lh48W"
+                },
+                "oy5FYiHSqt5uglbE": {
+                    "id": "yrkI7ATjqLPDTFmZ",
+                    "name": "Odporność na Magię",
+                    "description": "<p>Efekt wywierany przez magię na stworzenie jest ograniczony. PS dowolnego wpływającego na stworzenie czaru zmniejszany jest o podaną wartość. Zatem <i>Odporność na Magię 2</i> zmniejsza PS o 2.</p>",
+                    "originalName": "Magic Resistance",
+                    "effects": {
+                        "PWNOSwxsePCN7sKH": {
+                            "id": "PWNOSwxsePCN7sKH",
+                            "name": "Odporność na Magię",
+                            "script": "if (args.type == \"cast\")\n       args.prefillModifiers.slBonus -= (Number(this.item.specification.value) || 0)"
+                        }
+                    },
+                    "sourceId": "Compendium.wfrp4e-core.items.yrkI7ATjqLPDTFmZ"
+                },
+                "rNYVbX0Ld0G2lqaB": {
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "name": "Widzenie w Ciemności",
+                    "originalName": "Night Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
                 }
             }
         },
@@ -1432,13 +1847,23 @@
                     "specification": "2"
                 },
                 "ssz898XEaM93R5DR": {
-                    "specification": "90"
+                    "specification": "90",
+                    "id": "EO05HX7jql0g605A",
+                    "name": "Latanie",
+                    "description": "<p>Gdy stworzenie wykonuje Ruch, może przelecieć tyle metrów, ile wynosi podana wartość. Lecąc, ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydować, czy wyląduje, czy będzie kontynuować lot. Może w ramach tego ruchu wykonać Szarżę. Jeśli na początku swojej Tury leci, musi wybrać jako Ruch Latanie. Jeśli nie jest w stanie tego zrobić, MG decyduje, jak daleko stworzenie upadnie.</p>\n<p>Biorąc stworzenie na cel, zmierz odległość horyzontalną jak normalnie, a następnie zwiększ dystans o 1 poziom. Zatem strzał na Dalekim zasięgu stanie się strzałem na Bardzo dalekim zasięgu. Natomiast jeśli był to Bardzo daleki zasięg, stworzenia nie można dosięgnąć strzałem.</p>\n<p>Lecąc, stworzenie dostaje karę -20 do wszystkich prób walki dystansowej, ponieważ nurkuje w powietrzu i zatacza kręgi.</p>",
+                    "originalName": "Flight",
+                    "sourceId": "Compendium.wfrp4e-core.items.EO05HX7jql0g605A"
                 },
                 "MgCyUt9Z2Ry6k5uP": {
                     "specification": "Wielki"
                 },
                 "KgqX2TeFg2QOJmxM": {
-                    "specification": "Jad"
+                    "specification": "Jad",
+                    "id": "uqGxFOEqeurwkAO3",
+                    "name": "Zionięcie",
+                    "description": "<p>Stworzenie posługuje się zionięciem jako potężną bronią. W swojej Turze, kosztem 2 Przewag, może aktywować <i>Zionięcie</i> jako Darmowy Atak. Wybierz 1 cel, który stworzenie widzi w promieniu 20 + Bonus z Wytrzymałości metrów. Trafione zostają wszystkie postacie wokół tego celu w promieniu tylu metrów, ile wynosi Bonus z Siły, podobnie jak wszystkie postacie znajdujące się między stworzeniem a celem. Przeprowadź <b>Test Przeciwstawny Umiejętności Strzeleckie/Unik</b> przeciwko wszystkim objętym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Każdy cel, który przegrał Test, otrzymuje trafienie zadające wskazaną wartość Obrażeń. Co więcej, jeśli przy Cesze Stworzenia wymieniony jest jeden z opisanych niżej typów zionięcia, zastosuj wskazane zasady.</p><p><b>Dym</b>: Obszar wypełnia się dymem, który zasłania pole widzenia na tyle Rund, ile wynosi Bonus z Wytrzymałości.</p><p><b>Elektryczność</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan @Condition[Oszołomienie].</p><p><b>Kwas</b>: Noszony przez objęte efektem postaci pancerze oraz wszelka broń dostają 1 punkt Uszkodzeń.</p><p><b>Ogień</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan @Condition[Podpalenie].</p><p><b>Trucizna</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan @Condition[Zatrucie].</p><p><b>Zimno</b>: Cele dostają jeden Stan @Condition[Oszołomienie]{Oszołomiony} za każde pełne 5 odniesionych Ran (minimalnie 1).</p><p>Stworzenie jest odporne na własne <i>Zionięcie</i>. Ten atak jest <i>Magiczny</i>.</p>",
+                    "originalName": "Breath",
+                    "sourceId": "Compendium.wfrp4e-core.items.uqGxFOEqeurwkAO3"
                 },
                 "NSS8rnTIgUUHPGoQ": {
                     "id": "NSS8rnTIgUUHPGoQ",
@@ -1486,6 +1911,27 @@
                 },
                 "epRPGrU9tTzzfM7W": {
                     "specification": "Szczurza Gorączka"
+                },
+                "VoIonHLlv1A5nRxX": {
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "name": "Widzenie w Ciemności",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
+                    "originalName": "Night Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm"
+                },
+                "RldqOHuJksfSdlCB": {
+                    "id": "ClOlztW6hH8rslbp",
+                     "name": "Tropiciel",
+                    "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
+                    "originalName": "Tracker",
+                    "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp",
+                    "effects": {
+                        "ftGagmf8rj6rq3ir": {
+                            "id": "ftGagmf8rj6rq3ir",
+                             "name": "Tropiciel",
+                            "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\")))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+                        }
+                    }
                 }
             }
         },
@@ -1520,6 +1966,13 @@
                 },
                 "0iRPWrTBHJaIfPDe": {
                     "specification": "Demonologia"
+                },
+                "IxXrl7si6FOL8TFa": {
+                    "id": "JQa5DLnTs2SEzRrc",
+                    "name": "Widzenie w Mroku",
+                    "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>",
+                    "originalName": "Dark Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc"
                 }
             }
         },
@@ -1576,6 +2029,13 @@
                 },
                 "U4DlM4HaK9N09jZZ": {
                     "specification": "Ujarzmiony"
+                },
+                "T8PNNfUsqPwdwFbl": {
+                    "name": "Widzenie w Ciemności",
+                    "originalName": "Night Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
                 }
             }
         },
@@ -1626,6 +2086,20 @@
                 },
                 "7eP4nwiUvwksPauu": {
                     "specification": "5"
+                },
+                "DDQGz9vBd7tdttmQ": {
+                    "id": "yRhhOlt18COq4e1q",
+                    "name": "Szał Bojowy",
+                    "originalName": "Frenzy",
+                    "sourceId": "Compendium.wfrp4e-core.items.yRhhOlt18COq4e1q",
+                    "effects": {
+                        "jTfCjCCrfFHKqXhz": {
+                            "id": "jTfCjCCrfFHKqXhz",
+                            "name": "Szał Bojowy",
+                            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
+                        }
+                    },
+                    "description": "<p>Stworzenie może wpadać w <i>Szał Bojowy</i>. Podczas Szału Bojowego jest odporne na zasady Psychologii, nie wycofa się z żadnego powodu, musi zawsze poruszać się z pełną prędkością w stronę najbliższego widzianego przeciwnika, by go zaatakować. Jedynymi Akcjami, jakie można wtedy wykonać, są Testy Broni Białej w zwarciu albo Atletyki, by szybciej dobiec do przeciwnika. Poza tym w każdej Rundzie postać otrzymuje Akcję Darmową w postaci dodatkowego ataku wręcz, ponieważ naprawdę daje z siebie wszystko. A jakby tego było mało, zaciekłość i brutalność skutkuje podniesieniem Bonusu z Siły o +1. Postać pozostaje w Szale Bojowym, dopóki wszyscy wrogowie w polu widzenia nie zostaną unieszkodliwieni albo dopóki postać nie otrzyma przynajmniej 1 poziomu Oszołomienia lub nie nastąpi Utrata Przytomności. Po zakończeniu Szału Bojowego postać natychmiast otrzymuje 1 poziom Zmęczenia.</p>"
                 }
             }
         },
@@ -1693,6 +2167,41 @@
                 },
                 "MjAmyU8qvhIHsbBT": {
                     "specification": "Wierzchowiec"
+                },
+                "oSSWoflZODgHORoD": {
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "name": "Widzenie w Ciemności",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
+                    "originalName": "Night Vision"
+                },
+                "CFnEQOwEB8AI7ooz": {
+                    "id": "yRhhOlt18COq4e1q",
+                    "name": "Szał Bojowy",
+                    "originalName": "Frenzy",
+                    "sourceId": "Compendium.wfrp4e-core.items.yRhhOlt18COq4e1q",
+                    "effects": {
+                        "jTfCjCCrfFHKqXhz": {
+                            "id": "jTfCjCCrfFHKqXhz",
+                            "name": "Szał Bojowy",
+                            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
+                        }
+                    },
+                    "description": "<p>Stworzenie może wpadać w <i>Szał Bojowy</i>. Podczas Szału Bojowego jest odporne na zasady Psychologii, nie wycofa się z żadnego powodu, musi zawsze poruszać się z pełną prędkością w stronę najbliższego widzianego przeciwnika, by go zaatakować. Jedynymi Akcjami, jakie można wtedy wykonać, są Testy Broni Białej w zwarciu albo Atletyki, by szybciej dobiec do przeciwnika. Poza tym w każdej Rundzie postać otrzymuje Akcję Darmową w postaci dodatkowego ataku wręcz, ponieważ naprawdę daje z siebie wszystko. A jakby tego było mało, zaciekłość i brutalność skutkuje podniesieniem Bonusu z Siły o +1. Postać pozostaje w Szale Bojowym, dopóki wszyscy wrogowie w polu widzenia nie zostaną unieszkodliwieni albo dopóki postać nie otrzyma przynajmniej 1 poziomu Oszołomienia lub nie nastąpi Utrata Przytomności. Po zakończeniu Szału Bojowego postać natychmiast otrzymuje 1 poziom Zmęczenia.</p>"
+                },
+                "Sl8B1e9MXTHhbNDQ": {
+                    "id": "ClOlztW6hH8rslbp",
+                     "name": "Tropiciel",
+                    "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
+                    "effects": {
+                        "ftGagmf8rj6rq3ir": {
+                            "id": "ftGagmf8rj6rq3ir",
+                             "name": "Tropiciel",
+                            "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\")))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+                        }
+                    },
+                    "originalName": "Tracker",
+                    "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp"
                 }
             }
         },
@@ -1746,7 +2255,12 @@
                     "specification": "15"
                 },
                 "1vJSySYMpq40Vdpu": {
-                    "specification": "80"
+                    "specification": "80",
+                    "id": "EO05HX7jql0g605A",
+                    "name": "Latanie",
+                    "originalName": "Flight",
+                    "description": "<p>Gdy stworzenie wykonuje Ruch, może przelecieć tyle metrów, ile wynosi podana wartość. Lecąc, ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydować, czy wyląduje, czy będzie kontynuować lot. Może w ramach tego ruchu wykonać Szarżę. Jeśli na początku swojej Tury leci, musi wybrać jako Ruch Latanie. Jeśli nie jest w stanie tego zrobić, MG decyduje, jak daleko stworzenie upadnie.</p>\n<p>Biorąc stworzenie na cel, zmierz odległość horyzontalną jak normalnie, a następnie zwiększ dystans o 1 poziom. Zatem strzał na Dalekim zasięgu stanie się strzałem na Bardzo dalekim zasięgu. Natomiast jeśli był to Bardzo daleki zasięg, stworzenia nie można dosięgnąć strzałem.</p>\n<p>Lecąc, stworzenie dostaje karę -20 do wszystkich prób walki dystansowej, ponieważ nurkuje w powietrzu i zatacza kręgi.</p>",
+                    "sourceId": "Compendium.wfrp4e-core.items.EO05HX7jql0g605A"
                 },
                 "19D3jZunuEH6l8e6": {
                     "specification": "Wielki"
@@ -1765,6 +2279,13 @@
                 },
                 "ifO6aDAX3quf8Ady": {
                     "specification": "Wierzchowiec"
+                },
+                "klb3kDP35AaPwwGx": {
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "name": "Widzenie w Ciemności",
+                    "originalName": "Night Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
                 }
             }
         },
@@ -1811,6 +2332,13 @@
                 },
                 "df1LfKBDJNLDYEmO": {
                     "specification": "Ujarzmiony"
+                },
+                "dj5OTl1j98kkuPIM": {
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "name": "Widzenie w Ciemności",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
+                    "originalName": "Night Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm"
                 }
             }
         },
@@ -1852,6 +2380,13 @@
                 },
                 "GonZNvC2WV2yDxBd": {
                     "specification": "Pomniejsze"
+                },
+                "u62rlWLzc2v5MYvZ": {
+                    "id": "JQa5DLnTs2SEzRrc",
+                    "name": "Widzenie w Mroku",
+                    "originalName": "Dark Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc",
+                    "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>"
                 }
             }
         },
@@ -1888,6 +2423,27 @@
                 },
                 "8eYvIEbyQGFGythX": {
                     "specification": "Szczupłe Osoby"
+                },
+                "Y01oLajbF55OR5UY": {
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "name": "Widzenie w Ciemności",
+                    "originalName": "Night Vision",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm"
+                },
+                "ijpNgS0GL8E8q7Le": {
+                    "effects": {
+                        "ftGagmf8rj6rq3ir": {
+                            "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\")))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}",
+                            "id": "ftGagmf8rj6rq3ir",
+                            "name": "Tracker"
+                        }
+                    },
+                    "id": "ClOlztW6hH8rslbp",
+                     "name": "Tropiciel",
+                    "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
+                    "originalName": "Tracker",
+                    "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp"
                 }
             }
         },
@@ -1955,6 +2511,20 @@
                     "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Skradanie}</p>",
                     "originalName": "Skradanie",
                     "sourceId": "Compendium.wfrp4e-core.items.McTtmZu3Ac8Lh48W"
+                },
+                "Ydj0sMt8e36kzLeC": {
+                    "id": "zImcTgEl2XNnbu5W",
+                    "name": "Twardziel",
+                    "description": "<p>Stworzenie jest w stanie przyjąć więcej obrażeń niż większość innych istot. Zwiększ Żywotność stworzenia o wartość równą jego Bonusowi z Wytrzymałości (zastosuj to przed wszelkimi modyfikatorami <i>Rozmiaru</i>).</p>",
+                    "originalName": "Hardy",
+                    "sourceId": "Compendium.wfrp4e-core.items.zImcTgEl2XNnbu5W",
+                    "effects": {
+                        "REeG0AV5Sm4fTAIJ": {
+                            "id": "REeG0AV5Sm4fTAIJ",
+                            "name": "Twardziel",
+                            "script": "args.multiplier.tb += 1"
+                        }
+                    }
                 }
             }
         },
@@ -2016,6 +2586,13 @@
                 },
                 "A9D4zsKSjcNfzvb1": {
                     "specification": "Bojowy"
+                },
+                "mg8MEEjUXy6LO6e7": {
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "name": "Widzenie w Ciemności",
+                    "originalName": "Night Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
                 }
             }
         },
@@ -2120,6 +2697,41 @@
                     "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Skradanie}</p>",
                     "originalName": "Skradanie",
                     "sourceId": "Compendium.wfrp4e-core.items.McTtmZu3Ac8Lh48W"
+                },
+                "Ha9oYELxF5siRpWB": {
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "name": "Widzenie w Ciemności",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
+                    "originalName": "Night Vision",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
+                },
+                "ErSbq6fLveOdzSWw": {
+                    "id": "yrkI7ATjqLPDTFmZ",
+                    "name": "Odporność na Magię",
+                    "originalName": "Magic Resistance",
+                    "sourceId": "Compendium.wfrp4e-core.items.yrkI7ATjqLPDTFmZ",
+                    "effects": {
+                        "PWNOSwxsePCN7sKH": {
+                            "id": "PWNOSwxsePCN7sKH",
+                            "name": "Odporność na Magię",
+                            "script": "if (args.type == \"cast\")\n       args.prefillModifiers.slBonus -= (Number(this.item.specification.value) || 0)"
+                        }
+                    },
+                    "description": "<p>Efekt wywierany przez magię na stworzenie jest ograniczony. PS dowolnego wpływającego na stworzenie czaru zmniejszany jest o podaną wartość. Zatem <i>Odporność na Magię 2</i> zmniejsza PS o 2.</p>"
+                },
+                "PJL8VIepHyRkwazR": {
+                    "id": "ClOlztW6hH8rslbp",
+                     "name": "Tropiciel",
+                    "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
+                    "originalName": "Tracker",
+                    "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp",
+                    "effects": {
+                        "ftGagmf8rj6rq3ir": {
+                            "id": "ftGagmf8rj6rq3ir",
+                             "name": "Tropiciel",
+                            "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\")))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+                        }
+                    }
                 }
             }
         },
@@ -2190,6 +2802,41 @@
                 },
                 "fVBnOJssDBjioOZS": {
                     "specification": "Stróżujący"
+                },
+                "ELugNF8mL3cMFHOu": {
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "name": "Widzenie w Ciemności",
+                    "originalName": "Night Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
+                },
+                "VfaW9VzOTuWQBztc": {
+                    "id": "yRhhOlt18COq4e1q",
+                    "name": "Szał Bojowy",
+                    "originalName": "Frenzy",
+                    "sourceId": "Compendium.wfrp4e-core.items.yRhhOlt18COq4e1q",
+                    "effects": {
+                        "jTfCjCCrfFHKqXhz": {
+                            "id": "jTfCjCCrfFHKqXhz",
+                            "name": "Szał Bojowy",
+                            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
+                        }
+                    },
+                    "description": "<p>Stworzenie może wpadać w <i>Szał Bojowy</i>. Podczas Szału Bojowego jest odporne na zasady Psychologii, nie wycofa się z żadnego powodu, musi zawsze poruszać się z pełną prędkością w stronę najbliższego widzianego przeciwnika, by go zaatakować. Jedynymi Akcjami, jakie można wtedy wykonać, są Testy Broni Białej w zwarciu albo Atletyki, by szybciej dobiec do przeciwnika. Poza tym w każdej Rundzie postać otrzymuje Akcję Darmową w postaci dodatkowego ataku wręcz, ponieważ naprawdę daje z siebie wszystko. A jakby tego było mało, zaciekłość i brutalność skutkuje podniesieniem Bonusu z Siły o +1. Postać pozostaje w Szale Bojowym, dopóki wszyscy wrogowie w polu widzenia nie zostaną unieszkodliwieni albo dopóki postać nie otrzyma przynajmniej 1 poziomu Oszołomienia lub nie nastąpi Utrata Przytomności. Po zakończeniu Szału Bojowego postać natychmiast otrzymuje 1 poziom Zmęczenia.</p>"
+                },
+                "fEOkwoDgv5DhBxAn": {
+                    "id": "ClOlztW6hH8rslbp",
+                     "name": "Tropiciel",
+                    "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
+                    "originalName": "Tracker",
+                    "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp",
+                    "effects": {
+                        "ftGagmf8rj6rq3ir": {
+                            "id": "ftGagmf8rj6rq3ir",
+                             "name": "Tropiciel",
+                            "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\")))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+                        }
+                    }
                 }
             }
         },
@@ -2253,6 +2900,13 @@
                 },
                 "SWjFfchKB7Mmasho": {
                     "specification": "2"
+                },
+                "lA9geCq1rZObtGvS": {
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "name": "Widzenie w Ciemności",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
+                    "originalName": "Night Vision"
                 }
             }
         },
@@ -2319,6 +2973,13 @@
                     "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Skradanie}</p>",
                     "originalName": "Skradanie",
                     "sourceId": "Compendium.wfrp4e-core.items.McTtmZu3Ac8Lh48W"
+                },
+                "rwIfV3PTWqnIQzYW": {
+                    "name": "Widzenie w Ciemności",
+                    "originalName": "Night Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
                 }
             }
         },
@@ -2349,19 +3010,50 @@
                     "specification": "4"
                 },
                 "lOLDKAAIkQD6GOMp": {
-                    "specification": "120"
+                    "specification": "120",
+                    "id": "EO05HX7jql0g605A",
+                    "name": "Latanie",
+                    "description": "<p>Gdy stworzenie wykonuje Ruch, może przelecieć tyle metrów, ile wynosi podana wartość. Lecąc, ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydować, czy wyląduje, czy będzie kontynuować lot. Może w ramach tego ruchu wykonać Szarżę. Jeśli na początku swojej Tury leci, musi wybrać jako Ruch Latanie. Jeśli nie jest w stanie tego zrobić, MG decyduje, jak daleko stworzenie upadnie.</p>\n<p>Biorąc stworzenie na cel, zmierz odległość horyzontalną jak normalnie, a następnie zwiększ dystans o 1 poziom. Zatem strzał na Dalekim zasięgu stanie się strzałem na Bardzo dalekim zasięgu. Natomiast jeśli był to Bardzo daleki zasięg, stworzenia nie można dosięgnąć strzałem.</p>\n<p>Lecąc, stworzenie dostaje karę -20 do wszystkich prób walki dystansowej, ponieważ nurkuje w powietrzu i zatacza kręgi.</p>",
+                    "originalName": "Flight",
+                    "sourceId": "Compendium.wfrp4e-core.items.EO05HX7jql0g605A"
                 },
                 "cx0BrXvgQ7nD4E14": {
                     "specification": "Duży"
                 },
                 "e2VIIE1u4gCRRgyA": {
-                    "specification": "Wszystko"
+                    "specification": "Wszystko",
+                    "id": "aE3pyW20Orvdjzj0",
+                    "name": "Nienawiść (Grupa)",
+                    "originalName": "Hatred",
+                    "sourceId": "Compendium.wfrp4e-core.items.aE3pyW20Orvdjzj0",
+                    "description": "<p>Stworzenie naprawdę nienawidzi Celu.</p>\n<p>Postać skrywa w duszy głęboką Nienawiść do „x”, czyli jakiejś grupy ludzi czy stworzeń, np. „mieszkańców Hochlandu”, „ośmiornic bagiennych” czy „handlarzy niewolników”. Postać nigdy nie może nawiązać kontaktów z kimś lub czymś, czego nienawidzi.</p>\n<p>Za każdym razem, gdy spotyka przedstawiciela znienawidzonej grupy, musi wykonać Test Psychologii. Jeśli ten się nie uda, postać nie jest w stanie dłużej powstrzymywać swojej Nienawiści. Pod koniec każdej następnej Rundy postać może wykonać kolejny Test Psychologii, by zakończyć napad Nienawiści. Taki atak sam dobiegnie końca, kiedy wszyscy członkowie znienawidzonej grupy znajdujący się w polu widzenia albo uciekną, albo zginą. Utrata Przytomności przynosi identyczny skutek.</p>\n<p>Postać będąca w szale Nienawiści musi natychmiast podjąć próbę zniszczenia znienawidzonej grupy w najszybszy i najbardziej zabójczy znany jej sposób: </p>\n<ul>\n<li>Otrzymuje premię +1 PS do wszystkich Testów walki przeciwko tej grupie.</li>\n<li>Jest niewrażliwa na Strach oraz Zastraszanie (ale nie na Grozę) wywoływane przez znienawidzonego wroga.</li>\n</ul>"
                 },
                 "oD3Dmt5LeCK5uE26": {
                     "specification": "Ujarzmiony"
                 },
                 "czbEhKw8GDajFhV6": {
                     "specification": "Wierzchowiec"
+                },
+                "GTtqZfniFJ0piJnl": {
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "name": "Widzenie w Ciemności",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
+                    "originalName": "Night Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm"
+                },
+                "meGm1W3JbIzOOqwK": {
+                    "name": "Szał Bojowy",
+                    "originalName": "Frenzy",
+                    "sourceId": "Compendium.wfrp4e-core.items.yRhhOlt18COq4e1q",
+                    "effects": {
+                        "jTfCjCCrfFHKqXhz": {
+                            "id": "jTfCjCCrfFHKqXhz",
+                            "name": "Szał Bojowy",
+                            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
+                        }
+                    },
+                    "id": "yRhhOlt18COq4e1q",
+                    "description": "<p>Stworzenie może wpadać w <i>Szał Bojowy</i>. Podczas Szału Bojowego jest odporne na zasady Psychologii, nie wycofa się z żadnego powodu, musi zawsze poruszać się z pełną prędkością w stronę najbliższego widzianego przeciwnika, by go zaatakować. Jedynymi Akcjami, jakie można wtedy wykonać, są Testy Broni Białej w zwarciu albo Atletyki, by szybciej dobiec do przeciwnika. Poza tym w każdej Rundzie postać otrzymuje Akcję Darmową w postaci dodatkowego ataku wręcz, ponieważ naprawdę daje z siebie wszystko. A jakby tego było mało, zaciekłość i brutalność skutkuje podniesieniem Bonusu z Siły o +1. Postać pozostaje w Szale Bojowym, dopóki wszyscy wrogowie w polu widzenia nie zostaną unieszkodliwieni albo dopóki postać nie otrzyma przynajmniej 1 poziomu Oszołomienia lub nie nastąpi Utrata Przytomności. Po zakończeniu Szału Bojowego postać natychmiast otrzymuje 1 poziom Zmęczenia.</p>"
                 }
             }
         },
@@ -2510,6 +3202,13 @@
                 },
                 "Id4eVMFqUuc1LsGs": {
                     "specification": "3"
+                },
+                "gG9qUQsbbu8A10xm": {
+                    "id": "JQa5DLnTs2SEzRrc",
+                    "name": "Widzenie w Mroku",
+                    "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>",
+                    "originalName": "Dark Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc"
                 }
             }
         },
@@ -2559,6 +3258,84 @@
                 },
                 "z0MDslQRm1vs30Fl": {
                     "specification": "Nekromancja"
+                },
+                "zMyG84nff7m0NGjL": {
+                    "name": "Widzenie w Ciemności",
+                    "originalName": "Night Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
+                },
+                "w8PgVkk1aJh0PS9k": {
+                    "id": "JQa5DLnTs2SEzRrc",
+                    "name": "Widzenie w Mroku",
+                    "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>",
+                    "originalName": "Dark Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc"
+                },
+                "L3NBP75PXqxDKqnE": {
+                    "id": "MVI0lXcg6vvtooAF",
+                    "name": "Dekoncentrujący",
+                    "description": "<p>Stworzenie rozprasza lub dezorientuje wrogów, być może wydzielając usypiający zapach lub powalający smród, a może ze względu na przerażająco dziwaczny wygląd. Wszystkie żywe cele w promieniu tylu metrów, ile wynosi jego Bonus z Wytrzymałości, dostają karę -20 do wszystkich Testów. Cel może dostać tę karę tylko raz - bez względu na to, jak wielu jest dekoncentrujących wrogów.</p>",
+                    "originalName": "Distracting",
+                    "sourceId": "Compendium.wfrp4e-core.items.MVI0lXcg6vvtooAF",
+                    "effects": {
+                        "et9TgrjWHZYQI7OJ": {
+                            "id": "et9TgrjWHZYQI7OJ",
+                            "name": "Dekoncentrujący",
+                            "script": "args.prefillModifiers.modifier -= 20"
+                        }
+                    }
+                },
+                "8nWYGGnZGHfArrFm": {
+                    "id": "EO05HX7jql0g605A",
+                    "name": "Latanie",
+                    "originalName": "Flight",
+                    "sourceId": "Compendium.wfrp4e-core.items.EO05HX7jql0g605A",
+                    "specification": "#",
+                    "description": "<p>Gdy stworzenie wykonuje Ruch, może przelecieć tyle metrów, ile wynosi podana wartość. Lecąc, ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydować, czy wyląduje, czy będzie kontynuować lot. Może w ramach tego ruchu wykonać Szarżę. Jeśli na początku swojej Tury leci, musi wybrać jako Ruch Latanie. Jeśli nie jest w stanie tego zrobić, MG decyduje, jak daleko stworzenie upadnie.</p>\n<p>Biorąc stworzenie na cel, zmierz odległość horyzontalną jak normalnie, a następnie zwiększ dystans o 1 poziom. Zatem strzał na Dalekim zasięgu stanie się strzałem na Bardzo dalekim zasięgu. Natomiast jeśli był to Bardzo daleki zasięg, stworzenia nie można dosięgnąć strzałem.</p>\n<p>Lecąc, stworzenie dostaje karę -20 do wszystkich prób walki dystansowej, ponieważ nurkuje w powietrzu i zatacza kręgi.</p>"
+                },
+                "L6IqVnq0hgnLQtY0": {
+                    "id": "yRhhOlt18COq4e1q",
+                    "name": "Szał Bojowy",
+                    "originalName": "Frenzy",
+                    "sourceId": "Compendium.wfrp4e-core.items.yRhhOlt18COq4e1q",
+                    "effects": {
+                        "jTfCjCCrfFHKqXhz": {
+                            "id": "jTfCjCCrfFHKqXhz",
+                            "name": "Szał Bojowy",
+                            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
+                        }
+                    },
+                    "description": "<p>Stworzenie może wpadać w <i>Szał Bojowy</i>. Podczas Szału Bojowego jest odporne na zasady Psychologii, nie wycofa się z żadnego powodu, musi zawsze poruszać się z pełną prędkością w stronę najbliższego widzianego przeciwnika, by go zaatakować. Jedynymi Akcjami, jakie można wtedy wykonać, są Testy Broni Białej w zwarciu albo Atletyki, by szybciej dobiec do przeciwnika. Poza tym w każdej Rundzie postać otrzymuje Akcję Darmową w postaci dodatkowego ataku wręcz, ponieważ naprawdę daje z siebie wszystko. A jakby tego było mało, zaciekłość i brutalność skutkuje podniesieniem Bonusu z Siły o +1. Postać pozostaje w Szale Bojowym, dopóki wszyscy wrogowie w polu widzenia nie zostaną unieszkodliwieni albo dopóki postać nie otrzyma przynajmniej 1 poziomu Oszołomienia lub nie nastąpi Utrata Przytomności. Po zakończeniu Szału Bojowego postać natychmiast otrzymuje 1 poziom Zmęczenia.</p>"
+                },
+                "4em2FMzLHVWq6pGG": {
+                    "id": "SfUUdOGjdYpr3KSR",
+                    "name": "Regeneracja",
+                    "originalName": "Regenerate",
+                    "sourceId": "Compendium.wfrp4e-core.items.SfUUdOGjdYpr3KSR",
+                    "effects": {
+                        "0CEu4kmUhYSxWGJZ": {
+                            "id": "0CEu4kmUhYSxWGJZ",
+                            "name": "Regeneracja",
+                            "script": "let chatData = {content: \"\", speaker : {alias : this.effect.label}, whisper: ChatMessage.getWhisperRecipients(\"GM\")}\n\nlet wounds = duplicate(this.actor.status.wounds)\nlet regen = (await new Roll(\"1d10\").roll({async: true})).total\n\nif (wounds.value >= wounds.max)\n   return\n\nif (wounds.value > 0)\n{\n   wounds.value += regen\n   if (wounds.value > wounds.max) \n        wounds.value = wounds.max\n   chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`\n   \n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse if (regen >= 8)\n{\n    chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n    wounds.value += 1\n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse\n{\n    chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n}\n\nthis.actor.update({\"system.status.wounds\" : wounds})\nChatMessage.create(chatData)"
+                        }
+                    },
+                    "description": "<p>Stworzenie leczy się w niezwykłym tempie. Nawet jego odcięte części ciała mogą odrastać. Na początku każdej Rundy, o ile pozostało mu ponad 0 Żywotności, stworzenie automatycznie regeneruje 1k10 punktów Żywotności. Jeśli pozostało mu 0 Żywotności, regeneruje jedną Ranę po wyrzuceniu 8+ na 1k10. Jeśli kiedykolwiek podczas regeneracji wyrzuci 10, może w pełni zregenerować także Ranę Krytyczną, anulując w ten sposób wszelkie powiązane z nią kary i Stany. Poza tym wszelkie Rany Krytyczne lub Rany spowodowane przez ogień nie mogą być regenerowane i powinny być zapisywane oddzielnie.</p>"
+                },
+                "3zqfLLGwMcia4KiN": {
+                    "id": "ClOlztW6hH8rslbp",
+                    "originalName": "Tracker",
+                    "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp",
+                    "effects": {
+                        "ftGagmf8rj6rq3ir": {
+                            "id": "ftGagmf8rj6rq3ir",
+                             "name": "Tropiciel",
+                            "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\")))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+                        }
+                    },
+                     "name": "Tropiciel",
+                    "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>"
                 }
             }
         },
@@ -2607,6 +3384,27 @@
                 },
                 "1H2FiYGipa8e0edP": {
                     "specification": "Pomniejsze"
+                },
+                "TLif414blIQcfDk2": {
+                    "name": "Widzenie w Mroku",
+                    "originalName": "Dark Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc",
+                    "id": "JQa5DLnTs2SEzRrc",
+                    "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>"
+                },
+                "rHM8ORJijA756P14": {
+                    "id": "MVI0lXcg6vvtooAF",
+                    "name": "Dekoncentrujący",
+                    "sourceId": "Compendium.wfrp4e-core.items.MVI0lXcg6vvtooAF",
+                    "effects": {
+                        "et9TgrjWHZYQI7OJ": {
+                            "id": "et9TgrjWHZYQI7OJ",
+                            "script": "args.prefillModifiers.modifier -= 20",
+                            "name": "Distracting"
+                        }
+                    },
+                    "description": "<p>Stworzenie rozprasza lub dezorientuje wrogów, być może wydzielając usypiający zapach lub powalający smród, a może ze względu na przerażająco dziwaczny wygląd. Wszystkie żywe cele w promieniu tylu metrów, ile wynosi jego Bonus z Wytrzymałości, dostają karę -20 do wszystkich Testów. Cel może dostać tę karę tylko raz - bez względu na to, jak wielu jest dekoncentrujących wrogów.</p>",
+                    "originalName": "Distracting"
                 }
             }
         },
@@ -2627,6 +3425,21 @@
             "items": {
                 "RbJdJ2Q8wBe5Jjjy": {
                     "specification": "3"
+                },
+                "f6zqiJYGNnjaXfgm": {
+                    "id": "JQa5DLnTs2SEzRrc",
+                    "name": "Widzenie w Mroku",
+                    "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>",
+                    "originalName": "Dark Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc"
+                },
+                "meHXRcsZ8iVHdE8y": {
+                    "id": "EO05HX7jql0g605A",
+                    "name": "Latanie",
+                    "description": "<p>Gdy stworzenie wykonuje Ruch, może przelecieć tyle metrów, ile wynosi podana wartość. Lecąc, ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydować, czy wyląduje, czy będzie kontynuować lot. Może w ramach tego ruchu wykonać Szarżę. Jeśli na początku swojej Tury leci, musi wybrać jako Ruch Latanie. Jeśli nie jest w stanie tego zrobić, MG decyduje, jak daleko stworzenie upadnie.</p>\n<p>Biorąc stworzenie na cel, zmierz odległość horyzontalną jak normalnie, a następnie zwiększ dystans o 1 poziom. Zatem strzał na Dalekim zasięgu stanie się strzałem na Bardzo dalekim zasięgu. Natomiast jeśli był to Bardzo daleki zasięg, stworzenia nie można dosięgnąć strzałem.</p>\n<p>Lecąc, stworzenie dostaje karę -20 do wszystkich prób walki dystansowej, ponieważ nurkuje w powietrzu i zatacza kręgi.</p>",
+                    "originalName": "Flight",
+                    "sourceId": "Compendium.wfrp4e-core.items.EO05HX7jql0g605A",
+                    "specification": "#"
                 }
             }
         },
@@ -2689,6 +3502,41 @@
                 },
                 "k0AyWgEi3764ZyYU": {
                     "specification": "Pomniejsze"
+                },
+                "r9LV0P2zR71FuoQE": {
+                    "id": "JQa5DLnTs2SEzRrc",
+                    "name": "Widzenie w Mroku",
+                    "originalName": "Dark Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc",
+                    "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>"
+                },
+                "MG2FCRtgrzz2Y0iM": {
+                    "id": "ClOlztW6hH8rslbp",
+                     "name": "Tropiciel",
+                    "originalName": "Tracker",
+                    "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp",
+                    "effects": {
+                        "ftGagmf8rj6rq3ir": {
+                            "id": "ftGagmf8rj6rq3ir",
+                             "name": "Tropiciel",
+                            "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\")))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+                        }
+                    },
+                    "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>"
+                },
+                "qEvs7E1J7WMOqesK": {
+                    "id": "MVI0lXcg6vvtooAF",
+                    "name": "Dekoncentrujący",
+                    "effects": {
+                        "et9TgrjWHZYQI7OJ": {
+                            "id": "et9TgrjWHZYQI7OJ",
+                            "name": "Dekoncentrujący",
+                            "script": "args.prefillModifiers.modifier -= 20"
+                        }
+                    },
+                    "description": "<p>Stworzenie rozprasza lub dezorientuje wrogów, być może wydzielając usypiający zapach lub powalający smród, a może ze względu na przerażająco dziwaczny wygląd. Wszystkie żywe cele w promieniu tylu metrów, ile wynosi jego Bonus z Wytrzymałości, dostają karę -20 do wszystkich Testów. Cel może dostać tę karę tylko raz - bez względu na to, jak wielu jest dekoncentrujących wrogów.</p>",
+                    "originalName": "Distracting",
+                    "sourceId": "Compendium.wfrp4e-core.items.MVI0lXcg6vvtooAF"
                 }
             }
         },
@@ -2753,6 +3601,34 @@
                 },
                 "SMwPEUsre5fZPG6H": {
                     "specification": "Bojowy"
+                },
+                "loQYHk6iwIUqPuYn": {
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "name": "Widzenie w Ciemności",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
+                    "originalName": "Night Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm"
+                },
+                "6qEqle0DJQplnBEu": {
+                    "effects": {
+                        "ftGagmf8rj6rq3ir": {
+                             "name": "Tropiciel",
+                            "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\")))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}",
+                            "id": "ftGagmf8rj6rq3ir"
+                        }
+                    },
+                    "id": "ClOlztW6hH8rslbp",
+                     "name": "Tropiciel",
+                    "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
+                    "originalName": "Tracker",
+                    "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp"
+                },
+                "jV8cMcrRvaJRDH75": {
+                    "id": "JQa5DLnTs2SEzRrc",
+                    "name": "Widzenie w Mroku",
+                    "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>",
+                    "originalName": "Dark Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc"
                 }
             }
         },
@@ -2819,6 +3695,34 @@
                 },
                 "eBDgurfRAaxD9I1L": {
                     "specification": "Wielki"
+                },
+                "tpGPHdcIwWqrgR0g": {
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "name": "Widzenie w Ciemności",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
+                    "originalName": "Night Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm"
+                },
+                "eq8OVxmgVkyOgg0C": {
+                    "id": "JQa5DLnTs2SEzRrc",
+                    "name": "Widzenie w Mroku",
+                    "sourceId": "Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc",
+                    "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>",
+                    "originalName": "Dark Vision"
+                },
+                "EfRGvgOLc72h9v8f": {
+                    "id": "yRhhOlt18COq4e1q",
+                    "name": "Szał Bojowy",
+                    "originalName": "Frenzy",
+                    "sourceId": "Compendium.wfrp4e-core.items.yRhhOlt18COq4e1q",
+                    "effects": {
+                        "jTfCjCCrfFHKqXhz": {
+                            "id": "jTfCjCCrfFHKqXhz",
+                            "name": "Szał Bojowy",
+                            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
+                        }
+                    },
+                    "description": "<p>Stworzenie może wpadać w <i>Szał Bojowy</i>. Podczas Szału Bojowego jest odporne na zasady Psychologii, nie wycofa się z żadnego powodu, musi zawsze poruszać się z pełną prędkością w stronę najbliższego widzianego przeciwnika, by go zaatakować. Jedynymi Akcjami, jakie można wtedy wykonać, są Testy Broni Białej w zwarciu albo Atletyki, by szybciej dobiec do przeciwnika. Poza tym w każdej Rundzie postać otrzymuje Akcję Darmową w postaci dodatkowego ataku wręcz, ponieważ naprawdę daje z siebie wszystko. A jakby tego było mało, zaciekłość i brutalność skutkuje podniesieniem Bonusu z Siły o +1. Postać pozostaje w Szale Bojowym, dopóki wszyscy wrogowie w polu widzenia nie zostaną unieszkodliwieni albo dopóki postać nie otrzyma przynajmniej 1 poziomu Oszołomienia lub nie nastąpi Utrata Przytomności. Po zakończeniu Szału Bojowego postać natychmiast otrzymuje 1 poziom Zmęczenia.</p>"
                 }
             }
         },
@@ -2906,6 +3810,13 @@
                 },
                 "sNEzszFrqNghkw9v": {
                     "specification": "Wierzchowiec"
+                },
+                "pypoo0XMKgSm7Uj6": {
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "name": "Widzenie w Ciemności",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
+                    "originalName": "Night Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm"
                 }
             }
         },
@@ -2961,6 +3872,13 @@
                     "originalName": "Strzelanie (25)",
                     "sourceId": "Compendium.wfrp4e-core.items.Z1TGphWhic2E3Lfx",
                     "specification": "7"
+                },
+                "Syhu15uTXiMIOzbz": {
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "name": "Widzenie w Ciemności",
+                    "originalName": "Night Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
                 }
             }
         },
@@ -3011,6 +3929,13 @@
                 },
                 "MaHgg88nINK4LttO": {
                     "specification": "Wymagający"
+                },
+                "z75UNFBPeMp6QY4X": {
+                    "id": "JQa5DLnTs2SEzRrc",
+                    "name": "Widzenie w Mroku",
+                    "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>",
+                    "originalName": "Dark Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc"
                 }
             }
         },
@@ -3067,13 +3992,75 @@
                     "specification": "4"
                 },
                 "sgcBPlKbvanYQSo5": {
-                    "specification": "Żywe Istoty"
+                    "specification": "Żywe Istoty",
+                    "name": "Nienawiść (Grupa)",
+                    "originalName": "Hatred",
+                    "id": "aE3pyW20Orvdjzj0",
+                    "description": "<p>Stworzenie naprawdę nienawidzi Celu.</p>\n<p>Postać skrywa w duszy głęboką Nienawiść do „x”, czyli jakiejś grupy ludzi czy stworzeń, np. „mieszkańców Hochlandu”, „ośmiornic bagiennych” czy „handlarzy niewolników”. Postać nigdy nie może nawiązać kontaktów z kimś lub czymś, czego nienawidzi.</p>\n<p>Za każdym razem, gdy spotyka przedstawiciela znienawidzonej grupy, musi wykonać Test Psychologii. Jeśli ten się nie uda, postać nie jest w stanie dłużej powstrzymywać swojej Nienawiści. Pod koniec każdej następnej Rundy postać może wykonać kolejny Test Psychologii, by zakończyć napad Nienawiści. Taki atak sam dobiegnie końca, kiedy wszyscy członkowie znienawidzonej grupy znajdujący się w polu widzenia albo uciekną, albo zginą. Utrata Przytomności przynosi identyczny skutek.</p>\n<p>Postać będąca w szale Nienawiści musi natychmiast podjąć próbę zniszczenia znienawidzonej grupy w najszybszy i najbardziej zabójczy znany jej sposób: </p>\n<ul>\n<li>Otrzymuje premię +1 PS do wszystkich Testów walki przeciwko tej grupie.</li>\n<li>Jest niewrażliwa na Strach oraz Zastraszanie (ale nie na Grozę) wywoływane przez znienawidzonego wroga.</li>\n</ul>",
+                    "sourceId": "Compendium.wfrp4e-core.items.aE3pyW20Orvdjzj0"
                 },
                 "Q2r4kpppLdT7Ckq1": {
                     "specification": "Duży"
                 },
                 "DpYOWHWmBKACi60D": {
                     "specification": "Pomniejsze"
+                },
+                "KmawAAjMWROIyJJ0": {
+                    "id": "JQa5DLnTs2SEzRrc",
+                    "name": "Widzenie w Mroku",
+                    "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>",
+                    "originalName": "Dark Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc"
+                },
+                "B3I6nb3AgA1YyX1o": {
+                    "id": "SfUUdOGjdYpr3KSR",
+                    "name": "Regeneracja",
+                    "originalName": "Regenerate",
+                    "sourceId": "Compendium.wfrp4e-core.items.SfUUdOGjdYpr3KSR",
+                    "effects": {
+                        "0CEu4kmUhYSxWGJZ": {
+                            "id": "0CEu4kmUhYSxWGJZ",
+                            "name": "Regeneracja",
+                            "script": "let chatData = {content: \"\", speaker : {alias : this.effect.label}, whisper: ChatMessage.getWhisperRecipients(\"GM\")}\n\nlet wounds = duplicate(this.actor.status.wounds)\nlet regen = (await new Roll(\"1d10\").roll({async: true})).total\n\nif (wounds.value >= wounds.max)\n   return\n\nif (wounds.value > 0)\n{\n   wounds.value += regen\n   if (wounds.value > wounds.max) \n        wounds.value = wounds.max\n   chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`\n   \n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse if (regen >= 8)\n{\n    chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n    wounds.value += 1\n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse\n{\n    chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n}\n\nthis.actor.update({\"system.status.wounds\" : wounds})\nChatMessage.create(chatData)"
+                        }
+                    },
+                    "description": "<p>Stworzenie leczy się w niezwykłym tempie. Nawet jego odcięte części ciała mogą odrastać. Na początku każdej Rundy, o ile pozostało mu ponad 0 Żywotności, stworzenie automatycznie regeneruje 1k10 punktów Żywotności. Jeśli pozostało mu 0 Żywotności, regeneruje jedną Ranę po wyrzuceniu 8+ na 1k10. Jeśli kiedykolwiek podczas regeneracji wyrzuci 10, może w pełni zregenerować także Ranę Krytyczną, anulując w ten sposób wszelkie powiązane z nią kary i Stany. Poza tym wszelkie Rany Krytyczne lub Rany spowodowane przez ogień nie mogą być regenerowane i powinny być zapisywane oddzielnie.</p>"
+                },
+                "sl8Soavo6VI0SGze": {
+                    "id": "EO05HX7jql0g605A",
+                    "name": "Latanie",
+                    "description": "<p>Gdy stworzenie wykonuje Ruch, może przelecieć tyle metrów, ile wynosi podana wartość. Lecąc, ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydować, czy wyląduje, czy będzie kontynuować lot. Może w ramach tego ruchu wykonać Szarżę. Jeśli na początku swojej Tury leci, musi wybrać jako Ruch Latanie. Jeśli nie jest w stanie tego zrobić, MG decyduje, jak daleko stworzenie upadnie.</p>\n<p>Biorąc stworzenie na cel, zmierz odległość horyzontalną jak normalnie, a następnie zwiększ dystans o 1 poziom. Zatem strzał na Dalekim zasięgu stanie się strzałem na Bardzo dalekim zasięgu. Natomiast jeśli był to Bardzo daleki zasięg, stworzenia nie można dosięgnąć strzałem.</p>\n<p>Lecąc, stworzenie dostaje karę -20 do wszystkich prób walki dystansowej, ponieważ nurkuje w powietrzu i zatacza kręgi.</p>",
+                    "originalName": "Flight",
+                    "sourceId": "Compendium.wfrp4e-core.items.EO05HX7jql0g605A",
+                    "specification": "#"
+                },
+                "dHAuS7ec9RXwPsbU": {
+                    "id": "yRhhOlt18COq4e1q",
+                    "originalName": "Frenzy",
+                    "sourceId": "Compendium.wfrp4e-core.items.yRhhOlt18COq4e1q",
+                    "effects": {
+                        "jTfCjCCrfFHKqXhz": {
+                            "id": "jTfCjCCrfFHKqXhz",
+                            "name": "Szał Bojowy",
+                            "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
+                        }
+                    },
+                    "name": "Szał Bojowy",
+                    "description": "<p>Stworzenie może wpadać w <i>Szał Bojowy</i>. Podczas Szału Bojowego jest odporne na zasady Psychologii, nie wycofa się z żadnego powodu, musi zawsze poruszać się z pełną prędkością w stronę najbliższego widzianego przeciwnika, by go zaatakować. Jedynymi Akcjami, jakie można wtedy wykonać, są Testy Broni Białej w zwarciu albo Atletyki, by szybciej dobiec do przeciwnika. Poza tym w każdej Rundzie postać otrzymuje Akcję Darmową w postaci dodatkowego ataku wręcz, ponieważ naprawdę daje z siebie wszystko. A jakby tego było mało, zaciekłość i brutalność skutkuje podniesieniem Bonusu z Siły o +1. Postać pozostaje w Szale Bojowym, dopóki wszyscy wrogowie w polu widzenia nie zostaną unieszkodliwieni albo dopóki postać nie otrzyma przynajmniej 1 poziomu Oszołomienia lub nie nastąpi Utrata Przytomności. Po zakończeniu Szału Bojowego postać natychmiast otrzymuje 1 poziom Zmęczenia.</p>"
+                },
+                "h2FDO2Y59IiDnawt": {
+                    "id": "ClOlztW6hH8rslbp",
+                     "name": "Tropiciel",
+                    "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
+                    "originalName": "Tracker",
+                    "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp",
+                    "effects": {
+                        "ftGagmf8rj6rq3ir": {
+                            "id": "ftGagmf8rj6rq3ir",
+                             "name": "Tropiciel",
+                            "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\")))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
+                        }
+                    }
                 }
             }
         },
@@ -3109,7 +4096,12 @@
                     "specification": "4"
                 },
                 "pAYLC52F7f5BUdpS": {
-                    "specification": "80"
+                    "specification": "80",
+                    "id": "EO05HX7jql0g605A",
+                    "name": "Latanie",
+                    "originalName": "Flight",
+                    "sourceId": "Compendium.wfrp4e-core.items.EO05HX7jql0g605A",
+                    "description": "<p>Gdy stworzenie wykonuje Ruch, może przelecieć tyle metrów, ile wynosi podana wartość. Lecąc, ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydować, czy wyląduje, czy będzie kontynuować lot. Może w ramach tego ruchu wykonać Szarżę. Jeśli na początku swojej Tury leci, musi wybrać jako Ruch Latanie. Jeśli nie jest w stanie tego zrobić, MG decyduje, jak daleko stworzenie upadnie.</p>\n<p>Biorąc stworzenie na cel, zmierz odległość horyzontalną jak normalnie, a następnie zwiększ dystans o 1 poziom. Zatem strzał na Dalekim zasięgu stanie się strzałem na Bardzo dalekim zasięgu. Natomiast jeśli był to Bardzo daleki zasięg, stworzenia nie można dosięgnąć strzałem.</p>\n<p>Lecąc, stworzenie dostaje karę -20 do wszystkich prób walki dystansowej, ponieważ nurkuje w powietrzu i zatacza kręgi.</p>"
                 },
                 "bl7qUJXazoipatJ1": {
                     "specification": "Wielki"
@@ -3118,7 +4110,12 @@
                     "specification": "3"
                 },
                 "j0MIzIYwSmHtuxOZ": {
-                    "specification": "Drapieżniki"
+                    "specification": "Drapieżniki",
+                    "id": "aE3pyW20Orvdjzj0",
+                    "name": "Nienawiść (Grupa)",
+                    "originalName": "Hatred",
+                    "sourceId": "Compendium.wfrp4e-core.items.aE3pyW20Orvdjzj0",
+                    "description": "<p>Stworzenie naprawdę nienawidzi Celu.</p>\n<p>Postać skrywa w duszy głęboką Nienawiść do „x”, czyli jakiejś grupy ludzi czy stworzeń, np. „mieszkańców Hochlandu”, „ośmiornic bagiennych” czy „handlarzy niewolników”. Postać nigdy nie może nawiązać kontaktów z kimś lub czymś, czego nienawidzi.</p>\n<p>Za każdym razem, gdy spotyka przedstawiciela znienawidzonej grupy, musi wykonać Test Psychologii. Jeśli ten się nie uda, postać nie jest w stanie dłużej powstrzymywać swojej Nienawiści. Pod koniec każdej następnej Rundy postać może wykonać kolejny Test Psychologii, by zakończyć napad Nienawiści. Taki atak sam dobiegnie końca, kiedy wszyscy członkowie znienawidzonej grupy znajdujący się w polu widzenia albo uciekną, albo zginą. Utrata Przytomności przynosi identyczny skutek.</p>\n<p>Postać będąca w szale Nienawiści musi natychmiast podjąć próbę zniszczenia znienawidzonej grupy w najszybszy i najbardziej zabójczy znany jej sposób: </p>\n<ul>\n<li>Otrzymuje premię +1 PS do wszystkich Testów walki przeciwko tej grupie.</li>\n<li>Jest niewrażliwa na Strach oraz Zastraszanie (ale nie na Grozę) wywoływane przez znienawidzonego wroga.</li>\n</ul>"
                 },
                 "Y3CxTAVyfPBWi2dz": {
                     "specification": "Ujarzmiony"
@@ -3180,7 +4177,12 @@
             },
             "items": {
                 "hDoFfhwjwCx5A4gv": {
-                    "specification": "100"
+                    "specification": "100",
+                    "name": "Latanie",
+                    "originalName": "Flight",
+                    "sourceId": "Compendium.wfrp4e-core.items.EO05HX7jql0g605A",
+                    "id": "EO05HX7jql0g605A",
+                    "description": "<p>Gdy stworzenie wykonuje Ruch, może przelecieć tyle metrów, ile wynosi podana wartość. Lecąc, ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydować, czy wyląduje, czy będzie kontynuować lot. Może w ramach tego ruchu wykonać Szarżę. Jeśli na początku swojej Tury leci, musi wybrać jako Ruch Latanie. Jeśli nie jest w stanie tego zrobić, MG decyduje, jak daleko stworzenie upadnie.</p>\n<p>Biorąc stworzenie na cel, zmierz odległość horyzontalną jak normalnie, a następnie zwiększ dystans o 1 poziom. Zatem strzał na Dalekim zasięgu stanie się strzałem na Bardzo dalekim zasięgu. Natomiast jeśli był to Bardzo daleki zasięg, stworzenia nie można dosięgnąć strzałem.</p>\n<p>Lecąc, stworzenie dostaje karę -20 do wszystkich prób walki dystansowej, ponieważ nurkuje w powietrzu i zatacza kręgi.</p>"
                 },
                 "8xtZvVei5NSSB4sk": {
                     "specification": "Duży"
@@ -3262,6 +4264,13 @@
                 },
                 "br509sRTPa9eVV4J": {
                     "specification": "Dowolny"
+                },
+                "pGXaJ53avvY3mxJS": {
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "name": "Widzenie w Ciemności",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
+                    "originalName": "Night Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm"
                 }
             }
         },
@@ -3305,7 +4314,12 @@
                     "specification": "Elfy"
                 },
                 "roSjnlW56LH4gCMv": {
-                    "specification": "Krasnoludy"
+                    "specification": "Krasnoludy",
+                    "id": "aE3pyW20Orvdjzj0",
+                    "name": "Nienawiść (Grupa)",
+                    "originalName": "Hatred",
+                    "sourceId": "Compendium.wfrp4e-core.items.aE3pyW20Orvdjzj0",
+                    "description": "<p>Stworzenie naprawdę nienawidzi Celu.</p>\n<p>Postać skrywa w duszy głęboką Nienawiść do „x”, czyli jakiejś grupy ludzi czy stworzeń, np. „mieszkańców Hochlandu”, „ośmiornic bagiennych” czy „handlarzy niewolników”. Postać nigdy nie może nawiązać kontaktów z kimś lub czymś, czego nienawidzi.</p>\n<p>Za każdym razem, gdy spotyka przedstawiciela znienawidzonej grupy, musi wykonać Test Psychologii. Jeśli ten się nie uda, postać nie jest w stanie dłużej powstrzymywać swojej Nienawiści. Pod koniec każdej następnej Rundy postać może wykonać kolejny Test Psychologii, by zakończyć napad Nienawiści. Taki atak sam dobiegnie końca, kiedy wszyscy członkowie znienawidzonej grupy znajdujący się w polu widzenia albo uciekną, albo zginą. Utrata Przytomności przynosi identyczny skutek.</p>\n<p>Postać będąca w szale Nienawiści musi natychmiast podjąć próbę zniszczenia znienawidzonej grupy w najszybszy i najbardziej zabójczy znany jej sposób: </p>\n<ul>\n<li>Otrzymuje premię +1 PS do wszystkich Testów walki przeciwko tej grupie.</li>\n<li>Jest niewrażliwa na Strach oraz Zastraszanie (ale nie na Grozę) wywoływane przez znienawidzonego wroga.</li>\n</ul>"
                 },
                 "ngw4swVSGJK6DW85": {
                     "id": "ngw4swVSGJK6DW85",
@@ -3314,6 +4328,20 @@
                     "originalName": "Strzelanie (25)",
                     "sourceId": "Compendium.wfrp4e-core.items.Z1TGphWhic2E3Lfx",
                     "specification": "7"
+                },
+                "9soKHfknWNU1KCn8": {
+                    "id": "FmHDbCOy3pH8yKhm",
+                    "name": "Widzenie w Ciemności",
+                    "originalName": "Night Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
+                    "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
+                },
+                "QZmh7VIAPnOb2BhH": {
+                    "id": "JQa5DLnTs2SEzRrc",
+                    "name": "Widzenie w Mroku",
+                    "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>",
+                    "originalName": "Dark Vision",
+                    "sourceId": "Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc"
                 }
             }
         }

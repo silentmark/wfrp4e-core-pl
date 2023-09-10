@@ -19,7 +19,8 @@
                     "name": "Zmęczenie",
                     "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');"
                 }
-            }
+            },
+            "modifier": ""
         },
         "Suspicious Mind": {
             "id": "1MI5UADJkt042mGm",
@@ -91,7 +92,8 @@
             "id": "ArCg0WaBxLgPQA8F",
             "name": "Niejednolite opierzenie",
             "description": "<p>Rzuć dwukrotnie w tabeli @Table[hitloc]{Miejsca Trafień}, by ustalić miejsca porosłe pierzem.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.ArCg0WaBxLgPQA8F"
+            "sourceId": "Compendium.wfrp4e-core.items.ArCg0WaBxLgPQA8F",
+            "modifier": ""
         },
         "Totally Unhinged": {
             "id": "atYAndIzpFIfq0Wb",
@@ -136,7 +138,8 @@
             "id": "cXeFXMf7IhxiGGPK",
             "name": "Sącząca się ropa",
             "description": "<p>Rzuć w tabeli @Table[hitloc]{Miejsca Trafień}, by ustalić miejsce, z którego się sączy.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.cXeFXMf7IhxiGGPK"
+            "sourceId": "Compendium.wfrp4e-core.items.cXeFXMf7IhxiGGPK",
+            "modifier": ""
         },
         "Inhuman Beauty": {
             "id": "dAnz27Q409wtHfxc",
@@ -201,7 +204,8 @@
                     "name": "Mięsista macka",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.items.4xF7M6ylIiGntekh\").then(item => {\n    item = item.toObject();\n    args.actor.createEmbeddedDocuments(\"Item\", [item]);\n})"
                 }
-            }
+            },
+            "modifier": ""
         },
         "Lonely Spirit": {
             "id": "HEaxp50NEPnFiihl",
@@ -303,7 +307,8 @@
             "id": "LWBMThQzG5aCSNXP",
             "name": "Świecąca skóra",
             "description": "<p>Blask porównywalny z płomieniem świecy.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.LWBMThQzG5aCSNXP"
+            "sourceId": "Compendium.wfrp4e-core.items.LWBMThQzG5aCSNXP",
+            "modifier": ""
         },
         "Unholy Rage": {
             "id": "MdrqSnA014jBggAV",
@@ -328,7 +333,8 @@
             "id": "NzRTWXHlQ8I46RW4",
             "name": "Dodatkowe usta",
             "description": "<p>Rzuć w tabeli @Table[hitloc]{Miejsca Trafień}, by ustalić miejsce, w którym się pojawią.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.NzRTWXHlQ8I46RW4"
+            "sourceId": "Compendium.wfrp4e-core.items.NzRTWXHlQ8I46RW4",
+            "modifier": ""
         },
         "Animalistic Legs": {
             "id": "op4GKikIQee7JMXw",
@@ -440,7 +446,8 @@
                     "name": "Nienawistne popędy",
                     "script": "fromUuid(\"Compendium.wfrp4e-core.items.Q2MCUrG2HppMcvN0\").then(item => {\nitem = item.toObject()\nlet species = args.actor.details.species.value || \"własną rasą\"\nitem.name = `Wrogość (do wszystkich poza: ${species})`\nargs.actor.createEmbeddedDocuments(\"Item\", [item])\n})"
                 }
-            }
+            },
+            "modifier": ""
         },
         "Extra Leg Joints": {
             "id": "u5lMTKaOsZfiE3p0",

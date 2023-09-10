@@ -109,7 +109,7 @@
         "Mental Corruption": {
             "initialization_folder": "Zepsucie i Mutacje",
             "id": "5HKnpyOk4XDPdZ7V",
-            "name": "Zepsucie Psychiczne",
+            "name": "Spaczenie Umysłu",
             "description": "Spaczony umysł nie jest tak wyraźnie widoczny jak wystająca macka ale może mieć równie niszczycielski wpływ na życie. Użyj poniższych opisów wyników rzutów jeśli chcesz stworzyć niepowtarzalną mutację psychiczną, która pasuje do danej postaci. Niech rozwija się z czasem, by stworzyć wiarygodnie brzmiący, nowy sposób myślenia. To może być zupełnie nowe otwarcie dla postaci i chwila, w której można ją zacząć odgrywać w inny, prawdopodobnie znacznie bardziej potworny sposób. Taka sytuacja to dobra okazja do zmiany Motywacji.",
             "results": {
                 "1-5": "Odrażające zachcianki",

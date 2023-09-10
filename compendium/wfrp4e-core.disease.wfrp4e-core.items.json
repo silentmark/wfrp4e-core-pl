@@ -243,7 +243,6 @@
                     "id": "QdZZlcWkKdwev0VI",
                     "name": "Apatia",
                     "script": "\n                    if (game.user.isUniqueGM) {\n    let fatigued = args.actor.hasCondition(\"fatigued\");\n    if (!fatigued)     {\n        args.actor.addCondition(\"fatigued\");\n        ui.notifications.notify(\"\" + args.actor.name + \" otrzymał zmęczenie, którego nie można usunąć dopóki nie zostanie wyleczony symptom Apatii.\");\n    }\n}"
-
                 }
             },
             "duration_value": "3d10+10",

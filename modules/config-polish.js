@@ -1,4 +1,4 @@
-Hooks.on("setup", async function () {
+Hooks.on("setup", function () {
 	const WFRP4E = {};
 
 	CONFIG.JournalEntry.noteIcons = {
