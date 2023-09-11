@@ -92,7 +92,7 @@
                 "Aans92KGaO90qXGV": {
                     "id": "Aans92KGaO90qXGV",
                     "name": "Naderwany Mięsień Tułowia",
-                    "description": "Testy związane z poruszaniem korpusem"
+                    "description": "Dowolny związany z użyciem korpusu"
                 }
             },
             "penalty": "-10 do Testów związanych z użyciem korpusu",
@@ -145,7 +145,7 @@
                 "VczyyG2FDfvOQflT": {
                     "id": "VczyyG2FDfvOQflT",
                     "name": "Naderwany Mięsień Tułowia",
-                    "description": "Testy związane z poruszaniem korpusem"
+                    "description": "Dowolny związany z użyciem korpusu"
                 }
             },
             "penalty": "-20 do Testów związanych z użyciem korpusu",
@@ -236,7 +236,7 @@
                 "qPV4jIDGN9onOAYV": {
                     "id": "qPV4jIDGN9onOAYV",
                     "name": "Amputacja Ramienia",
-                    "description": "Testy wymagające obu rąk"
+                    "description": "Dowolny wiążący się z użyciem dwóch rąk"
                 }
             },
             "penalty": "-20 do Testów wiążący się z użyciem dwóch rąk",
@@ -435,7 +435,7 @@
                 "rTIWkLVhHcMduvPJ": {
                     "id": "rTIWkLVhHcMduvPJ",
                     "name": "Amputacja Dłoni",
-                    "description": "Testy wymagające obu rąk"
+                    "description": "Dowolny wiążący się z użyciem dwóch rąk"
                 }
             },
             "penalty": "-20 do Testów wiążący się z użyciem dwóch rąk",
