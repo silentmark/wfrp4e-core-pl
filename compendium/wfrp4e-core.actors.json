@@ -257,14 +257,14 @@
                 },
                 "PJL8VIepHyRkwazR": {
                     "id": "ClOlztW6hH8rslbp",
-                     "name": "Tropiciel",
+                    "name": "Tropiciel",
                     "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
                     "originalName": "Tracker",
                     "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp",
                     "effects": {
                         "ftGagmf8rj6rq3ir": {
                             "id": "ftGagmf8rj6rq3ir",
-                             "name": "Tropiciel",
+                            "name": "Tropiciel",
                             "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\")))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
                         }
                     }
@@ -926,14 +926,14 @@
                 },
                 "SIduEI981EidAIHS": {
                     "id": "ClOlztW6hH8rslbp",
-                     "name": "Tropiciel",
+                    "name": "Tropiciel",
                     "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
                     "originalName": "Tracker",
                     "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp",
                     "effects": {
                         "ftGagmf8rj6rq3ir": {
                             "id": "ftGagmf8rj6rq3ir",
-                             "name": "Tropiciel",
+                            "name": "Tropiciel",
                             "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\")))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
                         }
                     }
@@ -1372,14 +1372,14 @@
                 },
                 "EWGTPmBgRqu2Nqft": {
                     "id": "ClOlztW6hH8rslbp",
-                     "name": "Tropiciel",
+                    "name": "Tropiciel",
                     "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
                     "originalName": "Tracker",
                     "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp",
                     "effects": {
                         "ftGagmf8rj6rq3ir": {
                             "id": "ftGagmf8rj6rq3ir",
-                             "name": "Tropiciel",
+                            "name": "Tropiciel",
                             "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\")))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
                         }
                     }
@@ -1921,14 +1921,14 @@
                 },
                 "RldqOHuJksfSdlCB": {
                     "id": "ClOlztW6hH8rslbp",
-                     "name": "Tropiciel",
+                    "name": "Tropiciel",
                     "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
                     "originalName": "Tracker",
                     "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp",
                     "effects": {
                         "ftGagmf8rj6rq3ir": {
                             "id": "ftGagmf8rj6rq3ir",
-                             "name": "Tropiciel",
+                            "name": "Tropiciel",
                             "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\")))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
                         }
                     }
@@ -2191,12 +2191,12 @@
                 },
                 "Sl8B1e9MXTHhbNDQ": {
                     "id": "ClOlztW6hH8rslbp",
-                     "name": "Tropiciel",
+                    "name": "Tropiciel",
                     "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
                     "effects": {
                         "ftGagmf8rj6rq3ir": {
                             "id": "ftGagmf8rj6rq3ir",
-                             "name": "Tropiciel",
+                            "name": "Tropiciel",
                             "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\")))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
                         }
                     },
@@ -2440,7 +2440,7 @@
                         }
                     },
                     "id": "ClOlztW6hH8rslbp",
-                     "name": "Tropiciel",
+                    "name": "Tropiciel",
                     "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
                     "originalName": "Tracker",
                     "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp"
@@ -2721,14 +2721,14 @@
                 },
                 "PJL8VIepHyRkwazR": {
                     "id": "ClOlztW6hH8rslbp",
-                     "name": "Tropiciel",
+                    "name": "Tropiciel",
                     "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
                     "originalName": "Tracker",
                     "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp",
                     "effects": {
                         "ftGagmf8rj6rq3ir": {
                             "id": "ftGagmf8rj6rq3ir",
-                             "name": "Tropiciel",
+                            "name": "Tropiciel",
                             "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\")))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
                         }
                     }
@@ -2826,14 +2826,14 @@
                 },
                 "fEOkwoDgv5DhBxAn": {
                     "id": "ClOlztW6hH8rslbp",
-                     "name": "Tropiciel",
+                    "name": "Tropiciel",
                     "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
                     "originalName": "Tracker",
                     "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp",
                     "effects": {
                         "ftGagmf8rj6rq3ir": {
                             "id": "ftGagmf8rj6rq3ir",
-                             "name": "Tropiciel",
+                            "name": "Tropiciel",
                             "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\")))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
                         }
                     }
@@ -3330,11 +3330,11 @@
                     "effects": {
                         "ftGagmf8rj6rq3ir": {
                             "id": "ftGagmf8rj6rq3ir",
-                             "name": "Tropiciel",
+                            "name": "Tropiciel",
                             "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\")))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
                         }
                     },
-                     "name": "Tropiciel",
+                    "name": "Tropiciel",
                     "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>"
                 }
             }
@@ -3512,13 +3512,13 @@
                 },
                 "MG2FCRtgrzz2Y0iM": {
                     "id": "ClOlztW6hH8rslbp",
-                     "name": "Tropiciel",
+                    "name": "Tropiciel",
                     "originalName": "Tracker",
                     "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp",
                     "effects": {
                         "ftGagmf8rj6rq3ir": {
                             "id": "ftGagmf8rj6rq3ir",
-                             "name": "Tropiciel",
+                            "name": "Tropiciel",
                             "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\")))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
                         }
                     },
@@ -3612,13 +3612,13 @@
                 "6qEqle0DJQplnBEu": {
                     "effects": {
                         "ftGagmf8rj6rq3ir": {
-                             "name": "Tropiciel",
+                            "name": "Tropiciel",
                             "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\")))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}",
                             "id": "ftGagmf8rj6rq3ir"
                         }
                     },
                     "id": "ClOlztW6hH8rslbp",
-                     "name": "Tropiciel",
+                    "name": "Tropiciel",
                     "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
                     "originalName": "Tracker",
                     "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp"
@@ -4050,14 +4050,14 @@
                 },
                 "h2FDO2Y59IiDnawt": {
                     "id": "ClOlztW6hH8rslbp",
-                     "name": "Tropiciel",
+                    "name": "Tropiciel",
                     "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
                     "originalName": "Tracker",
                     "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp",
                     "effects": {
                         "ftGagmf8rj6rq3ir": {
                             "id": "ftGagmf8rj6rq3ir",
-                             "name": "Tropiciel",
+                            "name": "Tropiciel",
                             "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\")))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
                         }
                     }

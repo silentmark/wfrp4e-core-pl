@@ -366,7 +366,7 @@
                     "script": "await this.actor.addCondition(\"dead\");\nawait this.actor.setWounds(0);\nChatMessage.create({content: await game.wfrp4e.tables.formatChatRoll(\"scatter\")});"
                 }
             },
-            "wounds": "Death",
+            "wounds": "Śmierć",
             "location": "Głowa"
         },
         "Minor Head Cut": {
@@ -455,7 +455,7 @@
                     "script": "await this.actor.addCondition(\"dead\")"
                 }
             },
-            "wounds": "Death",
+            "wounds": "Śmierć",
             "location": "Noga"
         },
         "Broken Nose": {
@@ -800,7 +800,7 @@
                     "script": "await this.actor.addCondition(\"dead\")"
                 }
             },
-            "wounds": "Death",
+            "wounds": "Śmierć",
             "location": "Korpus"
         },
         "Twisted Back": {
@@ -1207,7 +1207,7 @@
                     "script": "await this.actor.addCondition(\"dead\")"
                 }
             },
-            "wounds": "Death",
+            "wounds": "Śmierć",
             "location": "Ręka"
         },
         "Winded": {
