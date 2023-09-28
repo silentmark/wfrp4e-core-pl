@@ -114,14 +114,46 @@ Hooks.on("init", () => {
 			for (let i = 0; i < toTranslate.length; i++) {
 				const item = toTranslate[i];
 				const pack = game.babele.packs.find(pack => pack.translated && pack.hasTranslation(item));
-				if(pack) {
-					let translatedItem = pack.translations[item.name];
+				if (pack) {
+					const originalName = item.name;
+					let translatedItem = pack.translations[originalName];
 					const translatedData = dynamicMapping.map(item, translatedItem);
 					translatedItem = mergeObject(item, translatedData);
+					for (const e of translatedItem.effects) {
+						const te = pack.translations[originalName].effects[e._id];
+						mergeObject(e, te);
+					}
 					translatedItem.system.specification.value = (translations[translatedItem.id] ?? translations[translatedItem._id]).specification;
 					if ((translations[translatedItem.id] ?? translations[translatedItem._id]).tests) {
 						translatedItem.system.tests.value = (translations[translatedItem.id] ?? translations[translatedItem._id]).tests;
 					}
+				} else {
+					for (const pack of game.babele.packs) {
+						const props = Object.getOwnPropertyNames(pack.translations);
+						const itemsToCheck = [];
+						for (const prop of props) {
+							if (pack.translations[prop].name == item.name) { 
+								itemsToCheck.push(pack.translations[prop]);
+							}
+						}
+						for (const itemToCheck of itemsToCheck) {
+							let translatedItem = fromUuidSync(itemToCheck.sourceId);
+							if (translatedItem && translatedItem.type == item.type) {
+								const translatedData = dynamicMapping.map(item, translatedItem);
+								translatedItem = mergeObject(item, translatedData);
+								for (const e of translatedItem.effects) {
+									const te = pack.translations[translatedItem._id].effects[e._id];
+									mergeObject(e, te);
+								}
+								translatedItem.system.specification.value = (translations[translatedItem.id] ?? translations[translatedItem._id]).specification;
+								if ((translations[translatedItem.id] ?? translations[translatedItem._id]).tests) {
+									translatedItem.system.tests.value = (translations[translatedItem.id] ?? translations[translatedItem._id]).tests;
+								}
+								break;
+							}
+						}
+					}
+
 				}
 			}
 			return translatedItems;

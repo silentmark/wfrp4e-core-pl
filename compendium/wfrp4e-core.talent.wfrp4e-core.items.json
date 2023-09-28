@@ -1188,7 +1188,7 @@
             "name": "Etykieta (Grupa Społeczna)",
             "description": "<p>Dopóki jesteś odpowiednio ubrany i zachowujesz się należycie, potrafisz wtopić się w tłum wybranej grupy społecznej. Oto przykłady kilku z nich: Członkowie Gildii lub Cechu, Kultyści, Przestępcy, Służba, Szlachta, Uczeni, Żołnierze. Jeśli nie posiadasz tego Talentu, ci, którzy go mają, łatwo zauważą, że nie pasujesz do obcego środowiska. Widać to w zachowaniu bohatera. To oczywiście zależy od odgrywania, ale MG może wprowadzić tu odpowiedni modyfikator do Testów Ogłady.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.sYbgpSnRqSZWgwFP",
-            "tests": "Testy charyzmy lub plotkowania przeciw (Grupa Społeczna)"
+            "tests": "Charyzma lub Plotkowanie (Grupa Społeczna)"
         },
         "Contortionist": {
             "id": "TaYriYcJkFuIdBKp",

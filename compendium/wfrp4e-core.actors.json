@@ -126,7 +126,7 @@
                     "specification": "2"
                 },
                 "GwjvDLZz3PvK6xgs": {
-                    "specification": "Komornicy, Prawnicy"
+                    "specification": "Sigmaryci"
                 },
                 "Iw5LFliUnIdaa7gL": {
                     "id": "Iw5LFliUnIdaa7gL",
@@ -148,7 +148,7 @@
                     },
                     "id": "HbrwGhUl0ZXz4kLA",
                     "name": "Twardziel",
-                    "description": "<p>The creature can sustain more damage than most. Increase its Wounds by a number equal to its Toughness Bonus (applied before any Size modifers).</p>"
+                    "description": "<p>Stworzenie jest w stanie przyjąć więcej obrażeń niż większość innych istot. Zwiększ Żywotność stworzenia o wartość równą jego Bonusowi z Wytrzymałości (zastosuj to przed wszelkimi modyfikatorami Rozmiaru).</p>"
                 }
             }
         },
@@ -487,7 +487,7 @@
                 "og3WYIZ7LGZlE898": {
                     "id": "og3WYIZ7LGZlE898",
                     "name": "Szał Bojowy",
-                    "script": "args.actor.characteristics.s.bonus += 1;\nargs.actor.characteristics.s.calculationBonusModifier -= 1;"
+                    "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
                 },
                 "PydwaFG00Dz7lsLg": {
                     "id": "PydwaFG00Dz7lsLg",
@@ -791,7 +791,7 @@
                 "2EnGjwTeLDzY8fl4": {
                     "id": "2EnGjwTeLDzY8fl4",
                     "name": "Szał Bojowy",
-                    "script": "args.actor.characteristics.s.bonus += 1;\nargs.actor.characteristics.s.calculationBonusModifier -= 1;"
+                    "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
                 },
                 "2XnJOh6bY4dL2aHK": {
                     "id": "2XnJOh6bY4dL2aHK",
@@ -1323,7 +1323,7 @@
                     "name": "Miecz",
                     "description": "entries.Dieter Käsegeier.items.oLc1S9aswJrhkReV.description",
                     "originalName": "Miecz",
-                    "sourceId": "entries.Dieter Käsegeier.items.oLc1S9aswJrhkReV.sourceId"
+                    "sourceId": "Compendium.wfrp4e-core.actors.oLc1S9aswJrhkReV"
                 }
             }
         },
@@ -2612,7 +2612,7 @@
                     "name": "Dowolna Cecha Stworzenia",
                     "description": "entries.Mutant.items.PAvotUwS46Wlcked.description",
                     "originalName": "Dowolna Cecha Stworzenia",
-                    "sourceId": "entries.Mutant.items.PAvotUwS46Wlcked.sourceId"
+                    "sourceId": "Compendium.wfrp4e-core.actors.PAvotUwS46Wlcked"
                 }
             }
         },
@@ -3094,7 +3094,7 @@
                     "name": "Broń Ręczna (Szpon)",
                     "description": "entries.Kastor Erichson.items.yymhDcCRUdL6jFCS.description",
                     "originalName": "Szpon",
-                    "sourceId": "entries.Kastor Erichson.items.yymhDcCRUdL6jFCS.sourceId"
+                    "sourceId": "Compendium.wfrp4e-core.actors.yymhDcCRUdL6jFCS"
                 },
                 "ioeUa6sC1922vxS6": {
                     "id": "ioeUa6sC1922vxS6",
