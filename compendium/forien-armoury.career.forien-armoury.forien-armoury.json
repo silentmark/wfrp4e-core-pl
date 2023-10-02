@@ -1,0 +1,319 @@
+{
+    "label": "Cechy Stworzeń",
+    "mapping": {
+        "skills": "system.skills",
+        "talents": "system.talents",
+        "class": "system.class.value",
+        "careergroup": "system.careergroup.value",
+        "trappings": "system.trappings"
+    },
+    "folders": {
+        "Careers": "Profesje",
+        "Runebound Ranger": "Spleciony z Runami",
+        "Runesmith": "Kowal Run"
+    },
+    "entries": {
+        "Master Runesmith": {
+            "id": "wnUaZ4trv82UWJc2",
+            "name": "Legendarny Kowal Run",
+            "description": "<p>@UUID[Compendium.forien-armoury.forien-homerules.JournalEntry.OVrtFjJzqXZMf0uf.JournalEntryPage.e0UGR1lJQjdA68Er]{Kowal Run}</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.wnUaZ4trv82UWJc2",
+            "careergroup": "Kowal Run",
+            "class": "Uczeni",
+            "skills": [
+                "Sztuka (Grawerstwo)",
+                "Opanowanie",
+                "Odporność",
+                "Wycena",
+                "Język (Magiczny)",
+                "Wiedza (Runy)",
+                "Broń Biała (Podstawowa)",
+                "Percepcja",
+                "Wytwarzanie Run",
+                "Rzemiosło (Kowalstwo)",
+                "Unik",
+                "Plotkowanie",
+                "Targowanie",
+                "Wiedza (Historia)",
+                "Broń Biała (Dowolna)",
+                "Rzemiosło (Dowolne)",
+                "Zastraszanie",
+                "Dowodzenie",
+                "Broń Zasięgowa (Dowolna)",
+                "Badania Naukowe",
+                "Przekupstwo",
+                "Charyzma"
+            ],
+            "talents": [
+                "Władcza Postura",
+                "Mistrz Rzemiosła (Kowalstwo)",
+                "Krzepki",
+                "Znawca (Runy)"
+            ],
+            "trappings": [
+                "Licencja Cechu",
+                "1 Mistrzowski Przedmiot Runiczny"
+            ]
+        },
+        "Runebound Elder": {
+            "id": "ugz6JE1V0qfnQXXK",
+            "name": "Starszy Spleciony z Runami",
+            "description": "<p>@UUID[Compendium.forien-armoury.forien-homerules.JournalEntry.OVrtFjJzqXZMf0uf.JournalEntryPage.lV438LtXZvxHkmmK]{Spleciony z Runami}</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.ugz6JE1V0qfnQXXK",
+            "careergroup": "Spleciony z Runami",
+            "class": "Łowca Potworów",
+            "skills": [
+                "Opieka nad Zwierzętami",
+                "Atletyka",
+                "Splatanie Magii",
+                "Unik",
+                "Odporność",
+                "Wiedza (Zwierzęta)",
+                "Broń Biała (Podstawowa)",
+                "Broń Biała (Drzewcowa)",
+                "Percepcja",
+                "Zastawianie Pułapek",
+                "Opanowanie",
+                "Leczenie",
+                "Intuicja",
+                "Broń Biała (Dwuręczna)",
+                "Sztuka Przetrwania",
+                "Rzemiosło (Aptekarstwo)",
+                "Zastraszanie",
+                "Broń Biała (Dowolna)",
+                "Broń Zasięgowa (Dowolna)",
+                "Tropienie",
+                "Oswajanie",
+                "Broń Zasięgowa (Dowolna)"
+            ],
+            "talents": [
+                "Zbicie Broni lub Finta",
+                "Wściekły Atak",
+                "Atak Wyprzedzający",
+                "Odwrócenie Szans"
+            ],
+            "trappings": [
+                "Posrzebrzany Miecz",
+                "Szata i insygnia Starszego Splecionego z Runami"
+            ]
+        },
+        "Runebound Neophyte": {
+            "id": "lJgKS7d86MaVVyK2",
+            "name": "Spleciony z Runami Neofita",
+            "description": "<p>@UUID[Compendium.forien-armoury.forien-homerules.JournalEntry.OVrtFjJzqXZMf0uf.JournalEntryPage.lV438LtXZvxHkmmK]{Spleciony z Runami}</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.lJgKS7d86MaVVyK2",
+            "careergroup": "Spleciony z Runami",
+            "class": "Łowca Potworów",
+            "skills": [
+                "Opieka nad Zwierzętami",
+                "Atletyka",
+                "Splatanie Magii",
+                "Unik",
+                "Odporność",
+                "Wiedza (Zwierzęta)",
+                "Broń Biała (Podstawowa)",
+                "Broń Biała (Drzewcowa)",
+                "Percepcja",
+                "Zastawianie Pułapek"
+            ],
+            "talents": [
+                "Czytanie/Pisanie",
+                "Zimna krew",
+                "Na Cztery Łapy",
+                "Żelazna Wola"
+            ],
+            "trappings": [
+                "Sztylet",
+                "Fiolka Srebrzystego Oleju",
+                "Skórzana kurta"
+            ]
+        },
+        "Runebound Ranger": {
+            "id": "21HzH7b9KhYTbodZ",
+            "name": "Spleciony z Runami",
+            "description": "<p>@UUID[Compendium.forien-armoury.forien-homerules.JournalEntry.OVrtFjJzqXZMf0uf.JournalEntryPage.lV438LtXZvxHkmmK]{Spleciony z Runami}</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.21HzH7b9KhYTbodZ",
+            "careergroup": "Spleciony z Runami",
+            "class": "Łowca Potworów",
+            "skills": [
+                "Opieka nad Zwierzętami",
+                "Atletyka",
+                "Splatanie Magii",
+                "Unik",
+                "Odporność",
+                "Wiedza (Zwierzęta)",
+                "Broń Biała (Podstawowa)",
+                "Broń Biała (Drzewcowa)",
+                "Percepcja",
+                "Zastawianie Pułapek",
+                "Opanowanie",
+                "Leczenie",
+                "Intuicja",
+                "Broń Biała (Dwuręczna)",
+                "Sztuka Przetrwania",
+                "Rzemiosło (Aptekarstwo)"
+            ],
+            "talents": [
+                "Wyczulony Zmysł (Dowolny)",
+                "Oburęczność",
+                "Zmysł Bitewny",
+                "Magia Runiczna"
+            ],
+            "trappings": [
+                "Posrebrzany miecz",
+                "Insygnia Splecionego z Runami"
+            ]
+        },
+        "Runebound Veteran": {
+            "id": "YNpHXkH6KXLGbU9q",
+            "name": "Spleciony z Runami Weteran",
+            "description": "<p>@UUID[Compendium.forien-armoury.forien-homerules.JournalEntry.OVrtFjJzqXZMf0uf.JournalEntryPage.lV438LtXZvxHkmmK]{Spleciony z Runami}</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.YNpHXkH6KXLGbU9q",
+            "careergroup": "Spleciony z Runami",
+            "class": "Łowca Potworów",
+            "skills": [
+                "Opieka nad Zwierzętami",
+                "Atletyka",
+                "Splatanie Magii",
+                "Unik",
+                "Odporność",
+                "Wiedza (Zwierzęta)",
+                "Broń Biała (Podstawowa)",
+                "Broń Biała (Drzewcowa)",
+                "Percepcja",
+                "Zastawianie Pułapek",
+                "Opanowanie",
+                "Leczenie",
+                "Intuicja",
+                "Broń Biała (Dwuręczna)",
+                "Sztuka Przetrwania",
+                "Rzemiosło (Aptekarstwo)",
+                "Zastraszanie",
+                "Broń Biała (Dowolna)",
+                "Broń Zasięgowa (Dowolna)",
+                "Tropienie"
+            ],
+            "talents": [
+                "Cios Mierzony",
+                "Bitewny Refleks",
+                "Przyrządzanie Mikstur lub Wytwórca (Aptekarstwo)",
+                "Silny Cios"
+            ],
+            "trappings": [
+                "Blizna",
+                "Posrebrzany miecz",
+                "Insygnia Splecionego z Runami"
+            ]
+        },
+        "Runesmith": {
+            "id": "b727GD6XvEgOvDOc",
+            "name": "Kowal Run",
+            "description": "<p>@UUID[Compendium.forien-armoury.forien-homerules.JournalEntry.OVrtFjJzqXZMf0uf.JournalEntryPage.e0UGR1lJQjdA68Er]{Kowal Run}</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.b727GD6XvEgOvDOc",
+            "careergroup": "Kowal Run",
+            "class": "Uczeni",
+            "skills": [
+                "Sztuka (Grawerstwo)",
+                "Opanowanie",
+                "Odporność",
+                "Wycena",
+                "Język (Magiczny)",
+                "Wiedza (Runy)",
+                "Broń Biała (Podstawowa)",
+                "Percepcja",
+                "Wytwarzanie Run",
+                "Rzemiosło (Kowalstwo)",
+                "Unik",
+                "Plotkowanie",
+                "Targowanie",
+                "Wiedza (Historia)",
+                "Broń Biała (Dowolna)",
+                "Rzemiosło (Dowolne)",
+                "Zastraszanie",
+                "Dowodzenie",
+                "Broń Zasięgowa (Dowolna)",
+                "Badania Naukowe"
+            ],
+            "talents": [
+                "Wytwórca (Dowolne Rzemiosło)",
+                "Błękitna Krew",
+                "Nieustępliwy",
+                "Mocne Plecy"
+            ],
+            "trappings": [
+                "Licencja Cechu",
+                "Narzędzia do wykuwania run",
+                "3 Runiczne Przedmioty"
+            ]
+        },
+        "Runesmith Journeyman": {
+            "id": "RjMBxGvdLgjq7c84",
+            "name": "Kowal Run Czeladnik",
+            "description": "<p>@UUID[Compendium.forien-armoury.forien-homerules.JournalEntry.OVrtFjJzqXZMf0uf.JournalEntryPage.e0UGR1lJQjdA68Er]{Kowal Run}</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.RjMBxGvdLgjq7c84",
+            "careergroup": "Kowal Run",
+            "class": "Uczeni",
+            "skills": [
+                "Sztuka (Grawerstwo)",
+                "Opanowanie",
+                "Odporność",
+                "Wycena",
+                "Język (Magiczny)",
+                "Wiedza (Runy)",
+                "Broń Biała (Podstawowa)",
+                "Percepcja",
+                "Wytwarzanie Run",
+                "Rzemiosło (Kowalstwo)",
+                "Unik",
+                "Plotkowanie",
+                "Targowanie",
+                "Wiedza (Historia)",
+                "Broń Biała (Dowolna)",
+                "Rzemiosło (Dowolne)"
+            ],
+            "talents": [
+                "Wytwórca (Kowalstwo)",
+                "Rozpoznanie Artefaktu",
+                "Wykrywanie Magii",
+                "Zręczny"
+            ],
+            "trappings": [
+                "Licencja Cechu",
+                "Narzędzia do wykuwania run",
+                "1 Runiczny Przedmiot"
+            ]
+        },
+        "Runesmith's Apprentice": {
+            "id": "5Bwqpb2OeCmmJLPC",
+            "name": "Uczeń Kowala Run",
+            "description": "<p>@UUID[Compendium.forien-armoury.forien-homerules.JournalEntry.OVrtFjJzqXZMf0uf.JournalEntryPage.e0UGR1lJQjdA68Er]{Kowal Run}</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.5Bwqpb2OeCmmJLPC",
+            "careergroup": "Kowal Run",
+            "class": "Uczeni",
+            "skills": [
+                "Sztuka (Grawerstwo)",
+                "Opanowanie",
+                "Odporność",
+                "Wycena",
+                "Język (Magiczny)",
+                "Wiedza (Runy)",
+                "Broń Biała (Podstawowa)",
+                "Percepcja",
+                "Wytwarzanie Run",
+                "Rzemiosło (Kowalstwo)"
+            ],
+            "talents": [
+                "Talent Artystyczny",
+                "Krasnoludzkie Runy",
+                "Twardziel",
+                "Czytanie/Pisanie"
+            ],
+            "trappings": [
+                "Książka (Historia) lub Książka (Runy)",
+                "Skórzana kurta",
+                "Broń Ręczna (Młot)",
+                "Narzędzia do wykuwania run"
+            ]
+        }
+    }
+}

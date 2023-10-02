@@ -205,7 +205,8 @@
                     "script": "if (args.type == \"cast\" || (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"Language\"))))\n   args.prefillModifiers.modifier -= 30"
                 }
             },
-            "location": "Głowa"
+            "location": "Głowa",
+            "penalty": "-30 do wszystkich testów Języka."
         },
         "Amputated Leg": {
             "id": "k00PimCWkff11IA0",

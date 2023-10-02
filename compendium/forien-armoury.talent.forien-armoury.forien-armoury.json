@@ -1,0 +1,31 @@
+{
+    "label": "Cechy Stworzeń",
+    "mapping": {
+        "specification_label": "system.specification.label",
+        "specification": "system.specification.value",
+        "tests": "system.tests.value",
+        "effects": {
+            "path": "effects",
+            "converter": "effects"
+        }
+    },
+    "folders": {
+        "Talents": "Talenty"
+    },
+    "entries": {
+        "Dawi Runes": {
+            "id": "uHpjp2h82lqMGD4B",
+            "name": "Krasnoludzkie Runy",
+            "description": "<p>Gdy po raz pierwszy zdbodzięsz ten talent, natychmiast poznajesz liczbę @UUID[Compendium.forien-armoury.forien-homerules.JournalEntry.u2f4n9KXYBmBvZw3.JournalEntryPage.MJssx3cDKIqZVdXq#runes]{Run} równą Bonusowi Siły Woli.</p><p> Każdy dodatkowy poziom tego talentu pozwala nauczyć się kolejnych run w liczbie równej Bonusowi z Siły woli, każda runa kosztuje 50 PD x poziom talentu.</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.uHpjp2h82lqMGD4B",
+            "tests": "Wytwarzanie Run"
+        },
+        "Runebound Magic": {
+            "id": "XK4JNjFfh6xqui0k",
+            "name": "Magia Runiczna",
+            "description": "<p>Po wzięciu tego talentu natychmiast zyskujesz dostęp do wszystkich Gestów Mocy (Zaklęć Magii Runicznej) .</p><p>Korzystanie z Run, w przeciwieństwie do Magii Tajemnej, nie wymaga umiejętności wypowiadania na głos zaklęć, zamiast tego manipulacja wiatrami magii przebiega poprzez gesty. Aby wykonać Gest Mocy (Zaklęcie), postać musi móc swobodnie posługiwać się co najmniej jedną ręką/p><p>Posiadanie talentu @UUID[Compendium.wfrp4e-core.items.Item.tXKX29QZBdHmyMc7]{Bitewny Refleks} pozwala na wykonywanie Gestów Mocy podczas używania broni dwuręcznej (dowolnej kategorii).</p><p>Każdy poziom tego talentu oprócz pierwszego, jeden Gest Mocy może zostać wyszkolony (zapmiętany) i użyty używany w ramach darmowej akcji raz na rundę.</p><p>Gesty Mocy podlegają normalnym zasadom magii (mogą być rozpraszane oraz wywoływać manifestacje chaosu).</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.XK4JNjFfh6xqui0k",
+            "tests": "Splatanie Magii"
+        }
+    }
+}

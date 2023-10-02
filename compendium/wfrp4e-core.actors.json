@@ -16,7 +16,7 @@
         "Slenderthigh Whiptongue": {
             "id": "28MwFcDPwpcO12kt",
             "name": "Smukłoudy Jęzobicz",
-            "description": "<p>Ostatecznym celem wszystkich czempionów Chaosu jest dostąpienie apoteozy: wyniesienia ponad demoniczne szeregi i służenia swojemu panu przez wieczność jako książę demonów w Królestwach Chaosu. To potężne istoty o wielkiej mocy. Książęta demonów są straszliwymi wrogami, starcia z którymi unikają nawet najwięksi bohaterowie Imperium.</p>",
+            "description": " <p>Ostatecznym celem wszystkich czempionów Chaosu jest dostąpienie apoteozy: wyniesienia ponad demoniczne szeregi i służenia swojemu panu przez wieczność jako książę demonów w Królestwach Chaosu. To potężne istoty o wielkiej mocy. Książęta demonów są straszliwymi wrogami, starcia z którymi unikają nawet najwięksi bohaterowie Imperium.</p> ",
             "sourceId": "Compendium.wfrp4e-core.actors.28MwFcDPwpcO12kt",
             "gender": "???",
             "species": "Książę Demonów",
@@ -70,7 +70,7 @@
                 "Erkv66fXbih0f8lT": {
                     "id": "MVI0lXcg6vvtooAF",
                     "name": "Dekoncentrujący",
-                    "originalName": "Distracting",
+                    "originalName": "Dekoncentrujący",
                     "sourceId": "Compendium.wfrp4e-core.items.MVI0lXcg6vvtooAF",
                     "effects": {
                         "et9TgrjWHZYQI7OJ": {
@@ -84,7 +84,7 @@
                 "PPnSxZCLQGkunhgs": {
                     "id": "FmHDbCOy3pH8yKhm",
                     "name": "Widzenie w Ciemności",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
                 }
@@ -137,7 +137,7 @@
                     "specification": "8"
                 },
                 "HbrwGhUl0ZXz4kLA": {
-                    "originalName": "Hardy",
+                    "originalName": "Twardziel",
                     "sourceId": "Compendium.wfrp4e-core.items.HbrwGhUl0ZXz4kLA",
                     "effects": {
                         "yrUvulIfrQfAJmkB": {
@@ -236,7 +236,7 @@
                 },
                 "Ha9oYELxF5siRpWB": {
                     "name": "Widzenie w Ciemności",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
                     "id": "FmHDbCOy3pH8yKhm"
@@ -245,7 +245,7 @@
                     "id": "yrkI7ATjqLPDTFmZ",
                     "name": "Odporność na Magię",
                     "description": "<p>Efekt wywierany przez magię na stworzenie jest ograniczony. PS dowolnego wpływającego na stworzenie czaru zmniejszany jest o podaną wartość. Zatem <i>Odporność na Magię 2</i> zmniejsza PS o 2.</p>",
-                    "originalName": "Magic Resistance",
+                    "originalName": "Odporność na Magię",
                     "effects": {
                         "PWNOSwxsePCN7sKH": {
                             "id": "PWNOSwxsePCN7sKH",
@@ -259,7 +259,7 @@
                     "id": "ClOlztW6hH8rslbp",
                     "name": "Tropiciel",
                     "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
-                    "originalName": "Tracker",
+                    "originalName": "Tropiciel",
                     "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp",
                     "effects": {
                         "ftGagmf8rj6rq3ir": {
@@ -303,7 +303,7 @@
                 "H1IIwUfwFijJNbSx": {
                     "id": "FmHDbCOy3pH8yKhm",
                     "name": "Widzenie w Ciemności",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
                 }
@@ -312,7 +312,7 @@
         "Boar": {
             "id": "7629Eaow3acVS59H",
             "name": "Dzik",
-            "description": "<section id=\"secret-0mOdzM97CZBimHFw\" class=\"secret\"><p>Buszujące po lasach dziki to stworzenia skryte, ale osaczone walczą, używając ostrych kłów z zaciekłością, która szokuje nieprzygotowanych. Chociaż większość dzików ma 150–180 cm długości, niektóre osiągają niezwykłe rozmiary. Największe okazy cenione są przez orki, które wykorzystują je jako przerażające wierzchowce bojowe.</p></section>",
+            "description": "<section id=\"secret-0mOdzM97CZBimHFw\" class=\"secret\"><p>Buszujące po lasach dziki to stworzenia skryte, ale osaczone walczą, używając ostrych kłów z zaciekłością, która szokuje nieprzygotowanych. Chociaż większość dzików ma 150–180 cm długości, niektóre osiągają niezwykłe rozmiary. Największe okazy cenione są przez @UUID[Compendium.wfrp4e-core.actors.E7BiDqsB55BrOQut]{orki}, które wykorzystują je jako przerażające wierzchowce bojowe.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.actors.7629Eaow3acVS59H",
             "gender": "Różne",
             "species": "Dzik",
@@ -376,7 +376,7 @@
                 "7kdJ5EGRI0Ptn7wd": {
                     "id": "yRhhOlt18COq4e1q",
                     "name": "Szał Bojowy",
-                    "originalName": "Frenzy",
+                    "originalName": "Szał Bojowy",
                     "sourceId": "Compendium.wfrp4e-core.items.yRhhOlt18COq4e1q",
                     "effects": {
                         "jTfCjCCrfFHKqXhz": {
@@ -391,7 +391,7 @@
                     "id": "FmHDbCOy3pH8yKhm",
                     "name": "Widzenie w Ciemności",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm"
                 }
             }
@@ -463,7 +463,7 @@
                 "0RSawVy6iLMk3d3Z": {
                     "id": "0RSawVy6iLMk3d3Z",
                     "name": "Regeneracja",
-                    "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")};\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> Odzyskana żywotność:  ${regen} .`;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`;\n      }\n   }\n   else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> wyrzucił ${regen} i odzyskał 1 punkt żywotności.`\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`\n      }\n   }\n   else {\n      chatData.content += `<b>${this.actor.name}</b> Rzut na regenerację: ${regen} - brak efektu.`\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}"
+                    "script": "let chatData = {content: \"\", speaker : {alias : this.effect.name}, whisper: ChatMessage.getWhisperRecipients(\"GM\")}\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> Odzyskana żywotność:  ${regen} .`;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`;\n      }\n   }\n   else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> wyrzucił ${regen} i odzyskał 1 punkt żywotności.`\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`\n      }\n   }\n   else {\n      chatData.content += `<b>${this.actor.name}</b> Rzut na regenerację: ${regen} - brak efektu.`\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}"
                 },
                 "0usIukVS0gAmrqPq": {
                     "id": "0usIukVS0gAmrqPq",
@@ -521,13 +521,13 @@
                 "YbDMejQNiJnQInpR": {
                     "id": "SfUUdOGjdYpr3KSR",
                     "name": "Regeneracja",
-                    "originalName": "Regenerate",
+                    "originalName": "Regeneracja",
                     "sourceId": "Compendium.wfrp4e-core.items.SfUUdOGjdYpr3KSR",
                     "effects": {
                         "0CEu4kmUhYSxWGJZ": {
                             "id": "0CEu4kmUhYSxWGJZ",
                             "name": "Regeneracja",
-                            "script": "let chatData = {content: \"\", speaker : {alias : this.effect.label}, whisper: ChatMessage.getWhisperRecipients(\"GM\")}\n\nlet wounds = duplicate(this.actor.status.wounds)\nlet regen = (await new Roll(\"1d10\").roll({async: true})).total\n\nif (wounds.value >= wounds.max)\n   return\n\nif (wounds.value > 0)\n{\n   wounds.value += regen\n   if (wounds.value > wounds.max) \n        wounds.value = wounds.max\n   chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`\n   \n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse if (regen >= 8)\n{\n    chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n    wounds.value += 1\n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse\n{\n    chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n}\n\nthis.actor.update({\"system.status.wounds\" : wounds})\nChatMessage.create(chatData)"
+                            "script": "let chatData = {content: \"\", speaker : {alias : this.effect.name}, whisper: ChatMessage.getWhisperRecipients(\"GM\")}\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> Odzyskana żywotność:  ${regen} .`;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`;\n      }\n   }\n   else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> wyrzucił ${regen} i odzyskał 1 punkt żywotności.`\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`\n      }\n   }\n   else {\n      chatData.content += `<b>${this.actor.name}</b> Rzut na regenerację: ${regen} - brak efektu.`\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}"
                         }
                     },
                     "description": "<p>Stworzenie leczy się w niezwykłym tempie. Nawet jego odcięte części ciała mogą odrastać. Na początku każdej Rundy, o ile pozostało mu ponad 0 Żywotności, stworzenie automatycznie regeneruje 1k10 punktów Żywotności. Jeśli pozostało mu 0 Żywotności, regeneruje jedną Ranę po wyrzuceniu 8+ na 1k10. Jeśli kiedykolwiek podczas regeneracji wyrzuci 10, może w pełni zregenerować także Ranę Krytyczną, anulując w ten sposób wszelkie powiązane z nią kary i Stany. Poza tym wszelkie Rany Krytyczne lub Rany spowodowane przez ogień nie mogą być regenerowane i powinny być zapisywane oddzielnie.</p>"
@@ -536,7 +536,7 @@
                     "id": "yRhhOlt18COq4e1q",
                     "name": "Szał Bojowy",
                     "description": "<p>Stworzenie może wpadać w <i>Szał Bojowy</i>. Podczas Szału Bojowego jest odporne na zasady Psychologii, nie wycofa się z żadnego powodu, musi zawsze poruszać się z pełną prędkością w stronę najbliższego widzianego przeciwnika, by go zaatakować. Jedynymi Akcjami, jakie można wtedy wykonać, są Testy Broni Białej w zwarciu albo Atletyki, by szybciej dobiec do przeciwnika. Poza tym w każdej Rundzie postać otrzymuje Akcję Darmową w postaci dodatkowego ataku wręcz, ponieważ naprawdę daje z siebie wszystko. A jakby tego było mało, zaciekłość i brutalność skutkuje podniesieniem Bonusu z Siły o +1. Postać pozostaje w Szale Bojowym, dopóki wszyscy wrogowie w polu widzenia nie zostaną unieszkodliwieni albo dopóki postać nie otrzyma przynajmniej 1 poziomu Oszołomienia lub nie nastąpi Utrata Przytomności. Po zakończeniu Szału Bojowego postać natychmiast otrzymuje 1 poziom Zmęczenia.</p>",
-                    "originalName": "Frenzy",
+                    "originalName": "Szał Bojowy",
                     "sourceId": "Compendium.wfrp4e-core.items.yRhhOlt18COq4e1q",
                     "effects": {
                         "jTfCjCCrfFHKqXhz": {
@@ -549,7 +549,7 @@
                 "wjsNJ53vxrRdiatn": {
                     "id": "yrkI7ATjqLPDTFmZ",
                     "name": "Odporność na Magię",
-                    "originalName": "Magic Resistance",
+                    "originalName": "Odporność na Magię",
                     "sourceId": "Compendium.wfrp4e-core.items.yrkI7ATjqLPDTFmZ",
                     "effects": {
                         "PWNOSwxsePCN7sKH": {
@@ -563,7 +563,7 @@
                 "K7d7L2AAjm7RryqI": {
                     "id": "FmHDbCOy3pH8yKhm",
                     "name": "Widzenie w Ciemności",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
                 }
@@ -572,7 +572,7 @@
         "Griffon": {
             "id": "8g9rnHLiZ1pJcPPt",
             "name": "Gryf",
-            "description": "<section id=\"secret-idJ9qUex4SNJsvUT\" class=\"secret\"><p>Posiadające przód ciała i skrzydła orła oraz zad wielkiego kota gryfy to eleganckie bestie o naturalnie dumnym i królewskim wyglądzie. Gniazdują wysoko w górach otaczających Imperium i są szybkimi, skutecznymi zabójcami, nieskorymi do bezmyślnego zniszczenia, jakiego dokonują stwory takie jak hipogryfy lub mantikory. Być może ze względu na ten pozór szlachetności wizerunek gryfa jest nadzwyczaj popularny w Imperium i wykorzystywany w heraldyce, ikonografii religijnej oraz jako symbol samego Imperium. Ponadto gryfy są jednymi z najinteligentniejszych zwierząt. Jeśli zostaną schwytane stosunkowo młode i poddane prawidłowemu szkoleniu, mogą być niesamowicie wierne, zdolne do przewidywania i posłusznego wykonywania szerokiego wachlarza komend. Są tak bardzo poszukiwane, że co rusz słyszy się o myśliwym, który stracił życie, próbując zdobyć jaja gryfa na sprzedaż. Prawdopodobnie najsłynniejszym gryfem w Reiklandzie jest Szpon Śmierci. Trzymany w Imperialnym Zwierzyńcu w Altdorfie Szpon Śmierci stanowi osobistą własność następcy tronu Reiklandu i podobno wykluł się dzięki troskliwej opiece samego Imperatora Karla-Franza – ta opowieść zapoczątkowała drukowanie wszelkiego rodzaju sprośnych karykatur w wywrotowych pamfletach..</p></section>",
+            "description": "<section id=\"secret-idJ9qUex4SNJsvUT\" class=\"secret\"><p>Posiadające przód ciała i skrzydła orła oraz zad wielkiego kota gryfy to eleganckie bestie o naturalnie dumnym i królewskim wyglądzie. Gniazdują wysoko w górach otaczających Imperium i są szybkimi, skutecznymi zabójcami, nieskorymi do bezmyślnego zniszczenia, jakiego dokonują stwory takie jak @UUID[Compendium.wfrp4e-core.actors.RiXpMLex8SZf6gaQ]{hipogryfy} lub @UUID[Compendium.wfrp4e-core.actors.XtVkAVgZRIIgrBXb]{mantikory}. Być może ze względu na ten pozór szlachetności wizerunek gryfa jest nadzwyczaj popularny w Imperium i wykorzystywany w heraldyce, ikonografii religijnej oraz jako symbol samego Imperium. Ponadto gryfy są jednymi z najinteligentniejszych zwierząt. Jeśli zostaną schwytane stosunkowo młode i poddane prawidłowemu szkoleniu, mogą być niesamowicie wierne, zdolne do przewidywania i posłusznego wykonywania szerokiego wachlarza komend. Są tak bardzo poszukiwane, że co rusz słyszy się o myśliwym, który stracił życie, próbując zdobyć jaja gryfa na sprzedaż. Prawdopodobnie najsłynniejszym gryfem w Reiklandzie jest Szpon Śmierci. Trzymany w @UUID[Compendium.wfrp4e-altdorf.journals.cDOlXEpTvnuaOJ0P.JournalEntryPage.ulseg2IAlTWy7m3s]{Imperialnym Zwierzyńcu} w @UUID[Compendium.wfrp4e-core.journals.ozE2DMCMK64eE5pD.JournalEntryPage.V6tkgQ9A2skppjyl]{Altdorfie} Szpon Śmierci stanowi osobistą własność następcy tronu Reiklandu i podobno wykluł się dzięki troskliwej opiece samego Imperatora Karla-Franza – ta opowieść zapoczątkowała drukowanie wszelkiego rodzaju sprośnych karykatur w wywrotowych pamfletach..</p></section>",
             "sourceId": "Compendium.wfrp4e-core.actors.8g9rnHLiZ1pJcPPt",
             "gender": "Różne",
             "species": "Gryf",
@@ -597,7 +597,7 @@
                     "specification": "80",
                     "id": "EO05HX7jql0g605A",
                     "name": "Latanie",
-                    "originalName": "Flight",
+                    "originalName": "Latanie",
                     "sourceId": "Compendium.wfrp4e-core.items.EO05HX7jql0g605A",
                     "description": "<p>Gdy stworzenie wykonuje Ruch, może przelecieć tyle metrów, ile wynosi podana wartość. Lecąc, ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydować, czy wyląduje, czy będzie kontynuować lot. Może w ramach tego ruchu wykonać Szarżę. Jeśli na początku swojej Tury leci, musi wybrać jako Ruch Latanie. Jeśli nie jest w stanie tego zrobić, MG decyduje, jak daleko stworzenie upadnie.</p>\n<p>Biorąc stworzenie na cel, zmierz odległość horyzontalną jak normalnie, a następnie zwiększ dystans o 1 poziom. Zatem strzał na Dalekim zasięgu stanie się strzałem na Bardzo dalekim zasięgu. Natomiast jeśli był to Bardzo daleki zasięg, stworzenia nie można dosięgnąć strzałem.</p>\n<p>Lecąc, stworzenie dostaje karę -20 do wszystkich prób walki dystansowej, ponieważ nurkuje w powietrzu i zatacza kręgi.</p>"
                 },
@@ -620,7 +620,7 @@
                     "id": "FmHDbCOy3pH8yKhm",
                     "name": "Widzenie w Ciemności",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm"
                 }
             }
@@ -659,7 +659,7 @@
                 },
                 "9v0zzqcnGg4Ch00U": {
                     "name": "Dekoncentrujący",
-                    "originalName": "Distracting",
+                    "originalName": "Dekoncentrujący",
                     "sourceId": "Compendium.wfrp4e-core.items.MVI0lXcg6vvtooAF",
                     "effects": {
                         "et9TgrjWHZYQI7OJ": {
@@ -674,7 +674,7 @@
                 "ZU3t7GgNhKWjtBnn": {
                     "id": "FmHDbCOy3pH8yKhm",
                     "name": "Widzenie w Ciemności",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
                 }
@@ -746,13 +746,13 @@
                 "GqOvZ9qNezY3OOdm": {
                     "id": "M5QSWOYt2Rbv2yxW",
                     "name": "Kwasowa Krew",
-                    "originalName": "Corrosive Blood",
+                    "originalName": "Kwasowa Krew",
                     "sourceId": "Compendium.wfrp4e-core.items.M5QSWOYt2Rbv2yxW",
                     "effects": {
                         "mzNcVAruDOTiCGhS": {
                             "id": "mzNcVAruDOTiCGhS",
                             "name": "Kwasowa Krew",
-                            "script": "let content = `<b>${this.effect.label}</b>: All targets engaged with <b>${this.actor.prototypeToken.name}</b> take [[/r 1d10]] Damage, modified by TB and AP.`\n\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})"
+                            "script": "let content = `<b>${this.effect.name}</b>: Wszystkie cele związane walką z aktorem: <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń, uwzględniając modyfikatory z Wytrzymałości i Pancerza.`;\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}});"
                         }
                     },
                     "description": "<p>Krew stworzenia jest żrąca. Za każdym razem, gdy zostanie ono ranione, tryska z niego krew i wszystkie związane z nim walką cele dostają [[/r 1d10]] Ran. Są one normalnie obniżane przez Bonus z Wytrzymałości i Punkty Pancerza, ale wynoszą minimum 1.</p>"
@@ -761,7 +761,7 @@
                     "id": "MVI0lXcg6vvtooAF",
                     "name": "Dekoncentrujący",
                     "description": "<p>Stworzenie rozprasza lub dezorientuje wrogów, być może wydzielając usypiający zapach lub powalający smród, a może ze względu na przerażająco dziwaczny wygląd. Wszystkie żywe cele w promieniu tylu metrów, ile wynosi jego Bonus z Wytrzymałości, dostają karę -20 do wszystkich Testów. Cel może dostać tę karę tylko raz - bez względu na to, jak wielu jest dekoncentrujących wrogów.</p>",
-                    "originalName": "Distracting",
+                    "originalName": "Dekoncentrujący",
                     "sourceId": "Compendium.wfrp4e-core.items.MVI0lXcg6vvtooAF",
                     "effects": {
                         "et9TgrjWHZYQI7OJ": {
@@ -775,7 +775,7 @@
                     "id": "FmHDbCOy3pH8yKhm",
                     "name": "Widzenie w Ciemności",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm"
                 }
             }
@@ -817,7 +817,7 @@
                 "e9fI6pmDjlTEn7tU": {
                     "id": "MVI0lXcg6vvtooAF",
                     "name": "Dekoncentrujący",
-                    "originalName": "Distracting",
+                    "originalName": "Dekoncentrujący",
                     "sourceId": "Compendium.wfrp4e-core.items.MVI0lXcg6vvtooAF",
                     "effects": {
                         "et9TgrjWHZYQI7OJ": {
@@ -830,7 +830,7 @@
                 },
                 "tfS2IqRqVndOgGjv": {
                     "id": "yRhhOlt18COq4e1q",
-                    "originalName": "Frenzy",
+                    "originalName": "Szał Bojowy",
                     "name": "Szał Bojowy",
                     "sourceId": "Compendium.wfrp4e-core.items.yRhhOlt18COq4e1q",
                     "effects": {
@@ -885,7 +885,7 @@
                 "yXWM7kW5OtrJn11h": {
                     "id": "yXWM7kW5OtrJn11h",
                     "name": "Regeneracja",
-                    "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")};\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> Odzyskana żywotność:  ${regen} .`;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`;\n      }\n   }\n   else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> wyrzucił ${regen} i odzyskał 1 punkt żywotności.`\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`\n      }\n   }\n   else {\n      chatData.content += `<b>${this.actor.name}</b> Rzut na regenerację: ${regen} - brak efektu.`\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}"
+                    "script": "let chatData = {content: \"\", speaker : {alias : this.effect.name}, whisper: ChatMessage.getWhisperRecipients(\"GM\")}\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> Odzyskana żywotność:  ${regen} .`;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`;\n      }\n   }\n   else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> wyrzucił ${regen} i odzyskał 1 punkt żywotności.`\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`\n      }\n   }\n   else {\n      chatData.content += `<b>${this.actor.name}</b> Rzut na regenerację: ${regen} - brak efektu.`\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}"
                 }
             },
             "items": {
@@ -907,18 +907,18 @@
                     "id": "FmHDbCOy3pH8yKhm",
                     "name": "Widzenie w Ciemności",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm"
                 },
                 "yRe6OWVM89awFWO5": {
                     "id": "SfUUdOGjdYpr3KSR",
-                    "originalName": "Regenerate",
+                    "originalName": "Regeneracja",
                     "sourceId": "Compendium.wfrp4e-core.items.SfUUdOGjdYpr3KSR",
                     "effects": {
                         "0CEu4kmUhYSxWGJZ": {
                             "id": "0CEu4kmUhYSxWGJZ",
                             "name": "Regeneracja",
-                            "script": "let chatData = {content: \"\", speaker : {alias : this.effect.label}, whisper: ChatMessage.getWhisperRecipients(\"GM\")}\n\nlet wounds = duplicate(this.actor.status.wounds)\nlet regen = (await new Roll(\"1d10\").roll({async: true})).total\n\nif (wounds.value >= wounds.max)\n   return\n\nif (wounds.value > 0)\n{\n   wounds.value += regen\n   if (wounds.value > wounds.max) \n        wounds.value = wounds.max\n   chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`\n   \n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse if (regen >= 8)\n{\n    chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n    wounds.value += 1\n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse\n{\n    chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n}\n\nthis.actor.update({\"system.status.wounds\" : wounds})\nChatMessage.create(chatData)"
+                            "script": "let chatData = {content: \"\", speaker : {alias : this.effect.name}, whisper: ChatMessage.getWhisperRecipients(\"GM\")}\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> Odzyskana żywotność:  ${regen} .`;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`;\n      }\n   }\n   else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> wyrzucił ${regen} i odzyskał 1 punkt żywotności.`\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`\n      }\n   }\n   else {\n      chatData.content += `<b>${this.actor.name}</b> Rzut na regenerację: ${regen} - brak efektu.`\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}"
                         }
                     },
                     "name": "Regeneracja",
@@ -928,7 +928,7 @@
                     "id": "ClOlztW6hH8rslbp",
                     "name": "Tropiciel",
                     "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
-                    "originalName": "Tracker",
+                    "originalName": "Tropiciel",
                     "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp",
                     "effects": {
                         "ftGagmf8rj6rq3ir": {
@@ -1145,7 +1145,7 @@
                 "1tVLQaFhNyXvMMUX": {
                     "id": "FmHDbCOy3pH8yKhm",
                     "name": "Widzenie w Ciemności",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
                 }
@@ -1207,7 +1207,7 @@
                 },
                 "HTyifBrlocGVD7qi": {
                     "name": "Widzenie w Ciemności",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
                     "id": "FmHDbCOy3pH8yKhm",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
@@ -1217,7 +1217,7 @@
         "Orc": {
             "id": "E7BiDqsB55BrOQut",
             "name": "Ork",
-            "description": "<section id=\"secret-Fkkw0kiOwXuiWN3G\" class=\"secret\"><blockquote><p>My som najlepsze. My nie som jak te słabe gobosy czy gupie trole. My som twardziele! Jak które powiedzom, że my nie som, to my im zdepczem łby.</p><p style=\"text-align: right\"><em>– Gurkk Czachołap, wódz orków.</em></p></blockquote>\n<p></p>\n<p>Orki są wstrętne, brutalne, wojownicze i niemal niewrażliwe na ból. Mają muskularne, krępe ciała, szerokie, potężne barki i nie pozwolą, by drobnostka w rodzaju straconej ręki przeszkodziła im w dobrym łomocie. Stworzone są do walki i niczego innego nie lubią bardziej. Gdy nie mają wrogów, z którymi mogą walczyć, biorą się za grupy rywalizujących z nimi zielonoskórych. Jeśli nie ma rywali, walczą między sobą. Chociaż nie tak liczne jak gobliny, są od nich większe i silniejsze, co pokazują przy każdej okazji. Orki mogą osiągać ogromne rozmiary. Większe orki są silniejsze, twardsze i bardziej agresywne, a zatem cieszą się większym prestiżem: w ich wojowniczym społeczeństwie rację ma ten, kto jest silniejszy. Niektóre orki dosiadają w boju wielkich dzików. To widok, który u mało kogo nie wzbudza przerażenia.</p></section>",
+            "description": "<section id=\"secret-Fkkw0kiOwXuiWN3G\" class=\"secret\"><blockquote><p>My som najlepsze. My nie som jak te słabe gobosy czy gupie trole. My som twardziele! Jak które powiedzom, że my nie som, to my im zdepczem łby.</p><p style=\"text-align: right\"><em>– Gurkk Czachołap, wódz orków.</em></p></blockquote>\n<p></p>\n<p>Orki są wstrętne, brutalne, wojownicze i niemal niewrażliwe na ból. Mają muskularne, krępe ciała, szerokie, potężne barki i nie pozwolą, by drobnostka w rodzaju straconej ręki przeszkodziła im w dobrym łomocie. Stworzone są do walki i niczego innego nie lubią bardziej. Gdy nie mają wrogów, z którymi mogą walczyć, biorą się za grupy rywalizujących z nimi zielonoskórych. Jeśli nie ma rywali, walczą między sobą. Chociaż nie tak liczne jak @UUID[Compendium.wfrp4e-core.actors.zzdOpKqBC28J66Mn]{gobliny}, są od nich większe i silniejsze, co pokazują przy każdej okazji. Orki mogą osiągać ogromne rozmiary. Większe orki są silniejsze, twardsze i bardziej agresywne, a zatem cieszą się większym prestiżem: w ich wojowniczym społeczeństwie rację ma ten, kto jest silniejszy. Niektóre orki dosiadają w boju wielkich dzików. To widok, który u mało kogo nie wzbudza przerażenia.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.actors.E7BiDqsB55BrOQut",
             "gender": "???",
             "species": "Ork",
@@ -1254,7 +1254,7 @@
                 "HC94u6XxBshfQZ5H": {
                     "id": "FmHDbCOy3pH8yKhm",
                     "name": "Widzenie w Ciemności",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
                 }
@@ -1263,7 +1263,7 @@
         "Dieter Käsegeier": {
             "id": "ePPk15Vxu9RxPtYV",
             "name": "Dieter Käsegeier",
-            "description": "entries.Dieter Käsegeier.description",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-core.actors.ePPk15Vxu9RxPtYV",
             "gender": "Mężczyzna",
             "species": "Człowiek",
@@ -1321,7 +1321,7 @@
                 "oLc1S9aswJrhkReV": {
                     "id": "oLc1S9aswJrhkReV",
                     "name": "Miecz",
-                    "description": "entries.Dieter Käsegeier.items.oLc1S9aswJrhkReV.description",
+                    "description": " ",
                     "originalName": "Miecz",
                     "sourceId": "Compendium.wfrp4e-core.actors.oLc1S9aswJrhkReV"
                 }
@@ -1338,7 +1338,7 @@
                 "DP3A4yKupZcsSVEa": {
                     "id": "DP3A4yKupZcsSVEa",
                     "name": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
+                    "script": "<b></b>if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") });"
                 },
                 "EBgGr3gX7hyKDx4S": {
                     "id": "EBgGr3gX7hyKDx4S",
@@ -1366,7 +1366,7 @@
                 "sv3c7137dOIJD1Se": {
                     "id": "FmHDbCOy3pH8yKhm",
                     "name": "Widzenie w Ciemności",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
                 },
@@ -1374,7 +1374,7 @@
                     "id": "ClOlztW6hH8rslbp",
                     "name": "Tropiciel",
                     "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
-                    "originalName": "Tracker",
+                    "originalName": "Tropiciel",
                     "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp",
                     "effects": {
                         "ftGagmf8rj6rq3ir": {
@@ -1451,7 +1451,7 @@
                     "specification": "100",
                     "id": "EO05HX7jql0g605A",
                     "name": "Latanie",
-                    "originalName": "Flight",
+                    "originalName": "Latanie",
                     "sourceId": "Compendium.wfrp4e-core.items.EO05HX7jql0g605A",
                     "description": "<p>Gdy stworzenie wykonuje Ruch, może przelecieć tyle metrów, ile wynosi podana wartość. Lecąc, ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydować, czy wyląduje, czy będzie kontynuować lot. Może w ramach tego ruchu wykonać Szarżę. Jeśli na początku swojej Tury leci, musi wybrać jako Ruch Latanie. Jeśli nie jest w stanie tego zrobić, MG decyduje, jak daleko stworzenie upadnie.</p>\n<p>Biorąc stworzenie na cel, zmierz odległość horyzontalną jak normalnie, a następnie zwiększ dystans o 1 poziom. Zatem strzał na Dalekim zasięgu stanie się strzałem na Bardzo dalekim zasięgu. Natomiast jeśli był to Bardzo daleki zasięg, stworzenia nie można dosięgnąć strzałem.</p>\n<p>Lecąc, stworzenie dostaje karę -20 do wszystkich prób walki dystansowej, ponieważ nurkuje w powietrzu i zatacza kręgi.</p>"
                 },
@@ -1466,7 +1466,7 @@
         "Ghost": {
             "id": "GgSxlomoV220kd3G",
             "name": "Duch",
-            "description": "<section id=\"secret-9uAOsyYqBzjZwuw2\" class=\"secret\"><p>Duchy to pozostałości udręczonych istot, które umarły, za życia nie ukończywszy swoich spraw. Podobnie jak szkielety i zombi, duchy mogą być wzywane przez wampiry lub nekromantów albo nawiedzać obszary przesycone Dhar. W wyjątkowych okolicznościach szczególnie zdeterminowane duchy wyrywają się z Królestwa Morra, pragnąc wypełnić swoje życiowe plany. Jednak takie przypadki szybko przyciągają uwagę Morrytów lub czarodziejów Zakonu Ametystu. Wzywane za pomocą nekromanckiej sztuki duchy zbierają się w rój, tworząc wielkie Zastępy Duchów, które spadają jak burza na wrogów, siejąc strach i zamęt.</p></section>",
+            "description": "<section id=\"secret-9uAOsyYqBzjZwuw2\" class=\"secret\"><p>Duchy to pozostałości udręczonych istot, które umarły, za życia nie ukończywszy swoich spraw. Podobnie jak @UUID[Compendium.wfrp4e-core.actors.Mt5JAoOSaEH1PdcP]{szkielety} i @UUID[Compendium.wfrp4e-core.actors.T79RqnDOAQLn3I1s]{zombi}, duchy mogą być wzywane przez @UUID[Compendium.wfrp4e-core.actors.T5qAtpoKtB8iwTBd]{wampiry} lub nekromantów albo nawiedzać obszary przesycone Dhar. W wyjątkowych okolicznościach szczególnie zdeterminowane duchy wyrywają się z Królestwa Morra, pragnąc wypełnić swoje życiowe plany. Jednak takie przypadki szybko przyciągają uwagę Morrytów lub czarodziejów Zakonu Ametystu. Wzywane za pomocą nekromanckiej sztuki duchy zbierają się w rój, tworząc wielkie Zastępy Duchów, które spadają jak burza na wrogów, siejąc strach i zamęt.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.actors.GgSxlomoV220kd3G",
             "gender": "???",
             "species": "Nieumarły",
@@ -1498,13 +1498,13 @@
                     "id": "JQa5DLnTs2SEzRrc",
                     "name": "Widzenie w Mroku",
                     "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>",
-                    "originalName": "Dark Vision",
+                    "originalName": "Widzenie w Mroku",
                     "sourceId": "Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc"
                 },
                 "PvvKNlPhknsCQLfe": {
                     "id": "aE3pyW20Orvdjzj0",
                     "name": "Nienawiść (Grupa)",
-                    "originalName": "Hatred",
+                    "originalName": "Nienawiść",
                     "sourceId": "Compendium.wfrp4e-core.items.aE3pyW20Orvdjzj0",
                     "specification": "Zielonoskórzy",
                     "description": "<p>Stworzenie naprawdę nienawidzi Celu.</p>\n<p>Postać skrywa w duszy głęboką Nienawiść do „x”, czyli jakiejś grupy ludzi czy stworzeń, np. „mieszkańców Hochlandu”, „ośmiornic bagiennych” czy „handlarzy niewolników”. Postać nigdy nie może nawiązać kontaktów z kimś lub czymś, czego nienawidzi.</p>\n<p>Za każdym razem, gdy spotyka przedstawiciela znienawidzonej grupy, musi wykonać Test Psychologii. Jeśli ten się nie uda, postać nie jest w stanie dłużej powstrzymywać swojej Nienawiści. Pod koniec każdej następnej Rundy postać może wykonać kolejny Test Psychologii, by zakończyć napad Nienawiści. Taki atak sam dobiegnie końca, kiedy wszyscy członkowie znienawidzonej grupy znajdujący się w polu widzenia albo uciekną, albo zginą. Utrata Przytomności przynosi identyczny skutek.</p>\n<p>Postać będąca w szale Nienawiści musi natychmiast podjąć próbę zniszczenia znienawidzonej grupy w najszybszy i najbardziej zabójczy znany jej sposób: </p>\n<ul>\n<li>Otrzymuje premię +1 PS do wszystkich Testów walki przeciwko tej grupie.</li>\n<li>Jest niewrażliwa na Strach oraz Zastraszanie (ale nie na Grozę) wywoływane przez znienawidzonego wroga.</li>\n</ul>"
@@ -1522,7 +1522,7 @@
                 "4KDekULCgM5D43lo": {
                     "id": "4KDekULCgM5D43lo",
                     "name": "Regeneracja",
-                    "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")};\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> Odzyskana żywotność:  ${regen} .`;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`;\n      }\n   }\n   else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> wyrzucił ${regen} i odzyskał 1 punkt żywotności.`\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`\n      }\n   }\n   else {\n      chatData.content += `<b>${this.actor.name}</b> Rzut na regenerację: ${regen} - brak efektu.`\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}"
+                    "script": "let chatData = {content: \"\", speaker : {alias : this.effect.name}, whisper: ChatMessage.getWhisperRecipients(\"GM\")}\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> Odzyskana żywotność:  ${regen} .`;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`;\n      }\n   }\n   else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> wyrzucił ${regen} i odzyskał 1 punkt żywotności.`\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`\n      }\n   }\n   else {\n      chatData.content += `<b>${this.actor.name}</b> Rzut na regenerację: ${regen} - brak efektu.`\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}"
                 },
                 "ctGcZ8iKfXP1XhPe": {
                     "id": "ctGcZ8iKfXP1XhPe",
@@ -1556,25 +1556,25 @@
                     "id": "JQa5DLnTs2SEzRrc",
                     "name": "Widzenie w Mroku",
                     "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>",
-                    "originalName": "Dark Vision",
+                    "originalName": "Widzenie w Mroku",
                     "sourceId": "Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc"
                 },
                 "tdjhpd6AdJORQe6D": {
                     "id": "SfUUdOGjdYpr3KSR",
                     "name": "Regeneracja",
                     "description": "<p>Stworzenie leczy się w niezwykłym tempie. Nawet jego odcięte części ciała mogą odrastać. Na początku każdej Rundy, o ile pozostało mu ponad 0 Żywotności, stworzenie automatycznie regeneruje 1k10 punktów Żywotności. Jeśli pozostało mu 0 Żywotności, regeneruje jedną Ranę po wyrzuceniu 8+ na 1k10. Jeśli kiedykolwiek podczas regeneracji wyrzuci 10, może w pełni zregenerować także Ranę Krytyczną, anulując w ten sposób wszelkie powiązane z nią kary i Stany. Poza tym wszelkie Rany Krytyczne lub Rany spowodowane przez ogień nie mogą być regenerowane i powinny być zapisywane oddzielnie.</p>",
-                    "originalName": "Regenerate",
+                    "originalName": "Regeneracja",
                     "sourceId": "Compendium.wfrp4e-core.items.SfUUdOGjdYpr3KSR",
                     "effects": {
                         "0CEu4kmUhYSxWGJZ": {
                             "id": "0CEu4kmUhYSxWGJZ",
                             "name": "Regeneracja",
-                            "script": "let chatData = {content: \"\", speaker : {alias : this.effect.label}, whisper: ChatMessage.getWhisperRecipients(\"GM\")}\n\nlet wounds = duplicate(this.actor.status.wounds)\nlet regen = (await new Roll(\"1d10\").roll({async: true})).total\n\nif (wounds.value >= wounds.max)\n   return\n\nif (wounds.value > 0)\n{\n   wounds.value += regen\n   if (wounds.value > wounds.max) \n        wounds.value = wounds.max\n   chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`\n   \n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse if (regen >= 8)\n{\n    chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n    wounds.value += 1\n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse\n{\n    chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n}\n\nthis.actor.update({\"system.status.wounds\" : wounds})\nChatMessage.create(chatData)"
+                            "script": "let chatData = {content: \"\", speaker : {alias : this.effect.name}, whisper: ChatMessage.getWhisperRecipients(\"GM\")}\n\nlet wounds = duplicate(this.actor.status.wounds)\nlet regen = (await new Roll(\"1d10\").roll({async: true})).total\n\nif (wounds.value >= wounds.max)\n   return\n\nif (wounds.value > 0)\n{\n   wounds.value += regen\n   if (wounds.value > wounds.max) \n        wounds.value = wounds.max\n   chatData.content += `<b>${this.actor.name}</b> Wyleczył ${regen} Ran.`\n   \n    if (regen == 10)\n       chatData.content += `<br>Dodatkowo, zregenerował Ranę Krytyczną.`\n}\nelse if (regen >= 8)\n{\n    chatData.content += `<b>${this.actor.name}</b> wyrzucił a ${regen} i regeneruje 1 Ranę.`\n    wounds.value += 1\n    if (regen == 10)\n       chatData.content += `<br>Dodatkowo, zregenerował Ranę Krytyczną.`\n}\nelse\n{\n    chatData.content += `<b>${this.actor.name}</b> Rzut na ${regen} - Brak efektów.`\n}\n\nthis.actor.update({\"system.status.wounds\" : wounds})\nChatMessage.create(chatData)"
                         }
                     }
                 },
                 "FjLM8VwaISABC2Tt": {
-                    "originalName": "Frenzy",
+                    "originalName": "Szał Bojowy",
                     "id": "yRhhOlt18COq4e1q",
                     "name": "Szał Bojowy",
                     "sourceId": "Compendium.wfrp4e-core.items.yRhhOlt18COq4e1q",
@@ -1614,7 +1614,7 @@
                     "id": "JQa5DLnTs2SEzRrc",
                     "name": "Widzenie w Mroku",
                     "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>",
-                    "originalName": "Dark Vision",
+                    "originalName": "Widzenie w Mroku",
                     "sourceId": "Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc"
                 }
             }
@@ -1672,7 +1672,7 @@
                 },
                 "yStBDh5YsnBogbUw": {
                     "name": "Widzenie w Ciemności",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
                     "id": "FmHDbCOy3pH8yKhm",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
@@ -1708,7 +1708,7 @@
                 "D2Q5PMiivGzUO6Ij": {
                     "specification": "Zielonoskórzy",
                     "name": "Nienawiść (Grupa)",
-                    "originalName": "Hatred",
+                    "originalName": "Nienawiść",
                     "sourceId": "Compendium.wfrp4e-core.items.aE3pyW20Orvdjzj0",
                     "id": "aE3pyW20Orvdjzj0",
                     "description": "<p>Stworzenie naprawdę nienawidzi Celu.</p>\n<p>Postać skrywa w duszy głęboką Nienawiść do „x”, czyli jakiejś grupy ludzi czy stworzeń, np. „mieszkańców Hochlandu”, „ośmiornic bagiennych” czy „handlarzy niewolników”. Postać nigdy nie może nawiązać kontaktów z kimś lub czymś, czego nienawidzi.</p>\n<p>Za każdym razem, gdy spotyka przedstawiciela znienawidzonej grupy, musi wykonać Test Psychologii. Jeśli ten się nie uda, postać nie jest w stanie dłużej powstrzymywać swojej Nienawiści. Pod koniec każdej następnej Rundy postać może wykonać kolejny Test Psychologii, by zakończyć napad Nienawiści. Taki atak sam dobiegnie końca, kiedy wszyscy członkowie znienawidzonej grupy znajdujący się w polu widzenia albo uciekną, albo zginą. Utrata Przytomności przynosi identyczny skutek.</p>\n<p>Postać będąca w szale Nienawiści musi natychmiast podjąć próbę zniszczenia znienawidzonej grupy w najszybszy i najbardziej zabójczy znany jej sposób: </p>\n<ul>\n<li>Otrzymuje premię +1 PS do wszystkich Testów walki przeciwko tej grupie.</li>\n<li>Jest niewrażliwa na Strach oraz Zastraszanie (ale nie na Grozę) wywoływane przez znienawidzonego wroga.</li>\n</ul>"
@@ -1755,7 +1755,7 @@
                     "id": "yrkI7ATjqLPDTFmZ",
                     "name": "Odporność na Magię",
                     "description": "<p>Efekt wywierany przez magię na stworzenie jest ograniczony. PS dowolnego wpływającego na stworzenie czaru zmniejszany jest o podaną wartość. Zatem <i>Odporność na Magię 2</i> zmniejsza PS o 2.</p>",
-                    "originalName": "Magic Resistance",
+                    "originalName": "Odporność na Magię",
                     "effects": {
                         "PWNOSwxsePCN7sKH": {
                             "id": "PWNOSwxsePCN7sKH",
@@ -1768,7 +1768,7 @@
                 "rNYVbX0Ld0G2lqaB": {
                     "id": "FmHDbCOy3pH8yKhm",
                     "name": "Widzenie w Ciemności",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
                 }
@@ -1851,7 +1851,7 @@
                     "id": "EO05HX7jql0g605A",
                     "name": "Latanie",
                     "description": "<p>Gdy stworzenie wykonuje Ruch, może przelecieć tyle metrów, ile wynosi podana wartość. Lecąc, ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydować, czy wyląduje, czy będzie kontynuować lot. Może w ramach tego ruchu wykonać Szarżę. Jeśli na początku swojej Tury leci, musi wybrać jako Ruch Latanie. Jeśli nie jest w stanie tego zrobić, MG decyduje, jak daleko stworzenie upadnie.</p>\n<p>Biorąc stworzenie na cel, zmierz odległość horyzontalną jak normalnie, a następnie zwiększ dystans o 1 poziom. Zatem strzał na Dalekim zasięgu stanie się strzałem na Bardzo dalekim zasięgu. Natomiast jeśli był to Bardzo daleki zasięg, stworzenia nie można dosięgnąć strzałem.</p>\n<p>Lecąc, stworzenie dostaje karę -20 do wszystkich prób walki dystansowej, ponieważ nurkuje w powietrzu i zatacza kręgi.</p>",
-                    "originalName": "Flight",
+                    "originalName": "Latanie",
                     "sourceId": "Compendium.wfrp4e-core.items.EO05HX7jql0g605A"
                 },
                 "MgCyUt9Z2Ry6k5uP": {
@@ -1862,7 +1862,7 @@
                     "id": "uqGxFOEqeurwkAO3",
                     "name": "Zionięcie",
                     "description": "<p>Stworzenie posługuje się zionięciem jako potężną bronią. W swojej Turze, kosztem 2 Przewag, może aktywować <i>Zionięcie</i> jako Darmowy Atak. Wybierz 1 cel, który stworzenie widzi w promieniu 20 + Bonus z Wytrzymałości metrów. Trafione zostają wszystkie postacie wokół tego celu w promieniu tylu metrów, ile wynosi Bonus z Siły, podobnie jak wszystkie postacie znajdujące się między stworzeniem a celem. Przeprowadź <b>Test Przeciwstawny Umiejętności Strzeleckie/Unik</b> przeciwko wszystkim objętym efektem celom (jeden rzut stwora przeciwko wszystkim poszczególnym celom). Każdy cel, który przegrał Test, otrzymuje trafienie zadające wskazaną wartość Obrażeń. Co więcej, jeśli przy Cesze Stworzenia wymieniony jest jeden z opisanych niżej typów zionięcia, zastosuj wskazane zasady.</p><p><b>Dym</b>: Obszar wypełnia się dymem, który zasłania pole widzenia na tyle Rund, ile wynosi Bonus z Wytrzymałości.</p><p><b>Elektryczność</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan @Condition[Oszołomienie].</p><p><b>Kwas</b>: Noszony przez objęte efektem postaci pancerze oraz wszelka broń dostają 1 punkt Uszkodzeń.</p><p><b>Ogień</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan @Condition[Podpalenie].</p><p><b>Trucizna</b>: Obrażenia ignorują Punkty Pancerza. Cele otrzymują Stan @Condition[Zatrucie].</p><p><b>Zimno</b>: Cele dostają jeden Stan @Condition[Oszołomienie]{Oszołomiony} za każde pełne 5 odniesionych Ran (minimalnie 1).</p><p>Stworzenie jest odporne na własne <i>Zionięcie</i>. Ten atak jest <i>Magiczny</i>.</p>",
-                    "originalName": "Breath",
+                    "originalName": "Zionięcie",
                     "sourceId": "Compendium.wfrp4e-core.items.uqGxFOEqeurwkAO3"
                 },
                 "NSS8rnTIgUUHPGoQ": {
@@ -1916,14 +1916,14 @@
                     "id": "FmHDbCOy3pH8yKhm",
                     "name": "Widzenie w Ciemności",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm"
                 },
                 "RldqOHuJksfSdlCB": {
                     "id": "ClOlztW6hH8rslbp",
                     "name": "Tropiciel",
                     "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
-                    "originalName": "Tracker",
+                    "originalName": "Tropiciel",
                     "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp",
                     "effects": {
                         "ftGagmf8rj6rq3ir": {
@@ -1971,7 +1971,7 @@
                     "id": "JQa5DLnTs2SEzRrc",
                     "name": "Widzenie w Mroku",
                     "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>",
-                    "originalName": "Dark Vision",
+                    "originalName": "Widzenie w Mroku",
                     "sourceId": "Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc"
                 }
             }
@@ -2032,7 +2032,7 @@
                 },
                 "T8PNNfUsqPwdwFbl": {
                     "name": "Widzenie w Ciemności",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
                     "id": "FmHDbCOy3pH8yKhm",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
@@ -2090,7 +2090,7 @@
                 "DDQGz9vBd7tdttmQ": {
                     "id": "yRhhOlt18COq4e1q",
                     "name": "Szał Bojowy",
-                    "originalName": "Frenzy",
+                    "originalName": "Szał Bojowy",
                     "sourceId": "Compendium.wfrp4e-core.items.yRhhOlt18COq4e1q",
                     "effects": {
                         "jTfCjCCrfFHKqXhz": {
@@ -2173,12 +2173,12 @@
                     "name": "Widzenie w Ciemności",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
-                    "originalName": "Night Vision"
+                    "originalName": "Widzenie w Ciemności"
                 },
                 "CFnEQOwEB8AI7ooz": {
                     "id": "yRhhOlt18COq4e1q",
                     "name": "Szał Bojowy",
-                    "originalName": "Frenzy",
+                    "originalName": "Szał Bojowy",
                     "sourceId": "Compendium.wfrp4e-core.items.yRhhOlt18COq4e1q",
                     "effects": {
                         "jTfCjCCrfFHKqXhz": {
@@ -2200,7 +2200,7 @@
                             "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\")))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}"
                         }
                     },
-                    "originalName": "Tracker",
+                    "originalName": "Tropiciel",
                     "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp"
                 }
             }
@@ -2258,7 +2258,7 @@
                     "specification": "80",
                     "id": "EO05HX7jql0g605A",
                     "name": "Latanie",
-                    "originalName": "Flight",
+                    "originalName": "Latanie",
                     "description": "<p>Gdy stworzenie wykonuje Ruch, może przelecieć tyle metrów, ile wynosi podana wartość. Lecąc, ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydować, czy wyląduje, czy będzie kontynuować lot. Może w ramach tego ruchu wykonać Szarżę. Jeśli na początku swojej Tury leci, musi wybrać jako Ruch Latanie. Jeśli nie jest w stanie tego zrobić, MG decyduje, jak daleko stworzenie upadnie.</p>\n<p>Biorąc stworzenie na cel, zmierz odległość horyzontalną jak normalnie, a następnie zwiększ dystans o 1 poziom. Zatem strzał na Dalekim zasięgu stanie się strzałem na Bardzo dalekim zasięgu. Natomiast jeśli był to Bardzo daleki zasięg, stworzenia nie można dosięgnąć strzałem.</p>\n<p>Lecąc, stworzenie dostaje karę -20 do wszystkich prób walki dystansowej, ponieważ nurkuje w powietrzu i zatacza kręgi.</p>",
                     "sourceId": "Compendium.wfrp4e-core.items.EO05HX7jql0g605A"
                 },
@@ -2283,7 +2283,7 @@
                 "klb3kDP35AaPwwGx": {
                     "id": "FmHDbCOy3pH8yKhm",
                     "name": "Widzenie w Ciemności",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
                 }
@@ -2337,7 +2337,7 @@
                     "id": "FmHDbCOy3pH8yKhm",
                     "name": "Widzenie w Ciemności",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm"
                 }
             }
@@ -2384,7 +2384,7 @@
                 "u62rlWLzc2v5MYvZ": {
                     "id": "JQa5DLnTs2SEzRrc",
                     "name": "Widzenie w Mroku",
-                    "originalName": "Dark Vision",
+                    "originalName": "Widzenie w Mroku",
                     "sourceId": "Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc",
                     "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>"
                 }
@@ -2427,7 +2427,7 @@
                 "Y01oLajbF55OR5UY": {
                     "id": "FmHDbCOy3pH8yKhm",
                     "name": "Widzenie w Ciemności",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm"
                 },
@@ -2436,13 +2436,13 @@
                         "ftGagmf8rj6rq3ir": {
                             "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\")))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}",
                             "id": "ftGagmf8rj6rq3ir",
-                            "name": "Tracker"
+                            "name": "Tropiciel"
                         }
                     },
                     "id": "ClOlztW6hH8rslbp",
                     "name": "Tropiciel",
                     "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
-                    "originalName": "Tracker",
+                    "originalName": "Tropiciel",
                     "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp"
                 }
             }
@@ -2450,7 +2450,7 @@
         "Stellemar": {
             "id": "nRJxtciIhTHKqAvY",
             "name": "Stellemar",
-            "description": "entries.Stellemar.description",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-core.actors.nRJxtciIhTHKqAvY",
             "gender": "Mężczyzna",
             "species": "Człowiek",
@@ -2516,7 +2516,7 @@
                     "id": "zImcTgEl2XNnbu5W",
                     "name": "Twardziel",
                     "description": "<p>Stworzenie jest w stanie przyjąć więcej obrażeń niż większość innych istot. Zwiększ Żywotność stworzenia o wartość równą jego Bonusowi z Wytrzymałości (zastosuj to przed wszelkimi modyfikatorami <i>Rozmiaru</i>).</p>",
-                    "originalName": "Hardy",
+                    "originalName": "Twardziel",
                     "sourceId": "Compendium.wfrp4e-core.items.zImcTgEl2XNnbu5W",
                     "effects": {
                         "REeG0AV5Sm4fTAIJ": {
@@ -2590,7 +2590,7 @@
                 "mg8MEEjUXy6LO6e7": {
                     "id": "FmHDbCOy3pH8yKhm",
                     "name": "Widzenie w Ciemności",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
                 }
@@ -2610,7 +2610,7 @@
                 "PAvotUwS46Wlcked": {
                     "id": "PAvotUwS46Wlcked",
                     "name": "Dowolna Cecha Stworzenia",
-                    "description": "entries.Mutant.items.PAvotUwS46Wlcked.description",
+                    "description": " ",
                     "originalName": "Dowolna Cecha Stworzenia",
                     "sourceId": "Compendium.wfrp4e-core.actors.PAvotUwS46Wlcked"
                 }
@@ -2702,13 +2702,13 @@
                     "id": "FmHDbCOy3pH8yKhm",
                     "name": "Widzenie w Ciemności",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
                 },
                 "ErSbq6fLveOdzSWw": {
                     "id": "yrkI7ATjqLPDTFmZ",
                     "name": "Odporność na Magię",
-                    "originalName": "Magic Resistance",
+                    "originalName": "Odporność na Magię",
                     "sourceId": "Compendium.wfrp4e-core.items.yrkI7ATjqLPDTFmZ",
                     "effects": {
                         "PWNOSwxsePCN7sKH": {
@@ -2723,7 +2723,7 @@
                     "id": "ClOlztW6hH8rslbp",
                     "name": "Tropiciel",
                     "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
-                    "originalName": "Tracker",
+                    "originalName": "Tropiciel",
                     "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp",
                     "effects": {
                         "ftGagmf8rj6rq3ir": {
@@ -2806,14 +2806,14 @@
                 "ELugNF8mL3cMFHOu": {
                     "id": "FmHDbCOy3pH8yKhm",
                     "name": "Widzenie w Ciemności",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
                 },
                 "VfaW9VzOTuWQBztc": {
                     "id": "yRhhOlt18COq4e1q",
                     "name": "Szał Bojowy",
-                    "originalName": "Frenzy",
+                    "originalName": "Szał Bojowy",
                     "sourceId": "Compendium.wfrp4e-core.items.yRhhOlt18COq4e1q",
                     "effects": {
                         "jTfCjCCrfFHKqXhz": {
@@ -2828,7 +2828,7 @@
                     "id": "ClOlztW6hH8rslbp",
                     "name": "Tropiciel",
                     "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
-                    "originalName": "Tracker",
+                    "originalName": "Tropiciel",
                     "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp",
                     "effects": {
                         "ftGagmf8rj6rq3ir": {
@@ -2843,7 +2843,7 @@
         "Gor": {
             "id": "R37OtN5gmPWCYOP3",
             "name": "Gor",
-            "description": "<section id=\"secret-1fmdbB41OA1FbT2r\" class=\"secret\"><p>Gory, najpowszechniejsze ze zwierzoludzi, są zakałą niemal każdego lasu w Starym Świecie. Znacznie różnią się między sobą wyglądem, ale wszystkie łączą cechy zwierzęce i ludzkie. Często mają głowy i nogi kozłów oraz korpus i ramiona ludzi. Jedyną cechą, którą posiadają wszystkie gory, jest para wielkich rogów - im większe, tym lepiej, rogi wyznaczają bowiem status wśród zwierzoludzi. To cecha, która odróżnia je od ungorów i innoskórych. Największe gory znane są pod nazwą bestigorów.</p></section>",
+            "description": "<section id=\"secret-1fmdbB41OA1FbT2r\" class=\"secret\"><p>Gory, najpowszechniejsze ze zwierzoludzi, są zakałą niemal każdego lasu w Starym Świecie. Znacznie różnią się między sobą wyglądem, ale wszystkie łączą cechy zwierzęce i ludzkie. Często mają głowy i nogi kozłów oraz korpus i ramiona ludzi. Jedyną cechą, którą posiadają wszystkie gory, jest para wielkich rogów - im większe, tym lepiej, rogi wyznaczają bowiem status wśród zwierzoludzi. To cecha, która odróżnia je od @UUID[Compendium.wfrp4e-core.actors.vrYs3cbxvXtre6rv]{ungorów} i innoskórych. Największe gory znane są pod nazwą bestigorów.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.actors.R37OtN5gmPWCYOP3",
             "gender": "Różne",
             "species": "Gor",
@@ -2906,7 +2906,7 @@
                     "id": "FmHDbCOy3pH8yKhm",
                     "name": "Widzenie w Ciemności",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
-                    "originalName": "Night Vision"
+                    "originalName": "Widzenie w Ciemności"
                 }
             }
         },
@@ -2976,7 +2976,7 @@
                 },
                 "rwIfV3PTWqnIQzYW": {
                     "name": "Widzenie w Ciemności",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
                     "id": "FmHDbCOy3pH8yKhm",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
@@ -3014,7 +3014,7 @@
                     "id": "EO05HX7jql0g605A",
                     "name": "Latanie",
                     "description": "<p>Gdy stworzenie wykonuje Ruch, może przelecieć tyle metrów, ile wynosi podana wartość. Lecąc, ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydować, czy wyląduje, czy będzie kontynuować lot. Może w ramach tego ruchu wykonać Szarżę. Jeśli na początku swojej Tury leci, musi wybrać jako Ruch Latanie. Jeśli nie jest w stanie tego zrobić, MG decyduje, jak daleko stworzenie upadnie.</p>\n<p>Biorąc stworzenie na cel, zmierz odległość horyzontalną jak normalnie, a następnie zwiększ dystans o 1 poziom. Zatem strzał na Dalekim zasięgu stanie się strzałem na Bardzo dalekim zasięgu. Natomiast jeśli był to Bardzo daleki zasięg, stworzenia nie można dosięgnąć strzałem.</p>\n<p>Lecąc, stworzenie dostaje karę -20 do wszystkich prób walki dystansowej, ponieważ nurkuje w powietrzu i zatacza kręgi.</p>",
-                    "originalName": "Flight",
+                    "originalName": "Latanie",
                     "sourceId": "Compendium.wfrp4e-core.items.EO05HX7jql0g605A"
                 },
                 "cx0BrXvgQ7nD4E14": {
@@ -3024,7 +3024,7 @@
                     "specification": "Wszystko",
                     "id": "aE3pyW20Orvdjzj0",
                     "name": "Nienawiść (Grupa)",
-                    "originalName": "Hatred",
+                    "originalName": "Nienawiść",
                     "sourceId": "Compendium.wfrp4e-core.items.aE3pyW20Orvdjzj0",
                     "description": "<p>Stworzenie naprawdę nienawidzi Celu.</p>\n<p>Postać skrywa w duszy głęboką Nienawiść do „x”, czyli jakiejś grupy ludzi czy stworzeń, np. „mieszkańców Hochlandu”, „ośmiornic bagiennych” czy „handlarzy niewolników”. Postać nigdy nie może nawiązać kontaktów z kimś lub czymś, czego nienawidzi.</p>\n<p>Za każdym razem, gdy spotyka przedstawiciela znienawidzonej grupy, musi wykonać Test Psychologii. Jeśli ten się nie uda, postać nie jest w stanie dłużej powstrzymywać swojej Nienawiści. Pod koniec każdej następnej Rundy postać może wykonać kolejny Test Psychologii, by zakończyć napad Nienawiści. Taki atak sam dobiegnie końca, kiedy wszyscy członkowie znienawidzonej grupy znajdujący się w polu widzenia albo uciekną, albo zginą. Utrata Przytomności przynosi identyczny skutek.</p>\n<p>Postać będąca w szale Nienawiści musi natychmiast podjąć próbę zniszczenia znienawidzonej grupy w najszybszy i najbardziej zabójczy znany jej sposób: </p>\n<ul>\n<li>Otrzymuje premię +1 PS do wszystkich Testów walki przeciwko tej grupie.</li>\n<li>Jest niewrażliwa na Strach oraz Zastraszanie (ale nie na Grozę) wywoływane przez znienawidzonego wroga.</li>\n</ul>"
                 },
@@ -3038,12 +3038,12 @@
                     "id": "FmHDbCOy3pH8yKhm",
                     "name": "Widzenie w Ciemności",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm"
                 },
                 "meGm1W3JbIzOOqwK": {
                     "name": "Szał Bojowy",
-                    "originalName": "Frenzy",
+                    "originalName": "Szał Bojowy",
                     "sourceId": "Compendium.wfrp4e-core.items.yRhhOlt18COq4e1q",
                     "effects": {
                         "jTfCjCCrfFHKqXhz": {
@@ -3060,7 +3060,7 @@
         "Kastor Erichson": {
             "id": "Rs3lMA5UavTlTiJW",
             "name": "Kastor Erichson",
-            "description": "entries.Kastor Erichson.description",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-core.actors.Rs3lMA5UavTlTiJW",
             "gender": "Mężczyzna",
             "species": "Człowiek",
@@ -3092,7 +3092,7 @@
                 "yymhDcCRUdL6jFCS": {
                     "id": "yymhDcCRUdL6jFCS",
                     "name": "Broń Ręczna (Szpon)",
-                    "description": "entries.Kastor Erichson.items.yymhDcCRUdL6jFCS.description",
+                    "description": " ",
                     "originalName": "Szpon",
                     "sourceId": "Compendium.wfrp4e-core.actors.yymhDcCRUdL6jFCS"
                 },
@@ -3136,7 +3136,7 @@
         "Fr'hough Mournbreath": {
             "id": "sbQ5mDvNZ7qQm8YY",
             "name": "Fr’hough Żałobny Oddech",
-            "description": "<p>Ostatecznym celem wszystkich czempionów Chaosu jest dostąpienie apoteozy: wyniesienia ponad demoniczne szeregi i służenia swojemu panu przez wieczność jako książę demonów w Królestwach Chaosu. To potężne istoty o wielkiej mocy. Książęta demonów są straszliwymi wrogami, starcia z którymi unikają nawet najwięksi bohaterowie Imperium.</p>",
+            "description": " <p>Ostatecznym celem wszystkich czempionów Chaosu jest dostąpienie apoteozy: wyniesienia ponad demoniczne szeregi i służenia swojemu panu przez wieczność jako książę demonów w Królestwach Chaosu. To potężne istoty o wielkiej mocy. Książęta demonów są straszliwymi wrogami, starcia z którymi unikają nawet najwięksi bohaterowie Imperium.</p> ",
             "sourceId": "Compendium.wfrp4e-core.actors.sbQ5mDvNZ7qQm8YY",
             "gender": "???",
             "species": "Książę Demonów",
@@ -3207,7 +3207,7 @@
                     "id": "JQa5DLnTs2SEzRrc",
                     "name": "Widzenie w Mroku",
                     "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>",
-                    "originalName": "Dark Vision",
+                    "originalName": "Widzenie w Mroku",
                     "sourceId": "Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc"
                 }
             }
@@ -3243,7 +3243,7 @@
                 "Y6h1aNL9xJiu7ZgF": {
                     "id": "Y6h1aNL9xJiu7ZgF",
                     "name": "Regeneracja",
-                    "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")};\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> Odzyskana żywotność:  ${regen} .`;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`;\n      }\n   }\n   else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> wyrzucił ${regen} i odzyskał 1 punkt żywotności.`\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`\n      }\n   }\n   else {\n      chatData.content += `<b>${this.actor.name}</b> Rzut na regenerację: ${regen} - brak efektu.`\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}"
+                    "script": "let chatData = {content: \"\", speaker : {alias : this.effect.name}, whisper: ChatMessage.getWhisperRecipients(\"GM\")}\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> Odzyskana żywotność:  ${regen} .`;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`;\n      }\n   }\n   else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> wyrzucił ${regen} i odzyskał 1 punkt żywotności.`\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`\n      }\n   }\n   else {\n      chatData.content += `<b>${this.actor.name}</b> Rzut na regenerację: ${regen} - brak efektu.`\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}"
                 }
             },
             "items": {
@@ -3261,7 +3261,7 @@
                 },
                 "zMyG84nff7m0NGjL": {
                     "name": "Widzenie w Ciemności",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
                     "id": "FmHDbCOy3pH8yKhm",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
@@ -3270,14 +3270,14 @@
                     "id": "JQa5DLnTs2SEzRrc",
                     "name": "Widzenie w Mroku",
                     "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>",
-                    "originalName": "Dark Vision",
+                    "originalName": "Widzenie w Mroku",
                     "sourceId": "Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc"
                 },
                 "L3NBP75PXqxDKqnE": {
                     "id": "MVI0lXcg6vvtooAF",
                     "name": "Dekoncentrujący",
                     "description": "<p>Stworzenie rozprasza lub dezorientuje wrogów, być może wydzielając usypiający zapach lub powalający smród, a może ze względu na przerażająco dziwaczny wygląd. Wszystkie żywe cele w promieniu tylu metrów, ile wynosi jego Bonus z Wytrzymałości, dostają karę -20 do wszystkich Testów. Cel może dostać tę karę tylko raz - bez względu na to, jak wielu jest dekoncentrujących wrogów.</p>",
-                    "originalName": "Distracting",
+                    "originalName": "Dekoncentrujący",
                     "sourceId": "Compendium.wfrp4e-core.items.MVI0lXcg6vvtooAF",
                     "effects": {
                         "et9TgrjWHZYQI7OJ": {
@@ -3290,7 +3290,7 @@
                 "8nWYGGnZGHfArrFm": {
                     "id": "EO05HX7jql0g605A",
                     "name": "Latanie",
-                    "originalName": "Flight",
+                    "originalName": "Latanie",
                     "sourceId": "Compendium.wfrp4e-core.items.EO05HX7jql0g605A",
                     "specification": "#",
                     "description": "<p>Gdy stworzenie wykonuje Ruch, może przelecieć tyle metrów, ile wynosi podana wartość. Lecąc, ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydować, czy wyląduje, czy będzie kontynuować lot. Może w ramach tego ruchu wykonać Szarżę. Jeśli na początku swojej Tury leci, musi wybrać jako Ruch Latanie. Jeśli nie jest w stanie tego zrobić, MG decyduje, jak daleko stworzenie upadnie.</p>\n<p>Biorąc stworzenie na cel, zmierz odległość horyzontalną jak normalnie, a następnie zwiększ dystans o 1 poziom. Zatem strzał na Dalekim zasięgu stanie się strzałem na Bardzo dalekim zasięgu. Natomiast jeśli był to Bardzo daleki zasięg, stworzenia nie można dosięgnąć strzałem.</p>\n<p>Lecąc, stworzenie dostaje karę -20 do wszystkich prób walki dystansowej, ponieważ nurkuje w powietrzu i zatacza kręgi.</p>"
@@ -3298,7 +3298,7 @@
                 "L6IqVnq0hgnLQtY0": {
                     "id": "yRhhOlt18COq4e1q",
                     "name": "Szał Bojowy",
-                    "originalName": "Frenzy",
+                    "originalName": "Szał Bojowy",
                     "sourceId": "Compendium.wfrp4e-core.items.yRhhOlt18COq4e1q",
                     "effects": {
                         "jTfCjCCrfFHKqXhz": {
@@ -3312,20 +3312,20 @@
                 "4em2FMzLHVWq6pGG": {
                     "id": "SfUUdOGjdYpr3KSR",
                     "name": "Regeneracja",
-                    "originalName": "Regenerate",
+                    "originalName": "Regeneracja",
                     "sourceId": "Compendium.wfrp4e-core.items.SfUUdOGjdYpr3KSR",
                     "effects": {
                         "0CEu4kmUhYSxWGJZ": {
                             "id": "0CEu4kmUhYSxWGJZ",
                             "name": "Regeneracja",
-                            "script": "let chatData = {content: \"\", speaker : {alias : this.effect.label}, whisper: ChatMessage.getWhisperRecipients(\"GM\")}\n\nlet wounds = duplicate(this.actor.status.wounds)\nlet regen = (await new Roll(\"1d10\").roll({async: true})).total\n\nif (wounds.value >= wounds.max)\n   return\n\nif (wounds.value > 0)\n{\n   wounds.value += regen\n   if (wounds.value > wounds.max) \n        wounds.value = wounds.max\n   chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`\n   \n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse if (regen >= 8)\n{\n    chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n    wounds.value += 1\n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse\n{\n    chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n}\n\nthis.actor.update({\"system.status.wounds\" : wounds})\nChatMessage.create(chatData)"
+                            "script": "let chatData = {content: \"\", speaker : {alias : this.effect.name}, whisper: ChatMessage.getWhisperRecipients(\"GM\")}\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> Odzyskana żywotność:  ${regen} .`;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`;\n      }\n   }\n   else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> wyrzucił ${regen} i odzyskał 1 punkt żywotności.`\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`\n      }\n   }\n   else {\n      chatData.content += `<b>${this.actor.name}</b> Rzut na regenerację: ${regen} - brak efektu.`\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}"
                         }
                     },
                     "description": "<p>Stworzenie leczy się w niezwykłym tempie. Nawet jego odcięte części ciała mogą odrastać. Na początku każdej Rundy, o ile pozostało mu ponad 0 Żywotności, stworzenie automatycznie regeneruje 1k10 punktów Żywotności. Jeśli pozostało mu 0 Żywotności, regeneruje jedną Ranę po wyrzuceniu 8+ na 1k10. Jeśli kiedykolwiek podczas regeneracji wyrzuci 10, może w pełni zregenerować także Ranę Krytyczną, anulując w ten sposób wszelkie powiązane z nią kary i Stany. Poza tym wszelkie Rany Krytyczne lub Rany spowodowane przez ogień nie mogą być regenerowane i powinny być zapisywane oddzielnie.</p>"
                 },
                 "3zqfLLGwMcia4KiN": {
                     "id": "ClOlztW6hH8rslbp",
-                    "originalName": "Tracker",
+                    "originalName": "Tropiciel",
                     "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp",
                     "effects": {
                         "ftGagmf8rj6rq3ir": {
@@ -3387,7 +3387,7 @@
                 },
                 "TLif414blIQcfDk2": {
                     "name": "Widzenie w Mroku",
-                    "originalName": "Dark Vision",
+                    "originalName": "Widzenie w Mroku",
                     "sourceId": "Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc",
                     "id": "JQa5DLnTs2SEzRrc",
                     "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>"
@@ -3400,11 +3400,11 @@
                         "et9TgrjWHZYQI7OJ": {
                             "id": "et9TgrjWHZYQI7OJ",
                             "script": "args.prefillModifiers.modifier -= 20",
-                            "name": "Distracting"
+                            "name": "Dekoncentrujący"
                         }
                     },
                     "description": "<p>Stworzenie rozprasza lub dezorientuje wrogów, być może wydzielając usypiający zapach lub powalający smród, a może ze względu na przerażająco dziwaczny wygląd. Wszystkie żywe cele w promieniu tylu metrów, ile wynosi jego Bonus z Wytrzymałości, dostają karę -20 do wszystkich Testów. Cel może dostać tę karę tylko raz - bez względu na to, jak wielu jest dekoncentrujących wrogów.</p>",
-                    "originalName": "Distracting"
+                    "originalName": "Dekoncentrujący"
                 }
             }
         },
@@ -3430,14 +3430,14 @@
                     "id": "JQa5DLnTs2SEzRrc",
                     "name": "Widzenie w Mroku",
                     "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>",
-                    "originalName": "Dark Vision",
+                    "originalName": "Widzenie w Mroku",
                     "sourceId": "Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc"
                 },
                 "meHXRcsZ8iVHdE8y": {
                     "id": "EO05HX7jql0g605A",
                     "name": "Latanie",
                     "description": "<p>Gdy stworzenie wykonuje Ruch, może przelecieć tyle metrów, ile wynosi podana wartość. Lecąc, ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydować, czy wyląduje, czy będzie kontynuować lot. Może w ramach tego ruchu wykonać Szarżę. Jeśli na początku swojej Tury leci, musi wybrać jako Ruch Latanie. Jeśli nie jest w stanie tego zrobić, MG decyduje, jak daleko stworzenie upadnie.</p>\n<p>Biorąc stworzenie na cel, zmierz odległość horyzontalną jak normalnie, a następnie zwiększ dystans o 1 poziom. Zatem strzał na Dalekim zasięgu stanie się strzałem na Bardzo dalekim zasięgu. Natomiast jeśli był to Bardzo daleki zasięg, stworzenia nie można dosięgnąć strzałem.</p>\n<p>Lecąc, stworzenie dostaje karę -20 do wszystkich prób walki dystansowej, ponieważ nurkuje w powietrzu i zatacza kręgi.</p>",
-                    "originalName": "Flight",
+                    "originalName": "Latanie",
                     "sourceId": "Compendium.wfrp4e-core.items.EO05HX7jql0g605A",
                     "specification": "#"
                 }
@@ -3506,14 +3506,14 @@
                 "r9LV0P2zR71FuoQE": {
                     "id": "JQa5DLnTs2SEzRrc",
                     "name": "Widzenie w Mroku",
-                    "originalName": "Dark Vision",
+                    "originalName": "Widzenie w Mroku",
                     "sourceId": "Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc",
                     "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>"
                 },
                 "MG2FCRtgrzz2Y0iM": {
                     "id": "ClOlztW6hH8rslbp",
                     "name": "Tropiciel",
-                    "originalName": "Tracker",
+                    "originalName": "Tropiciel",
                     "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp",
                     "effects": {
                         "ftGagmf8rj6rq3ir": {
@@ -3535,7 +3535,7 @@
                         }
                     },
                     "description": "<p>Stworzenie rozprasza lub dezorientuje wrogów, być może wydzielając usypiający zapach lub powalający smród, a może ze względu na przerażająco dziwaczny wygląd. Wszystkie żywe cele w promieniu tylu metrów, ile wynosi jego Bonus z Wytrzymałości, dostają karę -20 do wszystkich Testów. Cel może dostać tę karę tylko raz - bez względu na to, jak wielu jest dekoncentrujących wrogów.</p>",
-                    "originalName": "Distracting",
+                    "originalName": "Dekoncentrujący",
                     "sourceId": "Compendium.wfrp4e-core.items.MVI0lXcg6vvtooAF"
                 }
             }
@@ -3606,7 +3606,7 @@
                     "id": "FmHDbCOy3pH8yKhm",
                     "name": "Widzenie w Ciemności",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm"
                 },
                 "6qEqle0DJQplnBEu": {
@@ -3620,14 +3620,14 @@
                     "id": "ClOlztW6hH8rslbp",
                     "name": "Tropiciel",
                     "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
-                    "originalName": "Tracker",
+                    "originalName": "Tropiciel",
                     "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp"
                 },
                 "jV8cMcrRvaJRDH75": {
                     "id": "JQa5DLnTs2SEzRrc",
                     "name": "Widzenie w Mroku",
                     "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>",
-                    "originalName": "Dark Vision",
+                    "originalName": "Widzenie w Mroku",
                     "sourceId": "Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc"
                 }
             }
@@ -3635,7 +3635,7 @@
         "Cave Squig": {
             "id": "VMceSpLje0J7lfP0",
             "name": "Zębacz Jaskiniowy",
-            "description": "<section id=\"secret-oDtCiP01aJblHtLV\" class=\"secret\"><p>Zębacze to duże, okrągławe, grzybowate stwory, które żyją głęboko pod ziemią w najwilgotniejszych, najciemniejszych jaskiniach. Mają rozdziawioną gębę i wielkie, ostre zęby. Cenione są przez gobliny za mięso i skórę oraz służą im jako strażnicy lub pupile.</p></section>",
+            "description": "<section id=\"secret-oDtCiP01aJblHtLV\" class=\"secret\"><p>Zębacze to duże, okrągławe, grzybowate stwory, które żyją głęboko pod ziemią w najwilgotniejszych, najciemniejszych jaskiniach. Mają rozdziawioną gębę i wielkie, ostre zęby. Cenione są przez @UUID[Compendium.wfrp4e-core.actors.zzdOpKqBC28J66Mn]{gobliny} za mięso i skórę oraz służą im jako strażnicy lub pupile.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.actors.VMceSpLje0J7lfP0",
             "gender": "???",
             "species": "Zębacz",
@@ -3700,7 +3700,7 @@
                     "id": "FmHDbCOy3pH8yKhm",
                     "name": "Widzenie w Ciemności",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm"
                 },
                 "eq8OVxmgVkyOgg0C": {
@@ -3708,12 +3708,12 @@
                     "name": "Widzenie w Mroku",
                     "sourceId": "Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc",
                     "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>",
-                    "originalName": "Dark Vision"
+                    "originalName": "Widzenie w Mroku"
                 },
                 "EfRGvgOLc72h9v8f": {
                     "id": "yRhhOlt18COq4e1q",
                     "name": "Szał Bojowy",
-                    "originalName": "Frenzy",
+                    "originalName": "Szał Bojowy",
                     "sourceId": "Compendium.wfrp4e-core.items.yRhhOlt18COq4e1q",
                     "effects": {
                         "jTfCjCCrfFHKqXhz": {
@@ -3815,7 +3815,7 @@
                     "id": "FmHDbCOy3pH8yKhm",
                     "name": "Widzenie w Ciemności",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm"
                 }
             }
@@ -3876,7 +3876,7 @@
                 "Syhu15uTXiMIOzbz": {
                     "id": "FmHDbCOy3pH8yKhm",
                     "name": "Widzenie w Ciemności",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
                 }
@@ -3934,7 +3934,7 @@
                     "id": "JQa5DLnTs2SEzRrc",
                     "name": "Widzenie w Mroku",
                     "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>",
-                    "originalName": "Dark Vision",
+                    "originalName": "Widzenie w Mroku",
                     "sourceId": "Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc"
                 }
             }
@@ -3960,7 +3960,7 @@
                 "R4fA4w2yTpmct7a7": {
                     "id": "R4fA4w2yTpmct7a7",
                     "name": "Regeneracja",
-                    "script": "let chatData = {content: \"\", whisper: ChatMessage.getWhisperRecipients(\"GM\")};\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> Odzyskana żywotność:  ${regen} .`;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`;\n      }\n   }\n   else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> wyrzucił ${regen} i odzyskał 1 punkt żywotności.`\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`\n      }\n   }\n   else {\n      chatData.content += `<b>${this.actor.name}</b> Rzut na regenerację: ${regen} - brak efektu.`\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}"
+                    "script": "let chatData = {content: \"\", speaker : {alias : this.effect.name}, whisper: ChatMessage.getWhisperRecipients(\"GM\")}\n\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> Odzyskana żywotność:  ${regen} .`;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`;\n      }\n   }\n   else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> wyrzucił ${regen} i odzyskał 1 punkt żywotności.`\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`\n      }\n   }\n   else {\n      chatData.content += `<b>${this.actor.name}</b> Rzut na regenerację: ${regen} - brak efektu.`\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}"
                 },
                 "VM4pv8D3no7z7Gvw": {
                     "id": "VM4pv8D3no7z7Gvw",
@@ -3994,7 +3994,7 @@
                 "sgcBPlKbvanYQSo5": {
                     "specification": "Żywe Istoty",
                     "name": "Nienawiść (Grupa)",
-                    "originalName": "Hatred",
+                    "originalName": "Nienawiść",
                     "id": "aE3pyW20Orvdjzj0",
                     "description": "<p>Stworzenie naprawdę nienawidzi Celu.</p>\n<p>Postać skrywa w duszy głęboką Nienawiść do „x”, czyli jakiejś grupy ludzi czy stworzeń, np. „mieszkańców Hochlandu”, „ośmiornic bagiennych” czy „handlarzy niewolników”. Postać nigdy nie może nawiązać kontaktów z kimś lub czymś, czego nienawidzi.</p>\n<p>Za każdym razem, gdy spotyka przedstawiciela znienawidzonej grupy, musi wykonać Test Psychologii. Jeśli ten się nie uda, postać nie jest w stanie dłużej powstrzymywać swojej Nienawiści. Pod koniec każdej następnej Rundy postać może wykonać kolejny Test Psychologii, by zakończyć napad Nienawiści. Taki atak sam dobiegnie końca, kiedy wszyscy członkowie znienawidzonej grupy znajdujący się w polu widzenia albo uciekną, albo zginą. Utrata Przytomności przynosi identyczny skutek.</p>\n<p>Postać będąca w szale Nienawiści musi natychmiast podjąć próbę zniszczenia znienawidzonej grupy w najszybszy i najbardziej zabójczy znany jej sposób: </p>\n<ul>\n<li>Otrzymuje premię +1 PS do wszystkich Testów walki przeciwko tej grupie.</li>\n<li>Jest niewrażliwa na Strach oraz Zastraszanie (ale nie na Grozę) wywoływane przez znienawidzonego wroga.</li>\n</ul>",
                     "sourceId": "Compendium.wfrp4e-core.items.aE3pyW20Orvdjzj0"
@@ -4009,19 +4009,19 @@
                     "id": "JQa5DLnTs2SEzRrc",
                     "name": "Widzenie w Mroku",
                     "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>",
-                    "originalName": "Dark Vision",
+                    "originalName": "Widzenie w Mroku",
                     "sourceId": "Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc"
                 },
                 "B3I6nb3AgA1YyX1o": {
                     "id": "SfUUdOGjdYpr3KSR",
                     "name": "Regeneracja",
-                    "originalName": "Regenerate",
+                    "originalName": "Regeneracja",
                     "sourceId": "Compendium.wfrp4e-core.items.SfUUdOGjdYpr3KSR",
                     "effects": {
                         "0CEu4kmUhYSxWGJZ": {
                             "id": "0CEu4kmUhYSxWGJZ",
                             "name": "Regeneracja",
-                            "script": "let chatData = {content: \"\", speaker : {alias : this.effect.label}, whisper: ChatMessage.getWhisperRecipients(\"GM\")}\n\nlet wounds = duplicate(this.actor.status.wounds)\nlet regen = (await new Roll(\"1d10\").roll({async: true})).total\n\nif (wounds.value >= wounds.max)\n   return\n\nif (wounds.value > 0)\n{\n   wounds.value += regen\n   if (wounds.value > wounds.max) \n        wounds.value = wounds.max\n   chatData.content += `<b>${this.actor.name}</b> regains ${regen} Wounds.`\n   \n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse if (regen >= 8)\n{\n    chatData.content += `<b>${this.actor.name}</b> rolled a ${regen} and regains 1 Wound.`\n    wounds.value += 1\n    if (regen == 10)\n       chatData.content += `<br>Additionally, they regenerate a Critical Wound.`\n}\nelse\n{\n    chatData.content += `<b>${this.actor.name}</b> Regenerate roll of ${regen} - No effect.`\n}\n\nthis.actor.update({\"system.status.wounds\" : wounds})\nChatMessage.create(chatData)"
+                            "script": "let chatData = {content: \"\", speaker : {alias : this.effect.name}, whisper: ChatMessage.getWhisperRecipients(\"GM\")}\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> Odzyskana żywotność:  ${regen} .`;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`;\n      }\n   }\n   else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> wyrzucił ${regen} i odzyskał 1 punkt żywotności.`\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`\n      }\n   }\n   else {\n      chatData.content += `<b>${this.actor.name}</b> Rzut na regenerację: ${regen} - brak efektu.`\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}"
                         }
                     },
                     "description": "<p>Stworzenie leczy się w niezwykłym tempie. Nawet jego odcięte części ciała mogą odrastać. Na początku każdej Rundy, o ile pozostało mu ponad 0 Żywotności, stworzenie automatycznie regeneruje 1k10 punktów Żywotności. Jeśli pozostało mu 0 Żywotności, regeneruje jedną Ranę po wyrzuceniu 8+ na 1k10. Jeśli kiedykolwiek podczas regeneracji wyrzuci 10, może w pełni zregenerować także Ranę Krytyczną, anulując w ten sposób wszelkie powiązane z nią kary i Stany. Poza tym wszelkie Rany Krytyczne lub Rany spowodowane przez ogień nie mogą być regenerowane i powinny być zapisywane oddzielnie.</p>"
@@ -4030,13 +4030,13 @@
                     "id": "EO05HX7jql0g605A",
                     "name": "Latanie",
                     "description": "<p>Gdy stworzenie wykonuje Ruch, może przelecieć tyle metrów, ile wynosi podana wartość. Lecąc, ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydować, czy wyląduje, czy będzie kontynuować lot. Może w ramach tego ruchu wykonać Szarżę. Jeśli na początku swojej Tury leci, musi wybrać jako Ruch Latanie. Jeśli nie jest w stanie tego zrobić, MG decyduje, jak daleko stworzenie upadnie.</p>\n<p>Biorąc stworzenie na cel, zmierz odległość horyzontalną jak normalnie, a następnie zwiększ dystans o 1 poziom. Zatem strzał na Dalekim zasięgu stanie się strzałem na Bardzo dalekim zasięgu. Natomiast jeśli był to Bardzo daleki zasięg, stworzenia nie można dosięgnąć strzałem.</p>\n<p>Lecąc, stworzenie dostaje karę -20 do wszystkich prób walki dystansowej, ponieważ nurkuje w powietrzu i zatacza kręgi.</p>",
-                    "originalName": "Flight",
+                    "originalName": "Latanie",
                     "sourceId": "Compendium.wfrp4e-core.items.EO05HX7jql0g605A",
                     "specification": "#"
                 },
                 "dHAuS7ec9RXwPsbU": {
                     "id": "yRhhOlt18COq4e1q",
-                    "originalName": "Frenzy",
+                    "originalName": "Szał Bojowy",
                     "sourceId": "Compendium.wfrp4e-core.items.yRhhOlt18COq4e1q",
                     "effects": {
                         "jTfCjCCrfFHKqXhz": {
@@ -4052,7 +4052,7 @@
                     "id": "ClOlztW6hH8rslbp",
                     "name": "Tropiciel",
                     "description": "<p>Tropiciele skutecznie śledzą swoje ofiary, zazwyczaj za pomocą węchu lub słuchu. Do wszystkich Testów Tropienia dodają PS równe swojemu Bonusowi z Inicjatywy.</p>",
-                    "originalName": "Tracker",
+                    "originalName": "Tropiciel",
                     "sourceId": "Compendium.wfrp4e-core.items.ClOlztW6hH8rslbp",
                     "effects": {
                         "ftGagmf8rj6rq3ir": {
@@ -4099,7 +4099,7 @@
                     "specification": "80",
                     "id": "EO05HX7jql0g605A",
                     "name": "Latanie",
-                    "originalName": "Flight",
+                    "originalName": "Latanie",
                     "sourceId": "Compendium.wfrp4e-core.items.EO05HX7jql0g605A",
                     "description": "<p>Gdy stworzenie wykonuje Ruch, może przelecieć tyle metrów, ile wynosi podana wartość. Lecąc, ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydować, czy wyląduje, czy będzie kontynuować lot. Może w ramach tego ruchu wykonać Szarżę. Jeśli na początku swojej Tury leci, musi wybrać jako Ruch Latanie. Jeśli nie jest w stanie tego zrobić, MG decyduje, jak daleko stworzenie upadnie.</p>\n<p>Biorąc stworzenie na cel, zmierz odległość horyzontalną jak normalnie, a następnie zwiększ dystans o 1 poziom. Zatem strzał na Dalekim zasięgu stanie się strzałem na Bardzo dalekim zasięgu. Natomiast jeśli był to Bardzo daleki zasięg, stworzenia nie można dosięgnąć strzałem.</p>\n<p>Lecąc, stworzenie dostaje karę -20 do wszystkich prób walki dystansowej, ponieważ nurkuje w powietrzu i zatacza kręgi.</p>"
                 },
@@ -4113,7 +4113,7 @@
                     "specification": "Drapieżniki",
                     "id": "aE3pyW20Orvdjzj0",
                     "name": "Nienawiść (Grupa)",
-                    "originalName": "Hatred",
+                    "originalName": "Nienawiść",
                     "sourceId": "Compendium.wfrp4e-core.items.aE3pyW20Orvdjzj0",
                     "description": "<p>Stworzenie naprawdę nienawidzi Celu.</p>\n<p>Postać skrywa w duszy głęboką Nienawiść do „x”, czyli jakiejś grupy ludzi czy stworzeń, np. „mieszkańców Hochlandu”, „ośmiornic bagiennych” czy „handlarzy niewolników”. Postać nigdy nie może nawiązać kontaktów z kimś lub czymś, czego nienawidzi.</p>\n<p>Za każdym razem, gdy spotyka przedstawiciela znienawidzonej grupy, musi wykonać Test Psychologii. Jeśli ten się nie uda, postać nie jest w stanie dłużej powstrzymywać swojej Nienawiści. Pod koniec każdej następnej Rundy postać może wykonać kolejny Test Psychologii, by zakończyć napad Nienawiści. Taki atak sam dobiegnie końca, kiedy wszyscy członkowie znienawidzonej grupy znajdujący się w polu widzenia albo uciekną, albo zginą. Utrata Przytomności przynosi identyczny skutek.</p>\n<p>Postać będąca w szale Nienawiści musi natychmiast podjąć próbę zniszczenia znienawidzonej grupy w najszybszy i najbardziej zabójczy znany jej sposób: </p>\n<ul>\n<li>Otrzymuje premię +1 PS do wszystkich Testów walki przeciwko tej grupie.</li>\n<li>Jest niewrażliwa na Strach oraz Zastraszanie (ale nie na Grozę) wywoływane przez znienawidzonego wroga.</li>\n</ul>"
                 },
@@ -4179,7 +4179,7 @@
                 "hDoFfhwjwCx5A4gv": {
                     "specification": "100",
                     "name": "Latanie",
-                    "originalName": "Flight",
+                    "originalName": "Latanie",
                     "sourceId": "Compendium.wfrp4e-core.items.EO05HX7jql0g605A",
                     "id": "EO05HX7jql0g605A",
                     "description": "<p>Gdy stworzenie wykonuje Ruch, może przelecieć tyle metrów, ile wynosi podana wartość. Lecąc, ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydować, czy wyląduje, czy będzie kontynuować lot. Może w ramach tego ruchu wykonać Szarżę. Jeśli na początku swojej Tury leci, musi wybrać jako Ruch Latanie. Jeśli nie jest w stanie tego zrobić, MG decyduje, jak daleko stworzenie upadnie.</p>\n<p>Biorąc stworzenie na cel, zmierz odległość horyzontalną jak normalnie, a następnie zwiększ dystans o 1 poziom. Zatem strzał na Dalekim zasięgu stanie się strzałem na Bardzo dalekim zasięgu. Natomiast jeśli był to Bardzo daleki zasięg, stworzenia nie można dosięgnąć strzałem.</p>\n<p>Lecąc, stworzenie dostaje karę -20 do wszystkich prób walki dystansowej, ponieważ nurkuje w powietrzu i zatacza kręgi.</p>"
@@ -4269,7 +4269,7 @@
                     "id": "FmHDbCOy3pH8yKhm",
                     "name": "Widzenie w Ciemności",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm"
                 }
             }
@@ -4277,7 +4277,7 @@
         "Goblin": {
             "id": "zzdOpKqBC28J66Mn",
             "name": "Goblin",
-            "description": "<section id=\"secret-E2Z0jegOrNEyLilA\" class=\"secret\"><blockquote><p>Gobliny, sir. Tysiące goblinów!</p><p style=\"text-align: right\"><em>– Porucznik Bromkopf, 24. Reiklandzki Regiment Piechoty</em></p></blockquote>\n<p>Są wychudzone, złośliwe, zwinne i inteligentne. Błędem jest niedocenianie instynktu samozachowawczego goblinów. Chociaż są tchórzliwe, chętnie zbierają się w bandy, jeśli to zapewnia im znaczną przewagę liczebną. Często dołączają do armii @UUID[Compendium.wfrp4e-core.actors.E7BiDqsB55BrOQut]{Orków} - nie zawsze z własnego wyboru - oportunistycznie korzystając z łupów wojennych, podczas gdy inni zajmują się większością faktycznej walki.</p>",
+            "description": "<section id=\"secret-E2Z0jegOrNEyLilA\" class=\"secret\"><blockquote><p>Gobliny, sir. Tysiące goblinów!</p><p style=\"text-align: right\"><em>– Porucznik Bromkopf, 24. Reiklandzki Regiment Piechoty</em></p></blockquote>\n<p>Są wychudzone, złośliwe, zwinne i inteligentne. Błędem jest niedocenianie instynktu samozachowawczego goblinów. Chociaż są tchórzliwe, chętnie zbierają się w bandy, jeśli to zapewnia im znaczną przewagę liczebną. Często dołączają do armii @UUID[Compendium.wfrp4e-core.actors.E7BiDqsB55BrOQut]{Orków} - nie zawsze z własnego wyboru - oportunistycznie korzystając z łupów wojennych, podczas gdy inni zajmują się większością faktycznej walki.</p></section>",
             "sourceId": "Compendium.wfrp4e-core.actors.zzdOpKqBC28J66Mn",
             "gender": "???",
             "species": "Goblin",
@@ -4317,9 +4317,9 @@
                     "specification": "Krasnoludy",
                     "id": "aE3pyW20Orvdjzj0",
                     "name": "Nienawiść (Grupa)",
-                    "originalName": "Hatred",
+                    "originalName": "Nienawiść",
                     "sourceId": "Compendium.wfrp4e-core.items.aE3pyW20Orvdjzj0",
-                    "description": "<p>Stworzenie naprawdę nienawidzi Celu.</p>\n<p>Postać skrywa w duszy głęboką Nienawiść do „x”, czyli jakiejś grupy ludzi czy stworzeń, np. „mieszkańców Hochlandu”, „ośmiornic bagiennych” czy „handlarzy niewolników”. Postać nigdy nie może nawiązać kontaktów z kimś lub czymś, czego nienawidzi.</p>\n<p>Za każdym razem, gdy spotyka przedstawiciela znienawidzonej grupy, musi wykonać Test Psychologii. Jeśli ten się nie uda, postać nie jest w stanie dłużej powstrzymywać swojej Nienawiści. Pod koniec każdej następnej Rundy postać może wykonać kolejny Test Psychologii, by zakończyć napad Nienawiści. Taki atak sam dobiegnie końca, kiedy wszyscy członkowie znienawidzonej grupy znajdujący się w polu widzenia albo uciekną, albo zginą. Utrata Przytomności przynosi identyczny skutek.</p>\n<p>Postać będąca w szale Nienawiści musi natychmiast podjąć próbę zniszczenia znienawidzonej grupy w najszybszy i najbardziej zabójczy znany jej sposób: </p>\n<ul>\n<li>Otrzymuje premię +1 PS do wszystkich Testów walki przeciwko tej grupie.</li>\n<li>Jest niewrażliwa na Strach oraz Zastraszanie (ale nie na Grozę) wywoływane przez znienawidzonego wroga.</li>\n</ul>"
+                    "description": "<p>Stworzenie naprawdę nienawidzi Celu.</p>\n<p>Postać skrywa w duszy głęboką Nienawiść do „x”, czyli jakiejś grupy ludzi czy stworzeń, np. „mieszkańców Hochlandu”, „ośmiornic bagiennych” czy „handlarzy niewolników”. Postać nigdy nie może nawiązać kontaktów z kimś lub czymś, czego nienawidzi.</p>\n<p>Za każdym razem, gdy spotyka przedstawiciela znienawidzonej grupy, musi wykonać Test Psychologii. Jeśli ten się nie uda, postać nie jest w stanie dłużej powstrzymywać swojej Nienawiści. Pod koniec każdej następnej Rundy postać może wykonać kolejny Test Psychologii, by zakończyć napad Nienawiści. Taki atak sam dobiegnie końca, kiedy wszyscy członkowie znienawidzonej grupy znajdujący się w polu widzenia albo uciekną, albo zginą. Utrata Przytomności przynosi identyczny skutek.</p>\n<p>Postać będąca w szale Nienawiści musi natychmiast podjąć próbę zniszczenia znienawidzonej grupy w najszybszy i najbardziej zabójczy znany jej sposób:</p>\n<ul>\n<li>Otrzymuje premię +1 PS do wszystkich Testów walki przeciwko tej grupie.</li>\n<li>Jest niewrażliwa na Strach oraz Zastraszanie (ale nie na Grozę) wywoływane przez znienawidzonego wroga.</li>\n</ul>"
                 },
                 "ngw4swVSGJK6DW85": {
                     "id": "ngw4swVSGJK6DW85",
@@ -4332,7 +4332,7 @@
                 "9soKHfknWNU1KCn8": {
                     "id": "FmHDbCOy3pH8yKhm",
                     "name": "Widzenie w Ciemności",
-                    "originalName": "Night Vision",
+                    "originalName": "Widzenie w Ciemności",
                     "sourceId": "Compendium.wfrp4e-core.items.FmHDbCOy3pH8yKhm",
                     "description": "<p>Stworzenie ma Talent Widzenie w Ciemności.</p>"
                 },
@@ -4340,7 +4340,7 @@
                     "id": "JQa5DLnTs2SEzRrc",
                     "name": "Widzenie w Mroku",
                     "description": "<p>Stworzenie potrafi widzieć w ciemności jak w świetle dziennym.</p>",
-                    "originalName": "Dark Vision",
+                    "originalName": "Widzenie w Mroku",
                     "sourceId": "Compendium.wfrp4e-core.items.JQa5DLnTs2SEzRrc"
                 }
             }

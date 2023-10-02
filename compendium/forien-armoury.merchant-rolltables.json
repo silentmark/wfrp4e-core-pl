@@ -1,0 +1,1319 @@
+{
+    "label": "Tabele (Podręcznik Główny)",
+    "mapping": {
+        "initialization_folder": "flags.wfrp4e-core.initialization-folder"
+    },
+    "folders": {
+        "Career Tables": "Profesje",
+        "Character Creation": "Tworzenie Bohatera",
+        "Core Rulebook": "Podręcznik Główny",
+        "Corruption & Mutation Tables": "Mutacje i Zepsucie",
+        "Critical Hit Tables": "Trafienia Krytyczne",
+        "GM Booklet": "Przybornik MG",
+        "Hit Location": "Lokacje Trafień",
+        "Moo's Homebrew": "Domówka Moo",
+        "By Type": "By Type",
+        "Ammunition": "Ammunition",
+        "Armour": "Armour",
+        "Compsities": "Compsities",
+        "Currency": "Currency",
+        "Trappings": "Wyposażenie",
+        "Books": "Books",
+        "Clothing": "Clothing",
+        "Draughts": "Draughts",
+        "Misc": "Misc",
+        "Melee": "Melee",
+        "Ranged": "Ranged",
+        "By Rarity": "By Rarity",
+        "By Use": "By Use",
+        "Containers": "Containers",
+        "Food and Drink": "Food and Drink",
+        "Tools and Kits": "Tools and Kits",
+        "Weapons": "Weapons"
+    },
+    "entries": {
+        "Ammunition All (rarity)": {
+            "id": "ahQ9wn45iBNWvAb4",
+            "name": "Ammunition All (rarity)",
+            "description": "  ",
+            "results": {
+                "1-30": "Ammunition Common",
+                "31-45": "Ammunition Scarce",
+                "46-50": "Ammunition Rare",
+                "51-51": "Ammunition Exotic"
+            }
+        },
+        "Ammunition All (type)": {
+            "id": "kNmv6o73tMmYzer2",
+            "name": "Ammunition All (type)",
+            "description": "entries.Ammunition All (type).description",
+            "results": {
+                "1-4": "Ammunition Blackpowder and Engineering",
+                "5-11": "Ammunition Bow",
+                "12-18": "Ammunition Crossbow",
+                "19-26": "Ammunition Sling"
+            }
+        },
+        "Ammunition Blackpowder and Engineering": {
+            "id": "YUwVdxuWAWiLp0CZ",
+            "name": "Ammunition Blackpowder and Engineering",
+            "description": "entries.Ammunition Blackpowder and Engineering.description",
+            "results": {
+                "1-1": "Aqshy-Infused Powder",
+                "2-16": "Ball and Powder",
+                "17-21": "Bomb",
+                "22-51": "Bullet and Powder",
+                "52-56": "Drakefire Shot",
+                "57-57": "Grapeshot and Powder",
+                "58-72": "Grapple",
+                "73-87": "Improved Bullet and Powder",
+                "88-117": "Improvised Shot and Powder",
+                "118-132": "Incendiary",
+                "133-147": "Large Bullet and Powder",
+                "148-162": "Paper Cartridge",
+                "163-192": "Precision Shot and Powder",
+                "193-222": "Scrap and Powder",
+                "223-252": "Small Shot and Powder"
+            }
+        },
+        "Ammunition Bow": {
+            "id": "SPHK7kTHbQfB0AOE",
+            "name": "Ammunition Bow",
+            "description": "entries.Ammunition Bow.description",
+            "results": {
+                "1-30": "Arrow",
+                "31-45": "Barbed Arrow",
+                "46-60": "Bodkin Arrow",
+                "61-61": "Elf Arrow",
+                "62-66": "Shard Tips",
+                "67-67": "Starfire Shafts",
+                "68-97": "Swiftshiver Shafts"
+            }
+        },
+        "Ammunition Common": {
+            "id": "j2rN0bLGn7OJ2YKN",
+            "name": "Ammunition Common",
+            "description": "entries.Ammunition Common.description",
+            "results": {
+                "1-1": "Arrow",
+                "2-2": "Bolt",
+                "3-3": "Bullet and Powder",
+                "4-4": "Improvised Shot and Powder",
+                "5-5": "Lead Bullet",
+                "6-6": "Precision Shot and Powder",
+                "7-7": "Scrap and Powder",
+                "8-8": "Sharp Stick",
+                "9-9": "Sharp Stick",
+                "10-10": "Small Shot and Powder",
+                "11-11": "Stone Bullet",
+                "12-12": "Swiftshiver Shafts"
+            }
+        },
+        "Ammunition Crossbow": {
+            "id": "yhRuXuNa9QmVZaIF",
+            "name": "Ammunition Crossbow",
+            "description": "entries.Ammunition Crossbow.description",
+            "results": {
+                "1-15": "Barbed Bolt",
+                "16-30": "Bodkin Bolt",
+                "31-60": "Bolt"
+            }
+        },
+        "Ammunition Exotic": {
+            "id": "bAhlsrgiWq99rTju",
+            "name": "Ammunition Exotic",
+            "description": "entries.Ammunition Exotic.description",
+            "results": {
+                "1-1": "Aqshy-Infused Powder",
+                "2-2": "Elf Arrow",
+                "3-3": "Grapeshot and Powder",
+                "4-4": "Starfire Shafts"
+            }
+        },
+        "Ammunition Rare": {
+            "id": "OTB4IeQNtPfhT2Qb",
+            "name": "Ammunition Rare",
+            "description": "entries.Ammunition Rare.description",
+            "results": {
+                "1-1": "Bomb",
+                "2-2": "Drakefire Shot"
+            }
+        },
+        "Ammunition Scarce": {
+            "id": "f86wQdMwQC3Fhq4S",
+            "name": "Ammunition Scarce",
+            "description": "entries.Ammunition Scarce.description",
+            "results": {
+                "1-1": "Ball and Powder",
+                "2-2": "Barbed Arrow",
+                "3-3": "Barbed Bolt",
+                "4-4": "Bodkin Arrow",
+                "5-5": "Bodkin Bolt",
+                "6-6": "Grapple",
+                "7-7": "Incendiary",
+                "8-8": "Large Bullet and Powder",
+                "9-9": "Paper Cartridge",
+                "10-10": "Improved Bullet and Powder"
+            }
+        },
+        "Ammunition Sling": {
+            "id": "WiECkYvbqPun3mV3",
+            "name": "Ammunition Sling",
+            "description": "entries.Ammunition Sling.description",
+            "results": {
+                "1-30": "Lead Bullet",
+                "31-60": "Stone Bullet"
+            }
+        },
+        "Armour All (rarity)": {
+            "id": "sjC8xI4TBt5XRlPi",
+            "name": "Armour All (rarity)",
+            "description": "entries.Armour All (rarity).description",
+            "results": {
+                "1-30": "Armour Common",
+                "31-45": "Armour Rare",
+                "46-50": "Armour Scarce"
+            }
+        },
+        "Armour All (type)": {
+            "id": "XP0KSAodowAzoNrN",
+            "name": "Armour All (type)",
+            "description": "entries.Armour All (type).description",
+            "results": {
+                "1-4": "Armour Flexible",
+                "5-7": "Armour Hard",
+                "8-12": "Armour Soft"
+            }
+        },
+        "Armour Common": {
+            "id": "R7GDdlzGIyNxLVv3",
+            "name": "Armour Common",
+            "description": "entries.Armour Common.description",
+            "results": {
+                "1-20": "Gambeson",
+                "21-40": "Gambeson Coat",
+                "41-60": "Gambeson Coif",
+                "61-80": "Gambeson Shirt",
+                "81-100": "Leather Jack",
+                "101-120": "Leather Jerkin",
+                "121-140": "Leather Leggings",
+                "141-160": "Leather Skullcap",
+                "161-180": "Mail Coat"
+            }
+        },
+        "Armour Flexible": {
+            "id": "LFnB1p0YSclCwpf4",
+            "name": "Armour Flexible",
+            "description": "entries.Armour Flexible.description",
+            "results": {
+                "1-5": "Mail Chausses",
+                "6-11": "Mail Coat",
+                "12-16": "Mail Coif",
+                "17-21": "Mail Shirt",
+                "22-23": "Quietened Mail Chausses",
+                "24-26": "Quietened Mail Coat",
+                "27-28": "Quietened Mail Coif"
+            }
+        },
+        "Armour Hard": {
+            "id": "bcfWOzoAXLS0r4OE",
+            "name": "Armour Hard",
+            "description": "entries.Armour Hard.description",
+            "results": {
+                "1-8": "Breastplate",
+                "9-14": "Cuirass",
+                "15-21": "Plate Bracers",
+                "22-29": "Plate Helm",
+                "30-36": "Plate Leggings",
+                "37-46": "Plate Open Helm",
+                "47-56": "Boiled Leather Breastplate"
+            }
+        },
+        "Armour Rare": {
+            "id": "oRK9BbljpQOB4zgt",
+            "name": "Armour Rare",
+            "description": "entries.Armour Rare.description",
+            "results": {
+                "1-5": "Plate Bracers",
+                "6-10": "Plate Helm",
+                "11-15": "Plate Leggings",
+                "16-20": "Quietened Mail Chausses",
+                "21-25": "Quietened Mail Coat",
+                "26-30": "Quietened Mail Coif"
+            }
+        },
+        "Armour Scarce": {
+            "id": "Ss3dpB8pChQEL6rV",
+            "name": "Armour Scarce",
+            "description": "entries.Armour Scarce.description",
+            "results": {
+                "1-10": "Boiled Leather Breastplate",
+                "11-20": "Breastplate",
+                "21-30": "Cuirass",
+                "31-40": "Long Gambeson",
+                "41-50": "Mail Chausses",
+                "51-60": "Mail Coif",
+                "61-70": "Mail Shirt"
+            }
+        },
+        "Armour Soft": {
+            "id": "WgLiXIUqoUKgNZ2K",
+            "name": "Armour Soft",
+            "description": "entries.Armour Soft.description",
+            "results": {
+                "1-5": "Gambeson",
+                "6-10": "Gambeson Coat",
+                "11-14": "Gambeson Coif",
+                "15-19": "Gambeson Shirt",
+                "20-23": "Leather Jack",
+                "24-27": "Leather Jerkin",
+                "28-31": "Leather Leggings",
+                "32-34": "Leather Skullcap",
+                "35-37": "Long Gambeson"
+            }
+        },
+        "Books All": {
+            "id": "i6gGiqSyqCS4jSan",
+            "name": "Books All",
+            "description": "entries.Books All.description",
+            "results": {
+                "1-1": "Books Common",
+                "2-2": "Books Scarce",
+                "3-3": "Books Rare",
+                "4-4": "Books Exotic"
+            }
+        },
+        "Books Common": {
+            "id": "xIZKYwxN5fuhWI4K",
+            "name": "Books Common",
+            "description": "entries.Books Common.description",
+            "results": {
+                "1-1": "Book, Religion",
+                "2-2": "Parchment/sheet"
+            }
+        },
+        "Books Exotic": {
+            "id": "74MBojPftMSOBFiu",
+            "name": "Books Exotic",
+            "description": "entries.Books Exotic.description",
+            "results": {
+                "1-1": "Book, Cryptography",
+                "2-2": "Book, Magic"
+            }
+        },
+        "Books Rare": {
+            "id": "6K91R8eci6zxdHAQ",
+            "name": "Books Rare",
+            "description": "entries.Books Rare.description",
+            "results": {
+                "1-1": "Book, Law",
+                "2-2": "Book, Medicine"
+            }
+        },
+        "Books Scarce": {
+            "id": "wH3MvT7J3UlRR00y",
+            "name": "Books Scarce",
+            "description": "entries.Books Scarce.description",
+            "results": {
+                "1-1": "Book, Apothecary",
+                "2-2": "Book, Art",
+                "3-3": "Book, Engineer",
+                "4-4": "Map"
+            }
+        },
+        "Clothing All": {
+            "id": "KpefCK4r7TgYfO1w",
+            "name": "Clothing All",
+            "description": "entries.Clothing All.description",
+            "results": {
+                "1-30": "Clothing Common",
+                "31-35": "Clothing Rare",
+                "36-50": "Clothing Scarce"
+            }
+        },
+        "Clothing Common": {
+            "id": "DkyB96EbXiOEGTk0",
+            "name": "Clothing Common",
+            "description": "entries.Clothing Common.description",
+            "results": {
+                "1-1": "Amulet",
+                "2-2": "Bandoleer",
+                "3-3": "Boots",
+                "4-4": "Cloak",
+                "5-5": "Clothing",
+                "6-6": "Coat",
+                "7-7": "Face Powder",
+                "8-8": "Gloves",
+                "9-9": "Hat",
+                "10-10": "Hood",
+                "11-11": "Jewellery",
+                "12-12": "Mask",
+                "13-13": "Perfume",
+                "14-14": "Religious Symbol",
+                "15-15": "Robes",
+                "16-16": "Shoes",
+                "17-17": "Walking Cane"
+            }
+        },
+        "Clothing Rare": {
+            "id": "oKh5ri3b16tcW47T",
+            "name": "Clothing Rare",
+            "description": "entries.Clothing Rare.description",
+            "results": {
+                "1-1": "Signet Ring"
+            }
+        },
+        "Clothing Scarce": {
+            "id": "EqPLOrxIR3quFvzT",
+            "name": "Clothing Scarce",
+            "description": "entries.Clothing Scarce.description",
+            "results": {
+                "1-1": "Costume",
+                "2-2": "Courtly Garb",
+                "3-3": "Pins",
+                "4-4": "Sealskin",
+                "5-5": "Silk Underwear",
+                "6-6": "Uniform"
+            }
+        },
+        "Composite – Bowyer": {
+            "id": "UpPcwYRZPIoPnZiN",
+            "name": "Composite – Bowyer",
+            "description": "entries.Composite – Bowyer.description",
+            "results": {
+                "1-8": "Ammunition Bow",
+                "9-12": "Weapons Ranged Bow",
+                "13-14": "Bow String",
+                "15-16": "Containers Arrows and Bolts"
+            }
+        },
+        "Composite – Crossbows": {
+            "id": "NEhQRPzIINx5KXut",
+            "name": "Composite – Crossbows",
+            "description": "entries.Composite – Crossbows.description",
+            "results": {
+                "1-8": "Ammunition Crossbow",
+                "9-11": "Weapons Ranged Crossbow",
+                "12-13": "Bow String",
+                "14-15": "Containers Arrows and Bolts"
+            }
+        },
+        "Composite – Food and Drink (Inn)": {
+            "id": "nCH0abB7hFoSzoY1",
+            "name": "Composite – Food and Drink (Inn)",
+            "description": "entries.Composite – Food and Drink (Inn).description",
+            "results": {
+                "1-1": "Ale, pint",
+                "2-2": "Meal, inn",
+                "3-3": "Spirits, pint",
+                "4-4": "Wine & Spirits, drink",
+                "5-5": "Room, common",
+                "6-6": "Room, private double",
+                "7-7": "Room, private single",
+                "8-8": "Warm Bath",
+                "9-9": "Stables"
+            }
+        },
+        "Composite – Gunner": {
+            "id": "0W1JaAs6o47vUfLL",
+            "name": "Composite – Gunner",
+            "description": "entries.Composite – Gunner.description",
+            "results": {
+                "1-7": "Ammunition Blackpowder and Engineering",
+                "8-10": "Weapons Ranged Blackpowder",
+                "11-12": "Containers Powder Horns"
+            }
+        },
+        "Composite – Slinger": {
+            "id": "UAZFzMOfdtszLiD3",
+            "name": "Composite – Slinger",
+            "description": "entries.Composite – Slinger.description",
+            "results": {
+                "1-5": "Ammunition Sling",
+                "6-8": "Weapons Ranged Sling",
+                "9-10": "Shot Pouch"
+            }
+        },
+        "Composite – Survival": {
+            "id": "I3TRBS3X7yjSRD45",
+            "name": "Composite – Survival",
+            "description": "entries.Composite – Survival.description",
+            "results": {
+                "1-8": "Survival",
+                "9-10": "Containers Misc",
+                "11-13": "Containers Bags"
+            }
+        },
+        "Containers All": {
+            "id": "lzUGxCzRxaStHi2e",
+            "name": "Containers All",
+            "description": "entries.Containers All.description",
+            "results": {
+                "1-2": "Containers Ammo",
+                "3-5": "Containers Bags",
+                "6-8": "Containers Misc"
+            }
+        },
+        "Containers Ammo": {
+            "id": "6DjW807HxV07VbOH",
+            "name": "Containers Ammo",
+            "description": "entries.Containers Ammo.description",
+            "results": {
+                "1-5": "Archer's Quiver",
+                "6-8": "Big Powder Horn",
+                "9-11": "Fast Powder Horn",
+                "12-26": "Hunter's Quiver",
+                "27-36": "Powder Horn",
+                "37-51": "Shot Pouch",
+                "52-61": "Standard Quiver"
+            }
+        },
+        "Containers Arrows and Bolts": {
+            "id": "xH15xfRhQlyZRXjY",
+            "name": "Containers Arrows and Bolts",
+            "description": "entries.Containers Arrows and Bolts.description",
+            "results": {
+                "1-15": "Standard Quiver",
+                "16-35": "Hunter's Quiver",
+                "36-40": "Archer's Quiver"
+            }
+        },
+        "Containers Bags": {
+            "id": "9akb7ZJ2HPYaNzuU",
+            "name": "Containers Bags",
+            "description": "entries.Containers Bags.description",
+            "results": {
+                "1-5": "Backpack",
+                "6-6": "Potion Bag",
+                "7-16": "Sack",
+                "17-26": "Sack, Large",
+                "27-34": "Sling Bag"
+            }
+        },
+        "Containers Misc": {
+            "id": "ffYe4byROeFcNsvl",
+            "name": "Containers Misc",
+            "description": "entries.Containers Misc.description",
+            "results": {
+                "1-1": "Waterskin",
+                "2-2": "Scroll Case",
+                "3-3": "Saddlebags",
+                "4-4": "Pouch",
+                "5-5": "Jug",
+                "6-6": "Flask"
+            }
+        },
+        "Containers Powder Horns": {
+            "id": "yTOmoQCY6LsQy9G7",
+            "name": "Containers Powder Horns",
+            "description": "entries.Containers Powder Horns.description",
+            "results": {
+                "1-12": "Big Powder Horn",
+                "13-22": "Fast Powder Horn",
+                "23-52": "Powder Horn"
+            }
+        },
+        "Cooking": {
+            "id": "Y9Fm1hIUmfYRlQiW",
+            "name": "Cooking",
+            "description": "entries.Cooking.description",
+            "results": {
+                "1-15": "Bowl",
+                "16-18": "Captain Braun's Insta-Boiler",
+                "19-23": "Captain Braun's Multi-Stove",
+                "24-38": "Cooking Pot",
+                "39-53": "Cup",
+                "54-63": "Cutlery",
+                "64-78": "Pan",
+                "79-88": "Plate"
+            }
+        },
+        "Currency": {
+            "id": "ZAIWwl9tQDUh6V2n",
+            "name": "Currency",
+            "description": "entries.Currency.description",
+            "results": {
+                "1-1": "Gold Crown",
+                "2-2": "Silver Shilling",
+                "3-3": "Brass Penny"
+            }
+        },
+        "Draughts All": {
+            "id": "vDtcyYvLwCFRPYIs",
+            "name": "Draughts All",
+            "description": "entries.Draughts All.description",
+            "results": {
+                "1-30": "Draughts Common",
+                "31-35": "Draughts Rare",
+                "36-50": "Draughts Scarce",
+                "51-51": "Draughts Exotic"
+            }
+        },
+        "Draughts Common": {
+            "id": "xAmckoe72h6Oz6dM",
+            "name": "Draughts Common",
+            "description": "entries.Draughts Common.description",
+            "results": {
+                "1-1": "Digestive Tonic",
+                "2-2": "Healing Poultice",
+                "3-3": "Salwort"
+            }
+        },
+        "Draughts Exotic": {
+            "id": "7fJhVT1tBT3c0Gdj",
+            "name": "Draughts Exotic",
+            "description": "entries.Draughts Exotic.description",
+            "results": {
+                "1-1": "Faxtoryll",
+                "2-2": "Black Lotus",
+                "3-3": "Heartkill",
+                "4-4": "Last Gasp",
+                "5-5": "Mad Cap Mushrooms",
+                "6-6": "Two-Headed Tincture",
+                "7-7": "Wyvern's Kiss"
+            }
+        },
+        "Draughts Rare": {
+            "id": "iSSAhSzHjaqigUz0",
+            "name": "Draughts Rare",
+            "description": "entries.Draughts Rare.description",
+            "results": {
+                "1-1": "Bloodblind",
+                "2-2": "Carroburg Fire",
+                "3-3": "Clearmind",
+                "4-4": "Flesh Blister",
+                "5-5": "Forge Shield",
+                "6-6": "Liquid Fire",
+                "7-7": "Longsleep",
+                "8-8": "Mandrake Root",
+                "9-9": "Nightshade",
+                "10-10": "Preyton's Fury",
+                "11-11": "Razorburn",
+                "12-12": "Seer Snake Liquor",
+                "13-13": "Spit",
+                "14-14": "Spite",
+                "15-15": "Stag's Ward",
+                "16-16": "Treemeld",
+                "17-17": "Troll Acid",
+                "18-18": "Veinpowder",
+                "19-19": "Weirdroot",
+                "20-20": "Wheeze",
+                "21-21": "Witchbane"
+            }
+        },
+        "Draughts Scarce": {
+            "id": "3816iarb5kPKaOuJ",
+            "name": "Draughts Scarce",
+            "description": "entries.Draughts Scarce.description",
+            "results": {
+                "1-1": "Bezoar Solvent",
+                "2-2": "Earth Root",
+                "3-3": "Healing Draught",
+                "4-4": "Moonflower",
+                "5-5": "Ranald's Delight",
+                "6-6": "Vitality Draught"
+            }
+        },
+        "Food and Drink All": {
+            "id": "Lyg86KOLxhKBYyjT",
+            "name": "Food and Drink All",
+            "description": "entries.Food and Drink All.description",
+            "results": {
+                "1-30": "Food and Drink Common",
+                "31-31": "Food and Drink Exotic"
+            }
+        },
+        "Food and Drink Common": {
+            "id": "Sc7kQchdhpXuxdWG",
+            "name": "Food and Drink Common",
+            "description": "entries.Food and Drink Common.description",
+            "results": {
+                "1-1": "Ale, Keg",
+                "2-2": "Food, groceries/day",
+                "3-3": "Rations, 1 day",
+                "4-4": "Wine, bottle"
+            }
+        },
+        "Food and Drink Exotic": {
+            "id": "u4wfmPOh5HeiB3H2",
+            "name": "Food and Drink Exotic",
+            "description": "entries.Food and Drink Exotic.description",
+            "results": {
+                "1-1": "Bugman’s XXXXXX Ale, pint"
+            }
+        },
+        "Food": {
+            "id": "mEXd68vvqumC6cWE",
+            "name": "Food",
+            "description": "entries.Food.description",
+            "results": {
+                "1-30": "Food, groceries/day",
+                "31-50": "Rations, 1 day",
+                "51-65": "Wine, bottle",
+                "66-66": "Bugman’s XXXXXX Ale, pint",
+                "67-96": "Ale, Keg",
+                "97-116": "Flask of Spirits"
+            }
+        },
+        "Medical": {
+            "id": "LAtCQ79HooXRFGYm",
+            "name": "Medical",
+            "description": "entries.Medical.description",
+            "results": {
+                "1-30": "Bandage",
+                "31-45": "Healing Draught",
+                "46-75": "Healing Poultice",
+                "76-76": "Faxtoryll",
+                "77-91": "Earth Root",
+                "92-121": "Salwort",
+                "122-151": "Digestive Tonic",
+                "152-166": "Vitality Draught"
+            }
+        },
+        "Pleasures": {
+            "id": "xWAdSs7VKilJzYPH",
+            "name": "Pleasures",
+            "description": "entries.Pleasures.description",
+            "results": {
+                "1-5": "Pipe and Tobacco",
+                "6-10": "Flask of Spirits",
+                "11-11": "Wine, bottle",
+                "12-19": "Ale, pint"
+            }
+        },
+        "Sundries": {
+            "id": "2zf6KYSJvwjQSn0a",
+            "name": "Sundries",
+            "description": "entries.Sundries.description",
+            "results": {
+                "1-5": "Chicken",
+                "6-15": "Doll",
+                "16-16": "Dog collar and lead",
+                "17-31": "Dice",
+                "32-46": "Deck of Cards",
+                "47-51": "Homing Pigeon",
+                "52-52": "Hunting Dog",
+                "53-62": "Instrument",
+                "63-72": "Saddle and Harness",
+                "73-82": "Empty Vial",
+                "83-92": "Chalk",
+                "93-102": "Charcoal stick",
+                "103-107": "Jewellery",
+                "108-110": "Silk Underwear",
+                "111-120": "Amulet",
+                "121-128": "Perfume",
+                "129-136": "Face Powder"
+            }
+        },
+        "Survival": {
+            "id": "fMXHQvh485Pd62Q2",
+            "name": "Survival",
+            "description": "entries.Survival.description",
+            "results": {
+                "1-10": "Bedroll",
+                "11-20": "Blanket",
+                "21-28": "Canvas Tarp",
+                "29-38": "Rope, 10 yards",
+                "39-48": "Tinderbox",
+                "49-58": "Torch",
+                "59-63": "Storm Lantern",
+                "64-73": "Oil Lamp",
+                "74-83": "Match",
+                "84-88": "Slow Match",
+                "89-96": "Lantern",
+                "97-106": "Lamp Oil",
+                "107-109": "Davrich Lamp",
+                "110-117": "Candle",
+                "118-122": "Tent"
+            }
+        },
+        "Tools and Kits All": {
+            "id": "9k3gd2aEG4TnqnYl",
+            "name": "Tools and Kits All",
+            "description": "entries.Tools and Kits All.description",
+            "results": {
+                "1-30": "Tools and Kits Common",
+                "31-45": "Tools and Kits Scarce",
+                "46-50": "Tools and Kits Rare",
+                "51-51": "Tools and Kits Exotic"
+            }
+        },
+        "Tools and Kits Common": {
+            "id": "je7AcyjxyaaxfDM8",
+            "name": "Tools and Kits Common",
+            "description": "entries.Tools and Kits Common.description",
+            "results": {
+                "1-1": "Animal Trap",
+                "2-2": "Boat Hook",
+                "3-3": "Broom",
+                "4-4": "Bucket",
+                "5-5": "Comb",
+                "6-6": "Chisel",
+                "7-7": "Crowbar",
+                "8-8": "Crutch",
+                "9-9": "Fish Hooks",
+                "10-10": "Floor Brush",
+                "11-11": "Hammer",
+                "12-12": "Hoe",
+                "13-13": "Knife",
+                "14-14": "Mop",
+                "15-15": "Nails",
+                "16-16": "Paint Brush",
+                "17-17": "Pestle & Mortar",
+                "18-18": "Pole (3 yards)",
+                "19-19": "Quill Pen",
+                "20-20": "Rake",
+                "21-21": "Saw",
+                "22-22": "Sickle",
+                "23-23": "Spike",
+                "24-24": "Spade",
+                "25-25": "Tongs, steel",
+                "26-26": "Whetstone"
+            }
+        },
+        "Tools and Kits Exotic": {
+            "id": "tYMTor2r7jYPonVN",
+            "name": "Tools and Kits Exotic",
+            "description": "entries.Tools and Kits Exotic.description",
+            "results": {
+                "1-1": "Hand Mirror"
+            }
+        },
+        "Tools and Kits Rare": {
+            "id": "hysJLUNEEoNHrUOj",
+            "name": "Tools and Kits Rare",
+            "description": "entries.Tools and Kits Rare.description",
+            "results": {
+                "1-1": "Reading Lens",
+                "2-2": "Telescope"
+            }
+        },
+        "Tools and Kits Scarce": {
+            "id": "wAAL6gqc4M2V2FJk",
+            "name": "Tools and Kits Scarce",
+            "description": "entries.Tools and Kits Scarce.description",
+            "results": {
+                "1-1": "Abacus",
+                "2-2": "Antitoxin Kit",
+                "3-3": "Compass",
+                "4-4": "Disguise Kit",
+                "5-5": "Ear Pick",
+                "6-6": "Gavel",
+                "7-7": "Lock Picks",
+                "8-8": "Manacles",
+                "9-9": "Pick",
+                "10-10": "Stamp, engraved",
+                "11-11": "Tweezers",
+                "12-12": "Writing Kit"
+            }
+        },
+        "Trappings All": {
+            "id": "t5phe0DiZ2eCUrdj",
+            "name": "Trappings All",
+            "description": "entries.Trappings All.description",
+            "results": {
+                "1-30": "Trappings Common",
+                "31-45": "Trappings Scarce",
+                "46-50": "Trappings Rare",
+                "51-51": "Trappings Exotic"
+            }
+        },
+        "Trappings Common": {
+            "id": "0Uvy8Rqc849Ork8O",
+            "name": "Trappings Common",
+            "description": "entries.Trappings Common.description",
+            "results": {
+                "1-1": "Ball",
+                "2-2": "Bandage",
+                "3-3": "Baton",
+                "4-4": "Bedroll",
+                "5-5": "Blanket",
+                "6-6": "Bow String",
+                "7-7": "Bowl",
+                "8-8": "Candle",
+                "9-9": "Canvas Tarp",
+                "10-10": "Chalk",
+                "11-11": "Charcoal stick",
+                "12-12": "Cooking Pot",
+                "13-13": "Cup",
+                "14-14": "Cutlery",
+                "15-15": "Deck of Cards",
+                "16-16": "Dice",
+                "17-17": "Dog collar and lead",
+                "18-18": "Doll",
+                "19-19": "Empty Vial",
+                "20-20": "Eye patch",
+                "21-21": "Lamp Oil",
+                "22-22": "Lantern",
+                "23-23": "Match",
+                "24-24": "Oil Lamp",
+                "25-25": "Pan",
+                "26-26": "Plate",
+                "27-27": "Rags",
+                "28-28": "Rope, 10 yards",
+                "29-29": "Saddle and Harness",
+                "30-30": "Slow Match",
+                "31-31": "Tinderbox",
+                "32-32": "Worms",
+                "33-33": "Torch"
+            }
+        },
+        "Trappings Exotic": {
+            "id": "RAtQKHJuwzetzLES",
+            "name": "Trappings Exotic",
+            "description": "entries.Trappings Exotic.description",
+            "results": {
+                "1-1": "Wooden Teeth"
+            }
+        },
+        "Trappings Rare": {
+            "id": "PjU4kouaMcBciake",
+            "name": "Trappings Rare",
+            "description": "entries.Trappings Rare.description",
+            "results": {
+                "1-1": "Davrich Lamp",
+                "2-2": "False Eye",
+                "3-3": "Hunting Dog",
+                "4-4": "Ostrich Feather"
+            }
+        },
+        "Trappings Scarce": {
+            "id": "SkcgjETudOZ1v52p",
+            "name": "Trappings Scarce",
+            "description": "entries.Trappings Scarce.description",
+            "results": {
+                "1-1": "Captain Braun's Insta-Boiler",
+                "2-2": "Captain Braun's Multi-Stove",
+                "3-3": "False Leg",
+                "4-4": "Fuse",
+                "5-5": "Gilded Nose",
+                "6-6": "Grappling Hook",
+                "7-7": "Hook",
+                "8-8": "Homing Pigeon",
+                "9-9": "Instrument",
+                "10-10": "Pipe and Tobacco",
+                "11-11": "Placard",
+                "12-12": "Storm Lantern",
+                "13-13": "Tent"
+            }
+        },
+        "Weapons Melee All (rarity)": {
+            "id": "pKyv4Jc6muNC94g7",
+            "name": "Weapons Melee All (rarity)",
+            "description": "entries.Weapons Melee All (rarity).description",
+            "results": {
+                "1-30": "Weapons Melee Common",
+                "31-45": "Weapons Melee Scarce",
+                "46-50": "Weapons Melee Rare",
+                "51-51": "Weapons Melee Exotic"
+            }
+        },
+        "Weapons Melee All (type)": {
+            "id": "hvqbuVn1qgidw5Nh",
+            "name": "Weapons Melee All (type)",
+            "description": "entries.Weapons Melee All (type).description",
+            "results": {
+                "1-5": "Weapons Melee Basic",
+                "6-9": "Weapons Melee Brawling",
+                "10-11": "Weapons Melee Cavalry",
+                "12-13": "Weapons Melee Fencing",
+                "14-16": "Weapons Melee Flail",
+                "17-20": "Weapons Melee Parry",
+                "21-24": "Weapons Melee Polearm",
+                "25-27": "Weapons Melee Two-Handed"
+            }
+        },
+        "Weapons Melee Basic": {
+            "id": "NbQj13peakFFZ7y7",
+            "name": "Weapons Melee Basic",
+            "description": "entries.Weapons Melee Basic.description",
+            "results": {
+                "1-30": "Axe",
+                "31-60": "Ballock Knife",
+                "61-90": "Bearded Axe",
+                "91-120": "Club",
+                "121-150": "Dagger",
+                "151-165": "Dwarf Hammer",
+                "166-180": "Eonir War Blade",
+                "181-210": "Hand Weapon",
+                "211-240": "Iron Skillet",
+                "241-270": "Knife",
+                "271-300": "Mace",
+                "301-315": "Military Pick",
+                "316-345": "Nan's Cleaver",
+                "346-350": "Pavise",
+                "351-365": "Scimitar",
+                "366-395": "Shield",
+                "396-425": "Shield (Buckler)",
+                "426-455": "Shield (Large)",
+                "456-485": "Sword",
+                "486-500": "Warhammer",
+                "501-515": "Ironfist"
+            }
+        },
+        "Weapons Melee Brawling": {
+            "id": "i4RnSWGAnDizNxSU",
+            "name": "Weapons Melee Brawling",
+            "description": "entries.Weapons Melee Brawling.description",
+            "results": {
+                "1-30": "Boat Hook",
+                "31-35": "Garrote",
+                "36-65": "Knuckledusters",
+                "66-80": "Spiked Gauntlet"
+            }
+        },
+        "Weapons Melee Cavalry": {
+            "id": "yIcvwk4epdz6Rmg1",
+            "name": "Weapons Melee Cavalry",
+            "description": "entries.Weapons Melee Cavalry.description",
+            "results": {
+                "1-15": "Cavalry Hammer",
+                "16-30": "Demi-Lance",
+                "31-45": "Lance",
+                "46-60": "Sabre"
+            }
+        },
+        "Weapons Melee Common": {
+            "id": "6aDY4jgGEXSuDSy3",
+            "name": "Weapons Melee Common",
+            "description": "entries.Weapons Melee Common.description",
+            "results": {
+                "1-1": "Axe",
+                "2-2": "Bearded Axe",
+                "3-3": "Boat Hook",
+                "4-4": "Club",
+                "5-5": "Dagger",
+                "6-6": "Eonir Spear",
+                "7-7": "Grain Flail",
+                "8-8": "Great Axe",
+                "9-9": "Halberd",
+                "10-10": "Hand Weapon",
+                "11-11": "Iron Skillet",
+                "12-12": "Knife",
+                "13-13": "Knuckledusters",
+                "14-14": "Mace",
+                "15-15": "Nan's Cleaver",
+                "16-16": "Pick",
+                "17-17": "Quarterstaff",
+                "18-18": "Shield",
+                "19-19": "Shield (Buckler)",
+                "20-20": "Shield (Large)",
+                "21-21": "Short Spear",
+                "22-22": "Spear",
+                "23-23": "Spear (2h)",
+                "24-24": "Sword",
+                "25-25": "Warhammer"
+            }
+        },
+        "Weapons Melee Exotic": {
+            "id": "dAQfHHfjqHyXPADK",
+            "name": "Weapons Melee Exotic",
+            "description": "entries.Weapons Melee Exotic.description",
+            "results": {
+                "1-1": "Flamberge Zweihander"
+            }
+        },
+        "Weapons Melee Fencing": {
+            "id": "4CBORA68YhnqaTC1",
+            "name": "Weapons Melee Fencing",
+            "description": "entries.Weapons Melee Fencing.description",
+            "results": {
+                "1-1": "Foil",
+                "2-2": "Rapier",
+                "3-3": "Smallsword"
+            }
+        },
+        "Weapons Melee Flail": {
+            "id": "JWGDM8xppMY1G2Wk",
+            "name": "Weapons Melee Flail",
+            "description": "entries.Weapons Melee Flail.description",
+            "results": {
+                "1-15": "Flail",
+                "16-45": "Grain Flail",
+                "46-50": "Military Flail"
+            }
+        },
+        "Weapons Melee Parry": {
+            "id": "8HxsHxZgPSeKvt6o",
+            "name": "Weapons Melee Parry",
+            "description": "entries.Weapons Melee Parry.description",
+            "results": {
+                "1-30": "Cloak",
+                "31-35": "Main Gauche",
+                "36-50": "Swordbreaker",
+                "51-55": "Weighted Net",
+                "56-60": "Iron Skillet",
+                "61-90": "Shield",
+                "91-120": "Shield (Buckler)",
+                "121-150": "Shield (Large)"
+            }
+        },
+        "Weapons Melee Polearm": {
+            "id": "b2Gc1oLA2NSrhR20",
+            "name": "Weapons Melee Polearm",
+            "description": "entries.Weapons Melee Polearm.description",
+            "results": {
+                "1-15": "Ahlspiess",
+                "16-30": "Bill",
+                "31-60": "Eonir Spear",
+                "61-90": "Halberd",
+                "91-95": "Mancatcher",
+                "96-110": "Partizan/Glaive",
+                "111-115": "Pike",
+                "116-130": "Pollaxe",
+                "131-160": "Quarterstaff",
+                "161-190": "Short Spear",
+                "191-220": "Spear",
+                "221-250": "Spear (2h)"
+            }
+        },
+        "Weapons Melee Rare": {
+            "id": "Qrn0SkDfC4s8EHhu",
+            "name": "Weapons Melee Rare",
+            "description": "entries.Weapons Melee Rare.description",
+            "results": {
+                "1-1": "Garrote",
+                "2-2": "Main Gauche",
+                "3-3": "Mancatcher",
+                "4-4": "Military Flail",
+                "5-5": "Pavise",
+                "6-6": "Pike",
+                "7-7": "Swordbreaker"
+            }
+        },
+        "Weapons Melee Scarce": {
+            "id": "rFxBuxgZ3F0H6GgS",
+            "name": "Weapons Melee Scarce",
+            "description": "entries.Weapons Melee Scarce.description",
+            "results": {
+                "1-1": "Ahlspiess",
+                "2-2": "Ballock Knife",
+                "3-3": "Bastard Sword",
+                "4-4": "Bill",
+                "5-5": "Cavalry Hammer",
+                "6-6": "Demi-Lance",
+                "7-7": "Dwarf Hammer",
+                "8-8": "Eonir War Blade",
+                "9-9": "Flail",
+                "10-10": "Foil",
+                "11-11": "Great Axe",
+                "12-12": "Ironfist",
+                "13-13": "Lance",
+                "14-14": "Locked Gauntlet",
+                "15-15": "Military Pick",
+                "16-16": "Pickaxe",
+                "17-17": "Pollaxe",
+                "18-18": "Rapier"
+            }
+        },
+        "Weapons Melee Two-Handed": {
+            "id": "x9yE8Z7dhxO16OR9",
+            "name": "Weapons Melee Two-Handed",
+            "description": "entries.Weapons Melee Two-Handed.description",
+            "results": {
+                "1-15": "Bastard Sword",
+                "16-16": "Flamberge Zweihander",
+                "17-46": "Great Axe",
+                "47-76": "Pick",
+                "77-91": "Pickaxe",
+                "92-92": "Warhammer",
+                "93-122": "Slayer's Axe",
+                "123-137": "Zweihander"
+            }
+        },
+        "Weapons Ranged All (type)": {
+            "id": "XbvjGkVsSKJN6VUB",
+            "name": "Weapons Ranged All (type)",
+            "description": "entries.Weapons Ranged All (type).description",
+            "results": {
+                "1-7": "Weapons Ranged Bow",
+                "8-14": "Weapons Ranged Crossbow",
+                "15-15": "Weapons Ranged Engineering",
+                "16-19": "Weapons Ranged Entangling",
+                "20-22": "Weapons Ranged Explosives",
+                "23-30": "Weapons Ranged Sling",
+                "31-35": "Weapons Ranged Throwing",
+                "36-39": "Weapons Ranged Blackpowder"
+            }
+        },
+        "Weapons Ranged Blackpowder": {
+            "id": "ktmExxHw7gpyGtEK",
+            "name": "Weapons Ranged Blackpowder",
+            "description": "entries.Weapons Ranged Blackpowder.description",
+            "results": {
+                "1-1": "Arquebus",
+                "2-16": "Blunderbuss",
+                "17-17": "Double-barrelled Handgun",
+                "18-22": "Dwarf Handgun",
+                "23-27": "Dwarf Pistol",
+                "28-28": "Griffonsfoot Pistol",
+                "29-29": "Gun Axe",
+                "30-30": "Gun Halberd",
+                "31-45": "Handgun",
+                "46-46": "Hochland Long Rifle",
+                "47-51": "Matchlock Blunderbuss",
+                "52-56": "Matchlock Handgun",
+                "57-61": "Pistol",
+                "62-62": "Mortar"
+            }
+        },
+        "Weapons Ranged Bow": {
+            "id": "u7KC15yrzT8FQgbA",
+            "name": "Weapons Ranged Bow",
+            "description": "entries.Weapons Ranged Bow.description",
+            "results": {
+                "1-30": "Bow",
+                "31-31": "Elf Bow",
+                "32-61": "Old Bow",
+                "62-91": "Shortbow",
+                "92-106": "Longbow"
+            }
+        },
+        "Weapons Ranged Common": {
+            "id": "ldeC3M21CQGHkwfI",
+            "name": "Weapons Ranged Common",
+            "description": "entries.Weapons Ranged Common.description",
+            "results": {
+                "1-1": "Bow",
+                "2-2": "Crossbow",
+                "3-3": "Lasso",
+                "4-4": "Old Bow",
+                "5-5": "Shortbow",
+                "6-6": "Sling",
+                "7-7": "Staff Sling",
+                "8-8": "Throwing Axe",
+                "9-9": "Throwing Knife",
+                "10-10": "Whip"
+            }
+        },
+        "Weapons Ranged Crossbow": {
+            "id": "VyiaKI5Bu355FN85",
+            "name": "Weapons Ranged Crossbow",
+            "description": "entries.Weapons Ranged Crossbow.description",
+            "results": {
+                "1-30": "Crossbow",
+                "31-45": "Crossbow Pistol",
+                "46-50": "Dwarf Crossbow",
+                "51-55": "Heavy Crossbow"
+            }
+        },
+        "Weapons Ranged Engineering": {
+            "id": "Wxwpo7lb3JXXmn8V",
+            "name": "Weapons Ranged Engineering",
+            "description": "entries.Weapons Ranged Engineering.description",
+            "results": {
+                "1-1": "Cane Pistol",
+                "2-2": "Drakefire Pistol",
+                "3-7": "Pepperbox",
+                "8-12": "Repeater Handgun",
+                "13-17": "Repeater Pistol"
+            }
+        },
+        "Weapons Ranged Entangling": {
+            "id": "d6aAZua7r7FBa2WW",
+            "name": "Weapons Ranged Entangling",
+            "description": "entries.Weapons Ranged Entangling.description",
+            "results": {
+                "1-5": "Net",
+                "6-35": "Lasso",
+                "36-65": "Whip"
+            }
+        },
+        "Weapons Ranged Exotic": {
+            "id": "Pdyhzp5OM17XSMoK",
+            "name": "Weapons Ranged Exotic",
+            "description": "entries.Weapons Ranged Exotic.description",
+            "results": {
+                "1-1": "Arquebus",
+                "2-2": "Blackbriar Javelin",
+                "3-3": "Cane Pistol",
+                "4-4": "Cinderblast Bomb",
+                "5-5": "Double-barrelled Handgun",
+                "6-6": "Drakefire Pistol",
+                "7-7": "Elf Bow",
+                "8-8": "Griffonsfoot Pistol",
+                "9-9": "Gun Axe",
+                "10-10": "Gun Halberd",
+                "11-11": "Hochland Long Rifle",
+                "12-12": "Mortar"
+            }
+        },
+        "Weapons Ranged Explosives": {
+            "id": "0uz6Av9prMPCWCAQ",
+            "name": "Weapons Ranged Explosives",
+            "description": "entries.Weapons Ranged Explosives.description",
+            "results": {
+                "1-5": "Bomb",
+                "6-6": "Cinderblast Bomb",
+                "7-21": "Incendiary"
+            }
+        },
+        "Weapons Ranged Rare": {
+            "id": "g9nAK5VCHXFCHhzT",
+            "name": "Weapons Ranged Rare",
+            "description": "entries.Weapons Ranged Rare.description",
+            "results": {
+                "1-1": "Bolas",
+                "2-2": "Bomb",
+                "3-3": "Dwarf Crossbow",
+                "4-4": "Dwarf Handgun",
+                "5-5": "Dwarf Pistol",
+                "6-6": "Heavy Crossbow",
+                "7-7": "Matchlock Blunderbuss",
+                "8-8": "Matchlock Handgun",
+                "9-9": "Pepperbox",
+                "10-10": "Pistol",
+                "11-11": "Repeater Handgun",
+                "12-12": "Repeater Pistol"
+            }
+        },
+        "Weapons Ranged Scarce": {
+            "id": "yP8BfDbhsxYobb9t",
+            "name": "Weapons Ranged Scarce",
+            "description": "entries.Weapons Ranged Scarce.description",
+            "results": {
+                "1-1": "Blunderbuss",
+                "2-2": "Crossbow Pistol",
+                "3-3": "Dart",
+                "4-4": "Handgun",
+                "5-5": "Incendiary",
+                "6-6": "Javelin",
+                "7-7": "Longbow",
+                "8-8": "Pistol"
+            }
+        },
+        "Weapons Ranged Sling": {
+            "id": "sVeSgf9FFQlvkf86",
+            "name": "Weapons Ranged Sling",
+            "description": "entries.Weapons Ranged Sling.description",
+            "results": {
+                "1-30": "Staff Sling",
+                "31-60": "Sling"
+            }
+        },
+        "Weapons Ranged Throwing": {
+            "id": "6doUzn9m0jBvUuA3",
+            "name": "Weapons Ranged Throwing",
+            "description": "entries.Weapons Ranged Throwing.description",
+            "results": {
+                "1-1": "Blackbriar Javelin",
+                "2-6": "Bolas",
+                "7-21": "Javelin",
+                "22-36": "Dart",
+                "37-66": "Throwing Axe",
+                "67-96": "Throwing Knife"
+            }
+        },
+        "Weapon Ranged all (rarity)": {
+            "id": "y5SW5JyTnLMGZ493",
+            "name": "Weapon Ranged all (rarity)",
+            "description": "entries.Weapon Ranged all (rarity).description",
+            "results": {
+                "1-30": "Weapons Ranged Common",
+                "31-45": "Weapons Ranged Scarce",
+                "46-50": "Weapons Ranged Rare",
+                "51-51": "Weapons Ranged Exotic"
+            }
+        }
+    }
+}

@@ -625,13 +625,13 @@
         "Healing Draught": {
             "id": "gxdjLQoQUTYgD6fm",
             "name": "Mikstura lecznicza",
-            "description": "<p>Jeśli bohater ma więcej niż 0 Żywotności, natychmiast leczy tyle jej punktów, ile wynosi jego Bonus z Wytrzymałość. <strong>Dawkowanie</strong>: 1 dawka na spotkanie.</p>",
+            "description": "<p>Jeśli bohater ma więcej niż 0 Żywotności, natychmiast leczy tyle jej punktów, ile wynosi jego Bonus z Wytrzymałość. <strong>Dawkowanie:</strong> 1 dawka na spotkanie.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.gxdjLQoQUTYgD6fm",
             "effects": {
                 "K7C1LFtqdLQ5bhFS": {
                     "id": "K7C1LFtqdLQ5bhFS",
                     "name": "Mikstura lecznicza",
-                    "script": "let wounds = this.actor.status.wounds\nif (wounds.value == 0)\n  return ui.notifications.error(\"Brak efektu przy 0 punktach Żywotności\")\n\nui.notifications.notify(`Uleczone punkty Żywotności: ${this.actor.characteristics.t.bonus}`)\nthis.actor.modifyWounds(this.actor.characteristics.t.bonus)"
+                    "script": "let wounds = this.actor.status.wounds\nif (wounds.value == 0)\n  return ui.notifications.error(\"Brak efektu, ponieważ Żywotności wynosi 0, zużyto dawkę\")\n\nui.notifications.notify(`Wyleczono ${this.actor.characteristics.t.bonus} Żywotności`)\nthis.actor.modifyWounds(this.actor.characteristics.t.bonus)"
                 }
             }
         },
@@ -1621,6 +1621,33 @@
         }
     },
     "folders": {
-        "Trappings": "Wyposażenie"
+        "Trappings": "Wyposażenie",
+        "Blessings": "Błogosławieństwa",
+        "Uliric": "Ulryk",
+        "Ammunition": "Amunicja",
+        "Armour": "Pancerze", 
+        "Weapons": "Broń",
+        "Books and Documents": "Księgi i Dokumenty",
+        "Clothing and Accessories": "Odzież i Akcesoria",
+        "Drugs and Poisons": "Narkotyki i Trucizny",
+        "Food and Drink": "Jedzenie i Napoje",
+        "Herbs and Draughts": "Zioła i Eliksiry",
+        "Miscellaneous": "Różne",
+        "Packs and Containers": "Plecaki i Pojemniki",
+        "Tools and Kits": "Narzędzia i Zestawy",
+        "Chaos Magic": "Magia Chaosu",
+        "Lore of Beasts": "Tradycja Zwierząt", 
+        "Lore of Daemonology": "Tradycja Demonologii",
+        "Lore of Death": "Tradycja Śmierci",
+        "Lore of Fire": "Tradycja Ognia",
+        "Lore of Heavens": "Tradycja Niebios",
+        "Lore of Hedgecraft": "Tradycja Guślarstwa",
+        "Lore of Life": "Tradycja Życia",
+        "Lore of Light": "Tradycja Światła",
+        "Lore of Metal": "Tradycja Metalu",
+        "Lore of Shadow": "Tradycja Cieni",
+        "Lore of Witchcraft": "Tradycja Czarostwa",
+        "Lore of Necromancy": "Tradycja Nekromancji",
+        "Petty Spells": "Proste Zaklęcia"
     }
 }

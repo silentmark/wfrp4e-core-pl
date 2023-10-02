@@ -1,0 +1,857 @@
+{
+    "label": "Wyposażenie",
+    "mapping": {
+        "penalties": "system.penalty.value",
+        "range": "system.range.value",
+        "special": "system.special.value",
+        "effects": {
+            "path": "effects",
+            "converter": "effects"
+        }
+    },
+    "folders": {
+        "Trappings": "Wyposażenie"
+    },
+    "entries": {
+        "Angel": {
+            "id": "NGaBjbGOFihSbuXp",
+            "name": "Angel",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.NGaBjbGOFihSbuXp"
+        },
+        "Aqshy Ingredient": {
+            "id": "Fyaz0um5STWsmcL7",
+            "name": "Składnik Aqshy",
+            "description": "<p>@UUID[JournalEntry.YBVrpUHEjohB1H4f.JournalEntryPage.BU7yhLmMdEyvbfkR#ingredients]{Składniki}</p><p><span style=\"font-family: var( --actor-input-font-family)\">Generyczny składnik używany w splataniu wiatru @UUID[Compendium.wfrp4e-wom.journals.JournalEntry.wjJ2wq1bzzON74vV]{Aqshy}.</span></p><p style=\"box-sizing: border-box; user-select: text; margin: 0.5em 0px; font-family: var( --actor-input-font-family); font-size: 14px; font-weight: var(--actor-input-font-weight); padding: 0px; color: var(--actor-input-color); background: none; border: none; width: 388px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: start\"><span style=\"font-family: var( --actor-input-font-family)\">\n<span style=\"font-family: var( --actor-input-font-family)\">Cena składnika zależy od zaklęcia, dla którego jest przeznaczony. Ustaw cenę na X SS, gdzie X jest równe PZ zaklęcia. </em></span></p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.Fyaz0um5STWsmcL7"
+        },
+        "Archer's Quiver": {
+            "id": "ZfHEQs76E08LeAU7",
+            "name": "Kołczan Łucznika",
+            "description": "<p>Może pomieścić do 50 typowych strzał lub bełtów (po 0,05 obc każda)</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.ZfHEQs76E08LeAU7"
+        },
+        "Armour Runes": {
+            "id": "JV4MzBoyCXZBeKx5",
+            "name": "Runy Pancerzy",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.JV4MzBoyCXZBeKx5",
+            "effects": {
+                "5NtPlakn0hIeVnXM": {
+                    "id": "5NtPlakn0hIeVnXM",
+                    "name": "Runa Żelaza (tymczasowa)",
+                    "script": "let name = game.i18n.localize('Forien.Armoury.Runes.RuneOfIron.name');\nlet effect = game.i18n.localize('Forien.Armoury.Runes.RuneOfIron.effect');\n\nargs.totalWoundLoss-= 1;\nargs.opposedTest.result.other.push(`<strong>${name}:</strong> ${effect}`);"
+                },
+                "5pobiT1OYmTsOt0x": {
+                    "id": "5pobiT1OYmTsOt0x",
+                    "name": "Runa Żelaza (Stała)",
+                    "script": "let name = game.i18n.localize('Forien.Armoury.Runes.RuneOfIron.name');\nlet effect = game.i18n.localize('Forien.Armoury.Runes.RuneOfIron.effect');\n\nargs.totalWoundLoss-= 1;\nargs.opposedTest.result.other.push(`<strong>${name}:</strong> ${effect}`);"
+                },
+                "5ueEI9o6cfglxK15": {
+                    "id": "5ueEI9o6cfglxK15",
+                    "name": "Runa Kamienia (Stała)",
+                    "script": "if (args.item?._id === this.item?.id) {\n  let ap = args.item.system.AP;\n\n  for (let loc in ap) {\n    let location = args.item.system.AP[loc];\n    if (location > 0)\n      args.item.system.AP[loc] += 1;\n  };\n}"
+                },
+                "a5X5l9cK1ixX7T0x": {
+                    "id": "a5X5l9cK1ixX7T0x",
+                    "name": "Runa Ochrony (Stała)",
+                    "script": "let name = game.i18n.localize('Forien.Armoury.Runes.RuneOfResistance.name');\nlet effect = game.i18n.localize('Forien.Armoury.Runes.RuneOfResistance.effect');\n\nargs.opposedTest.result.other.push(`<strong>${name}:</strong> ${effect}`);"
+                },
+                "BPBGiKpyfWwuP6EN": {
+                    "id": "BPBGiKpyfWwuP6EN",
+                    "name": "Runa Tarczy (Tymczasowa)",
+                    "script": "if (args.item?.isRanged) {\n  args.prefillModifiers.modifier -= 20;\n}"
+                },
+                "C25fFcCoWt7QygAk": {
+                    "id": "C25fFcCoWt7QygAk",
+                    "name": "Runa Szczęścia (Tymczasowa)",
+                    "script": "args.wounds += 4"
+                },
+                "JhgWaE6GNfr7MFtc": {
+                    "id": "JhgWaE6GNfr7MFtc",
+                    "name": "Runa Odporności (Tymczasowa)",
+                    "script": "let name = game.i18n.localize('Forien.Armoury.Runes.RuneOfResistance.name');\nlet effect = game.i18n.localize('Forien.Armoury.Runes.RuneOfResistance.effect');\n\nargs.opposedTest.result.other.push(`<strong>${name}:</strong> ${effect}`);"
+                },
+                "ReMhmarovfkuJRSY": {
+                    "id": "ReMhmarovfkuJRSY",
+                    "name": "Runa Hartu (Stała)",
+                    "script": "args.wounds += 4"
+                },
+                "rmY3T5ItD4NrVjMr": {
+                    "id": "rmY3T5ItD4NrVjMr",
+                    "name": "Runa Skały (Tymczasowa)",
+                    "script": "if (args.item?._id === this.item?.id) {\n  let ap = args.item.system.AP;\n\n  for (let loc in ap) {\n    let location = args.item.system.AP[loc];\n    if (location > 0)\n      args.item.system.AP[loc] += 1;\n  };\n}"
+                },
+                "XI5OwnmOJXBofQoL": {
+                    "id": "XI5OwnmOJXBofQoL",
+                    "name": "Runa Tarczy (Stała)",
+                    "script": "if (args.item?.isRanged) {\n  args.prefillModifiers.modifier -= 20;\n}"
+                }
+            }
+        },
+        "Azyr Ingredient": {
+            "id": "rX639Tm9dTFGgdEs",
+            "name": "Składnik Azyr",
+            "description": "<p>@UUID[JournalEntry.YBVrpUHEjohB1H4f.JournalEntryPage.BU7yhLmMdEyvbfkR#ingredients]{Składniki}</p><p><span style=\"font-family: var( --actor-input-font-family)\">Generyczny składnik używany w splataniu wiatru @UUID[Compendium.wfrp4e-wom.journals.JournalEntry.j72t0e5BVIgeOMB4]{Azyr}.</span></p><p style=\"box-sizing: border-box; user-select: text; margin: 0.5em 0px; font-family: var( --actor-input-font-family); font-size: 14px; font-weight: var(--actor-input-font-weight); padding: 0px; color: var(--actor-input-color); background: none; border: none; width: 388px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: start\"><span style=\"font-family: var( --actor-input-font-family)\"><em style=\"box-sizing: border-box; user-select: text;\">Cena składnika zależy od zaklęcia, dla którego jest przeznaczony. Ustaw cenę na X SS, gdzie X jest równe PZ zaklęcia. </em></span></p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.rX639Tm9dTFGgdEs"
+        },
+        "Barbed Bolt": {
+            "id": "U9l2QD8tOLvPTf9B",
+            "name": "Kolczasty Bełt",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.U9l2QD8tOLvPTf9B",
+            "range": "jak broń"
+        },
+        "Big Powder Horn": {
+            "id": "m0JzXLIjaskvNi5v",
+            "name": "Wielki Prochowy Róg",
+            "description": "<p>Może pomieścić wystarczającą ilość prochu, aby oddać 32 strzały (0,12 obc. każdy).</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.m0JzXLIjaskvNi5v"
+        },
+        "Bodkin Bolt": {
+            "id": "jCZpu8nn4FrKhMD0",
+            "name": "Bełt Bodkina",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.jCZpu8nn4FrKhMD0",
+            "range": "jak broń"
+        },
+        "Breastplate": {
+            "id": "hWZ6H1jZ9jmte6yE",
+            "name": "Napierśnik",
+            "description": "<p>Napierśnik to rodzaj zbroi płytowej, która zakrywa tylko przednią część tułowia.</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.hWZ6H1jZ9jmte6yE"
+        },
+        "Candle": {
+            "id": "BXGyC1YqjSy6ErTI",
+            "name": "Świeca",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.items.Item.TW3etL7RIU2EWTXp]{Świeca} z zaimplementowanym efektem wykorzystującym moduł ATL</p><p>Wystarcza na 2 godziny.</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.BXGyC1YqjSy6ErTI",
+            "effects": {
+                "zUn7o4oGRBwnlmoX": {
+                    "id": "zUn7o4oGRBwnlmoX",
+                    "name": "Świeca"
+                }
+            }
+        },
+        "Chamon Ingredient": {
+            "id": "0Xe2tUDjV3jR2o17",
+            "name": "Składnik Chamon",
+            "description": "<p>@UUID[JournalEntry.YBVrpUHEjohB1H4f.JournalEntryPage.BU7yhLmMdEyvbfkR#ingredients]{Składniki}</p><p><span style=\"font-family: var( --actor-input-font-family)\">Generyczny składnik używany w splataniu wiatru @UUID[Compendium.wfrp4e-wom.journals.JournalEntry.kLTWtoz5d7Yt2zAJ]{Chamon}.</span></p><p style=\"box-sizing: border-box; user-select: text; margin: 0.5em 0px; font-family: var( --actor-input-font-family); font-size: 14px; font-weight: var(--actor-input-font-weight); padding: 0px; color: var(--actor-input-color); background: none; border: none; width: 388px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: start\"><span style=\"font-family: var( --actor-input-font-family)\"><em style=\"box-sizing: border-box; user-select: text;\">Cena składnika zależy od zaklęcia, dla którego jest przeznaczony. Ustaw cenę na X SS, gdzie X jest równe PZ zaklęcia. </em></span></p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.0Xe2tUDjV3jR2o17"
+        },
+        "Cuirass": {
+            "id": "VW2Sk5JPUrz7SLPH",
+            "name": "Kirys",
+            "description": "<p>Kirys zakrywa przód i tył tułowia, zapewniając w ten sposób lepszą ochronę.</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.VW2Sk5JPUrz7SLPH"
+        },
+        "Empty Keg": {
+            "id": "jyphOMwPqNU9KgmS",
+            "name": "Pusta Beczka",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.jyphOMwPqNU9KgmS"
+        },
+        "Empty Vial": {
+            "id": "VX5v3rgKUIyhE5CD",
+            "name": "Pusta Fiolka",
+            "description": "<p>Mała szklana fiolka, zwykle używana do przechowywania niewielkich ilości płynów, takich jak mocny alkohol, kwasy, mikstury itp., ale może być również używana do przechowywania niewielkich ilości substancji w proszku, zmielonych materiałów lub innych zwartych substancji biologicznych.</p> ><p><em>Pojemność: 2 uncje płynu / 5 cl płynu.</em></p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.VX5v3rgKUIyhE5CD"
+        },
+        "Farthing": {
+            "id": "GhLwRCQqJUGJGf0J",
+            "name": "Grosz",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.GhLwRCQqJUGJGf0J"
+        },
+        "Fast Powder Horn": {
+            "id": "ZP2D38WdvD5iVd0F",
+            "name": "Szybki Róg Prochowy",
+            "description": "<p>Może pomieścić wystarczającą ilość prochu, aby wystrzelić 12 razy (0,12 obc. każdy), ale przyspiesza przeładowanie, zmniejszając karę do przeładowania o 1 (do minimum 1).</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.ZP2D38WdvD5iVd0F",
+            "effects": {
+                "i0hmJna55MvtPd9j": {
+                    "id": "i0hmJna55MvtPd9j",
+                    "name": "Szybki Róg Prochowy",
+                    "script": "if (args.item.type == \"weapon\") {\n    let ammoGroup = args.item.ammunitionGroup.value === \"BPandEng\";\n\n    if (ammoGroup) {\n        args.item.system.flaws.value.forEach(flaw => {if (flaw.name == \"reload\" && flaw.value > 1) flaw.value -= 1});\n    }\n}"
+                }
+            }
+        },
+        "Gambeson Coat": {
+            "id": "BPcUiIKFMXSobKqC",
+            "name": "Płaszcz Przeszywny",
+            "description": "<p>Przeszywanica to wyściełana kurtka obronna, noszona jako zbroja osobno lub w połączeniu z kolczugą lub zbroją płytową. Przeszywanice produkowane są techniką szycia zwaną pikowaniem. Zwykle są wykonane z lnu lub wełny; materiał był zróżnicowany i mógł to być na przykład skrawki ubrań lub sierść końska.</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.BPcUiIKFMXSobKqC"
+        },
+        "Gambeson Coif": {
+            "id": "iiYBwR0TRnrBefgp",
+            "name": "Kaptur Przeszywny",
+            "description": "<p>Przeszywny kaptur to wyściełana czapka obronna, noszona osobno jako zbroja lub połączona z czepcem kolczym lub hełmem płytowym. Przeszywanice produkowane są techniką szycia zwaną pikowaniem. Zazwyczaj są zrobione z lnu lub wełny. Użyty materiał był różny, na przykład fragmenty ubrań lub włosie końskie. </p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.iiYBwR0TRnrBefgp"
+        },
+        "Gambeson": {
+            "id": "LNdVWroLmPIXu5Dj",
+            "name": "Przeszywanica",
+            "description": "<p>Przeszywanica to wyściełana kurtka obronna, noszona jako zbroja osobno lub w połączeniu z kolczugą lub zbroją płytową. Przeszywanice produkowane są techniką szycia zwaną pikowaniem. Zwykle są wykonane z lnu lub wełny; materiał był zróżnicowany i mógł to być na przykład skrawki ubrań lub sierść końska.</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.LNdVWroLmPIXu5Dj"
+        },
+        "Gambeson Shirt": {
+            "id": "wkTgfXYKNDDUmL1m",
+            "name": "Kaftan Przeszywny",
+            "description": "<p>Przeszywanica to wyściełana kurtka obronna, noszona jako zbroja osobno lub w połączeniu z kolczugą lub zbroją płytową. Przeszywanice produkowane są techniką szycia zwaną pikowaniem. Zwykle są wykonane z lnu lub wełny; materiał był zróżnicowany i mógł to być na przykład skrawki ubrań lub sierść końska.</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.wkTgfXYKNDDUmL1m"
+        },
+        "Ghur Ingredient": {
+            "id": "0IzPuMHA4a4P0PYB",
+            "name": "Składnik Ghur",
+            "description": "<p>@UUID[JournalEntry.YBVrpUHEjohB1H4f.JournalEntryPage.BU7yhLmMdEyvbfkR#ingredients]{Składniki}</p><p><span style=\"font-family: var( --actor-input-font-family)\">Generyczny składnik używany w splataniu wiatru @UUID[Compendium.wfrp4e-wom.journals.JournalEntry.DND7iNuVrCXgTXki]{Ghur}.</span></p><p style=\"box-sizing: border-box; user-select: text; margin: 0.5em 0px; font-family: var( --actor-input-font-family); font-size: 14px; font-weight: var(--actor-input-font-weight); padding: 0px; color: var(--actor-input-color); background: none; border: none; width: 388px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: start\"><span style=\"font-family: var( --actor-input-font-family)\"><em style=\"box-sizing: border-box; user-select: text;\">Cena składnika zależy od zaklęcia, dla którego jest przeznaczony. Ustaw cenę na X SS, gdzie X jest równe PZ zaklęcia.</em></span></p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.0IzPuMHA4a4P0PYB"
+        },
+        "Ghyran Ingredient": {
+            "id": "G4EdPUHqekDS6kj8",
+            "name": "Składnik Ghyran",
+            "description": "<p>@UUID[JournalEntry.YBVrpUHEjohB1H4f.JournalEntryPage.BU7yhLmMdEyvbfkR#ingredients]{Składniki}</p><p><span style=\"font-family: var( --actor-input-font-family)\">Generyczny składnik używany w splataniu wiatru @UUID[Compendium.wfrp4e-wom.journals.JournalEntry.Q9sQhbDN8NUHXYdA]{Ghyran}.</span></p><p style=\"box-sizing: border-box; user-select: text; margin: 0.5em 0px; font-family: var( --actor-input-font-family); font-size: 14px; font-weight: var(--actor-input-font-weight); padding: 0px; color: var(--actor-input-color); background: none; border: none; width: 388px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: start\"><span style=\"font-family: var( --actor-input-font-family)\"><em style=\"box-sizing: border-box; user-select: text;\">Cena składnika zależy od zaklęcia, dla którego jest przeznaczony. Ustaw cenę na X SS, gdzie X jest równe PZ zaklęcia.</em></span></p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.G4EdPUHqekDS6kj8"
+        },
+        "Gunpowder, Keg": {
+            "id": "sSbrR2PJ7ydIZfsJ",
+            "name": "Proch strzelniczy, beczka",
+            "description": "<p><em> Aktualna pojemność: 144 / 144 </em></p><p> Mieści wystarczającą ilość prochu do 144 strzałów (12 standardowych rogów). </p><p><em> uwzględnia cenę 1/6 za beczkę.</em></p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.sSbrR2PJ7ydIZfsJ"
+        },
+        "Half-a-crown": {
+            "id": "BkZpvKq365GHws0U",
+            "name": "Pół korony",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.BkZpvKq365GHws0U"
+        },
+        "Ha'penny": {
+            "id": "Nmfbt3P2UReyThBe",
+            "name": "Pół-pensówka",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.Nmfbt3P2UReyThBe"
+        },
+        "Hedgecraft Ingredient": {
+            "id": "gEnMIQ1x4ETY1gCB",
+            "name": "Składnik Guślarstwa",
+            "description": "<p>@UUID[JournalEntry.YBVrpUHEjohB1H4f.JournalEntryPage.BU7yhLmMdEyvbfkR#ingredients]{Składniki}</p><p><span style=\"font-family: var( --actor-input-font-family)\"><em>Składniki guślarskie mogą być pozyskane za pomocą @UUID[JournalEntry.6zOdTLv3YeYeJ4hR.JournalEntryPage.F0RPpWALOBy2zdyc]{Wiedza (Źelarstwo)}. Po udanym rzucie otrzymujesz 1 + PS składników.</em></span></p><p><span style=\"font-family: var( --actor-input-font-family)\"><strong>Nie można rzucać żadnych zaklęć @UUID[Compendium.wfrp4e-core.journal-entries.JournalEntry.YBVrpUHEjohB1H4f.JournalEntryPage.SCijiCw628GLE2pT#the-lore-of-hedgecraft]{Tradycji Guślarstwa} bez składników.</strong></span></p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.gEnMIQ1x4ETY1gCB"
+        },
+        "Hunter's Quiver": {
+            "id": "gg1pfuy1Tk8hPoVl",
+            "name": "Kołczan myśliwego",
+            "description": "<p> Mały praktyczny kołczan, który może pomieścić do 12 typowych strzał lub bełtów (0,05 obc. każda)</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.gg1pfuy1Tk8hPoVl"
+        },
+        "Hysh Ingredient": {
+            "id": "uCGbBeMU5TUZPoba",
+            "name": "Składnik Hysh",
+            "description": "<p>@UUID[JournalEntry.YBVrpUHEjohB1H4f.JournalEntryPage.BU7yhLmMdEyvbfkR#ingredients]{Składniki}</p><p><span style=\"font-family: var( --actor-input-font-family)\">Generyczny składnik używany w splataniu wiatru </span>@UUID[Compendium.wfrp4e-wom.journals.JournalEntry.4hwftTG3PqNnmUfK]{Hysh}.</p><p style=\"box-sizing: border-box; user-select: text; margin: 0.5em 0px; font-family: var( --actor-input-font-family); font-size: 14px; font-weight: var(--actor-input-font-weight); padding: 0px; color: var(--actor-input-color); background: none; border: none; width: 388px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: start\"><span style=\"font-family: var( --actor-input-font-family)\"><em style=\"box-sizing: border-box; user-select: text;\">Cena składnika zależy od zaklęcia, dla którego jest przeznaczony. Ustaw cenę na X SS, gdzie X jest równe PZ zaklęcia.</em></span></p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.uCGbBeMU5TUZPoba"
+        },
+        "Improved Bullet and Powder": {
+            "id": "RN5mc97zk1Bd7jRx",
+            "name": "Ulepszony pocisk i proch",
+            "description": "<p> Standardowy pocisk z ulepszonym prochem czarnym. </p><p>Ulepszony czarny proch zapewnia różne korzyści. @UUID[JournalEntry.4spGTAnh7qc2JDqY.JournalEntryPage.TwuMMg4t9QPf89rT#alchemical-products]{Czytaj więcej}.</p><ul><li><p>Skraca czas przeładowania.</p></li><li><p> Umożliwia zignorowanie skutków niewypału</p></li> </ul>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.RN5mc97zk1Bd7jRx",
+            "effects": {
+                "aVqsNFyVjiYt4nnC": {
+                    "id": "aVqsNFyVjiYt4nnC",
+                    "name": "Ulepszony pocisk i proch (przeładowanie)",
+                    "script": "if (args.item.type == \"weapon\") {\n    let thisAmmo = args.item.ammo?.id === this.item.id;\n\n    if (thisAmmo) {\n        args.item.system.flaws.value.forEach(flaw => {if (flaw.name == \"reload\" && flaw.value > 1) flaw.value -= 1});\n    }\n}"
+                },
+                "vb5OW5hKoVzbuFpT": {
+                    "id": "vb5OW5hKoVzbuFpT",
+                    "name": "Ulepszony pocisk i proch (niewypał)",
+                    "script": "let isFumble = \"Fumble\" === args.test.isFumble;\nlet isMisfire = isFumble && args.test.result.roll % 2 === 0\nlet thisAmmo = args.test?.weapon?.ammo.? _id === this.item.id\n\nif (isFumble && isMisfire && thisAmmo) {\n  args.test.data.result.other.push(\"<p>Możesz wykonać <strong>trudny (+0) <em>Test Broń Zasięgowa(czarnoprochowy lub inżynieryjny),</em></strong> aby zignorować skutki niewypału!</p>\");\n}"
+                }
+            },
+            "range": "jak broń"
+        },
+        "Improved Gunpowder, Keg": {
+            "id": "geiipKKwUUiREPAi",
+            "name": "Ulepszony proch strzelniczy, beczka",
+            "description": "<p> <em> Aktualna pojemność: 144 / 144</em></p><p>Posiada wystarczającą ilość prochu na 144 @UUID[Compendium.forien-armoury.forien-armoury.Item.RN5mc97zk1Bd7jRx]{ulepszone strzały} (12 standardowych rogów)</p><p><em>Uwzględnia cenę 1/6 za beczkę. </em></p><p><strong>Aby zastosować ulepszony proch</strong>, przeciągnij efekty na dowolną amunicję i włącz opcję \"Zastosuj do aktora\" dla nowych efektów na amunicji. Zrób to przed dodaniem amunicji do aktora. </p> <p> Ulepszony proch strzelniczy zapewnia różne korzyści. @UUID[JournalEntry.4spGTAnh7qc2JDqY.JournalEntryPage.TwuMMg4t9QPf89rT#alchemical-products]{Przeczytaj więcej}. </p> <ul> <li> <p> Skraca czas przeładowania.</p></li> <li><p>Umożliwia zignorowanie skutków niewypału.</p> </li> </ul>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.geiipKKwUUiREPAi",
+            "effects": {
+                "FXUStJvWY3xHM2Il": {
+                    "id": "FXUStJvWY3xHM2Il",
+                    "name": "Ulepszony czarny proch (Niewypał)",
+                    "script": "let isFumble = \"Fumble\" === args.test.isFumble;\nlet isMisfire = isFumble && args.test.result.roll % 2 === 0\nlet thisAmmo = args.test?.weapon?.ammo.? _id === this.item.id\n\nif (isFumble && isMisfire && thisAmmo) {\n  args.test.data.result.other.push(\"<p>Możesz wykonać <strong>trudny (+0) <em>Test Broń Zasięgowa(czarnoprochowy lub inżynieryjny),</em></strong> aby zignorować skutki niewypału!</p>\");\n}"
+                },
+                "xw4rj0sreWwUuyW6": {
+                    "id": "xw4rj0sreWwUuyW6",
+                    "name": "Ulepszony czarny proch (przeładowanie)",
+                    "script": "if (args.item.type == \"weapon\") {\n    let thisAmmo = args.item.ammo?.id === this.item.id;\n\n    if (thisAmmo) {\n        args.item.system.flaws.value.forEach(flaw => {if (flaw.name == \"reload\" && flaw.value > 1) flaw.value -= 1});\n    }\n}"
+                }
+            }
+        },
+        "Lantern": {
+            "id": "wTi7GD0yyAFZdfkc",
+            "name": "Latarnia",
+            "description": "<p> @UUID[Compendium.wfrp4e-core.items.Item.mcJi9yqMFRJRkhJs]{Latarnia} z gotowym efektem kompatybilnym z modułem ATL</p><p>Wymaga @UUID[Compendium.wfrp4e-core.items.Item.Bal23aLiOmnht42h]{Oliwy do lampy}.</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.wTi7GD0yyAFZdfkc",
+            "effects": {
+                "za7XlKi8UGGfjuDs": {
+                    "id": "za7XlKi8UGGfjuDs",
+                    "name": "Latarnia"
+                }
+            }
+        },
+        "Leather Jack": {
+            "id": "OjcHE0VOGr1aRdy9",
+            "name": "Skórzana kurta",
+            "description": "<p></p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.OjcHE0VOGr1aRdy9"
+        },
+        "Leather Jerkin": {
+            "id": "ipaDvYY3qS66o593",
+            "name": "Skórzany kaftan",
+            "description": "<p></p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.ipaDvYY3qS66o593"
+        },
+        "Leather Leggings": {
+            "id": "MzppW5E5c3by9iBU",
+            "name": "Skórzane nogawice",
+            "description": "<p></p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.MzppW5E5c3by9iBU"
+        },
+        "Leather Skullcap": {
+            "id": "0W0kEpa2kNEcRGK0",
+            "name": "Skórzany hełm",
+            "description": "<p></p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.0W0kEpa2kNEcRGK0"
+        },
+        "Long Gambeson": {
+            "id": "X1OPgLRUhnJhjufW",
+            "name": "Długa Przeszywanica",
+            "description": "<p>Przeszywanica to wyściełana kurtka obronna, noszona jako zbroja osobno lub w połączeniu z kolczugą lub zbroją płytową. Przeszywanice produkowane są techniką szycia zwaną pikowaniem. Zwykle są wykonane z lnu lub wełny; materiał był zróżnicowany i mógł to być na przykład skrawki ubrań lub sierść końska.</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.X1OPgLRUhnJhjufW"
+        },
+        "Master Armour Runes": {
+            "id": "C0uWiIL7yEzK98IY",
+            "name": "Mistrzowskie Runy Pancerza",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.C0uWiIL7yEzK98IY",
+            "effects": {
+                "5QERb91AHPrchAHJ": {
+                    "id": "5QERb91AHPrchAHJ",
+                    "name": "Mistrzowska Runa Gromrilu (Tymczasowa)",
+                    "script": "if (args.item?._id === this.item?.id) {\n  let ap = args.item.system.AP;\n\n  for (let loc in ap) {\n    let location = args.item.system.AP[loc];\n    if (location > 0)\n      args.item.system.AP[loc] += 2;\n  };\n}"
+                },
+                "iZ1DZl3WvphhhNaD": {
+                    "id": "iZ1DZl3WvphhhNaD",
+                    "name": "Mistrzowska Runa Adamantu (Tymczasowa)"
+                },
+                "ljYFR196YeYV4x7n": {
+                    "id": "ljYFR196YeYV4x7n",
+                    "name": "Mistrzowska Runa Stali (Tymczasowa)",
+                    "script": "let weapon = args.attackerTest?.weapon\nif (!weapon && args.attackerTest?.trait)\n  weapon = args.attackerTest.trait\n\nif (weapon) {\n  let name = game.i18n.localize('Forien.Armoury.Runes.MasterRuneOfSteel.name');\n  let effect = game.i18n.localize('Forien.Armoury.Runes.MasterRuneOfSteel.effect');\n\n  weapon.system.flaws.value.push({name: \"undamaging\"});\n  args.opposedTest.result.other.push(`<strong>${name}:</strong> ${effect}`);\n}"
+                },
+                "odRqyNLmZgTXlX4K": {
+                    "id": "odRqyNLmZgTXlX4K",
+                    "name": "Mistrzowska Runa Gromrilu (Stała)",
+                    "script": "if (args.item?._id === this.item?.id) {\n  let ap = args.item.system.AP;\n\n  for (let loc in ap) {\n    let location = args.item.system.AP[loc];\n    if (location > 0)\n      args.item.system.AP[loc] += 2;\n  };\n}"
+                },
+                "PNq1jKa4JqJrEw7M": {
+                    "id": "PNq1jKa4JqJrEw7M",
+                    "name": "Mistrzowska Runa Stali (Stała)",
+                    "script": "let weapon = args.attackerTest?.weapon\nif (!weapon && args.attackerTest?.trait)\n  weapon = args.attackerTest.trait\n\nif (weapon) {\n  let name = game.i18n.localize('Forien.Armoury.Runes.MasterRuneOfSteel.name');\n  let effect = game.i18n.localize('Forien.Armoury.Runes.MasterRuneOfSteel.effect');\n\n  weapon.system.flaws.value.push({name: \"undamaging\"});\n  args.opposedTest.result.other.push(`<strong>${name}:</strong> ${effect}`);\n}"
+                },
+                "ZHCC3kuLQf3jBX65": {
+                    "id": "ZHCC3kuLQf3jBX65",
+                    "name": "Mistrzowska Runa Adamantu (Stała)"
+                }
+            }
+        },
+        "Master Talismanic Runes": {
+            "id": "BUv7dGYQSklq6UXj",
+            "name": "Mistrzowskie Runy Talizmanów",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.BUv7dGYQSklq6UXj",
+            "effects": {
+                "2yJmMuInI1M4GLAu": {
+                    "id": "2yJmMuInI1M4GLAu",
+                    "name": "Mistrzowska Runa Równowagi (Stała)",
+                    "script": "let target = Array.from(game.user.targets)[0]?.document;\nlet targetActor = target?.actor;\nlet token;\n\nif (this.actor.isToken) token = this.actor.token\nelse token = this.actor.getActiveTokens()[0]?.document\n\nif (!targetActor)\n  return ui.notifications.notify(game.i18n.format('Forien.Armoury.Runes.MustSelectATarget', {rune: this.effect.name}), 'warning')\n\nlet distance = canvas.grid.measureDistances([{\n  ray: new Ray({x: token.x, y: token.y}, {\n    x: target.x,\n    y: target.y\n  })\n}], {gridSpaces: true})[0]\n\nif (distance > 48)\n  return ui.notifications.notify(game.i18n.format('Forien.Armoury.Runes.TargetNotInRange', {\n    rune: this.effect.name,\n    range: 48\n  }), 'warning')\n\nlet effectOf = game.i18n.localize('Forien.Armoury.Runes.EffectOf');\nlet effectDuration = Number(this.actor.system.characteristics.wp.bonus) * 6;\n\nlet effectCopy = this.effect.toObject();\neffectCopy._id = undefined;\neffectCopy.origin = this.actor.uuid;\neffectCopy.name = `${effectOf} ${effectCopy.name}`\neffectCopy.flags.wfrp4e.effectTrigger = `prefillDialog`;\neffectCopy.flags.wfrp4e.script = `\nif (args.type == \"cast\" || args.type == \"channelling\")\n  args.prefillModifiers.modifier -= 20\n`\neffectCopy.duration.seconds = effectDuration;\n\ntargetActor.createEmbeddedDocuments(\"ActiveEffect\", [effectCopy])\ngame.user.updateTokenTargets([]);"
+                },
+                "46bUOQI2kouAYPOq": {
+                    "id": "46bUOQI2kouAYPOq",
+                    "name": "Mistrzowska Runa Zjadliwości (Stała)",
+                    "script": "let name = game.i18n.localize('Forien.Armoury.Runes.MasterRuneOfSpite.name');\nlet effect = game.i18n.localize('Forien.Armoury.Runes.MasterRuneOfSpite.effect');\n\nargs.totalWoundLoss-= 2;\nargs.extraMessages.push(`<strong>${name}:</strong> ${effect}.`);"
+                },
+                "Ch4a85kEBNmLgBP6": {
+                    "id": "Ch4a85kEBNmLgBP6",
+                    "name": "Mistrzowska Runa Przerażenia (Tymczasowa)",
+                    "script": "let template = {\n  \"t\": \"circle\",\n  \"distance\": 48,\n  \"direction\": 0,\n  \"angle\": 0,\n  \"width\": null,\n  \"borderColor\": \"#000000\",\n  \"fillColor\": \"#aa3333\",\n  \"hidden\": false,\n  \"flags\": {}\n};\n\nlet token;\nif (this.actor.isToken) token = this.actor.token\nelse token = this.actor.getActiveTokens()[0]?.document\n\nlet offset = game.scenes.active.grid.size / 2;\n\nlet position = {\n  x: token.x + offset,\n  y: token.y + offset\n}\n\ngame.scenes.viewed.createEmbeddedDocuments('MeasuredTemplate', [{...template, ...position}]);\nlet name = game.i18n.localize('Forien.Armoury.Runes.MasterRuneOfDismay.name');\nlet effect = game.i18n.localize('Forien.Armoury.Runes.MasterRuneOfDismay.effect');\n\nChatMessage.create({\n  user: game.user._id,\n  speaker: this.actor.speaker,\n  content: `\n    <h2>${name}</h2>\n    <p>${effect}</p>\n`\n})\n\nthis.effect.update({disabled: true});"
+                },
+                "mPh0Rs0DGLDw0brH": {
+                    "id": "mPh0Rs0DGLDw0brH",
+                    "name": "Mistrzowska Runa Zjadliwości (Tymczasowa)",
+                    "script": "let name = game.i18n.localize('Forien.Armoury.Runes.MasterRuneOfSpite.name');\nlet effect = game.i18n.localize('Forien.Armoury.Runes.MasterRuneOfSpite.effect');\n\nargs.totalWoundLoss-= 2;\nargs.extraMessages.push(`<strong>${name}:</strong> ${effect}.`);"
+                },
+                "oVov3CH6XUrXpjtS": {
+                    "id": "oVov3CH6XUrXpjtS",
+                    "name": "Mistrzowska Runa Równowagi (Tymczasowa)",
+                    "script": "let target = Array.from(game.user.targets)[0]?.document;\nlet targetActor = target?.actor;\nlet token;\n\nif (this.actor.isToken) token = this.actor.token\nelse token = this.actor.getActiveTokens()[0]?.document\n\nif (!targetActor)\n  return ui.notifications.notify(game.i18n.format('Forien.Armoury.Runes.MustSelectATarget', {rune: this.effect.name}), 'warning')\n\nlet distance = canvas.grid.measureDistances([{\n  ray: new Ray({x: token.x, y: token.y}, {\n    x: target.x,\n    y: target.y\n  })\n}], {gridSpaces: true})[0]\n\nif (distance > 48)\n  return ui.notifications.notify(game.i18n.format('Forien.Armoury.Runes.TargetNotInRange', {\n    rune: this.effect.name,\n    range: 48\n  }), 'warning')\n\nlet effectOf = game.i18n.localize('Forien.Armoury.Runes.EffectOf');\nlet effectDuration = Number(this.actor.system.characteristics.wp.bonus) * 6;\n\nlet effectCopy = this.effect.toObject();\neffectCopy._id = undefined;\neffectCopy.origin = this.actor.uuid;\neffectCopy.name = `${effectOf} ${effectCopy.name}`\neffectCopy.flags.wfrp4e.effectTrigger = `prefillDialog`;\neffectCopy.flags.wfrp4e.script = `\nif (args.type == \"cast\" || args.type == \"channelling\")\n  args.prefillModifiers.modifier -= 20\n`\neffectCopy.duration.seconds = effectDuration;\n\ntargetActor.createEmbeddedDocuments(\"ActiveEffect\", [effectCopy])\ngame.user.updateTokenTargets([]);\nthis.effect.update({disabled: true});"
+                },
+                "zukSJOlAJDW13F2c": {
+                    "id": "zukSJOlAJDW13F2c",
+                    "name": "Mistrzowska Runa Przerażenia (Stała)",
+                    "script": "let template = {\n  \"t\": \"circle\",\n  \"distance\": 48,\n  \"direction\": 0,\n  \"angle\": 0,\n  \"width\": null,\n  \"borderColor\": \"#000000\",\n  \"fillColor\": \"#aa3333\",\n  \"hidden\": false,\n  \"flags\": {}\n};\n\nlet token;\nif (this.actor.isToken) token = this.actor.token\nelse token = this.actor.getActiveTokens()[0]?.document\n\nlet offset = game.scenes.active.grid.size / 2;\n\nlet position = {\n  x: token.x + offset,\n  y: token.y + offset\n}\n\ngame.scenes.viewed.createEmbeddedDocuments('MeasuredTemplate', [{...template, ...position}]);\nlet name = game.i18n.localize('Forien.Armoury.Runes.MasterRuneOfDismay.name');\nlet effect = game.i18n.localize('Forien.Armoury.Runes.MasterRuneOfDismay.effect');\n\nChatMessage.create({\n  user: game.user._id,\n  speaker: this.actor.speaker,\n  content: `\n    <h2>${name}</h2>\n    <p>${effect}</p>\n`\n})"
+                }
+            }
+        },
+        "Master Weapon Runes": {
+            "id": "PE6EPbkyk3UirW9z",
+            "name": "Mistrzowskie Runy Broni",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.PE6EPbkyk3UirW9z",
+            "effects": {
+                "4tJdRSQGa8WTbn6Z": {
+                    "id": "4tJdRSQGa8WTbn6Z",
+                    "name": "Mistrzowska Runa Zniszczenia (Stała)",
+                    "script": "if (args.opposedTest.defenderTest.weapon?._id === this.item.id) {\n  if (args.opposedTest.result.winner === \"defender\") {\n    let effect = game.i18n.localize('Forien.Armoury.Runes.MasterRuneOfBreaking.effect');\n    let rune = game.i18n.localize('Forien.Armoury.Runes.MasterRuneOfBreaking.name');\n    args.opposedTest.result.other.push(`<strong>${rune}:</strong> ${effect}`);\n  }\n}"
+                },
+                "6gyPUG9tkYoTb2T5": {
+                    "id": "6gyPUG9tkYoTb2T5",
+                    "name": "Mistrzowska Runa Latania (Tymczasowa)",
+                    "script": "if (args.item?._id === this.item?.id) {\n    args.item.system.range.value = \"24\";\n    args.item.system.modeOverride.value = \"ranged\";\n    args.item.system.skill.value = \"Broń Zasięgowa (Miotana)\";\n    args.item.system.consumesAmmo.value = false;\n}"
+                },
+                "8ss06CRTNbRyufRP": {
+                    "id": "8ss06CRTNbRyufRP",
+                    "name": "Mistrzowska Runa Alaryka Szalonego (Tymczasowa)",
+                    "script": "if (args.opposedTest.attackerTest.weapon._id === this.item.id) {\n    args.applyAP = false;\n}"
+                },
+                "asEVG8jALVLaG0QT": {
+                    "id": "asEVG8jALVLaG0QT",
+                    "name": "Mistrzowska Runa Skalfa Czarnego Młota (Tymczasowa)",
+                    "script": "if (args.item?._id === this.item?.id) {\n    let regex = /\\d{1,3}/gm;\n    let damage = Number(regex.exec(args.item.system.damage.value)[0] || 0);\n    args.item.system.qualities.value.push({name: \"impact\"});\n    args.item.system.damage.value = args.item.system.damage.value.replace(damage, damage + 3);\n}"
+                },
+                "CnyQtehyIA6J9l02": {
+                    "id": "CnyQtehyIA6J9l02",
+                    "name": "Mistrzowska Runa Snorriego Spangelhelma (Stała)"
+                },
+                "GIzBYIlrTnG7nBa0": {
+                    "id": "GIzBYIlrTnG7nBa0",
+                    "name": "Mistrzowska Runa Latania (Stała)",
+                    "script": "if (args.item?._id === this.item?.id) {\n    args.item.system.range.value = \"24\";\n    args.item.system.modeOverride.value = \"ranged\";\n    args.item.system.skill.value = \"Broń Zasięgowa (Miotana)\";\n    args.item.system.consumesAmmo.value = false;\n}"
+                },
+                "nqwanAkGJnddHg8X": {
+                    "id": "nqwanAkGJnddHg8X",
+                    "name": "Mistrzowska Runa Szybkości (Stała)",
+                    "script": "if (args.item?._id === this.item?.id) {\n  args.item.system.qualities.value.push({name: \"fast\"});\n}"
+                },
+                "p3qLFQxL85HhqeC8": {
+                    "id": "p3qLFQxL85HhqeC8",
+                    "name": "Mistrzowska Runa Szybkości (Tymczasowa)",
+                    "script": "if (args.item?._id === this.item?.id) {\n  args.item.system.qualities.value.push({name: \"fast\"});\n}"
+                },
+                "pj1v84x5KkWBA5xV": {
+                    "id": "pj1v84x5KkWBA5xV",
+                    "name": "Mistrzowska Runa Snorriego Spangelhelma (Tymczasowa)"
+                },
+                "Q2KUdPD85kOKK4Y9": {
+                    "id": "Q2KUdPD85kOKK4Y9",
+                    "name": "Mistrzowska Runa Zniszczenia (Tymczasowa)",
+                    "script": "this.effect.update({\n  flags: {\n    wfrp4e: {\n      effectTrigger: \"opposedDefender\",\n      script: `\n\nif (args.opposedTest.defenderTest.weapon?._id === this.item.id) {\n  if (args.opposedTest.result.winner === \"defender\") {\n    let effect = game.i18n.localize('Forien.Armoury.Runes.MasterRuneOfBreaking.effect');\n    let rune = game.i18n.localize('Forien.Armoury.Runes.MasterRuneOfBreaking.name');\n    args.opposedTest.result.other.push(\\`<strong>${rune}:</strong> ${effect}\\`);\n    this.effect.update({disabled: true});\n  }\n}\n\n`\n    }\n  }\n});"
+                },
+                "rm0LntQUOAOqXkkP": {
+                    "id": "rm0LntQUOAOqXkkP",
+                    "name": "Mistrzowska Runa Skalfa Czarnego Młota (Stała)",
+                    "script": "if (args.item?._id === this.item?.id) {\n    let regex = /\\d{1,3}/gm;\n    let damage = Number(regex.exec(args.item.system.damage.value)[0] || 0);\n    args.item.system.qualities.value.push({name: \"impact\"});\n    args.item.system.damage.value = args.item.system.damage.value.replace(damage, damage + 3);\n}"
+                },
+                "ZM1KHe4lw53HRkjS": {
+                    "id": "ZM1KHe4lw53HRkjS",
+                    "name": "Mistrzowska Runa Alaryka Szalonego (Stała)",
+                    "script": "if (args.opposedTest.attackerTest.weapon._id === this.item.id) {\n    args.applyAP = false;\n}"
+                }
+            }
+        },
+        "Noble": {
+            "id": "dTRsQm6yDUwS0ODm",
+            "name": "Szlachcic",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.dTRsQm6yDUwS0ODm"
+        },
+        "Oil Lamp": {
+            "id": "jCryH7kR8bJc9eoC",
+            "name": "Oliwa do lampy",
+            "description": "<p> Zapewnia oświetlenie na 10 metrów.</p><p>Wymaga @UUID[Compendium.wfrp4e-core.items.Item.Bal23aLiOmnht42h]{Oliwy}. </p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.jCryH7kR8bJc9eoC",
+            "effects": {
+                "KqxCaHoHDsajIYAC": {
+                    "id": "KqxCaHoHDsajIYAC",
+                    "name": "Oliwa do lampy"
+                }
+            }
+        },
+        "Old Bow": {
+            "id": "s3AUYnM2Vl6Y656l",
+            "name": "Stary łuk",
+            "description": "<p> Stary łuk, najprawdopodobniej przekazywany z pokolenia na pokolenie. Nie jest już tak dokładny i niezawodny jak kiedyś, ale nadal jest wystarczająco silny. </p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.s3AUYnM2Vl6Y656l"
+        },
+        "Pickaxe": {
+            "id": "ws5f2yvbXpHZSPob",
+            "name": "Kilof",
+            "description": "<p>Kilof z kolcem na jednym końcu i siekierą – a dokładniej dłutem – na drugim. </p><p>Używany głównie jako narzędzie do łamania skał, może być również używany do łamania niektórych czaszek. </p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.ws5f2yvbXpHZSPob"
+        },
+        "Potion Bag": {
+            "id": "a9ns2EksvvtdUvn4",
+            "name": "Torba na mikstury",
+            "description": "<p>Specjalnie wykonana torba na wykonana z mieszanki garbowanej i miękkiej skóry.</p><p>Zawiera wiele małych przedziałów, z których każdy jest wystarczająco duży, aby pomieścić pojedynczą fiolkę. Pozwala na łatwiejsze i zorganizowane przechowywanie mikstur, składników i innych artykułów medycznych.</p><h5>Zasady specjalne</h5><ul><li><p><em>Liczy się jako \"założony\" po przewieszeniu przez ramię</em>.</p></li><li><p> Może pomieścić tylko <em>leki, mikstury, okłady, trucizny, fiolki, składniki i bandaże</em>.</p></li><li><p>Kiedy założony, każdy przedmiot w środku <em>może być dostępny za pomocą @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.wmA76Q2zJJ9HrkvA#free-actions]{Darmowej Akcji}</em>.</p></li></ul>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.a9ns2EksvvtdUvn4"
+        },
+        "Powder Horn": {
+            "id": "749BhVdd0kr83pf6",
+            "name": "Róg prochowy",
+            "description": "<p> Może pomieścić wystarczającą ilość prochu, aby oddać 12 strzałów (0,12 obc. każdy)</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.749BhVdd0kr83pf6"
+        },
+        "Repair Blackpowder Weapons": {
+            "id": "nuApQRdiN7EaX1W9",
+            "name": "Napraw Broń Czarnoprochową",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.nuApQRdiN7EaX1W9"
+        },
+        "Repair Melee Weapons": {
+            "id": "UVJnSz3VIw5M8tJn",
+            "name": "Napraw Broń Białą",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.UVJnSz3VIw5M8tJn"
+        },
+        "Repair Metal Armour": {
+            "id": "eZpjU2hTe6YIHTIU",
+            "name": "Napraw Metalowy Pancerz",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.eZpjU2hTe6YIHTIU"
+        },
+        "Repair Ranged Weapons": {
+            "id": "Zrc6yHSWhaV1Y3Fi",
+            "name": "Napraw Broń Zasięgową",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.Zrc6yHSWhaV1Y3Fi"
+        },
+        "Repair Soft Armour": {
+            "id": "UG8Dfz7zPorRuqrD",
+            "name": "Napraw Pancerz Skórzany",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.UG8Dfz7zPorRuqrD"
+        },
+        "Ring of See Invisibility": {
+            "id": "X4RpXktd9IFzcbg6",
+            "name": "Pierścień Widzenia Niewidzialności",
+            "description": "<p>Magiczny pierścień nasycony magią, który pozwala użytkownikowi widzieć przez niewidzialność i postrzegać magię tak, jakby miał Percepcję Magiczną.</p><p> Daje +10 do testów Percepcji Magicznej</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.X4RpXktd9IFzcbg6",
+            "effects": {
+                "Xrbn8InoEwKHgbn5": {
+                    "id": "Xrbn8InoEwKHgbn5",
+                    "name": "Pierścień Widzenia Niewidzialności"
+                }
+            }
+        },
+        "Ring of Smell": {
+            "id": "o9ZQVkJgmfYrm8Lw",
+            "name": "Pierścień Węchu",
+            "description": "<p>Srebrny pierścionek z grawerunkami.</p><p>Nasycony @UUID[Compendium.wfrp4e-wom.journals.JournalEntry.DND7iNuVrCXgTXki]{Ghur}, poprawia węch użytkownika, pozwalając mu wyczuć wszystkie pobliskie istoty.</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.o9ZQVkJgmfYrm8Lw",
+            "effects": {
+                "OatfSvcfIfB17oRt": {
+                    "id": "OatfSvcfIfB17oRt",
+                    "name": "Pierścień Węchu"
+                }
+            }
+        },
+        "Room, common": {
+            "id": "LDV4ztk5d0wrBmUW",
+            "name": "Pokój, wspólny",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.LDV4ztk5d0wrBmUW"
+        },
+        "Room, private double": {
+            "id": "sfMetQLVzPHHMbxz",
+            "name": "Pokój, prywatny, dwuosobowy",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.sfMetQLVzPHHMbxz"
+        },
+        "Room, private single": {
+            "id": "XTWmBEUtIAWeALWI",
+            "name": "Pokój, prywatny jednoosobowy",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.XTWmBEUtIAWeALWI"
+        },
+        "Sharp Stick": {
+            "id": "4YiC9X4ChJtRyksH",
+            "name": "Ostry Kij",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.4YiC9X4ChJtRyksH",
+            "range": "1/2 zasięgu broni"
+        },
+        "Short Spear": {
+            "id": "W1b784w4bBVwtHZS",
+            "name": "Krótka włócznia",
+            "description": "<p>Krótsza wersja @UUID[Compendium.wfrp4e-up-in-arms.items.Item.HxOhYpAxqdcyoSje]{Włóczni}.</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.W1b784w4bBVwtHZS"
+        },
+        "Shot Pouch": {
+            "id": "izBtNy0denmW9BpV",
+            "name": "Pokrowiec na pociski",
+            "description": "<p>Może pomieścić 12 typowych pocisków do procy (0,08 obc. każdy).</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.izBtNy0denmW9BpV"
+        },
+        "Shyish Ingredient": {
+            "id": "VuO1EDySwVbmtdcH",
+            "name": "Składnik Shyish",
+            "description": "<p>@UUID[JournalEntry.YBVrpUHEjohB1H4f.JournalEntryPage.BU7yhLmMdEyvbfkR#ingredients]{Składniki}</p><p><span style=\"font-family: var( --actor-input-font-family)\">Generyczny składnik używany w splataniu wiatru </span>@UUID[Compendium.wfrp4e-wom.journals.JournalEntry.hFQtvGpxh0D8Xfcl]{Shyish}.</p><p style=\"box-sizing: border-box; user-select: text; margin: 0.5em 0px; font-family: var( --actor-input-font-family); font-size: 14px; font-weight: var(--actor-input-font-weight); padding: 0px; color: var(--actor-input-color); background: none; border: none; width: 388px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: start\"><span style=\"font-family: var( --actor-input-font-family)\"><em style=\"box-sizing: border-box; user-select: text;\">Cena składnika zależy od zaklęcia, dla którego jest przeznaczony. Ustaw cenę na X SS, gdzie X jest równe PZ zaklęcia. </em></span></p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.VuO1EDySwVbmtdcH"
+        },
+        "Sovereign": {
+            "id": "9XkcGUQUQX6uCrxz",
+            "name": "Sovereign",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.9XkcGUQUQX6uCrxz"
+        },
+        "Spear": {
+            "id": "3uppxJFq3SQFpT2q",
+            "name": "Włócznia",
+            "description": "<p>Zrównoważona alternatywa dla @UUID[Compendium.wfrp4e-up-in-arms.items.Item.HxOhYpAxqdcyoSje]{Włóczni}.</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.3uppxJFq3SQFpT2q"
+        },
+        "Spear (2h)": {
+            "id": "FR6vIPKu7cQ4Mkr8",
+            "name": "Włócznia Dwuręczna",
+            "description": "<p>Dłuższa wersja @UUID[Compendium.wfrp4e-up-in-arms.items.Item.HxOhYpAxqdcyoSje]{Włóczni}, która wymaga obu rąk, ale może być również używana jako @UUID[Compendium.wfrp4e-up-in-arms.items.Item.Dk3jOsooVXua0GSi]{Kostur}</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.FR6vIPKu7cQ4Mkr8"
+        },
+        "Stables": {
+            "id": "9YDQFP3fcKPRbJCB",
+            "name": "Stajnie",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.9YDQFP3fcKPRbJCB"
+        },
+        "Standard Quiver": {
+            "id": "3HO7sk5rX9jQ6vYl",
+            "name": "Standardowy kołczan",
+            "description": "<p>Standardowy kołczan, który może pomieścić do 30 typowych strzał lub bełtów (0,05 obc. każda)</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.3HO7sk5rX9jQ6vYl"
+        },
+        "Storm Lantern": {
+            "id": "WTDH1NSk1ufd5vx9",
+            "name": "Lampa sztormowa",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.items.Item.9pJenZDZD2lV75vq]{Lampa Sztormowa} z gotowym efektem kompatybilnym z modułem ATL</p><p>Wymaga @UUID[Compendium.wfrp4e-core.items.Item.Bal23aLiOmnht42h]{Oliwy do lamp}.</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.WTDH1NSk1ufd5vx9",
+            "effects": {
+                "Bocay7NF6UUCshrJ": {
+                    "id": "Bocay7NF6UUCshrJ",
+                    "name": "Lampa Sztormowa (kierunkowa)"
+                },
+                "e6sHmAsXMVEY2bfb": {
+                    "id": "e6sHmAsXMVEY2bfb",
+                    "name": "Lampa Sztormowa"
+                }
+            }
+        },
+        "Talismanic Runes": {
+            "id": "VZyMhFCFlkPZ47J8",
+            "name": "Runy Talizmanów",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.VZyMhFCFlkPZ47J8",
+            "effects": {
+                "4FNqO1L1hfgnhisU": {
+                    "id": "4FNqO1L1hfgnhisU",
+                    "name": "Runa Szczęścia (Stała)",
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.Item.u0CFf3xwiyidD9T5\").then(item => Item.create(item.toObject(), {fromEffect : this.effect.id, parent : this.actor}))"
+                },
+                "5pzeDFMgBWK5FMbs": {
+                    "id": "5pzeDFMgBWK5FMbs",
+                    "name": "Runa Ostrzeżenia (Stała)",
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.Item.eowbsW6oHGSNJmxV\").then(item => Item.create(item.toObject(), {fromEffect : this.effect.id, parent : this.actor}))"
+                },
+                "7zY7AKHRLaTAGyNE": {
+                    "id": "7zY7AKHRLaTAGyNE",
+                    "name": "Runa Szczęścia (Tymczasowa)",
+                    "script": "let fortuneJournal = `@UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.pa22HaRw1OBBQaDg#spending-fortune]{Punkty Szczęścia}`;\nlet name = game.i18n.localize('Forien.Armoury.Runes.RuneOfLuckTemporary.name');\nlet effect = game.i18n.localize('Forien.Armoury.Runes.RuneOfLuckTemporary.effectActivated');\nlet checkPrompt = game.i18n.format('Forien.Armoury.Runes.RuneOfLuckTemporary.checkPrompt', {journal: fortuneJournal});\n\nChatMessage.create({\n  user: game.user._id,\n  speaker: this.actor.speaker,\n  content: `\n    <h2>${name}</h2>\n    <p>${effect}</p>\n    <p>${checkPrompt}</p>\n`\n})\n\nthis.effect.update({disabled: true});"
+                },
+                "ABXyOPDXVrfGVDv1": {
+                    "id": "ABXyOPDXVrfGVDv1",
+                    "name": "Runa Płomieni (Stała)",
+                    "script": "let ablaze = this.actor.hasCondition(\"ablaze\");\n\nif (ablaze) {\n  let name = game.i18n.localize('Forien.Armoury.Runes.RuneOfTheFurnace.name');\n  let effect = game.i18n.localize('Forien.Armoury.Runes.RuneOfTheFurnace.effect');\n\n  ablaze.delete();\n  ui.notifications?.notify(`<strong>${name}</strong>  ${effect}`);\n}"
+                },
+                "i0GTHQefhwTQ2LEL": {
+                    "id": "i0GTHQefhwTQ2LEL",
+                    "name": "Runa Gońca (Stała)"
+                },
+                "jwtzbHAmtHpQJ6fL": {
+                    "id": "jwtzbHAmtHpQJ6fL",
+                    "name": "Runa Gońca (Tymczasowa)"
+                },
+                "M5BSkkepbE4SCrzk": {
+                    "id": "M5BSkkepbE4SCrzk",
+                    "name": "Runa Ostrzeżenia (Tymczasowa)",
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.Item.eowbsW6oHGSNJmxV\").then(item => Item.create(item.toObject(), {\n  fromEffect: this.effect.id,\n  parent: this.actor\n}))\n\nthis.effect.update({\n  disabled: false,\n  duration: {\n    seconds: 60,\n    duration: 60,\n    type: 'seconds'\n  },\n  flags: {\n    wfrp4e: {\n      effectTrigger: '',\n      script: ''\n    }\n  }\n});"
+                },
+                "vdHxUWCzrQwwkl5F": {
+                    "id": "vdHxUWCzrQwwkl5F",
+                    "name": "Runa Przeznaczenia (Tymczasowa)",
+                    "script": "let wounds = args.actor.status.wounds.value;\nlet woundLoss = args.totalWoundLoss;\nlet woundsAfter= wounds - woundLoss;\n\nif (woundsAfter < 0) {\n  args.totalWoundLoss = 0;\n  let msg = `<strong>${game.i18n.localize('Forien.Armoury.Runes.RuneOfFate.name')}:</strong> ${game.i18n.localize('Forien.Armoury.Runes.RuneOfFate.effect')}`\n  args.extraMessages.push(msg);\n\n  this.effect.update({disabled: true});\n}"
+                },
+                "vyrlzGAdppxyjydw": {
+                    "id": "vyrlzGAdppxyjydw",
+                    "name": "Runa Pochłaniania Magii (Tymczasowa)",
+                    "script": "let name = game.i18n.localize('Forien.Armoury.Runes.RuneOfSpelleating.name');\nlet effect = game.i18n.localize('Forien.Armoury.Runes.RuneOfSpelleating.effect');\n\nChatMessage.create({\n  user: game.user._id,\n  speaker: this.actor.speaker,\n  content: `\n    <h2>${name}</h2>\n    <p>${effect}</p>\n`\n})\n\nthis.effect.update({disabled: true});"
+                },
+                "XgocVKbsL3tTQp97": {
+                    "id": "XgocVKbsL3tTQp97",
+                    "name": "Runa Rozproszenia (Tymczasowa)",
+                    "script": "let name = game.i18n.localize('Forien.Armoury.Runes.RuneOfSpellbreaking.name');\nlet effect = game.i18n.localize('Forien.Armoury.Runes.RuneOfSpellbreaking.effect');\n\nChatMessage.create({\n  user: game.user._id,\n  speaker: this.actor.speaker,\n  content: `\n    <h2>${name}</h2>\n    <p>${effect}</p>\n`\n})\n\nthis.effect.update({disabled: true});"
+                },
+                "z14tQJTUvGkWLp9C": {
+                    "id": "z14tQJTUvGkWLp9C",
+                    "name": "Runa Płomieni (Tymczasowa)",
+                    "script": "let ablaze = this.actor.hasCondition(\"ablaze\");\n\nif (ablaze) {\n  let name = game.i18n.localize('Forien.Armoury.Runes.RuneOfTheFurnace.name');\n  let effect = game.i18n.localize('Forien.Armoury.Runes.RuneOfTheFurnace.effect');\n\n  ablaze.delete();\n  ui.notifications?.notify(`<strong>${name}</strong>  ${effect}`);\n}"
+                }
+            }
+        },
+        "Torch": {
+            "id": "HO61HXSO0PYVs4kK",
+            "name": "Pochodnia",
+            "description": "<p> Zapewnia oświetlenie na 20 metrów po zapaleniu.</p><p>Wystarcza na 20 minut. </p> <p>Sprawdź @UUID[Compendium.forien-armoury.forien-armoury.Item.84hccJzDfkfw3trc]{Pochodnia (broń)}.</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.HO61HXSO0PYVs4kK",
+            "effects": {
+                "zUn7o4oGRBwnlmoX": {
+                    "id": "zUn7o4oGRBwnlmoX",
+                    "name": "Zapal Pochodnię",
+                    "script": "fromUuid(\"Compendium.forien-armoury.forien-armoury.Item.84hccJzDfkfw3trc\").then(item => Item.create(item.toObject(), {parent : this.actor}))"
+                }
+            }
+        },
+        "Torch (weapon)": {
+            "id": "84hccJzDfkfw3trc",
+            "name": "Pochodnia (broń)",
+            "description": "<p>Pochodnia jako broń - UUID[Compendium.forien-armoury.forien-armoury.Item.HO61HXSO0PYVs4kK]{Pochodnia}.</p><p>Zużyje się po 20 minutach od zapalenia</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.84hccJzDfkfw3trc",
+            "effects": {
+                "IBHY44zrCrO0cpgD": {
+                    "id": "IBHY44zrCrO0cpgD",
+                    "name": "Pochodnia (Zaplona)"
+                },
+                "yZcrvnNxKNjQ9WZ8": {
+                    "id": "yZcrvnNxKNjQ9WZ8",
+                    "name": "Pochodnia (podpalenie)",
+                    "script": "if (args.opposedTest.attackerTest.result.critical)\n   args.actor.addCondition(\"ablaze\")"
+                }
+            }
+        },
+        "Tuppence": {
+            "id": "WAHHcw6Awp9o1kwd",
+            "name": "Dwupensówka",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.WAHHcw6Awp9o1kwd"
+        },
+        "Ulgu Ingredient": {
+            "id": "rsQryOWSCufQnNAC",
+            "name": "Składnik Ulgu",
+            "description": "<p>@UUID[JournalEntry.YBVrpUHEjohB1H4f.JournalEntryPage.BU7yhLmMdEyvbfkR#ingredients]{Składniki}</p><p><span style=\"font-family: var( --actor-input-font-family)\">Generyczny składnik używany w splataniu wiatru </span>@UUID[Compendium.wfrp4e-wom.journals.JournalEntry.7xFrgrOyYX4SVrBL]{Ulgu}.</p><p style=\"box-sizing: border-box; user-select: text; margin: 0.5em 0px; font-family: var( --actor-input-font-family); font-size: 14px; font-weight: var(--actor-input-font-weight); padding: 0px; color: var(--actor-input-color); background: none; border: none; width: 388px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: start\"><span style=\"font-family: var( --actor-input-font-family)\"><em style=\"box-sizing: border-box; user-select: text;\">Cena składnika zależy od zaklęcia, dla którego jest przeznaczony. Ustaw cenę na X SS, gdzie X jest równe PZ zaklęcia. </em></span></p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.rsQryOWSCufQnNAC"
+        },
+        "Warm Bath": {
+            "id": "R0u96ITp9oIllh2D",
+            "name": "Ciepła kąpiel",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.R0u96ITp9oIllh2D"
+        },
+        "Weapon Runes": {
+            "id": "a0HD1sx7SS4ZCw5A",
+            "name": "Runy Broni",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.a0HD1sx7SS4ZCw5A",
+            "effects": {
+                "3EBeuXMNogYGRqE4": {
+                    "id": "3EBeuXMNogYGRqE4",
+                    "name": "Runa Furii (Stała)",
+                    "script": "if (args.opposedTest.attackerTest.weapon._id === this.item.id) {\n  if (args.opposedTest.result.winner === \"attacker\") {\n    let rune = game.i18n.localize('Forien.Armoury.Runes.RuneOfFury.name');\n    let effect = game.i18n.localize('Forien.Armoury.Runes.RuneOfFury.effect');\n    let text = `<strong>${rune}:</strong> ${effect}`;\n    args.opposedTest.result.other.push(text);\n  }\n}\n"
+                },
+                "41cnCDVKFkw5TgVT": {
+                    "id": "41cnCDVKFkw5TgVT",
+                    "name": "Runa Potęgi (Tymczasowa)",
+                    "script": "if (args.opposedTest.attackerTest.weapon._id === this.item.id) {\n  if (args.opposedTest.defenderTest.actor.characteristics.t.bonus >= 5) {\n    let rune = game.i18n.localize('Forien.Armoury.Runes.RuneOfMight.name');\n    let effect = game.i18n.localize('Forien.Armoury.Runes.RuneOfMight.effect');\n    args.damage += args.opposedTest.attackerTest.actor.characteristics.s.bonus;\n    args.opposedTest.result.other.push(`<strong>${rune}:</strong> ${effect}`);\n  }\n}"
+                },
+                "68MFtzIz8l9mahU7": {
+                    "id": "68MFtzIz8l9mahU7",
+                    "name": "Runa Uraz (Tymczasowa)",
+                    "script": "let rune = game.i18n.localize('Forien.Armoury.Runes.RuneOfGrudges.name');\nlet effect = game.i18n.localize('Forien.Armoury.Runes.RuneOfGrudges.effect');\nChatMessage.create({\n  user: game.user._id,\n  speaker: ChatMessage.getSpeaker({token: actor}),\n  content: `\n\t\t<h3>${rune}</h3>\n\t\t<p>${effect}</p>\n\t`\n});\n\nthis.effect.update({\n  flags: {\n    wfrp4e: {\n      effectTrigger: \"endCombat\",\n      script: \"this.effect.update({disabled: true});\"\n    }\n  }\n});\n"
+                },
+                "9cYvjllfcFyaAfLJ": {
+                    "id": "9cYvjllfcFyaAfLJ",
+                    "name": "Runa Szybkości (Stała)",
+                    "script": "args.initiative += ` + 1d10`;\nlet rune = game.i18n.localize('Forien.Armoury.Runes.RuneOfSpeed.name');\nlet effect = game.i18n.localize('Forien.Armoury.Runes.RuneOfSpeed.effect');\n\nChatMessage.create({\n  user: game.user._id,\n  speaker: ChatMessage.getSpeaker({token: actor}),\n  content: `\n\t\t<h3>${rune}</h3>\n\t\t<p>${effect}</p>\n\t`\n});"
+                },
+                "ApUMYhBlTxss0bdr": {
+                    "id": "ApUMYhBlTxss0bdr",
+                    "name": "Runa Wytrzymałości (Stała)",
+                    "script": "if (args.item?._id === this.item?.id) {\n  args.item.qualities.value.push({name: \"unbreakable\", value: null});\n}"
+                },
+                "G9l7OAE88croafaV": {
+                    "id": "G9l7OAE88croafaV",
+                    "name": "Runa Furii (Tymczasowa)",
+                    "script": "if (args.opposedTest.attackerTest.weapon._id === this.item.id) {\n  if (args.opposedTest.result.winner === \"attacker\") {\n    let rune = game.i18n.localize('Forien.Armoury.Runes.RuneOfFury.name');\n    let effect = game.i18n.localize('Forien.Armoury.Runes.RuneOfFury.effect');\n    let text = `<strong>${rune}:</strong> ${effect}`;\n    args.opposedTest.result.other.push(text);\n  }\n}\n"
+                },
+                "JYqy95sURGksMk22": {
+                    "id": "JYqy95sURGksMk22",
+                    "name": "Runa Uraz (Stała)",
+                    "script": "let rune = game.i18n.localize('Forien.Armoury.Runes.RuneOfGrudges.name');\nlet effect = game.i18n.localize('Forien.Armoury.Runes.RuneOfGrudges.effect');\nChatMessage.create({\n  user: game.user._id,\n  speaker: ChatMessage.getSpeaker({token: actor}),\n  content: `\n\t\t<h3>${rune}</h3>\n\t\t<p>${effect}</p>\n\t`\n});"
+                },
+                "mqkO6Bpu7vsX9S3k": {
+                    "id": "mqkO6Bpu7vsX9S3k",
+                    "name": "Runa Wytrzymałości (Tymczasowa)",
+                    "script": "if (args.item?._id === this.item?.id) {\n  args.item.qualities.value.push({name: \"unbreakable\", value: null});\n}"
+                },
+                "NHJJuRmQV0zdJQj8": {
+                    "id": "NHJJuRmQV0zdJQj8",
+                    "name": "Runa Potęgi (Stała)",
+                    "script": "if (args.opposedTest.attackerTest.weapon._id === this.item.id) {\n  if (args.opposedTest.defenderTest.actor.characteristics.t.bonus >= 5) {\n    let rune = game.i18n.localize('Forien.Armoury.Runes.RuneOfMight.name');\n    let effect = game.i18n.localize('Forien.Armoury.Runes.RuneOfMight.effect');\n    args.damage += args.opposedTest.attackerTest.actor.characteristics.s.bonus;\n    args.opposedTest.result.other.push(`<strong>${rune}:</strong> ${effect}`);\n  }\n}"
+                },
+                "P6B6O2E3y28d2eWv": {
+                    "id": "P6B6O2E3y28d2eWv",
+                    "name": "Runa Ognia (Tymczasowa)",
+                    "script": "if (args.opposedTest.attackerTest.weapon._id === this.item.id) {\n  if (args.opposedTest.attackerTest.result.critical) {\n    args.actor.addCondition(\"ablaze\");\n    let rune = game.i18n.localize('Forien.Armoury.Runes.RuneOfFire.name');\n    let effect = game.i18n.localize('Forien.Armoury.Runes.RuneOfFire.effect');\n    args.extraMessages.push(`<strong>${rune}:</strong> ${effect}.`);\n  }\n}"
+                },
+                "pc9iH0FaxbVLKPV4": {
+                    "id": "pc9iH0FaxbVLKPV4",
+                    "name": "Runa Uderzenia (Tymczasowa)"
+                },
+                "POWvKoi6MDYkT2ba": {
+                    "id": "POWvKoi6MDYkT2ba",
+                    "name": "Runa Rozłupania (Tymczasowa)",
+                    "script": "if (args.opposedTest.attackerTest.weapon._id === this.item.id) {\n  args.damage += 1;\n  let rune = game.i18n.localize('Forien.Armoury.Runes.RuneOfCleaving.name');\n  let effect = game.i18n.localize('Forien.Armoury.Runes.RuneOfCleaving.effect');\n  args.opposedTest.result.other.push(`<strong>${rune}:</strong> ${effect}.`);\n}"
+                },
+                "rrYqV1e44cOebej2": {
+                    "id": "rrYqV1e44cOebej2",
+                    "name": "Runa Rozłupania (Stała)",
+                    "script": "if (args.opposedTest.attackerTest.weapon._id === this.item.id) {\n  args.damage += 1;\n  let rune = game.i18n.localize('Forien.Armoury.Runes.RuneOfCleaving.name');\n  let effect = game.i18n.localize('Forien.Armoury.Runes.RuneOfCleaving.effect');\n  args.opposedTest.result.other.push(`<strong>${rune}:</strong> ${effect}.`);\n}"
+                },
+                "Sn4zGIuhCWKFEazu": {
+                    "id": "Sn4zGIuhCWKFEazu",
+                    "name": "Runa Ognia (Stała)",
+                    "script": "if (args.opposedTest.attackerTest.weapon._id === this.item.id) {\n  if (args.opposedTest.attackerTest.result.critical) {\n    args.actor.addCondition(\"ablaze\");\n    let rune = game.i18n.localize('Forien.Armoury.Runes.RuneOfFire.name');\n    let effect = game.i18n.localize('Forien.Armoury.Runes.RuneOfFire.effect');\n    args.extraMessages.push(`<strong>${rune}:</strong> ${effect}.`);\n  }\n}"
+                },
+                "z2kR53IpFshVrixt": {
+                    "id": "z2kR53IpFshVrixt",
+                    "name": "Runa Szybkości (Tymczasowa)",
+                    "script": "this.effect.update({\n  flags: {\n    wfrp4e: {\n      effectTrigger: \"getInitiativeFormula\",\n      script: `\nargs.initiative += ' + 1d10';\nlet rune = game.i18n.localize('Forien.Armoury.Runes.RuneOfSpeed.name');\nlet effect = game.i18n.localize('Forien.Armoury.Runes.RuneOfSpeed.effect');\n\nChatMessage.create({\n  user: game.user._id,\n  speaker: ChatMessage.getSpeaker({token: actor}),\n  content: \\`\n    <h3>${rune}</h3>\n    <p>${effect}</p>\n  \\`\n});\nthis.effect.update({disabled: true});`\n    }\n  }\n});"
+                },
+                "zwkd7kl5SWmoriyn": {
+                    "id": "zwkd7kl5SWmoriyn",
+                    "name": "Runa Uderzenia (Stała)"
+                }
+            }
+        },
+        "Witchcraft Ingredient": {
+            "id": "relq8BaanmuOaPEP",
+            "name": "Składnik Czarnoksięstwa",
+            "description": "<p>@UUID[JournalEntry.YBVrpUHEjohB1H4f.JournalEntryPage.BU7yhLmMdEyvbfkR#ingredients]{Składniki}</p><p style=\"box-sizing: border-box; user-select: text; margin: 0.5em 0px; font-family: var( --actor-input-font-family); font-size: 14px; font-weight: var(--actor-input-font-weight); padding: 0px; color: var(--actor-input-color); background: none; border: none; width: 388px; font-style: normal; font-variant-ligatures: normal; font-variant-caps: normal; letter-spacing: normal; orphans: 2; text-indent: 0px; text-transform: none; white-space: normal; widows: 2; word-spacing: 0px; -webkit-text-stroke-width: 0px; text-decoration-thickness: initial; text-decoration-style: initial; text-decoration-color: initial; text-align: start\"><span style=\"font-family: var( --actor-input-font-family)\"><em style=\"box-sizing: border-box; user-select: text;\">Cena składnika zależy od zaklęcia, dla którego jest przeznaczony. Ustaw cenę na X SS, gdzie X jest równe PZ zaklęcia.</em></span></p><p><span style=\"font-family: var( --actor-input-font-family)\"><em style=\"box-sizing: border-box; user-select: text;\">Alternatywnie, udany test na @UUID[Compendium.wfrp4e-core.items.Item.os4NKy5Oy6sRt1eh]{Sztukę Przetrwania} daje 1 + PS Składników.</em></span></p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.relq8BaanmuOaPEP"
+        }
+    }
+}

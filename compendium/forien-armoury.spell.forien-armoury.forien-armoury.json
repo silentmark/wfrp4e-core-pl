@@ -1,0 +1,98 @@
+{
+    "label": "Cechy Stworzeń",
+    "mapping": {
+        "duration": "system.duration.value",
+        "range": "system.range.value",
+        "target": "system.target.value",
+        "damage": "system.damage.value",
+        "overcast": "system.overcast.label",
+        "overcastvalue": "system.overcast.valuePerOvercast.type",
+        "overcastinitial": "system.overcast.initial.type",
+        "overcastvaluevalue": "system.overcast.valuePerOvercast.additional",
+        "overcastinitialvalue": "system.overcast.initial.additional",
+        "effects": {
+            "path": "effects",
+            "converter": "effects"
+        }
+    },
+    "folders": {
+        "Spells": "Zaklęcia",
+        "Runebound": "Spleciony z Runami"
+    },
+    "entries": {
+        "Claustra": {
+            "id": "r6T7RoK3AYG5ShbF",
+            "name": "Claustra",
+            "description": "<p>Możesz natychmiast zablokować każdy pospolity (nie magiczny) zamek, kłódkę lub inny podobny mechanizm. Nie potrzebujesz do tego klucza.</p><p>Dodatkowo mechanizmy zablokowane za pomocą tego Zaklęcia są uważane za magicznie zamknięte na czas trwania Zaklęcia, ale oryginalny klucz nadal będzie działał. </p><p>Ponadto w czasie trwania Zaklęcia możesz otworzyć zamek bez klucza, ale spowoduje to natychmiastowe zakończenie Zaklęcia.</p><p>Kiedy czas trwania Zaklęcia dobiegnie końca, zamek pozostanie zamknięty, ale nie będzie już traktowany jako magiczny lub magicznie zamknięte.</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.r6T7RoK3AYG5ShbF",
+            "duration": "Bonus SW godzin",
+            "target": "1",
+            "range": "Dotyk"
+        },
+        "Fax": {
+            "id": "cCJMjFE3vIDZ71xo",
+            "name": "Fax",
+            "description": "<p>Z ręki generujesz płomienie o różnej intensywności. Jeśli chcesz, może być lekki jak świeca, ale możesz także rzucić płomienie na swoich wrogów.</p><p>Kiedy zostanie użyte jako atak, to Zaklęcie jest uważane za Magiczny Pocisk zadający obrażenia <strong>0 + 1k4</strong>, o zasięg <strong>Bonus SW metrów</strong> i trafia wszystkie cele w obszarze <strong>Bonus SW metrów</strong>.</p><p>Trafienia krytyczne tym zaklęciem nadaje stan @Condition[Podpalenie]{Podpalenie}.</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.cCJMjFE3vIDZ71xo",
+            "effects": {
+                "3OwDI0feSMOUM1gl": {
+                    "id": "3OwDI0feSMOUM1gl",
+                    "name": "Fax",
+                    "script": "if (args.opposedTest.attackerTest.result.critical)\n   args.actor.addCondition(\"ablaze\")"
+                }
+            },
+            "target": "Bonus SW metrów",
+            "range": "Bonus SW metrów"
+        },
+        "Lepos": {
+            "id": "QmPLRdQCGz7fgDxM",
+            "name": "Lepos",
+            "description": "<p>Natychmiast oczarowujesz zwierzę, czyniąc je przyjaznym dla ciebie lub przynajmniej nie wrogim na czas trwania tego zaklęcia.</p><p>Przeciwko stworzeniom posiadającym inteligencję (na przykład goblinom, ludziom itp.) , cel musi zdać <strong>Przeciętny(+20) Test Opanowania</strong>, w przeciwnym razie przestanie być wobec ciebie wrogi lub, jeśli był neutralny, będzie cię trochę lubił na czas trwania zaklęcia. Zaklęcie nie zadziała więcej niż raz dziennie na tym samym celu.</p><p>W przypadku użycia w walce, nieudany <strong>Wymagający (+0) Test Opanowania</strong> powoduje, że cel otrzymuje Stan @Condition[Ogłuszenie].</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.QmPLRdQCGz7fgDxM",
+            "duration": "Bonus SW minut",
+            "target": "1",
+            "range": "Bonus SW metrów"
+        },
+        "Pulso": {
+            "id": "alIHMBXC7Ow21m51",
+            "name": "Pulso",
+            "description": "<p>W przypadku użycia przeciwko jakiemukolwiek stworzeniu cel musi zdać przeciwstawny <strong>Test Siły</strong> przeciw zaklęciu lub zostanie odepchnięty o liczbę metrów równą dwukrotności PS.</p><p>Jeśli zaklęcie trafi krytycznie, cel dodatkowo zyskuje Stan @Condition[Powalenie].</p><p>To zaklęcie <strong>nie zadaje żadnych obrażeń </strong>żywym istotom.</p><hr><p>Kiedy używany przeciwko obiektom nieożywionym, odpycha je (odległość ustala GM na podstawie rozmiaru i masy obiektu).</p><p>Można również użyć przeciwko drzwiom i ścianom. W tym przypadku jest on traktowany jako <strong>Magiczny Pocisk z obrażeniami +1k10.</strong></p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.alIHMBXC7Ow21m51",
+            "target": "1",
+            "range": "Bonus SW metrów"
+        },
+        "Sopio": {
+            "id": "RK2c5hc7qMpKinSH",
+            "name": "Sopio",
+            "description": "<p>Usypia cel w naturalny sposób.</p><p>Jeśli cel nie chce, może oprzeć się zaklęciu za pomocą przeciwstawnego <strong>Testu Siły Woli</strong>. Cel zyskuje negatywny lub pozytywny modyfikator w zależności od okoliczności (do MG). </p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.RK2c5hc7qMpKinSH",
+            "target": "1",
+            "range": "Bonus SW metrów"
+        },
+        "Tego": {
+            "id": "zv40HcEkRtq91u2z",
+            "name": "Tego",
+            "description": "<p>To zaklęcie ukrywa obecność celu, czyniąc go trudniejszym do zauważenia.</p><p>Każda istota, która nie widzi wiatrów magii otrzymuje <strong>modyfikator -20</strong> do dowolnych <strong>Testów Percepcji</strong> związanych z zobaczeniem celu tego Zaklęcia.</p><p>Czar kończy się natychmiast, gdy Cel wyda głośny dźwięk lub otrzyma @Condition[Związany Walką].</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.zv40HcEkRtq91u2z",
+            "duration": "Bonus SW minut",
+            "target": "1",
+            "range": "Dotyk"
+        },
+        "Tutor": {
+            "id": "tMwYo0P0xyR6rB7c",
+            "name": "Tutor",
+            "description": "<p>To zaklęcie otacza cel barierą ochronną, która pomaga zniwelować różnice w wielkości.</p><p>Gdy cel tego czaru zostanie zaatakowany przez większego wroga, cel <strong>zyskuje 2 AP za każde poziom różnicy</strong> między nim a atakującym.</p>",
+            "sourceId": "Compendium.forien-armoury.forien-armoury.tMwYo0P0xyR6rB7c",
+            "effects": {
+                "C4aFnulJN1sYHfi3": {
+                    "id": "C4aFnulJN1sYHfi3",
+                    "name": "Tutor",
+                    "script": "let attackerSize = args.attacker.sizeNum;\nlet mySize = args.actor.sizeNum\n\nif (attackerSize > mySize) {\n  let sizeDiff = (attackerSize - mySize) * 2;\n  args.AP.value += sizeDiff;\n\n\n  let name = game.i18n.localize('Forien.Armoury.Runebound.Tutor.Name');\n  let effect = game.i18n.format('Forien.Armoury.Runebound.Tutor.Effect', {num: sizeDiff});\n  args.extraMessages.push(`<strong>${name}</strong> ${effect}`);\n}\n\n"
+                }
+            },
+            "duration": "Siła Woli sekund",
+            "target": "1",
+            "range": "Dotyk"
+        }
+    }
+}

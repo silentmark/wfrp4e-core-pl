@@ -437,7 +437,7 @@
                 "PNMqJy5zpPTXOd37": {
                     "name": "Szuler Kościany",
                     "id": "PNMqJy5zpPTXOd37",
-                    "script": "if (args.test.item && (args.test.item.name == game.i18n.localize(\"NAME.Gamble\") || args.test.item.name == game.i18n.localize(\"NAME.SleightOfHand\")) && args.test.succeeded)\n{\n\nlet SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\nlet ones = Number(args.test.result.roll.toString().split(\"\").pop())\n\nif (ones > SL)\n   args.test.result.other.push(`<span class=\"hide-option\"><b>${this.effect.label}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS jeśli grasz w kości.</span>`)\n}"
+                    "script": "if (args.test.item && (args.test.item.name == game.i18n.localize(\"NAME.Gamble\") || args.test.item.name == game.i18n.localize(\"NAME.SleightOfHand\")) && args.test.succeeded)\n{\n\nlet SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\nlet ones = Number(args.test.result.roll.toString().split(\"\").pop())\n\nif (ones > SL)\n   args.test.result.other.push(`<span class=\"hide-option\"><b>${this.effect.name}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS jeśli grasz w kości.</span>`)\n}"
                 }
             }
         },
@@ -1083,7 +1083,7 @@
         "Bless": {
             "id": "QyjWtSdnVMT04l5Y",
             "name": "Błogosławieństwo (Boska Tradycja)",
-            "description": "<p>Któryś z bogów czuwa nad tobą i odpowiada na twoje proste modlitwy. Możesz wykorzystywać błogosławieństwa swojego pana, co opisano w @UUID[Compendium.wfrp4e-core.journals.NcH9OhleJFfaUdon]{Religie i wierzenia}. Normalnie możesz znać tylko jedną boską tradycję na Talent Błogosławieństwo.</p>",
+            "description": "<p>Któryś z bogów czuwa nad tobą i odpowiada na twoje proste modlitwy. Możesz wykorzystywać błogosławieństwa swojego pana, co opisano w @UUID[JournalEntry.NcH9OhleJFfaUdon]{Religie i wierzenia}. Normalnie możesz znać tylko jedną boską tradycję na Talent Błogosławieństwo.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.QyjWtSdnVMT04l5Y"
         },
         "Sturdy": {
@@ -1293,7 +1293,7 @@
         "Invoke": {
             "id": "voV0C2ar1bKpcpnH",
             "name": "Inwokacja",
-            "description": "<p>Zostałeś pobłogosławiony przez swego boskiego patrona, dzięki czemu zyskujesz zdolność czynienia jednego z jego Cudów. Możesz wykupywać kolejne cuda za 100 PD pomnożone przez liczbę obecnie znanych cudów. Pełne zasady tego, jak się ich uczysz, znajdują się w @UUID[Compendium.wfrp4e-core.journals.NcH9OhleJFfaUdon]{Rozdziale 7: Religie i wierzenia}. W normalnych okolicznościach nie możesz wykupić tego Talentu więcej niż jeden raz. Co więcej, nie możesz też kupić Talentów @UUID[Compendium.wfrp4e-core.items.mdPGZsn2396dEpOf]{Magia Prosta} i @UUID[Compendium.wfrp4e-core.items.3O9clK7LGyuLTHPW]{Magia Tajemna}, jeśli posiadasz Talent Inwokacja. Po wydaniu 100 PD możesz się pozbyć tego Talentu, ale natychmiast utracisz dostęp do wszystkich zapewnianych przez niego cudów. Narażasz się też na gniew swego boga, a MG obmyśli, jak będzie się on przejawiał.</p>",
+            "description": "<p>Zostałeś pobłogosławiony przez swego boskiego patrona, dzięki czemu zyskujesz zdolność czynienia jednego z jego Cudów. Możesz wykupywać kolejne cuda za 100 PD pomnożone przez liczbę obecnie znanych cudów. Pełne zasady tego, jak się ich uczysz, znajdują się w @UUID[JournalEntry.NcH9OhleJFfaUdon]{Rozdziale 7: Religie i wierzenia}. W normalnych okolicznościach nie możesz wykupić tego Talentu więcej niż jeden raz. Co więcej, nie możesz też kupić Talentów@UUID[Compendium.wfrp4e-core.items.mdPGZsn2396dEpOf]{Magia Prosta} i @UUID[Compendium.wfrp4e-core.items.3O9clK7LGyuLTHPW]{Magia Tajemna}, jeśli posiadasz Talent Inwokacja. Po wydaniu 100 PD możesz się pozbyć tego Talentu, ale natychmiast utracisz dostęp do wszystkich zapewnianych przez niego cudów. Narażasz się też na gniew swego boga, a MG obmyśli, jak będzie się on przejawiał.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.voV0C2ar1bKpcpnH"
         },
         "Enclosed Fighter": {

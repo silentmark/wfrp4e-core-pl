@@ -1,0 +1,287 @@
+{
+    "label": "Bestiarusz (Forien's Armoury)",
+    "mapping": {
+        "species": "system.details.species.value",
+        "gender": "system.details.gender.value",
+        "effects": {
+            "path": "effects",
+            "converter": "effects"
+        },
+        "items": {
+            "path": "items",
+            "converter": "bestiary_traits"
+        }
+    },
+    "entries": {
+        "Armorsmith": {
+            "id": "UkhOQcByzgsoaIKR",
+            "name": "Armorsmith",
+            "description": "  ",
+            "sourceId": "Compendium.forien-armoury.merchants.UkhOQcByzgsoaIKR",
+            "species": "  ",
+            "gender": " ",
+            "items": {
+                "0CwV96kTDRF0jUhk": {
+                    "id": "0CwV96kTDRF0jUhk",
+                    "name": "Entertain",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Entertain}",
+                    "originalName": "Entertain",
+                    "sourceId": "Compendium.forien-armoury.merchants.0CwV96kTDRF0jUhk"
+                },
+                "4mJoPBw4drm1kv2D": {
+                    "id": "4mJoPBw4drm1kv2D",
+                    "name": "Melee",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Melee}",
+                    "originalName": "Melee",
+                    "sourceId": "Compendium.forien-armoury.merchants.4mJoPBw4drm1kv2D"
+                },
+                "AaXk4bfDRTPeeYjn": {
+                    "id": "AaXk4bfDRTPeeYjn",
+                    "name": "Art",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Art}",
+                    "originalName": "Art",
+                    "sourceId": "Compendium.forien-armoury.merchants.AaXk4bfDRTPeeYjn"
+                },
+                "McTtmZu3Ac8Lh48W": {
+                    "id": "McTtmZu3Ac8Lh48W",
+                    "name": "Stealth",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Stealth}",
+                    "originalName": "Stealth",
+                    "sourceId": "Compendium.forien-armoury.merchants.McTtmZu3Ac8Lh48W"
+                },
+                "MeXCAQ3wqJzX07X7": {
+                    "id": "MeXCAQ3wqJzX07X7",
+                    "name": "Ride",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Ride}",
+                    "originalName": "Ride",
+                    "sourceId": "Compendium.forien-armoury.merchants.MeXCAQ3wqJzX07X7"
+                }
+            }
+        },
+        "Bowyer": {
+            "id": "gR1EUBDGsLaaeLE3",
+            "name": "Bowyer",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.merchants.gR1EUBDGsLaaeLE3",
+            "species": " ",
+            "gender": " ",
+            "items": {
+                "0CwV96kTDRF0jUhk": {
+                    "id": "0CwV96kTDRF0jUhk",
+                    "name": "Entertain",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Entertain}",
+                    "originalName": "Entertain",
+                    "sourceId": "Compendium.forien-armoury.merchants.0CwV96kTDRF0jUhk"
+                },
+                "4mJoPBw4drm1kv2D": {
+                    "id": "4mJoPBw4drm1kv2D",
+                    "name": "Melee",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Melee}",
+                    "originalName": "Melee",
+                    "sourceId": "Compendium.forien-armoury.merchants.4mJoPBw4drm1kv2D"
+                },
+                "AaXk4bfDRTPeeYjn": {
+                    "id": "AaXk4bfDRTPeeYjn",
+                    "name": "Art",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Art}",
+                    "originalName": "Art",
+                    "sourceId": "Compendium.forien-armoury.merchants.AaXk4bfDRTPeeYjn"
+                },
+                "McTtmZu3Ac8Lh48W": {
+                    "id": "McTtmZu3Ac8Lh48W",
+                    "name": "Stealth",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Stealth}",
+                    "originalName": "Stealth",
+                    "sourceId": "Compendium.forien-armoury.merchants.McTtmZu3Ac8Lh48W"
+                },
+                "MeXCAQ3wqJzX07X7": {
+                    "id": "MeXCAQ3wqJzX07X7",
+                    "name": "Ride",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Ride}",
+                    "originalName": "Ride",
+                    "sourceId": "Compendium.forien-armoury.merchants.MeXCAQ3wqJzX07X7"
+                }
+            }
+        },
+        "Gunsmith": {
+            "id": "vE7hkKLeNjh6AOXJ",
+            "name": "Gunsmith",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.merchants.vE7hkKLeNjh6AOXJ",
+            "species": " ",
+            "gender": " ",
+            "items": {
+                "0CwV96kTDRF0jUhk": {
+                    "id": "0CwV96kTDRF0jUhk",
+                    "name": "Entertain",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Entertain}",
+                    "originalName": "Entertain",
+                    "sourceId": "Compendium.forien-armoury.merchants.0CwV96kTDRF0jUhk"
+                },
+                "4mJoPBw4drm1kv2D": {
+                    "id": "4mJoPBw4drm1kv2D",
+                    "name": "Melee",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Melee}",
+                    "originalName": "Melee",
+                    "sourceId": "Compendium.forien-armoury.merchants.4mJoPBw4drm1kv2D"
+                },
+                "AaXk4bfDRTPeeYjn": {
+                    "id": "AaXk4bfDRTPeeYjn",
+                    "name": "Art",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Art}",
+                    "originalName": "Art",
+                    "sourceId": "Compendium.forien-armoury.merchants.AaXk4bfDRTPeeYjn"
+                },
+                "McTtmZu3Ac8Lh48W": {
+                    "id": "McTtmZu3Ac8Lh48W",
+                    "name": "Stealth",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Stealth}",
+                    "originalName": "Stealth",
+                    "sourceId": "Compendium.forien-armoury.merchants.McTtmZu3Ac8Lh48W"
+                },
+                "MeXCAQ3wqJzX07X7": {
+                    "id": "MeXCAQ3wqJzX07X7",
+                    "name": "Ride",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Ride}",
+                    "originalName": "Ride",
+                    "sourceId": "Compendium.forien-armoury.merchants.MeXCAQ3wqJzX07X7"
+                }
+            }
+        },
+        "Innkeeper": {
+            "id": "WxDXRip8dXafIf1T",
+            "name": "Innkeeper",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.merchants.WxDXRip8dXafIf1T",
+            "species": " ",
+            "gender": " ",
+            "items": {
+                "0CwV96kTDRF0jUhk": {
+                    "id": "0CwV96kTDRF0jUhk",
+                    "name": "Entertain",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Entertain}",
+                    "originalName": "Entertain",
+                    "sourceId": "Compendium.forien-armoury.merchants.0CwV96kTDRF0jUhk"
+                },
+                "4mJoPBw4drm1kv2D": {
+                    "id": "4mJoPBw4drm1kv2D",
+                    "name": "Melee",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Melee}",
+                    "originalName": "Melee",
+                    "sourceId": "Compendium.forien-armoury.merchants.4mJoPBw4drm1kv2D"
+                },
+                "AaXk4bfDRTPeeYjn": {
+                    "id": "AaXk4bfDRTPeeYjn",
+                    "name": "Art",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Art}",
+                    "originalName": "Art",
+                    "sourceId": "Compendium.forien-armoury.merchants.AaXk4bfDRTPeeYjn"
+                },
+                "McTtmZu3Ac8Lh48W": {
+                    "id": "McTtmZu3Ac8Lh48W",
+                    "name": "Stealth",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Stealth}",
+                    "originalName": "Stealth",
+                    "sourceId": "Compendium.forien-armoury.merchants.McTtmZu3Ac8Lh48W"
+                },
+                "MeXCAQ3wqJzX07X7": {
+                    "id": "MeXCAQ3wqJzX07X7",
+                    "name": "Ride",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Ride}",
+                    "originalName": "Ride",
+                    "sourceId": "Compendium.forien-armoury.merchants.MeXCAQ3wqJzX07X7"
+                }
+            }
+        },
+        "Tailor": {
+            "id": "0LYVKMstH6YQ0cbQ",
+            "name": "Tailor",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.merchants.0LYVKMstH6YQ0cbQ",
+            "species": " - ",
+            "gender": " ",
+            "items": {
+                "0CwV96kTDRF0jUhk": {
+                    "id": "0CwV96kTDRF0jUhk",
+                    "name": "Entertain",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Entertain}",
+                    "originalName": "Entertain",
+                    "sourceId": "Compendium.forien-armoury.merchants.0CwV96kTDRF0jUhk"
+                },
+                "4mJoPBw4drm1kv2D": {
+                    "id": "4mJoPBw4drm1kv2D",
+                    "name": "Melee",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Melee}",
+                    "originalName": "Melee",
+                    "sourceId": "Compendium.forien-armoury.merchants.4mJoPBw4drm1kv2D"
+                },
+                "AaXk4bfDRTPeeYjn": {
+                    "id": "AaXk4bfDRTPeeYjn",
+                    "name": "Art",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Art}",
+                    "originalName": "Art",
+                    "sourceId": "Compendium.forien-armoury.merchants.AaXk4bfDRTPeeYjn"
+                },
+                "McTtmZu3Ac8Lh48W": {
+                    "id": "McTtmZu3Ac8Lh48W",
+                    "name": "Stealth",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Stealth}",
+                    "originalName": "Stealth",
+                    "sourceId": "Compendium.forien-armoury.merchants.McTtmZu3Ac8Lh48W"
+                },
+                "MeXCAQ3wqJzX07X7": {
+                    "id": "MeXCAQ3wqJzX07X7",
+                    "name": "Ride",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Ride}",
+                    "originalName": "Ride",
+                    "sourceId": "Compendium.forien-armoury.merchants.MeXCAQ3wqJzX07X7"
+                }
+            }
+        },
+        "Weaponsmith": {
+            "id": "1ZQaS9L6g7W5yYUT",
+            "name": "Weaponsmith",
+            "description": " ",
+            "sourceId": "Compendium.forien-armoury.merchants.1ZQaS9L6g7W5yYUT",
+            "species": " ",
+            "gender": " ",
+            "items": {
+                "0CwV96kTDRF0jUhk": {
+                    "id": "0CwV96kTDRF0jUhk",
+                    "name": "Entertain",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Entertain}",
+                    "originalName": "Entertain",
+                    "sourceId": "Compendium.forien-armoury.merchants.0CwV96kTDRF0jUhk"
+                },
+                "4mJoPBw4drm1kv2D": {
+                    "id": "4mJoPBw4drm1kv2D",
+                    "name": "Melee",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Melee}",
+                    "originalName": "Melee",
+                    "sourceId": "Compendium.forien-armoury.merchants.4mJoPBw4drm1kv2D"
+                },
+                "AaXk4bfDRTPeeYjn": {
+                    "id": "AaXk4bfDRTPeeYjn",
+                    "name": "Art",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Art}",
+                    "originalName": "Art",
+                    "sourceId": "Compendium.forien-armoury.merchants.AaXk4bfDRTPeeYjn"
+                },
+                "McTtmZu3Ac8Lh48W": {
+                    "id": "McTtmZu3Ac8Lh48W",
+                    "name": "Stealth",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.OcTx7sDraGiGcvnE]{Stealth}",
+                    "originalName": "Stealth",
+                    "sourceId": "Compendium.forien-armoury.merchants.McTtmZu3Ac8Lh48W"
+                },
+                "MeXCAQ3wqJzX07X7": {
+                    "id": "MeXCAQ3wqJzX07X7",
+                    "name": "Ride",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journal-entries.6zOdTLv3YeYeJ4hR.JournalEntryPage.QQukmSP68cF8MzJe]{Ride}",
+                    "originalName": "Ride",
+                    "sourceId": "Compendium.forien-armoury.merchants.MeXCAQ3wqJzX07X7"
+                }
+            }
+        }
+    }
+}

@@ -69,23 +69,24 @@ Hooks.on("init", () => {
 	Babele.get().registerConverters({
 		effects: (effects, translations) => {
 			return effects.map((data) => {
-				//TODO: map script.
-				const translation = translations[data.name] || translations[data.id] || translations[data._id];
-				if (translations && translation) {
-				 	const newEffect = mergeObject(
-						data,
-						mergeObject(translation, { translated: true }),
-					);
-					if (translation.script) {
-						newEffect.flags.wfrp4e.script = translation.script;
+				if (translations){
+					const translation = translations[data.name] || translations[data.id] || translations[data._id];
+					if (translation) {
+						const newEffect = mergeObject(
+							data,
+							mergeObject(translation, { translated: true }),
+						);
+						if (translation.script) {
+							newEffect.flags.wfrp4e.script = translation.script;
+						}
+						if (translation.secondaryScript) {
+							newEffect.flags.wfrp4e.secondaryEffect.script = translation.secondaryScript;
+						}
+						if (translation.description) {
+							newEffect.flags.wfrp4e.effectData.description = translation.description;
+						}
+						return newEffect;
 					}
-					if (translation.secondaryScript) {
-						newEffect.flags.wfrp4e.secondaryEffect.script = translation.secondaryScript;
-					}
-					if (translation.description) {
-						newEffect.flags.wfrp4e.effectData.description = translation.description;
-					}
-					return newEffect;
 				}
 				return data;
 			});
@@ -94,12 +95,14 @@ Hooks.on("init", () => {
 		notes: (notes, translations) => {
 			// TODO: notes on map.
 			return notes.map((data) => {
-				const translation = translations[data.id] ?? translations[data._id];
-				if (translations && translation) {
-					return mergeObject(
-						data,
-						mergeObject(translation, { translated: true }),
-					);
+				if (translations){ 
+					const translation = translations[data.id] ?? translations[data._id];
+					if (translation) {
+						return mergeObject(
+							data,
+							mergeObject(translation, { translated: true }),
+						);
+					}
 				}
 				return data;
 			});
@@ -137,12 +140,14 @@ Hooks.on("init", () => {
 							}
 						}
 						for (const itemToCheck of itemsToCheck) {
-							let translatedItem = fromUuidSync(itemToCheck.sourceId);
-							if (translatedItem && translatedItem.type == item.type) {
+							let compendiumItem = fromUuidSync(itemToCheck.sourceId);
+							let compendiumItemId = compendiumItem._id;
+							if (compendiumItem && compendiumItem.type == item.type) {
+								let translatedItem = pack.translations[compendiumItemId];
 								const translatedData = dynamicMapping.map(item, translatedItem);
 								translatedItem = mergeObject(item, translatedData);
 								for (const e of translatedItem.effects) {
-									const te = pack.translations[translatedItem._id].effects[e._id];
+									const te = pack.translations[compendiumItemId].effects[e._id];
 									mergeObject(e, te);
 								}
 								translatedItem.system.specification.value = (translations[translatedItem.id] ?? translations[translatedItem._id]).specification;

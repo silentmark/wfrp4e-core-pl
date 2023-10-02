@@ -267,7 +267,7 @@
                 "heL1cJFCuElfQoeS": {
                     "id": "heL1cJFCuElfQoeS",
                     "name": "Nudności",
-                    "script": "                    if (this.actor.isOwner && args.test.result.outcome == \"failure\") {\n    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"]\n    if (applicableCharacteristics.includes(args.test.characteristicKey)) {\n        this.actor.addCondition(\"stunned\");\n    }\n}"
+                    "script": "\n                    if (this.actor.isOwner && args.test.result.outcome == \"failure\") {\n    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"]\n    if (applicableCharacteristics.includes(args.test.characteristicKey)) {\n        this.actor.addCondition(\"stunned\");\n    }\n}"
                 },
                 "Sp93ZiJ4eq26v8UO": {
                     "id": "Sp93ZiJ4eq26v8UO",
