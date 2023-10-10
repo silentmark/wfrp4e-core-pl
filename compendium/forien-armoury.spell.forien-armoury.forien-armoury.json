@@ -1,5 +1,5 @@
 {
-    "label": "Cechy Stworzeń",
+    "label": "Przedmioty (Forien's Armoury)",
     "mapping": {
         "duration": "system.duration.value",
         "range": "system.range.value",

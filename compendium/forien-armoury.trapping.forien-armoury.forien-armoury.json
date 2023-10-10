@@ -1,5 +1,5 @@
 {
-    "label": "Wyposażenie",
+    "label": "Przedmioty (Forien's Armoury)",
     "mapping": {
         "penalties": "system.penalty.value",
         "range": "system.range.value",

@@ -1,5 +1,5 @@
 {
-    "label": "Cechy Stworzeń",
+    "label": "Przedmioty (Forien's Armoury)",
     "mapping": {
         "roll": "system.rollable.skill",
         "specification_label": "system.specification.label",
