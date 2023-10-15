@@ -12,38 +12,38 @@
     "entries": {
         "Broken Leg (Major)": {
             "id": "2iult41Jehz0F1O8",
-            "name": "Złamanie Nogi (Poważne)",
-            "description": "<p>Jedna z kości została poważnie strzaskana, więc albo sterczy pod dziwnym kątem, albo zwisa bezwładnie, trzymając się jedynie na skórze. Mało prawdopodobne, że zrośnie się bez odpowiedniej pomocy medycznej.</p>\n<p><span style=\"font-weight: bold;\">Noga: </span>Pozostaje ci polegać na drugiej kończynie, ponieważ ból jest ogromny i zwykle konieczne są łubki. Szybkość zostaje trwale zmniejszona o połowę, a wszystkie Testy związane z poruszaniem się otrzymują karę -20. Niemożliwe jest wykonywanie Uników.</p>\n<h3>Leczenie</h3>\n<p>Złamana kość będzie zrastać się przez 40+1k10 dni. Pod koniec tego okresu należy wykonać <b>Wymagający (+0) Test Odporności</b>, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę: -10 do wszystkich Testów Zwinności, w których używa ramienia.</p>\n<p>Udany <strong>Wymagający (+0)</strong> test Leczenia wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny <b>Wymagający (+0) Test Leczenia</b> wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
+            "name": "Złamanie nogi (poważne)",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#major]{Broken Bones}</p><p>Kość została poważnie strzaskana, więc albo sterczy pod dziwnym kątem, albo zwisa bezwładnie, trzymając się jedynie na skórze. Mało prawdopodobne, że zrośnie się bez odpowiedniej pomocy medycznej. Trafione miejsce jest bezużyteczne, dopóki kość się nie zrośnie.</p>\n<p><span style=\"font-weight: bold;\"><strong>Noga: </strong></span>Szybkość zostaje trwale zmniejszona o połowę, a wszystkie Testy związane z poruszaniem się otrzymują karę -20. Niemożliwe jest wykonywanie Testów Uników. </p>\n<h3>Leczenie</h3>\n<p>Złamana kość będzie się zrastać przez 40+[[/r 1d10]] dni. Pod koniec tego okresu należy wykonać <strong>Wymagający (+0) Test Odporności</strong>, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę -10 do wartości Zwinności z powodu źle zrośniętego złamania nogi.</p>\n<p>Udany <strong>Wymagający (+0) Test Leczenia</strong> wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny <strong>Wymagający (+0) Test Leczenia</strong> wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.2iult41Jehz0F1O8",
             "effects": {
                 "tZayAMRUW6AVaa12": {
                     "id": "tZayAMRUW6AVaa12",
-                    "name": "Złamana Noga",
-                    "description": "Testy związane z poruszaniem się"
+                    "name": "Złamanie nogi (poważne)",
+                    "description": "Dowolny wiążący się z poruszaniem się"
                 },
                 "ZwCU28eoOKqibVfu": {
                     "id": "ZwCU28eoOKqibVfu",
-                    "name": "Kara do Poruszania się",
+                    "name": "Szybkość zmniejszona o połowę",
                     "script": "args.actor.details.move.value /= 2;"
                 }
             },
-            "penalty": "-20 do testów związanych z ruchem, nie może unikać, połowa szybkości",
+            "penalty": "-20 do Testów wiążący się z poruszaniem się, niemożliwe Unikanie, połowa Szybkości",
             "location": "Noga"
         },
         "Torn Leg Muscle (Major)": {
             "id": "3S4OYOZLauXctmev",
-            "name": "Zerwanie mięśni (Noga) (Poważne)",
-            "description": "<p>Jeden z mięśni lub jakieś ważne ścięgno zostały poważnie uszkodzone, co wywołuje ogromny ból i poważną utratę ruchomości zranionej kończyny.</p>\n<p><strong>Noga:</strong> Szybkość spada o połowę. Testy związane z użyciem nogi wykonuje się z karą -20.</p>\n<p><span style=\"font-weight: bold;\">Leczenie: </span>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości, po których używanie kończyny będzie pociągało za sobą kary -10 do odpowiednich Testów. Mięśnie zagoją się całkowicie w ciągu następnych 30 dni - Bonus z Wytrzymałości. Test Leczenia nie pomoże w tej sytuacji - medyk po prostu stwierdzi, żeby nie używać trafionego miejsca.</p>",
+            "name": "Zerwanie mięśni nogi (poważne)",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#major]{Zerwanie mięśni}</p><p>Zerwanie mięśni nogi (poważne) - Jeden z mięśni lub jakieś ważne ścięgno zostało poważnie uszkodzone, co wywołuje ogromny ból i poważną utratę ruchomości.</p>\n<p><strong>Noga:</strong> Wszelkie Testy związane z użyciem nogi wykonuje się z karą -20. Szybkość spada o połowę.</p>\n<h3>Leczenie</h3>\n<p>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości, po których używanie zamiast -20 będzie pociągało za sobą kary -10 do odpowiednich Testów. Mięśnie zagoją się całkowicie w ciągu następnych 30 dni - Bonus z Wytrzymałości. Test Leczenia nie pomoże w tej sytuacji – medyk po prostu stwierdzi, żeby nie używać trafionego miejsca.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.3S4OYOZLauXctmev",
             "effects": {
                 "e5BPTZkHGMJuDX2p": {
                     "id": "e5BPTZkHGMJuDX2p",
-                    "name": "Naderwany Mięsień Nogi",
-                    "description": "Test wymagające użycia nogi z naderwanym mięśniem"
+                    "name": "Zerwanie mięśni nogi (poważne)",
+                    "description": "Dowolny związany z użyciem nogi"
                 },
                 "t1Anp3f9yR4IJqpR": {
                     "id": "t1Anp3f9yR4IJqpR",
-                    "name": "Kara do Poruszania się",
+                    "name": "Szybkość spada o połowę",
                     "script": "args.actor.details.move.value /= 2;"
                 }
             },
@@ -51,34 +51,34 @@
         },
         "Broken Arm (Minor)": {
             "id": "4lj1ik958mbgAlaF",
-            "name": "Złamanie Ręki (Pomniejsze)",
-            "description": "<p>Złamanie jednej kości, ale bez przemieszczenia. Przy dobrych wiatrach zrośnie się samo. Trafione miejsce jest bezużyteczne, dopóki złamanie się nie zagoi.</p>\n<p><span style=\"font-weight: bold;\">Ramię: </span>pozostaje ci polegać na drugiej kończynie, ponieważ ból jest ogromny i zwykle konieczne są łubki. Wszystkie Testy, w których niezbędne jest używanie obu dłoni, obarczone są karą -20, ponadto postać nie może używać broni dwuręcznych; Jeśli odcięta została dłoń wiodąca, Testy walki przy pomocy drugiej dłoni nadal wykonywane są z karą -20</p>\n<h3>Leczenie</h3>\n<p>Złamana kość będzie zrastać się przez 30+1k10 dni. Pod koniec tego okresu należy wykonać <b>Wymagający (+0) Test Odporności</b>, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę: -5 do wszystkich Testów Zwinności, w których używa ramienia.</p>\n<p>Udany <strong>Przeciętny (+20)</strong> test Leczenia wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny <b>Przeciętny (+20) Test Leczenia</b> wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
+            "name": "Złamanie ramienia (pomniejsze)",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#minor]{Broken Bones}</p><p>Złamanie ramienia (pomniejsze) - Złamanie jednej kości, ale bez przemieszczenia. Przy dobrych wiatrach zrośnie się samo.</p>\n<p><span style=\"font-weight: bold;\"><strong>Ramie: </strong></span>Trafione miejsce jest bezużyteczne, dopóki złamanie się nie zagoi. Postaci pozostaje poleganie na drugiej kończynie, ponieważ ból jest ogromny i zwykle konieczne są łubki. Wszystkie Testy, w których niezbędne jest używanie obu dłoni, obarczone są karą -20, ponadto postać nie może używać broni dwuręcznych, oraz nawet przytwierdzić tarczy do złamanego ramienia. Jeśli złamane zostało ramię wiodące, Testy walki przy pomocy drugiej dłoni nadal wykonywane są z karą -20. Za każde wydane 100 Punktów Doświadczenia można zmniejszyć tę karę o 5, ponieważ postać stopniowo uczy się władać drugą dłonią.</p>\n<h3>Leczenie</h3>\n<p>Złamanie będzie zrastać się przez 30+[[/r 1d10]] dni. Pod koniec tego okresu należy wykonać <strong>Przeciętny (+20) Test Odporności</strong>, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę -5 do wszystkich Testów Zwinności, w których używa ramienia z powodu źle zrośniętego złamania.</p>\n<p>Udany <strong>Przeciętny (+20) Test Leczenia</strong> wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny <strong>Przeciętny (+20) Test Leczenia</strong> wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.4lj1ik958mbgAlaF",
             "effects": {
                 "s7ir53mI80aA1FGh": {
                     "id": "s7ir53mI80aA1FGh",
-                    "name": "Złamana Ręka",
+                    "name": "Złamanie ramienia (pomniejsze)",
                     "description": "Dowolny wiążący się z użyciem dwóch rąk"
                 }
             },
             "penalty": "-20 do Testów wiążący się z użyciem dwóch rąk",
-            "location": "Ręka"
+            "location": "Ramię"
         },
         "Broken Leg (Minor)": {
             "id": "7mCcI3q7hgWcmbBU",
-            "name": "Złamanie Nogi (Pomniejsze)",
-            "description": "<p>Złamanie jednej kości, ale bez przemieszczenia. Przy dobrych wiatrach zrośnie się samo. Trafione miejsce jest bezużyteczne, dopóki złamanie się nie zagoi.</p>\n<p><span style=\"font-weight: bold;\">Noga: </span>pozostaje ci polegać na drugiej kończynie, ponieważ ból jest ogromny i zwykle konieczne są łubki. Szybkość zostaje trwale zmniejszona o połowę, a wszystkie Testy związane z poruszaniem się otrzymują karę -20. Niemożliwe jest wykonywanie Uników.</p>\n<h3>Leczenie</h3>\n<p>Złamana kość będzie zrastać się przez 30+1k10 dni. Pod koniec tego okresu należy wykonać <b>Wymagający (+0) Test Odporności</b>, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę: -5 do wszystkich Testów Zwinności, w których używa ramienia.</p>\n<p>Udany <strong>Przeciętny (+20)</strong> test Leczenia wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny <b>Przeciętny (+20) Test Leczenia</b> wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
+            "name": "Złamanie nogi (pomniejsze)",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#minor]{Broken Bones}</p><p>Złamanie jednej kości, ale bez przemieszczenia. Przy dobrych wiatrach zrośnie się samo.</p>\n<p><span style=\"font-weight: bold;\"><strong>Noga: </strong></span>Szybkość zostaje trwale zmniejszona o połowę, a wszystkie Testy związane z poruszaniem się otrzymują karę -20. Niemożliwe jest wykonywanie Testów Uników.</p>\n<h3>Leczenie</h3>\n<p>Złamanie będzie zrastać się przez 30+[[/r 1d10]] dni. Pod koniec tego okresu należy wykonać <strong>Przeciętny (+20) Test Odporności</strong>, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę -5 do wartości Zwinności z powodu źle zrośniętego złamania nogi.</p>\n<p>Udany <strong>Przeciętny (+20) Test Leczenia</strong> wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny <strong>Przeciętny (+20) Test Leczenia</strong> wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.7mCcI3q7hgWcmbBU",
             "effects": {
                 "DYDPqHfkDkbRBwqH": {
                     "id": "DYDPqHfkDkbRBwqH",
-                    "name": "Kara do Poruszania się",
+                    "name": "Szybkość zmniejszona o połowę",
                     "script": "args.actor.details.move.value /= 2;"
                 },
                 "j9pWVPJtatDruv0Y": {
                     "id": "j9pWVPJtatDruv0Y",
-                    "name": "Złamana Noga",
-                    "description": "Testy związane z poruszaniem się"
+                    "name": "Złamanie nogi (pomniejsze)",
+                    "description": "Dowolny wiążący się z poruszaniem się"
                 }
             },
             "location": "Noga"
@@ -86,7 +86,7 @@
         "Torn Body Muscle (Minor)": {
             "id": "7rBhIRo96Mydo0Cv",
             "name": "Zerwanie mięśni korpusu (pomniejsze)",
-            "description": "<p>Jeden z mięśni został zerwany albo nastąpiło skręcenie stawu, co skutkuje ograniczeniem ruchomości i sporym bólem.</p>\n<p><strong>Korpus:</strong> Wszelkie Testy związane z użyciem korpusu wykonuje się z karą -10. </p>\n<h3>Leczenie</h3>\n<p>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości. Sukces w Teście Leczenia zmniejszy ten okres o 1 dzień plus 1 dodatkowy dzień za każdy PS (premię tę można uzyskać tylko raz).</p>",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#minor$1]{Zerwanie mięśni}</p><p>Jeden z mięśni został zerwany albo nastąpiło skręcenie stawu, co skutkuje ograniczeniem ruchomości i sporym bólem.</p>\n<p><strong>Korpus:</strong> Wszelkie Testy związane z użyciem korpusu wykonuje się z karą -10. </p>\n<h3>Leczenie</h3>\n<p>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości. Sukces w Teście Leczenia zmniejszy ten okres o 1 dzień plus 1 dodatkowy dzień za każdy PS (premię tę można uzyskać tylko raz).</p>",
             "sourceId": "Compendium.wfrp4e-core.items.7rBhIRo96Mydo0Cv",
             "effects": {
                 "Aans92KGaO90qXGV": {
@@ -139,7 +139,7 @@
         "Torn Body Muscle (Major)": {
             "id": "eWPN3CV2Eddwz8aM",
             "name": "Zerwanie mięśni korpusu (poważne)",
-            "description": "<p>Jeden z mięśni lub jakieś ważne ścięgno zostało poważnie uszkodzone, co wywołuje ogromny ból i poważną utratę ruchomości.</p>\n<p><strong>Korpus:</strong> Wszelkie Testy związane z użyciem korpusu wykonuje się z karą -20. </p>\n<h3>Leczenie</h3>\n<p>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości, po których używanie kończyny będzie pociągało za sobą kary -10 do odpowiednich Testów. Mięśnie zagoją się całkowicie w ciągu następnych 30 dni - Bonus z Wytrzymałości. Test Leczenia nie pomoże w tej sytuacji – medyk po prostu stwierdzi, żeby nie używać trafionego miejsca.</p>",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#major]{Zerwanie mięśni}</p><p>Jeden z mięśni lub jakieś ważne ścięgno zostało poważnie uszkodzone, co wywołuje ogromny ból i poważną utratę ruchomości.</p>\n<p><strong>Korpus:</strong> Wszelkie Testy związane z użyciem korpusu wykonuje się z karą -20. </p>\n<h3>Leczenie</h3>\n<p>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości, po których używanie kończyny będzie pociągało za sobą kary -10 do odpowiednich Testów. Mięśnie zagoją się całkowicie w ciągu następnych 30 dni - Bonus z Wytrzymałości. Test Leczenia nie pomoże w tej sytuacji – medyk po prostu stwierdzi, żeby nie używać trafionego miejsca.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.eWPN3CV2Eddwz8aM",
             "effects": {
                 "VczyyG2FDfvOQflT": {
@@ -160,17 +160,17 @@
         },
         "Torn Arm Muscle (Minor)": {
             "id": "GlShFJF2TpsNh1FX",
-            "name": "Zerwanie mięśni (Ramię) (Pomniejsze)",
-            "description": "<p>Jeden z mięśni został zerwany albo nastąpiło skręcenie stawu, co skutkuje ograniczeniem ruchomości i sporym bólem.</p>\n<p><strong>Ramię:&nbsp;</strong> -10 do wszystkich testów związanych z użyciem ramienia.</p>\n<p><span style=\"font-weight: bold;\">Leczenie: </span>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości. Sukces w Teście Leczenia zmniejszy ten okres o 1 dzień plus 1 dodatkowy dzień za każdy PS (premię tę można uzyskać tylko raz).</p>",
+            "name": "Zerwanie mięśni ramienia (pomniejsze)",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#minor$1]{Zerwanie mięśni}</p><p>Jeden z mięśni został zerwany albo nastąpiło skręcenie stawu, co skutkuje ograniczeniem ruchomości i sporym bólem.</p>\n<p><strong>Ramię:</strong> Wszelkie Testy związane z użyciem ramienia wykonuje się z karą -10. </p>\n<h3>Leczenie</h3>\n<p>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości. Sukces w Teście Leczenia zmniejszy ten okres o 1 dzień plus 1 dodatkowy dzień za każdy PS (premię tę można uzyskać tylko raz).</p>",
             "sourceId": "Compendium.wfrp4e-core.items.GlShFJF2TpsNh1FX",
             "effects": {
                 "9rO0RdQJqsNwv9lv": {
                     "id": "9rO0RdQJqsNwv9lv",
-                    "name": "Naderwany Mięsień Ręki",
-                    "description": "Test wymagające użycia ręki z naderwanym mięśniem"
+                    "name": "Zerwanie mięśni ramienia (pomniejsze)",
+                    "description": "Dowolny związany z użyciem ramienia"
                 }
             },
-            "penalty": "-10 do testów dotyczących danej ręki",
+            "penalty": "-10 do Testów związanych z użyciem ramienia",
             "location": "Ręka"
         },
         "Amputated Foot": {
@@ -260,22 +260,22 @@
         },
         "Torn Leg Muscle (Minor)": {
             "id": "nF5z1OEhpi4t6a6S",
-            "name": "Zerwanie mięśni (Noga) (Pomniejsze)",
-            "description": "<p>Jeden z mięśni został zerwany albo nastąpiło skręcenie stawu, co skutkuje ograniczeniem ruchomości i sporym bólem.</p>\n<p><strong>Noga:</strong> Szybkość spada o połowę. Testy związane z użyciem nogi wykonuje się z karą -10.</p>\n<p><span style=\"font-weight: bold;\">Leczenie: </span>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości. Sukces w Teście Leczenia zmniejszy ten okres o 1 dzień plus 1 dodatkowy dzień za każdy PS (premię tę można uzyskać tylko raz).</p>",
+            "name": "Zerwanie mięśni nogi (pomniejsze)",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#minor$1]{Zerwanie mięśni}</p><p>Zerwanie mięśni nogi (pomniejsze) - Jeden z mięśni został zerwany albo nastąpiło skręcenie stawu, co skutkuje ograniczeniem ruchomości i sporym bólem.</p>\n<p><strong>Noga:</strong> Wszelkie Testy związane z użyciem nogi wykonuje się z karą -10. Szybkość spada o połowę.</p>\n<h3>Leczenie</h3>\n<p>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości. Sukces w Teście Leczenia zmniejszy ten okres o 1 dzień plus 1 dodatkowy dzień za każdy PS (premię tę można uzyskać tylko raz).</p>",
             "sourceId": "Compendium.wfrp4e-core.items.nF5z1OEhpi4t6a6S",
             "effects": {
                 "73XsH9pZ8Qymz0kN": {
                     "id": "73XsH9pZ8Qymz0kN",
-                    "name": "Szybkość Zmniejszona o Połowę",
+                    "name": "Szybkość spada o połowę",
                     "script": "args.actor.details.move.value /= 2;"
                 },
                 "ErAJc8kPnAwubY1m": {
                     "id": "ErAJc8kPnAwubY1m",
-                    "name": "Naderwany Mięsień Nogi",
-                    "description": "Test wymagające użycia nogi z naderwanym mięśniem"
+                    "name": "Zerwanie mięśni nogi (pomniejsze)",
+                    "description": "Dowolny związany z użyciem nogi"
                 }
             },
-            "penalty": "-10 do testów dotyczących danej nogi",
+            "penalty": "-10 do Testów związanych z użyciem nogi",
             "location": "Noga"
         },
         "Broken Body (Minor)": {
@@ -299,32 +299,32 @@
         },
         "Torn Arm Muscle (Major)": {
             "id": "qn4ZpvTQIX4rcJDl",
-            "name": "Zerwanie mięśni (Ramię) (Poważne)",
-            "description": "<p>Jeden z mięśni lub jakieś ważne ścięgno zostały poważnie uszkodzone, co wywołuje ogromny ból i poważną utratę ruchomości zranionej kończyny.</p>\n<p><strong>Ramię:&nbsp;</strong> -20 do wszystkich testów związanych z użyciem ramienia.</p>\n<p><span style=\"font-weight: bold;\">Leczenie: </span>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości, po których używanie kończyny będzie pociągało za sobą kary -10 do odpowiednich Testów. Mięśnie zagoją się całkowicie w ciągu następnych 30 dni - Bonus z Wytrzymałości. Test Leczenia nie pomoże w tej sytuacji - medyk po prostu stwierdzi, żeby nie używać trafionego miejsca.</p>",
+            "name": "Zerwanie mięśni ramienia (poważne)",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#major]{Zerwanie mięśni}</p><p>Jeden z mięśni lub jakieś ważne ścięgno zostało poważnie uszkodzone, co wywołuje ogromny ból i poważną utratę ruchomości.</p>\n<p><strong>Ramię:</strong> Wszelkie Testy związane z użyciem ramienia wykonuje się z karą -20. </p>\n<h3>Leczenie</h3>\n<p>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości, po których używanie zamiast -20 będzie pociągało za sobą kary -10 do odpowiednich Testów. Mięśnie zagoją się całkowicie w ciągu następnych 30 dni - Bonus z Wytrzymałości. Test Leczenia nie pomoże w tej sytuacji – medyk po prostu stwierdzi, żeby nie używać trafionego miejsca.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.qn4ZpvTQIX4rcJDl",
             "effects": {
                 "GUbysJIeA44LNOIq": {
                     "id": "GUbysJIeA44LNOIq",
-                    "name": "Naderwany Mięsień Ręki",
-                    "description": "Test wymagające użycia ręki z naderwanym mięśniem"
+                    "name": "Zerwanie mięśni ramienia (poważne)",
+                    "description": "Dowolny związany z użyciem ramienia"
                 }
             },
-            "penalty": "-20 do testów dotyczących danej ręki",
+            "penalty": "-20 do Testów związanych z użyciem ramienia",
             "location": "Ręka"
         },
         "Torn Head Muscle (Major)": {
             "id": "RB2sN09lX3m7dkOg",
-            "name": "Zerwanie mięśni (Głowa) (Poważne)",
-            "description": "<p>Jeden z mięśni lub jakieś ważne ścięgno zostały poważnie uszkodzone, co wywołuje ogromny ból i poważną utratę ruchomości zranionej kończyny. </p>\n<p><strong>Głowa:</strong> -20 do wszystkich testów związanych z użyciem głowy.</p>\n<p><span style=\"font-weight: bold;\">Leczenie: </span>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości, po których używanie kończyny będzie pociągało za sobą kary -10 do odpowiednich Testów. Mięśnie zagoją się całkowicie w ciągu następnych 30 dni - Bonus z Wytrzymałości. Test Leczenia nie pomoże w tej sytuacji - medyk po prostu stwierdzi, żeby nie używać trafionego miejsca.</p>",
+            "name": "Zerwanie mięśni głowy (poważne)",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#major]{Zerwanie mięśni}</p><p>Jeden z mięśni lub jakieś ważne ścięgno zostało poważnie uszkodzone, co wywołuje ogromny ból i poważną utratę ruchomości.</p>\n<p><strong>Głowa:</strong> Wszelkie Testy związane z użyciem głowy wykonuje się z karą -20. </p>\n<h3>Leczenie</h3>\n<p>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości, po których używanie zamiast -20 będzie pociągało za sobą kary -10 do odpowiednich Testów. Mięśnie zagoją się całkowicie w ciągu następnych 30 dni - Bonus z Wytrzymałości. Test Leczenia nie pomoże w tej sytuacji – medyk po prostu stwierdzi, żeby nie używać trafionego miejsca.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.RB2sN09lX3m7dkOg",
             "effects": {
                 "q2drpcrYvUHjZBwg": {
                     "id": "q2drpcrYvUHjZBwg",
-                    "name": "Naderwany Mięsień Szyi",
-                    "description": "Testy wymagające ruszaniem głową"
+                    "name": "Zerwanie mięśni głowy (poważne)",
+                    "description": "Dowolny związany z użyciem głowy"
                 }
             },
-            "penalty": "-20 do testów wymagających ruchu głowy",
+            "penalty": "-20 do Testów związanych z użyciem głowy",
             "location": "Głowa"
         },
         "Amputated Tongue": {
@@ -337,18 +337,18 @@
         },
         "Broken Arm (Major)": {
             "id": "rlDZZTj5PXjuRXa2",
-            "name": "Złamanie Ręki (Poważne)",
-            "description": "<p>Jedna z kości została poważnie strzaskana, więc albo sterczy pod dziwnym kątem, albo zwisa bezwładnie, trzymając się jedynie na skórze. Mało prawdopodobne, że zrośnie się bez odpowiedniej pomocy medycznej.</p>\n<p><span style=\"font-weight: bold;\">Ramię: </span>Pozostaje ci polegać na drugiej kończynie, ponieważ ból jest ogromny i zwykle konieczne są łubki. Wszystkie Testy, w których niezbędne jest używanie obu dłoni, obarczone są karą -20, ponadto postać nie może używać broni dwuręcznych; Jeśli złamana została dłoń wiodąca, Testy walki przy pomocy drugiej dłoni nadal wykonywane są z karą -20.</p>\n<h3>Leczenie</h3>\n<p>Złamana kość będzie zrastać się przez 40+1k10 dni. Pod koniec tego okresu należy wykonać <b>Wymagający (+0) Test Odporności</b>, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę: -10 do wszystkich Testów Zwinności, w których używa ramienia.</p>\n<p>Udany <strong>Wymagający (+0)</strong> test Leczenia wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny <b>Wymagający (+0) Test Leczenia</b> wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
+            "name": "Złamanie ramienia (poważne)",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#major]{Broken Bones}</p><p>Kość została poważnie strzaskana, więc albo sterczy pod dziwnym kątem, albo zwisa bezwładnie, trzymając się jedynie na skórze. Mało prawdopodobne, że zrośnie się bez odpowiedniej pomocy medycznej. Trafione miejsce jest bezużyteczne, dopóki kość się nie zrośnie.</p>\n<p><span style=\"font-weight: bold;\"><strong>Ramię: </strong></span>Trafione miejsce jest bezużyteczne, dopóki złamanie się nie zagoi. Postaci pozostaje poleganie na drugiej kończynie, ponieważ ból jest ogromny i zwykle konieczne są łubki. Wszystkie Testy, w których niezbędne jest używanie obu dłoni, obarczone są karą -20, ponadto postać nie może używać broni dwuręcznych, oraz nawet przytwierdzić tarczy do złamanego ramienia. Jeśli złamane zostało ramię wiodące, Testy walki przy pomocy drugiej dłoni nadal wykonywane są z karą -20. Za każde wydane 100 Punktów Doświadczenia można zmniejszyć tę karę o 5, ponieważ postać stopniowo uczy się władać drugą dłonią. </p>\n<h3>Leczenie</h3>\n<p>Złamana kość będzie się zrastać przez 40+[[/r 1d10]] dni. Pod koniec tego okresu należy wykonać <strong>Wymagający (+0) Test Odporności</strong>, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę -10 do wszystkich Testów Zwinności, w których używa ramienia z powodu źle zrośniętego złamania.</p>\n<p>Udany <strong>Wymagający (+0) Test Leczenia</strong> wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny <strong>Wymagający (+0) Test Leczenia</strong> wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.rlDZZTj5PXjuRXa2",
             "effects": {
                 "m1KbLc6l2LK76961": {
                     "id": "m1KbLc6l2LK76961",
-                    "name": "Złamana Ręka",
+                    "name": "Złamanie ramienia (poważne)",
                     "description": "Dowolny wiążący się z użyciem dwóch rąk"
                 }
             },
             "penalty": "-20 do Testów wiążący się z użyciem dwóch rąk",
-            "location": "Ręka"
+            "location": "Ramię"
         },
         "Amputated Nose": {
             "id": "SpPRZZRHxly7uo2G",
@@ -382,14 +382,14 @@
         },
         "Torn Head Muscle (Minor)": {
             "id": "UytN3fDREi3JuKST",
-            "name": "Zerwanie mięśni (Głowa) (Pomniejsze)",
-            "description": "<p>Jeden z mięśni został zerwany albo nastąpiło skręcenie stawu, co skutkuje ograniczeniem ruchomości i sporym bólem.</p>\n<p><strong>Głowa:</strong> -10 do wszystkich testów związanych z użyciem głowy.</p>\n<p><span style=\"font-weight: bold;\">Leczenie: </span>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości. Sukces w Teście Leczenia zmniejszy ten okres o 1 dzień plus 1 dodatkowy dzień za każdy PS (premię tę można uzyskać tylko raz).</p>",
+            "name": "Zerwanie mięśni głowy (pomniejsze)",
+            "description": "<p>@UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#minor$1]{Zerwanie mięśni}</p><p>Jeden z mięśni został zerwany albo nastąpiło skręcenie stawu, co skutkuje ograniczeniem ruchomości i sporym bólem.</p>\n<p><strong>Głowa:</strong> Wszelkie Testy związane z użyciem głowy wykonuje się z karą -10. </p>\n<h3>Leczenie</h3>\n<p>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości. Sukces w Teście Leczenia zmniejszy ten okres o 1 dzień plus 1 dodatkowy dzień za każdy PS (premię tę można uzyskać tylko raz).</p>",
             "sourceId": "Compendium.wfrp4e-core.items.UytN3fDREi3JuKST",
             "effects": {
                 "y2XL7QrWlGI6aloz": {
                     "id": "y2XL7QrWlGI6aloz",
-                    "name": "Naderwany Mięsień Szyi",
-                    "description": "Testy wymagające ruszaniem głową"
+                    "name": "Zerwanie mięśni głowy (pomniejsze)",
+                    "description": "Dowolny związany z użyciem głowy"
                 }
             },
             "location": "Głowa"

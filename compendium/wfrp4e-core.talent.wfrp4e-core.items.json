@@ -833,7 +833,7 @@
             "name": "Wytrwały",
             "description": "<p>Bez względu na okoliczności i powagę sytuacji ty przenigdy się nie poddajesz. Podwajasz czas opierania się przeciwnościom, zapewniany przez udany Test Odporności. Wytrzymujesz długą jazdę, wystawienie na warunki atmosferyczne, rytuały i tym podobne trudności.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.jviOQmy0luQOySC2",
-            "tests": "Test odporności, podczas przetrzymywania trudów"
+            "tests": "Odporność, by wytrzymać trudności"
         },
         "Speedreader": {
             "id": "kQbVFzsh4LbaIzHU",
@@ -1047,7 +1047,7 @@
             "name": "Włóczykij",
             "description": "<p>W dziczy czujesz się jak u siebie i kiedy wykorzystujesz Umiejętność Skradanie, inni nie mogą wykonywać biernych Testów Percepcji, by cię zauważyć. Mogą im one przysługiwać, jeśli przeciwnicy stoją na straży lub wypatrują ukrytych napastników.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.q58lK4kULJZB5GjE",
-            "tests": "Testy Skradania na wsi"
+            "tests": "Skradania na wsi"
         },
         "Witch!": {
             "id": "qdMbxW09FUoYBzmB",
