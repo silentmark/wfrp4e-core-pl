@@ -5,15 +5,30 @@
     "version": "0.8.2",
     "authors": [
         {
-            "name": "TODO",
-            "email": "TODO@TODO.PL",
-            "discord": "TODO#TODO",
+            "name": "Myeshko1",
+            "discord": "myeshko1",
             "flags": {}
         },
         {
-            "name": "TODO",
-            "email": "TODO@TODO.PL",
-            "discord": "TODO#TODO",
+            "name": "GregorHak",
+            "flags": {}
+        },
+        {
+            "name": "Varis (dr_hans)",
+            "discord": "dr_hans",
+            "flags": {}
+        },
+        {
+            "name": "Dajmynato",
+            "email": "livithor@gmail.pl",
+            "discord": "Dajmynato#8936",
+            "flags": {}
+        },
+        {
+            "name": "silent_mark",
+            "url": "https://weblate.foundryvtt.be",
+            "email": "marek@kembrowski.net",
+            "discord": "silent_mark",
             "flags": {}
         }
     ],
