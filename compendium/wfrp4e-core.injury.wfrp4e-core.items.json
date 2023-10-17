@@ -28,7 +28,7 @@
                 }
             },
             "penalty": "-20 do Testów wiążący się z poruszaniem się, niemożliwe Unikanie, połowa Szybkości",
-            "location": "Noga"
+            "location": "Noga (dowolna)"
         },
         "Torn Leg Muscle (Major)": {
             "id": "3S4OYOZLauXctmev",
@@ -47,7 +47,7 @@
                     "script": "args.actor.details.move.value /= 2;"
                 }
             },
-            "location": "Noga"
+            "location": "Noga (dowolna)"
         },
         "Broken Arm (Minor)": {
             "id": "4lj1ik958mbgAlaF",
@@ -62,7 +62,7 @@
                 }
             },
             "penalty": "-20 do Testów wiążący się z użyciem dwóch rąk",
-            "location": "Ramię"
+            "location": "Ramię (dowolne)"
         },
         "Broken Leg (Minor)": {
             "id": "7mCcI3q7hgWcmbBU",
@@ -81,7 +81,7 @@
                     "description": "Dowolny wiążący się z poruszaniem się"
                 }
             },
-            "location": "Noga"
+            "location": "Noga (dowolna)"
         },
         "Torn Body Muscle (Minor)": {
             "id": "7rBhIRo96Mydo0Cv",
@@ -100,22 +100,22 @@
         },
         "Amputated Ear": {
             "id": "8piWcBKFlQ2J1E3A",
-            "name": "Amputacja Ucha",
+            "name": "Amputowane ucho",
             "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <b>Amputacja (trudność)</b>, musi wykonać Test <b>Odporności</b> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Powalenie]. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Oszołomienie]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) następuje @Condition[Utrata przytomności].</p>\n<p>Wszystkie Amputacje wymagają leczenia <b>Chirurgicznego</b>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Więcej o <b>Chirurgii</b> przeczytasz w księdze zasad na stronie 181.</p>\n<p><strong>Ucho</strong>: Ucho Utrata ucha jest bolesna, ale prędzej czy później można się do tego przyzwyczaić. Pechem jest utrata obydwu uszu, wtedy wszelkie Testy Percepcji oparte na słuchu obarczone są karą -20. Ponadto za każde odcięte ucho wszystkie Testy Ogłady otrzymują karę -5, ponieważ rana jest dobrze widoczna.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.8piWcBKFlQ2J1E3A",
             "effects": {
                 "i6SjnYZ0pNeN8SNZ": {
                     "id": "i6SjnYZ0pNeN8SNZ",
-                    "name": "Utracone Ucho",
+                    "name": "Amputowane ucho",
                     "script": "if (args.type == \"characteristic\" && args.item == \"fel\"){\n  args.prefillModifiers.modifier -= 5;\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"fel\") {\n    args.prefillModifiers.modifier -= 5\n  }\n}"
                 },
                 "NjLgGWim2CMWdOL4": {
                     "id": "NjLgGWim2CMWdOL4",
-                    "name": "Utracone Oboje Uszu",
+                    "name": "Amputowane dwoje uszu",
                     "description": "Testy Percepcji oparte na słuchu"
                 }
             },
-            "location": "Ucho"
+            "location": "Ucho (dowolne)"
         },
         "Broken Body (Major)": {
             "id": "EaqlLRQigwnsEAXX",
@@ -153,7 +153,7 @@
         },
         "Amputated Teeth": {
             "id": "fBcZhOBn8IpoVqQ1",
-            "name": "Amputacja zęba",
+            "name": "Amputowany ząb",
             "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <strong>Amputacja (trudność)</strong>, musi wykonać Test <strong>Odporności</strong> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Prone]{Powalenie}. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Stunned]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) lub gorzej następuje @Condition[Unconscious]{Utrata Przytomności}.</p>\n<p>Wszystkie Amputacje wymagają leczenia <strong>Chirurgicznego</strong>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Patrz @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Chirurgia}.</p>\n<p><strong>Ząb: </strong>Utrata zęba może oszpecić postać, a poza tym znacznie utrudnia spożywanie posiłków. Za każde 2 utracone zęby Ogłada trwale spada o 1 punkt. Ponadto utrata ponad połowy zębów (ludzie: 16, elfy: 18, niziołki i krasnoludy: 20) sprawia, że jedzenie staje się bardzo uciążliwe, zajmuje dwa razy więcej czasu, a niektóre posiłki są niemożliwe do zjedzenia – jest to przede wszystkim kwestia odgrywania postaci i opisywania działań.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.fBcZhOBn8IpoVqQ1",
             "location": "Ząb (dowolny)"
@@ -171,17 +171,17 @@
                 }
             },
             "penalty": "-10 do Testów związanych z użyciem ramienia",
-            "location": "Ręka"
+            "location": "Ramię (dowolna)"
         },
         "Amputated Foot": {
             "id": "gz2xy41OSVZ8YBgI",
-            "name": "Amputacja Stopy",
+            "name": "Amputowana stopa",
             "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <b>Amputacja (trudność)</b>, musi wykonać Test <b>Odporności</b> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Powalenie]. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Oszołomienie]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) następuje @Condition[Utrata przytomności].</p>\n<p>Wszystkie Amputacje wymagają leczenia <b>Chirurgicznego</b>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Więcej o <b>Chirurgii</b> przeczytasz w księdze zasad na stronie 181.</p>\n<p><strong>Stopa</strong>: Szybkość zostaje trwale zmniejszona o połowę, a wszystkie Testy związane z poruszaniem się, jak np. Uniki, otrzymują karę -20. Utrata obu stóp znacznie utrudnia chodzenie. Może czas zatrudnić pachołka, który będzie służył za wierzchowca?</p>",
             "sourceId": "Compendium.wfrp4e-core.items.gz2xy41OSVZ8YBgI",
             "effects": {
                 "QHpPBISp2DCIRZp7": {
                     "id": "QHpPBISp2DCIRZp7",
-                    "name": "Amputacja Stopy",
+                    "name": "Amputowana stopa",
                     "description": "Testy wymagające poruszania się"
                 },
                 "vFwI36wK9QnfgLGG": {
@@ -191,7 +191,7 @@
                 }
             },
             "penalty": "-20 do testów związanych z ruchem, połowa szybkości",
-            "location": "Stopa"
+            "location": "Stopa (dowolna)"
         },
         "Broken Head (Major)": {
             "id": "hCadFsTRvLN9faaY",
@@ -210,7 +210,7 @@
         },
         "Amputated Leg": {
             "id": "k00PimCWkff11IA0",
-            "name": "Amputacja Nogi",
+            "name": "Amputowana noga",
             "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <b>Amputacja (trudność)</b>, musi wykonać Test <b>Odporności</b> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Powalenie]. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Oszołomienie]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) następuje @Condition[Utrata przytomności].</p>\n<p>Wszystkie Amputacje wymagają leczenia <b>Chirurgicznego</b>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Więcej o <b>Chirurgii</b> przeczytasz w księdze zasad na stronie 181.</p>\n<p><strong>Noga:</strong> Szybkość zostaje trwale zmniejszona o połowę, a wszystkie Testy związane z poruszaniem się otrzymują karę -20. Niemożliwe jest wykonywanie Uników. Utrata obu nóg znacznie utrudnia chodzenie. Może czas zatrudnić pachołka, który będzie służył za wierzchowca?</p>",
             "sourceId": "Compendium.wfrp4e-core.items.k00PimCWkff11IA0",
             "effects": {
@@ -221,27 +221,27 @@
                 },
                 "wkJy3QCy8odqGvjm": {
                     "id": "wkJy3QCy8odqGvjm",
-                    "name": "Amputacja Nogi",
+                    "name": "Amputowana noga",
                     "description": "Testy związane z poruszaniem się"
                 }
             },
             "penalty": "-20 do testów związanych z ruchem, nie może unikać, połowa szybkości",
-            "location": "Noga"
+            "location": "Noga (dowolna)"
         },
         "Amputated Arm": {
             "id": "MnMZv7ZXoRqoH9dS",
-            "name": "Amputacja Ramienia",
+            "name": "Amputowane ramię",
             "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <b>Amputacja (trudność)</b>, musi wykonać Test <b>Odporności</b> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Powalenie]. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Oszołomienie]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) następuje @Condition[Utrata przytomności].</p>\n<p>Wszystkie Amputacje wymagają leczenia <b>Chirurgicznego</b>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Więcej o <b>Chirurgii</b> przeczytasz w księdze zasad na stronie 181.</p>\n<p><strong>Ramię</strong>: Wszystkie Testy, w których niezbędne jest używanie obu dłoni, obarczone są karą -20, ponadto postać nie może używać broni dwuręcznych. Jeśli odcięte zostało ramię wiodące, Testy walki przy pomocy drugiej dłoni nadal wykonywane są z karą -20. Za 100 Punktów Doświadczenia można zmniejszyć tę karę o 5, ponieważ postać stopniowo uczy się władać drugą dłonią. Jeżeli odcięte zostanie jedno i drugie ramię to chyba czas na emeryturę.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.MnMZv7ZXoRqoH9dS",
             "effects": {
                 "qPV4jIDGN9onOAYV": {
                     "id": "qPV4jIDGN9onOAYV",
-                    "name": "Amputacja Ramienia",
+                    "name": "Amputowane ramię",
                     "description": "Dowolny wiążący się z użyciem dwóch rąk"
                 }
             },
             "penalty": "-20 do Testów wiążący się z użyciem dwóch rąk",
-            "location": "Ręka"
+            "location": "Ramię (dowolne)"
         },
         "Broken Head (Minor)": {
             "id": "nbhn2wX35b7Jrcbg",
@@ -276,7 +276,7 @@
                 }
             },
             "penalty": "-10 do Testów związanych z użyciem nogi",
-            "location": "Noga"
+            "location": "Noga (dowolna)"
         },
         "Broken Body (Minor)": {
             "id": "QluSTTTq3viHJJUh",
@@ -310,7 +310,7 @@
                 }
             },
             "penalty": "-20 do Testów związanych z użyciem ramienia",
-            "location": "Ręka"
+            "location": "Ramię (dowolna)"
         },
         "Torn Head Muscle (Major)": {
             "id": "RB2sN09lX3m7dkOg",
@@ -329,7 +329,7 @@
         },
         "Amputated Tongue": {
             "id": "rkJA1DlK51QuRlJy",
-            "name": "Amputacja języka",
+            "name": "Amputowany język",
             "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <strong>Amputacja (trudność)</strong>, musi wykonać Test <strong>Odporności</strong> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Prone]{Powalenie}. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Stunned]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) lub gorzej następuje @Condition[Unconscious]{Utrata Przytomności}.</p>\n<p>Wszystkie Amputacje wymagają leczenia <strong>Chirurgicznego</strong>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Patrz @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Chirurgia}.</p>\n<p><strong>Język: </strong>Utrata języka sprawia, że postać może jedynie pomrukiwać i chrząkać, a jej komunikacja ogranicza się do używania języka migowego. Postać automatycznie odnosi porażkę we wszystkich Testach Języków, które wymagają mówienia.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.rkJA1DlK51QuRlJy",
             "penalty": "Automatyczna porażka w Testach Języków, które wymagają mówienia",
@@ -348,17 +348,17 @@
                 }
             },
             "penalty": "-20 do Testów wiążący się z użyciem dwóch rąk",
-            "location": "Ramię"
+            "location": "Ramię (dowolne)"
         },
         "Amputated Nose": {
             "id": "SpPRZZRHxly7uo2G",
-            "name": "Amputacja Nosa",
+            "name": "Amputowany nos",
             "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <b>Amputacja (trudność)</b>, musi wykonać Test <b>Odporności</b> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Powalenie}. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Oszołomienie]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) następuje @Condition[Utrata przytomności].</p>\n<p>Wszystkie Amputacje wymagają leczenia <b>Chirurgicznego</b>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Więcej o <b>Chirurgii</b> przeczytasz w księdze zasad na stronie 181.</p>\n<p><strong>Nos:&nbsp;</strong> Nos Utrata nosa sprawia, że postać zaczyna wyglądać naprawdę dziwacznie. Oznacza także trwałą utratę 20 punktów Ogłady, a także karę -30 do wszystkich Testów węchu.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.SpPRZZRHxly7uo2G",
             "effects": {
                 "OTeQYlJcacd8ID4i": {
                     "id": "OTeQYlJcacd8ID4i",
-                    "name": "Amputacja Nosa",
+                    "name": "Amputowany nos",
                     "description": "Testy wymagające węchu"
                 }
             },
@@ -367,18 +367,18 @@
         },
         "Amputated Finger": {
             "id": "SYjWiKDzMS6CtROJ",
-            "name": "Amputacja Palca u ręki",
+            "name": "Amputowany palec u ręki",
             "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <b>Amputacja (trudność)</b>, musi wykonać Test <b>Odporności</b> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Powalenie]. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Oszołomienie]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) następuje @Condition[Utrata przytomności].</p>\n<p>Wszystkie Amputacje wymagają leczenia <b>Chirurgicznego</b>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Więcej o <b>Chirurgii</b> przeczytasz w księdze zasad na stronie 181.</p>\n<p><strong>Palce u rąk</strong>: Przede wszystkim chwyt zranioną dłonią jest osłabiony, co sprawia, że szanse na Pech podczas używania jej rosną. Za pierwszy stracony palec porażki we wszelkich odpowiednich Testach, w których na kościach wypadła 1, uznawane są za Pech. W przypadku dwóch odciętych palców Pech występuje, gdy na kościach wypadnie 1 lub 2, i tak dalej. Ponadto za każdy stracony palec wszystkie Testy z wykorzystaniem okaleczonej dłoni otrzymują karę -5. Jeśli postać straci w dłoni 4 lub 5 palców, należy zastosować zasady jak w przypadku odciętej dłoni.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.SYjWiKDzMS6CtROJ",
             "effects": {
                 "DaOXNCrHEMsOleGx": {
                     "id": "DaOXNCrHEMsOleGx",
-                    "name": "Utracony Palec",
-                    "description": "Utracony Palec"
+                    "name": "Amputowane palce u ręki",
+                    "description": "Amputowane palce u ręki"
                 }
             },
             "penalty": "-5 do testów wymagających danej ręki",
-            "location": "Palec"
+            "location": "Palec u ręki"
         },
         "Torn Head Muscle (Minor)": {
             "id": "UytN3fDREi3JuKST",
@@ -396,46 +396,46 @@
         },
         "Amputated Eye": {
             "id": "weczkAMPlTjX7lqU",
-            "name": "Amputacja Oka",
+            "name": "Amputowane oko",
             "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <b>Amputacja (trudność)</b>, musi wykonać Test <b>Odporności</b> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Powalenie]. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Oszołomienie]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) następuje @Condition[Utrata przytomności].</p>\n<p>Wszystkie Amputacje wymagają leczenia <b>Chirurgicznego</b>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Więcej o <b>Chirurgii</b> przeczytasz w księdze zasad na stronie 181.</p>\n<p><strong>Oko</strong>: Utrata oka jest strasznym przeżyciem, ale w końcu każdy uczy się, jak żyć tylko z jednym. Prawdziwym nieszczęściem jest utrata obojga oczu, wtedy wszelkie Testy związane ze wzrokiem, a więc Testy Broni, Jeździectwa, Uników itd. obarczone są karą -30. Ponadto za każde stracone oko wszystkie Testy Ogłady otrzymują karę -5, ponieważ pobliźniony oczodół nie sprawia najlepszego wrażenia.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.weczkAMPlTjX7lqU",
             "effects": {
                 "HK53YUZJx5byXmup": {
                     "id": "HK53YUZJx5byXmup",
-                    "name": "Utracone Oboje Oczu",
+                    "name": "Amputowane oboje oczu",
                     "description": "Testy związane ze wzrokiem"
                 },
                 "OBcPvTtXweBfzAaU": {
                     "id": "OBcPvTtXweBfzAaU",
-                    "name": "Utracone Oko",
+                    "name": "Amputowane oko",
                     "script": "if (args.type == \"characteristic\" && args.item == \"fel\") {\n  args.prefillModifiers.modifier -= 5;\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"fel\") {\n    args.prefillModifiers.modifier -= 5;\n  }\n}"
                 }
             },
             "penalty": "-5 do Ogłady",
-            "location": "Oko"
+            "location": "Oko (dowolne)"
         },
         "Amputated Toe": {
             "id": "ZhMADOqoo0y8Q9bx",
-            "name": "Amputacja Palca u nóg",
+            "name": "Amputowany palec u nogi",
             "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <b>Amputacja (trudność)</b>, musi wykonać Test <b>Odporności</b> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Powalenie]. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Oszołomienie]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) następuje @Condition[Utrata przytomności].</p>\n<p>Wszystkie Amputacje wymagają leczenia <b>Chirurgicznego</b>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Więcej o <b>Chirurgii</b> przeczytasz w księdze zasad na stronie 181.</p>\n<p><strong>Palce u nóg: </strong>Utrata palców u nóg mocno wpływa na równowagę. Za każdy utracony palec u nóg postać traci 1 punkt Zwinności i Walki Wręcz.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.ZhMADOqoo0y8Q9bx",
             "effects": {
                 "n47pJamskjv7bbXl": {
                     "id": "n47pJamskjv7bbXl",
-                    "name": "Amputacja Palca u nóg"
+                    "name": "Amputowany palec u nogi"
                 }
             },
             "location": "Palce u nogi"
         },
         "Amputated Hand": {
             "id": "zyocWSzEZEC826NS",
-            "name": "Amputacja dłoni",
+            "name": "Amputowana dłoń",
             "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <strong>Amputacja (trudność)</strong>, musi wykonać Test <strong>Odporności</strong> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Prone]{Powalenie}. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Stunned]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) lub gorzej następuje @Condition[Unconscious]{Utrata Przytomności}.</p>\n<p>Wszystkie Amputacje wymagają leczenia <strong>Chirurgicznego</strong>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Patrz @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Chirurgia}.</p>\n<p><strong>Dłoń: </strong> Wszystkie Testy, w których niezbędne jest używanie obu dłoni, obarczone są karą -20, ponadto postać nie może używać broni dwuręcznych, jednak do przedramienia może przymocować tarczę. Jeśli odcięta została dłoń wiodąca, Testy walki przy pomocy drugiej dłoni nadal wykonywane są z karą -20. Za każde wydane 100 Punktów Doświadczenia można zmniejszyć tę karę o 5, ponieważ postać stopniowo uczy się władać drugą dłonią. Jeśli odcięte zostaną obie dłonie, jedynym wyjściem dla postaci jest nauka walki hakami.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.zyocWSzEZEC826NS",
             "effects": {
                 "rTIWkLVhHcMduvPJ": {
                     "id": "rTIWkLVhHcMduvPJ",
-                    "name": "Amputacja dłoni",
+                    "name": "Amputowana dłoń",
                     "description": "Dowolny wiążący się z użyciem dwóch rąk"
                 }
             },

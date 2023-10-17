@@ -228,3 +228,23 @@ Hooks.on("ready", () => {
 		});
 	}, 1000);
 });
+
+Hooks.on("ready", () => {
+	if (game.user.isGM) {
+		new Dialog({
+			content: `<div>
+				<p>Używasz niezatwierdzonej przez Copernicus Corporation wersji tłumaczenia WFRP 4ed Core Module.
+				<br/>
+				Robiąc to bez ich zgody zaprzedajesz swoją duszę Mrocznym Potęgom.</p>
+			</div>`,
+			title: "Ostrzeżenie o prawach autorskich",
+			buttons: {
+			confirm: {
+				label: game.i18n.localize("Confirm"),
+				callback: (dlg) => { }
+			}
+			},
+			default: "confirm",
+		}).render(true);
+	}
+});
