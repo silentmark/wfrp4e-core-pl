@@ -155,7 +155,7 @@
         "Wood Elf": {
             "id": "5wl3KH6hXsGwUcZa",
             "name": "Leśny elf",
-            "description": "<section id=\"secret-HaVbfBaaBSzWZbNX\" class=\"secret\"><p>@UUID[JournalEntry.IQ0PgoJihQltCBUU.JournalEntryPage.l0f11ypRjH9sR48Q#wood-elves]{Leśne Elfy}</p></section>",
+            "description": "<section id=\"secret-HaVbfBaaBSzWZbNX\" class=\"secret\"><p>@UUID[JournalEntry.IQ0PgoJihQltCBUU.JournalEntryPage.l0f11ypRjH9sR48Q#lesne-elfy]{Leśne Elfy}</p></section>",
             "sourceId": "Compendium.wfrp4e-core.actors.5wl3KH6hXsGwUcZa",
             "gender": "Różne",
             "species": "Leśny Elf",
@@ -399,7 +399,7 @@
         "Human": {
             "id": "7ihBjcHcewZ2Obul",
             "name": "Człowiek",
-            "description": "<section id=\"secret-vD5MVV7CgllMC91b\" class=\"secret\"><p>@UUID[JournalEntry.IQ0PgoJihQltCBUU.JournalEntryPage.l0f11ypRjH9sR48Q#humans-(reiklander)]{Ludzie (Reiklandczycy)}</p></section>",
+            "description": "<section id=\"secret-vD5MVV7CgllMC91b\" class=\"secret\"><p>@UUID[JournalEntry.IQ0PgoJihQltCBUU.JournalEntryPage.l0f11ypRjH9sR48Q#ludzie-(reiklandczycy)]{Ludzie (Reiklandczycy)}</p></section>",
             "sourceId": "Compendium.wfrp4e-core.actors.7ihBjcHcewZ2Obul",
             "gender": "Różne",
             "species": "Człowiek",
@@ -1682,7 +1682,7 @@
         "Dwarf": {
             "id": "ImdVnI8mEiOmKriI",
             "name": "Krasnolud",
-            "description": "<section id=\"secret-h5cBaU8rkw7UFZmU\" class=\"secret\"><p>@UUID[JournalEntry.IQ0PgoJihQltCBUU.JournalEntryPage.l0f11ypRjH9sR48Q#dwarfs]{Krasnoludy}</p></section>",
+            "description": "<section id=\"secret-h5cBaU8rkw7UFZmU\" class=\"secret\"><p>@UUID[JournalEntry.IQ0PgoJihQltCBUU.JournalEntryPage.l0f11ypRjH9sR48Q#krasnoludy]{Krasnoludy}</p></section>",
             "sourceId": "Compendium.wfrp4e-core.actors.ImdVnI8mEiOmKriI",
             "gender": "Różne",
             "species": "Krasnolud",
@@ -2619,7 +2619,7 @@
         "High Elf": {
             "id": "QutqbzpxKqsjQ6yN",
             "name": "Wysoki elf",
-            "description": "<section id=\"secret-1iA2MDDwFn6grbL6\" class=\"secret\"><p>@UUID[JournalEntry.IQ0PgoJihQltCBUU.JournalEntryPage.l0f11ypRjH9sR48Q#high-elves]{Wysokie Elfy}</p></section>",
+            "description": "<section id=\"secret-1iA2MDDwFn6grbL6\" class=\"secret\"><p>@UUID[JournalEntry.IQ0PgoJihQltCBUU.JournalEntryPage.l0f11ypRjH9sR48Q#wysokie-elfy]{Wysokie Elfy}</p></section>",
             "sourceId": "Compendium.wfrp4e-core.actors.QutqbzpxKqsjQ6yN",
             "gender": "Różne",
             "species": "Wysoki elf",
@@ -2913,7 +2913,7 @@
         "Halfling": {
             "id": "r70e6JNM3MjWIb7N",
             "name": "Niziołek",
-            "description": "<section id=\"secret-d1ADsyWS6KDQFxDE\" class=\"secret\"><p>@UUID[JournalEntry.IQ0PgoJihQltCBUU.JournalEntryPage.l0f11ypRjH9sR48Q#halflings]{Niziołki}</p></section>",
+            "description": "<section id=\"secret-d1ADsyWS6KDQFxDE\" class=\"secret\"><p>@UUID[JournalEntry.IQ0PgoJihQltCBUU.JournalEntryPage.l0f11ypRjH9sR48Q#niziolki]{Niziołki}</p></section>",
             "sourceId": "Compendium.wfrp4e-core.actors.r70e6JNM3MjWIb7N",
             "gender": "Różne",
             "species": "Niziołek",

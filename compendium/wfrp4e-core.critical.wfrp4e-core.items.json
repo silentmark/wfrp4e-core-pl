@@ -278,7 +278,7 @@
         "Torn Thigh": {
             "id": "AUZLQkyu9kiqmzsq",
             "name": "Poszarpane udo",
-            "description": "<p>Postać otrzymuje 3 poziomy Stanu @Condition[Krwawienie], a cios odrywa kawał mięśni z jej uda. Musi także zdać <strong>Wymagający (+0) Test Odporności</strong>, w przeciwnym wypadku otrzyma Stan @Condition[Powalenie]. Dopóki postać nie otrzyma pomocy @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Chirurgicznej} i udo nie zostanie zszyte, każda Rana otrzymana w tę nogę będzie skutkować zwiększeniem @Condition[Krwawienie]{Krwawienia} o 1 poziom.</p>",
+            "description": "<p>Postać otrzymuje 3 poziomy Stanu @Condition[Krwawienie], a cios odrywa kawał mięśni z jej uda. Musi także zdać <strong>Wymagający (+0) Test Odporności</strong>, w przeciwnym wypadku otrzyma Stan @Condition[Powalenie]. Dopóki postać nie otrzyma pomocy @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgicznej} i udo nie zostanie zszyte, każda Rana otrzymana w tę nogę będzie skutkować zwiększeniem @Condition[Krwawienie]{Krwawienia} o 1 poziom.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.AUZLQkyu9kiqmzsq",
             "effects": {
                 "53D0C2BXQCCAMXSu": {
@@ -461,7 +461,7 @@
         "Broken Nose": {
             "id": "fIjnRUF4xplU2mhP",
             "name": "Złamany nos",
-            "description": "<p>Silny cios trafia w sam środek twarzy, a postać zalewa się krwią. Postać otrzymuje 2 poziomy Stanu @Condition[Krwawienie]. Musi także zdać <strong>Wymagający (+0) Test Odporności</strong>, w przeciwnym wypadku otrzyma również 1 poziom Stanu @Condition[Oszołomienie]. Po wyleczeniu tej rany postać uzyskuje premię +1 lub karę -1 do Testów w kontaktach społecznych (w zależności od kontekstu), chyba że podjęto Test @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Chirurgii}, by nastawić i wyprostować nos.</p>",
+            "description": "<p>Silny cios trafia w sam środek twarzy, a postać zalewa się krwią. Postać otrzymuje 2 poziomy Stanu @Condition[Krwawienie]. Musi także zdać <strong>Wymagający (+0) Test Odporności</strong>, w przeciwnym wypadku otrzyma również 1 poziom Stanu @Condition[Oszołomienie]. Po wyleczeniu tej rany postać uzyskuje premię +1 lub karę -1 do Testów w kontaktach społecznych (w zależności od kontekstu), chyba że podjęto Test @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgii}, by nastawić i wyprostować nos.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.fIjnRUF4xplU2mhP",
             "effects": {
                 "us244BgOUN1LRLnc": {
@@ -554,7 +554,7 @@
         "Gaping Chest Wound": {
             "id": "GmRF7GF7SZq6qeyj",
             "name": "Ziejąca rana korpusu",
-            "description": "<p>Postać otrzymuje 3 poziomy Stanu @Condition[Krwawienie]. Dopóki ktoś nie udzieli jej pomocy @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Chirurgicznej}, za każdym razem, gdy postać otrzyma Ranę w korpus, otrzymuje dodatkowy poziom Stanu @Condition[Krwawienie], gdyż rozcięcie się otwiera.</p>",
+            "description": "<p>Postać otrzymuje 3 poziomy Stanu @Condition[Krwawienie]. Dopóki ktoś nie udzieli jej pomocy @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgicznej}, za każdym razem, gdy postać otrzyma Ranę w korpus, otrzymuje dodatkowy poziom Stanu @Condition[Krwawienie], gdyż rozcięcie się otwiera.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.GmRF7GF7SZq6qeyj",
             "effects": {
                 "fcr0kAJMhiUc1n7k": {
@@ -753,7 +753,7 @@
         "Internal Bleeding": {
             "id": "jma54Iat01N9X4Fb",
             "name": "Krwotok wewnętrzny",
-            "description": "<p>Postać otrzymuje 1 poziom Stanu @Condition[Krwawienie], który można usunąć jedynie za pomocą @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Chirurgii}. Ponadto Rana skutkuje także @UUID[Compendium.wfrp4e-core.items.M8XyRs9DN12XsFTQ]{Zatrucie Krwi}.</p>",
+            "description": "<p>Postać otrzymuje 1 poziom Stanu @Condition[Krwawienie], który można usunąć jedynie za pomocą @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgii}. Ponadto Rana skutkuje także @UUID[Compendium.wfrp4e-core.items.M8XyRs9DN12XsFTQ]{Zatrucie Krwi}.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.jma54Iat01N9X4Fb",
             "effects": {
                 "1WF2x6qda0OfmM8Y": {
@@ -772,7 +772,7 @@
         "Gaping Arm Wound": {
             "id": "jvemdUZh3iRF67us",
             "name": "Ziejąca rana ramienia",
-            "description": "<p>Cios skutkuje głęboką, otwartą raną. Postać otrzymuje 2 poziomy Stanu @Condition[Krwawienie]. Dopóki rozcięcie nie zostanie zszyte dzięki pomocy @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Chirurgicznej}, każda Rana otrzymana w to ramię skutkuje zwiększeniem Stanu @Condition[Krwawienie] o 1 poziom, ponieważ rana się otwiera i pogłębia.</p>",
+            "description": "<p>Cios skutkuje głęboką, otwartą raną. Postać otrzymuje 2 poziomy Stanu @Condition[Krwawienie]. Dopóki rozcięcie nie zostanie zszyte dzięki pomocy @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgicznej}, każda Rana otrzymana w to ramię skutkuje zwiększeniem Stanu @Condition[Krwawienie] o 1 poziom, ponieważ rana się otwiera i pogłębia.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.jvemdUZh3iRF67us",
             "effects": {
                 "1sDNirNcv4XZnubO": {
@@ -956,7 +956,7 @@
         "Wrenched Arm": {
             "id": "nnPZijQYZGya1NJM",
             "name": "Wybicie stawu",
-            "description": "<p>Ramię prawie zostało wyrwane ze stawu. Wszystko, co było trzymane w dłoni, wypada, a ramię jest bezużyteczne przez [[/r 1d10]] Rund. Zobacz @UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#amputated-parts]{Amputacje})</p>",
+            "description": "<p>Ramię prawie zostało wyrwane ze stawu. Wszystko, co było trzymane w dłoni, wypada, a ramię jest bezużyteczne przez [[/r 1d10]] Rund. Zobacz @UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#amputacje]{Amputacje})</p>",
             "sourceId": "Compendium.wfrp4e-core.items.nnPZijQYZGya1NJM",
             "wounds": "2",
             "location": "Ręka"
@@ -1457,7 +1457,7 @@
         "Major Chest Wound": {
             "id": "zNzlJWzCqmyLtnFS",
             "name": "Poważna rana klatki piersiowej",
-            "description": "<p>Postać otrzymuje poważny cios w klatkę piersiową, który oddziela skórę od mięśni i ścięgien. Otrzymuje 4 poziomy Stanu @Condition[Krwawienie]. Dopóki ktoś nie udzieli jej pomocy @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Chirurgicznej} i nie zszyje rany, za każdym razem gdy postać otrzyma Ranę w korpus, otrzymuje dodatkowy poziom Stanu @Condition[Krwawienie], a rana się otwiera.</p>",
+            "description": "<p>Postać otrzymuje poważny cios w klatkę piersiową, który oddziela skórę od mięśni i ścięgien. Otrzymuje 4 poziomy Stanu @Condition[Krwawienie]. Dopóki ktoś nie udzieli jej pomocy @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgicznej} i nie zszyje rany, za każdym razem gdy postać otrzyma Ranę w korpus, otrzymuje dodatkowy poziom Stanu @Condition[Krwawienie], a rana się otwiera.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.zNzlJWzCqmyLtnFS",
             "effects": {
                 "pZD9xrlAHiaRru0d": {
@@ -1476,7 +1476,7 @@
         "Damaged Artery": {
             "id": "zXuy90mI1OLjxCvc",
             "name": "Uszkodzona tętnica",
-            "description": "<p>Postać otrzymuje 4 poziomy Stanu @Condition[Krwawienie]. Dopóki ktoś nie udzieli postaci pomocy @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#surgery]{Chirurgicznej}, za każdym razem, gdy otrzyma ona Ranę w to ramię, dostanie dodatkowe 2 poziomy Stanu @Condition[Krwawienie].</p>",
+            "description": "<p>Postać otrzymuje 4 poziomy Stanu @Condition[Krwawienie]. Dopóki ktoś nie udzieli postaci pomocy @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgicznej}, za każdym razem, gdy otrzyma ona Ranę w to ramię, dostanie dodatkowe 2 poziomy Stanu @Condition[Krwawienie].</p>",
             "sourceId": "Compendium.wfrp4e-core.items.zXuy90mI1OLjxCvc",
             "effects": {
                 "R8yyVjVN2G9uGe1Z": {

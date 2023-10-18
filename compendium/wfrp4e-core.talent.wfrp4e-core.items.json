@@ -158,7 +158,7 @@
         "Strong Swimmer": {
             "id": "4wnQc19allWlyOGe",
             "name": "Świetny Pływak",
-            "description": "<p>Bardzo dobrze pływasz i potrafisz na długo wstrzymać oddech pod wodą. Kiedy obliczasz, jak długo jesteś w stanie @UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#drowning-and-suffocation]{wytrzymać pod powierzchnią wody}, do Bonusu z Wytrzymałości dodaj liczbę wykupień tego Talentu.</p>",
+            "description": "<p>Bardzo dobrze pływasz i potrafisz na długo wstrzymać oddech pod wodą. Kiedy obliczasz, jak długo jesteś w stanie @UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#utoniecie-i-uduszenie]{wytrzymać pod powierzchnią wody}, do Bonusu z Wytrzymałości dodaj liczbę wykupień tego Talentu.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.4wnQc19allWlyOGe",
             "tests": "Pływanie"
         },
