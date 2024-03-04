@@ -118,20 +118,25 @@ Hooks.on("init", () => {
 				if (translations){
 					const translation = translations[data.name] || translations[data.id] || translations[data._id];
 					if (translation) {
-						const newEffect = mergeObject(
-							data,
-							mergeObject(translation, { translated: true }),
-						);
-						if (translation.script) {
-							newEffect.flags.wfrp4e.script = translation.script;
+						let result = foundry.utils.deepClone(data);
+						result.translated = true;
+						if (translation.name) {
+							result.name = translation.name;
 						}
-						if (translation.secondaryScript) {
-							newEffect.flags.wfrp4e.secondaryEffect.script = translation.secondaryScript;
+						if (translation.filter) {
+							result.flags.wfrp4e.applicationData = data.flags.wfrp4e.applicationData ?? {};
+							result.flags.wfrp4e.applicationData.filter = translation.filter;
 						}
-						if (translation.description) {
-							newEffect.flags.wfrp4e.effectData.description = translation.description;
+						if (translation.scriptData) {
+							for (let i = 0; i < translation.scriptData.length; i++) {
+								let transScript = translation.scriptData[i];
+								transScript.label = transScript.name; //the name is label 
+								let script = data.flags.wfrp4e.scriptData[i];
+								
+								result.flags.wfrp4e.scriptData[i] = mergeObject(script, transScript);	
+							}
 						}
-						return newEffect;
+						return result;
 					}
 				}
 				return data;
@@ -166,15 +171,19 @@ Hooks.on("init", () => {
 				if (pack) {
 					const originalName = item.name;
 					let translatedItem = pack.translations[originalName];
-					const translatedData = dynamicMapping.map(item, translatedItem);
-					translatedItem = mergeObject(item, translatedData);
-					for (const e of translatedItem.effects) {
-						const te = pack.translations[originalName].effects[e._id];
-						mergeObject(e, te);
-					}
-					translatedItem.system.specification.value = (translations[translatedItem.id] ?? translations[translatedItem._id]).specification;
-					if ((translations[translatedItem.id] ?? translations[translatedItem._id]).tests) {
-						translatedItem.system.tests.value = (translations[translatedItem.id] ?? translations[translatedItem._id]).tests;
+					if (translatedItem) {
+						const translatedData = dynamicMapping.map(item, translatedItem);
+						translatedItem = mergeObject(item, translatedData);
+						for (const e of translatedItem.effects) {
+							const te = pack.translations[originalName].effects[e._id];
+							mergeObject(e, te);
+						}
+						if ((translations[translatedItem.id] ?? translations[translatedItem._id]).specification) {
+							translatedItem.system.specification.value = (translations[translatedItem.id] ?? translations[translatedItem._id]).specification;
+						}
+						if ((translations[translatedItem.id] ?? translations[translatedItem._id]).tests) {
+							translatedItem.system.tests.value = (translations[translatedItem.id] ?? translations[translatedItem._id]).tests;
+						}
 					}
 				} else {
 					for (const pack of game.babele.packs) {
@@ -190,17 +199,21 @@ Hooks.on("init", () => {
 							let compendiumItemId = compendiumItem._id;
 							if (compendiumItem && compendiumItem.type == item.type) {
 								let translatedItem = pack.translations[compendiumItemId];
-								const translatedData = dynamicMapping.map(item, translatedItem);
-								translatedItem = mergeObject(item, translatedData);
-								for (const e of translatedItem.effects) {
-									const te = pack.translations[compendiumItemId].effects[e._id];
-									mergeObject(e, te);
+								if (translatedItem) {
+									const translatedData = dynamicMapping.map(item, translatedItem);
+									translatedItem = mergeObject(item, translatedData);
+									for (const e of translatedItem.effects) {
+										const te = pack.translations[compendiumItemId].effects[e._id];
+										mergeObject(e, te);
+									}
+									if ((translations[translatedItem.id] ?? translations[translatedItem._id]).specification) {
+										translatedItem.system.specification.value = (translations[translatedItem.id] ?? translations[translatedItem._id]).specification;
+									}
+									if ((translations[translatedItem.id] ?? translations[translatedItem._id]).tests) {
+										translatedItem.system.tests.value = (translations[translatedItem.id] ?? translations[translatedItem._id]).tests;
+									}
+									break;
 								}
-								translatedItem.system.specification.value = (translations[translatedItem.id] ?? translations[translatedItem._id]).specification;
-								if ((translations[translatedItem.id] ?? translations[translatedItem._id]).tests) {
-									translatedItem.system.tests.value = (translations[translatedItem.id] ?? translations[translatedItem._id]).tests;
-								}
-								break;
 							}
 						}
 					}

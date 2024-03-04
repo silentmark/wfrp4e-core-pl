@@ -14,7 +14,7 @@
             "id": "2iult41Jehz0F1O8",
             "name": "Złamanie nogi (poważne)",
             "description": "<p>@UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#zlamania]{Złamanie}</p><p>Kość została poważnie strzaskana, więc albo sterczy pod dziwnym kątem, albo zwisa bezwładnie, trzymając się jedynie na skórze. Mało prawdopodobne, że zrośnie się bez odpowiedniej pomocy medycznej. Trafione miejsce jest bezużyteczne, dopóki kość się nie zrośnie.</p>\n<p><span style=\"font-weight: bold;\"><strong>Noga: </strong></span>Szybkość zostaje trwale zmniejszona o połowę, a wszystkie Testy związane z poruszaniem się otrzymują karę -20. Niemożliwe jest wykonywanie Testów Uników. </p>\n<h3>Leczenie</h3>\n<p>Złamana kość będzie się zrastać przez 40+[[/r 1d10]] dni. Pod koniec tego okresu należy wykonać <strong>Wymagający (+0) Test Odporności</strong>, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę -10 do wartości Zwinności z powodu źle zrośniętego złamania nogi.</p>\n<p>Udany <strong>Wymagający (+0) Test Leczenia</strong> wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny <strong>Wymagający (+0) Test Leczenia</strong> wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.2iult41Jehz0F1O8",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.2iult41Jehz0F1O8",
             "effects": {
                 "tZayAMRUW6AVaa12": {
                     "id": "tZayAMRUW6AVaa12",
@@ -25,6 +25,24 @@
                     "id": "ZwCU28eoOKqibVfu",
                     "name": "Szybkość zmniejszona o połowę",
                     "script": "args.actor.details.move.value /= 2;"
+                },
+                "1U0TCebQcwbYZgbm": {
+                    "scriptData": [
+                        {
+                            "id": "1U0TCebQcwbYZgbm",
+                            "name": "Złamana Noga",
+                            "script": "args.actor.details.move.value /= 2"
+                        },
+                        {
+                            "id": "1U0TCebQcwbYZgbm",
+                            "name": "Złamana Noga",
+                            "script": "if (!args.flags.amputatedFootOrLeg)\n{\n\targs.flags.amputatedFootOrLeg= true;\n\targs.fields.modifier -= 20;\n}",
+                            "activationScript": "return [\"ag\", \"ws\", \"bs\"].includes(args.characteristic) || args.skill?.name == game.i18n.localize(\"NAME.Climb\");",
+                            "hideScript": "if (args.options.dodge)\n{\n\targs.abort = true;\n\tthis.script.scriptNotification(\"Nie można unikać!\")\n}\nreturn [\"t\", \"int\", \"wp\", \"fel\"].includes(args.characteristic)"
+                        }
+                    ],
+                    "id": "1U0TCebQcwbYZgbm",
+                    "name": "Złamana Noga"
                 }
             },
             "penalty": "-20 do Testów wiążący się z poruszaniem się, niemożliwe Unikanie, połowa Szybkości",
@@ -34,7 +52,7 @@
             "id": "3S4OYOZLauXctmev",
             "name": "Zerwanie mięśni nogi (poważne)",
             "description": "<p>@UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#zerwanie-miesni]{Zerwanie mięśni}</p><p>Zerwanie mięśni nogi (poważne) - Jeden z mięśni lub jakieś ważne ścięgno zostało poważnie uszkodzone, co wywołuje ogromny ból i poważną utratę ruchomości.</p>\n<p><strong>Noga:</strong> Wszelkie Testy związane z użyciem nogi wykonuje się z karą -20. Szybkość spada o połowę.</p>\n<h3>Leczenie</h3>\n<p>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości, po których używanie zamiast -20 będzie pociągało za sobą kary -10 do odpowiednich Testów. Mięśnie zagoją się całkowicie w ciągu następnych 30 dni - Bonus z Wytrzymałości. Test Leczenia nie pomoże w tej sytuacji – medyk po prostu stwierdzi, żeby nie używać trafionego miejsca.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.3S4OYOZLauXctmev",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.3S4OYOZLauXctmev",
             "effects": {
                 "e5BPTZkHGMJuDX2p": {
                     "id": "e5BPTZkHGMJuDX2p",
@@ -45,6 +63,24 @@
                     "id": "t1Anp3f9yR4IJqpR",
                     "name": "Szybkość spada o połowę",
                     "script": "args.actor.details.move.value /= 2;"
+                },
+                "guZjNzQMsZrHRQlf": {
+                    "scriptData": [
+                        {
+                            "id": "guZjNzQMsZrHRQlf",
+                            "name": "Naderwany Mięsień Nogi",
+                            "script": "args.fields.modifier -= 20;",
+                            "hideScript": "return ![\"ws\", \"bs\", \"s\", \"ag\", \"i\"].includes(args.characteristic)",
+                            "activationScript": "return [\"ws\", \"bs\", \"s\", \"ag\"].includes(args.characteristic)"
+                        },
+                        {
+                            "id": "guZjNzQMsZrHRQlf",
+                            "name": "Naderwany Mięsień Nogi",
+                            "script": "args.actor.details.move.value /= 2"
+                        }
+                    ],
+                    "id": "guZjNzQMsZrHRQlf",
+                    "name": "Naderwany Mięsień Nogi"
                 }
             },
             "location": "Noga (dowolna)"
@@ -53,12 +89,29 @@
             "id": "4lj1ik958mbgAlaF",
             "name": "Złamanie ramienia (pomniejsze)",
             "description": "<p>@UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#zlamania]{Złamanie}</p><p>Złamanie ramienia (pomniejsze) - Złamanie jednej kości, ale bez przemieszczenia. Przy dobrych wiatrach zrośnie się samo.</p>\n<p><span style=\"font-weight: bold;\"><strong>Ramie: </strong></span>Trafione miejsce jest bezużyteczne, dopóki złamanie się nie zagoi. Postaci pozostaje poleganie na drugiej kończynie, ponieważ ból jest ogromny i zwykle konieczne są łubki. Wszystkie Testy, w których niezbędne jest używanie obu dłoni, obarczone są karą -20, ponadto postać nie może używać broni dwuręcznych, oraz nawet przytwierdzić tarczy do złamanego ramienia. Jeśli złamane zostało ramię wiodące, Testy walki przy pomocy drugiej dłoni nadal wykonywane są z karą -20. Za każde wydane 100 Punktów Doświadczenia można zmniejszyć tę karę o 5, ponieważ postać stopniowo uczy się władać drugą dłonią.</p>\n<h3>Leczenie</h3>\n<p>Złamanie będzie zrastać się przez 30+[[/r 1d10]] dni. Pod koniec tego okresu należy wykonać <strong>Przeciętny (+20) Test Odporności</strong>, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę -5 do wszystkich Testów Zwinności, w których używa ramienia z powodu źle zrośniętego złamania.</p>\n<p>Udany <strong>Przeciętny (+20) Test Leczenia</strong> wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny <strong>Przeciętny (+20) Test Leczenia</strong> wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.4lj1ik958mbgAlaF",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.4lj1ik958mbgAlaF",
             "effects": {
                 "s7ir53mI80aA1FGh": {
                     "id": "s7ir53mI80aA1FGh",
                     "name": "Złamanie ramienia (pomniejsze)",
                     "description": "Dowolny wiążący się z użyciem dwóch rąk"
+                },
+                "4cxeGUZIHz247ikL": {
+                    "scriptData": [
+                        {
+                            "id": "4cxeGUZIHz247ikL",
+                            "name": "Złamana Ręka",
+                            "script": "if (!args.flags.lostHand)\n{\n\targs.fields.lostHand = true;\n\targs.fields.modifier += -20;\n}",
+                            "hideScript": "return [\"fel\", \"wp\", \"int\", \"t\"].includes(args.characteristic)"
+                        },
+                        {
+                            "id": "4cxeGUZIHz247ikL",
+                            "name": "Złamana Ręka",
+                            "script": "this.actor.flags.useless[this.item.system.location.key[0] + \"Arm\"] = true;"
+                        }
+                    ],
+                    "id": "4cxeGUZIHz247ikL",
+                    "name": "Złamana Ręka"
                 }
             },
             "penalty": "-20 do Testów wiążący się z użyciem dwóch rąk",
@@ -68,7 +121,7 @@
             "id": "7mCcI3q7hgWcmbBU",
             "name": "Złamanie nogi (pomniejsze)",
             "description": "<p>@UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#zlamania]{Złamanie}</p><p>Złamanie jednej kości, ale bez przemieszczenia. Przy dobrych wiatrach zrośnie się samo.</p>\n<p><span style=\"font-weight: bold;\"><strong>Noga: </strong></span>Szybkość zostaje trwale zmniejszona o połowę, a wszystkie Testy związane z poruszaniem się otrzymują karę -20. Niemożliwe jest wykonywanie Testów Uników.</p>\n<h3>Leczenie</h3>\n<p>Złamanie będzie zrastać się przez 30+[[/r 1d10]] dni. Pod koniec tego okresu należy wykonać <strong>Przeciętny (+20) Test Odporności</strong>, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę -5 do wartości Zwinności z powodu źle zrośniętego złamania nogi.</p>\n<p>Udany <strong>Przeciętny (+20) Test Leczenia</strong> wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny <strong>Przeciętny (+20) Test Leczenia</strong> wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.7mCcI3q7hgWcmbBU",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.7mCcI3q7hgWcmbBU",
             "effects": {
                 "DYDPqHfkDkbRBwqH": {
                     "id": "DYDPqHfkDkbRBwqH",
@@ -79,20 +132,52 @@
                     "id": "j9pWVPJtatDruv0Y",
                     "name": "Złamanie nogi (pomniejsze)",
                     "description": "Dowolny wiążący się z poruszaniem się"
+                },
+                "Y0e3Yr7WmTCsoNs3": {
+                    "scriptData": [
+                        {
+                            "id": "Y0e3Yr7WmTCsoNs3",
+                            "name": "Złamana Noga",
+                            "script": "args.actor.details.move.value /= 2"
+                        },
+                        {
+                            "id": "Y0e3Yr7WmTCsoNs3",
+                            "name": "Złamana Noga",
+                            "script": "if (!args.flags.amputatedFootOrLeg)\n{\n\targs.flags.amputatedFootOrLeg= true;\n\targs.fields.modifier -= 20;\n}",
+                            "activationScript": "return [\"ag\", \"ws\", \"bs\"].includes(args.characteristic) || args.skill?.name == game.i18n.localize(\"NAME.Climb\");",
+                            "hideScript": "if (args.options.dodge)\n{\n\targs.abort = true;\n\tthis.script.scriptNotification(\"Nie można unikać!\")\n}\nreturn [\"t\", \"int\", \"wp\", \"fel\"].includes(args.characteristic)"
+                        }
+                    ],
+                    "id": "Y0e3Yr7WmTCsoNs3",
+                    "name": "Złamana Noga"
                 }
             },
-            "location": "Noga (dowolna)"
+            "location": "Noga (dowolna)",
+            "penalty": "-20 do Testów wiążący się z poruszaniem się, niemożliwe Unikanie, połowa Szybkości"
         },
         "Torn Body Muscle (Minor)": {
             "id": "7rBhIRo96Mydo0Cv",
             "name": "Zerwanie mięśni korpusu (pomniejsze)",
             "description": "<p>@UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#zerwanie-miesni]{Zerwanie mięśni}</p><p>Jeden z mięśni został zerwany albo nastąpiło skręcenie stawu, co skutkuje ograniczeniem ruchomości i sporym bólem.</p>\n<p><strong>Korpus:</strong> Wszelkie Testy związane z użyciem korpusu wykonuje się z karą -10. </p>\n<h3>Leczenie</h3>\n<p>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości. Sukces w Teście Leczenia zmniejszy ten okres o 1 dzień plus 1 dodatkowy dzień za każdy PS (premię tę można uzyskać tylko raz).</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.7rBhIRo96Mydo0Cv",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.7rBhIRo96Mydo0Cv",
             "effects": {
                 "Aans92KGaO90qXGV": {
                     "id": "Aans92KGaO90qXGV",
                     "name": "Zerwanie mięśni korpusu (pomniejsze)",
                     "description": "Dowolny związany z użyciem korpusu"
+                },
+                "GhPHrkhh8n84WJQG": {
+                    "scriptData": [
+                        {
+                            "id": "GhPHrkhh8n84WJQG",
+                            "name": "Naderwany Mięsień Tułowia",
+                            "script": "args.fields.modifier -= 20;",
+                            "activationScript": "return [\"ws\", \"bs\", \"s\", \"ag\"].includes(args.characteristic)",
+                            "hideScript": "return ![\"ws\", \"bs\", \"s\", \"ag\", \"i\"].includes(args.characteristic)"
+                        }
+                    ],
+                    "id": "GhPHrkhh8n84WJQG",
+                    "name": "Naderwany Mięsień Tułowia"
                 }
             },
             "penalty": "-10 do Testów związanych z użyciem korpusu",
@@ -101,13 +186,27 @@
         "Amputated Ear": {
             "id": "8piWcBKFlQ2J1E3A",
             "name": "Amputowane ucho",
-            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <b>Amputacja (trudność)</b>, musi wykonać Test <b>Odporności</b> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Powalenie]. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Oszołomienie]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) następuje @Condition[Utrata przytomności].</p>\n<p>Wszystkie Amputacje wymagają leczenia <b>Chirurgicznego</b>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Więcej o <b>Chirurgii</b> przeczytasz w księdze zasad na stronie 181.</p>\n<p><strong>Ucho</strong>: Ucho Utrata ucha jest bolesna, ale prędzej czy później można się do tego przyzwyczaić. Pechem jest utrata obydwu uszu, wtedy wszelkie Testy Percepcji oparte na słuchu obarczone są karą -20. Ponadto za każde odcięte ucho wszystkie Testy Ogłady otrzymują karę -5, ponieważ rana jest dobrze widoczna.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.8piWcBKFlQ2J1E3A",
+            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <b>Amputacja (trudność)</b>, musi wykonać Test <b>Odporności</b> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Powalenie]. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Oszołomienie]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) następuje @Condition[Utrata przytomności].</p>\n<p>Wszystkie Amputacje wymagają leczenia <b>Chirurgicznego</b>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Więcej o <b>@UUID[Compendium.wfrp4e-core.journals.JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgii}</b> przeczytasz w księdze zasad na stronie 181.</p>\n<p><strong>Ucho</strong>: Ucho Utrata ucha jest bolesna, ale prędzej czy później można się do tego przyzwyczaić. Pechem jest utrata obydwu uszu, wtedy wszelkie Testy Percepcji oparte na słuchu obarczone są karą -20. Ponadto za każde odcięte ucho wszystkie Testy Ogłady otrzymują karę -5, ponieważ rana jest dobrze widoczna.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.8piWcBKFlQ2J1E3A",
             "effects": {
                 "i6SjnYZ0pNeN8SNZ": {
                     "id": "i6SjnYZ0pNeN8SNZ",
-                    "name": "Amputowane ucho",
-                    "script": "if (args.type == \"characteristic\" && args.item == \"fel\"){\n  args.prefillModifiers.modifier -= 5;\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"fel\") {\n    args.prefillModifiers.modifier -= 5\n  }\n}"
+                    "name": "Utracone Ucho",
+                    "script": "if (args.type == \"characteristic\" && args.item == \"fel\"){\n  args.prefillModifiers.modifier -= 5;\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"fel\") {\n    args.prefillModifiers.modifier -= 5\n  }\n}",
+                    "scriptData": [
+                        {
+                            "id": "i6SjnYZ0pNeN8SNZ",
+                            "name": "Utracone Ucho",
+                            "script": "this.actor.flags.useless[this.item.system.location.key] = true;"
+                        },
+                        {
+                            "id": "i6SjnYZ0pNeN8SNZ",
+                            "name": "Utracone Ucho",
+                            "script": "if (!args.flags.bothEars) // Only count penalty once \n{\n\targs.flags.bothEars = true;\n\tif (args.characteristic == \"fel\")\n\t{\n\t\targs.fields.modifier -= 5;\n\t}\n\tif (args.skill?.name == game.i18n.localize(\"NAME.Perception\"))\n\t{\n\t\targs.fields.modifier -= 20;\n\t}\n}",
+                            "activationScript": "return this.actor.flags.useless.rEar && this.actor.flags.useless.lEar && (args.skill?.name == game.i18n.localize(\"NAME.Perception\") || args.characteristic == \"fel\")",
+                            "hideScript": "return !this.actor.flags.useless.rEar || !this.actor.flags.useless.lEar || (args.skill?.name != game.i18n.localize(\"NAME.Perception\") && args.characteristic != \"fel\")"
+                        }
+                    ]
                 },
                 "NjLgGWim2CMWdOL4": {
                     "id": "NjLgGWim2CMWdOL4",
@@ -121,7 +220,7 @@
             "id": "EaqlLRQigwnsEAXX",
             "name": "Złamanie korpusu (poważne)",
             "description": "<p>Kość została poważnie strzaskana, więc albo sterczy pod dziwnym kątem, albo zwisa bezwładnie, trzymając się jedynie na skórze. Mało prawdopodobne, że zrośnie się bez odpowiedniej pomocy medycznej. Trafione miejsce jest bezużyteczne, dopóki kość się nie zrośnie.</p>\n<p><span style=\"font-weight: bold;\"><strong>Korpus: </strong></span>Siła i zdolność poruszania się postaci są mocno ograniczone: Szybkość spada o połowę, a ponadto wartości Siły i Zwinności spadają o -30. </p>\n<h3>Leczenie</h3>\n<p>Złamana kość będzie się zrastać przez 40+[[/r 1d10]] dni. Pod koniec tego okresu należy wykonać <strong>Wymagający (+0) Test Odporności</strong>, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę -10 do wartości Zwinności z powodu źle wyleczonego złamania korpusu.</p>\n<p>Udany <strong>Wymagający (+0) Test Leczenia</strong> wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny <strong>Wymagający (+0) Test Leczenia</strong> wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.EaqlLRQigwnsEAXX",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.EaqlLRQigwnsEAXX",
             "effects": {
                 "l5W27AsBX8jj1T80": {
                     "id": "l5W27AsBX8jj1T80",
@@ -130,7 +229,14 @@
                 },
                 "qIkF1AGNf4XxzaFv": {
                     "id": "qIkF1AGNf4XxzaFv",
-                    "name": "Złamanie korpusu (poważne)"
+                    "name": "Złamane Żebra",
+                    "scriptData": [
+                        {
+                            "id": "qIkF1AGNf4XxzaFv",
+                            "name": "Złamane Żebra",
+                            "script": "args.actor.details.move.value /= 2"
+                        }
+                    ]
                 }
             },
             "penalty": "-30 do Siły i Zwinności, połowa Szybkości",
@@ -140,12 +246,21 @@
             "id": "eWPN3CV2Eddwz8aM",
             "name": "Zerwanie mięśni korpusu (poważne)",
             "description": "<p>@UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#zerwanie-miesni]{Zerwanie mięśni}</p><p>Jeden z mięśni lub jakieś ważne ścięgno zostało poważnie uszkodzone, co wywołuje ogromny ból i poważną utratę ruchomości.</p>\n<p><strong>Korpus:</strong> Wszelkie Testy związane z użyciem korpusu wykonuje się z karą -20. </p>\n<h3>Leczenie</h3>\n<p>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości, po których używanie kończyny będzie pociągało za sobą kary -10 do odpowiednich Testów. Mięśnie zagoją się całkowicie w ciągu następnych 30 dni - Bonus z Wytrzymałości. Test Leczenia nie pomoże w tej sytuacji – medyk po prostu stwierdzi, żeby nie używać trafionego miejsca.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.eWPN3CV2Eddwz8aM",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.eWPN3CV2Eddwz8aM",
             "effects": {
                 "VczyyG2FDfvOQflT": {
                     "id": "VczyyG2FDfvOQflT",
-                    "name": "Zerwanie mięśni korpusu (poważne)",
-                    "description": "Dowolny związany z użyciem korpusu"
+                    "name": "Naderwany Mięsień Tułowia",
+                    "description": "Dowolny związany z użyciem korpusu",
+                    "scriptData": [
+                        {
+                            "id": "VczyyG2FDfvOQflT",
+                            "name": "Naderwany Mięsień Tułowia",
+                            "script": "args.fields.modifier -= 20;",
+                            "activationScript": "return [\"ws\", \"bs\", \"s\", \"ag\"].includes(args.characteristic)",
+                            "hideScript": "return ![\"ws\", \"bs\", \"s\", \"ag\", \"i\"].includes(args.characteristic)"
+                        }
+                    ]
                 }
             },
             "penalty": "-20 do Testów związanych z użyciem korpusu",
@@ -154,20 +269,46 @@
         "Amputated Teeth": {
             "id": "fBcZhOBn8IpoVqQ1",
             "name": "Amputowany ząb",
-            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <strong>Amputacja (trudność)</strong>, musi wykonać Test <strong>Odporności</strong> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Prone]{Powalenie}. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Stunned]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) lub gorzej następuje @Condition[Unconscious]{Utrata Przytomności}.</p>\n<p>Wszystkie Amputacje wymagają leczenia <strong>Chirurgicznego</strong>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Patrz @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgia}.</p>\n<p><strong>Ząb: </strong>Utrata zęba może oszpecić postać, a poza tym znacznie utrudnia spożywanie posiłków. Za każde 2 utracone zęby Ogłada trwale spada o 1 punkt. Ponadto utrata ponad połowy zębów (ludzie: 16, elfy: 18, niziołki i krasnoludy: 20) sprawia, że jedzenie staje się bardzo uciążliwe, zajmuje dwa razy więcej czasu, a niektóre posiłki są niemożliwe do zjedzenia – jest to przede wszystkim kwestia odgrywania postaci i opisywania działań.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.fBcZhOBn8IpoVqQ1",
-            "location": "Ząb (dowolny)"
+            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <strong>Amputacja (trudność)</strong>, musi wykonać Test <strong>Odporności</strong> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Prone]{Powalenie}. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Stunned]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) lub gorzej następuje @Condition[Unconscious]{Utrata Przytomności}.</p>\n<p>Wszystkie Amputacje wymagają leczenia <strong>Chirurgicznego</strong>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Patrz @UUID[Compendium.wfrp4e-core.journals.JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgia}.</p>\n<p><strong>Ząb: </strong>Utrata zęba może oszpecić postać, a poza tym znacznie utrudnia spożywanie posiłków. Za każde 2 utracone zęby Ogłada trwale spada o 1 punkt. Ponadto utrata ponad połowy zębów (ludzie: 16, elfy: 18, niziołki i krasnoludy: 20) sprawia, że jedzenie staje się bardzo uciążliwe, zajmuje dwa razy więcej czasu, a niektóre posiłki są niemożliwe do zjedzenia – jest to przede wszystkim kwestia odgrywania postaci i opisywania działań.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.fBcZhOBn8IpoVqQ1",
+            "location": "Ząb (dowolny)",
+            "effects": {
+                "huPPX6zHu11k8BMS": {
+                    "scriptData": [
+                        {
+                            "id": "huPPX6zHu11k8BMS",
+                            "name": "Amputowany ząb",
+                            "script": "this.actor.system.characteristics.fel.modifier -= parseInt(this.item.system.location.value || 1)"
+                        }
+                    ],
+                    "id": "huPPX6zHu11k8BMS",
+                    "name": "Amputowany ząb"
+                }
+            }
         },
         "Torn Arm Muscle (Minor)": {
             "id": "GlShFJF2TpsNh1FX",
             "name": "Zerwanie mięśni ramienia (pomniejsze)",
             "description": "<p>@UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#zerwanie-miesni]{Zerwanie mięśni}</p><p>Jeden z mięśni został zerwany albo nastąpiło skręcenie stawu, co skutkuje ograniczeniem ruchomości i sporym bólem.</p>\n<p><strong>Ramię:</strong> Wszelkie Testy związane z użyciem ramienia wykonuje się z karą -10. </p>\n<h3>Leczenie</h3>\n<p>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości. Sukces w Teście Leczenia zmniejszy ten okres o 1 dzień plus 1 dodatkowy dzień za każdy PS (premię tę można uzyskać tylko raz).</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.GlShFJF2TpsNh1FX",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.GlShFJF2TpsNh1FX",
             "effects": {
                 "9rO0RdQJqsNwv9lv": {
                     "id": "9rO0RdQJqsNwv9lv",
                     "name": "Zerwanie mięśni ramienia (pomniejsze)",
                     "description": "Dowolny związany z użyciem ramienia"
+                },
+                "l98TlfKtUDTwAT58": {
+                    "scriptData": [
+                        {
+                            "id": "l98TlfKtUDTwAT58",
+                            "name": "Naderwany Mięsień Ręki",
+                            "script": "args.fields.modifier -= 20;",
+                            "activationScript": "return args.weapon?.system.usesHands.includes(this.item.system.location.key);",
+                            "hideScript": "return [\"fel\", \"wp\", \"int\", \"t\"].includes(args.characteristic);"
+                        }
+                    ],
+                    "id": "l98TlfKtUDTwAT58",
+                    "name": "Naderwany Mięsień Ręki"
                 }
             },
             "penalty": "-10 do Testów związanych z użyciem ramienia",
@@ -176,8 +317,8 @@
         "Amputated Foot": {
             "id": "gz2xy41OSVZ8YBgI",
             "name": "Amputowana stopa",
-            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <b>Amputacja (trudność)</b>, musi wykonać Test <b>Odporności</b> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Powalenie]. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Oszołomienie]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) następuje @Condition[Utrata przytomności].</p>\n<p>Wszystkie Amputacje wymagają leczenia <b>Chirurgicznego</b>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Więcej o <b>Chirurgii</b> przeczytasz w księdze zasad na stronie 181.</p>\n<p><strong>Stopa</strong>: Szybkość zostaje trwale zmniejszona o połowę, a wszystkie Testy związane z poruszaniem się, jak np. Uniki, otrzymują karę -20. Utrata obu stóp znacznie utrudnia chodzenie. Może czas zatrudnić pachołka, który będzie służył za wierzchowca?</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.gz2xy41OSVZ8YBgI",
+            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <b>Amputacja (trudność)</b>, musi wykonać Test <b>Odporności</b> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Powalenie]. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Oszołomienie]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) następuje @Condition[Utrata przytomności].</p>\n<p>Wszystkie Amputacje wymagają leczenia <b>Chirurgicznego</b>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Więcej o <b>@UUID[Compendium.wfrp4e-core.journals.JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgii}</b> przeczytasz w księdze zasad na stronie 181.</p>\n<p><strong>Stopa</strong>: Szybkość zostaje trwale zmniejszona o połowę, a wszystkie Testy związane z poruszaniem się, jak np. Uniki, otrzymują karę -20. Utrata obu stóp znacznie utrudnia chodzenie. Może czas zatrudnić pachołka, który będzie służył za wierzchowca?</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.gz2xy41OSVZ8YBgI",
             "effects": {
                 "QHpPBISp2DCIRZp7": {
                     "id": "QHpPBISp2DCIRZp7",
@@ -186,8 +327,22 @@
                 },
                 "vFwI36wK9QnfgLGG": {
                     "id": "vFwI36wK9QnfgLGG",
-                    "name": "Szybkość Zmniejszona o Połowę",
-                    "script": "args.actor.details.move.value /= 2;"
+                    "name": "Amputowana stopa",
+                    "script": "args.actor.details.move.value /= 2;",
+                    "scriptData": [
+                        {
+                            "id": "vFwI36wK9QnfgLGG",
+                            "name": "Amputowana stopa",
+                            "script": "args.actor.details.move.value /= 2"
+                        },
+                        {
+                            "id": "vFwI36wK9QnfgLGG",
+                            "name": "Amputowana stopa",
+                            "script": "if (!args.flags.amputatedFootOrLeg)\n{\n\targs.flags.amputatedFootOrLeg= true;\n\targs.fields.modifier -= 20;\n}",
+                            "activationScript": "return [\"ag\", \"ws\", \"bs\"].includes(args.characteristic) || args.skill?.name == game.i18n.localize(\"NAME.Climb\");",
+                            "hideScript": "return [\"t\", \"int\", \"wp\", \"fel\"].includes(args.characteristic)"
+                        }
+                    ]
                 }
             },
             "penalty": "-20 do testów związanych z ruchem, połowa szybkości",
@@ -197,12 +352,21 @@
             "id": "hCadFsTRvLN9faaY",
             "name": "Złamanie głowy (poważne)",
             "description": "<p>Kość została poważnie strzaskana, więc albo sterczy pod dziwnym kątem, albo zwisa bezwładnie, trzymając się jedynie na skórze. Mało prawdopodobne, że zrośnie się bez odpowiedniej pomocy medycznej. Trafione miejsce jest bezużyteczne, dopóki kość się nie zrośnie.</p>\n<p><span style=\"font-weight: bold;\"><strong>Głowa: </strong></span>Postać musi przejść na dietę płynną, a dodatkowo wszystkie Testy Języków obarczone są karą -30. </p>\n<h3>Leczenie</h3>\n<p>Złamana kość będzie się zrastać przez 40+[[/r 1d10]] dni. Pod koniec tego okresu należy wykonać <strong>Wymagający (+0) Test Odporności</strong>, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę -10 do Testów Języków z powodu źle wyleczonego uderzenia w głowę.</p>\n<p>Udany <strong>Wymagający (+0) Test Leczenia</strong> wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny <strong>Wymagający (+0) Test Leczenia</strong> wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.hCadFsTRvLN9faaY",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.hCadFsTRvLN9faaY",
             "effects": {
                 "WLwNpLVQX79yOsdJ": {
                     "id": "WLwNpLVQX79yOsdJ",
-                    "name": "Złamanie głowy (poważne)",
-                    "script": "if (args.type == \"cast\" || (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"Language\"))))\n   args.prefillModifiers.modifier -= 30"
+                    "name": "Pęknięta Czaszka",
+                    "script": "if (args.type == \"cast\" || (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"Language\"))))\n   args.prefillModifiers.modifier -= 30",
+                    "scriptData": [
+                        {
+                            "script": "args.fields.modifier -= 30",
+                            "activationScript": "return args.skill?.name?.includes(game.i18n.localize(\"NAME.Language\")) || args.type == \"cast\"",
+                            "hideScript": "return !args.skill?.name?.includes(game.i18n.localize(\"NAME.Language\")) && args.type != \"cast\"",
+                            "id": "WLwNpLVQX79yOsdJ",
+                            "name": "Pęknięta Czaszka"
+                        }
+                    ]
                 }
             },
             "location": "Głowa",
@@ -211,13 +375,27 @@
         "Amputated Leg": {
             "id": "k00PimCWkff11IA0",
             "name": "Amputowana noga",
-            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <b>Amputacja (trudność)</b>, musi wykonać Test <b>Odporności</b> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Powalenie]. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Oszołomienie]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) następuje @Condition[Utrata przytomności].</p>\n<p>Wszystkie Amputacje wymagają leczenia <b>Chirurgicznego</b>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Więcej o <b>Chirurgii</b> przeczytasz w księdze zasad na stronie 181.</p>\n<p><strong>Noga:</strong> Szybkość zostaje trwale zmniejszona o połowę, a wszystkie Testy związane z poruszaniem się otrzymują karę -20. Niemożliwe jest wykonywanie Uników. Utrata obu nóg znacznie utrudnia chodzenie. Może czas zatrudnić pachołka, który będzie służył za wierzchowca?</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.k00PimCWkff11IA0",
+            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <b>Amputacja (trudność)</b>, musi wykonać Test <b>Odporności</b> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Powalenie]. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Oszołomienie]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) następuje @Condition[Utrata przytomności].</p>\n<p>Wszystkie Amputacje wymagają leczenia <b>Chirurgicznego</b>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Więcej o <b>@UUID[Compendium.wfrp4e-core.journals.JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgii}</b> przeczytasz w księdze zasad na stronie 181.</p>\n<p><strong>Noga:</strong> Szybkość zostaje trwale zmniejszona o połowę, a wszystkie Testy związane z poruszaniem się otrzymują karę -20. Niemożliwe jest wykonywanie Uników. Utrata obu nóg znacznie utrudnia chodzenie. Może czas zatrudnić pachołka, który będzie służył za wierzchowca?</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.k00PimCWkff11IA0",
             "effects": {
                 "p9uFm2XY1RGrjStF": {
                     "id": "p9uFm2XY1RGrjStF",
-                    "name": "Szybkość Zmniejszona o Połowę",
-                    "script": "args.actor.details.move.value /= 2;"
+                    "name": "Amputowana noga",
+                    "script": "args.actor.details.move.value /= 2;",
+                    "scriptData": [
+                        {
+                            "id": "p9uFm2XY1RGrjStF",
+                            "name": "Amputowana noga",
+                            "script": "args.actor.details.move.value /= 2"
+                        },
+                        {
+                            "id": "p9uFm2XY1RGrjStF",
+                            "name": "Amputowana noga",
+                            "script": "if (!args.flags.amputatedFootOrLeg)\n{\n\targs.flags.amputatedFootOrLeg= true;\n\targs.fields.modifier -= 20;\n}",
+                            "activationScript": "return [\"ag\", \"ws\", \"bs\"].includes(args.characteristic) || args.skill?.name == game.i18n.localize(\"NAME.Climb\");",
+                            "hideScript": "if (args.options.dodge)\n{\n\targs.abort = true;\n\tthis.script.scriptNotification(\"Nie można unikać!\")\n}\nreturn [\"t\", \"int\", \"wp\", \"fel\"].includes(args.characteristic)"
+                        }
+                    ]
                 },
                 "wkJy3QCy8odqGvjm": {
                     "id": "wkJy3QCy8odqGvjm",
@@ -231,13 +409,26 @@
         "Amputated Arm": {
             "id": "MnMZv7ZXoRqoH9dS",
             "name": "Amputowane ramię",
-            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <b>Amputacja (trudność)</b>, musi wykonać Test <b>Odporności</b> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Powalenie]. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Oszołomienie]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) następuje @Condition[Utrata przytomności].</p>\n<p>Wszystkie Amputacje wymagają leczenia <b>Chirurgicznego</b>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Więcej o <b>Chirurgii</b> przeczytasz w księdze zasad na stronie 181.</p>\n<p><strong>Ramię</strong>: Wszystkie Testy, w których niezbędne jest używanie obu dłoni, obarczone są karą -20, ponadto postać nie może używać broni dwuręcznych. Jeśli odcięte zostało ramię wiodące, Testy walki przy pomocy drugiej dłoni nadal wykonywane są z karą -20. Za 100 Punktów Doświadczenia można zmniejszyć tę karę o 5, ponieważ postać stopniowo uczy się władać drugą dłonią. Jeżeli odcięte zostanie jedno i drugie ramię to chyba czas na emeryturę.</p>",
+            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <b>Amputacja (trudność)</b>, musi wykonać Test <b>Odporności</b> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Powalenie]. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Oszołomienie]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) następuje @Condition[Utrata przytomności].</p>\n<p>Wszystkie Amputacje wymagają leczenia <b>Chirurgicznego</b>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Więcej o <b>@UUID[Compendium.wfrp4e-core.journals.JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgii}</b> przeczytasz w księdze zasad na stronie 181.</p>\n<p><strong>Ramię</strong>: Wszystkie Testy, w których niezbędne jest używanie obu dłoni, obarczone są karą -20, ponadto postać nie może używać broni dwuręcznych. Jeśli odcięte zostało ramię wiodące, Testy walki przy pomocy drugiej dłoni nadal wykonywane są z karą -20. Za 100 Punktów Doświadczenia można zmniejszyć tę karę o 5, ponieważ postać stopniowo uczy się władać drugą dłonią. Jeżeli odcięte zostanie jedno i drugie ramię to chyba czas na emeryturę.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.MnMZv7ZXoRqoH9dS",
             "effects": {
                 "qPV4jIDGN9onOAYV": {
                     "id": "qPV4jIDGN9onOAYV",
                     "name": "Amputowane ramię",
-                    "description": "Dowolny wiążący się z użyciem dwóch rąk"
+                    "description": "Dowolny wiążący się z użyciem dwóch rąk",
+                    "scriptData": [
+                        {
+                            "id": "qPV4jIDGN9onOAYV",
+                            "name": "Amputowane ramię",
+                            "script": "if (!args.flags.lostHand)\n{\n\targs.fields.lostHand = true;\n\targs.fields.modifier += -20;\n}",
+                            "hideScript": "return [\"fel\", \"wp\", \"int\", \"t\"].includes(args.characteristic)"
+                        },
+                        {
+                            "id": "qPV4jIDGN9onOAYV",
+                            "name": "Amputowane ramię",
+                            "script": "this.actor.flags.useless[this.item.system.location.key] = true;"
+                        }
+                    ]
                 }
             },
             "penalty": "-20 do Testów wiążący się z użyciem dwóch rąk",
@@ -247,12 +438,25 @@
             "id": "nbhn2wX35b7Jrcbg",
             "name": "Złamanie głowy (pomniejsze)",
             "description": "<p>Złamanie jednej kości, ale bez przemieszczenia. Przy dobrych wiatrach zrośnie się samo.</p>\n<p><span style=\"font-weight: bold;\"><strong>Głowa: </strong></span>Postać musi przejść na dietę płynną, a dodatkowo wszystkie Testy Języków obarczone są karą -30. </p>\n<h3>Leczenie</h3>\n<p>Złamanie będzie zrastać się przez 30+[[/r 1d10]] dni. Pod koniec tego okresu należy wykonać <strong>Przeciętny (+20) Test Odporności</strong>, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę -5 do Testów Języków z powodu źle wyleczonego uderzenia w głowę.</p>\n<p>Udany <strong>Przeciętny (+20) Test Leczenia</strong> wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny <strong>Przeciętny (+20) Test Leczenia</strong> wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.nbhn2wX35b7Jrcbg",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.nbhn2wX35b7Jrcbg",
             "effects": {
                 "WtbK1vMvsJYKBbWj": {
                     "id": "WtbK1vMvsJYKBbWj",
                     "name": "Złamanie głowy (pomniejsze)",
                     "script": "if (args.type == \"cast\" || (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"Language\"))))\n   args.prefillModifiers.modifier -= 30"
+                },
+                "aMOyZiEo22ssVydL": {
+                    "scriptData": [
+                        {
+                            "id": "aMOyZiEo22ssVydL",
+                            "name": "Pęknięta Czaszka",
+                            "script": "args.fields.modifier -= 30",
+                            "activationScript": "return args.skill?.name?.includes(game.i18n.localize(\"NAME.Language\")) || args.type == \"cast\"",
+                            "hideScript": "return !args.skill?.name?.includes(game.i18n.localize(\"NAME.Language\")) && args.type != \"cast\""
+                        }
+                    ],
+                    "id": "aMOyZiEo22ssVydL",
+                    "name": "Pęknięta Czaszka"
                 }
             },
             "penalty": "-30 do Testów Języka",
@@ -262,7 +466,7 @@
             "id": "nF5z1OEhpi4t6a6S",
             "name": "Zerwanie mięśni nogi (pomniejsze)",
             "description": "<p>@UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#zerwanie-miesni]{Zerwanie mięśni}</p><p>Zerwanie mięśni nogi (pomniejsze) - Jeden z mięśni został zerwany albo nastąpiło skręcenie stawu, co skutkuje ograniczeniem ruchomości i sporym bólem.</p>\n<p><strong>Noga:</strong> Wszelkie Testy związane z użyciem nogi wykonuje się z karą -10. Szybkość spada o połowę.</p>\n<h3>Leczenie</h3>\n<p>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości. Sukces w Teście Leczenia zmniejszy ten okres o 1 dzień plus 1 dodatkowy dzień za każdy PS (premię tę można uzyskać tylko raz).</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.nF5z1OEhpi4t6a6S",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.nF5z1OEhpi4t6a6S",
             "effects": {
                 "73XsH9pZ8Qymz0kN": {
                     "id": "73XsH9pZ8Qymz0kN",
@@ -273,6 +477,24 @@
                     "id": "ErAJc8kPnAwubY1m",
                     "name": "Zerwanie mięśni nogi (pomniejsze)",
                     "description": "Dowolny związany z użyciem nogi"
+                },
+                "Rsf3AbJfqBJBvCx8": {
+                    "scriptData": [
+                        {
+                            "id": "Rsf3AbJfqBJBvCx8",
+                            "name": "Naderwany Mięsień Nogi",
+                            "script": "args.fields.modifier -= 20;",
+                            "activationScript": "return [\"ws\", \"bs\", \"s\", \"ag\"].includes(args.characteristic)",
+                            "hideScript": "return ![\"ws\", \"bs\", \"s\", \"ag\", \"i\"].includes(args.characteristic)"
+                        },
+                        {
+                            "id": "Rsf3AbJfqBJBvCx8",
+                            "name": "Naderwany Mięsień Nogi",
+                            "script": "args.actor.details.move.value /= 2"
+                        }
+                    ],
+                    "id": "Rsf3AbJfqBJBvCx8",
+                    "name": "Naderwany Mięsień Nogi"
                 }
             },
             "penalty": "-10 do Testów związanych z użyciem nogi",
@@ -282,7 +504,7 @@
             "id": "QluSTTTq3viHJJUh",
             "name": "Złamanie korpusu (pomniejsze)",
             "description": "<p>Złamanie jednej kości, ale bez przemieszczenia. Przy dobrych wiatrach zrośnie się samo.</p>\n<p><span style=\"font-weight: bold;\"><strong>Korpus: </strong></span>Siła i zdolność poruszania się postaci są mocno ograniczone: Szybkość spada o połowę, a ponadto wartości Siły i Zwinności spadają o -30. </p>\n<h3>Leczenie</h3>\n<p>Złamanie będzie zrastać się przez 30+[[/r 1d10]] dni. Pod koniec tego okresu należy wykonać <strong>Przeciętny (+20) Test Odporności</strong>, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę -5 do wartości Zwinności z powodu źle zrośniętego złamania korpusu.</p>\n<p>Udany <strong>Przeciętny (+20) Test Leczenia</strong> wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny <strong>Przeciętny (+20) Test Leczenia</strong> wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.QluSTTTq3viHJJUh",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.QluSTTTq3viHJJUh",
             "effects": {
                 "CPG7bDRJSqCHaCni": {
                     "id": "CPG7bDRJSqCHaCni",
@@ -292,6 +514,17 @@
                 "YNacfIHrXFATBGcL": {
                     "id": "YNacfIHrXFATBGcL",
                     "name": "Złamanie korpusu (pomniejsze)"
+                },
+                "1A2f1H1IsFCds37w": {
+                    "scriptData": [
+                        {
+                            "id": "1A2f1H1IsFCds37w",
+                            "name": "Złamane Żebra",
+                            "script": "args.actor.details.move.value /= 2"
+                        }
+                    ],
+                    "id": "1A2f1H1IsFCds37w",
+                    "name": "Złamane Żebra"
                 }
             },
             "penalty": "-30 do Siły i Zwinności, połowa Szybkości",
@@ -301,12 +534,21 @@
             "id": "qn4ZpvTQIX4rcJDl",
             "name": "Zerwanie mięśni ramienia (poważne)",
             "description": "<p>@UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#zerwanie-miesni]{Zerwanie mięśni}</p><p>Jeden z mięśni lub jakieś ważne ścięgno zostało poważnie uszkodzone, co wywołuje ogromny ból i poważną utratę ruchomości.</p>\n<p><strong>Ramię:</strong> Wszelkie Testy związane z użyciem ramienia wykonuje się z karą -20. </p>\n<h3>Leczenie</h3>\n<p>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości, po których używanie zamiast -20 będzie pociągało za sobą kary -10 do odpowiednich Testów. Mięśnie zagoją się całkowicie w ciągu następnych 30 dni - Bonus z Wytrzymałości. Test Leczenia nie pomoże w tej sytuacji – medyk po prostu stwierdzi, żeby nie używać trafionego miejsca.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.qn4ZpvTQIX4rcJDl",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.qn4ZpvTQIX4rcJDl",
             "effects": {
                 "GUbysJIeA44LNOIq": {
                     "id": "GUbysJIeA44LNOIq",
-                    "name": "Zerwanie mięśni ramienia (poważne)",
-                    "description": "Dowolny związany z użyciem ramienia"
+                    "name": "Naderwany Mięsień Ręki",
+                    "description": "Dowolny związany z użyciem ramienia",
+                    "scriptData": [
+                        {
+                            "id": "GUbysJIeA44LNOIq",
+                            "name": "Naderwany Mięsień Ręki",
+                            "script": "args.fields.modifier -= 20;",
+                            "activationScript": "return args.weapon?.system.usesHands.includes(this.item.system.location.key);",
+                            "hideScript": "return [\"fel\", \"wp\", \"int\", \"t\"].includes(args.characteristic);"
+                        }
+                    ]
                 }
             },
             "penalty": "-20 do Testów związanych z użyciem ramienia",
@@ -316,12 +558,19 @@
             "id": "RB2sN09lX3m7dkOg",
             "name": "Zerwanie mięśni głowy (poważne)",
             "description": "<p>@UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#zerwanie-miesni]{Zerwanie mięśni}</p><p>Jeden z mięśni lub jakieś ważne ścięgno zostało poważnie uszkodzone, co wywołuje ogromny ból i poważną utratę ruchomości.</p>\n<p><strong>Głowa:</strong> Wszelkie Testy związane z użyciem głowy wykonuje się z karą -20. </p>\n<h3>Leczenie</h3>\n<p>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości, po których używanie zamiast -20 będzie pociągało za sobą kary -10 do odpowiednich Testów. Mięśnie zagoją się całkowicie w ciągu następnych 30 dni - Bonus z Wytrzymałości. Test Leczenia nie pomoże w tej sytuacji – medyk po prostu stwierdzi, żeby nie używać trafionego miejsca.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.RB2sN09lX3m7dkOg",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.RB2sN09lX3m7dkOg",
             "effects": {
                 "q2drpcrYvUHjZBwg": {
                     "id": "q2drpcrYvUHjZBwg",
-                    "name": "Zerwanie mięśni głowy (poważne)",
-                    "description": "Dowolny związany z użyciem głowy"
+                    "name": "Naderwany Mięsień Szyi",
+                    "description": "Dowolny związany z użyciem głowy",
+                    "scriptData": [
+                        {
+                            "script": "args.fields.modifier -= 20;",
+                            "id": "q2drpcrYvUHjZBwg",
+                            "name": "Naderwany Mięsień Szyi"
+                        }
+                    ]
                 }
             },
             "penalty": "-20 do Testów związanych z użyciem głowy",
@@ -330,21 +579,47 @@
         "Amputated Tongue": {
             "id": "rkJA1DlK51QuRlJy",
             "name": "Amputowany język",
-            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <strong>Amputacja (trudność)</strong>, musi wykonać Test <strong>Odporności</strong> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Prone]{Powalenie}. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Stunned]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) lub gorzej następuje @Condition[Unconscious]{Utrata Przytomności}.</p>\n<p>Wszystkie Amputacje wymagają leczenia <strong>Chirurgicznego</strong>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Patrz @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgia}.</p>\n<p><strong>Język: </strong>Utrata języka sprawia, że postać może jedynie pomrukiwać i chrząkać, a jej komunikacja ogranicza się do używania języka migowego. Postać automatycznie odnosi porażkę we wszystkich Testach Języków, które wymagają mówienia.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.rkJA1DlK51QuRlJy",
+            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <strong>Amputacja (trudność)</strong>, musi wykonać Test <strong>Odporności</strong> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Prone]{Powalenie}. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Stunned]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) lub gorzej następuje @Condition[Unconscious]{Utrata Przytomności}.</p>\n<p>Wszystkie Amputacje wymagają leczenia <strong>Chirurgicznego</strong>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Patrz @UUID[Compendium.wfrp4e-core.journals.JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgia}.</p>\n<p><strong>Język: </strong>Utrata języka sprawia, że postać może jedynie pomrukiwać i chrząkać, a jej komunikacja ogranicza się do używania języka migowego. Postać automatycznie odnosi porażkę we wszystkich Testach Języków, które wymagają mówienia.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.rkJA1DlK51QuRlJy",
             "penalty": "Automatyczna porażka w Testach Języków, które wymagają mówienia",
-            "location": "Język"
+            "location": "Język",
+            "effects": {
+                "g5GhCvc6l2SBTVYm": {
+                    "scriptData": [
+                        {
+                            "id": "g5GhCvc6l2SBTVYm",
+                            "name": "Amputowany język",
+                            "script": "if (args.test.preData.skillName.includes(game.i18n.localize(\"NAME.Language\")) || args.test instanceof CastTest)\n{\n\tif (parseInt(args.test.result.SL) > 0 || args.test.result.outcome == \"success\")\n\t{\n\t\tif (parseInt(args.test.result.SL) > 0)\n\t\t{\n\t\t\targs.test.result.SL = \"-0\";\n\t\t\targs.test.result.description = game.i18n.localize(\"ROLL.MarginalFailure\");\n\t\t}\n\t\targs.test.result.outcome = \"failure\"\n        args.test.result.other.push(`<strong>${this.effect.name}</strong>: Max -0 PS`)\n\t}\n}"
+                        }
+                    ],
+                    "id": "g5GhCvc6l2SBTVYm",
+                    "name": "Amputowany język"
+                }
+            }
         },
         "Broken Arm (Major)": {
             "id": "rlDZZTj5PXjuRXa2",
             "name": "Złamanie ramienia (poważne)",
             "description": "<p>@UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#zlamania]{Złamanie}</p><p>Kość została poważnie strzaskana, więc albo sterczy pod dziwnym kątem, albo zwisa bezwładnie, trzymając się jedynie na skórze. Mało prawdopodobne, że zrośnie się bez odpowiedniej pomocy medycznej. Trafione miejsce jest bezużyteczne, dopóki kość się nie zrośnie.</p>\n<p><span style=\"font-weight: bold;\"><strong>Ramię: </strong></span>Trafione miejsce jest bezużyteczne, dopóki złamanie się nie zagoi. Postaci pozostaje poleganie na drugiej kończynie, ponieważ ból jest ogromny i zwykle konieczne są łubki. Wszystkie Testy, w których niezbędne jest używanie obu dłoni, obarczone są karą -20, ponadto postać nie może używać broni dwuręcznych, oraz nawet przytwierdzić tarczy do złamanego ramienia. Jeśli złamane zostało ramię wiodące, Testy walki przy pomocy drugiej dłoni nadal wykonywane są z karą -20. Za każde wydane 100 Punktów Doświadczenia można zmniejszyć tę karę o 5, ponieważ postać stopniowo uczy się władać drugą dłonią. </p>\n<h3>Leczenie</h3>\n<p>Złamana kość będzie się zrastać przez 40+[[/r 1d10]] dni. Pod koniec tego okresu należy wykonać <strong>Wymagający (+0) Test Odporności</strong>, by sprawdzić, czy kość zrosła się prawidłowo i czy nie wystąpią skutki uboczne. Porażka oznacza, że postać otrzymuje trwałą karę -10 do wszystkich Testów Zwinności, w których używa ramienia z powodu źle zrośniętego złamania.</p>\n<p>Udany <strong>Wymagający (+0) Test Leczenia</strong> wykonany w ciągu tygodnia od otrzymania rany sprawia, że postać nie musi wykonywać Testu Odporności, ale połamane miejsce musi zostać unieruchomione do końca okresu leczenia. Jeśli gips lub łubki mają zostać zdjęte, niezbędny będzie kolejny <strong>Wymagający (+0) Test Leczenia</strong> wykonany w ciągu 1 dnia, jeśli postać chce uniknąć Testu Odporności.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.rlDZZTj5PXjuRXa2",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.rlDZZTj5PXjuRXa2",
             "effects": {
                 "m1KbLc6l2LK76961": {
                     "id": "m1KbLc6l2LK76961",
-                    "name": "Złamanie ramienia (poważne)",
-                    "description": "Dowolny wiążący się z użyciem dwóch rąk"
+                    "name": "Złamana Ręka",
+                    "description": "Dowolny wiążący się z użyciem dwóch rąk",
+                    "scriptData": [
+                        {
+                            "name": "Złamana Ręka",
+                            "id": "m1KbLc6l2LK76961",
+                            "script": "if (!args.flags.lostHand)\n{\n\targs.fields.lostHand = true;\n\targs.fields.modifier += -20;\n}",
+                            "hideScript": "return [\"fel\", \"wp\", \"int\", \"t\"].includes(args.characteristic)"
+                        },
+                        {
+                            "id": "m1KbLc6l2LK76961",
+                            "name": "Złamana Ręka",
+                            "script": "this.actor.flags.useless[this.item.system.location.key[0] + \"Arm\"] = true;"
+                        }
+                    ]
                 }
             },
             "penalty": "-20 do Testów wiążący się z użyciem dwóch rąk",
@@ -353,13 +628,21 @@
         "Amputated Nose": {
             "id": "SpPRZZRHxly7uo2G",
             "name": "Amputowany nos",
-            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <b>Amputacja (trudność)</b>, musi wykonać Test <b>Odporności</b> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Powalenie}. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Oszołomienie]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) następuje @Condition[Utrata przytomności].</p>\n<p>Wszystkie Amputacje wymagają leczenia <b>Chirurgicznego</b>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Więcej o <b>Chirurgii</b> przeczytasz w księdze zasad na stronie 181.</p>\n<p><strong>Nos:&nbsp;</strong> Nos Utrata nosa sprawia, że postać zaczyna wyglądać naprawdę dziwacznie. Oznacza także trwałą utratę 20 punktów Ogłady, a także karę -30 do wszystkich Testów węchu.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.SpPRZZRHxly7uo2G",
+            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <b>Amputacja (trudność)</b>, musi wykonać Test <b>Odporności</b> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Powalenie}. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Oszołomienie]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) następuje @Condition[Utrata przytomności].</p>\n<p>Wszystkie Amputacje wymagają leczenia <b>Chirurgicznego</b>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Więcej o <b>@UUID[Compendium.wfrp4e-core.journals.JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgii}</b> przeczytasz w księdze zasad na stronie 181.</p>\n<p><strong>Nos:&nbsp;</strong> Nos Utrata nosa sprawia, że postać zaczyna wyglądać naprawdę dziwacznie. Oznacza także trwałą utratę 20 punktów Ogłady, a także karę -30 do wszystkich Testów węchu.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.SpPRZZRHxly7uo2G",
             "effects": {
                 "OTeQYlJcacd8ID4i": {
                     "id": "OTeQYlJcacd8ID4i",
                     "name": "Amputowany nos",
-                    "description": "Testy wymagające węchu"
+                    "description": "Testy wymagające węchu",
+                    "scriptData": [
+                        {
+                            "id": "OTeQYlJcacd8ID4i",
+                            "name": "Amputowany nos",
+                            "script": "args.fields.modifier -= 30",
+                            "hideScript": "return [\"ws\", \"bs\", \"s\", \"ag\", \"dex\", \"int\", \"wp\", \"fel\"].includes(args.characteristic)"
+                        }
+                    ]
                 }
             },
             "penalty": "-20 do Ogłady, -30 do Testów wymagających węchu",
@@ -368,28 +651,64 @@
         "Amputated Finger": {
             "id": "SYjWiKDzMS6CtROJ",
             "name": "Amputowany palec u ręki",
-            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <b>Amputacja (trudność)</b>, musi wykonać Test <b>Odporności</b> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Powalenie]. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Oszołomienie]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) następuje @Condition[Utrata przytomności].</p>\n<p>Wszystkie Amputacje wymagają leczenia <b>Chirurgicznego</b>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Więcej o <b>Chirurgii</b> przeczytasz w księdze zasad na stronie 181.</p>\n<p><strong>Palce u rąk</strong>: Przede wszystkim chwyt zranioną dłonią jest osłabiony, co sprawia, że szanse na Pech podczas używania jej rosną. Za pierwszy stracony palec porażki we wszelkich odpowiednich Testach, w których na kościach wypadła 1, uznawane są za Pech. W przypadku dwóch odciętych palców Pech występuje, gdy na kościach wypadnie 1 lub 2, i tak dalej. Ponadto za każdy stracony palec wszystkie Testy z wykorzystaniem okaleczonej dłoni otrzymują karę -5. Jeśli postać straci w dłoni 4 lub 5 palców, należy zastosować zasady jak w przypadku odciętej dłoni.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.SYjWiKDzMS6CtROJ",
+            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <b>Amputacja (trudność)</b>, musi wykonać Test <b>Odporności</b> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Powalenie]. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Oszołomienie]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) następuje @Condition[Utrata przytomności].</p>\n<p>Wszystkie Amputacje wymagają leczenia <b>Chirurgicznego</b>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Więcej o <b>@UUID[Compendium.wfrp4e-core.journals.JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgii}</b> przeczytasz w księdze zasad na stronie 181.</p>\n<p><strong>Palce u rąk</strong>: Przede wszystkim chwyt zranioną dłonią jest osłabiony, co sprawia, że szanse na Pech podczas używania jej rosną. Za pierwszy stracony palec porażki we wszelkich odpowiednich Testach, w których na kościach wypadła 1, uznawane są za Pech. W przypadku dwóch odciętych palców Pech występuje, gdy na kościach wypadnie 1 lub 2, i tak dalej. Ponadto za każdy stracony palec wszystkie Testy z wykorzystaniem okaleczonej dłoni otrzymują karę -5. Jeśli postać straci w dłoni 4 lub 5 palców, należy zastosować zasady jak w przypadku odciętej dłoni.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.SYjWiKDzMS6CtROJ",
             "effects": {
                 "DaOXNCrHEMsOleGx": {
                     "id": "DaOXNCrHEMsOleGx",
-                    "name": "Amputowane palce u ręki",
-                    "description": "Amputowane palce u ręki"
+                    "name": "Utracony Palec",
+                    "description": "Amputowane palce u ręki",
+                    "scriptData": [
+                        {
+                            "id": "DaOXNCrHEMsOleGx",
+                            "name": "Utracony Palec",
+                            "script": "let key = this.item.system.location.key\n\nlet lostFingers = this.actor.flags.useless[key] || 0;\n\nlostFingers += 1\n\nthis.actor.flags.useless[key] = lostFingers;\n\nif (lostFingers >= 4)\n{\n\tthis.actor.flags.useless[key[0] + \"Arm\"] = true;\n}"
+                        },
+                        {
+                            "id": "DaOXNCrHEMsOleGx",
+                            "name": "Utracony Palec",
+                            "script": "if (!args.flags.lostFingers)\n{\n\targs.flags.lostFingers = true;\n\targs.fields.modifier -= 5 * this.actor.flags.useless[this.item.system.location.key]\n}",
+                            "activationScript": "return this.actor.flags.useless[this.item.system.location.key] && args.weapon?.system.usesHands.includes(this.item.system.location.key[0] + \"Arm\")",
+                            "hideScript": "return !this.actor.flags.useless[this.item.system.location.key] || [\"fel\", \"wp\", \"int\", \"t\"].includes(args.characteristic)"
+                        },
+                        {
+                            "id": "DaOXNCrHEMsOleGx",
+                            "name": "Utracony Palec",
+                            "script": "let letter = this.item.system.location.key[0]; // \"l\" or \"r\";\n\nthis.item.updateSource({\"system.location.key\" : letter + \"Finger\"})\n\n// We want the location to be Right or Left Hand, but the key to be rFinger or lFinger"
+                        },
+                        {
+                            "id": "DaOXNCrHEMsOleGx",
+                            "name": "Utracony Palec",
+                            "script": "if (!args.flags.lostHand)\n{\n\targs.fields.lostHand = true;\n\targs.fields.modifier += -20;\n}",
+                            "hideScript": "return !this.actor.flags.useless[this.item.system.location.key[0] + \"Arm\"] && [\"fel\", \"wp\", \"int\", \"t\"].includes(args.characteristic)"
+                        }
+                    ]
                 }
             },
             "penalty": "-5 do testów wymagających danej ręki",
-            "location": "Palec u ręki"
+            "location": "Dłoń (dowolna)"
         },
         "Torn Head Muscle (Minor)": {
             "id": "UytN3fDREi3JuKST",
             "name": "Zerwanie mięśni głowy (pomniejsze)",
             "description": "<p>@UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#zerwanie-miesni]{Zerwanie mięśni}</p><p>Jeden z mięśni został zerwany albo nastąpiło skręcenie stawu, co skutkuje ograniczeniem ruchomości i sporym bólem.</p>\n<p><strong>Głowa:</strong> Wszelkie Testy związane z użyciem głowy wykonuje się z karą -10. </p>\n<h3>Leczenie</h3>\n<p>Mięśnie częściowo zagoją się w ciągu 30 dni - Bonus z Wytrzymałości. Sukces w Teście Leczenia zmniejszy ten okres o 1 dzień plus 1 dodatkowy dzień za każdy PS (premię tę można uzyskać tylko raz).</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.UytN3fDREi3JuKST",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.UytN3fDREi3JuKST",
             "effects": {
                 "y2XL7QrWlGI6aloz": {
                     "id": "y2XL7QrWlGI6aloz",
                     "name": "Zerwanie mięśni głowy (pomniejsze)",
                     "description": "Dowolny związany z użyciem głowy"
+                },
+                "YYYy8BoYrzX6992d": {
+                    "scriptData": [
+                        {
+                            "id": "YYYy8BoYrzX6992d",
+                            "name": "Naderwany Mięsień Szyi",
+                            "script": "args.fields.modifier -= 20;"
+                        }
+                    ],
+                    "id": "YYYy8BoYrzX6992d",
+                    "name": "Naderwany Mięsień Szyi"
                 }
             },
             "location": "Głowa"
@@ -397,8 +716,8 @@
         "Amputated Eye": {
             "id": "weczkAMPlTjX7lqU",
             "name": "Amputowane oko",
-            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <b>Amputacja (trudność)</b>, musi wykonać Test <b>Odporności</b> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Powalenie]. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Oszołomienie]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) następuje @Condition[Utrata przytomności].</p>\n<p>Wszystkie Amputacje wymagają leczenia <b>Chirurgicznego</b>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Więcej o <b>Chirurgii</b> przeczytasz w księdze zasad na stronie 181.</p>\n<p><strong>Oko</strong>: Utrata oka jest strasznym przeżyciem, ale w końcu każdy uczy się, jak żyć tylko z jednym. Prawdziwym nieszczęściem jest utrata obojga oczu, wtedy wszelkie Testy związane ze wzrokiem, a więc Testy Broni, Jeździectwa, Uników itd. obarczone są karą -30. Ponadto za każde stracone oko wszystkie Testy Ogłady otrzymują karę -5, ponieważ pobliźniony oczodół nie sprawia najlepszego wrażenia.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.weczkAMPlTjX7lqU",
+            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <b>Amputacja (trudność)</b>, musi wykonać Test <b>Odporności</b> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Powalenie]. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Oszołomienie]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) następuje @Condition[Utrata przytomności].</p>\n<p>Wszystkie Amputacje wymagają leczenia <b>Chirurgicznego</b>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Więcej o <b>@UUID[Compendium.wfrp4e-core.journals.JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgii}</b> przeczytasz w księdze zasad na stronie 181.</p>\n<p><strong>Oko</strong>: Utrata oka jest strasznym przeżyciem, ale w końcu każdy uczy się, jak żyć tylko z jednym. Prawdziwym nieszczęściem jest utrata obojga oczu, wtedy wszelkie Testy związane ze wzrokiem, a więc Testy Broni, Jeździectwa, Uników itd. obarczone są karą -30. Ponadto za każde stracone oko wszystkie Testy Ogłady otrzymują karę -5, ponieważ pobliźniony oczodół nie sprawia najlepszego wrażenia.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.weczkAMPlTjX7lqU",
             "effects": {
                 "HK53YUZJx5byXmup": {
                     "id": "HK53YUZJx5byXmup",
@@ -407,8 +726,29 @@
                 },
                 "OBcPvTtXweBfzAaU": {
                     "id": "OBcPvTtXweBfzAaU",
-                    "name": "Amputowane oko",
-                    "script": "if (args.type == \"characteristic\" && args.item == \"fel\") {\n  args.prefillModifiers.modifier -= 5;\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"fel\") {\n    args.prefillModifiers.modifier -= 5;\n  }\n}"
+                    "name": "Utracone Oko",
+                    "script": "if (args.type == \"characteristic\" && args.item == \"fel\") {\n  args.prefillModifiers.modifier -= 5;\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"fel\") {\n    args.prefillModifiers.modifier -= 5;\n  }\n}",
+                    "scriptData": [
+                        {
+                            "id": "OBcPvTtXweBfzAaU",
+                            "name": "Utracone Oko",
+                            "script": "args.fields.modifier -= 5",
+                            "activationScript": "return args.characteristic == \"fel\"",
+                            "hideScript": "return args.characteristic != \"fel\""
+                        },
+                        {
+                            "id": "OBcPvTtXweBfzAaU",
+                            "name": "Utracone Oko",
+                            "script": "this.actor.flags.useless[this.item.system.location.key] = true;"
+                        },
+                        {
+                            "id": "OBcPvTtXweBfzAaU",
+                            "name": "Utracone Oko",
+                            "script": "if (!args.flags.bothEyes)\n{\n\targs.flags.bothEyes = true;\n\targs.fields.modifier -= 30\n}",
+                            "activationScript": "return this.actor.flags.useless.rEye && this.actor.flags.useless.lEye && ([\"ws\", \"bs\"].includes(args.characteristic) || args.skill?.name?.includes(game.i18n.localize(\"NAME.Ride\")) || args.weapon || args.options.dodge)",
+                            "hideScript": "return !this.actor.flags.useless.rEye || !this.actor.flags.useless.lEye || [\"wp\", \"t\", \"s\"].includes(args.characteristic)"
+                        }
+                    ]
                 }
             },
             "penalty": "-5 do Ogłady",
@@ -417,12 +757,19 @@
         "Amputated Toe": {
             "id": "ZhMADOqoo0y8Q9bx",
             "name": "Amputowany palec u nogi",
-            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <b>Amputacja (trudność)</b>, musi wykonać Test <b>Odporności</b> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Powalenie]. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Oszołomienie]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) następuje @Condition[Utrata przytomności].</p>\n<p>Wszystkie Amputacje wymagają leczenia <b>Chirurgicznego</b>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Więcej o <b>Chirurgii</b> przeczytasz w księdze zasad na stronie 181.</p>\n<p><strong>Palce u nóg: </strong>Utrata palców u nóg mocno wpływa na równowagę. Za każdy utracony palec u nóg postać traci 1 punkt Zwinności i Walki Wręcz.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.ZhMADOqoo0y8Q9bx",
+            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <b>Amputacja (trudność)</b>, musi wykonać Test <b>Odporności</b> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Powalenie]. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Oszołomienie]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) następuje @Condition[Utrata przytomności].</p>\n<p>Wszystkie Amputacje wymagają leczenia <b>Chirurgicznego</b>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Więcej o <b>@UUID[Compendium.wfrp4e-core.journals.JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgii}</b> przeczytasz w księdze zasad na stronie 181.</p>\n<p><strong>Palce u nóg: </strong>Utrata palców u nóg mocno wpływa na równowagę. Za każdy utracony palec u nóg postać traci 1 punkt Zwinności i Walki Wręcz.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.ZhMADOqoo0y8Q9bx",
             "effects": {
                 "n47pJamskjv7bbXl": {
                     "id": "n47pJamskjv7bbXl",
-                    "name": "Amputowany palec u nogi"
+                    "name": "Amputowany palec u nogi",
+                    "scriptData": [
+                        {
+                            "id": "n47pJamskjv7bbXl",
+                            "name": "Amputowany palec u nogi",
+                            "script": "this.actor.system.characteristics.ag.modifier -= parseInt(this.item.system.location.value || 1)\n\nthis.actor.system.characteristics.ws.modifier -= parseInt(this.item.system.location.value || 1)"
+                        }
+                    ]
                 }
             },
             "location": "Palce u nogi"
@@ -430,13 +777,26 @@
         "Amputated Hand": {
             "id": "zyocWSzEZEC826NS",
             "name": "Amputowana dłoń",
-            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <strong>Amputacja (trudność)</strong>, musi wykonać Test <strong>Odporności</strong> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Prone]{Powalenie}. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Stunned]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) lub gorzej następuje @Condition[Unconscious]{Utrata Przytomności}.</p>\n<p>Wszystkie Amputacje wymagają leczenia <strong>Chirurgicznego</strong>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Patrz @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgia}.</p>\n<p><strong>Dłoń: </strong> Wszystkie Testy, w których niezbędne jest używanie obu dłoni, obarczone są karą -20, ponadto postać nie może używać broni dwuręcznych, jednak do przedramienia może przymocować tarczę. Jeśli odcięta została dłoń wiodąca, Testy walki przy pomocy drugiej dłoni nadal wykonywane są z karą -20. Za każde wydane 100 Punktów Doświadczenia można zmniejszyć tę karę o 5, ponieważ postać stopniowo uczy się władać drugą dłonią. Jeśli odcięte zostaną obie dłonie, jedynym wyjściem dla postaci jest nauka walki hakami.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.zyocWSzEZEC826NS",
+            "description": "<p>Za każdym razem, gdy postać otrzymuje Ranę Krytyczną oznaczoną jako <strong>Amputacja (trudność)</strong>, musi wykonać Test <strong>Odporności</strong> (poziom Trudności Testu w nawiasie), w przeciwnym wypadku otrzyma Stan @Condition[Prone]{Powalenie}. Jeśli Test zakończy się Porażką (-2 PS) lub gorzej, postać otrzymuje 1 poziom @Condition[Stunned]{Oszołomienia}. W przypadku Krytycznej Porażki (-4 PS) lub gorzej następuje @Condition[Unconscious]{Utrata Przytomności}.</p>\n<p>Wszystkie Amputacje wymagają leczenia <strong>Chirurgicznego</strong>, aby zagoiły się prawidłowo, co oznacza, że postać nie może wyleczyć 1 Rany bez wizyty u chirurga. Patrz @UUID[Compendium.wfrp4e-core.journals.JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgia}.</p>\n<p><strong>Dłoń:</strong> Wszystkie Testy, w których niezbędne jest używanie obu dłoni, obarczone są karą -20, ponadto postać nie może używać broni dwuręcznych, jednak do przedramienia może przymocować tarczę. Jeśli odcięta została dłoń wiodąca, Testy walki przy pomocy drugiej dłoni nadal wykonywane są z karą -20. Za każde wydane 100 Punktów Doświadczenia można zmniejszyć tę karę o 5, ponieważ postać stopniowo uczy się władać drugą dłonią. Jeśli odcięte zostaną obie dłonie, jedynym wyjściem dla postaci jest nauka walki hakami.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.zyocWSzEZEC826NS",
             "effects": {
                 "rTIWkLVhHcMduvPJ": {
                     "id": "rTIWkLVhHcMduvPJ",
                     "name": "Amputowana dłoń",
-                    "description": "Dowolny wiążący się z użyciem dwóch rąk"
+                    "description": "Dowolny wiążący się z użyciem dwóch rąk",
+                    "scriptData": [
+                        {
+                            "id": "rTIWkLVhHcMduvPJ",
+                            "name": "Amputowana dłoń",
+                            "script": "if (!args.flags.lostHand)\n{\n\targs.fields.lostHand = true;\n\targs.fields.modifier += -20;\n}",
+                            "hideScript": "return [\"fel\", \"wp\", \"int\", \"t\"].includes(args.characteristic)"
+                        },
+                        {
+                            "id": "rTIWkLVhHcMduvPJ",
+                            "name": "Amputowana dłoń",
+                            "script": "this.actor.flags.useless[this.item.system.location.key[0] + \"Arm\"] = true;"
+                        }
+                    ]
                 }
             },
             "penalty": "-20 do Testów wiążący się z użyciem dwóch rąk",

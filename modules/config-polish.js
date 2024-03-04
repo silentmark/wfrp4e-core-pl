@@ -76,8 +76,8 @@ Hooks.on("setup", function () {
 		human: "Człowiek",
 		dwarf: "Krasnolud",
 		halfling: "Niziołek",
-		helf: "Wysoki Elf",
-		welf: "Leśny Elf",
+		helf: "Wysoki elf",
+		welf: "Leśny elf",
 	};
 
 	WFRP4E.subspecies = {
@@ -101,6 +101,237 @@ Hooks.on("setup", function () {
 				talents: ["Wróżba Losu", "Błyskotliwość, Charyzmatyczny", 3],
 			},
 		},
+		welf: {
+			talsyn: {
+				name: "Talsyn", 
+				skills: [
+					"Broń Biała (Podstawowa)",
+					"Broń Zasięgowa (Łuk)",
+					"Język (Eltharin)",
+					"Odporność",
+					"Percepcja",
+					"Skradanie (Wieś)",
+					"Sztuka Przetrwania",
+					"Tropienie",
+							
+					"Atletyka",
+					"Wspinaczka",
+					"Występy (Śpiewanie)",
+					"Wiedza (Talsyn)",
+				],
+				talents: ["Wyczulony Zmysł", "Twardziel, Percepcja Magiczna", "Widzenie w Ciemności", "Czytanie/Pisanie, Niezwykle Odporny", "Włóczykij, Silne Nogi", 0]
+			},
+			arranoc: {
+				name: "Arranoc",
+				skills: [
+					"Broń Biała (Podstawowa)",
+					"Broń Zasięgowa (Łuk)",
+					"Język (Eltharin)",
+					"Odporność",
+					"Percepcja",
+					"Skradanie (Wieś)",
+					"Sztuka Przetrwania",
+					"Tropienie",
+							
+					"Przekupstwo",
+					"Charyzma",
+					"Mocna Głowa",
+					"Wiedza (Arronc)",
+				],
+				talents: ["Wyczulony Zmysł", "Twardziel, Percepcja Magiczna", "Widzenie w Ciemności", "Czytanie/Pisanie, Niezwykle Odporny", "Atrakcyjny, Charyzmatyczny", 0]
+			},
+			argwylon: {
+				name: "Argwylon",
+				skills: [
+					"Broń Biała (Podstawowa)",
+					"Broń Zasięgowa (Łuk)",
+					"Język (Eltharin)",
+					"Odporność",
+					"Percepcja",
+					"Skradanie (Wieś)",
+					"Sztuka Przetrwania",
+					"Tropienie",
+
+					"Oswajanie",
+					"Język (Magiczny)",
+					"Wiedza (Argwylon)",
+					"Wiedza (Magia)"
+				],
+				talents: ["Wyczulony Zmysł", "Twardziel, Percepcja Magiczna", "Widzenie w Ciemności", "Czytanie/Pisanie, Niezwykle Odporny", "Magia Prosta, Szósty Zmysł", 0]
+			},
+			modryn: {
+				name: "Modryn",
+				skills: [
+					"Broń Biała (Podstawowa)",
+					"Broń Zasięgowa (Łuk)",
+					"Język (Eltharin)",
+					"Odporność",
+					"Percepcja",
+					"Skradanie (Wieś)",
+					"Sztuka Przetrwania",
+					"Tropienie",
+
+					"Unik",
+					"Zastraszanie",
+					"Zastawianie Pułapek",
+					"Wiedza (Modryn)"
+				],
+				talents: ["Wyczulony Zmysł", "Twardziel, Percepcja Magiczna", "Widzenie w Ciemności", "Czytanie/Pisanie, Niezwykle Odporny", "Groźny, Czujny", 0]
+			},
+			cavaroc: {
+				name: "Cavaroc",
+				skills: [
+					"Broń Biała (Podstawowa)",
+					"Broń Zasięgowa (Łuk)",
+					"Język (Eltharin)",
+					"Odporność",
+					"Percepcja",
+					"Skradanie (Wieś)",
+					"Sztuka Przetrwania",
+					"Tropienie",
+
+					"Opieka nad Zwierzętami",
+					"Oswajanie",
+					"Jeździectwo (Konie)",
+					"Wiedza (Cavaroc)"
+				],
+				talents: ["Wyczulony Zmysł", "Twardziel, Percepcja Magiczna", "Widzenie w Ciemności", "Czytanie/Pisanie, Niezwykle Odporny", "Posłuch u Zwierząt, Szybki Refleks", 0]
+			},
+			atylwyth: {
+				name: "Atylwyth",
+				skills: [
+					"Broń Biała (Podstawowa)",
+					"Broń Zasięgowa (Łuk)",
+					"Język (Eltharin)",
+					"Odporność",
+					"Percepcja",
+					"Skradanie (Wieś)",
+					"Sztuka Przetrwania",
+					"Tropienie",
+
+					"Atletyka",
+					"Unik",
+					"Opanowanie",
+					"Wiedza (Atylwyth)"
+				],
+				talents: ["Wyczulony Zmysł", "Twardziel, Percepcja Magiczna", "Widzenie w Ciemności", "Czytanie/Pisanie, Niezwykle Odporny", "Odporny na (Zimno), Urodzony Wojownik", 0]
+			},
+			wydrioth: {
+				name: "Wydrioth",
+				skills: [
+					"Broń Biała (Podstawowa)",
+					"Broń Zasięgowa (Łuk)",
+					"Język (Eltharin)",
+					"Odporność",
+					"Percepcja",
+					"Skradanie (Wieś)",
+					"Sztuka Przetrwania",
+					"Tropienie",
+
+					"Wspinaczka", 
+					"Intuicja",
+					"Wiedza (Wydrioth)",
+					"Zastawianie Pułapek"
+				],
+				talents: ["Wyczulony Zmysł", "Twardziel, Percepcja Magiczna", "Widzenie w Ciemności", "Czytanie/Pisanie, Niezwykle Odporny", "Nieustępliwy, Bardzo Silny", 0]
+			},
+			cythral: {
+				name: "Cythral",
+				skills: [
+					"Broń Biała (Podstawowa)",
+					"Broń Zasięgowa (Łuk)",
+					"Język (Eltharin)",
+					"Odporność",
+					"Percepcja",
+					"Skradanie (Wieś)",
+					"Sztuka Przetrwania",
+					"Tropienie",
+
+					"Atletyka",
+					"Wspinaczka",
+					"Opanowanie",
+					"Wiedza (Cythral)"
+				],
+				talents: ["Wyczulony Zmysł", "Twardziel, Percepcja Magiczna", "Widzenie w Ciemności", "Czytanie/Pisanie, Niezwykle Odporny", "Twardziel, Tragarz", 0]
+			},
+
+			fyrdarric: {
+				name: "Fyr Darric",
+				skills: [
+					"Broń Biała (Podstawowa)",
+					"Broń Zasięgowa (Kusza)",
+					"Język (Eltharin)",
+					"Odporność",
+					"Percepcja",
+					"Opanowanie",
+					"Sztuka Przetrwania",
+					"Tropienie",
+
+					"Zwinne Palce",
+					"Kuglarstwo (Taniec)",
+					"Występy (Śpiewanie)",
+					"Wiedza (Fyr Darric)"
+				],
+				talents: ["Wyczulony Zmysł", "Twardziel, Percepcja Magiczna", "Widzenie w Ciemności", "Czytanie/Pisanie, Niezwykle Odporny", "Gładkie Słówka, Naśladowca", 0]
+			},
+			torgovann: {
+				name: "Torgovann",
+				skills: [
+					"Broń Biała (Podstawowa)",
+					"Broń Zasięgowa (Kusza)",
+					"Język (Eltharin)",
+					"Odporność",
+					"Percepcja",
+					"Opanowanie",
+					"Sztuka Przetrwania",
+					"Tropienie",
+
+					"Wycena",
+					"Wiedza (Metalurgia)",
+					"Wiedza (Torgovann)",
+					"Rzemiosło (Dowolne)"
+				],
+				talents: ["Wyczulony Zmysł", "Twardziel, Percepcja Magiczna", "Widzenie w Ciemności", "Czytanie/Pisanie, Niezwykle Odporny", "Wytwórca (dowolny), Zręczny", 0]
+			},
+			anmyr: {
+				name: "Anmyr",
+				skills: [
+					"Broń Biała (Podstawowa)",
+					"Broń Zasięgowa (Kusza)",
+					"Język (Eltharin)",
+					"Odporność",
+					"Percepcja",
+					"Opanowanie",
+					"Sztuka Przetrwania",
+					"Tropienie",
+
+					"Atletyka",
+					"Zastraszanie", 
+					"Wiedza (Anmyr)",
+					"Wiedza (Zwierzoludzie)"
+				],
+				talents: ["Wyczulony Zmysł", "Twardziel, Percepcja Magiczna", "Widzenie w Ciemności", "Czytanie/Pisanie, Niezwykle Odporny", "Nienawiść (Zwierzoludzie), Nieugięty", 0]
+			},
+			tirstyh: {
+				name: "Tirstyh",
+				skills: [
+					"Broń Biała (Podstawowa)",
+					"Broń Zasięgowa (Kusza)",
+					"Język (Eltharin)",
+					"Odporność",
+					"Percepcja",
+					"Opanowanie",
+					"Sztuka Przetrwania",
+					"Tropienie",
+
+					"Sztuka (Rzeżbiarstwo)",
+					"Opanowanie",
+					"Występy (Śpiewanie)",
+					"Wiedza (Tirstyh)"
+				],
+				talents: ["Wyczulony Zmysł", "Twardziel, Percepcja Magiczna", "Widzenie w Ciemności", "Czytanie/Pisanie, Niezwykle Odporny", "Zimna krew, Odporny na (Choroby)", 0]
+			},
+		}
 	};
 
 	WFRP4E.speciesCharacteristics = {
@@ -460,230 +691,264 @@ Hooks.on("setup", function () {
 		beasts: {
 			name: "Tradycja Zwierząt",
 			icon: "modules/wfrp4e-core/icons/spells/beasts.png",
-			transfer: true,
+			transfer: false,
 			flags: {
 				wfrp4e: {
-					effectApplication: "actor",
-					effectTrigger: "invoke",
 					lore: true,
-					script: `
-                        let value = 1
-                        let name = this.actor.prototypeToken.name                        
-                        if (game.user.isGM) {
-                            game.user.targets.forEach(t => {
-                                t.actor.applyFear(value, name)
-                            })
-                            game.user.updateTokenTargets([]);
-							game.user.broadcastActivity({targets:[]});
-                        }
-                        else {
-                            game.wfrp4e.utility.postFear(value, name)
-                        }
-                    `,
-				},
-			},
+					applicationData : {
+						type : "document",
+						documentType : "Item"
+					},
+					scriptData: [
+						{
+							"label": "Dodaj Cechę Stworzenia Strach",
+							"trigger": "rollCastTest",
+							"script": "if (args.test.result.castOutcome == \"success\")\n{\n	args.test.result.other.push(`<strong>${this.effect.name}</strong>: @Fear[1,${this.actor.prototypeToken.name}]`)\n\tif (!this.actor.has(game.i18n.localize(\"NAME.Fear\")))\n\t{\n\t\tlet item = await fromUuid(\"Compendium.wfrp4e-core.items.Item.pTorrE0l3VybAbtn\");\n\t\tlet data = item.toObject();\n\t\tdata.system.specification.value = 1\n\t\tthis.actor.createEmbeddedDocuments(\"Item\", [data])\n\t\tthis.script.scriptNotification(\"Dodano Cechę Stworzenia Strach\");\n\t}\n}"
+						}
+					]
+				}
+			}
 		},
 		death: {
 			name: "Tradycja Śmierci",
 			icon: "modules/wfrp4e-core/icons/spells/death.png",
-			transfer: true,
+			transfer: false,
 			flags: {
 				wfrp4e: {
-					effectApplication: "apply",
-					effectTrigger: "oneTime",
 					lore: true,
-					script: `
-                        if (this.actor.isOwner) {
-                            args.actor.addCondition("fatigued")
-                        }`,
-				},
-			},
+					applicationData : {
+						type : "target"
+					},
+					scriptData: [
+						{
+							trigger: "immediate",
+							label : "@effect.name",
+							script : `this.actor.addCondition("fatigued")`,
+							options : {
+								immediate : {
+									deleteEffect : true
+								}
+							}
+						}
+					]
+				}
+			}
 		},
 		fire: {
 			name: "Tradycja Ognia",
 			icon: "modules/wfrp4e-core/icons/spells/fire.png",
-			transfer: true,
+			transfer: false,
 			flags: {
 				wfrp4e: {
-					effectApplication: "apply",
-					effectTrigger: "oneTime",
 					lore: true,
-					script: `
-                        if (this.actor.isOwner) {
-                            args.actor.addCondition("ablaze")
-                        }`,
-				},
-			},
+					applicationData : {
+						type : "target"
+					},
+					scriptData: [
+						{
+							trigger: "immediate",
+							label : "@effect.name",
+							script : `this.actor.addCondition("ablaze")`,
+							options : {
+								immediate : {
+									deleteEffect : true
+								}
+							}
+						}
+					]
+				}
+			}
 		},
 		heavens: {
 			name: "Tradycja Niebios",
 			icon: "modules/wfrp4e-core/icons/spells/heavens.png",
-			transfer: true,
+			transfer: false,
 			flags: {
 				wfrp4e: {
-					effectApplication: "damage",
-					effectTrigger: "applyDamage",
 					lore: true,
-					script: `
-                    let applyAP = (args.damageType == game.wfrp4e.config.DAMAGE_TYPE.IGNORE_TB || args.damageType == game.wfrp4e.config.DAMAGE_TYPE.NORMAL)
-                    
-                    let AP = args.AP
-                    let metalValue = 0;
-                    for (let layer of AP.layers) {
-                       if (layer.metal) {
-                          metalValue += layer.value
-                       }
-                    }
-                    
-                    if (applyAP) {
-                    
-                       args.totalWoundLoss +=  metalValue
-                       let newUsed = AP.used - metalValue;
-                    
-                       let apIndex = args.messageElements.findIndex(i => i.includes(game.i18n.localize("AP")))
-                       args.messageElements[apIndex] = newUsed + "/" + AP.value + " " + game.i18n.localize("AP")
-                    }
-                        `,
+					applicationData : {
+						type : "document",
+						documentType : "Item"
+					},
+					scriptData: [
+						{
+							trigger: "computeApplyDamageModifiers",
+							label : "@effect.name",
+							script : `
+							if (args.applyAP && args.modifiers.ap.metal) 
+							{
+								args.modifiers.ap.ignored += args.modifiers.ap.metal
+								args.modifiers.ap.details.push("<strong>" + this.effect.name + "</strong>: Zigonrowano Metal (" + args.modifiers.ap.metal + ")");
+								args.modifiers.ap.metal = 0
+							}
+							`
+						}
+					]
 				},
-			},
+			}
 		},
 		metal: {
 			name: "Tradycja Metalu",
 			icon: "modules/wfrp4e-core/icons/spells/metal.png",
-			transfer: true,
+			transfer: false,
 			flags: {
 				wfrp4e: {
-					effectApplication: "damage",
-					effectTrigger: "applyDamage",
 					lore: true,
-					script: `
-                    let applyAP = (args.damageType == game.wfrp4e.config.DAMAGE_TYPE.IGNORE_TB || args.damageType == game.wfrp4e.config.DAMAGE_TYPE.NORMAL)
-    
-                    let AP = args.AP
-                    let metalValue = 0;
-                    for (let layer of AP.layers) {
-                       if (layer.metal) {
-                          metalValue += layer.value
-                       }
-                    }
-                    
-                    
-                    if (metalValue)
-                        args.messageElements.push(\`-\${metalValue} Metalowy Pancerz\`)
-                    args.totalWoundLoss += metalValue
-                    
-                    if (applyAP) {
-                    
-                       args.totalWoundLoss +=  metalValue
-                       let newUsed = AP.used - metalValue;
-                    
-                       let apIndex = args.messageElements.findIndex(i => i.includes(game.i18n.localize("AP")))
-                       args.messageElements[apIndex] = newUsed + "/" + AP.value + " " + game.i18n.localize("AP")
-                    }
-                    `,
-				},
-			},
+					applicationData : {
+						type : "document",
+						documentType : "Item"
+					},
+					scriptData: [
+						{
+							trigger: "computeApplyDamageModifiers",
+							label : "@effect.name",
+							script : `
+							if (args.applyAP && args.modifiers.ap.metal) 
+							{
+								args.modifiers.ap.ignored += args.modifiers.ap.metal
+								args.modifiers.other.push({value : args.modifiers.ap.metal, label : this.effect.name, details : "Add Metal AP to Damage" })
+								args.modifiers.ap.details.push("<strong>" + this.effect.name + "</strong>: Ignore Metal (" + args.modifiers.ap.metal + ")");
+								args.modifiers.ap.metal = 0
+							}
+							`
+						}
+					]
+				}
+			}
 		},
 		life: {
 			name: "Tradycja Życia",
 			icon: "modules/wfrp4e-core/icons/spells/life.png",
-			transfer: true,
+			transfer: false,
 			flags: {
 				wfrp4e: {
-					effectApplication: "apply",
-					effectTrigger: "oneTime",
 					lore: true,
-					script: `
-                    fromUuid(this.effect.origin).then(caster => {
-                        if (this.actor.isOwner) {
-                            if (!this.actor.has(game.i18n.localize("NAME.Daemonic")) && !this.actor.has(game.i18n.localize("NAME.Undead"))) {
-                                let bleeding = this.actor.hasCondition("bleeding")
-                                let fatigued = this.actor.hasCondition("fatigued")
-                                if (bleeding) this.actor.removeCondition("bleeding", bleeding.flags.wfrp4e.value)
-                                if (fatigued) this.actor.removeCondition("fatigued", fatigued.flags.wfrp4e.value)
-                            }
-                            else if (this.actor.has(game.i18n.localize("NAME.Undead"))) {
-                                this.actor.applyBasicDamage(caster.system.characteristics.wp.bonus, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL});
-                            }
-                        }
-                    });
-                        `,
-				},
-			},
+					applicationData : {
+						type : "target"
+					},
+					scriptData: [
+						{
+							trigger: "immediate",
+							label : "@effect.name",
+							script : `
+							let caster = this.effect.sourceActor
+							if (!this.actor.has(game.i18n.localize("NAME.Daemonic")) && !this.actor.has(game.i18n.localize("NAME.Undead")))
+							{
+								await this.actor.hasCondition("bleeding")?.delete();
+								await this.actor.hasCondition("fatigued")?.delete();
+							}
+							else if (this.actor.has(game.i18n.localize("NAME.Undead")))
+							{
+								this.script.scriptMessage(await this.actor.applyBasicDamage(caster.system.characteristics.wp.bonus, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL, suppressMsg : true}));
+							}`,
+							options : {
+								immediate : {
+									deleteEffect : true
+								}
+							}
+						}
+					]
+				}
+			}
 		},
 		light: {
 			name: "Tradycja Światła",
 			icon: "modules/wfrp4e-core/icons/spells/light.png",
-			transfer: true,
+			transfer: false,
 			flags: {
 				wfrp4e: {
-					effectApplication: "apply",
-					effectTrigger: "oneTime",
 					lore: true,
-					script: `
-                fromUuid(this.effect.origin).then(caster => {
-                    if (this.actor.isOwner) {
-                        let bleeding = this.actor.addCondition("blinded")
-                        if (this.actor.has(game.i18n.localize("NAME.Undead")) || this.actor.has(game.i18n.localize("NAME.Daemonic")))
-                            this.actor.applyBasicDamage(caster.system.characteristics.int.bonus, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL});
-                    }
-                })
-                    `,
-				},
-			},
+					applicationData : {
+						type : "target"
+					},
+					scriptData: [
+						{
+							trigger: "immediate",
+							label : "@effect.name",
+							script : `
+							let caster = this.effect.sourceActor
+							await this.actor.addCondition("blinded")
+							if (this.actor.has(game.i18n.localize("NAME.Undead")) || this.actor.has(game.i18n.localize("NAME.Daemonic")))
+							{
+								this.script.scriptMessage(await this.actor.applyBasicDamage(caster.system.characteristics.int.bonus, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL, suppressMsg : true}));
+							}`,
+							options : {
+								immediate : {
+									deleteEffect : true
+								}
+							}
+						}
+					]
+				}
+			}
 		},
 		shadow: {
 			name: "Tradycja Cieni",
 			icon: "modules/wfrp4e-core/icons/spells/shadow.png",
-			transfer: true,
+			transfer: false,
 			flags: {
 				wfrp4e: {
-					effectApplication: "damage",
-					effectTrigger: "applyDamage",
 					lore: true,
-					script: `
-                    let applyAP = (args.damageType == game.wfrp4e.config.DAMAGE_TYPE.IGNORE_TB || args.damageType == game.wfrp4e.config.DAMAGE_TYPE.NORMAL)
-                    
-                    if (applyAP) {
-                       let AP = args.AP
-                    
-                       args.totalWoundLoss += AP.used
-                       let apIndex = args.messageElements.findIndex(i => i.includes(game.i18n.localize("AP")))
-                       args.messageElements[apIndex] = "0/" + AP.value + " " + game.i18n.localize("AP")
-                    }`,
-				},
-			},
+					applicationData : {
+						type : "document",
+						documentType : "Item"
+					},
+					scriptData: [
+						{
+							trigger: "computeApplyDamageModifiers",
+							label : "@effect.name",
+							script : `
+							if (args.applyAP && args.modifiers.ap.magical) 
+							{
+								let nonmagical = args.modifiers.ap.value - args.modifiers.ap.magical
+								args.modifiers.ap.ignored += nonmagical
+								args.modifiers.ap.details.push("<strong>" + this.effect.name + "</strong>: Zignorowano niemagiczny pancerz (" + nonmagical + ")");
+							}
+							`
+						}
+					]
+				}
+			}
 		},
 		hedgecraft: {
 			name: "Tradycja Guślarstwa",
 			icon: "modules/wfrp4e-core/icons/spells/hedgecraft.png",
-			transfer: true,
+			transfer: false,
 			flags: {
 				wfrp4e: {
 					effectApplication: "actor",
 					effectTrigger: "invoke",
 					lore: true,
 					script: "",
-				},
-			},
+				}
+			}
 		},
 		witchcraft: {
 			name: "Tradycja Czarownictwa",
 			icon: "modules/wfrp4e-core/icons/spells/witchcraft.png",
-			transfer: true,
+			transfer: false,
 			flags: {
 				wfrp4e: {
-					effectApplication: "apply",
-					effectTrigger: "oneTime",
 					lore: true,
-					script: `
-                        if (this.actor.isOwner) {
-                            args.actor.addCondition("bleeding")
-                        }`,
-				},
-			},
-		},
-	};
+					applicationData : {
+						type : "target"
+					},
+					scriptData: [
+						{
+							trigger: "immediate",
+							label : "@effect.name",
+							script : `this.actor.addCondition("bleeding")`,
+							options : {
+								immediate : {
+									deleteEffect : true
+								}
+							}
+						}
+					]
+				}
+			}
+		}
+	}
 
 	WFRP4E.symptomEffects = {
         "WFRP4E.Symptom.Blight": {

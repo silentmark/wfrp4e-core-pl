@@ -1,7 +1,12 @@
 {
     "label": "Makra",
     "folders": {
-        "Trappings": "Przedmioty"
+        "Trappings": "Przedmioty",
+        "Archived": "Zarchiwizowane",
+        "GM Utility": "Narzędzia MG",
+        "Integrations": "Integracje",
+        "Item Piles": "Stosy Przedmiotów",
+        "Player Utility": "Narzędzia Gracza"
     },
     "entries": {
         "Check Careers!": {
@@ -66,22 +71,22 @@
         },
         "Set Infighting (targets)": {
             "id": "ynLKA5lklO79GE9P",
-            "name": "Wejdź w \"Skrócenie Dystansu\" (z celami)",
+            "name": "W Zwarciu (cele)",
             "command": "let targets = game.user.targets;\n\ntargets.forEach(tkn => {\n    let actor = tkn.actor;\n    actor.addSystemEffect('infighting')\n});"
         },
         "Set Token Friendly": {
             "id": "Os0KUwlf9cIuNNWe",
-            "name": "Zmień znacznik na przyjazny",
+            "name": "Zmień Token na Przyjazny",
             "command": "async function setToken(token, disp)\n{\n\tawait token.document.update({disposition: disp});\n\ttoken.refresh(true);\n}\n\ncanvas.tokens.controlled.forEach(tkn => setToken(tkn, 1));"
         },
         "Set Token Hostile": {
             "id": "Ak5P5kquz9zT5Rv2",
-            "name": "Zmień znacznik na wrogi",
+            "name": "Zmień Token na Wrogi",
             "command": "async function setToken(token, disp)\n{\n\tawait token.document.update({disposition: disp});\n\ttoken.refresh(true);\n}\n\ncanvas.tokens.controlled.forEach(tkn => setToken(tkn, -1));"
         },
         "Set Token Neutral": {
             "id": "iPlXQiBGBjbmW0SW",
-            "name": "Zmień znacznik na neutralny",
+            "name": "Zmień Token na Neutralny",
             "command": "async function setToken(token, disp)\n{\n\tawait token.document.update({disposition: disp});\n\ttoken.refresh(true);\n}\n\ncanvas.tokens.controlled.forEach(tkn => setToken(tkn, 0));"
         }
     }

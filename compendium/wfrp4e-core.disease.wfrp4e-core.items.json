@@ -22,11 +22,11 @@
             "effects": {
                 "FLB8zGutyEQWgRlb": {
                     "id": "FLB8zGutyEQWgRlb",
-                    "name": "Nawroty (Sporadyczne)"
+                    "name": "Nawroty (sporadyczne)"
                 },
                 "TbXenWmw4yRg7qlf": {
                     "id": "TbXenWmw4yRg7qlf",
-                    "name": "Uciążliwa rana",
+                    "name": "Uciążliwa Rana",
                     "script": "\n                        if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty : \"average\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            let disease = await fromUuid(\"Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb\");\n            args.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()]);\n        }\n    });\n}"
                 },
                 "tf4IaDGr6PVsHl7w": {
@@ -66,7 +66,7 @@
                 },
                 "NKiIPNQehPO9eaxm": {
                     "id": "NKiIPNQehPO9eaxm",
-                    "name": "Uwiąd (Średnie)",
+                    "name": "Uwiąd (Umiarkowany)",
                     "script": "\n                        let difficulty = \"\"\nif (this.effect.name.includes(game.i18n.localize(\"Moderate\"))) {\n    difficulty = \"easy\";\n}\nelse if (this.effect.name.includes(game.i18n.localize(\"Severe\"))) {\n    difficulty = \"average\";\n}\nelse {\n    difficulty = \"veasy\";\n}\n\nif (this.actor.isOwner) { \n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {context : {failure : args.actor.name + \" umiera z powodu Uwiądu\"}, absolute: {difficulty}, appendTitle : \" - Uwiąd\"}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"dead\")\n        }\n    });\n}"
                 },
                 "qNWBcG8TYO5QGmLk": {
@@ -91,7 +91,7 @@
             "effects": {
                 "1PIxT3ieQbomnHR5": {
                     "id": "1PIxT3ieQbomnHR5",
-                    "name": "Nawroty (Częste)"
+                    "name": "Nawroty (umiarkowane)"
                 },
                 "aHhqh3ReDbl1CC33": {
                     "id": "aHhqh3ReDbl1CC33",
@@ -129,7 +129,7 @@
                 },
                 "Sc30lmNSCIJ0DGab": {
                     "id": "Sc30lmNSCIJ0DGab",
-                    "name": "Biegunka (Poważny)"
+                    "name": "Biegunka (poważna)"
                 },
                 "VBP4fo86uuFd6YiW": {
                     "id": "VBP4fo86uuFd6YiW",
@@ -158,7 +158,7 @@
                 },
                 "Bhn6hjQFNCEMU6et": {
                     "id": "Bhn6hjQFNCEMU6et",
-                    "name": "Uciążliwa rana",
+                    "name": "Uciążliwa Rana",
                     "script": "\n                        if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty : \"average\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            let disease = await fromUuid(\"Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb\");\n            args.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()]);\n        }\n    });\n}"
                 },
                 "InNO9elKVbhdUMyB": {
@@ -197,7 +197,7 @@
                 },
                 "V2oU1zPnQR94HCJQ": {
                     "id": "V2oU1zPnQR94HCJQ",
-                    "name": "Gorączka (Poważny)",
+                    "name": "Gorączka (wysoka)",
                     "script": "\n                       \n                    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"]\nif (args.type == \"weapon\") {\n    args.prefillModifiers.modifier -= 10;\n}\nelse if (args.type == \"characteristic\") {\n    if (applicableCharacteristics.includes(args.item)) {\n        args.prefillModifiers.modifier -= 10;\n    }\n}\nelse if (args.type == \"skill\") {\n    if (applicableCharacteristics.includes(args.item.characteristic.key)) {\n        args.prefillModifiers.modifier -= 10\n    }\n}"
                 }
             },
@@ -237,7 +237,7 @@
                 },
                 "PfGvYCS6yUbrcpYr": {
                     "id": "PfGvYCS6yUbrcpYr",
-                    "name": "Nawroty (Umiarkowane)"
+                    "name": "Nawroty (umiarkowane)"
                 },
                 "QdZZlcWkKdwev0VI": {
                     "id": "QdZZlcWkKdwev0VI",
@@ -271,7 +271,7 @@
                 },
                 "Sp93ZiJ4eq26v8UO": {
                     "id": "Sp93ZiJ4eq26v8UO",
-                    "name": "Biegunka (Średnie)"
+                    "name": "Biegunka (umiarkowana)"
                 }
             },
             "duration_value": "1d10",

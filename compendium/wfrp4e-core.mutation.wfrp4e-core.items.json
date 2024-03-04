@@ -12,12 +12,23 @@
             "id": "0jaMZRJvJ5L12WZ2",
             "name": "Chaotyczne sny",
             "description": "<p>Postać przez pierwsze 2 godziny po śnie uznawana jest za @Condition[Zmęczenie]{Zmęczoną}.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.0jaMZRJvJ5L12WZ2",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.0jaMZRJvJ5L12WZ2",
             "effects": {
                 "XRfGwpANht6wpmpR": {
                     "id": "XRfGwpANht6wpmpR",
                     "name": "Zmęczenie",
                     "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');"
+                },
+                "kPqNULuMP6gPY86x": {
+                    "scriptData": [
+                        {
+                            "id": "kPqNULuMP6gPY86x",
+                            "name": "Chaotyczne sny",
+                            "script": "this.actor.addCondition(\"fatigued\");"
+                        }
+                    ],
+                    "id": "kPqNULuMP6gPY86x",
+                    "name": "Chaotyczne sny"
                 }
             },
             "modifier": " "
@@ -26,7 +37,7 @@
             "id": "1MI5UADJkt042mGm",
             "name": "Paranoja",
             "description": "<p></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.1MI5UADJkt042mGm",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.1MI5UADJkt042mGm",
             "effects": {
                 "mfFTDXJ0SygBMRmF": {
                     "id": "mfFTDXJ0SygBMRmF",
@@ -39,7 +50,7 @@
             "id": "2JQWBLFSixeI6W6L",
             "name": "Zazdrosne myśli",
             "description": "<p></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.2JQWBLFSixeI6W6L",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.2JQWBLFSixeI6W6L",
             "effects": {
                 "rAvBBRHH27iSpP87": {
                     "id": "rAvBBRHH27iSpP87",
@@ -52,7 +63,7 @@
             "id": "2xvxa9Y8cqHzxuPd",
             "name": "Mitomania",
             "description": "<p></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.2xvxa9Y8cqHzxuPd",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.2xvxa9Y8cqHzxuPd",
             "effects": {
                 "4rt99MvDqb1zR2MG": {
                     "id": "4rt99MvDqb1zR2MG",
@@ -65,7 +76,7 @@
             "id": "4OMI3eligS2L0LiL",
             "name": "Krótkie nogi",
             "description": "<p></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.4OMI3eligS2L0LiL",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.4OMI3eligS2L0LiL",
             "effects": {
                 "Go6qdctMDg9FSLwm": {
                     "id": "Go6qdctMDg9FSLwm",
@@ -78,12 +89,25 @@
             "id": "apBxYVRVp4Jt6gxy",
             "name": "Złe zamiary",
             "description": "<p></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.apBxYVRVp4Jt6gxy",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.apBxYVRVp4Jt6gxy",
             "effects": {
                 "zE2zFBWnHMLkNdqR": {
                     "id": "zE2zFBWnHMLkNdqR",
                     "name": "Złe zamiary",
-                    "script": "if (args.type == \"weapon\" || args.type == \"cast\") {\n   args.prefillModifiers.modifier += 10;\n}\nelse {\n   args.prefillModifiers.modifier -= 10;\n}"
+                    "script": "if (args.type == \"weapon\" || args.type == \"cast\") {\n   args.prefillModifiers.modifier += 10;\n}\nelse {\n   args.prefillModifiers.modifier -= 10;\n}",
+                    "scriptData": [
+                        {
+                            "id": "zE2zFBWnHMLkNdqR",
+                            "name": "Złe zamiary",
+                            "script": "args.fields.modifier += 10",
+                            "activationScript": "return args.item?.system.magicMissile?.value || args.item?.system.attackType"
+                        },
+                        {
+                            "id": "zE2zFBWnHMLkNdqR",
+                            "name": "Złe zamiary",
+                            "activationScript": "return !args.item?.system.magicMissile?.value && !args.item?.system.attackType"
+                        }
+                    ]
                 }
             },
             "modifier": "-10 do Testów, które nie mają na celu krzywdzenia innych; +10, jeśli zamiarem jest wyrządzenie krzywdy"
@@ -92,14 +116,27 @@
             "id": "ArCg0WaBxLgPQA8F",
             "name": "Niejednolite opierzenie",
             "description": "<p>Rzuć dwukrotnie w tabeli @Table[hitloc]{Miejsca Trafień}, by ustalić miejsca porosłe pierzem.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.ArCg0WaBxLgPQA8F",
-            "modifier": " "
+            "sourceId": "Compendium.wfrp4e-core.items.Item.ArCg0WaBxLgPQA8F",
+            "modifier": " ",
+            "effects": {
+                "uWt4JX3gbgv8Oqg0": {
+                    "scriptData": [
+                        {
+                            "id": "uWt4JX3gbgv8Oqg0",
+                            "name": "Niejednolite opierzenie",
+                            "script": "let locations = [];\n\nwhile (locations.length < 2)\n{\n    let loc = await game.wfrp4e.tables.rollTable(\"hitloc\", {hideDSN : true})\n    if (!locations.includes(loc.result))\n    {\n        locations.push(loc.result);\n    }\n}\n\nlocationText = locations.map(i => game.wfrp4e.config.locations[i]).join(\", \")\n\nthis.item.updateSource({name : this.item.name += ` (${locationText})`, \"flags.wfrp4e.locations\" : locations})\nthis.effect.updateSource({\"flags.wfrp4e.locations\" : locations})"
+                        }
+                    ],
+                    "id": "uWt4JX3gbgv8Oqg0",
+                    "name": "Niejednolite opierzenie"
+                }
+            }
         },
         "Totally Unhinged": {
             "id": "atYAndIzpFIfq0Wb",
             "name": "Kompletny świr",
             "description": "<p></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.atYAndIzpFIfq0Wb",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.atYAndIzpFIfq0Wb",
             "effects": {
                 "JTKbY08Ya8XiV33s": {
                     "id": "JTKbY08Ya8XiV33s",
@@ -112,7 +149,7 @@
             "id": "BZ5iT2wQq7rOQ0Vo",
             "name": "Drżączka",
             "description": "<p></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.BZ5iT2wQq7rOQ0Vo",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.BZ5iT2wQq7rOQ0Vo",
             "effects": {
                 "sijTILz9kZO5oASo": {
                     "id": "sijTILz9kZO5oASo",
@@ -125,7 +162,7 @@
             "id": "CAqBwTw411GEyc4d",
             "name": "Straszny niepokój",
             "description": "<p></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.CAqBwTw411GEyc4d",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.CAqBwTw411GEyc4d",
             "effects": {
                 "Hp214Mf1VQEpwpN5": {
                     "id": "Hp214Mf1VQEpwpN5",
@@ -138,14 +175,27 @@
             "id": "cXeFXMf7IhxiGGPK",
             "name": "Sącząca się ropa",
             "description": "<p>Rzuć w tabeli @Table[hitloc]{Miejsca Trafień}, by ustalić miejsce, z którego się sączy.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.cXeFXMf7IhxiGGPK",
-            "modifier": " "
+            "sourceId": "Compendium.wfrp4e-core.items.Item.cXeFXMf7IhxiGGPK",
+            "modifier": " ",
+            "effects": {
+                "OLcQ5yT15mBTYo0L": {
+                    "scriptData": [
+                        {
+                            "id": "OLcQ5yT15mBTYo0L",
+                            "name": "Sącząca się ropa",
+                            "script": "let location = await game.wfrp4e.tables.rollTable(\"hitloc\", {hideDSN: true})\n\nthis.item.updateSource({name : `${this.item.name} (${location.description})`})\nthis.script.scriptMessage(`<strong>Lokacja: </strong> ${location.description}`, { whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+                        }
+                    ],
+                    "id": "OLcQ5yT15mBTYo0L",
+                    "name": "Sącząca się ropa"
+                }
+            }
         },
         "Inhuman Beauty": {
             "id": "dAnz27Q409wtHfxc",
             "name": "Nieludzka uroda",
             "description": "<p></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.dAnz27Q409wtHfxc",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.dAnz27Q409wtHfxc",
             "effects": {
                 "73ZIsujmxVg9kAlF": {
                     "id": "73ZIsujmxVg9kAlF",
@@ -158,7 +208,7 @@
             "id": "dsYDcdQfJGc7wxSX",
             "name": "Wychudzone ciało",
             "description": "<p></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.dsYDcdQfJGc7wxSX",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.dsYDcdQfJGc7wxSX",
             "effects": {
                 "Hkhq8FTiyNEsfHUF": {
                     "id": "Hkhq8FTiyNEsfHUF",
@@ -171,7 +221,7 @@
             "id": "DVF74DvmMttrvboI",
             "name": "Nieustanne dreszcze",
             "description": "<p></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.DVF74DvmMttrvboI",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.DVF74DvmMttrvboI",
             "effects": {
                 "FsfgCNLgJOUHSGMo": {
                     "id": "FsfgCNLgJOUHSGMo",
@@ -184,7 +234,7 @@
             "id": "gMsd6II7Y1oBMddp",
             "name": "Uzależnienie od adrenaliny",
             "description": "<p></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.gMsd6II7Y1oBMddp",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.gMsd6II7Y1oBMddp",
             "effects": {
                 "39WPkucQosauvNSW": {
                     "id": "39WPkucQosauvNSW",
@@ -197,12 +247,19 @@
             "id": "GtACPDzi25YNgV0m",
             "name": "Mięsista macka",
             "description": "<p>Postać zyskuje Cechę Stworzenia @UUID[Compendium.wfrp4e-core.items.4xF7M6ylIiGntekh]{Macki}.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.GtACPDzi25YNgV0m",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.GtACPDzi25YNgV0m",
             "effects": {
                 "FeJR7iTtlWYjOwo9": {
                     "id": "FeJR7iTtlWYjOwo9",
                     "name": "Mięsista macka",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.4xF7M6ylIiGntekh\").then(item => {\n    item = item.toObject();\n    args.actor.createEmbeddedDocuments(\"Item\", [item]);\n})"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.4xF7M6ylIiGntekh\").then(item => {\n    item = item.toObject();\n    args.actor.createEmbeddedDocuments(\"Item\", [item]);\n})",
+                    "scriptData": [
+                        {
+                            "id": "FeJR7iTtlWYjOwo9",
+                            "name": "Mięsista macka",
+                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.4xF7M6ylIiGntekh\")\nitem = item.toObject()\nitem.name = this.effect.name\nthis.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect : this.effect.id})\n"
+                        }
+                    ]
                 }
             },
             "modifier": " "
@@ -211,12 +268,19 @@
             "id": "HEaxp50NEPnFiihl",
             "name": "Strach przed samotnością",
             "description": "<p></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.HEaxp50NEPnFiihl",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.HEaxp50NEPnFiihl",
             "effects": {
                 "egLqzQE6VJ1xG91R": {
                     "id": "egLqzQE6VJ1xG91R",
                     "name": "Strach przed samotnością",
-                    "description": "Dowolny Test wykonywanych w samotności"
+                    "description": "Dowolny Test wykonywanych w samotności",
+                    "scriptData": [
+                        {
+                            "id": "egLqzQE6VJ1xG91R",
+                            "name": "Strach przed samotnością",
+                            "script": "args.fields.modifier -= 10;"
+                        }
+                    ]
                 }
             },
             "modifier": "-10 do wszelkich Testów wykonywanych w samotności"
@@ -225,12 +289,19 @@
             "id": "hTm0rQkQTpm0OT3n",
             "name": "Stalowa skóra",
             "description": "<p></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.hTm0rQkQTpm0OT3n",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.hTm0rQkQTpm0OT3n",
             "effects": {
                 "GIKMXwsPucxzpD3K": {
                     "id": "GIKMXwsPucxzpD3K",
                     "name": "Stalowa skóra",
-                    "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 2;\nAP[\"rArm\"].value += 2;\nAP[\"lArm\"].value += 2;\nAP[\"body\"].value += 2;\nAP[\"lLeg\"].value += 2;\nAP[\"rLeg\"].value += 2;"
+                    "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 2;\nAP[\"rArm\"].value += 2;\nAP[\"lArm\"].value += 2;\nAP[\"body\"].value += 2;\nAP[\"lLeg\"].value += 2;\nAP[\"rLeg\"].value += 2;",
+                    "scriptData": [
+                        {
+                            "id": "GIKMXwsPucxzpD3K",
+                            "name": "Stalowa skóra",
+                            "script": "this.actor.status.addArmour(2, {source: this.effect})"
+                        }
+                    ]
                 }
             },
             "modifier": "+2 Punkty Pancerza na wszystkich Miejscach Trafienia, Zwinność -10"
@@ -239,7 +310,7 @@
             "id": "iLZcSRUbxKBecACZ",
             "name": "Otyłość",
             "description": "<p></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.iLZcSRUbxKBecACZ",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.iLZcSRUbxKBecACZ",
             "effects": {
                 "A3qEjzJ8tFTTWDPl": {
                     "id": "A3qEjzJ8tFTTWDPl",
@@ -252,12 +323,21 @@
             "id": "JaEYSLJU5B2bknNc",
             "name": "Ogromne oko",
             "description": "<p></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.JaEYSLJU5B2bknNc",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.JaEYSLJU5B2bknNc",
             "effects": {
                 "iZgljsMJIgKH6L0P": {
                     "id": "iZgljsMJIgKH6L0P",
                     "name": "Ogromne oko",
-                    "description": "Percepcja związana ze wzrokiem"
+                    "description": "Percepcja związana ze wzrokiem",
+                    "scriptData": [
+                        {
+                            "id": "iZgljsMJIgKH6L0P",
+                            "name": "Ogromne oko",
+                            "script": "args.fields.modifier += 10;",
+                            "activationScript": "return args.skill?.name == game.i18n.localize(\"NAME.Perception\")",
+                            "hideScript": "return args.characteristic != \"i\""
+                        }
+                    ]
                 }
             },
             "modifier": "+10 do wszystkich związanych ze wzrokiem Testów Percepcji"
@@ -266,12 +346,21 @@
             "id": "JR6GZJDVNupDnnbm",
             "name": "Odwrócona twarz",
             "description": "<p></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.JR6GZJDVNupDnnbm",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.JR6GZJDVNupDnnbm",
             "effects": {
                 "W6GtdIEcYRTTdUbk": {
                     "id": "W6GtdIEcYRTTdUbk",
                     "name": "Odwrócona twarz",
-                    "script": "if (args.type == \"characteristic\" && args.item == \"fel\") {\n  args.prefillModifiers.modifier -= 20;\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"fel\") {\n    args.prefillModifiers.modifier -= 20\n  }\n}"
+                    "script": "if (args.type == \"characteristic\" && args.item == \"fel\") {\n  args.prefillModifiers.modifier -= 20;\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"fel\") {\n    args.prefillModifiers.modifier -= 20\n  }\n}",
+                    "scriptData": [
+                        {
+                            "id": "W6GtdIEcYRTTdUbk",
+                            "name": "Odwrócona twarz",
+                            "script": "args.fields.modifier -= 20",
+                            "activationScript": "return args.characteristic == \"fel\"",
+                            "hideScript": "return args.characteristic != \"fel\""
+                        }
+                    ]
                 }
             },
             "modifier": "–20 do wszystkich testów Ogłady"
@@ -280,7 +369,7 @@
             "id": "JS0LEfU1Y5clOJpT",
             "name": "Dręczące wizje",
             "description": "<p></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.JS0LEfU1Y5clOJpT",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.JS0LEfU1Y5clOJpT",
             "effects": {
                 "FckYHxsq1fxb9QNo": {
                     "id": "FckYHxsq1fxb9QNo",
@@ -293,12 +382,21 @@
             "id": "kwLyvpNGE1MrDUw9",
             "name": "Zwisający jęzor",
             "description": "<p></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.kwLyvpNGE1MrDUw9",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.kwLyvpNGE1MrDUw9",
             "effects": {
                 "UuWZEOCSqCXzdXO8": {
                     "id": "UuWZEOCSqCXzdXO8",
                     "name": "Zwisający jęzor",
-                    "description": "Test Języka wymagający mówienia"
+                    "description": "Test Języka wymagający mówienia",
+                    "scriptData": [
+                        {
+                            "id": "UuWZEOCSqCXzdXO8",
+                            "name": "Zwisający jęzor",
+                            "script": "args.fields.modifier -= 10;",
+                            "activationScript": "return args.skill?.name.includes(game.i18n.localize(\"NAME.Language\"))",
+                            "hideScript": "return !args.skill?.name.includes(game.i18n.localize(\"NAME.Language\"))"
+                        }
+                    ]
                 }
             },
             "modifier": "-10 do wszystkich Testów Języka wymagających mówienia"
@@ -307,19 +405,44 @@
             "id": "LWBMThQzG5aCSNXP",
             "name": "Świecąca skóra",
             "description": "<p>Blask porównywalny z płomieniem świecy.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.LWBMThQzG5aCSNXP",
-            "modifier": " "
+            "sourceId": "Compendium.wfrp4e-core.items.Item.LWBMThQzG5aCSNXP",
+            "modifier": " ",
+            "effects": {
+                "jkqOgmW6kPSnFuP3": {
+                    "scriptData": [
+                        {
+                            "id": "jkqOgmW6kPSnFuP3",
+                            "name": "Świecąca skóra",
+                            "script": "args.update({light : {\n    \"dim\": 10,\n    \"bright\": 5,\n    \"alpha\": 0.5,\n    \"animation\": {\n        \"speed\": 4,\n        \"intensity\": 4,\n        \"type\": \"flame\",\n    },\n    \"color\": \"#ac9e6c\",\n}});"
+                        },
+                        {
+                            "id": "jkqOgmW6kPSnFuP3",
+                            "name": "Świecąca skóra",
+                            "script": "    this.actor.getActiveTokens().forEach(t => t.document.update({light : {\n      \"dim\": 10,\n      \"bright\": 5,\n      \"alpha\": 0.5,\n      \"animation\": {\n          \"speed\": 4,\n          \"intensity\": 4,\n          \"type\": \"flame\",\n      },\n      \"color\": \"#ac9e6c\",\n  }}));"
+                        }
+                    ],
+                    "id": "jkqOgmW6kPSnFuP3",
+                    "name": "Świecąca skóra"
+                }
+            }
         },
         "Unholy Rage": {
             "id": "MdrqSnA014jBggAV",
             "name": "Bezbożny szał",
             "description": "<p></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.MdrqSnA014jBggAV",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.MdrqSnA014jBggAV",
             "effects": {
                 "2Ohs6a56Gxu8VLHF": {
                     "id": "2Ohs6a56Gxu8VLHF",
-                    "name": "Szał Bojowy",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.DrNUTPeodEgpWTnT\").then(item => {\nitem = item.toObject();\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);\n})"
+                    "name": "Bezbożny szał",
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.DrNUTPeodEgpWTnT\").then(item => {\nitem = item.toObject();\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);\n})",
+                    "scriptData": [
+                        {
+                            "id": "2Ohs6a56Gxu8VLHF",
+                            "name": "Bezbożny szał",
+                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.DrNUTPeodEgpWTnT\")\nthis.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect : this.effect.id});\nthis.script.scriptNotification(\"Stworzono: \" + item.name)"
+                        }
+                    ]
                 },
                 "3ekXP5mRTRdaJptm": {
                     "id": "3ekXP5mRTRdaJptm",
@@ -333,18 +456,31 @@
             "id": "NzRTWXHlQ8I46RW4",
             "name": "Dodatkowe usta",
             "description": "<p>Rzuć w tabeli @Table[hitloc]{Miejsca Trafień}, by ustalić miejsce, w którym się pojawią.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.NzRTWXHlQ8I46RW4",
-            "modifier": " "
+            "sourceId": "Compendium.wfrp4e-core.items.Item.NzRTWXHlQ8I46RW4",
+            "modifier": " ",
+            "effects": {
+                "hMTC6wwJN3YPvDm2": {
+                    "scriptData": [
+                        {
+                            "id": "hMTC6wwJN3YPvDm2",
+                            "name": "Dodatkowe usta",
+                            "script": "let location = await game.wfrp4e.tables.rollTable(\"hitloc\", {hideDSN: true})\n\nthis.item.updateSource({name : `${this.item.name} (${location.description})`})\nthis.script.scriptMessage(`<strong>Lokacja:</strong> ${location.description}`, { whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+                        }
+                    ],
+                    "id": "hMTC6wwJN3YPvDm2",
+                    "name": "Dodatkowe usta"
+                }
+            }
         },
         "Animalistic Legs": {
             "id": "op4GKikIQee7JMXw",
             "name": "Zwierzęce nogi",
             "description": "<p></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.op4GKikIQee7JMXw",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.op4GKikIQee7JMXw",
             "effects": {
                 "1WuNk8jD1SyJIdHE": {
                     "id": "1WuNk8jD1SyJIdHE",
-                    "name": "Bonus do Szybkości"
+                    "name": "Animalistic Legs"
                 }
             },
             "modifier": "Szybkość +1"
@@ -353,7 +489,7 @@
             "id": "oZzmVlMOZ02NaPkZ",
             "name": "Bezduszność",
             "description": "<p></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.oZzmVlMOZ02NaPkZ",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.oZzmVlMOZ02NaPkZ",
             "effects": {
                 "C3nRwWnS8XEQfRQi": {
                     "id": "C3nRwWnS8XEQfRQi",
@@ -366,7 +502,7 @@
             "id": "Pmcq5P7yRnYsoFYf",
             "name": "Nierówne rogi",
             "description": "<p>+1 Punkt Pancerza na głowie. Liczy się jako Cecha Stworzenia @UUID[Compendium.wfrp4e-core.items.AtpAudHA4ybXVlWM]{Broń} o współczynniku obrażeń +BS. Tej mutacji nie da się ukryć.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Pmcq5P7yRnYsoFYf",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.Pmcq5P7yRnYsoFYf",
             "effects": {
                 "2o80BN5wj3QZxpYJ": {
                     "id": "2o80BN5wj3QZxpYJ",
@@ -376,7 +512,19 @@
                 "n4ttJEJZfsfISN5O": {
                     "id": "n4ttJEJZfsfISN5O",
                     "name": "Nierówne rogi",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.BqPZn6q3VHn9HUrW\").then(item => {\nitem = item.toObject();\nitem.name = this.effect.name;\nitem.system.specification.value = this.actor.characteristics.s.bonus;\nitem.system.description.value = \"\";\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);\n})"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.BqPZn6q3VHn9HUrW\").then(item => {\nitem = item.toObject();\nitem.name = this.effect.name;\nitem.system.specification.value = this.actor.characteristics.s.bonus;\nitem.system.description.value = \"\";\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);\n})",
+                    "scriptData": [
+                        {
+                            "id": "n4ttJEJZfsfISN5O",
+                            "name": "Nierówne rogi",
+                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.BqPZn6q3VHn9HUrW\")\nitem = item.toObject()\nitem.name = this.effect.name\nitem.system.specification.value = this.actor.characteristics.s.bonus\nitem.system.description.value = \"\"\nthis.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect : this.effect.id})"
+                        },
+                        {
+                            "id": "n4ttJEJZfsfISN5O",
+                            "name": "Nierówne rogi",
+                            "script": "this.actor.system.status.addArmour(1, {locations : \"head\", source : this.effect})"
+                        }
+                    ]
                 }
             },
             "modifier": "+1 Punkt Pancerza na głowie"
@@ -385,7 +533,7 @@
             "id": "Seb2VOuQVhBGVGN3",
             "name": "Blokada psychiczna",
             "description": "<p></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Seb2VOuQVhBGVGN3",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.Seb2VOuQVhBGVGN3",
             "effects": {
                 "sQs8JwxXFQcfvDLD": {
                     "id": "sQs8JwxXFQcfvDLD",
@@ -398,12 +546,21 @@
             "id": "SFKV0IBLLsbCMu7S",
             "name": "Wibrysy",
             "description": "<p></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.SFKV0IBLLsbCMu7S",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.SFKV0IBLLsbCMu7S",
             "effects": {
                 "EfojtYV7NuxfAUrK": {
                     "id": "EfojtYV7NuxfAUrK",
                     "name": "Wibrysy",
-                    "script": "if (args.type == \"skill\" && args.item.name == game.i18.n.localize(\"NAME.Track\")) {\n   args.prefillModifiers.modifier += 10;\n}"
+                    "script": "if (args.type == \"skill\" && args.item.name == game.i18.n.localize(\"NAME.Track\")) {\n   args.prefillModifiers.modifier += 10;\n}",
+                    "scriptData": [
+                        {
+                            "id": "EfojtYV7NuxfAUrK",
+                            "name": "Wibrysy",
+                            "script": "args.fields.modifier += 10",
+                            "activationScript": "return args.skill?.name == game.i18n.localize(\"NAME.Track\")",
+                            "hideScript": "return args.characteristic != \"i\""
+                        }
+                    ]
                 }
             },
             "modifier": "+10 do Tropienia"
@@ -412,12 +569,19 @@
             "id": "SPBRzPenZYA05KiK",
             "name": "Kolczaste łuski",
             "description": "<p></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.SPBRzPenZYA05KiK",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.SPBRzPenZYA05KiK",
             "effects": {
                 "mbj1Q28xiYuHC3z2": {
                     "id": "mbj1Q28xiYuHC3z2",
                     "name": "Kolczaste łuski",
-                    "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 1;\nAP[\"rArm\"].value += 1;\nAP[\"lArm\"].value += 1;\nAP[\"body\"].value += 1;\nAP[\"lLeg\"].value += 1;\nAP[\"rLeg\"].value += 1;"
+                    "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 1;\nAP[\"rArm\"].value += 1;\nAP[\"lArm\"].value += 1;\nAP[\"body\"].value += 1;\nAP[\"lLeg\"].value += 1;\nAP[\"rLeg\"].value += 1;",
+                    "scriptData": [
+                        {
+                            "id": "mbj1Q28xiYuHC3z2",
+                            "name": "Kolczaste łuski",
+                            "script": "this.actor.status.addArmour(1, {source: this.effect})"
+                        }
+                    ]
                 }
             },
             "modifier": "+1 Punkt Pancerza na wszystkich Miejscach Trafienia"
@@ -426,7 +590,7 @@
             "id": "t1sSiZO0cCKbT4ZA",
             "name": "Wydłużone palce",
             "description": "<p></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.t1sSiZO0cCKbT4ZA",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.t1sSiZO0cCKbT4ZA",
             "effects": {
                 "9tlBnF93gLOLbCs2": {
                     "id": "9tlBnF93gLOLbCs2",
@@ -439,12 +603,19 @@
             "id": "tcBFO4ATKpT0h3GT",
             "name": "Nienawistne popędy",
             "description": "<p>@UUID[Compendium.wfrp4e-core.items.Q2MCUrG2HppMcvN0]{Wrogość} wobec wszystkich istot poza rasą postaci.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.tcBFO4ATKpT0h3GT",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.tcBFO4ATKpT0h3GT",
             "effects": {
                 "hUqEsvcMfTbiNWHj": {
                     "id": "hUqEsvcMfTbiNWHj",
                     "name": "Nienawistne popędy",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.Q2MCUrG2HppMcvN0\").then(item => {\nitem = item.toObject()\nlet species = args.actor.details.species.value || \"własną rasą\"\nitem.name = `Wrogość (do wszystkich poza: ${species})`\nargs.actor.createEmbeddedDocuments(\"Item\", [item])\n})"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.Q2MCUrG2HppMcvN0\").then(item => {\nitem = item.toObject()\nlet species = args.actor.details.species.value || \"własną rasą\"\nitem.name = `Wrogość (do wszystkich poza: ${species})`\nargs.actor.createEmbeddedDocuments(\"Item\", [item])\n})",
+                    "scriptData": [
+                        {
+                            "id": "hUqEsvcMfTbiNWHj",
+                            "name": "Nienawistne popędy",
+                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.Q2MCUrG2HppMcvN0\")\nitem = item.toObject()\nlet species = args.actor.details.species.value || \"Człowiek\"\nitem.name = `Wrogość (do wszystkich oprócz: ${species})`\nthis.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect : this.effect.id})"
+                        }
+                    ]
                 }
             },
             "modifier": " "
@@ -453,7 +624,7 @@
             "id": "u5lMTKaOsZfiE3p0",
             "name": "Dodatkowe stawy w nogach",
             "description": "<p></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.u5lMTKaOsZfiE3p0",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.u5lMTKaOsZfiE3p0",
             "effects": {
                 "Jv17LNhTsc3DqbRJ": {
                     "id": "Jv17LNhTsc3DqbRJ",
@@ -466,7 +637,7 @@
             "id": "VeCvAdN7TnwEyyu0",
             "name": "Wewnętrzna bestia",
             "description": "<p></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.VeCvAdN7TnwEyyu0",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.VeCvAdN7TnwEyyu0",
             "effects": {
                 "KRT5ky5npGHcoSzv": {
                     "id": "KRT5ky5npGHcoSzv",
@@ -479,7 +650,7 @@
             "id": "WUuVChLDF6fOLmHX",
             "name": "Odrażające zachcianki",
             "description": "<p></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.WUuVChLDF6fOLmHX",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.WUuVChLDF6fOLmHX",
             "effects": {
                 "uMETdH7d0Hlt1yRa": {
                     "id": "uMETdH7d0Hlt1yRa",
@@ -492,7 +663,7 @@
             "id": "ytEJJWKVLwcywXCQ",
             "name": "Bluźniercze popędy",
             "description": "<p></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.ytEJJWKVLwcywXCQ",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.ytEJJWKVLwcywXCQ",
             "effects": {
                 "WRlYLsW6TkKNs7lX": {
                     "id": "WRlYLsW6TkKNs7lX",
@@ -505,12 +676,19 @@
             "id": "Zh68gzYMLW8vZgVo",
             "name": "Chwiejne morale",
             "description": "<p></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Zh68gzYMLW8vZgVo",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.Zh68gzYMLW8vZgVo",
             "effects": {
                 "RpoMdbEmjj9FhPvU": {
                     "id": "RpoMdbEmjj9FhPvU",
                     "name": "Chwiejne morale",
-                    "script": "if (args.test.result.outcome == \"failure\") {\n    if (args.test.characteristicKey == \"wp\") {\n        this.actor.addCondition(\"broken\")\n    }\n}"
+                    "script": "if (args.test.result.outcome == \"failure\") {\n    if (args.test.characteristicKey == \"wp\") {\n        this.actor.addCondition(\"broken\")\n    }\n}",
+                    "scriptData": [
+                        {
+                            "id": "RpoMdbEmjj9FhPvU",
+                            "name": "Chwiejne morale",
+                            "script": "if (args.test.succeeded)\n    return\n\nif (args.test.characteristicKey == \"wp\")\n     this.actor.addCondition(\"broken\")"
+                        }
+                    ]
                 }
             },
             "modifier": "Za każdym razem, gdy postaci nie powiedzie się Test Siły Woli, otrzymuje 1 poziom @Condition[Panika]{Paniki}"

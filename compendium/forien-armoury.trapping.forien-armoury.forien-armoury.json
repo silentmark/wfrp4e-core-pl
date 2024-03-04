@@ -10,7 +10,21 @@
         }
     },
     "folders": {
-        "Trappings": "Wyposażenie"
+        "Trappings": "Wyposażenie",
+        "Currency": "Waluta",
+        "Ingredients": "Ingredients",
+        "Wearables": "Wearables",
+        "Module Integrations": "Module Integrations",
+        "Item Piles": "Stosy Przedmiotów",
+        "Consumables": "Consumables",
+        "Containers": "Pojemniki",
+        "Light": "Light",
+        "Ammunition": "Amunicja",
+        "Armour": "Pancerz",
+        "Weapons": "Broń",
+        "Runes": "Runes",
+        "Equipment": "Equipment",
+        "Misc": "Różne"
     },
     "entries": {
         "Angel": {

@@ -13,12 +13,19 @@
             "id": "263ic3ulLuR9DPzP",
             "name": "Zerwane więzadło",
             "description": "<p>Postać natychmiast upuszcza wszystko, co trzymała w dłoni. Otrzymuje @UUID[Compendium.wfrp4e-core.items.qn4ZpvTQIX4rcJDl]{Zerwanie mięśni (pomniejsze)}.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.263ic3ulLuR9DPzP",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.263ic3ulLuR9DPzP",
             "effects": {
                 "MgpYZu22zgrLdxmf": {
                     "id": "MgpYZu22zgrLdxmf",
                     "name": "Zerwane więzadło",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.qn4ZpvTQIX4rcJDl\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.qn4ZpvTQIX4rcJDl\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
+                    "scriptData": [
+                        {
+                            "id": "MgpYZu22zgrLdxmf",
+                            "name": "Zerwane więzadło",
+                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.qn4ZpvTQIX4rcJDl\")\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect: this.effect.id})"
+                        }
+                    ]
                 }
             },
             "wounds": "3",
@@ -28,16 +35,29 @@
             "id": "2ibzDR7EeMEq2QAe",
             "name": "Cios w udo",
             "description": "<p>Bolesny cios uderza prosto w górną część uda, tuż przy biodrze. Postać otrzymuje 1 poziom Stanu @Condition[Krwawienie], musi również wykonać <strong>Przeciętny (+20) Test Odporności</strong>, a jeśli się jej nie uda, otrzyma Stan @Condition[Powalenie].</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.2ibzDR7EeMEq2QAe",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.2ibzDR7EeMEq2QAe",
             "effects": {
                 "HgsptGxBG4CYhlk2": {
                     "id": "HgsptGxBG4CYhlk2",
                     "name": "Cios w udo",
-                    "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"average\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}"
+                    "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"average\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}",
+                    "scriptData": [
+                        {
+                            "id": "HgsptGxBG4CYhlk2",
+                            "name": "Cios w udo",
+                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {appendTitle : ` - ${this.effect.name}`, fields: {difficulty: \"average\"}});\nawait test.roll();\nif (test.failed)\n{\n    this.actor.addCondition(\"prone\")\n}\n"
+                        }
+                    ]
                 },
                 "LkPmb8RmlhPowqfB": {
                     "id": "LkPmb8RmlhPowqfB",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "LkPmb8RmlhPowqfB",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 }
             },
             "wounds": "2",
@@ -47,16 +67,29 @@
             "id": "39906D4BcVGzsiQp",
             "name": "Złamany obojczyk",
             "description": "<p>Postać pada na ziemię w Stanie @Condition[Utrata Przytomności] i nie ocknie się, dopóki nie zostanie jej udzielona <b>Pomoc Medyczna</b>, a ponadto otrzymuje Uraz @UUID[Compendium.wfrp4e-core.items.EaqlLRQigwnsEAXX]{Złamanie (poważne)}.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.39906D4BcVGzsiQp",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.39906D4BcVGzsiQp",
             "effects": {
                 "QaSpvCS9KAifTCNw": {
                     "id": "QaSpvCS9KAifTCNw",
                     "name": "Złamany obojczyk",
-                    "script": "fromUuid('Compendium.wfrp4e-core.items.EaqlLRQigwnsEAXX').then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
+                    "script": "fromUuid('Compendium.wfrp4e-core.items.EaqlLRQigwnsEAXX').then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
+                    "scriptData": [
+                        {
+                            "id": "QaSpvCS9KAifTCNw",
+                            "name": "Złamany obojczyk",
+                            "script": "let item = await fromUuid('Compendium.wfrp4e-core.items.EaqlLRQigwnsEAXX')\nlet data = item.toObject();\ndata.system.location.value = \"Collar Bone\"\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect : this.effect.id})"
+                        }
+                    ]
                 },
                 "yYBsiXJGftVmMEeQ": {
                     "id": "yYBsiXJGftVmMEeQ",
-                    "name": "Utrata Przytomności"
+                    "name": "Utrata Przytomności",
+                    "scriptData": [
+                        {
+                            "id": "yYBsiXJGftVmMEeQ",
+                            "name": "Utrata Przytomności"
+                        }
+                    ]
                 }
             },
             "wounds": "5",
@@ -66,7 +99,7 @@
             "id": "3B3QEz9ImmloEQxv",
             "name": "Spuchnięte oko",
             "description": "<p>Mocny cios trafia w oczodół. Postać otrzymuje 1 poziom Stanu @Condition[Oślepienie].</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.3B3QEz9ImmloEQxv",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.3B3QEz9ImmloEQxv",
             "effects": {
                 "megBKxKy2Xu8LoXg": {
                     "id": "megBKxKy2Xu8LoXg",
@@ -82,7 +115,7 @@
             "id": "3Tk4cX1ri20oUoBh",
             "name": "Wstrząśnienie mózgu",
             "description": "<p>Mózg obija się wewnątrz czaszki, a krew wypływa z nosa i uszu. Postać otrzymuje 1 poziom Stanu @Condition[Ogłuszenie], 2 poziomy Stanu @Condition[Krwawienie] oraz [[/r 1d10]] poziomów Stanu @Condition[Oszołomienie]. Ponadto na [[/r 1d10]] dni uznaje się ją również za @Condition[Zmęczenie]{Zmęczoną}. Jeśli postać otrzyma kolejną Ranę Krytyczną w głowę, będąc jeszcze @Condition[Zmęczenie]{Zmęczoną} po ostatnim wstrząśnieniu mózgu, musi wykonać <strong>Przeciętny (+20) Test Odporności</strong>. Jeśli ten się nie powiedzie, otrzymuje Stan @Condition[Utrata Przytomności].</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.3Tk4cX1ri20oUoBh",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.3Tk4cX1ri20oUoBh",
             "effects": {
                 "4o8C5gO5JrPMQy7V": {
                     "id": "4o8C5gO5JrPMQy7V",
@@ -92,16 +125,42 @@
                 "AyoqSH1wIlPXFrdJ": {
                     "id": "AyoqSH1wIlPXFrdJ",
                     "name": "Zmęczenie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
+                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                    "scriptData": [
+                        {
+                            "id": "AyoqSH1wIlPXFrdJ",
+                            "name": "Zmęczenie",
+                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                            "activationScript": "return true"
+                        }
+                    ]
                 },
                 "F77tiXuPleKy6QKB": {
                     "id": "F77tiXuPleKy6QKB",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "F77tiXuPleKy6QKB",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 },
                 "TYzxQVbjCM2iyLVl": {
                     "id": "TYzxQVbjCM2iyLVl",
                     "name": "Wstrząśnienie mózgu",
-                    "script": "let roll = (await new Roll(\"1d10\").roll()).total;\nawait args.actor.addCondition(\"stunned\", roll);"
+                    "script": "let roll = (await new Roll(\"1d10\").roll()).total;\nawait args.actor.addCondition(\"stunned\", roll);",
+                    "scriptData": [
+                        {
+                            "id": "TYzxQVbjCM2iyLVl",
+                            "name": "Wstrząśnienie mózgu",
+                            "script": "let roll = await new Roll(\"1d10\").roll();\nroll.toMessage({flavor : this.effect.name, speaker : {alias : this.actor.prototypeToken.name}})\nthis.actor.addCondition(\"stunned\", roll.total)"
+                        },
+                        {
+                            "name": "Wstrząśnienie mózgu",
+                            "id": "TYzxQVbjCM2iyLVl",
+                            "script": "if(this.actor.hasCondition(\"fatigued\") && args.opposedTest.result.hitloc.value == \"head\" && (args.opposedTest.attackerTest.result.critical || args.actor.status.wounds.value - args.totalWoundLoss < 0))\n{\n    let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), { fields: { difficulty: \"average\" }, appendTitle : ` - ${this.effect.name}`})\n    await test.roll();\n    if (test.failed)\n    {\n        this.actor.addCondition(\"unconscious\")\n    }\n}"
+                        }
+                    ]
                 },
                 "zirzZTdRx8xz8RI6": {
                     "id": "zirzZTdRx8xz8RI6",
@@ -115,13 +174,32 @@
         "Dislocated Knee": {
             "id": "8GrHGyhYlbdxqluu",
             "name": "Zwichnięte kolano",
-            "description": "<p>Kolano zostaje wyrwane ze stawu. Postać otrzymuje Stan @Condition[Powalenie] i pada na ziemię. Musi zdać <b>Trudny (-20) Test Odporności</b>, w przeciwnym wypadku otrzyma 1 poziom Stanu @Condition[Oszołomienie], którego nie można usunąć, dopóki nie zostanie jej udzielona <b>Pomoc Medyczna</b>. Jednakże nastawienie kolana, nawet po udzieleniu Pomocy Medycznej, wymagać będzie <strong>Wydłużonego Przeciętnego (+20) Testu Leczenia</strong>, w którym należy osiągnąć co najmniej 6 PS. Dopiero wtedy postać będzie mogła znów ruszać nogą. Szybkość spada o połowę, a wszystkie Testy, w których wykorzystywana jest noga, otrzymują karę -10 przez [[/r 1d10]] dni.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.8GrHGyhYlbdxqluu",
+            "description": "<p>Kolano zostaje wyrwane ze stawu. Postać otrzymuje Stan @Condition[Powalenie] i pada na ziemię. Musi zdać <strong>Trudny (-20) Test Odporności</strong>, w przeciwnym wypadku otrzyma 1 poziom Stanu @Condition[Oszołomienie], którego nie można usunąć, dopóki nie zostanie jej udzielona <strong>Pomoc Medyczna</strong>. Jednakże nastawienie kolana, nawet po udzieleniu Pomocy Medycznej, wymagać będzie <strong>Wydłużonego Przeciętnego (+20) Testu Leczenia</strong>, w którym należy osiągnąć co najmniej 6 PS. Dopiero wtedy postać będzie mogła znów ruszać nogą. Szybkość spada o połowę, a wszystkie Testy, w których wykorzystywana jest noga, otrzymują karę -10 przez [[/r 1d10]] dni.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.8GrHGyhYlbdxqluu",
             "effects": {
                 "vGXj3JcQSik2Fof6": {
                     "id": "vGXj3JcQSik2Fof6",
                     "name": "Zwichnięte kolano",
-                    "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"stunned\");\n        }\n     });\n}"
+                    "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"stunned\");\n        }\n     });\n}",
+                    "scriptData": [
+                        {
+                            "id": "vGXj3JcQSik2Fof6",
+                            "name": "Zwichnięte kolano",
+                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {fields: {difficulty : \"hard\"}, appendTitle : \" - \" + this.effect.name})\nawait test.roll();\nif (test.failed)\n{\n\tawait this.actor.addCondition(\"prone\")\n\tawait this.actor.addCondition(\"stunned\")\n}"
+                        },
+                        {
+                            "id": "vGXj3JcQSik2Fof6",
+                            "name": "Zwichnięte kolano",
+                            "script": "args.fields.modifier -= 10;\n",
+                            "activationScript": "return [\"ag\", \"ws\", \"bs\"].includes(args.characteristic) || args.skill?.name == game.i18n.localize(\"NAME.Climb\");",
+                            "hideScript": "return [\"t\", \"int\", \"wp\", \"fel\"].includes(args.characteristic)"
+                        },
+                        {
+                            "id": "vGXj3JcQSik2Fof6",
+                            "name": "Zwichnięte kolano",
+                            "script": "args.actor.details.move.value /= 2"
+                        }
+                    ]
                 }
             },
             "wounds": "4",
@@ -131,21 +209,42 @@
             "id": "8WkGfg1oUsR16K3J",
             "name": "Oszpecający cios",
             "description": "<p>Uderzenie roztrzaskuje całą twarz, niszcząc @UUID[Compendium.wfrp4e-core.items.weczkAMPlTjX7lqU]{oko} i @UUID[Compendium.wfrp4e-core.items.SpPRZZRHxly7uo2G]{nos} w fontannie krwi. Postać otrzymuje 3 poziomy Stanu @Condition[Oślepienie], 3 poziomy Stanu @Condition[Krwawienie] i 2 poziomy Stanu @Condition[Oszołomienie]. Następuje utrata oka i nosa - <strong>@Compendium[wfrp4e-core.items.k00PimCWkff11IA0]{Amputacja (trudna)}</strong>.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.8WkGfg1oUsR16K3J",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.8WkGfg1oUsR16K3J",
             "effects": {
                 "348txVEUS8rth7YB": {
                     "id": "348txVEUS8rth7YB",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
+                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                    "scriptData": [
+                        {
+                            "id": "348txVEUS8rth7YB",
+                            "name": "Oszołomienie",
+                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                            "activationScript": "return true"
+                        }
+                    ]
                 },
                 "7j3RINGp5K4ejLTp": {
                     "id": "7j3RINGp5K4ejLTp",
                     "name": "Oszpecający cios",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.weczkAMPlTjX7lqU\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})\nfromUuid(\"Compendium.wfrp4e-core.items.SpPRZZRHxly7uo2G\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.weczkAMPlTjX7lqU\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})\nfromUuid(\"Compendium.wfrp4e-core.items.SpPRZZRHxly7uo2G\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})",
+                    "scriptData": [
+                        {
+                            "id": "7j3RINGp5K4ejLTp",
+                            "name": "Oszpecający cios",
+                            "script": "let eye = await fromUuid(\"Compendium.wfrp4e-core.items.weczkAMPlTjX7lqU\")\nlet nose = await fromUuid(\"Compendium.wfrp4e-core.items.SpPRZZRHxly7uo2G\")\nthis.actor.createEmbeddedDocuments(\"Item\", [eye, nose]);"
+                        }
+                    ]
                 },
                 "hawmXZ36uvoIAWpv": {
                     "id": "hawmXZ36uvoIAWpv",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "hawmXZ36uvoIAWpv",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 },
                 "waGy0xtIvPj1cT0D": {
                     "id": "waGy0xtIvPj1cT0D",
@@ -161,12 +260,26 @@
             "id": "92vQ9g5DxlWNmD1c",
             "name": "Wywichnięty bark",
             "description": "<p>Ramię zostało wyrwane ze stawu. Postać musi zdać <strong>Trudny (-20) Test Odporności</strong>, w przeciwnym wypadku otrzyma Stany @Condition[Powalenie] i @Condition[Utrata Przytomności]. Wszystko, co było trzymane w dłoni, wypada, a ramię jest bezużyteczne i uznawane za stracone (patrz @UUID[Compendium.wfrp4e-core.items.MnMZv7ZXoRqoH9dS]{Amputacja}). Ponadto postać otrzymuje 1 poziom @Condition[Oszołomienie], dopóki nie zostanie jej udzielona <b>Pomoc Medyczna</b>. Jednakże nastawienie ramienia, nawet po udzieleniu Pomocy Medycznej, wymagać będzie Wydłużonego <strong>Przeciętnego (+20) Testu Leczenia</strong>, w którym należy osiągnąć co najmniej 6 PS. Dopiero wtedy postać będzie mogła znów ruszać ramieniem. Testy wykonywane przy pomocy tego ramienia obarczone są karą -10 przez <strong>[[/r 1d10]]</strong> dni.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.92vQ9g5DxlWNmD1c",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.92vQ9g5DxlWNmD1c",
             "effects": {
                 "Ce9QAvROf94V16sJ": {
                     "id": "Ce9QAvROf94V16sJ",
                     "name": "Wywichnięty bark",
-                    "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n            await args.actor.addCondition(\"stunned\");\n        }\n     });\n}"
+                    "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n            await args.actor.addCondition(\"stunned\");\n        }\n     });\n}",
+                    "scriptData": [
+                        {
+                            "id": "Ce9QAvROf94V16sJ",
+                            "name": "Wywichnięty bark",
+                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {fields: {difficulty : \"hard\"}, appendTitle : \" - \" + this.effect.name})\nawait test.roll();\nif (test.failed)\n{\n\tawait this.actor.addCondition(\"prone\")\n\tawait this.actor.addCondition(\"stunned\")\n}\n          \nlet location = this.item.system.location.key;\n\nif (location)\n{\n    let dropped = this.item.system.weaponsAtLocation;\n\n    if (dropped.length)\n    {\n        this.script.scriptNotification(`upuszczono: ${dropped.map(i => i.name).join(\", \")}!`)\n        for(let weapon of dropped)\n        {\n            await weapon.system.toggleEquip();\n        }\n    }\n}"
+                        },
+                        {
+                            "id": "Ce9QAvROf94V16sJ",
+                            "name": "Wywichnięty bark",
+                            "script": "args.abort = true;\nthis.script.scriptNotification(`Nie można używać: ${this.item.system.location.value}!`, \"error\")",
+                            "activationScript": "return this.item.system.usesLocation(args.weapon)",
+                            "hideScript": "return !args.weapon"
+                        }
+                    ]
                 }
             },
             "wounds": "4",
@@ -176,12 +289,26 @@
             "id": "9j0KwH1Je1RiuZX2",
             "name": "Skręcona kostka",
             "description": "<p>Niepewny krok kończy się skręceniem kostki. Wszystkie Testy Zwinności obarczone są karą -10 na [[/r 1d10]] Rund.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.9j0KwH1Je1RiuZX2",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.9j0KwH1Je1RiuZX2",
             "effects": {
                 "9dEo6xx3LZwu32td": {
                     "id": "9dEo6xx3LZwu32td",
                     "name": "Skręcona kostka",
-                    "script": "if (args.type == \"skill\" && args.item.characteristic.key == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}\nif (args.type == \"characteristic\" && args.item == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}"
+                    "script": "if (args.type == \"skill\" && args.item.characteristic.key == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}\nif (args.type == \"characteristic\" && args.item == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}",
+                    "scriptData": [
+                        {
+                            "id": "9dEo6xx3LZwu32td",
+                            "name": "Skręcona kostka",
+                            "script": "args.fields.modifier -= 10",
+                            "activationScript": "return args.characteristic == \"ag\"",
+                            "hideScript": "return args.characteristic != \"ag\""
+                        },
+                        {
+                            "id": "9dEo6xx3LZwu32td",
+                            "name": "Skręcona kostka",
+                            "script": "let roll = await new Roll(\"1d10\").roll()\n\nroll.toMessage(this.script.getChatData({flavor : `${this.effect.name} (Duration)`}));\n\nthis.effect.updateSource({\"duration.rounds\" : roll.total})"
+                        }
+                    ]
                 }
             },
             "wounds": "1",
@@ -191,12 +318,19 @@
             "id": "9MKzpUh761nGa76M",
             "name": "Zerwane ścięgno",
             "description": "<p>W wyniku zerwania ścięgna w nodze postać otrzymuje Stany @Condition[Powalenie] i @Condition[Oszołomienie]. Musi także zdać <strong>Trudny (-20) Test Odporności</strong>, w przeciwnym wypadku nastąpi @Condition[Utrata Przytomności]. Noga jest bezwładna (patrz <b>Amputacje</b>), a cios skutkuje Urazem @UUID[Compendium.wfrp4e-core.items.3S4OYOZLauXctmev]{Zerwanie mięśni (poważne)}.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.9MKzpUh761nGa76M",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.9MKzpUh761nGa76M",
             "effects": {
                 "ixCa0FfjTQFA9Th6": {
                     "id": "ixCa0FfjTQFA9Th6",
                     "name": "Zerwane ścięgno",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.3S4OYOZLauXctmev\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n});\n\nif (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n     });\n}"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.3S4OYOZLauXctmev\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n});\n\nif (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n     });\n}",
+                    "scriptData": [
+                        {
+                            "id": "ixCa0FfjTQFA9Th6",
+                            "name": "Zerwane ścięgno",
+                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.3S4OYOZLauXctmev\")\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect: this.effect.id})\n\n\nlet test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {fields: {difficulty: \"hard\"}, appendTitle : ` - ${this.effect.name}`})\nawait test.roll();\nif (test.failed)\n{\n\tthis.actor.addCondition(\"unconscious\")\n}"
+                        }
+                    ]
                 }
             },
             "wounds": "4",
@@ -206,21 +340,42 @@
             "id": "9NAkj43qHsH7Xok7",
             "name": "Rozszarpany biceps",
             "description": "<p>Cios niemal oddziela biceps i ścięgna od kości, co skutkuje paskudną raną i krwią bryzgającą na wszystkich dookoła. Postać automatycznie upuszcza wszystko, co trzymała w dłoni, i otrzymuje Uraz @UUID[Compendium.wfrp4e-core.items.qn4ZpvTQIX4rcJDl]{Zerwanie mięśni (poważne)}, 2 poziomy Stanu @Condition[Krwawienie] oraz 1 poziom Stanu @Condition[Oszołomienie].</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.9NAkj43qHsH7Xok7",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.9NAkj43qHsH7Xok7",
             "effects": {
                 "1hf8KQbl7iZKhhzD": {
                     "id": "1hf8KQbl7iZKhhzD",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
+                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                    "scriptData": [
+                        {
+                            "id": "1hf8KQbl7iZKhhzD",
+                            "name": "Oszołomienie",
+                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                            "activationScript": "return true"
+                        }
+                    ]
                 },
                 "DRpsrtMYsEn6RXb4": {
                     "id": "DRpsrtMYsEn6RXb4",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "DRpsrtMYsEn6RXb4",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 },
                 "zyFwXMjRg8797kTY": {
                     "id": "zyFwXMjRg8797kTY",
                     "name": "Rozszarpany biceps",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.qn4ZpvTQIX4rcJDl\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.qn4ZpvTQIX4rcJDl\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
+                    "scriptData": [
+                        {
+                            "id": "zyFwXMjRg8797kTY",
+                            "name": "Rozszarpany biceps",
+                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.qn4ZpvTQIX4rcJDl\");\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect: this.effect.id})\n"
+                        }
+                    ]
                 }
             },
             "wounds": "5",
@@ -230,27 +385,56 @@
             "id": "9s7eE2U30R774sxO",
             "name": "Przecięte ścięgna",
             "description": "<p>Ważne ścięgno w nodze zostaje przecięte. Kończyna nie wytrzymuje ciężaru ciała, a postać pada na ziemię, wrzeszcząc z bólu. Otrzymuje Stany: @Condition[Powalenie], 2 poziomy Stanu @Condition[Krwawienie], 2 poziomy Stanu @Condition[Oszołomienie] i z przerażeniem patrzy na swoją bezużyteczną, bezwładną nogę - @UUID[Compendium.wfrp4e-core.items.k00PimCWkff11IA0]{Amputacja (bardzo trudna)}.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.9s7eE2U30R774sxO",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.9s7eE2U30R774sxO",
             "effects": {
                 "OV1vfh4PQRfDwofO": {
                     "id": "OV1vfh4PQRfDwofO",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "OV1vfh4PQRfDwofO",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 },
                 "r5t7w5lcG1iddbUt": {
                     "id": "r5t7w5lcG1iddbUt",
                     "name": "Przecięte ścięgna",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.k00PimCWkff11IA0\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.k00PimCWkff11IA0\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
+                    "scriptData": [
+                        {
+                            "id": "r5t7w5lcG1iddbUt",
+                            "name": "Przecięte ścięgna",
+                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.k00PimCWkff11IA0\")\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key\nthis.actor.createEmbeddedDocuments(\"Item\", [data])"
+                        }
+                    ]
                 },
                 "URt2bkWmWumsEP1k": {
                     "id": "URt2bkWmWumsEP1k",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
+                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                    "scriptData": [
+                        {
+                            "id": "URt2bkWmWumsEP1k",
+                            "name": "Oszołomienie",
+                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                            "activationScript": "return true"
+                        }
+                    ]
                 },
                 "wVKOGkIJf8YblbFA": {
                     "id": "wVKOGkIJf8YblbFA",
                     "name": "Powalenie",
                     "script": "args.prefillModifiers.modifier -= 20",
-                    "secondaryScript": "if (args.type == 'weapon' && args.item.attackType=='melee') args.prefillModifiers.modifier += 20"
+                    "secondaryScript": "if (args.type == 'weapon' && args.item.attackType=='melee') args.prefillModifiers.modifier += 20",
+                    "scriptData": [
+                        {
+                            "id": "wVKOGkIJf8YblbFA",
+                            "name": "Powalenie",
+                            "script": "args.prefillModifiers.modifier -= 20",
+                            "activationScript": "return true"
+                        }
+                    ]
                 }
             },
             "wounds": "5",
@@ -260,16 +444,29 @@
             "id": "9UjOMeBtKdoL5S34",
             "name": "Paskudnie przecięty paluch",
             "description": "<p>Postać otrzymuje 1 poziom Stanu @Condition[Krwawienie]. Musi także zdać <strong>Wymagający (+0) Test Odporności</strong>. Jeśli ten się nie uda, postać traci 1 palec u nogi - @UUID[Compendium.wfrp4e-core.items.ZhMADOqoo0y8Q9bx]{Amputacja (przeciętna)}.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.9UjOMeBtKdoL5S34",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.9UjOMeBtKdoL5S34",
             "effects": {
                 "2NSVzeLs6V2jWa8K": {
                     "id": "2NSVzeLs6V2jWa8K",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "2NSVzeLs6V2jWa8K",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 },
                 "nlxBZY9R2qxa7bkC": {
                     "id": "nlxBZY9R2qxa7bkC",
                     "name": "Paskudnie przecięty paluch",
-                    "script": "if (this.actor.isOwner) {\n    this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n      await test.roll();\n      if (test.result.outcome == \"failure\") {\n          let injury = await fromUuid(\"Compendium.wfrp4e-core.items.ZhMADOqoo0y8Q9bx\");\n          this.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n          this.actor.deleteEmbeddedEntity(\"ActiveEffect\", this.effect._id);\n      }\n    });\n}"
+                    "script": "if (this.actor.isOwner) {\n    this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n      await test.roll();\n      if (test.result.outcome == \"failure\") {\n          let injury = await fromUuid(\"Compendium.wfrp4e-core.items.ZhMADOqoo0y8Q9bx\");\n          this.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n          this.actor.deleteEmbeddedEntity(\"ActiveEffect\", this.effect._id);\n      }\n    });\n}",
+                    "scriptData": [
+                        {
+                            "id": "nlxBZY9R2qxa7bkC",
+                            "name": "Paskudnie przecięty paluch",
+                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {appendTitle : \" - \" + this.effect.name})\nawait test.roll();\nif (!test.succeeded)\n{\n    let item = await fromUuid(\"Compendium.wfrp4e-core.items.ZhMADOqoo0y8Q9bx\")\n    let data = item.toObject();\n    if (this.item.system.location.key == \"rLeg\")\n    {\n        data.system.location.value = \"Prawy Paluch\"\n\tdata.system.location.key = \"rToe\";\n    }\n    else if (this.item.system.location.key == \"lLeg\")\n    {\n        data.system.location.value = \"Lewy Paluch\"\n\tdata.system.location.key = \"lToe\";\n    }\n    this.actor.createEmbeddedDocuments(\"Item\", [data])\n}\nthis.effect.delete();"
+                        }
+                    ]
                 }
             },
             "wounds": "2",
@@ -278,8 +475,8 @@
         "Torn Thigh": {
             "id": "AUZLQkyu9kiqmzsq",
             "name": "Poszarpane udo",
-            "description": "<p>Postać otrzymuje 3 poziomy Stanu @Condition[Krwawienie], a cios odrywa kawał mięśni z jej uda. Musi także zdać <strong>Wymagający (+0) Test Odporności</strong>, w przeciwnym wypadku otrzyma Stan @Condition[Powalenie]. Dopóki postać nie otrzyma pomocy @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgicznej} i udo nie zostanie zszyte, każda Rana otrzymana w tę nogę będzie skutkować zwiększeniem @Condition[Krwawienie]{Krwawienia} o 1 poziom.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.AUZLQkyu9kiqmzsq",
+            "description": "<p>Postać otrzymuje 3 poziomy Stanu @Condition[Krwawienie], a cios odrywa kawał mięśni z jej uda. Musi także zdać <strong>Wymagający (+0) Test Odporności</strong>, w przeciwnym wypadku otrzyma Stan @Condition[Powalenie]. Dopóki postać nie otrzyma pomocy @UUID[Compendium.wfrp4e-core.journals.JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgicznej} i udo nie zostanie zszyte, każda Rana otrzymana w tę nogę będzie skutkować zwiększeniem @Condition[Krwawienie]{Krwawienia} o 1 poziom.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.AUZLQkyu9kiqmzsq",
             "effects": {
                 "53D0C2BXQCCAMXSu": {
                     "id": "53D0C2BXQCCAMXSu",
@@ -289,11 +486,29 @@
                 "jYEOUXmmtfU0bnjS": {
                     "id": "jYEOUXmmtfU0bnjS",
                     "name": "Poszarpane udo",
-                    "script": "if (args.opposedTest.result.hitloc.value == \"LEG_LOCATION_HERE\") { // rLeg or lLeg\n    args.actor.addCondition(\"bleeding\", 1);\n}"
+                    "script": "if (args.opposedTest.result.hitloc.value == \"LEG_LOCATION_HERE\") { // rLeg or lLeg\n    args.actor.addCondition(\"bleeding\", 1);\n}",
+                    "scriptData": [
+                        {
+                            "id": "jYEOUXmmtfU0bnjS",
+                            "name": "Poszarpane udo",
+                            "script": "if (args.opposedTest.result.hitloc.value == this.item.system.location.key && args.totalWoundLoss > 0)\n{\n    args.actor.addCondition(\"bleeding\", 1);\n    this.script.scriptNotification(\"Wywołano Krwawienie\")\n}"
+                        },
+                        {
+                            "id": "jYEOUXmmtfU0bnjS",
+                            "name": "Poszarpane udo",
+                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {appendTitle : ` - ${this.effect.name}`});\nawait test.roll();\nif (test.failed)\n{\n    this.actor.addCondition(\"prone\")\n}\n"
+                        }
+                    ]
                 },
                 "RorPd1gHCj5K5e5E": {
                     "id": "RorPd1gHCj5K5e5E",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "RorPd1gHCj5K5e5E",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 }
             },
             "wounds": "3",
@@ -303,17 +518,32 @@
             "id": "AXRma6wqpD5jvpuM",
             "name": "Połamane żebra",
             "description": "<p>Cios łamie jedno lub kilka żeber. Postać otrzymuje 1 poziom Stanu @Condition[Oszołomienie]. Ponadto otrzymuje Uraz @UUID[Compendium.wfrp4e-core.items.QluSTTTq3viHJJUh]{Złamanie (pomniejsze)}.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.AXRma6wqpD5jvpuM",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.AXRma6wqpD5jvpuM",
             "effects": {
                 "GHwgHe9nIfj3RsTG": {
                     "id": "GHwgHe9nIfj3RsTG",
                     "name": "Połamane żebra",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.QluSTTTq3viHJJUh\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.QluSTTTq3viHJJUh\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
+                    "scriptData": [
+                        {
+                            "id": "GHwgHe9nIfj3RsTG",
+                            "name": "Połamane żebra",
+                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.QluSTTTq3viHJJUh\")\nlet data = item.toObject();\ndata.system.location.value = \"Żebra\";\nawait this.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect: this.effect.id})"
+                        }
+                    ]
                 },
                 "vc2JuBUI00H1WZwf": {
                     "id": "vc2JuBUI00H1WZwf",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
+                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                    "scriptData": [
+                        {
+                            "id": "vc2JuBUI00H1WZwf",
+                            "name": "Oszołomienie",
+                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                            "activationScript": "return true"
+                        }
+                    ]
                 }
             },
             "wounds": "3",
@@ -323,12 +553,19 @@
             "id": "B6lS25BojearuvzW",
             "name": "Skręcenie",
             "description": "<p>Skręcone ramię powoduje Uraz @UUID[Compendium.wfrp4e-core.items.GlShFJF2TpsNh1FX]{Zerwanie mięśni (pomniejsze)}.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.B6lS25BojearuvzW",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.B6lS25BojearuvzW",
             "effects": {
                 "Xk9jhNPT42L2nloL": {
                     "id": "Xk9jhNPT42L2nloL",
                     "name": "Skręcenie",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.GlShFJF2TpsNh1FX\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.GlShFJF2TpsNh1FX\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
+                    "scriptData": [
+                        {
+                            "id": "Xk9jhNPT42L2nloL",
+                            "name": "Skręcenie",
+                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.GlShFJF2TpsNh1FX\")\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key\ndata.system.location.value = data.system.location.value.replace(\"Noga\", \"Kostka\")\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect: this.effect.id})\n"
+                        }
+                    ]
                 }
             },
             "wounds": "1",
@@ -338,17 +575,32 @@
             "id": "bAafQaKO9PdKQB8R",
             "name": "Złamana szczęka",
             "description": "<p>Cios z obrzydliwym chrupnięciem łamie żuchwę i zalewa twarz falą ogromnego bólu. Postać otrzymuje 2 poziomy Stanu @Condition[Oszołomienie]. Ponadto otrzymuje Uraz @UUID[Compendium.wfrp4e-core.items.nbhn2wX35b7Jrcbg]{Złamanie (pomniejsze)}.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.bAafQaKO9PdKQB8R",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.bAafQaKO9PdKQB8R",
             "effects": {
                 "g9ZNTiFKGxZBQkvT": {
                     "id": "g9ZNTiFKGxZBQkvT",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
+                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                    "scriptData": [
+                        {
+                            "id": "g9ZNTiFKGxZBQkvT",
+                            "name": "Oszołomienie",
+                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                            "activationScript": "return true"
+                        }
+                    ]
                 },
                 "OipdUoeetMzgA4m9": {
                     "id": "OipdUoeetMzgA4m9",
                     "name": "Złamana szczęka",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.nbhn2wX35b7Jrcbg\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.nbhn2wX35b7Jrcbg\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
+                    "scriptData": [
+                        {
+                            "id": "OipdUoeetMzgA4m9",
+                            "name": "Złamana szczęka",
+                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.nbhn2wX35b7Jrcbg\")\nlet data = item.toObject();\ndata.system.location.value = \"Szczęka\"\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect: this.effect.id})"
+                        }
+                    ]
                 }
             },
             "wounds": "3",
@@ -358,12 +610,19 @@
             "id": "Bpt4ZS0eHJOsuDXE",
             "name": "Dekapitacja",
             "description": "<p>Cios gładko odcina głowę, która leci w powietrze, lądując [[/r 1d5]] metrów w dowolnym kierunku (patrz @Table[scatter]{Rozrzut}). Martwe, bezgłowe ciało pada na ziemię.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Bpt4ZS0eHJOsuDXE",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.Bpt4ZS0eHJOsuDXE",
             "effects": {
                 "v0B4racbne2RYIqD": {
                     "id": "v0B4racbne2RYIqD",
                     "name": "Dekapitacja",
-                    "script": "await this.actor.addCondition(\"dead\");\nawait this.actor.setWounds(0);\nChatMessage.create({content: await game.wfrp4e.tables.formatChatRoll(\"scatter\")});"
+                    "script": "await this.actor.addCondition(\"dead\");\nawait this.actor.setWounds(0);\nChatMessage.create({content: await game.wfrp4e.tables.formatChatRoll(\"scatter\")});",
+                    "scriptData": [
+                        {
+                            "id": "v0B4racbne2RYIqD",
+                            "name": "Dekapitacja",
+                            "script": "this.actor.addCondition(\"dead\")\nthis.actor.setWounds(0);\nthis.script.scriptMessage(await game.wfrp4e.tables.formatChatRoll(\"scatter\"))"
+                        }
+                    ]
                 }
             },
             "wounds": "Śmierć",
@@ -373,11 +632,17 @@
             "id": "btDTVsPFsOtBNpgF",
             "name": "Płytkie cięcie w głowę",
             "description": "<p>Cios przecina policzek, rozbryzgując dookoła krew. Postać otrzymuje 1 poziom Stanu @Condition[Krwawienie].</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.btDTVsPFsOtBNpgF",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.btDTVsPFsOtBNpgF",
             "effects": {
                 "Bc6aSIrK2fSMoTBP": {
                     "id": "Bc6aSIrK2fSMoTBP",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "Bc6aSIrK2fSMoTBP",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 }
             },
             "wounds": "1",
@@ -387,27 +652,56 @@
             "id": "BzIaW1w6eTUFWgkk",
             "name": "Odcięta stopa",
             "description": "<p>Cios odcina stopę, która odlatuje na <strong>[[/r 1d5]]</strong> metrów w losowym kierunku (patrz Rozrzut) - @UUID[Compendium.wfrp4e-core.items.gz2xy41OSVZ8YBgI]{Amputacja (trudna)}. Postać otrzymuje: Stan @Condition[Powalenie], 3 poziomy Stanu @Condition[Krwawienie] i 2 poziomy Stanu @Condition[Oszołomienie].</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.BzIaW1w6eTUFWgkk",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.BzIaW1w6eTUFWgkk",
             "effects": {
                 "2ngJlZ488J7L1sD7": {
                     "id": "2ngJlZ488J7L1sD7",
                     "name": "Powalenie",
                     "script": "args.prefillModifiers.modifier -= 20",
-                    "secondaryScript": "if (args.type == 'weapon' && args.item.attackType=='melee') args.prefillModifiers.modifier += 20"
+                    "secondaryScript": "if (args.type == 'weapon' && args.item.attackType=='melee') args.prefillModifiers.modifier += 20",
+                    "scriptData": [
+                        {
+                            "id": "2ngJlZ488J7L1sD7",
+                            "name": "Powalenie",
+                            "script": "args.prefillModifiers.modifier -= 20",
+                            "activationScript": "return true"
+                        }
+                    ]
                 },
                 "n4NWJIGZiDU9aWt4": {
                     "id": "n4NWJIGZiDU9aWt4",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "n4NWJIGZiDU9aWt4",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 },
                 "rIF8c6C0BNeSjDv2": {
                     "id": "rIF8c6C0BNeSjDv2",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
+                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                    "scriptData": [
+                        {
+                            "id": "rIF8c6C0BNeSjDv2",
+                            "name": "Oszołomienie",
+                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                            "activationScript": "return true"
+                        }
+                    ]
                 },
                 "yZAbuVNb4ExBntt9": {
                     "id": "yZAbuVNb4ExBntt9",
                     "name": "Odcięta stopa",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.gz2xy41OSVZ8YBgI\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.gz2xy41OSVZ8YBgI\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
+                    "scriptData": [
+                        {
+                            "id": "yZAbuVNb4ExBntt9",
+                            "name": "Odcięta stopa",
+                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.gz2xy41OSVZ8YBgI\");\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key\nthis.actor.createEmbeddedDocuments(\"Item\", [data])\n"
+                        }
+                    ]
                 }
             },
             "wounds": "5",
@@ -417,7 +711,7 @@
             "id": "cJ6raCFuP1diIXsy",
             "name": "Prosto w ucho",
             "description": "<p>Cios uderza w bok głowy z olbrzymią mocą, aż dzwoni w uchu. Postać otrzymuje 1 poziom Stanu @Condition[Ogłuszenie].</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.cJ6raCFuP1diIXsy",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.cJ6raCFuP1diIXsy",
             "effects": {
                 "7a3L530CIhnX5cTl": {
                     "id": "7a3L530CIhnX5cTl",
@@ -432,12 +726,19 @@
             "id": "cWK3kNzvujhWi9jQ",
             "name": "Naderwane mięśnie pleców",
             "description": "<p>Plecy przemieniają się w jedną wielką strefę obezwładniającego bólu. Postać otrzymuje Uraz @UUID[Compendium.wfrp4e-core.items.eWPN3CV2Eddwz8aM]{Zerwanie mięśni (pomniejsze)}.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.cWK3kNzvujhWi9jQ",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.cWK3kNzvujhWi9jQ",
             "effects": {
                 "AiDPNet52D6Mwycb": {
                     "id": "AiDPNet52D6Mwycb",
                     "name": "Naderwane mięśnie pleców",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.eWPN3CV2Eddwz8aM\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.eWPN3CV2Eddwz8aM\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
+                    "scriptData": [
+                        {
+                            "id": "AiDPNet52D6Mwycb",
+                            "name": "Naderwane mięśnie pleców",
+                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.eWPN3CV2Eddwz8aM\")\nlet data = item.toObject();\ndata.system.location.value = \"Back\"\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect: this.effect.id})"
+                        }
+                    ]
                 }
             },
             "wounds": "4",
@@ -447,12 +748,19 @@
             "id": "F9aFPBvoCdxg8oFJ",
             "name": "Strzaskana miednica",
             "description": "<p>Cios miażdży miednicę, odcinając jedną nogę i wrzynając się w drugą. Ból, szok i utrata krwi są tak duże, że postać pada martwa na ziemię.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.F9aFPBvoCdxg8oFJ",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.F9aFPBvoCdxg8oFJ",
             "effects": {
                 "JyeUMIMAfyK0ZjUn": {
                     "id": "JyeUMIMAfyK0ZjUn",
                     "name": "Strzaskana miednica",
-                    "script": "await this.actor.addCondition(\"dead\")"
+                    "script": "await this.actor.addCondition(\"dead\")",
+                    "scriptData": [
+                        {
+                            "id": "JyeUMIMAfyK0ZjUn",
+                            "name": "Strzaskana miednica",
+                            "script": "this.actor.addCondition(\"dead\")"
+                        }
+                    ]
                 }
             },
             "wounds": "Śmierć",
@@ -461,17 +769,42 @@
         "Broken Nose": {
             "id": "fIjnRUF4xplU2mhP",
             "name": "Złamany nos",
-            "description": "<p>Silny cios trafia w sam środek twarzy, a postać zalewa się krwią. Postać otrzymuje 2 poziomy Stanu @Condition[Krwawienie]. Musi także zdać <strong>Wymagający (+0) Test Odporności</strong>, w przeciwnym wypadku otrzyma również 1 poziom Stanu @Condition[Oszołomienie]. Po wyleczeniu tej rany postać uzyskuje premię +1 lub karę -1 do Testów w kontaktach społecznych (w zależności od kontekstu), chyba że podjęto Test @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgii}, by nastawić i wyprostować nos.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.fIjnRUF4xplU2mhP",
+            "description": "<p>Silny cios trafia w sam środek twarzy, a postać zalewa się krwią. Postać otrzymuje 2 poziomy Stanu @Condition[Krwawienie]. Musi także zdać <strong>Wymagający (+0) Test Odporności</strong>, w przeciwnym wypadku otrzyma również 1 poziom Stanu @Condition[Oszołomienie]. Po wyleczeniu tej rany postać uzyskuje premię +1 lub karę -1 do Testów w kontaktach społecznych (w zależności od kontekstu), chyba że podjęto Test @UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgii}, by nastawić i wyprostować nos.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.fIjnRUF4xplU2mhP",
             "effects": {
                 "us244BgOUN1LRLnc": {
                     "id": "us244BgOUN1LRLnc",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "name": "Krwawienie",
+                            "id": "us244BgOUN1LRLnc"
+                        }
+                    ]
                 },
                 "zYfCX8Eq2VkRFhNI": {
                     "id": "zYfCX8Eq2VkRFhNI",
                     "name": "Złamany nos",
-                    "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"stunned\")\n        }\n     });\n}"
+                    "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"stunned\")\n        }\n     });\n}",
+                    "scriptData": [
+                        {
+                            "id": "zYfCX8Eq2VkRFhNI",
+                            "name": "Złamany nos",
+                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"))\nawait test.roll();\nif (!test.succeeded)\n{\n    args.actor.addCondition(\"stunned\")\n}"
+                        },
+                        {
+                            "id": "zYfCX8Eq2VkRFhNI",
+                            "name": "Złamany nos",
+                            "script": "args.fields.slBonus++;",
+                            "hideScript": "return args.characteristic != \"fel\""
+                        },
+                        {
+                            "id": "zYfCX8Eq2VkRFhNI",
+                            "name": "Złamany nos",
+                            "script": "args.fields.slBonus--;",
+                            "hideScript": "return args.characteristic != \"fel\""
+                        }
+                    ]
                 }
             },
             "wounds": "3",
@@ -481,21 +814,47 @@
             "id": "G8m6k3wEkhuXMjjp",
             "name": "Zmasakrowana dłoń",
             "description": "<p>Cios przecina dłoń, a rana zaczyna się rozszerzać. Postać traci 1 palec - @UUID[Compendium.wfrp4e-core.items.SYjWiKDzMS6CtROJ]{Amputacja (problematyczna)}. Ponadto otrzymuje 2 poziomy Stanu @Condition[Krwawienie] oraz 1 poziom Stanu @Condition[Oszołomienie]. W każdej następnej Rundzie, jeśli nie otrzyma <b>Pomocy Medycznej</b>, traci kolejny palec, ponieważ rana się rozszerza, a dłoń po prostu rwie się na strzępy. Jeśli skończą się palce, postać traci dłoń - @UUID[Compendium.wfrp4e-core.items.SYjWiKDzMS6CtROJ]{Amputacja (trudna)}.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.G8m6k3wEkhuXMjjp",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.G8m6k3wEkhuXMjjp",
             "effects": {
                 "3rDSK76g1cKpmn40": {
                     "id": "3rDSK76g1cKpmn40",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
+                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                    "scriptData": [
+                        {
+                            "id": "3rDSK76g1cKpmn40",
+                            "name": "Oszołomienie",
+                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                            "activationScript": "return true"
+                        }
+                    ]
                 },
                 "6KtIpUxSWrqIewki": {
                     "id": "6KtIpUxSWrqIewki",
                     "name": "Zmasakrowana dłoń",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.SYjWiKDzMS6CtROJ\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.SYjWiKDzMS6CtROJ\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
+                    "scriptData": [
+                        {
+                            "id": "6KtIpUxSWrqIewki",
+                            "name": "Zmasakrowana dłoń",
+                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.SYjWiKDzMS6CtROJ\")\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key\nif (this.item.system.location.key == \"rArm\")\n{\n\tdata.system.location.value = \"Prawa Ręka\"\n\tdata.system.location.key = \"rHand\"\n}\nelse if (this.item.system.location.key == \"lArm\")\n{\n\tdata.system.location.value = \"Lewa Ręka\"\n\tdata.system.location.key = \"lHand\"\n}\nthis.actor.createEmbeddedDocuments(\"Item\", [data])"
+                        },
+                        {
+                            "id": "6KtIpUxSWrqIewki",
+                            "name": "Zmasakrowana dłoń",
+                            "script": "this.effect.manualScripts[0].execute({actor : this.actor});"
+                        }
+                    ]
                 },
                 "lSn9Mr174doheAbo": {
                     "id": "lSn9Mr174doheAbo",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "lSn9Mr174doheAbo",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 }
             },
             "wounds": "5",
@@ -505,7 +864,7 @@
             "id": "GBaH4wyVes6ds7Wv",
             "name": "Wybite oko",
             "description": "<p>Cios zupełnie niszczy gałkę oczną, wywołując niezwykle silny ból. Postać otrzymuje 3 poziomy Stanu @Condition[Oślepienie], 2 poziomy Stanu @Condition[Krwawienie] i 1 poziom Stanu @Condition[Oszołomienie]. Ponadto traci oko - @UUID[Compendium.wfrp4e-core.items.weczkAMPlTjX7lqU]{Amputacja (wymagająca)}.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.GBaH4wyVes6ds7Wv",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.GBaH4wyVes6ds7Wv",
             "effects": {
                 "4G9KjSyQNM9UFOlS": {
                     "id": "4G9KjSyQNM9UFOlS",
@@ -516,16 +875,37 @@
                 "jatRx58WzHQUA31m": {
                     "id": "jatRx58WzHQUA31m",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
+                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                    "scriptData": [
+                        {
+                            "id": "jatRx58WzHQUA31m",
+                            "name": "Oszołomienie",
+                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                            "activationScript": "return true"
+                        }
+                    ]
                 },
                 "pSm6zIWXDFmFg3Zq": {
                     "id": "pSm6zIWXDFmFg3Zq",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "pSm6zIWXDFmFg3Zq",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 },
                 "SYIKc7QymcGfIwN9": {
                     "id": "SYIKc7QymcGfIwN9",
                     "name": "Wybite oko",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.weczkAMPlTjX7lqU\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.weczkAMPlTjX7lqU\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
+                    "scriptData": [
+                        {
+                            "id": "SYIKc7QymcGfIwN9",
+                            "name": "Wybite oko",
+                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.weczkAMPlTjX7lqU\")\nthis.actor.createEmbeddedDocuments(\"Item\", [item])"
+                        }
+                    ]
                 }
             },
             "wounds": "5",
@@ -535,11 +915,17 @@
             "id": "GHa0StLRCchw6dQ0",
             "name": "Uderzenie w czoło",
             "description": "<p>Potężny cios trafia w sam środek czoła. Postać otrzymuje 2 poziomy Stanu @Condition[Krwawienie] oraz 1 poziom Stanu @Condition[Oślepienie], który nie może zostać usunięty, dopóki @Condition[Krwawienie] nie zostanie wyleczone.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.GHa0StLRCchw6dQ0",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.GHa0StLRCchw6dQ0",
             "effects": {
                 "DhFtbgaZVeqb8kaH": {
                     "id": "DhFtbgaZVeqb8kaH",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "DhFtbgaZVeqb8kaH",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 },
                 "sTAtmClXjBUnD5VO": {
                     "id": "sTAtmClXjBUnD5VO",
@@ -554,17 +940,30 @@
         "Gaping Chest Wound": {
             "id": "GmRF7GF7SZq6qeyj",
             "name": "Ziejąca rana korpusu",
-            "description": "<p>Postać otrzymuje 3 poziomy Stanu @Condition[Krwawienie]. Dopóki ktoś nie udzieli jej pomocy @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgicznej}, za każdym razem, gdy postać otrzyma Ranę w korpus, otrzymuje dodatkowy poziom Stanu @Condition[Krwawienie], gdyż rozcięcie się otwiera.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.GmRF7GF7SZq6qeyj",
+            "description": "<p>Postać otrzymuje 3 poziomy Stanu @Condition[Krwawienie]. Dopóki ktoś nie udzieli jej pomocy @UUID[Compendium.wfrp4e-core.journals.JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgicznej}, za każdym razem, gdy postać otrzyma Ranę w korpus, otrzymuje dodatkowy poziom Stanu @Condition[Krwawienie], gdyż rozcięcie się otwiera.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.GmRF7GF7SZq6qeyj",
             "effects": {
                 "fcr0kAJMhiUc1n7k": {
                     "id": "fcr0kAJMhiUc1n7k",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "fcr0kAJMhiUc1n7k",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 },
                 "rKSl42ZfhRErzUTS": {
                     "id": "rKSl42ZfhRErzUTS",
                     "name": "Ziejąca rana korpusu",
-                    "script": "if (args.opposedTest.result.hitloc.value == \"body\") {\n    args.actor.addCondition(\"bleeding\", 1);\n}"
+                    "script": "if (args.opposedTest.result.hitloc.value == \"body\") {\n    args.actor.addCondition(\"bleeding\", 1);\n}",
+                    "scriptData": [
+                        {
+                            "id": "rKSl42ZfhRErzUTS",
+                            "name": "Ziejąca rana korpusu",
+                            "script": "if (args.opposedTest.result.hitloc.value == \"body\" && args.totalWoundLoss > 0))\n{\n    args.actor.addCondition(\"bleeding\", 1);\n    this.script.scriptNotification(\"Wywołano Krwawienie\")\n}\n"
+                        }
+                    ]
                 }
             },
             "wounds": "3",
@@ -574,21 +973,42 @@
             "id": "GsBi7iz9z5tj9PiM",
             "name": "Bolesne cięcie",
             "description": "<p>Postać otrzymuje 2 poziomy Stanu @Condition[Krwawienie] oraz 1 poziom Stanu @Condition[Oszołomienie]. Musi także zdać <strong>Trudny (-20) Test Odporności</strong>, w przeciwnym wypadku nastąpi @Condition[Utrata Przytomności] z powodu bólu. Jeśli Test nie zakończy się co najmniej 4 PS, postać wyje z bólu.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.GsBi7iz9z5tj9PiM",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.GsBi7iz9z5tj9PiM",
             "effects": {
                 "k8a0UhmO2dc0eg89": {
                     "id": "k8a0UhmO2dc0eg89",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
+                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                    "scriptData": [
+                        {
+                            "name": "Oszołomienie",
+                            "id": "k8a0UhmO2dc0eg89",
+                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                            "activationScript": "return true"
+                        }
+                    ]
                 },
                 "MeryWEfxh1qfb4qD": {
                     "id": "MeryWEfxh1qfb4qD",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "MeryWEfxh1qfb4qD",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 },
                 "oScP7BQrypeVVVbf": {
                     "id": "oScP7BQrypeVVVbf",
                     "name": "Bolesne cięcie",
-                    "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n    });\n}"
+                    "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n    });\n}",
+                    "scriptData": [
+                        {
+                            "id": "oScP7BQrypeVVVbf",
+                            "name": "Bolesne cięcie",
+                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {appendTitle : ` - ${this.effect.name}`, fields: {difficulty: \"hard\"}})\nawait test.roll();\nif (test.failed)\n{\n    this.actor.addCondition(\"unconscious\")\n}\n"
+                        }
+                    ]
                 }
             },
             "wounds": "3",
@@ -603,7 +1023,15 @@
                 "bpo2NXwpg23AKY9y": {
                     "id": "bpo2NXwpg23AKY9y",
                     "name": "Poważna rana ucha",
-                    "description": "Testy związane ze słuchem"
+                    "description": "Testy związane ze słuchem",
+                    "scriptData": [
+                        {
+                            "id": "bpo2NXwpg23AKY9y",
+                            "name": "Poważna rana ucha",
+                            "script": "args.fields.modifier += -20;\n        ",
+                            "hideScript": "return args.characteristic != \"i\""
+                        }
+                    ]
                 }
             },
             "wounds": "3",
@@ -613,16 +1041,29 @@
             "id": "H07sv4W1RPoES06K",
             "name": "Odcięty palec",
             "description": "<p>Postać z otwartymi ustami patrzy na lecący w powietrzu własny palec - @UUID[Compendium.wfrp4e-core.items.SYjWiKDzMS6CtROJ]{Amputacja (przeciętna)}. Postać otrzymuje 1 poziom Stanu @Condition[Krwawienie].</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.H07sv4W1RPoES06K",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.H07sv4W1RPoES06K",
             "effects": {
                 "HkPD4WDbEYIz83dy": {
                     "id": "HkPD4WDbEYIz83dy",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "HkPD4WDbEYIz83dy",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 },
                 "rG3wXUaHLNu7IcYO": {
                     "id": "rG3wXUaHLNu7IcYO",
                     "name": "Odcięty palec",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.SYjWiKDzMS6CtROJ\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.SYjWiKDzMS6CtROJ\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
+                    "scriptData": [
+                        {
+                            "id": "rG3wXUaHLNu7IcYO",
+                            "name": "Odcięty palec",
+                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.SYjWiKDzMS6CtROJ\")\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key\nif (this.item.system.location.key == \"rArm\")\n{\n\tdata.system.location.value = \"Prawa Ręka\"\n\tdata.system.location.key = \"rHand\"\n}\nelse if (this.item.system.location.key == \"lArm\")\n{\n\tdata.system.location.value = \"Lewa Ręka\n\tdata.system.location.key = \"lHand\"\n}\nthis.actor.createEmbeddedDocuments(\"Item\", [data])"
+                        }
+                    ]
                 }
             },
             "wounds": "4",
@@ -632,23 +1073,46 @@
             "id": "heJZbvL0uXqKbljR",
             "name": "Rozerwana łydka",
             "description": "<p>Cios trafia czysto pod kolano, rozcinając mięśnie i ścięgna aż do kości. Postać otrzymuje Stany: @Condition[Powalenie] i 1 poziom Stanu @Condition[Oszołomienie]. Ponadto zyskuje Urazy @UUID[Compendium.wfrp4e-core.items.7mCcI3q7hgWcmbBU]{Zerwanie mięśni (pomniejsze)} oraz @UUID[Compendium.wfrp4e-core.items.7mCcI3q7hgWcmbBU]{Złamanie (pomniejsze)}.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.heJZbvL0uXqKbljR",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.heJZbvL0uXqKbljR",
             "effects": {
                 "lanapxEmE0mai3mV": {
                     "id": "lanapxEmE0mai3mV",
                     "name": "Rozerwana łydka",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.3S4OYOZLauXctmev\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})\n\nfromUuid(\"Compendium.wfrp4e-core.items.7mCcI3q7hgWcmbBU\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.3S4OYOZLauXctmev\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})\n\nfromUuid(\"Compendium.wfrp4e-core.items.7mCcI3q7hgWcmbBU\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
+                    "scriptData": [
+                        {
+                            "id": "lanapxEmE0mai3mV",
+                            "name": "Rozerwana łydka",
+                            "script": "let item1 = await fromUuid(\"Compendium.wfrp4e-core.items.3S4OYOZLauXctmev\")\nlet item2 = await fromUuid(\"Compendium.wfrp4e-core.items.7mCcI3q7hgWcmbBU\")\n\nlet data1 = item1.toObject();\ndata1.system.location.value = this.item.system.location.key\n\nlet data2 = item2.toObject();\ndata2.system.location.key = this.item.system.location.key\n\nthis.actor.createEmbeddedDocuments(\"Item\", [data1, data2], {fromEffect: this.effect.id})\n"
+                        }
+                    ]
                 },
                 "RW5eRZ7NxikYNagM": {
                     "id": "RW5eRZ7NxikYNagM",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
+                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                    "scriptData": [
+                        {
+                            "id": "RW5eRZ7NxikYNagM",
+                            "name": "Oszołomienie",
+                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                            "activationScript": "return true"
+                        }
+                    ]
                 },
                 "YS3kViPKuIu9Aaif": {
                     "id": "YS3kViPKuIu9Aaif",
                     "name": "Powalenie",
                     "script": "args.prefillModifiers.modifier -= 20",
-                    "secondaryScript": "if (args.type == 'weapon' && args.item.attackType=='melee') args.prefillModifiers.modifier += 20"
+                    "secondaryScript": "if (args.type == 'weapon' && args.item.attackType=='melee') args.prefillModifiers.modifier += 20",
+                    "scriptData": [
+                        {
+                            "id": "YS3kViPKuIu9Aaif",
+                            "name": "Powalenie",
+                            "script": "args.prefillModifiers.modifier -= 20",
+                            "activationScript": "return true"
+                        }
+                    ]
                 }
             },
             "wounds": "4",
@@ -658,15 +1122,28 @@
             "id": "iLHKw6w3Ipmzj5ma",
             "name": "Zdrętwiałe ramię",
             "description": "<p>W wyniku ataku ramię przechodzą fale odrętwienia. Postać upuszcza wszystko, co trzymała w dłoni.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.iLHKw6w3Ipmzj5ma",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.iLHKw6w3Ipmzj5ma",
             "wounds": "1",
-            "location": "Ręka"
+            "location": "Ręka",
+            "effects": {
+                "YeW4MtTUABKojwJk": {
+                    "scriptData": [
+                        {
+                            "name": "Zdrętwiałe ramię",
+                            "id": "YeW4MtTUABKojwJk",
+                            "script": "let location = this.item.system.location.key;\n\nif (location)\n{\n    let dropped = this.item.system.weaponsAtLocation;\n\n    if (dropped.length)\n    {\n        this.script.scriptNotification(`Upuszczono: ${dropped.map(i => i.name).join(\", \")}!`)\n        for(let weapon of dropped)\n        {\n            await weapon.system.toggleEquip();\n        }\n    }\n}"
+                        }
+                    ],
+                    "id": "YeW4MtTUABKojwJk",
+                    "name": "Zdrętwiałe ramię"
+                }
+            }
         },
         "Major Eye Wound": {
             "id": "Ioxf9osVNGNyzIZA",
             "name": "Poważna rana oka",
             "description": "<p>Cios łamie oczodół. Postać otrzymuje 1 poziom Stanu @Condition[Krwawienie]. Ponadto otrzymuje również 1 poziom Stanu @Condition[Oślepienie], który nie może zostać usunięty, dopóki postać nie otrzyma <b>Pomocy Medycznej</b>.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Ioxf9osVNGNyzIZA",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.Ioxf9osVNGNyzIZA",
             "effects": {
                 "749ILWkBSZeetB7y": {
                     "id": "749ILWkBSZeetB7y",
@@ -676,7 +1153,13 @@
                 },
                 "dJsRgSNjJtohBYPc": {
                     "id": "dJsRgSNjJtohBYPc",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "dJsRgSNjJtohBYPc",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 }
             },
             "wounds": "3",
@@ -686,11 +1169,17 @@
             "id": "IZkWdvSwQPrnjdsD",
             "name": "Rozcięte ucho",
             "description": "<p>Cios w bok głowy jest na tyle mocny, że wrzyna się głęboko w ucho. Postać otrzymuje 2 poziomy Stanu @Condition[Ogłuszenie] i 1 poziom Stanu @Condition[Krwawienie].</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.IZkWdvSwQPrnjdsD",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.IZkWdvSwQPrnjdsD",
             "effects": {
                 "CwBoFiJqX5bc27F2": {
                     "id": "CwBoFiJqX5bc27F2",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "CwBoFiJqX5bc27F2",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 },
                 "SbOvAmqaK31JREjI": {
                     "id": "SbOvAmqaK31JREjI",
@@ -705,16 +1194,29 @@
             "id": "JcAgEHxuY9hwB4y5",
             "name": "Paskudne cięcie",
             "description": "<p>Postać otrzymuje 2 poziomy Stanu @Condition[Krwawienie], a na jej łydce pojawia się głębokie otwarte rozcięcie. Musi także zdać <strong>Wymagający (+0) Test Odporności</strong>, w przeciwnym wypadku otrzyma Stan @Condition[Powalenie].</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.JcAgEHxuY9hwB4y5",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.JcAgEHxuY9hwB4y5",
             "effects": {
                 "kub1YScTxM1VNLHK": {
                     "id": "kub1YScTxM1VNLHK",
                     "name": "Paskudne cięcie",
-                    "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}"
+                    "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}",
+                    "scriptData": [
+                        {
+                            "id": "kub1YScTxM1VNLHK",
+                            "name": "Paskudne cięcie",
+                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {appendTitle: ` - ${this.effect.name}`})\nawait test.roll();\nif (!test.succeeded)\n{\n    this.actor.addCondition(\"prone\")\n}"
+                        }
+                    ]
                 },
                 "MeZJb40J14iJng8X": {
                     "id": "MeZJb40J14iJng8X",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "MeZJb40J14iJng8X",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 }
             },
             "wounds": "3",
@@ -724,12 +1226,19 @@
             "id": "jeXKnpbV7xq8wDkH",
             "name": "Zgruchotana dłoń",
             "description": "<p>Dłoń postaci jest zgruchotaną, krwawiącą papką. Postać traci dłoń - @UUID[Compendium.wfrp4e-core.items.zyocWSzEZEC826NS]{Amputacja (trudna)} - i otrzymuje 2 poziomy Stanu @Condition[Krwawienie]. Musi zdać <strong>Trudny (-20) Test Odporności</strong>, w przeciwnym wypadku otrzyma Stany @Condition[Powalenie] i @Condition[Utrata Przytomności].</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.jeXKnpbV7xq8wDkH",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.jeXKnpbV7xq8wDkH",
             "effects": {
                 "tyXuApNnqAV4JcJ5": {
                     "id": "tyXuApNnqAV4JcJ5",
                     "name": "Zgruchotana dłoń",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.zyocWSzEZEC826NS\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})\n\nif (this.actor.isOwner) {\n args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n          await test.roll();\n          if (test.result.outcome == \"failure\") { \n               await args.actor.addCondition(\"prone\");\n               await args.actor.addCondition(\"stunned\");\n          }\n     });\n}"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.zyocWSzEZEC826NS\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})\n\nif (this.actor.isOwner) {\n args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n          await test.roll();\n          if (test.result.outcome == \"failure\") { \n               await args.actor.addCondition(\"prone\");\n               await args.actor.addCondition(\"stunned\");\n          }\n     });\n}",
+                    "scriptData": [
+                        {
+                            "id": "tyXuApNnqAV4JcJ5",
+                            "name": "Zgruchotana dłoń",
+                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.zyocWSzEZEC826NS\")\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key\nthis.actor.createEmbeddedDocuments(\"Item\", [data])\n\n\nlet test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {fields: {difficulty: \"hard\"}, appendTitle : ` - ${this.effect.name}`})\nawait test.roll();\nif (test.failed)\n{\n    await this.actor.addCondition(\"prone\")\n    await this.actor.addCondition(\"stunned\")\n}"
+                        }
+                    ]
                 }
             },
             "wounds": "5",
@@ -739,12 +1248,19 @@
             "id": "JKm6YDR88Friuw6h",
             "name": "Zmiażdżony łokieć",
             "description": "<p>Uderzenie gruchocze łokieć, rozłupując kości i chrząstkę. Postać natychmiast upuszcza wszystko, co trzymała w dłoni, i otrzymuje Uraz @UUID[Compendium.wfrp4e-core.items.rlDZZTj5PXjuRXa2]{Złamanie (poważne)}.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.JKm6YDR88Friuw6h",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.JKm6YDR88Friuw6h",
             "effects": {
                 "sw8YrBAP6gfhSTSH": {
                     "id": "sw8YrBAP6gfhSTSH",
                     "name": "Zmiażdżony łokieć",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.rlDZZTj5PXjuRXa2\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.rlDZZTj5PXjuRXa2\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
+                    "scriptData": [
+                        {
+                            "id": "sw8YrBAP6gfhSTSH",
+                            "name": "Zmiażdżony łokieć",
+                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.rlDZZTj5PXjuRXa2\")\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key;\nawait this.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect: this.effect.id})\n\nlet location = this.item.system.location.key;\n\nif (location)\n{\n    let dropped = this.item.system.weaponsAtLocation;\n\n    if (dropped.length)\n    {\n        this.script.scriptNotification(`Upuszczono ${dropped.map(i => i.name).join(\", \")}!`)\n        for(let weapon of dropped)\n        {\n            await weapon.system.toggleEquip();\n        }\n    }\n}"
+                        }
+                    ]
                 }
             },
             "wounds": "4",
@@ -753,17 +1269,30 @@
         "Internal Bleeding": {
             "id": "jma54Iat01N9X4Fb",
             "name": "Krwotok wewnętrzny",
-            "description": "<p>Postać otrzymuje 1 poziom Stanu @Condition[Krwawienie], który można usunąć jedynie za pomocą @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgii}. Ponadto Rana skutkuje także @UUID[Compendium.wfrp4e-core.items.M8XyRs9DN12XsFTQ]{Zatrucie Krwi}.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.jma54Iat01N9X4Fb",
+            "description": "<p>Postać otrzymuje 1 poziom Stanu @Condition[Krwawienie], który można usunąć jedynie za pomocą @UUID[Compendium.wfrp4e-core.journals.JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgii}. Ponadto Rana skutkuje także @UUID[Compendium.wfrp4e-core.items.M8XyRs9DN12XsFTQ]{Zatrucie Krwi}.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.jma54Iat01N9X4Fb",
             "effects": {
                 "1WF2x6qda0OfmM8Y": {
                     "id": "1WF2x6qda0OfmM8Y",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "1WF2x6qda0OfmM8Y",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 },
                 "bvNWTQ0W26esdMso": {
                     "id": "bvNWTQ0W26esdMso",
                     "name": "Krwotok wewnętrzny",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.M8XyRs9DN12XsFTQ\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.M8XyRs9DN12XsFTQ\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
+                    "scriptData": [
+                        {
+                            "id": "bvNWTQ0W26esdMso",
+                            "name": "Krwotok wewnętrzny",
+                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.M8XyRs9DN12XsFTQ\")\nthis.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect: this.effect.id})"
+                        }
+                    ]
                 }
             },
             "wounds": "5",
@@ -772,17 +1301,30 @@
         "Gaping Arm Wound": {
             "id": "jvemdUZh3iRF67us",
             "name": "Ziejąca rana ramienia",
-            "description": "<p>Cios skutkuje głęboką, otwartą raną. Postać otrzymuje 2 poziomy Stanu @Condition[Krwawienie]. Dopóki rozcięcie nie zostanie zszyte dzięki pomocy @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgicznej}, każda Rana otrzymana w to ramię skutkuje zwiększeniem Stanu @Condition[Krwawienie] o 1 poziom, ponieważ rana się otwiera i pogłębia.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.jvemdUZh3iRF67us",
+            "description": "<p>Cios skutkuje głęboką, otwartą raną. Postać otrzymuje 2 poziomy Stanu @Condition[Krwawienie]. Dopóki rozcięcie nie zostanie zszyte dzięki pomocy @UUID[Compendium.wfrp4e-core.journals.JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgicznej}, każda Rana otrzymana w to ramię skutkuje zwiększeniem Stanu @Condition[Krwawienie] o 1 poziom, ponieważ rana się otwiera i pogłębia.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.jvemdUZh3iRF67us",
             "effects": {
                 "1sDNirNcv4XZnubO": {
                     "id": "1sDNirNcv4XZnubO",
                     "name": "Ziejąca rana ramienia",
-                    "script": "if (args.opposedTest.result.hitloc.value == \"ARM_LOCATION_HERE\") {// lArm or rArm\n    args.actor.addCondition(\"bleeding\", 1);\n}"
+                    "script": "if (args.opposedTest.result.hitloc.value == \"ARM_LOCATION_HERE\") {// lArm or rArm\n    args.actor.addCondition(\"bleeding\", 1);\n}",
+                    "scriptData": [
+                        {
+                            "id": "1sDNirNcv4XZnubO",
+                            "name": "Ziejąca rana ramienia",
+                            "script": "if (args.opposedTest.result.hitloc.value == this.item.system.location.key)\n{\n    args.actor.addCondition(\"bleeding\", 1);\n    this.script.scriptNotification(\"Wywołano Krwawienie\")\n}"
+                        }
+                    ]
                 },
                 "7OVwCkJ6rgnfZn81": {
                     "id": "7OVwCkJ6rgnfZn81",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "7OVwCkJ6rgnfZn81",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 }
             },
             "wounds": "3",
@@ -792,12 +1334,19 @@
             "id": "jY9wCTf7q86zk96P",
             "name": "Rozpłatanie",
             "description": "<p>Postać zostaje przecięta na dwoje. Górna połowa korpusu pada w losowym kierunku, a wszystkie postaci w promieniu 2 metrów zostają skąpane w fontannie krwi.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.jY9wCTf7q86zk96P",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.jY9wCTf7q86zk96P",
             "effects": {
                 "Du7cZodgpEKD8eK8": {
                     "id": "Du7cZodgpEKD8eK8",
                     "name": "Rozpłatanie",
-                    "script": "await this.actor.addCondition(\"dead\")"
+                    "script": "await this.actor.addCondition(\"dead\")",
+                    "scriptData": [
+                        {
+                            "id": "Du7cZodgpEKD8eK8",
+                            "name": "Rozpłatanie",
+                            "script": "this.actor.addCondition(\"dead\")"
+                        }
+                    ]
                 }
             },
             "wounds": "Śmierć",
@@ -807,12 +1356,19 @@
             "id": "K0WjEuCqGDUwAPE6",
             "name": "Cios w krzyż",
             "description": "<p>Postać otrzymuje Uraz @UUID[Compendium.wfrp4e-core.items.7rBhIRo96Mydo0Cv]{Zerwanie mięśni (pomniejsze)}.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.K0WjEuCqGDUwAPE6",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.K0WjEuCqGDUwAPE6",
             "effects": {
                 "qfUJIoRqhr1u8ODw": {
                     "id": "qfUJIoRqhr1u8ODw",
                     "name": "Cios w krzyż",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.7rBhIRo96Mydo0Cv\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.7rBhIRo96Mydo0Cv\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
+                    "scriptData": [
+                        {
+                            "id": "qfUJIoRqhr1u8ODw",
+                            "name": "Cios w krzyż",
+                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.7rBhIRo96Mydo0Cv\")\nlet data = item.toObject();\ndata.system.location.value = \"Plecy\"\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect: this.effect.id})\n"
+                        }
+                    ]
                 }
             },
             "wounds": "1",
@@ -822,13 +1378,32 @@
             "id": "KB58O2LWcrzIb6do",
             "name": "Podbite oko",
             "description": "<p>Cios w oko jest na tyle mocny, że postać zaczyna łzawić z bólu. Postać otrzymuje 2 poziomy Stanu @Condition[Oślepienie].</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.KB58O2LWcrzIb6do",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.KB58O2LWcrzIb6do",
             "effects": {
                 "jIlysiOZ0LFz6cgj": {
                     "id": "jIlysiOZ0LFz6cgj",
                     "name": "Oślepienie",
                     "secondaryScript": "if (args.item && args.item.attackType=='melee') args.prefillModifiers.modifier += 10 * this.effect.conditionValue",
                     "description": "Testy związane ze wzrokiem"
+                },
+                "8A9kuYE3F24fjDsF": {
+                    "scriptData": [
+                        {
+                            "id": "8A9kuYE3F24fjDsF",
+                            "name": "Oślepienie",
+                            "script": "args.fields.modifier -= 10 * this.effect.conditionValue",
+                            "activationScript": "return ['ws', 'bs', 'ag'].includes(args.characteristic)"
+                        },
+                        {
+                            "id": "8A9kuYE3F24fjDsF",
+                            "name": "Oślepienie",
+                            "script": "args.fields.modifier += 10 * this.effect.conditionValue",
+                            "activationScript": "return args.item?.attackType == 'melee'",
+                            "hideScript": "return args.item?.attackType != 'melee'"
+                        }
+                    ],
+                    "id": "8A9kuYE3F24fjDsF",
+                    "name": "Oślepienie"
                 }
             },
             "wounds": "2",
@@ -838,12 +1413,19 @@
             "id": "l5X3wwVvctgQ4k2Q",
             "name": "Poniżej pasa!",
             "description": "<p>Postać musi wykonać <strong>Trudny (-20) Test Odporności</strong>. Jeśli ten się nie powiedzie, otrzymuje 3 poziomy Stanu @Condition[Oszołomienie].</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.l5X3wwVvctgQ4k2Q",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.l5X3wwVvctgQ4k2Q",
             "effects": {
                 "3hbs7SBwqUyfpvFs": {
                     "id": "3hbs7SBwqUyfpvFs",
                     "name": "Poniżej pasa!",
-                    "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"stunned\", 3);\n        }\n     });\n}"
+                    "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"stunned\", 3);\n        }\n     });\n}",
+                    "scriptData": [
+                        {
+                            "id": "3hbs7SBwqUyfpvFs",
+                            "name": "Poniżej pasa!",
+                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {appendTitle : ` - ${this.effect.name}`, fields: {difficulty: \"hard\"}});\nawait test.roll();\nif (test.failed)\n{\n    this.actor.addCondition(\"stunned\", 3)\n}\n"
+                        }
+                    ]
                 }
             },
             "wounds": "1",
@@ -853,17 +1435,32 @@
             "id": "LdqCjnTAiiRZU1Sq",
             "name": "Złamane biodro",
             "description": "<p>Postać otrzymuje 1 poziom Stanu @Condition[Oszołomienie]. Musi także zdać <strong>Wymagający (+0) Test Odporności</strong>, w przeciwnym wypadku otrzyma Stan @Condition[Powalenie]. Ponadto otrzymuje Uraz @UUID[Compendium.wfrp4e-core.items.QluSTTTq3viHJJUh]{Złamanie (pomniejsze)}.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.LdqCjnTAiiRZU1Sq",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.LdqCjnTAiiRZU1Sq",
             "effects": {
                 "EwflBBAdP3PfmQzC": {
                     "id": "EwflBBAdP3PfmQzC",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
+                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                    "scriptData": [
+                        {
+                            "id": "EwflBBAdP3PfmQzC",
+                            "name": "Oszołomienie",
+                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                            "activationScript": "return true"
+                        }
+                    ]
                 },
                 "WHjhLJT1O6cxIv8u": {
                     "id": "WHjhLJT1O6cxIv8u",
                     "name": "Złamane biodro",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.QluSTTTq3viHJJUh\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})\nif (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.QluSTTTq3viHJJUh\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})\nif (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}",
+                    "scriptData": [
+                        {
+                            "id": "WHjhLJT1O6cxIv8u",
+                            "name": "Złamane biodro",
+                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.QluSTTTq3viHJJUh\")\nlet data = item.toObject();\ndata.system.location.value = \"Biodro\"\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect: this.effect.id})\n   \nlet test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {appendTitle : ` - ${this.effect.name}`})\nawait test.roll();\nif (test.failed)\n{\n    this.actor.addCondition(\"prone\")\n}"
+                        }
+                    ]
                 }
             },
             "wounds": "4",
@@ -873,16 +1470,29 @@
             "id": "LZ8ThwJsGDgiPkAd",
             "name": "Rozkwaszone usta",
             "description": "<p>Cios jest na tyle mocny, że usta wypełniają się wybitymi zębami i mnóstwem krwi. Postać otrzymuje 2 poziomy Stanu @Condition[Krwawienie]. Ponadto traci <strong>[[/r 1d10]]</strong> zębów - to @UUID[Compendium.wfrp4e-core.items.fBcZhOBn8IpoVqQ1]{Amputacja (łatwa)}.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.LZ8ThwJsGDgiPkAd",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.LZ8ThwJsGDgiPkAd",
             "effects": {
                 "9qPw0U171RIZCiO4": {
                     "id": "9qPw0U171RIZCiO4",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "9qPw0U171RIZCiO4",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 },
                 "N5WsBzINexkLMQVY": {
                     "id": "N5WsBzINexkLMQVY",
                     "name": "Rozkwaszone usta",
-                    "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.fBcZhOBn8IpoVqQ1\");\ninjury = item.toObject();\nlet teeth = (await new Roll(\"1d10\").roll()).total;\nChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b> stracił zęby w liczbie: ${teeth} `, speaker : {alias: this.effect.name}});\ninjury.system.location.value = `${teeth} ${injury.system.location.value}`;\nargs.actor.createEmbeddedDocuments(\"Item\", [injury]);"
+                    "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.fBcZhOBn8IpoVqQ1\");\ninjury = item.toObject();\nlet teeth = (await new Roll(\"1d10\").roll()).total;\nChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b> stracił zęby w liczbie: ${teeth} `, speaker : {alias: this.effect.name}});\ninjury.system.location.value = `${teeth} ${injury.system.location.value}`;\nargs.actor.createEmbeddedDocuments(\"Item\", [injury]);",
+                    "scriptData": [
+                        {
+                            "id": "N5WsBzINexkLMQVY",
+                            "name": "Rozkwaszone usta",
+                            "script": "teeth = await fromUuid(\"Compendium.wfrp4e-core.items.fBcZhOBn8IpoVqQ1\")\nteeth = teeth.toObject();\n\nlet roll = await new Roll(\"1d10\").roll();\nroll.toMessage(this.script.getChatData({flavor : \"Teeth Lost\"}))\nteeth.system.location.value = `${roll.total} ${teeth.system.location.value}`\nthis.actor.createEmbeddedDocuments(\"Item\", [teeth])"
+                        }
+                    ]
                 }
             },
             "wounds": "4",
@@ -892,12 +1502,20 @@
             "id": "M15Fg1Wdl047rD8L",
             "name": "Bolesne uderzenie",
             "description": "<p>Cios jest na tyle mocny, że w polu widzenia pojawiają się plamki i gwiazdki. Postać otrzymuje 1 poziom Stanu @Condition[Oszołomienie].</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.M15Fg1Wdl047rD8L",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.M15Fg1Wdl047rD8L",
             "effects": {
                 "VJ0bwQJne0HNmtph": {
                     "id": "VJ0bwQJne0HNmtph",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
+                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                    "scriptData": [
+                        {
+                            "id": "VJ0bwQJne0HNmtph",
+                            "name": "Oszołomienie",
+                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                            "activationScript": "return true"
+                        }
+                    ]
                 }
             },
             "wounds": "2",
@@ -907,17 +1525,32 @@
             "id": "MZuAg4zB17prHXaG",
             "name": "Strzaskana klatka piersiowa",
             "description": "<p>Postać otrzymuje 1 poziom Stanu @Condition[Oszołomienie], który można jedynie usunąć, udzielając <b>Pomocy Medycznej</b>, a także Uraz @UUID[Compendium.wfrp4e-core.items.EaqlLRQigwnsEAXX]{Złamanie (poważne)}.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.MZuAg4zB17prHXaG",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.MZuAg4zB17prHXaG",
             "effects": {
                 "XWadxhMkEKpv03Mk": {
                     "id": "XWadxhMkEKpv03Mk",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
+                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                    "scriptData": [
+                        {
+                            "id": "XWadxhMkEKpv03Mk",
+                            "name": "Oszołomienie",
+                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                            "activationScript": "return true"
+                        }
+                    ]
                 },
                 "zdZncZOvjLblz909": {
                     "id": "zdZncZOvjLblz909",
                     "name": "Strzaskana klatka piersiowa",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.EaqlLRQigwnsEAXX\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.EaqlLRQigwnsEAXX\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
+                    "scriptData": [
+                        {
+                            "id": "zdZncZOvjLblz909",
+                            "name": "Strzaskana klatka piersiowa",
+                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.EaqlLRQigwnsEAXX\")\nthis.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect: this.effect.id})"
+                        }
+                    ]
                 }
             },
             "wounds": "5",
@@ -927,27 +1560,56 @@
             "id": "njocSqK1sMPTi5K4",
             "name": "Strzaskane kolano",
             "description": "<p>Cios roztrzaskuje rzepkę, której fragmenty wbijają się w mięśnie i staw. Postać otrzymuje Stany: @Condition[Powalenie], 1 poziom Stanu @Condition[Krwawienie] i 1 poziom Stanu @Condition[Oszołomienie] oraz Uraz @UUID[Compendium.wfrp4e-core.items.2iult41Jehz0F1O8]{Złamanie (poważne)}, padając na ziemię i trzymając się za strzaskane kolano.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.njocSqK1sMPTi5K4",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.njocSqK1sMPTi5K4",
             "effects": {
                 "0wiLtR9wzYfqn7kK": {
                     "id": "0wiLtR9wzYfqn7kK",
                     "name": "Strzaskane kolano",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.2iult41Jehz0F1O8\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.2iult41Jehz0F1O8\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
+                    "scriptData": [
+                        {
+                            "id": "0wiLtR9wzYfqn7kK",
+                            "name": "Strzaskane kolano",
+                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.2iult41Jehz0F1O8\")\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key;\nawait this.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect: this.effect.id})"
+                        }
+                    ]
                 },
                 "frTFfaHrrJxQMQvi": {
                     "id": "frTFfaHrrJxQMQvi",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
+                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                    "scriptData": [
+                        {
+                            "id": "frTFfaHrrJxQMQvi",
+                            "name": "Oszołomienie",
+                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                            "activationScript": "return true"
+                        }
+                    ]
                 },
                 "VeT5PVDzmP96JWCM": {
                     "id": "VeT5PVDzmP96JWCM",
                     "name": "Powalenie",
                     "script": "args.prefillModifiers.modifier -= 20",
-                    "secondaryScript": "if (args.type == 'weapon' && args.item.attackType=='melee') args.prefillModifiers.modifier += 20"
+                    "secondaryScript": "if (args.type == 'weapon' && args.item.attackType=='melee') args.prefillModifiers.modifier += 20",
+                    "scriptData": [
+                        {
+                            "id": "VeT5PVDzmP96JWCM",
+                            "name": "Powalenie",
+                            "script": "args.prefillModifiers.modifier -= 20",
+                            "activationScript": "return true"
+                        }
+                    ]
                 },
                 "zn1gNVJsB6wLvLmH": {
                     "id": "zn1gNVJsB6wLvLmH",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "zn1gNVJsB6wLvLmH",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 }
             },
             "wounds": "4",
@@ -957,24 +1619,57 @@
             "id": "nnPZijQYZGya1NJM",
             "name": "Wybicie stawu",
             "description": "<p>Ramię prawie zostało wyrwane ze stawu. Wszystko, co było trzymane w dłoni, wypada, a ramię jest bezużyteczne przez [[/r 1d10]] Rund. Zobacz @UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#amputacje]{Amputacje})</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.nnPZijQYZGya1NJM",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.nnPZijQYZGya1NJM",
             "wounds": "2",
-            "location": "Ręka"
+            "location": "Ręka",
+            "effects": {
+                "H7W6BNsE6d2RR1Ti": {
+                    "scriptData": [
+                        {
+                            "name": "Wybicie stawu",
+                            "id": "H7W6BNsE6d2RR1Ti",
+                            "script": "let location = this.item.system.location.key;\n\nif (location)\n{\n    let dropped = this.item.system.weaponsAtLocation;\n\n    if (dropped.length)\n    {\n        this.script.scriptNotification(`Upuszczono: ${dropped.map(i => i.name).join(\", \")}!`)\n        for(let weapon of dropped)\n        {\n            await weapon.system.toggleEquip();\n        }\n    }\n}\n\nlet roll = await new Roll(\"1d10\").roll()\n\nroll.toMessage(this.script.getChatData({flavor : `${this.effect.name} (Czas Trwania)`}));\n\nthis.effect.updateSource({\"duration.rounds\" : roll.total})"
+                        },
+                        {
+                            "id": "H7W6BNsE6d2RR1Ti",
+                            "name": "Wybicie stawu",
+                            "script": "args.abort = true;\nthis.script.scriptNotification(`Nie można używać: ${this.item.system.location.value}!`, \"error\")",
+                            "activationScript": "return this.item.system.usesLocation(args.weapon)",
+                            "hideScript": "return !args.weapon"
+                        }
+                    ],
+                    "id": "H7W6BNsE6d2RR1Ti",
+                    "name": "Wybicie stawu"
+                }
+            }
         },
         "Crushed Foot": {
             "id": "NPhLsxsUV8wwdKWj",
             "name": "Zmiażdżona stopa",
             "description": "<p>Cios miażdży stopę postaci. Ta musi również wykonać <strong>Przeciętny (+20) Test Odporności</strong>, a jeśli się jej nie uda, otrzyma Stan @Condition[Powalenie], straci 1 palec u nogi, a także 1 dodatkowy palec za każdy PS poniżej 0 - @UUID[Compendium.wfrp4e-core.items.ZhMADOqoo0y8Q9bx]{Amputacja (przeciętna)}. Postać otrzymuje 2 poziomy Stanu @Condition[Krwawienie]. Jeśli w ciągu <strong>[[/r 1d10]]</strong> dni nie zostanie przeprowadzona operacja Chirurgiczna, będzie trzeba amputować całą stopę.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.NPhLsxsUV8wwdKWj",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.NPhLsxsUV8wwdKWj",
             "effects": {
                 "1nNGzJZNKnuXr9W7": {
                     "id": "1nNGzJZNKnuXr9W7",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "1nNGzJZNKnuXr9W7",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 },
                 "nWRttvafUnh1XIZU": {
                     "id": "nWRttvafUnh1XIZU",
                     "name": "Zmiażdżona stopa",
-                    "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), { absolute: { difficulty: \"average\" } }).then(async test => {\n      await test.roll();\n      if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n            let injury = await fromUuid(\"Compendium.wfrp4e-core.items.ZhMADOqoo0y8Q9bx\");\n            injury = injury.toObject();\n            injury.system.location.value = `${Math.clamped(Math.abs(test.result.SL) + 1, 1, 5)} ${injury.system.location.value}`\n            args.actor.createEmbeddedDocuments(\"Item\", [injury]);\n      }\n    });\n}"
+                    "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), { absolute: { difficulty: \"average\" } }).then(async test => {\n      await test.roll();\n      if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n            let injury = await fromUuid(\"Compendium.wfrp4e-core.items.ZhMADOqoo0y8Q9bx\");\n            injury = injury.toObject();\n            injury.system.location.value = `${Math.clamped(Math.abs(test.result.SL) + 1, 1, 5)} ${injury.system.location.value}`\n            args.actor.createEmbeddedDocuments(\"Item\", [injury]);\n      }\n    });\n}",
+                    "scriptData": [
+                        {
+                            "id": "nWRttvafUnh1XIZU",
+                            "name": "Zmiażdżona stopa",
+                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), { fields: { difficulty: \"average\" } })\nawait test.roll();\nif (test.failed) \n{\n    await this.actor.addCondition(\"prone\")\n    let injury = await fromUuid(\"Compendium.wfrp4e-core.items.ZhMADOqoo0y8Q9bx\");\n    injury = injury.toObject()\n    let toes = Math.clamped(Math.abs(test.result.SL) + 1, 1, 5)\n    injury.system.location.key = this.item.system.location.key[0] + injury.system.location.value\n    if (injury.system.location.key[0] == \"r\")\n    {\n        injury.system.location.value = `$Prawa Stopa: {toes} ${injury.system.location.value}s`\n    }\n    else if (injury.system.location.key[0] == \"l\")\n    {\n        injury.system.location.value = `$Lewa Stopa {toes}${injury.system.location.value}s`\n    }\n    setProperty(injury, \"system.wfrp4e.count\", toes)\n    this.actor.createEmbeddedDocuments(\"Item\", [injury])\n}"
+                        }
+                    ]
                 }
             },
             "wounds": "5",
@@ -984,17 +1679,32 @@
             "id": "nZK8CBZTlWTQG2K8",
             "name": "Zmiażdżona żuchwa",
             "description": "<p>Następuje obrzydliwy trzask, a cios trafia w żuchwę od spodu, miażdżąc ją. Postać otrzymuje 3 poziomy Stanu @Condition[Oszołomienie]. Musi także zdać <strong>Wymagający (+0) Test Odporności</strong>, w przeciwnym wypadku otrzyma również 1 poziom Stanu @Condition[Ogłuszenie]. Ponadto otrzymuje Uraz @UUID[Compendium.wfrp4e-core.items.hCadFsTRvLN9faaY]{Złamanie (poważne)}.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.nZK8CBZTlWTQG2K8",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.nZK8CBZTlWTQG2K8",
             "effects": {
                 "wAq76bdunkcb9wTw": {
                     "id": "wAq76bdunkcb9wTw",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
+                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                    "scriptData": [
+                        {
+                            "id": "wAq76bdunkcb9wTw",
+                            "name": "Oszołomienie",
+                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                            "activationScript": "return true"
+                        }
+                    ]
                 },
                 "WjHgjbRuh0M3H8g6": {
                     "id": "WjHgjbRuh0M3H8g6",
                     "name": "Zmiażdżona żuchwa",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.hCadFsTRvLN9faaY\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})\n\nif (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n     });\n}"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.hCadFsTRvLN9faaY\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})\n\nif (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n     });\n}",
+                    "scriptData": [
+                        {
+                            "id": "WjHgjbRuh0M3H8g6",
+                            "name": "Zmiażdżona żuchwa",
+                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.hCadFsTRvLN9faaY\")\nlet data = item.toObject();\ndata.system.location.value = \"Jaw\"\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect : this.effect.id})\n\nlet test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {appendTitle : ` - ${this.effect.name}`})\nawait test.roll();\nif (!test.succeeded)\n{\n\targs.actor.addCondition(\"unconscious\")\n}\n\n"
+                        }
+                    ]
                 }
             },
             "wounds": "4",
@@ -1004,19 +1714,45 @@
             "id": "P6opRTvzX1rgzfgE",
             "name": "Stłuczony obojczyk",
             "description": "<p>Losowo wyznacz ramię. Wszystko, co było trzymane w dłoni po tej stronie ciała, wypada, a ramię jest bezużyteczne przez [[/r 1d10]] Rund.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.P6opRTvzX1rgzfgE",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.P6opRTvzX1rgzfgE",
             "wounds": "2",
-            "location": "Korpus"
+            "location": "Korpus",
+            "effects": {
+                "WXXxc9P5cfN0hTSu": {
+                    "scriptData": [
+                        {
+                            "id": "WXXxc9P5cfN0hTSu",
+                            "name": "Stłuczony obojczyk",
+                            "script": "let location = (Math.ceil(CONFIG.Dice.randomUniform() * 2) == 2 ? \"r\" : \"l\") + \"Arm\"\n\nif (location == \"lArm\")\n{\n\tthis.script.scriptNotification(\"Wylosowano Lewą Rękę\")\n}\nelse if (location == \"rArm\")\n{\n\tthis.script.scriptNotification(\"Wylosowano Prawą Rękę\")\n}\n\nthis.effect.updateSource({\"flags.wfrp4e.location\" : location});\n\nif (location)\n{\n    let dropped = this.actor.itemTypes.weapon.filter(i => i.isEquipped & i.system.usesHands.includes(location));\n\n    if (dropped.length)\n    {\n        this.script.scriptNotification(`Upuszczono: ${dropped.map(i => i.name).join(\", \")}!`)\n        for(let weapon of dropped)\n        {\n            await weapon.system.toggleEquip();\n        }\n    }\n}\n\nlet roll = await new Roll(\"1d10\").roll()\n\nroll.toMessage(this.script.getChatData({flavor : `${this.effect.name} (Czas Trwania)`}));\n\nthis.effect.updateSource({\"duration.rounds\" : roll.total})"
+                        },
+                        {
+                            "id": "WXXxc9P5cfN0hTSu",
+                            "name": "Stłuczony obojczyk",
+                            "script": "args.abort = true;\nthis.script.scriptNotification(`Nie można używać: ${game.wfrp4e.config.locations[this.effect.getFlag(\"wfrp4e\", \"location\")]}!`, \"error\")",
+                            "activationScript": "return args.weapon.system.usesHands.includes(this.effect.getFlag(\"wfrp4e\", \"location\"))",
+                            "hideScript": "return !args.weapon"
+                        }
+                    ],
+                    "id": "WXXxc9P5cfN0hTSu",
+                    "name": "Stłuczony obojczyk"
+                }
+            }
         },
         "Tis But A Scratch!": {
             "id": "PhCFqJif8iQaiOm0",
             "name": "Ledwie draśnięcie!",
             "description": "<p>Postać otrzymuje 1 poziom Stanu @Condition[Krwawienie].</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.PhCFqJif8iQaiOm0",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.PhCFqJif8iQaiOm0",
             "effects": {
                 "zZmnf7k6JvRb7ULV": {
                     "id": "zZmnf7k6JvRb7ULV",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "zZmnf7k6JvRb7ULV",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 }
             },
             "wounds": "1",
@@ -1026,16 +1762,29 @@
             "id": "pjJagbErW5tu3LJR",
             "name": "Rana brzucha",
             "description": "<p>Cios skutkuje zadaniem @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącej Rany} i otrzymaniem 2 poziomów Stanu @Condition[Krwawienie].</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.pjJagbErW5tu3LJR",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.pjJagbErW5tu3LJR",
             "effects": {
                 "4eZoTEFC5ZbQifn7": {
                     "id": "4eZoTEFC5ZbQifn7",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "4eZoTEFC5ZbQifn7",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 },
                 "KSraZUHBV7dm7jom": {
                     "id": "KSraZUHBV7dm7jom",
                     "name": "Rana brzucha",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb\").then(disease=> {\n args.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()])\n})"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb\").then(disease=> {\n args.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()])\n})",
+                    "scriptData": [
+                        {
+                            "id": "KSraZUHBV7dm7jom",
+                            "name": "Rana brzucha",
+                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb\")\nthis.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect: this.effect.id})"
+                        }
+                    ]
                 }
             },
             "wounds": "4",
@@ -1045,21 +1794,42 @@
             "id": "qWJ2HWWj2411KSau",
             "name": "Zgruchotana szczęka",
             "description": "<p>Cios prawie odrywa żuchwę od ciała, niszcząc język, i rozrzuca dookoła połamane zęby w chmurze krwi. Postać otrzymuje 4 poziomy Stanu @Condition[Krwawienie] oraz 3 poziomy Stanu @Condition[Oszołomienie]. Musi także zdać <strong>Bardzo Trudny (-30) Test Odporności</strong>, w przeciwnym wypadku otrzyma również 1 poziom Stanu @Condition[Ogłuszenie]. Ponadto otrzymuje Uraz @UUID[Compendium.wfrp4e-core.items.hCadFsTRvLN9faaY]{Złamanie (poważne)} i traci @UUID[Compendium.wfrp4e-core.items.rkJA1DlK51QuRlJy]{język} oraz [[/r 1d10]] zębów -<strong> @UUID[Compendium.wfrp4e-core.items.MnMZv7ZXoRqoH9dS]{Amputacja (trudna)}</strong>.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.qWJ2HWWj2411KSau",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.qWJ2HWWj2411KSau",
             "effects": {
                 "6FBVi7EOhHnDesA0": {
                     "id": "6FBVi7EOhHnDesA0",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
+                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                    "scriptData": [
+                        {
+                            "id": "6FBVi7EOhHnDesA0",
+                            "name": "Oszołomienie",
+                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                            "activationScript": "return true"
+                        }
+                    ]
                 },
                 "jXnxVAZFV82gebaR": {
                     "id": "jXnxVAZFV82gebaR",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "name": "Krwawienie",
+                            "id": "jXnxVAZFV82gebaR"
+                        }
+                    ]
                 },
                 "Ru3d8ZlbJSm8NlaU": {
                     "id": "Ru3d8ZlbJSm8NlaU",
                     "name": "Zgruchotana szczęka",
-                    "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.items.fBcZhOBn8IpoVqQ1\");\ninjury = injury.toObject()\nlet teeth = (await new Roll(\"1d10\").roll()).total;\nChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b> stracił zęby w liczbie: ${teeth}`, speaker : {alias: this.effect.name}});\ninjury.system.location.value = `${teeth} ${injury.system.location.value}`;\nargs.actor.createEmbeddedDocuments(\"Item\", [injury]);\n\ninjury = await fromUuid(\"Compendium.wfrp4e-core.items.rkJA1DlK51QuRlJy\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n\ninjury = await fromUuid(\"Compendium.wfrp4e-core.items.hCadFsTRvLN9faaY\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n\nif (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n     });\n}"
+                    "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.items.fBcZhOBn8IpoVqQ1\");\ninjury = injury.toObject()\nlet teeth = (await new Roll(\"1d10\").roll()).total;\nChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b> stracił zęby w liczbie: ${teeth}`, speaker : {alias: this.effect.name}});\ninjury.system.location.value = `${teeth} ${injury.system.location.value}`;\nargs.actor.createEmbeddedDocuments(\"Item\", [injury]);\n\ninjury = await fromUuid(\"Compendium.wfrp4e-core.items.rkJA1DlK51QuRlJy\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n\ninjury = await fromUuid(\"Compendium.wfrp4e-core.items.hCadFsTRvLN9faaY\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n\nif (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n     });\n}",
+                    "scriptData": [
+                        {
+                            "id": "Ru3d8ZlbJSm8NlaU",
+                            "name": "Zgruchotana szczęka",
+                            "script": "brokenbone = await fromUuid(\"Compendium.wfrp4e-core.items.hCadFsTRvLN9faaY\")\nteeth = await fromUuid(\"Compendium.wfrp4e-core.items.fBcZhOBn8IpoVqQ1\")\ntongue = await fromUuid(\"Compendium.wfrp4e-core.items.rkJA1DlK51QuRlJy\")\nbrokenbone = brokenbone.toObject();\nteeth = teeth.toObject();\ntongue = tongue.toObject();\n\n\nlet roll = await new Roll(\"1d10\").roll();\nroll.toMessage(this.script.getChatData({flavor : \"Teeth Lost\"}))\n\nteeth.system.location.value = `${roll.total} ${teeth.system.location.value}`\nbrokenbone.system.location.value = \"Szczęka\"\nthis.actor.createEmbeddedDocuments(\"Item\", [brokenbone, teeth, tongue])\n\nlet test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {fields: {difficulty : \"vhard\"}, appendTitle : ` - ${this.effect.name}`})\nawait test.roll();\nif (test.failed)\n{\n    this.actor.addCondition(\"unconscious\")\n}"
+                        }
+                    ]
                 }
             },
             "wounds": "5",
@@ -1069,12 +1839,21 @@
             "id": "RLBB8XHqLDM4XejE",
             "name": "Stłuczone żebra",
             "description": "<p>Wszystkie Testy Zwinności otrzymują karę -10 na [[/r 1d10]] dni.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.RLBB8XHqLDM4XejE",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.RLBB8XHqLDM4XejE",
             "effects": {
                 "vIjf5xtB3kGSjrwR": {
                     "id": "vIjf5xtB3kGSjrwR",
                     "name": "Stłuczone żebra",
-                    "script": "if (args.type == \"skill\" && args.item.characteristic.key == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}\nif (args.type == \"characteristic\" && args.item == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}"
+                    "script": "if (args.type == \"skill\" && args.item.characteristic.key == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}\nif (args.type == \"characteristic\" && args.item == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}",
+                    "scriptData": [
+                        {
+                            "id": "vIjf5xtB3kGSjrwR",
+                            "name": "Stłuczone żebra",
+                            "script": "args.fields.modifier -= 10",
+                            "activationScript": "return args.characteristic == \"ag\"",
+                            "hideScript": "return args.characteristic != \"ag\""
+                        }
+                    ]
                 }
             },
             "wounds": "2",
@@ -1084,11 +1863,17 @@
             "id": "S8sbrHd9zxaYiDFJ",
             "name": "Nierówne cięcie",
             "description": "<p>Postać otrzymuje 2 poziomy Stanu @Condition[Krwawienie].</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.S8sbrHd9zxaYiDFJ",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.S8sbrHd9zxaYiDFJ",
             "effects": {
                 "hWDMK94Lo7Vlo7qF": {
                     "id": "hWDMK94Lo7Vlo7qF",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "hWDMK94Lo7Vlo7qF",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 }
             },
             "wounds": "2",
@@ -1098,16 +1883,29 @@
             "id": "sgBDLL1iLenHJ5um",
             "name": "Uszkodzenie tętnicy",
             "description": "<p>Postać otrzymuje 4 poziomy Stanu @Condition[Krwawienie]. Dopóki ktoś nie udzieli jej pomocy <b>Chirurgicznej</b>, za każdym razem gdy postać otrzyma Ranę w korpus, otrzymuje dodatkowe 2 poziomy Stanu @Condition[Krwawienie].</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.sgBDLL1iLenHJ5um",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.sgBDLL1iLenHJ5um",
             "effects": {
                 "7JMNhRyCgMlmfLLK": {
                     "id": "7JMNhRyCgMlmfLLK",
                     "name": "Uszkodzenie tętnicy",
-                    "script": "if (args.opposedTest.result.hitloc.value == \"body\") {\n    args.actor.addCondition(\"bleeding\", 2);\n}"
+                    "script": "if (args.opposedTest.result.hitloc.value == \"body\") {\n    args.actor.addCondition(\"bleeding\", 2);\n}",
+                    "scriptData": [
+                        {
+                            "id": "7JMNhRyCgMlmfLLK",
+                            "name": "Uszkodzenie tętnicy",
+                            "script": "if (args.opposedTest.result.hitloc.value == \"body\" && args.totalWoundLoss > 0)\n{\n    args.actor.addCondition(\"bleeding\", 2)\n    this.script.scriptMessage(\"Otrzymano 2 Stany Krwawienia\")\n}"
+                        }
+                    ]
                 },
                 "fcOYmx9WLncp95Sl": {
                     "id": "fcOYmx9WLncp95Sl",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "fcOYmx9WLncp95Sl",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 }
             },
             "wounds": "3",
@@ -1117,16 +1915,29 @@
             "id": "ShiLe2LWvvwTIa4o",
             "name": "Zerwane mięśnie",
             "description": "<p>Cios wbija się z impetem w przedramię. Postać otrzymuje 1 poziom Stanu @Condition[Krwawienie] oraz Uraz @UUID[Compendium.wfrp4e-core.items.GlShFJF2TpsNh1FX]{Zerwanie mięśni (pomniejsze)}.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.ShiLe2LWvvwTIa4o",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.ShiLe2LWvvwTIa4o",
             "effects": {
                 "AdMOpRguQRPZCjVm": {
                     "id": "AdMOpRguQRPZCjVm",
                     "name": "Zerwane mięśnie",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.GlShFJF2TpsNh1FX\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.GlShFJF2TpsNh1FX\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
+                    "scriptData": [
+                        {
+                            "id": "AdMOpRguQRPZCjVm",
+                            "name": "Zerwane mięśnie",
+                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.GlShFJF2TpsNh1FX\");\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect: this.effect.id})\n"
+                        }
+                    ]
                 },
                 "kYbKdoUQIYq3zSTN": {
                     "id": "kYbKdoUQIYq3zSTN",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "name": "Krwawienie",
+                            "id": "kYbKdoUQIYq3zSTN"
+                        }
+                    ]
                 }
             },
             "wounds": "2",
@@ -1136,11 +1947,17 @@
             "id": "sJU1kEp6yoHPmhIc",
             "name": "Płytkie cięcie w ramię",
             "description": "<p>Postać otrzymuje 1 poziom @Condition[Krwawienie]{Krwawienia} w wyniku cięcia w ramię.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.sJU1kEp6yoHPmhIc",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.sJU1kEp6yoHPmhIc",
             "effects": {
                 "d2Gh2PYEwe7NdMWQ": {
                     "id": "d2Gh2PYEwe7NdMWQ",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "d2Gh2PYEwe7NdMWQ",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 }
             },
             "wounds": "1",
@@ -1150,16 +1967,30 @@
             "id": "sSSUZXOXK2DSpxGx",
             "name": "Zawadiacka rana",
             "description": "<p>Mocny cios przez czoło i policzek. Postać otrzymuje 1 poziom Stanu @Condition[Krwawienie]. Po wyleczeniu takiej rany pozostaje budząca szacunek blizna, która zapewnia premię +1 PS do odpowiednich Testów w kontaktach społecznych. Premię tę można otrzymać tylko raz.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.sSSUZXOXK2DSpxGx",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.sSSUZXOXK2DSpxGx",
             "effects": {
                 "pnqEtu6lQlejU6CV": {
                     "id": "pnqEtu6lQlejU6CV",
                     "name": "Zawadiacka rana",
-                    "description": "Testy społeczne, na które wpłynie budząca szacunek blizna"
+                    "description": "Testy społeczne, na które wpłynie budząca szacunek blizna",
+                    "scriptData": [
+                        {
+                            "id": "pnqEtu6lQlejU6CV",
+                            "name": "Zawadiacka rana",
+                            "script": "args.fields.slBonus++;",
+                            "hideScript": "return args.characteristic != \"fel\""
+                        }
+                    ]
                 },
                 "TPyAKE9d05Y7HuxL": {
                     "id": "TPyAKE9d05Y7HuxL",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "TPyAKE9d05Y7HuxL",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 }
             },
             "wounds": "1",
@@ -1169,12 +2000,26 @@
             "id": "TMjbr94rrtCqM6bk",
             "name": "Stłuczony palec",
             "description": "<p>W wyniku starcia postać otrzymuje bolesne uderzenie w paluch. Należy przeprowadzić <strong>Przeciętny (+20) Test Odporności</strong>, a jeśli ten się nie powiedzie, do końca następnej Rundy wszystkie Testy Zwinności obarczone będą karą -10.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.TMjbr94rrtCqM6bk",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.TMjbr94rrtCqM6bk",
             "effects": {
                 "Uxp4sb58T0fiOXEB": {
                     "id": "Uxp4sb58T0fiOXEB",
                     "name": "Stłuczony palec",
-                    "script": "if (args.type == \"skill\" && args.item.characteristic.key == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}\nif (args.type == \"characteristic\" && args.item == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}"
+                    "script": "if (args.type == \"skill\" && args.item.characteristic.key == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}\nif (args.type == \"characteristic\" && args.item == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}",
+                    "scriptData": [
+                        {
+                            "activationScript": "return args.characteristic == \"ag\"",
+                            "id": "Uxp4sb58T0fiOXEB",
+                            "name": "Stłuczony palec",
+                            "script": "args.fields.modifier -= 10",
+                            "hideScript": "return args.characteristic != \"ag\" || this.item.getFlag(\"wfrp4e\", \"passed\")"
+                        },
+                        {
+                            "id": "Uxp4sb58T0fiOXEB",
+                            "name": "Stłuczony palec",
+                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {appendTitle : ` - ${this.effect.name}`, fields: {difficulty: \"hard\"}})\nawait test.roll();\nthis.item.updateSource({\"flags.wfrp4e.passed\" : test.succeeded})"
+                        }
+                    ]
                 }
             },
             "wounds": "1",
@@ -1184,12 +2029,19 @@
             "id": "TxXIUDqoon9TivpO",
             "name": "Skręcone kolano",
             "description": "<p>Postać, próbując uniknąć ciosu przeciwnika, odskakuje, ale manewr kończy się poważnym skręceniem kolana. Otrzymuje Uraz @UUID[Compendium.wfrp4e-core.items.3S4OYOZLauXctmev]{Zerwanie mięśni (poważne)}.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.TxXIUDqoon9TivpO",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.TxXIUDqoon9TivpO",
             "effects": {
                 "yJmV5ry9bcyqV5fL": {
                     "id": "yJmV5ry9bcyqV5fL",
                     "name": "Skręcone kolano",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.3S4OYOZLauXctmev\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.3S4OYOZLauXctmev\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
+                    "scriptData": [
+                        {
+                            "id": "yJmV5ry9bcyqV5fL",
+                            "name": "Skręcone kolano",
+                            "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.items.3S4OYOZLauXctmev\")\ninjury.updateSource({\"system.location.key\" : this.item.system.location.key})\nthis.actor.createEmbeddedDocuments(\"Item\", [injury], {fromEffect: this.effect.id})"
+                        }
+                    ]
                 }
             },
             "wounds": "3",
@@ -1199,12 +2051,19 @@
             "id": "tZc5KDSVW36sFx5G",
             "name": "Odcięte ramię",
             "description": "<p>Ramię odlatuje od ciała na [[/r 1d5]] metrów w losowym kierunku (patrz @Table[scatter]{Rozrzut}), rozbryzgując tętniczą krew, a cios przebija się przez klatkę piersiową.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.tZc5KDSVW36sFx5G",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.tZc5KDSVW36sFx5G",
             "effects": {
                 "Te5ujLd9jiLGSVJr": {
                     "id": "Te5ujLd9jiLGSVJr",
                     "name": "Odcięte ramię",
-                    "script": "await this.actor.addCondition(\"dead\")"
+                    "script": "await this.actor.addCondition(\"dead\")",
+                    "scriptData": [
+                        {
+                            "id": "Te5ujLd9jiLGSVJr",
+                            "name": "Odcięte ramię",
+                            "script": "this.actor.addCondition(\"dead\")\nthis.actor.setWounds(0);\nthis.script.scriptMessage(await game.wfrp4e.tables.formatChatRoll(\"scatter\"))"
+                        }
+                    ]
                 }
             },
             "wounds": "Śmierć",
@@ -1214,7 +2073,7 @@
             "id": "UC2zRorETcI8rheP",
             "name": "Bez tchu",
             "description": "<p>Postać otrzymuje 1 poziom Stanu @Condition[Oszołomienie]. Musi również zdać <strong>Przeciętny (+20) Test Odporności</strong> albo otrzyma Stan @Condition[Powalenie]. Szybkość zmniejsza się o połowę na [[/r 1d10]] Rund, czyli dopóki postać nie zacznie oddychać normalnie.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.UC2zRorETcI8rheP",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.UC2zRorETcI8rheP",
             "effects": {
                 "5A8VfGUQYx8Q0M0G": {
                     "id": "5A8VfGUQYx8Q0M0G",
@@ -1224,12 +2083,37 @@
                 "NrZ8LRI1dsP46RmJ": {
                     "id": "NrZ8LRI1dsP46RmJ",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
+                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                    "scriptData": [
+                        {
+                            "id": "NrZ8LRI1dsP46RmJ",
+                            "name": "Oszołomienie",
+                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                            "activationScript": "return true"
+                        }
+                    ]
                 },
                 "uaaFc96JlTCALmeJ": {
                     "id": "uaaFc96JlTCALmeJ",
                     "name": "Bez tchu",
-                    "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"average\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}"
+                    "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"average\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}",
+                    "scriptData": [
+                        {
+                            "id": "uaaFc96JlTCALmeJ",
+                            "name": "Bez tchu",
+                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {appendTitle : ` - ${this.effect.name}`, fields: {difficulty: \"average\"}});\nawait test.roll();\nif (test.failed)\n{\n    this.actor.addCondition(\"prone\")\n}"
+                        },
+                        {
+                            "id": "uaaFc96JlTCALmeJ",
+                            "name": "Bez tchu",
+                            "script": "args.actor.details.move.value /= 2"
+                        },
+                        {
+                            "id": "uaaFc96JlTCALmeJ",
+                            "name": "Bez tchu",
+                            "script": "let roll = await new Roll(\"1d10\").roll()\n\nroll.toMessage(this.script.getChatData({flavor : `${this.effect.name} (Czas Trwania)`}));\n\nthis.effect.updateSource({\"duration.rounds\" : roll.total})"
+                        }
+                    ]
                 }
             },
             "wounds": "2",
@@ -1239,22 +2123,43 @@
             "id": "uU2ibNRgeEjuSN7e",
             "name": "Porąbana noga",
             "description": "<p>Cios wgryza się głęboko w biodro. Postać otrzymuje Stany @Condition[Powalenie] oraz 2 poziomy Stanu @Condition[Krwawienie]. Zyskuje też Uraz @UUID[Compendium.wfrp4e-core.items.7mCcI3q7hgWcmbBU]{Złamanie (pomniejsze)}. Musi także zdać <strong>Wymagający (+20) Test Odporności</strong>, w przeciwnym wypadku otrzyma również 1 poziom Stanu @Condition[Oszołomienie].</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.uU2ibNRgeEjuSN7e",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.uU2ibNRgeEjuSN7e",
             "effects": {
                 "m5CJfHO2ZfBORtkr": {
                     "id": "m5CJfHO2ZfBORtkr",
                     "name": "Powalenie",
                     "script": "args.prefillModifiers.modifier -= 20",
-                    "secondaryScript": "if (args.type == 'weapon' && args.item.attackType=='melee') args.prefillModifiers.modifier += 20"
+                    "secondaryScript": "if (args.type == 'weapon' && args.item.attackType=='melee') args.prefillModifiers.modifier += 20",
+                    "scriptData": [
+                        {
+                            "id": "m5CJfHO2ZfBORtkr",
+                            "name": "Powalenie",
+                            "script": "args.prefillModifiers.modifier -= 20",
+                            "activationScript": "return true"
+                        }
+                    ]
                 },
                 "SlYdtHgMRI6vCztC": {
                     "id": "SlYdtHgMRI6vCztC",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "SlYdtHgMRI6vCztC",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 },
                 "xN966TmmV1zEtGy9": {
                     "id": "xN966TmmV1zEtGy9",
                     "name": "Porąbana noga",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.7mCcI3q7hgWcmbBU\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})\n\nif (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"stunned\");\n        }\n     });\n}"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.7mCcI3q7hgWcmbBU\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})\n\nif (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"stunned\");\n        }\n     });\n}",
+                    "scriptData": [
+                        {
+                            "id": "xN966TmmV1zEtGy9",
+                            "name": "Porąbana noga",
+                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.7mCcI3q7hgWcmbBU\")\nlet data = item.toObject();\ndata.system.location.key= this.item.system.location.key\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect: this.effect.id})\n   \nlet test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {appendTitle : ` - ${this.effect.name}`, fields: {difficulty: \"hard\"}});\nawait test.roll();\nif (test.failed)\n{\n    this.actor.addCondition(\"stunned\")\n}"
+                        }
+                    ]
                 }
             },
             "wounds": "3",
@@ -1264,17 +2169,32 @@
             "id": "VAKUqXH9nGyBXiGy",
             "name": "Cios w bebechy",
             "description": "<p>Postać otrzymuje 1 poziom Stanu @Condition[Oszołomienie]. Musi również wykonać <strong>Łatwy (+40) Test Odporności</strong>. Jeśli ten się nie uda, postać zwymiotuje i otrzyma Stan @Condition[Powalenie].</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.VAKUqXH9nGyBXiGy",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.VAKUqXH9nGyBXiGy",
             "effects": {
                 "3EKhg6lJsU12PXIN": {
                     "id": "3EKhg6lJsU12PXIN",
                     "name": "Cios w bebechy",
-                    "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"easy\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}"
+                    "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"easy\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}",
+                    "scriptData": [
+                        {
+                            "id": "3EKhg6lJsU12PXIN",
+                            "name": "Cios w bebechy",
+                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {appendTitle : ` - ${this.effect.name}`, fields: {difficulty: \"easy\"}, context: {failure : `<strong>${this.effect.name}</strong>: Vomit!`} })\nawait test.roll();\nif (test.failed)\n{\n    this.actor.addCondition(\"prone\")\n}"
+                        }
+                    ]
                 },
                 "cTrI8BgwwT6KbOcx": {
                     "id": "cTrI8BgwwT6KbOcx",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
+                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                    "scriptData": [
+                        {
+                            "id": "cTrI8BgwwT6KbOcx",
+                            "name": "Oszołomienie",
+                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                            "activationScript": "return true"
+                        }
+                    ]
                 }
             },
             "wounds": "1",
@@ -1284,20 +2204,47 @@
             "id": "VcKpiwNiQVwJJQVm",
             "name": "Bardzo zdrętwiałe ramię",
             "description": "<p>W wyniku ataku ramię zupełnie drętwieje. Postać upuszcza wszystko, co trzymała w dłoni, która przez [[/r 1d10]] Rund - Bonus z Wytrzymałości (co najmniej 1) jest bezużyteczna. Przez ten czas należy traktować dłoń jak straconą.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.VcKpiwNiQVwJJQVm",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.VcKpiwNiQVwJJQVm",
             "wounds": "2",
-            "location": "Ręka"
+            "location": "Ręka",
+            "effects": {
+                "WmmHwyUFUfjGKMvx": {
+                    "scriptData": [
+                        {
+                            "id": "WmmHwyUFUfjGKMvx",
+                            "name": "Bardzo zdrętwiałe ramię",
+                            "script": "let location = this.item.system.location.key;\n\nif (location)\n{\n    let dropped = this.item.system.weaponsAtLocation;\n\n    if (dropped.length)\n    {\n        this.script.scriptNotification(`Dropped ${dropped.map(i => i.name).join(\", \")}!`)\n        for(let weapon of dropped)\n        {\n            await weapon.system.toggleEquip();\n        }\n    }\n}\n\nlet roll = await new Roll(\"max(1, 1d10 - @system.characteristics.t.bonus)\", this.actor).roll()\n\nroll.toMessage(this.script.getChatData({flavor : `${this.effect.name} (Czas Trwania)`}));\n\nthis.effect.updateSource({\"duration.rounds\" : roll.total})"
+                        },
+                        {
+                            "id": "WmmHwyUFUfjGKMvx",
+                            "name": "Bardzo zdrętwiałe ramię",
+                            "script": "args.abort = true;\nthis.script.scriptNotification(`Nie można użyć ${this.item.system.location.value}!`, \"error\")",
+                            "activationScript": "return this.item.system.usesLocation(args.weapon)",
+                            "hideScript": "return !args.weapon"
+                        }
+                    ],
+                    "name": "Bardzo zdrętwiałe ramię",
+                    "id": "WmmHwyUFUfjGKMvx"
+                }
+            }
         },
         "Sprained Ankle": {
             "id": "wbbDM7rUetyWYgLt",
             "name": "Zwichnięta kostka",
             "description": "<p>W wyniku zwichnięcia postać otrzymuje Uraz @UUID[Compendium.wfrp4e-core.items.nF5z1OEhpi4t6a6S]{Zerwanie mięśni (pomniejsze)}.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.wbbDM7rUetyWYgLt",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.wbbDM7rUetyWYgLt",
             "effects": {
                 "rtWfTN6wJ4BbJslf": {
                     "id": "rtWfTN6wJ4BbJslf",
                     "name": "Zwichnięta kostka",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.nF5z1OEhpi4t6a6S\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.nF5z1OEhpi4t6a6S\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
+                    "scriptData": [
+                        {
+                            "id": "rtWfTN6wJ4BbJslf",
+                            "name": "Zwichnięta kostka",
+                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.nF5z1OEhpi4t6a6S\");\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key\nif (data.system.location.key[0] == \"r\")\n{\n\tdata.system.location.value = \"Prawa Kostka\"\n}\nelse if (data.system.location.key[0] == \"l\")\n{\n\tdata.system.location.value = \"Lewa Kostka\n}\n\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {skipLocationValue : true, fromEffect: this.effect.id})\n"
+                        }
+                    ]
                 }
             },
             "wounds": "2",
@@ -1307,12 +2254,30 @@
             "id": "wnYgHZm503oOERSf",
             "name": "Nadwyrężone kolano",
             "description": "<p>Z powodu niezdarnego kroku kolano nie wytrzymuje. Wszystkie Testy Zwinności otrzymują karę -20 na [[/r 1d10]] round.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.wnYgHZm503oOERSf",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.wnYgHZm503oOERSf",
             "effects": {
                 "BjIyeZdTw8TPV9qC": {
                     "id": "BjIyeZdTw8TPV9qC",
                     "name": "Nadwyrężone kolano",
                     "script": "if (args.type == \"skill\" && args.item.characteristic.key == \"ag\") {\n   args.prefillModifiers.modifier -= 20;\n}\nif (args.type == \"characteristic\" && args.item == \"ag\") {\n   args.prefillModifiers.modifier -= 20;\n}"
+                },
+                "98Ggkkm22IOSZdCE": {
+                    "scriptData": [
+                        {
+                            "id": "98Ggkkm22IOSZdCE",
+                            "name": "Nadwyrężone kolano",
+                            "script": "args.fields.modifier -= 20",
+                            "activationScript": "return args.characteristic == \"ag\"",
+                            "hideScript": "return args.characteristic != \"ag\""
+                        },
+                        {
+                            "id": "98Ggkkm22IOSZdCE",
+                            "name": "Nadwyrężone kolano",
+                            "script": "let roll = await new Roll(\"1d10\").roll()\n\nroll.toMessage(this.script.getChatData({flavor : `${this.effect.name} (Duration)`}));\n\nthis.effect.updateSource({\"duration.rounds\" : roll.total})"
+                        }
+                    ],
+                    "id": "98Ggkkm22IOSZdCE",
+                    "name": "Nadwyrężone kolano"
                 }
             },
             "wounds": "2",
@@ -1322,21 +2287,42 @@
             "id": "Wpsybql9MWbWZUeH",
             "name": "Głębokie cięcie",
             "description": "<p>Postać otrzymuje 2 poziomy Stanu @Condition[Krwawienie] w wyniku głębokiego cięcia. Ponadto otrzymuje również 1 poziom Stanu @Condition[Oszołomienie] oraz @UUID[Compendium.wfrp4e-core.items.GlShFJF2TpsNh1FX]{Zerwanie mięśni (pomniejsze)}. Musi także zdać <strong>Trudny (-20) Test Odporności</strong>, w przeciwnym wypadku otrzyma Stan @Condition[Utrata Przytomności].</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Wpsybql9MWbWZUeH",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.Wpsybql9MWbWZUeH",
             "effects": {
                 "AgeemYAqqhNVFHBz": {
                     "id": "AgeemYAqqhNVFHBz",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
+                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                    "scriptData": [
+                        {
+                            "id": "AgeemYAqqhNVFHBz",
+                            "name": "Oszołomienie",
+                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                            "activationScript": "return true"
+                        }
+                    ]
                 },
                 "GlKd8FG7CTvU8JRC": {
                     "id": "GlKd8FG7CTvU8JRC",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "GlKd8FG7CTvU8JRC",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 },
                 "nOCDyzwdMDX9kunm": {
                     "id": "nOCDyzwdMDX9kunm",
                     "name": "Głębokie cięcie",
-                    "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n    });\n}\n\nfromUuid(\"Compendium.wfrp4e-core.items.GlShFJF2TpsNh1FX\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})"
+                    "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n    });\n}\n\nfromUuid(\"Compendium.wfrp4e-core.items.GlShFJF2TpsNh1FX\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})",
+                    "scriptData": [
+                        {
+                            "id": "nOCDyzwdMDX9kunm",
+                            "name": "Głębokie cięcie",
+                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.GlShFJF2TpsNh1FX\")\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect : this.effect.id})\n   \nlet test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {appendTitle : ` - ${this.effect.name}`, fields: {difficulty: \"hard\"}});\nawait test.roll();\nif (test.failed)\n{\n    args.actor.addCondition(\"unconscious\")\n}"
+                        }
+                    ]
                 }
             },
             "wounds": "3",
@@ -1346,12 +2332,19 @@
             "id": "WRAuBX80vCwlnB0N",
             "name": "Utrata równowagi",
             "description": "<p>W wyniku szamotaniny postać traci równowagę. Musi także zdać <strong>Wymagający (+0) Test Odporności</strong>, w przeciwnym wypadku otrzyma Stan @Condition[Powalenie].</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.WRAuBX80vCwlnB0N",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.WRAuBX80vCwlnB0N",
             "effects": {
                 "UEnlvAwvGq0076To": {
                     "id": "UEnlvAwvGq0076To",
                     "name": "Utrata równowagi",
-                    "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}"
+                    "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}",
+                    "scriptData": [
+                        {
+                            "id": "UEnlvAwvGq0076To",
+                            "name": "Utrata równowagi",
+                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {appendTitle : ` - ${this.effect.name}`});\nawait test.roll();\nif (test.failed)\n{\n    this.actor.addCondition(\"prone\")\n}"
+                        }
+                    ]
                 }
             },
             "wounds": "1",
@@ -1361,11 +2354,17 @@
             "id": "wTGR340dwvAgwA9v",
             "name": "Płytkie cięcie w nogę",
             "description": "<p>Postać otrzymuje 1 poziom Stanu @Condition[Krwawienie].</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.wTGR340dwvAgwA9v",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.wTGR340dwvAgwA9v",
             "effects": {
                 "C28zNPsk79lesc2H": {
                     "id": "C28zNPsk79lesc2H",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "C28zNPsk79lesc2H",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 }
             },
             "wounds": "1",
@@ -1373,29 +2372,58 @@
         },
         "Sliced Tendons": {
             "id": "WWdCfTZCgcHK2soX",
-            "name": "Przecięte ścięgna",
+            "name": "Przecięte ścięgno",
             "description": "<p>Cios przecina ścięgna, a ramię zwisa bezwładnie - @UUID[Compendium.wfrp4e-core.items.MnMZv7ZXoRqoH9dS]{Amputacja (bardzo trudna)}. Postać otrzymuje: Stan @Condition[Powalenie], 3 poziomy Stanu @Condition[Krwawienie] i 1 poziom Stanu @Condition[Oszołomienie]. Musi także zdać <strong>Trudny (-20) Test Odporności</strong>, w przeciwnym wypadku otrzyma Stan @Condition[Utrata Przytomności].</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.WWdCfTZCgcHK2soX",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.WWdCfTZCgcHK2soX",
             "effects": {
                 "0aCPrsOCLEVcZGxF": {
                     "id": "0aCPrsOCLEVcZGxF",
                     "name": "Przecięte ścięgno",
-                    "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n     });\n}\n\nfromUuid(\"Compendium.wfrp4e-core.items.MnMZv7ZXoRqoH9dS\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})"
+                    "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n     });\n}\n\nfromUuid(\"Compendium.wfrp4e-core.items.MnMZv7ZXoRqoH9dS\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})",
+                    "scriptData": [
+                        {
+                            "id": "0aCPrsOCLEVcZGxF",
+                            "name": "Przecięte ścięgno",
+                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.MnMZv7ZXoRqoH9dS\")\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key\nthis.actor.createEmbeddedDocuments(\"Item\", [data])\n\n\n\n\nlet test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {fields: {difficulty: \"hard\"}, appendTitle : ` - ${this.effect.name}`})\nawait test.roll();\nif (test.failed)\n{\n\tthis.actor.addCondition(\"unconscious\")\n}"
+                        }
+                    ]
                 },
                 "3WIVf1QT93cut5OA": {
                     "id": "3WIVf1QT93cut5OA",
                     "name": "Powalenie",
                     "script": "args.prefillModifiers.modifier -= 20",
-                    "secondaryScript": "if (args.type == 'weapon' && args.item.attackType=='melee') args.prefillModifiers.modifier += 20"
+                    "secondaryScript": "if (args.type == 'weapon' && args.item.attackType=='melee') args.prefillModifiers.modifier += 20",
+                    "scriptData": [
+                        {
+                            "name": "Powalenie",
+                            "id": "3WIVf1QT93cut5OA",
+                            "script": "args.prefillModifiers.modifier -= 20",
+                            "activationScript": "return true"
+                        }
+                    ]
                 },
                 "9FdeaoISEUYHNkxv": {
                     "id": "9FdeaoISEUYHNkxv",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "9FdeaoISEUYHNkxv",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 },
                 "9qQs2OvZgvHzRHix": {
                     "id": "9qQs2OvZgvHzRHix",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')"
+                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                    "scriptData": [
+                        {
+                            "id": "9qQs2OvZgvHzRHix",
+                            "name": "Oszołomienie",
+                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
+                            "activationScript": "return true"
+                        }
+                    ]
                 }
             },
             "wounds": "5",
@@ -1405,7 +2433,7 @@
             "id": "XqxT8WjUbhsibhWd",
             "name": "Zgruchotane ucho",
             "description": "<p>Po uchu zostaje niewiele, a cios odrywa je od ciała. Postać otrzymuje 3 poziomy Stanu @Condition[Ogłuszenie] i 2 poziomy Stanu @Condition[Krwawienie]. Ponadto traci ucho - @UUID[Compendium.wfrp4e-core.items.8piWcBKFlQ2J1E3A]{Amputacja (przeciętna)}.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.XqxT8WjUbhsibhWd",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.XqxT8WjUbhsibhWd",
             "effects": {
                 "FZuPzqtWTtFMIciJ": {
                     "id": "FZuPzqtWTtFMIciJ",
@@ -1415,11 +2443,24 @@
                 "kaAFU5cxgv0idSQZ": {
                     "id": "kaAFU5cxgv0idSQZ",
                     "name": "Zgruchotane ucho",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.8piWcBKFlQ2J1E3A\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})"
+                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.8piWcBKFlQ2J1E3A\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
+                    "scriptData": [
+                        {
+                            "id": "kaAFU5cxgv0idSQZ",
+                            "name": "Zgruchotane ucho",
+                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.8piWcBKFlQ2J1E3A\")\nlet data = item.toObject();\ndata.system.location.key= this.item.system.location.key\nthis.actor.createEmbeddedDocuments(\"Item\", [data])"
+                        }
+                    ]
                 },
                 "lDs43plzT9i4Jxzb": {
                     "id": "lDs43plzT9i4Jxzb",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "lDs43plzT9i4Jxzb",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 }
             },
             "wounds": "4",
@@ -1443,12 +2484,19 @@
             "id": "ZE7gT3UWkw7gKeMv",
             "name": "Czyste złamanie",
             "description": "<p>Z donośnym trzaskiem ramię pęka w miejscu uderzenia. Postać natychmiast upuszcza wszystko, co trzymała w dłoni, i otrzymuje @UUID[Compendium.wfrp4e-core.items.4lj1ik958mbgAlaF]{Złamanie (pomniejsze)}. Musi także zdać <strong>Problematyczny (-10) Test Odporności</strong>, w przeciwnym wypadku otrzyma również 1 poziom Stanu @Condition[Oszołomienie].</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.ZE7gT3UWkw7gKeMv",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.ZE7gT3UWkw7gKeMv",
             "effects": {
                 "sVTAurntsVHWamj6": {
                     "id": "sVTAurntsVHWamj6",
                     "name": "Czyste złamanie",
-                    "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"difficult\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"stunned\");\n        }\n    });\n}\nfromUuid(\"Compendium.wfrp4e-core.items.4lj1ik958mbgAlaF\").then(injury => {\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})"
+                    "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"difficult\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"stunned\");\n        }\n    });\n}\nfromUuid(\"Compendium.wfrp4e-core.items.4lj1ik958mbgAlaF\").then(injury => {\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})",
+                    "scriptData": [
+                        {
+                            "id": "sVTAurntsVHWamj6",
+                            "name": "Czyste złamanie",
+                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {fields: {difficulty: \"difficult\"}, appendTitle : ` - ${this.effect.name}`})\nawait test.roll();\n\nif (test.failed)\n{\n    this.actor.addCondition(\"stunned\")\n}\n\n\nlet item = await fromUuid(\"Compendium.wfrp4e-core.items.4lj1ik958mbgAlaF\")\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect : this.effect.id})\n"
+                        }
+                    ]
                 }
             },
             "wounds": "3",
@@ -1457,17 +2505,30 @@
         "Major Chest Wound": {
             "id": "zNzlJWzCqmyLtnFS",
             "name": "Poważna rana klatki piersiowej",
-            "description": "<p>Postać otrzymuje poważny cios w klatkę piersiową, który oddziela skórę od mięśni i ścięgien. Otrzymuje 4 poziomy Stanu @Condition[Krwawienie]. Dopóki ktoś nie udzieli jej pomocy @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgicznej} i nie zszyje rany, za każdym razem gdy postać otrzyma Ranę w korpus, otrzymuje dodatkowy poziom Stanu @Condition[Krwawienie], a rana się otwiera.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.zNzlJWzCqmyLtnFS",
+            "description": "<p>Postać otrzymuje poważny cios w klatkę piersiową, który oddziela skórę od mięśni i ścięgien. Otrzymuje 4 poziomy Stanu @Condition[Krwawienie]. Dopóki ktoś nie udzieli jej pomocy @UUID[Compendium.wfrp4e-core.journals.JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgicznej} i nie zszyje rany, za każdym razem gdy postać otrzyma Ranę w korpus, otrzymuje dodatkowy poziom Stanu @Condition[Krwawienie], a rana się otwiera.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.zNzlJWzCqmyLtnFS",
             "effects": {
                 "pZD9xrlAHiaRru0d": {
                     "id": "pZD9xrlAHiaRru0d",
                     "name": "Poważna rana klatki piersiowej",
-                    "script": "if (args.opposedTest.result.hitloc.value == \"body\") {\n    args.actor.addCondition(\"bleeding\", 2);\n}"
+                    "script": "if (args.opposedTest.result.hitloc.value == \"body\") {\n    args.actor.addCondition(\"bleeding\", 2);\n}",
+                    "scriptData": [
+                        {
+                            "id": "pZD9xrlAHiaRru0d",
+                            "name": "Poważna rana oka",
+                            "script": "if (args.opposedTest.result.hitloc.value == \"body\" && args.totalWoundLoss > 0) \n{\n    args.actor.addCondition(\"bleeding\", 2)\n    this.script.scriptNotification(\"Wywołano Krwawienie\")\n}"
+                        }
+                    ]
                 },
                 "T2qqXZGkwHjeIG23": {
                     "id": "T2qqXZGkwHjeIG23",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "T2qqXZGkwHjeIG23",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 }
             },
             "wounds": "4",
@@ -1476,21 +2537,72 @@
         "Damaged Artery": {
             "id": "zXuy90mI1OLjxCvc",
             "name": "Uszkodzona tętnica",
-            "description": "<p>Postać otrzymuje 4 poziomy Stanu @Condition[Krwawienie]. Dopóki ktoś nie udzieli postaci pomocy @UUID[JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgicznej}, za każdym razem, gdy otrzyma ona Ranę w to ramię, dostanie dodatkowe 2 poziomy Stanu @Condition[Krwawienie].</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.zXuy90mI1OLjxCvc",
+            "description": "<p>Postać otrzymuje 4 poziomy Stanu @Condition[Krwawienie]. Dopóki ktoś nie udzieli postaci pomocy @UUID[Compendium.wfrp4e-core.journals.JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgicznej}, za każdym razem, gdy otrzyma ona Ranę w to ramię, dostanie dodatkowe 2 poziomy Stanu @Condition[Krwawienie].</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.zXuy90mI1OLjxCvc",
             "effects": {
                 "R8yyVjVN2G9uGe1Z": {
                     "id": "R8yyVjVN2G9uGe1Z",
-                    "name": "Krwawienie"
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "R8yyVjVN2G9uGe1Z",
+                            "name": "Krwawienie"
+                        }
+                    ]
                 },
                 "UGeKGGNmXVJAieTa": {
                     "id": "UGeKGGNmXVJAieTa",
                     "name": "Uszkodzona tętnica",
-                    "script": "if (args.opposedTest.result.hitloc.value == \"ARM_LOCATION_HERE\") { // lArm or rArm\n    args.actor.addCondition(\"bleeding\", 2);\n}"
+                    "script": "if (args.opposedTest.result.hitloc.value == \"ARM_LOCATION_HERE\") { // lArm or rArm\n    args.actor.addCondition(\"bleeding\", 2);\n}",
+                    "scriptData": [
+                        {
+                            "id": "UGeKGGNmXVJAieTa",
+                            "name": "Uszkodzona tętnica",
+                            "script": "if (args.opposedTest.result.hitloc.value == this.item.system.location.key && args.totalWoundLoss > 0)\n{\n    args.actor.addCondition(\"bleeding\", 2);\n    this.script.scriptNotification(\"Dodano Krwawienie\")\n}"
+                        }
+                    ]
                 }
             },
             "wounds": "4",
             "location": "Ręka"
+        },
+        "Bleeding Hand": {
+            "location": "Ręka",
+            "name": "Krwawiąca dłoń",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.Z9aSUtiwhqVHENnR",
+            "description": "<p>Głębokie cięcie sprawia, że dłoń obficie krwawi, przez co chwyt staje się śliski. Postać otrzymuje 1 poziom @Condition[Krwawienie]. Dopóki dłoń będzie krwawić, we wszystkich Testach czynności, podczas których postać trzyma coś w dłoni, należy wykonać <strong>Przeciętny (+20) Test Zręczności</strong>. Jeśli ten się nie powiedzie, trzymany przedmiot wymyka się z dłoni.</p>",
+            "id": "Z9aSUtiwhqVHENnR",
+            "wounds": "2",
+            "effects": {
+                "2oZsYCopLPHqHNQb": {
+                    "scriptData": [
+                        {
+                            "id": "2oZsYCopLPHqHNQb",
+                            "name": "Krwawiąca dłoń",
+                            "script": "let location = this.item.system.location.key\nlet test = await this.actor.setupCharacteristic(\"dex\", {context : {failure : `<strong>${this.effect.name}</strong>: Drop the item!`}, appendTitle : \" - \" + this.effect.name, fields : {difficulty : \"average\"}})\nawait test.roll();\n\n\nif (location && test.failed)\n{\n    let dropped = this.item.system.weaponsAtLocation;\n\n    if (dropped.length)\n    {\n        this.script.scriptNotification(`Upuszczono: ${dropped.map(i => i.name).join(\", \")}!`)\n        for(let weapon of dropped)\n        {\n            await weapon.system.toggleEquip();\n        }\n    }\n}\n\nreturn test.succeeded"
+                        },
+                        {
+                            "id": "2oZsYCopLPHqHNQb",
+                            "name": "Krwawiąca dłoń",
+                            "script": "if (args.weapon && this.item.system.usesLocation(args.weapon))\n{\n    args.bleedingHand = true;\n    let success = await this.effect.manualScripts[0].execute({actor: this.actor})\n    if (!success)\n    {\n        args.abort = true;\n    }\n}",
+                            "activationScript": "return true;",
+                            "hideScript": "return args.bleedingHand || !args.weapon || !this.actor.hasCondition(\"bleeding\")"
+                        }
+                    ],
+                    "id": "2oZsYCopLPHqHNQb",
+                    "name": "Krwawiąca dłoń"
+                },
+                "5EOJYNGGp4ZPXIGL": {
+                    "scriptData": [
+                        {
+                            "id": "5EOJYNGGp4ZPXIGL",
+                            "name": "Krwawienie"
+                        }
+                    ],
+                    "id": "5EOJYNGGp4ZPXIGL",
+                    "name": "Krwawienie"
+                }
+            }
         }
     },
     "folders": {
