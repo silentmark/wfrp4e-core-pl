@@ -616,7 +616,7 @@ Hooks.on("setup", function () {
 		daemonology: "",
 		necromancy: "",
 		nurgle: "",
-		slaanesh: "",
+		slaanesh: "Tradycja Slaanesha przynosi ból i ekstazę, wszystko w imię Księcia Bólu i Przyjemności dla jego wiecznego zadowolenia, łącząc perwersyjną mieszankę Ametystowego, Złotego i Jadeitowego Wiatru w coś pokręconego i egzotycznego. Efekt Tradycji: Czarnoksiężnik Slaanesha jest biegły w sztuce dostarczania przyjemności i bólu. Możesz zadać dodatkową ranę za każdy Stan Ogłuszenia lub Paniki odniesiony przez cele twoich zaklęć.",
 		tzeentch: "",
 	};
 
@@ -947,7 +947,45 @@ Hooks.on("setup", function () {
 					]
 				}
 			}
-		}
+		},
+		slaanesh: {
+            name: "Tradycja Slaanesha",
+            icon: "modules/wfrp4e-core/icons/spells/slaanesh.png",
+            transfer: true,
+            flags: {
+                wfrp4e: {
+            		lore: true,
+                  	applicationData: {
+                		type: "target"
+                  	},
+                  	scriptData: [
+                    	{
+                    		trigger: "immediate",
+                      		label : "@effect.name",
+                      		script :  `
+								let stunned = this.actor.hasCondition("stunned");
+								let broken = this.actor.hasCondition("broken");
+								let wounds = 0; 
+								if (stunned) { 
+									wounds += stunned.conditionValue;
+								}
+								if (broken) {
+									wounds += broken.conditionValue;
+								}
+								if (wounds) {
+									this.actor.applyBasicDamage(wounds, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL});
+								}
+								`,
+                      		options : {
+                        		immediate : {
+                        			deleteEffect : true
+                        		}
+                      		}
+                    	}
+                  	]
+                }
+            }
+        }
 	}
 
 	WFRP4E.symptomEffects = {
