@@ -19,14 +19,13 @@
                 "SVUtglybdq15RZEK": {
                     "id": "SVUtglybdq15RZEK",
                     "name": "Artylerzysta",
-                    "script": "if (args.options.reload && args.options.weapon && args.options.weapon.weaponGroup.value == \"blackpowder\") {\n   args.prefillModifiers.slBonus += 1\n}",
                     "scriptData": [
                         {
                             "id": "SVUtglybdq15RZEK",
                             "name": "Artylerzysta",
-                            "script": " args.prefillModifiers.slBonus += 1",
-                            "activationScript": "return args.options.reload",
-                            "hideScript": "return !args.options.reload"
+                            "script": "[Script.cysQDjlDzT8HdNeo]",
+                            "activationScript": "[Script.m8qBlbH7ROoqa22o]",
+                            "hideScript": "[Script.U1RUcgP8LD2qeGTm]"
                         }
                     ]
                 }
@@ -41,15 +40,13 @@
                 "IRRiQjVGZiHjLnxt": {
                     "id": "IRRiQjVGZiHjLnxt",
                     "name": "Groźny",
-                    "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Intimidate\")) {\n    args.prefillModifiers.slBonus += 1;\n}",
-                    "description": "Zastraszanie",
                     "scriptData": [
                         {
                             "id": "IRRiQjVGZiHjLnxt",
                             "name": "Groźny",
-                            "script": "args.prefillModifiers.slBonus++;\nargs.prefillModifiers.successBonus++;\n",
-                            "activationScript": "return args.skill?.name == game.i18n.localize(\"NAME.Intimidate\")",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Intimidate\")"
+                            "script": "[Script.m58MpMZBblpq5LJu]",
+                            "activationScript": "[Script.LedRsrVo2f7lm3Ix]",
+                            "hideScript": "[Script.L9eAtDyaoHvqryk4]"
                         }
                     ]
                 }
@@ -68,13 +65,13 @@
                         {
                             "id": "SooTD4HVi4QwmIiB",
                             "name": "Zmysł Bitewny",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Perception\")"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.h0DfPwUUOBjyAHMZ]"
                         },
                         {
                             "id": "SooTD4HVi4QwmIiB",
                             "name": "Zmysł Bitewny",
-                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Perception\"))\nawait test.roll();\nif (test.succeeded)\n{\n    this.actor.removeCondition(\"surprised\");\n}"
+                            "script": "[Script.OeCgX3hIsfLfmGvC]"
                         }
                     ],
                     "id": "SooTD4HVi4QwmIiB",
@@ -94,8 +91,8 @@
                         {
                             "id": "GsHlbMT7Z8d6dMqP",
                             "name": "Finta",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.weapon?.system?.weaponGroup?.value != \"fencing\""
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.RI8crJxeD8JLDwMh]"
                         }
                     ],
                     "id": "GsHlbMT7Z8d6dMqP",
@@ -115,12 +112,13 @@
                         {
                             "id": "nxZ6leAs6bz1KlXX",
                             "name": "Doświadczony Wędrowiec",
-                            "script": "args.fields.successBonus++"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.9EVj4bmZJex45Mt7]"
                         },
                         {
                             "id": "nxZ6leAs6bz1KlXX",
                             "name": "Doświadczony Wędrowiec",
-                            "script": "if (!this.item.name.includes(\"(\") || this.item.system.tests.value.includes(\"Teren\") || this.item.system.tests.value.includes(\"Terenu\"))\n{\n    let tests = this.item.system.tests.value\n    let name = this.item.name\n\n    // If name already specifies, make sure tests value reflects that\n    if (name.includes(\"(\"))\n    {\n        let terrain = name.split(\"(\")[1].split(\")\")[0]\n        tests = tests.replace(\"Terenu\", terrain)\n    }\n    else // If no sense specified, provide dialog choice\n    {\n        let choice = await ItemDialog.create(ItemDialog.objectToArray({\n            coastal : \"Wybrzeże\",\n            deserts : \"Pustynia\",\n            marshes : \"Bagna\",\n            rocky : \"Wzgórza\",\n            tundra : \"Tundra\",\n            woodlands : \"Lasy\"\n        }, this.item.img), 1, \"Wybierz typ terenu\");\n        if (choice[0])\n        {\n            name = `${name.split(\"(\")[0].trim()} (${choice[0].name})`\n            tests = tests.replace(\"Terenu\", choice[0].name)\n        }\n    }\n\n    this.effect.updateSource({name})\n    this.item.updateSource({name, \"system.tests.value\" : tests})\n}\n\n\n\nif (!this.item.name.includes(\"(\"))\n{\n    let tests = this.item.system.tests.value\n    let name = this.item.name\n    let choice = await ItemDialog.create(ItemDialog.objectToArray({\n            coastal : \"Wybrzeże\",\n            deserts : \"Pustynia\",\n            marshes : \"Bagna\",\n            rocky : \"Wzgórza\",\n            tundra : \"Tundra\",\n            woodlands : \"Lasy\"\n    }, this.item.img), 1, \"Wybierz typ terenu\");\n    if (choice[0])\n    {\n        name = `${name} (${choice[0].name})`\n        tests = tests.replace(\"Terenu\", choice[0].name)\n    }\n\n    this.effect.updateSource({name})\n    this.item.updateSource({name, \"system.tests.value\" : tests})\n}\n\n"
+                            "script": "[Script.190PHSHKGaJ74wsR]"
                         }
                     ],
                     "id": "nxZ6leAs6bz1KlXX",
@@ -140,8 +138,8 @@
                         {
                             "id": "vyWhjYW22mrNPfTj",
                             "name": "Błękitna Krew",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return [\"ws\", \"bs\", \"s\",  \"t\", \"ag\", \"i\"].includes(args.characteristic)"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.sAVpm7hFRHpbCLXm]"
                         }
                     ],
                     "id": "vyWhjYW22mrNPfTj",
@@ -158,19 +156,18 @@
                 "mqSUg3ORIh2YCotB": {
                     "id": "mqSUg3ORIh2YCotB",
                     "name": "Zmysł Magii",
-                    "script": "// Remove the miscast if doubles rolled and succeeded\nif(args.test.result.outcome == \"success\" && args.test.result.minormis && args.test.result.roll % 11 == 0) {\n    delete args.test.result.minormis\n}\n// Decrement the major miscast to minor miscast\nelse if(args.test.result.outcome == \"success\" && args.test.result.majormis && args.test.result.roll % 11 == 0) {\n    delete args.test.result.majormis;\n    args.test.result.minormis = game.i18n.localize(\"ROLL.MinorMis\");\n}",
                     "scriptData": [
                         {
                             "id": "mqSUg3ORIh2YCotB",
                             "name": "Zmysł Magii",
-                            "script": "// Remove the miscast if doubles rolled and succeeded\nif(args.test.result.outcome == \"success\" && args.test.result.minormis && args.test.result.roll % 11 == 0)\n{\n    delete args.test.result.minormis\n}\n// Decrement the major miscast to minor miscast\nelse if(args.test.result.outcome == \"success\" && args.test.result.majormis && args.test.result.roll % 11 == 0)\n{\n    delete args.test.result.majormis\n    args.test.result.minormis = game.i18n.localize(\"ROLL.MinorMis\")\n}"
+                            "script": "[Script.vzMxIDjRlQSxXtCW]"
                         },
                         {
                             "id": "mqSUg3ORIh2YCotB",
                             "name": "Zmysł Magii",
-                            "script": "args.fields.successBonus++;",
-                            "activationScript": "return args.type == \"channelling\" || args.skill?.name.toLowerCase().includes(\"splatanie magii\")",
-                            "hideScript": "return args.type != \"channelling\" && !args.skill?.name.toLowerCase.includes(\"splatanie magii\")"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.6qUKKep5vhFYmo1J]",
+                            "hideScript": "[Script.22bW97lkvCqisfHX]"
                         }
                     ]
                 }
@@ -189,8 +186,8 @@
                         {
                             "id": "JQwlJXLKeUn8BtNO",
                             "name": "Rybak",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.OutdoorSurvival\")"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.zFYCaGR0wbFWjl4T]"
                         }
                     ],
                     "id": "JQwlJXLKeUn8BtNO",
@@ -210,9 +207,9 @@
                         {
                             "id": "a9AbHM6HPQlQvkqg",
                             "name": "Talent Artystyczny",
-                            "script": "args.fields.successBonus++",
-                            "activationScript": "return args.skill?.name.includes(\"Sztuka\")",
-                            "hideScript": "return !args.skill?.name.includes(\"Sztuka\")"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.KUx0deSF3xNzMucL]",
+                            "hideScript": "[Script.ziG9H5Kdb7xC3dFE]"
                         }
                     ],
                     "id": "a9AbHM6HPQlQvkqg",
@@ -229,19 +226,18 @@
                 "NznDJLYiqbwPzhZt": {
                     "id": "NznDJLYiqbwPzhZt",
                     "name": "Cios Poniżej Pasa",
-                    "script": "if (args.item.type == \"weapon\" && args.item.weaponGroup.value == \"brawling\") {\n    args.item.damage.value += \" + 1\";\n}",
                     "scriptData": [
                         {
                             "id": "NznDJLYiqbwPzhZt",
                             "name": "Cios Poniżej Pasa",
-                            "script": "if (args.item.type == \"weapon\" && args.item.weaponGroup.value == \"brawling\")\n    args.item.damage.value += \" + 1\""
+                            "script": "[Script.QQPiREc50HT5W2Tr]"
                         },
                         {
                             "id": "NznDJLYiqbwPzhZt",
                             "name": "Cios Poniżej Pasa",
-                            "script": "args.fields.successBonus++;",
-                            "activationScript": "return args.skill?.name == \"Broń Biała (Bijatyka)\" || args.item?.weaponGroup?.value == \"brawling\"",
-                            "hideScript": "return args.skill?.name != \"Broń Biała (Bijatyka)\" && args.item?.weaponGroup?.value != \"brawling\""
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.7e8FgQUF2oANANmx]",
+                            "hideScript": "[Script.dwSgcFxKN3S0hLJL]"
                         }
                     ]
                 }
@@ -260,9 +256,9 @@
                         {
                             "id": "2hDs2VmDV11i7fvo",
                             "name": "Łapówkarz",
-                            "script": "args.fields.successBonus++",
-                            "activationScript": "return args.skill?.name == \"Przekupstwo\"",
-                            "hideScript": "return args.skill?.name != \"Przekupstwo\""
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.B6ZbY3bxTPg6nCng]",
+                            "hideScript": "[Script.KSjsDlsx3DD6cT16]"
                         }
                     ],
                     "id": "2hDs2VmDV11i7fvo",
@@ -285,19 +281,18 @@
                 "oAsvKkgS9pLtavj7": {
                     "id": "oAsvKkgS9pLtavj7",
                     "name": "Przekonujący",
-                    "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Charm\") &&  (args.test.result.roll <= game.settings.get(\"wfrp4e\", \"automaticSuccess\") || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop())\n   if (ones > SL) {\n     args.test.result.other.push(`<b>${this.effect.name}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS jeśli prowadzisz debatę.`);\n   }\n}",
                     "scriptData": [
                         {
                             "id": "oAsvKkgS9pLtavj7",
                             "name": "Przekonujący",
-                            "script": "if (args.test.options.useOnesArgumentative && (args.test.result.roll <= game.settings.get(\"wfrp4e\", \"automaticSuccess\") || args.test.result.roll <= args.test.target))\n{\n\nlet SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\nlet ones = Number(args.test.result.roll.toString().split(\"\").pop())\n\nif (ones > SL)\n\targs.test.data.result.SL = \"+\" + (ones + args.test.successBonus + args.test.slBonus)\n   args.test.result.other.push(`<b>${this.effect.name}</b>: użyto kości jedności jako PS`)\n}"
+                            "script": "[Script.sbK1a7txpSoXFzyB]"
                         },
                         {
                             "id": "oAsvKkgS9pLtavj7",
                             "name": "Przekonujący",
-                            "script": "args.fields.successBonus++;",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Charm\")",
-                            "submissionScript": "args.options.useOnesArgumentative = true;"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.yIGItnshXI4W46cp]",
+                            "submissionScript": "[Script.Xk9XPklxxTvFlwpI]"
                         }
                     ]
                 }
@@ -316,8 +311,8 @@
                         {
                             "id": "ZUzVS6EvwJvPOM5C",
                             "name": "Atak Wyprzedzający",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.characteristic != \"i\""
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.tdICiJ26rJrDbxT6]"
                         }
                     ],
                     "id": "ZUzVS6EvwJvPOM5C",
@@ -334,12 +329,11 @@
                 "1FkIE179oDa65hOI": {
                     "id": "1FkIE179oDa65hOI",
                     "name": "Silny Cios",
-                    "script": "args.actor.flags.meleeDamageIncrease += 1;",
                     "scriptData": [
                         {
                             "id": "1FkIE179oDa65hOI",
                             "name": "Silny Cios",
-                            "script": "args.actor.flags.meleeDamageIncrease += 1"
+                            "script": "[Script.MkEcdViivk7abf1x]"
                         }
                     ]
                 }
@@ -357,9 +351,9 @@
                         {
                             "id": "MUxjGLed53aZ19YA",
                             "name": "Świetny Pływak",
-                            "script": "args.fields.successBonus++",
-                            "activationScript": "return args.skill?.name == game.i18n.localize(\"NAME.Swim\");",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Swim\");"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.QQ2gHThZHdO4yLLX]",
+                            "hideScript": "[Script.sUHuj00IpoZ7Gd03]"
                         }
                     ],
                     "id": "MUxjGLed53aZ19YA",
@@ -379,12 +373,14 @@
                         {
                             "id": "KBX2JNU9b26vRDQs",
                             "name": "Znawca",
-                            "script": "args.fields.successBonus++"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.xvH4PKJasHcehOZz]",
+                            "hideScript": "[Script.DxQnamsb2AuW0p2e]"
                         },
                         {
                             "id": "KBX2JNU9b26vRDQs",
                             "name": "Znawca",
-                            "script": "if (this.item.name.includes(\"(\"))\n{\n\treturn;\n}\n\nlet index = game.packs\n.filter(i => i.metadata.type == \"Item\")\n.reduce((acc, pack) => acc.concat(pack.index.contents), [])\n.filter(i => i.type == \"skill\" && i.name.includes(game.i18n.localize(\"NAME.Lore\")))\n.map(i => {\n\ti.id = i._id\n\treturn i\n})\n\nlet choice = await ItemDialog.create(index, 1, \"Wybierz dziedzinę wiedzy\")\nlet text;\nif (!choice[0])\n{\n    let custom = await Dialog.wait({\n        title : \"Enter Lore\",\n        content : \"<input type='text'>\",\n        buttons : {\n            confirm : {\n                label : game.i18n.localize(\"Zatwierdź\"),\n                callback : (dlg) => {\n                    return dlg.find(\"input\")[0].value\n                }\n            }\n        },\n        default : \"confirm\",\n        close : () => {\n            return \"\"\n        }\n    })   \n    text = custom || \"\"\n}\nelse \n{\n    text = game.wfrp4e.utility.extractParenthesesText(choice[0].name)\n}\n\nawait this.item.updateSource({name : this.item.name + ` (${text})`, \"system.tests.value\" : this.item.system.tests.value.replace(\"wybrana dziedzina\", text)})\nawait this.effect.updateSource({name : this.effect.name + ` (${text})`})"
+                            "script": "[Script.HMC6hPND9DWLFfZE]"
                         }
                     ],
                     "id": "KBX2JNU9b26vRDQs",
@@ -404,8 +400,8 @@
                         {
                             "id": "smJBYx6M6qhafV0p",
                             "name": "Błyskawiczny Strzał",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.item?.system?.attackType != \"ranged\""
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.Vkuu70BZV4DPYO2Q]"
                         }
                     ],
                     "id": "smJBYx6M6qhafV0p",
@@ -425,8 +421,8 @@
                         {
                             "id": "1gBYyU70P7tKFr2A",
                             "name": "Niegodny Uwagi",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return !args.skill?.name.includes(game.i18n.localize(\"NAME.Stealth\"))"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.l8qFKSnMpy4P7XQR]"
                         }
                     ],
                     "id": "1gBYyU70P7tKFr2A",
@@ -442,13 +438,7 @@
             "effects": {
                 "o9nh6cysRfyobzdc": {
                     "id": "o9nh6cysRfyobzdc",
-                    "name": "Strzelec Wyborowy",
-                    "scriptData": [
-                        {
-                            "id": "o9nh6cysRfyobzdc",
-                            "name": "Strzelec Wyborowy"
-                        }
-                    ]
+                    "name": "Strzelec Wyborowy"
                 }
             }
         },
@@ -464,8 +454,8 @@
                         {
                             "id": "v7unTQ71hn8rCeHY",
                             "name": "Numizmatyka",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Evaluate\")"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.c3KA1knL2NYNUEww]"
                         }
                     ],
                     "id": "v7unTQ71hn8rCeHY",
@@ -482,19 +472,18 @@
                 "pq0wuLa5jebvLTGR": {
                     "id": "pq0wuLa5jebvLTGR",
                     "name": "Atrakcyjny",
-                    "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Charm\") &&  (args.test.result.roll <= game.settings.get(\"wfrp4e\", \"automaticSuccess\") || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop())\n   if (ones > SL)\n      args.test.result.other.push(`<b>${this.effect.name}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS jeśli podobasz się celowi testu.`)\n}",
                     "scriptData": [
                         {
                             "id": "pq0wuLa5jebvLTGR",
                             "name": "Atrakcyjny",
-                            "script": "if (args.test.options.useOnesAttractive && (args.test.result.roll <= game.settings.get(\"wfrp4e\", \"automaticSuccess\") || args.test.result.roll <= args.test.target))\n{\n\nlet SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\nlet ones = Number(args.test.result.roll.toString().split(\"\").pop())\n\nif (ones > SL)\n\targs.test.data.result.SL = \"+\" + (ones + args.test.successBonus + args.test.slBonus)\n   args.test.result.other.push(`<b>${this.effect.name}</b>: Użyto kości jedności jako PS`)\n}"
+                            "script": "[Script.Qgn92fZyc3Psn8QJ]"
                         },
                         {
                             "id": "pq0wuLa5jebvLTGR",
                             "name": "Atrakcyjny",
-                            "script": "args.fields.successBonus++;",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Charm\")",
-                            "submissionScript": "args.options.useOnesAttractive = true;"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.yIGItnshXI4W46cp]",
+                            "submissionScript": "[Script.3jm0NoYpgB6ZuUSl]"
                         }
                     ]
                 }
@@ -513,8 +502,8 @@
                         {
                             "id": "Wx9vsiKDpPUkSFaW",
                             "name": "Złota Rączka",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return !args.skill?.name?.includes(game.i18n.localize(\"NAME.Trade\"))"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.jpcU8FFWSlQ3gD0L]"
                         }
                     ],
                     "id": "Wx9vsiKDpPUkSFaW",
@@ -534,8 +523,8 @@
                         {
                             "id": "Pu1LrEiiVqlsKVmp",
                             "name": "Wykrywanie Magii",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Intuition\")"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.kmsGLWGxCY8Z8jVG]"
                         }
                     ],
                     "id": "Pu1LrEiiVqlsKVmp",
@@ -555,8 +544,8 @@
                         {
                             "id": "FBhrlyI2JT0Hxe2s",
                             "name": "Poliglota",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return !args.skill?.name.includes(game.i18n.localize(\"NAME.Language\"));"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.1A87vGLh2PXH0rG0]"
                         }
                     ],
                     "id": "FBhrlyI2JT0Hxe2s",
@@ -573,14 +562,13 @@
                 "nwmflkSKJ3gH7INJ": {
                     "id": "nwmflkSKJ3gH7INJ",
                     "name": "Szybkie Przeładowanie",
-                    "script": "if (args.options.reload && args.options.weapon) {\n   args.prefillModifiers.slBonus += 1;\n}",
                     "scriptData": [
                         {
                             "id": "nwmflkSKJ3gH7INJ",
                             "name": "Szybkie Przeładowanie",
-                            "script": "args.prefillModifiers.slBonus += 1",
-                            "activationScript": "return args.options.reload",
-                            "hideScript": "return !args.options.reload"
+                            "script": "[Script.cOuukVo8WakDZIUj]",
+                            "activationScript": "[Script.m8qBlbH7ROoqa22o]",
+                            "hideScript": "[Script.U1RUcgP8LD2qeGTm]"
                         }
                     ]
                 }
@@ -598,8 +586,8 @@
                         {
                             "id": "tHz0XFfncXs5y5fO",
                             "name": "Gadanina",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Charm\")"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.yIGItnshXI4W46cp]"
                         }
                     ],
                     "id": "tHz0XFfncXs5y5fO",
@@ -615,13 +603,7 @@
             "effects": {
                 "iT6aqNkxEikCpTEY": {
                     "id": "iT6aqNkxEikCpTEY",
-                    "name": "Zręczny",
-                    "scriptData": [
-                        {
-                            "id": "iT6aqNkxEikCpTEY",
-                            "name": "Zręczny"
-                        }
-                    ]
+                    "name": "Zręczny"
                 }
             }
         },
@@ -634,13 +616,12 @@
                 "TFSgPCFx1KpFepgz": {
                     "id": "TFSgPCFx1KpFepgz",
                     "name": "Towarzyski",
-                    "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Gossip\")) {\n    args.test.preData.canReverse = true;\n}",
                     "scriptData": [
                         {
                             "id": "TFSgPCFx1KpFepgz",
                             "name": "Towarzyski",
-                            "script": "args.fields.successBonus++;",
-                            "hideScript": "if (args.skill?.name != game.i18n.localize(\"NAME.Gossip\"))\n{\n\treturn true;\n}\nelse \n{\n\targs.data.canReverse = true; // Kind of a kludge here, the talent Tests has a specific condition, but the description simply says \"any gossip test can be reversed\" so check it here instead of submission\n}\n    "
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.0YKQGbsKdHSmYGE7]"
                         }
                     ]
                 }
@@ -659,8 +640,8 @@
                         {
                             "id": "2j8dJKdn41Kt1pjP",
                             "name": "Niewzruszony",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Cool\");"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.XuFxKPYheYF4WMmQ]"
                         }
                     ],
                     "id": "2j8dJKdn41Kt1pjP",
@@ -680,13 +661,13 @@
                         {
                             "id": "kcVhLDQic6XJTa97",
                             "name": "Nieustraszony",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Cool\");"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.XuFxKPYheYF4WMmQ]"
                         },
                         {
                             "id": "kcVhLDQic6XJTa97",
                             "name": "Nieustraszony",
-                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Cool\"), {appendTitle: ` - ${this.effect.name}`, fields : {difficulty : \"average\"}})\ntest.roll();"
+                            "script": "[Script.rr4htuVq45onXdRG]"
                         }
                     ],
                     "id": "kcVhLDQic6XJTa97",
@@ -706,9 +687,9 @@
                         {
                             "id": "CuUQ9xrpNtQW2bu0",
                             "name": "Urodzony w Siodle",
-                            "script": "args.fields.successBonus++",
-                            "activationScript": "args.skill?.name == \"Jeździectwo (Konie)\" && game.combat?.active",
-                            "hideScript": "return !args.skill?.name?.includes(game.i18n.localize(\"NAME.Ride\"))"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.FXuyiJoXdAh6WhRK]",
+                            "hideScript": "[Script.w4JKuTECFmu3YmTR]"
                         }
                     ],
                     "id": "CuUQ9xrpNtQW2bu0",
@@ -728,9 +709,9 @@
                         {
                             "id": "iGp3cK6NmZoS70Nz",
                             "name": "Posłuch u Zwierząt",
-                            "script": "args.fields.successBonus++",
-                            "activationScript": "return args.skill?.name == \"Oswajanie\"",
-                            "hideScript": "return args.skill?.name != \"Oswajanie\""
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.TU2xjbJ0zFtytF3J]",
+                            "hideScript": "[Script.UC6G3pFQwzUhrw6F]"
                         }
                     ],
                     "id": "iGp3cK6NmZoS70Nz",
@@ -750,13 +731,13 @@
                         {
                             "id": "92qZkpgEbYj6Ts5w",
                             "name": "Wyczulony Zmysł",
-                            "script": "args.fields.successBonus++;",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Perception\")"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.h0DfPwUUOBjyAHMZ]"
                         },
                         {
                             "id": "92qZkpgEbYj6Ts5w",
                             "name": "Wyczulony Zmysł",
-                            "script": "if (!this.item.name.includes(\"(\") || this.item.system.tests.value.includes(\"(Sense)\"))\n{\n    let tests = this.item.system.tests.value\n    let name = this.item.name\n\n    // If name already specifies, make sure tests value reflects that\n    if (name.includes(\"(\"))\n    {\n        let sense = name.split(\"(\")[1].split(\")\")[0]\n        tests = `${tests.split(\"(\")[0].trim()} (${sense})`\n    }\n    else // If no sense specified, provide dialog choice\n    {\n        let choice = await ItemDialog.create(ItemDialog.objectToArray({\n            taste : \"Smak\",\n            sight : \"Wzrok\",\n            smell : \"Węch\",\n            hearing : \"Słuch\",\n            touch : \"Dotyk\"\n        }, this.item.img), 1, \"Wybierz Zmysł\");\n        if (choice[0])\n        {\n            name = `${name.split(\"(\")[0].trim()} (${choice[0].name})`\n            tests = `${tests.split(\"(\")[0].trim()} (${choice[0].name})`\n        }\n    }\n\n        this.item.updateSource({name, \"system.tests.value\" : tests})\n}"
+                            "script": "[Script.yCgH3N9AurIiAv0i]"
                         }
                     ],
                     "id": "92qZkpgEbYj6Ts5w",
@@ -776,9 +757,9 @@
                         {
                             "id": "1YrrAMWA7O0Czg7U",
                             "name": "Ruchliwe dłonie",
-                            "script": "args.fields.successBonus++;\nif (args.skill?.name != game.i18n.localize(\"NAME.SleightOfHand\"))\n{\n    args.fields.modifier += 10;\n}",
-                            "activationScript": "return args.skill?.name == game.i18n.localize(\"NAME.SleightOfHand\")",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.SleightOfHand\") && args.skill?.name != Broń Biała (Bijatyka) && args.weapon?.system?.weaponGroup?.value != \"brawling\""
+                            "script": "[Script.cV9JiAgUPOeUHKnS]",
+                            "activationScript": "[Script.qijgjcOBCDmhglRX]",
+                            "hideScript": "[Script.gqZLfIr6svrtdwdC]"
                         }
                     ],
                     "id": "1YrrAMWA7O0Czg7U",
@@ -798,9 +779,9 @@
                         {
                             "id": "VMPr8wo9HkktV04c",
                             "name": "Traper",
-                            "script": "args.fields.successBonus++",
-                            "activationScript": "return args.skill?.name ==  game.i18n.localize(\"NAME.SetTrap\")",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Perception\") && args.skill?.name != game.i18n.localize(\"NAME.SetTrap\")"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.zsiV6XEHlCNGLLPl]",
+                            "hideScript": "[Script.Tq45Nd8J3eTvHT41]"
                         }
                     ],
                     "id": "VMPr8wo9HkktV04c",
@@ -820,8 +801,8 @@
                         {
                             "id": "poKTTuuT7Y1OJl79",
                             "name": "Nos do Kłopotów",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return ![\"i\", \"int\", \"fel\"].includes(args.characteristic)"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.rLMaVNEGdZ6xj5Au]"
                         }
                     ],
                     "id": "poKTTuuT7Y1OJl79",
@@ -841,9 +822,9 @@
                         {
                             "id": "0i7pSJH6v8y1nukI",
                             "name": "Wyczucie Kierunku",
-                            "script": "args.fields.successBonus++",
-                            "activationScript": "return args.skill?.name == game.i18n.localize(\"NAME.Navigation\")",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Navigation\")"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.E4CHDe1xfmcV3oGv]",
+                            "hideScript": "[Script.bwx9wuEOJPF7btD1]"
                         }
                     ],
                     "id": "0i7pSJH6v8y1nukI",
@@ -860,17 +841,17 @@
                 "SjJdt6yUkEkPqDgF": {
                     "id": "SjJdt6yUkEkPqDgF",
                     "name": "Szybkobiegacz",
-                    "script": "args.actor.details.move.run += 4;",
                     "scriptData": [
                         {
                             "id": "SjJdt6yUkEkPqDgF",
                             "name": "Szybkobiegacz",
-                            "script": "args.actor.details.move.run += 4"
+                            "script": "[Script.1IodsW9ImamYoEYz]"
                         },
                         {
                             "id": "SjJdt6yUkEkPqDgF",
                             "name": "Szybkobiegacz",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Athletics\");"
+                            "hideScript": "[Script.9EVj4bmZJex45Mt7]",
+                            "script": "[Script.956dUb5sd6OtbWZR]"
                         }
                     ]
                 }
@@ -886,19 +867,18 @@
                 "S487mwxmDJh9rULA": {
                     "id": "S487mwxmDJh9rULA",
                     "name": "Pomocny",
-                    "script": "if (args.test.item && args.test.characteristicKey== \"fel\" &&  (args.test.result.roll <= game.settings.get(\"wfrp4e\", \"automaticSuccess\") || args.test.result.roll <= args.test.target)) {\n   let SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10);\n   let ones = Number(args.test.result.roll.toString().split(\"\").pop());\n   if (ones > SL)\n      args.test.result.other.push(`<b>${this.effect.name}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS podczas wpływania na osoby o wyższym Statusie.`);\n}",
                     "scriptData": [
                         {
                             "id": "S487mwxmDJh9rULA",
                             "name": "Pomocny",
-                            "script": "if (args.test.options.useOnesSupportive && (args.test.result.roll <= game.settings.get(\"wfrp4e\", \"automaticSuccess\") || args.test.result.roll <= args.test.target))\n{\n\nlet SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\nlet ones = Number(args.test.result.roll.toString().split(\"\").pop())\n\nif (ones > SL)\n\targs.test.data.result.SL = \"+\" + (ones + args.test.successBonus + args.test.slBonus)\n   args.test.result.other.push(`<b>${this.effect.name}</b>: Użyto kości jedności jako PS`)\n}"
+                            "script": "[Script.qu194dVXm9Vx1TGk]"
                         },
                         {
                             "id": "S487mwxmDJh9rULA",
                             "name": "Pomocny",
-                            "script": "args.fields.successBonus++;",
-                            "hideScript": "return args.characteristic != \"fel\"",
-                            "submissionScript": "args.options.useOnesSupportive = true;"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.6Fe8M5MdklKS2olx]",
+                            "submissionScript": "[Script.5MxRDXzUBPfp2KKD]"
                         }
                     ]
                 }
@@ -917,8 +897,8 @@
                         {
                             "id": "Cos43TEeV9wKTCua",
                             "name": "Intrygant",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.characteristic != \"int\""
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.JjDzMnUxaWQePIYh]"
                         }
                     ],
                     "id": "Cos43TEeV9wKTCua",
@@ -934,13 +914,7 @@
             "effects": {
                 "Zz5EI68iOab1vbmQ": {
                     "id": "Zz5EI68iOab1vbmQ",
-                    "name": "Szybki Refleks",
-                    "scriptData": [
-                        {
-                            "id": "Zz5EI68iOab1vbmQ",
-                            "name": "Szybki Refleks"
-                        }
-                    ]
+                    "name": "Szybki Refleks"
                 }
             }
         },
@@ -955,7 +929,7 @@
                         {
                             "id": "aXj98pQZec46FwXP",
                             "name": "Sprężynka",
-                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Athletics\"))\nawait test.roll();\n\nif (test.succeeded)\n{\n\tthis.actor.removeCondition(\"prone\");\n}"
+                            "script": "[Script.x8XK2fzzXCnSwfjt]"
                         }
                     ],
                     "id": "aXj98pQZec46FwXP",
@@ -975,8 +949,8 @@
                         {
                             "id": "Zb5AvMODC8iUopsR",
                             "name": "Wściekły Atak",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.item?.system?.attackType != \"melee\""
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.SPOkFWZWziZk5b7A]"
                         }
                     ],
                     "id": "Zb5AvMODC8iUopsR",
@@ -996,8 +970,8 @@
                         {
                             "id": "zv7jsA5RJdgin7BZ",
                             "name": "Oko Łowcy",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.OutdoorSurvival\") && args.skill?.name != game.i18n.localize(\"NAME.Track\")"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.PoNnT5EqvLj2r5yf]"
                         }
                     ],
                     "id": "zv7jsA5RJdgin7BZ",
@@ -1014,19 +988,18 @@
                 "PixW61vvKOev7oHu": {
                     "id": "PixW61vvKOev7oHu",
                     "name": "Precyzyjne Inkantowanie",
-                    "script": "// Remove the miscast if doubles rolled and succeeded\nif(args.test.result.outcome == \"success\" && args.test.result.minormis && args.test.result.roll % 11 == 0) {\n    delete args.test.result.minormis;\n}\n// Decrement the major miscast to minor miscast\nelse if(args.test.result.outcome == \"success\" && args.test.result.majormis && args.test.result.roll % 11 == 0) {\n    delete args.test.result.majormis;\n    args.test.result.minormis = game.i18n.localize(\"ROLL.MinorMis\");\n}",
                     "scriptData": [
                         {
                             "id": "PixW61vvKOev7oHu",
                             "name": "Precyzyjne Inkantowanie",
-                            "script": "// Remove the miscast if doubles rolled and succeeded\nif(args.test.result.outcome == \"success\" && args.test.result.minormis && args.test.result.roll % 11 == 0)\n{\n    delete args.test.result.minormis\n}\n// Decrement the major miscast to minor miscast\nelse if(args.test.result.outcome == \"success\" && args.test.result.majormis && args.test.result.roll % 11 == 0)\n{\n    delete args.test.result.majormis\n    args.test.result.minormis = game.i18n.localize(\"ROLL.MinorMis\")\n}"
+                            "script": "[Script.vzMxIDjRlQSxXtCW]"
                         },
                         {
                             "id": "PixW61vvKOev7oHu",
                             "name": "Precyzyjne Inkantowanie",
-                            "script": "args.fields.successBonus++;",
-                            "activationScript": "return args.skill?.name == \"Język (Magiczny)\"",
-                            "hideScript": "return args.skill?.name != \"Język (Magiczny)\""
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.hR1qD2kpFHF8JT8h]",
+                            "hideScript": "[Script.VqTrKPtxv9hpn0Hr]"
                         }
                     ]
                 }
@@ -1043,19 +1016,18 @@
                 "PNMqJy5zpPTXOd37": {
                     "name": "Szuler Kościany",
                     "id": "PNMqJy5zpPTXOd37",
-                    "script": "if (args.test.item && (args.test.item.name == game.i18n.localize(\"NAME.Gamble\") || args.test.item.name == game.i18n.localize(\"NAME.SleightOfHand\")) && args.test.succeeded)\n{\n\nlet SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\nlet ones = Number(args.test.result.roll.toString().split(\"\").pop())\n\nif (ones > SL)\n   args.test.result.other.push(`<span class=\"hide-option\"><b>${this.effect.name}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS jeśli grasz w kości.</span>`)\n}",
                     "scriptData": [
                         {
                             "id": "PNMqJy5zpPTXOd37",
                             "name": "Szuler Kościany",
-                            "script": "if (args.test.options.diceman&& args.test.succeeded)\n{\n\nlet SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\nlet ones = Number(args.test.result.roll.toString().split(\"\").pop())\n\nif (ones > SL)\n   args.test.result.other.push(`<span class=\"hide-option\"><b>${this.effect.name}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS</span>`)\n}"
+                            "script": "[Script.65xE9OV5sA1ZWT7j]"
                         },
                         {
                             "id": "PNMqJy5zpPTXOd37",
                             "name": "Szuler Kościany",
-                            "script": "args.fields.successBonus++;",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Gamble\") && args.skill?.name != game.i18n.localize(\"NAME.SleightOfHand\")",
-                            "submissionScript": "args.options.diceman= true;"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.TdjlJro0RRVSh8g8]",
+                            "submissionScript": "[Script.Qk7t2l5ep9RDVpgE]"
                         }
                     ]
                 }
@@ -1070,13 +1042,12 @@
                 "VaILgn8RaKpqAueV": {
                     "id": "VaILgn8RaKpqAueV",
                     "name": "Silne Nogi",
-                    "description": "Testy Atletyki wiążące się ze skakaniem",
                     "scriptData": [
                         {
                             "id": "VaILgn8RaKpqAueV",
                             "name": "Silne Nogi",
-                            "script": "args.fields.slBonus++;",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Athletics\")"
+                            "script": "[Script.wAETU6aTRr9d4oCU]",
+                            "hideScript": "[Script.9EVj4bmZJex45Mt7]"
                         }
                     ]
                 }
@@ -1091,19 +1062,18 @@
                 "AVhPxHHlKUolT589": {
                     "id": "AVhPxHHlKUolT589",
                     "name": "Snajper",
-                    "script": "if (args.item.range && args.item.range.bands) {\n    args.item.range.bands[game.i18n.localize(\"Long Range\")].modifier = 0;\n    args.item.range.bands[game.i18n.localize(\"Extreme\")].modifier /= 2;\n}",
                     "scriptData": [
                         {
                             "id": "AVhPxHHlKUolT589",
                             "name": "Snajper",
-                            "script": "if (args.item.range && args.item.range.bands)\n{\nargs.item.range.bands[game.i18n.localize(\"Długi Zasięg\")].modifier = 0\nargs.item.range.bands[game.i18n.localize(\"Ekstremalny Zasięg\")].modifier /= 2\n}"
+                            "script": "[Script.23HgjCB1oecxANvA]"
                         },
                         {
                             "id": "AVhPxHHlKUolT589",
                             "name": "Snajper",
-                            "script": "args.fields.successBonus++;",
-                            "activationScript": "let token = this.actor.getActiveTokens()[0];\nlet target = args.data.targets[0];\nlet weapon = args.weapon;\n\nif(!target || !token)\n{\n    return;\n}\n\nlet distance = canvas.grid.measureDistances([{ ray: new Ray({ x: token.center.x, y: token.center.y }, { x: target.center.x, y: target.center.y }) }], { gridSpaces: true })[0]\nlet currentBand\n\nfor (let band in weapon.range.bands) \n{\n  if (distance >= weapon.range.bands[band].range[0] && distance <= weapon.range.bands[band].range[1]) \n  {\n    currentBand = band;\n    break;\n  }\n}\n\nreturn [\"Długi Zasięg\", \"Ekstremalny Zasięg\"].includes(currentBand)",
-                            "hideScript": "return args.item?.system?.attackType != \"ranged\""
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.AHZ8f7dfN8jNsYk6]",
+                            "hideScript": "[Script.Vkuu70BZV4DPYO2Q]"
                         }
                     ]
                 }
@@ -1122,9 +1092,9 @@
                         {
                             "id": "lHqEF0gevCPcI1ec",
                             "name": "Rozbrojenie",
-                            "script": "args.fields.successBonus++",
-                            "activationScript": "args.options.disarm = true;",
-                            "hideScript": "return args.item?.system?.attackType != \"melee\""
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.7n3SEAGRA5ESK8gV]",
+                            "hideScript": "[Script.SPOkFWZWziZk5b7A]"
                         }
                     ],
                     "id": "lHqEF0gevCPcI1ec",
@@ -1140,15 +1110,7 @@
             "effects": {
                 "3fOs9R0x04viu1cj": {
                     "id": "3fOs9R0x04viu1cj",
-                    "name": "Bardzo Szybki",
-                    "script": "args.actor.details.move.value += 1;",
-                    "scriptData": [
-                        {
-                            "id": "3fOs9R0x04viu1cj",
-                            "name": "Bardzo Szybki",
-                            "script": "args.actor.details.move.value += 1"
-                        }
-                    ]
+                    "name": "Bardzo Szybki"
                 }
             }
         },
@@ -1161,18 +1123,23 @@
                 "3vgrN50Ul3S5T2j6": {
                     "id": "3vgrN50Ul3S5T2j6",
                     "name": "Nienawiść",
-                    "description": "Test walki przeciwko znienawidzonej grupie",
                     "scriptData": [
                         {
                             "id": "3vgrN50Ul3S5T2j6",
                             "name": "Nienawiść",
-                            "script": "let group\nlet item = await fromUuid(\"Compendium.wfrp4e-core.items.Item.5hH73j2NgPdsLCZN\");\nlet data = item.toObject();\n\nif (this.item.name.includes(\"(\"))\n{\n\tgroup = this.item.parenthesesText\n}\n\nelse \n{\n\tgroup = await Dialog.wait({\n        \ttitle : \"Podaj Obiekt Nienawiści\",\n\t        content : \"<input type='text'>\",\n        \tbuttons : {\n\t            confirm : {\n        \t        label : game.i18n.localize(\"Potwierdź\"),\n\t                callback : (dlg) => {\n        \t            return dlg.find(\"input\")[0].value\n                \t}\n\t            }\n\t        },\n\t\tdefault : \"confirm\",\n\t        close : () => {\n        \t    return \"\"\n\t        }\n\t    })   \n\n\tthis.item.updateSource({name : this.item.name + ` (${group})`, \"system.tests.value\" : this.item.system.tests.value.replace(\"Grupa\", group)})\n\tthis.effect.updateSource({name : this.effect.name + ` (${group})`})\n}\n\n\ndata.name = data.name.replace(\"Grupa\", group);\nawait this.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect: this.effect.id});"
+                            "script": "[Script.cUnbADgOQ4fMKgrH]"
                         },
                         {
                             "name": "Nienawiść",
                             "id": "3vgrN50Ul3S5T2j6",
-                            "script": "args.successBonus++;",
-                            "hideScript": "return args.characteristic != \"wp\""
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.1LDm3OB32skZe6Xv]"
+                        },
+                        {
+                            "id": "3vgrN50Ul3S5T2j6",
+                            "name": "Nienawiść",
+                            "script": "[Script.wAETU6aTRr9d4oCU]",
+                            "hideScript": "[Script.S4793DLFhjMxpM8x]"
                         }
                     ]
                 }
@@ -1188,12 +1155,11 @@
                 "keKRZ1nmziD1BMXg": {
                     "id": "keKRZ1nmziD1BMXg",
                     "name": "Mały",
-                    "script": "args.size = \"sml\";",
                     "scriptData": [
                         {
                             "id": "keKRZ1nmziD1BMXg",
                             "name": "Mały",
-                            "script": "args.size = \"sml\""
+                            "script": "[Script.iM4B3IZ4VtpZsl09]"
                         }
                     ]
                 }
@@ -1211,8 +1177,8 @@
                         {
                             "id": "455aQKoedQvt3hs7",
                             "name": "Z Bata",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Drive\") && !args.skill?.name.includes(game.i18n.localize(\"NAME.Ride\"))"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.DTiHS6RfwhF4THbf]"
                         }
                     ],
                     "id": "455aQKoedQvt3hs7",
@@ -1232,8 +1198,8 @@
                         {
                             "id": "FTK2KfuDY9DV6UTf",
                             "name": "Naciągacz",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Charm\")"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.yIGItnshXI4W46cp]"
                         }
                     ],
                     "id": "FTK2KfuDY9DV6UTf",
@@ -1250,14 +1216,13 @@
                 "EsoBJtVEVYxCXdRb": {
                     "id": "EsoBJtVEVYxCXdRb",
                     "name": "Odporność na Magię",
-                    "script": "if (args.type == \"cast\") {\n       args.prefillModifiers.slBonus -= 2;\n}",
                     "scriptData": [
                         {
                             "id": "EsoBJtVEVYxCXdRb",
                             "name": "Odporność na Magię",
-                            "script": "args.fields.slBonus -= 2",
-                            "activationScript": "return args.type == \"cast\"",
-                            "hideScript": "return args.type != \"cast\""
+                            "script": "[Script.fve7tiyF5X9B7mHJ]",
+                            "activationScript": "[Script.8vpAtJ93GIeye1qj]",
+                            "hideScript": "[Script.DBafsY1HrclJRTtA]"
                         }
                     ]
                 }
@@ -1273,11 +1238,11 @@
                 "psPW7gUr1MuvVj3S": {
                     "scriptData": [
                         {
-                            "activationScript": "return args.skill?.name == game.i18n.localize(\"NAME.Haggle\")",
+                            "activationScript": "[Script.YEBw2CzHYxsTpTy5]",
                             "id": "psPW7gUr1MuvVj3S",
                             "name": "Żyłka Handlowa",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Haggle\")"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.kWynO1lQzjiSs8RK]"
                         }
                     ],
                     "id": "psPW7gUr1MuvVj3S",
@@ -1303,20 +1268,20 @@
                         {
                             "id": "hQX3nuG3TIAkSP8Q",
                             "name": "Pierwsza Pomoc",
-                            "script": "args.fields.successBonus++",
-                            "activationScript": "return args.skill?.name == game.i18n.localize(\"NAME.Heal\") && game.combat?.active",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Heal\")"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.YhhiWEQbox3WZA3Q]",
+                            "hideScript": "[Script.I7ieW0hNYvvX0KFg]"
                         },
                         {
                             "id": "hQX3nuG3TIAkSP8Q",
                             "name": "Pierwsza Pomoc",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Heal\")",
-                            "submissionScript": "args.data.canReverse = true;\nargs.options.fieldDressing = true;"
+                            "hideScript": "[Script.I7ieW0hNYvvX0KFg]",
+                            "submissionScript": "[Script.2yctEihGmdCfTTVx]"
                         },
                         {
                             "id": "hQX3nuG3TIAkSP8Q",
                             "name": "Pierwsza Pomoc",
-                            "script": "if (args.test.options.fieldDressing && args.test.result.reversed)\n{\n\targs.test.data.result.SL = \"+\" + Math.min(1, Number(args.test.data.result.SL))\n\targs.test.result.other.push(`<b>${this.effect.name}</b>: PS ograniczone do 1`)\n}"
+                            "script": "[Script.XO9m2AvFRAAeEuty]"
                         }
                     ],
                     "id": "hQX3nuG3TIAkSP8Q",
@@ -1333,32 +1298,26 @@
                 "J5IUFXDMXgCJSPXW": {
                     "id": "J5IUFXDMXgCJSPXW",
                     "name": "Mocne Plecy",
-                    "script": "args.actor.status.encumbrance.max += 1;",
                     "scriptData": [
                         {
                             "id": "J5IUFXDMXgCJSPXW",
                             "name": "Mocne Plecy",
-                            "script": "this.actor.system.status.encumbrance.max += 1"
+                            "script": "[Script.yPxYRObUiqAIhlNB]"
                         },
                         {
                             "id": "J5IUFXDMXgCJSPXW",
                             "name": "Mocne Plecy",
-                            "script": "args.fields.slBonus++;",
-                            "hideScript": "return args.characteristic != \"s\""
+                            "script": "[Script.wAETU6aTRr9d4oCU]",
+                            "hideScript": "[Script.bWr8leucbWslBCYG]"
                         },
                         {
                             "id": "J5IUFXDMXgCJSPXW",
                             "name": "Mocne Plecy",
-                            "script": "args.fields.successBonus++;",
-                            "activationScript": "return [\"NAME.Row\", \"NAME.Swim\"].map(i => game.i18n.localize(i)).includes(args.skill?.name);",
-                            "hideScript": "return ![\"NAME.Row\", \"NAME.Swim\"].map(i => game.i18n.localize(i)).includes(args.skill?.name);"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.6tjn0RH4VyOPFneS]",
+                            "hideScript": "[Script.IsLAvY9ikR1cOJWw]"
                         }
                     ]
-                },
-                "V6DfeSCAubOnx2rs": {
-                    "id": "V6DfeSCAubOnx2rs",
-                    "name": "Bonus do Testu Przeciwstawnego",
-                    "description": "Przeciwstawny Test Siły"
                 }
             },
             "tests": "Wiosłowanie lub Pływanie"
@@ -1372,21 +1331,20 @@
                 "HRSjpI6pAoSuf9tl": {
                     "id": "HRSjpI6pAoSuf9tl",
                     "name": "Woltyżerka",
-                    "script": "if (args.type == \"characteristic\") {\n  if (args.options.dodge && this.actor.isMounted) {\n    args.prefillModifiers.modifier += 20;\n  }\n}\n\nif (args.type == \"skill\") {\n  if (args.item.name == game.i18n.localize(\"NAME.Dodge\") && this.actor.isMounted) {\n    args.prefillModifiers.modifier += 20;\n  }\n}",
                     "scriptData": [
                         {
                             "id": "HRSjpI6pAoSuf9tl",
                             "name": "Woltyżerka",
-                            "script": "args.fields.successBonus++;",
-                            "activationScript": "return args.skill?.name == \"Jeździectwo (Konie)\" || (args.options.unik && this.actor.isMounted)",
-                            "hideScript": "return !this.actor.isMounted || (!args.skill?.name?.includes(game.i18n.localize(\"NAME.Ride\")) && !args.options.dodge)"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.CiFeduksZJ6PRulx]",
+                            "hideScript": "[Script.GbPEy22VuCNzlNv2]"
                         },
                         {
                             "id": "HRSjpI6pAoSuf9tl",
                             "name": "Woltyżerka",
-                            "script": "args.fields.modifier += 20;",
-                            "activationScript": "return args.options.dodge && this.actor.isMounted",
-                            "hideScript": "return !args.options.dodge || !this.actor.isMounted"
+                            "script": "[Script.u6CYMSZADrfXd48Q]",
+                            "activationScript": "[Script.PBW6IZtwawNHxB6y]",
+                            "hideScript": "[Script.N7nGncsPrTz2ZbDA]"
                         }
                     ]
                 }
@@ -1411,9 +1369,9 @@
                         {
                             "id": "Dvzn4ORsaiYVTAL5",
                             "name": "Bitewna Furia",
-                            "script": "args.fields.successBonus++",
-                            "activationScript": "return this.actor.statuses.has(\"frenzy\");",
-                            "hideScript": "return args.weapon?.system?.attackType != \"melee\""
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.EKkdyp51Wf4csw2B]",
+                            "hideScript": "[Script.f7WZvYle9iqefRsh]"
                         }
                     ],
                     "id": "Dvzn4ORsaiYVTAL5",
@@ -1433,8 +1391,8 @@
                         {
                             "id": "JJy9WQaBw4LgaURv",
                             "name": "Rozpoznanie Artefaktu",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Intuition\")"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.kmsGLWGxCY8Z8jVG]"
                         }
                     ],
                     "id": "JJy9WQaBw4LgaURv",
@@ -1454,14 +1412,14 @@
                         {
                             "id": "pM4f9xijg03tfexj",
                             "name": "Na Cztery Łapy",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Athletics\")",
-                            "submissionScript": "args.options.catfall = true;"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.9EVj4bmZJex45Mt7]",
+                            "submissionScript": "[Script.O7lXFZLrLdFaShGR]"
                         },
                         {
                             "id": "pM4f9xijg03tfexj",
                             "name": "Na Cztery Łapy",
-                            "script": "if (args.test.options.catfall && (args.test.result.roll <= game.settings.get(\"wfrp4e\", \"automaticSuccess\") || args.test.result.roll <= args.test.target))\n{\n   args.test.result.other.push(`<b>${this.effect.name}</b>: Obrażenia od upadku zminiejszono o liczbę metrów równą: ${Number(args.test.result.SL) + 1}`)\n}"
+                            "script": "[Script.ucF4aiJ1gpDB333G]"
                         }
                     ],
                     "id": "pM4f9xijg03tfexj",
@@ -1481,9 +1439,9 @@
                         {
                             "id": "vjFXbrHfB9svhE8r",
                             "name": "Aptekarz",
-                            "script": "args.fields.successBonus++",
-                            "activationScript": "return args.skill?.name == \"Rzemiosło (Aptekarstwo)\"",
-                            "hideScript": "return !args.skill?.name.includes(game.i18n.localize(\"NAME.Trade\"))"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.btPrQkGRKUkhNe3N]",
+                            "hideScript": "[Script.93K85NnVwjVNXlZq]"
                         }
                     ],
                     "id": "vjFXbrHfB9svhE8r",
@@ -1503,8 +1461,8 @@
                         {
                             "id": "zDFaXbEai6DK9e89",
                             "name": "Mistrz Rzemiosła",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return !args.skill?.name.includes(game.i18n.localize(\"NAME.Trade\"))"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.93K85NnVwjVNXlZq]"
                         }
                     ],
                     "id": "zDFaXbEai6DK9e89",
@@ -1527,12 +1485,11 @@
                 "ScsXdMC7SqNirMwx": {
                     "id": "ScsXdMC7SqNirMwx",
                     "name": "Zabójca",
-                    "script": "if (args.sizeDiff <= -2 && args.opposedTest.attackerTest.result.critical) {\n  args.damageMultiplier = Math.abs(args.sizeDiff);\n}\nlet sBonusDiff = args.opposedTest.defenderTest.actor.characteristics.t.bonus - args.opposedTest.attackerTest.actor.characteristics.s.bonus;\nlet weapon = args.opposedTest.attackerTest.item;\nif (sBonusDiff > 0 && weapon && weapon.damage.value.includes(\"SB\")) {\n  args.damage += sBonusDiff;\n}",
                     "scriptData": [
                         {
                             "id": "ScsXdMC7SqNirMwx",
                             "name": "Zabójca",
-                            "script": "if (args.sizeDiff <= -2 && args.opposedTest.attackerTest.result.critical)\n        args.damageMultiplier = Math.abs(args.sizeDiff)\n\n      let sBonusDiff = args.opposedTest.defenderTest.actor.characteristics.t.bonus - args.opposedTest.attackerTest.actor.characteristics.s.bonus\n     let weapon = args.opposedTest.attackerTest.item\n      if (sBonusDiff > 0 && weapon && weapon.damage.value.includes(\"BS\"))\n        args.damage += sBonusDiff"
+                            "script": "[Script.ch5SD2XOQfcYo0X5]"
                         }
                     ]
                 }
@@ -1550,17 +1507,19 @@
                         {
                             "id": "3Xwh9xniDQ17C9kx",
                             "name": "Wytwórca",
-                            "script": "args.fields.successBonus++"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.R95pDZMHnD9iHAl8]",
+                            "hideScript": "[Script.93K85NnVwjVNXlZq]"
                         },
                         {
                             "id": "3Xwh9xniDQ17C9kx",
                             "name": "Wytwórca",
-                            "script": "if (this.item.name.includes(\"(\"))\n{\n\tlet trade = this.item.parenthesesText;\n\treturn this.item.updateSource({\"system.tests.value\" : this.item.system.tests.value.replace(\"any one\", trade)})\n}\n\nlet index = game.packs\n.filter(i => i.metadata.type == \"Item\")\n.reduce((acc, pack) => acc.concat(pack.index.contents), [])\n.filter(i => i.type == \"skill\" && i.name.includes(game.i18n.localize(\"NAME.Trade\")))\n.map(i => {\n\ti.id = i._id\n\treturn i\n})\n\nlet choice = await ItemDialog.create(index, 1, \"Wybierz umiejętność Rzemiosła\")\nlet text;\nif (!choice[0])\n{\n    let custom = await Dialog.wait({\n        title : \"Rzemiosło\",\n        content : \"<input type='text'>\",\n        buttons : {\n            confirm : {\n                label : game.i18n.localize(\"Potwierdź\"),\n                callback : (dlg) => {\n                    return dlg.find(\"input\")[0].value\n                }\n            }\n        },\n        default : \"confirm\",\n        close : () => {\n            return \"\"\n        }\n    })   \n    text = custom || \"\"\n}\nelse \n{\n    text = game.wfrp4e.utility.extractParenthesesText(choice[0].name)\n}\n\nawait this.item.updateSource({name : this.item.name + ` (${text})`, \"system.tests.value\" : this.item.system.tests.value.replace(\"any one\", text)})"
+                            "script": "[Script.sgS9rblPkQB36C8S]"
                         },
                         {
                             "id": "3Xwh9xniDQ17C9kx",
                             "name": "Wytwórca",
-                            "script": "let skill = `Trade (${this.item.parenthesesText})`\nlet currentCareer = this.actor.system.currentCareer;\nlet existingSkill = this.actor.itemTypes.skill.find(i => i.name == skill);\n\nif (!currentCareer) return\n\n\nlet inCurrentCareer = currentCareer.system.skills.includes(skill);\nif (existingSkill && inCurrentCareer)\n{\n\texistingSkill.system.advances.costModifier = -5;\n}\nelse \n{\n\tcurrentCareer.system.skills.push(skill);\n}\n\n\n"
+                            "script": "[Script.2W9uMTT6iJhfQ044]"
                         }
                     ],
                     "id": "3Xwh9xniDQ17C9kx",
@@ -1571,7 +1530,7 @@
         "Gs10qhA4CDmZyb1g": {
             "id": "Gs10qhA4CDmZyb1g",
             "name": "Biczownik",
-            "description": "<p>Swój ból ofiarowałeś wyznawanemu bogu. Każdego dnia musisz spędzić pół dzwonu (pół godziny) na modlitwie, otrzymując obrażenia na poziomie liczby wykupień tego Talentu. Jeśli posiadasz Talent Szał Bojowy to do położenia się na najbliższy spoczynek możesz natychmiast wpaść w Szał Bojowy bez wykonywania Testów. Szał Bojowy zostaje dodany do listy Talentów dostępnych dla twojej bieżącej Profesji. Jeśli zaniedbasz biczowanie przez jeden dzień lub pozwolisz, by poszarpana skóra została uleczona, nie będziesz mógł wydawać Punktów Bohatera ani Determinacji, póki się znów nie wybiczujesz.</p>",
+            "description": "<p>Swój ból ofiarowałeś wyznawanemu bogu. Każdego dnia musisz spędzić pół dzwonu (pół godziny) na modlitwie, otrzymując obrażenia na poziomie liczby wykupień tego Talentu. Jeśli posiadasz Talent Szał Bojowy to do położenia się na najbliższy spoczynek możesz natychmiast wpaść w Szał Bojowy bez wykonywania Testów.</p><p>@UUID[Compendium.wfrp4e-core.items.Item.hXcfygzujgyMN1uI]{Szał Bojowy} zostaje dodany do listy Talentów dostępnych dla twojej bieżącej Profesji. Jeśli zaniedbasz biczowanie przez jeden dzień lub pozwolisz, by poszarpana skóra została uleczona, nie będziesz mógł wydawać Punktów Bohatera ani Determinacji, póki się znów nie wybiczujesz.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.Gs10qhA4CDmZyb1g",
             "tests": "Testy podczas opierania się Niszczycielskim Potęgom",
             "effects": {
@@ -1580,9 +1539,14 @@
                         {
                             "id": "7TSbPbJ3c9iKutMc",
                             "name": "Biczownik",
-                            "script": "args.fields.successBonus++",
-                            "activationScript": "return args.options.corruption;",
-                            "hideScript": "return ![\"NAME.Endurance\", \"NAME.Cool\"].map(i => game.i18n.localize(i)).includes(args.skill?.name)"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.xqWxV9w5ezBQdJkZ]",
+                            "hideScript": "[Script.FYUPfYyTYZkxRLFT]"
+                        },
+                        {
+                            "id": "7TSbPbJ3c9iKutMc",
+                            "name": "Biczownik",
+                            "script": "[Script.dkiNmwFXztIVbuxg]"
                         }
                     ],
                     "id": "7TSbPbJ3c9iKutMc",
@@ -1614,8 +1578,8 @@
                         {
                             "id": "kioJEmEjRUXo4xlq",
                             "name": "Defraudant",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.characteristic != \"int\""
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.7F3miqRA0ceMUBIu]"
                         }
                     ],
                     "id": "kioJEmEjRUXo4xlq",
@@ -1641,8 +1605,8 @@
                         {
                             "id": "EhRvG4wX2zc1YT59",
                             "name": "Zejście z Linii",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return !args.options.dodge"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.VAPsww9x3HAw1sKP]"
                         }
                     ],
                     "id": "EhRvG4wX2zc1YT59",
@@ -1659,19 +1623,18 @@
                 "rdiV37QZ38bf5z2P": {
                     "id": "rdiV37QZ38bf5z2P",
                     "name": "Hulaka",
-                    "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.ConsumeAlcohol\")) {\n    args.test.preData.canReverse = true;\n}",
                     "scriptData": [
                         {
                             "id": "rdiV37QZ38bf5z2P",
                             "name": "Hulaka",
-                            "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.ConsumeAlcohol\"))\n    args.test.preData.canReverse = true"
+                            "script": "[Script.oWM43EdUiyHgUlfW]"
                         },
                         {
                             "id": "rdiV37QZ38bf5z2P",
                             "name": "Hulaka",
-                            "script": "args.fields.successBonus++;",
-                            "activationScript": "return args.skill?.name == game.i18n.localize(\"NAME.ConsumeAlcohol\")",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Charm\") && args.skill?.name != game.i18n.localize(\"NAME.Gossip\") && args.skill?.name != game.i18n.localize(\"NAME.ConsumeAlcohol\")"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.454x3Q95pLvZm0Kx]",
+                            "hideScript": "[Script.iT0h3VZLEBQnn5Bx]"
                         }
                     ]
                 }
@@ -1681,25 +1644,20 @@
         "hXcfygzujgyMN1uI": {
             "id": "hXcfygzujgyMN1uI",
             "name": "Szał Bojowy",
-            "description": "<p style=\"user-select: text; color: #111111;\">Dzięki Testowi Siły Woli postać może wprowadzić się w stan furii, motywując się, wyjąc, gryząc tarczę itd. Jeśli Test się uda, postać wpada w Szał Bojowy.</p>\n<p style=\"user-select: text; color: #111111;\">W trakcie Szału Bojowego postać jest niewrażliwa na wszystkie inne Czynniki Psychologiczne i nie ucieknie ani nie wycofa się z żadnego powodu. Mało tego – musi zawsze poruszać się z pełną prędkością w stronę najbliższego widzianego przeciwnika, by go zaatakować. Ogólnie rzecz biorąc, jedynymi Akcjami, jakie można wtedy wykonać, są Testy Broni Białej w zwarciu albo Atletyki, by szybciej dobiec do przeciwnika. Poza tym w każdej Rundzie postać otrzymuje Akcję Darmową w postaci dodatkowego ataku wręcz, ponieważ naprawdę daje z siebie wszystko. A jakby tego było mało, zaciekłość i brutalność skutkuje podniesieniem Bonusu z Siły o +1. Postać pozostaje w Szale Bojowym, dopóki wszyscy wrogowie w polu widzenia nie zostaną unieszkodliwieni albo dopóki postać nie otrzyma przynajmniej 1 poziomu Stanu @Condition[Oszołomienie] lub nie nastąpi @Condition[Utrata Przytomności]. Po zakończeniu Szału Bojowego postać natychmiast otrzymuje 1 poziom Stanu @Condition[Zmęczenie].</p>",
+            "description": "<p style=\"user-select: text; color: #111111;\">Dzięki Testowi Siły Woli postać może wprowadzić się w stan furii, motywując się, wyjąc, gryząc tarczę itd. Jeśli Test się uda, postać wpada w Szał Bojowy.</p>\n<p style=\"user-select: text; color: #111111;\">W trakcie Szału Bojowego postać jest niewrażliwa na wszystkie inne Czynniki Psychologiczne i nie ucieknie ani nie wycofa się z żadnego powodu. Mało tego – musi zawsze poruszać się z pełną prędkością w stronę najbliższego widzianego przeciwnika, by go zaatakować. Ogólnie rzecz biorąc, jedynymi Akcjami, jakie można wtedy wykonać, są Testy Broni Białej w zwarciu albo Atletyki, by szybciej dobiec do przeciwnika. Poza tym w każdej Rundzie postać otrzymuje Akcję Darmową w postaci dodatkowego ataku wręcz, ponieważ naprawdę daje z siebie wszystko. A jakby tego było mało, zaciekłość i brutalność skutkuje podniesieniem Bonusu z Siły o +1. Postać pozostaje w Szale Bojowym, dopóki wszyscy wrogowie w polu widzenia nie zostaną unieszkodliwieni albo dopóki postać nie otrzyma przynajmniej 1 poziomu Stanu @Condition[Oszołomienie] lub nie nastąpi @Condition[Utrata Przytomności]. Po zakończeniu Szału Bojowego postać natychmiast otrzymuje 1 poziom Stanu @Condition[Zmęczenie].</p><blockquote class=\"foundry-note\"><p>Efekt jest domyślnie nieaktywny, aktywuj go ręcznie, gdy postać wchodzi w Szał Bojowy.</p></blockquote>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.hXcfygzujgyMN1uI",
             "effects": {
-                "y1pfxqA1jLh5Ywca": {
-                    "id": "y1pfxqA1jLh5Ywca",
-                    "name": "Szał Bojowy",
-                    "script": "args.actor.characteristics.s.bonus += 1;\nargs.actor.characteristics.s.calculationBonusModifier -= 1;"
-                },
                 "VBaGAZpE1JheOkhY": {
                     "scriptData": [
                         {
                             "id": "VBaGAZpE1JheOkhY",
                             "name": "Szał Bojowy",
-                            "script": "this.actor.characteristics.s.bonus += 1\nthis.actor.characteristics.s.calculationBonusModifier -= 1"
+                            "script": "[Script.91S2GnBFYFbxmOCK]"
                         },
                         {
                             "id": "VBaGAZpE1JheOkhY",
                             "name": "Szał Bojowy",
-                            "script": "if (this.actor.hasCondition(\"stunned\") || this.actor.hasCondition(\"unconscious\"))\n{\n\tthis.script.scriptNotification(\"Wyłączono!\");\n\tawait this.effect.update({\"disabled\" : true})\n}"
+                            "script": "[Script.OeKeQAAcJhdI4Qky]"
                         }
                     ],
                     "id": "VBaGAZpE1JheOkhY",
@@ -1716,12 +1674,11 @@
                 "jc0qgnuBJlMsA5Yn": {
                     "id": "jc0qgnuBJlMsA5Yn",
                     "name": "Oburęczność",
-                    "script": "args.actor.flags.ambi += 1;",
                     "scriptData": [
                         {
                             "id": "jc0qgnuBJlMsA5Yn",
                             "name": "Oburęczność",
-                            "script": "args.actor.flags.ambi+= 1"
+                            "script": "[Script.GFkVnx4m9OwYsKGH]"
                         }
                     ]
                 }
@@ -1739,8 +1696,8 @@
                         {
                             "id": "MBwMBTSqSVjR9Thc",
                             "name": "Urodzony Żeglarz",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return ![\"NAME.Endurance\", \"NAME.Cool\"].map(i => game.i18n.localize(i)).includes(args.skill?.name)"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.FYUPfYyTYZkxRLFT]"
                         }
                     ],
                     "id": "MBwMBTSqSVjR9Thc",
@@ -1760,8 +1717,8 @@
                         {
                             "id": "z71kZTRJpJ0eDHYD",
                             "name": "Waleczne Serce",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Cool\");"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.XuFxKPYheYF4WMmQ]"
                         }
                     ],
                     "id": "z71kZTRJpJ0eDHYD",
@@ -1778,19 +1735,18 @@
                 "W5gSfWrnLHp2SYLA": {
                     "id": "W5gSfWrnLHp2SYLA",
                     "name": "Tarczownik",
-                    "script": "if (args.opposedTest.result.winner == \"attacker\") {\n  if (args.opposedTest.defenderTest.weapon && args.opposedTest.defenderTest.item.properties.qualities.shield) {\n    ui.notifications.notify(`<b>${this.effect.name}</b>: Otrzymano przewagi w liczbie: ${this.item.Advances}`)\n    this.actor.setAdvantage(this.item.Advances)i1\n  }\n}",
                     "scriptData": [
                         {
                             "id": "W5gSfWrnLHp2SYLA",
                             "name": "Tarczownik",
-                            "script": "if (args.opposedTest.result.winner == \"attacker\") {\n  if (args.opposedTest.defenderTest.weapon && args.opposedTest.defenderTest.item.properties.qualities.shield) {\n    ui.notifications.notify(`<b>${this.effect.name}</b>: OtrzymanoPrzewagi: ${this.item.Advances}`)\n    this.actor.setAdvantage(this.item.Advances)\n  }\n}"
+                            "script": "[Script.2rzxQlL7A9ujZ9uK]"
                         },
                         {
                             "id": "W5gSfWrnLHp2SYLA",
                             "name": "Tarczownik",
-                            "script": "args.fields.successBonus++;",
-                            "activationScript": "return args.weapon?.system.qualities.value.find(i => i.name == \"shield\") && this.actor.attacker",
-                            "hideScript": "return args.data.targets.length > 0 || !args.weapon?.system.qualities.value.find(i => i.name == \"shield\") // Should count even if they don't have the skill"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.mJ9eMPub4epJSf00]",
+                            "hideScript": "[Script.8LmUVQxOwTLSeabg]"
                         }
                     ]
                 }
@@ -1809,8 +1765,8 @@
                         {
                             "id": "FdTH1qADIVHbmuMn",
                             "name": "Musztra",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.item?.system?.attackType != \"melee\""
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.SPOkFWZWziZk5b7A]"
                         }
                     ],
                     "id": "FdTH1qADIVHbmuMn",
@@ -1829,9 +1785,9 @@
                         {
                             "id": "dnX354q42FHGVgSR",
                             "name": "Prosto Między Oczy",
-                            "script": "args.fields.modifier += 20;",
-                            "activationScript": "return ![\"roll\", \"none\"].includes(args.fields.hitLocation)",
-                            "hideScript": "return [\"roll\", \"none\"].includes(args.fields.hitLocation) || args.item?.attackType != \"ranged\""
+                            "script": "[Script.u6CYMSZADrfXd48Q]",
+                            "activationScript": "[Script.6Mjy0jDqczA8BxhS]",
+                            "hideScript": "[Script.b1zMefdoZYtzCm7i]"
                         }
                     ],
                     "id": "dnX354q42FHGVgSR",
@@ -1847,13 +1803,7 @@
             "effects": {
                 "QTmmZBqgkJMBn9KT": {
                     "id": "QTmmZBqgkJMBn9KT",
-                    "name": "Zimna krew",
-                    "scriptData": [
-                        {
-                            "id": "QTmmZBqgkJMBn9KT",
-                            "name": "Zimna krew"
-                        }
-                    ]
+                    "name": "Zimna krew"
                 }
             }
         },
@@ -1869,8 +1819,8 @@
                         {
                             "id": "7JprVi1rmlNVVtqt",
                             "name": "Obieżyświat",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return !args.skill?.name?.includes(game.i18n.localize(\"NAME.Lore\"))"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.8N3Uqjq1ZxPxo4pk]"
                         }
                     ],
                     "id": "7JprVi1rmlNVVtqt",
@@ -1890,8 +1840,8 @@
                         {
                             "id": "5lpUcS6QV5smpHbM",
                             "name": "Chodu!",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Athletics\")"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.9EVj4bmZJex45Mt7]"
                         }
                     ],
                     "id": "5lpUcS6QV5smpHbM",
@@ -1908,14 +1858,13 @@
                 "AdXR6L7rmxEgkVlB": {
                     "id": "AdXR6L7rmxEgkVlB",
                     "name": "Strzał w Dziesiątkę",
-                    "script": "if (args.options.sizeModifier < 0) {\n   args.prefillModifiers.modifier -= args.options.sizeModifier;\n}",
                     "scriptData": [
                         {
                             "id": "AdXR6L7rmxEgkVlB",
                             "name": "Strzał w Dziesiątkę",
-                            "script": "        let modifier; let target = args.data.targets[0]\n        if (target.actor.details.size.value == \"tiny\")\n            modifier = 30\n        if (target.actor.details.size.value == \"ltl\")\n            modifier = 20\n        if (target.actor.details.size.value == \"sml\")\n            modifier = 10\n\t\n        args.fields.modifier += (modifier || 0); // Offset size modifier ",
-                            "activationScript": "return args.item?.system?.attackType == \"ranged\" && args.data.targets[0]?.actor?.sizeNum < 3",
-                            "hideScript": "return !args.options.sizeModifier && args.item?.system?.attackType != \"ranged\""
+                            "script": "[Script.zk44dFEGkylB7kW6]",
+                            "activationScript": "[Script.01VFjGVxkjb5P1ve]",
+                            "hideScript": "[Script.lQJ68n3y1xDyNicE]"
                         }
                     ]
                 }
@@ -1933,7 +1882,9 @@
                         {
                             "id": "kdYtcyWzFZHkwNcv",
                             "name": "Ogłuszenie",
-                            "script": "args.fields.successBonus++"
+                            "script": "[Script.0vaYwAlMWTmOBl8k]",
+                            "activationScript": "[Script.MgTqCMRjxhezT73T]",
+                            "hideScript": "[Script.ZhuitY1KOU1Xe7cP]"
                         },
                         {
                             "id": "kdYtcyWzFZHkwNcv",
@@ -1960,8 +1911,8 @@
                         {
                             "id": "FnzmigBiIVz4Vikd",
                             "name": "Wytrwały",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Endurance\")"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.PdClojv7yNgQpOUc]"
                         }
                     ],
                     "id": "FnzmigBiIVz4Vikd",
@@ -1981,8 +1932,8 @@
                         {
                             "id": "1mQpqNRqYsBGNjW0",
                             "name": "Szybkie Czytanie",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Research\") && !args.skill?.name?.includes(game.i18n.localize(\"NAME.Language\"))"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.4FGKZk2f0xrmIDnp]"
                         }
                     ],
                     "id": "1mQpqNRqYsBGNjW0",
@@ -2002,14 +1953,14 @@
                         {
                             "id": "NYcE4hw4JkyxG2uS",
                             "name": "Zbicie Broni",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.weapon?.system?.attackType != \"melee\"",
-                            "submissionScript": "args.options.beatBlade = true;"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.f7WZvYle9iqefRsh]",
+                            "submissionScript": "[Script.t48hkacYdOpzWvK9]"
                         },
                         {
                             "id": "NYcE4hw4JkyxG2uS",
                             "name": "Zbicie Broni",
-                            "script": "if (args.test.options.beatBlade && (args.test.result.roll <= game.settings.get(\"wfrp4e\", \"automaticSuccess\") || args.test.result.roll <= args.test.target))\n{\n   args.test.result.other.push(`<b>${this.effect.name}</b>: Przeciwnik traci przewagi w liczbie: ${Number(args.test.result.SL) + 1}`)\n}"
+                            "script": "[Script.e34s1XxHckAWfwHt]"
                         }
                     ],
                     "id": "NYcE4hw4JkyxG2uS",
@@ -2029,8 +1980,8 @@
                         {
                             "id": "MMdgtgXOkCf2dhot",
                             "name": "Wilk Morski",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return !args.skill?.name.includes(game.i18n.localize(\"NAME.Sail\"))"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.RNr9CwyvLhlnwD2h]"
                         }
                     ],
                     "id": "MMdgtgXOkCf2dhot",
@@ -2044,15 +1995,9 @@
             "description": "<p>Twoja początkowa Ogłada zwiększa się na stałe o +5 (co nie wlicza się do sumy Rozwinięć postaci).</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.LPgjE0cexTVOBVCY",
             "effects": {
-                "KtcX1mblPyZZwVBC": {
-                    "id": "KtcX1mblPyZZwVBC",
-                    "name": "Charyzmatyczny",
-                    "scriptData": [
-                        {
-                            "id": "KtcX1mblPyZZwVBC",
-                            "name": "Charyzmatyczny"
-                        }
-                    ]
+                "sw50MQUjOHfyl4lO": {
+                    "id": "sw50MQUjOHfyl4lO",
+                    "name": "Charyzmatyczny"
                 }
             }
         },
@@ -2068,8 +2013,8 @@
                         {
                             "id": "6iuKzkJXUCWeyWYu",
                             "name": "Naśladowca",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return !args.skill?.name.includes(game.i18n.localize(\"NAME.Entertain\"))"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.pHyXdPnWwoFrUA5n]"
                         }
                     ],
                     "id": "6iuKzkJXUCWeyWYu",
@@ -2089,8 +2034,8 @@
                         {
                             "id": "1phqTpab6aMhZSUf",
                             "name": "Gładkie Słówka",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Charm\")"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.yIGItnshXI4W46cp]"
                         }
                     ],
                     "id": "1phqTpab6aMhZSUf",
@@ -2116,8 +2061,8 @@
                         {
                             "id": "SdpmWRTKq0A9OeOx",
                             "name": "Żelazna Wola",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Cool\")"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.XuFxKPYheYF4WMmQ]"
                         }
                     ],
                     "id": "SdpmWRTKq0A9OeOx",
@@ -2137,9 +2082,9 @@
                         {
                             "id": "jVvPXTo9MhUJ7jk7",
                             "name": "Wyborny Wspinacz",
-                            "script": "args.fields.successBonus++",
-                            "activationScript": "return args.skill?.name == game.i18n.localize(\"NAME.Climb\")",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Climb\")"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.HrYchgkdZBiu1yPF]",
+                            "hideScript": "[Script.HiMBS6GeOwEydWYN]"
                         }
                     ],
                     "id": "jVvPXTo9MhUJ7jk7",
@@ -2157,10 +2102,10 @@
                 "fo0JnoTpn6UTaks2": {
                     "scriptData": [
                         {
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Intuition\")",
+                            "hideScript": "[Script.kmsGLWGxCY8Z8jVG]",
                             "id": "fo0JnoTpn6UTaks2",
                             "name": "Szósty Zmysł",
-                            "script": "args.fields.successBonus++"
+                            "script": "[Script.956dUb5sd6OtbWZR]"
                         }
                     ],
                     "id": "fo0JnoTpn6UTaks2",
@@ -2180,8 +2125,8 @@
                         {
                             "id": "BsGDfeyWJdcXc1vl",
                             "name": "Rozproszenie Uwagi",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Athletics\")"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.9EVj4bmZJex45Mt7]"
                         }
                     ],
                     "id": "BsGDfeyWJdcXc1vl",
@@ -2200,7 +2145,7 @@
                         {
                             "id": "NtVziPNyV6yxXXVX",
                             "name": "Straszny",
-                            "script": "game.wfrp4e.utility.postFear(this.item.Advances, this.actor.name)"
+                            "script": "[Script.rdaMhMyHrJjQ6vVC]"
                         }
                     ],
                     "id": "NtVziPNyV6yxXXVX",
@@ -2226,8 +2171,8 @@
                         {
                             "id": "BE8twqosYhMA2VGY",
                             "name": "Święte Wizje",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Intuition\");"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.kmsGLWGxCY8Z8jVG]"
                         }
                     ],
                     "id": "BE8twqosYhMA2VGY",
@@ -2247,8 +2192,8 @@
                         {
                             "id": "NuWH0kTIUeX4VGDj",
                             "name": "Chirurgia",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Heal\")"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.I7ieW0hNYvvX0KFg]"
                         }
                     ],
                     "id": "NuWH0kTIUeX4VGDj",
@@ -2265,12 +2210,11 @@
                 "yTGSEMqLFPOts08w": {
                     "id": "yTGSEMqLFPOts08w",
                     "name": "Krzepki",
-                    "script": "args.totalWoundLoss -= 1;\nargs.messageElements.push(\"1 \" + game.i18n.localize(\"NAME.Robust\"));\nif (args.totalWoundLoss <= 0) {\n  let weapon = args.opposedTest.attackerTest.weapon;\n  if (weapon && weapon.properties.flaws.undamaging) {\n    args.totalWoundLoss = 0;\n  } else {\n    args.totalWoundLoss = 1;\n  }\n}",
                     "scriptData": [
                         {
                             "id": "yTGSEMqLFPOts08w",
                             "name": "Krzepki",
-                            "script": "let robust = args.modifiers.other.find(i => i.key == \"robust\")\nif (robust)\n{\n\trobust.value--;\n}\nelse \n{\n\targs.modifiers.other.push({key: \"robust\", label : this.effect.name, value : -1})\n}\n"
+                            "script": "[Script.AWgZnm9xLyIWCDnp]"
                         }
                     ]
                 }
@@ -2288,8 +2232,8 @@
                         {
                             "id": "JbnPNkvW4fBmEJ8U",
                             "name": "Percepcja Magiczna",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return [\"ws\", \"bs\", \"s\", \"t\", \"ag\", \"dex\"].includes(args.characteristic)"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.8hIyWDyfbgGAig65]"
                         }
                     ],
                     "id": "JbnPNkvW4fBmEJ8U",
@@ -2309,8 +2253,8 @@
                         {
                             "id": "3gQwJToDUcHrm7eP",
                             "name": "Porywająca Gorliwość",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Charm\")"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.yIGItnshXI4W46cp]"
                         }
                     ],
                     "id": "3gQwJToDUcHrm7eP",
@@ -2351,19 +2295,18 @@
                 "6dxDagVXzDKL4vgR": {
                     "id": "6dxDagVXzDKL4vgR",
                     "name": "Berserkerska Szarża",
-                    "script": "if (args.test.result.charging) {\n   args.test.result.damage += 1;\n   args.test.result.additionalDamage += 1;\n}",
                     "scriptData": [
                         {
                             "id": "6dxDagVXzDKL4vgR",
                             "name": "Berserkerska Szarża",
-                            "script": "if (args.test.result.charging)\n{\n   args.test.result.damage += 1\n   args.test.result.additionalDamage += 1\n}"
+                            "script": "[Script.rUGSx06BuBvX9kgf]"
                         },
                         {
                             "id": "6dxDagVXzDKL4vgR",
                             "name": "Berserkerska Szarża",
-                            "script": "args.fields.successBonus++;",
-                            "activationScript": "return args.fields.charging",
-                            "hideScript": "return !args.fields.charging"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.u5dNZ0s3lWfL8KFb]",
+                            "hideScript": "[Script.YsS2RZsl2ZsqjhWV]"
                         }
                     ]
                 }
@@ -2382,8 +2325,8 @@
                         {
                             "id": "UfH6jjlJcNdIZpdv",
                             "name": "Czytanie z Ruchu Warg",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Perception\");"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.h0DfPwUUOBjyAHMZ]"
                         }
                     ],
                     "id": "UfH6jjlJcNdIZpdv",
@@ -2400,12 +2343,11 @@
                 "FT9ngGg2C68sBxzc": {
                     "id": "FT9ngGg2C68sBxzc",
                     "name": "Strzał Przebijający",
-                    "script": "if (args.opposedTest.attackerTest.weapon.attackType == \"ranged\") {\n    let applyAP = (args.damageType == game.wfrp4e.config.DAMAGE_TYPE.IGNORE_TB || args.damageType == game.wfrp4e.config.DAMAGE_TYPE.NORMAL);\n    let AP = args.AP;\n    if (applyAP) {\n        newUsed = Math.max(AP.used - this.item.Advances, 0);\n        args.totalWoundLoss += (AP.used - newUsed);\n        let apIndex = args.messageElements.findIndex(i => i.includes(game.i18n.localize(\"AP\")))\n        args.messageElements[apIndex] = newUsed + \"/\" + AP.value + \" \" + game.i18n.localize(\"AP\")\n    }\n}",
                     "scriptData": [
                         {
                             "id": "FT9ngGg2C68sBxzc",
                             "name": "Strzał Przebijający",
-                            "script": "if(args.opposedTest.attackerTest.weapon.attackType == \"ranged\")\n{\n    let applyAP = (args.damageType == game.wfrp4e.config.DAMAGE_TYPE.IGNORE_TB || args.damageType == game.wfrp4e.config.DAMAGE_TYPE.NORMAL)\n\n\n    let AP = args.AP\n\n    if (applyAP) {\n        newUsed = Math.max(AP.used - this.item.Advances, 0)\n        args.totalWoundLoss += (AP.used - newUsed)\n\n    let apIndex = args.messageElements.findIndex(i => i.includes(game.i18n.localize(\"AP\")))\n    args.messageElements[apIndex] = newUsed + \"/\" + AP.value + \" \" + game.i18n.localize(\"AP\")\n    }\n}"
+                            "script": "[Script.bBdXzBmxgFFBwMMS]"
                         }
                     ]
                 }
@@ -2423,8 +2365,8 @@
                         {
                             "id": "WHZP0LOZtDlJFP3A",
                             "name": "Sekretna Tożsamość",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return !args.skill?.name.includes(game.i18n.localize(\"NAME.Entertain\"))"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.pHyXdPnWwoFrUA5n]"
                         }
                     ],
                     "id": "WHZP0LOZtDlJFP3A",
@@ -2444,8 +2386,8 @@
                         {
                             "id": "jDgjzhXdlemhJqxO",
                             "name": "Pilot Rzeczny",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return !args.skill?.name?.includes(game.i18n.localize(\"NAME.Lore\"))"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.8N3Uqjq1ZxPxo4pk]"
                         }
                     ],
                     "id": "jDgjzhXdlemhJqxO",
@@ -2465,9 +2407,14 @@
                         {
                             "id": "rhATebOe8pHsOaQd",
                             "name": "Słuch Absolutny",
-                            "script": "args.fields.successBonus++",
-                            "activationScript": "        return args.skill?.name == \"Występy (Śpiew)\" || (args.skill?.name.includes(\"Język\") && (args.skill.name.includes(\"Magiczny\") || args.skill.name.includes(\"Elthárin\") || args.skill.name.includes(\"Kitajski\")))",
-                            "hideScript": "return args.skill?.name != \"Występy (Śpiew)\" && !args.skill?.name.includes(\"Język\")"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.J0IWUhxada2ONowP]",
+                            "hideScript": "[Script.f5Mp3kXwCFdPkW6N]"
+                        },
+                        {
+                            "id": "rhATebOe8pHsOaQd",
+                            "name": "Słuch Absolutny",
+                            "script": "[Script.HrOBAXsEX073ReKl]"
                         }
                     ],
                     "id": "rhATebOe8pHsOaQd",
@@ -2487,9 +2434,9 @@
                         {
                             "id": "mWdS1RuCkVWboiAn",
                             "name": "Włóczykij",
-                            "script": "args.fields.successBonus++",
-                            "activationScript": "return args.skill?.name== \"Skradanie Się (Wieś)\"",
-                            "hideScript": "return !args.skill?.name?.includes(game.i18n.localize(\"NAME.Stealth\"))"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.RrchOMpEdIvceJxl]",
+                            "hideScript": "[Script.Lu27iXtJVkrJ8bOx]"
                         }
                     ],
                     "id": "mWdS1RuCkVWboiAn",
@@ -2521,9 +2468,9 @@
                         {
                             "id": "VWvozO8rRZfiENym",
                             "name": "Odwrócenie Szans",
-                            "script": "args.fields.successBonus++",
-                            "activationScript": "return args.item?.system?.attackType == \"melee\" && this.actor.attacker",
-                            "hideScript": "return args.item?.system?.attackType != \"melee\""
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.FXwfqF0jpXlBQ9Y3]",
+                            "hideScript": "[Script.SPOkFWZWziZk5b7A]"
                         }
                     ],
                     "id": "VWvozO8rRZfiENym",
@@ -2539,13 +2486,7 @@
             "effects": {
                 "sx7NGIdCYniQHaHi": {
                     "id": "sx7NGIdCYniQHaHi",
-                    "name": "Błyskotliwość",
-                    "scriptData": [
-                        {
-                            "id": "sx7NGIdCYniQHaHi",
-                            "name": "Błyskotliwość"
-                        }
-                    ]
+                    "name": "Błyskotliwość"
                 }
             }
         },
@@ -2553,7 +2494,20 @@
             "id": "QyjWtSdnVMT04l5Y",
             "name": "Błogosławieństwo (Boska Tradycja)",
             "description": "<p>Któryś z bogów czuwa nad tobą i odpowiada na twoje proste modlitwy. Możesz wykorzystywać błogosławieństwa swojego pana, co opisano w @UUID[JournalEntry.NcH9OhleJFfaUdon]{Religie i wierzenia}. Normalnie możesz znać tylko jedną boską tradycję na Talent Błogosławieństwo.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.QyjWtSdnVMT04l5Y"
+            "sourceId": "Compendium.wfrp4e-core.items.Item.QyjWtSdnVMT04l5Y",
+            "effects": {
+                "xBEN6zLyoG2JrZwh": {
+                    "scriptData": [
+                        {
+                            "script": "[Script.IupskvzvoGyD2H5o]",
+                            "id": "xBEN6zLyoG2JrZwh",
+                            "name": "Błogosławieństwo"
+                        }
+                    ],
+                    "id": "xBEN6zLyoG2JrZwh",
+                    "name": "Błogosławieństwo"
+                }
+            }
         },
         "Sturdy": {
             "id": "qZ4cFy6z482ZONuA",
@@ -2564,18 +2518,17 @@
                 "JGnq108l9XA1xAWM": {
                     "id": "JGnq108l9XA1xAWM",
                     "name": "Tragarz",
-                    "script": "args.actor.status.encumbrance.max += 2;",
                     "scriptData": [
                         {
                             "id": "JGnq108l9XA1xAWM",
                             "name": "Tragarz",
-                            "script": "this.actor.system.status.encumbrance.max += 2"
+                            "script": "[Script.QF8LanKNoAlTkQG0]"
                         },
                         {
                             "id": "JGnq108l9XA1xAWM",
                             "name": "Tragarz",
-                            "script": "args.fields.slBonus++;",
-                            "hideScript": "return args.characteristic != \"s\""
+                            "script": "[Script.wAETU6aTRr9d4oCU]",
+                            "hideScript": "[Script.bWr8leucbWslBCYG]"
                         }
                     ]
                 }
@@ -2591,12 +2544,11 @@
                 "tS0NjO6ujjQH6sV9": {
                     "id": "tS0NjO6ujjQH6sV9",
                     "name": "Przestępca",
-                    "script": "console.log(args);",
                     "scriptData": [
                         {
                             "id": "tS0NjO6ujjQH6sV9",
                             "name": "Przestępca",
-                            "script": "if (args.test.options.income && !args.test.options.criminal)\n{\n    args.test.options.criminal = true;\n    let currentCareer = args.test.actor.system.currentCareer;\n    let coin = {1 : \"b\", 2 : \"s\", 3 : \"s\", 4 : \"g\"}[currentCareer.system.careerlevel.value] // b, s, or g maps to 2d10, 1d10, or 1 respectively (takes the first letter)\n    let dieAmount = {1 : \"2d10\", 2 : \"1d10\", 3 : \"2d10\", 4 : \"1\"}[currentCareer.system.careerlevel.value] // b, s, or g maps to 2d10, 1d10, or 1 respectively (takes the first letter)\n    dieAmount = parseInt(dieAmount[0]) * this.item.system.Advances;     // Multilpy that first letter by your standing (Brass 4 = 8d10 pennies)\n    if (tier != \"g\") // Don't roll for gold, just use standing value\n    {\n        dieAmount = dieAmount + \"d10\";\n    }\n    let moneyEarned = (await new Roll(dieAmount).roll()).total;\n    let moneyString = `${moneyEarned}${coin}`\n\n    this.script.scriptMessage(`<a class=\"money-drag\" data-amt=\"${moneyString}\">Dodatkowo zarobione monety: ${game.wfrp4e.market.amountToString(moneyString)}</a>`, {whisper : ChatMessage.getWhisperRecipients(\"GM\")})\n}"
+                            "script": "[Script.H06Ysj7oPiemW7S6]"
                         }
                     ]
                 }
@@ -2616,13 +2568,7 @@
             "effects": {
                 "vntOVrHSurqI8lbG": {
                     "id": "vntOVrHSurqI8lbG",
-                    "name": "Niezwykle Odporny",
-                    "scriptData": [
-                        {
-                            "id": "vntOVrHSurqI8lbG",
-                            "name": "Niezwykle Odporny"
-                        }
-                    ]
+                    "name": "Niezwykle Odporny"
                 }
             }
         },
@@ -2635,12 +2581,11 @@
                 "3HTxEPAJdtbQaygL": {
                     "id": "3HTxEPAJdtbQaygL",
                     "name": "Morderczy Atak",
-                    "script": "if (args.test.result.critical) {\n   args.test.result.damage +=1;\n   args.test.result.additionalDamage += 1;\n}",
                     "scriptData": [
                         {
                             "id": "3HTxEPAJdtbQaygL",
                             "name": "Morderczy Atak",
-                            "script": "if(args.test.result.critical)\n{\n   args.test.result.damage +=1 \n   args.test.result.additionalDamage += 1\n}"
+                            "script": "[Script.kBXVEnSWzaQZLkJH]"
                         }
                     ]
                 }
@@ -2655,12 +2600,11 @@
                 "3f87V2dvHVJTzwC7": {
                     "id": "3f87V2dvHVJTzwC7",
                     "name": "Święta Nienawiść",
-                    "script": "if (args.item.type == \"prayer\" && (args.item.damage.value || args.item.damage.dice)) {\n    args.item.damage.value += \"+1\";\n}",
                     "scriptData": [
                         {
                             "id": "3f87V2dvHVJTzwC7",
                             "name": "Święta Nienawiść",
-                            "script": "if (args.item.type == \"prayer\" && (args.item.damage.value || args.item.damage.dice))\n    args.item.damage.value += \"+1\""
+                            "script": "[Script.maKr58mvvyKxFyC3]"
                         }
                     ]
                 }
@@ -2678,9 +2622,9 @@
                         {
                             "id": "KQ5uqOZVw51stu6Z",
                             "name": "Geniusz Arytmetyczny",
-                            "script": "args.fields.successBonus++",
-                            "activationScript": "return [\"NAME.Evaluate\", \"NAME.Gamble\"].map(i => game.i18n.localize(i)).includes(args.skill?.name)",
-                            "hideScript": "return ![\"NAME.Evaluate\", \"NAME.Gamble\"].map(i => game.i18n.localize(i)).includes(args.skill?.name)"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.qaVde0sTuMBRi2nl]",
+                            "hideScript": "[Script.3plV9WFqs2prfAdp]"
                         }
                     ],
                     "id": "KQ5uqOZVw51stu6Z",
@@ -2712,8 +2656,8 @@
                         {
                             "id": "e15hFeStjtgtyCQU",
                             "name": "Wstrzemięźliwy",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Endurance\");"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.PdClojv7yNgQpOUc]"
                         }
                     ],
                     "id": "e15hFeStjtgtyCQU",
@@ -2733,13 +2677,13 @@
                         {
                             "id": "W0ORRnLMpYlf6NTK",
                             "name": "Etykieta",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Charm\") && args.skill?.name != game.i18n.localize(\"NAME.Gossip\")"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.dAMtbn3uQwF8KpKU]"
                         },
                         {
                             "id": "W0ORRnLMpYlf6NTK",
                             "name": "Etykieta",
-                            "script": "if (this.item.name.includes(\"(\") && this.item.system.tests.value.includes(\"(Grupa Społeczna)\"))\n{\n    let tests = this.item.system.tests.value\n    let name = this.item.name\n\n    // If name already specifies, make sure tests value reflects that\n    if (name.includes(\"(\"))\n    {\n        let group = name.split(\"(\")[1].split(\")\")[0]\n        tests = `${tests.split(\"(\")[0].trim()} (${group})`\n    }\n    this.item.updateSource({name, \"system.tests.value\" : tests})\n}"
+                            "script": "[Script.g0SzfsLyW7aD2F19]"
                         }
                     ],
                     "id": "W0ORRnLMpYlf6NTK",
@@ -2759,8 +2703,8 @@
                         {
                             "id": "nycrbkeiVCmw3lX4",
                             "name": "Człowiek Guma",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return !args.skill?.name.includes(game.i18n.localize(\"NAME.Perform\")) && args.characteristic != \"ag\""
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.roKvPHDSpX4IV11C]"
                         }
                     ],
                     "id": "nycrbkeiVCmw3lX4",
@@ -2780,8 +2724,8 @@
                         {
                             "id": "BuPyJZgeJy9B8jkP",
                             "name": "Wodniak",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return !args.skill?.name?.includes(game.i18n.localize(\"NAME.Sail\"))"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.1wKVvxRTHOyV4Qdv]"
                         }
                     ],
                     "id": "BuPyJZgeJy9B8jkP",
@@ -2812,12 +2756,11 @@
                 "7i8RGItRAF5GLESP": {
                     "id": "7i8RGItRAF5GLESP",
                     "name": "Bitewny Refleks",
-                    "script": "let initiativeSetting = game.settings.get(\"wfrp4e\", \"initiativeRule\");\n\nswitch (initiativeSetting) {\n  case \"default\":\n    args.initiative += \"+10\"\n    break;\n\n  case \"sl\":\n    args.initiative += \"+1\"\n    break;\n\n  case \"d10Init\":\n    args.initiative += \"+10\"\n    break;\n\n  case \"d10InitAgi\":\n    args.initiative += \"+1\"\n    break;\n}",
                     "scriptData": [
                         {
                             "id": "7i8RGItRAF5GLESP",
                             "name": "Bitewny Refleks",
-                            "script": "let initiativeSetting = game.settings.get(\"wfrp4e\", \"initiativeRule\")\n\nswitch (initiativeSetting) {\n  case \"default\":\n    args.initiative += \"+10\"\n    break;\n\n  case \"sl\":\n    args.initiative += \"+1\"\n    break;\n\n  case \"d10Init\":\n    args.initiative += \"+10\"\n    break;\n\n  case \"d10InitAgi\":\n    args.initiative += \"+1\"\n    break;\n}"
+                            "script": "[Script.ZEdDcBka21rnMuz5]"
                         }
                     ]
                 }
@@ -2841,8 +2784,8 @@
                         {
                             "id": "QNm4xjwWCmpVpE9X",
                             "name": "Żelazna Szczęka",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Endurance\");"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.PdClojv7yNgQpOUc]"
                         }
                     ],
                     "id": "QNm4xjwWCmpVpE9X",
@@ -2859,12 +2802,11 @@
                 "CTK46A6miFIRTbVG": {
                     "id": "CTK46A6miFIRTbVG",
                     "name": "Nieugięty",
-                    "script": "if (args.test.result.charging) {\n   args.test.result.damage += 1;\n   args.test.result.additionalDamage += 1;\n}",
                     "scriptData": [
                         {
                             "id": "CTK46A6miFIRTbVG",
                             "name": "Nieugięty",
-                            "script": "if (args.test.result.charging)\n{\n   args.test.result.damage += 1\n   args.test.result.additionalDamage += 1\n}"
+                            "script": "[Script.rUGSx06BuBvX9kgf]"
                         }
                     ]
                 }
@@ -2882,9 +2824,9 @@
                         {
                             "id": "xIbjdXLXjt690zem",
                             "name": "Dwie Bronie",
-                            "script": "args.fields.successBonus++",
-                            "activationScript": "return args.fields.dualWielding",
-                            "hideScript": "return !args.fields.dualWielding"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.QqybHxNCzPEzG1Qh]",
+                            "hideScript": "[Script.ZdHvGvSJBsIuPphF]"
                         }
                     ],
                     "id": "xIbjdXLXjt690zem",
@@ -2910,8 +2852,8 @@
                         {
                             "id": "qPu851JhEc2mHJ5z",
                             "name": "Wódz",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Leadership\");"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.dSmRhZ6o1bUcOSF9]"
                         }
                     ],
                     "id": "qPu851JhEc2mHJ5z",
@@ -2933,12 +2875,12 @@
                         {
                             "id": "FQv1UAIrdvtf9Tlc",
                             "name": "Odporny na",
-                            "script": "args.fields.successBonus++;"
+                            "script": "[Script.956dUb5sd6OtbWZR]"
                         },
                         {
                             "id": "FQv1UAIrdvtf9Tlc",
                             "name": "Odporny na",
-                            "script": "let resistance\nif (this.item.name.includes(\"(\"))\n{\n\tresistance = this.item.parenthesesText\n}\nelse \n{\n    resistance = await Dialog.wait({\n        title : \"Wybierz Rodzaj Odporności\",\n                content : \"<input type='text'>\",\n        buttons : {\n                    confirm : {\n                label : game.i18n.localize(\"Potwierdź\"),\n                        callback : (dlg) => {\n                    return dlg.find(\"input\")[0].value\n        }\n                    }\n                },\n\tdefault : \"confirm\",\n                close : () => {\n            return \"\"\n                }\n            })\n    \n    if (resistance)\n    {\n        this.item.updateSource({name : this.item.name + ` (${resistance})`})\n        this.effect.updateSource({name : this.effect.name + ` (${resistance})`})\n    }\n}    \nthis.item.updateSource({\"system.tests.value\" : this.item.system.tests.value.replace(\"Powiązane Zagrożenie\", resistance)})\n\nif (resistance && !this.effect.name.includes(\"(\"))\n{\n    this.effect.updateSource({name : this.effect.name += ` (${resistance})`})\n}"
+                            "script": "[Script.tCIT1a12Gt6k2ohA]"
                         }
                     ]
                 }
@@ -2962,8 +2904,8 @@
                         {
                             "name": "Walka w Ciasnocie",
                             "id": "dTZPyD3LdgzpWoxq",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return !args.options.dodge"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.VAPsww9x3HAw1sKP]"
                         }
                     ],
                     "id": "dTZPyD3LdgzpWoxq",
@@ -2980,15 +2922,14 @@
                 "kS7RdyolGOxATaC3": {
                     "id": "kS7RdyolGOxATaC3",
                     "name": "Ulicznik",
-                    "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.StealthUrban\")) {\n    args.test.preData.canReverse = true;\n}",
                     "scriptData": [
                         {
                             "id": "kS7RdyolGOxATaC3",
                             "name": "Ulicznik",
-                            "script": "args.fields.successBonus++;",
-                            "activationScript": "return args.skill?.name.toLowerCase() == \"skradanie się (miasto)\"",
-                            "hideScript": "return !args.skill?.name.toLowerCase().includes(\"skradanie się\")",
-                            "submissionScript": "args.data.canReverse = true"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.dfEgat3jz4EtWszH]",
+                            "hideScript": "[Script.l8qFKSnMpy4P7XQR]",
+                            "submissionScript": "[Script.ratP9ByLjQPiLlFK]"
                         }
                     ]
                 }
@@ -3007,8 +2948,8 @@
                         {
                             "id": "C4J0MeUKheJvFzH0",
                             "name": "Inspirujący",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Leadership\")"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.dSmRhZ6o1bUcOSF9]"
                         }
                     ],
                     "id": "C4J0MeUKheJvFzH0",
@@ -3028,8 +2969,14 @@
                         {
                             "id": "pc8xJSTL4hH9WsZN",
                             "name": "Pilot",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return !args.skill?.name.includes(game.i18n.localize(\"NAME.Row\")) && !args.skill?.name.includes(game.i18n.localize(\"NAME.Sail\"))"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.0FNOq4J1AdPd2A0q]",
+                            "submissionScript": "[Script.hlHKeFWrOA8CsLr9]"
+                        },
+                        {
+                            "name": "Pilot",
+                            "script": "[Script.Adgs6Zs0FdefO6qx]",
+                            "id": "pc8xJSTL4hH9WsZN"
                         }
                     ],
                     "id": "pc8xJSTL4hH9WsZN",
@@ -3046,12 +2993,11 @@
                 "2COWvsyLyfHXDcJJ": {
                     "id": "2COWvsyLyfHXDcJJ",
                     "name": "Czysta Dusza",
-                    "script": "args.actor.status.corruption.max += 1;",
                     "scriptData": [
                         {
                             "id": "2COWvsyLyfHXDcJJ",
                             "name": "Czysta Dusza",
-                            "script": "args.actor.status.corruption.max += 1"
+                            "script": "[Script.8noxHUQKR55Kx1YN]"
                         }
                     ]
                 }
@@ -3069,8 +3015,8 @@
                         {
                             "id": "sg4rAhWu8HovKSlE",
                             "name": "Mistrz Charakteryzacji",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return !args.skill?.name.includes(game.i18n.localize(\"NAME.Entertain\"))"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.pHyXdPnWwoFrUA5n]"
                         }
                     ],
                     "id": "sg4rAhWu8HovKSlE",
@@ -3090,8 +3036,8 @@
                         {
                             "id": "6rQIiOmi2jeCUplP",
                             "name": "Wtargnięcie z Włamaniem",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return !args.skill?.name.includes(game.i18n.localize(\"NAME.Melee\")) && args.weapon?.system?.attackType != \"melee\""
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.uSwkYENTOcnfRrqA]"
                         }
                     ],
                     "id": "6rQIiOmi2jeCUplP",
@@ -3111,9 +3057,9 @@
                         {
                             "id": "Cz6kGWZNw1siJSxN",
                             "name": "Przyrządzanie Mikstur",
-                            "script": "args.fields.successBonus++",
-                            "activationScript": "return args.skill?.name == \"Rzemiosło (Aptekarstwo)\"",
-                            "hideScript": "return !args.skill?.name.includes(game.i18n.localize(\"NAME.Trade\"))"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.MfxzwJz2o9ho2hOM]",
+                            "hideScript": "[Script.DxQnamsb2AuW0p2e]"
                         }
                     ],
                     "id": "Cz6kGWZNw1siJSxN",
@@ -3133,8 +3079,8 @@
                         {
                             "id": "dawFll5eB35uSev2",
                             "name": "Widzenie w Ciemności",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Perception\")"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.h0DfPwUUOBjyAHMZ]"
                         }
                     ],
                     "id": "dawFll5eB35uSev2",
@@ -3154,9 +3100,9 @@
                         {
                             "id": "9jCMGlZut6wvKcjl",
                             "name": "Władcza Postura",
-                            "script": "args.fields.successBonus++",
-                            "activationScript": "return args.skill?.name == game.i18n.localize(\"NAME.Leadership\")",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Leadership\")"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.LkPtgN9A36OI6Frh]",
+                            "hideScript": "[Script.dSmRhZ6o1bUcOSF9]"
                         }
                     ],
                     "id": "9jCMGlZut6wvKcjl",
@@ -3176,14 +3122,14 @@
                         {
                             "id": "vju0E944RCDRKgBK",
                             "name": "Riposta",
-                            "script": "args.fields.successBonus++",
-                            "activationScript": "return args.item?.system?.attackType == \"melee\" && this.actor.attacker",
-                            "hideScript": "return args.item?.system?.attackType != \"melee\""
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.FXwfqF0jpXlBQ9Y3]",
+                            "hideScript": "[Script.SPOkFWZWziZk5b7A]"
                         },
                         {
                             "id": "vju0E944RCDRKgBK",
                             "name": "Riposta",
-                            "script": "let weapon = args.opposedTest.defenderTest.weapon\nif (\n    !args.opposedTest.result.swapped && \n    args.opposedTest.result.winner == \"defender\" && \n    args.opposedTest.attackerTest.result.damage && \n    weapon && \n    weapon?.system.properties.qualities.fast\n    )\n{\n    args.opposedTest.swap(this.effect.label);\n}"
+                            "script": "[Script.TxfmxDGBj04AQQpt]"
                         }
                     ],
                     "id": "vju0E944RCDRKgBK",
@@ -3200,12 +3146,11 @@
                 "ors3yseo6f4uQCgq": {
                     "id": "ors3yseo6f4uQCgq",
                     "name": "Celny Strzał",
-                    "script": "args.actor.flags.rangedDamageIncrease += 1;",
                     "scriptData": [
                         {
                             "id": "ors3yseo6f4uQCgq",
                             "name": "Celny Strzał",
-                            "script": "args.actor.flags.rangedDamageIncrease += 1"
+                            "script": "[Script.iMDZLr7ueJWBnilj]"
                         }
                     ]
                 }
@@ -3223,8 +3168,8 @@
                         {
                             "id": "NWMGUKS4Wl6p3moB",
                             "name": "Cień",
-                            "script": "args.fields.successBonus++",
-                            "hideScript": "return [\"ws\", \"bs\", \"s\", \"t\"].includes(args.characteristic)"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.Xf4FcZ4ZLdWmOXBa]"
                         }
                     ],
                     "id": "NWMGUKS4Wl6p3moB",
@@ -3247,12 +3192,11 @@
                 "O6qLwcpRh7LjEm4o": {
                     "id": "O6qLwcpRh7LjEm4o",
                     "name": "Nieubłagany",
-                    "script": "if (args.effect.conditionId == \"bleeding\")\n    args.effect.flags.wfrp4e.value -= 1",
                     "scriptData": [
                         {
                             "id": "O6qLwcpRh7LjEm4o",
                             "name": "Nieubłagany",
-                            "script": "if (args.effect.conditionId == \"bleeding\")\n    args.data.damage -= 1"
+                            "script": "[Script.1wEjrgff7ASxKVmy]"
                         }
                     ]
                 }
@@ -3268,19 +3212,18 @@
                 "YsehPMUmEzTAH6UC": {
                     "id": "YsehPMUmEzTAH6UC",
                     "name": "Szuler",
-                    "script": "if (args.test.item && (args.test.item.name == game.i18n.localize(\"NAME.Gamble\") || args.test.item.name == game.i18n.localize(\"NAME.SleightOfHand\")) && args.test.succeeded) {\nlet SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\nlet ones = Number(args.test.result.roll.toString().split(\"\").pop())\nif (ones > SL)\n   args.test.result.other.push(`<span class=\"hide-option\"><b>${this.effect.name}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS jeśli grasz w karty.</span>`)\n}",
                     "scriptData": [
                         {
                             "id": "YsehPMUmEzTAH6UC",
                             "name": "Szuler",
-                            "script": "if (args.test.options.cardsharp && args.test.succeeded)\n{\n\nlet SL = Math.floor(args.test.target / 10) - Math.floor(args.test.result.roll / 10)\nlet ones = Number(args.test.result.roll.toString().split(\"\").pop())\n\nif (ones > SL)\n   args.test.result.other.push(`<span class=\"hide-option\"><b>${this.effect.name}</b>: ${ones + args.test.successBonus + args.test.slBonus} PS</span>`)\n}"
+                            "script": "[Script.3D5ImpMgpOTPucvv]"
                         },
                         {
                             "id": "YsehPMUmEzTAH6UC",
                             "name": "Szuler",
-                            "script": "args.fields.successBonus++;",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Gamble\") && args.skill?.name != game.i18n.localize(\"NAME.SleightOfHand\")",
-                            "submissionScript": "args.options.cardsharp = true;"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.TdjlJro0RRVSh8g8]",
+                            "submissionScript": "[Script.1OpT3CXs07XFWWCT]"
                         }
                     ]
                 }
@@ -3304,9 +3247,9 @@
                         {
                             "id": "8ZKB7vgGB05PfuWW",
                             "name": "Szczur Kanałowy",
-                            "script": "args.fields.successBonus++",
-                            "activationScript": "return args.skill?.name == \"Skradanie się (Podziemia)\"",
-                            "hideScript": "return !args.skill?.name?.includes(game.i18n.localize(\"NAME.Stealth\"))"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.gKPL3t4vlZAsvtGr]",
+                            "hideScript": "[Script.Lu27iXtJVkrJ8bOx]"
                         }
                     ],
                     "id": "8ZKB7vgGB05PfuWW",
@@ -3322,13 +3265,7 @@
             "effects": {
                 "4dEzF6K4pP539zRF": {
                     "id": "4dEzF6K4pP539zRF",
-                    "name": "Bardzo Silny",
-                    "scriptData": [
-                        {
-                            "id": "4dEzF6K4pP539zRF",
-                            "name": "Bardzo Silny"
-                        }
-                    ]
+                    "name": "Bardzo Silny"
                 }
             }
         },
@@ -3340,13 +3277,7 @@
             "effects": {
                 "yjOMm9SFJOK8QBvQ": {
                     "id": "yjOMm9SFJOK8QBvQ",
-                    "name": "Urodzony Wojownik",
-                    "scriptData": [
-                        {
-                            "id": "yjOMm9SFJOK8QBvQ",
-                            "name": "Urodzony Wojownik"
-                        }
-                    ]
+                    "name": "Urodzony Wojownik"
                 }
             }
         },
@@ -3359,12 +3290,11 @@
                 "REeG0AV5Sm4fTAIJ": {
                     "id": "REeG0AV5Sm4fTAIJ",
                     "name": "Twardziel",
-                    "script": "args.multiplier.tb += 1;",
                     "scriptData": [
                         {
                             "id": "REeG0AV5Sm4fTAIJ",
                             "name": "Twardziel",
-                            "script": "args.multiplier.tb += 1"
+                            "script": "[Script.GuUCErVbk5hrFzR3]"
                         }
                     ]
                 }
@@ -3379,19 +3309,18 @@
                 "LKDNluFVNLBNUH4N": {
                     "id": "LKDNluFVNLBNUH4N",
                     "name": "Mól Książkowy",
-                    "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Research\")) {\n    args.test.preData.canReverse = true;\n}",
                     "scriptData": [
                         {
                             "id": "LKDNluFVNLBNUH4N",
                             "name": "Mól Książkowy",
-                            "script": "if (args.test.item && args.test.item.name == game.i18n.localize(\"NAME.Research\"))\n    args.test.preData.canReverse = true"
+                            "script": "[Script.a6gacHsvgwtsIFSQ]"
                         },
                         {
                             "id": "LKDNluFVNLBNUH4N",
                             "name": "Mól Książkowy",
-                            "script": "args.fields.successBonus++;",
-                            "activationScript": "return args.skill?.name == game.i18n.localize(\"NAME.Research\")",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Research\")"
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.tnE8LF6E3svIlLca]",
+                            "hideScript": "[Script.52mwb33mGrQjq89B]"
                         }
                     ]
                 }
@@ -3406,8 +3335,7 @@
             "effects": {
                 "6m85TVcbkk2geHrE": {
                     "id": "6m85TVcbkk2geHrE",
-                    "name": "Krasomówstwo",
-                    "description": "Test Charyzmy podczas przemawiania do tłumu"
+                    "name": "Krasomówstwo"
                 }
             }
         },
@@ -3423,9 +3351,9 @@
                         {
                             "id": "Eu8Ajiixpb7rdqVW",
                             "name": "Skrócenie Dystansu",
-                            "script": "if (this.actor.statuses.has(\"infighting\")) // Only add +10 if already infighting\n    args.prefillModifiers.modifier += 10; \nargs.prefillModifiers.successBonus += 1; \n",
-                            "activationScript": "return this.actor.hasSystemEffect(\"infighting\")",
-                            "hideScript": "return args.type != \"weapon\" && !this.actor.statuses.has(\"infighting\")"
+                            "script": "[Script.7f6OsttTzE7Hvzfk]",
+                            "activationScript": "[Script.pnB9TzSEytkxk3Rb]",
+                            "hideScript": "[Script.ZrePyV2spv3v65Tg]"
                         }
                     ],
                     "id": "Eu8Ajiixpb7rdqVW",

@@ -18,12 +18,11 @@
                 "MgpYZu22zgrLdxmf": {
                     "id": "MgpYZu22zgrLdxmf",
                     "name": "Zerwane więzadło",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.qn4ZpvTQIX4rcJDl\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
                     "scriptData": [
                         {
                             "id": "MgpYZu22zgrLdxmf",
                             "name": "Zerwane więzadło",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.qn4ZpvTQIX4rcJDl\")\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect: this.effect.id})"
+                            "script": "[Script.m3qEVO5fseV6KHXa]"
                         }
                     ]
                 }
@@ -40,12 +39,11 @@
                 "HgsptGxBG4CYhlk2": {
                     "id": "HgsptGxBG4CYhlk2",
                     "name": "Cios w udo",
-                    "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"average\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}",
                     "scriptData": [
                         {
                             "id": "HgsptGxBG4CYhlk2",
                             "name": "Cios w udo",
-                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {appendTitle : ` - ${this.effect.name}`, fields: {difficulty: \"average\"}});\nawait test.roll();\nif (test.failed)\n{\n    this.actor.addCondition(\"prone\")\n}\n"
+                            "script": "[Script.6fElmBxTjdAaubbK]"
                         }
                     ]
                 },
@@ -72,12 +70,11 @@
                 "QaSpvCS9KAifTCNw": {
                     "id": "QaSpvCS9KAifTCNw",
                     "name": "Złamany obojczyk",
-                    "script": "fromUuid('Compendium.wfrp4e-core.items.EaqlLRQigwnsEAXX').then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
                     "scriptData": [
                         {
                             "id": "QaSpvCS9KAifTCNw",
                             "name": "Złamany obojczyk",
-                            "script": "let item = await fromUuid('Compendium.wfrp4e-core.items.EaqlLRQigwnsEAXX')\nlet data = item.toObject();\ndata.system.location.value = \"Collar Bone\"\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect : this.effect.id})"
+                            "script": "[Script.okr3TtzpFoefUuJS]"
                         }
                     ]
                 },
@@ -103,9 +100,7 @@
             "effects": {
                 "megBKxKy2Xu8LoXg": {
                     "id": "megBKxKy2Xu8LoXg",
-                    "name": "Oślepienie",
-                    "secondaryScript": "if (args.item && args.item.attackType=='melee') args.prefillModifiers.modifier += 10 * this.effect.conditionValue",
-                    "description": "Testy związane ze wzrokiem"
+                    "name": "Oślepienie"
                 }
             },
             "wounds": "1",
@@ -119,19 +114,17 @@
             "effects": {
                 "4o8C5gO5JrPMQy7V": {
                     "id": "4o8C5gO5JrPMQy7V",
-                    "name": "Ogłuszenie",
-                    "description": "Testy związane ze słuchem"
+                    "name": "Ogłuszenie"
                 },
                 "AyoqSH1wIlPXFrdJ": {
                     "id": "AyoqSH1wIlPXFrdJ",
                     "name": "Zmęczenie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
                     "scriptData": [
                         {
                             "id": "AyoqSH1wIlPXFrdJ",
                             "name": "Zmęczenie",
-                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
-                            "activationScript": "return true"
+                            "script": "[Script.Q1trEhtqjIiDvFPF]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         }
                     ]
                 },
@@ -148,24 +141,18 @@
                 "TYzxQVbjCM2iyLVl": {
                     "id": "TYzxQVbjCM2iyLVl",
                     "name": "Wstrząśnienie mózgu",
-                    "script": "let roll = (await new Roll(\"1d10\").roll()).total;\nawait args.actor.addCondition(\"stunned\", roll);",
                     "scriptData": [
                         {
                             "id": "TYzxQVbjCM2iyLVl",
                             "name": "Wstrząśnienie mózgu",
-                            "script": "let roll = await new Roll(\"1d10\").roll();\nroll.toMessage({flavor : this.effect.name, speaker : {alias : this.actor.prototypeToken.name}})\nthis.actor.addCondition(\"stunned\", roll.total)"
+                            "script": "[Script.Oz7pWF9mEc1pQypj]"
                         },
                         {
                             "name": "Wstrząśnienie mózgu",
                             "id": "TYzxQVbjCM2iyLVl",
-                            "script": "if(this.actor.hasCondition(\"fatigued\") && args.opposedTest.result.hitloc.value == \"head\" && (args.opposedTest.attackerTest.result.critical || args.actor.status.wounds.value - args.totalWoundLoss < 0))\n{\n    let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), { fields: { difficulty: \"average\" }, appendTitle : ` - ${this.effect.name}`})\n    await test.roll();\n    if (test.failed)\n    {\n        this.actor.addCondition(\"unconscious\")\n    }\n}"
+                            "script": "[Script.QPVVDPcJ4Xi5FmQl]"
                         }
                     ]
-                },
-                "zirzZTdRx8xz8RI6": {
-                    "id": "zirzZTdRx8xz8RI6",
-                    "name": "Wstrząśnienie mózgu - Zmęczenie",
-                    "script": "if (args.opposedTest.result.hitloc.value == \"head\" && (args.opposedTest.attackerTest.result.critical || args.actor.status.wounds.value - args.totalWoundLoss < 0)) {\n  if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), { absolute: { difficulty: \"average\" } }).then(async test => {\n      await test.roll();\n      if (test.result.outcome == \"failure\") {\n          await args.actor.addCondition(\"unconscious\");\n      }\n    });\n  }\n}"
                 }
             },
             "wounds": "4",
@@ -180,24 +167,23 @@
                 "vGXj3JcQSik2Fof6": {
                     "id": "vGXj3JcQSik2Fof6",
                     "name": "Zwichnięte kolano",
-                    "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"stunned\");\n        }\n     });\n}",
                     "scriptData": [
                         {
                             "id": "vGXj3JcQSik2Fof6",
                             "name": "Zwichnięte kolano",
-                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {fields: {difficulty : \"hard\"}, appendTitle : \" - \" + this.effect.name})\nawait test.roll();\nif (test.failed)\n{\n\tawait this.actor.addCondition(\"prone\")\n\tawait this.actor.addCondition(\"stunned\")\n}"
+                            "script": "[Script.EQ5dtGW5kQhtAb87]"
                         },
                         {
                             "id": "vGXj3JcQSik2Fof6",
                             "name": "Zwichnięte kolano",
-                            "script": "args.fields.modifier -= 10;\n",
-                            "activationScript": "return [\"ag\", \"ws\", \"bs\"].includes(args.characteristic) || args.skill?.name == game.i18n.localize(\"NAME.Climb\");",
-                            "hideScript": "return [\"t\", \"int\", \"wp\", \"fel\"].includes(args.characteristic)"
+                            "script": "[Script.EYny6z5oTOhxGDfb]",
+                            "activationScript": "[Script.YFSgWRXel0bWE3EE]",
+                            "hideScript": "[Script.QaGNsqKm2Nf0zGVm]"
                         },
                         {
                             "id": "vGXj3JcQSik2Fof6",
                             "name": "Zwichnięte kolano",
-                            "script": "args.actor.details.move.value /= 2"
+                            "script": "[Script.9MDi3ok9gPwtbALf]"
                         }
                     ]
                 }
@@ -214,25 +200,23 @@
                 "348txVEUS8rth7YB": {
                     "id": "348txVEUS8rth7YB",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
                     "scriptData": [
                         {
                             "id": "348txVEUS8rth7YB",
                             "name": "Oszołomienie",
-                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
-                            "activationScript": "return true"
+                            "script": "[Script.Q1trEhtqjIiDvFPF]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         }
                     ]
                 },
                 "7j3RINGp5K4ejLTp": {
                     "id": "7j3RINGp5K4ejLTp",
                     "name": "Oszpecający cios",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.weczkAMPlTjX7lqU\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})\nfromUuid(\"Compendium.wfrp4e-core.items.SpPRZZRHxly7uo2G\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})",
                     "scriptData": [
                         {
                             "id": "7j3RINGp5K4ejLTp",
                             "name": "Oszpecający cios",
-                            "script": "let eye = await fromUuid(\"Compendium.wfrp4e-core.items.weczkAMPlTjX7lqU\")\nlet nose = await fromUuid(\"Compendium.wfrp4e-core.items.SpPRZZRHxly7uo2G\")\nthis.actor.createEmbeddedDocuments(\"Item\", [eye, nose]);"
+                            "script": "[Script.vZ5HCrhY8e4R1TrG]"
                         }
                     ]
                 },
@@ -248,9 +232,7 @@
                 },
                 "waGy0xtIvPj1cT0D": {
                     "id": "waGy0xtIvPj1cT0D",
-                    "name": "Oślepienie",
-                    "secondaryScript": "if (args.item && args.item.attackType=='melee') args.prefillModifiers.modifier += 10 * this.effect.conditionValue",
-                    "description": "Testy związane ze wzrokiem"
+                    "name": "Oślepienie"
                 }
             },
             "wounds": "5",
@@ -265,19 +247,18 @@
                 "Ce9QAvROf94V16sJ": {
                     "id": "Ce9QAvROf94V16sJ",
                     "name": "Wywichnięty bark",
-                    "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n            await args.actor.addCondition(\"stunned\");\n        }\n     });\n}",
                     "scriptData": [
                         {
                             "id": "Ce9QAvROf94V16sJ",
                             "name": "Wywichnięty bark",
-                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {fields: {difficulty : \"hard\"}, appendTitle : \" - \" + this.effect.name})\nawait test.roll();\nif (test.failed)\n{\n\tawait this.actor.addCondition(\"prone\")\n\tawait this.actor.addCondition(\"stunned\")\n}\n          \nlet location = this.item.system.location.key;\n\nif (location)\n{\n    let dropped = this.item.system.weaponsAtLocation;\n\n    if (dropped.length)\n    {\n        this.script.scriptNotification(`upuszczono: ${dropped.map(i => i.name).join(\", \")}!`)\n        for(let weapon of dropped)\n        {\n            await weapon.system.toggleEquip();\n        }\n    }\n}"
+                            "script": "[Script.vvdo1NxjmGVkmFCT]"
                         },
                         {
                             "id": "Ce9QAvROf94V16sJ",
                             "name": "Wywichnięty bark",
-                            "script": "args.abort = true;\nthis.script.scriptNotification(`Nie można używać: ${this.item.system.location.value}!`, \"error\")",
-                            "activationScript": "return this.item.system.usesLocation(args.weapon)",
-                            "hideScript": "return !args.weapon"
+                            "script": "[Script.sKO8TcLIkCTnFvXu]",
+                            "activationScript": "[Script.R5dOZWFxE2n6tooX]",
+                            "hideScript": "[Script.L2cdQppcPwxz24hN]"
                         }
                     ]
                 }
@@ -294,19 +275,18 @@
                 "9dEo6xx3LZwu32td": {
                     "id": "9dEo6xx3LZwu32td",
                     "name": "Skręcona kostka",
-                    "script": "if (args.type == \"skill\" && args.item.characteristic.key == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}\nif (args.type == \"characteristic\" && args.item == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}",
                     "scriptData": [
                         {
                             "id": "9dEo6xx3LZwu32td",
                             "name": "Skręcona kostka",
-                            "script": "args.fields.modifier -= 10",
-                            "activationScript": "return args.characteristic == \"ag\"",
-                            "hideScript": "return args.characteristic != \"ag\""
+                            "script": "[Script.xvGxwv7X0Vq3vNqb]",
+                            "activationScript": "[Script.JFgXyb6bKjZJLmF8]",
+                            "hideScript": "[Script.oW1gtYVT5nrxDjM7]"
                         },
                         {
                             "id": "9dEo6xx3LZwu32td",
                             "name": "Skręcona kostka",
-                            "script": "let roll = await new Roll(\"1d10\").roll()\n\nroll.toMessage(this.script.getChatData({flavor : `${this.effect.name} (Duration)`}));\n\nthis.effect.updateSource({\"duration.rounds\" : roll.total})"
+                            "script": "[Script.A6DcKPzAGntzSCil]"
                         }
                     ]
                 }
@@ -323,12 +303,11 @@
                 "ixCa0FfjTQFA9Th6": {
                     "id": "ixCa0FfjTQFA9Th6",
                     "name": "Zerwane ścięgno",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.3S4OYOZLauXctmev\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n});\n\nif (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n     });\n}",
                     "scriptData": [
                         {
                             "id": "ixCa0FfjTQFA9Th6",
                             "name": "Zerwane ścięgno",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.3S4OYOZLauXctmev\")\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect: this.effect.id})\n\n\nlet test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {fields: {difficulty: \"hard\"}, appendTitle : ` - ${this.effect.name}`})\nawait test.roll();\nif (test.failed)\n{\n\tthis.actor.addCondition(\"unconscious\")\n}"
+                            "script": "[Script.P29tT1eMMdAw3CPF]"
                         }
                     ]
                 }
@@ -345,13 +324,12 @@
                 "1hf8KQbl7iZKhhzD": {
                     "id": "1hf8KQbl7iZKhhzD",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
                     "scriptData": [
                         {
                             "id": "1hf8KQbl7iZKhhzD",
                             "name": "Oszołomienie",
-                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
-                            "activationScript": "return true"
+                            "script": "[Script.Q1trEhtqjIiDvFPF]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         }
                     ]
                 },
@@ -368,12 +346,11 @@
                 "zyFwXMjRg8797kTY": {
                     "id": "zyFwXMjRg8797kTY",
                     "name": "Rozszarpany biceps",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.qn4ZpvTQIX4rcJDl\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
                     "scriptData": [
                         {
                             "id": "zyFwXMjRg8797kTY",
                             "name": "Rozszarpany biceps",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.qn4ZpvTQIX4rcJDl\");\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect: this.effect.id})\n"
+                            "script": "[Script.2miWWeRrEpq1beG4]"
                         }
                     ]
                 }
@@ -400,39 +377,35 @@
                 "r5t7w5lcG1iddbUt": {
                     "id": "r5t7w5lcG1iddbUt",
                     "name": "Przecięte ścięgna",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.k00PimCWkff11IA0\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
                     "scriptData": [
                         {
                             "id": "r5t7w5lcG1iddbUt",
                             "name": "Przecięte ścięgna",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.k00PimCWkff11IA0\")\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key\nthis.actor.createEmbeddedDocuments(\"Item\", [data])"
+                            "script": "[Script.8ShLVT0bK1eQpinj]"
                         }
                     ]
                 },
                 "URt2bkWmWumsEP1k": {
                     "id": "URt2bkWmWumsEP1k",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
                     "scriptData": [
                         {
                             "id": "URt2bkWmWumsEP1k",
                             "name": "Oszołomienie",
-                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
-                            "activationScript": "return true"
+                            "script": "[Script.Q1trEhtqjIiDvFPF]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         }
                     ]
                 },
                 "wVKOGkIJf8YblbFA": {
                     "id": "wVKOGkIJf8YblbFA",
                     "name": "Powalenie",
-                    "script": "args.prefillModifiers.modifier -= 20",
-                    "secondaryScript": "if (args.type == 'weapon' && args.item.attackType=='melee') args.prefillModifiers.modifier += 20",
                     "scriptData": [
                         {
                             "id": "wVKOGkIJf8YblbFA",
                             "name": "Powalenie",
-                            "script": "args.prefillModifiers.modifier -= 20",
-                            "activationScript": "return true"
+                            "script": "[Script.SO4Aa9argKbuO9rQ]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         }
                     ]
                 }
@@ -459,12 +432,11 @@
                 "nlxBZY9R2qxa7bkC": {
                     "id": "nlxBZY9R2qxa7bkC",
                     "name": "Paskudnie przecięty paluch",
-                    "script": "if (this.actor.isOwner) {\n    this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n      await test.roll();\n      if (test.result.outcome == \"failure\") {\n          let injury = await fromUuid(\"Compendium.wfrp4e-core.items.ZhMADOqoo0y8Q9bx\");\n          this.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n          this.actor.deleteEmbeddedEntity(\"ActiveEffect\", this.effect._id);\n      }\n    });\n}",
                     "scriptData": [
                         {
                             "id": "nlxBZY9R2qxa7bkC",
                             "name": "Paskudnie przecięty paluch",
-                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {appendTitle : \" - \" + this.effect.name})\nawait test.roll();\nif (!test.succeeded)\n{\n    let item = await fromUuid(\"Compendium.wfrp4e-core.items.ZhMADOqoo0y8Q9bx\")\n    let data = item.toObject();\n    if (this.item.system.location.key == \"rLeg\")\n    {\n        data.system.location.value = \"Prawy Paluch\"\n\tdata.system.location.key = \"rToe\";\n    }\n    else if (this.item.system.location.key == \"lLeg\")\n    {\n        data.system.location.value = \"Lewy Paluch\"\n\tdata.system.location.key = \"lToe\";\n    }\n    this.actor.createEmbeddedDocuments(\"Item\", [data])\n}\nthis.effect.delete();"
+                            "script": "[Script.1kB2su7hLRYDhZ2H]"
                         }
                     ]
                 }
@@ -478,25 +450,19 @@
             "description": "<p>Postać otrzymuje 3 poziomy Stanu @Condition[Krwawienie], a cios odrywa kawał mięśni z jej uda. Musi także zdać <strong>Wymagający (+0) Test Odporności</strong>, w przeciwnym wypadku otrzyma Stan @Condition[Powalenie]. Dopóki postać nie otrzyma pomocy @UUID[Compendium.wfrp4e-core.journals.JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#pomoc-medyczna]{Chirurgicznej} i udo nie zostanie zszyte, każda Rana otrzymana w tę nogę będzie skutkować zwiększeniem @Condition[Krwawienie]{Krwawienia} o 1 poziom.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.AUZLQkyu9kiqmzsq",
             "effects": {
-                "53D0C2BXQCCAMXSu": {
-                    "id": "53D0C2BXQCCAMXSu",
-                    "name": "Poszarpane udo",
-                    "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n    });\n}"
-                },
                 "jYEOUXmmtfU0bnjS": {
                     "id": "jYEOUXmmtfU0bnjS",
                     "name": "Poszarpane udo",
-                    "script": "if (args.opposedTest.result.hitloc.value == \"LEG_LOCATION_HERE\") { // rLeg or lLeg\n    args.actor.addCondition(\"bleeding\", 1);\n}",
                     "scriptData": [
                         {
                             "id": "jYEOUXmmtfU0bnjS",
                             "name": "Poszarpane udo",
-                            "script": "if (args.opposedTest.result.hitloc.value == this.item.system.location.key && args.totalWoundLoss > 0)\n{\n    args.actor.addCondition(\"bleeding\", 1);\n    this.script.scriptNotification(\"Wywołano Krwawienie\")\n}"
+                            "script": "[Script.zK38Rl5t9zbFi4Se]"
                         },
                         {
                             "id": "jYEOUXmmtfU0bnjS",
                             "name": "Poszarpane udo",
-                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {appendTitle : ` - ${this.effect.name}`});\nawait test.roll();\nif (test.failed)\n{\n    this.actor.addCondition(\"prone\")\n}\n"
+                            "script": "[Script.tDrs0aNIYmZPsOoS]"
                         }
                     ]
                 },
@@ -523,25 +489,23 @@
                 "GHwgHe9nIfj3RsTG": {
                     "id": "GHwgHe9nIfj3RsTG",
                     "name": "Połamane żebra",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.QluSTTTq3viHJJUh\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
                     "scriptData": [
                         {
                             "id": "GHwgHe9nIfj3RsTG",
                             "name": "Połamane żebra",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.QluSTTTq3viHJJUh\")\nlet data = item.toObject();\ndata.system.location.value = \"Żebra\";\nawait this.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect: this.effect.id})"
+                            "script": "[Script.dM8FbRH2V8CpOkXw]"
                         }
                     ]
                 },
                 "vc2JuBUI00H1WZwf": {
                     "id": "vc2JuBUI00H1WZwf",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
                     "scriptData": [
                         {
                             "id": "vc2JuBUI00H1WZwf",
                             "name": "Oszołomienie",
-                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
-                            "activationScript": "return true"
+                            "script": "[Script.Q1trEhtqjIiDvFPF]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         }
                     ]
                 }
@@ -558,12 +522,11 @@
                 "Xk9jhNPT42L2nloL": {
                     "id": "Xk9jhNPT42L2nloL",
                     "name": "Skręcenie",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.GlShFJF2TpsNh1FX\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
                     "scriptData": [
                         {
                             "id": "Xk9jhNPT42L2nloL",
                             "name": "Skręcenie",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.GlShFJF2TpsNh1FX\")\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key\ndata.system.location.value = data.system.location.value.replace(\"Noga\", \"Kostka\")\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect: this.effect.id})\n"
+                            "script": "[Script.DyZ1jH88EAp1ueOK]"
                         }
                     ]
                 }
@@ -580,25 +543,23 @@
                 "g9ZNTiFKGxZBQkvT": {
                     "id": "g9ZNTiFKGxZBQkvT",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
                     "scriptData": [
                         {
                             "id": "g9ZNTiFKGxZBQkvT",
                             "name": "Oszołomienie",
-                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
-                            "activationScript": "return true"
+                            "script": "[Script.Q1trEhtqjIiDvFPF]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         }
                     ]
                 },
                 "OipdUoeetMzgA4m9": {
                     "id": "OipdUoeetMzgA4m9",
                     "name": "Złamana szczęka",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.nbhn2wX35b7Jrcbg\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
                     "scriptData": [
                         {
                             "id": "OipdUoeetMzgA4m9",
                             "name": "Złamana szczęka",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.nbhn2wX35b7Jrcbg\")\nlet data = item.toObject();\ndata.system.location.value = \"Szczęka\"\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect: this.effect.id})"
+                            "script": "[Script.CoImIH9OCMx9DfQZ]"
                         }
                     ]
                 }
@@ -615,12 +576,11 @@
                 "v0B4racbne2RYIqD": {
                     "id": "v0B4racbne2RYIqD",
                     "name": "Dekapitacja",
-                    "script": "await this.actor.addCondition(\"dead\");\nawait this.actor.setWounds(0);\nChatMessage.create({content: await game.wfrp4e.tables.formatChatRoll(\"scatter\")});",
                     "scriptData": [
                         {
                             "id": "v0B4racbne2RYIqD",
                             "name": "Dekapitacja",
-                            "script": "this.actor.addCondition(\"dead\")\nthis.actor.setWounds(0);\nthis.script.scriptMessage(await game.wfrp4e.tables.formatChatRoll(\"scatter\"))"
+                            "script": "[Script.AyNb5sj6FD2Z3Q5T]"
                         }
                     ]
                 }
@@ -657,14 +617,12 @@
                 "2ngJlZ488J7L1sD7": {
                     "id": "2ngJlZ488J7L1sD7",
                     "name": "Powalenie",
-                    "script": "args.prefillModifiers.modifier -= 20",
-                    "secondaryScript": "if (args.type == 'weapon' && args.item.attackType=='melee') args.prefillModifiers.modifier += 20",
                     "scriptData": [
                         {
                             "id": "2ngJlZ488J7L1sD7",
                             "name": "Powalenie",
-                            "script": "args.prefillModifiers.modifier -= 20",
-                            "activationScript": "return true"
+                            "script": "[Script.SO4Aa9argKbuO9rQ]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         }
                     ]
                 },
@@ -681,25 +639,23 @@
                 "rIF8c6C0BNeSjDv2": {
                     "id": "rIF8c6C0BNeSjDv2",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
                     "scriptData": [
                         {
                             "id": "rIF8c6C0BNeSjDv2",
                             "name": "Oszołomienie",
-                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
-                            "activationScript": "return true"
+                            "script": "[Script.Q1trEhtqjIiDvFPF]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         }
                     ]
                 },
                 "yZAbuVNb4ExBntt9": {
                     "id": "yZAbuVNb4ExBntt9",
                     "name": "Odcięta stopa",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.gz2xy41OSVZ8YBgI\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
                     "scriptData": [
                         {
                             "id": "yZAbuVNb4ExBntt9",
                             "name": "Odcięta stopa",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.gz2xy41OSVZ8YBgI\");\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key\nthis.actor.createEmbeddedDocuments(\"Item\", [data])\n"
+                            "script": "[Script.4HN98hMdQJxM35pA]"
                         }
                     ]
                 }
@@ -715,8 +671,7 @@
             "effects": {
                 "7a3L530CIhnX5cTl": {
                     "id": "7a3L530CIhnX5cTl",
-                    "name": "Ogłuszenie",
-                    "description": "Testy związane ze słuchem"
+                    "name": "Ogłuszenie"
                 }
             },
             "wounds": "1",
@@ -731,12 +686,11 @@
                 "AiDPNet52D6Mwycb": {
                     "id": "AiDPNet52D6Mwycb",
                     "name": "Naderwane mięśnie pleców",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.eWPN3CV2Eddwz8aM\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
                     "scriptData": [
                         {
                             "id": "AiDPNet52D6Mwycb",
                             "name": "Naderwane mięśnie pleców",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.eWPN3CV2Eddwz8aM\")\nlet data = item.toObject();\ndata.system.location.value = \"Back\"\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect: this.effect.id})"
+                            "script": "[Script.23vWiHUjxtRQ3Efz]"
                         }
                     ]
                 }
@@ -753,12 +707,11 @@
                 "JyeUMIMAfyK0ZjUn": {
                     "id": "JyeUMIMAfyK0ZjUn",
                     "name": "Strzaskana miednica",
-                    "script": "await this.actor.addCondition(\"dead\")",
                     "scriptData": [
                         {
                             "id": "JyeUMIMAfyK0ZjUn",
                             "name": "Strzaskana miednica",
-                            "script": "this.actor.addCondition(\"dead\")"
+                            "script": "[Script.WwxXgsNxlccmqTze]"
                         }
                     ]
                 }
@@ -785,24 +738,23 @@
                 "zYfCX8Eq2VkRFhNI": {
                     "id": "zYfCX8Eq2VkRFhNI",
                     "name": "Złamany nos",
-                    "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"stunned\")\n        }\n     });\n}",
                     "scriptData": [
                         {
                             "id": "zYfCX8Eq2VkRFhNI",
                             "name": "Złamany nos",
-                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"))\nawait test.roll();\nif (!test.succeeded)\n{\n    args.actor.addCondition(\"stunned\")\n}"
+                            "script": "[Script.KTBVDHUndI3qDOXM]"
                         },
                         {
                             "id": "zYfCX8Eq2VkRFhNI",
                             "name": "Złamany nos",
-                            "script": "args.fields.slBonus++;",
-                            "hideScript": "return args.characteristic != \"fel\""
+                            "script": "[Script.wAETU6aTRr9d4oCU]",
+                            "hideScript": "[Script.6Fe8M5MdklKS2olx]"
                         },
                         {
                             "id": "zYfCX8Eq2VkRFhNI",
                             "name": "Złamany nos",
-                            "script": "args.fields.slBonus--;",
-                            "hideScript": "return args.characteristic != \"fel\""
+                            "script": "[Script.mgLGN1XPzPE4dReN]",
+                            "hideScript": "[Script.6Fe8M5MdklKS2olx]"
                         }
                     ]
                 }
@@ -819,30 +771,28 @@
                 "3rDSK76g1cKpmn40": {
                     "id": "3rDSK76g1cKpmn40",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
                     "scriptData": [
                         {
                             "id": "3rDSK76g1cKpmn40",
                             "name": "Oszołomienie",
-                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
-                            "activationScript": "return true"
+                            "script": "[Script.Q1trEhtqjIiDvFPF]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         }
                     ]
                 },
                 "6KtIpUxSWrqIewki": {
                     "id": "6KtIpUxSWrqIewki",
                     "name": "Zmasakrowana dłoń",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.SYjWiKDzMS6CtROJ\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
                     "scriptData": [
                         {
                             "id": "6KtIpUxSWrqIewki",
                             "name": "Zmasakrowana dłoń",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.SYjWiKDzMS6CtROJ\")\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key\nif (this.item.system.location.key == \"rArm\")\n{\n\tdata.system.location.value = \"Prawa Ręka\"\n\tdata.system.location.key = \"rHand\"\n}\nelse if (this.item.system.location.key == \"lArm\")\n{\n\tdata.system.location.value = \"Lewa Ręka\"\n\tdata.system.location.key = \"lHand\"\n}\nthis.actor.createEmbeddedDocuments(\"Item\", [data])"
+                            "script": "[Script.ebDQH0MdGAG02CHl]"
                         },
                         {
                             "id": "6KtIpUxSWrqIewki",
                             "name": "Zmasakrowana dłoń",
-                            "script": "this.effect.manualScripts[0].execute({actor : this.actor});"
+                            "script": "[Script.3aEzK0DehSHtVykd]"
                         }
                     ]
                 },
@@ -868,20 +818,17 @@
             "effects": {
                 "4G9KjSyQNM9UFOlS": {
                     "id": "4G9KjSyQNM9UFOlS",
-                    "name": "Oślepienie",
-                    "secondaryScript": "if (args.item && args.item.attackType=='melee') args.prefillModifiers.modifier += 10 * this.effect.conditionValue",
-                    "description": "Testy związane ze wzrokiem"
+                    "name": "Oślepienie"
                 },
                 "jatRx58WzHQUA31m": {
                     "id": "jatRx58WzHQUA31m",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
                     "scriptData": [
                         {
                             "id": "jatRx58WzHQUA31m",
                             "name": "Oszołomienie",
-                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
-                            "activationScript": "return true"
+                            "script": "[Script.Q1trEhtqjIiDvFPF]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         }
                     ]
                 },
@@ -898,12 +845,11 @@
                 "SYIKc7QymcGfIwN9": {
                     "id": "SYIKc7QymcGfIwN9",
                     "name": "Wybite oko",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.weczkAMPlTjX7lqU\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
                     "scriptData": [
                         {
                             "id": "SYIKc7QymcGfIwN9",
                             "name": "Wybite oko",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.weczkAMPlTjX7lqU\")\nthis.actor.createEmbeddedDocuments(\"Item\", [item])"
+                            "script": "[Script.00ZCnahnTGvzG9KA]"
                         }
                     ]
                 }
@@ -929,9 +875,7 @@
                 },
                 "sTAtmClXjBUnD5VO": {
                     "id": "sTAtmClXjBUnD5VO",
-                    "name": "Oślepienie",
-                    "secondaryScript": "if (args.item && args.item.attackType=='melee') args.prefillModifiers.modifier += 10 * this.effect.conditionValue",
-                    "description": "Testy związane ze wzrokiem"
+                    "name": "Oślepienie"
                 }
             },
             "wounds": "2",
@@ -956,12 +900,11 @@
                 "rKSl42ZfhRErzUTS": {
                     "id": "rKSl42ZfhRErzUTS",
                     "name": "Ziejąca rana korpusu",
-                    "script": "if (args.opposedTest.result.hitloc.value == \"body\") {\n    args.actor.addCondition(\"bleeding\", 1);\n}",
                     "scriptData": [
                         {
                             "id": "rKSl42ZfhRErzUTS",
                             "name": "Ziejąca rana korpusu",
-                            "script": "if (args.opposedTest.result.hitloc.value == \"body\" && args.totalWoundLoss > 0))\n{\n    args.actor.addCondition(\"bleeding\", 1);\n    this.script.scriptNotification(\"Wywołano Krwawienie\")\n}\n"
+                            "script": "[Script.bLkt8VpTTPoTxW0W]"
                         }
                     ]
                 }
@@ -978,13 +921,12 @@
                 "k8a0UhmO2dc0eg89": {
                     "id": "k8a0UhmO2dc0eg89",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
                     "scriptData": [
                         {
                             "name": "Oszołomienie",
                             "id": "k8a0UhmO2dc0eg89",
-                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
-                            "activationScript": "return true"
+                            "script": "[Script.Q1trEhtqjIiDvFPF]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         }
                     ]
                 },
@@ -1001,12 +943,11 @@
                 "oScP7BQrypeVVVbf": {
                     "id": "oScP7BQrypeVVVbf",
                     "name": "Bolesne cięcie",
-                    "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n    });\n}",
                     "scriptData": [
                         {
                             "id": "oScP7BQrypeVVVbf",
                             "name": "Bolesne cięcie",
-                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {appendTitle : ` - ${this.effect.name}`, fields: {difficulty: \"hard\"}})\nawait test.roll();\nif (test.failed)\n{\n    this.actor.addCondition(\"unconscious\")\n}\n"
+                            "script": "[Script.JEbs0WlqhKNDOo5A]"
                         }
                     ]
                 }
@@ -1023,13 +964,12 @@
                 "bpo2NXwpg23AKY9y": {
                     "id": "bpo2NXwpg23AKY9y",
                     "name": "Poważna rana ucha",
-                    "description": "Testy związane ze słuchem",
                     "scriptData": [
                         {
                             "id": "bpo2NXwpg23AKY9y",
                             "name": "Poważna rana ucha",
-                            "script": "args.fields.modifier += -20;\n        ",
-                            "hideScript": "return args.characteristic != \"i\""
+                            "script": "[Script.Ofn6vDbP3fZ4UlSc]",
+                            "hideScript": "[Script.tdICiJ26rJrDbxT6]"
                         }
                     ]
                 }
@@ -1056,12 +996,11 @@
                 "rG3wXUaHLNu7IcYO": {
                     "id": "rG3wXUaHLNu7IcYO",
                     "name": "Odcięty palec",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.SYjWiKDzMS6CtROJ\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
                     "scriptData": [
                         {
                             "id": "rG3wXUaHLNu7IcYO",
                             "name": "Odcięty palec",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.SYjWiKDzMS6CtROJ\")\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key\nif (this.item.system.location.key == \"rArm\")\n{\n\tdata.system.location.value = \"Prawa Ręka\"\n\tdata.system.location.key = \"rHand\"\n}\nelse if (this.item.system.location.key == \"lArm\")\n{\n\tdata.system.location.value = \"Lewa Ręka\n\tdata.system.location.key = \"lHand\"\n}\nthis.actor.createEmbeddedDocuments(\"Item\", [data])"
+                            "script": "[Script.ebDQH0MdGAG02CHl]"
                         }
                     ]
                 }
@@ -1078,39 +1017,35 @@
                 "lanapxEmE0mai3mV": {
                     "id": "lanapxEmE0mai3mV",
                     "name": "Rozerwana łydka",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.3S4OYOZLauXctmev\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})\n\nfromUuid(\"Compendium.wfrp4e-core.items.7mCcI3q7hgWcmbBU\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
                     "scriptData": [
                         {
                             "id": "lanapxEmE0mai3mV",
                             "name": "Rozerwana łydka",
-                            "script": "let item1 = await fromUuid(\"Compendium.wfrp4e-core.items.3S4OYOZLauXctmev\")\nlet item2 = await fromUuid(\"Compendium.wfrp4e-core.items.7mCcI3q7hgWcmbBU\")\n\nlet data1 = item1.toObject();\ndata1.system.location.value = this.item.system.location.key\n\nlet data2 = item2.toObject();\ndata2.system.location.key = this.item.system.location.key\n\nthis.actor.createEmbeddedDocuments(\"Item\", [data1, data2], {fromEffect: this.effect.id})\n"
+                            "script": "[Script.0e7OkamNAaAk4Oit]"
                         }
                     ]
                 },
                 "RW5eRZ7NxikYNagM": {
                     "id": "RW5eRZ7NxikYNagM",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
                     "scriptData": [
                         {
                             "id": "RW5eRZ7NxikYNagM",
                             "name": "Oszołomienie",
-                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
-                            "activationScript": "return true"
+                            "script": "[Script.Q1trEhtqjIiDvFPF]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         }
                     ]
                 },
                 "YS3kViPKuIu9Aaif": {
                     "id": "YS3kViPKuIu9Aaif",
                     "name": "Powalenie",
-                    "script": "args.prefillModifiers.modifier -= 20",
-                    "secondaryScript": "if (args.type == 'weapon' && args.item.attackType=='melee') args.prefillModifiers.modifier += 20",
                     "scriptData": [
                         {
                             "id": "YS3kViPKuIu9Aaif",
                             "name": "Powalenie",
-                            "script": "args.prefillModifiers.modifier -= 20",
-                            "activationScript": "return true"
+                            "script": "[Script.SO4Aa9argKbuO9rQ]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         }
                     ]
                 }
@@ -1131,7 +1066,7 @@
                         {
                             "name": "Zdrętwiałe ramię",
                             "id": "YeW4MtTUABKojwJk",
-                            "script": "let location = this.item.system.location.key;\n\nif (location)\n{\n    let dropped = this.item.system.weaponsAtLocation;\n\n    if (dropped.length)\n    {\n        this.script.scriptNotification(`Upuszczono: ${dropped.map(i => i.name).join(\", \")}!`)\n        for(let weapon of dropped)\n        {\n            await weapon.system.toggleEquip();\n        }\n    }\n}"
+                            "script": "[Script.WiYtNU2Y5BJfIpeM]"
                         }
                     ],
                     "id": "YeW4MtTUABKojwJk",
@@ -1147,9 +1082,7 @@
             "effects": {
                 "749ILWkBSZeetB7y": {
                     "id": "749ILWkBSZeetB7y",
-                    "name": "Oślepienie",
-                    "secondaryScript": "if (args.item && args.item.attackType=='melee') args.prefillModifiers.modifier += 10 * this.effect.conditionValue",
-                    "description": "Testy związane ze wzrokiem"
+                    "name": "Oślepienie"
                 },
                 "dJsRgSNjJtohBYPc": {
                     "id": "dJsRgSNjJtohBYPc",
@@ -1183,8 +1116,7 @@
                 },
                 "SbOvAmqaK31JREjI": {
                     "id": "SbOvAmqaK31JREjI",
-                    "name": "Ogłuszenie",
-                    "description": "Testy związane ze słuchem"
+                    "name": "Ogłuszenie"
                 }
             },
             "wounds": "2",
@@ -1199,12 +1131,11 @@
                 "kub1YScTxM1VNLHK": {
                     "id": "kub1YScTxM1VNLHK",
                     "name": "Paskudne cięcie",
-                    "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}",
                     "scriptData": [
                         {
                             "id": "kub1YScTxM1VNLHK",
                             "name": "Paskudne cięcie",
-                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {appendTitle: ` - ${this.effect.name}`})\nawait test.roll();\nif (!test.succeeded)\n{\n    this.actor.addCondition(\"prone\")\n}"
+                            "script": "[Script.pq1YQffxtOcqCRTn]"
                         }
                     ]
                 },
@@ -1231,12 +1162,22 @@
                 "tyXuApNnqAV4JcJ5": {
                     "id": "tyXuApNnqAV4JcJ5",
                     "name": "Zgruchotana dłoń",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.zyocWSzEZEC826NS\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})\n\nif (this.actor.isOwner) {\n args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n          await test.roll();\n          if (test.result.outcome == \"failure\") { \n               await args.actor.addCondition(\"prone\");\n               await args.actor.addCondition(\"stunned\");\n          }\n     });\n}",
                     "scriptData": [
                         {
                             "id": "tyXuApNnqAV4JcJ5",
                             "name": "Zgruchotana dłoń",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.zyocWSzEZEC826NS\")\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key\nthis.actor.createEmbeddedDocuments(\"Item\", [data])\n\n\nlet test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {fields: {difficulty: \"hard\"}, appendTitle : ` - ${this.effect.name}`})\nawait test.roll();\nif (test.failed)\n{\n    await this.actor.addCondition(\"prone\")\n    await this.actor.addCondition(\"stunned\")\n}"
+                            "script": "[Script.b5prg1FLjCAvBjLy]"
+                        }
+                    ]
+                },
+                "aFtt7OmtKBvKLHnL": {
+                    "id": "aFtt7OmtKBvKLHnL",
+                    "name": "Krwawienie",
+                    "scriptData": [
+                        {
+                            "id": "aFtt7OmtKBvKLHnL",
+                            "name": "Krwawienie",
+                            "script": "[Script.zR4WAjzXHTZuiu5G]"
                         }
                     ]
                 }
@@ -1253,12 +1194,11 @@
                 "sw8YrBAP6gfhSTSH": {
                     "id": "sw8YrBAP6gfhSTSH",
                     "name": "Zmiażdżony łokieć",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.rlDZZTj5PXjuRXa2\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
                     "scriptData": [
                         {
                             "id": "sw8YrBAP6gfhSTSH",
                             "name": "Zmiażdżony łokieć",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.rlDZZTj5PXjuRXa2\")\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key;\nawait this.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect: this.effect.id})\n\nlet location = this.item.system.location.key;\n\nif (location)\n{\n    let dropped = this.item.system.weaponsAtLocation;\n\n    if (dropped.length)\n    {\n        this.script.scriptNotification(`Upuszczono ${dropped.map(i => i.name).join(\", \")}!`)\n        for(let weapon of dropped)\n        {\n            await weapon.system.toggleEquip();\n        }\n    }\n}"
+                            "script": "[Script.T5fiTzhXEQAv9Drf]"
                         }
                     ]
                 }
@@ -1285,12 +1225,11 @@
                 "bvNWTQ0W26esdMso": {
                     "id": "bvNWTQ0W26esdMso",
                     "name": "Krwotok wewnętrzny",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.M8XyRs9DN12XsFTQ\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
                     "scriptData": [
                         {
                             "id": "bvNWTQ0W26esdMso",
                             "name": "Krwotok wewnętrzny",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.M8XyRs9DN12XsFTQ\")\nthis.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect: this.effect.id})"
+                            "script": "[Script.fEyKQqCjDwml3DXO]"
                         }
                     ]
                 }
@@ -1307,12 +1246,11 @@
                 "1sDNirNcv4XZnubO": {
                     "id": "1sDNirNcv4XZnubO",
                     "name": "Ziejąca rana ramienia",
-                    "script": "if (args.opposedTest.result.hitloc.value == \"ARM_LOCATION_HERE\") {// lArm or rArm\n    args.actor.addCondition(\"bleeding\", 1);\n}",
                     "scriptData": [
                         {
                             "id": "1sDNirNcv4XZnubO",
                             "name": "Ziejąca rana ramienia",
-                            "script": "if (args.opposedTest.result.hitloc.value == this.item.system.location.key)\n{\n    args.actor.addCondition(\"bleeding\", 1);\n    this.script.scriptNotification(\"Wywołano Krwawienie\")\n}"
+                            "script": "[Script.W9nyUNQStMr1pUHJ]"
                         }
                     ]
                 },
@@ -1339,12 +1277,11 @@
                 "Du7cZodgpEKD8eK8": {
                     "id": "Du7cZodgpEKD8eK8",
                     "name": "Rozpłatanie",
-                    "script": "await this.actor.addCondition(\"dead\")",
                     "scriptData": [
                         {
                             "id": "Du7cZodgpEKD8eK8",
                             "name": "Rozpłatanie",
-                            "script": "this.actor.addCondition(\"dead\")"
+                            "script": "[Script.WwxXgsNxlccmqTze]"
                         }
                     ]
                 }
@@ -1361,12 +1298,11 @@
                 "qfUJIoRqhr1u8ODw": {
                     "id": "qfUJIoRqhr1u8ODw",
                     "name": "Cios w krzyż",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.7rBhIRo96Mydo0Cv\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
                     "scriptData": [
                         {
                             "id": "qfUJIoRqhr1u8ODw",
                             "name": "Cios w krzyż",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.7rBhIRo96Mydo0Cv\")\nlet data = item.toObject();\ndata.system.location.value = \"Plecy\"\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect: this.effect.id})\n"
+                            "script": "[Script.csLKDJKZaUK9vwLT]"
                         }
                     ]
                 }
@@ -1380,26 +1316,20 @@
             "description": "<p>Cios w oko jest na tyle mocny, że postać zaczyna łzawić z bólu. Postać otrzymuje 2 poziomy Stanu @Condition[Oślepienie].</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.KB58O2LWcrzIb6do",
             "effects": {
-                "jIlysiOZ0LFz6cgj": {
-                    "id": "jIlysiOZ0LFz6cgj",
-                    "name": "Oślepienie",
-                    "secondaryScript": "if (args.item && args.item.attackType=='melee') args.prefillModifiers.modifier += 10 * this.effect.conditionValue",
-                    "description": "Testy związane ze wzrokiem"
-                },
                 "8A9kuYE3F24fjDsF": {
                     "scriptData": [
                         {
                             "id": "8A9kuYE3F24fjDsF",
                             "name": "Oślepienie",
-                            "script": "args.fields.modifier -= 10 * this.effect.conditionValue",
-                            "activationScript": "return ['ws', 'bs', 'ag'].includes(args.characteristic)"
+                            "script": "[Script.XPxAKqPpPYE4E6B5]",
+                            "activationScript": "[Script.dkY7WRYjFVh8GB0m]"
                         },
                         {
                             "id": "8A9kuYE3F24fjDsF",
                             "name": "Oślepienie",
-                            "script": "args.fields.modifier += 10 * this.effect.conditionValue",
-                            "activationScript": "return args.item?.attackType == 'melee'",
-                            "hideScript": "return args.item?.attackType != 'melee'"
+                            "script": "[Script.B87v1twc65qyvUWi]",
+                            "activationScript": "[Script.ByhEa1BxQOyrOmqg]",
+                            "hideScript": "[Script.f6WnrJvoNkfoNN9Y]"
                         }
                     ],
                     "id": "8A9kuYE3F24fjDsF",
@@ -1418,12 +1348,11 @@
                 "3hbs7SBwqUyfpvFs": {
                     "id": "3hbs7SBwqUyfpvFs",
                     "name": "Poniżej pasa!",
-                    "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"stunned\", 3);\n        }\n     });\n}",
                     "scriptData": [
                         {
                             "id": "3hbs7SBwqUyfpvFs",
                             "name": "Poniżej pasa!",
-                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {appendTitle : ` - ${this.effect.name}`, fields: {difficulty: \"hard\"}});\nawait test.roll();\nif (test.failed)\n{\n    this.actor.addCondition(\"stunned\", 3)\n}\n"
+                            "script": "[Script.v00nVCRKqqRvY28t]"
                         }
                     ]
                 }
@@ -1440,25 +1369,23 @@
                 "EwflBBAdP3PfmQzC": {
                     "id": "EwflBBAdP3PfmQzC",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
                     "scriptData": [
                         {
                             "id": "EwflBBAdP3PfmQzC",
                             "name": "Oszołomienie",
-                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
-                            "activationScript": "return true"
+                            "script": "[Script.Q1trEhtqjIiDvFPF]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         }
                     ]
                 },
                 "WHjhLJT1O6cxIv8u": {
                     "id": "WHjhLJT1O6cxIv8u",
                     "name": "Złamane biodro",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.QluSTTTq3viHJJUh\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})\nif (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}",
                     "scriptData": [
                         {
                             "id": "WHjhLJT1O6cxIv8u",
                             "name": "Złamane biodro",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.QluSTTTq3viHJJUh\")\nlet data = item.toObject();\ndata.system.location.value = \"Biodro\"\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect: this.effect.id})\n   \nlet test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {appendTitle : ` - ${this.effect.name}`})\nawait test.roll();\nif (test.failed)\n{\n    this.actor.addCondition(\"prone\")\n}"
+                            "script": "[Script.s7gJQdzuM3fz2zQK]"
                         }
                     ]
                 }
@@ -1485,12 +1412,11 @@
                 "N5WsBzINexkLMQVY": {
                     "id": "N5WsBzINexkLMQVY",
                     "name": "Rozkwaszone usta",
-                    "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.fBcZhOBn8IpoVqQ1\");\ninjury = item.toObject();\nlet teeth = (await new Roll(\"1d10\").roll()).total;\nChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b> stracił zęby w liczbie: ${teeth} `, speaker : {alias: this.effect.name}});\ninjury.system.location.value = `${teeth} ${injury.system.location.value}`;\nargs.actor.createEmbeddedDocuments(\"Item\", [injury]);",
                     "scriptData": [
                         {
                             "id": "N5WsBzINexkLMQVY",
                             "name": "Rozkwaszone usta",
-                            "script": "teeth = await fromUuid(\"Compendium.wfrp4e-core.items.fBcZhOBn8IpoVqQ1\")\nteeth = teeth.toObject();\n\nlet roll = await new Roll(\"1d10\").roll();\nroll.toMessage(this.script.getChatData({flavor : \"Teeth Lost\"}))\nteeth.system.location.value = `${roll.total} ${teeth.system.location.value}`\nthis.actor.createEmbeddedDocuments(\"Item\", [teeth])"
+                            "script": "[Script.kiJ6AiaYVUjt6aV6]"
                         }
                     ]
                 }
@@ -1507,13 +1433,12 @@
                 "VJ0bwQJne0HNmtph": {
                     "id": "VJ0bwQJne0HNmtph",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
                     "scriptData": [
                         {
                             "id": "VJ0bwQJne0HNmtph",
                             "name": "Oszołomienie",
-                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
-                            "activationScript": "return true"
+                            "script": "[Script.Q1trEhtqjIiDvFPF]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         }
                     ]
                 }
@@ -1530,25 +1455,23 @@
                 "XWadxhMkEKpv03Mk": {
                     "id": "XWadxhMkEKpv03Mk",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
                     "scriptData": [
                         {
                             "id": "XWadxhMkEKpv03Mk",
                             "name": "Oszołomienie",
-                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
-                            "activationScript": "return true"
+                            "script": "[Script.Q1trEhtqjIiDvFPF]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         }
                     ]
                 },
                 "zdZncZOvjLblz909": {
                     "id": "zdZncZOvjLblz909",
                     "name": "Strzaskana klatka piersiowa",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.EaqlLRQigwnsEAXX\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
                     "scriptData": [
                         {
                             "id": "zdZncZOvjLblz909",
                             "name": "Strzaskana klatka piersiowa",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.EaqlLRQigwnsEAXX\")\nthis.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect: this.effect.id})"
+                            "script": "[Script.ayIbw2Vw2t9xg33P]"
                         }
                     ]
                 }
@@ -1565,39 +1488,35 @@
                 "0wiLtR9wzYfqn7kK": {
                     "id": "0wiLtR9wzYfqn7kK",
                     "name": "Strzaskane kolano",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.2iult41Jehz0F1O8\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
                     "scriptData": [
                         {
                             "id": "0wiLtR9wzYfqn7kK",
                             "name": "Strzaskane kolano",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.2iult41Jehz0F1O8\")\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key;\nawait this.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect: this.effect.id})"
+                            "script": "[Script.fkFmNcesqqNTMhVn]"
                         }
                     ]
                 },
                 "frTFfaHrrJxQMQvi": {
                     "id": "frTFfaHrrJxQMQvi",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
                     "scriptData": [
                         {
                             "id": "frTFfaHrrJxQMQvi",
                             "name": "Oszołomienie",
-                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
-                            "activationScript": "return true"
+                            "script": "[Script.Q1trEhtqjIiDvFPF]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         }
                     ]
                 },
                 "VeT5PVDzmP96JWCM": {
                     "id": "VeT5PVDzmP96JWCM",
                     "name": "Powalenie",
-                    "script": "args.prefillModifiers.modifier -= 20",
-                    "secondaryScript": "if (args.type == 'weapon' && args.item.attackType=='melee') args.prefillModifiers.modifier += 20",
                     "scriptData": [
                         {
                             "id": "VeT5PVDzmP96JWCM",
                             "name": "Powalenie",
-                            "script": "args.prefillModifiers.modifier -= 20",
-                            "activationScript": "return true"
+                            "script": "[Script.SO4Aa9argKbuO9rQ]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         }
                     ]
                 },
@@ -1628,14 +1547,14 @@
                         {
                             "name": "Wybicie stawu",
                             "id": "H7W6BNsE6d2RR1Ti",
-                            "script": "let location = this.item.system.location.key;\n\nif (location)\n{\n    let dropped = this.item.system.weaponsAtLocation;\n\n    if (dropped.length)\n    {\n        this.script.scriptNotification(`Upuszczono: ${dropped.map(i => i.name).join(\", \")}!`)\n        for(let weapon of dropped)\n        {\n            await weapon.system.toggleEquip();\n        }\n    }\n}\n\nlet roll = await new Roll(\"1d10\").roll()\n\nroll.toMessage(this.script.getChatData({flavor : `${this.effect.name} (Czas Trwania)`}));\n\nthis.effect.updateSource({\"duration.rounds\" : roll.total})"
+                            "script": "[Script.Jjq3oPYbI26zjxME]"
                         },
                         {
                             "id": "H7W6BNsE6d2RR1Ti",
                             "name": "Wybicie stawu",
-                            "script": "args.abort = true;\nthis.script.scriptNotification(`Nie można używać: ${this.item.system.location.value}!`, \"error\")",
-                            "activationScript": "return this.item.system.usesLocation(args.weapon)",
-                            "hideScript": "return !args.weapon"
+                            "script": "[Script.sKO8TcLIkCTnFvXu]",
+                            "activationScript": "[Script.R5dOZWFxE2n6tooX]",
+                            "hideScript": "[Script.L2cdQppcPwxz24hN]"
                         }
                     ],
                     "id": "H7W6BNsE6d2RR1Ti",
@@ -1662,12 +1581,11 @@
                 "nWRttvafUnh1XIZU": {
                     "id": "nWRttvafUnh1XIZU",
                     "name": "Zmiażdżona stopa",
-                    "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), { absolute: { difficulty: \"average\" } }).then(async test => {\n      await test.roll();\n      if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n            let injury = await fromUuid(\"Compendium.wfrp4e-core.items.ZhMADOqoo0y8Q9bx\");\n            injury = injury.toObject();\n            injury.system.location.value = `${Math.clamped(Math.abs(test.result.SL) + 1, 1, 5)} ${injury.system.location.value}`\n            args.actor.createEmbeddedDocuments(\"Item\", [injury]);\n      }\n    });\n}",
                     "scriptData": [
                         {
                             "id": "nWRttvafUnh1XIZU",
                             "name": "Zmiażdżona stopa",
-                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), { fields: { difficulty: \"average\" } })\nawait test.roll();\nif (test.failed) \n{\n    await this.actor.addCondition(\"prone\")\n    let injury = await fromUuid(\"Compendium.wfrp4e-core.items.ZhMADOqoo0y8Q9bx\");\n    injury = injury.toObject()\n    let toes = Math.clamped(Math.abs(test.result.SL) + 1, 1, 5)\n    injury.system.location.key = this.item.system.location.key[0] + injury.system.location.value\n    if (injury.system.location.key[0] == \"r\")\n    {\n        injury.system.location.value = `$Prawa Stopa: {toes} ${injury.system.location.value}s`\n    }\n    else if (injury.system.location.key[0] == \"l\")\n    {\n        injury.system.location.value = `$Lewa Stopa {toes}${injury.system.location.value}s`\n    }\n    setProperty(injury, \"system.wfrp4e.count\", toes)\n    this.actor.createEmbeddedDocuments(\"Item\", [injury])\n}"
+                            "script": "[Script.o3JUBKLvE6bBxK2n]"
                         }
                     ]
                 }
@@ -1684,25 +1602,23 @@
                 "wAq76bdunkcb9wTw": {
                     "id": "wAq76bdunkcb9wTw",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
                     "scriptData": [
                         {
                             "id": "wAq76bdunkcb9wTw",
                             "name": "Oszołomienie",
-                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
-                            "activationScript": "return true"
+                            "script": "[Script.Q1trEhtqjIiDvFPF]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         }
                     ]
                 },
                 "WjHgjbRuh0M3H8g6": {
                     "id": "WjHgjbRuh0M3H8g6",
                     "name": "Zmiażdżona żuchwa",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.hCadFsTRvLN9faaY\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})\n\nif (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n     });\n}",
                     "scriptData": [
                         {
                             "id": "WjHgjbRuh0M3H8g6",
                             "name": "Zmiażdżona żuchwa",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.hCadFsTRvLN9faaY\")\nlet data = item.toObject();\ndata.system.location.value = \"Jaw\"\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect : this.effect.id})\n\nlet test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {appendTitle : ` - ${this.effect.name}`})\nawait test.roll();\nif (!test.succeeded)\n{\n\targs.actor.addCondition(\"unconscious\")\n}\n\n"
+                            "script": "[Script.M9VgeYGiUO97ZUW4]"
                         }
                     ]
                 }
@@ -1723,14 +1639,14 @@
                         {
                             "id": "WXXxc9P5cfN0hTSu",
                             "name": "Stłuczony obojczyk",
-                            "script": "let location = (Math.ceil(CONFIG.Dice.randomUniform() * 2) == 2 ? \"r\" : \"l\") + \"Arm\"\n\nif (location == \"lArm\")\n{\n\tthis.script.scriptNotification(\"Wylosowano Lewą Rękę\")\n}\nelse if (location == \"rArm\")\n{\n\tthis.script.scriptNotification(\"Wylosowano Prawą Rękę\")\n}\n\nthis.effect.updateSource({\"flags.wfrp4e.location\" : location});\n\nif (location)\n{\n    let dropped = this.actor.itemTypes.weapon.filter(i => i.isEquipped & i.system.usesHands.includes(location));\n\n    if (dropped.length)\n    {\n        this.script.scriptNotification(`Upuszczono: ${dropped.map(i => i.name).join(\", \")}!`)\n        for(let weapon of dropped)\n        {\n            await weapon.system.toggleEquip();\n        }\n    }\n}\n\nlet roll = await new Roll(\"1d10\").roll()\n\nroll.toMessage(this.script.getChatData({flavor : `${this.effect.name} (Czas Trwania)`}));\n\nthis.effect.updateSource({\"duration.rounds\" : roll.total})"
+                            "script": "[Script.sx7Ikn8WW00gBFb4]"
                         },
                         {
                             "id": "WXXxc9P5cfN0hTSu",
                             "name": "Stłuczony obojczyk",
-                            "script": "args.abort = true;\nthis.script.scriptNotification(`Nie można używać: ${game.wfrp4e.config.locations[this.effect.getFlag(\"wfrp4e\", \"location\")]}!`, \"error\")",
-                            "activationScript": "return args.weapon.system.usesHands.includes(this.effect.getFlag(\"wfrp4e\", \"location\"))",
-                            "hideScript": "return !args.weapon"
+                            "script": "[Script.6jcTzK1XEuWqAacN]",
+                            "activationScript": "[Script.d9iU08yvqcffF026]",
+                            "hideScript": "[Script.L2cdQppcPwxz24hN]"
                         }
                     ],
                     "id": "WXXxc9P5cfN0hTSu",
@@ -1777,12 +1693,11 @@
                 "KSraZUHBV7dm7jom": {
                     "id": "KSraZUHBV7dm7jom",
                     "name": "Rana brzucha",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb\").then(disease=> {\n args.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()])\n})",
                     "scriptData": [
                         {
                             "id": "KSraZUHBV7dm7jom",
                             "name": "Rana brzucha",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb\")\nthis.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect: this.effect.id})"
+                            "script": "[Script.EaSNOmXUxAkUHnm5]"
                         }
                     ]
                 }
@@ -1799,13 +1714,12 @@
                 "6FBVi7EOhHnDesA0": {
                     "id": "6FBVi7EOhHnDesA0",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
                     "scriptData": [
                         {
                             "id": "6FBVi7EOhHnDesA0",
                             "name": "Oszołomienie",
-                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
-                            "activationScript": "return true"
+                            "script": "[Script.Q1trEhtqjIiDvFPF]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         }
                     ]
                 },
@@ -1822,12 +1736,11 @@
                 "Ru3d8ZlbJSm8NlaU": {
                     "id": "Ru3d8ZlbJSm8NlaU",
                     "name": "Zgruchotana szczęka",
-                    "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.items.fBcZhOBn8IpoVqQ1\");\ninjury = injury.toObject()\nlet teeth = (await new Roll(\"1d10\").roll()).total;\nChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b> stracił zęby w liczbie: ${teeth}`, speaker : {alias: this.effect.name}});\ninjury.system.location.value = `${teeth} ${injury.system.location.value}`;\nargs.actor.createEmbeddedDocuments(\"Item\", [injury]);\n\ninjury = await fromUuid(\"Compendium.wfrp4e-core.items.rkJA1DlK51QuRlJy\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n\ninjury = await fromUuid(\"Compendium.wfrp4e-core.items.hCadFsTRvLN9faaY\");\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n\nif (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n     });\n}",
                     "scriptData": [
                         {
                             "id": "Ru3d8ZlbJSm8NlaU",
                             "name": "Zgruchotana szczęka",
-                            "script": "brokenbone = await fromUuid(\"Compendium.wfrp4e-core.items.hCadFsTRvLN9faaY\")\nteeth = await fromUuid(\"Compendium.wfrp4e-core.items.fBcZhOBn8IpoVqQ1\")\ntongue = await fromUuid(\"Compendium.wfrp4e-core.items.rkJA1DlK51QuRlJy\")\nbrokenbone = brokenbone.toObject();\nteeth = teeth.toObject();\ntongue = tongue.toObject();\n\n\nlet roll = await new Roll(\"1d10\").roll();\nroll.toMessage(this.script.getChatData({flavor : \"Teeth Lost\"}))\n\nteeth.system.location.value = `${roll.total} ${teeth.system.location.value}`\nbrokenbone.system.location.value = \"Szczęka\"\nthis.actor.createEmbeddedDocuments(\"Item\", [brokenbone, teeth, tongue])\n\nlet test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {fields: {difficulty : \"vhard\"}, appendTitle : ` - ${this.effect.name}`})\nawait test.roll();\nif (test.failed)\n{\n    this.actor.addCondition(\"unconscious\")\n}"
+                            "script": "[Script.NDvNGATDM2xPFJK0]"
                         }
                     ]
                 }
@@ -1844,14 +1757,13 @@
                 "vIjf5xtB3kGSjrwR": {
                     "id": "vIjf5xtB3kGSjrwR",
                     "name": "Stłuczone żebra",
-                    "script": "if (args.type == \"skill\" && args.item.characteristic.key == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}\nif (args.type == \"characteristic\" && args.item == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}",
                     "scriptData": [
                         {
                             "id": "vIjf5xtB3kGSjrwR",
                             "name": "Stłuczone żebra",
-                            "script": "args.fields.modifier -= 10",
-                            "activationScript": "return args.characteristic == \"ag\"",
-                            "hideScript": "return args.characteristic != \"ag\""
+                            "script": "[Script.xvGxwv7X0Vq3vNqb]",
+                            "activationScript": "[Script.JFgXyb6bKjZJLmF8]",
+                            "hideScript": "[Script.oW1gtYVT5nrxDjM7]"
                         }
                     ]
                 }
@@ -1888,12 +1800,11 @@
                 "7JMNhRyCgMlmfLLK": {
                     "id": "7JMNhRyCgMlmfLLK",
                     "name": "Uszkodzenie tętnicy",
-                    "script": "if (args.opposedTest.result.hitloc.value == \"body\") {\n    args.actor.addCondition(\"bleeding\", 2);\n}",
                     "scriptData": [
                         {
                             "id": "7JMNhRyCgMlmfLLK",
                             "name": "Uszkodzenie tętnicy",
-                            "script": "if (args.opposedTest.result.hitloc.value == \"body\" && args.totalWoundLoss > 0)\n{\n    args.actor.addCondition(\"bleeding\", 2)\n    this.script.scriptMessage(\"Otrzymano 2 Stany Krwawienia\")\n}"
+                            "script": "[Script.RKIFGN583PQnqHGk]"
                         }
                     ]
                 },
@@ -1920,12 +1831,11 @@
                 "AdMOpRguQRPZCjVm": {
                     "id": "AdMOpRguQRPZCjVm",
                     "name": "Zerwane mięśnie",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.GlShFJF2TpsNh1FX\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
                     "scriptData": [
                         {
                             "id": "AdMOpRguQRPZCjVm",
                             "name": "Zerwane mięśnie",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.GlShFJF2TpsNh1FX\");\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect: this.effect.id})\n"
+                            "script": "[Script.9eWR4mdaoCSQawDT]"
                         }
                     ]
                 },
@@ -1972,13 +1882,12 @@
                 "pnqEtu6lQlejU6CV": {
                     "id": "pnqEtu6lQlejU6CV",
                     "name": "Zawadiacka rana",
-                    "description": "Testy społeczne, na które wpłynie budząca szacunek blizna",
                     "scriptData": [
                         {
                             "id": "pnqEtu6lQlejU6CV",
                             "name": "Zawadiacka rana",
-                            "script": "args.fields.slBonus++;",
-                            "hideScript": "return args.characteristic != \"fel\""
+                            "script": "[Script.wAETU6aTRr9d4oCU]",
+                            "hideScript": "[Script.6Fe8M5MdklKS2olx]"
                         }
                     ]
                 },
@@ -2005,19 +1914,18 @@
                 "Uxp4sb58T0fiOXEB": {
                     "id": "Uxp4sb58T0fiOXEB",
                     "name": "Stłuczony palec",
-                    "script": "if (args.type == \"skill\" && args.item.characteristic.key == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}\nif (args.type == \"characteristic\" && args.item == \"ag\") {\n   args.prefillModifiers.modifier -= 10;\n}",
                     "scriptData": [
                         {
-                            "activationScript": "return args.characteristic == \"ag\"",
+                            "activationScript": "[Script.JFgXyb6bKjZJLmF8]",
                             "id": "Uxp4sb58T0fiOXEB",
                             "name": "Stłuczony palec",
-                            "script": "args.fields.modifier -= 10",
-                            "hideScript": "return args.characteristic != \"ag\" || this.item.getFlag(\"wfrp4e\", \"passed\")"
+                            "script": "[Script.xvGxwv7X0Vq3vNqb]",
+                            "hideScript": "[Script.vgfs0DXvF5iKrz1M]"
                         },
                         {
                             "id": "Uxp4sb58T0fiOXEB",
                             "name": "Stłuczony palec",
-                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {appendTitle : ` - ${this.effect.name}`, fields: {difficulty: \"hard\"}})\nawait test.roll();\nthis.item.updateSource({\"flags.wfrp4e.passed\" : test.succeeded})"
+                            "script": "[Script.HKhyn0kijKfzW6cw]"
                         }
                     ]
                 }
@@ -2034,12 +1942,11 @@
                 "yJmV5ry9bcyqV5fL": {
                     "id": "yJmV5ry9bcyqV5fL",
                     "name": "Skręcone kolano",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.3S4OYOZLauXctmev\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
                     "scriptData": [
                         {
                             "id": "yJmV5ry9bcyqV5fL",
                             "name": "Skręcone kolano",
-                            "script": "let injury = await fromUuid(\"Compendium.wfrp4e-core.items.3S4OYOZLauXctmev\")\ninjury.updateSource({\"system.location.key\" : this.item.system.location.key})\nthis.actor.createEmbeddedDocuments(\"Item\", [injury], {fromEffect: this.effect.id})"
+                            "script": "[Script.L89UcafRHqUfxoux]"
                         }
                     ]
                 }
@@ -2056,12 +1963,11 @@
                 "Te5ujLd9jiLGSVJr": {
                     "id": "Te5ujLd9jiLGSVJr",
                     "name": "Odcięte ramię",
-                    "script": "await this.actor.addCondition(\"dead\")",
                     "scriptData": [
                         {
                             "id": "Te5ujLd9jiLGSVJr",
                             "name": "Odcięte ramię",
-                            "script": "this.actor.addCondition(\"dead\")\nthis.actor.setWounds(0);\nthis.script.scriptMessage(await game.wfrp4e.tables.formatChatRoll(\"scatter\"))"
+                            "script": "[Script.AyNb5sj6FD2Z3Q5T]"
                         }
                     ]
                 }
@@ -2075,43 +1981,36 @@
             "description": "<p>Postać otrzymuje 1 poziom Stanu @Condition[Oszołomienie]. Musi również zdać <strong>Przeciętny (+20) Test Odporności</strong> albo otrzyma Stan @Condition[Powalenie]. Szybkość zmniejsza się o połowę na [[/r 1d10]] Rund, czyli dopóki postać nie zacznie oddychać normalnie.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.UC2zRorETcI8rheP",
             "effects": {
-                "5A8VfGUQYx8Q0M0G": {
-                    "id": "5A8VfGUQYx8Q0M0G",
-                    "name": "Szybkość zmniejszona o połowę",
-                    "script": "args.actor.details.move.value /= 2"
-                },
                 "NrZ8LRI1dsP46RmJ": {
                     "id": "NrZ8LRI1dsP46RmJ",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
                     "scriptData": [
                         {
                             "id": "NrZ8LRI1dsP46RmJ",
                             "name": "Oszołomienie",
-                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
-                            "activationScript": "return true"
+                            "script": "[Script.Q1trEhtqjIiDvFPF]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         }
                     ]
                 },
                 "uaaFc96JlTCALmeJ": {
                     "id": "uaaFc96JlTCALmeJ",
                     "name": "Bez tchu",
-                    "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"average\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}",
                     "scriptData": [
                         {
                             "id": "uaaFc96JlTCALmeJ",
                             "name": "Bez tchu",
-                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {appendTitle : ` - ${this.effect.name}`, fields: {difficulty: \"average\"}});\nawait test.roll();\nif (test.failed)\n{\n    this.actor.addCondition(\"prone\")\n}"
+                            "script": "[Script.SrCHfOJFZwDickqa]"
                         },
                         {
                             "id": "uaaFc96JlTCALmeJ",
                             "name": "Bez tchu",
-                            "script": "args.actor.details.move.value /= 2"
+                            "script": "[Script.9MDi3ok9gPwtbALf]"
                         },
                         {
                             "id": "uaaFc96JlTCALmeJ",
                             "name": "Bez tchu",
-                            "script": "let roll = await new Roll(\"1d10\").roll()\n\nroll.toMessage(this.script.getChatData({flavor : `${this.effect.name} (Czas Trwania)`}));\n\nthis.effect.updateSource({\"duration.rounds\" : roll.total})"
+                            "script": "[Script.A6DcKPzAGntzSCil]"
                         }
                     ]
                 }
@@ -2128,14 +2027,12 @@
                 "m5CJfHO2ZfBORtkr": {
                     "id": "m5CJfHO2ZfBORtkr",
                     "name": "Powalenie",
-                    "script": "args.prefillModifiers.modifier -= 20",
-                    "secondaryScript": "if (args.type == 'weapon' && args.item.attackType=='melee') args.prefillModifiers.modifier += 20",
                     "scriptData": [
                         {
                             "id": "m5CJfHO2ZfBORtkr",
                             "name": "Powalenie",
-                            "script": "args.prefillModifiers.modifier -= 20",
-                            "activationScript": "return true"
+                            "script": "[Script.SO4Aa9argKbuO9rQ]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         }
                     ]
                 },
@@ -2152,12 +2049,11 @@
                 "xN966TmmV1zEtGy9": {
                     "id": "xN966TmmV1zEtGy9",
                     "name": "Porąbana noga",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.7mCcI3q7hgWcmbBU\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})\n\nif (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"stunned\");\n        }\n     });\n}",
                     "scriptData": [
                         {
                             "id": "xN966TmmV1zEtGy9",
                             "name": "Porąbana noga",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.7mCcI3q7hgWcmbBU\")\nlet data = item.toObject();\ndata.system.location.key= this.item.system.location.key\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect: this.effect.id})\n   \nlet test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {appendTitle : ` - ${this.effect.name}`, fields: {difficulty: \"hard\"}});\nawait test.roll();\nif (test.failed)\n{\n    this.actor.addCondition(\"stunned\")\n}"
+                            "script": "[Script.JyTxUG5dNW670Sf7]"
                         }
                     ]
                 }
@@ -2174,25 +2070,23 @@
                 "3EKhg6lJsU12PXIN": {
                     "id": "3EKhg6lJsU12PXIN",
                     "name": "Cios w bebechy",
-                    "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"easy\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}",
                     "scriptData": [
                         {
                             "id": "3EKhg6lJsU12PXIN",
                             "name": "Cios w bebechy",
-                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {appendTitle : ` - ${this.effect.name}`, fields: {difficulty: \"easy\"}, context: {failure : `<strong>${this.effect.name}</strong>: Vomit!`} })\nawait test.roll();\nif (test.failed)\n{\n    this.actor.addCondition(\"prone\")\n}"
+                            "script": "[Script.quPcuKsq2fcild4a]"
                         }
                     ]
                 },
                 "cTrI8BgwwT6KbOcx": {
                     "id": "cTrI8BgwwT6KbOcx",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
                     "scriptData": [
                         {
                             "id": "cTrI8BgwwT6KbOcx",
                             "name": "Oszołomienie",
-                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
-                            "activationScript": "return true"
+                            "script": "[Script.Q1trEhtqjIiDvFPF]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         }
                     ]
                 }
@@ -2213,14 +2107,14 @@
                         {
                             "id": "WmmHwyUFUfjGKMvx",
                             "name": "Bardzo zdrętwiałe ramię",
-                            "script": "let location = this.item.system.location.key;\n\nif (location)\n{\n    let dropped = this.item.system.weaponsAtLocation;\n\n    if (dropped.length)\n    {\n        this.script.scriptNotification(`Dropped ${dropped.map(i => i.name).join(\", \")}!`)\n        for(let weapon of dropped)\n        {\n            await weapon.system.toggleEquip();\n        }\n    }\n}\n\nlet roll = await new Roll(\"max(1, 1d10 - @system.characteristics.t.bonus)\", this.actor).roll()\n\nroll.toMessage(this.script.getChatData({flavor : `${this.effect.name} (Czas Trwania)`}));\n\nthis.effect.updateSource({\"duration.rounds\" : roll.total})"
+                            "script": "[Script.0Uly7OmkH0zqYbxQ]"
                         },
                         {
                             "id": "WmmHwyUFUfjGKMvx",
                             "name": "Bardzo zdrętwiałe ramię",
-                            "script": "args.abort = true;\nthis.script.scriptNotification(`Nie można użyć ${this.item.system.location.value}!`, \"error\")",
-                            "activationScript": "return this.item.system.usesLocation(args.weapon)",
-                            "hideScript": "return !args.weapon"
+                            "script": "[Script.sKO8TcLIkCTnFvXu]",
+                            "activationScript": "[Script.R5dOZWFxE2n6tooX]",
+                            "hideScript": "[Script.L2cdQppcPwxz24hN]"
                         }
                     ],
                     "name": "Bardzo zdrętwiałe ramię",
@@ -2237,12 +2131,11 @@
                 "rtWfTN6wJ4BbJslf": {
                     "id": "rtWfTN6wJ4BbJslf",
                     "name": "Zwichnięta kostka",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.nF5z1OEhpi4t6a6S\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
                     "scriptData": [
                         {
                             "id": "rtWfTN6wJ4BbJslf",
                             "name": "Zwichnięta kostka",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.nF5z1OEhpi4t6a6S\");\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key\nif (data.system.location.key[0] == \"r\")\n{\n\tdata.system.location.value = \"Prawa Kostka\"\n}\nelse if (data.system.location.key[0] == \"l\")\n{\n\tdata.system.location.value = \"Lewa Kostka\n}\n\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {skipLocationValue : true, fromEffect: this.effect.id})\n"
+                            "script": "[Script.re1UFtxvRRjpPB7Z]"
                         }
                     ]
                 }
@@ -2256,24 +2149,19 @@
             "description": "<p>Z powodu niezdarnego kroku kolano nie wytrzymuje. Wszystkie Testy Zwinności otrzymują karę -20 na [[/r 1d10]] round.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.wnYgHZm503oOERSf",
             "effects": {
-                "BjIyeZdTw8TPV9qC": {
-                    "id": "BjIyeZdTw8TPV9qC",
-                    "name": "Nadwyrężone kolano",
-                    "script": "if (args.type == \"skill\" && args.item.characteristic.key == \"ag\") {\n   args.prefillModifiers.modifier -= 20;\n}\nif (args.type == \"characteristic\" && args.item == \"ag\") {\n   args.prefillModifiers.modifier -= 20;\n}"
-                },
                 "98Ggkkm22IOSZdCE": {
                     "scriptData": [
                         {
                             "id": "98Ggkkm22IOSZdCE",
                             "name": "Nadwyrężone kolano",
-                            "script": "args.fields.modifier -= 20",
-                            "activationScript": "return args.characteristic == \"ag\"",
-                            "hideScript": "return args.characteristic != \"ag\""
+                            "script": "[Script.0iTLDgFHO9Rgc010]",
+                            "activationScript": "[Script.JFgXyb6bKjZJLmF8]",
+                            "hideScript": "[Script.oW1gtYVT5nrxDjM7]"
                         },
                         {
                             "id": "98Ggkkm22IOSZdCE",
                             "name": "Nadwyrężone kolano",
-                            "script": "let roll = await new Roll(\"1d10\").roll()\n\nroll.toMessage(this.script.getChatData({flavor : `${this.effect.name} (Duration)`}));\n\nthis.effect.updateSource({\"duration.rounds\" : roll.total})"
+                            "script": "[Script.A6DcKPzAGntzSCil]"
                         }
                     ],
                     "id": "98Ggkkm22IOSZdCE",
@@ -2292,13 +2180,12 @@
                 "AgeemYAqqhNVFHBz": {
                     "id": "AgeemYAqqhNVFHBz",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
                     "scriptData": [
                         {
                             "id": "AgeemYAqqhNVFHBz",
                             "name": "Oszołomienie",
-                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
-                            "activationScript": "return true"
+                            "script": "[Script.Q1trEhtqjIiDvFPF]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         }
                     ]
                 },
@@ -2315,12 +2202,11 @@
                 "nOCDyzwdMDX9kunm": {
                     "id": "nOCDyzwdMDX9kunm",
                     "name": "Głębokie cięcie",
-                    "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n    });\n}\n\nfromUuid(\"Compendium.wfrp4e-core.items.GlShFJF2TpsNh1FX\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})",
                     "scriptData": [
                         {
                             "id": "nOCDyzwdMDX9kunm",
                             "name": "Głębokie cięcie",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.GlShFJF2TpsNh1FX\")\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect : this.effect.id})\n   \nlet test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {appendTitle : ` - ${this.effect.name}`, fields: {difficulty: \"hard\"}});\nawait test.roll();\nif (test.failed)\n{\n    args.actor.addCondition(\"unconscious\")\n}"
+                            "script": "[Script.ToKlHDAjJOsC51ag]"
                         }
                     ]
                 }
@@ -2337,12 +2223,11 @@
                 "UEnlvAwvGq0076To": {
                     "id": "UEnlvAwvGq0076To",
                     "name": "Utrata równowagi",
-                    "script": "if (this.actor.isOwner) {\n   args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\")).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"prone\");\n        }\n     });\n}",
                     "scriptData": [
                         {
                             "id": "UEnlvAwvGq0076To",
                             "name": "Utrata równowagi",
-                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {appendTitle : ` - ${this.effect.name}`});\nawait test.roll();\nif (test.failed)\n{\n    this.actor.addCondition(\"prone\")\n}"
+                            "script": "[Script.FkTwk8hfHpRLbAp2]"
                         }
                     ]
                 }
@@ -2379,26 +2264,23 @@
                 "0aCPrsOCLEVcZGxF": {
                     "id": "0aCPrsOCLEVcZGxF",
                     "name": "Przecięte ścięgno",
-                    "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"hard\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"unconscious\");\n        }\n     });\n}\n\nfromUuid(\"Compendium.wfrp4e-core.items.MnMZv7ZXoRqoH9dS\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})",
                     "scriptData": [
                         {
                             "id": "0aCPrsOCLEVcZGxF",
                             "name": "Przecięte ścięgno",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.MnMZv7ZXoRqoH9dS\")\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key\nthis.actor.createEmbeddedDocuments(\"Item\", [data])\n\n\n\n\nlet test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {fields: {difficulty: \"hard\"}, appendTitle : ` - ${this.effect.name}`})\nawait test.roll();\nif (test.failed)\n{\n\tthis.actor.addCondition(\"unconscious\")\n}"
+                            "script": "[Script.CkE8NZOhzPkuRrKJ]"
                         }
                     ]
                 },
                 "3WIVf1QT93cut5OA": {
                     "id": "3WIVf1QT93cut5OA",
                     "name": "Powalenie",
-                    "script": "args.prefillModifiers.modifier -= 20",
-                    "secondaryScript": "if (args.type == 'weapon' && args.item.attackType=='melee') args.prefillModifiers.modifier += 20",
                     "scriptData": [
                         {
                             "name": "Powalenie",
                             "id": "3WIVf1QT93cut5OA",
-                            "script": "args.prefillModifiers.modifier -= 20",
-                            "activationScript": "return true"
+                            "script": "[Script.SO4Aa9argKbuO9rQ]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         }
                     ]
                 },
@@ -2415,13 +2297,12 @@
                 "9qQs2OvZgvHzRHix": {
                     "id": "9qQs2OvZgvHzRHix",
                     "name": "Oszołomienie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
                     "scriptData": [
                         {
                             "id": "9qQs2OvZgvHzRHix",
                             "name": "Oszołomienie",
-                            "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value')",
-                            "activationScript": "return true"
+                            "script": "[Script.Q1trEhtqjIiDvFPF]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         }
                     ]
                 }
@@ -2437,18 +2318,16 @@
             "effects": {
                 "FZuPzqtWTtFMIciJ": {
                     "id": "FZuPzqtWTtFMIciJ",
-                    "name": "Ogłuszenie",
-                    "description": "Testy związane ze słuchem"
+                    "name": "Ogłuszenie"
                 },
                 "kaAFU5cxgv0idSQZ": {
                     "id": "kaAFU5cxgv0idSQZ",
                     "name": "Zgruchotane ucho",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.8piWcBKFlQ2J1E3A\").then(injury => {\n args.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()])\n})",
                     "scriptData": [
                         {
                             "id": "kaAFU5cxgv0idSQZ",
                             "name": "Zgruchotane ucho",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.8piWcBKFlQ2J1E3A\")\nlet data = item.toObject();\ndata.system.location.key= this.item.system.location.key\nthis.actor.createEmbeddedDocuments(\"Item\", [data])"
+                            "script": "[Script.06IaVCOC0RCJbxEf]"
                         }
                     ]
                 },
@@ -2489,12 +2368,11 @@
                 "sVTAurntsVHWamj6": {
                     "id": "sVTAurntsVHWamj6",
                     "name": "Czyste złamanie",
-                    "script": "if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty: \"difficult\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"stunned\");\n        }\n    });\n}\nfromUuid(\"Compendium.wfrp4e-core.items.4lj1ik958mbgAlaF\").then(injury => {\nargs.actor.createEmbeddedDocuments(\"Item\", [injury.toObject()]);\n})",
                     "scriptData": [
                         {
                             "id": "sVTAurntsVHWamj6",
                             "name": "Czyste złamanie",
-                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {fields: {difficulty: \"difficult\"}, appendTitle : ` - ${this.effect.name}`})\nawait test.roll();\n\nif (test.failed)\n{\n    this.actor.addCondition(\"stunned\")\n}\n\n\nlet item = await fromUuid(\"Compendium.wfrp4e-core.items.4lj1ik958mbgAlaF\")\nlet data = item.toObject();\ndata.system.location.key = this.item.system.location.key\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect : this.effect.id})\n"
+                            "script": "[Script.XClTZOjuhcxWLF51]"
                         }
                     ]
                 }
@@ -2511,12 +2389,11 @@
                 "pZD9xrlAHiaRru0d": {
                     "id": "pZD9xrlAHiaRru0d",
                     "name": "Poważna rana klatki piersiowej",
-                    "script": "if (args.opposedTest.result.hitloc.value == \"body\") {\n    args.actor.addCondition(\"bleeding\", 2);\n}",
                     "scriptData": [
                         {
                             "id": "pZD9xrlAHiaRru0d",
                             "name": "Poważna rana oka",
-                            "script": "if (args.opposedTest.result.hitloc.value == \"body\" && args.totalWoundLoss > 0) \n{\n    args.actor.addCondition(\"bleeding\", 2)\n    this.script.scriptNotification(\"Wywołano Krwawienie\")\n}"
+                            "script": "[Script.HmImVzvw6ecBy99l]"
                         }
                     ]
                 },
@@ -2553,12 +2430,11 @@
                 "UGeKGGNmXVJAieTa": {
                     "id": "UGeKGGNmXVJAieTa",
                     "name": "Uszkodzona tętnica",
-                    "script": "if (args.opposedTest.result.hitloc.value == \"ARM_LOCATION_HERE\") { // lArm or rArm\n    args.actor.addCondition(\"bleeding\", 2);\n}",
                     "scriptData": [
                         {
                             "id": "UGeKGGNmXVJAieTa",
                             "name": "Uszkodzona tętnica",
-                            "script": "if (args.opposedTest.result.hitloc.value == this.item.system.location.key && args.totalWoundLoss > 0)\n{\n    args.actor.addCondition(\"bleeding\", 2);\n    this.script.scriptNotification(\"Dodano Krwawienie\")\n}"
+                            "script": "[Script.FZFOC7bip0oiWEzk]"
                         }
                     ]
                 }
@@ -2579,14 +2455,14 @@
                         {
                             "id": "2oZsYCopLPHqHNQb",
                             "name": "Krwawiąca dłoń",
-                            "script": "let location = this.item.system.location.key\nlet test = await this.actor.setupCharacteristic(\"dex\", {context : {failure : `<strong>${this.effect.name}</strong>: Drop the item!`}, appendTitle : \" - \" + this.effect.name, fields : {difficulty : \"average\"}})\nawait test.roll();\n\n\nif (location && test.failed)\n{\n    let dropped = this.item.system.weaponsAtLocation;\n\n    if (dropped.length)\n    {\n        this.script.scriptNotification(`Upuszczono: ${dropped.map(i => i.name).join(\", \")}!`)\n        for(let weapon of dropped)\n        {\n            await weapon.system.toggleEquip();\n        }\n    }\n}\n\nreturn test.succeeded"
+                            "script": "[Script.rpxQU26BU7nwjtqY]"
                         },
                         {
                             "id": "2oZsYCopLPHqHNQb",
                             "name": "Krwawiąca dłoń",
-                            "script": "if (args.weapon && this.item.system.usesLocation(args.weapon))\n{\n    args.bleedingHand = true;\n    let success = await this.effect.manualScripts[0].execute({actor: this.actor})\n    if (!success)\n    {\n        args.abort = true;\n    }\n}",
-                            "activationScript": "return true;",
-                            "hideScript": "return args.bleedingHand || !args.weapon || !this.actor.hasCondition(\"bleeding\")"
+                            "script": "[Script.2WBq5gW780C6zfCp]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]",
+                            "hideScript": "[Script.faRFSsrQylQRZFLk]"
                         }
                     ],
                     "id": "2oZsYCopLPHqHNQb",

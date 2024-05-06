@@ -26,7 +26,7 @@
                         {
                             "id": "h88PijhN5NNg1y6Y",
                             "name": "Maska śmierci",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.Item.pTorrE0l3VybAbtn\");\nlet data = item.toObject();\ndata.system.specification.value = 1;\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect : this.effect.id})"
+                            "script": "[Script.AmpDbT0BkDHeaRzf]"
                         }
                     ],
                     "id": "h88PijhN5NNg1y6Y",
@@ -63,7 +63,7 @@
                         {
                             "id": "FzMgOIeeJEy3DPGL",
                             "name": "Wyleczenie choroby",
-                            "script": "let choice = await ItemDialog.create(this.actor.itemTypes.disease, 1, \"Wybierz chorobę do uleczenia (musi mieć naturalne pochodzenie)\")\n\nthis.script.scriptMessage(`Wyleczono <strong>${choice[0]?.name}</strong>`);\nchoice[0].delete()"
+                            "script": "[Script.vc4bELo0cWYoILfB]"
                         }
                     ],
                     "id": "FzMgOIeeJEy3DPGL",
@@ -74,7 +74,7 @@
                         {
                             "id": "slUPiVruBghcFcCQ",
                             "name": "Uzdrowienie",
-                            "script": "let caster = this.effect.sourceActor;\n\nthis.actor.modifyWounds(caster.system.characteristics.fel.bonus);\n\nthis.script.scriptMessage(`Uleczone Rany: ${caster.system.characteristics.fel.bonus}`);"
+                            "script": "[Script.oV81zgbZsuTFG6L2]"
                         }
                     ],
                     "id": "slUPiVruBghcFcCQ",
@@ -113,7 +113,7 @@
                         {
                             "id": "lfR1p5Ph2BQCPl3G",
                             "name": "Błogosławieństwo Prawości",
-                            "script": "args.item.system.qualities.value.push({name : \"magical\"})"
+                            "script": "[Script.eWWLmA2xINR321aK]"
                         }
                     ],
                     "filter": "return args.type == \"weapon\";"
@@ -147,12 +147,11 @@
                 "qpp49hHsrz2VmP1E": {
                     "id": "qpp49hHsrz2VmP1E",
                     "name": "Płomień Wiary",
-                    "script": "let damage = (await new Roll(\"1d10\").roll()).total;\nawait args.actor.applyBasicDamage(damage, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL})\nif (args.actor.has(game.i18n.localize(\"NAME.Undead\")) || args.actor.has(game.i18n.localize(\"NAME.Daemonic\"))) {\n  await args.actor.addCondition(\"ablaze\");\n}",
                     "scriptData": [
                         {
                             "id": "qpp49hHsrz2VmP1E",
                             "name": "Płomień Wiary",
-                            "script": "let roll;\nif (this.actor.has(game.i18n.localize(\"NAME.Daemonic\")) || this.actor.has(game.i18n.localize(\"NAME.Undead\")) || [\"Goblin\", \"Ork\", \"Nieumarły\"].includes(this.actor.system.details.species.value))\n{\n    roll = await new Roll(`1d10 + ${this.effect.sourceTest.result.overcast.usage.other.current}`).roll()\n}\nelse \n{\n    roll = await new Roll(`1d10`).roll()\n}\n\nroll.toMessage(this.script.getChatData())\nawait this.actor.applyBasicDamage(roll.total, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL, suppressMsg : true})\n\nif (this.actor.has(game.i18n.localize(\"NAME.Daemonic\")) || this.actor.has(game.i18n.localize(\"NAME.Undead\")))\n{\n  this.actor.addCondition(\"ablaze\")\n}"
+                            "script": "[Script.xobGBJbgFjQCrwvq]"
                         }
                     ],
                     "filter": "return this.effect.sourceActor.uuid == this.actor.uuid;"
@@ -218,7 +217,7 @@
                         {
                             "id": "neBm0x6oS63U5q6N",
                             "name": "Włócznia Myrmidii",
-                            "script": "args.item.system.qualities.value.push({name : \"magical\"})\nargs.item.system.qualities.value.push({name : \"impact\"})\n"
+                            "script": "[Script.8oE0DTzz0krOfFlV]"
                         }
                     ],
                     "id": "neBm0x6oS63U5q6N",
@@ -251,12 +250,11 @@
                 "xBeaS7jKIhHvsBaC": {
                     "id": "xBeaS7jKIhHvsBaC",
                     "name": "Błogosławieństwo Uzdrawiania",
-                    "script": "let wounds = args.actor.status.wounds;\nif (wounds.value < wounds.max) {\n   args.actor.update({\"system.status.wounds.value\" : wounds.value + 1});\n}",
                     "scriptData": [
                         {
                             "id": "xBeaS7jKIhHvsBaC",
                             "name": "Błogosławieństwo Uzdrawiania",
-                            "script": "this.actor.modifyWounds(1)"
+                            "script": "[Script.87rrZ3ojHrXa3lCn]"
                         }
                     ]
                 }
@@ -294,7 +292,7 @@
                         {
                             "id": "aYQSXtW45SbZbfTQ",
                             "name": "Prawdomówność",
-                            "script": "let test = await this.actor.setupSkill(\"Opanowanie\", {appendTitle : ` - ${this.effect.name}`, fields : {difficulty : \"average\"}})\n\nawait test.roll();"
+                            "script": "[Script.E6DMqfDeczqmVMFV]"
                         }
                     ],
                     "id": "aYQSXtW45SbZbfTQ",
@@ -320,12 +318,11 @@
                 "FaH4jPWjtPWfjjv2": {
                     "id": "FaH4jPWjtPWfjjv2",
                     "name": "Aura odwagi",
-                    "script": "let broken = args.actor.hasCondition(\"broken\");\nif (broken) {\n    args.actor.removeCondition(\"broken\", broken.flags.wfrp4e.value);\n}",
                     "scriptData": [
                         {
                             "id": "FaH4jPWjtPWfjjv2",
                             "name": "Aura odwagi",
-                            "script": "this.actor.hasCondition(\"broken\")?.delete();\n\nlet item = await fromUuid(\"Compendium.wfrp4e-core.items.Item.8pVzgPkgWpTJvfhG\")\nthis.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect : this.effect.id})"
+                            "script": "[Script.U2xKn7R1gm8kiQm8]"
                         }
                     ]
                 }
@@ -342,13 +339,7 @@
             "effects": {
                 "LGXFRw2UC3M1ZCRf": {
                     "id": "LGXFRw2UC3M1ZCRf",
-                    "name": "Błogosławieństwo Dzikości",
-                    "scriptData": [
-                        {
-                            "id": "LGXFRw2UC3M1ZCRf",
-                            "name": "Błogosławieństwo Dzikości"
-                        }
-                    ]
+                    "name": "Błogosławieństwo Dzikości"
                 }
             },
             "duration": "6 Rund",
@@ -379,12 +370,11 @@
                 "PG0aFGzMCDuLR7fK": {
                     "id": "PG0aFGzMCDuLR7fK",
                     "name": "Waleczność",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.J9MK0AIaTbvd5oF6\").then(item => {\n    args.actor.createEmbeddedDocuments(\"Item\", [item.toObject()])\n})",
                     "scriptData": [
                         {
                             "id": "PG0aFGzMCDuLR7fK",
                             "name": "Waleczność",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.J9MK0AIaTbvd5oF6\");\nthis.actor.createEmbeddedDocuments(\"Item\", [item.toObject()], {fromEffect : this.effect.id});"
+                            "script": "[Script.I0Jo6cbNAJtXUloc]"
                         }
                     ]
                 }
@@ -407,7 +397,7 @@
                         {
                             "id": "hGdAGmyvnWQJt9Le",
                             "name": "Dar Ulryka",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.Item.DrNUTPeodEgpWTnT\")\nthis.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect : this.effect.id})"
+                            "script": "[Script.ErgOwSiVnm9VLVHN]"
                         }
                     ],
                     "id": "hGdAGmyvnWQJt9Le",
@@ -445,19 +435,18 @@
                 "2lds6IDIyorYrvY4": {
                     "id": "2lds6IDIyorYrvY4",
                     "name": "Mądrość sowy",
-                    "script": "if (args.type == \"characteristic\" && args.item == \"int\") {\n  args.prefillModifiers.modifier += 20;\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"int\") {\n    args.prefillModifiers.modifier += 20;\n  }\n}",
                     "scriptData": [
                         {
                             "id": "2lds6IDIyorYrvY4",
                             "name": "Mądrość sowy",
-                            "script": "args.fields.modifier += 20\n",
-                            "activationScript": "return args.characteristic == \"int\"",
-                            "hideScript": "return args.characteristic != \"int\""
+                            "script": "[Script.9ZFPDCk8M2TQxh7x]",
+                            "activationScript": "[Script.MnXny8SCh6OceJc9]",
+                            "hideScript": "[Script.JjDzMnUxaWQePIYh]"
                         },
                         {
                             "id": "2lds6IDIyorYrvY4",
                             "name": "Mądrość sowy",
-                            "script": "let menacing = (await fromUuid(\"Compendium.wfrp4e-core.items.Item.0hn6UaKq8CoZP2zD\")).toObject();\nlet sense = (await fromUuid(\"Compendium.wfrp4e-core.items.Item.9h82z72XGo9tfgQS\")).toObject();\n\nsense.name += \" (Wzrok)\";\nsense.system.tests.value = sense.system.tests.value.replace(\"Zmysł\", \"Wzrok\")\n\nthis.actor.createEmbeddedDocuments(\"Item\", [menacing, sense], {fromEffect : this.effect.id})"
+                            "script": "[Script.dbOSvpgcPjsc2uvq]"
                         }
                     ]
                 }
@@ -495,7 +484,7 @@
                         {
                             "id": "CC5N9g66lyRrHaAz",
                             "name": "Uśmiech losu",
-                            "script": "let points = this.effect.sourceTest.result.overcast.usage.other.current;\n\nthis.actor.update({\"system.status.fortune.value\" : this.actor.system.status.fortune.value + points});\n\nthis.script.scriptMessage(`Otrzymane Punkty Szczęścia: ${points}`)"
+                            "script": "[Script.o88xuUConwt0vFLw]"
                         }
                     ],
                     "id": "CC5N9g66lyRrHaAz",
@@ -517,9 +506,9 @@
                         {
                             "id": "DGUAxQA9U6ChgHrQ",
                             "name": "Młot na czarownice",
-                            "script": "args.fields.modifier -= 20;",
-                            "activationScript": "return args.type == \"cast\"",
-                            "hideScript": "return args.type != \"cast\""
+                            "script": "[Script.0iTLDgFHO9Rgc010]",
+                            "activationScript": "[Script.8vpAtJ93GIeye1qj]",
+                            "hideScript": "[Script.DBafsY1HrclJRTtA]"
                         }
                     ],
                     "id": "DGUAxQA9U6ChgHrQ",
@@ -563,7 +552,7 @@
                 "uxCZ2uplQQJcwRgu": {
                     "scriptData": [
                         {
-                            "script": "if (!this.actor.effects.find(e => e.isCondition))\n{\n\treturn this.script.scriptNotification(\"Wybrany Aktor nie posiada żadnych Stanów\")\n}\n\nlet choice = await ItemDialog.create(this.actor.effects.filter(i => i.isCondition), 1, \"Wybierz Stan\")\n\nif (choice[0])\n{\n\tthis.actor.removeCondition(choice[0].conditionId)\n}\n",
+                            "script": "[Script.QRSACifDrvojIXHB]",
                             "id": "uxCZ2uplQQJcwRgu",
                             "name": "Błogosławieństwo Nieustępliwości"
                         }
@@ -587,7 +576,7 @@
                         {
                             "id": "eGV3D8HZcAHCuZ0h",
                             "name": "Prawo Śnieżnego Króla",
-                            "script": "    let roll = await new Roll(\"1d10\").roll();\n    game.dice3d?.showForRoll(roll);\n    this.script.scriptMessage(await this.actor.applyBasicDamage(roll.total, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL, suppressMsg : true}))\n"
+                            "script": "[Script.GTZUO73pUJKpM1JB]"
                         }
                     ],
                     "id": "eGV3D8HZcAHCuZ0h",
@@ -601,27 +590,21 @@
             "description": "<p>Prosisz Ranalda, by twój cel mógł lepiej poradzić sobie z zawiłościami rzeczywistości. Cel uzyskuje premię +10 do Zwinności, +10 do Skradania oraz 1 poziom Talentu @UUID[Compendium.wfrp4e-core.items.g4Q6AtzZuo5iIvD4]{Na Cztery Łapy} na czas cudu.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.hL7B3d7A0sYYjHXn",
             "effects": {
-                "y7N8PrEOVgsRaJGR": {
-                    "id": "y7N8PrEOVgsRaJGR",
-                    "name": "Na Cztery Łapy",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.g4Q6AtzZuo5iIvD4\").then(item => {\n    args.actor.createEmbeddedDocuments(\"Item\", [item.toObject()])\n})"
-                },
                 "yAJjiwiK0OSoIrkf": {
                     "id": "yAJjiwiK0OSoIrkf",
                     "name": "Spryt Ranalda",
-                    "script": "if (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))) {\n    args.prefillModifiers.modifier += 10;\n}",
                     "scriptData": [
                         {
                             "id": "yAJjiwiK0OSoIrkf",
                             "name": "Spryt Ranalda",
-                            "script": "args.fields.modifier += 10",
-                            "activationScript": "return args.skill?.name.includes(game.i18n.localize(\"NAME.Stealth\"))\n",
-                            "hideScript": "return !args.skill?.name.includes(game.i18n.localize(\"NAME.Stealth\"))\n"
+                            "script": "[Script.xPDMpOvC1ZBVxrNg]",
+                            "activationScript": "[Script.kYmscP2HuXjDovBD]",
+                            "hideScript": "[Script.nvrFhHHVq3KzirlR]"
                         },
                         {
                             "id": "yAJjiwiK0OSoIrkf",
                             "name": "Spryt Ranalda",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.g4Q6AtzZuo5iIvD4\");\nthis.actor.createEmbeddedDocuments(\"Item\", [item.toObject()], {fromEffect : this.effect.id});"
+                            "script": "[Script.Y6ppJBerpM3TtSic]"
                         }
                     ]
                 }
@@ -644,12 +627,12 @@
                         {
                             "id": "qDw8FPD6bDLLY82Q",
                             "name": "Twarz topielca",
-                            "script": "this.actor.addCondition(\"fatigued\");"
+                            "script": "[Script.JwgFQmPQtXWAP94i]"
                         },
                         {
                             "id": "qDw8FPD6bDLLY82Q",
                             "name": "Twarz topielca",
-                            "script": "this.actor.addCondition(\"prone\");"
+                            "script": "[Script.6V3qHON3mcerlBlB]"
                         }
                     ],
                     "id": "qDw8FPD6bDLLY82Q",
@@ -671,7 +654,7 @@
                         {
                             "id": "DxYGZR4BgiliPfoY",
                             "name": "Pogrom",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.Item.5hH73j2NgPdsLCZN\")\nlet data = item.toObject();\ndata.name = data.name.replace(\"Cel\", \"Zielonoskórzy, Nieumarli, Chaos\")\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect : this.effect.id})"
+                            "script": "[Script.sZwLitzwKBTaFca3]"
                         }
                     ],
                     "id": "DxYGZR4BgiliPfoY",
@@ -768,7 +751,7 @@
                         {
                             "id": "YhZKddnHcQnJUhFC",
                             "name": "Pan łowów",
-                            "script": "args.fields.modifier += 10;"
+                            "script": "[Script.xPDMpOvC1ZBVxrNg]"
                         }
                     ],
                     "id": "YhZKddnHcQnJUhFC",
@@ -806,10 +789,9 @@
                 "qMveUjAJldH1xhlZ": {
                     "id": "qMveUjAJldH1xhlZ",
                     "name": "Błogosławieństwo Ochrony",
-                    "script": "ChatMessage.create({content : `<b>${this.actor.prototypeToken.name}</b> musi zdać <b>Przeciętny (+20) Test Siły Woli</b> aby zaatakować cel!`, speaker : {alias : this.effect.name}});\nui.notifications.notify(`${this.actor.prototypeToken.name} musi zdać <b>Przeciętny (+20) Test Siły Woli</b> aby zaatakować cel!`);",
                     "scriptData": [
                         {
-                            "hideScript": "this.script.scriptNotification(`${args.actor.prototypeToken.name} musi zdać <b>Wymagający Test (+20) Siły Woli</b> aby zaatakować ten cel!`)\n\nreturn true; // No need to show this in the dialog",
+                            "hideScript": "[Script.Jnp5c09sPzDD61EK]",
                             "id": "qMveUjAJldH1xhlZ",
                             "name": "Błogosławieństwo Ochrony"
                         }
@@ -863,25 +845,20 @@
                         {
                             "id": "DIcpr650MAJVHQ5u",
                             "name": "Rączy jeleń",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.CV9btQn09S9Fn8Jk\");\nthis.actor.createEmbeddedDocuments(\"Item\", [item.toObject()], {fromEffect : this.effect.id});"
+                            "script": "[Script.oqgd9G6oI1ncPYLw]"
                         },
                         {
                             "id": "DIcpr650MAJVHQ5u",
                             "name": "Rączy jeleń",
-                            "script": "if (args.test.options.stag)\n{\n\tif (parseInt(args.test.result.SL) < 0 || args.test.result.outcome == \"failure\")\n\t{\n\t\tif (parseInt(args.test.result.SL) < 0)\n\t\t{\n\t\t\targs.test.result.SL = \"+0\";\n\t\t\targs.test.result.description = game.i18n.localize(\"ROLL.MarginalSuccess\");\n\t\t}\n\t\targs.test.result.outcome = \"success\"\n        args.test.result.other.push(`<strong>${this.effect.name}</strong>: Minimum +0 PS`)\n\t}\n}"
+                            "script": "[Script.U9xh2wriSqCosugW]"
                         },
                         {
                             "id": "DIcpr650MAJVHQ5u",
                             "name": "Rączy jeleń",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Athletics\");",
-                            "submissionScript": "args.options.stag = true;"
+                            "hideScript": "[Script.9EVj4bmZJex45Mt7]",
+                            "submissionScript": "[Script.b2WaqRna5CFXmbDG]"
                         }
                     ]
-                },
-                "q7pJlPm8uR0UxxN1": {
-                    "id": "q7pJlPm8uR0UxxN1",
-                    "name": "Rączy jeleń",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.CV9btQn09S9Fn8Jk\").then(item => {\n    args.actor.createEmbeddedDocuments(\"Item\", [item.toObject()])\n})"
                 }
             },
             "duration": "Bonus Ogd Rund",
@@ -911,8 +888,8 @@
                         {
                             "id": "1j2FQJqwfouwvNe3",
                             "name": "Sprzyjający wiatr",
-                            "script": "args.fields.modifier += 10;",
-                            "hideScript": "return !args.options.handling"
+                            "script": "[Script.xPDMpOvC1ZBVxrNg]",
+                            "hideScript": "[Script.33US8YRgaMqYu2We]"
                         }
                     ],
                     "id": "1j2FQJqwfouwvNe3",
@@ -929,12 +906,11 @@
                 "Bt7ExFoPhWP05nr8": {
                     "id": "Bt7ExFoPhWP05nr8",
                     "name": "Zew furii",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.5hH73j2NgPdsLCZN\").then(item => {\n    args.actor.createEmbeddedDocuments(\"Item\", [item.toObject()])\n})",
                     "scriptData": [
                         {
                             "id": "Bt7ExFoPhWP05nr8",
                             "name": "Zew furii",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.5hH73j2NgPdsLCZN\");\nthis.actor.createEmbeddedDocuments(\"Item\", [item.toObject()], {fromEffect : this.effect.id})"
+                            "script": "[Script.tKBq1nGZo8t6vvQ6]"
                         }
                     ]
                 }
@@ -957,12 +933,12 @@
                         {
                             "id": "rR3CML7hvrzjzYH3",
                             "name": "Miecz sprawiedliwości",
-                            "script": "args.item.system.qualities.value.push({name : \"magical\"})"
+                            "script": "[Script.eWWLmA2xINR321aK]"
                         },
                         {
                             "id": "rR3CML7hvrzjzYH3",
                             "name": "Miecz sprawiedliwości",
-                            "script": "    args.applyAP = false;\n\n    this.script.scriptNotification(\"Test dotyczy wyłącznie kryminalistów, w przeciwnym wypadku zamknij okno.\");\n    let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {fields : {difficulty : \"average\"}, appendTitle : ` - ${this.effect.name}`});\n    await test.roll();\n    if (test.failed)\n    {\n      this.actor.addCondition(\"unconscious\");\n    }"
+                            "script": "[Script.wsqNM4NHnwaAAQym]"
                         }
                     ],
                     "id": "rR3CML7hvrzjzYH3",
@@ -1013,12 +989,11 @@
                 "FbFPvypAtB428U0r": {
                     "id": "FbFPvypAtB428U0r",
                     "name": "Oplątanie",
-                    "script": "let num = 1 + {{overcast.usage.other.count}};\nif (!num || num <= 0) {\n   num = 1;\n}\nargs.actor.addCondition(\"entangled\", num);",
                     "scriptData": [
                         {
                             "id": "FbFPvypAtB428U0r",
                             "name": "Oplątanie",
-                            "script": "let num = (this.effect.sourceTest.result.overcast.usage.other.current || 1)\n\nthis.actor.addCondition(\"entangled\", num)"
+                            "script": "[Script.cDBhmHn5kjgWBAlT]"
                         }
                     ]
                 }
@@ -1041,14 +1016,14 @@
                         {
                             "id": "B6C7PTHXo7vQ79L1",
                             "name": "Ukojenie Rhyi",
-                            "script": "if (!this.actor.effects.find(e => e.isCondition))\n{\n\treturn this.script.scriptNotification(\"Aktor nie posiada żadnych Stanów\")\n}\n\nlet choice = await ItemDialog.create(this.actor.effects.filter(i => i.isCondition), 1, \"Wybierz Stan\")\n\nif (choice[0])\n{\n\tawait this.actor.removeCondition(choice[0].conditionId)\n}\n\nif (this.actor.effects.find(e => e.isCondition))\n{\n    return false; // Delete the effect if there are still conditions, otherwise, effect remains and provides the bonus\n}"
+                            "script": "[Script.Y8J66v8VTKUASGuK]"
                         },
                         {
                             "id": "B6C7PTHXo7vQ79L1",
                             "name": "Ukojenie Rhyi",
-                            "script": "args.fields.modifier += 10;",
-                            "activationScript": "return true;",
-                            "submissionScript": "this.effect.delete();"
+                            "script": "[Script.xPDMpOvC1ZBVxrNg]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]",
+                            "submissionScript": "[Script.TzgmYRXFXRspIo1i]"
                         }
                     ],
                     "id": "B6C7PTHXo7vQ79L1",
@@ -1065,12 +1040,11 @@
                 "1TWDvZQnuHAsfxxd": {
                     "id": "1TWDvZQnuHAsfxxd",
                     "name": "Kły i Pazury",
-                    "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.pLW9SVX0TVTYPiPv\");\nitem = item.toObject();\nitem.system.specification.value = 3;\nthis.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect : this.effect.id});\nitem = await fromUuid(\"Compendium.wfrp4e-core.items.AtpAudHA4ybXVlWM\");\nitem = item.toObject();\nitem.system.specification.value = 4;\nthis.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect : this.effect.id});",
                     "scriptData": [
                         {
                             "id": "1TWDvZQnuHAsfxxd",
                             "name": "Kły i Pazury",
-                            "script": "let tooth = await fromUuid(\"Compendium.wfrp4e-core.items.pLW9SVX0TVTYPiPv\")\ntooth = tooth.toObject()\ntooth.system.specification.value = 3\ntooth.system.qualities.value = [{name : \"magical\"}]\n \nlet claw = await fromUuid(\"Compendium.wfrp4e-core.items.AtpAudHA4ybXVlWM\")\nclaw = claw.toObject()\nclaw.system.specification.value = 4\nclaw.system.qualities.value = [{name : \"magical\"}]\nclaw.name = \"Szpony\"\n\nthis.actor.createEmbeddedDocuments(\"Item\", [tooth, claw], {fromEffect : this.effect.id})"
+                            "script": "[Script.DL9vYNft9aXdV2aW]"
                         }
                     ]
                 }
@@ -1088,12 +1062,11 @@
                 "JlsdDkPK9j9Y65sB": {
                     "id": "JlsdDkPK9j9Y65sB",
                     "name": "Gorejące słońce",
-                    "script": "if (\"{{outcome}}\" == \"success\") {\n  let blinded = 1 + {{overcast.usage.other.count}};\n  args.actor.addCondition(\"blinded\", blinded);\n}",
                     "scriptData": [
                         {
                             "id": "JlsdDkPK9j9Y65sB",
                             "name": "Gorejące słońce",
-                            "script": "if (this.effect.sourceTest.result.outcome == \"success\")\n{\n    let blinded = 1 + this.effect.sourceTest.result.overcast.usage.other.count\n    this.actor.addCondition(\"blinded\", blinded)\n}"
+                            "script": "[Script.xMhhVol8Is3DJ3gb]"
                         }
                     ]
                 }
@@ -1150,12 +1123,11 @@
                 "gvhH2LxUqQQxN6R8": {
                     "id": "gvhH2LxUqQQxN6R8",
                     "name": "Wieczny odpoczynek",
-                    "script": "if (args.actor.has(game.i18n.localize(\"NAME.Undead\")) && args.actor.has(game.i18n.localize(\"NAME.Construct\"))) {\n   args.actor.addCondition(\"dead\");\n}",
                     "scriptData": [
                         {
                             "id": "gvhH2LxUqQQxN6R8",
                             "name": "Wieczny odpoczynek",
-                            "script": "if (this.actor.has(game.i18n.localize(\"NAME.Undead\")) && this.actor.has(game.i18n.localize(\"NAME.Construct\")))\n   this.actor.addCondition(\"dead\")"
+                            "script": "[Script.JstrA46EYSEuRSy5]"
                         }
                     ]
                 }
@@ -1173,12 +1145,11 @@
                 "dx14txcPj5zl0vjZ": {
                     "id": "dx14txcPj5zl0vjZ",
                     "name": "Kometa Sigmara",
-                    "script": "args.actor.addCondition(\"ablaze\");",
                     "scriptData": [
                         {
                             "id": "dx14txcPj5zl0vjZ",
                             "name": "Kometa Sigmara",
-                            "script": "this.actor.addCondition(\"ablaze\")\nlet roll = await new Roll(`1d10 + ${parseInt(this.effect.sourceTest.result.SL)}`).roll();\ngame.dice3d?.showForRoll(roll);\nthis.script.scriptMessage(await this.actor.applyBasicDamage(roll.total, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL, suppressMsg : true}))"
+                            "script": "[Script.DhZqJso1JWYtGrKk]"
                         }
                     ]
                 }
@@ -1201,12 +1172,12 @@
                         {
                             "id": "90vi32xekMLeXdXT",
                             "name": "Odmrożenia",
-                            "script": "args.item.system.qualities.value.push({name : \"magical\"});\nargs.item.system.damage.value += ` + ${parseInt(this.effect.sourceTest.result.SL)}`;\nargs.item.name += ` (${this.effect.name})`"
+                            "script": "[Script.U5ndCwcJ1s3Ns26w]"
                         },
                         {
                             "id": "90vi32xekMLeXdXT",
                             "name": "Odmrożenia",
-                            "script": "if (args.totalWoundLoss > 0)\n{\n\targs.actor.addCondition(\"stunned\");\n\targs.actor.hasCondition(\"bleeding\")?.delete()\n}"
+                            "script": "[Script.k8TC0yzp4xfOXD2n]"
                         }
                     ],
                     "id": "90vi32xekMLeXdXT",
@@ -1224,12 +1195,11 @@
                 "HqH1WB4M1YCR0kRg": {
                     "id": "HqH1WB4M1YCR0kRg",
                     "name": "Zniszczenie ożywieńca",
-                    "script": "if (args.actor.has(game.i18n.localize(\"NAME.Undead\"))) {\n    let damage = (await new Roll(\"1d10\").roll()).total;\n    await args.actor.applyBasicDamage(damage, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL});\n}",
                     "scriptData": [
                         {
                             "id": "HqH1WB4M1YCR0kRg",
                             "name": "Zniszczenie ożywieńca",
-                            "script": "    let roll = await new Roll(\"1d10\").roll();\n    game.dice3d?.showForRoll(roll);\n    this.script.scriptMessage(await this.actor.applyBasicDamage(roll.total, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL, suppressMsg : true}))\n"
+                            "script": "[Script.GTZUO73pUJKpM1JB]"
                         }
                     ],
                     "filter": "return !this.actor.has(game.i18n.localize(\"NAME.Undead\"))"
@@ -1253,7 +1223,7 @@
                         {
                             "id": "3vMF3rqvtV17CtTa",
                             "name": "Niepokalana niewinność",
-                            "script": "let test = this.effect.sourceTest;\nif (test.failed && (test.result.roll % 11 == 0 || test.result.roll == 100))\n{\n\tlet points = await new Roll(\"1d10\").roll();\n\tgame.dice3d?.showForRoll(points)\n\tthis.actor.update({\"system.status.corruption.value\" : this.actor.system.status.corruption.value + points.total})\n\tthis.script.scriptMessage(`Otrzymano punkty Zepsucia: ${points.total}`)\n}\nelse \n{\n\tlet points = this.effect.sourceTest.result.overcast.usage.other.current;\n\tthis.actor.update({\"system.status.corruption.value\" : this.actor.system.status.corruption.value - points})\n\tthis.script.scriptMessage(`Utracono punkty Zepsucia: ${points}`)\n}"
+                            "script": "[Script.Msygc7oQQPB5fw0b]"
                         }
                     ],
                     "id": "3vMF3rqvtV17CtTa",
@@ -1284,7 +1254,7 @@
                         {
                             "id": "qyW4IN35YlJimtdH",
                             "name": "Zwierzęcy Instynkt",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.Item.9h82z72XGo9tfgQS\")\nthis.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect : this.effect.id})"
+                            "script": "[Script.v4ITTsSY9EvCbhZP]"
                         }
                     ],
                     "id": "qyW4IN35YlJimtdH",
@@ -1367,12 +1337,11 @@
                 "aaiZynMi60jGc0Jn": {
                     "id": "aaiZynMi60jGc0Jn",
                     "name": "Wytrwałość Eremity",
-                    "script": "let stunned = args.actor.hasCondition(\"stunned\")\nif (stunned)\n   setProperty(stunned, \"flags.wfrp4e.script\", \"\")\n\nlet poisoned= args.actor.hasCondition(\"poisoned\")\nif (poisoned)\n   setProperty(poisoned, \"flags.wfrp4e.script\", \"\")\n\nlet deafened = args.actor.hasCondition(\"deafened\")\nif (deafened)\n   setProperty(deafened, \"flags.wfrp4e.effectTrigger\", \"\")\n\nlet entangled = args.actor.hasCondition(\"entangled\")\nif (entangled)\n   setProperty(entangled, \"flags.wfrp4e.effectTrigger\", \"\")\n\nlet fatigued = args.actor.hasCondition(\"fatigued\")\nif (fatigued)\n   setProperty(fatigued, \"flags.wfrp4e.script\", \"\")\n\nlet blinded = args.actor.hasCondition(\"blinded\")\nif (blinded)\n   setProperty(blinded, \"flags.wfrp4e.effectTrigger\", \"\")\n\nlet broken = args.actor.hasCondition(\"broken\")\nif (broken)\n   setProperty(broken, \"flags.wfrp4e.effectTrigger\", \"\")\n\nlet prone= args.actor.hasCondition(\"prone\")\nif (prone)\n   setProperty(prone, \"flags.wfrp4e.effectTrigger\", \"\")",
                     "scriptData": [
                         {
                             "id": "aaiZynMi60jGc0Jn",
                             "name": "Wytrwałość Eremity",
-                            "script": "let stunned = args.actor.hasCondition(\"stunned\")\nif (stunned)\n   setProperty(stunned, \"flags.wfrp4e.scriptData\", getProperty(stunned, \"flags.wfrp4e.scriptData\").filter(s => s.trigger != \"dialog\"))\n\nlet poisoned= args.actor.hasCondition(\"poisoned\")\nif (poisoned)\n    setProperty(poisoned, \"flags.wfrp4e.scriptData\", getProperty(poisoned, \"flags.wfrp4e.scriptData\").filter(s => s.trigger != \"dialog\"))\n\nlet deafened = args.actor.hasCondition(\"deafened\")\nif (deafened)\n    setProperty(deafened, \"flags.wfrp4e.scriptData\", getProperty(deafened, \"flags.wfrp4e.scriptData\").filter(s => s.trigger != \"dialog\"))\n\nlet entangled = args.actor.hasCondition(\"entangled\")\nif (entangled)\n    setProperty(entangled, \"flags.wfrp4e.scriptData\", getProperty(entangled, \"flags.wfrp4e.scriptData\").filter(s => s.trigger != \"dialog\"))\n\nlet fatigued = args.actor.hasCondition(\"fatigued\")\nif (fatigued)\n    setProperty(fatigued, \"flags.wfrp4e.scriptData\", getProperty(fatigued, \"flags.wfrp4e.scriptData\").filter(s => s.trigger != \"dialog\"))\n\nlet blinded = args.actor.hasCondition(\"blinded\")\nif (blinded)\n    setProperty(blinded, \"flags.wfrp4e.scriptData\", getProperty(blinded, \"flags.wfrp4e.scriptData\").filter(s => s.trigger != \"dialog\"))\n\nlet broken = args.actor.hasCondition(\"broken\")\nif (broken)\n    setProperty(broken, \"flags.wfrp4e.scriptData\", getProperty(broken, \"flags.wfrp4e.scriptData\").filter(s => s.trigger != \"dialog\"))\n\nlet prone= args.actor.hasCondition(\"prone\")\nif (prone)\n    setProperty(prone, \"flags.wfrp4e.scriptData\", getProperty(prone, \"flags.wfrp4e.scriptData\").filter(s => s.trigger != \"dialog\"))"
+                            "script": "[Script.xpgXWoK2zDnG1uiF]"
                         }
                     ]
                 }
@@ -1393,7 +1362,7 @@
                 "Z0GLLTahLhnGYyhg": {
                     "scriptData": [
                         {
-                            "script": "let cured = await Dialog.wait({\n    title : this.effect.name,\n    content : \"<p>Podaj liczbę wyleczonych chorób/trucizn</p><input type='number'>\",\n    buttons : {\n        confirm : {\n            label : \"Confirm\",\n            callback : (dlg) => {\n                let input = dlg.find(\"input\");\n                value = parseInt(input[0].value);\n                return value;\n            }\n        }\n    }\n})\n\n\nlet damage = 0;\n\nlet rolls = new Array(cured).fill(\"\").map(i => `max(0, 1d10 - ${this.actor.system.characteristics.fel.bonus})`)\n\nlet test = new Roll(`${rolls.join(\" + \")}`);\nawait test.roll();\ntest.toMessage({speaker : {alias : this.actor.name}, flavor : this.effect.name});\nthis.script.scriptMessage(await this.actor.applyBasicDamage(test.total, { damageType: game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL, suppressMsg : true }))",
+                            "script": "[Script.v4CCxVaVGf9i8U7X]",
                             "id": "Z0GLLTahLhnGYyhg",
                             "name": "Gorzkie oczyszczenie"
                         }
@@ -1416,19 +1385,19 @@
                     "scriptData": [
                         {
                             "id": "WgN9vXmtZAIwQkym",
-                            "name": "Zimowy chłód"
+                            "name": "Zimowy chłód",
+                            "script": "[Script.OxsBnnVI3Smpknpb]"
                         }
                     ],
                     "id": "WgN9vXmtZAIwQkym",
-                    "name": "Zimowy chłód",
-                    "filter": "return this.actor.uuid == this.effect.sourceActor?.uuid;"
+                    "name": "Zimowy chłód"
                 },
                 "WKYusHV8UerVWjSu": {
                     "scriptData": [
                         {
                             "id": "WKYusHV8UerVWjSu",
                             "name": "Zimowy chłód (Strach)",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.Item.pTorrE0l3VybAbtn\");\nlet data = item.toObject();\ndata.system.specification.value = 1;\nthis.actor.createEmbeddedDocuments(\"Item\", [data], {fromEffect : this.effect.id})"
+                            "script": "[Script.AmpDbT0BkDHeaRzf]"
                         }
                     ],
                     "id": "WKYusHV8UerVWjSu",
@@ -1445,12 +1414,11 @@
                 "4hBoeFxZYT68Npxr": {
                     "id": "4hBoeFxZYT68Npxr",
                     "name": "Tarcza Myrmidii",
-                    "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 1;\nAP[\"rArm\"].value += 1;\nAP[\"lArm\"].value += 1;\nAP[\"body\"].value += 1;\nAP[\"lLeg\"].value += 1;\nAP[\"rLeg\"].value += 1;",
                     "scriptData": [
                         {
                             "id": "4hBoeFxZYT68Npxr",
                             "name": "Tarcza Myrmidii",
-                            "script": "this.actor.status.addArmour(1, {source: this.effect, magical : true})"
+                            "script": "[Script.1ZrzpfVwPJHdwp23]"
                         }
                     ]
                 }
@@ -1468,12 +1436,11 @@
                 "s0zdvcCpdHza4MZf": {
                     "id": "s0zdvcCpdHza4MZf",
                     "name": "Chód marynarza",
-                    "script": "await args.actor.addCondition(\"blinded\")\nawait args.actor.addCondition(\"deafened\")\nawait args.actor.addCondition(\"fatigued\")",
                     "scriptData": [
                         {
                             "id": "s0zdvcCpdHza4MZf",
                             "name": "Chód marynarza",
-                            "script": "await this.actor.addCondition(\"blinded\")\nawait this.actor.addCondition(\"deafened\")\nawait this.actor.addCondition(\"fatigued\")"
+                            "script": "[Script.jYJRO5XPyG7y6fih]"
                         }
                     ]
                 }
@@ -1496,17 +1463,17 @@
                         {
                             "id": "ENz32CXPyOrNtmu7",
                             "name": "Młot Sigmara",
-                            "script": "args.item.system.qualities.value.push({name : \"magical\"})"
+                            "script": "[Script.eWWLmA2xINR321aK]"
                         },
                         {
                             "id": "ENz32CXPyOrNtmu7",
                             "name": "Młot Sigmara",
-                            "script": "args.item.system.damage.value = `BS + ${this.actor.system.characteristics.fel.bonus}`;"
+                            "script": "[Script.NrVFrIXM8GnIbojv]"
                         },
                         {
                             "id": "ENz32CXPyOrNtmu7",
                             "name": "Młot Sigmara",
-                            "script": "await args.actor.addCondition(\"ablaze\"); await args.actor.addCondition(\"prone\");"
+                            "script": "[Script.esuLwq4g5T8k1kLT]"
                         }
                     ],
                     "id": "ENz32CXPyOrNtmu7",
@@ -1529,7 +1496,7 @@
                         {
                             "id": "516PqG2C3iLdf78r",
                             "name": "Złote łzy",
-                            "script": "let choice = await ItemDialog.create(this.actor.itemTypes.critical, (this.effect.sourceTest.result.overcast.usage.other.current || 1), \"Wybierz Ranę Krytyczną do uleczenie (Nie można odzyskać utraconych kończyn)\")\n\nthis.script.scriptMessage(`Uleczono:<strong>${choice.map(i => i.name).join(i => `, `)}</strong>`);\nthis.actor.deleteEmbeddedDocuments(\"Item\", choice.map(i => i.id))"
+                            "script": "[Script.OicQSEVZBbqLtrcf]"
                         }
                     ],
                     "id": "516PqG2C3iLdf78r",
@@ -1551,7 +1518,7 @@
                         {
                             "id": "Gf79SxYUeZQGAu5v",
                             "name": "Męczeństwo",
-                            "script": "let sourceActor = this.effect.sourceActor;\nlet damage = args.totalWoundLoss;\nlet tb = sourceActor.system.characteristics.t.bonus\nargs.abort = `<strong>${this.effect.name}</strong>: Zadano obrażenia: ${sourceActor.name}`;\n\nlet message = await sourceActor.applyBasicDamage(damage - tb, {damageType: game.wfrp4e.config.DAMAGE_TYPE.IGNORE_AP, suppressMsg : true})\n\nthis.script.scriptMessage(message.replace(`${tb} BWt`, `${tb} × 2 BWt`))"
+                            "script": "[Script.58rFc9HiBoX66J6p]"
                         }
                     ],
                     "id": "Gf79SxYUeZQGAu5v",

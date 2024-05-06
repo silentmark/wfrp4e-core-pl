@@ -113,7 +113,6 @@ Hooks.on("setup", function () {
 					"Skradanie (Wieś)",
 					"Sztuka Przetrwania",
 					"Tropienie",
-							
 					"Atletyka",
 					"Wspinaczka",
 					"Występy (Śpiewanie)",
@@ -132,7 +131,6 @@ Hooks.on("setup", function () {
 					"Skradanie (Wieś)",
 					"Sztuka Przetrwania",
 					"Tropienie",
-							
 					"Przekupstwo",
 					"Charyzma",
 					"Mocna Głowa",
@@ -151,7 +149,6 @@ Hooks.on("setup", function () {
 					"Skradanie (Wieś)",
 					"Sztuka Przetrwania",
 					"Tropienie",
-
 					"Oswajanie",
 					"Język (Magiczny)",
 					"Wiedza (Argwylon)",
@@ -170,7 +167,6 @@ Hooks.on("setup", function () {
 					"Skradanie (Wieś)",
 					"Sztuka Przetrwania",
 					"Tropienie",
-
 					"Unik",
 					"Zastraszanie",
 					"Zastawianie Pułapek",
@@ -189,7 +185,6 @@ Hooks.on("setup", function () {
 					"Skradanie (Wieś)",
 					"Sztuka Przetrwania",
 					"Tropienie",
-
 					"Opieka nad Zwierzętami",
 					"Oswajanie",
 					"Jeździectwo (Konie)",
@@ -208,7 +203,6 @@ Hooks.on("setup", function () {
 					"Skradanie (Wieś)",
 					"Sztuka Przetrwania",
 					"Tropienie",
-
 					"Atletyka",
 					"Unik",
 					"Opanowanie",
@@ -227,7 +221,6 @@ Hooks.on("setup", function () {
 					"Skradanie (Wieś)",
 					"Sztuka Przetrwania",
 					"Tropienie",
-
 					"Wspinaczka", 
 					"Intuicja",
 					"Wiedza (Wydrioth)",
@@ -246,7 +239,6 @@ Hooks.on("setup", function () {
 					"Skradanie (Wieś)",
 					"Sztuka Przetrwania",
 					"Tropienie",
-
 					"Atletyka",
 					"Wspinaczka",
 					"Opanowanie",
@@ -266,7 +258,6 @@ Hooks.on("setup", function () {
 					"Opanowanie",
 					"Sztuka Przetrwania",
 					"Tropienie",
-
 					"Zwinne Palce",
 					"Kuglarstwo (Taniec)",
 					"Występy (Śpiewanie)",
@@ -285,7 +276,6 @@ Hooks.on("setup", function () {
 					"Opanowanie",
 					"Sztuka Przetrwania",
 					"Tropienie",
-
 					"Wycena",
 					"Wiedza (Metalurgia)",
 					"Wiedza (Torgovann)",
@@ -304,7 +294,6 @@ Hooks.on("setup", function () {
 					"Opanowanie",
 					"Sztuka Przetrwania",
 					"Tropienie",
-
 					"Atletyka",
 					"Zastraszanie", 
 					"Wiedza (Anmyr)",
@@ -323,7 +312,6 @@ Hooks.on("setup", function () {
 					"Opanowanie",
 					"Sztuka Przetrwania",
 					"Tropienie",
-
 					"Sztuka (Rzeżbiarstwo)",
 					"Opanowanie",
 					"Występy (Śpiewanie)",
@@ -471,7 +459,10 @@ Hooks.on("setup", function () {
 	};
 
 	WFRP4E.speciesTalents = {
-		human: ["Wróżba Losu", "Błyskotliwość, Charyzmatyczny", 3],
+		human: [
+			"Wróżba Losu", 
+			"Błyskotliwość, Charyzmatyczny", 
+			3],
 		dwarf: [
 			"Odporność na Magię",
 			"Widzenie w Ciemności",
@@ -651,8 +642,8 @@ Hooks.on("setup", function () {
         "nausea": "WFRP4E.Symptom.Nausea",
         "pox": "WFRP4E.Symptom.Pox",
         "wounded": "WFRP4E.Symptom.Wounded",
-		"delirium": "Delirium",
-		"swelling": "Obrzęk",
+		"delirium": "WFRP4E.Symptom.Delirium",
+		"swelling": "WFRP4E.Symptom.Swelling",
 	};
 
 	WFRP4E.symptomDescriptions = {
@@ -703,7 +694,16 @@ Hooks.on("setup", function () {
 						{
 							"label": "Dodaj Cechę Stworzenia Strach",
 							"trigger": "rollCastTest",
-							"script": "if (args.test.result.castOutcome == \"success\")\n{\n	args.test.result.other.push(`<strong>${this.effect.name}</strong>: @Fear[1,${this.actor.prototypeToken.name}]`)\n\tif (!this.actor.has(game.i18n.localize(\"NAME.Fear\")))\n\t{\n\t\tlet item = await fromUuid(\"Compendium.wfrp4e-core.items.Item.pTorrE0l3VybAbtn\");\n\t\tlet data = item.toObject();\n\t\tdata.system.specification.value = 1\n\t\tthis.actor.createEmbeddedDocuments(\"Item\", [data])\n\t\tthis.script.scriptNotification(\"Dodano Cechę Stworzenia Strach\");\n\t}\n}"
+							"script": `if (args.test.result.castOutcome == "success") {
+								args.test.result.other.push(``<strong>${this.effect.name}</strong>: @Fear[1,${this.actor.prototypeToken.name}]``)
+									if (!this.actor.has(game.i18n.localize("NAME.Fear"))) {
+										let item = await fromUuid("Compendium.wfrp4e-core.items.pTorrE0l3VybAbtn");
+										let data = item.toObject();
+										data.system.specification.value = 1
+										this.actor.createEmbeddedDocuments("Item", [data])
+										this.script.scriptNotification("Dodano Cechę Stworzenia Strach");
+									}
+								}`
 						}
 					]
 				}
@@ -778,7 +778,7 @@ Hooks.on("setup", function () {
 							if (args.applyAP && args.modifiers.ap.metal) 
 							{
 								args.modifiers.ap.ignored += args.modifiers.ap.metal
-								args.modifiers.ap.details.push("<strong>" + this.effect.name + "</strong>: Zigonrowano Metal (" + args.modifiers.ap.metal + ")");
+								args.modifiers.ap.details.push("<strong>" + this.effect.name + "</strong>: Zigonrowano Metalowy Pancerz (" + args.modifiers.ap.metal + ")");
 								args.modifiers.ap.metal = 0
 							}
 							`
@@ -806,8 +806,8 @@ Hooks.on("setup", function () {
 							if (args.applyAP && args.modifiers.ap.metal) 
 							{
 								args.modifiers.ap.ignored += args.modifiers.ap.metal
-								args.modifiers.other.push({value : args.modifiers.ap.metal, label : this.effect.name, details : "Add Metal AP to Damage" })
-								args.modifiers.ap.details.push("<strong>" + this.effect.name + "</strong>: Ignore Metal (" + args.modifiers.ap.metal + ")");
+								args.modifiers.other.push({value : args.modifiers.ap.metal, label : this.effect.name, details : "Dodano PP Metalowego Pancerza do Obrażeń" })
+								args.modifiers.ap.details.push("<strong>" + this.effect.name + "</strong>: Zignorowano Metalowy Pancerz (" + args.modifiers.ap.metal + ")");
 								args.modifiers.ap.metal = 0
 							}
 							`
@@ -902,7 +902,7 @@ Hooks.on("setup", function () {
 							{
 								let nonmagical = args.modifiers.ap.value - args.modifiers.ap.magical
 								args.modifiers.ap.ignored += nonmagical
-								args.modifiers.ap.details.push("<strong>" + this.effect.name + "</strong>: Zignorowano niemagiczny pancerz (" + nonmagical + ")");
+								args.modifiers.ap.details.push("<strong>" + this.effect.name + "</strong>: Zignorowano Niemagiczny Pancerz (" + nonmagical + ")");
 							}
 							`
 						}
@@ -915,12 +915,12 @@ Hooks.on("setup", function () {
 			icon: "modules/wfrp4e-core/icons/spells/hedgecraft.png",
 			transfer: false,
 			flags: {
-				wfrp4e: {
-					effectApplication: "actor",
-					effectTrigger: "invoke",
-					lore: true,
-					script: "",
-				}
+                wfrp4e : {
+                    lore: true,
+                    applicationData : {
+                        type : "other"
+                    }
+                }
 			}
 		},
 		witchcraft: {
@@ -989,16 +989,20 @@ Hooks.on("setup", function () {
 	}
 
 	WFRP4E.symptomEffects = {
-        "WFRP4E.Symptom.Blight": {
-			name: "Uwiąd",
-			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
-			transfer: true,
-			flags: {
-				wfrp4e: {
-					effectApplication: "actor",
-					effectTrigger: "invoke",
-					symptom: true,
-					script: `
+        blight: {
+            name: "WFRP4E.Symptom.Blight",
+            icon: "modules/wfrp4e-core/icons/diseases/disease.png",
+            flags: {
+                wfrp4e: {
+                    symptom : true,
+                    applicationData : {
+                        type : "document"
+                    },
+                    scriptData: [
+                        {
+                            trigger: "manual",
+                            label : "@effect.name",
+                            script : `
                             let difficulty = ""
                             if (this.effect.name.includes("Umiarkowany"))
                                 difficulty = "easy"
@@ -1007,233 +1011,292 @@ Hooks.on("setup", function () {
                             else
                                 difficulty = "veasy"
         
-                            if (this.actor.isOwner) {
-                                args.actor.setupSkill(game.i18n.localize("NAME.Endurance"), {context : {failure : args.actor.name + " umiera z powodu Uwiądu"}, absolute: {difficulty}, appendTitle : " - Uwiąd"}).then(async test => {
-                                    await test.roll();
-                                    if (test.result.outcome == "failure")
-                                        await args.actor.addCondition("dead");
-                                    }
-                                });
-                            }`,
-				},
-			},
-		},
-        "WFRP4E.Symptom.Buboes": {
-			name: "Dymienica",
-			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
-			transfer: true,
-			flags: {
-				wfrp4e: {
-					effectApplication: "actor",
-					effectTrigger: "prefillDialog",
-					symptom: true,
-					script: `
-                        let applicableCharacteristics = ["ws", "bs", "s", "fel", "ag", "t", "dex"]
-                        if (args.type == "weapon")
-                            args.prefillModifiers.modifier -= 10
-                        else if (args.type == "characteristic") {
-                            if (applicableCharacteristics.includes(args.item))
-                                args.prefillModifiers.modifier -= 10
+                            let test = await this.actor.setupSkill(game.i18n.localize("NAME.Endurance"), {context : {failure : this.actor.name + " umiera z powodu Uwiądu"}, fields: {difficulty}, appendTitle : " - Uwiąd"})
+                            await test.roll();
+                            if (test.failed)
+                            {
+                                this.actor.addCondition("dead");
+                            }
+                            `,
                         }
-                        else if (args.type == "skill") {
-                            if (applicableCharacteristics.includes(args.item.characteristic.key))
-                                args.prefillModifiers.modifier -= 10
+                    ]
+                }
+            }
+        },
+        buboes: {
+            name: "WFRP4E.Symptom.Buboes",
+            icon: "modules/wfrp4e-core/icons/diseases/disease.png",
+            flags: {
+                wfrp4e: {
+                    symptom : true,
+                    applicationData : {
+                        type : "document"
+                    },
+                    scriptData: [
+                        {
+                            trigger: "dialog",
+                            label : "@effect.name",
+                            script : `args.fields.modifier -= 10`,
+                            options: {
+                                dialog : {
+                                    hideScript : `return !["ws", "bs", "s", "fel", "ag", "t", "dex"].includes(args.characteristic)`,
+                                    activateScript : `return ["ws", "bs", "s", "fel", "ag", "t", "dex"].includes(args.characteristic)`,
+                                }
+                            }
                         }
-                `,
-				},
-			},
-		},
-        "WFRP4E.Symptom.Convulsions": {
-			name: "Konwulsje",
-			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
-			transfer: true,
-			flags: {
-				wfrp4e: {
-					effectApplication: "actor",
-					effectTrigger: "prefillDialog",
-					symptom: true,
-					script: `
+                    ]
+                }
+            }
+        },
+        convulsions: {
+            name: "WFRP4E.Symptom.Convulsions",
+            icon: "modules/wfrp4e-core/icons/diseases/disease.png",
+            flags: {
+                wfrp4e: {
+                    symptom : true,
+                    applicationData : {
+                        type : "document"
+                    },
+                    scriptData: [
+                        {
+                            trigger: "dialog",
+                            label : "@effect.name",
+                            script : `
                             let modifier = 0
-                            if (this.effect.name.includes("Umiarkowany"))
+                            if (this.effect.name.includes("Umiarkowane"))
                                 modifier = -20
                             else
                                 modifier = -10
-                            
-                            let applicableCharacteristics = ["ws", "bs", "s", "ag", "t", "dex"]
-                            if (args.type == "weapon")
-                                args.prefillModifiers.modifier += modifier
-                            else if (args.type == "characteristic") {
-                                if (applicableCharacteristics.includes(args.item))
-                                    args.prefillModifiers.modifier += modifier
+                            args.fields.modifier += modifier
+                            `,
+                            options: {
+                                dialog : {
+                                    hideScript : `return !["ws", "bs", "s", "ag", "t", "dex"].includes(args.characteristic)`,
+                                    activateScript : `return ["ws", "bs", "s", "ag", "t", "dex"].includes(args.characteristic)`,
+                                }
                             }
-                            else if (args.type == "skill") {
-                                if (applicableCharacteristics.includes(args.item.characteristic.key))
-                                    args.prefillModifiers.modifier += modifier
-                            }`,
-				},
-			},
-		},
-		"WFRP4E.Symptom.Fever": {
-			name: "Gorączka",
-			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
-			transfer: true,
-			flags: {
-				wfrp4e: {
-					effectApplication: "actor",
-					effectTrigger: "prefillDialog",
-					symptom: true,
-					script: `
-                           
-                        let applicableCharacteristics = ["ws", "bs", "s", "fel", "ag", "t", "dex"]
+                        }
+                    ]
+                }
+            }
+        },
+        coughsandsneezes: {
+            name: "WFRP4E.Symptom.CoughsandSneezes",
+            icon: "modules/wfrp4e-core/icons/diseases/disease.png",
+            flags: {
+                wfrp4e: {
+                    "symptom": true
+                }
+            }
+        },
+        fever: {
+            name: "WFRP4E.Symptom.Fever",
+            icon: "modules/wfrp4e-core/icons/diseases/disease.png",
+            flags: {
+                wfrp4e: {
+                    symptom : true,
+                    applicationData : {
+                        type : "document"
+                    },
+                    scriptData: [
+                        {
+                            trigger: "dialog",
+                            label : "@effect.name",
+                            script : `args.fields.modifier -= 10`,
+                            options: {
+                                dialog : {
+                                    hideScript : `return !["ws", "bs", "s", "fel", "ag", "t", "dex"].includes(args.characteristic)`,
+                                    activateScript : `return ["ws", "bs", "s", "fel", "ag", "t", "dex"].includes(args.characteristic)`,
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        flux: {
+            name: "WFRP4E.Symptom.Flux",
+            icon: "modules/wfrp4e-core/icons/diseases/disease.png",
+            flags: {
+                wfrp4e: {
+                    "symptom": true
+                }
+            }
+        },
+        gangrene: {
+            name: "WFRP4E.Symptom.Gangrene",
+            icon: "modules/wfrp4e-core/icons/diseases/disease.png",
+            flags: {
+                wfrp4e: {
+                    symptom : true,
+                    applicationData : {
+                        type : "document"
+                    },
+                    scriptData: [
+                        {
+                            trigger: "dialog",
+                            label : "@effect.name",
+                            script : `args.fields.modifier -= 10`,
+                            options: {
+                                dialog : {
+                                    hideScript : `return !["fel"].includes(args.characteristic)`,
+                                    activateScript : `return ["fel"].includes(args.characteristic)`,
+                                }
+                            }
+                        },
+                        {
+                            trigger: "manual",
+                            label : "Uciążliwa Rana",
+                            script : `
+                            let test = await this.actor.setupSkill(game.i18n.localize("NAME.Endurance"), {fields: {difficulty : "average"}, appendTitle : " - Uciążliwa Rana"})
+                            await test.roll();
+                            if (test.failed)
+                            {
+                                let disease = await fromUuid("Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb");
+								await this.actor.createEmbeddedDocuments("Item", [disease.toObject()]);
+                                this.script.scriptNotification("Otrzymano: " + disease.name);
+                            }
+                            `,
+                        },
+                        {
+                            trigger: "manual",
+                            label : "Uwiąd",
+                            script : `
+                            let difficulty = ""
+                            if (this.effect.name.includes("Umiarkowany"))
+                                difficulty = "easy"
+                            else if (this.effect.name.includes("Poważny"))
+                                difficulty = "average"
+                            else
+                                difficulty = "veasy"
         
-                        if (args.type == "weapon")
-                            args.prefillModifiers.modifier -= 10
-                        else if (args.type == "characteristic") {
-                            if (applicableCharacteristics.includes(args.item))
-                                args.prefillModifiers.modifier -= 10
-                        }
-                        else if (args.type == "skill") {
-                            if (applicableCharacteristics.includes(args.item.characteristic.key))
-                                args.prefillModifiers.modifier -= 10
-                        }`,
-					otherEffects: ["blight", "wounded"],
-				},
-			},
-		},
-        "WFRP4E.Symptom.Flux": {
-			name: "Biegunka",
-			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
-			transfer: true,
-			flags: {
-				wfrp4e: {
-					symptom: true,
-				},
-			},
-		},
-        "WFRP4E.Symptom.Lingering": {
-			name: "Nawroty",
-			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
-			transfer: true,
-			flags: {
-				wfrp4e: {
-					symptom: true,
-				},
-			},
-		},
-        "WFRP4E.Symptom.CoughsandSneezes": {
-			name: "Kaszel i katar",
-			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
-			transfer: true,
-			flags: {
-				wfrp4e: {
-					symptom: true,
-				},
-			},
-		},
-        "WFRP4E.Symptom.Gangrene": {
-			name: "Gangrena",
-			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
-			transfer: true,
-			flags: {
-				wfrp4e: {
-					effectApplication: "actor",
-					effectTrigger: "prefillDialog",
-					symptom: true,
-					script: `
-                            if (args.type == "characteristic" && args.item == "fel") {
-                                if (args.item == "fel")
-                                    args.prefillModifiers.modifier -= 10
+                            let test = await this.actor.setupSkill(game.i18n.localize("NAME.Endurance"), {context : {failure : this.actor.name + " umiera z powodu Uwiądu"}, fields: {difficulty}, appendTitle : " - Uwiąd"})
+                            await test.roll();
+                            if (test.failed)
+                            {
+                                this.actor.addCondition("dead");
                             }
-                            else if (args.type == "skill") {
-                                if (args.item.characteristic.key == "fel")
-                                    args.prefillModifiers.modifier -= 10
-                            }
-                        }`,
-				},
-			},
-		},
-        "WFRP4E.Symptom.Malaise": {
-			name: "Apatia",
-			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
-			transfer: true,
-			flags: {
-				wfrp4e: {
-					effectApplication: "actor",
-					effectTrigger: "prepareData",
-					symptom: true,
-					script: `
-                        if (game.user.isUniqueGM) {
-                            let fatigued = args.actor.hasCondition("fatigued")
-                            if (!fatigued) {
-                                args.actor.addCondition("fatigued")
-                                ui.notifications.notify("Stan Zmęczenia dodany do " + args.actor.name + " który nie może zostać usunięty, dopóki symptom Apatii nie zostanie wyleczony.")
-                            }
+                            `,
                         }
-                        `,
-				},
-			},
-		},
-        "WFRP4E.Symptom.Nausea": {
-			name: "Nudności",
-			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
-			transfer: true,
-			flags: {
-				wfrp4e: {
-					effectApplication: "actor",
-					effectTrigger: "rollTest",
-					symptom: true,
-					script: `
-                        if (this.actor.isOwner && args.test.result.outcome == "failure") {
-                            let applicableCharacteristics = ["ws", "bs", "s", "fel", "ag", "t", "dex"]
-                            if (applicableCharacteristics.includes(args.test.characteristicKey))
-                                this.actor.addCondition("stunned")
-                        }
-                        `,
-				},
-			},
-		},
-        "WFRP4E.Symptom.Pox": {
-			name: "Wysypka",
-			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
-			transfer: true,
-			flags: {
-				wfrp4e: {
-					effectApplication: "actor",
-					effectTrigger: "prefillDialog",
-					symptom: true,
-					script: `
-                            if (args.type == "characteristic" && args.item == "fel")
-                                    args.prefillModifiers.modifier -= 10
-                            else if (args.type == "skill") {
-                                if (args.item.characteristic.key == "fel")
-                                    args.prefillModifiers.modifier -= 10
+                    ]
+                }
+            }
+        },
+        lingering: {
+            name: "WFRP4E.Symptom.Lingering",
+            icon: "modules/wfrp4e-core/icons/diseases/disease.png",
+            flags: {
+                wfrp4e: {
+                    "symptom": true
+                }
+            }
+        },
+        malaise: {
+            name: "WFRP4E.Symptom.Malaise",
+            icon: "modules/wfrp4e-core/icons/diseases/disease.png",
+            flags: {
+                wfrp4e: {
+                    symptom : true,
+                    applicationData : {
+                        type : "document"
+                    },
+                    scriptData: [
+                        {
+                            trigger: "update",
+                            label : "@effect.name",
+                            script : `
+                            let fatigued = this.actor.hasCondition("fatigued")
+                            if (!fatigued)
+                            {
+                                this.actor.addCondition("fatigued")
+                                ui.notifications.notify(this.actor.name + " otrzymał Stan Zmęczenia, który nie może zostać usunięty, dopóki Apatia nie zostanie wyleczona.")
                             }`,
-				},
-			},
-		},
-        "WFRP4E.Symptom.Wounded": {
-			name: "Uciążliwa Rana",
-			icon: "modules/wfrp4e-core/icons/diseases/disease.png",
-			transfer: true,
-			flags: {
-				wfrp4e: {
-					effectApplication: "actor",
-					effectTrigger: "invoke",
-					symptom: true,
-					script: `
-                            if (this.actor.isOwner) {
-                                args.actor.setupSkill(game.i18n.localize("NAME.Endurance"), {absolute: {difficulty : "average"}}).then(async test => {
-                                    await test.roll();
-                                    if (test.result.outcome == "failure") {
-                                        let disease = await fromUuid("Compendium.wfrp4e-core.diseases.kKccDTGzWzSXCBOb");
-                                        args.actor.createEmbeddedDocuments("Item", [disease.toObject()])
-                                    }
-                                });
+                        }
+                    ]
+                }
+            }
+        },
+        nausea: {
+            name: "WFRP4E.Symptom.Nausea",
+            icon: "modules/wfrp4e-core/icons/diseases/disease.png",
+            flags: {
+                wfrp4e: {
+                    symptom : true,
+                    applicationData : {
+                        type : "document"
+                    },
+                    scriptData: [
+                        {
+                            trigger: "rollTest",
+                            label : "@effect.name",
+                            script : `                 
+                            if (args.test.failed)
+                            {
+                                let applicableCharacteristics = ["ws", "bs", "s", "fel", "ag", "t", "dex"];
+                                if (applicableCharacteristics.includes(args.test.characteristicKey))
+                                {
+                                    this.actor.addCondition("stunned");
+                                }
                             }`,
-				},
-			},
-		},
-	};
+                        }
+                    ]
+                }
+            }
+        },
+        pox: {
+            name: "WFRP4E.Symptom.Pox",
+            icon: "modules/wfrp4e-core/icons/diseases/disease.png",
+            flags: {
+                wfrp4e: {
+                    symptom : true,
+                    applicationData : {
+                        type : "document"
+                    },
+                    scriptData: [
+                        {
+                            trigger: "dialog",
+                            label : "@effect.name",
+                            script : `args.fields.modifier -= 10`,
+                            options: {
+                                dialog : {
+                                    hideScript : `return !["fel"].includes(args.characteristic)`,
+                                    activateScript : `return ["fel"].includes(args.characteristic)`,
+                                }
+                            }
+                        }
+                    ]
+                }
+            }
+        },
+        wounded: {
+            name: "WFRP4E.Symptom.Wounded",
+            icon: "modules/wfrp4e-core/icons/diseases/disease.png",
+            flags: {
+                wfrp4e: {
+                    symptom : true,
+                    applicationData : {
+                        type : "document"
+                    },
+                    scriptData: [
+                        {
+                            trigger: "manual",
+                            label : "@effect.name",
+                            script : `
+                            let test = await this.actor.setupSkill(game.i18n.localize("NAME.Endurance"), {fields: {difficulty : "average"}, appendTitle : " - Uciążliwa Rana"})
+                            await test.roll();
+                            if (test.failed)
+                            {
+                                let disease = await fromUuid("Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb");
+								await this.actor.createEmbeddedDocuments("Item", [disease.toObject()]);
+                                this.script.scriptNotification("Otrzymano: " + disease.name);
+                            }
+                            `,
+                        }
+                    ]
+                }
+            }
+        }
+    }
 
 	for (const obj in WFRP4E) {
 		for (const el in WFRP4E[obj]) {
@@ -1243,29 +1306,41 @@ Hooks.on("setup", function () {
 		}
 	}
 
+	for (let symptom in WFRP4E.symptomEffects) {
+		WFRP4E.symptomEffects[symptom].name = game.i18n.localize(WFRP4E.symptomEffects[symptom].name);
+	}
+
 	mergeObject(game.wfrp4e.config, WFRP4E);
 
-	game.wfrp4e.config.effectTriggers = {
-		invoke: "Wywołanie Ręczne (invoke)",
-		oneTime: "Jednorazowy (oneTime)",
-		addItems : "Podczas dodawania przedmiotu (addItems)",
-		dialogChoice: "Opcjonalne modyfikatory okna testu (dialogChoice)",
-		prefillDialog: "Automatyczne modyfikatory okna testu (prefillDialog)",
-		update : "Podczas modyfikacji przedmiotu (update)",
-		prePrepareData: "Przed przygotowaniem danych aktora (prePrepareData)",
+	game.wfrp4e.config.scriptTriggers = {
+		manual: "Wywołanie Ręczne (manual)",
+		immediate: "Jednorazowy (immediate)",
+		dialog: "Okno Dialogowe Testu (dialog)",
+		addItems: "Podczas dodawania przedmiotu (addItems)",
+		preUpdate: "Przed Aktualizacją (preUpdate)",
+		update: "Podczas Aktualizacji (update)",
+		equipToggle: "Przełączanie Wyposażenia (equipToggle)",
+		prePrepareData: "Przed przygotowaniem danych (prePrepareData)",
 		prePrepareItems: "Przed przygotowaniem przedmiotów aktora (prePrepareItems)",
-		prepareData: "Przygotowanie danych aktora (prepareData)",
+		prepareData: "Przygotowanie danych (prepareData)",
+		prepareOwned: "Prepare Owned Data (For Items) (prepareOwned)",
+		computeCharacteristics: "Przeliczanie Cech (computeCharacteristics)",
+		computeEncumbrance: "Obliczanie Obciążenia (computeEncumbrance)",
 		preWoundCalc: "Przed obliczeniem żywotności (preWoundCalc)",
 		woundCalc: "Obliczanie Żywotności (woundCalc)",
-		calculateSize : "Obilczanie Rozmiaru (calculateSize)",
-		preAPCalc : "Przed obliczeniem Punktów Pancerza (preAPCalc)",
-		APCalc : "Obliczanie Punktów Pancerza (APCalc)",
+		calculateSize: "Obliczanie Rozmiaru (calculateSize)",
+		preAPCalc: "Przed obliczeniem Punktów Pancerza (preAPCalc)",
+		APCalc: "Obliczanie Punktów Pancerza (APCalc)",
 		preApplyDamage: "Przed zadaniem obrażeń (preApplyDamage)",
 		applyDamage: "Podczas zadawania obrażen (applyDamage)",
 		preTakeDamage: "Przed otrzymaniem obrażeń (preTakeDamage)",
 		takeDamage: "Podczas otrzymywania obrażeń (takeDamage)",
-		preApplyCondition: "Przed otrzymaniem Stanu (preApplyCondition)",
-		applyCondition: "Podczas otrzymania Stanu (applyCondition)",
+		computeTakeDamageModifiers: "Obliczanie Modyfikatorów Otrzymania Obrażeń (computeTakeDamageModifiers)",
+		computeApplyDamageModifiers: "Obliczanie Modyfikatórów Zadania Obrażeń (computeApplyDamageModifiers)",
+		//preAddCondition: "Pre-Add Condition",
+		preApplyCondition: "Przed Wykonaniem Skryptu Stanu (preApplyCondition)",
+		applyCondition: "Po Wykonaniem Skryptu Stanu (applyCondition)",
+		//preDeleteCondition: "Pre-Delete Condition",
 		prePrepareItem: "Przed przygotowaniem danych przedmiotu (prePrepareItem)",
 		prepareItem: "Przygotowanie danych przedmiotu (prepareItem)",
 		preRollTest: "Przed wykonaniem testu (preRollTest)",
@@ -1286,398 +1361,12 @@ Hooks.on("setup", function () {
 		opposedAttacker: "Po teście przeciwstawnym Atakującego (opposedAttacker)",
 		opposedDefender: "Po teście przeciwstawnym Broniącego się (opposedDefender)",
 		calculateOpposedDamage: "Obliczanie obrażeń z testu przeciwstawnego (calculateOpposedDamage)",
-		targetPrefillDialog: "Automatyczne modyfikatory okna testu gdy aktor jest celem (prefillDialog)",
 		getInitiativeFormula: "Obliczanie Inicjatywy podczas walki (getInitiativeFormula)",
-		startTurn : "Początek Tury (startTurn)",
+		createToken: "Utworzenie Tokena (createToken)",
+		deleteEffect: "Usunięcie Efektu (deleteEffect)",
 		endTurn: "Koniec Tury (endTurn)",
+		startTurn: "Początek Tury (startTurn)",
 		endRound: "Koniec Rundy (endRound)",
 		endCombat: "Koniec Walki (endCombat)",
-	};
-
-	game.wfrp4e.config.effectPlaceholder = {
-		invoke: `Ten efekt działa tylko po naciśnięciu przycisku Wywołaj.
-        args:
-    
-        brak`,
-		oneTime: `Ten efekt występuje raz, natychmiast po zastosowaniu.
-        args:
-    
-        actor : aktor właściwy dla efektu
-        `,
-
-		addItems : 
-		`Like Immediate effects, this happens once, but the effect will remain. This lets the effect also delete the added items when the effect is deleted. Can be async.
-		args: 
-	
-		actor : actor who owns the effect
-		`,
-
-		prefillDialog: `Ten efekt jest stosowany przed pokazaniem okna dialogowego rzutu i powinien zmienić wartości wstępnie wypełnione w sekcji bonusowej.
-        args:
-    
-        prefillModifiers : {modifier, difficulty, slBonus, successBonus}
-        type: string, 'weapon', 'skill' 'characteristic', etc.
-        item: używany przedmiot wymienionego typu
-        options: inne szczegóły dotyczące testu (na przykład options.rest lub options.mutate)
-    
-        Example:
-        if (args.type == "skill" && args.item.name == "Atletismo") args.prefillModifiers.modifier += 10`,
-
-		"update" : 
-		`This effect runs when an actor or an embedded document is changed. Can be async.
-		args:
-	
-		item: if an item is modified, it is provided as an argument
-		effect: if an effect is modified, it is provided as an argument
-		`,
-	
-		prePrepareData: `Ten efekt jest stosowany przed obliczeniem jakichkolwiek danych aktora.
-        args:
-    
-        actor : aktor właściwy dla efektu
-        `,
-
-		prePrepareItems: `Ten efekt jest stosowany przed sortowaniem i obliczaniem obiektów
-    
-        actor : aktor właściwy dla efektu
-        `,
-
-		prepareData: `Efekt ten jest stosowany po obliczeniu i przetworzeniu danych aktora.
-    
-        args:
-    
-        actor : aktor właściwy dla efektu
-        `,
-
-		preWoundCalc: `Ten efekt jest nakładany tuż przed obliczeniem Ran, idealny do zmiany atrybutów lub dodawania mnożników.
-    
-        actor : aktor właściwy dla efektu
-        sb : Bonus z Siły
-        tb : bonus z Wytrzymałości
-        wpb : Bonus z Siły Woli
-        multiplier : {
-            sb : Mnożnik z BS
-            tb : Mnożnik z BWt
-            wpb : Mnożnik z BSW
-        }
-    
-        e.g. para Hardy: "args.multiplier.tb += 1"
-        `,
-
-		woundCalc: `Ten efekt występuje po obliczeniu ran, idealny do pomnożenia wyniku.
-    
-        args:
-    
-        actor : aktor właściwy dla efektu
-        wounds : obliczone rany
-    
-        e.g. for Swarm: "wounds *= 5"
-        `,
-
-		calculateSize : 
-		`This effect is applied after size calculation, where it can be overridden. Cannot be async.
-	
-		args:
-	
-		size : Size value
-	
-		e.g. for Small: "args.size = 'sml'"
-		`,
-	
-		preAPCalc : `This effect is applied before AP is calculated. Cannot be async.
-	
-		args:
-	
-		AP : Armour object
-	
-		e.g. args.AP.head.value += 1
-		`,
-		APCalc : `This effect is applied after AP is calculated. Cannot be async.
-	
-		args:
-	
-		AP : Armour object
-	
-		e.g. args.AP.head.value += 1
-		`,
-	
-		preApplyDamage: `Ten efekt występuje przed nałożeniem obrażeń na test przeciwstawny.
-        args:
-    
-        actor : aktor który otrzymuje obrażenia
-        attacker : aktor atakujący
-        opposedTest : obiekt zawierający dane testu przeciwstawnego
-        damageType : wybrany typ obrażeń (ignorujący BWt, PP, etc.)
-        `,
-		applyDamage: `Ten efekt występuje po obliczeniu obrażeń w przeciwstawnym teście, ale przed aktualizacją danych aktora.
-    
-        args:
-    
-        actor : aktor który otrzymuje obrażenia
-        attacker : aktor atakujący
-        opposedTest : obiekt zawierający dane testu przeciwstawnego
-        damageType : wybrany typ obrażeń (ignorujący BWt, PP, etc.)
-        totalWoundLoss : Utracone rany po mitygacji
-        AP : dane użytych PP
-        updateMsg : sekwencja początkowa dla komunikatu o aktualizacji obrażeń
-        messageElements : wyświetlanie sekwencji użytych do pokazania, w jaki sposób obliczono mitygację obrażeń
-        `,
-
-		preTakeDamage: `Ten efekt ma miejsce przed otrzymaniem obrażeń w przeciwstawnym teście.
-    
-        args:
-    
-        actor : aktor który otrzymuje obrażenia
-        attacker : aktor atakujący
-        opposedTest : obiekt zawierający dane testu przeciwstawnego
-        damageType : wybrany typ obrażeń (ignorujący BWt, PP, etc.)
-        `,
-
-		takeDamage: `Ten efekt występuje po obliczeniu obrażeń w przeciwstawnym teście, ale przed aktualizacją danych aktora.
-    
-        args:
-    
-        actor : aktor który otrzymuje obrażenia
-        attacker : aktor atakujący
-        opposedTest : obiekt zawierający dane testu przeciwstawnego
-        damageType : ybrany typ obrażeń (ignorujący BWt, PP, etc.)
-        totalWoundLoss : Utracone rany po mitygacji
-        AP : dane użytych PP
-        updateMsg : sekwencja początkowa dla komunikatu o aktualizacji obrażeń
-        messageElements : wyświetlanie sekwencji użytych do pokazania, w jaki sposób obliczono mitygację obrażeń
-        `,
-
-		preApplyCondition: `Ten efekt występuje przed zastosowaniem efektów stanu.
-    
-        args:
-    
-        effect : stosowany stan
-        data : {
-            msg : Wiadomość na Chacie o zastosowaniu stanu
-            <inne dane, np. specyficzne dla stanu>
-        }
-        `,
-
-		applyCondition: `Ten efekt występuje po zastosowaniu efektów stanu.
-    
-        args:
-    
-        effect : stosowany stan
-        data : {
-            msg : Wiadomość na Chacie o zastosowaniu stanu
-            <inne dane, np. specyficzne dla stanu>
-        }
-        `,
-		prePrepareItem: `Ten efekt jest stosowany przed przetwarzaniem obiektu z danymi aktora.
-    
-        args:
-    
-        item : obiekt do przetwarzania
-        `,
-		prepareItem: `Ten efekt jest stosowany po przetworzeniu obiektu z danymi aktora.
-    
-        args:
-    
-        item : obiekt przetworzony
-        `,
-		preRollTest: `Ten efekt jest stosowany przed obliczeniem Testu.
-    
-        args:
-    
-        testData: Wszystkie dane niezbędne do wyliczenia wyniku
-        cardOptions: Dane do widoku, tytułu, szablonu itp. karty
-        `,
-		preRollWeaponTest: `Ten efekt jest nakładany przed obliczeniem testu broni.
-    
-        args:
-    
-        testData: Wszystkie dane niezbędne do wyliczenia wyniku
-        cardOptions: Dane do widoku, tytułu, szablonu itp. karty
-        `,
-
-		preRollCastTest: `Ten efekt jest nakładany przed obliczeniem testu rzucenia zaklęcia
-    
-        args:
-    
-        testData: Wszystkie dane niezbędne do wyliczenia wyniku
-        cardOptions: Dane do widoku, tytułu, szablonu itp. karty
-        `,
-
-		preChannellingTest: `Ten efekt jest nakładany przed obliczeniem testu splątywania
-    
-        args:
-    
-        testData: Wszystkie dane niezbędne do wyliczenia wyniku
-        cardOptions: Dane do widoku, tytułu, szablonu itp. karty
-        `,
-
-		preRollPrayerTest: `Ten efekt jest nakładany przed obliczeniem testu modlitwy.
-    
-        args:
-    
-        testData: Wszystkie dane niezbędne do wyliczenia wyniku
-        cardOptions: Dane do widoku, tytułu, szablonu itp. karty
-        `,
-
-		preRollTraitTest: `Ten efekt jest nakładany przed obliczeniem testu cechy.
-    
-        args:
-    
-        testData: Wszystkie dane niezbędne do wyliczenia wyniku
-        cardOptions: Dane do widoku, tytułu, szablonu itp. karty
-        `,
-
-		rollTest: `Ten efekt jest stosowany po obliczeniu rzutu.
-    
-        args:
-    
-        test: obiekt zawierający informacje o rzucie i wynik
-        cardOptions: Dane do widoku, tytułu, szablonu itp. karty
-        `,
-		rollIncomeTest: `Efekt ten jest stosowany po obliczeniu testu zarabiania.
-    
-        args:
-    
-        test: obiekt zawierający informacje o rzucie i wynik
-        cardOptions: Dane do widoku, tytułu, szablonu itp. karty
-        `,
-
-		rollWeaponTest: `Efekt ten jest stosowany po obliczeniu testu broni.
-    
-        args:
-    
-        test: obiekt zawierający informacje o rzucie i wynik
-        cardOptions: Dane do widoku, tytułu, szablonu itp. karty
-        `,
-
-		rollCastTest: `Efekt ten jest stosowany po obliczeniu testu rzucania zaklęcia.
-    
-        args:
-    
-        test: obiekt zawierający informacje o rzucie i wynik
-        cardOptions: Dane do widoku, tytułu, szablonu itp. karty
-        `,
-
-		rollChannellingTest: `Efekt ten jest stosowany po obliczeniu testu splątywania.
-    
-        args:
-    
-        test: obiekt zawierający informacje o rzucie i wynik
-        cardOptions: Dane do widoku, tytułu, szablonu itp. karty
-        `,
-
-		rollPrayerTest: `Efekt ten jest stosowany po obliczeniu testu modlitwy.
-    
-        args:
-    
-        test: obiekt zawierający informacje o rzucie i wynik
-        cardOptions: Dane do widoku, tytułu, szablonu itp. karty
-        `,
-
-		rollTraitTest: `Efekt ten jest stosowany po obliczeniu testu cechy.
-    
-        args:
-    
-        test: obiekt zawierający informacje o rzucie i wynik
-        cardOptions: Dane do widoku, tytułu, szablonu itp. karty
-        `,
-
-		preOpposedAttacker: `Ten efekt jest stosowany przed rozpoczęciem obliczania wyniku testu przeciwstawnego dla atakującego.
-    
-        args:
-    
-        attackerTest: obiekt testu atakującego
-        defenderTest: obiekt testu broniącego
-        opposedTest: obiekt testu przeciwstawnego, przed obliczeniami
-        `,
-		preOpposedDefender: `Ten efekt jest stosowany przed rozpoczęciem obliczania wyniku testu przeciwstawnego dla broniącego.
-    
-        args:
-    
-        attackerTest: obiekt testu atakującego
-        defenderTest: obiekt testu broniącego
-        opposedTest: obiekt testu przeciwstawnego, przed obliczeniami
-        `,
-
-		opposedAttacker: `Ten efekt jest stosowany po rozpoczęciu testu przeciwstawnego dla atakującego.
-    
-        args:
-    
-        attackerTest: obiekt testu atakującego
-        defenderTest: obiekt testu broniącego
-        opposedTest: obiekt testu przeciwstawnego, przed obliczeniami
-        `,
-
-		opposedDefender: `Ten efekt jest stosowany po rozpoczęciu testu przeciwstawnego dla broniącego.
-    
-        args:
-    
-        attackerTest: obiekt testu atakującego
-        defenderTest: obiekt testu broniącego
-        opposedTest: obiekt testu przeciwstawnego, przed obliczeniami
-        `,
-
-		calculateOpposedDamage: `Ten efekt jest stosowany podczas obliczania obrażeń testu przeciwstawnego, dla atakującego
-    
-        args:
-    
-        damage : początkowe obrażenia przed mnożnikami
-        damageMultiplier : mnożniki obliczone na podstawie różnicy rozmiarów
-        sizeDiff : liczbowa różnica w rozmiarze, użyta do dodatkowych obrażeń
-        opposedTest : obiekt testu przeciwstawnego
-        `,
-
-		getInitiativeFormula: `Efekt ten realizowany jest podczas określenia inicjatywy aktora
-    
-        args:
-    
-        initiative: Obliczona wartość inicjatywy
-        `,
-
-		targetPrefillDialog: `Ten efekt jest stosowany do innego aktora, gdy ten aktor jest celem i należy mu zmienić wartości wstępnie wypełnione w sekcji bonusów
-        args:
-    
-        prefillModifiers : {modifier, difficulty, slBonus, successBonus}
-        type: string, 'weapon', 'skill' 'characteristic', etc.
-        item: obiekt wspomnianego użytego typu
-        options: inne szczegóły dotyczące testu (na przykład options.rest lub options.mutate)
-    
-        Example:
-        if (args.type == "skill" && args.item.name == "Athletics") args.prefillModifiers.modifier += 10`,
-
-		endTurn: `Ten efekt jest wykonywany na koniec tury aktora.
-    
-        args:
-    
-        combat: obecna walka
-        `,
-
-		startTurn : 
-		`This effect runs at the start of an actor's turn. Can be async.
-	
-		args:
-	
-		combat: current combat
-		`,
-	
-		endRound: `Ten efekt jest wykonywany na koniec rundy.
-    
-        args:
-    
-        combat: obecna walka
-        `,
-		endCombat: `Ten efekt jest wykonywany na koniec walki.
-    
-        args:
-    
-        combat: obecna walka
-        `,
-
-		this: `
-    
-        Wszystkie skrypty efektów mają dostęp do:
-            this.actor : aktor wykonujący efekt
-            this.effect : wykonywany efekt
-            this.item : przedmiot, który wywołuje efekt, jeśli efekt pochodzi od przedmiotu`,
 	};
 });

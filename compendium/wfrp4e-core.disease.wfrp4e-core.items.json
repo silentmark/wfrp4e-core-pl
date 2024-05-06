@@ -20,19 +20,31 @@
             "description": "<p><i>Pomniejsze Infekcje</i> to wolno gojące się rany, którym towarzyszy drobna opuchlizna i gorączka. W Starym Świecie są równie powszechne, co powietrze. Większość z nich goi się sama z biegiem czasu, więc mało kto w ogóle się nimi martwi - dopóki nie jest za późno i przed chorym nie otwierają się Bramy Morra.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.1hQuVFZt9QnnbWzg",
             "effects": {
-                "FLB8zGutyEQWgRlb": {
-                    "id": "FLB8zGutyEQWgRlb",
-                    "name": "Nawroty (sporadyczne)"
-                },
-                "TbXenWmw4yRg7qlf": {
-                    "id": "TbXenWmw4yRg7qlf",
-                    "name": "Uciążliwa Rana",
-                    "script": "\n                        if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty : \"average\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            let disease = await fromUuid(\"Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb\");\n            args.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()]);\n        }\n    });\n}"
-                },
-                "tf4IaDGr6PVsHl7w": {
-                    "id": "tf4IaDGr6PVsHl7w",
+                "ePWCYy91bIlgLAuC": {
+                    "id": "ePWCYy91bIlgLAuC",
                     "name": "Apatia",
-                    "script": "                    if (game.user.isUniqueGM) {\n    let fatigued = args.actor.hasCondition(\"fatigued\");\n    if (!fatigued) {\n        args.actor.addCondition(\"fatigued\");\n        ui.notifications.notify(\"\" + args.actor.name + \" otrzymał zmęczenie, którego nie można usunąć dopóki nie zostanie wyleczony symptom Apatii.\");\n    }\n}"
+                    "scriptData": [
+                        {
+                            "id": "ePWCYy91bIlgLAuC",
+                            "name": "Apatia",
+                            "script": "\n                            let fatigued = this.actor.hasCondition(\"fatigued\")\nif (!fatigued ) {\n     this.actor.addCondition(\"fatigued \");\n     ui.notifications.notify(\"Zmęczenie dodane do \" + this.actor.name + \", które nie może zostać usunięte, dopóki objaw Apatia nie zostanie uleczony.\")\n}"
+                        }
+                    ]
+                },
+                "ic0YA6zLG6U93jKa": {
+                    "id": "ic0YA6zLG6U93jKa",
+                    "name": "Uciążliwa Rana",
+                    "scriptData": [
+                        {
+                            "id": "ic0YA6zLG6U93jKa",
+                            "name": "Uciążliwa Rana",
+                            "script": "\n                            let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {fields: {difficulty : \"average\"}, appendTitle : \" - Uciążliwa Rana\"});\nawait test.roll();\nif (test.failed) {\n    let disease = await fromUuid(\"Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb\");\n    this.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()]);\n    this.script.scriptNotification(\"Otrzymano \" + disease.name)\n}\n                            "
+                        }
+                    ]
+                },
+                "pIzrIn9LgUROw8Ez": {
+                    "id": "pIzrIn9LgUROw8Ez",
+                    "name": "Nawroty (Sporadyczne)"
                 }
             },
             "duration_value": "1d10",
@@ -49,30 +61,76 @@
             "description": "<p>Historycy twierdzą, że setki lat temu szczury zalały Imperium i przyniosły ze sobą <i>Czarną Dżumę</i>, która wybiła 90% populacji ludzi. Niewyjaśnione wybuchy tej straszliwej choroby zdarzają się do dzisiaj, a wtedy zjawiają się na miejscu niezwykle poważne mniszki w bieli. @UUID[JournalEntry.NcH9OhleJFfaUdon.JournalEntryPage.TjfeXu3fimHJ5I9Q]{Kult Shallyi} poprzysiągł wytrzebienie tej obrzydliwej choroby z powierzchni ziemi, więc korzystając z nadanych im starożytnych praw, kapłani i kapłanki Shallyi wznoszą otoczone białymi linami szpitale-izolatki wszędzie tam, gdzie występuje <i>Czarna Dżuma</i>. Nikt nie wejdzie na teren kwarantanny ani go nie opuści, dopóki epidemia nie zostanie opanowana, a ciała pochowane w odpowiedni sposób.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.aKiuGzlVO51JvsjV",
             "effects": {
-                "1J3ape1RdCwgziZe": {
-                    "id": "1J3ape1RdCwgziZe",
-                    "name": "Apatia",
-                    "script": "                    if (game.user.isUniqueGM) {\n    let fatigued = args.actor.hasCondition(\"fatigued\");\n    if (!fatigued) {\n        args.actor.addCondition(\"fatigued\");\n        ui.notifications.notify(\"\" + args.actor.name + \" otrzymał zmęczenie, którego nie można usunąc dopóki nie zostanie wyleczony symptom Apatii.\");\n    }\n}"
+                "ptrOabNiyWL7rEpc": {
+                    "scriptData": [
+                        {
+                            "script": "args.fields.modifier -= 10",
+                            "activationScript": "return [\"fel\"].includes(args.characteristic)",
+                            "hideScript": "return ![\"fel\"].includes(args.characteristic)",
+                            "id": "ptrOabNiyWL7rEpc",
+                            "name": "Gangrena"
+                        },
+                        {
+                            "id": "ptrOabNiyWL7rEpc",
+                            "name": "Gangrena",
+                            "script": "\n                            let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {fields: {difficulty : \"average\"}, appendTitle : \" - Uciążliwa Rana\"});\nawait test.roll();\nif (test.failed) {\n    let disease = await fromUuid(\"Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb\");\n    this.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()]);\n    this.script.scriptNotification(\"Otrzymano \" + disease.name)\n}\n                            "
+                        },
+                        {
+                            "id": "ptrOabNiyWL7rEpc",
+                            "name": "Gangrena",
+                            "script": "\n                            let difficulty = \"\";\nif (this.effect.name.includes(\"Umiarkowany\")) \n   difficulty = \"easy\"\nelse if (this.effect.name.includes(\"Poważny\"))\n    difficulty = \"average\"\nelse\n    difficulty = \"veasy\"\n\nlet test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {context : {failure : this.actor.name + \" Śmierć z powodu Uwiądu\"}, fields: {difficulty}, appendTitle : \" - Uwiąd\"})\nawait test.roll();\nif (test.failed) {\n    this.actor.addCondition(\"dead\");\n}\n                            "
+                        }
+                    ],
+                    "id": "ptrOabNiyWL7rEpc",
+                    "name": "Gangrena"
                 },
-                "BdDKgmnnXyID5l9r": {
-                    "id": "BdDKgmnnXyID5l9r",
-                    "name": "Gorączka",
-                    "script": "\n                       \n                    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"]\nif (args.type == \"weapon\") {\n    args.prefillModifiers.modifier -= 10;\n}\nelse if (args.type == \"characteristic\") {\n    if (applicableCharacteristics.includes(args.item)) {\n        args.prefillModifiers.modifier -= 10\n    }\n}\nelse if (args.type == \"skill\") {\n    if (applicableCharacteristics.includes(args.item.characteristic.key)) {\n                            args.prefillModifiers.modifier -= 10;\n    }\n}"
-                },
-                "NcJoF1DR82jScspx": {
-                    "id": "NcJoF1DR82jScspx",
-                    "name": "Dymienica",
-                    "script": "                    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"]\nif (args.type == \"weapon\") {\n    args.prefillModifiers.modifier -= 10\n}\nelse if (args.type == \"characteristic\") {\n    if (applicableCharacteristics.includes(args.item.key)) {\n        args.prefillModifiers.modifier -= 10;\n    }\n}\nelse if (args.type == \"skill\") {\n    if (applicableCharacteristics.includes(args.item.characteristic.key)) {\n        args.prefillModifiers.modifier -= 10;\n    }\n}"
-                },
-                "NKiIPNQehPO9eaxm": {
-                    "id": "NKiIPNQehPO9eaxm",
+                "z5AgtIbyxIsIPO9g": {
+                    "id": "z5AgtIbyxIsIPO9g",
                     "name": "Uwiąd (Umiarkowany)",
-                    "script": "\n                        let difficulty = \"\"\nif (this.effect.name.includes(game.i18n.localize(\"Moderate\"))) {\n    difficulty = \"easy\";\n}\nelse if (this.effect.name.includes(game.i18n.localize(\"Severe\"))) {\n    difficulty = \"average\";\n}\nelse {\n    difficulty = \"veasy\";\n}\n\nif (this.actor.isOwner) { \n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {context : {failure : args.actor.name + \" umiera z powodu Uwiądu\"}, absolute: {difficulty}, appendTitle : \" - Uwiąd\"}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"dead\")\n        }\n    });\n}"
+                    "scriptData": [
+                        {
+                            "id": "z5AgtIbyxIsIPO9g",
+                            "name": "Uwiąd (Umiarkowany)",
+                            "script": "\n                            let difficulty = \"\";\nif (this.effect.name.includes(\"Umiarkowany\")) \n   difficulty = \"easy\"\nelse if (this.effect.name.includes(\"Poważny\"))\n    difficulty = \"average\"\nelse\n    difficulty = \"veasy\"\n\nlet test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {context : {failure : this.actor.name + \" Śmierć z powodu Uwiądu\"}, fields: {difficulty}, appendTitle : \" - Uwiąd\"})\nawait test.roll();\nif (test.failed) {\n    this.actor.addCondition(\"dead\");\n}\n                            "
+                        }
+                    ]
                 },
-                "qNWBcG8TYO5QGmLk": {
-                    "id": "qNWBcG8TYO5QGmLk",
-                    "name": "Gangrena",
-                    "script": "\n                        if (args.type == \"characteristic\" && args.item == \"fel\") {\n    if (args.item == \"fel\") {\n        args.prefillModifiers.modifier -= 10;\n    }\n} else if (args.type == \"skill\") {\n    if (args.item.characteristic.key == \"fel\") {\n        args.prefillModifiers.modifier -= 10;\n    }\n}"
+                "DpXDhNg4Fjx9UYWp": {
+                    "scriptData": [
+                        {
+                            "id": "DpXDhNg4Fjx9UYWp",
+                            "name": "Dymienica",
+                            "script": "args.fields.modifier -= 10",
+                            "activationScript": "return [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
+                            "hideScript": "return ![\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)"
+                        }
+                    ],
+                    "id": "DpXDhNg4Fjx9UYWp",
+                    "name": "Dymienica"
+                },
+                "Oy2lGDiuqwH6qzSL": {
+                    "id": "Oy2lGDiuqwH6qzSL",
+                    "name": "Apatia",
+                    "scriptData": [
+                        {
+                            "id": "Oy2lGDiuqwH6qzSL",
+                            "name": "Apatia",
+                            "script": "\n                            let fatigued = this.actor.hasCondition(\"fatigued\")\nif (!fatigued ) {\n     this.actor.addCondition(\"fatigued \");\n     ui.notifications.notify(\"Zmęczenie dodane do \" + this.actor.name + \", które nie może zostać usunięte, dopóki objaw Apatia nie zostanie uleczony.\")\n}"
+                        }
+                    ]
+                },
+                "tWV666SBeHQ1SkLQ": {
+                    "id": "tWV666SBeHQ1SkLQ",
+                    "name": "Gorączka",
+                    "scriptData": [
+                        {
+                            "id": "tWV666SBeHQ1SkLQ",
+                            "name": "Gorączka",
+                            "script": "args.fields.modifier -= 10",
+                            "activationScript": "return [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
+                            "hideScript": "return ![\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)"
+                        }
+                    ]
                 }
             },
             "duration_value": "3d10",
@@ -89,14 +147,22 @@
             "description": "<p>To powszechna choroba wśród myśliwych, kuśnierzy i handlarzy. <i>Sierściawką</i> można zarazić się od zainfekowanego bydła i owiec, w tym poprzez dotykanie ich skór lub wełny, albo od ciał zwierząt, które padły na tę chorobę. Zaczyna się niewinnie - od małej, swędzącej wysypki, ale szybko całe ciało pokrywa się różowymi, głębokimi pęcherzami, choć zazwyczaj najwięcej występuje ich na korpusie i ramionach. Nie jest to najgroźniejsza z osp panoszących się po Imperium, ale potrafi utrzymywać się przez długi czas, a niekiedy bywa nawet śmiertelna.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.BC4QyBeYAiw8cRuM",
             "effects": {
-                "1PIxT3ieQbomnHR5": {
-                    "id": "1PIxT3ieQbomnHR5",
-                    "name": "Nawroty (umiarkowane)"
+                "uSCJEzNJfSkowCy8": {
+                    "id": "uSCJEzNJfSkowCy8",
+                    "name": "Nawroty (Częste)"
                 },
-                "aHhqh3ReDbl1CC33": {
-                    "id": "aHhqh3ReDbl1CC33",
+                "WMvsbsArnzW4uGGK": {
+                    "id": "WMvsbsArnzW4uGGK",
                     "name": "Wysypka",
-                    "script": "\n                       \n                        if (args.type == \"characteristic\" && args.item == \"fel\") {\n        args.prefillModifiers.modifier -= 10;\n} else if (args.type == \"skill\") {\n        if (args.item.characteristic.key == \"fel\") {\n                args.prefillModifiers.modifier -= 10;\n        }\n}"
+                    "scriptData": [
+                        {
+                            "id": "WMvsbsArnzW4uGGK",
+                            "name": "Wysypka",
+                            "script": "args.fields.modifier -= 10",
+                            "activationScript": "return [\"fel\"].includes(args.characteristic)",
+                            "hideScript": "return ![\"fel\"].includes(args.characteristic)"
+                        }
+                    ]
                 }
             },
             "duration_value": "5d10",
@@ -113,28 +179,48 @@
             "description": "<p><i>Czerwonka</i> jest wiecznym problemem w całym Imperium i dość powszechnie uznaje się ją za karę wymierzoną bezbożnikom przez bogów. Ta infekcja sprawia, że nieszczęsny chory musi się często i boleśnie wypróżniać. Czerwonka jest chorobą endemiczną w armiach Imperium - podobno wykańcza więcej żołnierzy niż ciosy wrogów. Typowe lekarstwa obejmują m.in. spożywanie krwistych puddingów, by uzupełnić utracone płyny, „czopowanie” oraz wcieranie tłuszczu w dotknięte chorobą miejsca, by zmniejszyć pieczenie i swędzenie.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.herUmN51D9TiL2Vn",
             "effects": {
-                "55OiJcxPalh86HH8": {
-                    "id": "55OiJcxPalh86HH8",
-                    "name": "Nudności",
-                    "script": "                    if (this.actor.isOwner && args.test.result.outcome == \"failure\") {\n    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"]\n    if (applicableCharacteristics.includes(args.test.characteristicKey)) {\n        this.actor.addCondition(\"stunned\");\n    }\n}"
+                "2cNP9LYxSKX8l0qY": {
+                    "id": "2cNP9LYxSKX8l0qY",
+                    "name": "Apatia",
+                    "scriptData": [
+                        {
+                            "id": "2cNP9LYxSKX8l0qY",
+                            "name": "Apatia",
+                            "script": "\n                            let fatigued = this.actor.hasCondition(\"fatigued\")\nif (!fatigued ) {\n     this.actor.addCondition(\"fatigued \");\n     ui.notifications.notify(\"Zmęczenie dodane do \" + this.actor.name + \", które nie może zostać usunięte, dopóki objaw Apatia nie zostanie uleczony.\")\n}"
+                        }
+                    ]
                 },
-                "DjYLhjvUbllWMrKk": {
-                    "id": "DjYLhjvUbllWMrKk",
+                "5Z1lQUDSnpiWw1qF": {
+                    "id": "5Z1lQUDSnpiWw1qF",
+                    "name": "Gorączka",
+                    "scriptData": [
+                        {
+                            "id": "5Z1lQUDSnpiWw1qF",
+                            "name": "Gorączka",
+                            "script": "args.fields.modifier -= 10",
+                            "activationScript": "return [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
+                            "hideScript": "return ![\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)"
+                        }
+                    ]
+                },
+                "8eOOrewdfHQnGzuQ": {
+                    "name": "Mdłości",
+                    "id": "8eOOrewdfHQnGzuQ",
+                    "scriptData": [
+                        {
+                            "script": "                 \n                            if (args.test.failed) {\n    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"];\n    if (applicableCharacteristics.includes(args.test.characteristicKey)) {\n         this.actor.addCondition(\"stunned\");\n    }\n}",
+                            "id": "8eOOrewdfHQnGzuQ",
+                            "name": "Mdłości"
+                        }
+                    ]
+                },
+                "DuMd6C3PIsoNBEj9": {
+                    "id": "DuMd6C3PIsoNBEj9",
                     "name": "Nawroty (Częste)"
                 },
-                "KnlIy1IoRQ4KsvuV": {
-                    "id": "KnlIy1IoRQ4KsvuV",
-                    "name": "Gorączka",
-                    "script": "\n                       \n                    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"];\nif (args.type == \"weapon\") {\n    args.prefillModifiers.modifier -= 10;\n} else if (args.type == \"characteristic\") {\n    if (applicableCharacteristics.includes(args.item)) {\n        args.prefillModifiers.modifier -= 10;\n    }\n} else if (args.type == \"skill\") {\n    if (applicableCharacteristics.includes(args.item.characteristic.key)) {\n        args.prefillModifiers.modifier -= 10;\n    }\n}"
-                },
-                "Sc30lmNSCIJ0DGab": {
-                    "id": "Sc30lmNSCIJ0DGab",
-                    "name": "Biegunka (poważna)"
-                },
-                "VBP4fo86uuFd6YiW": {
-                    "id": "VBP4fo86uuFd6YiW",
-                    "name": "Apatia",
-                    "script": "                    if (game.user.isUniqueGM) {\n    let fatigued = args.actor.hasCondition(\"fatigued\");\n    if (!fatigued) {\n        args.actor.addCondition(\"fatigued\")\n        ui.notifications.notify(\"\" + args.actor.name + \" otrzymał zmęczenie, którego nie można usunąć dopóki nie zostanie wyleczony symptom Apatii.\");\n    }\n}"
+                "ERQ7Yd7tkU1lxJdE": {
+                    "id": "ERQ7Yd7tkU1lxJdE",
+                    "name": "Biegunka (Poważna)"
                 }
             },
             "duration_value": "1d10",
@@ -151,24 +237,44 @@
             "description": "<p>Zakażone cięcia i otarcia są dość powszechne, więc naturalnie narosło mnóstwo zabobonów i teorii, jak powinno się je leczyć. Kompresy wykonane z liści, gnoju, skóry ropuch i piór gołębi są tak powszechne jak wcieranie w ranę ziemi ze świątyń Sigmara. Większość lekarzy twierdzi, że to bzdury, skłaniając się do bardziej naukowych remediów, jak np. mieszania żółci czarnego wołu z trzema łyżkami uryny pacjenta i połową łyżki soli, a potem wcierania mieszanki w zaognioną <i>Ropiejącą Ranę</i>. Wrzaski leczonych są przecież najlepszym dowodem, że lekarstwo działa, czyż nie?</p>",
             "sourceId": "Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb",
             "effects": {
-                "2cuvlgkALYIx6KCh": {
-                    "id": "2cuvlgkALYIx6KCh",
-                    "name": "Apatia",
-                    "script": "                    if (game.user.isUniqueGM) {\n    let fatigued = args.actor.hasCondition(\"fatigued\");\n    if (!fatigued) {\n        args.actor.addCondition(\"fatigued\");\n        ui.notifications.notify(\"\" + args.actor.name + \" otrzymał zmęczenie, którego nie można usunąć dopóki nie zostanie wyleczony symptom Apatii.\");\n    }\n}"
-                },
-                "Bhn6hjQFNCEMU6et": {
-                    "id": "Bhn6hjQFNCEMU6et",
-                    "name": "Uciążliwa Rana",
-                    "script": "\n                        if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty : \"average\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            let disease = await fromUuid(\"Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb\");\n            args.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()]);\n        }\n    });\n}"
-                },
-                "InNO9elKVbhdUMyB": {
-                    "id": "InNO9elKVbhdUMyB",
+                "17RUu45P5uA9kmC9": {
+                    "id": "17RUu45P5uA9kmC9",
                     "name": "Gorączka",
-                    "script": "\n                       \n                    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"]\nif (args.type == \"weapon\") {\n    args.prefillModifiers.modifier -= 10;\n} else if (args.type == \"characteristic\") {\n    if (applicableCharacteristics.includes(args.item)) {\n        args.prefillModifiers.modifier -= 10;\n    }\n} else if (args.type == \"skill\") {\n    if (applicableCharacteristics.includes(args.item.characteristic.key)) {\n        args.prefillModifiers.modifier -= 10;\n    }\n}"
+                    "scriptData": [
+                        {
+                            "id": "17RUu45P5uA9kmC9",
+                            "name": "Gorączka",
+                            "script": "args.fields.modifier -= 10",
+                            "activationScript": "return [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
+                            "hideScript": "return ![\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)"
+                        }
+                    ]
                 },
-                "nKPv1wHQXwUsBdf7": {
-                    "id": "nKPv1wHQXwUsBdf7",
+                "37nY0Zi5ERI09CIS": {
+                    "name": "Uciążliwa Rana",
+                    "scriptData": [
+                        {
+                            "id": "37nY0Zi5ERI09CIS",
+                            "name": "Uciążliwa Rana",
+                            "script": "\n                            let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {fields: {difficulty : \"average\"}, appendTitle : \" - Uciążliwa Rana\"});\nawait test.roll();\nif (test.failed) {\n    let disease = await fromUuid(\"Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb\");\n    this.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()]);\n    this.script.scriptNotification(\"Otrzymano \" + disease.name)\n}\n                            "
+                        }
+                    ],
+                    "id": "37nY0Zi5ERI09CIS"
+                },
+                "o4uyEtmWxtOBUNJD": {
+                    "id": "o4uyEtmWxtOBUNJD",
                     "name": "Nawroty (Częste)"
+                },
+                "t0SLdIE243GN7XLn": {
+                    "name": "Apatia",
+                    "id": "t0SLdIE243GN7XLn",
+                    "scriptData": [
+                        {
+                            "id": "t0SLdIE243GN7XLn",
+                            "name": "Apatia",
+                            "script": "\n                            let fatigued = this.actor.hasCondition(\"fatigued\")\nif (!fatigued ) {\n     this.actor.addCondition(\"fatigued \");\n     ui.notifications.notify(\"Zmęczenie dodane do \" + this.actor.name + \", które nie może zostać usunięte, dopóki objaw Apatia nie zostanie uleczony.\")\n}"
+                        }
+                    ]
                 }
             },
             "duration_value": "1d10",
@@ -185,20 +291,40 @@
             "description": "<p>Krew jest zainfekowana, a serce pompuje chorobę, rozprzestrzeniając ją po organizmie. Przystawianie pijawek jest dość powszechnie stosowanym remedium, choć niektórzy cyrulicy skłaniają się ku precyzyjnemu nacinaniu szyi, by upuścić skażoną krew, jednocześnie nakazując spożywanie dużych ilości zdrowej krwi, by uzupełnić jej utratę. Niezależnie od tego, czy pacjent akceptuje takie leczenie, czy nie, nieleczone <i>Zatrucie Krwi</i> jest śmiertelne, więc prędzej czy później chory spotka się z Gildią Płaczek lub @UUID[JournalEntry.NcH9OhleJFfaUdon.JournalEntryPage.HfmrIexylrgxIz2x]{Kultem Morra}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.M8XyRs9DN12XsFTQ",
             "effects": {
-                "NHyxRtRt9rsjjz4r": {
-                    "id": "NHyxRtRt9rsjjz4r",
-                    "name": "Apatia",
-                    "script": "                    if (game.user.isUniqueGM) {\n    let fatigued = args.actor.hasCondition(\"fatigued\");\n    if (!fatigued)  {\n        args.actor.addCondition(\"fatigued\");\n        ui.notifications.notify(\"\" + args.actor.name + \" otrzymał zmęczenie, którego nie można usunąć dopóki nie zostanie wyleczony symptom Apatii.\");\n    }\n}"
+                "bRuaAPrZHsDEX6Zb": {
+                    "id": "bRuaAPrZHsDEX6Zb",
+                    "name": "Gorączka (Wysoka)",
+                    "scriptData": [
+                        {
+                            "id": "bRuaAPrZHsDEX6Zb",
+                            "name": "Gorączka (Wysoka)",
+                            "script": "args.fields.modifier -= 10",
+                            "activationScript": "return [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
+                            "hideScript": "return ![\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)"
+                        }
+                    ]
                 },
-                "TH7hPoURLnjdJSSl": {
-                    "id": "TH7hPoURLnjdJSSl",
+                "PegtWPt0NbSg6wGe": {
+                    "id": "PegtWPt0NbSg6wGe",
                     "name": "Uwiąd",
-                    "script": "\n                        let difficulty = \"\";\nif (this.effect.name.includes(game.i18n.localize(\"Moderate\"))) {\n    difficulty = \"easy\";\n} else if (this.effect.name.includes(game.i18n.localize(\"Severe\"))) {\n    difficulty = \"average\";\n} else {\n    difficulty = \"veasy\";\n}\nif (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {context : {failure : args.actor.name + \" umiera z powodu Uwiądu\"}, absolute: {difficulty}, appendTitle : \" - Uwiąd\"}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            await args.actor.addCondition(\"dead\");\n        }\n    });\n}"
+                    "scriptData": [
+                        {
+                            "script": "\n                            let difficulty = \"\";\nif (this.effect.name.includes(\"Umiarkowany\")) \n   difficulty = \"easy\"\nelse if (this.effect.name.includes(\"Poważny\"))\n    difficulty = \"average\"\nelse\n    difficulty = \"veasy\"\n\nlet test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {context : {failure : this.actor.name + \" Śmierć z powodu Uwiądu\"}, fields: {difficulty}, appendTitle : \" - Uwiąd\"})\nawait test.roll();\nif (test.failed) {\n    this.actor.addCondition(\"dead\");\n}\n                            ",
+                            "id": "PegtWPt0NbSg6wGe",
+                            "name": "Uwiąd"
+                        }
+                    ]
                 },
-                "V2oU1zPnQR94HCJQ": {
-                    "id": "V2oU1zPnQR94HCJQ",
-                    "name": "Gorączka (wysoka)",
-                    "script": "\n                       \n                    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"]\nif (args.type == \"weapon\") {\n    args.prefillModifiers.modifier -= 10;\n}\nelse if (args.type == \"characteristic\") {\n    if (applicableCharacteristics.includes(args.item)) {\n        args.prefillModifiers.modifier -= 10;\n    }\n}\nelse if (args.type == \"skill\") {\n    if (applicableCharacteristics.includes(args.item.characteristic.key)) {\n        args.prefillModifiers.modifier -= 10\n    }\n}"
+                "REBWiDOWB2AJHvXd": {
+                    "id": "REBWiDOWB2AJHvXd",
+                    "name": "Apatia",
+                    "scriptData": [
+                        {
+                            "id": "REBWiDOWB2AJHvXd",
+                            "name": "Apatia",
+                            "script": "\n                            let fatigued = this.actor.hasCondition(\"fatigued\")\nif (!fatigued ) {\n     this.actor.addCondition(\"fatigued \");\n     ui.notifications.notify(\"Zmęczenie dodane do \" + this.actor.name + \", które nie może zostać usunięte, dopóki objaw Apatia nie zostanie uleczony.\")\n}"
+                        }
+                    ]
                 }
             },
             "duration_value": "1d10",
@@ -215,34 +341,70 @@
             "description": "<p>Do zakażenia dochodzi za sprawą zainfekowanych gryzoni. Budząca postrach <i>Szczurza Gorączka</i> objawia się zapalnymi wysypkami i owrzodzeniem, a później temperatura szybko rośnie, dopóki ciałem nie zaczną targać konwulsje. Rzadko kiedy choroba jest śmiertelna, ale bardzo mocno osłabia organizm, a wyleczenie się zajmuje wiele dni, więc większość chorych spróbuje wszystkiego, byle tylko złagodzić objawy. W Altdorfie jednym z powszechniejszych remediów jest samobiczowanie - podobno przynosi ulgę swędzącej skórze. Natomiast w Talabheim prym wiedzie nasmarowanie się kozim serem zmieszanym z importowanymi z Kisleva lodowymi papryczkami. W dużych miastach i miasteczkach <i>Szczurza Gorączka</i> zwana jest także „Mielonką”, co chyba wystarczająco oddaje fakt, że wiele pysznych pasztecików zawiera skażone szczurze mięso, które stosuje się jako substytut droższych gatunków.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.QiHMX5OyXBhWCYoF",
             "effects": {
-                "0Tr1JZZBjSXaP6Sa": {
-                    "id": "0Tr1JZZBjSXaP6Sa",
-                    "name": "Gorączka",
-                    "script": "\n                       \n                    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"];\nif (args.type == \"weapon\") {\n    args.prefillModifiers.modifier -= 10;\n} else if (args.type == \"characteristic\") {\n    if (applicableCharacteristics.includes(args.item)) {\n        args.prefillModifiers.modifier -= 10;\n    }\n} else if (args.type == \"skill\") {\n    if (applicableCharacteristics.includes(args.item.characteristic.key)) {\n        args.prefillModifiers.modifier -= 10;\n    }\n}"
+                "5OCmYxeGpzmfmGjV": {
+                    "scriptData": [
+                        {
+                            "script": "args.fields.modifier -= 10",
+                            "activationScript": "return [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
+                            "hideScript": "return ![\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
+                            "id": "5OCmYxeGpzmfmGjV",
+                            "name": "Gorączka"
+                        }
+                    ],
+                    "id": "5OCmYxeGpzmfmGjV",
+                    "name": "Gorączka"
                 },
-                "hUAPgI4Gb09zd1ut": {
-                    "id": "hUAPgI4Gb09zd1ut",
-                    "name": "Uciążliwa Rana",
-                    "script": "\n                        if (this.actor.isOwner) {\n    args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute: {difficulty : \"average\"}}).then(async test => {\n        await test.roll();\n        if (test.result.outcome == \"failure\") {\n            let disease = await fromUuid(\"Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb\");\n            args.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()]);\n        }\n    });\n}"
-                },
-                "i4ivBVyls07XXZ8h": {
-                    "id": "i4ivBVyls07XXZ8h",
-                    "name": "Wysypka",
-                    "script": "\n                       \n                        if (args.type == \"characteristic\" && args.item == \"fel\") {\n        args.prefillModifiers.modifier -= 10;\n} else if (args.type == \"skill\") {\n        if (args.item.characteristic.key == \"fel\" ){\n                args.prefillModifiers.modifier -= 10;\n        }\n}"
-                },
-                "NZTzhqDUMfcFyOK2": {
-                    "id": "NZTzhqDUMfcFyOK2",
-                    "name": "Konwulsje",
-                    "script": "\n                        let modifier = 0\nif (this.effect.name.includes(game.i18n.localize(\"Moderate\"))) {\n    modifier = -20;\n}\nelse {\n    modifier = -10;\n}\n\nlet applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"ag\", \"t\", \"dex\"]\nif (args.type == \"weapon\") {\n    args.prefillModifiers.modifier += modifier;\n} else if (args.type == \"characteristic\") {\n    if (applicableCharacteristics.includes(args.item)) {\n        args.prefillModifiers.modifier += modifier;\n    } \n} else if (args.type == \"skill\") {\n    if (applicableCharacteristics.includes(args.item.characteristic.key)) {\n        args.prefillModifiers.modifier += modifier;\n    }\n}"
-                },
-                "PfGvYCS6yUbrcpYr": {
-                    "id": "PfGvYCS6yUbrcpYr",
-                    "name": "Nawroty (umiarkowane)"
-                },
-                "QdZZlcWkKdwev0VI": {
-                    "id": "QdZZlcWkKdwev0VI",
+                "CLoy8f7nHklKCj6G": {
+                    "id": "CLoy8f7nHklKCj6G",
                     "name": "Apatia",
-                    "script": "                    if (game.user.isUniqueGM) {\n    let fatigued = args.actor.hasCondition(\"fatigued\");\n    if (!fatigued)     {\n        args.actor.addCondition(\"fatigued\");\n        ui.notifications.notify(\"\" + args.actor.name + \" otrzymał zmęczenie, którego nie można usunąć dopóki nie zostanie wyleczony symptom Apatii.\");\n    }\n}"
+                    "scriptData": [
+                        {
+                            "id": "CLoy8f7nHklKCj6G",
+                            "name": "Apatia",
+                            "script": "\n                            let fatigued = this.actor.hasCondition(\"fatigued\")\nif (!fatigued ) {\n     this.actor.addCondition(\"fatigued \");\n     ui.notifications.notify(\"Zmęczenie dodane do \" + this.actor.name + \", które nie może zostać usunięte, dopóki objaw Apatia nie zostanie uleczony.\")\n}"
+                        }
+                    ]
+                },
+                "fToWKoDP5iitVHG6": {
+                    "id": "fToWKoDP5iitVHG6",
+                    "name": "Wysypka",
+                    "scriptData": [
+                        {
+                            "id": "fToWKoDP5iitVHG6",
+                            "name": "Wysypka",
+                            "script": "args.fields.modifier -= 10",
+                            "activationScript": "return [\"fel\"].includes(args.characteristic)",
+                            "hideScript": "return ![\"fel\"].includes(args.characteristic)"
+                        }
+                    ]
+                },
+                "JYIabBxFTtcxpD0B": {
+                    "scriptData": [
+                        {
+                            "hideScript": "return ![\"ws\", \"bs\", \"s\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
+                            "id": "JYIabBxFTtcxpD0B",
+                            "name": "Konwulsje",
+                            "script": "\n                            let modifier = 0\nif (this.effect.name.includes(\"Umiarkowane\"))\n    modifier = -20\nelse\n     modifier = -10\nargs.fields.modifier += modifier\n                            ",
+                            "activationScript": "return [\"ws\", \"bs\", \"s\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)"
+                        }
+                    ],
+                    "id": "JYIabBxFTtcxpD0B",
+                    "name": "Konwulsje"
+                },
+                "zCyc1oUBKwVvqIGv": {
+                    "id": "zCyc1oUBKwVvqIGv",
+                    "name": "Uciążliwa Rana",
+                    "scriptData": [
+                        {
+                            "id": "zCyc1oUBKwVvqIGv",
+                            "name": "Uciążliwa Rana",
+                            "script": "\n                            let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {fields: {difficulty : \"average\"}, appendTitle : \" - Uciążliwa Rana\"});\nawait test.roll();\nif (test.failed) {\n    let disease = await fromUuid(\"Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb\");\n    this.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()]);\n    this.script.scriptNotification(\"Otrzymano \" + disease.name)\n}\n                            "
+                        }
+                    ]
+                },
+                "hVgrqTLhNP7bgvmw": {
+                    "id": "hVgrqTLhNP7bgvmw",
+                    "name": "Nawroty (Umiarkowane)"
                 }
             },
             "duration_value": "3d10+10",
@@ -259,19 +421,31 @@
             "description": "<p>Jedynie minutą ciszy można podsumować podejście do kuchennej higieny w Imperium. Popularnym mitem jest więc, że jedzenie przygotowane przez niziołki nie wywołuje <i>Smrodliwych Wiatrów</i>, ale ci, którzy zapisali się na „wyścig do wygódki”, jedząc tanie paszteciki tej rasy ze straganów, których pełno w Altdorfie, zapewne by się z tą teorią nie zgodzili... Oczywiście zakładając, że udałoby im się pozostać poza sławojką na tyle długo, by w ogóle wziąć udział w dyskusji.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.txeLd7R13qxSvmsr",
             "effects": {
-                "fquDNK6fxIYlnWX1": {
-                    "id": "fquDNK6fxIYlnWX1",
+                "Wi2cxWwkxdvCaMZr": {
+                    "id": "Wi2cxWwkxdvCaMZr",
+                    "name": "Biegunka (Umiarkowana)"
+                },
+                "c1jdey9wqtjX8wVk": {
+                    "scriptData": [
+                        {
+                            "name": "Mdłości",
+                            "id": "c1jdey9wqtjX8wVk",
+                            "script": "                 \n                            if (args.test.failed) {\n    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"];\n    if (applicableCharacteristics.includes(args.test.characteristicKey)) {\n          this.actor.addCondition(\"stunned\");\n    }\n}"
+                        }
+                    ],
+                    "id": "c1jdey9wqtjX8wVk",
+                    "name": "Mdłości"
+                },
+                "omuEvjH0KtjLhdsh": {
+                    "id": "omuEvjH0KtjLhdsh",
                     "name": "Apatia",
-                    "script": "                    if (game.user.isUniqueGM) {\n    let fatigued = args.actor.hasCondition(\"fatigued\");\n    if (!fatigued) {\n        args.actor.addCondition(\"fatigued\");\n        ui.notifications.notify(\"\" + args.actor.name + \" otrzymał zmęczenie, którego nie można usunąc dopóki nie zostanie wyleczony symptom Apatii.\");\n    }\n}"
-                },
-                "heL1cJFCuElfQoeS": {
-                    "id": "heL1cJFCuElfQoeS",
-                    "name": "Nudności",
-                    "script": "\n                    if (this.actor.isOwner && args.test.result.outcome == \"failure\") {\n    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"]\n    if (applicableCharacteristics.includes(args.test.characteristicKey)) {\n        this.actor.addCondition(\"stunned\");\n    }\n}"
-                },
-                "Sp93ZiJ4eq26v8UO": {
-                    "id": "Sp93ZiJ4eq26v8UO",
-                    "name": "Biegunka (umiarkowana)"
+                    "scriptData": [
+                        {
+                            "id": "omuEvjH0KtjLhdsh",
+                            "name": "Apatia",
+                            "script": "\n                            let fatigued = this.actor.hasCondition(\"fatigued\")\nif (!fatigued ) {\n     this.actor.addCondition(\"fatigued \");\n     ui.notifications.notify(\"Zmęczenie dodane do \" + this.actor.name + \", które nie może zostać usunięte, dopóki objaw Apatia nie zostanie uleczony.\")\n}"
+                        }
+                    ]
                 }
             },
             "duration_value": "1d10",
@@ -288,14 +462,18 @@
             "description": "<p>Epidemie <i>Świerzbospy</i> wybuchają corocznie przede wszystkim w miastach i miasteczkach w całym Imperium. Choroba, która wywołuje powstawanie swędzących pęcherzy na całym ciele, jest stosunkowo łagodna i bardzo rzadko wywołuje jakieś powikłania, więc zazwyczaj najbardziej martwią się rodzice chorego lub próżni wielmoże. W świątyniach Shallyi zazwyczaj można od ręki dostać fiolkę z białą maścią, która zmniejsza swędzenie.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.UAwTqZ3hqNb7vq9s",
             "effects": {
-                "c9ty7yoIpDJfwDqo": {
-                    "id": "c9ty7yoIpDJfwDqo",
+                "Pj00cDfEiEMLPArP": {
+                    "id": "Pj00cDfEiEMLPArP",
                     "name": "Wysypka",
-                    "script": "\n                       \n                        if (args.type == \"characteristic\" && args.item == \"fel\") {\n        args.prefillModifiers.modifier -= 10;\n} else if (args.type == \"skill\") {\n        if (args.item.characteristic.key == \"fel\") {\n                args.prefillModifiers.modifier -= 10;\n        }\n}"
-                },
-                "vgz3aqUkKvksDs7X": {
-                    "id": "vgz3aqUkKvksDs7X",
-                    "name": "Kaszel i katar"
+                    "scriptData": [
+                        {
+                            "id": "Pj00cDfEiEMLPArP",
+                            "name": "Wysypka",
+                            "script": "args.fields.modifier -= 10",
+                            "activationScript": "return [\"fel\"].includes(args.characteristic)",
+                            "hideScript": "return ![\"fel\"].includes(args.characteristic)"
+                        }
+                    ]
                 }
             },
             "duration_value": "1d10+7",

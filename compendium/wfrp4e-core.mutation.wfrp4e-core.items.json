@@ -14,17 +14,12 @@
             "description": "<p>Postać przez pierwsze 2 godziny po śnie uznawana jest za @Condition[Zmęczenie]{Zmęczoną}.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.0jaMZRJvJ5L12WZ2",
             "effects": {
-                "XRfGwpANht6wpmpR": {
-                    "id": "XRfGwpANht6wpmpR",
-                    "name": "Zmęczenie",
-                    "script": "args.prefillModifiers.modifier -= 10 * getProperty(this.effect, 'flags.wfrp4e.value');"
-                },
                 "kPqNULuMP6gPY86x": {
                     "scriptData": [
                         {
                             "id": "kPqNULuMP6gPY86x",
                             "name": "Chaotyczne sny",
-                            "script": "this.actor.addCondition(\"fatigued\");"
+                            "script": "[Script.JwgFQmPQtXWAP94i]"
                         }
                     ],
                     "id": "kPqNULuMP6gPY86x",
@@ -94,18 +89,18 @@
                 "zE2zFBWnHMLkNdqR": {
                     "id": "zE2zFBWnHMLkNdqR",
                     "name": "Złe zamiary",
-                    "script": "if (args.type == \"weapon\" || args.type == \"cast\") {\n   args.prefillModifiers.modifier += 10;\n}\nelse {\n   args.prefillModifiers.modifier -= 10;\n}",
                     "scriptData": [
                         {
                             "id": "zE2zFBWnHMLkNdqR",
                             "name": "Złe zamiary",
-                            "script": "args.fields.modifier += 10",
-                            "activationScript": "return args.item?.system.magicMissile?.value || args.item?.system.attackType"
+                            "script": "[Script.xPDMpOvC1ZBVxrNg]",
+                            "activationScript": "[Script.OCFrGXAYfo9OYnhc]"
                         },
                         {
                             "id": "zE2zFBWnHMLkNdqR",
                             "name": "Złe zamiary",
-                            "activationScript": "return !args.item?.system.magicMissile?.value && !args.item?.system.attackType"
+                            "activationScript": "[Script.eHgk3HZ6eyLFTZ9o]",
+                            "script": "[Script.xvGxwv7X0Vq3vNqb]"
                         }
                     ]
                 }
@@ -124,7 +119,7 @@
                         {
                             "id": "uWt4JX3gbgv8Oqg0",
                             "name": "Niejednolite opierzenie",
-                            "script": "let locations = [];\n\nwhile (locations.length < 2)\n{\n    let loc = await game.wfrp4e.tables.rollTable(\"hitloc\", {hideDSN : true})\n    if (!locations.includes(loc.result))\n    {\n        locations.push(loc.result);\n    }\n}\n\nlocationText = locations.map(i => game.wfrp4e.config.locations[i]).join(\", \")\n\nthis.item.updateSource({name : this.item.name += ` (${locationText})`, \"flags.wfrp4e.locations\" : locations})\nthis.effect.updateSource({\"flags.wfrp4e.locations\" : locations})"
+                            "script": "[Script.TpZItJ5Ugbazaobd]"
                         }
                     ],
                     "id": "uWt4JX3gbgv8Oqg0",
@@ -183,7 +178,7 @@
                         {
                             "id": "OLcQ5yT15mBTYo0L",
                             "name": "Sącząca się ropa",
-                            "script": "let location = await game.wfrp4e.tables.rollTable(\"hitloc\", {hideDSN: true})\n\nthis.item.updateSource({name : `${this.item.name} (${location.description})`})\nthis.script.scriptMessage(`<strong>Lokacja: </strong> ${location.description}`, { whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+                            "script": "[Script.toSrgcvWq9b5eN0K]"
                         }
                     ],
                     "id": "OLcQ5yT15mBTYo0L",
@@ -252,12 +247,11 @@
                 "FeJR7iTtlWYjOwo9": {
                     "id": "FeJR7iTtlWYjOwo9",
                     "name": "Mięsista macka",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.4xF7M6ylIiGntekh\").then(item => {\n    item = item.toObject();\n    args.actor.createEmbeddedDocuments(\"Item\", [item]);\n})",
                     "scriptData": [
                         {
                             "id": "FeJR7iTtlWYjOwo9",
                             "name": "Mięsista macka",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.4xF7M6ylIiGntekh\")\nitem = item.toObject()\nitem.name = this.effect.name\nthis.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect : this.effect.id})\n"
+                            "script": "[Script.oHenUKtaS3jT5xQn]"
                         }
                     ]
                 }
@@ -273,12 +267,11 @@
                 "egLqzQE6VJ1xG91R": {
                     "id": "egLqzQE6VJ1xG91R",
                     "name": "Strach przed samotnością",
-                    "description": "Dowolny Test wykonywanych w samotności",
                     "scriptData": [
                         {
                             "id": "egLqzQE6VJ1xG91R",
                             "name": "Strach przed samotnością",
-                            "script": "args.fields.modifier -= 10;"
+                            "script": "[Script.xvGxwv7X0Vq3vNqb]"
                         }
                     ]
                 }
@@ -294,12 +287,11 @@
                 "GIKMXwsPucxzpD3K": {
                     "id": "GIKMXwsPucxzpD3K",
                     "name": "Stalowa skóra",
-                    "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 2;\nAP[\"rArm\"].value += 2;\nAP[\"lArm\"].value += 2;\nAP[\"body\"].value += 2;\nAP[\"lLeg\"].value += 2;\nAP[\"rLeg\"].value += 2;",
                     "scriptData": [
                         {
                             "id": "GIKMXwsPucxzpD3K",
                             "name": "Stalowa skóra",
-                            "script": "this.actor.status.addArmour(2, {source: this.effect})"
+                            "script": "[Script.S6tUyFJvGMV19mvP]"
                         }
                     ]
                 }
@@ -328,14 +320,13 @@
                 "iZgljsMJIgKH6L0P": {
                     "id": "iZgljsMJIgKH6L0P",
                     "name": "Ogromne oko",
-                    "description": "Percepcja związana ze wzrokiem",
                     "scriptData": [
                         {
                             "id": "iZgljsMJIgKH6L0P",
                             "name": "Ogromne oko",
-                            "script": "args.fields.modifier += 10;",
-                            "activationScript": "return args.skill?.name == game.i18n.localize(\"NAME.Perception\")",
-                            "hideScript": "return args.characteristic != \"i\""
+                            "script": "[Script.xPDMpOvC1ZBVxrNg]",
+                            "activationScript": "[Script.9RFoasDcFnYZ1txR]",
+                            "hideScript": "[Script.tdICiJ26rJrDbxT6]"
                         }
                     ]
                 }
@@ -351,14 +342,13 @@
                 "W6GtdIEcYRTTdUbk": {
                     "id": "W6GtdIEcYRTTdUbk",
                     "name": "Odwrócona twarz",
-                    "script": "if (args.type == \"characteristic\" && args.item == \"fel\") {\n  args.prefillModifiers.modifier -= 20;\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"fel\") {\n    args.prefillModifiers.modifier -= 20\n  }\n}",
                     "scriptData": [
                         {
                             "id": "W6GtdIEcYRTTdUbk",
                             "name": "Odwrócona twarz",
-                            "script": "args.fields.modifier -= 20",
-                            "activationScript": "return args.characteristic == \"fel\"",
-                            "hideScript": "return args.characteristic != \"fel\""
+                            "script": "[Script.0iTLDgFHO9Rgc010]",
+                            "activationScript": "[Script.VuE1mhrB6X6MYTzg]",
+                            "hideScript": "[Script.6Fe8M5MdklKS2olx]"
                         }
                     ]
                 }
@@ -387,14 +377,13 @@
                 "UuWZEOCSqCXzdXO8": {
                     "id": "UuWZEOCSqCXzdXO8",
                     "name": "Zwisający jęzor",
-                    "description": "Test Języka wymagający mówienia",
                     "scriptData": [
                         {
                             "id": "UuWZEOCSqCXzdXO8",
                             "name": "Zwisający jęzor",
-                            "script": "args.fields.modifier -= 10;",
-                            "activationScript": "return args.skill?.name.includes(game.i18n.localize(\"NAME.Language\"))",
-                            "hideScript": "return !args.skill?.name.includes(game.i18n.localize(\"NAME.Language\"))"
+                            "script": "[Script.xvGxwv7X0Vq3vNqb]",
+                            "activationScript": "[Script.VAs1nXvicdQK18Do]",
+                            "hideScript": "[Script.3LLiSgj6KGtgqcmo]"
                         }
                     ]
                 }
@@ -413,12 +402,17 @@
                         {
                             "id": "jkqOgmW6kPSnFuP3",
                             "name": "Świecąca skóra",
-                            "script": "args.update({light : {\n    \"dim\": 10,\n    \"bright\": 5,\n    \"alpha\": 0.5,\n    \"animation\": {\n        \"speed\": 4,\n        \"intensity\": 4,\n        \"type\": \"flame\",\n    },\n    \"color\": \"#ac9e6c\",\n}});"
+                            "script": "[Script.XthZ3GCC3WhsEI2g]"
                         },
                         {
                             "id": "jkqOgmW6kPSnFuP3",
                             "name": "Świecąca skóra",
-                            "script": "    this.actor.getActiveTokens().forEach(t => t.document.update({light : {\n      \"dim\": 10,\n      \"bright\": 5,\n      \"alpha\": 0.5,\n      \"animation\": {\n          \"speed\": 4,\n          \"intensity\": 4,\n          \"type\": \"flame\",\n      },\n      \"color\": \"#ac9e6c\",\n  }}));"
+                            "script": "[Script.KJLAan0glJlyOyqF]"
+                        },
+                        {
+                            "id": "jkqOgmW6kPSnFuP3",
+                            "name": "Świecąca skóra",
+                            "script": "[Script.QKTA2TqZ77pvHWSJ]"
                         }
                     ],
                     "id": "jkqOgmW6kPSnFuP3",
@@ -435,19 +429,13 @@
                 "2Ohs6a56Gxu8VLHF": {
                     "id": "2Ohs6a56Gxu8VLHF",
                     "name": "Bezbożny szał",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.DrNUTPeodEgpWTnT\").then(item => {\nitem = item.toObject();\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);\n})",
                     "scriptData": [
                         {
                             "id": "2Ohs6a56Gxu8VLHF",
                             "name": "Bezbożny szał",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.DrNUTPeodEgpWTnT\")\nthis.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect : this.effect.id});\nthis.script.scriptNotification(\"Stworzono: \" + item.name)"
+                            "script": "[Script.lOzkngzye4RmvALp]"
                         }
                     ]
-                },
-                "3ekXP5mRTRdaJptm": {
-                    "id": "3ekXP5mRTRdaJptm",
-                    "name": "Bezbożny szał",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.DrNUTPeodEgpWTnT\").then(item => {\nitem = item.toObject();\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);\n})"
                 }
             },
             "modifier": "Szał Bojowy, Walka Wręcz +10"
@@ -464,7 +452,7 @@
                         {
                             "id": "hMTC6wwJN3YPvDm2",
                             "name": "Dodatkowe usta",
-                            "script": "let location = await game.wfrp4e.tables.rollTable(\"hitloc\", {hideDSN: true})\n\nthis.item.updateSource({name : `${this.item.name} (${location.description})`})\nthis.script.scriptMessage(`<strong>Lokacja:</strong> ${location.description}`, { whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+                            "script": "[Script.toSrgcvWq9b5eN0K]"
                         }
                     ],
                     "id": "hMTC6wwJN3YPvDm2",
@@ -480,7 +468,7 @@
             "effects": {
                 "1WuNk8jD1SyJIdHE": {
                     "id": "1WuNk8jD1SyJIdHE",
-                    "name": "Animalistic Legs"
+                    "name": "Zwierzęce nogi"
                 }
             },
             "modifier": "Szybkość +1"
@@ -504,25 +492,19 @@
             "description": "<p>+1 Punkt Pancerza na głowie. Liczy się jako Cecha Stworzenia @UUID[Compendium.wfrp4e-core.items.AtpAudHA4ybXVlWM]{Broń} o współczynniku obrażeń +BS. Tej mutacji nie da się ukryć.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.Pmcq5P7yRnYsoFYf",
             "effects": {
-                "2o80BN5wj3QZxpYJ": {
-                    "id": "2o80BN5wj3QZxpYJ",
-                    "name": "Nierówne rogi PP",
-                    "script": "args.actor.status.armour[\"head\"].value += 1;"
-                },
                 "n4ttJEJZfsfISN5O": {
                     "id": "n4ttJEJZfsfISN5O",
                     "name": "Nierówne rogi",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.BqPZn6q3VHn9HUrW\").then(item => {\nitem = item.toObject();\nitem.name = this.effect.name;\nitem.system.specification.value = this.actor.characteristics.s.bonus;\nitem.system.description.value = \"\";\nthis.actor.createEmbeddedDocuments(\"Item\", [item]);\n})",
                     "scriptData": [
                         {
                             "id": "n4ttJEJZfsfISN5O",
                             "name": "Nierówne rogi",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.BqPZn6q3VHn9HUrW\")\nitem = item.toObject()\nitem.name = this.effect.name\nitem.system.specification.value = this.actor.characteristics.s.bonus\nitem.system.description.value = \"\"\nthis.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect : this.effect.id})"
+                            "script": "[Script.Z1zriXibT0mAmdhb]"
                         },
                         {
                             "id": "n4ttJEJZfsfISN5O",
                             "name": "Nierówne rogi",
-                            "script": "this.actor.system.status.addArmour(1, {locations : \"head\", source : this.effect})"
+                            "script": "[Script.OqxeuZfZDfm9ax6h]"
                         }
                     ]
                 }
@@ -551,14 +533,13 @@
                 "EfojtYV7NuxfAUrK": {
                     "id": "EfojtYV7NuxfAUrK",
                     "name": "Wibrysy",
-                    "script": "if (args.type == \"skill\" && args.item.name == game.i18.n.localize(\"NAME.Track\")) {\n   args.prefillModifiers.modifier += 10;\n}",
                     "scriptData": [
                         {
                             "id": "EfojtYV7NuxfAUrK",
                             "name": "Wibrysy",
-                            "script": "args.fields.modifier += 10",
-                            "activationScript": "return args.skill?.name == game.i18n.localize(\"NAME.Track\")",
-                            "hideScript": "return args.characteristic != \"i\""
+                            "script": "[Script.xPDMpOvC1ZBVxrNg]",
+                            "activationScript": "[Script.FmLx9pwOkzqqU7Ph]",
+                            "hideScript": "[Script.tdICiJ26rJrDbxT6]"
                         }
                     ]
                 }
@@ -574,12 +555,11 @@
                 "mbj1Q28xiYuHC3z2": {
                     "id": "mbj1Q28xiYuHC3z2",
                     "name": "Kolczaste łuski",
-                    "script": "let AP = args.actor.status.armour;\nAP[\"head\"].value += 1;\nAP[\"rArm\"].value += 1;\nAP[\"lArm\"].value += 1;\nAP[\"body\"].value += 1;\nAP[\"lLeg\"].value += 1;\nAP[\"rLeg\"].value += 1;",
                     "scriptData": [
                         {
                             "id": "mbj1Q28xiYuHC3z2",
                             "name": "Kolczaste łuski",
-                            "script": "this.actor.status.addArmour(1, {source: this.effect})"
+                            "script": "[Script.mBcLf11upaHS8AQq]"
                         }
                     ]
                 }
@@ -608,12 +588,11 @@
                 "hUqEsvcMfTbiNWHj": {
                     "id": "hUqEsvcMfTbiNWHj",
                     "name": "Nienawistne popędy",
-                    "script": "fromUuid(\"Compendium.wfrp4e-core.items.Q2MCUrG2HppMcvN0\").then(item => {\nitem = item.toObject()\nlet species = args.actor.details.species.value || \"własną rasą\"\nitem.name = `Wrogość (do wszystkich poza: ${species})`\nargs.actor.createEmbeddedDocuments(\"Item\", [item])\n})",
                     "scriptData": [
                         {
                             "id": "hUqEsvcMfTbiNWHj",
                             "name": "Nienawistne popędy",
-                            "script": "let item = await fromUuid(\"Compendium.wfrp4e-core.items.Q2MCUrG2HppMcvN0\")\nitem = item.toObject()\nlet species = args.actor.details.species.value || \"Człowiek\"\nitem.name = `Wrogość (do wszystkich oprócz: ${species})`\nthis.actor.createEmbeddedDocuments(\"Item\", [item], {fromEffect : this.effect.id})"
+                            "script": "[Script.6hAgggYpNR3r4QWC]"
                         }
                     ]
                 }
@@ -681,12 +660,11 @@
                 "RpoMdbEmjj9FhPvU": {
                     "id": "RpoMdbEmjj9FhPvU",
                     "name": "Chwiejne morale",
-                    "script": "if (args.test.result.outcome == \"failure\") {\n    if (args.test.characteristicKey == \"wp\") {\n        this.actor.addCondition(\"broken\")\n    }\n}",
                     "scriptData": [
                         {
                             "id": "RpoMdbEmjj9FhPvU",
                             "name": "Chwiejne morale",
-                            "script": "if (args.test.succeeded)\n    return\n\nif (args.test.characteristicKey == \"wp\")\n     this.actor.addCondition(\"broken\")"
+                            "script": "[Script.96Y1yIH1lRjTs5hL]"
                         }
                     ]
                 }

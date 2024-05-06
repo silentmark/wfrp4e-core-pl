@@ -21,7 +21,7 @@
                         {
                             "id": "ko7dK1aP7NOva4vV",
                             "name": "Petryfikujące Spojrzenie",
-                            "script": "let advantage = this.actor.system.status.advantage.value;\nif (advantage > 0)\n{\n    await this.actor.setAdvantage(0);\n    this.script.scriptNotification(\"Zmodyfikowano Przewagi\")\n}\nelse \n{\n    return this.script.scriptNotification(\"Niewystarczająca liczba przewag!\", \"error\")\n}\n\nlet test = await this.actor.setupTrait(this.item, {fields : {slBonus : advantage}})\nawait test.roll();"
+                            "script": "[Script.ft0LaRWZT5WtnptP]"
                         }
                     ],
                     "id": "ko7dK1aP7NOva4vV",
@@ -41,8 +41,14 @@
                         {
                             "id": "mqb7U1RR6DjIhLgy",
                             "name": "Wrogość",
-                            "script": "args.fields.slBonus++;",
-                            "hideScript": "return [\"t\", \"i\", \"ag\", \"dex\", \"int\", \"wp\"].includes(args.characteristic)"
+                            "script": "[Script.wAETU6aTRr9d4oCU]",
+                            "hideScript": "[Script.iVhi3Z6zPaf1bf8g]"
+                        },
+                        {
+                            "name": "Wrogość",
+                            "script": "[Script.0iTLDgFHO9Rgc010]",
+                            "hideScript": "[Script.6Fe8M5MdklKS2olx]",
+                            "id": "mqb7U1RR6DjIhLgy"
                         }
                     ],
                     "id": "mqb7U1RR6DjIhLgy",
@@ -71,7 +77,7 @@
                 "X0Urs8Rlr15d3WAw": {
                     "scriptData": [
                         {
-                            "script": "if (args.opposedTest.attackerTest.item?.name.includes(\"Ugryzienie\"))\n{\n    let woundsGained = args.totalWoundLoss;\n    this.script.scriptMessage(`Odzyskane rany: ${woundsGained}`, { whisper: ChatMessage.getWhisperRecipients(\"GM\") })\n    this.actor.modifyWounds(woundsGained)\n}",
+                            "script": "[Script.chUpiI3el8IO8MSs]",
                             "id": "X0Urs8Rlr15d3WAw",
                             "name": "Wampiryczny"
                         }
@@ -112,7 +118,7 @@
                         {
                             "id": "qPjT5EO2Y83wUzVx",
                             "name": "Lęk",
-                            "script": "args.fields.slBonus -= 1;"
+                            "script": "[Script.o1zD8mej9TWKNxUq]"
                         }
                     ],
                     "id": "qPjT5EO2Y83wUzVx",
@@ -131,7 +137,7 @@
                         {
                             "id": "5RbsPoPp8aQ6b8ub",
                             "name": "Czempion",
-                            "script": "// If this actor wins a defending test, swap the test\nif (!args.opposedTest.result.swapped && args.opposedTest.result.winner == \"defender\" && args.opposedTest.attackerTest.result.damage)\n{\n    args.opposedTest.swap(this.effect.label);\n}"
+                            "script": "[Script.Lp261O9fgEXmgPf3]"
                         }
                     ],
                     "id": "5RbsPoPp8aQ6b8ub",
@@ -151,7 +157,7 @@
                         {
                             "id": "cix7lwIY68fS1N30",
                             "name": "# Macki",
-                            "script": "args.actor.addCondition(\"grappling\");"
+                            "script": "[Script.9MwRUzRinhq1IjhG]"
                         }
                     ],
                     "id": "cix7lwIY68fS1N30",
@@ -177,7 +183,7 @@
                         {
                             "name": "Lodowaty Uścisk",
                             "id": "1nPQ6X0QTYSM1WUt",
-                            "script": "if (this.actor.system.status.advantage.value >= 2)\n{\n    await this.actor.modifyAdvantage(-2);\n    this.script.scriptNotification(\"Zmodyfikowano Przewagi\")\n}\nelse \n{\n    return this.script.scriptNotification(\"Niewystarczająca liczba przewag!\", \"error\")\n}\n\nlet test = await this.actor.setupTrait(this.item)\nawait test.roll();"
+                            "script": "[Script.6mpw9cGseG4W4eyd]"
                         }
                     ],
                     "id": "1nPQ6X0QTYSM1WUt",
@@ -190,7 +196,20 @@
             "name": "Rozmiar",
             "description": "<p>@UUID[Compendium.wfrp4e-core.journals.JournalEntry.3ZynTGhFpgwv6l1n.JournalEntryPage.JY7F6lwqt2YGPddY]{Rozmiar}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.8slW8CJ2oVTxeQ6q",
-            "specification": "Rozmiar"
+            "specification": "Rozmiar",
+            "effects": {
+                "JMSrxnNcqyguP1pz": {
+                    "id": "JMSrxnNcqyguP1pz",
+                    "name": "Rozmiar",
+                    "scriptData": [
+                        {
+                            "id": "JMSrxnNcqyguP1pz",
+                            "name": "Rozmiar",
+                            "script": "[Script.PmELrzD3RmF9qKkO]"
+                        }
+                    ]
+                }
+            }
         },
         "Stupid": {
             "id": "9GNpAqgsKzxZKJpp",
@@ -203,7 +222,7 @@
                         {
                             "id": "P5ofwg1nWnilgFgY",
                             "name": "Głupi",
-                            "script": "let test = await this.actor.setupTrait(this.item); \nawait test.roll();"
+                            "script": "[Script.Oa9FmLXRRZRpLrrq]"
                         }
                     ],
                     "id": "P5ofwg1nWnilgFgY",
@@ -259,8 +278,8 @@
                         {
                             "id": "4MsIBocsfHnwGUr7",
                             "name": "Nienawiść",
-                            "script": "args.fields.slBonus++;",
-                            "hideScript": "return ![\"ws\", \"bs\"].includes(args.characteristic) && !args.item?.system.attackType"
+                            "script": "[Script.wAETU6aTRr9d4oCU]",
+                            "hideScript": "[Script.S4793DLFhjMxpM8x]"
                         }
                     ],
                     "id": "4MsIBocsfHnwGUr7",
@@ -285,7 +304,7 @@
                         {
                             "name": "Spaczenie Umysłu",
                             "id": "gh8P4EJqUjx9JGnO",
-                            "script": "let table = game.wfrp4e.tables.findTable(\"mutatemental\");\nif (!table)\n{\n\tui.notifications.error(\"Nie odnaleziono tabeli: mutatemental\")\n}\nlet result = (await table.roll()).results[0];\nlet uuid = `Compendium.${result.documentCollection}.${result.documentId}`\nlet item = await fromUuid(uuid);\n\nif (item)\n{\n    this.script.scriptNotification(`Dodano: ${item.name}`)\n    this.actor.createEmbeddedDocuments(\"Item\", [item])\n}\nelse \n{\n    ui.notifications.error(\"Nie odnaleziono przedmiotu: \" + uuid)\n}"
+                            "script": "[Script.KICZPwLvbUSxbDrE]"
                         }
                     ],
                     "id": "gh8P4EJqUjx9JGnO",
@@ -319,7 +338,12 @@
                         {
                             "id": "tIImpgQfm7FirmhR",
                             "name": "Ochrona",
-                            "script": "if (parseInt(this.item.system.specification.value) > 0)\n{\n\tthis.actor.system.status.ward.value = parseInt(this.item.system.specification.value);\n}"
+                            "script": "[Script.DpdSEHM6NMN1ey6h]"
+                        },
+                        {
+                            "id": "tIImpgQfm7FirmhR",
+                            "name": "Ochrona",
+                            "script": "[Script.cJFDnq1HI4gXWcJo]"
                         }
                     ],
                     "id": "tIImpgQfm7FirmhR",
@@ -336,12 +360,11 @@
                 "pV0NvELZXtpJJTfi": {
                     "id": "pV0NvELZXtpJJTfi",
                     "name": "Sieć",
-                    "script": "args.actor.addCondition(\"entangled\")",
                     "scriptData": [
                         {
                             "id": "pV0NvELZXtpJJTfi",
                             "name": "Sieć",
-                            "script": "args.actor.addCondition(\"entangled\")"
+                            "script": "[Script.mV4Tmc0yfpL09KV7]"
                         }
                     ]
                 }
@@ -370,14 +393,13 @@
                 "ftGagmf8rj6rq3ir": {
                     "id": "ftGagmf8rj6rq3ir",
                     "name": "Tropiciel",
-                    "script": "if (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Track\")))\n{\n   let sl = this.actor.characteristics.i.bonus\n   args.prefillModifiers.slBonus += sl;\n}",
                     "scriptData": [
                         {
                             "id": "ftGagmf8rj6rq3ir",
                             "name": "Tropiciel",
-                            "script": "args.fields.slBonus += this.actor.characteristics.i.bonus;\n",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Track\")",
-                            "activationScript": "return args.skill?.name == game.i18n.localize(\"NAME.Track\")"
+                            "script": "[Script.neaaVy6D6tfcst5P]",
+                            "hideScript": "[Script.yatUu0cd7iKs50rq]",
+                            "activationScript": "[Script.FmLx9pwOkzqqU7Ph]"
                         }
                     ]
                 }
@@ -394,7 +416,7 @@
                         {
                             "id": "M6Sztz0EoQls0Xx9",
                             "name": "Niestabilny",
-                            "script": "if (this.actor.system.status.wounds.value == 0)\n{\n\tthis.actor.addCondition(\"dead\");\n}"
+                            "script": "[Script.WPQbVpD1uwSLAXq1]"
                         }
                     ],
                     "id": "M6Sztz0EoQls0Xx9",
@@ -411,33 +433,27 @@
                 "FLoUbmMqNQMuJfZx": {
                     "id": "FLoUbmMqNQMuJfZx",
                     "name": "Rój",
-                    "script": "args.wounds *= 5",
                     "scriptData": [
                         {
                             "id": "FLoUbmMqNQMuJfZx",
                             "name": "Rój",
-                            "script": "args.wounds *= 5"
+                            "script": "[Script.RJpglw5eVRM1f9t0]"
                         },
                         {
                             "id": "FLoUbmMqNQMuJfZx",
                             "name": "Rój",
-                            "script": "args.fields.modifier += 40",
-                            "activationScript": "return args.item?.system.attackType == \"ranged\"",
-                            "hideScript": "return args.item?.system.attackType != \"ranged\""
+                            "script": "[Script.UYLXm2W6jVn21Age]",
+                            "activationScript": "[Script.nSXzktHyNjGUXjaw]",
+                            "hideScript": "[Script.RZlMkxJz5apn0mUj]"
                         }
                     ]
-                },
-                "tEaxMHcTWod19AVP": {
-                    "id": "tEaxMHcTWod19AVP",
-                    "name": "Rój",
-                    "script": "if (args.type == \"weapon\" && args.item.attackType == \"ranged\")\n   args.prefillModifiers.modifier += 40"
                 }
             }
         },
         "EO05HX7jql0g605A": {
             "id": "EO05HX7jql0g605A",
             "name": "Latanie",
-            "description": "<p>Gdy stworzenie wykonuje Ruch, może przelecieć tyle metrów, ile wynosi podana wartość. Lecąc, ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydować, czy wyląduje, czy będzie kontynuować lot. Może w ramach tego ruchu wykonać Szarżę. Jeśli na początku swojej Tury leci, musi wybrać jako Ruch Latanie. Jeśli nie jest w stanie tego zrobić, MG decyduje, jak daleko stworzenie upadnie.</p>\n<p>Biorąc stworzenie na cel, zmierz odległość horyzontalną jak normalnie, a następnie zwiększ dystans o 1 poziom. Zatem strzał na Dalekim zasięgu stanie się strzałem na Bardzo dalekim zasięgu. Natomiast jeśli był to Bardzo daleki zasięg, stworzenia nie można dosięgnąć strzałem.</p>\n<p>Lecąc, stworzenie dostaje karę -20 do wszystkich prób walki dystansowej, ponieważ nurkuje w powietrzu i zatacza kręgi.</p>",
+            "description": "<p>Gdy stworzenie wykonuje Ruch, może przelecieć tyle metrów, ile wynosi podana wartość. Lecąc, ignoruje wszelkie przeszkody terenowe i inne oraz postaci. Pod koniec ruchu musi zdecydować, czy wyląduje, czy będzie kontynuować lot. Może w ramach tego ruchu wykonać Szarżę. Jeśli na początku swojej Tury leci, musi wybrać jako Ruch Latanie. Jeśli nie jest w stanie tego zrobić, MG decyduje, jak daleko stworzenie upadnie.</p>\n<p>Biorąc stworzenie na cel, zmierz odległość horyzontalną jak normalnie, a następnie zwiększ dystans o 1 poziom. Zatem strzał na Dalekim zasięgu stanie się strzałem na Bardzo dalekim zasięgu. Natomiast jeśli był to Bardzo daleki zasięg, stworzenia nie można dosięgnąć strzałem.</p>\n<p>Lecąc, stworzenie dostaje karę -20 do wszystkich prób walki dystansowej, ponieważ nurkuje w powietrzu i zatacza kręgi.</p>\n<blockquote class=\"foundry-note\"><p>Efekt <strong>Latanie</strong> jest domyślnie nieaktywny. Gdy zostanie aktywowany, będzie powodować kary do testów Ataków Zasięgowych.</p></blockquote>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.EO05HX7jql0g605A",
             "specification": "#",
             "effects": {
@@ -446,9 +462,9 @@
                         {
                             "id": "qFRVjb5kUqUPzBgB",
                             "name": "Lot",
-                            "script": "args.fields.modifier -= 20;",
-                            "activationScript": "return args.item?.system.attackType == \"ranged\"",
-                            "hideScript": "return args.item?.system.attackType != \"ranged\""
+                            "script": "[Script.0iTLDgFHO9Rgc010]",
+                            "activationScript": "[Script.nSXzktHyNjGUXjaw]",
+                            "hideScript": "[Script.RZlMkxJz5apn0mUj]"
                         }
                     ],
                     "id": "qFRVjb5kUqUPzBgB",
@@ -467,7 +483,7 @@
                         {
                             "name": "Furia",
                             "id": "UrY6shI382y5L9os",
-                            "script": "if (this.actor.system.status.advantage.value == 0)\n{\n    return this.script.scriptNotification(\"Niewystarczająca liczba przewag!\", \"error\")\n}\n\nlet hatred = await fromUuid(\"Compendium.wfrp4e-core.items.Item.aE3pyW20Orvdjzj0\")\nlet frenzy = await fromUuid(\"Compendium.wfrp4e-core.items.Item.yRhhOlt18COq4e1q\");\n\nif (this.actor.system.status.advantage.value >= 3)\n{\n    this.script.scriptNotification(`Adding ${frenzy.name}`)\n    this.actor.setAdvantage(0)\n    this.actor.createEmbeddedDocuments(\"Item\", [frenzy])\n}\nelse if (this.actor.system.status.advantage.value >= 1)\n{\n    let data = hatred.toObject();\n    data.system.specification.value = \"Przeciwnicy Związani Walką\"\n    this.script.scriptNotification(`Aktywuję: ${hatred.name}`)\n    this.actor.setAdvantage(0)\n    this.actor.createEmbeddedDocuments(\"Item\", [data])\n}"
+                            "script": "[Script.E1vUepgop09FF5wy]"
                         }
                     ],
                     "id": "UrY6shI382y5L9os",
@@ -496,12 +512,11 @@
                 "cwsT8KWhr0OgtWc1": {
                     "id": "cwsT8KWhr0OgtWc1",
                     "name": "Jad",
-                    "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")",
                     "scriptData": [
                         {
                             "id": "cwsT8KWhr0OgtWc1",
                             "name": "Jad",
-                            "script": "if (args.totalWoundLoss > 0)\n    args.actor.addCondition(\"poisoned\")"
+                            "script": "[Script.jfk5VDKMTIf4ee0v]"
                         }
                     ]
                 }
@@ -524,7 +539,13 @@
                 "yrUvulIfrQfAJmkB": {
                     "id": "yrUvulIfrQfAJmkB",
                     "name": "Twardziel",
-                    "script": "args.multiplier.tb += 1"
+                    "scriptData": [
+                        {
+                            "id": "yrUvulIfrQfAJmkB",
+                            "name": "Twardziel",
+                            "script": "[Script.GuUCErVbk5hrFzR3]"
+                        }
+                    ]
                 }
             }
         },
@@ -549,12 +570,11 @@
                 "1XRT8BzRtNWArfau": {
                     "id": "1XRT8BzRtNWArfau",
                     "name": "Skoczny",
-                    "script": "this.actor.details.move.run *= 2",
                     "scriptData": [
                         {
                             "id": "1XRT8BzRtNWArfau",
                             "name": "Skoczny",
-                            "script": "this.actor.details.move.run *= 2"
+                            "script": "[Script.4JVIy5xtVwvadoqv]"
                         }
                     ]
                 }
@@ -581,17 +601,16 @@
                 "4KinCaegUvscrFU9": {
                     "id": "4KinCaegUvscrFU9",
                     "name": "Wymiot",
-                    "script": "args.actor.addCondition(\"stunned\");",
                     "scriptData": [
                         {
                             "name": "Wymiot",
                             "id": "4KinCaegUvscrFU9",
-                            "script": "args.actor.addCondition(\"stunned\")"
+                            "script": "[Script.ioeTj5mx8jlA5EX5]"
                         },
                         {
                             "name": "Wymiot",
                             "id": "4KinCaegUvscrFU9",
-                            "script": "if (this.actor.system.status.advantage.value >= 3)\n{\n    this.actor.modifyAdvantage(-3);\n    this.script.scriptNotification(\"Zmodyfikowano Przewagi\")\n}\nelse \n{\n    return this.script.scriptNotification(\"Niewystarczająca liczba przewag!\", \"error\")\n}\n\nlet test = await this.actor.setupTrait(this.item)\nawait test.roll();"
+                            "script": "[Script.CW5Vlr57OaMkKJ8Q]"
                         }
                     ]
                 }
@@ -621,13 +640,13 @@
                         {
                             "id": "4RAK0qWFG27tQSmB",
                             "name": "Wspinacz",
-                            "script": "if (args.test.options.wallcrawler)\n{\n\tif (parseInt(args.test.result.SL) < 0 || args.test.result.outcome == \"failure\")\n\t{\n\t\tif (parseInt(args.test.result.SL) < 0)\n\t\t{\n\t\t\targs.test.result.SL = \"+0\";\n\t\t\targs.test.result.description = game.i18n.localize(\"ROLL.MarginalSuccess\");\n\t\t}\n\t\targs.test.result.outcome = \"success\"\n        args.test.result.other.push(`<strong>${this.effect.name}</strong>: Minimum +0 PS`)\n\t}\n}"
+                            "script": "[Script.OqLKL0PiCvYH2QxW]"
                         },
                         {
                             "name": "Wspinacz",
-                            "activationScript": "return args.item?.name == game.i18n.localize(\"NAME.Climb\")",
-                            "hideScript": "return args.characteristic != \"s\"",
-                            "submissionScript": "args.options.wallcrawler = true;",
+                            "activationScript": "[Script.aAvJrAKLzXhS9qN6]",
+                            "hideScript": "[Script.bWr8leucbWslBCYG]",
+                            "submissionScript": "[Script.ZCkYe5XMVY1RWMXG]",
                             "id": "4RAK0qWFG27tQSmB"
                         }
                     ],
@@ -645,12 +664,11 @@
                 "xTL3QAampKjHdKVh": {
                     "id": "xTL3QAampKjHdKVh",
                     "name": "Groza",
-                    "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name)\n  })\n  game.user.updateTokenTargets([]);\n  game.user.broadcastActivity({targets: []})\n}\nelse \n{\n  game.wfrp4e.utility.postTerror(value, name)\n}",
                     "scriptData": [
                         {
                             "id": "xTL3QAampKjHdKVh",
                             "name": "Groza",
-                            "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyTerror(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postTerror(value, name)\n}"
+                            "script": "[Script.MFKhU9vp8bQpHP3I]"
                         }
                     ]
                 }
@@ -666,12 +684,11 @@
                 "txcmOLjyNoW2BLSu": {
                     "id": "txcmOLjyNoW2BLSu",
                     "name": "Dusiciel",
-                    "script": "args.actor.addCondition(\"entangled\")",
                     "scriptData": [
                         {
                             "id": "txcmOLjyNoW2BLSu",
                             "name": "Dusiciel",
-                            "script": "args.actor.addCondition(\"entangled\")"
+                            "script": "[Script.mV4Tmc0yfpL09KV7]"
                         }
                     ]
                 }
@@ -688,7 +705,7 @@
                         {
                             "id": "KCvK1MI6OC2RpXma",
                             "name": "Mutacja",
-                            "script": "let table = game.wfrp4e.tables.findTable(\"mutatephys\");\nif (!table)\n{\n\tui.notifications.error(\"Nie odnaleziono tabeli: mutatephys\")\n}\nlet result = (await table.roll()).results[0];\nlet uuid = `Compendium.${result.documentCollection}.${result.documentId}`\nlet item = await fromUuid(uuid);\n\nif (item)\n{\n    this.script.scriptNotification(`Dodano: ${item.name}`)\n    this.actor.createEmbeddedDocuments(\"Item\", [item])\n}\nelse \n{\n    ui.notifications.error(\"Nie odnaleziono mutacij: \" + uuid)\n}"
+                            "script": "[Script.0R0QAr3D024kWPfo]"
                         }
                     ],
                     "id": "KCvK1MI6OC2RpXma",
@@ -705,12 +722,11 @@
                 "mzNcVAruDOTiCGhS": {
                     "id": "mzNcVAruDOTiCGhS",
                     "name": "Kwasowa Krew",
-                    "script": "let content = `<b>${this.effect.name}</b>: Wszystkie cele związane walką z aktorem: <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] obrażeń, uwzględniając modyfikatory z Wytrzymałości i Pancerza.`\nChatMessage.create({content, speaker : {alias : this.actor.prototypeToken.name}})",
                     "scriptData": [
                         {
                             "id": "mzNcVAruDOTiCGhS",
                             "name": "Kwasowa Krew",
-                            "script": "let content = `<b>${this.effect.name}</b>: Wszystkie cele pozostające w zwarciu z <b>${this.actor.prototypeToken.name}</b> otrzymują [[/r 1d10]] Obrażeń, zmodyfikowanych przez BWt oraz PP.`\n\nthis.script.scriptMessage(content)"
+                            "script": "[Script.QwHoqu2oO8QO8Mad]"
                         }
                     ]
                 }
@@ -725,12 +741,11 @@
                 "cq8SZaHuRYPHsnQF": {
                     "id": "cq8SZaHuRYPHsnQF",
                     "name": "Zimnokrwisty",
-                    "script": "if (args.test.characteristicKey == \"wp\") {\n   args.test.preData.canReverse = true;\n}",
                     "scriptData": [
                         {
                             "id": "cq8SZaHuRYPHsnQF",
                             "name": "Zimnokrwisty",
-                            "script": "if (args.test.characteristicKey == \"wp\")\n   args.test.preData.canReverse = true"
+                            "script": "[Script.gPQrszvIgGlW9yM4]"
                         }
                     ]
                 }
@@ -747,7 +762,7 @@
                         {
                             "id": "0gE6g3jgbFPu9hTp",
                             "name": "Magiczny",
-                            "script": "if ((args.item.type == \"weapon\" || args.item.system.attackType) && !args.item.isMagical )\n{\n    args.item.system.qualities.value.push({name : \"magical\"})\n}"
+                            "script": "[Script.WKXyVHQwQCNTfSKv]"
                         }
                     ],
                     "id": "0gE6g3jgbFPu9hTp",
@@ -764,13 +779,12 @@
                 "et9TgrjWHZYQI7OJ": {
                     "id": "et9TgrjWHZYQI7OJ",
                     "name": "Dekoncentrujący",
-                    "script": "args.prefillModifiers.modifier -= 20",
                     "scriptData": [
                         {
                             "id": "et9TgrjWHZYQI7OJ",
                             "name": "Dekoncentrujący",
-                            "script": "args.fields.modifier -= 20",
-                            "activationScript": "return true"
+                            "script": "[Script.0iTLDgFHO9Rgc010]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         }
                     ]
                 }
@@ -797,14 +811,13 @@
                 "0AgiLabg8eB4LItu": {
                     "id": "0AgiLabg8eB4LItu",
                     "name": "Skryty",
-                    "script": "if (args.item?.id == this.item.id || (args.type == \"skill\" &&  args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}",
                     "scriptData": [
                         {
                             "id": "0AgiLabg8eB4LItu",
                             "name": "Skryty",
-                            "script": "args.fields.slBonus += this.actor.characteristics.ag.bonus;",
-                            "activationScript": "return args.skill?.name.includes(game.i18n.localize(\"NAME.Stealth\")) || args.item?.id == this.item?.id",
-                            "hideScript": "return args.characteristic != \"ag\"  && args.item?.id != this.item?.id"
+                            "script": "[Script.3fdCQ3h3iVuhdDs9]",
+                            "activationScript": "[Script.Ew3C2WmLCtc1KT46]",
+                            "hideScript": "[Script.EpdMj9d9SYPeP44q]"
                         }
                     ]
                 }
@@ -822,7 +835,7 @@
                         {
                             "id": "AyJdX8fnWv62L4EE",
                             "name": "Choroba",
-                            "script": "let diseaseIndex = game.packs\n.filter(i => i.metadata.type == \"Item\")\n.reduce((acc, pack) => acc.concat(pack.index.contents), [])\n.filter(i => i.type == \"disease\")\n.map(i => {\n\ti.id = i._id\n\treturn i\n})\n\nlet choice = await ItemDialog.create(diseaseIndex , 1, \"Wybierz Chorobę\")\n\nif (choice[0])\n{\n\tawait this.item.updateSource({\"system.specification.value\" : choice[0].name})\n}"
+                            "script": "[Script.RSsGiDFibuqg3sHr]"
                         }
                     ],
                     "id": "AyJdX8fnWv62L4EE",
@@ -845,10 +858,9 @@
                 "MNo99hhKFuloCyy8": {
                     "id": "MNo99hhKFuloCyy8",
                     "name": "Upiorne Wycie",
-                    "script": "let damage = (await new Roll(\"1d10\").roll()).total;\nawait args.actor.applyBasicDamage(damage, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL});\nawait args.actor.addCondition(\"deafened\", 3)\n\nlet test = await args.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {absolute : {difficulty: \"average\" }, context : {failure: \"Otrzymano stan Panika\"), success : \"Uniknięto stanu Panika\"}});\nawait test.roll();\nif (test.result.outcome == \"failure\") {\n      await args.actor.addCondition(\"broken\");\n}",
                     "scriptData": [
                         {
-                            "script": "let roll = await new Roll(\"1d10\").roll();\nthis.script.scriptMessage(await this.actor.applyBasicDamage(roll.total, {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL, suppressMsg: true}))\n\nawait this.actor.addCondition(\"deafened\", 3)\n\nlet test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {fields : {difficulty: \"average\" }, appendTitle : ` - ${this.effect.name}`, context : {failure: \"Otrzymano Stan Panika\", success : \"Uniknięto Stanu Panika\"}})\nawait test.roll();\nif (test.failed)\n{\n    this.actor.addCondition(\"broken\")\n}",
+                            "script": "[Script.wzkxiKjxVEeNS1di]",
                             "id": "MNo99hhKFuloCyy8",
                             "name": "Upiorne Wycie"
                         }
@@ -869,7 +881,7 @@
                         {
                             "id": "JqX5XmH4ZXiST9ML",
                             "name": "Ugryzienie",
-                            "script": "if (this.actor.system.status.advantage.value > 0)\n{\n    await this.actor.modifyAdvantage(-1);\n    this.script.scriptNotification(\"Zmodyfikowano Przewagi\")\n}\nelse \n{\n    return this.script.scriptNotification(\"Niewystarczająca liczba przewag!\", \"error\")\n}\n\nlet test = await this.actor.setupTrait(this.item)\nawait test.roll();"
+                            "script": "[Script.n5RJqJL9fdRIxkuN]"
                         }
                     ],
                     "id": "JqX5XmH4ZXiST9ML",
@@ -886,12 +898,11 @@
                 "ODxbsuuS0splmVEN": {
                     "id": "ODxbsuuS0splmVEN",
                     "name": "Strach",
-                    "script": "let value = parseInt(this.item.specification.value);\nlet name = this.actor.prototypeToken.name;\nif (game.user.isGM && game.user.targets.size) {\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  });\n  game.user.updateTokenTargets([]);\n  game.user.broadcastActivity({targets: []})\n}\nelse {\n  game.wfrp4e.utility.postFear(value, name);\n}",
                     "scriptData": [
                         {
                             "id": "ODxbsuuS0splmVEN",
                             "name": "Strach",
-                            "script": "let value = parseInt(this.item.specification.value)\nlet name = this.actor.prototypeToken.name\n\nif (game.user.isGM && game.user.targets.size)\n{\n  game.user.targets.forEach(t => {\n    t.actor.applyFear(value, name)\n  })\n  game.user.updateTokenTargets([]);\n}\nelse \n{\n  game.wfrp4e.utility.postFear(value, name)\n}"
+                            "script": "[Script.IfEu1hO8sKEZBpvg]"
                         }
                     ]
                 }
@@ -907,14 +918,13 @@
                 "HipPSD61s7Vkcru0": {
                     "id": "HipPSD61s7Vkcru0",
                     "name": "Mieszkaniec Lasu",
-                    "script": "if (args.type == \"skill\" && (args.item.name == game.i18n.localize(\"NAME.Climb\")  || args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))))\n{\n   let sl = this.actor.characteristics.ag.bonus\n   args.prefillModifiers.slBonus += sl;\n}",
                     "scriptData": [
                         {
                             "id": "HipPSD61s7Vkcru0",
                             "name": "Mieszkaniec Lasu",
-                            "script": "args.fields.slBonus += this.actor.system.characteristics.ag.bonus\n",
-                            "activationScript": "return args.skill?.name == game.i18n.localize(\"NAME.Climb\") || args.skill?.name?.includes(game.i18n.localize(\"NAME.Stealth\"))",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Climb\") && !args.skill?.name?.includes(game.i18n.localize(\"NAME.Stealth\"))"
+                            "script": "[Script.s8xU6OOZbbfo6VIw]",
+                            "activationScript": "[Script.Q9EmlWmuDac83cJw]",
+                            "hideScript": "[Script.EVBSHEC5nmmj2X41]"
                         }
                     ]
                 }
@@ -929,12 +939,11 @@
                 "0CEu4kmUhYSxWGJZ": {
                     "id": "0CEu4kmUhYSxWGJZ",
                     "name": "Regeneracja",
-                    "script": "let chatData = {content: \"\", speaker : {alias : this.effect.name}, whisper: ChatMessage.getWhisperRecipients(\"GM\")}\n\nlet wounds = duplicate(this.actor.status.wounds);\nlet regen = (await new Roll(\"1d10\").roll()).total;\nif (wounds.value < wounds.max) {\n   if (wounds.value > 0) {\n      wounds.value += regen;\n      if (wounds.value > wounds.max) {\n         wounds.value = wounds.max;\n      }\n      chatData.content += `<b>${this.actor.name}</b> Odzyskana żywotność:  ${regen} .`;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`;\n      }\n   }\n   else if (regen >= 8) {\n      chatData.content += `<b>${this.actor.name}</b> wyrzucił ${regen} i odzyskał 1 punkt żywotności.`\n      wounds.value += 1;\n      if (regen == 10) {\n         chatData.content += `<br>Dodatkowo, zregenerowano Ranę Krytyczną.`\n      }\n   }\n   else {\n      chatData.content += `<b>${this.actor.name}</b> Rzut na regenerację: ${regen} - brak efektu.`\n   }\n   this.actor.update({\"system.status.wounds\" : wounds})\n   ChatMessage.create(chatData)\n}",
                     "scriptData": [
                         {
                             "id": "0CEu4kmUhYSxWGJZ",
                             "name": "Regeneracja",
-                            "script": "let chatData = { whisper: ChatMessage.getWhisperRecipients(\"GM\") }\nlet message = \"\"\n\nlet wounds = duplicate(this.actor.status.wounds)\nlet regenRoll = await new Roll(\"1d10\").roll();\nlet regen = regenRoll.total;\n\nif (wounds.value >= wounds.max)\n    return\n\nif (wounds.value > 0) \n{\n    wounds.value += regen\n    if (wounds.value > wounds.max)\n    {\n        wounds.value = wounds.max\n    }\n    message += `<b>${this.actor.name}</b> odzyskuje rany: ${regen}.`\n\n    if (regen == 10)\n    {\n        message += `<br>Dodatkowo, regeneruje jedną ranę krytyczną.`\n    }\n}\nelse if (regen >= 8) \n{\n    message += `<b>${this.actor.name}</b> wykolosowano ${regen} i odzyskuje 1 ranę.`\n    wounds.value += 1\n    if (regen == 10)\n    {\n        message += `<br>Dodatkowo, regeneruje jedną ranę krytyczną.`\n    }\n}\nelse \n{\n    message += `<b>${this.actor.name}</b> w rzucie na regenerację wylosowano ${regen} - brak efektu.`\n}\n\nawait this.actor.update({ \"system.status.wounds\": wounds })\nthis.script.scriptMessage(message, { whisper: ChatMessage.getWhisperRecipients(\"GM\") })"
+                            "script": "[Script.OGX4BneaYAnV25TO]"
                         }
                     ]
                 }
@@ -949,14 +958,13 @@
                 "KZWyDUhYS7K60RF0": {
                     "id": "KZWyDUhYS7K60RF0",
                     "name": "Ziemnowodny",
-                    "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Swim\"))\n    args.prefillModifiers.slBonus += this.actor.characteristics.ag.bonus",
                     "scriptData": [
                         {
                             "id": "KZWyDUhYS7K60RF0",
                             "name": "Ziemnowodny",
-                            "script": "args.fields.slBonus += this.actor.system.characteristics.ag.bonus",
-                            "activationScript": "return args.skill?.name == game.i18n.localize(\"NAME.Swim\")",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Swim\")"
+                            "script": "[Script.KVuPduDztyMZQNt9]",
+                            "activationScript": "[Script.QQ2gHThZHdO4yLLX]",
+                            "hideScript": "[Script.sUHuj00IpoZ7Gd03]"
                         }
                     ]
                 }
@@ -971,14 +979,13 @@
                 "gjbJu5OWDKFJvvyY": {
                     "id": "gjbJu5OWDKFJvvyY",
                     "name": "Zakażony",
-                    "script": "if (args.type == \"weapon\" && args.item.attackType == \"melee\")\n   args.prefillModifiers.modifier -= 10",
                     "scriptData": [
                         {
                             "id": "gjbJu5OWDKFJvvyY",
                             "name": "Zakażony",
-                            "script": "args.fields.modifier -= 10",
-                            "activationScript": "return args.item?.system.attackType == \"melee\"",
-                            "hideScript": "return args.item?.system.attackType != \"melee\""
+                            "script": "[Script.xvGxwv7X0Vq3vNqb]",
+                            "activationScript": "[Script.igVAVU7DOuzhNG14]",
+                            "hideScript": "[Script.ogJBAXTXyhTqACPO]"
                         }
                     ]
                 }
@@ -995,7 +1002,7 @@
                         {
                             "id": "VTlFNUK7aVXB0Iho",
                             "name": "Eteryczny",
-                            "script": "if (!args.opposedTest.attackerTest.item?.system?.isMagical)\n\targs.abort = `<strong>${this.effect.name}</strong>: Zignorowano`"
+                            "script": "[Script.jObJanFoev4N6ZRv]"
                         }
                     ],
                     "id": "VTlFNUK7aVXB0Iho",
@@ -1012,17 +1019,16 @@
                 "mkDK0Yqvb4JqL1zq": {
                     "id": "mkDK0Yqvb4JqL1zq",
                     "name": "Konstrukt",
-                    "script": "args.wpb = args.sb",
                     "scriptData": [
                         {
                             "id": "mkDK0Yqvb4JqL1zq",
                             "name": "Konstrukt",
-                            "script": "args.wpb = args.sb"
+                            "script": "[Script.T74FEjfFrh3f6MKv]"
                         },
                         {
                             "id": "mkDK0Yqvb4JqL1zq",
                             "name": "Konstrukt",
-                            "script": "if ((args.item.type == \"weapon\" || args.item.system.attackType) && !args.item.isMagical )\n{\n    args.item.system.qualities.value.push({name : \"magical\"})\n}"
+                            "script": "[Script.WKXyVHQwQCNTfSKv]"
                         }
                     ]
                 }
@@ -1037,12 +1043,11 @@
                 "bSNlAHOT09D6Bx16": {
                     "id": "bSNlAHOT09D6Bx16",
                     "name": "Długi Krok",
-                    "script": "args.actor.details.move.run *= 1.5;",
                     "scriptData": [
                         {
                             "id": "bSNlAHOT09D6Bx16",
                             "name": "Długi Krok",
-                            "script": "args.actor.details.move.run *= 1.5"
+                            "script": "[Script.ZJy2rvpKmUHXGrAi]"
                         }
                     ]
                 }
@@ -1057,17 +1062,16 @@
                 "3KXZhIkHukLOpg2l": {
                     "id": "3KXZhIkHukLOpg2l",
                     "name": "Atak Ogonem",
-                    "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value]\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value]\nif (attackerSize > actorSize) {\n   args.actor.addCondition(\"prone\")\n   ChatMessage.create({content: `<b>Atak Ogonem</b>: ${args.actor.prototypeToken.name} otrzymuje Stan @Condition[Powalenie]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}",
                     "scriptData": [
                         {
                             "name": "Atak Ogonem",
                             "id": "3KXZhIkHukLOpg2l",
-                            "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value]\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value]\n\nif (attackerSize > actorSize)\n{\n   args.actor.addCondition(\"prone\")\n   this.script.scriptMessage(`<strong>Atak Ogonem</strong>: ${args.actor.prototypeToken.name} otrzymuje stan <strong>Powalenie</strong>`)\n}"
+                            "script": "[Script.Mhb67xufvA9uWO21]"
                         },
                         {
                             "id": "3KXZhIkHukLOpg2l",
                             "name": "Atak Ogonem",
-                            "script": "if (this.actor.system.status.advantage.value > 0)\n{\n    await this.actor.modifyAdvantage(-1);\n    this.script.scriptNotification(\"Zmodyfikowano Przewagi\")\n}\nelse \n{\n    return this.script.scriptNotification(\"Niewystarczająca liczba przewag!\", \"error\")\n}\n\nlet test = await this.actor.setupTrait(this.item)\nawait test.roll();"
+                            "script": "[Script.n5RJqJL9fdRIxkuN]"
                         }
                     ]
                 }
@@ -1086,7 +1090,7 @@
                         {
                             "id": "oRrbVX38SceyNSNF",
                             "name": "Rodzaj Oddechu",
-                            "script": "let type = this.item.getFlag(\"wfrp4e\", \"breath\")\nlet types = {\n    none : \"Brak\",\n    cold : \"Zimno\",\n    corrosion : \"Kwas\",\n    fire : \"Ogień\",\n    electricity : \"Elektryczność\",\n    poison : \"Trucizna\",\n    smoke : \"Dym\"\n}\nif (!type)\n{\n    type = (await ItemDialog.create(ItemDialog.objectToArray(types, this.item.img), 1, \"Wybierz Typ Zionięcia\"))[0]?.id;\n    this.item.updateSource({\"flags.wfrp4e.breath\" : type})\n}\n\nif (!this.item.name.includes(\"(\") && types[type] && type != \"none\")\n{\n    this.item.updateSource({name : this.item.name += ` (${types[type]})`, \"system.specification.value\" : this.item.system.specification.value.replace(\"(Type)\", \"\").trim()})\n}"
+                            "script": "[Script.8GyJgdHVBaLrHCY8]"
                         }
                     ],
                     "id": "oRrbVX38SceyNSNF",
@@ -1097,12 +1101,12 @@
                         {
                             "name": "Zionięcie",
                             "id": "PSDaEI70b4ZasVRm",
-                            "script": "let type = this.item.getFlag(\"wfrp4e\", \"breath\");\n\nif (type == \"cold\")\n{\n\tlet stunned = Math.max(1, Math.trunc(args.totalWoundLoss / 5))\n\tawait args.actor.addCondition(\"stunned\", stunned);\n}\n\nif (type == \"corrosion\")\n{\n    let damageItems = await Dialog.confirm({title : this.item.name, content : `<p>Uszkodzić wszystkie noszone przedmioty?</p>`})\n\tif (damageItems)\n\t{\n\t\tlet msg = ``\n\t\tlet weapons = args.actor.itemTypes.weapon.filter(i => i.isEquipped);\n\t\tlet armour = args.actor.itemTypes.armour.filter(i => i.isEquipped);\n\t\tlet trappings = args.actor.itemTypes.trapping.filter(i => i.isEquipped);\n\t\tfor(let item of weapons)\n\t\t{\n\t\t\tif (item.system.properties.qualities.shield)\n\t\t\t{\n\t\t\t\tawait item.system.damageItem(1, \"shield\");\n\t\t\t}\n\t\t\telse \n\t\t\t{\n\t\t\t\tawait item.system.damageItem(1);\n\t\t\t}\n\t\t\tmsg += `<p><strong>${item.name}</strong>: zadano 1 punkt uszkodzeń</p>`\n\t\t}\n\t\tfor(let item of armour)\n\t\t{\n\t\t\tawait item.system.damageItem(1);\n\t\t\tmsg += `<p><strong>${item.name}</strong>: zadano 1 punkt uszkodzeń</p>`\n\t\t}\n\t\tfor(let item of trappings)\n\t\t{\n\t\t\tawait item.system.damageItem(1);\n\t\t\tmsg += `<p><strong>${item.name}</strong>: zadano 1 punkt uszkodzeń</p>`\n\t\t}\n\t\tif (msg)\n\t\t{\n\t\t\tthis.script.scriptMessage(msg, {speaker : {alias : args.actor.name}});\n\t\t}\n\t}\n}\n\nif (type == \"fire\")\n{\n\tawait args.actor.addCondition(\"ablaze\");\n}\n\nif (type == \"electricity\")\n{\n\tawait args.actor.addCondition(\"stunned\");\n}\n\nif (type == \"poison\")\n{\n\tawait args.actor.addCondition(\"poisoned\");\n}\n\n"
+                            "script": "[Script.jdS2u1tQPYeO55WI]"
                         },
                         {
                             "id": "PSDaEI70b4ZasVRm",
                             "name": "Zionięcie",
-                            "script": "let type = this.item.getFlag(\"wfrp4e\", \"breath\");\n\nif ([\"fire\", \"electricity\", \"poison\"].includes(type))\n{\n    args.applyAP = false;\n}"
+                            "script": "[Script.11uCC0mK2uL783al]"
                         }
                     ],
                     "id": "PSDaEI70b4ZasVRm",
@@ -1125,12 +1129,11 @@
                 "6rMAx2bGefOkubv8": {
                     "id": "6rMAx2bGefOkubv8",
                     "name": "Zaraza",
-                    "script": "if (args.totalWoundLoss > 0)\n     ChatMessage.create({ content: `<b>Zakażony: ${args.actor.name}</b> musi zdać <b>Łatwy(+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, whisper: ChatMessage.getWhisperRecipients(\"GM\") })",
                     "scriptData": [
                         {
                             "id": "6rMAx2bGefOkubv8",
                             "name": "Zaraza",
-                            "script": "if (args.totalWoundLoss > 0)\n{\n    this.script.scriptMessage(`<b>${args.actor.name}</b> musi zdać <b>Prosty (+40) Test Odporności</b> lub otrzyma @UUID[Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb]{Ropiejącą Ranę}`, {whisper: ChatMessage.getWhisperRecipients(\"GM\")})\n}"
+                            "script": "[Script.LQEWSN5KnHHATPsf]"
                         }
                     ]
                 }
@@ -1146,16 +1149,16 @@
                 "ra1EGVf9mHjb4JrR": {
                     "scriptData": [
                         {
-                            "script": "let choice = await ItemDialog.create(ItemDialog.objectToArray({\n    broken: \"Broken\",\n    drive: \"Drive\",\n    entertain: \"Entertain\",\n    fetch: \"Fetch\",\n    guard: \"Guard\",\n    home: \"Home\",\n    magic: \"Magic\",\n    mount: \"Mount\",\n    war: \"War\"\n}, this.effect.img), \"unlimited\", \"Choose Training\");\n\nif (choice.length)\n{\n    let changes = foundry.utils.deepClone(this.effect.changes);\n\n    for(let training of choice)\n    {\n        switch(training.id)\n        {\n            case \"broken\" : \n                let roll = await new Roll(\"2d10\").roll();   \n                roll.toMessage(this.script.getChatData());\n                changes.push({value : roll.total, mode : 2, key : \"system.characteristics.fel.modifier\"})\n\n                if (this.actor.type == \"creature\")\n                {\n                    let bestial = this.actor.itemTypes.trait.find(i => i.name == \"Bestial\");\n                    await this.actor.update({\"system.excludedTraits\" : this.actor.system.excludedTraits.concat(bestial.id)});\n                }\n                break;\n\n            case \"drive\" : \n\n                break;\n\n            case \"entertain\" : \n\n                break;\n\n            case \"fetch\" : \n\n                break;\n\n            case \"guard\" : \n                let territorial = await fromUuid(\"Compendium.wfrp4e-core.items.Item.JIAe7i7dqTQBu4do\");\n                await this.actor.createEmbeddedDocuments(\"Item\", [territorial], {fromEffect: this.effect.id})\n                args.options.keepId = true;\n                break;\n\n            case \"home\" : \n\n                break;\n\n            case \"magic\" : \n\n                break;\n\n            case \"mount\" : \n\n                break;\n\n            case \"war\" : \n                changes.push({value : 10, mode : 2, key : \"system.characteristics.ws.modifier\"})\n                break;\n        }\n    }\n    this.effect.updateSource({name : `${this.effect.name} (${choice.map(i => i.name).join(\", \")})`, changes, \"flags.wfrp4e.trained\" : choice.map(i => i.id)})\n    this.item.updateSource({\"system.specification.value\" : `${choice.map(i => i.name).join(\", \")}`})\n}",
+                            "script": "[Script.KGK9vL1Yl0qmCeCN]",
                             "id": "ra1EGVf9mHjb4JrR",
                             "name": "Wyszkolony"
                         },
                         {
                             "id": "ra1EGVf9mHjb4JrR",
-                            "script": "args.fields.modifier += 10;",
-                            "activationScript": "return args.skill?.name.includes(game.i18n.localize(\"NAME.Entertain\")) || args.skill?.name.includes(game.i18n.localize(\"NAME.Perform\")) || args.skill?.name.includes(game.i18n.localize(\"NAME.Play\"))",
+                            "script": "[Script.ma0sWhebqwdRHWvY]",
+                            "activationScript": "[Script.yRRzSKlcN3L7rEEe]",
                             "name": "Wyszkolony",
-                            "hideScript": "return !this.effect.getFlag(\"wfrp4e\", \"trained\")?.includes(\"entertain\") || (!args.skill?.name.includes(game.i18n.localize(\"NAME.Entertain\")) && !args.skill?.name.includes(game.i18n.localize(\"NAME.Perform\")) && !args.skill?.name.includes(game.i18n.localize(\"NAME.Play\")))"
+                            "hideScript": "[Script.v6LIG7EwWYALxCpP]"
                         }
                     ],
                     "id": "ra1EGVf9mHjb4JrR",
@@ -1174,13 +1177,13 @@
                     "scriptData": [
                         {
                             "id": "lCW7MgvHneroE3ox",
-                            "script": "if ((args.item.type == \"weapon\" || args.item.system.attackType) && !args.item.isMagical )\n{\n    args.item.system.qualities.value.push({name : \"magical\"})\n}",
+                            "script": "[Script.WKXyVHQwQCNTfSKv]",
                             "name": "Demoniczny"
                         },
                         {
                             "id": "lCW7MgvHneroE3ox",
                             "name": "Demoniczny",
-                            "script": "if (parseInt(this.item.system.specification.value) > 0)\n{\n\tthis.actor.system.status.ward.value = parseInt(this.item.system.specification.value);\n}\n\n"
+                            "script": "[Script.S95QqpX1cZyIVCPy]"
                         }
                     ],
                     "id": "lCW7MgvHneroE3ox",
@@ -1200,7 +1203,7 @@
                         {
                             "id": "e8uN9FKxvz2EQjaZ",
                             "name": "Staje Dęba",
-                            "script": "let stomp = game.wfrp4e.config.systemItems.stomp;\nlet test = await this.actor.setupTrait(stomp)\nawait test.roll();"
+                            "script": "[Script.TmaS8o33825QUMrx]"
                         }
                     ],
                     "id": "e8uN9FKxvz2EQjaZ",
@@ -1217,12 +1220,11 @@
                 "CAcGBn8sq62mVUxJ": {
                     "id": "CAcGBn8sq62mVUxJ",
                     "name": "Pancerz",
-                    "script": "let AP = args.actor.status.armour\nlet APdamage = this.item?.getFlag('wfrp4e', 'APdamage') || {}\n\nlet value = parseInt(this.item?.specification.value)\n\nif (Number.isNumeric(value))\n{\nAP[\"head\"].value += (value - (APdamage.head || 0))\nAP[\"rArm\"].value += (value - (APdamage.rArm|| 0))\nAP[\"lArm\"].value += (value - (APdamage.lArm || 0))\nAP[\"body\"].value += (value - (APdamage.body || 0))\nAP[\"lLeg\"].value += (value - (APdamage.lLeg || 0))\nAP[\"rLeg\"].value += (value - (APdamage.rLeg || 0))\n}",
                     "scriptData": [
                         {
                             "id": "CAcGBn8sq62mVUxJ",
                             "name": "Pancerz",
-                            "script": "this.actor.status.addArmour(parseInt(this.item.system.specification.value) || 0, {source: this.effect})"
+                            "script": "[Script.Vb7rgl8T4VRswbnZ]"
                         }
                     ]
                 }
@@ -1263,17 +1265,16 @@
                 "kPgI28vmSamM3u1s": {
                     "id": "kPgI28vmSamM3u1s",
                     "name": "Atak Językiem (Zasięg)",
-                    "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value]\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value]\n\nif (attackerSize > actorSize)\n{\n   args.actor.addCondition(\"entangled\")\n   ChatMessage.create({content: `<b>Atak Językiem</b>: ${args.actor.prototypeToken.name} otrzymuje Stan @Condition[Pochwycenie]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}",
                     "scriptData": [
                         {
                             "id": "kPgI28vmSamM3u1s",
                             "name": "Atak Językiem (Zasięg)",
-                            "script": "let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value]\nlet attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value]\n\nif (attackerSize > actorSize)\n{\n   args.actor.addCondition(\"entangled\")\n   ChatMessage.create({content: `<b>Atak Językiem</b>: ${args.actor.prototypeToken.name} otrzymuje stan: @Condition[Pochwycenie]`, speaker : {alias: args.attacker.prototypeToken.name}})\n}"
+                            "script": "[Script.Mir4FMHQRdVqazAF]"
                         },
                         {
                             "id": "kPgI28vmSamM3u1s",
                             "name": "Atak Językiem (Zasięg)",
-                            "script": "if (this.actor.system.status.advantage.value > 0)\n{\n    await this.actor.modifyAdvantage(-1);\n    this.script.scriptNotification(\"Zmodyfikowano Przewagi\")\n}\nelse \n{\n    return this.script.scriptNotification(\"Niewystarczająca liczba przewag\", \"error\")\n}\n\nlet test = await this.actor.setupTrait(this.item)\nawait test.roll();"
+                            "script": "[Script.n5RJqJL9fdRIxkuN]"
                         }
                     ]
                 }
@@ -1298,12 +1299,12 @@
                         {
                             "id": "rNq9moHHK0N4dC3S",
                             "name": "Spaczenie",
-                            "script": "game.wfrp4e.utility.postCorruptionTest(this.item.system.specification.value, {speaker : {alias: this.actor.prototypeToken.name}})"
+                            "script": "[Script.2AOo7KUyzMrgIlgM]"
                         },
                         {
                             "id": "rNq9moHHK0N4dC3S",
                             "name": "Spaczenie",
-                            "script": "if ([\"Pomniejsze\", \"Umiarkowane\", \"Potężne\"].includes(this.item.system.specification.value))\n{\n\treturn\n}\n\nlet choice = await ItemDialog.create(ItemDialog.objectToArray({minor : \"Pomniejsze\", moderate : \"Umiarkowane\", severe : \"Potężne\"}, this.item.img), 1, \"Wybierz rodzaj Zepsucia\");\n\nthis.item.updateSource({\"system.specification.value\" : choice[0].name})"
+                            "script": "[Script.xS2su09zcza9du09]"
                         }
                     ],
                     "id": "rNq9moHHK0N4dC3S",
@@ -1314,25 +1315,20 @@
         "yRhhOlt18COq4e1q": {
             "id": "yRhhOlt18COq4e1q",
             "name": "Szał Bojowy",
-            "description": "<p>Stworzenie może wpadać w <i>Szał Bojowy</i>. Podczas Szału Bojowego jest odporne na zasady Psychologii, nie wycofa się z żadnego powodu, musi zawsze poruszać się z pełną prędkością w stronę najbliższego widzianego przeciwnika, by go zaatakować. Jedynymi Akcjami, jakie można wtedy wykonać, są Testy Broni Białej w zwarciu albo Atletyki, by szybciej dobiec do przeciwnika. Poza tym w każdej Rundzie postać otrzymuje Akcję Darmową w postaci dodatkowego ataku wręcz, ponieważ naprawdę daje z siebie wszystko. A jakby tego było mało, zaciekłość i brutalność skutkuje podniesieniem Bonusu z Siły o +1. Postać pozostaje w Szale Bojowym, dopóki wszyscy wrogowie w polu widzenia nie zostaną unieszkodliwieni albo dopóki postać nie otrzyma przynajmniej 1 poziomu Oszołomienia lub nie nastąpi Utrata Przytomności. Po zakończeniu Szału Bojowego postać natychmiast otrzymuje 1 poziom Zmęczenia.</p>",
+            "description": "<p>Stworzenie może wpadać w <i>Szał Bojowy</i>. Podczas Szału Bojowego jest odporne na zasady Psychologii, nie wycofa się z żadnego powodu, musi zawsze poruszać się z pełną prędkością w stronę najbliższego widzianego przeciwnika, by go zaatakować. Jedynymi Akcjami, jakie można wtedy wykonać, są Testy Broni Białej w zwarciu albo Atletyki, by szybciej dobiec do przeciwnika. Poza tym w każdej Rundzie postać otrzymuje Akcję Darmową w postaci dodatkowego ataku wręcz, ponieważ naprawdę daje z siebie wszystko. A jakby tego było mało, zaciekłość i brutalność skutkuje podniesieniem Bonusu z Siły o +1. Postać pozostaje w Szale Bojowym, dopóki wszyscy wrogowie w polu widzenia nie zostaną unieszkodliwieni albo dopóki postać nie otrzyma przynajmniej 1 poziomu Oszołomienia lub nie nastąpi Utrata Przytomności. Po zakończeniu Szału Bojowego postać natychmiast otrzymuje 1 poziom Zmęczenia.</p><blockquote class=\"foundry-note\"><p>Efekt jest domyślnie nieaktywny, aktywuj go ręcznie, gdy postać wchodź w stan Szału Bojowego.</p></blockquote>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.yRhhOlt18COq4e1q",
             "effects": {
-                "jTfCjCCrfFHKqXhz": {
-                    "id": "jTfCjCCrfFHKqXhz",
-                    "name": "Szał Bojowy",
-                    "script": "args.actor.characteristics.s.bonus += 1\nargs.actor.characteristics.s.calculationBonusModifier -= 1"
-                },
                 "ydTMvbmqv6BZ4u6d": {
                     "scriptData": [
                         {
                             "name": "Szał Bojowy",
                             "id": "ydTMvbmqv6BZ4u6d",
-                            "script": "this.actor.characteristics.s.bonus += 1\nthis.actor.characteristics.s.calculationBonusModifier -= 1"
+                            "script": "[Script.91S2GnBFYFbxmOCK]"
                         },
                         {
                             "id": "ydTMvbmqv6BZ4u6d",
                             "name": "Szał Bojowy",
-                            "script": "if (this.actor.hasCondition(\"stunned\") || this.actor.hasCondition(\"unconscious\"))\n{\n\tthis.script.scriptNotification(\"Nieaktywny!\");\n\tawait this.effect.update({\"disabled\" : true})\n}"
+                            "script": "[Script.OeKeQAAcJhdI4Qky]"
                         }
                     ],
                     "id": "ydTMvbmqv6BZ4u6d",
@@ -1349,14 +1345,13 @@
                 "PWNOSwxsePCN7sKH": {
                     "id": "PWNOSwxsePCN7sKH",
                     "name": "Odporność na Magię",
-                    "script": "if (args.type == \"cast\")\n       args.prefillModifiers.slBonus -= (Number(this.item.specification.value) || 0)",
                     "scriptData": [
                         {
                             "id": "PWNOSwxsePCN7sKH",
                             "name": "Odporność na Magię",
-                            "script": "args.fields.slBonus -= (Number(this.item.specification.value) || 0)",
-                            "activationScript": "return args.type == \"cast\"",
-                            "hideScript": "return args.type != \"cast\""
+                            "script": "[Script.cuqCtQsfLBBAGjnu]",
+                            "activationScript": "[Script.8vpAtJ93GIeye1qj]",
+                            "hideScript": "[Script.DBafsY1HrclJRTtA]"
                         }
                     ]
                 }

@@ -140,14 +140,13 @@
                 "6pQrluba3OWBJgYI": {
                     "id": "6pQrluba3OWBJgYI",
                     "name": "Czepiec kolczy",
-                    "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Perception\")) {\n    args.prefillModifiers.modifier -= 10\n}",
                     "scriptData": [
                         {
-                            "activationScript": "return args.skill?.name == game.i18n.localize(\"NAME.Perception\")",
+                            "activationScript": "[Script.9RFoasDcFnYZ1txR]",
                             "id": "6pQrluba3OWBJgYI",
                             "name": "Czepiec kolczy",
-                            "script": "args.fields.modifier -= 10",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Perception\")"
+                            "script": "[Script.xvGxwv7X0Vq3vNqb]",
+                            "hideScript": "[Script.h0DfPwUUOBjyAHMZ]"
                         }
                     ]
                 }
@@ -177,19 +176,19 @@
                         {
                             "id": "2V9aoWM8eH3ezQh1",
                             "name": "Korzeń mandragory",
-                            "script": "let test = await this.actor.setupCharacteristic(\"wp\", {appendTitle : ` - ${this.effect.name}`})\nawait test.roll();\nif (test.succeeded)\n{\n    this.script.scriptMessage(\"Can perform an Action or Move (choose one)\")\n}\nelse \n{\n    this.script.scriptMessage(\"Cannot perform an Action or Move this round\")    \n}"
+                            "script": "[Script.EdTChmSouS0MSmk5]"
                         },
                         {
                             "id": "2V9aoWM8eH3ezQh1",
                             "name": "Korzeń mandragory",
-                            "script": "args.fields.modifier += 20;",
-                            "activationScript": "return args.skill?.name == game.i18n.localize(\"NAME.Cool\")",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Cool\")"
+                            "script": "[Script.u6CYMSZADrfXd48Q]",
+                            "activationScript": "[Script.7H6wYyJ6cpaoc2QQ]",
+                            "hideScript": "[Script.XuFxKPYheYF4WMmQ]"
                         },
                         {
                             "id": "2V9aoWM8eH3ezQh1",
                             "name": "Korzeń mandragory",
-                            "script": "this.actor.system.details.move.value /= 2;"
+                            "script": "[Script.dqvHDMlcitLx1pUx]"
                         }
                     ],
                     "id": "2V9aoWM8eH3ezQh1",
@@ -200,7 +199,7 @@
                         {
                             "id": "RyXKKxNWlNwsNxv7",
                             "name": "Zastosuj Korzeń mandragory",
-                            "script": "if (this.item.system.quantity.value)\n{\n\tthis.item.system.reduceQuantity();\n\tlet actor = Array.from(game.user.targets)[0]?.actor || this.actor;\n    let effectData = this.item.effects.contents[0].convertToApplied();\n\teffectData.flags.wfrp4e.sourceItem = this.item.uuid\n\tactor.applyEffect({effectData : [effectData]})\n}\nelse\n{\n\tthis.script.scriptNotification(\"Nic nie zostało!\", \"error\")\n}"
+                            "script": "[Script.AqHLHp4kH6KULk3e]"
                         }
                     ],
                     "id": "RyXKKxNWlNwsNxv7",
@@ -328,7 +327,30 @@
             "id": "9pJenZDZD2lV75vq",
             "name": "Lampa sztormowa",
             "description": "<p>Przesłony chronią płomień przed wiatrem, a także umożliwiają skupienie światła w łuku 90° lub całkowite zaciemnienie. Oświetla obszar w promieniu 20 metrów lub 30 metrów, gdy światło jest skupione.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.9pJenZDZD2lV75vq"
+            "sourceId": "Compendium.wfrp4e-core.items.Item.9pJenZDZD2lV75vq",
+            "effects": {
+                "BegI1DfjEGg5y1RX": {
+                    "id": "BegI1DfjEGg5y1RX",
+                    "name": "Lampa Sztormowa",
+                    "scriptData": [
+                        {
+                            "id": "BegI1DfjEGg5y1RX",
+                            "name": "Lampa Sztormowa",
+                            "script": "[Script.AS7CstSosuCrwZ19]"
+                        },
+                        {
+                            "id": "BegI1DfjEGg5y1RX",
+                            "name": "Lampa Sztormowa",
+                            "script": "[Script.CMUFtmNA1kkD1ay7]"
+                        },
+                        {
+                            "id": "BegI1DfjEGg5y1RX",
+                            "name": "Lampa Sztormowa",
+                            "script": "[Script.hK0YMJfYbpbJZizO]"
+                        }
+                    ]
+                }
+            }
         },
         "Homing Pigeon": {
             "id": "AA7nhcqscDj1zoU9",
@@ -399,14 +421,13 @@
                 "Sq1UQ9Xo4cuwWy2K": {
                     "id": "Sq1UQ9Xo4cuwWy2K",
                     "name": "Dziwnokorzeń",
-                    "script": "if (args.type == \"characteristic\") {\n  if (args.item == \"wp\" || args.item == \"t\")\n    args.prefillModifiers.modifier += 10\n  else if (args.item == \"ag\" || args.item == \"i\" || args.item == \"int\")\n    args.prefillModifiers.modifier -= 10\n}\nelse if (args.type == \"skill\") {\n  if (args.item.characteristic.key == \"wp\" || args.item.characteristic.key == \"t\")\n  args.prefillModifiers.modifier += 10\n  else if (args.item.characteristic.key == \"ag\" || args.item.characteristic.key == \"i\" || args.item.characteristic.key == \"int\")\n    args.prefillModifiers.modifier -= 10\n}\nelse if (args.type == \"cast\") {\n  args.prefillModifiers.modifier -= 10\n}\nelse if (args.type == \"channelling\") {\n  args.prefillModifiers.modifier += 10\n}",
                     "scriptData": [
                         {
                             "id": "Sq1UQ9Xo4cuwWy2K",
                             "name": "Dziwnokorzeń",
-                            "script": "if ([\"t\", \"wp\"].includes(args.characteristic))\n{\n\targs.fields.modifier += 10;\n}\nelse if ([\"ag\", \"i\", \"int\"].includes(args.characteristic))\n{\n\targs.fields.modifier -= 10;\n}",
-                            "activationScript": "return [\"t\", \"wp\", \"ag\", \"i\", \"int\"].includes(args.characteristic)",
-                            "hideScript": "return ![\"t\", \"wp\", \"ag\", \"i\", \"int\"].includes(args.characteristic)"
+                            "script": "[Script.8K9tpCwvFC9INk5V]",
+                            "activationScript": "[Script.UWrzokgabRKUpnkG]",
+                            "hideScript": "[Script.RuW1PWUFxIbbSlIm]"
                         }
                     ]
                 },
@@ -415,7 +436,7 @@
                         {
                             "id": "hLWNp5uC77EBu33J",
                             "name": "Weź Dziwnokorzeń",
-                            "script": "if (this.item.system.quantity.value)\n{\n\tthis.item.system.reduceQuantity();\n\tlet actor = Array.from(game.user.targets)[0]?.actor || this.actor;\n     let effectData = this.item.effects.contents[0].convertToApplied();\n     let minutes = Math.ceil(CONFIG.Dice.randomUniform() * 10);\n     effectData.duration.seconds = 60 * minutes\n     this.script.scriptMessage(`<strong>Duration</strong>: ${minutes} minutes`, {whisper : ChatMessage.getWhisperRecipients(\"GM\")})\n\tactor.applyEffect({effectData : [effectData]})\n}\nelse\n{\n\tthis.script.scriptNotification(\"Nic nie zostało!\", \"error\")\n}"
+                            "script": "[Script.red2bt4PGgIWAdTR]"
                         }
                     ],
                     "id": "hLWNp5uC77EBu33J",
@@ -480,14 +501,13 @@
                 "u46Xpql4mjj6JOD0": {
                     "id": "u46Xpql4mjj6JOD0",
                     "name": "Płytowe Nagolenniki",
-                    "script": "if (args.type == \"skill\" && args.item.name.includes(game.i18n.localize(\"NAME.Stealth\"))) {\n    args.prefillModifiers.modifier -= 10;\n}",
                     "scriptData": [
                         {
                             "id": "u46Xpql4mjj6JOD0",
                             "name": "Płytowe Nagolenniki",
-                            "script": "args.fields.modifier -= 10",
-                            "activationScript": "return args.skill?.name.includes(game.i18n.localize(\"NAME.Stealth\"))",
-                            "hideScript": "return !args.skill?.name.includes(game.i18n.localize(\"NAME.Stealth\"))"
+                            "script": "[Script.xvGxwv7X0Vq3vNqb]",
+                            "activationScript": "[Script.AV2Kj6jgmIc45zKi]",
+                            "hideScript": "[Script.l8qFKSnMpy4P7XQR]"
                         }
                     ]
                 }
@@ -537,17 +557,17 @@
                         {
                             "id": "L4iaGjmt224RgWhW",
                             "name": "Grzybki Szalonego Kapelusznika",
-                            "script": "args.wounds += 4;"
+                            "script": "[Script.DANLE5HxrkTNelhl]"
                         },
                         {
                             "id": "L4iaGjmt224RgWhW",
                             "name": "Grzybki Szalonego Kapelusznika",
-                            "script": "let frenzy = await fromUuid(\"Compendium.wfrp4e-core.items.Item.hXcfygzujgyMN1uI\");\nthis.actor.createEmbeddedDocuments(\"Item\", [frenzy], {fromEffect: this.effect.id})"
+                            "script": "[Script.aMHGjWyn6BXCI4pw]"
                         },
                         {
                             "id": "L4iaGjmt224RgWhW",
                             "name": "Grzybki Szalonego Kapelusznika",
-                            "script": "\n\nif (![\"Goblin\", \"Orc\"].includes(this.actor.system.details.species.value)) {\n    let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), { appendTitle: ` - ${this.effect.name}` })\n    await test.roll();\n    if (test.failed) {\n        let infection = await fromUuid(\"Compendium.wfrp4e-core.items.Item.1hQuVFZt9QnnbWzg\")\n        this.actor.createEmbeddedDocuments(\"Item\", [infection])\n    }\n}\n\n// Since wounds change when the effect is deleted, need to wait until after \n// the max wounds have been recalculated to apply damage\ngame.wfrp4e.utility.sleep(1000).then(async () => {\n    let roll = await new Roll(\"1d10\").roll();\n\n    roll.toMessage(this.script.getChatData());\n    this.script.scriptMessage(await this.actor.applyBasicDamage(roll.total, { damageType: game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL, suppressMsg: true }))\n\n})"
+                            "script": "[Script.2sDH6RvoOAR40oqH]"
                         }
                     ],
                     "id": "L4iaGjmt224RgWhW",
@@ -558,7 +578,7 @@
                         {
                             "id": "RmNoZUc1wPx1kcmk",
                             "name": "Zastosuj Grzybki Szalonego Kapelusznika",
-                            "script": "if (this.item.system.quantity.value)\n{\n\tthis.item.system.reduceQuantity();\n\tlet actor = Array.from(game.user.targets)[0]?.actor || this.actor;\n    let effectData = this.item.effects.contents[0].convertToApplied();\n\teffectData.flags.wfrp4e.sourceItem = this.item.uuid\n\tactor.applyEffect({effectData : [effectData]})\n}\nelse\n{\n\tthis.script.scriptNotification(\"Nic nie zostało!\", \"error\")\n}"
+                            "script": "[Script.AqHLHp4kH6KULk3e]"
                         }
                     ],
                     "id": "RmNoZUc1wPx1kcmk",
@@ -617,14 +637,13 @@
                 "Vljt1mEPqTTJIIxs": {
                     "id": "Vljt1mEPqTTJIIxs",
                     "name": "Hełm płytowy",
-                    "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Perception\")){\n   args.prefillModifiers.modifier -= 20;\n}",
                     "scriptData": [
                         {
                             "id": "Vljt1mEPqTTJIIxs",
                             "name": "Hełm płytowy",
-                            "script": "args.fields.modifier -= 20",
-                            "activationScript": "return args.skill?.name == game.i18n.localize(\"NAME.Perception\")",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Perception\")"
+                            "script": "[Script.0iTLDgFHO9Rgc010]",
+                            "activationScript": "[Script.9RFoasDcFnYZ1txR]",
+                            "hideScript": "[Script.h0DfPwUUOBjyAHMZ]"
                         }
                     ]
                 }
@@ -748,12 +767,11 @@
                 "K7C1LFtqdLQ5bhFS": {
                     "id": "K7C1LFtqdLQ5bhFS",
                     "name": "Mikstura lecznicza",
-                    "script": "let wounds = this.actor.status.wounds\nif (wounds.value == 0)\n  return ui.notifications.error(\"Brak efektu, ponieważ Żywotności wynosi 0, zużyto dawkę\")\n\nui.notifications.notify(`Wyleczono ${this.actor.characteristics.t.bonus} Żywotności`)\nthis.actor.modifyWounds(this.actor.characteristics.t.bonus)",
                     "scriptData": [
                         {
                             "id": "K7C1LFtqdLQ5bhFS",
                             "name": "Mikstura lecznicza",
-                            "script": "let wounds = this.actor.system.status.wounds\nif (wounds.value == 0)\n  return this.script.scriptNotification(\"No effect at 0 Wounds\", \"error\")\n\nthis.script.scriptNotification(`Healed ${this.actor.characteristics.t.bonus} Wounds`)\nawait this.actor.modifyWounds(this.actor.characteristics.t.bonus)"
+                            "script": "[Script.2zeP2nMSURjxrqYz]"
                         }
                     ]
                 },
@@ -762,7 +780,7 @@
                         {
                             "id": "KQao0JiA57ipslnJ",
                             "name": "Zastosuj Mikstura lecznicza",
-                            "script": "if (this.item.system.quantity.value)\n{\n\tthis.item.system.reduceQuantity();\n\tlet actor = Array.from(game.user.targets)[0]?.actor || this.actor;\n\tactor.applyEffect({effectData : [this.item.effects.contents[0].convertToApplied()]})\n}\nelse\n{\n\tthis.script.scriptNotification(\"Nic nie zostało!\", \"error\")\n}"
+                            "script": "[Script.xUpKYT7BZCSmAfUy]"
                         }
                     ],
                     "id": "KQao0JiA57ipslnJ",
@@ -810,7 +828,31 @@
             "id": "hhImniNwHKmcC6FK",
             "name": "Zestaw na zatrucia",
             "description": "<p>Zawiera nożyk, zioła i słoik pijawek. Udany Test Leczenia z użyciem zestawu na zatrucia pozwala usunąć wszystkie Stany Zatrucie. Kuracja zabiera co najmniej dwie Rundy.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.hhImniNwHKmcC6FK"
+            "sourceId": "Compendium.wfrp4e-core.items.Item.hhImniNwHKmcC6FK",
+            "effects": {
+                "Dy5WIhQBCzNMk2UO": {
+                    "id": "Dy5WIhQBCzNMk2UO",
+                    "name": "Zestaw do Leczenia Zatruć",
+                    "scriptData": [
+                        {
+                            "id": "Dy5WIhQBCzNMk2UO",
+                            "name": "Zestaw do Leczenia Zatruć",
+                            "script": "[Script.7WR2hJjHPhHhHxAq]"
+                        }
+                    ]
+                },
+                "Op6QJRHqSqInNAos": {
+                    "id": "Op6QJRHqSqInNAos",
+                    "name": "Zastosuj zestaw antytoksyn",
+                    "scriptData": [
+                        {
+                            "id": "Op6QJRHqSqInNAos",
+                            "name": "Zastosuj zestaw antytoksyn",
+                            "script": "[Script.KkjkYAGI9Em1NgiQ]"
+                        }
+                    ]
+                }
+            }
         },
         "Sickle": {
             "id": "hnuZUd35SCjKkJc2",
@@ -876,7 +918,21 @@
             "id": "IFtoI87gZ4phMHy9",
             "name": "Zwijane posłanie",
             "description": "<p>Testy Odporności przeciwko efektom zimna (patrz strona 181) otrzymują premię +20 podczas odpoczynku.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.IFtoI87gZ4phMHy9"
+            "sourceId": "Compendium.wfrp4e-core.items.Item.IFtoI87gZ4phMHy9",
+            "effects": {
+                "6ER1r3gah7XwnNBY": {
+                    "id": "6ER1r3gah7XwnNBY",
+                    "name": "Zwijane posłanie",
+                    "scriptData": [
+                        {
+                            "id": "6ER1r3gah7XwnNBY",
+                            "name": "Zwijane posłanie",
+                            "script": "[Script.u6CYMSZADrfXd48Q]",
+                            "hideScript": "[Script.PdClojv7yNgQpOUc]"
+                        }
+                    ]
+                }
+            }
         },
         "Leather Jerkin": {
             "id": "ipaDvYY3qS66o593",
@@ -919,7 +975,7 @@
                         {
                             "id": "6uP7rREK03gthlAq",
                             "name": "Sercobój",
-                            "script": "// I'm assuming the endurance test specified is for the end-round check\nawait this.actor.addCondition(\"poisoned\", 4);\n"
+                            "script": "[Script.skVq3eDEYKFF2iZp]"
                         }
                     ],
                     "id": "6uP7rREK03gthlAq",
@@ -930,7 +986,7 @@
                         {
                             "id": "mZjdxfvuZ8ez5djz",
                             "name": "Zastosuj Sercobój",
-                            "script": "if (this.item.system.quantity.value)\n{\n\tthis.item.system.reduceQuantity();\n\tlet actor = Array.from(game.user.targets)[0]?.actor || this.actor;\n    let effectData = this.item.effects.contents[1].convertToApplied();\n\teffectData.flags.wfrp4e.sourceItem = this.item.uuid\n\tactor.applyEffect({effectData : [effectData]})\n}\nelse\n{\n\tthis.script.scriptNotification(\"Nic nie zostało!\", \"error\")\n}"
+                            "script": "[Script.G7sFEnJlXZvfXL3V]"
                         }
                     ],
                     "id": "mZjdxfvuZ8ez5djz",
@@ -957,7 +1013,7 @@
                         {
                             "id": "TApb9RQHQJcksYYL",
                             "name": "Rozkosz Ranalda",
-                            "script": "let sourceItem = this.effect.sourceItem;\n\nif (sourceItem)\n{\n\tthis.actor.applyEffect({effectUuids : [sourceItem.effects.contents[1].uuid]})\n\tthis.script.scriptNotification(\"Applied after effects\");\n}"
+                            "script": "[Script.yzN7ZNlgCiSVJqsU]"
                         }
                     ]
                 },
@@ -970,7 +1026,7 @@
                         {
                             "id": "Bx8xTxlLwCu24IUS",
                             "name": "Wciągnij Rozkosz Ranalda",
-                            "script": "if (this.item.system.quantity.value)\n{\n\tthis.item.system.reduceQuantity();\n\tlet actor = Array.from(game.user.targets)[0]?.actor || this.actor;\n     let effectData = this.item.effects.contents[0].convertToApplied();\n\teffectData.flags.wfrp4e.sourceItem = this.item.uuid\n     effectData.duration.seconds = 10800\n\tactor.applyEffect({effectData : [effectData]})\n}\nelse\n{\n\tthis.script.scriptNotification(\"Nic nie zostało!\", \"error\")\n}"
+                            "script": "[Script.qSwCYMMiIHmSV1X5]"
                         }
                     ],
                     "id": "Bx8xTxlLwCu24IUS",
@@ -1212,12 +1268,11 @@
                 "JGCSlLxbbXCPlkIY": {
                     "id": "JGCSlLxbbXCPlkIY",
                     "name": "Salwort",
-                    "script": "let stunned= this.actor.hasCondition(\"stunned\")\nif (stunned)\n{\n   ui.notifications.notify(`Usunięto 1 Stan Oszołomienia`)\n   this.actor.removeCondition(\"stunned\", 1)\n}",
                     "scriptData": [
                         {
                             "id": "JGCSlLxbbXCPlkIY",
                             "name": "Salwort",
-                            "script": "let stunned = this.actor.hasCondition(\"stunned\")\nif (stunned)\n{\n   this.script.scriptNotification(`Cleared 1 Stunned Condition`)\n   this.actor.removeCondition(\"stunned\");\n}\nelse \n{\n\tthis.script.scriptNotification(`No Stunned Conditions`)\n}"
+                            "script": "[Script.U26XMie3Kjoddisj]"
                         }
                     ]
                 },
@@ -1226,7 +1281,7 @@
                         {
                             "id": "ZnnZiIHuYkzxUKFZ",
                             "name": "Zastosuj Salwort",
-                            "script": "if (this.item.system.quantity.value)\n{\n\tthis.item.system.reduceQuantity();\n\tlet actor = Array.from(game.user.targets)[0]?.actor || this.actor;\n\tactor.applyEffect({effectData : [this.item.effects.contents[0]]})\n}\nelse\n{\n\tthis.script.scriptNotification(\"Nic nie zostało!\", \"error\")\n}"
+                            "script": "[Script.TBpNFRL5uehs0fze]"
                         }
                     ],
                     "id": "ZnnZiIHuYkzxUKFZ",
@@ -1268,12 +1323,11 @@
                 "rzyXt1SCCnDq5tnt": {
                     "id": "rzyXt1SCCnDq5tnt",
                     "name": "Fakstoryl",
-                    "script": "let bleeding = this.actor.hasCondition(\"bleeding\")\nif (bleeding)\n{\n   ui.notifications.notify(`Usunięte Stany Krawienia: ${bleeding.flags.wfrp4e.value}`)\n   this.actor.removeCondition(\"bleeding\", bleeding.flags.wfrp4e.value)\n}",
                     "scriptData": [
                         {
                             "id": "rzyXt1SCCnDq5tnt",
                             "name": "Fakstoryl",
-                            "script": "let bleeding = this.actor.hasCondition(\"bleeding\")\nif (bleeding)\n{\n   this.script.scriptNotification(`Cleared ${bleeding.conditionValue} Bleeding Conditions`)\n   bleeding.delete();  \n}\nelse \n{\n   this.script.scriptNotification(`No Bleeding Conditions`)\n}"
+                            "script": "[Script.GzsuEg7gZy1f0ljy]"
                         }
                     ]
                 },
@@ -1282,7 +1336,7 @@
                         {
                             "id": "K0kAGUU2ptVMHSDf",
                             "name": "Zastosuj Fakstoryl",
-                            "script": "if (this.item.system.quantity.value)\n{\n\tthis.item.system.reduceQuantity();\n\tlet actor = Array.from(game.user.targets)[0]?.actor || this.actor;\n\tactor.applyEffect({effectData : [this.item.effects.contents[0]]})\n}\nelse\n{\n\tthis.script.scriptNotification(\"Nic nie zostało!\", \"error\")\n}"
+                            "script": "[Script.TBpNFRL5uehs0fze]"
                         }
                     ],
                     "id": "K0kAGUU2ptVMHSDf",
@@ -1428,7 +1482,7 @@
                         {
                             "id": "NyPpILiBcAdT06RZ",
                             "name": "Zastosuj Czarny lotos",
-                            "script": "if (this.item.system.quantity.value)\n{\n\tthis.item.system.reduceQuantity();\n\tlet actor = Array.from(game.user.targets)[0]?.actor || this.actor;\n    let effectData = this.item.effects.contents[1].convertToApplied();\n\teffectData.flags.wfrp4e.sourceItem = this.item.uuid\n\tactor.applyEffect({effectData : [effectData]})\n}\nelse\n{\n\tthis.script.scriptNotification(\"Nic nie zostało!\", \"error\")\n}"
+                            "script": "[Script.G7sFEnJlXZvfXL3V]"
                         }
                     ],
                     "id": "NyPpILiBcAdT06RZ",
@@ -1439,7 +1493,7 @@
                         {
                             "id": "VKaUgSPZh4sx41am",
                             "name": "Czarny lotos",
-                            "script": "if (args.totalWoundLoss > 0)\n{\n    // I'm assuming the endurance test specified is for the end-round check\n    await args.actor.addCondition(\"poisoned\", 2);\n}"
+                            "script": "[Script.a8RabrnJ08O07rDX]"
                         }
                     ],
                     "id": "VKaUgSPZh4sx41am",
@@ -1553,14 +1607,13 @@
                 "YLns5DNubGbr27Lh": {
                     "id": "YLns5DNubGbr27Lh",
                     "name": "Hełm Płytowy (Otwarty)",
-                    "script": "if (args.type == \"skill\" && args.item.name == game.i18n.localize(\"NAME.Perception\")) {\n   args.prefillModifiers.modifier -= 10;\n}",
                     "scriptData": [
                         {
                             "id": "YLns5DNubGbr27Lh",
                             "name": "Plate Open Helm",
-                            "script": "args.fields.modifier -= 10",
-                            "activationScript": "return args.skill?.name == game.i18n.localize(\"NAME.Perception\")",
-                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Perception\")"
+                            "script": "[Script.xvGxwv7X0Vq3vNqb]",
+                            "activationScript": "[Script.9RFoasDcFnYZ1txR]",
+                            "hideScript": "[Script.h0DfPwUUOBjyAHMZ]"
                         }
                     ]
                 }
@@ -1636,12 +1689,11 @@
                 "BRhiXQ6Pig4FoZlF": {
                     "id": "BRhiXQ6Pig4FoZlF",
                     "name": "Ładunek zapalający",
-                    "script": "let ablaze = {{SL}} + 1;\nawait args.actor.addCondition(\"ablaze\", ablaze);",
                     "scriptData": [
                         {
                             "id": "BRhiXQ6Pig4FoZlF",
                             "name": "Ładunek zapalający",
-                            "script": "let ablaze = parseInt(this.effect.sourceTest.result.SL) + 1\nargs.actor.addCondition(\"ablaze\", ablaze)"
+                            "script": "[Script.JZIn1dsKHFE3smJU]"
                         }
                     ]
                 }
@@ -1773,7 +1825,7 @@
         "Mule": {
             "id": "Yf5KzF7u0gAbxam9",
             "name": "Muł",
-            "description": "<p></p>",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-core.items.Item.Yf5KzF7u0gAbxam9"
         },
         "Pan": {
@@ -1816,7 +1868,21 @@
             "id": "ZaJHpJKlib0LoOd2",
             "name": "Soczewki do czytania",
             "description": "<p>Szklane soczewki z uchwytem zapewniające premię +20 do Testów Czytania/Pisania, gdy trzeba odcyfrować drobny lub nieczytelny tekst. Testy Percepcji wykonywane w celu znalezienia szczegółów takich jak sekretne drzwi lub pomieszczenia także otrzymują premię +20.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.ZaJHpJKlib0LoOd2"
+            "sourceId": "Compendium.wfrp4e-core.items.Item.ZaJHpJKlib0LoOd2",
+            "effects": {
+                "76F3hl8iAvtCxKp9": {
+                    "id": "76F3hl8iAvtCxKp9",
+                    "name": "Soczewki do czytania",
+                    "scriptData": [
+                        {
+                            "id": "76F3hl8iAvtCxKp9",
+                            "name": "Soczewki do czytania",
+                            "script": "[Script.u6CYMSZADrfXd48Q]",
+                            "hideScript": "[Script.h0DfPwUUOBjyAHMZ]"
+                        }
+                    ]
+                }
+            }
         },
         "Row Boat": {
             "id": "zAXq89sUgwR4aU1p",
@@ -1833,12 +1899,11 @@
                 "9ArLjt6oQqMDFsDu": {
                     "id": "9ArLjt6oQqMDFsDu",
                     "name": "Eliksir żywotności",
-                    "script": "let fatigued= this.actor.hasCondition(\"fatigued\")\nif (fatigued)\n{\n   ui.notifications.notify(`Usunięte Stany Zmęczenia: ${fatigued.conditionValue}`)\n   this.actor.removeCondition(\"fatigued\", fatigued.conditionValue)\n}",
                     "scriptData": [
                         {
                             "id": "9ArLjt6oQqMDFsDu",
                             "name": "Eliksir żywotności",
-                            "script": "let fatigued = this.actor.hasCondition(\"fatigued\")\nif (fatigued)\n{\n   this.script.scriptNotification(`Cleared ${fatigued.conditionValue} Fatigued Conditions`)\n   fatigued.delete();  \n}\nelse \n{\n\tthis.script.scriptNotification(`No Fatigued Conditions`)\n}"
+                            "script": "[Script.tUwP7TjrOOOnaCYJ]"
                         }
                     ]
                 },
@@ -1847,7 +1912,7 @@
                         {
                             "id": "SQ8NfRku2VYsIWJf",
                             "name": "Zastosuj Eliksir Żywotności",
-                            "script": "if (this.item.system.quantity.value)\n{\n\tthis.item.system.reduceQuantity();\n\tlet actor = Array.from(game.user.targets)[0]?.actor || this.actor;\n\tactor.applyEffect({effectData : [this.item.effects.contents[0].convertToApplied()]})\n}\nelse\n{\n\tthis.script.scriptNotification(\"Nic nie zostało!\", \"error\")\n}"
+                            "script": "[Script.xUpKYT7BZCSmAfUy]"
                         }
                     ],
                     "id": "SQ8NfRku2VYsIWJf",
