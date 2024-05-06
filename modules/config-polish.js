@@ -635,7 +635,7 @@ Hooks.on("setup", function () {
 		unconscious: "WFRP4E.Conditions.Unconscious",
 		grappling: "WFRP4E.Conditions.Grappling",
 		fear: "WFRP4E.Conditions.Fear",
-		engaged: "WFRP4E.Conditions.Engaged",
+		engaged: "WFRP4E.Conditions.Engaged"
 	};
 
 	WFRP4E.symptoms = {
