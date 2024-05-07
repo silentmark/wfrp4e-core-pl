@@ -1,18 +1,18 @@
 let characteristics = {
-    "ws" : 25,
-    "bs" : 10,
+    "ww" : 25,
+    "us" : 10,
     "s" : 15,
-    "t" : 15,
+    "wt" : 15,
     "i" : 25,
-    "ag" : 20,
-    "dex" : 0,
+    "zw" : 20,
+    "zr" : 0,
     "int" : 10,
-    "wp" : 25,
-    "fel" : 10
+    "sw" : 25,
+    "ogd" : 10
 }
-let skills = ["Cool", "Dodge", "Intimidate", "Intuition", "Leadership", "Lore (Warfare)", "Perception"]
+let skills = ["Opanowanie", "Unik", "Zastraszanie", "Intuicja", "Dowodzenie", "Wiedza (Wojenna)", "Percepcja"]
 let skillAdvancements = [15, 15, 15, 15, 15, 10, 10]
-let talents = ["Combat Aware", "Combat Reflexes", "Feint", "Inspiring", "Resolute", "War Leader"]
+let talents = ["Combat Aware", "Refleks bojowy", "Feint", "Inspiring", "Resolute", "War Leader"]
 let trappings = ["Hand Weapon", "Shield"]
 let items = [];
 
