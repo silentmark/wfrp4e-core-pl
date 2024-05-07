@@ -1,7 +1,7 @@
 let choice1 = [
     {
-        type : "skill",
-        name : "Melee (Basic)",
+        type : "umiejętność",
+        name : "Broń Biała (Podstawowa)",
         diff : {
             system : {
                 advances : {
@@ -13,8 +13,8 @@ let choice1 = [
 ]
 let choice2 = [
     {
-        type : "skill",
-        name : "Melee (Polearm)",
+        type : "umiejętność",
+        name : "Broń Biała (Drzewcowa)",
         diff : {
             system : {
                 advances : {
@@ -27,8 +27,8 @@ let choice2 = [
 
 let choice3 = [
     {
-        type : "skill",
-        name : "Melee (Two-Handed)",
+        type : "umiejętność",
+        name : "Broń Biała (Dwuręczna)",
         diff : {
             system : {
                 advances : {
@@ -40,10 +40,10 @@ let choice3 = [
 ]
 
 let choice = await Dialog.wait({
-        title : "Choice",
+        title : "Wybór",
         content : 
         `<p>
-        Select your choice
+        Wybierz opcję
         </p>
         <ol>
         <li>Melee (Basic)</li>
@@ -53,19 +53,19 @@ let choice = await Dialog.wait({
         `,
         buttons : {
             1 : {
-                label : "Basic",
+                label : "Podstawowa",
                 callback : () => {
                     return choice1
                 }
             },
             2 : {
-                label : "Polearm",
+                label : "Drzewcowa",
                 callback : () => {
                     return choice2
                 }
             },
             3 : {
-                label : "Two-Handed",
+                label : "Dwuręczna",
                 callback : () => {
                     return choice3
                 }
@@ -78,7 +78,7 @@ let items = []
 for (let c of choice)
 {
     let existing 
-    if (c.type == "skill")
+    if (c.type == "umiejętność")
     {
         existing = updateObj.items.find(i => i.name == c.name && i.type == c.type)
         if (existing && c.diff?.system?.advances?.value)
@@ -102,14 +102,14 @@ for (let c of choice)
 
 }
 await this.actor.update(updateObj)
-this.actor.createEmbeddedDocuments("Item", items);
+this.actor.createEmbeddedDocuments("Przedmiot", items);
 
 function equip(item)
 {
-    if (item.type == "armour")
+    if (item.type == "pancerz")
         item.system.worn.value = true
-    else if (item.type == "weapon")
+    else if (item.type == "broń")
         item.system.equipped = true
-    else if (item.type == "trapping" && item.system.trappingType.value == "clothingAccessories")
+    else if (item.type == "wyposażenie" && item.system.trappingType.value == "clothingAccessories")
         item.system.worn = true
 }
