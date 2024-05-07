@@ -1,6 +1,6 @@
 // The imbiber immediately
 // takes 3 Poisoned Conditions that cannot be resisted at first,
-await this.actor.addCondition("poisoned", 3)
+await this.actor.addCondition("zatruty", 3)
 
 // recovers a number of Wounds equal to their Toughness Bonus, 
 await this.actor.modifyWounds(this.actor.system.characteristics.t.bonus)
@@ -10,7 +10,7 @@ const hasRegenerate = this.actor.has("Regeneracja")
 if (hasRegenerate === undefined) {
   fromUuid("Compendium.wfrp4e-core.items.SfUUdOGjdYpr3KSR").then(trait => {
     let traitItem = trait.toObject()
-    this.actor.createEmbeddedDocuments("Item", [traitItem], {fromEffect: this.effect.id})
+    this.actor.createEmbeddedDocuments("Przedmiot", [traitItem], {fromEffect: this.effect.id})
   })
 }
 
