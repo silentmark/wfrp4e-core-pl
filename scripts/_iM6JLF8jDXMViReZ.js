@@ -1,1 +1,1 @@
-return !["Pick Lock", "Sleight of Hand", "Channelling (Ulgu)"].includes(args.skill?.name)
+return !["Otwieranie Zamków", "Zwinne Palce", "Splatanie Magii (Ulgu)"].includes(args.skill?.name)
