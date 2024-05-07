@@ -4,15 +4,15 @@ if (!currentCareer)
     return;
 }
 
-let talents = ["Aethyric Attunement",
-"Arcane Magic (Any)",
-"Chaos Magic (Tzeentch)",
-"Fast Hands",
-"Instinctive Diction",
-"Magical Sense",
-"Petty Magic",
-"Second Sight",
-"War Wizard",
-"Witch!"].filter(t => !currentCareer.system.talents.includes(t))
+let talents = ["Zmysł Magii",
+"Magia Tajemna (Dowolna Tradycja)",
+"Magia Chaosu (Tzeentch)",
+"Ruchliwe dłonie",
+"Precyzyjne Inkantowanie",
+"Wykrywanie Magii",
+"Magia Prosta",
+"Percepcja Magiczna",
+"Mag Bitewny",
+"Czarownica!"].filter(t => !currentCareer.system.talents.includes(t))
 
 currentCareer.system.talents = currentCareer.system.talents.concat(talents)
