@@ -1,0 +1,1 @@
+return args.skill?.name != "Występy (Śpiew)" && args.skill?.name != "Występy (Śpiewanie)" && !args.skill?.name.includes("Język");

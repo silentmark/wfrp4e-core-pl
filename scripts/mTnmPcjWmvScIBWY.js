@@ -1,0 +1,1 @@
+return args.skill?.name.includes("Splatanie Magii") || args.type == "channelling"

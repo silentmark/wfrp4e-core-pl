@@ -1,0 +1,1 @@
+        return args.skill?.name == "Występy (Śpiew)" || args.skill?.name == "Występy (Śpiewanie)" || (args.skill?.name.includes("Język") && (args.skill?.name.includes("Magiczny") || args.skill?.name.includes("Elthárin") || args.skill?.name.includes("Cathayan")))

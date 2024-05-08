@@ -1,0 +1,1 @@
+return args.skill?.name.includes("Broń Biała (Podstawowa)") || (args.type == "weapon" && args.item?.system.weaponGroup.value == "basic");
