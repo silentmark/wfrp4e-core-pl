@@ -63,7 +63,8 @@
     },
     "esmodules": [
         "babele-register.js",
-        "modules/config-polish.js"
+        "modules/config-polish.js",
+        "load-scripts-pl.js"
     ],
     "scripts": [
         "modules/initialization.js"

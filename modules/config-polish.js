@@ -695,7 +695,7 @@ Hooks.on("setup", function () {
 							"label": "Dodaj Cechę Stworzenia Strach",
 							"trigger": "rollCastTest",
 							"script": `if (args.test.result.castOutcome == "success") {
-								args.test.result.other.push(``<strong>${this.effect.name}</strong>: @Fear[1,${this.actor.prototypeToken.name}]``)
+								args.test.result.other.push("<strong>Strach</strong>: @Fear[1," + this.actor.prototypeToken.name + "]");
 									if (!this.actor.has(game.i18n.localize("NAME.Fear"))) {
 										let item = await fromUuid("Compendium.wfrp4e-core.items.pTorrE0l3VybAbtn");
 										let data = item.toObject();
@@ -722,7 +722,7 @@ Hooks.on("setup", function () {
 					scriptData: [
 						{
 							trigger: "immediate",
-							label : "@effect.name",
+							label : "Tradycja Śmierci",
 							script : `this.actor.addCondition("fatigued")`,
 							options : {
 								immediate : {
@@ -747,7 +747,7 @@ Hooks.on("setup", function () {
 					scriptData: [
 						{
 							trigger: "immediate",
-							label : "@effect.name",
+							label : "Tradycja Ognia",
 							script : `this.actor.addCondition("ablaze")`,
 							options : {
 								immediate : {
@@ -773,7 +773,7 @@ Hooks.on("setup", function () {
 					scriptData: [
 						{
 							trigger: "computeApplyDamageModifiers",
-							label : "@effect.name",
+							label : "Tradycja Niebios",
 							script : `
 							if (args.applyAP && args.modifiers.ap.metal) 
 							{
@@ -801,7 +801,7 @@ Hooks.on("setup", function () {
 					scriptData: [
 						{
 							trigger: "computeApplyDamageModifiers",
-							label : "@effect.name",
+							label : "Tradycja Metalu",
 							script : `
 							if (args.applyAP && args.modifiers.ap.metal) 
 							{
@@ -829,7 +829,7 @@ Hooks.on("setup", function () {
 					scriptData: [
 						{
 							trigger: "immediate",
-							label : "@effect.name",
+							label : "Tradycja Życia",
 							script : `
 							let caster = this.effect.sourceActor
 							if (!this.actor.has(game.i18n.localize("NAME.Daemonic")) && !this.actor.has(game.i18n.localize("NAME.Undead")))
@@ -864,7 +864,7 @@ Hooks.on("setup", function () {
 					scriptData: [
 						{
 							trigger: "immediate",
-							label : "@effect.name",
+							label : "Tradycja Światła",
 							script : `
 							let caster = this.effect.sourceActor
 							await this.actor.addCondition("blinded")
@@ -896,7 +896,7 @@ Hooks.on("setup", function () {
 					scriptData: [
 						{
 							trigger: "computeApplyDamageModifiers",
-							label : "@effect.name",
+							label : "Tradycja Cieni",
 							script : `
 							if (args.applyAP && args.modifiers.ap.magical) 
 							{
@@ -936,7 +936,7 @@ Hooks.on("setup", function () {
 					scriptData: [
 						{
 							trigger: "immediate",
-							label : "@effect.name",
+							label : "Tradycja Czarownictwa",
 							script : `this.actor.addCondition("bleeding")`,
 							options : {
 								immediate : {
@@ -961,7 +961,7 @@ Hooks.on("setup", function () {
                   	scriptData: [
                     	{
                     		trigger: "immediate",
-                      		label : "@effect.name",
+                      		label : "Tradycja Slaanesha",
                       		script :  `
 								let stunned = this.actor.hasCondition("stunned");
 								let broken = this.actor.hasCondition("broken");
@@ -1001,7 +1001,7 @@ Hooks.on("setup", function () {
                     scriptData: [
                         {
                             trigger: "manual",
-                            label : "@effect.name",
+                            label : "Uwiąd",
                             script : `
                             let difficulty = ""
                             if (this.effect.name.includes("Umiarkowany"))
@@ -1035,7 +1035,7 @@ Hooks.on("setup", function () {
                     scriptData: [
                         {
                             trigger: "dialog",
-                            label : "@effect.name",
+                            label : "Dymienica",
                             script : `args.fields.modifier -= 10`,
                             options: {
                                 dialog : {
@@ -1060,7 +1060,7 @@ Hooks.on("setup", function () {
                     scriptData: [
                         {
                             trigger: "dialog",
-                            label : "@effect.name",
+                            label : "Konwulsje",
                             script : `
                             let modifier = 0
                             if (this.effect.name.includes("Umiarkowane"))
@@ -1101,7 +1101,7 @@ Hooks.on("setup", function () {
                     scriptData: [
                         {
                             trigger: "dialog",
-                            label : "@effect.name",
+                            label : "Gorączka",
                             script : `args.fields.modifier -= 10`,
                             options: {
                                 dialog : {
@@ -1135,7 +1135,7 @@ Hooks.on("setup", function () {
                     scriptData: [
                         {
                             trigger: "dialog",
-                            label : "@effect.name",
+                            label : "Gangrena",
                             script : `args.fields.modifier -= 10`,
                             options: {
                                 dialog : {
@@ -1203,7 +1203,7 @@ Hooks.on("setup", function () {
                     scriptData: [
                         {
                             trigger: "update",
-                            label : "@effect.name",
+                            label : "Apatia",
                             script : `
                             let fatigued = this.actor.hasCondition("fatigued")
                             if (!fatigued)
@@ -1228,7 +1228,7 @@ Hooks.on("setup", function () {
                     scriptData: [
                         {
                             trigger: "rollTest",
-                            label : "@effect.name",
+                            label : "Nudności",
                             script : `                 
                             if (args.test.failed)
                             {
@@ -1255,7 +1255,7 @@ Hooks.on("setup", function () {
                     scriptData: [
                         {
                             trigger: "dialog",
-                            label : "@effect.name",
+                            label : "Wysypka",
                             script : `args.fields.modifier -= 10`,
                             options: {
                                 dialog : {
@@ -1280,7 +1280,7 @@ Hooks.on("setup", function () {
                     scriptData: [
                         {
                             trigger: "manual",
-                            label : "@effect.name",
+                            label : "Uciążliwa Rana",
                             script : `
                             let test = await this.actor.setupSkill(game.i18n.localize("NAME.Endurance"), {fields: {difficulty : "average"}, appendTitle : " - Uciążliwa Rana"})
                             await test.roll();
