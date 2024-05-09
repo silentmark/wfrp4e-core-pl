@@ -131,17 +131,19 @@ Hooks.on("init", () => {
 							for (let i = 0; i < translation.scriptData.length; i++) {
 								let transScript = translation.scriptData[i];
 								let script = result.flags.wfrp4e.scriptData[i];
-								script.label = transScript.name;
-								if (transScript.hideScript) {
-									script.options.dialog.hideScript = transScript.hideScript;
+								if (script) {
+									script.label = transScript.name;
+									if (transScript.hideScript) {
+										script.options.dialog.hideScript = transScript.hideScript;
+									}
+									if (transScript.activationScript) {
+										script.options.dialog.activationScript = transScript.activationScript;
+									}
+									if (transScript.submissionScript) {
+										script.options.dialog.submissionScript = transScript.submissionScript;
+									}
+									script.script = transScript.script;
 								}
-								if (transScript.activationScript) {
-									script.options.dialog.activationScript = transScript.activationScript;
-								}
-								if (transScript.submissionScript) {
-									script.options.dialog.submissionScript = transScript.submissionScript;
-								}
-								script.script = transScript.script;
 							}
 						}
 						return result;
