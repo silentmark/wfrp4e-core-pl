@@ -151,7 +151,7 @@
                 "Wyczulony Zmysł (Smak)",
                 "Wyczucie Kierunku",
                 "Włóczykij",
-                "Doświadczony Wędrowiec (Dowolny Teren)"
+                "Doświadczony Wędrowiec (Wybrany Teren)"
             ],
             "trappings": [
                 "Buty",
@@ -2482,7 +2482,7 @@
                 "Wyczucie Kierunku",
                 "Włóczykij",
                 "Czujny",
-                "Doświadczony Wędrowiec (Dowolny Teren)"
+                "Doświadczony Wędrowiec (Wybrany Teren)"
             ],
             "trappings": [
                 "Broń ręczna",
@@ -2823,7 +2823,7 @@
             "talents": [
                 "Posłuch u Zwierząt",
                 "Etykieta (Słudzy)",
-                "Doświadczony Wędrowiec (Dowolny Teren)",
+                "Doświadczony Wędrowiec (Wybrany Teren)",
                 "Włóczykij"
             ],
             "trappings": [
@@ -4847,7 +4847,7 @@
             "talents": [
                 "Twardziel",
                 "Włóczykij",
-                "Doświadczony Wędrowiec (Dowolny Teren)",
+                "Doświadczony Wędrowiec (Wybrany Teren)",
                 "Traper"
             ],
             "trappings": [
@@ -7177,7 +7177,7 @@
             ],
             "talents": [
                 "Włóczykij",
-                "Doświadczony Wędrowiec (Teren Skalisty)",
+                "Doświadczony Wędrowiec (Skalisty)",
                 "Tragarz",
                 "Wytrwały"
             ],

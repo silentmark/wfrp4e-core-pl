@@ -1,0 +1,1 @@
+return (["Opieka nad Zwierzętami", "Oswajanie"].includes(args.item?.name) || args.item?.name.includes("Jeździectwo") || args.item?.name.includes("Tresura"))

@@ -3,5 +3,5 @@ let APIgnored = args.AP.layers.reduce((prev, current) => prev + ((current.weakpo
 if (APIgnored)
 {
     args.modifiers.ap.ignored += APIgnored
-    args.modifiers.ap.details.push(`<strong>${this.effect.name}</strong>: Ignore AP with Weakpoints (${APIgnored})`)
+    args.modifiers.ap.details.push(`<strong>${this.effect.name}</strong>: zignorowano PP z wadą "Wrażliwe Punkty" (${APIgnored})`)
 }

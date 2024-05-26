@@ -1,19 +1,19 @@
 let characteristics = {
-    "ws" : 10,
-    "bs" : 0,
-    "s" : 10,
-    "t" : 10,
-    "i" : 20,
+    "ws" : 0,
+    "bs" : 5,
+    "s" : 0,
+    "t" : 0,
+    "i" : 10,
     "ag" : 10,
     "dex" : 0,
     "int" : 0,
-    "wp" : 15,
+    "wp" : 5,
     "fel" : 0
 }
-let skills = ["Cool", "Dodge", "Intimidate", "Leadership"]
-let skillAdvancements = [15, 15, 10, 5]
-let talents = ["Combat Aware", "Combat Reflexes", "Feint", "Resolute"]
-let trappings = ["Mail Coat", "Mail Chausses", "Mail Coif", "Hand Weapon", "Shield"]
+let skills = ["Unik", "Percepcja"]
+let skillAdvancements = [10, 10]
+let talents = ["Chodu", "Strzelec Wyborowy"]
+let trappings = ["Broń ręczna"]
 let items = [];
 
 let updateObj = this.actor.toObject();
@@ -48,7 +48,7 @@ for (let talent of talents)
     }
     else 
     {
-        ui.notifications.warn(`Could not find ${talent}`, {permanent : true})
+        ui.notifications.warn(`Nie udało się znaleźć talentu: ${talent}`, {permanent : true})
     }
 }
 
@@ -65,11 +65,11 @@ for (let trapping of trappings)
     }
     else 
     {
-        ui.notifications.warn(`Could not find ${trapping}`, {permanent : true})
+        ui.notifications.warn(`Nie udało się znaleźć przedmiotu: ${trapping}`, {permanent : true})
     }
 }
 
-updateObj.name = this.effect.name + " " + updateObj.name
+updateObj.name = updateObj.name += " " + this.effect.name
 
 await this.actor.update(updateObj)
 this.actor.createEmbeddedDocuments("Item", items);
