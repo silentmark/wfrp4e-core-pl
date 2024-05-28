@@ -10,10 +10,10 @@ let characteristics = {
     "wp" : 30,
     "fel" : 10
 }
-let skills = ["Channelling", "Cool", "Dodge", "Entertain (Storytelling)", "Intuition", "Language (Magick)", "Leadership", "Lore (Magic)", "Lore (Theology)", "Perception"]
+let skills = ["Splatanie Magii", "Opanowanie", "Unik", "Występy (Gawędziarstwo)", "Intuicja", "Język (Magiczny)", "Dowodzenie", "Wiedza (Magia)", "Wiedza (Teologia)", "Percepcja"]
 let skillAdvancements = [20, 25, 20, 25, 30, 25, 15, 20, 10, 30]
-let talents = ["Aethyric Attunement", "Arcane Magic", "Instinctive Diction", "Instinctive Diction", "Luck", "Magical Sense", "Menacing", "Petty Magic", "Second Sight", "Sixth Sense"]
-let trappings = ["Hand Weapon", "Quarterstaff", "Ritual Dress incorporating many ingredients and fetishes"]
+let talents = ["Zmysł Magii", "Magia Tajemna (Dowolna Tradycja)", "Precyzyjne Inkantowanie", "Precyzyjne Inkantowanie", "Szczęście", "Wykrywanie Magii", "Menacing", "Petty Magic", "Second Sight", "Sixth Sense"]
+let trappings = ["Broń ręczna", "Kostur", "Rytualna szata zawierająca wiele ornamentów i zdobień"]
 let items = [];
 
 let updateObj = this.actor.toObject();

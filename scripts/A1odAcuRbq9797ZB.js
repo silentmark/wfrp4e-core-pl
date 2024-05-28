@@ -1,7 +1,7 @@
 let choice1 = [
     {
         type : "skill",
-        name : "Ranged (Bow)",
+        name : "Broń Biała (Podstawowa)",
         diff : {
             system : {
                 advances : {
@@ -9,44 +9,48 @@ let choice1 = [
                 }
             }
         }
-    },
-    {
-        type : "weapon",
-        name : "Bow",
-    },
-    {
-        type : "ammunition",
-        name : "Arrow",
     }
 ]
 let choice2 = [
-]
-
-let choice = await Dialog.wait({
-        title : "Option",
-        content : 
-        `<p>
-        Add Option?
-        </p>
-        <ol>
-        <li>Ranged (Bow) +10 and a Bow with 12 Arrows</li>
-        </ol> 
-        `,
-        buttons : {
-            1 : {
-                label : "Yes",
-                callback : () => {
-                    return choice1
-                }
-            },
-            2 : {
-                label : "No",
-                callback : () => {
-                    choice2
+    {
+        type : "skill",
+        name : "Broń Biała (Drzewcowa)",
+        diff : {
+            system : {
+                advances : {
+                    value : 10
                 }
             }
         }
-    })
+    }
+]
+
+let choice = await Dialog.wait({
+    title : "Choice",
+    content : 
+    `<p>
+    Wybierz Umiejętność, której chcesz używać
+    </p>
+    <ol>
+    <li>Broń Biała (Podstawowa)</li>
+    <li>Broń Biała (Drzewcowa)</li>
+    </ol> 
+    `,
+    buttons : {
+        1 : {
+            label : "Podstawowa",
+            callback : () => {
+                return choice1;
+            }
+        },
+        2 : {
+            label : "Drzewcowa",
+            callback : () => {
+                return choice2;
+            }
+        }
+    }
+})
 
 let updateObj = this.actor.toObject();
 let items = []
@@ -72,7 +76,7 @@ for (let c of choice)
                 items.push(mergeObject(item, (c.diff || {})))
         }
         else
-            ui.notifications.warn(`Could not find ${talent}`, {permanent : true})
+            ui.notifications.warn(`Nie odnaleziono umiejętności ${c.name}`, {permanent : true})
     }
 
 }

@@ -1,19 +1,19 @@
-        let characteristics = {
-            "ws" : 0,
+let characteristics = {
+            "ws" : 5,
             "bs" : 0,
-            "s" : 10,
-            "t" : 10,
-            "i" : 0,
-            "ag" : 10,
+            "s" : 5,
+            "t" : 5,
+            "i" : 10,
+            "ag" : 0,
             "dex" : 0,
             "int" : 0,
             "wp" : 0,
             "fel" : 0
         }
-        let skills = ["Consume Alcohol", "Row", "Sail", "Swim"]
-        let skillAdvancements = [10, 10, 10, 10]
-        let talents = []
-        let trappings = []
+        let skills = ["Opanowanie", "Unik"]
+        let skillAdvancements = [10, 10]
+        let talents = ["Bitewny Refleks"]
+        let trappings = ["Skórzana kurta", "Skórzany hełm", "Skórzane nogawice", "Tarcza"]
         let items = []
 
         let updateObj = this.actor.toObject();
@@ -68,7 +68,7 @@
                 ui.notifications.warn(`Could not find ${trapping}`, {permanent : true})
             }
         }
-       
+      
         
         await this.actor.update(updateObj)
         this.actor.createEmbeddedDocuments("Item", items);

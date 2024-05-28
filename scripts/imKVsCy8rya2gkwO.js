@@ -10,8 +10,8 @@ await this.actor.removeSystemEffect("stinkingdrunk1")
 // nothing but time and rest can eliminate this penalty.
 await this.actor.addCondition("fatigued")
 const duration = 10 - parseInt(this.actor.system.characteristics.t.bonus)
-this.effect.updateSource({"duration.rounds" : duration});
-this.script.scriptMessage(`<p><strong>${this.actor.prototypeToken.name}</strong> has lost all alcohol related penalties and gains the Fatigued Condition for ${duration} hours.</p>`, 
+this.effect.updateSource({"duration.hours" : duration});
+this.script.scriptMessage(`<p><strong>${this.actor.prototypeToken.name}</strong> stracił wszystkie kary związane z alkoholem i zyskuje Stan Zmęczenie na liczbę godzin: ${duration}.</p>`, 
 {
   whisper: ChatMessage.getWhisperRecipients("GM"), 
   blind: true 

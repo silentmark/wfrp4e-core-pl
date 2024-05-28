@@ -5,7 +5,7 @@ careers.forEach(c => {
         c.id = c._id;
     }
 });
-let choice = await ItemDialog.create(careers, 1, "Choose Double Life Career");
+let choice = await ItemDialog.create(careers, 1, "Wybierz karierę dla 'Sekretnej Tożsamości'");
 if (choice[0])
 {
     let career = await fromUuid(choice[0].uuid);

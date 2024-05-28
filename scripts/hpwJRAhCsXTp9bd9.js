@@ -1,11 +1,11 @@
 let choice1 = [
     {
         type : "skill",
-        name : "Melee (Basic)",
+        name : "Broń Biała (Podstawowa)",
         diff : {
             system : {
                 advances : {
-                    value : 10
+                    value : 20
                 }
             }
         }
@@ -14,11 +14,25 @@ let choice1 = [
 let choice2 = [
     {
         type : "skill",
-        name : "Melee (Polearm)",
+        name : "Broń Biała (Drzewcowa)",
         diff : {
             system : {
                 advances : {
-                    value : 10
+                    value : 20
+                }
+            }
+        }
+    }
+]
+
+let choice3 = [
+    {
+        type : "skill",
+        name : "Broń Biała (Dwuręczna)",
+        diff : {
+            system : {
+                advances : {
+                    value : 20
                 }
             }
         }
@@ -26,29 +40,36 @@ let choice2 = [
 ]
 
 let choice = await Dialog.wait({
-    title : "Choice",
-    content : 
-    `<p>
-    Select your choice
-    </p>
-    <ol>
-    <li>Melee (Basic)</li>
-    <li>Melee (Polearm)</li>
-    </ol> 
-    `,
-    buttons : {
-        1 : {
-            label : "Basic",
-            callback : () => {
-                return choice1;
+        title : "Wybór",
+        content : 
+        `<p>
+        Wybierz opcję
+        </p>
+        <ol>
+        <li>Broń Biała (Podstawowa)</li>
+        <li>Broń Biała (Drzewcowa)</li>
+        <li>Broń Biała (Dwuręczna)</li>
+        </ol> 
+        `,
+        buttons : {
+            1 : {
+                label : "Podstawowa",
+                callback : () => {
+                    return choice1
+                }
+            },
+            2 : {
+                label : "Drzewcowa",
+                callback : () => {
+                    return choice2
+                }
+            },
+            3 : {
+                label : "Dwuręczna",
+                callback : () => {
+                    return choice3
+                }
             }
-        },
-        2 : {
-            label : "Polearm",
-            callback : () => {
-                return choice2;
-            }
-        }
     }
 })
 

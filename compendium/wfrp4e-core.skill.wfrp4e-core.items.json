@@ -54,7 +54,7 @@
         },
         "Channelling ( )": {
             "id": "3MbQF1W8U18ba9fb",
-            "name": "Splatanie Magii ()",
+            "name": "Splatanie Magii",
             "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tXu8Hrd4desq1Rja]{Splatanie Magii}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.3MbQF1W8U18ba9fb"
         },
@@ -568,7 +568,7 @@
         },
         "Sail ()": {
             "id": "n8IfmLt4kzMhIKIv",
-            "name": "Żeglarstwo ()",
+            "name": "Żeglarstwo",
             "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.DLrOPZtVMLgSyxaj]{Żeglarstwo}</p>",
             "sourceId": "Compendium.wfrp4e-core.items.n8IfmLt4kzMhIKIv"
         },
