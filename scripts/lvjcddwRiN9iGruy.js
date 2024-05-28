@@ -15,13 +15,13 @@ if (test.failed)
 
     let inline = `<a class="inline-roll" data-tooltip="@TT"><i class="fas fa-dice-d20"></i>@ROLL</a>`
     let msg =
-        `<p><b>${this.actor.prototypeToken.name}</b> ages by ${inline.replace("@ROLL", ageAdded).replace("@TT", "2d10")} and loses</p>
-      <p>${inline.replace("@ROLL", ws).replace("@TT", "1d10")} <b>Weapon Skill</b></p>
-      <p>${inline.replace("@ROLL", bs).replace("@TT", "1d10")} <b>Ballistic Skill</b></p>
-      <p>${inline.replace("@ROLL", s).replace("@TT", "1d10")} <b>Strength</b></p>
-      <p>${inline.replace("@ROLL", t).replace("@TT", "1d10")} <b>Toughness</b></p>
-      <p>${inline.replace("@ROLL", ag).replace("@TT", "1d10")} <b>Agility</b></p>
-      <p>${inline.replace("@ROLL", dex).replace("@TT", "1d10")} <b>Dexterity</b></p>
+        `<p><b>${this.actor.prototypeToken.name}</b>: starzeje się o ${inline.replace("@ROLL", ageAdded).replace("@TT", "2d10")} lat oraz traci</p>
+      <p>${inline.replace("@ROLL", ws).replace("@TT", "1d10")} <b>Walki Wręcz</b></p>
+      <p>${inline.replace("@ROLL", bs).replace("@TT", "1d10")} <b>Umiejętności Strzeleckich</b></p>
+      <p>${inline.replace("@ROLL", s).replace("@TT", "1d10")} <b>Siły</b></p>
+      <p>${inline.replace("@ROLL", t).replace("@TT", "1d10")} <b>Wytrzymałości</b></p>
+      <p>${inline.replace("@ROLL", ag).replace("@TT", "1d10")} <b>Zwinności</b></p>
+      <p>${inline.replace("@ROLL", dex).replace("@TT", "1d10")} <b>Zręczności</b></p>
  `
     this.script.scriptMessage(msg);
 

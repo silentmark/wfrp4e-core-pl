@@ -7,10 +7,10 @@ if (args.test.options.staunchBleeding)
    {
      staunch =  Math.min(1, Number(args.test.result.SL)) + 1
    }
-   args.test.result.other.push(`<b>${this.actor.name}</b> removed <b>${staunch}</b> Bleeding conditions from the patient.`)
+   args.test.result.other.push(`<b>${this.actor.name}</b>: usunięto pacjentowi liczbę stanów krwawienia równą: <b>${staunch}</b>.`)
  }
    else if (this.actor.characteristics.int.bonus + Number(args.test.result.SL) < 0)
    {
-      args.test.result.other.push(`The patient contracts a @UUID[Compendium.wfrp4e-core.items.Item.1hQuVFZt9QnnbWzg]{Minor Infection}.`)
+      args.test.result.other.push(`Pacjent otrzymuje @UUID[Compendium.wfrp4e-core.items.Item.1hQuVFZt9QnnbWzg]{Pomniejszą Infekcję}.`)
    }
 }

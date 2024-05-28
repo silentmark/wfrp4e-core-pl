@@ -1,19 +1,19 @@
 let characteristics = {
-    "ws" : 5,
+    "ws" : 0,
     "bs" : 0,
-    "s" : 5,
+    "s" : 0,
     "t" : 5,
-    "i" : 10,
+    "i" : 15,
     "ag" : 0,
-    "dex" : 0,
-    "int" : 0,
-    "wp" : 5,
-    "fel" : 5
+    "dex" : 10,
+    "int" : 15,
+    "wp" : 15,
+    "fel" : 0
 }
-let skills = ["Cool", "Dodge"]
-let skillAdvancements = [10, 10]
-let talents = ["Combat Reflexes", "Resolute"]
-let trappings = ["Leather Jack", "Leather Leggings", "Leather Skullcap", "Hand Weapon", "Spear", "Shield"]
+let skills = ["Splatanie Magii", "Opanowanie", "Unik", "Występy (Gawędziarstwo)", "Intuicja", "Język (Magiczny)", "Wiedza (Magia)", "Percepcja"]
+let skillAdvancements = [5, 15, 10, 10, 15, 10, 10, 20]
+let talents = ["Magia Tajemna (Dowolna Tradycja)", "Magia Prosta", "Percepcja Magiczna"]
+let trappings = ["Broń ręczna", "Kostur", "Rytualna szata zawierająca wiele ornamentów i zdobień"]
 let items = [];
 
 let updateObj = this.actor.toObject();
@@ -65,7 +65,8 @@ for (let trapping of trappings)
     }
     else 
     {
-        ui.notifications.warn(`Could not find ${trapping}`, {permanent : true})
+        items.push({name : trapping, type : "trapping", "system.trappingType.value" : "clothingAccessories"})
+        //ui.notifications.warn(`Could not find ${trapping}`, {permanent : true})
     }
 }
 
@@ -73,7 +74,6 @@ updateObj.name = updateObj.name += " " + this.effect.name
 
 await this.actor.update(updateObj)
 this.actor.createEmbeddedDocuments("Item", items);
-
 
 function equip(item)
 {

@@ -1,19 +1,19 @@
 let specification = this.item.system.specification.value;
 let choice = [];
 
-if (!specification || specification == "Trained Skills")
+if (!specification || specification == "Wyszkolona Umiejętność")
 {
     choice = await ItemDialog.create(ItemDialog.objectToArray({
-        broken: "Broken",
-        drive: "Drive",
-        entertain: "Entertain",
-        fetch: "Fetch",
-        guard: "Guard",
-        home: "Home",
-        magic: "Magic",
-        mount: "Mount",
-        war: "War"
-    }, this.effect.img), "unlimited", "Choose Training");
+        broken: "Ujarzmiony",
+        drive: "Pociągowy",
+        entertain: "Maskotka",
+        fetch: "Aportujący",
+        guard: "Stóżujący",
+        home: "Powracający",
+        magic: "Magiczny",
+        mount: "Wierzchowiec",
+        war: "Bojowy"
+    }, this.effect.img), "unlimited", "Wybierz wyszkoloną umiejętność");
 }
 else 
 {
@@ -33,14 +33,14 @@ if (choice.length)
     {
         switch(training.id)
         {
-            case "broken" : 
+            case "ujarzmiony" : 
                 let roll = await new Roll("2d10").roll();   
                 roll.toMessage(this.script.getChatData());
                 changes.push({value : roll.total, mode : 2, key : "system.characteristics.fel.modifier"})
 
                 if (this.actor.type == "creature")
                 {
-                    let bestial = this.actor.itemTypes.trait.find(i => i.name == "Bestial");
+                    let bestial = this.actor.itemTypes.trait.find(i => i.name == "Zwierzęcy");
                     if (bestial)
                     {
                         bestial.update({"system.disabled" : true})
@@ -48,37 +48,37 @@ if (choice.length)
                 }
                 break;
 
-            case "drive" : 
+            case "pociągowy" : 
 
                 break;
 
-            case "entertain" : 
+            case "maskotka" : 
 
                 break;
 
-            case "fetch" : 
+            case "aportujący" : 
 
                 break;
 
-            case "guard" : 
+            case "stóżujący" : 
                 let territorial = await fromUuid("Compendium.wfrp4e-core.items.Item.JIAe7i7dqTQBu4do");
                 await this.actor.createEmbeddedDocuments("Item", [territorial], {fromEffect: this.effect.id})
                 setProperty(args, "options.keepId", true);
                 break;
 
-            case "home" : 
+            case "powracający" : 
 
                 break;
 
-            case "magic" : 
+            case "magiczny" : 
 
                 break;
 
-            case "mount" : 
+            case "wierzchowiec" : 
 
                 break;
 
-            case "war" : 
+            case "bojowy" : 
                 changes.push({value : 10, mode : 2, key : "system.characteristics.ws.modifier"})
                 break;
         }

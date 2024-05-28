@@ -1,6 +1,6 @@
 if (args.totalWoundLoss > 0)
 {
-    let apply = await Dialog.confirm({title : this.effect.name, content : `<p>Appy ${this.effect.name} Damage? Attacker must have used bare hands or a melee weapon made of metal.`})
+    let apply = await Dialog.confirm({title : this.effect.name, content : `<p>Zadać Obrażenia z ${this.effect.name}? Atakujący musiał użyć gołych rąk lub broni do walki w zwarciu wykonanej z metalu.`})
     if (apply)
     {
             
@@ -17,7 +17,7 @@ if (args.totalWoundLoss > 0)
         damage -= (APused + args.opposedTest.attacker.system.characteristics.t.bonus)
         
         let msg = await args.opposedTest.attacker.applyBasicDamage(damage, {suppressMsg : true, damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL});
-        msg += ` (ignored ${metalAP} metal AP on ${game.wfrp4e.config.locations[loc]})`
+        msg += ` (zignorowano liczbę punktów metalowego pancerza: ${metalAP} z lokacji: ${game.wfrp4e.config.locations[loc]})`
         this.script.scriptMessage(msg)
     }
 }

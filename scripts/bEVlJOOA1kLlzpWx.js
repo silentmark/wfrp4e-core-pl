@@ -12,7 +12,7 @@ let characteristics = {
 }
 let skills = ["Splatanie Magii", "Opanowanie", "Unik", "Występy (Gawędziarstwo)", "Intuicja", "Język (Magiczny)", "Dowodzenie", "Wiedza (Magia)", "Wiedza (Teologia)", "Percepcja"]
 let skillAdvancements = [20, 25, 20, 25, 30, 25, 15, 20, 10, 30]
-let talents = ["Zmysł Magii", "Magia Tajemna (Dowolna Tradycja)", "Precyzyjne Inkantowanie", "Precyzyjne Inkantowanie", "Szczęście", "Wykrywanie Magii", "Menacing", "Petty Magic", "Second Sight", "Sixth Sense"]
+let talents = ["Zmysł Magii", "Magia Tajemna (Dowolna Tradycja)", "Precyzyjne Inkantowanie", "Precyzyjne Inkantowanie", "Szczęście", "Wykrywanie Magii", "Groźny", "Magia Prosta", "Percepcja Magiczna", "Szósty Zmysł"]
 let trappings = ["Broń ręczna", "Kostur", "Rytualna szata zawierająca wiele ornamentów i zdobień"]
 let items = [];
 

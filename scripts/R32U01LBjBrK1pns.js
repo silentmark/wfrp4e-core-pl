@@ -17,10 +17,10 @@
 
         let bio = 
         `
-        <p><strong>Template</strong>: ${template.text}</p>
-        <p><strong>Phsyical Quirk</strong>: ${physicalQuirk}</p>
-        <p><strong>Work Ethic</strong>: ${workEthic}</p>
-        <p><strong>Personality Quirk</strong>: ${personalityQuirk}</p>
+        <p><strong>Szablon</strong>: ${template.text}</p>
+        <p><strong>Fizyczne dziwactwo</strong>: ${physicalQuirk}</p>
+        <p><strong>Etyka pracy</strong>: ${workEthic}</p>
+        <p><strong>Osobowościowe dziwactwa</strong>: ${personalityQuirk}</p>
         `
         
         this.script.scriptMessage(bio, {whisper : ChatMessage.getWhisperRecipients("GM")})
