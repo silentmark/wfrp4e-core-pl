@@ -1,14 +1,14 @@
 let characteristics = {
-    "ww" : 25,
-    "us" : 10,
+    "ws" : 25,
+    "bs" : 10,
     "s" : 15,
-    "wt" : 15,
+    "t" : 15,
     "i" : 25,
-    "zw" : 20,
-    "zr" : 0,
+    "ag" : 20,
+    "dex" : 0,
     "int" : 10,
-    "sw" : 25,
-    "ogd" : 10
+    "wp" : 25,
+    "fel" : 10
 }
 let skills = ["Opanowanie", "Unik", "Zastraszanie", "Intuicja", "Dowodzenie", "Wiedza (Wojenna)", "Percepcja"]
 let skillAdvancements = [15, 15, 15, 15, 15, 10, 10]
