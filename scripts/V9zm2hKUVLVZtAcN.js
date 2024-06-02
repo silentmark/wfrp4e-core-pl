@@ -1,22 +1,22 @@
 let characteristics = {
-  "ws" : 10,
-  "bs" : 5,
+  "ws" : -10,
+  "bs" : -10,
   "s" : 0,
-  "t" : 5,
-  "i" : 10,
-  "ag" : 0,
-  "dex" : 6,
-  "int" : -5,
-  "wp" : 0,
+  "t" : 15,
+  "i" : 15,
+  "ag" : -20,
+  "dex" : 0,
+  "int" : 20,
+  "wp" : 10,
   "fel" : 10
 }
-let skills = ["Melee (Basic)", "Track"]
-let skillAdvancements = [8, 7]
-let talents = ["Berserk Charge", "Careful Strike", "Strike to Injure"]
-let traits = ["Flight (8)", "Fury", "Swarm", "Tracker"]
+let skills = ["Charyzma", "Splatanie Magii", "Występy (Przepowiednie)", "Intuicja"]
+let skillAdvancements = [0, 0, 20, 10]
+let talents = ["Rozpoznanie Artefaktu", "Groźny", "Szósty Zmysł"]
+let traits = ["Wróżba Losu", "Rzucanie Czarów (Tradycja Życia)", "Ochrona"]
 let trappings = []
 let items = [];
-let spells = [];
+let spells = ["Pole cierniowe"];
 
 let updateObj = this.actor.toObject();
 

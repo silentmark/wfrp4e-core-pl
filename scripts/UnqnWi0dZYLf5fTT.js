@@ -1,89 +1,89 @@
 let choice1 = [
     {
         type : "armour",
-        name : "Mail Chausses"
+        name : "Nogawice kolcze"
     },
     {
         type : "armour",
-        name : "Mail Coat"
+        name : "Kolczuga"
     },
     {
         type : "armour",
-        name : "Mail Coif"
+        name : "Czepiec kolczy"
     },
 ]
 let choice2 = [
     {
         type : "armour",
-        name : "Mail Chausses"
+        name : "Nogawice kolcze"
     },
     {
         type : "armour",
-        name : "Mail Coat"
+        name : "Kolczuga"
     },
     {
         type : "armour",
-        name : "Mail Coif"
+        name : "Czepiec kolczy"
     },
     {
         type : "armour",
-        name : "Leather Leggings"
+        name : "Skórzane nogawice"
     },
     {
         type : "armour",
-        name : "Leather Skullcap"
+        name : "Skórzany hełm"
     },
     {
         type : "armour",
-        name : "Leather Jack"
+        name : "Skórzana kurta"
     },
 ]
 let choice3 = [
     {
         type : "armour",
-        name : "Plate Breastplate"
+        name : "Płytowy Napierśnik"
     },
     {
         type : "armour",
-        name : "Plate Bracers"
+        name : "Płytowe Naramienniki"
     },
     {
         type : "armour",
-        name : "Plate Helm"
+        name : "Hełm płytowy"
     },
     {
         type : "armour",
-        name : "Plate Leggings"
+        name : "Płytowe Nagolenniki"
     },
 ]
 
 let choice = await Dialog.wait({
-    title : "Choice",
+    title : "Wybór zbroi",
     content : 
     `<p>
-    Select your choice
+    Wybierz
     </p>
     <ol>
-    <li>Mail</li>
-    <li>Mail & Leather</li>
-    <li>Plate</li>
+    <li>Kolczuga</li>
+    <li>Kolczuga i skóra</li>
+    <li>Płyta</li>
     </ol> 
     `,
     buttons : {
         1 : {
-            label : "Mail",
+            label : "Kolczuga",
             callback : () => {
                 return choice1
             }
         },
         2 : {
-            label : "Mail & Leather",
+            label : "Kolczuga i skóra",
             callback : () => {
                 return choice2
             }
         },
         3 : {
-            label : "Plate",
+            label : "Płyta",
             callback : () => {
                 return choice3
             }
