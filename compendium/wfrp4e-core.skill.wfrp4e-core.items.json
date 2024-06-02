@@ -446,22 +446,22 @@
                     "scriptData": [
                         {
                             "id": "F2XzoEqkZKftefTB",
-                            "name": "Leczenie",
+                            "name": "Leczenie (Rany)",
                             "submissionScript": "[Script.Ah2wyywkL8hjJNXM]"
                         },
                         {
                             "id": "F2XzoEqkZKftefTB",
-                            "name": "Leczenie",
+                            "name": "Leczenie (Rany)",
                             "script": "[Script.S3Dev4hleOYqDNe9]"
                         },
                         {
                             "id": "F2XzoEqkZKftefTB",
-                            "name": "Leczenie",
+                            "name": "Leczenie (Krwawienie)",
                             "submissionScript": "[Script.wAntJhgb8Og5vJXh]"
                         },
                         {
                             "id": "F2XzoEqkZKftefTB",
-                            "name": "Leczenie",
+                            "name": "Leczenie (Krwawienie)",
                             "script": "[Script.qAEZgtu5CrfUkxhx]"
                         }
                     ],
