@@ -135,7 +135,7 @@
             "description": "<section id=\"secret-HaVbfBaaBSzWZbNX\" class=\"secret\"><p>@UUID[JournalEntry.IQ0PgoJihQltCBUU.JournalEntryPage.l0f11ypRjH9sR48Q#lesne-elfy]{Leśne Elfy}</p></section>",
             "sourceId": "Compendium.wfrp4e-core.actors.5wl3KH6hXsGwUcZa",
             "gender": "Różne",
-            "species": "Leśny Elf",
+            "species": "Leśny elf",
             "items": {
                 "a3J3EDwqkdr4IGTE": {
                     "specification": "Dowolne dwa"

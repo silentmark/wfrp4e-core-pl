@@ -346,7 +346,7 @@
         "Hair Colour - Wood Elf": {
             "initialization_folder": "Tworzenie Bohatera",
             "id": "boJ7tb1ePWEbrr1C",
-            "name": "Kolor Włosów - Leśny Elf",
+            "name": "Kolor Włosów - Leśny elf",
             "description": " ",
             "results": {
                 "3-3": "Popielaty",
@@ -979,7 +979,7 @@
         "Dissolution of Body and Mind - Wood Elf": {
             "initialization_folder": "Zepsucie i Mutacje",
             "id": "jfs4FXVTtWSjA6Or",
-            "name": "Rozkład Ciała i Umysłu - Leśny Elf",
+            "name": "Rozkład Ciała i Umysłu - Leśny elf",
             "description": " ",
             "results": {
                 "1-100": "<b>Umysł</b>: @Table[mutatemental]"
@@ -1026,7 +1026,7 @@
         "Eye Colour - High Elf": {
             "initialization_folder": "Tworzenie Bohatera",
             "id": "kCQgOdJM75fWwLm3",
-            "name": "Kolor Oczu - Wysoki Elf",
+            "name": "Kolor Oczu - Wysoki elf",
             "description": " ",
             "results": {
                 "15-17": "Bursztynowy",
@@ -1282,7 +1282,7 @@
         "Eye Colour - Wood Elf": {
             "initialization_folder": "Tworzenie Bohatera",
             "id": "ovsFYzUj4bUbVlLJ",
-            "name": "Kolor Oczu - Leśny Elf",
+            "name": "Kolor Oczu - Leśny elf",
             "description": " ",
             "results": {
                 "8-14": "Kasztanowy",
@@ -1331,7 +1331,7 @@
         "Hair Colour - High Elf": {
             "initialization_folder": "Tworzenie Bohatera",
             "id": "rLqbkZtr3az6EFiz",
-            "name": "Kolor Włosów - Wysoki Elf",
+            "name": "Kolor Włosów - Wysoki elf",
             "description": " ",
             "results": {
                 "18-18": "Kasztanowy",
@@ -1405,7 +1405,7 @@
         "Dissolution of Body and Mind - High Elf": {
             "initialization_folder": "Zepsucie i Mutacje",
             "id": "RzL4vZhqGBT8vzvM",
-            "name": "Rozkład Ciała i Umysłu - Wysoki Elf",
+            "name": "Rozkład Ciała i Umysłu - Wysoki elf",
             "description": " ",
             "results": {
                 "1-100": "<b>Umysł</b>: @Table[mutatemental]"
@@ -1434,7 +1434,7 @@
         "Career - Wood Elf": {
             "initialization_folder": "Profesje",
             "id": "sHYQ3gGxjpOJNxId",
-            "name": "Losowe Profesje - Leśny Elf",
+            "name": "Losowe Profesje - Leśny elf",
             "description": " ",
             "results": {
                 "1-1": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.CmiCNv8YlslFqRqy]{Uczony}",
@@ -1647,7 +1647,7 @@
         "Career - High Elf": {
             "initialization_folder": "Profesje",
             "id": "wDt3rHbbBVUfX6nw",
-            "name": "Losowe Profesje - Wysoki Elf",
+            "name": "Losowe Profesje - Wysoki elf",
             "description": " ",
             "results": {
                 "1-2": "@UUID[Compendium.wfrp4e-core.journals.wczCPcuHT4VQDLpL.JournalEntryPage.86gkaanqt19xYCRa]{Aptekarka}",
