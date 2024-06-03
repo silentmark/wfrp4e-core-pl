@@ -7,6 +7,91 @@ Hooks.on("init", () => {
 		});
 	}
 
+	class CompendiumMapping {
+
+		constructor(entityType, mapping, tc) {
+			this.mapping = foundry.utils.mergeObject(game.babele.constructor.DEFAULT_MAPPINGS[entityType], mapping || {});
+			this.fields = Object.keys(this.mapping).map(key => new FieldMapping(key, this.mapping[key], tc));
+		}
+
+		map(data, translations) {
+			return this.fields.reduce((m, f) => foundry.utils.mergeObject(m, f.map(data, translations)), {});
+		}
+		
+		translateField(field, data, translations) {
+			return this.fields.find(f => f.field === field)?.translate(data, translations);
+		}
+		
+		extractField(field, data) {
+			return this.fields.find(f => f.field === field)?.extractValue(field, data);
+		}
+
+		extract(data) {
+			return this.fields
+				.filter(f => !f.isDynamic())
+				.reduce((m, f) => foundry.utils.mergeObject(m, f.extract(data)), {});
+		}
+
+		isDynamic() {
+			return this.fields.map(f => f.isDynamic()).reduce((result, dynamic) => result || dynamic, false);
+		}
+	}
+
+	class FieldMapping {
+
+		constructor(field, mapping, tc) {
+			this.field = field;
+			this.tc = tc;
+			if (typeof mapping === "object") {
+				this.path = mapping["path"];
+				this.converter = game.babele.converters[mapping["converter"]];
+				this.dynamic = true;
+			} else {
+				this.path = mapping;
+				this.converter = null;
+				this.dynamic = false;
+			}
+		}
+
+		map(data, translations) {
+			const map = {};
+			const value = this.translate(data, translations);
+			if (value) {
+				this.path.split('.').reduce((a, f, i, r) => {
+					a[f] = (i < r.length - 1) ? {} : value;
+					return a[f];
+				}, map);
+			}
+			return map;
+		}
+		
+		translate(data, translations) {
+			const originalValue = this.extractValue(data);
+			let value;
+			if (this.converter && originalValue) {
+				value = this.converter(originalValue, translations[this.field], data, this.tc, translations)
+			} else {
+				value = translations[this.field];
+			}
+			return value;
+		}
+		
+		extractValue(data) {
+			return this.path.split('.').reduce((o, k) => {
+				return o && o[k];
+			}, data);
+		}
+		
+		extract(data) {
+			const extract = {};
+			extract[this.field] = this.extractValue(data);
+			return extract;
+		}
+		
+		isDynamic() {
+			return this.dynamic;
+		}
+	}
 	
 	Reflect.defineProperty(ModuleInitializer.prototype, 'createFolders', { value:
 		function (pack) {
@@ -28,7 +113,7 @@ Hooks.on("init", () => {
 		}
 	});
 
-	Babele.get().loadTranslations = async function () {
+	game.babele.loadTranslations = async function () {
 		const getTranslationsFiles = async (babele) => {
 			if (!game.user.hasPermission('FILES_BROWSE')) {
 				return game.settings.get('babele', 'translationFiles');
@@ -111,8 +196,7 @@ Hooks.on("init", () => {
         return allTranslations;
     }
 
-
-	Babele.get().registerConverters({
+	game.babele.registerConverters({
 		effects: (effects, translations) => {
 			return effects.map((data) => {
 				if (translations){
@@ -169,11 +253,10 @@ Hooks.on("init", () => {
 			});
 		},
 		
-		bestiary_traits: (items, translations) => {        
-			const defaultMethod = Converters.fromPack();
-			const translatedItems = defaultMethod(items, translations);
+		bestiary_traits: (items, translations) => {
+			const translatedItems = game.babele.converters.fromPack(items, translations);
 			const dynamicMapping = new CompendiumMapping("Item", null);
-			const toTranslate = translatedItems.filter(x=> translations[x.id] != null || translations[x._id] != null)
+			const toTranslate = translatedItems.filter(x => translations[x.id] != null || translations[x._id] != null)
 
 			for (let i = 0; i < toTranslate.length; i++) {
 				const item = toTranslate[i];

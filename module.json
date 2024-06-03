@@ -42,7 +42,7 @@
                 "id": "babele",
                 "type": "module",
                 "compatibility": {
-                    "minimum": "2.5.2"
+                    "minimum": "2.5.5"
                 }
             }
         ],
@@ -82,5 +82,5 @@
     ],    
 	"url": "https://weblate.foundryvtt.be/",
 	"manifest": "https://weblate.foundryvtt.be/static/releases/wfrp4e-core-pl/module.json",
-	"download": "https://weblate.foundryvtt.be/static/releases/wfrp4e-core-pl/0.9.1.zip" 
+	"download": "https://weblate.foundryvtt.be/static/releases/wfrp4e-core-pl/1.0.0.zip" 
 }
