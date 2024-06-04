@@ -2,7 +2,7 @@
     "id": "wfrp4e-core-pl",
     "title": "WFRP4e - Podręcznik Główny PL",
     "description": "Nieoficjalne (wciąż) tłumaczenie systemu Warhammer Fantasy Role Play 4ed. Zawiera (prawie) wszystkie tabele, bestiariusz i informacje, których potrzebujesz, aby wysłać bohaterów graczy w niebezpieczny świat Warhammera.",
-    "version": "0.9.9",
+    "version": "1.0.0",
     "authors": [
         {
             "name": "Myeshko1",
@@ -19,9 +19,9 @@
             "flags": {}
         },
         {
-            "name": "Dajmynato",
+            "name": "Liv",
             "email": "livithor@gmail.pl",
-            "discord": "Dajmynato#8936",
+            "discord": "livithor",
             "flags": {}
         },
         {
@@ -81,6 +81,6 @@
         }
     ],    
 	"url": "https://weblate.foundryvtt.be/",
-	"manifest": "https://weblate.foundryvtt.be/static/releases/wfrp4e-core-pl/module.json",
-	"download": "https://weblate.foundryvtt.be/static/releases/wfrp4e-core-pl/1.0.0.zip" 
+	"manifest": "https://weblate.foundryvtt.be/static/releases/wfrp4e-core-pl-cc/module.json",
+	"download": "https://weblate.foundryvtt.be/static/releases/wfrp4e-core-pl-cc/1.0.0.zip" 
 }
