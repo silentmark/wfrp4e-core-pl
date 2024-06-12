@@ -63,11 +63,12 @@
     },
     "esmodules": [
         "babele-register.js",
-        "modules/config-polish.js",
-        "load-scripts-pl.js"
+        "modules/config-polish.js"
     ],
     "scripts": [
-        "modules/initialization.js"
+        "load-scripts-pl.js",
+        "modules/initialization.js",
+        "modules/wfrp4e-npc-generator.js"
     ],
     "styles": [
         "css/wfrp4e.css"
