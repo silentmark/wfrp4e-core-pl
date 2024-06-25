@@ -19,4 +19,3 @@ Autorzy:
 
 <p align="center"><b>Tłumaczenie opracowane we współpracy z wydawnictwem Copernicus Corporation.</b></p>
 <p align="center"><b>Cubicle 7 Entertainment Ltd.© Copyright Games Workshop Limited 2024</b></p>
-
