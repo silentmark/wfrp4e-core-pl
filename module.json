@@ -1,7 +1,7 @@
 {
     "id": "wfrp4e-core-pl",
-    "title": "WFRP4e - Podręcznik Główny PL",
-    "description": "Nieoficjalne (wciąż) tłumaczenie systemu Warhammer Fantasy Role Play 4ed. Zawiera (prawie) wszystkie tabele, bestiariusz i informacje, których potrzebujesz, aby wysłać bohaterów graczy w niebezpieczny świat Warhammera.",
+    "title": "Oficjalne polskie tłumaczenie systemu Warhammer Fantasy Roleplay 4. ed.",
+    "description": "Wiecie dobrze, co znajduje się w środku. Kryją się tam spaczeni, niepokorni, zagubieni. Mówicie sobie, że chcielibyście odejść i zostawić to za sobą. Czmychnąć do idealnego świata, gdzie wszystko układa się jak po sznurze. To nieprawda. Coś ciągnie Was właśnie tutaj. Możecie tłumaczyć sobie, że kuszą was bogactwa albo żądza chwały. Nie łudźcie się. Wszyscy wiemy, że jest inaczej. Kto raz usłyszał, jak wzywają go szlaki Starego Świata, ten zawsze już będzie chciał na nie powrócić. Dobądźcie ostrzy, nabijcie pistolety i uważajcie na tego psa: może i jest mały, ale jaki zajadły! Warhammer Fantasy Roleplay zabiera Was do Starego Świata. Skompletujcie własną drużynę śmiałków lub bandę oprychów i wyruszcie we wspólną podróż. W jej trakcie będziecie mierzyć się z podłością, zepsuciem, intrygami i straszliwymi bestiami pałającymi chęcią destrukcji.",
     "version": "1.0.0",
     "authors": [
         {
@@ -52,14 +52,14 @@
                 "type": "system",
                 "manifest": "https://github.com/moo-man/WFRP4e-FoundryVTT/releases/latest/download/system.json",
                 "compatibility": {
-                    "minimum": "7.1.5"
+                    "minimum": "7.2.0"
                 }
             }
         ]
     },
     "compatibility": {
         "minimum": "11",
-        "verified": "11"
+        "verified": "12"
     },
     "esmodules": [
         "babele-register.js",
@@ -81,7 +81,7 @@
             "flags": {}
         }
     ],    
-	"url": "https://weblate.foundryvtt.be/",
-	"manifest": "https://weblate.foundryvtt.be/static/releases/wfrp4e-core-pl-cc/module.json",
-	"download": "https://weblate.foundryvtt.be/static/releases/wfrp4e-core-pl-cc/1.0.0.zip" 
+	"url": "https://github.com/silentmark/wfrp4e-core-pl",
+	"manifest": "https://raw.githubusercontent.com/silentmark/wfrp4e-core-pl/main/module.json",
+	"download": "https://github.com/silentmark/wfrp4e-core-pl/releases/download/1.0.0/wfrp4e-core-pl.zip"
 }
