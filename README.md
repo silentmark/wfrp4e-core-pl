@@ -19,3 +19,11 @@ Autorzy:
 
 <p align="center"><b>Tłumaczenie opracowane we współpracy z wydawnictwem Copernicus Corporation.</b></p>
 <p align="center"><b>Cubicle 7 Entertainment Ltd.© Copyright Games Workshop Limited 2024</b></p>
+
+<table align="center">
+<tr>
+  <td><img src='https://github.com/silentmark/wfrp4e-core-pl/blob/main/githubAssets/COPCORP-logo.png' width="200"/></td>
+  <td><img src='https://github.com/silentmark/wfrp4e-core-pl/blob/main/githubAssets/C7-logo.png' width="200"/></td>
+  <td><img src='https://github.com/silentmark/wfrp4e-core-pl/blob/main/githubAssets/WH2023-logo.png' width="200"/></td>
+</tr>
+</table>
