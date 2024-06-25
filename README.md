@@ -17,6 +17,6 @@ Autorzy:
 - silent_mark
 - Varis (dr_hans)
 
-Tłumaczenie opracowane we współpracy z wydawnictwem Copernicus Corporation.
-Cubicle 7 Entertainment Ltd.© Copyright Games Workshop Limited 2024
+<p align="center">**Tłumaczenie opracowane we współpracy z wydawnictwem Copernicus Corporation.**</p>
+<p align="center">**Cubicle 7 Entertainment Ltd.© Copyright Games Workshop Limited 2024**</p>
 
