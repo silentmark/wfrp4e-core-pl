@@ -10,12 +10,12 @@ Aktualnie obsługiwane moduły:
 [Core Rulebook](https://foundryvtt.com/packages/wfrp4e-core/)
 
 Autorzy:
-Liv
-Ez
-GregorHak
-Myeshko1
-silent_mark
-Varis (dr_hans)
+- Liv
+- Ez
+- GregorHak
+- Myeshko1
+- silent_mark
+- Varis (dr_hans)
 
 Tłumaczenie opracowane we współpracy z wydawnictwem Copernicus Corporation.
 Cubicle 7 Entertainment Ltd.© Copyright Games Workshop Limited 2024
