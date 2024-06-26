@@ -44,6 +44,13 @@
                 "compatibility": {
                     "minimum": "2.5.5"
                 }
+            },
+            {
+                "id": "wfrp4e-core",
+                "type": "module",
+                "compatibility": {
+                    "minimum": "5.0.0"
+                }
             }
         ],
         "systems": [
@@ -59,6 +66,7 @@
     },
     "compatibility": {
         "minimum": "11",
+        "maximum": "12",
         "verified": "12"
     },
     "esmodules": [
