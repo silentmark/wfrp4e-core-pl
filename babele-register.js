@@ -334,24 +334,3 @@ Hooks.on("ready", () => {
 		});
 	}, 1000);
 });
-
-Hooks.on("ready", () => {
-	new Dialog({
-		content: `<div>
-<ul>
-<li>Używasz niezatwierdzonej przez Copernicus Corporation wersji tłumaczenia WFRP 4ed Core Module.</li>
-<li>Robiąc to bez ich zgody zaprzedajesz swoją duszę Mrocznym Potęgom.</li>
-<li>Wyświadcz nam wszystkim przysługę i naciskaj na CC oraz Cubicle 7, aby zatwierdzili tłumaczenie.</li>
-<li>Wyświadcz nawet większą przysługę, kupując oryginalne podręczniki od Copericus Corporation, bez których nic z tego nie byłoby możliwe.</li>
-</ul>
-		</div>`,
-		title: "Ostrzeżenie o prawach autorskich",
-		buttons: {
-		confirm: {
-			label: game.i18n.localize("Confirm"),
-			callback: (dlg) => { }
-		}
-		},
-		default: "confirm",
-	}).render(true);
-});
