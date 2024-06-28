@@ -517,6 +517,11 @@
                             "id": "cwsT8KWhr0OgtWc1",
                             "name": "Jad",
                             "script": "[Script.jfk5VDKMTIf4ee0v]"
+                        },
+                        {
+                            "id": "cwsT8KWhr0OgtWc1",
+                            "name": "Jad",
+                            "script": "[Script.gMIenSmLklAkB2Zm]"
                         }
                     ]
                 }
@@ -671,6 +676,17 @@
                             "script": "[Script.MFKhU9vp8bQpHP3I]"
                         }
                     ]
+                },
+                "satjshMbtIpvJdOW": {
+                    "id": "satjshMbtIpvJdOW",
+                    "name": "Ustaw wartość",
+                    "scriptData": [
+                        {
+                            "id": "satjshMbtIpvJdOW",
+                            "name": "Ustaw wartość",
+                            "script": "[Script.F2u4L4o0r1LTWeWK]"
+                        }
+                    ]
                 }
             },
             "specification": "Wartość"
@@ -783,7 +799,7 @@
                         {
                             "id": "et9TgrjWHZYQI7OJ",
                             "name": "Dekoncentrujący",
-                            "script": "[Script.0iTLDgFHO9Rgc010]",
+                            "script": "[Script.Uvk1X7sEhvv77YkD]",
                             "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         }
                     ]
@@ -905,6 +921,17 @@
                             "script": "[Script.IfEu1hO8sKEZBpvg]"
                         }
                     ]
+                },
+                "k33Zn9fXkzRnLRD7": {
+                    "id": "k33Zn9fXkzRnLRD7",
+                    "scriptData": [
+                        {
+                            "id": "k33Zn9fXkzRnLRD7",
+                            "name": "Ustaw wartość",
+                            "script": "[Script.NI3ZzIAlpQfVSjvf]"
+                        }
+                    ],
+                    "name": "Ustaw wartość"
                 }
             },
             "specification": "#"
@@ -1225,6 +1252,11 @@
                             "id": "CAcGBn8sq62mVUxJ",
                             "name": "Pancerz",
                             "script": "[Script.Vb7rgl8T4VRswbnZ]"
+                        },
+                        {
+                            "id": "CAcGBn8sq62mVUxJ",
+                            "name": "Zbroja",
+                            "script": "[Script.2QB0LjueuJcIaHaC]"
                         }
                     ]
                 }
@@ -1236,7 +1268,20 @@
             "name": "Rzucanie Czarów",
             "description": "<p>Stworzenie potrafi rzucać wszystkie zaklęcia Tradycji Magii podanej w nawiasie.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.vY0CHKsJRV3gYBj3",
-            "specification": "Tradycja"
+            "specification": "Tradycja",
+            "effects": {
+                "jpwranqt1iGvh9CR": {
+                    "scriptData": [
+                        {
+                            "script": "[Script.6Ws3ieQ7pG5poUyT]",
+                            "name": "Rzucanie Czarów",
+                            "id": "jpwranqt1iGvh9CR"
+                        }
+                    ],
+                    "id": "jpwranqt1iGvh9CR",
+                    "name": "Rzucanie Czarów"
+                }
+            }
         },
         "Leader": {
             "id": "wGTD2LezlI6Atyy0",

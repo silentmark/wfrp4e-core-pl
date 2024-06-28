@@ -459,7 +459,7 @@
         "Signet Ring": {
             "id": "BBiL0DSHcdPakVBS",
             "name": "Sygnet",
-            "description": "<p>&nbsp;</p>\n<p>Złote pierścienie z wygrawerowanymi pieczęciami noszone są przez szlachtę i reprezentantów cechów, którzy używają ich do odciskania znaków herbowych lub insygniów w wosku, pieczętując listy.</p>\n<p>&nbsp;</p>\n<p>&nbsp;</p>",
+            "description": "<p>Złote pierścienie z wygrawerowanymi pieczęciami noszone są przez szlachtę i reprezentantów cechów, którzy używają ich do odciskania znaków herbowych lub insygniów w wosku, pieczętując listy.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.BBiL0DSHcdPakVBS"
         },
         "Flail": {
@@ -731,7 +731,7 @@
         "Cloak": {
             "id": "GIFrMVqk0SimaBOM",
             "name": "Płaszcz",
-            "description": "<p>Chroni noszącego przed niesprzyjającymi warunkami pogodowymi.&nbsp;</p>",
+            "description": "<p>Chroni noszącego przed niesprzyjającymi warunkami pogodowymi.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.GIFrMVqk0SimaBOM"
         },
         "Quarterstaff": {
@@ -911,7 +911,7 @@
         "Coat": {
             "id": "Ieyr3r0Skl57DkAJ",
             "name": "Opończa",
-            "description": "<p style=\"margin: 0in; font-family: Calibri; font-size: 11.0pt; color: #231f20;\">Chroni noszącego przed niesprzyjającymi warunkami pogodowymi i niskimi temperaturami. Jeśli nie masz dobrej opończy lub czegoś podobnego, otrzymujesz kary z powodu zimna (patrz strona 181).</p>",
+            "description": "<p>Chroni noszącego przed niesprzyjającymi warunkami pogodowymi i niskimi temperaturami. Jeśli nie masz dobrej opończy lub czegoś podobnego, otrzymujesz kary z powodu zimna (patrz strona 181).</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.Ieyr3r0Skl57DkAJ"
         },
         "Bedroll": {

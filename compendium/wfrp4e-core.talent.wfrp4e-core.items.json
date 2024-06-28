@@ -2448,7 +2448,20 @@
             "id": "qdMbxW09FUoYBzmB",
             "name": "Czarownica!",
             "description": "<p>Sama z siebie nauczyłaś się, jak rzucać czary, często robiąc to metodą prób i błędów. Dodaj Język (Magiczny) do listy Umiejętności każdej bieżącej Profesji. Jeśli się już na niej znajduje, każde Rozwinięcie tej Umiejętności kosztuje cię o 5 PD mniej. Co więcej, możesz w dowolnym momencie wydać Punkt Bohatera, by Twoja postać mogła rzucić wybrane przez ciebie zaklęcie z dowolnej Tradycji Magii Tajemnej. Zostaje ono dodane do listy znanych postaci czarów. Możesz tak uczynić tyle razy, ile razy masz wykupiony ten Talent.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.qdMbxW09FUoYBzmB"
+            "sourceId": "Compendium.wfrp4e-core.items.Item.qdMbxW09FUoYBzmB",
+            "effects": {
+                "GYVwQU6Hgh3GL1Yn": {
+                    "id": "GYVwQU6Hgh3GL1Yn",
+                    "name": "Czarownica!",
+                    "scriptData": [
+                        {
+                            "id": "GYVwQU6Hgh3GL1Yn",
+                            "name": "Czarownica!",
+                            "script": "[Script.IzoOmDywGLqLNljN]"
+                        }
+                    ]
+                }
+            }
         },
         "Magnum Opus": {
             "id": "QdvY9hoDTbr12jXq",
@@ -2737,12 +2750,20 @@
             "id": "tX9R9rSYm2YyEnOK",
             "name": "Skrócenie Dystansu",
             "description": "<p> Wiesz, jak przyciągnąć do siebie przeciwnika, i nie dotyczą cię modyfikatory za walkę z wrogiem, który ma broń dłuższą niż Twoja. Jeśli używasz <b>opcjonalnych zasad walki kontaktowej</b>, otrzymujesz premię +10 do trafienia przeciwnika.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.tX9R9rSYm2YyEnOK",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.tX9R9rSYm2YyEnOK",
             "effects": {
                 "Eu8Ajiixpb7rdqVW": {
                     "id": "Eu8Ajiixpb7rdqVW",
                     "name": "Skrócenie Dystansu",
-                    "script": "if (args.type == \"weapon\" && this.actor.hasSystemEffect(\"infighting\")) {\n     args.prefillModifiers.modifier += 10;\n}"
+                    "scriptData": [
+                        {
+                            "id": "Eu8Ajiixpb7rdqVW",
+                            "name": "Skrócenie Dystansu",
+                            "script": "[Script.7f6OsttTzE7Hvzfk]",
+                            "activationScript": "[Script.pnB9TzSEytkxk3Rb]",
+                            "hideScript": "[Script.ZrePyV2spv3v65Tg]"
+                        }
+                    ]
                 }
             },
             "tests": "Testy podczas wchodzenia w zasięg broni przeciwnika i w walce kontaktowej"

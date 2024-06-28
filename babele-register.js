@@ -1,6 +1,6 @@
 Hooks.on("init", () => {
 	if (typeof Babele !== "undefined") {
-		Babele.get().register({
+		game.babele.register({
 			module: "wfrp4e-core-pl",
 			lang: "pl",
 			dir: "compendium",
@@ -98,18 +98,29 @@ Hooks.on("init", () => {
 			let root = game.modules.get(pack.metadata.packageName).flags.folder;
 			root.type = pack.metadata.type;
 			root._id = randomID();
-			const data = {name: root.name};
-			root.name = Babele.get().packs.get(pack.metadata.packageName + "._packs-folders").translations[data.name] || root.name;
-			let packFolders = pack.folders.contents.map(f => f.toObject());
-			for(let f of packFolders) {
-				if (!f.folder) {
-					f.folder = root._id;
-					f.name = pack.folders.contents.find(x=>x._id == f._id).name;
-				}
-			}
 
 			this.rootFolders[pack.metadata.id] = root._id;
-			return Folder.create(packFolders.concat(root), {keepId : true})
+			const data = {name: root.name};
+			let packsFolderJson = game.babele.packs.get(pack.metadata.packageName + "._packs-folders");
+			if (packsFolderJson) {
+				root.name = packsFolderJson.translations[data.name] || root.name;
+				let packFolders = pack.folders.contents.map(f => f.toObject());
+				for (let f of packFolders) {
+					if (!f.folder) {
+						f.folder = root._id;
+						f.name = pack.folders.contents.find(x => x._id == f._id).name;
+					}
+				}
+				return Folder.create(packFolders.concat(root), {keepId : true})
+			} else {
+				let packFolders = pack.folders.contents.map(f => f.toObject());
+				for(let f of packFolders) {
+					if (!f.folder) {
+						f.folder = root._id;
+					}
+				}
+				return Folder.create(packFolders.concat(root), {keepId : true})
+			}
 		}
 	});
 
@@ -269,7 +280,31 @@ Hooks.on("init", () => {
 						translatedItem = mergeObject(item, translatedData);
 						for (const e of translatedItem.effects) {
 							const te = pack.translations[originalName].effects[e._id];
-							mergeObject(e, te);
+							if (te) {
+								mergeObject(e, te);
+								if (te.filter) {
+									e.flags.wfrp4e.applicationData.filter = te.filter;
+								}
+								if (e.flags?.wfrp4e?.scriptData && te.scriptData) {
+									for (let i = 0; i < te.scriptData.length; i++) {
+										let transScript = te.scriptData[i];
+										let script = e.flags.wfrp4e.scriptData[i];
+										if (script) {
+											script.label = transScript.name;
+											if (transScript.hideScript) {
+												script.options.dialog.hideScript = transScript.hideScript;
+											}
+											if (transScript.activationScript) {
+												script.options.dialog.activationScript = transScript.activationScript;
+											}
+											if (transScript.submissionScript) {
+												script.options.dialog.submissionScript = transScript.submissionScript;
+											}
+											script.script = transScript.script;
+										}
+									}
+								}
+							}
 						}
 						if ((translations[translatedItem.id] ?? translations[translatedItem._id]).specification) {
 							translatedItem.system.specification.value = (translations[translatedItem.id] ?? translations[translatedItem._id]).specification;
@@ -297,7 +332,31 @@ Hooks.on("init", () => {
 									translatedItem = mergeObject(item, translatedData);
 									for (const e of translatedItem.effects) {
 										const te = pack.translations[compendiumItemId].effects[e._id];
-										mergeObject(e, te);
+										if (te) {
+											mergeObject(e, te);
+											if (te.filter) {
+												e.flags.wfrp4e.applicationData.filter = te.filter;
+											}
+											if (e.flags?.wfrp4e?.scriptData && te.scriptData) {
+												for (let i = 0; i < te.scriptData.length; i++) {
+													let transScript = te.scriptData[i];
+													let script = e.flags.wfrp4e.scriptData[i];
+													if (script) {
+														script.label = transScript.name;
+														if (transScript.hideScript) {
+															script.options.dialog.hideScript = transScript.hideScript;
+														}
+														if (transScript.activationScript) {
+															script.options.dialog.activationScript = transScript.activationScript;
+														}
+														if (transScript.submissionScript) {
+															script.options.dialog.submissionScript = transScript.submissionScript;
+														}
+														script.script = transScript.script;
+													}
+												}
+											}
+										}
 									}
 									if ((translations[translatedItem.id] ?? translations[translatedItem._id]).specification) {
 										translatedItem.system.specification.value = (translations[translatedItem.id] ?? translations[translatedItem._id]).specification;

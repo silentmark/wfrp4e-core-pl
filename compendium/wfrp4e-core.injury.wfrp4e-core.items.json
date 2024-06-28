@@ -245,7 +245,7 @@
                         {
                             "id": "l98TlfKtUDTwAT58",
                             "name": "Naderwany Mięsień Ręki",
-                            "script": "[Script.0iTLDgFHO9Rgc010]",
+                            "script": "[Script.EYny6z5oTOhxGDfb]",
                             "activationScript": "[Script.nxNqWmmF6mJTnrLo]",
                             "hideScript": "[Script.A3MW0UksYrHGa0Qw]"
                         }
@@ -397,7 +397,7 @@
                         {
                             "id": "Rsf3AbJfqBJBvCx8",
                             "name": "Naderwany Mięsień Nogi",
-                            "script": "[Script.0iTLDgFHO9Rgc010]",
+                            "script": "[Script.EYny6z5oTOhxGDfb]",
                             "activationScript": "[Script.RNHrSTfMLXm5sXkC]",
                             "hideScript": "[Script.GrF6tQ08jgKmUH4i]"
                         },
@@ -599,7 +599,7 @@
                         {
                             "id": "YYYy8BoYrzX6992d",
                             "name": "Naderwany Mięsień Szyi",
-                            "script": "[Script.0iTLDgFHO9Rgc010]"
+                            "script": "[Script.EYny6z5oTOhxGDfb]"
                         }
                     ],
                     "id": "YYYy8BoYrzX6992d",

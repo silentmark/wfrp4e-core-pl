@@ -143,7 +143,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.146dtKeTjibo3Pmw",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "4"
         },
         "Distracting (Death)": {
             "id": "14tKnA2ILXw2oaMK",
@@ -226,7 +227,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.1QNOsOlEtjXccQjl",
             "duration": "Natychmiast",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "3"
         },
         "Firewall": {
             "id": "1RjTFiv9ooOW35LV",
@@ -248,7 +250,8 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Specjalny",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "Bonus SW"
         },
         "Comet of Casandora": {
             "id": "208BiJLY0jXxelbd",
@@ -270,7 +273,8 @@
             },
             "duration": "Specjalny",
             "target": "Bonus I metrów",
-            "range": "Inicjatywa metrów"
+            "range": "Inicjatywa metrów",
+            "damage": "+12"
         },
         "Magic Shield (Daemonology)": {
             "id": "24ichKVP2EzyO5ob",
@@ -374,7 +378,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.2jXYoW0CJoA5BoMd",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "+4"
         },
         "Fearsome (Necromancy)": {
             "id": "31sQbAwCE7viJDXi",
@@ -481,7 +486,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.3eGh2vUgXRk3Czj8",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "1 metr"
+            "range": "1 metr",
+            "damage": "Bonus Wt"
         },
         "Aethyric Armour (Necromancy)": {
             "id": "3GDfAQLXIOuaDo1d",
@@ -512,7 +518,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.3mZ76XJX38pT2d7r",
             "duration": "Natychmiast",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "3"
         },
         "Flaming Sword of Rhuin": {
             "id": "3SzMz3ZiGzbHRjTP",
@@ -604,7 +611,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.44AO7oTKwqUu78C1",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "1 metr"
+            "range": "1 metr",
+            "damage": "Bonus Wt"
         },
         "Sleep": {
             "id": "4ePe5oNQakA8nJlk",
@@ -963,7 +971,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.75BkqdYuBwnlJl5D",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "1 metr"
+            "range": "1 metr",
+            "damage": "Bonus Wt"
         },
         "Reanimate": {
             "id": "7BJDTRG65hwt1fUK",
@@ -1088,7 +1097,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.8rRCSJGIdecFcpxm",
             "duration": "Natychmiast",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "3"
         },
         "Push (Fire)": {
             "id": "99QJoyyHfYBQz5Wz",
@@ -1391,7 +1401,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.B8dvTJtaLCHgfFuP",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "4"
         },
         "Arrow Shield (Beasts)": {
             "id": "bd9bf1D55v6ov1UV",
@@ -1444,7 +1455,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.BKHMI2wI74a42ZQa",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "1 metr"
+            "range": "1 metr",
+            "damage": "Bonus Wt"
         },
         "Aethyric Arms (Heavens)": {
             "id": "bLCz5iBxd2wjfStI",
@@ -1560,7 +1572,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.Bx5CC17pRNITWhg8",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "+4"
         },
         "Breath (Hedgecraft)": {
             "id": "cAej1SjgJF1J0Lbx",
@@ -1569,7 +1582,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.cAej1SjgJF1J0Lbx",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "1 metr"
+            "range": "1 metr",
+            "damage": "Bonus Wt"
         },
         "Push (Heavens)": {
             "id": "cfuqgV2PTnjMrgT7",
@@ -1601,7 +1615,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.cfvdViThaoOHyuSk",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "1 metr"
+            "range": "1 metr",
+            "damage": "Bonus Wt"
         },
         "Careful Step": {
             "id": "cjD53QYSatQwL6CR",
@@ -2088,7 +2103,8 @@
             },
             "duration": "Natychmiast",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "10"
         },
         "Bridge (Death)": {
             "id": "enG7NVLPcWHfRXg8",
@@ -2106,7 +2122,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.EpwqkFcmpYyme4aM",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "+4"
         },
         "Chain Attack (Beasts)": {
             "id": "ET5sNnUsGslSNEAm",
@@ -2115,7 +2132,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.ET5sNnUsGslSNEAm",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "+4"
         },
         "Magic Shield (Necromancy)": {
             "id": "eTAzKM5j06KwtdBt",
@@ -2219,7 +2237,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.fdhFU2wkYwpJIssM",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "+4"
         },
         "Distracting (Hedgecraft)": {
             "id": "FenXWblAuFNhVuZf",
@@ -2281,7 +2300,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.FOmZlLUDNDfMAPuT",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "1 metr"
+            "range": "1 metr",
+            "damage": "Bonus Wt"
         },
         "Vanhel's Call": {
             "id": "foqexF06lguqPFK6",
@@ -2392,7 +2412,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.gJYXrZa4pW49R9Vu",
             "duration": "Natychmiast",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "3"
         },
         "Teleport (Witchcraft)": {
             "id": "glZHSQzFnF9qXAwf",
@@ -2564,7 +2585,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.ha5MaHoDPxGtzP2b",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "4"
         },
         "Aethyric Armour (Metal)": {
             "id": "HAnyF2QUfYGuXkPn",
@@ -2648,7 +2670,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.hgg9qZcvbotrA3V2",
             "duration": "Natychmiast",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "3"
         },
         "Blast (Beasts)": {
             "id": "HhfVsm3ZRwSahyMU",
@@ -2657,7 +2680,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.HhfVsm3ZRwSahyMU",
             "duration": "Natychmiast",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "3"
         },
         "Shock": {
             "id": "hKFeMAsntzXscIGy",
@@ -2688,7 +2712,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.HM9WbGOtUngY5TEm",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "+4"
         },
         "Bridge (Necromancy)": {
             "id": "hNOnwU998jZlnGuk",
@@ -2764,7 +2789,8 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "+10"
         },
         "Screaming Skull": {
             "id": "HqInHmOviuLqymdm",
@@ -2787,7 +2813,8 @@
             },
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "Bonus SW"
         },
         "Aethyric Armour (Light)": {
             "id": "HVtGSSEFgyQgpbx4",
@@ -2885,7 +2912,8 @@
             },
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "6"
         },
         "Dazzle": {
             "id": "IFuUxTGFQAxp40si",
@@ -3261,7 +3289,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.K0zoHArrRehHV8t2",
             "duration": "Natychmiast",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "3"
         },
         "Aethyric Armour (Shadow)": {
             "id": "k2DXiabtQZcgFggb",
@@ -3332,7 +3361,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.KGRIdIDE57BV54Ub",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "1 metr"
+            "range": "1 metr",
+            "damage": "Bonus Wt"
         },
         "Blast (Life)": {
             "id": "Kh8kZ4aq8Xjp0cyL",
@@ -3341,7 +3371,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.Kh8kZ4aq8Xjp0cyL",
             "duration": "Natychmiast",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "3"
         },
         "Flight (Witchcraft)": {
             "id": "kK3ONNbnqapduJ1q",
@@ -3470,7 +3501,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.kWo9eTmKWa0MxtrB",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "+4"
         },
         "Sounds": {
             "id": "lghYQXa227Sf8ofT",
@@ -3599,7 +3631,8 @@
             },
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "+12"
         },
         "Fate’s Fickle Fingers": {
             "id": "lzTmKnhO1MY9ycPU",
@@ -3661,7 +3694,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.mC2uukGCM4zykxUu",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "4"
         },
         "Distracting (Fire)": {
             "id": "MdNzPNRgxkdMwbjj",
@@ -3692,7 +3726,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.mfsHBe0DUomxl9Ro",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "4"
         },
         "Move Object (Heavens)": {
             "id": "MhpmVs0WVP96uOnw",
@@ -3710,7 +3745,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.mifZY3mi9Ed23DAv",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "4"
         },
         "Bearing": {
             "id": "MIgKjszwK6hk7Pps",
@@ -3835,7 +3871,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.mYXcxTjAUlIHhlPo",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "+4"
         },
         "Terrifying (Heavens)": {
             "id": "N1aBnhPpQUu0Bkuh",
@@ -3888,7 +3925,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.nbqYJUSsVCSzmOU5",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "1 metr"
+            "range": "1 metr",
+            "damage": "Bonus Wt"
         },
         "Fearsome": {
             "id": "neCKUJ2yMwEl6GAX",
@@ -4016,7 +4054,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.NUTVPuhPWA7xCCg3",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "+4"
         },
         "Octagram": {
             "id": "NwVgP5msZHERwEfK",
@@ -4131,7 +4170,8 @@
             },
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Dotyk"
+            "range": "Dotyk",
+            "damage": "+0"
         },
         "Speed of Thought": {
             "id": "OB05oGoSZDzNYLjW",
@@ -4325,7 +4365,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.oqV2s1CJix4eAUW7",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "+4"
         },
         "Dark Vision (Daemonology)": {
             "id": "ovBsMewZzi7r6Ffx",
@@ -4394,7 +4435,8 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "Bonus SW"
         },
         "Drop (Shadow)": {
             "id": "P136wDtdbsbvOsAk",
@@ -4477,7 +4519,7 @@
                     ],
                     "id": "qZBJSHohaj8XIWqk",
                     "name": "Zguba demonów",
-                    "filter": "if (this.actor.has(game.i18n.localize(\"NAME.Daemonic\")))\n{\n    return false\n}\nelse \n{\n    this.script.scriptNotification(\"To nie demon!\");\n    return true;\n}"
+                    "filter": "return this.actor.items.getName(\"Magia Tajemna (Światło)\")"
                 }
             }
         },
@@ -4716,7 +4758,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.QcJfSMq3c50pGBen",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "1 metr"
+            "range": "1 metr",
+            "damage": "Bonus Wt"
         },
         "Destroy Lesser Demon": {
             "id": "Qg98e2pFgCW63aB1",
@@ -4802,7 +4845,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.qiLudcBEdA7qgrZp",
             "duration": "Natychmiast",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "3"
         },
         "Breath (Beasts)": {
             "id": "QkBpHcb2BuZMSDZt",
@@ -4811,7 +4855,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.QkBpHcb2BuZMSDZt",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "1 metr"
+            "range": "1 metr",
+            "damage": "Bonus Wt"
         },
         "QmjYLCaEn3YKHxdv": {
             "id": "QmjYLCaEn3YKHxdv",
@@ -4820,7 +4865,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.QmjYLCaEn3YKHxdv",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "4"
         },
         "Distracting (Metal)": {
             "id": "QNkxj6vyBm2WEdOA",
@@ -4961,7 +5007,8 @@
             },
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "10"
         },
         "Dark Vision (Hedgecraft)": {
             "id": "Rd8i9cLTw16hepEE",
@@ -5063,7 +5110,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.Rkg1tMICxdRsH1zB",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "4"
         },
         "Drop (Daemonology)": {
             "id": "rL22KLFNVzGrE9mG",
@@ -5117,7 +5165,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.ROmZq14yqEXx6zYN",
             "duration": "Natychmiast",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "3"
         },
         "Corrosive Blood (Death)": {
             "id": "Rpc1VfsdIfw0Zjzk",
@@ -5170,7 +5219,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.rsLiEvTUeBKUcgVU",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "+4"
         },
         "Terrifying (Life)": {
             "id": "rtnNRlwNbYst1gZz",
@@ -5533,7 +5583,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.T8nErqWnkqdvcNVz",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "+0"
         },
         "Mundane Aura": {
             "id": "T9cEYAUhqBiTxrp2",
@@ -5701,7 +5752,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.TtiLLfX0a21t2YpO",
             "duration": "Natychmiast",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "3"
         },
         "Move Object (Fire)": {
             "id": "TtuJjGh4fdU4mwBN",
@@ -6000,7 +6052,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.urBvn79ntZ0q44Op",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "+4"
         },
         "Bolt (Beasts)": {
             "id": "UWg4WPFALcsoPKau",
@@ -6009,7 +6062,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.UWg4WPFALcsoPKau",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "4"
         },
         "Dome": {
             "id": "uZdUrRFgNpTtY00H",
@@ -6151,7 +6205,8 @@
             },
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Dotyk"
+            "range": "Dotyk",
+            "damage": "+6"
         },
         "Shadowstep": {
             "id": "VFWBB9zlwCe5J9EZ",
@@ -6191,7 +6246,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.Vk12kqjcz6aV9o7w",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "4"
         },
         "Flight (Necromancy)": {
             "id": "vLhS0qwea9LjvK6u",
@@ -6275,7 +6331,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.vzaBW9F5LVSAAV5H",
             "duration": "Natychmiast",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "3"
         },
         "Aethyric Arms (Metal)": {
             "id": "w0pZ963P6QS7Eh2a",
@@ -6329,7 +6386,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.w5b653yUVENuVHzy",
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "+4"
         },
         "Ward (Daemonology)": {
             "id": "W8VbsItRrBVRg9kg",
@@ -6426,7 +6484,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.wHaglsPNfRMpKB9K",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Bonus SW metrów"
+            "range": "Bonus SW metrów",
+            "damage": "Bonus SW"
         },
         "Arrow Shield (Daemonology)": {
             "id": "wi9BBLoL1TIf5aUf",
@@ -6475,7 +6534,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.wknDEJDGTEPWqHtG",
             "duration": "Natychmiast",
             "target": "Bonus SW metrów",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "3"
         },
         "Bolt (Light)": {
             "id": "WNJuabKOre8IAu8y",
@@ -6484,7 +6544,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.WNJuabKOre8IAu8y",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "4"
         },
         "Move Object": {
             "id": "wQ5ld4yCCqhG0lqL",
@@ -6502,7 +6563,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.WqJubE8GuApAeIbb",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "4"
         },
         "Drop": {
             "id": "Wt6ikb1n9CivB3JN",
@@ -6551,7 +6613,8 @@
             },
             "duration": "Bonus SW Rund",
             "target": "Ty",
-            "range": "Ty"
+            "range": "Ty",
+            "damage": "Bonus SW"
         },
         "wx23bbK7pPqY2quI": {
             "id": "wx23bbK7pPqY2quI",
@@ -6684,7 +6747,8 @@
             },
             "duration": "Natychmiast",
             "target": "Specjalny",
-            "range": "Specjalny"
+            "range": "Specjalny",
+            "damage": "Bonus Wt"
         },
         "Mirkride": {
             "id": "xiTk3pZX0GYVO2TQ",
@@ -6742,7 +6806,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.XS9i8PasJ33rNA2g",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "1 metr"
+            "range": "1 metr",
+            "damage": "Bonus Wt"
         },
         "Starcrossed": {
             "id": "XXEIfkXpNxpfkamo",
@@ -6983,7 +7048,8 @@
                     "name": "Uczta kruków",
                     "filter": "return this.actor.itemTypes.talent.find(i => i.name == \"Arcane Magic (Beasts)\")"
                 }
-            }
+            },
+            "damage": "7"
         },
         "Arrow Shield (Light)": {
             "id": "YsBRTjGGyISyUudZ",
@@ -7058,7 +7124,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.zNobG855V6XwHTXh",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "Siła Woli metrów"
+            "range": "Siła Woli metrów",
+            "damage": "4"
         },
         "Fearsome (Hedgecraft)": {
             "id": "znOLIRYazprzZ8eI",
@@ -7156,7 +7223,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.ZvNSOZZzAcjRBVBk",
             "duration": "Natychmiast",
             "target": "1",
-            "range": "1 metr"
+            "range": "1 metr",
+            "damage": "Bonus Wt"
         },
         "Arrow Shield (Death)": {
             "id": "zwQQb0upMLj8bFe9",

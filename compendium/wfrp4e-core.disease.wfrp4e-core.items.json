@@ -298,9 +298,9 @@
                         {
                             "id": "bRuaAPrZHsDEX6Zb",
                             "name": "Gorączka (Wysoka)",
-                            "script": "args.fields.modifier -= 10",
-                            "activationScript": "return [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
-                            "hideScript": "return ![\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)"
+                            "script": "[Script.ztIkD5Zt6ko9D4Ca]",
+                            "activationScript": "[Script.OJMgS8ZQv0j4tEFf]",
+                            "hideScript": "[Script.MgZreqq3Jua10c8s]"
                         }
                     ]
                 },
@@ -309,7 +309,7 @@
                     "name": "Uwiąd",
                     "scriptData": [
                         {
-                            "script": "\n                            let difficulty = \"\";\nif (this.effect.name.includes(\"Umiarkowany\")) \n   difficulty = \"easy\"\nelse if (this.effect.name.includes(\"Poważny\"))\n    difficulty = \"average\"\nelse\n    difficulty = \"veasy\"\n\nlet test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {context : {failure : this.actor.name + \" Śmierć z powodu Uwiądu\"}, fields: {difficulty}, appendTitle : \" - Uwiąd\"})\nawait test.roll();\nif (test.failed) {\n    this.actor.addCondition(\"dead\");\n}\n                            ",
+                            "script": "[Script.cTYNaKbepMwqYsZ8]",
                             "id": "PegtWPt0NbSg6wGe",
                             "name": "Uwiąd"
                         }
@@ -322,7 +322,7 @@
                         {
                             "id": "REBWiDOWB2AJHvXd",
                             "name": "Apatia",
-                            "script": "\n                            let fatigued = this.actor.hasCondition(\"fatigued\")\nif (!fatigued ) {\n     this.actor.addCondition(\"fatigued \");\n     ui.notifications.notify(\"Zmęczenie dodane do \" + this.actor.name + \", które nie może zostać usunięte, dopóki objaw Apatia nie zostanie uleczony.\")\n}"
+                            "script": "[Script.UDPsaymtZf39UsMk]"
                         }
                     ]
                 }

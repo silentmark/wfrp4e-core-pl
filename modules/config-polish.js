@@ -495,6 +495,12 @@ Hooks.on("setup", function () {
 			0,
 		],
 	};
+	
+	WFRP4E.vehicleTypes = {
+		"water" : "Wodny",
+		"land" : "Lądowy",
+		"air" : "Powietrzny"
+	}
 
 	WFRP4E.classTrappings = {
 		Uczeni: "ClassTrappings.Academics",
@@ -1420,6 +1426,10 @@ Hooks.on("setup", function () {
 										script : `
 										let name = this.item?.flags?.wfrp4e?.fearName
 										this.effect.updateSource({"flags.wfrp4e.dialogTitle" : (name ? game.i18n.format("EFFECT.AffectTheSourceOfFearName", {name}) : game.i18n.format("EFFECT.AffectTheSourceOfFear"))})
+										if (name)
+										{
+											this.item.updateSource({name : this.item.name + " (" + name + ")" })
+										}
 										`
 									}
 								]
@@ -1488,6 +1498,10 @@ Hooks.on("setup", function () {
 								script : `
 								let name = this.item?.flags?.wfrp4e?.fearName
 								this.effect.updateSource({"flags.wfrp4e.dialogTitle" : (name ? game.i18n.format("EFFECT.AffectTheSourceOfFearName", {name}) : game.i18n.format("EFFECT.AffectTheSourceOfFear"))})
+								if (name)
+								{
+									this.item.updateSource({name : this.item.name + " (" + name + ")" })
+								}
 								`
 							}
 						]
@@ -1773,6 +1787,32 @@ Hooks.on("setup", function () {
 								}
 								this.actor.modifyWounds(-damage)
 								ui.notifications.notify(game.i18n.format("TookDamage", { damage: damage }))
+								`
+							}
+						]
+					}
+				}
+			},
+			"blackpowder":  {
+				name: game.i18n.localize("EFFECT.BlackpowderShock"),
+				icon: "",
+				statuses : ["blackpowder"],
+				flags: {
+					wfrp4e : {
+						blackpowder: true,
+						applicationData : {},
+						scriptData : [
+							{
+								label : "@effect.name",
+								trigger : "immediate",
+								script : `
+									test = await this.actor.setupSkill("Opanowanie", {appendTitle : " - " + this.effect.name, skipTargets: true, fields : {difficulty : "average"}});
+									await test.roll();
+									if (test.failed)
+									{
+										this.actor.addCondition("broken");
+									}
+									return false;
 								`
 							}
 						]
