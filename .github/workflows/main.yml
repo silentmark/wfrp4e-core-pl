@@ -66,10 +66,17 @@ jobs:
           path: './module.json'
           prop_path: 'compatibility.verified'
 
+      - name: Get maximum
+        id: maximum
+        uses: notiz-dev/github-action-json-property@release
+        with:
+          path: './module.json'
+          prop_path: 'compatibility.maximum'
+
       - name: Foundry Release API
         uses: fjogeleit/http-request-action@v1
         with:
           url: 'https://api.foundryvtt.com/_api/packages/release_version'
           method: 'POST'
           customHeaders: '{"Content-Type": "application/json", "Authorization" : "${{ secrets.FOUNDRY_KEY }}"}'
-          data: '{"dry_run": false, "id": "${{steps.moduleID.outputs.prop}}", "release": {"version":  "${{steps.get_version.outputs.version-without-v}}", "manifest": "https://github.com/${{github.repository}}/releases/download/${{steps.get_version.outputs.version}}/module.json", "compatibility" : {"minimum": "${{steps.minimum.outputs.prop}}", "verified": "${{steps.verified.outputs.prop}}"}}}'
+          data: '{"dry_run": false, "id": "${{steps.moduleID.outputs.prop}}", "release": {"version":  "${{steps.get_version.outputs.version-without-v}}", "manifest": "https://github.com/${{github.repository}}/releases/download/${{steps.get_version.outputs.version}}/module.json", "compatibility" : {"minimum": "${{steps.minimum.outputs.prop}}", "verified": "${{steps.verified.outputs.prop}}", "maximum": "${{steps.maximum.outputs.prop}}"}}}'
