@@ -64,13 +64,13 @@
                     "scriptData": [
                         {
                             "id": "SooTD4HVi4QwmIiB",
-                            "name": "Zmysł Bitewny",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.h0DfPwUUOBjyAHMZ]"
                         },
                         {
                             "id": "SooTD4HVi4QwmIiB",
-                            "name": "Zmysł Bitewny",
+                            "name": "Usuń Stan Zaskoczenie",
                             "script": "[Script.OeCgX3hIsfLfmGvC]"
                         }
                     ],
@@ -90,7 +90,7 @@
                     "scriptData": [
                         {
                             "id": "GsHlbMT7Z8d6dMqP",
-                            "name": "Finta",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.RI8crJxeD8JLDwMh]"
                         }
@@ -111,13 +111,13 @@
                     "scriptData": [
                         {
                             "id": "nxZ6leAs6bz1KlXX",
-                            "name": "Doświadczony Wędrowiec",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.9EVj4bmZJex45Mt7]"
                         },
                         {
                             "id": "nxZ6leAs6bz1KlXX",
-                            "name": "Doświadczony Wędrowiec",
+                            "name": "Wybierz Rodzaj Terenu",
                             "script": "[Script.190PHSHKGaJ74wsR]"
                         }
                     ],
@@ -137,7 +137,7 @@
                     "scriptData": [
                         {
                             "id": "vyWhjYW22mrNPfTj",
-                            "name": "Błękitna Krew",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.sAVpm7hFRHpbCLXm]"
                         }
@@ -164,7 +164,7 @@
                         },
                         {
                             "id": "mqSUg3ORIh2YCotB",
-                            "name": "Zmysł Magii",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.6qUKKep5vhFYmo1J]",
                             "hideScript": "[Script.22bW97lkvCqisfHX]"
@@ -185,7 +185,7 @@
                     "scriptData": [
                         {
                             "id": "JQwlJXLKeUn8BtNO",
-                            "name": "Rybak",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.zFYCaGR0wbFWjl4T]"
                         }
@@ -206,7 +206,7 @@
                     "scriptData": [
                         {
                             "id": "a9AbHM6HPQlQvkqg",
-                            "name": "Talent Artystyczny",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.KUx0deSF3xNzMucL]",
                             "hideScript": "[Script.ziG9H5Kdb7xC3dFE]"
@@ -234,7 +234,7 @@
                         },
                         {
                             "id": "NznDJLYiqbwPzhZt",
-                            "name": "Cios Poniżej Pasa",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.7e8FgQUF2oANANmx]",
                             "hideScript": "[Script.dwSgcFxKN3S0hLJL]"
@@ -255,7 +255,7 @@
                     "scriptData": [
                         {
                             "id": "2hDs2VmDV11i7fvo",
-                            "name": "Łapówkarz",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.B6ZbY3bxTPg6nCng]",
                             "hideScript": "[Script.KSjsDlsx3DD6cT16]"
@@ -268,8 +268,8 @@
         },
         "Arcane Magic": {
             "id": "3O9clK7LGyuLTHPW",
-            "name": "Magia Tajemna (Dowolna Tradycja)",
-            "description": "<p>Studiowałeś jedną z ośmiu tradycji magii: Cienia, Metalu, Niebios, Ognia, Śmierci, Światła, Zwierząt lub Życia albo praktykujesz którąś z mniej znanych: Guślarstwa czy Nekromancji. Możesz zapamiętywać czary ze swojej wybranej tradycji, płacąc za nie podany niżej koszt w Punktach Doświadczenia:</p>\n<div>\n <table title=\"\" border=\"1\">\n <tbody><tr>\n                <td>\n                    <p>Liczba już znanych zaklęć</p>\n                </td>\n                <td>\n                    <p>Koszt nowego czaru w PD</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>do Bonusu z Inteligencji × 1 </p>\n                </td>\n                <td>\n                    <p>100 PD</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>do Bonusu z Inteligencji × 2</p>\n                </td>\n                <td>\n                    <p>200 PD</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>do Bonusu z Inteligencji × 3</p>\n                </td>\n                <td>\n                    <p>300 PD</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>do Bonusu z Inteligencji × 4</p>\n                </td>\n                <td>\n                    <p>400 PD</p>\n                </td>\n</tr></tbody>\n    </table>\n</div>\n<p> …i tak dalej.</p>\n<p>Jeśli twój Bonus z Inteligencji równy jest 4, to pierwsze zaklęcie oraz następne cztery będą cię kosztowały 100 PD, kolejne 4 już 200 PD i tak dalej. Obszerniejsze zasady dotyczące nauki nowych zaklęć znajdują się w @UUID[Compendium.wfrp4e-core.journals.YBVrpUHEjohB1H4f]{Rozdziale 8: Magia}. W normalnych warunkach nie możesz nabyć więcej niż jednego Talentu Magia Tajemna (Dowolna Tradycja). Co więcej, jeśli posiadasz Talent Magia Tajemna (Dowolna Tradycja), nie możesz wykupić Talentów @UUID[Compendium.wfrp4e-core.items.QyjWtSdnVMT04l5Y]{Błogosławieństwo} i @UUID[Compendium.wfrp4e-core.items.voV0C2ar1bKpcpnH]{Inwokacja}. Za 100 PD możesz wyzbyć się tego Talentu, natychmiast tracąc dostęp do wszystkich zapewnianych przez niego czarów.</p>",
+            "name": "Magia Tajemna (Dowolna)",
+            "description": "<p>Studiowałeś jedną z ośmiu tradycji magii: Cienia, Metalu, Niebios, Ognia, Śmierci, Światła, Zwierząt lub Życia albo praktykujesz którąś z mniej znanych: Guślarstwa czy Nekromancji. Możesz zapamiętywać czary ze swojej wybranej tradycji, płacąc za nie podany niżej koszt w Punktach Doświadczenia:</p>\n<div>\n <table title=\"\" border=\"1\">\n <tbody><tr>\n                <td>\n                    <p>Liczba już znanych zaklęć</p>\n                </td>\n                <td>\n                    <p>Koszt nowego czaru w PD</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>do Bonusu z Inteligencji × 1 </p>\n                </td>\n                <td>\n                    <p>100 PD</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>do Bonusu z Inteligencji × 2</p>\n                </td>\n                <td>\n                    <p>200 PD</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>do Bonusu z Inteligencji × 3</p>\n                </td>\n                <td>\n                    <p>300 PD</p>\n                </td>\n</tr><tr>\n                <td>\n                    <p>do Bonusu z Inteligencji × 4</p>\n                </td>\n                <td>\n                    <p>400 PD</p>\n                </td>\n</tr></tbody>\n    </table>\n</div>\n<p> …i tak dalej.</p>\n<p>Jeśli twój Bonus z Inteligencji równy jest 4, to pierwsze zaklęcie oraz następne cztery będą cię kosztowały 100 PD, kolejne 4 już 200 PD i tak dalej. Obszerniejsze zasady dotyczące nauki nowych zaklęć znajdują się w @UUID[Compendium.wfrp4e-core.journals.YBVrpUHEjohB1H4f]{Rozdziale 8: Magia}. W normalnych warunkach nie możesz nabyć więcej niż jednego Talentu Magia Tajemna (Dowolna). Co więcej, jeśli posiadasz Talent Magia Tajemna (Dowolna), nie możesz wykupić Talentów @UUID[Compendium.wfrp4e-core.items.QyjWtSdnVMT04l5Y]{Błogosławieństwo} i @UUID[Compendium.wfrp4e-core.items.voV0C2ar1bKpcpnH]{Inwokacja}. Za 100 PD możesz wyzbyć się tego Talentu, natychmiast tracąc dostęp do wszystkich zapewnianych przez niego czarów.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.3O9clK7LGyuLTHPW"
         },
         "Argumentative": {
@@ -289,7 +289,7 @@
                         },
                         {
                             "id": "oAsvKkgS9pLtavj7",
-                            "name": "Przekonujący",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.yIGItnshXI4W46cp]",
                             "submissionScript": "[Script.Xk9XPklxxTvFlwpI]"
@@ -310,7 +310,7 @@
                     "scriptData": [
                         {
                             "id": "ZUzVS6EvwJvPOM5C",
-                            "name": "Atak Wyprzedzający",
+                            "name": "Testy inicjatywy dotyczące @item.name",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.tdICiJ26rJrDbxT6]"
                         }
@@ -350,7 +350,7 @@
                     "scriptData": [
                         {
                             "id": "MUxjGLed53aZ19YA",
-                            "name": "Świetny Pływak",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.QQ2gHThZHdO4yLLX]",
                             "hideScript": "[Script.sUHuj00IpoZ7Gd03]"
@@ -372,14 +372,14 @@
                     "scriptData": [
                         {
                             "id": "KBX2JNU9b26vRDQs",
-                            "name": "Znawca",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.xvH4PKJasHcehOZz]",
                             "hideScript": "[Script.DxQnamsb2AuW0p2e]"
                         },
                         {
                             "id": "KBX2JNU9b26vRDQs",
-                            "name": "Znawca",
+                            "name": "Wybierz Rodzaj Wiedzy",
                             "script": "[Script.HMC6hPND9DWLFfZE]"
                         }
                     ],
@@ -399,7 +399,7 @@
                     "scriptData": [
                         {
                             "id": "smJBYx6M6qhafV0p",
-                            "name": "Błyskawiczny Strzał",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.Vkuu70BZV4DPYO2Q]"
                         }
@@ -420,7 +420,7 @@
                     "scriptData": [
                         {
                             "id": "1gBYyU70P7tKFr2A",
-                            "name": "Niegodny Uwagi",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.l8qFKSnMpy4P7XQR]"
                         }
@@ -453,7 +453,7 @@
                     "scriptData": [
                         {
                             "id": "v7unTQ71hn8rCeHY",
-                            "name": "Numizmatyka",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.c3KA1knL2NYNUEww]"
                         }
@@ -480,7 +480,7 @@
                         },
                         {
                             "id": "pq0wuLa5jebvLTGR",
-                            "name": "Atrakcyjny",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.yIGItnshXI4W46cp]",
                             "submissionScript": "[Script.3jm0NoYpgB6ZuUSl]"
@@ -501,7 +501,7 @@
                     "scriptData": [
                         {
                             "id": "Wx9vsiKDpPUkSFaW",
-                            "name": "Złota Rączka",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.jpcU8FFWSlQ3gD0L]"
                         }
@@ -522,7 +522,7 @@
                     "scriptData": [
                         {
                             "id": "Pu1LrEiiVqlsKVmp",
-                            "name": "Wykrywanie Magii",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.kmsGLWGxCY8Z8jVG]"
                         }
@@ -543,7 +543,7 @@
                     "scriptData": [
                         {
                             "id": "FBhrlyI2JT0Hxe2s",
-                            "name": "Poliglota",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.1A87vGLh2PXH0rG0]"
                         }
@@ -585,7 +585,7 @@
                     "scriptData": [
                         {
                             "id": "tHz0XFfncXs5y5fO",
-                            "name": "Gadanina",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.yIGItnshXI4W46cp]"
                         }
@@ -639,7 +639,7 @@
                     "scriptData": [
                         {
                             "id": "2j8dJKdn41Kt1pjP",
-                            "name": "Niewzruszony",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.XuFxKPYheYF4WMmQ]"
                         }
@@ -660,13 +660,13 @@
                     "scriptData": [
                         {
                             "id": "kcVhLDQic6XJTa97",
-                            "name": "Nieustraszony",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.XuFxKPYheYF4WMmQ]"
                         },
                         {
                             "id": "kcVhLDQic6XJTa97",
-                            "name": "Nieustraszony",
+                            "name": "Aktywuj Nieustraszonego",
                             "script": "[Script.rr4htuVq45onXdRG]"
                         }
                     ],
@@ -686,7 +686,7 @@
                     "scriptData": [
                         {
                             "id": "CuUQ9xrpNtQW2bu0",
-                            "name": "Urodzony w Siodle",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.FXuyiJoXdAh6WhRK]",
                             "hideScript": "[Script.w4JKuTECFmu3YmTR]"
@@ -708,7 +708,7 @@
                     "scriptData": [
                         {
                             "id": "iGp3cK6NmZoS70Nz",
-                            "name": "Posłuch u Zwierząt",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.TU2xjbJ0zFtytF3J]",
                             "hideScript": "[Script.UC6G3pFQwzUhrw6F]"
@@ -730,13 +730,13 @@
                     "scriptData": [
                         {
                             "id": "92qZkpgEbYj6Ts5w",
-                            "name": "Wyczulony Zmysł",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.h0DfPwUUOBjyAHMZ]"
                         },
                         {
                             "id": "92qZkpgEbYj6Ts5w",
-                            "name": "Wyczulony Zmysł",
+                            "name": "Wybór",
                             "script": "[Script.yCgH3N9AurIiAv0i]"
                         }
                     ],
@@ -756,7 +756,7 @@
                     "scriptData": [
                         {
                             "id": "1YrrAMWA7O0Czg7U",
-                            "name": "Ruchliwe dłonie",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.cV9JiAgUPOeUHKnS]",
                             "activationScript": "[Script.qijgjcOBCDmhglRX]",
                             "hideScript": "[Script.gqZLfIr6svrtdwdC]"
@@ -778,7 +778,7 @@
                     "scriptData": [
                         {
                             "id": "VMPr8wo9HkktV04c",
-                            "name": "Traper",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.zsiV6XEHlCNGLLPl]",
                             "hideScript": "[Script.Tq45Nd8J3eTvHT41]"
@@ -800,7 +800,7 @@
                     "scriptData": [
                         {
                             "id": "poKTTuuT7Y1OJl79",
-                            "name": "Nos do Kłopotów",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.rLMaVNEGdZ6xj5Au]"
                         }
@@ -821,7 +821,7 @@
                     "scriptData": [
                         {
                             "id": "0i7pSJH6v8y1nukI",
-                            "name": "Wyczucie Kierunku",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.E4CHDe1xfmcV3oGv]",
                             "hideScript": "[Script.bwx9wuEOJPF7btD1]"
@@ -849,7 +849,7 @@
                         },
                         {
                             "id": "SjJdt6yUkEkPqDgF",
-                            "name": "Szybkobiegacz",
+                            "name": "@item.system.tests.value",
                             "hideScript": "[Script.9EVj4bmZJex45Mt7]",
                             "script": "[Script.956dUb5sd6OtbWZR]"
                         }
@@ -875,7 +875,7 @@
                         },
                         {
                             "id": "S487mwxmDJh9rULA",
-                            "name": "Pomocny",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.6Fe8M5MdklKS2olx]",
                             "submissionScript": "[Script.5MxRDXzUBPfp2KKD]"
@@ -896,7 +896,7 @@
                     "scriptData": [
                         {
                             "id": "Cos43TEeV9wKTCua",
-                            "name": "Intrygant",
+                            "name": "Testy inteligencji dotyczące @item.name",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.JjDzMnUxaWQePIYh]"
                         }
@@ -928,7 +928,7 @@
                     "scriptData": [
                         {
                             "id": "aXj98pQZec46FwXP",
-                            "name": "Sprężynka",
+                            "name": "Usuń Stan Powalenie",
                             "script": "[Script.x8XK2fzzXCnSwfjt]"
                         }
                     ],
@@ -948,7 +948,7 @@
                     "scriptData": [
                         {
                             "id": "Zb5AvMODC8iUopsR",
-                            "name": "Wściekły Atak",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.SPOkFWZWziZk5b7A]"
                         }
@@ -969,7 +969,7 @@
                     "scriptData": [
                         {
                             "id": "zv7jsA5RJdgin7BZ",
-                            "name": "Oko Łowcy",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.PoNnT5EqvLj2r5yf]"
                         }
@@ -996,7 +996,7 @@
                         },
                         {
                             "id": "PixW61vvKOev7oHu",
-                            "name": "Precyzyjne Inkantowanie",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.hR1qD2kpFHF8JT8h]",
                             "hideScript": "[Script.VqTrKPtxv9hpn0Hr]"
@@ -1024,7 +1024,7 @@
                         },
                         {
                             "id": "PNMqJy5zpPTXOd37",
-                            "name": "Szuler Kościany",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.TdjlJro0RRVSh8g8]",
                             "submissionScript": "[Script.Qk7t2l5ep9RDVpgE]"
@@ -1045,7 +1045,7 @@
                     "scriptData": [
                         {
                             "id": "VaILgn8RaKpqAueV",
-                            "name": "Silne Nogi",
+                            "name": "Testy Atletyki związane ze skakaniem",
                             "script": "[Script.wAETU6aTRr9d4oCU]",
                             "hideScript": "[Script.9EVj4bmZJex45Mt7]"
                         }
@@ -1070,7 +1070,7 @@
                         },
                         {
                             "id": "AVhPxHHlKUolT589",
-                            "name": "Snajper",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.AHZ8f7dfN8jNsYk6]",
                             "hideScript": "[Script.Vkuu70BZV4DPYO2Q]"
@@ -1091,7 +1091,7 @@
                     "scriptData": [
                         {
                             "id": "lHqEF0gevCPcI1ec",
-                            "name": "Rozbrojenie",
+                            "name": "Testy walki wręcz dotyczące @item.name",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.7n3SEAGRA5ESK8gV]",
                             "hideScript": "[Script.SPOkFWZWziZk5b7A]"
@@ -1126,11 +1126,11 @@
                     "scriptData": [
                         {
                             "id": "3vgrN50Ul3S5T2j6",
-                            "name": "Nienawiść",
+                            "name": "Wybierz Grupę Społeczną",
                             "script": "[Script.cUnbADgOQ4fMKgrH]"
                         },
                         {
-                            "name": "Nienawiść",
+                            "name": "@item.system.tests.value",
                             "id": "3vgrN50Ul3S5T2j6",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.1LDm3OB32skZe6Xv]"
@@ -1176,7 +1176,7 @@
                     "scriptData": [
                         {
                             "id": "455aQKoedQvt3hs7",
-                            "name": "Z Bata",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.DTiHS6RfwhF4THbf]"
                         }
@@ -1197,7 +1197,7 @@
                     "scriptData": [
                         {
                             "id": "FTK2KfuDY9DV6UTf",
-                            "name": "Naciągacz",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.yIGItnshXI4W46cp]"
                         }
@@ -1210,7 +1210,7 @@
         "eowbsW6oHGSNJmxV": {
             "id": "eowbsW6oHGSNJmxV",
             "name": "Odporność na Magię",
-            "description": "<p>Jesteś uodporniony na zaklęcia. Poziom Sukcesów czarów rzucanych na ciebie jest obniżony o 2 za każde wykupienie tego Talentu. Poziom Sukcesów jest obniżany tylko od najwyższej Odporności na Magię w obszarze oddziaływania czaru. Co więcej, nie możesz wykupić Talentów: <em>Magia Tajemna</em>, <em>Błogosławieństwo</em>, <em>Inwokacja</em>, <em>Magia Prosta</em> i <em>Czarownica</em>.</p>",
+            "description": "<p>Jesteś uodporniony na zaklęcia. Poziom Sukcesów czarów rzucanych na ciebie jest obniżony o 2 za każde wykupienie tego Talentu. Poziom Sukcesów jest obniżany tylko od najwyższej Odporności na Magię w obszarze oddziaływania czaru. Co więcej, nie możesz wykupić Talentów: <em>Magia Tajemna (Dowolna)</em>, <em>Błogosławieństwo</em>, <em>Inwokacja</em>, <em>Magia Prosta</em> i <em>Czarownica</em>.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.eowbsW6oHGSNJmxV",
             "effects": {
                 "EsoBJtVEVYxCXdRb": {
@@ -1240,7 +1240,7 @@
                         {
                             "activationScript": "[Script.YEBw2CzHYxsTpTy5]",
                             "id": "psPW7gUr1MuvVj3S",
-                            "name": "Żyłka Handlowa",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.kWynO1lQzjiSs8RK]"
                         }
@@ -1267,14 +1267,14 @@
                     "scriptData": [
                         {
                             "id": "hQX3nuG3TIAkSP8Q",
-                            "name": "Pierwsza Pomoc",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.YhhiWEQbox3WZA3Q]",
                             "hideScript": "[Script.I7ieW0hNYvvX0KFg]"
                         },
                         {
                             "id": "hQX3nuG3TIAkSP8Q",
-                            "name": "Pierwsza Pomoc",
+                            "name": "Użyj @item.name",
                             "hideScript": "[Script.I7ieW0hNYvvX0KFg]",
                             "submissionScript": "[Script.2yctEihGmdCfTTVx]"
                         },
@@ -1306,13 +1306,13 @@
                         },
                         {
                             "id": "J5IUFXDMXgCJSPXW",
-                            "name": "Mocne Plecy",
+                            "name": "Przeciwstawne Testy Siły",
                             "script": "[Script.wAETU6aTRr9d4oCU]",
                             "hideScript": "[Script.bWr8leucbWslBCYG]"
                         },
                         {
                             "id": "J5IUFXDMXgCJSPXW",
-                            "name": "Mocne Plecy",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.6tjn0RH4VyOPFneS]",
                             "hideScript": "[Script.IsLAvY9ikR1cOJWw]"
@@ -1334,14 +1334,14 @@
                     "scriptData": [
                         {
                             "id": "HRSjpI6pAoSuf9tl",
-                            "name": "Woltyżerka",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.CiFeduksZJ6PRulx]",
                             "hideScript": "[Script.GbPEy22VuCNzlNv2]"
                         },
                         {
                             "id": "HRSjpI6pAoSuf9tl",
-                            "name": "Woltyżerka",
+                            "name": "Brak kary za testy uników na koniu",
                             "script": "[Script.u6CYMSZADrfXd48Q]",
                             "activationScript": "[Script.PBW6IZtwawNHxB6y]",
                             "hideScript": "[Script.N7nGncsPrTz2ZbDA]"
@@ -1368,7 +1368,7 @@
                     "scriptData": [
                         {
                             "id": "Dvzn4ORsaiYVTAL5",
-                            "name": "Bitewna Furia",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.EKkdyp51Wf4csw2B]",
                             "hideScript": "[Script.f7WZvYle9iqefRsh]"
@@ -1390,7 +1390,7 @@
                     "scriptData": [
                         {
                             "id": "JJy9WQaBw4LgaURv",
-                            "name": "Rozpoznanie Artefaktu",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.kmsGLWGxCY8Z8jVG]"
                         }
@@ -1411,7 +1411,7 @@
                     "scriptData": [
                         {
                             "id": "pM4f9xijg03tfexj",
-                            "name": "Na Cztery Łapy",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.9EVj4bmZJex45Mt7]",
                             "submissionScript": "[Script.O7lXFZLrLdFaShGR]"
@@ -1438,7 +1438,7 @@
                     "scriptData": [
                         {
                             "id": "vjFXbrHfB9svhE8r",
-                            "name": "Aptekarz",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.btPrQkGRKUkhNe3N]",
                             "hideScript": "[Script.93K85NnVwjVNXlZq]"
@@ -1460,7 +1460,7 @@
                     "scriptData": [
                         {
                             "id": "zDFaXbEai6DK9e89",
-                            "name": "Mistrz Rzemiosła",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.93K85NnVwjVNXlZq]"
                         }
@@ -1506,19 +1506,19 @@
                     "scriptData": [
                         {
                             "id": "3Xwh9xniDQ17C9kx",
-                            "name": "Wytwórca",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.R95pDZMHnD9iHAl8]",
                             "hideScript": "[Script.93K85NnVwjVNXlZq]"
                         },
                         {
                             "id": "3Xwh9xniDQ17C9kx",
-                            "name": "Wytwórca",
+                            "name": "Wybierz Specjalizację Rzemiosła",
                             "script": "[Script.sgS9rblPkQB36C8S]"
                         },
                         {
                             "id": "3Xwh9xniDQ17C9kx",
-                            "name": "Wytwórca",
+                            "name": "Dodaj Specjalizację Rzemiosła",
                             "script": "[Script.2W9uMTT6iJhfQ044]"
                         }
                     ],
@@ -1538,14 +1538,14 @@
                     "scriptData": [
                         {
                             "id": "7TSbPbJ3c9iKutMc",
-                            "name": "Biczownik",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.xqWxV9w5ezBQdJkZ]",
                             "hideScript": "[Script.FYUPfYyTYZkxRLFT]"
                         },
                         {
                             "id": "7TSbPbJ3c9iKutMc",
-                            "name": "Biczownik",
+                            "name": "Dodaj Szał Bojowy",
                             "script": "[Script.dkiNmwFXztIVbuxg]"
                         }
                     ],
@@ -1577,7 +1577,7 @@
                     "scriptData": [
                         {
                             "id": "kioJEmEjRUXo4xlq",
-                            "name": "Defraudant",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.7F3miqRA0ceMUBIu]"
                         }
@@ -1589,7 +1589,7 @@
         },
         "Chaos Magic": {
             "id": "hiU7vhBOVpVI8c7C",
-            "name": "Magia Chaosu (Tradycja)",
+            "name": "Magia Chaosu (Dowolna)",
             "description": "<p>Przez przypadek (lub wręcz przeciwnie) część twojej duszy przypadła jednemu z Mrocznych Bogów i jesteś w stanie korzystać z wszetecznej magii Chaosu. Twój złowrogi patron zapewnia ci dostęp do jednego czaru z wybranej tradycji (najczęściej Nurgla, Slaanesha lub Tzeentcha), a wraz z nim otrzymujesz Punkt Zepsucia, gdy bluźniercza formuła wypala się w twoim umyśle, byś nigdy jej nie zapomniał. Za każdym razem, gdy wykupujesz ten Talent, musisz zapłacić za niego 100 PD, a więc jest inaczej niż w przypadku innych tradycji. W zamian za to otrzymujesz czar z wybranej tradycji i 1 Punkt Zepsucia. W normalnych warunkach możesz znać tylko jedną tradycję magii Chaosu.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.hiU7vhBOVpVI8c7C"
         },
@@ -1604,7 +1604,7 @@
                     "scriptData": [
                         {
                             "id": "EhRvG4wX2zc1YT59",
-                            "name": "Zejście z Linii",
+                            "name": "Testy Uników, aby aktywować @item.name",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.VAPsww9x3HAw1sKP]"
                         }
@@ -1631,7 +1631,7 @@
                         },
                         {
                             "id": "rdiV37QZ38bf5z2P",
-                            "name": "Hulaka",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.454x3Q95pLvZm0Kx]",
                             "hideScript": "[Script.iT0h3VZLEBQnn5Bx]"
@@ -1656,7 +1656,7 @@
                         },
                         {
                             "id": "VBaGAZpE1JheOkhY",
-                            "name": "Szał Bojowy",
+                            "name": "Deaktywacja",
                             "script": "[Script.OeKeQAAcJhdI4Qky]"
                         }
                     ],
@@ -1686,7 +1686,7 @@
         },
         "Ij9N3G8jzxb4lrwy": {
             "id": "Ij9N3G8jzxb4lrwy",
-            "name": "Urodzony żeglarz",
+            "name": "Urodzony Żeglarz",
             "description": "<p>Przywykłeś do kołysania fal morskich i mało prawdopodobne, byś zachorował na chorobę morską, nawet podczas najsilniejszych sztormów. W spokojnych warunkach nie musisz przeprowadzać Testu, by sprawdzić, czy na morzu chwycą cię mdłości. Gdy rozpęta się sztorm lub gdy chorobę morską powoduje magia, nie dotyczą cię modyfikatory negatywnie wpływające na opieranie się tej przypadłości.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.Ij9N3G8jzxb4lrwy",
             "tests": "Wszystkie testy wykonywane, by oprzeć się chorobie morskiej",
@@ -1695,13 +1695,13 @@
                     "scriptData": [
                         {
                             "id": "MBwMBTSqSVjR9Thc",
-                            "name": "Urodzony Żeglarz",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.FYUPfYyTYZkxRLFT]"
                         }
                     ],
                     "id": "MBwMBTSqSVjR9Thc",
-                    "name": "Urodzony żeglarz"
+                    "name": "Urodzony Żeglarz"
                 }
             }
         },
@@ -1716,7 +1716,7 @@
                     "scriptData": [
                         {
                             "id": "z71kZTRJpJ0eDHYD",
-                            "name": "Waleczne Serce",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.XuFxKPYheYF4WMmQ]"
                         }
@@ -1743,7 +1743,7 @@
                         },
                         {
                             "id": "W5gSfWrnLHp2SYLA",
-                            "name": "Tarczownik",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.mJ9eMPub4epJSf00]",
                             "hideScript": "[Script.8LmUVQxOwTLSeabg]"
@@ -1764,7 +1764,7 @@
                     "scriptData": [
                         {
                             "id": "FdTH1qADIVHbmuMn",
-                            "name": "Musztra",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.SPOkFWZWziZk5b7A]"
                         }
@@ -1818,7 +1818,7 @@
                     "scriptData": [
                         {
                             "id": "7JprVi1rmlNVVtqt",
-                            "name": "Obieżyświat",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.8N3Uqjq1ZxPxo4pk]"
                         }
@@ -1839,7 +1839,7 @@
                     "scriptData": [
                         {
                             "id": "5lpUcS6QV5smpHbM",
-                            "name": "Chodu!",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.9EVj4bmZJex45Mt7]"
                         }
@@ -1881,7 +1881,7 @@
                     "scriptData": [
                         {
                             "id": "kdYtcyWzFZHkwNcv",
-                            "name": "Ogłuszenie",
+                            "name": "Oszołomienie (zignoruj karę za mierzenie w głowę)",
                             "script": "[Script.0vaYwAlMWTmOBl8k]",
                             "activationScript": "[Script.MgTqCMRjxhezT73T]",
                             "hideScript": "[Script.ZhuitY1KOU1Xe7cP]"
@@ -1910,7 +1910,7 @@
                     "scriptData": [
                         {
                             "id": "FnzmigBiIVz4Vikd",
-                            "name": "Wytrwały",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.PdClojv7yNgQpOUc]"
                         }
@@ -1931,7 +1931,7 @@
                     "scriptData": [
                         {
                             "id": "1mQpqNRqYsBGNjW0",
-                            "name": "Szybkie Czytanie",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.4FGKZk2f0xrmIDnp]"
                         }
@@ -1952,7 +1952,7 @@
                     "scriptData": [
                         {
                             "id": "NYcE4hw4JkyxG2uS",
-                            "name": "Zbicie Broni",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.f7WZvYle9iqefRsh]",
                             "submissionScript": "[Script.t48hkacYdOpzWvK9]"
@@ -1979,7 +1979,7 @@
                     "scriptData": [
                         {
                             "id": "MMdgtgXOkCf2dhot",
-                            "name": "Wilk Morski",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.RNr9CwyvLhlnwD2h]"
                         }
@@ -2012,7 +2012,7 @@
                     "scriptData": [
                         {
                             "id": "6iuKzkJXUCWeyWYu",
-                            "name": "Naśladowca",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.pHyXdPnWwoFrUA5n]"
                         }
@@ -2033,7 +2033,7 @@
                     "scriptData": [
                         {
                             "id": "1phqTpab6aMhZSUf",
-                            "name": "Gładkie Słówka",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.yIGItnshXI4W46cp]"
                         }
@@ -2060,7 +2060,7 @@
                     "scriptData": [
                         {
                             "id": "SdpmWRTKq0A9OeOx",
-                            "name": "Żelazna Wola",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.XuFxKPYheYF4WMmQ]"
                         }
@@ -2081,7 +2081,7 @@
                     "scriptData": [
                         {
                             "id": "jVvPXTo9MhUJ7jk7",
-                            "name": "Wyborny Wspinacz",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.HrYchgkdZBiu1yPF]",
                             "hideScript": "[Script.HiMBS6GeOwEydWYN]"
@@ -2104,7 +2104,7 @@
                         {
                             "hideScript": "[Script.kmsGLWGxCY8Z8jVG]",
                             "id": "fo0JnoTpn6UTaks2",
-                            "name": "Szósty Zmysł",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]"
                         }
                     ],
@@ -2124,7 +2124,7 @@
                     "scriptData": [
                         {
                             "id": "BsGDfeyWJdcXc1vl",
-                            "name": "Rozproszenie Uwagi",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.9EVj4bmZJex45Mt7]"
                         }
@@ -2144,7 +2144,7 @@
                     "scriptData": [
                         {
                             "id": "NtVziPNyV6yxXXVX",
-                            "name": "Straszny",
+                            "name": "Strach",
                             "script": "[Script.rdaMhMyHrJjQ6vVC]"
                         }
                     ],
@@ -2170,7 +2170,7 @@
                     "scriptData": [
                         {
                             "id": "BE8twqosYhMA2VGY",
-                            "name": "Święte Wizje",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.kmsGLWGxCY8Z8jVG]"
                         }
@@ -2191,7 +2191,7 @@
                     "scriptData": [
                         {
                             "id": "NuWH0kTIUeX4VGDj",
-                            "name": "Chirurgia",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.I7ieW0hNYvvX0KFg]"
                         }
@@ -2231,7 +2231,7 @@
                     "scriptData": [
                         {
                             "id": "JbnPNkvW4fBmEJ8U",
-                            "name": "Percepcja Magiczna",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.8hIyWDyfbgGAig65]"
                         }
@@ -2252,7 +2252,7 @@
                     "scriptData": [
                         {
                             "id": "3gQwJToDUcHrm7eP",
-                            "name": "Porywająca Gorliwość",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.yIGItnshXI4W46cp]"
                         }
@@ -2303,7 +2303,7 @@
                         },
                         {
                             "id": "6dxDagVXzDKL4vgR",
-                            "name": "Berserkerska Szarża",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.u5dNZ0s3lWfL8KFb]",
                             "hideScript": "[Script.YsS2RZsl2ZsqjhWV]"
@@ -2324,7 +2324,7 @@
                     "scriptData": [
                         {
                             "id": "UfH6jjlJcNdIZpdv",
-                            "name": "Czytanie z Ruchu Warg",
+                            "name": "Testy Percepcji dotyczące @item.name",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.h0DfPwUUOBjyAHMZ]"
                         }
@@ -2364,7 +2364,7 @@
                     "scriptData": [
                         {
                             "id": "WHZP0LOZtDlJFP3A",
-                            "name": "Sekretna Tożsamość",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.pHyXdPnWwoFrUA5n]"
                         }
@@ -2385,7 +2385,7 @@
                     "scriptData": [
                         {
                             "id": "jDgjzhXdlemhJqxO",
-                            "name": "Pilot Rzeczny",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.8N3Uqjq1ZxPxo4pk]"
                         }
@@ -2406,14 +2406,14 @@
                     "scriptData": [
                         {
                             "id": "rhATebOe8pHsOaQd",
-                            "name": "Słuch Absolutny",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.J0IWUhxada2ONowP]",
                             "hideScript": "[Script.f5Mp3kXwCFdPkW6N]"
                         },
                         {
                             "id": "rhATebOe8pHsOaQd",
-                            "name": "Słuch Absolutny",
+                            "name": "Dodaj Występy (Śpiew)",
                             "script": "[Script.HrOBAXsEX073ReKl]"
                         }
                     ],
@@ -2433,7 +2433,7 @@
                     "scriptData": [
                         {
                             "id": "mWdS1RuCkVWboiAn",
-                            "name": "Włóczykij",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.RrchOMpEdIvceJxl]",
                             "hideScript": "[Script.Lu27iXtJVkrJ8bOx]"
@@ -2456,7 +2456,7 @@
                     "scriptData": [
                         {
                             "id": "GYVwQU6Hgh3GL1Yn",
-                            "name": "Czarownica!",
+                            "name": "Dodaj Język (Magiczny)",
                             "script": "[Script.IzoOmDywGLqLNljN]"
                         }
                     ]
@@ -2480,7 +2480,7 @@
                     "scriptData": [
                         {
                             "id": "VWvozO8rRZfiENym",
-                            "name": "Odwrócenie Szans",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.FXwfqF0jpXlBQ9Y3]",
                             "hideScript": "[Script.SPOkFWZWziZk5b7A]"
@@ -2539,7 +2539,7 @@
                         },
                         {
                             "id": "JGnq108l9XA1xAWM",
-                            "name": "Tragarz",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.wAETU6aTRr9d4oCU]",
                             "hideScript": "[Script.bWr8leucbWslBCYG]"
                         }
@@ -2634,7 +2634,7 @@
                     "scriptData": [
                         {
                             "id": "KQ5uqOZVw51stu6Z",
-                            "name": "Geniusz Arytmetyczny",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.qaVde0sTuMBRi2nl]",
                             "hideScript": "[Script.3plV9WFqs2prfAdp]"
@@ -2668,7 +2668,7 @@
                     "scriptData": [
                         {
                             "id": "e15hFeStjtgtyCQU",
-                            "name": "Wstrzemięźliwy",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.PdClojv7yNgQpOUc]"
                         }
@@ -2689,13 +2689,13 @@
                     "scriptData": [
                         {
                             "id": "W0ORRnLMpYlf6NTK",
-                            "name": "Etykieta",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.dAMtbn3uQwF8KpKU]"
                         },
                         {
                             "id": "W0ORRnLMpYlf6NTK",
-                            "name": "Etykieta",
+                            "name": "Grupa",
                             "script": "[Script.g0SzfsLyW7aD2F19]"
                         }
                     ],
@@ -2715,7 +2715,7 @@
                     "scriptData": [
                         {
                             "id": "nycrbkeiVCmw3lX4",
-                            "name": "Człowiek Guma",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.roKvPHDSpX4IV11C]"
                         }
@@ -2736,7 +2736,7 @@
                     "scriptData": [
                         {
                             "id": "BuPyJZgeJy9B8jkP",
-                            "name": "Wodniak",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.1wKVvxRTHOyV4Qdv]"
                         }
@@ -2758,7 +2758,7 @@
                     "scriptData": [
                         {
                             "id": "Eu8Ajiixpb7rdqVW",
-                            "name": "Skrócenie Dystansu",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.7f6OsttTzE7Hvzfk]",
                             "activationScript": "[Script.pnB9TzSEytkxk3Rb]",
                             "hideScript": "[Script.ZrePyV2spv3v65Tg]"
@@ -2804,7 +2804,7 @@
                     "scriptData": [
                         {
                             "id": "QNm4xjwWCmpVpE9X",
-                            "name": "Żelazna Szczęka",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.PdClojv7yNgQpOUc]"
                         }
@@ -2844,7 +2844,7 @@
                     "scriptData": [
                         {
                             "id": "xIbjdXLXjt690zem",
-                            "name": "Dwie Bronie",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.QqybHxNCzPEzG1Qh]",
                             "hideScript": "[Script.ZdHvGvSJBsIuPphF]"
@@ -2872,7 +2872,7 @@
                     "scriptData": [
                         {
                             "id": "qPu851JhEc2mHJ5z",
-                            "name": "Wódz",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.dSmRhZ6o1bUcOSF9]"
                         }
@@ -2895,12 +2895,12 @@
                     "scriptData": [
                         {
                             "id": "FQv1UAIrdvtf9Tlc",
-                            "name": "Odporny na",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]"
                         },
                         {
                             "id": "FQv1UAIrdvtf9Tlc",
-                            "name": "Odporny na",
+                            "name": "Wybierz Rodzaj Odporności",
                             "script": "[Script.tCIT1a12Gt6k2ohA]"
                         }
                     ]
@@ -2910,7 +2910,7 @@
         "Invoke": {
             "id": "voV0C2ar1bKpcpnH",
             "name": "Inwokacja",
-            "description": "<p>Zostałeś pobłogosławiony przez swego boskiego patrona, dzięki czemu zyskujesz zdolność czynienia jednego z jego Cudów. Możesz wykupywać kolejne cuda za 100 PD pomnożone przez liczbę obecnie znanych cudów. Pełne zasady tego, jak się ich uczysz, znajdują się w @UUID[JournalEntry.NcH9OhleJFfaUdon]{Rozdziale 7: Religie i wierzenia}. W normalnych okolicznościach nie możesz wykupić tego Talentu więcej niż jeden raz. Co więcej, nie możesz też kupić Talentów@UUID[Compendium.wfrp4e-core.items.mdPGZsn2396dEpOf]{Magia Prosta} i @UUID[Compendium.wfrp4e-core.items.3O9clK7LGyuLTHPW]{Magia Tajemna (Dowolna Tradycja)}, jeśli posiadasz Talent Inwokacja. Po wydaniu 100 PD możesz się pozbyć tego Talentu, ale natychmiast utracisz dostęp do wszystkich zapewnianych przez niego cudów. Narażasz się też na gniew swego boga, a MG obmyśli, jak będzie się on przejawiał.</p>",
+            "description": "<p>Zostałeś pobłogosławiony przez swego boskiego patrona, dzięki czemu zyskujesz zdolność czynienia jednego z jego Cudów. Możesz wykupywać kolejne cuda za 100 PD pomnożone przez liczbę obecnie znanych cudów. Pełne zasady tego, jak się ich uczysz, znajdują się w @UUID[JournalEntry.NcH9OhleJFfaUdon]{Rozdziale 7: Religie i wierzenia}. W normalnych okolicznościach nie możesz wykupić tego Talentu więcej niż jeden raz. Co więcej, nie możesz też kupić Talentów@UUID[Compendium.wfrp4e-core.items.mdPGZsn2396dEpOf]{Magia Prosta} i @UUID[Compendium.wfrp4e-core.items.3O9clK7LGyuLTHPW]{Magia Tajemna (Dowolna)}, jeśli posiadasz Talent Inwokacja. Po wydaniu 100 PD możesz się pozbyć tego Talentu, ale natychmiast utracisz dostęp do wszystkich zapewnianych przez niego cudów. Narażasz się też na gniew swego boga, a MG obmyśli, jak będzie się on przejawiał.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.voV0C2ar1bKpcpnH"
         },
         "Enclosed Fighter": {
@@ -2923,7 +2923,7 @@
                 "dTZPyD3LdgzpWoxq": {
                     "scriptData": [
                         {
-                            "name": "Walka w Ciasnocie",
+                            "name": "@item.system.tests.value",
                             "id": "dTZPyD3LdgzpWoxq",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.VAPsww9x3HAw1sKP]"
@@ -2946,7 +2946,7 @@
                     "scriptData": [
                         {
                             "id": "kS7RdyolGOxATaC3",
-                            "name": "Ulicznik",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.dfEgat3jz4EtWszH]",
                             "hideScript": "[Script.l8qFKSnMpy4P7XQR]",
@@ -2968,7 +2968,7 @@
                     "scriptData": [
                         {
                             "id": "C4J0MeUKheJvFzH0",
-                            "name": "Inspirujący",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.dSmRhZ6o1bUcOSF9]"
                         }
@@ -2989,7 +2989,7 @@
                     "scriptData": [
                         {
                             "id": "pc8xJSTL4hH9WsZN",
-                            "name": "Pilot",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.0FNOq4J1AdPd2A0q]",
                             "submissionScript": "[Script.hlHKeFWrOA8CsLr9]"
@@ -3035,7 +3035,7 @@
                     "scriptData": [
                         {
                             "id": "sg4rAhWu8HovKSlE",
-                            "name": "Mistrz Charakteryzacji",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.pHyXdPnWwoFrUA5n]"
                         }
@@ -3056,7 +3056,7 @@
                     "scriptData": [
                         {
                             "id": "6rQIiOmi2jeCUplP",
-                            "name": "Wtargnięcie z Włamaniem",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.uSwkYENTOcnfRrqA]"
                         }
@@ -3077,7 +3077,7 @@
                     "scriptData": [
                         {
                             "id": "Cz6kGWZNw1siJSxN",
-                            "name": "Przyrządzanie Mikstur",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.MfxzwJz2o9ho2hOM]",
                             "hideScript": "[Script.DxQnamsb2AuW0p2e]"
@@ -3099,7 +3099,7 @@
                     "scriptData": [
                         {
                             "id": "dawFll5eB35uSev2",
-                            "name": "Widzenie w Ciemności",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.h0DfPwUUOBjyAHMZ]"
                         }
@@ -3120,7 +3120,7 @@
                     "scriptData": [
                         {
                             "id": "9jCMGlZut6wvKcjl",
-                            "name": "Władcza Postura",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.LkPtgN9A36OI6Frh]",
                             "hideScript": "[Script.dSmRhZ6o1bUcOSF9]"
@@ -3142,14 +3142,14 @@
                     "scriptData": [
                         {
                             "id": "vju0E944RCDRKgBK",
-                            "name": "Riposta",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.FXwfqF0jpXlBQ9Y3]",
                             "hideScript": "[Script.SPOkFWZWziZk5b7A]"
                         },
                         {
                             "id": "vju0E944RCDRKgBK",
-                            "name": "Riposta",
+                            "name": "Zamień Obronę na Atak",
                             "script": "[Script.TxfmxDGBj04AQQpt]"
                         }
                     ],
@@ -3188,7 +3188,7 @@
                     "scriptData": [
                         {
                             "id": "NWMGUKS4Wl6p3moB",
-                            "name": "Cień",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.Xf4FcZ4ZLdWmOXBa]"
                         }
@@ -3241,7 +3241,7 @@
                         },
                         {
                             "id": "YsehPMUmEzTAH6UC",
-                            "name": "Szuler",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.TdjlJro0RRVSh8g8]",
                             "submissionScript": "[Script.1OpT3CXs07XFWWCT]"
@@ -3267,7 +3267,7 @@
                     "scriptData": [
                         {
                             "id": "8ZKB7vgGB05PfuWW",
-                            "name": "Szczur Kanałowy",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.gKPL3t4vlZAsvtGr]",
                             "hideScript": "[Script.Lu27iXtJVkrJ8bOx]"
@@ -3338,7 +3338,7 @@
                         },
                         {
                             "id": "LKDNluFVNLBNUH4N",
-                            "name": "Mól Książkowy",
+                            "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "activationScript": "[Script.tnE8LF6E3svIlLca]",
                             "hideScript": "[Script.52mwb33mGrQjq89B]"

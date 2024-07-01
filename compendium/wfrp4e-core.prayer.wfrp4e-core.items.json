@@ -62,7 +62,7 @@
                     "scriptData": [
                         {
                             "id": "FzMgOIeeJEy3DPGL",
-                            "name": "Wyleczenie choroby",
+                            "name": "Dotyk Rhyi",
                             "script": "[Script.vc4bELo0cWYoILfB]"
                         }
                     ],
@@ -73,7 +73,7 @@
                     "scriptData": [
                         {
                             "id": "slUPiVruBghcFcCQ",
-                            "name": "Uzdrowienie",
+                            "name": "Dotyk Rhyi",
                             "script": "[Script.oV81zgbZsuTFG6L2]"
                         }
                     ],
@@ -112,7 +112,7 @@
                     "scriptData": [
                         {
                             "id": "lfR1p5Ph2BQCPl3G",
-                            "name": "Błogosławieństwo Prawości",
+                            "name": "Magiczna broń",
                             "script": "[Script.eWWLmA2xINR321aK]"
                         }
                     ],
@@ -445,7 +445,7 @@
                         },
                         {
                             "id": "2lds6IDIyorYrvY4",
-                            "name": "Mądrość sowy",
+                            "name": "Przedmioty",
                             "script": "[Script.dbOSvpgcPjsc2uvq]"
                         }
                     ]
@@ -603,7 +603,7 @@
                         },
                         {
                             "id": "yAJjiwiK0OSoIrkf",
-                            "name": "Spryt Ranalda",
+                            "name": "Na Cztery Łapy",
                             "script": "[Script.Y6ppJBerpM3TtSic]"
                         }
                     ]
@@ -631,7 +631,7 @@
                         },
                         {
                             "id": "qDw8FPD6bDLLY82Q",
-                            "name": "Twarz topielca",
+                            "name": "Efekt zakończony",
                             "script": "[Script.6V3qHON3mcerlBlB]"
                         }
                     ],
@@ -750,7 +750,7 @@
                     "scriptData": [
                         {
                             "id": "YhZKddnHcQnJUhFC",
-                            "name": "Pan łowów",
+                            "name": "Związane z łowiectwem",
                             "script": "[Script.xPDMpOvC1ZBVxrNg]"
                         }
                     ],
@@ -844,17 +844,17 @@
                     "scriptData": [
                         {
                             "id": "DIcpr650MAJVHQ5u",
-                            "name": "Rączy jeleń",
+                            "name": "Silne Nogi",
                             "script": "[Script.oqgd9G6oI1ncPYLw]"
                         },
                         {
                             "id": "DIcpr650MAJVHQ5u",
-                            "name": "Rączy jeleń",
+                            "name": "Test atletyki",
                             "script": "[Script.U9xh2wriSqCosugW]"
                         },
                         {
                             "id": "DIcpr650MAJVHQ5u",
-                            "name": "Rączy jeleń",
+                            "name": "Nie można nie zdać testów atletyki związanych ze skakaniem",
                             "hideScript": "[Script.9EVj4bmZJex45Mt7]",
                             "submissionScript": "[Script.b2WaqRna5CFXmbDG]"
                         }
@@ -937,7 +937,7 @@
                         },
                         {
                             "id": "rR3CML7hvrzjzYH3",
-                            "name": "Miecz sprawiedliwości",
+                            "name": "Ignoruj PP",
                             "script": "[Script.wsqNM4NHnwaAAQym]"
                         }
                     ],
@@ -1020,7 +1020,7 @@
                         },
                         {
                             "id": "B6C7PTHXo7vQ79L1",
-                            "name": "Ukojenie Rhyi",
+                            "name": "Premia do następnego testu",
                             "script": "[Script.xPDMpOvC1ZBVxrNg]",
                             "activationScript": "[Script.AZGXrZOQ4EzjxRL9]",
                             "submissionScript": "[Script.TzgmYRXFXRspIo1i]"
@@ -1176,7 +1176,7 @@
                         },
                         {
                             "id": "90vi32xekMLeXdXT",
-                            "name": "Odmrożenia",
+                            "name": "Oszołomienie",
                             "script": "[Script.k8TC0yzp4xfOXD2n]"
                         }
                     ],
@@ -1396,7 +1396,7 @@
                     "scriptData": [
                         {
                             "id": "WKYusHV8UerVWjSu",
-                            "name": "Zimowy chłód (Strach)",
+                            "name": "Zimowy chłód",
                             "script": "[Script.AmpDbT0BkDHeaRzf]"
                         }
                     ],
@@ -1467,12 +1467,12 @@
                         },
                         {
                             "id": "ENz32CXPyOrNtmu7",
-                            "name": "Młot Sigmara",
+                            "name": "Obrażenia",
                             "script": "[Script.NrVFrIXM8GnIbojv]"
                         },
                         {
                             "id": "ENz32CXPyOrNtmu7",
-                            "name": "Młot Sigmara",
+                            "name": "Stany",
                             "script": "[Script.esuLwq4g5T8k1kLT]"
                         }
                     ],

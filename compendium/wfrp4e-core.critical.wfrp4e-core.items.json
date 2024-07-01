@@ -148,7 +148,7 @@
                             "script": "[Script.Oz7pWF9mEc1pQypj]"
                         },
                         {
-                            "name": "Wstrząśnienie mózgu",
+                            "name": "Efekt zmęczenia",
                             "id": "TYzxQVbjCM2iyLVl",
                             "script": "[Script.QPVVDPcJ4Xi5FmQl]"
                         }
@@ -175,14 +175,14 @@
                         },
                         {
                             "id": "vGXj3JcQSik2Fof6",
-                            "name": "Zwichnięte kolano",
+                            "name": "Testy wymagające użycia: @item.system.location.value",
                             "script": "[Script.EYny6z5oTOhxGDfb]",
                             "activationScript": "[Script.YFSgWRXel0bWE3EE]",
                             "hideScript": "[Script.QaGNsqKm2Nf0zGVm]"
                         },
                         {
                             "id": "vGXj3JcQSik2Fof6",
-                            "name": "Zwichnięte kolano",
+                            "name": "Ruch zmniejszony o połowę",
                             "script": "[Script.9MDi3ok9gPwtbALf]"
                         }
                     ]
@@ -255,7 +255,7 @@
                         },
                         {
                             "id": "Ce9QAvROf94V16sJ",
-                            "name": "Wywichnięty bark",
+                            "name": "Zapobiegaj używaniu ręki",
                             "script": "[Script.sKO8TcLIkCTnFvXu]",
                             "activationScript": "[Script.R5dOZWFxE2n6tooX]",
                             "hideScript": "[Script.L2cdQppcPwxz24hN]"
@@ -285,7 +285,7 @@
                         },
                         {
                             "id": "9dEo6xx3LZwu32td",
-                            "name": "Skręcona kostka",
+                            "name": "Czas trwania",
                             "script": "[Script.A6DcKPzAGntzSCil]"
                         }
                     ]
@@ -461,7 +461,7 @@
                         },
                         {
                             "id": "jYEOUXmmtfU0bnjS",
-                            "name": "Poszarpane udo",
+                            "name": "Powalenie",
                             "script": "[Script.tDrs0aNIYmZPsOoS]"
                         }
                     ]
@@ -746,13 +746,13 @@
                         },
                         {
                             "id": "zYfCX8Eq2VkRFhNI",
-                            "name": "Złamany nos",
+                            "name": "Testy Społeczne (Bonus)",
                             "script": "[Script.wAETU6aTRr9d4oCU]",
                             "hideScript": "[Script.6Fe8M5MdklKS2olx]"
                         },
                         {
                             "id": "zYfCX8Eq2VkRFhNI",
-                            "name": "Złamany nos",
+                            "name": "Testy Społeczne (Kara)",
                             "script": "[Script.mgLGN1XPzPE4dReN]",
                             "hideScript": "[Script.6Fe8M5MdklKS2olx]"
                         }
@@ -786,12 +786,12 @@
                     "scriptData": [
                         {
                             "id": "6KtIpUxSWrqIewki",
-                            "name": "Zmasakrowana dłoń",
+                            "name": "Utracony Palec",
                             "script": "[Script.ebDQH0MdGAG02CHl]"
                         },
                         {
                             "id": "6KtIpUxSWrqIewki",
-                            "name": "Zmasakrowana dłoń",
+                            "name": "Natychmiastowy",
                             "script": "[Script.3aEzK0DehSHtVykd]"
                         }
                     ]
@@ -967,7 +967,7 @@
                     "scriptData": [
                         {
                             "id": "bpo2NXwpg23AKY9y",
-                            "name": "Poważna rana ucha",
+                            "name": "Testy związane ze słuchem",
                             "script": "[Script.Ofn6vDbP3fZ4UlSc]",
                             "hideScript": "[Script.tdICiJ26rJrDbxT6]"
                         }
@@ -1176,7 +1176,7 @@
                     "scriptData": [
                         {
                             "id": "aFtt7OmtKBvKLHnL",
-                            "name": "Krwawienie",
+                            "name": "@effect.name",
                             "script": "[Script.zR4WAjzXHTZuiu5G]"
                         }
                     ]
@@ -1320,13 +1320,13 @@
                     "scriptData": [
                         {
                             "id": "8A9kuYE3F24fjDsF",
-                            "name": "Oślepienie",
+                            "name": "Testy związane ze wzrokiem",
                             "script": "[Script.XPxAKqPpPYE4E6B5]",
                             "activationScript": "[Script.dkY7WRYjFVh8GB0m]"
                         },
                         {
                             "id": "8A9kuYE3F24fjDsF",
-                            "name": "Oślepienie",
+                            "name": "Premia do ataków wręcz",
                             "script": "[Script.B87v1twc65qyvUWi]",
                             "activationScript": "[Script.ByhEa1BxQOyrOmqg]",
                             "hideScript": "[Script.f6WnrJvoNkfoNN9Y]"
@@ -1551,7 +1551,7 @@
                         },
                         {
                             "id": "H7W6BNsE6d2RR1Ti",
-                            "name": "Wybicie stawu",
+                            "name": "Zapobiegaj używaniu ręki",
                             "script": "[Script.sKO8TcLIkCTnFvXu]",
                             "activationScript": "[Script.R5dOZWFxE2n6tooX]",
                             "hideScript": "[Script.L2cdQppcPwxz24hN]"
@@ -1643,7 +1643,7 @@
                         },
                         {
                             "id": "WXXxc9P5cfN0hTSu",
-                            "name": "Stłuczony obojczyk",
+                            "name": "Zapobiegaj używaniu ręki",
                             "script": "[Script.6jcTzK1XEuWqAacN]",
                             "activationScript": "[Script.d9iU08yvqcffF026]",
                             "hideScript": "[Script.L2cdQppcPwxz24hN]"
@@ -1885,7 +1885,7 @@
                     "scriptData": [
                         {
                             "id": "pnqEtu6lQlejU6CV",
-                            "name": "Zawadiacka rana",
+                            "name": "Imponująca blizna",
                             "script": "[Script.wAETU6aTRr9d4oCU]",
                             "hideScript": "[Script.6Fe8M5MdklKS2olx]"
                         }
@@ -1924,7 +1924,7 @@
                         },
                         {
                             "id": "Uxp4sb58T0fiOXEB",
-                            "name": "Stłuczony palec",
+                            "name": "Natychmiastowy",
                             "script": "[Script.HKhyn0kijKfzW6cw]"
                         }
                     ]
@@ -2004,12 +2004,12 @@
                         },
                         {
                             "id": "uaaFc96JlTCALmeJ",
-                            "name": "Bez tchu",
+                            "name": "Ruch zmniejszony o połowę",
                             "script": "[Script.9MDi3ok9gPwtbALf]"
                         },
                         {
                             "id": "uaaFc96JlTCALmeJ",
-                            "name": "Bez tchu",
+                            "name": "Czas trwania",
                             "script": "[Script.A6DcKPzAGntzSCil]"
                         }
                     ]
@@ -2111,7 +2111,7 @@
                         },
                         {
                             "id": "WmmHwyUFUfjGKMvx",
-                            "name": "Bardzo zdrętwiałe ramię",
+                            "name": "Zapobiegaj używaniu ręki",
                             "script": "[Script.sKO8TcLIkCTnFvXu]",
                             "activationScript": "[Script.R5dOZWFxE2n6tooX]",
                             "hideScript": "[Script.L2cdQppcPwxz24hN]"
@@ -2160,7 +2160,7 @@
                         },
                         {
                             "id": "98Ggkkm22IOSZdCE",
-                            "name": "Nadwyrężone kolano",
+                            "name": "Czas trwania",
                             "script": "[Script.A6DcKPzAGntzSCil]"
                         }
                     ],
@@ -2454,12 +2454,12 @@
                     "scriptData": [
                         {
                             "id": "2oZsYCopLPHqHNQb",
-                            "name": "Krwawiąca dłoń",
+                            "name": "Testy zręczności",
                             "script": "[Script.rpxQU26BU7nwjtqY]"
                         },
                         {
                             "id": "2oZsYCopLPHqHNQb",
-                            "name": "Krwawiąca dłoń",
+                            "name": "Okno dialogowe",
                             "script": "[Script.2WBq5gW780C6zfCp]",
                             "activationScript": "[Script.AZGXrZOQ4EzjxRL9]",
                             "hideScript": "[Script.faRFSsrQylQRZFLk]"

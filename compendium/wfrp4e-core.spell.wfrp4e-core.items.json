@@ -51,7 +51,7 @@
                     "scriptData": [
                         {
                             "id": "JhckMd5Y6kwzj89D",
-                            "name": "Widzenie w ciemności (Śmierć)",
+                            "name": "Widzenie w Mroku",
                             "script": "[Script.sHfkTRqTWPg2JAGN]"
                         }
                     ],
@@ -73,7 +73,7 @@
                     "scriptData": [
                         {
                             "id": "VsXAXUP37Jy1RxLN",
-                            "name": "Niezdarność (Ogień)",
+                            "name": "Niezdarność",
                             "script": "[Script.3TesBGh8HnlGuafu]"
                         }
                     ],
@@ -115,7 +115,7 @@
                     "scriptData": [
                         {
                             "id": "Tlpj4ne1QrB5dECY",
-                            "name": "Przerażający wygląd (Śmierć)",
+                            "name": "Przerażający wygląd",
                             "script": "[Script.8wG9l4T9fc1bM0TN]"
                         }
                     ],
@@ -181,7 +181,7 @@
                     "scriptData": [
                         {
                             "id": "3M0DDQ0n2MHGkjno",
-                            "name": "Niezdarność (Życie)",
+                            "name": "Niezdarność",
                             "script": "[Script.3TesBGh8HnlGuafu]"
                         }
                     ],
@@ -211,7 +211,7 @@
                     "scriptData": [
                         {
                             "id": "I0LnnT4KAYz135g7",
-                            "name": "Niezdarność (Zwierzęta)",
+                            "name": "Niezdarność",
                             "script": "[Script.3TesBGh8HnlGuafu]"
                         }
                     ],
@@ -289,7 +289,7 @@
                     "scriptData": [
                         {
                             "id": "g5xrHWYinn3mzhgZ",
-                            "name": "Magiczna tarcza (Demonologia)",
+                            "name": "Rozproszenie",
                             "script": "[Script.2OqLHRqEBEjBm2LW]",
                             "hideScript": "[Script.JjDzMnUxaWQePIYh]"
                         }
@@ -361,7 +361,7 @@
                     "scriptData": [
                         {
                             "id": "F0DbfSHM5yydi8m6",
-                            "name": "Odepchnięcie (Czarownictwo)",
+                            "name": "Odepchnięcie",
                             "script": "[Script.SSqGxyN9hw0HDmED]"
                         }
                     ],
@@ -391,7 +391,7 @@
                     "scriptData": [
                         {
                             "id": "MfretxCbwRwt99f9",
-                            "name": "Straszny wygląd (Nekromancja)",
+                            "name": "Straszny wygląd",
                             "script": "[Script.w3r54pKZQKaH2Yer]"
                         }
                     ],
@@ -436,7 +436,7 @@
                     "scriptData": [
                         {
                             "id": "atb5E3ncyIiTKt0t",
-                            "name": "Pochwycenie (Nekromancja)",
+                            "name": "Pochwycenie",
                             "script": "[Script.AI6bFrjWk4NH9FBd]"
                         }
                     ],
@@ -458,7 +458,7 @@
                     "scriptData": [
                         {
                             "id": "MZp4uJfW2vuwQlUI",
-                            "name": "Straszny wygląd (Metal)",
+                            "name": "Straszny wygląd",
                             "script": "[Script.w3r54pKZQKaH2Yer]"
                         }
                     ],
@@ -499,7 +499,7 @@
                     "scriptData": [
                         {
                             "id": "IgH0DCpmKpMerQum",
-                            "name": "Pancerz Eteru (Nekromancja)",
+                            "name": "Pancerz Eteru",
                             "script": "[Script.1ZrzpfVwPJHdwp23]"
                         }
                     ],
@@ -541,17 +541,17 @@
                         },
                         {
                             "id": "N25aw2AX02DBl2O5",
-                            "name": "Gorejący miecz Rhuin",
+                            "name": "Podpalenie",
                             "script": "[Script.IG4zYqtN9fRSYE7q]"
                         },
                         {
                             "id": "N25aw2AX02DBl2O5",
-                            "name": "Gorejący miecz Rhuin",
+                            "name": "Płonący (siebie)",
                             "script": "[Script.inPxRSx0CDj1nwAm]"
                         },
                         {
                             "id": "N25aw2AX02DBl2O5",
-                            "name": "Gorejący miecz Rhuin",
+                            "name": "Obrażenia",
                             "script": "[Script.Z30zYayPryXOjT5N]"
                         }
                     ],
@@ -572,7 +572,7 @@
                     "scriptData": [
                         {
                             "id": "K0kaagF7ly9yudmO",
-                            "name": "Odepchnięcie (Zwierzęta)",
+                            "name": "Odepchnięcie",
                             "script": "[Script.SSqGxyN9hw0HDmED]"
                         }
                     ],
@@ -592,7 +592,7 @@
                     "scriptData": [
                         {
                             "id": "3tVlSQAlq4vZ2Kam",
-                            "name": "Straszny wygląd (Niebiosa)",
+                            "name": "Straszny wygląd",
                             "script": "[Script.w3r54pKZQKaH2Yer]"
                         }
                     ],
@@ -649,7 +649,7 @@
                     "scriptData": [
                         {
                             "id": "X0n7yGiOOJsNh8VX",
-                            "name": "Magiczna ochrona (Śmierć)",
+                            "name": "Ochrona",
                             "script": "[Script.d6mVm08o8SeklAcW]"
                         }
                     ],
@@ -711,7 +711,7 @@
                     "scriptData": [
                         {
                             "id": "5YlXp3ml2TjTtQdM",
-                            "name": "Magiczna tarcza (Zwierzęta)",
+                            "name": "Rozproszenie",
                             "script": "[Script.2OqLHRqEBEjBm2LW]",
                             "hideScript": "[Script.JjDzMnUxaWQePIYh]"
                         }
@@ -734,7 +734,7 @@
                     "scriptData": [
                         {
                             "id": "oo1w999vVDp0SvXP",
-                            "name": "Magiczna tarcza (Guślarstwo)",
+                            "name": "Rozproszenie",
                             "script": "[Script.2OqLHRqEBEjBm2LW]",
                             "hideScript": "[Script.JjDzMnUxaWQePIYh]"
                         }
@@ -777,7 +777,7 @@
                     "scriptData": [
                         {
                             "id": "bVubLxTGWeMveMMH",
-                            "name": "Przerażający wygląd (Ogień)",
+                            "name": "Przerażający wygląd",
                             "script": "[Script.8wG9l4T9fc1bM0TN]"
                         }
                     ],
@@ -802,7 +802,7 @@
                     "scriptData": [
                         {
                             "id": "EhYooYA50dkN1iiC",
-                            "name": "Magiczna tarcza (Czarownictwo)",
+                            "name": "Rozproszenie",
                             "script": "[Script.2OqLHRqEBEjBm2LW]",
                             "hideScript": "[Script.JjDzMnUxaWQePIYh]"
                         }
@@ -853,7 +853,7 @@
                     "scriptData": [
                         {
                             "id": "Jnx3vLiM17qTRsCb",
-                            "name": "Pancerz Eteru (Życie)",
+                            "name": "Pancerz Eteru",
                             "script": "[Script.1ZrzpfVwPJHdwp23]"
                         }
                     ],
@@ -878,7 +878,7 @@
                     "scriptData": [
                         {
                             "id": "sbBqQ0cdfvCjKApH",
-                            "name": "Magiczna tarcza (Śmierć)",
+                            "name": "Rozproszenie",
                             "script": "[Script.2OqLHRqEBEjBm2LW]",
                             "hideScript": "[Script.JjDzMnUxaWQePIYh]"
                         }
@@ -901,7 +901,7 @@
                     "scriptData": [
                         {
                             "id": "98H5YjVu2RCtcvub",
-                            "name": "Magiczna tarcza (Niebiosa)",
+                            "name": "Rozproszenie",
                             "script": "[Script.2OqLHRqEBEjBm2LW]",
                             "hideScript": "[Script.JjDzMnUxaWQePIYh]"
                         }
@@ -933,7 +933,7 @@
                     "scriptData": [
                         {
                             "id": "3exXNS10MNXC0z1n",
-                            "name": "Kopuła (Czarownictwo)",
+                            "name": "Kopuła",
                             "script": "[Script.qmOt7h17hGAKqQe0]"
                         }
                     ],
@@ -954,7 +954,7 @@
                     "scriptData": [
                         {
                             "id": "JXm1XYeumrZbROEj",
-                            "name": "Pancerz Eteru (Zwierzęta)",
+                            "name": "Pancerz Eteru",
                             "script": "[Script.1ZrzpfVwPJHdwp23]"
                         }
                     ]
@@ -1024,7 +1024,7 @@
                     "scriptData": [
                         {
                             "id": "hbusGHb4tl7w3EHo",
-                            "name": "Żrąca krew (Światło)",
+                            "name": "Żrąca krew",
                             "script": "[Script.QwHoqu2oO8QO8Mad]"
                         }
                     ],
@@ -1049,7 +1049,7 @@
                     "scriptData": [
                         {
                             "id": "UwVJOvlqQumyNTnt",
-                            "name": "Odepchnięcie (Demonologia)",
+                            "name": "Odepchnięcie",
                             "script": "[Script.SSqGxyN9hw0HDmED]"
                         }
                     ],
@@ -1081,7 +1081,7 @@
                     "scriptData": [
                         {
                             "id": "85KF3czVr2jjEFWt",
-                            "name": "Magiczna broń (Ogień)",
+                            "name": "Magiczna broń",
                             "script": "[Script.RHyBLYT5oHf7EPnG]"
                         }
                     ],
@@ -1113,7 +1113,7 @@
                     "scriptData": [
                         {
                             "id": "rc0uUFDi4KF1NCXt",
-                            "name": "Odepchnięcie (Ogień)",
+                            "name": "Odepchnięcie",
                             "script": "[Script.SSqGxyN9hw0HDmED]"
                         }
                     ],
@@ -1136,7 +1136,7 @@
                     "scriptData": [
                         {
                             "id": "ihzJ0xBHJy1mxtTt",
-                            "name": "Niezdarność (Guślarstwo)",
+                            "name": "Niezdarność",
                             "script": "[Script.3TesBGh8HnlGuafu]"
                         }
                     ],
@@ -1199,7 +1199,7 @@
                     "scriptData": [
                         {
                             "id": "nvwYuMyUOW30ilmN",
-                            "name": "Żrąca krew (Niebiosa)",
+                            "name": "Żrąca krew",
                             "script": "[Script.QwHoqu2oO8QO8Mad]"
                         }
                     ],
@@ -1232,7 +1232,7 @@
                 "H8as8eJ4hGm4pAzM": {
                     "scriptData": [
                         {
-                            "name": "Magiczna ochrona (Cień)",
+                            "name": "Ochrona",
                             "id": "H8as8eJ4hGm4pAzM",
                             "script": "[Script.d6mVm08o8SeklAcW]"
                         }
@@ -1264,7 +1264,7 @@
                     "scriptData": [
                         {
                             "id": "SdigWFFBhyW0tW4o",
-                            "name": "Niezdarność (Nekromancja)",
+                            "name": "Niezdarność",
                             "script": "[Script.3TesBGh8HnlGuafu]"
                         }
                     ],
@@ -1286,7 +1286,7 @@
                     "scriptData": [
                         {
                             "id": "yLd6Lk0hud98ztHK",
-                            "name": "Widzenie w ciemności (Zwierzęta)",
+                            "name": "Widzenie w Mroku",
                             "script": "[Script.sHfkTRqTWPg2JAGN]"
                         }
                     ],
@@ -1370,7 +1370,7 @@
                     "scriptData": [
                         {
                             "id": "URxWDjaF0VmshPEv",
-                            "name": "Niszczyciel Strzał (Metal)",
+                            "name": "Niszczyciel Strzał",
                             "script": "[Script.naF5EWr1CBkYRZTK]"
                         }
                     ],
@@ -1416,7 +1416,7 @@
                 "GoYTWl6YKH4pkg0O": {
                     "scriptData": [
                         {
-                            "name": "Niszczyciel strzał (Zwierzęta)",
+                            "name": "Niszczyciel Strzał",
                             "id": "GoYTWl6YKH4pkg0O",
                             "script": "[Script.naF5EWr1CBkYRZTK]"
                         }
@@ -1439,7 +1439,7 @@
                     "scriptData": [
                         {
                             "id": "Q7QqF5uTm8eGirdi",
-                            "name": "Widzenie w ciemności (Niebiosa)",
+                            "name": "Widzenie w Mroku",
                             "script": "[Script.sHfkTRqTWPg2JAGN]"
                         }
                     ],
@@ -1471,7 +1471,7 @@
                     "scriptData": [
                         {
                             "id": "4K4CBRvn6GrQF8oz",
-                            "name": "Magiczna broń (Niebiosa)",
+                            "name": "Magiczna broń",
                             "script": "[Script.RHyBLYT5oHf7EPnG]"
                         }
                     ],
@@ -1530,7 +1530,7 @@
                     "scriptData": [
                         {
                             "id": "oNadg6lHGjw86VOX",
-                            "name": "Pochwycenie (Demonologia)",
+                            "name": "Pochwycenie",
                             "script": "[Script.AI6bFrjWk4NH9FBd]"
                         }
                     ],
@@ -1555,7 +1555,7 @@
                     "scriptData": [
                         {
                             "id": "YgYNwtWeQPNjuV5H",
-                            "name": "Odepchnięcie (Cień)",
+                            "name": "Odepchnięcie",
                             "script": "[Script.SSqGxyN9hw0HDmED]"
                         }
                     ],
@@ -1598,7 +1598,7 @@
                     "scriptData": [
                         {
                             "id": "ciDf515sFb8vga9e",
-                            "name": "Odepchnięcie (Niebiosa)",
+                            "name": "Odepchnięcie",
                             "script": "[Script.SSqGxyN9hw0HDmED]"
                         }
                     ],
@@ -1686,7 +1686,7 @@
                     "scriptData": [
                         {
                             "id": "tCcYUt5VFEHyNdST",
-                            "name": "Przerażający wygląd (Cień)",
+                            "name": "Przerażający wygląd",
                             "script": "[Script.8wG9l4T9fc1bM0TN]"
                         }
                     ],
@@ -1708,7 +1708,7 @@
                     "scriptData": [
                         {
                             "id": "IQZUsYz05TWAqgWR",
-                            "name": "Pochwycenie (Śmierć)",
+                            "name": "Pochwycenie",
                             "script": "[Script.AI6bFrjWk4NH9FBd]"
                         }
                     ],
@@ -1739,7 +1739,7 @@
                     "scriptData": [
                         {
                             "id": "qrT2BgFv18mc3GOR",
-                            "name": "Straszny wygląd (Śmierć)",
+                            "name": "Straszny wygląd",
                             "script": "[Script.w3r54pKZQKaH2Yer]"
                         }
                     ],
@@ -1779,7 +1779,7 @@
                     "scriptData": [
                         {
                             "id": "BYK1xtejBXlxhoqN",
-                            "name": "Pochwycenie (Metal)",
+                            "name": "Pochwycenie",
                             "script": "[Script.AI6bFrjWk4NH9FBd]"
                         }
                     ],
@@ -1809,7 +1809,7 @@
                         },
                         {
                             "id": "yUz74Oljp6MoxHRY",
-                            "name": "Kuźnia Chamonu",
+                            "name": "Dodawanie właściwości",
                             "script": "[Script.zqShIJnrRReGgP94]"
                         }
                     ],
@@ -1832,7 +1832,7 @@
                     "scriptData": [
                         {
                             "id": "VVyJ3I7yhqhT5spF",
-                            "name": "Widzenie w ciemności (Czarownictwo)",
+                            "name": "Widzenie w Mroku",
                             "script": "[Script.sHfkTRqTWPg2JAGN]"
                         }
                     ],
@@ -1863,7 +1863,7 @@
                     "scriptData": [
                         {
                             "id": "UMQ4HkPxFZjCTATx",
-                            "name": "Magiczna broń (Nekromancja)",
+                            "name": "Magiczna broń",
                             "script": "[Script.RHyBLYT5oHf7EPnG]"
                         }
                     ],
@@ -1913,7 +1913,7 @@
                     "scriptData": [
                         {
                             "id": "s3QRNdtGwVWUiRUB",
-                            "name": "Pochwycenie (Życie)",
+                            "name": "Pochwycenie",
                             "script": "[Script.AI6bFrjWk4NH9FBd]"
                         }
                     ],
@@ -1979,7 +1979,7 @@
                     "scriptData": [
                         {
                             "id": "54DHdpiAYjq9O9EA",
-                            "name": "Magiczna broń (Cień)",
+                            "name": "Magiczna broń",
                             "script": "[Script.RHyBLYT5oHf7EPnG]"
                         }
                     ],
@@ -2007,7 +2007,7 @@
                         },
                         {
                             "id": "VxgpVBMx8k8Q9jra",
-                            "name": "Ognista korona",
+                            "name": "Przedmioty",
                             "script": "[Script.qK4q4o6cQhcGzFX3]"
                         }
                     ]
@@ -2027,7 +2027,7 @@
                     "scriptData": [
                         {
                             "id": "xATk1vsIU54hBqTR",
-                            "name": "Żrąca krew (Metal)",
+                            "name": "Żrąca krew",
                             "script": "[Script.QwHoqu2oO8QO8Mad]"
                         }
                     ],
@@ -2052,7 +2052,7 @@
                     "scriptData": [
                         {
                             "id": "HgiJGJRUMzBH5QwK",
-                            "name": "Widzenie w ciemności (Metal)",
+                            "name": "Widzenie w Mroku",
                             "script": "[Script.sHfkTRqTWPg2JAGN]"
                         }
                     ],
@@ -2071,7 +2071,7 @@
                     "scriptData": [
                         {
                             "id": "eEA4tPYa2SWiqn2r",
-                            "name": "Straszny wygląd (Ogień)",
+                            "name": "Straszny wygląd",
                             "script": "[Script.w3r54pKZQKaH2Yer]"
                         }
                     ],
@@ -2095,7 +2095,7 @@
                     "scriptData": [
                         {
                             "id": "Zdq7ThKolTWWRUXk",
-                            "name": "Posłaniec śmierci",
+                            "name": "Panika",
                             "script": "[Script.oGdsGPgJWcyWkiWl]"
                         }
                     ]
@@ -2148,7 +2148,7 @@
                     "scriptData": [
                         {
                             "id": "PEdVe7ebjT9Uq11O",
-                            "name": "Magiczna tarcza (Nekromancja)",
+                            "name": "Rozproszenie",
                             "script": "[Script.2OqLHRqEBEjBm2LW]",
                             "hideScript": "[Script.JjDzMnUxaWQePIYh]"
                         }
@@ -2202,7 +2202,7 @@
                     "scriptData": [
                         {
                             "id": "Ky25zH3wVjBIdMyC",
-                            "name": "Magiczna tarcza (Ogień)",
+                            "name": "Rozproszenie",
                             "script": "[Script.2OqLHRqEBEjBm2LW]",
                             "hideScript": "[Script.JjDzMnUxaWQePIYh]"
                         }
@@ -2272,7 +2272,7 @@
                     "scriptData": [
                         {
                             "id": "T3ybCpYia0S9hT33",
-                            "name": "Przerażający wygląd (Metal)",
+                            "name": "Przerażający wygląd",
                             "script": "[Script.8wG9l4T9fc1bM0TN]"
                         }
                     ],
@@ -2334,7 +2334,7 @@
                     "scriptData": [
                         {
                             "id": "vuLCGvWWMBkjS4fU",
-                            "name": "Kopuła (Metal)",
+                            "name": "Kopuła",
                             "script": "[Script.qmOt7h17hGAKqQe0]"
                         }
                     ],
@@ -2396,7 +2396,7 @@
                     "scriptData": [
                         {
                             "id": "3cZn06GPmqGXkHDR",
-                            "name": "Niszczyciel Strzał (Cień)",
+                            "name": "Niszczyciel Strzał",
                             "script": "[Script.naF5EWr1CBkYRZTK]"
                         }
                     ],
@@ -2455,7 +2455,7 @@
                     "scriptData": [
                         {
                             "id": "1j5aw0XvSUyyIM32",
-                            "name": "Niezdarność (Śmierć)",
+                            "name": "Niezdarność",
                             "script": "[Script.3TesBGh8HnlGuafu]"
                         }
                     ],
@@ -2477,7 +2477,7 @@
                     "scriptData": [
                         {
                             "id": "5OeYLDk9BKdhFID2",
-                            "name": "Magiczna ochrona (Czarownictwo)",
+                            "name": "Ochrona",
                             "script": "[Script.d6mVm08o8SeklAcW]"
                         }
                     ],
@@ -2499,7 +2499,7 @@
                     "scriptData": [
                         {
                             "id": "zv3OBX2cjka63VpF",
-                            "name": "Magiczna tarcza (Cień)",
+                            "name": "Rozproszenie",
                             "script": "[Script.2OqLHRqEBEjBm2LW]",
                             "hideScript": "[Script.JjDzMnUxaWQePIYh]"
                         }
@@ -2521,7 +2521,7 @@
                     "scriptData": [
                         {
                             "id": "UW3d5MaZw81uZEnR",
-                            "name": "Mowa zwierząt",
+                            "name": "Oswajanie lub Tresura",
                             "script": "[Script.9ZFPDCk8M2TQxh7x]",
                             "activationScript": "[Script.LeKLtvEDrWh4yHsx]",
                             "hideScript": "[Script.3hfMQkUKYI4rCuBy]"
@@ -2566,7 +2566,7 @@
                     "scriptData": [
                         {
                             "id": "BMhMgqhyGvSt0EhU",
-                            "name": "Pochwycenie (Ogień)",
+                            "name": "Pochwycenie",
                             "script": "[Script.AI6bFrjWk4NH9FBd]"
                         }
                     ],
@@ -2598,7 +2598,7 @@
                     "scriptData": [
                         {
                             "id": "vWfOtn15iLmUCtha",
-                            "name": "Pancerz Eteru (Metal)",
+                            "name": "Pancerz Eteru",
                             "script": "[Script.1ZrzpfVwPJHdwp23]"
                         }
                     ],
@@ -2623,7 +2623,7 @@
                     "scriptData": [
                         {
                             "id": "70JYVG0LtENanmK1",
-                            "name": "Widzenie w ciemności (Nekromancja)",
+                            "name": "Widzenie w Mroku",
                             "script": "[Script.sHfkTRqTWPg2JAGN]"
                         }
                     ],
@@ -2767,7 +2767,7 @@
                     "scriptData": [
                         {
                             "id": "cX6Ya7n8B1EHV1kf",
-                            "name": "Początkowy obszar działania",
+                            "name": "Pożoga zagłady U’zhula",
                             "script": "[Script.dfnCK8jCPXNLM7Gh]"
                         }
                     ],
@@ -2779,7 +2779,7 @@
                     "scriptData": [
                         {
                             "id": "q8mpF2eXkyVDGb5k",
-                            "name": "Rosnązy Obszar Działania",
+                            "name": "Pożoga zagłady U’zhula",
                             "script": "[Script.3l7MQSa10Kve2K3P]"
                         }
                     ],
@@ -2826,7 +2826,7 @@
                     "scriptData": [
                         {
                             "id": "r1jNr1Li8TcxFq8g",
-                            "name": "Pancerz Eteru (Światło)",
+                            "name": "Pancerz Eteru",
                             "script": "[Script.1ZrzpfVwPJHdwp23]"
                         }
                     ],
@@ -2878,7 +2878,7 @@
                     "scriptData": [
                         {
                             "id": "aFt85cPoz0FNKK4f",
-                            "name": "Niszczyciel Strzał (Nekromancja)",
+                            "name": "Niszczyciel Strzał",
                             "script": "[Script.naF5EWr1CBkYRZTK]"
                         }
                     ],
@@ -2904,7 +2904,7 @@
                         },
                         {
                             "id": "XRM7FxEmLX5QBXmK",
-                            "name": "Wyssanie życia",
+                            "name": "Ignoruj PP",
                             "script": "[Script.KyswmGj1uG3QS3ng]"
                         }
                     ]
@@ -2932,7 +2932,7 @@
                         },
                         {
                             "id": "th43mvG7od8GUb2z",
-                            "name": "Oślepienie",
+                            "name": "Początkowa Wartość",
                             "script": "[Script.IR86DuMbVdbGOJYt]"
                         }
                     ]
@@ -3008,7 +3008,7 @@
                     "scriptData": [
                         {
                             "id": "U4xziri0eT6nh4CC",
-                            "name": "Magiczna broń (Guślarstwo)",
+                            "name": "Magiczna broń",
                             "script": "[Script.RHyBLYT5oHf7EPnG]"
                         }
                     ],
@@ -3027,7 +3027,7 @@
                     "scriptData": [
                         {
                             "id": "wKR2jxDBFScuhXcM",
-                            "name": "Żrąca krew (Demonologia)",
+                            "name": "Żrąca krew",
                             "script": "[Script.QwHoqu2oO8QO8Mad]"
                         }
                     ],
@@ -3049,7 +3049,7 @@
                     "scriptData": [
                         {
                             "id": "PSZqPu4QXRm1hM6Z",
-                            "name": "Przerażający wygląd (Światło)",
+                            "name": "Przerażający wygląd",
                             "script": "[Script.8wG9l4T9fc1bM0TN]"
                         }
                     ],
@@ -3071,7 +3071,7 @@
                     "scriptData": [
                         {
                             "id": "6XpxhRM1r3IPL5qc",
-                            "name": "Pochwycenie (Niebiosa)",
+                            "name": "Pochwycenie",
                             "script": "[Script.AI6bFrjWk4NH9FBd]"
                         }
                     ],
@@ -3093,7 +3093,7 @@
                     "scriptData": [
                         {
                             "id": "d1oPCrkMy8Bu4VD7",
-                            "name": "Przerażający wygląd (Demonologia)",
+                            "name": "Przerażający wygląd",
                             "script": "[Script.8wG9l4T9fc1bM0TN]"
                         }
                     ],
@@ -3115,7 +3115,7 @@
                     "scriptData": [
                         {
                             "id": "F576eAeSRmMTypKM",
-                            "name": "Pochwycenie (Cień)",
+                            "name": "Pochwycenie",
                             "script": "[Script.AI6bFrjWk4NH9FBd]"
                         }
                     ],
@@ -3168,7 +3168,7 @@
                     "scriptData": [
                         {
                             "id": "oCXbVysC7nk7Rr2t",
-                            "name": "Żrąca krew (Czarownictwo)",
+                            "name": "Żrąca krew",
                             "script": "[Script.QwHoqu2oO8QO8Mad]"
                         }
                     ],
@@ -3242,7 +3242,7 @@
                     "scriptData": [
                         {
                             "id": "eUYaEn9lKiDUVsCz",
-                            "name": "Niezdarność (Światło)",
+                            "name": "Niezdarność",
                             "script": "[Script.3TesBGh8HnlGuafu]"
                         }
                     ],
@@ -3264,7 +3264,7 @@
                     "scriptData": [
                         {
                             "id": "qujsUQ7k22ikvLRk",
-                            "name": "Magiczna ochrona (Metal)",
+                            "name": "Ochrona",
                             "script": "[Script.d6mVm08o8SeklAcW]"
                         }
                     ],
@@ -3302,7 +3302,7 @@
                     "scriptData": [
                         {
                             "id": "pVG6w1y1EXYbUuS0",
-                            "name": "Pancerz Eteru (Cień)",
+                            "name": "Pancerz Eteru",
                             "script": "[Script.1ZrzpfVwPJHdwp23]"
                         }
                     ],
@@ -3415,7 +3415,7 @@
                     "scriptData": [
                         {
                             "id": "PKAiQdd29vmRBjZz",
-                            "name": "Pancerz Eteru (Niebiosa)",
+                            "name": "Pancerz Eteru",
                             "script": "[Script.1ZrzpfVwPJHdwp23]"
                         }
                     ],
@@ -3440,7 +3440,7 @@
                     "scriptData": [
                         {
                             "id": "clDmg3OvYAuqjIkY",
-                            "name": "Magiczna ochrona (Guślarstwo)",
+                            "name": "Ochrona",
                             "script": "[Script.d6mVm08o8SeklAcW]"
                         }
                     ],
@@ -3462,7 +3462,7 @@
                     "scriptData": [
                         {
                             "id": "vE7RaHx8aVrEqU9h",
-                            "name": "Magiczna broń (Śmierć)",
+                            "name": "Magiczna broń",
                             "script": "[Script.RHyBLYT5oHf7EPnG]"
                         }
                     ],
@@ -3484,7 +3484,7 @@
                     "scriptData": [
                         {
                             "id": "f7TJ64L2jdl8ouoj",
-                            "name": "Odepchnięcie (Nekromancja)",
+                            "name": "Odepchnięcie",
                             "script": "[Script.SSqGxyN9hw0HDmED]"
                         }
                     ],
@@ -3523,7 +3523,7 @@
                     "scriptData": [
                         {
                             "id": "ekGcZkiHjBtyNHs3",
-                            "name": "Żrąca krew (Życie)",
+                            "name": "Żrąca krew",
                             "script": "[Script.QwHoqu2oO8QO8Mad]"
                         }
                     ],
@@ -3656,7 +3656,7 @@
                     "scriptData": [
                         {
                             "id": "L7xR8KYtl9WieojO",
-                            "name": "Niezdarność (Czarownictwo)",
+                            "name": "Niezdarność",
                             "script": "[Script.3TesBGh8HnlGuafu]"
                         }
                     ],
@@ -3677,7 +3677,7 @@
                     "scriptData": [
                         {
                             "id": "uxJ68z65aa82x6lz",
-                            "name": "Żrąca krew (Zwierzęta)",
+                            "name": "Żrąca krew",
                             "script": "[Script.QwHoqu2oO8QO8Mad]"
                         }
                     ]
@@ -3779,7 +3779,7 @@
                     "scriptData": [
                         {
                             "id": "sKpoDZnfimoK3Mu6",
-                            "name": "Magiczna ochrona (Demonologia)",
+                            "name": "Kopuła",
                             "script": "[Script.qmOt7h17hGAKqQe0]"
                         }
                     ],
@@ -3801,7 +3801,7 @@
                     "scriptData": [
                         {
                             "id": "6F4tYiFiy92FnpVm",
-                            "name": "Magiczna tarcza",
+                            "name": "Rozproszenie",
                             "script": "[Script.2OqLHRqEBEjBm2LW]",
                             "hideScript": "[Script.JjDzMnUxaWQePIYh]"
                         }
@@ -3833,7 +3833,7 @@
                     "scriptData": [
                         {
                             "id": "SbiMllbJ2Qc5sH9F",
-                            "name": "Magiczna broń (Światło)",
+                            "name": "Magiczna broń",
                             "script": "[Script.RHyBLYT5oHf7EPnG]"
                         }
                     ],
@@ -3855,7 +3855,7 @@
                     "scriptData": [
                         {
                             "id": "hsgQqmPA2K83fqDJ",
-                            "name": "Magiczna ochrona (Życie)",
+                            "name": "Ochrona",
                             "script": "[Script.d6mVm08o8SeklAcW]"
                         }
                     ],
@@ -3884,7 +3884,7 @@
                     "scriptData": [
                         {
                             "id": "ydDGrVtmLytP0YU7",
-                            "name": "Przerażający wygląd (Niebiosa)",
+                            "name": "Przerażający wygląd",
                             "script": "[Script.8wG9l4T9fc1bM0TN]"
                         }
                     ],
@@ -3906,7 +3906,7 @@
                     "scriptData": [
                         {
                             "id": "sBWtncdE7Mk3lna3",
-                            "name": "Straszny wygląd (Cień)",
+                            "name": "Straszny wygląd",
                             "script": "[Script.w3r54pKZQKaH2Yer]"
                         }
                     ],
@@ -3994,7 +3994,7 @@
                     "scriptData": [
                         {
                             "id": "aZhwaaoQ9Me6De23",
-                            "name": "Niszczyciel Strzał (Niebiosa)",
+                            "name": "Niszczyciel Strzał",
                             "script": "[Script.naF5EWr1CBkYRZTK]"
                         }
                     ],
@@ -4016,7 +4016,7 @@
                     "scriptData": [
                         {
                             "id": "Ca2jTOF8b9UZSRqT",
-                            "name": "Kopuła (Życie)",
+                            "name": "Kopuła",
                             "script": "[Script.qmOt7h17hGAKqQe0]"
                         }
                     ],
@@ -4079,7 +4079,7 @@
                     "scriptData": [
                         {
                             "id": "aL95XxYAtvW7BP4Y",
-                            "name": "Widzenie w ciemności (Cień)",
+                            "name": "Widzenie w Mroku",
                             "script": "[Script.sHfkTRqTWPg2JAGN]"
                         }
                     ],
@@ -4119,7 +4119,7 @@
                     "scriptData": [
                         {
                             "id": "uAVx2oZaunk0xGTO",
-                            "name": "Kopuła (Życie)",
+                            "name": "Kopuła",
                             "script": "[Script.qmOt7h17hGAKqQe0]"
                         }
                     ],
@@ -4140,7 +4140,7 @@
                     "scriptData": [
                         {
                             "id": "eAPUB6aO9oHrZXf0",
-                            "name": "Przerażający wygląd (Zwierzęta)",
+                            "name": "Przerażający wygląd",
                             "script": "[Script.8wG9l4T9fc1bM0TN]"
                         }
                     ]
@@ -4219,7 +4219,7 @@
                     "scriptData": [
                         {
                             "id": "xnNXg11stSg3pZIm",
-                            "name": "Kopuła (Guślarstwo)",
+                            "name": "Kopuła",
                             "script": "[Script.qmOt7h17hGAKqQe0]"
                         }
                     ],
@@ -4238,7 +4238,7 @@
                     "scriptData": [
                         {
                             "id": "LrDeyxmOSYqQ7kd4",
-                            "name": "Pancerz Eteru (Śmierć)",
+                            "name": "Pancerz Eteru",
                             "script": "[Script.1ZrzpfVwPJHdwp23]"
                         }
                     ],
@@ -4260,7 +4260,7 @@
                     "scriptData": [
                         {
                             "id": "9v58rP6tdbLv0UIn",
-                            "name": "Przerażający wygląd (Czarownictwo)",
+                            "name": "Przerażający wygląd",
                             "script": "[Script.8wG9l4T9fc1bM0TN]"
                         }
                     ],
@@ -4340,7 +4340,7 @@
                     "scriptData": [
                         {
                             "id": "ic3nYfvopPblvpVn",
-                            "name": "Magiczna ochrona (Nekromancja)",
+                            "name": "Ochrona",
                             "script": "[Script.d6mVm08o8SeklAcW]"
                         }
                     ],
@@ -4381,7 +4381,7 @@
                     "scriptData": [
                         {
                             "id": "cigto4HCrMB2zwaV",
-                            "name": "Widzenie w ciemności (Demonologia)",
+                            "name": "Widzenie w Mroku",
                             "script": "[Script.sHfkTRqTWPg2JAGN]"
                         }
                     ],
@@ -4411,7 +4411,7 @@
                     "scriptData": [
                         {
                             "id": "3dcW4ets6FUgMbJr",
-                            "name": "Transmutacja Chamonu",
+                            "name": "Transmutacja (Zwiększenie PP)",
                             "script": "[Script.1ZrzpfVwPJHdwp23]"
                         }
                     ]
@@ -4422,12 +4422,12 @@
                     "scriptData": [
                         {
                             "id": "P9etlFW2PaP0Wsq5",
-                            "name": "Transmutacja Chamonu",
+                            "name": "Ignoruj Bomus Wt",
                             "script": "[Script.McLR9YcgVUG3MooC]"
                         },
                         {
                             "id": "P9etlFW2PaP0Wsq5",
-                            "name": "Transmutacja Chamonu",
+                            "name": "Dodaj Stany",
                             "script": "[Script.RqWnhnwFxaHubgiA]"
                         }
                     ]
@@ -4451,7 +4451,7 @@
                     "scriptData": [
                         {
                             "id": "bsxBmkm57zC9wSE8",
-                            "name": "Niezdarność (Cień)",
+                            "name": "Niezdarność",
                             "script": "[Script.3TesBGh8HnlGuafu]"
                         }
                     ],
@@ -4542,7 +4542,7 @@
                     "scriptData": [
                         {
                             "id": "XN5cYK2IuNZ6f9dX",
-                            "name": "Pancerz Eteru (Demonologia)",
+                            "name": "Pancerz Eteru",
                             "script": "[Script.1ZrzpfVwPJHdwp23]"
                         }
                     ],
@@ -4596,7 +4596,7 @@
                     "scriptData": [
                         {
                             "id": "SZr8AV9YZ80ORpeL",
-                            "name": "Straszny wygląd (Demonologia)",
+                            "name": "Straszny wygląd",
                             "script": "[Script.w3r54pKZQKaH2Yer]"
                         }
                     ],
@@ -4621,7 +4621,7 @@
                     "scriptData": [
                         {
                             "id": "6gI1W6kvtj350VyK",
-                            "name": "Magiczna tarcza (Życie)",
+                            "name": "Rozproszenie",
                             "script": "[Script.2OqLHRqEBEjBm2LW]",
                             "hideScript": "[Script.JjDzMnUxaWQePIYh]"
                         }
@@ -4650,7 +4650,7 @@
                     "scriptData": [
                         {
                             "id": "bkmkylhJFibDOrzb",
-                            "name": "Straszny wygląd (Światło)",
+                            "name": "Straszny wygląd",
                             "script": "[Script.w3r54pKZQKaH2Yer]"
                         }
                     ],
@@ -4697,7 +4697,7 @@
                     "scriptData": [
                         {
                             "id": "yxLhiefzdXazt0es",
-                            "name": "Magiczna tarcza (Światło)",
+                            "name": "Rozproszenie",
                             "script": "[Script.2OqLHRqEBEjBm2LW]",
                             "hideScript": "[Script.JjDzMnUxaWQePIYh]"
                         }
@@ -4717,7 +4717,7 @@
                     "scriptData": [
                         {
                             "id": "hvpAaik3DR0dICmf",
-                            "name": "Straszny wygląd (Życie)",
+                            "name": "Straszny wygląd",
                             "script": "[Script.w3r54pKZQKaH2Yer]"
                         }
                     ],
@@ -4829,7 +4829,7 @@
                     "scriptData": [
                         {
                             "id": "6ESOFlVRjIopuK05",
-                            "name": "Kopuła (Śmierć)",
+                            "name": "Kopuła",
                             "script": "[Script.qmOt7h17hGAKqQe0]"
                         }
                     ],
@@ -4953,7 +4953,7 @@
                     "scriptData": [
                         {
                             "id": "qPDK4TpuhAiEsNuj",
-                            "name": "Żrąca krew (Ogień)",
+                            "name": "Żrąca krew",
                             "script": "[Script.QwHoqu2oO8QO8Mad]"
                         }
                     ],
@@ -4978,7 +4978,7 @@
                     "scriptData": [
                         {
                             "id": "lRK2UmOVYuXLjUWD",
-                            "name": "Niezdarność (Niebiosa)",
+                            "name": "Niezdarność",
                             "script": "[Script.3TesBGh8HnlGuafu]"
                         }
                     ],
@@ -5023,7 +5023,7 @@
                     "scriptData": [
                         {
                             "id": "CuLX8URyAmWi4ty0",
-                            "name": "Widzenie w ciemności (Guślarstwo)",
+                            "name": "Widzenie w Mroku",
                             "script": "[Script.sHfkTRqTWPg2JAGN]"
                         }
                     ],
@@ -5064,7 +5064,7 @@
                     "scriptData": [
                         {
                             "id": "vC9zu0ID04uFFu5g",
-                            "name": "Pancerz Eteru (Guślarstwo)",
+                            "name": "Pancerz Eteru",
                             "script": "[Script.1ZrzpfVwPJHdwp23]"
                         }
                     ],
@@ -5093,7 +5093,7 @@
                         },
                         {
                             "id": "TQBQTcM5ZsdKnmHg",
-                            "name": "Purpurowy całun",
+                            "name": "Strach",
                             "script": "[Script.SLy1Fs3oXcHgFgjK]"
                         }
                     ]
@@ -5126,7 +5126,7 @@
                     "scriptData": [
                         {
                             "id": "hdIILBAbl5hilsOR",
-                            "name": "Niezdarność (Demonologia)",
+                            "name": "Niezdarność",
                             "script": "[Script.3TesBGh8HnlGuafu]"
                         }
                     ],
@@ -5148,7 +5148,7 @@
                     "scriptData": [
                         {
                             "id": "9zuHzPmx0NnskUWZ",
-                            "name": "Odepchnięcie (Śmierć)",
+                            "name": "Odepchnięcie",
                             "script": "[Script.SSqGxyN9hw0HDmED]"
                         }
                     ],
@@ -5178,7 +5178,7 @@
                     "scriptData": [
                         {
                             "id": "T0jvz85Sk2284U7X",
-                            "name": "Żrąca krew (Śmierć)",
+                            "name": "Żrąca krew",
                             "script": "[Script.QwHoqu2oO8QO8Mad]"
                         }
                     ],
@@ -5200,7 +5200,7 @@
                     "scriptData": [
                         {
                             "id": "bTCnO5MmRR8ilreD",
-                            "name": "Pochwycenie (Światło)",
+                            "name": "Pochwycenie",
                             "script": "[Script.AI6bFrjWk4NH9FBd]"
                         }
                     ],
@@ -5232,7 +5232,7 @@
                     "scriptData": [
                         {
                             "id": "827sxj7s4rHDl8FD",
-                            "name": "Przerażający wygląd (Życie)",
+                            "name": "Przerażający wygląd",
                             "script": "[Script.8wG9l4T9fc1bM0TN]"
                         }
                     ],
@@ -5275,7 +5275,7 @@
                     "scriptData": [
                         {
                             "id": "IrSnPGa2IyNqlP93",
-                            "name": "Kopuła (Ogień)",
+                            "name": "Kopuła",
                             "script": "[Script.qmOt7h17hGAKqQe0]"
                         }
                     ],
@@ -5296,7 +5296,7 @@
                 "ZZFyeE1lhRrCuYmW": {
                     "scriptData": [
                         {
-                            "name": "Odepchnięcie (Życie)",
+                            "name": "Odepchnięcie",
                             "id": "ZZFyeE1lhRrCuYmW",
                             "script": "[Script.SSqGxyN9hw0HDmED]"
                         }
@@ -5329,7 +5329,7 @@
                     "scriptData": [
                         {
                             "id": "MmcZ4nslDScgBkhs",
-                            "name": "Odepchnięcie (Metal)",
+                            "name": "Odepchnięcie",
                             "script": "[Script.SSqGxyN9hw0HDmED]"
                         }
                     ],
@@ -5352,7 +5352,7 @@
                     "scriptData": [
                         {
                             "id": "WfUd2hDRyNq6A72i",
-                            "name": "Kopuła (Nekromancja)",
+                            "name": "Kopuła",
                             "script": "[Script.qmOt7h17hGAKqQe0]"
                         }
                     ],
@@ -5371,7 +5371,7 @@
                     "scriptData": [
                         {
                             "id": "bfknISl6e0tRXVtp",
-                            "name": "Przerażający wygląd (Nekromancja)",
+                            "name": "Przerażający wygląd",
                             "script": "[Script.8wG9l4T9fc1bM0TN]"
                         }
                     ],
@@ -5396,7 +5396,7 @@
                     "scriptData": [
                         {
                             "id": "Hfni32tmNowj4vz4",
-                            "name": "Magiczna ochrona (Światło)",
+                            "name": "Ochrona",
                             "script": "[Script.d6mVm08o8SeklAcW]"
                         }
                     ],
@@ -5424,7 +5424,7 @@
                     "scriptData": [
                         {
                             "id": "nByzf6O64Kb39U20",
-                            "name": "Pancerz Eteru (Czarownictwo)",
+                            "name": "Pancerz Eteru",
                             "script": "[Script.1ZrzpfVwPJHdwp23]"
                         }
                     ],
@@ -5446,7 +5446,7 @@
                     "scriptData": [
                         {
                             "id": "c1XVrcvKxEFkbVNK",
-                            "name": "Pochwycenie (Guślarstwo)",
+                            "name": "Pochwycenie",
                             "script": "[Script.AI6bFrjWk4NH9FBd]"
                         }
                     ],
@@ -5545,7 +5545,7 @@
                     "scriptData": [
                         {
                             "id": "GgtYbVMhm4tyxERG",
-                            "name": "Kopuła (Niebiosa)",
+                            "name": "Kopuła",
                             "script": "[Script.qmOt7h17hGAKqQe0]"
                         }
                     ],
@@ -5652,7 +5652,7 @@
                     "scriptData": [
                         {
                             "id": "zWEYwMYf27yzto2L",
-                            "name": "Niszczyciel Strzał (Życie)",
+                            "name": "Niszczyciel Strzał",
                             "script": "[Script.naF5EWr1CBkYRZTK]"
                         }
                     ],
@@ -5784,7 +5784,7 @@
                         },
                         {
                             "id": "PN345hPPQdbkVjii",
-                            "name": "Strefa zamętu",
+                            "name": "Oszołomienie",
                             "script": "[Script.a7pEvCycVnFBXGAQ]"
                         }
                     ],
@@ -5836,7 +5836,7 @@
                     "scriptData": [
                         {
                             "id": "kr6JLNSSf86IV0ey",
-                            "name": "Odepchnięcie (Guślarstwo)",
+                            "name": "Odepchnięcie",
                             "script": "[Script.SSqGxyN9hw0HDmED]"
                         }
                     ],
@@ -5881,7 +5881,7 @@
                     "scriptData": [
                         {
                             "id": "d1T2Ams7OOaJtNTK",
-                            "name": "Magiczna ochrona (Zwierzęta)",
+                            "name": "Ochrona",
                             "script": "[Script.d6mVm08o8SeklAcW]"
                         }
                     ],
@@ -5903,7 +5903,7 @@
                     "scriptData": [
                         {
                             "id": "AUi64HpRvGk7UpUR",
-                            "name": "Magiczna ochrona (Niebiosa)",
+                            "name": "Ochrona",
                             "script": "[Script.d6mVm08o8SeklAcW]"
                         }
                     ],
@@ -5922,7 +5922,7 @@
                     "scriptData": [
                         {
                             "id": "EdigIeavWdwPkRMu",
-                            "name": "Straszny wygląd (Czarownictwo)",
+                            "name": "Straszny wygląd",
                             "script": "[Script.w3r54pKZQKaH2Yer]"
                         }
                     ],
@@ -5978,7 +5978,7 @@
                     "scriptData": [
                         {
                             "id": "KVdhIQENPruyBarF",
-                            "name": "Magiczna broń (Zwierzęta)",
+                            "name": "Magiczna broń",
                             "script": "[Script.RHyBLYT5oHf7EPnG]"
                         }
                     ],
@@ -6009,12 +6009,12 @@
                     "scriptData": [
                         {
                             "id": "7SfzLW4YpArHqagJ",
-                            "name": "Tarcza Aqshy",
+                            "name": "Magiczna ochrona",
                             "script": "[Script.6kifXp2jXEaQVJsg]"
                         },
                         {
                             "id": "7SfzLW4YpArHqagJ",
-                            "name": "Tarcza Aqshy",
+                            "name": "Ignoruj Stan Podpalenia",
                             "script": "[Script.sNSfDBIA2k17hPYI]"
                         }
                     ],
@@ -6036,7 +6036,7 @@
                     "scriptData": [
                         {
                             "id": "M6l4n4QUFvSs1kNx",
-                            "name": "Magiczna broń (Życie)",
+                            "name": "Magiczna broń",
                             "script": "[Script.RHyBLYT5oHf7EPnG]"
                         }
                     ],
@@ -6100,7 +6100,7 @@
                     "scriptData": [
                         {
                             "id": "0YpCdGEHf0X3EnKy",
-                            "name": "Magiczna ochrona (Ogień)",
+                            "name": "Ochrona",
                             "script": "[Script.d6mVm08o8SeklAcW]"
                         }
                     ],
@@ -6122,7 +6122,7 @@
                     "scriptData": [
                         {
                             "id": "DzSaZHbdsaz6ELtg",
-                            "name": "Widzenie w ciemności (Ogień)",
+                            "name": "Widzenie w Mroku",
                             "script": "[Script.sHfkTRqTWPg2JAGN]"
                         }
                     ],
@@ -6144,12 +6144,12 @@
                     "scriptData": [
                         {
                             "id": "P6oXjqmgBVCgxLhm",
-                            "name": "Lśniąca szata",
+                            "name": "Początkowa wartość Ochrony",
                             "script": "[Script.j3zDMWkns32Yrxn3]"
                         },
                         {
                             "id": "P6oXjqmgBVCgxLhm",
-                            "name": "Lśniąca szata",
+                            "name": "Zastosuj Ochronę",
                             "script": "[Script.cK1Jysfu5IMUUH0C]"
                         }
                     ],
@@ -6170,7 +6170,7 @@
                 "PtQTUTcrOGEFC6r1": {
                     "scriptData": [
                         {
-                            "name": "Magiczna broń (Czarownictwo)",
+                            "name": "Magiczna broń",
                             "id": "PtQTUTcrOGEFC6r1",
                             "script": "[Script.RHyBLYT5oHf7EPnG]"
                         }
@@ -6195,7 +6195,7 @@
                         },
                         {
                             "id": "HFdnOZq5kEVY6OuL",
-                            "name": "Pieszczota Laniph",
+                            "name": "Ignoruj PP i Bons z Wt",
                             "script": "[Script.QbIYnshWeP1U8SUy]"
                         }
                     ],
@@ -6227,7 +6227,7 @@
                     "scriptData": [
                         {
                             "id": "kdJqiwGR4T8afYdM",
-                            "name": "Żrąca krew (Guślarstwo)",
+                            "name": "Żrąca krew",
                             "script": "[Script.QwHoqu2oO8QO8Mad]"
                         }
                     ],
@@ -6284,7 +6284,7 @@
                     "scriptData": [
                         {
                             "id": "TYow8qFRyMONw08Y",
-                            "name": "Niszczyciel Strzał (Guślarstwo)",
+                            "name": "Niszczyciel Strzał",
                             "script": "[Script.naF5EWr1CBkYRZTK]"
                         }
                     ],
@@ -6347,7 +6347,7 @@
                     "scriptData": [
                         {
                             "id": "2sSxVty0HRBbwEHL",
-                            "name": "Magiczna broń (Metal)",
+                            "name": "Magiczna broń",
                             "script": "[Script.RHyBLYT5oHf7EPnG]"
                         }
                     ],
@@ -6369,7 +6369,7 @@
                     "scriptData": [
                         {
                             "id": "ub3UquG1hH8SDjLt",
-                            "name": "Odepchnięcie (Światło)",
+                            "name": "Odepchnięcie",
                             "script": "[Script.SSqGxyN9hw0HDmED]"
                         }
                     ],
@@ -6402,7 +6402,7 @@
                     "scriptData": [
                         {
                             "id": "Us02PKKZJu2Uaxao",
-                            "name": "Magiczna ochrona (Demonologia)",
+                            "name": "Ochrona",
                             "script": "[Script.d6mVm08o8SeklAcW]"
                         }
                     ],
@@ -6421,7 +6421,7 @@
                     "scriptData": [
                         {
                             "id": "Bgb1EcNJlFu4wZ94",
-                            "name": "Pochwycenie (Czarownictwo)",
+                            "name": "Pochwycenie",
                             "script": "[Script.AI6bFrjWk4NH9FBd]"
                         }
                     ],
@@ -6446,7 +6446,7 @@
                     "scriptData": [
                         {
                             "id": "7HVppZJ50MrBn6oS",
-                            "name": "Niszczyciel strzał (Czarownictwo)",
+                            "name": "Niszczyciel Strzał",
                             "script": "[Script.naF5EWr1CBkYRZTK]"
                         }
                     ],
@@ -6500,7 +6500,7 @@
                     "scriptData": [
                         {
                             "id": "XuCxx5xXIP3hcsDa",
-                            "name": "Niszczyciel Strzał (Demonologia)",
+                            "name": "Niszczyciel Strzał",
                             "script": "[Script.naF5EWr1CBkYRZTK]"
                         }
                     ],
@@ -6603,7 +6603,7 @@
                         },
                         {
                             "id": "SCQe2V2T0STbxyrD",
-                            "name": "Niebiańska tarcza",
+                            "name": "Niebiańskie obrażenia",
                             "script": "[Script.Cjj4iLkdY1NaZRCi]"
                         }
                     ],
@@ -6651,7 +6651,7 @@
                     "scriptData": [
                         {
                             "id": "DFKGSUFwUVlkrDMt",
-                            "name": "Uszkodzenie Pancerza",
+                            "name": "Gnicie",
                             "script": "[Script.1wrPvP6lJwIAfmsl]"
                         }
                     ],
@@ -6674,7 +6674,7 @@
                     "scriptData": [
                         {
                             "id": "SHfgFfFjy3LPZcbn",
-                            "name": "Widzenie w ciemności (Światło)",
+                            "name": "Widzenie w Mroku",
                             "script": "[Script.sHfkTRqTWPg2JAGN]"
                         }
                     ],
@@ -6695,7 +6695,7 @@
                     "scriptData": [
                         {
                             "id": "66ekfI3zFgYh6OkE",
-                            "name": "Straszny wygląd (Zwierzęta)",
+                            "name": "Straszny wygląd",
                             "script": "[Script.w3r54pKZQKaH2Yer]"
                         }
                     ]
@@ -6846,7 +6846,7 @@
                     "scriptData": [
                         {
                             "id": "pPiCdtq7UEorxdC4",
-                            "name": "Magiczna tarcza (Metal)",
+                            "name": "Rozproszenie",
                             "script": "[Script.2OqLHRqEBEjBm2LW]",
                             "hideScript": "[Script.JjDzMnUxaWQePIYh]"
                         }
@@ -6935,7 +6935,7 @@
                     "scriptData": [
                         {
                             "id": "6gCW5UI0VvFvdg6p",
-                            "name": "Żrąca krew (Nekromancja)",
+                            "name": "Żrąca krew",
                             "script": "[Script.QwHoqu2oO8QO8Mad]"
                         }
                     ],
@@ -6957,7 +6957,7 @@
                     "scriptData": [
                         {
                             "id": "L7cmiQJyduuy5yX2",
-                            "name": "Żrąca krew (Cień)",
+                            "name": "Żrąca krew",
                             "script": "[Script.QwHoqu2oO8QO8Mad]"
                         }
                     ],
@@ -6988,7 +6988,7 @@
                     "scriptData": [
                         {
                             "id": "84vwr1GgFvR2GsOD",
-                            "name": "Pancerz Eteru (Ogień)",
+                            "name": "Pancerz Eteru",
                             "script": "[Script.1ZrzpfVwPJHdwp23]"
                         }
                     ],
@@ -7013,7 +7013,7 @@
                     "scriptData": [
                         {
                             "id": "LLSTGmlrHxWMyTZD",
-                            "name": "Niszczyciel strzał (Czarownictwo)",
+                            "name": "Niszczyciel Strzał",
                             "script": "[Script.naF5EWr1CBkYRZTK]"
                         }
                     ],
@@ -7039,7 +7039,7 @@
                             "script": "[Script.52kbfuWrOh6dsTtd]"
                         },
                         {
-                            "name": "Uczta kruków",
+                            "name": "Usunięcie",
                             "script": "[Script.CDASLC4fWKSGQKf9]",
                             "id": "gGxgfn6fxA0gZjY1"
                         }
@@ -7064,7 +7064,7 @@
                     "scriptData": [
                         {
                             "id": "Ljp0hDFhffTnqY1O",
-                            "name": "Niszczyciel Strzał (Światło)",
+                            "name": "Niszczyciel Strzał",
                             "script": "[Script.naF5EWr1CBkYRZTK]"
                         }
                     ],
@@ -7086,7 +7086,7 @@
                     "scriptData": [
                         {
                             "id": "04J17HSwQnbCdvar",
-                            "name": "Niezdarność (Metal)",
+                            "name": "Niezdarność",
                             "script": "[Script.3TesBGh8HnlGuafu]"
                         }
                     ],
@@ -7108,7 +7108,7 @@
                     "scriptData": [
                         {
                             "id": "kHHhy6V8OPhun6bu",
-                            "name": "Widzenie w ciemności (Życie)",
+                            "name": "Widzenie w Mroku",
                             "script": "[Script.sHfkTRqTWPg2JAGN]"
                         }
                     ],
@@ -7137,7 +7137,7 @@
                     "scriptData": [
                         {
                             "id": "CTttcf8bbxqzpnrJ",
-                            "name": "Straszny wygląd (Guślarstwo)",
+                            "name": "Straszny wygląd",
                             "script": "[Script.w3r54pKZQKaH2Yer]"
                         }
                     ],
@@ -7167,25 +7167,25 @@
                         },
                         {
                             "id": "PvKQwvnydQ7Fbxlo",
-                            "name": "Klątwa porażającego bólu",
+                            "name": "(Noga) Ruch zmniejszony o połowę",
                             "script": "[Script.HOt2hHOiHDZ7oBgW]"
                         },
                         {
                             "id": "PvKQwvnydQ7Fbxlo",
-                            "name": "Klątwa porażającego bólu",
+                            "name": "Testy oparte na mobilności",
                             "script": "[Script.ipkkRffJh61WE7zR]",
                             "activationScript": "[Script.YFSgWRXel0bWE3EE]",
                             "hideScript": "[Script.2Qi1hwLYhdE6v6Hs]"
                         },
                         {
                             "id": "PvKQwvnydQ7Fbxlo",
-                            "name": "Klątwa porażającego bólu",
+                            "name": "Testy wymagające obu rąk",
                             "script": "[Script.GAO8AozttWOyRkta]",
                             "hideScript": "[Script.z926Cl2vxUfyLY0V]"
                         },
                         {
                             "id": "PvKQwvnydQ7Fbxlo",
-                            "name": "Klątwa porażającego bólu",
+                            "name": "Bezużyteczna ręka",
                             "script": "[Script.VKpKq4RSbI1KkUQK]"
                         }
                     ],
@@ -7207,7 +7207,7 @@
                     "scriptData": [
                         {
                             "id": "RLBANkQIxxJGScd5",
-                            "name": "Magiczna broń (Demonologia)",
+                            "name": "Magiczna broń",
                             "script": "[Script.RHyBLYT5oHf7EPnG]"
                         }
                     ],
@@ -7239,7 +7239,7 @@
                     "scriptData": [
                         {
                             "id": "3p5MDoKzHR3EEJ0H",
-                            "name": "Niszczyciel Strzał (Śmierć)",
+                            "name": "Niszczyciel Strzał",
                             "script": "[Script.naF5EWr1CBkYRZTK]"
                         }
                     ],
@@ -7283,7 +7283,7 @@
                     "scriptData": [
                         {
                             "id": "7ezLLIq97hr1UVOt",
-                            "name": "Kopuła (Cień)",
+                            "name": "Kopuła",
                             "script": "[Script.qmOt7h17hGAKqQe0]"
                         }
                     ],
@@ -7302,7 +7302,7 @@
                     "scriptData": [
                         {
                             "id": "PSf11k3Vg2vUxUwc",
-                            "name": "Przerażający wygląd (Guślarstwo)",
+                            "name": "Przerażający wygląd",
                             "script": "[Script.8wG9l4T9fc1bM0TN]"
                         }
                     ],
@@ -7328,13 +7328,13 @@
                             "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         },
                         {
-                            "name": "Klątwa pecha",
+                            "name": "Brak punktów szczęścia",
                             "id": "zFqJGepPilWiSBCm",
                             "script": "[Script.DMQ0taEpBUJU5njV]"
                         },
                         {
                             "id": "zFqJGepPilWiSBCm",
-                            "name": "Klątwa pecha",
+                            "name": "Nie można edytować punktów szczęścia",
                             "script": "[Script.6xTtJEhRc4OjcDTf]"
                         }
                     ],

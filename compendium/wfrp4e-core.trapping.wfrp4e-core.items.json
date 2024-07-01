@@ -175,19 +175,19 @@
                     "scriptData": [
                         {
                             "id": "2V9aoWM8eH3ezQh1",
-                            "name": "Korzeń mandragory",
+                            "name": "Koniec Rundy",
                             "script": "[Script.EdTChmSouS0MSmk5]"
                         },
                         {
                             "id": "2V9aoWM8eH3ezQh1",
-                            "name": "Korzeń mandragory",
+                            "name": "Bonus do testów opanowania",
                             "script": "[Script.u6CYMSZADrfXd48Q]",
                             "activationScript": "[Script.7H6wYyJ6cpaoc2QQ]",
                             "hideScript": "[Script.XuFxKPYheYF4WMmQ]"
                         },
                         {
                             "id": "2V9aoWM8eH3ezQh1",
-                            "name": "Korzeń mandragory",
+                            "name": "Ruch zmniejszony o połowę",
                             "script": "[Script.dqvHDMlcitLx1pUx]"
                         }
                     ],
@@ -198,7 +198,7 @@
                     "scriptData": [
                         {
                             "id": "RyXKKxNWlNwsNxv7",
-                            "name": "Zastosuj Korzeń mandragory",
+                            "name": "@effect.name",
                             "script": "[Script.AqHLHp4kH6KULk3e]"
                         }
                     ],
@@ -335,17 +335,17 @@
                     "scriptData": [
                         {
                             "id": "BegI1DfjEGg5y1RX",
-                            "name": "Lampa Sztormowa",
+                            "name": "Włącz latarnię burzową",
                             "script": "[Script.AS7CstSosuCrwZ19]"
                         },
                         {
                             "id": "BegI1DfjEGg5y1RX",
-                            "name": "Lampa Sztormowa",
+                            "name": "Włącz Latarnię Burzową (Promień)",
                             "script": "[Script.CMUFtmNA1kkD1ay7]"
                         },
                         {
                             "id": "BegI1DfjEGg5y1RX",
-                            "name": "Lampa Sztormowa",
+                            "name": "Wyłącz latarnię burzową",
                             "script": "[Script.hK0YMJfYbpbJZizO]"
                         }
                     ]
@@ -561,12 +561,12 @@
                         },
                         {
                             "id": "L4iaGjmt224RgWhW",
-                            "name": "Grzybki Szalonego Kapelusznika",
+                            "name": "Szał Bojowy",
                             "script": "[Script.aMHGjWyn6BXCI4pw]"
                         },
                         {
                             "id": "L4iaGjmt224RgWhW",
-                            "name": "Grzybki Szalonego Kapelusznika",
+                            "name": "Efekt usunięty",
                             "script": "[Script.2sDH6RvoOAR40oqH]"
                         }
                     ],
@@ -577,7 +577,7 @@
                     "scriptData": [
                         {
                             "id": "RmNoZUc1wPx1kcmk",
-                            "name": "Zastosuj Grzybki Szalonego Kapelusznika",
+                            "name": "@effect.name",
                             "script": "[Script.AqHLHp4kH6KULk3e]"
                         }
                     ],
@@ -779,7 +779,7 @@
                     "scriptData": [
                         {
                             "id": "KQao0JiA57ipslnJ",
-                            "name": "Zastosuj Mikstura lecznicza",
+                            "name": "@effect.name",
                             "script": "[Script.xUpKYT7BZCSmAfUy]"
                         }
                     ],
@@ -926,7 +926,7 @@
                     "scriptData": [
                         {
                             "id": "6ER1r3gah7XwnNBY",
-                            "name": "Zwijane posłanie",
+                            "name": "Testy odporności związane z ekspozycją na zimno",
                             "script": "[Script.u6CYMSZADrfXd48Q]",
                             "hideScript": "[Script.PdClojv7yNgQpOUc]"
                         }
@@ -974,7 +974,7 @@
                     "scriptData": [
                         {
                             "id": "6uP7rREK03gthlAq",
-                            "name": "Sercobój",
+                            "name": "Zatrucie",
                             "script": "[Script.skVq3eDEYKFF2iZp]"
                         }
                     ],
@@ -985,7 +985,7 @@
                     "scriptData": [
                         {
                             "id": "mZjdxfvuZ8ez5djz",
-                            "name": "Zastosuj Sercobój",
+                            "name": "@effect.name",
                             "script": "[Script.G7sFEnJlXZvfXL3V]"
                         }
                     ],
@@ -1012,7 +1012,7 @@
                     "scriptData": [
                         {
                             "id": "TApb9RQHQJcksYYL",
-                            "name": "Rozkosz Ranalda",
+                            "name": "Zastosuj po zakończeniu efektu",
                             "script": "[Script.yzN7ZNlgCiSVJqsU]"
                         }
                     ]
@@ -1025,7 +1025,7 @@
                     "scriptData": [
                         {
                             "id": "Bx8xTxlLwCu24IUS",
-                            "name": "Wciągnij Rozkosz Ranalda",
+                            "name": "@effect.name",
                             "script": "[Script.qSwCYMMiIHmSV1X5]"
                         }
                     ],
@@ -1280,7 +1280,7 @@
                     "scriptData": [
                         {
                             "id": "ZnnZiIHuYkzxUKFZ",
-                            "name": "Zastosuj Salwort",
+                            "name": "@effect.name",
                             "script": "[Script.TBpNFRL5uehs0fze]"
                         }
                     ],
@@ -1335,7 +1335,7 @@
                     "scriptData": [
                         {
                             "id": "K0kAGUU2ptVMHSDf",
-                            "name": "Zastosuj Fakstoryl",
+                            "name": "@effect.name",
                             "script": "[Script.TBpNFRL5uehs0fze]"
                         }
                     ],
@@ -1481,7 +1481,7 @@
                     "scriptData": [
                         {
                             "id": "NyPpILiBcAdT06RZ",
-                            "name": "Zastosuj Czarny lotos",
+                            "name": "@effect.name",
                             "script": "[Script.G7sFEnJlXZvfXL3V]"
                         }
                     ],
@@ -1876,7 +1876,7 @@
                     "scriptData": [
                         {
                             "id": "76F3hl8iAvtCxKp9",
-                            "name": "Soczewki do czytania",
+                            "name": "Testy percepcji do wyszukiwania drobnych szczegółów",
                             "script": "[Script.u6CYMSZADrfXd48Q]",
                             "hideScript": "[Script.h0DfPwUUOBjyAHMZ]"
                         }
@@ -1911,7 +1911,7 @@
                     "scriptData": [
                         {
                             "id": "SQ8NfRku2VYsIWJf",
-                            "name": "Zastosuj Eliksir Żywotności",
+                            "name": "@effect.name",
                             "script": "[Script.xUpKYT7BZCSmAfUy]"
                         }
                     ],
@@ -1972,7 +1972,7 @@
         "Miscellaneous": "Różne",
         "Packs and Containers": "Plecaki i Pojemniki",
         "Tools and Kits": "Narzędzia i Zestawy",
-        "Chaos Magic": "Magia Chaosu",
+        "Chaos Magic": "Magia Chaosu (Dowolna)",
         "Lore of Beasts": "Tradycja Zwierząt",
         "Lore of Daemonology": "Tradycja Demonologii",
         "Lore of Death": "Tradycja Śmierci",

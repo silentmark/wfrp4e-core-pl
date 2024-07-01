@@ -26,7 +26,7 @@
                     "scriptData": [
                         {
                             "id": "ePWCYy91bIlgLAuC",
-                            "name": "Apatia",
+                            "name": "@effect.name",
                             "script": "\n                            let fatigued = this.actor.hasCondition(\"fatigued\")\nif (!fatigued ) {\n     this.actor.addCondition(\"fatigued \");\n     ui.notifications.notify(\"Zmęczenie dodane do \" + this.actor.name + \", które nie może zostać usunięte, dopóki objaw Apatia nie zostanie uleczony.\")\n}"
                         }
                     ]
@@ -37,7 +37,7 @@
                     "scriptData": [
                         {
                             "id": "ic0YA6zLG6U93jKa",
-                            "name": "Uciążliwa Rana",
+                            "name": "@effect.name",
                             "script": "\n                            let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {fields: {difficulty : \"average\"}, appendTitle : \" - Uciążliwa Rana\"});\nawait test.roll();\nif (test.failed) {\n    let disease = await fromUuid(\"Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb\");\n    this.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()]);\n    this.script.scriptNotification(\"Otrzymano \" + disease.name)\n}\n                            "
                         }
                     ]
@@ -68,16 +68,16 @@
                             "activationScript": "return [\"fel\"].includes(args.characteristic)",
                             "hideScript": "return ![\"fel\"].includes(args.characteristic)",
                             "id": "ptrOabNiyWL7rEpc",
-                            "name": "Gangrena"
+                            "name": "@effect.name"
                         },
                         {
                             "id": "ptrOabNiyWL7rEpc",
-                            "name": "Gangrena",
+                            "name": "Uciążliwa Rana",
                             "script": "\n                            let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {fields: {difficulty : \"average\"}, appendTitle : \" - Uciążliwa Rana\"});\nawait test.roll();\nif (test.failed) {\n    let disease = await fromUuid(\"Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb\");\n    this.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()]);\n    this.script.scriptNotification(\"Otrzymano \" + disease.name)\n}\n                            "
                         },
                         {
                             "id": "ptrOabNiyWL7rEpc",
-                            "name": "Gangrena",
+                            "name": "Uwiąd",
                             "script": "\n                            let difficulty = \"\";\nif (this.effect.name.includes(\"Umiarkowany\")) \n   difficulty = \"easy\"\nelse if (this.effect.name.includes(\"Poważny\"))\n    difficulty = \"average\"\nelse\n    difficulty = \"veasy\"\n\nlet test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {context : {failure : this.actor.name + \" Śmierć z powodu Uwiądu\"}, fields: {difficulty}, appendTitle : \" - Uwiąd\"})\nawait test.roll();\nif (test.failed) {\n    this.actor.addCondition(\"dead\");\n}\n                            "
                         }
                     ],
@@ -90,7 +90,7 @@
                     "scriptData": [
                         {
                             "id": "z5AgtIbyxIsIPO9g",
-                            "name": "Uwiąd (Umiarkowany)",
+                            "name": "@effect.name",
                             "script": "\n                            let difficulty = \"\";\nif (this.effect.name.includes(\"Umiarkowany\")) \n   difficulty = \"easy\"\nelse if (this.effect.name.includes(\"Poważny\"))\n    difficulty = \"average\"\nelse\n    difficulty = \"veasy\"\n\nlet test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {context : {failure : this.actor.name + \" Śmierć z powodu Uwiądu\"}, fields: {difficulty}, appendTitle : \" - Uwiąd\"})\nawait test.roll();\nif (test.failed) {\n    this.actor.addCondition(\"dead\");\n}\n                            "
                         }
                     ]
@@ -99,7 +99,7 @@
                     "scriptData": [
                         {
                             "id": "DpXDhNg4Fjx9UYWp",
-                            "name": "Dymienica",
+                            "name": "@effect.name",
                             "script": "args.fields.modifier -= 10",
                             "activationScript": "return [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
                             "hideScript": "return ![\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)"
@@ -114,7 +114,7 @@
                     "scriptData": [
                         {
                             "id": "Oy2lGDiuqwH6qzSL",
-                            "name": "Apatia",
+                            "name": "@effect.name",
                             "script": "\n                            let fatigued = this.actor.hasCondition(\"fatigued\")\nif (!fatigued ) {\n     this.actor.addCondition(\"fatigued \");\n     ui.notifications.notify(\"Zmęczenie dodane do \" + this.actor.name + \", które nie może zostać usunięte, dopóki objaw Apatia nie zostanie uleczony.\")\n}"
                         }
                     ]
@@ -125,7 +125,7 @@
                     "scriptData": [
                         {
                             "id": "tWV666SBeHQ1SkLQ",
-                            "name": "Gorączka",
+                            "name": "@effect.name",
                             "script": "args.fields.modifier -= 10",
                             "activationScript": "return [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
                             "hideScript": "return ![\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)"
@@ -157,7 +157,7 @@
                     "scriptData": [
                         {
                             "id": "WMvsbsArnzW4uGGK",
-                            "name": "Wysypka",
+                            "name": "@effect.name",
                             "script": "args.fields.modifier -= 10",
                             "activationScript": "return [\"fel\"].includes(args.characteristic)",
                             "hideScript": "return ![\"fel\"].includes(args.characteristic)"
@@ -185,7 +185,7 @@
                     "scriptData": [
                         {
                             "id": "2cNP9LYxSKX8l0qY",
-                            "name": "Apatia",
+                            "name": "@effect.name",
                             "script": "\n                            let fatigued = this.actor.hasCondition(\"fatigued\")\nif (!fatigued ) {\n     this.actor.addCondition(\"fatigued \");\n     ui.notifications.notify(\"Zmęczenie dodane do \" + this.actor.name + \", które nie może zostać usunięte, dopóki objaw Apatia nie zostanie uleczony.\")\n}"
                         }
                     ]
@@ -196,7 +196,7 @@
                     "scriptData": [
                         {
                             "id": "5Z1lQUDSnpiWw1qF",
-                            "name": "Gorączka",
+                            "name": "@effect.name",
                             "script": "args.fields.modifier -= 10",
                             "activationScript": "return [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
                             "hideScript": "return ![\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)"
@@ -210,7 +210,7 @@
                         {
                             "script": "                 \n                            if (args.test.failed) {\n    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"];\n    if (applicableCharacteristics.includes(args.test.characteristicKey)) {\n         this.actor.addCondition(\"stunned\");\n    }\n}",
                             "id": "8eOOrewdfHQnGzuQ",
-                            "name": "Mdłości"
+                            "name": "@effect.name"
                         }
                     ]
                 },
@@ -243,7 +243,7 @@
                     "scriptData": [
                         {
                             "id": "17RUu45P5uA9kmC9",
-                            "name": "Gorączka",
+                            "name": "@effect.name",
                             "script": "args.fields.modifier -= 10",
                             "activationScript": "return [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
                             "hideScript": "return ![\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)"
@@ -255,7 +255,7 @@
                     "scriptData": [
                         {
                             "id": "37nY0Zi5ERI09CIS",
-                            "name": "Uciążliwa Rana",
+                            "name": "@effect.name",
                             "script": "\n                            let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {fields: {difficulty : \"average\"}, appendTitle : \" - Uciążliwa Rana\"});\nawait test.roll();\nif (test.failed) {\n    let disease = await fromUuid(\"Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb\");\n    this.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()]);\n    this.script.scriptNotification(\"Otrzymano \" + disease.name)\n}\n                            "
                         }
                     ],
@@ -271,7 +271,7 @@
                     "scriptData": [
                         {
                             "id": "t0SLdIE243GN7XLn",
-                            "name": "Apatia",
+                            "name": "@effect.name",
                             "script": "\n                            let fatigued = this.actor.hasCondition(\"fatigued\")\nif (!fatigued ) {\n     this.actor.addCondition(\"fatigued \");\n     ui.notifications.notify(\"Zmęczenie dodane do \" + this.actor.name + \", które nie może zostać usunięte, dopóki objaw Apatia nie zostanie uleczony.\")\n}"
                         }
                     ]
@@ -297,7 +297,7 @@
                     "scriptData": [
                         {
                             "id": "bRuaAPrZHsDEX6Zb",
-                            "name": "Gorączka (Wysoka)",
+                            "name": "@effect.name",
                             "script": "[Script.ztIkD5Zt6ko9D4Ca]",
                             "activationScript": "[Script.OJMgS8ZQv0j4tEFf]",
                             "hideScript": "[Script.MgZreqq3Jua10c8s]"
@@ -311,7 +311,7 @@
                         {
                             "script": "[Script.cTYNaKbepMwqYsZ8]",
                             "id": "PegtWPt0NbSg6wGe",
-                            "name": "Uwiąd"
+                            "name": "@effect.name"
                         }
                     ]
                 },
@@ -321,7 +321,7 @@
                     "scriptData": [
                         {
                             "id": "REBWiDOWB2AJHvXd",
-                            "name": "Apatia",
+                            "name": "@effect.name",
                             "script": "[Script.UDPsaymtZf39UsMk]"
                         }
                     ]
@@ -348,7 +348,7 @@
                             "activationScript": "return [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
                             "hideScript": "return ![\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
                             "id": "5OCmYxeGpzmfmGjV",
-                            "name": "Gorączka"
+                            "name": "@effect.name"
                         }
                     ],
                     "id": "5OCmYxeGpzmfmGjV",
@@ -360,7 +360,7 @@
                     "scriptData": [
                         {
                             "id": "CLoy8f7nHklKCj6G",
-                            "name": "Apatia",
+                            "name": "@effect.name",
                             "script": "\n                            let fatigued = this.actor.hasCondition(\"fatigued\")\nif (!fatigued ) {\n     this.actor.addCondition(\"fatigued \");\n     ui.notifications.notify(\"Zmęczenie dodane do \" + this.actor.name + \", które nie może zostać usunięte, dopóki objaw Apatia nie zostanie uleczony.\")\n}"
                         }
                     ]
@@ -371,7 +371,7 @@
                     "scriptData": [
                         {
                             "id": "fToWKoDP5iitVHG6",
-                            "name": "Wysypka",
+                            "name": "@effect.name",
                             "script": "args.fields.modifier -= 10",
                             "activationScript": "return [\"fel\"].includes(args.characteristic)",
                             "hideScript": "return ![\"fel\"].includes(args.characteristic)"
@@ -383,7 +383,7 @@
                         {
                             "hideScript": "return ![\"ws\", \"bs\", \"s\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
                             "id": "JYIabBxFTtcxpD0B",
-                            "name": "Konwulsje",
+                            "name": "@effect.name",
                             "script": "\n                            let modifier = 0\nif (this.effect.name.includes(\"Umiarkowane\"))\n    modifier = -20\nelse\n     modifier = -10\nargs.fields.modifier += modifier\n                            ",
                             "activationScript": "return [\"ws\", \"bs\", \"s\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)"
                         }
@@ -397,7 +397,7 @@
                     "scriptData": [
                         {
                             "id": "zCyc1oUBKwVvqIGv",
-                            "name": "Uciążliwa Rana",
+                            "name": "@effect.name",
                             "script": "\n                            let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {fields: {difficulty : \"average\"}, appendTitle : \" - Uciążliwa Rana\"});\nawait test.roll();\nif (test.failed) {\n    let disease = await fromUuid(\"Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb\");\n    this.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()]);\n    this.script.scriptNotification(\"Otrzymano \" + disease.name)\n}\n                            "
                         }
                     ]
@@ -428,7 +428,7 @@
                 "c1jdey9wqtjX8wVk": {
                     "scriptData": [
                         {
-                            "name": "Mdłości",
+                            "name": "@effect.name",
                             "id": "c1jdey9wqtjX8wVk",
                             "script": "                 \n                            if (args.test.failed) {\n    let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"];\n    if (applicableCharacteristics.includes(args.test.characteristicKey)) {\n          this.actor.addCondition(\"stunned\");\n    }\n}"
                         }
@@ -442,7 +442,7 @@
                     "scriptData": [
                         {
                             "id": "omuEvjH0KtjLhdsh",
-                            "name": "Apatia",
+                            "name": "@effect.name",
                             "script": "\n                            let fatigued = this.actor.hasCondition(\"fatigued\")\nif (!fatigued ) {\n     this.actor.addCondition(\"fatigued \");\n     ui.notifications.notify(\"Zmęczenie dodane do \" + this.actor.name + \", które nie może zostać usunięte, dopóki objaw Apatia nie zostanie uleczony.\")\n}"
                         }
                     ]
@@ -468,7 +468,7 @@
                     "scriptData": [
                         {
                             "id": "Pj00cDfEiEMLPArP",
-                            "name": "Wysypka",
+                            "name": "@effect.name",
                             "script": "args.fields.modifier -= 10",
                             "activationScript": "return [\"fel\"].includes(args.characteristic)",
                             "hideScript": "return ![\"fel\"].includes(args.characteristic)"

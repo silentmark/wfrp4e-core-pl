@@ -20,12 +20,12 @@
                     "scriptData": [
                         {
                             "id": "1U0TCebQcwbYZgbm",
-                            "name": "Złamana Noga",
+                            "name": "Ruch zmniejszony o połowę",
                             "script": "[Script.9MDi3ok9gPwtbALf]"
                         },
                         {
                             "id": "1U0TCebQcwbYZgbm",
-                            "name": "Złamana Noga",
+                            "name": "Testy oparte na mobilności",
                             "script": "[Script.ipkkRffJh61WE7zR]",
                             "activationScript": "[Script.YFSgWRXel0bWE3EE]",
                             "hideScript": "[Script.WB6sIpLEPC8YPX67]"
@@ -48,14 +48,14 @@
                     "scriptData": [
                         {
                             "id": "guZjNzQMsZrHRQlf",
-                            "name": "Naderwany Mięsień Nogi",
+                            "name": "Korzystanie z zerwanego mięśnia (@item.system.location.value)",
                             "script": "[Script.0iTLDgFHO9Rgc010]",
                             "hideScript": "[Script.GrF6tQ08jgKmUH4i]",
                             "activationScript": "[Script.RNHrSTfMLXm5sXkC]"
                         },
                         {
                             "id": "guZjNzQMsZrHRQlf",
-                            "name": "Naderwany Mięsień Nogi",
+                            "name": "Ruch zmniejszony o połowę",
                             "script": "[Script.9MDi3ok9gPwtbALf]"
                         }
                     ],
@@ -75,13 +75,13 @@
                     "scriptData": [
                         {
                             "id": "4cxeGUZIHz247ikL",
-                            "name": "Złamana Ręka",
+                            "name": "Testy wymagające obu rąk",
                             "script": "[Script.GAO8AozttWOyRkta]",
                             "hideScript": "[Script.A3MW0UksYrHGa0Qw]"
                         },
                         {
                             "id": "4cxeGUZIHz247ikL",
-                            "name": "Złamana Ręka",
+                            "name": "Bezużyteczna Ręka",
                             "script": "[Script.xYTkj8jhSVOSoLbC]"
                         }
                     ],
@@ -102,12 +102,12 @@
                     "scriptData": [
                         {
                             "id": "Y0e3Yr7WmTCsoNs3",
-                            "name": "Złamana Noga",
+                            "name": "Ruch zmniejszony o połowę",
                             "script": "[Script.9MDi3ok9gPwtbALf]"
                         },
                         {
                             "id": "Y0e3Yr7WmTCsoNs3",
-                            "name": "Złamana Noga",
+                            "name": "Testy oparte na mobilności",
                             "script": "[Script.ipkkRffJh61WE7zR]",
                             "activationScript": "[Script.YFSgWRXel0bWE3EE]",
                             "hideScript": "[Script.WB6sIpLEPC8YPX67]"
@@ -130,7 +130,7 @@
                     "scriptData": [
                         {
                             "id": "GhPHrkhh8n84WJQG",
-                            "name": "Naderwany Mięsień Tułowia",
+                            "name": "Korzystanie z zerwanego mięśnia (@item.system.location.value)",
                             "script": "[Script.EYny6z5oTOhxGDfb]",
                             "activationScript": "[Script.RNHrSTfMLXm5sXkC]",
                             "hideScript": "[Script.GrF6tQ08jgKmUH4i]"
@@ -160,7 +160,7 @@
                         },
                         {
                             "id": "i6SjnYZ0pNeN8SNZ",
-                            "name": "Utracone Ucho",
+                            "name": "Kara za utratę ucha",
                             "script": "[Script.M2FshTX4PjKFVU8y]",
                             "activationScript": "[Script.afdmOvPGMpEdZvCb]",
                             "hideScript": "[Script.U78c4oUjKwyUu6jT]"
@@ -203,7 +203,7 @@
                     "scriptData": [
                         {
                             "id": "VczyyG2FDfvOQflT",
-                            "name": "Naderwany Mięsień Tułowia",
+                            "name": "Korzystanie z zerwanego mięśnia (@item.system.location.value)",
                             "script": "[Script.0iTLDgFHO9Rgc010]",
                             "activationScript": "[Script.RNHrSTfMLXm5sXkC]",
                             "hideScript": "[Script.GrF6tQ08jgKmUH4i]"
@@ -244,7 +244,7 @@
                     "scriptData": [
                         {
                             "id": "l98TlfKtUDTwAT58",
-                            "name": "Naderwany Mięsień Ręki",
+                            "name": "Korzystanie z zerwanego mięśnia (@item.system.location.value)",
                             "script": "[Script.EYny6z5oTOhxGDfb]",
                             "activationScript": "[Script.nxNqWmmF6mJTnrLo]",
                             "hideScript": "[Script.A3MW0UksYrHGa0Qw]"
@@ -269,12 +269,12 @@
                     "scriptData": [
                         {
                             "id": "vFwI36wK9QnfgLGG",
-                            "name": "Amputowana stopa",
+                            "name": "Ruch zmniejszony o połowę",
                             "script": "[Script.9MDi3ok9gPwtbALf]"
                         },
                         {
                             "id": "vFwI36wK9QnfgLGG",
-                            "name": "Amputowana stopa",
+                            "name": "Testy oparte na mobilności",
                             "script": "[Script.ipkkRffJh61WE7zR]",
                             "activationScript": "[Script.YFSgWRXel0bWE3EE]",
                             "hideScript": "[Script.QaGNsqKm2Nf0zGVm]"
@@ -300,7 +300,7 @@
                             "activationScript": "[Script.4iuTz0uInAfMaoGl]",
                             "hideScript": "[Script.f3rXusHh6VIpVPUl]",
                             "id": "WLwNpLVQX79yOsdJ",
-                            "name": "Pęknięta Czaszka"
+                            "name": "Kara do testów języka (każdego)"
                         }
                     ]
                 }
@@ -320,12 +320,12 @@
                     "scriptData": [
                         {
                             "id": "p9uFm2XY1RGrjStF",
-                            "name": "Amputowana noga",
+                            "name": "Ruch zmniejszony o połowę",
                             "script": "[Script.9MDi3ok9gPwtbALf]"
                         },
                         {
                             "id": "p9uFm2XY1RGrjStF",
-                            "name": "Amputowana noga",
+                            "name": "Testy oparte na mobilności",
                             "script": "[Script.ipkkRffJh61WE7zR]",
                             "activationScript": "[Script.YFSgWRXel0bWE3EE]",
                             "hideScript": "[Script.WB6sIpLEPC8YPX67]"
@@ -348,13 +348,13 @@
                     "scriptData": [
                         {
                             "id": "qPV4jIDGN9onOAYV",
-                            "name": "Amputowane ramię",
+                            "name": "Testy wymagające obu rąk",
                             "script": "[Script.GAO8AozttWOyRkta]",
                             "hideScript": "[Script.A3MW0UksYrHGa0Qw]"
                         },
                         {
                             "id": "qPV4jIDGN9onOAYV",
-                            "name": "Amputowane ramię",
+                            "name": "Bezużyteczna Ręka",
                             "script": "[Script.OnkEe4ISru1hjJWP]"
                         }
                     ]
@@ -373,7 +373,7 @@
                     "scriptData": [
                         {
                             "id": "aMOyZiEo22ssVydL",
-                            "name": "Pęknięta Czaszka",
+                            "name": "Kara do testów języka (każdego)",
                             "script": "[Script.qZschZU0nee0kJlk]",
                             "activationScript": "[Script.4iuTz0uInAfMaoGl]",
                             "hideScript": "[Script.f3rXusHh6VIpVPUl]"
@@ -396,14 +396,14 @@
                     "scriptData": [
                         {
                             "id": "Rsf3AbJfqBJBvCx8",
-                            "name": "Naderwany Mięsień Nogi",
+                            "name": "Korzystanie z zerwanego mięśnia (@item.system.location.value)",
                             "script": "[Script.EYny6z5oTOhxGDfb]",
                             "activationScript": "[Script.RNHrSTfMLXm5sXkC]",
                             "hideScript": "[Script.GrF6tQ08jgKmUH4i]"
                         },
                         {
                             "id": "Rsf3AbJfqBJBvCx8",
-                            "name": "Naderwany Mięsień Nogi",
+                            "name": "Ruch zmniejszony o połowę",
                             "script": "[Script.9MDi3ok9gPwtbALf]"
                         }
                     ],
@@ -447,7 +447,7 @@
                     "scriptData": [
                         {
                             "id": "GUbysJIeA44LNOIq",
-                            "name": "Naderwany Mięsień Ręki",
+                            "name": "Korzystanie z zerwanego mięśnia (@item.system.location.value)",
                             "script": "[Script.0iTLDgFHO9Rgc010]",
                             "activationScript": "[Script.nxNqWmmF6mJTnrLo]",
                             "hideScript": "[Script.A3MW0UksYrHGa0Qw]"
@@ -471,7 +471,7 @@
                         {
                             "script": "[Script.0iTLDgFHO9Rgc010]",
                             "id": "q2drpcrYvUHjZBwg",
-                            "name": "Naderwany Mięsień Szyi"
+                            "name": "Korzystanie z zerwanego mięśnia (@item.system.location.value)"
                         }
                     ]
                 }
@@ -511,14 +511,14 @@
                     "name": "Złamana Ręka",
                     "scriptData": [
                         {
-                            "name": "Złamana Ręka",
+                            "name": "Testy wymagające obu rąk",
                             "id": "m1KbLc6l2LK76961",
                             "script": "[Script.GAO8AozttWOyRkta]",
                             "hideScript": "[Script.A3MW0UksYrHGa0Qw]"
                         },
                         {
                             "id": "m1KbLc6l2LK76961",
-                            "name": "Złamana Ręka",
+                            "name": "Bezużyteczna Ręka",
                             "script": "[Script.xYTkj8jhSVOSoLbC]"
                         }
                     ]
@@ -539,7 +539,7 @@
                     "scriptData": [
                         {
                             "id": "OTeQYlJcacd8ID4i",
-                            "name": "Amputowany nos",
+                            "name": "Testy wymagające zmysłu węchu",
                             "script": "[Script.qZschZU0nee0kJlk]",
                             "hideScript": "[Script.53HFDNuMnX1Aw1a4]"
                         }
@@ -566,19 +566,19 @@
                         },
                         {
                             "id": "DaOXNCrHEMsOleGx",
-                            "name": "Utracony Palec",
+                            "name": "Utracone palce (@item.system.location.value)",
                             "script": "[Script.KnwYZbeRSBA94hfl]",
                             "activationScript": "[Script.rRfff55c7elyvbCb]",
                             "hideScript": "[Script.bzaoWcieMFaU5B5l]"
                         },
                         {
                             "id": "DaOXNCrHEMsOleGx",
-                            "name": "Utracony Palec",
+                            "name": "Key Conversion",
                             "script": "[Script.DWBxvzfWGcG7PVNP]"
                         },
                         {
                             "id": "DaOXNCrHEMsOleGx",
-                            "name": "Utracony Palec",
+                            "name": "Testy wymagające obu rąk",
                             "script": "[Script.GAO8AozttWOyRkta]",
                             "hideScript": "[Script.vPG4rV640aSzKzxe]"
                         }
@@ -598,7 +598,7 @@
                     "scriptData": [
                         {
                             "id": "YYYy8BoYrzX6992d",
-                            "name": "Naderwany Mięsień Szyi",
+                            "name": "Korzystanie z zerwanego mięśnia (@item.system.location.value)",
                             "script": "[Script.EYny6z5oTOhxGDfb]"
                         }
                     ],
@@ -620,7 +620,7 @@
                     "scriptData": [
                         {
                             "id": "OBcPvTtXweBfzAaU",
-                            "name": "Utracone Oko",
+                            "name": "Kara za utratę oka",
                             "script": "[Script.qUwnVlWpsmDom3RK]",
                             "activationScript": "[Script.VuE1mhrB6X6MYTzg]",
                             "hideScript": "[Script.6Fe8M5MdklKS2olx]"
@@ -632,7 +632,7 @@
                         },
                         {
                             "id": "OBcPvTtXweBfzAaU",
-                            "name": "Utracone Oko",
+                            "name": "Kara dla wszystkich testów, na które wpływ ma wzrok",
                             "script": "[Script.6EXkbVTRBhKTEu81]",
                             "activationScript": "[Script.JibNjuQrJRnY0yf9]",
                             "hideScript": "[Script.Zxh4RAENoaAQAaNg]"
@@ -675,13 +675,13 @@
                     "scriptData": [
                         {
                             "id": "rTIWkLVhHcMduvPJ",
-                            "name": "Amputowana dłoń",
+                            "name": "Testy wymagające obu rąk",
                             "script": "[Script.GAO8AozttWOyRkta]",
                             "hideScript": "[Script.A3MW0UksYrHGa0Qw]"
                         },
                         {
                             "id": "rTIWkLVhHcMduvPJ",
-                            "name": "Amputowana dłoń",
+                            "name": "Zapobiegaj używaniu ręki",
                             "script": "[Script.sKO8TcLIkCTnFvXu]",
                             "activationScript": "[Script.R5dOZWFxE2n6tooX]",
                             "hideScript": "[Script.xLKAuD6yzwjAL6tJ]"

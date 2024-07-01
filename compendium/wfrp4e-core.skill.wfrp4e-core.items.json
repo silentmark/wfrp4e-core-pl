@@ -446,7 +446,7 @@
                     "scriptData": [
                         {
                             "id": "F2XzoEqkZKftefTB",
-                            "name": "Leczenie (Rany)",
+                            "name": "Leczenie Ran",
                             "submissionScript": "[Script.Ah2wyywkL8hjJNXM]"
                         },
                         {
@@ -456,12 +456,12 @@
                         },
                         {
                             "id": "F2XzoEqkZKftefTB",
-                            "name": "Leczenie (Krwawienie)",
+                            "name": "Tamowanie Krwawienia",
                             "submissionScript": "[Script.wAntJhgb8Og5vJXh]"
                         },
                         {
                             "id": "F2XzoEqkZKftefTB",
-                            "name": "Leczenie (Krwawienie)",
+                            "name": "Tamowanie",
                             "script": "[Script.qAEZgtu5CrfUkxhx]"
                         }
                     ],

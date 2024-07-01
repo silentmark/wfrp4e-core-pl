@@ -18,7 +18,7 @@
                     "scriptData": [
                         {
                             "id": "kPqNULuMP6gPY86x",
-                            "name": "Chaotyczne sny",
+                            "name": "Dodaj zmęczenie",
                             "script": "[Script.JwgFQmPQtXWAP94i]"
                         }
                     ],
@@ -92,13 +92,13 @@
                     "scriptData": [
                         {
                             "id": "zE2zFBWnHMLkNdqR",
-                            "name": "Złe zamiary",
+                            "name": "Krzywdzenie drugiego człowieka",
                             "script": "[Script.xPDMpOvC1ZBVxrNg]",
                             "activationScript": "[Script.OCFrGXAYfo9OYnhc]"
                         },
                         {
                             "id": "zE2zFBWnHMLkNdqR",
-                            "name": "Złe zamiary",
+                            "name": "Nie krzywdzenie innych",
                             "activationScript": "[Script.eHgk3HZ6eyLFTZ9o]",
                             "script": "[Script.xvGxwv7X0Vq3vNqb]"
                         }
@@ -270,7 +270,7 @@
                     "scriptData": [
                         {
                             "id": "egLqzQE6VJ1xG91R",
-                            "name": "Strach przed samotnością",
+                            "name": "Kara dla wszystkich testów, gdy jesteś sam",
                             "script": "[Script.xvGxwv7X0Vq3vNqb]"
                         }
                     ]
@@ -323,7 +323,7 @@
                     "scriptData": [
                         {
                             "id": "iZgljsMJIgKH6L0P",
-                            "name": "Ogromne oko",
+                            "name": "Testy percepcji z udziałem wzroku",
                             "script": "[Script.xPDMpOvC1ZBVxrNg]",
                             "activationScript": "[Script.9RFoasDcFnYZ1txR]",
                             "hideScript": "[Script.tdICiJ26rJrDbxT6]"
@@ -380,7 +380,7 @@
                     "scriptData": [
                         {
                             "id": "UuWZEOCSqCXzdXO8",
-                            "name": "Zwisający jęzor",
+                            "name": "Wszystkie testy językowe podczas mówienia",
                             "script": "[Script.xvGxwv7X0Vq3vNqb]",
                             "activationScript": "[Script.VAs1nXvicdQK18Do]",
                             "hideScript": "[Script.3LLiSgj6KGtgqcmo]"
@@ -406,12 +406,12 @@
                         },
                         {
                             "id": "jkqOgmW6kPSnFuP3",
-                            "name": "Świecąca skóra",
+                            "name": "Aktywne tokeny",
                             "script": "[Script.KJLAan0glJlyOyqF]"
                         },
                         {
                             "id": "jkqOgmW6kPSnFuP3",
-                            "name": "Świecąca skóra",
+                            "name": "Usuń światło",
                             "script": "[Script.QKTA2TqZ77pvHWSJ]"
                         }
                     ],
@@ -432,7 +432,7 @@
                     "scriptData": [
                         {
                             "id": "2Ohs6a56Gxu8VLHF",
-                            "name": "Bezbożny szał",
+                            "name": "Szał Bojowy",
                             "script": "[Script.lOzkngzye4RmvALp]"
                         }
                     ]
@@ -503,7 +503,7 @@
                         },
                         {
                             "id": "n4ttJEJZfsfISN5O",
-                            "name": "Nierówne rogi",
+                            "name": "PP",
                             "script": "[Script.OqxeuZfZDfm9ax6h]"
                         }
                     ]
@@ -536,7 +536,7 @@
                     "scriptData": [
                         {
                             "id": "EfojtYV7NuxfAUrK",
-                            "name": "Wibrysy",
+                            "name": "Testy tropienia",
                             "script": "[Script.xPDMpOvC1ZBVxrNg]",
                             "activationScript": "[Script.FmLx9pwOkzqqU7Ph]",
                             "hideScript": "[Script.tdICiJ26rJrDbxT6]"
