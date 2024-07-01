@@ -1,0 +1,75 @@
+on:
+  push:
+    # Sequence of patterns matched against refs/tags
+    tags:
+      - 'v*' # Push events to matching v*, i.e. v1.0, v20.15.10
+
+name: Upload Release Asset
+
+jobs:
+  build:
+    name: Upload Release Asset
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v3
+
+      - name: Extract Version From Tag
+        id: get_version
+        uses: battila7/get-version-action@v2
+
+      - name: Modify Module Manifest With Release-Specific Values
+        id: sub_manifest_link_version
+        uses: microsoft/variable-substitution@v1
+        with:
+          files: './dist/module.json'
+        env:
+          version: ${{steps.get_version.outputs.version-without-v}}
+          url: https://github.com/${{github.repository}}
+          manifest: https://github.com/${{github.repository}}/releases/latest/download/module.json
+          download: https://github.com/${{github.repository}}/releases/download/${{steps.get_version.outputs.version}}/wfrp4e-core-pl.zip
+
+      - name: Zip files
+        run: |
+          zip -r wfrp4e-core-pl.zip module.json babele-register.js load-scripts-pl.js modules/ lang/ images/ fonts/ css/ compendium/ 
+
+      - name: Update Release with Files
+        id: create_version_release
+        uses: ncipollo/release-action@v1
+        with:
+          allowUpdates: true
+          name: Release ${{steps.get_version.outputs.version}}
+          token: ${{ secrets.GITHUB_TOKEN }}
+          artifacts: './module.json, ./wfrp4e-core-pl.zip'
+          tag: ${{ github.ref }}
+
+      - name: Get Module ID
+        id: moduleID
+        uses: notiz-dev/github-action-json-property@release
+        with:
+          path: './module.json'
+          prop_path: 'id'
+
+      - name: Get mininum
+        id: minimum
+        uses: notiz-dev/github-action-json-property@release
+        with:
+          path: './module.json'
+          prop_path: 'compatibility.minimum'
+
+      - name: Get verified
+        id: verified
+        uses: notiz-dev/github-action-json-property@release
+        with:
+          path: './module.json'
+          prop_path: 'compatibility.verified'
+
+      - name: Foundry Release API
+        uses: fjogeleit/http-request-action@v1
+        with:
+          url: 'https://api.foundryvtt.com/_api/packages/release_version'
+          method: 'POST'
+          customHeaders: '{"Content-Type": "application/json", "Authorization" : "${{ secrets.FOUNDRY_KEY }}"}'
+          data: '{"dry_run": false, "id": "${{steps.moduleID.outputs.prop}}", "release": {"version":  "${{steps.get_version.outputs.version-without-v}}", "manifest": "https://github.com/${{github.repository}}/releases/download/${{steps.get_version.outputs.version}}/module.json", "compatibility" : {"minimum": "${{steps.minimum.outputs.prop}}", "verified": "${{steps.verified.outputs.prop}}"}}}'
