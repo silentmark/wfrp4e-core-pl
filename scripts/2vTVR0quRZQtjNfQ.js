@@ -4,15 +4,15 @@ if (!currentCareer)
     return;
 }
 
-let talents = ["Zmysł Magii",
-"Magia Tajemna (Dowolna Tradycja)",
-"Magia Chaosu (Tzeentch)",
-"Ruchliwe dłonie",
-"Precyzyjne Inkantowanie",
-"Wykrywanie Magii",
-"Magia Prosta",
-"Percepcja Magiczna",
-"Mag Bitewny",
-"Czarownica!"].filter(t => !currentCareer.system.talents.includes(t))
+let talents = [game.i18n.localize("NAME.AA"),
+`${game.i18n.localize("NAME.ArcaneMagic")} (${game.i18n.localize("SPEC.Any")})`,
+game.i18n.localize("NAME.ChaosMagic") + " " +  "(Tzeentch)",
+game.i18n.localize("NAME.FastHands"),
+game.i18n.localize("NAME.ID"),
+game.i18n.localize("NAME.MagicalSense"),
+game.i18n.localize("NAME.PettyMagic"),
+game.i18n.localize("NAME.SecondSight"),
+game.i18n.localize("NAME.WarWizard"),
+game.i18n.localize("NAME.Witch")].filter(t => !currentCareer.system.talents.includes(t))
 
 currentCareer.system.talents = currentCareer.system.talents.concat(talents)

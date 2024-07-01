@@ -1,1 +1,1 @@
-return args.skill?.name == "Broń Biała (Bijatyka)" || args.item?.weaponGroup?.value == "brawling"
+return args.skill?.name == game.i18n.localize("NAME.MeleeBrawling") || args.item?.weaponGroup?.value == "brawling"
