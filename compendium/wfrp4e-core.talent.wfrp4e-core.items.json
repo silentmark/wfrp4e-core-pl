@@ -2680,7 +2680,7 @@
         },
         "Etiquette": {
             "id": "sYbgpSnRqSZWgwFP",
-            "name": "Etykieta (Grupa Społeczna)",
+            "name": "Etykieta",
             "description": "<p>Dopóki jesteś odpowiednio ubrany i zachowujesz się należycie, potrafisz wtopić się w tłum wybranej grupy społecznej. Oto przykłady kilku z nich: Członkowie Gildii lub Cechu, Kultyści, Przestępcy, Służba, Szlachta, Uczeni, Żołnierze. Jeśli nie posiadasz tego Talentu, ci, którzy go mają, łatwo zauważą, że nie pasujesz do obcego środowiska. Widać to w zachowaniu bohatera. To oczywiście zależy od odgrywania, ale MG może wprowadzić tu odpowiedni modyfikator do Testów Ogłady.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.sYbgpSnRqSZWgwFP",
             "tests": "Charyzma lub Plotkowanie (Grupa Społeczna)",
@@ -2884,14 +2884,14 @@
         },
         "Resistance": {
             "id": "vMYEkrWj0ip6ZOdv",
-            "name": "Odporny na (Zagrożenie)",
+            "name": "Odporny na",
             "description": "<p>Twoja wielka wytrwałość pozwala ci poradzić sobie z niebezpieczeństwem. Automatycznie zdajesz pierwszy Test opierania się przeciwko konkretnemu typowi zagrożenia na danej sesji. Znane są Odporności na Choroby, Magię, Mutacje czy Trucizny. Jeśli w Teście ważne są Poziomy Sukcesu, to za ich liczbę przyjmujesz Bonus z Wytrzymałości. </p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.vMYEkrWj0ip6ZOdv",
-            "tests": "Wszystkie testy, gdy opierasz się powiązanemu zagrożeniu",
+            "tests": "Wszystkie, gdy opierasz się powiązanemu zagrożeniu (Wybrane Zagrożenie)",
             "effects": {
                 "FQv1UAIrdvtf9Tlc": {
                     "id": "FQv1UAIrdvtf9Tlc",
-                    "name": "Odporny na",
+                    "name": "Odporny na (Wybrane Zagrożenie)",
                     "scriptData": [
                         {
                             "id": "FQv1UAIrdvtf9Tlc",
