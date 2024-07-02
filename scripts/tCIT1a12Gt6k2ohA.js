@@ -1,11 +1,11 @@
 let resistance
-if (this.item.name.includes("(") && !this.item.name.toLowerCase().includes("dowolna"))
+if (this.item.name.includes("(") && !this.item.name.toLowerCase().includes("(dowolne zagrożenie)"))
 {
 	resistance = this.item.parenthesesText
 }
 else 
 {
-    resistance = await ValueDialog.create("Wybierz Odporność", "Odporność") 
+    resistance = await ValueDialog.create("Wprowadź nazwę Odporności:", "Resistance") 
     
     if (resistance)
     {
@@ -13,7 +13,7 @@ else
         this.effect.updateSource({name : this.effect.name + ` (${resistance})`})
     }
 }    
-this.item.updateSource({"system.tests.value" : this.item.system.tests.value.replace("przypisane Zagrożenie", resistance)})
+this.item.updateSource({"system.tests.value" : this.item.system.tests.value.replace("Wybrane Zagrożenie", resistance)})
 
 if (resistance && !this.effect.name.includes("("))
 {
