@@ -102,10 +102,10 @@
         },
         "Strider": {
             "id": "1dUizIgLBgn4jICC",
-            "name": "Doświadczony Wędrowiec (Wybrany Teren)",
+            "name": "Doświadczony Wędrowiec (Dowolny Teren)",
             "description": "<p>Masz doświadczenie w wędrówce przez dzicz i potrafisz dobrze wybierać drogę. Nie działają na ciebie negatywne modyfikatory wynikające z wpływu wybranego terenu. Oto lista przykładów: Lasy, Pustynie, Moczary, Teren Kamienisty, Tundra, Wybrzeża.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.1dUizIgLBgn4jICC",
-            "tests": "Atletyki podczas podróży w terenie",
+            "tests": "Atletyki podczas podróży w terenie (Wybrany Teren)",
             "effects": {
                 "nxZ6leAs6bz1KlXX": {
                     "scriptData": [
