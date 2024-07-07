@@ -11,12 +11,21 @@ if (this.item.system.tests.value.includes("(Grupa Społeczna)"))
     }
     else
     {
-        let value = await ValueDialog.create("Podaj nazwę grupy społecznej:", this.effect.name);
+        let value = await ValueDialog.create("Napisz, czyjej Etykiety dotyczy talentu", name);
         if (value)
         {
-            name = `${name.split("(")[0].trim()} (${value})`
-            tests = this.item.system.tests.value.replace("Grupa Społeczna", value);
+            if (name.includes("("))
+            {
+                name = `${name.split("(")[0].trim()} (${value})`
+                tests = `${tests.split("(")[0].trim()} (${value})`
+            }
+            else 
+            {
+                name = `${name} (${value})`
+                tests = `${tests.split("(")[0].trim()} (${value})`
+            }
         }
     }
-    this.item.updateSource({name, "system.tests.value" : tests})
+    this.item.updateSource({"system.tests.value" : tests});
+    this.item.updateSource({"name" : name});
 }

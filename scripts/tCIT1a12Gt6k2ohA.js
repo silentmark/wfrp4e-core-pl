@@ -5,7 +5,7 @@ if (this.item.name.includes("(") && !this.item.name.toLowerCase().includes("(dow
 }
 else 
 {
-    resistance = await ValueDialog.create("Wprowadź nazwę Odporności:", "Resistance") 
+    resistance = await ValueDialog.create("Wprowadź nazwę Odporności", "Odporny na") 
     
     if (resistance)
     {
