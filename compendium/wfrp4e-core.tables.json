@@ -1220,7 +1220,7 @@
                 "41-60": "Postać źle skalkulowała manewr, przez co mocno się odsłania. W przypadku broni dystansowej - o mały włos, a wypadłaby z rąk. W następnej Rundzie każda Akcja postaci otrzymuje karę -10.",
                 "61-70": "Postać potyka się, ledwie utrzymując równowagę. W następnej Rundzie nie wykonuje Ruchu.",
                 "71-80": "Postać nieostrożnie obchodzi się z bronią, przez co ta mało jej nie wypada lub amunicja dosłownie leci jej z rąk. W następnej Rundzie nie może wykonać Akcji.",
-                "81-90": "Postać potyka się, robi zbyt długi wypad lub krok i skręca kostkę. Otrzymuje Uraz @UUID[Compendiumwfrp4e-core.items.nF5z1OEhpi4t6a6S]{Zerwanie mięśni (Noga) (Pomniejsze)}. Liczy się to jako Rana Krytyczna.",
+                "81-90": "Postać potyka się, robi zbyt długi wypad lub krok i skręca kostkę. Otrzymuje Uraz @UUID[Compendium.wfrp4e-core.items.nF5z1OEhpi4t6a6S]{Zerwanie mięśni (Noga) (Pomniejsze)}. Liczy się to jako Rana Krytyczna.",
                 "91-100": "Atak jest kompletną porażką, postać trafia w jednego losowego sojusznika w zasięgu broni - użyj rzutu, by określić PS ciosu. Jeśli to niewykonalne, postać w jakiś sposób zadaje sobie cios w głowę, co skutkuje 1 Stanem <em>@Condition[Oszołomienie]</em>."
             }
         },
