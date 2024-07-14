@@ -109,15 +109,15 @@
         "Afraid": {
             "id": "4CMKeDTDrRQZbPIJ",
             "name": "Lęk",
-            "description": "<p>Stworzenie odczuwa Strach (0) przy spotkaniu z Obiektem.</p>\n<p>Strach jest objawem ekstremalnej awersji wobec czegoś. Stworzenia, które wzbudzają Strach, w statystykach mają również Współczynnik Strachu równy „x”. Podczas Wydłużonego Testu Opanowania należy osiągnąć tyle PS, ile wynosi ta wartość. Test można ponawiać pod koniec każdej Rundy, dopóki liczba PS nie zrówna się z Poziomem Strachu danego stworzenia lub go nie przekroczy. Dopóki się to nie stanie, postać jest zdjęta Strachem:</p>\n<ul>\n<li>Otrzymuje karę -1 PS do wszystkich Testów, które w jakikolwiek sposób wpłynęłyby na źródło Strachu.</li>\n<li>Postać nie może podejść do czegokolwiek, co wywołuje w niej Strach, jeśli nie zda <strong>Wymagającego (+0) Testu Opanowania</strong>. Jeśli stworzenie zacznie się zbliżać, również należy wykonać <strong>Wymagający (+0) Test Opanowania</strong> – jeżeli się nie powiedzie, postać otrzymuje 1 poziom Paniki.</li>\n</ul>",
+            "description": "<p>Stworzenie odczuwa Strach (0) przy spotkaniu z Obiektem lęku.</p> <p>Strach jest objawem ekstremalnej awersji wobec czegoś. Stworzenia, które wzbudzają Strach, w statystykach mają również Współczynnik Strachu równy „x”. Podczas Wydłużonego Testu Opanowania należy osiągnąć tyle PS, ile wynosi ta wartość. Test można ponawiać pod koniec każdej Rundy, dopóki liczba PS nie zrówna się z Poziomem Strachu danego stworzenia lub go nie przekroczy. Dopóki się to nie stanie, postać jest zdjęta Strachem:</p> <ul>     <li>Otrzymuje karę -1 PS do wszystkich Testów, które w jakikolwiek sposób wpłynęłyby na źródło Strachu.</li>     <li>Postać nie może podejść do czegokolwiek, co wywołuje w niej Strach, jeśli nie zda <strong>Wymagającego (+0) Testu Opanowania</strong>. Jeśli stworzenie zacznie się zbliżać, również należy wykonać <strong>Wymagający (+0) Test Opanowania</strong> – jeżeli się nie powiedzie, postać otrzymuje 1 poziom @Condition[Panika]{Paniki}.</li> </ul>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.4CMKeDTDrRQZbPIJ",
-            "specification": "Cel",
+            "specification": "Obiekt",
             "effects": {
                 "qPjT5EO2Y83wUzVx": {
                     "scriptData": [
                         {
                             "id": "qPjT5EO2Y83wUzVx",
-                            "name": "Testy wpływające na @item.system.specification.value",
+                            "name": "Testy które w jakikolwiek sposób wpływają na źródło Strachu (@item.system.specification.value)",
                             "script": "[Script.o1zD8mej9TWKNxUq]"
                         }
                     ],
