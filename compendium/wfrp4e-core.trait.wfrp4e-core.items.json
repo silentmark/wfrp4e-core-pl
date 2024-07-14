@@ -32,20 +32,20 @@
         "Animosity": {
             "id": "0VpT5yubw4UL7j6f",
             "name": "Wrogość",
-            "description": "<em><p>Stworzenie naprawdę nie lubi celu.</p>\n<p>Postać żywi wrogość wobec grupy „x”, co zazwyczaj oznacza jakąś grupę społeczną lub typ stworzeń, jak np. „mieszkańcy Nordlandu”, „zwierzoludzie” czy „szlachta”. Za każdym razem, gdy spotyka przedstawiciela tej grupy, musi wykonać Test Psychologii. Jeśli Test się powiedzie, postać może kląć i pluć, ale otrzyma jedynie karę -20 do wszystkich Testów Ogłady związanych z tą grupą. Jeśli Test się nie uda, postać nie jest w stanie dłużej dusić Wrogości.</p>\n<p>Pod koniec każdej następnej Rundy należy wykonać kolejny Test Psychologii, by zakończyć atak. Jeśli Test się nie powiedzie, Wrogość zakończy się samoistnie, kiedy wszyscy członkowie nielubianej grupy znajdujący się w polu widzenia albo czmychną, albo zostaną spacyfikowani. <em>@Condition[Oszołomienie]</em> lub <em>@Condition[Utrata Przytomności]</em> naturalnie kończą napad Wrogości, podobnie jak niektóre inne Czynniki Psychologiczne.</p>\n<p>Kiedy postać ma napad Wrogości:</p>\n<ul>\n<li>Musi natychmiast zaatakować swoich wrogów – albo werbalnie (obelgami, drwinami itd.), albo fizycznie (zazwyczaj kończy się na pięściach), w zależności od okoliczności.</li>\n<li>Ponadto podczas takich drwin i innych prób werbalnych ataków postać otrzymuje premię +1 PS.</li>\n</ul>\n<p>@UUID[Compendium.wfrp4e-core.items.Ib2YQYChktDFN93y]{Strach} i @UUID[Compendium.wfrp4e-core.items.meMkLEwdJIDLxM0B]{Groza} natychmiast przerywają napad Wrogości.</p>",
+            "description": "<p>Stworzenie naprawdę nie lubi Obiektu wrogości.</p> <p>Postać żywi wrogość wobec grupy „x”, co zazwyczaj oznacza jakąś grupę społeczną lub typ stworzeń, jak np. „mieszkańcy Nordlandu”, „zwierzoludzie” czy „szlachta”. Za każdym razem, gdy spotyka przedstawiciela tej grupy, musi wykonać Test Psychologii. Jeśli Test się powiedzie, postać może kląć i pluć, ale otrzyma jedynie karę -20 do wszystkich Testów Ogłady związanych z tą grupą. Jeśli Test się nie uda, postać nie jest w stanie dłużej dusić Wrogości.</p> <p>Pod koniec każdej następnej Rundy należy wykonać kolejny Test Psychologii, by zakończyć atak. Jeśli Test się nie powiedzie, Wrogość zakończy się samoistnie, kiedy wszyscy członkowie nielubianej grupy znajdujący się w polu widzenia albo czmychną, albo zostaną spacyfikowani. @Condition[Oszołomienie] lub @Condition[Utrata Przytomności] naturalnie kończą napad Wrogości, podobnie jak niektóre inne Czynniki Psychologiczne.</p> <p>Kiedy postać ma napad Wrogości:</p> <ul>     <li>Musi natychmiast zaatakować swoich wrogów – albo werbalnie (obelgami, drwinami itd.), albo fizycznie (zazwyczaj kończy się na pięściach), w zależności od okoliczności.</li>     <li>Ponadto podczas takich drwin i innych prób werbalnych ataków postać otrzymuje premię +1 PS.</li> </ul> <p>Strach i Groza natychmiast przerywają napad Wrogości.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.0VpT5yubw4UL7j6f",
-            "specification": "Cel",
+            "specification": "Obiekt",
             "effects": {
                 "mqb7U1RR6DjIhLgy": {
                     "scriptData": [
                         {
                             "id": "mqb7U1RR6DjIhLgy",
-                            "name": "Werbalne lub fizyczne atakowanie @item.system.specification.value",
+                            "name": "Drwiny i inne werbalne próby atakowania źródła Wrogośći (@item.system.specification.value)",
                             "script": "[Script.wAETU6aTRr9d4oCU]",
                             "hideScript": "[Script.iVhi3Z6zPaf1bf8g]"
                         },
                         {
-                            "name": "Interakcja z @item.system.specification.value",
+                            "name": "Interakcje ze źródłem Wrogośći (@item.system.specification.value)",
                             "script": "[Script.0iTLDgFHO9Rgc010]",
                             "hideScript": "[Script.6Fe8M5MdklKS2olx]",
                             "id": "mqb7U1RR6DjIhLgy"
