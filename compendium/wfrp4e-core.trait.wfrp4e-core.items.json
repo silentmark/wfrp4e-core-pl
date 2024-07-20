@@ -290,7 +290,7 @@
         "Bestial": {
             "id": "AGcJl5rHjkyIQBPP",
             "name": "Zwierzęcy",
-            "description": "<p>Stworzenie jest nierozumne albo nie potrafi posługiwać się mową. Unika ognia i dostaje Stan @Condition[Panika], jeśli zostanie nim trafione. W obronie używa wyłącznie Umiejętności Unik. Jeśli straci ponad połowę Żywotności, spróbuje uciec, o ile nie chroni swoich młodych, nie jest osaczone lub nie ma Cechy Stworzenia <i>Terytorialny</i>. W takim przypadku wpada w Szał Bojowy. Zwierzęce stworzenia nie mają Cechy Ogłada.</p>",
+            "description": "<p>Stworzenie jest nierozumne albo nie potrafi posługiwać się mową. Unika ognia i dostaje Stan @Condition[Panika], jeśli zostanie nim trafione. W obronie używa wyłącznie Umiejętności Unik. Jeśli straci ponad połowę Żywotności, spróbuje uciec, o ile nie chroni swoich młodych, nie jest osaczone lub nie ma Cechy Stworzenia @UUID[Compendium.wfrp4e-core.items.JIAe7i7dqTQBu4do]. W takim przypadku wpada w @UUID[Compendium.wfrp4e-core.items.DrNUTPeodEgpWTnT]. Zwierzęce stworzenia nie mają Cechy Ogłada.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.AGcJl5rHjkyIQBPP"
         },
         "Mental Corruption": {
