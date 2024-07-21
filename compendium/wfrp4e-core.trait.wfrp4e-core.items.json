@@ -1335,7 +1335,7 @@
         "Corruption": {
             "id": "xsGbDFqK2qh7lsIj",
             "name": "Spaczenie",
-            "description": "<p>Stworzenie jest napiętnowane przez Chaos lub przepełnione mroczną magią. Siła spaczenia podana jest w nawiasie.</p>",
+            "description": "<p>Spaczenie (Siła) - Stworzenie jest napiętnowane przez Chaos lub przepełnione mroczną magią. Siła spaczenia podana jest w nawiasie (@Corruption[minor]{Pomniejsze}, @Corruption[moderate]{Umiarkowane}, albo @Corruption[major]{Potężne}).</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.xsGbDFqK2qh7lsIj",
             "specification": "Siła Korupcji",
             "effects": {
