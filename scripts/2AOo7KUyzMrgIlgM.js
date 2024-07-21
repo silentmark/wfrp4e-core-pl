@@ -6,7 +6,7 @@ switch (corruption) {
     case "Umiarkowane":
         corruption = "moderate";
         break;
-    case "Poważne":
+    case "Potężne":
         corruption = "major";
         break;
     default:
