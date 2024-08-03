@@ -111,7 +111,7 @@
         "Terror (Rating)": {
             "id": "meMkLEwdJIDLxM0B",
             "name": "Groza (x)",
-            "description": "<p>Niektóre stworzenia są tak wyjątkowo niepokojące, że wywołują nieprzyjemny chłód w kościach. Gdy postać natknie się na stworzenie wywołujące <em>Grozę<em>, musi wykonać <b>Test Opanowania</b>. <ul><li>Jeśli ten się powiedzie, postać nie odczuwa efektów <em>Grozy.</em></li><li>Jeśli Test zakończy się porażką, postać otrzymuje liczbę poziomów Stanu <em>@Condition[Panika]</em> równą x, plus 1 poziom za każdy PS poniżej zera.</li></ul></p>\n<p>Po określeniu efektów Grozy po udanym Teście Psychologii i stworzenie wywołuje @Compendium[wfrp4e-core.items.Ib2YQYChktDFN93y]{Strach}, Współczynniku równym współczynnikowi <em>Grozy</em>.</p>",
+            "description": "<p>Niektóre stworzenia są tak wyjątkowo niepokojące, że wywołują nieprzyjemny chłód w kościach. Gdy postać natknie się na stworzenie wywołujące <em>Grozę</em>, musi wykonać <strong>Test Opanowania</strong>.</p> <ul>     <li>Jeśli ten się powiedzie, postać nie odczuwa efektów <em>Grozy</em>.</li>     <li>Jeśli Test zakończy się porażką, postać otrzymuje liczbę poziomów <em>@Condition[Panika]{Paniki}</em> równą x, plus 1 poziom za każdy PS poniżej zera.</li> </ul> <p>Po określeniu efektów Grozy po udanym Teście Psychologii stworzenie wywołuje @Compendium[wfrp4e-core.items.Ib2YQYChktDFN93y]{Strach} o Współczynniku równym współczynnikowi <em>Grozy</em>.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.meMkLEwdJIDLxM0B"
         },
         "Phobia (Target)": {
