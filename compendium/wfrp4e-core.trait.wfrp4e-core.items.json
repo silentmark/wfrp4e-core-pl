@@ -475,7 +475,7 @@
         "Fury": {
             "id": "fjd1u9VAgiYzhBRp",
             "name": "Furia",
-            "description": "<p>Stworzenie ulega czasami wszechogarniającej wściekłości. Może wydać wszystkie Przewagi (minimalnie 1), by wzbudzić w sobie <i>@UUID[Compendium.wfrp4e-core.items.Item.aE3pyW20Orvdjzj0]{Nienawiść}</i> wobec przeciwników w walce wręcz. Jeżeli stworzenie zebrało przynajmniej 3 Przewagi, może wydać wszystkie Przewagi, by wpaść w <i>@UUID[Compendium.wfrp4e-core.items.Item.yRhhOlt18COq4e1q]{Szał Bojowy}</i>.</p>",
+            "description": "<p>Stworzenie ulega czasami wszechogarniającej wściekłości. Może wydać wszystkie Przewagi (minimalnie 1), by wzbudzić w sobie @UUID[Compendium.wfrp4e-core.items.Item.aE3pyW20Orvdjzj0]{Nienawiść} wobec przeciwników w walce wręcz. Jeżeli stworzenie zebrało przynajmniej 3 Przewagi, może wydać wszystkie Przewagi, by wpaść w @UUID[Compendium.wfrp4e-core.items.Item.yRhhOlt18COq4e1q]{Szał Bojowy}.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.fjd1u9VAgiYzhBRp",
             "effects": {
                 "UrY6shI382y5L9os": {
@@ -1040,7 +1040,7 @@
         "Construct": {
             "id": "UB4mDroL6S1F9B4u",
             "name": "Konstrukt",
-            "description": "<p>Stworzenie jest konstruktem z magii, całkiem bezrozumnym i spajanym przez magiczne więzy. Nie ma Cech Inteligencja, Siła Woli ani Ogłada i nigdy nie musi ich testować. Jeśli brakuje czarodzieja, który by je kontrolował, albo stworzenie nie posiada cechy <i>@UUID[Compendium.wfrp4e-core.items.Item.JIAe7i7dqTQBu4do]{Terytorialny}</i>, wałęsa się bezmyślnie, podążając za nurtami przenikającej otoczenie magii.</p><p>Gdy trzeba obliczyć Żywotność stwora i wymagane jest określenie Bonusu z Siły Woli, użyj jego Bonusu z Siły. Wszystkie ataki stworzenia są <i>Magiczne</i>.</p>",
+            "description": "<p>Stworzenie jest konstruktem z magii, całkiem bezrozumnym i spajanym przez magiczne więzy. Nie ma Cech Inteligencja, Siła Woli ani Ogłada i nigdy nie musi ich testować. Jeśli brakuje czarodzieja, który by je kontrolował, albo stworzenie nie posiada cechy @UUID[Compendium.wfrp4e-core.items.Item.JIAe7i7dqTQBu4do]{Terytorialny}, wałęsa się bezmyślnie, podążając za nurtami przenikającej otoczenie magii.</p><p>Gdy trzeba obliczyć Żywotność stwora i wymagane jest określenie Bonusu z Siły Woli, użyj jego Bonusu z Siły. Wszystkie ataki stworzenia są <i>Magiczne</i>.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.UB4mDroL6S1F9B4u",
             "effects": {
                 "mkDK0Yqvb4JqL1zq": {
@@ -1286,7 +1286,7 @@
         "Leader": {
             "id": "wGTD2LezlI6Atyy0",
             "name": "Przywódca",
-            "description": "<p>Stworzenie jest doświadczonym przywódcą. Dostaje premię +10 do Ogłady i Siły Woli. <b>Uwaga:</b> tej cechy nie mogą wybierać stworzenia posiadające cechę <i>@UUID[Compendium.wfrp4e-core.items.Item.AGcJl5rHjkyIQBPP]{Zwierzęcy}</i>.</p>",
+            "description": "<p>Stworzenie jest doświadczonym przywódcą. Dostaje premię +10 do Ogłady i Siły Woli. <b>Uwaga:</b> tej cechy nie mogą wybierać stworzenia posiadające cechę @UUID[Compendium.wfrp4e-core.items.Item.AGcJl5rHjkyIQBPP]{Zwierzęcy}.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.wGTD2LezlI6Atyy0",
             "effects": {
                 "qjz6qX4wkAN2Eldl": {
