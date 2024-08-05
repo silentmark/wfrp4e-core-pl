@@ -1820,7 +1820,7 @@
     "ErrorHackPermission": "Nie masz uprawnień aby zastosować Zaletę Rąbiąca na tym Aktorze.",
     "EffectApplication.RenderAura": "Renderuj Aurę",
     "EffectApplication.RenderAuraHint": "Renderuj aurę na płótnie jako Szablon",
-    "BUGREPORT.Troubleshooting": "Przed przesłaniem zgłoszenia zapoznaj się ze stroną </a>Rozwiązywanie problemów<a href='https://moo-man.github.io/WFRP4e-FoundryVTT/pages/troubleshooting.html'>.",
+    "BUGREPORT.Troubleshooting": "Przed przesłaniem zgłoszenia zapoznaj się ze stroną <a href='https://moo-man.github.io/WFRP4e-FoundryVTT/pages/troubleshooting.html'>Rozwiązywanie problemów</a>.",
     "SETTINGS.AdvantageMaxHint": "Ogranicz Punkty Przewag do ustalonego wcześniej limitu, takiego jak 2, 4 lub więcej.",
     "SHEET.TemporaryEffectHint": "Te aktywne efekty pochodzą od Aktora. Aby wejść z nim w interakcję, zrób to za pomocą Karty Aktora",
     "Diagnosed": "Rozpoznano",
