@@ -1,3 +1,4 @@
+//*** Znawca (Wiedza)
 if (this.item.name.includes("("))
 {
 	return;

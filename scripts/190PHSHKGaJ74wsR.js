@@ -1,10 +1,11 @@
-if (!this.item.name.includes("(") || this.item.system.tests.value.toLowerCase().includes("teren") || this.item.system.tests.value.toLowerCase().includes("dowolny") || this.item.system.tests.value.toLowerCase().includes("wybrany"))
+//*** Doświadczony Wędrowiec (Wybrany Teren)
+if (!this.item.name.includes("(") || this.item.system.tests.value.toLowerCase().includes("teren") || this.item.system.tests.value.toLowerCase().includes("wybrany"))
 {
     let tests = this.item.system.tests.value
     let name = this.item.name
 
     // If name already specifies, make sure tests value reflects that
-    if (name.includes("(") && !name.toLowerCase().includes("dowolny") && !name.toLowerCase().includes("wybrany"))
+    if (name.includes("(") && !name.toLowerCase().includes("wybrany"))
     {
         let terrain = name.split("(")[1].split(")")[0]
         tests = tests.replace("Wybrany Teren", terrain)

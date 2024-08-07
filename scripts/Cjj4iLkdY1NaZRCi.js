@@ -1,3 +1,4 @@
+//*** Niebiańska tarcza
 if ((args.opposedTest.attackerTest.item && args.opposedTest.attackerTest.item.isMelee) || (args.opposedTest.attackerTest.item && !args.opposedTest.attackerTest.item.name.includes("Broń Zasięgowa")))
 {
     let choice = await Dialog.wait({

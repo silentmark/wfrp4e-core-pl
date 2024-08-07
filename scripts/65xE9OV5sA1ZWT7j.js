@@ -1,3 +1,4 @@
+//*** Szuler Kościany
 if (args.test.options.diceman && args.test.succeeded)
 {
 

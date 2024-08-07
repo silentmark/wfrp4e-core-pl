@@ -1,3 +1,4 @@
+//*** Paskudnie przecięty paluch
 let test = await this.actor.setupSkill(game.i18n.localize("NAME.Endurance"), {skipTargets: true, appendTitle :  " - " + this.effect.name})
 await test.roll();
 if (!test.succeeded)
@@ -7,7 +8,7 @@ if (!test.succeeded)
     if (this.item.system.location.key == "rLeg")
     {
         data.system.location.value = "Prawy Palec U nogi"
-	    data.system.location.key = "rToe";
+	data.system.location.key = "rToe";
     }
     else if (this.item.system.location.key == "lLeg")
     {

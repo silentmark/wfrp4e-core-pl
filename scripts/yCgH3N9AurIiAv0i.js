@@ -1,3 +1,4 @@
+//*** Wyczulony Zmysł
 if (!this.item.name.includes("(") || this.item.system.tests.value.includes("(Zmysł)") || this.item.system.tests.value.toLowerCase().includes("dowolny"))
 {
     let tests = this.item.system.tests.value
@@ -25,5 +26,5 @@ if (!this.item.name.includes("(") || this.item.system.tests.value.includes("(Zmy
         }
     }
 
-        this.item.updateSource({name, "system.tests.value" : tests})
+    this.item.updateSource({name, "system.tests.value" : tests})
 }

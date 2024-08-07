@@ -1,3 +1,4 @@
+//*** Lodowaty Uścisk
 if (this.actor.system.status.advantage.value >= 2)
 {
     await this.actor.modifyAdvantage(-2);

@@ -1,3 +1,4 @@
+//*** Zionięcie
 let type = this.item.getFlag("wfrp4e", "breath")
 let types = {
     none : "Brak",

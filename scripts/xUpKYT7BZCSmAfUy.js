@@ -1,3 +1,4 @@
+//*** Eliksir żywotności
 if (this.item.system.quantity.value)
 {
 	this.item.system.reduceQuantity();

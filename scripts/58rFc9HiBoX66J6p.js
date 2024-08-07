@@ -1,3 +1,4 @@
+//*** Męczeństwo
 let sourceActor = this.effect.sourceActor;
 let damage = args.totalWoundLoss;
 let tb = sourceActor.system.characteristics.t.bonus

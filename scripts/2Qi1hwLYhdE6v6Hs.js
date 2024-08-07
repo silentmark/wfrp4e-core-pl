@@ -1,3 +1,4 @@
+//*** Klątwa porażającego bólu
 if (!["rLeg", "lLeg"].includes(this.effect.getFlag("wfrp4e", "location")))
 	return true;
 

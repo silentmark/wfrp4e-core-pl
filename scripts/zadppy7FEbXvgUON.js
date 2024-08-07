@@ -1,3 +1,4 @@
+//*** Reformed Rogue
  let characteristics = {
                     "ws" : 5,
                     "bs" : 0,

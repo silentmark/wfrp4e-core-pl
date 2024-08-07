@@ -1,16 +1,7 @@
-let wounds = this.actor.status.wounds.value;
-let max = this.actor.status.wounds.max;
+//*** Mikstura lecznicza
+let wounds = this.actor.system.status.wounds;
+if (wounds.value == 0)
+  return this.script.scriptNotification("Brak efektu, ponieważ Żywotność wynosi 0", "error")
 
-
-if (wounds === 0)
-  return ui.notifications.error("Brak efektu, ponieważ Żywotności wynosi 0, zużyto dawkę")
-if (wounds === max)
-  return ui.notifications.error("Brak efektu, ponieważ Żywotności wynosi już max, zużyto dawkę")
-
-
-let tbonus = this.actor.characteristics.t.bonus;
-let missing = max - wounds;
-let recovered = missing < tbonus ? missing : tbonus;
-
-this.actor.modifyWounds(recovered);
-return ui.notifications.notify(`Wyleczono ${recovered} Żywotności`);
+this.script.scriptNotification(`Wyleczone Punkty Żywotności: ${this.actor.characteristics.t.bonus}`)
+await this.actor.modifyWounds(this.actor.characteristics.t.bonus)

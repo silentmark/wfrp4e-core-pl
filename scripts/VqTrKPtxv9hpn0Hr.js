@@ -1,1 +1,2 @@
-return args.skill?.name != "Język (Magiczny)"
+//*** Precyzyjne Inkantowanie
+return args.skill?.name != "Język (Magiczny)";

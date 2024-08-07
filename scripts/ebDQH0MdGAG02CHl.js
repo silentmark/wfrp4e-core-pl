@@ -1,3 +1,4 @@
+//*** Odcięty palec
 let item = await fromUuid("Compendium.wfrp4e-core.items.SYjWiKDzMS6CtROJ")
 let data = item.toObject();
 data.system.location.key = this.item.system.location.key

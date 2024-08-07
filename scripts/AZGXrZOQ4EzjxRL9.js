@@ -1,0 +1,2 @@
+//*** Dekoncentrujący
+return true;

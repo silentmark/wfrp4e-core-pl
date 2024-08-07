@@ -1,3 +1,4 @@
+//*** Niszczyciel strzał (Śmierć)
 if (args.opposedTest?.attackerTest?.item?.system?.isRanged) 
 {
     let choice = await Dialog.wait({

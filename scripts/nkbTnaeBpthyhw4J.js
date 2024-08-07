@@ -1,3 +1,4 @@
+//*** Drugie proroctwo Amul
 let fortunePoints = this.effect.sourceTest.result.overcast.usage.other.current
 let current = this.actor.status.fortune.value
 

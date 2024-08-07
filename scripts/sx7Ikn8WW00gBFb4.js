@@ -1,12 +1,13 @@
+//*** Stłuczony obojczyk
 let location = (Math.ceil(CONFIG.Dice.randomUniform() * 2) == 2 ? "r" : "l") + "Arm"
 
 if (location == "lArm")
 {
-	this.script.scriptNotification("Wylosowano Lewą")
+    this.script.scriptNotification("Wylosowano Lewą")
 }
 else if (location == "rArm")
 {
-	this.script.scriptNotification("Wylosowano Prawą")
+    this.script.scriptNotification("Wylosowano Prawą")
 }
 
 this.effect.updateSource({"flags.wfrp4e.location" : location});

@@ -1,3 +1,4 @@
+//*** Wyssanie życia
 let woundsGained = Math.min(args.actor.status.wounds.value, args.totalWoundLoss)
 woundsGained = Math.ceil(woundsGained / 2)
 

@@ -1,3 +1,4 @@
+//*** Wymiot
 if (this.actor.system.status.advantage.value >= 3)
 {
     this.actor.modifyAdvantage(-3);

@@ -1,1 +1,2 @@
-return args.skill?.name == "Skradanie (Wieś)"
+//*** Włóczykij
+return args.skill?.name == "Skradanie (Wieś)";

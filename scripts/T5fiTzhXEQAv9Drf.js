@@ -1,3 +1,4 @@
+//*** Zmiażdżony łokieć
 let item = await fromUuid("Compendium.wfrp4e-core.items.rlDZZTj5PXjuRXa2")
 let data = item.toObject();
 data.system.location.key = this.item.system.location.key;
@@ -11,7 +12,7 @@ if (location)
 
     if (dropped.length)
     {
-        this.script.scriptNotification(`Upuszczono ${dropped.map(i => i.name).join(", ")}!`)
+        this.script.scriptNotification(`Upuszczono ${dropped.map(i => i.name).join(", ")}!`);
         for(let weapon of dropped)
         {
             await weapon.system.toggleEquip();

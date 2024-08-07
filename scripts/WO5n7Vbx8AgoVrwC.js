@@ -1,15 +1,16 @@
-   let characteristics = {
-            "ws" : 0,
-            "bs" : 0,
-            "s" : 0,
-            "t" : 0,
-            "i" : 10,
-            "ag" : 0,
-            "dex" : 0,
-            "int" : 10,
-            "wp" : 5,
-            "fel" : 5
-        }
+//*** Bright Spark
+let characteristics = {
+    "ws" : 0,
+    "bs" : 0,
+    "s" : 0,
+    "t" : 0,
+    "i" : 10,
+    "ag" : 0,
+    "dex" : 0,
+    "int" : 10,
+    "wp" : 5,
+    "fel" : 5
+}
 let skills = ["Intuicja", "Wiedza (Lokalna)", "Percepcja"]
 let skillAdvancements = [10, 10, 10]
 let talents = []

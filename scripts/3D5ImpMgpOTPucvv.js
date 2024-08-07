@@ -1,3 +1,4 @@
+//*** Szuler
 if (args.test.options.cardsharp && args.test.succeeded)
 {
 

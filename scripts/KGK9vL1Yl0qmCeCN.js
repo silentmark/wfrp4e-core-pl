@@ -1,3 +1,4 @@
+//*** Wyszkolony
 let specification = this.item.system.specification.value;
 let choice = [];
 
@@ -63,7 +64,7 @@ if (choice.length)
             case "stóżujący" : 
                 let territorial = await fromUuid("Compendium.wfrp4e-core.items.Item.JIAe7i7dqTQBu4do");
                 await this.actor.createEmbeddedDocuments("Item", [territorial], {fromEffect: this.effect.id})
-                setProperty(args, "options.keepId", true);
+                foundry.utils.setProperty(args, "options.keepId", true);
                 break;
 
             case "powracający" : 

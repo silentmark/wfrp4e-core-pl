@@ -1,3 +1,4 @@
+//*** Rozmiar
 if (this.item.system.specification.value == "Rozmiar")
 {
     let choice = await ItemDialog.create(ItemDialog.objectToArray(game.wfrp4e.config.actorSizes, this.item.img), 1, "Wybierz rozmiar");

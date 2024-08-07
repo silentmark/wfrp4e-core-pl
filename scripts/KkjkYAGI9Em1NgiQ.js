@@ -1,3 +1,4 @@
+//*** Zestaw na zatrucia
 if (this.item.system.quantity.value) 
 {
     this.item.system.reduceQuantity();
@@ -10,7 +11,7 @@ if (this.item.system.quantity.value)
     }
     else 
     {
-        this.script.scriptNotification("Test Leczenia nie powiódł się!", "error")
+        this.script.scriptNotification("Test Leczenia nie powiódł się!", "error");
     }
 }
 else 

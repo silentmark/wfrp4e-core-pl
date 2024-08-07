@@ -1,3 +1,4 @@
+//*** Zmiażdżona żuchwa
 let item = await fromUuid("Compendium.wfrp4e-core.items.hCadFsTRvLN9faaY")
 let data = item.toObject();
 data.system.location.value = "Szczęka"

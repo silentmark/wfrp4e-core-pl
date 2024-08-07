@@ -1,3 +1,4 @@
+//*** Przekonujący
 if (args.test.options.useOnesArgumentative && (args.test.result.roll <= game.settings.get("wfrp4e", "automaticSuccess") || args.test.result.roll <= args.test.target))
 {
 

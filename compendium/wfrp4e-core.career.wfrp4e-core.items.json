@@ -833,7 +833,7 @@
             "talents": [
                 "Szuler",
                 "Szuler Kościany",
-                "Etykieta (Dowolna Grupa)",
+                "Etykieta (Grupa Społeczna)",
                 "Szczęście"
             ],
             "trappings": [
@@ -1909,7 +1909,7 @@
             "talents": [
                 "Żyłka Handlowa",
                 "Defraudant",
-                "Etykieta (Dowolna Grupa)",
+                "Etykieta (Grupa Społeczna)",
                 "Charyzmatyczny"
             ],
             "trappings": [
@@ -2522,7 +2522,7 @@
             ],
             "talents": [
                 "Żyłka Handlowa",
-                "Etykieta (Dowolna Grupa)",
+                "Etykieta (Grupa Społeczna)",
                 "Obieżyświat",
                 "Czujny"
             ],
@@ -2598,7 +2598,7 @@
             "talents": [
                 "Atrakcyjny",
                 "Gładkie Słówka",
-                "Etykieta (Dowolna Grupa)",
+                "Etykieta (Grupa Społeczna)",
                 "Obieżyświat"
             ],
             "trappings": [
@@ -3323,7 +3323,7 @@
                 "Rzemiosło (Podkuwanie Koni)"
             ],
             "talents": [
-                "Etykieta (Dowolna Grupa)",
+                "Etykieta (Grupa Społeczna)",
                 "Urodzony w Siodle",
                 "Tragarz",
                 "Urodzony Wojownik"
@@ -3767,7 +3767,7 @@
             ],
             "talents": [
                 "Władcza Postura",
-                "Etykieta (Dowolna Grupa)",
+                "Etykieta (Grupa Społeczna)",
                 "Znawca (Wiedza Lokalna)",
                 "Charyzmatyczny"
             ],
@@ -4261,7 +4261,7 @@
                 "Jeździectwo (Konie)"
             ],
             "talents": [
-                "Etykieta (Dowolna Grupa)",
+                "Etykieta (Grupa Społeczna)",
                 "Krasomówstwo",
                 "Intrygant",
                 "Charyzmatyczny"
@@ -4925,7 +4925,7 @@
             ],
             "talents": [
                 "Gładkie Słówka",
-                "Etykieta (Dowolna Grupa)",
+                "Etykieta (Grupa Społeczna)",
                 "Numizmatyka",
                 "Czujny"
             ],
@@ -5254,7 +5254,7 @@
             ],
             "talents": [
                 "Bitewny Refleks",
-                "Etykieta (Dowolna Grupa)",
+                "Etykieta (Grupa Społeczna)",
                 "Błyskawiczny Strzał",
                 "Odwrócenie Szans"
             ],
@@ -6358,7 +6358,7 @@
                 "Zwinne Palce"
             ],
             "talents": [
-                "Etykieta (Dowolna Grupa)",
+                "Etykieta (Grupa Społeczna)",
                 "Czytanie z Ruchu Warg",
                 "Czytanie/Pisanie",
                 "Sekretna Tożsamość"
@@ -7148,7 +7148,7 @@
                 "Percepcja"
             ],
             "talents": [
-                "Odporny na (Dowolne Zagrożenie)",
+                "Odporny na (Wybrane Zagrożenie)",
                 "Krzepki",
                 "Znawca (Teologia)",
                 "Waleczne Serce"
@@ -7534,7 +7534,7 @@
             "talents": [
                 "Krasomówstwo",
                 "Czysta Dusza",
-                "Odporny na (Dowolne Zagrożenie)",
+                "Odporny na (Wybrane Zagrożenie)",
                 "Znawca (Teologia)"
             ],
             "trappings": [
@@ -7711,7 +7711,7 @@
             "talents": [
                 "Wyczulony Zmysł (Dowolny)",
                 "Żyłka Handlowa",
-                "Etykieta (Dowolna Grupa)",
+                "Etykieta (Grupa Społeczna)",
                 "Nos do Kłopotów"
             ],
             "trappings": [
@@ -8026,7 +8026,7 @@
             ],
             "talents": [
                 "Niegodny Uwagi",
-                "Etykieta (Dowolna Grupa)",
+                "Etykieta (Grupa Społeczna)",
                 "Towarzyski",
                 "Czytanie/Pisanie"
             ],
@@ -8189,7 +8189,7 @@
                 "Broń Biała (Podstawowa)"
             ],
             "talents": [
-                "Etykieta (Dowolna Grupa)",
+                "Etykieta (Grupa Społeczna)",
                 "Numizmatyka",
                 "Czytanie/Pisanie",
                 "Błyskotliwość"
@@ -8331,7 +8331,7 @@
             "talents": [
                 "Żyłka Handlowa",
                 "Defraudant",
-                "Etykieta (Dowolna Grupa)",
+                "Etykieta (Grupa Społeczna)",
                 "Towarzyski"
             ],
             "trappings": [

@@ -1,3 +1,4 @@
+//*** Mutacja
 let table = game.wfrp4e.tables.findTable("mutatephys");
 if (!table)
 {

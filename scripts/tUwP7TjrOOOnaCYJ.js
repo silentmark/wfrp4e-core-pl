@@ -1,3 +1,4 @@
+//*** Eliksir żywotności
 let fatigued = this.actor.hasCondition("fatigued")
 if (fatigued)
 {
@@ -6,5 +7,5 @@ if (fatigued)
 }
 else 
 {
-	this.script.scriptNotification(`Brak Stanów Zmęczenia do usunięcia`)
+   this.script.scriptNotification(`Brak Stanów Zmęczenia do usunięcia`)
 }

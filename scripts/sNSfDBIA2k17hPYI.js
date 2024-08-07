@@ -1,3 +1,4 @@
+//*** Tarcza Aqshy
 let ablaze = this.actor.hasCondition("ablaze");
 if (ablaze)
 {

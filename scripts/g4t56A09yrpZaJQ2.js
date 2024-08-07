@@ -1,3 +1,4 @@
+//*** Szpony furii
     let amberTalons = foundry.utils.deepClone(game.wfrp4e.config.systemItems.unarmed);
     amberTalons.name = "Szpony Furii";
     amberTalons.img = this.effect.img;

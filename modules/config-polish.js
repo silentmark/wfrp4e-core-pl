@@ -281,7 +281,7 @@ Hooks.on("setup", function () {
 					"Wiedza (Torgovann)",
 					"Rzemiosło (Dowolne)"
 				],
-				talents: ["Wyczulony Zmysł", "Twardziel, Percepcja Magiczna", "Widzenie w Ciemności", "Czytanie/Pisanie, Niezwykle Odporny", "Wytwórca (dowolny), Zręczny", 0]
+				talents: ["Wyczulony Zmysł", "Twardziel, Percepcja Magiczna", "Widzenie w Ciemności", "Czytanie/Pisanie, Niezwykle Odporny", "Wytwórca (Dowolne Rzemiosło), Zręczny", 0]
 			},
 			anmyr: {
 				name: "Anmyr",

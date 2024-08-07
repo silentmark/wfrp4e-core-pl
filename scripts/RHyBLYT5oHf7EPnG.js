@@ -1,6 +1,7 @@
+//*** Magiczna broń (Demonologia)
 let skills = this.actor.itemTypes.skill.filter(i => i.name.includes(game.i18n.localize("NAME.Melee")))
 
-let skill = await ItemDialog.create(skills, 1, "Wybierz umiejętność wybranej broni")
+let skill = await ItemDialog.create(skills, 1, "Wybierz umiejętność wybranej broni");
 let group = game.wfrp4e.utility.extractParenthesesText(skill[0]?.name)
 let groupKey = game.wfrp4e.utility.findKey(group, game.wfrp4e.config.weaponGroups)
 

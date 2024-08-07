@@ -1,3 +1,4 @@
+//*** Kosa żniwiarza
     let scythe = (await fromUuid("Compendium.wfrp4e-core.items.CXg7XOFJwu4LZ9LM")).toObject();
     scythe.name = "Kosa Shyish";
     scythe.system.damage.value = "WPB + 3"

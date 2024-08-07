@@ -1,7 +1,8 @@
+//*** Odporny na (Zagrożenie)
 let resistance
-if (this.item.name.includes("(") && !this.item.name.toLowerCase().includes("(dowolne zagrożenie)"))
+if (this.item.name.includes("(") && !this.item.name.toLowerCase().includes("(wybrane zagrożenie)"))
 {
-	resistance = this.item.parenthesesText
+    resistance = this.item.parenthesesText
 }
 else 
 {

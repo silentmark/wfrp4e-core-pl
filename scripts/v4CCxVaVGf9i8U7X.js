@@ -1,3 +1,4 @@
+//*** Gorzkie oczyszczenie
 let cured = await Dialog.wait({
     title : this.effect.name,
     content : "<p>Wpisz liczbę chorób/klątw, które zostały uleczone</p><input type='number'>",
@@ -11,14 +12,14 @@ let cured = await Dialog.wait({
             }
         }
     }
-})
+});
 
 
 let damage = 0;
 
-let rolls = new Array(cured).fill("").map(i => `max(0, 1d10 - ${this.actor.system.characteristics.fel.bonus})`)
+let rolls = new Array(cured).fill("").map(i => `max(0, 1d10 - ${this.actor.system.characteristics.fel.bonus})`);
 
 let test = new Roll(`${rolls.join(" + ")}`);
 await test.roll();
 test.toMessage({speaker : {alias : this.actor.name}, flavor : this.effect.name});
-this.script.scriptMessage(await this.actor.applyBasicDamage(test.total, { damageType: game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL, suppressMsg : true }))
+this.script.scriptMessage(await this.actor.applyBasicDamage(test.total, { damageType: game.wfrp4e.config.DAMAGE_TYPE.IGNORE_ALL, suppressMsg : true }));

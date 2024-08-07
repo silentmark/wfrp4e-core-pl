@@ -1,3 +1,4 @@
+//*** Fakstoryl
 let bleeding = this.actor.hasCondition("bleeding")
 if (bleeding)
 {

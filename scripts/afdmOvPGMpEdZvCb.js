@@ -1,0 +1,2 @@
+//*** Amputacja Ucha
+return (args.skill?.name == game.i18n.localize("NAME.Perception") || args.characteristic == "fel")

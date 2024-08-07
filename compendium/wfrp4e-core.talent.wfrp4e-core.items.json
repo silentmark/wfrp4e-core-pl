@@ -102,7 +102,7 @@
         },
         "Strider": {
             "id": "1dUizIgLBgn4jICC",
-            "name": "Doświadczony Wędrowiec (Dowolny Teren)",
+            "name": "Doświadczony Wędrowiec (Wybrany Teren)",
             "description": "<p>Masz doświadczenie w wędrówce przez dzicz i potrafisz dobrze wybierać drogę. Nie działają na ciebie negatywne modyfikatory wynikające z wpływu wybranego terenu. Oto lista przykładów: Lasy, Pustynie, Moczary, Teren Kamienisty, Tundra, Wybrzeża.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.1dUizIgLBgn4jICC",
             "tests": "Atletyki podczas podróży w terenie (Wybrany Teren)",
@@ -1497,7 +1497,7 @@
         },
         "Craftsman": {
             "id": "GRRN3XAKIpEVCY7z",
-            "name": "Wytwórca",
+            "name": "Wytwórca (Dowolne Rzemiosło)",
             "description": "<p>Jesteś prawdziwie uzdolniony. Dodaj rzemiosło powiązane z tym Talentem do listy Umiejętności aktualnej Profesji. Jeśli już wcześniej było na niej wymienione, za każde jego Rozwinięcie płacisz 5 PD mniej.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.GRRN3XAKIpEVCY7z",
             "tests": "Rzemiosło (Dowolne)",
@@ -2680,7 +2680,7 @@
         },
         "Etiquette": {
             "id": "sYbgpSnRqSZWgwFP",
-            "name": "Etykieta",
+            "name": "Etykieta (Grupa Społeczna)",
             "description": "<p>Dopóki jesteś odpowiednio ubrany i zachowujesz się należycie, potrafisz wtopić się w tłum wybranej grupy społecznej. Oto przykłady kilku z nich: Członkowie Gildii lub Cechu, Kultyści, Przestępcy, Służba, Szlachta, Uczeni, Żołnierze. Jeśli nie posiadasz tego Talentu, ci, którzy go mają, łatwo zauważą, że nie pasujesz do obcego środowiska. Widać to w zachowaniu bohatera. To oczywiście zależy od odgrywania, ale MG może wprowadzić tu odpowiedni modyfikator do Testów Ogłady.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.sYbgpSnRqSZWgwFP",
             "tests": "Charyzma lub Plotkowanie (Grupa Społeczna)",

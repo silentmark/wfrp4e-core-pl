@@ -1,3 +1,4 @@
+//*** Strefa zamętu
 let test = await this.actor.setupCharacteristic("i", {skipTargets: true, appendTitle :  " - Oszołomienie", fields : {difficulty : "easy"}})
 await test.roll();
 

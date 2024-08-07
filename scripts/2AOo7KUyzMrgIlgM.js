@@ -1,3 +1,4 @@
+//*** Spaczenie
 let corruption = this.item.system.specification.value;
 switch (corruption) {
     case "Pomniejsze":

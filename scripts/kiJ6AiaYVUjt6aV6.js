@@ -1,3 +1,4 @@
+//*** Rozkwaszone usta
 teeth = await fromUuid("Compendium.wfrp4e-core.items.fBcZhOBn8IpoVqQ1")
 teeth = teeth.toObject();
 

@@ -1,3 +1,4 @@
+//*** Kopuła (Cień)
 
 let choice = await Dialog.wait({
     title: this.effect.name,
