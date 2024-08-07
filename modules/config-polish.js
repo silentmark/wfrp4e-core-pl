@@ -98,8 +98,48 @@ Hooks.on("setup", function () {
 					"Broń Biała (Podstawowa)",
 					"Broń Zasięgowa (Łuk)",
 				],
-				talents: ["Wróżba Losu", "Błyskotliwość, Charyzmatyczny", 3],
+				talents: ["Wróżba Losu", "Błyskotliwość, Charyzmatyczny", 3]
 			},
+			tilean: {
+				name: "Tileańczyk",
+				skills: [
+					"Charyzma",
+					"Opanowanie",
+					"Wycena",
+					"Plotkowanie",
+					"Targowanie",
+					"Język (Arabski)",
+					"Język (Reikspiel)",
+					"Język (Estalijski)",
+					"Wiedza (Tilea)",
+					"Broń Biała (Podstawowa)",
+					"Broń Zasięgowa (Kusza)",
+					"Żeglarstwo"
+				],
+				talents: [
+					"Przekonujący, Rybak",
+					"Zimna krew", "Charyzmatyczny",
+					3
+				]
+			},
+			"imperial-tilean": {
+				name: "Imperial Tilean",
+				skills: [
+					"Opieka nad Zwierzętami",
+					"Charyzma",
+					"Opanowanie",
+					"Wycena",
+					"Plotkowanie",
+					"Targowanie",
+					"Język (Bretoński)",
+					"Język (Tileański)",
+					"Dowodzenie",
+					"Wiedza (Reikland)",
+					"Broń Biała (Podstawowa)",
+					"Broń Zasięgowa (Łuk)",
+				],
+				talents: ["Wróżba Losu", "Błyskotliwość, Charyzmatyczny", 3]
+			}
 		},
 		welf: {
 			talsyn: {
