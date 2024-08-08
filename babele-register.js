@@ -232,7 +232,7 @@ Hooks.on("init", () => {
 										script.options.dialog.hideScript = transScript.hideScript;
 									}
 									if (transScript.activationScript) {
-										script.options.dialog.activationScript = transScript.activationScript;
+										script.options.dialog.activateScript = transScript.activationScript;
 									}
 									if (transScript.submissionScript) {
 										script.options.dialog.submissionScript = transScript.submissionScript;
