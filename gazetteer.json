@@ -1,0 +1,651 @@
+[
+    {
+        "score": 30,
+        "name": "Luccini",
+        "size": 4,
+        "ruler": "Książę Lorenzo Lupo",
+        "pop": 30000,
+        "w": 4,
+        "isTrade": true,
+        "produces": [
+            "grain",
+            "wool",
+            "luxuries"
+        ],
+        "luxuries": [
+            "ser"
+        ],
+        "garrison": " 300a,600b/300b,1000c",
+        "notes": "Najstarsze miasto w Tilei"
+    },
+    {
+        "score": 35,
+        "name": "Anducci",
+        "size": 1,
+        "ruler": "Książę Lorenzo Lupo",
+        "pop": 88,
+        "w": 1,
+        "isTrade": false,
+        "produces": [
+            "saltfish"
+        ],
+        "luxuries": [],
+        "garrison": " –/2b,8c",
+        "notes": "Ze względu na stare spory<br>elfy nie są tu mile widziane"
+    },
+    {
+        "score": 40,
+        "name": "Pattio",
+        "size": 2,
+        "ruler": "Książę Lorenzo Lupo",
+        "pop": 250,
+        "w": 1,
+        "isTrade": false,
+        "produces": [
+            "saltfish"
+        ],
+        "luxuries": [],
+        "garrison": " 50b/75c",
+        "notes": "–"
+    },
+    {
+        "score": 44,
+        "name": "Miragliano",
+        "size": 4,
+        "ruler": "Księżna wdowa Dolchellata Belladonna",
+        "pop": 25000,
+        "w": 4,
+        "isTrade": true,
+        "produces": [
+            "luxuries",
+            "saltfish"
+        ],
+        "luxuries": [
+            "perły"
+        ],
+        "garrison": " 550a,1800b/900b,3000c",
+        "notes": "Znane ze znakomitych kuszników; populacja Miragliano zmniejszyła się z powodu niepokojów po śmierci księcia Borgio i epidemii żółtej febry"
+    },
+    {
+        "score": 48,
+        "name": "Amato",
+        "size": 1,
+        "ruler": "Dolchellata Belladonna",
+        "pop": 260,
+        "w": 1,
+        "isTrade": true,
+        "produces": [],
+        "luxuries": [],
+        "garrison": " 50b/25c",
+        "notes": "Znajduje się tutaj wiele czystych źródeł"
+    },
+    {
+        "score": 53,
+        "name": "Campogrotta",
+        "size": 2,
+        "ruler": "Dolchellata Belladonna",
+        "pop": 350,
+        "w": 2,
+        "isTrade": false,
+        "produces": [
+            "grain",
+            "wool"
+        ],
+        "luxuries": [],
+        "garrison": " 50a/100b",
+        "notes": "Tileański koniec Tunelu Alimento; mieszka tutaj niewielka społeczność krasnoludów"
+    },
+    {
+        "score": 57,
+        "name": "Cammaro",
+        "size": 2,
+        "ruler": "Dolchellata Belladonna",
+        "pop": 0,
+        "w": 0,
+        "isTrade": false,
+        "produces": [],
+        "luxuries": [],
+        "garrison": " –",
+        "notes": "Mieszkańcy zniknęli w roku 2511"
+    },
+    {
+        "score": 63,
+        "name": "Etobrutti",
+        "size": 1,
+        "ruler": "Dolchellata Belladonna",
+        "pop": 275,
+        "w": 1,
+        "isTrade": false,
+        "produces": [
+            "grain"
+        ],
+        "luxuries": [],
+        "garrison": " 50b/52c",
+        "notes": "–"
+    },
+    {
+        "score": 68,
+        "name": "Mironia",
+        "size": 1,
+        "ruler": "Dolchellata Belladonna",
+        "pop": 0,
+        "w": 0,
+        "isTrade": false,
+        "produces": [],
+        "luxuries": [],
+        "garrison": " –",
+        "notes": "Mieszkańcy zniknęli w roku 2510"
+    },
+    {
+        "score": 74,
+        "name": "Parmis",
+        "size": 2,
+        "ruler": "Dolchellata Belladonna",
+        "pop": 0,
+        "w": 0,
+        "isTrade": false,
+        "produces": [],
+        "luxuries": [],
+        "garrison": " –",
+        "notes": "Mieszkańcy zniknęli w roku 2512"
+    },
+    {
+        "score": 80,
+        "name": "Ravola",
+        "size": 3,
+        "ruler": "Dolchellata Belladonna",
+        "pop": 9500,
+        "w": 3,
+        "isTrade": false,
+        "produces": [
+            "wine"
+        ],
+        "luxuries": [],
+        "garrison": " 30b/300c",
+        "notes": "Najlepsze winnice w Tilei"
+    },
+    {
+        "score": 84,
+        "name": "Toscania",
+        "size": 2,
+        "ruler": "Dolchellata Belladonna",
+        "pop": 365,
+        "w": 1,
+        "isTrade": false,
+        "produces": [
+            "metal"
+        ],
+        "luxuries": [],
+        "garrison": " 50b/135c",
+        "notes": "Została tutaj założona krasnoludzka faktoria"
+    },
+    {
+        "score": 90,
+        "name": "Udolpho",
+        "size": 1,
+        "ruler": "Melmoth Udolpho",
+        "pop": 100,
+        "w": 2,
+        "isTrade": false,
+        "produces": [],
+        "luxuries": [],
+        "garrison": " –/5a",
+        "notes": "Znienawidzone i nawiedzone miejsce"
+    },
+    {
+        "score": 94,
+        "name": "Zeluco",
+        "size": 2,
+        "ruler": "Duce Montoni di Zeluco",
+        "pop": 500,
+        "w": 4,
+        "isTrade": false,
+        "produces": [],
+        "luxuries": [],
+        "garrison": " 300b/–",
+        "notes": "Forteca z przypominającymi labirynt lochami"
+    },
+    {
+        "score": 98,
+        "name": "Monte Castello",
+        "size": 2,
+        "ruler": "Kasztelan Lorenzo di Galeazzo",
+        "pop": 500,
+        "w": 4,
+        "isTrade": false,
+        "produces": [],
+        "luxuries": [],
+        "garrison": " 100a, 400b/–",
+        "notes": "Forteca, stacjonujące tu oddziały pochodzą ze wszystkich najważniejszych miast"
+    },
+    {
+        "score": 99,
+        "name": "Pavona",
+        "size": 4,
+        "ruler": "Księżna wdowa Lucrezzia Belladonna",
+        "pop": 35000,
+        "w": 4,
+        "isTrade": true,
+        "produces": [
+            "olives"
+        ],
+        "luxuries": [],
+        "garrison": " 250a, 700b/200b, 1500c",
+        "notes": "–"
+    },
+    {
+        "score": 100,
+        "name": "Bucollia",
+        "size": 2,
+        "ruler": "Lucrezzia Belladonna",
+        "pop": 467,
+        "w": 2,
+        "isTrade": false,
+        "produces": [
+            "wine"
+        ],
+        "luxuries": [],
+        "garrison": " 50a/100b",
+        "notes": "–"
+    },
+    {
+        "score": 100,
+        "name": "Lambrusco",
+        "size": 3,
+        "ruler": "Kapitan upiorów Ennio Mordini",
+        "pop": 256,
+        "w": 0,
+        "isTrade": false,
+        "produces": [],
+        "luxuries": [],
+        "garrison": " 250a/–",
+        "notes": "Mocno ufortyfifikowany dwór nieumarłych"
+    },
+    {
+        "score": 100,
+        "name": "Organza",
+        "size": 3,
+        "ruler": "Lucrezzia Belladonna",
+        "pop": 6500,
+        "w": 3,
+        "isTrade": false,
+        "produces": [
+            "wine",
+            "wool"
+        ],
+        "luxuries": [],
+        "garrison": " 20a, 60b/350c",
+        "notes": "–"
+    },
+    {
+        "score": 100,
+        "name": "Remas",
+        "size": 4,
+        "ruler": "Triumwirat",
+        "pop": 40000,
+        "w": 4,
+        "isTrade": true,
+        "produces": [
+            "saltfish"
+        ],
+        "luxuries": [],
+        "garrison": " 350a, 750b/350b, 1000c",
+        "notes": "–"
+    },
+    {
+        "score": 100,
+        "name": "Alcatani",
+        "size": 1,
+        "ruler": "Triumwirat",
+        "pop": 82,
+        "w": 1,
+        "isTrade": false,
+        "produces": [
+            "citrusFruit",
+            "olives"
+        ],
+        "luxuries": [],
+        "garrison": " –/60c",
+        "notes": "Ze względu na stare porachunki mieszkańcy Trantio nie są tu mile widziani"
+    },
+    {
+        "score": 100,
+        "name": "Catrazza",
+        "size": 3,
+        "ruler": "Triumwirat",
+        "pop": 14000,
+        "w": 3,
+        "isTrade": false,
+        "produces": [
+            "grain",
+            "olives"
+        ],
+        "luxuries": [],
+        "garrison": " 50b/200c",
+        "notes": "–"
+    },
+    {
+        "score": 100,
+        "name": "Ciarascura",
+        "size": 3,
+        "ruler": "Triumwirat",
+        "pop": 445,
+        "w": 4,
+        "isTrade": false,
+        "produces": [],
+        "luxuries": [],
+        "garrison": " 300b/–",
+        "notes": "Stara, krzywa wieża dowodzona przez despotyczną kasztelan Dellectę"
+    },
+    {
+        "score": 100,
+        "name": "Motta Zorella",
+        "size": 2,
+        "ruler": "Triumwirat",
+        "pop": 330,
+        "w": 2,
+        "isTrade": false,
+        "produces": [
+            "grain",
+            "wool"
+        ],
+        "luxuries": [],
+        "garrison": " 40a/80b",
+        "notes": "–"
+    },
+    {
+        "score": 100,
+        "name": "Monte Negro",
+        "size": 3,
+        "ruler": "Wielki dowódca Bassiano Dutra",
+        "pop": 450,
+        "w": 3,
+        "isTrade": false,
+        "produces": [],
+        "luxuries": [],
+        "garrison": " 40a, 250b/–",
+        "notes": "Instytucja poświęcona morryckiemu Zakonowi Całunu"
+    },
+    {
+        "score": 100,
+        "name": "Scintio",
+        "size": 2,
+        "ruler": "Triumwirat",
+        "pop": 350,
+        "w": 2,
+        "isTrade": false,
+        "produces": [
+            "grain",
+            "luxuries"
+        ],
+        "luxuries": [
+            "ser"
+        ],
+        "garrison": " 45a/120b",
+        "notes": "–"
+    },
+    {
+        "score": 100,
+        "name": "Vennia",
+        "size": 2,
+        "ruler": "Triumwirat",
+        "pop": 84,
+        "w": 1,
+        "isTrade": false,
+        "produces": [
+            "saltfish"
+        ],
+        "luxuries": [],
+        "garrison": " 2b/8c",
+        "notes": "–"
+    },
+    {
+        "score": 100,
+        "name": "Zorasta",
+        "size": 3,
+        "ruler": "Triumwirat",
+        "pop": 6250,
+        "w": 3,
+        "isTrade": true,
+        "produces": [
+            "grain",
+            "saltfish",
+            "wool"
+        ],
+        "luxuries": [],
+        "garrison": " 35a, 75b/300c",
+        "notes": "Miasteczko portowe znane z ufortyfifikowanego nabrzeża"
+    },
+    {
+        "score": 100,
+        "name": "Sartosa",
+        "size": 3,
+        "ruler": "Piracka Księżniczka",
+        "pop": 15500,
+        "w": 3,
+        "isTrade": true,
+        "produces": [],
+        "luxuries": [],
+        "garrison": " 550b,1600c/–",
+        "notes": "Anarchistyczna i pełna bezprawia kryjówka piratów"
+    },
+    {
+        "score": 100,
+        "name": "Tobaro",
+        "size": 4,
+        "ruler": "Książę Tibaldus Marsarius de Vela",
+        "pop": 35000,
+        "w": 4,
+        "isTrade": true,
+        "produces": [
+            "stone",
+            "luxuries",
+            "saltfish"
+        ],
+        "luxuries": [
+            "srebro",
+            "kamienie szlachetne"
+        ],
+        "garrison": " 350a, 500b/400b, 800c",
+        "notes": "Odcięte od reszty lądu przez Góry Abasko i prawie niedostępne od strony morza z powodu Skał Głupców"
+    },
+    {
+        "score": 100,
+        "name": "Cera-Scuro",
+        "size": 1,
+        "ruler": "Tibaldus Marsarius de Vela",
+        "pop": 75,
+        "w": 1,
+        "isTrade": false,
+        "produces": [
+            "saltfish"
+        ],
+        "luxuries": [],
+        "garrison": " 10b/75c",
+        "notes": "Dawniej leże piratów na Wyspach Syren, niedawno podbite przez Tobaro"
+    },
+    {
+        "score": 100,
+        "name": "Vedenza",
+        "size": 3,
+        "ruler": "Rada Łez",
+        "pop": 10500,
+        "w": 3,
+        "isTrade": false,
+        "produces": [
+            "stone",
+            "olives"
+        ],
+        "luxuries": [],
+        "garrison": " 200b/500c",
+        "notes": "Niewielka republika na granicy z Estalią, która niedawno została wyzwolona zbrojnie spod estalijskiej władzy"
+    },
+    {
+        "score": 100,
+        "name": "Trantio",
+        "size": 4,
+        "ruler": "Kupiecki książę Ettore Rinaldo",
+        "pop": 27500,
+        "w": 4,
+        "isTrade": true,
+        "produces": [
+            "luxuries"
+        ],
+        "luxuries": [
+            "różowy marmur"
+        ],
+        "garrison": " 250a, 400b/300b, 900c",
+        "notes": "–"
+    },
+    {
+        "score": 100,
+        "name": "Ducieso",
+        "size": 3,
+        "ruler": "Książę Frenzo Badolphus",
+        "pop": 12500,
+        "w": 3,
+        "isTrade": false,
+        "produces": [
+            "stone",
+            "olives"
+        ],
+        "luxuries": [],
+        "garrison": " 250b/600c",
+        "notes": "Książę Frenzo jest utalentowanym astromantą"
+    },
+    {
+        "score": 100,
+        "name": "Terramorta",
+        "size": 1,
+        "ruler": "Ettore Rinaldo",
+        "pop": 93,
+        "w": 1,
+        "isTrade": false,
+        "produces": [
+            "grain"
+        ],
+        "luxuries": [],
+        "garrison": " 10b/60c",
+        "notes": "–"
+    },
+    {
+        "score": 100,
+        "name": "Torrico",
+        "size": 2,
+        "ruler": "Ettore Rinaldo",
+        "pop": 80,
+        "w": 2,
+        "isTrade": false,
+        "produces": [
+            "olives"
+        ],
+        "luxuries": [],
+        "garrison": " –/2b,8c",
+        "notes": "Populacja odradza się po niedawnych najazdach hobgoblinów"
+    },
+    {
+        "score": 100,
+        "name": "Varenna",
+        "size": 2,
+        "ruler": "Ettore Rinaldo",
+        "pop": 390,
+        "w": 2,
+        "isTrade": false,
+        "produces": [
+            "grain",
+            "wool"
+        ],
+        "luxuries": [],
+        "garrison": " 45a/85b",
+        "notes": "–"
+    },
+    {
+        "score": 100,
+        "name": "Viccia",
+        "size": 1,
+        "ruler": "Ettore Rinaldo",
+        "pop": 183,
+        "w": 1,
+        "isTrade": false,
+        "produces": [
+            "grain",
+            "wool"
+        ],
+        "luxuries": [],
+        "garrison": " 35b/50c",
+        "notes": "–"
+    },
+    {
+        "score": 100,
+        "name": "Verezzo",
+        "size": 4,
+        "ruler": "Groccolo z Żółtych",
+        "pop": 36000,
+        "w": 4,
+        "isTrade": true,
+        "produces": [
+            "grain"
+        ],
+        "luxuries": [],
+        "garrison": " 250a, 550b/400b, 1200c",
+        "notes": "–"
+    },
+    {
+        "score": 100,
+        "name": "Ciabbatta",
+        "size": 2,
+        "ruler": "Groccolo z Żółtych",
+        "pop": 394,
+        "w": 1,
+        "isTrade": false,
+        "produces": [
+            "grain"
+        ],
+        "luxuries": [],
+        "garrison": " 20b/100b",
+        "notes": "–"
+    },
+    {
+        "score": 100,
+        "name": "Nonucci",
+        "size": 1,
+        "ruler": "Groccolo z Żółtych",
+        "pop": 260,
+        "w": 1,
+        "isTrade": false,
+        "produces": [],
+        "luxuries": [],
+        "garrison": " 30b/–",
+        "notes": "Kolonia karna na Morzu Tileańskim"
+    },
+    {
+        "score": 100,
+        "name": "Riccotta",
+        "size": 2,
+        "ruler": "Groccolo z Żółtych",
+        "pop": 410,
+        "w": 1,
+        "isTrade": false,
+        "produces": [
+            "grain"
+        ],
+        "luxuries": [],
+        "garrison": " 15b/100c",
+        "notes": "–"
+    },
+    {
+        "score": 100,
+        "name": "Veddia",
+        "size": 1,
+        "ruler": "Groccolo z Żółtych",
+        "pop": 295,
+        "w": 1,
+        "isTrade": false,
+        "produces": [
+            "citrusFruit"
+        ],
+        "luxuries": [],
+        "garrison": " 25b/62c",
+        "notes": "–"
+    }
+]

@@ -47,7 +47,8 @@
             },
             "duration": "6 Rund",
             "target": "1",
-            "range": "6 metrów"
+            "range": "6 metrów",
+            "god": "Manann, Sigmar, Taal, Ulryk"
         },
         "Rhya's Touch": {
             "id": "0uT3mzx8v4H3gVQj",
@@ -136,7 +137,8 @@
                     "id": "kLZ9SuRbFKuZrdyT",
                     "name": "Futro zimowego wilka"
                 }
-            }
+            },
+            "god": "Ulryk"
         },
         "Soulfire": {
             "id": "5fVTY8TSua3trOW8",
@@ -192,7 +194,8 @@
             "sourceId": "Compendium.wfrp4e-core.items.Item.9ALNZLZUZSLrLvkd",
             "duration": "Bonus Ogd Rund",
             "target": "Specjalny",
-            "range": "Ogłada metrów"
+            "range": "Ogłada metrów",
+            "god": "Ulryk"
         },
         "Cat's Eyes": {
             "id": "Bo3ukcaipFNb7Ljl",
@@ -276,7 +279,8 @@
             },
             "duration": "6 Rund",
             "target": "1",
-            "range": "6 metrów"
+            "range": "6 metrów",
+            "god": "Manann, Morr, Myrmidia, Sigmar, Ulryk, Verena"
         },
         "Truth Will Out": {
             "id": "DA4ZB3HkOh51vhuB",
@@ -344,7 +348,8 @@
             },
             "duration": "6 Rund",
             "target": "1",
-            "range": "6 metrów"
+            "range": "6 metrów",
+            "god": "Manann, Taal, Ulryk"
         },
         "Blessing of Battle": {
             "id": "ElmLfnrXliStS9CP",
@@ -359,7 +364,8 @@
             },
             "duration": "6 Rund",
             "target": "1",
-            "range": "6 metrów"
+            "range": "6 metrów",
+            "god": "Manann, Myrmidia, Sigmar, Taal, Ulryk"
         },
         "ezVl3vFWTwHfNXL3": {
             "id": "ezVl3vFWTwHfNXL3",
@@ -403,7 +409,8 @@
                     "id": "hGdAGmyvnWQJt9Le",
                     "name": "Dar Ulryka"
                 }
-            }
+            },
+            "god": "Ulryk"
         },
         "You Ain’t Seen Me, Right?": {
             "id": "fABd17NZvg2uUReL",
@@ -560,7 +567,8 @@
                     "id": "uxCZ2uplQQJcwRgu",
                     "name": "Błogosławieństwo Nieustępliwości"
                 }
-            }
+            },
+            "god": "Manann, Morr, Shallya, Ulryk"
         },
         "The Snow King's Judgement": {
             "id": "GVMPSJwgscMVJzpX",
@@ -582,7 +590,8 @@
                     "id": "eGV3D8HZcAHCuZ0h",
                     "name": "Prawo Śnieżnego Króla"
                 }
-            }
+            },
+            "god": "Ulryk"
         },
         "Ranald's Grace": {
             "id": "hL7B3d7A0sYYjHXn",
@@ -815,7 +824,8 @@
             },
             "duration": "6 Rund",
             "target": "1",
-            "range": "6 metrów"
+            "range": "6 metrów",
+            "god": "Sigmar, Ulryk"
         },
         "Blessing of Grace": {
             "id": "maUl7MoLvuvTOhM0",
@@ -1184,7 +1194,8 @@
                     "name": "Odmrożenia",
                     "filter": "return args.type == \"weapon\""
                 }
-            }
+            },
+            "god": "Ulryk"
         },
         "Destroy Undead": {
             "id": "sdSy4k7ygDhAjSSX",
@@ -1403,7 +1414,8 @@
                     "id": "WKYusHV8UerVWjSu",
                     "name": "Zimowy chłód (Strach)"
                 }
-            }
+            },
+            "god": "Ulryk"
         },
         "Shield of Myrmidia": {
             "id": "V8GCeqgk1FNGFg76",
