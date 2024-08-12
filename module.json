@@ -75,6 +75,7 @@
     "scripts": [
         "load-scripts-pl.js",
         "modules/initialization.js",
+        "modules/initialization-up-in-arms.js",
         "modules/wfrp4e-npc-generator.js"
     ],
     "styles": [
@@ -83,9 +84,8 @@
     "languages": [
         {
             "lang": "pl",
-            "name": "Polish",
-            "path": "lang/pl.json",
-            "flags": {}
+            "name": "Polski",
+            "path": "lang/pl.json"
         }
     ],    
     "version": "1.0.0",

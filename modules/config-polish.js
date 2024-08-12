@@ -1,4 +1,7 @@
-Hooks.on("setup", function () {
+Hooks.on("i18nInit", async function () {
+
+	await new Promise(resolve => setTimeout(resolve, 500));
+
 	const WFRP4E = {};
 
 	CONFIG.JournalEntry.noteIcons = {
@@ -123,7 +126,7 @@ Hooks.on("setup", function () {
 				]
 			},
 			"imperial-tilean": {
-				name: "Imperial Tilean",
+				name: "Imperialny Tileańczyk",
 				skills: [
 					"Opieka nad Zwierzętami",
 					"Charyzma",
@@ -542,186 +545,25 @@ Hooks.on("setup", function () {
 		"air" : "Powietrzny"
 	}
 
-	WFRP4E.classTrappings = {
-		Uczeni: "ClassTrappings.Academics",
-		Uczony: "ClassTrappings.Academics",
-		Mieszczanie: "ClassTrappings.Burghers",
-		Mieszczanin: "ClassTrappings.Burghers",
-		Dworzanie: "ClassTrappings.Courtiers",
-		Dworzanin: "ClassTrappings.Courtiers",
-		Pospólstwo: "ClassTrappings.Peasants",
-		Wędrowcy: "ClassTrappings.Rangers",
-		Wędrowiec: "ClassTrappings.Rangers",
-		Wodniacy: "ClassTrappings.Riverfolk",
-		Wodniak: "ClassTrappings.Riverfolk",
-		Łotry: "ClassTrappings.Rogues",
-		Łotr: "ClassTrappings.Rogues",
-		Wojownicy: "ClassTrappings.Warriors",
-		Wojownik: "ClassTrappings.Warriors",
-	};
-
 	// Weapon Group Descriptions
 	WFRP4E.weaponGroupDescriptions = {
 		basic: "Podstawowa",
-		cavalry: "WFRP4E.GroupDescription.Cavalry",
 		fencing: "Szermiercza",
 		brawling: "Bijatyka",
-		flail: "WFRP4E.GroupDescription.Flail",
-		parry: "WFRP4E.GroupDescription.Parry",
 		polearm: "Drzewcowa",
 		twohanded: "Dwuręczna",
-		blackpowder: "WFRP4E.GroupDescription.Blackpowder",
 		bow: "Łuk",
-		crossbow: "WFRP4E.GroupDescription.Crossbow",
 		entangling: "Pętającą",
-		engineering: "WFRP4E.GroupDescription.Engineering",
-		explosives: "WFRP4E.GroupDescription.Explosives",
 		sling: "Proca",
-		throwing: "WFRP4E.GroupDescription.Throwing",
-	};
-
-	// Weapon reach descriptions
-	WFRP4E.reachDescription = {
-		personal: "WFRP4E.Reach.PersonalDescription",
-		vshort: "WFRP4E.Reach.VShortDescription",
-		short: "WFRP4E.Reach.ShortDescription",
-		average: "WFRP4E.Reach.AverageDescription",
-		long: "WFRP4E.Reach.LongDescription",
-		vLong: "WFRP4E.Reach.VLongDescription",
-		massive: "WFRP4E.Reach.MassiveDescription",
-	};
-
-	// Weapon Quality Descriptions (Used in dropdown info)
-	WFRP4E.qualityDescriptions = {
-		accurate: "WFRP4E.Properties.Accurate",
-		blackpowder: "WFRP4E.Properties.Blackpowder",
-		blast: "WFRP4E.Properties.Blast",
-		damaging: "WFRP4E.Properties.Damage",
-		defensive: "WFRP4E.Properties.Defensive",
-		distract: "WFRP4E.Properties.Distract",
-		entangle: "WFRP4E.Properties.Entangle",
-		fast: "WFRP4E.Properties.Fast",
-		hack: "WFRP4E.Properties.Hack",
-		impact: "WFRP4E.Properties.Impact",
-		impale: "WFRP4E.Properties.Impale",
-		penetrating: "WFRP4E.Properties.Penetrating",
-		pistol: "WFRP4E.Properties.Pistol",
-		precise: "WFRP4E.Properties.Precise",
-		pummel: "WFRP4E.Properties.Pummel",
-		repeater: "WFRP4E.Properties.Repeater",
-		shield: "WFRP4E.Properties.Shield",
-		trapblade: "WFRP4E.Properties.Trapblade",
-		unbreakable: "WFRP4E.Properties.Unbreakable",
-		wrap: "WFRP4E.Properties.Wrap",
-		flexible: "WFRP4E.Properties.Flexible",
-		impenetrable: "WFRP4E.Properties.Impenetrable",
-		durable: "WFRP4E.Properties.Durable",
-		fine: "WFRP4E.Properties.Fine",
-		lightweight: "WFRP4E.Properties.Lightweight",
-		practical: "WFRP4E.Properties.Practical",
-		slash: "WFRP4E.Properties.Slash",
-	};
-
-	// Weapon Flaw Descriptions (used in dropdown info)
-	WFRP4E.flawDescriptions = {
-		dangerous: "WFRP4E.Properties.Dangerous",
-		imprecise: "WFRP4E.Properties.Imprecise",
-		reload: "WFRP4E.Properties.Reload",
-		slow: "WFRP4E.Properties.Slow",
-		tiring: "WFRP4E.Properties.Tiring",
-		undamaging: "WFRP4E.Properties.Undamaging",
-		partial: "WFRP4E.Properties.Partial",
-		weakpoints: "WFRP4E.Properties.Weakpoints",
-		ugly: "WFRP4E.Properties.Ugly",
-		shoddy: "WFRP4E.Properties.Shoddy",
-		unreliable: "WFRP4E.Properties.Unreliable",
-		bulky: "WFRP4E.Properties.Bulky",
 	};
 
 	WFRP4E.loreEffectDescriptions = {
 		petty: "None",
-		beasts: "WFRP4E.LoreDescription.Beasts",
-		death: "WFRP4E.LoreDescription.Death",
-		fire: "WFRP4E.LoreDescription.Fire",
-		heavens: "WFRP4E.LoreDescription.Heavens",
-		metal: "WFRP4E.LoreDescription.Metal",
-		life: "WFRP4E.LoreDescription.Life",
-		light: "WFRP4E.LoreDescription.Light",
-		shadow: "WFRP4E.LoreDescription.Shadow",
-		hedgecraft: "WFRP4E.LoreDescription.Hedgecraft",
-		witchcraft: "WFRP4E.LoreDescription.Witchcraft",
 		daemonology: "",
 		necromancy: "",
 		nurgle: "",
 		slaanesh: "Tradycja Slaanesha przynosi ból i ekstazę, wszystko w imię Księcia Bólu i Przyjemności dla jego wiecznego zadowolenia, łącząc perwersyjną mieszankę Ametystowego, Złotego i Jadeitowego Wiatru w coś pokręconego i egzotycznego. Efekt Tradycji: Czarnoksiężnik Slaanesha jest biegły w sztuce dostarczania przyjemności i bólu. Możesz zadać dodatkową ranę za każdy Stan Ogłuszenia lub Paniki odniesiony przez cele twoich zaklęć.",
 		tzeentch: "",
-	};
-
-	WFRP4E.conditionDescriptions = {
-		ablaze: "WFRP4E.Conditions.Ablaze",
-		bleeding: "WFRP4E.Conditions.Bleeding",
-		blinded: "WFRP4E.Conditions.Blinded",
-		broken: "WFRP4E.Conditions.Broken",
-		deafened: "WFRP4E.Conditions.Deafened",
-		entangled: "WFRP4E.Conditions.Entangled",
-		fatigued: "WFRP4E.Conditions.Fatigued",
-		poisoned: "WFRP4E.Conditions.Poisoned",
-		prone: "WFRP4E.Conditions.Prone",
-		stunned: "WFRP4E.Conditions.Stunned",
-		surprised: "WFRP4E.Conditions.Surprised",
-		unconscious: "WFRP4E.Conditions.Unconscious",
-		grappling: "WFRP4E.Conditions.Grappling",
-		fear: "WFRP4E.Conditions.Fear",
-		engaged: "WFRP4E.Conditions.Engaged"
-	};
-
-	WFRP4E.symptoms = {
-        "blight": "WFRP4E.Symptom.Blight",
-        "buboes": "WFRP4E.Symptom.Buboes",
-        "convulsions": "WFRP4E.Symptom.Convulsions",
-        "coughsAndSneezes": "WFRP4E.Symptom.CoughsandSneezes",
-        "fever": "WFRP4E.Symptom.Fever",
-        "flux": "WFRP4E.Symptom.Flux",
-        "gangrene": "WFRP4E.Symptom.Gangrene",
-        "lingering": "WFRP4E.Symptom.Lingering",
-        "malaise": "WFRP4E.Symptom.Malaise",
-        "nausea": "WFRP4E.Symptom.Nausea",
-        "pox": "WFRP4E.Symptom.Pox",
-        "wounded": "WFRP4E.Symptom.Wounded",
-		"delirium": "WFRP4E.Symptom.Delirium",
-		"swelling": "WFRP4E.Symptom.Swelling",
-	};
-
-	WFRP4E.symptomDescriptions = {
-		blight: "WFRP4E.SymptomDescriptions.Blight",
-		buboes: "WFRP4E.SymptomDescriptions.Buboes",
-		convulsions: "WFRP4E.SymptomDescriptions.Convulsions",
-		coughsAndSneezes: "WFRP4E.SymptomDescriptions.CoughsandSneezes",
-		fever: "WFRP4E.SymptomDescriptions.Fever",
-		flux: "WFRP4E.SymptomDescriptions.Flux",
-		gangrene: "WFRP4E.SymptomDescriptions.Gangrene",
-		lingering: "WFRP4E.SymptomDescriptions.Lingering",
-		malaise: "WFRP4E.SymptomDescriptions.Malaise",
-		nausea: "WFRP4E.SymptomDescriptions.Nausea",
-		pox: "WFRP4E.SymptomDescriptions.Pox",
-		wounded: "WFRP4E.SymptomDescriptions.Wounded",
-		delirium: "WFRP4E.SymptomDescriptions.Delirium",
-	};
-
-	WFRP4E.symptomTreatment = {
-		blight: "WFRP4E.SymptomTreatment.Blight",
-		buboes: "WFRP4E.SymptomTreatment.Buboes",
-		convulsions: "WFRP4E.SymptomTreatment.Convulsions",
-		coughsAndSneezes: "WFRP4E.SymptomTreatment.CoughsandSneezes",
-		fever: "WFRP4E.SymptomTreatment.Fever",
-		flux: "WFRP4E.SymptomTreatment.Flux",
-		gangrene: "WFRP4E.SymptomTreatment.Gangrene",
-		lingering: "WFRP4E.SymptomTreatment.Lingering",
-		malaise: "WFRP4E.SymptomTreatment.Malaise",
-		nausea: "WFRP4E.SymptomTreatment.Nausea",
-		pox: "WFRP4E.SymptomTreatment.Pox",
-		wounded: "WFRP4E.SymptomTreatment.Wounded",
-		delirium: "WFRP4E.SymptomTreatment.Delirium",
 	};
 
 	WFRP4E.loreEffects = {
@@ -1356,7 +1198,68 @@ Hooks.on("setup", function () {
 		WFRP4E.symptomEffects[symptom].name = game.i18n.localize(WFRP4E.symptomEffects[symptom].name);
 	}
 
-	WFRP4E.PrepareSystemItems = function() {
+	mergeObject(game.wfrp4e.config, WFRP4E);
+
+	game.wfrp4e.config.scriptTriggers = {
+		manual: "Wywołanie Ręczne (manual)",
+		immediate: "Jednorazowy (immediate)",
+		dialog: "Okno Dialogowe Testu (dialog)",
+		addItems: "Podczas dodawania przedmiotu (addItems)",
+		preUpdate: "Przed Aktualizacją (preUpdate)",
+		update: "Podczas Aktualizacji (update)",
+		equipToggle: "Przełączanie Wyposażenia (equipToggle)",
+		prePrepareData: "Przed przygotowaniem danych (prePrepareData)",
+		prePrepareItems: "Przed przygotowaniem przedmiotów aktora (prePrepareItems)",
+		prepareData: "Przygotowanie danych (prepareData)",
+		prepareOwned: "Prepare Owned Data (For Items) (prepareOwned)",
+		computeCharacteristics: "Przeliczanie Cech (computeCharacteristics)",
+		computeEncumbrance: "Obliczanie Obciążenia (computeEncumbrance)",
+		preWoundCalc: "Przed obliczeniem żywotności (preWoundCalc)",
+		woundCalc: "Obliczanie Żywotności (woundCalc)",
+		calculateSize: "Obliczanie Rozmiaru (calculateSize)",
+		preAPCalc: "Przed obliczeniem Punktów Pancerza (preAPCalc)",
+		APCalc: "Obliczanie Punktów Pancerza (APCalc)",
+		preApplyDamage: "Przed zadaniem obrażeń (preApplyDamage)",
+		applyDamage: "Podczas zadawania obrażen (applyDamage)",
+		preTakeDamage: "Przed otrzymaniem obrażeń (preTakeDamage)",
+		takeDamage: "Podczas otrzymywania obrażeń (takeDamage)",
+		computeTakeDamageModifiers: "Obliczanie Modyfikatorów Otrzymania Obrażeń (computeTakeDamageModifiers)",
+		computeApplyDamageModifiers: "Obliczanie Modyfikatórów Zadania Obrażeń (computeApplyDamageModifiers)",
+		preApplyCondition: "Przed Wykonaniem Skryptu Stanu (preApplyCondition)",
+		applyCondition: "Po Wykonaniem Skryptu Stanu (applyCondition)",
+		prePrepareItem: "Przed przygotowaniem danych przedmiotu (prePrepareItem)",
+		prepareItem: "Przygotowanie danych przedmiotu (prepareItem)",
+		preRollTest: "Przed wykonaniem testu (preRollTest)",
+		preRollWeaponTest: "Przed wykonaniem testu Ataku Bronią (preRollWeaponTest)",
+		preRollCastTest: "Przed wykonaniem testu Rzucenia Zaklęcia (preRollCastTest)",
+		preChannellingTest: "Przed wykonaniem testu Splątania Magii (preChannellingTest)",
+		preRollPrayerTest: "Przed wykonaniem testu Modlitwy (preRollPrayerTest)",
+		preRollTraitTest: "Przed wykonaniem testu Cechy Stworzenia (preRollTraitTest)",
+		rollTest: "Po wykonaniu testu (rollTest)",
+		rollIncomeTest: "Po wykonaniu testu Zarabiania (rollIncomeTest)",
+		rollWeaponTest: "Po wykonaniu testu Ataku Bronią (rollWeaponTest)",
+		rollCastTest: "Po wykonaniu testu Rzucania Zaklęcia (rollCastTest)",
+		rollChannellingTest: "Po wykonaniu testu Splątania Magii (rollChannellingTest)",
+		rollPrayerTest: "Po wykonaniu testu Modlitwy (rollPrayerTest)",
+		rollTraitTest: "Po wykonaniu testu Cechy Stworzenia (rollTraitTest)",
+		preOpposedAttacker: "Przed wykonaniem testu Przeciwstawnego przez Atakującego (preOpposedAttacker)",
+		preOpposedDefender: "Przed wykonaniem testu Przeciwstawnego przez Broniącego się (preOpposedDefender)",
+		opposedAttacker: "Po teście przeciwstawnym Atakującego (opposedAttacker)",
+		opposedDefender: "Po teście przeciwstawnym Broniącego się (opposedDefender)",
+		calculateOpposedDamage: "Obliczanie obrażeń z testu przeciwstawnego (calculateOpposedDamage)",
+		getInitiativeFormula: "Obliczanie Inicjatywy podczas walki (getInitiativeFormula)",
+		createToken: "Utworzenie Tokena (createToken)",
+		deleteEffect: "Usunięcie Efektu (deleteEffect)",
+		endTurn: "Koniec Tury (endTurn)",
+		startTurn: "Początek Tury (startTurn)",
+		endRound: "Koniec Rundy (endRound)",
+		endCombat: "Koniec Walki (endCombat)",
+	};
+});
+
+
+Hooks.on("init", () => {
+	game.wfrp4e.config.PrepareSystemItems = function() {
 
 		this.systemItems = mergeObject(this.systemItems, {
 			reload : {
@@ -2464,62 +2367,4 @@ Hooks.on("setup", function () {
 			}
 		]
 	}
-
-	mergeObject(game.wfrp4e.config, WFRP4E);
-
-	game.wfrp4e.config.scriptTriggers = {
-		manual: "Wywołanie Ręczne (manual)",
-		immediate: "Jednorazowy (immediate)",
-		dialog: "Okno Dialogowe Testu (dialog)",
-		addItems: "Podczas dodawania przedmiotu (addItems)",
-		preUpdate: "Przed Aktualizacją (preUpdate)",
-		update: "Podczas Aktualizacji (update)",
-		equipToggle: "Przełączanie Wyposażenia (equipToggle)",
-		prePrepareData: "Przed przygotowaniem danych (prePrepareData)",
-		prePrepareItems: "Przed przygotowaniem przedmiotów aktora (prePrepareItems)",
-		prepareData: "Przygotowanie danych (prepareData)",
-		prepareOwned: "Prepare Owned Data (For Items) (prepareOwned)",
-		computeCharacteristics: "Przeliczanie Cech (computeCharacteristics)",
-		computeEncumbrance: "Obliczanie Obciążenia (computeEncumbrance)",
-		preWoundCalc: "Przed obliczeniem żywotności (preWoundCalc)",
-		woundCalc: "Obliczanie Żywotności (woundCalc)",
-		calculateSize: "Obliczanie Rozmiaru (calculateSize)",
-		preAPCalc: "Przed obliczeniem Punktów Pancerza (preAPCalc)",
-		APCalc: "Obliczanie Punktów Pancerza (APCalc)",
-		preApplyDamage: "Przed zadaniem obrażeń (preApplyDamage)",
-		applyDamage: "Podczas zadawania obrażen (applyDamage)",
-		preTakeDamage: "Przed otrzymaniem obrażeń (preTakeDamage)",
-		takeDamage: "Podczas otrzymywania obrażeń (takeDamage)",
-		computeTakeDamageModifiers: "Obliczanie Modyfikatorów Otrzymania Obrażeń (computeTakeDamageModifiers)",
-		computeApplyDamageModifiers: "Obliczanie Modyfikatórów Zadania Obrażeń (computeApplyDamageModifiers)",
-		preApplyCondition: "Przed Wykonaniem Skryptu Stanu (preApplyCondition)",
-		applyCondition: "Po Wykonaniem Skryptu Stanu (applyCondition)",
-		prePrepareItem: "Przed przygotowaniem danych przedmiotu (prePrepareItem)",
-		prepareItem: "Przygotowanie danych przedmiotu (prepareItem)",
-		preRollTest: "Przed wykonaniem testu (preRollTest)",
-		preRollWeaponTest: "Przed wykonaniem testu Ataku Bronią (preRollWeaponTest)",
-		preRollCastTest: "Przed wykonaniem testu Rzucenia Zaklęcia (preRollCastTest)",
-		preChannellingTest: "Przed wykonaniem testu Splątania Magii (preChannellingTest)",
-		preRollPrayerTest: "Przed wykonaniem testu Modlitwy (preRollPrayerTest)",
-		preRollTraitTest: "Przed wykonaniem testu Cechy Stworzenia (preRollTraitTest)",
-		rollTest: "Po wykonaniu testu (rollTest)",
-		rollIncomeTest: "Po wykonaniu testu Zarabiania (rollIncomeTest)",
-		rollWeaponTest: "Po wykonaniu testu Ataku Bronią (rollWeaponTest)",
-		rollCastTest: "Po wykonaniu testu Rzucania Zaklęcia (rollCastTest)",
-		rollChannellingTest: "Po wykonaniu testu Splątania Magii (rollChannellingTest)",
-		rollPrayerTest: "Po wykonaniu testu Modlitwy (rollPrayerTest)",
-		rollTraitTest: "Po wykonaniu testu Cechy Stworzenia (rollTraitTest)",
-		preOpposedAttacker: "Przed wykonaniem testu Przeciwstawnego przez Atakującego (preOpposedAttacker)",
-		preOpposedDefender: "Przed wykonaniem testu Przeciwstawnego przez Broniącego się (preOpposedDefender)",
-		opposedAttacker: "Po teście przeciwstawnym Atakującego (opposedAttacker)",
-		opposedDefender: "Po teście przeciwstawnym Broniącego się (opposedDefender)",
-		calculateOpposedDamage: "Obliczanie obrażeń z testu przeciwstawnego (calculateOpposedDamage)",
-		getInitiativeFormula: "Obliczanie Inicjatywy podczas walki (getInitiativeFormula)",
-		createToken: "Utworzenie Tokena (createToken)",
-		deleteEffect: "Usunięcie Efektu (deleteEffect)",
-		endTurn: "Koniec Tury (endTurn)",
-		startTurn: "Początek Tury (startTurn)",
-		endRound: "Koniec Rundy (endRound)",
-		endCombat: "Koniec Walki (endCombat)",
-	};
 });

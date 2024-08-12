@@ -1,5 +1,5 @@
 Hooks.on("init", () => {
-	CONFIG.supportedLanguages["pl"] = "pl";
+	CONFIG.supportedLanguages["pl"] = "Polski";
     game.data.packs = game.data.packs.filter(i => i.name != "basic" || i.system != "wfrp4e");
 
 	// Register Advantage cap
