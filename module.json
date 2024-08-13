@@ -58,7 +58,8 @@
                 "type": "system",
                 "manifest": "https://github.com/moo-man/WFRP4e-FoundryVTT/releases/latest/download/system.json",
                 "compatibility": {
-                    "minimum": "7.2.0"
+                    "minimum": "7.2.0",
+                    "maximum": "7.3.0"
                 }
             }
         ]
