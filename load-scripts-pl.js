@@ -1,5 +1,5 @@
 Hooks.on("init", async () => {
-    await new Promise((resolve), setTimeout(resolve, 250));
+    await new Promise(resolve => setTimeout(resolve, 250));
     foundry.utils.mergeObject(game.wfrp4e.config.effectScripts, {
     "00ZCnahnTGvzG9KA": "//*** Wybite oko\r\nlet item = await fromUuid(\"Compendium.wfrp4e-core.items.weczkAMPlTjX7lqU\")\r\nthis.actor.createEmbeddedDocuments(\"Item\", [item])",
     "01VFjGVxkjb5P1ve": "//*** Strzał w Dziesiątkę\r\nreturn args.item?.system?.isRanged && args.data.targets[0]?.actor?.sizeNum < 3",
