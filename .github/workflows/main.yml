@@ -33,7 +33,7 @@ jobs:
 
       - name: Zip files
         run: |
-          zip -r wfrp4e-core-pl.zip module.json babele-register.js load-scripts-pl.js modules/ lang/ images/ fonts/ css/ compendium/ 
+          zip -r wfrp4e-core-pl.zip module.json babele-register.js load-scripts-pl.js gazetteer.json modules/ lang/ images/ fonts/ css/ compendium/ 
 
       - name: Update Release with Files
         id: create_version_release
