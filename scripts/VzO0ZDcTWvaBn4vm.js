@@ -1,4 +1,4 @@
-//*** Amputacja języka
+//*** Amputowany język
 if (args.test.preData.skillName?.includes(game.i18n.localize("NAME.Language")) || args.test instanceof CastTest)
 {
 	if (parseInt(args.test.result.SL) > 0 || args.test.succeeded)

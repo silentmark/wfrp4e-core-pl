@@ -48,5 +48,5 @@ if (args.suppressMessage)
 }
 else
 {
-    return this.script.scriptMessage(msg)
+    return this.script.message(msg)
 }

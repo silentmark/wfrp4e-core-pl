@@ -5,6 +5,6 @@ if (!["rLeg", "lLeg"].includes(this.effect.getFlag("wfrp4e", "location")))
 if (args.options.dodge)
 {
 	args.abort = true;
-	this.script.scriptNotification("Nie można unikać!")
+	this.script.notification("Nie można unikać!")
 }
 return ["t", "int", "wp", "fel"].includes(args.characteristic)

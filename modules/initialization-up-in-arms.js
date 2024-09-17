@@ -37,7 +37,7 @@ Hooks.on("init", () => {
             
             <a href="mailto: info@cubicle7games.com">info@cubicle7games.com</a>`;
             
-            new game.wfrp4e.apps.ModuleInitializer("wfrp4e-up-in-arms", "WFRP4e - Inicjalizacja Pod Bronią", html).render(true);
+            new WarhammerModuleInitializer("wfrp4e-up-in-arms", "WFRP4e - Inicjalizacja Pod Bronią", html).render(true);
         }
     
 

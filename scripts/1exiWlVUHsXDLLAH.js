@@ -1,2 +1,2 @@
 //*** Krąg śmierci
-this.script.scriptNotification(`Nie można wkroczyć: ${this.effect.name}!`);
+this.script.notification(`Nie można wkroczyć: ${this.effect.name}!`);

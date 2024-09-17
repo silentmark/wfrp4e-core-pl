@@ -1,3 +1,3 @@
-//*** Amputacja dłoni
+//*** Amputowana dłoń
 args.abort = true;
-this.script.scriptNotification(`Nie można używać: ${this.item.system.location.value}!`, "error")
+this.script.notification(`Nie można używać: ${this.item.system.location.value}!`, "error")

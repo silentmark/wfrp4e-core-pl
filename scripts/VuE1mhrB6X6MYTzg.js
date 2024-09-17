@@ -1,2 +1,2 @@
-//*** Dobra wola
+//*** Odwrócona twarz
 return args.characteristic == "fel"

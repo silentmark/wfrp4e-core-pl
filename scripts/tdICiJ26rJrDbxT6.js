@@ -1,2 +1,2 @@
-//*** Atak Wyprzedzający
+//*** Wibrysy
 return args.characteristic != "i"

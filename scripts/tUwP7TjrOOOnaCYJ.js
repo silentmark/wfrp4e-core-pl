@@ -2,10 +2,10 @@
 let fatigued = this.actor.hasCondition("fatigued")
 if (fatigued)
 {
-   this.script.scriptNotification(`Usunięte Stany Zmęczenia: ${fatigued.conditionValue}`)
+   this.script.notification(`Usunięte Stany Zmęczenia: ${fatigued.conditionValue}`)
    fatigued.delete();  
 }
 else 
 {
-   this.script.scriptNotification(`Brak Stanów Zmęczenia do usunięcia`)
+	this.script.notification(`Brak Stanów Zmęczenia do usunięcia`)
 }

@@ -1,2 +1,2 @@
-//*** Odporność na Magię
+//*** Młot na czarownice
 return args.type != "cast"

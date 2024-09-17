@@ -1,4 +1,4 @@
-//*** Bright Spark
+//*** Bystrzak
 let characteristics = {
     "ws" : 0,
     "bs" : 0,

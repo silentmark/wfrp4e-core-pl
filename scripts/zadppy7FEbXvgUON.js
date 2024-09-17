@@ -1,4 +1,4 @@
-//*** Reformed Rogue
+//*** Zreformowany łotr
  let characteristics = {
                     "ws" : 5,
                     "bs" : 0,

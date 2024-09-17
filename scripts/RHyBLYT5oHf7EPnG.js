@@ -3,7 +3,7 @@ let skills = this.actor.itemTypes.skill.filter(i => i.name.includes(game.i18n.lo
 
 let skill = await ItemDialog.create(skills, 1, "Wybierz umiejętność wybranej broni");
 let group = game.wfrp4e.utility.extractParenthesesText(skill[0]?.name)
-let groupKey = game.wfrp4e.utility.findKey(group, game.wfrp4e.config.weaponGroups)
+let groupKey = warhammer.utility.findKey(group, game.wfrp4e.config.weaponGroups)
 
 let weapon = {
 	name : this.effect.name,
@@ -19,4 +19,4 @@ let weapon = {
 }
 
 Item.implementation.create(foundry.utils.expandObject(weapon), {parent : this.actor, fromEffect : this.effect.id})
-this.script.scriptNotification("Utworzony Broń. Dalsze dostosowywanie należy wykonać ręcznie w Karcie przedmiotu");
+this.script.notification("Utworzony Broń. Dalsze dostosowywanie należy wykonać ręcznie w Karcie przedmiotu");

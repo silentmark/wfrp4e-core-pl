@@ -43,7 +43,7 @@ WFRP4eCoreInitWrapper.prototype.render = function () {
 	
 	<a href="mailto: info@cubicle7games.com">info@cubicle7games.com</a>`;
     
-    new game.wfrp4e.apps.ModuleInitializer("wfrp4e-core", "WFRP4e - Inicjalizacja Podręcznika Głównego", html).render(true);
+    new WarhammerModuleInitializer("wfrp4e-core", "WFRP4e - Inicjalizacja Podręcznika Głównego", html).render(true);
 }
 
 CONFIG.JournalEntry.noteIcons = {
