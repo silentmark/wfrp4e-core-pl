@@ -1,2 +1,2 @@
-//*** Dekoncentrujący
+//*** Ukojenie Rhyi
 return true;

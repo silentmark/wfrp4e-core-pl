@@ -1,4 +1,4 @@
-//*** Amputacja Palca u ręki
+//*** Amputowany palec u ręki
 let key = this.item.system.location.key
 
 let lostFingers = this.actor.flags.useless[key] || 0;

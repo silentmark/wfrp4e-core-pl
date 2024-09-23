@@ -1,2 +1,2 @@
-//*** Przecięte ścięgna
-args.prefillModifiers.modifier -= 10 * foundry.utils.getProperty(this.effect, 'flags.wfrp4e.value')
+//*** Przecięte ścięgno
+args.prefillModifiers.modifier -= 10 * this.effect.system.condition.value

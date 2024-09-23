@@ -2,10 +2,10 @@
 let bleeding = this.actor.hasCondition("bleeding")
 if (bleeding)
 {
-   this.script.scriptNotification(`Usunięte Stany Krwawienia: ${bleeding.conditionValue}`)
+   this.script.notification(`Usunięte Stany Krwawienia: ${bleeding.conditionValue}`)
    bleeding.delete();  
 }
 else 
 {
-   this.script.scriptNotification(`Brak stanów krwawienia`)
+   this.script.notification(`Brak stanów krwawienia`)
 }

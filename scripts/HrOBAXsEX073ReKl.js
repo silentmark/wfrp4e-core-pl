@@ -1,5 +1,5 @@
 //*** Słuch Absolutny
-let skill = `Występy (Śpiewanie)`
+let skill = `${game.i18n.localize("NAME.Entertain")} (${game.i18n.localize("SPEC.Singing")})`;
 let currentCareer = this.actor.system.currentCareer;
 let existingSkill = this.actor.itemTypes.skill.find(i => i.name == skill);
 
@@ -18,3 +18,5 @@ else
 	currentCareer.system.skills.push(skill);
 	foundry.utils.setProperty(this.actor, "flags.wfrp4e.perfectPitchAdded", perfectPitchAdded)
 }
+
+

@@ -6,5 +6,5 @@ args.abort = `<strong>${this.effect.name}</strong>: Zadano obrażenia: ${sourceA
 
 let message = await sourceActor.applyBasicDamage(damage - tb, {damageType: game.wfrp4e.config.DAMAGE_TYPE.IGNORE_AP, suppressMsg : true})
 
-this.script.scriptMessage(message.replace(`${tb} Bomnus Wt`, `${tb} × 2 Bonus Wt`))
+this.script.message(message.replace(`${tb} Bomnus Wt`, `${tb} × 2 Bonus Wt`))
 args.abort = true;

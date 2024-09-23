@@ -1,2 +1,2 @@
 //*** Słuch Absolutny
-return args.skill?.name == "Występy (Śpiew)" || args.skill?.name == "Występy (Śpiewanie)" || (args.skill?.name.includes("Język") && (args.skill?.name.includes("Magiczny") || args.skill?.name.includes("Elthárin") || args.skill?.name.includes("Cathayan")))
+return args.skill?.name == `${game.i18n.localize("NAME.Entertain")} (${game.i18n.localize("SPEC.Sing")})` || args.skill?.name == `${game.i18n.localize("NAME.Entertain")} (${game.i18n.localize("SPEC.Singing")})` || args.skill?.name.includes(game.i18n.localize("SPEC.Magick")) || args.skill?.name.includes(game.i18n.localize("SPEC.Eltharin") || args.skill?.name.includes(game.i18n.localize("SPEC.Cathayan")));

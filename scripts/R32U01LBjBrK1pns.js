@@ -1,4 +1,4 @@
-//*** Hireling
+//*** Najemnik
 const templateMap = {
     'P2e7Yx98bK3u110a' : "",
     'iuMp3KLaMT2WCmie' : "Xp4r2KUhqfjak8zq", 
@@ -24,7 +24,7 @@ let bio =
 <p><strong>Osobowościowe dziwactwa</strong>: ${personalityQuirk}</p>
 `
 
-this.script.scriptMessage(bio, {whisper : ChatMessage.getWhisperRecipients("GM")})
+this.script.message(bio, {whisper : ChatMessage.getWhisperRecipients("GM")})
 
 await this.actor.update({"system.details.gmnotes.value" : bio})
 

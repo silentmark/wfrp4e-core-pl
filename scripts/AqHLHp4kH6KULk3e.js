@@ -9,5 +9,5 @@ if (this.item.system.quantity.value)
 }
 else
 {
-	this.script.scriptNotification("Nic nie zostało!", "error")
+	this.script.notification("Nic nie zostało!", "error")
 }

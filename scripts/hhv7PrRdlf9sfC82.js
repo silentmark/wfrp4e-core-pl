@@ -1,4 +1,4 @@
-//*** Veteran of Adventures
+//*** Weteran wielu przygód
 let characteristics = {
     "ws" : 5,
     "bs" : 0,

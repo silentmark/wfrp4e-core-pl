@@ -12,8 +12,8 @@ else
 {
 	group = await ValueDialog.create("Wybierz grupę dażoną nienawiścią", "Obiekt Nienawiści")
 
-	this.item.updateSource({name : this.item.name + ` (${group})`});
-	this.effect.updateSource({name : this.effect.name + ` (${group})`});
+	this.item.updateSource({name : this.item.name + ` (${group})`, "system.tests.value" : this.item.system.tests.value.replace("Grupa", group)})
+	this.effect.updateSource({name : this.effect.name + ` (${group})`})
 }
 
 

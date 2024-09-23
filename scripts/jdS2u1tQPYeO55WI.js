@@ -1,4 +1,4 @@
-//*** Zionięcie
+//*** Zionięcie (Gaz) - Zębacz Jaskiniowy
 let type = this.item.getFlag("wfrp4e", "breath");
 
 if (type == "cold")
@@ -40,7 +40,7 @@ if (type == "corrosion")
 		}
 		if (msg)
 		{
-			this.script.scriptMessage(msg, {speaker : {alias : args.actor.name}});
+			this.script.message(msg, {speaker : {alias : args.actor.name}});
 		}
 	}
 }

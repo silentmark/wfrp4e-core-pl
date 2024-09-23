@@ -1,4 +1,4 @@
-//*** Groza
+//*** Groza - Varghulf
 let value = parseInt(this.item.specification.value)
 let name = this.actor.prototypeToken.name
 

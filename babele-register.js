@@ -93,7 +93,7 @@ Hooks.on("init", () => {
 		}
 	}
 	
-	Reflect.defineProperty(ModuleInitializer.prototype, 'createFolders', { value:
+	Reflect.defineProperty(WarhammerModuleInitializer.prototype, 'createFolders', { value:
 		function (pack) {
 			let root = game.modules.get(pack.metadata.packageName).flags.folder;
 			root.type = pack.metadata.type;

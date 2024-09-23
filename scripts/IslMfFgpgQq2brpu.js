@@ -2,5 +2,5 @@
 if (this.actor.hasCondition("broken"))
 {
     this.actor.removeCondition("broken")
-    this.script.scriptNotification(`Nie można otrzymać stanu Panika`);
+    this.script.notification(`Nie można otrzymać stanu Panika`);
 }

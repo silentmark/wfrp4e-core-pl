@@ -1,4 +1,4 @@
-//*** Wyszkolony
+//*** Trained - Półgryf Wierzchowiec
 let specification = this.item.system.specification.value;
 let choice = [];
 

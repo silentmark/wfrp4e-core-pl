@@ -1,4 +1,4 @@
-//*** Veteran of Adventures
+//*** Weteran wielu przygód
 let choices = await Promise.all([game.wfrp4e.utility.findItemId("1zaqojk0Oq1m8vYv"), game.wfrp4e.utility.findItemId("zIuarD5mB0EF0ji0")])
 let items = await game.wfrp4e.apps.ItemDialog.create(choices, 1, "Wybierz broń")
 items = items.map(i => i.toObject())

@@ -8,16 +8,16 @@ let god = await ValueDialog.create("Wybierz Bóstwo", "Błogosławieństwo (Bosk
 
 if (god)
 {
-    let prayers = await game.wfrp4e.utility.findAll("prayer", "Ładuję błogosławienia...")
+    let prayers = await warhammer.utility.findAllItems("prayer", "Ładuję błogosławienia...")
     let blessings = prayers.filter(p => p.system.god.value.split(",").map(i => i.trim().toLowerCase()).includes(god.toLowerCase()) && p.system.type.value == "blessing")
     if (blessings.length)
     {
-        this.script.scriptNotification("Dodaję: " + blessings.map(i => i.name).join(", "))
+        this.script.notification("Dodaję: " + blessings.map(i => i.name).join(", "))
         await this.actor.createEmbeddedDocuments("Item", blessings, {fromEffect : this.effect.id})
     }
     else 
     {
-        this.script.scriptNotification(`Nie mogłem znaleźć żadnych błogosławieństw związanych z ${god}.`)
+        this.script.notification(`Nie mogłem znaleźć żadnych błogosławieństw związanych z ${god}.`)
     }
     this.item.updateSource({name : this.item.name.replace("Boska Tradycja", god)})
     await this.actor.update({"system.details.god.value": god})

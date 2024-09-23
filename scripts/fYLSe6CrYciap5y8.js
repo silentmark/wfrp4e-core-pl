@@ -1,4 +1,4 @@
-//*** Old Salt
+//*** Wilk morski
 let characteristics = {
     "ws" : 0,
     "bs" : 0,
@@ -11,7 +11,7 @@ let characteristics = {
     "wp" : 0,
     "fel" : 0
 }
-let skills = ["Mocna Głowa", "Wioślarstwo", "Żeglarstwo", "Pływanie"]
+let skills = [game.i18n.localize("NAME.ConsumeAlcohol"), game.i18n.localize("NAME.Row"), game.i18n.localize("NAME.Sail"), game.i18n.localize("NAME.Swim")]
 let skillAdvancements = [10, 10, 10, 10]
 let talents = []
 let trappings = []
