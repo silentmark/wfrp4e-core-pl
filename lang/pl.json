@@ -2007,5 +2007,20 @@
     "TRADE.CitrusFruit": "Cytrusy",
     "TRADE.Olives": "Oliwki",
     "TRADE.Saltfish": "Solone Ryby",
-    "TRADE.Stone": "Kamień"
+    "TRADE.Stone": "Kamień",
+    "WH": {
+        "DeleteEffect": "Usuń Efekt",
+        "NewScript": "Nowy Skrypt",
+        "NewEffect": "Nowy Efekt",
+        "Trigger": {
+            "Immediate": "Natychmiastowy"
+        },
+        "TransferType": {
+            "Crew": "Załoga",
+            "Other": "Inne",
+            "Area": "Obszar",
+            "Target": "Cel"
+        },
+        "FollowToken": "Podążaj za tokenem"
+    }
 }
