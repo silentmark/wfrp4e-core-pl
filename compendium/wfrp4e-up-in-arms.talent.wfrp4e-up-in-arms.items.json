@@ -1,0 +1,244 @@
+{
+    "label": "Przedmioty (Pod Bronią)",
+    "mapping": {
+        "specification_label": "system.specification.label",
+        "specification": "system.specification.value",
+        "tests": "system.tests.value",
+        "effects": {
+            "path": "effects",
+            "converter": "effects"
+        }
+    },
+    "entries": {
+        "Beat Blade": {
+            "id": "L1MoarOIAlia1Ti4",
+            "name": "Zbicie Broni",
+            "description": "<p>Zostałeś wyszkolony w zadawaniu krótkich i gwałtownych uderzeń w oręż przeciwnika, dzięki czemu możesz sam zaatakować lub powstrzymać nadchodzący cios. W ramach swojej Akcji możesz zadeklarować Zbicie Broni przed rzutem. Wykonaj Test Broni Białej, a jeśli się powiedzie, Pula Przewagi Przeciwników traci 1 Przewagę oraz kolejną, jeżeli osiągnąłeś Zdumiewający Sukces (6 PS lub więcej). Ten Test nie jest Testem Przeciwstawnym. Nie możesz korzystać z tego Talentu, jeśli wrogowie nie używają broni lub są większego Rozmiaru niż ty (patrz WFRP, strona 340).</p>",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.L1MoarOIAlia1Ti4",
+            "tests": "Broń Biała, by zbić broń",
+            "effects": {
+                "69iI6SkD3mTx57yq": {
+                    "scriptData": [
+                        {
+                            "id": "69iI6SkD3mTx57yq",
+                            "name": "@item.system.tests.value",
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.f7WZvYle9iqefRsh]",
+                            "submissionScript": "[Script.t48hkacYdOpzWvK9]"
+                        }
+                    ],
+                    "id": "69iI6SkD3mTx57yq",
+                    "name": "Zbicie Broni"
+                }
+            }
+        },
+        "Crew Commander": {
+            "id": "X9gMKwTIqt78pRwU",
+            "name": "Dowódca Załogi",
+            "description": "<p>Umiesz zarządzać załogą maszyn oblężniczych i artylerii. Możesz wykonać <strong>Wymagający (+0) Test Dowodzenia</strong>, by pomóc załodze obsługującej broń z Wadą <em>Załoga</em>, znajdującej się w zasięgu twojego głosu. Jeśli ci się uda, członkowie załogi mogą przy oddawaniu strzału wykorzystać twoją odpowiednią Umiejętność Broń Zasięgowa.</p>",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.X9gMKwTIqt78pRwU",
+            "tests": "Broń Zasięgowa, kiedy strzelasz z broni z Wadą Załoga",
+            "effects": {
+                "gIHqYDGXSfhdoDR0": {
+                    "scriptData": [
+                        {
+                            "id": "gIHqYDGXSfhdoDR0",
+                            "name": "@item.system.tests.value",
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.GUkpYdPwoC5pc9BT]",
+                            "activationScript": "[Script.lol5J6h0pErzM71s]"
+                        }
+                    ],
+                    "id": "gIHqYDGXSfhdoDR0",
+                    "name": "Dowódca Załogi"
+                }
+            }
+        },
+        "Distract": {
+            "id": "MoiYSfJRPHu7SZCQ",
+            "name": "Rozproszenie Uwagi",
+            "description": "<p>Jesteś wytrenowany tak, by twoje ruchy rozpraszały uwagę przeciwnika i ułatwiały jego zaskoczenie. Możesz wykorzystać swój Ruch, aby użyć Rozpraszania Uwagi. Jest to <strong>Test Przeciwstawny Atletyki</strong> przeciw <strong>Opanowaniu</strong> przeciwnika. Jeśli wygrasz, twój przeciwnik nie może zbierać Przewagi do swojej Puli aż do końca następnej Rundy.</p>",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.MoiYSfJRPHu7SZCQ",
+            "tests": "Atletyka podczas Rozproszenia Uwagi",
+            "effects": {
+                "57CSOJmTpVlHluIx": {
+                    "scriptData": [
+                        {
+                            "id": "57CSOJmTpVlHluIx",
+                            "name": "@item.system.tests.value",
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.DuM5l2Yb4bdvDeaG]"
+                        }
+                    ],
+                    "id": "57CSOJmTpVlHluIx",
+                    "name": "Rozproszenie Uwagi"
+                }
+            }
+        },
+        "Drilled": {
+            "id": "J9MK0AIaTbvd5oF6",
+            "name": "Musztra",
+            "description": "<p>Zostałeś wyszkolony w walce obok innych żołnierzy. Postać z Talentem <em>Musztra</em> jest traktowana jak dwóch walczących, kiedy ustala się @UUID[JournalEntry.JSMqi4MYrqsPBDUL.JournalEntryPage.njjUtJFlaiYB2ZMr#utrata-przewagi]{utratę Przewagi}.</p>",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.J9MK0AIaTbvd5oF6",
+            "tests": "Broń Biała, kiedy jesteś w pobliżu sojuszniczej postaci z tym Talentem",
+            "effects": {
+                "zkJFANrVuv4kJLqc": {
+                    "scriptData": [
+                        {
+                            "id": "zkJFANrVuv4kJLqc",
+                            "name": "@item.system.tests.value",
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.SPOkFWZWziZk5b7A]"
+                        }
+                    ],
+                    "id": "zkJFANrVuv4kJLqc",
+                    "name": "Musztra"
+                }
+            }
+        },
+        "Flee!": {
+            "id": "jrFIFLhyOYwcyMUl",
+            "name": "Chodu!",
+            "description": "<p>Kiedy na szali znajduje się twoje życie, potrafisz niezwykle sprawnie przebierać nogami. Podczas Ucieczki albo kiedy jesteś ściganym podczas pościgu, twoja Szybkość jest traktowana, jakby była o 1 wyższa.</p>",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.jrFIFLhyOYwcyMUl",
+            "tests": "Atletyka, gdy Uciekasz albo kiedy jesteś ściganym podczas pościgu",
+            "effects": {
+                "k9ncPws5OvRMicEA": {
+                    "scriptData": [
+                        {
+                            "id": "k9ncPws5OvRMicEA",
+                            "name": "@item.system.tests.value",
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "hideScript": "[Script.9EVj4bmZJex45Mt7]"
+                        }
+                    ],
+                    "id": "k9ncPws5OvRMicEA",
+                    "name": "Chodu!"
+                }
+            }
+        },
+        "Gunner": {
+            "id": "0ep8BNMiZGVLTHpr",
+            "name": "Artylerzysta",
+            "description": "<p>Z łatwością przeładowujesz broń prochową. Dodaj PS równe liczbie wykupień tego Talentu do każdego Testu Wydłużonego związanego z przeładowaniem broni prochowej. Przeładowanie broni prochowej podczas walki jest traktowane jako Akcja @UUID[JournalEntry.JSMqi4MYrqsPBDUL.JournalEntryPage.njjUtJFlaiYB2ZMr#zmiany-w-akcjach-podczas-walki]{Ocena Sytuacji}. Otrzymujesz dodatkowy punkt Przewagi, kiedy wykonujesz ten Test Oceny Sytuacji</p>",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.0ep8BNMiZGVLTHpr",
+            "effects": {
+                "PJUMX039BpjHTzDL": {
+                    "id": "PJUMX039BpjHTzDL",
+                    "name": "Artylerzysta",
+                    "scriptData": [
+                        {
+                            "id": "PJUMX039BpjHTzDL",
+                            "name": "Artylerzysta",
+                            "script": "[Script.cysQDjlDzT8HdNeo]",
+                            "activationScript": "[Script.m8qBlbH7ROoqa22o]",
+                            "hideScript": "[Script.U1RUcgP8LD2qeGTm]"
+                        }
+                    ]
+                }
+            }
+        },
+        "Rapid Reload": {
+            "id": "769B469sqx6FXPfn",
+            "name": "Szybkie Przeładowanie",
+            "description": "<p>Potrafisz z łatwością przeładowywać bronie strzeleckie. Dodaj PS równe liczbie wykupień tego Talentu do każdego Testu Wydłużonego związanego z przeładowaniem broni zasięgowej. Przeładowanie broni zasięgowej podczas walki jest traktowane jako Akcja @UUID[JournalEntry.JSMqi4MYrqsPBDUL.JournalEntryPage.njjUtJFlaiYB2ZMr#zmiany-w-akcjach-podczas-walki]{Ocena Sytuacji}. Otrzymujesz dodatkowy punkt Przewagi, kiedy wykonujesz ten Test Oceny Sytuacji.</p>",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.769B469sqx6FXPfn",
+            "effects": {
+                "ZkErOxDxU4UAEIPx": {
+                    "id": "ZkErOxDxU4UAEIPx",
+                    "name": "Szybkie Przeładowanie",
+                    "scriptData": [
+                        {
+                            "id": "ZkErOxDxU4UAEIPx",
+                            "name": "Szybkie Przeładowanie",
+                            "script": "[Script.cOuukVo8WakDZIUj]",
+                            "activationScript": "[Script.m8qBlbH7ROoqa22o]",
+                            "hideScript": "[Script.U1RUcgP8LD2qeGTm]"
+                        }
+                    ]
+                }
+            }
+        },
+        "Relentless": {
+            "id": "SgjJMBgc85aswvhm",
+            "name": "Nieustępliwy",
+            "description": "<p>Kiedy skupisz się na celu, nie sposób cię powstrzymać przed dotarciem do niego. Koszt wykonania Akcji @UUID[JournalEntry.JSMqi4MYrqsPBDUL.JournalEntryPage.njjUtJFlaiYB2ZMr#korzysci-z-przewagi]{Ucieczka przed zagrożeniem} zostaje zmniejszony do 1 Przewagi.</p>",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.SgjJMBgc85aswvhm"
+        },
+        "Reversal": {
+            "id": "QolNfSUkezLoAcky",
+            "name": "Odwrócenie Szans",
+            "description": "<p>Tak przywykłeś do rozpaczliwej walki o życie, że potrafisz obrócić na swoją korzyść nawet największe kłopoty. Jeśli wygrasz <strong>Przeciwstawny Test Walki Wręcz</strong>, to zamiast zdobywać +1 Przewagę, możesz zabrać 1 Przewagę z Puli Przewagi Przeciwników. Jeśli się na to zdecydujesz, nie zadajesz wrogowi Obrażeń, nawet jeśli to twoja Tura w Rundzie.</p>",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.QolNfSUkezLoAcky",
+            "tests": "Broń Biała w obronie",
+            "effects": {
+                "0dJPOu2AdizqpgRT": {
+                    "scriptData": [
+                        {
+                            "id": "0dJPOu2AdizqpgRT",
+                            "name": "@item.system.tests.value",
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.FXwfqF0jpXlBQ9Y3]",
+                            "hideScript": "[Script.SPOkFWZWziZk5b7A]"
+                        }
+                    ],
+                    "id": "0dJPOu2AdizqpgRT",
+                    "name": "Odwrócenie Szans"
+                }
+            }
+        },
+        "Roughrider": {
+            "id": "9CAkY3SQjQxRTlNJ",
+            "name": "Urodzony w Siodle",
+            "description": "<p>W siodle czujesz się jak w domu i niestraszne ci najtrudniejsze warunki. Wiesz, jak najlepiej wykorzystać wierzchowca w walce. Jeśli posiadasz Umiejętność Jeździectwo, możesz pokierować wierzchowcem tak, by podjął Akcję, a nie tylko wykonywał Ruch. Nie musisz w tym celu wykonywać do tego Testu Jeździectwa. Co więcej, ponieważ jesteś niezwykle pewny siebie, kiedy siedzisz w siodle, traktuj swój <em>Rozmiar</em>, jakby był równy <em>Rozmiarowi</em> twojego wierzchowca, podczas opierania się efektom Strachu i Grozy wywoływanym przez <em>Rozmiar</em> twojego przeciwnika.</p>\n<p><em><strong>Przykład:</strong> Inny jeździec na koniu nie wywołuje Strachu, ale demon czy ożywieniec już tak.</em></p>",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.9CAkY3SQjQxRTlNJ",
+            "tests": "Jeździectwo w walce",
+            "effects": {
+                "lMl2BdGl8swiY9aZ": {
+                    "scriptData": [
+                        {
+                            "id": "lMl2BdGl8swiY9aZ",
+                            "name": "@item.system.tests.value",
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.FXuyiJoXdAh6WhRK]",
+                            "hideScript": "[Script.w4JKuTECFmu3YmTR]"
+                        }
+                    ],
+                    "id": "lMl2BdGl8swiY9aZ",
+                    "name": "Urodzony w Siodle"
+                }
+            }
+        },
+        "Shieldsman": {
+            "id": "IT3s7rmQFGNzIfYq",
+            "name": "Tarczownik",
+            "description": "<p>Potrafisz tak posługiwać się tarczą, by wrogowie znaleźli się tam, gdzie chcesz, i umiesz wykorzystywać wynikającą z tego przewagę. Raz na Turę, kiedy używasz tarczy do obrony, możesz wydać 2 punkty Przewagi, aby zadać Obrażenia, kiedy jesteś atakowany, tak jakby to była twoja Akcja, <em>albo</em> aby odepchnąć przeciwnika na dwa metry od siebie i nie być już z nim Związanym Walką.</p>",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.IT3s7rmQFGNzIfYq",
+            "tests": "Dowolny Test obronny wykonywany tarczą",
+            "effects": {
+                "QCd5CC7QksTB4DwF": {
+                    "id": "QCd5CC7QksTB4DwF",
+                    "name": "Tarczownik",
+                    "scriptData": [
+                        {
+                            "id": "QCd5CC7QksTB4DwF",
+                            "name": "@item.system.tests.value",
+                            "script": "[Script.956dUb5sd6OtbWZR]",
+                            "activationScript": "[Script.mJ9eMPub4epJSf00]",
+                            "hideScript": "[Script.8LmUVQxOwTLSeabg]"
+                        }
+                    ]
+                }
+            }
+        },
+        "Strike to Injure": {
+            "id": "RWJrupj9seau0w31",
+            "name": "Morderczy Atak",
+            "description": "<p>Wiesz dobrze, gdzie uderzyć, by wyrządzić jak najwięcej krzywdy. Kiedy rzucasz w Tabeli Ran Krytycznych, rzuć dwa razy i wybierz jeden z wyników.</p>",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.RWJrupj9seau0w31"
+        }
+    },
+    "folders": {
+        "Talents": "Talenty"
+    }
+}

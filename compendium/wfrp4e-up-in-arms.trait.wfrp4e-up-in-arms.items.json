@@ -1,0 +1,165 @@
+{
+    "label": "Przedmioty (Pod Bronią)",
+    "mapping": {
+        "roll": "system.rollable.skill",
+        "specification_label": "system.specification.label",
+        "specification": "system.specification.value",
+        "effects": {
+            "path": "effects",
+            "converter": "effects"
+        }
+    },
+    "entries": {
+        "Bright Spark": {
+            "id": "ac5ClOuaYtzOYyWp",
+            "name": "Bystrzak",
+            "description": " <p>Najmita jest niezwykle sprytny.</p> ",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.ac5ClOuaYtzOYyWp",
+            "effects": {
+                "GPWvWnhtvfc1jdvJ": {
+                    "scriptData": [
+                        {
+                            "id": "GPWvWnhtvfc1jdvJ",
+                            "name": "Bystrzak",
+                            "script": "[Script.WO5n7Vbx8AgoVrwC]"
+                        }
+                    ],
+                    "id": "GPWvWnhtvfc1jdvJ",
+                    "name": "Bystrzak"
+                }
+            }
+        },
+        "Diamond in the Rough": {
+            "id": "x5wpMprsObuqMCYg",
+            "name": "Nieoszlifowany diament",
+            "description": " <p>Najmita jest nowicjuszem, ale ma wielki potencjał.</p> ",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.x5wpMprsObuqMCYg",
+            "effects": {
+                "GPWvWnhtvfc1jdvJ": {
+                    "scriptData": [
+                        {
+                            "id": "GPWvWnhtvfc1jdvJ",
+                            "name": "Nieoszlifowany diament",
+                            "script": "[Script.1BT0MWM2cbhlEnrn]"
+                        }
+                    ],
+                    "id": "GPWvWnhtvfc1jdvJ",
+                    "name": "Nieoszlifowany diament"
+                }
+            }
+        },
+        "Hireling": {
+            "id": "gjtcCTmRPxTL4oAL",
+            "name": "Najemnik",
+            "description": " <p>Najmita wykonuje swoją pracę zgodnie z oczekiwaniami.</p> ",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.gjtcCTmRPxTL4oAL",
+            "effects": {
+                "GB6h9KotqpcouOmE": {
+                    "scriptData": [
+                        {
+                            "id": "GB6h9KotqpcouOmE",
+                            "name": "Najemnik",
+                            "script": "[Script.R32U01LBjBrK1pns]"
+                        }
+                    ],
+                    "id": "GB6h9KotqpcouOmE",
+                    "name": "Najemnik"
+                }
+            }
+        },
+        "Infirm": {
+            "id": "wYN19h3WVF1yOVq2",
+            "name": "Zniedołężniały",
+            "description": " <p>Najmita jest niestety zniedołężniały, chorowity albo w inny sposób gorzej sobie radzi, chociaż nie przyzna tego przed potencjalnymi pracodawcami.</p> ",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.wYN19h3WVF1yOVq2",
+            "effects": {
+                "GPWvWnhtvfc1jdvJ": {
+                    "scriptData": [
+                        {
+                            "id": "GPWvWnhtvfc1jdvJ",
+                            "name": "Zniedołężniały",
+                            "script": "[Script.RvipIYj9H7n4UDMe]"
+                        },
+                        {
+                            "id": "GPWvWnhtvfc1jdvJ",
+                            "name": "Umiejętności",
+                            "script": "[Script.Et4tPHlrkueLqP3T]"
+                        }
+                    ],
+                    "id": "GPWvWnhtvfc1jdvJ",
+                    "name": "Zniedołężniały"
+                }
+            }
+        },
+        "Old Salt": {
+            "id": "LjMlx99gBGeRJUQu",
+            "name": "Wilk morski",
+            "description": " <p>Najmita spędził kawał czasu na morzu.</p> ",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.LjMlx99gBGeRJUQu",
+            "effects": {
+                "GPWvWnhtvfc1jdvJ": {
+                    "scriptData": [
+                        {
+                            "id": "GPWvWnhtvfc1jdvJ",
+                            "name": "Wilk morski",
+                            "script": "[Script.fYLSe6CrYciap5y8]"
+                        }
+                    ],
+                    "id": "GPWvWnhtvfc1jdvJ",
+                    "name": "Wilk morski"
+                }
+            }
+        },
+        "Reformed Rogue": {
+            "id": "IS3LTdTuay6uRHUq",
+            "name": "Zreformowany łotr",
+            "description": " <p>Najmita ma kryminalną przeszłość.</p> ",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.IS3LTdTuay6uRHUq",
+            "effects": {
+                "GPWvWnhtvfc1jdvJ": {
+                    "scriptData": [
+                        {
+                            "id": "GPWvWnhtvfc1jdvJ",
+                            "name": "Zreformowany łotr",
+                            "script": "[Script.zadppy7FEbXvgUON]"
+                        }
+                    ],
+                    "id": "GPWvWnhtvfc1jdvJ",
+                    "name": "Zreformowany łotr"
+                }
+            }
+        },
+        "Veteran of Adventures": {
+            "id": "Xp4r2KUhqfjak8zq",
+            "name": "Weteran wielu przygód",
+            "description": " <p>Najmita ma doświadczenie w poszukiwaniu przygód i wie, jak o siebie zadbać.</p> ",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.Xp4r2KUhqfjak8zq",
+            "effects": {
+                "GPWvWnhtvfc1jdvJ": {
+                    "scriptData": [
+                        {
+                            "id": "GPWvWnhtvfc1jdvJ",
+                            "name": "Weteran wielu przygód",
+                            "script": "[Script.hhv7PrRdlf9sfC82]"
+                        },
+                        {
+                            "id": "GPWvWnhtvfc1jdvJ",
+                            "name": "Wybór umiejętności",
+                            "script": "[Script.HJ2X4ZtXei0BXbxf]"
+                        },
+                        {
+                            "id": "GPWvWnhtvfc1jdvJ",
+                            "name": "Wybór broni",
+                            "script": "[Script.ezGqDoC9hNRBnFTB]"
+                        }
+                    ],
+                    "id": "GPWvWnhtvfc1jdvJ",
+                    "name": "Weteran wielu przygód"
+                }
+            }
+        }
+    },
+    "folders": {
+        "Traits": "Cechy Stworzeń"
+    }
+}

@@ -1663,7 +1663,8 @@
                         }
                     ],
                     "id": "7xgUnEZCcRXXlOCL",
-                    "name": "Złe oko"
+                    "name": "Złe oko",
+                    "preApplyScript": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Intimidate\"), {fields : {slBonus : parseInt(args.test.result.SL)}, appendTitle : ` - ${this.effect.name}`})\nawait test.roll();\nreturn true;"
                 }
             }
         },
