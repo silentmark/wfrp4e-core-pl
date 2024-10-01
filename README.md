@@ -6,8 +6,9 @@ Warhammer Fantasy Roleplay zabiera Was do Starego Świata. Skompletujcie własn�
 
 Aktualnie obsługiwane moduły:
 
-[Warhammer Fantasy 4th Edition System](https://foundryvtt.com/packages/wfrp4e)
-[Core Rulebook](https://foundryvtt.com/packages/wfrp4e-core/)
+- [Warhammer Fantasy 4th Edition System](https://foundryvtt.com/packages/wfrp4e)
+- [Core Rulebook](https://foundryvtt.com/packages/wfrp4e-core/)
+- [Up in Arms](https://foundryvtt.com/packages/wfrp4e-up-in-arms) :new:
 
 Autorzy:
 - Liv
