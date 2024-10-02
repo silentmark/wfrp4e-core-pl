@@ -363,7 +363,7 @@ Hooks.on("init", () => {
 											if (e.system.scriptData && te.scriptData) {
 												for (let i = 0; i < te.scriptData.length; i++) {
 													let transScript = te.scriptData[i];
-													let script = result.system.scriptData[i];
+													let script = e.system.scriptData[i];
 													if (script) {
 														script.label = transScript.name;
 														if (transScript.hideScript) {
