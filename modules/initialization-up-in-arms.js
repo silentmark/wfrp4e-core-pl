@@ -124,18 +124,19 @@ Hooks.on("init", () => {
                     "Uczony" : ["Kartografka"],
                     "Domokrążca" : ["Ciura Obozowa"],
                     "Kawalerzysta" : ["Lekki Kawalerzysta"],
-                    "Żołnierz" : ["Łuczniczka", "Specjalista Oblężniczy"],
+                    "Żołnierz" : ["Łuczniczka", "Specjalista Oblężniczy", "Artylerzysta"],
                 },
                 welf : {
                     "Uczony" : ["Kartografka"],
                     "Domokrążca" : ["Ciura Obozowa"],
                     "Żołnierz" : ["Łuczniczka"],
+                    "Kawalerzysta" : ["Lekki Kawalerzysta"]
                 },
                 halfling : {
                     "Inżynier" : ["Artylerzysta"],
                     "Uczony" : ["Kartografka"],
                     "Domokrążca" : ["Camp Follower"],
-                    "Żołnierz" : ["Łuczniczka", "Halabardnik", "Strzelec"],
+                    "Żołnierz" : ["Łuczniczka", "Halabardnik", "Strzelec", "Specjalista Oblężniczy"],
                 },
                 "human-tilean" : {
                     "Biczownik" : ["Mniszka", "Kapłan"]
