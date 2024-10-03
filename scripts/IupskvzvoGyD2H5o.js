@@ -4,12 +4,21 @@ if (this.actor.type != "character")
     return;
 }
 
-let god = await ValueDialog.create("Wybierz Bóstwo", "Błogosławieństwo (Boska Tradycja)")
+let god = await ValueDialog.create({text : "Wybierz Bóstwo", title :  "Błogosławieństwo (Boska Tradycja)"})
 
 if (god)
 {
     let prayers = await warhammer.utility.findAllItems("prayer", "Ładuję błogosławienia...")
     let blessings = prayers.filter(p => p.system.god.value.split(",").map(i => i.trim().toLowerCase()).includes(god.toLowerCase()) && p.system.type.value == "blessing")
+    let godBlessings = game.wfrp4e.config.godBlessings[god.toLowerCase()] || [];
+    if (god == "Stara Wiara")
+    {
+        blessings = await ItemDialog.create(prayers.filter(i => i.system.type.value == "blessing"), 6, {text : "Wybierz 6 Błogosławieństw", title :  "Blessed"})
+    }
+    if (godBlessings.length)
+    {
+        blessings = blessings.concat(await Promise.all(godBlessings.filter(bls => !(blessings.map(i => i.uuid).includes(bls.uuid))).map(fromUuid)));
+    }
     if (blessings.length)
     {
         this.script.notification("Dodaję: " + blessings.map(i => i.name).join(", "))

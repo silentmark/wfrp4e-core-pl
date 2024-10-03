@@ -3,7 +3,7 @@ if (this.item.name.includes("("))
 {
 	let trade = this.item.parenthesesText;
 	if (trade?.toLowerCase() != "dowolne")
-		return this.item.updateSource({"system.tests.value" : this.item.system.tests.value.replace("Dowolne", trade)})
+	    return this.item.updateSource({"system.tests.value" : this.item.system.tests.value.replace("Dowolne", trade)})
 }
 
 let index = game.packs
@@ -19,12 +19,12 @@ let choice = await ItemDialog.create(index, 1, "Wybierz Umiejętność Rzemieśl
 let text;
 if (!choice[0])
 {
-	let custom = await ValueDialog.create("wpisz własny rodzaj rzemiosła", "Własne Rzemiosło");  
-	text = custom || ""
+    let custom = await ValueDialog.create({text : "wpisz własny rodzaj rzemiosła", title : "Własne Rzemiosło"});  
+    text = custom || ""
 }
 else 
 {
-	text = game.wfrp4e.utility.extractParenthesesText(choice[0].name)
+    text = game.wfrp4e.utility.extractParenthesesText(choice[0].name)
 }
 
-await this.item.updateSource({name : this.item.name.replace("(Dowolne Rzemiosło)", "").replace("(Dowolne Rzemiosło)", "").trim() + `(${text})`, "system.tests.value" : this.item.system.tests.value.replace("Dowolne", text)});
+await this.item.updateSource({name : this.item.name.replace("(Dowolne Rzemiosło)", "").replace("(Dowolne Rzemiosło)", "").trim() + ` (${text})`, "system.tests.value" : this.item.system.tests.value.replace("Dowolne", text)});

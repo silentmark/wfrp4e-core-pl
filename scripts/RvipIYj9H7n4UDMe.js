@@ -1,4 +1,4 @@
-//*** Infirm
+//*** Zniedołężniały
 let characteristics = {
         "ws" : -10,
         "bs" : -10,

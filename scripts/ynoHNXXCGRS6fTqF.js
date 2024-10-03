@@ -1,3 +1,4 @@
+//*** Clutch of Eyes
 let msg = ""
 
 let i_gain = (await new Roll("1d10").roll()).total
@@ -23,4 +24,4 @@ this.effect.updateSource({"flags.wfrp4e.location" : value})
 
 msg += ` gdy nowe oczy pojawiają się w lokacji: ${desc}`
 
-this.script.scriptMessage(msg)
+this.script.message(msg)

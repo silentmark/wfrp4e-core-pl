@@ -8,7 +8,7 @@
     amberTalons.effects.push({
         label : "Szpony Furii",
         transfer: false,
-        icon : "modules/wfrp4e-core/icons/spells/amber-talons.png" ,
+        img : "modules/wfrp4e-core/icons/spells/amber-talons.png" ,
         system: {
           transferData : {
                   documentType : "Item"

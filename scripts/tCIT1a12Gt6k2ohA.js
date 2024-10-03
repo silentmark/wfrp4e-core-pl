@@ -2,11 +2,11 @@
 let resistance
 if (this.item.name.includes("(") && !this.item.name.toLowerCase().includes("(wybrane zagrożenie)"))
 {
-    resistance = this.item.parenthesesText
+	resistance = this.item.parenthesesText
 }
 else 
 {
-    resistance = await ValueDialog.create("Wprowadź nazwę Odporności", "Odporny na") 
+    resistance = await ValueDialog.create({text : "Wprowadź nazwę Odporności", title : "Odporny na"}) 
     
     if (resistance)
     {

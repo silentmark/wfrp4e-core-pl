@@ -1,2 +1,3 @@
+//*** Reactionary Restorative
 this.actor.addCondition("fatigued");
-this.script.scriptNotification("Otrzymano Stan Zmęczenia")
+this.script.notification("Otrzymano Stan Zmęczenia")

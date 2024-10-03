@@ -1,4 +1,4 @@
-//*** Etykieta (Grupa Społeczna)
+//*** Etiquette (Criminals) - Rudi Klumpenklug
 if (this.item.system.tests.value.includes("(Grupa Społeczna)"))
 {
     let tests = this.item.system.tests.value
@@ -12,7 +12,7 @@ if (this.item.system.tests.value.includes("(Grupa Społeczna)"))
     }
     else
     {
-        let value = await ValueDialog.create("Napisz, czyjej Etykiety dotyczy talentu", this.effect.name);
+        let value = await ValueDialog.create({text : "Napisz, czyjej Etykiety dotyczy talentu", title : this.effect.name});
         if (value)
         {
             name = `${name.split("(")[0].trim()} (${value})`
