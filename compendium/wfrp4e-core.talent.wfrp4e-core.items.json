@@ -3356,7 +3356,15 @@
             "effects": {
                 "6m85TVcbkk2geHrE": {
                     "id": "6m85TVcbkk2geHrE",
-                    "name": "Krasomówstwo"
+                    "name": "Krasomówstwo",
+                    "scriptData": [
+                        {
+                            "id": "6m85TVcbkk2geHrE",
+                            "name": "Wystąpienia publiczne przed tłumem",
+                            "script": "args.fields.slBonus++;",
+                            "hideScript": "return args.skill?.name != game.i18n.localize(\"NAME.Charm\")"
+                        }
+                    ]
                 }
             }
         },

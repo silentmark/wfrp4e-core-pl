@@ -636,6 +636,76 @@
                     "sourceId": "Compendium.wfrp4e-up-in-arms.actors.Actor.VhdI2DUAbHadGBcN.Item.BrJmPjdgXJGEvDwL"
                 }
             }
+        },
+        "Destrier": {
+            "sourceId": "Compendium.wfrp4e-up-in-arms.actors.Wj9adJV0oXhajOns",
+            "items": {
+                "tyb0VoeTQ23WJld6": {
+                    "sourceId": "Compendium.wfrp4e-core.items.HbrwGhUl0ZXz4kLA",
+                    "effects": {
+                        "yrUvulIfrQfAJmkB": {
+                            "id": "yrUvulIfrQfAJmkB",
+                            "scriptData": [
+                                {
+                                    "id": "yrUvulIfrQfAJmkB",
+                                    "name": "Twardziel",
+                                    "script": "[Script.GuUCErVbk5hrFzR3]"
+                                }
+                            ],
+                            "name": "Twardziel"
+                        }
+                    },
+                    "id": "HbrwGhUl0ZXz4kLA",
+                    "name": "Twardziel",
+                    "originalName": "Twardziel",
+                    "description": "<p>Stworzenie jest w stanie przyjąć więcej obrażeń niż większość innych istot. Zwiększ Żywotność stworzenia o wartość równą jego Bonusowi z Wytrzymałości (zastosuj to przed wszelkimi modyfikatorami <i>Rozmiaru</i>).</p>"
+                },
+                "j2cQmcfglta0cEbx": {
+                    "specification": "3"
+                },
+                "t92sSOfYZmj44jEg": {
+                    "specification": "Duży"
+                },
+                "POE4no8eUL5jOrRK": {
+                    "specification": "Panika"
+                },
+                "ch3YLVIU23ZqEG6L": {
+                    "specification": "Wierzchowiec"
+                },
+                "8YCML0MH5YXWHa7h": {
+                    "specification": "Bojowy"
+                },
+                "QdgEi8a6TxkIY55d": {
+                    "specification": "."
+                }
+            },
+            "id": "Wj9adJV0oXhajOns",
+            "name": "Rumak",
+            "species": "Konie",
+            "gender": "Różne",
+            "description": "<section id=\"secret-KVVskb3Id1ELGbjT\" class=\"secret\"><p>Konie hodowane są z przeznaczeniem do wykonywania rozmaitych prac. Należą do nich chyże wierzchowce kurierów, krzepkie rumaki rycerzy i wielkie konie ciągnące wozy farmerów. Są tak przydatne, że handel końmi stał się w Reiklandzie niemal konkurencją sportową. Nieuczciwi sprzedawcy chcą zarobić kosztem ignoranckiego nabywcy. Wypełniają luki i malują zęby podstarzałych koni albo wpychają im do nozdrzy szmaty wchłaniające śluz. Nieznający się na rzeczy kupujący powinni mieć się na baczności.</p></section>"
+        },
+        "Riding Horse": {
+            "id": "v0yZmihHC6CQG1Xa",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.actors.v0yZmihHC6CQG1Xa",
+            "name": "Koń Wierzchowy",
+            "species": "Konie",
+            "gender": "Różne",
+            "items": {
+                "j2cQmcfglta0cEbx": {
+                    "specification": "3"
+                },
+                "t92sSOfYZmj44jEg": {
+                    "specification": "Duży"
+                },
+                "UYfGOe9WZWAUr8BG": {
+                    "specification": "Panika"
+                },
+                "8dA7jNyZnPmqT0ZR": {
+                    "specification": "Wierzchowiec"
+                }
+            },
+            "description": "<section id=\"secret-KVVskb3Id1ELGbjT\" class=\"secret\"><p>Konie hodowane są z przeznaczeniem do wykonywania rozmaitych prac. Należą do nich chyże wierzchowce kurierów, krzepkie rumaki rycerzy i wielkie konie ciągnące wozy farmerów. Są tak przydatne, że handel końmi stał się w Reiklandzie niemal konkurencją sportową. Nieuczciwi sprzedawcy chcą zarobić kosztem ignoranckiego nabywcy. Wypełniają luki i malują zęby podstarzałych koni albo wpychają im do nozdrzy szmaty wchłaniające śluz. Nieznający się na rzeczy kupujący powinni mieć się na baczności.</p></section>"
         }
     }
 }

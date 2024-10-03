@@ -45,6 +45,32 @@
                 "pIzrIn9LgUROw8Ez": {
                     "id": "pIzrIn9LgUROw8Ez",
                     "name": "Nawroty (Sporadyczne)"
+                },
+                "14CKMDEBmbOIjTvQ": {
+                    "scriptData": [
+                        {
+                            "id": "14CKMDEBmbOIjTvQ",
+                            "name": "@effect.name",
+                            "script": "let fatigued = this.actor.hasCondition(\"fatigued\")\nif (!fatigued)\n{\n    this.actor.addCondition(\"fatigued\")\n    ui.notifications.notify(\"Zmęczenie dodane do \" + this.actor.name + \", które nie może zostać usunięte, dopóki objaw Apatia nie zostanie uleczony.\")\n}"
+                        }
+                    ],
+                    "id": "14CKMDEBmbOIjTvQ",
+                    "name": "Apatia"
+                },
+                "DorcIGAveDFLXWc0": {
+                    "id": "DorcIGAveDFLXWc0",
+                    "name": "Nawroty (Sporadyczne)"
+                },
+                "Umis5c134Y1XYkCV": {
+                    "id": "Umis5c134Y1XYkCV",
+                    "scriptData": [
+                        {
+                            "id": "Umis5c134Y1XYkCV",
+                            "name": "@effect.name",
+                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {fields: {difficulty : \"average\"}, appendTitle : \" - Uciążliwa Rana\"});\nawait test.roll();\nif (test.failed) {\n    let disease = await fromUuid(\"Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb\");\n    this.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()]);\n    this.script.scriptNotification(\"Otrzymano \" + disease.name)\n}"
+                        }
+                    ],
+                    "name": "Uciążliwa Rana"
                 }
             },
             "duration_value": "1d10",
@@ -131,6 +157,77 @@
                             "hideScript": "return ![\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)"
                         }
                     ]
+                },
+                "Tq200nbnRCqccoWF": {
+                    "scriptData": [
+                        {
+                            "id": "Tq200nbnRCqccoWF",
+                            "name": "@effect.name",
+                            "script": "args.fields.modifier -= 10",
+                            "activationScript": "return [\"fel\"].includes(args.characteristic)",
+                            "hideScript": "return ![\"fel\"].includes(args.characteristic)"
+                        },
+                        {
+                            "id": "Tq200nbnRCqccoWF",
+                            "name": "Uciążliwa Rana",
+                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {fields: {difficulty : \"average\"}, appendTitle : \" - Uciążliwa Rana\"});\nawait test.roll();\nif (test.failed) {\n    let disease = await fromUuid(\"Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb\");\n    this.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()]);\n    this.script.scriptNotification(\"Otrzymano \" + disease.name)\n}"
+                        },
+                        {
+                            "id": "Tq200nbnRCqccoWF",
+                            "name": "Uwiąd",
+                            "script": "let difficulty = \"\"\nif (this.effect.name.includes(\"Umiarkowany\"))\n    difficulty = \"easy\"\nelse if (this.effect.name.includes(\"Poważny\"))\n    difficulty = \"average\"\nelse\n    difficulty = \"veasy\"\n\nlet test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {context : {failure : this.actor.name + \" umiera z powodu Uwiądu\"}, fields: {difficulty}, appendTitle : \" - Uwiąd\"})\nawait test.roll();\nif (test.failed)\n{\n    this.actor.addCondition(\"dead\");\n}"
+                        }
+                    ],
+                    "id": "Tq200nbnRCqccoWF",
+                    "name": "Gangrena"
+                },
+                "uNtXMFf1tuRHtFnv": {
+                    "scriptData": [
+                        {
+                            "id": "uNtXMFf1tuRHtFnv",
+                            "activationScript": "return [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
+                            "hideScript": "return ![\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
+                            "name": "@effect.name",
+                            "script": "args.fields.modifier -= 10"
+                        }
+                    ],
+                    "id": "uNtXMFf1tuRHtFnv",
+                    "name": "Gorączka"
+                },
+                "FWvXgmPLuCjHedYe": {
+                    "id": "FWvXgmPLuCjHedYe",
+                    "scriptData": [
+                        {
+                            "id": "FWvXgmPLuCjHedYe",
+                            "name": "@effect.name",
+                            "script": "let fatigued = this.actor.hasCondition(\"fatigued\")\nif (!fatigued)\n{\n    this.actor.addCondition(\"fatigued\")\n    ui.notifications.notify(\"Zmęczenie dodane do \" + this.actor.name + \", które nie może zostać usunięte, dopóki objaw Apatia nie zostanie uleczony.\")\n}"
+                        }
+                    ],
+                    "name": "Apatia"
+                },
+                "0aoYMM0EWgxsZhR1": {
+                    "id": "0aoYMM0EWgxsZhR1",
+                    "scriptData": [
+                        {
+                            "id": "0aoYMM0EWgxsZhR1",
+                            "hideScript": "return ![\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
+                            "name": "@effect.name",
+                            "script": "args.fields.modifier -= 10",
+                            "activationScript": "return [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)"
+                        }
+                    ],
+                    "name": "Dymienica"
+                },
+                "cDP1okuOrLjaTrSv": {
+                    "id": "cDP1okuOrLjaTrSv",
+                    "scriptData": [
+                        {
+                            "id": "cDP1okuOrLjaTrSv",
+                            "name": "@effect.name",
+                            "script": "let difficulty = \"\"\nif (this.effect.name.includes(\"Umiarkowany\"))\n    difficulty = \"easy\"\nelse if (this.effect.name.includes(\"Poważny\"))\n    difficulty = \"average\"\nelse\n    difficulty = \"veasy\"\n\nlet test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {context : {failure : this.actor.name + \" umiera z powodu Uwiądu\"}, fields: {difficulty}, appendTitle : \" - Uwiąd\"})\nawait test.roll();\nif (test.failed)\n{\n    this.actor.addCondition(\"dead\");\n}"
+                        }
+                    ],
+                    "name": "Uwiąd (Umiarkowany)"
                 }
             },
             "duration_value": "3d10",
@@ -163,6 +260,23 @@
                             "hideScript": "return ![\"fel\"].includes(args.characteristic)"
                         }
                     ]
+                },
+                "bbndbpbhF5LhsjOE": {
+                    "id": "bbndbpbhF5LhsjOE",
+                    "scriptData": [
+                        {
+                            "id": "bbndbpbhF5LhsjOE",
+                            "name": "@effect.name",
+                            "script": "args.fields.modifier -= 10",
+                            "activationScript": "return [\"fel\"].includes(args.characteristic)",
+                            "hideScript": "return ![\"fel\"].includes(args.characteristic)"
+                        }
+                    ],
+                    "name": "Wysypka"
+                },
+                "Np6g7bU0G9ojITsO": {
+                    "id": "Np6g7bU0G9ojITsO",
+                    "name": "Nawroty (Częste)"
                 }
             },
             "duration_value": "5d10",
@@ -221,6 +335,49 @@
                 "ERQ7Yd7tkU1lxJdE": {
                     "id": "ERQ7Yd7tkU1lxJdE",
                     "name": "Biegunka (Poważna)"
+                },
+                "8VwZ6Dpn8928W6TS": {
+                    "id": "8VwZ6Dpn8928W6TS",
+                    "name": "Biegunka (Poważna)"
+                },
+                "xXT3A0zO1Pf80q7g": {
+                    "id": "xXT3A0zO1Pf80q7g",
+                    "scriptData": [
+                        {
+                            "id": "xXT3A0zO1Pf80q7g",
+                            "name": "@effect.name",
+                            "script": "let fatigued = this.actor.hasCondition(\"fatigued\")\nif (!fatigued)\n{\n    this.actor.addCondition(\"fatigued\")\n    ui.notifications.notify(\"Zmęczenie dodane do \" + this.actor.name + \", które nie może zostać usunięte, dopóki objaw Apatia nie zostanie uleczony.\")\n}"
+                        }
+                    ],
+                    "name": "Apatia"
+                },
+                "M0CBWMhezt0jrbgM": {
+                    "id": "M0CBWMhezt0jrbgM",
+                    "scriptData": [
+                        {
+                            "id": "M0CBWMhezt0jrbgM",
+                            "name": "@effect.name",
+                            "script": "if (args.test.failed)\n{\n   let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"];\n   if (applicableCharacteristics.includes(args.test.characteristicKey))\n   {\n       this.actor.addCondition(\"stunned\");\n   }\n}"
+                        }
+                    ],
+                    "name": "Mdłości"
+                },
+                "opUoAg10VkIOs3XY": {
+                    "id": "opUoAg10VkIOs3XY",
+                    "name": "Nawroty (Częste)"
+                },
+                "p0qOElIfOkPgyOPO": {
+                    "id": "p0qOElIfOkPgyOPO",
+                    "scriptData": [
+                        {
+                            "id": "p0qOElIfOkPgyOPO",
+                            "name": "@effect.name",
+                            "script": "args.fields.modifier -= 10",
+                            "activationScript": "return [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
+                            "hideScript": "return ![\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)"
+                        }
+                    ],
+                    "name": "Gorączka"
                 }
             },
             "duration_value": "1d10",
@@ -275,6 +432,45 @@
                             "script": "\n                            let fatigued = this.actor.hasCondition(\"fatigued\")\nif (!fatigued ) {\n     this.actor.addCondition(\"fatigued \");\n     ui.notifications.notify(\"Zmęczenie dodane do \" + this.actor.name + \", które nie może zostać usunięte, dopóki objaw Apatia nie zostanie uleczony.\")\n}"
                         }
                     ]
+                },
+                "FGkdL6nVLNTBQ6CK": {
+                    "id": "FGkdL6nVLNTBQ6CK",
+                    "name": "Nawroty (Częste)"
+                },
+                "Ghz0PyXOdfNfjgZa": {
+                    "id": "Ghz0PyXOdfNfjgZa",
+                    "scriptData": [
+                        {
+                            "id": "Ghz0PyXOdfNfjgZa",
+                            "script": "let fatigued = this.actor.hasCondition(\"fatigued\")\nif (!fatigued)\n{\n    this.actor.addCondition(\"fatigued\")\n    ui.notifications.notify(\"Zmęczenie dodane do \" + this.actor.name + \", które nie może zostać usunięte, dopóki objaw Apatia nie zostanie uleczony.\")\n}",
+                            "name": "@effect.name"
+                        }
+                    ],
+                    "name": "Apatia"
+                },
+                "jcaXjCGqPeQEaEnL": {
+                    "id": "jcaXjCGqPeQEaEnL",
+                    "scriptData": [
+                        {
+                            "id": "jcaXjCGqPeQEaEnL",
+                            "name": "@effect.name",
+                            "script": "args.fields.modifier -= 10",
+                            "activationScript": "return [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
+                            "hideScript": "return ![\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)"
+                        }
+                    ],
+                    "name": "Gorączka"
+                },
+                "YzFGqmbVkRR7u418": {
+                    "id": "YzFGqmbVkRR7u418",
+                    "scriptData": [
+                        {
+                            "id": "YzFGqmbVkRR7u418",
+                            "name": "@effect.name",
+                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {fields: {difficulty : \"average\"}, appendTitle : \" - Uciążliwa Rana\"});\nawait test.roll();\nif (test.failed) {\n    let disease = await fromUuid(\"Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb\");\n    this.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()]);\n    this.script.scriptNotification(\"Otrzymano \" + disease.name)\n}"
+                        }
+                    ],
+                    "name": "Uciążliwa Rana"
                 }
             },
             "duration_value": "1d10",
@@ -325,6 +521,41 @@
                             "script": "[Script.UDPsaymtZf39UsMk]"
                         }
                     ]
+                },
+                "1xVfoqV99kcaZqiY": {
+                    "id": "1xVfoqV99kcaZqiY",
+                    "scriptData": [
+                        {
+                            "id": "1xVfoqV99kcaZqiY",
+                            "name": "@effect.name",
+                            "script": "let difficulty = \"\"\nif (this.effect.name.includes(\"Umiarkowany\"))\n    difficulty = \"easy\"\nelse if (this.effect.name.includes(\"Poważny\"))\n    difficulty = \"average\"\nelse\n    difficulty = \"veasy\"\n\nlet test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {context : {failure : this.actor.name + \" umiera z powodu Uwiądu\"}, fields: {difficulty}, appendTitle : \" - Uwiąd\"})\nawait test.roll();\nif (test.failed)\n{\n    this.actor.addCondition(\"dead\");\n}"
+                        }
+                    ],
+                    "name": "Uwiąd"
+                },
+                "EA3i67vpRT359iN9": {
+                    "id": "EA3i67vpRT359iN9",
+                    "scriptData": [
+                        {
+                            "id": "EA3i67vpRT359iN9",
+                            "name": "@effect.name",
+                            "script": "let fatigued = this.actor.hasCondition(\"fatigued\")\nif (!fatigued)\n{\n    this.actor.addCondition(\"fatigued\")\n    ui.notifications.notify(\"Zmęczenie dodane do \" + this.actor.name + \", które nie może zostać usunięte, dopóki objaw Apatia nie zostanie uleczony.\")\n}"
+                        }
+                    ],
+                    "name": "Apatia"
+                },
+                "v3ikzXqAyjB15Y8k": {
+                    "id": "v3ikzXqAyjB15Y8k",
+                    "scriptData": [
+                        {
+                            "id": "v3ikzXqAyjB15Y8k",
+                            "name": "@effect.name",
+                            "script": "args.fields.modifier -= 10",
+                            "activationScript": "return [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
+                            "hideScript": "return ![\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)"
+                        }
+                    ],
+                    "name": "Gorączka (Wysoka)"
                 }
             },
             "duration_value": "1d10",
@@ -405,6 +636,71 @@
                 "hVgrqTLhNP7bgvmw": {
                     "id": "hVgrqTLhNP7bgvmw",
                     "name": "Nawroty (Umiarkowane)"
+                },
+                "yZXTCczaZ9JwDZqU": {
+                    "id": "yZXTCczaZ9JwDZqU",
+                    "scriptData": [
+                        {
+                            "id": "yZXTCczaZ9JwDZqU",
+                            "activationScript": "return [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
+                            "hideScript": "return ![\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
+                            "name": "@effect.name",
+                            "script": "args.fields.modifier -= 10"
+                        }
+                    ],
+                    "name": "Gorączka"
+                },
+                "oFHtNUS1enRKQlzH": {
+                    "scriptData": [
+                        {
+                            "id": "oFHtNUS1enRKQlzH",
+                            "name": "@effect.name",
+                            "script": "let modifier = 0\nif (this.effect.name.includes(\"Umiarkowane\"))\n    modifier = -20\nelse\n     modifier = -10\nargs.fields.modifier += modifier",
+                            "activationScript": "return [\"ws\", \"bs\", \"s\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
+                            "hideScript": "return ![\"ws\", \"bs\", \"s\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)"
+                        }
+                    ],
+                    "id": "oFHtNUS1enRKQlzH",
+                    "name": "Konwulsje"
+                },
+                "sZ4YcpDB0iUbImYH": {
+                    "id": "sZ4YcpDB0iUbImYH",
+                    "scriptData": [
+                        {
+                            "id": "sZ4YcpDB0iUbImYH",
+                            "name": "@effect.name",
+                            "script": "args.fields.modifier -= 10",
+                            "activationScript": "return [\"fel\"].includes(args.characteristic)",
+                            "hideScript": "return ![\"fel\"].includes(args.characteristic)"
+                        }
+                    ],
+                    "name": "Wysypka"
+                },
+                "W7iOJcxwSv3KyVuB": {
+                    "id": "W7iOJcxwSv3KyVuB",
+                    "name": "Nawroty (Umiarkowane)"
+                },
+                "yiuOP2VI699tfgf0": {
+                    "id": "yiuOP2VI699tfgf0",
+                    "scriptData": [
+                        {
+                            "id": "yiuOP2VI699tfgf0",
+                            "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Endurance\"), {fields: {difficulty : \"average\"}, appendTitle : \" - Uciążliwa Rana\"});\nawait test.roll();\nif (test.failed) {\n    let disease = await fromUuid(\"Compendium.wfrp4e-core.items.kKccDTGzWzSXCBOb\");\n    this.actor.createEmbeddedDocuments(\"Item\", [disease.toObject()]);\n    this.script.scriptNotification(\"Otrzymano \" + disease.name)\n}",
+                            "name": "@effect.name"
+                        }
+                    ],
+                    "name": "Uciążliwa Rana"
+                },
+                "obEuxo9hT6J8Ikn3": {
+                    "id": "obEuxo9hT6J8Ikn3",
+                    "scriptData": [
+                        {
+                            "id": "obEuxo9hT6J8Ikn3",
+                            "name": "@effect.name",
+                            "script": "let fatigued = this.actor.hasCondition(\"fatigued\")\nif (!fatigued)\n{\n    this.actor.addCondition(\"fatigued\")\n    ui.notifications.notify(\"Zmęczenie dodane do \" + this.actor.name + \", które nie może zostać usunięte, dopóki objaw Apatia nie zostanie uleczony.\")\n}"
+                        }
+                    ],
+                    "name": "Apatia"
                 }
             },
             "duration_value": "3d10+10",
@@ -446,6 +742,32 @@
                             "script": "\n                            let fatigued = this.actor.hasCondition(\"fatigued\")\nif (!fatigued ) {\n     this.actor.addCondition(\"fatigued \");\n     ui.notifications.notify(\"Zmęczenie dodane do \" + this.actor.name + \", które nie może zostać usunięte, dopóki objaw Apatia nie zostanie uleczony.\")\n}"
                         }
                     ]
+                },
+                "Ea8KAgVoLY8Ll7Q6": {
+                    "id": "Ea8KAgVoLY8Ll7Q6",
+                    "scriptData": [
+                        {
+                            "id": "Ea8KAgVoLY8Ll7Q6",
+                            "name": "@effect.name",
+                            "script": "if (args.test.failed)\n{\n   let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"];\n   if (applicableCharacteristics.includes(args.test.characteristicKey))\n   {\n       this.actor.addCondition(\"stunned\");\n   }\n}"
+                        }
+                    ],
+                    "name": "Mdłości"
+                },
+                "V6P6SYdjFxmtIqRT": {
+                    "id": "V6P6SYdjFxmtIqRT",
+                    "name": "Biegunka (Umiarkowana)"
+                },
+                "8XsmDIU79vsVbcSb": {
+                    "id": "8XsmDIU79vsVbcSb",
+                    "scriptData": [
+                        {
+                            "id": "8XsmDIU79vsVbcSb",
+                            "name": "@effect.name",
+                            "script": "let fatigued = this.actor.hasCondition(\"fatigued\")\nif (!fatigued)\n{\n    this.actor.addCondition(\"fatigued\")\n    ui.notifications.notify(\"Zmęczenie dodane do \" + this.actor.name + \", które nie może zostać usunięte, dopóki objaw Apatia nie zostanie uleczony.\")\n}"
+                        }
+                    ],
+                    "name": "Apatia"
                 }
             },
             "duration_value": "1d10",
@@ -474,6 +796,23 @@
                             "hideScript": "return ![\"fel\"].includes(args.characteristic)"
                         }
                     ]
+                },
+                "F62MsjCGikrrpdQu": {
+                    "id": "F62MsjCGikrrpdQu",
+                    "name": "Kaszel i katar"
+                },
+                "MfsnAGIfWS9ulFZx": {
+                    "id": "MfsnAGIfWS9ulFZx",
+                    "scriptData": [
+                        {
+                            "id": "MfsnAGIfWS9ulFZx",
+                            "name": "@effect.name",
+                            "script": "args.fields.modifier -= 10",
+                            "activationScript": "return [\"fel\"].includes(args.characteristic)",
+                            "hideScript": "return ![\"fel\"].includes(args.characteristic)"
+                        }
+                    ],
+                    "name": "Wysypka"
                 }
             },
             "duration_value": "1d10+7",
