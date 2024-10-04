@@ -1,6 +1,6 @@
 Hooks.on("init", () => {
 
-    if (WFRP4eUpInArmsInitWrapper) {
+    if (typeof (WFRP4eUpInArmsInitWrapper) != 'undefined') {
         game.settings.register("wfrp4e-up-in-arms", "initialized", {
             name: "Inicjalizacja",
             scope: "world",

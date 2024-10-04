@@ -1193,6 +1193,24 @@ Hooks.on("i18nInit", async function () {
             }
     }
 
+	WFRP4E.classTrappings = {
+        "Uczeni": "ClassTrappings.Academics",
+        "Uczony": "ClassTrappings.Academics",
+        "Dworzanie": "ClassTrappings.Burghers",
+        "Dworzanin": "ClassTrappings.Burghers",
+        "Mieszczanie": "ClassTrappings.Courtiers",
+        "Mieszczanin": "ClassTrappings.Courtiers",
+        "Pospólstwo": "ClassTrappings.Peasants",
+        "Wędrowcy": "ClassTrappings.Rangers",
+        "Wędrowiec": "ClassTrappings.Rangers",
+        "Wodniacy": "ClassTrappings.Riverfolk",
+        "Wodniak": "ClassTrappings.Riverfolk",
+        "Łotry": "ClassTrappings.Rogues",
+        "Łotr": "ClassTrappings.Rogues",
+        "Wojownicy": "ClassTrappings.Warriors",
+        "Wojownik": "ClassTrappings.Warriors",
+    }
+
 	for (const obj in WFRP4E) {
 		for (const el in WFRP4E[obj]) {
 			if (typeof WFRP4E[obj][el] === "string") {
@@ -1205,7 +1223,7 @@ Hooks.on("i18nInit", async function () {
 		WFRP4E.symptomEffects[symptom].name = game.i18n.localize(WFRP4E.symptomEffects[symptom].name);
 	}
 
-	mergeObject(game.wfrp4e.config, WFRP4E);
+	foundry.utils.mergeObject(game.wfrp4e.config, WFRP4E);
 
 	game.wfrp4e.config.scriptTriggers = {
 		manual: "Wywołanie Ręczne (manual)",
@@ -1268,7 +1286,7 @@ Hooks.on("i18nInit", async function () {
 Hooks.on("init", () => {
 	game.wfrp4e.config.PrepareSystemItems = function() {
 
-		this.systemItems = mergeObject(this.systemItems, {
+		this.systemItems = foundry.utils.mergeObject(this.systemItems, {
 			reload : {
 				type: "extendedTest",
 				name: "",
@@ -1415,7 +1433,7 @@ Hooks.on("init", () => {
 		})
 
 
-		this.systemEffects = mergeObject(this.systemEffects, {
+		this.systemEffects = foundry.utils.mergeObject(this.systemEffects, {
 			"fear":  {
 				name: game.i18n.localize("NAME.Fear"),
 				img: "systems/wfrp4e/icons/conditions/fear.png",
@@ -1762,11 +1780,11 @@ Hooks.on("init", () => {
 								let weaponLength = args.item.reachNum
 								if (weaponLength > 3)
 								{
-									let improv = duplicate(game.wfrp4e.config.systemItems.improv)
+									let improv = foundry.utils.duplicate(game.wfrp4e.config.systemItems.improv)
 									improv.system.twohanded.value = args.item.twohanded.value
 									improv.system.offhand.value = args.item.offhand.value
 									improv.name = args.item.name + " (" + game.i18n.localize("EFFECT.Infighting") + ")"
-									mergeObject(args.item.system, improv.system, {overwrite : true})
+									foundry.utils.mergeObject(args.item.system, improv.system, {overwrite : true})
 									args.item.system.qualities = improv.system.qualities
 									args.item.system.flaws = improv.system.flaws
 									args.item.name = improv.name

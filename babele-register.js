@@ -181,9 +181,9 @@ Hooks.on("init", () => {
                 );
 
                 let translation = {};
-                translations.forEach(t => {mergeObject(translation, t)})
+                translations.forEach(t => {foundry.utils.mergeObject(translation, t)})
 				console.log(`Babele | translation for ${collection} pack successfully loaded`);
-				allTranslations.push(mergeObject(translation, { collection: collection }));
+				allTranslations.push(foundry.utils.mergeObject(translation, { collection: collection }));
             }
         };
 
@@ -259,9 +259,9 @@ Hooks.on("init", () => {
 				if (translations){ 
 					const translation = translations[data.id] ?? translations[data._id];
 					if (translation) {
-						return mergeObject(
+						return foundry.utils.mergeObject(
 							data,
-							mergeObject(translation, { translated: true }),
+							foundry.utils.mergeObject(translation, { translated: true }),
 						);
 					}
 				}
@@ -282,11 +282,11 @@ Hooks.on("init", () => {
 					let translatedItem = pack.translations[originalName];
 					if (translatedItem) {
 						const translatedData = dynamicMapping.map(item, translatedItem);
-						translatedItem = mergeObject(item, translatedData);
+						translatedItem = foundry.utils.mergeObject(item, translatedData);
 						for (const e of translatedItem.effects) {
 							const te = pack.translations[originalName].effects[e._id];
 							if (te) {
-								mergeObject(e, te);
+								foundry.utils.mergeObject(e, te);
 								if (te.filter) {
 									e.flags.wfrp4e.applicationData.filter = te.filter;
 								}
@@ -343,11 +343,11 @@ Hooks.on("init", () => {
 								let translatedItem = pack.translations[compendiumItemId];
 								if (translatedItem) {
 									const translatedData = dynamicMapping.map(item, translatedItem);
-									translatedItem = mergeObject(item, translatedData);
+									translatedItem = foundry.utils.mergeObject(item, translatedData);
 									for (const e of translatedItem.effects) {
 										const te = pack.translations[compendiumItemId].effects[e._id];
 										if (te) {
-											mergeObject(e, te);
+											foundry.utils.mergeObject(e, te);
 											if (te.filter) {
 												e.flags.wfrp4e.applicationData.filter = te.filter;
 											}
