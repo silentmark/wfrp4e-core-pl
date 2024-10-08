@@ -1384,7 +1384,7 @@
             "name": "Rozpoznanie Artefaktu",
             "description": "<p>Jesteś w stanie wykryć, czy w danym przedmiocie zaklęta jest magia. Możesz wykonać Test Intuicji, gdy go dotykasz. Jeśli Test się powiedzie, każdy PS pozwala ci poznać jedną zasadę, która ma zastosowanie wobec przedmiotu (jeśli tak w ogóle jest). W zwykłych przypadkach możesz wykonać tylko jeden Test wobec danego artefaktu.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.g3y373FnWJEAxgEB",
-            "tests": "Intuicja związana z wykrywaniem magicznych artefaktów",
+            "tests": "Testy Intuicji związane z wykrywaniem magicznych artefaktów",
             "effects": {
                 "JJy9WQaBw4LgaURv": {
                     "scriptData": [

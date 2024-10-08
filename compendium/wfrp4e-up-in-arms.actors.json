@@ -3,6 +3,7 @@
     "mapping": {
         "species": "system.details.species.value",
         "gender": "system.details.gender.value",
+        "gmnotes": "system.details.gmnotes.value",
         "effects": {
             "path": "effects",
             "converter": "effects"
@@ -138,7 +139,8 @@
             "description": " ",
             "sourceId": "Compendium.wfrp4e-up-in-arms.actors.DeVqxMfNjki7ytr8",
             "species": "Człowiek",
-            "gender": "Różne"
+            "gender": "Różne",
+            "gmnotes": "<p></p><blockquote class=\"foundry-note\"><p>Dodaj cechę @UUID[Compendium.wfrp4e-up-in-arms.items.gjtcCTmRPxTL4oAL]{Najemnik} aby stworzyć Najmitę.</p><p>Więcej szczegółów znajdziesz w @UUID[JournalEntry.wt3pKdkmXuAHrVyl.JournalEntryPage.QD3EDNjFCIcnaoZw]{Statystyki Najmitów}.</p></blockquote>"
         },
         "Lawyer": {
             "items": {
@@ -225,7 +227,8 @@
             "description": " ",
             "sourceId": "Compendium.wfrp4e-up-in-arms.actors.OaODR2wDFVLfY5np",
             "species": "Człowiek",
-            "gender": "Różne"
+            "gender": "Różne",
+            "gmnotes": "<p></p><blockquote class=\"foundry-note\"><p>Dodaj cechę @UUID[Compendium.wfrp4e-up-in-arms.items.gjtcCTmRPxTL4oAL]{Najemnik} aby stworzyć Najmitę.</p><p>Więcej szczegółów znajdziesz w @UUID[JournalEntry.wt3pKdkmXuAHrVyl.JournalEntryPage.QD3EDNjFCIcnaoZw]{Statystyki Najmitów}.</p></blockquote>"
         },
         "Local Scout": {
             "items": {
@@ -266,9 +269,9 @@
                 },
                 "MYHr8y6xJuitbzfu": {
                     "id": "MYHr8y6xJuitbzfu",
-                    "name": "Broń biała",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń biała}",
-                    "originalName": "Broń biała",
+                    "name": "Broń Biała",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}",
+                    "originalName": "Broń Biała",
                     "sourceId": "Compendium.wfrp4e-up-in-arms.actors.Actor.2cuFdwtSf05YqAAB.Item.MYHr8y6xJuitbzfu"
                 },
                 "lfLwBmMrvhBWWPd1": {
@@ -326,7 +329,8 @@
             "description": " ",
             "sourceId": "Compendium.wfrp4e-up-in-arms.actors.2cuFdwtSf05YqAAB",
             "species": "Człowiek",
-            "gender": "Różne"
+            "gender": "Różne",
+            "gmnotes": "<p></p><blockquote class=\"foundry-note\"><p>Dodaj cechę @UUID[Compendium.wfrp4e-up-in-arms.items.gjtcCTmRPxTL4oAL]{Najemnik} aby stworzyć Najmitę.</p><p>Więcej szczegółów znajdziesz w @UUID[JournalEntry.wt3pKdkmXuAHrVyl.JournalEntryPage.QD3EDNjFCIcnaoZw]{Statystyki Najmitów}.</p></blockquote>"
         },
         "Scribe": {
             "id": "Zmri0YUwubVPY2qu",
@@ -406,7 +410,8 @@
             "description": " ",
             "sourceId": "Compendium.wfrp4e-up-in-arms.actors.Zmri0YUwubVPY2qu",
             "species": "Człowiek",
-            "gender": "Różne"
+            "gender": "Różne",
+            "gmnotes": "<p></p><blockquote class=\"foundry-note\"><p>Dodaj cechę @UUID[Compendium.wfrp4e-up-in-arms.items.gjtcCTmRPxTL4oAL]{Najemnik} aby stworzyć Najmitę.</p><p>Więcej szczegółów znajdziesz w @UUID[JournalEntry.wt3pKdkmXuAHrVyl.JournalEntryPage.QD3EDNjFCIcnaoZw]{Statystyki Najmitów}.</p></blockquote>"
         },
         "Seasoned Mercenary": {
             "items": {
@@ -479,7 +484,8 @@
                     "id": "JmLR5XdET6YixYdG",
                     "name": "Obciążenie 1"
                 }
-            }
+            },
+            "gmnotes": "<p></p><blockquote class=\"foundry-note\"><p>Dodaj cechę @UUID[Compendium.wfrp4e-up-in-arms.items.gjtcCTmRPxTL4oAL]{Najemnik} aby stworzyć Najmitę.</p><p>Więcej szczegółów znajdziesz w @UUID[JournalEntry.wt3pKdkmXuAHrVyl.JournalEntryPage.QD3EDNjFCIcnaoZw]{Statystyki Najmitów}.</p></blockquote>"
         },
         "Demigryph Mount": {
             "id": "SvY5jKrtcsmLJqPy",
@@ -602,9 +608,9 @@
                 },
                 "vOaOjdJuJF281F4H": {
                     "id": "vOaOjdJuJF281F4H",
-                    "name": "Broń biała",
-                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń biała}",
-                    "originalName": "Broń biała",
+                    "name": "Broń Biała",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}",
+                    "originalName": "Broń Biała",
                     "sourceId": "Compendium.wfrp4e-up-in-arms.actors.Actor.VhdI2DUAbHadGBcN.Item.vOaOjdJuJF281F4H"
                 },
                 "vXhPPWv8SG7p3LHD": {
@@ -635,7 +641,8 @@
                     "originalName": "czapka tragarza",
                     "sourceId": "Compendium.wfrp4e-up-in-arms.actors.Actor.VhdI2DUAbHadGBcN.Item.BrJmPjdgXJGEvDwL"
                 }
-            }
+            },
+            "gmnotes": "<p></p><blockquote class=\"foundry-note\"><p>Dodaj cechę @UUID[Compendium.wfrp4e-up-in-arms.items.gjtcCTmRPxTL4oAL]{Najemnik} aby stworzyć Najmitę.</p><p>Więcej szczegółów znajdziesz w @UUID[JournalEntry.wt3pKdkmXuAHrVyl.JournalEntryPage.QD3EDNjFCIcnaoZw]{Statystyki Najmitów}.</p></blockquote>"
         },
         "Destrier": {
             "sourceId": "Compendium.wfrp4e-up-in-arms.actors.Wj9adJV0oXhajOns",

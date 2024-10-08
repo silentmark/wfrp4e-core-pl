@@ -9,7 +9,7 @@ Hooks.on("init", () => {
             type: Boolean,
         });
 
-        game.settings.registerMenu("wfrp4e-core", "init-dialog", {
+        game.settings.registerMenu("wfrp4e-up-in-arms", "init-dialog", {
             name: "WFRP4e Pod Bronią - Konfiguracja",
             label: "Konfiguracja",
             hint: "Importuj lub aktualizuj zawartość modułu WFRP4e Pod Bronią",
