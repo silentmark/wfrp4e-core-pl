@@ -1,7 +1,7 @@
 //*** Furia
 if (this.actor.system.status.advantage.value == 0)
 {
-    return this.script.notification("Niewystarczająca liczba Punktów Przewag!", "error")
+    return this.script.notification("Niewystarczająca liczba Punktów Przewagi!", "error")
 }
 
 let hatred = await fromUuid("Compendium.wfrp4e-core.items.Item.aE3pyW20Orvdjzj0")
