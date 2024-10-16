@@ -16,7 +16,7 @@ if (this.actor.system.status.advantage.value >= 3)
 else if (this.actor.system.status.advantage.value >= 1)
 {
     let data = hatred.toObject();
-    data.system.specification.value = "Przeciwnicy w bliskim zasięgu"
+    data.system.specification.value = "Przeciwnicy w walce wręcz"
     this.script.notification(`Dodano: ${hatred.name}`)
     this.actor.setAdvantage(0)
     this.actor.createEmbeddedDocuments("Item", [data])
