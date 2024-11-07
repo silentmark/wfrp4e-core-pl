@@ -9,7 +9,7 @@ let filters = [
     }
 ]
 
-let petty = await game.wfrp4e.apps.ItemDialog.createFromFilters(filters, 3, "Wybierz 3 Zaklęcia Proste")
+let petty = await game.wfrp4e.apps.ItemDialog.createFromFilters(filters, 3, { text :"Wybierz 3 Zaklęcia Proste" })
 
 
 filters = [
@@ -23,7 +23,7 @@ filters = [
     }
 ]
 
-let arcane = await game.wfrp4e.apps.ItemDialog.createFromFilters(filters, 3, "Wybierz 3 Zaklęcia Magii Tajemnej")
+let arcane = await game.wfrp4e.apps.ItemDialog.createFromFilters(filters, 3, { text :"Wybierz 3 Zaklęcia Magii Tajemnej" })
 
 let items = petty.concat(arcane).map(i => i.toObject())
 

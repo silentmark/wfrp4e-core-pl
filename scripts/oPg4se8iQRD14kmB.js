@@ -9,7 +9,7 @@ let filters = [
     }
 ]
 
-let items = await game.wfrp4e.apps.ItemDialog.createFromFilters(filters, 1, "Wybierz odpowiednią broń drzewcową lub dwuręczną")
+let items = await game.wfrp4e.apps.ItemDialog.createFromFilters(filters, 1, { text : "Wybierz odpowiednią broń drzewcową lub dwuręczną" })
 items = items.map(i => i.toObject())
 
 items.forEach(i => equip(i))
