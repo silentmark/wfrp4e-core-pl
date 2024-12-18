@@ -1063,7 +1063,7 @@
             "description": "<p>Wznosisz do Rhyi pieśń życia i energii. Wszystkie cele Cudu mogą usunąć 1 Stan. Jeśli Cud oczyszcza cel w ten sposób ze wszystkich jego Stanów, ten czuje się tak odświeżony, jakby właśnie wstał po dobrze przespanej nocy, i zyskuje premię +10 do wszystkich Testów w swojej następnej Turze.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.pBWXlJDOE7tfl8hP",
             "duration": "Natychmiast",
-            "target": "Bonus Ogd sojusników",
+            "target": "Bonus Ogd sojuszników",
             "range": "Ogłada metrów",
             "effects": {
                 "B6C7PTHXo7vQ79L1": {

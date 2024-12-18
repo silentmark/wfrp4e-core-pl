@@ -1,12 +1,10 @@
 {
     "WFRP4E.system.title": "Warhammer Fantasy Roleplay 4-ta Edycja",
     "WFRP4E.system.description": "Kompleksowa implementacja mechaniki czwartej edycji Warhammer Fantasy Roleplay w środowisku Foundry VTT pozwalająca na rozgrywanie ponurych i niebezpiecznych przygód.",
-    "Name": "Nazwa",
     "TYPES.Actor.character": "Bohater Gracza",
     "TYPES.Actor.npc": "Bohater Niezależny",
     "TYPES.Actor.creature": "Stwór",
     "TYPES.Actor.vehicle": "Pojazd",
-    "CharacterName": "Imię Postaci",
     "TYPES.Item.ammunition": "Amunicja",
     "TYPES.Item.armour": "Pancerz",
     "TYPES.Item.career": "Profesja",
@@ -132,7 +130,6 @@
     "SETTINGS.MooConditionTriggers": "Efekty Stanów",
     "SETTINGS.MooConditionTriggersHint": "Stany aktywują się na koniec tury Aktora, a nie na końcu Rundy.",
     "SETTINGS.MooCritModifiers": "Modyfikatory Tabeli Krytyków",
-    "SETTINGS.MooCritMOdifiersHint": "Kiedy otrzymujesz obrażenia które są wyższe niż twoją obecną Żywotność, zwiększ lub zmniejsz o 10 wynik rzutu na Tabeli Ran Krytycznych za każdy punkt obrażen różnicy od twojego BWt.<br><br>Np. Mam jeszcze 4 PŻ, a mój BWt wynosi 5. Dostaję 12 punktów obrażeń (już po odjęciu BWt). Czyli zdane obrażenia są o 8 punktów wyższe. Ponieważ mam 5 BWt, daje mi to +30 do rzutu na Ranę Krytyczną ( 8 punktów obrażeń - 5 BWt = 3, czyli +30 do wyniku rzutu ).<br><br>Jeśli w tej samej sytuacji otrzymałbym zamiast tego 5 punktów obrażeń (po odjęciu BWt), to modyfikator wynosiłby -40 ( po odjęciu pozostałej puli PŻ zostaje 1, 1 - 5 BWt = -4, czyli -40).",
     "SETTINGS.MooSLDamage": "Alternatywne Liczenie Obrażeń",
     "SETTINGS.MooSLDamageHint": "Alternatywne liczenie obrażeń oparte jest wyłącznie na PS atakującego, zamiast o różnicy w osiągniętych PS pomiędzy atakującym a obrońcą.",
     "SETTINGS.MooRangedDamage": "Modyfikacja Obrażeń Zasięgowych",
@@ -1935,7 +1932,7 @@
     "WFRP4E.Properties.Unbalanced": "Środek ciężkości niektórych rodzajów oręża jest przesunięty do przodu, przez co parowanie nimi jest utrudnione. Kiedy tego rodzaju broń jest wykorzystywana do parowania nadchodzącego ataku, jej użytkownik otrzymuje karę -1 PS do Testu.",
     "WFRP4E.Properties.Trip": "<em>Przewracająca</em> broń została zaprojektowana tak, aby zahaczać o nogę przeciwnika albo w jakiś inny sposób go przewracać. Po trafieniu we wroga postać może wydać 2 Przewagi i wykonać <strong>Test Przeciwstawny Siła/Atletyka</strong>. W przypadku sukcesu przeciwnik otrzymuje Stan @Condition[Powalenie] (jeżeli siedzi na wierzchowcu, upada z wsokości 2 metrów, a następnie otrzymuje Stan @Condition[Powalenie]). Jeśli postać przegra Test, nie wydarzy się nic poza normalnym następstwem przegranego Testu Przeciwstawnego w walce.",
     "WFRP4E.Properties.Salvo": "@UUID[Compendium.wfrp4e-up-in-arms.journals.l0NZFxzG4t0GoIFu.JournalEntryPage.Y4IiuJnk1S466SLx#salwa]{Salwa}",
-    "WFRP4E.Properties.Crewed": "    @UUID[Compendium.wfrp4e-up-in-arms.journals.l0NZFxzG4t0GoIFu.JournalEntryPage.Y4IiuJnk1S466SLx#załoga]{Załoga}",
+    "WFRP4E.Properties.Crewed": "@UUID[Compendium.wfrp4e-up-in-arms.journals.l0NZFxzG4t0GoIFu.JournalEntryPage.Y4IiuJnk1S466SLx#załoga]{Załoga}",
     "WFRP4E.Properties.ShieldAlternate": "Ilekroć postać próbuje sparować wymierzony w nią atak wykonywany przy użyciu Walki Wręcz bądź Umiejętności Broń Biała, otrzymuje premię w postaci tylu dodatkowych Punktów Pancerza, ile wynosi (wartość) Zalety Tarcza. Jeśli twoja broń ma Zaletę Tarcza o wartości 2 lub wyższej, możesz wykorzystać ją, aby wykonać Test Przeciwstawny przeciwko nadlatującym pociskom w twoim polu widzenia. ",
     "PROPERTY.Spread": "Rozrzucająca",
     "PROPERTY.Trip": "Przewracająca",
@@ -1951,63 +1948,63 @@
         "NewScript": "Nowy Skrypt",
         "NewEffect": "Nowy Efekt",
         "Trigger": {
-            "Immediate": "Natychmiastowy",
-            "PrepareBaseData": "Przygotuj Dane Podstawowe",
-            "PrePrepareDerivedData": "Przed przygotowaniem danych pochodnych",
-            "PrepareDerivedData": "Przygotuj dane pochodne",
-            "PrepareOwnedItemBaseData": "Przygotuj podstawowe dane posiadanych przedmiotów",
-            "PrePrepareOwnedItemDerivedData": "Przed przygotowaniem danych bazowych dotyczące posiadanych przedmiotów",
-            "Manual": "Ręczny",
-            "Dialog": "Okno",
-            "OnCreate": "Przy tworzeniu",
-            "PrepareOwnedItemDerivedData": "Przygotuj dane pochodne dotyczące posiadanych przedmiotów",
-            "PrepareOwnedItems": "Przygotuj posiadane przedmioty",
-            "PrepareOwnedData": "Przygotuj posiadane dane",
-            "PreApplyDamage": "Przed nałożeniem obrażeń",
-            "PreTakeDamage": "Przed otrzymaniem obrażeń",
-            "TakeDamage": "W trakcie otrzymywania obrażeń",
-            "CreateToken": "Tworzenie Tokena",
-            "CreateItem": "Tworzenie przedmiotu",
-            "PreUpdateDocument": "Przed aktualizacją dokumentu",
-            "UpdateDocument": "Podczas aktualizacji dokumentu",
-            "CreateCondition": "Tworzenie Stanu",
-            "DeleteEffect": "Usuwanie efektu",
-            "StartRound": "Na początku rundy",
-            "EndRound": "Na końcu rundy",
-            "StartTurn": "Na początku tury",
-            "EndTurn": "Na końcu tury",
-            "UpdateCombat": "Poczas aktualizowania walki",
-            "StartCombat": "Na początku walki",
-            "EndCombat": "Na końcu walki",
-            "ApplyDamage": "W trakcie nakładania obrażeń"
+            "Immediate": "Wywołanie Natychmiastowe (immediate)",
+            "PrepareBaseData": "Przygotuj Dane Podstawowe (prepareBaseData)",
+            "PrePrepareDerivedData": "Przed przygotowaniem danych pochodnych (prePrepareDerivedData)",
+            "PrepareDerivedData": "Przygotuj dane pochodne (prepareDerivedData)",
+            "PrepareOwnedItemBaseData": "Przygotuj podstawowe dane posiadanych przedmiotów (prepareOwnedItemBaseData)",
+            "PrePrepareOwnedItemDerivedData": "Przed przygotowaniem danych bazowych dotyczące posiadanych przedmiotów (prePrepareOwnedItemDerivedData)",
+            "Manual": "Wywołanie Ręczne (manual)",
+            "Dialog": "Okno Dialogowe Testu (dialog)",
+            "OnCreate": "Przy tworzeniu (onCreate)",
+            "PrepareOwnedItemDerivedData": "Przygotuj dane pochodne dotyczące posiadanych przedmiotów (prepareOwnedItemDerivedData)",
+            "PrepareOwnedItems": "Przygotuj posiadane przedmioty (prepareOwnedItems)",
+            "PrepareOwnedData": "Przygotuj posiadane dane (prepareOwnedData)",
+            "PreApplyDamage": "Przed zadaniem obrażeń (preApplyDamage)",
+            "PreTakeDamage": "Przed otrzymaniem obrażeń (preTakeDamage)",
+            "TakeDamage": "W trakcie otrzymywania obrażeń (takeDamage)",
+            "CreateToken": "Tworzenie Tokena (createToken)",
+            "CreateItem": "Tworzenie przedmiotu (createItem)",
+            "PreUpdateDocument": "Przed aktualizacją dokumentu (preUpdateDocument)",
+            "UpdateDocument": "Podczas aktualizacji dokumentu (updateDocument)",
+            "CreateCondition": "Tworzenie Stanu (createCondition)",
+            "DeleteEffect": "Usuwanie efektu (deleteEffect)",
+            "StartRound": "Na początku rundy (startRound)",
+            "EndRound": "Na końcu rundy (endRound)",
+            "StartTurn": "Na początku tury (startTurn)",
+            "EndTurn": "Na końcu tury (endTurn)",
+            "UpdateCombat": "Podczas aktualizowania walki (updateCombat)",
+            "StartCombat": "Na początku walki (startCombat)",
+            "EndCombat": "Na końcu walki (endCombat)",
+            "ApplyDamage": "W trakcie zadawania obrażeń (applyDamage)"
         },
         "TransferType": {
             "Crew": "Załoga",
             "Other": "Inne",
             "Area": "Obszar",
             "Target": "Cel",
-            "Document": "Posiada dokument",
+            "Document": "Właściciel Efektu",
             "Damage": "Obrażenia",
             "Aura": "Aura",
             "Zone": "Strefa"
         },
-        "FollowToken": "Podążanie za Tokenem",
+        "FollowToken": "Podążaj za Tokenem",
         "Scripts": "Skrypty",
-        "CannotDeleteItemEffect": "Ten efekt pochodzi z Przedmiotu z tego Aktora. Usuń przedmiot własnoręcznie lub efekt z karty przedmiotu.",
-        "ItemDialog": "Okno Przedmiotu",
+        "CannotDeleteItemEffect": "Ten efekt pochodzi z Przedmiotu należącego do Aktora. Usuń przedmiot lub efekt z karty przedmiotu.",
+        "ItemDialog": "Wybór Przedmiotu",
         "AddScript": "Dodaj Skrypt",
-        "ScriptConfig": "Ustawienia Skryptu",
-        "EffectPrevented": "Efekt Wstrzymany",
+        "ScriptConfig": "Konfiguracja Skryptu",
+        "EffectPrevented": "Tworzenie Efektu Przerwane",
         "DeletingEffectItems": "Usuwanie Efektu Przedmiotu: {items}",
         "BugReporter": {
-            "Title": "Zgłaszacz Błędów",
+            "Title": "Zgłaszanie Błędów",
             "Updated": "<p>Wszystkie paczki związane z Warhammerem są aktualne!</p>",
-            "NotUpdated": "<p>Podane paczki związane z Warhammerem są nieaktualne</p>",
+            "NotUpdated": "<p>Poniższe paczki związane z Warhammerem wymagają aktualizacji</p>",
             "PostSuccess": "Zgłoszenie błędu wysłane! Sprawdź konsolę by znaleźć link do zgłoszenia.",
             "GeneralBugReportError": "Coś poszło nie tak",
             "LoadingIssues": "Problemy z załadowaniem",
             "BugReportFormError": "Proszę wypełnić formularz",
-            "BugReportNameError": "Prosimy uwzględnić swoją nazwę użytkownika Discord lub email w sekcji Imię.",
+            "BugReportNameError": "Proszę uwzględnić swoją nazwę użytkownika Discord lub email w sekcji Imię.",
             "Contact": "Informacje kontaktowe",
             "ContactPlaceholder": "Nazwa użytkownika Discord lub Email.",
             "MatchingIssues": "Czy twój problem został już zgłoszony?",
@@ -2022,83 +2019,615 @@
             "AlertHint": "Ten problem albo nie był możliwy do odtworzenia, albo wymaga więcej informacji. Kliknij na tytuł, aby zobaczyć szczegóły."
         },
         "Initialization": {
-            "DeleteModuleContent": "Usuń zawartość modułu",
-            "ResolveDuplicates": "Rozwiąż duplikaty",
+            "DeleteModuleContent": "Usuń zaimportowaną zawartość",
+            "ResolveDuplicates": "Rozwiąż konflikty duplikatów",
             "DeleteModuleContentPrompt": "<p><strong>OSTRZEŻENIE</strong>: To spowoduje usunięcie wszelkich treści związanych z modułem <strong>{id}</strong>, które zostały zaimportowane do tego świata.</p><p>Czy na pewno chcesz kontynuować?</p>"
         },
         "Script": "Skrypt",
         "ScriptTrigger": "Wyzwalacz",
-        "Targeter": "Ukierunkowywacz",
-        "HideScript": "Ukryj Skrypt",
-        "ActivateScript": "Aktywuj Skrypt",
-        "SubmissionScript": "Wysyłanie Skryptu",
-        "ManualEffectKeys": "Ręczne klawisze efektów",
+        "Targeter": "Dotyczy zaznaczonego Celu",
+        "HideScript": "Skrypt Ukrywający",
+        "ActivateScript": "Skrypt Aktywujący",
+        "SubmissionScript": "Skrypt wywoływany podczas zaznaczania",
+        "ManualEffectKeys": "Wprowadź ręcznie ścieżki do modyfikowanych pól",
         "DeleteEffectHint": "Usuń Aktywny Efekt po uruchomieniu tego skryptu.",
         "NewItem": "Nowy Przedmiot",
         "Error.ID": "ID dla {name} już istnieje w kolekcji. Ten Dokument otrzymał unikalne ID.",
         "PickZone": "Wybierz Strefę na którą chcesz nałożyć Aktywny Efekt.",
         "TransferData": {
-            "TransferType": "Zmiana Typu",
-            "TransferTypeHint": "Skonfiguruj jak zmienia się lub jest nakładany Aktywny Efekt.",
+            "TransferType": "Rodzaj Transferu",
+            "TransferTypeHint": "Wybierz sposób, w jaki efekt jest przenoszony lub aplikowany na cel.",
             "DocumentType": "Typ dokumentu",
             "DocumentTypeHint": "Do jakiego dokumentu należy zastosować Aktywny Efekt",
-            "AvoidTest": "Test Odparcia",
+            "AvoidTest": "Test Odparcia Efektu",
             "AvoidTestNone": "Brak",
             "AvoidTestItem": "Przedmiot",
             "AvoidTestScript": "Skrypt",
             "Opposed": "Przeciwstawny",
-            "Reversed": "Odwrotny",
-            "ReversedHint": "Zamiast zapobiegać, nakłada efekt jeśli Test został niezdayn.",
+            "Reversed": "Odwróć zachowanie",
+            "ReversedHint": "Zamiast zapobiegać nałożeniu efektu, Aktywny Efekt jest ignorowany przy niezdanym teście.",
             "AreaDuration": "Czas trwania efektu obszarowego",
             "AreaDurationInstantaneous": "Natychmiastowy",
             "AreaDurationSustained": "Podtrzymywany",
-            "TransferredAura": "Przenośna Aura",
-            "TransferredAuraHint": "Nałóż tę Aurę na cel (lub siebie) zamiast stale stosować ją na siebie",
-            "RenderAura": "Generowanie Aury",
-            "RenderAuraHint": "Wygeneruj aurę na płótnie jako wzornik",
+            "TransferredAura": "Aplikowalna Aura",
+            "TransferredAuraHint": "Przypisz Aurę do zaznaczoego celu (lub siebie) zamiast automatycznie zastosować ją na siebie",
+            "RenderAura": "Wyświetlanie Aury",
+            "RenderAuraHint": "Wyświetl aurę na Płótnie jako Wzornik",
             "Keep": "Utrzymuj",
             "KeepHint": "Zapobiega usunięciu efektu po opuszczeniu Obszaru",
             "Radius": "Promień",
             "RadiusHint": "Promień wzornika",
             "TemplateData": "Dane Wzornika",
             "TemplateDataHint": "Skonfiguruj dane wzornika, takie jak kolor lub tekstura",
-            "TestIndependent": "Niezależny Test",
-            "TestIndependentHint": "Jeśli zaznaczone, ten Efekt można wywołać bezpośrednio z karty Aktora, zamiast z czatu",
-            "PreApplyScript": "Przed zastosowaniem skryptu",
-            "PreApplyScriptHint": "Wykonuje się zanim efekt zostanie nałożony - działa jako źródło, a nie jako cel. Zwraca wartość False by zapobiec nakładaniu (dotyczy tylko Obrażeń, Celu, i Obszaru/Strefy).",
-            "EquipTransfer": "Gdy wyposażony",
-            "EquipTransferHint": "Przełącza ten efekt tylko gdy jest on wyposażony.",
-            "EnableScript": "Włącz Skrypt",
-            "EnableScriptHint": "Warunek określający, czy efekt ma być włączony, czy wyłączony.",
+            "TestIndependent": "Efekt niezależny od testu",
+            "TestIndependentHint": "Jeśli zaznaczone, ten Efekt można wywołać bezpośrednio z karty Aktora, zamiast z karty testu na czacie",
+            "PreApplyScript": "Skrypt przed wywołaniem efektu",
+            "PreApplyScriptHint": "Skrypt wykonywany, zanim efekt zostanie nałożony na cel — uruchamiany w kontekście źródła, a nie cel efektu. Zwróć wartość False by zapobiec wywołaniu efektu (dotyczy tylko Obrażeń, Celu, i Obszaru/Strefy).",
+            "EquipTransfer": "Aktywuj przy dobyciu",
+            "EquipTransferHint": "Przełącza ten efekt tylko gdy powiązany przedmiot jest w użyciu (wyekwipowany).",
+            "EnableScript": "Skrypt aktywujący",
+            "EnableScriptHint": "Warunek określający, czy efekt ma być aktywny, czy nieaktywny.",
             "Filter": "Filtr",
             "FilterHint": "Skrypt do filtrowania Dokumentów na które ma być nałożony Aktywny Efekt. Powinien zwracać <strong>True</strong> by zapobiec nałożeniu.",
-            "Prompt": "Podpowiedź",
-            "PromptHint": "Podaje podpowiedź i wybiera dokument dla Aktywnego Efektu. Można użyć z <strong>Filtrem</strong>, aby zawęzić wybór.",
+            "Prompt": "Wybór Przedmiotu",
+            "PromptHint": "Wyświetla okno wyboru, którego przedmiotu ma dotyczyć aktywny efekt, użyj <strong>Filtrowania</strong>, aby zawęzić wybór.",
             "SelfOnly": "Tylko na siebie",
             "SelfOnlyHint": "Ten efekt powinien być nakładany wyłącznie na posiadającego go Aktora, zamiast na Cele.",
-            "SkipImmediatePlacement": "Pomiń natychmiastowe umieszczenie",
-            "SkipImmediatePlacementHint": "Zapobiega uruchomieniu natychmiastowych skryptów po zastosowaniu efektu.",
+            "SkipImmediatePlacement": "Pomiń natychmiastowe skrypty podczas umieszczania wzornika",
+            "SkipImmediatePlacementHint": "Zapobiega uruchomieniu natychmiastowych skryptów po umieszczeniu wzornika.",
             "ZoneType": "Typ Strefy",
             "ZoneTypeHint": "<strong>Efekt Strefy</strong> oznacza, że efekt jest powiązany ze strefą, <strong>Tokeny w Strefie</strong> oznacza, że dotyczy wszystkich Tokenów w tej Strefie, <strong>Podążanie za Tokenem</strong> oznacza, że dotyczy dowolnej Strefy, w której znajduje się docelowy Token",
-            "AvoidTestHint": "Zdefiniuj Test, który, jeśli zostanie zaliczony, powstrzyma dodanie efektu. <strong>Przedmiot</strong> wskazuje, że efekt powinien przyjąć dane Testu zdefiniowane przez Przedmiot (jeśli są dostępne). <strong>Niestandardowy</strong> umożliwia zdefiniowanie właściwości Testu w tym miejscu. <strong>Skrypt</strong> umożliwia napisanie całkowicie niestandardowego skryptu, który, jeśli zwróci wartość True, powstrzyma dodanie efektu.",
+            "AvoidTestHint": "Zdefiniuj Test, który, jeśli zostanie zdany, powstrzyma wywołanie Aktywnego Efektu. <strong>Przedmiot</strong> wskazuje, że efekt powinien przyjąć dane Testu zdefiniowane przez Przedmiot (jeśli są dostępne). <strong>Niestandardowy</strong> umożliwia zdefiniowanie właściwości Testu w tym miejscu. <strong>Skrypt</strong> umożliwia napisanie całkowicie niestandardowego skryptu, który, jeśli zwróci wartość True, powstrzyma dodanie efektu.",
             "AvoidTestCustom": "Niestandardowy",
-            "Prevention": "Zapobieganie",
+            "Prevention": "Sposób Zapobiegania",
             "PreventionHint": "Zapobiega nałożeniu tego efektu jeśli Test został zdany."
         },
-        "Dialog.Modifiers": "Modyfikatory Okna",
+        "Dialog.Modifiers": "Okno Modyfikatorów Testu",
         "PlaceEffect": "Umieść {name}",
         "ApplyEffect": "Nałóż {name}",
         "ZoneEffect": "Efekt Strefy",
         "TokensInZone": "Tokeny w Strefie",
-        "SendingSocketRequest": "Wysyłanie żądania gniazda",
-        "EffectFiltered": "Filtrowanie Efektu",
-        "ItemsNotAllowed": "Ten Przedmiot nie jest dozwolony dla Aktora tego typu",
+        "SendingSocketRequest": "Wysyłanie żądania",
+        "EffectFiltered": "Efekt Pominięty",
+        "ItemsNotAllowed": "Nie można dodać wybranego Przedmiotu do danego typu Aktora",
         "ErrorNoZones": "Nie wybrano Strefy. Dodaj Obszar do Sceny by stworzyć Strefę.",
         "Initialize": "Inicjalizacja",
         "Dialog.UserEntry": "Wpis użytkownika",
         "Dialog.Initial": "Początkowa",
         "ScriptLock": "Skrypt Zablokowany",
-        "ErrorUnableToFindEffect": "Nie można znaleźć efektu do zastosowania."
+        "ErrorUnableToFindEffect": "Nie można znaleźć efektu do zastosowania.",
+        "Models": {
+            "ammunition": {
+                "FIELDS": {
+                    "range.value": {
+                        "label": "Zasięg",
+                        "hint": "Modyfikuje zasięg broni przy użyciu tej amunicji. np. Dodaj: +2, Odejmij: -2, Pomnóż: *2, Podziel: /2"
+                    },
+                    "damage.value": {
+                        "label": "Obrażenia",
+                        "hint": "Modyfikuje obrażenia zadawane przez broń przy użyciu tej amunicji. Zobacz przykłady zakresów powyżej."
+                    },
+                    "damage.dice": {
+                        "label": "Kość",
+                        "hint": "Dodaj rzut kośćmi do obrażeń"
+                    },
+                    "special.value": {
+                        "label": "Specialny"
+                    },
+                    "ammunitionType.value": {
+                        "label": "Typ Amunicji",
+                        "hint": "Określa, jakie rodzaje broni mogą korzystać z tej amunicji"
+                    }
+                }
+            },
+            "armour": {
+                "FIELDS": {
+                    "armorType.value": {
+                        "label": "Typ Pancerza"
+                    },
+                    "AP": {
+                        "head": {
+                            "label": "Głowa"
+                        },
+                        "lArm": {
+                            "label": "Lewa Ręka"
+                        },
+                        "rArm": {
+                            "label": "Prawa Ręka"
+                        },
+                        "lLeg": {
+                            "label": "Lewa Noga"
+                        },
+                        "body": {
+                            "label": "Korpus"
+                        },
+                        "rLeg": {
+                            "label": "Prawa Noga"
+                        }
+                    },
+                    "special.value": {
+                        "label": "Specialny",
+                        "hint": "Dowolny tekst, który będzie wyświetlany na karcie czatu."
+                    }
+                }
+            },
+            "career": {
+                "FIELDS": {
+                    "class.value": {
+                        "label": "Klasa"
+                    },
+                    "careergroup.value": {
+                        "label": "Grupa Profesji"
+                    },
+                    "level.value": {
+                        "label": "Poziom Profesji"
+                    },
+                    "status": {
+                        "tier": {
+                            "label": "Poziom"
+                        },
+                        "standing": {
+                            "label": "Aktualny "
+                        }
+                    }
+                }
+            },
+            "cargo": {
+                "FIELDS": {
+                    "tradeType": {
+                        "label": "Rodzaj handlu"
+                    },
+                    "cargoType.value": {
+                        "label": "Typ Ładunku"
+                    },
+                    "unitPrice.value": {
+                        "label": "Cena Jednostkowa"
+                    },
+                    "origin.value": {
+                        "label": "Pochodzenie"
+                    },
+                    "quality": {
+                        "value": {
+                            "label": "Jakość"
+                        }
+                    }
+                }
+            },
+            "container": {
+                "FIELDS": {
+                    "wearable.value": {
+                        "label": "Zdatny do noszenia"
+                    },
+                    "carries.value": {
+                        "label": "Udźwig"
+                    },
+                    "countEnc.value": {
+                        "label": "Uwzględnij Obciążenie",
+                        "hint": "Dodaj obciążenie do obciążenia bohatera (odznacz jeśli tego nie nosisz, np. wozu)"
+                    }
+                }
+            },
+            "disease": {
+                "FIELDS": {
+                    "contraction.value": {
+                        "label": "Zarażenie"
+                    },
+                    "incubation.value": {
+                        "label": "Inkubacja"
+                    },
+                    "duration.value": {
+                        "label": "Czas trwania"
+                    },
+                    "symptoms.value": {
+                        "label": "Objawy"
+                    },
+                    "permanent.value": {
+                        "label": "Skutki trwałe"
+                    }
+                }
+            },
+            "extendedTest": {
+                "FIELDS": {
+                    "SL.target": {
+                        "label": "Wymagany PS"
+                    },
+                    "test.value": {
+                        "label": "Test"
+                    },
+                    "difficulty.value": {
+                        "label": "Domyślna Trudność"
+                    },
+                    "negativePossible.value": {
+                        "label": "Zezwalaj na ujemne PS",
+                        "hint": "Pozwól, aby postęp tego testu spadł poniżej 0"
+                    },
+                    "failingDecreases.value": {
+                        "label": "Porażka cofa postęp",
+                        "hint": "Zmniejsz postęp w przypadku nieudanych testów"
+                    },
+                    "completion.value": {
+                        "label": "Po zakończeniu",
+                        "hint": "Po zakończeniu wykonaj tę czynność"
+                    },
+                    "hide.test": {
+                        "label": "Ukryj Test",
+                        "hint": "Ukryj ten test przed graczami"
+                    },
+                    "hide.progress": {
+                        "label": "Ukryj Postępy",
+                        "hint": "Ukrywanie postępów w teście przed graczami"
+                    }
+                }
+            },
+            "money": {
+                "FIELDS": {
+                    "coinValue.value": {
+                        "label": "Wartość monety",
+                        "hint": "Wartość tego typu monety (w mosiężnych pensach)."
+                    }
+                }
+            },
+            "skill": {
+                "FIELDS": {
+                    "advanced.value": {
+                        "label": "Typ Umiejętności"
+                    },
+                    "grouped.value": {
+                        "label": "Specjalizacja"
+                    },
+                    "characteristic.value": {
+                        "label": "Cecha"
+                    },
+                    "modifier.value": {
+                        "label": "Modyfikator"
+                    },
+                    "advances.force": {
+                        "hint": "Pokazuj Wskaźnik Rozwinięć niezależnie od Profesji, co umożliwi automatyczne wydawanie doświadczenia.",
+                        "label": "Pokazuj Wskaźnik Rozwinięć"
+                    },
+                    "advances.costModifier": {
+                        "label": "Modyfikator kosztu PD"
+                    }
+                }
+            },
+            "talent": {
+                "FIELDS": {
+                    "tests.value": {
+                        "label": "Testy"
+                    },
+                    "max.value": {
+                        "label": "Max"
+                    },
+                    "advances.force": {
+                        "label": "Pokazuj Wskaźnik Rozwinięć",
+                        "hint": "Pokazuj Wskaźnik Rozwinięć niezależnie od Profesji, co umożliwi automatyczne wydawanie doświadczenia."
+                    }
+                }
+            },
+            "mutation": {
+                "FIELDS": {
+                    "mutationType.value": {
+                        "label": "Typ Mutacji"
+                    }
+                }
+            },
+            "critical": {
+                "FIELDS": {
+                    "wounds.value": {
+                        "label": "Żywotność"
+                    },
+                    "prompt": {
+                        "label": "Wybierz Lokację",
+                        "hint": "Wyświetl zapytanie o lokalizację po dodaniu do aktora."
+                    },
+                    "location.value": {
+                        "label": "Lokacja"
+                    }
+                }
+            },
+            "injury": {
+                "FIELDS": {
+                    "duration": {
+                        "value": {
+                            "label": "Czas trwania"
+                        },
+                        "permanent": {
+                            "label": "Skutki trwałe"
+                        }
+                    },
+                    "prompt": {
+                        "label": "Wybierz Lokację",
+                        "hint": "Zapytaj o lewą lub prawą część ciała po dodaniu do aktora."
+                    },
+                    "location.value": {
+                        "label": "Lokacja"
+                    }
+                }
+            },
+            "prayer": {
+                "FIELDS": {
+                    "type.value": {
+                        "label": "Typ"
+                    },
+                    "god.value": {
+                        "label": "Bóg"
+                    },
+                    "range.value": {
+                        "label": "Zasięg"
+                    },
+                    "duration.value": {
+                        "label": "Czas trwania"
+                    },
+                    "target": {
+                        "value": {
+                            "label": "Cel"
+                        },
+                        "aoe": {
+                            "label": "Działanie Obszarowe"
+                        },
+                        "extendableAoE": {
+                            "label": "Rozszerzalny obszar działania",
+                            "hint": "Czy AoE można powiększyć za pomocą dodatkowego SL?"
+                        }
+                    },
+                    "damage": {
+                        "value": {
+                            "label": "Wzór"
+                        },
+                        "dice": {
+                            "label": "Kość",
+                            "hint": "Dodaj rzut kośćmi do obrażeń"
+                        },
+                        "addSL": {
+                            "label": "Dodaj PS",
+                            "hint": "Dodaj PS do wartości obrażeń"
+                        }
+                    },
+                    "overcast": {
+                        "enabled": {
+                            "label": "Inne Opcje Nadrzucania"
+                        }
+                    }
+                }
+            },
+            "spell": {
+                "FIELDS": {
+                    "cn.value": {
+                        "label": "Poziom Zaklęcia"
+                    },
+                    "lore.value": {
+                        "label": "Tradycja"
+                    },
+                    "skill.value": {
+                        "label": "Umiejętność Czarowania"
+                    },
+                    "ritual.value": {
+                        "label": "Rytuał"
+                    },
+                    "ritual.xp": {
+                        "label": "Koszt PD"
+                    },
+                    "range.vortex": {
+                        "label": "Losowy Wir"
+                    },
+                    "range.value": {
+                        "label": "Zasięg"
+                    },
+                    "duration.value": {
+                        "label": "Czas trwania"
+                    },
+                    "duration.extendable": {
+                        "label": "Przedłużenie czasu trwania",
+                        "hint": "Kiedy zaklęcie się skończy, możesz wykonać Test Siły Woli, aby przedłużyć czas trwania o +1 rundę."
+                    },
+                    "magicMissile.value": {
+                        "label": "Magiczny Pocisk"
+                    },
+                    "target": {
+                        "value": {
+                            "label": "Cel"
+                        },
+                        "aoe": {
+                            "label": "Działanie Obszarowe"
+                        }
+                    },
+                    "damage": {
+                        "value": {
+                            "label": "Wzór"
+                        },
+                        "dice": {
+                            "label": "Kość",
+                            "hint": "Dodaj rzut kośćmi do obrażeń"
+                        }
+                    },
+                    "overcast": {
+                        "enabled": {
+                            "label": "Inne Opcje Nadrzucania"
+                        }
+                    },
+                    "wind.value": {
+                        "label": "Umiejętność Splatania"
+                    }
+                }
+            },
+            "trait": {
+                "FIELDS": {
+                    "category": {
+                        "label": "Kategoria"
+                    },
+                    "rollable": {
+                        "value": {
+                            "label": "Można rzucić"
+                        },
+                        "damage": {
+                            "label": "Zadaje Obrażenia"
+                        },
+                        "skill": {
+                            "label": "Umiejętność"
+                        },
+                        "rollCharacteristic": {
+                            "label": "Rzut na Cechę"
+                        },
+                        "bonusCharacteristic": {
+                            "label": "Bonus z Cechy"
+                        },
+                        "dice": {
+                            "label": "Rzut Kośćmi"
+                        },
+                        "defaultDifficulty": {
+                            "label": "Trudność"
+                        },
+                        "SL": {
+                            "label": "Dodaj PS"
+                        },
+                        "attackType": {
+                            "label": "Typ Ataku"
+                        }
+                    },
+                    "specification.value": {
+                        "label": "Specyfikacja"
+                    }
+                }
+            },
+            "trapping": {
+                "FIELDS": {
+                    "trappingType.value": {
+                        "label": "Typ Wyposażenia"
+                    }
+                }
+            },
+            "vehicleMod": {
+                "FIELDS": {
+                    "modType.value": {
+                        "label": "Typ Modyfikacji"
+                    }
+                }
+            },
+            "vehicleRole": {
+                "FIELDS": {
+                    "test": {
+                        "label": "Test Umiejętności"
+                    }
+                }
+            },
+            "vehicleTest": {
+                "FIELDS": {
+                    "roles": {
+                        "value": {
+                            "label": "Role"
+                        },
+                        "vital": {
+                            "label": "Kluczowe role"
+                        }
+                    },
+                    "handling": {
+                        "label": "Obsługa Pojazdu"
+                    }
+                }
+            },
+            "weapon": {
+                "FIELDS": {
+                    "weaponGroup.value": {
+                        "label": "Grupa Broni"
+                    },
+                    "skill.value": {
+                        "label": "Umiejętność"
+                    },
+                    "modeOverride.value": {
+                        "label": "Typ Ataku"
+                    },
+                    "damage": {
+                        "value": {
+                            "label": "Wzór"
+                        },
+                        "dice": {
+                            "label": "Kość",
+                            "hint": "Dodaj rzut kośćmi do obrażeń"
+                        }
+                    },
+                    "reach": {
+                        "value": {
+                            "label": "Zasięg"
+                        }
+                    },
+                    "range": {
+                        "value": {
+                            "label": "Zasięg"
+                        }
+                    },
+                    "ammunitionGroup": {
+                        "value": {
+                            "label": "Grupa Amunicji"
+                        }
+                    },
+                    "consumesAmmo": {
+                        "value": {
+                            "label": "Zużywa amunicję"
+                        }
+                    },
+                    "twohanded": {
+                        "value": {
+                            "label": "Dwuręczna"
+                        }
+                    },
+                    "special": {
+                        "value": {
+                            "label": "Specialny"
+                        }
+                    }
+                }
+            }
+        },
+        "Components": {
+            "Locational": {
+                "FIELDS": {
+                    "prompt": {
+                        "label": "Wybierz Lokację",
+                        "hint": "Wyświetl zapytanie o lokalizację po dodaniu do aktora."
+                    },
+                    "location.value": {
+                        "label": "Lokacja"
+                    }
+                }
+            }
+        },
+        "DiffEditor": "Edytor różnicowy",
+        "Configuration": "Konfiguracja",
+        "Effects": "Efekty",
+        "Target": "Cel",
+        "TemplateCustomization": "Dostosowywanie Wzorników",
+        "Choice": {
+            "Options": "Opcje",
+            "Option": "Opcja",
+            "Structure": "Struktura",
+            "Choices": "Wybór",
+            "AND": "I",
+            "OR": "LUB",
+            "Config": "Konfiguracja wyboru",
+            "CreateOption": "Stwórz Opcję",
+            "Placeholder": "Symbol zastępczy",
+            "Filter": "Filtr",
+            "FilterPath": "Ścieżka",
+            "FilterOperation": "Operacja",
+            "FilterValue": "Wartość",
+            "CreateOptionDetails": "<p>Jaką opcję?</p><p><strong>Symbol zastępczy</strong>: Przedmiot, z którym oprócz nazwy nie są powiązane żadne dane, zostanie utworzony jako element typu wyposażenia</p><p><strong>Filtruj</strong>: Zdefiniuj filtry, aby zapewnić wybór przedmiotów</p>"
+        },
+        "Dialog.EnterValue": "Wprowadź wartość",
+        "Dialog.SelectValue": "Wybierz wartość",
+        "Dialog.ValueDialog": "Okno dialogowe",
+        "ZoneConfig": "Konfiguracja strefy",
+        "ZoneEffects": "Zastosowane efekty stref",
+        "Warning": {
+            "RenderAuraChange": "Aby odzwierciedlić zmianę w wyświetlaniu Aury , wyłącz i ponownie włącz efekt źródłowy lub zastąp istniejący Token w Scenie."
+        },
+        "Error": {
+            "NotValidChoiceType": "Niewłaściwy wybór",
+            "CreateZoneEffect": "Efekty muszą być tworzone za pomocą aktywnego efektu z typem transferu \"Strefa\"",
+            "MismatchedItemType": "Niezgodny typ przedmiotu",
+            "LibraryOutaded": "Biblioteka Warhammera jest nieaktualna. {system} definiuje minimalną wersję biblioteki wersji na {minimum}."
+        },
+        "SubmitChoices": "Zapisz wybór",
+        "DiffDescription": "&quot;Różnica&quot; reprezentuje zmiany, które powinny zostać wprowadzone w oryginalnym przedmiocie. Można to zrobić ręcznie lub wygenerować, przeciągając i upuszczając element tego samego typu."
     },
     "SkillsOr": "lub",
     "CHARGEN.Species.RandomTalents": "Losowe Talenty: {num}",
@@ -2115,5 +2644,15 @@
     "SHEET.ExperienceLog": "Dziennik doświadczenia",
     "SHEET.Encumbrance": "Obciążenie",
     "CHARGEN.Species.ExtraSpeciesOptions": "Dodatkowe opcje gatunków",
-    "EFFECT.CharacteristicsModifier": "Cechy (modyfikator)"
+    "EFFECT.CharacteristicsModifier": "Cechy (modyfikator)",
+    "SETTINGS.MooCritModifiersHint": "Gdy otrzymasz obrażenia powyżej 0 ran, dodaj lub odejmij 10 z tabeli trafień krytycznych za każdy punkt różnicy obrażeń od twojej premii do wytrzymałości.&lt;br&gt;&lt;br&gt;Np. Zostały mi 4 rany, 50 wytrzymałości. Otrzymuję 12 punktów obrażeń. To by poszło 8 po 0. Przy TB wynoszącym 5 skutkowałoby to +30 do wyrzuconej wartości krytycznej.&lt;br&gt;&lt;br&gt;Ex. Zostały mi 4 Rany, 50 Wytrzymałości, otrzymuję 5 Obrażeń. To oznaczałoby, że byłoby 1 po 0. Przy TB wynoszącym 5 skutkowałoby to -40 do walcowanego krytycznego.",
+    "Sheet.RollIncome": "Rzut na Dochód",
+    "SHEET.ItemSheetEditableDisabled": "Edytowanie tego przedmiotu zostało wyłączone w czasie, gdy znajdował się on pod wpływem {effects}. Wyłącz lub usuń te efekty dla aktora będącego właścicielem.",
+    "SHEET.LocationAP": "Lokacja Pancerza",
+    "MARKET.For": "dla",
+    "SHEET.Attacker": "Atakujący",
+    "DIALOG.LinkCareer": "Powiąż Profesje",
+    "DIALOG.LinkCareerContent": "Powiązać {new} z {old}? Spowoduje to dodanie umiejętności z {old} do {new}, zachowując wszystkie specjalizacje wybrane w poprzedniej profesji.",
+    "MARKET.PaidFor": "<b>Zakupiony produkt:</b> {product}",
+    "SHEET.Randomize": "Losowo"
 }

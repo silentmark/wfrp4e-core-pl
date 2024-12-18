@@ -157,21 +157,21 @@
                 },
                 "fdq3RFSOKl5b3WzW": {
                     "id": "fdq3RFSOKl5b3WzW",
-                    "name": "Sztuka (Dowolna)",
+                    "name": "Sztuka",
                     "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
                     "originalName": "Sztuka",
                     "sourceId": "Compendium.wfrp4e-core.actors.Actor.5wl3KH6hXsGwUcZa.Item.fdq3RFSOKl5b3WzW"
                 },
                 "0CwV96kTDRF0jUhk": {
                     "id": "0CwV96kTDRF0jUhk",
-                    "name": "Występy (Dowolne)",
+                    "name": "Występy",
                     "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Występy}</p>",
                     "originalName": "Występy",
                     "sourceId": "Compendium.wfrp4e-core.actors.Actor.5wl3KH6hXsGwUcZa.Item.0CwV96kTDRF0jUhk"
                 },
                 "F8NfBZdVSEIGCMtu": {
                     "id": "F8NfBZdVSEIGCMtu",
-                    "name": "Broń Biała (Podstawowa)",
+                    "name": "Broń Biała",
                     "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
                     "originalName": "Broń Biała",
                     "sourceId": "Compendium.wfrp4e-core.actors.Actor.5wl3KH6hXsGwUcZa.Item.F8NfBZdVSEIGCMtu"
@@ -368,21 +368,21 @@
                 },
                 "fdq3RFSOKl5b3WzW": {
                     "id": "fdq3RFSOKl5b3WzW",
-                    "name": "Sztuka (Dowolna)",
+                    "name": "Sztuka",
                     "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.tVSESlQWIl8QjK6y]{Sztuka}</p>",
                     "originalName": "Sztuka",
                     "sourceId": "Compendium.wfrp4e-core.actors.Actor.7ihBjcHcewZ2Obul.Item.fdq3RFSOKl5b3WzW"
                 },
                 "0CwV96kTDRF0jUhk": {
                     "id": "0CwV96kTDRF0jUhk",
-                    "name": "Występy (Dowolne)",
+                    "name": "Występy",
                     "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.hrCbYa4b2iKPgBui]{Występy}</p>",
                     "originalName": "Występy",
                     "sourceId": "Compendium.wfrp4e-core.actors.Actor.7ihBjcHcewZ2Obul.Item.0CwV96kTDRF0jUhk"
                 },
                 "F8NfBZdVSEIGCMtu": {
                     "id": "F8NfBZdVSEIGCMtu",
-                    "name": "Broń Biała (Podstawowa)",
+                    "name": "Broń Biała",
                     "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
                     "originalName": "Broń Biała",
                     "sourceId": "Compendium.wfrp4e-core.actors.Actor.7ihBjcHcewZ2Obul.Item.F8NfBZdVSEIGCMtu"
@@ -1106,7 +1106,7 @@
         "Dieter Käsegeier": {
             "id": "ePPk15Vxu9RxPtYV",
             "name": "Dieter Käsegeier",
-            "description": " <p>Większość klientów ma Dietera za świetnego wytwórcę nabiału, ale on sam widzi się w roli wizjonera. Jego ojciec i dziad (i dalej przynajmniej siedem pokoleń wstecz) tworzyli i sprzedawali sery. Nie były one jednak niczym niezwykłym. Dieter nie zamierzał poprzestać na ledwie poprawnych wyrobach. Zaczął eksperymentować z rozmaitymi sposobami przygotowania i niezwykłymi składnikami. Wiele z tych ostatnich zdobywał sam, podczas pełnych przygód „wakacji”. Kolejne jego próby i badania w końcu zaowocowały wielkim sukcesem.</p> <p>Kto pozna Dietera, ten szybko zorientuje się, że nie jest spokojnym serowarem. O nie. Jego fach to dla niego prawdziwa obsesja. Rzadko mówi o czymkolwiek innym. W rozmowy lubi wtrącać wiele anegdotek, ale każda z nich nieuchronnie prowadzi do sera. Jego wyroby pełne są nietypowych składników, od ziołowych przypraw po jasne i ciemne piwa. Co niepokojące, kończą mu się konwencjonalne dodatki, z którymi mógłby eksperymentować. To jasne, że będzie szukał kolejnych. Popiół, mielone owady, zwierzęca krew, starta kora, goblińskie gile, ekskrementy, niewielkie dawki trucizny… „<em>Ten ser daje kopa!</em>”.</p> <h4>Skąd się wzięły dziury w serze?</h4> <p>Dieter potrzebuje wynająć kilku zdolnych śmiałków, żeby pomogli mu zyskać pewien szczególny rzadki gatunek grzyba, który rośnie tylko głęboko w @UUID[JournalEntry.ozE2DMCMK64eE5pD.JournalEntryPage.UqeZNqbpV8uocCUN]{Reikwaldzie}. Płaci dobrze w srebrze i przepysznych serach. Jego sława ściągnęła niestety na wyprawę uwagę bandytów gotowych zabić go, by ukraść jego sekretne receptury. No i jest jeszcze kwestia plemienia @UUID[Compendium.wfrp4e-core.actors.zzdOpKqBC28J66Mn]{goblinów}, które z poświęceniem godnym lepszej sprawy będzie broniło „swoich” grzybów.</p> <p>W okolicy zaczęli znikać oraz spontanicznie mutować klienci sklepu Dietera. Czy serowar do cna oszalał i zaczął szukać naprawdę takich zakazanych składników jak dziwnokamień, czy też to tylko spisek jego rywali?</p> ",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-core.actors.ePPk15Vxu9RxPtYV",
             "gender": "Mężczyzna",
             "species": "Człowiek",
@@ -1134,9 +1134,9 @@
                 },
                 "xNekCAKmrxubmS21": {
                     "id": "xNekCAKmrxubmS21",
-                    "name": "Broń Biała (Podstawowa)",
+                    "name": "Broń Biała",
                     "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}",
-                    "originalName": "Broń Biała (Podstawowa)",
+                    "originalName": "Broń Biała",
                     "sourceId": "Compendium.wfrp4e-core.items.F8NfBZdVSEIGCMtu"
                 },
                 "4mxm3tcphtnS638r": {
@@ -1169,7 +1169,7 @@
                     "sourceId": "Compendium.wfrp4e-core.actors.oLc1S9aswJrhkReV"
                 }
             },
-            "gmnotes": "<p>Wielu jego klientów uważa go za niezrównanego serowara, ale Dieter woli myśleć o sobie jako o wizjonerze. Jego ojciec i ojciec jego ojca (i tak dalej przez co najmniej siedem pokoleń) byli zaangażowani w produkcję i sprzedaż serów, ale nie były one szczególnie godne uwagi. Dieter nie zadowalał się tworzeniem jedynie „przyzwoitych” serów i eksperymentował z różnymi metodami przygotowania oraz unikalnymi składnikami, z których wiele zdobywał sam podczas pełnych przygód wakacji. Jego nieustanne próby i ciągłe badania ostatecznie doprowadziły do wielkich sukcesów.</p><p>Ludzie, którzy poznają Dietera, szybko odkrywają, że nie jest on tak bardzo cierpliwym serowarem, co obsesyjnym. Dieter prawie o niczym innym nie mówi, a każda rozmowa pełna anegdot nieuchronnie wraca do tematu sera. Przez lata dodawał do swoich serów wiele nietypowych rzeczy, od wyrazistych przypraw po różne piwa i ale. Kończą mu się konwencjonalne nowe składniki do wypróbowania, więc postanowił szukać dalej, używając materiałów takich jak popiół, zmielone owady, krew zwierzęca, wióry kory, gobliński smark, ekskrementy i lekkie dawki trucizny — „<em>ten ser mrowi</em>!”.</p><h4>Gdzie Serce Tam i Serwatka</h4><p>Dieter chce zatrudnić kilka zdolnych osób, aby pomogły mu zdobyć osobliwy, rzadki gatunek grzyba z głębi @UUID[JournalEntry.ozE2DMCMK64eE5pD.JournalEntryPage.UqeZNqbpV8uocCUN]{Reikwaldu}, za co hojnie zapłaci w srebrze i naprawdę wyśmienitym serze. Niestety, jego szeroka sława przyciąga zbirów pragnących go zamordować i ukraść jego sekrety, nie wspominając o dość agresywnym plemieniu @UUID[Compendium.wfrp4e-core.actors.zzdOpKqBC28J66Mn]{Goblinów} które uważa te grzyby za swoje.</p><p>Różni ludzie zniknęli lub spontanicznie zmutowali, a wszyscy oni często odwiedzali sklep Dietera. Czy ekscentryczny serowar w końcu zwrócił się do Pradawnych po nową inspirację, używając sproszkowanego kamienia mocy w swojej najnowszej partii, czy też rywal go wrobił?</p>"
+            "gmnotes": "<p>Większość klientów ma Dietera za świetnego wytwórcę nabiału, ale on sam widzi się w roli wizjonera. Jego ojciec i dziad (i dalej przynajmniej siedem pokoleń wstecz) tworzyli i sprzedawali sery. Nie były one jednak niczym niezwykłym. Dieter nie zamierzał poprzestać na ledwie poprawnych wyrobach. Zaczął eksperymentować z rozmaitymi sposobami przygotowania i niezwykłymi składnikami. Wiele z tych ostatnich zdobywał sam, podczas pełnych przygód „wakacji”. Kolejne jego próby i badania w końcu zaowocowały wielkim sukcesem.</p> <p>Kto pozna Dietera, ten szybko zorientuje się, że nie jest spokojnym serowarem. O nie. Jego fach to dla niego prawdziwa obsesja. Rzadko mówi o czymkolwiek innym. W rozmowy lubi wtrącać wiele anegdotek, ale każda z nich nieuchronnie prowadzi do sera. Jego wyroby pełne są nietypowych składników, od ziołowych przypraw po jasne i ciemne piwa. Co niepokojące, kończą mu się konwencjonalne dodatki, z którymi mógłby eksperymentować. To jasne, że będzie szukał kolejnych. Popiół, mielone owady, zwierzęca krew, starta kora, goblińskie gile, ekskrementy, niewielkie dawki trucizny… „<em>Ten ser daje kopa!</em>”.</p> <h4>Skąd się wzięły dziury w serze?</h4> <p>Dieter potrzebuje wynająć kilku zdolnych śmiałków, żeby pomogli mu zyskać pewien szczególny rzadki gatunek grzyba, który rośnie tylko głęboko w @UUID[JournalEntry.ozE2DMCMK64eE5pD.JournalEntryPage.UqeZNqbpV8uocCUN]{Reikwaldzie}. Płaci dobrze w srebrze i przepysznych serach. Jego sława ściągnęła niestety na wyprawę uwagę bandytów gotowych zabić go, by ukraść jego sekretne receptury. No i jest jeszcze kwestia plemienia @UUID[Compendium.wfrp4e-core.actors.zzdOpKqBC28J66Mn]{goblinów}, które z poświęceniem godnym lepszej sprawy będzie broniło „swoich” grzybów.</p> <p>W okolicy zaczęli znikać oraz spontanicznie mutować klienci sklepu Dietera. Czy serowar do cna oszalał i zaczął szukać naprawdę takich zakazanych składników jak dziwnokamień, czy też to tylko spisek jego rywali?</p>"
         },
         "Clanrat": {
             "id": "F1vAZZcmVKkRw8xn",
@@ -1557,9 +1557,9 @@
                 },
                 "F8NfBZdVSEIGCMtu": {
                     "id": "F8NfBZdVSEIGCMtu",
-                    "name": "Broń Biała (Podstawowa)",
+                    "name": "Broń Biała",
                     "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
-                    "originalName": "Broń Biała (Podstawowa)",
+                    "originalName": "Broń Biała",
                     "sourceId": "Compendium.wfrp4e-core.actors.Actor.ImdVnI8mEiOmKriI.Item.F8NfBZdVSEIGCMtu"
                 },
                 "MeXCAQ3wqJzX07X7": {
@@ -2234,7 +2234,7 @@
         "Stellemar": {
             "id": "nRJxtciIhTHKqAvY",
             "name": "Stellemar",
-            "description": " <p>Plotka głosi, że Stellemar był kiedyś żołnierzem Imperium, który tak dawno temu, że nikt już tego nie pamięta, otrzymał ciężką ranę w głowę podczas bitwy. Mimo tego przeżył i koniec końców znalazł drogę do domu. Stellemar nie pamięta, jak to było, ale z drugiej strony on w ogóle niewiele pamięta z tamtych czasów. Jest pewien w zasadzie tylko jednego: że jest psem. Tak głęboko jest o tym przekonany, że nie dopuszcza do siebie żadnych dowodów, które wskazywałyby na coś innego. Jak sam zauważa, „psy wyglądają rozmaicie”, co według niego całkowicie zbija wszelkie argumenty na temat jego ludzkiej aparycji. Zapytany, czemu potrafi mówić, utrzymuje radośnie, że wiele sprytnych psów można nauczyć ludzkiej mowy.</p> <p>Miejscowi pogodzili się już dawno z szaleństwem Stellemara. Część współczuje staremu żołnierzowi, ale większość zrobiła to z pragmatyzmu. To się po prostu przydaje. Mężczyzna chętnie przenosi różne rzeczy w zamian za smakołyki („lubi aportować”), pilnuje stad („ma w sobie krew owczarka”) i chętnie oddaje węgiel drzewny, który wypala („naprawdę lubi aportować patyki”). Pieniądze w ogóle go nie obchodzą, za to lubi drapanie za uchem lub po brzuchu. Czasami tylko potrzebuje kilku monet, by na miejsce starego miecza, Kła, kupić nowy, który oczywiście też nazywa Kłem.</p> <h4>Jak rozmawiać trzeba z psem</h4> <p>Wielu traktuje Stellemara jako niewartego uwagi „starego wariata”, który lubi wyć do księżyca. Czasami tylko przewracają oczami albo kręcą głową z litością nad jego dziwactwami. To jednak błąd. Stellemar jest szczęśliwy, a jego pewność siebie i zadowolenie sprawiają, że jest w nim coś szlachetnego. Mimo całego szaleństwa jest lojalny i szczery. Nie zna strachu, kiedy ma bronić tych, których kocha. Jeżeli Bohaterowie będą go dobrze traktować, Stellemar może pewnego dnia stanąć u ich boku, gdy wszyscy inni uciekną w popłochu.</p> <p>W świetle pełni księżyca dokonano straszliwej zbrodni. Ofiara została rozszarpana „jakby przez dziką bestię”. Podejrzenie pada więc na Stellmara. Znika on każdej nocy, kiedy Mannslieb jest w pełni. W związku z tym zostaje oskarżony o likantropię. Czy Bohaterowie pomogą „staremu kundlowi” oczyścić się z zarzutów i znajdą prawdziwego zbrodniarza, który faktycznie może być bardziej wilkiem niż człowiekiem?</p> ",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-core.actors.nRJxtciIhTHKqAvY",
             "gender": "Mężczyzna",
             "species": "Człowiek",
@@ -2255,7 +2255,7 @@
                 },
                 "umdo4AdnAmTKhuMc": {
                     "id": "umdo4AdnAmTKhuMc",
-                    "name": "Broń Biała (Podstawowa)",
+                    "name": "Broń Biała",
                     "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
                     "originalName": "Broń Biała",
                     "sourceId": "Compendium.wfrp4e-core.actors.Actor.nRJxtciIhTHKqAvY.Item.umdo4AdnAmTKhuMc"
@@ -2296,7 +2296,7 @@
                     }
                 }
             },
-            "gmnotes": "<p>Według lokalnych plotek, Stellemar był kiedyś żołnierzem, który dawno temu doznał ogromnego urazu głowy podczas bitwy, walcząc dla Imperium. Pomimo straszliwej rany, jakimś cudem udało mu się przeżyć i w końcu znaleźć drogę do domu. Stellemar nie pamięta jak, ale zresztą ostatnio wielu rzeczy nie pamięta. Jest jednak pewien jednej niezaprzeczalnej prawdy: jest psem. Stellemar jest absolutnie przekonany, że jest ogarem i żadne dowody przeciwne nie mogą go przekonać inaczej. Mówi, że „nie wszystkie psy wyglądają tak samo”, gdy pytają go o jego wygląd. Zapytany, dlaczego potrafi mówić, wesoło zauważa, że wiele mądrych psów można nauczyć mówić.</p>\n<p>Ludzie zaakceptowali złudzenie Stellemara, częściowo z litości dla starego żołnierza, ale głównie dlatego, że okazało się to użyteczne. Wykonuje zadania za smakołyki (lubi aportować rzeczy), nie ma nic przeciwko pilnowaniu stad (lubi strzec owiec) i rozdaje za darmo węgiel drzewny, który wypala (naprawdę lubi zbierać patyki). Pieniądze nie interesują go zbytnio, ale „dobre jedzenie” owszem. Tylko od czasu do czasu potrzebuje monety, by zastąpić swój miecz, Kieł, nowym ostrzem, które natychmiast nazywa Kieł.</p>\n<h4>Każdy Pies Ma Swój Dzień</h4>\n<p>Wielu odrzuca Stellemara jako „szalonego starca”, który lubi wyć do księżyca i nie zwraca na niego uwagi, poza okazjonalnym przewróceniem oczami lub pełnym litości pokręceniem głową — błąd w osądzie. Stellemar jest zadowolony ze swojego losu, a jego przekonanie nadaje mu wielką i dziwną szlachetność. Pomimo wyglądu, jest ogarem lojalnym i prawdziwym — nie ma w nim strachu, gdy chroni tych, których kocha. Jeśli Bohaterowie traktują go dobrze, Stellemar może pewnego dnia stanąć u ich boku, gdy wszyscy inni uciekną w przerażeniu..</p>\n<p>Brutalne morderstwo pod pełnią księżyca, w którym ofiara została rozszarpana „jakby przez bestię”, sprawia, że Stellemar pada pod podejrzenie. Ponieważ nigdy nie można go znaleźć w noce, gdy Mannslieb jest w pełni, wkrótce zostaje oskarżony o likantropię. Czy Bohaterowie pomogą staremu ogarowi wyjść z opresji, odnajdując prawdziwego winowajcę, który może być rzeczywiście bardziej wilkiem niż człowiekiem?</p>\n<p>&nbsp;</p>"
+            "gmnotes": "<p>Plotka głosi, że Stellemar był kiedyś żołnierzem Imperium, który tak dawno temu, że nikt już tego nie pamięta, otrzymał ciężką ranę w głowę podczas bitwy. Mimo tego przeżył i koniec końców znalazł drogę do domu. Stellemar nie pamięta, jak to było, ale z drugiej strony on w ogóle niewiele pamięta z tamtych czasów. Jest pewien w zasadzie tylko jednego: że jest psem. Tak głęboko jest o tym przekonany, że nie dopuszcza do siebie żadnych dowodów, które wskazywałyby na coś innego. Jak sam zauważa, „psy wyglądają rozmaicie”, co według niego całkowicie zbija wszelkie argumenty na temat jego ludzkiej aparycji. Zapytany, czemu potrafi mówić, utrzymuje radośnie, że wiele sprytnych psów można nauczyć ludzkiej mowy.</p> <p>Miejscowi pogodzili się już dawno z szaleństwem Stellemara. Część współczuje staremu żołnierzowi, ale większość zrobiła to z pragmatyzmu. To się po prostu przydaje. Mężczyzna chętnie przenosi różne rzeczy w zamian za smakołyki („lubi aportować”), pilnuje stad („ma w sobie krew owczarka”) i chętnie oddaje węgiel drzewny, który wypala („naprawdę lubi aportować patyki”). Pieniądze w ogóle go nie obchodzą, za to lubi drapanie za uchem lub po brzuchu. Czasami tylko potrzebuje kilku monet, by na miejsce starego miecza, Kła, kupić nowy, który oczywiście też nazywa Kłem.</p> <h4>Jak rozmawiać trzeba z psem</h4> <p>Wielu traktuje Stellemara jako niewartego uwagi „starego wariata”, który lubi wyć do księżyca. Czasami tylko przewracają oczami albo kręcą głową z litością nad jego dziwactwami. To jednak błąd. Stellemar jest szczęśliwy, a jego pewność siebie i zadowolenie sprawiają, że jest w nim coś szlachetnego. Mimo całego szaleństwa jest lojalny i szczery. Nie zna strachu, kiedy ma bronić tych, których kocha. Jeżeli Bohaterowie będą go dobrze traktować, Stellemar może pewnego dnia stanąć u ich boku, gdy wszyscy inni uciekną w popłochu.</p> <p>W świetle pełni księżyca dokonano straszliwej zbrodni. Ofiara została rozszarpana „jakby przez dziką bestię”. Podejrzenie pada więc na Stellmara. Znika on każdej nocy, kiedy Mannslieb jest w pełni. W związku z tym zostaje oskarżony o likantropię. Czy Bohaterowie pomogą „staremu kundlowi” oczyścić się z zarzutów i znajdą prawdziwego zbrodniarza, który faktycznie może być bardziej wilkiem niż człowiekiem?</p>\n<p>&nbsp;</p>"
         },
         "Giant Rat": {
             "id": "oenbbB0PitRWUBfZ",
@@ -2400,7 +2400,7 @@
                 },
                 "F8NfBZdVSEIGCMtu": {
                     "id": "F8NfBZdVSEIGCMtu",
-                    "name": "Broń Biała (Podstawowa)",
+                    "name": "Broń Biała",
                     "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
                     "originalName": "Broń Biała",
                     "sourceId": "Compendium.wfrp4e-core.actors.Actor.QutqbzpxKqsjQ6yN.Item.F8NfBZdVSEIGCMtu"
@@ -2658,7 +2658,7 @@
                 },
                 "F8NfBZdVSEIGCMtu": {
                     "id": "F8NfBZdVSEIGCMtu",
-                    "name": "Broń Biała (Podstawowa)",
+                    "name": "Broń Biała",
                     "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
                     "originalName": "Broń Biała",
                     "sourceId": "Compendium.wfrp4e-core.actors.Actor.r70e6JNM3MjWIb7N.Item.F8NfBZdVSEIGCMtu"
@@ -2796,7 +2796,7 @@
         "Kastor Erichson": {
             "id": "Rs3lMA5UavTlTiJW",
             "name": "Kastor Erichson",
-            "description": " <p>@UUID[JournalEntry.ozE2DMCMK64eE5pD.JournalEntryPage.UqeZNqbpV8uocCUN]{Reikwald} jest mrocznym i niebezpiecznym lasem. Niewielu odważa się wędrować w cieniu koron drzew. Ci, którzy to robią, mają zwykle nerwy jak postronki albo są całkowicie pozbawieni wyobraźni. Fantazjowanie jest groźne, bo zaludnia ciemne zakątki puszczy niezliczonymi straszydłami. Kastor jest nieszczęśliwie obdarzony aż nazbyt bogatą wyobraźnią. Zwykł więc uciszać swój lęk, szepcząc modlitwy do Taala. Kiedy mimo to odwaga nieuchronnie go zawodzi, wspomaga się zawartością skórzanej piersiówki.</p> <p>Chociaż las kryje wiele prawdziwych oraz wyimaginowanych niebezpieczeństw, Kastor i tak woli go od spędzania czasu z ludźmi. Widzi to następująco: wrogów czyhających w lesie zna. Są to bandyci, zwierzoludzie i „demoniszcza”. W mieście z kolei są dużo bardziej podstępne zagrożenia, mianowicie czarownice. Kastor po pijaku chętnie opowiada wszystkim o tym, że te są wszędzie. Tylko nieliczne czarownice wyglądają jak czarownice – i na tym polega problem. Kryją się te bezecne stworzenia między dobrymi, pobożnymi ludźmi i w ten sposób ukrywają swoje plugawe knowania. W mieście cały czas trzeba wypatrywać czarownic, a to jest straszliwie męczące. Erichson uważa więc, że lepiej siedzieć w lesie, bo tam wrogowie są znani i widoczni. Stąd też jest naprawdę świetnym myśliwym i zabójczym strzelcem.</p> <h4>Ktoś wiecznie obserwuje</h4> <p>Kiedy pewnego dnia Bohaterowie wezmą udział w wydarzeniu z udziałem magii, Erichson nabierze przekonania, że ktoś z drużyny (a może i wszyscy) to sojusznik „ukrytych czarownic”. Będzie tak nawet wtedy, a może nawet szczególnie wtedy, kiedy jest między nimi czarodziej z Kolegiów. Chociaż Kastor wydaje się tylko myśliwym, któremu brakuje piątej klepki, może narobić grupie kłopotów. Jego ciągłe ględzenie o „prawdziwych zagrożeniach” świata ma swoich sympatyków. Jeżeli Bohaterowie zrobią cokolwiek podejrzanego, opowieści Erichsona mogą ściągnąć im na głowy nieprzychylne zainteresowanie, między innymi ze strony pozbawionych poczucia humoru łowców czarownic.</p> <p>Po okolicy rozniosła się pogłoska, że Kastor przeżył starcie z przerażającym @UUID[Compendium.wfrp4e-core.actors.cHVOdcEkuatqjYV1]{szamanem rykowców}. Podobno magia bestii „odbiła się” od myśliwego. Erichson wierzy w ogromne ilości rozmaitych dziwacznych przesądów i nosi masę dziwnych amuletów, wliczając w to małe skórzane bukłaczki wypełnione mieszaninami żywicy, rzadkich jagód i ziół, błogosławionymi przez kapłana Taala. Czyżby któraś z jego ekscentrycznych praktyk naprawdę zadziałała? Co trzeba by było zrobić, żeby podzielił się on swoim sekretem z Bohaterami?</p> ",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-core.actors.Rs3lMA5UavTlTiJW",
             "gender": "Mężczyzna",
             "species": "Człowiek",
@@ -2832,7 +2832,7 @@
                 },
                 "DDsC8MrjJXqbJgzW": {
                     "id": "DDsC8MrjJXqbJgzW",
-                    "name": "Broń Biała (Podstawowa)",
+                    "name": "Broń Biała",
                     "description": "<p>@UUID[Compendium.wfrp4e-core.journals.6zOdTLv3YeYeJ4hR.JournalEntryPage.mk4p8y3RetTuMe2f]{Broń Biała}</p>",
                     "originalName": "Broń Biała",
                     "sourceId": "Compendium.wfrp4e-core.items.F8NfBZdVSEIGCMtu"
@@ -2852,7 +2852,7 @@
                     "sourceId": "Compendium.wfrp4e-core.items.McTtmZu3Ac8Lh48W"
                 }
             },
-            "gmnotes": "<p>Ciemne i niebezpieczne są ścieżki Lasu @UUID[JournalEntry.ozE2DMCMK64eE5pD.JournalEntryPage.UqeZNqbpV8uocCUN]{Reiklandu}. Niewielu swobodnie wyrusza pod sklepienie tego lasu, a ci, którzy to robią, mają często żelazną wolę lub kompletny i totalny brak wyobraźni. Wyobraźnia jest niebezpieczna, gdyż prowadzi do zaludniania głębokich miejsc lasu straszydłami i niezliczonymi horrorami. Niestety dla Kastora, jest on duszą o dużej wyobraźni. Erichson uspokaja swoje liczne lęki gorliwie szeptanymi modlitwami do Taala, a gdy nerwy zaczynają brać nad nim górę, szuka odwagi w skórzanej piersiówce.</p><p>Pomimo wielu niebezpieczeństw lasu, zarówno rzeczywistych, jak i wyimaginowanych, Kastor często woli to od spędzania zbyt dużej ilości czasu wśród innych ludzi. W umyśle Erichsona jego „wrogowie” w lesie są dość klarowni: bandyci, Zwierzoludzie i „demony”. W mieście staje w obliczu znacznie bardziej podstępnego wroga: czarownic. Czarownice, jak Kastor chętnie opowie innym po pijanemu, są wszędzie. Niewiele czarownic chodzi jednak „wyglądając” jak czarownice, i to jest prawdziwy problem.</p><p>Ukrywają się wśród zwykłych, bogobojnych ludzi, aby lepiej wykonywać swoje tajemne zło. Wypatrywanie czarownic w mieście jest wyczerpujące, Erichson uważa, że znacznie lepiej jest pozostać w lesie, gdzie wrogowie są klarowni. Jego przekonania skłoniły go do doskonalenia swojego rzemiosła i jest absolutnie zabójczym strzelcem.</p><h4>Czujne Oczy</h4><p>Po wydarzeniu z udziałem Bohaterów, w którym użyto jakiejkolwiek magii, Erichson nabiera przekonania, że jeden lub więcej z Bohaterów jest sprzymierzeńcem „ukrytych czarownic”, nawet (szczególnie!) jeśli jednym z nich jest Cesarski Czarodziej. Chociaż może wydawać się jedynie szalonym myśliwym, jego intensywne przemowy o „prawdziwych niebezpieczeństwach” świata mają swoich zwolenników, a jeśli Bohaterowie zrobili cokolwiek podejrzanego, może bardzo dobrze przekonać innych do wysłuchania jego tyrad, zwłaszcza tych z nietolerancyjnego odłamu Łowców Czarownic.</p><p>Rozchodzi się wieść, że Kastor zdołał przeżyć w walce z okropnym @UUID[Compendium.wfrp4e-core.actors.cHVOdcEkuatqjYV1]{Szamanem Rykowców} ze Zwierzoludzi, ponieważ zaklęcia stwora „odbiły się” od niego. Erichson trzyma się wielu dziwnych przesądów i nosi wiele dziwnych amuletów, w tym małe skórzane woreczki zawierające mieszanki żywicy sosnowej, rzadkich jagód i ziół, pobłogosławione przez kapłana Taala. Czy któraś z jego dziwnych praktyk może faktycznie działać i co by to wymagało, aby przekonać go do podzielenia się swoją wiedzą z Bohaterami?</p>"
+            "gmnotes": "<p>@UUID[JournalEntry.ozE2DMCMK64eE5pD.JournalEntryPage.UqeZNqbpV8uocCUN]{Reikwald} jest mrocznym i niebezpiecznym lasem. Niewielu odważa się wędrować w cieniu koron drzew. Ci, którzy to robią, mają zwykle nerwy jak postronki albo są całkowicie pozbawieni wyobraźni. Fantazjowanie jest groźne, bo zaludnia ciemne zakątki puszczy niezliczonymi straszydłami. Kastor jest nieszczęśliwie obdarzony aż nazbyt bogatą wyobraźnią. Zwykł więc uciszać swój lęk, szepcząc modlitwy do Taala. Kiedy mimo to odwaga nieuchronnie go zawodzi, wspomaga się zawartością skórzanej piersiówki.</p> <p>Chociaż las kryje wiele prawdziwych oraz wyimaginowanych niebezpieczeństw, Kastor i tak woli go od spędzania czasu z ludźmi. Widzi to następująco: wrogów czyhających w lesie zna. Są to bandyci, zwierzoludzie i „demoniszcza”. W mieście z kolei są dużo bardziej podstępne zagrożenia, mianowicie czarownice. Kastor po pijaku chętnie opowiada wszystkim o tym, że te są wszędzie. Tylko nieliczne czarownice wyglądają jak czarownice – i na tym polega problem. Kryją się te bezecne stworzenia między dobrymi, pobożnymi ludźmi i w ten sposób ukrywają swoje plugawe knowania. W mieście cały czas trzeba wypatrywać czarownic, a to jest straszliwie męczące. Erichson uważa więc, że lepiej siedzieć w lesie, bo tam wrogowie są znani i widoczni. Stąd też jest naprawdę świetnym myśliwym i zabójczym strzelcem.</p> <h4>Ktoś wiecznie obserwuje</h4> <p>Kiedy pewnego dnia Bohaterowie wezmą udział w wydarzeniu z udziałem magii, Erichson nabierze przekonania, że ktoś z drużyny (a może i wszyscy) to sojusznik „ukrytych czarownic”. Będzie tak nawet wtedy, a może nawet szczególnie wtedy, kiedy jest między nimi czarodziej z Kolegiów. Chociaż Kastor wydaje się tylko myśliwym, któremu brakuje piątej klepki, może narobić grupie kłopotów. Jego ciągłe ględzenie o „prawdziwych zagrożeniach” świata ma swoich sympatyków. Jeżeli Bohaterowie zrobią cokolwiek podejrzanego, opowieści Erichsona mogą ściągnąć im na głowy nieprzychylne zainteresowanie, między innymi ze strony pozbawionych poczucia humoru łowców czarownic.</p> <p>Po okolicy rozniosła się pogłoska, że Kastor przeżył starcie z przerażającym @UUID[Compendium.wfrp4e-core.actors.cHVOdcEkuatqjYV1]{szamanem rykowców}. Podobno magia bestii „odbiła się” od myśliwego. Erichson wierzy w ogromne ilości rozmaitych dziwacznych przesądów i nosi masę dziwnych amuletów, wliczając w to małe skórzane bukłaczki wypełnione mieszaninami żywicy, rzadkich jagód i ziół, błogosławionymi przez kapłana Taala. Czyżby któraś z jego ekscentrycznych praktyk naprawdę zadziałała? Co trzeba by było zrobić, żeby podzielił się on swoim sekretem z Bohaterami?</p>"
         },
         "Fr'hough Mournbreath": {
             "id": "sbQ5mDvNZ7qQm8YY",

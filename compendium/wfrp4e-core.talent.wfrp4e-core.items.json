@@ -666,7 +666,7 @@
                         },
                         {
                             "id": "kcVhLDQic6XJTa97",
-                            "name": "Aktywuj Nieustraszonego",
+                            "name": "Aktywuj Nieustraszony",
                             "script": "[Script.rr4htuVq45onXdRG]"
                         }
                     ],
@@ -3093,7 +3093,7 @@
             "name": "Widzenie w Ciemności",
             "description": "<p>Bardzo dobrze widzisz w naturalnych ciemnościach. Jeśli masz źródło choćby słabego blasku (światło gwiazd, księżyca czy bioluminescencję), widzisz wyraźnie na 20 metrów na każde wykupienie tego Talentu. To nie koniec. Dla ciebie oświetlenie okolicy sięga dalej o 20 metrów na każde wykupienie tego Talentu.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.x0WMGwuQzReXcQrs",
-            "tests": "Percepcja przy słabym świetle",
+            "tests": "Testy percepcji przy słabym świetle",
             "effects": {
                 "dawFll5eB35uSev2": {
                     "scriptData": [
