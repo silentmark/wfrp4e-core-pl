@@ -1,4 +1,3 @@
-//*** Snajper
 let token = this.actor.getActiveTokens()[0];
 let target = args.data.targets[0];
 let weapon = args.weapon;

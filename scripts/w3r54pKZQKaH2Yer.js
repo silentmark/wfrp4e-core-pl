@@ -1,4 +1,3 @@
-//*** Straszny wygląd (Guślarstwo)
 let item = await fromUuid("Compendium.wfrp4e-core.items.Item.pTorrE0l3VybAbtn")
 let data = item.toObject();
 let slOver = this.effect.sourceTest.result.slOver;

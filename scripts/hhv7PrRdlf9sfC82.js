@@ -1,4 +1,3 @@
-//*** Weteran wielu przygód
 let characteristics = {
     "ws" : 5,
     "bs" : 0,
@@ -60,7 +59,7 @@ for (let trapping of trappings)
     {
         trappingItem = trappingItem.toObject()
 
-        equip(trappingItem)
+        trappingItem.system.equipped.value = true;
 
         items.push(trappingItem);
     }
@@ -73,13 +72,3 @@ for (let trapping of trappings)
 
 await this.actor.update(updateObj)
 this.actor.createEmbeddedDocuments("Item", items);
-
-function equip(item)
-{
-    if (item.type == "armour")
-        item.system.worn.value = true
-    else if (item.type == "weapon")
-        item.system.equipped = true
-    else if (item.type == "trapping" && item.system.trappingType.value == "clothingAccessories")
-        item.system.worn = true
-}

@@ -1,4 +1,3 @@
-//*** Lśniąca szata
 if (!args.ward)
 {
 	args.ward = (this.effect.getFlag("wfrp4e", "ward") || 0);

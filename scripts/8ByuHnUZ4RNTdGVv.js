@@ -12,5 +12,5 @@ if (!this.actor.has(game.i18n.localize("NAME.Undead")) && !this.actor.has(game.i
 
 }
 else {
-    this.script.scriptNotification(`<strong>${this.actor.name}</strong> jest odprony na: ${this.effect.name}`)
+    this.script.notification(`<strong>${this.actor.name}</strong> jest odprony na: ${this.effect.name}`)
 }

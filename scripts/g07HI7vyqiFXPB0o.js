@@ -5,7 +5,7 @@ await test.roll()
 if (test.failed) 
 {
     this.actor.addCondition("poisoned", 2)
-    this.script.scriptMessage(`<p><strong>${this.actor.prototypeToken.name}</strong> otrzymuje 2 Poziomy Stanu @Condition[Zatrucie].</p>
+    this.script.message(`<p><strong>${this.actor.prototypeToken.name}</strong> otrzymuje 2 Poziomy Stanu @Condition[Zatrucie].</p>
         <p>Każde stworzenie cechą Zwierzęcy, która ugryzie ofiarę i otrzyma obrażenia, nie ugryzie ponownie podczas trwającego starcia, chociaż stworzenie może nadal atakować na inne sposoby.</p>`, 
     {
       whisper: ChatMessage.getWhisperRecipients("GM"), 
@@ -24,6 +24,6 @@ else if (test.succeeded)
     this.actor.createEmbeddedDocuments("Item", [data], {fromEffect: this.effect.id})
     
     const duration = 3 + parseInt(test.result.SL)
-    this.script.scriptMessage(`<p><strong>${this.actor.prototypeToken.name}</strong> otrzymuje Kwasową Krew na liczbę rund: ${duration}.</p>`, 
+    this.script.message(`<p><strong>${this.actor.prototypeToken.name}</strong> otrzymuje Kwasową Krew na liczbę rund: ${duration}.</p>`, 
       { whisper: ChatMessage.getWhisperRecipients("GM"), blind: true })    
 }

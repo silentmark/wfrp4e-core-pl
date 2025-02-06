@@ -1,4 +1,3 @@
-//*** Pomocny
 if (args.test.options.useOnesSupportive && (args.test.result.roll <= game.settings.get("wfrp4e", "automaticSuccess") || args.test.result.roll <= args.test.target))
 {
 

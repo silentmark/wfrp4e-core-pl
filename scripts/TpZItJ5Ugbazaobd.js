@@ -1,4 +1,3 @@
-//*** Niejednolite opierzenie
 let locations = [];
 
 while (locations.length < 2)

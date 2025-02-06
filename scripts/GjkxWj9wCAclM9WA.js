@@ -4,7 +4,7 @@ effects.splice(effects.length - 1);
 
 if (effects.length == 0)
 {
-    return this.script.scriptNotification("Wszystkie efekty zostały zastosowane. Zresetuj, aby je ponownie wybrać")
+    return this.script.notification("Wszystkie efekty zostały zastosowane. Zresetuj, aby je ponownie wybrać")
 }
 let choice = await ItemDialog.create(effects, 1, "Wybierz moc, którą chcesz zastosować");
 

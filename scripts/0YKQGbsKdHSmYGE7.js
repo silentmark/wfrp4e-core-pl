@@ -1,4 +1,3 @@
-//*** Towarzyski
 if (args.skill?.name != game.i18n.localize("NAME.Gossip"))
 {
 	return true;

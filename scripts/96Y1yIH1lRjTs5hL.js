@@ -1,4 +1,3 @@
-//*** Chwiejne morale
 if (args.test.succeeded)
     return
 

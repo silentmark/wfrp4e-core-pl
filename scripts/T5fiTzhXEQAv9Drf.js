@@ -1,4 +1,3 @@
-//*** Zmiażdżony łokieć
 let item = await fromUuid("Compendium.wfrp4e-core.items.rlDZZTj5PXjuRXa2")
 let data = item.toObject();
 data.system.location.key = this.item.system.location.key;

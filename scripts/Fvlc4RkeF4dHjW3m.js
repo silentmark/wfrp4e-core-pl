@@ -1,4 +1,3 @@
-//*** Wypędzenie
 let caster = this.effect.sourceActor
 if (caster && (this.actor.has(game.i18n.localize("NAME.Undead")) || this.actor.has(game.i18n.localize("NAME.Daemonic")))) {
     let wp = caster.system.characteristics.wp.value

@@ -1,4 +1,3 @@
-//*** Reactionary Restorative
 if (this.actor.hasCondition("surprised"))
 {
     this.script.notification("Nie może zostać zaskoczony");

@@ -2,6 +2,6 @@ this.actor.setupSkill(game.i18n.localize("NAME.Cool"), {appendTitle: ` - ${this.
     await test.roll()
     if (test.failed) {
         this.actor.modifyWounds(-1);
-        this.script.scriptMessage("Otrzymano 1 Ranę")
+        this.script.message("Otrzymano 1 Ranę")
     }
 })

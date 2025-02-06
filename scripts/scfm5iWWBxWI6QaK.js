@@ -1,4 +1,3 @@
-//*** Skóra łowcy
 let darkvision = await fromUuid("Compendium.wfrp4e-core.items.Item.JQa5DLnTs2SEzRrc")
 let fear = await fromUuid("Compendium.wfrp4e-core.items.Item.pTorrE0l3VybAbtn")
 let acutesense = await fromUuid("Compendium.wfrp4e-core.items.Item.9h82z72XGo9tfgQS")

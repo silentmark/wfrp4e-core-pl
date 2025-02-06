@@ -1,4 +1,3 @@
-//*** Biczownik
 let currentCareer = this.actor.system.currentCareer;
 
 if (!currentCareer || currentCareer.system.talents.includes(game.i18n.localize("NAME.Frenzy")))

@@ -1,4 +1,3 @@
-//*** Clutch of Eyes
 let msg = ""
 
 let i_gain = (await new Roll("1d10").roll()).total

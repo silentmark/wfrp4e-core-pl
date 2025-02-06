@@ -1,16 +1,15 @@
-//*** Zniedołężniały
 let characteristics = {
-        "ws" : -10,
-        "bs" : -10,
-        "s" : -5,
-        "t" : -5,
-        "i" : -10,
-        "ag" : -10,
-        "dex" : -10,
-        "int" : 0,
-        "wp" : 0,
-        "fel" : 0
-    }
+    "ws" : -10,
+    "bs" : -10,
+    "s" : -5,
+    "t" : -5,
+    "i" : -10,
+    "ag" : -10,
+    "dex" : -10,
+    "int" : 0,
+    "wp" : 0,
+    "fel" : 0
+}
 let skills = []
 let skillAdvancements = []
 let talents = []
@@ -60,7 +59,7 @@ for (let trapping of trappings)
     {
         trappingItem = trappingItem.toObject()
 
-        equip(trappingItem)
+        trappingItem.system.equipped.value = true;
 
         items.push(trappingItem);
     }
@@ -73,13 +72,3 @@ for (let trapping of trappings)
 
 await this.actor.update(updateObj)
 this.actor.createEmbeddedDocuments("Item", items);
-
-function equip(item)
-{
-    if (item.type == "armour")
-        item.system.worn.value = true
-    else if (item.type == "weapon")
-        item.system.equipped = true
-    else if (item.type == "trapping" && item.system.trappingType.value == "clothingAccessories")
-        item.system.worn = true
-}

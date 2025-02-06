@@ -1,4 +1,3 @@
-//*** Idylla
 this.actor.characteristics.i.value = Math.min(this.actor.characteristics.i.value, 10);
 this.actor.characteristics.i.bonus = 1;
 

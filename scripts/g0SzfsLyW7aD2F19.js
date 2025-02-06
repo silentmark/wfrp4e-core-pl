@@ -1,11 +1,10 @@
-//*** Etiquette (Criminals) - Rudi Klumpenklug
 if (this.item.system.tests.value.includes("(Grupa Społeczna)"))
 {
     let tests = this.item.system.tests.value
     let name = this.item.name
 
     // If name already specifies, make sure tests value reflects that
-    if (name.includes("(") && !name.includes("(Grupa Społeczna)"))
+    if (name.includes("(") && !name.toLowerCase().includes("(grupa społeczna)"))
     {
         let group = name.split("(")[1].split(")")[0]
         tests = `${tests.split("(")[0].trim()} (${group})`

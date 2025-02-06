@@ -1,4 +1,3 @@
-//*** Dziwnokorzeń
 if (["t", "wp"].includes(args.characteristic))
 {
 	args.fields.modifier += 10;

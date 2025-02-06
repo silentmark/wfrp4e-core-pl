@@ -1,4 +1,3 @@
-//*** Czarownica!
 let skill = `Język (Magiczny)`;
 let currentCareer = this.actor.system.currentCareer;
 let existingSkill = this.actor.itemTypes.skill.find(i => i.name == skill);
@@ -7,7 +6,7 @@ if (!currentCareer) return
 
 
 let inCurrentCareer = currentCareer.system.skills.concat(currentCareer.system.addedSkills).includes(skill);
-let witchAdded = actor.getFlag("wfrp4e", "witchAdded") || {};
+let witchAdded = this.actor.getFlag("wfrp4e", "witchAdded") || {};
 if (existingSkill && inCurrentCareer && !witchAdded[existingSkill.name])
 {
 	existingSkill.system.advances.costModifier = -5;

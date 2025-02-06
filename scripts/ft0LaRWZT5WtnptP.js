@@ -1,4 +1,3 @@
-//*** Petryfikujące Spojrzenie
 let advantage = this.actor.system.status.advantage.value;
 if (advantage > 0)
 {

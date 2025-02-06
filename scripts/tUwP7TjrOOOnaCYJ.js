@@ -1,4 +1,3 @@
-//*** Eliksir żywotności
 let fatigued = this.actor.hasCondition("fatigued")
 if (fatigued)
 {

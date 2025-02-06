@@ -1,4 +1,3 @@
-//*** Trained - Półgryf Wierzchowiec
 if (!args.flags.trained)
 {
     args.flags.trained = true;

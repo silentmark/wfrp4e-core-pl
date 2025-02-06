@@ -1,4 +1,3 @@
-//*** On Deadly Ground
 if (this.actor.hasCondition("broken"))
 {
     this.actor.removeCondition("broken")

@@ -1,4 +1,3 @@
-//*** Klątwa porażającego bólu
 let choice = await ItemDialog.create(ItemDialog.objectToArray(game.wfrp4e.config.locations, this.effect.img), 1, "Wybierz Lokację");
 if (choice[0])
 {

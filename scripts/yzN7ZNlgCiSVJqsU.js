@@ -1,4 +1,3 @@
-//*** Rozkosz Ranalda
 let sourceItem = this.effect.sourceItem;
 
 if (sourceItem)

@@ -1,4 +1,3 @@
-//*** Posłaniec śmierci
 this.actor.addCondition("broken")
 
 if (this.actor.has(game.i18n.localize("NAME.Undead")))

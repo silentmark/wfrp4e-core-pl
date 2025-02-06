@@ -1,4 +1,3 @@
-//*** Żar serc
 let broken = this.actor.hasCondition("broken");
 let fatigued = this.actor.hasCondition("fatigued");
 await broken?.delete();

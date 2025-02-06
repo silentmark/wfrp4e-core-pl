@@ -1,4 +1,3 @@
-//*** Wyczulony Zmysł
 if (!this.item.name.includes("(") || this.item.system.tests.value.includes("(Zmysł)") || this.item.system.tests.value.toLowerCase().includes("dowolny"))
 {
     let tests = this.item.system.tests.value
@@ -18,7 +17,7 @@ if (!this.item.name.includes("(") || this.item.system.tests.value.includes("(Zmy
             smell : "Węch",
             hearing : "Słuch",
             touch : "Dotyk"
-        }, this.item.img), 1, "Wybierz Zmysł");
+        }, this.item.img), 1, {title : this.item.name, text : "Wybierz Zmysł"});
         if (choice[0])
         {
             name = `${name.split("(")[0].trim()} (${choice[0].name})`
@@ -26,5 +25,5 @@ if (!this.item.name.includes("(") || this.item.system.tests.value.includes("(Zmy
         }
     }
 
-    this.item.updateSource({name, "system.tests.value" : tests})
+        this.item.updateSource({name, "system.tests.value" : tests})
 }

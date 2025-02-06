@@ -1,1 +1,1 @@
-return args.skill?.name.includes("Splatanie Magii") || args.type == "channelling"
+return args.skill?.name.includes(game.i18n.localize("NAME.Channelling")) || args.type == "channelling"

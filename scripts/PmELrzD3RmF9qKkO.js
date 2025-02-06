@@ -1,4 +1,3 @@
-//*** Size - Półgryf Wierzchowiec
 if (this.item.system.specification.value == "Rozmiar")
 {
     let size = this.item.specifier;

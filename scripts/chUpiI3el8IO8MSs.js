@@ -1,4 +1,3 @@
-//*** Wampiryczny
 if (args.opposedTest.attackerTest.item?.name.includes("Ugryzienie"))
 {
     let woundsGained = args.totalWoundLoss;

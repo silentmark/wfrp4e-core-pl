@@ -1,4 +1,3 @@
-//*** Struga zepsucia
 if (args.totalWoundLoss > args.actor.characteristics.t.bonus)
 {
   args.actor.setupSkill(game.i18n.localize("NAME.Endurance")).then(async test => {

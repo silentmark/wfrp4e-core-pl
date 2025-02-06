@@ -1,4 +1,3 @@
-//*** Wytrwałość Eremity
     let stunned = args.actor.hasCondition("stunned")
     if (stunned)
     {

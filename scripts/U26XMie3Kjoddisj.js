@@ -1,4 +1,3 @@
-//*** Salwort
 let stunned = this.actor.hasCondition("stunned")
 if (stunned)
 {

@@ -1,4 +1,3 @@
-//*** Lampa sztormowa
 this.actor.getActiveTokens().forEach(t => t.document.update({light : {
       "dim": 20,
       "bright": 10,

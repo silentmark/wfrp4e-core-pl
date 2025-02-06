@@ -1,4 +1,3 @@
-//*** Leczenie
 if (args.test.options.healWounds) {
  if (args.test.succeeded) 
  {

@@ -6,5 +6,5 @@ await test.roll();
 if (test.failed)
 {
     this.actor.addCondition("prone")
-   this.script.scriptMessage(`<b>${this.actor.prototypeToken.name}</b>: upadek w odległości ${fallen} metrów`)
+   this.script.message(`<b>${this.actor.prototypeToken.name}</b>: upadek w odległości ${fallen} metrów`)
 }

@@ -1,4 +1,3 @@
-//*** Nieugięty
 if (args.test.result.charging)
 {
    args.test.result.damage += 1

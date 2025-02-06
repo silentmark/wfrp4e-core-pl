@@ -1,4 +1,3 @@
-//*** Ogłuszenie
 if (!args.flags.strikeToStun)
 {
     args.flags.strikeToStun = true

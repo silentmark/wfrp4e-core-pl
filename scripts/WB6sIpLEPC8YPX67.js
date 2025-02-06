@@ -1,4 +1,3 @@
-//*** Amputowana noga
 if (args.options.dodge)
 {
 	args.abort = true;

@@ -1,4 +1,3 @@
-//*** Dzika postać Wissana
 let item;
 let items = []
 item = await fromUuid("Compendium.wfrp4e-core.items.rOV2s6PQBBrhpMOv")

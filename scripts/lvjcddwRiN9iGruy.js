@@ -23,7 +23,7 @@ if (test.failed)
       <p>${inline.replace("@ROLL", ag).replace("@TT", "1d10")} <b>Zwinności</b></p>
       <p>${inline.replace("@ROLL", dex).replace("@TT", "1d10")} <b>Zręczności</b></p>
  `
-    this.script.scriptMessage(msg);
+    this.script.message(msg);
 
     let characteristics = foundry.utils.duplicate(this.actor.system.characteristics)
 

@@ -1,4 +1,3 @@
-//*** Corruption - Diebold Bedrohung
 if ([game.i18n.localize("CORRUPTION.Minor"), game.i18n.localize("CORRUPTION.Moderate"), game.i18n.localize("CORRUPTION.Major")].includes(this.item.system.specification.value))
 {
 	return

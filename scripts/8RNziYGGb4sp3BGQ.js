@@ -1,4 +1,3 @@
-//*** Drakefire Shot
 if (!args.test.weapon?.name.includes("Drakefire"))
 {
     args.test.result.misfire = game.i18n.localize("Misfire");

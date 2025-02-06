@@ -1,4 +1,3 @@
-//*** Zgruchotana szczęka
 brokenbone = await fromUuid("Compendium.wfrp4e-core.items.hCadFsTRvLN9faaY")
 teeth = await fromUuid("Compendium.wfrp4e-core.items.fBcZhOBn8IpoVqQ1")
 tongue = await fromUuid("Compendium.wfrp4e-core.items.rkJA1DlK51QuRlJy")

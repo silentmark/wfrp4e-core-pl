@@ -6,7 +6,7 @@ if (hasPainless === undefined)
   let data = item.toObject()
   this.actor.createEmbeddedDocuments("Item", [data], {fromEffect: this.effect.id})
   
-  this.script.scriptMessage(
+  this.script.message(
   `<p><strong>${this.actor.prototypeToken.name}</strong>: Otrzymano cechę stworzenia "Nie Czuje Bólu". Ten efekt trwa przez godzinę, po czym znika, a wszystkie powstrzymywane dotychczas efekty ran uderzają jednocześnie.</p>
     <p>Uwaga: ten efekt nie chroni przed otrzymaniem trafienia krytycznego lub śmierci. Po prostu pozwala zignorować część efektów wynikających z Ran Krytycznych.</p>`, 
     { whisper: ChatMessage.getWhisperRecipients("GM"), blind: true})

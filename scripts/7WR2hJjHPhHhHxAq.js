@@ -1,4 +1,3 @@
-//*** Zestaw na zatrucia
 let poisoned = args.actor.hasCondition("poisoned")
 if (poisoned)
 {

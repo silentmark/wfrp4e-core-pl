@@ -1,4 +1,3 @@
-//*** Nierówne rogi
 let item = await fromUuid("Compendium.wfrp4e-core.items.BqPZn6q3VHn9HUrW")
 item = item.toObject()
 item.name = this.effect.name

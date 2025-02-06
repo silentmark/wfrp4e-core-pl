@@ -1,4 +1,3 @@
-//*** Uśpienie
 if (this.actor.hasCondition("prone")) 
 {
     this.actor.addCondition("unconscious");

@@ -1,4 +1,3 @@
-//*** Magiczna broń (Demonologia)
 let skills = this.actor.itemTypes.skill.filter(i => i.name.includes(game.i18n.localize("NAME.Melee")))
 
 let skill = await ItemDialog.create(skills, 1, "Wybierz umiejętność wybranej broni");

@@ -1,4 +1,3 @@
-//*** Trzecie proroctwo Amul
 let current = this.actor.status.fate.value
 
 this.actor.update({"system.status.fate.value" : current + 1})

@@ -1,4 +1,4 @@
-let careers = await game.wfrp4e.utility.findAll("career", "", true);
+let careers = await warhammer.utility.findAllItems("career", "", true);
 careers.forEach(c => {
     if (!c.id)
     {
@@ -10,7 +10,7 @@ if (choice[0])
 {
     let career = await fromUuid(choice[0].uuid);
     let data = career.toObject();
-    setProperty(data, "flags.wfrp4e.doubleLife", true);
+    foundry.utils.setProperty(data, "flags.wfrp4e.doubleLife", true);
     this.actor.createEmbeddedDocuments("Item", [data], {fromEffect: this.effect.id})
     this.effect.updateSource({name : this.effect.name + ` (${data.name})`})
 }

@@ -1,4 +1,3 @@
-//*** Porąbana noga
 let item = await fromUuid("Compendium.wfrp4e-core.items.7mCcI3q7hgWcmbBU")
 let data = item.toObject();
 data.system.location.key= this.item.system.location.key

@@ -23,7 +23,7 @@ if (selected)
         if (SL >= 0)
         {
             selected.update({"system.duration.value" : selected.system.duration.value - SL})
-            this.script.scriptMessage(`<strong>${selected.name}</strong> czas trwania choroby zmniejszony o ${SL}!`)
+            this.script.message(`<strong>${selected.name}</strong> czas trwania choroby zmniejszony o ${SL}!`)
         }
     }
 }

@@ -1,4 +1,3 @@
-//*** Zniszczenie pomniejszego demona
 if (!this.actor.has(game.i18n.localize("NAME.Daemonic")))
     return
 

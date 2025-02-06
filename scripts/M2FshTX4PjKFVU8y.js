@@ -1,4 +1,3 @@
-//*** Amputowane ucho
 args.flags.earCount = Number.isNumeric(args.flags.earCount) ? args.flags.earCount+1 : 1;
 if (args.characteristic == "fel")
 {

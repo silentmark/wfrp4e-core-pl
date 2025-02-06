@@ -1,4 +1,3 @@
-//*** Miecz sprawiedliwości
     args.applyAP = false;
 
     this.script.notification("Ten test dotyczy tylko przestępców, w przeciwnym razie zamknij okno dialogowe.");

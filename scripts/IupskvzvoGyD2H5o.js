@@ -1,4 +1,3 @@
-//*** Błogosławieństwo (Boska Tradycja)
 if (this.actor.type != "character")
 {
     return;

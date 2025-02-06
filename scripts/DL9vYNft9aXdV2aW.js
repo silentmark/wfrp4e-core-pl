@@ -1,4 +1,3 @@
-//*** Kły i Pazury
 let tooth = await fromUuid("Compendium.wfrp4e-core.items.pLW9SVX0TVTYPiPv")
 tooth = tooth.toObject()
 tooth.system.specification.value = 3

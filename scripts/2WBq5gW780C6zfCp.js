@@ -1,4 +1,3 @@
-//*** Krwawiąca dłoń
 if (args.weapon && this.item.system.usesLocation(args.weapon))
 {
     args.bleedingHand = true;

@@ -1,4 +1,3 @@
-//*** Bite - Półgryf Wierzchowiec
 if (this.actor.system.status.advantage.value > 0)
 {
     await this.actor.modifyAdvantage(-1);

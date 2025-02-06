@@ -1,4 +1,3 @@
-//*** Katya's Cordial
 let sourceItem = this.effect.sourceItem;
 
 if (sourceItem)

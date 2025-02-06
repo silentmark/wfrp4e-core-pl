@@ -1,4 +1,3 @@
-//*** Wytwórca
 if (this.item.name.includes("("))
 {
 	let trade = this.item.parenthesesText;

@@ -1,4 +1,3 @@
-//*** Stłuczony obojczyk
 let location = (Math.ceil(CONFIG.Dice.randomUniform() * 2) == 2 ? "r" : "l") + "Arm"
 
 if (location == "lArm")

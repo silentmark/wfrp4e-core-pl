@@ -1,4 +1,3 @@
-//*** Massive Intellect
 let i_gain = (await new Roll("2d10").roll()).total
 let fel_gain = 0
 if (args.actor.characteristics.fel.value <= 0)

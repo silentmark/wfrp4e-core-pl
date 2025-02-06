@@ -1,4 +1,3 @@
-//*** Pepperbox
 if (this.item.system.isEquipped)
 {
     let removeRepeater = false

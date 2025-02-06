@@ -1,4 +1,3 @@
-//*** Dziwnokorzeń
 if (this.item.system.quantity.value)
 {
 	this.item.system.reduceQuantity();

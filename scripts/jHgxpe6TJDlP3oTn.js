@@ -1,4 +1,4 @@
-let spells = await game.wfrp4e.utility.findAll("spell", "Wyszkukuję zaklęcia...");
+let spells = await warhammer.utility.findAllItems("spell", "Wyszkukuję zaklęcia...");
 spells = spells.filter(s => ["slaanesh"].includes(s.system.lore.value))
 
 let choice = await ItemDialog.create(spells, 1, "Wybierz Zaklęcie");

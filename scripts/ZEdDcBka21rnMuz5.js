@@ -1,4 +1,3 @@
-//*** Bitewny Refleks
 let initiativeSetting = game.settings.get("wfrp4e", "initiativeRule")
 
 switch (initiativeSetting) {

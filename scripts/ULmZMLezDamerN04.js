@@ -1,7 +1,7 @@
-let spells = await game.wfrp4e.utility.findAll("spell", "Wczytywanie Zaklęć...")
+let spells = await warhammer.utility.findAllItems("spell", "Wczytywanie Zaklęć...")
 
 let lore = (await game.wfrp4e.tables.rollTable("random-caster", {hideDSN: true})).text
-this.script.scriptNotification(lore)
+this.script.notification(lore)
 if (lore == "Wybór Mistrza Gry") {
    return
 }

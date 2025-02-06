@@ -1,4 +1,3 @@
-//*** Odporny na (Zagrożenie)
 let resistance
 if (this.item.name.includes("(") && !this.item.name.toLowerCase().includes("(wybrane zagrożenie)"))
 {

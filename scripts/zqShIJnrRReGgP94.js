@@ -1,4 +1,3 @@
-//*** Kuźnia Chamonu
 let {added, removed} = this.effect.getFlag("wfrp4e", "propertiesChanged");
 
 for(let property of (added || []))

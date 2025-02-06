@@ -1,4 +1,3 @@
-//*** Leczenie
 if (args.test.options.staunchBleeding) 
 {
  if (args.test.succeeded) 

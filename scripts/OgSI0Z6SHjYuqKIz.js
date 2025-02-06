@@ -9,7 +9,7 @@ if (this.item.system.protects[args.opposedTest.result.hitloc.value])
         await test.roll();
         if (test.failed)
         {
-            this.script.scriptMessage(`${this.actor.name}: musi wydostać się z walki i uciekać, dopóki nie zda <strong>Wymagającego (+0) Testu Siły Woli</strong>`);
+            this.script.message(`${this.actor.name}: musi wydostać się z walki i uciekać, dopóki nie zda <strong>Wymagającego (+0) Testu Siły Woli</strong>`);
             this.item.setFlag("wfrp4e", "failedCool", true);
         }
     })

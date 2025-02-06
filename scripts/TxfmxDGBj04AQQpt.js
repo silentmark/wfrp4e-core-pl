@@ -1,4 +1,3 @@
-//*** Riposta
 let weapon = args.opposedTest.defenderTest.weapon
 if (
     !args.opposedTest.result.swapped && 

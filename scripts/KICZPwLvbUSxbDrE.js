@@ -1,4 +1,3 @@
-//*** Spaczenie Umysłu
 let table = game.wfrp4e.tables.findTable("mutatemental");
 if (!table)
 {

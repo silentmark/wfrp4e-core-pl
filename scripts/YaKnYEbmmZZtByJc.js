@@ -1,4 +1,3 @@
-//*** Ballock Knife
 if (args.opposedTest.attackerTest.options.ballockKnife)
 {
     args.weaponProperties.impale = true;

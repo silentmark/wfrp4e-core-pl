@@ -1,4 +1,3 @@
-//*** Amputowany palec u ręki
 if (!args.flags.lostFingers)
 {
 	args.flags.lostFingers = true;

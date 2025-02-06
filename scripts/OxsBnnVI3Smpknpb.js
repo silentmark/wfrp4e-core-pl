@@ -1,4 +1,3 @@
-//*** Zimowy chłód
 if (this.actor.status.advantage.value && !this.actor.sameSideAs(this.effect.sourceActor))
 {
     this.actor.modifyAdvantage(-1);

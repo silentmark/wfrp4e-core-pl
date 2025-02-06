@@ -1,4 +1,3 @@
-//*** Zdradliwość Tzeentcha
 if (args.item.type == "skill")
    args.item.system.advances.value = 0
 

@@ -7,9 +7,9 @@ let choice = await ItemDialog.create(ItemDialog.objectToArray({
     "servants" : "Słudzy"
 }), 1, "Wybierz grupę społeczną")
 
-let n = choice[0]?.name
+let name = choice[0]?.name
 
-if (!n)
+if (!name)
 {
     return;
 }
@@ -18,13 +18,13 @@ if (item)
 {
     item.update({
         name : item.name.split("(")[0] + ` (${n})`, 
-        "system.tests.value" : item.system.tests.value.split("(")[0] + ` (${n}`
+        "system.tests.value" : item.system.tests.value.split("(")[0] + ` (${name}`
     })
 }
 else 
 {
     item = await fromUuid("Compendium.wfrp4e-core.items.Item.sYbgpSnRqSZWgwFP");
     let data = item.toObject();
-    data.name += ` (${n})`
+    data.name += ` (${name})`
     this.actor.createEmbeddedDocuments("Item", [data], {fromEffect: this.effect.id})
 }

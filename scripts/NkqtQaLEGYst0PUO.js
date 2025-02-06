@@ -1,4 +1,3 @@
-//*** Talizman
 if (this.actor.has(game.i18n.localize("NAME.MagicResistanceTalent"), "talent")) 
     return
 

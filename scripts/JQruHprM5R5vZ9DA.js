@@ -1,4 +1,3 @@
-//*** Leczące światło
 let caster = this.effect.sourceActor;
 if (caster)
 {

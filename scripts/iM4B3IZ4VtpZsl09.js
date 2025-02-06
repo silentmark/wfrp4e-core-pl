@@ -1,2 +1,1 @@
-//*** Mały
 args.size = "sml"

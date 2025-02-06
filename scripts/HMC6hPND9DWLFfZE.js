@@ -1,4 +1,3 @@
-//*** Znawca (Wiedza)
 if (this.item.name.includes("("))
 {
 	return;
@@ -40,5 +39,5 @@ else
     text = game.wfrp4e.utility.extractParenthesesText(choice[0].name)
 }
 
-await this.item.updateSource({name : this.item.name + ` (${text})`, "system.tests.value" : this.item.system.tests.value.replace("chosen Lore", text)})
+await this.item.updateSource({name : this.item.name + ` (${text})`, "system.tests.value" : this.item.system.tests.value.replace("wybrana wiedza", text)})
 await this.effect.updateSource({name : this.effect.name + ` (${text})`})

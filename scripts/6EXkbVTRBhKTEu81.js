@@ -1,4 +1,3 @@
-//*** Amputowane oko
 if (!args.flags.bothEyes)
 {
 	args.flags.bothEyes = true;

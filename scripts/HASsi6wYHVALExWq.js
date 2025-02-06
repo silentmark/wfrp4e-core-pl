@@ -9,6 +9,6 @@ if (test.failed && args.actor.type == "character")
     {
         msg +=  `<b>${args.actor.prototypeToken.name}</b>: Otrzymano mutację (@Table[expandedmutatephys]{Fizyczna} or @Table[expandedmutatemental]{Psychiczna}) oraz Talent: @UUID[Compendium.wfrp4e-core.items.hiU7vhBOVpVI8c7C]{Magia Chaosu (Tzeentch)}`
     }
-    this.script.scriptMessage(msg, {whisper : ChatMessage.getWhisperRecipients("GM")})
+    this.script.message(msg, {whisper : ChatMessage.getWhisperRecipients("GM")})
     await this.actor.update({ "system.status.corruption.value": parseInt(args.actor.status.corruption.value) + 1 })
 }

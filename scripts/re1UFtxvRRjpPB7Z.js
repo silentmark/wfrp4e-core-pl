@@ -1,4 +1,3 @@
-//*** Zwichnięta kostka
 let item = await fromUuid("Compendium.wfrp4e-core.items.nF5z1OEhpi4t6a6S");
 let data = item.toObject();
 data.system.location.key = this.item.system.location.key

@@ -1,4 +1,3 @@
-//*** Ognista korona
 let fear = await fromUuid("Compendium.wfrp4e-core.items.Item.pTorrE0l3VybAbtn")
 let leader = await fromUuid("Compendium.wfrp4e-core.items.Item.vCgEAetBMngR53aT")
 let fearData = fear.toObject();

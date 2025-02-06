@@ -1,4 +1,3 @@
-//*** Przecięte ścięgno
 let item = await fromUuid("Compendium.wfrp4e-core.items.MnMZv7ZXoRqoH9dS")
 let data = item.toObject();
 data.system.location.key = this.item.system.location.key

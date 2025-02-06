@@ -4,5 +4,5 @@ let msg = `<b>${this.actor.prototypeToken.name}</b>: Otrzymano 1 Ranę.<br>`
     msg += `<b>${this.actor.prototypeToken.name}</b>: Otrzymano Stan @Condition[Utrata Przytomności].<br>`
     await this.actor.addCondition("unconscious")
   }
-  this.script.scriptMessage(msg)
+  this.script.message(msg)
   this.actor.modifyWounds(-1)

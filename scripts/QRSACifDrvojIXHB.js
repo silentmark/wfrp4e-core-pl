@@ -1,4 +1,3 @@
-//*** Błogosławieństwo Nieustępliwości
 if (!this.actor.effects.find(e => e.isCondition))
 {
 	return this.script.notification("Aktor nie posiada żadnych Stanów")

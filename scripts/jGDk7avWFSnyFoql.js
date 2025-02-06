@@ -5,5 +5,5 @@ if (broken && !broken.getFlag("wfrp4e", "blasted-mind") && !this.actor.has(item.
 {
     await broken.delete();
     this.actor.createEmbeddedDocuments("Item", [item], {fromEffect: this.effect.id})
-    this.script.scriptNotification(`Usunięto ${broken.name}, dodano ${item.name} (${Math.ceil(CONFIG.Dice.randomUniform() * 10)} Rund(y))`)
+    this.script.notification(`Usunięto ${broken.name}, dodano ${item.name} (${Math.ceil(CONFIG.Dice.randomUniform() * 10)} Rund(y))`)
 }

@@ -4,5 +4,5 @@ let roll = await new Roll("1d10").roll();
 
 roll.toMessage(this.script.getChatData());
 
-this.script.scriptNotification(`Usunięto odporność na psychologię, otrzymano Stany Paniki: ${roll.total}`)
+this.script.notification(`Usunięto odporność na psychologię, otrzymano Stany Paniki: ${roll.total}`)
 this.actor.addCondition("broken", roll.total, {"flags.wfrp4e.blasted-mind" : true})

@@ -1,4 +1,3 @@
-//*** Zabójca
 if (args.sizeDiff <= -2 && args.opposedTest.attackerTest.result.critical)
         args.damageMultiplier = Math.abs(args.sizeDiff)
 

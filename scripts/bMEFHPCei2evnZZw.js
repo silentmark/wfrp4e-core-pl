@@ -7,7 +7,7 @@
 if (args.totalWoundLoss > 0) 
 {
   args.actor.addCondition("poisoned")
-  this.script.scriptMessage(`
+  this.script.message(`
       <strong>${this.effect.name}</strong>:<br>
       <strong>${args.actor.name}</strong>: otrzymano Stan @Condition[Zatrucie], który może zostać odparty <strong>Wymagającym (-10) Testem Odporności </strong>.`, 
       {whisper: ChatMessage.getWhisperRecipients("GM")})

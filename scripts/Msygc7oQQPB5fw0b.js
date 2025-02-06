@@ -1,4 +1,3 @@
-//*** Niepokalana niewinność
 let test = this.effect.sourceTest;
 if (test.failed && (test.result.roll % 11 == 0 || test.result.roll == 100))
 {

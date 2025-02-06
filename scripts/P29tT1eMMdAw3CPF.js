@@ -1,4 +1,3 @@
-//*** Zerwane ścięgno
 let item = await fromUuid("Compendium.wfrp4e-core.items.3S4OYOZLauXctmev")
 let data = item.toObject();
 data.system.location.key = this.item.system.location.key

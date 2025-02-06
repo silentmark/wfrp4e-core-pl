@@ -1,4 +1,3 @@
-//*** Zatrucie Krwi
 let fatigued = this.actor.hasCondition("fatigued")
 if (!fatigued)
 {

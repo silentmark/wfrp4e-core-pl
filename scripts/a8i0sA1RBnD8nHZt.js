@@ -1,4 +1,3 @@
-//*** Kuźnia Chamonu
 let caster = this.effect.sourceActor
 let targetedItem = this.actor.items.get(this.effect.flags.wfrp4e.itemTargets[0])
 

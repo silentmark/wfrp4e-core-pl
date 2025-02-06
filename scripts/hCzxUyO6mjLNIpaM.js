@@ -1,4 +1,3 @@
-//*** Pieszczota Laniph
 let woundsGained = Math.min(args.totalWoundLoss, args.actor.status.wounds.value)
 
 woundsGained = Math.floor(woundsGained / 2)

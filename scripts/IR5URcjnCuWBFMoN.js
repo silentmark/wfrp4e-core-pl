@@ -5,7 +5,7 @@ let test = await this.actor.setupSkill(game.i18n.localize("NAME.Endurance"), {fi
 await test.roll()
 if (test.failed)
 {
-    this.script.scriptMessage(`<p><strong>${this.actor.prototypeToken.name}</strong> nie zauważa nic poza tym, że staje się zmęczony trochę wcześniej niż zwykle. W tym momencie nadal można uratować ofiarę potężnym antidotum lub magicznym środkiem.</p>
+    this.script.message(`<p><strong>${this.actor.prototypeToken.name}</strong> nie zauważa nic poza tym, że staje się zmęczony trochę wcześniej niż zwykle. W tym momencie nadal można uratować ofiarę potężnym antidotum lub magicznym środkiem.</p>
     <p>Kiedy zapadnie w sen, jest to prawie niemożliwe. W tym momencie postać musi wykonać <strong>Trudny (-20) Test Odporności</strong>. Jeśli się nie powiedzie, nigdy się nie obudzi.</p>`, 
     {
       whisper: ChatMessage.getWhisperRecipients("GM"), 

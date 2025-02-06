@@ -1,4 +1,3 @@
-//*** Świecąca skóra
 args.update({light : {
     "dim": 10,
     "bright": 5,

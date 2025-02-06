@@ -4,12 +4,12 @@ roll.toMessage(this.script.getChatData());
 if (fatigued > this.actor.characteristics.wp.bonus)
 {
     this.actor.addCondition("unconscious")
-    this.script.scriptNotification(`Utrata Przytomności`)
+    this.script.notification(`Utrata Przytomności`)
 }
 else 
 {
     fatigued = Math.max(0, fatigued)
     if (fatigued)
         this.actor.addCondition("fatigued", fatigued)
-    this.script.scriptNotification(`Otrzymano Stany Zmęczenia w liczbie: ${fatigued}`)
+    this.script.notification(`Otrzymano Stany Zmęczenia w liczbie: ${fatigued}`)
 }

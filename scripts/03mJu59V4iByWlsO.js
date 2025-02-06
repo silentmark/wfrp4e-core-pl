@@ -8,11 +8,13 @@ await this.actor.modifyWounds(this.actor.system.characteristics.t.bonus)
 // and acquires the Regenerate Creature Trait.
 const hasRegenerate = this.actor.has("Regeneracja")
 if (hasRegenerate === undefined) {
-  let trait = await fromUuid("Compendium.wfrp4e-core.items.SfUUdOGjdYpr3KSR");
-  await this.actor.createEmbeddedDocuments("Item", [trait], {fromEffect: this.effect.id});
+  fromUuid("Compendium.wfrp4e-core.items.SfUUdOGjdYpr3KSR").then(trait => {
+    let traitItem = trait.toObject()
+    this.actor.createEmbeddedDocuments("Item", [traitItem], {fromEffect: this.effect.id})
+  })
 }
 
-this.script.scriptMessage(`<p><strong>${this.actor.prototypeToken.name}</strong> otrzymuje: 
+this.script.message(`<p><strong>${this.actor.prototypeToken.name}</strong> otrzymuje: 
     <ul>
       <li>3 Stany Zatrucia, których początkowo nie można usunąć</li>
       <li>odzyskano liczbę ran: ${this.actor.system.characteristics.t.bonus}</li>

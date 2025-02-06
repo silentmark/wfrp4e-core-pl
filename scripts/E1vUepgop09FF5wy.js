@@ -1,4 +1,3 @@
-//*** Furia
 if (this.actor.system.status.advantage.value == 0)
 {
     return this.script.notification("Niewystarczająca liczba Punktów Przewagi!", "error")

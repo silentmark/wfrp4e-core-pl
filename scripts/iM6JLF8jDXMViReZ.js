@@ -1,1 +1,1 @@
-return !["Otwieranie Zamków", "Zwinne Palce", "Splatanie Magii (Ulgu)"].includes(args.skill?.name)
+return ![game.i18n.localize("Name.PickLock"), game.i18n.localize("NAME.SleightOfHand"), `${game.i18n.localize("NAME.Channelling") (Ulgu)}`].includes(args.skill?.name)

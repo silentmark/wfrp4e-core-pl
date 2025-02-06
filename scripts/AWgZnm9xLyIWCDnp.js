@@ -1,4 +1,3 @@
-//*** Krzepki
 let robust = args.modifiers.other.find(i => i.key == "robust")
 if (robust)
 {

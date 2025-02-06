@@ -1,4 +1,3 @@
-//*** Amputowana noga
 if (!args.flags.amputatedFootOrLeg)
 {
 	args.flags.amputatedFootOrLeg= true;

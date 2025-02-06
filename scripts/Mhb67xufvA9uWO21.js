@@ -1,4 +1,3 @@
-//*** Atak Ogonem - Bazyliszek
 let actorSize = game.wfrp4e.config.actorSizeNums[args.actor.details.size.value]
 let attackerSize = game.wfrp4e.config.actorSizeNums[args.attacker.details.size.value]
 

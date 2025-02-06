@@ -1,4 +1,3 @@
-//*** Regeneracja
 let chatData = { whisper: ChatMessage.getWhisperRecipients("GM") }
 let message = ""
 

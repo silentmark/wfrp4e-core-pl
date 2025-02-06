@@ -1,4 +1,3 @@
-//*** Ukojenie Rhyi
 if (!this.actor.effects.find(e => e.isCondition))
 {
 	return this.script.notification("Aktor nie posiada Stanów");

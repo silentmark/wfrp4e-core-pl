@@ -1,4 +1,3 @@
-//*** Pożoga zagłady U’zhula
 args.applyAP = false;
 
 await args.actor.addCondition("ablaze", 2);

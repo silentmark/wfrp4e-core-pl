@@ -1,4 +1,3 @@
-//*** Płomień Wiary
 let roll;
 if (this.actor.has(game.i18n.localize("NAME.Daemonic")) || this.actor.has(game.i18n.localize("NAME.Undead")) || ["Goblin", "Ork", "Nieumarły"].includes(this.actor.system.details.species.value))
 {

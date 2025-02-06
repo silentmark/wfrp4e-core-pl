@@ -1,4 +1,3 @@
-//*** Zmiażdżona stopa
 let test = await this.actor.setupSkill(game.i18n.localize("NAME.Endurance"), { fields: { difficulty: "average" } })
 await test.roll();
 if (test.failed) 

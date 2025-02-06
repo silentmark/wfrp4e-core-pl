@@ -1,4 +1,3 @@
-//*** Rozerwana łydka
 let item1 = await fromUuid("Compendium.wfrp4e-core.items.3S4OYOZLauXctmev")
 let item2 = await fromUuid("Compendium.wfrp4e-core.items.7mCcI3q7hgWcmbBU")
 

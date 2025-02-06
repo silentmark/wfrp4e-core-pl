@@ -1,4 +1,3 @@
-//*** Strach
 if (isNaN(parseInt(this.item.system.specification.value)))
 {
     let value = await ValueDialog.create({text : "Ustal Poziom Strachu", title : this.effect.name});

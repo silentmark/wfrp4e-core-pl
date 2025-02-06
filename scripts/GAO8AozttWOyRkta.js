@@ -1,4 +1,3 @@
-//*** Amputowana dłoń
 if (!args.flags.lostHand)
 {
 	args.fields.lostHand = true;

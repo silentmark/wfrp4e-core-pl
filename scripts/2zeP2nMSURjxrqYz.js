@@ -1,4 +1,3 @@
-//*** Mikstura lecznicza
 let wounds = this.actor.system.status.wounds
 if (wounds.value == 0)
   return this.script.notification("Brak efektu, ponieważ Żywotność wynosi 0", "error")

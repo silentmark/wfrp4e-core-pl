@@ -1,4 +1,3 @@
-//*** Przestępca
 if (args.test.options.income && !args.test.options.criminal)
 {
     args.test.options.criminal = true;

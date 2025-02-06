@@ -1,4 +1,3 @@
-//*** Precyzyjne Inkantowanie
 // Remove the miscast if doubles rolled and succeeded
 if(args.test.succeeded && args.test.result.minormis && args.test.result.roll % 11 == 0)
 {

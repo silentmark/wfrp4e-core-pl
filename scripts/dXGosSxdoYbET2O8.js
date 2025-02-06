@@ -1,4 +1,3 @@
-//*** Zmora
 await this.actor.addCondition("fatigued");
 
 let test = await this.actor.setupSkill(game.i18n.localize("NAME.Cool"))

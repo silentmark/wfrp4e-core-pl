@@ -1,4 +1,3 @@
-//*** Choroba
 let diseaseIndex = game.packs
 .filter(i => i.metadata.type == "Item")
 .reduce((acc, pack) => acc.concat(pack.index.contents), [])

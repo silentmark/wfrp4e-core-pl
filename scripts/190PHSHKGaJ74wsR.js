@@ -1,4 +1,3 @@
-//*** Doświadczony Wędrowiec (Wybrany Teren)
 if (!this.item.name.includes("(") || this.item.system.tests.value.toLowerCase().includes("teren") || this.item.system.tests.value.toLowerCase().includes("wybrany"))
 {
     let tests = this.item.system.tests.value
