@@ -1386,7 +1386,7 @@ Hooks.on("init", () => {
                                     }
                                 },
                                 {
-                                    label : "@effect.name",
+                                    label : "Strach",
                                     trigger : "immediate",
                                     script : `
                                     let name = this.item?.flags?.wfrp4e?.fearName
@@ -1451,7 +1451,7 @@ Hooks.on("init", () => {
 							}
 						},
 						{
-							label : "@effect.name",
+							label : "Strach",
 							trigger : "immediate",
 							script : `
 							let name = this.item?.flags?.wfrp4e?.fearName
@@ -1749,7 +1749,7 @@ Hooks.on("init", () => {
 					transferData: {},
 					scriptData : [
 						{
-							label : "@effect.name",
+							label : "Huk Wystrzału",
 							trigger : "immediate",
 							script : `
 								test = await this.actor.setupSkill("Opanowanie", {appendTitle : " - " + this.effect.name, skipTargets: true, fields : {difficulty : "average"}});
@@ -1772,7 +1772,7 @@ Hooks.on("init", () => {
 					transferData: {},
 					scriptData : [
 						{
-							label : "@effect.name",
+							label : "Skrócenie Dystansu",
 							trigger : "prePrepareItem",
 							script : `
 							if (args.item.type == "weapon" && args.item.isEquipped)
@@ -1919,7 +1919,8 @@ Hooks.on("init", () => {
 						{
 							trigger: "manual",
 							label : "Krwawienie (Obrażenia)",
-							script : `let actor = this.actor;
+							script : `let uiaBleeding = game.settings.get("wfrp4e", "uiaBleeding");
+							let actor = this.actor;
 							let effect = this.effect;
 							let bleedingAmt;
 							let bleedingRoll;
@@ -1934,8 +1935,19 @@ Hooks.on("init", () => {
 
 							if (actor.status.wounds.value == 0 && !actor.hasCondition("unconscious"))
 							{
-								await actor.addCondition("unconscious")
-								msg += "<br>" + game.i18n.format("BleedUnc", {name: actor.prototypeToken.name })
+								addBleedingUnconscious = async () => {
+									await actor.addCondition("unconscious")
+									msg += "<br>" + game.i18n.format("BleedUnc", {name: actor.prototypeToken.name })
+								}
+								if (uiaBleeding) {
+									test = await actor.setupSkill(game.i18n.localize("NAME.Endurance"), {appendTitle : " - " + this.effect.name, skipTargets: true, fields : {difficulty : "challenging"}});
+									await test.roll();
+									if (test.failed) {
+										await addBleedingUnconscious();
+									}
+								} else {
+									await addBleedingUnconscious();
+								}
 							}
 
 							if (actor.hasCondition("unconscious"))

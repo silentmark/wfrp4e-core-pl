@@ -182,7 +182,7 @@
                         },
                         {
                             "id": "vGXj3JcQSik2Fof6",
-                            "name": "Ruch zmniejszony o połowę",
+                            "name": "Szybkość zmniejszona o połowę",
                             "script": "[Script.9MDi3ok9gPwtbALf]"
                         }
                     ]
@@ -914,7 +914,7 @@
         },
         "Painful Cut": {
             "id": "GsBi7iz9z5tj9PiM",
-            "name": "Bolesne cięcie",
+            "name": "Bolesne rozcięcie",
             "description": "<p>Postać otrzymuje 2 poziomy Stanu @Condition[Krwawienie] oraz 1 poziom Stanu @Condition[Oszołomienie]. Musi także zdać <strong>Trudny (-20) Test Odporności</strong>, w przeciwnym wypadku nastąpi @Condition[Utrata Przytomności] z powodu bólu. Jeśli Test nie zakończy się co najmniej 4 PS, postać wyje z bólu.</p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.GsBi7iz9z5tj9PiM",
             "effects": {
@@ -942,11 +942,11 @@
                 },
                 "oScP7BQrypeVVVbf": {
                     "id": "oScP7BQrypeVVVbf",
-                    "name": "Bolesne cięcie",
+                    "name": "Bolesne rozcięcie",
                     "scriptData": [
                         {
                             "id": "oScP7BQrypeVVVbf",
-                            "name": "Bolesne cięcie",
+                            "name": "Bolesne rozcięcie",
                             "script": "[Script.JEbs0WlqhKNDOo5A]"
                         }
                     ]
@@ -2004,7 +2004,7 @@
                         },
                         {
                             "id": "uaaFc96JlTCALmeJ",
-                            "name": "Ruch zmniejszony o połowę",
+                            "name": "Szybkość zmniejszona o połowę",
                             "script": "[Script.9MDi3ok9gPwtbALf]"
                         },
                         {

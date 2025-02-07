@@ -48,7 +48,7 @@
                 "46-50": "Nierówne cięcie",
                 "51-55": "Połamane żebra",
                 "56-60": "Ziejąca rana korpusu",
-                "61-65": "Bolesne cięcie",
+                "61-65": "Bolesne rozcięcie",
                 "66-70": "Uszkodzenie tętnicy",
                 "71-75": "Naderwane mięśnie pleców",
                 "76-80": "Złamane biodro",
@@ -123,12 +123,12 @@
             "id": "v0OxdvLz4iAzwlDR",
             "results": {
                 "1-25": "Najmita wykonuje swoją pracę zgodnie z oczekiwaniami i nie otrzymuje żadnego szablonu.",
-                "26-40": "Najmita ma doświadczenie w poszukiwaniu przygód i wie, jak o siebie zadbać. Zastosuj szablon @UUID[Compendium.wfrp4e-up-in-arms.items.Xp4r2KUhqfjak8zq]{Weteran Wielu Przygód}.",
-                "41-55": "Najmita jest niestety zniedołężniały, chorowity albo w inny sposób gorzej sobie radzi, chociaż nie przyzna tego przed potencjalnymi pracodawcami. Zastosuj szablon @UUID[Compendium.wfrp4e-up-in-arms.items.wYN19h3WVF1yOVq2]{Zniedołężniały}.",
-                "56-69": "Najmita jest niezwykle sprytny. Zastosuj szablon @UUID[Compendium.wfrp4e-up-in-arms.items.ac5ClOuaYtzOYyWp]{Bystrzak}.",
-                "70-85": "Najmita ma kryminalną przeszłość. Zastosuj szablon @UUID[Compendium.wfrp4e-up-in-arms.items.IS3LTdTuay6uRHUq]{Zreformowany Łotr}.",
-                "86-95": "Najmita spędził kawał czasu na morzu. Zastosuj szablon @UUID[Compendium.wfrp4e-up-in-arms.items.LjMlx99gBGeRJUQu]{Wilk Morski}.",
-                "96-99": "Najmita jest nowicjuszem, ale ma wielki potencjał. Zastosuj szablon @UUID[Compendium.wfrp4e-up-in-arms.items.x5wpMprsObuqMCYg]{Nieoszlifowany Diament}."
+                "26-40": "Najmita ma doświadczenie w poszukiwaniu przygód i wie, jak o siebie zadbać. Zastosuj szablon @UUID[Compendium.wfrp4e-up-in-arms.items.4s01nHFKVKTEZd3B]{Weteran Wielu Przygód}.",
+                "41-55": "Najmita jest niestety zniedołężniały, chorowity albo w inny sposób gorzej sobie radzi, chociaż nie przyzna tego przed potencjalnymi pracodawcami. Zastosuj szablon @UUID[Compendium.wfrp4e-up-in-arms.items.h3yuJDWnixliXeBG]{Zniedołężniały}.",
+                "56-69": "Najmita jest niezwykle sprytny. Zastosuj szablon @UUID[Compendium.wfrp4e-up-in-arms.items.7QrsbofccMOE1YsF]{Bystrzak}.",
+                "70-85": "Najmita ma kryminalną przeszłość. Zastosuj szablon @UUID[Compendium.wfrp4e-up-in-arms.items.scVTPVyDDbli4WZL]{Zreformowany Łotr}.",
+                "86-95": "Najmita spędził kawał czasu na morzu. Zastosuj szablon @UUID[Compendium.wfrp4e-up-in-arms.items.4Cd7Dknee2WjReOo]{Wilk Morski}.",
+                "96-99": "Najmita jest nowicjuszem, ale ma wielki potencjał. Zastosuj szablon @UUID[Compendium.wfrp4e-up-in-arms.items.2hJ2a5YjbwZWWYrd]{Nieoszlifowany Diament}."
             }
         },
         "Hit Location - Quadruped": {

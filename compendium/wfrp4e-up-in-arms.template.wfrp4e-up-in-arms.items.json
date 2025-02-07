@@ -1,0 +1,197 @@
+{
+    "label": "Przedmioty (Pod Bronią)",
+    "mapping": {
+        "gmDescription": "system.gmdescription.value",
+        "alterNamePost": "system.alterName.post",
+        "alterNamePre": "system.alterName.pre",
+        "effects": {
+            "path": "effects",
+            "converter": "effects"
+        },
+        "skills": {
+            "path": "system.skills",
+            "converter": "templateSkills"
+        },
+        "talents": {
+            "path": "system.talents",
+            "converter": "templateTalents"
+        },
+        "traits": {
+            "path": "system.traits",
+            "converter": "templateTraits"
+        },
+        "options": {
+            "path": "system.trappings",
+            "converter": "templateOptions"
+        }
+    },
+    "entries": {
+        "Diamond in the Rough": {
+            "description": " ",
+            "effects": {
+                "sH1cOo2TIMqeJwSS": {
+                    "scriptData": [
+                        {
+                            "name": "Dodawanie talentów",
+                            "id": "sH1cOo2TIMqeJwSS",
+                            "script": "let talents = (await Promise.all([game.wfrp4e.tables.rollTable(\"talents\"), game.wfrp4e.tables.rollTable(\"talents\"), game.wfrp4e.tables.rollTable(\"talents\")])).map(i => i.text);\nlet items = [];\n\nfor (let talent of talents)\n{\n    let talentItem = await game.wfrp4e.utility.findTalent(talent)\n    if (talentItem)\n    {\n        items.push(talentItem.toObject());\n    }\n    else \n    {\n        ui.notifications.warn(`Nie odnaleziono ${talent}`, {permanent : true})\n    }\n}\n\nthis.script.notification(`Dodano talent(y): ${talents.join(\", \")}`);\nawait this.actor.createEmbeddedDocuments(\"Item\", items, {fromEffect: this.effect.id});"
+                        }
+                    ],
+                    "id": "sH1cOo2TIMqeJwSS",
+                    "name": "Nieoszlifowany diament"
+                }
+            },
+            "name": "Nieoszlifowany diament",
+            "alterNamePost": " ",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.2hJ2a5YjbwZWWYrd",
+            "id": "2hJ2a5YjbwZWWYrd",
+            "gmDescription": " ",
+            "alterNamePre": " "
+        },
+        "Veteran of Adventures": {
+            "description": " ",
+            "options": [
+                {
+                    "Id": "kumDochtdZNT7HaW",
+                    "Name": "Skórzana kurta"
+                },
+                {
+                    "Name": "Skórzane Nogawice",
+                    "Id": "Vl7LavDMoGEt0M3j"
+                },
+                {
+                    "Id": "H52XNfD3S80b8DSs",
+                    "Name": "Skórzany Hełm"
+                },
+                {
+                    "Name": "Broń ręczna",
+                    "Id": "iuWwrF7cM5zNo5b8"
+                },
+                {
+                    "Name": "Włócznia",
+                    "Id": "WtycQKHipx1DALtB"
+                },
+                {
+                    "Name": "Tarcza",
+                    "Id": "AYd4Sq305ul0njeW"
+                }
+            ],
+            "id": "4s01nHFKVKTEZd3B",
+            "alterNamePre": " ",
+            "name": "Weteran wielu przygód",
+            "alterNamePost": " ",
+            "skills": [
+                "Opanowanie",
+                "Unik",
+                "Broń Biała (Podstawowa)",
+                "Broń Biała (Drzewcowa)"
+            ],
+            "talents": [
+                "Bitewny Refleks"
+            ],
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.4s01nHFKVKTEZd3B",
+            "gmDescription": " "
+        },
+        "Infirm": {
+            "name": "Zniedołężniały",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.h3yuJDWnixliXeBG",
+            "description": " ",
+            "effects": {
+                "zmc6KvzyFibDJxF3": {
+                    "name": "Zniedołężniały",
+                    "id": "zmc6KvzyFibDJxF3",
+                    "scriptData": [
+                        {
+                            "id": "zmc6KvzyFibDJxF3",
+                            "script": "[Script.Et4tPHlrkueLqP3T]",
+                            "name": "Umiejętności"
+                        }
+                    ]
+                }
+            },
+            "alterNamePre": " ",
+            "id": "h3yuJDWnixliXeBG",
+            "alterNamePost": " ",
+            "gmDescription": " "
+        },
+        "Reformed Rogue": {
+            "options": [
+                {
+                    "Id": "fW99W5eojsCNypFY",
+                    "Name": "Lina, 10 metrów"
+                },
+                {
+                    "Name": "Wytrychy",
+                    "Id": "sERuuGYg8722ly3g"
+                },
+                {
+                    "Name": "Maska",
+                    "Id": "odTY4gVrxPa5JEsl"
+                }
+            ],
+            "skills": [
+                "Percepcja",
+                "Zwinne Palce",
+                "Skradanie (Miasto)"
+            ],
+            "gmDescription": " ",
+            "alterNamePost": " ",
+            "alterNamePre": " ",
+            "description": " ",
+            "talents": [
+                "Przestępca",
+                "Etykieta (Przestępcy)"
+            ],
+            "id": "scVTPVyDDbli4WZL",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.scVTPVyDDbli4WZL",
+            "name": "Zreformowany łotr"
+        },
+        "Old Salt": {
+            "gmDescription": " ",
+            "alterNamePost": " ",
+            "alterNamePre": " ",
+            "skills": [
+                "Mocna Głowa",
+                "Wioślarstwo",
+                "Żeglarstwo",
+                "Pływanie"
+            ],
+            "id": "4Cd7Dknee2WjReOo",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.4Cd7Dknee2WjReOo",
+            "description": " ",
+            "name": "Wilk Morski"
+        },
+        "Bright Spark": {
+            "name": "Bystrzak",
+            "options": [
+                {
+                    "Name": "Nogawice kolcze",
+                    "Id": "PehycIVNoH7MGmDC"
+                },
+                {
+                    "Id": "foWBxvDhE6dVPCPQ",
+                    "Name": "Kolczuga"
+                },
+                {
+                    "Name": "Czepiec kolczy",
+                    "Id": "WrwIxT22o6Gd8jcz"
+                },
+                {
+                    "Name": "Broń ręczna",
+                    "Id": "6yfFzDHLa1tFl8hk"
+                }
+            ],
+            "skills": [
+                "Intuicja",
+                "Wiedza (Lokalna)",
+                "Percepcja"
+            ],
+            "gmDescription": " . ",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.7QrsbofccMOE1YsF",
+            "alterNamePre": " . ",
+            "id": "7QrsbofccMOE1YsF",
+            "description": " . ",
+            "alterNamePost": " . "
+        }
+    }
+}

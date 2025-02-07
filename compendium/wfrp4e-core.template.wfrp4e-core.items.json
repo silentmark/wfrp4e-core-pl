@@ -1,0 +1,28 @@
+{
+    "label": "Przedmioty (Podręcznik Główny)",
+    "mapping": {
+        "gmDescription": "system.gmdescription.value",
+        "alterNamePost": "system.alterName.post",
+        "alterNamePre": "system.alterName.pre",
+        "effects": {
+            "path": "effects",
+            "converter": "effects"
+        },
+        "skills": {
+            "path": "system.skills",
+            "converter": "templateSkills"
+        },
+        "talents": {
+            "path": "system.talents",
+            "converter": "templateTalents"
+        },
+        "traits": {
+            "path": "system.traits",
+            "converter": "templateTraits"
+        },
+        "options": {
+            "path": "system.trappings",
+            "converter": "templateOptions"
+        }
+    }
+}

@@ -171,7 +171,7 @@
                         },
                         {
                             "id": "5r5Q7yjXn9xQ2zKf",
-                            "name": "Połowiczna Szybkość",
+                            "name": "Szybkość zmniejszona o połowę",
                             "script": "[Script.9MDi3ok9gPwtbALf]"
                         },
                         {
@@ -187,7 +187,7 @@
                     "scriptData": [
                         {
                             "id": "mdShjyZTYVUjkzKP",
-                            "name": "Oszołomiony",
+                            "name": "Oszołomienie",
                             "activationScript": "return true",
                             "script": "args.prefillModifiers.modifier -= 10 * this.effect.conditionValue"
                         }
@@ -196,6 +196,28 @@
             },
             "wounds": "P",
             "location": "Korpus"
+        },
+        "Rattling Blow": {
+            "id": "M15Fg1Wdl047rD8L",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.M15Fg1Wdl047rD8L",
+            "effects": {
+                "VJ0bwQJne0HNmtph": {
+                    "id": "VJ0bwQJne0HNmtph",
+                    "scriptData": [
+                        {
+                            "id": "VJ0bwQJne0HNmtph",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]",
+                            "name": "Oszołomienie",
+                            "script": "[Script.Q1trEhtqjIiDvFPF]"
+                        }
+                    ],
+                    "name": "Oszołomienie"
+                }
+            },
+            "name": "Bolesne uderzenie",
+            "description": "<p>Cios jest na tyle mocny, że w polu widzenia pojawiają się plamki i gwiazdki. Postać otrzymuje 1 poziom Stanu @Condition[Oszołomienie].</p>",
+            "wounds": "1",
+            "location": "Głowa"
         }
     },
     "folders": {

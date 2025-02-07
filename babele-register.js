@@ -204,6 +204,61 @@ Hooks.on("init", () => {
             await loadTranslations(fileName.replace('.json', ''), [file]);
         }
 
+		const getMappingFiles = async (babele) => {
+			if (!game.user.hasPermission('FILES_BROWSE')) {
+				return game.settings.get('babele', 'mappingFiles');
+			}
+	
+			const directory = game.settings.get('babele', 'directory');
+			const directories = babele.modules
+				.map(module => `modules/${module.module}/${module.dir}`);
+	
+			if (directory && directory.trim && directory.trim()) {
+				directories.push(`${directory}`);
+			}
+	
+			if (babele.systemTranslationsDir) {
+				directories.push(`systems/${game.system.id}/${this.systemTranslationsDir}`);
+			}
+	
+			const files = [];
+			for (let i = 0; i < directories.length; i++) {
+				try {
+					let result = await FilePicker.browse('data', directories[i]);
+					result.files
+						.filter(file => file.endsWith('/mapping.json'))
+						.forEach(file => files.push(file));
+				} catch (err) {
+					console.warn('Babele: ' + err);
+				}
+			}
+	
+			if (game.user.isGM) {
+				game.settings.set('babele', 'mappingFiles', files);
+			}
+	
+			return files;
+		}
+	
+		
+        // Handle global mappings
+        const mappingFiles = await getMappingFiles(this);
+
+        if (mappingFiles.length > 0) {
+            console.log(`Babele | global mapping files found, defaults will be enriched/overwritten...`);
+
+            const loadMappings = async () => {
+                const [mappings] = await Promise.all(
+                    [Promise.all(mappingFiles.map((file) => fetch(file).then((r) => r.json()).catch(e => {
+                    })))],
+                );
+                mappings.forEach(mapping => {
+                    this.registerMapping(mapping);
+                })
+            }
+            await loadMappings();
+        }
+
         return allTranslations;
     }
 
@@ -396,7 +451,19 @@ Hooks.on("init", () => {
 				}
 			}
 			return translatedItems;
-		  }
+		},
+		
+		templateSkills: (skills, translations) => {
+			if (skills.list) {
+				let result = foundry.utils.deepClone(skills);
+				for (let i = 0; i < result.list.length; i++) {
+					result.list[i].name = translations[i];
+				}
+				return result;
+			}
+			return skills;
+		},
+
 	});
 });
 
@@ -412,7 +479,7 @@ Hooks.on("ready", () => {
 		CompendiumCollection.CACHE_LIFETIME_SECONDS = 300;
 
 		game.packs.forEach(p => {
-			p._flush = foundry.utils.debounce(p.clear.bind(p), CompendiumCollection.CACHE_LIFETIME_SECONDS * 1000);
+			p._flush = foundry.utils.debounce(p.clear.bind(p), CompendiumCollection.CACHE_LIFETIME_SECONDS * 100);
 		});
 	}, 1000);
 });
