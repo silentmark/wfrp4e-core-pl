@@ -464,6 +464,42 @@ Hooks.on("init", () => {
 			return skills;
 		},
 
+		templateTalents: (talents, translations) => {
+			if (talents.list) {
+				let result = foundry.utils.deepClone(talents);
+				for (let i = 0; i < result.list.length; i++) {
+					result.list[i].name = translations[i];
+				}
+				return result;
+			}
+			return talents;
+		},
+
+		templateTraits: (traits, translations) => {
+			if (traits.list) {
+				let result = foundry.utils.deepClone(traits);
+				for (let i = 0; i < result.list.length; i++) {
+					result.list[i].name = translations[i];
+				}
+				return result;
+			}
+			return traits;
+		},
+
+		templateOptions: (options, translations) => {
+			if (options?.options) {
+				let result = foundry.utils.deepClone(options);
+				for (let i = 0; i < options.options.length; i++) {
+					const o = options.options[i];
+					const t = translations.find(t => t.Id == o.id);
+					if (t) {
+						result.options[i].name = t.Name;
+					}
+				}
+				return result;
+			}
+			return options;
+		},
 	});
 });
 
