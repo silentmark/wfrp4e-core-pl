@@ -867,6 +867,26 @@
             "name": "Miecz dwuręczny",
             "description": "<p>Słynne oddziały imperialnej gwardii elektorskiej są uzbrojone w ogromne stalowe ostrza, tak długie jak broń drzewcowa. Niektórzy mistrzowie kowalscy tworzą jeszcze dłuższe głownie – dodają im fale i zęby. Taka broń jest znana jako flamberg, a dzięki kształtowi ostrza zadane nią rany są znacznie głębsze.</p>",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.YRcG9dzmzLvdEKPc"
+        },
+        "MQV1cMMZQZnyzZx2": {
+            "id": "MQV1cMMZQZnyzZx2",
+            "name": "Ładunek zapalający",
+            "range": "1/2 zasięgu broni",
+            "effects": {
+                "vMJ7eb3bxl2hx0A2": {
+                    "id": "vMJ7eb3bxl2hx0A2",
+                    "name": "Ładunek zapalający",
+                    "scriptData": [
+                        {
+                            "id": "vMJ7eb3bxl2hx0A2",
+                            "name": "Ładunek zapalający",
+                            "script": "[Script.cAioHYtlxuOCwRLh]"
+                        }
+                    ]
+                }
+            },
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.MQV1cMMZQZnyzZx2",
+            "description": "<blockquote class=\"foundry-note\"><p>Ten przedmiot służy jako Amunicja do @UUID[JournalEntry.l0NZFxzG4t0GoIFu.JournalEntryPage.Y4IiuJnk1S466SLx#siege-weapons]{Broni Oblężniczej}. Dla broni rzucanej, użyj tego @UUID[Compendium.wfrp4e-core.items.vI0oorwbZdlszudf]{Ładunku zapalającego}. Jako amunicja do broni Prochowej lub Eksperymentalnej, użyj tego @UUID[Compendium.wfrp4e-core.items.vI0oorwbZdlszudf]{Ładunku zapalającego}</p><p>Do użycia z @UUID[Compendium.wfrp4e-up-in-arms.items.d2LzU8hNCH97njsK]{Moździerzem}, zamień typ amunicji na <strong>Czarnoprochową i Eksperymentalną</strong></p></blockquote>"
         }
     },
     "folders": {

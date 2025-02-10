@@ -205,7 +205,8 @@
                     "id": "RyXKKxNWlNwsNxv7",
                     "name": "Zastosuj Korzeń mandragory"
                 }
-            }
+            },
+            "gmdescription": "<p>Ten silnie uzależniający halucynogen wyrasta pod szubienicami. Jego żucie uspokaja wzburzony umysł. Użytkownicy muszą co Rundę przechodzić Test Siły Woli, który określi, czy wykonują Akcję, czy Ruch (wybierz jedno); co więcej, Szybkość jest zmniejszona o połowę. Jednakże Testy Opanowania dostają premię +20.</p><p><strong>Czas trwania</strong>: Aktywne podczas przeżuwania plus dodatkowe [[/r 1d10*10]] minut.</p>"
         },
         "Map": {
             "id": "5PWRfQbGcYm4OnKP",
@@ -442,7 +443,8 @@
                     "id": "hLWNp5uC77EBu33J",
                     "name": "Weź Dziwnokorzeń"
                 }
-            }
+            },
+            "gmdescription": "<p>Jeden z najpowszechniejszych narkotyków ulicznych w Imperium. Żuty Dziwnokorzeń wywołuje euforię i przyjemne halucynacje. Niektórzy sugerują, że mogą być one powiązane z Wiatrami Magii. Narkotyk zapewnia premię +10 do Testów Odporności i Siły Woli, ale także karę -10 do Testów Zwinności, Inicjatywy i Inteligencji.</p><p><strong>Czas trwania</strong>: Aktywne podczas przeżuwania plus dodatkowe [[/r 1d10 * 10]] minut.</p>"
         },
         "Charcoal stick": {
             "id": "b8SJ8qB0TpSjUGA6",
@@ -584,7 +586,8 @@
                     "id": "RmNoZUc1wPx1kcmk",
                     "name": "Zastosuj Grzybki Szalonego Kapelusznika"
                 }
-            }
+            },
+            "gmdescription": "<p>Te halucynogenne grzyby jedzone są przed bitwą przez goblińskich fanatyków. Wywołują furię berserkera, zapewniającą +10 do Siły, +4 do Żywotności i Talent Szał Bojowy. Po ustąpieniu efektów konsument grzybków traci 1k10 Żywotności. Istoty inne niż zielonoskórzy muszą także przejść udany <strong>Wymagający (+0) Test Odporności</strong>, inaczej nabawiają się @UUID[Compendium.wfrp4e-core.items.Item.1hQuVFZt9QnnbWzg]{Mniejszej Infekcji}.</p><p> <strong>Czas trwania</strong>: Aktywne podczas przeżuwania plus dodatkowe 2k10 minut.</p>"
         },
         "Mail Shirt": {
             "id": "cJdfHOVbghTf4Eo0",
@@ -992,7 +995,8 @@
                     "id": "mZjdxfvuZ8ez5djz",
                     "name": "Zastosuj Sercobój"
                 }
-            }
+            },
+            "gmdescription": "<p>Łącząc jady amfisbeny (rzadkiego dwugłowego węża) i dżabersmoka, otrzymuje się bezwonną, bezbarwną truciznę. Po spożyciu ta zabójcza mikstura wywołuje 4 Stany @Condition[Zatrucie]. Przed działaniem chroni udany <strong>Trudny (–10) Test Odporności</strong></p>"
         },
         "Placard": {
             "id": "jQGw8o4fY8swlmfM",
@@ -1032,7 +1036,8 @@
                     "id": "Bx8xTxlLwCu24IUS",
                     "name": "Wciągnij Rozkosz Ranalda"
                 }
-            }
+            },
+            "gmdescription": "<p>Ten silnie uzależniający stymulant to syntetyczny związek chemiczny wyrabiany z siarki, rtęci i innych pierwiastków. Wdychanie proszku zapewnia premię +1 do Szybkości i +10 do Walki Wręcz, Siły, Wytrzymałości i Zwinności. Trwa to przez 3 godziny, po upływie których użytkownik otrzymuje karę -2 do Szybkości i -20 do WW, S, Wt i Zw.</p><p><strong>Czas trwania</strong>: 1 dzień.</p>"
         },
         "Davrich Lamp": {
             "id": "JX4Qy1qVog3PZBvA",
@@ -1500,7 +1505,8 @@
                     "name": "Czarny lotos",
                     "filter": "return args.system?.attackType"
                 }
-            }
+            },
+            "gmdescription": "<p>Ta śmiercionośna roślina rośnie w dżunglach Krain Południowych i wykorzystywana jest do zatruwania ostrzy. Ofiary, które odniosą co najmniej 1 obrażenie od ostrza pokrytego sokiem tej rośliny, natychmiast otrzymują 2 Stany @Condition[Zatrucie]. Przed działaniem chroni udany <strong>Trudny (–10) Test Odporności</strong>.</p>"
         },
         "Bolas": {
             "id": "qim3Ad0ldTS9mXDj",
@@ -1716,7 +1722,8 @@
             "id": "W4X1Jx8AN84yRPDx",
             "name": "Pluja",
             "description": " <p>Ten niezwykle silny halucynogen, pozyskiwany z kameleopijawek znajdowanych na bagniskach Imperium, sprowadza wizję czegoś głęboko pożądanego, jak utraconego kochanka, zmarłego przyjaciela lub zaginionego dziecka. Narkotyk zwany jest na ulicy plują i cieszy się popularnością wśród tych, którzy poddali się rozpaczy. Po jego użyciu trzeba przejść udany <strong>Bardzo Trudny (-30) Test Odporności</strong>, inaczej użytkownik zatraca się w niezwykle przekonującej fantazji, której treść zależy od MG. <strong>Czas trwania</strong>: 1k10 minut.</p> ",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.W4X1Jx8AN84yRPDx"
+            "sourceId": "Compendium.wfrp4e-core.items.Item.W4X1Jx8AN84yRPDx",
+            "gmdescription": "<p>Ten niezwykle silny halucynogen, pozyskiwany z kameleopijawek znajdowanych na bagniskach Imperium, sprowadza wizję czegoś głęboko pożądanego, jak utraconego kochanka, zmarłego przyjaciela lub zaginionego dziecka. Narkotyk zwany jest na ulicy <i>Plują</i> i cieszy się popularnością wśród tych, którzy poddali się rozpaczy. Po jego użyciu trzeba przejść udany <strong>Bardzo Trudny (–30) Test Odporności</strong>, inaczej użytkownik zatraca się w niezwykle przekonującej fantazji, której treść zależy od MG.</p><p><strong>Czas trwania</strong>: [[/r 1d10]] minut.</p>"
         },
         "Broom": {
             "id": "w9VCyP12U7MrC3jk",
@@ -1740,7 +1747,8 @@
             "id": "wgFj3lFhCuO8OeDb",
             "name": "Księżycowy kwiat",
             "description": " <p>Ten środek uspokajający to suszony mech, który rośnie wyłącznie na liściach w lesie Laurelorn. Elfy wykorzystują księżycowy kwiat do leczenia Czarnej Dżumy. Członkowie tej rasy otrzymują premię +30 do każdego Testu opierania się tej chorobie. Poza tym środek nie wywołuje u nich żadnych innych efektów. Inni mogą wdychać opary gotującego się mchu i jeśli nie uda im się <strong>Bardzo Trudny (-30) Test Siły Woli</strong>, otrzymują Stan <em>Utrata przytomności</em>; jeśli Test jest udany, otrzymują premię +20 do Testów Opanowania i zyskują Stan <em>Zmęczenie</em>. Najdrożsi lekarze stosują księżycowy kwiat jako środek znieczulający. <strong>Czas trwania</strong>: 1k10+5 godzin.</p> ",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.wgFj3lFhCuO8OeDb"
+            "sourceId": "Compendium.wfrp4e-core.items.Item.wgFj3lFhCuO8OeDb",
+            "gmdescription": "<p>Ten środek uspokajający to suszony mech, który rośnie wyłącznie na liściach w lesie Laurelorn. Elfy wykorzystują księżycowy kwiat do leczenia Czarnej Dżumy. Członkowie tej rasy otrzymują premię +30 do każdego Testu opierania się tej chorobie. Poza tym środek nie wywołuje u nich żadnych innych efektów. Inni mogą wdychać opary gotującego się mchu i jeśli nie uda im się <strong>Bardzo Trudny (–30) Test Siły Woli</strong>, otrzymują Stan @Condition[Utrata przytomności]; jeśli Test jest udany, otrzymują premię +20 do Testów Opanowania i zyskują Stan @Condition[Zmęczenie]. Najdrożsi lekarze stosują księżycowy kwiat jako środek znieczulający.</p><p><strong>Czas trwania</strong>: [[/r 1d10+5]] godzin</p>"
         },
         "Earth Root": {
             "id": "WiPzDDFjCAo2EQDT",
@@ -1955,6 +1963,30 @@
             "name": "Rusznica",
             "description": "<p></p>",
             "sourceId": "Compendium.wfrp4e-core.items.Item.zuFTVmBtN51K94Xy"
+        },
+        "Ao7DRZ1hS6uCGONP": {
+            "id": "Ao7DRZ1hS6uCGONP",
+            "name": "Nóż",
+            "description": "<p></p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Ao7DRZ1hS6uCGONP"
+        },
+        "G2yEH6caM0FJ9s0G": {
+            "id": "G2yEH6caM0FJ9s0G",
+            "name": "Kilof",
+            "description": "<p></p>",
+            "sourceId": "Compendium.wfrp4e-core.items.G2yEH6caM0FJ9s0G"
+        },
+        "83KlMxHxGfKUdMfq": {
+            "id": "83KlMxHxGfKUdMfq",
+            "name": "Nóż",
+            "description": "<p></p>",
+            "sourceId": "Compendium.wfrp4e-core.items.83KlMxHxGfKUdMfq"
+        },
+        "3RttGMwfxEuxRLYu": {
+            "id": "3RttGMwfxEuxRLYu",
+            "name": "Kilof",
+            "description": "<p></p>",
+            "sourceId": "Compendium.wfrp4e-core.items.3RttGMwfxEuxRLYu"
         }
     },
     "folders": {
