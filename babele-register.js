@@ -461,6 +461,9 @@ Hooks.on("init", () => {
 				}
 				return result;
 			}
+			else if (Array.isArray(skills)) {
+				return translations;
+			}
 			return skills;
 		},
 
@@ -471,6 +474,9 @@ Hooks.on("init", () => {
 					result.list[i].name = translations[i];
 				}
 				return result;
+			}
+			else if (Array.isArray(talents)) {
+				return translations;
 			}
 			return talents;
 		},
@@ -483,14 +489,17 @@ Hooks.on("init", () => {
 				}
 				return result;
 			}
+			else if (Array.isArray(traits)) {
+				return translations;
+			}
 			return traits;
 		},
 
-		templateOptions: (options, translations) => {
-			if (options?.options) {
-				let result = foundry.utils.deepClone(options);
-				for (let i = 0; i < options.options.length; i++) {
-					const o = options.options[i];
+		templateTrappings: (trappings, translations) => {
+			if (trappings?.options) {
+				let result = foundry.utils.deepClone(trappings);
+				for (let i = 0; i < trappings.options.length; i++) {
+					const o = trappings.options[i];
 					const t = translations.find(t => t.Id == o.id);
 					if (t) {
 						result.options[i].name = t.Name;
@@ -498,7 +507,10 @@ Hooks.on("init", () => {
 				}
 				return result;
 			}
-			return options;
+			else if (Array.isArray(trappings)) {
+				return translations;
+			}
+			return trappings;
 		},
 	});
 });

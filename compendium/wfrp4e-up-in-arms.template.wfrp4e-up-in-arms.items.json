@@ -20,9 +20,9 @@
             "path": "system.traits",
             "converter": "templateTraits"
         },
-        "options": {
+        "trappings": {
             "path": "system.trappings",
-            "converter": "templateOptions"
+            "converter": "templateTrappings"
         }
     },
     "entries": {
@@ -50,7 +50,7 @@
         },
         "Veteran of Adventures": {
             "description": " ",
-            "options": [
+            "trappings": [
                 {
                     "Id": "kumDochtdZNT7HaW",
                     "Name": "Skórzana kurta"
@@ -115,7 +115,7 @@
             "gmDescription": " "
         },
         "Reformed Rogue": {
-            "options": [
+            "trappings": [
                 {
                     "Id": "fW99W5eojsCNypFY",
                     "Name": "Lina, 10 metrów"
@@ -163,7 +163,7 @@
         },
         "Bright Spark": {
             "name": "Bystrzak",
-            "options": [
+            "trappings": [
                 {
                     "Name": "Nogawice kolcze",
                     "Id": "PehycIVNoH7MGmDC"
