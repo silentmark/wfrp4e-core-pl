@@ -33,7 +33,7 @@
                 },
                 "5UkGwlZAf2pp0qdO": {
                     "id": "5UkGwlZAf2pp0qdO",
-                    "name": "Rogi (typ)",
+                    "name": "Rogi",
                     "description": "<p>Stworzenie ma rogi lub inne ostre wyrostki (jeśli jego Cecha Stworzenia Rogi reprezentuje coś innego, będzie to określone w nawiasie). Gdy stworzenie zyskuje Przewagę na skutek Szarżowania, może\nwykonać Darmowy Atak swoimi Rogami. Taki atak przeprowadzany jest jak normalnie: wykorzystaj podaną wartość Obrażeń (Bonus z Siły stworzenia jest już wliczony).</p>",
                     "originalName": "Rogi",
                     "sourceId": "Compendium.wfrp4e-core.actors.Actor.28MwFcDPwpcO12kt.Item.5UkGwlZAf2pp0qdO",
