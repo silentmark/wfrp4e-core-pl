@@ -1,0 +1,433 @@
+{
+    "entries": {
+        "Bruised": {
+            "name": "Potłuczenie",
+            "description": "<p>Wszystkie Testy Zwinności otrzymują karę -10 na [[/r 1d10]] dni.</p>",
+            "effects": {
+                "klvis7s3ItDHPQN0": {
+                    "scriptData": [
+                        {
+                            "script": "[Script.xvGxwv7X0Vq3vNqb]",
+                            "id": "klvis7s3ItDHPQN0",
+                            "hideScript": "[Script.oW1gtYVT5nrxDjM7]",
+                            "name": "Kara dla wszystkich testów",
+                            "activationScript": "[Script.JFgXyb6bKjZJLmF8]"
+                        }
+                    ],
+                    "id": "klvis7s3ItDHPQN0",
+                    "name": "Potłuczenie"
+                }
+            },
+            "sourceId": "Compendium.wfrp4e-starter-set.items.h3gFDi7hULlP2TJX",
+            "id": "h3gFDi7hULlP2TJX",
+            "location": " ",
+            "wounds": "2"
+        },
+        "Gash": {
+            "name": "Rozcięcie",
+            "wounds": "1",
+            "effects": {
+                "p5XumBXXpYWcXo7X": {
+                    "id": "p5XumBXXpYWcXo7X",
+                    "name": "Krwawienie"
+                }
+            },
+            "description": "<p>Postać otrzymuje 1 poziom Stanu @Condition[Krwawienie].</p>",
+            "sourceId": "Compendium.wfrp4e-starter-set.items.6cojY1IRxvJev8kt",
+            "location": " ",
+            "id": "6cojY1IRxvJev8kt"
+        },
+        "Painful Cut": {
+            "wounds": "3",
+            "description": "<p>Postać otrzymuje 2 poziomy Stanu @Condition[Krwawienie] oraz 1 poziom Stanu @Condition[Oszołomienie]. Musi także zdać <strong>Trudny (-20) Test Odporności</strong>, w przeciwnym wypadku nastąpi @Condition[Nieprzytomny] Utrata Przytomności z powodu bólu.</p>",
+            "effects": {
+                "fLJCyLURFISohfWx": {
+                    "scriptData": [
+                        {
+                            "id": "fLJCyLURFISohfWx",
+                            "script": "[Script.EmXwcuycEH8slEn5]",
+                            "name": "Bolesne rozcięcie"
+                        }
+                    ],
+                    "name": "Bolesne rozcięcie",
+                    "id": "fLJCyLURFISohfWx"
+                },
+                "PKfdEwRZh5DCZSwC": {
+                    "name": "Oszołomienie",
+                    "scriptData": [
+                        {
+                            "activationScript": "return true",
+                            "name": "Oszołomienie",
+                            "script": "args.prefillModifiers.modifier -= 10 * this.effect.conditionValue",
+                            "id": "PKfdEwRZh5DCZSwC"
+                        }
+                    ],
+                    "id": "PKfdEwRZh5DCZSwC"
+                },
+                "eDYPhQ4BZxsoN3S3": {
+                    "name": "Krwawienie",
+                    "id": "eDYPhQ4BZxsoN3S3"
+                }
+            },
+            "sourceId": "Compendium.wfrp4e-starter-set.items.Vj7jkZ1ZtJKXKYmu",
+            "id": "Vj7jkZ1ZtJKXKYmu",
+            "location": " ",
+            "name": "Bolesne rozcięcie"
+        },
+        "Winded": {
+            "location": " ",
+            "effects": {
+                "rgHSoFshdyzm8l2R": {
+                    "scriptData": [
+                        {
+                            "script": "[Script.kMSdRskYDI2J1gnp]",
+                            "id": "rgHSoFshdyzm8l2R",
+                            "name": "Pozbawienie tchu"
+                        },
+                        {
+                            "name": "Szybkość zmniejszona o połowę",
+                            "id": "rgHSoFshdyzm8l2R",
+                            "script": "[Script.9MDi3ok9gPwtbALf]"
+                        }
+                    ],
+                    "name": "Pozbawienie tchu",
+                    "id": "rgHSoFshdyzm8l2R"
+                },
+                "PKfdEwRZh5DCZSwC": {
+                    "scriptData": [
+                        {
+                            "activationScript": "return true",
+                            "script": "args.prefillModifiers.modifier -= 10 * this.effect.conditionValue",
+                            "name": "Oszołomienie",
+                            "id": "PKfdEwRZh5DCZSwC"
+                        }
+                    ],
+                    "name": "Oszołomienie",
+                    "id": "PKfdEwRZh5DCZSwC"
+                }
+            },
+            "id": "JxCMVZYWoLpaMiWR",
+            "description": "<p>Dostajesz 2 Stany @Condition[Oszołomienie]. Przejdź <strong>Przeciętny (+20) Test Odporności</strong> albo dostaniesz Stan @Condition[Powalenie]. Twoja Szybkość jest zmniejszona o połowę przez [[/r 1d10]] Rund, gdy próbujesz złapać oddech.</p>",
+            "name": "Pozbawienie tchu",
+            "sourceId": "Compendium.wfrp4e-starter-set.items.JxCMVZYWoLpaMiWR",
+            "wounds": "2"
+        },
+        "Ruined": {
+            "effects": {
+                "iliuuUkzNTekgldW": {
+                    "id": "iliuuUkzNTekgldW",
+                    "name": "Utrata Przytomności"
+                },
+                "a8bUPcOi4uFCDICJ": {
+                    "name": "Pokonany",
+                    "scriptData": [
+                        {
+                            "name": "Pokonany",
+                            "id": "a8bUPcOi4uFCDICJ",
+                            "script": "[Script.OnkEe4ISru1hjJWP]"
+                        }
+                    ],
+                    "id": "a8bUPcOi4uFCDICJ"
+                }
+            },
+            "id": "M181psxcR6fA3wNB",
+            "location": " ",
+            "name": "Pokonany",
+            "description": "<p>Postać otrzymuje Stan @Condition[Oszołomienie], który można usunąć tylko przy pomocy udanego <strong>Prostego (+0) Testu Leczenia</strong>. To Miejsce Trafienia staje się bezużyteczne, o ile nie spędzisz miesiąca na odpoczynku w łóżku.</p>",
+            "sourceId": "Compendium.wfrp4e-starter-set.items.M181psxcR6fA3wNB",
+            "wounds": "5"
+        },
+        "Crippling Wound": {
+            "effects": {
+                "3Z6QjYmhs1Opp1Wp": {
+                    "name": "Okaleczenie",
+                    "scriptData": [
+                        {
+                            "id": "3Z6QjYmhs1Opp1Wp",
+                            "script": "[Script.0iTLDgFHO9Rgc010]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]",
+                            "name": "Kara dla wszystkich testów"
+                        }
+                    ],
+                    "id": "3Z6QjYmhs1Opp1Wp"
+                },
+                "oyxMXt8PHKUatGsE": {
+                    "id": "oyxMXt8PHKUatGsE",
+                    "scriptData": [
+                        {
+                            "id": "oyxMXt8PHKUatGsE",
+                            "script": "\n        args.prefillModifiers.modifier += -20;\n        args.prefillModifiers.slBonus += 0;\n        args.prefillModifiers.successBonus += 0;\n        ",
+                            "name": "Testy związane z jakimkolwiek ruchem"
+                        }
+                    ],
+                    "name": "Powalenie"
+                }
+            },
+            "description": "<p>dostajesz stan @Condition [Powalenie], który można usunąć tylko po udanym <strong>Prostym (+0) Teście Leczenia</strong> . Wszystkie Testy podlegają karze -20, dopóki nie otrzymasz opieki medycznej i nie spędzisz co najmniej tygodnia na odpoczynku.</p>",
+            "id": "xtJXTEjOQtn3pods",
+            "wounds": "4",
+            "location": " ",
+            "name": "Okaleczenie",
+            "sourceId": "Compendium.wfrp4e-starter-set.items.xtJXTEjOQtn3pods"
+        },
+        "Low Blow!": {
+            "effects": {
+                "dys96YM5JQYiJjtZ": {
+                    "id": "dys96YM5JQYiJjtZ",
+                    "name": "Poniżej pasa!",
+                    "scriptData": [
+                        {
+                            "id": "dys96YM5JQYiJjtZ",
+                            "name": "Poniżej pasa!",
+                            "script": "[Script.EU5j0hnDTG9Z6d1e]"
+                        }
+                    ]
+                },
+                "PKfdEwRZh5DCZSwC": {
+                    "scriptData": [
+                        {
+                            "activationScript": "return true",
+                            "name": "Oszołomienie",
+                            "script": "args.prefillModifiers.modifier -= 10 * this.effect.conditionValue",
+                            "id": "PKfdEwRZh5DCZSwC"
+                        }
+                    ],
+                    "name": "Oszołomienie",
+                    "id": "PKfdEwRZh5DCZSwC"
+                }
+            },
+            "name": "Poniżej pasa!",
+            "location": " ",
+            "description": "<p>Postać otrzymuje 1 poziom Stanu @Condition[Oszołomienie]. Musi również wykonać <strong>Trudny (-20) Test Odporności</strong> jeśli ten się nie uda, postać otrzyma dodatkowe 2 Stany @Condition[Oszołomienie].</p>",
+            "sourceId": "Compendium.wfrp4e-starter-set.items.HPszYSWoB4ObYOBM",
+            "id": "HPszYSWoB4ObYOBM",
+            "wounds": "1"
+        },
+        "Shattered Bone": {
+            "sourceId": "Compendium.wfrp4e-starter-set.items.9re1DIxquRgCswc2",
+            "name": "Roztrzaskana kość",
+            "effects": {
+                "PKfdEwRZh5DCZSwC": {
+                    "id": "PKfdEwRZh5DCZSwC",
+                    "name": "Oszołomienie",
+                    "scriptData": [
+                        {
+                            "id": "PKfdEwRZh5DCZSwC",
+                            "activationScript": "return true",
+                            "script": "args.prefillModifiers.modifier -= 10 * this.effect.conditionValue",
+                            "name": "Oszołomienie"
+                        }
+                    ]
+                },
+                "rER8YHCJqjxaDQEE": {
+                    "scriptData": [
+                        {
+                            "id": "rER8YHCJqjxaDQEE",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]",
+                            "script": "[Script.0iTLDgFHO9Rgc010]",
+                            "name": "Kara dla wszystkich testów"
+                        }
+                    ],
+                    "name": "Roztrzaskana kość",
+                    "id": "rER8YHCJqjxaDQEE"
+                }
+            },
+            "description": "<p>dostajesz stan @Condition [Oszołomienie], który można usunąć tylko po udanym <strong>Prostym (+0) Teście Leczenia</strong> . Wszystkie Testy podlegają karze -20, dopóki nie otrzymasz opieki medycznej i nie spędzisz co najmniej tygodnia na odpoczynku.</p>",
+            "wounds": "5",
+            "id": "9re1DIxquRgCswc2",
+            "location": " "
+        },
+        "Torn Apart": {
+            "sourceId": "Compendium.wfrp4e-starter-set.items.ULUNwr1srKJhCYKi",
+            "effects": {
+                "sQBHhd6ooMpuKhK6": {
+                    "scriptData": [
+                        {
+                            "name": "Na kawałki",
+                            "script": "[Script.GEfWIFBSrXt0ldBM]",
+                            "id": "sQBHhd6ooMpuKhK6"
+                        }
+                    ],
+                    "name": "Na kawałki",
+                    "id": "sQBHhd6ooMpuKhK6"
+                }
+            },
+            "location": " ",
+            "id": "ULUNwr1srKJhCYKi",
+            "wounds": "Śmierć",
+            "name": "Na kawałki",
+            "description": "<p>Zostajesz przerąbany wpół. Twoja górna połowa ląduje [[/r 1d10]] metrów dalej w losowym kierunku, a wszystkie pobliskie postacie zostają spryskane krwią..</p>"
+        },
+        "Gaping Wound": {
+            "effects": {
+                "nyrOZnHf5SaR3ql0": {
+                    "name": "Krwawienie",
+                    "id": "nyrOZnHf5SaR3ql0"
+                },
+                "H1jqgnMQlBWlb2iN": {
+                    "scriptData": [
+                        {
+                            "script": "[Script.NNytXz5XFPrEF6dw]",
+                            "id": "H1jqgnMQlBWlb2iN",
+                            "name": "Rana otwarta"
+                        }
+                    ],
+                    "name": "Rana otwarta",
+                    "id": "H1jqgnMQlBWlb2iN"
+                }
+            },
+            "id": "pmggfvcdKxjfsgLF",
+            "description": "<p>Dostajesz 3 Stany @Condition[Bleeding]. Wszelkie Rany, które odniesiesz w tym Miejscu Trafienia, będą wywoływać dodatkowy Stan Krwawienie przez następny tydzień z powodu otwierania się rany.</p>",
+            "sourceId": "Compendium.wfrp4e-starter-set.items.pmggfvcdKxjfsgLF",
+            "location": " ",
+            "wounds": "3",
+            "name": "Rana otwarta"
+        },
+        "Cracked Bone": {
+            "effects": {
+                "PKfdEwRZh5DCZSwC": {
+                    "scriptData": [
+                        {
+                            "id": "PKfdEwRZh5DCZSwC",
+                            "activationScript": "return true",
+                            "name": "Oszołomienie",
+                            "script": "args.prefillModifiers.modifier -= 10 * this.effect.conditionValue"
+                        }
+                    ],
+                    "name": "Oszołomienie",
+                    "id": "PKfdEwRZh5DCZSwC"
+                },
+                "XWCKsliojPlRhtX5": {
+                    "scriptData": [
+                        {
+                            "script": "[Script.xvGxwv7X0Vq3vNqb]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]",
+                            "id": "XWCKsliojPlRhtX5",
+                            "name": "Pęknięta kość"
+                        }
+                    ],
+                    "id": "XWCKsliojPlRhtX5",
+                    "name": "Pęknięta kość"
+                }
+            },
+            "sourceId": "Compendium.wfrp4e-starter-set.items.vcM1EnJXXM02anIi",
+            "name": "Pęknięta kość",
+            "wounds": "3",
+            "description": "<p>Zyskujesz stan @Condition[Ogłuszenia]. Wszystkie testy otrzymują karę -10, dopóki nie otrzymasz udanego testu leczenia.</p>",
+            "location": " ",
+            "id": "vcM1EnJXXM02anIi"
+        },
+        "Torn Flesh": {
+            "effects": {
+                "OcAC7jjpeR86HSSK": {
+                    "id": "OcAC7jjpeR86HSSK",
+                    "name": "Krwawienie"
+                }
+            },
+            "wounds": "2",
+            "id": "7u2XsoTaIdEMsnzG",
+            "description": "<p>Dostajesz 2 Stany @Condition[Krwawienie].</p>",
+            "name": "Rana szarpana",
+            "location": " ",
+            "sourceId": "Compendium.wfrp4e-starter-set.items.7u2XsoTaIdEMsnzG"
+        },
+        "Fractured Bone": {
+            "wounds": "4",
+            "description": "<p>Dostajesz Stan Oszołomienie. Przejdź <strong>Test Odporności</strong> albo dostaniesz także Stan @Condition[Powalenie]. Wszystkie Testy dostają karę -10 przez następne 4 tygodnie.</p>",
+            "effects": {
+                "PKfdEwRZh5DCZSwC": {
+                    "scriptData": [
+                        {
+                            "script": "args.prefillModifiers.modifier -= 10 * this.effect.conditionValue",
+                            "name": "Oszołomienie",
+                            "id": "PKfdEwRZh5DCZSwC",
+                            "activationScript": "return true"
+                        }
+                    ],
+                    "id": "PKfdEwRZh5DCZSwC",
+                    "name": "Oszołomienie"
+                },
+                "ftiYT4Sxl2RlzOvB": {
+                    "name": "Złamana kość",
+                    "scriptData": [
+                        {
+                            "id": "ftiYT4Sxl2RlzOvB",
+                            "name": "Powalenie",
+                            "script": "[Script.bhXUW7IJtEaUGAoV]"
+                        },
+                        {
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]",
+                            "script": "[Script.xvGxwv7X0Vq3vNqb]",
+                            "name": "Kara dla wszystkich testów",
+                            "id": "ftiYT4Sxl2RlzOvB"
+                        }
+                    ],
+                    "id": "ftiYT4Sxl2RlzOvB"
+                }
+            },
+            "sourceId": "Compendium.wfrp4e-starter-set.items.SdB0sthOSurZWqYe",
+            "name": "Złamana kość",
+            "location": " ",
+            "id": "SdB0sthOSurZWqYe"
+        },
+        "Gut Blow": {
+            "id": "vj8VdUbOpT1vepsL",
+            "description": "<p>Postać otrzymuje 1 poziom Stanu @Condition[Oszołomienie].</p>",
+            "effects": {
+                "PKfdEwRZh5DCZSwC": {
+                    "scriptData": [
+                        {
+                            "name": "Oszołomienie",
+                            "activationScript": "return true",
+                            "script": "args.prefillModifiers.modifier -= 10 * this.effect.conditionValue",
+                            "id": "PKfdEwRZh5DCZSwC"
+                        }
+                    ],
+                    "name": "Oszołomienie",
+                    "id": "PKfdEwRZh5DCZSwC"
+                }
+            },
+            "name": "Cios w bebechy",
+            "wounds": "1",
+            "location": " ",
+            "sourceId": "Compendium.wfrp4e-starter-set.items.vj8VdUbOpT1vepsL"
+        },
+        "Flensed Muscle": {
+            "name": "Naderwany mięsień",
+            "effects": {
+                "HT33m8ut91PlUwlg": {
+                    "id": "HT33m8ut91PlUwlg",
+                    "name": "Naderwany mięsień",
+                    "scriptData": [
+                        {
+                            "script": "[Script.1PQPxFjmRlulHHzo]",
+                            "id": "HT33m8ut91PlUwlg",
+                            "name": "Naderwany mięsień"
+                        }
+                    ]
+                },
+                "3MNCFqmWfDVYnYbu": {
+                    "name": "Krwawienie",
+                    "id": "3MNCFqmWfDVYnYbu"
+                }
+            },
+            "location": " ",
+            "id": "CsnWW8GohpZyEAYG",
+            "description": "<p>Dostajesz 4 Stany @Condition[Krwawienie]. Wszelkie Rany, które odniesiesz w tym Miejscu Trafienia przez następne 4 tygodnie, będą wywoływać także 2 Stany <em>Krwawienie</em>, ponieważ rana wciąż się otwiera.</p>",
+            "wounds": "4",
+            "sourceId": "Compendium.wfrp4e-starter-set.items.CsnWW8GohpZyEAYG"
+        }
+    },
+    "folders": {
+        "Criticals": "Rany Krytyczne"
+    },
+    "mapping": {
+        "effects": {
+            "converter": "effects",
+            "path": "effects"
+        },
+        "wounds": "system.wounds.value",
+        "location": "system.location.value"
+    },
+    "label": "Rany Krytyczne"
+}

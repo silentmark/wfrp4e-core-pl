@@ -144,7 +144,341 @@ Hooks.on("i18nInit", async function () {
 				talents: ["Wróżba Losu", "Błyskotliwość, Charyzmatyczny", 3]
 			}
 		},
+
+		
+		halfling: {
+			ashfield: {
+				name: "Ashfield",
+				skills: [
+					"Charyzma",
+					"Mocna Głowa",
+					"Targowanie",
+					"Wiedza (Reikland)",
+					"Zwinne Palce",
+					"Skradanie (Dowolne)",
+					"Rzemiosło (Gotowanie)",
+					"Opanowanie",
+					"Intuicja",
+					"Język (Krainy Zgromadzenia)",
+					"Broń Zasięgowa (Dowolna)"
+				],
+				talents: [
+					"Wyczulony Zmysł (Smak)",
+					"Widzenie w Ciemności",
+					"Odporny na (Chaos)",
+					"Mały",
+					"Wyczulony Zmysł (Wzrok), Etykieta (Żołnierze)",
+					1
+				]
+			}
+		},
+		halfling: {
+			brambledown: {
+				name: "Brambledown",
+				skills: [
+					"Charyzma",
+					"Mocna Głowa",
+					"Targowanie",
+					"Wiedza (Reikland)",
+					"Zwinne Palce",
+					"Skradanie (Dowolne)",
+					"Rzemiosło (Gotowanie)",
+					"Język (Krainy Zgromadzenia) ",
+					"Nawigacja",
+					"Sztuka Przetrwania",
+					"Pływanie"
+				],
+				talents: [
+					"Wyczulony Zmysł (Smak)",
+					"Widzenie w Ciemności",
+					"Odporny na (Chaos)",
+					"Mały",
+					"Towarzyski, Obieżyświat",
+					1
+				]
+			}
+		},
+		halfling: {
+			brandysnap: {
+				name: "Brandysnap",
+				skills: [
+					"Charyzma",
+					"Mocna Głowa",
+					"Targowanie",
+					"Wiedza (Reikland)",
+					"Zwinne Palce",
+					"Skradanie (Dowolne)",
+					"Rzemiosło (Gotowanie)",
+					"Opieka nad Zwierzętami",
+					"Hazard",
+					"Język (Krainy Zgromadzenia)",
+					"Wiedza (Zioła)"
+				],
+				talents: [
+					"Wyczulony Zmysł (Smak)",
+					"Widzenie w Ciemności",
+					"Odporny na (Chaos)",
+					"Mały",
+					"Wytwórca (Rolnictwo), Tragarz",
+					1
+				]
+			}
+		},
+		halfling: {
+			hayfoot: {
+				name: "Hayfoot",
+				skills: [
+					"Charyzma",
+					"Mocna Głowa",
+					"Targowanie",
+					"Wiedza (Reikland)",
+					"Zwinne Palce",
+					"Skradanie (Dowolne)",
+					"Rzemiosło (Gotowanie)",
+					"Hazard",
+					"Targowanie",
+					"Wycena",
+					"Język (Krainy Zgromadzenia)"
+				],
+				talents: [
+					"Wyczulony Zmysł (Smak)",
+					"Widzenie w Ciemności",
+					"Odporny na (Chaos)",
+					"Mały",
+					"Żyłka Handlowa, Etykieta (Gildie)",
+					1
+				]
+			}
+		},
+		halfling: {
+			hollyfoot: {
+				name: "Hollyfoot",
+				skills: [
+					"Charyzma",
+					"Mocna Głowa",
+					"Targowanie",
+					"Wiedza (Reikland)",
+					"Zwinne Palce",
+					"Skradanie (Dowolne)",
+					"Rzemiosło (Gotowanie)",
+					"Przekupstwo",
+					"Wycena",
+					"Plotkowanie",
+					"Język (Krainy Zgromadzenia)"
+				],
+				talents: [
+					"Wyczulony Zmysł (Smak)",
+					"Widzenie w Ciemności",
+					"Odporny na (Chaos)",
+					"Mały",
+					"Wytwórca (Dowolne Rzemiosło), Zręczny",
+					1
+				]
+			}
+		},
+		halfling: {
+			"hayfoot—hollyfoot": {
+				name: "Hayfoot—Hollyfoot",
+				skills: [
+					"Charyzma",
+					"Mocna Głowa",
+					"Targowanie",
+					"Wiedza (Reikland)",
+					"Zwinne Palce",
+					"Skradanie (Dowolne)",
+					"Rzemiosło (Gotowanie)",
+					"Przekupstwo",
+					"Wycena",
+					"Plotkowanie",
+					"Język (Krainy Zgromadzenia)"
+				],
+				talents: [
+					"Wyczulony Zmysł (Smak)",
+					"Widzenie w Ciemności",
+					"Odporny na (Chaos)",
+					"Mały",
+					"Przekonujący, Numizmatyka",
+					1
+				]
+			}
+		},
+		halfling: {
+			lostpockets: {
+				name: "Lostpockets",
+				skills: [
+					"Charyzma",
+					"Mocna Głowa",
+					"Targowanie",
+					"Wiedza (Reikland)",
+					"Zwinne Palce",
+					"Skradanie (Dowolne)",
+					"Rzemiosło (Gotowanie)",
+					"Odporność",
+					"Hazard",
+					"Plotkowanie",
+					"Intuicja"
+				],
+				talents: [
+					"Wyczulony Zmysł (Smak)",
+					"Widzenie w Ciemności",
+					"Odporny na (Chaos)",
+					"Mały",
+					"Twardziel, Wstrzemięźliwy",
+					1
+				]
+			}
+		},
+		halfling: {
+			lowhaven: {
+				name: "Lowhaven",
+				skills: [
+					"Charyzma",
+					"Mocna Głowa",
+					"Targowanie",
+					"Wiedza (Reikland)",
+					"Zwinne Palce",
+					"Skradanie (Dowolne)",
+					"Rzemiosło (Gotowanie)",
+					"Przekupstwo",
+					"Targowanie",
+					"Zastraszanie",
+					"Język (Krainy Zgromadzenia)"
+				],
+				talents: [
+					"Wyczulony Zmysł (Smak)",
+					"Widzenie w Ciemności",
+					"Odporny na (Chaos)",
+					"Mały",
+					"Przestępca, Etykieta (Przestępcy lub Gildie)",
+					1
+				]
+			}
+		},
+		halfling: {
+			rumster: {
+				name: "Rumster",
+				skills: [
+					"Charyzma",
+					"Mocna Głowa",
+					"Targowanie",
+					"Wiedza (Reikland)",
+					"Zwinne Palce",
+					"Skradanie (Dowolne)",
+					"Rzemiosło (Gotowanie)",
+					"Odporność",
+					"Plotkowanie",
+					"Targowanie",
+					"Język (Krainy Zgromadzenia)"
+				],
+				talents: [
+					"Wyczulony Zmysł (Smak)",
+					"Widzenie w Ciemności",
+					"Odporny na (Chaos)",
+					"Mały",
+					"Wytwórca (Gotowanie), Żyłka Handlowa",
+					1
+				]
+			}
+		},
+		halfling: {
+			skelfsider: {
+				name: "Skelfsider",
+				skills: [
+					"Charyzma",
+					"Mocna Głowa",
+					"Targowanie",
+					"Wiedza (Reikland)",
+					"Zwinne Palce",
+					"Skradanie (Dowolne)",
+					"Rzemiosło (Gotowanie)",
+					"Odporność",
+					"Hazard",
+					"Plotkowanie",
+					"Język (Krainy Zgromadzenia)"
+				],
+				talents: [
+					"Wyczulony Zmysł (Smak)",
+					"Widzenie w Ciemności",
+					"Odporny na (Chaos)",
+					"Mały",
+					"Niegodny Uwagi, Etykieta (Słudzy)",
+					1
+				]
+			}
+		},
+		halfling: {
+			thorncobble: {
+				name: "Thorncobble",
+				skills: [
+					"Charyzma",
+					"Mocna Głowa",
+					"Targowanie",
+					"Wiedza (Reikland)",
+					"Zwinne Palce",
+					"Skradanie (Dowolne)",
+					"Rzemiosło (Gotowanie)",
+					"Plotkowanie",
+					"Dowodzenie",
+					"Wiedza (Heraldyka)",
+					"Język (Krainy Zgromadzenia)"
+				],
+				talents: [
+					"Wyczulony Zmysł (Smak)",
+					"Widzenie w Ciemności",
+					"Odporny na (Chaos)",
+					"Mały",
+					"Etykieta (Szlachta lub Uczeni), Czytanie/Pisanie",
+					1
+				]
+			}
+		},
+		halfling: {
+			tumbleberry: {
+				name: "Tumbleberry",
+				skills: [
+					"Charyzma",
+					"Mocna Głowa",
+					"Targowanie",
+					"Wiedza (Reikland)",
+					"Zwinne Palce",
+					"Skradanie (Dowolne)",
+					"Rzemiosło (Gotowanie)",
+					"Plotkowanie",
+					"Targowanie",
+					"Wiedza (Dowolna)",
+					"Język (Krainy Zgromadzenia)"
+				],
+				talents: [
+					"Wyczulony Zmysł (Smak)",
+					"Widzenie w Ciemności",
+					"Odporny na (Chaos)",
+					"Mały",
+					"Etykieta (Mieszczaństwo lub Gildie), Czytanie/Pisanie",
+					1
+				]
+			}
+		},
+
+
 		welf: {
+			harioth: {
+				name: "Harioth",
+				talents: [
+					"Wyczulony Zmysł (Wzrok)",
+					"Twardziel, Percepcja Magiczna",
+					"Widzenie w Ciemności",
+					"Czytanie/Pisanie, Niezwykle Odporny",
+					"Włóczykij",
+					"Młoda Krew",
+					0
+				]
+			},
+			toriour: {
+				name: "Toriour",
+			},
+			faniour: {
+				name: "Faniour"
+			},
 			talsyn: {
 				name: "Talsyn", 
 				skills: [

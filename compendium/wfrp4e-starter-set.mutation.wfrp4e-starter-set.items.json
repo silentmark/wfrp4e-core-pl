@@ -1,0 +1,107 @@
+{
+    "entries": {
+        "Clutch of Eyes": {
+            "modifier": " ",
+            "effects": {
+                "qcgzN9lKYCUuG2T6": {
+                    "id": "qcgzN9lKYCUuG2T6",
+                    "scriptData": [
+                        {
+                            "script": "[Script.ynoHNXXCGRS6fTqF]",
+                            "id": "qcgzN9lKYCUuG2T6",
+                            "name": "Wylęg Oczu"
+                        },
+                        {
+                            "id": "qcgzN9lKYCUuG2T6",
+                            "name": "Oślepienie",
+                            "script": "[Script.abLWYtNTu1UVDQAs]"
+                        }
+                    ],
+                    "name": "Wylęg Oczu"
+                }
+            },
+            "description": "<p>Pod skórą zaczynają nabrzmiewać drgające cysty, potem przeszywa cię ból, gdy krwawe wrzody rosną, pękają i odsłaniają skupisko nowych, przerażonych oczu.</p><p>Rzuć 1k100, by ustalić @Table[hitloc]{Miejsce Trafienia}, w którym wyłonią się twoje nowe oczy. Teraz możesz widzieć z tego Miejsca Trafienia. Zwiększ swoją Inicjatywę o +[[/r 1d10]]. Jeśli nie masz Inicjatywy, dostajesz także +[[/r 2d10]]. Ponadto wszystkie trafienia w miejsce Wylęgu oczu powodują stan @Condition[Oślepienie].</p>",
+            "id": "iBS0fYHCX9VHdyVR",
+            "sourceId": "Compendium.wfrp4e-starter-set.items.iBS0fYHCX9VHdyVR",
+            "name": "Wylęg Oczu"
+        },
+        "Slippery Skin": {
+            "effects": {
+                "hexXxc4eT1sfti0S": {
+                    "name": "Oślizgła Skóra",
+                    "id": "hexXxc4eT1sfti0S",
+                    "scriptData": [
+                        {
+                            "id": "hexXxc4eT1sfti0S",
+                            "activationScript": "[Script.xQ3xR2Wf0wHFa76H]",
+                            "hideScript": "[Script.px7eEdhOEt7zOTrq]",
+                            "name": "Testy wymagające trzymania czegokolwiek w dłoniach oraz Testy Ogłady",
+                            "script": "[Script.KuuWAhoSzk0rCxxw]"
+                        }
+                    ]
+                }
+            },
+            "description": "<p>Stale się pocisz, a twoja skóra wydziela rzadki, lepki śluz podobny do tego, który wytwarza ośluza. Wydzielina jest nieprzyjemna w dotyku, przesącza się przez ubranie w ciągu godziny lub dwóch i z jej powodu twój chwyt jest niepewny.</p><p>Wszelkie Testy, które wymagają od ciebie trzymania czegokolwiek w dłoniach (na przykład broni), dostają karę -20. Ponadto ty dostajesz karę -20 do odpowiednich Testów Ogłady. Gdy próbujesz oswobodzić się z Pochwycenia, jeśli ci się udało, możesz użyć wyrzuconego PS albo wartości, która wypadła na kostce jedności. Zatem udany rzut wynoszący 28 może być zastosowany jako +8 PS.</p>",
+            "id": "IPrHvStaZ2hw3Q8z",
+            "modifier": "-20 do Testów związanych z trzymaniem czegokolwiek w dłoniach, -20 do Testów Ogłady",
+            "name": "Oślizgła Skóra",
+            "sourceId": "Compendium.wfrp4e-starter-set.items.IPrHvStaZ2hw3Q8z"
+        },
+        "Telepathy": {
+            "effects": {
+                "OoLIeLBpzP5t7P8U": {
+                    "scriptData": [
+                        {
+                            "script": "[Script.TQRL4mZhZohXg1Au]",
+                            "id": "OoLIeLBpzP5t7P8U",
+                            "name": "Telepatia"
+                        }
+                    ],
+                    "name": "Telepatia",
+                    "id": "OoLIeLBpzP5t7P8U"
+                }
+            },
+            "id": "6clrmh4DXUJgzJqc",
+            "modifier": " ",
+            "name": "Telepatia",
+            "sourceId": "Compendium.wfrp4e-starter-set.items.6clrmh4DXUJgzJqc",
+            "description": "<p>Twój umysł oswabadza się z materialnych oków i bełkocze radośnie, znajdując nowe sposoby wpływania na innych.</p><p>Przy pomocy <strong>Prostego Testu Siły Woli</strong> możesz komunikować się z dowolnym rozumnym stworzeniem w polu widzenia, w zasięgu tylu metrów, ile wynosi twoja Siła Woli. Trwa to przez tyle minut, ile wynosi twoja Inicjatywa. Możesz także odczytywać powierzchowne myśli dowolnego stworzenia, z którym komunikujesz się telepatycznie po wykonaniu kolejnego <strong>Przeciwstawnego Testu Siły Woli</strong>. Jeśli nie uda ci się pomyślnie\nprzejść Testu, nie możesz czytać myśli tej istoty przez następne [[/r 1d10]] dni. Gdy używasz telepatii, twoje oczy lśnią dziwacznym blaskiem. Za każdym razem, gdy rozwija się ta mutacja, podwaja się twój zasięg oddziaływania tej mocy.</p><p> </p><p> </p>"
+        },
+        "Massive Intellect": {
+            "effects": {
+                "RZr67I9pU34yJqPy": {
+                    "scriptData": [
+                        {
+                            "id": "RZr67I9pU34yJqPy",
+                            "name": "Potężny Intelekt",
+                            "script": "[Script.YwLEw4BiKq4EMy57]"
+                        },
+                        {
+                            "id": "RZr67I9pU34yJqPy",
+                            "script": "[Script.e7IxnxePdXSy6L4E]",
+                            "name": "Rana Krytyczna"
+                        }
+                    ],
+                    "id": "RZr67I9pU34yJqPy",
+                    "name": "Potężny Intelekt"
+                }
+            },
+            "id": "ox7tLcnA1HMxhyBF",
+            "sourceId": "Compendium.wfrp4e-starter-set.items.ox7tLcnA1HMxhyBF",
+            "modifier": " ",
+            "name": "Potężny Intelekt",
+            "description": "<p>Jasna krew, popękane kości i zmiażdżone tkanki wylewają się z otworów w twoim ciele, gdy twój dawny mózg nabrzmiewa. Powoli, w ciągu tygodni, w jego miejscu rośnie nowy intelekt, który boleśnie rozciąga twoją głowę w szerokich, przezroczystych fałdach wokół napuchłego, świecącego mózgu.</p><p>Zwiększ swoją Inteligencję o +[[/r 2d10]]. Jeśli nie masz Ogłady, dostajesz także +[[/r 2d10]]. Wszystkie trafienia w głowę automatycznie oznaczają @Table[crithead]{Trafienie Krytyczne}, o ile już nie została zadana.</p>"
+        }
+    },
+    "mapping": {
+        "modifier": "system.modifier.value",
+        "effects": {
+            "converter": "effects",
+            "path": "effects"
+        }
+    },
+    "label": "Mutacje",
+    "folders": {
+        "Mutations": "Mutacje"
+    }
+}
