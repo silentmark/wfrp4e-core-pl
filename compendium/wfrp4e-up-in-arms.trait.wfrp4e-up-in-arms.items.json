@@ -13,67 +13,69 @@
         "Bright Spark": {
             "id": "ac5ClOuaYtzOYyWp",
             "name": "Bystrzak",
-            "description": " <p>Najmita jest niezwykle sprytny.</p> ",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.ac5ClOuaYtzOYyWp",
             "effects": {
                 "GPWvWnhtvfc1jdvJ": {
+                    "id": "GPWvWnhtvfc1jdvJ",
+                    "name": "Bystrzak",
                     "scriptData": [
                         {
                             "id": "GPWvWnhtvfc1jdvJ",
                             "name": "Bystrzak",
                             "script": "[Script.WO5n7Vbx8AgoVrwC]"
                         }
-                    ],
-                    "id": "GPWvWnhtvfc1jdvJ",
-                    "name": "Bystrzak"
+                    ]
                 }
             }
         },
         "Diamond in the Rough": {
             "id": "x5wpMprsObuqMCYg",
             "name": "Nieoszlifowany diament",
-            "description": " <p>Najmita jest nowicjuszem, ale ma wielki potencjał.</p> ",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.x5wpMprsObuqMCYg",
             "effects": {
                 "GPWvWnhtvfc1jdvJ": {
+                    "id": "GPWvWnhtvfc1jdvJ",
+                    "name": "Nieoszlifowany diament",
                     "scriptData": [
                         {
                             "id": "GPWvWnhtvfc1jdvJ",
                             "name": "Nieoszlifowany diament",
                             "script": "[Script.1BT0MWM2cbhlEnrn]"
                         }
-                    ],
-                    "id": "GPWvWnhtvfc1jdvJ",
-                    "name": "Nieoszlifowany diament"
+                    ]
                 }
             }
         },
         "Hireling": {
             "id": "gjtcCTmRPxTL4oAL",
             "name": "Najemnik",
-            "description": " <p>Najmita wykonuje swoją pracę zgodnie z oczekiwaniami.</p> ",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.gjtcCTmRPxTL4oAL",
             "effects": {
                 "GB6h9KotqpcouOmE": {
+                    "id": "GB6h9KotqpcouOmE",
+                    "name": "Najemnik",
                     "scriptData": [
                         {
                             "id": "GB6h9KotqpcouOmE",
                             "name": "Najemnik",
                             "script": "[Script.R32U01LBjBrK1pns]"
                         }
-                    ],
-                    "id": "GB6h9KotqpcouOmE",
-                    "name": "Najemnik"
+                    ]
                 }
             }
         },
         "Infirm": {
             "id": "wYN19h3WVF1yOVq2",
             "name": "Zniedołężniały",
-            "description": " <p>Najmita jest niestety zniedołężniały, chorowity albo w inny sposób gorzej sobie radzi, chociaż nie przyzna tego przed potencjalnymi pracodawcami.</p> ",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.wYN19h3WVF1yOVq2",
             "effects": {
                 "GPWvWnhtvfc1jdvJ": {
+                    "id": "GPWvWnhtvfc1jdvJ",
+                    "name": "Zniedołężniały",
                     "scriptData": [
                         {
                             "id": "GPWvWnhtvfc1jdvJ",
@@ -85,57 +87,57 @@
                             "name": "Umiejętności",
                             "script": "[Script.Et4tPHlrkueLqP3T]"
                         }
-                    ],
-                    "id": "GPWvWnhtvfc1jdvJ",
-                    "name": "Zniedołężniały"
+                    ]
                 }
             }
         },
         "Old Salt": {
             "id": "LjMlx99gBGeRJUQu",
             "name": "Wilk Morski",
-            "description": " <p>Najmita spędził kawał czasu na morzu.</p> ",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.LjMlx99gBGeRJUQu",
             "effects": {
                 "GPWvWnhtvfc1jdvJ": {
+                    "id": "GPWvWnhtvfc1jdvJ",
+                    "name": "Wilk morski",
                     "scriptData": [
                         {
                             "id": "GPWvWnhtvfc1jdvJ",
                             "name": "Wilk morski",
                             "script": "[Script.fYLSe6CrYciap5y8]"
                         }
-                    ],
-                    "id": "GPWvWnhtvfc1jdvJ",
-                    "name": "Wilk morski"
+                    ]
                 }
             }
         },
         "Reformed Rogue": {
             "id": "IS3LTdTuay6uRHUq",
             "name": "Zreformowany łotr",
-            "description": " <p>Najmita ma kryminalną przeszłość.</p> ",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.IS3LTdTuay6uRHUq",
             "effects": {
                 "GPWvWnhtvfc1jdvJ": {
+                    "id": "GPWvWnhtvfc1jdvJ",
+                    "name": "Zreformowany łotr",
                     "scriptData": [
                         {
                             "id": "GPWvWnhtvfc1jdvJ",
                             "name": "Zreformowany łotr",
                             "script": "[Script.zadppy7FEbXvgUON]"
                         }
-                    ],
-                    "id": "GPWvWnhtvfc1jdvJ",
-                    "name": "Zreformowany łotr"
+                    ]
                 }
             }
         },
         "Veteran of Adventures": {
             "id": "Xp4r2KUhqfjak8zq",
             "name": "Weteran wielu przygód",
-            "description": " <p>Najmita ma doświadczenie w poszukiwaniu przygód i wie, jak o siebie zadbać.</p> ",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.Xp4r2KUhqfjak8zq",
             "effects": {
                 "GPWvWnhtvfc1jdvJ": {
+                    "id": "GPWvWnhtvfc1jdvJ",
+                    "name": "Weteran wielu przygód",
                     "scriptData": [
                         {
                             "id": "GPWvWnhtvfc1jdvJ",
@@ -152,30 +154,28 @@
                             "name": "Wybór broni",
                             "script": "[Script.ezGqDoC9hNRBnFTB]"
                         }
-                    ],
-                    "id": "GPWvWnhtvfc1jdvJ",
-                    "name": "Weteran wielu przygód"
+                    ]
                 }
             }
         },
         "Trained (Shock Cavalry)": {
             "id": "twLaBj2HdhL5cC4v",
+            "name": "Wyszkolony (Kawaleria Uderzeniowa)",
+            "description": "<p>Tę Cechę może otrzymać jedynie wierzchowiec, który posiada już Cechę Stworzenia @UUID[Compendium.wfrp4e-core.items.V0naR1YbYCl0KIxp]{Wyszkolony (Bojowy)}. Większość oddziałów kawalerii, nawet tych przygotowanych do radzenia sobie z trudami wojny, nie zaszarżuje wprost na dobrze uzbrojonego i ustawionego w porządnym szyku wroga. Wierzchowce z tą Cechą są specjalnie wyszkolone do tego, by ignorować niebezpieczeństwo i szarżować prosto w masę przeciwników.</p><p>Kiedy ktoś dosiadający wierzchowca z tą Cechą wykonuje Szarżę, może przemieścić się przez mniejsze od wierzchowca istoty, by dotrzeć do swojego celu. Każde stworzenie, które wierzchowiec stratuje w ten sposób, musi zdać<strong>Wymagający (+0) Test Uniku</strong>, w przypadku niepowodzenia otrzymuje Obrażenia równe 4 + Bonus z Siły wierzchowca.</p><p>Każde stworzenie, które otrzyma w ten sposób Obrażenia, zmniejsza pozostały Ruch wierzchowca o dwa metry. Istoty Rozmiaru wierzchowca lub większe zatrzymują go całkowicie. Tak czy inaczej, kiedy Szarża wierzchowca się kończy, każdy wróg w zasięgu broni białej jest traktowany, jakby był @UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.wmA76Q2zJJ9HrkvA#engaged]{Związany Walką}, a Szarża zostaje normalnie przeprowadzona, tak jakby jedna z tych istot była jej celem.</p><p>Stratowane w ten sposób istoty mniejsze od wierzchowca mogą postanowić zrezygnować z okazji do uników i zamiast tego wykonać pojedynczy atak trzymaną w rękach bronią, który może być wymierzony w wierzchowca albo jego jeźdźca. Atak jest możliwy do wykonania tylko wtedy, gdy istota nie podjęła jeszcze Akcji w tej Rundzie. O ile atak nie zabije albo w inny sposób nie powstrzyma wierzchowca, to kontynuuje on Szarżę.</p>",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.twLaBj2HdhL5cC4v",
             "effects": {
                 "WdtIL33ZjyPasXh4": {
                     "id": "WdtIL33ZjyPasXh4",
+                    "name": "Tratowanie",
                     "scriptData": [
                         {
                             "id": "WdtIL33ZjyPasXh4",
                             "name": "Tratowanie",
                             "script": "let test = await this.actor.setupSkill(game.i18n.localize(\"NAME.Dodge\"), {skipTargets: true, appendTitle : ` - ${this.effect.name}`})\nawait test.roll();\nif (test.failed)\n{\n\tlet sourceActor = this.effect.sourceActor;\n\tthis.script.message(await this.actor.applyBasicDamage(4 + sourceActor.system.characteristics.s.bonus, {suppressMsg : true}))\n}"
                         }
-                    ],
-                    "name": "Tratowanie"
+                    ]
                 }
             },
-            "description": "<p>Tę Cechę może otrzymać jedynie wierzchowiec, który posiada już Cechę Stworzenia @UUID[Compendium.wfrp4e-core.items.V0naR1YbYCl0KIxp]{Wyszkolony (Bojowy)}. Większość oddziałów kawalerii, nawet tych przygotowanych do radzenia sobie z trudami wojny, nie zaszarżuje wprost na dobrze uzbrojonego i ustawionego w porządnym szyku wroga. Wierzchowce z tą Cechą są specjalnie wyszkolone do tego, by ignorować niebezpieczeństwo i szarżować prosto w masę przeciwników.</p><p>Kiedy ktoś dosiadający wierzchowca z tą Cechą wykonuje Szarżę, może przemieścić się przez mniejsze od wierzchowca istoty, by dotrzeć do swojego celu. Każde stworzenie, które wierzchowiec stratuje w ten sposób, musi zdać<strong>Wymagający (+0) Test Uniku</strong>, w przypadku niepowodzenia otrzymuje Obrażenia równe 4 + Bonus z Siły wierzchowca.</p><p>Każde stworzenie, które otrzyma w ten sposób Obrażenia, zmniejsza pozostały Ruch wierzchowca o dwa metry. Istoty Rozmiaru wierzchowca lub większe zatrzymują go całkowicie. Tak czy inaczej, kiedy Szarża wierzchowca się kończy, każdy wróg w zasięgu broni białej jest traktowany, jakby był @UUID[Compendium.wfrp4e-core.journals.NS3YGlJQxwTggjRX.JournalEntryPage.wmA76Q2zJJ9HrkvA#engaged]{Związany Walką}, a Szarża zostaje normalnie przeprowadzona, tak jakby jedna z tych istot była jej celem.</p><p>Stratowane w ten sposób istoty mniejsze od wierzchowca mogą postanowić zrezygnować z okazji do uników i zamiast tego wykonać pojedynczy atak trzymaną w rękach bronią, który może być wymierzony w wierzchowca albo jego jeźdźca. Atak jest możliwy do wykonania tylko wtedy, gdy istota nie podjęła jeszcze Akcji w tej Rundzie. O ile atak nie zabije albo w inny sposób nie powstrzyma wierzchowca, to kontynuuje on Szarżę.</p>",
-            "name": "Wyszkolony (Kawaleria Uderzeniowa)",
             "specification": "Wyszkolona Umiejętność"
         }
     },

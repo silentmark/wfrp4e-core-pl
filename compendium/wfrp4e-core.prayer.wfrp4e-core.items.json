@@ -12,79 +12,55 @@
             "converter": "effects"
         }
     },
+    "folders": {
+        "Prayers": "Modlitwy"
+    },
     "entries": {
-        "Death Mask": {
-            "id": "0AQheUiRtffqfKNg",
-            "name": "Maska śmierci",
-            "description": "<p>Morr działa za twoim pośrednictwem - stajesz się portalem, przez który objawia swą obecność twoim wrogom. Twoja twarz przybiera tak wynędzniały wygląd, że zyskujesz Cechę Stworzenia @UUID[Compendium.wfrp4e-core.items.pTorrE0l3VybAbtn]{Strach 1}.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.0AQheUiRtffqfKNg",
-            "duration": "Bonus Ogd Rund",
-            "target": "Ty",
-            "range": "Ty",
+        "Anchorite's Endurance": {
+            "id": "uMECZBuDnb3qkc7k",
+            "name": "Wytrwałość Eremity",
+            "description": "<p>Twoje szczere modlitwy podobają się Shallyi, która odpowiada, zsyłając siły niezbędne do przetrwania. Cel nie czuje żadnego bólu i ignoruje wszelkie efekty Stanów.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.uMECZBuDnb3qkc7k",
             "effects": {
-                "h88PijhN5NNg1y6Y": {
+                "aaiZynMi60jGc0Jn": {
+                    "id": "aaiZynMi60jGc0Jn",
+                    "name": "Wytrwałość Eremity",
                     "scriptData": [
                         {
-                            "id": "h88PijhN5NNg1y6Y",
-                            "name": "Maska śmierci",
-                            "script": "[Script.AmpDbT0BkDHeaRzf]"
+                            "id": "aaiZynMi60jGc0Jn",
+                            "name": "Wytrwałość Eremity",
+                            "script": "[Script.xpgXWoK2zDnG1uiF]"
                         }
-                    ],
-                    "id": "h88PijhN5NNg1y6Y",
-                    "name": "Maska śmierci"
+                    ]
                 }
             },
-            "god": "Morr"
-        },
-        "Blessing of Hardiness": {
-            "id": "0r3moMIHXsBrcOyh",
-            "name": "Błogosławieństwo Wytrzymałości",
-            "description": "<p>Cel uzyskuje premię +10 do Wytrzymałości.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.0r3moMIHXsBrcOyh",
-            "effects": {
-                "TZyqbCq1ywZ6LtTv": {
-                    "id": "TZyqbCq1ywZ6LtTv",
-                    "name": "Błogosławieństwo Wytrzymałości"
-                }
-            },
-            "duration": "6 Rund",
+            "duration": "Bonus Ogd Rund",
             "target": "1",
-            "range": "6 metrów",
-            "god": "Manann, Sigmar, Taal, Ulryk"
+            "range": "Ogłada metrów",
+            "god": "Shallya"
         },
-        "Rhya's Touch": {
-            "id": "0uT3mzx8v4H3gVQj",
-            "name": "Dotyk Rhyi",
-            "description": "<p>Kładziesz dłonie na zranionym lub chorym celu i wznosisz modlitewne pieśni. Wybierz jeden z poniższych efektów:</p>\n<p>• leczysz liczbę Żywotności równą Bonusowi z Ogłady</p>\n<p>• leczysz 1 naturalnie występującą chorobę.</p>\n<p>Za każde 2 PS możesz wybrać dodatkowy efekt lub wzmocnić już raz wybrany. Cud ten działa powoli, a efekty widać dopiero po około 10 minutach. Jeśli coś przerwie jego działanie, będzie trzeba poprosić bóstwo o kolejny Cud.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.0uT3mzx8v4H3gVQj",
-            "duration": "Specjalny",
+        "Animal Instincts": {
+            "id": "SZ88OXYo6F2q3vWb",
+            "name": "Zwierzęcy Instynkt",
+            "description": "<p>Intonujesz pieśń opisującą nadnaturalne zmysły Taala, wzywając jego pomocy. W trakcie trwania Cudu zyskujesz 1 poziom Talentu @UUID[Compendium.wfrp4e-core.items.9h82z72XGo9tfgQS]{Wyczulony Zmysł (wybierz jeden)}, a kiedy udasz się na spoczynek, natychmiast obudzisz się, jeśli zagrożenie zbliży się na tyle metrów, ile wynosi twoja Inicjatywa.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.SZ88OXYo6F2q3vWb",
+            "duration": "Bonus Ogd Godzin",
             "target": "1",
             "range": "Dotyk",
             "effects": {
-                "FzMgOIeeJEy3DPGL": {
+                "qyW4IN35YlJimtdH": {
+                    "id": "qyW4IN35YlJimtdH",
+                    "name": "Zwierzęcy Instynkt",
                     "scriptData": [
                         {
-                            "id": "FzMgOIeeJEy3DPGL",
-                            "name": "Dotyk Rhyi",
-                            "script": "[Script.vc4bELo0cWYoILfB]"
+                            "id": "qyW4IN35YlJimtdH",
+                            "name": "Zwierzęcy Instynkt",
+                            "script": "[Script.v4ITTsSY9EvCbhZP]"
                         }
-                    ],
-                    "id": "FzMgOIeeJEy3DPGL",
-                    "name": "Wyleczenie choroby"
-                },
-                "slUPiVruBghcFcCQ": {
-                    "scriptData": [
-                        {
-                            "id": "slUPiVruBghcFcCQ",
-                            "name": "Dotyk Rhyi",
-                            "script": "[Script.oV81zgbZsuTFG6L2]"
-                        }
-                    ],
-                    "id": "slUPiVruBghcFcCQ",
-                    "name": "Uzdrowienie"
+                    ]
                 }
             },
-            "god": "Rhya"
+            "god": "Taal"
         },
         "An Invitation": {
             "id": "1MUSq1xRyHCaIuAL",
@@ -96,89 +72,27 @@
             "range": "1 metr",
             "god": "Ranald"
         },
-        "Rhya's Shelter": {
-            "id": "25trttu8NxFQQCo9",
-            "name": "Schronienie Rhyi",
-            "description": "<p>Śpiewasz jeden z hymnów pochwalnych dla Rhyi, opisujący schronienie i bezpieczeństwo. Możesz przyzwać ten Cud jedynie za zewnątrz, poza zabudowaniami. Odkrywasz idealną naturalną kryjówkę. To połączenie ziemi i drzew, które w sam raz nadaje się na mały obóz na noc. Miejsce to chroni cię przed wiatrem i deszczem i będzie trwać, dopóki będziesz w nim obozować. Schronienie jest na tyle duże, by zmieścić jedną osobę. Za każde +2 PS możesz zmieścić 1 osobę więcej. Gdy zwiniesz obóz, nie będziesz już w stanie odszukać tej kryjówki, ponieważ istniało jedynie dzięki woli bogini.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.25trttu8NxFQQCo9",
-            "duration": "Specjalny",
-            "target": "Ty",
-            "range": "Ty",
-            "god": "Rhya"
-        },
-        "Blessing of Righteousness": {
-            "id": "2WN0muIB2BFd4kBO",
-            "name": "Błogosławieństwo Prawości",
-            "description": "<p>Broń celu uznawana jest za Magiczną.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.2WN0muIB2BFd4kBO",
-            "effects": {
-                "lfR1p5Ph2BQCPl3G": {
-                    "id": "lfR1p5Ph2BQCPl3G",
-                    "name": "Błogosławieństwo Prawości",
-                    "scriptData": [
-                        {
-                            "id": "lfR1p5Ph2BQCPl3G",
-                            "name": "Magiczna broń",
-                            "script": "[Script.eWWLmA2xINR321aK]"
-                        }
-                    ],
-                    "filter": "return args.type == \"weapon\";"
-                }
-            },
-            "duration": "6 Rund",
-            "target": "1",
-            "range": "6 metrów",
-            "god": "Morr, Myrmidia, Sigmar, Verena"
-        },
-        "Pelt of the Winter Wolf": {
-            "id": "3ONBOTaeWq657MQR",
-            "name": "Futro zimowego wilka",
-            "description": "<p>Twoje gardłowe modlitwy zwracają na ciebie uwagę Ulryka, dzięki czemu twoje cele są w stanie przeżyć kąsanie jego królestwa. Mimo iż cele nadal będą odczuwać ból i niedogodności zimna i zimowej pogody, nie otrzymają żadnych fizycznych obrażeń.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.3ONBOTaeWq657MQR",
-            "duration": "Bonus Ogd Godzin",
-            "target": "1",
-            "range": "Dotyk",
-            "effects": {
-                "kLZ9SuRbFKuZrdyT": {
-                    "id": "kLZ9SuRbFKuZrdyT",
-                    "name": "Futro zimowego wilka"
-                }
-            },
-            "god": "Ulryk"
-        },
-        "Soulfire": {
-            "id": "5fVTY8TSua3trOW8",
-            "name": "Płomień Wiary",
-            "description": "<p>Wzywasz potęgę Sigmara, by zmiażdżyła wrogów Imperium. Święty ogień eksploduje wprost z twojego ciała w promieniu tylu metrów, ile wynosi Bonus z Ogłady. Wszystkie cele w zasięgu otrzymują 1k10 Obrażeń, które ignorują Bonus z Wytrzymałości oraz Punkty Pancerza. Cele, które mają Cechę Stworzenia <em>Demoniczny</em> lub <em>Ożywieniec</em>, otrzymują dodatkowo 1 poziom Podpalenia. Za każde +2 PS możesz zwiększyć promień okręgu o tyle metrów, ile wynosi Bonus z Ogłady, lub zadać dodatkowe 2 Obrażenia wszelkim zielonoskórym, ożywieńcom lub sługom Niszczycielskich Potęg.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.5fVTY8TSua3trOW8",
-            "effects": {
-                "qpp49hHsrz2VmP1E": {
-                    "id": "qpp49hHsrz2VmP1E",
-                    "name": "Płomień Wiary",
-                    "scriptData": [
-                        {
-                            "id": "qpp49hHsrz2VmP1E",
-                            "name": "Płomień Wiary",
-                            "script": "[Script.xobGBJbgFjQCrwvq]"
-                        }
-                    ],
-                    "filter": "return this.effect.sourceActor.uuid == this.actor.uuid;"
-                }
-            },
-            "duration": "Natychmiast",
-            "target": "Bonus Ogd Metrów",
-            "range": "Ty",
-            "god": "Sigmar"
-        },
-        "Eagle's Eye": {
-            "id": "7KUKKbXBv8MbyEHt",
-            "name": "Z lotu orła",
-            "description": "<p>Wzywasz Myrmidię, by zesłała Sługę bożego, który podzieli się z tobą wiedzą o twoich wrogach. Na niebie pojawia się szybujący, widmowy orzeł. Wygląda jak zwykły orzeł i ma identyczne zdolności, ale nie może fizycznie wpływać na świat. Nie może też zostać w żaden sposób zraniony. Podczas trwania Cudu możesz patrzeć oczami orła i kontrolować jego lot, przeczesując pole bitwy i szpiegując swoich wrogów. Obraz jest ostry, ale nie masz dostępu do żadnych Talentów postaci, które wzmacniają zmysły, jak np. Widzenie w Ciemności. Gdy patrzysz na świat oczami orła, tracisz wzrok, więc lepiej, by ktoś w tym czasie mógł cię ochraniać.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.7KUKKbXBv8MbyEHt",
+        "As Verena is My Witness": {
+            "id": "jXyyzYWid3nruQmc",
+            "name": "Verena mi świadkiem",
+            "description": "<p><span class=\"fontstyle0\">Wzywasz Verenę na świadka, a prawda twoich słów aż bije dookoła jasnym blaskiem. Podczas trwania Cudu, zakładając, iż mówisz jedynie prawdę, wszyscy słyszący twoje słowa będą wierzyli, że mówisz prawdę. Nie oznacza to jednak, że zgodzą się z twoim zdaniem lub wnioskami.</span> </p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.jXyyzYWid3nruQmc",
             "duration": "Bonus Ogd Rund",
             "target": "Ty",
-            "range": "Ogłada metrów",
-            "god": "Myrmidia"
+            "range": "Ty",
+            "effects": {
+                "Auvp8VLd13SyGbh3": {
+                    "id": "Auvp8VLd13SyGbh3",
+                    "name": "Verena mi świadkiem",
+                    "scriptData": [
+                        {
+                            "id": "Auvp8VLd13SyGbh3",
+                            "name": "Verena mi świadkiem"
+                        }
+                    ]
+                }
+            },
+            "god": "Verena"
         },
         "Balm to a Wounded Mind": {
             "id": "8LcAFB6W37LDN70K",
@@ -195,138 +109,6 @@
                 }
             },
             "god": "Shallya"
-        },
-        "Howl of the Wolf": {
-            "id": "9ALNZLZUZSLrLvkd",
-            "name": "Wilczy zew",
-            "description": "<p>Wyjesz jak wilk, prosząc Ulryka o pomoc, a ten zsyła pomniejszego Sługę bożego w postaci Białego Wilka. Wilk będzie walczył z twoimi wrogami przez Czas Cudu, zanim zniknie i wróci na Łowisko Ulryka, wydawszy ostatnie, widmowe wycie, które mrozi krew w żyłach. Białe Wilki mają statystyki normalnych wilków (strona 317), ale dodatkowo odznaczają się także Cechami Stworzenia @UUID[Compendium.wfrp4e-core.items.yRhhOlt18COq4e1q]{Furia}, @UUID[Compendium.wfrp4e-core.items.mDgEMOoJpi8DkRYb]{Magiczny } oraz @UUID[Compendium.wfrp4e-core.items.8slW8CJ2oVTxeQ6q]{Rozmiar (Duży).</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.9ALNZLZUZSLrLvkd",
-            "duration": "Bonus Ogd Rund",
-            "target": "Specjalny",
-            "range": "Ogłada metrów",
-            "god": "Ulryk"
-        },
-        "Cat's Eyes": {
-            "id": "Bo3ukcaipFNb7Ljl",
-            "name": "Koci wzrok",
-            "description": "<p>Czy coś może istnieć, jeśli nie da się tego dojrzeć? Zadajesz zagadkę Ranaldowi, który odpowiada wysłaniem Sługi bożego pod postacią kota. Wygląda jak zwykły kot i ma identyczne zdolności, ale nie może zostać w żaden sposób zraniony. W czasie gdy trwa Cud, postrzegasz świat zmysłami owego kota - wzrokiem, słuchem, dotykiem - i kontrolujesz jego ruchy. Twoje zmysły są czułe jak u normalnego kota, ale nie masz dostępu do żadnych Talentów postaci, które wzmacniają zmysły, jak np. @UUID[Compendium.wfrp4e-core.items.Item.x0WMGwuQzReXcQrs]Widzenie w Ciemności}. W tym czasie twoje zmysły nie działają, co sprawia, że możesz znaleźć się w niebezpieczeństwie.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.Bo3ukcaipFNb7Ljl",
-            "duration": "Bonus Ogd Rund",
-            "target": "Ty",
-            "range": "Ogłada metrów",
-            "god": "Ranald"
-        },
-        "Spear of Myrmidia": {
-            "id": "BVZWihaal1zq3aJs",
-            "name": "Włócznia Myrmidii",
-            "description": "<p>Kiedy dzierżysz włócznię, zyskuje ona właściwość <i>Przebijająca</i> i uznaje się ją za Magiczną.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.BVZWihaal1zq3aJs",
-            "duration": "Bonus Ogd Rund",
-            "target": "Ty",
-            "range": "Ty",
-            "effects": {
-                "neBm0x6oS63U5q6N": {
-                    "scriptData": [
-                        {
-                            "id": "neBm0x6oS63U5q6N",
-                            "name": "Włócznia Myrmidii",
-                            "script": "[Script.8oE0DTzz0krOfFlV]"
-                        }
-                    ],
-                    "id": "neBm0x6oS63U5q6N",
-                    "name": "Włócznia Myrmidii",
-                    "filter": "return args.type == \"weapon\""
-                }
-            },
-            "god": "Myrmidia"
-        },
-        "Blessing of The Hunt": {
-            "id": "By5dc8Q7ZAGpr177",
-            "name": "Błogosławieństwo Łowów",
-            "description": "<p>Cel uzyskuje premię +10 do Umiejętności Strzeleckich.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.By5dc8Q7ZAGpr177",
-            "effects": {
-                "tVy8wXAtGTHx0qsV": {
-                    "id": "tVy8wXAtGTHx0qsV",
-                    "name": "Błogosławieństwo Łowów"
-                }
-            },
-            "duration": "6 Rund",
-            "target": "1",
-            "range": "6 metrów",
-            "god": "Taal"
-        },
-        "Blessing of Healing": {
-            "id": "C92dpJPRYpkZFsGu",
-            "name": "Błogosławieństwo Uzdrawiania",
-            "description": "<p>1 Rana twojego celu zostaje uleczona.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.C92dpJPRYpkZFsGu",
-            "effects": {
-                "xBeaS7jKIhHvsBaC": {
-                    "id": "xBeaS7jKIhHvsBaC",
-                    "name": "Błogosławieństwo Uzdrawiania",
-                    "scriptData": [
-                        {
-                            "id": "xBeaS7jKIhHvsBaC",
-                            "name": "Błogosławieństwo Uzdrawiania",
-                            "script": "[Script.87rrZ3ojHrXa3lCn]"
-                        }
-                    ]
-                }
-            },
-            "duration": "Natychmiast",
-            "target": "1",
-            "range": "Dotyk",
-            "god": "Rhya, Shallya"
-        },
-        "Blessing of Courage": {
-            "id": "Cg2Q3TV66cpmheHS",
-            "name": "Błogosławieństwo Odwagi",
-            "description": "<p>Cel uzyskuje premię +10 do Siły Woli.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.Cg2Q3TV66cpmheHS",
-            "effects": {
-                "xfFaPn5kqQz7CRBJ": {
-                    "id": "xfFaPn5kqQz7CRBJ",
-                    "name": "Błogosławieństwo Odwagi"
-                }
-            },
-            "duration": "6 Rund",
-            "target": "1",
-            "range": "6 metrów",
-            "god": "Manann, Morr, Myrmidia, Sigmar, Ulryk, Verena"
-        },
-        "Truth Will Out": {
-            "id": "DA4ZB3HkOh51vhuB",
-            "name": "Prawdomówność",
-            "description": "<p>Intonujesz modlitwę do Vereny, chwaląc jej umiejętności odnajdywania prawdy. Możesz zadać celom jedno pytanie. Muszą odpowiedzieć natychmiast, zgodnie z prawdą i nie zatajając niczego. Jeśli cele będą chciały się opierać, muszą wykonać <strong>Przeciętny (+20) Test Opanowania</strong> i uzyskać więcej PS niż ty. Jeśli im się powiedzie, będą uparcie odmawiać odpowiedzi. Jeśli uzyskają 2 PS więcej niż ty, będą w stanie ukryć drobne szczegóły. 4 PS więcej umożliwią im zatajenie ważnej informacji, a 6 PS więcej oznacza, że mogą łgać w żywe oczy. Będziesz wiedzieć, czy udało im się odeprzeć zaklęcie, ale nie będziesz wiedzieć nic o ich podstępach czy mieć jakichkolwiek dowodów, by ujawnić oszustwa.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.DA4ZB3HkOh51vhuB",
-            "duration": "Natychmiast",
-            "target": "1",
-            "range": "Bonus Ogd Metrów",
-            "effects": {
-                "aYQSXtW45SbZbfTQ": {
-                    "scriptData": [
-                        {
-                            "id": "aYQSXtW45SbZbfTQ",
-                            "name": "Prawdomówność",
-                            "script": "[Script.E6DMqfDeczqmVMFV]"
-                        }
-                    ],
-                    "id": "aYQSXtW45SbZbfTQ",
-                    "name": "Prawdomówność"
-                }
-            },
-            "god": "Verena"
-        },
-        "Rhya's Union": {
-            "id": "dDxhGgBBM9CugxsH",
-            "name": "Zjednoczenie Rhyi",
-            "description": "<p>Błogosławisz i konsekrujesz połączenie dwóch dusz. W trakcie trwania Cudu, jeśli to biologicznie możliwe, para spłodzi dziecko.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.dDxhGgBBM9CugxsH",
-            "duration": "Bonus Ogd Godzin",
-            "target": "Specjalny",
-            "range": "Dotyk",
-            "god": "Rhya"
         },
         "Beacon of Righteous Virtue": {
             "id": "Dk0zjtcANtahntHx",
@@ -351,21 +133,61 @@
             "range": "Ty",
             "god": "Sigmar"
         },
-        "Blessing of Savagery": {
-            "id": "eBRjKAF6U0yR0KK8",
-            "name": "Błogosławieństwo Dzikości",
-            "description": "<p>Gdy twój cel zada Ranę Krytyczną, rzuć dwa razy i wybierz lepszy rezultat.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.eBRjKAF6U0yR0KK8",
+        "Becalm": {
+            "id": "Geo6EAR39JzaP9P2",
+            "name": "Cisza morska",
+            "description": "<p>Kradniesz wiatr z żagli statku lub łodzi. Bez wiatru jednostka żeglowna zostaje kompletnie unieruchomiona. Nawet podczas sztormu powstaje obszar dziwnie spokojnej i gładkiej wody, która otacza łódź, mimo iż dookoła szaleje wicher, leje deszcz, a wysokie jak wieże fale przewalają się tu i ówdzie, grożąc zatopieniem statku. Obszar ten rozciąga się dookoła łodzi na tyle metrów, ile wynosi Inicjatywa, a jeśli statek jest napędzany w inny sposób, np. wiosłami, obszar przemieszcza się razem z nim.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.Geo6EAR39JzaP9P2",
+            "duration": "1 Godzina",
+            "target": "1 okręt w zasięgu widzenia",
+            "range": "Bonus I Kilometrów",
+            "god": "Manann"
+        },
+        "Bitter Catharsis": {
+            "id": "UtgGJK46K08TZpP5",
+            "name": "Gorzkie oczyszczenie",
+            "description": "<p>W odpowiedzi na twoje płynące z głębi serca modlitwy Shallya przenosi truciznę lub chorobę z twojego celu na ciebie. Cel zdrowieje, a jego dolegliwości znikają. Za każde +2 PS możesz oczyścić organizm z dodatkowej choroby lub trucizny. Za każdą usuniętą w ten sposób truciznę lub chorobę otrzymujesz Obrażenia równe [[/r 1d10]]{1k10} - Bonus z Ogłady i ignorujące Bonus z Wytrzymałości oraz Punkty Pancerza.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.UtgGJK46K08TZpP5",
+            "duration": "Natychmiast",
+            "target": "1",
+            "range": "Dotyk",
             "effects": {
-                "LGXFRw2UC3M1ZCRf": {
-                    "id": "LGXFRw2UC3M1ZCRf",
-                    "name": "Błogosławieństwo Dzikości"
+                "Z0GLLTahLhnGYyhg": {
+                    "id": "Z0GLLTahLhnGYyhg",
+                    "name": "Gorzkie oczyszczenie",
+                    "scriptData": [
+                        {
+                            "id": "Z0GLLTahLhnGYyhg",
+                            "name": "Gorzkie oczyszczenie",
+                            "script": "[Script.v4CCxVaVGf9i8U7X]"
+                        }
+                    ]
                 }
             },
-            "duration": "6 Rund",
-            "target": "1",
-            "range": "6 metrów",
-            "god": "Manann, Taal, Ulryk"
+            "god": "Shallya"
+        },
+        "Blazing Sun": {
+            "id": "Q91bWCEn0gt33fGT",
+            "name": "Gorejące słońce",
+            "description": "<p>Wzywasz Myrmidię, by poraziła niegodnych wrogów na polu bitwy, a jej odpowiedź przybiera postać oślepiającego rozbłysku złotego światła. Wszyscy, którzy nie wyznają Myrmidii, a spojrzą w twoim kierunku, otrzymają 1 poziom @Condition[Oślepienie]{Oślepienia}. Za każde +2 PS otrzymują +1 poziom @Condition[Oślepienie]{Oślepienia}.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.Q91bWCEn0gt33fGT",
+            "effects": {
+                "JlsdDkPK9j9Y65sB": {
+                    "id": "JlsdDkPK9j9Y65sB",
+                    "name": "Gorejące słońce",
+                    "scriptData": [
+                        {
+                            "id": "JlsdDkPK9j9Y65sB",
+                            "name": "Gorejące słońce",
+                            "script": "[Script.xMhhVol8Is3DJ3gb]"
+                        }
+                    ]
+                }
+            },
+            "duration": "Natychmiast",
+            "target": "Ogłada metrów",
+            "range": "Ty",
+            "god": "Myrmidia"
         },
         "Blessing of Battle": {
             "id": "ElmLfnrXliStS9CP",
@@ -382,6 +204,584 @@
             "target": "1",
             "range": "6 metrów",
             "god": "Manann, Myrmidia, Sigmar, Taal, Ulryk"
+        },
+        "Blessing of Breath": {
+            "id": "TKHvOsihelBStO6i",
+            "name": "Błogosławieństwo Oddechu",
+            "description": "<p>Cel nie musi oddychać i ignoruje wszelkie konsekwencje duszenia się.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.TKHvOsihelBStO6i",
+            "duration": "6 Rund",
+            "target": "1",
+            "range": "6 metrów",
+            "effects": {
+                "svizyaSIJocqQanw": {
+                    "id": "svizyaSIJocqQanw",
+                    "name": "Błogosławieństwo Oddechu",
+                    "scriptData": [
+                        {
+                            "id": "svizyaSIJocqQanw",
+                            "name": "Błogosławieństwo Oddechu"
+                        }
+                    ]
+                }
+            },
+            "god": "Manann, Morr, Rhya, Shallya, Taal"
+        },
+        "Blessing of Charisma": {
+            "id": "FElNQGNiPzaOwwKT",
+            "name": "Błogosławieństwo Charyzmy",
+            "description": "<p>Cel uzyskuje premię +10 do Ogłady.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.FElNQGNiPzaOwwKT",
+            "effects": {
+                "NO3FdQ5qx6B5PjPm": {
+                    "id": "NO3FdQ5qx6B5PjPm",
+                    "name": "Błogosławieństwo Charyzmy"
+                }
+            },
+            "duration": "6 Rund",
+            "target": "1",
+            "range": "6 metrów",
+            "god": "Ranald"
+        },
+        "Blessing of Conscience": {
+            "id": "tEMwdlHM8A40h6HE",
+            "name": "Błogosławieństwo Sumienia",
+            "description": "<p>Cel musi wykonać <strong>Przeciętny (+20) Test Siły Woli</strong>, aby wykonać Akcję, która naruszałaby jedno z przykazań twojego bóstwa. Jeśli Test się nie uda, cel ogarnia wstyd i nie podejmuje żadnej Akcji.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.tEMwdlHM8A40h6HE",
+            "duration": "6 Rund",
+            "target": "1",
+            "range": "6 metrów",
+            "effects": {
+                "20GOIXJFrxNHLpE6": {
+                    "id": "20GOIXJFrxNHLpE6",
+                    "name": "Błogosławieństwo Sumienia",
+                    "scriptData": [
+                        {
+                            "id": "20GOIXJFrxNHLpE6",
+                            "name": "Błogosławieństwo Sumienia"
+                        }
+                    ]
+                }
+            },
+            "god": "Myrmidia, Ranald, Rhya, Shallya, Taal, Verena"
+        },
+        "Blessing of Courage": {
+            "id": "Cg2Q3TV66cpmheHS",
+            "name": "Błogosławieństwo Odwagi",
+            "description": "<p>Cel uzyskuje premię +10 do Siły Woli.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.Cg2Q3TV66cpmheHS",
+            "effects": {
+                "xfFaPn5kqQz7CRBJ": {
+                    "id": "xfFaPn5kqQz7CRBJ",
+                    "name": "Błogosławieństwo Odwagi"
+                }
+            },
+            "duration": "6 Rund",
+            "target": "1",
+            "range": "6 metrów",
+            "god": "Manann, Morr, Myrmidia, Sigmar, Ulryk, Verena"
+        },
+        "Blessing of Finesse": {
+            "id": "OkKWAfnMiHfxhTnB",
+            "name": "Błogosławieństwo Finezji",
+            "description": "<p>Cel uzyskuje premię +10 do Zręczności.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.OkKWAfnMiHfxhTnB",
+            "effects": {
+                "HZaxjSj49yUXZYCn": {
+                    "id": "HZaxjSj49yUXZYCn",
+                    "name": "Błogosławieństwo Finezji"
+                }
+            },
+            "duration": "6 Rund",
+            "target": "1",
+            "range": "6 metrów",
+            "god": "Ranald"
+        },
+        "Blessing of Fortune": {
+            "id": "iIfYOlNrLb0uiV8c",
+            "name": "Błogosławieństwo Szczęścia",
+            "description": "<p>Następny nieudany Test twojego celu może zostać powtórzony. Wiążący jest nowy wynik Testu.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.iIfYOlNrLb0uiV8c",
+            "effects": {
+                "FDxjikn1S8EqbYZU": {
+                    "id": "FDxjikn1S8EqbYZU",
+                    "name": "Błogosławieństwo Szczęścia",
+                    "scriptData": [
+                        {
+                            "id": "FDxjikn1S8EqbYZU",
+                            "name": "Błogosławieństwo Szczęścia"
+                        }
+                    ]
+                }
+            },
+            "duration": "6 Rund",
+            "target": "1",
+            "range": "6 metrów",
+            "god": "Morr, Myrmidia, Ranald, Verena"
+        },
+        "Blessing of Grace": {
+            "id": "maUl7MoLvuvTOhM0",
+            "name": "Błogosławieństwo Wdzięku",
+            "description": "<p>Cel uzyskuje premię +10 do Zwinności.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.maUl7MoLvuvTOhM0",
+            "effects": {
+                "GjyHbaIqJLZYxLq4": {
+                    "id": "GjyHbaIqJLZYxLq4",
+                    "name": "Błogosławieństwo Wdzięku"
+                }
+            },
+            "duration": "6 Rund",
+            "target": "1",
+            "range": "6 metrów",
+            "god": "Rhya"
+        },
+        "Blessing of Hardiness": {
+            "id": "0r3moMIHXsBrcOyh",
+            "name": "Błogosławieństwo Wytrzymałości",
+            "description": "<p>Cel uzyskuje premię +10 do Wytrzymałości.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.0r3moMIHXsBrcOyh",
+            "effects": {
+                "TZyqbCq1ywZ6LtTv": {
+                    "id": "TZyqbCq1ywZ6LtTv",
+                    "name": "Błogosławieństwo Wytrzymałości"
+                }
+            },
+            "duration": "6 Rund",
+            "target": "1",
+            "range": "6 metrów",
+            "god": "Manann, Sigmar, Taal, Ulryk"
+        },
+        "Blessing of Healing": {
+            "id": "C92dpJPRYpkZFsGu",
+            "name": "Błogosławieństwo Uzdrawiania",
+            "description": "<p>1 Rana twojego celu zostaje uleczona.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.C92dpJPRYpkZFsGu",
+            "effects": {
+                "xBeaS7jKIhHvsBaC": {
+                    "id": "xBeaS7jKIhHvsBaC",
+                    "name": "Błogosławieństwo Uzdrawiania",
+                    "scriptData": [
+                        {
+                            "id": "xBeaS7jKIhHvsBaC",
+                            "name": "Błogosławieństwo Uzdrawiania",
+                            "script": "[Script.87rrZ3ojHrXa3lCn]"
+                        }
+                    ]
+                }
+            },
+            "duration": "Natychmiast",
+            "target": "1",
+            "range": "Dotyk",
+            "god": "Rhya, Shallya"
+        },
+        "Blessing of Might": {
+            "id": "KSDrXcieyRc37YI7",
+            "name": "Błogosławieństwo Siły",
+            "description": "<p>Cel uzyskuje premię +10 do Siły.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.KSDrXcieyRc37YI7",
+            "effects": {
+                "Gas9DsCrikTUmUtu": {
+                    "id": "Gas9DsCrikTUmUtu",
+                    "name": "Błogosławieństwo Siły"
+                }
+            },
+            "duration": "6 Rund",
+            "target": "1",
+            "range": "6 metrów",
+            "god": "Sigmar, Ulryk"
+        },
+        "Blessing of Protection": {
+            "id": "K5DE9cceinUTIrem",
+            "name": "Błogosławieństwo Ochrony",
+            "description": "<p>Przeciwnicy muszą wykonać <strong>Przeciętny (+20) Test Siły Woli</strong>, by zaatakować obrany przez siebie cel, ponieważ zaczyna kąsać ich poczucie wstydu, iż w ogóle zaczęli myśleć o użyciu przemocy. Jeśli Test się nie powiedzie, albo muszą wybrać inny cel ataku, albo inną Akcję.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.K5DE9cceinUTIrem",
+            "effects": {
+                "qMveUjAJldH1xhlZ": {
+                    "id": "qMveUjAJldH1xhlZ",
+                    "name": "Błogosławieństwo Ochrony",
+                    "scriptData": [
+                        {
+                            "id": "qMveUjAJldH1xhlZ",
+                            "name": "Błogosławieństwo Ochrony",
+                            "hideScript": "[Script.Jnp5c09sPzDD61EK]"
+                        }
+                    ]
+                }
+            },
+            "duration": "6 Rund",
+            "target": "1",
+            "range": "6 metrów",
+            "god": "Myrmidia, Ranald, Rhya, Shallya, Sigmar"
+        },
+        "Blessing of Recuperation": {
+            "id": "Jkt465WPdRcejLwl",
+            "name": "Błogosławieństwo Zdrowia",
+            "description": "<p>Twój cel może skrócić Czas jednej choroby o 1 dzień. Modlitwa ta może być zmówiona jedynie raz w intencji jednej choroby, na którą choruje dana osoba.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.Jkt465WPdRcejLwl",
+            "effects": {
+                "0MpJUKwHZIc5wMWy": {
+                    "id": "0MpJUKwHZIc5wMWy",
+                    "name": "Błogosławieństwo Zdrowia"
+                }
+            },
+            "duration": "Natychmiast",
+            "target": "1",
+            "range": "Dotyk",
+            "god": "Rhya, Shallya"
+        },
+        "Blessing of Righteousness": {
+            "id": "2WN0muIB2BFd4kBO",
+            "name": "Błogosławieństwo Prawości",
+            "description": "<p>Broń celu uznawana jest za Magiczną.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.2WN0muIB2BFd4kBO",
+            "effects": {
+                "lfR1p5Ph2BQCPl3G": {
+                    "id": "lfR1p5Ph2BQCPl3G",
+                    "name": "Błogosławieństwo Prawości",
+                    "filter": "return args.type == \"weapon\";",
+                    "scriptData": [
+                        {
+                            "id": "lfR1p5Ph2BQCPl3G",
+                            "name": "Magiczna broń",
+                            "script": "[Script.eWWLmA2xINR321aK]"
+                        }
+                    ]
+                }
+            },
+            "duration": "6 Rund",
+            "target": "1",
+            "range": "6 metrów",
+            "god": "Morr, Myrmidia, Sigmar, Verena"
+        },
+        "Blessing of Savagery": {
+            "id": "eBRjKAF6U0yR0KK8",
+            "name": "Błogosławieństwo Dzikości",
+            "description": "<p>Gdy twój cel zada Ranę Krytyczną, rzuć dwa razy i wybierz lepszy rezultat.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.eBRjKAF6U0yR0KK8",
+            "effects": {
+                "LGXFRw2UC3M1ZCRf": {
+                    "id": "LGXFRw2UC3M1ZCRf",
+                    "name": "Błogosławieństwo Dzikości"
+                }
+            },
+            "duration": "6 Rund",
+            "target": "1",
+            "range": "6 metrów",
+            "god": "Manann, Taal, Ulryk"
+        },
+        "Blessing of Tenacity": {
+            "id": "GvaOlWY8iD5CO1WB",
+            "name": "Błogosławieństwo Nieustępliwości",
+            "description": "<p>Cel może usunąć 1 Stan.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.GvaOlWY8iD5CO1WB",
+            "duration": "Natychmiast",
+            "target": "1",
+            "range": "6 metrów",
+            "effects": {
+                "uxCZ2uplQQJcwRgu": {
+                    "id": "uxCZ2uplQQJcwRgu",
+                    "name": "Błogosławieństwo Nieustępliwości",
+                    "scriptData": [
+                        {
+                            "id": "uxCZ2uplQQJcwRgu",
+                            "name": "Błogosławieństwo Nieustępliwości",
+                            "script": "[Script.QRSACifDrvojIXHB]"
+                        }
+                    ]
+                }
+            },
+            "god": "Manann, Morr, Shallya, Ulryk"
+        },
+        "Blessing of The Hunt": {
+            "id": "By5dc8Q7ZAGpr177",
+            "name": "Błogosławieństwo Łowów",
+            "description": "<p>Cel uzyskuje premię +10 do Umiejętności Strzeleckich.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.By5dc8Q7ZAGpr177",
+            "effects": {
+                "tVy8wXAtGTHx0qsV": {
+                    "id": "tVy8wXAtGTHx0qsV",
+                    "name": "Błogosławieństwo Łowów"
+                }
+            },
+            "duration": "6 Rund",
+            "target": "1",
+            "range": "6 metrów",
+            "god": "Taal"
+        },
+        "Blessing of Wisdom": {
+            "id": "FRkIz2sR7ZC92W2G",
+            "name": "Błogosławieństwo Mądrości",
+            "description": "<p>Cel uzyskuje premię +10 do Inteligencji.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.FRkIz2sR7ZC92W2G",
+            "effects": {
+                "zcary1qugwge597m": {
+                    "id": "zcary1qugwge597m",
+                    "name": "Błogosławieństwo Mądrości"
+                }
+            },
+            "duration": "6 Rund",
+            "target": "1",
+            "range": "6 metrów",
+            "god": "Morr, Verena"
+        },
+        "Blessing of Wit": {
+            "id": "tMocig1z9dHKNiCT",
+            "name": "Błogosławieństwo Sprytu",
+            "description": "<p>Cel uzyskuje premię +10 do Inicjatywy.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.tMocig1z9dHKNiCT",
+            "effects": {
+                "HzWovpDiGQ129yZu": {
+                    "id": "HzWovpDiGQ129yZu",
+                    "name": "Błogosławieństwo Sprytu"
+                }
+            },
+            "duration": "6 Rund",
+            "target": "1",
+            "range": "6 metrów",
+            "god": "Ranald, Verena"
+        },
+        "Blind Justice": {
+            "id": "R6Q16WOXcPfaHnOb",
+            "name": "Ślepa dziewica",
+            "description": "<p>Wymawiasz modlitwy sławiące wyostrzone zmysły Vereny, które są w stanie przejrzeć wszelkie rzeczy i ujrzeć prawdę. Wykonaj <strong>Prosty Wymagający (+0) Test Percepcji</strong>, by przejrzeć wszelkie zaklęcia i Cuda, których efektem są iluzje lub zmylenie zmysłów. Możesz również wykonać <strong>Przeciętny (+20) Test Intuicji</strong>, by ustalić, czy osoba, z którą rozmawiasz, kłamie, czy nie. <strong>Uwaga!</strong> Dowiesz się jedynie, czy postać wierzy, że mówi prawdę. Jeśli się po prostu myli, ten efekt tego nie zdradzi.<br><br></p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.R6Q16WOXcPfaHnOb",
+            "duration": "Bonus Ogd Rund",
+            "target": "Ty",
+            "range": "Ty",
+            "effects": {
+                "DAK4rm9dlR6SBJSb": {
+                    "id": "DAK4rm9dlR6SBJSb",
+                    "name": "Ślepa dziewica",
+                    "scriptData": [
+                        {
+                            "id": "DAK4rm9dlR6SBJSb",
+                            "name": "Ślepa dziewica"
+                        }
+                    ]
+                }
+            },
+            "god": "Verena"
+        },
+        "Cat's Eyes": {
+            "id": "Bo3ukcaipFNb7Ljl",
+            "name": "Koci wzrok",
+            "description": "<p>Czy coś może istnieć, jeśli nie da się tego dojrzeć? Zadajesz zagadkę Ranaldowi, który odpowiada wysłaniem Sługi bożego pod postacią kota. Wygląda jak zwykły kot i ma identyczne zdolności, ale nie może zostać w żaden sposób zraniony. W czasie gdy trwa Cud, postrzegasz świat zmysłami owego kota - wzrokiem, słuchem, dotykiem - i kontrolujesz jego ruchy. Twoje zmysły są czułe jak u normalnego kota, ale nie masz dostępu do żadnych Talentów postaci, które wzmacniają zmysły, jak np. @UUID[Compendium.wfrp4e-core.items.Item.x0WMGwuQzReXcQrs]Widzenie w Ciemności}. W tym czasie twoje zmysły nie działają, co sprawia, że możesz znaleźć się w niebezpieczeństwie.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.Bo3ukcaipFNb7Ljl",
+            "duration": "Bonus Ogd Rund",
+            "target": "Ty",
+            "range": "Ogłada metrów",
+            "god": "Ranald"
+        },
+        "Death Mask": {
+            "id": "0AQheUiRtffqfKNg",
+            "name": "Maska śmierci",
+            "description": "<p>Morr działa za twoim pośrednictwem - stajesz się portalem, przez który objawia swą obecność twoim wrogom. Twoja twarz przybiera tak wynędzniały wygląd, że zyskujesz Cechę Stworzenia @UUID[Compendium.wfrp4e-core.items.pTorrE0l3VybAbtn]{Strach 1}.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.0AQheUiRtffqfKNg",
+            "duration": "Bonus Ogd Rund",
+            "target": "Ty",
+            "range": "Ty",
+            "effects": {
+                "h88PijhN5NNg1y6Y": {
+                    "id": "h88PijhN5NNg1y6Y",
+                    "name": "Maska śmierci",
+                    "scriptData": [
+                        {
+                            "id": "h88PijhN5NNg1y6Y",
+                            "name": "Maska śmierci",
+                            "script": "[Script.AmpDbT0BkDHeaRzf]"
+                        }
+                    ]
+                }
+            },
+            "god": "Morr"
+        },
+        "Destroy Undead": {
+            "id": "sdSy4k7ygDhAjSSX",
+            "name": "Zniszczenie ożywieńca",
+            "description": "<p>Przyzywasz moce Morra, by zmieść nieumarłych z powierzchni ziemi. Czarny ogień błyska na twoim ciele, formując idealny okrąg o promieniu równym Bonusowi z Ogłady w metrach. Wszystkie potencjalne cele o Cesze Stworzenia <i>Ożywieniec</i> otrzymują [[/r 1d10]]{1k10} Obrażeń ignorujących Bonus z Wytrzymałości oraz Punkty Pancerza. Każdy <i>Ożywieniec</i> zniszczony dzięki temu Cudowi nie może zostać wskrzeszony za pomocą nekromancji, przynajmniej w standardowych okolicznościach. Za każde +2 PS możesz zwiększyć zasięg okręgu o tyle metrów, ile wynosi Bonus z Ogłady.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.sdSy4k7ygDhAjSSX",
+            "effects": {
+                "HqH1WB4M1YCR0kRg": {
+                    "id": "HqH1WB4M1YCR0kRg",
+                    "name": "Zniszczenie ożywieńca",
+                    "filter": "return !this.actor.has(game.i18n.localize(\"NAME.Undead\"))",
+                    "scriptData": [
+                        {
+                            "id": "HqH1WB4M1YCR0kRg",
+                            "name": "Zniszczenie ożywieńca",
+                            "script": "[Script.GTZUO73pUJKpM1JB]"
+                        }
+                    ]
+                }
+            },
+            "duration": "Natychmiast",
+            "target": "Bonus Ogd Metrów",
+            "range": "Ty",
+            "god": "Morr"
+        },
+        "Dooming": {
+            "id": "itARFNqBAbwNDAAy",
+            "name": "Wróżba Losu",
+            "description": "<p>Spozierasz głęboko w oczy swojego celu, szepcząc treny do Morra, który nagradza cię wizją losu celu, przebłysku czekającej go przyszłości. Zazwyczaj jest to wizja związana ze śmiercią. Cud może zostać wykorzystany jedynie raz w stosunku do tej samej osoby, po czym Talent @UUID[Compendium.wfrp4e-core.items.fn8QNQQ1S2rh12Us]{Wróżba Losu} można wykupić za PD, tak jakby był normalną częścią Profesji.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.itARFNqBAbwNDAAy",
+            "duration": "Natychmiast",
+            "target": "1",
+            "range": "Dotyk",
+            "god": "Morr"
+        },
+        "Drowned Man's Face": {
+            "id": "i5DW3xX2lGu6Pps6",
+            "name": "Twarz topielca",
+            "description": "<p>Błagasz Mananna o to, by utopił twoich wrogów. Gdy Cud jest aktywny, płuca celów nieustannie wypełniają się słoną wodą, a ich włosy powiewają w powietrzu, jakby były pod wodą. Cel otrzymuje 1 poziom @Condition[Zmęczenie]{Zmęczenia} i podczas trwania Cudu stosuje się do niego wszystkie zasady @UUID[JCompendium.wfrp4e-core.journalEntrys.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#utoniecie-i-uduszenie]{Utonięcia i Uduszenia} (strona 181). Po zakończeniu Cudu cel musi wykonać <strong>Trudny (-20) Test Odpornośći</strong>. Jeśli się nie powiedzie, cel otrzymuje Stan @Condition[Powalenie].</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.i5DW3xX2lGu6Pps6",
+            "duration": "Bonus Ogd Rund",
+            "target": "1",
+            "range": "Ogłada metrów",
+            "effects": {
+                "qDw8FPD6bDLLY82Q": {
+                    "id": "qDw8FPD6bDLLY82Q",
+                    "name": "Twarz topielca",
+                    "scriptData": [
+                        {
+                            "id": "qDw8FPD6bDLLY82Q",
+                            "name": "Twarz topielca",
+                            "script": "[Script.JwgFQmPQtXWAP94i]"
+                        },
+                        {
+                            "id": "qDw8FPD6bDLLY82Q",
+                            "name": "Efekt zakończony",
+                            "script": "[Script.6V3qHON3mcerlBlB]"
+                        }
+                    ]
+                }
+            },
+            "god": "Manann"
+        },
+        "Eagle's Eye": {
+            "id": "7KUKKbXBv8MbyEHt",
+            "name": "Z lotu orła",
+            "description": "<p>Wzywasz Myrmidię, by zesłała Sługę bożego, który podzieli się z tobą wiedzą o twoich wrogach. Na niebie pojawia się szybujący, widmowy orzeł. Wygląda jak zwykły orzeł i ma identyczne zdolności, ale nie może fizycznie wpływać na świat. Nie może też zostać w żaden sposób zraniony. Podczas trwania Cudu możesz patrzeć oczami orła i kontrolować jego lot, przeczesując pole bitwy i szpiegując swoich wrogów. Obraz jest ostry, ale nie masz dostępu do żadnych Talentów postaci, które wzmacniają zmysły, jak np. Widzenie w Ciemności. Gdy patrzysz na świat oczami orła, tracisz wzrok, więc lepiej, by ktoś w tym czasie mógł cię ochraniać.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.7KUKKbXBv8MbyEHt",
+            "duration": "Bonus Ogd Rund",
+            "target": "Ty",
+            "range": "Ogłada metrów",
+            "god": "Myrmidia"
+        },
+        "Fair Winds": {
+            "id": "nQ9Fydtqshroi11E",
+            "name": "Sprzyjający wiatr",
+            "description": "<p>Statki będące celem Cudu płyną wraz z pomyślnymi wiatrami, które popychają je w stronę wyznaczonego celu. Gdy Cud jest aktywny, statek porusza się z maksymalną prędkością niezależnie od wiejącego wiatru, pływów lub prądów, a wszystkie Testy niezbędne do sterowania statkiem otrzymują premię +10.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.nQ9Fydtqshroi11E",
+            "duration": "1 Godzina",
+            "target": "1 okręt w zasięgu widzenia",
+            "range": "Bonus I Kilometrów",
+            "effects": {
+                "1j2FQJqwfouwvNe3": {
+                    "id": "1j2FQJqwfouwvNe3",
+                    "name": "Sprzyjający wiatr",
+                    "scriptData": [
+                        {
+                            "id": "1j2FQJqwfouwvNe3",
+                            "name": "Sprzyjający wiatr",
+                            "script": "[Script.xPDMpOvC1ZBVxrNg]",
+                            "hideScript": "[Script.33US8YRgaMqYu2We]"
+                        }
+                    ]
+                }
+            },
+            "god": "Manann"
+        },
+        "Fury's Call": {
+            "id": "nyZNUwJ54MTLKQ7Y",
+            "name": "Zew furii",
+            "description": "<p>Twoje żarliwe modlitwy napełniają twoich sojuszników szaleńczą pogardą wobec wrogów. Wszyscy sojusznicy objęci Cudem otrzymują @UUID[Compendium.wfrp4e-core.items.5hH73j2NgPdsLCZN]{Nienawiść} wobec każdego, kto zetrze się z nimi w walce.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.nyZNUwJ54MTLKQ7Y",
+            "effects": {
+                "Bt7ExFoPhWP05nr8": {
+                    "id": "Bt7ExFoPhWP05nr8",
+                    "name": "Zew furii",
+                    "scriptData": [
+                        {
+                            "id": "Bt7ExFoPhWP05nr8",
+                            "name": "Zew furii",
+                            "script": "[Script.tKBq1nGZo8t6vvQ6]"
+                        }
+                    ]
+                }
+            },
+            "duration": "Bonus Ogd Rund",
+            "target": "Bonus Int sojuszników",
+            "range": "Ogłada metrów",
+            "god": "Myrmidia"
+        },
+        "Heed Not the Witch": {
+            "id": "Ffm7xIlRUWyacvKU",
+            "name": "Młot na czarownice",
+            "description": "<p>Wzywasz Sigmara, by chronił twoich bliskich przed wpływem Chaosu. Wszelkie zaklęcia, które biorą za cel każdego i cokolwiek w promieniu tylu metrów, ile wynosi twoja Ogłada, otrzymują karę -20 do Testów Języka (Magicznego), która kumuluje się z innymi karami. Za każde +2 PS możesz zwiększyć promień okręgu o tyle metrów, ile wynosi Bonus z Ogłady.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.Ffm7xIlRUWyacvKU",
+            "duration": "Bonus Ogd Rund",
+            "target": "Bonus Ogd Metrów",
+            "range": "Ty",
+            "effects": {
+                "DGUAxQA9U6ChgHrQ": {
+                    "id": "DGUAxQA9U6ChgHrQ",
+                    "name": "Młot na czarownice",
+                    "scriptData": [
+                        {
+                            "id": "DGUAxQA9U6ChgHrQ",
+                            "name": "Młot na czarownice",
+                            "script": "[Script.0iTLDgFHO9Rgc010]",
+                            "activationScript": "[Script.8vpAtJ93GIeye1qj]",
+                            "hideScript": "[Script.DBafsY1HrclJRTtA]"
+                        }
+                    ]
+                }
+            },
+            "god": "Sigmar"
+        },
+        "Hoarfrost's Chill": {
+            "id": "v28a5ilgxvDJfBqR",
+            "name": "Zimowy chłód",
+            "description": "<p>Wykrzykujesz wściekłe modlitwy, a zimny Ulryk na nie odpowiada. Twoje oczy błyszczą stalowoniebieskim światłem, a powietrze dookoła ciebie staje się nienaturalnie zimne. Wzbudzasz @UUID[Compendium.wfrp4e-core.items.pTorrE0l3VybAbtn]{Strach (1)} (strona 190) w sercach swoich wrogów, a wszyscy w promieniu tylu metrów, ile wynosi twoja Ogłada, tracą 1 poziom Przewagi na początku każdej Rundy, bo chłód przenika ich kości aż do szpiku.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.v28a5ilgxvDJfBqR",
+            "duration": "Bonus Ogd Rund",
+            "target": "Ogłada metrów",
+            "range": "Ty",
+            "effects": {
+                "WgN9vXmtZAIwQkym": {
+                    "id": "WgN9vXmtZAIwQkym",
+                    "name": "Zimowy chłód",
+                    "scriptData": [
+                        {
+                            "id": "WgN9vXmtZAIwQkym",
+                            "name": "Zimowy chłód",
+                            "script": "[Script.OxsBnnVI3Smpknpb]"
+                        }
+                    ]
+                },
+                "WKYusHV8UerVWjSu": {
+                    "id": "WKYusHV8UerVWjSu",
+                    "name": "Zimowy chłód (Strach)",
+                    "scriptData": [
+                        {
+                            "id": "WKYusHV8UerVWjSu",
+                            "name": "Zimowy chłód",
+                            "script": "[Script.AmpDbT0BkDHeaRzf]"
+                        }
+                    ]
+                }
+            },
+            "god": "Ulryk"
+        },
+        "Howl of the Wolf": {
+            "id": "9ALNZLZUZSLrLvkd",
+            "name": "Wilczy zew",
+            "description": "<p>Wyjesz jak wilk, prosząc Ulryka o pomoc, a ten zsyła pomniejszego Sługę bożego w postaci Białego Wilka. Wilk będzie walczył z twoimi wrogami przez Czas Cudu, zanim zniknie i wróci na Łowisko Ulryka, wydawszy ostatnie, widmowe wycie, które mrozi krew w żyłach. Białe Wilki mają statystyki normalnych wilków (strona 317), ale dodatkowo odznaczają się także Cechami Stworzenia @UUID[Compendium.wfrp4e-core.items.yRhhOlt18COq4e1q]{Furia}, @UUID[Compendium.wfrp4e-core.items.mDgEMOoJpi8DkRYb]{Magiczny } oraz @UUID[Compendium.wfrp4e-core.items.8slW8CJ2oVTxeQ6q]{Rozmiar (Duży).</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.9ALNZLZUZSLrLvkd",
+            "duration": "Bonus Ogd Rund",
+            "target": "Specjalny",
+            "range": "Ogłada metrów",
+            "god": "Ulryk"
         },
         "ezVl3vFWTwHfNXL3": {
             "id": "ezVl3vFWTwHfNXL3",
@@ -406,477 +806,38 @@
             "range": "Ogłada metrów",
             "god": "Myrmidia"
         },
-        "Ulric's Fury": {
-            "id": "F6iJdTrvBvGQ54G3",
-            "name": "Dar Ulryka",
-            "description": "<p>Śpiewasz wściekłe modlitwy, a wściekłość Ulryka rozchodzi się wraz z twoim głosem. Cel jest pod wpływem Czynnika Psychologicznego @UUID[Compendium.wfrp4e-core.items.DrNUTPeodEgpWTnT]{Szał Bojowy}.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.F6iJdTrvBvGQ54G3",
+        "King of the Wild": {
+            "id": "n8MfaJhczROmscCR",
+            "name": "Władca zwierząt",
+            "description": "<p>Intonujesz niską pieśń, a Taal odpowiada stworzeniem dzikiego zwierzęcia odpowiedniego dla danej okolicy, które będzie wykonywać twoje polecenia przez Czas Cudu. Przykładowe zwierzęta do wezwania znajdziesz w <strong>@UUID[Compendium.wfrp4e-core.journals.JournalEntry.3ZynTGhFpgwv6l1n.JournalEntryPage.ahM2hOJnyXcSKrdS]{Zwierzyńcu Reiklandu} (strona 314).</strong></p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.n8MfaJhczROmscCR",
             "duration": "Bonus Ogd Rund",
             "target": "1",
             "range": "Ogłada metrów",
-            "effects": {
-                "hGdAGmyvnWQJt9Le": {
-                    "scriptData": [
-                        {
-                            "id": "hGdAGmyvnWQJt9Le",
-                            "name": "Dar Ulryka",
-                            "script": "[Script.ErgOwSiVnm9VLVHN]"
-                        }
-                    ],
-                    "id": "hGdAGmyvnWQJt9Le",
-                    "name": "Dar Ulryka"
-                }
-            },
-            "god": "Ulryk"
-        },
-        "You Ain’t Seen Me, Right?": {
-            "id": "fABd17NZvg2uUReL",
-            "name": "Nie widziałeś mnie, prawda?",
-            "description": "<p>Zamyślasz się nad skomplikowanym paradoksem realności, której nie można dostrzec. Cel objęty Cudem może przejść gdzieś niezauważenie, zakładając, że nie zwraca na siebie zbyt wiele uwagi (dotykając, atakując, wołając do kogoś, rzucając zaklęcie czy hałasując). Możesz przyzwać ten Cud jedynie wtedy, gdy nikt na ciebie nie patrzy.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.fABd17NZvg2uUReL",
-            "duration": "Bonus Ogd Rund",
-            "target": "1",
-            "range": "Ogłada metrów",
-            "effects": {
-                "Pu2IGxGN1kTUxrCV": {
-                    "scriptData": [
-                        {
-                            "id": "Pu2IGxGN1kTUxrCV",
-                            "name": "Nie widziałeś mnie, prawda?"
-                        }
-                    ],
-                    "id": "Pu2IGxGN1kTUxrCV",
-                    "name": "Nie widziałeś mnie, prawda?"
-                }
-            },
-            "god": "Ranald"
-        },
-        "Wisdom of the Owl": {
-            "id": "fAlQcNUb6TZtPKqk",
-            "name": "Mądrość sowy",
-            "description": "<p>Wzywasz Verenę, by napełniła cię mądrością i wiedzą. Podczas trwania Cudu otrzymujesz premię +20 do Testów Inteligencji. Ponadto twoje źrenice rozszerzają się, dzięki czemu twój wzrok staje się przeszywający i niepokojący - otrzymujesz 1 poziom Talentów @UUID[Compendium.wfrp4e-core.items.0hn6UaKq8CoZP2zD]{Groźny} oraz @UUID[Compendium.wfrp4e-core.items.9h82z72XGo9tfgQS]{Wyczulony Zmysł (wzrok)}.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.fAlQcNUb6TZtPKqk",
-            "effects": {
-                "2lds6IDIyorYrvY4": {
-                    "id": "2lds6IDIyorYrvY4",
-                    "name": "Mądrość sowy",
-                    "scriptData": [
-                        {
-                            "id": "2lds6IDIyorYrvY4",
-                            "name": "Mądrość sowy",
-                            "script": "[Script.9ZFPDCk8M2TQxh7x]",
-                            "activationScript": "[Script.MnXny8SCh6OceJc9]",
-                            "hideScript": "[Script.JjDzMnUxaWQePIYh]"
-                        },
-                        {
-                            "id": "2lds6IDIyorYrvY4",
-                            "name": "Przedmioty",
-                            "script": "[Script.dbOSvpgcPjsc2uvq]"
-                        }
-                    ]
-                }
-            },
-            "duration": "Bonus Ogd Rund",
-            "target": "Ty",
-            "range": "Ty",
-            "god": "Verena"
-        },
-        "Blessing of Charisma": {
-            "id": "FElNQGNiPzaOwwKT",
-            "name": "Błogosławieństwo Charyzmy",
-            "description": "<p>Cel uzyskuje premię +10 do Ogłady.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.FElNQGNiPzaOwwKT",
-            "effects": {
-                "NO3FdQ5qx6B5PjPm": {
-                    "id": "NO3FdQ5qx6B5PjPm",
-                    "name": "Błogosławieństwo Charyzmy"
-                }
-            },
-            "duration": "6 Rund",
-            "target": "1",
-            "range": "6 metrów",
-            "god": "Ranald"
-        },
-        "Stay Lucky": {
-            "id": "FfGboPdR54WHtkAE",
-            "name": "Uśmiech losu",
-            "description": "<p>Krzyżujesz palce, zadając sobie zagadkę Ranalda - czym tak naprawdę jest szczęście? Zyskujesz 1 Punkt Szczęścia. Za każde +2 PS możesz uzyskać dodatkowy Punkt Szczęścia, który może przekroczyć twoją standardową pulę. Nie możesz skorzystać z tego Cudu, dopóki liczba twoich Punktów Szczęścia nie spadnie do 0.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.FfGboPdR54WHtkAE",
-            "duration": "Specjalny",
-            "target": "Ty",
-            "range": "Ty",
-            "effects": {
-                "CC5N9g66lyRrHaAz": {
-                    "scriptData": [
-                        {
-                            "id": "CC5N9g66lyRrHaAz",
-                            "name": "Uśmiech losu",
-                            "script": "[Script.o88xuUConwt0vFLw]"
-                        }
-                    ],
-                    "id": "CC5N9g66lyRrHaAz",
-                    "name": "Uśmiech losu"
-                }
-            },
-            "god": "Ranald"
-        },
-        "Heed Not the Witch": {
-            "id": "Ffm7xIlRUWyacvKU",
-            "name": "Młot na czarownice",
-            "description": "<p>Wzywasz Sigmara, by chronił twoich bliskich przed wpływem Chaosu. Wszelkie zaklęcia, które biorą za cel każdego i cokolwiek w promieniu tylu metrów, ile wynosi twoja Ogłada, otrzymują karę -20 do Testów Języka (Magicznego), która kumuluje się z innymi karami. Za każde +2 PS możesz zwiększyć promień okręgu o tyle metrów, ile wynosi Bonus z Ogłady.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.Ffm7xIlRUWyacvKU",
-            "duration": "Bonus Ogd Rund",
-            "target": "Bonus Ogd Metrów",
-            "range": "Ty",
-            "effects": {
-                "DGUAxQA9U6ChgHrQ": {
-                    "scriptData": [
-                        {
-                            "id": "DGUAxQA9U6ChgHrQ",
-                            "name": "Młot na czarownice",
-                            "script": "[Script.0iTLDgFHO9Rgc010]",
-                            "activationScript": "[Script.8vpAtJ93GIeye1qj]",
-                            "hideScript": "[Script.DBafsY1HrclJRTtA]"
-                        }
-                    ],
-                    "id": "DGUAxQA9U6ChgHrQ",
-                    "name": "Młot na czarownice"
-                }
-            },
-            "god": "Sigmar"
-        },
-        "Blessing of Wisdom": {
-            "id": "FRkIz2sR7ZC92W2G",
-            "name": "Błogosławieństwo Mądrości",
-            "description": "<p>Cel uzyskuje premię +10 do Inteligencji.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.FRkIz2sR7ZC92W2G",
-            "effects": {
-                "zcary1qugwge597m": {
-                    "id": "zcary1qugwge597m",
-                    "name": "Błogosławieństwo Mądrości"
-                }
-            },
-            "duration": "6 Rund",
-            "target": "1",
-            "range": "6 metrów",
-            "god": "Morr, Verena"
-        },
-        "Becalm": {
-            "id": "Geo6EAR39JzaP9P2",
-            "name": "Cisza morska",
-            "description": "<p>Kradniesz wiatr z żagli statku lub łodzi. Bez wiatru jednostka żeglowna zostaje kompletnie unieruchomiona. Nawet podczas sztormu powstaje obszar dziwnie spokojnej i gładkiej wody, która otacza łódź, mimo iż dookoła szaleje wicher, leje deszcz, a wysokie jak wieże fale przewalają się tu i ówdzie, grożąc zatopieniem statku. Obszar ten rozciąga się dookoła łodzi na tyle metrów, ile wynosi Inicjatywa, a jeśli statek jest napędzany w inny sposób, np. wiosłami, obszar przemieszcza się razem z nim.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.Geo6EAR39JzaP9P2",
-            "duration": "1 Godzina",
-            "target": "1 okręt w zasięgu widzenia",
-            "range": "Bonus I Kilometrów",
-            "god": "Manann"
-        },
-        "Blessing of Tenacity": {
-            "id": "GvaOlWY8iD5CO1WB",
-            "name": "Błogosławieństwo Nieustępliwości",
-            "description": "<p>Cel może usunąć 1 Stan.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.GvaOlWY8iD5CO1WB",
-            "duration": "Natychmiast",
-            "target": "1",
-            "range": "6 metrów",
-            "effects": {
-                "uxCZ2uplQQJcwRgu": {
-                    "scriptData": [
-                        {
-                            "script": "[Script.QRSACifDrvojIXHB]",
-                            "id": "uxCZ2uplQQJcwRgu",
-                            "name": "Błogosławieństwo Nieustępliwości"
-                        }
-                    ],
-                    "id": "uxCZ2uplQQJcwRgu",
-                    "name": "Błogosławieństwo Nieustępliwości"
-                }
-            },
-            "god": "Manann, Morr, Shallya, Ulryk"
-        },
-        "The Snow King's Judgement": {
-            "id": "GVMPSJwgscMVJzpX",
-            "name": "Prawo Śnieżnego Króla",
-            "description": "<p>Wzywasz Ulryka, by okazał pogardę słabym, tchórzliwym i oszukańczym stworzeniom. Cel otrzymuje [[/r 1d10]] Obrażeń, które ignorują Bonus z Wytrzymałości oraz Punkty Pancerza. Jeśli MG uzna, że cel nie jest ani słaby, ani tchórzliwy, ani oszukańczy, Obrażenia otrzymujesz ty.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.GVMPSJwgscMVJzpX",
-            "duration": "Natychmiast",
-            "target": "1",
-            "range": "Ogłada metrów",
-            "effects": {
-                "eGV3D8HZcAHCuZ0h": {
-                    "scriptData": [
-                        {
-                            "id": "eGV3D8HZcAHCuZ0h",
-                            "name": "Prawo Śnieżnego Króla",
-                            "script": "[Script.GTZUO73pUJKpM1JB]"
-                        }
-                    ],
-                    "id": "eGV3D8HZcAHCuZ0h",
-                    "name": "Prawo Śnieżnego Króla"
-                }
-            },
-            "god": "Ulryk"
-        },
-        "Ranald's Grace": {
-            "id": "hL7B3d7A0sYYjHXn",
-            "name": "Spryt Ranalda",
-            "description": "<p>Prosisz Ranalda, by twój cel mógł lepiej poradzić sobie z zawiłościami rzeczywistości. Cel uzyskuje premię +10 do Zwinności, +10 do Skradania oraz 1 poziom Talentu @UUID[Compendium.wfrp4e-core.items.g4Q6AtzZuo5iIvD4]{Na Cztery Łapy} na czas cudu.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.hL7B3d7A0sYYjHXn",
-            "effects": {
-                "yAJjiwiK0OSoIrkf": {
-                    "id": "yAJjiwiK0OSoIrkf",
-                    "name": "Spryt Ranalda",
-                    "scriptData": [
-                        {
-                            "id": "yAJjiwiK0OSoIrkf",
-                            "name": "Spryt Ranalda",
-                            "script": "[Script.xPDMpOvC1ZBVxrNg]",
-                            "activationScript": "[Script.kYmscP2HuXjDovBD]",
-                            "hideScript": "[Script.nvrFhHHVq3KzirlR]"
-                        },
-                        {
-                            "id": "yAJjiwiK0OSoIrkf",
-                            "name": "Na Cztery Łapy",
-                            "script": "[Script.Y6ppJBerpM3TtSic]"
-                        }
-                    ]
-                }
-            },
-            "duration": "Bonus Zw Rund",
-            "target": "1",
-            "range": "Dotyk",
-            "god": "Ranald"
-        },
-        "Drowned Man's Face": {
-            "id": "i5DW3xX2lGu6Pps6",
-            "name": "Twarz topielca",
-            "description": "<p>Błagasz Mananna o to, by utopił twoich wrogów. Gdy Cud jest aktywny, płuca celów nieustannie wypełniają się słoną wodą, a ich włosy powiewają w powietrzu, jakby były pod wodą. Cel otrzymuje 1 poziom @Condition[Zmęczenie]{Zmęczenia} i podczas trwania Cudu stosuje się do niego wszystkie zasady @UUID[JCompendium.wfrp4e-core.journalEntrys.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#utoniecie-i-uduszenie]{Utonięcia i Uduszenia} (strona 181). Po zakończeniu Cudu cel musi wykonać <strong>Trudny (-20) Test Odpornośći</strong>. Jeśli się nie powiedzie, cel otrzymuje Stan @Condition[Powalenie].</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.i5DW3xX2lGu6Pps6",
-            "duration": "Bonus Ogd Rund",
-            "target": "1",
-            "range": "Ogłada metrów",
-            "effects": {
-                "qDw8FPD6bDLLY82Q": {
-                    "scriptData": [
-                        {
-                            "id": "qDw8FPD6bDLLY82Q",
-                            "name": "Twarz topielca",
-                            "script": "[Script.JwgFQmPQtXWAP94i]"
-                        },
-                        {
-                            "id": "qDw8FPD6bDLLY82Q",
-                            "name": "Efekt zakończony",
-                            "script": "[Script.6V3qHON3mcerlBlB]"
-                        }
-                    ],
-                    "id": "qDw8FPD6bDLLY82Q",
-                    "name": "Twarz topielca"
-                }
-            },
-            "god": "Manann"
-        },
-        "Vanquish the Unrighteous": {
-            "id": "I8YPP2uRmUKyHEq2",
-            "name": "Pogrom",
-            "description": "<p>Twoje żarliwe modlitwy napełniają wybranych sojuszników szaleńczą pogardą wobec wrogów Sigmara. Wszyscy sojusznicy objęci Cudem otrzymują @UUID[Compendium.wfrp4e-core.items.5hH73j2NgPdsLCZN]{Nienawiść} wobec zielonoskórych, nieumarłych i wszystkich innych sług Chaosu.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.I8YPP2uRmUKyHEq2",
-            "duration": "Bonus Ogd Rund",
-            "target": "Bonus Ogd sojuszników",
-            "range": "Ogłada metrów",
-            "effects": {
-                "DxYGZR4BgiliPfoY": {
-                    "scriptData": [
-                        {
-                            "id": "DxYGZR4BgiliPfoY",
-                            "name": "Pogrom",
-                            "script": "[Script.sZwLitzwKBTaFca3]"
-                        }
-                    ],
-                    "id": "DxYGZR4BgiliPfoY",
-                    "name": "Pogrom"
-                }
-            },
-            "god": "Sigmar"
-        },
-        "Blessing of Fortune": {
-            "id": "iIfYOlNrLb0uiV8c",
-            "name": "Błogosławieństwo Szczęścia",
-            "description": "<p>Następny nieudany Test twojego celu może zostać powtórzony. Wiążący jest nowy wynik Testu.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.iIfYOlNrLb0uiV8c",
-            "effects": {
-                "FDxjikn1S8EqbYZU": {
-                    "id": "FDxjikn1S8EqbYZU",
-                    "name": "Błogosławieństwo Szczęścia",
-                    "scriptData": [
-                        {
-                            "id": "FDxjikn1S8EqbYZU",
-                            "name": "Błogosławieństwo Szczęścia"
-                        }
-                    ]
-                }
-            },
-            "duration": "6 Rund",
-            "target": "1",
-            "range": "6 metrów",
-            "god": "Morr, Myrmidia, Ranald, Verena"
-        },
-        "Manann's Bounty": {
-            "id": "IKW03JiqXVdDoPA6",
-            "name": "Skarb Mananna",
-            "description": "<p>Błagasz Mananna o to, by zesłał ci pożywienie. Sięgasz do najbliższego zbiornika wodnego i chwytasz wystarczająco wiele ryb, by wyżywić 1 osobę. Jeśli zrobisz to na morzu, posiłku starczy na 2 osoby. Za każde 2 PS możesz wyżywić dodatkową osobę.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.IKW03JiqXVdDoPA6",
-            "duration": "Natychmiast",
-            "target": "1",
-            "range": "Dotyk",
-            "god": "Manann"
-        },
-        "Dooming": {
-            "id": "itARFNqBAbwNDAAy",
-            "name": "Wróżba Losu",
-            "description": "<p>Spozierasz głęboko w oczy swojego celu, szepcząc treny do Morra, który nagradza cię wizją losu celu, przebłysku czekającej go przyszłości. Zazwyczaj jest to wizja związana ze śmiercią. Cud może zostać wykorzystany jedynie raz w stosunku do tej samej osoby, po czym Talent @UUID[Compendium.wfrp4e-core.items.fn8QNQQ1S2rh12Us]{Wróżba Losu} można wykupić za PD, tak jakby był normalną częścią Profesji.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.itARFNqBAbwNDAAy",
-            "duration": "Natychmiast",
-            "target": "1",
-            "range": "Dotyk",
-            "god": "Morr"
-        },
-        "Waterwalk": {
-            "id": "iWVQRVDVDCx1SyPA",
-            "name": "Chodzenie po wodzie",
-            "description": "<p>Prosisz Mananna, by pozwolił ci przejść po otwartych wodach, tak jakby był to ubity grunt. Działa to jedynie w przypadku większych zbiorników wodnych o średnicy co najmniej 10 metrów. Wszystkie inne są zbyt małe, by należeć do domeny Mananna, i nie są przez niego zauważane.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.iWVQRVDVDCx1SyPA",
-            "duration": "Bonus Ogd Minut",
-            "target": "Ty",
-            "range": "Ty",
-            "effects": {
-                "odfHnWTa1Q7luIyY": {
-                    "scriptData": [
-                        {
-                            "id": "odfHnWTa1Q7luIyY",
-                            "name": "Chodzenie po wodzie"
-                        }
-                    ],
-                    "id": "odfHnWTa1Q7luIyY",
-                    "name": "Chodzenie po wodzie"
-                }
-            },
-            "god": "Manann"
-        },
-        "Blessing of Recuperation": {
-            "id": "Jkt465WPdRcejLwl",
-            "name": "Błogosławieństwo Zdrowia",
-            "description": "<p>Twój cel może skrócić Czas jednej choroby o 1 dzień. Modlitwa ta może być zmówiona jedynie raz w intencji jednej choroby, na którą choruje dana osoba.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.Jkt465WPdRcejLwl",
-            "effects": {
-                "0MpJUKwHZIc5wMWy": {
-                    "id": "0MpJUKwHZIc5wMWy",
-                    "name": "Błogosławieństwo Zdrowia"
-                }
-            },
-            "duration": "Natychmiast",
-            "target": "1",
-            "range": "Dotyk",
-            "god": "Rhya, Shallya"
-        },
-        "Lord of the Hunt": {
-            "id": "JxmIQjVuoPcQnyPF",
-            "name": "Pan łowów",
-            "description": "<p>Wzywasz Taala, by poprowadził cię w polowaniu na upatrzoną zwierzynę. Musi to być zwierzę, które kiedyś już widziałeś, lub osoba, którą znasz (ograniczenia nakłada MG). W trakcie trwania Cudu nie jesteś w stanie zgubić tropu swojej zwierzyny, z wyjątkiem nadnaturalnych interwencji. Jeśli twoja zwierzyna wejdzie między zabudowania, ślad urwie się właśnie tam. Ponadto, będąc pod wpływem Cudu, otrzymujesz premię +10 do wszelkich Testów związanych z twoją zwierzyną.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.JxmIQjVuoPcQnyPF",
-            "duration": "Bonus Ogd Godzin",
-            "target": "Ty",
-            "range": "Ty",
-            "effects": {
-                "YhZKddnHcQnJUhFC": {
-                    "scriptData": [
-                        {
-                            "id": "YhZKddnHcQnJUhFC",
-                            "name": "Związane z łowiectwem",
-                            "script": "[Script.xPDMpOvC1ZBVxrNg]"
-                        }
-                    ],
-                    "id": "YhZKddnHcQnJUhFC",
-                    "name": "Pan łowów"
-                }
-            },
             "god": "Taal"
         },
-        "As Verena is My Witness": {
-            "id": "jXyyzYWid3nruQmc",
-            "name": "Verena mi świadkiem",
-            "description": "<p><span class=\"fontstyle0\">Wzywasz Verenę na świadka, a prawda twoich słów aż bije dookoła jasnym blaskiem. Podczas trwania Cudu, zakładając, iż mówisz jedynie prawdę, wszyscy słyszący twoje słowa będą wierzyli, że mówisz prawdę. Nie oznacza to jednak, że zgodzą się z twoim zdaniem lub wnioskami.</span> </p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.jXyyzYWid3nruQmc",
-            "duration": "Bonus Ogd Rund",
-            "target": "Ty",
-            "range": "Ty",
+        "Last Rites": {
+            "id": "rbdxcYoj8N2eMaqV",
+            "name": "Wieczny odpoczynek",
+            "description": "<p>Śpiewasz uroczyste requiem nad zwłokami. Cud gwarantuje, że dusza zostanie odesłana przez portal do dziedziny Morra. Ponadto ciało to nie będzie mogło zostać wskrzeszone żadnym z zaklęć z Tradycji Nekromancji. Jeśli celem Cudu jest stworzenie o Cesze <i>Ożywieniec</i> lub <i>Konstrukt</i>, zostanie zniszczone.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.rbdxcYoj8N2eMaqV",
             "effects": {
-                "Auvp8VLd13SyGbh3": {
+                "gvhH2LxUqQQxN6R8": {
+                    "id": "gvhH2LxUqQQxN6R8",
+                    "name": "Wieczny odpoczynek",
                     "scriptData": [
                         {
-                            "id": "Auvp8VLd13SyGbh3",
-                            "name": "Verena mi świadkiem"
-                        }
-                    ],
-                    "id": "Auvp8VLd13SyGbh3",
-                    "name": "Verena mi świadkiem"
-                }
-            },
-            "god": "Verena"
-        },
-        "Blessing of Protection": {
-            "id": "K5DE9cceinUTIrem",
-            "name": "Błogosławieństwo Ochrony",
-            "description": "<p>Przeciwnicy muszą wykonać <strong>Przeciętny (+20) Test Siły Woli</strong>, by zaatakować obrany przez siebie cel, ponieważ zaczyna kąsać ich poczucie wstydu, iż w ogóle zaczęli myśleć o użyciu przemocy. Jeśli Test się nie powiedzie, albo muszą wybrać inny cel ataku, albo inną Akcję.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.K5DE9cceinUTIrem",
-            "effects": {
-                "qMveUjAJldH1xhlZ": {
-                    "id": "qMveUjAJldH1xhlZ",
-                    "name": "Błogosławieństwo Ochrony",
-                    "scriptData": [
-                        {
-                            "hideScript": "[Script.Jnp5c09sPzDD61EK]",
-                            "id": "qMveUjAJldH1xhlZ",
-                            "name": "Błogosławieństwo Ochrony"
+                            "id": "gvhH2LxUqQQxN6R8",
+                            "name": "Wieczny odpoczynek",
+                            "script": "[Script.JstrA46EYSEuRSy5]"
                         }
                     ]
                 }
             },
-            "duration": "6 Rund",
+            "duration": "Natychmiast",
             "target": "1",
-            "range": "6 metrów",
-            "god": "Myrmidia, Ranald, Rhya, Shallya, Sigmar"
-        },
-        "Blessing of Might": {
-            "id": "KSDrXcieyRc37YI7",
-            "name": "Błogosławieństwo Siły",
-            "description": "<p>Cel uzyskuje premię +10 do Siły.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.KSDrXcieyRc37YI7",
-            "effects": {
-                "Gas9DsCrikTUmUtu": {
-                    "id": "Gas9DsCrikTUmUtu",
-                    "name": "Błogosławieństwo Siły"
-                }
-            },
-            "duration": "6 Rund",
-            "target": "1",
-            "range": "6 metrów",
-            "god": "Sigmar, Ulryk"
-        },
-        "Blessing of Grace": {
-            "id": "maUl7MoLvuvTOhM0",
-            "name": "Błogosławieństwo Wdzięku",
-            "description": "<p>Cel uzyskuje premię +10 do Zwinności.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.maUl7MoLvuvTOhM0",
-            "effects": {
-                "GjyHbaIqJLZYxLq4": {
-                    "id": "GjyHbaIqJLZYxLq4",
-                    "name": "Błogosławieństwo Wdzięku"
-                }
-            },
-            "duration": "6 Rund",
-            "target": "1",
-            "range": "6 metrów",
-            "god": "Rhya"
+            "range": "1 metr",
+            "god": "Morr"
         },
         "Leaping Stag": {
             "id": "mXKrxO8WRZ9QLHA6",
@@ -912,101 +873,127 @@
             "range": "Ty",
             "god": "Taal"
         },
-        "King of the Wild": {
-            "id": "n8MfaJhczROmscCR",
-            "name": "Władca zwierząt",
-            "description": "<p>Intonujesz niską pieśń, a Taal odpowiada stworzeniem dzikiego zwierzęcia odpowiedniego dla danej okolicy, które będzie wykonywać twoje polecenia przez Czas Cudu. Przykładowe zwierzęta do wezwania znajdziesz w <strong>@UUID[Compendium.wfrp4e-core.journals.JournalEntry.3ZynTGhFpgwv6l1n.JournalEntryPage.ahM2hOJnyXcSKrdS]{Zwierzyńcu Reiklandu} (strona 314).</strong></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.n8MfaJhczROmscCR",
-            "duration": "Bonus Ogd Rund",
-            "target": "1",
-            "range": "Ogłada metrów",
-            "god": "Taal"
-        },
-        "Fair Winds": {
-            "id": "nQ9Fydtqshroi11E",
-            "name": "Sprzyjający wiatr",
-            "description": "<p>Statki będące celem Cudu płyną wraz z pomyślnymi wiatrami, które popychają je w stronę wyznaczonego celu. Gdy Cud jest aktywny, statek porusza się z maksymalną prędkością niezależnie od wiejącego wiatru, pływów lub prądów, a wszystkie Testy niezbędne do sterowania statkiem otrzymują premię +10.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.nQ9Fydtqshroi11E",
-            "duration": "1 Godzina",
-            "target": "1 okręt w zasięgu widzenia",
-            "range": "Bonus I Kilometrów",
+        "Lord of the Hunt": {
+            "id": "JxmIQjVuoPcQnyPF",
+            "name": "Pan łowów",
+            "description": "<p>Wzywasz Taala, by poprowadził cię w polowaniu na upatrzoną zwierzynę. Musi to być zwierzę, które kiedyś już widziałeś, lub osoba, którą znasz (ograniczenia nakłada MG). W trakcie trwania Cudu nie jesteś w stanie zgubić tropu swojej zwierzyny, z wyjątkiem nadnaturalnych interwencji. Jeśli twoja zwierzyna wejdzie między zabudowania, ślad urwie się właśnie tam. Ponadto, będąc pod wpływem Cudu, otrzymujesz premię +10 do wszelkich Testów związanych z twoją zwierzyną.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.JxmIQjVuoPcQnyPF",
+            "duration": "Bonus Ogd Godzin",
+            "target": "Ty",
+            "range": "Ty",
             "effects": {
-                "1j2FQJqwfouwvNe3": {
+                "YhZKddnHcQnJUhFC": {
+                    "id": "YhZKddnHcQnJUhFC",
+                    "name": "Pan łowów",
                     "scriptData": [
                         {
-                            "id": "1j2FQJqwfouwvNe3",
-                            "name": "Sprzyjający wiatr",
-                            "script": "[Script.xPDMpOvC1ZBVxrNg]",
-                            "hideScript": "[Script.33US8YRgaMqYu2We]"
-                        }
-                    ],
-                    "id": "1j2FQJqwfouwvNe3",
-                    "name": "Sprzyjający wiatr"
-                }
-            },
-            "god": "Manann"
-        },
-        "Fury's Call": {
-            "id": "nyZNUwJ54MTLKQ7Y",
-            "name": "Zew furii",
-            "description": "<p>Twoje żarliwe modlitwy napełniają twoich sojuszników szaleńczą pogardą wobec wrogów. Wszyscy sojusznicy objęci Cudem otrzymują @UUID[Compendium.wfrp4e-core.items.5hH73j2NgPdsLCZN]{Nienawiść} wobec każdego, kto zetrze się z nimi w walce.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.nyZNUwJ54MTLKQ7Y",
-            "effects": {
-                "Bt7ExFoPhWP05nr8": {
-                    "id": "Bt7ExFoPhWP05nr8",
-                    "name": "Zew furii",
-                    "scriptData": [
-                        {
-                            "id": "Bt7ExFoPhWP05nr8",
-                            "name": "Zew furii",
-                            "script": "[Script.tKBq1nGZo8t6vvQ6]"
+                            "id": "YhZKddnHcQnJUhFC",
+                            "name": "Związane z łowiectwem",
+                            "script": "[Script.xPDMpOvC1ZBVxrNg]"
                         }
                     ]
                 }
             },
-            "duration": "Bonus Ogd Rund",
-            "target": "Bonus Int sojuszników",
-            "range": "Ogłada metrów",
-            "god": "Myrmidia"
+            "god": "Taal"
         },
-        "Sword of Justice": {
-            "id": "o5soyuEJoUk9HmCC",
-            "name": "Miecz sprawiedliwości",
-            "description": "<p>Modlisz się do Vereny, by kierowała twoim ostrzem i pomogła ci uderzyć w niesprawiedliwych. Kiedy dzierżysz miecz, ignoruje on wszelkie Punkty Pancerza i uznaje się go za Magiczny. Ponadto, jeśli twój cios trafia przestępcę (co ustala MG), musi on zdać <strong>Przeciętny (+20) Test Odporności</strong> albo otrzymuje Stan @Condition[Utrata Przytomności] na co najmniej tyle Rund, ile wynosi twój Bonus z Ogłady. Jeśli taki nieprzytomny przeciwnik padnie ofiarą przestępstwa, otrzymasz 1 Punkt Grzechu za każde przestępstwo. </p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.o5soyuEJoUk9HmCC",
-            "duration": "Bonus Ogd Rund",
-            "target": "Ty",
-            "range": "Ty",
-            "effects": {
-                "rR3CML7hvrzjzYH3": {
-                    "scriptData": [
-                        {
-                            "id": "rR3CML7hvrzjzYH3",
-                            "name": "Miecz sprawiedliwości",
-                            "script": "[Script.eWWLmA2xINR321aK]"
-                        },
-                        {
-                            "id": "rR3CML7hvrzjzYH3",
-                            "name": "Ignoruj PP",
-                            "script": "[Script.wsqNM4NHnwaAAQym]"
-                        }
-                    ],
-                    "id": "rR3CML7hvrzjzYH3",
-                    "name": "Miecz sprawiedliwości",
-                    "filter": "return args.type == \"weapon\""
-                }
-            },
-            "god": "Verena"
+        "Manann's Bounty": {
+            "id": "IKW03JiqXVdDoPA6",
+            "name": "Skarb Mananna",
+            "description": "<p>Błagasz Mananna o to, by zesłał ci pożywienie. Sięgasz do najbliższego zbiornika wodnego i chwytasz wystarczająco wiele ryb, by wyżywić 1 osobę. Jeśli zrobisz to na morzu, posiłku starczy na 2 osoby. Za każde 2 PS możesz wyżywić dodatkową osobę.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.IKW03JiqXVdDoPA6",
+            "duration": "Natychmiast",
+            "target": "1",
+            "range": "Dotyk",
+            "god": "Manann"
         },
-        "Shackles of Truth": {
-            "id": "oI3iwxVEXHRLSael",
-            "name": "Kajdany Vereny",
-            "description": "<p>Błagasz Verenę, prosząc o jej osąd nad domniemanym przestępcą. Jeśli twój cel popełnił przestępstwo, a twierdzi, że tego nie zrobił, na czas trwania tego Cudu otrzyma 1 poziom Pochwycenia, który nie może zostać usunięty, dopóki Cud jest w mocy. Jeśli twoje oskarżenia okażą się błędne, Verena nie będzie pochwalać twojego braku wyczucia - otrzymasz 1 Punkt Grzechu i natychmiast musisz wykonać rzut oraz porównać jego wynik z <strong>tabelą Gniew Bogów.</strong> </p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.oI3iwxVEXHRLSael",
+        "Martyr": {
+            "id": "YCjWyU567vb4Rs11",
+            "name": "Męczeństwo",
+            "description": "<p>Intonujesz pieśń, mówiąc Shallyi, że chcesz przyjąć na siebie ból świata. Wszelkie Obrażenia, które otrzymałby twój cel, są przenoszone na ciebie. Jeśli w wyniku tego Cudu otrzymasz Obrażenia, podczas obliczania otrzymanych Ran twój Bonus z Wytrzymałości zostaje podwojony.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.YCjWyU567vb4Rs11",
             "duration": "Bonus Ogd Rund",
             "target": "1",
-            "range": "Ogd Metrów",
-            "god": "Verena"
+            "range": "Ogłada metrów",
+            "effects": {
+                "Gf79SxYUeZQGAu5v": {
+                    "id": "Gf79SxYUeZQGAu5v",
+                    "name": "Męczeństwo",
+                    "scriptData": [
+                        {
+                            "id": "Gf79SxYUeZQGAu5v",
+                            "name": "Męczeństwo",
+                            "script": "[Script.58rFc9HiBoX66J6p]"
+                        }
+                    ]
+                }
+            },
+            "god": "Shallya"
+        },
+        "Pelt of the Winter Wolf": {
+            "id": "3ONBOTaeWq657MQR",
+            "name": "Futro zimowego wilka",
+            "description": "<p>Twoje gardłowe modlitwy zwracają na ciebie uwagę Ulryka, dzięki czemu twoje cele są w stanie przeżyć kąsanie jego królestwa. Mimo iż cele nadal będą odczuwać ból i niedogodności zimna i zimowej pogody, nie otrzymają żadnych fizycznych obrażeń.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.3ONBOTaeWq657MQR",
+            "duration": "Bonus Ogd Godzin",
+            "target": "1",
+            "range": "Dotyk",
+            "effects": {
+                "kLZ9SuRbFKuZrdyT": {
+                    "id": "kLZ9SuRbFKuZrdyT",
+                    "name": "Futro zimowego wilka"
+                }
+            },
+            "god": "Ulryk"
+        },
+        "Portal's Threshold": {
+            "id": "uE6AXjMjYvtvXQvy",
+            "name": "Próg życia",
+            "description": "<p>Rysujesz na ziemi linię długą na 8 metrów, wznosząc pieśń żałobną do Morra. W wyniku działania Cudu pojawia się niewyraźny, cienisty portal, z którego dobiega krakanie kruków. Istoty o Cesze Stworzenia <i>Ożywieniec</i> muszą wykonać <strong>Wymagający (+0) Test Siły Woli</strong>, by przejść przez tę linię. Stworzenia, które mają jednocześnie Cechy <i>Konstrukt</i> i <i>Ożywieniec</i> po prostu nie są w stanie jej przekroczyć. Efekt Cudu utrzymuje się aż do zmierzchu.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.uE6AXjMjYvtvXQvy",
+            "duration": "Specjalny",
+            "target": "8 metrów",
+            "range": "Dotyk",
+            "god": "Morr"
+        },
+        "Ranald's Grace": {
+            "id": "hL7B3d7A0sYYjHXn",
+            "name": "Spryt Ranalda",
+            "description": "<p>Prosisz Ranalda, by twój cel mógł lepiej poradzić sobie z zawiłościami rzeczywistości. Cel uzyskuje premię +10 do Zwinności, +10 do Skradania oraz 1 poziom Talentu @UUID[Compendium.wfrp4e-core.items.g4Q6AtzZuo5iIvD4]{Na Cztery Łapy} na czas cudu.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.hL7B3d7A0sYYjHXn",
+            "effects": {
+                "yAJjiwiK0OSoIrkf": {
+                    "id": "yAJjiwiK0OSoIrkf",
+                    "name": "Spryt Ranalda",
+                    "scriptData": [
+                        {
+                            "id": "yAJjiwiK0OSoIrkf",
+                            "name": "Spryt Ranalda",
+                            "script": "[Script.xPDMpOvC1ZBVxrNg]",
+                            "activationScript": "[Script.kYmscP2HuXjDovBD]",
+                            "hideScript": "[Script.nvrFhHHVq3KzirlR]"
+                        },
+                        {
+                            "id": "yAJjiwiK0OSoIrkf",
+                            "name": "Na Cztery Łapy",
+                            "script": "[Script.Y6ppJBerpM3TtSic]"
+                        }
+                    ]
+                }
+            },
+            "duration": "Bonus Zw Rund",
+            "target": "1",
+            "range": "Dotyk",
+            "god": "Ranald"
+        },
+        "Rhya's Children": {
+            "id": "qB1T6ii29jreZBRP",
+            "name": "Dzieci Rhyi",
+            "description": "<p>Położywszy dłonie na ziemi, wznosisz modły do Rhyi, prosząc o pomoc w zrozumieniu jej dziedziny. Cud może zostać wykonany jedynie na zewnątrz, poza zabudowaniami. Wyczuwasz obecność i świadomość wszystkich myślących istot w promieniu tylu metrów, ile wynosi twoja Ogłada. Za każde +2 PS możesz zwiększyć promień okręgu o tyle metrów, ile wynosi twoja Ogłada.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.qB1T6ii29jreZBRP",
+            "duration": "Bonus Ogd Rund",
+            "target": "Ogłada metrów",
+            "range": "Ty",
+            "god": "Rhya"
         },
         "Rhya's Harvest": {
             "id": "OiMiQmsv1mut24jD",
@@ -1018,44 +1005,15 @@
             "range": "Dotyk",
             "god": "Rhya"
         },
-        "Blessing of Finesse": {
-            "id": "OkKWAfnMiHfxhTnB",
-            "name": "Błogosławieństwo Finezji",
-            "description": "<p>Cel uzyskuje premię +10 do Zręczności.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.OkKWAfnMiHfxhTnB",
-            "effects": {
-                "HZaxjSj49yUXZYCn": {
-                    "id": "HZaxjSj49yUXZYCn",
-                    "name": "Błogosławieństwo Finezji"
-                }
-            },
-            "duration": "6 Rund",
-            "target": "1",
-            "range": "6 metrów",
-            "god": "Ranald"
-        },
-        "Tanglefoot": {
-            "id": "ONz21FviMRk3AyvE",
-            "name": "Oplątanie",
-            "description": "<p>Błagasz Taala w modlitwach, by chronił swe dzikie ostępy. Korzenie, pnącza i gałązki oplatają się dookoła twoich wrogów. Wszystkie cele w promieniu tylu metrów, ile wynosi twój Bonus z Ogłady, otrzymują 1 poziom @Condition[Pochwycenie]{Pochwycenia}</br>. Za każde +2 PS możesz zwiększyć zasięg o tyle metrów, ile wynosi twój Bonus z Ogłady, lub zwiększyć poziomy @Condition[Pochwycenie]{Pochwycenia}. W przypadkach prób uwolnienia się Oplątanie ma Siłę równą twojej Sile Woli.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.ONz21FviMRk3AyvE",
-            "effects": {
-                "FbFPvypAtB428U0r": {
-                    "id": "FbFPvypAtB428U0r",
-                    "name": "Oplątanie",
-                    "scriptData": [
-                        {
-                            "id": "FbFPvypAtB428U0r",
-                            "name": "Oplątanie",
-                            "script": "[Script.cDBhmHn5kjgWBAlT]"
-                        }
-                    ]
-                }
-            },
-            "duration": "Natychmiast",
-            "target": "Bonus Ogd Metrów",
-            "range": "Ogłada metrów",
-            "god": "Taal"
+        "Rhya's Shelter": {
+            "id": "25trttu8NxFQQCo9",
+            "name": "Schronienie Rhyi",
+            "description": "<p>Śpiewasz jeden z hymnów pochwalnych dla Rhyi, opisujący schronienie i bezpieczeństwo. Możesz przyzwać ten Cud jedynie za zewnątrz, poza zabudowaniami. Odkrywasz idealną naturalną kryjówkę. To połączenie ziemi i drzew, które w sam raz nadaje się na mały obóz na noc. Miejsce to chroni cię przed wiatrem i deszczem i będzie trwać, dopóki będziesz w nim obozować. Schronienie jest na tyle duże, by zmieścić jedną osobę. Za każde +2 PS możesz zmieścić 1 osobę więcej. Gdy zwiniesz obóz, nie będziesz już w stanie odszukać tej kryjówki, ponieważ istniało jedynie dzięki woli bogini.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.25trttu8NxFQQCo9",
+            "duration": "Specjalny",
+            "target": "Ty",
+            "range": "Ty",
+            "god": "Rhya"
         },
         "Rhya's Succour": {
             "id": "pBWXlJDOE7tfl8hP",
@@ -1067,6 +1025,8 @@
             "range": "Ogłada metrów",
             "effects": {
                 "B6C7PTHXo7vQ79L1": {
+                    "id": "B6C7PTHXo7vQ79L1",
+                    "name": "Ukojenie Rhyi",
                     "scriptData": [
                         {
                             "id": "B6C7PTHXo7vQ79L1",
@@ -1080,67 +1040,53 @@
                             "activationScript": "[Script.AZGXrZOQ4EzjxRL9]",
                             "submissionScript": "[Script.TzgmYRXFXRspIo1i]"
                         }
-                    ],
-                    "id": "B6C7PTHXo7vQ79L1",
-                    "name": "Ukojenie Rhyi"
+                    ]
                 }
             },
             "god": "Rhya"
         },
-        "Tooth and Claw": {
-            "id": "PcKMAEF6UoaPSK6d",
-            "name": "Kły i Pazury",
-            "description": "<p>Wzywasz Taala, by podzielił się z tobą brutalną siłą swojego królestwa. Zyskujesz Cechy Stworzenia @UUID[Compendium.wfrp4e-core.items.pLW9SVX0TVTYPiPv]{Ugryzienie} (Bonus z Siły +3) oraz @UUID[Compendium.wfrp4e-core.items.AtpAudHA4ybXVlWM]{Broń} (Bonus z Siły +4). Są to ataki Magiczne.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.PcKMAEF6UoaPSK6d",
+        "Rhya's Touch": {
+            "id": "0uT3mzx8v4H3gVQj",
+            "name": "Dotyk Rhyi",
+            "description": "<p>Kładziesz dłonie na zranionym lub chorym celu i wznosisz modlitewne pieśni. Wybierz jeden z poniższych efektów:</p>\n<p>• leczysz liczbę Żywotności równą Bonusowi z Ogłady</p>\n<p>• leczysz 1 naturalnie występującą chorobę.</p>\n<p>Za każde 2 PS możesz wybrać dodatkowy efekt lub wzmocnić już raz wybrany. Cud ten działa powoli, a efekty widać dopiero po około 10 minutach. Jeśli coś przerwie jego działanie, będzie trzeba poprosić bóstwo o kolejny Cud.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.0uT3mzx8v4H3gVQj",
+            "duration": "Specjalny",
+            "target": "1",
+            "range": "Dotyk",
             "effects": {
-                "1TWDvZQnuHAsfxxd": {
-                    "id": "1TWDvZQnuHAsfxxd",
-                    "name": "Kły i Pazury",
+                "FzMgOIeeJEy3DPGL": {
+                    "id": "FzMgOIeeJEy3DPGL",
+                    "name": "Wyleczenie choroby",
                     "scriptData": [
                         {
-                            "id": "1TWDvZQnuHAsfxxd",
-                            "name": "Kły i Pazury",
-                            "script": "[Script.DL9vYNft9aXdV2aW]"
+                            "id": "FzMgOIeeJEy3DPGL",
+                            "name": "Dotyk Rhyi",
+                            "script": "[Script.vc4bELo0cWYoILfB]"
+                        }
+                    ]
+                },
+                "slUPiVruBghcFcCQ": {
+                    "id": "slUPiVruBghcFcCQ",
+                    "name": "Uzdrowienie",
+                    "scriptData": [
+                        {
+                            "id": "slUPiVruBghcFcCQ",
+                            "name": "Dotyk Rhyi",
+                            "script": "[Script.oV81zgbZsuTFG6L2]"
                         }
                     ]
                 }
             },
-            "duration": "Bonus Ogd Rund",
-            "target": "Ty",
-            "range": "Ty",
-            "god": "Taal"
+            "god": "Rhya"
         },
-        "Blazing Sun": {
-            "id": "Q91bWCEn0gt33fGT",
-            "name": "Gorejące słońce",
-            "description": "<p>Wzywasz Myrmidię, by poraziła niegodnych wrogów na polu bitwy, a jej odpowiedź przybiera postać oślepiającego rozbłysku złotego światła. Wszyscy, którzy nie wyznają Myrmidii, a spojrzą w twoim kierunku, otrzymają 1 poziom @Condition[Oślepienie]{Oślepienia}. Za każde +2 PS otrzymują +1 poziom @Condition[Oślepienie]{Oślepienia}.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.Q91bWCEn0gt33fGT",
-            "effects": {
-                "JlsdDkPK9j9Y65sB": {
-                    "id": "JlsdDkPK9j9Y65sB",
-                    "name": "Gorejące słońce",
-                    "scriptData": [
-                        {
-                            "id": "JlsdDkPK9j9Y65sB",
-                            "name": "Gorejące słońce",
-                            "script": "[Script.xMhhVol8Is3DJ3gb]"
-                        }
-                    ]
-                }
-            },
-            "duration": "Natychmiast",
-            "target": "Ogłada metrów",
-            "range": "Ty",
-            "god": "Myrmidia"
-        },
-        "Rhya's Children": {
-            "id": "qB1T6ii29jreZBRP",
-            "name": "Dzieci Rhyi",
-            "description": "<p>Położywszy dłonie na ziemi, wznosisz modły do Rhyi, prosząc o pomoc w zrozumieniu jej dziedziny. Cud może zostać wykonany jedynie na zewnątrz, poza zabudowaniami. Wyczuwasz obecność i świadomość wszystkich myślących istot w promieniu tylu metrów, ile wynosi twoja Ogłada. Za każde +2 PS możesz zwiększyć promień okręgu o tyle metrów, ile wynosi twoja Ogłada.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.qB1T6ii29jreZBRP",
-            "duration": "Bonus Ogd Rund",
-            "target": "Ogłada metrów",
-            "range": "Ty",
+        "Rhya's Union": {
+            "id": "dDxhGgBBM9CugxsH",
+            "name": "Zjednoczenie Rhyi",
+            "description": "<p>Błogosławisz i konsekrujesz połączenie dwóch dusz. W trakcie trwania Cudu, jeśli to biologicznie możliwe, para spłodzi dziecko.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.dDxhGgBBM9CugxsH",
+            "duration": "Bonus Ogd Godzin",
+            "target": "Specjalny",
+            "range": "Dotyk",
             "god": "Rhya"
         },
         "Rich Man, Poor Man, Beggar Man, Thief": {
@@ -1152,356 +1098,6 @@
             "target": "1",
             "range": "1 metr",
             "god": "Ranald"
-        },
-        "Blind Justice": {
-            "id": "R6Q16WOXcPfaHnOb",
-            "name": "Ślepa dziewica",
-            "description": "<p>Wymawiasz modlitwy sławiące wyostrzone zmysły Vereny, które są w stanie przejrzeć wszelkie rzeczy i ujrzeć prawdę. Wykonaj <strong>Prosty Wymagający (+0) Test Percepcji</strong>, by przejrzeć wszelkie zaklęcia i Cuda, których efektem są iluzje lub zmylenie zmysłów. Możesz również wykonać <strong>Przeciętny (+20) Test Intuicji</strong>, by ustalić, czy osoba, z którą rozmawiasz, kłamie, czy nie. <strong>Uwaga!</strong> Dowiesz się jedynie, czy postać wierzy, że mówi prawdę. Jeśli się po prostu myli, ten efekt tego nie zdradzi.<br><br></p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.R6Q16WOXcPfaHnOb",
-            "duration": "Bonus Ogd Rund",
-            "target": "Ty",
-            "range": "Ty",
-            "effects": {
-                "DAK4rm9dlR6SBJSb": {
-                    "scriptData": [
-                        {
-                            "id": "DAK4rm9dlR6SBJSb",
-                            "name": "Ślepa dziewica"
-                        }
-                    ],
-                    "id": "DAK4rm9dlR6SBJSb",
-                    "name": "Ślepa dziewica"
-                }
-            },
-            "god": "Verena"
-        },
-        "Last Rites": {
-            "id": "rbdxcYoj8N2eMaqV",
-            "name": "Wieczny odpoczynek",
-            "description": "<p>Śpiewasz uroczyste requiem nad zwłokami. Cud gwarantuje, że dusza zostanie odesłana przez portal do dziedziny Morra. Ponadto ciało to nie będzie mogło zostać wskrzeszone żadnym z zaklęć z Tradycji Nekromancji. Jeśli celem Cudu jest stworzenie o Cesze <i>Ożywieniec</i> lub <i>Konstrukt</i>, zostanie zniszczone.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.rbdxcYoj8N2eMaqV",
-            "effects": {
-                "gvhH2LxUqQQxN6R8": {
-                    "id": "gvhH2LxUqQQxN6R8",
-                    "name": "Wieczny odpoczynek",
-                    "scriptData": [
-                        {
-                            "id": "gvhH2LxUqQQxN6R8",
-                            "name": "Wieczny odpoczynek",
-                            "script": "[Script.JstrA46EYSEuRSy5]"
-                        }
-                    ]
-                }
-            },
-            "duration": "Natychmiast",
-            "target": "1",
-            "range": "1 metr",
-            "god": "Morr"
-        },
-        "Twin-tailed Comet": {
-            "id": "rjkMzFwN1trbSLL8",
-            "name": "Kometa Sigmara",
-            "description": "<p>Skandując litanie do Sigmara, wzywasz go, by zmiażdżył twych wrogów. Kometa o dwóch ogonach pikuje z przestworzy w kuli ognia i zniszczenia, trafiając w dowolny punkt w zasięgu wzroku i Zasięgu Cudu. Wszystko w zasięgu tylu metrów od miejsca uderzenia, ile wynosi Bonus z Ogłady, otrzymuje 1k10 + PS Obrażeń, które ignorują Bonus z Wytrzymałości oraz Punkty Pancerza, a ponadto otrzymuje także 1 poziom @Condition[Podpalenie]{Podpalenia}. Wyznaczone miejsce uderzenia nie może znajdować się w budynku. Co więcej, celować można jedynie w tych, których Sigmar uzna za wrogów.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.rjkMzFwN1trbSLL8",
-            "effects": {
-                "dx14txcPj5zl0vjZ": {
-                    "id": "dx14txcPj5zl0vjZ",
-                    "name": "Kometa Sigmara",
-                    "scriptData": [
-                        {
-                            "id": "dx14txcPj5zl0vjZ",
-                            "name": "Kometa Sigmara",
-                            "script": "[Script.DhZqJso1JWYtGrKk]"
-                        }
-                    ]
-                }
-            },
-            "duration": "Natychmiast",
-            "target": "Bonus Ogd Metrów",
-            "range": "Ogłada metrów",
-            "god": "Sigmar"
-        },
-        "Winter's Bite": {
-            "id": "rrfrmqCpy10u7c9o",
-            "name": "Odmrożenia",
-            "description": "<p>Ryczysz modlitwy do Ulryka, sławiąc jego nienasycony topór Blitzbeil. Jeśli dzierżysz topór, uznaje się go za Magiczny. Ponadto broń zadaje Obrażenia zwiększone o PS, a każda żywa istota trafiona toporem musi także wykonać <strong>Wymagający (+0) Test Odporności</strong>. Jeśli ten się nie powiedzie, istota otrzyma również 1 poziom Condition[Oszołomienie]{Oszołomienia}. Trafione cele tracą za to wszystkie poziomy @Condition[Krwawienie]{Krwawienia}, ponieważ krew zamarza im w żyłach. Podczas trwania Cudu Obrażenia zadane ciosem twojego topora nie mogą wywołać @Condition[Krwawienie]{Krwawienia}.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.rrfrmqCpy10u7c9o",
-            "duration": "Bonus Ogd Rund",
-            "target": "Ty",
-            "range": "Ty",
-            "effects": {
-                "90vi32xekMLeXdXT": {
-                    "scriptData": [
-                        {
-                            "id": "90vi32xekMLeXdXT",
-                            "name": "Odmrożenia",
-                            "script": "[Script.U5ndCwcJ1s3Ns26w]"
-                        },
-                        {
-                            "id": "90vi32xekMLeXdXT",
-                            "name": "Oszołomienie",
-                            "script": "[Script.k8TC0yzp4xfOXD2n]"
-                        }
-                    ],
-                    "id": "90vi32xekMLeXdXT",
-                    "name": "Odmrożenia",
-                    "filter": "return args.type == \"weapon\""
-                }
-            },
-            "god": "Ulryk"
-        },
-        "Destroy Undead": {
-            "id": "sdSy4k7ygDhAjSSX",
-            "name": "Zniszczenie ożywieńca",
-            "description": "<p>Przyzywasz moce Morra, by zmieść nieumarłych z powierzchni ziemi. Czarny ogień błyska na twoim ciele, formując idealny okrąg o promieniu równym Bonusowi z Ogłady w metrach. Wszystkie potencjalne cele o Cesze Stworzenia <i>Ożywieniec</i> otrzymują 1k10 Obrażeń ignorujących Bonus z Wytrzymałości oraz Punkty Pancerza. Każdy <i>Ożywieniec</i> zniszczony dzięki temu Cudowi nie może zostać wskrzeszony za pomocą nekromancji, przynajmniej w standardowych okolicznościach. Za każde +2 PS możesz zwiększyć zasięg okręgu o tyle metrów, ile wynosi Bonus z Ogłady.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.sdSy4k7ygDhAjSSX",
-            "effects": {
-                "HqH1WB4M1YCR0kRg": {
-                    "id": "HqH1WB4M1YCR0kRg",
-                    "name": "Zniszczenie ożywieńca",
-                    "scriptData": [
-                        {
-                            "id": "HqH1WB4M1YCR0kRg",
-                            "name": "Zniszczenie ożywieńca",
-                            "script": "[Script.GTZUO73pUJKpM1JB]"
-                        }
-                    ],
-                    "filter": "return !this.actor.has(game.i18n.localize(\"NAME.Undead\"))"
-                }
-            },
-            "duration": "Natychmiast",
-            "target": "Bonus Ogd Metrów",
-            "range": "Ty",
-            "god": "Morr"
-        },
-        "Unblemished Innocence": {
-            "id": "SItGUVYokyOo7csk",
-            "name": "Niepokalana niewinność",
-            "description": "<p>Położywszy dłonie na umęczonej istocie, błagasz Shallyę, by oczyściła ją z niedawno nabytego spaczenia. Cel traci 1 Punkt Zepsucia, a za każde 2 PS - kolejny punkt. Niestety Bogowie Chaosu nie lubią, gdy ktoś tak jawnie wchodzi im w paradę. Jeśli próba wywołania Cudu zakończy się Pechem, ty i twój cel otrzymujecie po 1k10 Punktów Zepsucia oprócz standardowych efektów. Cud musi zostać wywołany maksymalnie w ciągu godziny od nabycia Punktu Zepsucia.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.SItGUVYokyOo7csk",
-            "duration": "Natychmiast",
-            "target": "1",
-            "range": "Dotyk",
-            "effects": {
-                "3vMF3rqvtV17CtTa": {
-                    "scriptData": [
-                        {
-                            "id": "3vMF3rqvtV17CtTa",
-                            "name": "Niepokalana niewinność",
-                            "script": "[Script.Msygc7oQQPB5fw0b]"
-                        }
-                    ],
-                    "id": "3vMF3rqvtV17CtTa",
-                    "name": "Niepokalana niewinność"
-                }
-            },
-            "god": "Shallya"
-        },
-        "Stay Morr's Hand": {
-            "id": "SjKFVBXgLC51dnQz",
-            "name": "Wstrzymanie dłoni Morra",
-            "description": "<p>Dotykasz oczu kogoś bliskiego śmierci i prosisz Morra, by prowadził tę duszę, ale nie zabierał jej do siebie. Cel musi mieć 0 Żywotności i chcieć poddać się Cudowi. Przez Czas Cudu cel jest pod wpływem Stanu @Condition[Utrata Przytomności] i dopóki trwa Cud, jego stan się nie pogorszy - choroby zostaną powstrzymane, Rany Krytyczne zignorowane, trucizny zwalczane itd. Gdy Cud dobiegnie końca, można albo przeprowadzić odpowiednie leczenie, albo możesz oddać celowi ostatnią posługę. Jeśli to zrobisz, co zajmuje około minuty, dusza celu popłynie przez portal Morra w objęcia śmierci, a ciało nigdy nie będzie mogło zostać wykorzystane przez nekromantów.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.SjKFVBXgLC51dnQz",
-            "duration": "Bonus Ogd Godzin (Specjalny)",
-            "target": "1",
-            "range": "Dotyk",
-            "god": "Morr"
-        },
-        "Animal Instincts": {
-            "id": "SZ88OXYo6F2q3vWb",
-            "name": "Zwierzęcy Instynkt",
-            "description": "<p>Intonujesz pieśń opisującą nadnaturalne zmysły Taala, wzywając jego pomocy. W trakcie trwania Cudu zyskujesz 1 poziom Talentu @UUID[Compendium.wfrp4e-core.items.9h82z72XGo9tfgQS]{Wyczulony Zmysł (wybierz jeden)}, a kiedy udasz się na spoczynek, natychmiast obudzisz się, jeśli zagrożenie zbliży się na tyle metrów, ile wynosi twoja Inicjatywa.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.SZ88OXYo6F2q3vWb",
-            "duration": "Bonus Ogd Godzin",
-            "target": "1",
-            "range": "Dotyk",
-            "effects": {
-                "qyW4IN35YlJimtdH": {
-                    "scriptData": [
-                        {
-                            "id": "qyW4IN35YlJimtdH",
-                            "name": "Zwierzęcy Instynkt",
-                            "script": "[Script.v4ITTsSY9EvCbhZP]"
-                        }
-                    ],
-                    "id": "qyW4IN35YlJimtdH",
-                    "name": "Zwierzęcy Instynkt"
-                }
-            },
-            "god": "Taal"
-        },
-        "Blessing of Conscience": {
-            "id": "tEMwdlHM8A40h6HE",
-            "name": "Błogosławieństwo Sumienia",
-            "description": "<p>Cel musi wykonać <strong>Przeciętny (+20) Test Siły Woli</strong>, aby wykonać Akcję, która naruszałaby jedno z przykazań twojego bóstwa. Jeśli Test się nie uda, cel ogarnia wstyd i nie podejmuje żadnej Akcji.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.tEMwdlHM8A40h6HE",
-            "duration": "6 Rund",
-            "target": "1",
-            "range": "6 metrów",
-            "effects": {
-                "20GOIXJFrxNHLpE6": {
-                    "scriptData": [
-                        {
-                            "id": "20GOIXJFrxNHLpE6",
-                            "name": "Błogosławieństwo Sumienia"
-                        }
-                    ],
-                    "id": "20GOIXJFrxNHLpE6",
-                    "name": "Błogosławieństwo Sumienia"
-                }
-            },
-            "god": "Myrmidia, Ranald, Rhya, Shallya, Taal, Verena"
-        },
-        "Blessing of Breath": {
-            "id": "TKHvOsihelBStO6i",
-            "name": "Błogosławieństwo Oddechu",
-            "description": "<p>Cel nie musi oddychać i ignoruje wszelkie konsekwencje duszenia się.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.TKHvOsihelBStO6i",
-            "duration": "6 Rund",
-            "target": "1",
-            "range": "6 metrów",
-            "effects": {
-                "svizyaSIJocqQanw": {
-                    "scriptData": [
-                        {
-                            "id": "svizyaSIJocqQanw",
-                            "name": "Błogosławieństwo Oddechu"
-                        }
-                    ],
-                    "id": "svizyaSIJocqQanw",
-                    "name": "Błogosławieństwo Oddechu"
-                }
-            },
-            "god": "Manann, Morr, Rhya, Shallya, Taal"
-        },
-        "Blessing of Wit": {
-            "id": "tMocig1z9dHKNiCT",
-            "name": "Błogosławieństwo Sprytu",
-            "description": "<p>Cel uzyskuje premię +10 do Inicjatywy.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.tMocig1z9dHKNiCT",
-            "effects": {
-                "HzWovpDiGQ129yZu": {
-                    "id": "HzWovpDiGQ129yZu",
-                    "name": "Błogosławieństwo Sprytu"
-                }
-            },
-            "duration": "6 Rund",
-            "target": "1",
-            "range": "6 metrów",
-            "god": "Ranald, Verena"
-        },
-        "Portal's Threshold": {
-            "id": "uE6AXjMjYvtvXQvy",
-            "name": "Próg życia",
-            "description": "<p>Rysujesz na ziemi linię długą na 8 metrów, wznosząc pieśń żałobną do Morra. W wyniku działania Cudu pojawia się niewyraźny, cienisty portal, z którego dobiega krakanie kruków. Istoty o Cesze Stworzenia <i>Ożywieniec</i> muszą wykonać <strong>Wymagający (+0) Test Siły Woli</strong>, by przejść przez tę linię. Stworzenia, które mają jednocześnie Cechy <i>Konstrukt</i> i <i>Ożywieniec</i> po prostu nie są w stanie jej przekroczyć. Efekt Cudu utrzymuje się aż do zmierzchu.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.uE6AXjMjYvtvXQvy",
-            "duration": "Specjalny",
-            "target": "8 metrów",
-            "range": "Dotyk",
-            "god": "Morr"
-        },
-        "Anchorite's Endurance": {
-            "id": "uMECZBuDnb3qkc7k",
-            "name": "Wytrwałość Eremity",
-            "description": "<p>Twoje szczere modlitwy podobają się Shallyi, która odpowiada, zsyłając siły niezbędne do przetrwania. Cel nie czuje żadnego bólu i ignoruje wszelkie efekty Stanów.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.uMECZBuDnb3qkc7k",
-            "effects": {
-                "aaiZynMi60jGc0Jn": {
-                    "id": "aaiZynMi60jGc0Jn",
-                    "name": "Wytrwałość Eremity",
-                    "scriptData": [
-                        {
-                            "id": "aaiZynMi60jGc0Jn",
-                            "name": "Wytrwałość Eremity",
-                            "script": "[Script.xpgXWoK2zDnG1uiF]"
-                        }
-                    ]
-                }
-            },
-            "duration": "Bonus Ogd Rund",
-            "target": "1",
-            "range": "Ogłada metrów",
-            "god": "Shallya"
-        },
-        "Bitter Catharsis": {
-            "id": "UtgGJK46K08TZpP5",
-            "name": "Gorzkie oczyszczenie",
-            "description": "<p>W odpowiedzi na twoje płynące z głębi serca modlitwy Shallya przenosi truciznę lub chorobę z twojego celu na ciebie. Cel zdrowieje, a jego dolegliwości znikają. Za każde +2 PS możesz oczyścić organizm z dodatkowej choroby lub trucizny. Za każdą usuniętą w ten sposób truciznę lub chorobę otrzymujesz Obrażenia równe 1k10 - Bonus z Ogłady i ignorujące Bonus z Wytrzymałości oraz Punkty Pancerza.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.UtgGJK46K08TZpP5",
-            "duration": "Natychmiast",
-            "target": "1",
-            "range": "Dotyk",
-            "effects": {
-                "Z0GLLTahLhnGYyhg": {
-                    "scriptData": [
-                        {
-                            "script": "[Script.v4CCxVaVGf9i8U7X]",
-                            "id": "Z0GLLTahLhnGYyhg",
-                            "name": "Gorzkie oczyszczenie"
-                        }
-                    ],
-                    "id": "Z0GLLTahLhnGYyhg",
-                    "name": "Gorzkie oczyszczenie"
-                }
-            },
-            "god": "Shallya"
-        },
-        "Hoarfrost's Chill": {
-            "id": "v28a5ilgxvDJfBqR",
-            "name": "Zimowy chłód",
-            "description": "<p>Wykrzykujesz wściekłe modlitwy, a zimny Ulryk na nie odpowiada. Twoje oczy błyszczą stalowoniebieskim światłem, a powietrze dookoła ciebie staje się nienaturalnie zimne. Wzbudzasz @UUID[Compendium.wfrp4e-core.items.pTorrE0l3VybAbtn]{Strach (1)} (strona 190) w sercach swoich wrogów, a wszyscy w promieniu tylu metrów, ile wynosi twoja Ogłada, tracą 1 poziom Przewagi na początku każdej Rundy, bo chłód przenika ich kości aż do szpiku.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.v28a5ilgxvDJfBqR",
-            "duration": "Bonus Ogd Rund",
-            "target": "Ogłada metrów",
-            "range": "Ty",
-            "effects": {
-                "WgN9vXmtZAIwQkym": {
-                    "scriptData": [
-                        {
-                            "id": "WgN9vXmtZAIwQkym",
-                            "name": "Zimowy chłód",
-                            "script": "[Script.OxsBnnVI3Smpknpb]"
-                        }
-                    ],
-                    "id": "WgN9vXmtZAIwQkym",
-                    "name": "Zimowy chłód"
-                },
-                "WKYusHV8UerVWjSu": {
-                    "scriptData": [
-                        {
-                            "id": "WKYusHV8UerVWjSu",
-                            "name": "Zimowy chłód",
-                            "script": "[Script.AmpDbT0BkDHeaRzf]"
-                        }
-                    ],
-                    "id": "WKYusHV8UerVWjSu",
-                    "name": "Zimowy chłód (Strach)"
-                }
-            },
-            "god": "Ulryk"
-        },
-        "Shield of Myrmidia": {
-            "id": "V8GCeqgk1FNGFg76",
-            "name": "Tarcza Myrmidii",
-            "description": "<p>Twoje oddane modły do Myrmidii sprawiają, że zsyła ona tarczę połyskujących pasemek światła na twoich sojuszników, która ochrania ich przed ciosami wrogów. Wszyscy objęci Cudem zyskują 1 Punkt Pancerza na wszystkich Miejscach Trafienia.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.V8GCeqgk1FNGFg76",
-            "effects": {
-                "4hBoeFxZYT68Npxr": {
-                    "id": "4hBoeFxZYT68Npxr",
-                    "name": "Tarcza Myrmidii",
-                    "scriptData": [
-                        {
-                            "id": "4hBoeFxZYT68Npxr",
-                            "name": "Tarcza Myrmidii",
-                            "script": "[Script.1ZrzpfVwPJHdwp23]"
-                        }
-                    ]
-                }
-            },
-            "duration": "Bonus Ogd Rund",
-            "target": "Bonus Int sojuszników",
-            "range": "Ogłada metrów",
-            "god": "Myrmidia"
         },
         "VUyCJ5LRPkuC5iZx": {
             "id": "VUyCJ5LRPkuC5iZx",
@@ -1526,6 +1122,62 @@
             "range": "Ogłada metrów",
             "god": "Manann"
         },
+        "Shackles of Truth": {
+            "id": "oI3iwxVEXHRLSael",
+            "name": "Kajdany Vereny",
+            "description": "<p>Błagasz Verenę, prosząc o jej osąd nad domniemanym przestępcą. Jeśli twój cel popełnił przestępstwo, a twierdzi, że tego nie zrobił, na czas trwania tego Cudu otrzyma 1 poziom Pochwycenia, który nie może zostać usunięty, dopóki Cud jest w mocy. Jeśli twoje oskarżenia okażą się błędne, Verena nie będzie pochwalać twojego braku wyczucia - otrzymasz 1 Punkt Grzechu i natychmiast musisz wykonać rzut oraz porównać jego wynik z <strong>tabelą Gniew Bogów.</strong> </p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.oI3iwxVEXHRLSael",
+            "duration": "Bonus Ogd Rund",
+            "target": "1",
+            "range": "Ogd Metrów",
+            "god": "Verena"
+        },
+        "Shallya's Tears": {
+            "id": "YAauxOwJJa3JahxQ",
+            "name": "Złote łzy",
+            "description": "<p>Łzy płyną strumieniami po twych policzkach, gdy żarliwie prosisz Shallyę, by oszczędziła biedną, ranną duszę. Modlisz się przez 10 - Bonus z Ogłady Rund, po których leczysz 1 Ranę Krytyczną. Za każde 2 PS możesz wyleczyć kolejną Ranę Krytyczną. Jeśli twoja modlitwa zostanie przerwana, stan celu nie ulega poprawie. Cud nie jest w stanie sprawić, że odcięte kończyny zrosną się z ciałem.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.YAauxOwJJa3JahxQ",
+            "duration": "Specjalny",
+            "target": "1",
+            "range": "Dotyk",
+            "effects": {
+                "516PqG2C3iLdf78r": {
+                    "id": "516PqG2C3iLdf78r",
+                    "name": "Złote łzy",
+                    "scriptData": [
+                        {
+                            "id": "516PqG2C3iLdf78r",
+                            "name": "Złote łzy",
+                            "script": "[Script.OicQSEVZBbqLtrcf]"
+                        }
+                    ]
+                }
+            },
+            "god": "Shallya"
+        },
+        "Shield of Myrmidia": {
+            "id": "V8GCeqgk1FNGFg76",
+            "name": "Tarcza Myrmidii",
+            "description": "<p>Twoje oddane modły do Myrmidii sprawiają, że zsyła ona tarczę połyskujących pasemek światła na twoich sojuszników, która ochrania ich przed ciosami wrogów. Wszyscy objęci Cudem zyskują 1 Punkt Pancerza na wszystkich Miejscach Trafienia.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.V8GCeqgk1FNGFg76",
+            "effects": {
+                "4hBoeFxZYT68Npxr": {
+                    "id": "4hBoeFxZYT68Npxr",
+                    "name": "Tarcza Myrmidii",
+                    "scriptData": [
+                        {
+                            "id": "4hBoeFxZYT68Npxr",
+                            "name": "Tarcza Myrmidii",
+                            "script": "[Script.1ZrzpfVwPJHdwp23]"
+                        }
+                    ]
+                }
+            },
+            "duration": "Bonus Ogd Rund",
+            "target": "Bonus Int sojuszników",
+            "range": "Ogłada metrów",
+            "god": "Myrmidia"
+        },
         "Sigmar's Fiery Hammer": {
             "id": "WgZx3xma6vYGz17e",
             "name": "Młot Sigmara",
@@ -1536,6 +1188,9 @@
             "range": "Ty",
             "effects": {
                 "ENz32CXPyOrNtmu7": {
+                    "id": "ENz32CXPyOrNtmu7",
+                    "name": "Młot Sigmara",
+                    "filter": "return args.type == \"weapon\"",
                     "scriptData": [
                         {
                             "id": "ENz32CXPyOrNtmu7",
@@ -1552,62 +1207,407 @@
                             "name": "Stany",
                             "script": "[Script.esuLwq4g5T8k1kLT]"
                         }
-                    ],
-                    "id": "ENz32CXPyOrNtmu7",
-                    "name": "Młot Sigmara",
-                    "filter": "return args.type == \"weapon\""
+                    ]
                 }
             },
             "god": "Sigmar"
         },
-        "Shallya's Tears": {
-            "id": "YAauxOwJJa3JahxQ",
-            "name": "Złote łzy",
-            "description": "<p>Łzy płyną strumieniami po twych policzkach, gdy żarliwie prosisz Shallyę, by oszczędziła biedną, ranną duszę. Modlisz się przez 10 - Bonus z Ogłady Rund, po których leczysz 1 Ranę Krytyczną. Za każde 2 PS możesz wyleczyć kolejną Ranę Krytyczną. Jeśli twoja modlitwa zostanie przerwana, stan celu nie ulega poprawie. Cud nie jest w stanie sprawić, że odcięte kończyny zrosną się z ciałem.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.YAauxOwJJa3JahxQ",
-            "duration": "Specjalny",
-            "target": "1",
-            "range": "Dotyk",
+        "Soulfire": {
+            "id": "5fVTY8TSua3trOW8",
+            "name": "Płomień Wiary",
+            "description": "<p>Wzywasz potęgę Sigmara, by zmiażdżyła wrogów Imperium. Święty ogień eksploduje wprost z twojego ciała w promieniu tylu metrów, ile wynosi Bonus z Ogłady. Wszystkie cele w zasięgu otrzymują 1k10 Obrażeń, które ignorują Bonus z Wytrzymałości oraz Punkty Pancerza. Cele, które mają Cechę Stworzenia <em>Demoniczny</em> lub <em>Ożywieniec</em>, otrzymują dodatkowo 1 poziom Podpalenia. Za każde +2 PS możesz zwiększyć promień okręgu o tyle metrów, ile wynosi Bonus z Ogłady, lub zadać dodatkowe 2 Obrażenia wszelkim zielonoskórym, ożywieńcom lub sługom Niszczycielskich Potęg.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.5fVTY8TSua3trOW8",
             "effects": {
-                "516PqG2C3iLdf78r": {
+                "qpp49hHsrz2VmP1E": {
+                    "id": "qpp49hHsrz2VmP1E",
+                    "name": "Płomień Wiary",
+                    "filter": "return this.effect.sourceActor.uuid == this.actor.uuid;",
                     "scriptData": [
                         {
-                            "id": "516PqG2C3iLdf78r",
-                            "name": "Złote łzy",
-                            "script": "[Script.OicQSEVZBbqLtrcf]"
+                            "id": "qpp49hHsrz2VmP1E",
+                            "name": "Płomień Wiary",
+                            "script": "[Script.xobGBJbgFjQCrwvq]"
                         }
-                    ],
-                    "id": "516PqG2C3iLdf78r",
-                    "name": "Złote łzy"
+                    ]
                 }
             },
-            "god": "Shallya"
+            "duration": "Natychmiast",
+            "target": "Bonus Ogd Metrów",
+            "range": "Ty",
+            "god": "Sigmar"
         },
-        "Martyr": {
-            "id": "YCjWyU567vb4Rs11",
-            "name": "Męczeństwo",
-            "description": "<p>Intonujesz pieśń, mówiąc Shallyi, że chcesz przyjąć na siebie ból świata. Wszelkie Obrażenia, które otrzymałby twój cel, są przenoszone na ciebie. Jeśli w wyniku tego Cudu otrzymasz Obrażenia, podczas obliczania otrzymanych Ran twój Bonus z Wytrzymałości zostaje podwojony.</p>",
-            "sourceId": "Compendium.wfrp4e-core.items.Item.YCjWyU567vb4Rs11",
+        "Spear of Myrmidia": {
+            "id": "BVZWihaal1zq3aJs",
+            "name": "Włócznia Myrmidii",
+            "description": "<p>Kiedy dzierżysz włócznię, zyskuje ona właściwość <i>Przebijająca</i> i uznaje się ją za Magiczną.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.BVZWihaal1zq3aJs",
+            "duration": "Bonus Ogd Rund",
+            "target": "Ty",
+            "range": "Ty",
+            "effects": {
+                "neBm0x6oS63U5q6N": {
+                    "id": "neBm0x6oS63U5q6N",
+                    "name": "Włócznia Myrmidii",
+                    "filter": "return args.type == \"weapon\"",
+                    "scriptData": [
+                        {
+                            "id": "neBm0x6oS63U5q6N",
+                            "name": "Włócznia Myrmidii",
+                            "script": "[Script.8oE0DTzz0krOfFlV]"
+                        }
+                    ]
+                }
+            },
+            "god": "Myrmidia"
+        },
+        "Stay Lucky": {
+            "id": "FfGboPdR54WHtkAE",
+            "name": "Uśmiech losu",
+            "description": "<p>Krzyżujesz palce, zadając sobie zagadkę Ranalda - czym tak naprawdę jest szczęście? Zyskujesz 1 Punkt Szczęścia. Za każde +2 PS możesz uzyskać dodatkowy Punkt Szczęścia, który może przekroczyć twoją standardową pulę. Nie możesz skorzystać z tego Cudu, dopóki liczba twoich Punktów Szczęścia nie spadnie do 0.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.FfGboPdR54WHtkAE",
+            "duration": "Specjalny",
+            "target": "Ty",
+            "range": "Ty",
+            "effects": {
+                "CC5N9g66lyRrHaAz": {
+                    "id": "CC5N9g66lyRrHaAz",
+                    "name": "Uśmiech losu",
+                    "scriptData": [
+                        {
+                            "id": "CC5N9g66lyRrHaAz",
+                            "name": "Uśmiech losu",
+                            "script": "[Script.o88xuUConwt0vFLw]"
+                        }
+                    ]
+                }
+            },
+            "god": "Ranald"
+        },
+        "Stay Morr's Hand": {
+            "id": "SjKFVBXgLC51dnQz",
+            "name": "Wstrzymanie dłoni Morra",
+            "description": "<p>Dotykasz oczu kogoś bliskiego śmierci i prosisz Morra, by prowadził tę duszę, ale nie zabierał jej do siebie. Cel musi mieć 0 Żywotności i chcieć poddać się Cudowi. Przez Czas Cudu cel jest pod wpływem Stanu @Condition[Utrata Przytomności] i dopóki trwa Cud, jego stan się nie pogorszy - choroby zostaną powstrzymane, Rany Krytyczne zignorowane, trucizny zwalczane itd. Gdy Cud dobiegnie końca, można albo przeprowadzić odpowiednie leczenie, albo możesz oddać celowi ostatnią posługę. Jeśli to zrobisz, co zajmuje około minuty, dusza celu popłynie przez portal Morra w objęcia śmierci, a ciało nigdy nie będzie mogło zostać wykorzystane przez nekromantów.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.SjKFVBXgLC51dnQz",
+            "duration": "Bonus Ogd Godzin (Specjalny)",
+            "target": "1",
+            "range": "Dotyk",
+            "god": "Morr"
+        },
+        "Sword of Justice": {
+            "id": "o5soyuEJoUk9HmCC",
+            "name": "Miecz sprawiedliwości",
+            "description": "<p>Modlisz się do Vereny, by kierowała twoim ostrzem i pomogła ci uderzyć w niesprawiedliwych. Kiedy dzierżysz miecz, ignoruje on wszelkie Punkty Pancerza i uznaje się go za Magiczny. Ponadto, jeśli twój cios trafia przestępcę (co ustala MG), musi on zdać <strong>Przeciętny (+20) Test Odporności</strong> albo otrzymuje Stan @Condition[Utrata Przytomności] na co najmniej tyle Rund, ile wynosi twój Bonus z Ogłady. Jeśli taki nieprzytomny przeciwnik padnie ofiarą przestępstwa, otrzymasz 1 Punkt Grzechu za każde przestępstwo. </p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.o5soyuEJoUk9HmCC",
+            "duration": "Bonus Ogd Rund",
+            "target": "Ty",
+            "range": "Ty",
+            "effects": {
+                "rR3CML7hvrzjzYH3": {
+                    "id": "rR3CML7hvrzjzYH3",
+                    "name": "Miecz sprawiedliwości",
+                    "filter": "return args.type == \"weapon\"",
+                    "scriptData": [
+                        {
+                            "id": "rR3CML7hvrzjzYH3",
+                            "name": "Miecz sprawiedliwości",
+                            "script": "[Script.eWWLmA2xINR321aK]"
+                        },
+                        {
+                            "id": "rR3CML7hvrzjzYH3",
+                            "name": "Ignoruj PP",
+                            "script": "[Script.wsqNM4NHnwaAAQym]"
+                        }
+                    ]
+                }
+            },
+            "god": "Verena"
+        },
+        "Tanglefoot": {
+            "id": "ONz21FviMRk3AyvE",
+            "name": "Oplątanie",
+            "description": "<p>Błagasz Taala w modlitwach, by chronił swe dzikie ostępy. Korzenie, pnącza i gałązki oplatają się dookoła twoich wrogów. Wszystkie cele w promieniu tylu metrów, ile wynosi twój Bonus z Ogłady, otrzymują 1 poziom @Condition[Pochwycenie]{Pochwycenia}</br>. Za każde +2 PS możesz zwiększyć zasięg o tyle metrów, ile wynosi twój Bonus z Ogłady, lub zwiększyć poziomy @Condition[Pochwycenie]{Pochwycenia}. W przypadkach prób uwolnienia się Oplątanie ma Siłę równą twojej Sile Woli.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.ONz21FviMRk3AyvE",
+            "effects": {
+                "FbFPvypAtB428U0r": {
+                    "id": "FbFPvypAtB428U0r",
+                    "name": "Oplątanie",
+                    "scriptData": [
+                        {
+                            "id": "FbFPvypAtB428U0r",
+                            "name": "Oplątanie",
+                            "script": "[Script.cDBhmHn5kjgWBAlT]"
+                        }
+                    ]
+                }
+            },
+            "duration": "Natychmiast",
+            "target": "Bonus Ogd Metrów",
+            "range": "Ogłada metrów",
+            "god": "Taal"
+        },
+        "The Snow King's Judgement": {
+            "id": "GVMPSJwgscMVJzpX",
+            "name": "Prawo Śnieżnego Króla",
+            "description": "<p>Wzywasz Ulryka, by okazał pogardę słabym, tchórzliwym i oszukańczym stworzeniom. Cel otrzymuje [[/r 1d10]]{1k10} Obrażeń, które ignorują Bonus z Wytrzymałości oraz Punkty Pancerza. Jeśli MG uzna, że cel nie jest ani słaby, ani tchórzliwy, ani oszukańczy, Obrażenia otrzymujesz ty.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.GVMPSJwgscMVJzpX",
+            "duration": "Natychmiast",
+            "target": "1",
+            "range": "Ogłada metrów",
+            "effects": {
+                "eGV3D8HZcAHCuZ0h": {
+                    "id": "eGV3D8HZcAHCuZ0h",
+                    "name": "Prawo Śnieżnego Króla",
+                    "scriptData": [
+                        {
+                            "id": "eGV3D8HZcAHCuZ0h",
+                            "name": "Prawo Śnieżnego Króla",
+                            "script": "[Script.GTZUO73pUJKpM1JB]"
+                        }
+                    ]
+                }
+            },
+            "god": "Ulryk"
+        },
+        "Tooth and Claw": {
+            "id": "PcKMAEF6UoaPSK6d",
+            "name": "Kły i Pazury",
+            "description": "<p>Wzywasz Taala, by podzielił się z tobą brutalną siłą swojego królestwa. Zyskujesz Cechy Stworzenia @UUID[Compendium.wfrp4e-core.items.pLW9SVX0TVTYPiPv]{Ugryzienie} (Bonus z Siły +3) oraz @UUID[Compendium.wfrp4e-core.items.AtpAudHA4ybXVlWM]{Broń} (Bonus z Siły +4). Są to ataki Magiczne.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.PcKMAEF6UoaPSK6d",
+            "effects": {
+                "1TWDvZQnuHAsfxxd": {
+                    "id": "1TWDvZQnuHAsfxxd",
+                    "name": "Kły i Pazury",
+                    "scriptData": [
+                        {
+                            "id": "1TWDvZQnuHAsfxxd",
+                            "name": "Kły i Pazury",
+                            "script": "[Script.DL9vYNft9aXdV2aW]"
+                        }
+                    ]
+                }
+            },
+            "duration": "Bonus Ogd Rund",
+            "target": "Ty",
+            "range": "Ty",
+            "god": "Taal"
+        },
+        "Truth Will Out": {
+            "id": "DA4ZB3HkOh51vhuB",
+            "name": "Prawdomówność",
+            "description": "<p>Intonujesz modlitwę do Vereny, chwaląc jej umiejętności odnajdywania prawdy. Możesz zadać celom jedno pytanie. Muszą odpowiedzieć natychmiast, zgodnie z prawdą i nie zatajając niczego. Jeśli cele będą chciały się opierać, muszą wykonać <strong>Przeciętny (+20) Test Opanowania</strong> i uzyskać więcej PS niż ty. Jeśli im się powiedzie, będą uparcie odmawiać odpowiedzi. Jeśli uzyskają 2 PS więcej niż ty, będą w stanie ukryć drobne szczegóły. 4 PS więcej umożliwią im zatajenie ważnej informacji, a 6 PS więcej oznacza, że mogą łgać w żywe oczy. Będziesz wiedzieć, czy udało im się odeprzeć zaklęcie, ale nie będziesz wiedzieć nic o ich podstępach czy mieć jakichkolwiek dowodów, by ujawnić oszustwa.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.DA4ZB3HkOh51vhuB",
+            "duration": "Natychmiast",
+            "target": "1",
+            "range": "Bonus Ogd Metrów",
+            "effects": {
+                "aYQSXtW45SbZbfTQ": {
+                    "id": "aYQSXtW45SbZbfTQ",
+                    "name": "Prawdomówność",
+                    "scriptData": [
+                        {
+                            "id": "aYQSXtW45SbZbfTQ",
+                            "name": "Prawdomówność",
+                            "script": "[Script.E6DMqfDeczqmVMFV]"
+                        }
+                    ]
+                }
+            },
+            "god": "Verena"
+        },
+        "Twin-tailed Comet": {
+            "id": "rjkMzFwN1trbSLL8",
+            "name": "Kometa Sigmara",
+            "description": "<p>Skandując litanie do Sigmara, wzywasz go, by zmiażdżył twych wrogów. Kometa o dwóch ogonach pikuje z przestworzy w kuli ognia i zniszczenia, trafiając w dowolny punkt w zasięgu wzroku i Zasięgu Cudu. Wszystko w zasięgu tylu metrów od miejsca uderzenia, ile wynosi Bonus z Ogłady, otrzymuje 1k10 + PS Obrażeń, które ignorują Bonus z Wytrzymałości oraz Punkty Pancerza, a ponadto otrzymuje także 1 poziom @Condition[Podpalenie]{Podpalenia}. Wyznaczone miejsce uderzenia nie może znajdować się w budynku. Co więcej, celować można jedynie w tych, których Sigmar uzna za wrogów.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.rjkMzFwN1trbSLL8",
+            "effects": {
+                "dx14txcPj5zl0vjZ": {
+                    "id": "dx14txcPj5zl0vjZ",
+                    "name": "Kometa Sigmara",
+                    "scriptData": [
+                        {
+                            "id": "dx14txcPj5zl0vjZ",
+                            "name": "Kometa Sigmara",
+                            "script": "[Script.DhZqJso1JWYtGrKk]"
+                        }
+                    ]
+                }
+            },
+            "duration": "Natychmiast",
+            "target": "Bonus Ogd Metrów",
+            "range": "Ogłada metrów",
+            "god": "Sigmar"
+        },
+        "Ulric's Fury": {
+            "id": "F6iJdTrvBvGQ54G3",
+            "name": "Dar Ulryka",
+            "description": "<p>Śpiewasz wściekłe modlitwy, a wściekłość Ulryka rozchodzi się wraz z twoim głosem. Cel jest pod wpływem Czynnika Psychologicznego @UUID[Compendium.wfrp4e-core.items.DrNUTPeodEgpWTnT]{Szał Bojowy}.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.F6iJdTrvBvGQ54G3",
             "duration": "Bonus Ogd Rund",
             "target": "1",
             "range": "Ogłada metrów",
             "effects": {
-                "Gf79SxYUeZQGAu5v": {
+                "hGdAGmyvnWQJt9Le": {
+                    "id": "hGdAGmyvnWQJt9Le",
+                    "name": "Dar Ulryka",
                     "scriptData": [
                         {
-                            "id": "Gf79SxYUeZQGAu5v",
-                            "name": "Męczeństwo",
-                            "script": "[Script.58rFc9HiBoX66J6p]"
+                            "id": "hGdAGmyvnWQJt9Le",
+                            "name": "Dar Ulryka",
+                            "script": "[Script.ErgOwSiVnm9VLVHN]"
                         }
-                    ],
-                    "id": "Gf79SxYUeZQGAu5v",
-                    "name": "Męczeństwo"
+                    ]
+                }
+            },
+            "god": "Ulryk"
+        },
+        "Unblemished Innocence": {
+            "id": "SItGUVYokyOo7csk",
+            "name": "Niepokalana niewinność",
+            "description": "<p>Położywszy dłonie na umęczonej istocie, błagasz Shallyę, by oczyściła ją z niedawno nabytego spaczenia. Cel traci 1 Punkt Zepsucia, a za każde 2 PS - kolejny punkt. Niestety Bogowie Chaosu nie lubią, gdy ktoś tak jawnie wchodzi im w paradę. Jeśli próba wywołania Cudu zakończy się Pechem, ty i twój cel otrzymujecie po [[/r 1d10]]{1k10} Punktów Zepsucia oprócz standardowych efektów. Cud musi zostać wywołany maksymalnie w ciągu godziny od nabycia Punktu Zepsucia.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.SItGUVYokyOo7csk",
+            "duration": "Natychmiast",
+            "target": "1",
+            "range": "Dotyk",
+            "effects": {
+                "3vMF3rqvtV17CtTa": {
+                    "id": "3vMF3rqvtV17CtTa",
+                    "name": "Niepokalana niewinność",
+                    "scriptData": [
+                        {
+                            "id": "3vMF3rqvtV17CtTa",
+                            "name": "Niepokalana niewinność",
+                            "script": "[Script.Msygc7oQQPB5fw0b]"
+                        }
+                    ]
                 }
             },
             "god": "Shallya"
+        },
+        "Vanquish the Unrighteous": {
+            "id": "I8YPP2uRmUKyHEq2",
+            "name": "Pogrom",
+            "description": "<p>Twoje żarliwe modlitwy napełniają wybranych sojuszników szaleńczą pogardą wobec wrogów Sigmara. Wszyscy sojusznicy objęci Cudem otrzymują @UUID[Compendium.wfrp4e-core.items.5hH73j2NgPdsLCZN]{Nienawiść} wobec zielonoskórych, nieumarłych i wszystkich innych sług Chaosu.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.I8YPP2uRmUKyHEq2",
+            "duration": "Bonus Ogd Rund",
+            "target": "Bonus Ogd sojuszników",
+            "range": "Ogłada metrów",
+            "effects": {
+                "DxYGZR4BgiliPfoY": {
+                    "id": "DxYGZR4BgiliPfoY",
+                    "name": "Pogrom",
+                    "scriptData": [
+                        {
+                            "id": "DxYGZR4BgiliPfoY",
+                            "name": "Pogrom",
+                            "script": "[Script.sZwLitzwKBTaFca3]"
+                        }
+                    ]
+                }
+            },
+            "god": "Sigmar"
+        },
+        "Waterwalk": {
+            "id": "iWVQRVDVDCx1SyPA",
+            "name": "Chodzenie po wodzie",
+            "description": "<p>Prosisz Mananna, by pozwolił ci przejść po otwartych wodach, tak jakby był to ubity grunt. Działa to jedynie w przypadku większych zbiorników wodnych o średnicy co najmniej 10 metrów. Wszystkie inne są zbyt małe, by należeć do domeny Mananna, i nie są przez niego zauważane.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.iWVQRVDVDCx1SyPA",
+            "duration": "Bonus Ogd Minut",
+            "target": "Ty",
+            "range": "Ty",
+            "effects": {
+                "odfHnWTa1Q7luIyY": {
+                    "id": "odfHnWTa1Q7luIyY",
+                    "name": "Chodzenie po wodzie",
+                    "scriptData": [
+                        {
+                            "id": "odfHnWTa1Q7luIyY",
+                            "name": "Chodzenie po wodzie"
+                        }
+                    ]
+                }
+            },
+            "god": "Manann"
+        },
+        "Winter's Bite": {
+            "id": "rrfrmqCpy10u7c9o",
+            "name": "Odmrożenia",
+            "description": "<p>Ryczysz modlitwy do Ulryka, sławiąc jego nienasycony topór Blitzbeil. Jeśli dzierżysz topór, uznaje się go za Magiczny. Ponadto broń zadaje Obrażenia zwiększone o PS, a każda żywa istota trafiona toporem musi także wykonać <strong>Wymagający (+0) Test Odporności</strong>. Jeśli ten się nie powiedzie, istota otrzyma również 1 poziom Condition[Oszołomienie]{Oszołomienia}. Trafione cele tracą za to wszystkie poziomy @Condition[Krwawienie]{Krwawienia}, ponieważ krew zamarza im w żyłach. Podczas trwania Cudu Obrażenia zadane ciosem twojego topora nie mogą wywołać @Condition[Krwawienie]{Krwawienia}.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.rrfrmqCpy10u7c9o",
+            "duration": "Bonus Ogd Rund",
+            "target": "Ty",
+            "range": "Ty",
+            "effects": {
+                "90vi32xekMLeXdXT": {
+                    "id": "90vi32xekMLeXdXT",
+                    "name": "Odmrożenia",
+                    "filter": "return args.type == \"weapon\"",
+                    "scriptData": [
+                        {
+                            "id": "90vi32xekMLeXdXT",
+                            "name": "Odmrożenia",
+                            "script": "[Script.U5ndCwcJ1s3Ns26w]"
+                        },
+                        {
+                            "id": "90vi32xekMLeXdXT",
+                            "name": "Oszołomienie",
+                            "script": "[Script.k8TC0yzp4xfOXD2n]"
+                        }
+                    ]
+                }
+            },
+            "god": "Ulryk"
+        },
+        "Wisdom of the Owl": {
+            "id": "fAlQcNUb6TZtPKqk",
+            "name": "Mądrość sowy",
+            "description": "<p>Wzywasz Verenę, by napełniła cię mądrością i wiedzą. Podczas trwania Cudu otrzymujesz premię +20 do Testów Inteligencji. Ponadto twoje źrenice rozszerzają się, dzięki czemu twój wzrok staje się przeszywający i niepokojący - otrzymujesz 1 poziom Talentów @UUID[Compendium.wfrp4e-core.items.0hn6UaKq8CoZP2zD]{Groźny} oraz @UUID[Compendium.wfrp4e-core.items.9h82z72XGo9tfgQS]{Wyczulony Zmysł (wzrok)}.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.fAlQcNUb6TZtPKqk",
+            "effects": {
+                "2lds6IDIyorYrvY4": {
+                    "id": "2lds6IDIyorYrvY4",
+                    "name": "Mądrość sowy",
+                    "scriptData": [
+                        {
+                            "id": "2lds6IDIyorYrvY4",
+                            "name": "Mądrość sowy",
+                            "script": "[Script.9ZFPDCk8M2TQxh7x]",
+                            "activationScript": "[Script.MnXny8SCh6OceJc9]",
+                            "hideScript": "[Script.JjDzMnUxaWQePIYh]"
+                        },
+                        {
+                            "id": "2lds6IDIyorYrvY4",
+                            "name": "Przedmioty",
+                            "script": "[Script.dbOSvpgcPjsc2uvq]"
+                        }
+                    ]
+                }
+            },
+            "duration": "Bonus Ogd Rund",
+            "target": "Ty",
+            "range": "Ty",
+            "god": "Verena"
+        },
+        "You Ain’t Seen Me, Right?": {
+            "id": "fABd17NZvg2uUReL",
+            "name": "Nie widziałeś mnie, prawda?",
+            "description": "<p>Zamyślasz się nad skomplikowanym paradoksem realności, której nie można dostrzec. Cel objęty Cudem może przejść gdzieś niezauważenie, zakładając, że nie zwraca na siebie zbyt wiele uwagi (dotykając, atakując, wołając do kogoś, rzucając zaklęcie czy hałasując). Możesz przyzwać ten Cud jedynie wtedy, gdy nikt na ciebie nie patrzy.</p>",
+            "sourceId": "Compendium.wfrp4e-core.items.Item.fABd17NZvg2uUReL",
+            "duration": "Bonus Ogd Rund",
+            "target": "1",
+            "range": "Ogłada metrów",
+            "effects": {
+                "Pu2IGxGN1kTUxrCV": {
+                    "id": "Pu2IGxGN1kTUxrCV",
+                    "name": "Nie widziałeś mnie, prawda?",
+                    "scriptData": [
+                        {
+                            "id": "Pu2IGxGN1kTUxrCV",
+                            "name": "Nie widziałeś mnie, prawda?"
+                        }
+                    ]
+                }
+            },
+            "god": "Ranald"
         }
-    },
-    "folders": {
-        "Prayers": "Modlitwy"
     }
 }

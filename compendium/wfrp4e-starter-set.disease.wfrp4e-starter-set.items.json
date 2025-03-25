@@ -1,20 +1,46 @@
 {
+    "label": "Choroby",
+    "mapping": {
+        "duration_value": "system.duration.value",
+        "duration_unit": "system.duration.unit",
+        "incubation_value": "system.incubation.value",
+        "incubation_unit": "system.incubation.unit",
+        "contraction": "system.contraction.value",
+        "symptoms": "system.symptoms.value",
+        "permanent": "system.permanent.value",
+        "effects": {
+            "path": "effects",
+            "converter": "effects"
+        }
+    },
+    "folders": {
+        "Diseases": "Choroby"
+    },
     "entries": {
         "Bronze Fever": {
-            "name": "Brązowa Febra",
-            "permanent": " ",
-            "duration_unit": "dni",
-            "symptoms": "Apatia, Gorączka, Mdłości, Nawroty (Umiarkowane)",
-            "duration_value": "1d10",
-            "incubation_unit": "dni",
-            "contraction": "Jeśli nie powiedzie się Przeciętny (+20) Test Odporności po ugryzieniu przez zainfekowanego komara. Spożycie lub przetoczenie zakażonej krwi powoduje automatyczne zarażenie Brązową Febrą.",
-            "sourceId": "Compendium.wfrp4e-starter-set.items.BBYmXJ5jiRUk93IJ",
-            "incubation_value": "1d10",
-            "description": "<p>Brązową Febrę częściej spotyka się w południowych rejonach Starego Świata, gdzie jest cieplej i bardziej wilgotno, a choroba roznoszona jest przez ukąszenia owadów. Większość zarażonych wraca do zdrowia po kilku dniach, ale niekiedy choroba prowadzi do komplikacji, a nawet śmierci.&nbsp;</p>",
             "id": "BBYmXJ5jiRUk93IJ",
+            "name": "Brązowa Febra",
+            "description": "<p>Brązową Febrę częściej spotyka się w południowych rejonach Starego Świata, gdzie jest cieplej i bardziej wilgotno, a choroba roznoszona jest przez ukąszenia owadów. Większość zarażonych wraca do zdrowia po kilku dniach, ale niekiedy choroba prowadzi do komplikacji, a nawet śmierci.&nbsp;</p>",
+            "sourceId": "Compendium.wfrp4e-starter-set.items.BBYmXJ5jiRUk93IJ",
             "effects": {
+                "CphfLDDScFyJx7cR": {
+                    "id": "CphfLDDScFyJx7cR",
+                    "name": "Nawroty (Umiarkowane)"
+                },
+                "eMgQvHbj3ODJL8X6": {
+                    "id": "eMgQvHbj3ODJL8X6",
+                    "name": "Mdłości",
+                    "scriptData": [
+                        {
+                            "id": "eMgQvHbj3ODJL8X6",
+                            "name": "@effect.name",
+                            "script": "if (args.test.failed)\n                            {\n                                let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"];\n                                if (applicableCharacteristics.includes(args.test.characteristicKey))\n                                {\n                                    this.actor.addCondition(\"stunned\");\n                                }\n                            }"
+                        }
+                    ]
+                },
                 "OvR8HtQaW6EuIyPB": {
                     "id": "OvR8HtQaW6EuIyPB",
+                    "name": "Gorączka",
                     "scriptData": [
                         {
                             "id": "OvR8HtQaW6EuIyPB",
@@ -23,55 +49,29 @@
                             "activationScript": "return [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)",
                             "hideScript": "return ![\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"].includes(args.characteristic)"
                         }
-                    ],
-                    "name": "Gorączka"
-                },
-                "eMgQvHbj3ODJL8X6": {
-                    "scriptData": [
-                        {
-                            "id": "eMgQvHbj3ODJL8X6",
-                            "name": "@effect.name",
-                            "script": "if (args.test.failed)\n                            {\n                                let applicableCharacteristics = [\"ws\", \"bs\", \"s\", \"fel\", \"ag\", \"t\", \"dex\"];\n                                if (applicableCharacteristics.includes(args.test.characteristicKey))\n                                {\n                                    this.actor.addCondition(\"stunned\");\n                                }\n                            }"
-                        }
-                    ],
-                    "id": "eMgQvHbj3ODJL8X6",
-                    "name": "Mdłości"
+                    ]
                 },
                 "qjXPqzIEuzHGAY8m": {
+                    "id": "qjXPqzIEuzHGAY8m",
+                    "name": "Apatia",
                     "scriptData": [
                         {
                             "id": "qjXPqzIEuzHGAY8m",
                             "name": "@effect.name",
                             "script": "let fatigued = this.actor.hasCondition(\"fatigued\")\nif (!fatigued)\n{\n    this.actor.addCondition(\"fatigued\")\n    ui.notifications.notify(\"Zmęczenie dodane do \" + this.actor.name + \", które nie może zostać usunięte, dopóki objaw Apatia nie zostanie uleczony.\")\n}"
                         }
-                    ],
-                    "id": "qjXPqzIEuzHGAY8m",
-                    "name": "Apatia"
-                },
-                "CphfLDDScFyJx7cR": {
-                    "id": "CphfLDDScFyJx7cR",
-                    "name": "Nawroty (Umiarkowane)"
+                    ]
                 }
             },
+            "duration_value": "1d10",
+            "duration_unit": "dni",
+            "contraction": "Jeśli nie powiedzie się Przeciętny (+20) Test Odporności po ugryzieniu przez zainfekowanego komara. Spożycie lub przetoczenie zakażonej krwi powoduje automatyczne zarażenie Brązową Febrą.",
+            "incubation_value": "1d10",
+            "incubation_unit": "dni",
+            "symptoms": "Apatia, Gorączka, Mdłości, Nawroty (Umiarkowane)",
+            "permanent": " ",
             "duration_text": " ",
             "incubation_text": " "
         }
-    },
-    "folders": {
-        "Diseases": "Choroby"
-    },
-    "mapping": {
-        "permanent": "system.permanent.value",
-        "incubation_value": "system.incubation.value",
-        "effects": {
-            "converter": "effects",
-            "path": "effects"
-        },
-        "duration_unit": "system.duration.unit",
-        "symptoms": "system.symptoms.value",
-        "incubation_unit": "system.incubation.unit",
-        "duration_value": "system.duration.value",
-        "contraction": "system.contraction.value"
-    },
-    "label": "Choroby"
+    }
 }

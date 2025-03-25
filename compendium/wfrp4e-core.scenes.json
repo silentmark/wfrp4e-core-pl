@@ -6,27 +6,22 @@
             "path": "notes",
             "converter": "notes"
         },
-        "units": "grid.units",
-        "scene_note": "flags.wfrp4e-core.scene-note"
+        "units": "grid.units"
     },
     "entries": {
         "Barony of Böhrn": {
             "id": "Bk3yufokGdVtsQag",
             "name": "Baronia Böhrn",
-            "scene_note": "Baronia Böhrn",
-            "image": "modules/wfrp4e-core-pl/images/barony-of-bohrn.webp",
             "units": "km"
         },
         "GM Screen": {
             "id": "R4WcWZTHP25YCoW5",
             "name": "Ekran Mistrza Gry",
-            "image": "modules/wfrp4e-core-pl/images/gm-screen.webp",
             "units": "m"
         },
         "Reikland": {
             "id": "vGrxlojYtdObKLF6",
             "name": "Reikland",
-            "image": "modules/wfrp4e-core-pl/images/reikland.webp",
             "units": "km",
             "notes": {
                 "qwLZqgof9MM9fxNL": {
@@ -51,19 +46,19 @@
                     "text": " "
                 },
                 "uZplfVxSvgUGwPSu": {
-                    "text": " "
+                    "text": "  "
                 },
                 "ODOLuIwDaHlSlGLi": {
-                    "text": " "
+                    "text": "  "
                 },
                 "YJD1V9XiXOgbR84v": {
-                    "text": " "
+                    "text": "  "
                 },
                 "mRdvjgPpB7nhymup": {
-                    "text": " "
+                    "text": "  "
                 },
                 "lAw6eR5NKXnroW0A": {
-                    "text": " "
+                    "text": "  "
                 },
                 "PCWU01X92sQM8Cav": {
                     "text": " "
@@ -209,8 +204,7 @@
                 "obnX6g5vGCJj6N22": {
                     "text": " "
                 }
-            },
-            "scene_note": "Historia Reiklandu"
+            }
         }
     }
 }

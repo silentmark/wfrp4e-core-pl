@@ -1,73 +1,73 @@
 {
-    "entries": {
-        "Sneaky Stabbin'": {
-            "duration": "Specjalny",
-            "id": "PQr8MOz38M0TXlga",
-            "effects": {
-                "sOpM9v9eKAumNjqd": {
-                    "name": "Cwano-dźgano",
-                    "scriptData": [
-                        {
-                            "script": "[Script.j1AmrY1SxFJQyapo]",
-                            "id": "sOpM9v9eKAumNjqd",
-                            "name": "Cwano-dźgano"
-                        },
-                        {
-                            "name": "Dodaj Przewagę",
-                            "id": "sOpM9v9eKAumNjqd",
-                            "script": "[Script.kIM4Fs1lFVV7TSnj]"
-                        }
-                    ],
-                    "id": "sOpM9v9eKAumNjqd"
-                }
-            },
-            "description": "<p>Zaklinasz ostrza swoich sojuszników, aby wyszukiwały najsłabsze punkty pancerza ich wrogów. Twoje cele dostają +1 Przewagę, a ich ataki zyskują Zaletę broni Przekłuwająca (WFRP, strona 298), która trwa, dopóki mają Przewagę.</p>",
-            "range": "Siła Woli metrów",
-            "target": "Bonus Ogd Goblinów",
-            "sourceId": "Compendium.wfrp4e-starter-set.items.PQr8MOz38M0TXlga",
-            "name": "Cwano-dźgano"
-        },
-        "Itchy Nuisance": {
-            "effects": {
-                "yREez0l5RG1YGcNM": {
-                    "name": "Swędzące utrapienie",
-                    "scriptData": [
-                        {
-                            "id": "yREez0l5RG1YGcNM",
-                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]",
-                            "name": "Swędzące utrapienie",
-                            "script": "[Script.xvGxwv7X0Vq3vNqb]"
-                        }
-                    ],
-                    "id": "yREez0l5RG1YGcNM"
-                }
-            },
-            "description": "<p>Liczba Rund równa Bonusowi z Siły Woli Machasz palcami i z ich koniuszków wystrzeliwują małe, swędzące zarodniki grzybni, które wciskają się w czułe miejsca celu. Zarodniki gwałtownie rosną, co wywołuje nieznośne swędzenie. Cel dostaje karę -10 do wszystkich Testów i na czas trwania czaru jego Szybkość jest zmniejszona o połowę.</p>",
-            "name": "Swędzące utrapienie",
-            "target": "1",
-            "duration": "Bonus SW Rund",
-            "id": "j43uKlFEckLe70LP",
-            "range": "Siła Woli metrów",
-            "sourceId": "Compendium.wfrp4e-starter-set.items.j43uKlFEckLe70LP"
+    "label": "Zaklęcia",
+    "mapping": {
+        "duration": "system.duration.value",
+        "range": "system.range.value",
+        "target": "system.target.value",
+        "damage": "system.damage.value",
+        "overcast": "system.overcast.label",
+        "overcastvalue": "system.overcast.valuePerOvercast.type",
+        "overcastinitial": "system.overcast.initial.type",
+        "overcastvaluevalue": "system.overcast.valuePerOvercast.additional",
+        "overcastinitialvalue": "system.overcast.initial.additional",
+        "effects": {
+            "path": "effects",
+            "converter": "effects"
         }
     },
     "folders": {
         "Spells": "Zaklęcia"
     },
-    "mapping": {
-        "overcastvaluevalue": "system.overcast.valuePerOvercast.additional",
-        "duration": "system.duration.value",
-        "overcast": "system.overcast.label",
-        "overcastinitial": "system.overcast.initial.type",
-        "effects": {
-            "converter": "effects",
-            "path": "effects"
+    "entries": {
+        "Itchy Nuisance": {
+            "id": "j43uKlFEckLe70LP",
+            "name": "Swędzące utrapienie",
+            "description": "<p>Liczba Rund równa Bonusowi z Siły Woli Machasz palcami i z ich koniuszków wystrzeliwują małe, swędzące zarodniki grzybni, które wciskają się w czułe miejsca celu. Zarodniki gwałtownie rosną, co wywołuje nieznośne swędzenie. Cel dostaje karę -10 do wszystkich Testów i na czas trwania czaru jego Szybkość jest zmniejszona o połowę.</p>",
+            "sourceId": "Compendium.wfrp4e-starter-set.items.j43uKlFEckLe70LP",
+            "effects": {
+                "yREez0l5RG1YGcNM": {
+                    "id": "yREez0l5RG1YGcNM",
+                    "name": "Swędzące utrapienie",
+                    "scriptData": [
+                        {
+                            "id": "yREez0l5RG1YGcNM",
+                            "name": "Swędzące utrapienie",
+                            "script": "[Script.xvGxwv7X0Vq3vNqb]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
+                        }
+                    ]
+                }
+            },
+            "duration": "Bonus SW Rund",
+            "target": "1",
+            "range": "Siła Woli metrów"
         },
-        "damage": "system.damage.value",
-        "target": "system.target.value",
-        "range": "system.range.value",
-        "overcastvalue": "system.overcast.valuePerOvercast.type",
-        "overcastinitialvalue": "system.overcast.initial.additional"
-    },
-    "label": "Zaklęcia"
+        "Sneaky Stabbin'": {
+            "id": "PQr8MOz38M0TXlga",
+            "name": "Cwano-dźgano",
+            "description": "<p>Zaklinasz ostrza swoich sojuszników, aby wyszukiwały najsłabsze punkty pancerza ich wrogów. Twoje cele dostają +1 Przewagę, a ich ataki zyskują Zaletę broni Przekłuwająca (WFRP, strona 298), która trwa, dopóki mają Przewagę.</p>",
+            "sourceId": "Compendium.wfrp4e-starter-set.items.PQr8MOz38M0TXlga",
+            "effects": {
+                "sOpM9v9eKAumNjqd": {
+                    "id": "sOpM9v9eKAumNjqd",
+                    "name": "Cwano-dźgano",
+                    "scriptData": [
+                        {
+                            "id": "sOpM9v9eKAumNjqd",
+                            "name": "Cwano-dźgano",
+                            "script": "[Script.j1AmrY1SxFJQyapo]"
+                        },
+                        {
+                            "id": "sOpM9v9eKAumNjqd",
+                            "name": "Dodaj Przewagę",
+                            "script": "[Script.kIM4Fs1lFVV7TSnj]"
+                        }
+                    ]
+                }
+            },
+            "duration": "Specjalny",
+            "target": "Bonus Ogd Goblinów",
+            "range": "Siła Woli metrów"
+        }
+    }
 }

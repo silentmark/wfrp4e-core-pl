@@ -18,6 +18,8 @@
             "tests": "Broń Biała, by zbić broń",
             "effects": {
                 "69iI6SkD3mTx57yq": {
+                    "id": "69iI6SkD3mTx57yq",
+                    "name": "Zbicie Broni",
                     "scriptData": [
                         {
                             "id": "69iI6SkD3mTx57yq",
@@ -26,9 +28,7 @@
                             "hideScript": "[Script.f7WZvYle9iqefRsh]",
                             "submissionScript": "[Script.t48hkacYdOpzWvK9]"
                         }
-                    ],
-                    "id": "69iI6SkD3mTx57yq",
-                    "name": "Zbicie Broni"
+                    ]
                 }
             }
         },
@@ -40,17 +40,17 @@
             "tests": "Broń Zasięgowa, kiedy strzelasz z broni z Wadą Załoga",
             "effects": {
                 "gIHqYDGXSfhdoDR0": {
+                    "id": "gIHqYDGXSfhdoDR0",
+                    "name": "Dowódca Załogi",
                     "scriptData": [
                         {
                             "id": "gIHqYDGXSfhdoDR0",
                             "name": "@item.system.tests.value",
                             "script": "[Script.956dUb5sd6OtbWZR]",
-                            "hideScript": "[Script.GUkpYdPwoC5pc9BT]",
-                            "activationScript": "[Script.lol5J6h0pErzM71s]"
+                            "activationScript": "[Script.lol5J6h0pErzM71s]",
+                            "hideScript": "[Script.GUkpYdPwoC5pc9BT]"
                         }
-                    ],
-                    "id": "gIHqYDGXSfhdoDR0",
-                    "name": "Dowódca Załogi"
+                    ]
                 }
             }
         },
@@ -62,6 +62,8 @@
             "tests": "Atletyka podczas Rozproszenia Uwagi",
             "effects": {
                 "57CSOJmTpVlHluIx": {
+                    "id": "57CSOJmTpVlHluIx",
+                    "name": "Rozproszenie Uwagi",
                     "scriptData": [
                         {
                             "id": "57CSOJmTpVlHluIx",
@@ -69,9 +71,7 @@
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.DuM5l2Yb4bdvDeaG]"
                         }
-                    ],
-                    "id": "57CSOJmTpVlHluIx",
-                    "name": "Rozproszenie Uwagi"
+                    ]
                 }
             }
         },
@@ -83,6 +83,8 @@
             "tests": "Broń Biała, kiedy jesteś w pobliżu sojuszniczej postaci z tym Talentem",
             "effects": {
                 "zkJFANrVuv4kJLqc": {
+                    "id": "zkJFANrVuv4kJLqc",
+                    "name": "Musztra",
                     "scriptData": [
                         {
                             "id": "zkJFANrVuv4kJLqc",
@@ -90,9 +92,7 @@
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.SPOkFWZWziZk5b7A]"
                         }
-                    ],
-                    "id": "zkJFANrVuv4kJLqc",
-                    "name": "Musztra"
+                    ]
                 }
             }
         },
@@ -104,6 +104,8 @@
             "tests": "Atletyka, gdy Uciekasz albo kiedy jesteś ściganym podczas pościgu",
             "effects": {
                 "k9ncPws5OvRMicEA": {
+                    "id": "k9ncPws5OvRMicEA",
+                    "name": "Chodu!",
                     "scriptData": [
                         {
                             "id": "k9ncPws5OvRMicEA",
@@ -111,9 +113,7 @@
                             "script": "[Script.956dUb5sd6OtbWZR]",
                             "hideScript": "[Script.9EVj4bmZJex45Mt7]"
                         }
-                    ],
-                    "id": "k9ncPws5OvRMicEA",
-                    "name": "Chodu!"
+                    ]
                 }
             }
         },
@@ -173,6 +173,8 @@
             "tests": "Broń Biała w obronie",
             "effects": {
                 "0dJPOu2AdizqpgRT": {
+                    "id": "0dJPOu2AdizqpgRT",
+                    "name": "Odwrócenie Szans",
                     "scriptData": [
                         {
                             "id": "0dJPOu2AdizqpgRT",
@@ -181,9 +183,7 @@
                             "activationScript": "[Script.FXwfqF0jpXlBQ9Y3]",
                             "hideScript": "[Script.SPOkFWZWziZk5b7A]"
                         }
-                    ],
-                    "id": "0dJPOu2AdizqpgRT",
-                    "name": "Odwrócenie Szans"
+                    ]
                 }
             }
         },
@@ -195,6 +195,8 @@
             "tests": "Jeździectwo w walce",
             "effects": {
                 "lMl2BdGl8swiY9aZ": {
+                    "id": "lMl2BdGl8swiY9aZ",
+                    "name": "Urodzony w Siodle",
                     "scriptData": [
                         {
                             "id": "lMl2BdGl8swiY9aZ",
@@ -203,9 +205,7 @@
                             "activationScript": "[Script.FXuyiJoXdAh6WhRK]",
                             "hideScript": "[Script.w4JKuTECFmu3YmTR]"
                         }
-                    ],
-                    "id": "lMl2BdGl8swiY9aZ",
-                    "name": "Urodzony w Siodle"
+                    ]
                 }
             }
         },

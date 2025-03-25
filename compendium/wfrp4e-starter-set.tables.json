@@ -1,5 +1,5 @@
 {
-    "label": "Tabele (Zestaw Startowy)",
+    "label": "Tables (Core)",
     "mapping": {
         "initialization_folder": "flags.wfrp4e-core.initialization-folder"
     },
@@ -19,7 +19,7 @@
             "name": "Trafienie Krytyczne (Zestaw Startowy)",
             "description": " ",
             "results": {
-                "1-10": "Rozcięcie",
+                "1-10": "Gash",
                 "11-20": "Cios w bebechy",
                 "21-30": "Poniżej pasa!",
                 "31-40": "Bez tchu",
@@ -41,7 +41,7 @@
             "name": "Trafienie Krytyczne (Zestaw Startowy)",
             "description": " ",
             "results": {
-                "1-10": "Rozcięcie",
+                "1-10": "Gash",
                 "11-20": "Cios w bebechy",
                 "21-30": "Poniżej pasa!",
                 "31-40": "Pozbawienie tchu",
@@ -63,7 +63,7 @@
             "name": "Trafienie Krytyczne (Zestaw Startowy)",
             "description": " ",
             "results": {
-                "1-10": "Rozcięcie",
+                "1-10": "Gash",
                 "11-20": "Cios w bebechy",
                 "21-30": "Poniżej pasa!",
                 "31-40": "Pozbawienie tchu",
@@ -81,26 +81,26 @@
             }
         },
         "yYfGtudjckO3bubF": {
-            "results": {
-                "1-10": "Rozcięcie",
-                "76-80": "Złamana kość",
-                "21-30": "Poniżej pasa!",
-                "51-60": "Rana szarpana",
-                "11-20": "Cios w bebechy",
-                "91-95": "Roztrzaskana kość",
-                "71-75": "Bolesne rozcięcie",
-                "66-70": "Rana otwarta",
-                "61-65": "Pęknięta kość",
-                "86-90": "Okaleczenie",
-                "31-40": "Pozbawienie tchu",
-                "96-99": "Pokonany",
-                "81-85": "Naderwany mięsień",
-                "41-50": "Potłuczenie",
-                "100-100": "Na kawałki"
-            },
+            "id": "yYfGtudjckO3bubF",
             "name": "Trafienie Krytyczne (Zestaw Startowy)",
             "description": " ",
-            "id": "yYfGtudjckO3bubF"
+            "results": {
+                "1-10": "Rozcięcie",
+                "11-20": "Cios w bebechy",
+                "21-30": "Poniżej pasa!",
+                "31-40": "Pozbawienie tchu",
+                "41-50": "Potłuczenie",
+                "51-60": "Rana szarpana",
+                "61-65": "Pęknięta kość",
+                "66-70": "Rana otwarta",
+                "71-75": "Bolesne rozcięcie",
+                "76-80": "Złamana kość",
+                "81-85": "Naderwany mięsień",
+                "86-90": "Okaleczenie",
+                "91-95": "Roztrzaskana kość",
+                "96-99": "Pokonany",
+                "100-100": "Na kawałki"
+            }
         }
     }
 }

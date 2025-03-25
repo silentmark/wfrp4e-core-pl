@@ -33,15 +33,15 @@
             "range": "Ty",
             "effects": {
                 "ntcAxD3Wg7QRXBGl": {
+                    "id": "ntcAxD3Wg7QRXBGl",
+                    "name": "Przerażenie wroga",
                     "scriptData": [
                         {
                             "id": "ntcAxD3Wg7QRXBGl",
                             "name": "Przerażenie wroga",
                             "script": "[Script.jWkfoVpHLiRaHTza]"
                         }
-                    ],
-                    "id": "ntcAxD3Wg7QRXBGl",
-                    "name": "Przerażenie wroga"
+                    ]
                 }
             },
             "god": "Myrmidia"
@@ -76,16 +76,16 @@
             "range": "Ty",
             "effects": {
                 "dUaKZS3rO57Z0jww": {
+                    "id": "dUaKZS3rO57Z0jww",
+                    "name": "Na zabójczej ziemi",
+                    "filter": "return !this.actor.sameSideAs(this.effect.sourceActor)",
                     "scriptData": [
                         {
                             "id": "dUaKZS3rO57Z0jww",
                             "name": "Na zabójczej ziemi",
                             "script": "[Script.IslMfFgpgQq2brpu]"
                         }
-                    ],
-                    "id": "dUaKZS3rO57Z0jww",
-                    "name": "Na zabójczej ziemi",
-                    "filter": "return !this.actor.sameSideAs(this.effect.sourceActor)"
+                    ]
                 }
             },
             "god": "Myrmidia"
@@ -100,15 +100,15 @@
             "range": "Ty",
             "effects": {
                 "GDyvyDcne096hSLc": {
+                    "id": "GDyvyDcne096hSLc",
+                    "name": "Szybki cios",
                     "scriptData": [
                         {
                             "id": "GDyvyDcne096hSLc",
                             "name": "Szybki cios",
                             "script": "[Script.H3Wls12aVWAWTp9J]"
                         }
-                    ],
-                    "id": "GDyvyDcne096hSLc",
-                    "name": "Szybki cios"
+                    ]
                 }
             },
             "god": "Myrmidia"
@@ -123,16 +123,16 @@
             "range": "Ty",
             "effects": {
                 "ujYO1v8OnUyJ1c5S": {
+                    "id": "ujYO1v8OnUyJ1c5S",
+                    "name": "Oddanie tarczowniczki",
+                    "filter": "return !this.actor.sameSideAs(this.effect.sourceActor)",
                     "scriptData": [
                         {
                             "id": "ujYO1v8OnUyJ1c5S",
                             "name": "Oddanie tarczowniczki",
                             "script": "[Script.eh1J3s0s4A2AxoFp]"
                         }
-                    ],
-                    "id": "ujYO1v8OnUyJ1c5S",
-                    "name": "Oddanie tarczowniczki",
-                    "filter": "return !this.actor.sameSideAs(this.effect.sourceActor)"
+                    ]
                 }
             },
             "god": "Myrmidia"

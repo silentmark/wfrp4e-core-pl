@@ -1,7 +1,7 @@
 {
     "label": "Przedmioty (Podręcznik Główny)",
     "mapping": {
-        "gmDescription": "system.gmdescription.value",
+        "gmdescription": "system.gmdescription.value",
         "alterNamePost": "system.alterName.post",
         "alterNamePre": "system.alterName.pre",
         "effects": {
@@ -25,8 +25,5 @@
             "converter": "templateTrappings"
         }
     },
-    "entries": {
-    },
-    "folders": {
-    }
+    "entries": {}
 }

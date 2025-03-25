@@ -38,7 +38,7 @@
         "Jarred Arm": {
             "id": "kkE4Yt01G38yFGwA",
             "name": "Zdrętwiałe ramię",
-            "description": "<p>Postać upuszcza wszystko, co trzymała w dłoni. Ramię pozostaje bezużyteczne przez [[/r 1d10]] - Bonus z Wytrzymałości Rund (minimum 1). W tym czasie postać traktuje daną rękę tak, jakby ją straciła (patrz @UUID[Compendium.wfrp4e-core.journals.JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#amputacje]{Amputacje}).</p>",
+            "description": "<p>Postać upuszcza wszystko, co trzymała w dłoni. Ramię pozostaje bezużyteczne przez [[/r 1d10]]{1k10} - Bonus z Wytrzymałości Rund (minimum 1). W tym czasie postać traktuje daną rękę tak, jakby ją straciła (patrz @UUID[Compendium.wfrp4e-core.journals.JournalEntry.NS3YGlJQxwTggjRX.JournalEntryPage.WCivInLZrqEtZzF4#amputacje]{Amputacje}).</p>",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.kkE4Yt01G38yFGwA",
             "effects": {
                 "dx2Rcp03P3wA89Uu": {
@@ -54,8 +54,8 @@
                             "id": "dx2Rcp03P3wA89Uu",
                             "name": "Zapobiegaj użyciu ręki",
                             "script": "[Script.sKO8TcLIkCTnFvXu]",
-                            "hideScript": "[Script.L2cdQppcPwxz24hN]",
-                            "activationScript": "[Script.R5dOZWFxE2n6tooX]"
+                            "activationScript": "[Script.R5dOZWFxE2n6tooX]",
+                            "hideScript": "[Script.L2cdQppcPwxz24hN]"
                         }
                     ]
                 }
@@ -140,8 +140,8 @@
                             "id": "Xal5ZuQ3qEEAP7P3",
                             "name": "Stłuczony palec",
                             "script": "[Script.xvGxwv7X0Vq3vNqb]",
-                            "hideScript": "[Script.vgfs0DXvF5iKrz1M]",
-                            "activationScript": "[Script.JFgXyb6bKjZJLmF8]"
+                            "activationScript": "[Script.JFgXyb6bKjZJLmF8]",
+                            "hideScript": "[Script.vgfs0DXvF5iKrz1M]"
                         },
                         {
                             "id": "Xal5ZuQ3qEEAP7P3",
@@ -157,7 +157,7 @@
         "Winded": {
             "id": "uHClSevjSROgA0iL",
             "name": "Bez tchu",
-            "description": "<p>Postać otrzymuje 1 poziom @Condition[Oszołomienie]{Oszołomienia}. Musi również zdać <strong>Przeciętny (+20) Test Odporności</strong> albo otrzyma Stan @Condition[Powalenie]{Powalenie}. Szybkość zmniejsza się o połowę na [[/r 1d10]] Rund, czyli dopóki postać nie zacznie oddychać normalnie.</p>",
+            "description": "<p>Postać otrzymuje 1 poziom @Condition[Oszołomienie]{Oszołomienia}. Musi również zdać <strong>Przeciętny (+20) Test Odporności</strong> albo otrzyma Stan @Condition[Powalenie]{Powalenie}. Szybkość zmniejsza się o połowę na [[/r 1d10]]{1k10} Rund, czyli dopóki postać nie zacznie oddychać normalnie.</p>",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.UC2zRorETcI8rheP",
             "effects": {
                 "5r5Q7yjXn9xQ2zKf": {
@@ -188,8 +188,8 @@
                         {
                             "id": "mdShjyZTYVUjkzKP",
                             "name": "Oszołomienie",
-                            "activationScript": "return true",
-                            "script": "args.prefillModifiers.modifier -= 10 * this.effect.conditionValue"
+                            "script": "args.prefillModifiers.modifier -= 10 * this.effect.conditionValue",
+                            "activationScript": "return true"
                         }
                     ]
                 }
@@ -199,23 +199,23 @@
         },
         "Rattling Blow": {
             "id": "M15Fg1Wdl047rD8L",
+            "name": "Bolesne uderzenie",
+            "description": "<p>Cios jest na tyle mocny, że w polu widzenia pojawiają się plamki i gwiazdki. Postać otrzymuje 1 poziom Stanu @Condition[Oszołomienie].</p>",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.M15Fg1Wdl047rD8L",
             "effects": {
                 "VJ0bwQJne0HNmtph": {
                     "id": "VJ0bwQJne0HNmtph",
+                    "name": "Oszołomienie",
                     "scriptData": [
                         {
                             "id": "VJ0bwQJne0HNmtph",
-                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]",
                             "name": "Oszołomienie",
-                            "script": "[Script.Q1trEhtqjIiDvFPF]"
+                            "script": "[Script.Q1trEhtqjIiDvFPF]",
+                            "activationScript": "[Script.AZGXrZOQ4EzjxRL9]"
                         }
-                    ],
-                    "name": "Oszołomienie"
+                    ]
                 }
             },
-            "name": "Bolesne uderzenie",
-            "description": "<p>Cios jest na tyle mocny, że w polu widzenia pojawiają się plamki i gwiazdki. Postać otrzymuje 1 poziom Stanu @Condition[Oszołomienie].</p>",
             "wounds": "1",
             "location": "Głowa"
         }

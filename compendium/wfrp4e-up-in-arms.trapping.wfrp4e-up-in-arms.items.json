@@ -71,14 +71,14 @@
         "Ball and Powder": {
             "id": "HRowgW9PxG7ap7JP",
             "name": "Kula i proch",
-            "description": " . ",
+            "description": " ",
             "range": "jak broń",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.HRowgW9PxG7ap7JP"
         },
         "Ballista": {
             "id": "jye5iBx4DNdOtqfB",
             "name": "Balista",
-            "description": " <p>Balisty to ogromne kusze, które strzelają bełtami długimi jak sztachety i zakończonymi żelaznymi grotami. Mogą przebić człowieka bądź potwora jak kurczaka lub wybić ładną, okrągłą dziurę w litym drewnie.</p> ",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.jye5iBx4DNdOtqfB"
         },
         "Ballock Knife": {
@@ -116,7 +116,7 @@
         "Barbed Arrow": {
             "id": "aR4Yg3dEL5FdEW0q",
             "name": "Strzała ząbkowana",
-            "description": " . ",
+            "description": " ",
             "range": "jak broń",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.aR4Yg3dEL5FdEW0q"
         },
@@ -159,7 +159,7 @@
         "Bullets and Powder (Swivel Gun)": {
             "id": "zPLhsJUl4X8UlnT7",
             "name": "Pocisk i proch (Działo obrotowe)",
-            "description": " . ",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.zPLhsJUl4X8UlnT7",
             "range": "jak broń"
         },
@@ -198,13 +198,13 @@
         "Bodkin Arrow": {
             "id": "T2V8bJAbtwYlvOPT",
             "name": "Strzała przebijająca",
-            "description": " . ",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.T2V8bJAbtwYlvOPT"
         },
         "Bolt": {
             "id": "Ymuuf4HyF8t9h13M",
             "name": "Bełt",
-            "description": " . ",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.Ymuuf4HyF8t9h13M",
             "range": "jak broń"
         },
@@ -217,19 +217,19 @@
         "Cannon (large)": {
             "id": "amfDBNVcLgd2maYo",
             "name": "Armata (duża)",
-            "description": " <p>Największe armaty są zarezerwowane dla fortec albo dobrze przygotowanych stanowisk ogniowych na polu bitwy, ale mniejsze i średnie egzemplarze mogą być zamontowane na łodziach albo wozach. Na polu bitwy kule armatnie niszczą oddziały żołnierzy, przetaczając się po nich. Biorąc pod uwagę, że większość sytuacji bojowych w WFRP to pomniejsze potyczki, armaty posiadają Zaletę Odłamkowa 2, by odzwierciedlić obrażenia zadawane wszystkim znajdującym się w pobliżu miejsca, gdzie uderzył pocisk. Jeśli jednak cele stoją w jednym rzędzie, to MG powinien rozważyć, czy kula nie powinna trafić większej liczby osób.</p> ",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.amfDBNVcLgd2maYo"
         },
         "Cannon (medium)": {
             "id": "8uvnXuEdOZTitbgc",
             "name": "Armata (średnia)",
-            "description": " <p>Największe armaty są zarezerwowane dla fortec albo dobrze przygotowanych stanowisk ogniowych na polu bitwy, ale mniejsze i średnie egzemplarze mogą być zamontowane na łodziach albo wozach. Na polu bitwy kule armatnie niszczą oddziały żołnierzy, przetaczając się po nich. Biorąc pod uwagę, że większość sytuacji bojowych w WFRP to pomniejsze potyczki, armaty posiadają Zaletę Odłamkowa 2, by odzwierciedlić obrażenia zadawane wszystkim znajdującym się w pobliżu miejsca, gdzie uderzył pocisk. Jeśli jednak cele stoją w jednym rzędzie, to MG powinien rozważyć, czy kula nie powinna trafić większej liczby osób.</p> ",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.8uvnXuEdOZTitbgc"
         },
         "Cannon (small)": {
             "id": "U1IWLLQeCXVPAo5C",
             "name": "Armata (mała)",
-            "description": " <p>Największe armaty są zarezerwowane dla fortec albo dobrze przygotowanych stanowisk ogniowych na polu bitwy, ale mniejsze i średnie egzemplarze mogą być zamontowane na łodziach albo wozach. Na polu bitwy kule armatnie niszczą oddziały żołnierzy, przetaczając się po nich. Biorąc pod uwagę, że większość sytuacji bojowych w WFRP to pomniejsze potyczki, armaty posiadają Zaletę Odłamkowa 2, by odzwierciedlić obrażenia zadawane wszystkim znajdującym się w pobliżu miejsca, gdzie uderzył pocisk. Jeśli jednak cele stoją w jednym rzędzie, to MG powinien rozważyć, czy kula nie powinna trafić większej liczby osób.</p> ",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.U1IWLLQeCXVPAo5C"
         },
         "Captain Braun's Insta-Boiler": {
@@ -247,19 +247,19 @@
         "Catapult (large)": {
             "id": "YTRf8aiEvED9gwYF",
             "name": "Katapulta (duża)",
-            "description": " <p>Katapulty to broń strzelająca po wysokim łuku, wyrzucająca kamienie, bomby albo pociski zapalające, które spadają na głowy celów.</p> ",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.YTRf8aiEvED9gwYF"
         },
         "Catapult (medium)": {
             "id": "FiWEly2b6xLssXTQ",
             "name": "Katapulta (średnia)",
-            "description": " <p>Katapulty to broń strzelająca po wysokim łuku, wyrzucająca kamienie, bomby albo pociski zapalające, które spadają na głowy celów.</p> ",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.FiWEly2b6xLssXTQ"
         },
         "Catapult (small)": {
             "id": "BmkeLC0U7pWYTmH0",
             "name": "Katapulta (mała)",
-            "description": " <p>Katapulty to broń strzelająca po wysokim łuku, wyrzucająca kamienie, bomby albo pociski zapalające, które spadają na głowy celów.</p> ",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.BmkeLC0U7pWYTmH0"
         },
         "Cavalry Hammer": {
@@ -343,7 +343,7 @@
         "Grapeshot and Powder": {
             "id": "PinFSQuQvxqaobSf",
             "name": "Kartacz i proch",
-            "description": " . ",
+            "description": " ",
             "range": "ćwierć zasięgu broni",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.PinFSQuQvxqaobSf"
         },
@@ -412,13 +412,13 @@
         "Helblaster Volley Gun": {
             "id": "4QBQvmOTtqeH4gUS",
             "name": "Wielolufowa kartaczownica „Piekielnik”",
-            "description": " <p>Broń ta, zwana również wielolufowym działem organkowym, ma dziewięć luf podzielonych na trzylufowe sekcje umieszczone wokół wspólnego wału. Kiedy wał się obraca, sprytny system krzywek odpala po kolei każdy ładunek i wyrzuca z działa falę śmiercionośnych pocisków. Wielolufowa kartaczownica zwana „Piekielnikiem” ma tę przewagę, że może strzelić kilkoma pociskami naraz w jednej niszczycielskiej salwie. Pełna salwa w mgnieniu oka przerzedzi szeregi nawet najtwardszych regimentów. Wadą tej broni jest fakt, że ma zwyczaj często się zacinać i psuć, a kiedy do tego dojdzie, prawie zawsze przestaje się do czegokolwiek nadawać. Szanse na to, że oręż tego typu będzie w stanie strzelać przez dłuższy czas, są niewielkie, biorąc pod uwagę złożoność mechanizmu strzelającego.</p><p>* Przeładowanie broni z Zaletą <em>Salwa</em> to pracochłonne zajęcie. Osiągnięcie wartości <em>Przeładowania</em> nie oznacza pełnego załadowania broni, ale każdorazowo zwiększa wartość Zalety <em>Salwa</em> o 1 (przykładowo, pusta wyrzutnia rakiet „Piekielne fajerwerki” miałaby <em>Salwę 0</em> i wymagałaby <em>Przeładowania 6</em>, aby osiągnąć <em>Salwę 1</em>, więc wykonanie <em>Przeładowania 6</em> dziewięć razy załadowałoby broń w pełni i dało jej <em>Salwę 9</em>).</p> ",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.4QBQvmOTtqeH4gUS"
         },
         "Helstorm Rocket Battery": {
             "id": "ItimnREThkG9dR4P",
             "name": "Wyrzutnia rakiet „Piekielne fajerwerki”",
-            "description": " <p>Twórcą tej eksperymentalnej broni jest renomowany inżynier Herman Faulkstein, który czerpałinspirację z pokazu katajskich fajerwerków w Altdorfie. Jest to artyleryjski wóz z ramą, na której umocowano dziewięć wypełnionych czarnym prochem rakiet. Rama ma zmienny kąt nachylenia, co pozwala strzelać w cele zarówno na ziemi, jak i w powietrzu. Broń ta nie jest szczególnie celna i lepiej sprawdza się podczas strzelania do wielkich oddziałów niż niewielkich grupek przeciwników.</p><p>* Przeładowanie broni z Zaletą <em>Salwa</em> to pracochłonne zajęcie. Osiągnięcie wartości <em>Przeładowania</em> nie oznacza pełnego załadowania broni, ale każdorazowo zwiększa wartość Zalety <em>Salwa</em> o 1 (przykładowo, pusta wyrzutnia rakiet „Piekielne fajerwerki” miałaby <em>Salwę 0</em> i wymagałaby <em>Przeładowania 6</em>, aby osiągnąć <em>Salwę 1</em>, więc wykonanie <em>Przeładowania 6</em> dziewięć razy załadowałoby broń w pełni i dało jej <em>Salwę 9</em>).</p> ",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.ItimnREThkG9dR4P"
         },
         "Hochland Long Rifle": {
@@ -440,11 +440,11 @@
             "description": "<p>Twarde i ciężkie przedmioty, które nie są przeznaczone do użycia w charakterze broni, wciąż mogą zostać w ten sposób wykorzystane, jeśli zajdzie taka potrzeba. Za Broń Improwizowaną uznać można takie przedmioty jak noga od krzesła, kamienie, kije bilardowe i butelki.</p>",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.okPRj8ixa55d9ETF"
         },
-        "Incendiary": {
+        "MQV1cMMZQZnyzZx2": {
             "id": "MQV1cMMZQZnyzZx2",
             "name": "Ładunek zapalający",
-            "description": "<blockquote class=\"foundry-note\"><p>Ten przedmiot służy jako Amunicja do @UUID[JournalEntry.l0NZFxzG4t0GoIFu.JournalEntryPage.Y4IiuJnk1S466SLx#siege-weapons]{Broni Oblężniczej}. Dla broni rzucanej, użyj tego @UUID[Compendium.wfrp4e-core.items.vI0oorwbZdlszudf]{Ładunku zapalającego}. Jako amunicja do broni Prochowej lub Eksperymentalnej, użyj tego @UUID[Compendium.wfrp4e-core.items.vI0oorwbZdlszudf]{Ładunku zapalającego}</p><p>Do użycia z @UUID[Compendium.wfrp4e-up-in-arms.items.d2LzU8hNCH97njsK]{Moździerzem}, zamień typ amunicji na <strong>Czarnoprochową i Eksperymentalną</strong></p></blockquote></p>",
-            "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.MQV1cMMZQZnyzZx2",
+            "description": "<blockquote class=\"foundry-note\"><p>Ten przedmiot służy jako Amunicja do @UUID[JournalEntry.l0NZFxzG4t0GoIFu.JournalEntryPage.Y4IiuJnk1S466SLx#siege-weapons]{Broni Oblężniczej}. Dla broni rzucanej, użyj tego @UUID[Compendium.wfrp4e-core.items.vI0oorwbZdlszudf]{Ładunku zapalającego}. Jako amunicja do broni Prochowej lub Eksperymentalnej, użyj tego @UUID[Compendium.wfrp4e-core.items.vI0oorwbZdlszudf]{Ładunku zapalającego}</p><p>Do użycia z @UUID[Compendium.wfrp4e-up-in-arms.items.d2LzU8hNCH97njsK]{Moździerzem}, zamień typ amunicji na <strong>Czarnoprochową i Eksperymentalną</strong></p></blockquote>",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.MQV1cMMZQZnyzZx2",
             "range": "1/2 zasięgu broni",
             "effects": {
                 "vMJ7eb3bxl2hx0A2": {
@@ -562,7 +562,7 @@
         "Mortar": {
             "id": "d2LzU8hNCH97njsK",
             "name": "Moździerz",
-            "description": " <p>Moździerz to prochowy odpowiednik katapulty, strzelający po łuku ciężkimi kulami albo bombami. Na polach bitew są przede wszystkim wykorzystywane podczas oblężeń – przerzucają ładunki wybuchowe ponad murami zamku.</p> ",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.d2LzU8hNCH97njsK"
         },
         "Ostrich Feather": {
@@ -608,7 +608,7 @@
         "Pebble": {
             "id": "BWMij7uxEbvyrA4z",
             "name": "Kamyk",
-            "description": " . ",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.BWMij7uxEbvyrA4z",
             "range": "-10"
         },
@@ -689,7 +689,7 @@
         "Rocket": {
             "id": "5qTyjz1aZVqrQlut",
             "name": "Rakieta",
-            "description": " . ",
+            "description": " ",
             "range": "jak broń",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.5qTyjz1aZVqrQlut"
         },
@@ -753,7 +753,7 @@
         "Sharp Stick": {
             "id": "H4cGoQW1d6dvWrB6",
             "name": "Zaostrzony patyk",
-            "description": " . ",
+            "description": " ",
             "range": "1/2 zasięgu broni",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.H4cGoQW1d6dvWrB6"
         },
@@ -779,7 +779,7 @@
         "Small Shot and Powder (Swivel Gun)": {
             "id": "awdCSBTUTRqaGFM8",
             "name": "Śrut i proch (Działo obrotowe)",
-            "description": " . ",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.awdCSBTUTRqaGFM8",
             "range": "jak broń"
         },
@@ -804,14 +804,14 @@
         "Stone": {
             "id": "lQQZZ46r7KYujIWs",
             "name": "Głaz",
-            "description": " . ",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.lQQZZ46r7KYujIWs",
             "range": "jak broń"
         },
         "Swivel Gun": {
             "id": "0DZId3hIjSAzxo6l",
             "name": "Działo obrotowe",
-            "description": " <p>Są one podobne do garłacza, tylko większe. Z powodu wagi zwykle montuje się je na obrotowej podstawce albo trójnogu.</p> ",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.0DZId3hIjSAzxo6l"
         },
         "Sword": {
@@ -835,7 +835,7 @@
         "Volley Gun": {
             "id": "LhKJZ1s73CaHghvt",
             "name": "Działo organkowe",
-            "description": " <p>Działa organkowe przypominają rusznicę samopowtarzalną ze skomplikowaną okrągłą korbą i dźwigniami. Zwykle mają siedem luf: jedną pośrodku i sześć kolejnych otaczających ją, które tworzą sześcioboczny kształt. Zabójcze nie tylko dla tych, którzy znajdą się na celowniku – mogą być również niebezpieczne dla niedoświadczonych strzelców. Przy każdym oddanym wystrzale użytkownik musi wykonać <strong>Przeciętny (+20) Test Odporności</strong> i stracić 1 punkt Żywotności za każdy ujemny PS, ponieważ broń uderza boleśnie w jego ramię.</p><p>Zdumiewająca Porażka oznacza, że użytkownik otrzymuje Trafienie Krytyczne w ramię: wykorzystaj Tabelę @Table[critarm]{Ran Krytycznych Rąk} i dostosuj odpowiednio szczegóły, by odzwierciedlały uderzenie w ramię.</p><p>Działa organkowe mają ten sam kaliber co normalna broń prochowa, ale podczas przeładowania tego typu oręża należy na każdą lufę przeznaczyć jedną kulę i odpowiednią dla niej ilość prochu.</p><p>* Przeładowanie broni z Zaletą <em>Salwa</em> to pracochłonne zajęcie. Osiągnięcie wartości <em>Przeładowania</em> nie oznacza pełnego załadowania broni, ale każdorazowo zwiększa wartość Zalety <em>Salwa</em> o 1 (przykładowo, pusta wyrzutnia rakiet „Piekielne fajerwerki” miałaby <em>Salwę 0</em> i wymagałaby <em>Przeładowania 6</em>, aby osiągnąć <em>Salwę 1</em>, więc wykonanie <em>Przeładowania 6</em> dziewięć razy załadowałoby broń w pełni i dało jej <em>Salwę 9</em>).</p> ",
+            "description": " ",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.LhKJZ1s73CaHghvt"
         },
         "4K8ai0xrndckUr0e": {
@@ -867,26 +867,6 @@
             "name": "Miecz dwuręczny",
             "description": "<p>Słynne oddziały imperialnej gwardii elektorskiej są uzbrojone w ogromne stalowe ostrza, tak długie jak broń drzewcowa. Niektórzy mistrzowie kowalscy tworzą jeszcze dłuższe głownie – dodają im fale i zęby. Taka broń jest znana jako flamberg, a dzięki kształtowi ostrza zadane nią rany są znacznie głębsze.</p>",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.YRcG9dzmzLvdEKPc"
-        },
-        "MQV1cMMZQZnyzZx2": {
-            "id": "MQV1cMMZQZnyzZx2",
-            "name": "Ładunek zapalający",
-            "range": "1/2 zasięgu broni",
-            "effects": {
-                "vMJ7eb3bxl2hx0A2": {
-                    "id": "vMJ7eb3bxl2hx0A2",
-                    "name": "Ładunek zapalający",
-                    "scriptData": [
-                        {
-                            "id": "vMJ7eb3bxl2hx0A2",
-                            "name": "Ładunek zapalający",
-                            "script": "[Script.cAioHYtlxuOCwRLh]"
-                        }
-                    ]
-                }
-            },
-            "sourceId": "Compendium.wfrp4e-up-in-arms.items.MQV1cMMZQZnyzZx2",
-            "description": "<blockquote class=\"foundry-note\"><p>Ten przedmiot służy jako Amunicja do @UUID[JournalEntry.l0NZFxzG4t0GoIFu.JournalEntryPage.Y4IiuJnk1S466SLx#siege-weapons]{Broni Oblężniczej}. Dla broni rzucanej, użyj tego @UUID[Compendium.wfrp4e-core.items.vI0oorwbZdlszudf]{Ładunku zapalającego}. Jako amunicja do broni Prochowej lub Eksperymentalnej, użyj tego @UUID[Compendium.wfrp4e-core.items.vI0oorwbZdlszudf]{Ładunku zapalającego}</p><p>Do użycia z @UUID[Compendium.wfrp4e-up-in-arms.items.d2LzU8hNCH97njsK]{Moździerzem}, zamień typ amunicji na <strong>Czarnoprochową i Eksperymentalną</strong></p></blockquote>"
         }
     },
     "folders": {

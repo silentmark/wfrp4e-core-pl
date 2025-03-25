@@ -6,13 +6,10 @@
     "entries": {
         "Arm Critical Wounds (Up In Arms)": {
             "name": "Rany Krytyczne Rąk (Pod Bronią)",
-            "description": " . ",
+            "description": " ",
             "initialization_folder": "Trafienia Krytyczne",
             "id": "8c2yHMHzGNE7ly8Q",
             "results": {
-                "1-10": "Nadwyrężony nadgarstek",
-                "11-20": "Zdrętwiałe ramię",
-                "21-25": "Płytkie cięcie",
                 "26-40": "Skręcenie",
                 "41-45": "Zerwane mięśnie",
                 "46-50": "Krwawiąca dłoń",
@@ -29,16 +26,18 @@
                 "121-125": "Rozszarpany biceps",
                 "126-130": "Zgruchotana dłoń",
                 "131-135": "Przecięte ścięgna",
-                "136-136": "Odcięte ramię"
+                "136-136": "Odcięte ramię",
+                "21-25": "Płytkie cięcie",
+                "1-10": "Nadwyrężony nadgarstek",
+                "11-20": "Zdrętwiałe ramię"
             }
         },
         "Body Critical Wounds (Up In Arms)": {
             "name": "Rany Krytyczne Korpusu (Pod Bronią)",
-            "description": " . ",
+            "description": " ",
             "initialization_folder": "Trafienia Krytyczne",
             "id": "JPS2HmX63aYQQyBB",
             "results": {
-                "1-10": "Bez tchu",
                 "11-20": "Ledwie draśnięcie!",
                 "21-25": "Cios w bebechy",
                 "26-30": "Poniżej pasa!",
@@ -57,12 +56,13 @@
                 "91-95": "Strzaskana klatka piersiowa",
                 "96-110": "Złamany obojczyk",
                 "111-115": "Krwotok wewnętrzny",
-                "116-116": "Rozpłatanie"
+                "116-116": "Rozpłatanie",
+                "1-10": "Bez tchu"
             }
         },
         "Head Critical Wounds (Up In Arms)": {
             "name": "Rany Krytyczne Głowy (Pod Bronią)",
-            "description": " . ",
+            "description": " ",
             "initialization_folder": "Trafienia Krytyczne",
             "id": "qNLaEddW9poR1fMy",
             "results": {
@@ -90,12 +90,10 @@
         },
         "Leg Critical Wounds (Up In Arms)": {
             "name": "Rany Krytyczne Nóg (Pod Bronią)",
-            "description": " . ",
+            "description": " ",
             "initialization_folder": "Trafienia Krytyczne",
             "id": "U5d5cHQ5gCRHkJXL",
             "results": {
-                "1-10": "Stłuczony palec",
-                "11-20": "Utrata równowagi",
                 "21-25": "Skręcona kostka",
                 "26-40": "Płytkie cięcie w nogę",
                 "41-45": "Cios w udo",
@@ -107,18 +105,20 @@
                 "71-75": "Porąbana noga",
                 "76-80": "Poszarpane udo",
                 "81-85": "Zerwane ścięgno",
-                "86-90": "Rozerwana łydka",
                 "91-95": "Strzaskane kolano",
                 "96-105": "Zwichnięte kolano",
                 "106-115": "Zmiażdżona stopa",
+                "115-120": "Odcięta stopa",
                 "121-125": "Przecięte ścięgna",
                 "126-126": "Strzaskana miednica",
-                "115-120": "Odcięta stopa"
+                "86-90": "Rozerwana łydka",
+                "1-10": "Stłuczony palec",
+                "11-20": "Utrata równowagi"
             }
         },
         "Hireling Templates": {
             "name": "Szablony Najmitów",
-            "description": " . ",
+            "description": " ",
             "initialization_folder": "Najemnicy",
             "id": "v0OxdvLz4iAzwlDR",
             "results": {
@@ -133,7 +133,7 @@
         },
         "Hit Location - Quadruped": {
             "name": "Tabela Trafień - Czworonóg",
-            "description": " . ",
+            "description": " ",
             "id": "jOb65cpRUyokmSj4",
             "results": {
                 "1-16": "Głowa",
@@ -146,7 +146,7 @@
         },
         "Job Generator - Location": {
             "name": "Generator Zadań - Tabela Miejsc",
-            "description": " . ",
+            "description": " ",
             "initialization_folder": "Generator Zadań",
             "id": "jUFAj5Ce88f7IGey",
             "results": {
@@ -174,7 +174,7 @@
         },
         "Job Generator - Objective": {
             "name": "Generator Zadań - Tabela Celów",
-            "description": " . ",
+            "description": " ",
             "initialization_folder": "Generator Zadań",
             "id": "SSfxDDBlUvBjmmvB",
             "results": {
@@ -202,7 +202,7 @@
         },
         "Job Generator - Personality": {
             "name": "Generator Zadań - Tabela Osobistości",
-            "description": " . ",
+            "description": " ",
             "initialization_folder": "Generator Zadań",
             "id": "SURXldLLnQ8Fg9Ko",
             "results": {
@@ -230,7 +230,7 @@
         },
         "Personality Quirks": {
             "name": "Cechy Osobowości",
-            "description": " . ",
+            "description": " ",
             "initialization_folder": "Najemnicy",
             "id": "sUSNlR4s6FZVVlTB",
             "results": {
@@ -259,7 +259,7 @@
         },
         "Physical Quirks": {
             "name": "Cechy Fizyczne",
-            "description": " . ",
+            "description": " ",
             "initialization_folder": "Najemnicy",
             "id": "Wa9WKuv28FlrQmcw",
             "results": {
@@ -267,7 +267,7 @@
                 "7-8": "Brakuje mu ręki i zamiast niej ma @UUID[Compendium.wfrp4e-core.items.YivL32R2L3J098VD]{hak}.",
                 "9-10": "Brakuje mu dolnej części jednej nogi, którą zastępuje @UUID[Compendium.wfrp4e-core.items.lJ6Av6wQfORR4mnu]{sztuczną nogą}.",
                 "11-12": "Brakuje mu oka.",
-                "13-13": "Najmita powoli mutuje. Zmiany są niespieszne i subtelne, ale po [[/r 1d10]] miesiącach wykształcą się w pełni.",
+                "13-13": "Najmita powoli mutuje. Zmiany są niespieszne i subtelne, ale po [[/r 1d10]]{1k10} miesiącach wykształcą się w pełni.",
                 "14-19": "Bardzo niski, krępy i włochaty. Czasem brany za krasnoluda.",
                 "20-25": "Dosyć wysoki, szczupły i otacza go aura tajemnicy oraz gracji. Czasem brany za elfa.",
                 "26-29": "Nadzwyczajnie zaśliniony. Ma problem z prowadzeniem dłuższej konwersacji bez plucia na wszystkich w pobliżu.",
@@ -289,7 +289,7 @@
         },
         "Salvo Misfire": {
             "name": "Tabela wybuchu artylerii z Zaletą Salwa",
-            "description": " . ",
+            "description": " ",
             "id": "REVy7IfaFjMXv45K",
             "results": {
                 "1-4": "<p>Cała załoga otrzymuje pełne Obrażenia broni (Poziom Sukcesu jest równy wynikowi na kości jedności). Miejsce Trafienia to dominująca ręka każdego członka załogi. Maszyna oblężnicza zostaje oczywiście zniszczona.</p>",
@@ -300,7 +300,7 @@
         },
         "Structure Critical Damage": {
             "name": "Uszkodzenia Krytyczne konstrukcji",
-            "description": " . ",
+            "description": " ",
             "initialization_folder": "Trafienia Krytyczne",
             "id": "QKgYkElhihBHTTfh",
             "results": {
@@ -316,7 +316,7 @@
         },
         "Work Ethic": {
             "name": "Etyka pracy",
-            "description": " . ",
+            "description": " ",
             "initialization_folder": "Najemnicy",
             "id": "yxphiHiwYkLfYpWG",
             "results": {
