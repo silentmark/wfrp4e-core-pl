@@ -12,17 +12,20 @@
         "Barony of Böhrn": {
             "id": "Bk3yufokGdVtsQag",
             "name": "Baronia Böhrn",
-            "units": "km"
+            "units": "km",
+            "image": "modules/wfrp4e-core-pl/images/barony-of-bohrn.webp"
         },
         "GM Screen": {
             "id": "R4WcWZTHP25YCoW5",
             "name": "Ekran Mistrza Gry",
-            "units": "m"
+            "units": "m",
+            "image": "modules/wfrp4e-core-pl/images/gm-screen.webp"
         },
         "Reikland": {
             "id": "vGrxlojYtdObKLF6",
             "name": "Reikland",
             "units": "km",
+            "image": "modules/wfrp4e-core-pl/images/reikland.webp",
             "notes": {
                 "qwLZqgof9MM9fxNL": {
                     "text": " "
