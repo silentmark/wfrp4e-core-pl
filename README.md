@@ -31,3 +31,4 @@ Autorzy:
   <td><img src='https://github.com/silentmark/wfrp4e-core-pl/blob/main/githubAssets/WH2023-logo.png' width="200"/></td>
 </tr>
 </table>
+
