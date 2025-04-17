@@ -51,14 +51,14 @@
                 "id": "babele",
                 "type": "module",
                 "compatibility": {
-                    "minimum": "2.5.5"
+                    "minimum": "2.6.5"
                 }
             },
             {
                 "id": "wfrp4e-core",
                 "type": "module",
                 "compatibility": {
-                    "minimum": "5.0.0"
+                    "minimum": "6.0.0"
                 }
             }
         ],
@@ -68,7 +68,7 @@
                 "type": "system",
                 "manifest": "https://github.com/moo-man/WFRP4e-FoundryVTT/releases/latest/download/system.json",
                 "compatibility": {
-                    "minimum": "8.0.0"
+                    "minimum": "8.5.0"
                 }
             }
         ]
@@ -87,6 +87,7 @@
         "modules/initialization.js",
         "modules/initialization-up-in-arms.js",
         "modules/initialization-starter-set.js",
+        "modules/initialization-archives1.js",
         "modules/wfrp4e-npc-generator.js"
     ],
     "styles": [

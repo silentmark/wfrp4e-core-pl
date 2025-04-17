@@ -1,0 +1,591 @@
+{
+    "label": "Profesje",
+    "mapping": {
+        "skills": "system.skills",
+        "talents": "system.talents",
+        "class": "system.class.value",
+        "careergroup": "system.careergroup.value",
+        "trappings": "system.trappings"
+    },
+    "folders": {
+        "Careers": "Profesje"
+    },
+    "entries": {
+        "Badger Botherer": {
+            "id": "fdMWg3AgTt5IDUva",
+            "name": "Borsuczy Nękacz",
+            "description": "<p>@UUID[Compendium.wfrp4e-archives1.journals.q6lCSarhMecgeiD8.JournalEntryPage.W9OXP7I8Y9CX5gvG]{Borsuczy Jeździec}</p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.fdMWg3AgTt5IDUva",
+            "careergroup": "Borsuczy Jeździec",
+            "class": "Wojownicy",
+            "skills": [
+                "Tresura (Borsuki)",
+                "Oswajanie",
+                "Unik",
+                "Plotkowanie",
+                "Percepcja",
+                "Broń Zasięgowa (Proca)",
+                "Jeździectwo (Borsuki)",
+                "Rzemiosło (Dowolne)"
+            ],
+            "talents": [
+                "Błyskawiczny Strzał",
+                "Chodu!",
+                "Strzelec Wyborowy",
+                "Urodzony w Siodle"
+            ],
+            "trappings": [
+                "Plecak",
+                "Skórzana kurta",
+                "Proca",
+                "oswojony borsuk z rzędem"
+            ]
+        },
+        "Badger Master": {
+            "id": "LO4SuX4hLbn5l2gH",
+            "name": "Mistrz Borsuczy",
+            "description": "<p>@UUID[Compendium.wfrp4e-archives1.journals.q6lCSarhMecgeiD8.JournalEntryPage.W9OXP7I8Y9CX5gvG]{Borsuczy Jeździec}</p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.LO4SuX4hLbn5l2gH",
+            "careergroup": "Borsuczy Jeździec",
+            "class": "Wojownicy",
+            "skills": [
+                "Tresura (Borsuki)",
+                "Oswajanie",
+                "Unik",
+                "Plotkowanie",
+                "Percepcja",
+                "Broń Zasięgowa (Proca)",
+                "Jeździectwo (Borsuki)",
+                "Rzemiosło (Dowolne)",
+                "Opieka nad Zwierzętami",
+                "Charyzma",
+                "Opanowanie",
+                "Odporność",
+                "Broń Biała (Podstawowa)",
+                "Nawigacja",
+                "Broń Zasięgowa (Oplątująca)",
+                "Zastraszanie",
+                "Broń Biała (Kawaleryjska)",
+                "Sztuka Przetrwania",
+                "Tropienie",
+                "Mocna Głowa",
+                "Dowodzenie"
+            ],
+            "talents": [
+                "Hulaka",
+                "Straszny",
+                "Inspirujący",
+                "Morderczy Atak"
+            ],
+            "trappings": [
+                "Duży oswojony borsuk (Borsuk Cętkowany z Krainy Zgromadzenia rozmiaru kuca)",
+                "Giermek (Borsuczy Nękacz)",
+                "Zbroja płytowa",
+                "Poczucie humoru"
+            ]
+        },
+        "Badger Rider": {
+            "id": "pVvwnWt1GvihJf8Q",
+            "name": "Borsuczy Jeździec",
+            "description": "<p>@UUID[Compendium.wfrp4e-archives1.journals.q6lCSarhMecgeiD8.JournalEntryPage.W9OXP7I8Y9CX5gvG]{Borsuczy Jeździec}</p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.pVvwnWt1GvihJf8Q",
+            "careergroup": "Borsuczy Jeździec",
+            "class": "Wojownicy",
+            "skills": [
+                "Tresura (Borsuki)",
+                "Oswajanie",
+                "Unik",
+                "Plotkowanie",
+                "Percepcja",
+                "Broń Zasięgowa (Proca)",
+                "Jeździectwo (Borsuki)",
+                "Rzemiosło (Dowolne)",
+                "Opieka nad Zwierzętami",
+                "Charyzma",
+                "Opanowanie",
+                "Odporność",
+                "Broń Biała (Podstawowa)",
+                "Nawigacja",
+                "Broń Zasięgowa (Oplątująca)"
+            ],
+            "talents": [
+                "Celny Strzał",
+                "Włóczykij",
+                "Obieżyświat",
+                "Waleczne Serce"
+            ],
+            "trappings": [
+                "Juki",
+                "Kolet",
+                "Broń zasięgowa (Oplątująca albo Broń Miotana)"
+            ]
+        },
+        "Badger Sergeant": {
+            "id": "DfaF14rEznMwka3m",
+            "name": "Borsuczy Sierżant",
+            "description": "<p>@UUID[Compendium.wfrp4e-archives1.journals.q6lCSarhMecgeiD8.JournalEntryPage.W9OXP7I8Y9CX5gvG]{Borsuczy Jeździec}</p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.DfaF14rEznMwka3m",
+            "careergroup": "Borsuczy Jeździec",
+            "class": "Wojownicy",
+            "skills": [
+                "Tresura (Borsuki)",
+                "Oswajanie",
+                "Unik",
+                "Plotkowanie",
+                "Percepcja",
+                "Broń Zasięgowa (Proca)",
+                "Jeździectwo (Borsuki)",
+                "Rzemiosło (Dowolne)",
+                "Opieka nad Zwierzętami",
+                "Charyzma",
+                "Opanowanie",
+                "Odporność",
+                "Broń Biała (Podstawowa)",
+                "Nawigacja",
+                "Broń Zasięgowa (Oplątująca)",
+                "Zastraszanie",
+                "Broń Biała (Kawaleryjska)",
+                "Sztuka Przetrwania",
+                "Tropienie"
+            ],
+            "talents": [
+                "Rozproszenie Uwagi",
+                "Nieugięty",
+                "Woltyżerka",
+                "Szczur Tunelowy"
+            ],
+            "trappings": [
+                "Kropierz na borsuka (2PP na głowie i korpusie)",
+                "Broń biała (Podstawowa albo Kawaleryjska)"
+            ]
+        },
+        "Field Warden": {
+            "id": "c4SxYRUNDABuu3Ru",
+            "name": "Strażniczka Pól",
+            "description": "<p>@UUID[Compendium.wfrp4e-archives1.journals.q6lCSarhMecgeiD8.JournalEntryPage.qFs945qryMKHavCn]{Strażniczka Pól}</p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.c4SxYRUNDABuu3Ru",
+            "careergroup": "Strażniczka Pól",
+            "class": "Wędrowcy",
+            "skills": [
+                "Plotkowanie",
+                "Intuicja",
+                "Wiedza (Kraina Zgromadzenia)",
+                "Nawigacja",
+                "Percepcja",
+                "Broń Zasięgowa (Proca)",
+                "Rzemiosło (Dowolne)",
+                "Skradanie (Wieś)",
+                "Charyzma",
+                "Mocna Głowa",
+                "Unik",
+                "Broń Biała (Podstawowa)",
+                "Sztuka Przetrwania",
+                "Sekretne Znaki (Zwiadowców)"
+            ],
+            "talents": [
+                "Celny Strzał",
+                "Musztra",
+                "Nos do Kłopotów",
+                "Wyczucie Kierunku"
+            ],
+            "trappings": [
+                "Skórzana kurta",
+                "Broń ręczna",
+                "Latarnia z oliwą"
+            ]
+        },
+        "Field Warden Captain": {
+            "id": "kwU1Ajl5GoBee34j",
+            "name": "Kapitan Strażniczek Pól",
+            "description": "<p>@UUID[Compendium.wfrp4e-archives1.journals.q6lCSarhMecgeiD8.JournalEntryPage.qFs945qryMKHavCn]{Strażniczka Pól}</p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.kwU1Ajl5GoBee34j",
+            "careergroup": "Strażniczka Pól",
+            "class": "Wędrowcy",
+            "skills": [
+                "Plotkowanie",
+                "Intuicja",
+                "Wiedza (Kraina Zgromadzenia)",
+                "Nawigacja",
+                "Percepcja",
+                "Broń Zasięgowa (Proca)",
+                "Rzemiosło (Dowolne)",
+                "Skradanie (Wieś)",
+                "Charyzma",
+                "Mocna Głowa",
+                "Unik",
+                "Broń Biała (Podstawowa)",
+                "Sztuka Przetrwania",
+                "Sekretne Znaki (Zwiadowców)",
+                "Opanowanie",
+                "Odporność",
+                "Wiedza (Nekromancja)",
+                "Zastawianie Pułapek",
+                "Dowodzenie",
+                "Wiedza (Sztuka Wojenna)"
+            ],
+            "talents": [
+                "Nieustraszony",
+                "Nienawiść (Nieumarli)",
+                "Inspirujący",
+                "Krzepki",
+                "Znawca (teren Krainy Zgromadzenia)"
+            ],
+            "trappings": [
+                "Garnizon doświadczonych Strażniczek Pól",
+                "Poważanie społeczności"
+            ]
+        },
+        "Field Warden Sergeant": {
+            "id": "lFb44eROpT8Sr6To",
+            "name": "Sierżant Strażniczek Pól",
+            "description": "<p>@UUID[Compendium.wfrp4e-archives1.journals.q6lCSarhMecgeiD8.JournalEntryPage.qFs945qryMKHavCn]{Strażniczka Pól}</p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.lFb44eROpT8Sr6To",
+            "careergroup": "Strażniczka Pól",
+            "class": "Wędrowcy",
+            "skills": [
+                "Plotkowanie",
+                "Intuicja",
+                "Wiedza (Kraina Zgromadzenia)",
+                "Nawigacja",
+                "Percepcja",
+                "Broń Zasięgowa (Proca)",
+                "Rzemiosło (Dowolne)",
+                "Skradanie (Wieś)",
+                "Charyzma",
+                "Mocna Głowa",
+                "Unik",
+                "Broń Biała (Podstawowa)",
+                "Sztuka Przetrwania",
+                "Sekretne Znaki (Zwiadowców)",
+                "Opanowanie",
+                "Odporność",
+                "Wiedza (Nekromancja)",
+                "Zastawianie Pułapek"
+            ],
+            "talents": [
+                "Bardzo Szybki",
+                "Twardziel",
+                "Widzenie w Ciemności",
+                "Włóczykij"
+            ],
+            "trappings": [
+                "Dobrej jakości kaftan kolczy",
+                "Oddział Strażniczek Nowicjuszek"
+            ]
+        },
+        "Forest Ranger": {
+            "id": "HozlnIvSPqv6qYlr",
+            "name": "Leśny Zwiadowca",
+            "description": "<p>@UUID[Compendium.wfrp4e-archives1.journals.q6lCSarhMecgeiD8.JournalEntryPage.zcIpfDRNoyIl6d9e]{Wędrowny Duch}</p><p></p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.HozlnIvSPqv6qYlr",
+            "careergroup": "Wędrowny Duch",
+            "class": "Wędrowcy",
+            "skills": [
+                "Wspinaczka",
+                "Wiedza (Bestie)",
+                "Nawigacja",
+                "Sztuka Przetrwania",
+                "Percepcja",
+                "Broń Zasięgowa (Łuk)",
+                "Skradanie (Dowolne)",
+                "Rzemiosło (Łuczarz)"
+            ],
+            "talents": [
+                "Celny Strzał",
+                "Bardzo Szybki",
+                "Cień",
+                "Doświadczony Wędrowiec (Lasy)"
+            ],
+            "trappings": [
+                "Plecak",
+                "Płaszcz z kapturem",
+                "Łuk długi i 10 strzał",
+                "Narzędzia pracy (Łuczarza)"
+            ]
+        },
+        "Forest's Wrath": {
+            "id": "N1EuBkdCZYotyPOq",
+            "name": "Gniew Lasu",
+            "description": "<p>@UUID[Compendium.wfrp4e-archives1.journals.q6lCSarhMecgeiD8.JournalEntryPage.zcIpfDRNoyIl6d9e]{Wędrowny Duch}</p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.N1EuBkdCZYotyPOq",
+            "careergroup": "Wędrowny Duch",
+            "class": "Wędrowcy",
+            "skills": [
+                "Wspinaczka",
+                "Wiedza (Bestie)",
+                "Nawigacja",
+                "Sztuka Przetrwania",
+                "Percepcja",
+                "Broń Zasięgowa (Łuk)",
+                "Skradanie (Dowolne)",
+                "Rzemiosło (Łuczarz)",
+                "Atletyka",
+                "Oswajanie",
+                "Broń Biała (Podstawowa)",
+                "Sekretne Znaki (Łowców)",
+                "Zastawianie Pułapek",
+                "Tropienie",
+                "Opanowanie",
+                "Odporność",
+                "Unik",
+                "Pływanie",
+                "Zastraszanie",
+                "Język (Dowolny)"
+            ],
+            "talents": [
+                "Prosto Między Oczy",
+                "Nienawiść (Dowolne)",
+                "Snajper",
+                "Morderczy Atak"
+            ],
+            "trappings": [
+                "Trofeum z legendarnego wroga",
+                "Charakterystyczne elfie strzały (z przeznaczeniem na godny cel)",
+                "Budząca lęk reputacja"
+            ]
+        },
+        "Ghost Strider": {
+            "id": "A438IiStelJMrIzc",
+            "name": "Wędrowny Duch",
+            "description": "<p>@UUID[Compendium.wfrp4e-archives1.journals.q6lCSarhMecgeiD8.JournalEntryPage.zcIpfDRNoyIl6d9e]{Wędrowny Duch}</p><p></p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.A438IiStelJMrIzc",
+            "careergroup": "Wędrowny Duch",
+            "class": "Wędrowcy",
+            "skills": [
+                "Wspinaczka",
+                "Wiedza (Bestie)",
+                "Nawigacja",
+                "Sztuka Przetrwania",
+                "Percepcja",
+                "Broń Zasięgowa (Łuk)",
+                "Skradanie (Dowolne)",
+                "Rzemiosło (Łuczarz)",
+                "Atletyka",
+                "Oswajanie",
+                "Broń Biała (Podstawowa)",
+                "Sekretne Znaki (Łowców)",
+                "Zastawianie Pułapek",
+                "Pływanie",
+                "Tropienie"
+            ],
+            "talents": [
+                "Posłuch u Zwierząt",
+                "Błyskawiczny Strzał",
+                "Wyczucie Kierunku",
+                "Wyborny Wspinacz"
+            ],
+            "trappings": [
+                "Własnoręcznie wykonany elfi łuk i 10 strzał",
+                "Wybór pułapek",
+                "Skórzana kurta"
+            ]
+        },
+        "Hold Runner": {
+            "id": "fGgDpDWP5d0cDcWd",
+            "name": "Gończyni z Twierdzy",
+            "description": "<p>@UUID[Compendium.wfrp4e-archives1.journals.q6lCSarhMecgeiD8.JournalEntryPage.GIoxmaazR63VSdBw]{Zwiadowczyni z Karaku}</p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.fGgDpDWP5d0cDcWd",
+            "careergroup": "Zwiadowczyni z Karaku",
+            "class": "Wędrowcy",
+            "skills": [
+                "Wspinaczka",
+                "Unik",
+                "Odporność",
+                "Rzemiosło (Kartograf)",
+                "Broń Biała (Podstawowa)",
+                "Sztuka Przetrwania",
+                "Percepcja",
+                "Wioślarstwo"
+            ],
+            "talents": [
+                "Nieubłagany",
+                "Wyczucie Kierunku",
+                "Doświadczony Wędrowiec (Dowolne)",
+                "Mocne Plecy"
+            ],
+            "trappings": [
+                "Plecak",
+                "Broń ręczna",
+                "Skórzana kurta",
+                "Narzędzia pracy (Kartografa)"
+            ]
+        },
+        "Karak Mountain Strider": {
+            "id": "Redw0hR56YLisVVs",
+            "name": "Zwiadowczyni z Karaku",
+            "description": "<p>@UUID[Compendium.wfrp4e-archives1.journals.q6lCSarhMecgeiD8.JournalEntryPage.GIoxmaazR63VSdBw]{Zwiadowczyni z Karaku}</p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.Redw0hR56YLisVVs",
+            "careergroup": "Zwiadowczyni z Karaku",
+            "class": "Wędrowcy",
+            "skills": [
+                "Wspinaczka",
+                "Unik",
+                "Odporność",
+                "Rzemiosło (Kartograf)",
+                "Broń Biała (Podstawowa)",
+                "Sztuka Przetrwania",
+                "Percepcja",
+                "Wioślarstwo",
+                "Oswajanie",
+                "Intuicja",
+                "Broń Zasięgowa (Prochowa)",
+                "Sekretne Znaki (Zwiadowców)",
+                "Sekretne Znaki (Łowców)",
+                "Tropienie",
+                "Wiedza (Inżynier)",
+                "Skradanie (Podziemia)",
+                "Opanowanie",
+                "Język (Dowolny)"
+            ],
+            "talents": [
+                "Złota Rączka",
+                "Znawca (Twierdze i Szlaki Krasnoludzkie)",
+                "Krzepki",
+                "Wytrwały"
+            ],
+            "trappings": [
+                "4 uczniów Gończynie z Twierdzy",
+                "Mapy",
+                "Pamiątki z wielu podróży"
+            ]
+        },
+        "Karak Pathkeeper": {
+            "id": "jixfk0Zo7MQDLGj9",
+            "name": "Strażniczka Dróg z Karaku",
+            "description": "<p>@UUID[Compendium.wfrp4e-archives1.journals.q6lCSarhMecgeiD8.JournalEntryPage.GIoxmaazR63VSdBw]{Zwiadowczyni z Karaku}</p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.jixfk0Zo7MQDLGj9",
+            "careergroup": "Zwiadowczyni z Karaku",
+            "class": "Wędrowcy",
+            "skills": [
+                "Wspinaczka",
+                "Unik",
+                "Odporność",
+                "Rzemiosło (Kartograf)",
+                "Broń Biała (Podstawowa)",
+                "Sztuka Przetrwania",
+                "Percepcja",
+                "Wioślarstwo",
+                "Oswajanie",
+                "Intuicja",
+                "Broń Zasięgowa (Prochowa)",
+                "Sekretne Znaki (Zwiadowców)",
+                "Sekretne Znaki (Łowców)",
+                "Tropienie",
+                "Wiedza (Inżynier)",
+                "Skradanie (Podziemia)"
+            ],
+            "talents": [
+                "Celny Strzał",
+                "Walka w Ciasnocie",
+                "Pilot Rzeczny LUB Artylerzysta",
+                "Silne Nogi"
+            ],
+            "trappings": [
+                "Narzędzia pracy (Kamieniarza)"
+            ]
+        },
+        "Karak Ranger": {
+            "id": "fRkh5R4ocyLgOwzO",
+            "name": "Zwiadowczyni z Karaku",
+            "description": "<p>@UUID[Compendium.wfrp4e-archives1.journals.q6lCSarhMecgeiD8.JournalEntryPage.GIoxmaazR63VSdBw]{Zwiadowczyni z Karaku}</p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.fRkh5R4ocyLgOwzO",
+            "careergroup": "Zwiadowczyni z Karaku",
+            "class": "Wędrowcy",
+            "skills": [
+                "Wspinaczka",
+                "Unik",
+                "Odporność",
+                "Rzemiosło (Kartograf)",
+                "Broń Biała (Podstawowa)",
+                "Sztuka Przetrwania",
+                "Percepcja",
+                "Wioślarstwo",
+                "Oswajanie",
+                "Intuicja",
+                "Broń Zasięgowa (Prochowa)",
+                "Sekretne Znaki (Zwiadowca)",
+                "Sekretne Znaki (Łowców)",
+                "Tropienie"
+            ],
+            "talents": [
+                "Silny Cios",
+                "Wyborny Wspinacz",
+                "Nos do Kłopotów",
+                "Włóczykij"
+            ],
+            "trappings": [
+                "Broń prochowa z Amunicją",
+                "Kotwiczka z liną"
+            ]
+        },
+        "Novice Warden": {
+            "id": "eTb72IpSFjQGwhBH",
+            "name": "Strażniczka Nowicjuszka",
+            "description": "<p>@UUID[Compendium.wfrp4e-archives1.journals.q6lCSarhMecgeiD8.JournalEntryPage.qFs945qryMKHavCn]{Strażniczka Pól}</p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.eTb72IpSFjQGwhBH",
+            "careergroup": "Strażniczka Pól",
+            "class": "Wędrowcy",
+            "skills": [
+                "Plotkowanie",
+                "Intuicja",
+                "Wiedza (Kraina Zgromadzenia)",
+                "Nawigacja",
+                "Percepcja",
+                "Broń Zasięgowa (Proca)",
+                "Rzemiosło (Dowolne)",
+                "Skradanie (Wieś)"
+            ],
+            "talents": [
+                "Cios Mierzony",
+                "Rozproszenie Uwagi",
+                "Błyskawiczny Strzał",
+                "Waleczne Serce"
+            ],
+            "trappings": [
+                "Plecak",
+                "Namiot",
+                "Mapa lokalnej okolicy",
+                "Proca z 10 kamieniami",
+                "Narzędzia pracy (wybranego Rzemiosła)"
+            ]
+        },
+        "Windwraith": {
+            "id": "MGG91PNtsZMqKJO0",
+            "name": "Wietrzna Zjawa",
+            "description": "<p>@UUID[Compendium.wfrp4e-archives1.journals.q6lCSarhMecgeiD8.JournalEntryPage.zcIpfDRNoyIl6d9e]{Wędrowny Duch}</p><p></p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.MGG91PNtsZMqKJO0",
+            "careergroup": "Wędrowny Duch",
+            "class": "Wędrowcy",
+            "skills": [
+                "Wspinaczka",
+                "Wiedza (Bestie)",
+                "Nawigacja",
+                "Sztuka Przetrwania",
+                "Percepcja",
+                "Broń Zasięgowa (Łuk)",
+                "Skradanie (Dowolne)",
+                "Rzemiosło (Łuczarz)",
+                "Atletyka",
+                "Oswajanie",
+                "Broń Biała (Podstawowa)",
+                "Sekretne Znaki (Łowców)",
+                "Zastawianie Pułapek",
+                "Tropienie",
+                "Opanowanie",
+                "Odporność",
+                "Unik",
+                "Pływanie"
+            ],
+            "talents": [
+                "Na Cztery Łapy",
+                "Zmysł Bitewny",
+                "Silny Cios",
+                "Strzał w Dziesiątkę"
+            ],
+            "trappings": [
+                "Elfi łuk i Zbroja skórzana z co najmniej jedną Zaletą każde",
+                "10 elfich strzał"
+            ]
+        }
+    }
+}

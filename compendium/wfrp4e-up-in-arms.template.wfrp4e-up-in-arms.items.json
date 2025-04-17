@@ -33,7 +33,7 @@
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.7QrsbofccMOE1YsF",
             "alterNamePre": " ",
             "alterNamePost": " ",
-            "gmDescription": " ",
+            "gmdescription": " ",
             "skills": [
                 "Intuicja",
                 "Wiedza (Lokalna)",
@@ -78,7 +78,7 @@
             },
             "alterNamePre": " ",
             "alterNamePost": " ",
-            "gmDescription": " "
+            "gmdescription": " "
         },
         "Infirm": {
             "id": "h3yuJDWnixliXeBG",
@@ -100,7 +100,7 @@
             },
             "alterNamePre": " ",
             "alterNamePost": " ",
-            "gmDescription": " "
+            "gmdescription": " "
         },
         "Old Salt": {
             "id": "4Cd7Dknee2WjReOo",
@@ -109,7 +109,7 @@
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.4Cd7Dknee2WjReOo",
             "alterNamePre": " ",
             "alterNamePost": " ",
-            "gmDescription": " ",
+            "gmdescription": " ",
             "skills": [
                 "Mocna Głowa",
                 "Wioślarstwo",
@@ -124,7 +124,7 @@
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.scVTPVyDDbli4WZL",
             "alterNamePre": " ",
             "alterNamePost": " ",
-            "gmDescription": " ",
+            "gmdescription": " ",
             "skills": [
                 "Percepcja",
                 "Zwinne Palce",
@@ -156,7 +156,7 @@
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.4s01nHFKVKTEZd3B",
             "alterNamePre": " ",
             "alterNamePost": " ",
-            "gmDescription": " ",
+            "gmdescription": " ",
             "skills": [
                 "Opanowanie",
                 "Unik",

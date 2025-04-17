@@ -1,0 +1,208 @@
+{
+    "label": "Wyposażenie (Archiwa Tom I)",
+    "mapping": {
+        "penalties": "system.penalty.value",
+        "range": "system.range.value",
+        "special": "system.special.value",
+        "effects": {
+            "path": "effects",
+            "converter": "effects"
+        }
+    },
+    "folders": {
+        "Trappings": "Wyposażenie",
+        "Blessings": "Błogosławieństwa",
+        "Uliric": "Ulryk",
+        "Ammunition": "Amunicja",
+        "Armour": "Pancerze",
+        "Weapons": "Broń",
+        "Books and Documents": "Księgi i Dokumenty",
+        "Clothing and Accessories": "Odzież i Akcesoria",
+        "Drugs and Poisons": "Narkotyki i Trucizny",
+        "Food and Drink": "Jedzenie i Napoje",
+        "Herbs and Draughts": "Zioła i Eliksiry",
+        "Miscellaneous": "Różne",
+        "Packs and Containers": "Plecaki i Pojemniki",
+        "Tools and Kits": "Narzędzia i Zestawy",
+        "Chaos Magic": "Magia Chaosu",
+        "Lore of Beasts": "Tradycja Zwierząt",
+        "Lore of Daemonology": "Tradycja Demonologii",
+        "Lore of Death": "Tradycja Śmierci",
+        "Lore of Fire": "Tradycja Ognia",
+        "Lore of Heavens": "Tradycja Niebios",
+        "Lore of Hedgecraft": "Tradycja Guślarstwa",
+        "Lore of Life": "Tradycja Życia",
+        "Lore of Light": "Tradycja Światła",
+        "Lore of Metal": "Tradycja Metalu",
+        "Lore of Shadow": "Tradycja Cieni",
+        "Lore of Witchcraft": "Tradycja Czarownictwa",
+        "Lore of Necromancy": "Tradycja Nekromancji",
+        "Petty Spells": "Magia Prosta"
+    },
+    "entries": {
+        "Bearded Axe": {
+            "id": "kPmmaj7qzM3O6pY8",
+            "name": "Topór brodaty",
+            "description": "<p>Ulubiony oręż wielu krasnoludów, chętnie wykorzystywany w boju. Głowica tego topora zakrzywia się w dół, w stronę trzonka. W ten sposób powstaje odstęp między ostrzem a trzonkiem, który doskonale nadaje się do wyrywania broni z rąk niebacznych przeciwników.</p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.kPmmaj7qzM3O6pY8"
+        },
+        "Blackbriar Javelin": {
+            "id": "qBqfo35CFyWAAAnX",
+            "name": "Oszczep czarnocierni",
+            "description": "<p> Ta żywa broń powoli ocieka zabójczą trucizną. Wykonana jest z drzew, których duchy stały się spaczone i złośliwe. Podobno ta broń sprowadza nieszczęście. Z pewnością to prawda dla tych, którzy muszą się zmierzyć z nią w boju.</p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.qBqfo35CFyWAAAnX",
+            "effects": {
+                "TVxG7u4tG9JNIXNj": {
+                    "id": "TVxG7u4tG9JNIXNj",
+                    "name": "Zatrucie",
+                    "scriptData": [
+                        {
+                            "id": "TVxG7u4tG9JNIXNj",
+                            "name": "Zatrucie",
+                            "script": "[Script.GZFsuynUhgZqwTGo]"
+                        }
+                    ]
+                }
+            },
+            "special": "Tak długo, jak każdej nocy może zbierać siły, tkwiąc w żyznej ziemi, oszczep czarnocierni zadaje 1 poziom Stanu Zatrucie każ demu celowi, który straci przynajmniej 1 Ranę od ataku. Można się temu oprzeć, wykonując <strong>Wymagający (+0) Test Odporności</strong>."
+        },
+        "Cinderblast Bomb": {
+            "id": "nyUbN0JaeXNQUbUT",
+            "name": "Bomba żużlowa",
+            "description": "<p>Ta zabójcza broń jest niezastąpiona w walkach tunelowych, które toczą się głęboko pod Starym Światem, gdzie krasnoludy desperacko odpierają ataki skavenów, goblinów i jeszcze gorszych stworów. Bomby te zazwyczaj ciskane są w gęstwę sił wroga. Eksplodują w ognistym podmuchu i odłamkami. To przerażający widok.</p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.nyUbN0JaeXNQUbUT"
+        },
+        "Drakefire Pistol": {
+            "id": "XurSURwIt8pnoOlJ",
+            "name": "Pistolet smoczego ognia",
+            "description": "<p> Przemyślny przykład krasnoludzkiego rzemiosła. Pistolet smoczego ognia ostrzeliwuje cele pociskami zapalającymi. Szczegóły budowy tej broni to pieczołowicie strzeżony przez krasnoludy sekret, ale wątpliwe, by jakakolwiek inna rasa zdołała skopiować tę skomplikowaną konstrukcję, nawet gdyby pojęła jej schemat. To ulubiony oręż krasnoludów, które ścierają się ze skavenami głęboko pod ziemią, ponieważ ich plugawa sierść nader satysfakcjonująco zajmuje się ogniem.</p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.XurSURwIt8pnoOlJ",
+            "effects": {
+                "3FkboTu03MTUm5qY": {
+                    "id": "3FkboTu03MTUm5qY",
+                    "name": "Pistolet smoczego ognia",
+                    "scriptData": [
+                        {
+                            "id": "3FkboTu03MTUm5qY",
+                            "name": "Pistolet smoczego ognia",
+                            "script": "[Script.gh2KS1prBKcsSK6M]"
+                        }
+                    ]
+                }
+            },
+            "special": "Przy każdym Trafieniu Krytycznym z pistoletów smoczego ognia cel otrzymuje również Stan Podpalenie."
+        },
+        "Drakefire Shot": {
+            "id": "gxiMS94QBeyURKfJ",
+            "name": "Ładunek smoczego ognia",
+            "description": "<p>Amunicja zapalająca wykorzystywana w pistoletach smoczego ognia jest zarówno niebezpieczna, jak i rzadka. Faktycznie na daje się do użytku tylko z tą bronią. Jednakże można ją załado wać do dowolnej broni prochowej, przy czym zadziała dokład nie jeden raz i wybuchnie w rękach strzelającego. Rozwiąż to tak, jakby przy każdym strzale następował Rzut Pechowy.</p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.gxiMS94QBeyURKfJ",
+            "effects": {
+                "7LWsyK7nuYHOnlII": {
+                    "id": "7LWsyK7nuYHOnlII",
+                    "name": "Ładunek smoczego ognia",
+                    "scriptData": [
+                        {
+                            "id": "7LWsyK7nuYHOnlII",
+                            "name": "Niewypał",
+                            "script": "[Script.8RNziYGGb4sp3BGQ]"
+                        }
+                    ]
+                }
+            }
+        },
+        "Dwarf Crossbow": {
+            "id": "aQE698skxSqkrdmO",
+            "name": "Krasnoludzka kusza",
+            "description": "<p>Różnica między kuszami krasnoludzkimi i imperialnymi nie jest tak wyraźna, jak w przypadku ich broni prochowych, nie mniej krasnoludzkie kusze są konstruowane ze znacznie wyż szym standardem, niż jest w stanie uzyskać jakikolwiek ludzki rzemieślnik. W rezultacie jest to broń precyzyjniejsza.</p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.aQE698skxSqkrdmO"
+        },
+        "Dwarf Hammer": {
+            "id": "Fs7tl8V78Ie4INPX",
+            "name": "Młot krasnoludzki",
+            "description": "<p> Krasnoludy znane są z tego, że używają tych samych młotów w kuźniach w czasie pokoju, jak i na polach bitew w czasie wojny. Te ciężkie narzędzia świetnie się nadają do rozbijania nawet najtwardszych orczych czerepów.</p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.Fs7tl8V78Ie4INPX"
+        },
+        "Dwarf Handgun": {
+            "id": "BIW1jibsj1mZTKq0",
+            "name": "Krasnoludzka rusznica",
+            "description": "<p>Krasnoludy często załamują ręce nad tym, co uchodzi za sztukę rusznikarstwa wśród ludzi, których broń jest często równie niebezpieczna dla użytkownika, jak dla jego celu. Krasnoludzka broń prochowa jest kunsztownie wykonana i pieczołowicie wzmocniona, dzięki czemu rzadziej pudłuje, a do tego wystrzeliwuje pociski z większą siłą.</p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.BIW1jibsj1mZTKq0"
+        },
+        "Dwarf Pistol": {
+            "id": "yaQBcwPMyEyP7H2f",
+            "name": "Krasnoludzki pistolet",
+            "description": "<p>Krasnoludy często załamują ręce nad tym, co uchodzi za sztukę rusznikarstwa wśród ludzi, których broń jest często równie niebezpieczna dla użytkownika, jak dla jego celu. Krasnoludzka broń prochowa jest kunsztownie wykonana i pieczołowicie wzmocniona, dzięki czemu rzadziej pudłuje, a do tego wystrzeliwuje pociski z większą siłą.</p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.yaQBcwPMyEyP7H2f"
+        },
+        "Eonir Spear": {
+            "id": "LIzUGidgb1mkXcZB",
+            "name": "Włócznia Eonirów",
+            "description": "<p>To zmora oddziałów konnych. Te ostro zakończone włócznie są nieco lżejsze od tych, których używa się w Imperium. Ich szpikulce są hartowane i ostrzone sposobami znanymi jedynie leśnym elfom. Mogą z łatwością przebijać pancerze.</p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.LIzUGidgb1mkXcZB"
+        },
+        "Eonir War Blade": {
+            "id": "1DHLlgZEpY5uSVm9",
+            "name": "Ostrze wojenne Eonirów",
+            "description": "<p> Wybornie wykonane ostrza Eonirów są nieco lżejsze od typowej broni z Imperium, lecz ich doskonałe wyważenie umożliwia wyprowadzanie szybkich, precyzyjnych ataków.</p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.1DHLlgZEpY5uSVm9"
+        },
+        "Iron Skillet": {
+            "id": "aJpSeHl6kNp1DD1y",
+            "name": "Żelazna patelnia",
+            "description": "<p> Pomimo niepozornego wyglądu żeliwne rondle i patelnie niziołków są cięższe, niż to się wydaje. Można się z nich wyśmiewać, ale niziołcza patelnia odbiła niejedno ostrze, zapobiegając śmiertelnemu trafieniu. Takie podrapane i poobijane rondle zawsze zajmują zaszczytne miejsce w domostwach niziołków.</p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.aJpSeHl6kNp1DD1y"
+        },
+        "Nan's Cleaver": {
+            "id": "UOVmOd9TgMvquysD",
+            "name": "Tasak babuni",
+            "description": "<p> Kucharze i kucharki niziołków dbają o swoje utensylia równie pieczołowicie, jak większość rzetelnych wojowników dba o swoje ostrze. Nic zatem dziwnego, że wiele sztuk takiego oręża doczekało się wykorzystania w czasie wojny. Niejeden goblin padł ofiarą tasaka, którego później użyto do przygotowania pokrzepiającego gulaszu serwowanego zaraz po walce.</p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.UOVmOd9TgMvquysD"
+        },
+        "Precision Shot and Powder": {
+            "id": "JRHgVa3Eb2WYakvJ",
+            "name": "Precyzyjny śrut i proch",
+            "description": "<p>Przygotowany ze znawstwem proch oraz pieczołowicie wygładzone i obtoczone śruciny można łączyć ze sobą, otrzymując bardziej niezawodne i celniejsze pociski do odpowiedniej broni prochowej.</p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.JRHgVa3Eb2WYakvJ"
+        },
+        "Slayer's Axe": {
+            "id": "7cVsB1Ss3cXMySl5",
+            "name": "Topór Zabójców",
+            "description": "<p> Zabójcy z wielką dumą obnoszą się ze swoją bronią, której proces ostrzenia jest swoistym rytuałem. Większość tego oręża zyskała groźną reputację dorównującą tym, którzy go noszą. To niszczycielska broń, a władający nią Zabójcy zdają się walczyć niestrudzenie, pomimo jej wielkości.</p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.7cVsB1Ss3cXMySl5"
+        },
+        "Starfire Shafts": {
+            "id": "ws96ig1WPFRecmCn",
+            "name": "Strzały gwiezdnego ognia",
+            "description": "<p> Drewno wyciosane z drzewa gwiezdnego ognia przynosi zgubę zepsuciu, a wyrabiane z niego strzały nasycone są zaciekłym i ognistym duchem. Cele trafione tymi strzałami często stają w ogniu. Zmasowane salwy tych strzał stanowią przerażający widok w boju.</p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.ws96ig1WPFRecmCn",
+            "effects": {
+                "uYoVPJs6O8zVsA16": {
+                    "id": "uYoVPJs6O8zVsA16",
+                    "name": "Strzały gwiezdnego ognia",
+                    "scriptData": [
+                        {
+                            "id": "uYoVPJs6O8zVsA16",
+                            "name": "Strzały gwiezdnego ognia",
+                            "script": "[Script.8ThudCYRqkjQIwJH]"
+                        }
+                    ]
+                }
+            },
+            "range": "50"
+        },
+        "Swiftshiver Shafts": {
+            "id": "RXRsdPqnIRQVQ3be",
+            "name": "Strzały jaskółcze",
+            "description": "<p>Wycinane są z drewna tak lekkiego i mocnego, że wydają się wyskakiwać z łuku same z siebie. Zręczny łucznik może z zaskakującą łatwością naciągnąć i wystrzelić więcej niż jedną taką strzałę jednocześnie.</p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.RXRsdPqnIRQVQ3be",
+            "special": "Jeśli chcesz skorzystać z Zalety Odłamkowa, musisz zużyć dodatkową strzałę jaskółczą na każdy cel, który zostałby trafiony atakiem. Zrób to przed wykonaniem Testu ataku."
+        },
+        "Wildwood Sword": {
+            "id": "9NeNBFZwuHDQF6LN",
+            "name": "Miecz Dzikiej Kniei",
+            "description": "<p>Dwuręczne ostrze z trzonem z żywego drewna. Ta broń wydaje się być poruszana własną wolą. Uderza szybciej, niż wydawałoby się to możliwe dla tak pokaźnej broni.</p>",
+            "sourceId": "Compendium.wfrp4e-archives1.items.9NeNBFZwuHDQF6LN"
+        }
+    }
+}
