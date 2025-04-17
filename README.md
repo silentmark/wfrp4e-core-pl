@@ -11,12 +11,15 @@ Aktualnie obsługiwane moduły:
 - [Up in Arms](https://foundryvtt.com/packages/wfrp4e-up-in-arms) :new:
 
 Autorzy:
-- Liv
+- Daniel.Sobolewski
 - Ez
 - GregorHak
+- Gwynbleidd
+- Liv
 - Myeshko1
 - silent_mark
 - Varis (dr_hans)
+- Verhar
 
 <p align="center"><b>Tłumaczenie opracowane we współpracy z wydawnictwem Copernicus Corporation.</b></p>
 <p align="center"><b>Cubicle 7 Entertainment Ltd.© Copyright Games Workshop Limited 2024</b></p>
@@ -28,3 +31,4 @@ Autorzy:
   <td><img src='https://github.com/silentmark/wfrp4e-core-pl/blob/main/githubAssets/WH2023-logo.png' width="200"/></td>
 </tr>
 </table>
+
