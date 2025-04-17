@@ -3,7 +3,7 @@
 let mainEffect = this.item.effects.contents[0];
 if (mainEffect.name.includes("(Tradycja)"))
 {
-    let choice = await ItemDialog.create(ItemDialog.objectToArray(game.wfrp4e.config.magicLores, this.item.img), 1, "Wybierz Tradycja Magiczną");
+    let choice = await ItemDialog.create(ItemDialog.objectToArray(game.wfrp4e.config.magicLores, this.item.img), 1, "Wybierz Tradycję Magiczną");
     if (choice.length)
     {
         mainEffect.update({name : mainEffect.name.replace("Tradycja", choice[0].name)})

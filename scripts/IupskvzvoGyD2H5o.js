@@ -7,21 +7,25 @@ let god = await ValueDialog.create({text : "Wybierz Bóstwo", title :  "Błogos�
 
 if (god)
 {
-    let prayers = await warhammer.utility.findAllItems("prayer", "Ładuję błogosławienia...")
+    let prayers = await warhammer.utility.findAllItems("prayer", "Wyszukiwanie Błogosławieństw...", true, ["system.type.value", "system.god.value"])
     let blessings = prayers.filter(p => p.system.god.value.split(",").map(i => i.trim().toLowerCase()).includes(god.toLowerCase()) && p.system.type.value == "blessing")
-    let godBlessings = game.wfrp4e.config.godBlessings[god.toLowerCase()] || [];
+    let configBlessings = await Promise.all((game.wfrp4e.config.godBlessings[god.toLowerCase()] || []).map(fromUuid));
     if (god == "Stara Wiara")
     {
         blessings = await ItemDialog.create(prayers.filter(i => i.system.type.value == "blessing"), 6, {text : "Wybierz 6 Błogosławieństw", title :  "Blessed"})
     }
-    if (godBlessings.length)
+    if (configBlessings.length)
     {
-        blessings = blessings.concat(await Promise.all(godBlessings.filter(bls => !(blessings.map(i => i.uuid).includes(bls.uuid))).map(fromUuid)));
+        // Combine blessings defined by config with actual blessing items found that specify this god, avoiding duplicates
+        blessings = blessings.concat(
+            configBlessings.map(i => {return {uuid : i.uuid, name : i.name}})
+            .filter(bls => !(blessings.find(i => i.uuid == bls.uuid)))
+        );
     }
     if (blessings.length)
     {
-        this.script.notification("Dodaję: " + blessings.map(i => i.name).join(", "))
-        await this.actor.createEmbeddedDocuments("Item", blessings, {fromEffect : this.effect.id})
+        this.script.notification("Dodaję " + blessings.map(i => i.name).join(", "))
+        await this.actor.addEffectItems(blessings.map(i => i.uuid), this.effect)
     }
     else 
     {

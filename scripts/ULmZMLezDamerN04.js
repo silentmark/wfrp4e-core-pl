@@ -1,4 +1,4 @@
-let spells = await warhammer.utility.findAllItems("spell", "Wczytywanie Zaklęć...")
+let spells = await warhammer.utility.findAllItems("spell", "Wczytywanie Zaklęć...", true, ["system.lore.value"])
 
 let lore = (await game.wfrp4e.tables.rollTable("random-caster", {hideDSN: true})).text
 this.script.notification(lore)

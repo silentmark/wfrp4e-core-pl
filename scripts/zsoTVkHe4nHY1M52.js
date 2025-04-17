@@ -1,0 +1,1 @@
+this.script.message(await this.actor.applyBasicDamage(10 + parseInt(this.effect.sourceTest.result.SL), {damageType : game.wfrp4e.config.DAMAGE_TYPE.IGNORE_AP}))

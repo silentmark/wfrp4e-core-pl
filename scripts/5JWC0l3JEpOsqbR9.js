@@ -12,7 +12,7 @@ let characteristics = {
 }
 let skills = ["Unik", "Percepcja"]
 let skillAdvancements = [10, 10]
-let talents = ["Chodu", "Strzelec Wyborowy"]
+let talents = ["Chodu!", "Strzelec Wyborowy"]
 let trappings = ["Broń ręczna"]
 let items = [];
 
