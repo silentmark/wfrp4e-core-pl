@@ -82,7 +82,7 @@
 .sidebar-tab .directory-footer button,
 #macros .directory-footer button,
 #macros .directory-footer button,
-#sidebar button,
+#sidebar button:not(::before),
 #sidebar .header-actions button,
 .action-buttons button {
   font-family: CaslonAntiquePL !important;
@@ -255,4 +255,27 @@
 .chargen h2,
 .chargen h3{
   font-family: CaslonAntiquePL !important;
+}
+
+/*
+  v13
+*/
+:root :not(.no-theme) {
+  --primary-font: CaslonAntiquePL;
+  --header-font: CaslonAntiquePL;
+
+  /* Increase font size for better readability */
+  --font-size-10: 0.8rem;
+  --font-size-11: 0.85rem;
+  --font-size-12: 0.9rem;
+  --font-size-13: 0.925rem;
+  --font-size-14: 0.95rem;
+  --font-size-15: 0.975rem;
+}
+
+/* Left column of effects tab in Actor sheet */
+.wfrp4e.sheet.application section.tab[data-tab=effects] .condition-section .condition > a {
+  line-height: 0.9;
+  display: flex;
+  align-items: center;
 }
