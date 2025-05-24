@@ -98,6 +98,7 @@ Hooks.on("init", () => {
 			let root = game.modules.get(pack.metadata.packageName).flags.folder;
 			root.type = pack.metadata.type;
 			root._id = randomID();
+			root.flags = {source : this.data.module.id};
 
 			this.rootFolders[pack.metadata.id] = root._id;
 			const data = {name: root.name};
@@ -110,6 +111,7 @@ Hooks.on("init", () => {
 						f.folder = root._id;
 						f.name = pack.folders.contents.find(x => x._id == f._id).name;
 					}
+					f.flags.source = this.data.module.id;
 				}
 				return Folder.create(packFolders.concat(root), {keepId : true})
 			} else {
@@ -118,6 +120,7 @@ Hooks.on("init", () => {
 					if (!f.folder) {
 						f.folder = root._id;
 					}
+					f.flags.source = this.data.module.id;
 				}
 				return Folder.create(packFolders.concat(root), {keepId : true})
 			}
