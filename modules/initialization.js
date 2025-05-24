@@ -10,41 +10,30 @@ Hooks.on("init", () => {
 		default: false,
 		type: Boolean,
 	});
-
-	game.settings.registerMenu("wfrp4e-core", "init-dialog", {
-		name: "WFRP4e Podręcznik Główny - Konfiguracja",
-		label: "Konfiguracja",
-		hint: "Importuj lub aktualizuj zawartość modułu podręcznika głównego",
-		type: WFRP4eCoreInitWrapper,
-		restricted: true,
-	});
 });
 
-WFRP4eCoreInitWrapper.prototype.render = function () {
-	const html = `<img src="/modules/wfrp4e-core/art/ui/logo.webp" style="margin-right: auto;margin-left: auto;width: 40%;display: block;"/>
-	<p class="notes">Zainicjalizować moduł zawartości WFRP4e?<br><br>Zaimportuje lub zaktualizuje to wszystkie dzienniki i sceny w twoim świecie, posortuje w folderach i umieści notatki na mapach</p>
-	<ul>
-	<li>12 wpisy do dzienników (Tło i Zasady) zawierających 271 stron</li>
-	<li>52 Tabele</li>
-	<li>3 Sceny - uwzględniając mapę Reiklandu ze znacznikami.</li>
-	</ul>
-	<p class="notes">
-	Warhammer Fantasy Roleplay 4th Edition Core Module.<br><br>
-
-	No part of this publication may be reproduced, distributed, stored in a retrieval system, or transmitted in any form by any means, electronic, mechanical, photocopying, recording or otherwise without the prior permission of the publishers.<br><br>
-	
-	Warhammer Fantasy Roleplay 4th Edition © Copyright Games Workshop Limited 2020. Warhammer Fantasy Roleplay 4th Edition, the Warhammer Fantasy Roleplay 4th Edition logo, GW, Games Workshop, Warhammer, The Game of Fantasy Battles, the twin-tailed comet logo, and all associated logos, illustrations, images, names, creatures, races, vehicles, locations, weapons, characters, and the distinctive likeness thereof, are either ® or TM, and/or © Games Workshop Limited, variably registered around the world, and used under licence. Cubicle 7 Entertainment and the Cubicle 7 Entertainment logo are trademarks of Cubicle 7 Entertainment Limited. All rights reserved.<br><br>
-	
-	<img src="modules/wfrp4e-core/c7.png" height=50 width=50/>   <img src="modules/wfrp4e-core/warhammer.png" height=50 width=50/>
-	<br>
-	Published by: <b>Cubicle 7 Entertainment Ltd</b><br>
-	Foundry Edition by <b>Russell Thurman (Moo Man)</b><br>
-	Special thanks to: <b>Games Workshop, Fatshark</b><br><br>
-	
-	<a href="mailto: info@cubicle7games.com">info@cubicle7games.com</a>`;
-    
-    new WarhammerModuleInitializer("wfrp4e-core", "WFRP4e - Inicjalizacja Podręcznika Głównego", html).render(true);
+WarhammerModuleInitializationV2.initialize = async function (ev, target) {
+    let key = target.closest("[data-module]").dataset.module;
+    let module = game.modules.get(key);
+    let dialogContent = `<p>Czy chcesz zainicjalizować moduł <strong>${module.title}</strong>? Spowoduje to zaimportowanie następujących dokumentów z kompendium do twojego świata.</p>`;
+    dialogContent += `
+    <ul>
+    ${module.flags.initializationPacks.map(p => 
+{
+    let pack = game.packs.get(p);
+    pack.getIndex();
+    return `<li>${pack.metadata.label}: ${pack.index.size} </li>`;
+}).join("")}
+    </ul>
+    <hr>
+    ${systemConfig().copyrightText.replace("@AUTHORS@", Array.from(module.authors).slice(0, module.authors.size - 1).map(i => i.name).join(", "))}
+    `;
+    if (await foundry.applications.api.DialogV2.confirm({window: {title : `Initialize ${module.title}`}, content : dialogContent, classes : ["initialization"]}))
+    {
+        new WarhammerModuleContentHandler(module).initialize();
+    }
 }
+WarhammerModuleInitializationV2.DEFAULT_OPTIONS.actions.initialize = WarhammerModuleInitializationV2.initialize;
 
 CONFIG.JournalEntry.noteIcons = {
     "Marker": "systems/wfrp4e/icons/buildings/point_of_interest.png",
