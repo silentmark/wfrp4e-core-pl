@@ -279,3 +279,12 @@
   display: flex;
   align-items: center;
 }
+
+/*
+  Players list in the left corner
+  Stretch it a bit to fit larger font sizes
+*/
+#players #players-active {
+  width: max-content;
+  max-width: 270px;
+}
