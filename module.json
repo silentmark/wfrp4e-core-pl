@@ -51,14 +51,14 @@
                 "id": "babele",
                 "type": "module",
                 "compatibility": {
-                    "minimum": "2.6.2"
+                    "minimum": "2.7.5"
                 }
             },
             {
                 "id": "wfrp4e-core",
                 "type": "module",
                 "compatibility": {
-                    "minimum": "6.0.0"
+                    "minimum": "7.0.0"
                 }
             }
         ],
@@ -68,15 +68,15 @@
                 "type": "system",
                 "manifest": "https://github.com/moo-man/WFRP4e-FoundryVTT/releases/latest/download/system.json",
                 "compatibility": {
-                    "minimum": "8.5.0"
+                    "minimum": "9.1.0"
                 }
             }
         ]
     },
     "compatibility": {
-        "minimum": "12",
-        "maximum": "12",
-        "verified": "12"
+        "minimum": "13",
+        "maximum": "13",
+        "verified": "13"
     },
     "esmodules": [
         "babele-register.js",

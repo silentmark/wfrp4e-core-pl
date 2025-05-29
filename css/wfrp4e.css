@@ -5,8 +5,8 @@
   }
 
 :root :not(.no-theme) {
-  --primary-font: CaslonAntiquePL;
-  --header-font: CaslonAntiquePL;
+  --primary-font: "CaslonAntiquePL";
+  --header-font: "CaslonAntiquePL";
 
   /* Increase font size for better readability */
   --font-size-10: 0.8rem;

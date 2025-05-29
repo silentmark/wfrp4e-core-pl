@@ -6,7 +6,7 @@ Hooks.on("init", () => {
 			dir: "compendium",
 		});
 	}
-
+	
 	class CompendiumMapping {
 
 		constructor(entityType, mapping, tc) {
@@ -92,14 +92,13 @@ Hooks.on("init", () => {
 			return this.dynamic;
 		}
 	}
-	
-	Reflect.defineProperty(WarhammerModuleInitializer.prototype, 'createFolders', { value:
+
+	Reflect.defineProperty(WarhammerModuleContentHandler.prototype, 'createFolders', { value:
 		function (pack) {
 			let root = game.modules.get(pack.metadata.packageName).flags.folder;
 			root.type = pack.metadata.type;
-			root._id = randomID();
-			root.flags = {source : this.data.module.id};
-
+			root._id = foundry.utils.randomID();
+            root.flags = {"warhammer-lib" : {source : this.module.id}};
 			this.rootFolders[pack.metadata.id] = root._id;
 			const data = {name: root.name};
 			let packsFolderJson = game.babele.packs.get(pack.metadata.packageName + "._packs-folders");
@@ -111,159 +110,22 @@ Hooks.on("init", () => {
 						f.folder = root._id;
 						f.name = pack.folders.contents.find(x => x._id == f._id).name;
 					}
-					f.flags.source = this.data.module.id;
+            		foundry.utils.setProperty(f.flags, "warhammer-lib.source", this.module.id);
 				}
-				return Folder.create(packFolders.concat(root), {keepId : true})
+				return CONFIG.Folder.documentClass.create(packFolders.concat(root), {keepId : true})
 			} else {
 				let packFolders = pack.folders.contents.map(f => f.toObject());
 				for(let f of packFolders) {
 					if (!f.folder) {
 						f.folder = root._id;
 					}
-					f.flags.source = this.data.module.id;
+            		foundry.utils.setProperty(f.flags, "warhammer-lib.source", this.module.id);
 				}
-				return Folder.create(packFolders.concat(root), {keepId : true})
+				return CONFIG.Folder.documentClass.create(packFolders.concat(root), {keepId : true})
 			}
 		}
 	});
 
-	game.babele.loadTranslations = async function () {
-		const getTranslationsFiles = async (babele) => {
-			if (!game.user.hasPermission('FILES_BROWSE')) {
-				return game.settings.get('babele', 'translationFiles');
-			}
-	
-			const lang = game.settings.get('core', 'language');
-			const directory = game.settings.get('babele', 'directory');
-			const directories = babele.modules
-				.filter(module => module.lang === lang)
-				.map(module => `modules/${module.module}/${module.dir}`);
-	
-			if (directory && directory.trim && directory.trim()) {
-				directories.push(`${directory}/${lang}`);
-			}
-	
-			if (babele.systemTranslationsDir) {
-				directories.push(`systems/${game.system.id}/${babele.systemTranslationsDir}/${lang}`);
-			}
-	
-			const files = [];
-	
-			for (let i = 0; i < directories.length; i++) {
-				try {
-					let result = await FilePicker.browse('data', directories[i]);
-					result.files.forEach(file => files.push(file));
-				} catch (err) {
-					console.warn('Babele: ' + err);
-				}
-			}
-	
-			if (game.user.isGM) {
-				game.settings.set('babele', 'translationFiles', files);
-			}
-	
-			return files;
-		}
-
-        const files = await getTranslationsFiles(this);
-
-        if (files.length === 0) {
-            console.log(`Babele | no compendium translation files found for ${game.settings.get('core', 'language')} language.`);
-
-            return [];
-        }
-
-        const allTranslations = [];
-        const loadTranslations = async (collection, urls) => {
-            if (urls.length === 0) {
-                console.log(`Babele | no translation file found for ${collection} pack`);
-            } else {
-                const [translations] = await Promise.all(
-                    [Promise.all(urls.map((url) => fetch(url).then((r) => r.json()).catch(e => {
-                    })))],
-                );
-
-                let translation = {};
-                translations.forEach(t => {foundry.utils.mergeObject(translation, t)})
-				console.log(`Babele | translation for ${collection} pack successfully loaded`);
-				allTranslations.push(foundry.utils.mergeObject(translation, { collection: collection }));
-            }
-        };
-
-        for (const metadata of game.data.packs) {
-            if (this.supported(metadata)) {
-                const collection = this.getCollection(metadata);
-                const collectionFileName = encodeURI(`${collection}.json`);
-                const urls = files.filter(file => file.endsWith(collectionFileName));
-
-                await loadTranslations(collection, urls);
-            }
-        }
-
-        // Handle specific files for pack folders
-        for (const file of files.filter((file) => file.endsWith(`${Babele.PACK_FOLDER_TRANSLATION_NAME_SUFFIX}.json`))) {
-            const fileName = file.split('/').pop();
-
-            await loadTranslations(fileName.replace('.json', ''), [file]);
-        }
-
-		const getMappingFiles = async (babele) => {
-			if (!game.user.hasPermission('FILES_BROWSE')) {
-				return game.settings.get('babele', 'mappingFiles');
-			}
-	
-			const directory = game.settings.get('babele', 'directory');
-			const directories = babele.modules
-				.map(module => `modules/${module.module}/${module.dir}`);
-	
-			if (directory && directory.trim && directory.trim()) {
-				directories.push(`${directory}`);
-			}
-	
-			if (babele.systemTranslationsDir) {
-				directories.push(`systems/${game.system.id}/${this.systemTranslationsDir}`);
-			}
-	
-			const files = [];
-			for (let i = 0; i < directories.length; i++) {
-				try {
-					let result = await FilePicker.browse('data', directories[i]);
-					result.files
-						.filter(file => file.endsWith('/mapping.json'))
-						.forEach(file => files.push(file));
-				} catch (err) {
-					console.warn('Babele: ' + err);
-				}
-			}
-	
-			if (game.user.isGM) {
-				game.settings.set('babele', 'mappingFiles', files);
-			}
-	
-			return files;
-		}
-	
-		
-        // Handle global mappings
-        const mappingFiles = await getMappingFiles(this);
-
-        if (mappingFiles.length > 0) {
-            console.log(`Babele | global mapping files found, defaults will be enriched/overwritten...`);
-
-            const loadMappings = async () => {
-                const [mappings] = await Promise.all(
-                    [Promise.all(mappingFiles.map((file) => fetch(file).then((r) => r.json()).catch(e => {
-                    })))],
-                );
-                mappings.forEach(mapping => {
-                    this.registerMapping(mapping);
-                })
-            }
-            await loadMappings();
-        }
-
-        return allTranslations;
-    }
 
 	game.babele.registerConverters({
 		effects: (effects, translations) => {
