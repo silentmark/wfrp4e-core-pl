@@ -6,7 +6,7 @@ Hooks.on("init", () => {
 			dir: "compendium",
 		});
 	}
-	
+
 	class CompendiumMapping {
 
 		constructor(entityType, mapping, tc) {
@@ -92,7 +92,7 @@ Hooks.on("init", () => {
 			return this.dynamic;
 		}
 	}
-
+	
 	Reflect.defineProperty(WarhammerModuleContentHandler.prototype, 'createFolders', { value:
 		function (pack) {
 			let root = game.modules.get(pack.metadata.packageName).flags.folder;
@@ -189,6 +189,31 @@ Hooks.on("init", () => {
 			});
 		},
 		
+		tableResults: (results, translations) => {
+  			return results.map(data => {
+				if (translations) {
+					const translation = translations[data._id] || translations[`${data.range[0]}-${data.range[1]}`];
+					if (translation) {
+						if (translation.name) {
+							data = foundry.utils.mergeObject(data, translation, {translated: true});
+						}
+						else {
+							data = foundry.utils.mergeObject(data, foundry.utils.mergeObject({'description': translation}, {translated: true}));
+						}
+					}
+				}
+				if (data.documentUuid) {
+					const text = game.babele.translateField('name', foundry.utils.parseUuid(data.documentUuid).collection.collection, {'name': data.name});
+					if (text) {
+						return foundry.utils.mergeObject(data, foundry.utils.mergeObject({'name': text}, {translated: true}));
+					} else {
+						return data;
+					}
+				}
+				return data;
+			});
+		},
+
 		bestiary_traits: (items, translations) => {
 			const translatedItems = game.babele.converters.fromPack(items, translations);
 			const dynamicMapping = new CompendiumMapping("Item", null);

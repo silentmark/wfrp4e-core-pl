@@ -1,4 +1,4 @@
-let hasMagazine = await Dialog.confirm({content: "<p>Czy statek ma magazyn lub inny rodzaj przechowalni dla Prochu?</p>"});
+let hasMagazine = await foundry.applications.api.DialogV2.confirm({window : {title : this.effect.name}, content: "<p>Czy statek ma magazyn lub inny rodzaj przechowalni dla Prochu?</p>"});
 
 if (!hasMagazine) return;
 

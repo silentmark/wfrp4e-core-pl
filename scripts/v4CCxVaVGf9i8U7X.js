@@ -1,18 +1,4 @@
-let cured = await Dialog.wait({
-    title : this.effect.name,
-    content : "<p>Wpisz liczbę chorób/klątw, które zostały uleczone</p><input type='number'>",
-    buttons : {
-        confirm : {
-            label : "Potwierdź",
-            callback : (dlg) => {
-                let input = dlg.find("input");
-                value = parseInt(input[0].value);
-                return value;
-            }
-        }
-    }
-});
-
+let cured = await ValueDialog.create({text : "Wpisz liczbę chorób/klątw, które zostały uleczone", title : this.effect.name})
 
 let damage = 0;
 

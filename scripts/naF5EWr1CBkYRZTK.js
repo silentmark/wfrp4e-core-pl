@@ -1,23 +1,6 @@
 if (args.opposedTest?.attackerTest?.item?.system?.isRanged) 
 {
-    let choice = await Dialog.wait({
-        title: this.effect.name,
-        content: `<p>Zniwelować Obrażenia dzięki: <strong>${this.effect.name}</strong>?`,
-        buttons: {
-            yes: {
-                label: "Tak",
-                callback: () => {
-                    return true;
-                }
-            },
-            no: {
-                label: "Nie",
-                callback: () => {
-                    return false;
-                }
-            }
-        }
-    })
+    let choice = await foundry.applications.api.DialogV2.confirm({window: {title : this.item.name}, content : `<p>Zniwelować Obrażenia dzięki: <strong>${this.effect.name}</strong>?</p>`})
 
     if (choice)
     {

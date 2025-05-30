@@ -1,7 +1,10 @@
 {
     "label": "Tabele (Podręcznik Główny)",
     "mapping": {
-        "initialization_folder": "flags.wfrp4e-core.initialization-folder"
+        "results": {
+            "path": "results",
+            "converter": "tableResults"
+        }
     },
     "folders": {
         "Career Tables": "Profesje",
@@ -1656,11 +1659,26 @@
             "name": "Rasy",
             "description": " ",
             "results": {
-                "1-90": "Człowiek",
-                "91-94": "Niziołek",
-                "95-98": "Krasnolud",
-                "99-99": "Wysoki elf",
-                "100-100": "Leśny elf"
+                "1-90": {
+                    "name": "Człowiek",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.JournalEntry.IQ0PgoJihQltCBUU.JournalEntryPage.l0f11ypRjH9sR48Q#humans-(reiklander)]{Człowiek}</p>"
+                },
+                "91-94": {
+                    "name": "Niziołek",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.JournalEntry.IQ0PgoJihQltCBUU.JournalEntryPage.l0f11ypRjH9sR48Q#halflings]{Niziołek}</p>"
+                },
+                "95-98": {
+                    "name": "Krasnolud",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.JournalEntry.IQ0PgoJihQltCBUU.JournalEntryPage.l0f11ypRjH9sR48Q#dwarfs]{Krasnolud}</p>"
+                },
+                "99-99": {
+                    "name": "Wysoki elf",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.JournalEntry.IQ0PgoJihQltCBUU.JournalEntryPage.l0f11ypRjH9sR48Q#high-elves]{Wysoki elf}</p>"
+                },
+                "100-100": {
+                    "name": "Leśny elf",
+                    "description": "<p>@UUID[Compendium.wfrp4e-core.journals.JournalEntry.IQ0PgoJihQltCBUU.JournalEntryPage.l0f11ypRjH9sR48Q#wood-elves]{Leśny elf}</p>"
+                }
             }
         },
         "Stinking Drunk": {

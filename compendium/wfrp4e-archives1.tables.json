@@ -1,8 +1,6 @@
 {
     "label": "Tabele (Archiwa Tom I)",
-    "mapping": {
-        "initialization_folder": "flags.wfrp4e-archives1.initialization-folder"
-    },
+    "mapping": { },
     "folders": {
         "Career Tables": "Profesje",
         "Character Creation": "Tworzenie Bohatera",

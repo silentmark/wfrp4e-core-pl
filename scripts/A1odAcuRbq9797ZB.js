@@ -25,8 +25,10 @@ let choice2 = [
     }
 ]
 
-let choice = await Dialog.wait({
-    title : "Choice",
+let choice =  await foundry.applications.api.DialogV2.wait({
+    window : {
+        title : "Wybór umiejętności",
+    },
     content : 
     `<p>
     Wybierz Umiejętność, której chcesz używać
@@ -36,20 +38,20 @@ let choice = await Dialog.wait({
     <li>Broń Biała (Drzewcowa)</li>
     </ol> 
     `,
-    buttons : {
-        1 : {
+    buttons : [
+        {
             label : "Podstawowa",
             callback : () => {
                 return choice1;
             }
         },
-        2 : {
+        {
             label : "Drzewcowa",
             callback : () => {
                 return choice2;
             }
         }
-    }
+    ]
 })
 
 let updateObj = this.actor.toObject();

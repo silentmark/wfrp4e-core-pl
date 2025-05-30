@@ -10,10 +10,10 @@ let characteristics = {
     "wp" : 40,
     "fel" : 30
 }
-let skills = ["Intimidate", "Language (Classical)", "Leadership", "Lore (Warfare)", "Lore (History)", "Perception"]
+let skills = [game.i18n.localize("NAME.Intimidate"), "Język (Klasyczny)", game.i18n.localize("NAME.Leadership"), "Wiedza (Sztuka Wojenna)", "Wiedza (Historia)", game.i18n.localize("NAME.Perception")]
 let skillAdvancements = [20, 30, 20, 30, 20, 20]
-let talents = ["Combat Aware", "Combat Reflexes", "Drilled", "Menacing", "Robust", "Strike Mighty Blow", "Strike Mighty Blow", "War Leader"]
-let trappings = ["Hand Weapon", "Plate Breastplate", "Plate Helm", "Plate Leggings"]
+let talents = ["Zmysł Bitewny", "Bitewny Refleks", "Musztra", "Groźny", "Krzepki", "Silny Cios", "Silny Cios", "Wódz"]
+let trappings = ["Broń ręczna", "Płytowy Napierśnik", "Hełm płytowy", "Płytowe Nagolenniki"]
 let specialItems = [ 
 ]    
 let items = [];
@@ -28,11 +28,11 @@ for (let ch in characteristics)
 for (let item of specialItems) {
     let newItem
     if (item.type == "weapon") {
-        newItem = new ItemWfrp4e({ name: item.name, type: item.type, system: { equipped: true, damage: {value: item.damage}}  })
+        newItem = new ItemWFRP4e({ name: item.name, type: item.type, system: { equipped: true, damage: {value: item.damage}}  })
     } else if (item.type == "trapping") {
-        newItem = new ItemWfrp4e({ img: "systems/wfrp4e/icons/blank.png", name: item.name, type: item.type, system: { worn: true, trappingType: { value: item.trappingType}  } } )
+        newItem = new ItemWFRP4e({ img: "systems/wfrp4e/icons/blank.png", name: item.name, type: item.type, system: { worn: true, trappingType: { value: item.trappingType}  } } )
     } else {
-        newItem = new ItemWfrp4e({ img: "systems/wfrp4e/icons/blank.png", name: item.name, type: item.type  })
+        newItem = new ItemWFRP4e({ img: "systems/wfrp4e/icons/blank.png", name: item.name, type: item.type  })
     }
     items.push(newItem.toObject())
 }

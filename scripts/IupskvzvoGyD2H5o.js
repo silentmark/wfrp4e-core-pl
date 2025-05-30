@@ -31,6 +31,11 @@ if (god)
     {
         this.script.notification(`Nie mogłem znaleźć żadnych błogosławieństw związanych z ${god}.`)
     }
-    this.item.updateSource({name : this.item.name.replace("Boska Tradycja", god)})
+    if (this.item.name.includes("Boska Tradycja"))
+        this.item.updateSource({name: this.item.name.replace("Boska Tradycja", god)});
+    else if (this.item.name.includes("Dowolne Bóstwo"))
+        this.item.updateSource({name: this.item.name.replace("Dowolne Bóstwo", god)});
+    else
+        this.item.updateSource({name: this.item.name + ` (${god})`});
     await this.actor.update({"system.details.god.value": god})
 }

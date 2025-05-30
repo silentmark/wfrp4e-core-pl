@@ -1,9 +1,9 @@
-const trait = this.actor.itemTags.trait.find(t => t.name === "Regenerate");
-const name = "Rotten Regeneration";
+const trait = this.actor.itemTags.trait.find(t => t.name === "Regeneracja");
+const name = "Zgniła Regeneracja";
 
 if (!trait) return;
 
-const effect = trait.effects.find(e => e.name === "Regenerate");
+const effect = trait.effects.find(e => e.name === "Regeneracja");
 const scriptData = effect.system.scriptData;
 
 scriptData[0].script = `  
@@ -11,7 +11,7 @@ scriptData[0].script = `
   let message = "";
   
   let wounds = foundry.utils.duplicate(this.actor.status.wounds);
-  let regenRoll = await new Roll("1d10").roll();
+  let regenRoll = await new Roll("1d10").roll({allowInteractive : false});
   let regen = regenRoll.total;
   
   if (wounds.value >= wounds.max)
@@ -22,19 +22,19 @@ scriptData[0].script = `
     if (wounds.value > wounds.max) {
       wounds.value = wounds.max;
     }
-    message += \`<b>\${this.actor.name}</b> regains \${regen} Wounds.\`;
+    message += \`<b>\${this.actor.name}</b> Odzyskane punkty Żywotności: \${regen}.\`;
   
     if (regen === 10) {
-      message += "<br>Additionally, they regenerate a Critical Wound.";
+      message += "<br>Dodatkowo zregenerowano krytyczną ranę.";
     }
   } else if (regen >= 8) {
-    message += \`<b>\${this.actor.name}</b> rolled a \${regen} and regains 1 Wound.\`;
+    message += \`<b>\${this.actor.name}</b> wylosowano \${regen} i odzyskano 1 punkt Żywotności.\`;
     wounds.value += 1;
     if (regen === 10) {
-      message += "<br>Additionally, they regenerate a Critical Wound.";
+      message += "<br>Dodatkowo zregenerowano krytyczną ranę.";
     }
   } else {
-    message += \`<b>\${this.actor.name}</b> Regenerate roll of \${regen} - No effect.\`;
+    message += \`<b>\${this.actor.name}</b> wylosowano \${regen} - brak efektu.\`;
   }
   
   await this.actor.update({"system.status.wounds": wounds});

@@ -2924,7 +2924,189 @@
             "description": "<p>Wiesz dobrze, gdzie uderzyć, by wyrządzić jak najwięcej krzywdy. Kiedy rzucasz w Tabeli Ran Krytycznych, rzuć dwa razy i wybierz jeden z wyników.</p>",
             "sourceId": "Compendium.wfrp4e-up-in-arms.items.Item.RWJrupj9seau0w31"
         },
-        "Bright Spark": {
+        "7QrsbofccMOE1YsF": {
+            "id": "7QrsbofccMOE1YsF",
+            "name": "Bystrzak",
+            "description": " ",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.7QrsbofccMOE1YsF",
+            "alterNamePre": " ",
+            "alterNamePost": " ",
+            "gmdescription": " ",
+            "skills": [
+                "Intuicja",
+                "Wiedza (Lokalna)",
+                "Percepcja"
+            ],
+            "trappings": [
+                {
+                    "Name": "Nogawice kolcze",
+                    "Id": "PehycIVNoH7MGmDC"
+                },
+                {
+                    "Name": "Kolczuga",
+                    "Id": "foWBxvDhE6dVPCPQ"
+                },
+                {
+                    "Name": "Czepiec kolczy",
+                    "Id": "WrwIxT22o6Gd8jcz"
+                },
+                {
+                    "Name": "Broń ręczna",
+                    "Id": "6yfFzDHLa1tFl8hk"
+                }
+            ],
+            "talents": [],
+            "traits": []
+        },
+        "2hJ2a5YjbwZWWYrd": {
+            "id": "2hJ2a5YjbwZWWYrd",
+            "name": "Nieoszlifowany diament",
+            "description": " ",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.2hJ2a5YjbwZWWYrd",
+            "effects": {
+                "sH1cOo2TIMqeJwSS": {
+                    "id": "sH1cOo2TIMqeJwSS",
+                    "name": "Nieoszlifowany diament",
+                    "scriptData": [
+                        {
+                            "id": "sH1cOo2TIMqeJwSS",
+                            "name": "Dodawanie talentów",
+                            "script": "let talents = (await Promise.all([game.wfrp4e.tables.rollTable(\"talents\"), game.wfrp4e.tables.rollTable(\"talents\"), game.wfrp4e.tables.rollTable(\"talents\")])).map(i => i.text);\nlet items = [];\n\nfor (let talent of talents)\n{\n    let talentItem = await game.wfrp4e.utility.findTalent(talent)\n    if (talentItem)\n    {\n        items.push(talentItem.toObject());\n    }\n    else \n    {\n        ui.notifications.warn(`Nie odnaleziono ${talent}`, {permanent : true})\n    }\n}\n\nthis.script.notification(`Dodano talent(y): ${talents.join(\", \")}`);\nawait this.actor.createEmbeddedDocuments(\"Item\", items, {fromEffect: this.effect.id});"
+                        }
+                    ]
+                }
+            },
+            "alterNamePre": " ",
+            "alterNamePost": " ",
+            "gmdescription": " ",
+            "skills": [],
+            "talents": [],
+            "traits": [],
+            "trappings": []
+        },
+        "h3yuJDWnixliXeBG": {
+            "id": "h3yuJDWnixliXeBG",
+            "name": "Zniedołężniały",
+            "description": " ",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.h3yuJDWnixliXeBG",
+            "effects": {
+                "zmc6KvzyFibDJxF3": {
+                    "id": "zmc6KvzyFibDJxF3",
+                    "name": "Zniedołężniały",
+                    "scriptData": [
+                        {
+                            "id": "zmc6KvzyFibDJxF3",
+                            "name": "Umiejętności",
+                            "script": "[Script.Et4tPHlrkueLqP3T]"
+                        }
+                    ]
+                }
+            },
+            "alterNamePre": " ",
+            "alterNamePost": " ",
+            "gmdescription": " ",
+            "skills": [],
+            "talents": [],
+            "traits": [],
+            "trappings": []
+        },
+        "4Cd7Dknee2WjReOo": {
+            "id": "4Cd7Dknee2WjReOo",
+            "name": "Wilk Morski",
+            "description": " ",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.4Cd7Dknee2WjReOo",
+            "alterNamePre": " ",
+            "alterNamePost": " ",
+            "gmdescription": " ",
+            "skills": [
+                "Mocna Głowa",
+                "Wioślarstwo",
+                "Żeglarstwo",
+                "Pływanie"
+            ],
+            "talents": [],
+            "traits": [],
+            "trappings": []
+        },
+        "scVTPVyDDbli4WZL": {
+            "id": "scVTPVyDDbli4WZL",
+            "name": "Zreformowany łotr",
+            "description": " ",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.scVTPVyDDbli4WZL",
+            "alterNamePre": " ",
+            "alterNamePost": " ",
+            "gmdescription": " ",
+            "skills": [
+                "Percepcja",
+                "Zwinne Palce",
+                "Skradanie (Miasto)"
+            ],
+            "talents": [
+                "Przestępca",
+                "Etykieta (Przestępcy)"
+            ],
+            "trappings": [
+                {
+                    "Name": "Lina, 10 metrów",
+                    "Id": "fW99W5eojsCNypFY"
+                },
+                {
+                    "Name": "Wytrychy",
+                    "Id": "sERuuGYg8722ly3g"
+                },
+                {
+                    "Name": "Maska",
+                    "Id": "odTY4gVrxPa5JEsl"
+                }
+            ],
+            "traits": []
+        },
+        "4s01nHFKVKTEZd3B": {
+            "id": "4s01nHFKVKTEZd3B",
+            "name": "Weteran wielu przygód",
+            "description": " ",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.4s01nHFKVKTEZd3B",
+            "alterNamePre": " ",
+            "alterNamePost": " ",
+            "gmdescription": " ",
+            "skills": [
+                "Opanowanie",
+                "Unik",
+                "Broń Biała (Podstawowa)",
+                "Broń Biała (Drzewcowa)"
+            ],
+            "talents": [
+                "Bitewny Refleks"
+            ],
+            "trappings": [
+                {
+                    "Name": "Skórzana kurta",
+                    "Id": "kumDochtdZNT7HaW"
+                },
+                {
+                    "Name": "Skórzane Nogawice",
+                    "Id": "Vl7LavDMoGEt0M3j"
+                },
+                {
+                    "Name": "Skórzany Hełm",
+                    "Id": "H52XNfD3S80b8DSs"
+                },
+                {
+                    "Name": "Broń ręczna",
+                    "Id": "iuWwrF7cM5zNo5b8"
+                },
+                {
+                    "Name": "Włócznia",
+                    "Id": "WtycQKHipx1DALtB"
+                },
+                {
+                    "Name": "Tarcza",
+                    "Id": "AYd4Sq305ul0njeW"
+                }
+            ],
+            "traits": []
+        },
+        "ac5ClOuaYtzOYyWp": {
             "id": "ac5ClOuaYtzOYyWp",
             "name": "Bystrzak",
             "description": " ",
@@ -2943,7 +3125,7 @@
                 }
             }
         },
-        "Diamond in the Rough": {
+        "x5wpMprsObuqMCYg": {
             "id": "x5wpMprsObuqMCYg",
             "name": "Nieoszlifowany diament",
             "description": " ",
@@ -2957,6 +3139,25 @@
                             "id": "GPWvWnhtvfc1jdvJ",
                             "name": "Nieoszlifowany diament",
                             "script": "[Script.1BT0MWM2cbhlEnrn]"
+                        }
+                    ]
+                }
+            }
+        },
+        "Hireling": {
+            "id": "gjtcCTmRPxTL4oAL",
+            "name": "Najemnik",
+            "description": " ",
+            "sourceId": "Compendium.wfrp4e-up-in-arms.items.gjtcCTmRPxTL4oAL",
+            "effects": {
+                "GB6h9KotqpcouOmE": {
+                    "id": "GB6h9KotqpcouOmE",
+                    "name": "Najemnik",
+                    "scriptData": [
+                        {
+                            "id": "GB6h9KotqpcouOmE",
+                            "name": "Najemnik",
+                            "script": "[Script.R32U01LBjBrK1pns]"
                         }
                     ]
                 }
@@ -3024,7 +3225,7 @@
                 }
             }
         },
-        "Veteran of Adventures": {
+        "Xp4r2KUhqfjak8zq": {
             "id": "Xp4r2KUhqfjak8zq",
             "name": "Weteran wielu przygód",
             "description": " ",
@@ -3048,25 +3249,6 @@
                             "id": "GPWvWnhtvfc1jdvJ",
                             "name": "Wybór broni",
                             "script": "[Script.ezGqDoC9hNRBnFTB]"
-                        }
-                    ]
-                }
-            }
-        },
-        "Hireling": {
-            "id": "gjtcCTmRPxTL4oAL",
-            "name": "Najemnik",
-            "description": " ",
-            "sourceId": "Compendium.wfrp4e-up-in-arms.items.gjtcCTmRPxTL4oAL",
-            "effects": {
-                "GB6h9KotqpcouOmE": {
-                    "id": "GB6h9KotqpcouOmE",
-                    "name": "Najemnik",
-                    "scriptData": [
-                        {
-                            "id": "GB6h9KotqpcouOmE",
-                            "name": "Najemnik",
-                            "script": "[Script.R32U01LBjBrK1pns]"
                         }
                     ]
                 }

@@ -1,23 +1,6 @@
 if ((args.opposedTest.attackerTest.item && args.opposedTest.attackerTest.item.isMelee) || (args.opposedTest.attackerTest.item && !args.opposedTest.attackerTest.item.name.includes("Broń Zasięgowa")))
 {
-    let choice = await Dialog.wait({
-        title: this.effect.name,
-        content: `<p><strong>${this.effect.name}</strong>: Zadać obrażenia atakującemu?`,
-        buttons: {
-            yes: {
-                label: "Tak",
-                callback: () => {
-                    return true;
-                }
-            },
-            no: {
-                label: "Nie",
-                callback: () => {
-                    return false;
-                }
-            }
-        }
-    })
+    let choice = await foundry.applications.api.DialogV2.confirm({window : {title : this.effect.name}, content : `<p><strong>${this.effect.name}</strong>: Zadać obrażenia atakującemu?`})
 
     if (choice)
     {

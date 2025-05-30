@@ -1,48 +1,42 @@
-let choice = await Dialog.wait({
-    title : "Opcjonalne",
+let addOption = await foundry.applications.api.DialogV2.confirm({
+    window : {title : "Opcjonalne"},
     content : 
-    `<p>
+    `
     Dodać opcjonalne przedmioty?
+    <p>
+    Broń Zasięgowa (Łuk) +10 oraz długi łuk z 12 strzałami
     </p>
-    <ol>
-    <li>Broń Zasięgowa (Łuk) +10 oraz długi łuk z 12 strzałami</li>
-    </ol> 
     `,
-    buttons : {
-        1 : {
-            label : "Tak",
-            callback : () => {
-                return [
-                    {
-                        type : "skill",
-                        name : "Broń Zasięgowa (Łuk)",
-                        diff : {
-                            system : {
-                                advances : {
-                                    value : 10
-                                }
-                            }
-                        }
-                    },
-                    {
-                        type : "weapon",
-                        name : "Łuk długi",
-                    },
-                    {
-                        type : "ammunition",
-                        name : "Strzała",
+})
+
+let choice = []
+
+if (addOption)
+{
+    choice = [
+        {
+            type : "skill",
+            name : "Broń Zasięgowa (Łuk)",
+            diff : {
+                system : {
+                    advances : {
+                        value : 10
                     }
-                ];
+                }
             }
         },
-        2 : {
-            label : "Nie",
-            callback : () => {
-                return [];
-            }
+        {
+            type : "weapon",
+            name : "Łuk długi",
+        },
+        {
+            type : "ammunition",
+            name : "Strzała",
         }
-    }
-})
+    ];
+}
+
+
 
 let updateObj = this.actor.toObject();
 let items = []
