@@ -1,15 +1,6 @@
 Hooks.on("init", () => {
 	CONFIG.supportedLanguages["pl"] = "Polski";
     game.data.packs = game.data.packs.filter(i => i.name != "basic" || i.system != "wfrp4e");
-
-	// Register Advantage cap
-	game.settings.register("wfrp4e-core", "initialized", {
-		name: "Inicjalizacja",
-		scope: "world",
-		config: false,
-		default: false,
-		type: Boolean,
-	});
 });
 
 WarhammerModuleInitializationV2.initialize = async function (ev, target) {

@@ -1,14 +1,6 @@
 Hooks.on("init", () => {
-
-    if (typeof (WFRP4eUpInArmsInitWrapper) != 'undefined') {
-        game.settings.register("wfrp4e-up-in-arms", "initialized", {
-            name: "Inicjalizacja",
-            scope: "world",
-            config: false,
-            default: false,
-            type: Boolean,
-        });
-
+    if (game.modules.get("wfrp4e-up-in-arms")?.active) {
+        
         setTimeout(async () => {
             
             const batter = game.wfrp4e.config.groupAdvantageActions.find(a => a.name == "Batter");

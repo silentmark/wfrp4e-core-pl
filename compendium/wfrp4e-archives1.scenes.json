@@ -13,12 +13,13 @@
         "The Laurelorn": {
             "id": "h9ZlLGfW0lZKIG4k",
             "name": "Laurelorn",
+            "image": "modules/wfrp4e-core-pl/images/ai1/laurelorn-map-unlabeled.webp",
             "notes": {
                 "79QSvhgTL3LRHApt": {
                     "text": "Las Laurelorn"
                 },
                 "kbxNRVU6aMDCFr2e": {
-                    "text": " "
+                    "text": ""
                 },
                 "Vq7NhWpBQKcfq7bf": {
                     "text": "Tor Lithanel"
@@ -36,7 +37,7 @@
                     "text": "Tęczowy Wodospad"
                 },
                 "2REl1nOaqoOzeivS": {
-                    "text": " "
+                    "text": ""
                 },
                 "5OO78R7melYGY8zX": {
                     "text": "Dolina Khaina"
@@ -54,7 +55,7 @@
                     "text": "Złoty Las"
                 },
                 "w7fCYZGmd0arUqp8": {
-                    "text": " "
+                    "text": ""
                 },
                 "ujG85wUrlbAV6tLf": {
                     "text": "Srebrne Wzgórza"
@@ -69,35 +70,36 @@
                     "text": "Skała Farinara"
                 },
                 "gbJ9Yn5cbZVYJOOF": {
-                    "text": " "
+                    "text": ""
                 }
             },
-            "units": "mi"
+            "units": "km"
         },
         "The Mootland": {
             "id": "SmQJpAnynYyOBusA",
             "name": "Kraina Zgromadzenia",
+            "image": "modules/wfrp4e-core-pl/images/ai1/mootlands.webp",
             "notes": {
                 "iR9MMOBuYs7H33Ud": {
-                    "text": " "
+                    "text": ""
                 },
                 "GV6TCZK0wA4l7sh3": {
-                    "text": " "
+                    "text": ""
                 },
                 "NfW8f6KNkZ92yC4E": {
-                    "text": " "
+                    "text": ""
                 },
                 "Vh84DN4bjTF0sYAv": {
-                    "text": " "
+                    "text": ""
                 },
                 "3jKK70KAw8tMxakR": {
-                    "text": " "
+                    "text": ""
                 },
                 "mrlYP91EHgnYvNOv": {
-                    "text": " "
+                    "text": ""
                 },
                 "cNS2MddSWFkeTE5w": {
-                    "text": " "
+                    "text": ""
                 },
                 "mVgru38NdLq2APx1": {
                     "text": "Las Lamentu"
@@ -109,7 +111,7 @@
                     "text": "Gipfel"
                 }
             },
-            "units": "mi"
+            "units": "km"
         }
     }
 }

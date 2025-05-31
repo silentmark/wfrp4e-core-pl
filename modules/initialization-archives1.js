@@ -1,12 +1,5 @@
 Hooks.on("init", () => {
-    if (typeof (WFRP4eArchives1InitWrapper) != 'undefined') {
-        game.settings.register("wfrp4e-archives1", "initialized", {
-            name: "Inicjalizacja",
-            scope: "world",
-            config: false,
-            default: false,
-            type: Boolean
-        });
+    if (game.modules.get("wfrp4e-archives1")?.active) {
         
         setTimeout(async () => {
             
