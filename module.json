@@ -86,7 +86,6 @@
         "load-scripts-pl.js",
         "modules/initialization.js",
         "modules/initialization-up-in-arms.js",
-        "modules/initialization-starter-set.js",
         "modules/initialization-archives1.js",
         "modules/wfrp4e-npc-generator.js"
     ],
