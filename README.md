@@ -9,7 +9,8 @@ Aktualnie obsługiwane moduły:
 - [Warhammer Fantasy 4th Edition System](https://foundryvtt.com/packages/wfrp4e)
 - [Core Rulebook](https://foundryvtt.com/packages/wfrp4e-core/)
 - [Up in Arms](https://foundryvtt.com/packages/wfrp4e-up-in-arms)
-- [Archives of the Empire vol I](https://foundryvtt.com/packages/wfrp4e-archives1):new:
+- [Starter Set](https://foundryvtt.com/packages/wfrp4e-starter-set)
+- [Archives of the Empire vol. I](https://foundryvtt.com/packages/wfrp4e-archives1):new:
 
 Autorzy:
 - Daniel.Sobolewski
@@ -32,4 +33,3 @@ Autorzy:
   <td><img src='https://github.com/silentmark/wfrp4e-core-pl/blob/main/githubAssets/WH2023-logo.png' width="200"/></td>
 </tr>
 </table>
-
